@@ -1,0 +1,69 @@
+---
+interface Props {
+  basepath?: string;
+  currentPage?: number;
+  pageSize?: number;
+  total?: number;
+  totalPages?: number;
+}
+
+const { basepath, currentPage = 1, totalPages = 1 } = Astro.props;
+
+const createPageArray = (totalPages: number) => {
+  return Array.from({ length: totalPages }, (_, i) => i + 1);
+};
+
+const pages = createPageArray(totalPages);
+if (totalPages < 2) {
+  return;
+}
+---
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination" style="justify-content: center; margin-top: 6rem;">
+    {
+      currentPage - 1 > 0 ? (
+        <li class="page-item">
+          <a class="page-link" href={`${basepath}/page/${currentPage - 1}`}>
+            Previous
+          </a>
+        </li>
+      ) : (
+        <li class="page-item disabled">
+          <span class="page-link">Previous</span>
+        </li>
+      )
+    }
+    {
+      pages.map((page) => {
+        if (page == currentPage) {
+          return (
+            <li class="page-item active">
+              <span class="page-link">{page}</span>
+            </li>
+          );
+        }
+        return (
+          <li class="page-item">
+            <a class="page-link" href={`${basepath}/page/${page}`}>
+              {page}
+            </a>
+          </li>
+        );
+      })
+    }
+    {
+      totalPages > currentPage ? (
+        <li class="page-item">
+          <a class="page-link" href={`${basepath}/page/${currentPage + 1}`}>
+            Next
+          </a>
+        </li>
+      ) : (
+        <li class="page-item disabled">
+          <span class="page-link">Next</span>
+        </li>
+      )
+    }
+  </ul>
+</nav>

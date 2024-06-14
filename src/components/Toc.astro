@@ -1,0 +1,64 @@
+---
+export interface MarkdownHeading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+---
+
+<nav class="headings">
+  <!-- <h2>Table of Contents</h2> -->
+  <ul>
+    {
+      headings
+        .filter((item) => item.depth !== 1)
+        .map((item) => (
+          <li class={`depth-${item.depth}`}>
+            <a href={`#${item.slug}`}>{item.text}</a>
+          </li>
+        ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .headings {
+    font-size: 12px;
+  }
+  .headings ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .headings a {
+    display: block;
+    padding: 0.125rem 0 0.125rem 0.75rem;
+    color: inherit;
+    text-decoration: none;
+    border-left: 0.125rem solid transparent;
+  }
+  .depth-1 {
+    padding-left: 0rem;
+  }
+  .depth-2 {
+    padding-left: 0rem;
+  }
+  .depth-3 {
+    padding-left: 1rem;
+  }
+  .depth-4 {
+    padding-left: 2rem;
+  }
+  .depth-5 {
+    padding-left: 3rem;
+  }
+  .depth-6 {
+    padding-left: 4rem;
+  }
+</style>

@@ -1,0 +1,115 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Pagination from "../../../components/Pagination.astro";
+import BaseLayout from "../../../layouts/BaseEN.astro";
+import { listArticles, url } from "../../../utils";
+
+const basepath = '/en/blog';
+const { data, meta } = await listArticles();
+---
+
+<BaseLayout>
+  <PageHeader title="Blog" description="Latest news and announcements" />
+  <section class="section">
+    <div class="container">
+      <main>
+        <section>
+          <ul class="articles">
+            {
+              data.map((post) => (
+                <li>
+                  <a href={`${basepath}/${post.slug}/`}>
+                    <img
+                      style="object-fit: cover;"
+                      width={720}
+                      height={360}
+                      src={url(post.cover.url)}
+                      alt=""
+                    />
+                    <h4 class="title">{post.title}</h4>
+                    <p class="date">
+                      <FormattedDate date={post.createdAt}/>
+                    </p>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+        <Pagination basepath={basepath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+      </main>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+  ul.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.articles li {
+    width: calc(50% - 1rem);
+  }
+  ul.articles li * {
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  ul.articles li:first-child {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  ul.articles li:first-child img {
+    width: 100%;
+  }
+  ul.articles li:first-child .title {
+    font-size: 2.369rem;
+  }
+  ul.articles li img {
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+  }
+  ul.articles li a {
+    display: block;
+  }
+  .title {
+    margin: 0;
+    color: rgb(var(--black));
+    line-height: 1;
+  }
+  .date {
+    margin: 0;
+    color: rgb(var(--gray));
+  }
+  ul.articles li a:hover h4,
+  ul.articles li a:hover .date {
+    color: rgb(var(--accent));
+  }
+  ul.articles a:hover img {
+    box-shadow: var(--box-shadow);
+  }
+  @media (max-width: 720px) {
+    ul.articles {
+      gap: 0.5em;
+    }
+    ul.articles li {
+      width: 100%;
+      text-align: center;
+    }
+    ul.articles li:first-child {
+      margin-bottom: 0;
+    }
+    ul.articles li:first-child .title {
+      font-size: 1.563em;
+    }
+  }
+</style>

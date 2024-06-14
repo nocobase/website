@@ -1,0 +1,155 @@
+<meta charset="utf-8" />
+<title>NocoBase-开源、私有部署的轻量级无代码和低代码开发平台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+    name="description"
+    content="NocoBase 是一个轻量级、极易扩展的开源无代码和低代码开发平台。无需开发，花几分钟时间部署 NocoBase，马上拥有一个私有、可控、极易扩展的无代码开发平台，帮助企业轻松实现多元业务场景，让数字化更快、更简单、更便宜。"
+/>
+<meta
+    name="keywords"
+    content="nocobase,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,无代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,无代码系统,无代码平台,无代码搭建,免费无代码开发平台"
+/>
+<!-- favicon -->
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/images/favicon/apple-touch-icon.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/images/favicon/favicon-32x32.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/images/favicon/favicon-16x16.png"
+/>
+<link rel="manifest" href="/images/favicon/site.webmanifest" />
+<!-- Bootstrap -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Icons -->
+<link
+    href="/css/materialdesignicons.min.css"
+    rel="stylesheet"
+    type="text/css"
+/>
+<link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+/>
+<!-- Balloon css -->
+<link href="/css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+<!-- Slider -->
+<link rel="stylesheet" href="/css/tiny-slider.css" />
+<!-- Main Css -->
+<link
+    href="/css/style.css?v1.4"
+    rel="stylesheet"
+    type="text/css"
+    id="theme-opt"
+/>
+<!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+
+<!-- Language -->
+<script type="text/javascript" type="text/javascript">
+    function setLanguagePreference(lang) {
+        document.cookie =
+            "preferredLang=" +
+            lang +
+            "; path=/; domain=.nocobase.com; max-age=31536000";
+    }
+
+    // 从 Cookie 读取语言偏好
+    function getLanguagePreference() {
+        var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
+        return match ? match[2] : null;
+    }
+
+    // 点击切换语言按钮
+    function changeLanguage(lang) {
+        setLanguagePreference(lang);
+        if (lang === "en") {
+            window.location.href = "/";
+        } else if (lang === "zh") {
+            window.location.href = "/cn/";
+        }
+    }
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var preferredLang = getLanguagePreference();
+    //     var currentHost = window.location.host;
+
+    //     // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
+    //     var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
+
+    //     if (preferredLang) {
+    //         // 根据偏好执行跳转
+    //         if (preferredLang === 'zh' && isEnglishSite) {
+    //             window.location.href = 'https://cn.nocobase.com';
+    //         } else if (preferredLang === 'en' && !isEnglishSite) {
+    //             window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
+    //         }
+    //     } else {
+    //         // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
+    //         var userLang = navigator.language || navigator.userLanguage;
+    //         if (userLang.startsWith('zh') && isEnglishSite) {
+    //             setLanguagePreference('zh'); // 设置语言偏好并跳转
+    //             window.location.href = 'https://cn.nocobase.com';
+    //         } else if (!userLang.startsWith('zh') && !isEnglishSite) {
+    //             setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
+    //             // 不执行跳转，因为已经在英文站点
+    //         }
+    //     }
+    // });
+</script>
+
+<!-- Begin Brevo Form -->
+<style>
+    #sib-container input:-ms-input-placeholder {
+        text-align: left;
+        color: #c0ccda;
+    }
+
+    #sib-container input::placeholder {
+        text-align: left;
+        color: #c0ccda;
+    }
+
+    #sib-container textarea::placeholder {
+        text-align: left;
+        color: #c0ccda;
+    }
+</style>
+<link
+    rel="stylesheet"
+    href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+/>
+<!--  END Brevo Form -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+    type="text/javascript"
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+    dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-237XXSVYHE");
+</script>
+
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?73c0a021efd1eab59d0ad8628750283e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>

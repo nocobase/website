@@ -1,0 +1,21 @@
+---
+import MenuItem from "./MenuItem.astro";
+
+type Props = any;
+
+const { basename, items, className } = Astro.props;
+---
+
+<ul class={className}>
+  {items.map((item: any) => <MenuItem basename={basename} item={item} />)}
+</ul>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .menu-type-sub-menu {
+    margin-left: 14px;
+  }
+</style>

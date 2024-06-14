@@ -1,0 +1,43 @@
+---
+import Link from "./Link.astro";
+import Menu from "./Menu.astro";
+
+const { item, basename = "" } = Astro.props;
+---
+
+<li class={"menu-item-" + (item.type || "link")}>
+  {
+    item.slug ? (
+      <Link href={`${basename}${item.slug}`}>{item.title}</Link>
+    ) : (
+      <>
+        <div
+          data-bs-toggle="collapse"
+          data-bs-target="#getting-started-collapse"
+        >
+          {item.title}
+        </div>
+        {item.children?.length > 0 && (
+          <Menu
+            className={item.type === 'group' ? "menu-type-sub-group" : "menu-type-sub-menu"}
+            basename={basename}
+            items={item.children}
+          />
+        )}
+      </>
+    )
+  }
+</li>
+
+<style>
+  .menu-item-group > div {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  }
+  .menu-item-link a {
+    color: inherit;
+  }
+</style>

@@ -1,0 +1,77 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import BaseLayout from "../../layouts/BaseEN.astro";
+import { listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "all",
+    link: "/en/plugins",
+    active: true,
+  },
+  {
+    title: "Commercial plugins",
+    link: "/en/plugins-commercial",
+  },
+];
+
+const data = await listPluginCategories();
+---
+
+<BaseLayout>
+  <PageHeader title="Plugins" tabs={tabs}>
+    <span slot="description">
+      Everything is a plugin. Use plugins to extend the capabilities of
+      NocoBase.<br />
+      Feel free to share your plugins, whether it is open-source or commercial. <br
+      />
+      Please contact us to discuss the details.
+    </span>
+    <a href="/en/contact" class="btn btn-outline-primary"
+      >Contact to share<i class="uil uil-angle-right-b"></i></a
+    >
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+      {
+        data
+          .filter((group) => group.plugins.length > 0)
+          .map((group) => (
+            <>
+              <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
+              <div class="row pb-4">
+                {group.plugins.map((plugin: any) => (
+                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                    <div class="card rounded shadow border-0 plugin-card">
+                      <div class="card-body">
+                        <div class="mt-2">
+                          <h6 class="card-title">{plugin.title}</h6>
+                          <p class="text-muted mb-2">{plugin.description}</p>
+                          {plugin.isCommercial ? (
+                            <span class="badge bg-soft-warning plugin-type">
+                              Commercial
+                            </span>
+                          ) : (
+                            <span class="badge bg-soft-primary plugin-type">
+                              Open source
+                            </span>
+                          )}
+                          {plugin.comingSoon && (
+                            <span class="badge bg-soft-info plugin-type">
+                              Coming soon
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ))
+      }
+    </div><!--end container-->
+  </section><!--end section-->
+</BaseLayout><!--end section-->

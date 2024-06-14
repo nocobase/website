@@ -1,0 +1,18 @@
+---
+import BaseLayoutCN from "./BaseCN.astro";
+import BaseLayoutEN from "./BaseEN.astro";
+
+const cn = Astro.url.pathname.startsWith("/cn/");
+---
+
+{
+  cn ? (
+    <BaseLayoutCN>
+      <slot />
+    </BaseLayoutCN>
+  ) : (
+    <BaseLayoutEN>
+      <slot />
+    </BaseLayoutEN>
+  )
+}

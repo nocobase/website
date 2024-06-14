@@ -1,0 +1,49 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import BaseLayout from "../../layouts/BaseEN.astro";
+import { listTaskCategories } from "../../utils";
+
+const data = await listTaskCategories();
+---
+
+<BaseLayout>
+  <PageHeader title="Roadmap">
+    <span slot="description">
+        We are developing or have already planned the following new features and plugins
+    </span>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+      {
+        data
+          .filter((group) => group.tasks.length > 0)
+          .map((group) => (
+            <>
+              <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
+              <div class="row pb-4">
+                {group.tasks.map((task: any) => (
+                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                    <div class="card rounded shadow border-0 plugin-card">
+                      <div class="card-body">
+                        <div class="mt-2">
+                          <h6 class="card-title">{task.title}</h6>
+                          <p class="text-muted mb-2">{task.description}</p>
+                          {task.status && (
+                            <span class={"badge bg-soft-"+ task.status.type +" plugin-type"}>
+                              {task.status.name}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ))
+      }
+    </div><!--end container-->
+  </section><!--end section-->
+</BaseLayout><!--end section-->

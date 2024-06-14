@@ -1,0 +1,22 @@
+---
+import dayjs from "dayjs";
+
+interface Props {
+  date: string;
+  locale?: string;
+}
+
+const { date, locale } = Astro.props;
+
+const current = dayjs(date);
+---
+
+<time datetime={current.toISOString()}>
+  {
+    current.toDate().toLocaleDateString(locale || "en-us", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
+  }
+</time>

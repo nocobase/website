@@ -1,0 +1,36 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Toc from "../../../components/Toc.astro";
+import BaseLayout from "../../../layouts/BaseEN.astro";
+import { getArticle } from "../../../utils";
+
+const { slug } = Astro.params;
+const { data, headings, html } = await getArticle(slug);
+---
+
+<BaseLayout>
+  <PageHeader title={data.title} />
+  <section class="section bg-white-color">
+    <main class={headings.length > 0 ? "container blog-container" : "container"}>
+        {
+          headings.length > 0 ? (
+            <>
+              <div class="left-column markdown-body">
+                <Fragment set:html={html} />
+              </div>
+              <div class="right-column">
+                <Toc headings={headings} />
+              </div>
+            </>
+          ) : <Fragment set:html={html} />
+        }
+    </main>
+  </section>
+</BaseLayout>
+
+<style>
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+</style>
