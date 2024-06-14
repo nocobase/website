@@ -12,7 +12,7 @@
 
 进入用户认证插件管理页面。
 
-![](../auth-oidc/static/2023-12-03-18-19-33.png)
+![20240615010115](https://static-docs.nocobase.com/20240615010115.png)
 
 添加 - SAML
 

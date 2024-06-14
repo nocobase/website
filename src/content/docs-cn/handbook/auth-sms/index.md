@@ -10,7 +10,7 @@
 
 进入用户认证插件管理页面。
 
-![](../auth-oidc/static/2023-12-03-18-19-33.png)
+![20240615010138](https://static-docs.nocobase.com/20240615010138.png)
 
 添加 - 短信 (SMS)
 
