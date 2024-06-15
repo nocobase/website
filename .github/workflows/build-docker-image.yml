@@ -55,3 +55,12 @@ jobs:
           file: Dockerfile
           push: true
           tags: ${{ steps.set-tags.outputs.tags }}
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Execute remote command
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.WEBSITE_HOST }} 'cd ${{ secrets.WEBSITE_DIR }} && docker compose pull && docker compose up -d'
