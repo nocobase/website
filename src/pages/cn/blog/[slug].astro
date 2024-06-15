@@ -8,8 +8,8 @@ const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug);
 ---
 
-<BaseLayout>
-  <PageHeader title={data.title} />
+<BaseLayout title={data.title} description={data.description}>
+  <PageHeader title={data.title} description={data.description} />
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container" : "container"}>
         {

@@ -1,6 +1,6 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseEN.astro";
+import Layout from "../../layouts/Layout.astro";
 import { listPluginCategories } from "../../utils";
 
 const tabs = [
@@ -16,9 +16,10 @@ const tabs = [
 ];
 
 const data = await listPluginCategories();
+const description = "Everything is a plugin. Use plugins to extend the capabilities of NocoBase.";
 ---
 
-<BaseLayout>
+<Layout title="Commercial plugins" description={description}>
   <PageHeader title="Plugins" tabs={tabs}>
     <span slot="description">
       Everything is a plugin. Use plugins to extend the capabilities of
@@ -76,4 +77,4 @@ const data = await listPluginCategories();
       }
     </div><!--end container-->
   </section><!--end section-->
-</BaseLayout><!--end section-->
+</Layout><!--end section-->

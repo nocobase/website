@@ -2,14 +2,14 @@
 import FormattedDate from "../../../components/FormattedDate.astro";
 import PageHeader from "../../../components/PageHeader.astro";
 import Pagination from "../../../components/Pagination.astro";
-import BaseLayout from "../../../layouts/BaseEN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { listArticles, url } from "../../../utils";
 
 const basepath = '/en/blog';
 const { data, meta } = await listArticles();
 ---
 
-<BaseLayout>
+<Layout title="Blog" description="Latest news and announcements">
   <PageHeader title="Blog" description="Latest news and announcements" />
   <section class="section">
     <div class="container">
@@ -41,7 +41,7 @@ const { data, meta } = await listArticles();
       </main>
     </div>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   main {

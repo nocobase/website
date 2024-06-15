@@ -11,6 +11,7 @@ let urlEN = Astro.url.pathname.replace(/\/cn\//g, '/en/');
 if (!urlEN.startsWith('/en/')) {
   urlEN = '/en' + urlEN;
 }
+const { title, description, keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,10 +19,10 @@ if (!urlEN.startsWith('/en/')) {
 
     <head>
         <meta charset="utf-8" />
-        <title>NocoBase - Open source, self-hosted, lightweight no-code & low-code development platform</title>
+        <title>{title ? `${title} - NocoBase` : 'NocoBase - Open source, self-hosted, lightweight no-code & low-code development platform'}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!" />
-        <meta name="keywords" content="nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform" />
+        <meta name="description" content={description || "NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!"} />
+        <meta name="keywords" content={keywords || "nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform"} />
         <link rel="sitemap" href="/sitemap.xml" />
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">

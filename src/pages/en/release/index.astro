@@ -1,14 +1,16 @@
 ---
 import FormattedDate from "../../../components/FormattedDate.astro";
 import PageHeader from "../../../components/PageHeader.astro";
-import BaseLayout from "../../../layouts/BaseEN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { listReleases } from "../../../utils";
 
 const data = await listReleases();
+const title="Release notes" 
+const description="了解 NocoBase 更新内容，掌握最新功能和修复的进展。"
 ---
 
-<BaseLayout>
-  <PageHeader title="Release notes" description="了解 NocoBase 更新内容，掌握最新功能和修复的进展。"/>
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
       <main>
@@ -27,11 +29,11 @@ const data = await listReleases();
       </main>
     </div>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   main {
-    width: 960px;
+    max-width: 960px;
     text-align: center;
     margin: 0 auto;
   }

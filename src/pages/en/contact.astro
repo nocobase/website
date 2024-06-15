@@ -1,10 +1,11 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseEN.astro";
+import Layout from "../../layouts/Layout.astro";
+const description="";
 ---
 
-<BaseLayout>
-  <PageHeader title="Contact" />
+<Layout title="Contact" description={description}>
+  <PageHeader title="Contact" description={description} />
   <!-- Start Contact -->
   <section class="section">
     <div class="container">
@@ -226,4 +227,4 @@ import BaseLayout from "../../layouts/BaseEN.astro";
     </div><!--end container-->
   </section><!--end section-->
   <!-- End Contact -->
-</BaseLayout>
+</Layout>

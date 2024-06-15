@@ -5,10 +5,12 @@ import BaseLayout from "../../../layouts/BaseCN.astro";
 import { listReleases } from "../../../utils";
 
 const data = await listReleases();
+const title="路线规划";
+const description="了解 NocoBase 更新内容，掌握最新功能和修复的进展。"
 ---
 
-<BaseLayout>
-  <PageHeader title="更新日志" />
+<BaseLayout title={title} description={description} >
+  <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
       <main>

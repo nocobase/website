@@ -1,14 +1,13 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseEN.astro";
+const title = "Commercial licenses & plugins";
+const description =
+  "The commercial licenses and commercial plugins are based on the open-source version, rather than being standalone products. Thanks to NocoBase's plugin architecture, advanced features can be extended through plugins. This means the open-source version will always serve as the foundation, ensuring you can use it with confidence.";
 ---
 
-<BaseLayout>
-  <PageHeader
-    title="Commercial licenses & plugins"
-    description="The commercial licenses and commercial plugins are based on the open-source version, rather than being standalone products. Thanks to NocoBase's plugin architecture, advanced features can be extended through plugins. This means the open-source version will always serve as the foundation, ensuring you can use it with confidence."
-  />
-
+<BaseLayout title={title} description={description}>
+  <PageHeader title={title} description={description} />
   <!-- Licenses Start -->
   <section class="section pb-0">
     <div class="container">
@@ -576,9 +575,7 @@ import BaseLayout from "../../layouts/BaseEN.astro";
           packages.
         </p>
         <p class="para-desc text-center mx-auto text-muted">
-          <a href="/en/plugins-commercial"
-            >View all commercial plugins</a
-          >
+          <a href="/en/plugins-commercial">View all commercial plugins</a>
         </p>
         <div class="col-12">
           <div class="component-wrapper">

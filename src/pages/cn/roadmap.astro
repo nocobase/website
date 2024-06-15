@@ -1,15 +1,17 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseCN.astro";
+import Layout from "../../layouts/Layout.astro";
 import { listTaskCategories } from '../../utils';
 
 const data = await listTaskCategories();
+const title="路线规划";
+const description = "我们正在开发或者已经计划以下新特性和插件";
 ---
 
-<BaseLayout>
-  <PageHeader title="路线规划">
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description}>
     <span slot="description">
-      我们正在开发或者已经计划以下新特性和插件
+      {description}
     </span>
   </PageHeader>
 
@@ -46,4 +48,4 @@ const data = await listTaskCategories();
       }
     </div><!--end container-->
   </section><!--end section-->
-</BaseLayout><!--end section-->
+</Layout><!--end section-->

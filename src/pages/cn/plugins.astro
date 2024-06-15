@@ -1,6 +1,6 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseCN.astro";
+import Layout from "../../layouts/Layout.astro";
 import { listPluginCategories } from "../../utils";
 
 const tabs = [
@@ -16,9 +16,10 @@ const tabs = [
 ];
 
 const data = await listPluginCategories();
+const description = "一切皆插件，使用插件扩展 NocoBase 的能力。欢迎分享你的插件，无论它是开源的还是商业的。";
 ---
 
-<BaseLayout>
+<Layout title="插件" description={description}>
   <PageHeader title="插件" tabs={tabs}>
     <span slot="description">
         一切皆插件，使用插件扩展 NocoBase 的能力。欢迎分享你的插件，无论它是开源的还是商业的。<br/>
@@ -71,4 +72,4 @@ const data = await listPluginCategories();
       }
     </div><!--end container-->
   </section><!--end section-->
-</BaseLayout><!--end section-->
+</Layout><!--end section-->

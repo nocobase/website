@@ -1,11 +1,12 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import * as agreement from "../../data/agreement-en.md";
-import BaseLayout from "../../layouts/BaseEN.astro";
+import Layout from "../../layouts/Layout.astro";
+const title = "NocoBase License Agreement";
 ---
 
-<BaseLayout>
-  <PageHeader title="NocoBase License Agreement" />
+<Layout title={title}>
+  <PageHeader title={title} />
 
   <!-- Start Agreement -->
   <section class="section">
@@ -20,4 +21,4 @@ import BaseLayout from "../../layouts/BaseEN.astro";
     </div><!--end container-->
   </section><!--end section-->
   <!-- End agreement -->
-</BaseLayout>
+</Layout>

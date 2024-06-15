@@ -1,13 +1,14 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseCN.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "商业许可证和商业插件";
+const description =
+  "商业许可证和商业插件都基于开源版本，而不是一个独立的产品。正是得益于 NocoBase 的插件化架构，高级功能都可以通过插件的方式扩展。这意味着开源版本永远是基础，你可以放心地使用。";
 ---
 
-<BaseLayout>
-  <PageHeader
-    title="商业许可证和商业插件"
-    description="商业许可证和商业插件都基于开源版本，而不是一个独立的产品。正是得益于 NocoBase 的插件化架构，高级功能都可以通过插件的方式扩展。这意味着开源版本永远是基础，你可以放心地使用。"
-  />
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description} />
   <!-- Licenses Start -->
   <section class="section pb-0">
     <div class="container">
@@ -534,9 +535,7 @@ import BaseLayout from "../../layouts/BaseCN.astro";
           商业插件提供更多功能。你可以从商业插件中选择你需要的任何插件，组合成插件包。
         </p>
         <p class="para-desc text-center mx-auto text-muted">
-          <a href="/cn/plugins-commercial"
-            >查看全部商业插件</a
-          >
+          <a href="/cn/plugins-commercial">查看全部商业插件</a>
         </p>
         <div class="col-12">
           <div class="component-wrapper">
@@ -1259,9 +1258,7 @@ import BaseLayout from "../../layouts/BaseCN.astro";
                   <p class="answer text-muted mb-0">
                     非常欢迎。无论是分享自己的开源插件给 NocoBase
                     用户，还是出售商业插件获得收入，都欢迎你随时
-                    <a href="/cn/contact"
-                      >联系我们</a
-                    >。
+                    <a href="/cn/contact">联系我们</a>。
                   </p>
                 </div>
               </div>
@@ -1282,9 +1279,7 @@ import BaseLayout from "../../layouts/BaseCN.astro";
           通过邮件或微信联系我们，与我们的核心团队探讨方案，获得独家支持。
         </p>
         <div class="mt-4 pt-2 text-center">
-          <a
-            href="/cn/contact"
-            class="btn btn-primary"
+          <a href="/cn/contact" class="btn btn-primary"
             >联系我们 <i class="uil uil-arrow-right"></i></a
           >
         </div>
@@ -1292,4 +1287,4 @@ import BaseLayout from "../../layouts/BaseCN.astro";
     </div>
   </section>
   <!-- Contact end -->
-</BaseLayout>
+</Layout>

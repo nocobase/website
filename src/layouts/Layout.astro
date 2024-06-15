@@ -3,15 +3,16 @@ import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
 
 const cn = Astro.url.pathname.startsWith("/cn/");
+const { title, description, keywords } = Astro.props;
 ---
 
 {
   cn ? (
-    <BaseLayoutCN>
+    <BaseLayoutCN title={title} description={description} keywords={keywords}>
       <slot />
     </BaseLayoutCN>
   ) : (
-    <BaseLayoutEN>
+    <BaseLayoutEN title={title} description={description} keywords={keywords}>
       <slot />
     </BaseLayoutEN>
   )

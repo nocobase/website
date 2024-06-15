@@ -1,15 +1,15 @@
 ---
 import PageHeader from "../../../components/PageHeader.astro";
 import Toc from "../../../components/Toc.astro";
-import BaseLayout from "../../../layouts/BaseEN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { getRelease } from '../../../utils';
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getRelease(slug);
 ---
 
-<BaseLayout>
-  <PageHeader title={data.title} />
+<Layout title={data.title} description={data.description}>
+  <PageHeader title={data.title} description={data.description} />
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container" : "container"}
@@ -30,7 +30,7 @@ const { data, headings, html } = await getRelease(slug);
       }
     </main>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   main {

@@ -5,13 +5,15 @@ import Pagination from "../../../../components/Pagination.astro";
 import Layout from "../../../../layouts/Layout.astro";
 import { listArticles, url } from "../../../../utils";
 
+const title = '博客';
+const description = '';
 const basepath = '/cn/blog';
 const { page } = Astro.params as { page?: number };
 const { data, meta } = await listArticles({ page });
 ---
 
-<Layout>
-  <PageHeader title="博客" />
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
       <main>

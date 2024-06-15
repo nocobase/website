@@ -24,7 +24,7 @@ if (totalPages < 2) {
     {
       currentPage - 1 > 0 ? (
         <li class="page-item">
-          <a class="page-link" href={`${basepath}/page/${currentPage - 1}`}>
+          <a class="page-link" href={`${basepath}/page/${1 * currentPage - 1}`}>
             Previous
           </a>
         </li>
@@ -55,7 +55,7 @@ if (totalPages < 2) {
     {
       totalPages > currentPage ? (
         <li class="page-item">
-          <a class="page-link" href={`${basepath}/page/${currentPage + 1}`}>
+          <a class="page-link" href={`${basepath}/page/${1 * currentPage + 1}`}>
             Next
           </a>
         </li>
