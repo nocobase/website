@@ -12,6 +12,8 @@ export function url(path: string) {
   return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path
 }
 
+const processor = await createMarkdownProcessor();
+
 export async function createMarkdownProcessor() {
   return await coreCreateMarkdownProcessor({
     shikiConfig: {
@@ -44,16 +46,24 @@ export async function listArticles(options?: { page?: number }) {
   return { data, meta };
 }
 
+const articles: Record<string, any> = {};
+
 export async function getArticle(slug?: string) {
+  if (!slug) {
+    return {};
+  }
   const res = await fetch(`${baseURL}articles:get?filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
-  const processor = await createMarkdownProcessor();
+  const key = `${data.id}-${body.updatedAt}`;
+  if (articles[key]) {
+    return articles[key];
+  }
   const { code, metadata } = await processor.render(data?.content || '');
   const headings: any[] = metadata.headings || [];
-  return { data, headings, html: code };
+  articles[key] = { data, headings, html: code };
+  return articles[key];
 }
-
 
 export async function listReleases() {
   const res = await fetch(`${baseURL}releases:list?pageSize=2000&token=${token}`);
@@ -61,13 +71,18 @@ export async function listReleases() {
   return data;
 }
 
+const releases: Record<string, any> = {};
+
 export async function getRelease(slug?: string) {
   const res = await fetch(`${baseURL}releases:get?filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
-  const processor = await createMarkdownProcessor();
+  const key = `${data.id}-${body.updatedAt}`;
+  if (releases[key]) {
+    return releases[key];
+  }
   const { code, metadata } = await processor.render(data?.content || '');
   const headings: any[] = metadata.headings || [];
-  return { data, headings, html: code };
+  releases[key] = { data, headings, html: code };
+  return releases[key];
 }
-
