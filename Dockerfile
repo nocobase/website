@@ -1,9 +1,8 @@
 FROM node:18.20.3-slim as builder
 
 ENV SITE_APPDIR /site
-ENV SITE_PORT 4321
 
-RUN npm config set registry https://registry.npmmirror.com/
+# RUN npm config set registry https://registry.npmmirror.com/
 
 COPY ./public $SITE_APPDIR/public
 COPY ./src $SITE_APPDIR/src
