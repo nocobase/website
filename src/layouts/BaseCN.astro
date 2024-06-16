@@ -3,32 +3,53 @@ import ShapeFooter from "../components/ShapeFooter.astro";
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
-let urlCN = Astro.url.pathname.replace(/\/en\//g, '/cn/');
-if (!urlCN.startsWith('/cn/')) {
-  urlCN = '/cn' + urlCN;
+let urlCN = Astro.url.pathname.replace(/\/en\//g, "/cn/");
+if (!urlCN.startsWith("/cn/")) {
+  urlCN = "/cn" + urlCN;
 }
-let urlEN = Astro.url.pathname.replace(/\/cn\//g, '/en/');
-if (!urlEN.startsWith('/en/')) {
-  urlEN = '/en' + urlCN;
+let urlEN = Astro.url.pathname.replace(/\/cn\//g, "/en/");
+if (!urlEN.startsWith("/en/")) {
+  urlEN = "/en" + urlCN;
 }
 const { title, description, keywords } = Astro.props;
+const meta = {
+  title: title
+    ? `${title} - NocoBase`
+    : "NocoBase - 开源、私有部署的轻量级无代码和低代码开发平台",
+  description:
+    description ||
+    "NocoBase 是一个轻量级、极易扩展的开源无代码和低代码开发平台。无需开发，花几分钟时间部署 NocoBase，马上拥有一个私有、可控、极易扩展的无代码开发平台，帮助企业轻松实现多元业务场景，让数字化更快、更简单、更便宜。",
+  keywords:
+    keywords ||
+    "nocobase,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,无代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,无代码系统,无代码平台,无代码搭建,免费无代码开发平台",
+};
 ---
 
 <!doctype html>
 <html lang="zh-CN" dir="ltr" class={baseClassName + "-page"}>
   <head>
     <meta charset="utf-8" />
-    <title>{title ? `${title} - NocoBase` : 'NocoBase - 开源、私有部署的轻量级无代码和低代码开发平台'}</title>
+    <title>{meta.title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content={description || "NocoBase 是一个轻量级、极易扩展的开源无代码和低代码开发平台。无需开发，花几分钟时间部署 NocoBase，马上拥有一个私有、可控、极易扩展的无代码开发平台，帮助企业轻松实现多元业务场景，让数字化更快、更简单、更便宜。"}
-    />
-    <meta
-      name="keywords"
-      content={keywords || "nocobase,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,无代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,无代码系统,无代码平台,无代码搭建,免费无代码开发平台"}
-    />
+    <meta name="title" content={meta.title} />
+    <meta name="description" content={meta.description} />
+    <meta name="keywords" content={meta.keywords} />
     <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
+
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -213,7 +234,10 @@ const { title, description, keywords } = Astro.props;
           >
         </div>
         <div class="lang">
-          <a href={urlEN} class="text-reset">EN</a> | <a href={urlCN} class="text-reset">中文</a>
+          <a href={urlEN} class="text-reset">EN</a> | <a
+            href={urlCN}
+            class="text-reset">中文</a
+          >
         </div>
         <!-- End Logo container-->
         <div class="menu-extras">
@@ -402,23 +426,17 @@ const { title, description, keywords } = Astro.props;
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/plugins"
-                        class="text-foot"
+                      <a href="/cn/plugins" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 插件</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/commercial"
-                        class="text-foot"
+                      <a href="/cn/commercial" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 商业授权</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/contact"
-                        class="text-foot"
+                      <a href="/cn/contact" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 联系我们</a
                       >
                     </li>
@@ -429,44 +447,32 @@ const { title, description, keywords } = Astro.props;
                   <h5 class="footer-head">Resources</h5>
                   <ul class="list-unstyled footer-list mt-4">
                     <li>
-                      <a
-                        href="/cn/docs/welcome"
-                        class="text-foot"
+                      <a href="/cn/docs/welcome" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 文档</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/blog"
-                        class="text-foot"
+                      <a href="/cn/blog" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 博客</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/community"
-                        class="text-foot"
+                      <a href="/cn/community" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 社区</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/roadmap"
-                        class="text-foot"
+                      <a href="/cn/roadmap" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 路线图</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/releases"
-                        class="text-foot"
+                      <a href="/cn/releases" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 更新记录</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/cn/agreement"
-                        class="text-foot"
+                      <a href="/cn/agreement" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 许可协议</a
                       >
                     </li>
