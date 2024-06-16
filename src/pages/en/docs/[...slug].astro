@@ -35,10 +35,10 @@ const groups = sidebar[groupName];
       </aside>
       <main class="bd-main">
         <div class={"blog-container"}>
-          <div class="left-column markdown-body">
+          <div class="col-md-9 col-18 markdown-body">
             <Content />
           </div>
-          <div class="right-column">
+          <div class="col-md-3 col-6 markdown-toc">
             {showToc && <Toc headings={headings} />}
           </div>
         </div>

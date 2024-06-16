@@ -7072,4 +7072,7 @@ pre {
   .markdown-toc {
     display: none;
   }
+  .bd-sidebar {
+    display: none;
+  }
 }
