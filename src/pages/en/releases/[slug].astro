@@ -1,15 +1,26 @@
 ---
+import FormattedDate from "../../../components/FormattedDate.astro";
 import PageHeader from "../../../components/PageHeader.astro";
+import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { getRelease } from '../../../utils';
+import { getRelease } from "../../../utils";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getRelease(slug);
+const title = data.title;
+const description = data.description;
+const basepath = "/en/releases";
+const keywords = (data.tags || [])
+  .map((tag: any) => tag.title)
+  .join(",");
 ---
 
-<Layout title={data.title} description={data.description}>
-  <PageHeader title={data.title} description={data.description} />
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+    <FormattedDate date={data.publishedAt || data.createdAt} />
+    <Tags basepath={basepath} items={data.tags} />
+  </PageHeader>
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container" : "container"}
@@ -17,10 +28,10 @@ const { data, headings, html } = await getRelease(slug);
       {
         headings.length > 0 ? (
           <>
-            <div class="left-column markdown-body">
+            <div class="col-md-9 col-18 markdown-body">
               <Fragment set:html={html} />
             </div>
-            <div class="right-column">
+            <div class="col-md-3 col-6 markdown-toc">
               <Toc headings={headings} />
             </div>
           </>
@@ -34,7 +45,7 @@ const { data, headings, html } = await getRelease(slug);
 
 <style>
   main {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
   }
 </style>

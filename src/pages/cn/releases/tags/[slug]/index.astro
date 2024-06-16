@@ -1,0 +1,45 @@
+---
+import FormattedDate from "../../../../../components/FormattedDate.astro";
+import PageHeader from "../../../../../components/PageHeader.astro";
+import Layout from "../../../../../layouts/Layout.astro";
+import { getReleaseTag, listReleases } from "../../../../../utils";
+
+const { slug } = Astro.params;
+const tag = await getReleaseTag(slug);
+const { data, meta } = await listReleases({ tagSlug: slug });
+const title = "发布日志";
+const description = `Found ${meta.count} results for '${tag.title_cn || tag.title}'`;
+---
+
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description} />
+  <section class="section">
+    <div class="container">
+      <main style="border-top: 1px solid #DFE0E1; ">
+        {
+          data.map((post) => (
+            <div style="border-bottom: 1px solid #DFE0E1; padding: 3em 0 1em;">
+              <a style="color: inherit;" href={`/cn/releases/${post.slug}`}>
+                <h4 class="title">{post.title_cn || post.title}</h4>
+                <p class="date">
+                  <FormattedDate
+                    locale="zh-cn"
+                    date={post.publishedAt || post.createdAt}
+                  />
+                </p>
+              </a>
+            </div>
+          ))
+        }
+      </main>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  main {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+  }
+</style>

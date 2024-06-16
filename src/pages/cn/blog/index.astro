@@ -21,7 +21,7 @@ const { data, meta } = await listArticles();
             {
               data.map((post) => (
                 <li>
-                  <a href={`${basepath}/${post.slug}/`}>
+                  <a href={`${basepath}/${post.slug}`}>
                     <img
                       style="object-fit: cover;"
                       width={720}
@@ -29,9 +29,9 @@ const { data, meta } = await listArticles();
                       src={url(post.cover.url)}
                       alt=""
                     />
-                    <h4 class="title">{post.title}</h4>
+                    <h4 class="title">{post.title_cn || post.title}</h4>
                     <p class="date">
-                      <FormattedDate locale={'zh-cn'} date={post.createdAt}/>
+                      <FormattedDate locale={'zh-cn'} date={post.publishedAt || post.createdAt}/>
                     </p>
                   </a>
                 </li>
@@ -47,7 +47,7 @@ const { data, meta } = await listArticles();
 
 <style>
   main {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
   }
   ul.articles {
@@ -112,6 +112,9 @@ const { data, meta } = await listArticles();
     }
     ul.articles li:first-child .title {
       font-size: 1.563em;
+    }
+    ul.articles img {
+      height: 50vw;
     }
   }
 </style>

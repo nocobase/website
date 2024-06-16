@@ -38,17 +38,17 @@ const description = "一切皆插件，使用插件扩展 NocoBase 的能力。�
           .filter((group) => group.plugins.filter((plugin: any) => plugin.isCommercial).length > 0)
           .map((group) => (
             <>
-              <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
+              <h4 class="mt-2 pb-1 text-muted">{group.title_cn || group.title}</h4>
               <div class="row pb-4">
                 {group.plugins
                   .filter((plugin: any) => plugin.isCommercial)
                   .map((plugin: any) => (
                     <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                      <div class="card rounded shadow border-0 plugin-card">
+                      <a title={plugin.title_cn || plugin.title} style="color: inherit;" href={`/cn/docs/handbook/${plugin.name}`} class="card rounded shadow border-0 plugin-card">
                         <div class="card-body">
                           <div class="mt-2">
-                            <h6 class="card-title">{plugin.title}</h6>
-                            <p class="text-muted mb-2">{plugin.description}</p>
+                            <h6 class="card-title">{plugin.title_cn || plugin.title}</h6>
+                            <p class="text-muted mb-2">{plugin.description_cn || plugin.description}</p>
                             {plugin.isCommercial ? (
                               <span class="badge bg-soft-warning plugin-type">
                                 Commercial
@@ -65,7 +65,7 @@ const description = "一切皆插件，使用插件扩展 NocoBase 的能力。�
                             )}
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   ))}
               </div>

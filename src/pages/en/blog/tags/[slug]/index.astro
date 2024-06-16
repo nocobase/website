@@ -1,19 +1,21 @@
 ---
-import FormattedDate from "../../../../components/FormattedDate.astro";
-import PageHeader from "../../../../components/PageHeader.astro";
-import Pagination from "../../../../components/Pagination.astro";
-import Layout from "../../../../layouts/Layout.astro";
-import { listArticles, url } from "../../../../utils";
+import FormattedDate from "../../../../../components/FormattedDate.astro";
+import PageHeader from "../../../../../components/PageHeader.astro";
+import Pagination from "../../../../../components/Pagination.astro";
+import Layout from "../../../../../layouts/Layout.astro";
+import { getArticleTag, listArticles, url } from "../../../../../utils";
 
-const title = '博客';
-const description = '';
-const basepath = '/cn/blog';
-const { page } = Astro.params as { page?: number };
-const { data, meta } = await listArticles({ page });
+const { slug } = Astro.params;
+const tag = await getArticleTag(slug);
+const { data, meta } = await listArticles({ tagSlug: slug });
+const description = `Found ${meta.count} results for '${tag.title}'`;
+const tagpath = '/en/blog/tags/' + slug;
+const basepath = '/en/blog';
 ---
 
-<Layout title={title} description={description}>
-  <PageHeader title={title} description={description} />
+<Layout title="Blog" description={description}>
+  <PageHeader title="Blog" description={description}>
+  </PageHeader>
   <section class="section">
     <div class="container">
       <main>
@@ -30,9 +32,9 @@ const { data, meta } = await listArticles({ page });
                       src={url(post.cover.url)}
                       alt=""
                     />
-                    <h4 class="title">{post.title_cn || post.title}</h4>
+                    <h4 class="title">{post.title}</h4>
                     <p class="date">
-                      <FormattedDate locale={'zh-cn'} date={post.publishedAt || post.createdAt} />
+                      <FormattedDate date={post.publishedAt || post.createdAt}/>
                     </p>
                   </a>
                 </li>
@@ -40,7 +42,7 @@ const { data, meta } = await listArticles({ page });
             }
           </ul>
         </section>
-        <Pagination basepath={basepath} currentPage={page} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+        <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
       </main>
     </div>
   </section>

@@ -1,36 +1,53 @@
 ---
+import FormattedDate from "../../../components/FormattedDate.astro";
 import PageHeader from "../../../components/PageHeader.astro";
+import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
-import BaseLayout from "../../../layouts/BaseCN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { getArticle } from "../../../utils";
 
 const { slug } = Astro.params;
-const { data, headings, html } = await getArticle(slug);
+const { data, headings, html } = await getArticle(slug, "cn");
+const title = data.title_cn || data.title;
+const keywords = (data.tags || [])
+  .map((tag: any) => tag.title_cn || tag.title)
+  .join(",");
+const description = data.description_cn || data.description;
+const basepath = '/cn/blog';
 ---
 
-<BaseLayout title={data.title} description={data.description}>
-  <PageHeader title={data.title} description={data.description} />
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+    <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
+    <Tags locale="cn" basepath={basepath} items={data.tags} />
+  </PageHeader>
   <section class="section bg-white-color">
-    <main class={headings.length > 0 ? "container blog-container" : "container"}>
-        {
-          headings.length > 0 ? (
-            <>
-              <div class="left-column markdown-body">
-                <Fragment set:html={html} />
-              </div>
-              <div class="right-column">
-                <Toc headings={headings} />
-              </div>
-            </>
-          ) : <Fragment set:html={html} />
-        }
+    <main
+      class={headings.length > 0 ? "container blog-container row" : "container"}
+    >
+      {
+        headings.length > 0 ? (
+          <>
+            <div class="col-md-9 col-18 markdown-body">
+              <Fragment set:html={html} />
+            </div>
+            <div class="col-md-3 col-6 markdown-toc">
+              <Toc headings={headings} />
+            </div>
+          </>
+        ) : (
+          <>
+            <Fragment set:html={html} />
+          </>
+        )
+      }
     </main>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   main {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
   }
 </style>

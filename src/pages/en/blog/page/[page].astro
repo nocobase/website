@@ -20,7 +20,7 @@ const { data, meta } = await listArticles({ page });
             {
               data.map((post) => (
                 <li>
-                  <a href={`${basepath}/${post.slug}/`}>
+                  <a href={`${basepath}/${post.slug}`}>
                     <img
                       style="object-fit: cover;"
                       width={720}
@@ -30,7 +30,7 @@ const { data, meta } = await listArticles({ page });
                     />
                     <h4 class="title">{post.title}</h4>
                     <p class="date">
-                      <FormattedDate date={post.createdAt} />
+                      <FormattedDate date={post.publishedAt || post.createdAt} />
                     </p>
                   </a>
                 </li>

@@ -7067,3 +7067,9 @@ pre {
 .not-found-page-header .pages-heading .title {
   font-size: 10em !important;
 }
+
+@media (max-width: 768px) {
+  .markdown-toc {
+    display: none;
+  }
+}

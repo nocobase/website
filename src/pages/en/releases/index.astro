@@ -4,23 +4,25 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { listReleases } from "../../../utils";
 
-const data = await listReleases();
-const title="Release notes" 
-const description="了解 NocoBase 更新内容，掌握最新功能和修复的进展。"
+const { data } = await listReleases();
+const title = "Release notes";
+const description = "Learn about the latest features, improvements, and bug fixes.";
 ---
 
 <Layout title={title} description={description}>
   <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
-      <main>
+      <main style="border-top: 1px solid #DFE0E1; ">
         {
           data.map((post) => (
-            <div>
-              <a href={`/en/release/${post.slug}/`}>
+            <div style="border-bottom: 1px solid #DFE0E1; padding: 3em 0 1em;">
+              <a style="color: inherit;" href={`/en/releases/${post.slug}`}>
                 <h4 class="title">{post.title}</h4>
                 <p class="date">
-                  <FormattedDate date={post.createdAt}/>
+                  <FormattedDate
+                    date={post.publishedAt || post.createdAt}
+                  />
                 </p>
               </a>
             </div>

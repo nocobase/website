@@ -1,0 +1,55 @@
+---
+interface Props {
+    basepath?: any;
+    items?: any[];
+    locale?: string;
+}
+
+const { basepath, items = [], locale = 'en' } = Astro.props;
+
+const getTitle = (tag: any) => {
+    if (locale !== 'en' && tag.title_cn) {
+        return tag.title_cn;
+    }
+    return tag.title;
+}
+
+if (items.length === 0) {
+    return;
+}
+---
+
+<div class="group tags">
+    <ul>
+        {
+            items.map((tag) => (
+                <li>
+                    <a href={basepath + '/tags/' +tag.slug}>#{getTitle(tag)}</a>
+                </li>
+            ))
+        }
+    </ul>
+</div>
+
+<style>
+    .tags {
+        margin-top: 3rem;
+    }
+    .tags ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+    }
+    .tags li {
+        float: left;
+        margin-top: 0;
+    }
+    .tags a {
+        background: #eee;
+        border-radius: 2px;
+        color: #333;
+        padding: 6px 8px;
+        margin: 0 5px;
+    }
+</style>

@@ -39,50 +39,87 @@ export async function listPluginCategories() {
   return data;
 }
 
-export async function listArticles(options?: { page?: number }) {
-  const { page = 1 } = options || { page: 1 };
-  const res = await fetch(`${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&token=${token}`);
+export async function listArticles(options?: { tagSlug?: string, page?: number }) {
+  const { tagSlug, page = 1 } = options || { page: 1 };
+  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}`;
+  if (tagSlug) {
+    url += `&filter[tags.slug]=${tagSlug}`;
+  }
+  const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };
   return { data, meta };
 }
 
-const articles: Record<string, any> = {};
-
-export async function getArticle(slug?: string) {
+export async function getArticleTag(slug?: string) {
   if (!slug) {
     return {};
   }
-  const res = await fetch(`${baseURL}articles:get?filter[slug]=${slug}&token=${token}`);
+  const res = await fetch(`${baseURL}articleTags:get?filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
-  const key = `${data.id}-${body.updatedAt}`;
+  return data;
+}
+
+const articles: Record<string, any> = {};
+
+export async function getArticle(slug?: string, locale = 'en') {
+  if (!slug) {
+    return {};
+  }
+  const res = await fetch(`${baseURL}articles:get?appends=tags&filter[slug]=${slug}&token=${token}`);
+  const body = await res.json();
+  const data = body.data || {};
+  const key = `${data.id}-${data.updatedAt}-${locale}`;
   if (articles[key]) {
     return articles[key];
   }
-  const { code, metadata } = await processor.render(data?.content || '');
+  let content = data?.content || '';
+  if (locale === 'cn' && data?.content_cn) {
+    content = data?.content_cn;
+  }
+  const { code, metadata } = await processor.render(content);
   const headings: any[] = metadata.headings || [];
   articles[key] = { data, headings, html: code };
   return articles[key];
 }
 
-export async function listReleases() {
-  const res = await fetch(`${baseURL}releases:list?pageSize=2000&token=${token}`);
-  const { data } = await res.json() as { data: any[] };
-  return data;
+export async function listReleases(options?: any) {
+  const { page = 1, tagSlug } = options || {};
+  let url = `${baseURL}releases:list?page=${page}&pageSize=20&sort=-publishedAt&token=${token}`;
+  if (tagSlug) {
+    url += `&filter[tags.slug]=${tagSlug}`;
+  }
+  const res = await fetch(url);
+  const { data, meta } = await res.json() as { meta?: any; data: any[] };
+  return { data, meta };
 }
 
 const releases: Record<string, any> = {};
 
-export async function getRelease(slug?: string) {
-  const res = await fetch(`${baseURL}releases:get?filter[slug]=${slug}&token=${token}`);
+export async function getRelease(slug?: string, locale = 'en') {
+  const res = await fetch(`${baseURL}releases:get?appends=tags&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
-  const key = `${data.id}-${body.updatedAt}`;
+  const key = `${data.id}-${data.updatedAt}-${locale}`;
   if (releases[key]) {
     return releases[key];
   }
-  const { code, metadata } = await processor.render(data?.content || '');
+  let content = data?.content || '';
+  if (locale === 'cn' && data?.content_cn) {
+    content = data?.content_cn;
+  }
+  const { code, metadata } = await processor.render(content);
   const headings: any[] = metadata.headings || [];
   releases[key] = { data, headings, html: code };
   return releases[key];
+}
+
+export async function getReleaseTag(slug?: string) {
+  if (!slug) {
+    return {};
+  }
+  const res = await fetch(`${baseURL}releaseTags:get?filter[slug]=${slug}&token=${token}`);
+  const body = await res.json();
+  const data = body.data || {};
+  return data;
 }

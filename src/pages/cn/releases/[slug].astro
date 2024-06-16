@@ -4,22 +4,22 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { getArticle } from "../../../utils";
+import { getRelease } from "../../../utils";
 
 const { slug } = Astro.params;
-const { data, headings, html } = await getArticle(slug);
-const title = data.title;
-const keywords = (data.tags || [])
-  .map((tag: any) => tag.title)
-  .join(",");
+const { data, headings, html } = await getRelease(slug, "cn");
+const title = data.title_cn || data.title;
 const description = data.description_cn || data.description;
-const basepath = '/en/blog';
+const basepath = "/cn/releases";
+const keywords = (data.tags || [])
+  .map((tag: any) => tag.title_cn || tag.title)
+  .join(",");
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    <FormattedDate date={data.publishedAt || data.createdAt} />
-    <Tags basepath={basepath} items={data.tags} />
+    <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
+    <Tags locale="cn" basepath={basepath} items={data.tags} />
   </PageHeader>
   <section class="section bg-white-color">
     <main
@@ -28,17 +28,15 @@ const basepath = '/en/blog';
       {
         headings.length > 0 ? (
           <>
-            <div class="left-column markdown-body">
+            <div class="col-md-9 col-18 markdown-body">
               <Fragment set:html={html} />
             </div>
-            <div class="right-column">
+            <div class="col-md-3 col-6 markdown-toc">
               <Toc headings={headings} />
             </div>
           </>
         ) : (
-          <>
-            <Fragment set:html={html} />
-          </>
+          <Fragment set:html={html} />
         )
       }
     </main>
