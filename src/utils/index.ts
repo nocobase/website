@@ -41,7 +41,7 @@ export async function listPluginCategories() {
 
 export async function listArticles(options?: { tagSlug?: string, page?: number }) {
   const { tagSlug, page = 1 } = options || { page: 1 };
-  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}`;
+  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
@@ -122,4 +122,92 @@ export async function getReleaseTag(slug?: string) {
   const body = await res.json();
   const data = body.data || {};
   return data;
+}
+
+export async function getSitemapLinks() {
+  const items1 = await fetch(`${baseURL}releases:list?token=${token}`).then(res => res.json()).then(body => body.data);
+  const items2 = await fetch(`${baseURL}articles:list?token=${token}`).then(res => res.json()).then(body => body.data);
+  return [
+    {
+      url: '/en/releases',
+      links: [
+        { lang: 'en-US', url: `/en/releases` },
+        { lang: 'zh-CN', url: `/cn/releases` },
+      ],
+    },
+    {
+      url: '/en/blog',
+      links: [
+        { lang: 'en-US', url: `/en/blog` },
+        { lang: 'zh-CN', url: `/cn/blog` },
+      ],
+    },
+    {
+      url: '/en/plugins',
+      links: [
+        { lang: 'en-US', url: `/en/plugins` },
+        { lang: 'zh-CN', url: `/cn/plugins` },
+      ],
+    },
+    {
+      url: '/en/plugins-commercial',
+      links: [
+        { lang: 'en-US', url: `/en/plugins-commercial` },
+        { lang: 'zh-CN', url: `/cn/plugins-commercial` },
+      ],
+    },
+    {
+      url: '/en/commercial',
+      links: [
+        { lang: 'en-US', url: `/en/commercial` },
+        { lang: 'zh-CN', url: `/cn/commercial` },
+      ],
+    },
+    {
+      url: '/en/community',
+      links: [
+        { lang: 'en-US', url: `/en/community` },
+        { lang: 'zh-CN', url: `/cn/community` },
+      ],
+    },
+    {
+      url: '/en/contact',
+      links: [
+        { lang: 'en-US', url: `/en/contact` },
+        { lang: 'zh-CN', url: `/cn/contact` },
+      ],
+    },
+    {
+      url: '/en/roadmap',
+      links: [
+        { lang: 'en-US', url: `/en/roadmap` },
+        { lang: 'zh-CN', url: `/cn/roadmap` },
+      ],
+    },
+    {
+      url: '/en/agreement',
+      links: [
+        { lang: 'en-US', url: `/en/agreement` },
+        { lang: 'zh-CN', url: `/cn/agreement` },
+      ],
+    },
+  ].concat(items1.map((item: any) => {
+    return {
+      url: `/en/releases/${item.slug}`,
+      lastmod: item.updatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/releases/${item.slug}` },
+        { lang: 'zh-CN', url: `/cn/releases/${item.slug}` },
+      ],
+    }
+  })).concat(items2.map((item: any) => {
+    return {
+      url: `/en/blog/${item.slug}`,
+      lastmod: item.updatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/blog/${item.slug}` },
+        { lang: 'zh-CN', url: `/cn/blog/${item.slug}` },
+      ],
+    }
+  }));
 }

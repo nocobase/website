@@ -18,7 +18,10 @@ const basepath = '/cn/blog';
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
+    <div>
+      {data.author && (<span title={data.author}>{data.author}<span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span></span>)}
+      <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
+    </div>
     <Tags locale="cn" basepath={basepath} items={data.tags} />
   </PageHeader>
   <section class="section bg-white-color">
