@@ -32,9 +32,9 @@ const basepath = '/cn/blog';
                       src={url(post.cover.url)}
                       alt=""
                     />
-                    <h4 class="title">{post.title}</h4>
+                    <h4 class="title">{post.title_cn || post.title}</h4>
                     <p class="date">
-                      <FormattedDate date={post.publishedAt || post.createdAt}/>
+                      <FormattedDate locale={'zh-cn'} date={post.publishedAt || post.createdAt}/>
                     </p>
                   </a>
                 </li>
