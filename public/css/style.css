@@ -7076,3 +7076,71 @@ pre {
     display: none;
   }
 }
+
+ul.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.articles li {
+  width: calc(50% - 1rem);
+}
+ul.articles li * {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+ul.articles li:first-child {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+ul.articles li:first-child img {
+  width: 100%;
+}
+ul.articles li:first-child .title {
+  /* font-size: 2.369rem; */
+}
+ul.articles li img {
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+}
+ul.articles li a {
+  display: block;
+}
+ul.articles .title {
+  margin: .5rem 0;
+  color: rgb(var(--black));
+  line-height: 1.25;
+}
+ul.articles .date {
+  margin: 0;
+  color: rgb(var(--gray));
+}
+ul.articles li a:hover h4,
+ul.articles li a:hover .date {
+  color: rgb(var(--accent));
+}
+ul.articles a:hover img {
+  box-shadow: var(--box-shadow);
+}
+@media (max-width: 720px) {
+  ul.articles {
+    gap: 0.5em;
+  }
+  ul.articles li {
+    width: 100%;
+    text-align: center;
+  }
+  ul.articles li:first-child {
+    margin-bottom: 0;
+  }
+  ul.articles li:first-child .title {
+    font-size: 1.563em;
+  }
+  ul.articles img {
+    height: 50vw;
+  }
+}

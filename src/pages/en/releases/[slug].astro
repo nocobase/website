@@ -8,6 +8,9 @@ import { getRelease } from "../../../utils";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getRelease(slug);
+if (!data) {
+  return new Response("Not found", { status: 404 });
+}
 const title = data.title;
 const description = data.description;
 const basepath = "/en/releases";

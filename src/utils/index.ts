@@ -5,8 +5,8 @@ import remarkDirective from 'remark-directive';
 const baseURL = (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/';
 const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
 
-console.log(baseURL);
-console.log(token);
+// console.log(baseURL);
+// console.log(token);
 
 export function url(path: string) {
   return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path
@@ -69,6 +69,9 @@ export async function getArticle(slug?: string, locale = 'en') {
   const res = await fetch(`${baseURL}articles:get?appends=tags&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
+  if (!data.id) {
+    return {};
+  }
   const key = `${data.id}-${data.updatedAt}-${locale}`;
   if (articles[key]) {
     return articles[key];
@@ -100,6 +103,9 @@ export async function getRelease(slug?: string, locale = 'en') {
   const res = await fetch(`${baseURL}releases:get?appends=tags&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
+  if (!data.id) {
+    return {};
+  }
   const key = `${data.id}-${data.updatedAt}-${locale}`;
   if (releases[key]) {
     return releases[key];

@@ -1,9 +1,9 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
-import Menu from "../../../components/Menu.astro";
 import Toc from "../../../components/Toc.astro";
 
-import BaseLayout from "../../../layouts/BaseEN.astro";
+import Menu from "../../../components/Menu.astro";
+import Layout from "../../../layouts/Layout.astro";
 import sidebar from "../../../sidebar";
 
 export const prerender = true;
@@ -25,27 +25,27 @@ const groupName = Astro.url.pathname.split("/")?.[3] || "";
 const groups = sidebar[groupName];
 ---
 
-<BaseLayout>
+<Layout>
   <section class="section">
     <div class="container bd-layout">
-      <aside class="bd-sidebar">
-        <nav class="bd-links">
-          <Menu basename={'/cn/docs'} items={groups} />
-        </nav>
-      </aside>
       <main class="bd-main">
-        <div class={"blog-container"}>
-          <div class="col-md-9 col-18 markdown-body">
+        <div class={"blog-container row"}>
+          <aside class="col bd-sidebar">
+            <nav class="bd-links">
+              <Menu basename={'/en/docs'} items={groups} />
+            </nav>
+          </aside>
+          <div class="col-8 markdown-body">
             <Content />
           </div>
-          <div class="col-md-3 col-6 markdown-toc">
+          <div class="col markdown-toc">
             {showToc && <Toc headings={headings} />}
           </div>
         </div>
       </main>
     </div>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   .bd-layout {
@@ -58,13 +58,17 @@ const groups = sidebar[groupName];
     height: calc(100vh - 200px);
     overflow: auto;
   }
+  .markdown-body {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
   .bd-sidebar {
-    width: 220px;
-    padding-right: 20px;
+    /* width: 220px; */
+    /* padding-right: 20px; */
   }
   .bd-main {
-    flex: 1;
-    width: calc(100% - 300px);
+    /* flex: 1; */
+    /* width: calc(100% - 300px); */
   }
   #topnav {
     border-bottom: 1px solid #dd;
