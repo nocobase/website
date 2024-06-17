@@ -20,7 +20,8 @@ const pkgs = [
     'cookie',
     'path-to-regexp',
     'html-escaper',
-    'cssesc'
+    'cssesc',
+    'sitemap'
 ];
 
 (async () => {

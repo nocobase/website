@@ -1,6 +1,5 @@
 import mdx from '@astrojs/mdx';
 import node from '@astrojs/node';
-import sitemap from '@astrojs/sitemap';
 import { defineConfig, passthroughImageService } from 'astro/config';
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
@@ -8,9 +7,7 @@ import remarkDirective from 'remark-directive';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.nocobase.com',
-  integrations: [mdx(), sitemap({
-    customPages: ['https://www.nocobase.com/external-page', 'https://www.nocobase.com/external-page2']
-  })],
+  integrations: [mdx()],
   devToolbar: {
     enabled: false
   },
