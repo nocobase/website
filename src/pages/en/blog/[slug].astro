@@ -12,7 +12,7 @@ const title = data.title;
 const keywords = (data.tags || [])
   .map((tag: any) => tag.title)
   .join(",");
-const description = data.description_cn || data.description;
+const description = data.description;
 const basepath = '/en/blog';
 ---
 
