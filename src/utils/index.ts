@@ -41,7 +41,7 @@ export async function listPluginCategories() {
 
 export async function listArticles(options?: { tagSlug?: string, page?: number }) {
   const { tagSlug, page = 1 } = options || { page: 1 };
-  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true`;
+  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
@@ -85,7 +85,7 @@ export async function getArticle(slug?: string, locale = 'en') {
 
 export async function listReleases(options?: any) {
   const { page = 1, tagSlug } = options || {};
-  let url = `${baseURL}releases:list?page=${page}&pageSize=20&sort=-publishedAt&token=${token}`;
+  let url = `${baseURL}releases:list?page=${page}&pageSize=20&sort=-publishedAt&token=${token}&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
