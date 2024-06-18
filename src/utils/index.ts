@@ -27,14 +27,26 @@ export async function createMarkdownProcessor() {
   });
 }
 
+export async function getTaskLastUpdatedAt() {
+  const res = await fetch(`${baseURL}tasks:get?sort=-updatedAt&token=${token}`);
+  const { data } = await res.json() as { data: any };
+  return data.updatedAt;
+}
+
+export async function getLastUpdatedAt(collection: string) {
+  const res = await fetch(`${baseURL}${collection}:get?sort=-updatedAt&token=${token}`);
+  const { data } = await res.json() as { data: any };
+  return data.updatedAt;
+}
+
 export async function listTaskCategories() {
-  const res = await fetch(`${baseURL}taskCategories:list?pageSize=200&appends=tasks,tasks.status&token=${token}`);
+  const res = await fetch(`${baseURL}taskCategories:list?pageSize=200&appends=tasks(sort=sort),tasks.status&sort=sort&token=${token}`);
   const { data } = await res.json() as { data: any[] };
   return data;
 }
 
 export async function listPluginCategories() {
-  const res = await fetch(`${baseURL}pluginCategories:list?pageSize=200&appends=plugins&token=${token}`);
+  const res = await fetch(`${baseURL}pluginCategories:list?pageSize=200&appends=plugins(sort=sort)&sort=sort&token=${token}`);
   const { data } = await res.json() as { data: any[] };
   return data;
 }
@@ -133,9 +145,14 @@ export async function getReleaseTag(slug?: string) {
 export async function getSitemapLinks() {
   const items1 = await fetch(`${baseURL}releases:list?token=${token}`).then(res => res.json()).then(body => body.data);
   const items2 = await fetch(`${baseURL}articles:list?token=${token}`).then(res => res.json()).then(body => body.data);
+  const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
+  const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
+  const releasesLastUpdatedAt = await getLastUpdatedAt('releases');
+  const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
   return [
     {
       url: '/en/releases',
+      lastmod: releasesLastUpdatedAt,
       links: [
         { lang: 'en-US', url: `/en/releases` },
         { lang: 'zh-CN', url: `/cn/releases` },
@@ -143,13 +160,23 @@ export async function getSitemapLinks() {
     },
     {
       url: '/en/blog',
+      lastmod: articlesLastUpdatedAt,
       links: [
         { lang: 'en-US', url: `/en/blog` },
         { lang: 'zh-CN', url: `/cn/blog` },
       ],
     },
     {
+      url: '/en/roadmap',
+      lastmod: tasksLastUpdatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/roadmap` },
+        { lang: 'zh-CN', url: `/cn/roadmap` },
+      ],
+    },
+    {
       url: '/en/plugins',
+      lastmod: pluginsLastUpdatedAt,
       links: [
         { lang: 'en-US', url: `/en/plugins` },
         { lang: 'zh-CN', url: `/cn/plugins` },
@@ -181,13 +208,6 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/contact` },
         { lang: 'zh-CN', url: `/cn/contact` },
-      ],
-    },
-    {
-      url: '/en/roadmap',
-      links: [
-        { lang: 'en-US', url: `/en/roadmap` },
-        { lang: 'zh-CN', url: `/cn/roadmap` },
       ],
     },
     {

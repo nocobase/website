@@ -1,18 +1,19 @@
 ---
+import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { listTaskCategories } from "../../utils";
+import { getLastUpdatedAt, listTaskCategories } from "../../utils";
 
+const lastUpdatedAt = await getLastUpdatedAt("tasks");
 const data = await listTaskCategories();
 const title = "Roadmap";
-const description = "We are developing or have already planned the following new features and plugins";
+const description =
+  "We are developing or have already planned the following new features and plugins";
 ---
 
 <Layout title={title} description={description}>
   <PageHeader title={title} description={description}>
-    <span slot="description">
-        We are developing or have already planned the following new features and plugins
-    </span>
+    Updated on <FormattedDate date={lastUpdatedAt} />
   </PageHeader>
 
   <!-- Section Start -->
@@ -30,10 +31,18 @@ const description = "We are developing or have already planned the following new
                     <div class="card rounded shadow border-0 plugin-card">
                       <div class="card-body">
                         <div class="mt-2">
-                          <h6 title={task.title} class="card-title">{task.title}</h6>
+                          <h6 title={task.title} class="card-title">
+                            {task.title}
+                          </h6>
                           <p class="text-muted mb-2">{task.description}</p>
                           {task.status && (
-                            <span class={"badge bg-soft-"+ task.status.type +" plugin-type"}>
+                            <span
+                              class={
+                                "badge bg-soft-" +
+                                task.status.type +
+                                " plugin-type"
+                              }
+                            >
                               {task.status.name}
                             </span>
                           )}
@@ -61,7 +70,7 @@ const description = "We are developing or have already planned the following new
 </Layout><!--end section-->
 
 <style>
-.plugin-type {
-  margin-right: 5px;
-}
+  .plugin-type {
+    margin-right: 5px;
+  }
 </style>

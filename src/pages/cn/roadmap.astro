@@ -1,18 +1,18 @@
 ---
+import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { listTaskCategories } from '../../utils';
+import { getLastUpdatedAt, listTaskCategories } from "../../utils";
 
+const lastUpdatedAt = await getLastUpdatedAt("tasks");
 const data = await listTaskCategories();
-const title="路线规划";
+const title = "路线规划";
 const description = "我们正在开发或者已经计划以下新特性和插件";
 ---
 
 <Layout title={title} description={description}>
   <PageHeader title={title} description={description}>
-    <span slot="description">
-      {description}
-    </span>
+    更新于<FormattedDate locale="zh-cn" date={lastUpdatedAt} />
   </PageHeader>
 
   <!-- Section Start -->
@@ -23,17 +23,29 @@ const description = "我们正在开发或者已经计划以下新特性和插�
           .filter((group) => group.tasks.length > 0)
           .map((group) => (
             <>
-              <h4 class="mt-2 pb-1 text-muted">{group.title_cn || group.title}</h4>
+              <h4 class="mt-2 pb-1 text-muted">
+                {group.title_cn || group.title}
+              </h4>
               <div class="row pb-4">
                 {group.tasks.map((task: any) => (
                   <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
                     <div class="card rounded shadow border-0 plugin-card">
                       <div class="card-body">
                         <div class="mt-2">
-                          <h6 class="card-title">{task.title_cn || task.title}</h6>
-                          <p class="text-muted mb-2">{task.description_cn || task.description}</p>
+                          <h6 class="card-title">
+                            {task.title_cn || task.title}
+                          </h6>
+                          <p class="text-muted mb-2">
+                            {task.description_cn || task.description}
+                          </p>
                           {task.status && (
-                            <span class={"badge bg-soft-"+ task.status.type +" plugin-type"}>
+                            <span
+                              class={
+                                "badge bg-soft-" +
+                                task.status.type +
+                                " plugin-type"
+                              }
+                            >
                               {task.status.name}
                             </span>
                           )}
@@ -64,4 +76,4 @@ const description = "我们正在开发或者已经计划以下新特性和插�
   .plugin-type {
     margin-right: 5px;
   }
-  </style>
+</style>
