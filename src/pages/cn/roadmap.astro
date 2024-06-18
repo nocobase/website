@@ -34,7 +34,17 @@ const description = "我们正在开发或者已经计划以下新特性和插�
                           <p class="text-muted mb-2">{task.description_cn || task.description}</p>
                           {task.status && (
                             <span class={"badge bg-soft-"+ task.status.type +" plugin-type"}>
-                              {task.status.name_cn || task.status.name}
+                              {task.status.name}
+                            </span>
+                          )}
+                          {task.isNewPlugin && (
+                            <span class="badge bg-soft-danger plugin-type">
+                              New plugin
+                            </span>
+                          )}
+                          {task.isCommercial && (
+                            <span class="badge bg-soft-warning plugin-type">
+                              Commercial
                             </span>
                           )}
                         </div>
@@ -49,3 +59,9 @@ const description = "我们正在开发或者已经计划以下新特性和插�
     </div><!--end container-->
   </section><!--end section-->
 </Layout><!--end section-->
+
+<style>
+  .plugin-type {
+    margin-right: 5px;
+  }
+  </style>

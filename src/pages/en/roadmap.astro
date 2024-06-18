@@ -30,11 +30,21 @@ const description = "We are developing or have already planned the following new
                     <div class="card rounded shadow border-0 plugin-card">
                       <div class="card-body">
                         <div class="mt-2">
-                          <h6 class="card-title">{task.title}</h6>
+                          <h6 title={task.title} class="card-title">{task.title}</h6>
                           <p class="text-muted mb-2">{task.description}</p>
                           {task.status && (
                             <span class={"badge bg-soft-"+ task.status.type +" plugin-type"}>
                               {task.status.name}
+                            </span>
+                          )}
+                          {task.isNewPlugin && (
+                            <span class="badge bg-soft-danger plugin-type">
+                              New plugin
+                            </span>
+                          )}
+                          {task.isCommercial && (
+                            <span class="badge bg-soft-warning plugin-type">
+                              Commercial
                             </span>
                           )}
                         </div>
@@ -49,3 +59,9 @@ const description = "We are developing or have already planned the following new
     </div><!--end container-->
   </section><!--end section-->
 </Layout><!--end section-->
+
+<style>
+.plugin-type {
+  margin-right: 5px;
+}
+</style>
