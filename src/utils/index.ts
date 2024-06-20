@@ -9,6 +9,9 @@ const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
 // console.log(token);
 
 export function url(path: string) {
+  if (path.startsWith('https')) {
+    return path;
+  }
   return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path
 }
 
