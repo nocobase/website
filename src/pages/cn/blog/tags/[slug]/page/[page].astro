@@ -5,18 +5,17 @@ import Pagination from "../../../../../../components/Pagination.astro";
 import Layout from "../../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../../utils";
 
-const title = '博客';
 const { slug, page } = Astro.params as { slug?: string; page?: number; };
 const { data, meta } = await listArticles({ page, tagSlug: slug });
 const tag = await getArticleTag(slug);
-const description = `Found ${meta.count} results for '${tag.title_cn || tag.title}'`;
 const tagpath = '/cn/blog/tags/' + slug;
 const basepath = '/cn/blog';
+const title = tag.title || tag.title_cn;
+const description = tag.description || tag.description_cn;
 ---
 
 <Layout title={title} description={description}>
-  <PageHeader title={title} description={description}>
-  </PageHeader>
+  <PageHeader title={title} description={description}></PageHeader>
   <section class="section">
     <div class="container">
       <main>
@@ -31,11 +30,11 @@ const basepath = '/cn/blog';
                       width={720}
                       height={360}
                       src={url(post.cover.url)}
-                      alt=""
+                      alt={post.title_cn || post.title}
                     />
                     <h4 class="title">{post.title_cn || post.title}</h4>
                     <p class="date">
-                      <FormattedDate locale={'zh-cn'} date={post.publishedAt || post.createdAt} />
+                      <FormattedDate locale="zh-cn" date={post.publishedAt || post.createdAt} />
                     </p>
                   </a>
                 </li>

@@ -8,14 +8,15 @@ import { getArticleTag, listArticles, url } from "../../../../../utils";
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
 const { data, meta } = await listArticles({ tagSlug: slug });
-const description = `Found ${meta.count} results for '${tag.title_cn || tag.title}'`;
+// const description = `Found ${meta.count} results for '${tag.title}'`;
 const tagpath = '/cn/blog/tags/' + slug;
 const basepath = '/cn/blog';
+const title = tag.title_cn || tag.title;
+const description = tag.description_cn || tag.description;
 ---
 
-<Layout title="博客" description={description}>
-  <PageHeader title="博客" description={description}>
-  </PageHeader>
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description}></PageHeader>
   <section class="section">
     <div class="container">
       <main>
@@ -30,11 +31,11 @@ const basepath = '/cn/blog';
                       width={720}
                       height={360}
                       src={url(post.cover.url)}
-                      alt=""
+                      alt={post.title_cn || post.title}
                     />
                     <h4 class="title">{post.title_cn || post.title}</h4>
                     <p class="date">
-                      <FormattedDate locale={'zh-cn'} date={post.publishedAt || post.createdAt}/>
+                      <FormattedDate locale="zh-cn" date={post.publishedAt || post.createdAt}/>
                     </p>
                   </a>
                 </li>

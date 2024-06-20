@@ -2,16 +2,25 @@
 import FormattedDate from "../../../../components/FormattedDate.astro";
 import PageHeader from "../../../../components/PageHeader.astro";
 import Pagination from "../../../../components/Pagination.astro";
+import Tags from "../../../../components/Tags.astro";
 import Layout from "../../../../layouts/Layout.astro";
-import { listArticles, url } from "../../../../utils";
+import { listArticleTags, listArticles, url } from "../../../../utils";
 
 const basepath = '/en/blog';
 const { page } = Astro.params as { page?: number };
 const { data, meta } = await listArticles({ page });
+const description = 'The latest news and announcements from NocoBase';
+const tags = await listArticleTags({
+  filter: {
+    displayOnBlog: true,
+  },
+});
 ---
 
-<Layout title="Blog">
-  <PageHeader title="Blog" />
+<Layout title="Blog" description={description}>
+  <PageHeader title="Blog" description={description}>
+    <Tags basepath={basepath} items={tags} />
+  </PageHeader>
   <section class="section">
     <div class="container">
       <main>

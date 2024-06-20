@@ -5,18 +5,17 @@ import Pagination from "../../../../../../components/Pagination.astro";
 import Layout from "../../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../../utils";
 
-const title = 'Blog';
 const { slug, page } = Astro.params as { slug?: string; page?: number; };
 const { data, meta } = await listArticles({ page, tagSlug: slug });
 const tag = await getArticleTag(slug);
-const description = `Found ${meta.count} results for '${tag.title}'`;
 const tagpath = '/en/blog/tags/' + slug;
 const basepath = '/en/blog';
+const title = tag.title;
+const description = tag.description;
 ---
 
 <Layout title={title} description={description}>
-  <PageHeader title={title} description={description}>
-  </PageHeader>
+  <PageHeader title={title} description={description}></PageHeader>
   <section class="section">
     <div class="container">
       <main>
@@ -31,9 +30,9 @@ const basepath = '/en/blog';
                       width={720}
                       height={360}
                       src={url(post.cover.url)}
-                      alt=""
+                      alt={post.title}
                     />
-                    <h4 class="title">{post.title_cn || post.title}</h4>
+                    <h4 class="title">{post.title}</h4>
                     <p class="date">
                       <FormattedDate date={post.publishedAt || post.createdAt} />
                     </p>

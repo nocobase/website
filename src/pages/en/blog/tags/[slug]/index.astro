@@ -8,14 +8,15 @@ import { getArticleTag, listArticles, url } from "../../../../../utils";
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
 const { data, meta } = await listArticles({ tagSlug: slug });
-const description = `Found ${meta.count} results for '${tag.title}'`;
+// const description = `Found ${meta.count} results for '${tag.title}'`;
 const tagpath = '/en/blog/tags/' + slug;
 const basepath = '/en/blog';
+const title = tag.title;
+const description = tag.description;
 ---
 
-<Layout title="Blog" description={description}>
-  <PageHeader title="Blog" description={description}>
-  </PageHeader>
+<Layout title={title} description={description}>
+  <PageHeader title={title} description={description}></PageHeader>
   <section class="section">
     <div class="container">
       <main>
@@ -30,7 +31,7 @@ const basepath = '/en/blog';
                       width={720}
                       height={360}
                       src={url(post.cover.url)}
-                      alt=""
+                      alt={post.title}
                     />
                     <h4 class="title">{post.title}</h4>
                     <p class="date">

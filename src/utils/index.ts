@@ -54,15 +54,41 @@ export async function listPluginCategories() {
   return data;
 }
 
-export async function listArticles(options?: { tagSlug?: string, page?: number }) {
-  const { tagSlug, page = 1 } = options || { page: 1 };
+export async function listArticles(options?: { categorySlug?: string; tagSlug?: string; page?: number; }) {
+  const { categorySlug, tagSlug, page = 1 } = options || { page: 1 };
   let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
+  if (categorySlug) {
+    url += `&filter[category.slug]=${categorySlug}`;
+  }
   const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };
   return { data, meta };
+}
+
+export async function listArticleCategories() {
+  const res = await fetch(`${baseURL}articleCategories:list?pageSize=200&sort=sort&token=${token}`);
+  const { data } = await res.json() as { data: any[] };
+  return data;
+}
+
+export async function listArticleTags(options?: any) {
+  const { filter } = options || {};
+  const res = await fetch(`${baseURL}articleTags:list?pageSize=200&sort=sort&token=${token}&filter=${JSON.stringify(filter)}`);
+  const { data } = await res.json() as { data: any[] };
+  return data;
+}
+
+export async function getArticleCategory(slug?: string) {
+  if (!slug) {
+    return {};
+  }
+  const res = await fetch(`${baseURL}articleCategories:get?filter[slug]=${slug}&token=${token}`);
+  const body = await res.json();
+  const data = body.data || {};
+  return data;
 }
 
 export async function getArticleTag(slug?: string) {
