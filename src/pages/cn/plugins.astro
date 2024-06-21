@@ -42,7 +42,7 @@ const keywords = page.keywords_cn || page.keywords;
               <div class="row pb-4">
                 {group.plugins.map((plugin: any) => (
                   <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                    <a title={plugin.title_cn || plugin.title} style="color: inherit;" href={`/cn/docs/handbook/${plugin.name}`} class="card rounded shadow border-0 plugin-card">
+                    <div title={plugin.title_cn || plugin.title} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
                       <div class="card-body">
                         <div class="mt-2">
                           <h6 class="card-title">{plugin.title_cn || plugin.title}</h6>
@@ -63,7 +63,7 @@ const keywords = page.keywords_cn || page.keywords;
                           )}
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                 ))}
               </div>

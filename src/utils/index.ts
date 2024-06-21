@@ -5,9 +5,6 @@ import remarkDirective from 'remark-directive';
 const baseURL = (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/';
 const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
 
-// console.log(baseURL);
-// console.log(token);
-
 export function url(path: string) {
   if (path.startsWith('https')) {
     return path;
@@ -182,29 +179,12 @@ export async function getReleaseTag(slug?: string) {
 }
 
 export async function getSitemapLinks() {
-  const items1 = await fetch(`${baseURL}releases:list?token=${token}`).then(res => res.json()).then(body => body.data);
+  const items1 = await fetch(`${baseURL}articleTags:list?token=${token}`).then(res => res.json()).then(body => body.data);
   const items2 = await fetch(`${baseURL}articles:list?token=${token}`).then(res => res.json()).then(body => body.data);
   const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
   const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
-  const releasesLastUpdatedAt = await getLastUpdatedAt('releases');
   const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
   return [
-    {
-      url: '/en/releases',
-      lastmod: releasesLastUpdatedAt,
-      links: [
-        { lang: 'en-US', url: `/en/releases` },
-        { lang: 'zh-CN', url: `/cn/releases` },
-      ],
-    },
-    {
-      url: '/en/blog',
-      lastmod: articlesLastUpdatedAt,
-      links: [
-        { lang: 'en-US', url: `/en/blog` },
-        { lang: 'zh-CN', url: `/cn/blog` },
-      ],
-    },
     {
       url: '/en/roadmap',
       lastmod: tasksLastUpdatedAt,
@@ -256,16 +236,24 @@ export async function getSitemapLinks() {
         { lang: 'zh-CN', url: `/cn/agreement` },
       ],
     },
-  ].concat(items1.map((item: any) => {
+    {
+      url: '/en/blog',
+      lastmod: articlesLastUpdatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/blog` },
+        { lang: 'zh-CN', url: `/cn/blog` },
+      ],
+    },
+  ].concat(await Promise.all(items1.map(async (item: any) => {
     return {
-      url: `/en/releases/${item.slug}`,
+      url: `/en/blog/tags/${item.slug}`,
       lastmod: item.updatedAt,
       links: [
-        { lang: 'en-US', url: `/en/releases/${item.slug}` },
-        { lang: 'zh-CN', url: `/cn/releases/${item.slug}` },
+        { lang: 'en-US', url: `/en/blog/tags/${item.slug}` },
+        { lang: 'zh-CN', url: `/cn/blog/tags/${item.slug}` },
       ],
-    }
-  })).concat(items2.map((item: any) => {
+    };
+  }))).concat(items2.map((item: any) => {
     return {
       url: `/en/blog/${item.slug}`,
       lastmod: item.updatedAt,
@@ -273,6 +261,6 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/blog/${item.slug}` },
         { lang: 'zh-CN', url: `/cn/blog/${item.slug}` },
       ],
-    }
+    };
   }));
 }
