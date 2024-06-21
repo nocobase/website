@@ -4,12 +4,17 @@ import PageHeader from "../../../../components/PageHeader.astro";
 import Pagination from "../../../../components/Pagination.astro";
 import Tags from "../../../../components/Tags.astro";
 import Layout from "../../../../layouts/Layout.astro";
-import { listArticleTags, listArticles, url } from "../../../../utils";
+import { getPage, listArticleTags, listArticles, url } from "../../../../utils";
 
-const basepath = '/en/blog';
+const pageData = await getPage("blog");
+
+const title = pageData.title;
+const description = pageData.description;
+const keywords = pageData.keywords;
+
+const basepath = "/en/blog";
 const { page } = Astro.params as { page?: number };
 const { data, meta } = await listArticles({ page });
-const description = 'The latest news and announcements from NocoBase';
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,
@@ -17,8 +22,8 @@ const tags = await listArticleTags({
 });
 ---
 
-<Layout title="Blog" description={description}>
-  <PageHeader title="Blog" description={description}>
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
     <Tags basepath={basepath} items={tags} />
   </PageHeader>
   <section class="section">
@@ -39,7 +44,9 @@ const tags = await listArticleTags({
                     />
                     <h4 class="title">{post.title}</h4>
                     <p class="date">
-                      <FormattedDate date={post.publishedAt || post.createdAt} />
+                      <FormattedDate
+                        date={post.publishedAt || post.createdAt}
+                      />
                     </p>
                   </a>
                 </li>
@@ -47,7 +54,13 @@ const tags = await listArticleTags({
             }
           </ul>
         </section>
-        <Pagination basepath={basepath} currentPage={page} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+        <Pagination
+          basepath={basepath}
+          currentPage={page}
+          pageSize={meta.pageSize}
+          total={meta.count}
+          totalPages={meta.totalPage}
+        />
       </main>
     </div>
   </section>

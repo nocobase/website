@@ -17,18 +17,31 @@ const pages = createPageArray(totalPages);
 if (totalPages < 2) {
   return;
 }
+const previousPage = 1 * currentPage - 1;
 ---
 
 <nav aria-label="Page navigation example">
   <ul class="pagination" style="justify-content: center; margin-top: 6rem;">
     {
-      currentPage - 1 > 0 ? (
+      previousPage === 1 && (
         <li class="page-item">
-          <a class="page-link" href={`${basepath}/page/${1 * currentPage - 1}`}>
+          <a class="page-link" href={basepath}>
             Previous
           </a>
         </li>
-      ) : (
+      )
+    }
+    {
+      previousPage > 1 && (
+        <li class="page-item">
+          <a class="page-link" href={`${basepath}/page/${previousPage}`}>
+            Previous
+          </a>
+        </li>
+      )
+    }
+    {
+      previousPage < 1 && (
         <li class="page-item disabled">
           <span class="page-link">Previous</span>
         </li>
@@ -40,6 +53,15 @@ if (totalPages < 2) {
           return (
             <li class="page-item active">
               <span class="page-link">{page}</span>
+            </li>
+          );
+        }
+        if (page === 1) {
+          return (
+            <li class="page-item">
+              <a class="page-link" href={basepath}>
+                {page}
+              </a>
             </li>
           );
         }
