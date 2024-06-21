@@ -1,12 +1,16 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-const title = "Community";
-const description =
-  "As an open-source product, NocoBase has garnered attention, support, and contributions from users and developers worldwide. The collective wisdom and creativity is a treasure that no single team can possess on its own. By working together, we can tackle more complex issues and create even better products.";
+import { getPage } from "../../utils";
+
+const page = await getPage("community");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
 
   <!-- Start Community -->

@@ -81,6 +81,16 @@ export async function listArticleTags(options?: any) {
   return data;
 }
 
+export async function getPage(slug?: string) {
+  if (!slug) {
+    return {};
+  }
+  const res = await fetch(`${baseURL}pages:get?filter[slug]=${slug}&token=${token}`);
+  const body = await res.json();
+  const data = body.data || {};
+  return data;
+}
+
 export async function getArticleCategory(slug?: string) {
   if (!slug) {
     return {};

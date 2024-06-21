@@ -1,7 +1,7 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { listPluginCategories } from "../../utils";
+import { getPage, listPluginCategories } from "../../utils";
 
 const tabs = [
   {
@@ -16,15 +16,15 @@ const tabs = [
 ];
 
 const data = await listPluginCategories();
-const description = "一切皆插件，使用插件扩展 NocoBase 的能力。欢迎分享你的插件，无论它是开源的还是商业的。";
+const page = await getPage("plugins");
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title="插件" description={description}>
-  <PageHeader title="插件" tabs={tabs}>
-    <span slot="description">
-        一切皆插件，使用插件扩展 NocoBase 的能力。欢迎分享你的插件，无论它是开源的还是商业的。<br/>
-        请联系我们沟通详细信息。
-    </span>
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
     <a href="/cn/contact" class="btn btn-outline-primary"
       >分享插件<i class="uil uil-angle-right-b"></i></a
     >

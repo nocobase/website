@@ -1,11 +1,16 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-const title="联系我们";
-const description="";
+import { getPage } from "../../utils";
+
+const page = await getPage("contact");
+
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
   <!-- Start Contact -->
   <section class="section">

@@ -1,12 +1,16 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-const title = "社区";
-const description =
-  "作为开源产品，NocoBase 得到了全球用户和开发者的关注、支持、贡献，大家的智慧和创意是一个团队无法独自拥有的财富。通过共同努力，我们可以解决更复杂的问题，创造更出色的产品。";
+import { getPage } from "../../utils";
+
+const page = await getPage("commercial");
+
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
 
   <!-- Start Community -->

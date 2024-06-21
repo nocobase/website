@@ -1,12 +1,16 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseEN.astro";
-const title = "Commercial licenses & plugins";
-const description =
-  "The commercial licenses and commercial plugins are based on the open-source version, rather than being standalone products. Thanks to NocoBase's plugin architecture, advanced features can be extended through plugins. This means the open-source version will always serve as the foundation, ensuring you can use it with confidence.";
+import { getPage } from "../../utils";
+
+const page = await getPage("commercial");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
   <!-- Licenses Start -->
   <section class="section pb-0">

@@ -2,15 +2,17 @@
 import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getLastUpdatedAt, listTaskCategories } from "../../utils";
+import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
 
 const lastUpdatedAt = await getLastUpdatedAt("tasks");
 const data = await listTaskCategories();
-const title = "路线规划";
-const description = "我们正在开发或者已经计划以下新特性和插件";
+const page = await getPage("roadmap");
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
     更新于<FormattedDate locale="zh-cn" date={lastUpdatedAt} />
   </PageHeader>

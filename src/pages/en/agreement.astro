@@ -1,12 +1,20 @@
 ---
+import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
-import * as agreement from "../../data/agreement-en.md";
 import Layout from "../../layouts/Layout.astro";
-const title = "NocoBase License Agreement";
+import { getPage } from "../../utils";
+
+const page = await getPage("agreement");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
 ---
 
-<Layout title={title}>
-  <PageHeader title={title} />
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+    Updated on <FormattedDate date={page.updatedAt} />
+  </PageHeader>
 
   <!-- Start Agreement -->
   <section class="section">
@@ -14,7 +22,7 @@ const title = "NocoBase License Agreement";
       <div class="row justify-content-center">
         <div class="col-lg-9">
           <div class="card shadow border-0 rounded">
-            <div class="card-body license-body">{agreement.rawContent()}</div>
+            <div class="card-body license-body">{page.content}</div>
           </div>
         </div><!--end col-->
       </div><!--end row-->

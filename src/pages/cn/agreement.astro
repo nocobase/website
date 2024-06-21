@@ -1,13 +1,21 @@
 ---
+import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import * as agreement from "../../data/agreement-cn.md";
 import Layout from "../../layouts/Layout.astro";
-const title = "NocoBase 许可协议";
-const description = "";
+import { getPage } from "../../utils";
+
+const page = await getPage("agreement");
+
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title={title} description={description}>
-  <PageHeader title={title} description={description} />
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+    更新于<FormattedDate locale="zh-cn" date={page.updatedAt} />
+  </PageHeader>
 
   <!-- Start Agreement -->
   <section class="section">
