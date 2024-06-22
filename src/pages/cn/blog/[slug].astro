@@ -4,7 +4,7 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { getArticle } from "../../../utils";
+import { getArticle, url } from "../../../utils";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "cn");
@@ -19,7 +19,7 @@ const description = data.description_cn || data.description;
 const basepath = '/cn/blog';
 ---
 
-<Layout title={title} description={description} keywords={keywords}>
+<Layout title={title} description={description} keywords={keywords} image={url(data.cover.url)}>
   <PageHeader title={title} description={description}>
     <div>
       {data.author && (<span title={data.author}>{data.author}<span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span></span>)}

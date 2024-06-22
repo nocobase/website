@@ -11,7 +11,7 @@ let urlEN = Astro.url.pathname.replace(/\/cn\//g, "/en/");
 if (!urlEN.startsWith("/en/")) {
   urlEN = "/en" + urlEN;
 }
-const { title, description, keywords } = Astro.props;
+const { title, description, keywords, image } = Astro.props;
 const meta = {
   title: title
     ? `${title} - NocoBase`
@@ -41,14 +41,14 @@ const meta = {
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+    {image && <meta property="og:image" content={image} />}
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
+    {image && <meta property="twitter:image" content={image} />}
 
     <link rel="sitemap" href="/sitemap.xml" />
     <!-- favicon -->
@@ -97,60 +97,6 @@ const meta = {
     />
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-    <!-- Language -->
-    <script type="text/javascript">
-      function setLanguagePreference(lang) {
-        document.cookie =
-          "preferredLang=" +
-          lang +
-          "; path=/; domain=.nocobase.com; max-age=31536000";
-      }
-
-      // 从 Cookie 读取语言偏好
-      function getLanguagePreference() {
-        var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
-        return match ? match[2] : null;
-      }
-
-      // 点击切换语言按钮
-      function changeLanguage(lang) {
-        setLanguagePreference(lang);
-
-        if (lang === "en") {
-          window.location.href = "/";
-        } else if (lang === "zh") {
-          window.location.href = "/cn/";
-        }
-      }
-
-      // document.addEventListener('DOMContentLoaded', function() {
-      //     var preferredLang = getLanguagePreference();
-      //     var currentHost = window.location.host;
-
-      //     // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
-      //     var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
-
-      //     if (preferredLang) {
-      //         // 根据偏好执行跳转
-      //         if (preferredLang === 'zh' && isEnglishSite) {
-      //             window.location.href = 'https://cn.nocobase.com';
-      //         } else if (preferredLang === 'en' && !isEnglishSite) {
-      //             window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
-      //         }
-      //     } else {
-      //         // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
-      //         var userLang = navigator.language || navigator.userLanguage;
-      //         if (userLang.startsWith('zh') && isEnglishSite) {
-      //             setLanguagePreference('zh'); // 设置语言偏好并跳转
-      //             window.location.href = 'https://cn.nocobase.com';
-      //         } else if (!userLang.startsWith('zh') && !isEnglishSite) {
-      //             setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
-      //             // 不执行跳转，因为已经在英文站点
-      //         }
-      //     }
-      // });
-    </script>
-
     <!-- Begin Brevo Form -->
     <style>
       #sib-container input:-ms-input-placeholder {
@@ -172,28 +118,47 @@ const meta = {
       rel="stylesheet"
       href="https://sibforms.com/forms/end-form/build/sib-styles.css"
     />
+    <!-- Begin Brevo Form -->
+    <style>
+      #sib-container input:-ms-input-placeholder {
+      text-align: left;
+      color: #c0ccda;
+      }
+  
+      #sib-container input::placeholder {
+      text-align: left;
+      color: #c0ccda;
+      }
+  
+      #sib-container textarea::placeholder {
+      text-align: left;
+      color: #c0ccda;
+      }
+    </style>
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
     <!--  END Brevo Form -->
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
-        <script type="text/javascript">
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
 
-              gtag('config', 'G-237XXSVYHE');
-        </script> -->
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-237XXSVYHE');
+    </script>
+    
     <!-- Baidu Analytics -->
-    <!-- <script type="text/javascript">
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?acfb678ac7bbc9df89e1aa4327e47907";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
-            })();
-        </script> -->
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?73c0a021efd1eab59d0ad8628750283e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
   </head>
 
   <body>
@@ -346,7 +311,9 @@ const meta = {
             <div class="footer-py-60">
               <div class="row">
                 <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                  <a href="/" class="logo-footer">
+                  <p><a href="https://github.com/nocobase/nocobase" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4112" alt="nocobase%2Fnocobase | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"></a></p>
+                  <p><a href="https://www.producthunt.com/posts/nocobase?embed=true&amp;utm_source=badge-top-post-topic-badge&amp;utm_medium=badge&amp;utm_souce=badge-nocobase" target="_blank"><img src="/producthunt.svg" alt="NocoBase - Scalability-first, open-source no-code platform | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a></p>
+                  <!-- <a href="/" class="logo-footer">
                     <img
                       src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png"
                       height="24"
@@ -357,7 +324,7 @@ const meta = {
                     Self-hosted and extremely scalable open-source no-code
                     development platform to make digitalization faster, easier
                     and cheaper.
-                  </p>
+                  </p> -->
                   <ul
                     class="list-unstyled social-icon foot-social-icon mb-0 mt-4"
                   >
