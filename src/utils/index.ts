@@ -114,7 +114,7 @@ export async function getArticle(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
   }
-  const res = await fetch(`${baseURL}articles:get?appends=tags&filter[slug]=${slug}&token=${token}`);
+  const res = await fetch(`${baseURL}articles:get?appends=cover,tags&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
   if (!data.id) {
