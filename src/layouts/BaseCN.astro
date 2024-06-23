@@ -11,6 +11,10 @@ let urlEN = Astro.url.pathname.replace(/\/cn\//g, "/en/");
 if (!urlEN.startsWith("/en/")) {
   urlEN = "/en" + urlCN;
 }
+if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
+  urlCN = '/cn';
+  urlEN = '/en';
+}
 const { title, description, keywords, image } = Astro.props;
 const meta = {
   title: title
