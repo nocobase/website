@@ -6,7 +6,7 @@ import { getSitemapLinks } from '../utils';
 export async function GET(context: APIContext) {
 
   const links = await getSitemapLinks();
-  const stream = new SitemapStream({ hostname: context.url.toString() })
+  const stream = new SitemapStream({ hostname: 'https://www.nocobase.com' })
   const data = await streamToPromise(Readable.from(links).pipe(stream));
 
   return new Response(data.toString(), {
