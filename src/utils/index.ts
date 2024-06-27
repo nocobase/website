@@ -51,9 +51,9 @@ export async function listPluginCategories() {
   return data;
 }
 
-export async function listArticles(options?: { categorySlug?: string; tagSlug?: string; page?: number; }) {
-  const { categorySlug, tagSlug, page = 1 } = options || { page: 1 };
-  let url = `${baseURL}articles:list?page=${page}&pageSize=9&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
+export async function listArticles(options?: { pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
+  const { categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
+  let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
@@ -63,6 +63,39 @@ export async function listArticles(options?: { categorySlug?: string; tagSlug?: 
   const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };
   return { data, meta };
+}
+
+export async function getRssItems(locale = '*') {
+  const { data } = await listArticles({ pageSize: 5000 });
+  const items = [];
+
+  for (const post of data) {
+    const { code: content } = await processor.render(post.content || '');
+    const { code: content_cn } = await processor.render(post.content_cn || '');
+    if (locale === 'en' || locale === '*') {
+      items.push({
+        title: post.title,
+        description: post.description,
+        content,
+        link: `/en/blog/${post.slug}`,
+        pubDate: post.publishedAt,
+        customData: `<language>en-US</language>`,
+        author: post.author,
+      });
+    } 
+    if (locale === 'cn' || locale === '*') {
+      items.push({
+        title: post.title_cn || post.title,
+        description: post.title_cn || post.title,
+        content: content_cn || content,
+        link: `/cn/blog/${post.slug}`,
+        pubDate: post.publishedAt,
+        customData: `<language>zh-CN</language>`,
+        author: post.author,
+      });
+    }
+  }
+  return items;
 }
 
 export async function listArticleCategories() {
