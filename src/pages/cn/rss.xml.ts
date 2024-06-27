@@ -10,6 +10,6 @@ export async function GET() {
     description,
     site: 'https://www.nocobase.com/',
     items: await getRssItems('cn'),
-    customData: `<language>multi</language>`,
+    customData: `<language>zh-CN</language>`,
   });
 }

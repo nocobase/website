@@ -9,7 +9,7 @@ export async function GET() {
     title,
     description,
     site: 'https://www.nocobase.com/',
-    items: await getRssItems(),
-    customData: `<language>multi</language>`,
+    items: await getRssItems('en'),
+    customData: `<language>en-US</language>`,
   });
 }
