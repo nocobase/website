@@ -14,6 +14,7 @@ const pkgs = [
     'remark-directive',
     'mrmime',
     '@astrojs/rss',
+    'astro',
     'p-limit',
     'send',
     'server-destroy',
