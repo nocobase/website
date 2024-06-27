@@ -6,7 +6,7 @@ export async function GET() {
   const title = pageData.title;
   const description = pageData.description;
   return rss({
-    title,
+    title: 'NocoBase Blog',
     description,
     site: 'https://www.nocobase.com/',
     items: await getRssItems('en'),
