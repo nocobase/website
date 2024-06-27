@@ -9,12 +9,13 @@ interface TabProps {
 
 interface Props {
   title: string;
+  showRSS?: boolean;
   description?: any;
   tabs?: TabProps[];
   className?: string;
 }
 
-const { className, title, description, tabs = [] } = Astro.props;
+const { showRSS, className, title, description, tabs = [] } = Astro.props;
 ---
 
 <!-- Hero Start -->
@@ -23,7 +24,34 @@ const { className, title, description, tabs = [] } = Astro.props;
     <div class="row mt-5 justify-content-center">
       <div class="col-lg-12 text-center">
         <div class="pages-heading">
-          <h1 class="title mb-0">{title}</h1>
+          <h1 class="title mb-0">
+            {title}
+            <slot name="title" />
+            {
+              showRSS && (
+                <a
+                  href={
+                    Astro.url.pathname.startsWith("/cn/")
+                      ? "/cn/rss.xml"
+                      : "/en/rss.xml"
+                  }
+                >
+                  <svg
+                    style="zoom: 1.5; margin-top: -3px;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-rss"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z" />
+                  </svg>
+                </a>
+              )
+            }
+          </h1>
           <p class="para-desc mx-auto text-muted">
             {description}
             <slot name="description" />

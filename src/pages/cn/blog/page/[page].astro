@@ -23,7 +23,7 @@ const tags = await listArticleTags({
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
-  <PageHeader title={title} description={description}>
+  <PageHeader showRSS title={title} description={description}>
     <Tags basepath={basepath} locale="cn" items={tags} />
   </PageHeader>
   <section class="section">
