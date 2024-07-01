@@ -39,7 +39,7 @@ const tabs = [
       {data.author && (<span title={data.author}>{data.author}<span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span></span>)}
       <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
     </div>
-    <Tags locale="cn" basepath={basepath} items={data.tags} />
+    <Tags locale="cn" basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
   </PageHeader>
   <section class="section bg-white-color">
     <main

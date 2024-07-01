@@ -46,8 +46,8 @@ const tabs = [
       }
       <FormattedDate date={data.publishedAt || data.createdAt} />
     </div>
-    <Tags basepath={basepath} items={data.tags} />
-  </PageHeader>
+    <Tags basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
+    </PageHeader>
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container row" : "container"}
