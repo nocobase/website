@@ -15,10 +15,16 @@ const title = data.title;
 const keywords = (data.tags || []).map((tag: any) => tag.title).join(",");
 const description = data.description;
 const basepath = "/en/blog";
+const tabs = [
+  {
+    title: "View all blog posts",
+    link: basepath,
+  },
+];
 ---
 
 <Layout title={title} image={url(data.cover.url)} description={description} keywords={keywords}>
-  <PageHeader title={title} description={description}>
+  <PageHeader title={title} description={description} tabs={tabs}>
     <div>
       {
         data.author && (

@@ -12,10 +12,17 @@ const tagpath = '/cn/blog/tags/' + slug;
 const basepath = '/cn/blog';
 const title = tag.title || tag.title_cn;
 const description = tag.description || tag.description_cn;
+const keywords = tag.keywords_cn || tag.keywords;
+const tabs = [
+  {
+    title: "查看全部博客文章",
+    link: basepath,
+  },
+];
 ---
 
-<Layout title={title} description={description}>
-  <PageHeader showRSS title={title} description={description}></PageHeader>
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader showRSS title={title} description={description} tabs={tabs}></PageHeader>
   <section class="section">
     <div class="container">
       <main>

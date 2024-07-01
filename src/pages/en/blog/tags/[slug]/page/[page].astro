@@ -12,10 +12,19 @@ const tagpath = '/en/blog/tags/' + slug;
 const basepath = '/en/blog';
 const title = tag.title;
 const description = tag.description;
+const keywords = tag.keywords;
+const tabs = [
+  {
+    title: "View all blog posts",
+    link: basepath,
+  },
+];
 ---
 
-<Layout title={title} description={description}>
-  <PageHeader showRSS title={title} description={description}></PageHeader>
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader showRSS title={title} description={description} tabs={tabs}>
+    <a title="View all blog posts" href={basepath}>View all blog posts</a>
+  </PageHeader>
   <section class="section">
     <div class="container">
       <main>
