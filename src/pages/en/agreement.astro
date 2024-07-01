@@ -1,5 +1,4 @@
 ---
-import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getPage } from "../../utils";
@@ -13,7 +12,6 @@ const keywords = page.keywords;
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    Updated on <FormattedDate date={page.updatedAt} />
   </PageHeader>
 
   <!-- Start Agreement -->
