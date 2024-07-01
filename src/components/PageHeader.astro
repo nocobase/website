@@ -3,7 +3,7 @@ import ShapeHeader from "./ShapeHeader.astro";
 
 interface TabProps {
   title: string;
-  link: string;
+  link?: string;
   active?: boolean;
 }
 
@@ -12,10 +12,12 @@ interface Props {
   showRSS?: boolean;
   description?: any;
   tabs?: TabProps[];
+  breadcrumb?: TabProps[];
   className?: string;
 }
 
-const { showRSS, className, title, description, tabs = [] } = Astro.props;
+const { showRSS, className, title, description, tabs, breadcrumb } = Astro.props;
+const items = tabs || breadcrumb || [];
 ---
 
 <!-- Hero Start -->
@@ -61,11 +63,11 @@ const { showRSS, className, title, description, tabs = [] } = Astro.props;
       </div><!--end col-->
     </div><!--end row-->
     {
-      tabs?.length > 0 && (
+      items?.length > 0 && (
         <div class="position-breadcrumb">
           <nav aria-label="breadcrumb" class="d-inline-block">
-            <ul class="plugins-cat breadcrumb rounded shadow mb-0 px-4 py-2">
-              {tabs.map((tab) => (
+            <ul class={(tabs?.length ? "plugins-cat " : "") + "breadcrumb rounded shadow mb-0 px-4 py-2"}>
+              {items.map((tab) => (
                 <li
                   class={
                     tab.active ? "breadcrumb-item active" : "breadcrumb-item"

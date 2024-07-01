@@ -16,14 +16,22 @@ const description = tag.description;
 const keywords = tag.keywords;
 const tabs = [
   {
-    title: "View all blog posts",
-    link: "/en/blog",
+    title: "Home",
+    link: "/en/",
+  },
+  {
+    title: "Blog",
+    link: basepath,
+  },
+  {
+    title: title,
+    active: true,
   },
 ];
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
-  <PageHeader showRSS title={title} description={description} tabs={tabs}>
+  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}>
   </PageHeader>
   <section class="section">
     <div class="container">

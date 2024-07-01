@@ -17,14 +17,22 @@ const description = data.description;
 const basepath = "/en/blog";
 const tabs = [
   {
-    title: "View all blog posts",
+    title: "Home",
+    link: "/en/",
+  },
+  {
+    title: "Blog",
     link: basepath,
+  },
+  {
+    title: 'Detail',
+    active: true,
   },
 ];
 ---
 
 <Layout title={title} image={url(data.cover.url)} description={description} keywords={keywords}>
-  <PageHeader title={title} description={description} tabs={tabs}>
+  <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
         data.author && (

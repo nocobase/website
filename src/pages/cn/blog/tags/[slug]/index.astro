@@ -16,14 +16,22 @@ const description = tag.description_cn || tag.description;
 const keywords = tag.keywords_cn || tag.keywords;
 const tabs = [
   {
-    title: "查看全部博客文章",
+    title: "首页",
+    link: "/cn/",
+  },
+  {
+    title: "博客",
     link: basepath,
+  },
+  {
+    title: title,
+    active: true,
   },
 ];
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
-  <PageHeader showRSS title={title} description={description} tabs={tabs}>
+  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}>
   </PageHeader>
   <section class="section">
     <div class="container">
