@@ -14,10 +14,20 @@ const tags = await listArticleTags({
     displayOnBlog: true,
   },
 });
+const tabs = [
+  {
+    title: "Home",
+    link: "/en/",
+  },
+  {
+    title: "Blog",
+    active: true,
+  }
+];
 ---
 
 <Layout title="Blog" description={description}>
-  <PageHeader showRSS title={'Blog'} description={description}>
+  <PageHeader showRSS title={'Blog'} description={description} breadcrumb={tabs}>
     <Tags basepath={basepath} items={tags} />
   </PageHeader>
   <section class="section">

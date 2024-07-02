@@ -19,10 +19,20 @@ const tags = await listArticleTags({
     displayOnBlog: true,
   },
 });
+const tabs = [
+  {
+    title: "首页",
+    link: "/cn/",
+  },
+  {
+    title: "博客",
+    active: true,
+  }
+];
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
-  <PageHeader showRSS title={title} description={description}>
+  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}>
     <Tags basepath={basepath} locale="cn" items={tags} />
   </PageHeader>
   <section class="section">
