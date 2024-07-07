@@ -213,7 +213,7 @@ export async function getReleaseTag(slug?: string) {
 
 export async function getSitemapLinks() {
   const items1 = await fetch(`${baseURL}articleTags:list?sort=sort&paginate=false&token=${token}`).then(res => res.json()).then(body => body.data);
-  const items2 = await fetch(`${baseURL}articles:list?sort=-publishedAt&paginate=false&token=${token}`).then(res => res.json()).then(body => body.data);
+  const items2 = await fetch(`${baseURL}articles:list?filter[status]=published&sort=-publishedAt&paginate=false&token=${token}`).then(res => res.json()).then(body => body.data);
   const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
   const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
   const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
