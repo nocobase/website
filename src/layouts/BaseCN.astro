@@ -40,6 +40,9 @@ const meta = {
     <meta name="keywords" content={meta.keywords} />
     <link rel="sitemap" href={'/sitemap.xml'} />
 
+    <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
+    <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
