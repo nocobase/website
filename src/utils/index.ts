@@ -51,14 +51,17 @@ export async function listPluginCategories() {
   return data;
 }
 
-export async function listArticles(options?: { pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
-  const { categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
+export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
+  const { hideOnBlog, categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
   let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
   if (categorySlug) {
     url += `&filter[category.slug]=${categorySlug}`;
+  }
+  if (hideOnBlog === false) {
+    url += `&filter[hideOnBlog.$isFalsy]=true`;
   }
   const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };

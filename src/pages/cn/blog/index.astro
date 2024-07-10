@@ -13,7 +13,7 @@ const description = page.description_cn || page.description;
 const keywords = page.keywords_cn || page.keywords;
 
 const basepath = '/cn/blog';
-const { data, meta } = await listArticles();
+const { data, meta } = await listArticles({ hideOnBlog: false });
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,

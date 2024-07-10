@@ -14,7 +14,7 @@ const keywords = page.keywords_cn || page.keywords;
 
 const basepath = '/cn/blog';
 const { page: currentPage } = Astro.params as { page?: number };
-const { data, meta } = await listArticles({ page: currentPage });
+const { data, meta } = await listArticles({ hideOnBlog: false, page: currentPage });
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,
