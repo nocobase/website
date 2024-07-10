@@ -15,7 +15,9 @@ if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
   urlCN = '/cn';
   urlEN = '/en';
 }
-const { title, description, keywords, image } = Astro.props;
+const { title, description, keywords } = Astro.props;
+const image = 'https://static-docs.nocobase.com/20240710221605.png';
+
 const meta = {
   title: title
     ? `${title} - NocoBase`
@@ -43,12 +45,16 @@ const meta = {
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
 
+    <!-- Canonical -->
+    <link rel="canonical" href={new URL(urlCN, Astro.site)} />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {image && <meta property="og:image" content={image} />}
+    <meta property="og:image:alt" content="Scalability-first, open-source no-code platform"/>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -222,7 +228,7 @@ const meta = {
     <header id="topnav" class="defaultscroll sticky">
       <div class="container">
         <!-- Logo container-->
-        <a class="logo" href="/cn/">
+        <a class="logo" href="/cn/" title="{meta.title}">
           <span class="logo-light-mode">
             <img
               src="https://static-docs.nocobase.com/logo-nocobase.png"
