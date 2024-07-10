@@ -50,17 +50,18 @@ const meta = {
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
     {image && <meta property="og:image" content={image} />}
     <meta property="og:image:alt" content="Scalability-first, open-source no-code platform"/>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
+    <meta property="twitter:title" content={meta.title} />
+    <meta property="twitter:description" content={meta.description} />
     {image && <meta property="twitter:image" content={image} />}
+    
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
