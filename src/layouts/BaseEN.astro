@@ -16,6 +16,7 @@ if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
   urlEN = '/en';
 }
 const { title, description, keywords } = Astro.props;
+console.log("title:", title, Astro.site)
 const image = 'https://static-docs.nocobase.com/20240710221605.png';
 const meta = {
   title: title
@@ -42,7 +43,7 @@ const meta = {
     <link rel="sitemap" href={'/sitemap.xml'} />
 
     <!-- Canonical -->
-    <link rel="canonical" href={new URL(urlEN, Astro.site)} />
+    <link rel="canonical" href={Astro.site && Astro.site.pathname === '/' ? 'https://www.nocobase.com/' : new URL(urlEN, Astro.site)} />
 
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
@@ -188,7 +189,7 @@ const meta = {
     <header id="topnav" class="defaultscroll sticky">
       <div class="container">
         <!-- Logo container-->
-        <a class="logo" href="/" title="{meta.title}">
+        <a class="logo" href="/" title={meta.title}>
           <span class="logo-light-mode">
             <img
               src="https://static-docs.nocobase.com/logo-nocobase.png"
@@ -201,14 +202,15 @@ const meta = {
         <div class="demo">
           <a
             href="https://demo.nocobase.com/new"
+            title={meta.title + " Live Demo"}
             target="_blank"
             class="btn btn-outline-primary btn-sm"
             >Live demo<i class="uil uil-angle-right-b"></i></a
           >
         </div>
         <div class="lang">
-          <a href={urlEN} class="text-reset">EN</a> | <a
-            href={urlCN}
+          <a href={urlEN} class="text-reset" title={meta.title + " English page"}>EN</a> | <a
+            href={urlCN} title={meta.title + " 中文页面"}
             class="text-reset">中文</a
           >
         </div>
@@ -216,7 +218,7 @@ const meta = {
         <div class="menu-extras">
           <div class="menu-item">
             <!-- Mobile menu toggle-->
-            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+            <a class="navbar-toggle" rel="nofollow" id="isToggle" onclick="toggleMenu()">
               <div class="lines">
                 <span></span>
                 <span></span>
@@ -234,6 +236,7 @@ const meta = {
               <a
                 rel="nofollow"
                 href="https://github.com/nocobase/nocobase"
+                title="NocoBase open source on GitHub"
                 class="sub-menu-item"
                 target="_blank"
                 >GitHub <img
@@ -243,10 +246,10 @@ const meta = {
               >
             </li>
             <li>
-              <a href="/en/plugins" class="sub-menu-item">Plugins</a>
+              <a href="/en/plugins" title="NocoBase plugins" class="sub-menu-item">Plugins</a>
             </li>
             <li>
-              <a href="/en/commercial" class="sub-menu-item">Commercial</a>
+              <a href="/en/commercial" title="NocoBase commercial terms" class="sub-menu-item">Commercial</a>
             </li>
             <!-- <li class="has-submenu parent-menu-item">
               <a href="javascript:void(0)">Docs</a><span class="menu-arrow"
@@ -274,31 +277,31 @@ const meta = {
               </ul>
             </li> -->
             <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)">Resources</a><span class="menu-arrow"
+              <a href="javascript:void(0)" rel="nofollow">Resources</a><span class="menu-arrow"
               ></span>
               <ul class="submenu">
                 <li>
-                  <a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Documentation</a>
+                  <a href="https://docs.nocobase.com" title="NocoBase Guide Documents and References" class="sub-menu-item" target="_blank">Documentation</a>
                 </li>
                 <li>
-                  <a href="/en/blog" class="sub-menu-item">Blog</a>
+                  <a href="/en/blog" title="NocoBase blog" class="sub-menu-item">Blog</a>
                 </li>
                 <li>
-                  <a href="/en/community" class="sub-menu-item">Community</a>
+                  <a href="/en/community" title="NocoBase community" class="sub-menu-item">Community</a>
                 </li>
                 <li>
-                  <a href="/en/contact" class="sub-menu-item">Contact us</a>
+                  <a href="/en/contact" title="NocoBase contacts" class="sub-menu-item">Contact us</a>
                 </li>
                 <li>
-                  <a href="/en/roadmap" class="sub-menu-item">Roadmap</a>
+                  <a href="/en/roadmap" title="NocoBase roadmap" class="sub-menu-item">Roadmap</a>
                 </li>
                 <li>
-                  <a href="/en/blog/tags/release-notes" class="sub-menu-item"
+                  <a href="/en/blog/tags/release-notes" title="NocoBase release notes" class="sub-menu-item"
                     >Release notes</a
                   >
                 </li>
                 <li>
-                  <a href="/en/agreement" class="sub-menu-item"
+                  <a href="/en/agreement" title="NocoBase license agreement" class="sub-menu-item"
                     >License agreement</a
                   >
                 </li>
@@ -322,8 +325,8 @@ const meta = {
             <div class="footer-py-60">
               <div class="row">
                 <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                  <p><a href="https://github.com/nocobase/nocobase" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4112" alt="nocobase%2Fnocobase | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"></a></p>
-                  <p><a href="https://www.producthunt.com/posts/nocobase?embed=true&amp;utm_source=badge-top-post-topic-badge&amp;utm_medium=badge&amp;utm_souce=badge-nocobase" target="_blank"><img src="/producthunt.svg" alt="NocoBase - Scalability-first, open-source no-code platform | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a></p>
+                  <p><a href="https://github.com/nocobase/nocobase" title="NocoBase open source on github" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4112" alt="nocobase%2Fnocobase | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"></a></p>
+                  <p><a href="https://www.producthunt.com/posts/nocobase?embed=true&amp;utm_source=badge-top-post-topic-badge&amp;utm_medium=badge&amp;utm_souce=badge-nocobase" title="NocoBase on ProductHunt" target="_blank"><img src="/producthunt.svg" alt="NocoBase - Scalability-first, open-source no-code platform | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a></p>
                   <!-- <a href="/" class="logo-footer">
                     <img
                       src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png"
@@ -343,6 +346,7 @@ const meta = {
                       <a
                         rel="nofollow"
                         href="https://github.com/nocobase/nocobase"
+                        title="NocoBase open source on GitHub"
                         class="rounded"
                         target="_blank"
                         ><i data-feather="github" class="fea icon-sm fea-social"
@@ -353,6 +357,7 @@ const meta = {
                       <a
                         rel="nofollow"
                         href="https://twitter.com/NocoBase"
+                        title="NocoBase on Twitter"
                         class="rounded"
                         target="_blank"
                         ><i
@@ -364,6 +369,7 @@ const meta = {
                       <a
                         rel="nofollow"
                         href="mailto:hello@nocobase.com"
+                        title="NocoBase Email Address"
                         class="rounded"
                         target="_blank"
                         ><i data-feather="mail" class="fea icon-sm fea-social"
@@ -382,23 +388,24 @@ const meta = {
                     <li>
                       <a
                         href="https://github.com/nocobase/nocobase"
+                        title="NocoBase open source on GitHub"
                         class="text-foot"
                         target="_blank"
                         ><i class="uil uil-angle-right-b me-1"></i> GitHub</a
                       >
                     </li>
                     <li>
-                      <a href="/en/plugins" class="text-foot"
+                      <a href="/en/plugins" title="NocoBase Plugins" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Plugins</a
                       >
                     </li>
                     <li>
-                      <a href="/en/commercial" class="text-foot"
+                      <a href="/en/commercial" title="NocoBase Commercial terms" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Commercial</a
                       >
                     </li>
                     <li>
-                      <a href="/en/contact" class="text-foot"
+                      <a href="/en/contact" title="NocoBase Contacts" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Contact</a
                       >
                     </li>
@@ -411,6 +418,7 @@ const meta = {
                     <li>
                       <a
                         href="https://docs.nocobase.com"
+                        title="NocoBase Documentation"
                         target="_blank"
                         class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Documentation</a
@@ -418,26 +426,27 @@ const meta = {
                     </li>
                     <li>
                       <a href="/en/blog" class="text-foot"
+                       title="NocoBase Blog"
                         ><i class="uil uil-angle-right-b me-1"></i> Blog</a
                       >
                     </li>
                     <li>
-                      <a href="/en/community" class="text-foot"
+                      <a href="/en/community" title="NocoBase Community" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Community</a
                       >
                     </li>
                     <li>
-                      <a href="/en/roadmap" class="text-foot"
+                      <a href="/en/roadmap" title="NocoBase Roadmap" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Roadmap</a
                       >
                     </li>
                     <li>
-                      <a href="/en/blog/tags/release-notes" class="text-foot"
+                      <a href="/en/blog/tags/release-notes" title="NocoBase Release notes" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> Release notes</a
                       >
                     </li>
                     <li>
-                      <a href="/en/agreement" class="text-foot"
+                      <a href="/en/agreement" class="text-foot" title="NocoBase License agreement"
                         ><i class="uil uil-angle-right-b me-1"></i> License agreement</a
                       >
                     </li>
