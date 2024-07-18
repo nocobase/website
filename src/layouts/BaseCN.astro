@@ -15,6 +15,7 @@ if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
   urlCN = '/cn';
   urlEN = '/en';
 }
+
 const { title, description, keywords, image } = Astro.props;
 
 
@@ -42,9 +43,6 @@ const meta = {
     <meta name="description" content={meta.description} />
     <meta name="keywords" content={meta.keywords} />
     <link rel="sitemap" href={'/sitemap.xml'} />
-
-    <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
-    <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
 
     <!-- Canonical -->
     <link rel="canonical" href={new URL(urlCN, Astro.site)} />
