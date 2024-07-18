@@ -15,10 +15,11 @@ if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
   urlCN = '/cn';
   urlEN = '/en';
 }
-const { title, description, keywords } = Astro.props;
-const image = 'https://static-docs.nocobase.com/20240710221605.png';
+const { title, description, keywords, image } = Astro.props;
+
 
 const meta = {
+  image: image || 'https://static-docs.nocobase.com/20240710221605.png',
   title: title
     ? `${title} - NocoBase`
     : "NocoBase - 开源、私有部署的轻量级无代码和低代码开发平台",
@@ -47,6 +48,9 @@ const meta = {
 
     <!-- Canonical -->
     <link rel="canonical" href={new URL(urlCN, Astro.site)} />
+
+    <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
+    <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
