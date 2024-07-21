@@ -44,23 +44,25 @@ const keywords = page.keywords_cn || page.keywords;
                   <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
                     <div title={plugin.title_cn || plugin.title} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
                       <div class="card-body">
-                        <div class="mt-2">
-                          <h6 class="card-title">{plugin.title_cn || plugin.title}</h6>
-                          <p class="text-muted mb-2">{plugin.description_cn || plugin.description}</p>
-                          {plugin.isCommercial ? (
-                            <span class="badge bg-soft-warning plugin-type">
-                              Commercial
-                            </span>
-                          ) : (
-                            <span class="badge bg-soft-primary plugin-type">
-                              Open source
-                            </span>
-                          )}
-                          {plugin.isComingSoon && (
-                            <span class="badge bg-soft-info plugin-type">
-                              Coming soon
-                            </span>
-                          )}
+                        <div class="mt-2 plugin-box">
+                          <h6 class="card-title mb-1">{plugin.title_cn || plugin.title}</h6>
+                          <div class="plugin-developer text-muted mb-3">By <span>{'NocoBase' || plugin.developer}</span></div>
+                          <p class="text-muted mb-2 plugin-overview">{plugin.description_cn || plugin.description}</p>
+                          <div class="plugin-footer">
+                            {plugin.isComingSoon ? (
+                              <span class="badge bg-soft-info plugin-type">
+                                即将发布
+                              </span>
+                            ) : plugin.isCommercial ? (
+                              <h6 class="text-primary mb-0">
+                                ￥{plugin.price_cny.toLocaleString('en-US')} <span class="text-muted">/ {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></span>
+                              </h6>
+                            ) : (
+                              <span class="badge bg-soft-primary plugin-type">
+                                免费
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>

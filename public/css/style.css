@@ -6702,6 +6702,22 @@ body[data-layout-mode=dark] .mode-light {
 .plugin-card .plugin-docs {
   font-size: 12px;
 }
+.plugin-box {
+  display: flex; 
+  flex-direction:column; 
+  height: 100%;
+}
+.plugin-footer {
+  display: flex; 
+  height: 100%; 
+  align-items: flex-end
+}
+.plugin-developer {
+  font-size: 14px;
+}
+.plugin-developer span {
+  text-decoration: underline;
+}
 .commercial-table th, .commercial-table td {
   padding: 16px!important;
 }
