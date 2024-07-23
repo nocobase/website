@@ -1,0 +1,99 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "All plugins",
+    link: "/en/plugins",
+  },
+  {
+    title: "Commercial plugins",
+    link: "/en/plugins-commercial",
+  },
+  {
+    title: "Plugin bundles",
+    link: "/en/plugins-bundles",
+    active: true,
+  },
+];
+
+const data = await listPluginCategories();
+const page = await getPage("plugins");
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title="Plugin bundle" description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
+    <a href="/en/contact" class="btn btn-outline-primary">Contact to buy or sell plugins<i class="uil uil-angle-right-b"></i></a>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card shadow border-0 rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">What is a plugin bundle</h5>
+                        <p class="text-muted">If your business's payment process is complex, purchasing NocoBase plugins one by one might be tedious. Therefore, we've rolled out a package option for plugins. You can buy a plugin bundle, which comes with "points," and during your actual use of NocoBase, you can choose and exchange plugins as required.</p>
+                        <p class="text-muted">NocoBase's commercial plugins have four different prices: $200, $400, $800, and $1,600. Each point within a plugin bundle equates to $100, hence these four price tags correspond to 2 <i class="uil uil-moon-eclipse me-1"></i>, 4 <i class="uil uil-moon-eclipse me-1"></i>, 8 <i class="uil uil-moon-eclipse me-1"></i>, and 16 <i class="uil uil-moon-eclipse me-1"></i> respectively.</p>
+                        <p class="text-muted">On the <a href="/en/plugins">plugin list page</a>, you can view the price of each plugin and its corresponding points. For example, the 'Data Source: External PostgreSQL' plugin is priced at $400 or 4 <i class="uil uil-moon-eclipse me-1"></i>.</p>
+                        
+                        <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
+                            <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                                <div class="card-body"> 
+                                    <div class="mt-2 plugin-box"> 
+                                        <h6 class="card-title mb-1">Data source: External PostgreSQL</h6> 
+                                        <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div> 
+                                        <p class="text-muted mb-2 plugin-overview">Use external PostgreSQL databases as data sources.</p> 
+                                        <div class="plugin-footer"> <h6 class="text-primary mb-0">$400 <span class="text-muted">/ 4 <i class="uil uil-moon-eclipse me-1"></i></span> </h6> </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted">If you buy a plugin bundle of 32 <i class="uil uil-moon-eclipse me-1"></i>, you can exchange it for 16 plugins of $200 each, or 8 plugins of $400 each, or one plugin of $800 + 3 plugins of $400 + 6 plugins of $200.</p>
+                        <p class="text-muted">The remaining points in the plugin bundle never expire and you don't have to select all plugins at once; you can make your selections gradually throughout the development process.</p>
+
+                        <h5 class="card-title mt-4">Plugin bundles</h5>
+
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center commercial-table">
+                                <thead class="">
+                                    <tr>
+                                    <th scope="col" class="col-sm-3">Bundle</th>
+                                    <th scope="col" class="col-sm-3">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$3,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">64 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$6,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">128 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$12,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">256 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$25,600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->

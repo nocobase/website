@@ -5,7 +5,7 @@ import { getPage, listPluginCategories } from "../../utils";
 
 const tabs = [
   {
-    title: "all",
+    title: "All plugins",
     link: "/en/plugins",
     active: true,
   },
@@ -13,6 +13,10 @@ const tabs = [
     title: "Commercial plugins",
     link: "/en/plugins-commercial",
   },
+  {
+    title: "Plugin bundles",
+    link: "/en/plugins-bundles",
+  }
 ];
 
 const data = await listPluginCategories();

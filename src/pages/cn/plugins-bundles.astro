@@ -1,0 +1,99 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "全部插件",
+    link: "/cn/plugins",
+  },
+  {
+    title: "商业插件",
+    link: "/cn/plugins-commercial",
+  },
+  {
+    title: "插件包",
+    link: "/cn/plugins-bundles",
+    active: true,
+  },
+];
+
+const data = await listPluginCategories();
+const page = await getPage("plugins");
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
+---
+
+<Layout title={"商业插件"} description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
+    <a href="/cn/contact" class="btn btn-outline-primary">购买或出售插件<i class="uil uil-angle-right-b"></i></a>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card shadow border-0 rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">什么是插件包</h5>
+                        <p class="text-muted">如果你的企业付款流程比较复杂，那么逐一购买 NocoBase 插件可能很麻烦。因此我们推出了插件包的方案。你可以购买一个插件包，其中包含“点数”，然后在实际使用 NocoBase 的过程中，按需选择和兑换插件。</p>
+                        <p class="text-muted">NocoBase 的商业插件共有 4 种定价，分别是 ￥1,200，￥2,400，￥4,800，￥9,600。插件包里每个点数等于 ￥600，因此这 4 种定价分别对应 2 <i class="uil uil-moon-eclipse me-1"></i>, 4 <i class="uil uil-moon-eclipse me-1"></i>, 8 <i class="uil uil-moon-eclipse me-1"></i>, 16 <i class="uil uil-moon-eclipse me-1"></i> 。</p>
+                        <p class="text-muted">在 <a href="/cn/plugins">插件列表页面</a>，你可以看到每个插件的定价和相应的点数。比如 Data source: External PostgreSQL 插件，定价为 ￥2,400 或 4 <i class="uil uil-moon-eclipse me-1"></i>。</p>
+                        
+                        <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
+                            <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                                <div class="card-body"> 
+                                    <div class="mt-2 plugin-box"> 
+                                        <h6 class="card-title mb-1">Data source: External PostgreSQL</h6> 
+                                        <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div> 
+                                        <p class="text-muted mb-2 plugin-overview">连接外部的 PostgreSQL数据库作为数据源。</p> 
+                                        <div class="plugin-footer"> <h6 class="text-primary mb-0">￥2,400 <span class="text-muted">/ 4 <i class="uil uil-moon-eclipse me-1"></i></span> </h6> </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted">如果你购买了 32 <i class="uil uil-moon-eclipse me-1"></i> 的插件包。那么可以兑换 16 个 ￥1,200 的插件，或者 8 个 ￥2,400 的插件，或者 1 个 ￥4,800 的插件 + 3 个 ￥2,400 的插件 + 6 个 ￥1,200 的插件。</p>
+                        <p class="text-muted">插件包里的剩余点数永久有效，你不需要一次性选中所有的插件，而是可以在开发的过程中逐步选择。</p>
+
+                        <h5 class="card-title mt-4">插件包价格表</h5>
+
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center commercial-table">
+                                <thead class="">
+                                    <tr>
+                                    <th scope="col" class="col-sm-3">插件包</th>
+                                    <th scope="col" class="col-sm-3">定价</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">￥19,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">64 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">￥38,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">128 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">￥76,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">256 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">￥153,600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->
