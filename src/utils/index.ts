@@ -53,7 +53,7 @@ export async function listPluginCategories() {
 
 export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
   const { hideOnBlog, categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
-  let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnBlog.$isFalsy]=true&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
+  let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
   if (tagSlug) {
     url += `&filter[tags.slug]=${tagSlug}`;
   }
@@ -69,7 +69,7 @@ export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: 
 }
 
 export async function getRssItems(locale = '*') {
-  const { data } = await listArticles({ pageSize: 5000 });
+  const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
   for (const post of data) {
