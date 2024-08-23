@@ -12,7 +12,7 @@ export function url(path: string) {
   return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path
 }
 
-const processor = await createMarkdownProcessor();
+export const processor = await createMarkdownProcessor();
 
 export async function createMarkdownProcessor() {
   return await coreCreateMarkdownProcessor({
