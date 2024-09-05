@@ -51,7 +51,7 @@ const keywords = page.keywords_cn || page.keywords;
                           <div class="mt-2 plugin-box">
                             <h6 class="card-title mb-1">{plugin.title_cn || plugin.title}</h6>
                             <div class="plugin-developer text-muted mb-3">By <span>{'NocoBase' || plugin.developer}</span></div>
-                            <p class="text-muted mb-2 plugin-overview">{plugin.description_cn || plugin.description}</p>
+                            <p class="text-muted mb-2 plugin-overview">{plugin.description_cn || plugin.description}<br/><a href="{plugin.doc_cn}" target="_blank">详情</a></p>
                             <div class="plugin-footer">
                               {plugin.isComingSoon ? (
                                 <span class="badge bg-soft-info plugin-type">
