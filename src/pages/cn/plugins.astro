@@ -48,7 +48,7 @@ const keywords = page.keywords_cn || page.keywords;
                       <div class="card-body">
                         <div class="mt-2 plugin-box">
                           <h6 class="card-title mb-1">{plugin.title_cn || plugin.title}</h6>
-                          <div class="plugin-developer text-muted mb-3">By <span>{'NocoBase' || plugin.developer}</span></div>
+                          <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
                           <p class="text-muted mb-2 plugin-overview">{plugin.description_cn || plugin.description}
                             {plugin.doc_cn && 
                                 <a href={plugin.doc_cn} target="_blank" style="font-size: 14px; ">详情</a>
