@@ -68,6 +68,20 @@ export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: 
   return { data, meta };
 }
 
+export async function listTutorialArticles(options?: {pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
+  const { slug, serialsSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
+  let url = `${baseURL}tutorialArticles:list?page=${page}&pageSize=${pageSize}&appends=serials&sort=serialsSort&token=${token}&filter[serials.status]=published&filter[status]=published`;
+  if (slug) {
+    url += `&slug=${slug}`;
+  }
+  if (serialsSlug) {
+    url += `&filter[serials.slug]=${serialsSlug}`;
+  }
+  const res = await fetch(url);
+  const { data, meta } = await res.json() as { data: any[], meta: any };
+  return { data, meta };
+}
+
 export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
@@ -85,7 +99,7 @@ export async function getRssItems(locale = '*') {
         customData: `<language>en-US</language>`,
         author: post.author,
       });
-    } 
+    }
     if (locale === 'cn' || locale === '*') {
       items.push({
         title: post.title_cn || post.title,
@@ -151,6 +165,30 @@ export async function getArticle(slug?: string, locale = 'en') {
     return {};
   }
   const res = await fetch(`${baseURL}articles:get?appends=cover,tags&filter[slug]=${slug}&token=${token}`);
+  const body = await res.json();
+  const data = body.data || {};
+  if (!data.id) {
+    return {};
+  }
+  const key = `${data.id}-${data.updatedAt}-${locale}`;
+  if (articles[key]) {
+    return articles[key];
+  }
+  let content = data?.content || '';
+  if (locale === 'cn' && data?.content_cn) {
+    content = data?.content_cn;
+  }
+  const { code, metadata } = await processor.render(content);
+  const headings: any[] = metadata.headings || [];
+  articles[key] = { data, headings, html: code };
+  return articles[key];
+}
+
+export async function getTutorialArticle(slug?: string, locale = 'en') {
+  if (!slug) {
+    return {};
+  }
+  const res = await fetch(`${baseURL}tutorialArticles:get?appends=serials&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
   if (!data.id) {

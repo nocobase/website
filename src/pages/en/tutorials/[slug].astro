@@ -1,0 +1,78 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Toc from "../../../components/Toc.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getTutorialArticle, url } from "../../../utils";
+
+const { slug } = Astro.params;
+const { data, headings, html } = await getTutorialArticle(slug);
+if (!data) {
+  return new Response("Not found", { status: 404 });
+}
+const title = data.title;
+const keywords = (data.tags || []).map((tag: any) => tag.title).join(",");
+const description = data.description;
+const basepath = "/en/tutorials";
+const tabs = [
+  {
+    title: "Home",
+    link: "/en/",
+  },
+  {
+    title: "Tutorials",
+    link: basepath,
+  },
+  {
+    title: 'Detail',
+    active: true,
+  },
+];
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} breadcrumb={tabs}>
+    <div>
+      {
+        data.author && (
+          <span title={data.author}>
+            {data.author}
+            <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
+              |
+            </span>
+          </span>
+        )
+      }
+      <FormattedDate date={data.publishedAt || data.createdAt} />
+    </div>
+    </PageHeader>
+  <section class="section bg-white-color">
+    <main
+      class={headings.length > 0 ? "container blog-container row" : "container"}
+    >
+      {
+        headings.length > 0 ? (
+          <>
+            <div class="col-md-9 col-18 markdown-body">
+              <Fragment set:html={html} />
+            </div>
+            <div class="col-md-3 col-6 markdown-toc">
+              <Toc headings={headings} />
+            </div>
+          </>
+        ) : (
+          <>
+            <Fragment set:html={html} />
+          </>
+        )
+      }
+    </main>
+  </section>
+</Layout>
+
+<style>
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+</style>
