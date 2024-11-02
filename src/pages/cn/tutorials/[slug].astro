@@ -49,9 +49,7 @@ const tabs = [
     </div>
   </PageHeader>
   <section class="section bg-white-color">
-    <main
-        class={headings.length > 0 ? "container blog-container row" : "container"}
-    >
+    <main class={headings.length > 0 ? "container blog-container row" : "container"}>
       {
         headings.length > 0 ? (
             <>
@@ -74,7 +72,7 @@ const tabs = [
   <!-- 模态框容器 -->
   <div id="image-modal" class="image-modal">
     <span id="close-modal" class="close">&times;</span>
-    <img class="modal-content" id="modal-image">
+    <img class="modal-content" id="modal-image" alt="放大图像">
   </div>
 </Layout>
 
@@ -125,31 +123,32 @@ const tabs = [
 </style>
 
 <script>
-  // 监听图片点击事件
-  document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('image-modal');
-    const modalImg = document.getElementById('modal-image');
-    const closeModal = document.getElementById('close-modal');
+  // 使用 window.onload 事件提升兼容性
+  window.onload = function() {
+    var modal = document.getElementById('image-modal');
+    var modalImg = document.getElementById('modal-image');
+    var closeModal = document.getElementById('close-modal');
 
-    // 查找所有文章中的图片
-    document.querySelectorAll('.markdown-body img').forEach(img => {
-      img.style.cursor = 'zoom-in';
-      img.addEventListener('click', () => {
+    // 用 getElementsByTagName 遍历图片，增强兼容性
+    var images = document.querySelectorAll('.markdown-body img');
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.cursor = 'zoom-in';  // 使用 pointer 替代 zoom-in
+      images[i].onclick = function() {
         modal.style.display = 'block';
-        modalImg.src = img.src;
-      });
-    });
+        modalImg.src = this.src;
+      };
+    }
 
     // 关闭模态框
-    closeModal.onclick = () => {
+    closeModal.onclick = function() {
       modal.style.display = 'none';
     };
 
     // 点击模态框外部区域关闭
-    window.onclick = (event) => {
+    window.onclick = function(event) {
       if (event.target === modal) {
         modal.style.display = 'none';
       }
     };
-  });
+  };
 </script>
