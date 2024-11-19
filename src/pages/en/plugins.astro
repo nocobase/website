@@ -60,9 +60,18 @@ const keywords = page.keywords;
                                 Coming soon
                               </span>
                             ) : plugin.isCommercial ? (
+
                               <h6 class="text-primary mb-0">
-                                ${plugin.price.toLocaleString('en-US')} <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
+                                  ￥{plugin.price_1_year.toLocaleString('en-US')}
+                                <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point_1_year} <i class="uil uil-moon-eclipse me-1"></i></a> 
                               </h6>
+                              <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
+                                  ￥{plugin.price.toLocaleString('en-US')}
+                                <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a> 
+                              </h6>
+
                             ) : (
                               <span class="badge bg-soft-primary plugin-type">
                                 Free
