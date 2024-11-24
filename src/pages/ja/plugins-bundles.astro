@@ -1,0 +1,106 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "すべてのプラグイン",
+    link: "/ja/plugins",
+  },
+  {
+    title: "商用プラグイン",
+    link: "/ja/plugins-commercial",
+  },
+  {
+    title: "プラグインバンドル",
+    link: "/ja/plugins-bundles",
+    active: true,
+  },
+];
+
+const data = await listPluginCategories();
+const page = await getPage("plugins");
+const title = page.title_ja || page.title;
+const description = page.description_ja || page.description;
+const keywords = page.keywords_ja || page.keywords;
+---
+
+<Layout title="プラグインバンドル" description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
+    <a href="/ja/contact" class="btn btn-outline-primary">プラグインの購入または販売<i class="uil uil-angle-right-b"></i></a>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card shadow border-0 rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">プラグインバンドルとは</h5>
+                        <p class="text-muted">お客様のビジネスの支払いプロセスが複雑な場合、NocoBaseプラグインを一つずつ購入するのは煩わしいかもしれません。そのため、プラグインのパッケージオプションを導入しました。プラグインバンドルを購入すると「ポイント」が付与され、NocoBaseの実際の使用に合わせてプラグインを選び、交換することができます。</p>
+                        <p class="text-muted">NocoBaseの商用プラグインには、$200、$400、$800、$1,600の4つの異なる価格があります。プラグインバンドルの各ポイントは$100に相当し、これらの4つの価格はそれぞれ2 <i class="uil uil-moon-eclipse me-1"></i>、4 <i class="uil uil-moon-eclipse me-1"></i>、8 <i class="uil uil-moon-eclipse me-1"></i>、16 <i class="uil uil-moon-eclipse me-1"></i>に対応しています。</p>
+                        <p class="text-muted">プラグインリストページ<a href="/ja/plugins">で</a>、各プラグインの価格と対応するポイントを確認できます。例えば、「データソース：外部PostgreSQL」プラグインの価格は$400、または4 <i class="uil uil-moon-eclipse me-1"></i>です。</p>
+
+                        <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
+                            <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                                <div class="card-body">
+                                    <div class="mt-2 plugin-box">
+                                        <h6 class="card-title mb-1">データソース：外部PostgreSQL</h6>
+                                        <div class="plugin-developer text-muted mb-3">提供元 <span>NocoBase</span></div>
+                                        <p class="text-muted mb-2 plugin-overview">外部PostgreSQLデータベースをデータソースとして使用します。</p>
+                                        <div class="plugin-footer"> <h6 class="text-primary mb-0">$400 <span class="text-muted">/ 4 <i class="uil uil-moon-eclipse me-1"></i></span> </h6> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i>のプラグインバンドルを購入すると、$200のプラグインを16個、または$400のプラグインを8個、あるいは$800のプラグイン1個と$400のプラグイン3個、$200のプラグイン6個と交換できます。</p>
+                        <p class="text-muted">プラグインバンドルに残っているポイントは永久に有効であり、すべてのプラグインを一度に選ぶ必要はありません。開発プロセスを通じて徐々に選択することができます。</p>
+
+                        <h5 class="card-title mt-4">プラグインバンドルの価格表</h5>
+
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center commercial-table">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col" class="col-sm-4">バンドル名</th>
+                                        <th scope="col" class="col-sm-4">ポイント</th>
+                                        <th scope="col" class="col-sm-4">価格</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">P32</td>
+                                        <td class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$3,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P64</td>
+                                        <td class="text-muted">64 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$6,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P128</td>
+                                        <td class="text-muted">128 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$12,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P256</td>
+                                        <td class="text-muted">256 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$25,600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->
+
+

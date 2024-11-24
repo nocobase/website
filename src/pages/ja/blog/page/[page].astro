@@ -1,0 +1,80 @@
+---
+import FormattedDate from "../../../../components/FormattedDate.astro";
+import PageHeader from "../../../../components/PageHeader.astro";
+import Pagination from "../../../../components/Pagination.astro";
+import Tags from "../../../../components/Tags.astro";
+import Layout from "../../../../layouts/Layout.astro";
+import { getPage, listArticleTags, listArticles, url } from "../../../../utils";
+
+const pageData = await getPage("blog");
+
+const title = pageData.title_ja || pageData.title;
+const description = pageData.description_ja || pageData.description;
+const keywords = pageData.keywords_ja || pageData.keywords;
+
+const basepath = "/ja/blog";
+const { page } = Astro.params as { page?: number };
+const { data, meta } = await listArticles({ hideOnBlog: false, page });
+const tags = await listArticleTags({
+  filter: {
+    displayOnBlog: true,
+  },
+});
+const tabs = [
+  {
+    title: "ホーム",
+    link: "/ja/",
+  },
+  {
+    title: "ブログ",
+    active: true,
+  }
+];
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}>
+    <Tags basepath={basepath} items={tags} />
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <main>
+        <section>
+          <ul class="articles">
+            {
+              data.map((post) => (
+                <li>
+                  <a href={`${basepath}/${post.slug}`}>
+                    <img
+                      style="object-fit: cover;"
+                      width={720}
+                      height={360}
+                      src={url(post.cover.url)}
+                      alt=""
+                    />
+                    <h4 class="title">{post.title_ja || post.title}</h4>
+                    <p class="date">
+                      <FormattedDate
+                        locale={'ja'}
+                        date={post.publishedAt || post.createdAt}
+                      />
+                    </p>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+        <Pagination
+          basepath={basepath}
+          currentPage={page}
+          pageSize={meta.pageSize}
+          total={meta.count}
+          totalPages={meta.totalPage}
+        />
+      </main>
+    </div>
+  </section>
+</Layout>
+
+

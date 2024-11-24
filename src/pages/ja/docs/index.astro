@@ -1,0 +1,814 @@
+jsx
+---
+import BaseLayout from "../../../layouts/BaseJA.astro";
+---
+
+<BaseLayout>
+  <section class="section">
+    <div class="container bd-layout">
+      <aside class="bd-sidebar">
+        <nav
+          class="collapse show bd-links"
+          id="bd-docs-nav"
+          aria-label="Docs navigation"
+        >
+          <ul class="list-unstyled mb-0 py-3 pt-md-1">
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#getting-started-collapse"
+                aria-expanded="false"
+              >
+                はじめに
+              </button>
+
+              <div class="collapse show" id="getting-started-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/introduction/"
+                      class="d-inline-flex align-items-center rounded"
+                      >イントロダクション</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/download/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ダウンロード</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/contents/"
+                      class="d-inline-flex align-items-center rounded"
+                      >目次</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/browsers-devices/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ブラウザとデバイス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/javascript/"
+                      class="d-inline-flex align-items-center rounded"
+                      >JavaScript</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/build-tools/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ビルドツール</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/webpack/"
+                      class="d-inline-flex align-items-center rounded"
+                      >Webpack</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/parcel/"
+                      class="d-inline-flex align-items-center rounded">Parcel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/accessibility/"
+                      class="d-inline-flex align-items-center rounded"
+                      >アクセシビリティ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/rfs/"
+                      class="d-inline-flex align-items-center rounded">RFS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/getting-started/rtl/"
+                      class="d-inline-flex align-items-center rounded">RTL</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#customize-collapse"
+                aria-expanded="false"
+              >
+                カスタマイズ
+              </button>
+
+              <div class="collapse" id="customize-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/overview/"
+                      class="d-inline-flex align-items-center rounded"
+                      >概要</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/sass/"
+                      class="d-inline-flex align-items-center rounded">Sass</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/options/"
+                      class="d-inline-flex align-items-center rounded"
+                      >オプション</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/color/"
+                      class="d-inline-flex align-items-center rounded">色</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/components/"
+                      class="d-inline-flex align-items-center rounded"
+                      >コンポーネント</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/css-variables/"
+                      class="d-inline-flex align-items-center rounded"
+                      >CSS変数</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/customize/optimize/"
+                      class="d-inline-flex align-items-center rounded"
+                      >最適化</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#layout-collapse"
+                aria-expanded="false"
+              >
+                レイアウト
+              </button>
+
+              <div class="collapse" id="layout-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/breakpoints/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ブレークポイント</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/containers/"
+                      class="d-inline-flex align-items-center rounded"
+                      >コンテナ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/grid/"
+                      class="d-inline-flex align-items-center rounded">グリッド</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/columns/"
+                      class="d-inline-flex align-items-center rounded"
+                      >カラム</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/gutters/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ガター</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/utilities/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ユーティリティ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/layout/z-index/"
+                      class="d-inline-flex align-items-center rounded"
+                      >Zインデックス</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#content-collapse"
+                aria-expanded="false"
+              >
+                コンテンツ
+              </button>
+
+              <div class="collapse" id="content-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/content/reboot/"
+                      class="d-inline-flex align-items-center rounded">リブート</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/content/typography/"
+                      class="d-inline-flex align-items-center rounded"
+                      >タイポグラフィ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/content/images/"
+                      class="d-inline-flex align-items-center rounded">画像</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/content/tables/"
+                      class="d-inline-flex align-items-center rounded">テーブル</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/content/figures/"
+                      class="d-inline-flex align-items-center rounded"
+                      >図</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#forms-collapse"
+                aria-expanded="false"
+              >
+                フォーム
+              </button>
+
+              <div class="collapse" id="forms-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/overview/"
+                      class="d-inline-flex align-items-center rounded"
+                      >概要</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/form-control/"
+                      class="d-inline-flex align-items-center rounded"
+                      >フォームコントロール</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/select/"
+                      class="d-inline-flex align-items-center rounded">選択</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/checks-radios/"
+                      class="d-inline-flex align-items-center rounded"
+                      >チェックとラジオ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/range/"
+                      class="d-inline-flex align-items-center rounded">範囲</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/input-group/"
+                      class="d-inline-flex align-items-center rounded"
+                      >入力グループ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/floating-labels/"
+                      class="d-inline-flex align-items-center rounded"
+                      >フローティングラベル</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/layout/"
+                      class="d-inline-flex align-items-center rounded">レイアウト</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/forms/validation/"
+                      class="d-inline-flex align-items-center rounded"
+                      >バリデーション</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded"
+                data-bs-toggle="collapse"
+                data-bs-target="#components-collapse"
+                aria-expanded="true"
+                aria-current="true"
+              >
+                コンポーネント
+              </button>
+
+              <div class="collapse" id="components-collapse" style="">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/components/accordion/"
+                      class="d-inline-flex align-items-center rounded"
+                      >アコーディオン</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/alerts/"
+                      class="d-inline-flex align-items-center rounded">アラート</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/badge/"
+                      class="d-inline-flex align-items-center rounded">バッジ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/breadcrumb/"
+                      class="d-inline-flex align-items-center rounded"
+                      >パンくずリスト</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/buttons/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ボタン</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/button-group/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ボタングループ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/card/"
+                      class="d-inline-flex align-items-center rounded">カード</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/carousel/"
+                      class="d-inline-flex align-items-center rounded"
+                      >カルーセル</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/close-button/"
+                      class="d-inline-flex align-items-center rounded"
+                      >閉じるボタン</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/collapse/"
+                      class="d-inline-flex align-items-center rounded active"
+                      aria-current="page">折りたたみ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/dropdowns/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ドロップダウン</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/list-group/"
+                      class="d-inline-flex align-items-center rounded"
+                      >リストグループ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/modal/"
+                      class="d-inline-flex align-items-center rounded">モーダル</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/navs-tabs/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ナビゲーションとタブ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/navbar/"
+                      class="d-inline-flex align-items-center rounded">ナビバー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/offcanvas/"
+                      class="d-inline-flex align-items-center rounded"
+                      >オフキャンバス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/pagination/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ページネーション</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/popovers/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ポップオーバー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/progress/"
+                      class="d-inline-flex align-items-center rounded"
+                      >プログレス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/scrollspy/"
+                      class="d-inline-flex align-items-center rounded"
+                      >スクロールスパイ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/spinners/"
+                      class="d-inline-flex align-items-center rounded"
+                      >スピナー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/toasts/"
+                      class="d-inline-flex align-items-center rounded">トースト</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/components/tooltips/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ツールチップ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#helpers-collapse"
+                aria-expanded="false"
+              >
+                ヘルパー
+              </button>
+
+              <div class="collapse" id="helpers-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/clearfix/"
+                      class="d-inline-flex align-items-center rounded"
+                      >フロートクリア</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/colored-links/"
+                      class="d-inline-flex align-items-center rounded"
+                      >カラーリンク</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/ratio/"
+                      class="d-inline-flex align-items-center rounded">比率</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/position/"
+                      class="d-inline-flex align-items-center rounded"
+                      >位置</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/visually-hidden/"
+                      class="d-inline-flex align-items-center rounded"
+                      >視覚的に隠す</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/stretched-link/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ストレッチリンク</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/helpers/text-truncation/"
+                      class="d-inline-flex align-items-center rounded"
+                      >テキストトランケーション</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#utilities-collapse"
+                aria-expanded="false"
+              >
+                ユーティリティ
+              </button>
+
+              <div class="collapse" id="utilities-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/api/"
+                      class="d-inline-flex align-items-center rounded">API</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/background/"
+                      class="d-inline-flex align-items-center rounded"
+                      >背景</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/borders/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ボーダー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/colors/"
+                      class="d-inline-flex align-items-center rounded">色</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/display/"
+                      class="d-inline-flex align-items-center rounded"
+                      >表示</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/flex/"
+                      class="d-inline-flex align-items-center rounded">フレックス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/float/"
+                      class="d-inline-flex align-items-center rounded">フロート</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/interactions/"
+                      class="d-inline-flex align-items-center rounded"
+                      >インタラクション</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/overflow/"
+                      class="d-inline-flex align-items-center rounded"
+                      >オーバーフロー</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/position/"
+                      class="d-inline-flex align-items-center rounded"
+                      >位置</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/shadows/"
+                      class="d-inline-flex align-items-center rounded"
+                      >シャドウ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/sizing/"
+                      class="d-inline-flex align-items-center rounded">サイズ設定</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/spacing/"
+                      class="d-inline-flex align-items-center rounded"
+                      >間隔</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/text/"
+                      class="d-inline-flex align-items-center rounded">テキスト</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/vertical-align/"
+                      class="d-inline-flex align-items-center rounded"
+                      >垂直揃え</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/utilities/visibility/"
+                      class="d-inline-flex align-items-center rounded"
+                      >表示</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#extend-collapse"
+                aria-expanded="false"
+              >
+                拡張
+              </button>
+
+              <div class="collapse" id="extend-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/extend/approach/"
+                      class="d-inline-flex align-items-center rounded"
+                      >アプローチ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/extend/icons/"
+                      class="d-inline-flex align-items-center rounded">アイコン</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn d-inline-flex align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#about-collapse"
+                aria-expanded="false"
+              >
+                このドキュメントについて
+              </button>
+
+              <div class="collapse" id="about-collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a
+                      href="/docs/5.0/about/overview/"
+                      class="d-inline-flex align-items-center rounded"
+                      >概要</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/about/team/"
+                      class="d-inline-flex align-items-center rounded">チーム</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/about/brand/"
+                      class="d-inline-flex align-items-center rounded">ブランド</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/about/license/"
+                      class="d-inline-flex align-items-center rounded"
+                      >ライセンス</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.0/about/translations/"
+                      class="d-inline-flex align-items-center rounded"
+                      >翻訳</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="my-3 mx-4 border-top"></li>
+            <li>
+              <a
+                href="/docs/5.0/migration/"
+                class="d-inline-flex align-items-center rounded"
+              >
+                マイグレーション
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="bd-main">aaa</main>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .bd-layout {
+    display: flex;
+  }
+  .bd-sidebar {
+    width: 220px;
+    padding-right: 20px;
+  }
+  .bd-main {
+    flex: 1;
+    width: calc(100% - 300px);
+  }
+</style>
+
+
