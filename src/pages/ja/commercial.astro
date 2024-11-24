@@ -1,0 +1,18 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage } from "../../utils";
+
+const page = await getPage("commercial");
+
+const title = page.title_ja || page.title;
+const description = page.description_ja || page.description;
+const keywords = page.keywords_ja || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <Fragment set:html={page.content_ja || page.content} />
+</Layout>
+
+

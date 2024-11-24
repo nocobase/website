@@ -1,0 +1,32 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage } from "../../utils";
+
+const page = await getPage("agreement");
+
+const title = page.title_ja || page.title;
+const description = page.description_ja || page.description;
+const keywords = page.keywords_ja || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+  </PageHeader>
+
+  <!-- Start Agreement -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body license-body">{page.content_ja || page.content}</div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End agreement -->
+</Layout>
+
+

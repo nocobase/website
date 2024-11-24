@@ -3,37 +3,56 @@ import ShapeFooter from "../components/ShapeFooter.astro";
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
-let urlCN = Astro.url.pathname.replace(/\/en\//g, "/cn/");
-if (!urlCN.startsWith("/cn/")) {
-  urlCN = "/cn" + urlCN;
-}
-let urlEN = Astro.url.pathname.replace(/\/cn\//g, "/en/");
-if (!urlEN.startsWith("/en/")) {
-  urlEN = "/en" + urlCN;
-}
-if (Astro.url.pathname === '/cn' || Astro.url.pathname === '/en') {
+
+// 定义支持的语言列表
+const supportedLanguages = ['en', 'cn', 'ja'];
+// 获取当前路径
+const currentPath = Astro.url.pathname;
+
+// 正则表达式匹配以 /en/、/cn/ 或 /ja/ 开头的路径
+const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
+
+// 函数用于生成不同语言的 URL
+const generateUrl = (lang) => {
+  if (langPrefixRegex.test(currentPath)) {
+    // 替换现有的语言前缀
+    return currentPath.replace(langPrefixRegex, `/${lang}/`);
+  } else {
+    // 如果没有语言前缀，则添加新的语言前缀
+    return `/${lang}${currentPath}`;
+  }
+};
+
+// 生成各语言的 URL
+let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避免重复
+let urlJA = generateUrl('ja').replace(/\/$/, '');
+let urlEN = generateUrl('en').replace(/\/$/, '');
+
+// 特殊处理根路径
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja') {
   urlCN = '/cn';
   urlEN = '/';
+  urlJA = '/ja';
 }
 
-if (urlEN === '/en/') {
+// 确保英文主页是 '/'
+if (urlEN === '/en') {
   urlEN = '/';
 }
 
 const { title, description, keywords, image } = Astro.props;
 
-
 const meta = {
   image: image || 'https://static-docs.nocobase.com/20240710221605.png',
   title: title
-    ? `${title} - NocoBase`
-    : "NocoBase - 开源、私有部署的轻量级无代码和低代码开发平台",
+      ? `${title} - NocoBase`
+      : "NocoBase - オープンソース、自社ホスティング、軽量なノーコード＆ローコード開発プラットフォーム",
   description:
-    description ||
-    "NocoBase 是一个轻量级、极易扩展的开源无代码和低代码开发平台。无需开发，花几分钟时间部署 NocoBase，马上拥有一个私有、可控、极易扩展的无代码开发平台，帮助企业轻松实现多元业务场景，让数字化更快、更简单、更便宜。",
+      description ||
+      "NocoBaseは軽量で非常に拡張性の高いオープンソースのノーコード＆ローコード開発プラットフォームです。迅速にデプロイして、プライベートでコントロール可能なノーコードソリューションを手に入れましょう！",
   keywords:
-    keywords ||
-    "nocobase,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,无代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,无代码系统,无代码平台,无代码搭建,免费无代码开发平台",
+      keywords ||
+      "nocobase,ローコード,ノーコード,nocode,自社ホスティング,オープンソース,open-source,ノーコード開発,ローコード開発,ノーコードツール,ベストノーコードツール,ノーコードプラットフォーム,無料ノーコード開発プラットフォーム,ノーコード統合,ノーコードアプリ",
 };
 ---
 
@@ -255,10 +274,9 @@ const meta = {
           >
         </div>
         <div class="lang">
-          <a href={urlEN} class="text-reset">EN</a> | <a
-            href={urlCN}
-            class="text-reset">中文</a
-          >
+          <a href={urlEN} class="text-reset" title={meta.title + " English page"}>EN</a> |
+          <a href={urlCN} title={meta.title + " 中文页面"} class="text-reset">中文</a> |
+          <a href={urlJA} title={meta.title + " 日本語ページ"} class="text-reset">日本語</a>
         </div>
         <!-- End Logo container-->
         <div class="menu-extras">

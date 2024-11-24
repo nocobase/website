@@ -1,0 +1,73 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Menu from "../../../components/Menu.astro";
+import Toc from "../../../components/Toc.astro";
+
+import Layout from "../../../layouts/BaseJA.astro"; // Japanese layout
+import sidebar from "../../../sidebar";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const posts = await getCollection("docs-ja"); // Change collection for Japanese
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+type Props = CollectionEntry<"docs-ja">; // Adjust type for Japanese
+
+const post = Astro.props;
+const { Content, headings } = await post.render();
+const showToc = post.data.toc !== false && headings.length > 0;
+const groupName = Astro.url.pathname.split("/")?.[3] || "";
+const groups = sidebar[groupName];
+---
+
+<Layout>
+  <section class="section">
+    <div class="container bd-layout">
+      <aside class="bd-sidebar">
+        <nav class="bd-links">
+          <Menu basename={'/ja/docs'} items={groups} /> {/* Change to Japanese basename */}
+        </nav>
+      </aside>
+      <main class="bd-main">
+        <div class={"blog-container"}>
+          <div class="col-md-9 col-18 markdown-body">
+            <Content />
+          </div>
+          <div class="col-md-3 col-6 markdown-toc">
+            {showToc && <Toc headings={headings} />}
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bd-layout {
+    display: flex;
+    margin-top: 50px;
+  }
+  .bd-links {
+    position: sticky;
+    top: 150px;
+    height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  .bd-sidebar {
+    /* padding-right: 20px; */
+  }
+  .bd-main {
+    flex: 1;
+    width: calc(100% - 300px);
+  }
+  #topnav {
+    border-bottom: 1px solid #dd;
+  }
+</style>
+
+

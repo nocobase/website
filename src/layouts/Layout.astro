@@ -1,29 +1,40 @@
 ---
 import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
+import BaseLayoutJA from "./BaseJA.astro"; // 引入日语布局
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
+const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/"); // 判断是否为日语路径
 const { title, description, keywords, image } = Astro.props;
 ---
 
 {
-  cn ? (
+    cn ? (
     <BaseLayoutCN
-      title={title}
-      description={description}
-      image={image}
-      keywords={keywords}
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
     >
-      <slot />
+        <slot />
     </BaseLayoutCN>
-  ) : (
-    <BaseLayoutEN
-      title={title}
-      description={description}
-      image={image}
-      keywords={keywords}
+        ) : ja ? ( // 如果是日语路径，使用 BaseLayoutJA
+    <BaseLayoutJA
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
     >
-      <slot />
+        <slot />
+    </BaseLayoutJA>
+        ) : (
+    <BaseLayoutEN
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
     </BaseLayoutEN>
-  )
-}
+        )
+    }

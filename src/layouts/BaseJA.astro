@@ -1,0 +1,604 @@
+---
+import ShapeFooter from "../components/ShapeFooter.astro";
+
+const year = new Date().getFullYear();
+const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
+
+// 定义支持的语言列表
+const supportedLanguages = ['en', 'cn', 'ja'];
+// 获取当前路径
+const currentPath = Astro.url.pathname;
+
+// 正则表达式匹配以 /en/、/cn/ 或 /ja/ 开头的路径
+const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
+
+// 函数用于生成不同语言的 URL
+const generateUrl = (lang) => {
+    if (langPrefixRegex.test(currentPath)) {
+        // 替换现有的语言前缀
+        return currentPath.replace(langPrefixRegex, `/${lang}/`);
+    } else {
+        // 如果没有语言前缀，则添加新的语言前缀
+        return `/${lang}${currentPath}`;
+    }
+};
+
+// 生成各语言的 URL
+let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避免重复
+let urlJA = generateUrl('ja').replace(/\/$/, '');
+let urlEN = generateUrl('en').replace(/\/$/, '');
+
+// 特殊处理根路径
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja') {
+    urlCN = '/cn';
+    urlEN = '/';
+    urlJA = '/ja';
+}
+
+// 确保英文主页是 '/'
+if (urlEN === '/en') {
+    urlEN = '/';
+}
+
+const { title, description, keywords, image } = Astro.props;
+
+const meta = {
+    image: image || 'https://static-docs.nocobase.com/20240710221605.png',
+    title: title
+        ? `${title} - NocoBase`
+        : "NocoBase - オープンソース、自社ホスティング、軽量なノーコード＆ローコード開発プラットフォーム",
+    description:
+        description ||
+        "NocoBaseは軽量で非常に拡張性の高いオープンソースのノーコード＆ローコード開発プラットフォームです。迅速にデプロイして、プライベートでコントロール可能なノーコードソリューションを手に入れましょう！",
+    keywords:
+        keywords ||
+        "nocobase,ローコード,ノーコード,nocode,自社ホスティング,オープンソース,open-source,ノーコード開発,ローコード開発,ノーコードツール,ベストノーコードツール,ノーコードプラットフォーム,無料ノーコード開発プラットフォーム,ノーコード統合,ノーコードアプリ",
+};
+---
+
+<!doctype html>
+<html lang="ja-JP" dir="ltr" class={baseClassName + "-page"}>
+<head>
+    <meta charset="utf-8" />
+    <title>{meta.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content={meta.title} />
+    <meta name="description" content={meta.description} />
+    <meta name="keywords" content={meta.keywords} />
+    <meta name="baidu-site-verification" content="codeva-uRQZIVDwRT" />
+    <link rel="sitemap" href={'/sitemap.xml'} />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={new URL(urlJA, Astro.site)} />
+
+    <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
+    <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
+    <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:image:alt" content="Scalability-first, open-source no-code platform"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={Astro.url} />
+    <meta name="twitter:title" content={meta.title} />
+    <meta name="twitter:description" content={meta.description} />
+    <meta name="twitter:image" content={meta.image} />
+
+    <!-- favicon -->
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- github-markdown -->
+    <link href="/css/github-markdown-light.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link
+            href="/css/materialdesignicons.min.css"
+            rel="stylesheet"
+            type="text/css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <!-- Balloon css -->
+    <link href="/css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+    <!-- Slider -->
+    <link rel="stylesheet" href="/css/tiny-slider.css" />
+    <!-- Main Css -->
+    <link
+            href="/css/style.css?v1.6"
+            rel="stylesheet"
+            type="text/css"
+            id="theme-opt"
+    />
+    <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+
+    <!-- Begin Brevo Form -->
+    <style>
+        #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container input::placeholder {
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container textarea::placeholder {
+            text-align: left;
+            color: #c0ccda;
+        }
+    </style>
+    <link
+            rel="stylesheet"
+            href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    />
+    <!--  END Brevo Form -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
+
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-237XXSVYHE');
+    </script>
+</head>
+<body>
+<!-- Loader -->
+<!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div> -->
+<!-- Loader -->
+
+<!-- Navbar Start -->
+<header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo" href="/ja/" title={meta.title}>
+          <span class="logo-light-mode">
+            <img
+                    src="https://static-docs.nocobase.com/logo-nocobase.png"
+                    class="logo-light-mode"
+                    height="24"
+                    alt="NocoBase ロゴ"
+            />
+          </span>
+        </a>
+        <div class="demo">
+            <a
+                    href="https://demo.nocobase.com/new"
+                    title={meta.title + " ライブデモ"}
+                    target="_blank"
+                    class="btn btn-outline-primary btn-sm"
+            >ライブデモ<i class="uil uil-angle-right-b"></i></a
+            >
+        </div>
+        <div class="lang">
+            <a href={urlEN} class="text-reset" title={meta.title + " English page"}>EN</a> |
+            <a href={urlCN} title={meta.title + " 中文页面"} class="text-reset">中文</a> |
+            <a href={urlJA} title={meta.title + " 日本語ページ"} class="text-reset">日本語</a>
+        </div>
+        <!-- End Logo container-->
+        <div class="menu-extras">
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle" rel="nofollow" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu">
+                <li>
+                    <a
+                            rel="nofollow"
+                            href="https://github.com/nocobase/nocobase"
+                            title="GitHubでNocoBaseを開く"
+                            class="sub-menu-item"
+                            target="_blank"
+                    >GitHub <img
+                            alt="GitHub Repo stars"
+                            src="https://img.shields.io/github/stars/nocobase/nocobase"
+                    /></a
+                    >
+                </li>
+                <li>
+                    <a href="/ja/plugins" title="NocoBase プラグイン" class="sub-menu-item">プラグイン</a>
+                </li>
+                <li>
+                    <a href="/ja/community" title="NocoBase コミュニティ" class="sub-menu-item">コミュニティ</a>
+                </li>
+                <li>
+                    <a href="/ja/commercial" title="NocoBase 料金" class="sub-menu-item">料金</a>
+                </li>
+                <li class="has-submenu parent-menu-item">
+                    <a href="javascript:void(0)" rel="nofollow">リソース</a><span class="menu-arrow"
+                ></span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="https://docs.nocobase.com" title="NocoBase ガイド ドキュメントとリファレンス" class="sub-menu-item" target="_blank">ドキュメント</a>
+                        </li>
+                        <li>
+                            <a href="/ja/tutorials" title="NocoBase チュートリアル" class="sub-menu-item">チュートリアル</a>
+                        </li>
+                        <li>
+                            <a href="/ja/blog" title="NocoBase ブログ" class="sub-menu-item">ブログ</a>
+                        </li>
+                        <li>
+                            <a href="/ja/contact" title="NocoBase へのお問い合わせ" class="sub-menu-item">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="/ja/roadmap" title="NocoBase ロードマップ" class="sub-menu-item">ロードマップ</a>
+                        </li>
+                        <li>
+                            <a href="/ja/blog/tags/release-notes" title="NocoBase リリースノート" class="sub-menu-item">リリースノート</a>
+                        </li>
+                        <li>
+                            <a href="/ja/agreement" title="NocoBase ライセンス契約" class="sub-menu-item">ライセンス契約</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div><!--end container-->
+</header><!--end header-->
+<!-- Navbar End -->
+
+<slot />
+
+<ShapeFooter />
+<!-- Footer Start -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-py-60">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                            <p><a href="https://github.com/nocobase/nocobase" title="GitHubでNocoBaseを開く" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4112" alt="nocobase%2Fnocobase | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"></a></p>
+                            <p><a href="https://www.producthunt.com/posts/nocobase?embed=true&amp;utm_source=badge-top-post-topic-badge&amp;utm_medium=badge&amp;utm_souce=badge-nocobase" title="ProductHuntのNocoBase" target="_blank"><img src="/producthunt.svg" alt="NocoBase - Scalability-first, open-source no-code platform | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a></p>
+                            <ul
+                                    class="list-unstyled social-icon foot-social-icon mb-0 mt-4"
+                            >
+                                <li class="list-inline-item">
+                                    <a
+                                            rel="nofollow"
+                                            href="https://github.com/nocobase/nocobase"
+                                            title="GitHubでNocoBaseを開く"
+                                            class="rounded"
+                                            target="_blank"
+                                    ><i data-feather="github" class="fea icon-sm fea-social"
+                                    ></i></a
+                                    >
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                            rel="nofollow"
+                                            href="https://twitter.com/NocoBase"
+                                            title="TwitterでNocoBaseをフォローする"
+                                            class="rounded"
+                                            target="_blank"
+                                    ><i
+                                            data-feather="twitter"
+                                            class="fea icon-sm fea-social"></i></a
+                                    >
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                            rel="nofollow"
+                                            href="mailto:hello@nocobase.com"
+                                            title="NocoBaseのメールアドレス"
+                                            class="rounded"
+                                            target="_blank"
+                                    ><i data-feather="mail" class="fea icon-sm fea-social"
+                                    ></i></a
+                                    >
+                                </li>
+                            </ul><!--end icon-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        </div><!--end col-->
+
+                        <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <h5 class="footer-head">リンク</h5>
+                            <ul class="list-unstyled footer-list mt-4">
+                                <li>
+                                    <a
+                                            href="https://github.com/nocobase/nocobase"
+                                            title="GitHubでNocoBaseを開く"
+                                            class="text-foot"
+                                            target="_blank"
+                                    ><i class="uil uil-angle-right-b me-1"></i> GitHub</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/ja/plugins" title="NocoBaseプラグイン" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> プラグイン</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/ja/commercial" title="NocoBase商用利用" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> 料金</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/ja/contact" title="NocoBaseお問い合わせ" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> お問い合わせ</a
+                                    >
+                                </li>
+                            </ul>
+                        </div><!--end col-->
+
+                        <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <h5 class="footer-head">リソース</h5>
+                            <ul class="list-unstyled footer-list mt-4">
+                                <li>
+                                    <a
+                                            href="https://docs.nocobase.com"
+                                            title="NocoBaseドキュメント"
+                                            target="_blank"
+                                            class="text-foot"><i class="uil uil-angle-right-b me-1"></i> ドキュメント</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/tutorials" class="text-foot"
+                                       title="NocoBaseチュートリアル"
+                                    ><i class="uil uil-angle-right-b me-1"></i> チュートリアル</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/blog" class="text-foot"
+                                       title="NocoBaseブログ"
+                                    ><i class="uil uil-angle-right-b me-1"></i> ブログ</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/community" title="NocoBaseコミュニティ" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> コミュニティ</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/roadmap" title="NocoBaseロードマップ" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> ロードマップ</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/blog/tags/release-notes" title="NocoBaseリリースノート" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> リリースノート</a>
+                                </li>
+                                <li>
+                                    <a href="/ja/agreement" class="text-foot" title="NocoBaseライセンス契約"
+                                    ><i class="uil uil-angle-right-b me-1"></i> ライセンス契約</a>
+                                </li>
+                            </ul>
+                        </div><!--end col-->
+                        <div class="col-lg-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <h5 class="text-light footer-head">ニュースレター</h5>
+                            <p class="mt-4">
+                                NocoBaseに関する最新情報（新しいリリース、ブログ記事など）を受け取ることができます。
+                            </p>
+                            <!-- Begin Brevo Form -->
+                            <div
+                                    class="sib-form"
+                                    style="text-align: left;background-color: transparent;padding: 0%!important;"
+                            >
+                                <div id="sib-form-container" class="sib-form-container">
+                                    <div
+                                            id="error-message"
+                                            class="sib-form-message-panel"
+                                            style='font-size:14px; text-align:left; font-family:"Helvetica", sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;'
+                                    >
+                                        <div
+                                                class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                                        >
+                                            <svg
+                                                    viewBox="0 0 512 512"
+                                                    class="sib-icon sib-notification__icon"
+                                            >
+                                                <path
+                                                        d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+                                                ></path>
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text"
+                                            >登録に失敗しました。もう一度お試しください。</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div
+                                            id="success-message"
+                                            class="sib-form-message-panel"
+                                            style='font-size:14px; text-align:left; font-family:"Helvetica", sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;'
+                                    >
+                                        <div
+                                                class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                                        >
+                                            <svg
+                                                    viewBox="0 0 512 512"
+                                                    class="sib-icon sib-notification__icon"
+                                            >
+                                                <path
+                                                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+                                                ></path>
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text"
+                                            >登録に成功しました。</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div
+                                            id="sib-container"
+                                            class="sib-container--medium sib-container--vertical"
+                                            style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;"
+                                    >
+                                        <form
+                                                id="sib-form"
+                                                method="POST"
+                                                action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg"
+                                                data-type="subscription"
+                                        >
+                                            <div style="padding: 8px 0;">
+                                                <div
+                                                        class="sib-input sib-form-block"
+                                                        style="padding: 0%!important;"
+                                                >
+                                                    <div class="form__entry entry_block">
+                                                        <div class="form__label-row">
+                                                            <div class="entry__field">
+                                                                <input
+                                                                        class="input"
+                                                                        type="text"
+                                                                        id="EMAIL"
+                                                                        name="EMAIL"
+                                                                        autocomplete="off"
+                                                                        placeholder="メールアドレスを入力してください:"
+                                                                        data-required="true"
+                                                                        required
+                                                                />
+                                                            </div>
+                                                        </div>
+
+                                                        <label
+                                                                class="entry__error entry__error--primary"
+                                                                style='font-size:14px; text-align:left; font-family:"Helvetica", sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;'
+                                                        >
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="padding: 8px 0;">
+                                                <div
+                                                        class="sib-form-block"
+                                                        style="text-align: left;padding: 0%!important;"
+                                                >
+                                                    <button
+                                                            class="sib-form-block__button sib-form-block__button-with-loader"
+                                                            form="sib-form"
+                                                            type="submit"
+                                                    >
+                                                        <svg
+                                                                class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                                viewBox="0 0 512 512"
+                                                        >
+                                                            <path
+                                                                    d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                                                            ></path>
+                                                        </svg>
+                                                        購読
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <input
+                                                    type="text"
+                                                    name="email_address_check"
+                                                    value=""
+                                                    class="input--hidden"
+                                            />
+                                            <input type="hidden" name="locale" value="ja" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  END Brevo Form -->
+                        </div><!--end col-->
+                    </div>
+                </div>
+            </div>
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="footer-py-30 footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">
+                            © 2020-{year} NocoBase. 無断転載を禁じます。
+                        </p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6">
+                    <div class="text-sm-end">
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </div>
+</footer><!--end footer-->
+<!-- Footer End -->
+<!-- Javascript -->
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+<!-- SLIDER -->
+<script type="text/javascript" src="/js/tiny-slider.js"></script>
+<!-- Main Js -->
+<script type="text/javascript" src="/js/feather.min.js"></script>
+<script type="text/javascript" src="/js/plugins.init.js"></script>
+<!-- Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc. -->
+<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<!-- Begin Brevo Form -->
+<script type="text/javascript">
+    window.REQUIRED_CODE_ERROR_MESSAGE = "国コードを選択してください";
+    window.LOCALE = "ja";
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+        "提供された情報が無効です。";
+
+    window.REQUIRED_ERROR_MESSAGE = "このフィールドを空白のままにすることはできません。";
+
+    window.GENERIC_INVALID_MESSAGE = "提供された情報が無効です。";
+
+    window.translation = {
+        common: {
+            selectedList: "{quantity} 件のリストを選択",
+            selectedLists: "{quantity} 件のリストを選択",
+        },
+    };
+
+    var AUTOHIDE = Boolean(0);
+</script>
+<script
+        type="text/javascript"
+        defer
+        src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<!-- END Brevo Form -->
+</body>
+</html>

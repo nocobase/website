@@ -9,7 +9,7 @@ export function url(path: string) {
   if (path.startsWith('https')) {
     return path;
   }
-  return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path
+  return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path;
 }
 
 export const processor = await createMarkdownProcessor();
@@ -89,17 +89,20 @@ export async function getRssItems(locale = '*') {
   for (const post of data) {
     const { code: content } = await processor.render(post.content || '');
     const { code: content_cn } = await processor.render(post.content_cn || '');
-    if (locale === 'en' || locale === '*') {
+    const { code: content_ja } = await processor.render(post.content_ja || '');
+
+    if (locale === 'en' || locale === '*' || locale === 'ja') {
       items.push({
         title: post.title,
         description: post.description,
-        content,
-        link: `/en/blog/${post.slug}`,
+        content: locale === 'ja' && post.content_ja ? content_ja : content,
+        link: `/${locale === 'ja' ? 'ja' : 'en'}/blog/${post.slug}`,
         pubDate: post.publishedAt,
-        customData: `<language>en-US</language>`,
+        customData: `<language>${locale === 'ja' ? 'ja-JP' : 'en-US'}</language>`,
         author: post.author,
       });
     }
+
     if (locale === 'cn' || locale === '*') {
       items.push({
         title: post.title_cn || post.title,
@@ -108,6 +111,19 @@ export async function getRssItems(locale = '*') {
         link: `/cn/blog/${post.slug}`,
         pubDate: post.publishedAt,
         customData: `<language>zh-CN</language>`,
+        author: post.author,
+      });
+    }
+
+    // 添加对日语的支持
+    if (locale === 'ja' || locale === '*') {
+      items.push({
+        title: post.title_ja || post.title,
+        description: post.description_ja || post.description,
+        content: content_ja || content,
+        link: `/ja/blog/${post.slug}`,
+        pubDate: post.publishedAt,
+        customData: `<language>ja-JP</language>`,
         author: post.author,
       });
     }
@@ -178,6 +194,10 @@ export async function getArticle(slug?: string, locale = 'en') {
   if (locale === 'cn' && data?.content_cn) {
     content = data?.content_cn;
   }
+  // 添加对日语的支持
+  if (locale === 'ja' && data?.content_ja) {
+    content = data?.content_ja;
+  }
   const { code, metadata } = await processor.render(content);
   const headings: any[] = metadata.headings || [];
   articles[key] = { data, headings, html: code };
@@ -202,6 +222,10 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
   if (locale === 'cn' && data?.content_cn) {
     content = data?.content_cn;
   }
+  // 添加对日语的支持
+  if (locale === 'ja' && data?.content_ja) {
+    content = data?.content_ja;
+  }
   const { code, metadata } = await processor.render(content);
   const headings: any[] = metadata.headings || [];
   articles[key] = { data, headings, html: code };
@@ -222,6 +246,9 @@ export async function listReleases(options?: any) {
 const releases: Record<string, any> = {};
 
 export async function getRelease(slug?: string, locale = 'en') {
+  if (!slug) {
+    return {};
+  }
   const res = await fetch(`${baseURL}releases:get?appends=tags&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
@@ -235,6 +262,10 @@ export async function getRelease(slug?: string, locale = 'en') {
   let content = data?.content || '';
   if (locale === 'cn' && data?.content_cn) {
     content = data?.content_cn;
+  }
+  // 添加对日语的支持
+  if (locale === 'ja' && data?.content_ja) {
+    content = data?.content_ja;
   }
   const { code, metadata } = await processor.render(content);
   const headings: any[] = metadata.headings || [];
@@ -253,18 +284,25 @@ export async function getReleaseTag(slug?: string) {
 }
 
 export async function getSitemapLinks() {
-  const items1 = await fetch(`${baseURL}articleTags:list?sort=sort&paginate=false&token=${token}`).then(res => res.json()).then(body => body.data);
-  const items2 = await fetch(`${baseURL}articles:list?filter[status]=published&sort=-publishedAt&paginate=false&token=${token}`).then(res => res.json()).then(body => body.data);
+  const items1 = await fetch(`${baseURL}articleTags:list?sort=sort&paginate=false&token=${token}`)
+      .then(res => res.json())
+      .then(body => body.data);
+  const items2 = await fetch(`${baseURL}articles:list?filter[status]=published&sort=-publishedAt&paginate=false&token=${token}`)
+      .then(res => res.json())
+      .then(body => body.data);
   const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
   const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
   const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
-  return [
+
+  // 基本的站点链接，添加日语版本
+  const baseLinks = [
     {
       url: '/en/roadmap',
       lastmod: tasksLastUpdatedAt,
       links: [
         { lang: 'en-US', url: `/en/roadmap` },
         { lang: 'zh-CN', url: `/cn/roadmap` },
+        { lang: 'ja-JP', url: `/ja/roadmap` }, // 日语链接
       ],
     },
     {
@@ -273,6 +311,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/plugins` },
         { lang: 'zh-CN', url: `/cn/plugins` },
+        { lang: 'ja-JP', url: `/ja/plugins` }, // 日语链接
       ],
     },
     {
@@ -280,6 +319,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/plugins-commercial` },
         { lang: 'zh-CN', url: `/cn/plugins-commercial` },
+        { lang: 'ja-JP', url: `/ja/plugins-commercial` }, // 日语链接
       ],
     },
     {
@@ -287,6 +327,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/commercial` },
         { lang: 'zh-CN', url: `/cn/commercial` },
+        { lang: 'ja-JP', url: `/ja/commercial` }, // 日语链接
       ],
     },
     {
@@ -294,6 +335,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/community` },
         { lang: 'zh-CN', url: `/cn/community` },
+        { lang: 'ja-JP', url: `/ja/community` }, // 日语链接
       ],
     },
     {
@@ -301,6 +343,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/contact` },
         { lang: 'zh-CN', url: `/cn/contact` },
+        { lang: 'ja-JP', url: `/ja/contact` }, // 日语链接
       ],
     },
     {
@@ -308,6 +351,7 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/agreement` },
         { lang: 'zh-CN', url: `/cn/agreement` },
+        { lang: 'ja-JP', url: `/ja/agreement` }, // 日语链接
       ],
     },
     {
@@ -316,25 +360,36 @@ export async function getSitemapLinks() {
       links: [
         { lang: 'en-US', url: `/en/blog` },
         { lang: 'zh-CN', url: `/cn/blog` },
+        { lang: 'ja-JP', url: `/ja/blog` }, // 日语链接
       ],
     },
-  ].concat(await Promise.all(items1.map(async (item: any) => {
+  ];
+
+  // 添加标签页的链接，支持日语
+  const tagLinks = await Promise.all(items1.map(async (item: any) => {
     return {
       url: `/en/blog/tags/${item.slug}`,
       lastmod: item.updatedAt,
       links: [
         { lang: 'en-US', url: `/en/blog/tags/${item.slug}` },
         { lang: 'zh-CN', url: `/cn/blog/tags/${item.slug}` },
+        { lang: 'ja-JP', url: `/ja/blog/tags/${item.slug}` }, // 日语链接
       ],
     };
-  }))).concat(items2.map((item: any) => {
+  }));
+
+  // 添加文章页的链接，支持日语
+  const articleLinks = items2.map((item: any) => {
     return {
       url: `/en/blog/${item.slug}`,
       lastmod: item.updatedAt,
       links: [
         { lang: 'en-US', url: `/en/blog/${item.slug}` },
         { lang: 'zh-CN', url: `/cn/blog/${item.slug}` },
+        { lang: 'ja-JP', url: `/ja/blog/${item.slug}` }, // 日语链接
       ],
     };
-  }));
+  });
+
+  return baseLinks.concat(tagLinks).concat(articleLinks);
 }
