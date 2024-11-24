@@ -61,7 +61,7 @@ const keywords = page.keywords_ja || page.keywords;
                               </span>
                             ) : plugin.isCommercial ? (
                               <h6 class="text-primary mb-0">
-                                ￥{plugin.price_jpy.toLocaleString('en-US')} <span class="text-muted">/</span> <a class="text-muted" href="/ja/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                ${plugin.price.toLocaleString('en-US')} <span class="text-muted">/</span> <a class="text-muted" href="/ja/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
                               </h6>
                             ) : (
                               <span class="badge bg-soft-primary plugin-type">
