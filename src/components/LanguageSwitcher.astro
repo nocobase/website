@@ -1,0 +1,83 @@
+---
+const supportedLanguages = [
+    { code: 'en', label: 'English' },
+    { code: 'cn', label: '简体中文' },
+    { code: 'ja', label: '日本語' },
+];
+
+const currentLang = Astro.url.pathname.split('/')[1] || 'en';
+
+const generateUrl = (lang) => {
+    const pathWithoutLang = Astro.url.pathname.replace(/^\/(en|cn|ja)/, '');
+    return pathWithoutLang ? `/${lang}${pathWithoutLang}` : `/${lang}/`;
+};
+---
+
+<div class="language-switcher" id="language-switch">
+    <div
+            class="language-icon"
+            id="language-icon"
+            aria-label="切换语言"
+            role="button"
+            tabindex="0"
+    >
+        <!-- 您可以替换为更合适的图标，例如使用 SVG 或字体图标 -->
+        <svg viewBox="64 64 896 896" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+            <path d="M140 188h584v164h76V144c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h544v-76H140V188z"></path>
+            <path d="M414.3 256h-60.6c-3.4 0-6.4 2.2-7.6 5.4L219 629.4c-.3.8-.4 1.7-.4 2.6 0 4.4 3.6 8 8 8h55.1c3.4 0 6.4-2.2 7.6-5.4L322 540h196.2L422 261.4a8.42 8.42 0 00-7.7-5.4zm12.4 228h-85.5L384 360.2 426.7 484zM936 528H800v-93c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v93H592c-13.3 0-24 10.7-24 24v176c0 13.3 10.7 24 24 24h136v152c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V752h136c13.3 0 24-10.7 24-24V552c0-13.3-10.7-24-24-24zM728 680h-88v-80h88v80zm160 0h-88v-80h88v80z"></path>
+        </svg>
+    </div>
+    <ul id="language-menu" class="language-menu">
+        {supportedLanguages.map(lang => (
+                <li key={lang.code} class={lang.code === currentLang ? 'active' : ''}>
+                    <a href={generateUrl(lang.code)}>
+                        {lang.label}
+                    </a>
+                </li>
+        ))}
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const languageIcon = document.getElementById('language-icon');
+        const languageMenu = document.getElementById('language-menu');
+        const languageSwitch = document.getElementById('language-switch'); // 确保定义了 languageSwitch
+
+        // 切换菜单显示状态
+        const toggleMenu = () => {
+            languageMenu.classList.toggle('show');
+        };
+
+        // 绑定点击事件
+        languageIcon.addEventListener('click', (event) => {
+            event.stopPropagation(); // 防止事件冒泡导致菜单立即关闭
+            toggleMenu();
+        });
+
+        // 绑定键盘事件（Enter 键）
+        languageIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                toggleMenu();
+            }
+        });
+
+        // 点击页面其他区域时关闭下拉菜单
+        document.addEventListener('click', (event) => {
+            if (!languageIcon.contains(event.target) && !languageMenu.contains(event.target)) {
+                if (languageMenu.classList.contains('show')) {
+                    languageMenu.classList.remove('show');
+                }
+            }
+        });
+
+        // 可选：鼠标悬停时展开菜单
+        languageSwitch.addEventListener('mouseenter', () => {
+            languageMenu.classList.add('show');
+        });
+
+        languageSwitch.addEventListener('mouseleave', () => {
+            languageMenu.classList.remove('show');
+        });
+    });
+</script>

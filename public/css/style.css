@@ -6703,13 +6703,13 @@ body[data-layout-mode=dark] .mode-light {
   font-size: 12px;
 }
 .plugin-box {
-  display: flex; 
-  flex-direction:column; 
+  display: flex;
+  flex-direction:column;
   height: 100%;
 }
 .plugin-footer {
-  display: flex; 
-  height: 100%; 
+  display: flex;
+  height: 100%;
   align-items: flex-end
 }
 .plugin-developer {
@@ -6735,9 +6735,9 @@ body[data-layout-mode=dark] .mode-light {
 .sib-form-block__button {
   font-size: 14px;
   font-weight: bold;
-  color:#ffffff; 
-  background-color:#2f55d4; 
-  border-radius:4px; 
+  color:#ffffff;
+  background-color:#2f55d4;
+  border-radius:4px;
   border-width:0px;
 }
 .breadcrumb .breadcrumb-item.active a {
@@ -6759,7 +6759,7 @@ body[data-layout-mode=dark] .mode-light {
 #topnav .lang {
   line-height: 68px;
   text-align: right;
-  padding-left: 20px; 
+  padding-left: 20px;
   float: right;
 }
 .license-body {
@@ -7031,7 +7031,7 @@ body[data-layout-mode=dark] .mode-light {
   --balloon-font-size: 14px;
 }
 #how-it-works {
-  position: relative; 
+  position: relative;
 }
 .demo-entrance {
   margin: 60px 0;
@@ -7159,4 +7159,76 @@ ul.articles a:hover img {
   ul.articles img {
     height: 50vw;
   }
+}
+
+
+/*********************************/
+/*        LanguageSwitcher       */
+/*===============================*/
+ .language-switcher {
+   position: relative;
+   display: inline-block;
+ }
+
+.language-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: #212529 !important;
+  transition: all 0.3s;
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0; /* 移除上边距，消除间隙 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+  line-height: 41px;
+}
+
+.language-menu.show {
+  display: block;
+}
+
+.language-menu li {
+  padding: 0.5em 1.5em;
+}
+
+/* 移除背景色变化 */
+.language-menu li:hover {
+  background-color: transparent;
+}
+
+/* 悬停时文字颜色变为 #2f55d4 */
+.language-menu li:hover a {
+  color: #2f55d4;
+}
+
+/* 当前语言的文字颜色为 #2f55d4 */
+.language-menu li.active a {
+  color: #2f55d4;
+}
+
+.language-menu a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: color 0.3s;
+  text-align: left; /* 左对齐文本 */
+}
+
+/* 可选：调整语言菜单的宽度和对齐方式 */
+.language-menu li a {
+  width: 100%;
 }
