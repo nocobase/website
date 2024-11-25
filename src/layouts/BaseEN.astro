@@ -1,5 +1,6 @@
 ---
 import ShapeFooter from "../components/ShapeFooter.astro";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -236,9 +237,7 @@ const meta = {
           >
         </div>
         <div class="lang">
-          <a href={urlEN} class="text-reset" title={meta.title + " English page"}>EN</a> |
-          <a href={urlCN} title={meta.title + " 中文页面"} class="text-reset">中文</a> |
-          <a href={urlJA} title={meta.title + " 日本語ページ"} class="text-reset">日本語</a>
+          <LanguageSwitcher />
         </div>
         <!-- End Logo container-->
         <div class="menu-extras">
