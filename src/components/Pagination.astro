@@ -53,12 +53,16 @@ const previousPage = currentPage - 1;
       previousPage >= 1 ? (
           <li class="page-item">
             <a class="page-link" href={previousPage === 1 ? basepath : `${basepath}/page/${previousPage}`}>
-              Previous
+              <span class="desktop-text">Previous</span>
+              <span class="mobile-icon">&lt;</span>
             </a>
           </li>
       ) : (
           <li class="page-item disabled">
-            <span class="page-link">Previous</span>
+          <span class="page-link">
+            <span class="desktop-text">Previous</span>
+            <span class="mobile-icon">&lt;</span>
+          </span>
           </li>
       )
     }
@@ -99,14 +103,19 @@ const previousPage = currentPage - 1;
       currentPage < totalPages ? (
           <li class="page-item">
             <a class="page-link" href={`${basepath}/page/${currentPage + 1}`}>
-              Next
+              <span class="desktop-text">Next</span>
+              <span class="mobile-icon">&gt;</span>
             </a>
           </li>
       ) : (
           <li class="page-item disabled">
-            <span class="page-link">Next</span>
+          <span class="page-link">
+            <span class="desktop-text">Next</span>
+            <span class="mobile-icon">&gt;</span>
+          </span>
           </li>
       )
     }
   </ul>
 </nav>
+

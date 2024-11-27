@@ -7232,3 +7232,19 @@ ul.articles a:hover img {
 .language-menu li a {
   width: 100%;
 }
+
+/*********************************/
+/*        paganition       */
+/*===============================*/
+.page-item .mobile-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .page-item .desktop-text {
+    display: none;
+  }
+  .page-item .mobile-icon {
+    display: inline;
+  }
+}
