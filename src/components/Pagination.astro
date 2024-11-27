@@ -9,82 +9,103 @@ interface Props {
 
 const { basepath, currentPage = 1, totalPages = 1 } = Astro.props;
 
-const createPageArray = (totalPages: number) => {
-  return Array.from({ length: totalPages }, (_, i) => i + 1);
+// 生成分页数组的函数
+const generatePagination = (currentPage, totalPages, maxVisible: number = 3) => {
+  currentPage = parseInt(currentPage);
+  totalPages = parseInt(totalPages);
+  const pages = [];
+  const half = Math.floor(maxVisible / 2);
+
+  let start = Math.max(1, currentPage - half);
+  let end = Math.min(totalPages, currentPage + half);
+
+  if (end - start + 1 < maxVisible) {
+    if (currentPage <= half) {
+      end = Math.min(totalPages, end + (maxVisible - (end - start + 1)));
+    } else if (totalPages - currentPage < half) {
+      start = Math.max(1, start - (maxVisible - (end - start + 1)));
+    }
+  }
+
+  if (start > 1) pages.push(1);
+  if (start > 2) pages.push('...');
+
+  for (let i = start; i <= end; i++) {
+    pages.push(i);
+  }
+
+  if (end < totalPages - 1) pages.push('...');
+  if (end < totalPages) pages.push(totalPages);
+
+  return pages;
 };
 
-const pages = createPageArray(totalPages);
+const pages = generatePagination(currentPage, totalPages, 3);
 if (totalPages < 2) {
   return;
 }
-const previousPage = 1 * currentPage - 1;
+const previousPage = currentPage - 1;
 ---
 
 <nav aria-label="Page navigation example">
   <ul class="pagination" style="justify-content: center; margin-top: 6rem;">
     {
-      previousPage === 1 && (
-        <li class="page-item">
-          <a class="page-link" href={basepath}>
-            Previous
-          </a>
-        </li>
-      )
-    }
-    {
-      previousPage > 1 && (
-        <li class="page-item">
-          <a class="page-link" href={`${basepath}/page/${previousPage}`}>
-            Previous
-          </a>
-        </li>
-      )
-    }
-    {
-      previousPage < 1 && (
-        <li class="page-item disabled">
-          <span class="page-link">Previous</span>
-        </li>
+      previousPage >= 1 ? (
+          <li class="page-item">
+            <a class="page-link" href={previousPage === 1 ? basepath : `${basepath}/page/${previousPage}`}>
+              Previous
+            </a>
+          </li>
+      ) : (
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
       )
     }
     {
       pages.map((page) => {
-        if (page == currentPage) {
+        if (page === '...') {
           return (
-            <li class="page-item active">
-              <span class="page-link">{page}</span>
-            </li>
+              <li class="page-item disabled">
+                <span class="page-link">...</span>
+              </li>
+          );
+        } else if (page == currentPage) {
+          return (
+              <li class="page-item active">
+                <span class="page-link">{page}</span>
+              </li>
+          );
+        } else if (page === 1) {
+          return (
+              <li class="page-item">
+                <a class="page-link" href={basepath}>
+                  {page}
+                </a>
+              </li>
+          );
+        } else {
+          return (
+              <li class="page-item">
+                <a class="page-link" href={`${basepath}/page/${page}`}>
+                  {page}
+                </a>
+              </li>
           );
         }
-        if (page === 1) {
-          return (
-            <li class="page-item">
-              <a class="page-link" href={basepath}>
-                {page}
-              </a>
-            </li>
-          );
-        }
-        return (
-          <li class="page-item">
-            <a class="page-link" href={`${basepath}/page/${page}`}>
-              {page}
-            </a>
-          </li>
-        );
       })
     }
     {
-      totalPages > currentPage ? (
-        <li class="page-item">
-          <a class="page-link" href={`${basepath}/page/${1 * currentPage + 1}`}>
-            Next
-          </a>
-        </li>
+      currentPage < totalPages ? (
+          <li class="page-item">
+            <a class="page-link" href={`${basepath}/page/${currentPage + 1}`}>
+              Next
+            </a>
+          </li>
       ) : (
-        <li class="page-item disabled">
-          <span class="page-link">Next</span>
-        </li>
+          <li class="page-item disabled">
+            <span class="page-link">Next</span>
+          </li>
       )
     }
   </ul>
