@@ -45,6 +45,9 @@ const tabs = [
         )
       }
       <FormattedDate date={data.publishedAt || data.createdAt} />
+      {data.ai_generated_ja && (
+          <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(本記事はAIにより生成されました)</p>
+      )}
     </div>
     <Tags basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
     </PageHeader>

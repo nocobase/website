@@ -38,6 +38,9 @@ const tabs = [
     <div>
       {data.author && (<span title={data.author}>{data.author}<span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span></span>)}
       <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
+      {data.ai_generated_cn && (
+          <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(本篇文章由AI生成。)</p>
+      )}
     </div>
     <Tags locale="cn" basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
   </PageHeader>
