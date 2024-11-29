@@ -52,7 +52,7 @@ const keywords = page.keywords;
                             <h6 class="card-title mb-1">{plugin.title}</h6>
                             <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
                             <p class="text-muted mb-2 plugin-overview">{plugin.description}
-                              {plugin.doc && 
+                              {plugin.doc &&
                                 <a href={plugin.doc} target="_blank" style="font-size: 14px; ">Details</a>
                               }
                             </p>
@@ -64,13 +64,13 @@ const keywords = page.keywords;
                               ) : plugin.isCommercial ? (
                                 <h6 class="text-primary mb-0">
                                   <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                                    ${plugin.price_1_year.toLocaleString('en-US')}
-                                  <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point_1_year} <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                    ${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}
+                                  <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
                                 </h6>
                                 <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                                   <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                                    ${plugin.price.toLocaleString('en-US')}
-                                  <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                    ${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}
+                                  <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
                                 </h6>
                               ) : (
                                 <span class="badge bg-soft-primary plugin-type">
