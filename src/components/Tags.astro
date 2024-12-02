@@ -8,6 +8,9 @@ interface Props {
 const { basepath, items = [], locale = "en" } = Astro.props;
 
 const getTitle = (tag: any) => {
+  if (locale === "ja" && tag.title_ja) {
+    return tag.title_ja;
+  }
   if (locale !== "en" && tag.title_cn) {
     return tag.title_cn;
   }
@@ -23,9 +26,9 @@ if (items.length === 0) {
   <ul>
     {
       items.map((tag) => (
-        <li>
-          <a href={basepath + "/tags/" + tag.slug}>{getTitle(tag)}</a>
-        </li>
+          <li>
+            <a href={basepath + "/tags/" + tag.slug}>{getTitle(tag)}</a>
+          </li>
       ))
     }
   </ul>
