@@ -46,7 +46,7 @@ const tabs = [
       }
       <FormattedDate date={data.publishedAt || data.createdAt} />
     </div>
-    <Tags basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
+    <Tags basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} locale="ja"/>
     {data.ai_generated_ja && (
         <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(本記事はAIにより翻訳されました)</p>
     )}
