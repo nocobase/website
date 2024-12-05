@@ -7248,3 +7248,13 @@ ul.articles a:hover img {
     display: inline;
   }
 }
+
+/*********************************/
+/*            layouts            */
+/*===============================*/
+
+.base-ja{
+  font-family: "Helvetica Neue", "Noto Sans JP", HelveticaNeue, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴシック", Hiragino Sans, Verdana, "メイリオ", Meiryo, sans-serif;
+  letter-spacing: 0.06rem;
+  font-feature-settings: "palt";
+}
