@@ -13,7 +13,7 @@ const tabs = [
     link: "/en/plugins-commercial",
   },
   {
-    title: "Plugin bundles",
+    title: "Plugin points",
     link: "/en/plugins-bundles",
     active: true,
   },
@@ -29,7 +29,7 @@ const keywords = page.keywords;
 <Layout title="Plugin bundle" description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/en/contact" class="btn btn-outline-primary">Contact to buy or sell plugins<i class="uil uil-angle-right-b"></i></a>
+    <a href="/en/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
   <!-- Section Start -->
@@ -39,11 +39,10 @@ const keywords = page.keywords;
             <div class="col-lg-9">
                 <div class="card shadow border-0 rounded">
                     <div class="card-body">
-                        <h5 class="card-title">What is a plugin bundle</h5>
-                        <p class="text-muted">If your business's payment process is complex, purchasing NocoBase plugins one by one might be tedious. Therefore, we've rolled out a package option for plugins. You can buy a plugin bundle, which comes with "points," and during your actual use of NocoBase, you can choose and exchange plugins as required.</p>
-                        <p class="text-muted">We also offer discounts on plugin bundles—the more points you buy, the bigger the discount.</p>
-                        <p class="text-muted">NocoBase's commercial plugins with lifetime upgrade have four different prices: $200, $400, $800, and $1,600. Each point within a plugin bundle equates to $100, hence these four price tags correspond to 2 <i class="uil uil-moon-eclipse me-1"></i>, 4 <i class="uil uil-moon-eclipse me-1"></i>, 8 <i class="uil uil-moon-eclipse me-1"></i>, and 16 <i class="uil uil-moon-eclipse me-1"></i> respectively.</p>
-                        <p class="text-muted">On the <a href="/en/plugins">plugin list page</a>, you can view the price of each plugin and its corresponding points. For example, the 'Data Source: External PostgreSQL' plugin is priced at $400 or 4 <i class="uil uil-moon-eclipse me-1"></i>.</p>
+                        <h5 class="card-title">What are Plugin Points?</h5>
+                        <p class="text-muted">NocoBase offers dozens of commercial plugins (with more being added rapidly). To give users the flexibility to choose the plugins they need, we introduced the concept of "Plugin Points," where 1 point = 100 USD. In the NocoBase Plugin Market, you can use these points to redeem plugins in addition to directly purchasing them.</p>
+                    
+                        <p class="text-muted">On the <a href="/en/plugins">plugin list page</a>, you can see the price and corresponding points for each plugin. For example, the "Data source: External PostgreSQL" plugin is priced at $400 or 4 <i class="uil uil-moon-eclipse me-1"></i>.</p>
                         
                         <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
                             <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
@@ -51,23 +50,43 @@ const keywords = page.keywords;
                                     <div class="mt-2 plugin-box"> 
                                         <h6 class="card-title mb-1">Data source: External PostgreSQL</h6> 
                                         <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div> 
-                                        <p class="text-muted mb-2 plugin-overview">Use external PostgreSQL databases as data sources.</p> 
+                                        <p class="text-muted mb-2 plugin-overview">Connect an external PostgreSQL database as a data source.</p> 
+                    
                                         <div class="plugin-footer"> 
-                                            <h6 class="text-primary mb-0"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                                            $200 <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> </h6>
-                                                                          <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use &amp; upgrade</span><br>
-                                            $400 <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> </h6> 
+                                            <h6 class="text-primary mb-0"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Perpetual use, 1-year upgrades</span><br> 
+                                                <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">$200</span> 
+                                            </h6>
+                                            <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Perpetual use and upgrades</span><br> 
+                                                <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">$400</span> 
+                                            </h6> 
                                         </div>
+                                    
                                     </div> 
                                 </div>
                             </div>
                         </div>
-
-                        <p class="text-muted">If you buy a plugin bundle of 32 <i class="uil uil-moon-eclipse me-1"></i>, you can exchange it for 16 plugins of $200 each, or 8 plugins of $400 each, or one plugin of $800 + 3 plugins of $400 + 6 plugins of $200.</p>
-                        <p class="text-muted">The remaining points in the plugin bundle never expire and you don't have to select all plugins at once; you can make your selections gradually throughout the development process.</p>
-
-                        <h5 class="card-title mt-4">Plugin bundles</h5>
-
+                    
+                        <p class="text-muted">If you have 32 <i class="uil uil-moon-eclipse me-1"></i>, you can redeem 16 plugins priced at $200, or 8 plugins priced at $400, or 1 plugin priced at $800 + 3 plugins priced at $400 + 6 plugins priced at $200.</p>
+                        <p class="text-muted">The remaining points in your account are valid indefinitely. You don't need to choose all plugins at once; you can select and redeem them progressively as you develop.</p>
+                    
+                        <h5 class="card-title mt-4">How to Earn Points</h5>
+                        <p class="text-muted">You can earn points through the following methods:</p>
+                        <ul class="text-muted">
+                            <li>Purchase a <a href="/en/commercial">commercial license</a>, which includes a certain number of plugin points</li>
+                            <li>Purchase a plugin bundle, which includes a certain number of plugin points</li>
+                            <li>As a representative user, share your company's or client's NocoBase usage story with the community and receive plugin points. <a href="/en/contact">Contact us for details</a></li>
+                        </ul>
+                    
+                        <h5 class="card-title mt-4">What is a Plugin Bundle?</h5>
+                        <p class="text-muted">If your company's payment process is complex, purchasing NocoBase plugins individually may be inconvenient. To address this, we've introduced plugin bundles. You can purchase a plugin bundle, which contains "points," and then redeem the plugins you need during your use of NocoBase.</p>
+                        <p class="text-muted">Additionally, we offer discounts on plugin bundles—the more points you purchase, the higher the discount.</p>
+                    
                         <div class="table-responsive bg-white">
                             <table class="table mb-0 table-center commercial-table">
                                 <thead class="">
@@ -111,7 +130,7 @@ const keywords = page.keywords;
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div><!--end col-->
         </div><!--end row-->

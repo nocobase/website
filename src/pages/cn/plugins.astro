@@ -14,7 +14,7 @@ const tabs = [
     link: "/cn/plugins-commercial",
   },
   {
-    title: "插件包",
+    title: "插件点数",
     link: "/cn/plugins-bundles",
   },
 ];
@@ -29,7 +29,7 @@ const keywords = page.keywords_cn || page.keywords;
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/cn/contact" class="btn btn-outline-primary">购买或出售插件<i class="uil uil-angle-right-b"></i></a>
+    <a href="/cn/contact" class="btn btn-outline-primary">联系购买<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
   <!-- Section Start -->
@@ -62,13 +62,15 @@ const keywords = page.keywords_cn || page.keywords;
                             ) : plugin.isCommercial ? (
                               <h6 class="text-primary mb-0">
                                 <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                                  ￥{plugin.price_cny_1_year ? plugin.price_cny_1_year.toLocaleString('en-US') : '?'}
-                                <span class="text-muted">/</span> <a class="text-muted" href="/cn/plugins-bundles"> {plugin.price_point_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                <a href="/cn/plugins-bundles"> {plugin.price_point_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted" >￥{plugin.price_cny_1_year ? plugin.price_cny_1_year.toLocaleString('en-US') : '?'}</span>
                               </h6>
                               <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                                 <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                                  ￥{plugin.price_cny ? plugin.price_cny.toLocaleString('en-US') : '?'}
-                                <span class="text-muted">/</span> <a class="text-muted" href="/cn/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                <a class="text-muted" href="/cn/plugins-bundles"> {plugin.price_point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted">￥{plugin.price_cny ? plugin.price_cny.toLocaleString('en-US') : '?'}</span>
                               </h6>
                             ) : (
                               <span class="badge bg-soft-primary plugin-type">

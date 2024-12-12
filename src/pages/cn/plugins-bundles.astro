@@ -13,7 +13,7 @@ const tabs = [
     link: "/cn/plugins-commercial",
   },
   {
-    title: "插件包",
+    title: "插件点数",
     link: "/cn/plugins-bundles",
     active: true,
   },
@@ -29,7 +29,7 @@ const keywords = page.keywords_cn || page.keywords;
 <Layout title={"商业插件"} description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/cn/contact" class="btn btn-outline-primary">购买或出售插件<i class="uil uil-angle-right-b"></i></a>
+    <a href="/cn/contact" class="btn btn-outline-primary">联系购买<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
   <!-- Section Start -->
@@ -39,10 +39,9 @@ const keywords = page.keywords_cn || page.keywords;
             <div class="col-lg-9">
                 <div class="card shadow border-0 rounded">
                     <div class="card-body">
-                        <h5 class="card-title">什么是插件包</h5>
-                        <p class="text-muted">如果你的企业付款流程比较复杂，那么逐一购买 NocoBase 插件可能很麻烦，因此我们推出了插件包的方案。你可以购买一个插件包，其中包含“点数”，然后在实际使用 NocoBase 的过程中，按需选择和兑换插件。</p>
-                        <p class="text-muted">同时，我们为插件包提供了折扣，点数越多，折扣越高。</p>
-                        <p class="text-muted">NocoBase 的商业插件共有 4 种永久升级的定价，分别是 ￥1,200，￥2,400，￥4,800，￥9,600。插件包里每个点数等于 ￥600，因此这 4 种定价分别对应 2 <i class="uil uil-moon-eclipse me-1"></i>, 4 <i class="uil uil-moon-eclipse me-1"></i>, 8 <i class="uil uil-moon-eclipse me-1"></i>, 16 <i class="uil uil-moon-eclipse me-1"></i> 。</p>
+                        <h5 class="card-title">什么是插件点数</h5>
+                        <p class="text-muted">NocoBase 拥有数十个（数量还在快速增长）商业插件，为了方便用户自由选择所需的插件，我们定义了“插件点数”的概念，1 点 = 600 元。在 NocoBase 插件市场中，除了直接购买插件之外，你也可以使用点数兑换所需的插件。</p>
+
                         <p class="text-muted">在 <a href="/cn/plugins">插件列表页面</a>，你可以看到每个插件的定价和相应的点数。比如 Data source: External PostgreSQL 插件，定价为 ￥2,400 或 4 <i class="uil uil-moon-eclipse me-1"></i>。</p>
                         
                         <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
@@ -53,22 +52,28 @@ const keywords = page.keywords_cn || page.keywords;
                                         <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div> 
                                         <p class="text-muted mb-2 plugin-overview">连接外部的 PostgreSQL数据库作为数据源。</p> 
 
-                                        <div class="plugin-footer"> 
-                                            <h6 class="text-primary mb-0"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                                            ￥1,200 <span class="text-muted">/</span> <a class="text-muted" href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> </h6>
-                                                                          <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                                            ￥2,400 <span class="text-muted">/</span> <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> </h6> 
-                                        </div>
+                                        <div class="plugin-footer"> <h6 class="text-primary mb-0"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br> <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> <span class="text-muted">/</span> <span class="text-muted">￥1,200</span> </h6>
+                                            <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br> <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> <span class="text-muted">/</span> <span class="text-muted">￥2,400</span> </h6> </div>
                                     
                                     </div> 
                                 </div>
                             </div>
                         </div>
 
-                        <p class="text-muted">如果你购买了 32 <i class="uil uil-moon-eclipse me-1"></i> 的插件包。那么可以兑换 16 个 ￥1,200 的插件，或者 8 个 ￥2,400 的插件，或者 1 个 ￥4,800 的插件 + 3 个 ￥2,400 的插件 + 6 个 ￥1,200 的插件。</p>
-                        <p class="text-muted">插件包里的剩余点数永久有效，你不需要一次性选中所有的插件，而是可以在开发的过程中逐步选择。</p>
+                        <p class="text-muted">如果你拥有 32 <i class="uil uil-moon-eclipse me-1"></i>,那么可以兑换 16 个 ￥1,200 的插件，或者 8 个 ￥2,400 的插件，或者 1 个 ￥4,800 的插件 + 3 个 ￥2,400 的插件 + 6 个 ￥1,200 的插件。</p>
+                        <p class="text-muted">你账户中的剩余点数永久有效，你不需要一次性选中所有的插件，而是可以在开发的过程中逐步选择。</p>
 
-                        <h5 class="card-title mt-4">插件包价格表</h5>
+                        <h5 class="card-title mt-4">如何获得点数</h5>
+                        <p class="text-muted">你可以通过以下几种方法获得点数：</p>
+                        <ul class="text-muted">
+                            <li>购买<a href="/cn/commercial">商业许可证</a>，其中包含一定数量的插件点数</li>
+                            <li>购买插件包，其中包含一定数量的插件点数</li>
+                            <li>作为代表性用户，向社区讲述你的公司或客户使用 NocoBase 的故事，将获赠插件点数。<a href="/cn/contact">联系我们</a></li>
+                        </ul>
+
+                        <h5 class="card-title mt-4">什么是插件包</h5>
+                        <p class="text-muted">如果你的企业付款流程比较复杂，那么逐一购买 NocoBase 插件可能很麻烦，因此我们推出了插件包的方案。你可以购买一个插件包，其中包含“点数”，然后在实际使用 NocoBase 的过程中，按需选择和兑换插件。</p>
+                        <p class="text-muted">同时，我们为插件包提供了折扣，点数越多，折扣越高。</p>
 
                         <div class="table-responsive bg-white">
                             <table class="table mb-0 table-center commercial-table">
