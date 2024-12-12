@@ -13,7 +13,7 @@ const tabs = [
     link: "/ja/plugins-commercial",
   },
   {
-    title: "プラグインバンドル",
+    title: "プラグインポイント",
     link: "/ja/plugins-bundles",
     active: true,
   },
@@ -29,7 +29,7 @@ const keywords = page.keywords_ja || page.keywords;
 <Layout title="プラグインバンドル" description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/ja/contact" class="btn btn-outline-primary">プラグインの購入または販売<i class="uil uil-angle-right-b"></i></a>
+    <a href="/ja/contact" class="btn btn-outline-primary">プラグイン購入に関するお問い合わせ<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
     <!-- Section Start -->
@@ -39,11 +39,10 @@ const keywords = page.keywords_ja || page.keywords;
                 <div class="col-lg-9">
                     <div class="card shadow border-0 rounded">
                         <div class="card-body">
-                            <h5 class="card-title">プラグインバンドルとは何ですか</h5>
-                            <p class="text-muted">ビジネスの支払いプロセスが複雑な場合、NocoBaseプラグインを一つずつ購入するのは面倒かもしれません。そのため、私たちはプラグインのパッケージオプションを展開しました。プラグインバンドルを購入すると、"ポイント"が付属し、NocoBaseの実際の使用において、必要に応じてプラグインを選択し交換することができます。</p>
-                            <p class="text-muted">また、プラグインバンドルには割引が適用され、購入するポイントが多ければ多いほど割引が大きくなります。</p>
-                            <p class="text-muted">NocoBaseの商業用プラグインには、$200、$400、$800、$1,600の4つの異なる価格があります。プラグインバンドル内の各ポイントは$100に相当するため、これら4つの価格はそれぞれ2 <i class="uil uil-moon-eclipse me-1"></i>, 4 <i class="uil uil-moon-eclipse me-1"></i>, 8 <i class="uil uil-moon-eclipse me-1"></i>, 16 <i class="uil uil-moon-eclipse me-1"></i>に対応します。</p>
-                            <p class="text-muted"><a href="/ja/plugins">プラグインリストページ</a>には、各プラグインの価格とそれに対応するポイントが表示されます。例えば、『データソース：外部PostgreSQL』プラグインは、$400または4 <i class="uil uil-moon-eclipse me-1"></i>で提供されています。</p>
+                            <h5 class="card-title">プラグインポイントとは何ですか？</h5>
+                            <p class="text-muted">NocoBaseは数十種類の商用プラグイン（増加中）を提供しています。ユーザーが必要なプラグインを柔軟に選べるよう、「プラグインポイント」という概念を導入しました。1ポイント = 100 USD。NocoBaseのプラグインマーケットでは、プラグインを直接購入する以外に、ポイントを使ってプラグインを交換することができます。</p>
+
+                            <p class="text-muted"><a href="/ja/plugins">プラグインリストページ</a>では、各プラグインの価格と対応するポイントが確認できます。例えば、「データソース：外部PostgreSQL」プラグインは$400または4 <i class="uil uil-moon-eclipse me-1"></i>です。</p>
 
                             <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
                                 <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
@@ -51,22 +50,40 @@ const keywords = page.keywords_ja || page.keywords;
                                         <div class="mt-2 plugin-box">
                                             <h6 class="card-title mb-1">データソース: 外部PostgreSQL</h6>
                                             <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                                            <p class="text-muted mb-2 plugin-overview">外部PostgreSQLデータベースをデータソースとして使用する。</p>
+                                            <p class="text-muted mb-2 plugin-overview">外部のPostgreSQLデータベースをデータソースとして接続します。</p>
                                             <div class="plugin-footer">
-                                                <h6 class="text-primary mb-0"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間アップグレード</span><br>
-                                                    $200 <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> </h6>
-                                                <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用＆アップグレード</span><br>
-                                                    $400 <span class="text-muted">/</span> <a class="text-muted" href="/en/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> </h6>
+                                                <h6 class="text-primary mb-0">
+                                                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間アップグレード</span><br>
+                                                    <a href="/ja/plugins-bundles">2 <i class="uil uil-moon-eclipse me-1"></i></a>
+                                                    <span class="text-muted">/</span>
+                                                    <span class="text-muted">$200</span>
+                                                </h6>
+                                                <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                                                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用＆アップグレード</span><br>
+                                                    <a href="/ja/plugins-bundles">4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                                                    <span class="text-muted">/</span>
+                                                    <span class="text-muted">$400</span>
+                                                </h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <p class="text-muted">32ポイントのプラグインバンドルを購入した場合、各$200のプラグインを16個、または各$400のプラグインを8個、あるいは$800のプラグイン1個＋$400のプラグイン3個＋$200のプラグイン6個に交換できます。</p>
-                            <p class="text-muted">プラグインバンドルの残りのポイントは期限がなく、すべてのプラグインを一度に選択する必要はありません。開発プロセスを通じて徐々に選択できます。</p>
+                            <p class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i>を所有している場合、$200のプラグインを16個、または$400のプラグインを8個、または$800のプラグイン1個＋$400のプラグイン3個＋$200のプラグイン6個に交換することができます。</p>
+                            <p class="text-muted">アカウント内の残りのポイントは有効期限がなく、すべてのプラグインを一度に選択する必要はありません。開発の進行に応じて徐々に選択できます。</p>
 
-                            <h5 class="card-title mt-4">プラグインバンドル</h5>
+                            <h5 class="card-title mt-4">ポイントの獲得方法</h5>
+                            <p class="text-muted">以下の方法でポイントを獲得できます：</p>
+                            <ul class="text-muted">
+                                <li><a href="/ja/commercial">商用ライセンス</a>を購入すると一定数のプラグインポイントが含まれます</li>
+                                <li>プラグインバンドルを購入すると一定数のプラグインポイントが含まれます</li>
+                                <li>代表ユーザーとして、会社や顧客がNocoBaseを使用するストーリーをコミュニティに共有すると、ポイントが贈呈されます。<a href="/ja/contact">お問い合わせはこちら</a></li>
+                            </ul>
+
+                            <h5 class="card-title mt-4">プラグインバンドルとは？</h5>
+                            <p class="text-muted">会社の支払いプロセスが複雑な場合、NocoBaseプラグインを個別に購入するのは面倒かもしれません。そのため、プラグインバンドルを導入しました。プラグインバンドルには「ポイント」が含まれており、必要に応じてプラグインを選択し交換することができます。</p>
+                            <p class="text-muted">また、プラグインバンドルには割引が適用され、購入するポイントが多いほど割引率が高くなります。</p>
 
                             <div class="table-responsive bg-white">
                                 <table class="table mb-0 table-center commercial-table">
