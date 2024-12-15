@@ -435,7 +435,7 @@ export async function getSitemapLinks() {
 
   const tutorialLinks = items3.map((item: any) => {
     return {
-      url: `/en/blog/${item.slug}`,
+      url: `/en/tutorials/${item.slug}`,
       lastmod: item.updatedAt,
       links: [
         { lang: 'en-US', url: `/en/tutorials/${item.slug}` },
