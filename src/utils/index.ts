@@ -339,6 +339,15 @@ export async function getSitemapLinks() {
       ],
     },
     {
+      url: '/en/plugins-bundles',
+      links: [
+        { lang: 'en-US', url: `/en/plugins-bundles` },
+        { lang: 'zh-CN', url: `/cn/plugins-bundles` },
+        { lang: 'ja-JP', url: `/ja/plugins-bundles` }, // 日语链接
+        { lang: 'x-default', url: `/en/plugins-bundles`, },
+      ],
+    },
+    {
       url: '/en/commercial',
       links: [
         { lang: 'en-US', url: `/en/commercial` },
