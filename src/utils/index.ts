@@ -68,7 +68,7 @@ export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: 
   return { data, meta };
 }
 
-export async function listTutorialArticles(options?: {pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
+export async function listTutorialArticles(options?: { pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
   const { slug, serialsSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
   let url = `${baseURL}tutorialArticles:list?page=${page}&pageSize=${pageSize}&appends=serials&sort=serialsSort&token=${token}&filter[serials.status]=published&filter[status]=published`;
   if (slug) {
@@ -285,17 +285,30 @@ export async function getReleaseTag(slug?: string) {
 
 export async function getSitemapLinks() {
   const items1 = await fetch(`${baseURL}articleTags:list?sort=sort&paginate=false&token=${token}`)
-      .then(res => res.json())
-      .then(body => body.data);
+    .then(res => res.json())
+    .then(body => body.data);
   const items2 = await fetch(`${baseURL}articles:list?filter[status]=published&sort=-publishedAt&paginate=false&token=${token}`)
-      .then(res => res.json())
-      .then(body => body.data);
+    .then(res => res.json())
+    .then(body => body.data);
+  const items3 = await fetch(`${baseURL}tutorialArticles:list?filter[status]=published&sort=-publishedAt&paginate=false&token=${token}`)
+    .then(res => res.json())
+    .then(body => body.data);
   const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
   const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
   const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
+  const tutorialsLastUpdatedAt = await getLastUpdatedAt('tutorialArticles');
 
   // 基本的站点链接，添加日语版本
   const baseLinks = [
+    {
+      url: '/',
+      links: [
+        { lang: 'en-US', url: `/en/` },
+        { lang: 'zh-CN', url: `/cn/` },
+        { lang: 'ja-JP', url: `/ja/` }, // 日语链接
+        { lang: 'x-default', url: `/` },
+      ],
+    },
     {
       url: '/en/roadmap',
       lastmod: tasksLastUpdatedAt,
@@ -303,6 +316,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/roadmap` },
         { lang: 'zh-CN', url: `/cn/roadmap` },
         { lang: 'ja-JP', url: `/ja/roadmap` }, // 日语链接
+        { lang: 'x-default', url: `/en/roadmap` },
       ],
     },
     {
@@ -312,6 +326,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/plugins` },
         { lang: 'zh-CN', url: `/cn/plugins` },
         { lang: 'ja-JP', url: `/ja/plugins` }, // 日语链接
+        { lang: 'x-default', url: `/en/plugins` },
       ],
     },
     {
@@ -320,6 +335,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/plugins-commercial` },
         { lang: 'zh-CN', url: `/cn/plugins-commercial` },
         { lang: 'ja-JP', url: `/ja/plugins-commercial` }, // 日语链接
+        { lang: 'x-default', url: `/en/plugins-commercial`, },
       ],
     },
     {
@@ -328,6 +344,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/commercial` },
         { lang: 'zh-CN', url: `/cn/commercial` },
         { lang: 'ja-JP', url: `/ja/commercial` }, // 日语链接
+        { lang: 'x-default', url: `/en/commercial` },
       ],
     },
     {
@@ -336,6 +353,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/community` },
         { lang: 'zh-CN', url: `/cn/community` },
         { lang: 'ja-JP', url: `/ja/community` }, // 日语链接
+        { lang: 'x-default', url: `/en/community`, },
       ],
     },
     {
@@ -344,6 +362,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/contact` },
         { lang: 'zh-CN', url: `/cn/contact` },
         { lang: 'ja-JP', url: `/ja/contact` }, // 日语链接
+        { lang: 'x-default', url: `/en/contact`, },
       ],
     },
     {
@@ -352,6 +371,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/agreement` },
         { lang: 'zh-CN', url: `/cn/agreement` },
         { lang: 'ja-JP', url: `/ja/agreement` }, // 日语链接
+        { lang: 'x-default', url: `/en/agreement`, },
       ],
     },
     {
@@ -361,12 +381,23 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/blog` },
         { lang: 'zh-CN', url: `/cn/blog` },
         { lang: 'ja-JP', url: `/ja/blog` }, // 日语链接
+        { lang: 'x-default', url: `/en/blog`, },
+      ],
+    },
+    {
+      url: '/en/tutorials',
+      lastmod: tutorialsLastUpdatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/tutorials` },
+        { lang: 'zh-CN', url: `/cn/tutorials` },
+        { lang: 'ja-JP', url: `/ja/tutorials` }, // 日语链接
+        { lang: 'x-default', url: `/en/tutorials`, },
       ],
     },
   ];
 
   // 添加标签页的链接，支持日语
-  const tagLinks = await Promise.all(items1.map(async (item: any) => {
+  const tagLinks = await Promise.all(items1.filter((item: any) => item.slug).map(async (item: any) => {
     return {
       url: `/en/blog/tags/${item.slug}`,
       lastmod: item.updatedAt,
@@ -374,6 +405,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/blog/tags/${item.slug}` },
         { lang: 'zh-CN', url: `/cn/blog/tags/${item.slug}` },
         { lang: 'ja-JP', url: `/ja/blog/tags/${item.slug}` }, // 日语链接
+        { lang: 'x-default', url: `/en/blog/tags/${item.slug}` },
       ],
     };
   }));
@@ -387,9 +419,23 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/blog/${item.slug}` },
         { lang: 'zh-CN', url: `/cn/blog/${item.slug}` },
         { lang: 'ja-JP', url: `/ja/blog/${item.slug}` }, // 日语链接
+        { lang: 'x-default', url: `/en/blog/${item.slug}` },
       ],
     };
   });
 
-  return baseLinks.concat(tagLinks).concat(articleLinks);
+  const tutorialLinks = items3.map((item: any) => {
+    return {
+      url: `/en/blog/${item.slug}`,
+      lastmod: item.updatedAt,
+      links: [
+        { lang: 'en-US', url: `/en/tutorials/${item.slug}` },
+        { lang: 'zh-CN', url: `/cn/tutorials/${item.slug}` },
+        { lang: 'ja-JP', url: `/ja/tutorials/${item.slug}` }, // 日语链接
+        { lang: 'x-default', url: `/en/tutorials/${item.slug}` },
+      ],
+    };
+  });
+
+  return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
