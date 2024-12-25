@@ -46,10 +46,43 @@ export async function listTaskCategories() {
 }
 
 export async function listPluginCategories() {
-  const res = await fetch(`${baseURL}pluginCategories:list?pageSize=200&appends=plugins(sort=sort)&sort=sort&token=${token}`);
+  const res = await fetch(
+      `${baseURL}plugins_2025:list?pageSize=400&sort[]=sort&appends[]=category&filter={}&token=${token}`
+  );
   const { data } = await res.json() as { data: any[] };
-  return data;
+  // data 是插件列表，每个插件都带有 category 字段
+  // 下面将它们按照 category.id 分组，并返回和原来结构类似的结果
+  // 用 Map 来管理分组
+  const groupMap = new Map<number, any>();
+
+  for (const plugin of data) {
+    const cat = plugin.category;
+    if (!cat) {
+      // 如果 plugin 没有分类，就跳过或放到一个「无分类」分组里，看你业务需求
+      continue;
+    }
+
+    if (!groupMap.has(cat.id)) {
+      // 先在分组里放上分类的基础信息（包括中文标题等）
+      groupMap.set(cat.id, {
+        id: cat.id,
+        title: cat.title,
+        title_cn: cat.title_cn,
+        title_ja: cat.title_ja,
+        slug: cat.slug,
+        sort: cat.sort,
+        // 关键：一定要加上一个 plugins 数组用来存放该分类下所有插件
+        plugins: [],
+      });
+    }
+    // 把该插件放入对应分类的 plugins 列表里
+    groupMap.get(cat.id).plugins.push(plugin);
+  }
+
+  // 最后把 Map 转成原来那种数组结构
+  return Array.from(groupMap.values());
 }
+
 
 export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
   const { hideOnBlog, categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
@@ -295,7 +328,7 @@ export async function getSitemapLinks() {
     .then(body => body.data);
   const tasksLastUpdatedAt = await getTaskLastUpdatedAt();
   const articlesLastUpdatedAt = await getLastUpdatedAt('articles');
-  const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins');
+  const pluginsLastUpdatedAt = await getLastUpdatedAt('plugins_2025');
   const tutorialsLastUpdatedAt = await getLastUpdatedAt('tutorialArticles');
 
   // 基本的站点链接，添加日语版本
