@@ -24,71 +24,121 @@ const page = await getPage("plugins");
 const title = page.title;
 const description = page.description;
 const keywords = page.keywords;
----
 
+// 1. 将所有插件先扁平化收集
+const allPlugins = data.flatMap((group) => group.plugins);
+
+// 2. 拆分为 newly / coming / normal 三类
+const newlyPlugins = allPlugins.filter((p) => !!p.newly);
+const comingPlugins = allPlugins.filter((p) => !!p.coming);
+
+// 3. 从原分组里移除 newly 和 coming 的插件
+//    这样它们就不会和后面的 normal 分组重复出现
+data.forEach((group) => {
+  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming);
+});
+
+// 4. 去掉空分组（如果一个分组所有插件都是 newly 或 coming，就没必要再显示空分组标题）
+const normalGroups = data.filter((group) => group.plugins.length > 0);
+
+// 5. 组织一个合并后的分组数组，先 newly，后 coming，最后普通分组
+const finalGroups = [];
+
+// a) newly launched
+if (newlyPlugins.length > 0) {
+  finalGroups.push({
+    id: 'newly-launched',
+    title: 'Newly launched',
+    plugins: newlyPlugins,
+  });
+}
+
+// b) coming soon
+if (comingPlugins.length > 0) {
+  finalGroups.push({
+    id: 'coming-soon',
+    title: 'Coming soon',
+    plugins: comingPlugins,
+  });
+}
+
+// c) normal
+finalGroups.push(...normalGroups);
+
+---
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/en/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
+    <a href="/en/contact" class="btn btn-outline-primary">
+      Inquire to Buy
+      <i class="uil uil-angle-right-b"></i>
+    </a>
   </PageHeader>
 
   <!-- Section Start -->
   <section class="section">
     <div class="container">
       {
-        data
-          .filter((group) => group.plugins.length > 0)
-          .map((group) => (
-            <>
-              <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
-              <div class="row pb-4">
-                {group.plugins.map((plugin: any) => (
-                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                    <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
-                      <div class="card-body">
-                        <div class="mt-2 plugin-box">
-                          <h6 class="card-title mb-1">{plugin.name}</h6>
-                          <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
-                          <p class="text-muted mb-2 plugin-overview">{plugin.description}
-                            {plugin.docs && 
-                                <a href={plugin.docs} target="_blank" style="font-size: 14px; ">Details</a>
-                            }
-                          </p>
-                          <div class="plugin-footer">
-                            {plugin.isComingSoon ? (
-                              <span class="badge bg-soft-info plugin-type">
+        finalGroups
+            .filter((group) => group.plugins.length > 0)
+            .map((group) => (
+                <>
+                  <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
+                  <div class="row pb-4">
+                    {group.plugins.map((plugin: any) => (
+                        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                          <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                              <div class="mt-2 plugin-box">
+                                <h6 class="card-title mb-1">{plugin.name}</h6>
+                                <div class="plugin-developer text-muted mb-3">
+                                  By <span>{plugin.developer || 'NocoBase'}</span>
+                                </div>
+                                <p class="text-muted mb-2 plugin-overview">
+                                  {plugin.description}
+                                  {plugin.docs &&
+                                      <a href={plugin.docs} target="_blank" style="font-size: 14px;">Details</a>
+                                  }
+                                </p>
+                                <div class="plugin-footer">
+                                  {plugin.coming ? (
+                                      <span class="badge bg-soft-info plugin-type">
                                 Coming soon
                               </span>
-                            ) : plugin.commercial ? (
-
-                              <h6 class="text-primary mb-0">
-                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                                <a href="/en/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a> 
-                                <span class="text-muted">/</span>
-                                <span class="text-muted">${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}</span>
-                              </h6>
-                              <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                                <a class="text-muted" href="/en/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
-                                <span class="text-muted">/</span>
-                                <span class="text-muted">${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}</span> 
-                              </h6>
-
-                            ) : (
-                              <span class="badge bg-soft-primary plugin-type">
+                                  ) : plugin.commercial ? (
+                                      <>
+                                        <h6 class="text-primary mb-0">
+                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br/>
+                                          <a href="/en/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                          <span class="text-muted">/</span>
+                                          <span class="text-muted">
+                                    ${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}
+                                  </span>
+                                        </h6>
+                                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br/>
+                                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                          <span class="text-muted">/</span>
+                                          <span class="text-muted">
+                                    ${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}
+                                  </span>
+                                        </h6>
+                                      </>
+                                  ) : (
+                                      <span class="badge bg-soft-primary plugin-type">
                                 Free
                               </span>
-                            )}
+                                  )}
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </>
-          ))
-      }
-    </div><!--end container-->
-  </section><!--end section-->
-</Layout><!--end section-->
+                </>
+            ))
+        }
+      </div><!--end container-->
+    </section><!--end section-->
+  </Layout><!--end section-->
