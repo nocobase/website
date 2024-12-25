@@ -46,14 +46,14 @@ const keywords = page.keywords;
                   .filter((plugin: any) => plugin.commercial)
                   .map((plugin: any) => (
                     <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                      <div title={plugin.title} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                      <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
                         <div class="card-body">
                           <div class="mt-2 plugin-box">
-                            <h6 class="card-title mb-1">{plugin.title}</h6>
+                            <h6 class="card-title mb-1">{plugin.name}</h6>
                             <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
                             <p class="text-muted mb-2 plugin-overview">{plugin.description}
-                              {plugin.doc &&
-                                <a href={plugin.doc} target="_blank" style="font-size: 14px; ">Details</a>
+                              {plugin.docs &&
+                                <a href={plugin.docs} target="_blank" style="font-size: 14px; ">Details</a>
                               }
                             </p>
                             <div class="plugin-footer">
