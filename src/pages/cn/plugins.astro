@@ -34,7 +34,7 @@ const comingPlugins = allPlugins.filter((p) => !!p.coming);
 
 // 3. 从原有分类中移除这两类插件，避免重复
 data.forEach((group) => {
-  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming);
+  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
 // 4. 去掉空分组（若某分类的插件都被移走了，就不显示）
