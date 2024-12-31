@@ -1,7 +1,7 @@
 ---
 import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { getLastUpdatedAt, getPage, listTutorialArticles } from "../../../utils";
+import { getPage, listTutorialArticles } from "../../../utils";
 
 const page = await getPage("tutorials");
 
@@ -10,64 +10,353 @@ const description = page.description_cn || page.description;
 const keywords = page.keywords_cn || page.keywords;
 const tutorialsData = await listTutorialArticles({ pageSize: 100 });
 
-// Group tutorials by series dynamically
+// 动态按系列分组教程
 const tutorials = tutorialsData.data.reduce((acc, item) => {
-  const seriesTitle = item.serials?.title_cn || item.serials?.title || 'Uncategorized';
+  const seriesTitle = item.serials?.title_cn || item.serials?.title || '未分类';
   const seriesDescription = item.serials?.description_cn || item.serials?.description || "";
 
-  // Initialize the series if not present in the accumulator
+  // 如果累加器中不存在该系列，则初始化
   if (!acc[seriesTitle]) {
     acc[seriesTitle] = {
       description: seriesDescription,
       articles: [],
+      scenarios: new Map(), // 存储该系列下的唯一场景
     };
   }
 
-  // Add the tutorial to the respective series
+  // 将教程添加到对应系列
   acc[seriesTitle].articles.push({
+    id: item.id,
     title: item.title_cn || item.title,
     link: `/cn/tutorials/${item.slug}`,
     description: item.description_cn || item.description || "",
+    knowledge_tags: item.knowledge_tag,
+    scenario_tags: item.scenario_tags,
+    series: seriesTitle, // 用于过滤
+  });
+
+  // 收集场景
+  item.scenario_tags.forEach(tag => {
+    if (!acc[seriesTitle].scenarios.has(tag.id)) {
+      acc[seriesTitle].scenarios.set(tag.id, tag);
+    }
   });
 
   return acc;
 }, {});
 
-// Convert the tutorials object into an array of series objects for easier mapping
+// 将教程对象转换为数组，便于映射
 const tutorialSeries = Object.entries(tutorials).map(([seriesTitle, seriesData]) => ({
   seriesTitle,
   description: seriesData.description,
   articles: seriesData.articles,
+  scenarios: Array.from(seriesData.scenarios.values()),
 }));
+
+// 收集所有唯一的知识点
+const knowledgePointsMap = new Map();
+
+tutorialsData.data.forEach(item => {
+  item.knowledge_tag.forEach(tag => {
+    if (!knowledgePointsMap.has(tag.id)) {
+      knowledgePointsMap.set(tag.id, tag);
+    }
+  });
+});
+
+const knowledgePoints = Array.from(knowledgePointsMap.values());
+
+// 收集所有唯一的全局场景标签（不包括系列内的场景）
+const globalScenariosMap = new Map();
+
+tutorialsData.data.forEach(item => {
+  item.scenario_tags.forEach(tag => {
+    if (!tag.series_related && !globalScenariosMap.has(tag.id)) { // 假设有一个字段标识是否属于系列
+      globalScenariosMap.set(tag.id, tag);
+    }
+  });
+});
+
+const globalScenarios = Array.from(globalScenariosMap.values());
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <div class="card shadow border-0 rounded">
-            <div class="card-body">
-              {tutorialSeries.map(series => (
-                  <>
-                    <h5 class="card-title">{series.seriesTitle}</h5>
-                    {series.description && <p class="text-muted">{series.description}</p>}
-                    <ul class="list-unstyled text-muted mb-4 pb-4">
-                      {series.articles.map(article => (
-                          <li>
-                            <i data-feather="arrow-right" class="fea icon-sm me-2"></i>
-                            <a href={article.link} target="_blank">{article.title}</a>
-                            {article.description && ` - ${article.description}`}
-                          </li>
-                      ))}
-                    </ul>
-                  </>
-                ))}
-            </div>
-          </div>
-        </div>
+      <!-- 搜索框和切换按钮 -->
+      <div class="tutorials-search-and-toggle">
+        <input type="text" id="searchInput" class="tutorials-search-bar" placeholder="搜索标题或标签..." />
+        <button id="toggleButton" class="tutorials-toggle-button">切换到知识点</button>
       </div>
-    </div>
-  </section>
-</Layout>
+
+      <div class="tutorials-content">
+        <!-- 左侧面板 -->
+        <div class="tutorials-left-panel">
+          <!-- 系列列表 -->
+          <ul id="leftList" class="tutorials-series-list">
+
+            <h5 style="color: gray">系列:</h5>
+            {tutorialSeries.map(series => (
+                <li class="tutorials-series-item">
+                  <a href="#" class="tutorials-series-link" data-filter-type="series" data-filter-value={series.seriesTitle}>
+                    {series.seriesTitle} &gt;
+                  </a>
+                  {series.description && <p class="tutorials-series-description">{series.description}</p>}
+                  <!-- 系列下的场景标签 -->
+                  <div class="tutorials-scenario-keywords">
+                    {series.scenarios.map(scenario => (
+                        <a href="#" class="tutorials-scenario-tag tutorials-tag" data-filter-type="scenario" data-filter-value={scenario.title_cn || scenario.title}>
+                          {scenario.title_cn || scenario.title}
+                        </a>
+                    ))}
+                  </div>
+                </li>
+              ))}
+              </ul>
+
+              <!-- 全局场景标签列表 -->
+              <h5 style="color: gray">场景:</h5>
+              <ul id="globalScenarioList" class="tutorials-scenario-list">
+                {globalScenarios.map(scenario => (
+                    <li class="tutorials-scenario-item">
+                      <a href="#" class="tutorials-scenario-link" data-filter-type="scenario" data-filter-value={scenario.title_cn || scenario.title}>
+                        {scenario.title_cn || scenario.title}
+                      </a>
+                    </li>
+                ))}
+              </ul>
+
+              <!-- 知识点列表（初始隐藏） -->
+              <ul id="knowledgeList" class="tutorials-knowledge-list" style="display: none;">
+                {knowledgePoints.map(knowledge => (
+                    <li class="tutorials-knowledge-item">
+                      <a href="#" class="tutorials-knowledge-link" data-filter-type="knowledge" data-filter-value={knowledge.title_cn || knowledge.title}>
+                        {knowledge.title_cn || knowledge.title}
+                      </a>
+                    </li>
+                ))}
+              </ul>
+              </div>
+
+              <!-- 分隔线 -->
+              <div class="tutorials-separator"></div>
+
+              <!-- 右侧面板：文章列表 -->
+              <div class="tutorials-right-panel">
+                {tutorialSeries.map(series => (
+                    <div class="tutorials-series-articles">
+                      {series.articles.map(article => (
+                          <div class="tutorials-article" data-series={series.seriesTitle.toLowerCase()} data-knowledge={article.knowledge_tags.map(tag => (tag.title_cn || tag.title).toLowerCase()).join(' ')} data-scenario={article.scenario_tags.map(tag => (tag.title_cn || tag.title).toLowerCase()).join(' ')}>
+                            <a href={article.link} class="tutorials-article-title">{article.title}</a>
+                            {article.description && <p class="tutorials-article-description">{article.description}</p>}
+                            <div class="tutorials-tags">
+                              {article.knowledge_tags.map(tag => (
+                                  tag.url ? (
+                                      <a href={tag.url} class="tutorials-tag" data-filter-type="knowledge" data-filter-value={tag.title_cn || tag.title}>{tag.title_cn || tag.title}</a>
+                                  ) : (
+                                      <a href="#" class="tutorials-tag" data-filter-type="knowledge" data-filter-value={tag.title_cn || tag.title}>{tag.title_cn || tag.title}</a>
+                                  )
+                              ))}
+                              {article.scenario_tags.map(tag => (
+                                  tag.url ? (
+                                      <a href={tag.url} class="tutorials-tag" data-filter-type="scenario" data-filter-value={tag.title_cn || tag.title}>{tag.title_cn || tag.title}</a>
+                                  ) : (
+                                      <a href="#" class="tutorials-tag" data-filter-type="scenario" data-filter-value={tag.title_cn || tag.title}>{tag.title_cn || tag.title}</a>
+                                  )
+                              ))}
+                            </div>
+                          </div>
+                      ))}
+                    </div>
+                  ))}
+                  </div>
+                  </div>
+                  </div>
+                  </section>
+
+                  <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        const searchInput = document.getElementById('searchInput');
+                        const leftList = document.getElementById('leftList');
+                        const knowledgeList = document.getElementById('knowledgeList');
+                        const globalScenarioList = document.getElementById('globalScenarioList');
+                        const toggleButton = document.getElementById('toggleButton');
+                        const articles = document.querySelectorAll('.tutorials-article');
+                        const seriesLinks = document.querySelectorAll('.tutorials-series-link');
+                        const knowledgeLinks = document.querySelectorAll('.tutorials-knowledge-link');
+                        const scenarioLinks = document.querySelectorAll('.tutorials-scenario-link');
+                        const scenarioTags = document.querySelectorAll('.tutorials-scenario-tag');
+                        const tagLinks = document.querySelectorAll('.tutorials-tag'); // 包含 .tutorials-scenario-tag
+
+                        // 使用集合来存储多个激活的过滤器
+                        const activeFilters = {
+                          series: new Set(),
+                          knowledge: new Set(),
+                          scenario: new Set()
+                        };
+
+                        // 搜索功能
+                        searchInput.addEventListener('input', function() {
+                          filterArticles();
+                        });
+
+                        // 切换按钮功能
+                        toggleButton.addEventListener('click', function() {
+                          const isSeriesVisible = leftList.style.display !== 'none';
+                          if (isSeriesVisible) {
+                            leftList.style.display = 'none';
+                            globalScenarioList.style.display = 'none';
+                            knowledgeList.style.display = 'block';
+                            toggleButton.textContent = '切换到场景';
+                            toggleButton.classList.add('active');
+                          } else {
+                            leftList.style.display = 'block';
+                            globalScenarioList.style.display = 'block';
+                            knowledgeList.style.display = 'none';
+                            toggleButton.textContent = '切换到知识点';
+                            toggleButton.classList.remove('active');
+                          }
+                          // 清空所有激活的过滤器
+                          activeFilters.series.clear();
+                          activeFilters.knowledge.clear();
+                          activeFilters.scenario.clear();
+                          // 移除所有激活样式
+                          updateActiveStyles();
+                          // 清空搜索输入
+                          searchInput.value = '';
+                          filterArticles();
+                        });
+
+                        // 点击系列、知识点或场景标签进行过滤
+                        function handleFilterClick(event) {
+                          event.preventDefault();
+                          const filterType = event.target.getAttribute('data-filter-type');
+                          const filterValue = event.target.getAttribute('data-filter-value'); // 已经是小写
+
+                          if (filterType && filterValue) {
+                            if (filterType === 'series') {
+                              if (activeFilters.series.has(filterValue)) {
+                                activeFilters.series.delete(filterValue);
+                              } else {
+                                activeFilters.series.add(filterValue);
+                              }
+                            } else if (filterType === 'knowledge') {
+                              if (activeFilters.knowledge.has(filterValue)) {
+                                activeFilters.knowledge.delete(filterValue);
+                              } else {
+                                activeFilters.knowledge.add(filterValue);
+                              }
+                            } else if (filterType === 'scenario') {
+                              if (activeFilters.scenario.has(filterValue)) {
+                                activeFilters.scenario.delete(filterValue);
+                              } else {
+                                activeFilters.scenario.add(filterValue);
+                              }
+                            }
+                            // 更新激活样式
+                            updateActiveStyles();
+                            // 过滤文章
+                            filterArticles();
+                          }
+                        }
+
+                        function updateActiveStyles() {
+                          // 更新系列链接的激活状态
+                          seriesLinks.forEach(link => {
+                            const value = link.getAttribute('data-filter-value');
+                            if (activeFilters.series.has(value)) {
+                              link.classList.add('active');
+                            } else {
+                              link.classList.remove('active');
+                            }
+                          });
+
+                          // 更新知识点链接的激活状态
+                          knowledgeLinks.forEach(link => {
+                            const value = link.getAttribute('data-filter-value');
+                            if (activeFilters.knowledge.has(value)) {
+                              link.classList.add('active');
+                            } else {
+                              link.classList.remove('active');
+                            }
+                          });
+
+                          // 更新场景链接的激活状态
+                          scenarioLinks.forEach(link => {
+                            const value = link.getAttribute('data-filter-value');
+                            if (activeFilters.scenario.has(value)) {
+                              link.classList.add('active');
+                            } else {
+                              link.classList.remove('active');
+                            }
+                          });
+
+                          // 更新右侧文章标签的激活状态
+                          tagLinks.forEach(link => {
+                            const filterType = link.getAttribute('data-filter-type');
+                            const value = link.getAttribute('data-filter-value');
+                            if (
+                                (filterType === 'knowledge' && activeFilters.knowledge.has(value)) ||
+                                (filterType === 'scenario' && activeFilters.scenario.has(value))
+                            ) {
+                              link.classList.add('active');
+                            } else {
+                              link.classList.remove('active');
+                            }
+                          });
+                        }
+
+                        seriesLinks.forEach(link => link.addEventListener('click', handleFilterClick));
+                        knowledgeLinks.forEach(link => link.addEventListener('click', handleFilterClick));
+                        scenarioLinks.forEach(link => link.addEventListener('click', handleFilterClick));
+                        tagLinks.forEach(link => link.addEventListener('click', handleFilterClick)); // 包含 .tutorials-scenario-tag
+
+                        // 过滤文章函数
+                        function filterArticles() {
+                          const searchTerm = searchInput.value.toLowerCase();
+
+                          articles.forEach(article => {
+                            const title = article.querySelector('.tutorials-article-title').textContent.toLowerCase();
+                            const series = article.getAttribute('data-series'); // 已经是小写
+                            const tags = (article.getAttribute('data-knowledge') + ' ' + article.getAttribute('data-scenario')).toLowerCase();
+
+                            // 将系列也包含在搜索条件中
+                            const allSearchableText = `${title} ${series} ${tags}`;
+
+                            // 判断是否匹配搜索词
+                            const matchesSearch = allSearchableText.includes(searchTerm);
+
+                            // 判断是否匹配系列过滤器
+                            let matchesSeries = true;
+                            if (activeFilters.series.size > 0) {
+                              matchesSeries = activeFilters.series.has(series);
+                            }
+
+                            // 判断是否匹配知识点过滤器
+                            let matchesKnowledge = true;
+                            if (activeFilters.knowledge.size > 0) {
+                              matchesKnowledge = Array.from(activeFilters.knowledge).some(filter => tags.includes(filter));
+                            }
+
+                            // 判断是否匹配场景过滤器
+                            let matchesScenario = true;
+                            if (activeFilters.scenario.size > 0) {
+                              matchesScenario = Array.from(activeFilters.scenario).some(filter => tags.includes(filter));
+                            }
+
+                            // 只有同时匹配搜索和所有过滤条件的文章才显示
+                            if (matchesSearch && matchesSeries && matchesKnowledge && matchesScenario) {
+                              article.style.display = '';
+                            } else {
+                              article.style.display = 'none';
+                            }
+                          });
+                        }
+
+                        // 初始化时显示所有文章
+                        filterArticles();
+                      });
+                      </script>
+
+                  </Layout>
