@@ -5,41 +5,29 @@ import { getPage, listTutorialArticles } from "../../../utils";
 
 const page = await getPage("tutorials");
 
-const title = page.title || page.title_en;
-const description = page.description || page.description_en;
-const keywords = page.keywords || page.keywords_en;
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
 const tutorialsData = await listTutorialArticles({ pageSize: 100 });
 
-// Dynamically group tutorials by series
+// Group tutorials by series dynamically
 const tutorials = tutorialsData.data.reduce((acc, item) => {
-  const seriesTitle = item.serials?.title_en || item.serials?.title || 'Uncategorized';
-  const seriesDescription = item.serials?.description_en || item.serials?.description || "";
+  const seriesTitle = item.serials?.title || 'Uncategorized';
+  const seriesDescription = item.serials?.description || "";
 
   // Initialize the series if not present in the accumulator
   if (!acc[seriesTitle]) {
     acc[seriesTitle] = {
       description: seriesDescription,
       articles: [],
-      scenarios: new Map(), // Store unique scenarios under the series
     };
   }
 
   // Add the tutorial to the respective series
   acc[seriesTitle].articles.push({
-    id: item.id,
-    title: item.title_en || item.title,
-    link: `/en/tutorials/${item.slug}`,
-    description: item.description_en || item.description || "",
-    knowledge_tags: item.knowledge_tag,
-    scenario_tags: item.scenario_tags,
-    series: seriesTitle, // For filtering
-  });
-
-  // Collect scenarios
-  item.scenario_tags.forEach(tag => {
-    if (!acc[seriesTitle].scenarios.has(tag.id)) {
-      acc[seriesTitle].scenarios.set(tag.id, tag);
-    }
+    title: item.title,
+    link: `/en/tutorials/${item.slug}`, //${item.serials?.slug}/
+    description: item.description || "",
   });
 
   return acc;
@@ -50,313 +38,36 @@ const tutorialSeries = Object.entries(tutorials).map(([seriesTitle, seriesData])
   seriesTitle,
   description: seriesData.description,
   articles: seriesData.articles,
-  scenarios: Array.from(seriesData.scenarios.values()),
 }));
-
-// Collect all unique knowledge points
-const knowledgePointsMap = new Map();
-
-tutorialsData.data.forEach(item => {
-  item.knowledge_tag.forEach(tag => {
-    if (!knowledgePointsMap.has(tag.id)) {
-      knowledgePointsMap.set(tag.id, tag);
-    }
-  });
-});
-
-const knowledgePoints = Array.from(knowledgePointsMap.values());
-
-// Collect all unique global scenario tags (excluding series-related scenarios)
-const globalScenariosMap = new Map();
-
-tutorialsData.data.forEach(item => {
-  item.scenario_tags.forEach(tag => {
-    if (!tag.series_related && !globalScenariosMap.has(tag.id)) { // Assume a field indicates if it belongs to a series
-      globalScenariosMap.set(tag.id, tag);
-    }
-  });
-});
-
-const globalScenarios = Array.from(globalScenariosMap.values());
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
   <section class="section">
     <div class="container">
-      <!-- Search bar and toggle button -->
-      <div class="tutorials-search-and-toggle">
-        <input type="text" id="searchInput" class="tutorials-search-bar" placeholder="Search by title or tags..." />
-        <button id="toggleButton" class="tutorials-toggle-button">Toggle to Knowledge Points</button>
-      </div>
-
-      <div class="tutorials-content">
-        <!-- Left Panel -->
-        <div class="tutorials-left-panel">
-          <!-- Series List -->
-          <ul id="leftList" class="tutorials-series-list">
-
-            <h5 style="color: gray">Series:</h5>
-            {tutorialSeries.map(series => (
-                <li class="tutorials-series-item">
-                  <a href="#" class="tutorials-series-link" data-filter-type="series" data-filter-value={series.seriesTitle}>
-                    {series.seriesTitle} &gt;
-                  </a>
-                  {series.description && <p class="tutorials-series-description">{series.description}</p>}
-                  <!-- Scenario Tags under Series -->
-                  <div class="tutorials-scenario-keywords">
-                    {series.scenarios.map(scenario => (
-                        <a href="#" class="tutorials-scenario-tag tutorials-tag" data-filter-type="scenario" data-filter-value={scenario.title_en || scenario.title}>
-                          {scenario.title_en || scenario.title}
-                        </a>
-                    ))}
-                  </div>
-                </li>
-              ))}
-              </ul>
-
-              <!-- Global Scenario Tags List -->
-              <h5 style="color: gray">Scenarios:</h5>
-              <ul id="globalScenarioList" class="tutorials-scenario-list">
-                {globalScenarios.map(scenario => (
-                    <li class="tutorials-scenario-item">
-                      <a href="#" class="tutorials-scenario-link" data-filter-type="scenario" data-filter-value={scenario.title_en || scenario.title}>
-                        {scenario.title_en || scenario.title}
-                      </a>
-                    </li>
-                ))}
-              </ul>
-
-              <!-- Knowledge Points List (Initially Hidden) -->
-              <ul id="knowledgeList" class="tutorials-knowledge-list" style="display: none;">
-                {knowledgePoints.map(knowledge => (
-                    <li class="tutorials-knowledge-item">
-                      <a href="#" class="tutorials-knowledge-link" data-filter-type="knowledge" data-filter-value={knowledge.title_en || knowledge.title}>
-                        {knowledge.title_en || knowledge.title}
-                      </a>
-                    </li>
-                ))}
-              </ul>
-              </div>
-
-              <!-- Separator -->
-              <div class="tutorials-separator"></div>
-
-              <!-- Right Panel: Articles List -->
-              <div class="tutorials-right-panel">
-                {tutorialSeries.map(series => (
-                    <div class="tutorials-series-articles">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body">
+              {tutorialSeries.map(series => (
+                  <>
+                    <h5 class="card-title">{series.seriesTitle}</h5>
+                    {series.description && <p class="text-muted">{series.description}</p>}
+                    <ul class="list-unstyled text-muted mb-4 pb-4">
                       {series.articles.map(article => (
-                          <div class="tutorials-article" data-series={series.seriesTitle.toLowerCase()} data-knowledge={article.knowledge_tags.map(tag => (tag.title_en || tag.title).toLowerCase()).join(' ')} data-scenario={article.scenario_tags.map(tag => (tag.title_en || tag.title).toLowerCase()).join(' ')}>
-                            <a href={article.link} class="tutorials-article-title">{article.title}</a>
-                            {article.description && <p class="tutorials-article-description">{article.description}</p>}
-                            <div class="tutorials-tags">
-                              {article.knowledge_tags.map(tag => (
-                                  tag.url ? (
-                                      <a href={tag.url} class="tutorials-tag" data-filter-type="knowledge" data-filter-value={tag.title_en || tag.title}>{tag.title_en || tag.title}</a>
-                                  ) : (
-                                      <a href="#" class="tutorials-tag" data-filter-type="knowledge" data-filter-value={tag.title_en || tag.title}>{tag.title_en || tag.title}</a>
-                                  )
-                              ))}
-                              {article.scenario_tags.map(tag => (
-                                  tag.url ? (
-                                      <a href={tag.url} class="tutorials-tag" data-filter-type="scenario" data-filter-value={tag.title_en || tag.title}>{tag.title_en || tag.title}</a>
-                                  ) : (
-                                      <a href="#" class="tutorials-tag" data-filter-type="scenario" data-filter-value={tag.title_en || tag.title}>{tag.title_en || tag.title}</a>
-                                  )
-                              ))}
-                            </div>
-                          </div>
+                          <li>
+                            <i data-feather="arrow-right" class="fea icon-sm me-2"></i>
+                            <a href={article.link} target="_blank">{article.title}</a>
+                            {article.description && ` - ${article.description}`}
+                          </li>
                       ))}
-                    </div>
-                  ))}
-                  </div>
-                  </div>
-                  </div>
-                  </section>
-
-                  <script>
-                      document.addEventListener('DOMContentLoaded', function() {
-                        const searchInput = document.getElementById('searchInput');
-                        const leftList = document.getElementById('leftList');
-                        const knowledgeList = document.getElementById('knowledgeList');
-                        const globalScenarioList = document.getElementById('globalScenarioList');
-                        const toggleButton = document.getElementById('toggleButton');
-                        const articles = document.querySelectorAll('.tutorials-article');
-                        const seriesLinks = document.querySelectorAll('.tutorials-series-link');
-                        const knowledgeLinks = document.querySelectorAll('.tutorials-knowledge-link');
-                        const scenarioLinks = document.querySelectorAll('.tutorials-scenario-link');
-                        const scenarioTags = document.querySelectorAll('.tutorials-scenario-tag');
-                        const tagLinks = document.querySelectorAll('.tutorials-tag'); // Includes .tutorials-scenario-tag
-
-                        // Use sets to store multiple active filters
-                        const activeFilters = {
-                          series: new Set(),
-                          knowledge: new Set(),
-                          scenario: new Set()
-                        };
-
-                        // Search functionality
-                        searchInput.addEventListener('input', function() {
-                          filterArticles();
-                        });
-
-                        // Toggle button functionality
-                        toggleButton.addEventListener('click', function() {
-                          const isSeriesVisible = leftList.style.display !== 'none';
-                          if (isSeriesVisible) {
-                            leftList.style.display = 'none';
-                            globalScenarioList.style.display = 'none';
-                            knowledgeList.style.display = 'block';
-                            toggleButton.textContent = 'Toggle to Scenarios';
-                            toggleButton.classList.add('active');
-                          } else {
-                            leftList.style.display = 'block';
-                            globalScenarioList.style.display = 'block';
-                            knowledgeList.style.display = 'none';
-                            toggleButton.textContent = 'Toggle to Knowledge Points';
-                            toggleButton.classList.remove('active');
-                          }
-                          // Clear all active filters
-                          activeFilters.series.clear();
-                          activeFilters.knowledge.clear();
-                          activeFilters.scenario.clear();
-                          // Remove all active styles
-                          updateActiveStyles();
-                          // Clear search input
-                          searchInput.value = '';
-                          filterArticles();
-                        });
-
-                        // Handle filter clicks for series, knowledge points, and scenarios
-                        function handleFilterClick(event) {
-                          event.preventDefault();
-                          const filterType = event.target.getAttribute('data-filter-type');
-                          const filterValue = event.target.getAttribute('data-filter-value'); // Already in lowercase
-
-                          if (filterType && filterValue) {
-                            if (filterType === 'series') {
-                              if (activeFilters.series.has(filterValue)) {
-                                activeFilters.series.delete(filterValue);
-                              } else {
-                                activeFilters.series.add(filterValue);
-                              }
-                            } else if (filterType === 'knowledge') {
-                              if (activeFilters.knowledge.has(filterValue)) {
-                                activeFilters.knowledge.delete(filterValue);
-                              } else {
-                                activeFilters.knowledge.add(filterValue);
-                              }
-                            } else if (filterType === 'scenario') {
-                              if (activeFilters.scenario.has(filterValue)) {
-                                activeFilters.scenario.delete(filterValue);
-                              } else {
-                                activeFilters.scenario.add(filterValue);
-                              }
-                            }
-                            // Update active styles
-                            updateActiveStyles();
-                            // Filter articles
-                            filterArticles();
-                          }
-                        }
-
-                        function updateActiveStyles() {
-                          // Update series links' active state
-                          seriesLinks.forEach(link => {
-                            const value = link.getAttribute('data-filter-value');
-                            if (activeFilters.series.has(value)) {
-                              link.classList.add('active');
-                            } else {
-                              link.classList.remove('active');
-                            }
-                          });
-
-                          // Update knowledge links' active state
-                          knowledgeLinks.forEach(link => {
-                            const value = link.getAttribute('data-filter-value');
-                            if (activeFilters.knowledge.has(value)) {
-                              link.classList.add('active');
-                            } else {
-                              link.classList.remove('active');
-                            }
-                          });
-
-                          // Update scenario links' active state
-                          scenarioLinks.forEach(link => {
-                            const value = link.getAttribute('data-filter-value');
-                            if (activeFilters.scenario.has(value)) {
-                              link.classList.add('active');
-                            } else {
-                              link.classList.remove('active');
-                            }
-                          });
-
-                          // Update right panel article tags' active state
-                          tagLinks.forEach(link => {
-                            const filterType = link.getAttribute('data-filter-type');
-                            const value = link.getAttribute('data-filter-value');
-                            if (
-                                (filterType === 'knowledge' && activeFilters.knowledge.has(value)) ||
-                                (filterType === 'scenario' && activeFilters.scenario.has(value))
-                            ) {
-                              link.classList.add('active');
-                            } else {
-                              link.classList.remove('active');
-                            }
-                          });
-                        }
-
-                        seriesLinks.forEach(link => link.addEventListener('click', handleFilterClick));
-                        knowledgeLinks.forEach(link => link.addEventListener('click', handleFilterClick));
-                        scenarioLinks.forEach(link => link.addEventListener('click', handleFilterClick));
-                        tagLinks.forEach(link => link.addEventListener('click', handleFilterClick)); // Includes .tutorials-scenario-tag
-
-                        // Function to filter articles
-                        function filterArticles() {
-                          const searchTerm = searchInput.value.toLowerCase();
-
-                          articles.forEach(article => {
-                            const title = article.querySelector('.tutorials-article-title').textContent.toLowerCase();
-                            const series = article.getAttribute('data-series'); // Already in lowercase
-                            const tags = (article.getAttribute('data-knowledge') + ' ' + article.getAttribute('data-scenario')).toLowerCase();
-
-                            // Include series in the searchable text
-                            const allSearchableText = `${title} ${series} ${tags}`;
-
-                            // Check if it matches the search term
-                            const matchesSearch = allSearchableText.includes(searchTerm);
-
-                            // Check if it matches series filters
-                            let matchesSeries = true;
-                            if (activeFilters.series.size > 0) {
-                              matchesSeries = activeFilters.series.has(series);
-                            }
-
-                            // Check if it matches knowledge filters
-                            let matchesKnowledge = true;
-                            if (activeFilters.knowledge.size > 0) {
-                              matchesKnowledge = Array.from(activeFilters.knowledge).some(filter => tags.includes(filter));
-                            }
-
-                            // Check if it matches scenario filters
-                            let matchesScenario = true;
-                            if (activeFilters.scenario.size > 0) {
-                              matchesScenario = Array.from(activeFilters.scenario).some(filter => tags.includes(filter));
-                            }
-
-                            // Only display the article if it matches search and all filter conditions
-                            if (matchesSearch && matchesSeries && matchesKnowledge && matchesScenario) {
-                              article.style.display = '';
-                            } else {
-                              article.style.display = 'none';
-                            }
-                          });
-                        }
-
-                        // Initialize by displaying all articles
-                        filterArticles();
-                      });
-                      </script>
-
-                  </Layout>
+                    </ul>
+                  </>
+                ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
