@@ -103,7 +103,7 @@ export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: 
 
 export async function listTutorialArticles(options?: { pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
   const { slug, serialsSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
-  let url = `${baseURL}tutorialArticles:list?page=${page}&pageSize=${pageSize}&appends=serials&sort=serialsSort&token=${token}&filter[serials.status]=published&filter[status]=published`;
+  let url = `${baseURL}tutorialArticles:list?page=${page}&pageSize=${pageSize}&appends=serials,scenario_tags,knowledge_tag&sort=serialsSort&token=${token}&filter[serials.status]=published&filter[status]=published`;
   if (slug) {
     url += `&slug=${slug}`;
   }
