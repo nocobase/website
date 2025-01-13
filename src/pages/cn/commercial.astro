@@ -12,5 +12,711 @@ const keywords = page.keywords_cn || page.keywords;
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
-  <Fragment set:html={page.content_cn || page.content} />
+  <!-- Which Edition Start -->
+  <section class="section pb-0" id="experience">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">选择哪个版本</h4>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-12 mt-4 pt-2">
+          <div class="timeline-page position-relative">
+            <div class="timeline-item">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>社区版，免费</h5>
+                    <small class="text-muted mb-0">大多数用户的选择</small>
+                  </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">当你需要</h6>
+                    <ul class="text-muted">
+                      <li>一个无代码开发平台作为团队的基础设施，开发业务系统和内部工具</li>
+                      <li>拥有全部源代码，私有部署，完全掌控</li>
+                      <li>具备完整、丰富的能力，可以满足大部分需求</li>
+                      <li>不要被这个平台绑架，希望自由地扩展它的功能，满足个性化需求</li>
+                      <li>可以下载安装插件，也可以自己开发插件</li>
+                      <li>可以用它开发无限数量的应用，也不受用户数、数据量的限制</li>
+                      <li>可以接受在界面上不起眼的地方显示 NocoBase 的标识</li>
+                      <li>通过 NocoBase 社区获得技术支持</li>
+                      <li>愿意将自己开发的插件贡献给开源社区</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>标准版，￥5,000</h5>
+                    <small class="text-muted mb-0">常规用途的最佳选择</small>
+                  </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">当你还需要</h6>
+                    <ul class="text-muted">
+                      <li>保持自己的代码和插件不开源</li>
+                      <li>将界面上的 NocoBase 标识换成自己的品牌信息</li>
+                      <li>一次性付费，可以终身使用</li>
+                      <li>拥有 4 个点数用于兑换商业插件</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>专业版，￥50,000</h5>
+                    <small class="text-muted mb-0">满足专业团队的需求</small>
+                  </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">当你还需要</h6>
+                    <ul class="text-muted">
+                      <li>使用 NocoBase 为客户开发上层应用</li>
+                      <li>在安全性方面有更出色的表现</li>
+                      <li>支持国产数据库和环境</li>
+                      <li>在开发流程方面有更高要求，有开发、测试、生产等多个环境</li>
+                      <li>NocoBase 团队的专属使用咨询</li>
+                      <li>拥有 32 个点数用于兑换商业插件</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>企业版，联系我们</h5>
+                    <small class="text-muted mb-0">满足大型应用和企业的需求</small>
+                  </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">当你还需要</h6>
+                    <ul class="text-muted">
+                      <li>集群部署 NocoBase 应用</li>
+                      <li>详细记录每个用户的每个操作</li>
+                      <li>定时自动备份数据</li>
+                      <li>对遥测有专业要求，包括日志、监控指标、链路追踪</li>
+                      <li>接入第三方 LLM 并在整个系统内提供 AI 能力</li>
+                      <li>NocoBase 团队在路线图中优先安排所你需的功能</li>
+                      <li>NocoBase 团队用更快的响应速度提供更长时间的专属支持</li>
+                      <li>NocoBase 团队为你提供专属的扩展开发方案，包括插件、第三方集成等</li>
+                      <li>拥有 64 个点数用于兑换商业插件</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>白标版，联系我们</h5>
+                    <small class="text-muted mb-0">提供品牌定制化的解决方案</small>
+                  </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">当你还需要</h6>
+                    <ul class="text-muted">
+                      <li>张贴自己的品牌</li>
+                      <li>对外经营自己的垂直行业的无代码/低代码解决方案</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+          </div><!--end timeline page-->
+          <!-- TIMELINE END -->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!--Which Editon End-->
+
+  <!-- Licenses Start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">详细对比</h4>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="component-wrapper">
+            <div class="p-4">
+              <div class="table-responsive bg-white">
+                <table class="table mb-0 table-center commercial-table">
+                  <thead class="">
+                  <tr>
+                    <th scope="col" class="col-md-4 text-nowrap"></th>
+                    <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">社区版</h5></th>
+                    <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">标准版</h5></th>
+                    <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">专业版</h5></th>
+                    <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">企业版</h5></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="compare-item text-muted">价格</td>
+                    <td class="fw-bold fst-italic">免费</td>
+                    <td class="fw-bold fst-italic">￥5,000</td>
+                    <td class="fw-bold fst-italic">￥50,000</td>
+                    <td class="fw-bold fst-italic">联系我们</td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">许可证</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">许可证类型</td>
+                    <td class="text-nowrap">AGPL 3.0</td>
+                    <td class="text-nowrap">商业许可证</td>
+                    <td class="text-nowrap">商业许可证</td>
+                    <td class="text-nowrap">商业许可证</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">永久授权<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="许可证终身有效，这意味着您可以永久使用 NocoBase 而无需再次付费。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">升级有效期<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="获得授权后，可在升级有效期内随时升级到最新版。升级有效期结束后仍然可以永久免费使用。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td>-</td>
+                    <td>1 年</td>
+                    <td>1 年</td>
+                    <td>1 年</td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">商业插件</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">包含点数<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="使用点数兑换任意商业插件"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td> 0 </td>
+                    <td> 4 </td>
+                    <td> 32 </td>
+                    <td> 64 </td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">使用限制</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted text-nowrap">不限制用户数量</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">不限制应用数量</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">不限制数据量</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">安装免费或商业插件</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">为公司内部开发上层应用</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">保持你自己的代码和插件不开源</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="你自己的代码和插件需要以 AGPL 3.0 协议开源"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">在界面上使用自己的品牌信息</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="页脚和系统右上角等各处关于 NocoBase 的版权、版本、链接信息不得更改或移除"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">为客户开发上层应用</td>
+                    <td>-</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">特性</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">国产化支持</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">多应用 **<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="以‘父-子’应用的方式组合多个 NocoBase 实例一起使用。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">迁移管理<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在不同环境之间迁移应用程序，实现版本控制、发布管理、协作开发以及应用分发。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">集群架构</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">遥测<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="日志，监控指标，链路追踪"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">AI 集成 **<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="接入第三方 LLM 并在整个系统内提供 AI 能力"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">安全</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">加密存储<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="密码、AKSK 等敏感数据加密存储"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Token 策略</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">密码策略</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+
+                  <tr>
+                    <td class="compare-item text-muted">自动备份</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">API 加密传输<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="数据在 HTTP 传输过程中加密"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">IP 限制</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">双因素认证(2FA)</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">审计日志</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">支持</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">社区支持</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">专属和及时的 bug 修复</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">专属的使用咨询</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">专属的扩展开发咨询</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">优先排期新功能</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">电话支持</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">实时聊天支持</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">支持有效期</td>
+                    <td>-</td>
+                    <td>1 年</td>
+                    <td>1 年</td>
+                    <td>1 年</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">咨询工单数量<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在支持有效期内，可以获得支持的使用咨询工单数（不包括 bug 反馈）。超出后，可单独购买咨询工单。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>15</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">扩展开发方案数量<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在支持有效期内，NocoBase 核心团队协助你开发插件、集成第三方系统，包括撰写文档、编写核心代码等。超出后，可单独购买。"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">首次响应时间</td>
+                    <td>-</td>
+                    <td>24 小时</td>
+                    <td>12 小时</td>
+                    <td>4 小时</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="para-desc text-muted fst-italic mt-4">标记 ** 的特性将于 2025 年第一季度发布。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Licenses end -->
+
+  <!-- FAQ start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h3 class="mb-4">常见问题</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-1">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-1" aria-expanded="false" aria-controls="collapse1-1">
+                  如何理解“永久授权”？
+                </button>
+              </h2>
+              <div id="collapse1-1" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-1"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">没有过期时间，不需要按年付费，一旦你购买了商业许可证或者商业插件，就会获得永久授权，可以永久使用。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+                  升级有效期结束后，如何继续获得升级？
+                </button>
+              </h2>
+              <div id="collapse1-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">升级有效期结束后，你仍然可以永久使用当前版本的 NocoBase。如果要重新获得升级，可以在任意时间续费，再次获得 1 年升级。续费价格为首年价格的 60%，但不再附赠商业插件点数。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                  是否要购买商业许可证才能用在商业环境？
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">不是。NocoBase 的内核和开源插件是 AGPL 3.0 协议，只要你遵循协议，并且保留界面上的 NocoBase 版权信息和版本信息，就可以免费使用。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  什么情况下需要购买商业许可证？
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">如果你有以下任何需求，则需要购买商业许可证：</p>
+                  <ul class="text-muted">
+                    <li>对 NocoBase 的代码做了更改，或者扩展了自己的插件，但你不想将这些产出物以 AGPL 协议开源</li>
+                    <li>将 NocoBase 与你自己的产品集成，但不想将自己的产品以 AGPL 协议开源</li>
+                    <li>你希望将页脚或系统右上角关于 NocoBase 的版权和版本信息修改为你自己的品牌</li>
+                    <li>你希望获得更高级的安全保障能力，比如动态访问管理、审计日志、自动备份</li>
+                    <li>你希望获得更高级的开发和部署能力，比如多应用、环境隔离、分布式架构</li>
+                    <li>你希望获得 NocoBase 团队的高级技术支持</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  购买商业许可证之后，还需要额外购买商业插件吗？
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">每个版本的商业许可证都附带一定数量的插件点数，可以用于兑换任意商业插件而无需购买。如果你在使用完这些点数之后，还需要更多的商业插件，那么就需要单独购买。</p>
+                  <p class="answer text-muted mb-0 pb-2">单独购买时，你可以：</p>
+                  <ul class="text-muted">
+                    <li>当只需要个别插件时，直接购买某个插件</li>
+                    <li>当需要较多插件时，先以折扣价格购买<a href="https://www.nocobase.com/cn/plugins-bundles" target="_blank">插件包</a>，再兑换插件</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading4-2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4-2" aria-expanded="false" aria-controls="collapse4-2">
+                  是否可以只购买商业插件而不购买商业许可证？
+                </button>
+              </h2>
+              <div id="collapse4-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading4-2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">可以。商业插件和商业许可证是互相独立的。商业插件可以扩展更丰富的功能，它们可以安装在开源许可或者商业许可的 NocoBase 上。如果你购买了商业许可证，会附带一定数量的点数，可以兑换任意商业插件。</p>
+                  <p class="answer text-muted mb-0 pb-2">你可以：</p>
+                  <ul class="text-muted">
+                    <li>购买商业许可证，同时用许可证包含的点数兑换任何商业插件</li>
+                    <li>购买商业许可证，并单独购买更多商业插件</li>
+                    <li>只购买商业插件，在开源版本上增加更多功能</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  是否可以使用一份授权为不同的公司开发应用？
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="heading6"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">标准版仅限被授权公司内部使用；专业版和企业版可以用于为自己的客户开发应用，或者将开发的应用出售给客户。</p>
+                  <ul class="text-muted">
+                    <li>如果你为客户提供的产品不开放配置权限，客户只能直接使用你开发完成的产品，那么只需要你拥有商业许可证即可。</li>
+                    <li>如果你为客户提供的产品开放配置权限，客户可以自己通过 NocoBase 的无代码配置能力继续修改和开发你的产品，那么你的客户也需要购买商业许可证。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  购买的商业插件是否可以用于不同的公司？
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="heading7"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">商业插件与许可证绑定，由许可证的类型决定商业插件的使用范围。如果你拥有专业版和企业版许可证，则可以使用你购买的商业插件为你的客户开发应用。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  是否可以在不同版本间切换？
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse border-0 collapse" aria-labelledby="heading8"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    可以由低版本升级到高版本，不能从高版本降级到低版本。升级时，按剩余升级有效期补齐差价，附带的商业插件点数也按照剩余时间等比例计算。<br/>
+                    例如，当前为标准版，升级有效期剩余 6 个月，升级到专业版，需补差价： <br/>
+                    50000-5000*(6/12)=47500
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  是否可以试用？
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="heading9"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    当然可以。花费一分钟时间，开通专属的沙箱环境，其中包含 NocoBase 全部商业插件：<a href="https://demo-cn.nocobase.com/new" target="_blank">立即开通</a><br>
+                    沙箱环境默认有效期为 48 小时。如果你需要更长的试用时间，请联系我们: hello@nocobase.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+  <!-- Contact start -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <h3>如何购买</h3>
+        <p class="para-desc text-center mx-auto text-muted">请通过邮件或微信联系我们，与我们的核心团队探讨方案，然后登录 NocoBase 商业用户服务平台，自助选择需要的许可证和插件，生成订单，完成购买。</p>
+        <div class="mt-4 pt-2 text-center">
+          <a href="https://www.nocobase.com/cn/contact" class="btn btn-primary">联系我们 <i class="uil uil-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact end -->
 </Layout>
