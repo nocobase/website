@@ -62,6 +62,7 @@ const meta = {
   <head>
     <meta charset="utf-8" />
     <title>{meta.title}</title>
+    <meta name="algolia-site-verification"  content="E1666988F6533757" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content={meta.title} />
     <meta name="description" content={meta.description} />
@@ -176,6 +177,8 @@ const meta = {
       }
     </style>
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
     <!--  END Brevo Form -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -650,5 +653,25 @@ const meta = {
     <script defer src="https://sibforms.com/forms/end-form/build/main.js"
     ></script>
     <!--  END Brevo Form -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
+    <script type="text/javascript">
+
+      docsearch({
+
+        appId: "SOXMYGAM7C",
+
+        apiKey: "64843cbaefbee8de62326b2ae47b8601",
+
+        indexName: "nocobase",
+
+        container: "### REPLACE ME WITH A CONTAINER (e.g. div) ###",
+
+        debug: false
+
+      });
+
+    </script>
   </body>
 </html>
