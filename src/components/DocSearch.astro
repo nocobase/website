@@ -1,0 +1,43 @@
+---
+interface Props {
+    appId: string;
+    apiKey: string;
+    indexName: string;
+    container?: string;
+    language?: string;
+    debug?: boolean;
+}
+
+const {
+    appId="SOXMYGAM7C",
+    apiKey="64843cbaefbee8de62326b2ae47b8601",
+    indexName="nocobase",
+    container = '#docsearch',
+    language= 'en',
+    debug = false
+} = Astro.props;
+---
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script
+        is:inline
+        type="text/javascript"
+        define:vars={{
+            appId,
+            apiKey,
+            indexName,
+            container,
+            language,
+            debug
+        }}
+        data-astro-rerun
+>
+    docsearch({
+        appId: appId,
+        apiKey: apiKey,
+        indexName: indexName,
+        container: container,
+        language: language,
+        debug: debug
+    });
+</script>

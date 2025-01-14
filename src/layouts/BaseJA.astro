@@ -1,6 +1,7 @@
 ---
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import DocSearch from "../components/DocSearch.astro";
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -225,6 +226,10 @@ const meta = {
                 </a>
                 <!-- End mobile menu toggle-->
             </div>
+        </div>
+
+        <div class="menu-extras" style="margin-top: 20px">
+            <div id="docsearch"></div>
         </div>
 
         <div id="navigation">
@@ -609,24 +614,17 @@ const meta = {
         src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <!-- END Brevo Form -->
 
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<DocSearch/>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchButton = document.querySelector('.DocSearch-Button');
+        const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
+        const keys = searchButton.querySelector('.DocSearch-Button-Keys');
 
-<script type="text/javascript">
-
-    docsearch({
-
-        appId: "SOXMYGAM7C",
-
-        apiKey: "64843cbaefbee8de62326b2ae47b8601",
-
-        indexName: "nocobase",
-
-        container: "### REPLACE ME WITH A CONTAINER (e.g. div) ###",
-
-        debug: false
-
+        // 隐藏文本和快捷键
+        if (placeholder) placeholder.style.display = 'none';
+        if (keys) keys.style.display = 'none';
     });
-
 </script>
 </body>
 </html>
