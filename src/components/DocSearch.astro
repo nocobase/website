@@ -6,6 +6,7 @@ interface Props {
     container?: string;
     language?: string;
     debug?: boolean;
+    maxResultsPerGroup?:number;
 }
 
 const {
@@ -14,7 +15,8 @@ const {
     indexName="nocobase",
     container = '#docsearch',
     language= 'en',
-    debug = false
+    debug = false,
+    maxResultsPerGroup = 20
 } = Astro.props;
 ---
 
@@ -28,7 +30,8 @@ const {
             indexName,
             container,
             language,
-            debug
+            debug,
+            maxResultsPerGroup
         }}
         data-astro-rerun
 >
@@ -38,6 +41,7 @@ const {
         indexName: indexName,
         container: container,
         language: language,
-        debug: debug
+        debug: debug,
+        maxResultsPerGroup:maxResultsPerGroup,
     });
 </script>
