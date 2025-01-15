@@ -9,9 +9,11 @@ const helpCenterData =
         "groups": [
             {
                 "title": "入门指南",
+                "icon": "fas fa-book",
                 "cards": [
                     {
                         "title": "快速开始",
+                        "icon": "fas fa-rocket",
                         "size": "wide",
                         "articles": [
                             "快速开始指南",
@@ -22,6 +24,7 @@ const helpCenterData =
                     },
                     {
                         "title": "安装与配置",
+                        "icon": "fas fa-download",
                         "size": "medium",
                         "articles": [
                             "通过npm安装",
@@ -36,6 +39,7 @@ const helpCenterData =
                     },
                     {
                         "title": "基础操作",
+                        "icon": "fas fa-tasks",
                         "size": "medium",
                         "articles": [
                             "数据表管理",
@@ -48,9 +52,11 @@ const helpCenterData =
             },
             {
                 "title": "学习资源",
+                "icon": "fas fa-graduation-cap",
                 "cards": [
                     {
                         "title": "实战教程",
+                        "icon": "uil uil-book-open",
                         "articles": [
                             "教程章节1：创建第一个项目",
                             "教程章节2：自定义字段设置",
@@ -60,6 +66,7 @@ const helpCenterData =
                     },
                     {
                         "title": "进阶阅读",
+                        "icon": "fas fa-layer-group",
                         "articles": [
                             "操作手册",
                             "应用场景",
@@ -73,6 +80,7 @@ const helpCenterData =
                     },
                     {
                         "title": "视频教程",
+                        "icon": "fas fa-video",
                         "articles": [
                             "基础操作视频教程",
                             "项目创建演示",
@@ -83,9 +91,11 @@ const helpCenterData =
             },
             {
                 "title": "高级主题",
+                "icon": "fas fa-cogs",
                 "cards": [
                     {
                         "title": "高级设置",
+                        "icon": "fas fa-sliders-h",
                         "articles": [
                             "自定义插件开发",
                             "集成第三方服务",
@@ -95,6 +105,7 @@ const helpCenterData =
                     },
                     {
                         "title": "系统集成",
+                        "icon": "fas fa-plug",
                         "articles": [
                             "与第三方服务集成",
                             "API使用指南",
@@ -106,9 +117,11 @@ const helpCenterData =
             },
             {
                 "title": "资源与工具",
+                "icon": "fas fa-tools",
                 "cards": [
                     {
                         "title": "精选资源",
+                        "icon": "fas fa-star",
                         "articles": [
                             "视频教程",
                             "下载中心",
@@ -118,6 +131,7 @@ const helpCenterData =
                     },
                     {
                         "title": "下载与工具",
+                        "icon": "uil uil-wrench",
                         "articles": [
                             "下载最新版本",
                             "获取开发工具"
@@ -127,9 +141,11 @@ const helpCenterData =
             },
             {
                 "title": "社区与支持",
+                "icon": "fas fa-users",
                 "cards": [
                     {
                         "title": "推荐阅读",
+                        "icon": "fas fa-book-reader",
                         "articles": [
                             "NocoBase最佳实践",
                             "用户案例分析",
@@ -139,6 +155,7 @@ const helpCenterData =
                     },
                     {
                         "title": "博客与动态",
+                        "icon": "fas fa-blog",
                         "articles": [
                             "NocoBase最新动态",
                             "用户案例分享",
@@ -148,6 +165,7 @@ const helpCenterData =
                     },
                     {
                         "title": "论坛与讨论",
+                        "icon": "fas fa-comments",
                         "articles": [
                             "官方论坛入口",
                             "常见讨论主题",
@@ -157,6 +175,7 @@ const helpCenterData =
                     },
                     {
                         "title": "更新日志",
+                        "icon": "fas fa-history",
                         "articles": [
                             "2024年12月更新",
                             "2025年1月版本发布",
@@ -168,6 +187,7 @@ const helpCenterData =
             }
         ]
     }
+
 ---
 
 <Layout
@@ -185,7 +205,7 @@ const helpCenterData =
             {helpCenterData.groups.map(group => (
                     <div class="mb-5">
                         <h4 class="title mb-4 d-flex align-items-center">
-                            <i class="fas fa-book me-2"></i>
+                            <i class=`${group.icon || "fas fa-book"} me-2`></i>
                             {group.title}
                         </h4>
                         <hr class="mb-4"/>
@@ -223,7 +243,7 @@ const helpCenterData =
                                                     size={card.size}
                                                     articles={card.articles}
                                                     maxArticles={maxArticles}
-                                                    icon={card.icon}
+                                                    icon={card.icon || "uil uil-edit-alt"}
                                                     viewMoreLink={card.viewMoreLink || "#"}
                                             />
                                         </div>
