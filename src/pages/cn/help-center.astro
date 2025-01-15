@@ -1,5 +1,6 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
+import HelpCenterCard from '../../components/HelpCenterCard.astro';
 import Layout from "../../layouts/Layout.astro";
 // import "../../../public/css/bootstrap.css"
 
@@ -11,7 +12,7 @@ const helpCenterData =
                 "cards": [
                     {
                         "title": "快速开始",
-                        "size":"wide",
+                        "size": "wide",
                         "articles": [
                             "快速开始指南",
                             "注册与登录",
@@ -21,7 +22,7 @@ const helpCenterData =
                     },
                     {
                         "title": "安装与配置",
-                        "size":"medium",
+                        "size": "medium",
                         "articles": [
                             "通过npm安装",
                             "使用Docker部署",
@@ -35,7 +36,7 @@ const helpCenterData =
                     },
                     {
                         "title": "基础操作",
-                        "size":"medium",
+                        "size": "medium",
                         "articles": [
                             "数据表管理",
                             "权限控制",
@@ -167,40 +168,64 @@ const helpCenterData =
             }
         ]
     }
-
-
 ---
 
-<Layout title="NocoBase 帮助中心" description="NocoBase 官方帮助中心" keywords="NocoBase, 帮助, 文档">
-    <PageHeader title="NocoBase 帮助中心" description="获取关于 NocoBase 的所有帮助和文档" />
+<Layout
+        title="NocoBase 帮助中心"
+        description="NocoBase 官方帮助中心"
+        keywords="NocoBase, 帮助, 文档"
+>
+    <PageHeader
+            title="NocoBase 帮助中心"
+            description="关于 NocoBase 的所有帮助和文档"
+    />
 
-    <section class="help-center-section">
-        <!-- 主容器 -->
-        <div class="help-center-container">
+    <section class="section">
+        <div class="container">
             {helpCenterData.groups.map(group => (
-                    <div class="help-center-group">
-                        <h2> {group.title}</h2>
-                        <div class="help-center-cards">
+                    <div class="mb-5">
+                        <h4 class="title mb-4 d-flex align-items-center">
+                            <i class="fas fa-book me-2"></i>
+                            {group.title}
+                        </h4>
+                        <hr class="mb-4"/>
+
+                        <div class="row g-4">
                             {group.cards.map(card => {
-                                // 根据卡片大小确定最大显示的文章数量
-                            let maxArticles = 5; // 默认窄卡片
-                            if (card.size === "wide") {
+                                // 动态设置卡片的列宽
+                                let colClasses = "col-12"; // 默认宽度
+
+                                switch (card.size) {
+                                    case "wide":
+                                        colClasses = "col-12";
+                                        break;
+                                    case "medium":
+                                        colClasses = "col-md-6";
+                                        break;
+                                    case "narrow":
+                                    default:
+                                        colClasses = "col-md-4 col-lg-3";
+                                        break;
+                                }
+
+                                // 根据卡片大小设置最多显示的文章数量
+                                let maxArticles = 5;
+                                if (card.size === "wide") {
                                     maxArticles = 8;
                                 } else if (card.size === "medium") {
                                     maxArticles = 6;
                                 }
 
                                 return (
-                                        <div class={`help-center-card help-center-card--${card.size || "narrow"}`}>
-                                            <div style="height: 100%">
-                                                <h3><i class="fas fa-book"></i> {card.title}</h3>
-                                                <ul class="help-center-articles-list">
-                                                    {card.articles.slice(0, maxArticles).map(article => (
-                                                            <li><i class="fas fa-chevron-right"></i> <a href="#">{article}</a></li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="help-center-view-more">查看更多</a>
+                                        <div class={colClasses}>
+                                            <HelpCenterCard
+                                                    title={card.title}
+                                                    size={card.size}
+                                                    articles={card.articles}
+                                                    maxArticles={maxArticles}
+                                                    icon={card.icon}
+                                                    viewMoreLink={card.viewMoreLink || "#"}
+                                            />
                                         </div>
                                 );
                             })}
@@ -209,239 +234,7 @@ const helpCenterData =
             ))}
         </div>
     </section>
-
-    <!-- 组件内的样式 -->
-    <style lang="css">
-        /* 基本样式 */
-        .help-center-section {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #ffffff; /* 白色背景 */
-            color: #000000; /* 黑色文字 */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        /* 主容器样式 */
-        .help-center-container {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* 分组样式 */
-        .help-center-group {
-            margin-bottom: 60px;
-        }
-
-        .help-center-group h2 {
-            font-size: 2em;
-            margin-bottom: 30px;
-            position: relative;
-            padding-left: 40px; /* 为图标留出更多空间 */
-            display: flex;
-            align-items: center;
-        }
-
-        .help-center-group h2 i {
-            margin-right: 10px;
-            font-size: 1.5em;
-        }
-
-        .help-center-group h2::after {
-            content: '';
-            position: absolute;
-            left: 40px; /* 对应padding-left */
-            bottom: 0;
-            width: 50px;
-            height: 4px;
-        }
-
-        /* 卡片布局 */
-        .help-center-cards {
-            display: grid;
-            gap: 20px;
-            /* 默认单列布局 */
-            grid-template-columns: 1fr;
-            align-items: stretch; /* 确保所有卡片高度一致 */
-        }
-
-        /* 卡片基本样式 */
-        .help-center-card {
-            background-color: #ffffff; /* 白色背景 */
-            border: 1px solid #e0e0e0; /* 轻微边框 */
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 轻阴影 */
-            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease, border-color 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            color: #000000; /* 黑色文字 */
-            overflow: hidden;
-        }
-
-        .help-center-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            background-color: #f9f9f9;
-            border-color: #007BFF;
-        }
-
-        .help-center-card h3 {
-            margin-top: 0;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-        }
-
-        .help-center-card h3 i {
-            margin-right: 10px;
-        }
-
-        /* 调整后的文章列表 */
-        .help-center-articles-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            gap: 10px;
-            /* 使用自适应网格布局 */
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            overflow: visible; /* 允许内容自然展开 */
-        }
-
-        /* 根据卡片类型设置文章列表的网格布局 */
-        .help-center-card--wide .help-center-articles-list {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        }
-
-        .help-center-card--medium .help-center-articles-list {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        }
-
-        .help-center-card--narrow .help-center-articles-list {
-            grid-template-columns: 1fr; /* 单列布局 */
-        }
-
-        .help-center-articles-list li {
-            display: flex;
-            align-items: center;
-            padding: 5px 0;
-        }
-
-        .help-center-articles-list li i {
-            margin-right: 8px;
-            color: #555;
-            flex-shrink: 0;
-        }
-
-        .help-center-articles-list li a {
-            text-decoration: none;
-            color: #000;
-            transition: color 0.3s;
-            flex: 1; /* 确保链接占满剩余空间 */
-        }
-
-        .help-center-articles-list li a:hover {
-            color: #007BFF;
-            text-decoration: underline;
-        }
-
-        /* 查看更多按钮 */
-        .help-center-view-more {
-            text-align: right;
-            display: block;
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-            transition: color 0.3s;
-            margin-top: 10px;
-        }
-
-        .help-center-view-more:hover {
-            color: #0056b3;
-        }
-
-        /* 推荐阅读特别样式 */
-        .help-center-recommendation .help-center-card {
-            background-color: #e8f4ff;
-            border-left: 5px solid #007BFF;
-        }
-
-        /* 响应式设计 */
-        /* 小于 768px 的设备 */
-        @media (max-width: 767px) {
-            .help-center-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .help-center-card--wide,
-            .help-center-card--medium,
-            .help-center-card--narrow {
-                grid-column: span 1;
-            }
-
-            .help-center-articles-list {
-                grid-template-columns: 1fr;
-                /* 允许内容自然展开 */
-                max-height: none;
-                overflow: visible;
-            }
-        }
-
-        /* 中等屏幕（768px 到 1199px） */
-        @media (min-width: 768px) and (max-width: 1199px) {
-            .help-center-cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .help-center-card--wide {
-                grid-column: span 2;
-            }
-
-            .help-center-card--medium {
-                grid-column: span 1;
-            }
-
-            .help-center-card--narrow {
-                grid-column: span 1;
-            }
-
-            .help-center-articles-list {
-                /* 适应中等屏幕的布局 */
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-        }
-
-        /* 大屏幕（1200px 及以上） */
-        @media (min-width: 1200px) {
-            .help-center-cards {
-                grid-template-columns: repeat(4, 1fr);
-            }
-
-            .help-center-card--wide {
-                grid-column: span 4; /* 宽卡片独占一行 */
-            }
-
-            .help-center-card--medium {
-                grid-column: span 2; /* 中等卡片每行两个 */
-            }
-
-            .help-center-card--narrow {
-                grid-column: span 1; /* 窄卡片每行四个 */
-            }
-
-            .help-center-articles-list {
-                /* 适应大屏幕的布局 */
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-        }
-    </style>
 </Layout>
-
-
 
 
 
