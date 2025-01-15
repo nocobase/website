@@ -1,0 +1,451 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+// import "../../../public/css/bootstrap.css"
+
+const helpCenterData =
+    {
+        "groups": [
+            {
+                "title": "入门指南",
+                "cards": [
+                    {
+                        "title": "快速开始",
+                        "size":"wide",
+                        "articles": [
+                            "快速开始指南",
+                            "注册与登录",
+                            "创建和管理项目",
+                            "首次使用指南"
+                        ]
+                    },
+                    {
+                        "title": "安装与配置",
+                        "size":"medium",
+                        "articles": [
+                            "通过npm安装",
+                            "使用Docker部署",
+                            "源码编译方法",
+                            "云服务一键部署",
+                            "环境变量配置",
+                            "数据库连接设置",
+                            "多语言支持配置",
+                            "通知与提醒设置"
+                        ]
+                    },
+                    {
+                        "title": "基础操作",
+                        "size":"medium",
+                        "articles": [
+                            "数据表管理",
+                            "权限控制",
+                            "自动化工作流",
+                            "创建视图"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "学习资源",
+                "cards": [
+                    {
+                        "title": "实战教程",
+                        "articles": [
+                            "教程章节1：创建第一个项目",
+                            "教程章节2：自定义字段设置",
+                            "教程章节3：数据关系管理",
+                            "教程章节4：权限控制"
+                        ]
+                    },
+                    {
+                        "title": "进阶阅读",
+                        "articles": [
+                            "操作手册",
+                            "应用场景",
+                            "系统集成",
+                            "最佳实践",
+                            "数据建模技巧",
+                            "优化查询性能",
+                            "用户体验设计",
+                            "安全设置"
+                        ]
+                    },
+                    {
+                        "title": "视频教程",
+                        "articles": [
+                            "基础操作视频教程",
+                            "项目创建演示",
+                            "数据管理实战"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "高级主题",
+                "cards": [
+                    {
+                        "title": "高级设置",
+                        "articles": [
+                            "自定义插件开发",
+                            "集成第三方服务",
+                            "性能优化技巧",
+                            "备份与恢复"
+                        ]
+                    },
+                    {
+                        "title": "系统集成",
+                        "articles": [
+                            "与第三方服务集成",
+                            "API使用指南",
+                            "插件开发",
+                            "Webhook配置"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "资源与工具",
+                "cards": [
+                    {
+                        "title": "精选资源",
+                        "articles": [
+                            "视频教程",
+                            "下载中心",
+                            "常用工具链接",
+                            "文档模板下载"
+                        ]
+                    },
+                    {
+                        "title": "下载与工具",
+                        "articles": [
+                            "下载最新版本",
+                            "获取开发工具"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "社区与支持",
+                "cards": [
+                    {
+                        "title": "推荐阅读",
+                        "articles": [
+                            "NocoBase最佳实践",
+                            "用户案例分析",
+                            "功能深度解析",
+                            "性能优化技巧"
+                        ]
+                    },
+                    {
+                        "title": "博客与动态",
+                        "articles": [
+                            "NocoBase最新动态",
+                            "用户案例分享",
+                            "功能更新预览",
+                            "行业趋势分析"
+                        ]
+                    },
+                    {
+                        "title": "论坛与讨论",
+                        "articles": [
+                            "官方论坛入口",
+                            "常见讨论主题",
+                            "提交反馈与建议",
+                            "参与开发讨论"
+                        ]
+                    },
+                    {
+                        "title": "更新日志",
+                        "articles": [
+                            "2024年12月更新",
+                            "2025年1月版本发布",
+                            "历史版本变更记录",
+                            "未来开发计划"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+
+---
+
+<Layout title="NocoBase 帮助中心" description="NocoBase 官方帮助中心" keywords="NocoBase, 帮助, 文档">
+    <PageHeader title="NocoBase 帮助中心" description="获取关于 NocoBase 的所有帮助和文档" />
+
+    <section class="help-center-section">
+        <!-- 主容器 -->
+        <div class="help-center-container">
+            {helpCenterData.groups.map(group => (
+                    <div class="help-center-group">
+                        <h2> {group.title}</h2>
+                        <div class="help-center-cards">
+                            {group.cards.map(card => {
+                                // 根据卡片大小确定最大显示的文章数量
+                            let maxArticles = 5; // 默认窄卡片
+                            if (card.size === "wide") {
+                                    maxArticles = 8;
+                                } else if (card.size === "medium") {
+                                    maxArticles = 6;
+                                }
+
+                                return (
+                                        <div class={`help-center-card help-center-card--${card.size || "narrow"}`}>
+                                            <div style="height: 100%">
+                                                <h3><i class="fas fa-book"></i> {card.title}</h3>
+                                                <ul class="help-center-articles-list">
+                                                    {card.articles.slice(0, maxArticles).map(article => (
+                                                            <li><i class="fas fa-chevron-right"></i> <a href="#">{article}</a></li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="help-center-view-more">查看更多</a>
+                                        </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+            ))}
+        </div>
+    </section>
+
+    <!-- 组件内的样式 -->
+    <style lang="css">
+        /* 基本样式 */
+        .help-center-section {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #ffffff; /* 白色背景 */
+            color: #000000; /* 黑色文字 */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        /* 主容器样式 */
+        .help-center-container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* 分组样式 */
+        .help-center-group {
+            margin-bottom: 60px;
+        }
+
+        .help-center-group h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 40px; /* 为图标留出更多空间 */
+            display: flex;
+            align-items: center;
+        }
+
+        .help-center-group h2 i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .help-center-group h2::after {
+            content: '';
+            position: absolute;
+            left: 40px; /* 对应padding-left */
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+        }
+
+        /* 卡片布局 */
+        .help-center-cards {
+            display: grid;
+            gap: 20px;
+            /* 默认单列布局 */
+            grid-template-columns: 1fr;
+            align-items: stretch; /* 确保所有卡片高度一致 */
+        }
+
+        /* 卡片基本样式 */
+        .help-center-card {
+            background-color: #ffffff; /* 白色背景 */
+            border: 1px solid #e0e0e0; /* 轻微边框 */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 轻阴影 */
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            color: #000000; /* 黑色文字 */
+            overflow: hidden;
+        }
+
+        .help-center-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            background-color: #f9f9f9;
+            border-color: #007BFF;
+        }
+
+        .help-center-card h3 {
+            margin-top: 0;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .help-center-card h3 i {
+            margin-right: 10px;
+        }
+
+        /* 调整后的文章列表 */
+        .help-center-articles-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 10px;
+            /* 使用自适应网格布局 */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            overflow: visible; /* 允许内容自然展开 */
+        }
+
+        /* 根据卡片类型设置文章列表的网格布局 */
+        .help-center-card--wide .help-center-articles-list {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .help-center-card--medium .help-center-articles-list {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+
+        .help-center-card--narrow .help-center-articles-list {
+            grid-template-columns: 1fr; /* 单列布局 */
+        }
+
+        .help-center-articles-list li {
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+        }
+
+        .help-center-articles-list li i {
+            margin-right: 8px;
+            color: #555;
+            flex-shrink: 0;
+        }
+
+        .help-center-articles-list li a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s;
+            flex: 1; /* 确保链接占满剩余空间 */
+        }
+
+        .help-center-articles-list li a:hover {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /* 查看更多按钮 */
+        .help-center-view-more {
+            text-align: right;
+            display: block;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+            margin-top: 10px;
+        }
+
+        .help-center-view-more:hover {
+            color: #0056b3;
+        }
+
+        /* 推荐阅读特别样式 */
+        .help-center-recommendation .help-center-card {
+            background-color: #e8f4ff;
+            border-left: 5px solid #007BFF;
+        }
+
+        /* 响应式设计 */
+        /* 小于 768px 的设备 */
+        @media (max-width: 767px) {
+            .help-center-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .help-center-card--wide,
+            .help-center-card--medium,
+            .help-center-card--narrow {
+                grid-column: span 1;
+            }
+
+            .help-center-articles-list {
+                grid-template-columns: 1fr;
+                /* 允许内容自然展开 */
+                max-height: none;
+                overflow: visible;
+            }
+        }
+
+        /* 中等屏幕（768px 到 1199px） */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .help-center-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .help-center-card--wide {
+                grid-column: span 2;
+            }
+
+            .help-center-card--medium {
+                grid-column: span 1;
+            }
+
+            .help-center-card--narrow {
+                grid-column: span 1;
+            }
+
+            .help-center-articles-list {
+                /* 适应中等屏幕的布局 */
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        /* 大屏幕（1200px 及以上） */
+        @media (min-width: 1200px) {
+            .help-center-cards {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .help-center-card--wide {
+                grid-column: span 4; /* 宽卡片独占一行 */
+            }
+
+            .help-center-card--medium {
+                grid-column: span 2; /* 中等卡片每行两个 */
+            }
+
+            .help-center-card--narrow {
+                grid-column: span 1; /* 窄卡片每行四个 */
+            }
+
+            .help-center-articles-list {
+                /* 适应大屏幕的布局 */
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</Layout>
+
+
+
+
+
+
+
+
+
