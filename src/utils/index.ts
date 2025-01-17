@@ -115,6 +115,15 @@ export async function listTutorialArticles(options?: { pageSize?: number, slug?:
   return { data, meta };
 }
 
+export async function listHelpCenterItems(options?: { pageSize?: number,  page?: number, tree?: boolean}) {
+  const { tree=true, page = 1, pageSize = 20 } = options || { page: 1, pageSize: 20 };
+  let url = `${baseURL}help_center_tree:list?page=${page}&pageSize=${pageSize}&tree=${tree}&token=${token}`;
+  const res = await fetch(url);
+  const { data, meta } = await res.json() as { data: any[], meta: any };
+  return { data, meta };
+}
+
+
 export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
