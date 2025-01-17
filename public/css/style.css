@@ -7234,6 +7234,23 @@ ul.articles a:hover img {
 }
 
 /*********************************/
+/*        docsearch       */
+/*===============================*/
+.DocSearch-Hits mark {
+  padding: 0;  /* 移除空格 */
+  margin: 0;   /* 移除空隙 */
+  background-color: transparent;  /* 可选，移除背景色 */
+  color: var(--docsearch-highlight-color); /* 设置你需要的高亮颜色 */
+}
+
+.DocSearch-Hit-source {
+  /* 新增的省略号样式 */
+  white-space: nowrap;       /* 不换行 */
+  overflow: hidden;          /* 隐藏超出内容 */
+  text-overflow: ellipsis;   /* 显示省略号 */
+}
+
+/*********************************/
 /*        paganition       */
 /*===============================*/
 .page-item .mobile-icon {

@@ -2,6 +2,7 @@
 import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
 import BaseLayoutJA from "./BaseJA.astro"; // 引入日语布局
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
 const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/"); // 判断是否为日语路径

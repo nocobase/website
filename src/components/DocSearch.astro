@@ -1,4 +1,5 @@
 ---
+const currentLang = Astro.url.pathname.split('/')[1] || 'en';
 interface Props {
     appId: string;
     apiKey: string;
@@ -11,10 +12,10 @@ interface Props {
 
 const {
     appId="SOXMYGAM7C",
-    apiKey="64843cbaefbee8de62326b2ae47b8601",
-    indexName="nocobase",
-    container = '#docsearch',
-    language= 'en',
+    apiKey="a520bc515d8e08ed1284ecd7340b6b1e",
+    indexName="nocobase" + "_" + currentLang,
+    container = '.docsearch-nocobase',
+    language= currentLang,
     debug = false,
     maxResultsPerGroup = 20
 } = Astro.props;
