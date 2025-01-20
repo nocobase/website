@@ -1,7 +1,7 @@
 ---
-const { title, size, articles, maxArticles = 5, icon, viewMoreLink } = Astro.props;
+const { title, size, articles, maxArticles = 5, icon, viewMoreLink , language} = Astro.props;
 
-// 根据卡片大小设置文章列表的列数
+// cols number
 let articleCols = "row-cols-1 row-cols-sm-2";
 if (size === "wide") {
     articleCols += " row-cols-md-4";
@@ -12,7 +12,7 @@ if (size === "wide") {
 }
 ---
 <div class={`features feature-primary card h-100 shadow-sm p-4`}>
-    <!-- 图标 -->
+    <!-- icon -->
     <div class="image position-relative d-inline-block mb-4">
         <i class={`${icon} h2 text-primary`}></i>
     </div>
@@ -32,10 +32,15 @@ if (size === "wide") {
         </div>
     </div>
 
-    <!-- “查看更多”链接对齐到右侧 -->
+    <!-- view more -->
     <div class="mt-3 d-flex justify-content-end">
-        <a href={viewMoreLink} class="text-primary" aria-label={`查看更多 ${title}`}>
-            查看更多
+        <a href={viewMoreLink} class="text-primary" aria-label={`${title}`}>
+            {language==="cn"?
+                "查看更多":
+            language==="ja"?
+                "もっと見る":
+                "View More"
+            }
         </a>
     </div>
 </div>
