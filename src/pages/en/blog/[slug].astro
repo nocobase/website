@@ -5,6 +5,7 @@ import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug);
@@ -45,8 +46,23 @@ const shareLinks = [
     name: "facebook",
     icon: "fab fa-facebook",
     url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "qrcode",
+    icon: "fas fa-qrcode",
+    qrCode: true
   }
 ];
+
+const currentUrl = Astro.url.href;
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
 ---
 
 <Layout title={title} image={url(data.cover.url)} description={description} keywords={keywords}>
@@ -68,7 +84,33 @@ const shareLinks = [
     {data.ai_generated && (
         <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(This article was translated by AI)</p>
     )}
-    </PageHeader>
+    <div class="d-md-none mt-3">
+      <ul class="list-unstyled d-flex justify-content-center social-icon social mb-0">
+        {shareLinks.map(link => (
+          <li class="mx-2">
+            {link.qrCode ? (
+              <div class="qr-code-wrapper">
+                <a class="rounded">
+                  <i class={link.icon}></i>
+                </a>
+                <div class="qr-code-popup">
+                  <img 
+                    src={qrCodeDataURL} 
+                    alt="QR Code"
+                    class="qr-code img-fluid"
+                  />
+                </div>
+              </div>
+            ) : (
+              <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                <i class={link.icon}></i>
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </PageHeader>
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container row" : "container"}
@@ -79,9 +121,24 @@ const shareLinks = [
             <li class="mb-2 h6">Share</li>
             {shareLinks.map(link => (
               <li class="mt-1">
-                <a href={link.url} class="rounded" target="_blank" rel="noopener">
-                  <i class={link.icon}></i>
-                </a>
+                {link.qrCode ? (
+                  <div class="qr-code-wrapper">
+                    <a class="rounded">
+                      <i class={link.icon}></i>
+                    </a>
+                    <div class="qr-code-popup">
+                      <img 
+                        src={qrCodeDataURL} 
+                        alt="QR Code"
+                        class="qr-code img-fluid"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                    <i class={link.icon}></i>
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -113,8 +170,34 @@ const shareLinks = [
 </Layout>
 
 <style>
-  main {
-    max-width: 960px;
-    margin: 0 auto;
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .qr-code {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px;
+    background: white;
+  }
+  .qr-code-wrapper {
+    position: relative;
+  }
+  .qr-code-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 220px;
+  }
+  .qr-code-wrapper:hover .qr-code-popup {
+    display: block;
   }
 </style>

@@ -4,6 +4,7 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getTutorialArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getTutorialArticle(slug, 'cn');
@@ -11,9 +12,9 @@ if (!data) {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_cn || data.title;
-// const keywords = (data.tags || [])
-//     .map((tag: any) => tag.title_cn || tag.title)
-//     .join(",");
+const keywords = (data.tags || [])
+  .map((tag: any) => tag.title_cn || tag.title)
+  .join(",");
 const description = data.description_cn || data.description;
 const basepath = "/cn/tutorials";
 const tabs = [
@@ -30,39 +31,121 @@ const tabs = [
     active: true,
   },
 ];
+
+const shareLinks = [
+  {
+    name: "qrcode",
+    icon: "fab fa-weixin",
+    qrCode: true
+  },
+  {
+    name: "weibo",
+    icon: "fab fa-weibo",
+    url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
+  }
+];
+
+const currentUrl = Astro.url.href;
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
           data.author && (
               <span title={data.author}>
-            {data.author}
-                <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
-              |
-            </span>
-          </span>
+                {data.author}
+                <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span>
+              </span>
           )
       }
       <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
     </div>
+    
+    <div class="d-md-none mt-3">
+      <ul class="list-unstyled d-flex justify-content-center social-icon social mb-0">
+        {shareLinks.map(link => (
+          <li class="mx-2">
+            {link.qrCode ? (
+              <div class="qr-code-wrapper">
+                <a class="rounded">
+                  <i class={link.icon}></i>
+                </a>
+                <div class="qr-code-popup">
+                  <img 
+                    src={qrCodeDataURL} 
+                    alt="QR Code"
+                    class="qr-code img-fluid"
+                  />
+                </div>
+              </div>
+            ) : (
+              <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                <i class={link.icon}></i>
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+            <li class="mb-2 h6">分享</li>
+            {shareLinks.map(link => (
+              <li class="mt-1">
+                {link.qrCode ? (
+                  <div class="qr-code-wrapper">
+                    <a class="rounded">
+                      <i class={link.icon}></i>
+                    </a>
+                    <div class="qr-code-popup">
+                      <img 
+                        src={qrCodeDataURL} 
+                        alt="QR Code"
+                        class="qr-code img-fluid"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                    <i class={link.icon}></i>
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
             <>
-              <div class="col-md-9 col-18 markdown-body">
+              <div class="col-md-7 col-18 markdown-body">
                 <Fragment set:html={html} />
               </div>
               <div class="col-md-3 col-6 markdown-toc">
-                <Toc headings={headings} />
+                <div class="sticky-top" style="top: 80px; z-index: 1;">
+                  <Toc headings={headings} />
+                </div>
               </div>
             </>
         ) : (
             <>
-              <Fragment set:html={html} />
+              <div class="col-md-10">
+                <Fragment set:html={html} />
+              </div>
             </>
         )
       }
@@ -78,9 +161,16 @@ const tabs = [
 
 <style>
   main {
-    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+  }
+
+  /* 限制视频最大宽度 */
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   /* 模态框样式 */
@@ -101,7 +191,7 @@ const tabs = [
     margin: auto;
     display: block;
     max-width: 80%;
-    max-height: 80%;
+    width: auto;
   }
 
   .close {
@@ -120,33 +210,65 @@ const tabs = [
     text-decoration: none;
     cursor: pointer;
   }
+
+  .qr-code {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px;
+    background: white;
+  }
+  
+  .qr-code-wrapper {
+    position: relative;
+  }
+  
+  .qr-code-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 220px;
+  }
+  
+  .qr-code-wrapper:hover .qr-code-popup {
+    display: block;
+  }
 </style>
 
 <script>
-  // 使用 window.onload 事件提升兼容性
+  // 使用 window.onload 增强兼容性
   window.onload = function() {
     var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image');
+    var modalImg = document.getElementById('modal-image') as HTMLImageElement;
     var closeModal = document.getElementById('close-modal');
 
-    // 用 getElementsByTagName 遍历图片，增强兼容性
-    var images = document.querySelectorAll('.markdown-body img');
+    // 用 getElementsByTagName 查找图片，兼容 IE9 以下版本
+    var images = document.getElementsByTagName('img');
     for (var i = 0; i < images.length; i++) {
-      images[i].style.cursor = 'zoom-in';  // 使用 pointer 替代 zoom-in
-      images[i].onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-      };
+      if (images[i].closest('.markdown-body')) {  // 仅选择 .markdown-body 内的图片
+        images[i].style.cursor = 'zoom-in';  // 使用 pointer 代替 zoom-in 以增强兼容性
+        images[i].onclick = function() {
+          if (modal) modal.style.display = 'block';
+          if (modalImg && this instanceof HTMLImageElement) modalImg.src = this.src;
+        };
+      }
     }
 
     // 关闭模态框
-    closeModal.onclick = function() {
-      modal.style.display = 'none';
-    };
+    if (closeModal) {
+      closeModal.onclick = function() {
+        if (modal) modal.style.display = 'none';
+      };
+    }
 
     // 点击模态框外部区域关闭
     window.onclick = function(event) {
-      if (event.target === modal) {
+      if (event.target === modal && modal) {
         modal.style.display = 'none';
       }
     };

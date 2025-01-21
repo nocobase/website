@@ -50,23 +50,6 @@ const socialLinks = [
   }
 ];
 
-const shareLinks = [
-  {
-    name: "twitter",
-    icon: "fab fa-twitter",
-    url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(description)}&url=${encodeURIComponent('https://www.nocobase.com' + basepath)}`
-  },
-  {
-    name: "linkedin",
-    icon: "fab fa-linkedin",
-    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.nocobase.com' + basepath)}`
-  },
-  {
-    name: "facebook",
-    icon: "fab fa-facebook",
-    url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + basepath)}`
-  }
-];
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -115,7 +98,7 @@ const shareLinks = [
           basepath={basepath}
           description={description}
           recentPosts={data}
-          shareLinks={shareLinks}
+          socialLinks={socialLinks}
           lang="en"
         />
       </div>

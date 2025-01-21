@@ -5,6 +5,7 @@ import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "cn");
@@ -31,6 +32,29 @@ const tabs = [
     active: true,
   },
 ];
+
+const shareLinks = [
+  {
+    name: "qrcode",
+    icon: "fab fa-weixin",
+    qrCode: true
+  },
+  {
+    name: "weibo",
+    icon: "fab fa-weibo",
+    url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
+  }
+];
+
+const currentUrl = Astro.url.href;
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
 ---
 
 <Layout title={title} description={description} keywords={keywords} image={url(data.cover.url)}>
@@ -43,24 +67,84 @@ const tabs = [
     {data.ai_generated_cn && (
         <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(本篇文章由AI翻译)</p>
     )}
+    <div class="d-md-none mt-3">
+      <ul class="list-unstyled d-flex justify-content-center social-icon social mb-0">
+        {shareLinks.map(link => (
+          <li class="mx-2">
+            {link.qrCode ? (
+              <div class="qr-code-wrapper">
+                <a class="rounded">
+                  <i class={link.icon}></i>
+                </a>
+                <div class="qr-code-popup">
+                  <img 
+                    src={qrCodeDataURL} 
+                    alt="QR Code"
+                    class="qr-code img-fluid"
+                  />
+                </div>
+              </div>
+            ) : (
+              <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                <i class={link.icon}></i>
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container row" : "container"}
     >
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+            <li class="mb-2 h6">分享</li>
+            {shareLinks.map(link => (
+              <li class="mt-1">
+                {link.qrCode ? (
+                  <div class="qr-code-wrapper">
+                    <a class="rounded">
+                      <i class={link.icon}></i>
+                    </a>
+                    <div class="qr-code-popup">
+                      <img 
+                        src={qrCodeDataURL} 
+                        alt="QR Code"
+                        class="qr-code img-fluid"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                    <i class={link.icon}></i>
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
           <>
-            <div class="col-md-9 col-18 markdown-body">
+            <div class="col-md-7 col-18 markdown-body">
               <Fragment set:html={html} />
             </div>
             <div class="col-md-3 col-6 markdown-toc">
-              <Toc headings={headings} />
+              <div class="sticky-top" style="top: 80px;">
+                <Toc headings={headings} />
+              </div>
             </div>
           </>
         ) : (
           <>
-            <Fragment set:html={html} />
+            <div class="col-md-10">
+              <Fragment set:html={html} />
+            </div>
           </>
         )
       }
@@ -69,8 +153,34 @@ const tabs = [
 </Layout>
 
 <style>
-  main {
-    max-width: 960px;
-    margin: 0 auto;
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .qr-code {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px;
+    background: white;
+  }
+  .qr-code-wrapper {
+    position: relative;
+  }
+  .qr-code-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 220px;
+  }
+  .qr-code-wrapper:hover .qr-code-popup {
+    display: block;
   }
 </style>
