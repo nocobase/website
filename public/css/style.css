@@ -7041,6 +7041,7 @@ body[data-layout-mode=dark] .mode-light {
   font-size: 12px;
 }
 .blog-container {
+  margin: 0 auto;
   display: flex;
 }
 .blog-container .left-column {
