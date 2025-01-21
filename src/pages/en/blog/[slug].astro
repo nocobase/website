@@ -29,6 +29,24 @@ const tabs = [
     active: true,
   },
 ];
+
+const shareLinks = [
+  {
+    name: "twitter",
+    icon: "fab fa-twitter",
+    url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(description)}&url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "linkedin",
+    icon: "fab fa-linkedin",
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "facebook",
+    icon: "fab fa-facebook",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  }
+];
 ---
 
 <Layout title={title} image={url(data.cover.url)} description={description} keywords={keywords}>
@@ -55,19 +73,38 @@ const tabs = [
     <main
       class={headings.length > 0 ? "container blog-container row" : "container"}
     >
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+            <li class="mb-2 h6">Share</li>
+            {shareLinks.map(link => (
+              <li class="mt-1">
+                <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                  <i class={link.icon}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
           <>
-            <div class="col-md-9 col-18 markdown-body">
+            <div class="col-md-7 col-18 markdown-body">
               <Fragment set:html={html} />
             </div>
             <div class="col-md-3 col-6 markdown-toc">
-              <Toc headings={headings} />
+              <div class="sticky-top" style="top: 80px;">
+                <Toc headings={headings} />
+              </div>
             </div>
           </>
         ) : (
           <>
-            <Fragment set:html={html} />
+            <div class="col-md-10">
+              <Fragment set:html={html} />
+            </div>
           </>
         )
       }

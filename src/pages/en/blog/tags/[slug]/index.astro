@@ -4,11 +4,11 @@ import PageHeader from "../../../../../components/PageHeader.astro";
 import Pagination from "../../../../../components/Pagination.astro";
 import Layout from "../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../utils";
+import BlogSidebar from "../../../../../components/BlogSidebar.astro";
 
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
 const { data, meta } = await listArticles({ tagSlug: slug });
-// const description = `Found ${meta.count} results for '${tag.title}'`;
 const tagpath = '/en/blog/tags/' + slug;
 const basepath = '/en/blog';
 const title = tag.title;
@@ -28,6 +28,42 @@ const tabs = [
     active: true,
   },
 ];
+
+const socialLinks = [
+  {
+    name: "github",
+    icon: "fab fa-github",
+    url: "https://github.com/nocobase"
+  },
+  {
+    name: "twitter", 
+    icon: "fab fa-twitter",
+    url: "https://twitter.com/nocobase"
+  },
+  {
+    name: "discord",
+    icon: "fab fa-discord", 
+    url: "https://discord.gg/nocobase"
+  }
+];
+
+const shareLinks = [
+  {
+    name: "twitter",
+    icon: "fab fa-twitter",
+    url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(description)}&url=${encodeURIComponent('https://www.nocobase.com' + tagpath)}`
+  },
+  {
+    name: "linkedin",
+    icon: "fab fa-linkedin",
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.nocobase.com' + tagpath)}`
+  },
+  {
+    name: "facebook",
+    icon: "fab fa-facebook",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + tagpath)}`
+  }
+];
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -35,32 +71,62 @@ const tabs = [
   </PageHeader>
   <section class="section">
     <div class="container">
-      <main>
-        <section>
-          <ul class="articles">
-            {
-              data.map((post) => (
-                <li>
-                  <a href={`${basepath}/${post.slug}`}>
-                    <img
-                      style="object-fit: cover;"
-                      width={720}
-                      height={360}
-                      src={url(post.cover.url)}
-                      alt={post.title}
-                    />
-                    <h4 class="title">{post.title}</h4>
-                    <p class="date">
-                      <FormattedDate date={post.publishedAt || post.createdAt}/>
-                    </p>
-                  </a>
-                </li>
-              ))
-            }
+      <div class="row">
+        <main class="col-md-8">
+          <section>
+            <ul class="articles">
+              {
+                data.map((post, index) => (
+                  <li>
+                    <a href={`${basepath}/${post.slug}`}>
+                      <img
+                        style="object-fit: cover;"
+                        width={720}
+                        height={index === 0 ? 360 : 240}
+                        src={url(post.cover.url)}
+                        alt={post.title}
+                      />
+                      <h4 class="title">{post.title}</h4>
+                      <p class="date">
+                        <FormattedDate date={post.publishedAt || post.createdAt}/>
+                      </p>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+          <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+        </main>
+
+        <BlogSidebar 
+          basepath={basepath}
+          description={description}
+          recentPosts={data}
+          shareLinks={shareLinks}
+          lang="en"
+        />
+      </div>
+
+      <div class="mt-4">
+        <div class="d-flex align-items-center">
+          <span class="me-2">Follow Us:</span>
+          <ul class="list-unstyled social-icon d-flex gap-2 mb-0">
+            {socialLinks.map(link => (
+              <li>
+                <a
+                  href={link.url}
+                  class="btn btn-sm btn-light rounded-circle"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class={link.icon}></i>
+                </a>
+              </li>
+            ))}
           </ul>
-        </section>
-        <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
-      </main>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>

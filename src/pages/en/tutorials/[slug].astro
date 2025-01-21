@@ -28,6 +28,24 @@ const tabs = [
     active: true,
   },
 ];
+
+const shareLinks = [
+  {
+    name: "twitter",
+    icon: "fab fa-twitter",
+    url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(description)}&url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "linkedin",
+    icon: "fab fa-linkedin",
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "facebook",
+    icon: "fab fa-facebook",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  }
+];
 ---
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} breadcrumb={tabs}>
@@ -45,19 +63,38 @@ const tabs = [
   </PageHeader>
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+            <li class="mb-2 h6">Share</li>
+            {shareLinks.map(link => (
+              <li class="mt-1">
+                <a href={link.url} class="rounded" target="_blank" rel="noopener">
+                  <i class={link.icon}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
             <>
-              <div class="col-md-9 col-18 markdown-body">
+              <div class="col-md-7 col-18 markdown-body">
                 <Fragment set:html={html} />
               </div>
               <div class="col-md-3 col-6 markdown-toc">
-                <Toc headings={headings} />
+                <div class="sticky-top" style="top: 80px; z-index: 1;">
+                  <Toc headings={headings} />
+                </div>
               </div>
             </>
         ) : (
             <>
-              <Fragment set:html={html} />
+              <div class="col-md-10">
+                <Fragment set:html={html} />
+              </div>
             </>
         )
       }
@@ -73,9 +110,16 @@ const tabs = [
 
 <style>
   main {
-    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+  }
+
+  /* 限制视频最大宽度 */
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   /* 模态框样式 */
@@ -96,7 +140,7 @@ const tabs = [
     margin: auto;
     display: block;
     max-width: 80%;
-    max-height: 80%;
+    width: auto;
   }
 
   .close {
@@ -121,7 +165,7 @@ const tabs = [
   // 使用 window.onload 增强兼容性
   window.onload = function() {
     var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image');
+    var modalImg = document.getElementById('modal-image') as HTMLImageElement;
     var closeModal = document.getElementById('close-modal');
 
     // 用 getElementsByTagName 查找图片，兼容 IE9 以下版本
@@ -130,20 +174,22 @@ const tabs = [
       if (images[i].closest('.markdown-body')) {  // 仅选择 .markdown-body 内的图片
         images[i].style.cursor = 'zoom-in';  // 使用 pointer 代替 zoom-in 以增强兼容性
         images[i].onclick = function() {
-          modal.style.display = 'block';
-          modalImg.src = this.src;
+          if (modal) modal.style.display = 'block';
+          if (modalImg && this instanceof HTMLImageElement) modalImg.src = this.src;
         };
       }
     }
 
     // 关闭模态框
-    closeModal.onclick = function() {
-      modal.style.display = 'none';
-    };
+    if (closeModal) {
+      closeModal.onclick = function() {
+        if (modal) modal.style.display = 'none';
+      };
+    }
 
     // 点击模态框外部区域关闭
     window.onclick = function(event) {
-      if (event.target === modal) {
+      if (event.target === modal && modal) {
         modal.style.display = 'none';
       }
     };
