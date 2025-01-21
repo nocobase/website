@@ -35,7 +35,7 @@ const tabs = [
 
 const shareLinks = [
   {
-    name: "qrcode",
+    name: "weixin",
     icon: "fab fa-weixin",
     qrCode: true
   },
@@ -43,6 +43,11 @@ const shareLinks = [
     name: "weibo",
     icon: "fab fa-weibo",
     url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
+  },
+  {
+    name: "qrcode",
+    icon: "fas fa-qrcode",
+    qrCode: true
   }
 ];
 
