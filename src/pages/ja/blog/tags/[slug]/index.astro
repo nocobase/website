@@ -83,8 +83,6 @@ const socialLinks = [
 
         <BlogSidebar
           basepath={basepath}
-          description={description}
-          recentPosts={data}
           socialLinks={socialLinks}
           lang="ja"
         />
@@ -93,16 +91,16 @@ const socialLinks = [
       <div class="mt-4">
         <div class="d-flex align-items-center">
           <span class="me-2">フォローする:</span>
-          <ul class="list-unstyled social-icon d-flex gap-2 mb-0">
+          <ul class="list-unstyled social-icon social d-flex gap-2 mb-0">
             {socialLinks.map(link => (
               <li>
                 <a
                   href={link.url}
-                  class="btn btn-sm btn-light rounded-circle"
+                  class="btn btn-sm btn-light"
                   target="_blank"
                   rel="noopener"
                 >
-                  <i class={link.icon}></i>
+                  {link.icon ? <i class={link.icon}></i> : link.text}
                 </a>
               </li>
             ))}

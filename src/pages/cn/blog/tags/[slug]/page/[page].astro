@@ -33,8 +33,13 @@ const socialLinks = [
     img: "https://static-docs.nocobase.com/nocobase-wechat2.jpg"
   },
   {
+    name: "Bilibili",
+    icon: "fab fa-bilibili",
+    url: "https://space.bilibili.com/3546757208214025"
+  },
+  {
     name: "zhihu",
-    icon: "fab fa-zhihu",
+    text: "知",
     url: "https://www.zhihu.com/org/nocobase-33"
   },
   {
@@ -84,8 +89,6 @@ const socialLinks = [
 
         <BlogSidebar 
           basepath={basepath}
-          description={description}
-          recentPosts={data}
           socialLinks={socialLinks}
           lang="cn"
         />
@@ -94,16 +97,16 @@ const socialLinks = [
       <div class="mt-4">
         <div class="d-flex align-items-center">
           <span class="me-2">关注我们：</span>
-          <ul class="list-unstyled social-icon d-flex gap-2 mb-0">
+          <ul class="list-unstyled social-icon social d-flex gap-2 mb-0">
             {socialLinks.map(link => (
               <li class="position-relative">
                 <a
                   href={link.url}
-                  class="btn btn-sm btn-light rounded-circle"
+                  class="btn btn-sm btn-light"
                   target="_blank"
                   rel="noopener"
                 >
-                  <i class={link.icon}></i>
+                  {link.icon ? <i class={link.icon}></i> : link.text}
                 </a>
                 {link.img && (
                   <div class="qr-popup position-absolute d-none">

@@ -84,18 +84,69 @@ export async function listPluginCategories() {
 }
 
 
-export async function listArticles(options?: { hideOnBlog?: boolean, pageSize?: number, categorySlug?: string; tagSlug?: string; page?: number; }) {
-  const { hideOnBlog, categorySlug, tagSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
-  let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&appends=cover&sort=-publishedAt&token=${token}&filter[hideOnListPage.$isFalsy]=true&filter[status]=published`;
-  if (tagSlug) {
-    url += `&filter[tags.slug]=${tagSlug}`;
+export async function listArticles(options?: { 
+  hideOnBlog?: boolean, 
+  pageSize?: number, 
+  categorySlug?: string; 
+  tagSlug?: string; 
+  page?: number;
+  filter?: Record<string, any>;
+  sort?: string[];
+  appends?: string[];
+}) {
+  const { 
+    hideOnBlog, 
+    categorySlug, 
+    tagSlug, 
+    page = 1, 
+    pageSize = 9,
+    filter: customFilter,
+    sort = ['-publishedAt'],
+    appends = ['cover']
+  } = options || {};
+
+  let url = `${baseURL}articles:list?page=${page}&pageSize=${pageSize}&token=${token}`;
+
+  // Add appends
+  if (appends.length) {
+    url += appends.map(append => `&appends[]=${append}`).join('');
   }
-  if (categorySlug) {
-    url += `&filter[category.slug]=${categorySlug}`;
+
+  // Add sorting
+  if (sort.length) {
+    url += sort.map(s => `&sort[]=${s}`).join('');
   }
+
+  // Build filter object
+  const filterConditions: any[] = [
+    { status: 'published' },
+    { hideOnListPage: { $isFalsy: true } }
+  ];
+
   if (hideOnBlog === false) {
-    url += `&filter[hideOnBlog.$isFalsy]=true`;
+    filterConditions.push({ hideOnBlog: { $isFalsy: true } });
   }
+
+  if (tagSlug) {
+    filterConditions.push({ 'tags.slug': tagSlug });
+  }
+
+  if (categorySlug) {
+    filterConditions.push({ 'category.slug': categorySlug });
+  }
+
+  // Merge custom filter if provided
+  if (customFilter) {
+    if (customFilter.$and) {
+      filterConditions.push(...customFilter.$and);
+    } else {
+      filterConditions.push(customFilter);
+    }
+  }
+
+  const filter = { $and: filterConditions };
+  url += `&filter=${encodeURIComponent(JSON.stringify(filter))}`;
+
   const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };
   return { data, meta };

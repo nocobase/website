@@ -1,20 +1,32 @@
 ---
 import FormattedDate from "./FormattedDate.astro";
+import { listArticles } from "../utils";
+const { data, meta } = await listArticles({
+  page: 1,
+  pageSize: 20,
+  appends: ['tags', 'cover'],
+  filter: {
+    $and: [
+      { tags: { title: { $notIncludes: 'No-Code+News' } } },
+      { status: { $eq: 'published' } }
+    ]
+  }
+});
+const recentPosts = data;
 
 interface Props {
   basepath: string;
   description: string;
-  recentPosts: Array<any>;
   socialLinks: Array<{
     name: string;
-    icon: string;
+    icon?: string;
+    text?: string;
     url: string;
     img?: string;
   }>;
   lang?: string;
 }
-
-const { basepath, description, recentPosts, socialLinks, lang = 'en' } = Astro.props;
+const { basepath, socialLinks, lang = 'en' } = Astro.props;
 
 // 本地化文本
 const i18n = {
@@ -59,17 +71,17 @@ const i18n = {
     </div>
     <div class="card-body">
       <ul
-      class="list-unstyled social-icon d-flex flex-wrap justify-content-center gap-2 mb-3"
+      class="list-unstyled social-icon social d-flex flex-wrap justify-content-center gap-2 mb-3"
       >
         {socialLinks.map(link => (
-          <li class="position-relative">
+          <li>
             <a
               href={link.url}
-              class="btn btn-light rounded-circle"
+              class="rounded"
               target="_blank"
               rel="noopener"
             >
-              <i class={link.icon}></i>
+              {link.icon ? <i class={link.icon}></i> : link.text}
             </a>
           </li>
         ))}
@@ -234,5 +246,20 @@ const i18n = {
     top: 100px;
     height: calc(100vh - 40px);
     z-index: 10;
+  }
+
+  :global(.social-icon a) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s;
+    color: #8492a6;
+  }
+
+  :global(.social-icon a:hover) {
+    background-color: #2f55d4;
+    color: #ffffff;
   }
 </style>
