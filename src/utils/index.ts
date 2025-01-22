@@ -541,3 +541,48 @@ export async function getSitemapLinks() {
 
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
+
+export async function listReleaseNotes() {
+  const { data } = await listArticles({ 
+    pageSize: 2000,
+    sort: ['-id'],
+    appends: ['sub_tags', 'cover'],
+    filter: {
+      $and: [
+        { 'tags.title': { $eq: 'Release Notes' } },
+        { status: { $eq: 'published' } }
+      ]
+    }
+  });
+
+  const tagPriority = {
+    'Milestone': 1,
+    'Weekly Updates': 2, 
+    'Main': 3,
+    'Beta': 4,
+    'Alpha': 5
+  };
+
+  return data.reduce((acc: any[], article: any) => {
+    const tag = article.sub_tags?.[0]?.title || 'Main';
+    const priority = tagPriority[tag] || 999;
+    
+    const existingGroup = acc.find(g => g.tag === tag);
+    if (existingGroup) {
+      existingGroup.articles.push({
+        ...article,
+        tags: [tag]
+      });
+    } else {
+      acc.push({
+        tag,
+        priority,
+        articles: [{
+          ...article,
+          tags: [tag]
+        }]
+      });
+    }
+    return acc;
+  }, []).sort((a, b) => a.priority - b.priority);
+}

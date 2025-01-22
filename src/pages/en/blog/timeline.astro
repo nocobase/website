@@ -1,0 +1,279 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { listReleaseNotes, url } from "../../../utils";
+
+const description = "NocoBase Release Timeline";
+const basepath = "/en/blog";
+
+const releaseNotes = await listReleaseNotes();
+
+// Process and sort all items chronologically
+const allItems = releaseNotes.flatMap(({ tag, priority, articles }) => 
+  articles.map(article => ({
+    ...article,
+    tags: [tag],
+    priority,
+    publishedAt: new Date(article.publishedAt)
+  }))
+).sort((a, b) => b.publishedAt - a.publishedAt);
+
+// Group items by priority
+const groupedNotes = allItems.reduce((acc, item) => {
+  if (item.priority >= 3) {
+    // Group priority 3+ items
+    if (!acc.length || acc[acc.length-1].type !== 'group') {
+      acc.push({
+        type: 'group',
+        priority: item.priority,
+        items: [item],
+        publishedAt: item.publishedAt
+      });
+    } else {
+      acc[acc.length-1].items.push(item);
+    }
+  } else {
+    // Add single items directly
+    acc.push({
+      type: 'single',
+      ...item
+    });
+  }
+  return acc;
+}, []);
+
+const tabs = [
+  { title: "Home", link: "/en/" },
+  { title: "Blog", link: "/en/blog" },
+  { title: "Release Timeline", active: true }
+];
+
+const priorityStyles = {
+  2: "weekly",
+  3: "stable", 
+  4: "preview",
+  5: "development"
+};
+
+const filterTypes = [
+  { id: 'all', label: 'All', value: 'all', className: '' },
+  { id: 'weekly', label: 'Weekly', value: '2', className: 'text-success' },
+  { id: 'stable', label: 'Stable', value: '3', className: 'text-info' },
+  { id: 'preview', label: 'Preview', value: '4', className: 'text-warning' },
+  { id: 'development', label: 'Development', value: '5', className: 'text-danger' }
+];
+---
+
+<Layout title="Release Timeline" description={description}>
+  <PageHeader
+    title="Release Timeline"
+    description={description}
+    breadcrumb={tabs}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="filter-buttons text-center mb-4">
+            {filterTypes.map(filter => (
+              <div class="form-check form-check-inline">
+                <input 
+                  class="form-check-input" 
+                  type="checkbox" 
+                  id={`filter-${filter.id}`}
+                  value={filter.value}
+                  checked={filter.value === 'all'}
+                />
+                <label class={`form-check-label ${filter.className}`} for={`filter-${filter.id}`}>
+                  {filter.label}
+                </label>
+              </div>
+            ))}
+          </div>
+
+          <div class="timeline-page position-relative">
+            {groupedNotes.map((entry, index) => {
+              const date = entry.type === 'group' ? entry.items[0].publishedAt : entry.publishedAt;
+              const isEven = index % 2 === 0;
+              
+              return (
+                <div class="timeline-item mt-4">
+                  <div class="row">
+                    {isEven ? (
+                      <>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                            <FormattedDate date={date} />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          {entry.type === 'group' ? (
+                            <div class={`card event rounded shadow border-0 overflow-hidden float-start ${priorityStyles[entry.priority]}`}>
+                              <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                  {entry.items.map(item => (
+                                    <li data-priority={item.priority} data-tags={item.tags?.join(',')}>
+                                      <a 
+                                        href={`${basepath}/${item.slug}`} 
+                                        data-bs-toggle="tooltip" 
+                                        data-bs-placement="top" 
+                                        title={item.publishedAt.toLocaleDateString()}
+                                      >
+                                        {item.title}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ) : (
+                            <div class={`card event rounded shadow border-0 overflow-hidden float-start ${priorityStyles[entry.priority]}`} data-priority={entry.priority} data-tags={entry.tags?.join(',')}>
+                              {entry.cover && entry.priority <= 2 && (
+                                <img src={url(entry.cover.url)} class="img-fluid" alt={entry.title} />
+                              )}
+                              <div class="card-body">
+                                <h4>
+                                  <a 
+                                    href={`${basepath}/${entry.slug}`} 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title={entry.publishedAt.toLocaleDateString()}
+                                  >
+                                    {entry.title}
+                                  </a>
+                                </h4>
+                                {entry.priority === 1 && <p class="mt-3 mb-0 text-muted">{entry.description}</p>}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
+                          {entry.type === 'group' ? (
+                            <div class={`card event rounded shadow border-0 overflow-hidden float-start ${priorityStyles[entry.priority]}`}>
+                              <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                  {entry.items.map(item => (
+                                    <li data-priority={item.priority} data-tags={item.tags?.join(',')}>
+                                      <a 
+                                        href={`${basepath}/${item.slug}`} 
+                                        data-bs-toggle="tooltip" 
+                                        data-bs-placement="top" 
+                                        title={item.publishedAt.toLocaleDateString()}
+                                      >
+                                        {item.title}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ) : (
+                            <div class={`card event rounded shadow border-0 overflow-hidden float-start ${priorityStyles[entry.priority]}`} data-priority={entry.priority} data-tags={entry.tags?.join(',')}>
+                              {entry.cover && entry.priority <= 2 && (
+                                <img src={url(entry.cover.url)} class="img-fluid" alt={entry.title} />
+                              )}
+                              <div class="card-body">
+                                <h4>
+                                  <a 
+                                    href={`${basepath}/${entry.slug}`} 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title={entry.publishedAt.toLocaleDateString()}
+                                  >
+                                    {entry.title}
+                                  </a>
+                                </h4>
+                                {entry.priority === 1 && <p class="mt-3 mb-0 text-muted">{entry.description}</p>}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
+                          <div class="duration duration-right rounded border p-2 px-4 position-relative shadow text-start">
+                            <FormattedDate date={date} />
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterCheckboxes = document.querySelectorAll('.form-check-input');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const allCheckbox = document.getElementById('filter-all');
+    let activeFilters = new Set(['all']);
+
+    const updateVisibility = () => {
+      timelineItems.forEach(item => {
+        const card = item.querySelector('.card.event');
+        if (!card) return;
+
+        const isGroup = card.querySelector('ul');
+        const checkVisibility = (priority) => activeFilters.has('all') || activeFilters.has(priority);
+        
+        let hasVisibleItems = false;
+
+        if (isGroup) {
+          card.querySelectorAll('li').forEach(li => {
+            const shouldShow = checkVisibility(li.dataset.priority);
+            li.style.display = shouldShow ? '' : 'none';
+            hasVisibleItems ||= shouldShow;
+          });
+        } else {
+          hasVisibleItems = checkVisibility(card.dataset.priority);
+          card.style.display = hasVisibleItems ? '' : 'none';
+        }
+
+        item.style.display = hasVisibleItems ? '' : 'none';
+      });
+    };
+
+    filterCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        const value = checkbox.value;
+        
+        if (value === 'all') {
+          if (checkbox.checked) {
+            filterCheckboxes.forEach(cb => cb !== allCheckbox && (cb.checked = false));
+            activeFilters = new Set(['all']);
+          } else if (activeFilters.size === 1 && activeFilters.has('all')) {
+            checkbox.checked = true;
+            return;
+          }
+        } else {
+          if (checkbox.checked) {
+            activeFilters.add(value);
+            allCheckbox.checked = false;
+            activeFilters.delete('all');
+          } else {
+            activeFilters.delete(value);
+            if (activeFilters.size === 0) {
+              allCheckbox.checked = true;
+              activeFilters.add('all');
+            }
+          }
+        }
+
+        updateVisibility();
+      });
+    });
+  });
+</script>
