@@ -46,7 +46,7 @@ const i18n = {
 <ul class={`list-unstyled ${vertical ? 'text-center sticky-bar' : 'd-flex justify-content-center'} social-icon social mb-0`}>
   {vertical && <li class="mb-2 h6">{i18n.share}</li>}
   {shareLinks.map(link => (
-    <li class={vertical ? 'mx-2' : 'mx-2'}>
+    <li class={vertical ? 'mx-2 mb-2' : 'mx-2'}>
       {link.qrCode ? (
         <div class="qr-code-wrapper">
           <a 
