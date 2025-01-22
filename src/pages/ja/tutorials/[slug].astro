@@ -5,6 +5,8 @@ import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getTutorialArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
+import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getTutorialArticle(slug, 'ja');
@@ -49,7 +51,13 @@ const shareLinks = [
   {
     name: "qrcode",
     icon: "fas fa-qrcode",
-    qrCode: true
+    qrCode: true,
+    copy: true
+  },
+  {
+    name: "copy",
+    icon: "fas fa-link",
+    copy: true
   }
 ];
 
@@ -63,221 +71,77 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
   }
 });
 ---
+
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
-          data.author && (
-              <span title={data.author}>
-                {data.author}
-                <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span>
-              </span>
-          )
+        data.author && (
+          <span title={data.author}>
+            {data.author}
+            <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
+              |
+            </span>
+          </span>
+        )
       }
       <FormattedDate locale="ja" date={data.publishedAt || data.createdAt} />
     </div>
-    
     <div class="d-md-none mt-3">
-      <ul class="list-unstyled d-flex justify-content-center social-icon social mb-0">
-        {shareLinks.map(link => (
-          <li class="mx-2">
-            {link.qrCode ? (
-              <div class="qr-code-wrapper">
-                <a class="rounded">
-                  <i class={link.icon}></i>
-                </a>
-                <div class="qr-code-popup">
-                  <img 
-                    src={qrCodeDataURL} 
-                    alt="QR コード"
-                    class="qr-code img-fluid"
-                  />
-                </div>
-              </div>
-            ) : (
-              <a href={link.url} class="rounded" target="_blank" rel="noopener">
-                <i class={link.icon}></i>
-              </a>
-            )}
-          </li>
-        ))}
-      </ul>
+      <ShareIcons 
+        shareLinks={shareLinks}
+        qrCodeDataURL={qrCodeDataURL}
+      />
     </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
       <div class="col-md-2 d-none d-md-block">
         <div class="sticky-top" style="top: 80px;">
-          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
-            <li class="mb-2 h6">シェア</li>
-            {shareLinks.map(link => (
-              <li class="mt-1">
-                {link.qrCode ? (
-                  <div class="qr-code-wrapper">
-                    <a class="rounded">
-                      <i class={link.icon}></i>
-                    </a>
-                    <div class="qr-code-popup">
-                      <img 
-                        src={qrCodeDataURL} 
-                        alt="QR コード"
-                        class="qr-code img-fluid"
-                      />
-                    </div>
-                  </div>
-                ) : (
-                  <a href={link.url} class="rounded" target="_blank" rel="noopener">
-                    <i class={link.icon}></i>
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul>
+          <ShareIcons 
+            shareLinks={shareLinks}
+            qrCodeDataURL={qrCodeDataURL}
+            vertical={true}
+          />
         </div>
       </div>
 
       {
         headings.length > 0 ? (
-            <>
-              <div class="col-md-7 col-18 markdown-body">
-                <Fragment set:html={html} />
+          <>
+            <div class="col-md-7 col-18 markdown-body">
+              <Fragment set:html={html} />
+            </div>
+            <div class="col-md-3 col-6 markdown-toc">
+              <div class="sticky-top" style="top: 80px;">
+                <Toc headings={headings} />
               </div>
-              <div class="col-md-3 col-6 markdown-toc">
-                <div class="sticky-top" style="top: 80px; z-index: 1;">
-                  <Toc headings={headings} />
-                </div>
-              </div>
-            </>
+            </div>
+          </>
         ) : (
-            <>
-              <div class="col-md-10">
-                <Fragment set:html={html} />
-              </div>
-            </>
+          <>
+            <div class="col-md-10">
+              <Fragment set:html={html} />
+            </div>
+          </>
         )
       }
     </main>
   </section>
 
-  <!-- モーダルコンテナ -->
-  <div id="image-modal" class="image-modal">
-    <span id="close-modal" class="close">&times;</span>
-    <img class="modal-content" id="modal-image" alt="拡大画像">
-  </div>
+  <ImageZoom />
 </Layout>
 
 <style>
   main {
-    max-width: 960px;
     margin: 0 auto;
   }
 
-  /* 動画の最大幅を制限 */
+  /* 限制视频最大宽度 */
   :global(.markdown-body iframe) {
     max-width: 100%;
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
   }
-
-  /* モーダルスタイル */
-  .image-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    width: auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .qr-code {
-    border: 1px solid #eee;
-    border-radius: 4px;
-    padding: 8px;
-    background: white;
-  }
-  
-  .qr-code-wrapper {
-    position: relative;
-  }
-  
-  .qr-code-popup {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
-    width: 220px;
-  }
-  
-  .qr-code-wrapper:hover .qr-code-popup {
-    display: block;
-  }
 </style>
-
-<script>
-  // window.onload を使用して互換性を向上
-  window.onload = function() {
-    const modal = document.getElementById('image-modal');
-    const modalImg = document.getElementById('modal-image') as HTMLImageElement;
-    const closeModal = document.getElementById('close-modal');
-
-    // markdown-body 内の画像のみを選択
-    const images = document.getElementsByTagName('img');
-    for (let i = 0; i < images.length; i++) {
-      if (images[i].closest('.markdown-body')) {
-        images[i].style.cursor = 'zoom-in';
-        images[i].onclick = function() {
-          if (modal) modal.style.display = 'block';
-          if (modalImg && this instanceof HTMLImageElement) modalImg.src = this.src;
-        };
-      }
-    }
-
-    // モーダルを閉じる
-    if (closeModal) {
-      closeModal.onclick = function() {
-        if (modal) modal.style.display = 'none';
-      };
-    }
-
-    // モーダルの外部をクリックして閉じる
-    window.onclick = function(event) {
-      if (event.target === modal && modal) {
-        modal.style.display = 'none';
-      }
-    };
-  };
-</script>

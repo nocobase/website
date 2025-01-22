@@ -5,6 +5,8 @@ import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getTutorialArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
+import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getTutorialArticle(slug, 'cn');
@@ -32,25 +34,33 @@ const tabs = [
   },
 ];
 
+const currentUrl = Astro.url.href;
+
 const shareLinks = [
   {
     name: "weixin",
     icon: "fab fa-weixin",
-    qrCode: true
+    qrCode: true,
+    copy: true
   },
   {
-    name: "weibo",
+    name: "微博",
     icon: "fab fa-weibo",
     url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
   },
   {
     name: "qrcode",
     icon: "fas fa-qrcode",
-    qrCode: true
+    qrCode: true,
+    copy: true
+  },
+  {
+    name: "copy",
+    icon: "fas fa-link",
+    copy: true
   }
 ];
 
-const currentUrl = Astro.url.href;
 const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
   width: 200,
   margin: 1,
@@ -76,61 +86,23 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
     </div>
     
     <div class="d-md-none mt-3">
-      <ul class="list-unstyled d-flex justify-content-center social-icon social mb-0">
-        {shareLinks.map(link => (
-          <li class="mx-2">
-            {link.qrCode ? (
-              <div class="qr-code-wrapper">
-                <a class="rounded">
-                  <i class={link.icon}></i>
-                </a>
-                <div class="qr-code-popup">
-                  <img 
-                    src={qrCodeDataURL} 
-                    alt="QR Code"
-                    class="qr-code img-fluid"
-                  />
-                </div>
-              </div>
-            ) : (
-              <a href={link.url} class="rounded" target="_blank" rel="noopener">
-                <i class={link.icon}></i>
-              </a>
-            )}
-          </li>
-        ))}
-      </ul>
+      <ShareIcons 
+        shareLinks={shareLinks}
+        qrCodeDataURL={qrCodeDataURL}
+        lang="cn"
+      />
     </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
       <div class="col-md-2 d-none d-md-block">
         <div class="sticky-top" style="top: 80px;">
-          <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
-            <li class="mb-2 h6">分享</li>
-            {shareLinks.map(link => (
-              <li class="mt-1">
-                {link.qrCode ? (
-                  <div class="qr-code-wrapper">
-                    <a class="rounded">
-                      <i class={link.icon}></i>
-                    </a>
-                    <div class="qr-code-popup">
-                      <img 
-                        src={qrCodeDataURL} 
-                        alt="QR Code"
-                        class="qr-code img-fluid"
-                      />
-                    </div>
-                  </div>
-                ) : (
-                  <a href={link.url} class="rounded" target="_blank" rel="noopener">
-                    <i class={link.icon}></i>
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul>
+          <ShareIcons 
+            shareLinks={shareLinks}
+            qrCodeDataURL={qrCodeDataURL}
+            vertical={true}
+            lang="cn"
+          />
         </div>
       </div>
 
@@ -157,16 +129,11 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
     </main>
   </section>
 
-  <!-- 模态框容器 -->
-  <div id="image-modal" class="image-modal">
-    <span id="close-modal" class="close">&times;</span>
-    <img class="modal-content" id="modal-image" alt="放大图像">
-  </div>
+  <ImageZoom />
 </Layout>
 
 <style>
   main {
-    max-width: 960px;
     margin: 0 auto;
   }
 
@@ -177,105 +144,4 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
     height: auto;
     aspect-ratio: 16 / 9;
   }
-
-  /* 模态框样式 */
-  .image-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    width: auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .qr-code {
-    border: 1px solid #eee;
-    border-radius: 4px;
-    padding: 8px;
-    background: white;
-  }
-  
-  .qr-code-wrapper {
-    position: relative;
-  }
-  
-  .qr-code-popup {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
-    width: 220px;
-  }
-  
-  .qr-code-wrapper:hover .qr-code-popup {
-    display: block;
-  }
 </style>
-
-<script>
-  // 使用 window.onload 增强兼容性
-  window.onload = function() {
-    var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image') as HTMLImageElement;
-    var closeModal = document.getElementById('close-modal');
-
-    // 用 getElementsByTagName 查找图片，兼容 IE9 以下版本
-    var images = document.getElementsByTagName('img');
-    for (var i = 0; i < images.length; i++) {
-      if (images[i].closest('.markdown-body')) {  // 仅选择 .markdown-body 内的图片
-        images[i].style.cursor = 'zoom-in';  // 使用 pointer 代替 zoom-in 以增强兼容性
-        images[i].onclick = function() {
-          if (modal) modal.style.display = 'block';
-          if (modalImg && this instanceof HTMLImageElement) modalImg.src = this.src;
-        };
-      }
-    }
-
-    // 关闭模态框
-    if (closeModal) {
-      closeModal.onclick = function() {
-        if (modal) modal.style.display = 'none';
-      };
-    }
-
-    // 点击模态框外部区域关闭
-    window.onclick = function(event) {
-      if (event.target === modal && modal) {
-        modal.style.display = 'none';
-      }
-    };
-  };
-</script>
