@@ -4,10 +4,9 @@ import { listArticles } from "../utils";
 const { data, meta } = await listArticles({
   page: 1,
   pageSize: 20,
-  appends: ['tags', 'cover'],
   filter: {
     $and: [
-      { tags: { title: { $notIncludes: 'No-Code+News' } } },
+      { tags: { title: { $notIncludes: 'No-Code News' } } },
       { status: { $eq: 'published' } }
     ]
   }

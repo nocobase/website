@@ -542,10 +542,11 @@ export async function getSitemapLinks() {
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
+
 export async function listReleaseNotes() {
   const { data } = await listArticles({ 
     pageSize: 2000,
-    sort: ['-id'],
+    sort: ['-publishedAt'], // 使用发布时间排序更合理
     appends: ['sub_tags', 'cover'],
     filter: {
       $and: [
@@ -555,34 +556,35 @@ export async function listReleaseNotes() {
     }
   });
 
-  const tagPriority = {
-    'Milestone': 1,
-    'Weekly Updates': 2, 
-    'Main': 3,
-    'Beta': 4,
-    'Alpha': 5
-  };
-
-  return data.reduce((acc: any[], article: any) => {
-    const tag = article.sub_tags?.[0]?.title || 'Main';
-    const priority = tagPriority[tag] || 999;
+  // 安全处理管道
+  return (data || []).map(article => {
+    // 安全访问 sub_tags（处理 undefined/null/非数组情况）
+    const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
     
-    const existingGroup = acc.find(g => g.tag === tag);
-    if (existingGroup) {
-      existingGroup.articles.push({
-        ...article,
-        tags: [tag]
-      });
-    } else {
-      acc.push({
-        tag,
-        priority,
-        articles: [{
-          ...article,
-          tags: [tag]
-        }]
-      });
-    }
-    return acc;
-  }, []).sort((a, b) => a.priority - b.priority);
+    // 原始逻辑：取第一个有效标签，否则默认为 Main
+    const primaryTag = subTags[0]?.title || 'Main';
+    
+    // 保留所有标签（兼容原始数据）
+    const allTags = article.sub_tags.map(t => t.title.toLowerCase());
+
+    // 原始周报过滤逻辑
+    if (primaryTag === 'Weekly Updates') return null;
+
+    return {
+      ...article,
+      // 保留原始数据结构
+      tags: allTags,
+      content: article.content || '',
+      // 兼容原始 milestone 判断逻辑
+      isMilestone: (article.sub_tags || []).some(t => t.title === 'Milestone'),
+      // 保持原始优先级逻辑
+      priority: ['Milestone', 'Main', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
+      // 安全处理日期
+      publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
+      // 安全处理封面
+      cover: article.cover?.url ? { url: article.cover.url } : null
+    };
+  })
+  .filter(Boolean) // 过滤掉周报
+  .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // 按时间倒序
 }
