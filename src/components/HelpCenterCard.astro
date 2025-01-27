@@ -1,5 +1,5 @@
 ---
-const { title, size, articles, maxArticles = 5, icon, viewMoreLink , language} = Astro.props;
+const { title, size, articles, maxArticles = 5, icon, viewMoreLink, language, source } = Astro.props;
 
 // cols number
 let articleCols = "row-cols-1 row-cols-sm-2";
@@ -10,6 +10,9 @@ if (size === "wide") {
 } else {
     articleCols += " row-cols-md-1";
 }
+
+// Get base URL for website links
+const baseUrl = source === 'website' ? Astro.url.origin : '';
 ---
 <div class={`features feature-primary card h-100 shadow-sm p-4`}>
     <!-- icon -->
@@ -25,7 +28,23 @@ if (size === "wide") {
                     <div class="col">
                         <div class="d-flex align-items-center mb-2">
                             <i class="fas fa-chevron-right text-primary me-2"></i>
-                            <a href="#" class="text-decoration-none text-muted">{article.title}</a>
+                            <a 
+                                href={source === 'website' ? 
+                                    `${baseUrl}${language === 'cn' ? article.url_cn : language === 'ja' ? article.url_ja : article.url}` : 
+                                    language === 'cn' ? article.url_cn : language === 'ja' ? article.url_ja : article.url
+                                } 
+                                class="text-decoration-none text-muted text-truncate" 
+                                title={language === 'cn' ? article.title_cn : 
+                                    language === 'ja' ? article.title_ja : 
+                                    article.title
+                                }
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                            >{
+                                language === 'cn' ? article.title_cn : 
+                                language === 'ja' ? article.title_ja : 
+                                article.title
+                            }</a>
                         </div>
                     </div>
             ))}
@@ -33,14 +52,16 @@ if (size === "wide") {
     </div>
 
     <!-- view more -->
-    <div class="mt-3 d-flex justify-content-end">
-        <a href={viewMoreLink} class="text-primary" aria-label={`${title}`}>
-            {language==="cn"?
-                "查看更多":
-            language==="ja"?
-                "もっと見る":
-                "View More"
-            }
-        </a>
-    </div>
+    {viewMoreLink && viewMoreLink.length > 0 && (
+        <div class="mt-3 d-flex justify-content-end">
+            <a href={source === 'website' ? `${baseUrl}${viewMoreLink}` : viewMoreLink} class="text-primary" aria-label={`${title}`}>
+                {language==="cn"?
+                    "查看更多":
+                language==="ja"?
+                    "もっと見る":
+                    "View More"
+                }
+            </a>
+        </div>
+    )}
 </div>
