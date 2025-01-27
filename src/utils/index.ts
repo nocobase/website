@@ -168,7 +168,7 @@ export async function listTutorialArticles(options?: { pageSize?: number, slug?:
 
 export async function listHelpCenterItems(options?: { pageSize?: number,  page?: number, tree?: boolean}) {
   const { tree=true, page = 1, pageSize = 20 } = options || { page: 1, pageSize: 20 };
-  let url = `${baseURL}help_center_tree:list?page=${page}&pageSize=${pageSize}&tree=${tree}&token=${token}`;
+  let url = `${baseURL}help_center_tree:list?page=${page}&pageSize=${pageSize}&sort=item_sort&tree=${tree}&token=${token}&filter[status]=published`;
   const res = await fetch(url);
   const { data, meta } = await res.json() as { data: any[], meta: any };
   return { data, meta };
