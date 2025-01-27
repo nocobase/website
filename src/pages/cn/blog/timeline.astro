@@ -16,7 +16,7 @@ const releaseNotes = await listReleaseNotes();
 
 const allItems = await Promise.all(releaseNotes.map(async (article) => ({
   ...article,
-  renderedContent: await renderMarkdown(article.content) // 确保处理原始内容
+  renderedContent: await renderMarkdown(article.content_cn) // 确保处理原始内容
 })));
 
 const filterTypes = [
