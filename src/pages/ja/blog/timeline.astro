@@ -4,12 +4,29 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { listReleaseNotes, url, processor } from "../../../utils";
 
-const description = "NocoBase リリースタイムライン";
+const description = "最新の機能、改善点、およびバグ修正について学びましょう。";
 const basepath = "/ja/blog";
 // Add this function to process markdown content
 async function renderMarkdown(content: string) {
+  // First process with existing processor
   const { code } = await processor.render(content || '');
-  return code;
+  
+  // Then adjust heading levels by replacing h1-h6 tags
+  const adjustedCode = code
+    .replace(/<h1/g, '<h3')
+    .replace(/<\/h1>/g, '</h3>')
+    .replace(/<h2/g, '<h4')
+    .replace(/<\/h2>/g, '</h4>')
+    .replace(/<h3/g, '<h5')
+    .replace(/<\/h3>/g, '</h5>')
+    .replace(/<h4/g, '<h6')
+    .replace(/<\/h4>/g, '</h6>')
+    .replace(/<h5/g, '<h6')
+    .replace(/<\/h5>/g, '</h6>')
+    .replace(/<h6/g, '<h6')
+    .replace(/<\/h6>/g, '</h6>');
+    
+  return adjustedCode;
 }
 
 const releaseNotes = await listReleaseNotes();
@@ -21,21 +38,27 @@ const allItems = await Promise.all(releaseNotes.map(async (article) => ({
 
 const filterTypes = [
   { id: 'all', label: 'すべて', value: 'all', className: '' },
-  { id: 'main', label: 'main', value: 'main', className: 'text-info' },
+  { id: 'latest', label: 'latest', value: 'latest', className: 'text-info' },
   { id: 'beta', label: 'beta', value: 'beta', className: 'text-warning' },
   { id: 'alpha', label: 'alpha', value: 'alpha', className: 'text-danger' }
 ];
 
+// タグのスタイルクラスを取得するヘルパー関数を追加
+function getTagClassName(tag: string) {
+  const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+  return filterType ? `bg-${filterType.className.replace('text-', '')}` : 'bg-secondary';
+}
+
 const tabs = [
   { title: "ホーム", link: "/ja/" },
   { title: "ブログ", link: "/ja/blog" },
-  { title: "リリースタイムライン", active: true }
+  { title: "リリースノート ", active: true }
 ];
 ---
 
-<Layout title="リリースタイムライン" description={description}>
+<Layout title="リリースノート " description={description}>
   <PageHeader
-    title="リリースタイムライン"
+    title="リリースノート "
     description={description}
     breadcrumb={tabs}
   />
@@ -49,7 +72,8 @@ const tabs = [
               <div class="form-check form-check-inline">
                 <input 
                   class="form-check-input" 
-                  type="checkbox" 
+                  type="radio" 
+                  name="filter-type"
                   id={`filter-${filter.id}`}
                   value={filter.value}
                   checked={filter.value === 'all'}
@@ -77,11 +101,11 @@ const tabs = [
                           <img src={url(article.cover.url)} class="img-fluid" alt={article.title_ja || article.title} />
                         )}
                         <div class="card-body">
-                          <h4>
+                          <h5>
                             <a href={`${basepath}/${article.slug}`}>
                               {article.title_ja || article.title}
                             </a>
-                          </h4>
+                          </h5>
                           <p class="mt-3 mb-0 text-muted">{article.description_ja || article.description}</p>
                         </div>
                       </div>
@@ -97,7 +121,7 @@ const tabs = [
                           {article.tags.length > 0 && (
                             <div class="mt-2">
                               {article.tags.map(tag => (
-                                <span class="badge bg-secondary me-1">{tag}</span>
+                                <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
                               ))}
                             </div>
                           )}
@@ -140,38 +164,22 @@ const tabs = [
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const filters = new Set();
-    const allCheckbox = document.getElementById('filter-all');
-
-    document.querySelectorAll('.form-check-input').forEach(checkbox => {
-      checkbox.addEventListener('change', (e) => {
-        const value = e.target.value.toLowerCase();
-
-        if (value === 'all') {
-          document.querySelectorAll('.form-check-input').forEach(cb => {
-            cb.checked = e.target.checked;
-          });
-          filters.clear();
-          if (e.target.checked) filters.add('all');
-        } else {
-          e.target.checked ? filters.add(value) : filters.delete(value);
-          allCheckbox.checked = false;
-          filters.delete('all');
-        }
+    document.querySelectorAll('.form-check-input').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const selectedValue = e.target.value.toLowerCase();
 
         document.querySelectorAll('.timeline-item').forEach(item => {
           const tags = Array.from(item.dataset.tags.split(','))
             .map(t => t.toLowerCase());
           
-          if (filters.size === 0) {
+          // 「すべて」が選択された場合、全てのアイテムを表示
+          if (selectedValue === 'all') {
             item.style.display = 'block';
             return;
           }
 
-          const shouldShow = filters.has('all') || 
-            Array.from(filters).some(f => tags.includes(f));
-
-          item.style.display = shouldShow ? 'block' : 'none';
+          // 選択されたフィルターに一致するアイテムのみを表示
+          item.style.display = tags.includes(selectedValue) ? 'block' : 'none';
         });
       });
     });

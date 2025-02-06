@@ -561,8 +561,8 @@ export async function listReleaseNotes() {
     // 安全访问 sub_tags（处理 undefined/null/非数组情况）
     const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
     
-    // 原始逻辑：取第一个有效标签，否则默认为 Main
-    const primaryTag = subTags[0]?.title || 'Main';
+    // 原始逻辑：取第一个有效标签，否则默认为 Latest
+    const primaryTag = subTags[0]?.title || 'Latest';
     
     // 保留所有标签（兼容原始数据）
     const allTags = article.sub_tags.map(t => t.title.toLowerCase());
@@ -578,7 +578,7 @@ export async function listReleaseNotes() {
       // 兼容原始 milestone 判断逻辑
       isMilestone: (article.sub_tags || []).some(t => t.title === 'Milestone'),
       // 保持原始优先级逻辑
-      priority: ['Milestone', 'Main', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
+      priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
       // 安全处理日期
       publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
       // 安全处理封面
