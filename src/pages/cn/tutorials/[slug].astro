@@ -4,6 +4,9 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getTutorialArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
+import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getTutorialArticle(slug, 'cn');
@@ -11,9 +14,9 @@ if (!data) {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_cn || data.title;
-// const keywords = (data.tags || [])
-//     .map((tag: any) => tag.title_cn || tag.title)
-//     .join(",");
+const keywords = (data.tags || [])
+  .map((tag: any) => tag.title_cn || tag.title)
+  .join(",");
 const description = data.description_cn || data.description;
 const basepath = "/cn/tutorials";
 const tabs = [
@@ -30,125 +33,109 @@ const tabs = [
     active: true,
   },
 ];
+
+const currentUrl = Astro.url.href;
+
+const shareLinks = [
+  {
+    name: "weixin",
+    icon: "fab fa-weixin",
+    qrCode: true,
+    copy: true
+  },
+  {
+    name: "微博",
+    icon: "fab fa-weibo",
+    url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
+  },
+  {
+    name: "copy",
+    icon: "fas fa-link",
+    copy: true
+  }
+];
+
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
           data.author && (
               <span title={data.author}>
-            {data.author}
-                <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
-              |
-            </span>
-          </span>
+                {data.author}
+                <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span>
+              </span>
           )
       }
       <FormattedDate locale={"zh-cn"} date={data.publishedAt || data.createdAt} />
     </div>
+    
+    <div class="d-md-none mt-3">
+      <ShareIcons 
+        shareLinks={shareLinks}
+        qrCodeDataURL={qrCodeDataURL}
+        lang="cn"
+      />
+    </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ShareIcons 
+            shareLinks={shareLinks}
+            qrCodeDataURL={qrCodeDataURL}
+            vertical={true}
+            lang="cn"
+          />
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
             <>
-              <div class="col-md-9 col-18 markdown-body">
+              <div class="col-md-7 col-18 markdown-body">
                 <Fragment set:html={html} />
               </div>
               <div class="col-md-3 col-6 markdown-toc">
-                <Toc headings={headings} />
+                <div class="sticky-top" style="top: 80px; z-index: 1;">
+                  <Toc headings={headings} />
+                </div>
               </div>
             </>
         ) : (
             <>
-              <Fragment set:html={html} />
+              <div class="col-md-10">
+                <Fragment set:html={html} />
+              </div>
             </>
         )
       }
     </main>
   </section>
 
-  <!-- 模态框容器 -->
-  <div id="image-modal" class="image-modal">
-    <span id="close-modal" class="close">&times;</span>
-    <img class="modal-content" id="modal-image" alt="放大图像">
-  </div>
+  <ImageZoom />
 </Layout>
 
 <style>
   main {
-    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
-  /* 模态框样式 */
-  .image-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
+  /* 限制视频最大宽度 */
+  :global(.markdown-body iframe) {
+    max-width: 100%;
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 </style>
-
-<script>
-  // 使用 window.onload 事件提升兼容性
-  window.onload = function() {
-    var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image');
-    var closeModal = document.getElementById('close-modal');
-
-    // 用 getElementsByTagName 遍历图片，增强兼容性
-    var images = document.querySelectorAll('.markdown-body img');
-    for (var i = 0; i < images.length; i++) {
-      images[i].style.cursor = 'zoom-in';  // 使用 pointer 替代 zoom-in
-      images[i].onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-      };
-    }
-
-    // 关闭模态框
-    closeModal.onclick = function() {
-      modal.style.display = 'none';
-    };
-
-    // 点击模态框外部区域关闭
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    };
-  };
-</script>

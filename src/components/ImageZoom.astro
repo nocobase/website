@@ -1,0 +1,74 @@
+<div id="image-modal" class="image-modal">
+  <span id="close-modal" class="close">&times;</span>
+  <img class="modal-content" id="modal-image" alt="放大图像">
+</div>
+
+<style>
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    width: auto;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  window.onload = function() {
+    var modal = document.getElementById('image-modal');
+    var modalImg = document.getElementById('modal-image') as HTMLImageElement;
+    var closeModal = document.getElementById('close-modal');
+
+    var images = document.getElementsByTagName('img');
+    for (var i = 0; i < images.length; i++) {
+      if (images[i].closest('.markdown-body')) {
+        images[i].style.cursor = 'zoom-in';
+        images[i].onclick = function() {
+          if (modal) modal.style.display = 'block';
+          if (modalImg && this instanceof HTMLImageElement) modalImg.src = this.src;
+        };
+      }
+    }
+
+    if (closeModal) {
+      closeModal.onclick = function() {
+        if (modal) modal.style.display = 'none';
+      };
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal && modal) {
+        modal.style.display = 'none';
+      }
+    };
+  };
+</script> 

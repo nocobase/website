@@ -1,0 +1,148 @@
+---
+interface Props {
+  shareLinks: Array<{
+    name: string;
+    icon: string;
+    qrCode?: boolean;
+    copy?: boolean;
+    url?: string;
+  }>;
+  qrCodeDataURL: string;
+  vertical?: boolean;
+  lang?: string;
+}
+
+const { shareLinks, qrCodeDataURL, vertical = false, lang = 'en' } = Astro.props;
+
+// 本地化文本
+const i18n = {
+  en: {
+    share: 'Share',
+    scanToShare: 'Scan to share',
+    copyLink: 'Copy link',
+    shareTo: 'Share to ',
+    copySuccess: 'Copied',
+    copyFailed: 'Copy failed'
+  },
+  cn: {
+    share: '分享',
+    scanToShare: '扫码分享',
+    copyLink: '复制链接',
+    shareTo: '分享到 ',
+    copySuccess: '复制成功',
+    copyFailed: '复制失败'
+  },
+  ja: {
+    share: 'シェア',
+    scanToShare: 'QRコードをスキャン',
+    copyLink: 'リンクをコピー',
+    shareTo: 'シェア先：',
+    copySuccess: 'コピーしました',
+    copyFailed: 'コピーに失敗しました'
+  }
+}[lang];
+---
+
+<ul class={`list-unstyled ${vertical ? 'text-center sticky-bar' : 'd-flex justify-content-center'} social-icon social mb-0`}>
+  {vertical && <li class="mb-2 h6">{i18n.share}</li>}
+  {shareLinks.map(link => (
+    <li class={vertical ? 'mx-2 mb-2' : 'mx-2'}>
+      {link.qrCode ? (
+        <div class="qr-code-wrapper">
+          <a 
+            class="rounded share-icon-tooltip" 
+            style="cursor: pointer;"
+            data-bs-toggle="tooltip"
+            data-bs-title={i18n.scanToShare}
+            class:list={[
+              { "share-copy-btn": link.copy }
+            ]}
+          >
+            <i class={link.icon}></i>
+          </a>
+          <div class="qr-code-popup">
+            <img 
+              src={qrCodeDataURL} 
+              alt="QR Code"
+              class="qr-code img-fluid"
+            />
+          </div>
+        </div>
+      ) : (
+        <a 
+          class="rounded share-icon-tooltip"
+          style="cursor: pointer;"
+          data-bs-toggle="tooltip"
+          data-bs-title={link.name === 'copy' ? i18n.copyLink : i18n.shareTo + link.name}
+          data-share-action={link.name}
+          class:list={[
+            "share-action-btn",
+            { "share-copy-btn": link.name === 'copy' }
+          ]}
+          {...(link.url ? {
+            href: link.url,
+            target: "_blank",
+            rel: "noopener"
+          } : {})}
+        >
+          <i class={link.icon}></i>
+        </a>
+      )}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .qr-code {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px;
+    background: white;
+  }
+  .qr-code-wrapper {
+    position: relative;
+  }
+  .qr-code-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 220px;
+  }
+  .qr-code-wrapper:hover .qr-code-popup {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const copyLinks = document.querySelectorAll('.share-copy-btn');
+    copyLinks.forEach(link => {
+      link.addEventListener('click', async function(event) {
+        event.preventDefault();
+        const tooltip = bootstrap.Tooltip.getOrCreateInstance(event.currentTarget);
+        const originalTitle = tooltip._config.title;
+        
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          tooltip.setContent({ '.tooltip-inner': document.documentElement.lang === 'cn' ? '复制成功' : (document.documentElement.lang === 'ja' ? 'コピーしました' : 'Copied') });
+          tooltip.show();
+          
+          setTimeout(() => {
+            tooltip.hide();
+            tooltip.setContent({ '.tooltip-inner': originalTitle });
+          }, 1000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+          tooltip.setContent({ '.tooltip-inner': document.documentElement.lang === 'cn' ? '复制失败' : (document.documentElement.lang === 'ja' ? 'コピーに失敗しました' : 'Copy failed') });
+          tooltip.show();
+        }
+      });
+    });
+  });
+</script> 

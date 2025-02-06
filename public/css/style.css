@@ -7041,6 +7041,7 @@ body[data-layout-mode=dark] .mode-light {
   font-size: 12px;
 }
 .blog-container {
+  margin: 0 auto;
   display: flex;
 }
 .blog-container .left-column {
@@ -7168,6 +7169,7 @@ ul.articles a:hover img {
  .language-switcher {
    position: relative;
    display: inline-block;
+   z-index: 100;
  }
 
 .language-icon {

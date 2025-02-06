@@ -9,13 +9,13 @@ const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
 ---
 
 <Layout
-        title="NocoBase 帮助中心"
-        description="NocoBase 官方帮助中心"
-        keywords="NocoBase, 帮助, 文档"
+        title="NocoBase Help Center"
+        description="NocoBase Official Help Center"
+        keywords="NocoBase, help, documentation"
 >
     <PageHeader
-            title="NocoBase 帮助中心"
-            description="关于 NocoBase 的所有帮助和文档"
+            title="NocoBase Help Center"
+            description="All help and documentation about NocoBase"
     />
 
     <section class="section">
@@ -24,14 +24,14 @@ const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
                     <div class="mb-5">
                         <h4 class="title mb-4 d-flex align-items-center">
                             <i class=`${group.icon_text || "fas fa-book"} me-2`></i>
-                            {group.title_cn}
+                            {group.title}
                         </h4>
                         <hr class="mb-4"/>
 
                         <div class="row g-4">
                             {group.children.map(card => {
-                                // 动态设置卡片的列宽
-                                let colClasses = "col-12"; // 默认宽度
+                                // Dynamically set card column width
+                                let colClasses = "col-12"; // Default width
 
                                 switch (card.size) {
                                     case "wide":
@@ -46,7 +46,7 @@ const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
                                         break;
                                 }
 
-                                // 根据卡片大小设置最多显示的文章数量
+                                // Set maximum number of articles based on card size
                                 let maxArticles = 5;
                                 if (card.size === "wide") {
                                     maxArticles = 8;
@@ -57,13 +57,13 @@ const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
                                 return (
                                         <div class={colClasses}>
                                             <HelpCenterCard
-                                                    title={card.title_cn}
+                                                    title={card.title}
                                                     size={card.size}
                                                     articles={card.children}
                                                     maxArticles={maxArticles}
                                                     icon={card.icon_text || "uil uil-edit-alt"}
-                                                    viewMoreLink={card.url_cn}
-                                                    language = "cn"
+                                                    viewMoreLink={card.url}
+                                                    language="en"
                                                     source=card.source
                                             />
                                         </div>

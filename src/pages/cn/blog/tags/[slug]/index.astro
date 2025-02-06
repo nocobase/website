@@ -4,11 +4,11 @@ import PageHeader from "../../../../../components/PageHeader.astro";
 import Pagination from "../../../../../components/Pagination.astro";
 import Layout from "../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../utils";
+import BlogSidebar from "../../../../../components/BlogSidebar.astro";
 
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
 const { data, meta } = await listArticles({ tagSlug: slug });
-// const description = `Found ${meta.count} results for '${tag.title}'`;
 const tagpath = '/cn/blog/tags/' + slug;
 const basepath = '/cn/blog';
 const title = tag.title_cn || tag.title;
@@ -28,6 +28,35 @@ const tabs = [
     active: true,
   },
 ];
+
+const socialLinks = [
+  {
+    name: "wechat",
+    icon: "fab fa-weixin",
+    url: "#",
+    img: "https://static-docs.nocobase.com/nocobase-wechat2.jpg"
+  },
+  {
+    name: "Bilibili",
+    icon: "fab fa-bilibili",
+    url: "https://space.bilibili.com/3546757208214025"
+  },
+  {
+    name: "zhihu",
+    text: "知",
+    url: "https://www.zhihu.com/org/nocobase-33"
+  },
+  {
+    name: "github",
+    icon: "fab fa-github",
+    url: "https://github.com/nocobase/nocobase"
+  },
+  {
+    name: "gitee",
+    icon: "fab fa-git",
+    url: "https://gitee.com/nocobase/nocobase"
+  },
+];
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -35,32 +64,92 @@ const tabs = [
   </PageHeader>
   <section class="section">
     <div class="container">
-      <main>
-        <section>
-          <ul class="articles">
-            {
-              data.map((post) => (
-                <li>
-                  <a href={`${basepath}/${post.slug}`}>
-                    <img
-                      style="object-fit: cover;"
-                      width={720}
-                      height={360}
-                      src={url(post.cover.url)}
-                      alt={post.title_cn || post.title}
-                    />
-                    <h4 class="title">{post.title_cn || post.title}</h4>
-                    <p class="date">
-                      <FormattedDate locale="zh-cn" date={post.publishedAt || post.createdAt}/>
-                    </p>
-                  </a>
-                </li>
-              ))
-            }
+      <div class="row">
+        <main class="col-md-8">
+          <section>
+            <ul class="articles">
+              {
+                data.map((post, index) => (
+                  <li>
+                    <a href={`${basepath}/${post.slug}`}>
+                      <img
+                        style="object-fit: cover;"
+                        width={720}
+                        height={index === 0 ? 360 : 240}
+                        src={url(post.cover.url)}
+                        alt={post.title_cn || post.title}
+                      />
+                      <h4 class="title">{post.title_cn || post.title}</h4>
+                      <p class="date">
+                        <FormattedDate locale="zh-cn" date={post.publishedAt || post.createdAt}/>
+                      </p>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+          <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+        </main>
+
+        <BlogSidebar
+          basepath={basepath}
+          socialLinks={socialLinks}
+          lang="cn"
+        />
+      </div>
+
+      <div class="mt-4">
+        <div class="d-flex align-items-center">
+          <span class="me-2">关注我们：</span>
+          <ul class="list-unstyled social-icon social d-flex gap-2 mb-0">
+            {socialLinks.map(link => (
+              <li class="position-relative">
+                <a
+                  href={link.url}
+                  class="btn btn-sm btn-light"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {link.icon ? <i class={link.icon}></i> : link.text}
+                </a>
+                {link.img && (
+                  <div class="qr-popup position-absolute d-none">
+                    <img src={link.img} alt={link.name} width="120" height="120" />
+                  </div>
+                )}
+              </li>
+            ))}
           </ul>
-        </section>
-        <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
-      </main>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .position-relative {
+    position: relative;
+  }
+  .qr-popup {
+    width: 200px;
+    height: 200px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .qr-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .position-relative:hover .qr-popup {
+    display: block !important;
+  }
+</style>

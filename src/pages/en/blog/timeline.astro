@@ -1,0 +1,189 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { listReleaseNotes, url, processor } from "../../../utils";
+
+const description = "Learn about the latest features, improvements, and bug fixes.";
+const basepath = "/en/blog";
+// Add this function to process markdown content
+async function renderMarkdown(content: string) {
+  // First process with existing processor
+  const { code } = await processor.render(content || '');
+  
+  // Then adjust heading levels by replacing h1-h6 tags
+  const adjustedCode = code
+    .replace(/<h1/g, '<h3')
+    .replace(/<\/h1>/g, '</h3>')
+    .replace(/<h2/g, '<h4')
+    .replace(/<\/h2>/g, '</h4>')
+    .replace(/<h3/g, '<h5')
+    .replace(/<\/h3>/g, '</h5>')
+    .replace(/<h4/g, '<h6')
+    .replace(/<\/h4>/g, '</h6>')
+    .replace(/<h5/g, '<h6')
+    .replace(/<\/h5>/g, '</h6>')
+    .replace(/<h6/g, '<h6')
+    .replace(/<\/h6>/g, '</h6>');
+    
+  return adjustedCode;
+}
+
+const releaseNotes = await listReleaseNotes();
+
+const allItems = await Promise.all(releaseNotes.map(async (article) => ({
+  ...article,
+  renderedContent: await renderMarkdown(article.content) // 确保处理原始内容
+})));
+
+const filterTypes = [
+  { id: 'all', label: 'All', value: 'all', className: '' },
+  { id: 'latest', label: 'latest', value: 'latest', className: 'text-info' },
+  { id: 'beta', label: 'beta', value: 'beta', className: 'text-warning' },
+  { id: 'alpha', label: 'alpha', value: 'alpha', className: 'text-danger' }
+];
+
+// Add helper function to get tag style class
+function getTagClassName(tag: string) {
+  const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+  return filterType ? `bg-${filterType.className.replace('text-', '')}` : 'bg-secondary';
+}
+
+const tabs = [
+  { title: "Home", link: "/en/" },
+  { title: "Blog", link: "/en/blog" },
+  { title: "Release Notes", active: true }
+];
+---
+
+<Layout title="Release Notes" description={description}>
+  <PageHeader
+    title="Release Notes"
+    description={description}
+    breadcrumb={tabs}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="filter-buttons text-center mb-4">
+            {filterTypes.map(filter => (
+              <div class="form-check form-check-inline">
+                <input 
+                  class="form-check-input" 
+                  type="radio" 
+                  name="filter-type"
+                  id={`filter-${filter.id}`}
+                  value={filter.value}
+                  checked={filter.value === 'all'}
+                />
+                <label class={`form-check-label ${filter.className}`} for={`filter-${filter.id}`}>
+                  {filter.label}
+                </label>
+              </div>
+            ))}
+          </div>
+          <div class="timeline-page position-relative">
+            {allItems.map(article => (
+              <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
+                <div class="row">
+                  <div class="col-lg-3 col-md-3">
+                    <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                      <FormattedDate date={article.publishedAt} />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-9 col-md-9">
+                    {article.isMilestone ? (
+                      <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
+                        {article.cover && (
+                          <img src={url(article.cover.url)} class="img-fluid" alt={article.title} />
+                        )}
+                        <div class="card-body">
+                          <h4>
+                            <a href={`${basepath}/${article.slug}`}>
+                              {article.title}
+                            </a>
+                          </h4>
+                          <p class="mt-3 mb-0 text-muted">{article.description}</p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div class="card event rounded shadow border-0 overflow-hidden float-start">
+                        <div class="card-body">
+                          <h5 class="h5">
+                            <a href={`${basepath}/${article.slug}`}>
+                              {article.title}
+                            </a>
+                          </h5>
+                          <div class="text-muted mt-2" set:html={article.renderedContent} />
+                          {article.tags.length > 0 && (
+                            <div class="mt-2">
+                              {article.tags.map(tag => (
+                                <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.timeline-page:after {
+  right: auto;
+  left: 24%;
+}
+
+.card.event img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card.event {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .timeline-page:after {
+    left: 0;
+  }
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.form-check-input').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const selectedValue = e.target.value.toLowerCase();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+          const tags = Array.from(item.dataset.tags.split(','))
+            .map(t => t.toLowerCase());
+          
+          // Show all items if "all" is selected
+          if (selectedValue === 'all') {
+            item.style.display = 'block';
+            return;
+          }
+
+          // Show items that match the selected filter
+          item.style.display = tags.includes(selectedValue) ? 'block' : 'none';
+        });
+      });
+    });
+  });
+</script>

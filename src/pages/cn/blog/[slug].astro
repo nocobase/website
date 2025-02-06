@@ -5,6 +5,8 @@ import Tags from "../../../components/Tags.astro";
 import Toc from "../../../components/Toc.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
+import ShareIcons from "../../../components/ShareIcons.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "cn");
@@ -31,6 +33,36 @@ const tabs = [
     active: true,
   },
 ];
+
+const currentUrl = Astro.url.href;
+
+const shareLinks = [
+  {
+    name: "weixin",
+    icon: "fab fa-weixin",
+    qrCode: true,
+    copy: true
+  },
+  {
+    name: "微博",
+    icon: "fab fa-weibo",
+    url: `http://service.weibo.com/share/share.php?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}&title=${encodeURIComponent(description)}`
+  },
+  {
+    name: "copy",
+    icon: "fas fa-link",
+    copy: true
+  }
+];
+
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
 ---
 
 <Layout title={title} description={description} keywords={keywords} image={url(data.cover.url)}>
@@ -43,24 +75,46 @@ const tabs = [
     {data.ai_generated_cn && (
         <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(本篇文章由AI翻译)</p>
     )}
+    <div class="d-md-none mt-3">
+      <ShareIcons 
+        shareLinks={shareLinks}
+        qrCodeDataURL={qrCodeDataURL}
+        lang="cn"
+      />
+    </div>
   </PageHeader>
   <section class="section bg-white-color">
     <main
       class={headings.length > 0 ? "container blog-container row" : "container"}
     >
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;">
+          <ShareIcons 
+            shareLinks={shareLinks}
+            qrCodeDataURL={qrCodeDataURL}
+            vertical={true}
+            lang="cn"
+          />
+        </div>
+      </div>
+
       {
         headings.length > 0 ? (
           <>
-            <div class="col-md-9 col-18 markdown-body">
+            <div class="col-md-7 col-18 markdown-body">
               <Fragment set:html={html} />
             </div>
             <div class="col-md-3 col-6 markdown-toc">
-              <Toc headings={headings} />
+              <div class="sticky-top" style="top: 80px; z-index: 0;">
+                <Toc headings={headings} />
+              </div>
             </div>
           </>
         ) : (
           <>
-            <Fragment set:html={html} />
+            <div class="col-md-10">
+              <Fragment set:html={html} />
+            </div>
           </>
         )
       }
@@ -69,8 +123,10 @@ const tabs = [
 </Layout>
 
 <style>
-  main {
-    max-width: 960px;
-    margin: 0 auto;
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 </style>
