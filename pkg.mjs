@@ -22,7 +22,8 @@ const pkgs = [
     'path-to-regexp',
     'html-escaper',
     'cssesc',
-    'sitemap'
+    'sitemap',
+    'qrcode'
 ];
 
 (async () => {
