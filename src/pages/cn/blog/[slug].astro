@@ -104,7 +104,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
             <div class="col-md-7 col-12 markdown-body">
               <Fragment set:html={html} />
             </div>
-            <div class="col-md-3 col-12 markdown-toc">
+            <div class="col-md-3 col-6 markdown-toc">
               <div class="sticky-top" style="top: 80px; z-index: 0;">
                 <Toc headings={headings} />
               </div>
@@ -123,6 +123,9 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
 </Layout>
 
 <style>
+  main {
+    margin: 0 auto;
+  }
   :global(.markdown-body iframe) {
     max-width: 100%;
     width: 100%;
