@@ -59,13 +59,13 @@ const socialLinks = [
           <section>
             <ul class="articles">
               {
-                data.map((post) => (
+                data.map((post, index) => (
                   <li>
                     <a href={`${basepath}/${post.slug}`}>
                       <img
                         style="object-fit: cover;"
                         width={720}
-                        height={360}
+                        height={index === 0 ? 360 : 240}
                         src={url(post.cover.url)}
                         alt={post.title}
                       />
@@ -85,6 +85,7 @@ const socialLinks = [
         <BlogSidebar 
           basepath={basepath}
           socialLinks={socialLinks}
+          description={description}
           lang="en"
         />
       </div>
