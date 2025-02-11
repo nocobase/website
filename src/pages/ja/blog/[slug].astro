@@ -119,7 +119,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
               <Fragment set:html={html} />
             </div>
             <div class="col-md-3 col-6 markdown-toc">
-              <div class="sticky-top" style="top: 80px;">
+              <div class="sticky-top" style="top: 80px;z-index: 0;">
                 <Toc headings={headings} />
               </div>
             </div>
