@@ -34,11 +34,17 @@ const tutorials = tutorialsData.data.reduce((acc, item) => {
 }, {});
 
 // Convert the tutorials object into an array of series objects for easier mapping
-const tutorialSeries = Object.entries(tutorials).map(([seriesTitle, seriesData]) => ({
-  seriesTitle,
-  description: seriesData.description,
-  articles: seriesData.articles,
-}));
+const tutorialSeries = Object.entries(tutorials)
+  .map(([seriesTitle, seriesData]) => ({
+    seriesTitle,
+    description: seriesData.description,
+    articles: seriesData.articles,
+    // Find the series by matching both localized and original titles
+    sort: tutorialsData.data.find(item => 
+      (item.serials?.title_ja || item.serials?.title) === seriesTitle
+    )?.serials?.sort || 999999
+  }))
+  .sort((a, b) => a.sort - b.sort);
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
