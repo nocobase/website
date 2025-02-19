@@ -33,12 +33,16 @@ const tutorials = tutorialsData.data.reduce((acc, item) => {
   return acc;
 }, {});
 
-// Convert the tutorials object into an array of series objects for easier mapping
-const tutorialSeries = Object.entries(tutorials).map(([seriesTitle, seriesData]) => ({
-  seriesTitle,
-  description: seriesData.description,
-  articles: seriesData.articles,
-}));
+// Convert the tutorials object into an array of series objects and sort by serials.sort
+const tutorialSeries = Object.entries(tutorials)
+  .map(([seriesTitle, seriesData]) => ({
+    seriesTitle,
+    description: seriesData.description,
+    articles: seriesData.articles,
+    // Get the sort value from the first article's serials (assuming all articles in a series have the same sort value)
+    sort: tutorialsData.data.find(item => item.serials?.title === seriesTitle)?.serials?.sort || 999999
+  }))
+  .sort((a, b) => a.sort - b.sort);
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
