@@ -721,43 +721,44 @@ const meta = {
       });
     </script>
 
+    <!-- common  -->
     <style>
-      /* 添加媒体查询确保只在移动端生效 */
+      /* Add media query to ensure it only takes effect on mobile */
       @media (max-width: 991px) {
         #navigation {
-          position: fixed;  /* 改为 fixed 定位 */
+          position: fixed;  /* Change to fixed positioning */
           width: 100%;
           top: 0;
           left: 0;
-          background: white; /* 确保有背景色 */
-          z-index: 99; /* 设置合适的z-index */
+          background: white; /* Ensure background color */
+          z-index: 99; /* Set appropriate z-index */
         }
         
         #topnav {
-          z-index: 100; /* 确保header在navigation之上 */
+          z-index: 100; /* Ensure header is above navigation */
         }
       }
     </style>
 
     <script>
       function updateNavigationPosition() {
-        if (window.innerWidth <= 991) {  // 只在移动端处理
+        if (window.innerWidth <= 991) {  // Only handle on mobile
           const header = document.getElementById('topnav');
           const navigation = document.getElementById('navigation');
           if (header && navigation) {
             const headerHeight = header.offsetHeight;
             navigation.style.top = `${headerHeight}px`;
             
-            // 添加事件监听器来处理菜单展开/收起
+            // Add event listener to handle menu expand/collapse
             const toggle = document.getElementById('isToggle');
             if (toggle) {
               toggle.addEventListener('click', () => {
-                setTimeout(updateNavigationPosition, 10); // 短暂延迟以确保DOM更新
+                setTimeout(updateNavigationPosition, 10); // Short delay to ensure DOM updates
               });
             }
           }
         } else {
-          // 重置桌面端样式
+          // Reset desktop styles
           const navigation = document.getElementById('navigation');
           if (navigation) {
             navigation.style.top = '';
@@ -765,11 +766,11 @@ const meta = {
         }
       }
 
-      // 在页面加载和窗口调整时更新位置
+      // Update position on page load and window resize
       window.addEventListener('load', updateNavigationPosition);
       window.addEventListener('resize', updateNavigationPosition);
       
-      // 监听DOM变化，以防header高度动态变化
+      // Monitor DOM changes in case header height changes dynamically
       const observer = new MutationObserver(updateNavigationPosition);
       const header = document.getElementById('topnav');
       if (header) {
