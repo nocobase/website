@@ -67,22 +67,15 @@ const items = tabs || breadcrumb || [];
         <div class="position-breadcrumb">
           <nav aria-label="breadcrumb" class="d-inline-block">
             <ul class={(tabs?.length ? "plugins-cat " : "") + "breadcrumb rounded shadow mb-0 px-4 py-2"}>
-              {items.map((tab) => {
-                // Check if the URL ends with blog/tags/release-notes and redirect to blog/timeline
-                let linkUrl = tab.link;
-                if (linkUrl && linkUrl.endsWith('blog/tags/release-notes')) {
-                  linkUrl = linkUrl.replace('blog/tags/release-notes', 'blog/timeline');
-                }
-                return (
-                  <li
-                    class={
-                      tab.active ? "breadcrumb-item active" : "breadcrumb-item"
-                    }
-                  >
-                    <a href={linkUrl}>{tab.title}</a>
-                  </li>
-                );
-              })}
+              {items.map((tab) => (
+                <li
+                  class={
+                    tab.active ? "breadcrumb-item active" : "breadcrumb-item"
+                  }
+                >
+                  <a href={tab.link}>{tab.title}</a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>

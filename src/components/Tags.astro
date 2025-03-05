@@ -17,6 +17,13 @@ const getTitle = (tag: any) => {
   return tag.title;
 };
 
+const getTagUrl = (tag: any) => {
+  if (tag.slug === "release-notes") {
+    return `/${locale}/blog/timeline`;
+  }
+  return `${basepath}/tags/${tag.slug}`;
+};
+
 if (items.length === 0) {
   return;
 }
@@ -27,7 +34,7 @@ if (items.length === 0) {
     {
       items.map((tag) => (
           <li>
-            <a href={basepath + "/tags/" + tag.slug}>{getTitle(tag)}</a>
+            <a href={getTagUrl(tag)}>{getTitle(tag)}</a>
           </li>
       ))
     }
