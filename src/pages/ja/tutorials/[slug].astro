@@ -14,7 +14,7 @@ if (!data) {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_ja || data.title;
-const keywords = (data.tags || []).map((tag: any) => tag.title_ja || tag.title).join(",");
+const keywords = (data.keywords || []).map((keywords: any) => keywords.title_ja || keywords.title).join(",");
 const description = data.description_ja || data.description;
 const basepath = "/ja/tutorials";
 const tabs = [

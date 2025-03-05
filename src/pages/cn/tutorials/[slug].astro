@@ -14,8 +14,8 @@ if (!data) {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_cn || data.title;
-const keywords = (data.tags || [])
-  .map((tag: any) => tag.title_cn || tag.title)
+const keywords = (data.keywords || [])
+  .map((keywords: any) => keywords.title_cn || keywords.title)
   .join(",");
 const description = data.description_cn || data.description;
 const basepath = "/cn/tutorials";

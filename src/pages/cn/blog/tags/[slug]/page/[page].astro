@@ -56,7 +56,7 @@ const socialLinks = [
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
-  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}></PageHeader>
+  <PageHeader showRSS showTimeline={slug === 'release-notes'} title={title} description={description} breadcrumb={tabs}></PageHeader>
   <section class="section">
     <div class="container">
       <div class="row">
@@ -91,6 +91,7 @@ const socialLinks = [
           basepath={basepath}
           socialLinks={socialLinks}
           lang="cn"
+          description={description}
         />
       </div>
 

@@ -301,7 +301,7 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
   }
-  const res = await fetch(`${baseURL}tutorialArticles:get?appends=serials&filter[slug]=${slug}&token=${token}`);
+  const res = await fetch(`${baseURL}tutorialArticles:get?appends=serials,keywords&filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
   if (!data.id) {
