@@ -10,14 +10,13 @@ interface TabProps {
 interface Props {
   title: string;
   showRSS?: boolean;
-  showTimeline?: boolean;
   description?: any;
   tabs?: TabProps[];
   breadcrumb?: TabProps[];
   className?: string;
 }
 
-const { showRSS, showTimeline = false, className, title, description, tabs, breadcrumb } = Astro.props;
+const { showRSS, className, title, description, tabs, breadcrumb } = Astro.props;
 const items = tabs || breadcrumb || [];
 ---
 
@@ -54,38 +53,6 @@ const items = tabs || breadcrumb || [];
                 </a>
               )
             }
-            {
-              showTimeline && (
-                <a
-                  href={
-                    Astro.url.pathname.includes("/blog/timeline")
-                      ? Astro.url.pathname.startsWith("/cn/")
-                        ? "/cn/blog/tags/release-notes"
-                        : Astro.url.pathname.startsWith("/ja/")
-                          ? "/ja/blog/tags/release-notes"
-                          : "/en/blog/tags/release-notes"
-                      : Astro.url.pathname.startsWith("/cn/")
-                        ? "/cn/blog/timeline"
-                        : Astro.url.pathname.startsWith("/ja/")
-                          ? "/ja/blog/timeline"
-                          : "/en/blog/timeline"
-                  }
-                >
-                  <svg
-                    style="zoom: 1.5; margin-top: -3px;"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-repeat"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                  </svg>
-                </a>
-              )
-            }
           </h1>
           <p class="para-desc mx-auto text-muted">
             {description}
@@ -100,15 +67,22 @@ const items = tabs || breadcrumb || [];
         <div class="position-breadcrumb">
           <nav aria-label="breadcrumb" class="d-inline-block">
             <ul class={(tabs?.length ? "plugins-cat " : "") + "breadcrumb rounded shadow mb-0 px-4 py-2"}>
-              {items.map((tab) => (
-                <li
-                  class={
-                    tab.active ? "breadcrumb-item active" : "breadcrumb-item"
-                  }
-                >
-                  <a href={tab.link}>{tab.title}</a>
-                </li>
-              ))}
+              {items.map((tab) => {
+                // Check if the URL ends with blog/tags/release-notes and redirect to blog/timeline
+                let linkUrl = tab.link;
+                if (linkUrl && linkUrl.endsWith('blog/tags/release-notes')) {
+                  linkUrl = linkUrl.replace('blog/tags/release-notes', 'blog/timeline');
+                }
+                return (
+                  <li
+                    class={
+                      tab.active ? "breadcrumb-item active" : "breadcrumb-item"
+                    }
+                  >
+                    <a href={linkUrl}>{tab.title}</a>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
