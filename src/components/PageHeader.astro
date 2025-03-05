@@ -58,11 +58,17 @@ const items = tabs || breadcrumb || [];
               showTimeline && (
                 <a
                   href={
-                    Astro.url.pathname.startsWith("/cn/")
-                      ? "/cn/blog/timeline"
-                      : Astro.url.pathname.startsWith("/ja/")
-                        ? "/ja/blog/timeline"
-                        : "/en/blog/timeline"
+                    Astro.url.pathname.includes("/blog/timeline")
+                      ? Astro.url.pathname.startsWith("/cn/")
+                        ? "/cn/blog/tags/release-notes"
+                        : Astro.url.pathname.startsWith("/ja/")
+                          ? "/ja/blog/tags/release-notes"
+                          : "/en/blog/tags/release-notes"
+                      : Astro.url.pathname.startsWith("/cn/")
+                        ? "/cn/blog/timeline"
+                        : Astro.url.pathname.startsWith("/ja/")
+                          ? "/ja/blog/timeline"
+                          : "/en/blog/timeline"
                   }
                 >
                   <svg
