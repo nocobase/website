@@ -6,7 +6,9 @@ import Layout from "../../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../../utils";
 import BlogSidebar from "../../../../../../components/BlogSidebar.astro";
 
-const { slug, page } = Astro.params as { slug?: string; page?: number; };
+const { slug, page: pageParam } = Astro.params;
+// Convert page parameter to number
+const page = pageParam ? parseInt(pageParam) : 1;
 const { data, meta } = await listArticles({ page, tagSlug: slug });
 const tag = await getArticleTag(slug);
 const tagpath = '/ja/blog/tags/' + slug;
@@ -86,6 +88,7 @@ const socialLinks = [
           basepath={basepath}
           socialLinks={socialLinks}
           lang="ja"
+          description={description}
         />
       </div>
 

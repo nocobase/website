@@ -15,7 +15,7 @@ const recentPosts = data;
 
 interface Props {
   basepath: string;
-  description: string;
+  description?: string;
   socialLinks: Array<{
     name: string;
     icon?: string;
@@ -28,16 +28,18 @@ interface Props {
 const { basepath, socialLinks, lang = 'en' } = Astro.props;
 
 // 本地化文本
+const defaultI18n = {
+  followUs: 'Follow Us',
+  subscribe: 'Subscribe',
+  email: 'Your email:',
+  subscribeBtn: 'Subscribe',
+  recentPosts: 'Recent Posts',
+  errorMsg: 'Your subscription could not be saved. Please try again.',
+  successMsg: 'Your subscription has been successful.',
+};
+
 const i18n = {
-  en: {
-    followUs: 'Follow Us',
-    subscribe: 'Subscribe',
-    email: 'Your email:',
-    subscribeBtn: 'Subscribe',
-    recentPosts: 'Recent Posts',
-    errorMsg: 'Your subscription could not be saved. Please try again.',
-    successMsg: 'Your subscription has been successful.',
-  },
+  en: defaultI18n,
   cn: {
     followUs: '关注我们',
     subscribe: '关注订阅',
@@ -56,7 +58,7 @@ const i18n = {
     errorMsg: '購読に失敗しました。もう一度お試しください。',
     successMsg: '購読が完了しました。',
   }
-}[lang];
+}[lang] || defaultI18n;
 ---
 
 <aside class="col-md-4 blog-sidebar">
