@@ -14,7 +14,9 @@ const description = pageData.description;
 const keywords = pageData.keywords;
 
 const basepath = "/en/blog";
-const { page } = Astro.params as { page?: number };
+const { page: pageParam } = Astro.params;
+// Convert page parameter to number
+const page = pageParam ? parseInt(pageParam) : 1;
 const { data, meta } = await listArticles({ hideOnBlog: false, page });
 const tags = await listArticleTags({
   filter: {

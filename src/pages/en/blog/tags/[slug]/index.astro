@@ -8,7 +8,7 @@ import BlogSidebar from "../../../../../components/BlogSidebar.astro";
 
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
-const { data, meta } = await listArticles({ tagSlug: slug });
+const { data, meta } = await listArticles({ tagSlug: slug, page: 1 });
 const tagpath = '/en/blog/tags/' + slug;
 const basepath = '/en/blog';
 const title = tag.title;
@@ -79,7 +79,13 @@ const socialLinks = [
               }
             </ul>
           </section>
-          <Pagination basepath={tagpath} currentPage={1} pageSize={meta.pageSize} total={meta.count} totalPages={meta.totalPage} />
+          <Pagination 
+            basepath={tagpath} 
+            currentPage={1} 
+            pageSize={meta.pageSize} 
+            total={meta.count} 
+            totalPages={meta.totalPage} 
+          />
         </main>
 
         <BlogSidebar 
@@ -101,7 +107,7 @@ const socialLinks = [
                   target="_blank"
                   rel="noopener"
                 >
-                  {link.icon ? <i class={link.icon}></i> : link.text}
+                  {link.icon ? <i class={link.icon}></i> : link.name}
                 </a>
               </li>
             ))}
