@@ -7,6 +7,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { getArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
 import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "cn");
@@ -120,6 +121,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
       }
     </main>
   </section>
+  <ImageZoom />
 </Layout>
 
 <style>

@@ -7,6 +7,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { getArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
 import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "ja");
@@ -103,7 +104,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
       class={headings.length > 0 ? "container blog-container row" : "container"}
     >
       <div class="col-md-2 d-none d-md-block">
-        <div class="sticky-top" style="top: 80px;">
+        <div class="sticky-top-z0" style="top: 80px;z-index: 0;">
           <ShareIcons 
             shareLinks={shareLinks}
             qrCodeDataURL={qrCodeDataURL}
@@ -119,7 +120,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
               <Fragment set:html={html} />
             </div>
             <div class="col-md-3 col-6 markdown-toc">
-              <div class="sticky-top" style="top: 80px;z-index: 0;">
+              <div class="sticky-top-z0" style="top: 80px;z-index: 0;">
                 <Toc headings={headings} />
               </div>
             </div>
@@ -134,6 +135,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
       }
     </main>
   </section>
+  <ImageZoom />
 </Layout>
 
 <style>

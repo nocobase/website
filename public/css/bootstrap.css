@@ -7708,6 +7708,13 @@ textarea.form-control-lg {
   z-index: 1020;
 }
 
+
+.sticky-top-z0 {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
 .sticky-bottom {
   position: sticky;
   bottom: 0;

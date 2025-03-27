@@ -38,6 +38,7 @@ const allItems = await Promise.all(releaseNotes.map(async (article) => ({
 
 const filterTypes = [
   { id: 'all', label: 'All', value: 'all', className: '' },
+  { id: 'milestone', label: 'Milestone', value: 'milestone', className: 'text-primary' },
   { id: 'latest', label: 'latest', value: 'latest', className: 'text-info' },
   { id: 'beta', label: 'beta', value: 'beta', className: 'text-warning' },
   { id: 'alpha', label: 'alpha', value: 'alpha', className: 'text-danger' }
@@ -177,6 +178,13 @@ const tabs = [
           // Show all items if "all" is selected
           if (selectedValue === 'all') {
             item.style.display = 'block';
+            return;
+          }
+
+          // For milestone filter, check if it has the milestone class
+          if (selectedValue === 'milestone') {
+            const hasMilestone = item.querySelector('.milestone') !== null;
+            item.style.display = hasMilestone ? 'block' : 'none';
             return;
           }
 
