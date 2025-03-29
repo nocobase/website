@@ -6707,6 +6707,9 @@ body[data-layout-mode=dark] .mode-light {
   flex-direction:column;
   height: 100%;
 }
+.plugin-overview {
+  font-size: 14px;
+}
 .plugin-footer {
   display: flex;
   height: 100%;
