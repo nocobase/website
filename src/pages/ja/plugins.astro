@@ -34,7 +34,7 @@ const comingPlugins = allPlugins.filter((p) => !!p.coming);
 
 // 3. 从原分组中移除「新推出」或「即将发布」的插件
 data.forEach((group) => {
-  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
+  group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
 // 4. 过滤掉空分组（如果一个分类里的插件都被拆走了，就不用显示）
