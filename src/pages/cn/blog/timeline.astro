@@ -29,11 +29,12 @@ async function renderMarkdown(content: string) {
   return adjustedCode;
 }
 
-const releaseNotes = await listReleaseNotes();
+// 获取第一页数据
+const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 8 });
 
-const allItems = await Promise.all(releaseNotes.map(async (article) => ({
+const allItems = await Promise.all(releaseNotes.map(async (article: any) => ({
   ...article,
-  renderedContent: await renderMarkdown(article.content_cn) // 确保处理原始内容
+  renderedContent: await renderMarkdown(article.content_cn || '') // 确保处理原始内容
 })));
 
 const filterTypes = [
@@ -46,8 +47,15 @@ const filterTypes = [
 
 // 添加一个辅助函数来获取标签的样式类
 function getTagClassName(tag: string) {
+  const filterTypes = [
+    { value: 'milestone', className: 'bg-primary' },
+    { value: 'latest', className: 'bg-info' },
+    { value: 'beta', className: 'bg-warning' },
+    { value: 'alpha', className: 'bg-danger' }
+  ];
+  
   const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
-  return filterType ? `bg-${filterType.className.replace('text-', '')}` : 'bg-secondary';
+  return filterType ? filterType.className : 'bg-secondary';
 }
 
 const tabs = [
@@ -85,7 +93,7 @@ const tabs = [
               </div>
             ))}
           </div>
-          <div class="timeline-page position-relative">
+          <div class="timeline-page position-relative" id="timeline-container">
             {allItems.map(article => (
               <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
                 <div class="row">
@@ -134,6 +142,27 @@ const tabs = [
               </div>
             ))}
           </div>
+          
+          <!-- 加载更多指示器 -->
+          <div id="loading-indicator" class="text-center mt-4 d-none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">加载中...</span>
+            </div>
+            <p class="mt-2">正在加载更多内容...</p>
+          </div>
+          
+          <!-- 加载更多按钮 -->
+          <div id="load-more-button" class="text-center mt-4">
+            <button class="btn btn-primary">加载更多</button>
+          </div>
+          
+          <!-- 没有更多内容提示 -->
+          <div id="no-more-content" class="text-center mt-4 d-none">
+            <p class="text-muted">没有更多内容了</p>
+          </div>
+          
+          <!-- 初始元数据 -->
+          <div id="initial-meta" class="d-none" data-meta={JSON.stringify(initialMeta)}></div>
         </div>
       </div>
     </div>
@@ -163,31 +192,307 @@ const tabs = [
 }
 </style>
 
-<script>
+<script is:inline>
+  // 页面加载完成后运行
   document.addEventListener('DOMContentLoaded', () => {
+    // 获取初始元数据
+    const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
+    let currentPage = 1;
+    let isLoading = false;
+    let hasMoreContent = initialMeta.pageCount > 1;
+    let currentFilter = 'all';
+    const PAGE_SIZE = 8;
+    
+    console.log('页面初始化', { 
+      initialMeta, 
+      hasMoreContent,
+      currentPage
+    });
+
+    // 渲染新的文章到页面上
+    function renderNewItems(items) {
+      const container = document.getElementById('timeline-container');
+      if (!container) {
+        console.error('找不到容器元素');
+        return;
+      }
+      
+      console.log(`渲染 ${items.length} 个新项目`);
+      
+      items.forEach(item => {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'timeline-item mt-4';
+        articleDiv.dataset.tags = item.tags.join(',');
+        
+        const articleHtml = `
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                ${formatDate(new Date(item.publishedAt))}
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-9">
+              ${item.isMilestone ? `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
+                  ${item.cover ? `<img src="${item.cover.url}" class="img-fluid" alt="${item.title}" />` : ''}
+                  <div class="card-body">
+                    <h5>
+                      <a href="/cn/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h5>
+                    <p class="mt-3 mb-0 text-muted">${item.description}</p>
+                  </div>
+                </div>
+              ` : `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start">
+                  <div class="card-body">
+                    <h5>
+                      <a href="/cn/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h5>
+                    <div class="text-muted mt-2">${item.renderedContent}</div>
+                    ${item.tags.length > 0 ? `
+                      <div class="mt-2">
+                        ${item.tags.map(tag => `
+                          <span class="badge me-1 ${getTagClassName(tag)}">${tag}</span>
+                        `).join('')}
+                      </div>
+                    ` : ''}
+                  </div>
+                </div>
+              `}
+            </div>
+          </div>
+        `;
+        
+        articleDiv.innerHTML = articleHtml;
+        
+        // 根据当前筛选设置显示或隐藏
+        if (currentFilter !== 'all') {
+          const tags = item.tags.map(t => t.toLowerCase());
+          if (currentFilter === 'milestone') {
+            articleDiv.style.display = item.isMilestone ? 'block' : 'none';
+          } else {
+            articleDiv.style.display = tags.includes(currentFilter) ? 'block' : 'none';
+          }
+        }
+        
+        container.appendChild(articleDiv);
+      });
+    }
+    
+    // 格式化日期
+    function formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('zh-CN', options);
+    }
+    
+    // 获取标签的样式类
+    function getTagClassName(tag) {
+      const filterTypes = [
+        { value: 'milestone', className: 'bg-primary' },
+        { value: 'latest', className: 'bg-info' },
+        { value: 'beta', className: 'bg-warning' },
+        { value: 'alpha', className: 'bg-danger' }
+      ];
+      
+      const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+      return filterType ? filterType.className : 'bg-secondary';
+    }
+    
+    // 加载更多内容
+    async function loadMoreContent() {
+      if (isLoading || !hasMoreContent) {
+        console.log('跳过加载：', { isLoading, hasMoreContent });
+        return;
+      }
+      
+      isLoading = true;
+      console.log('加载更多内容，页码：', currentPage + 1);
+      
+      // 显示加载指示器
+      const loadingIndicator = document.getElementById('loading-indicator');
+      if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+      
+      // 隐藏加载按钮
+      const loadMoreButton = document.getElementById('load-more-button');
+      if (loadMoreButton) loadMoreButton.classList.add('d-none');
+      
+      try {
+        currentPage++;
+        const timestamp = new Date().getTime(); // 添加时间戳防止缓存
+        const url = `/api/release-notes?page=${currentPage}&pageSize=${PAGE_SIZE}&lang=cn&_t=${timestamp}`;
+        console.log('请求URL:', url);
+        
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`请求失败: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        console.log('加载的数据：', data);
+        
+        // 如果没有更多数据，显示"没有更多内容"并停止更多加载
+        if (!data.items || data.items.length === 0 || currentPage >= data.meta.pageCount) {
+          hasMoreContent = false;
+          const noMoreContent = document.getElementById('no-more-content');
+          if (noMoreContent) noMoreContent.classList.remove('d-none');
+          console.log('没有更多内容可加载');
+        } else {
+          // 渲染新的内容
+          renderNewItems(data.items);
+          console.log('成功加载和渲染新内容');
+          
+          // 显示加载按钮，如果还有更多内容
+          if (loadMoreButton && currentPage < data.meta.pageCount) {
+            loadMoreButton.classList.remove('d-none');
+          }
+        }
+      } catch (error) {
+        console.error('加载更多内容时出错:', error);
+        // 发生错误时重新显示加载按钮
+        if (loadMoreButton) loadMoreButton.classList.remove('d-none');
+      } finally {
+        isLoading = false;
+        const loadingIndicator = document.getElementById('loading-indicator');
+        if (loadingIndicator) loadingIndicator.classList.add('d-none');
+      }
+    }
+    
+    // 设置加载更多按钮点击事件
+    const loadMoreButton = document.getElementById('load-more-button');
+    if (loadMoreButton) {
+      const btn = loadMoreButton.querySelector('button');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          console.log('点击加载更多按钮');
+          // 强制尝试加载，忽略hasMoreContent
+          forceLoadMoreContent();
+        });
+      }
+    }
+    
+    // 强制加载更多内容，忽略hasMoreContent状态
+    async function forceLoadMoreContent() {
+      if (isLoading) {
+        console.log('正在加载中，请稍候');
+        return;
+      }
+      
+      isLoading = true;
+      console.log('强制加载更多内容，页码：', currentPage + 1);
+      
+      // 显示加载指示器
+      const loadingIndicator = document.getElementById('loading-indicator');
+      if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+      
+      // 隐藏加载按钮
+      const loadMoreButton = document.getElementById('load-more-button');
+      if (loadMoreButton) loadMoreButton.classList.add('d-none');
+      
+      try {
+        currentPage++;
+        const timestamp = new Date().getTime(); // 添加时间戳防止缓存
+        const url = `/api/release-notes?page=${currentPage}&pageSize=${PAGE_SIZE}&lang=cn&_t=${timestamp}`;
+        console.log('请求URL:', url);
+        
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`请求失败: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        console.log('加载的数据：', data);
+        
+        // 检查是否有数据
+        if (!data.items || data.items.length === 0) {
+          const noMoreContent = document.getElementById('no-more-content');
+          if (noMoreContent) noMoreContent.classList.remove('d-none');
+          console.log('没有加载到任何内容');
+        } else {
+          // 渲染新的内容
+          renderNewItems(data.items);
+          console.log('成功加载和渲染新内容');
+          
+          // 始终显示加载按钮，除非明确没有更多内容
+          if (loadMoreButton) {
+            loadMoreButton.classList.remove('d-none');
+          }
+          
+          // 更新状态
+          hasMoreContent = true;
+        }
+      } catch (error) {
+        console.error('加载更多内容时出错:', error);
+        // 发生错误时重新显示加载按钮
+        if (loadMoreButton) loadMoreButton.classList.remove('d-none');
+      } finally {
+        isLoading = false;
+        const loadingIndicator = document.getElementById('loading-indicator');
+        if (loadingIndicator) loadingIndicator.classList.add('d-none');
+      }
+    }
+    
+    // 手动测试加载函数
+    window.testLoad = forceLoadMoreContent;
+    
+    // 滚动检测函数
+    function handleScroll() {
+      if (!hasMoreContent || isLoading) return;
+      
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.body.offsetHeight;
+      const scrollThreshold = 0.8; // 当滚动到页面80%的位置时触发加载
+      
+      if (scrollPosition >= pageHeight * scrollThreshold) {
+        console.log('触发滚动加载，当前位置：', {
+          scrollPosition,
+          pageHeight,
+          percentage: (scrollPosition / pageHeight).toFixed(2)
+        });
+        forceLoadMoreContent();
+      }
+    }
+    
+    // 设置滚动监听
+    console.log('页面加载完成，设置滚动监听');
+    window.addEventListener('scroll', handleScroll);
+    
+    // 设置过滤器监听
     document.querySelectorAll('.form-check-input').forEach(radio => {
       radio.addEventListener('change', (e) => {
-        const selectedValue = e.target.value.toLowerCase();
-
+        const target = e.target;
+        if (!(target instanceof HTMLInputElement)) return;
+        
+        currentFilter = target.value.toLowerCase();
+        console.log('筛选条件改变：', currentFilter);
+        
         document.querySelectorAll('.timeline-item').forEach(item => {
-          const tags = Array.from(item.dataset.tags.split(','))
-            .map(t => t.toLowerCase());
+          if (!(item instanceof HTMLElement)) return;
+          
+          const tagsAttr = item.dataset.tags || '';
+          const tags = tagsAttr.split(',').map(t => t.toLowerCase());
           
           // 如果选择"全部"，显示所有内容
-          if (selectedValue === 'all') {
+          if (currentFilter === 'all') {
             item.style.display = 'block';
             return;
           }
 
           // For milestone filter, check if it has the milestone class
-          if (selectedValue === 'milestone') {
+          if (currentFilter === 'milestone') {
             const hasMilestone = item.querySelector('.milestone') !== null;
             item.style.display = hasMilestone ? 'block' : 'none';
             return;
           }
 
           // 显示匹配所选筛选条件的内容
-          item.style.display = tags.includes(selectedValue) ? 'block' : 'none';
+          item.style.display = tags.includes(currentFilter) ? 'block' : 'none';
         });
       });
     });

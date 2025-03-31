@@ -29,11 +29,12 @@ async function renderMarkdown(content: string) {
   return adjustedCode;
 }
 
-const releaseNotes = await listReleaseNotes();
+// 最初のページデータを取得
+const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 8 });
 
-const allItems = await Promise.all(releaseNotes.map(async (article) => ({
+const allItems = await Promise.all(releaseNotes.map(async (article: any) => ({
   ...article,
-  renderedContent: await renderMarkdown(article.content_ja)
+  renderedContent: await renderMarkdown(article.content_ja || '')
 })));
 
 const filterTypes = [
@@ -45,7 +46,7 @@ const filterTypes = [
 ];
 
 // タグのスタイルクラスを取得するヘルパー関数を追加
-function getTagClassName(tag: string) {
+function getTagClassName(tag) {
   const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
   return filterType ? `bg-${filterType.className.replace('text-', '')}` : 'bg-secondary';
 }
@@ -85,7 +86,7 @@ const tabs = [
               </div>
             ))}
           </div>
-          <div class="timeline-page position-relative">
+          <div class="timeline-page position-relative" id="timeline-container">
             {allItems.map(article => (
               <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
                 <div class="row">
@@ -134,6 +135,27 @@ const tabs = [
               </div>
             ))}
           </div>
+          
+          <!-- ローディングインジケーター -->
+          <div id="loading-indicator" class="text-center mt-4 d-none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">読み込み中...</span>
+            </div>
+            <p class="mt-2">コンテンツを読み込んでいます...</p>
+          </div>
+          
+          <!-- 続きを読み込むボタン -->
+          <div id="load-more-button" class="text-center mt-4">
+            <button class="btn btn-primary">続きを読み込む</button>
+          </div>
+          
+          <!-- コンテンツがこれ以上ないメッセージ -->
+          <div id="no-more-content" class="text-center mt-4 d-none">
+            <p class="text-muted">これ以上コンテンツはありません</p>
+          </div>
+          
+          <!-- 初期メタデータ -->
+          <div id="initial-meta" class="d-none" data-meta={JSON.stringify(initialMeta)}></div>
         </div>
       </div>
     </div>
@@ -163,31 +185,247 @@ const tabs = [
 }
 </style>
 
-<script>
+<script is:inline>
+  // ページ読み込み完了後に実行
   document.addEventListener('DOMContentLoaded', () => {
+    // 初期メタデータを取得
+    const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
+    let currentPage = 1;
+    let isLoading = false;
+    let hasMoreContent = initialMeta.pageCount > 1;
+    let currentFilter = 'all';
+    const PAGE_SIZE = 8;
+    
+    console.log('ページ初期化', { 
+      initialMeta, 
+      hasMoreContent,
+      currentPage
+    });
+
+    // 新しい項目をページにレンダリング
+    function renderNewItems(items) {
+      const container = document.getElementById('timeline-container');
+      if (!container) {
+        console.error('コンテナ要素が見つかりません');
+        return;
+      }
+      
+      console.log(`${items.length}個の新しいアイテムをレンダリング`);
+      
+      items.forEach(item => {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'timeline-item mt-4';
+        articleDiv.dataset.tags = item.tags.join(',');
+        
+        const articleHtml = `
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                ${formatDate(new Date(item.publishedAt))}
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-9">
+              ${item.isMilestone ? `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
+                  ${item.cover ? `<img src="${item.cover.url}" class="img-fluid" alt="${item.title}" />` : ''}
+                  <div class="card-body">
+                    <h5>
+                      <a href="/ja/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h5>
+                    <p class="mt-3 mb-0 text-muted">${item.description}</p>
+                  </div>
+                </div>
+              ` : `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start">
+                  <div class="card-body">
+                    <h3 class="h4">
+                      <a href="/ja/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h3>
+                    <div class="text-muted mt-2">${item.renderedContent}</div>
+                    ${item.tags.length > 0 ? `
+                      <div class="mt-2">
+                        ${item.tags.map(tag => `
+                          <span class="badge me-1 ${getTagClassName(tag)}">${tag}</span>
+                        `).join('')}
+                      </div>
+                    ` : ''}
+                  </div>
+                </div>
+              `}
+            </div>
+          </div>
+        `;
+        
+        articleDiv.innerHTML = articleHtml;
+        
+        // 現在のフィルターを適用
+        if (currentFilter !== 'all') {
+          const tags = item.tags.map(t => t.toLowerCase());
+          if (currentFilter === 'milestone') {
+            articleDiv.style.display = item.isMilestone ? 'block' : 'none';
+          } else {
+            articleDiv.style.display = tags.includes(currentFilter) ? 'block' : 'none';
+          }
+        }
+        
+        container.appendChild(articleDiv);
+      });
+    }
+    
+    // 日付のフォーマット
+    function formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('ja-JP', options);
+    }
+    
+    // タグスタイルクラスの取得
+    function getTagClassName(tag) {
+      const filterTypes = [
+        { value: 'milestone', className: 'bg-primary' },
+        { value: 'latest', className: 'bg-info' },
+        { value: 'beta', className: 'bg-warning' },
+        { value: 'alpha', className: 'bg-danger' }
+      ];
+      
+      const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+      return filterType ? filterType.className : 'bg-secondary';
+    }
+    
+    // 続きを読み込むボタンのクリックイベントを設定
+    const loadMoreButton = document.getElementById('load-more-button');
+    if (loadMoreButton) {
+      const btn = loadMoreButton.querySelector('button');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          console.log('続きを読み込むボタンがクリックされました');
+          // hasMoreContentステータスに関係なく強制的に読み込み
+          forceLoadMoreContent();
+        });
+      }
+    }
+    
+    // 強制的にコンテンツを読み込む（hasMoreContentステータスを無視）
+    async function forceLoadMoreContent() {
+      if (isLoading) {
+        console.log('読み込み中です、お待ちください');
+        return;
+      }
+      
+      isLoading = true;
+      console.log('強制的にコンテンツを読み込み中、ページ：', currentPage + 1);
+      
+      // ローディングインジケーターを表示
+      const loadingIndicator = document.getElementById('loading-indicator');
+      if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+      
+      // 読み込み中はボタンを非表示
+      const loadMoreButton = document.getElementById('load-more-button');
+      if (loadMoreButton) loadMoreButton.classList.add('d-none');
+      
+      try {
+        currentPage++;
+        const timestamp = new Date().getTime(); // キャッシュ防止のためのタイムスタンプ
+        const url = `/api/release-notes?page=${currentPage}&pageSize=${PAGE_SIZE}&lang=ja&_t=${timestamp}`;
+        console.log('リクエストURL:', url);
+        
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`リクエスト失敗: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        console.log('読み込まれたデータ:', data);
+        
+        // データが読み込まれたかチェック
+        if (!data.items || data.items.length === 0) {
+          const noMoreContent = document.getElementById('no-more-content');
+          if (noMoreContent) noMoreContent.classList.remove('d-none');
+          console.log('コンテンツが読み込まれませんでした');
+        } else {
+          // 新しいコンテンツをレンダリング
+          renderNewItems(data.items);
+          console.log('新しいコンテンツを正常に読み込み、レンダリングしました');
+          
+          // 明示的に終了しない限り、ロードボタンを常に表示
+          if (loadMoreButton) {
+            loadMoreButton.classList.remove('d-none');
+          }
+          
+          // ステータスを更新
+          hasMoreContent = true;
+        }
+      } catch (error) {
+        console.error('コンテンツ読み込みエラー:', error);
+        // エラー時にはボタンを再表示
+        if (loadMoreButton) loadMoreButton.classList.remove('d-none');
+      } finally {
+        isLoading = false;
+        const loadingIndicator = document.getElementById('loading-indicator');
+        if (loadingIndicator) loadingIndicator.classList.add('d-none');
+      }
+    }
+    
+    // 手動テスト用の関数
+    window.testLoad = forceLoadMoreContent;
+    
+    // スクロール検出関数
+    function handleScroll() {
+      if (!hasMoreContent || isLoading) return;
+      
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.body.offsetHeight;
+      const scrollThreshold = 0.8; // ページの80%までスクロールした時に読み込みをトリガー
+      
+      if (scrollPosition >= pageHeight * scrollThreshold) {
+        console.log('スクロール読み込みがトリガーされました:', {
+          scrollPosition,
+          pageHeight,
+          percentage: (scrollPosition / pageHeight).toFixed(2)
+        });
+        forceLoadMoreContent();
+      }
+    }
+    
+    // スクロールリスナーを設定
+    console.log('ページが読み込まれました、スクロールリスナーを設定しています');
+    window.addEventListener('scroll', handleScroll);
+    
+    // フィルターリスナーを設定
     document.querySelectorAll('.form-check-input').forEach(radio => {
       radio.addEventListener('change', (e) => {
-        const selectedValue = e.target.value.toLowerCase();
-
+        const target = e.target;
+        if (!(target instanceof HTMLInputElement)) return;
+        
+        currentFilter = target.value.toLowerCase();
+        console.log('フィルターが変更されました:', currentFilter);
+        
         document.querySelectorAll('.timeline-item').forEach(item => {
-          const tags = Array.from(item.dataset.tags.split(','))
-            .map(t => t.toLowerCase());
+          if (!(item instanceof HTMLElement)) return;
+          
+          const tagsAttr = item.dataset.tags || '';
+          const tags = tagsAttr.split(',').map(t => t.toLowerCase());
           
           // 「すべて」が選択された場合、全てのアイテムを表示
-          if (selectedValue === 'all') {
+          if (currentFilter === 'all') {
             item.style.display = 'block';
             return;
           }
 
-          // For milestone filter, check if it has the milestone class
-          if (selectedValue === 'milestone') {
+          // Milestoneフィルターの場合、milestoneクラスがあるかどうかをチェック
+          if (currentFilter === 'milestone') {
             const hasMilestone = item.querySelector('.milestone') !== null;
             item.style.display = hasMilestone ? 'block' : 'none';
             return;
           }
 
           // 選択されたフィルターに一致するアイテムのみを表示
-          item.style.display = tags.includes(selectedValue) ? 'block' : 'none';
+          item.style.display = tags.includes(currentFilter) ? 'block' : 'none';
         });
       });
     });

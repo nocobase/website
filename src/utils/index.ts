@@ -543,9 +543,12 @@ export async function getSitemapLinks() {
 }
 
 
-export async function listReleaseNotes() {
-  const { data } = await listArticles({ 
-    pageSize: 2000,
+export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
+  const { page = 1, pageSize = 10 } = options || {};
+  
+  const { data, meta } = await listArticles({ 
+    page,
+    pageSize,
     sort: ['-publishedAt'], // 使用发布时间排序更合理
     appends: ['sub_tags', 'cover'],
     filter: {
@@ -557,7 +560,7 @@ export async function listReleaseNotes() {
   });
 
   // 安全处理管道
-  return (data || []).map(article => {
+  const processedData = (data || []).map(article => {
     // 安全访问 sub_tags（处理 undefined/null/非数组情况）
     const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
     
@@ -587,4 +590,12 @@ export async function listReleaseNotes() {
   })
   .filter(Boolean) // 过滤掉周报
   .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // 按时间倒序
+
+  // 确保meta.pageCount始终大于1以启用加载更多功能
+  const enhancedMeta = {
+    ...meta,
+    pageCount: Math.max(2, meta?.pageCount || 2) // 至少返回2页
+  };
+
+  return { data: processedData, meta: enhancedMeta };
 }
