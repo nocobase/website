@@ -40,7 +40,7 @@ const keywords = page.keywords_ja || page.keywords;
                     <div class="card shadow border-0 rounded">
                         <div class="card-body">
                             <h5 class="card-title">プラグインポイントとは何ですか？</h5>
-                            <p class="text-muted">NocoBaseは数十種類の商用プラグイン（増加中）を提供しています。ユーザーが必要なプラグインを柔軟に選べるよう、「プラグインポイント」という概念を導入しました。1ポイント = 50 USD。NocoBaseのプラグインマーケットでは、プラグインを直接購入する以外に、ポイントを使ってプラグインを交換することができます。</p>
+                            <p class="text-muted">NocoBaseは数十種類の商用プラグイン（増加中）を提供しています。ユーザーが必要なプラグインを柔軟に選べるよう、「プラグインポイント」という概念を導入しました。1ポイント = 50 USD。NocoBaseが開発した商用プラグインでは、プラグインを直接購入するだけでなく、ポイントを使って必要なプラグインと交換できます（ただし、サードパーティ製プラグインにはプラグインポイントは適用されません）。</p>
 
                             <p class="text-muted"><a href="/ja/plugins">プラグインリストページ</a>では、各プラグインの価格と対応するポイントが確認できます。例えば、「データソース：外部PostgreSQL」プラグインは$200または4 <i class="uil uil-moon-eclipse me-1"></i>です。</p>
 
@@ -89,6 +89,22 @@ const keywords = page.keywords_ja || page.keywords;
                                 <table class="table mb-0 table-center commercial-table">
                                     <thead class="">
                                         <tr>
+                                            <th scope="col" class="col-sm-4">バンドル名</th>
+                                            <th scope="col" class="col-sm-2">ポイント</th>
+                                            <th scope="col" class="col-sm-2">通常価格</th>
+                                            <th scope="col" class="col-sm-2">割引</th>
+                                            <th scope="col" class="col-sm-2">価格</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-muted">P8</td>
+                                            <td class="text-muted">8 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                            <td class="fst-italic text-muted">$400</td>
+                                            <td class="fst-italic text-muted"> </td>
+                                            <td class="fst-italic text-muted">$400</td>
+                                        </tr>
+                                        <tr>
                                             <td class="text-muted">P16</td>
                                             <td class="text-muted">16 <i class="uil uil-moon-eclipse me-1"></i></td>
                                             <td class="fst-italic text-muted">$800</td>
@@ -117,10 +133,8 @@ const keywords = page.keywords_ja || page.keywords;
                                             <td class="fst-italic text-muted">$5,120</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-muted">P∞</td>
-                                            <td class="text-muted">99999 <i class="uil uil-moon-eclipse me-1"></i></td>
-                                            <td class="fst-italic text-muted"> </td>
-                                            <td class="fst-italic text-muted"> </td>
+                                            <td class="text-muted">無限</td>
+                                            <td class="text-muted" colspan="3"><span style="font-weight: normal;font-style: italic;font-size: 12px;">NocoBaseが開発した現在および将来のすべての商用プラグインの使用ライセンスを付与します。</span></td>
                                             <td class="fst-italic text-muted">$10,000</td>
                                         </tr>
                                     </tbody>
