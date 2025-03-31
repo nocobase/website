@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ request }) => {
   try {
     // Fetch paginated release notes
     const { data, meta } = await listReleaseNotes({ page, pageSize });
-    console.log(`[API] 获取到 ${data.length} 条数据，总页数：${meta.pageCount}`);
+    console.log(`[API] 获取到 ${data.length} 条数据，还有更多: ${meta.hasMore}`);
     
     // Process the content for each note
     const processedItems = await Promise.all(data.map(async (article) => {
@@ -49,7 +49,10 @@ export const GET: APIRoute = async ({ request }) => {
     return new Response(
       JSON.stringify({
         items: processedItems,
-        meta
+        meta: {
+          ...meta,
+          hasMore: meta.hasMore // 确保返回hasMore标志
+        }
       }),
       {
         status: 200,

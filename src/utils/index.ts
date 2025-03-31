@@ -591,11 +591,17 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   .filter(Boolean) // 过滤掉周报
   .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // 按时间倒序
 
-  // 确保meta.pageCount始终大于1以启用加载更多功能
-  const enhancedMeta = {
-    ...meta,
-    pageCount: Math.max(2, meta?.pageCount || 2) // 至少返回2页
-  };
+  // 确定是否还有更多内容可加载
+  const totalItems = meta?.total || 0;
+  const currentCount = (page - 1) * pageSize + processedData.length;
+  const hasMore = currentCount < totalItems;
 
-  return { data: processedData, meta: enhancedMeta };
+  return { 
+    data: processedData, 
+    meta: {
+      ...meta,
+      hasMore, // 添加hasMore标志
+      pageCount: Math.ceil(totalItems / pageSize)
+    } 
+  };
 }
