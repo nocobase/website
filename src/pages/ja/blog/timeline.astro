@@ -90,7 +90,7 @@ const tabs = [
             {allItems.map(article => (
               <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
                 <div class="row">
-                  <div class="col-lg-3 col-md-3">
+                  <div class="col-lg-3 col-md-3" style="width: 24.65%;">
                     <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                       <FormattedDate date={article.publishedAt} />
                     </div>
@@ -122,7 +122,7 @@ const tabs = [
                           <div class="text-muted mt-2" set:html={article.renderedContent} />
                           {article.tags.length > 0 && (
                             <div class="mt-2">
-                              {article.tags.map(tag => (
+                              {article.tags.map((tag: string) => (
                                 <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
                               ))}
                             </div>
@@ -190,32 +190,24 @@ const tabs = [
   document.addEventListener('DOMContentLoaded', () => {
     // 初期メタデータを取得
     const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
-    let currentPage = 1;
+    let totalItemsLoaded = 0; // フィルターに関係なく読み込まれた項目の合計数を追跡
     let isLoading = false;
-    let hasMoreContent = true; // 常にtrueをデフォルトとし、APIレスポンスでさらにコンテンツがあるかどうかを決定
+    let hasMoreContent = true;
     let currentFilter = 'all';
     let allLoadedItems = []; // 読み込まれた全てのアイテムを保存
+    let maxPageLoaded = 0; // 読み込まれた最高ページ番号を追跡
     
-    // 異なるフィルターごとのページサイズ設定
-    const pageSizeConfig = {
-      all: 30,        // 「すべて」オプションは1リクエストあたり30項目を読み込む
-      milestone: 150, // 「マイルストーン」オプションは1リクエストあたり150項目を読み込む
-      latest: 30,     // その他のオプションはデフォルト値を使用
-      beta: 30,
-      alpha: 30
-    };
+    // すべてのリクエストの標準ページサイズ
+    const pageSize = 30;
     
-    // アクティブなフィルターに基づいて現在のページサイズを取得
-    function getPageSize() {
-      return pageSizeConfig[currentFilter] || 30;
-    }
+    // マイルストーンフィルターの特別なページサイズ乗数
+    const milestoneMultiplier = 5; // マイルストーンフィルターでは一度に5ページを読み込む
     
     console.log('ページ初期化', { 
       initialMeta, 
       hasMoreContent,
-      currentPage,
-      currentFilter,
-      pageSize: getPageSize()
+      totalItemsLoaded,
+      currentFilter
     });
 
     // 新しい記事をページにレンダリング
@@ -240,7 +232,7 @@ const tabs = [
         
         const articleHtml = `
           <div class="row">
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-3" style="width: 24.65%;">
               <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                 ${formatDate(new Date(item.publishedAt))}
               </div>
@@ -283,17 +275,6 @@ const tabs = [
         `;
         
         articleDiv.innerHTML = articleHtml;
-        
-        // 現在のフィルターに基づいて表示または非表示
-        if (currentFilter !== 'all') {
-          const tags = item.tags.map(t => t.toLowerCase());
-          if (currentFilter === 'milestone') {
-            articleDiv.style.display = item.isMilestone ? 'block' : 'none';
-          } else {
-            articleDiv.style.display = tags.includes(currentFilter) ? 'block' : 'none';
-          }
-        }
-        
         container.appendChild(articleDiv);
       });
       
@@ -310,15 +291,16 @@ const tabs = [
       }
     });
     allLoadedItems = [...initialItems];
+    totalItemsLoaded = initialItems.length;
     console.log('初期アイテム収集完了:', initialItems.length);
     
     // DOM要素からデータを抽出
     function extractDataFromElement(element) {
       try {
         const tagsAttr = element.dataset.tags || '';
-        const tags = tagsAttr.split(',');
+        const tags = tagsAttr ? tagsAttr.split(',') : [];
         
-        const titleElement = element.querySelector('h5 a');
+        const titleElement = element.querySelector('h5 a, h3 a');
         const contentElement = element.querySelector('.text-muted.mt-2');
         const descriptionElement = element.querySelector('.mt-3.mb-0.text-muted');
         const dateElement = element.querySelector('.duration.date-label-left');
@@ -360,46 +342,53 @@ const tabs = [
     // 現在のフィルターを適用
     function applyCurrentFilter() {
       console.log('現在のフィルターを適用:', currentFilter);
+      let visibleCount = 0;
       
-      // DOM内の要素を非表示/表示
-        document.querySelectorAll('.timeline-item').forEach(item => {
+      // フィルタリング前の表示項目数をカウント
+      document.querySelectorAll('.timeline-item').forEach(item => {
         if (!(item instanceof HTMLElement)) return;
         
         const tagsAttr = item.dataset.tags || '';
-        const tags = tagsAttr.split(',').map(t => t.toLowerCase());
+        const tags = tagsAttr ? tagsAttr.split(',').map(t => t.toLowerCase()) : [];
+        let isVisible = false;
         
-        // 「全て」を選択した場合、すべてのコンテンツを表示
+        // フィルター条件に基づいて可視性を決定
         if (currentFilter === 'all') {
-            item.style.display = 'block';
-            return;
-          }
-
-        // マイルストーンフィルターの場合、マイルストーンクラスがあるかどうかを確認
-        if (currentFilter === 'milestone') {
-            const hasMilestone = item.querySelector('.milestone') !== null;
-            item.style.display = hasMilestone ? 'block' : 'none';
-            return;
-          }
-
-        // 選択されたフィルターに一致するコンテンツを表示
-        item.style.display = tags.includes(currentFilter) ? 'block' : 'none';
+          isVisible = true;
+        } else if (currentFilter === 'milestone') {
+          isVisible = item.querySelector('.milestone') !== null;
+        } else {
+          isVisible = tags.includes(currentFilter);
+        }
+        
+        // 可視性を適用
+        item.style.display = isVisible ? 'block' : 'none';
+        
+        if (isVisible) {
+          visibleCount++;
+        }
       });
       
-      // 読み込みボタンとメッセージの表示を更新
-      updateLoadMoreVisibility();
+      console.log(`フィルターが適用されました: ${visibleCount} 個の表示アイテム、合計 ${allLoadedItems.length} 個の読み込み済みアイテム`);
+      
+      // 表示項目数に基づいて「続きを読み込む」ボタンの可視性を更新
+      updateLoadMoreVisibility(visibleCount);
     }
     
     // 読み込みボタンとメッセージの表示を更新
-    function updateLoadMoreVisibility() {
+    function updateLoadMoreVisibility(visibleCount) {
       const loadMoreButton = document.getElementById('load-more-button');
       const noMoreContent = document.getElementById('no-more-content');
       
+      // さらにコンテンツがあるか、フィルタリング後に表示項目が少ない場合は読み込みボタンを表示
+      const shouldShowLoadMore = hasMoreContent || (visibleCount < 20 && maxPageLoaded < 10);
+      
       if (loadMoreButton) {
-        loadMoreButton.style.display = hasMoreContent ? 'block' : 'none';
+        loadMoreButton.style.display = shouldShowLoadMore ? 'block' : 'none';
       }
       
       if (noMoreContent) {
-        noMoreContent.style.display = !hasMoreContent ? 'block' : 'none';
+        noMoreContent.style.display = !shouldShowLoadMore ? 'block' : 'none';
       }
     }
     
@@ -411,8 +400,7 @@ const tabs = [
       }
       
       isLoading = true;
-      const pageSize = getPageSize();
-      console.log('コンテンツをもっと読み込み中、ページ:', currentPage + 1, 'ページサイズ:', pageSize, 'フィルター:', currentFilter);
+      console.log('コンテンツをもっと読み込み中、読み込み済み項目総数:', totalItemsLoaded, 'フィルター:', currentFilter);
       
       // 読み込みインジケータを表示
       const loadingIndicator = document.getElementById('loading-indicator');
@@ -423,65 +411,119 @@ const tabs = [
       if (loadMoreButton) loadMoreButton.classList.add('d-none');
       
       try {
-        currentPage++;
-        const timestamp = new Date().getTime(); // キャッシュ防止のためタイムスタンプを追加
-        const url = `/api/release-notes?page=${currentPage}&pageSize=${pageSize}&lang=ja&_t=${timestamp}`;
-        console.log('リクエストURL:', url);
+        // 読み込み済み項目総数に基づいて次のページを計算
+        const nextPage = Math.floor(totalItemsLoaded / pageSize) + 1;
+        maxPageLoaded = Math.max(maxPageLoaded, nextPage);
         
-        const response = await fetch(url);
+        // 一度に読み込むページ数を決定（マイルストーンは複数ページ）
+        const currentPageSize = pageSize;
+        let pagesToLoad = 1;
         
-        if (!response.ok) {
-          throw new Error(`リクエスト失敗: ${response.status} ${response.statusText}`);
+        if (currentFilter === 'milestone') {
+          pagesToLoad = milestoneMultiplier; // マイルストーンフィルターでは複数ページを読み込む
+          console.log(`マイルストーンフィルター用に ${pagesToLoad} ページを読み込みます`);
         }
         
-        const data = await response.json();
-        console.log('読み込んだデータ:', data);
+        // 必要なすべてのページを並行して読み込み、結果を結合
+        const allResults = [];
+        const loadPromises = [];
         
-        // hasMoreContentフラグを更新
-        // 「すべて」オプションでは、APIが明示的にfalseを返さない限り、読み込み可能な状態を維持
-        if (currentFilter === 'all') {
-          hasMoreContent = data.meta?.hasMore !== false;
-          if (data.items && data.items.length > 0) {
-            hasMoreContent = true; // データが返される限り、まだ続きがあると仮定
-          }
-        } else {
-          hasMoreContent = data.meta?.hasMore || false;
+        for (let i = 0; i < pagesToLoad; i++) {
+          const pageToLoad = nextPage + i;
+          const timestamp = new Date().getTime() + i; // キャッシュ防止のためタイムスタンプを追加
+          const url = `/api/release-notes?page=${pageToLoad}&pageSize=${pageSize}&lang=ja&_t=${timestamp}`;
+          console.log(`リクエストURL (${i+1}/${pagesToLoad}):`, url);
+          
+          // このページ読み込みのPromiseを作成
+          const loadPromise = fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`リクエスト失敗: ${response.status} ${response.statusText}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              if (data.items && data.items.length > 0) {
+                // デバッグ用に各項目にページ番号を保存
+                const itemsWithPage = data.items.map(item => ({
+                  ...item,
+                  _pageLoaded: pageToLoad
+                }));
+                allResults.push(...itemsWithPage);
+              }
+              // 最後のページのメタデータを返す
+              return data.meta;
+            })
+            .catch(error => {
+              console.error(`ページ ${pageToLoad} の読み込みエラー:`, error);
+              return null; // 失敗したリクエストにはnullを返す
+            });
+          
+          loadPromises.push(loadPromise);
         }
-        console.log('さらにコンテンツがあるか:', hasMoreContent);
         
-        // データがなければ「これ以上コンテンツはありません」を表示
-        if (!data.items || data.items.length === 0) {
-          if (currentPage > 10 && currentFilter === 'all') {
-            // 「すべて」フィルターでは、多くのページを読み込んでも新しいデータがない場合のみ「これ以上コンテンツはありません」を表示
+        // すべてのページの読み込みが完了するのを待つ
+        const metaResults = await Promise.all(loadPromises);
+        console.log('データ読み込み完了:', allResults.length, '項目、', pagesToLoad, 'ページ分');
+        
+        // 投稿日順にすべての結果をソートして正しい順序を確保
+        allResults.sort((a, b) => {
+          // 投稿日順にソート（最新が先）
+          const dateA = new Date(a.publishedAt);
+          const dateB = new Date(b.publishedAt);
+          return dateB - dateA;
+        });
+        
+        console.log('結果が投稿日順にソートされました');
+        
+        // 最後に成功したページ読み込みのメタデータを使用
+        const lastValidMeta = metaResults.filter(meta => meta !== null).pop();
+        
+        // 項目を取得したかどうか、APIが明示的にこれ以上ないと言っているかを確認
+        const receivedItems = allResults.length > 0;
+        const apiSaysNoMore = lastValidMeta?.hasMore === false;
+        
+        // APIが明示的にこれ以上ないと言っていて、かつ項目を取得していない場合のみhasMoreContentをfalseに設定
+        hasMoreContent = receivedItems || !apiSaysNoMore;
+        console.log('さらにコンテンツがあるか:', hasMoreContent, 'APIがこれ以上ないと言っている:', apiSaysNoMore, '項目を受信:', receivedItems);
+        
+        // 項目をまったく取得しなかった場合、「これ以上コンテンツはありません」を表示
+        if (!receivedItems) {
+          if (apiSaysNoMore) {
             hasMoreContent = false;
             const noMoreContent = document.getElementById('no-more-content');
             if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('アイテムがロードされず、最大ページ数に達しました');
-          } else if (currentFilter !== 'all') {
-            // 「すべて」以外のフィルターは通常の論理に従う
-            hasMoreContent = false;
-            const noMoreContent = document.getElementById('no-more-content');
-            if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('アイテムがロードされませんでした');
+            console.log('これ以上読み込める項目はありません');
           } else {
-            // 「すべて」フィルターでは、データがなくても読み込み可能な状態を維持
-            console.log('今回はアイテムがロードされませんでしたが、読み込み可能な状態を維持します');
+            // 空のレスポンスだがAPIが明示的にこれ以上ないとは言っていない - 一時的な可能性
+            console.log('空のレスポンスですが、APIが明示的にこれ以上コンテンツがないとは言っていません');
+            hasMoreContent = true;
           }
         } else {
+          // 読み込み済み項目総数を更新 - すべてのページを読み込み済みとマーク
+          totalItemsLoaded += allResults.length;
+          
+          // メインリストに追加する前にデバッグプロパティをクリーンアップ
+          const cleanResults = allResults.map(item => {
+            const { _pageLoaded, ...cleanItem } = item;
+            return cleanItem;
+          });
+          
           // 読み込まれたアイテムリストに追加
-          allLoadedItems = [...allLoadedItems, ...data.items];
-          console.log('読み込まれたアイテム総数:', allLoadedItems.length);
+          allLoadedItems = [...allLoadedItems, ...cleanResults];
+          console.log('読み込み済み項目総数:', allLoadedItems.length);
           
           // 新しいコンテンツをレンダリング
-          renderNewItems(data.items);
+          renderNewItems(cleanResults);
           console.log('新しいコンテンツの読み込みとレンダリングに成功しました');
           
-          // 読み込みボタンとメッセージの表示を更新
-          updateLoadMoreVisibility();
+          // フィルター条件に基づいて表示/非表示を適用するために現在のフィルターを適用
+          applyCurrentFilter();
         }
       } catch (error) {
         console.error('コンテンツをもっと読み込む際のエラー:', error);
-        // エラー時に読み込みボタンを再表示
+        // エラー時に読み込みボタンを表示 - エラーで諦めない
+        hasMoreContent = true;
         if (loadMoreButton) loadMoreButton.classList.remove('d-none');
       } finally {
         isLoading = false;
@@ -493,17 +535,17 @@ const tabs = [
     // フィルターを適用
     function applyFilter(filterValue) {
       console.log('フィルターを適用:', filterValue);
-      
-      // フィルターが変更された場合、ページカウントをリセット
-      if (currentFilter !== filterValue.toLowerCase()) {
-        currentPage = 1;
-        hasMoreContent = true; // フィルター変更時に、さらにコンテンツがあると仮定
-      }
-      
       currentFilter = filterValue.toLowerCase();
       
-      // 現在のフィルターを適用
+      // 現在の項目にフィルターを適用
       applyCurrentFilter();
+      
+      // フィルタリング後に表示項目が少ない場合、自動的にさらに読み込む
+      const visibleItems = document.querySelectorAll('.timeline-item').length;
+      if (currentFilter === 'milestone' || visibleItems < 5 && totalItemsLoaded < 100) {
+        console.log('フィルター変更または表示項目が少ないため、自動的にさらにコンテンツを読み込みます:', visibleItems);
+        loadMoreContent();
+      }
     }
     
     // 「もっと読み込む」ボタンのクリックイベントを設定
@@ -521,34 +563,49 @@ const tabs = [
       console.error('「もっと読み込む」ボタンが見つかりません');
     }
     
-    // 手動テスト用関数
-    window.testLoad = loadMoreContent;
-    
     // スクロール検出関数
     function handleScroll() {
       // 読み込みが必要かどうかを確認
-      if (isLoading || !hasMoreContent) {
-        return;
+      if (isLoading) {
+        return; // まだ読み込み中、別の読み込みをトリガーしない
       }
       
       const scrollPosition = window.innerHeight + window.scrollY;
       const pageHeight = document.body.offsetHeight;
-      const scrollThreshold = 0.8; // ページの80%までスクロールした時に読み込みをトリガー
+      const scrollPercentage = scrollPosition / pageHeight;
+      const scrollThreshold = 0.7; // より敏感なしきい値 - 70%スクロールで読み込みをトリガー
       
-      if (scrollPosition >= pageHeight * scrollThreshold) {
-        console.log('スクロール読み込みをトリガー、現在位置:', {
-          scrollPosition,
-          pageHeight,
-          percentage: (scrollPosition / pageHeight).toFixed(2),
-          filter: currentFilter
-        });
-        loadMoreContent();
+      if (scrollPercentage >= scrollThreshold) {
+        console.log('スクロール読み込みがトリガーされました:', Math.round(scrollPercentage * 100) + '%');
+        
+        // hasMoreContentがfalseでも、読み込み済み項目が少ない場合はさらに読み込む
+        if (hasMoreContent || totalItemsLoaded < 200) {
+          loadMoreContent();
+        }
       }
     }
     
-    // スクロールリスナーを設定
+    // 重複イベントを避けるためのデバウンス付きスクロールリスナーを設定
     console.log('スクロールリスナーを設定');
-    window.addEventListener('scroll', handleScroll);
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 100);
+    });
+    
+    // ユーザーがページの下部にいるがスクロールしていない場合に備えて、数秒ごとにスクロール位置をチェック
+    setInterval(() => {
+      if (!isLoading && (hasMoreContent || totalItemsLoaded < 200)) {
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const pageHeight = document.body.offsetHeight;
+        const scrollPercentage = scrollPosition / pageHeight;
+        
+        if (scrollPercentage > 0.9) {
+          console.log('タイマーチェック: ページ下部に近い、さらにコンテンツを読み込みます');
+          loadMoreContent();
+        }
+      }
+    }, 3000);
     
     // フィルターリスナーを設定
     console.log('フィルターリスナーを設定');
