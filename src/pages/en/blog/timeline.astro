@@ -90,7 +90,7 @@ const tabs = [
             {allItems.map(article => (
               <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
                 <div class="row">
-                  <div class="col-lg-3 col-md-3">
+                  <div class="col-lg-3 col-md-3" style="width: 24.65%;">
                     <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                       <FormattedDate date={article.publishedAt} />
                     </div>
@@ -122,7 +122,7 @@ const tabs = [
                           <div class="text-muted mt-2" set:html={article.renderedContent} />
                           {article.tags.length > 0 && (
                             <div class="mt-2">
-                              {article.tags.map(tag => (
+                              {article.tags.map((tag: string) => (
                                 <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
                               ))}
                             </div>
@@ -190,32 +190,24 @@ const tabs = [
   document.addEventListener('DOMContentLoaded', () => {
     // Get initial metadata
     const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
-    let currentPage = 1;
+    let totalItemsLoaded = 0; // Track total items loaded regardless of filter
     let isLoading = false;
-    let hasMoreContent = true; // Always default to true, let API response determine if there's more content
+    let hasMoreContent = true;
     let currentFilter = 'all';
     let allLoadedItems = []; // Store all loaded items
+    let maxPageLoaded = 0; // Track highest page loaded
     
-    // Page size configuration for different filters
-    const pageSizeConfig = {
-      all: 30,        // "All" option loads 30 items per request
-      milestone: 150, // "Milestone" option loads 150 items per request
-      latest: 30,     // Other options use default values
-      beta: 30,
-      alpha: 30
-    };
+    // Standard page size for all requests
+    const pageSize = 30;
     
-    // Get current page size based on active filter
-    function getPageSize() {
-      return pageSizeConfig[currentFilter] || 30;
-    }
+    // Special page size multiplier for milestone filter
+    const milestoneMultiplier = 5; // Load 5 pages at once for milestone filter
     
     console.log('Page initialized', { 
       initialMeta, 
       hasMoreContent,
-      currentPage,
-      currentFilter,
-      pageSize: getPageSize()
+      totalItemsLoaded,
+      currentFilter
     });
 
     // Render new articles to the page
@@ -240,7 +232,7 @@ const tabs = [
         
         const articleHtml = `
           <div class="row">
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-3" style="width: 24.65%;">
               <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                 ${formatDate(new Date(item.publishedAt))}
               </div>
@@ -283,17 +275,6 @@ const tabs = [
         `;
         
         articleDiv.innerHTML = articleHtml;
-        
-        // Display or hide based on current filter
-        if (currentFilter !== 'all') {
-          const tags = item.tags.map(t => t.toLowerCase());
-          if (currentFilter === 'milestone') {
-            articleDiv.style.display = item.isMilestone ? 'block' : 'none';
-          } else {
-            articleDiv.style.display = tags.includes(currentFilter) ? 'block' : 'none';
-          }
-        }
-        
         container.appendChild(articleDiv);
       });
       
@@ -310,15 +291,16 @@ const tabs = [
       }
     });
     allLoadedItems = [...initialItems];
+    totalItemsLoaded = initialItems.length;
     console.log('Initial items collected:', initialItems.length);
     
     // Extract data from DOM element
     function extractDataFromElement(element) {
       try {
         const tagsAttr = element.dataset.tags || '';
-        const tags = tagsAttr.split(',');
+        const tags = tagsAttr ? tagsAttr.split(',') : [];
         
-        const titleElement = element.querySelector('h5 a');
+        const titleElement = element.querySelector('h5 a, h4 a');
         const contentElement = element.querySelector('.text-muted.mt-2');
         const descriptionElement = element.querySelector('.mt-3.mb-0.text-muted');
         const dateElement = element.querySelector('.duration.date-label-left');
@@ -360,46 +342,53 @@ const tabs = [
     // Apply current filter
     function applyCurrentFilter() {
       console.log('Applying current filter:', currentFilter);
+      let visibleCount = 0;
       
-      // Hide/show elements in DOM
-        document.querySelectorAll('.timeline-item').forEach(item => {
+      // Count visible items before filtering
+      document.querySelectorAll('.timeline-item').forEach(item => {
         if (!(item instanceof HTMLElement)) return;
         
         const tagsAttr = item.dataset.tags || '';
-        const tags = tagsAttr.split(',').map(t => t.toLowerCase());
+        const tags = tagsAttr ? tagsAttr.split(',').map(t => t.toLowerCase()) : [];
+        let isVisible = false;
         
-        // If "all" selected, show all content
+        // Determine visibility based on filter
         if (currentFilter === 'all') {
-            item.style.display = 'block';
-            return;
-          }
-
-          // For milestone filter, check if it has the milestone class
-        if (currentFilter === 'milestone') {
-            const hasMilestone = item.querySelector('.milestone') !== null;
-            item.style.display = hasMilestone ? 'block' : 'none';
-            return;
-          }
-
-        // Show content matching selected filter
-        item.style.display = tags.includes(currentFilter) ? 'block' : 'none';
+          isVisible = true;
+        } else if (currentFilter === 'milestone') {
+          isVisible = item.querySelector('.milestone') !== null;
+        } else {
+          isVisible = tags.includes(currentFilter);
+        }
+        
+        // Apply visibility
+        item.style.display = isVisible ? 'block' : 'none';
+        
+        if (isVisible) {
+          visibleCount++;
+        }
       });
       
-      // Update load more button and message visibility
-      updateLoadMoreVisibility();
+      console.log(`Filter applied: ${visibleCount} items visible out of ${allLoadedItems.length} total loaded items`);
+      
+      // Update load more button visibility based on visible items count
+      updateLoadMoreVisibility(visibleCount);
     }
     
     // Update load more button and message visibility
-    function updateLoadMoreVisibility() {
+    function updateLoadMoreVisibility(visibleCount) {
       const loadMoreButton = document.getElementById('load-more-button');
       const noMoreContent = document.getElementById('no-more-content');
       
+      // Always show load more button unless we've explicitly reached the end
+      const shouldShowLoadMore = hasMoreContent || (visibleCount < 20 && maxPageLoaded < 10);
+      
       if (loadMoreButton) {
-        loadMoreButton.style.display = hasMoreContent ? 'block' : 'none';
+        loadMoreButton.style.display = shouldShowLoadMore ? 'block' : 'none';
       }
       
       if (noMoreContent) {
-        noMoreContent.style.display = !hasMoreContent ? 'block' : 'none';
+        noMoreContent.style.display = !shouldShowLoadMore ? 'block' : 'none';
       }
     }
     
@@ -411,8 +400,7 @@ const tabs = [
       }
       
       isLoading = true;
-      const pageSize = getPageSize();
-      console.log('Loading more content, page:', currentPage + 1, 'page size:', pageSize, 'filter:', currentFilter);
+      console.log('Loading more content, totalItemsLoaded:', totalItemsLoaded, 'filter:', currentFilter);
       
       // Show loading indicator
       const loadingIndicator = document.getElementById('loading-indicator');
@@ -423,65 +411,119 @@ const tabs = [
       if (loadMoreButton) loadMoreButton.classList.add('d-none');
       
       try {
-        currentPage++;
-        const timestamp = new Date().getTime(); // Add timestamp to prevent caching
-        const url = `/api/release-notes?page=${currentPage}&pageSize=${pageSize}&lang=en&_t=${timestamp}`;
-        console.log('Request URL:', url);
+        // Calculate which page to request based on total items loaded
+        const nextPage = Math.floor(totalItemsLoaded / pageSize) + 1;
+        maxPageLoaded = Math.max(maxPageLoaded, nextPage);
         
-        const response = await fetch(url);
+        // Determine how many pages to load at once (milestone gets multiple pages)
+        const currentPageSize = pageSize;
+        let pagesToLoad = 1;
         
-        if (!response.ok) {
-          throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+        if (currentFilter === 'milestone') {
+          pagesToLoad = milestoneMultiplier; // Load multiple pages for milestone
+          console.log(`Loading ${pagesToLoad} pages for milestone filter`);
         }
         
-        const data = await response.json();
-        console.log('Loaded data:', data);
+        // Load all needed pages in parallel and combine results
+        const allResults = [];
+        const loadPromises = [];
         
-        // Update has more content flag
-        // For "all" option, keep loadable state unless API explicitly returns false
-        if (currentFilter === 'all') {
-          hasMoreContent = data.meta?.hasMore !== false;
-          if (data.items && data.items.length > 0) {
-            hasMoreContent = true; // As long as data is returned, assume there's more
-          }
-        } else {
-          hasMoreContent = data.meta?.hasMore || false;
+        for (let i = 0; i < pagesToLoad; i++) {
+          const pageToLoad = nextPage + i;
+          const timestamp = new Date().getTime() + i; // Add timestamp to prevent caching
+          const url = `/api/release-notes?page=${pageToLoad}&pageSize=${pageSize}&lang=en&_t=${timestamp}`;
+          console.log(`Request URL (${i+1}/${pagesToLoad}):`, url);
+          
+          // Create promise for this page load
+          const loadPromise = fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              if (data.items && data.items.length > 0) {
+                // Store page number with each item for debugging
+                const itemsWithPage = data.items.map(item => ({
+                  ...item,
+                  _pageLoaded: pageToLoad
+                }));
+                allResults.push(...itemsWithPage);
+              }
+              // Return metadata from last page
+              return data.meta;
+            })
+            .catch(error => {
+              console.error(`Error loading page ${pageToLoad}:`, error);
+              return null; // Return null for failed requests
+            });
+          
+          loadPromises.push(loadPromise);
         }
-        console.log('Has more content:', hasMoreContent);
         
-        // If no more data, show "no more content"
-        if (!data.items || data.items.length === 0) {
-          if (currentPage > 10 && currentFilter === 'all') {
-            // For "all" filter, only show no more content if many pages loaded but no new data
+        // Wait for all page loads to complete
+        const metaResults = await Promise.all(loadPromises);
+        console.log('Loaded data:', allResults.length, 'items across', pagesToLoad, 'pages');
+        
+        // Sort all results by publishedAt date to ensure correct order
+        allResults.sort((a, b) => {
+          // Sort by published date (most recent first)
+          const dateA = new Date(a.publishedAt);
+          const dateB = new Date(b.publishedAt);
+          return dateB - dateA;
+        });
+        
+        console.log('Results sorted by publishedAt date');
+        
+        // Use metadata from the last successful page load
+        const lastValidMeta = metaResults.filter(meta => meta !== null).pop();
+        
+        // Check if we got items and if API explicitly says there's no more
+        const receivedItems = allResults.length > 0;
+        const apiSaysNoMore = lastValidMeta?.hasMore === false;
+        
+        // Only set hasMoreContent to false if API explicitly says no more AND we didn't get items
+        hasMoreContent = receivedItems || !apiSaysNoMore;
+        console.log('Has more content:', hasMoreContent, 'API says no more:', apiSaysNoMore, 'Received items:', receivedItems);
+        
+        // If no items at all, show "no more content"
+        if (!receivedItems) {
+          if (apiSaysNoMore) {
             hasMoreContent = false;
             const noMoreContent = document.getElementById('no-more-content');
             if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('No items loaded and maximum page count reached');
-          } else if (currentFilter !== 'all') {
-            // Non-"all" filters follow normal logic
-            hasMoreContent = false;
-            const noMoreContent = document.getElementById('no-more-content');
-            if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('No items loaded');
+            console.log('No more items to load');
           } else {
-            // For "all" filter, maintain loadable state even if no data
-            console.log('No items loaded this time, but maintaining loadable state');
+            // Empty response but API didn't say no more - might be temporary
+            console.log('Empty response but API did not explicitly say no more content');
+            hasMoreContent = true;
           }
         } else {
+          // Update total items loaded - mark all pages as loaded
+          totalItemsLoaded += allResults.length;
+          
+          // Clean up debug properties before adding to the main list
+          const cleanResults = allResults.map(item => {
+            const { _pageLoaded, ...cleanItem } = item;
+            return cleanItem;
+          });
+          
           // Add to loaded items list
-          allLoadedItems = [...allLoadedItems, ...data.items];
+          allLoadedItems = [...allLoadedItems, ...cleanResults];
           console.log('Total loaded items:', allLoadedItems.length);
           
           // Render new content
-          renderNewItems(data.items);
+          renderNewItems(cleanResults);
           console.log('Successfully loaded and rendered new content');
           
-          // Update load more button and message visibility
-          updateLoadMoreVisibility();
+          // Apply current filter to show/hide based on filter
+          applyCurrentFilter();
         }
       } catch (error) {
         console.error('Error loading more content:', error);
-        // Show load button on error
+        // Show load button on error - don't give up on errors
+        hasMoreContent = true;
         if (loadMoreButton) loadMoreButton.classList.remove('d-none');
       } finally {
         isLoading = false;
@@ -493,17 +535,17 @@ const tabs = [
     // Apply filter
     function applyFilter(filterValue) {
       console.log('Applying filter:', filterValue);
-      
-      // If filter changed, reset page count
-      if (currentFilter !== filterValue.toLowerCase()) {
-        currentPage = 1;
-        hasMoreContent = true; // Assume there's more content when changing filters
-      }
-      
       currentFilter = filterValue.toLowerCase();
       
-      // Apply current filter
+      // Apply filter to current items
       applyCurrentFilter();
+      
+      // If filtered view has few visible items, automatically load more
+      const visibleItems = document.querySelectorAll('.timeline-item').length;
+      if (currentFilter === 'milestone' || visibleItems < 5 && totalItemsLoaded < 100) {
+        console.log('Auto-loading more content due to filter change or few visible items:', visibleItems);
+        loadMoreContent();
+      }
     }
     
     // Set load more button click event
@@ -521,34 +563,49 @@ const tabs = [
       console.error('Load more button not found');
     }
     
-    // Manual test function
-    window.testLoad = loadMoreContent;
-    
     // Scroll detection function
     function handleScroll() {
       // Check if we need to load more
-      if (isLoading || !hasMoreContent) {
-        return;
+      if (isLoading) {
+        return; // Still loading, don't trigger another load
       }
       
       const scrollPosition = window.innerHeight + window.scrollY;
       const pageHeight = document.body.offsetHeight;
-      const scrollThreshold = 0.8; // Trigger loading at 80% scroll
+      const scrollPercentage = scrollPosition / pageHeight;
+      const scrollThreshold = 0.7; // More sensitive threshold - trigger loading at 70% scroll
       
-      if (scrollPosition >= pageHeight * scrollThreshold) {
-        console.log('Scroll loading triggered, current position:', {
-          scrollPosition,
-          pageHeight,
-          percentage: (scrollPosition / pageHeight).toFixed(2),
-          filter: currentFilter
-        });
-        loadMoreContent();
+      if (scrollPercentage >= scrollThreshold) {
+        console.log('Scroll loading triggered at', Math.round(scrollPercentage * 100) + '%');
+        
+        // Even if hasMoreContent is false, try loading more if we haven't loaded much
+        if (hasMoreContent || totalItemsLoaded < 200) {
+          loadMoreContent();
+        }
       }
     }
     
-    // Set up scroll listener
+    // Set up scroll listener with debounce to avoid too many events
     console.log('Setting up scroll listener');
-    window.addEventListener('scroll', handleScroll);
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 100);
+    });
+    
+    // Also check scroll position every few seconds in case user is at bottom but not scrolling
+    setInterval(() => {
+      if (!isLoading && (hasMoreContent || totalItemsLoaded < 200)) {
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const pageHeight = document.body.offsetHeight;
+        const scrollPercentage = scrollPosition / pageHeight;
+        
+        if (scrollPercentage > 0.9) {
+          console.log('Timer check: near bottom of page, loading more content');
+          loadMoreContent();
+        }
+      }
+    }, 3000);
     
     // Set up filter listeners
     console.log('Setting up filter listeners');

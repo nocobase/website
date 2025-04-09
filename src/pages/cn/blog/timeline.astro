@@ -97,7 +97,7 @@ const tabs = [
             {allItems.map(article => (
               <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
                 <div class="row">
-                  <div class="col-lg-3 col-md-3">
+                  <div class="col-lg-3 col-md-3" style="width: 24.65%;">
                     <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                       <FormattedDate date={article.publishedAt} />
                     </div>
@@ -129,7 +129,7 @@ const tabs = [
                           <div class="text-muted mt-2" set:html={article.renderedContent} />
                           {article.tags.length > 0 && (
                             <div class="mt-2">
-                              {article.tags.map(tag => (
+                              {article.tags.map((tag: string) => (
                                 <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
                               ))}
                             </div>
@@ -197,32 +197,24 @@ const tabs = [
   document.addEventListener('DOMContentLoaded', () => {
     // 获取初始元数据
     const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
-    let currentPage = 1;
+    let totalItemsLoaded = 0; // 跟踪已加载的项目总数（不考虑筛选条件）
     let isLoading = false;
-    let hasMoreContent = true; // 始终默认为true，由API响应决定是否还有更多内容
+    let hasMoreContent = true;
     let currentFilter = 'all';
     let allLoadedItems = []; // 保存所有已加载的项目
+    let maxPageLoaded = 0; // 跟踪加载的最高页码
     
-    // 不同筛选条件下的每页加载数量
-    const pageSizeConfig = {
-      all: 30,      // "全部"选项每次加载30条
-      milestone: 150, // "里程碑"选项每次加载150条
-      latest: 30,     // 其他选项使用默认值
-      beta: 30,
-      alpha: 30
-    };
+    // 所有请求的标准页面大小
+    const pageSize = 30;
     
-    // 获取当前筛选条件下的每页加载数量
-    function getPageSize() {
-      return pageSizeConfig[currentFilter] || 30;
-    }
+    // milestone过滤器的特殊页面大小乘数
+    const milestoneMultiplier = 5; // milestone过滤器一次加载5页
     
     console.log('页面初始化', { 
       initialMeta, 
       hasMoreContent,
-      currentPage,
-      currentFilter,
-      pageSize: getPageSize()
+      totalItemsLoaded,
+      currentFilter
     });
 
     // 渲染新的文章到页面上
@@ -247,7 +239,7 @@ const tabs = [
         
         const articleHtml = `
           <div class="row">
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-3" style="width: 24.65%;">
               <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
                 ${formatDate(new Date(item.publishedAt))}
               </div>
@@ -290,17 +282,6 @@ const tabs = [
         `;
         
         articleDiv.innerHTML = articleHtml;
-        
-        // 根据当前筛选设置显示或隐藏
-        if (currentFilter !== 'all') {
-          const tags = item.tags.map(t => t.toLowerCase());
-          if (currentFilter === 'milestone') {
-            articleDiv.style.display = item.isMilestone ? 'block' : 'none';
-          } else {
-            articleDiv.style.display = tags.includes(currentFilter) ? 'block' : 'none';
-          }
-        }
-        
         container.appendChild(articleDiv);
       });
       
@@ -317,13 +298,14 @@ const tabs = [
       }
     });
     allLoadedItems = [...initialItems];
+    totalItemsLoaded = initialItems.length;
     console.log('已收集初始项目：', initialItems.length);
     
     // 从DOM元素中提取数据
     function extractDataFromElement(element) {
       try {
         const tagsAttr = element.dataset.tags || '';
-        const tags = tagsAttr.split(',');
+        const tags = tagsAttr ? tagsAttr.split(',') : [];
         
         const titleElement = element.querySelector('h5 a');
         const contentElement = element.querySelector('.text-muted.mt-2');
@@ -367,46 +349,53 @@ const tabs = [
     // 应用当前筛选条件
     function applyCurrentFilter() {
       console.log('应用当前筛选条件:', currentFilter);
+      let visibleCount = 0;
       
-      // 在DOM中隐藏/显示相应元素
-        document.querySelectorAll('.timeline-item').forEach(item => {
+      // 统计筛选前可见的项目数量
+      document.querySelectorAll('.timeline-item').forEach(item => {
         if (!(item instanceof HTMLElement)) return;
         
         const tagsAttr = item.dataset.tags || '';
-        const tags = tagsAttr.split(',').map(t => t.toLowerCase());
-          
-          // 如果选择"全部"，显示所有内容
+        const tags = tagsAttr ? tagsAttr.split(',').map(t => t.toLowerCase()) : [];
+        let isVisible = false;
+        
+        // 根据筛选条件确定可见性
         if (currentFilter === 'all') {
-            item.style.display = 'block';
-            return;
-          }
-
-        // 对于milestone过滤器，检查是否有milestone类
-        if (currentFilter === 'milestone') {
-            const hasMilestone = item.querySelector('.milestone') !== null;
-            item.style.display = hasMilestone ? 'block' : 'none';
-            return;
-          }
-
-          // 显示匹配所选筛选条件的内容
-        item.style.display = tags.includes(currentFilter) ? 'block' : 'none';
+          isVisible = true;
+        } else if (currentFilter === 'milestone') {
+          isVisible = item.querySelector('.milestone') !== null;
+        } else {
+          isVisible = tags.includes(currentFilter);
+        }
+        
+        // 应用可见性
+        item.style.display = isVisible ? 'block' : 'none';
+        
+        if (isVisible) {
+          visibleCount++;
+        }
       });
       
-      // 更新加载更多按钮和提示的可见性
-      updateLoadMoreVisibility();
+      console.log(`筛选条件已应用: ${visibleCount} 个可见项目，共 ${allLoadedItems.length} 个已加载项目`);
+      
+      // 根据可见项目数量更新加载更多按钮可见性
+      updateLoadMoreVisibility(visibleCount);
     }
     
     // 更新加载更多按钮和提示的可见性
-    function updateLoadMoreVisibility() {
+    function updateLoadMoreVisibility(visibleCount) {
       const loadMoreButton = document.getElementById('load-more-button');
       const noMoreContent = document.getElementById('no-more-content');
       
+      // 如果还有更多内容或者筛选后可见项目较少，显示加载按钮
+      const shouldShowLoadMore = hasMoreContent || (visibleCount < 20 && maxPageLoaded < 10);
+      
       if (loadMoreButton) {
-        loadMoreButton.style.display = hasMoreContent ? 'block' : 'none';
+        loadMoreButton.style.display = shouldShowLoadMore ? 'block' : 'none';
       }
       
       if (noMoreContent) {
-        noMoreContent.style.display = !hasMoreContent ? 'block' : 'none';
+        noMoreContent.style.display = !shouldShowLoadMore ? 'block' : 'none';
       }
     }
     
@@ -418,8 +407,7 @@ const tabs = [
       }
       
       isLoading = true;
-      const pageSize = getPageSize();
-      console.log('加载更多内容，页码：', currentPage + 1, '每页数量:', pageSize, '筛选条件:', currentFilter);
+      console.log('加载更多内容，已加载项目总数:', totalItemsLoaded, '筛选条件:', currentFilter);
       
       // 显示加载指示器
       const loadingIndicator = document.getElementById('loading-indicator');
@@ -430,65 +418,119 @@ const tabs = [
       if (loadMoreButton) loadMoreButton.classList.add('d-none');
       
       try {
-        currentPage++;
-        const timestamp = new Date().getTime(); // 添加时间戳防止缓存
-        const url = `/api/release-notes?page=${currentPage}&pageSize=${pageSize}&lang=cn&_t=${timestamp}`;
-        console.log('请求URL:', url);
+        // 根据已加载项目总数计算下一页
+        const nextPage = Math.floor(totalItemsLoaded / pageSize) + 1;
+        maxPageLoaded = Math.max(maxPageLoaded, nextPage);
         
-        const response = await fetch(url);
+        // 确定一次加载的页数（milestone一次加载多页）
+        const currentPageSize = pageSize;
+        let pagesToLoad = 1;
         
-        if (!response.ok) {
-          throw new Error(`请求失败: ${response.status} ${response.statusText}`);
+        if (currentFilter === 'milestone') {
+          pagesToLoad = milestoneMultiplier; // milestone过滤器加载多页
+          console.log(`为milestone过滤器加载 ${pagesToLoad} 页`);
         }
         
-        const data = await response.json();
-        console.log('加载的数据：', data);
+        // 并行加载所有需要的页面并合并结果
+        const allResults = [];
+        const loadPromises = [];
         
-        // 更新是否还有更多内容的标志
-        // 对于"all"选项，除非API明确返回false，否则保持可加载状态
-        if (currentFilter === 'all') {
-          hasMoreContent = data.meta?.hasMore !== false;
-          if (data.items && data.items.length > 0) {
-            hasMoreContent = true; // 只要有数据返回，就认为还有更多
-          }
-        } else {
-          hasMoreContent = data.meta?.hasMore || false;
+        for (let i = 0; i < pagesToLoad; i++) {
+          const pageToLoad = nextPage + i;
+          const timestamp = new Date().getTime() + i; // 添加时间戳防止缓存
+          const url = `/api/release-notes?page=${pageToLoad}&pageSize=${pageSize}&lang=cn&_t=${timestamp}`;
+          console.log(`请求URL (${i+1}/${pagesToLoad}):`, url);
+          
+          // 创建此页面加载的promise
+          const loadPromise = fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`请求失败: ${response.status} ${response.statusText}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              if (data.items && data.items.length > 0) {
+                // 为每个项目存储页码，用于调试
+                const itemsWithPage = data.items.map(item => ({
+                  ...item,
+                  _pageLoaded: pageToLoad
+                }));
+                allResults.push(...itemsWithPage);
+              }
+              // 返回最后一页的元数据
+              return data.meta;
+            })
+            .catch(error => {
+              console.error(`加载页面 ${pageToLoad} 时出错:`, error);
+              return null; // 请求失败时返回null
+            });
+          
+          loadPromises.push(loadPromise);
         }
-        console.log('是否还有更多内容：', hasMoreContent);
         
-        // 如果没有更多数据，显示"没有更多内容"
-        if (!data.items || data.items.length === 0) {
-          if (currentPage > 10 && currentFilter === 'all') {
-            // 对于"all"筛选，如果已经加载了很多页但没有新数据，才显示没有更多内容
+        // 等待所有页面加载完成
+        const metaResults = await Promise.all(loadPromises);
+        console.log('已加载数据:', allResults.length, '个项目，跨越', pagesToLoad, '页');
+        
+        // 按发布日期对所有结果进行排序，确保正确顺序
+        allResults.sort((a, b) => {
+          // 按发布日期排序（最新的在前）
+          const dateA = new Date(a.publishedAt);
+          const dateB = new Date(b.publishedAt);
+          return dateB - dateA;
+        });
+        
+        console.log('结果已按发布日期排序');
+        
+        // 使用最后一个成功加载的页面的元数据
+        const lastValidMeta = metaResults.filter(meta => meta !== null).pop();
+        
+        // 检查是否获取到项目以及API是否明确表示没有更多内容
+        const receivedItems = allResults.length > 0;
+        const apiSaysNoMore = lastValidMeta?.hasMore === false;
+        
+        // 只有当API明确表示没有更多内容且没有获取到项目时，才将hasMoreContent设为false
+        hasMoreContent = receivedItems || !apiSaysNoMore;
+        console.log('是否还有更多内容:', hasMoreContent, 'API表示没有更多:', apiSaysNoMore, '收到项目:', receivedItems);
+        
+        // 如果没有获取到任何项目，显示"没有更多内容"
+        if (!receivedItems) {
+          if (apiSaysNoMore) {
             hasMoreContent = false;
             const noMoreContent = document.getElementById('no-more-content');
             if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('没有加载到任何内容，且已达到最大页数');
-          } else if (currentFilter !== 'all') {
-            // 非"all"筛选遵循正常逻辑
-            hasMoreContent = false;
-            const noMoreContent = document.getElementById('no-more-content');
-            if (noMoreContent) noMoreContent.classList.remove('d-none');
-            console.log('没有加载到任何内容');
+            console.log('没有更多项目可加载');
           } else {
-            // 对于"all"筛选，即使没有数据，也保持可加载状态
-            console.log('本次没有加载到任何内容，但仍然保持可加载状态');
+            // 空响应但API没有明确表示没有更多内容 - 可能是临时情况
+            console.log('空响应，但API没有明确表示没有更多内容');
+            hasMoreContent = true;
           }
         } else {
+          // 更新已加载项目总数 - 标记所有页面已加载
+          totalItemsLoaded += allResults.length;
+          
+          // 在添加到主列表前清理调试属性
+          const cleanResults = allResults.map(item => {
+            const { _pageLoaded, ...cleanItem } = item;
+            return cleanItem;
+          });
+          
           // 添加到已加载项目列表
-          allLoadedItems = [...allLoadedItems, ...data.items];
-          console.log('已加载项目总数：', allLoadedItems.length);
+          allLoadedItems = [...allLoadedItems, ...cleanResults];
+          console.log('已加载项目总数:', allLoadedItems.length);
           
           // 渲染新的内容
-          renderNewItems(data.items);
+          renderNewItems(cleanResults);
           console.log('成功加载和渲染新内容');
           
-          // 更新加载按钮和提示的可见性
-          updateLoadMoreVisibility();
+          // 应用当前筛选条件以基于筛选条件显示/隐藏
+          applyCurrentFilter();
         }
       } catch (error) {
         console.error('加载更多内容时出错:', error);
-        // 发生错误时重新显示加载按钮
+        // 错误时显示加载按钮 - 不要因错误而放弃
+        hasMoreContent = true;
         if (loadMoreButton) loadMoreButton.classList.remove('d-none');
       } finally {
         isLoading = false;
@@ -499,18 +541,18 @@ const tabs = [
     
     // 应用过滤器
     function applyFilter(filterValue) {
-      console.log('应用过滤器：', filterValue);
-      
-      // 如果筛选条件变了，重置页码
-      if (currentFilter !== filterValue.toLowerCase()) {
-        currentPage = 1;
-        hasMoreContent = true; // 切换筛选条件时，假设有更多内容可加载
-      }
-      
+      console.log('应用过滤器:', filterValue);
       currentFilter = filterValue.toLowerCase();
       
-      // 应用当前筛选条件
+      // 对当前项目应用筛选
       applyCurrentFilter();
+      
+      // 如果筛选后可见项目较少，自动加载更多
+      const visibleItems = document.querySelectorAll('.timeline-item').length;
+      if (currentFilter === 'milestone' || visibleItems < 5 && totalItemsLoaded < 100) {
+        console.log('由于过滤器更改或可见项目较少，自动加载更多内容:', visibleItems);
+        loadMoreContent();
+      }
     }
     
     // 设置加载更多按钮点击事件
@@ -528,34 +570,49 @@ const tabs = [
       console.error('找不到加载更多按钮');
     }
     
-    // 手动测试加载函数
-    window.testLoad = loadMoreContent;
-    
     // 滚动检测函数
     function handleScroll() {
       // 检查是否需要加载更多
-      if (isLoading || !hasMoreContent) {
-        return;
+      if (isLoading) {
+        return; // 仍在加载中，不要触发另一次加载
       }
       
       const scrollPosition = window.innerHeight + window.scrollY;
       const pageHeight = document.body.offsetHeight;
-      const scrollThreshold = 0.8; // 当滚动到页面80%的位置时触发加载
+      const scrollPercentage = scrollPosition / pageHeight;
+      const scrollThreshold = 0.7; // 更敏感的阈值 - 在滚动到70%时触发加载
       
-      if (scrollPosition >= pageHeight * scrollThreshold) {
-        console.log('触发滚动加载，当前位置：', {
-          scrollPosition,
-          pageHeight,
-          percentage: (scrollPosition / pageHeight).toFixed(2),
-          filter: currentFilter
-        });
-        loadMoreContent();
+      if (scrollPercentage >= scrollThreshold) {
+        console.log('触发滚动加载，位置：', Math.round(scrollPercentage * 100) + '%');
+        
+        // 即使hasMoreContent为false，如果加载的项目不多，也尝试加载更多
+        if (hasMoreContent || totalItemsLoaded < 200) {
+          loadMoreContent();
+        }
       }
     }
     
-    // 设置滚动监听
+    // 设置带防抖的滚动监听，避免触发过多事件
     console.log('设置滚动监听');
-    window.addEventListener('scroll', handleScroll);
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 100);
+    });
+    
+    // 每隔几秒检查一次滚动位置，以防用户处于页面底部但未滚动
+    setInterval(() => {
+      if (!isLoading && (hasMoreContent || totalItemsLoaded < 200)) {
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const pageHeight = document.body.offsetHeight;
+        const scrollPercentage = scrollPosition / pageHeight;
+        
+        if (scrollPercentage > 0.9) {
+          console.log('定时检查: 靠近页面底部，加载更多内容');
+          loadMoreContent();
+        }
+      }
+    }, 3000);
     
     // 设置过滤器监听
     console.log('设置过滤器监听');
@@ -564,7 +621,7 @@ const tabs = [
         const target = e.target;
         if (!(target instanceof HTMLInputElement)) return;
         
-        console.log('筛选条件改变：', target.value);
+        console.log('筛选条件改变:', target.value);
         applyFilter(target.value);
       });
     });
