@@ -73,7 +73,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
 });
 ---
 
-<Layout title={title} image={url(data.cover.url)} description={description} keywords={keywords}>
+<Layout title={title} image={data.cover ? url(data.cover.url) : undefined} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
