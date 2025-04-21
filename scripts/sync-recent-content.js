@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Octokit } from '@octokit/rest';
 
 // Configuration
 const baseURL = 'your-cms-url.com/api/';
@@ -20,10 +19,10 @@ const branch = process.env.GITHUB_BRANCH || 'main';
 
 // Config parameters
 const CONFIG = {
-  batchSize: parseInt(process.env.SYNC_BATCH_SIZE || '5'),
-  maxRetries: parseInt(process.env.SYNC_MAX_RETRIES || '3'),
-  retryDelay: parseInt(process.env.SYNC_RETRY_DELAY || '1000'),
-  debugMode: process.env.SYNC_DEBUG === 'true'
+  batchSize: 5,
+  maxRetries: 3,
+  retryDelay: 1000,
+  debugMode: true
 };
 
 // API client with timeout and retry
@@ -177,38 +176,33 @@ async function getRepoTree(recursive = true) {
     trackGithubRequest();
     
     // First get the latest commit on the branch
-    const { data: refData } = await octokit.git.getRef({
-      owner,
-      repo,
-      ref: `heads/${branch}`
-    });
+    const refData = await githubApi.get(`/repos/${owner}/${repo}/git/refs/heads/${branch}`);
     
-    const commitSha = refData.object.sha;
+    const commitSha = refData.data.object.sha;
     
     // Track GitHub request
     trackGithubRequest();
     
     // Then get the tree using this commit
-    const { data: treeData } = await octokit.git.getTree({
-      owner,
-      repo,
-      tree_sha: commitSha,
-      recursive: recursive ? '1' : '0'
+    const treeData = await githubApi.get(`/repos/${owner}/${repo}/git/trees/${commitSha}`, {
+      params: {
+        recursive: recursive ? 1 : 0
+      }
     });
     
     // Index the tree for faster lookups
     const treeIndex = {};
-    for (const item of treeData.tree) {
+    for (const item of treeData.data.tree) {
       treeIndex[item.path] = item;
     }
     
     repoTreeCache = {
-      tree: treeData.tree,
+      tree: treeData.data.tree,
       index: treeIndex,
       sha: commitSha
     };
     
-    console.log(`Successfully fetched repository tree with ${treeData.tree.length} items`);
+    console.log(`Successfully fetched repository tree with ${treeData.data.tree.length} items`);
     return repoTreeCache;
   }, CONFIG.maxRetries, CONFIG.retryDelay);
 }
@@ -246,13 +240,9 @@ async function getFileContent(filePath) {
       // Track GitHub request
       trackGithubRequest();
       
-      const { data } = await octokit.git.getBlob({
-        owner,
-        repo,
-        file_sha: fileInfo.sha
-      });
+      const response = await githubApi.get(`/repos/${owner}/${repo}/git/blobs/${fileInfo.sha}`);
       
-      const content = Buffer.from(data.content, 'base64').toString('utf-8');
+      const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
       contentsBlobCache[filePath] = content;
       return content;
     } catch (error) {
@@ -275,24 +265,21 @@ async function updateGitHubFile(filePath, content, existingFile = null) {
     }
   
     const message = existingFile ? `update: ${filePath}` : `create: ${filePath}`;
-    const params = {
-      owner,
-      repo,
-      path: filePath,
+    const payload = {
       message,
       content: Buffer.from(content).toString('base64'),
       branch
     };
     
     if (existingFile && existingFile.sha) {
-      params.sha = existingFile.sha;
+      payload.sha = existingFile.sha;
     }
     
     try {
       // Track GitHub request
       trackGithubRequest();
       
-      const response = await octokit.repos.createOrUpdateFileContents(params);
+      const response = await githubApi.put(`/repos/${owner}/${repo}/contents/${filePath}`, payload);
       console.log(`Successfully ${existingFile ? 'updated' : 'created'} ${filePath}`);
       
       // Record the path to be updated
@@ -1297,57 +1284,19 @@ async function syncRecentTasks() {
 // Main function
 async function main() {
   try {
-    // Parse command line arguments
-    const args = process.argv.slice(2);
-    const contentTypes = [];
+    // Parse command line arguments - removing process.argv
+    // Instead, we'll hardcode for the CodeMirror environment
+    // Replace with:
+    const args = [];
+    const contentTypes = ['all']; // Default to syncing all content types
     
-    // Process command line arguments
-    for (let i = 0; i < args.length; i++) {
-      const arg = args[i];
-      if (arg === '--help' || arg === '-h') {
-        console.log('Usage: node sync-recent-content.js [options] [content-types]');
-        console.log('');
-        console.log('Options:');
-        console.log('  --help, -h            show help info');
-        console.log('  --hours, -t <number>   set time window (hours), default: 15');
-        console.log('  --debug, -d            enable debug mode');
-        console.log('  --batch <number>       set batch size, default: 5');
-        console.log('');
-        console.log('Content Types:');
-        console.log('  articles               sync articles');
-        console.log('  tutorials              sync tutorials');
-        console.log('  releases               sync releases');
-        console.log('  pages                  sync pages');
-        console.log('  tags                   sync tags');
-        console.log('  categories             sync categories');
-        console.log('  releasetags            sync release tags');
-        console.log('  helpcenter             sync help center');
-        console.log('  plugins                sync plugins');
-        console.log('  tasks                  sync tasks');
-        console.log('  all                    sync all content types (default)');
-        return;
-      } else if (arg === '--hours' || arg === '-t') {
-        const hours = parseInt(args[++i]);
-        if (!isNaN(hours) && hours > 0) {
-          timeWindow = hours * 60 * 60 * 1000;
-        }
-      } else if (arg === '--debug' || arg === '-d') {
-        CONFIG.debugMode = true;
-      } else if (arg === '--batch') {
-        const batchSize = parseInt(args[++i]);
-        if (!isNaN(batchSize) && batchSize > 0) {
-          CONFIG.batchSize = batchSize;
-        }
-      } else if (!arg.startsWith('-')) {
-        contentTypes.push(arg.toLowerCase());
-      }
-    }
-    
-    // If no content types are specified, sync all content
-    const syncAll = contentTypes.length === 0 || contentTypes.includes('all');
+    // Process command line arguments - simplified for CodeMirror
+    let hours = defaultHours; // Default hours from the constant
+    // Update timeWindow with hours value if needed
+    timeWindow = hours * 60 * 60 * 1000;
     
     console.log('Starting content synchronization...');
-    console.log(`Synchronizing content created or updated in the last ${timeWindow / (60 * 60 * 1000)} hours`);
+    console.log(`Synchronizing content created or updated in the last ${hours} hours`);
     if (CONFIG.debugMode) console.log('Debug mode: enabled');
     console.log(`Batch size: ${CONFIG.batchSize}`);
     console.log(`Max retries: ${CONFIG.maxRetries}`);
@@ -1360,52 +1309,52 @@ async function main() {
     await getRepoTree();
     
     // Run all sync operations, collect the number of synced items
-    if (syncAll || contentTypes.includes('articles')) {
+    if (contentTypes.includes('all') || contentTypes.includes('articles')) {
       const articleCount = await syncRecentArticles();
       totalSyncedItems += articleCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('tutorials')) {
+    if (contentTypes.includes('all') || contentTypes.includes('tutorials')) {
       const tutorialCount = await syncRecentTutorials();
       totalSyncedItems += tutorialCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('releases')) {
+    if (contentTypes.includes('all') || contentTypes.includes('releases')) {
       const releaseCount = await syncRecentReleases();
       totalSyncedItems += releaseCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('pages')) {
+    if (contentTypes.includes('all') || contentTypes.includes('pages')) {
       const pageCount = await syncRecentPages();
       totalSyncedItems += pageCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('tags')) {
+    if (contentTypes.includes('all') || contentTypes.includes('tags')) {
       const tagCount = await syncRecentArticleTags();
       totalSyncedItems += tagCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('categories')) {
+    if (contentTypes.includes('all') || contentTypes.includes('categories')) {
       const categoryCount = await syncRecentArticleCategories();
       totalSyncedItems += categoryCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('releasetags')) {
+    if (contentTypes.includes('all') || contentTypes.includes('releasetags')) {
       const releaseTagCount = await syncRecentReleaseTags();
       totalSyncedItems += releaseTagCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('helpcenter')) {
+    if (contentTypes.includes('all') || contentTypes.includes('helpcenter')) {
       const helpCenterCount = await syncRecentHelpCenter();
       totalSyncedItems += helpCenterCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('plugins')) {
+    if (contentTypes.includes('all') || contentTypes.includes('plugins')) {
       const pluginCount = await syncRecentPlugins();
       totalSyncedItems += pluginCount || 0;
     }
     
-    if (syncAll || contentTypes.includes('tasks')) {
+    if (contentTypes.includes('all') || contentTypes.includes('tasks')) {
       const taskCount = await syncRecentTasks();
       totalSyncedItems += taskCount || 0;
     }
@@ -1421,7 +1370,6 @@ async function main() {
     if (error.stack && CONFIG.debugMode) {
       console.error(error.stack);
     }
-    process.exit(1);
   }
 }
 

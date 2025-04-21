@@ -82,7 +82,7 @@ async function extractFrontmatter(content: string) {
               // 简单的数组解析
               value = value.substring(1, value.length - 1)
                 .split(',')
-                .map(item => item.trim())
+                .map((item: string) => item.trim())
                 .filter(Boolean);
             }
           }
