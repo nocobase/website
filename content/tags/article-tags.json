@@ -3278,5 +3278,25 @@
     "keywords_ja": null,
     "createdById": 3,
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-04-21T03:15:45.627Z",
+    "updatedAt": "2025-04-21T03:15:45.627Z",
+    "id": 170,
+    "title": "Management",
+    "title_cn": "管理",
+    "sort": 168,
+    "description": null,
+    "description_cn": null,
+    "displayOnPage": null,
+    "slug": null,
+    "displayOnBlog": null,
+    "keywords": null,
+    "keywords_cn": null,
+    "title_ja": "管理",
+    "description_ja": null,
+    "keywords_ja": null,
+    "createdById": 9,
+    "updatedById": 9
   }
 ]
