@@ -2,13 +2,13 @@
   "id": 393,
   "title": "NocoBase v1.7.0-alpha.11: support variables on the left side of linkage rule conditions",
   "title_cn": "NocoBase v1.7.0-alpha.11：联动规则条件左侧支持变量",
-  "title_ja": "NocoBase v1.7.0-alpha.11：",
+  "title_ja": "NocoBase v1.7.0-alpha.11：連携ルールの条件左側で変数をサポートする",
   "description": "Release Note of v1.7.0-alpha.11",
   "description_cn": "v1.7.0-alpha.11 更新日志",
-  "description_ja": "fetch failed",
+  "description_ja": "v1.7.0-alpha.11 のリリースノート",
   "slug": "v1.7.0-alpha.11",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-04-19T01:34:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -84,6 +84,6 @@
     "updatedById": 3
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-04-21T01:29:28.866Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-04-21T01:57:50.143Z"
 }
