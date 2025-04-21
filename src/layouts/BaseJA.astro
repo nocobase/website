@@ -6,38 +6,38 @@ import DocSearch from "../components/DocSearch.astro";
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
-// 定义支持的语言列表
+// Define the list of supported languages
 const supportedLanguages = ['en', 'cn', 'ja'];
-// 获取当前路径
+// Get the current path
 const currentPath = Astro.url.pathname;
 
-// 正则表达式匹配以 /en/、/cn/ 或 /ja/ 开头的路径
+// Regular expression to match paths starting with /en/, /cn/, or /ja/
 const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
 
-// 函数用于生成不同语言的 URL
+// Function to generate URLs for different languages
 const generateUrl = (lang) => {
     if (langPrefixRegex.test(currentPath)) {
-        // 替换现有的语言前缀
+        // Replace the existing language prefix
         return currentPath.replace(langPrefixRegex, `/${lang}/`);
     } else {
-        // 如果没有语言前缀，则添加新的语言前缀
+        // If there is no language prefix, add a new language prefix
         return `/${lang}${currentPath}`;
     }
 };
 
-// 生成各语言的 URL
-let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避免重复
+// Generate URLs for different languages
+let urlCN = generateUrl('cn').replace(/\/$/, ''); // Remove the trailing slash to avoid duplication
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
 
-// 特殊处理根路径
+// Special handling for the root path
 if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja') {
     urlCN = '/cn';
     urlEN = '/';
     urlJA = '/ja';
 }
 
-// 确保英文主页是 '/'
+// Ensure the English homepage is '/'
 if (urlEN === '/en') {
     urlEN = '/';
 }
@@ -636,7 +636,7 @@ const meta = {
         const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
         const keys = searchButton.querySelector('.DocSearch-Button-Keys');
 
-        // 隐藏文本和快捷键
+        // hide text and shortcut keys
         if (placeholder) placeholder.style.display = 'none';
         if (keys) keys.style.display = 'none';
     });

@@ -4,7 +4,7 @@ import { createMarkdownProcessor as coreCreateMarkdownProcessor } from '@astrojs
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
 
-// 内容缓存
+// Content caches
 const articlesCache: Record<string, any> = {};
 const tutorialsCache: Record<string, any> = {};
 const releasesCache: Record<string, any> = {};
@@ -12,7 +12,7 @@ const pagesCache: Record<string, any> = {};
 
 const contentRoot = path.join(process.cwd(), 'content');
 
-// 创建自己的markdown处理器，避免循环依赖
+// Create a custom markdown processor to avoid circular dependency
 async function createMarkdownProcessor() {
   return await coreCreateMarkdownProcessor({
     shikiConfig: {
@@ -24,10 +24,10 @@ async function createMarkdownProcessor() {
   });
 }
 
-// 创建markdown处理器
+// Create markdown processor
 const processor = await createMarkdownProcessor();
 
-// 读取文件内容，如果文件不存在则返回null
+// Read file content; if the file does not exist, return null
 function readFileOrNull(filePath: string): string | null {
   if (fs.existsSync(filePath)) {
     return fs.readFileSync(filePath, 'utf-8');
@@ -35,7 +35,7 @@ function readFileOrNull(filePath: string): string | null {
   return null;
 }
 
-// 读取JSON文件
+// Read JSON file
 function readJsonFile(filePath: string): any {
   if (fs.existsSync(filePath)) {
     const content = fs.readFileSync(filePath, 'utf-8');
@@ -44,7 +44,7 @@ function readJsonFile(filePath: string): any {
   return null;
 }
 
-// 列出目录下的所有子目录
+// List all subdirectories in a given directory
 function listSubdirectories(dirPath: string): string[] {
   if (!fs.existsSync(dirPath)) {
     return [];
@@ -55,15 +55,15 @@ function listSubdirectories(dirPath: string): string[] {
     .map(dirent => dirent.name);
 }
 
-// 从Markdown前置元数据中提取元数据信息
+// Extract metadata from Markdown frontmatter
 async function extractFrontmatter(content: string) {
-  // 简单的前置元数据提取
+  // Simple frontmatter extraction
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n/;
   const match = content.match(frontmatterRegex);
   
   if (match && match[1]) {
     try {
-      // 解析YAML格式的前置元数据
+      // Parse YAML formatted frontmatter
       const frontmatterStr = match[1];
       const lines = frontmatterStr.split('\n');
       const metadata: Record<string, any> = {};
@@ -74,12 +74,12 @@ async function extractFrontmatter(content: string) {
           const key = line.substring(0, colonIndex).trim();
           let value: any = line.substring(colonIndex + 1).trim();
           
-          // 尝试解析数组
+          // Attempt to parse array
           if (value.startsWith('[') && value.endsWith(']')) {
             try {
               value = JSON.parse(value);
             } catch (e) {
-              // 简单的数组解析
+              // Simple array parsing
               value = value.substring(1, value.length - 1)
                 .split(',')
                 .map((item: string) => item.trim())
@@ -103,7 +103,7 @@ async function extractFrontmatter(content: string) {
   return { metadata: {}, content };
 }
 
-// 获取文章
+// Get article
 export async function getArticle(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
@@ -119,7 +119,7 @@ export async function getArticle(slug?: string, locale = 'en') {
     return {};
   }
 
-  // 读取对应语言的内容文件
+  // Read content file for the specified language
   let contentFile = 'index.md';
   if (locale === 'cn') {
     contentFile = 'index.cn.md';
@@ -130,23 +130,23 @@ export async function getArticle(slug?: string, locale = 'en') {
   const contentPath = path.join(articleDir, contentFile);
   const fallbackContentPath = path.join(articleDir, 'index.md');
   
-  // 尝试读取Markdown内容
+  // Try to read Markdown content
   let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
   
-  // 读取JSON元数据作为备份
+  // Read JSON metadata as backup
   const jsonMetadata = readJsonFile(path.join(articleDir, 'metadata.json')) || {};
   
-  // 从Markdown提取前置元数据
+  // Extract frontmatter metadata from Markdown
   const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
   
-  // 合并元数据，优先使用Markdown中的元数据
+  // Merge metadata, prioritizing Markdown metadata over JSON
   const metadata = { ...jsonMetadata, ...frontMatterMetadata };
   
-  // 处理Markdown内容
+  // Process Markdown content
   const { code, metadata: mdMetadata } = await processor.render(cleanContent);
   const headings: any[] = mdMetadata.headings || [];
 
-  // 缓存结果
+  // Cache result
   const result = { 
     data: metadata, 
     headings, 
@@ -157,7 +157,7 @@ export async function getArticle(slug?: string, locale = 'en') {
   return result;
 }
 
-// 获取教程文章
+// Get tutorial article
 export async function getTutorialArticle(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
@@ -173,7 +173,7 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
     return {};
   }
 
-  // 读取对应语言的内容文件
+  // Read content file for the specified language
   let contentFile = 'index.md';
   if (locale === 'cn') {
     contentFile = 'index.cn.md';
@@ -184,23 +184,23 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
   const contentPath = path.join(tutorialDir, contentFile);
   const fallbackContentPath = path.join(tutorialDir, 'index.md');
   
-  // 尝试读取Markdown内容
+  // Try to read Markdown content
   let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
   
-  // 读取JSON元数据作为备份
+  // Read JSON metadata as backup
   const jsonMetadata = readJsonFile(path.join(tutorialDir, 'metadata.json')) || {};
   
-  // 从Markdown提取前置元数据
+  // Extract frontmatter metadata from Markdown
   const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
   
-  // 合并元数据，优先使用Markdown中的元数据
+  // Merge metadata, prioritizing Markdown metadata over JSON
   const metadata = { ...jsonMetadata, ...frontMatterMetadata };
   
-  // 处理Markdown内容
+  // Process Markdown content
   const { code, metadata: mdMetadata } = await processor.render(cleanContent);
   const headings: any[] = mdMetadata.headings || [];
 
-  // 缓存结果
+  // Cache result
   const result = { 
     data: metadata, 
     headings, 
@@ -211,7 +211,7 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
   return result;
 }
 
-// 获取发布说明
+// Get release
 export async function getRelease(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
@@ -227,7 +227,7 @@ export async function getRelease(slug?: string, locale = 'en') {
     return {};
   }
 
-  // 读取对应语言的内容文件
+  // Read content file for the specified language
   let contentFile = 'index.md';
   if (locale === 'cn') {
     contentFile = 'index.cn.md';
@@ -238,23 +238,23 @@ export async function getRelease(slug?: string, locale = 'en') {
   const contentPath = path.join(releaseDir, contentFile);
   const fallbackContentPath = path.join(releaseDir, 'index.md');
   
-  // 尝试读取Markdown内容
+  // Try to read Markdown content
   let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
   
-  // 读取JSON元数据作为备份
+  // Read JSON metadata as backup
   const jsonMetadata = readJsonFile(path.join(releaseDir, 'metadata.json')) || {};
   
-  // 从Markdown提取前置元数据
+  // Extract frontmatter metadata from Markdown
   const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
   
-  // 合并元数据，优先使用Markdown中的元数据
+  // Merge metadata, prioritizing Markdown metadata over JSON
   const metadata = { ...jsonMetadata, ...frontMatterMetadata };
   
-  // 处理Markdown内容
+  // Process Markdown content
   const { code, metadata: mdMetadata } = await processor.render(cleanContent);
   const headings: any[] = mdMetadata.headings || [];
 
-  // 缓存结果
+  // Cache result
   const result = { 
     data: metadata, 
     headings, 
@@ -265,7 +265,7 @@ export async function getRelease(slug?: string, locale = 'en') {
   return result;
 }
 
-// 获取页面
+// Get page
 export async function getPage(slug?: string, locale = 'en') {
   if (!slug) {
     return {};
@@ -281,7 +281,7 @@ export async function getPage(slug?: string, locale = 'en') {
     return {};
   }
 
-  // 读取对应语言的内容文件
+  // Read content file for the specified language
   let contentFile = 'index.md';
   if (locale === 'cn') {
     contentFile = 'index.cn.md';
@@ -292,29 +292,29 @@ export async function getPage(slug?: string, locale = 'en') {
   const contentPath = path.join(pageDir, contentFile);
   const fallbackContentPath = path.join(pageDir, 'index.md');
   
-  // 尝试读取Markdown内容
+  // Try to read Markdown content
   let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
   
-  // 读取JSON元数据作为备份
+  // Read JSON metadata as backup
   const jsonMetadata = readJsonFile(path.join(pageDir, 'metadata.json')) || {};
   
-  // 从Markdown提取前置元数据
+  // Extract frontmatter metadata from Markdown
   const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
   
-  // 合并元数据，优先使用Markdown中的元数据
+  // Merge metadata, prioritizing Markdown metadata over JSON
   const metadata = { ...jsonMetadata, ...frontMatterMetadata };
   
-  // 处理Markdown内容
+  // Process Markdown content
   const { code } = await processor.render(cleanContent);
 
-  // 缓存并返回结果
+  // Cache and return result
   const result = { ...metadata, html: code };
   pagesCache[cacheKey] = result;
   
   return result;
 }
 
-// 列出文章
+// List articles
 export async function listArticles(options?: { 
   hideOnBlog?: boolean, 
   pageSize?: number, 
@@ -334,17 +334,17 @@ export async function listArticles(options?: {
     sort = ['-publishedAt']
   } = options || {};
 
-  // 获取所有文章目录
+  // Get all articles directories
   const articlesDir = path.join(contentRoot, 'articles');
   const articleSlugs = listSubdirectories(articlesDir);
   
-  // 读取所有文章的元数据
+  // Read all articles metadata
   const articles = articleSlugs.map(slug => {
     const metadataPath = path.join(articlesDir, slug, 'metadata.json');
     return readJsonFile(metadataPath) || null;
   }).filter(Boolean);
 
-  // 过滤条件
+  // Filter conditions
   let filteredArticles = articles.filter(article => 
     article.status === 'published' && 
     !article.hideOnListPage
@@ -366,7 +366,7 @@ export async function listArticles(options?: {
     );
   }
 
-  // 排序
+  // Sorting
   filteredArticles.sort((a, b) => {
     for (const sortField of sort) {
       const desc = sortField.startsWith('-');
@@ -378,7 +378,7 @@ export async function listArticles(options?: {
     return 0;
   });
 
-  // 分页
+  // Pagination
   const startIndex = (page - 1) * pageSize;
   const paginatedArticles = filteredArticles.slice(startIndex, startIndex + pageSize);
 
@@ -393,7 +393,7 @@ export async function listArticles(options?: {
   };
 }
 
-// 列出教程
+// List tutorial articles
 export async function listTutorialArticles(options?: { 
   pageSize?: number, 
   slug?: string; 
@@ -407,17 +407,17 @@ export async function listTutorialArticles(options?: {
     pageSize = 9 
   } = options || {};
 
-  // 获取所有教程目录
+  // Get all tutorials directories
   const tutorialsDir = path.join(contentRoot, 'tutorials');
   const tutorialSlugs = listSubdirectories(tutorialsDir);
   
-  // 读取所有教程的元数据
+  // Read all tutorials metadata
   let tutorials = tutorialSlugs.map(slug => {
     const metadataPath = path.join(tutorialsDir, slug, 'metadata.json');
     return readJsonFile(metadataPath) || null;
   }).filter(Boolean);
 
-  // 过滤条件
+  // Filter conditions
   tutorials = tutorials.filter(tutorial => tutorial.status === 'published');
 
   if (slug) {
@@ -431,10 +431,10 @@ export async function listTutorialArticles(options?: {
     );
   }
 
-  // 按serialsSort排序
+  // Sort by serialsSort
   tutorials.sort((a, b) => (a.serialsSort || 0) - (b.serialsSort || 0));
 
-  // 分页
+  // Pagination
   const startIndex = (page - 1) * pageSize;
   const paginatedTutorials = tutorials.slice(startIndex, startIndex + pageSize);
 
@@ -449,7 +449,7 @@ export async function listTutorialArticles(options?: {
   };
 }
 
-// 列出发布说明
+// List releases
 export async function listReleases(options?: any) {
   const { 
     page = 1, 
@@ -457,17 +457,17 @@ export async function listReleases(options?: any) {
     tagSlug
   } = options || {};
 
-  // 获取所有发布说明目录
+  // Get all releases directories
   const releasesDir = path.join(contentRoot, 'releases');
   const releaseSlugs = listSubdirectories(releasesDir);
   
-  // 读取所有发布说明的元数据
+  // Read all releases metadata
   let releases = releaseSlugs.map(slug => {
     const metadataPath = path.join(releasesDir, slug, 'metadata.json');
     return readJsonFile(metadataPath) || null;
   }).filter(Boolean);
 
-  // 过滤条件
+  // Filter conditions
   releases = releases.filter(release => release.status === 'published');
 
   if (tagSlug) {
@@ -476,12 +476,12 @@ export async function listReleases(options?: any) {
     );
   }
 
-  // 按发布时间排序
+  // Sort by published date descending
   releases.sort((a, b) => 
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
-  // 分页
+  // Pagination
   const startIndex = (page - 1) * pageSize;
   const paginatedReleases = releases.slice(startIndex, startIndex + pageSize);
 
@@ -496,13 +496,13 @@ export async function listReleases(options?: any) {
   };
 }
 
-// 读取文章分类
+// Read article categories
 export async function listArticleCategories() {
   const categoriesPath = path.join(contentRoot, 'categories', 'article-categories.json');
   return readJsonFile(categoriesPath) || [];
 }
 
-// 获取指定slug的分类
+// Get article category by slug
 export async function getArticleCategory(slug?: string) {
   if (!slug) {
     return {};
@@ -510,7 +510,7 @@ export async function getArticleCategory(slug?: string) {
 
   const categoryFile = path.join(contentRoot, 'categories', slug, 'category.json');
   if (!fs.existsSync(categoryFile)) {
-    // 尝试从全部分类列表中查找
+    // Attempt to find from the complete list of categories
     const allCategoriesFile = path.join(contentRoot, 'categories', 'article-categories.json');
     if (fs.existsSync(allCategoriesFile)) {
       const allCategories = readJsonFile(allCategoriesFile) || [];
@@ -523,16 +523,16 @@ export async function getArticleCategory(slug?: string) {
   return readJsonFile(categoryFile) || {};
 }
 
-// 读取文章标签
+// Read article tags
 export async function listArticleTags(options?: any) {
   const tagsPath = path.join(contentRoot, 'tags', 'article-tags.json');
   const tags = readJsonFile(tagsPath) || [];
   
-  // 处理过滤条件
+  // Process filter conditions
   const { filter } = options || {};
   if (filter) {
-    // 这里可以实现基于filter参数的过滤逻辑
-    // 例如：filter: { slug: 'tag-slug' }
+    // You can implement filtering logic based on the filter parameter here,
+    // e.g. filter: { slug: 'tag-slug' }
     return tags.filter((tag: any) => {
       for (const key in filter) {
         if (tag[key] !== filter[key]) {
@@ -546,7 +546,7 @@ export async function listArticleTags(options?: any) {
   return tags;
 }
 
-// 获取指定slug的标签
+// Get article tag by slug
 export async function getArticleTag(slug?: string) {
   if (!slug) {
     return {};
@@ -554,7 +554,7 @@ export async function getArticleTag(slug?: string) {
 
   const tagFile = path.join(contentRoot, 'tags', slug, 'tag.json');
   if (!fs.existsSync(tagFile)) {
-    // 尝试从全部标签列表中查找
+    // Attempt to find from the complete list of tags
     const allTagsFile = path.join(contentRoot, 'tags', 'article-tags.json');
     if (fs.existsSync(allTagsFile)) {
       const allTags = readJsonFile(allTagsFile) || [];
@@ -567,7 +567,7 @@ export async function getArticleTag(slug?: string) {
   return readJsonFile(tagFile) || {};
 }
 
-// 获取发布说明标签
+// Get release tag by slug
 export async function getReleaseTag(slug?: string) {
   if (!slug) {
     return {};
@@ -575,7 +575,7 @@ export async function getReleaseTag(slug?: string) {
 
   const tagFile = path.join(contentRoot, 'tags', 'release-tags', slug, 'tag.json');
   if (!fs.existsSync(tagFile)) {
-    // 尝试从全部发布说明标签列表中查找
+    // Attempt to find from the complete list of release tags
     const allTagsFile = path.join(contentRoot, 'tags', 'release-tags.json');
     if (fs.existsSync(allTagsFile)) {
       const allTags = readJsonFile(allTagsFile) || [];
@@ -588,14 +588,14 @@ export async function getReleaseTag(slug?: string) {
   return readJsonFile(tagFile) || {};
 }
 
-// 获取帮助中心项目
+// Get help center items
 export async function listHelpCenterItems(options?: { pageSize?: number, page?: number, tree?: boolean }) {
   const { tree = true } = options || {};
   
   const helpCenterPath = path.join(contentRoot, 'help-center', 'help-center-tree.json');
   const items = readJsonFile(helpCenterPath) || [];
   
-  // 如果不需要树结构，可以在这里展平结构
+  // If a tree structure is not needed, you can flatten the structure here
   
   return {
     data: items,
@@ -605,9 +605,9 @@ export async function listHelpCenterItems(options?: { pageSize?: number, page?: 
   };
 }
 
-// 获取RSS内容
+// Get RSS items
 export async function getRssItems(locale = '*') {
-  // 获取所有文章数据
+  // Retrieve all articles data
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
@@ -655,14 +655,14 @@ export async function getRssItems(locale = '*') {
   return items;
 }
 
-// 获取站点地图链接
+// Get sitemap links
 export async function getSitemapLinks() {
-  // 这个函数比较复杂，可能需要读取多个数据源，简化实现
+  // This function is relatively complex and may require reading from multiple data sources; simplified implementation
   const tags = await listArticleTags();
   const articles = (await listArticles({ pageSize: 5000 })).data;
   const tutorials = (await listTutorialArticles({ pageSize: 5000 })).data;
   
-  // 基础链接
+  // Base links
   const baseLinks = [
     {
       url: '/',
@@ -673,10 +673,10 @@ export async function getSitemapLinks() {
         { lang: 'x-default', url: `/` },
       ],
     },
-    // 其他基础链接...可以根据需要添加
+    // Additional base links can be added as needed
   ];
   
-  // 标签链接
+  // Tag links
   const tagLinks = tags.map((tag: any) => ({
     url: `/en/blog/tags/${tag.slug}`,
     lastmod: tag.updatedAt,
@@ -688,7 +688,7 @@ export async function getSitemapLinks() {
     ],
   }));
   
-  // 文章链接
+  // Article links
   const articleLinks = articles.map((article: any) => ({
     url: `/en/blog/${article.slug}`,
     lastmod: article.updatedAt,
@@ -700,7 +700,7 @@ export async function getSitemapLinks() {
     ],
   }));
   
-  // 教程链接
+  // Tutorial links
   const tutorialLinks = tutorials.map((tutorial: any) => ({
     url: `/en/tutorials/${tutorial.slug}`,
     lastmod: tutorial.updatedAt,
@@ -715,37 +715,37 @@ export async function getSitemapLinks() {
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
-// 列出发布笔记
+// List release notes
 export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
   const { page = 1, pageSize = 10 } = options || {};
   
-  // 获取所有带有"Release Notes"标签的文章
+  // Retrieve all articles with the "Release Notes" tag
   const { data: allArticles } = await listArticles({
     page: 1,
-    pageSize: 5000,  // 先获取所有文章
+    pageSize: 5000,  // Retrieve all articles first
     sort: ['-publishedAt'],
     filter: {
-      // 获取带有"Release Notes"标签的文章
+      // Retrieve articles with the "Release Notes" tag
     }
   });
   
-  // 过滤出带有"Release Notes"标签的文章
+  // Filter articles that include the "Release Notes" tag
   const releaseNotes = allArticles.filter((article: any) => {
     return article.tags && article.tags.some((tag: any) => tag.title === 'Release Notes');
   });
   
-  // 处理每个文章，添加所需的特殊字段
+  // Process each article and add the required special fields
   const processedData = releaseNotes.map((article: any) => {
-    // 获取子标签
+    // Get sub-tags
     const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
     
-    // 取第一个有效标签，否则默认为 Latest
+    // Take the first valid tag; default to 'Latest' if absent
     const primaryTag = subTags[0]?.title || 'Latest';
     
-    // 所有标签
+    // All tags
     const allTags = (article.sub_tags || []).map((t: any) => t.title.toLowerCase());
     
-    // 过滤周报
+    // Filter out weekly updates
     if (primaryTag === 'Weekly Updates') return null;
     
     return {
@@ -759,16 +759,16 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     };
   }).filter(Boolean);
   
-  // 按时间倒序排序
+  // Sort by date in descending order
   processedData.sort((a: any, b: any) => 
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
   
-  // 分页
+  // Pagination
   const startIndex = (page - 1) * pageSize;
   const paginatedData = processedData.slice(startIndex, startIndex + pageSize);
   
-  // 确定是否还有更多内容
+  // Determine if there are more items
   const totalItems = processedData.length;
   const currentCount = (page - 1) * pageSize + paginatedData.length;
   const hasMore = currentCount < totalItems;
@@ -786,5 +786,4 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   };
 }
 
-// 实现其他需要的方法，如listArticleCategories, listArticleTags等
-// 根据原有API的行为进行类似实现 
+// Implement other required methods, such as listArticleCategories, listArticleTags, according to the original API's behavior

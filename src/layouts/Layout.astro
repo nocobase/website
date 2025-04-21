@@ -5,7 +5,7 @@ import BaseLayoutJA from "./BaseJA.astro";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
-const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/"); // 判断是否为日语路径
+const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/");
 const { title, description, keywords, image } = Astro.props;
 ---
 
@@ -19,7 +19,7 @@ const { title, description, keywords, image } = Astro.props;
     >
         <slot />
     </BaseLayoutCN>
-        ) : ja ? ( // 如果是日语路径，使用 BaseLayoutJA
+        ) : ja ? ( // If the path is Japanese, use BaseLayoutJA
     <BaseLayoutJA
             title={title}
             description={description}
