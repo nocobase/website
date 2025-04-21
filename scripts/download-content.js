@@ -379,9 +379,13 @@ async function downloadCategories() {
         const categoryDir = path.join(contentDir, category.slug);
         ensureDirectoryExists(categoryDir);
         
-        // Save category details
+        // Save category details, ensure Japanese content is included
         saveContentToFile(
-          JSON.stringify(category, null, 2),
+          JSON.stringify({
+            ...category,
+            title_ja: category.title_ja || category.title, // Ensure Japanese title is included if available
+            description_ja: category.description_ja || category.description // Ensure Japanese description is included if available
+          }, null, 2),
           path.join(categoryDir, 'category.json')
         );
         
@@ -415,9 +419,13 @@ async function downloadTags() {
   ensureDirectoryExists(contentDir);
   
   try {
-    // Save all tags to a single JSON file
+    // Save all tags to a single JSON file, ensuring Japanese content is preserved
     saveContentToFile(
-      JSON.stringify(data, null, 2),
+      JSON.stringify(data.map(tag => ({
+        ...tag,
+        title_ja: tag.title_ja || tag.title,
+        description_ja: tag.description_ja || tag.description
+      })), null, 2),
       path.join(contentDir, 'article-tags.json')
     );
     
@@ -435,9 +443,13 @@ async function downloadTags() {
         const tagDir = path.join(contentDir, tag.slug);
         ensureDirectoryExists(tagDir);
         
-        // Save tag details
+        // Save tag details with Japanese support
         saveContentToFile(
-          JSON.stringify(tag, null, 2),
+          JSON.stringify({
+            ...tag,
+            title_ja: tag.title_ja || tag.title, // Ensure Japanese title is included
+            description_ja: tag.description_ja || tag.description // Ensure Japanese description is included
+          }, null, 2),
           path.join(tagDir, 'tag.json')
         );
         
@@ -486,9 +498,13 @@ async function downloadTags() {
         const tagDir = path.join(contentDir, 'release-tags', tag.slug);
         ensureDirectoryExists(tagDir);
         
-        // Save release tag details
+        // Save release tag details with Japanese support
         saveContentToFile(
-          JSON.stringify(tag, null, 2),
+          JSON.stringify({
+            ...tag,
+            title_ja: tag.title_ja || tag.title, // Ensure Japanese title is included
+            description_ja: tag.description_ja || tag.description // Ensure Japanese description is included
+          }, null, 2),
           path.join(tagDir, 'tag.json')
         );
         
@@ -500,7 +516,61 @@ async function downloadTags() {
     
     console.log(`Successfully saved ${releaseTagSuccessCount} individual release tag files`);
   } catch (error) {
-    console.error(`Error saving release tags: ${error.message}`);
+    console.error(`Error in downloadTags:`, error.message);
+  }
+  
+  // Download article sub tags (if available in the API)
+  console.log('Downloading article sub tags...');
+  
+  const subTagsData = await safeGetApiData(
+    `${baseURL}articleSubTags:list?pageSize=200&token=${token}`,
+    'Error downloading article sub tags'
+  );
+  
+  if (subTagsData) {
+    try {
+      // Save all sub tags to a single JSON file
+      saveContentToFile(
+        JSON.stringify(subTagsData, null, 2),
+        path.join(contentDir, 'article-sub-tags.json')
+      );
+      
+      console.log(`Downloaded ${subTagsData.length} article sub tags`);
+      
+      // Create individual sub tag files
+      console.log('Creating individual sub tag files...');
+      let subTagSuccessCount = 0;
+      
+      for (const tag of subTagsData) {
+        if (!tag.slug) continue;
+        
+        try {
+          // Create a subdirectory for each sub tag
+          const tagDir = path.join(contentDir, 'sub-tags', tag.slug);
+          ensureDirectoryExists(tagDir);
+          
+          // Save sub tag details with Japanese support
+          saveContentToFile(
+            JSON.stringify({
+              ...tag,
+              title_ja: tag.title_ja || tag.title, // Ensure Japanese title is included
+              description_ja: tag.description_ja || tag.description // Ensure Japanese description is included
+            }, null, 2),
+            path.join(tagDir, 'tag.json')
+          );
+          
+          subTagSuccessCount++;
+        } catch (error) {
+          console.error(`Error saving sub tag ${tag.title}: ${error.message}`);
+        }
+      }
+      
+      console.log(`Successfully saved ${subTagSuccessCount} individual sub tag files`);
+    } catch (error) {
+      console.error(`Error saving article sub tags: ${error.message}`);
+    }
+  } else {
+    console.log('Skipping article sub tags due to API error');
   }
 }
 
@@ -522,9 +592,30 @@ async function downloadHelpCenter() {
   ensureDirectoryExists(contentDir);
   
   try {
+    // Process the help center tree to ensure Japanese content is preserved
+    const processHelpcenterItem = (item) => {
+      const processed = {
+        ...item,
+        title_ja: item.title_ja || item.title,
+        content_ja: item.content_ja || item.content,
+        description_ja: item.description_ja || item.description,
+      };
+      
+      // Process children recursively if they exist
+      if (Array.isArray(item.children)) {
+        processed.children = item.children.map(child => processHelpcenterItem(child));
+      }
+      
+      return processed;
+    };
+    
+    const processedData = Array.isArray(data) 
+      ? data.map(item => processHelpcenterItem(item))
+      : data;
+    
     // Save help center data
     saveContentToFile(
-      JSON.stringify(data, null, 2),
+      JSON.stringify(processedData, null, 2),
       path.join(contentDir, 'help-center-tree.json')
     );
     
@@ -552,9 +643,20 @@ async function downloadPlugins() {
   ensureDirectoryExists(contentDir);
   
   try {
+    // Process plugins to ensure Japanese content is preserved
+    const processedPlugins = data.map(plugin => ({
+      ...plugin,
+      title_ja: plugin.title_ja || plugin.title,
+      description_ja: plugin.description_ja || plugin.description,
+      category: plugin.category ? {
+        ...plugin.category,
+        title_ja: plugin.category.title_ja || plugin.category.title
+      } : null
+    }));
+    
     // Save plugins data
     saveContentToFile(
-      JSON.stringify(data, null, 2),
+      JSON.stringify(processedPlugins, null, 2),
       path.join(contentDir, 'plugins.json')
     );
     
@@ -582,9 +684,33 @@ async function downloadTasks() {
   ensureDirectoryExists(contentDir);
   
   try {
+    // Process task categories to ensure Japanese content is preserved
+    const processTaskCategory = (category) => {
+      const processed = {
+        ...category,
+        title_ja: category.title_ja || category.title,
+        description_ja: category.description_ja || category.description,
+      };
+      
+      // Process tasks if they exist
+      if (Array.isArray(category.tasks)) {
+        processed.tasks = category.tasks.map(task => ({
+          ...task,
+          title_ja: task.title_ja || task.title,
+          description_ja: task.description_ja || task.description,
+        }));
+      }
+      
+      return processed;
+    };
+    
+    const processedData = Array.isArray(data) 
+      ? data.map(category => processTaskCategory(category))
+      : data;
+    
     // Save tasks data
     saveContentToFile(
-      JSON.stringify(data, null, 2),
+      JSON.stringify(processedData, null, 2),
       path.join(contentDir, 'task-categories.json')
     );
     
