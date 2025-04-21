@@ -8,7 +8,7 @@
   "description_ja": "GitHubスター数ランキング上位40の開発者ツールを発見。ローコード、AIアシスタント、API開発など7つの主要分野を網羅。効率を高め、プロジェクト品質を最適化します。",
   "slug": "github-open-source-developer-tools",
   "publishedAt": "2025-04-19T03:21:39.465Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -344,5 +344,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-21T01:30:28.759Z"
+  "updatedAt": "2025-04-21T02:17:08.727Z"
 }
