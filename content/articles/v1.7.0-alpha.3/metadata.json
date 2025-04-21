@@ -1,0 +1,89 @@
+{
+  "id": 343,
+  "title": "NocoBase v1.7.0-alpha.3: Support inline table actions with icon-only mode",
+  "title_cn": "NocoBase v1.7.0-alpha.3：支持表格行内操作仅显示图标",
+  "title_ja": "NocoBase v1.7.0-alpha.3：インラインテーブル操作において、アイコンのみモードをサポートし",
+  "description": "Release Note of v1.7.0-alpha.3",
+  "description_cn": "v1.7.0-alpha.3 更新日志",
+  "description_ja": "v1.7.0-alpha.3 リリースノート",
+  "slug": "v1.7.0-alpha.3",
+  "publishedAt": "2025-03-18T02:27:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-03-18T02:27:29.775Z",
+        "updatedAt": "2025-03-18T02:27:29.775Z",
+        "tagId": 4,
+        "articleId": 343
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-03-19T01:30:53.097Z",
+        "updatedAt": "2025-03-19T01:30:53.097Z",
+        "articles_id": 343,
+        "tags_id": 115
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-03-19T01:30:12.554Z",
+    "updatedAt": "2025-03-19T01:30:12.554Z",
+    "id": 1021,
+    "title": "develop",
+    "filename": "85c1ec8b239945ebc06033bc4e63fba7.png",
+    "extname": ".png",
+    "size": 76575,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/85c1ec8b239945ebc06033bc4e63fba7.png",
+    "preview": "https://static-docs.nocobase.com/85c1ec8b239945ebc06033bc4e63fba7.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-03-19T01:30:53.092Z"
+}

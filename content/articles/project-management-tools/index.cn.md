@@ -1,0 +1,327 @@
+想象一下，你是一名项目经理，每天早上刚坐到办公桌前，咖啡还在手里，你的手机和电脑屏幕上已经被各种未完成的任务、项目更新和团队消息填满。
+
+你快速浏览着的电子邮件，分配任务的通知不断弹出，而每一个通知都要求你迅速做出决策。
+
+与此同时，团队成员纷纷通过即时消息工具询问进度更新、讨论问题，甚至有些人直接在会议上提出新的挑战和变更需求。
+
+你迫切需要一个解决方案，来满足以下具体需求：
+
+1. **简化任务分配和优先级管理**：轻松分配任务并设定优先级，确保团队成员明确责任，避免遗漏和重复工作。
+2. **实时进度追踪与报告**：实时跟踪项目进度，自动生成报告和数据分析，帮助你及时发现问题并做出数据驱动的决策。
+3. **提升团队沟通与协作**：改善团队内部的沟通流程，提供集中平台以便快速传达信息，减少误解和延迟。
+4. **集成与资料管理**：集成现有工作应用和系统，集中存储和管理所有项目相关的文档和资料，方便访问和共享。
+5. **灵活的工作流自定义**：支持多种项目管理方法和工作流的自定义，适应不同的项目需求和团队要求。
+
+当你列出这些需求时，可能会觉得满足如此复杂要求的项目管理系统需要耗费大量时间和资源，甚至需要聘请技术开发团队进行定制开发，这无疑会对预算造成很大压力。
+
+然而，我发现了一个令人振奋的解决方案：一些简单好用的无代码（零代码）项目管理工具已经可以轻松满足你的所有需求。它们不仅经济实惠，而且无需写代码，操作简便，能够让你快速上手并高效管理项目，从而省去了传统开发的高昂成本和繁琐流程。
+
+下面是我推荐的 5 个开源无代码（零代码）平台，让你可以快速构建自己的项目管理工具。
+
+## 1. **NocoBase**
+
+![NocoBase.PNG](https://static-docs.nocobase.com/bf16eceb2fc546e8146ab0ddce97e089.PNG)
+
+**使用体验**
+
+[NocoBase](https://www.nocobase.com/) 是一个很强大的无代码（零代码）开发平台，可以用于构建项目管理系统。基于数据驱动模型，NocoBase 可以帮你构建一个灵活的项目管理系统，并提供了极大的自定义空间。NocoBase 的界面风格非常简约，使得任务管理和项目追踪变得直观而高效。
+
+🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
+
+**优点**
+
+* **高度自定义的界面:** 允许自定义字段和视图，如表格、看板、甘特图、日历等，简化了数据管理和任务分配。
+* **自动化工作流:** 通过图形化界面，可以轻松设计并实施自动化规则，涵盖审批流程、通知机制等，有效简化复杂业务流程。
+* **强大的数据集成:** 可以连接多种数据库和数据源，如 MySQL、PostgreSQL、SQLite 等，轻松管理所有项目相关的信息。
+* **易于上手:** 直观的拖放操作、灵活的配置、详细的文档和教程，适合各种技术水平的用户。
+
+**适用场景**
+
+NocoBase 适用于需要高度自定义的项目管理场景，包括创建和管理项目看板、分配用户权限、维护项目任务和进度，并支持复杂审批流程和数据集成，提供自动化工作流和易于配置的选项，适合不同技术水平的用户。
+
+**快速开始**
+
+NocoBase 的使用也非常简单，支持三种安装方式：
+
+* [Docker 安装（推荐）](https://docs-cn.nocobase.com/welcome/getting-started/installation/docker-compose)
+* [create-nocobase-app 安装](https://docs-cn.nocobase.com/welcome/getting-started/installation/create-nocobase-app)
+* [Git 源码安装](https://docs-cn.nocobase.com/welcome/getting-started/installation/git-clone)
+
+以下是 Docker 安装的简要步骤
+
+1. 新建 docker-compose.yml
+
+```Bash
+# 创建一个名为 my-project（可以是其他名称）的文件夹，用于存放 NocoBase 生成的系统文件
+mkdir my-project && cd my-project
+
+# 创建一个空的 docker-compose.yml 文件
+vi docker-compose.yml
+```
+
+2. 配置 docker-compose.yml
+   不同数据库配置参数略有不同，请选择合适的数据库配置，并复制到 docker-compose.yml 里
+3. 安装并启动 NocoBase
+
+```Bash
+# 拉取最新镜像
+docker-compose pull
+# 在后台运行
+docker-compose up -d
+# 查看 app 进程的情况
+docker-compose logs app
+
+app-postgres-app-1  | nginx started
+app-postgres-app-1  | yarn run v1.22.15
+app-postgres-app-1  | $ cross-env DOTENV_CONFIG_PATH=.env node -r dotenv/config packages/app/server/lib/index.js install -s
+app-postgres-app-1  | Done in 2.72s.
+app-postgres-app-1  | yarn run v1.22.15
+app-postgres-app-1  | $ pm2-runtime start --node-args="-r dotenv/config" packages/app/server/lib/index.js -- start
+app-postgres-app-1  | 2022-04-28T15:45:38: PM2 log: Launching in no daemon mode
+app-postgres-app-1  | 2022-04-28T15:45:38: PM2 log: App [index:0] starting in -fork mode-
+app-postgres-app-1  | 2022-04-28T15:45:38: PM2 log: App [index:0] online
+app-postgres-app-1  | 🚀 NocoBase server running at: http://localhost:13000/
+```
+
+4. 登录 NocoBase
+   使用浏览器打开 [http://localhost:13000/](http://localhost:13000/) 初始化账号和密码是 `admin@nocobase.com` 和 `admin123`。
+
+详细文档：[docs-cn.nocobase.com](https://docs-cn.nocobase.com/welcome/getting-started/installation/docker-compose)
+
+## 2. **Taiga**
+
+![Taiga.png](https://static-docs.nocobase.com/285fc99825c4ce24dd1435e0d2029a5a.png)
+
+**使用体验**
+
+[Taiga](https://taiga.io/) 是我在寻找敏捷项目管理工具时发现的。这个开源工具特别适合敏捷开发，提供了任务看板、迭代管理和需求跟踪等功能，帮助团队高效管理项目进度。
+
+💡 阅读更多：[探索 RAD：5 个最佳实践案例解析](https://www.nocobase.com/cn/blog/rapid-application-development-best-application-cases)
+
+**优点**
+
+* **敏捷支持:** 提供敏捷开发所需的功能，迭代管理、任务板、待办事项列表等功能。
+* **全面的项目视图**：Taiga 提供多种视图来帮助用户管理项目，包括看板视图、迭代视图和待办事项视图。
+* **报告和分析功能**：提供详细的报告和分析工具，帮助团队监控项目进展、识别潜在问题并进行数据驱动的决策。
+
+**适用场景**
+
+Taiga 适用于需要敏捷开发和高效协作的项目管理场景，包括支持 Scrum 和 Kanban 方法的项目、跨职能团队的合作、快速迭代的产品开发、多任务管理等。
+
+**快速开始**
+
+在开始安装之前，请确保您已经安装了以下软件，并且熟悉相关技术：
+
+* `docker`：版本 >= 19.03.0+
+* Docker、docker compose 和 Docker 存储库
+
+1. 获取仓库
+
+```Plain
+$ cd taiga-docker/
+$ git checkout stable
+```
+
+2. 配置
+
+Taiga 的基本配置已暴露在 `.env` 文件中。建议查看并根据需要修改此文件，以避免使用默认值。
+
+a. 打开 `.env` 文件并根据需要修改配置。
+
+b. 如果需要额外的自定义或高级配置，请编辑 `docker-compose.yml` 和 `docker-compose-inits.yml` 文件。
+
+详细文档：[docs.taiga.io](https://docs.taiga.io/#installation-guide)
+
+## 3. OpenProject
+
+![OpenProject.png](https://static-docs.nocobase.com/e3b8279c7d043018f4399c7b5c2aa8fb.png)
+
+**体验感受**
+
+在我寻求一个全面的项目管理解决方案时，[OpenProject](https://www.openproject.org/) 吸引了我。它提供了丰富的功能模块，包括任务分配、进度跟踪和文档管理等，完美地解决了我在项目管理中遇到的多种问题。
+
+**优点**
+
+* **工具全面:** OpenProject 提供了详细的项目规划工具，包括甘特图、里程碑、任务分解结构（WBS）等。
+* **灵活的任务管理:** 可以创建任务、分配任务、设置优先级、跟踪进度，并通过看板视图和任务列表来管理工作。
+* **团队协作:** 持团队成员之间的协作，包括讨论、文件共享和实时沟通。
+
+**适用场景**
+
+OpenProject 适用于需要高效项目管理和多样化协作的场景，包括支持详细的项目规划与跟踪、跨部门团队的协同作业、复杂任务的分解与追踪、资源管理以及风险控制等。
+
+**快速开始**
+
+启动并运行 OpenProject 实例的最快方法是运行以下命令：
+
+```Bash
+docker run -it -p 8080:80 \-e OPENPROJECT_SECRET_KEY_BASE=secret \-e OPENPROJECT_HOST__NAME=localhost:8080 \-e OPENPROJECT_HTTPS=false \-e OPENPROJECT_DEFAULT__LANGUAGE=en \
+  openproject/openproject:14
+```
+
+配置说明：
+
+* `-p 8080:80`：将容器的80端口绑定到宿主机的8080端口。
+* `OPENPROJECT_SECRET_KEY_BASE`：设置 Rails 的秘钥基。请使用伪随机值并将其视为密码。
+* `OPENPROJECT_HOST__NAME`：设置应用程序的主机名，用于生成表单和电子邮件中的链接。此值应与外部请求主机名一致（即用户浏览器中显示的值）。
+* `OPENPROJECT_HTTPS=false`：禁用默认启用的 HTTPS 模式，允许通过 HTTP 访问实例。对于生产系统，强烈建议启用 HTTPS，并在外部 web 服务器上设置正确的 TLS/SSL 终端。
+* `OPENPROJECT_DEFAULT__LANGUAGE`：设置首次安装时的基本数据和演示数据的语言，并定义新用户的默认备用语言。
+
+首次启动可能需要一些时间，几分钟后应出现成功消息，显示默认的管理员密码（登录名：admin，密码：admin）。
+
+然后，你可以通过浏览器访问你的 OpenProject 实例：`http://localhost:8080`。
+
+要停止容器，只需按 `CTRL-C`。
+
+详细文档：[OpenProject on Docker all-in-one container](https://www.openproject.org/docs/installation-and-operations/installation/docker/#quick-start)
+
+## 4. **Kanboard**
+
+![Kanboard.png](https://static-docs.nocobase.com/6e351b3a74f88ed3cf9646204fe73e88.png)
+
+**使用体验**
+
+[Kanboard](https://kanboard.org/) 是一个专注于看板方法的开源项目管理工具。它的简洁界面和专注于任务可视化的功能让我对项目的进度一目了然。
+
+💡 阅读更多：[6 个最佳核心应用仪表盘构建工具](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)
+
+**优点**
+
+* **直观的界面:** Kanboard 提供了一个清晰且易于操作的看板界面，轻松拖拽任务卡片来更新任务状态，实现快速的进度管理。
+* **灵活的工作流:** 可以根据项目需求自定义工作流，设置不同的任务状态和过渡规则，适应不同类型的项目和团队的工作习惯。
+* **数据隐私和控制:** 部署在本地服务器上，避免了使用第三方服务带来的数据隐私问题。
+
+**适用场景**
+
+Kanboard 适用于需要简洁高效任务管理和灵活工作流配置的项目管理场景，包括支持直观的看板视图来跟踪任务进展、快速调整任务状态、团队协作和任务优先级管理等。
+
+**快速开始**
+
+以下是安装 Kanboard 的简化步骤，适用于 Debian 系统：
+
+1. **更新系统：**
+
+```Bash
+sudo apt update
+sudo apt upgrade -y
+```
+
+2. **安装必要的包：**
+
+```Bash
+sudo apt install -y apache2 mariadb-server php php-mysql php-gd php-xml php-mbstring git
+```
+
+3. **下载 Kanboard：**
+
+```Bash
+cd /var/www/html
+sudo git clone https://github.com/kanboard/kanboard.git
+sudo mv kanboard kanboard-app
+```
+
+4. **配置权限：**
+
+```Bash
+sudo chown -R www-data:www-data /var/www/html/kanboard-app 
+sudo chmod -R 755 /var/www/html/kanboard-app
+```
+
+5. **配置 Apache：**
+
+   a. 创建一个新的 Apache 配置文件 `/etc/apache2/sites-available/kanboard.conf`，并添加以下内容：
+
+   ```Apache
+   <VirtualHost *:80>
+       ServerAdmin webmaster@localhost
+       DocumentRoot /var/www/html/kanboard-app
+       ErrorLog ${APACHE_LOG_DIR}/error.log
+       CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+       <Directory /var/www/html/kanboard-app>
+           AllowOverride All
+           Require all granted
+       </Directory>
+   </VirtualHost>
+   ```
+
+   b. 启用新的配置并重启 Apache：
+
+   ```Bash
+   sudo a2ensite kanboard
+   sudo a2enmod rewrite
+   sudo systemctl restart apache2
+   ```
+6. **配置数据库：**
+
+   a. 登录 MariaDB：
+
+   ```Bash
+   sudo mysql -u root
+   ```
+
+   b. 创建数据库和用户，并授权：
+
+   ```Bash
+   CREATE DATABASE kanboard;
+   CREATE USER 'kanboarduser'@'localhost' IDENTIFIED BY 'password';
+   GRANT ALL PRIVILEGES ON kanboard.* TO 'kanboarduser'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+7. **配置 Kanboard：**
+
+   a. 打开浏览器，访问 `http://your_server_ip/kanboard-app`。
+
+   b. 根据页面提示完成安装，输入数据库信息和其他设置。
+
+详细文档：[Kanboard Documentation](https://docs.kanboard.org/v1/admin/installation/)
+
+## 5. **Focalboard**
+
+![Focalboard.png](https://static-docs.nocobase.com/076e31500670995a5c8a91b7ae0cc2e4.png)
+
+**使用体验**
+
+[Focalboard](https://www.focalboard.com/) 是一个新兴的开源项目管理工具，它提供了任务看板、日历视图和任务跟踪等功能，并且可以与其他工具进行集成。
+
+**优点**
+
+* **自定义功能:** 可以自定义任务字段和工作流，支持创建不同的视图和板块。
+* **多视图:** 支持看板视图、列表视图和日历视图等多种视图选项。
+* **实时协作:** 支持团队成员之间的实时协作，能够显示任务的分配情况、进展状态和讨论内容。
+
+**适用场景**
+
+Focalboard 适用于需要自定义工作流和灵活任务管理的项目管理场景，包括实时协作、丰富的视图选项（如看板、列表和日历视图）、数据隐私保护和多种任务跟踪功能。
+
+**快速开始**
+
+使用单行 [Docker](https://www.docker.com/) 命令下载并运行最新版本的 Focalboard Personal Server：
+
+```Plain
+docker run -it -p 80:8000 mattermost/focalboard
+```
+
+然后打开浏览器进行 [http://localhost](http://localhost/)。
+
+或者，要指定端口号：
+
+```Plain
+docker run -it -p <port>:8000 mattermost/focalboard
+```
+
+详细文档：[Personal Server (Docker)](https://www.focalboard.com/download/personal-edition/docker/)
+
+## 总结
+
+通过对这五款开源无代码（零代码）项目管理工具的实际使用，我深刻感受到它们各自的优势和适用场景。无论是 NocoBase 的高度自定义和数据集成功能、 Taiga 的敏捷支持，还是 Kanboard 的看板管理，每一款工具都有其独特的魅力。如果你也在寻找适合自己的项目管理工具，不妨试试这些开源解决方案吧！
+
+**相关阅读：**
+
+* [NocoBase 与 NocoDB：开源无代码工具深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
+* [GitHub Star 数量前 13 的自托管项目清单](https://www.nocobase.com/cn/blog/self-hsosted-projects-list)
+* [2024 年五大最佳构建内部工具的开源项目](https://www.nocobase.com/cn/blog/top-5-open-source-projects-for-building-internal-tools-in-2024)
+* [GitHub Star 数量前 12 的开源无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)
+* [GitHub 上 Stars 数量最多的 8 个开源 CRUD 项目](https://www.nocobase.com/cn/blog/crud-projects)
+* [GitHub Star 数量前 11 的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)

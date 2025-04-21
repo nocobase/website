@@ -1,0 +1,31 @@
+{
+  "id": 10,
+  "title": "(Wechat)Chapter 3: Task Data Management",
+  "title_cn": "(微信)第三章：任务数据管理 —— 运筹帷幄，轻松上手",
+  "title_ja": "(Wechat)第3章：タスクデータ管理",
+  "description": "(Wechat)",
+  "description_cn": "(微信)",
+  "description_ja": null,
+  "slug": "Wechat-task-tutorial-data-management-guide",
+  "publishedAt": "2024-11-01T05:46:02.866Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2024-11-06T01:53:39.509Z",
+    "updatedAt": "2024-11-24T06:50:42.427Z",
+    "description": null,
+    "description_cn": null,
+    "id": 3,
+    "title": "Wechat - Task Management System",
+    "title_cn": "微信-任务管理系统",
+    "status": "drafted",
+    "sort": 3,
+    "slug": null,
+    "title_ja": "WeChat - タスク管理システム",
+    "description_ja": "このシステムは、タスクの管理と追跡を簡素化するために設計されています。",
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 1,
+  "keywords": [],
+  "updatedAt": "2024-12-14T06:55:59.850Z"
+}

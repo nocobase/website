@@ -1,0 +1,31 @@
+{
+  "id": 24,
+  "title": "Chapter 1: CRM-Sales Cloud Functional Overview",
+  "title_cn": "第一章：CRM-销售云 系统功能梳理",
+  "title_ja": "第1章：CRMセールスクラウド機能概要",
+  "description": null,
+  "description_cn": null,
+  "description_ja": null,
+  "slug": "crm-sales-cloud-functional-overview",
+  "publishedAt": "2025-02-27T13:10:55.788Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-02-27T13:10:42.869Z",
+    "updatedAt": "2025-02-27T13:10:42.869Z",
+    "description": null,
+    "description_cn": null,
+    "id": 5,
+    "title": "CRM-Sales",
+    "title_cn": "CRM系统（销售）",
+    "status": "drafted",
+    "sort": 21,
+    "slug": null,
+    "title_ja": "CRM-セールス",
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 1,
+  "keywords": [],
+  "updatedAt": "2025-03-02T10:47:25.961Z"
+}

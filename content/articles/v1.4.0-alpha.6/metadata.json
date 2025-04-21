@@ -1,0 +1,89 @@
+{
+  "id": 131,
+  "title": "NocoBase v1.4.0-alpha.6: Support configuration options for hiding table columns",
+  "title_cn": "Nocobase v1.4.0-alpha.6：支持隐藏表格列的配置项",
+  "title_ja": "Nocobase v1.4.0-alpha.6：テーブル列を非表示にするための設定オプションをサポート",
+  "description": "Release Note of v1.4.0-alpha.6",
+  "description_cn": "v1.4.0-alpha.6 更新日志",
+  "description_ja": "v1.4.0-alpha.6 のリリースノート",
+  "slug": "v1.4.0-alpha.6",
+  "publishedAt": "2024-11-07T07:05:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2024-11-07T15:05:49.464Z",
+        "updatedAt": "2024-11-07T15:05:49.464Z",
+        "tagId": 4,
+        "articleId": 131
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-01-22T06:50:39.089Z",
+        "updatedAt": "2025-01-22T06:50:39.089Z",
+        "articles_id": 131,
+        "tags_id": 115
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2024-11-11T11:07:22.008Z",
+    "updatedAt": "2024-11-11T11:07:22.008Z",
+    "id": 548,
+    "title": "next-alpha_ 需要确保文字都在虚线内",
+    "filename": "548e61370f0110a1bb47a702365198a9.png",
+    "extname": ".png",
+    "size": 114495,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/548e61370f0110a1bb47a702365198a9.png",
+    "preview": "https://static-docs.nocobase.com/548e61370f0110a1bb47a702365198a9.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-01-07T13:34:33.867Z"
+}

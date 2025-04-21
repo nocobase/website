@@ -1,0 +1,62 @@
+{
+  "id": 42,
+  "title": "NocoBase 1.3.0-alpha",
+  "title_cn": "NocoBase 1.3.0-alpha",
+  "title_ja": "NocoBase 1.3.0-alpha",
+  "description": "",
+  "description_cn": null,
+  "description_ja": "",
+  "slug": "release-130-alpha",
+  "publishedAt": "2024-06-23T09:16:18.216Z",
+  "status": "drafted",
+  "tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-01-22T06:50:38.997Z",
+        "updatedAt": "2025-01-22T06:50:38.997Z",
+        "articles_id": 42,
+        "tags_id": 115
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2024-06-23T09:24:03.168Z",
+    "updatedAt": "2024-06-23T09:24:03.168Z",
+    "id": 41,
+    "title": "screenshot-20240613-172341",
+    "filename": "363067acaca57de01948e62136fab9c6.png",
+    "extname": ".png",
+    "size": 885137,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/363067acaca57de01948e62136fab9c6.png",
+    "preview": "https://static-docs.nocobase.com/363067acaca57de01948e62136fab9c6.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": false,
+  "updatedAt": "2024-11-24T05:21:41.585Z"
+}

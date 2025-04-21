@@ -1,0 +1,31 @@
+{
+  "id": 26,
+  "title": "CRM System (Sales Cloud)",
+  "title_cn": "CRM 系统 (销售云)",
+  "title_ja": "CRMシステム（セールスクラウド）",
+  "description": null,
+  "description_cn": null,
+  "description_ja": null,
+  "slug": "crm-sales-cloud-introduction",
+  "publishedAt": "2025-03-02T10:43:02.570Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-02-27T13:10:42.869Z",
+    "updatedAt": "2025-02-27T13:10:42.869Z",
+    "description": null,
+    "description_cn": null,
+    "id": 5,
+    "title": "CRM-Sales",
+    "title_cn": "CRM系统（销售）",
+    "status": "drafted",
+    "sort": 21,
+    "slug": null,
+    "title_ja": "CRM-セールス",
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 3,
+  "keywords": [],
+  "updatedAt": "2025-03-02T11:17:59.935Z"
+}

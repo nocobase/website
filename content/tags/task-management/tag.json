@@ -1,0 +1,20 @@
+{
+  "createdAt": "2024-11-01T03:56:44.672Z",
+  "updatedAt": "2024-11-24T05:34:30.880Z",
+  "id": 78,
+  "title": "Task Management",
+  "title_cn": "任务管理",
+  "sort": 78,
+  "description": null,
+  "description_cn": null,
+  "displayOnPage": null,
+  "slug": "task-management",
+  "displayOnBlog": null,
+  "keywords": null,
+  "keywords_cn": null,
+  "title_ja": "タスク管理",
+  "description_ja": null,
+  "keywords_ja": null,
+  "createdById": 9,
+  "updatedById": 9
+}

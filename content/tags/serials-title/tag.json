@@ -1,0 +1,20 @@
+{
+  "createdAt": "2024-11-01T03:58:07.244Z",
+  "updatedAt": "2024-11-24T05:34:31.052Z",
+  "id": 79,
+  "title": "Serials Title",
+  "title_cn": "系列标题",
+  "sort": 79,
+  "description": null,
+  "description_cn": null,
+  "displayOnPage": null,
+  "slug": "serials-title",
+  "displayOnBlog": null,
+  "keywords": null,
+  "keywords_cn": null,
+  "title_ja": "シリーズタイトル",
+  "description_ja": null,
+  "keywords_ja": null,
+  "createdById": 9,
+  "updatedById": 9
+}

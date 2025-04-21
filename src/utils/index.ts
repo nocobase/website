@@ -1,9 +1,13 @@
 import { createMarkdownProcessor as coreCreateMarkdownProcessor } from '@astrojs/markdown-remark';
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
+import * as localContent from './local-content';
+import path from 'path';
+import fs from 'fs';
 
 const baseURL = (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/';
 const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
+const useLocalContent = import.meta.env.USE_LOCAL_CONTENT === 'true' || process.env.USE_LOCAL_CONTENT === 'true';
 
 export function url(path: string) {
   if (path.startsWith('https')) {
@@ -27,25 +31,161 @@ export async function createMarkdownProcessor() {
   });
 }
 
+// 使用本地内容源或CMS API源
 export async function getTaskLastUpdatedAt() {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    // 从本地文件获取最后更新时间
+    // 可以读取task-categories.json文件获取最后更新时间
+    try {
+      const taskCategoriesFile = path.join(process.cwd(), 'content', 'tasks', 'task-categories.json');
+      if (fs.existsSync(taskCategoriesFile)) {
+        const data = JSON.parse(fs.readFileSync(taskCategoriesFile, 'utf-8'));
+        // 从所有任务中找出最新的更新时间
+        const latestTask = data.reduce((latest: any, current: any) => {
+          const currentUpdated = new Date(current.updatedAt || 0).getTime();
+          const latestUpdated = latest ? new Date(latest.updatedAt || 0).getTime() : 0;
+          return currentUpdated > latestUpdated ? current : latest;
+        }, null);
+        
+        return latestTask?.updatedAt || new Date().toISOString();
+      }
+    } catch (error) {
+      console.error('Error reading task last updated at:', error);
+    }
+    return new Date().toISOString(); // 默认返回当前时间
+  }
+
   const res = await fetch(`${baseURL}tasks:get?sort=-updatedAt&token=${token}`);
   const { data } = await res.json() as { data: any };
   return data.updatedAt;
 }
 
 export async function getLastUpdatedAt(collection: string) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    // 从本地文件获取最后更新时间
+    try {
+      let filePath = '';
+      switch (collection) {
+        case 'articles':
+          filePath = path.join(process.cwd(), 'content', 'articles');
+          break;
+        case 'plugins_2025':
+          filePath = path.join(process.cwd(), 'content', 'plugins', 'plugins.json');
+          break;
+        case 'tutorialArticles':
+          filePath = path.join(process.cwd(), 'content', 'tutorials');
+          break;
+        default:
+          return new Date().toISOString();
+      }
+      
+      if (fs.existsSync(filePath)) {
+        if (fs.statSync(filePath).isDirectory()) {
+          // 如果是目录，找出目录中最新的文件
+          const files = fs.readdirSync(filePath);
+          let latestTime = 0;
+          
+          for (const file of files) {
+            const fullPath = path.join(filePath, file);
+            const stat = fs.statSync(fullPath);
+            if (stat.isDirectory() || stat.isFile()) {
+              const mtime = stat.mtime.getTime();
+              if (mtime > latestTime) {
+                latestTime = mtime;
+              }
+            }
+          }
+          
+          return latestTime ? new Date(latestTime).toISOString() : new Date().toISOString();
+        } else {
+          // 如果是文件，直接返回文件修改时间
+          const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+          if (Array.isArray(data) && data.length > 0) {
+            // 尝试从数据中获取最新更新时间
+            const latestItem = data.reduce((latest: any, current: any) => {
+              const currentUpdated = new Date(current.updatedAt || 0).getTime();
+              const latestUpdated = latest ? new Date(latest.updatedAt || 0).getTime() : 0;
+              return currentUpdated > latestUpdated ? current : latest;
+            }, null);
+            
+            return latestItem?.updatedAt || new Date().toISOString();
+          }
+          return new Date(fs.statSync(filePath).mtime).toISOString();
+        }
+      }
+    } catch (error) {
+      console.error(`Error reading ${collection} last updated at:`, error);
+    }
+    return new Date().toISOString(); // 默认返回当前时间
+  }
+
   const res = await fetch(`${baseURL}${collection}:get?sort=-updatedAt&token=${token}`);
   const { data } = await res.json() as { data: any };
   return data.updatedAt;
 }
 
 export async function listTaskCategories() {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    try {
+      const taskCategoriesFile = path.join(process.cwd(), 'content', 'tasks', 'task-categories.json');
+      if (fs.existsSync(taskCategoriesFile)) {
+        return JSON.parse(fs.readFileSync(taskCategoriesFile, 'utf-8'));
+      }
+      return [];
+    } catch (error) {
+      console.error('Error reading task categories:', error);
+      return [];
+    }
+  }
+
   const res = await fetch(`${baseURL}taskCategories:list?pageSize=200&appends=tasks(sort=sort),tasks.status&sort=sort&token=${token}`);
   const { data } = await res.json() as { data: any[] };
   return data;
 }
 
 export async function listPluginCategories() {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    try {
+      const pluginsFile = path.join(process.cwd(), 'content', 'plugins', 'plugins.json');
+      if (fs.existsSync(pluginsFile)) {
+        const plugins = JSON.parse(fs.readFileSync(pluginsFile, 'utf-8'));
+        
+        // 与在线版本相同的处理逻辑
+        const groupMap = new Map<number, any>();
+
+        for (const plugin of plugins) {
+          const cat = plugin.category;
+          if (!cat) {
+            continue;
+          }
+
+          if (!groupMap.has(cat.id)) {
+            groupMap.set(cat.id, {
+              id: cat.id,
+              title: cat.title,
+              title_cn: cat.title_cn,
+              title_ja: cat.title_ja,
+              slug: cat.slug,
+              sort: cat.sort,
+              plugins: [],
+            });
+          }
+          groupMap.get(cat.id).plugins.push(plugin);
+        }
+
+        return Array.from(groupMap.values());
+      }
+      return [];
+    } catch (error) {
+      console.error('Error reading plugin categories:', error);
+      return [];
+    }
+  }
+
   const res = await fetch(
       `${baseURL}plugins_2025:list?pageSize=400&sort[]=sort&appends[]=category&filter={}&token=${token}`
   );
@@ -83,7 +223,6 @@ export async function listPluginCategories() {
   return Array.from(groupMap.values());
 }
 
-
 export async function listArticles(options?: { 
   hideOnBlog?: boolean, 
   pageSize?: number, 
@@ -94,6 +233,11 @@ export async function listArticles(options?: {
   sort?: string[];
   appends?: string[];
 }) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listArticles(options);
+  }
+
   const { 
     hideOnBlog, 
     categorySlug, 
@@ -153,6 +297,11 @@ export async function listArticles(options?: {
 }
 
 export async function listTutorialArticles(options?: { pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listTutorialArticles(options);
+  }
+
   const { slug, serialsSlug, page = 1, pageSize = 9 } = options || { page: 1, pageSize: 9 };
   let url = `${baseURL}tutorialArticles:list?page=${page}&pageSize=${pageSize}&appends=serials&sort=serialsSort&token=${token}&filter[serials.status]=published&filter[status]=published`;
   if (slug) {
@@ -167,6 +316,11 @@ export async function listTutorialArticles(options?: { pageSize?: number, slug?:
 }
 
 export async function listHelpCenterItems(options?: { pageSize?: number,  page?: number, tree?: boolean}) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listHelpCenterItems(options);
+  }
+
   const { tree=true, page = 1, pageSize = 20 } = options || { page: 1, pageSize: 20 };
   let url = `${baseURL}help_center_tree:list?page=${page}&pageSize=${pageSize}&sort=item_sort&tree=${tree}&token=${token}&filter[status]=published`;
   const res = await fetch(url);
@@ -174,8 +328,8 @@ export async function listHelpCenterItems(options?: { pageSize?: number,  page?:
   return { data, meta };
 }
 
-
 export async function getRssItems(locale = '*') {
+  // 根据配置切换内容源
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
@@ -225,12 +379,22 @@ export async function getRssItems(locale = '*') {
 }
 
 export async function listArticleCategories() {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listArticleCategories();
+  }
+
   const res = await fetch(`${baseURL}articleCategories:list?pageSize=200&sort=sort&token=${token}`);
   const { data } = await res.json() as { data: any[] };
   return data;
 }
 
 export async function listArticleTags(options?: any) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listArticleTags(options);
+  }
+
   const { filter } = options || {};
   const res = await fetch(`${baseURL}articleTags:list?pageSize=200&sort=sort&token=${token}&filter=${JSON.stringify(filter)}`);
   const { data } = await res.json() as { data: any[] };
@@ -238,6 +402,11 @@ export async function listArticleTags(options?: any) {
 }
 
 export async function getPage(slug?: string) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getPage(slug);
+  }
+
   if (!slug) {
     return {};
   }
@@ -248,6 +417,11 @@ export async function getPage(slug?: string) {
 }
 
 export async function getArticleCategory(slug?: string) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getArticleCategory(slug);
+  }
+
   if (!slug) {
     return {};
   }
@@ -258,6 +432,11 @@ export async function getArticleCategory(slug?: string) {
 }
 
 export async function getArticleTag(slug?: string) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getArticleTag(slug);
+  }
+
   if (!slug) {
     return {};
   }
@@ -270,6 +449,11 @@ export async function getArticleTag(slug?: string) {
 const articles: Record<string, any> = {};
 
 export async function getArticle(slug?: string, locale = 'en') {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getArticle(slug, locale);
+  }
+
   if (!slug) {
     return {};
   }
@@ -298,6 +482,11 @@ export async function getArticle(slug?: string, locale = 'en') {
 }
 
 export async function getTutorialArticle(slug?: string, locale = 'en') {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getTutorialArticle(slug, locale);
+  }
+
   if (!slug) {
     return {};
   }
@@ -326,6 +515,11 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
 }
 
 export async function listReleases(options?: any) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.listReleases(options);
+  }
+
   const { page = 1, tagSlug } = options || {};
   let url = `${baseURL}releases:list?page=${page}&pageSize=20&sort=-publishedAt&token=${token}&filter[status]=published`;
   if (tagSlug) {
@@ -339,6 +533,11 @@ export async function listReleases(options?: any) {
 const releases: Record<string, any> = {};
 
 export async function getRelease(slug?: string, locale = 'en') {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getRelease(slug, locale);
+  }
+
   if (!slug) {
     return {};
   }
@@ -367,6 +566,11 @@ export async function getRelease(slug?: string, locale = 'en') {
 }
 
 export async function getReleaseTag(slug?: string) {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getReleaseTag(slug);
+  }
+
   if (!slug) {
     return {};
   }
@@ -377,6 +581,11 @@ export async function getReleaseTag(slug?: string) {
 }
 
 export async function getSitemapLinks() {
+  // 根据配置切换内容源
+  if (useLocalContent) {
+    return localContent.getSitemapLinks();
+  }
+
   const items1 = await fetch(`${baseURL}articleTags:list?sort=sort&paginate=false&token=${token}`)
     .then(res => res.json())
     .then(body => body.data);
@@ -542,7 +751,6 @@ export async function getSitemapLinks() {
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
-
 export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
   const { page = 1, pageSize = 10 } = options || {};
   
@@ -568,7 +776,7 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     const primaryTag = subTags[0]?.title || 'Latest';
     
     // 保留所有标签（兼容原始数据）
-    const allTags = article.sub_tags.map(t => t.title.toLowerCase());
+    const allTags = article.sub_tags.map((t: any) => t.title.toLowerCase());
 
     // 原始周报过滤逻辑
     if (primaryTag === 'Weekly Updates') return null;
@@ -579,7 +787,7 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
       tags: allTags,
       content: article.content || '',
       // 兼容原始 milestone 判断逻辑
-      isMilestone: (article.sub_tags || []).some(t => t.title === 'Milestone'),
+      isMilestone: (article.sub_tags || []).some((t: any) => t.title === 'Milestone'),
       // 保持原始优先级逻辑
       priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
       // 安全处理日期

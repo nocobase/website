@@ -1,0 +1,12 @@
+{
+  "createdAt": "2024-06-19T14:23:40.901Z",
+  "updatedAt": "2024-11-24T05:25:46.023Z",
+  "id": 1,
+  "title": "Release Notes",
+  "title_cn": "发布日志",
+  "slug": "releases",
+  "sort": 1,
+  "title_ja": "リリースノート",
+  "createdById": 1,
+  "updatedById": 9
+}

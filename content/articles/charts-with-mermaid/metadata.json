@@ -1,0 +1,19 @@
+{
+  "id": 380,
+  "title": "Creating Dynamic Charts in NocoBase with Markdown and Mermaid",
+  "title_cn": "让数据跳跃：在 NocoBase中用 Markdown 和 Mermaid 绘制动态图表",
+  "title_ja": "データを躍動させよう：NocoBaseでMarkdownとMermaidを使った動的チャートの描画",
+  "description": null,
+  "description_cn": null,
+  "description_ja": null,
+  "slug": "charts-with-mermaid",
+  "publishedAt": "2025-04-09T18:00:36.349Z",
+  "status": "drafted",
+  "tags": [],
+  "sub_tags": [],
+  "category": null,
+  "cover": null,
+  "hideOnListPage": false,
+  "hideOnBlog": false,
+  "updatedAt": "2025-04-11T01:17:33.060Z"
+}
