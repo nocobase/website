@@ -4,7 +4,7 @@
   "title_cn": "在 NocoBase 中实现 CRM 销售漏斗可视化：线索状态进度条与阶段管理",
   "title_ja": "NocoBaseにおけるCRM販売パイプラインの可視化：リードステータスプログレスバーとステージ管理",
   "description": "Learn how to build a Salesforce-like CRM sales pipeline visualization in NocoBase, featuring lead status progress bars and stage management. Implement status-driven form displays to visually track leads from unqualified to completed, enhancing sales efficiency and conversion rates. Perfect for businesses and developers looking to optimize CRM sales processes.",
-  "description_cn": "详解如何在NocoBase低代码平台中构建类Salesforce的CRM销售漏斗可视化功能，包括线索状态进度条与阶段管理。通过状态驱动表单显示变化，实现线索从未达标到完成的全周期可视化跟踪，提升销售效率与转化率。适合需要优化CRM销售流程的企业与开发者。",
+  "description_cn": "详解如何在 NocoBase 低代码平台中构建类 Salesforce 的 CRM 销售漏斗可视化功能，包括线索状态进度条与阶段管理。通过状态驱动表单显示变化，实现线索从未达标到完成的全周期可视化跟踪，提升销售效率与转化率。适合需要优化 CRM 销售流程的企业与开发者。",
   "description_ja": "NocoBaseローコードプラットフォームでSalesforceのようなCRM販売パイプラインの可視化機能を構築する方法を解説します。リードステータスプログレスバーとステージ管理の実装により、不適格から完了までのリード追跡を視覚化し、販売効率と転換率を向上させます。CRM販売プロセスの最適化を目指す企業や開発者に最適なガイドです。",
   "slug": "nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar",
   "publishedAt": "2025-04-22T01:27:31.350Z",
@@ -262,5 +262,5 @@
       }
     }
   ],
-  "updatedAt": "2025-04-22T01:40:58.240Z"
+  "updatedAt": "2025-04-22T02:30:02.624Z"
 }
