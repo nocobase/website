@@ -8,7 +8,7 @@
   "description_ja": "NocoBaseローコードプラットフォームでSalesforceのようなCRM販売パイプラインの可視化機能を構築する方法を解説します。リードステータスプログレスバーとステージ管理の実装により、不適格から完了までのリード追跡を視覚化し、販売効率と転換率を向上させます。CRM販売プロセスの最適化を目指す企業や開発者に最適なガイドです。",
   "slug": "nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar",
   "publishedAt": "2025-04-22T01:27:31.350Z",
-  "status": "drafted",
+  "status": "published",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-02-26T08:08:16.796Z",
@@ -262,5 +262,5 @@
       }
     }
   ],
-  "updatedAt": "2025-04-22T02:30:02.624Z"
+  "updatedAt": "2025-04-22T14:02:04.710Z"
 }
