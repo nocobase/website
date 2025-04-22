@@ -6,6 +6,7 @@ ENV SITE_APPDIR /site
 
 COPY ./public $SITE_APPDIR/public
 COPY ./src $SITE_APPDIR/src
+COPY ./content $SITE_APPDIR/content
 COPY ./astro.config.mjs $SITE_APPDIR/astro.config.mjs
 COPY ./tsconfig.json $SITE_APPDIR/tsconfig.json
 COPY ./package.json $SITE_APPDIR/package.json

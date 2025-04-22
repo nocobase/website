@@ -1,0 +1,31 @@
+{
+  "id": 25,
+  "title": "Lead Follow-up & Status Management",
+  "title_cn": "线索跟进 & 状态管理",
+  "title_ja": "リードのフォローアップとステータス管理",
+  "description": null,
+  "description_cn": null,
+  "description_ja": null,
+  "slug": "lead-follow-up-status-management",
+  "publishedAt": "2025-02-27T13:12:13.360Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-02-27T13:10:42.869Z",
+    "updatedAt": "2025-02-27T13:10:42.869Z",
+    "description": null,
+    "description_cn": null,
+    "id": 5,
+    "title": "CRM-Sales",
+    "title_cn": "CRM系统（销售）",
+    "status": "drafted",
+    "sort": 21,
+    "slug": null,
+    "title_ja": "CRM-セールス",
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 2,
+  "keywords": [],
+  "updatedAt": "2025-02-27T13:44:49.209Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": 185,
+  "title": "NocoBase v1.4.6: Bug Fixes",
+  "title_cn": "Nocobase v1.4.6：缺陷修复",
+  "title_ja": "Nocobase v1.4.6：バグ修正",
+  "description": "Release Note of v1.4.6",
+  "description_cn": "v1.4.6 更新日志",
+  "description_ja": "v1.4.6 のリリースノート",
+  "slug": "v1.4.6",
+  "publishedAt": "2024-12-08T15:43:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2024-12-08T23:43:43.210Z",
+        "updatedAt": "2024-12-08T23:43:43.210Z",
+        "tagId": 4,
+        "articleId": 185
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-01-22T06:52:44.408Z",
+        "updatedAt": "2025-01-22T06:52:44.408Z",
+        "articles_id": 185,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2024-12-09T05:28:50.345Z",
+    "updatedAt": "2024-12-09T05:28:50.345Z",
+    "id": 634,
+    "title": "发版封面图-main (3)",
+    "filename": "b65cd7d53e3c8e2f229cf60e305e479d.png",
+    "extname": ".png",
+    "size": 87953,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/b65cd7d53e3c8e2f229cf60e305e479d.png",
+    "preview": "https://static-docs.nocobase.com/b65cd7d53e3c8e2f229cf60e305e479d.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-01-07T13:34:39.759Z"
+}

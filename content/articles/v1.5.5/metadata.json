@@ -1,0 +1,89 @@
+{
+  "id": 275,
+  "title": "NocoBase v1.5.5: Add test for in-app message notifications",
+  "title_cn": "NocoBase v1.5.5：增加站内信通知测试用例",
+  "title_ja": "NocoBase v1.5.5：サイト内メッセージ通知のテストケースを追加しました",
+  "description": "Release Note of v1.5.5",
+  "description_cn": "v1.5.5 更新日志",
+  "description_ja": "v1.5.5 リリースノート",
+  "slug": "v1.5.5",
+  "publishedAt": "2025-02-11T02:36:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-02-11T02:36:55.181Z",
+        "updatedAt": "2025-02-11T02:36:55.181Z",
+        "tagId": 4,
+        "articleId": 275
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-02-11T05:50:34.105Z",
+        "updatedAt": "2025-02-11T05:50:34.105Z",
+        "articles_id": 275,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-02-11T05:49:53.969Z",
+    "updatedAt": "2025-02-11T05:49:53.969Z",
+    "id": 868,
+    "title": "发版封面图-main (5)",
+    "filename": "81d881f43075dbf85a6428e6859a4463.png",
+    "extname": ".png",
+    "size": 87761,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/81d881f43075dbf85a6428e6859a4463.png",
+    "preview": "https://static-docs.nocobase.com/81d881f43075dbf85a6428e6859a4463.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-02-11T05:50:34.101Z"
+}

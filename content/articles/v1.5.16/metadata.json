@@ -1,0 +1,89 @@
+{
+  "id": 303,
+  "title": "NocoBase v1.5.16: Allow restoring backup to an application even it is missing some plugins",
+  "title_cn": "NocoBase v1.5.16：允许还原备份到缺少部分插件的应用",
+  "title_ja": "NocoBase v1.5.16：プラグインが一部欠けている場合でもアプリケーションにバックアップを復元できるようにしました",
+  "description": "Release Note of v1.5.16",
+  "description_cn": "v1.5.16 更新日志",
+  "description_ja": "v1.5.16 のリリースノート",
+  "slug": "v1.5.16",
+  "publishedAt": "2025-02-26T03:24:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-02-26T03:24:40.197Z",
+        "updatedAt": "2025-02-26T03:24:40.197Z",
+        "tagId": 4,
+        "articleId": 303
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-02-26T07:06:40.096Z",
+        "updatedAt": "2025-02-26T07:06:40.096Z",
+        "articles_id": 303,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-02-26T07:05:55.812Z",
+    "updatedAt": "2025-02-26T07:05:55.812Z",
+    "id": 925,
+    "title": "发版封面图-main",
+    "filename": "462db8d9f4dea6c459f892427fa7f0fb.png",
+    "extname": ".png",
+    "size": 88934,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/462db8d9f4dea6c459f892427fa7f0fb.png",
+    "preview": "https://static-docs.nocobase.com/462db8d9f4dea6c459f892427fa7f0fb.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-02-26T07:06:40.090Z"
+}

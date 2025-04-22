@@ -1,0 +1,89 @@
+{
+  "id": 94,
+  "title": "NocoBase v1.3.34-beta: Filter Form Field Configuration Improvements",
+  "title_cn": "NocoBase v1.3.34-beta：筛选表单的字段配置优化",
+  "title_ja": "NocoBase v1.3.34-beta：フィルターフォームフィールドの設定改善",
+  "description": "Release Note of v1.3.34-beta",
+  "description_cn": "v1.3.34-beta 更新日志",
+  "description_ja": "v1.3.34-betaのリリースノート",
+  "slug": "v1.3.34-beta",
+  "publishedAt": "2024-10-21T01:11:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2024-10-21T01:11:43.774Z",
+        "updatedAt": "2024-10-21T01:11:43.774Z",
+        "tagId": 4,
+        "articleId": 94
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-01-22T06:49:13.828Z",
+        "updatedAt": "2025-01-22T06:49:13.828Z",
+        "articles_id": 94,
+        "tags_id": 114
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2024-10-23T02:41:59.257Z",
+    "updatedAt": "2024-10-23T02:41:59.257Z",
+    "id": 450,
+    "title": "发版封面图-main-beta (1)",
+    "filename": "08533b47e67a9a35cd944f1116a2b722.png",
+    "extname": ".png",
+    "size": 92664,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/08533b47e67a9a35cd944f1116a2b722.png",
+    "preview": "https://static-docs.nocobase.com/08533b47e67a9a35cd944f1116a2b722.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2024-11-23T16:36:09.037Z"
+}

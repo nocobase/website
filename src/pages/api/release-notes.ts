@@ -8,12 +8,9 @@ export const GET: APIRoute = async ({ request }) => {
   const pageSize = parseInt(url.searchParams.get('pageSize') || '8');
   const lang = url.searchParams.get('lang') || 'en'; // 默认英文
   
-  console.log(`[API] 请求发布日志，页码：${page}，每页数量：${pageSize}，语言：${lang}`);
-  
   try {
     // Fetch paginated release notes
     const { data, meta } = await listReleaseNotes({ page, pageSize });
-    console.log(`[API] 获取到 ${data.length} 条数据，还有更多: ${meta.hasMore}`);
     
     // Process the content for each note
     const processedItems = await Promise.all(data.map(async (article) => {

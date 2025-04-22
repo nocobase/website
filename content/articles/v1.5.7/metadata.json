@@ -1,0 +1,89 @@
+{
+  "id": 283,
+  "title": "NocoBase v1.5.7: Remove console error logging for SSE connection retries",
+  "title_cn": "NocoBase v1.5.7：移除 SSE 连接重试的控制台错误日志",
+  "title_ja": "NocoBase v1.5.7：SSE接続の再試行に関するコンソールエラーログを削除しました",
+  "description": "Release Note of v1.5.7",
+  "description_cn": "v1.5.7 更新日志",
+  "description_ja": "v1.5.7 リリースノート",
+  "slug": "v1.5.7",
+  "publishedAt": "2025-02-13T16:14:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-02-13T16:14:30.752Z",
+        "updatedAt": "2025-02-13T16:14:30.752Z",
+        "tagId": 4,
+        "articleId": 283
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-02-14T02:32:53.575Z",
+        "updatedAt": "2025-02-14T02:32:53.575Z",
+        "articles_id": 283,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-02-14T02:32:41.129Z",
+    "updatedAt": "2025-02-14T02:32:41.129Z",
+    "id": 889,
+    "title": "发版封面图-main",
+    "filename": "f23f0d88c68222fd48d1a6432beb0f2b.png",
+    "extname": ".png",
+    "size": 87484,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/f23f0d88c68222fd48d1a6432beb0f2b.png",
+    "preview": "https://static-docs.nocobase.com/f23f0d88c68222fd48d1a6432beb0f2b.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-02-14T02:32:53.570Z"
+}

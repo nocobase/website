@@ -23,7 +23,8 @@ const pkgs = [
     'html-escaper',
     'cssesc',
     'sitemap',
-    'qrcode'
+    'qrcode',
+    'dotenv'
 ];
 
 (async () => {

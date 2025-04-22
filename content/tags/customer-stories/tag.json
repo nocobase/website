@@ -1,0 +1,20 @@
+{
+  "createdAt": "2024-06-23T05:12:08.714Z",
+  "updatedAt": "2024-11-24T05:34:18.423Z",
+  "id": 10,
+  "title": "Customer Stories",
+  "title_cn": "客户故事",
+  "sort": 10,
+  "description": "Discover real-world success stories and case studies showcasing how businesses effectively use NocoBase to solve their unique challenges. ",
+  "description_cn": "发现真实世界的成功案例和案例研究，展示企业如何有效地使用 NocoBase 解决他们独特的挑战。",
+  "displayOnPage": true,
+  "slug": "customer-stories",
+  "displayOnBlog": true,
+  "keywords": "NocoBase customer stories, customer success stories, business case studies, no-code customer experiences, user testimonials, real-world applications, NocoBase implementations",
+  "keywords_cn": "NocoBase 客户案例, 客户成功故事, 商业案例研究, 无代码客户体验, 用户推荐, 真实应用, NocoBase 实施案例",
+  "title_ja": "顧客のストーリー",
+  "description_ja": "NocoBaseを活用して独自の課題を解決する企業の実際の成功事例とケーススタディを発見してください。",
+  "keywords_ja": "NocoBase 顧客ストーリー, 顧客成功事例, ビジネスケーススタディ, ノーコード顧客体験, ユーザーの推薦, 実際のアプリケーション, NocoBase の実装",
+  "createdById": 1,
+  "updatedById": 9
+}

@@ -90,7 +90,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
   <section class="section bg-white-color">
     <main class={headings.length > 0 ? "container blog-container row" : "container"}>
       <div class="col-md-2 d-none d-md-block">
-        <div class="sticky-top-z0" style="top: 80px;z-index: 10;">
+        <div class="sticky-top" style="top: 80px;z-index: 0;">
           <ShareIcons 
             shareLinks={shareLinks}
             qrCodeDataURL={qrCodeDataURL}
@@ -107,7 +107,7 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
                 <Fragment set:html={html} />
               </div>
               <div class="col-md-3 col-6 markdown-toc">
-                <div class="sticky-top-z0" style="top: 80px; z-index: 1;">
+                <div class="sticky-top" style="top: 80px; z-index: 1;">
                   <Toc headings={headings} />
                 </div>
               </div>

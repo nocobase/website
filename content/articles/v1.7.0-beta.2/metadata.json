@@ -1,0 +1,89 @@
+{
+  "id": 334,
+  "title": "NocoBase v1.7.0-beta.2: support configuring selectable field options in linkage rules",
+  "title_cn": "NocoBase v1.7.0-beta.2：支持在联动规则配置可选项字段选项",
+  "title_ja": "NocoBase v1.7.0-beta.2：連動ルールにおいて、選択可能フィールドオプションの設定をサポート",
+  "description": "Release Note of v1.7.0-beta.2",
+  "description_cn": "v1.7.0-beta.2 更新日志",
+  "description_ja": "v1.7.0-beta.2 リリースノート",
+  "slug": "v1.7.0-beta.2",
+  "publishedAt": "2025-03-13T14:09:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-03-13T14:09:52.757Z",
+        "updatedAt": "2025-03-13T14:09:52.757Z",
+        "tagId": 4,
+        "articleId": 334
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-03-14T01:11:31.220Z",
+        "updatedAt": "2025-03-14T01:11:31.220Z",
+        "articles_id": 334,
+        "tags_id": 114
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-03-14T01:10:21.450Z",
+    "updatedAt": "2025-03-14T01:10:21.450Z",
+    "id": 1012,
+    "title": "next",
+    "filename": "02755c38a3c47a91f940d7445921a27d.png",
+    "extname": ".png",
+    "size": 113499,
+    "mimetype": "image/png",
+    "path": "",
+    "url": "https://static-docs.nocobase.com/02755c38a3c47a91f940d7445921a27d.png",
+    "preview": "https://static-docs.nocobase.com/02755c38a3c47a91f940d7445921a27d.png",
+    "meta": {},
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-03-14T01:11:31.216Z"
+}

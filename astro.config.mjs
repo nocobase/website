@@ -3,6 +3,10 @@ import node from '@astrojs/node';
 import { defineConfig, passthroughImageService } from 'astro/config';
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,5 +31,10 @@ export default defineConfig({
   output: "server",
   adapter: node({
     mode: "standalone"
-  })
+  }),
+  vite: {
+    define: {
+      'import.meta.env.USE_LOCAL_CONTENT': JSON.stringify(process.env.USE_LOCAL_CONTENT)
+    }
+  }
 });
