@@ -1,14 +1,14 @@
 {
   "id": 427,
-  "title": "NocoBase v1.6.22",
-  "title_cn": "NocoBase v1.6.22",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.6.22: Upgrade dependencies and remove SQLite support",
+  "title_cn": "NocoBase v1.6.22：更新依赖，移除 SQLite 支持",
+  "title_ja": "NocoBase v1.6.22：依存関係をアップグレードし、SQLite のサポートを削除する",
   "description": "Release Note of v1.6.22",
   "description_cn": "v1.6.22 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.6.22 のリリースノート",
   "slug": "v1.6.22",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-04-22T09:53:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-04-22T12:33:00.740Z",
+        "updatedAt": "2025-04-22T12:33:00.740Z",
+        "articles_id": 427,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-04-22T12:32:56.242Z",
+    "updatedAt": "2025-04-22T12:32:56.242Z",
+    "id": 1147,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-ljng0u.png",
+    "extname": ".png",
+    "size": 89231,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-ljng0u.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-ljng0u.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-04-22T09:53:47.947Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-04-22T12:33:00.707Z"
 }
