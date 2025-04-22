@@ -2,7 +2,7 @@
 
 ### 1.1 Preface
 
-This chapter is the second part of the [How to Implement CRM Lead Conversion in NocoBase](https://www.nocobase.com/en/tutorials/how-to-implement-lead-conversion-in-nocobase) tutorial series. In the previous chapter, we covered the fundamentals of opportunity conversion, including creating the necessary collections, configuring data management pages, and implementing the conversion of leads to companies, contacts, and opportunities. This chapter will focus on implementing the lead follow-up process and status management.
+This chapter is the second part of the [How to Implement CRM Lead Conversion in NocoBase](https://www.nocobase.com/en/tutorials/how-to-implement-lead-conversion-in-nocobase) tutorial series. In the previous chapter, we covered the fundamentals of lead conversion, including creating the necessary collections, configuring data management pages, and implementing the conversion of leads to companies, contacts, and opportunities. This chapter will focus on implementing the lead follow-up process and status management.
 
 ### 1.2 Chapter Objective
 
@@ -117,10 +117,10 @@ When the status is "New":
 
 ```markdown
 {{#if (eq $nRecord.status "New")}}
-**Identify the products or services required for this opportunity.**  
-- Gather customer cases, reference materials, or competitor analyses  
-- Confirm your key stakeholders  
-- Determine available resources  
+**Collect more information about this lead.**  
+- Understand the potential customer's needs and interests
+- Gather basic contact information and company background
+- Determine follow-up priorities and methods
 {{/if}}
 ```
 
@@ -128,10 +128,10 @@ When the status is "Working":
 
 ```markdown
 {{#if (eq $nRecord.status "Working")}}
-**Deliver your solution to stakeholders.**  
-- Communicate the value of your solution  
-- Clarify timelines and budgets  
-- Develop a plan with the customer on when and how to close the deal  
+**Proactively contact the lead and initially assess needs.**  
+- Establish contact with the potential customer via phone/email
+- Understand the customer's problems and challenges
+- Preliminarily evaluate the match between customer needs and your products/services
 {{/if}}
 ```
 
@@ -139,10 +139,10 @@ When the status is "Nurturing":
 
 ```markdown
 {{#if (eq $nRecord.status "Nurturing")}}
-**Determine the customer's project implementation plan.**  
-- Reach agreements as needed  
-- Follow the internal discount process  
-- Obtain a signed contract  
+**Explore customer needs deeply and nurture the lead.**  
+- Provide relevant product information or solution recommendations
+- Answer customer questions and address concerns
+- Evaluate the possibility of lead conversion
 {{/if}}
 ```
 
@@ -150,10 +150,10 @@ When the status is "Completed":
 
 ```markdown
 {{#if (eq $nRecord.status "Completed")}}
-**Confirm the project implementation plan and final steps.**  
-- Ensure all remaining agreements and sign-off procedures are in place  
-- Adhere to the internal discount policy  
-- Ensure the contract is signed and the project proceeds as planned  
+**Lead has been successfully converted to a customer.**  
+- Confirm that related company and contact records have been created
+- Create opportunity record and set up follow-up plans
+- Transfer relevant materials and communication records to the responsible sales personnel
 {{/if}}
 ```
 
