@@ -93,23 +93,23 @@
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-04-16T07:04:16.860Z",
-    "updatedAt": "2025-04-16T07:04:16.860Z",
-    "id": 1120,
+    "createdAt": "2025-04-23T08:18:08.802Z",
+    "updatedAt": "2025-04-23T08:18:08.802Z",
+    "id": 1148,
     "title": "Weekly Update Summary",
-    "filename": "a65f5df45873beea8bebdd6090ff84dd.png",
+    "filename": "Weekly Update Summary-iq0ltm.png",
     "extname": ".png",
-    "size": 150691,
+    "size": 150776,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/a65f5df45873beea8bebdd6090ff84dd.png",
-    "preview": "https://static-docs.nocobase.com/a65f5df45873beea8bebdd6090ff84dd.png",
+    "url": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-iq0ltm.png",
+    "preview": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-iq0ltm.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-23T07:11:58.994Z"
+  "updatedAt": "2025-04-23T08:18:21.147Z"
 }
