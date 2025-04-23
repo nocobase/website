@@ -1,11 +1,11 @@
 {
   "id": 428,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週のアップデート：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Support Variables on the Left Side of Linkage Rule Conditions",
+  "title_cn": "NocoBase 本周更新汇总：联动规则条件左侧支持变量",
+  "title_ja": "NocoBase 今週のアップデート：連携ルールの条件の左側において変数をサポートする",
+  "description": "This week’s updates include: the addition of a code interface, support for dynamic images and barcode rendering in document templates, and more.",
+  "description_cn": "本周更新包括：增加代码字段，文档模板支持动态图片和条形码渲染功能等。",
+  "description_ja": "今週の更新では、コードインターフェースの追加、ドキュメントテンプレートにおける動的画像とバーコードのレンダリングのサポート、そしてそれ以外の機能が含まれます。",
   "slug": "weekly-updates-20250424",
   "publishedAt": "2025-04-24T00:00:00.000Z",
   "status": "drafted",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-23T12:20:52.829Z"
+  "updatedAt": "2025-04-23T13:21:34.185Z"
 }
