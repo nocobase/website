@@ -2,15 +2,26 @@
 import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
 import BaseLayoutJA from "./BaseJA.astro";
+import BaseLayoutRU from "./BaseRU.astro";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
 const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/");
+const ru = Astro.url.pathname == "/ru" || Astro.url.pathname.startsWith("/ru/");
 const { title, description, keywords, image } = Astro.props;
 ---
 
 {
-    cn ? (
+    ru ? (
+    <BaseLayoutRU
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutRU>
+        ) : cn ? (
     <BaseLayoutCN
             title={title}
             description={description}

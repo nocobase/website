@@ -125,6 +125,8 @@ export async function getArticle(slug?: string, locale = 'en') {
     contentFile = 'index.cn.md';
   } else if (locale === 'ja') {
     contentFile = 'index.ja.md';
+  } else if (locale === 'ru') {
+    contentFile = 'index.ru.md';
   }
 
   const contentPath = path.join(articleDir, contentFile);
@@ -179,6 +181,8 @@ export async function getTutorialArticle(slug?: string, locale = 'en') {
     contentFile = 'index.cn.md';
   } else if (locale === 'ja') {
     contentFile = 'index.ja.md';
+  } else if (locale === 'ru') {
+    contentFile = 'index.ru.md';
   }
 
   const contentPath = path.join(tutorialDir, contentFile);
@@ -233,6 +237,8 @@ export async function getRelease(slug?: string, locale = 'en') {
     contentFile = 'index.cn.md';
   } else if (locale === 'ja') {
     contentFile = 'index.ja.md';
+  } else if (locale === 'ru') {
+    contentFile = 'index.ru.md';
   }
 
   const contentPath = path.join(releaseDir, contentFile);
@@ -287,6 +293,8 @@ export async function getPage(slug?: string, locale = 'en') {
     contentFile = 'index.cn.md';
   } else if (locale === 'ja') {
     contentFile = 'index.ja.md';
+  } else if (locale === 'ru') {
+    contentFile = 'index.ru.md';
   }
 
   const contentPath = path.join(pageDir, contentFile);
@@ -615,6 +623,7 @@ export async function getRssItems(locale = '*') {
     const { code: content } = await processor.render(post.content || '');
     const { code: content_cn } = await processor.render(post.content_cn || '');
     const { code: content_ja } = await processor.render(post.content_ja || '');
+    const { code: content_ru } = await processor.render(post.content_ru || '');
 
     if (locale === 'en' || locale === '*' || locale === 'ja') {
       items.push({
@@ -651,6 +660,17 @@ export async function getRssItems(locale = '*') {
         author: post.author,
       });
     }
+    if (locale === 'ru' || locale === '*') {
+      items.push({
+        title: post.title_ru || post.title,
+        description: post.description_ru || post.description,
+        content: content_ru || content,
+        link: `/ru/blog/${post.slug}`,
+        pubDate: post.publishedAt,
+        customData: `<language>ru-RU</language>`,
+        author: post.author,
+      });
+    }
   }
   return items;
 }
@@ -670,6 +690,7 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/` },
         { lang: 'zh-CN', url: `/cn/` },
         { lang: 'ja-JP', url: `/ja/` },
+        { lang: 'ru-RU', url: `/ru/` },
         { lang: 'x-default', url: `/` },
       ],
     },
@@ -684,6 +705,7 @@ export async function getSitemapLinks() {
       { lang: 'en-US', url: `/en/blog/tags/${tag.slug}` },
       { lang: 'zh-CN', url: `/cn/blog/tags/${tag.slug}` },
       { lang: 'ja-JP', url: `/ja/blog/tags/${tag.slug}` },
+      { lang: 'ru-RU', url: `/ru/blog/tags/${tag.slug}` },
       { lang: 'x-default', url: `/en/blog/tags/${tag.slug}` },
     ],
   }));
@@ -696,6 +718,7 @@ export async function getSitemapLinks() {
       { lang: 'en-US', url: `/en/blog/${article.slug}` },
       { lang: 'zh-CN', url: `/cn/blog/${article.slug}` },
       { lang: 'ja-JP', url: `/ja/blog/${article.slug}` },
+      { lang: 'ru-RU', url: `/ru/blog/${article.slug}` },
       { lang: 'x-default', url: `/en/blog/${article.slug}` },
     ],
   }));
@@ -708,6 +731,7 @@ export async function getSitemapLinks() {
       { lang: 'en-US', url: `/en/tutorials/${tutorial.slug}` },
       { lang: 'zh-CN', url: `/cn/tutorials/${tutorial.slug}` },
       { lang: 'ja-JP', url: `/ja/tutorials/${tutorial.slug}` },
+      { lang: 'ru-RU', url: `/ru/tutorials/${tutorial.slug}` },
       { lang: 'x-default', url: `/en/tutorials/${tutorial.slug}` },
     ],
   }));
