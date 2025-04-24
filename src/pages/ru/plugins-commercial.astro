@@ -5,31 +5,31 @@ import { getPage, listPluginCategories } from "../../utils";
 
 const tabs = [
   {
-    title: "All plugins",
-    link: "/en/plugins",
+    title: "Все плагины",
+    link: "/ru/plugins",
   },
   {
-    title: "Commercial plugins",
-    link: "/en/plugins-commercial",
+    title: "Коммерческие плагины",
+    link: "/ru/plugins-commercial",
     active: true,
   },
   {
-    title: "Plugin points",
-    link: "/en/plugins-bundles",
+    title: "Пакеты плагинов",
+    link: "/ru/plugins-bundles",
   },
 ];
 
 const data = await listPluginCategories();
 const page = await getPage("plugins");
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title="Commercial plugins" description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/en/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
+    <a href="/ru/contact" class="btn btn-outline-primary">Купить<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
   <!-- Section Start -->
@@ -59,24 +59,24 @@ const keywords = page.keywords;
                             <div class="plugin-footer">
                               {plugin.isComingSoon ? (
                                 <span class="badge bg-soft-info plugin-type">
-                                  Coming soon
+                                  Скоро
                                 </span>
                               ) : plugin.commercial ? (
                                 <h6 class="text-primary mb-0">
-                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                                  <a href="/en/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование, обновление на 1 год</span><br>
+                                  <a href="/ru/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
                                   <span class="text-muted">/</span>
                                   <span class="text-muted">${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}</span>
                                 </h6>
                                 <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                                  <a class="text-muted" href="/en/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование и обновление</span><br>
+                                  <a class="text-muted" href="/ru/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
                                   <span class="text-muted">/</span>
                                   <span class="text-muted">${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}</span>
                                 </h6>
                               ) : (
                                 <span class="badge bg-soft-primary plugin-type">
-                                  Free
+                                  Бесплатно
                                 </span>
                               )}
                             </div>

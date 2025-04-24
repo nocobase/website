@@ -27,6 +27,19 @@ const blogCN = defineCollection({
   }),
 });
 
+const blogRU = defineCollection({
+  type: 'content',
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional(),
+  }),
+});
+
 const releaseEN = defineCollection({
   type: 'content',
   // Type-check frontmatter using a schema
@@ -41,6 +54,19 @@ const releaseEN = defineCollection({
 });
 
 const releaseCN = defineCollection({
+  type: 'content',
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional(),
+  }),
+});
+
+const releaseRU = defineCollection({
   type: 'content',
   // Type-check frontmatter using a schema
   schema: z.object({
@@ -81,11 +107,28 @@ const docsEN = defineCollection({
   }),
 });
 
+const docsRU = defineCollection({
+  type: 'content',
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string().optional(),
+    description: z.string().optional(),
+    toc: z.boolean().optional(),
+    // Transform string to Date object
+    pubDate: z.coerce.date().optional(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional(),
+  }),
+});
+
 export const collections = {
   'docs-cn': docsCN,
   'docs-en': docsEN,
+  'docs-ru': docsRU,
   'blog-en': blogEN,
   'blog-cn': blogCN,
+  'blog-ru': blogRU,
   'release-en': releaseEN,
   'release-cn': releaseCN,
+  'release-ru': releaseRU,
 };

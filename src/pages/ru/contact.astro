@@ -5,9 +5,9 @@ import { getPage } from "../../utils";
 
 const page = await getPage("contact");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -19,16 +19,17 @@ const keywords = page.keywords;
         <div class="col-lg-5 mb-4 pb-4">
           <div class="d-flex contact-detail align-items-center mt-4">
             <div class="flex-1 content mb-4">
-              <h4 class="title fw-bold mb-1">Contact us via email</h4>
+              <h4 class="title fw-bold mb-1">Написать нам письмо</h4>
               <a href="mailto:hello@nocobase.com" class="text-primary">hello@nocobase.com</a>
             </div>
           </div>
-          <h4>Where we are</h4>
+          <h4>Где мы находимся</h4>
           <div class="p-4 bg-light rounded shadow mb-4">
-            We are a remote team distributed across multiple countries, currently with the following offices.
+            Мы — распределённая команда, работающая из разных стран. Наши текущие офисы:
             <ul class="list-unstyled text-muted mb-0">
               <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>#03-01, 112 Robinson Road, Singapore</li>
               <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>501, 1-55-8 Akabane, Kita-ku, Tokyo, Japan</li>
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>Лахтинский пр-т, д. 85к2, 3-й этаж, Санкт-Петербург, 197229, Россия</li>
             </ul>
           </div>
         </div><!--end col-->

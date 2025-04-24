@@ -4,8 +4,8 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { listReleaseNotes, url, processor } from "../../../utils";
 
-const description = "Learn about the latest features, improvements, and bug fixes.";
-const basepath = "/en/blog";
+const description = "Что нового? Обзор свежих функций, улучшений и исправлений.";
+const basepath = "/ru/blog";
 // Add this function to process markdown content
 async function renderMarkdown(content: string) {
   // First process with existing processor
@@ -52,13 +52,13 @@ function getTagClassName(tag: string) {
 }
 
 const tabs = [
-  { title: "Home", link: "/en/" },
-  { title: "Blog", link: "/en/blog" },
-  { title: "Release Notes", active: true }
+  { title: "Главная", link: "/ru/" },
+  { title: "Блог", link: "/ru/blog" },
+  { title: "Список изменений", active: true }
 ];
 ---
 
-<Layout title="Release Notes" description={description}>
+<Layout title="Список изменений" description={description}>
   <PageHeader
     title="Release Notes"
     description={description}
@@ -139,19 +139,19 @@ const tabs = [
           <!-- Loading indicator -->
           <div id="loading-indicator" class="text-center mt-4 d-none">
             <div class="spinner-border text-primary" role="status">
-              <span class="visually-hidden">Loading...</span>
+              <span class="visually-hidden">Загрузка...</span>
             </div>
-            <p class="mt-2">Loading more content...</p>
+            <p class="mt-2">Загружается больше данных...</p>
           </div>
           
           <!-- Load more button -->
           <div id="load-more-button" class="text-center mt-4">
-            <button class="btn btn-primary">Load more</button>
+            <button class="btn btn-primary">Загрузить больше</button>
           </div>
           
           <!-- No more content message -->
           <div id="no-more-content" class="text-center mt-4 d-none">
-            <p class="text-muted">No more content to load</p>
+            <p class="text-muted">Больше нет данных для загрузки</p>
           </div>
           
           <!-- Initial metadata -->
@@ -255,7 +255,7 @@ const tabs = [
                 <div class="card event rounded shadow border-0 overflow-hidden float-start">
                   <div class="card-body">
                     <h5>
-                      <a href="/en/blog/${item.slug}">
+                      <a href="/ru/blog/${item.slug}">
                         ${item.title}
                       </a>
                     </h5>

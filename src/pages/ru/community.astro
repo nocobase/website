@@ -5,9 +5,9 @@ import { getPage } from "../../utils";
 
 const page = await getPage("community");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -19,11 +19,9 @@ const keywords = page.keywords;
         <div class="col-lg-9">
           <div class="card shadow border-0 rounded">
             <div class="card-body">
-              <h5 class="card-title">Bug report:</h5>
+              <h5 class="card-title">Отчёт об ошибке:</h5>
               <p class="text-muted">
-                Please report bugs via GitHub Issues, we have provided a
-                template, please follow it and fill in the details so we can
-                pinpoint the issue faster.
+                Отправляйте ошибки через GitHub Issues. Используйте готовый шаблон и заполните детали — это ускорит исправление.
               </p>
               <ul class="list-unstyled text-muted mb-4 pb-4">
                 <li>

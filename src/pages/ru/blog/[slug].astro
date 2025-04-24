@@ -14,21 +14,21 @@ const { data, headings, html } = await getArticle(slug);
 if (!data) {
   return new Response("Not found", { status: 404 });
 }
-const title = data.title;
+const title = data.title_ru || data.title;
 const keywords = (data.tags || []).map((tag: any) => tag.title).join(",");
-const description = data.description;
-const basepath = "/en/blog";
+const description = data.description_ru || data.description;
+const basepath = "/ru/blog";
 const tabs = [
   {
-    title: "Home",
-    link: "/en/",
+    title: "Главная",
+    link: "/ru/",
   },
   {
-    title: "Blog",
+    title: "Блог",
     link: basepath,
   },
   {
-    title: 'Detail',
+    title: 'Подробне',
     active: true,
   },
 ];

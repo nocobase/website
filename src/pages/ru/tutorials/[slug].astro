@@ -13,23 +13,23 @@ const { data, headings, html } = await getTutorialArticle(slug);
 if (!data) {
   return new Response("Not found", { status: 404 });
 }
-const title = data.title;
+const title = data.title_ru || data.title;
 const keywords = (data.tags || [])
   .map((keywords: any) => keywords.title)
   .join(",");
-const description = data.description;
-const basepath = "/en/tutorials";
+const description = data.description_ru || data.description;
+const basepath = "/ru/tutorials";
 const tabs = [
   {
-    title: "Home",
-    link: "/en/",
+    title: "Главная",
+    link: "/ru/",
   },
   {
-    title: "Tutorials",
+    title: "Уроки",
     link: basepath,
   },
   {
-    title: 'Detail',
+    title: 'Подробности',
     active: true,
   },
 ];

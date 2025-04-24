@@ -7,8 +7,8 @@ import Layout from "../../../layouts/Layout.astro";
 import { listArticleTags, listArticles, url } from "../../../utils";
 import BlogSidebar from "../../../components/BlogSidebar.astro";
 
-const description = "The latest news and announcements from NocoBase";
-const basepath = "/en/blog";
+const description = "Что нового в NocoBase?";
+const basepath = "/ru/blog";
 const { data, meta } = await listArticles({ hideOnBlog: false });
 const tags = await listArticleTags({
   filter: {
@@ -17,11 +17,11 @@ const tags = await listArticleTags({
 });
 const tabs = [
   {
-    title: "Home",
-    link: "/en/",
+    title: "Главная",
+    link: "/ru/",
   },
   {
-    title: "Blog",
+    title: "Блог",
     active: true,
   },
 ];
@@ -46,10 +46,10 @@ const socialLinks = [
 
 ---
 
-<Layout title="Blog" description={description}>
+<Layout title="Блог" description={description}>
   <PageHeader
     showRSS
-    title={"Blog"}
+    title={"Блог"}
     description={description}
     breadcrumb={tabs}
   >
@@ -98,7 +98,7 @@ const socialLinks = [
           basepath={basepath}
           socialLinks={socialLinks}
           description=""
-          lang="en"
+          lang="ru"
         />
       </div>
       

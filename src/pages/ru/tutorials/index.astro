@@ -5,9 +5,9 @@ import { getPage, listTutorialArticles } from "../../../utils";
 
 const page = await getPage("tutorials");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 const tutorialsData = await listTutorialArticles({ pageSize: 100 });
 
 // Group tutorials by series dynamically
@@ -26,7 +26,7 @@ const tutorials = tutorialsData.data.reduce((acc, item) => {
   // Add the tutorial to the respective series
   acc[seriesTitle].articles.push({
     title: item.title,
-    link: `/en/tutorials/${item.slug}`, //${item.serials?.slug}/
+    link: `/ru/tutorials/${item.slug}`, //${item.serials?.slug}/
     description: item.description || "",
   });
 

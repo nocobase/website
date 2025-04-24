@@ -5,31 +5,31 @@ import { getPage, listPluginCategories } from "../../utils";
 
 const tabs = [
   {
-    title: "All plugins",
-    link: "/en/plugins",
+    title: "Все плагины",
+    link: "/ru/plugins",
   },
   {
-    title: "Commercial plugins",
-    link: "/en/plugins-commercial",
+    title: "Комерческие плагины",
+    link: "/ru/plugins-commercial",
   },
   {
-    title: "Plugin points",
-    link: "/en/plugins-bundles",
+    title: "Пакеты плагинов",
+    link: "/ru/plugins-bundles",
     active: true,
   },
 ];
 
 const data = await listPluginCategories();
 const page = await getPage("plugins");
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title="Plugin bundle" description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/en/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
+    <a href="/ru/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
   </PageHeader>
 
   <!-- Section Start -->
@@ -39,10 +39,10 @@ const keywords = page.keywords;
             <div class="col-lg-9">
                 <div class="card shadow border-0 rounded">
                     <div class="card-body">
-                        <h5 class="card-title">What are Plugin Points?</h5>
-                        <p class="text-muted">NocoBase offers dozens of commercial plugins (with more being added rapidly). To give users the flexibility to choose the plugins they need, we introduced the concept of "Plugin Points," where 1 point = 50 USD. For commercial plugins developed by NocoBase, in addition to purchasing plugins directly, you can also use points to redeem the plugins you need (note: plugin points are not applicable to plugins developed by third parties).</p>
+                        <h5 class="card-title">Что такое кредиты плагинов?</h5>
+                        <p class="text-muted">NocoBase предлагает десятки коммерческих плагинов (их количество постоянно растёт). Чтобы дать пользователям гибкость в выборе, мы ввели систему "Кредиты плагинов", где 1 пойнт = 3500 Руб. Для плагинов, разработанных NocoBase, помимо прямой покупки, вы можете использовать пойнты для получения нужных плагинов (примечание: пойнты не применяются к сторонним плагинам).</p>
                     
-                        <p class="text-muted">On the <a href="/en/plugins">plugin list page</a>, you can see the price and corresponding points for each plugin. For example, the "Data source: External PostgreSQL" plugin is priced at $200 or 4 <i class="uil uil-moon-eclipse me-1"></i>.</p>
+                        <p class="text-muted">На <a href="/ru/plugins">странице плагинов</a>, вы увидите цену и эквивалент в пойнтах для каждого плагина. Например, плагин "Источник данных: внешний PostgreSQL" стоит 16 000 рублей или 4 кредита <i class="uil uil-moon-eclipse me-1"></i>.</p>
                         
                         <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
                             <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">

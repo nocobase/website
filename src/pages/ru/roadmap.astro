@@ -7,9 +7,9 @@ import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
 const lastUpdatedAt = await getLastUpdatedAt("tasks");
 const data = await listTaskCategories();
 const page = await getPage("roadmap");
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -49,12 +49,12 @@ const keywords = page.keywords;
                           )}
                           {task.isNewPlugin && (
                             <span class="badge bg-soft-danger plugin-type">
-                              New plugin
+                              Новые плагины
                             </span>
                           )}
                           {task.isCommercial && (
                             <span class="badge bg-soft-warning plugin-type">
-                              Commercial
+                              Коммерческие плагины
                             </span>
                           )}
                         </div>

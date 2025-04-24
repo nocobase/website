@@ -9,18 +9,18 @@ import BlogSidebar from "../../../../../components/BlogSidebar.astro";
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
 const { data, meta } = await listArticles({ tagSlug: slug, page: 1 });
-const tagpath = '/en/blog/tags/' + slug;
-const basepath = '/en/blog';
-const title = tag.title;
-const description = tag.description;
-const keywords = tag.keywords;
+const tagpath = '/ru/blog/tags/' + slug;
+const basepath = '/ru/blog';
+const title = tag.title_ru || tag.title;
+const description = tag.description_ru || tag.description;
+const keywords = tag.keywords_ru || tag.keywords;
 const tabs = [
   {
     title: "Home",
-    link: "/en/",
+    link: "/ru/",
   },
   {
-    title: "Blog",
+    title: "Блог",
     link: basepath,
   },
   {
@@ -91,7 +91,7 @@ const socialLinks = [
         <BlogSidebar 
           basepath={basepath}
           socialLinks={socialLinks}
-          lang="en"
+          lang="ru"
         />
       </div>
 

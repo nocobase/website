@@ -9,11 +9,11 @@ import BlogSidebar from "../../../../components/BlogSidebar.astro";
 
 const pageData = await getPage("blog");
 
-const title = pageData.title;
-const description = pageData.description;
-const keywords = pageData.keywords;
+const title = pageData.title_ru || pageData.title;
+const description = pageData.description_ru || pageData.description;
+const keywords = pageData.keywords_ru || pageData.keywords;
 
-const basepath = "/en/blog";
+const basepath = "/ru/blog";
 const { page: pageParam } = Astro.params;
 // Convert page parameter to number
 const page = pageParam ? parseInt(pageParam) : 1;
@@ -25,11 +25,11 @@ const tags = await listArticleTags({
 });
 const tabs = [
   {
-    title: "Home",
-    link: "/en/",
+    title: "Главная",
+    link: "/ru/",
   },
   {
-    title: "Blog",
+    title: "Блог",
     active: true,
   }
 ];

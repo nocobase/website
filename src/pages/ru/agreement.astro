@@ -5,9 +5,9 @@ import { getPage } from "../../utils";
 
 const page = await getPage("agreement");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 ---
 
 <Layout title={title} description={description} keywords={keywords}>

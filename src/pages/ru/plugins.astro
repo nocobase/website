@@ -5,50 +5,44 @@ import { getPage, listPluginCategories } from "../../utils";
 
 const tabs = [
   {
-    title: "All plugins",
-    link: "/en/plugins",
+    title: "Все плагины",
+    link: "/ru/plugins",
     active: true,
   },
   {
-    title: "Commercial plugins",
-    link: "/en/plugins-commercial",
+    title: "Коммерческие плагины",
+    link: "/ru/plugins-commercial",
   },
   {
-    title: "Plugin points",
-    link: "/en/plugins-bundles",
+    title: "Пакеты плагинов",
+    link: "/ru/plugins-bundles",
   }
 ];
 
 const data = await listPluginCategories();
 const page = await getPage("plugins");
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
 
-// 1. 将所有插件先扁平化收集
 const allPlugins = data.flatMap((group) => group.plugins);
 
-// 2. 拆分为 newly / coming / normal 三类
 const newlyPlugins = allPlugins.filter((p) => !!p.newly);
 const comingPlugins = allPlugins.filter((p) => !!p.coming);
 
-// 3. 从原分组里移除 newly 和 coming 的插件
-//    这样它们就不会和后面的 normal 分组重复出现
 data.forEach((group) => {
   group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
-// 4. 去掉空分组（如果一个分组所有插件都是 newly 或 coming，就没必要再显示空分组标题）
 const normalGroups = data.filter((group) => group.plugins.length > 0);
 
-// 5. 组织一个合并后的分组数组，先 newly，后 coming，最后普通分组
 const finalGroups = [];
 
 // a) newly launched
 if (newlyPlugins.length > 0) {
   finalGroups.push({
     id: 'newly-launched',
-    title: 'Newly launched',
+    title: 'Новинки',
     plugins: newlyPlugins,
   });
 }
@@ -57,7 +51,7 @@ if (newlyPlugins.length > 0) {
 if (comingPlugins.length > 0) {
   finalGroups.push({
     id: 'coming-soon',
-    title: 'Coming soon',
+    title: 'Скоро',
     plugins: comingPlugins,
   });
 }
@@ -69,8 +63,8 @@ finalGroups.push(...normalGroups);
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
     <span slot="description" set:html={description}></span>
-    <a href="/en/contact" class="btn btn-outline-primary">
-      Inquire to Buy
+    <a href="/ru/contact" class="btn btn-outline-primary">
+      Купить
       <i class="uil uil-angle-right-b"></i>
     </a>
   </PageHeader>
@@ -83,50 +77,54 @@ finalGroups.push(...normalGroups);
             .filter((group) => group.plugins.length > 0)
             .map((group) => (
                 <>
-                  <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
+                  <h4 class="mt-2 pb-1 text-muted">{group.title_ru || group.title }</h4>
                   <div class="row pb-4">
                     {group.plugins.map((plugin: any) => (
                         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                          <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                          <div
+                              title={plugin.name_ru || plugin.name }
+                              style="color: inherit;"
+                              class="card rounded shadow border-0 plugin-card"
+                          >
                             <div class="card-body">
                               <div class="mt-2 plugin-box">
-                                <h6 class="card-title mb-1">{plugin.name}</h6>
+                                <h6 class="card-title mb-1">{plugin.name_ru || plugin.name}</h6>
                                 <div class="plugin-developer text-muted mb-3">
-                                  By <span>{plugin.developer || 'NocoBase'}</span>
+                                  Разработчик <span>{plugin.developer || 'NocoBase'}</span>
                                 </div>
                                 <p class="text-muted mb-2 plugin-overview">
-                                  {plugin.description}
+                                  {plugin.description_ru || plugin.description}
                                   {plugin.docs &&
-                                      <a href={plugin.docs} target="_blank" style="font-size: 14px;">Details</a>
+                                      <a href={plugin.docs} target="_blank" style="font-size: 14px;">Подробнее</a>
                                   }
                                 </p>
                                 <div class="plugin-footer">
                                   {plugin.coming ? (
                                       <span class="badge bg-soft-info plugin-type">
-                                Coming soon
+                                Скоро
                               </span>
                                   ) : plugin.commercial ? (
                                       <>
                                         <h6 class="text-primary mb-0">
-                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br/>
-                                          <a href="/en/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное <br />использование,<br /> обновление на 1 год</span><br/>
+                                          <a href="/ru/plugins-bundles"> {plugin.points_1_year_rub || plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
                                           <span class="text-muted">/</span>
                                           <span class="text-muted">
-                                    ${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}
+                                    {plugin.price_1_year_rub ? plugin.price_1_year_rub.toLocaleString('ru-RU') : '?'} ₽
                                   </span>
                                         </h6>
                                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br/>
-                                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
+                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное<br /> использование <br /> и обновление</span><br/>
+                                          <a class="text-muted" href="/ru/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
                                           <span class="text-muted">/</span>
                                           <span class="text-muted">
-                                    ${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}
+                                    {plugin.price_rub ? plugin.price_rub.toLocaleString('ru-RU') : '?'} ₽
                                   </span>
                                         </h6>
                                       </>
                                   ) : (
                                       <span class="badge bg-soft-primary plugin-type">
-                                Free
+                                Бесплатно
                               </span>
                                   )}
                                 </div>
