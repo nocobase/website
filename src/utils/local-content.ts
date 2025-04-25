@@ -307,8 +307,30 @@ export async function getPage(slug?: string, locale = 'en') {
   // Process Markdown content
   const { code } = await processor.render(cleanContent);
 
-  // Cache and return result
-  const result = { ...metadata, html: code };
+  // Create a complete result object with all expected page properties
+  const result = { 
+    ...metadata, 
+    id: metadata.id,
+    title: metadata.title,
+    title_cn: metadata.title_cn,
+    title_ja: metadata.title_ja,
+    description: metadata.description,
+    description_cn: metadata.description_cn,
+    description_ja: metadata.description_ja,
+    keywords: metadata.keywords,
+    keywords_cn: metadata.keywords_cn,
+    keywords_ja: metadata.keywords_ja,
+    slug: metadata.slug,
+    createdAt: metadata.createdAt,
+    updatedAt: metadata.updatedAt,
+    createdById: metadata.createdById,
+    updatedById: metadata.updatedById,
+    content: locale === 'en' ? content : null,
+    content_cn: locale === 'cn' ? content : null,
+    content_ja: locale === 'ja' ? content : null,
+    html: code 
+  };
+  
   pagesCache[cacheKey] = result;
   
   return result;
