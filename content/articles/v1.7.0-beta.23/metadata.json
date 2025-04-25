@@ -1,14 +1,14 @@
 {
   "id": 434,
-  "title": "NocoBase v1.7.0-beta.23",
-  "title_cn": "NocoBase v1.7.0-beta.23",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.7.0-beta.23: support response variable  in success message of custom request action",
+  "title_cn": "NocoBase v1.7.0-beta.23：自定义请求按钮的提交成功提示支持响应结果值",
+  "title_ja": "NocoBase v1.7.0-beta.23：カスタムリクエストアクションの成功メッセージにレスポンス変数をサポート",
   "description": "Release Note of v1.7.0-beta.23",
   "description_cn": "v1.7.0-beta.23 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.7.0-beta.23 のリリースノート",
   "slug": "v1.7.0-beta.23",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-04-24T11:57:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-04-25T01:26:49.429Z",
+        "updatedAt": "2025-04-25T01:26:49.429Z",
+        "articles_id": 434,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-04-25T01:23:07.326Z",
+    "updatedAt": "2025-04-25T01:23:07.326Z",
+    "id": 1154,
+    "title": "next",
+    "filename": "next-g07f89.png",
+    "extname": ".png",
+    "size": 114673,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-g07f89.png",
+    "preview": "https://static-docs.nocobase.com/next-g07f89.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-04-24T11:54:50.026Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-04-25T01:26:49.417Z"
 }
