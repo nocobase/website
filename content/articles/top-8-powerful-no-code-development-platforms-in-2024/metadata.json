@@ -345,10 +345,10 @@
     "extname": ".jpg",
     "size": 56472,
     "mimetype": "image/jpeg",
+    "meta": {},
     "path": "",
     "url": "https://static-docs.nocobase.com/1ba4080a9ce9694e112720c89973269a.jpg",
     "preview": "https://static-docs.nocobase.com/1ba4080a9ce9694e112720c89973269a.jpg",
-    "meta": {},
     "storageId": 2,
     "createdById": 1,
     "updatedById": 1

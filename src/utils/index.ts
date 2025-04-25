@@ -433,10 +433,10 @@ export async function listArticleTags(options?: any) {
   return data;
 }
 
-export async function getPage(slug?: string) {
+export async function getPage(slug?: string, locale = DEFAULT_LANGUAGE) {
   // Switch content source based on configuration
   if (useLocalContent) {
-    return localContent.getPage(slug);
+    return localContent.getPage(slug, locale);
   }
 
   if (!slug) {
@@ -445,6 +445,18 @@ export async function getPage(slug?: string) {
   const res = await fetch(`${baseURL}pages:get?filter[slug]=${slug}&token=${token}`);
   const body = await res.json();
   const data = body.data || {};
+  
+  if (!data.id) {
+    return {};
+  }
+  
+  // If there's content, process it through markdown processor
+  const content = getLocalizedContent(data, 'content', locale);
+  if (content) {
+    const { code } = await processor.render(content);
+    data.html = code;
+  }
+  
   return data;
 }
 

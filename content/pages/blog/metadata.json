@@ -3,6 +3,15 @@
   "title": "Blog",
   "title_cn": "博客",
   "title_ja": "ブログ",
+  "description": "The latest news and announcements from NocoBase.",
+  "description_cn": "NocoBase 的最新消息和公告。",
+  "description_ja": "NocoBaseからの最新ニュースとお知らせ。",
+  "keywords": "nocobase, nocobase blog, low-code, no-code, self-hosted, open source, open-source, no-code development, low-code development, workflow management software, business process management, collaboration software, enterprise process management, enterprise management system, no-code system, no-code platform, free no-code development platform",
+  "keywords_cn": "nocobase, nocobase 博客, 低代码, 无代码, 自托管, 开源, 开源软件, 无代码开发, 低代码开发, 工作流管理软件, 业务流程管理, 协作软件, 企业流程管理, 企业管理系统, 无代码系统, 无代码平台, 免费无代码开发平台\n",
+  "keywords_ja": "nocobase, nocobaseブログ, ローコード, ノーコード, セルフホスティング, オープンソース, オープンソースソフトウェア, ノーコード開発, ローコード開発, ワークフロー管理ソフトウェア, ビジネスプロセスマネジメント, コラボレーションソフトウェア, エンタープライズプロセスマネジメント, エンタープライズ管理システム, ノーコードシステム, ノーコードプラットフォーム, 無料ノーコード開発プラットフォーム",
   "slug": "blog",
-  "updatedAt": "2024-11-24T06:08:55.975Z"
+  "createdAt": "2024-06-21T10:58:56.679Z",
+  "updatedAt": "2024-11-24T06:08:55.975Z",
+  "createdById": 1,
+  "updatedById": 9
 }
