@@ -301,14 +301,23 @@ async function downloadPages() {
       const pageDir = path.join(contentDir, page.slug);
       ensureDirectoryExists(pageDir);
       
-      // Save metadata
+      // Save metadata with all properties
       const metadata = {
         id: page.id,
         title: page.title,
         title_cn: page.title_cn,
         title_ja: page.title_ja,
+        description: page.description,
+        description_cn: page.description_cn,
+        description_ja: page.description_ja,
+        keywords: page.keywords,
+        keywords_cn: page.keywords_cn,
+        keywords_ja: page.keywords_ja,
         slug: page.slug,
-        updatedAt: page.updatedAt
+        createdAt: page.createdAt,
+        updatedAt: page.updatedAt,
+        createdById: page.createdById,
+        updatedById: page.updatedById
       };
       
       saveContentToFile(

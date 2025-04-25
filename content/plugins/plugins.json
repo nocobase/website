@@ -47,7 +47,8 @@
       "category_id": "data-model-tools",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Manage data sources, including the built-in Main database, external databases, APIs, etc."
   },
   {
     "createdAt": null,
@@ -97,7 +98,8 @@
       "category_id": "data-model-tools",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "An ER diagram-like tool. Currently only the Main database is supported."
   },
   {
     "createdAt": null,
@@ -147,7 +149,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "NocoBase main database, supports relational databases such as MySQL, PostgreSQL, SQLite and so on."
   },
   {
     "createdAt": null,
@@ -199,7 +202,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external MySQL databases as data sources."
   },
   {
     "createdAt": null,
@@ -251,7 +255,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external MariaDB databases as data sources."
   },
   {
     "createdAt": null,
@@ -303,7 +308,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external PostgreSQL databases as data sources."
   },
   {
     "createdAt": null,
@@ -355,7 +361,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external Oracle databases as data sources."
   },
   {
     "createdAt": null,
@@ -407,7 +414,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external SQL Server databases as data sources."
   },
   {
     "createdAt": null,
@@ -459,7 +467,8 @@
       "category_id": "data-sources",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect to external HTTP API as data sources."
   },
   {
     "createdAt": null,
@@ -511,7 +520,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Create a collection with database view."
   },
   {
     "createdAt": null,
@@ -561,7 +571,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides tree structure collection"
   },
   {
     "createdAt": null,
@@ -611,7 +622,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Quickly present structured SQL query results without the need to create views, commonly used for complex join queries, statistics, and other scenarios."
   },
   {
     "createdAt": null,
@@ -663,7 +675,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides comment collection template to add commenting functionality for any collection."
   },
   {
     "createdAt": null,
@@ -715,7 +728,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connection to remote data tables implemented based on the database's foreign data wrapper (FDW), currently supporting MySQL and PostgreSQL databases."
   },
   {
     "createdAt": null,
@@ -765,7 +779,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Configure and store the results of calculations between multiple field values in the same record, supporting both Math.js and Excel formula functions."
   },
   {
     "createdAt": null,
@@ -815,7 +830,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used to store Markdown and render it using Vditor editor, supports common Markdown syntax and supports uploading images, recordings, etc.It also allows for instant rendering, where what you see is what you get."
   },
   {
     "createdAt": null,
@@ -865,7 +881,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Automatically generate codes based on configured rules, supporting combinations of dates, numbers, and text."
   },
   {
     "createdAt": null,
@@ -915,7 +932,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides data and field type for administrative divisions of China."
   },
   {
     "createdAt": null,
@@ -965,7 +983,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides Gantt block."
   },
   {
     "createdAt": null,
@@ -1015,7 +1034,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides kanban block."
   },
   {
     "createdAt": null,
@@ -1065,7 +1085,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Map block, support Gaode map and Google map, you can also extend more map types."
   },
   {
     "createdAt": null,
@@ -1115,7 +1136,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Create an iframe block on the page to embed and display external web pages or content."
   },
   {
     "createdAt": null,
@@ -1165,7 +1187,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides calendar collection  and block for managing date data, typically for date/time related information such as events, appointments, tasks, and so on."
   },
   {
     "createdAt": null,
@@ -1217,7 +1240,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Use the tree component to present data as filter blocks that can be connected to other data blocks."
   },
   {
     "createdAt": null,
@@ -1267,7 +1291,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Batch edit all records or selected records."
   },
   {
     "createdAt": null,
@@ -1317,7 +1342,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Batch update all records or selected records."
   },
   {
     "createdAt": null,
@@ -1367,7 +1393,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Sending a request to any HTTP service supports sending context data to the target service."
   },
   {
     "createdAt": null,
@@ -1417,7 +1444,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Duplicate a record, you can either duplicate it into a form and edit it before saving it, or you can duplicate it directly to generate a new record."
   },
   {
     "createdAt": null,
@@ -1467,7 +1495,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Export filtered data to excel, suitable for exporting small amount of data."
   },
   {
     "createdAt": null,
@@ -1517,7 +1546,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Import records using excel templates, suitable for importing small amounts of data."
   },
   {
     "createdAt": null,
@@ -1567,7 +1597,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Calls the browser's print function to print a record."
   },
   {
     "createdAt": null,
@@ -1617,7 +1648,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Scan QR code and redirect to the URL\n"
   },
   {
     "createdAt": null,
@@ -1667,7 +1699,8 @@
       "category_id": "users-permissions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides a basic user model, as well as createdBy and updatedBy fields."
   },
   {
     "createdAt": null,
@@ -1717,7 +1750,8 @@
       "category_id": "users-permissions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Based on roles, resources, and actions, access control can precisely manage interface configuration permissions, data operation permissions, menu access permissions, and plugin permissions."
   },
   {
     "createdAt": null,
@@ -1767,7 +1801,8 @@
       "category_id": "users-permissions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Organize users by departments, set hierarchical relationships, link roles to control permissions, and use departments as variables in workflows and expressions."
   },
   {
     "createdAt": null,
@@ -1817,7 +1852,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "User authentication management, including password, SMS, and support for Single Sign-On (SSO) protocols, with extensibility."
   },
   {
     "createdAt": null,
@@ -1867,7 +1903,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "SMS authentication for NocoBase."
   },
   {
     "createdAt": null,
@@ -1917,7 +1954,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Allows users to use API key to access application HTTP API."
   },
   {
     "createdAt": null,
@@ -1969,7 +2007,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "CAS authentication."
   },
   {
     "createdAt": null,
@@ -2021,7 +2060,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "OIDC (OpenID Connect) authentication."
   },
   {
     "createdAt": null,
@@ -2073,7 +2113,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "SAML 2.0 authentication."
   },
   {
     "createdAt": null,
@@ -2125,7 +2166,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "LDAP authentication."
   },
   {
     "createdAt": null,
@@ -2177,7 +2219,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "DingTalk authentication.\n"
   },
   {
     "createdAt": null,
@@ -2229,7 +2272,8 @@
       "category_id": "authentication",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Offer integration capabilities with WeCom, covering authentication methods, notification channels, and sources for user data synchronization."
   },
   {
     "createdAt": null,
@@ -2279,7 +2323,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "A powerful BPM tool that provides foundational support for business automation, with the capability to extend unlimited triggers and nodes."
   },
   {
     "createdAt": null,
@@ -2329,7 +2374,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used to aggregate data against the database in workflow, such as: statistics, sum, average, etc."
   },
   {
     "createdAt": null,
@@ -2379,7 +2425,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Could be used in workflow parallel branch for waiting other branches."
   },
   {
     "createdAt": null,
@@ -2429,7 +2476,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Allows to create many to many relationships between two models by storing an array of unique keys of the target model."
   },
   {
     "createdAt": null,
@@ -2479,7 +2527,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "For record under different conditions, different expressions are called for computation, which are sourced from an expression collection."
   },
   {
     "createdAt": null,
@@ -2529,7 +2578,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Send HTTP requests to any HTTP service for data interaction in workflow."
   },
   {
     "createdAt": null,
@@ -2579,7 +2629,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used to repeat the sub-process processing of each value in an array, and can also be used for fixed times of sub-process processing."
   },
   {
     "createdAt": null,
@@ -2628,7 +2679,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Dynamically calculate or retrieve specific data related to the main query and display it as part of the result set."
   },
   {
     "createdAt": null,
@@ -2678,7 +2730,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used in scenarios where manual decision-making and manual data entry are required."
   },
   {
     "createdAt": null,
@@ -2728,7 +2781,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides files storage services with files collection template and attachment field."
   },
   {
     "createdAt": null,
@@ -2778,7 +2832,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides branching processes for workflows, with branches executing in parallel."
   },
   {
     "createdAt": null,
@@ -2828,7 +2883,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Execute arbitrary SQL statements against the database in a workflow."
   },
   {
     "createdAt": null,
@@ -2878,7 +2934,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Send email in workflow."
   },
   {
     "createdAt": null,
@@ -2930,7 +2987,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Triggered when an approval request is initiated through an action button or API. Dedicated to the approval process, with exclusive approval node and block for managing documents and tracking processing processes."
   },
   {
     "createdAt": null,
@@ -2982,7 +3040,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "For complex data processing that cannot be handled simply by NocoBase's built-in operations (CRUD), you can define a series of operations through a workflow and trigger it with the \"Trigger Workflow\" button."
   },
   {
     "createdAt": null,
@@ -3034,7 +3093,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used for creating custom variables or assigning value to it in workflows, to save temporary data in the process."
   },
   {
     "createdAt": null,
@@ -3086,7 +3146,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Complex JSON data from upstream nodes is processed and transformed by various JSON engines to be used by subsequent nodes."
   },
   {
     "createdAt": null,
@@ -3138,7 +3199,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Triggered before the execution of a request initiated through an action button or API, such as before adding, updating, or deleting data. Suitable for data validation and logic judgment before action."
   },
   {
     "createdAt": null,
@@ -3188,7 +3250,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "This node is used in \"Pre-action events\" and \"Custom action events\" to provide custom messages as feedback to the client submitting the action during the process."
   },
   {
     "createdAt": null,
@@ -3238,7 +3301,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": null
   },
   {
     "createdAt": null,
@@ -3290,7 +3354,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Calculate, compare, and format dates and times."
   },
   {
     "createdAt": null,
@@ -3342,7 +3407,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Write and execute JavaScript in the node."
   },
   {
     "createdAt": null,
@@ -3392,7 +3458,8 @@
       "category_id": "system-management",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used to adjust the system title, logo, language, etc."
   },
   {
     "createdAt": null,
@@ -3442,7 +3509,8 @@
       "category_id": "system-management",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Customize UI colors, sizes, etc. and save the result as a theme to switch between multiple themes."
   },
   {
     "createdAt": null,
@@ -3492,7 +3560,8 @@
       "category_id": "system-management",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Allows to manage localization resources of the application."
   },
   {
     "createdAt": null,
@@ -3542,7 +3611,8 @@
       "category_id": "logging-and-monitoring",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Server-side logs, mainly including API request logs and system runtime logs, and allows to package and download log files."
   },
   {
     "createdAt": null,
@@ -3592,7 +3662,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "An OpenAPI documentation generator for NocoBase HTTP API."
   },
   {
     "createdAt": null,
@@ -3642,7 +3713,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Handling application errors and exceptions."
   },
   {
     "createdAt": null,
@@ -3692,7 +3764,8 @@
       "category_id": "users-permissions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provide user data source management and user data synchronization interface. The data source can be DingTalk, WeCom, etc., and can be expanded."
   },
   {
     "createdAt": null,
@@ -3742,7 +3815,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides the ability to configure mobile pages."
   },
   {
     "createdAt": null,
@@ -3792,7 +3866,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides centralized UI schema storage service."
   },
   {
     "createdAt": null,
@@ -3839,7 +3914,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": null
   },
   {
     "createdAt": null,
@@ -3891,7 +3967,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Embed NocoBase into another system or webpage, integrating it as a part of that system or webpage."
   },
   {
     "createdAt": null,
@@ -3941,7 +4018,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Triggered after the completion of a request initiated through an action button or API, such as after adding, updating, deleting data, or \\\"submit to workflow\\\". Suitable for data processing, sending notifications, etc., after actions are completed."
   },
   {
     "createdAt": null,
@@ -3993,7 +4071,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Display sensitive content in a masked format."
   },
   {
     "createdAt": null,
@@ -4043,7 +4122,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Share public forms externally to collect information from anonymous users."
   },
   {
     "createdAt": null,
@@ -4095,7 +4175,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Break the form with many fields into multiple steps to ease the burden on users."
   },
   {
     "createdAt": null,
@@ -4145,7 +4226,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used for placing various quick actions, such as opening pop-ups, links, or custom requests, and displayed as a list or icons."
   },
   {
     "createdAt": null,
@@ -4197,7 +4279,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Trigger workflows via Webhook"
   },
   {
     "createdAt": null,
@@ -4247,7 +4330,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Supports attachments in URL format."
   },
   {
     "createdAt": null,
@@ -4297,7 +4381,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Provides data visualization feature, including chart block and chart filter block, support line charts, area charts, bar charts and more than a dozen kinds of charts, you can also extend more chart types."
   },
   {
     "createdAt": null,
@@ -4349,7 +4434,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Utilize ECharts for data visualization, supporting more chart types and offering user-friendly configuration."
   },
   {
     "createdAt": null,
@@ -4401,7 +4487,8 @@
       "category_id": "integration",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Connect NocoBase to corporate email accounts like Gmail and Outlook, and be able to receive and send emails just like in other CRM products."
   },
   {
     "createdAt": null,
@@ -4451,7 +4538,8 @@
       "category_id": "notification",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "It provides a unified notification management service covering features such as channel configuration and logging, supporting multiple notification channels like in-app messages, email, and SMS.\n"
   },
   {
     "createdAt": null,
@@ -4501,7 +4589,8 @@
       "category_id": "notification",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used for sending email notifications with built-in SMTP transport."
   },
   {
     "createdAt": null,
@@ -4551,7 +4640,8 @@
       "category_id": "notification",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "It supports users in receiving real-time message notifications within the NocoBase application."
   },
   {
     "createdAt": null,
@@ -4597,7 +4687,8 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": null
   },
   {
     "createdAt": null,
@@ -4648,7 +4739,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Call other workflows within a workflow to enable workflow reuse."
   },
   {
     "createdAt": null,
@@ -4700,7 +4792,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Enhance data import capabilities with support for asynchronous imports, million-row record imports, duplicate data identification and processing, data updates, and workflow triggers."
   },
   {
     "createdAt": null,
@@ -4752,7 +4845,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Enhance data export capabilities with support for asynchronous exports, million-row record exports, and attachment exports."
   },
   {
     "createdAt": null,
@@ -4804,7 +4898,8 @@
       "category_id": "collections",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Support S3-compatible file storage, including services like Amazon S3, Aliyun OSS, Tencent Cloud COS, and MinIO. Features include direct file uploads and private access control."
   },
   {
     "createdAt": null,
@@ -4854,7 +4949,8 @@
       "category_id": "system-management",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Centrally configure and manage environment variables and secrets for sensitive data storage, configuration data reuse, and multi-environment isolation."
   },
   {
     "createdAt": null,
@@ -4904,7 +5000,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Create templates independently or save existing blocks as templates. When adding a block to a page, you can inherit the template and add or modify configurations.\n"
   },
   {
     "createdAt": null,
@@ -4956,7 +5053,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Edit templates using Word, Excel, and PowerPoint. Within the templates (supporting docx, xlsx, pptx), set placeholders and logical structures to dynamically generate docx, xlsx, pptx, and PDF files in the specified format."
   },
   {
     "createdAt": null,
@@ -5006,7 +5104,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Set the password rules and sign in lockout policy for all users."
   },
   {
     "createdAt": null,
@@ -5056,7 +5155,8 @@
       "category_id": "system-management",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used to migrate configuration content between application environments."
   },
   {
     "createdAt": null,
@@ -5108,7 +5208,8 @@
       "category_id": "workflow",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Used for mapping any JSON data to structured variables for usage in subsequent nodes."
   },
   {
     "createdAt": null,
@@ -5158,7 +5259,8 @@
       "category_id": "others",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Control system access by configuring IP blacklists and whitelists to ensure security."
   },
   {
     "createdAt": null,
@@ -5192,7 +5294,8 @@
     "user_specific": null,
     "createdById": null,
     "updatedById": null,
-    "category": null
+    "category": null,
+    "description_ja": "A collection of descriptions of data objects or items in a data model."
   },
   {
     "createdAt": null,
@@ -5241,7 +5344,8 @@
       "category_id": "blocks",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "A table block based on Tabulator, offering features such as in-cell editing, draggable column widths, data grouping, and extremely high performance."
   },
   {
     "createdAt": null,
@@ -5290,7 +5394,8 @@
       "category_id": "actions",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": "Bulk enter filter data, or upload filter data via Excel, to perform filtering actions."
   },
   {
     "createdAt": null,
@@ -5342,6 +5447,7 @@
       "category_id": "collection-fields",
       "createdById": 1,
       "updatedById": 1
-    }
+    },
+    "description_ja": null
   }
 ]

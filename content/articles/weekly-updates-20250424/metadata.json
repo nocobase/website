@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、コードインターフェースの追加、ドキュメントテンプレートにおける動的画像とバーコードのレンダリングのサポート、そしてそれ以外の機能が含まれます。",
   "slug": "weekly-updates-20250424",
   "publishedAt": "2025-04-24T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-23T13:21:34.185Z"
+  "updatedAt": "2025-04-24T00:03:31.978Z"
 }

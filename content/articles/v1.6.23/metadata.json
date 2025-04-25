@@ -1,14 +1,14 @@
 {
   "id": 430,
-  "title": "NocoBase v1.6.23",
-  "title_cn": "NocoBase v1.6.23",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.6.23: Optimize internal logic of the `nocobase upgrade` command",
+  "title_cn": "NocoBase v1.6.23：优化 `nocobase upgrade` 命令的内部实现逻辑",
+  "title_ja": "NocoBase v1.6.23：`nocobase upgrade`コマンドの内部ロジックを最適化しました",
   "description": "Release Note of v1.6.23",
   "description_cn": "v1.6.23 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.6.23 のリリースノート",
   "slug": "v1.6.23",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-04-23T15:17:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-04-24T02:43:02.728Z",
+        "updatedAt": "2025-04-24T02:43:02.728Z",
+        "articles_id": 430,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-04-24T02:38:58.695Z",
+    "updatedAt": "2025-04-24T02:38:58.695Z",
+    "id": 1150,
+    "title": "发版封面图-main (1)",
+    "filename": "发版封面图-main (1)-763qwb.png",
+    "extname": ".png",
+    "size": 89650,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-763qwb.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-763qwb.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-04-23T15:17:45.883Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-04-24T02:43:02.711Z"
 }

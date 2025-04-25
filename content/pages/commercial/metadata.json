@@ -4,6 +4,15 @@
   "title_cn": "定价",
   "title_ja": "価格",
   "title_ru": "Цены",
+  "description": "We continuously enhance the core capabilities of NocoBase and keep it open source, while also developing more open source and free plugins. Most small businesses and teams can meet their needs with the free community edition. When your business has higher requirements for advanced features, security, technical architecture, and technical support, you can opt for the commercial edition.",
+  "description_cn": "我们不断增强 NocoBase 的核心能力并保持开源，同时持续开发更多的开源、免费插件。\n大多数小企业和团队使用免费的社区版即可满足需求。当你的企业在高级功能、安全性、技术架构和技术支持等方面有更高要求时，可以选择商业版本。",
+  "description_ja": "NocoBaseは、オープンソースとしてコア機能を強化し続けるとともに、無料で利用可能なプラグインの開発も行っています。「コミュニティエディション」は多くの小規模企業やチームに適しており、基本的なニーズを満たします。より高いセキュリティ基準や技術サポートを必要とする場合は、「アップグレ-ド」をご検討ください。",
+  "keywords": "nocobase, nocobase blog, low-code, no-code, self-hosted, open source, open-source, no-code development, low-code development, workflow management software, business process management, collaboration software, enterprise process management, enterprise management system, no-code system, no-code platform, free no-code development platform",
+  "keywords_cn": "nocobase, nocobase 博客, 低代码, 无代码, 自托管, 开源, 开源软件, 无代码开发, 低代码开发, 工作流管理软件, 业务流程管理, 协作软件, 企业流程管理, 企业管理系统, 无代码系统, 无代码平台, 免费无代码开发平台\n",
+  "keywords_ja": "nocobase, nocobaseブログ, ローコード, ノーコード, 自己ホスト, オープンソース, オープンソースソフトウェア, ノーコード開発, ローコード開発, ワークフロー管理ソフトウェア, ビジネスプロセスマネジメント, コラボレーションソフトウェア, エンタープライズプロセスマネジメント, エンタープライズ管理システム, ノーコードシステム, ノーコードプラットフォーム, 無料ノーコード開発プラットフォーム",
   "slug": "commercial",
-  "updatedAt": "2025-02-13T13:49:19.666Z"
+  "createdAt": "2024-06-21T11:00:40.753Z",
+  "updatedAt": "2025-02-13T13:49:19.666Z",
+  "createdById": 1,
+  "updatedById": 1
 }
