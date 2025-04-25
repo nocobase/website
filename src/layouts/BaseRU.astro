@@ -61,7 +61,7 @@ const meta = {
 ---
 
 <!doctype html>
-<html lang="en-US" dir="ltr" class={baseClassName + "-page"}>
+<html lang="ru-RU" dir="ltr" class={baseClassName + "-page"}>
   <head>
     <meta charset="utf-8" />
     <title>{meta.title}</title>
@@ -74,7 +74,7 @@ const meta = {
     <link rel="sitemap" href={'/sitemap.xml'} />
 
     <!-- Canonical -->
-    <link rel="canonical" href={new URL(urlEN, Astro.site)} />
+    <link rel="canonical" href={new URL(urlRU, Astro.site)} />
 
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
@@ -225,7 +225,7 @@ const meta = {
       <!-- <div style="background: #2f55d4; text-align: center; padding: 8px 0;"><a href="/en/blog/pricing-adjustment" style="color: #adb5bd; ">🎉  <span style="color: #FFF">NocoBase Pricing adjustment</span> - Apr 1, 2025 <i class="uil uil-arrow-right"></i></a></div> -->
       <div class="container">
         <!-- Logo container-->
-        <a class="logo" href="/" title={meta.title}>
+        <a class="logo" href="/ru" title={meta.title}>
           <span class="logo-light-mode">
             <img
               src="https://static-docs.nocobase.com/logo-nocobase.png"
@@ -291,7 +291,7 @@ const meta = {
                   <a href="/ru/plugins-commercial" title="Коммерческие плагины NocoBase" class="sub-menu-item">Коммерческие плагины</a>
                 </li>
                 <li>
-                  <a href="/en/plugins-bundles" title="NocoBase кредиты плагинов" class="sub-menu-item">Кредиты плагинов</a>
+                  <a href="/ru/plugins-bundles" title="Плагин поинты NocoBase" class="sub-menu-item">Плагин поинты</a>
                 </li>
               </ul>
             </li>
@@ -624,6 +624,9 @@ const meta = {
               <div class="text-sm-start">
                 <p class="mb-0">
                   © 2020-{year} NocoBase. Все права защищены.
+                </p>
+                <p class="mb-0" style="font-size: 8px">
+                © 2025-{year} ООО "Матрешка маркет", ИНН: 7814825148, ОГРН: 1237800082046, г. Санкт-Петербург, Россия
                 </p>
               </div>
             </div><!--end col-->

@@ -7,6 +7,7 @@
     "title_cn": null,
     "sort": 1,
     "title_ja": "コア",
+    "title_ru": "Ядро",
     "createdById": 1,
     "updatedById": 9,
     "tasks": [
@@ -25,6 +26,9 @@
         "docUrl": null,
         "title_ja": "AI従業員",
         "description_ja": "様々なスキルを持つAI従業員をビジネスシステムにシームレスに統合し、人間の作業者の効率化を支援します",
+        "title_ru": "ИИ сотрудники",
+        "description_ru": "Бесшовная интеграция AI-сотрудников с различными навыками в бизнес-системы для повышения эффективности работы людей.",
+        "docs_ru": null,
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -35,6 +39,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -60,6 +65,8 @@
         "docUrl": null,
         "title_ja": "Responsive layout",
         "description_ja": "Configure once, adapt to devices of all sizes.",
+        "title_ru": "Адаптивный дизайн",
+        "description_ru": "Настройте один раз — и интерфейс будет автоматически адаптироваться ко всем типам устройств.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -70,6 +77,7 @@
           "name_cn": null,
           "type": "success",
           "name_ja": "完了",
+          "name_ru": "Готово",
           "createdById": 1,
           "updatedById": 9
         },
@@ -95,6 +103,8 @@
         "docUrl": null,
         "title_ja": "Menu refactoring",
         "description_ja": "Manage routes centrally; pages can be hidden from the menu.",
+        "title_ru": "Рефакторинг меню",
+        "description_ru": "Централизованное управление маршрутами; страницы можно скрывать из меню.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -105,6 +115,7 @@
           "name_cn": null,
           "type": "success",
           "name_ja": "完了",
+          "name_ru": "Готово",
           "createdById": 1,
           "updatedById": 9
         },
@@ -130,6 +141,8 @@
         "docUrl": null,
         "title_ja": "Block Template Refactoring",
         "description_ja": "Refactor block templates to allow independent template configuration. Templates can contain multiple blocks. Blocks added using a template inherit from that template, allowing for further custom configuration.",
+        "title_ru": "Рефакторинг блоков шаблона",
+        "description_ru": "Рефакторинг блоков шаблона для независимой настройки. Шаблоны могут содержать несколько блоков. Блоки, добавленные через шаблон, наследуют его свойства и могут дополнительно настраиваться.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -140,6 +153,7 @@
           "name_cn": null,
           "type": "success",
           "name_ja": "完了",
+          "name_ru": "Готово",
           "createdById": 1,
           "updatedById": 9
         },
@@ -165,6 +179,8 @@
         "docUrl": null,
         "title_ja": "Front-end event stream",
         "description_ja": "Connect events and actions within and between blocks to create interactive effects. Each event stream includes events, conditions, and actions. Each action allows for parameter configuration, and the result of one action serves as the input for the next.",
+        "title_ru": "Поток событий в UI",
+        "description_ru": "Связывайте события и действия внутри блоков и между ними для создания интерактивных эффектов. Каждый поток событий включает события, условия и действия. Каждое действие позволяет настраивать параметры, а результат одного действия передаётся на следующему на вход.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -175,6 +191,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -194,6 +211,8 @@
         "statusId": 2,
         "title_cn": "轻量插件",
         "description_cn": "提供云编码能力，直接在前端编写轻量插件，用于解决简单的定制化需求。",
+        "title_ru": "Лёгкий плагин",
+        "description_ru": "Предоставляет облачные возможности для разработки, позволяя создавать лёгкие плагины прямо в UI для решения простых задач по кастомизации.",
         "isNewPlugin": null,
         "isCommercial": null,
         "sort": 60,
@@ -210,6 +229,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -235,6 +255,8 @@
         "docUrl": null,
         "title_ja": "ブロック連携リフレッシュ",
         "description_ja": "あるブロックが更新された際、同じページの他のブロックも更新します。",
+        "title_ru": "Связанная перезагрузка блоков",
+        "description_ru": "Обновляет другие блоки на странице при изменении одного из блоков.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -245,6 +267,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -270,6 +293,8 @@
         "docUrl": null,
         "title_ja": "左側の変数",
         "description_ja": "変数は、連携ルールやデータスコープなどにおいて、左辺で使用できます。",
+        "title_ru": "Переменные в левой части",
+        "description_ru": "Поддержка использования переменных в левой части, например, в правилах связки и области данных.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -280,6 +305,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -300,6 +326,7 @@
     "title_cn": "数据源",
     "sort": 2,
     "title_ja": "データソース",
+    "title_ru": "Источники данных",
     "createdById": 1,
     "updatedById": 9,
     "tasks": []
@@ -312,6 +339,7 @@
     "title_cn": "数据表",
     "sort": 3,
     "title_ja": "コレクション",
+    "title_ru": "Коллекции",
     "createdById": 1,
     "updatedById": 9,
     "tasks": [
@@ -330,6 +358,8 @@
         "docUrl": null,
         "title_ja": "Static Data Dictionary",
         "description_ja": "Stores and manages static data like enumerations, code tables, currencies, and units for easy reuse across multiple places.",
+        "title_ru": "Справочник статических данных",
+        "description_ru": "Хранит и управляет статическими данными, такими как перечисления, таблицы кодов, валюты и единицы измерения, для удобного повторного использования в разных местах.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -340,6 +370,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -360,6 +391,7 @@
     "title_cn": "区块",
     "sort": 4,
     "title_ja": "ブロック",
+    "title_ru": "Блоки",
     "createdById": 1,
     "updatedById": 9,
     "tasks": [
@@ -378,6 +410,8 @@
         "docUrl": null,
         "title_ja": "New filter blocks",
         "description_ja": "フィルターブロックに任意のデータソースから任意のフィールドを追加し、ページ上の任意のブロック（チャートブロックを含む）をフィルタリングできます。",
+        "title_ru": "Новый Блок фильтрации",
+        "description_ru": "Добавляйте любое поле из любого источника данных в блок фильтрации для фильтрации любых блоков на странице (включая графики).",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -388,6 +422,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -413,6 +448,8 @@
         "docUrl": null,
         "title_ja": "要約",
         "description_ja": "テーブルやリストブロックに要約フッターを追加し、合計、合計値、平均値などの集約結果や任意のテキストコンテンツを出力します。",
+        "title_ru": "Итого",
+        "description_ru": "Добавляет в нижний колонтитул в таблицах и списками возможность суммирования или агрегации данных такие как, суммы, средние значения или любой текстовый контент.",
         "createdById": 1,
         "updatedById": 9,
         "status": {
@@ -423,6 +460,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -448,6 +486,8 @@
         "docUrl": null,
         "title_ja": "Enhanced Table Block",
         "description_ja": "A higher-performance table block with more features such as in-cell editing, header cell merging, and drag-and-drop column resizing.",
+        "title_ru": "Улучшенный блок таблицы",
+        "description_ru": "Блок таблицы с повышенной производительностью и расширенным функционалом: редактирование ячеек, объединение заголовков и изменение размера колонок перетаскиванием.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -458,6 +498,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -496,6 +537,8 @@
         "docUrl": null,
         "title_ja": "Global Variables",
         "description_ja": "Offers global variables and an interface for switching between them, supporting scenarios like project, store, or currency changes.",
+        "title_ru": "Глобальные переменные",
+        "description_ru": "Предоставляет глобальные переменные и интерфейс для их переключения, поддерживая сценарии вроде смены проекта, магазина или валюты.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -506,6 +549,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -531,6 +575,8 @@
         "docUrl": null,
         "title_ja": "一括フィルタリング",
         "description_ja": "複数のフィルタ値をまとめて入力したり、Excelファイルをアップロードしてフィルタ値を設定することでフィルタリングが可能です。これにより、フィルタ値のグループに基づいた絞り込みができます。",
+        "title_ru": "Массовая фильтрация",
+        "description_ru": "Фильтрация с использованием массового ввода значений или загрузки файла Excel для установки фильтров, позволяя фильтровать по группе значений.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -541,6 +587,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -561,6 +608,7 @@
     "title_cn": "字段",
     "sort": 6,
     "title_ja": "フィールド",
+    "title_ru": "Поля",
     "createdById": 1,
     "updatedById": 9,
     "tasks": [
@@ -579,6 +627,8 @@
         "docUrl": null,
         "title_ja": "フィールドのデフォルト値が式をサポート",
         "description_ja": "",
+        "title_ru": "Поддержка выражений для значений по умолчанию полей",
+        "description_ru": "Позволяет задавать значения по умолчанию для полей с помощью выражений.",
         "createdById": 1,
         "updatedById": 9,
         "status": {
@@ -589,6 +639,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -614,6 +665,8 @@
         "docUrl": null,
         "title_ja": "フィールド：ネストされたクエリ",
         "description_ja": "メインクエリに関連する特定のデータを動的に計算または取得し、それを結果セットの一部として表示します。",
+        "title_ru": "Поля: Вложенный запрос",
+        "description_ru": "Динамически рассчитывает или извлекает связанные данные в рамках основной выборки и отображает их в результирующем наборе данных.",
         "createdById": 1,
         "updatedById": 9,
         "status": {
@@ -624,6 +677,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -644,6 +698,7 @@
     "title_cn": "用户认证",
     "sort": 7,
     "title_ja": "認証",
+    "title_ru": "Аутентификация",
     "createdById": 1,
     "updatedById": 9,
     "tasks": [
@@ -662,6 +717,8 @@
         "docUrl": null,
         "title_ja": "パスワードをリセット",
         "description_ja": "ユーザーはパスワードを忘れた場合、メールでリセットできます。/ ユーザーがパスワードを忘れた際は、メールでリセットできます。",
+        "title_ru": "Сброс пароля",
+        "description_ru": "Позволяет пользователям сбрасывать пароль через электронную почту в случае его утери.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -672,6 +729,7 @@
           "name_cn": null,
           "type": "primary",
           "name_ja": "進行中",
+          "name_ru": "В процессе",
           "createdById": 1,
           "updatedById": 9
         },
@@ -692,6 +750,7 @@
     "title_cn": "用户和权限",
     "sort": 8,
     "title_ja": null,
+    "title_ru": "Пользователи & разрешения",
     "createdById": 1,
     "updatedById": 1,
     "tasks": [
@@ -710,6 +769,8 @@
         "docUrl": null,
         "title_ja": "Unified Role",
         "description_ja": "Combines permissions from the user's all roles, eliminating the need to switch between them.",
+        "title_ru": "Вложенная роль",
+        "description_ru": "Объединяет права всех ролей пользователя, устраняя необходимость переключения между ними.",
         "createdById": 1,
         "updatedById": 1,
         "status": {
@@ -720,6 +781,7 @@
           "name_cn": null,
           "type": "success",
           "name_ja": "完了",
+          "name_ru": "Готово",
           "createdById": 1,
           "updatedById": 9
         },
@@ -740,6 +802,7 @@
     "title_cn": "工作流",
     "sort": 9,
     "title_ja": "ワークフロー",
+    "title_ru": "Рабочий процесс",
     "createdById": 1,
     "updatedById": 9,
     "tasks": []
@@ -752,6 +815,7 @@
     "title_cn": null,
     "sort": 10,
     "title_ja": "ドキュメント",
+    "title_ru": "Документация",
     "createdById": 1,
     "updatedById": 9,
     "tasks": []
@@ -764,6 +828,7 @@
     "title_cn": "日志与监控",
     "sort": 11,
     "title_ja": "ログ記録と監視",
+    "title_ru": "Логирование и мониторинг",
     "createdById": 1,
     "updatedById": 9,
     "tasks": []
@@ -776,6 +841,7 @@
     "title_cn": "其他",
     "sort": 12,
     "title_ja": "その他",
+    "title_ru": "Разное",
     "createdById": 1,
     "updatedById": 9,
     "tasks": []
