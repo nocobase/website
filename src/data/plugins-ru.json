@@ -1,0 +1,88 @@
+[
+    {
+        "title": "Работа с базой данных",
+        "plugins": [
+            {
+                "title": "Data source manager",
+                "description": "Manage data sources, including the built-in Main database, external databases, APIs, etc."
+            },
+            {
+                "title": "Graph collection manager",
+                "description": "An ER diagram-like tool. Currently only the Main database is supported."
+            }
+        ]
+    },
+    {
+        "title": "Источники данных",
+        "plugins": [
+            {
+                "title": "Data source: Main database",
+                "description": "NocoBase main database, supports relational databases such as MySQL, PostgreSQL, SQLite and so on."
+            },
+            {
+                "title": "Data source: External MySQL",
+                "description": "Use external MySQL databases as data sources.",
+                "isCommercial": true
+            },
+            {
+                "title": "Data source: External MariaDB",
+                "description": "Use external MariaDB databases as data sources.",
+                "isCommercial": true
+            },
+            {
+                "title": "Data source: External PostgreSQL",
+                "description": "Use external PostgreSQL databases as data sources.",
+                "isCommercial": true
+            },
+            {
+                "title": "Data source: HTTP API",
+                "description": "Use HTTP API as data sources.",
+                "isCommercial": true
+            }
+        ]
+    },
+    {
+        "title": "Коллекции",
+        "plugins": []
+    },
+    {
+        "title": "Поля коллекций",
+        "plugins": []
+    },
+    {
+        "title": "Блоки",
+        "plugins": []
+    },
+    {
+        "title": "Действия",
+        "plugins": []
+    },
+    {
+        "title": "Пользователи и разрешения",
+        "plugins": []
+    },
+    {
+        "title": "Аунтификация",
+        "plugins": []
+    },
+    {
+        "title": "Рабочий процесс",
+        "plugins": []
+    },
+    {
+        "title": "Управление системой",
+        "plugins": []
+    },
+    {
+        "title": "Логирование и телеметрия",
+        "plugins": []
+    },
+    {
+        "title": "Интеграции",
+        "plugins": []
+    },
+    {
+        "title": "Разное",
+        "plugins": []
+    }
+]

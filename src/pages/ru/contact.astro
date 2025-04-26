@@ -1,0 +1,47 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage } from "../../utils";
+
+const page = await getPage("contact");
+
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <!-- Start Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-4 pb-4">
+          <div class="d-flex contact-detail align-items-center mt-4">
+            <div class="flex-1 content mb-4">
+              <h4 class="title fw-bold mb-1">Написать нам письмо</h4>
+              <a href="mailto:hello@nocobase.com" class="text-primary">hello@nocobase.com — для писем со всего мира</a> <br />
+              <a href="mailto:hello@nocobase.ru" class="text-primary">hello@nocobase.ru — для писем из России</a>
+            </div>
+          </div>
+          <h4>Где мы находимся</h4>
+          <div class="p-4 bg-light rounded shadow mb-4">
+            Мы — распределённая команда, работающая из разных стран. Наши текущие офисы:
+            <ul class="list-unstyled text-muted mb-0">
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>#03-01, 112 Robinson Road, Singapore</li>
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>501, 1-55-8 Akabane, Kita-ku, Tokyo, Japan</li>
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>Лахтинский пр-т, д. 85к2, 3-й этаж, Санкт-Петербург, 197229, Россия</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6">
+          <div class="card shadow border-0 rounded p-4" style="height: 850px;">
+            <iframe src="https://service-en.nocobase.com/public-forms/ect266yzsld" height="100%"></iframe>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Contact -->
+</Layout>

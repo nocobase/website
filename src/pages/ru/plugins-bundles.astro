@@ -1,0 +1,165 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "Все плагины",
+    link: "/ru/plugins",
+  },
+  {
+    title: "Комерческие плагины",
+    link: "/ru/plugins-commercial",
+  },
+  {
+    title: "Пакеты плагинов",
+    link: "/ru/plugins-bundles",
+    active: true,
+  },
+];
+
+const data = await listPluginCategories();
+const page = await getPage("plugins");
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
+---
+
+<Layout title="Plugin bundle" description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
+    <a href="/ru/contact" class="btn btn-outline-primary">Купить<i class="uil uil-angle-right-b"></i></a>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card shadow border-0 rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Что такое плагин поинты?</h5>
+                        <p class="text-muted">NocoBase предлагает десятки коммерческих плагинов — и их число постоянно растёт! <br /> Чтобы дать вам максимальную свободу выбора,
+                            мы создали удобную систему "Плагин Поинтов", где 1 плагин поинт = 4000 ₽.
+                            При покупке плагинов, разработанных командой NocoBase, вы можете:
+                            оплатить их напрямую деньгами, или использовать плагин поинты — нашу внутреннюю валюту для быстрой активации нужных модулей.
+                            (Примечание: плагин поинты не применяются к сторонним плагинам.)</p>
+                    
+                        <p class="text-muted">На <a href="/ru/plugins">странице</a>,
+                            каждого плагина указана его стоимость в рублях и в плагин поинтах.
+                            Например: Плагин "Источник данных: База PostgreSQL" стоит 16 000 ₽ или 4 плагин поинта.
+                            <i class="uil uil-moon-eclipse me-1"></i>.</p>
+                        
+                        <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
+                            <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                                <div class="card-body"> 
+                                    <div class="mt-2 plugin-box"> 
+                                        <h6 class="card-title mb-1">Источник данных: База PostgreSQL</h6>
+                                        <div class="plugin-developer text-muted mb-3">Разработано <span>NocoBase</span></div>
+                                        <p class="text-muted mb-2 plugin-overview">Интеграция с PostgreSQL: добавляйте внешние базы как источники данных</p>
+                    
+                                        <div class="plugin-footer"> 
+                                            <h6 class="text-primary mb-0"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование, <br />обновление на 1 год</span><br>
+                                                <a href="/ru/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">8000 ₽</span>
+                                            </h6>
+                                            <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование<br /> и обновление</span><br>
+                                                <a href="/ru/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">16 000 ₽</span>
+                                            </h6> 
+                                        </div>
+
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <p class="text-muted">Имея, например, 32 плагин поинта, вы можете выбрать:<i class="uil uil-moon-eclipse me-1"></i>,
+                            16 плагинов стоимостью 8 000 ₽,
+                            или 8 плагинов стоимостью 16 000 ₽,
+                            или собрать собственную комбинацию: 1 плагин за 32 000₽ + 3 плагина за 16 000 ₽ + 6 плагинов за 8000 ₽.
+                        </p>
+                        <p class="text-muted">Оставшиеся плагин поинты остаются на вашем счёте бессрочно — вы можете использовать их постепенно, когда вам будет удобно.</p>
+                    
+                        <h5 class="card-title mt-4">Как получить плагин поинты?</h5>
+                        <p class="text-muted">Есть несколько способов::</p>
+                        <ul class="text-muted">
+                            <li>Приобрести <a href="/ru/commercial">коммерческую лицензию </a>, она включает определённое количество плагин поинтов;</li>
+                            <li>Приобрести пакет плагин поинтов</li>
+                            <li>Поделиться кейсом использования NocoBase вашей компанией или клиентом в сообществе — и получить плагин поинты в подарок! <a href="/ru/contact">(Свяжитесь с нами для деталей.)</a></li>
+                        </ul>
+                    
+                        <h5 class="card-title mt-4">Что такое пакеты плагинов?</h5>
+                        <p class="text-muted">
+                            Если процесс оплаты в вашей компании требует времени или дополнительных согласований, индивидуальная покупка плагинов может быть неудобной.
+                            Для вашего удобства мы создали пакеты плагин поинтов. <br />
+                            Вы покупаете пакет с плагин поинтами, а затем спокойно выбираете и активируете нужные плагины в любое время.</p>
+                        <p class="text-muted">И ещё приятная новость: Чем больше пакет плагин поинтов — тем выше ваша скидка!</p>
+                    
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center commercial-table">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col" class="col-sm-4">Название пакета</th>
+                                        <th scope="col" class="col-sm-2">Поинтов</th>
+                                        <th scope="col" class="col-sm-2">Розничная цена</th>
+                                        <th scope="col" class="col-sm-2">Скидка</th>
+                                        <th scope="col" class="col-sm-2">Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">Пакет 8</td>
+                                        <td class="text-muted">8 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">32 000 ₽</td>
+                                        <td class="fst-italic text-muted"> </td>
+                                        <td class="fst-italic text-muted">32 000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Пакет 16</td>
+                                        <td class="text-muted">16 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">64 000 ₽</td>
+                                        <td class="fst-italic text-muted">2%</td>
+                                        <td class="fst-italic text-muted">62 720 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Пакет 32</td>
+                                        <td class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">128 000 ₽</td>
+                                        <td class="fst-italic text-muted">5%</td>
+                                        <td class="fst-italic text-muted">121 600 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Пакет 64</td>
+                                        <td class="text-muted">64 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">256 000 ₽</td>
+                                        <td class="fst-italic text-muted">10%</td>
+                                        <td class="fst-italic text-muted">230 000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Пакет 128</td>
+                                        <td class="text-muted">128 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">512 000 ₽</td>
+                                        <td class="fst-italic text-muted">20%</td>
+                                        <td class="fst-italic text-muted">409 000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Безлимит</td>
+                                        <td class="text-muted" colspan="3"><span style="font-weight: normal;font-style: italic;font-size: 12px;">Лицензия на использование всех текущих и будущих коммерческих плагинов, разработанных NocoBase.</span></td>
+                                        <td class="fst-italic text-muted">800 000 ₽</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->

@@ -22,6 +22,11 @@ export const SUPPORTED_LANGUAGES = {
     code: 'ja',
     locale: 'ja-JP',
     name: 'Japanese'
+  },
+  ru: {
+    code: 'ru',
+    locale: 'ru-RU',
+    name: 'Russian'
   }
 };
 
@@ -202,6 +207,7 @@ export async function listPluginCategories() {
               title: cat.title,
               title_cn: cat.title_cn,
               title_ja: cat.title_ja,
+              title_ru: cat.title_ru,
               slug: cat.slug,
               sort: cat.sort,
               plugins: [],
@@ -242,6 +248,7 @@ export async function listPluginCategories() {
         title: cat.title,
         title_cn: cat.title_cn,
         title_ja: cat.title_ja,
+        title_ru: cat.title_ru,
         slug: cat.slug,
         sort: cat.sort,
         // Important: Ensure to include a 'plugins' array to store all plugins under that category

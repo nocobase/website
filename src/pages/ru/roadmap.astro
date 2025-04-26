@@ -1,0 +1,79 @@
+---
+import FormattedDate from "../../components/FormattedDate.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
+
+const lastUpdatedAt = await getLastUpdatedAt("tasks");
+const data = await listTaskCategories();
+const page = await getPage("roadmap");
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+    <!-- Updated on <FormattedDate date={lastUpdatedAt} /> -->
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+      {
+        data
+          .filter((group) => group.tasks.length > 0)
+          .map((group) => (
+            <>
+              <h4 class="mt-2 pb-1 text-muted">
+                {group.title_ru || group.title}
+              </h4>
+              <div class="row pb-4">
+                {group.tasks.map((task: any) => (
+                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                    <div class="card rounded shadow border-0 plugin-card">
+                      <div class="card-body">
+                        <div class="mt-2">
+                          <h6 title={task.title_ru || title.name} class="card-title">
+                            {task.title_ru || task.title}
+                          </h6>
+                          <p class="text-muted mb-2">{task.description_ru || task.description}</p>
+                          {task.status && (
+                            <span
+                              class={
+                                "badge bg-soft-" +
+                                task.status.type +
+                                " plugin-type"
+                              }
+                            >
+                              {task.status.name_ru || task.status.name}
+                            </span>
+                          )}
+                          {task.isNewPlugin && (
+                            <span class="badge bg-soft-danger plugin-type">
+                              Новый
+                            </span>
+                          )}
+                          {task.isCommercial && (
+                            <span class="badge bg-soft-warning plugin-type">
+                              Коммерческий плагин
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ))
+      }
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->
+
+<style>
+  .plugin-type {
+    margin-right: 5px;
+  }
+</style>

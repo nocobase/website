@@ -1,0 +1,160 @@
+---
+import FormattedDate from "../../../../components/FormattedDate.astro";
+import PageHeader from "../../../../components/PageHeader.astro";
+import Pagination from "../../../../components/Pagination.astro";
+import Tags from "../../../../components/Tags.astro";
+import Layout from "../../../../layouts/Layout.astro";
+import { getPage, listArticleTags, listArticles, url } from "../../../../utils";
+import BlogSidebar from "../../../../components/BlogSidebar.astro";
+
+const pageData = await getPage("blog");
+
+const title = pageData.title_ru || pageData.title;
+const description = pageData.description_ru || pageData.description;
+const keywords = pageData.keywords_ru || pageData.keywords;
+
+const basepath = "/ru/blog";
+const { page: pageParam } = Astro.params;
+// Convert page parameter to number
+const page = pageParam ? parseInt(pageParam) : 1;
+const { data, meta } = await listArticles({ hideOnBlog: false, page });
+const tags = await listArticleTags({
+  filter: {
+    displayOnBlog: true,
+  },
+});
+const tabs = [
+  {
+    title: "Главная",
+    link: "/ru/",
+  },
+  {
+    title: "Блог",
+    active: true,
+  }
+];
+
+const socialLinks = [
+  {
+    name: "github",
+    icon: "fab fa-github",
+    url: "https://github.com/nocobase"
+  },
+  {
+    name: "x", 
+    icon: "fab fa-x-twitter",
+    url: "https://x.com/NocoBase"
+  },
+  {
+    name: "youtube",
+    icon: "fab fa-youtube", 
+    url: "https://www.youtube.com/@NocoBase"
+  }
+];
+
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader showRSS title={title} description={description} breadcrumb={tabs}>
+    <Tags basepath={basepath} items={tags} />
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <main class="col-md-8">
+          <section>
+            <ul class="articles">
+              {
+                data.map((post, index) => (
+                  <li>
+                    <a href={`${basepath}/${post.slug}`}>
+                      <img
+                        style="object-fit: cover;"
+                        width={720}
+                        height={index === 0 ? 360 : 240}
+                        src={url(post.cover.url)}
+                        alt={post.title}
+                      />
+                      <h4 class="title">{post.title}</h4>
+                      <p class="date">
+                        <FormattedDate
+                          date={post.publishedAt || post.createdAt}
+                        />
+                      </p>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+          <Pagination
+            basepath={basepath}
+            currentPage={page}
+            pageSize={meta.pageSize}
+            total={meta.count}
+            totalPages={meta.totalPage}
+          />
+        </main>
+
+        <BlogSidebar 
+          basepath={basepath}
+          description=""
+          socialLinks={socialLinks}
+          lang="en"
+        />
+      </div>
+
+      <div class="mt-4">
+        <div class="d-flex align-items-center">
+          <span class="me-2">Follow Us:</span>
+          <ul class="list-unstyled social-icon social d-flex gap-2 mb-0">
+            {socialLinks.map(link => (
+              <li class="position-relative">
+                <a
+                  href={link.url}
+                  class="btn btn-sm btn-light"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {link.icon ? <i class={link.icon}></i> : link.text}
+                </a>
+                {link.img && (
+                  <div class="qr-popup position-absolute d-none">
+                    <img src={link.img} alt={link.name} width="120" height="120" />
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .position-relative {
+    position: relative;
+  }
+  .qr-popup {
+    width: 200px;
+    height: 200px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .qr-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .position-relative:hover .qr-popup {
+    display: block !important;
+  }
+</style>

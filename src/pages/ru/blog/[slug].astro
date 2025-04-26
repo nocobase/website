@@ -1,0 +1,151 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Tags from "../../../components/Tags.astro";
+import Toc from "../../../components/Toc.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getArticle, url } from "../../../utils";
+import QRCode from 'qrcode';
+import ShareIcons from "../../../components/ShareIcons.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
+
+const { slug } = Astro.params;
+const { data, headings, html } = await getArticle(slug);
+if (!data) {
+  return new Response("Not found", { status: 404 });
+}
+const title = data.title_ru || data.title;
+const keywords = (data.tags || []).map((tag: any) => tag.title).join(",");
+const description = data.description_ru || data.description;
+const basepath = "/ru/blog";
+const tabs = [
+  {
+    title: "Главная",
+    link: "/ru/",
+  },
+  {
+    title: "Блог",
+    link: basepath,
+  },
+  {
+    title: 'Подробне',
+    active: true,
+  },
+];
+
+const shareLinks = [
+  {
+    name: "x",
+    icon: "fab fa-x-twitter",
+    url: `https://x.com/intent/tweet?text=${encodeURIComponent(description)}&url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "linkedin",
+    icon: "fab fa-linkedin",
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "facebook",
+    icon: "fab fa-facebook",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.nocobase.com' + basepath + '/' + slug)}`
+  },
+  {
+    name: "qrcode",
+    icon: "fas fa-qrcode",
+    qrCode: true,
+    copy: true
+  },
+  {
+    name: "copy",
+    icon: "fas fa-link",
+    copy: true
+  }
+];
+
+const currentUrl = Astro.url.href;
+const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
+  width: 200,
+  margin: 1,
+  color: {
+    dark: '#000000',
+    light: '#ffffff'
+  }
+});
+---
+
+<Layout title={title} image={data.cover ? url(data.cover.url) : undefined} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} breadcrumb={tabs}>
+    <div>
+      {
+        data.author && (
+          <span title={data.author}>
+            {data.author}
+            <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
+              |
+            </span>
+          </span>
+        )
+      }
+      <FormattedDate date={data.publishedAt || data.createdAt} />
+    </div>
+    <Tags basepath={basepath} items={data.tags.filter((tag: any) => tag.displayOnPage)} />
+    {data.ai_generated && (
+        <p class="ai-generated-label" style="color: gray; font-size: 0.9em;">(This article was translated by AI)</p>
+    )}
+    <div class="d-md-none mt-3">
+      <ShareIcons 
+        shareLinks={shareLinks}
+        qrCodeDataURL={qrCodeDataURL}
+      />
+    </div>
+  </PageHeader>
+  <section class="section bg-white-color">
+    <main
+      class={headings.length > 0 ? "container blog-container row" : "container"}
+    >
+      <div class="col-md-2 d-none d-md-block">
+        <div class="sticky-top" style="top: 80px;z-index: 0;">
+          <ShareIcons 
+            shareLinks={shareLinks}
+            qrCodeDataURL={qrCodeDataURL}
+            vertical={true}
+          />
+        </div>
+      </div>
+
+      {
+        headings.length > 0 ? (
+          <>
+            <div class="col-md-7 col-18 markdown-body">
+              <Fragment set:html={html} />
+            </div>
+            <div class="col-md-3 col-6 markdown-toc">
+              <div class="sticky-top" style="top: 80px;z-index: 0;">
+                <Toc headings={headings} />
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div class="col-md-10">
+              <Fragment set:html={html} />
+            </div>
+          </>
+        )
+      }
+    </main>
+  </section>
+  <ImageZoom />
+</Layout>
+
+<style>
+  main {
+    margin: 0 auto;
+  }
+  :global(.markdown-body iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+</style>

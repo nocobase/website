@@ -1,0 +1,119 @@
+---
+import FormattedDate from "../../../../../components/FormattedDate.astro";
+import PageHeader from "../../../../../components/PageHeader.astro";
+import Pagination from "../../../../../components/Pagination.astro";
+import Layout from "../../../../../layouts/Layout.astro";
+import { getArticleTag, listArticles, url } from "../../../../../utils";
+import BlogSidebar from "../../../../../components/BlogSidebar.astro";
+
+const { slug } = Astro.params;
+const tag = await getArticleTag(slug);
+const { data, meta } = await listArticles({ tagSlug: slug, page: 1 });
+const tagpath = '/ru/blog/tags/' + slug;
+const basepath = '/ru/blog';
+const title = tag.title_ru || tag.title;
+const description = tag.description_ru || tag.description;
+const keywords = tag.keywords_ru || tag.keywords;
+const tabs = [
+  {
+    title: "Home",
+    link: "/ru/",
+  },
+  {
+    title: "Блог",
+    link: basepath,
+  },
+  {
+    title: title,
+    active: true,
+  },
+];
+
+const socialLinks = [
+  {
+    name: "github",
+    icon: "fab fa-github",
+    url: "https://github.com/nocobase"
+  },
+  {
+    name: "x", 
+    icon: "fab fa-x-twitter",
+    url: "https://x.com/NocoBase"
+  },
+  {
+    name: "youtube",
+    icon: "fab fa-youtube", 
+    url: "https://www.youtube.com/@NocoBase"
+  }
+];
+
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} breadcrumb={tabs}>
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <main class="col-md-8">
+          <section>
+            <ul class="articles">
+              {
+                data.map((post, index) => (
+                  <li>
+                    <a href={`${basepath}/${post.slug}`}>
+                      <img
+                        style="object-fit: cover;"
+                        width={720}
+                        height={index === 0 ? 360 : 240}
+                        src={url(post.cover.url)}
+                        alt={post.title}
+                      />
+                      <h4 class="title">{post.title}</h4>
+                      <p class="date">
+                        <FormattedDate date={post.publishedAt || post.createdAt}/>
+                      </p>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+          <Pagination 
+            basepath={tagpath} 
+            currentPage={1} 
+            pageSize={meta.pageSize} 
+            total={meta.count} 
+            totalPages={meta.totalPage} 
+          />
+        </main>
+
+        <BlogSidebar 
+          basepath={basepath}
+          socialLinks={socialLinks}
+          lang="ru"
+        />
+      </div>
+
+      <div class="mt-4">
+        <div class="d-flex align-items-center">
+          <span class="me-2">Follow Us:</span>
+          <ul class="list-unstyled social-icon social d-flex gap-2 mb-0">
+            {socialLinks.map(link => (
+              <li>
+                <a
+                  href={link.url}
+                  class="btn btn-sm btn-light"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {link.icon ? <i class={link.icon}></i> : link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
