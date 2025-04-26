@@ -1,6 +1,7 @@
 FROM node:18.20.3-slim as builder
 
 ENV SITE_APPDIR /site
+ENV USE_LOCAL_CONTENT true
 
 # RUN npm config set registry https://registry.npmmirror.com/
 
