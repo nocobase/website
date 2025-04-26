@@ -45,7 +45,8 @@ export function getLocalizedContent(data: any, field: string, locale: string = D
 
 const baseURL = (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/';
 const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
-const useLocalContent = import.meta.env.USE_LOCAL_CONTENT === 'true' || process.env.USE_LOCAL_CONTENT === 'true';
+// Force local content to be used
+const useLocalContent = true;
 
 export function url(path: string) {
   if (path.startsWith('https')) {
