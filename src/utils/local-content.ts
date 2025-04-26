@@ -336,6 +336,7 @@ export async function getPage(slug?: string, locale = 'en') {
     content: locale === 'en' ? content : null,
     content_cn: locale === 'cn' ? content : null,
     content_ja: locale === 'ja' ? content : null,
+    content_ru: locale === 'ru' ? content : null,
     html: code 
   };
   
