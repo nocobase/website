@@ -50,13 +50,13 @@ const meta = {
   image: image || 'https://static-docs.nocobase.com/20250223-173129.jpg',
   title: title
       ? `${title} - NocoBase`
-      : "NocoBase - Открытый код, размещение на собственном сервере, no-code платформа & low-code платформа разработки",
+      : "NocoBase - no-code\low code платформа с открытым исходным кодом и безграничными возможностями для размещения на собственном сервере",
   description:
       description ||
-      "NocoBase is a lightweight, extremely extensible open source no-code and low-code development platform. Quickly deploy to gain a private, controllable no-code solution!",
+      "NocoBase — открытая российская платформа для быстрого создания приложений без написания кода. Легко интегрируется с отечественными сервисами, обеспечивает контроль над конфиденциальностью данных и позволяет оперативно разворачивать решения под любые бизнес-задачи",
   keywords:
       keywords ||
-      "nocobase,low-code,no-code,nocode,self-hosted,open source,open-source,no-code development,low-code development,no code tools,best no code tools,no-code platform,free no-code development platform,no code integration,no code app",
+      "Платформа NoCode, Low Code разработка, Разработка без кода, Самостоятельное размещение (self-hosted), Открытый исходный код (open source), Инструменты без кода, Лучшие инструменты без кода, Бесплатная платформа разработки без кода, Интеграция без кода, Приложение без кода, Быстрая разработка ПО без программистов, Создание решений без знания программирования, альтернатива зарубежным инструментам NoCode/LowCode",
 };
 ---
 
@@ -80,21 +80,6 @@ const meta = {
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
     <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
     <link rel="alternate" href={new URL(urlRU, Astro.site)} hreflang="ru-ru">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={meta.title} />
-    <meta property="og:description" content={meta.description} />
-    <meta property="og:image" content={meta.image} />
-    <meta property="og:image:alt" content="Extensibility-first, open-source no-code platform"/>
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={Astro.url} />
-    <meta name="twitter:title" content={meta.title} />
-    <meta name="twitter:description" content={meta.description} />
-    <meta name="twitter:image" content={meta.image} />
 
     <!-- favicon -->
     <link
@@ -142,7 +127,7 @@ const meta = {
     />
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-    <!-- Begin Brevo Form -->
+    <!-- Russian Footer -->
     <style>
       .icons-footer {
         display: inline-block;
@@ -169,10 +154,8 @@ const meta = {
         color: #c0ccda;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://sibforms.com/forms/end-form/build/sib-styles.css"
-    />
+    <!-- Begin Brevo Form -->
+    <link rel="stylesheet"  href="https://sibforms.com/forms/end-form/build/sib-styles.css"/>
     <!-- Begin Brevo Form -->
     <style>
       #sib-container input:-ms-input-placeholder {
@@ -197,7 +180,6 @@ const meta = {
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
-
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -205,7 +187,7 @@ const meta = {
 
         gtag('config', 'G-237XXSVYHE');
     </script>
-
+    <!-- / Google Analytics -->
     <!-- Baidu Analytics -->
     <script type="text/javascript">
         var _hmt = _hmt || [];
@@ -216,6 +198,24 @@ const meta = {
         s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <!-- / Baidu Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(101432960, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/101432960" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
 
   <body>
@@ -263,6 +263,7 @@ const meta = {
             <!-- Mobile menu toggle-->
             <a class="navbar-toggle" rel="nofollow" id="isToggle" onclick="toggleMenu()">
               <div class="lines">
+                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -365,18 +366,6 @@ const meta = {
                 <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                   <p><a href="https://github.com/nocobase/nocobase" title="NocoBase исходный код на github" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4112" alt="nocobase%2Fnocobase | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"></a></p>
                   <p><a href="https://www.producthunt.com/posts/nocobase?embed=true&amp;utm_source=badge-top-post-topic-badge&amp;utm_medium=badge&amp;utm_souce=badge-nocobase" title="NocoBase on ProductHunt" target="_blank"><img src="/producthunt.svg" alt="NocoBase - Extensibility-first, open-source no-code platform | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a></p>
-                  <!-- <a href="/" class="logo-footer">
-                    <img
-                      src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png"
-                      height="24"
-                      alt=""
-                    />
-                  </a>
-                  <p class="mt-4">
-                    Self-hosted and extremely extensible open-source no-code
-                    development platform to make digitalization faster, easier
-                    and cheaper.
-                  </p> -->
                   <ul
                     class="list-unstyled social-icon foot-social-icon mb-0 mt-4"
                   >
@@ -578,7 +567,6 @@ const meta = {
                                     />
                                   </div>
                                 </div>
-
                                 <label
                                   class="entry__error entry__error--primary"
                                   style='font-size:14px; text-align:left; font-family:"Helvetica", sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;'
@@ -609,7 +597,6 @@ const meta = {
                               </button>
                             </div>
                           </div>
-
                           <input
                             type="text"
                             name="email_address_check"
@@ -637,16 +624,14 @@ const meta = {
                 <p class="mb-0">
                   © 2020-{year} NocoBase. Все права защищены.
                 </p>
-                <p class="mb-0" style="font-size: 8px">
-                © 2025-{year} ООО "Матрешка маркет", ИНН: 7814825148, ОГРН: 1237800082046, г. Санкт-Петербург, Россия
-                </p>
               </div>
             </div><!--end col-->
 
             <div class="col-sm-6">
               <div class="text-sm-end">
-                <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
-                <!-- <p class="mb-0"><a href="javascript:void(0);" onclick="changeLanguage('en')" class="text-reset">EN</a> | <a href="javascript:void(0);" onclick="changeLanguage('zh')" class="text-reset">中文</a></p> -->
+                <p class="mb-0" style="font-size: 8px">
+                © {year} ООО "Матрешка маркет", ИНН: 7814825148, ОГРН: 1237800082046, г. Санкт-Петербург, Россия
+                </p>
               </div>
             </div><!--end col-->
           </div><!--end row-->
@@ -687,8 +672,7 @@ const meta = {
 
       var AUTOHIDE = Boolean(0);
     </script>
-    <script defer src="https://sibforms.com/forms/end-form/build/main.js"
-    ></script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js" ></script>
     <!--  END Brevo Form -->
     <DocSearch/>
   <script>
