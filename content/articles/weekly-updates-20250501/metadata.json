@@ -1,11 +1,11 @@
 {
   "id": 440,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週のアップデート：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Blocks Support Linkage Rules",
+  "title_cn": "NocoBase 本周更新汇总：区块支持联动规则",
+  "title_ja": "NocoBase 今週のアップデート：ブロックで連携ルールをサポート",
+  "description": "This week’s updates include: blocks support linkage rules for dynamic display, support response variable in success message of custom request action, and more.",
+  "description_cn": "本周更新包括：区块支持联动规则以动态显示区块；自定义请求按钮提交成功提示支持响应结果值等。",
+  "description_ja": "今週の更新では、ブロックに連携ルールがサポートされ、ダイナミックな表示が可能になりました。また、カスタムリクエストボタンの送信成功時のプロンプトにレスポンス結果値の表示がサポートされるようになりました。",
   "slug": "weekly-updates-20250501",
   "publishedAt": "2025-05-01T00:00:00.000Z",
   "status": "published",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": true,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-30T03:11:21.369Z"
+  "updatedAt": "2025-04-30T05:34:36.964Z"
 }
