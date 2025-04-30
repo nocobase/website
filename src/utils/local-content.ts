@@ -416,9 +416,11 @@ export async function listArticles(options?: {
     data: paginatedArticles,
     meta: {
       total: filteredArticles.length,
+      count: filteredArticles.length,
       pageSize,
       currentPage: page,
-      totalPages: Math.ceil(filteredArticles.length / pageSize)
+      totalPages: Math.ceil(filteredArticles.length / pageSize),
+      totalPage: Math.ceil(filteredArticles.length / pageSize)
     }
   };
 }

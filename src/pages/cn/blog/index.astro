@@ -15,6 +15,10 @@ const keywords = page.keywords_cn || page.keywords;
 
 const basepath = '/cn/blog';
 const { data, meta } = await listArticles({ hideOnBlog: false });
+
+console.log("page-meta-info");
+console.log(meta);
+
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,
