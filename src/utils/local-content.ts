@@ -361,7 +361,8 @@ export async function listArticles(options?: {
     tagSlug, 
     page = 1, 
     pageSize = 9,
-    sort = ['-publishedAt']
+    sort = ['-publishedAt'],
+    filter = {}
   } = options || {};
 
   // Get all articles directories
@@ -371,7 +372,43 @@ export async function listArticles(options?: {
   // Read all articles metadata
   const articles = articleSlugs.map(slug => {
     const metadataPath = path.join(articlesDir, slug, 'metadata.json');
-    return readJsonFile(metadataPath) || null;
+    const metadata = readJsonFile(metadataPath) || null;
+    
+    // 如果有元数据，尝试读取内容
+    if (metadata) {
+      // 读取不同语言的内容
+      const contentPath = path.join(articlesDir, slug, 'index.md');
+      const contentCnPath = path.join(articlesDir, slug, 'index.cn.md');
+      const contentJaPath = path.join(articlesDir, slug, 'index.ja.md');
+      const contentRuPath = path.join(articlesDir, slug, 'index.ru.md');
+      
+      // 读取内容并添加到元数据中
+      if (fs.existsSync(contentPath)) {
+        metadata.content = fs.readFileSync(contentPath, 'utf-8');
+      }
+      if (fs.existsSync(contentCnPath)) {
+        metadata.content_cn = fs.readFileSync(contentCnPath, 'utf-8');
+      }
+      if (fs.existsSync(contentJaPath)) {
+        metadata.content_ja = fs.readFileSync(contentJaPath, 'utf-8');
+      }
+      if (fs.existsSync(contentRuPath)) {
+        metadata.content_ru = fs.readFileSync(contentRuPath, 'utf-8');
+      }
+      
+      // 如果没有找到对应语言的内容，使用默认内容
+      if (!metadata.content_cn && metadata.content) {
+        metadata.content_cn = metadata.content;
+      }
+      if (!metadata.content_ja && metadata.content) {
+        metadata.content_ja = metadata.content;
+      }
+      if (!metadata.content_ru && metadata.content) {
+        metadata.content_ru = metadata.content;
+      }
+    }
+    
+    return metadata;
   }).filter(Boolean);
 
   // Filter conditions
@@ -394,6 +431,62 @@ export async function listArticles(options?: {
     filteredArticles = filteredArticles.filter(article => 
       article.category && article.category.slug === categorySlug
     );
+  }
+
+  // 处理复杂的过滤条件
+  if (filter) {
+    // 处理 $and 操作符
+    if (filter.$and && Array.isArray(filter.$and)) {
+      // 遍历 $and 数组中的每个条件
+      filter.$and.forEach(condition => {
+        // 处理每个条件
+        for (const key in condition) {
+          if (key === 'tags.title') {
+            // 处理 tags.title 条件
+            const value = condition[key].$eq || condition[key];
+            filteredArticles = filteredArticles.filter(article => 
+              article.tags && article.tags.some((tag: any) => tag.title === value)
+            );
+          } else if (key === 'status') {
+            // 处理 status 条件
+            const value = condition[key].$eq || condition[key];
+            filteredArticles = filteredArticles.filter(article => 
+              article.status === value
+            );
+          } else {
+            // 处理其他简单条件
+            const value = condition[key].$eq || condition[key];
+            filteredArticles = filteredArticles.filter(article => 
+              article[key] === value
+            );
+          }
+        }
+      });
+    } else {
+      // 处理普通对象条件
+      for (const key in filter) {
+        if (key !== '$and') {
+          // 处理每个条件
+          if (typeof filter[key] === 'object' && filter[key] !== null) {
+            // 处理有操作符的条件
+            for (const op in filter[key]) {
+              if (op === '$eq') {
+                // 处理等于操作符
+                filteredArticles = filteredArticles.filter(article => 
+                  article[key] === filter[key][op]
+                );
+              }
+              // 这里可以添加更多操作符的处理...
+            }
+          } else {
+            // 处理没有操作符的简单条件
+            filteredArticles = filteredArticles.filter(article => 
+              article[key] === filter[key]
+            );
+          }
+        }
+      }
+    }
   }
 
   // Sorting
@@ -762,76 +855,3 @@ export async function getSitemapLinks() {
   
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
-
-// List release notes
-export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
-  const { page = 1, pageSize = 10 } = options || {};
-  
-  // Retrieve all articles with the "Release Notes" tag
-  const { data: allArticles } = await listArticles({
-    page: 1,
-    pageSize: 5000,  // Retrieve all articles first
-    sort: ['-publishedAt'],
-    filter: {
-      // Retrieve articles with the "Release Notes" tag
-    }
-  });
-  
-  // Filter articles that include the "Release Notes" tag
-  const releaseNotes = allArticles.filter((article: any) => {
-    return article.tags && article.tags.some((tag: any) => tag.title === 'Release Notes');
-  });
-  
-  // Process each article and add the required special fields
-  const processedData = releaseNotes.map((article: any) => {
-    // Get sub-tags
-    const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
-    
-    // Take the first valid tag; default to 'Latest' if absent
-    const primaryTag = subTags[0]?.title || 'Latest';
-    
-    // All tags
-    const allTags = (article.sub_tags || []).map((t: any) => t.title.toLowerCase());
-    
-    // Filter out weekly updates
-    if (primaryTag === 'Weekly Updates') return null;
-    
-    return {
-      ...article,
-      tags: allTags,
-      content: article.content || '',
-      isMilestone: (article.sub_tags || []).some((t: any) => t.title === 'Milestone'),
-      priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
-      publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
-      cover: article.cover?.url ? { url: article.cover.url } : null
-    };
-  }).filter(Boolean);
-  
-  // Sort by date in descending order
-  processedData.sort((a: any, b: any) => 
-    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
-  
-  // Pagination
-  const startIndex = (page - 1) * pageSize;
-  const paginatedData = processedData.slice(startIndex, startIndex + pageSize);
-  
-  // Determine if there are more items
-  const totalItems = processedData.length;
-  const currentCount = (page - 1) * pageSize + paginatedData.length;
-  const hasMore = currentCount < totalItems;
-  
-  return {
-    data: paginatedData,
-    meta: {
-      total: totalItems,
-      pageSize,
-      currentPage: page,
-      totalPages: Math.ceil(totalItems / pageSize),
-      hasMore,
-      pageCount: Math.ceil(totalItems / pageSize)
-    }
-  };
-}
-
-// Implement other required methods, such as listArticleCategories, listArticleTags, according to the original API's behavior
