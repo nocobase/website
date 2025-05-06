@@ -299,8 +299,24 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-06T02:48:30.269Z",
+    "updatedAt": "2025-05-06T02:48:30.269Z",
+    "id": 1181,
+    "title": "Frame 72 (1)",
+    "filename": "Frame 72 (1)-ci26kb.png",
+    "extname": ".png",
+    "size": 167728,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2072%20(1)-ci26kb.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2072%20(1)-ci26kb.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-06T02:35:07.957Z"
+  "updatedAt": "2025-05-06T02:59:09.336Z"
 }
