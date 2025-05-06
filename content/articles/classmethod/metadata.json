@@ -3,9 +3,9 @@
   "title": "Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase",
   "title_cn": "从表格到系统：Classmethod 用 NocoBase 构建员工信息管理系统",
   "title_ja": "Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Classmethod built a centralized employee information management system with NocoBase, moving beyond spreadsheets to achieve structured, scalable operations—while turning internal experience into client-facing value.",
+  "description_cn": "Classmethod 用 NocoBase 搭建了一套集中管理全球员工信息的系统，实现从 Excel 到结构化管理的转型，提升协作效率与数据准确性，并将实践经验应用于客户项目中。",
+  "description_ja": "Classmethod は NocoBase を活用し、従業員情報を一元管理するシステムを構築。Excel 管理から脱却し、業務効率とデータ精度を向上させたこの取り組みは、クライアント向け提案にも活かされています。",
   "slug": "classmethod",
   "publishedAt": "2025-05-06T08:23:20.427Z",
   "status": "drafted",
@@ -318,5 +318,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-06T10:24:13.107Z"
+  "updatedAt": "2025-05-06T10:27:00.911Z"
 }
