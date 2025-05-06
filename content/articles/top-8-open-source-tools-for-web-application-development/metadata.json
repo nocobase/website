@@ -3,9 +3,9 @@
   "title": "Top 8 Open-Source Tools for Web Application Development",
   "title_cn": "8 大最佳开源工具助力 Web 应用开发",
   "title_ja": "ウェブアプリケーション開発に最適なオープンソースツール 8 選",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Discover 8 open-source web app dev tools on GitHub. Deeply analyze their functional advantages, suitable scenarios, and key points of use, helping you efficiently build your ideal web application.",
+  "description_cn": "以开发者视角，严选 8 款 GitHub 热门开源 Web 应用开发工具，深度解析功能优势、适配场景与使用要点，助你高效打造理想 Web 应用。",
+  "description_ja": "GitHub 上の 8 つのオープンソースのウェブアプリケーション開発ツールを紹介します。それらの機能的な利点、適したシナリオ、使用上のポイントを深く分析し、あなたが効率的に理想的なウェブアプリケーションを構築できるように支援します。",
   "slug": "top-8-open-source-tools-for-web-application-development",
   "publishedAt": "2025-05-06T00:35:59.640Z",
   "status": "drafted",
@@ -302,5 +302,5 @@
   "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-06T01:47:45.474Z"
+  "updatedAt": "2025-05-06T02:35:07.957Z"
 }
