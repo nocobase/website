@@ -8,7 +8,7 @@
   "description_ja": "GitHub 上の 8 つのオープンソースのウェブアプリケーション開発ツールを紹介します。それらの機能的な利点、適したシナリオ、使用上のポイントを深く分析し、あなたが効率的に理想的なウェブアプリケーションを構築できるように支援します。",
   "slug": "top-8-open-source-tools-for-web-application-development",
   "publishedAt": "2025-05-06T00:35:59.640Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -318,5 +318,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-06T03:56:41.164Z"
+  "updatedAt": "2025-05-06T04:00:58.658Z"
 }
