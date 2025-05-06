@@ -37,11 +37,24 @@ function readFileOrNull(filePath: string): string | null {
 
 // Read JSON file
 function readJsonFile(filePath: string): any {
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content);
+  try {
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      try {
+        const json = JSON.parse(content);
+        return json;
+      } catch (parseError) {
+        console.error(`Error parsing JSON file ${filePath}:`, parseError);
+        // 打印文件内容的前100个字符，帮助调试
+        console.error(`File content begins with: ${content.slice(0, 100)}...`);
+        return null;
+      }
+    }
+    return null;
+  } catch (error) {
+    console.error(`Error reading file ${filePath}:`, error);
+    return null;
   }
-  return null;
 }
 
 // List all subdirectories in a given directory
@@ -355,6 +368,8 @@ export async function listArticles(options?: {
   sort?: string[];
   appends?: string[];
 }) {
+  console.log('listArticles called with options:', JSON.stringify(options, null, 2));
+  
   const { 
     hideOnBlog, 
     categorySlug, 
@@ -367,22 +382,43 @@ export async function listArticles(options?: {
 
   // Get all articles directories
   const articlesDir = path.join(contentRoot, 'articles');
+  if (!fs.existsSync(articlesDir)) {
+    console.error(`Articles directory does not exist: ${articlesDir}`);
+    return { data: [], meta: { total: 0, count: 0, pageSize, currentPage: page, totalPages: 0, totalPage: 0 } };
+  }
+  
   const articleSlugs = listSubdirectories(articlesDir);
+  console.log(`Found ${articleSlugs.length} article directories`);
   
   // Read all articles metadata
-  const articles = articleSlugs.map(slug => {
-    const metadataPath = path.join(articlesDir, slug, 'metadata.json');
-    const metadata = readJsonFile(metadataPath) || null;
-    
-    // 如果有元数据，尝试读取内容
-    if (metadata) {
-      // 读取不同语言的内容
+  const articles = [];
+  
+  for (const slug of articleSlugs) {
+    try {
+      const metadataPath = path.join(articlesDir, slug, 'metadata.json');
+      if (!fs.existsSync(metadataPath)) {
+        console.log(`Metadata file not found for article: ${slug}`);
+        continue;
+      }
+      
+      const metadata = readJsonFile(metadataPath);
+      if (!metadata) {
+        console.log(`Failed to read metadata for article: ${slug}`);
+        continue;
+      }
+      // Ensure necessary fields exist
+      if (!metadata.title) {
+        console.log(`Article missing title: ${slug}`);
+        continue;
+      }
+      
+      // Read content in different languages
       const contentPath = path.join(articlesDir, slug, 'index.md');
       const contentCnPath = path.join(articlesDir, slug, 'index.cn.md');
       const contentJaPath = path.join(articlesDir, slug, 'index.ja.md');
       const contentRuPath = path.join(articlesDir, slug, 'index.ru.md');
       
-      // 读取内容并添加到元数据中
+      // Read content and add to metadata
       if (fs.existsSync(contentPath)) {
         metadata.content = fs.readFileSync(contentPath, 'utf-8');
       }
@@ -396,7 +432,7 @@ export async function listArticles(options?: {
         metadata.content_ru = fs.readFileSync(contentRuPath, 'utf-8');
       }
       
-      // 如果没有找到对应语言的内容，使用默认内容
+      // Use default content if specific language content is not found
       if (!metadata.content_cn && metadata.content) {
         metadata.content_cn = metadata.content;
       }
@@ -406,21 +442,38 @@ export async function listArticles(options?: {
       if (!metadata.content_ru && metadata.content) {
         metadata.content_ru = metadata.content;
       }
+      
+      // Ensure tags field is always an array
+      if (!metadata.tags) {
+        metadata.tags = [];
+      } else if (!Array.isArray(metadata.tags)) {
+        metadata.tags = [];
+      }
+      
+      // Add to articles list
+      articles.push(metadata);
+    } catch (error) {
+      console.error(`Error processing article ${slug}:`, error);
     }
-    
-    return metadata;
-  }).filter(Boolean);
-
-  // Filter conditions
-  let filteredArticles = articles.filter(article => 
-    article.status === 'published' && 
-    !article.hideOnListPage
-  );
-
-  if (hideOnBlog === false) {
-    filteredArticles = filteredArticles.filter(article => !article.hideOnBlog);
   }
 
+
+  // Filter conditions - Simplify filtering logic
+  let filteredArticles = articles;
+  
+  // Basic filtering: status is published
+  filteredArticles = filteredArticles.filter(article => 
+    article.status === 'published'
+  );
+
+  // Handle hideOnBlog and hideOnListPage
+  if (hideOnBlog === false) {
+    filteredArticles = filteredArticles.filter(article => article.hideOnBlog !== true);
+  }
+  
+  filteredArticles = filteredArticles.filter(article => article.hideOnListPage !== true);
+
+  // Handle tag and category filtering
   if (tagSlug) {
     filteredArticles = filteredArticles.filter(article => 
       article.tags && article.tags.some((tag: any) => tag.slug === tagSlug)
@@ -433,60 +486,94 @@ export async function listArticles(options?: {
     );
   }
 
-  // 处理复杂的过滤条件
-  if (filter) {
-    // 处理 $and 操作符
-    if (filter.$and && Array.isArray(filter.$and)) {
-      // 遍历 $and 数组中的每个条件
-      filter.$and.forEach(condition => {
-        // 处理每个条件
-        for (const key in condition) {
-          if (key === 'tags.title') {
-            // 处理 tags.title 条件
-            const value = condition[key].$eq || condition[key];
-            filteredArticles = filteredArticles.filter(article => 
-              article.tags && article.tags.some((tag: any) => tag.title === value)
-            );
-          } else if (key === 'status') {
-            // 处理 status 条件
-            const value = condition[key].$eq || condition[key];
-            filteredArticles = filteredArticles.filter(article => 
-              article.status === value
-            );
-          } else {
-            // 处理其他简单条件
-            const value = condition[key].$eq || condition[key];
-            filteredArticles = filteredArticles.filter(article => 
-              article[key] === value
-            );
+  // Handle simple filtering conditions
+  for (const key in filter) {
+    if (key !== '$and') {
+      if (typeof filter[key] === 'object' && filter[key] !== null) {
+        // Handle conditions with operators, e.g., { $eq: 'value' }
+        for (const op in filter[key]) {
+          if (op === '$eq') {
+            const value = filter[key][op];
+            filteredArticles = filteredArticles.filter(article => article[key] === value);
           }
         }
-      });
-    } else {
-      // 处理普通对象条件
-      for (const key in filter) {
-        if (key !== '$and') {
-          // 处理每个条件
-          if (typeof filter[key] === 'object' && filter[key] !== null) {
-            // 处理有操作符的条件
-            for (const op in filter[key]) {
-              if (op === '$eq') {
-                // 处理等于操作符
-                filteredArticles = filteredArticles.filter(article => 
-                  article[key] === filter[key][op]
-                );
+      } else {
+        // Handle simple conditions, e.g., status: 'published'
+        const value = filter[key];
+        filteredArticles = filteredArticles.filter(article => article[key] === value);
+      }
+    }
+  }
+
+  // Handle complex filtering conditions
+  if (filter.$and && Array.isArray(filter.$and)) {
+    
+    // Handle simple $and conditions
+    filter.$and.forEach(condition => {
+      for (const key in condition) {
+        // Process nested path like "tags.title"
+        if (key.includes('.')) {
+          const parts = key.split('.');
+          const objectKey = parts[0]; // e.g., "tags"
+          
+          if (objectKey === 'tags') {
+            // Handle tag filtering
+            if (parts[1] === 'title') {
+              const titleCondition = condition[key];
+              if (titleCondition && typeof titleCondition === 'object') {
+                // Handle different operators
+                if (titleCondition.$notIncludes) {
+                  // Filter articles without the forbidden tag
+                  const forbiddenValue = titleCondition.$notIncludes;
+                  filteredArticles = filteredArticles.filter(article => {
+                    // If no tags, it passes the filter
+                    if (!article.tags || !Array.isArray(article.tags) || article.tags.length === 0) {
+                      return true;
+                    }
+                    
+                    // Check that no tag has a title containing the forbidden value
+                    return !article.tags.some((tag: any) => 
+                      tag.title && typeof tag.title === 'string' && 
+                      tag.title.includes(forbiddenValue)
+                    );
+                  });
+                } else if (titleCondition.$eq) {
+                  // Filter articles with the specified tag
+                  const requiredValue = titleCondition.$eq;
+                  filteredArticles = filteredArticles.filter(article => {
+                    if (!article.tags || !Array.isArray(article.tags)) {
+                      return false;
+                    }
+                    
+                    // Check if any tag has the required title
+                    return article.tags.some((tag: any) => 
+                      tag.title && tag.title === requiredValue
+                    );
+                  });
+                }
               }
-              // 这里可以添加更多操作符的处理...
             }
           } else {
-            // 处理没有操作符的简单条件
-            filteredArticles = filteredArticles.filter(article => 
-              article[key] === filter[key]
-            );
+            // Handle other nested paths if needed
+            // This is a placeholder for future extensions
+          }
+        } else if (!key.includes('.')) {
+          if (typeof condition[key] === 'object' && condition[key] !== null) {
+            // Handle conditions with operators, e.g., { $eq: 'value' }
+            for (const op in condition[key]) {
+              if (op === '$eq') {
+                const value = condition[key][op];
+                filteredArticles = filteredArticles.filter(article => article[key] === value);
+              }
+            }
+          } else {
+            // Handle simple conditions, e.g., status: 'published'
+            const value = condition[key];
+            filteredArticles = filteredArticles.filter(article => article[key] === value);
           }
         }
       }
-    }
+    });
   }
 
   // Sorting
@@ -494,6 +581,10 @@ export async function listArticles(options?: {
     for (const sortField of sort) {
       const desc = sortField.startsWith('-');
       const field = desc ? sortField.substring(1) : sortField;
+      
+      if (!a[field] && !b[field]) continue;
+      if (!a[field]) return desc ? -1 : 1;
+      if (!b[field]) return desc ? 1 : -1;
       
       if (a[field] < b[field]) return desc ? 1 : -1;
       if (a[field] > b[field]) return desc ? -1 : 1;
