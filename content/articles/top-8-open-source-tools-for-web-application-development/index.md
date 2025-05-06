@@ -6,7 +6,7 @@ Now, an increasing number of open-source tools are changing the game. They allow
 
 ## How to Evaluate Open-Source Web Development Tools?
 
-When choosing a tool, don't just rely on the number of GitHub stars or the official website's promotion. What truly matters is whether it can **solve practical problems** and **provide a good development experience**.
+When choosing a tool, don't just rely on the official website's promotion. What truly matters is whether it can **solve practical problems** and **provide a good development experience**.
 
 Mainly consider the following aspects:
 
