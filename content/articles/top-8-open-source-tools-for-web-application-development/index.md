@@ -22,11 +22,11 @@ The 8 tools to be introduced next have been selected based on these strict crite
 
 ### 1. **NocoBase** – A Data Model-Driven No-Code Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjM1OGM1MjdiZWFjZTczZDA2OWZkMWI4YTc3NjNhNDVfM3ZybnV3dUgwWEJDdGp5TnU5RmpnTHFGZVJHQzZJaklfVG9rZW46QjFQa2JJYXdPb2FYWUh4SUQzcGNodk15bkplXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![NocoBase](https://static-docs.nocobase.com/nocobase-ah9g07.PNG)
 
 **GitHub Information**
 
-* ⭐️ 15.4k
+* ⭐️ 15.5k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * License: AGPL-3.0
 
@@ -54,11 +54,11 @@ If your project requires extremely complex and highly personalized data logic (s
 
 ### 2. **Appsmith** – A Low-Code Platform for Quickly Building Operation Backends
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTNiZGVlM2ZmNmYzNjhiZTNhYTRmMDllZDdiOTMwNzVfNVI5em1OQ0toYW5CRk5PVVdMRWhneHB3cW1PSVBRRHJfVG9rZW46WTlEeGJUR2xmb2tGUzR4Z0RpR2NaRXl0bmRnXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Appsmith](https://static-docs.nocobase.com/appsmith-ri5zve.PNG)
 
 **GitHub Information**
 
-* ⭐️ 36.8k
+* ⭐️ 36.9k
 * GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 * License: Apache-2.0
 
@@ -86,7 +86,7 @@ Although drag-and-drop development is very fast, when the project scale becomes 
 
 ### 3. **Budibase** – A Platform for Quickly Building Enterprise-Level Applications
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDc5MThhOGMwNzVjNWNiZWQ5YjAwMDU5NTc4OWRjMjlfUUZFeGhkRGwwT0ZVbktPdWdFSGRiZGJvWWpYV2NpZXFfVG9rZW46WUsyc2J1VGl3b2paVnR4RWZTS2MzYk9CbkJiXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Budibase](https://static-docs.nocobase.com/budibase-i8f75x.png)
 
 **GitHub Information**
 
@@ -116,11 +116,11 @@ Budibase's support for particularly complex interface interactions (such as dyna
 
 ### 4. **ToolJet** – An Extensible Front-End Driven Low-Code Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzE1MWZkODc3OWRkOWY3NWYxMzlkYmU1ZTliMTViM2NfTEdMSDd6cE1FREFwYkVXY0dtMWl5ZG1RNURkMTUyb01fVG9rZW46RHEwdmJqNVcybzlwQk14dThYV2NOeXM5bmhnXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![ToolJet](https://static-docs.nocobase.com/tooljet-6x5lsx.png)
 
 **GitHub Information**
 
-* ⭐️ 35.5k
+* ⭐️ 35.6k
 * GitHub: [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 * License: AGPL-3.0
 
@@ -144,15 +144,13 @@ Developers who want to quickly build internal dashboards, operation backends, an
 
 If you want to create a highly personalized UI, such as an interface with rich animations and micro-interactions, ToolJet's standard components may seem a bit limited. You need to combine custom components or fine-tune it yourself.
 
----
-
 ### 5. **Supabase** – An Open-Source Alternative to Firebase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2RiY2ExMDAxNTJhZDI4YTBhYTc4MTFkY2Y0NWQ2ODRfWE55aWV5aEFkN0FSeVF1WkJUTjFqb0dSWmc1bGJ1cHNfVG9rZW46T0QxZmJvOTUxb0ZwTzZ4OGFzN2MxSnJxblNoXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Supabase](https://static-docs.nocobase.com/supabase-mfobjq.png)
 
 **GitHub Information**
 
-* ⭐️ 81.6k
+* ⭐️ 82.2k
 * GitHub: [https://github.com/supabase/supabase](https://github.com/supabase/supabase)
 * License: Apache-2.0
 
@@ -176,11 +174,11 @@ Web developers who hope to quickly build a usable backend and focus on front-end
 
 ### 6. **Refine** – An Application Development Framework Based on React
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODU5YTRhYzE1MGZkN2E2YzhlMWQ0NmY5M2ZmNjM0ODhfWkFKT0FPRXpMYUx2NnZieG8yeFA5dVFXUE5Ec205dmlfVG9rZW46QWJHTGI0b3VLb2J1S2J4TEZ1dmNpTEtIbkxnXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Refine](https://static-docs.nocobase.com/refine-fwdmm8.png)
 
 **GitHub Information**
 
-* ⭐️ 30.7k
+* ⭐️ 30.8k
 * GitHub: [https://github.com/refinedev/refine](https://github.com/refinedev/refine)
 * License: MIT
 
@@ -206,11 +204,11 @@ Professional developers and technical teams who need to build complex backend sy
 
 ### 7. **Wasp** – A Configuration-Based Full-Stack Development Framework
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Yzg5ZmExMWY2YTFmNWQ2MjdmNWMyOGU3ZGIwMzUwYzFfUVNqWFFFMTVVdllXZVJMUmk1QW54TnFmaGx1WGUyY3dfVG9rZW46TndiRGI2YVZRb1B0YVV4ZWJ5QmNGOG9UblRjXzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Wasp](https://static-docs.nocobase.com/wasp-vn2ld8.png)
 
 **GitHub Information**
 
-* ⭐️ 16.6k
+* ⭐️ 16.8k
 * GitHub: [https://github.com/wasp-lang/wasp](https://github.com/wasp-lang/wasp)
 * License: MIT
 
@@ -236,11 +234,11 @@ Currently, Wasp is still in rapid iteration. Although the basic functions are st
 
 ### 8. Directus – An Open-Source Headless CMS
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGM4Zjc4YmI3MjljNDZkZDBjZTQ3YmZkMzM5MDM4MWNfMjk0Wjc2TnR0QkdZUmQ3OU91SlJham5wdW9oNFBQb1dfVG9rZW46SHVMSWJxSndkb3JMZ094VWZtNWNnRmhsblV4XzE3NDY0OTU4NDU6MTc0NjQ5OTQ0NV9WNA)
+![Directus](https://static-docs.nocobase.com/directus-1o7vg8.png)
 
 **GitHub Information**
 
-* ⭐️ 30.1k
+* ⭐️ 30.3k
 * GitHub: [https://github.com/directus/directus](https://github.com/directus/directus)
 * License: GPL-3.0
 
