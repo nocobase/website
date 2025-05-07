@@ -24,7 +24,7 @@ Excel 管理から一歩進み、Classmethod は NocoBase を活用して、明�
 これだけの複雑な管理を、もし今も Excel や Google スプレッドシートで行うとしたら……トラブルが次々に起こるのは目に見えています。実際、これが Classmethod が直面していたリアルな悩みでした：
 
 
-| **Excel・スプレッドシート管理の限界**                   | ** 主な課題**                                                   |
+| **Excel・スプレッドシート管理の限界**                   | ** 主な課題**                                                     |
 | ------------------------------------------------------- | ----------------------------------------------------------------- |
 | ⚠️ ソフトウェアライセンスの管理は Excel 頼り          | ❌ 未使用アカウントにもライセンスが割り当てられたまま、無駄が発生 |
 | ⚠️ 部署ごとにバラバラの Google スプレッドシートで管理 | ❌ 監査のたびに各部署と IT に大きな負担、手間も時間もかかる       |
@@ -108,3 +108,12 @@ NocoBase を活用したことで、人事管理の一元化・自動化はも�
 技術主導の IT サービス企業として、Classmethod はこうした“実践知”をクライアントにも展開し、変化の激しい時代でも柔軟かつコントロールできる業務システム構築を支援しています。
 
 まさに「**技術をもっと，経営の中心に。高い技術力と確かな実績で，事業の質とスピードを高めます。**」――これが同社の目指す姿です。
+
+**関連読み物：**
+
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)
