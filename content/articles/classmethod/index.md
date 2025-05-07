@@ -28,7 +28,7 @@ With this growth, Classmethod started looking for better ways to manage their or
 Now, imagine trying to handle all of this with just Excel or Google Sheets. It’s easy to see how problems would quickly pile up. In fact, these are exactly the pain points Classmethod’s team has faced firsthand:
 
 
-| **Managing with Excel and Google Sheets**                              | ** Key Challenges**                                                                                                    |
+| **Managing with Excel and Google Sheets**                              | ** Key Challenges**                                                                                                      |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | ⚠️ Software license records were kept in Excel                       | ❌ License assignments were often inaccurate—unused accounts still had active licenses                                  |
 | ⚠️ Each department managed its own Google Sheet                      | ❌ Audits became slow and burdensome for both users and IT                                                               |
@@ -112,3 +112,12 @@ With NocoBase, Classmethod has centralized and automated its HR management, whil
 As a tech-driven IT services company, Classmethod is committed to turning practical experience into real value for clients. Now, they’re applying these proven practices to client projects—helping more businesses build flexible, controllable systems for today’s complex environments.
 
 As their website puts it: Make technology the core of your business, and drive higher quality and speed with technical excellence and real results.
+
+**Related reading:**
+
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)
