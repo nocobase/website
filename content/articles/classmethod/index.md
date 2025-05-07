@@ -28,7 +28,7 @@ With this growth, Classmethod started looking for better ways to manage their or
 Now, imagine trying to handle all of this with just Excel or Google Sheets. It’s easy to see how problems would quickly pile up. In fact, these are exactly the pain points Classmethod’s team has faced firsthand:
 
 
-| **Managing with Excel and Google Sheets**                              | ** Key Challenges**                                                                                                      |
+| **Managing with Excel and Google Sheets**                              | Key Challenges                                                                                                           |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | ⚠️ Software license records were kept in Excel                       | ❌ License assignments were often inaccurate—unused accounts still had active licenses                                  |
 | ⚠️ Each department managed its own Google Sheet                      | ❌ Audits became slow and burdensome for both users and IT                                                               |
@@ -46,27 +46,27 @@ When Classmethod decided to move beyond spreadsheets, the team evaluated a range
 
 Here’s what mattered most in their decision:
 
-1. **Flexible, open-source deployment**
+**1. Flexible, open-source deployment**
 
 As a tech-driven company, Classmethod prefers to run critical systems in their own AWS environment to meet security and compliance requirements. NocoBase is fully open-source and deployable anywhere, without SaaS restrictions.
 
-2. **No per-user fees—ideal for “many viewers, few editors”**
+**2. No per-user fees—ideal for “many viewers, few editors”**
 
 While only a small group enters data, many departments need access. With per-user pricing, costs would escalate quickly. NocoBase’s open-source model avoids this issue entirely.
 
-3. **Fine-grained access control**
+**3. Fine-grained access control**
 
 NocoBase supports record- and field-level visibility settings for different users—essential for secure, hierarchical data access in an employee management system.
 
-4. **Separation of UI and data structure for custom interfaces**
+**4. Separation of UI and data structure for custom interfaces**
 
 Different teams need to see different information. With NocoBase, the UI and data model are configured independently, making it easy to create flexible, tailored interfaces.
 
-5. **Built-in workflow engine—no external automation needed**
+**5. Built-in workflow engine—no external automation needed**
 
 Business logic like automatically creating accounts for new hires or revoking temporary permissions can be handled entirely with built-in workflows, no need for third-party automation tools or custom scripts.
 
-6. **Automatic API generation for easy integration**
+**6. Automatic API generation for easy integration**
 
 Every new data collection in NocoBase comes with automatically generated APIs, making it much easier for engineering teams to automate scripts and sync data.
 
