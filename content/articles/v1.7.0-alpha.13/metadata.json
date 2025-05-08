@@ -1,14 +1,14 @@
 {
   "id": 451,
-  "title": "NocoBase v1.7.0-alpha.13",
-  "title_cn": "NocoBase v1.7.0-alpha.13",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.7.0-alpha.13: support variables in secondary confirmation title and content",
+  "title_cn": "NocoBase v1.7.0-alpha.13：支持二次确认中使用变量",
+  "title_ja": "NocoBase v1.7.0-alpha.13：二次確認のタイトルとコンテンツに変数をサポートする",
   "description": "Release Note of v1.7.0-alpha.13",
   "description_cn": "v1.7.0-alpha.13 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.7.0-alpha.13 のリリースノート",
   "slug": "v1.7.0-alpha.13",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-08T06:28:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-08T12:29:46.361Z",
+        "updatedAt": "2025-05-08T12:29:46.361Z",
+        "articles_id": 451,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-08T12:29:24.656Z",
+    "updatedAt": "2025-05-08T12:29:24.656Z",
+    "id": 1190,
+    "title": "develop",
+    "filename": "develop-9dlr2r.png",
+    "extname": ".png",
+    "size": 76801,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-9dlr2r.png",
+    "preview": "https://static-docs.nocobase.com/develop-9dlr2r.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-08T06:28:09.506Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-08T12:29:46.349Z"
 }
