@@ -1,14 +1,14 @@
 {
   "id": 448,
-  "title": "NocoBase v1.6.26",
-  "title_cn": "NocoBase v1.6.26",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.6.26: Iframe block supports configuring the allow attribute",
+  "title_cn": "NocoBase v1.6.26：Iframe 区块支持配置 allow 属性",
+  "title_ja": "NocoBase v1.6.26：iframe ブロックが allow 属性の設定をサポートするようになりました",
   "description": "Release Note of v1.6.26",
   "description_cn": "v1.6.26 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.6.26 のリリースノート",
   "slug": "v1.6.26",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-07T14:26:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-08T01:06:36.563Z",
+        "updatedAt": "2025-05-08T01:06:36.563Z",
+        "articles_id": 448,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-08T00:54:36.962Z",
+    "updatedAt": "2025-05-08T00:54:36.962Z",
+    "id": 1187,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-mqrhyh.png",
+    "extname": ".png",
+    "size": 89762,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-mqrhyh.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-mqrhyh.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-07T14:26:07.388Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-08T01:06:36.554Z"
 }
