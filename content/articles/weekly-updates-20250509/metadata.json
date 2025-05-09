@@ -1,11 +1,11 @@
 {
   "id": 446,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週のアップデート：",
-  "description": "This week’s updates include:",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Template Printing Supports Images and Barcodes",
+  "title_cn": "NocoBase 本周更新汇总：模板打印支持图片和条形码",
+  "title_ja": "NocoBase 今週のアップデート：テンプレート印刷で画像とバーコードがサポートされる",
+  "description": "This week’s updates include: support for dynamic images and barcode rendering in document templates, support variables in secondary confirmation title and content, and more.",
+  "description_cn": "本周更新包括：文档模板支持动态图片和条形码渲染功能，支持二次确认中使用变量等。",
+  "description_ja": "今週の更新では、ドキュメントテンプレートにおける動的画像とバーコードのレンダリングのサポート、二次確認のタイトルとコンテンツにおける変数のサポートなどです。",
   "slug": "weekly-updates-20250509",
   "publishedAt": "2025-05-09T00:00:00.000Z",
   "status": "published",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": true,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-08T15:04:05.412Z"
+  "updatedAt": "2025-05-09T01:06:37.081Z"
 }
