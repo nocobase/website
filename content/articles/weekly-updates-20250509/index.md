@@ -189,7 +189,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - multiple error messages displayed when validation rule is violated in form fields ([#6805](https://github.com/nocobase/nocobase/pull/6805)) by @katherinehhh
   - Fix the issue where one-to-many field sub-fields cannot be selected as filtering options in filter forms ([#6809](https://github.com/nocobase/nocobase/pull/6809)) by @zhangzhonghe
   - Pass other props to Variable.Input component. ([#6670](https://github.com/nocobase/nocobase/pull/6670)) by @sheldon66
-  - 子表格中子表单（弹窗）联动规则缺少字段属性设置 ([#6800](https://github.com/nocobase/nocobase/pull/6800)) by @katherinehhh
   - association field not submitting data when displaying field from related collection ([#6798](https://github.com/nocobase/nocobase/pull/6798)) by @katherinehhh
   - In the filter form, switching the field operator and then refreshing the page causes an error ([#6781](https://github.com/nocobase/nocobase/pull/6781)) by @zhangzhonghe
   - In the collapse block, clicking the clear button in the relationship field search box should not delete the data range ([#6782](https://github.com/nocobase/nocobase/pull/6782)) by @zhangzhonghe
