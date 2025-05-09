@@ -109,7 +109,7 @@
     "createdById": 3,
     "updatedById": 3
   },
-  "hideOnListPage": true,
+  "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-09T01:06:37.081Z"
+  "updatedAt": "2025-05-09T02:47:13.207Z"
 }
