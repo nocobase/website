@@ -79,3 +79,13 @@ NocoBaseがチームの注意を引いた三つのハイライトは以下の通
 > —— 孫小峰、**香城レコードの責任者**
 
 ツールのアップグレードは、企業が**革新し、業界のゲームチェンジャーとなる**のを助け、組織の変革を動機づけ、開発に無限の推進力を注入します。香城レコードにとって、NocoBaseは生産ツールであり、企業の成長を促進する重要な力です。
+
+**関連読み物：**
+
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)
