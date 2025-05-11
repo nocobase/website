@@ -84,3 +84,13 @@ Sambruk 首先评估了使用传统技术从零开始开发该解决方案的成
 NocoBase 的易用性和灵活性得到了参与市政部门和学校的高度认可。他们特别赞赏平台在数据处理和界面生成上的直观性，使得用户能够快速上手，并高效地进行应用开发。部分学校在试用阶段中已经充分体验到了 NocoBase 所带来的便利，尤其是在数据管理和决策支持方面的提升。
 
 展望未来，项目预计将在未来几个月内完成全面部署，并在更大范围内推广使用。随着项目的深入推进，Sambruk 团队将继续优化和扩展 NocoBase 的功能，确保它能够更好地满足各参与方的需求，并为瑞典更多的市政部门和教育机构带来实际的效益。
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)
