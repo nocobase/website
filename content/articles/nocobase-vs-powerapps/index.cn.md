@@ -61,7 +61,7 @@ NocoBase 的 UI 配置更加**面向系统级场景**，例如表单录入、数
 
 相比之下，Power Apps（Canvas Apps 模式）走的是完全“自由化”路线：每一个按钮、输入框、图像都可以像在 PowerPoint 中一样任意拖拽、排版。用户可以自由设计各种布局、样式，甚至做出近似 Web 页面或 App 的外观，组件化的设计也便于快速搭建 UI。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzJhNjZjN2Q2NThhMTg4NGY4ODc1MTEyZDEwMzg3ZjRfbkRDaGN3cHRIS2xLNGxpWWJEeVZGRXNyRk5MSmMxQVJfVG9rZW46UTBXdWJheW5Xb3Z1c0Z4QXFWbmNSZWJOblVlXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Complete Freedom with Drag-and-Drop](https://static-docs.nocobase.com/3-vfbe1e.png)
 
 然而这种自由的代价是**开发体验的复杂性**。Power Apps 的编辑模式与预览模式完全分离，缺乏即时反馈；所有元素高度依赖手动对齐、缩放和属性设置，稍复杂的页面调整起来就像“在 PPT 中写业务系统”。
 
@@ -79,9 +79,9 @@ Power Apps 则是一款“无限制的 UI 画板”，为自由而设计，但�
 
 NocoBase 在数据连接方面采取的是一种**插件驱动+API开放**的架构设计。它支持主流数据库（如 MySQL、PostgreSQL）、外部数据库源，以及任意符合标准的第三方 API 接入。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGIyODUyYmVjMDM2NzIxOGI0YzdmNWQzMzMxZjMwYTFfR3FKZUFPbFN0aGVqSTk4UHNZQWFPTHlIR0JJZW9NNFhfVG9rZW46SDRBM2Ixa1Yyb0dqTnh4VXc2cGM2TTVxbkhnXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Plugin-Driven Architecture](https://static-docs.nocobase.com/4-zgeyzi.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU5NGViMTNhYTM5ZjZlZmI5YWNhZTgwNmU3YTY5NGVfVjdYRzY3bG1KR3lFZmxGRFhuZlJIczJWdm83b3VPQlBfVG9rZW46WXFCZGI3dlVXb3VRMlF4T2ZaQmNlYXYzbmRZXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Plugin-Driven Architecture](https://static-docs.nocobase.com/5-b4dnoh.png)
 
 对于拥有现成数据库系统或希望与外部系统进行双向集成的企业来说，NocoBase 提供了灵活且透明的对接方式。同时，由于其基于插件机制，开发者可以根据具体业务需要扩展连接方式和数据适配逻辑，这对有技术能力的团队尤为友好。需要注意的是，部分外部数据源插件是商业插件，需要付费使用。
 
@@ -91,9 +91,9 @@ NocoBase 在数据连接方面采取的是一种**插件驱动+API开放**的架
 
 Power Apps 则以其庞大的连接器生态著称，几乎可以无缝连接微软体系中的各种产品（如 Excel、SharePoint、Dataverse、Teams 等），同时也支持超过 500 个主流第三方系统。这种广度和深度，使得 Power Apps 在“集成现成系统”的场景中具有极高的效率，尤其适合企业 IT 体系本身就构建在微软系列产品之上的组织。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGYxZTcxNTQ0ZTE0YzQwZDYzZTVmNDQxOGFhMjdlZDRfZHU5Z1FseUFmbXlSaDNYWFNiUEpjT3BMY1pSM1VUMWRfVG9rZW46R0dJc2JFdzgxbzdGUG54amVGQ2NVVjhJbjg3XzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Microsoft Ecosystem Integration Capabilities](https://static-docs.nocobase.com/6-639h5h.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2YxNDRkMmYyYjNiM2ExM2ZhNTRhY2NiZmE1NmMyNzFfQWRXRmRUSnNhRjBjaXFCdHBvdURTeVNZd1BUNnA1a0lfVG9rZW46VURETWJVc2Jhb2RmTkN4SEVRUGNzMmtkbkRlXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Microsoft Ecosystem Integration Capabilities](https://static-docs.nocobase.com/7-n67v3s.png)
 
 当然，这种便利也带来了一定的成本隐性：多数高级连接器属于 Premium 范畴，使用时需要额外许可费用；同时，最佳集成体验仍然偏向微软生态本身，若要与非微软系统打通，复杂度和性价比会相应下降。
 
@@ -111,7 +111,7 @@ Power Apps 则提供了“一站式”的连接便利性，适合追求快速集
 
 NocoBase 作为一个开源平台，其核心功能对所有用户完全免费，用户可以根据自身需求选择自托管部署，不受限于账户数、应用数量或数据容量。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmQyYjlkZWVhZjgwZDUxOWJhZDRjZmUwNGU3MTM2N2ZfYXRLdENqMFp1MHlaVk5RcTU4eW5vSEY1ZllkSnNhUDFfVG9rZW46U01YZmJ6eHNCb1l0UDV4Z3JlbGNpZVlKbm1kXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Open-Source and Controllable](https://static-docs.nocobase.com/8-evunfo.png)
 
 在[商业场景下使用](https://www.nocobase.com/en/commercial)，其商业插件与支持服务也通常采取一次性付费或轻量订阅的方式，避免了随着使用规模扩大而指数增长的费用压力。对于希望在内部长期构建多个系统的企业来说，这种**非用户数绑定的许可方式**往往带来更可控的预算和更具性价比的投入。
 
@@ -121,7 +121,7 @@ NocoBase 作为一个开源平台，其核心功能对所有用户完全免费�
 
 Power Apps 在定价模式上则采用了典型的 SaaS 路线。对已采购 Microsoft 365 E3/E5 等套餐的企业用户来说，平台中部分功能可直接使用，初期启动成本看似较低，尤其适合简单场景快速试用。但一旦系统扩展，涉及到 Premium 连接器、AI Builder、外部门户（Portals）或大量数据存储（Dataverse）时，Power Apps 的费用结构会迅速变得复杂而高昂。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWZjMGJhNzIxYWY0ZmE5ZTUyYmIyMmUxNTAzNGNmNDFfZWJFOUJ2YWxrSlJBelVZdHZaSDA3T1ZCaEVpV0dCQm1fVG9rZW46TTc4dWJISFFpb1E3a2V4cERBdmNyQ0NSbmJnXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![License-Bound](https://static-docs.nocobase.com/9-fktgt9.png)
 
 最常见的情况是：**随着用户数和功能复杂度的上升，许可成本成倍增长**，成为许多企业选择放弃 Power Apps 的主要原因之一。
 
@@ -137,9 +137,9 @@ Power Apps 则更偏向“快速上手、按量付费”的商业模式，适用
 
 ### **完全掌控**
 
-NocoBase 的最大特点之一，是其**[完全开源的架构](https://github.com/nocobase/nocobase)**。无论是平台的核心功能，还是插件机制，开发者都可以自由查看、修改、甚至二次分发代码。这种开放性使得企业可以根据自身业务逻辑进行深度定制，真正做到“工具为我所用”，而非被平台限制。
+NocoBase 的最大特点之一，是其[完全开源的架构](https://github.com/nocobase/nocobase)。无论是平台的核心功能，还是插件机制，开发者都可以自由查看、修改、甚至二次分发代码。这种开放性使得企业可以根据自身业务逻辑进行深度定制，真正做到“工具为我所用”，而非被平台限制。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmZhODBkNTllYzU0NTQyYmM5ZmFlMmJjMzQwOTg0NjJfbk85SzNSaDMyV3lsQVlzUWhHWk14VzNtWHVmSlNBUTVfVG9rZW46R2JadmJLMEVkb1ZMUWh4ZEM0MGNLdm1GbkZoXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Full Control](https://static-docs.nocobase.com/10-twynes.png)
 
 NocoBase 支持**完全自托管部署**：你可以将应用和数据部署在本地服务器、私有云、甚至离线隔离环境中，实现完整的数据主权，避免供应商锁定。这对于金融、医疗、政务、制造等行业来说，是构建“可持续、安全、合规”系统的重要保障。
 
@@ -149,7 +149,7 @@ NocoBase 支持**完全自托管部署**：你可以将应用和数据部署在�
 
 Power Apps 是典型的**闭源云服务平台**，由微软全面托管和维护。用户无需关心底层架构或运维细节，只需通过浏览器即可完成应用开发、发布与管理。平台会自动处理系统升级、安全维护、资源扩容等工作，**极大降低了使用门槛**，对于没有专职技术团队或希望专注业务本身的组织来说，**是一种省心省力的选择**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTcyOTQzNTU4MGRkMTc1MTYwZGUyYjZjNjQ1ODlkZmFfTmpIYkw2aUp4SlFFa3A1bWpTN3k1R1NrVDZwOEo5UEtfVG9rZW46VEhRU2JyUGFvb1hIQ3V4NWhVM2M5STJVbjVmXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Cloud-Hosted](https://static-docs.nocobase.com/11-vejp46.png)
 
 此外，Power Apps 能够无缝集成微软生态中的多个核心服务（如 Azure、SharePoint、Teams、Dataverse 等），在统一身份认证、权限控制、数据共享等方面提供了**天然的一体化优势**，适合已经在使用 Microsoft 365 的企业快速搭建业务系统。
 
@@ -165,11 +165,11 @@ Power Apps 则更适合已经在使用 Microsoft 365 的企业，并且希望快
 
 随着业务需求的不断演进，系统的可扩展性决定了它能走多远。这一维度尤其关乎开发者和技术团队的实际工作效率与控制力。
 
-### **插件化开发架构 **
+### **插件化开发架构**
 
 NocoBase 采用的是**微内核 + 插件架构**，系统中的一切功能——从字段类型、权限系统到工作流引擎，都是通过插件实现的。这意味着开发者可以像搭积木一样，**按需添加、替换或重构任何模块**。开发者可通过编写插件（Node.js, React, TypeScript）进行深度功能扩展和后端定制。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTcyYmE2NzVlYmQ1YmJlODUyYTA5MTgwYTY1MGMzZTFfT2lsVVpUcEM1Wk9qeU5CbkMxSjY0ejdEUFJtNFhEaHRfVG9rZW46UzQ5V2I4ZEJpb1FWcGx4SVY1NGNwNk9YbndkXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Plugin-Based Development Architecture](https://static-docs.nocobase.com/12-l2juct.png)
 
 特别值得一提的是，NocoBase 以**数据模型驱动**为核心理念，使得系统业务逻辑抽象更具一致性与可维护性。对于熟悉领域建模和 DDD（领域驱动设计）理念的团队来说，这种设计更贴近企业实际业务的表达方式。
 
@@ -179,7 +179,7 @@ NocoBase 采用的是**微内核 + 插件架构**，系统中的一切功能—�
 
 Power Apps 则采用**组合式扩展思路**：前端通过 Power Apps Component Framework（PCF）创建自定义 UI 组件，后端可以借助 Azure Functions、Power Automate 等服务来实现复杂逻辑处理。这种方式对熟悉微软云服务的开发者来说比较友好，也有助于在已有 IT 资源的基础上快速搭建混合架构。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzVhODc5ZDI3YTY3YjNjZWQ2MzBiZjcyYTk1NTBkYTZfOGlzRGdHRU1EY3gwNjQ0NVJxZVZzaFpnVElOUDIwbjZfVG9rZW46SW1id2JRSmVrbzJMNlV4WVZ1SWNmSFZIbk9mXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Cloud Service Compositional Extension](https://static-docs.nocobase.com/13-solj0n.png)
 
 但其局限也较明显。由于 Power Apps 是闭源平台，**用户无法直接修改系统行为或核心逻辑**，所有扩展都必须通过既定接口进行。而在 Canvas Apps 中，JavaScript 的使用非常受限，开发者只能在受控范围内“绕道实现”复杂逻辑，开发效率与灵活度难以与开放式平台相比。
 
@@ -221,7 +221,7 @@ NocoBase 的 AI 员工更像是**将 AI 融入系统使用体验的轻量实践�
 
 NocoBase 的性能特性源于其**自托管部署架构**。在本地或私有云部署环境中，用户可以根据自身业务规模和并发需求灵活配置服务器资源，合理调优数据库和缓存机制，实现可观的性能表现。其后端基于 Node.js 构建，**在处理 I/O 密集型任务（如 API 调用、流程并发、实时读写）时表现优异**，适合中到大型业务场景。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODAzOWY1NTBlZDY4ZDUyOGFmNGRiMjYwMTBmNjkzOWJfWG80SFBhM0F6R0k5UUlsWXUxbzRvV2VRN1RCU1kyOUxfVG9rZW46Vk5CMGJpdzdyb1FKMnF4VXhHSGNjZ2ZBbkdiXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Flexible Optimization](https://static-docs.nocobase.com/14-7v3k83.png)
 
 当然，这种“性能自主可控”也意味着需要具备一定的基础设施经验。若服务器配置不合理、缺乏缓存优化或数据库索引设计不当，在面对大规模数据和并发访问时，系统也可能出现瓶颈。因此，NocoBase 更适合具备一定技术团队的企业进行部署和运维。
 
@@ -229,7 +229,7 @@ NocoBase 的性能特性源于其**自托管部署架构**。在本地或私有�
 
 Power Apps 作为微软官方推出的低代码平台，**依托 Azure 云服务提供了稳定的性能保障与自动扩展能力**。在微软的全球云基础设施支持下，平台能够根据实际负载自动调配资源，确保大多数企业用户在应用开发和运行过程中获得一致、可靠的性能体验。对于不希望在服务器配置与性能调优上投入精力的团队而言，这种托管式架构带来了显著的便利。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWI0YmQwMTZmODRlNDg3OGU4ZWNkNTE3YmIxZjliMDdfdkpWR2lRTUw1UzlUWTFCbTNHYTFMY21zbHIxZXRVbjdfVG9rZW46WWdXQ2I1SU9hb3RlMGR4SEJINmNHc0VUbnl4XzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Platform Guarantee](https://static-docs.nocobase.com/15-d05ap7.png)
 
 不过，由于 Power Apps 的主要服务器部署在海外，**中国大陆用户在访问平台时可能会受到网络连接质量的影响**，在编辑器加载、页面切换等操作上出现一定的延迟现象。对于对实时性要求较高的团队或项目，建议提前进行网络测试或结合本地化部署策略加以优化。
 
@@ -247,7 +247,7 @@ Power Apps 依托 Azure 云服务提供了稳定的性能保障与自动扩展�
 
 NocoBase 的操作体验主要基于**可视化+数据模型驱动**。对于非技术用户来说，大部分操作可以通过点击添加区块、配置字段和权限等方式完成，整体流程清晰、结构化，适合在已有数据逻辑或业务流程基础上进行搭建。特别是数据建模能力，使得平台在多表结构和复杂关系设计上具备天然优势。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2Q0Yzc1ODRmNDQ5MTAyMWM1ZGQ0MDQ3NmIxZDhmMjRfanUzZlJrUzZ1SjdMOXJkOW1ZUHJiQzFzVTZMN3p0eW9fVG9rZW46Q095Q2JLMzdBb2VoZDh4blN1NWNQOUlYbjFkXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Developer-Friendly](https://static-docs.nocobase.com/16-1dvlxq.png)
 
 但与此同时，NocoBase 对用户的数据理解能力提出了更高要求。**对于缺乏数据库背景的业务用户来说**，理解实体关系、字段类型、主外键等基本建模概念仍有一定门槛。而一旦涉及插件开发或业务逻辑扩展，则需要具备前后端开发能力，适合有一定技术储备的团队使用。
 
@@ -255,7 +255,7 @@ NocoBase 的操作体验主要基于**可视化+数据模型驱动**。对于非
 
 Power Apps 则更倾向于用“熟悉感”降低上手门槛。其界面设计类似 Office 套件，将编辑器划分为逻辑区、样式区、属性栏等，对于熟悉 Excel 和 PowerPoint 的用户而言，**能迅速建立操作认知**。在构建简单表单或基础页面时，无需理解数据建模或权限逻辑，拖拽即可完成页面搭建，上手速度快。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDUwYzYxYjk3MmQzMDFkYTQ4NTVmODkzM2M4MjkzODVfcEdHdVJDdUxGMlZ3QjBPcmh4SWRDR1I4MmpCdDRkME1fVG9rZW46WElYS2JxVEZUb2tWY0x4ZVdJY2NxMHNrbm5jXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Similar to Office](https://static-docs.nocobase.com/17-06x85a.png)
 
 但真正的挑战来自深入使用：Power Apps 使用自有语言 Power Fx 编写页面逻辑和事件处理，这套语言虽然受 Excel 函数启发，但要写出可维护的复杂表达式，仍然需要一定的编程思维。而且，其 UI 搭建过程较为繁琐，**过度依赖手动拖拽和属性微调**，一旦页面结构复杂，布局效率显著下降。
 
@@ -273,7 +273,7 @@ Power Apps 的优势则体现在**入门体验**，对非技术用户更友好�
 
 NocoBase 内置了一套**可视化工作流引擎**，支持事件触发、条件判断、定时任务、子流程调用等常见流程逻辑，用户可以在界面中拖拽并配置节点，快速完成业务流程的编排。与数据模型、权限系统深度集成后，NocoBase 能够支持复杂的内部流程控制，如分级审批、动态权限变更、流程记录追踪等，尤其适用于中后台类业务系统。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWI3NjllNTdkZDQzZjg5MDllODdiZDJhZDBkZGQyODNfSkZQUTdHeGpYeEg2cnA5VHhpMk9QNklSYjVnZFF6OXVfVG9rZW46UFJnMWJ3b2pab0dUTU54NUtvYWM4amNvblNkXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Built-in Workflow Engine](https://static-docs.nocobase.com/18-zluqw5.png)
 
 其优势在于：**无需依赖外部平台即可完成流程设计和自动化逻辑嵌入**，在自托管环境下也能高效运行。但目前该工作流引擎仍处于持续演进阶段，虽然已经可以满足大多数通用流程需求，但在第三方服务连接器支持、流程市场、模板生态等方面，仍不及成熟的自动化平台丰富。
 
@@ -281,7 +281,7 @@ NocoBase 内置了一套**可视化工作流引擎**，支持事件触发、条�
 
 Power Apps 本身并不内置工作流功能，而是与微软的 **Power Automate** 深度绑定，实现工作流能力的延展。Power Automate 可说是一个“自动化平台级产品”，不仅具备强大的流程编排功能，还内置了**数百个连接器**，几乎可以与所有 Microsoft 产品（如 Outlook、SharePoint、Teams、Dataverse）以及主流第三方服务（如 Slack、Trello、Dropbox）进行集成。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGQ3ZTU2NGM2NWNhYjIyY2U5MjIwMjYxNWY0YjJhOTVfWXNoOExGU0ZDbmZLWkt6bm15ZnNXUkV5UkVoMUdRS2FfVG9rZW46UVNFWmJER3Q3b25NZER4STN6M2NqSk14bktiXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Ecosystem-Level Automation Platform](https://static-docs.nocobase.com/19-3d06pk.png)
 
 它支持各种复杂场景的自动化操作，包括跨系统数据同步、流程审批、消息通知、AI 自动识别等，是 Power Apps 能够快速构建实用业务系统的重要支撑。其劣势在于：**更强的功能通常需要额外购买 Premium 流程许可**，尤其在跨系统、多条件控制、AI 调用等场景下，成本可能快速上升。
 
@@ -299,7 +299,7 @@ Power Apps 借助 Power Automate 实现的“生态级自动化能力”更为�
 
 💡 可以前往 [NocoBase 安全指南](https://docs-cn.nocobase.com/handbook/security) 进行深入了解。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTc2NWIzNzhmY2EyY2NhM2QwNTYxODc1YzhjZjVlZDFfdUo2ZVBTc2F0ZFk5NmFtUzBWZnlaeWNqdlFhalFjcjRfVG9rZW46RU9qTGJ6a2hnb1k0WDB4bzVmU2M5REpyblhmXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Fully Controlled Data Security](https://static-docs.nocobase.com/20-t68hl0.png)
 
 NocoBase 提供了基于角色的访问控制（RBAC）机制，支持字段级、记录级权限配置，能够满足大多数复杂业务场景下的权限管理需求。例如，不同岗位只能查看部分字段、不同审批阶段拥有不同操作权限等，均可通过图形化界面灵活配置。
 
@@ -311,7 +311,7 @@ NocoBase 提供了基于角色的访问控制（RBAC）机制，支持字段级�
 
 Power Apps 的安全体系则构建在微软庞大的云安全架构之上。它依托 **Azure Active Directory** 提供用户身份验证、单点登录（SSO）与权限管理，并集成 **DLP（数据丢失防护）策略**、**环境隔离机制**等企业级治理工具，能够满足大型组织对数据隔离、访问审计和法规合规（如 GDPR、ISO 27001 等）的多样要求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjc0ZDUzOGE2NzEyZDc1NGFhZGE4ZmEyZTA1Mjg5ZjRfM2J2dGpwYk5EM0hNN0VNelFlQXIxOVJzaERvQkdad2ZfVG9rZW46TjBjaWJPSUJwb0xvYjd4OVRrOGNNN2pabnZ3XzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Enterprise-Grade Compliance System](https://static-docs.nocobase.com/21-054g5v.png)
 
 不过，这些功能虽然强大，却并非“开箱即用”。企业要真正发挥其治理能力，往往需要依赖专业的 IT 团队进行详细配置与策略设定，**否则容易因规则繁复或权限重叠导致管理混乱**，甚至产生误操作或安全隐患。
 
@@ -329,9 +329,9 @@ NocoBase 提供了高度可控的权限与安全机制，适合追求自主管�
 
 在 NocoBase 中，用户可以创建多个独立的应用实例，每个应用都对应数据库中的独立 schema（或库）。**这种设计带来了强隔离性**：不同应用之间互不影响，权限独立，部署和定制也可以按团队或项目单独管理。对于多业务线、多租户的场景，NocoBase 提供了很好的“并行式扩展”基础。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTU3NTUzMmU2MjE2NzFjM2Y0YThmOTIxYTdjYzJiODNfdkducm1YWkVwQnRISFQ0a2tId0kyVlZQWGZVZnp2MzhfVG9rZW46Qmx6SmJseWlibzhZNVd4UXo0bmN3d2hEbjVQXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Independent Isolation](https://static-docs.nocobase.com/22-k8ovgf.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGVkMjExYjc0YzY0MTNlNTg5MDJmYzg3NTM0YTM1MzJfUkNaUkpKWHA2bHFtanJ6emxXMGhaOTNJbFhSODdRT2tfVG9rZW46RTk2bmJ1VUtnb1pEZlR4S2pMWmNmSGppbnc4XzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Independent Isolation](https://static-docs.nocobase.com/23-totcg9.png)
 
 但当前版本中，多应用之间的数据仍是隔离状态，尚未提供跨应用的数据打通或统一视图能力。这意味着如果多个系统之间需要共享客户信息、审批流转等内容，仍需依赖接口调用、数据同步或第三方中间件来实现联动，略增加了系统间协同的开发工作量。
 
@@ -339,7 +339,7 @@ NocoBase 提供了高度可控的权限与安全机制，适合追求自主管�
 
 Power Apps 则强调平台内的**统一性与集中管理**。所有应用可以基于同一个 Dataverse（微软的数据平台）进行数据建模与访问，多个 App 之间可共享实体、视图和业务规则。对于需要在统一身份体系下构建多个部门协同系统的组织，这种**共享数据架构**可以有效降低重复建模、数据同步的成本。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjdhYmU5ZTRkY2QyMTM5ODUwOTdiOTFkZTAyNzAwNmVfNTd3akx3MWlyamZvMVBXMDFia3FkVU8yTTZNWEl2cXZfVG9rZW46WnF6Y2JhUWVmb1JZa3V4OUt2Z2NFSEhqblJlXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Centralized Sharing](https://static-docs.nocobase.com/24-4udvhp.png)
 
 当然，集中共享也意味着系统结构更为复杂，数据权限、业务规则之间可能相互影响，若缺乏清晰的治理机制，也可能带来系统间耦合、权限冲突等管理风险。
 
