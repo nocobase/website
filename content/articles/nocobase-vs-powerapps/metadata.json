@@ -291,6 +291,6 @@
     "updatedById": 3
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-13T12:56:09.972Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-13T13:15:34.771Z"
 }
