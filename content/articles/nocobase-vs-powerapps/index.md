@@ -26,18 +26,20 @@ Feel free to read our other product comparison articles:
 
 Although NocoBase and Power Apps are both positioned as low-code/no-code development platforms, they have significant differences in interface style, usage methods, and even product philosophy.
 
+![Power Apps vs NocoBase](https://static-docs.nocobase.com/20250513-201119%20(1)-gc0c6o.png)
+
 We will compare them across the following 10 key dimensions:
 
-1. UI/UX Development Experience: Which is more intuitive for building interfaces? Which offers more freedom?
-2. Data Connectivity & Integration: How do they connect to existing enterprise systems?
-3. Cost & Licensing Model: What are the differences in initial investment and long-term costs?
-4. Control & Deployment: Can you fully control the code and deployment? Can you run the system locally or in a private cloud?
-5. Scalability: As requirements become more complex, which platform is easier to extend and adjust?
-6. Performance: From daily operations to high-concurrency scenarios, which runs more stably and faster?
-7. Learning Curve: For developers, product managers, and business users, which platform is easier to master and collaborate on?
-8. Workflow Automation: Can business processes be modeled graphically? Can they integrate with notifications, approvals, and data synchronization?
-9. Security: From permission management to data compliance, can they meet enterprise-level security requirements?
-10. Multi-Application Support: When you need more than one application, what are the platforms' strategies and limitations for managing multiple systems?
+1. **UI/UX Development Experience**: Which is more intuitive for building interfaces? Which offers more freedom?
+2. **Data Connectivity & Integration**: How do they connect to existing enterprise systems?
+3. **Cost & Licensing Model**: What are the differences in initial investment and long-term costs?
+4. **Control & Deployment**: Can you fully control the code and deployment? Can you run the system locally or in a private cloud?
+5. **Scalability**: As requirements become more complex, which platform is easier to extend and adjust?
+6. **Performance**: From daily operations to high-concurrency scenarios, which runs more stably and faster?
+7. **Learning Curve**: For developers, product managers, and business users, which platform is easier to master and collaborate on?
+8. **Workflow Automation**: Can business processes be modeled graphically? Can they integrate with notifications, approvals, and data synchronization?
+9. **Security**: From permission management to data compliance, can they meet enterprise-level security requirements?
+10. **Multi-Application Support**: When you need more than one application, what are the platforms' strategies and limitations for managing multiple systems?
 
 Let's dive into the detailed comparison of each section.
 
@@ -198,7 +200,7 @@ As a low-code platform officially launched by Microsoft, Power Apps relies on Az
 
 ![Platform Guarantee](https://static-docs.nocobase.com/15-d05ap7.png)
 
-However, since Power Apps' main servers are deployed overseas, users in mainland China may be affected by network connection quality when accessing the platform, potentially experiencing some delays in editor loading, page switching, and other operations. For teams or projects with high real-time requirements, it is recommended to conduct network tests in advance or optimize with localized deployment strategies.
+For teams or projects with high real-time requirements, it is recommended to conduct network tests in advance or optimize with localized deployment strategies.
 
 ### Comparison Summary
 
@@ -263,9 +265,9 @@ In enterprise-level system development, security and governance are never "optio
 
 ### Fully Controlled Data Security
 
-💡 You can visit the NocoBase Security Guide for an in-depth understanding.
+💡 You can visit the [NocoBase Security Guide](https://docs.nocobase.com/handbook/security) for an in-depth understanding.
 
-![Fully Controlled Data Security](https://static-docs.nocobase.com/20-t68hl0.png)
+![Fully Controlled Data Security](https://static-docs.nocobase.com/20250514-133345-fgmlan.jpg)
 
 NocoBase provides a Role-Based Access Control (RBAC) mechanism, supporting field-level and record-level permission configurations, which can meet the permission management needs of most complex business scenarios. For example, different positions can only view partial fields, and different approval stages have different operational permissions, all of which can be flexibly configured through a graphical interface.
 
