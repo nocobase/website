@@ -26,7 +26,7 @@ Feel free to read our other product comparison articles:
 
 Although NocoBase and Power Apps are both positioned as low-code/no-code development platforms, they have significant differences in interface style, usage methods, and even product philosophy.
 
-We will compare them across the following 11 key dimensions:
+We will compare them across the following 10 key dimensions:
 
 1. UI/UX Development Experience: Which is more intuitive for building interfaces? Which offers more freedom?
 2. Data Connectivity & Integration: How do they connect to existing enterprise systems?
@@ -325,3 +325,12 @@ If you are more concerned about platform freedom, scalability, and data sovereig
 
 NocoBase is more suitable for enterprises or development teams with technical capabilities who pursue long-term controllability, autonomy, and scalability.
 Power Apps is more suitable for teams that already have a Microsoft 365 foundation and want to go live quickly and integrate with the Microsoft ecosystem.
+
+**Related reading:**
+
+* [AppSheet Alternative: Build a Many-to-Many Task System No-Code](https://www.nocobase.com/en/blog/appsheet-alternative)
+* [NocoBase vs OutSystems: Open-Source or Enterprise Low-Code? ](https://www.nocobase.com/en/blog/nocobase-vs-outsystems)
+* [NocoBase vs Salesforce: who is your ideal CRM? ](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)
+* [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
+* [Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
+* [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
