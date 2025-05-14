@@ -30,6 +30,8 @@
 
 虽然 NocoBase 与 Power Apps 定位同为低代码/无代码开发平台，但二者在界面风格、使用方式甚至产品哲学上都有明显差异。
 
+![Power Apps vs NocoBase](https://static-docs.nocobase.com/20250513-201119%20(1)-gc0c6o.png)
+
 我们将从以下 10 个关键维度展开对比：
 
 1. **UI/UX 开发体验**：在构建界面时，谁更直观？谁更自由？
