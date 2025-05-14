@@ -99,7 +99,7 @@ Of course, this convenience also brings certain hidden costs: most advanced conn
 NocoBase provides a controllable, deeply customizable, and open integration method, suitable for teams wishing to maintain long-term control over system connection logic.
 Power Apps offers "one-stop" connection convenience, suitable for enterprises pursuing rapid integration and relying on the Microsoft ecosystem.
 
-### Cost & Licensing Model
+## Cost & Licensing Model
 
 When evaluating a low-code/no-code platform, the initial trial cost might be low, but the long-term total cost of ownership (TCO) is often the key factor influencing enterprise decisions.
 
@@ -121,7 +121,7 @@ Power Apps, on the other hand, adopts a typical SaaS route in its pricing model.
 
 The most common situation is: as the number of users and functional complexity increase, licensing costs multiply, becoming one of the main reasons many enterprises choose to abandon Power Apps.
 
-## Comparison Summary
+### Comparison Summary
 
 NocoBase's open-source strategy is more suitable for enterprises and technical teams hoping to build a long-term, controllable cost architecture.
 Power Apps leans more towards a "quick start, pay-as-you-go" commercial model, suitable for organizations with sufficient budgets and deep reliance on the Microsoft ecosystem.
