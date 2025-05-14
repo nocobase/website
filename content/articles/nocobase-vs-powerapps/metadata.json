@@ -8,7 +8,7 @@
   "description_ja": "企業向けのローコードプラットフォームを選ぶには？Power Apps と NocoBase の包括的な比較！コア機能、コスト構造、拡張性を分析し、企業の選択を支援します。",
   "slug": "nocobase-vs-powerapps",
   "publishedAt": "2025-05-13T12:13:09.224Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -292,5 +292,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-14T05:39:23.425Z"
+  "updatedAt": "2025-05-14T06:25:07.336Z"
 }
