@@ -30,7 +30,7 @@
 
 虽然 NocoBase 与 Power Apps 定位同为低代码/无代码开发平台，但二者在界面风格、使用方式甚至产品哲学上都有明显差异。
 
-我们将从以下 11 个关键维度展开对比：
+我们将从以下 10 个关键维度展开对比：
 
 1. **UI/UX 开发体验**：在构建界面时，谁更直观？谁更自由？
 2. **数据连接与集成**：如何接入企业现有系统？
@@ -51,7 +51,7 @@
 
 NocoBase 的 UI 配置更加**面向系统级场景**，例如表单录入、数据展示、业务审批等模块型页面，整体由数据模型驱动，逻辑清晰，操作路径明确。对于习惯数据库结构的用户来说，上手并不复杂。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGU0ZGI3ZmU0M2E3YjI4MTc5MzFhNWFhNjhhMWM2YmVfR3d1ZE43YWZ5YllDdkUxOTJ5dVZ4aGhKVkZla25SUWpfVG9rZW46UUdFMmJodTlwb2ZONVp4dEgyb2Mwek9zblBkXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
+![Structured Construction](https://static-docs.nocobase.com/2-7tie3l.PNG)
 
 配置与预览模式切换便捷，所见即所得。尤其在构建结构性页面（如后台管理系统、数据驱动业务页面）时，使用相对高效。
 
@@ -188,30 +188,6 @@ Power Apps 则采用**组合式扩展思路**：前端通过 Power Apps Componen
 NocoBase 更适合技术团队进行深度定制和模块级扩展，适配各种复杂场景。
 
 Power Apps 的扩展能力依赖微软生态资源，适用于已有 Azure 能力、但对系统自由度要求不高的团队。
-
-## AI 能力
-
-在 AI 趋势日益显著的今天，一个现代化的应用平台，是否具备将 AI 融入业务流程的能力，已经成为衡量其长期潜力的重要标准。
-
-### **实用赋能**
-
-NocoBase 近期推出的 **AI 员工功能**，尝试将 AI 作为“平台原生角色”无缝集成到系统中。它不同于传统只对开发者开放的 API 调用方式，而是让**每一位用户——无论是业务人员、审批人还是内容填写者——都可以通过界面配置将 AI 作用于实际业务操作中**，例如自动补全、生成建议、结构化理解用户输入等。这种设计的优势在于：**AI 能力真正下沉到使用场景中，而不再局限于后台逻辑。**
-
-当然，由于这项功能仍在持续演进中，当前 NocoBase 的 AI 员工更多用于**任务辅助与自动化片段嵌入**，尚不支持通过 AI 自动生成应用结构或建模逻辑，整体能力还在起步阶段。
-
-### **模型组件市场**
-
-Power Apps 则在 AI 领域更早布局，其核心产品是 **AI Builder**，提供了一系列预构建或可自定义的模型模块，如表单读取、图片识别、文本分类、预测分析等。最大亮点是用户**无需编程能力**，即可将这些 AI 模块集成进业务流程中，并可与 Power Automate、Dataverse 等产品联动，适合希望“拖拉式使用 AI”的非技术团队。
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGJmMzg4NDlkMjUwNDdmOTM2NDkwYmUxOTA3OWQ0MWZfb3l6SGx4d29uYklaUDdjdVczUjFnbU9SdWszNENKQmRfVG9rZW46REp5a2IxZlhub0tSZ1p4Sm8ycWMxSGZrbkRiXzE3NDcxMzg1NzU6MTc0NzE0MjE3NV9WNA)
-
-但 AI Builder 的使用成本不可忽视：大部分高级功能和模型训练都属于 Premium 功能，需单独许可购买，一旦部署在大规模环境中，成本很快累加。同时，其可扩展性相对受限，难以应对企业自定义模型接入或更复杂的语义推理需求。
-
-### **对比小结**
-
-NocoBase 的 AI 员工更像是**将 AI 融入系统使用体验的轻量实践者**，强调实用性与可配置性。
-
-而 Power Apps 则提供了一个**AI 模型组件市场**，更适合对业务流程智能化有需求、预算充足的企业团队。
 
 ## 性能
 
@@ -362,3 +338,12 @@ Power Apps 借助 Dataverse 实现了**集中化的应用协同与数据复用**
 NocoBase 更适合有技术能力、追求长期可控性、自主性与扩展性的企业或开发团队。
 
 Power Apps 更适合已有 Microsoft 365 基础、希望快速上线并集成微软生态的团队。
+
+**相关阅读：**
+
+* [替代 Airtable / 飞书表格？用零代码构建多对多关系的任务管理系统](https://www.nocobase.com/cn/blog/appsheet-alternative)
+* [NocoBase vs OutSystems：低代码平台，开源还是闭源？](https://www.nocobase.com/cn/blog/nocobase-vs-outsystems)
+* [NocoBase vs Salesforce：谁才是你的理想 CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)
+* [NocoBase 与 Appsmith：哪个开源低代码平台更适合你？](https://www.nocobase.com/cn/blog/nocobase-vs-appsmith)
+* [开源 CRUD 开发工具：NocoBase 与 Refine 对比](https://www.nocobase.com/cn/blog/nocobase-vs-refine)
+* [NocoBase 与 NocoDB：开源无代码（零代码）工具深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
