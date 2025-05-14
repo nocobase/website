@@ -3,9 +3,9 @@
   "title": "Enterprise Low-Code Development? Power Apps vs NocoBase In-Depth Comparison",
   "title_cn": "企业级低代码开发？Power Apps vs NocoBase 深度对比",
   "title_ja": "企業向けローコード開発 - Power AppsとNocoBaseの徹底比較",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "How to choose an enterprise low-code platform? A comprehensive comparison between Power Apps and NocoBase! Analyzing core functionalities, cost structures, and scalability to provide a reference for enterprise selection.",
+  "description_cn": "企业级低代码平台怎么选？Power Apps 与 NocoBase 全面对比！解析核心功能、成本结构与扩展能力，为企业选型提供参考。",
+  "description_ja": "企業向けのローコードプラットフォームを選ぶには？Power Apps と NocoBase の包括的な比較！コア機能、コスト構造、拡張性を分析し、企業の選択を支援します。",
   "slug": "nocobase-vs-powerapps",
   "publishedAt": "2025-05-13T12:13:09.224Z",
   "status": "drafted",
@@ -292,5 +292,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-13T13:15:34.771Z"
+  "updatedAt": "2025-05-14T03:19:37.407Z"
 }
