@@ -1,14 +1,14 @@
 {
   "id": 456,
-  "title": "NocoBase v1.7.0-beta.31",
-  "title_cn": "NocoBase v1.7.0-beta.31",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.7.0-beta.31: Add the log of the import plugin",
+  "title_cn": "NocoBase v1.7.0-beta.31：添加导入插件日志",
+  "title_ja": "NocoBase v1.7.0-beta.31：インポートプラグインのログを追加",
   "description": "Release Note of v1.7.0-beta.31",
   "description_cn": "v1.7.0-beta.31 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.7.0-beta.31  のリリースノート",
   "slug": "v1.7.0-beta.31",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-15T09:36:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-15T12:02:33.835Z",
+        "updatedAt": "2025-05-15T12:02:33.835Z",
+        "articles_id": 456,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-15T11:59:27.009Z",
+    "updatedAt": "2025-05-15T11:59:27.009Z",
+    "id": 1250,
+    "title": "next",
+    "filename": "next-wbyeo6.png",
+    "extname": ".png",
+    "size": 114136,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-wbyeo6.png",
+    "preview": "https://static-docs.nocobase.com/next-wbyeo6.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-15T09:36:56.170Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-15T12:02:33.824Z"
 }
