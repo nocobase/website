@@ -1,0 +1,78 @@
+週間のプロダクトアップデートログを要約し、最新リリースは[当社のブログ](https://www.nocobase.com/ja/blog/timeline)でご確認いただけます。
+
+**NocoBaseは現在、`main`、`next`および`develop`の3つのブランチで更新されています。**
+
+![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
+
+* `main`：現時点で最も安定したバージョンで、インストールを推奨します；
+* `next`：ベータ版で、近日公開予定の新機能を含み、初期テスト済みです。既知・未知の不具合が存在する可能性があります。主にテストユーザー向けで、フィードバックを収集し機能の最適化を図るためのものです。早期に新機能を体験し意見を提供したいテストユーザーに最適です；
+* `develop`：アルファ版で、最新の機能コードを含みますが、不完全または不安定な可能性があり、主に内部開発や迅速なイテレーション向けです。製品の最先端に関心のある技術ユーザー向けですが、潜在的な問題や未完成の機能があるため、本番環境での使用は推奨されません。
+
+## main
+
+![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
+
+### [v1.6.28](https://www.nocobase.com/en/blog/v1.6.28)
+
+*リリース日：2025-05-09*
+
+#### 🐛 不具合修正
+
+* **[データベース]** テキストフィールドの値によりインポートが失敗する問題を修正しました。([#6699](https://github.com/nocobase/nocobase/pull/6699)) by @aaaaaajie
+* **[クライアント]** 非表示に設定したフィールドが依然として表示される問題を修正しました。([#6844](https://github.com/nocobase/nocobase/pull/6844)) by @zhangzhonghe
+* **[アクション：レコードのエクスポート]** 長いテキストをエクスポートする際のエラーを修正しました。([#6713](https://github.com/nocobase/nocobase/pull/6713)) by @aaaaaajie
+* **[ワークフロー：アクション後イベント]** Handlebars テンプレート内でユーザーアクション変数にアクセスできない問題を修正しました。([#6837](https://github.com/nocobase/nocobase/pull/6837)) by @mytharcher
+* **[ブロック：アクションパネル]** ダークモードでアクションパネルの色が正しく表示されない問題を修正しました。([#6842](https://github.com/nocobase/nocobase/pull/6842)) by @zhangzhonghe
+* **[アクション：レコードのエクスポート Pro]** 長いテキストをエクスポートする際のエラーを修正しました。by @aaaaaajie
+
+### [v1.6.29](https://www.nocobase.com/en/blog/v1.6.29)
+
+*リリース日：2025-05-13*
+
+#### 🚀 機能改善
+
+* **[ワークフロー]** 複数の下書きを修正できるようにする（[#6851](https://github.com/nocobase/nocobase/pull/6851)）by @mytharcher
+
+#### 🐛 不具合修正
+
+* **[アクション：レコードのエクスポート]** ネストされた関連付けと添付ファイルの URL における空の値のエクスポートを修正する（[#6845](https://github.com/nocobase/nocobase/pull/6845)）by @aaaaaajie
+* **[ワークフロー：手動ノード]** タスクにおける統計数のカウントエラーを修正する（[#6783](https://github.com/nocobase/nocobase/pull/6783)）by @mytharcher
+* **[ワークフロー：テストキット]** 必須のプリセットプラグインによるテストケースの失敗を修正する（[#6839](https://github.com/nocobase/nocobase/pull/6839)）by @mytharcher
+* **[データ可視化]** ネストされた多対多フィールドをフィルタリングする際のエラーを修正する（[#6855](https://github.com/nocobase/nocobase/pull/6855)）by @2013xile
+* **[ワークフロー：サブフロー]** 未定義のトリガーによるページクラッシュを修正する by @mytharcher
+* **[ファイルストレージ: S3 (Pro)]** アクセス URL の有効期限が無効な問題を修正する by @jiannx
+* **[ワークフロー：承認]** タスクにおける統計数のカウントエラーを修正する by @mytharcher
+
+## next
+
+![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
+
+### [v1.7.0-beta.30](https://www.nocobase.com/en/blog/v1.7.0-beta.30)
+
+*リリース日：2025-05-08*
+
+## develop
+
+![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
+
+### [v1.7.0-alpha.13](https://www.nocobase.com/ja/blog/v1.7.0-alpha.13)
+
+*リリース日：2025-05-08*
+
+## NocoBaseについて
+
+NocoBaseは、完全なコントロールと無限のスケーラビリティを提供する、プライベートかつオープンソースのノーコードプラットフォームです。チームが変化に迅速に対応し、コストを大幅に削減することを可能にします。数年に及ぶ開発や多額の投資を避け、数分でNocoBaseを展開できます。
+
+<iframe src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FhOM2MyzHn9I&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhOM2MyzHn9I&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FhOM2MyzHn9I%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube" allowfullscreen="" frameborder="0" height="480" width="854" title="" class="dc n pc cp bh" scrolling="no"></iframe>
+
+3分でNocoBaseを体験！
+
+## 👇 NocoBaseを入手
+
+[**ホームページ**](https://www.nocobase.com/)
+
+[**デモ**](https://demo.nocobase.com/new)
+
+[**ドキュメント**](https://docs.nocobase.com/)
+
+[**GitHub**](https://github.com/nocobase/nocobase)
