@@ -22,9 +22,9 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 
 ## 1. NocoBase: Flexible Low-Code/No-Code Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODk4MWRhYzJmNjJlZWViZDZhZDIyMWJmOWJlY2Q1NmNfa0I0SUF2RjZiamZOSFFQVUVYeWowMlN4cHVUZWhHczdfVG9rZW46QzY4N2JWQ0ZXb0NSQmt4M053TWN2a1QwbkFoXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![NocoBase](https://static-docs.nocobase.com/1-s1wpjn.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWY5Yjc4ZTM2NDQwYTc2NGMzNjMwNzc3M2U4ZWVhZjlfRnphWHlXMzJzZUJ1REtTOUU2T2dwSElQemVOMnZIczRfVG9rZW46SlpEWWJwY0ZIb0pnRjJ4WmVCdWNsUmN4bmJjXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![NocoBase](https://static-docs.nocobase.com/2-hyl4z0.PNG)
 
 🔗 GitHub: https://github.com/nocobase/nocobase
 
@@ -34,7 +34,7 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 
 📄 License: AGPL-3.0
 
-**NocoBase **is an open-source no-code platform driven by data models and plugin extensions. Unlike rigid traditional ticketing systems, it lets you **fully customize interfaces, form fields, workflows, and automation rules**.
+**NocoBase** is an open-source no-code platform driven by data models and plugin extensions. Unlike rigid traditional ticketing systems, it lets you **fully customize interfaces, form fields, workflows, and automation rules**.
 
 We integrated a ticketing system into our existing NocoBase-built CRM. User data sync was seamless, and we configured the interface in just half a day.
 
@@ -46,9 +46,9 @@ We integrated a ticketing system into our existing NocoBase-built CRM. User data
 
 ✅ **Use Cases**: Internal IT support, customer service centers, approval workflows, after-sales management, task assignment.
 
-## **2.****UVdesk: E-Commerce-Friendly Ticketing System**
+## 2.**UVdesk: E-Commerce-Friendly Ticketing System**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTM5YzA5YWE3ZTVlMzFhZTVmM2U3ODMzOWM4NzMxODNfOEU5WDFKTmROMWhrTW45OUxldTBuM2NNcnVXS0hneUxfVG9rZW46UTEwb2JhbnNvb3dSR0V4QzJLVmNxZkZLbnJiXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![UVdesk](https://static-docs.nocobase.com/3-no6xws.png)
 
 🔗 GitHub: https://github.com/uvdesk/community-skeleton
 
@@ -68,9 +68,9 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 
 ✅ **Use Cases**: E-commerce platforms, mid-sized companies with technical teams.
 
-## **3.****Zammad: Modern Open-Source Ticketing System**
+## 3.**Zammad: Modern Open-Source Ticketing System**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTQyMmZlYWZkYmJkZTlkYmE1NjU4ZDliNDcwOTc5YjRfMElIOHJDZEFPcmRoMlZIejB4OTc0M2lhSldZZEVCTW1fVG9rZW46UVVZWWIzQVJLb2c0ZXV4b0lUSmNPd2ZibjhnXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![Zammad](https://static-docs.nocobase.com/4-hdx4rh.png)
 
 🔗 GitHub: https://github.com/zammad/zammad
 
@@ -88,11 +88,11 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 * **Visual Reports & Dashboards**: Detailed analytics on response times, customer satisfaction, and ticket volumes by department/agent help optimize workflows.
 * **Modern UI**: Responsive design for desktop and mobile, with customizable dashboards for intuitive user experience.
 
-✅** Use Cases**: Mid-to-large enterprise customer service teams, operations needing unified support portals.
+✅**Use Cases**: Mid-to-large enterprise customer service teams, operations needing unified support portals.
 
-## **4.****FreeScout: Lightweight Open-Source Alternative to Zendesk**
+## 4.**FreeScout: Lightweight Open-Source Alternative to Zendesk**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmYxNWNjNWUwZjc2NWQ2NWI5NGZhZDZlYzQ3YjBmODNfaFZocDV3QmhyaTROa2lrcHVJdEg4TFNOOUs1c2Z6MHVfVG9rZW46RE5ncGJrUG5ob05ER3p4dHBJNGNvd1RWbnNQXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![FreeScout](https://static-docs.nocobase.com/5-ivj05q.png)
 
 🔗 GitHub: https://github.com/freescout-helpdesk/freescout
 
@@ -109,11 +109,11 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 * **Simplified Interface**: Gmail-like design requires almost no training, lowering adoption barriers.
 * **Extensive Plugins**: Official and community plugins for SLA tracking, auto-assignment, time tracking, and Slack notifications offer flexibility without compromising stability.
 
-✅** Use Cases**: Startups, small businesses, lightweight internal support systems.
+✅**Use Cases**: Startups, small businesses, lightweight internal support systems.
 
-## **5.****osTicket: Classic & Stable Ticketing System**
+## 5.**osTicket: Classic & Stable Ticketing System**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODMzNWYxNTE0MzlkYWVjMTQxZDA3ZGE2MGUyZmYxZjhfYVh4QVRMU1VTQkJSSGEwZFpQekZnNlJWZU40MFdTMTlfVG9rZW46RERzSGJjR0Rpb3pHcG54WnZERWNYaWZwblljXzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![osTicket](https://static-docs.nocobase.com/6-l0owdi.png)
 
 🔗 GitHub: https://github.com/osTicket/osTicket
 
@@ -132,9 +132,9 @@ One of the earliest open-source ticketing systems, **osTicket** prioritizes stab
 
 ✅ **Use Cases**: Basic customer support, small-to-medium enterprise IT requests.
 
-## **6.****Helpy: Self-Hosted Customer Support Platform**
+## 6.**Helpy: Self-Hosted Customer Support Platform**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGJhNTc5MGQyNWZlOGZiNDE4MmI5NjA2OGNmZWJmZTNfWXN1c09UdG5aRGxlT1JDZmhhemtkVm5QVkt4dTRHWkdfVG9rZW46Wng5V2JKUURIb25nZzZ4RW1TR2NVcFUxbnI3XzE3NDczNTg1NDg6MTc0NzM2MjE0OF9WNA)
+![Helpy](https://static-docs.nocobase.com/7-jox0tl.png)
 
 🔗 GitHub: https://github.com/helpyio/helpy
 
@@ -167,3 +167,12 @@ Every system has strengths and limitations, and no two teams share identical wor
 If you’re unsure or seeking **a flexible, customizable solution**, request a [demo](https://demo.nocobase.com/new) of NocoBase. We’re happy to share our expertise and collaborate on optimizing your ticketing workflow.
 
 Let’s build better support systems together!
+
+**Related reading:**
+
+* [Top 8 Open-Source Tools for Web Application Development](https://www.nocobase.com/en/blog/top-8-open-source-tools-for-web-application-development)
+* [6 Best Employee Management Systems for 2025](https://www.nocobase.com/en/blog/employee-management-system)
+* [Top 5 All-in-One Business Software for 2025](https://www.nocobase.com/en/blog/all-in-one-business-software)
+* [Top 8 Open Source IT Asset Management Software for 2025](https://www.nocobase.com/en/blog/it-asset-management-software)
+* [Top 7 Open Source Rapid Development Platform](https://www.nocobase.com/en/blog/rapid-development-platform)
+* [Top 8 Open-Source Projects (Rated) to Build Your Own Task Management System](https://www.nocobase.com/en/blog/top-8-open-source-projects-to-build-task-management-system)
