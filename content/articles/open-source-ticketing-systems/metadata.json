@@ -3,9 +3,9 @@
   "title": "6 Best Open-Source Ticketing Systems for 2025",
   "title_cn": "2025 年 6 个最佳开源工单系统推荐",
   "title_ja": "2025 年におすすめの 6 つのオープンソースチケットシステム",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Explore 6 best open-source ticketing systems for 2025, including NocoBase and UVdesk, analyzes core functional requirements, and helps enterprises improve customer support efficiency and management flexibility.",
+  "description_cn": "推荐 2025 年 6 款最佳开源工单系统，涵盖 NocoBase、UVdesk 等，解析核心功能需求，助企业提升客户支持效率与管理灵活性。",
+  "description_ja": "本文では 2025 年のベストオープンソースチケットシステム 6 選を紹介し、NocoBase や UVdesk などを含め、核心となる機能要件を解析します。企業の顧客サポートの効率化と管理の柔軟性向上に役立ちます。",
   "slug": "open-source-ticketing-systems",
   "publishedAt": "2025-05-16T01:21:54.021Z",
   "status": "drafted",
@@ -406,5 +406,5 @@
   "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-16T02:47:07.816Z"
+  "updatedAt": "2025-05-16T07:26:04.603Z"
 }
