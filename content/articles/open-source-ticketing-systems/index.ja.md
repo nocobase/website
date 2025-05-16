@@ -24,9 +24,9 @@
 
 ## 1. NocoBase：柔軟なローコード / ノーコード開発プラットフォーム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjZlZDliNDUxMTAzNWZjODZjM2UzZGEyM2U3N2I5MGJfeWE1RVhqNXJCbFJVWjUwQnQ0ZXl3aHdaNEtKeVR5WWlfVG9rZW46Ullpd2IxZFJkb2NVaVV4Z1VEYWNBQWRnblNoXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![NocoBase](https://static-docs.nocobase.com/1-s1wpjn.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODM3MDIyYjIwOTA5ZWZkMjY3YzliYWI3OTU2MTQ2OThfcjlGdXk1SE1UZDdPOGoyeG1lcDVWak9YeTcyYzdaZ0JfVG9rZW46T2FnV2JScFRGb05GdlB4Tm83SmNMUEkwbmVlXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![NocoBase](https://static-docs.nocobase.com/2-hyl4z0.PNG)
 
 🔗 GitHub：https://github.com/nocobase/nocobase
 
@@ -48,9 +48,9 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 ✅ **適用シーン**：企業内 IT サポート、カスタマーサービスセンター、プロセス承認、アフターサービス処理、タスク割り当てなど。
 
-## **2.****UVdesk**：EC 向けのチケットシステム
+## 2.**UVdesk**：EC 向けのチケットシステム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGRhZjAyMWQxNmZiNzMwZDE4ZWRhYjQzYzk3ODljNzNfRWkzRmUzM1c4WkdyOW1VcUZDOThQWEVqcWNHNHRud1lfVG9rZW46SFd6c2JxZGZvb1dDUzJ4V2lPU2N1dU0ybndiXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![UVdesk](https://static-docs.nocobase.com/3-no6xws.png)
 
 🔗 GitHub：https://github.com/uvdesk/community-skeleton
 
@@ -70,9 +70,9 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 ✅ **適用シーン**：EC プラットフォーム、技術チームを有する中堅企業。
 
-## **3.****Zammad**：モダン UI のオープンソースチケットシステム
+## 3.**Zammad**：モダン UI のオープンソースチケットシステム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTFmNTA1MzA5ZWM4NTU0NTIwYzAxNWZjOTlkZDQxODBfdEwyZ045RFI3Q29mTURvaW9PUlh6d3R1TGZSanpJVmtfVG9rZW46RmVpbWJnT0tMb2tleVF4TERPemNNTGlvbnZlXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![Zammad](https://static-docs.nocobase.com/4-hdx4rh.png)
 
 🔗 GitHub：https://github.com/zammad/zammad
 
@@ -90,11 +90,11 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 * **視覚化レポートとダッシュボード**：豊富なダッシュボードとレポートツールを内蔵しており、部署、サポート担当者、顧客タイプなどの次元で処理時間、顧客満足度、チケット数などを分析することができ、チームがサポートプロセスの最適化を図るのに役立ちます。
 * **モダンなユーザーインターフェイス**：Zammad の UI はレスポンシブデザインで、デスクトップとモバイル端末でスムーズに使用できます。モダンなインタラクションデザインとカスタマイズ可能なパネル機能により、ユーザー体験と操作効率を向上させます。
 
-✅** 適用シーン**：中大型企業のカスタマーサービスチーム、統一されたサポートエントリーが必要な運用チーム。
+✅**適用シーン**：中大型企業のカスタマーサービスチーム、統一されたサポートエントリーが必要な運用チーム。
 
-## **4.****FreeScout**：Zendesk の軽量オープンソース代替案
+## 4.**FreeScout**：Zendesk の軽量オープンソース代替案
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDY0ZGUwOTc0Mjc0ZDE4YTJiNTY0YTEyYjBhODc4MzZfYnRJRmNGSm5wWDA2d1BSaWd5OXF0dm9tODVEMXNtUUxfVG9rZW46VTlURGJhelJab1hBWXp4S0M3aWNjajJQbjVkXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![FreeScout](https://static-docs.nocobase.com/5-ivj05q.png)
 
 🔗 GitHub：https://github.com/freescout-helpdesk/freescout
 
@@ -111,11 +111,11 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 * **極簡主義の操作界面**：FreeScout は Gmail 風のメール界面を採用しており、従来のメールワークフローを高度に再現しているため、学習コストがほとんどなく、ユーザーの導入ハードルを大幅に下げます。
 * **豊富なプラグイン**：公式とコミュニティが SLA 管理、自動割り当て、時間統計、Slack 通知などの多種多様なプラグインを提供しており、必要に応じて柔軟に追加することができ、核心機能の安定性を損なうことなく拡張できます。
 
-✅** 適用シーン**：スタートアップチーム、中小企業、軽量な導入が必要な内部サポートシステム。
+✅**適用シーン**：スタートアップチーム、中小企業、軽量な導入が必要な内部サポートシステム。
 
-## **5.****osTicket**：クラシックで安定したチケットシステム
+## 5.**osTicket**：クラシックで安定したチケットシステム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjBkMmJjZDk1YjQ2ODY0ZWZjMzY1YmRjMGY4NmMyZWZfY3BJSXZIZnN3cDJYQUM2RWVDbVVJclJ5THd6NUR3TmVfVG9rZW46SXZJVWJQbk14b0EwNVp4Ukkyb2NQamw4bnRnXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![osTicket](https://static-docs.nocobase.com/6-l0owdi.png)
 
 🔗 GitHub：https://github.com/osTicket/osTicket
 
@@ -134,9 +134,9 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 ✅ **適用シーン**：基礎的なカスタマーサポート、中小企業の IT リクエスト処理。
 
-## **6.****Helpy**：自己ホスト型のカスタマーサポートプラットフォーム
+## 6.**Helpy**：自己ホスト型のカスタマーサポートプラットフォーム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjgzNzJiZDRhM2M3NzQ0NDA4OGMxNDE0Njk1MTY0MzBfeDJMbElVdmVoY3Vmc0NHeXJiYUxrUFI3RllRaWtad0lfVG9rZW46VXQ1a2I4Njd3b3NjdzB4MFduMmNUR3g1bjdlXzE3NDczNTg1NjQ6MTc0NzM2MjE2NF9WNA)
+![Helpy](https://static-docs.nocobase.com/7-jox0tl.png)
 
 🔗 GitHub：https://github.com/helpyio/helpy
 
@@ -169,3 +169,12 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 評価中に疑問が生じた場合、またはより柔軟でカスタマイズしやすいオープンソースチケットソリューションを模索している場合、NocoBase のデモ申し込みをお勧めします。
 
 私たちは実践経験を共有することを喜んでおり、使用中の感想、質問、提案などいつでも交流をお待ちしております。より優れたチケット管理ソリューションを共同で模索しましょう。
+
+**関連読み物：**
+
+* [ウェブアプリケーション開発に最適なオープンソースツール 8 選](https://www.nocobase.com/ja/blog/top-8-open-source-tools-for-web-application-development)
+* [2025年企業必备の6つの従業員管理ツールの紹介](https://www.nocobase.com/ja/blog/employee-management-system)
+* [2025年のトップ5オールインワンビジネスソフトウェア](https://www.nocobase.com/ja/blog/all-in-one-business-software)
+* [2025年トップ8のオープンソースIT資産管理ソフトウェア](https://www.nocobase.com/ja/blog/it-asset-management-software)
+* [オープンソースの高速開発プラットフォームトップ7](https://www.nocobase.com/ja/blog/rapid-development-platform)
+* [自分のタスク管理システムを構築するためのトップ8のオープンソースプロジェクト（評価付き）](https://www.nocobase.com/ja/blog/top-8-open-source-projects-to-build-task-management-system)
