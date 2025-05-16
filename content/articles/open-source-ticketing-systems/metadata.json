@@ -405,6 +405,6 @@
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-16T01:42:26.129Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-16T02:47:07.816Z"
 }
