@@ -1,11 +1,11 @@
 {
   "id": 455,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週のアップデート：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
+  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
+  "title_ja": "NocoBase 今週のアップデート：最適化とバグ修正",
+  "description": "This week’s updates include: allowing the revision of more than one draft, adding more built-in size settings for read status images, and other improvements.",
+  "description_cn": "本周更新包括：支持复制任意多版本的草稿，增加阅读状态图片的内置尺寸选项等。",
+  "description_ja": "今週の更新では、複数の下書きの修正を可能にする機能、読み取り状態の画像により多くのビルトインサイズ設定を追加する機能などを含みます。",
   "slug": "weekly-updates-20250516",
   "publishedAt": "2025-05-16T00:00:00.000Z",
   "status": "drafted",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-16T00:43:45.177Z"
+  "updatedAt": "2025-05-16T01:50:28.938Z"
 }
