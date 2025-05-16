@@ -43,6 +43,26 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[File storage: S3(Pro)]** access url expiration invalid by @jiannx
 - **[Workflow: Approval]** Fix stats number count wrong on tasks by @mytharcher
 
+### [v1.6.30](https://www.nocobase.com/en/blog/v1.6.30)
+
+*Release date: 2025-05-15*
+
+#### 🚀 Improvements
+
+- **[client]** add more built-in size settings for read status image ([#6868](https://github.com/nocobase/nocobase/pull/6868)) by @katherinehhh
+
+#### 🐛 Bug Fixes
+
+- **[File manager]**
+
+  - Fix types ([#6873](https://github.com/nocobase/nocobase/pull/6873)) by @mytharcher
+  - Fix create file record without foreign key permission ([#6863](https://github.com/nocobase/nocobase/pull/6863)) by @mytharcher
+- **[Action: Export records]** improve performance when deleting fields in import/export field settings ([#6861](https://github.com/nocobase/nocobase/pull/6861)) by @katherinehhh
+- **[Data visualization]** Chart blocks do not display when added to popups triggered from block-level actions ([#6864](https://github.com/nocobase/nocobase/pull/6864)) by @2013xile
+- **[Action: Export records Pro]** improve performance when deleting fields in import/export pro field settings by @katherinehhh
+- **[File storage: S3(Pro)]** Change to use collection field to locate storage by @mytharcher
+- **[Backup manager]** Fix type error in build by @mytharcher
+
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
@@ -107,7 +127,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Change to use collection field to locate storage by @mytharcher
   - access url expiration invalid by @jiannx
 - **[Workflow: Approval]** Fix stats number count wrong on tasks by @mytharcher
-
 
 ## About NocoBase
 
