@@ -45,6 +45,26 @@
 - **[文件存储：S3 (Pro)]** 访问地址有效期无效 by @jiannx
 - **[工作流：审批]** 修复待办中心计数错误问题 by @mytharcher
 
+### [v1.6.30](https://www.nocobase.com/cn/blog/v1.6.30)
+
+*发布时间：2025-05-15*
+
+#### 🚀 优化
+
+- **[client]** 增加阅读状态图片的内置尺寸选项 ([#6868](https://github.com/nocobase/nocobase/pull/6868)) by @katherinehhh
+
+#### 🐛 修复
+
+- **[文件管理器]**
+
+  - 修复类型 ([#6873](https://github.com/nocobase/nocobase/pull/6873)) by @mytharcher
+  - 修复无外键权限时创建文件记录 URL 无效的问题 ([#6863](https://github.com/nocobase/nocobase/pull/6863)) by @mytharcher
+- **[操作：导出记录]** 导入导出字段配置中删除字段严重卡顿 ([#6861](https://github.com/nocobase/nocobase/pull/6861)) by @katherinehhh
+- **[数据可视化]** 在区块级别操作中打开弹窗，添加图表不显示 ([#6864](https://github.com/nocobase/nocobase/pull/6864)) by @2013xile
+- **[操作：导出记录 Pro]** pro 导入导出字段配置中删除字段卡顿 by @katherinehhh
+- **[文件存储：S3 (Pro)]** 变更为使用数据表字段来定位存储引擎 by @mytharcher
+- **[备份管理器]** 修复编译时的类型错误 by @mytharcher
+
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
@@ -109,7 +129,6 @@
   - 变更为使用数据表字段来定位存储引擎 by @mytharcher
   - 访问地址有效期无效 by @jiannx
 - **[工作流：审批]** 修复待办中心计数错误问题 by @mytharcher
-
 
 NocoBase 是一个极易扩展的开源无代码开发平台。完全掌控，无限扩展，助力你的开发团队快速响应变化，显著降低成本，不必投入几年时间和数百万资金研发，只需要花几分钟部署 NocoBase。
 
