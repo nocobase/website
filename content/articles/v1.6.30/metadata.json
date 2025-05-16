@@ -1,14 +1,14 @@
 {
   "id": 457,
-  "title": "NocoBase v1.6.30",
-  "title_cn": "NocoBase v1.6.30",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.6.30: add more built-in size settings for read status image",
+  "title_cn": "NocoBase v1.6.30：增加阅读状态图片的内置尺寸选项",
+  "title_ja": "NocoBase v1.6.30：既読ステータス画像により多くの組み込みサイズ設定を追加する",
   "description": "Release Note of v1.6.30",
   "description_cn": "v1.6.30 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.6.30 のリリースノート",
   "slug": "v1.6.30",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-15T12:25:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-16T00:41:38.757Z",
+        "updatedAt": "2025-05-16T00:41:38.757Z",
+        "articles_id": 457,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-16T00:37:16.668Z",
+    "updatedAt": "2025-05-16T00:37:16.668Z",
+    "id": 1251,
+    "title": "发版封面图-main (1)",
+    "filename": "发版封面图-main (1)-fbzzy6.png",
+    "extname": ".png",
+    "size": 90027,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-fbzzy6.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-fbzzy6.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-15T12:26:01.342Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-16T00:41:38.730Z"
 }
