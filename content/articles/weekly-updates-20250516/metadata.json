@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、複数の下書きの修正を可能にする機能、読み取り状態の画像により多くのビルトインサイズ設定を追加する機能などを含みます。",
   "slug": "weekly-updates-20250516",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-16T01:50:28.938Z"
+  "updatedAt": "2025-05-16T02:53:58.217Z"
 }
