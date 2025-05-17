@@ -3,9 +3,9 @@
   "title": "How the No.1 AI Voice Recorder Brand Built Its Internal Systems",
   "title_cn": "全球第一 AI 录音笔品牌，如何搭建运营与客服系统？",
   "title_ja": "AIボイスレコーダー世界No.1企業に学ぶ、急成長を支える社内システム構築術",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Facing business growth, PLAUD, the world's No.1 AI Voice Recorder Brand, chose the open-source no-code platform NocoBase to build customer service and operations systems, meeting flexibility and control requirements while improving work efficiency.",
+  "description_cn": "面对业务增长，全球第一AI录音笔品牌 PLAUD 选择开源无代码平台 NocoBase 搭建客服和运营系统，满足灵活可控需求，提升工作效率。",
+  "description_ja": "ビジネス成長に直面して、世界 No.1 の AI 録音ペンブランド PLAUD は、オープンソースノーコードプラットフォーム NocoBase を選択し、柔軟性と制御性を備えたカスタマーサービスおよび運用システムの構築を行い、業務効率の向上を図りました。",
   "slug": "plaud",
   "publishedAt": "2025-05-17T03:16:02.195Z",
   "status": "drafted",
@@ -344,5 +344,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-17T03:52:10.090Z"
+  "updatedAt": "2025-05-17T04:09:35.499Z"
 }
