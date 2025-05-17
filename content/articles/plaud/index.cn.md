@@ -1,0 +1,111 @@
+## 引言
+
+2023 年，[PLAUD NOTE](https://www.plaud.ai/) 在众筹平台首次亮相，成为**全球首款搭载 ****ChatGPT 大语言模型****的 AI 录音设备**。凭借其创新的硬件设计与强大的 AI 功能，迅速吸引了全球用户的关注。
+
+在预售阶段，PLAUD NOTE 即取得近 600 万美元销售额，3.5 万用户成为付费会员，迅速跻身全球 AI 硬件领域的现象级产品。
+
+![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTc2N2ZkYzMzY2VhNTAwZGE1NzQwZWRiNzY1OTI4MzFfMlZ2RW9jV3Q4Z1VmaDIyeXI5REdpNXI2U2pUdjJzdDhfVG9rZW46V0Q2OGJZcEZ3b2p6WXJ4NVpabGNjRm5OblBjXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+
+之后，PLAUD 的热度持续攀升——
+
+产品发布不到两年，收获了 **70 万用户、覆盖 168 个国家地区**，登上全球主流科技媒体头条，斩获红点、德国 iF 、日本优良设计奖等多项国际大奖。
+
+![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTRkNjdmMjY1YjQ1NjQ4M2U1ZjQ5Yjk0ZWM2OGQ3NTBfQUdzaWxvY3g5SUY3cFNRbmkwZUsweWFqYjZna0xQSzBfVG9rZW46UTdxTGJyczFYb1N6M0N4bmxhcmNYOVJybjBnXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+
+2024 年，**PLAUD 营收突破 7000 万美金，团队规模翻倍，并连续两年实现 10 倍增长。**
+
+但当产品持续热销、用户量不断攀升时，一个更现实的问题也随之而来——**内部体系，是否足以支撑这条高速增长曲线？**
+
+## 不止是录音笔
+
+很多人认识 PLAUD ，是从那支**超薄卡片式的录音笔**（也就是 PLAUD NOTE）开始的。
+
+但实际上，PLAUD NOTE 并不是传统意义上的“录音设备”。它在录音完成后，可以在 App 中**自动转写音频、提炼摘要，并根据语义结构生成可发布的内容草稿**。
+
+![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmQ3Y2VmY2I1NzQyNjQwOWRmYzRhN2FiMjY4ODIwZDJfRmY1SUs2ajhyWXVKSnBVZ3pTNGlZZHFXY0VlbDR0Qm5fVG9rZW46TDBrUGJiajdOb0lHRkJ4TFpqYWNFajdFblhjXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+
+对内容创作者来说，它不仅是一个工具，而是一个**随身携带的 AI 写作助手**。
+
+而这款硬件的背后，是一个持续演进的软件平台。PLAUD 还在 App 中构建了一个**行业模板社区**——用户可以上传、编辑、共享不同行业（如法律、医疗、教育等）的转写模板，帮助更多人更高效地处理语音内容。
+
+硬件只是入口，真正构成竞争力的，是背后那套**支持内容流通与用户共创的平台**。
+
+## 如何从零开始快速构建系统？
+
+随着产品热度不断提升，PLAUD 的内部需求也逐渐复杂起来：客服团队希望更方便地查询用户信息、处理账号问题；运营团队需要更高效地配置 App 内容、管理社区模板。
+
+**但当时的他们，其实还没有一套真正意义上的客服或运营系统。**
+
+> “我们原来没有这块东西，是业务需求不断丰富起来之后，才开始思考怎么承接。”——Lucas，PLAUD 产品经理
+
+PLAUD 拥有极强的产品和研发能力，但他们更聚焦在产品的创新上，并没有足够资源投入到后台系统的重构中。而客服和运营又是直接影响用户体验的重要环节，不能放任滞后。
+
+团队没有选择传统 SaaS，而是选择了一条更灵活的路：使用开源无代码平台 NocoBase，自建符合自身逻辑的系统。
+
+这一切并不是因为他们预设要找一个“无代码工具”，而是 NocoBase 恰好满足了他们最核心的三个需求：
+
+* 从零起步：**没有既有系统包袱，能迅速搭建核心模块**
+* 灵活可控：**数据模型、流程逻辑可随需扩展，不受 SaaS 限制**
+* 产品友好：**由产品经理主导搭建，技术团队仅做必要支持**
+
+短短几天，PLAUD 团队就在 NocoBase 上搭建出初版的业务支撑系统，并且在这基础上开始不断迭代。
+
+## 一套平台搭建两大核心系统
+
+截止目前，PLAUD 使用 NocoBase 搭建了两套核心系统，分别服务于**客服团队**和**运营团队**。
+
+#### 客服系统：用户信息集中管理
+
+PLAUD 的客服后台主要用于：
+
+* 查询用户基本信息与注册渠道
+* 查看账号状态与购买权益
+* 执行后台操作，如状态修改、记录标记等
+
+这套系统通过外部数据源插件对接公司核心数据库，实现了多表之间的数据关联，客服可以在 NocoBase 内**一站式完成信息查询与处理**，极大提升了工作效率。
+
+> “我们现在整个用户信息在里面都是可以查到的，数据就是直接通过 SQL 对接。”  —— Lucas，PLAUD 产品经理
+
+#### 运营系统：模板社区内容运营
+
+在运营端，团队基于 NocoBase 构建了**模板社区的审核系统**，用于管理用户提交的内容模板，如医疗、销售、法律、教育等领域的语音转写模板。
+
+系统支持：
+
+* 模板内容自动入库
+* 审核流程配置与状态管理
+* 审核通过后自动发布至 App 社区
+
+![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDA3MzJlYzkxOWYyNTljZmJmNTYzZmUyMDBkZGQ1YTdfTEo1Qk1JOXM3WEI1RWJZd0NwNllsYU5FWGZtQ0piNElfVG9rZW46VTJCVGJueHhKb21PTVB4eDRwY2NQOEdkbktkXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+
+整个流程几乎不依赖开发，由产品配置搭建完成，只有在复杂数据处理（如 JSON 转换）等场景中引入少量插件和技术协作。
+
+## 仅靠两人，就撑起了系统
+
+在实际使用中，PLAUD 团队对 NocoBase 最直接的评价是：**灵活、高效、可控**。
+
+整个客服与运营系统的搭建，主要由产品经理主导完成，仅在需要接口对接或插件开发时由前后端提供支持。这种模式不仅减轻了开发团队的负担，也让产品逻辑可以更快落地、快速迭代。
+
+> “使用 NocoBase 的其实是 Plaud 整个公司，但负责搭建这块的基本就是我和另一个同事，其他开发只在需要时帮忙做接口对接。”  —— Lucas，PLAUD 产品经理
+
+其中，让团队印象最深刻的是 NocoBase 在数据建模方面的能力。
+
+PLAUD 的业务数据结构较为复杂，涉及多张表的交叉关联与权限控制。而 NocoBase 的“数据模型驱动”机制，不仅让他们可以灵活配置字段和结构，还能通过**多表关联**实现跨模块的数据整合，极大提升了系统的可用性。
+
+> “我们很多数据需要在不同的表之间做关联，NocoBase 这一点做得很好。”  —— Lucas，PLAUD 产品经理
+
+与此同时，NocoBase 的插件机制也为团队后续的扩展留足了空间。
+
+## 从爆火到长红，靠的不只是产品
+
+PLAUD 用不到两年的时间，完成了从产品爆火到平台化运营的进阶。去年下半年，他们发布了全新的可穿戴 AI 录音硬件 —— **PLAUD NotePin**。
+
+![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjQ0NGYwMDUwNmJiNjA0MTk2MDlmMmYyNjJjMDQ4NjlfZjdUV00xanExUGFvR051WFJ2YkdmdUFRZWhxNjg3UDJfVG9rZW46TFFQd2JoNTl3b0FpbG14YjZOVmNQMTA1bjZzXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjMzNjQ1Y2EzNjEzOWE0MzMyNzNlYTNmNmMyNTdkZjVfYW1XNndIT1VtN3Qybkl5NHYwVE5xUGJVVlk5TjdpQ1NfVG9rZW46QkY4SmJmYlFUb0xTYkV4OUh2OGNVcjZCbm44XzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+
+而在这背后，真正支撑 PLAUD 快速进化的，除了硬件和模型能力，还有他们内部对系统建设的清醒判断和执行力。
+
+他们没有依赖复杂昂贵的 SaaS，也没有投入大量人力开发系统，而是选择了更轻、更自主的方式：用开源工具构建一个贴合自身业务的运营与客服平台。
+
+这背后，是一种能力的建立——**用最小的资源，构建足够灵活、可控的内部体系**，让团队在高速变化中依然保持节奏。
+
+未来，NocoBase 还将在更多场景中，陪伴这家全球领先的 AI 公司，持续探索软硬结合的无限可能。
