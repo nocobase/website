@@ -4,13 +4,13 @@
 
 在预售阶段，PLAUD NOTE 即取得近 600 万美元销售额，3.5 万用户成为付费会员，迅速跻身全球 AI 硬件领域的现象级产品。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTc2N2ZkYzMzY2VhNTAwZGE1NzQwZWRiNzY1OTI4MzFfMlZ2RW9jV3Q4Z1VmaDIyeXI5REdpNXI2U2pUdjJzdDhfVG9rZW46V0Q2OGJZcEZ3b2p6WXJ4NVpabGNjRm5OblBjXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+![PLAUD NOTE](https://static-docs.nocobase.com/1-hv0ztl.gif)
 
 之后，PLAUD 的热度持续攀升——
 
 产品发布不到两年，收获了 **70 万用户、覆盖 168 个国家地区**，登上全球主流科技媒体头条，斩获红点、德国 iF 、日本优良设计奖等多项国际大奖。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTRkNjdmMjY1YjQ1NjQ4M2U1ZjQ5Yjk0ZWM2OGQ3NTBfQUdzaWxvY3g5SUY3cFNRbmkwZUsweWFqYjZna0xQSzBfVG9rZW46UTdxTGJyczFYb1N6M0N4bmxhcmNYOVJybjBnXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+![PLAUD](https://static-docs.nocobase.com/2.0-n0gu0c.PNG)
 
 2024 年，**PLAUD 营收突破 7000 万美金，团队规模翻倍，并连续两年实现 10 倍增长。**
 
@@ -22,7 +22,7 @@
 
 但实际上，PLAUD NOTE 并不是传统意义上的“录音设备”。它在录音完成后，可以在 App 中**自动转写音频、提炼摘要，并根据语义结构生成可发布的内容草稿**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmQ3Y2VmY2I1NzQyNjQwOWRmYzRhN2FiMjY4ODIwZDJfRmY1SUs2ajhyWXVKSnBVZ3pTNGlZZHFXY0VlbDR0Qm5fVG9rZW46TDBrUGJiajdOb0lHRkJ4TFpqYWNFajdFblhjXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+![Beyond a Voice Recorder](https://static-docs.nocobase.com/3.0-ty43po.PNG)
 
 对内容创作者来说，它不仅是一个工具，而是一个**随身携带的 AI 写作助手**。
 
@@ -76,7 +76,7 @@ PLAUD 的客服后台主要用于：
 * 审核流程配置与状态管理
 * 审核通过后自动发布至 App 社区
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDA3MzJlYzkxOWYyNTljZmJmNTYzZmUyMDBkZGQ1YTdfTEo1Qk1JOXM3WEI1RWJZd0NwNllsYU5FWGZtQ0piNElfVG9rZW46VTJCVGJueHhKb21PTVB4eDRwY2NQOEdkbktkXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+![Operations System](https://static-docs.nocobase.com/4.0-cpa6sz.jfif)
 
 整个流程几乎不依赖开发，由产品配置搭建完成，只有在复杂数据处理（如 JSON 转换）等场景中引入少量插件和技术协作。
 
@@ -100,7 +100,7 @@ PLAUD 的业务数据结构较为复杂，涉及多张表的交叉关联与权�
 
 PLAUD 用不到两年的时间，完成了从产品爆火到平台化运营的进阶。去年下半年，他们发布了全新的可穿戴 AI 录音硬件 —— **PLAUD NotePin**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjQ0NGYwMDUwNmJiNjA0MTk2MDlmMmYyNjJjMDQ4NjlfZjdUV00xanExUGFvR051WFJ2YkdmdUFRZWhxNjg3UDJfVG9rZW46TFFQd2JoNTl3b0FpbG14YjZOVmNQMTA1bjZzXzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjMzNjQ1Y2EzNjEzOWE0MzMyNzNlYTNmNmMyNTdkZjVfYW1XNndIT1VtN3Qybkl5NHYwVE5xUGJVVlk5TjdpQ1NfVG9rZW46QkY4SmJmYlFUb0xTYkV4OUh2OGNVcjZCbm44XzE3NDc0NTE4NDI6MTc0NzQ1NTQ0Ml9WNA)
+![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)![NotePin](https://static-docs.nocobase.com/6.0-izojvx.png)
 
 而在这背后，真正支撑 PLAUD 快速进化的，除了硬件和模型能力，还有他们内部对系统建设的清醒判断和执行力。
 
@@ -109,3 +109,13 @@ PLAUD 用不到两年的时间，完成了从产品爆火到平台化运营的�
 这背后，是一种能力的建立——**用最小的资源，构建足够灵活、可控的内部体系**，让团队在高速变化中依然保持节奏。
 
 未来，NocoBase 还将在更多场景中，陪伴这家全球领先的 AI 公司，持续探索软硬结合的无限可能。
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
