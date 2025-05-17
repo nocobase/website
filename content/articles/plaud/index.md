@@ -4,13 +4,13 @@ In 2023, [PLAUD NOTE](https://www.plaud.ai/) made its first appearance on a crow
 
 During pre-sales alone, it brought in nearly \$6 million and gained 35,000 paying members, rapidly becoming a breakout hit in the AI hardware world.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmFjMjNhODYzYzFmNDE1NjZlNjcxOTE2ZWE2NWYyMWNfVVNTUElmdE9HWDdZb0czeVBOVFpFbENCS1ZHN1hLR2hfVG9rZW46QldPUmI1QWNpb3NzcWd4d3FzcGNnbmlFbldiXzE3NDc0NTE3ODg6MTc0NzQ1NTM4OF9WNA)
+![PLAUD NOTE](https://static-docs.nocobase.com/1-hv0ztl.gif)
 
 The buzz didn’t stop there—
 
 In less than two years, PLAUD had amassed 700,000 users across 168 countries, featured in top global tech media, and picked up major international design awards like the Red Dot, iF, and Good Design.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTBjYzgyODRjYmYwZTAyZTVjZmJhMTA0YzAzNzY1YzhfSHBRMEtBbjRlNUhhMzN1ZzJaU09FY2FRYzdJWFprRkRfVG9rZW46V2pjUmJ5VkNZb2JxcVN4WUp3eGNZM3VTblVoXzE3NDc0NTE3ODg6MTc0NzQ1NTM4OF9WNA)
+![PLAUD](https://static-docs.nocobase.com/2.0-n0gu0c.PNG)
 
 In 2024, revenue had soared past \$70 million, the team size had doubled, and the company hit 10x growth two years in a row.
 
@@ -24,7 +24,7 @@ Most people know PLAUD for its ultra-slim, card-sized recorder—PLAUD NOTE.
 
 But PLAUD NOTE isn’t your typical voice recorder. Once the recording is done, it automatically transcribes the audio, summarizes it, and even drafts publish-ready content using AI.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjExMDg0NjY0MmM0YTljMDk1OTI3YTA1Y2QyNTBhY2FfR3BFN3hlbXgxV1BzNW9zUUNtZ1B4THBPVm9yUVNKOVNfVG9rZW46U0RHUmJad3dob3Fwd1F4c3IxQmMyVnFobnhnXzE3NDc0NTE3ODg6MTc0NzQ1NTM4OF9WNA)
+![Beyond a Voice Recorder](https://static-docs.nocobase.com/3.0-ty43po.PNG)
 
 For content creators, it’s more than a device—it’s an AI-powered writing companion you can carry anywhere.
 
@@ -84,7 +84,7 @@ The system supports:
 * Setting up review workflows and managing their statuses.
 * Automatically publishing approved templates to the app community.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODIzNDEwNDU3MjAwOTEwYWRhODM0YmZiMDY0OWI3OWRfNk44dEdYUW8zeUJyR1ltVkJBbll0SjZKM3kzN3FhdFVfVG9rZW46VTZHYWJtazZWb3Jzck94R1NLdmNXOWVMbnJmXzE3NDc0NTE3ODg6MTc0NzQ1NTM4OF9WNA)
+![Operations System](https://static-docs.nocobase.com/4.0-cpa6sz.jfif)
 
 The entire setup needed very little developer input. It was mostly configured by the product team. A few plugins and some technical help were only brought in for complex data tasks, like JSON conversion.
 
@@ -116,6 +116,10 @@ And with its plugin-based architecture, NocoBase also gave the team a solid foun
 
 In under two years, PLAUD went from making waves with its debut product to running a full-fledged platform. Just last year, they launched NotePin—a next-gen wearable AI recorder.
 
+![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)
+
+![NotePin](https://static-docs.nocobase.com/6.0-izojvx.png)
+
 But behind this rapid evolution wasn’t just cutting-edge hardware or powerful models. What really made the difference was PLAUD’s sharp judgment and speed in building the right systems.
 
 They didn’t pour money into heavy SaaS solutions or build a massive dev team. Instead, they took a leaner, more self-directed approach—building a custom operations and support platform with open-source tools that fit their business like a glove.
@@ -123,3 +127,13 @@ They didn’t pour money into heavy SaaS solutions or build a massive dev team. 
 At the heart of it all is a key capability: being able to create a flexible, controllable system with minimal resources—so the team can stay agile even as things move fast.
 
 Looking ahead, NocoBase will continue to support PLAUD on its journey—unlocking even more possibilities where software meets hardware.
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
