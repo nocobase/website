@@ -98,8 +98,6 @@ PLAUDチームがNocoBaseについて語る際、常に「柔軟性」「効率�
 
 ![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)
 
-![NotePin](https://static-docs.nocobase.com/6.0-izojvx.png)
-
 しかし、この急速な進化の原動力は、最先端のハードウェアや強力なAIモデルだけではありませんでした。PLAUDが他と一線を画したのは、適切なシステムを構築する上での鋭い判断力と迅速な実行力です。
 
 同社は、高価なSaaSソリューションに多額の費用を投じたり、大規模な開発チームを編成したりする道を選びませんでした。その代わりに、より無駄がなく、自律的なアプローチを採用。オープンソースツールを活用し、自社のビジネスに完全に合致した独自のオペレーションおよびサポートプラットフォームを構築したのです。
@@ -111,7 +109,6 @@ PLAUDチームがNocoBaseについて語る際、常に「柔軟性」「効率�
 **関連読み物：**
 
 * [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
-
 * [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
 * [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
 * [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
