@@ -100,7 +100,7 @@ PLAUD 的业务数据结构较为复杂，涉及多张表的交叉关联与权�
 
 PLAUD 用不到两年的时间，完成了从产品爆火到平台化运营的进阶。去年下半年，他们发布了全新的可穿戴 AI 录音硬件 —— **PLAUD NotePin**。
 
-![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)![NotePin](https://static-docs.nocobase.com/6.0-izojvx.png)
+![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)
 
 而在这背后，真正支撑 PLAUD 快速进化的，除了硬件和模型能力，还有他们内部对系统建设的清醒判断和执行力。
 
@@ -113,7 +113,6 @@ PLAUD 用不到两年的时间，完成了从产品爆火到平台化运营的�
 **相关阅读：**
 
 * [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
-
 * [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
 * [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
 * [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
