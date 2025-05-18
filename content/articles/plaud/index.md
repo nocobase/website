@@ -118,8 +118,6 @@ In under two years, PLAUD went from making waves with its debut product to runni
 
 ![NotePin](https://static-docs.nocobase.com/5.0-rdpv09.png)
 
-![NotePin](https://static-docs.nocobase.com/6.0-izojvx.png)
-
 But behind this rapid evolution wasn’t just cutting-edge hardware or powerful models. What really made the difference was PLAUD’s sharp judgment and speed in building the right systems.
 
 They didn’t pour money into heavy SaaS solutions or build a massive dev team. Instead, they took a leaner, more self-directed approach—building a custom operations and support platform with open-source tools that fit their business like a glove.
@@ -131,7 +129,6 @@ Looking ahead, NocoBase will continue to support PLAUD on its journey—unlockin
 **Related reading:**
 
 * [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
-
 * [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
 * [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
 * [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
