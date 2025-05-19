@@ -6,6 +6,8 @@ So, we decided to build our own custom ticketing system using NocoBase.
 
 During this process, we tested several open-source projects and identified some excellent tools, while also defining **the core features essential for an effective ticketing system**.
 
+![Ticketing Systems](https://static-docs.nocobase.com/Frame%2073%20(1)-nwwjl2.png)
+
 A truly effective ticketing system must go beyond mere "recording" and **support continuous follow-ups, team collaboration, and process transparency**. These are the non-negotiable features we identified:
 
 * **Data Integration**: Linking user information with business context. A ticketing system that can’t associate tickets with user profiles, historical interactions, or orders makes issue resolution slow and inefficient. Ideally, it should integrate seamlessly with internal systems like CRM, ERP, etc., to pull in user data, order records, and usage patterns—reducing manual data entry and improving response times.
