@@ -7,8 +7,8 @@
   "description_cn": "面对业务增长，全球第一AI录音笔品牌 PLAUD 选择开源无代码平台 NocoBase 搭建客服和运营系统，满足灵活可控需求，提升工作效率。",
   "description_ja": "ビジネス成長に直面して、世界 No.1 の AI 録音ペンブランド PLAUD は、オープンソースノーコードプラットフォーム NocoBase を選択し、柔軟性と制御性を備えたカスタマーサービスおよび運用システムの構築を行い、業務効率の向上を図りました。",
   "slug": "plaud",
-  "publishedAt": "2025-05-17T03:16:02.195Z",
-  "status": "drafted",
+  "publishedAt": "2025-05-19T00:07:28.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -344,5 +344,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-18T13:16:48.638Z"
+  "updatedAt": "2025-05-19T00:07:32.071Z"
 }
