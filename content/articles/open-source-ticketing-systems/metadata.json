@@ -8,7 +8,7 @@
   "description_ja": "本文では 2025 年のベストオープンソースチケットシステム 6 選を紹介し、NocoBase や UVdesk などを含め、核心となる機能要件を解析します。企業の顧客サポートの効率化と管理の柔軟性向上に役立ちます。",
   "slug": "open-source-ticketing-systems",
   "publishedAt": "2025-05-16T01:21:54.021Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -422,5 +422,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-19T03:03:56.815Z"
+  "updatedAt": "2025-05-19T05:12:12.678Z"
 }
