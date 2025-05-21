@@ -1,14 +1,14 @@
 {
   "id": 463,
-  "title": "NocoBase v1.7.0-alpha.14",
-  "title_cn": "NocoBase v1.7.0-alpha.14",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.7.0-alpha.14: support commercial authorization",
+  "title_cn": "NocoBase v1.7.0-alpha.14：支持商业授权",
+  "title_ja": "NocoBase v1.7.0-alpha.14：商用認証をサポート",
   "description": "Release Note of v1.7.0-alpha.14",
   "description_cn": "v1.7.0-alpha.14 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.7.0-alpha.14 のリリースノート",
   "slug": "v1.7.0-alpha.14",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-20T16:08:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,10 +37,53 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-21T01:12:43.612Z",
+        "updatedAt": "2025-05-21T01:12:43.612Z",
+        "articles_id": 463,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-21T01:07:31.747Z",
+    "updatedAt": "2025-05-21T01:07:31.747Z",
+    "id": 1294,
+    "title": "develop",
+    "filename": "develop-d3fi1s.png",
+    "extname": ".png",
+    "size": 76420,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-d3fi1s.png",
+    "preview": "https://static-docs.nocobase.com/develop-d3fi1s.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-20T16:08:08.212Z"
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-21T01:12:43.588Z"
 }
