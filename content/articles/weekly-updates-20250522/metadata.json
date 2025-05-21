@@ -1,11 +1,11 @@
 {
   "id": 464,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週のアップデート：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Add Support for Bulk Printing in Template Printing",
+  "title_cn": "NocoBase 本周更新汇总：模板打印支持批量打印",
+  "title_ja": "NocoBase 今週のアップデート：テンプレート印刷に一括印刷機能を追加",
+  "description": "This week’s updates include: single-line text fields support multiple-keyword filtering, add bulk printing support in template printing, and more.",
+  "description_cn": "本周更新包括：单行文本字段支持输入多个关键词进行筛选，模板打印新增批量打印功能支持等。",
+  "description_ja": "今週の更新では、一行テキストフィールドの複数キーワードフィルタリング機能のサポート、テンプレート印刷における一括印刷機能の追加などが含まれます。",
   "slug": "weekly-updates-20250522",
   "publishedAt": "2025-05-22T00:00:00.000Z",
   "status": "drafted",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-21T03:25:09.049Z"
+  "updatedAt": "2025-05-21T08:41:02.975Z"
 }
