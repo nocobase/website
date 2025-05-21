@@ -1,6 +1,8 @@
 ## AI スタートアップが下した重要な決断
 
-Second-Brain は香港に拠点を置く AI スタートアップで、金融やコンサルティング出身のメンバーによって設立されました。企業向けに、AI を活用した意思決定支援システムの開発を手がけています。
+[Second-Brain ]([Second-Brain](http://www.dbl-brain.com/))は香港に拠点を置く AI スタートアップで、金融やコンサルティング出身のメンバーによって設立されました。企業向けに、AI を活用した意思決定支援システムの開発を手がけています。
+
+![Second-Brain](https://static-docs.nocobase.com/1-esvvr0.PNG)
 
 企業向け AI システムの開発で一番の難関は、実はモデルの構築ではありません。その背後にある、バラバラで整っていない業務データです。社内ルールやワークフロー、業務記録は別々の場所に保存され、形式も統一されておらず、内容が食い違っていることすらあります。こうした情報を整理・構造化しなければ、AI にとって意味のある分析は不可能です。
 
@@ -45,14 +47,28 @@ NocoBase の技術的な実現性が確認された後、Second-Brain はアー�
 NocoBase はシステムの中核として活用され、チームは以下のような成果を実現しました：
 
 * 規程文書や業務ルールを AI が読み取れる形式の構造化データに変換
+
+![Transform regulatory documents and policies into structured, standardized data](https://static-docs.nocobase.com/2-5xor3v.PNG)
+
 * AI の Q&A 機能の基盤となるデータインフラを構築し：
   * 日常的な質問やポリシーの問い合わせに対応
   * 複数のデータソースをまたぐ業務系のクエリに対応
   * 管理層向けに構造化された分析結果を出力
+
+![Power the data infrastructure behind the AI Q&A module](https://static-docs.nocobase.com/3-p8o62u.PNG)
+
 * 社内ツールを通じて AI 活用をサポート：
-  * PDF や Word、画像ファイルなどの文書をテキスト化する前処理ツール
-  * 選別された文章から Q&A ペアを自動生成し、ファインチューニング用のデータセットを強化
+
+  PDF や Word、画像ファイルなどの文書をテキスト化する前処理ツール
+
+  ![Document preprocessing](https://static-docs.nocobase.com/4-sdv8mt.png)
+
+  選別された文章から Q&A ペアを自動生成し、ファインチューニング用のデータセットを強化
+
+  ![Generating Q&A pairs](https://static-docs.nocobase.com/5-hb6nly.png)
 * 規則やルール間の関連性をナレッジグラフとして可視化するため、ECharts のカスタムプラグインを開発
+
+![ECharts plugin](https://static-docs.nocobase.com/6-qalqnu.png)
 
 ## プラグインアーキテクチャ：想定以上の成果
 
@@ -95,3 +111,12 @@ Second-Brain は、少人数のチームでありながら、複雑かつ高セ�
 NocoBase が目指しているのは、まさにこうした形です。煩雑で繰り返しの多い開発作業を減らし、チームが創造性と実用性のある仕事に集中できる環境を提供すること。
 
 セキュリティに厳しく、要件が複雑な業界においても、柔軟性のあるノーコード／ローコードプラットフォームなら、これまで難しかったシステム開発のあり方を大きく変えられる——このプロジェクトがそれを証明しています。
+
+**関連読み物：**
+
+* [AIボイスレコーダー世界No.1企業に学ぶ、急成長を支える社内システム構築術](https://www.nocobase.com/ja/blog/plaud)
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
