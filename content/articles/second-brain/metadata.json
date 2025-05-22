@@ -8,7 +8,7 @@
   "description_ja": "香港の AI 企業 Second-Brain は NocoBase を採用し、高セキュリティと短期間の課題を克服し、金融企業向けの AI システムを構築し、効率的な導入と能力の積み上げを実現しました。",
   "slug": "second-brain",
   "publishedAt": "2025-05-21T05:43:43.322Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -448,5 +448,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-21T06:36:54.037Z"
+  "updatedAt": "2025-05-22T01:03:22.547Z"
 }
