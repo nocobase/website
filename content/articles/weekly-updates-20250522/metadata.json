@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、一行テキストフィールドの複数キーワードフィルタリング機能のサポート、テンプレート印刷における一括印刷機能の追加などが含まれます。",
   "slug": "weekly-updates-20250522",
   "publishedAt": "2025-05-22T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -111,5 +111,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-21T08:41:02.975Z"
+  "updatedAt": "2025-05-22T01:03:14.062Z"
 }
