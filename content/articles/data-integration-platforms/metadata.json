@@ -3,7 +3,7 @@
   "title": "7 Best Data Integration Platforms: Reviews & Top Picks",
   "title_cn": "7 款最佳数据集成平台推荐",
   "title_ja": "おすすめデータ統合プラットフォーム7選：比較レビュー",
-  "description": "Recommended 7 best data integration platforms, covering data model-driven, enterprise ETL, and iPaaS/no-code automation categories to help businesses break through data silos.",
+  "description": "Explore 7 best data integration platforms, covering data model-driven, enterprise ETL, and iPaaS/no-code automation categories to help businesses break through data silos.",
   "description_cn": "推荐 7 款最佳数据集成平台，涵盖数据模型驱动、企业级 ETL、iPaaS / 无代码自动化三类，助企业破局信息孤岛。",
   "description_ja": "最適な 7 つのデータ統合プラットフォームを紹介。データモデル駆動型、エンタープライズ ETL、iPaaS / ノーコード自動化の 3 カテゴリを網羅し、企業のデータシロ解消を支援します。",
   "slug": "data-integration-platforms",
@@ -247,8 +247,24 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-26T11:26:15.563Z",
+    "updatedAt": "2025-05-26T11:26:15.563Z",
+    "id": 1338,
+    "title": "Frame 74",
+    "filename": "Frame 74-mx2czh.png",
+    "extname": ".png",
+    "size": 1220272,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2074-mx2czh.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2074-mx2czh.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-26T10:24:34.762Z"
+  "updatedAt": "2025-05-26T11:28:35.648Z"
 }
