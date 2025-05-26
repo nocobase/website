@@ -27,7 +27,7 @@ GitHub Stars: 15.7k
 **Key Features:**
 
 * **Data Model-Driven**: Build applications around structured data models rather than spreadsheets or basic databases. This aligns closely with real-world business logic, making it ideal for complex workflows.
-* **Plugin**** Architecture**: Highly modular with a plugin system that keeps the core lightweight while enabling infinite extensibility.
+* **Plugin Architecture**: Highly modular with a plugin system that keeps the core lightweight while enabling infinite extensibility.
 * **Powerful Integration**: Seamlessly connects multiple data sources, existing systems, and builds unified data entry points. Users can integrate data *and* build workspaces, dashboards, or internal tools in one platform.
 
 **Use Case**: Enterprises of all sizes needing to integrate multi-source data and build systems like CRM, ERP, or custom workflows.
