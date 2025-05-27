@@ -42,5 +42,8 @@
   "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-27T12:55:00.658Z"
+  "updatedAt": "2025-05-27T12:55:00.658Z",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }
