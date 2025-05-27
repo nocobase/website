@@ -123,3 +123,10 @@ KIGLAND’s journey is a reminder of a simple but powerful truth:
 Their transformation wasn’t powered by an out-of-the-box solution—it was made possible by a system they could shape, extend, and evolve alongside their business.
 
 For teams navigating digital transformation, the real breakthrough might not come from finding a perfect all-in-one platform—but from building on something like **NocoBase**: a flexible, open foundation that grows with you.
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)

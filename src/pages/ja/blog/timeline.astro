@@ -114,11 +114,11 @@ const tabs = [
                     ) : (
                       <div class="card event rounded shadow border-0 overflow-hidden float-start">
                         <div class="card-body">
-                          <h3 class="h4">
+                          <h5>
                             <a href={`${basepath}/${article.slug}`}>
                               {article.title_ja || article.title}
                             </a>
-                          </h3>
+                          </h5>
                           <div class="text-muted mt-2" set:html={article.renderedContent} />
                           {article.tags.length > 0 && (
                             <div class="mt-2">

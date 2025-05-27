@@ -137,3 +137,10 @@ KIGLANDが選んだのは、最初から完成された製品ではありませ�
 突破口は「全部入りの理想的なプラットフォーム」ではなく、
 
 “共に育つ”仕組みを持つことかもしれません。
+
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)

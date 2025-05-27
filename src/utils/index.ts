@@ -45,7 +45,8 @@ export function getLocalizedContent(data: any, field: string, locale: string = D
 
 const baseURL = (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/';
 const token = import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN;
-const useLocalContent = import.meta.env.USE_LOCAL_CONTENT === 'true' || process.env.USE_LOCAL_CONTENT === 'true';
+// Force local content to be used
+const useLocalContent = true;
 
 export function url(path: string) {
   if (path.startsWith('https')) {
@@ -728,10 +729,11 @@ export async function getSitemapLinks() {
 export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
   const { page = 1, pageSize = 10 } = options || {};
   
+  // 使用统一的API调用方式
   const { data, meta } = await listArticles({ 
     page,
     pageSize,
-    sort: ['-publishedAt'], // Sorting by published date is more appropriate
+    sort: ['-publishedAt'],
     appends: ['sub_tags', 'cover'],
     filter: {
       $and: [
@@ -741,39 +743,43 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     }
   });
 
-  // Safely process the pipeline
+  // 处理数据
   const processedData = (data || []).map(article => {
-    // Safely access sub_tags (handle undefined, null, or non-array cases)
+    // 安全访问sub_tags
     const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
     
-    // Original logic: use the first valid tag, otherwise default to 'Latest'
+    // 获取主标签，默认为"Latest"
     const primaryTag = subTags[0]?.title || 'Latest';
     
-    // Retain all tags (for compatibility with original data)
-    const allTags = article.sub_tags.map((t: any) => t.title.toLowerCase());
+    // 收集所有标签
+    const allTags = subTags.map((t: any) => t.title?.toLowerCase() || '');
 
-    // Original weekly update filtering logic
+    // 过滤掉周更新
     if (primaryTag === 'Weekly Updates') return null;
 
     return {
       ...article,
-      // Maintain original data structure
+      // 保持数据结构一致
       tags: allTags,
+      // 确保内容字段都存在
       content: article.content || '',
-      // Compatible with original milestone determination logic
+      content_cn: article.content_cn || article.content || '',
+      content_ja: article.content_ja || article.content || '',
+      content_ru: article.content_ru || article.content || '',
+      // 添加里程碑标志
       isMilestone: (article.sub_tags || []).some((t: any) => t.title === 'Milestone'),
-      // Maintain original priority logic
+      // 保持优先级逻辑
       priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
-      // Safely process the date
+      // 安全处理日期
       publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
-      // Safely process the cover
+      // 安全处理封面
       cover: article.cover?.url ? { url: article.cover.url } : null
     };
   })
-  .filter(Boolean) // Filter out weekly updates
-  .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // Sort in descending order by time
+  .filter(Boolean) // 过滤掉周更新
+  .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // 按时间倒序排列
 
-  // Determine if there is more content to load
+  // 确定是否有更多内容可加载
   const totalItems = meta?.total || 0;
   const currentCount = (page - 1) * pageSize + processedData.length;
   const hasMore = currentCount < totalItems;
@@ -782,7 +788,7 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     data: processedData, 
     meta: {
       ...meta,
-      hasMore, // Add the 'hasMore' flag
+      hasMore, // 添加hasMore标志
       pageCount: Math.ceil(totalItems / pageSize)
     } 
   };

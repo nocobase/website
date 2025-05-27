@@ -1,0 +1,89 @@
+{
+  "id": 448,
+  "title": "NocoBase v1.6.26: Iframe block supports configuring the allow attribute",
+  "title_cn": "NocoBase v1.6.26：Iframe 区块支持配置 allow 属性",
+  "title_ja": "NocoBase v1.6.26：iframe ブロックが allow 属性の設定をサポートするようになりました",
+  "description": "Release Note of v1.6.26",
+  "description_cn": "v1.6.26 更新日志",
+  "description_ja": "v1.6.26 のリリースノート",
+  "slug": "v1.6.26",
+  "publishedAt": "2025-05-07T14:26:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-05-07T14:26:07.182Z",
+        "updatedAt": "2025-05-07T14:26:07.182Z",
+        "tagId": 4,
+        "articleId": 448
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-08T01:06:36.563Z",
+        "updatedAt": "2025-05-08T01:06:36.563Z",
+        "articles_id": 448,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-05-08T00:54:36.962Z",
+    "updatedAt": "2025-05-08T00:54:36.962Z",
+    "id": 1187,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-mqrhyh.png",
+    "extname": ".png",
+    "size": 89762,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-mqrhyh.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-mqrhyh.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-08T01:06:36.554Z"
+}

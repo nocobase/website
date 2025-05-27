@@ -37,11 +37,24 @@ function readFileOrNull(filePath: string): string | null {
 
 // Read JSON file
 function readJsonFile(filePath: string): any {
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content);
+  try {
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      try {
+        const json = JSON.parse(content);
+        return json;
+      } catch (parseError) {
+        console.error(`Error parsing JSON file ${filePath}:`, parseError);
+        // 打印文件内容的前100个字符，帮助调试
+        console.error(`File content begins with: ${content.slice(0, 100)}...`);
+        return null;
+      }
+    }
+    return null;
+  } catch (error) {
+    console.error(`Error reading file ${filePath}:`, error);
+    return null;
   }
-  return null;
 }
 
 // List all subdirectories in a given directory
@@ -356,35 +369,112 @@ export async function listArticles(options?: {
   sort?: string[];
   appends?: string[];
 }) {
+  console.log('listArticles called with options:', JSON.stringify(options, null, 2));
+  
   const { 
     hideOnBlog, 
     categorySlug, 
     tagSlug, 
     page = 1, 
     pageSize = 9,
-    sort = ['-publishedAt']
+    sort = ['-publishedAt'],
+    filter = {}
   } = options || {};
 
   // Get all articles directories
   const articlesDir = path.join(contentRoot, 'articles');
+  if (!fs.existsSync(articlesDir)) {
+    console.error(`Articles directory does not exist: ${articlesDir}`);
+    return { data: [], meta: { total: 0, count: 0, pageSize, currentPage: page, totalPages: 0, totalPage: 0 } };
+  }
+  
   const articleSlugs = listSubdirectories(articlesDir);
+  console.log(`Found ${articleSlugs.length} article directories`);
   
   // Read all articles metadata
-  const articles = articleSlugs.map(slug => {
-    const metadataPath = path.join(articlesDir, slug, 'metadata.json');
-    return readJsonFile(metadataPath) || null;
-  }).filter(Boolean);
-
-  // Filter conditions
-  let filteredArticles = articles.filter(article => 
-    article.status === 'published' && 
-    !article.hideOnListPage
-  );
-
-  if (hideOnBlog === false) {
-    filteredArticles = filteredArticles.filter(article => !article.hideOnBlog);
+  const articles = [];
+  
+  for (const slug of articleSlugs) {
+    try {
+      const metadataPath = path.join(articlesDir, slug, 'metadata.json');
+      if (!fs.existsSync(metadataPath)) {
+        console.log(`Metadata file not found for article: ${slug}`);
+        continue;
+      }
+      
+      const metadata = readJsonFile(metadataPath);
+      if (!metadata) {
+        console.log(`Failed to read metadata for article: ${slug}`);
+        continue;
+      }
+      // Ensure necessary fields exist
+      if (!metadata.title) {
+        console.log(`Article missing title: ${slug}`);
+        continue;
+      }
+      
+      // Read content in different languages
+      const contentPath = path.join(articlesDir, slug, 'index.md');
+      const contentCnPath = path.join(articlesDir, slug, 'index.cn.md');
+      const contentJaPath = path.join(articlesDir, slug, 'index.ja.md');
+      const contentRuPath = path.join(articlesDir, slug, 'index.ru.md');
+      
+      // Read content and add to metadata
+      if (fs.existsSync(contentPath)) {
+        metadata.content = fs.readFileSync(contentPath, 'utf-8');
+      }
+      if (fs.existsSync(contentCnPath)) {
+        metadata.content_cn = fs.readFileSync(contentCnPath, 'utf-8');
+      }
+      if (fs.existsSync(contentJaPath)) {
+        metadata.content_ja = fs.readFileSync(contentJaPath, 'utf-8');
+      }
+      if (fs.existsSync(contentRuPath)) {
+        metadata.content_ru = fs.readFileSync(contentRuPath, 'utf-8');
+      }
+      
+      // Use default content if specific language content is not found
+      if (!metadata.content_cn && metadata.content) {
+        metadata.content_cn = metadata.content;
+      }
+      if (!metadata.content_ja && metadata.content) {
+        metadata.content_ja = metadata.content;
+      }
+      if (!metadata.content_ru && metadata.content) {
+        metadata.content_ru = metadata.content;
+      }
+      
+      // Ensure tags field is always an array
+      if (!metadata.tags) {
+        metadata.tags = [];
+      } else if (!Array.isArray(metadata.tags)) {
+        metadata.tags = [];
+      }
+      
+      // Add to articles list
+      articles.push(metadata);
+    } catch (error) {
+      console.error(`Error processing article ${slug}:`, error);
+    }
   }
 
+
+  // Filter conditions - Simplify filtering logic
+  let filteredArticles = articles;
+  
+  // Basic filtering: status is published
+  filteredArticles = filteredArticles.filter(article => 
+    article.status === 'published'
+  );
+
+  // Handle hideOnBlog and hideOnListPage
+  if (hideOnBlog === false) {
+    filteredArticles = filteredArticles.filter(article => article.hideOnBlog !== true);
+  }
+  
+  filteredArticles = filteredArticles.filter(article => article.hideOnListPage !== true);
+
+  // Handle tag and category filtering
   if (tagSlug) {
     filteredArticles = filteredArticles.filter(article => 
       article.tags && article.tags.some((tag: any) => tag.slug === tagSlug)
@@ -397,11 +487,105 @@ export async function listArticles(options?: {
     );
   }
 
+  // Handle simple filtering conditions
+  for (const key in filter) {
+    if (key !== '$and') {
+      if (typeof filter[key] === 'object' && filter[key] !== null) {
+        // Handle conditions with operators, e.g., { $eq: 'value' }
+        for (const op in filter[key]) {
+          if (op === '$eq') {
+            const value = filter[key][op];
+            filteredArticles = filteredArticles.filter(article => article[key] === value);
+          }
+        }
+      } else {
+        // Handle simple conditions, e.g., status: 'published'
+        const value = filter[key];
+        filteredArticles = filteredArticles.filter(article => article[key] === value);
+      }
+    }
+  }
+
+  // Handle complex filtering conditions
+  if (filter.$and && Array.isArray(filter.$and)) {
+    
+    // Handle simple $and conditions
+    filter.$and.forEach(condition => {
+      for (const key in condition) {
+        // Process nested path like "tags.title"
+        if (key.includes('.')) {
+          const parts = key.split('.');
+          const objectKey = parts[0]; // e.g., "tags"
+          
+          if (objectKey === 'tags') {
+            // Handle tag filtering
+            if (parts[1] === 'title') {
+              const titleCondition = condition[key];
+              if (titleCondition && typeof titleCondition === 'object') {
+                // Handle different operators
+                if (titleCondition.$notIncludes) {
+                  // Filter articles without the forbidden tag
+                  const forbiddenValue = titleCondition.$notIncludes;
+                  filteredArticles = filteredArticles.filter(article => {
+                    // If no tags, it passes the filter
+                    if (!article.tags || !Array.isArray(article.tags) || article.tags.length === 0) {
+                      return true;
+                    }
+                    
+                    // Check that no tag has a title containing the forbidden value
+                    return !article.tags.some((tag: any) => 
+                      tag.title && typeof tag.title === 'string' && 
+                      tag.title.includes(forbiddenValue)
+                    );
+                  });
+                } else if (titleCondition.$eq) {
+                  // Filter articles with the specified tag
+                  const requiredValue = titleCondition.$eq;
+                  filteredArticles = filteredArticles.filter(article => {
+                    if (!article.tags || !Array.isArray(article.tags)) {
+                      return false;
+                    }
+                    
+                    // Check if any tag has the required title
+                    return article.tags.some((tag: any) => 
+                      tag.title && tag.title === requiredValue
+                    );
+                  });
+                }
+              }
+            }
+          } else {
+            // Handle other nested paths if needed
+            // This is a placeholder for future extensions
+          }
+        } else if (!key.includes('.')) {
+          if (typeof condition[key] === 'object' && condition[key] !== null) {
+            // Handle conditions with operators, e.g., { $eq: 'value' }
+            for (const op in condition[key]) {
+              if (op === '$eq') {
+                const value = condition[key][op];
+                filteredArticles = filteredArticles.filter(article => article[key] === value);
+              }
+            }
+          } else {
+            // Handle simple conditions, e.g., status: 'published'
+            const value = condition[key];
+            filteredArticles = filteredArticles.filter(article => article[key] === value);
+          }
+        }
+      }
+    });
+  }
+
   // Sorting
   filteredArticles.sort((a, b) => {
     for (const sortField of sort) {
       const desc = sortField.startsWith('-');
       const field = desc ? sortField.substring(1) : sortField;
+      
+      if (!a[field] && !b[field]) continue;
+      if (!a[field]) return desc ? -1 : 1;
+      if (!b[field]) return desc ? 1 : -1;
       
       if (a[field] < b[field]) return desc ? 1 : -1;
       if (a[field] > b[field]) return desc ? -1 : 1;
@@ -417,9 +601,11 @@ export async function listArticles(options?: {
     data: paginatedArticles,
     meta: {
       total: filteredArticles.length,
+      count: filteredArticles.length,
       pageSize,
       currentPage: page,
-      totalPages: Math.ceil(filteredArticles.length / pageSize)
+      totalPages: Math.ceil(filteredArticles.length / pageSize),
+      totalPage: Math.ceil(filteredArticles.length / pageSize)
     }
   };
 }
@@ -761,76 +947,3 @@ export async function getSitemapLinks() {
   
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
-
-// List release notes
-export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
-  const { page = 1, pageSize = 10 } = options || {};
-  
-  // Retrieve all articles with the "Release Notes" tag
-  const { data: allArticles } = await listArticles({
-    page: 1,
-    pageSize: 5000,  // Retrieve all articles first
-    sort: ['-publishedAt'],
-    filter: {
-      // Retrieve articles with the "Release Notes" tag
-    }
-  });
-  
-  // Filter articles that include the "Release Notes" tag
-  const releaseNotes = allArticles.filter((article: any) => {
-    return article.tags && article.tags.some((tag: any) => tag.title === 'Release Notes');
-  });
-  
-  // Process each article and add the required special fields
-  const processedData = releaseNotes.map((article: any) => {
-    // Get sub-tags
-    const subTags = Array.isArray(article.sub_tags) ? article.sub_tags : [];
-    
-    // Take the first valid tag; default to 'Latest' if absent
-    const primaryTag = subTags[0]?.title || 'Latest';
-    
-    // All tags
-    const allTags = (article.sub_tags || []).map((t: any) => t.title.toLowerCase());
-    
-    // Filter out weekly updates
-    if (primaryTag === 'Weekly Updates') return null;
-    
-    return {
-      ...article,
-      tags: allTags,
-      content: article.content || '',
-      isMilestone: (article.sub_tags || []).some((t: any) => t.title === 'Milestone'),
-      priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
-      publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
-      cover: article.cover?.url ? { url: article.cover.url } : null
-    };
-  }).filter(Boolean);
-  
-  // Sort by date in descending order
-  processedData.sort((a: any, b: any) => 
-    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
-  
-  // Pagination
-  const startIndex = (page - 1) * pageSize;
-  const paginatedData = processedData.slice(startIndex, startIndex + pageSize);
-  
-  // Determine if there are more items
-  const totalItems = processedData.length;
-  const currentCount = (page - 1) * pageSize + paginatedData.length;
-  const hasMore = currentCount < totalItems;
-  
-  return {
-    data: paginatedData,
-    meta: {
-      total: totalItems,
-      pageSize,
-      currentPage: page,
-      totalPages: Math.ceil(totalItems / pageSize),
-      hasMore,
-      pageCount: Math.ceil(totalItems / pageSize)
-    }
-  };
-}
-
-// Implement other required methods, such as listArticleCategories, listArticleTags, according to the original API's behavior

@@ -36,7 +36,7 @@ Bestoneは、大規模な法律サービス提供者として、多くの法律�
 その結果、Bestoneは、ニーズを満たす成熟した低コードプロバイダーを探し始めました。徹底的な市場調査と比較分析を行った結果、チームはその卓越した機能からNocoBaseを選定しました。この解決策が問題の鍵になることを期待しています。
 
 > NocoBaseのアーキテクチャは非常に柔軟で、データモデルドリブンです。運用チームは、複雑なカスタム開発に依存せずに、案件処理の変化に迅速に適応でき、従来のページインタラクション開発期間を大幅に短縮できます。
-> 
+>
 > ——ワン・ズーヤ、製品マネージャー
 
 BestoneがNocoBaseを選んだ理由は、以下の通りです：
@@ -73,9 +73,19 @@ Bestoneが得た利益の他に、NocoBaseのオープンソース性は、さ�
 ## **NocoBaseとともに約束された未来**
 
 > "NocoBaseの実装は、単なる技術のアップグレードではなく、私たちのビジネス発展戦略の重要な部分です。NocoBaseを継続的に最適化し利用することで、より多くのビジネスシナリオに対処し、ビジネス効率を向上させることができると確信しています。"
-> 
+>
 > ——ワン・ズーヤ、製品マネージャー
 
 Bestoneは企業法律技術サービスに特化し、NocoBaseはノーコードプラットフォーム技術に注力しています。NocoBaseは、マイクロカーネルアーキテクチャとモデル駆動設計に支えられた安定で拡張可能なノーコードプラットフォームを提供し、Bestoneが迅速な開発と深いカスタマイズを実現できるようにサポートします。これにより、Bestoneは製品の改善と革新に集中できます。
 
 今後、BestoneはNocoBaseと密接に協力して法律サービスにおけるリーダーシップを維持することを目指しています。彼らは、より多くのクライアントのために革新的なソリューションを探求し、実現する計画を立てています。技術の進歩とともに、Bestoneは高品質な法律サービスを提供し、より多くの成功事例を達成することを期待しています。
+
+**関連読み物：**
+
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)

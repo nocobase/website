@@ -1,6 +1,7 @@
 FROM node:18.20.3-slim as builder
 
 ENV SITE_APPDIR /site
+ENV USE_LOCAL_CONTENT true
 
 # RUN npm config set registry https://registry.npmmirror.com/
 
@@ -20,6 +21,7 @@ FROM node:18.20.3-slim
 
 ENV SITE_APPDIR /site
 ENV SITE_PORT 4321
+ENV USE_LOCAL_CONTENT true
 
 COPY --from=builder /site /site
 EXPOSE $SITE_PORT
