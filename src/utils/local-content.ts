@@ -335,12 +335,15 @@ export async function getPage(slug?: string, locale = 'en') {
     title: metadata.title,
     title_cn: metadata.title_cn,
     title_ja: metadata.title_ja,
+    title_ru: metadata.title_ru,
     description: metadata.description,
     description_cn: metadata.description_cn,
     description_ja: metadata.description_ja,
+    description_ru: metadata.description_ru,
     keywords: metadata.keywords,
     keywords_cn: metadata.keywords_cn,
     keywords_ja: metadata.keywords_ja,
+    keywords_ru: metadata.keywords_ru,
     slug: metadata.slug,
     createdAt: metadata.createdAt,
     updatedAt: metadata.updatedAt,
@@ -349,6 +352,7 @@ export async function getPage(slug?: string, locale = 'en') {
     content: locale === 'en' ? content : null,
     content_cn: locale === 'cn' ? content : null,
     content_ja: locale === 'ja' ? content : null,
+    content_ru: locale === 'ru' ? content : null,
     html: code 
   };
   
