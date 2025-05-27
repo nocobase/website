@@ -83,3 +83,13 @@ NocoBase 简洁直观的界面为百事通提供了方便的新案件录入，�
 百事通深耕企业法律科技服务领域， NocoBase 专注于无代码底层技术平台的钻研。NocoBase 的微内核架构和模型驱动设计为百事通提供了稳定且可扩展的平台，满足快速开发和深度定制的需求，让他们能专注于业务创新。
 
 百事通相信，通过与 NocoBase 的紧密合作，他们将不仅在法律服务领域保持领先地位，还将探索更多创新解决方案，帮助客户应对未来的挑战。随着底层技术的不断发展，百事通期待着为更多客户提供触手可得的优质法律服务，并创造更多成功案例。
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)

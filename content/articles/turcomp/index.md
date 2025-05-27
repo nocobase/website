@@ -55,3 +55,13 @@ Since NocoBase was introduced, Turcomp has improved in-house development's agili
 > "In summary, Nocobase has emerged as the cornerstone of our no-code development endeavors, catalyzing tangible progress and reinforcing our commitment to excellence in the oil and gas sector. We commend its efficacy and commendability, acknowledging its instrumental role in our continued success and growth trajectory."
 >
 > **Turcomp IT department**
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)

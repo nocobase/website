@@ -121,3 +121,10 @@ KIGLAND 的探索告诉我们一个朴素却深刻的事实：
 而他们之所以能快速完成从混乱到高效的转变，NocoBase 是关键的一环——它不是一个现成的系统，而是一套可以共建、共成长的“操作底座”。
 
 **对正在经历数字化转型的团队来说，也许你们要找的不是某个万能模板，而是一个像 NocoBase 这样的“积木系统”——灵活、可靠、能生长。**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)

@@ -91,3 +91,13 @@
 > —— 孙晓峰 成都香城档案科技有限公司负责人
 
 **工具变革****助力企业创新成为行业破局者****，也推动企业的组织变革，为发展注入无限动力。对香城档案而言，NocoBase 不只是生产工具，更是推动企业发展的关键力量。**
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)

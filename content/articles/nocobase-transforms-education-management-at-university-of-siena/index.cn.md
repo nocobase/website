@@ -65,3 +65,13 @@ NocoBase 所提供的灵活性和易用性激发了团队开发新服务和探�
 > ——锡耶纳大学，在线学习和协作平台团队
 
 锡耶纳大学的经验凸显了 NocoBase 在教育领域的潜力。其灵活性和可扩展性使大学能够迅速适应教育趋势和技术发展，同时简化了数据管理并增强了用户交互。通过 NocoBase，锡耶纳大学不仅改进了教育管理系统，更为持续的教育创新提供了可能。
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)

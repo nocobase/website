@@ -67,3 +67,13 @@ NocoBaseを利用してシステムを実装することにより、シエナ大
 > -- シエナ大学、オンライン学習及びコラボレーションプラットフォームチーム
 
 シエナ大学の経験は、教育におけるNocoBaseの可能性を示しています。プラットフォームの柔軟性とスケーラビリティは、学校が教育のトレンドや技術の進歩に迅速に適応し、データ管理を合理化し、ユーザーエクスペリエンスを改善することを可能にします。NocoBaseを通じて、シエナ大学は教育管理システムを強化し、継続的なイノベーションの機会を創出しました。
+
+**関連読み物：**
+
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)

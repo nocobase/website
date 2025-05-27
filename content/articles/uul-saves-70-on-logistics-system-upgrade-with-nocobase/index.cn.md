@@ -76,3 +76,13 @@
 经过计算，如果美航的物流交付系统采用传统方式开发，预算大约在1000-2000万人民币之间。但现在使用 NocoBase 作为基础设施进行开发，**预计成本将控制在30%以内**，甚至更少。目前，用 NocoBase 搭建的系统已经替换了原有系统中财务部分的 10% 和运输部分的 5%。张卓预计，到 2025 年初，能完成整体系统 50% 的替换。
 
 在未来，美航与宇器科技将继续深度合作，借助 NocoBase 进一步优化和扩展物流交付系统。随着更多模块的逐步上线和集成，整个系统的效率和灵活性将不断提升。美航计划在未来两年内实现全系统的数字化转型，以应对市场的快速变化和客户日益增长的需求。
+
+**相关阅读：**
+
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
+* [超 400 人团队律所，如何用 NocoBase 高效管理律师提成？](https://www.nocobase.com/cn/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [1周上线，2个月交付！有巢数智如何用 NocoBase 颠覆建筑行业数智化效率](https://www.nocobase.com/cn/blog/rapid-development-with-nocobase)
+* [低代码加速智能制造，兰之天的选择是 NocoBase](https://www.nocobase.com/cn/blog/Orchisky)

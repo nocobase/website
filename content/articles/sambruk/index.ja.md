@@ -86,3 +86,13 @@ NocoBaseに基づくプロジェクトの開発は順調に進んでおり、プ
 自治体と学校は、NocoBaseの使いやすさと柔軟性を高く評価しています。彼らはデータ処理やインターフェース生成の容易さを評価し、迅速なアプリケーション開発を可能にしています。一部の学校は、特にデータ管理や意思決定支援の分野で、試行段階においてNocoBaseの便益を享受しています。
 
 我々は、プロジェクトが今後数ヶ月で完全に展開されて広く展開されることを期待しています。プロジェクトが進むにつれて、Sambrukチームはすべての関係者のニーズにより良く応えるために、プラグインでNocoBaseの機能を引き続き改善・拡張していくでしょう。
+
+**関連読み物：**
+
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [奥雅の新たなデジタル化版図：NocoBase を用いて精緻化管理の新たな可能性を探求する](https://www.nocobase.com/ja/blog/l-a)
+* [オープンソースで実現する、アニメマスク製造のスケール化](https://www.nocobase.com/ja/blog/kigland)
+* [400名超の弁護士事務所、NocoBaseで報酬管理を最適化](https://www.nocobase.com/ja/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [NocoBaseで迅速開発！建設業DXの成功事例](https://www.nocobase.com/ja/blog/rapid-development-with-nocobase)
+* [ローコードでスマート製造を加速！蘭之天が選んだのは NocoBase](https://www.nocobase.com/ja/blog/Orchisky)

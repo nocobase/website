@@ -79,3 +79,13 @@ Apart from the above benefits Bestone has gained, NocoBase's open-source nature 
 Bestone specializes in enterprise legal technology services, while NocoBase focuses on no-code platform technology. NocoBase assists Bestone in achieving rapid development and deep customization by offering a stable and scalable no-code platform supported by microkernel architecture and model-driven design. This enables Bestone to concentrate on product enhancements and innovation.
 
 In the future, Bestone aims to maintain its leading position in legal services by collaborating closely with NocoBase. They plan to explore and implement innovative solutions for a broader range of clients. With advancing technology, Bestone looks forward to providing high-quality legal services and achieving more successful cases.
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)

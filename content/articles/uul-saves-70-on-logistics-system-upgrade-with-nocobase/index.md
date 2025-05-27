@@ -78,3 +78,13 @@ Now, UUL is gradually transitioning from its current longstanding system to Noco
 Based on the estimation, if the team upgraded UUL's logistics delivery system with traditional development tools, the project budget may range from 10 million to 20 million CNY. However, by using NocoBase as an infrastructure for development, the expected cost would be reduced to less than 30% of the original budget. Currently, the systems built with NocoBase have replaced 10% of the existing system's financial and 5% of the transportation part. Zhang Zhuo anticipated that by the beginning of 2025, they will transfer 50% of the system to the new one.
 
 Looking ahead, UUL and Yuqi Tech will continue collaborating to optimize and expand the logistics delivery system by maximizing NocoBase. As more modules are gradually brought online and integrated, UUL's entire system will become increasingly efficient and agile. UUL plans to accomplish system-wide digital transformation over the next two years to respond to rapid changes in the market and growing customer demands.
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)

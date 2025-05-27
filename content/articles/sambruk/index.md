@@ -86,3 +86,13 @@ The project's development, based on NocoBase, is progressing steadily, with core
 Municipalities and schools highly recognize NocoBase for its ease of use and flexibility. They appreciate its straightforward data processing and interface generation capabilities, allowing quick application development. Some schools have benefitted from NocoBase during the trial phase, especially regarding data management and decision support.
 
 We expect the project to be fully deployed and rolled out more broadly in the upcoming months. As the project advances, the Sambruk team will continue to improve and expand NocoBase's capabilities with plugins to better meet the needs of all parties involved, bringing tangible benefits to more municipalities and educational institutions in Sweden.
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)

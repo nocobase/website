@@ -99,3 +99,13 @@ At TEDxDUTH, we believe in the power of innovation and collaboration to change t
 If your organization is struggling with disorganization or inefficient workflows, NocoBase isn’t just a tool—it’s a solution that can empower your team to achieve more. For us, it’s been a game-changer, helping us dream bigger, work smarter, and create lasting impact in our community.
 
 Thank you, NocoBase, for being an integral part of our journey. We look forward to growing alongside you as we continue to push boundaries and spread ideas that matter!
+
+**Related reading:**
+
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
+* [How a 400+ Lawyer Firm Streamlines Commission Management with NocoBase](https://www.nocobase.com/en/blog/how-400-lawyer-firm-streamlines-commission-management-with-nocobase)
+* [Rapid Development with NocoBase: Driving Digital Transformation in Construction](https://www.nocobase.com/en/blog/rapid-development-with-nocobase)
+* [Orchisky’s Smart Manufacturing Upgrade: Why They Chose NocoBase](https://www.nocobase.com/en/blog/Orchisky)
