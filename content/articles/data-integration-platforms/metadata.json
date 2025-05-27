@@ -8,7 +8,7 @@
   "description_ja": "最適な 7 つのデータ統合プラットフォームを紹介。データモデル駆動型、エンタープライズ ETL、iPaaS / ノーコード自動化の 3 カテゴリを網羅し、企業のデータシロ解消を支援します。",
   "slug": "data-integration-platforms",
   "publishedAt": "2025-05-26T10:01:40.608Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -266,5 +266,5 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-26T11:28:35.648Z"
+  "updatedAt": "2025-05-27T00:56:52.573Z"
 }
