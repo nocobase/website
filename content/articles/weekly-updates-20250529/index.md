@@ -81,14 +81,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fix incorrect record id for ViewAction by @mytharcher
   - Fix appends and data calculation before submit approval process by @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.7.0-beta.32](https://www.nocobase.com/en/blog/v1.7.0-beta.32)
-
-*Release date: 2025-05-19*
-
 
 ## develop
 
