@@ -1,8 +1,8 @@
 {
   "id": 472,
-  "title": "NocoBase v1.7.0-beta.34: New support for Gitpod",
-  "title_cn": "NocoBase v1.7.0-beta.34：新增gitpod的支持",
-  "title_ja": "NocoBase v1.7.0-beta.34：Gitpod を新たにサポート",
+  "title": "NocoBase v1.7.0-beta.34: Enhancement of Import Functionality",
+  "title_cn": "NocoBase v1.7.0-beta.34：增强导入功能",
+  "title_ja": "NocoBase v1.7.0-beta.34：インポート機能の強化",
   "description": "Release Note of v1.7.0-beta.34",
   "description_cn": "v1.7.0-beta.34 更新日志",
   "description_ja": "v1.7.0-beta.34 のリリースノート",
@@ -85,7 +85,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-28T15:28:25.584Z",
+  "updatedAt": "2025-05-28T23:55:31.627Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
