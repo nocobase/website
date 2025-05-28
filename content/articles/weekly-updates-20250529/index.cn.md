@@ -83,14 +83,6 @@
   - 修复查看我的申请详情中 id 取值问题 by @mytharcher
   - 修复提交审批前 appends 和提交数据的计算 by @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.7.0-beta.32](https://www.nocobase.com/cn/blog/v1.7.0-beta.32)
-
-*发布时间：2025-05-19*
-
 
 ## develop
 
