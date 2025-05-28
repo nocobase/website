@@ -75,14 +75,6 @@
   * ViewAction のレコード ID 不正を修正 @mytharcher
   * 承認プロセス送信前のデータ追加・計算を修正 @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.7.0-beta.32](https://www.nocobase.com/en/blog/v1.7.0-beta.32)
-
-*リリース日：2025-05-19*
-
 
 ## develop
 
