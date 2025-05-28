@@ -146,3 +146,10 @@ HouseWell 的成功经验提醒我们：
 希望 HouseWell 的故事，能给更多企业带来启发。
 
 **相关阅读：**
+
+* [Second-Brain 如何用 NocoBase 为金融企业构建 AI 系统](https://www.nocobase.com/cn/blog/second-brain)
+* [全球第一 AI 录音笔品牌，如何搭建运营与客服系统？](https://www.nocobase.com/cn/blog/plaud)
+* [从表格到系统：Classmethod 用 NocoBase 构建全球员工信息管理系统](https://www.nocobase.com/cn/blog/classmethod)
+* [一家家具厂，如何用零代码搭建自己的 ERP ？](https://www.nocobase.com/cn/blog/olmon)
+* [奥雅的数字化新版图：用 NocoBase 探索精细化管理新可能](https://www.nocobase.com/cn/blog/l-a)
+* [如何用开源工具，把“定制动漫面具”做成柔性制造？](https://www.nocobase.com/cn/blog/kigland)
