@@ -1,14 +1,14 @@
 {
   "id": 468,
-  "title": "NocoBase v1.6.34",
-  "title_cn": "NocoBase v1.6.34",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.6.34: Support defining unique records by multiple fields when importing settings",
+  "title_cn": "NocoBase v1.6.34：导入配置支持多字段定唯一记录",
+  "title_ja": "NocoBase v1.6.34：インポート設定時に複数フィールドでユニークレコードを定義できるようにしました",
   "description": "Release Note of v1.6.34",
   "description_cn": "v1.6.34 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.6.34 のリリースノート",
   "slug": "v1.6.34",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-05-27T12:54:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,12 +37,55 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-05-28T00:37:55.702Z",
+        "updatedAt": "2025-05-28T00:37:55.702Z",
+        "articles_id": 468,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-28T00:36:42.019Z",
+    "updatedAt": "2025-05-28T00:36:42.019Z",
+    "id": 1339,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-p1ipy2.png",
+    "extname": ".png",
+    "size": 89441,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-p1ipy2.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-p1ipy2.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-05-27T12:55:00.658Z",
+  "hideOnBlog": true,
+  "updatedAt": "2025-05-28T00:37:55.685Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
