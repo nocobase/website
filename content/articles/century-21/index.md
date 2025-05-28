@@ -136,3 +136,10 @@ The key to true digital success isn't about choosing the most famous or most exp
 We hope HouseWell's story inspires other businesses.
 
 **Related reading:**
+
+* [How Second-Brain built an AI system for financial institutions with NocoBase](https://www.nocobase.com/en/blog/second-brain)
+* [How the No.1 AI Voice Recorder Brand Built Its Internal Systems](https://www.nocobase.com/en/blog/plaud)
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
+* [From Designer to Builder: L&A’s Digital Transformation with NocoBase](https://www.nocobase.com/en/blog/l-a)
+* [How KIGLAND Scaled Custom Anime Mask Production with Open-Source Tools](https://www.nocobase.com/en/blog/kigland)
