@@ -8,7 +8,7 @@
   "description_ja": "HouseWell は Salesforce を廃止して NocoBase を選択し、高額な長期コストからフレキシブルな一括購入へ、固定モジュールから開放的アーキテクチャへと転換し、業界向けソリューションの開発者兼提供者へと変身しました。",
   "slug": "century-21",
   "publishedAt": "2025-05-28T08:01:40.947Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -377,10 +377,26 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-05-28T13:05:47.770Z",
+    "updatedAt": "2025-05-28T13:05:47.770Z",
+    "id": 1347,
+    "title": "20250528-205810",
+    "filename": "20250528-205810-ggzyf8.png",
+    "extname": ".png",
+    "size": 1125493,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/20250528-205810-ggzyf8.png",
+    "preview": "https://static-docs.nocobase.com/20250528-205810-ggzyf8.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-05-28T12:00:48.543Z",
+  "updatedAt": "2025-05-28T13:42:40.598Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
