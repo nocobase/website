@@ -1,161 +1,534 @@
-Updated Date: April 1, 2025
-
-NocoBase License Agreement
-
-NOCOBASE PTE. LTD.，a Singaporean Exempt Private Company Limited by Shares with its principal place of business located at #03-01 ROBINSON 112 ("The Company") https://www.nocobase.com/ issues this License Agreement ("Agreement") to you. You, as an individual or a company ("the User"), will be deemed to voluntarily accept all terms of this Agreement by using NocoBase (including but not limited to obtaining NocoBase source code or installation package in any form, installing and using NocoBase, purchasing NocoBase commercial license and services, purchasing NocoBase commercial plugins). If the User does not agree to any term of this Agreement, or cannot accurately understand our interpretation of the relevant terms, please stop using it immediately.
-
-This Agreement applies to any use, quotation, contract, invoice, and all software delivered by the Company. The User and the Company or NocoBase's agents can no longer sign a separate license agreement for the sale and delivery of the software.
-
-The Company reserves the right to formulate and modify this Agreement from time to time as needed. If there are changes, the Company will announce them in the form of website announcements, without further individual notification. The changed Agreement will automatically take effect once it is announced, becoming part of this Agreement.
-
-==============
-1. Definitions
-==============
-
-1.1 "Software" refers to the NocoBase kernel and plugins placed in the same code repository as the kernel, including their source code, installation packages, images, and all their modifications, updates, and upgrades.
-
-1.2 "Community Edition" refers to the free version of the Software provided to the User through public channels.
-
-1.3 "Commercial Edition" refers to the paid version of the Software purchased by the User from the Company or its agents, downloaded through exclusive channels, and includes additional benefits. It consists of three versions: Standard Edition, Professional Edition, and Enterprise Edition.
-
-1.4 "Marketplace" refers to the marketplace provided by the Company for selling Software plugins and solutions.
-
-1.5 "Commercial Plugin" refers to the paid plugins sold in the Marketplace.
-
-1.6 "Upper Layer Application" refers to a specific business use case application serving internal or external customers of the User, developed based on Software and Commercial Plugins, such as ERP/CRM.
-
-1.7 "Customer" refers to the clients who purchase the User's Upper Layer Application.
-
-1.8 "Third-Party Open Source Software" refers to open source software provided with Software and Commercial Plugins. They are licensed through various published open source software licenses or copyright notices accompanying such software.
-
-===================================
-2. Intellectual Property Protection
-===================================
-
-Except for Third-Party Open Source Software, the Company owns all copyrights, trademark rights, patent rights, trade secrets, and other intellectual property rights of the Software, and has registered and protected them in relevant countries and regions according to the "Paris Convention" or "TRIPS Agreement", ensuring that the intellectual property rights of the Software and Commercial Plugins are internationally recognized and protected.
-
-=============
-3. Disclaimer
-=============
-
-3.1 The User shall not use the Software and Commercial Plugins to engage in activities that violate local laws and regulations, religious beliefs. All legal responsibilities and legal consequences arising from the use of Software and Commercial Plugins shall be borne by the User.
-
-3.2 The Company shall not be liable for any direct, indirect, special, incidental, or consequential damages (including but not limited to loss of profits, business interruption, data loss, or business information disclosure) caused by the User's use of the Software and Commercial Plugins, even if it has been previously informed of the possibility of such damages.
-
-===============
-4. License Type
-===============
-
-4.1 The Software uses a dual license type of AGPL-3.0 Open Source License https://www.gnu.org/licenses/agpl-3..en.htm and Commercial License.
-
-4.2 The Community Edition uses the AGPL-3.0 Open Source License https://www.gnu.org/licenses/agpl-3.0.en.html.
-
-4.3 The Commercial Edition (including Standard, Professional, and Enterprise Editions) uses the Commercial License.
-
-4.4 Commercial Plugins use the Commercial Plugin License.
-
-================================================
-5. Rights and Obligations of Open Source License
-================================================
-
-5.1 The Software can be used for commercial purposes.
-
-5.2 The User can sell plugins developed for the Software in the Marketplace.
-
-5.3 Outside the Marketplace, changes and plugins to the Software developed by the User or third parties, and third-party applications developed based on the Software must all be open-sourced under the AGPL-3.0 license.
-
-5.4 It is not allowed to remove or change the brand, name, link, version number, license, and other information about NocoBase on the Software interface, except for the main LOGO in the upper left corner of the page.
-
-5.5 It is not allowed to remove or change all intellectual property statements about NocoBase in the code.
-
-5.6 It is not allowed to provide any form of no-code, zero-code, low-code platform SaaS products to the public using the original or modified Software.
-
-5.7 Comply with all requirements of the AGPL-3.0 agreement.
-
-===============================
-6. Rights of Commercial License
-===============================
-
-6.1 Obtain a permanent commercial license of the Software.
-
-6.2 Get software upgrades and exclusive technical support during the upgrade validity period.
-
-6.3 The licensed Software can be used for commercial purposes with no restrictions on the number of applications and users.
-
-6.4 Changes and plugins to the Software, and applications integrated with the Software do not need to be open sourced.
-
-6.5 Can remove or change the brand, name, link, version number, license, and other information about NocoBase on the Software interface.
-
-6.6 Can sell plugins developed for Software in the Marketplace.
-
-6.7 The User with a Professional or Enterprise Edition License can sell Upper Layer Application to their clients.
-
-6.8 Not restricted by the AGPL-3.0 agreement.
-
-6.9 If there are other agreements in the contract for the above rights, the contract agreement shall prevail.
-
-====================================
-7. Obligations of Commercial License
-====================================
-
-7.1 It is not allowed to remove or change all intellectual property statements about NocoBase in the code.
-
-7.2 It is not allowed to sell, transfer, lease, share, or distribute the Commercial License.
-
-7.3 It is not allowed to sell, transfer, lease, share, or distribute any form of no-code, zero-code, low-code platform, or developer tools developed based on Software.
-
-7.4 It is not allowed to provide any form of no-code, zero-code, low-code platform SaaS products to the public using the original or modified Software.
-
-7.5 It is not allowed for the User withot a Professional or Enterprise Edition license to sell Upper Layer Application to clients without a Commercial license.
-
-7.6 It is not allowed for the User with a Professional or Enterprise Edition license to sell Upper Layer Application to clients without a Commercial license with access to further development and configuration.
-
-7.7 It is not allowed to publicly sell plugins developed for Software outside of the Marketplace.
-
-7.8 If there is a violation of the above obligations or the terms of this Agreement, the rights owned by the User will be immediately terminated, the paid fees will not be refunded, and the Company reserves the right to pursue the User's legal responsibility.
-
-7.9 If there are other agreements in the contract for the above obligations, the contract agreement shall prevail.
-
-======================================
-8. Rights of Commercial Plugin License
-======================================
-
-8.1 Obtain a permanent Commercial Plugin License for the Commercial Plugin.
-
-8.2 Get plugins upgrades and exclusive technical support during the upgrade validity period.
-
-8.3 Can be used for commercial purposes without restrictions on the number of applications or users.
-
-8.4 The User with an Enterprise Edition License can use the Commercial Plugin in Upper Layer Applications sold to their customers.
-
-8.5 Not restricted by the AGPL-3.0 agreement.
-
-8.6 If there are other agreements in the contract regarding the above rights, the contract agreement shall prevail.
-
-===========================================
-9. Obligations of Commercial Plugin License
-===========================================
-
-9.1 It is not allowed to remove or change any intellectual property statements about NocoBase and the plugin authors in the code.
-
-9.2 It is not allowed to sell, transfer, lease, share, or gift the Commercial Plugin.
-
-9.3 It is not allowed to use reverse engineering, decompilation, or other methods to attempt to discover the source code of Commercial Plugins without obtaining a source code license.
-
-9.4 It is not allowed to disclose the source code of Commercial Plugins to any third party.
-
-9.5 If there is any violation of the above obligations or the terms of this Agreement, the rights owned by the User will be immediately terminated, the paid fees will not be refunded, and the Company reserves the right to pursue the User's legal responsibility.
-
-9.6 If there are other agreements in the contract regarding the above obligations, the contract agreement shall prevail.
-
-=============================================================
-10. Legal Jurisdiction, Interpretation, and Dispute Resolution
-=============================================================
-
-10.1 Except for Mainland China, the interpretation, application, and all matters related to this agreement are subject to the jurisdiction of Singapore law.
-
-10.2 Any dispute related to this Agreement should first be resolved through friendly negotiation. If the negotiation fails to resolve the dispute, the dispute should be submitted to the International Chamber of Commerce (ICC) for arbitration. The arbitration venue should be Singapore, conducted in English.
-
-10.3 All terms and conditions of this Agreement shall be deemed enforceable to the maximum extent permitted by applicable law. If any term of this Agreement is deemed invalid by any applicable law, the invalidity of that term does not affect the validity of any other term of this Agreement, and it should be deemed that the invalid term has been modified as much as possible to make it valid and enforceable, or if the term cannot be modified, it should be deemed to have been deleted from this Agreement.
-
-10.4 The arbitration award is final, binding on both parties, and can be enforced in any court with jurisdiction.
+<style>
+  /* Стили для аккордеона */
+  .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .accordion-header {
+    display: block;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header:hover {
+    background-color: #e9ecef;
+  }
+
+  details[open] .accordion-header {
+    background-color: #e9ecef;
+  }
+
+  /* Стили для изолированного содержимого */
+  .license-isolated-container {
+    all: initial;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 100%;
+    padding: 20px;
+    display: block;
+  }
+
+  .license-isolated-container * {
+    all: unset;
+    box-sizing: border-box;
+  }
+
+  .license-isolated-container h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .license-isolated-container h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #333;
+    display: block;
+  }
+
+  .license-isolated-container h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+    display: block;
+  }
+
+  .license-isolated-container p, .license-isolated-container li {
+    font-size: 16px;
+    color: #444;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .license-isolated-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+  }
+
+  .license-isolated-container li {
+    margin-bottom: 10px;
+  }
+
+  .license-isolated-container a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline;
+  }
+
+  .license-isolated-container a:hover {
+    text-decoration: underline;
+  }
+
+  .license-isolated-container hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    display: block;
+  }
+</style>
+
+<!-- Лицензионное соглашение NocoBase -->
+<details class="accordion-item">
+  <summary class="accordion-header">Лицензионное соглашение NocoBase</summary>
+  <div class="license-isolated-container">
+  <h1>Лицензионное соглашение NocoBase</h1>
+  <p><strong>(Обновлено 01.04.2025)</strong></p>
+  <p>Общество с ограниченной ответственностью «Матрешка Маркет» ИНН 7814825148, ОГРН 1237800082046 (далее по тексту - "Компания") 
+    <a href="https://nocobase.ru">https://nocobase.ru</a> или <a href="https://nocobase.com">https://nocobase.com</a>, предоставляет настоящее Лицензионное соглашение (далее по тексту — "Соглашение").</p>
+  <p>Настоящее Соглашение адресовано любому лицу, как физическому, так и юридическому (далее по тексту — «Пользователь»), на условиях, изложенных ниже. Пользователь считается добровольно принявшим все условия настоящего Соглашения посредством использования NocoBase (включая, но не ограничиваясь получением исходного кода или установочного пакета NocoBase в любой форме, установкой и использованием NocoBase, приобретением коммерческой лицензии и услуг NocoBase, покупкой коммерческих плагинов NocoBase).</p>
+  <p>Если Пользователь не согласен с каким-либо положением настоящего Соглашения или не может точно понять интерпретацию соответствующих условий, необходимо прекратить пользование NocoBase.</p>
+  <p>Компания оставляет за собой право периодически пересматривать и изменять данное Соглашение по мере необходимости. В случае внесения изменений Компания уведомит об этом через объявления на веб-сайте, без необходимости индивидуального уведомления пользователей. Измененное Соглашение будет автоматически вступать в силу с момента его публикации и станет частью настоящего Соглашения.</p>
+
+<h2>1. Определения</h2>
+  <ul>
+    <li><strong>Программное обеспечение</strong> — это ядро NocoBase и плагины, размещенные в одном репозитории кода с ядром, включая их исходный код, установочные пакеты, образы, а также все модификации, обновления и апгрейды.</li>
+    <li><strong>Community Edition</strong> — бесплатная версия Программного обеспечения, доступная Пользователю через общедоступные каналы.</li>
+    <li><strong>Коммерческая версия</strong> — платная версия Программного обеспечения, приобретенная Пользователем у Компании или ее агентов и загруженная через эксклюзивные каналы, которая включает дополнительные преимущества. Она представлена в трех вариантах: Standard Edition, Professional Edition и Enterprise Edition.</li>
+    <li><strong>Торговая площадка</strong> — платформа, предоставляемая Компанией для продажи программных плагинов и решений.</li>
+    <li><strong>Коммерческий плагин</strong> — платные плагины, предлагаемые на Торговой площадке.</li>
+    <li><strong>Приложение верхнего уровня</strong> — конкретное бизнес-приложение, разработанное на основе программного обеспечения и коммерческих плагинов, предназначенное для обслуживания внутренних или внешних клиентов Пользователя, например, ERP/CRM.</li>
+    <li><strong>Клиент</strong> — лицо или организация, приобретающие пользовательское приложение верхнего уровня.</li>
+    <li><strong>Программное обеспечение сторонних производителей с открытым исходным кодом</strong> — программное обеспечение с открытым исходным кодом, поставляемое вместе с Программным обеспечением и коммерческими плагинами. Оно лицензируется в соответствии с различными опубликованными лицензиями на программное обеспечение с открытым исходным кодом или уведомлениями об авторских правах, прилагаемыми к такому программному обеспечению.</li>
+  </ul>
+
+<h2>2. Защита интеллектуальной собственности</h2>
+  <p>2.1. За исключением программного обеспечения с открытым исходным кодом сторонних производителей, Компания владеет всеми авторскими правами, правами на товарные знаки, патентом, коммерческой тайной и другими правами интеллектуальной собственности на Программное обеспечение. Эти права зарегистрированы и защищены в соответствующих странах и регионах в соответствии с "Парижской конвенцией" и "Соглашением ТРИПС", что обеспечивает международное признание и защиту прав интеллектуальной собственности на Программное обеспечение и коммерческие плагины.</p>
+
+<h2>3. Ограничение ответственности</h2>
+  <p>3.1 Пользователь обязуется не использовать Программное обеспечение и Коммерческие плагины для осуществления деятельности, противоречащей законам Российской Федерации и нормативным актам, а также религиозным убеждениям. Вся юридическая ответственность и последствия, возникающие в результате использования Программного обеспечения и Коммерческих плагинов, ложатся на Пользователя.</p>
+  <p>3.2 Компания не несет ответственности за любые прямые, косвенные, специальные, случайные или опосредованные убытки (включая, но не ограничиваясь, упущенной выгодой, перерывами в работе, потерей данных или раскрытием деловой информации), вызванные использованием Пользователем Программного обеспечения и Коммерческих плагинов, даже если Компания была предупреждена о возможности такого ущерба.</p>
+
+<h2>4. Тип лицензии</h2>
+  <p>4.1 Программное обеспечение лицензируется по двойной лицензии: AGPL-3.0 с открытым исходным кодом (<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">https://www.gnu.org/licenses/agpl-3.0.en.html</a>) и коммерческой лицензии.</p>
+  <p>4.2 Community Edition использует лицензию AGPL-3.0 с открытым исходным кодом (<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">https://www.gnu.org/licenses/agpl-3.0.en.html</a>) с учетом настоящего авторского лицензионного соглашения.</p>
+  <p>4.3 Commercial Edition (включая стандартные, профессиональные и корпоративные версии) использует Коммерческую лицензию.</p>
+  <h2>5. Права и обязанности, связанные с лицензией на открытый исходный код</h2>
+  <ul>
+    <li><strong>5.1</strong> Программное обеспечение может использоваться в коммерческих целях.</li>
+    <li><strong>5.2</strong> Пользователь вправе продавать плагины, разработанные для данного программного обеспечения, на Торговой площадке.</li>
+    <li><strong>5.3</strong> Вне Торговой площадки изменения и плагины к программному обеспечению, разработанные Пользователем или третьими лицами, а также сторонние приложения, созданные на основе программного обеспечения, должны быть доступны с открытым исходным кодом по лицензии AGPL-3.0.</li>
+    <li><strong>5.4</strong> Запрещается удалять или изменять торговую марку, название, ссылку, номер версии, лицензию и другую информацию о NocoBase в программном интерфейсе, за исключением основного логотипа в левом верхнем углу страницы.</li>
+    <li><strong>5.5</strong> Запрещается удалять или изменять все заявления об интеллектуальной собственности, касающиеся NocoBase, которые содержатся в коде.</li>
+    <li><strong>5.6</strong> Не допускается предоставление третьим лицам SaaS-продуктов (облачных решений или любого другого вида аренды кода или его производных) на платформе без кода, с нулевым кодом или с низким содержанием кода, используя оригинальное или модифицированное программное обеспечение.</li>
+    <li><strong>5.7</strong> Пользователь обязан соблюдать все требования лицензии AGPL-3.0.</li>
+  </ul>
+
+<h2>6. Права на коммерческую лицензию</h2>
+  <ul>
+    <li><strong>6.1</strong> Пользователь получает постоянную коммерческую лицензию на программное обеспечение.</li>
+    <li><strong>6.2</strong> Пользователь имеет право на обновления программного обеспечения и эксклюзивную техническую поддержку в течение всего срока действия обновления.</li>
+    <li><strong>6.3</strong> Лицензионное программное обеспечение может использоваться в коммерческих целях без ограничений по количеству приложений и пользователей.</li>
+    <li><strong>6.4</strong> Изменения и плагины к программному обеспечению, а также приложения, интегрированные с ним, не обязаны быть с открытым исходным кодом.</li>
+    <li><strong>6.5</strong> Пользователь может удалять или изменять торговую марку, название, ссылку, номер версии, лицензию и другую информацию о NocoBase в программном интерфейсе.</li>
+    <li><strong>6.6</strong> Пользователь вправе продавать плагины, разработанные для программного обеспечения, на Торговой площадке.</li>
+    <li><strong>6.7</strong> Пользователь с лицензией Professional или Enterprise Edition может продавать своим клиентам приложения верхнего уровня.</li>
+    <li><strong>6.8</strong> Условия использования не ограничиваются лицензией AGPL-3.0.</li>
+    <li><strong>6.9</strong> Если в контракте предусмотрены другие условия относительно вышеуказанных прав, преимущество имеет настоящее соглашение.</li>
+  </ul>
+
+<h2>7. Обязательства, связанные с коммерческой лицензией</h2>
+  <ul>
+    <li><strong>7.1</strong> Запрещается удалять, вносить любые изменения относительно интеллектуальной собственности, касающиеся NocoBase, которые содержатся в коде.</li>
+    <li><strong>7.2</strong> Запрещается продавать, передавать, сдавать в аренду, совместно использовать или распространять Коммерческую лицензию.</li>
+    <li><strong>7.3</strong> Запрещается продавать, передавать, сдавать в аренду, совместно использовать или распространять любые платформы без кода, с нулевым кодом, с низким содержанием кода или инструменты разработчика, созданные на основе данного программного обеспечения.</li>
+    <li><strong>7.4</strong> Запрещается предоставлять третьим лицам какие-либо SaaS-продукты (облачных решений или любого другого вида аренды кода или его производных) на платформах без кода, с нулевым кодом или с низким содержанием кода, используя оригинальное или модифицированное программное обеспечение.</li>
+    <li><strong>7.5</strong> Пользователям без лицензии Professional или Enterprise Edition запрещается продавать приложения верхнего уровня клиентам без наличия коммерческой лицензии.</li>
+    <li><strong>7.6</strong> Пользователям с лицензией Professional или Enterprise Edition запрещается продавать приложения верхнего уровня клиентам без коммерческой лицензии, если это не включает доступ к дальнейшей разработке и настройке.</li>
+    <li><strong>7.7</strong> Запрещается публично продавать плагины, разработанные для программного обеспечения, за пределами Торговой площадки.</li>
+    <li><strong>7.8</strong> В случае нарушения вышеуказанных обязательств и условий настоящего Соглашения, права Пользователя будут немедленно прекращены, уплаченные сборы не подлежат возврату, и Компания оставляет за собой право привлечь Пользователя к юридической ответственности.</li>
+    <li><strong>7.9</strong> Если в договоре содержатся другие соглашения по вышеуказанным обязательствам, преимущественную силу имеет настоящее соглашение.</li>
+  </ul>
+
+<h2>8. Права на коммерческую лицензию плагина</h2>
+  <ul>
+    <li><strong>8.1</strong> Получая постоянную коммерческую лицензию на плагин для Коммерческого плагина:</li>
+    <li><strong>8.2</strong> Пользователь имеет право на получение обновлений плагинов и эксклюзивной технической поддержки в течение срока действия обновления.</li>
+    <li><strong>8.3</strong> Плагин может использоваться в коммерческих целях без ограничений по количеству приложений или пользователей.</li>
+    <li><strong>8.4</strong> Пользователь с лицензией Enterprise Edition может использовать коммерческий плагин в приложениях верхнего уровня, которые продаются его клиентам.</li>
+    <li><strong>8.5</strong> Права не ограничиваются лицензией AGPL-3.0.</li>
+    <li><strong>8.6</strong> Если в договоре предусмотрены другие условия относительно вышеуказанных прав, преимущественную силу имеет настоящее соглашение.</li>
+  </ul>
+
+<h2>9. Обязательства по коммерческой лицензии на плагин</h2>
+  <ul>
+    <li><strong>9.1</strong> Запрещается удалять, вносить любые изменения относительно интеллектуальной собственности, касающиеся NocoBase, которые содержатся в коде и авторов плагина.</li>
+    <li><strong>9.2</strong> Запрещается продавать, передавать, сдавать в аренду, совместно использовать или дарить коммерческий плагин.</li>
+    <li><strong>9.3</strong> Запрещается использовать реверс-инжиниринг, декомпиляцию или иные методы для извлечения исходного кода коммерческих плагинов без получения соответствующей лицензии.</li>
+    <li><strong>9.4</strong> Запрещается разглашать исходный код коммерческих плагинов третьим лицам.</li>
+    <li><strong>9.5</strong> В случае нарушения вышеуказанных обязательств или условий настоящего Соглашения права Пользователя будут немедленно прекращены, уплаченные сборы в виде денежных средств не подлежат возврату, и Компания оставляет за собой право привлечь Пользователя к юридической ответственности.</li>
+    <li><strong>9.6</strong> Если в договоре содержатся другие соглашения, касающиеся вышеуказанных обязательств, преимущество имеет настоящее соглашение.</li>
+  </ul>
+
+<h2>10. Правовая юрисдикция, толкование и разрешение споров</h2>
+  <ul>
+    <li><strong>10.1</strong> Все вопросы, связанные с настоящим соглашением, подпадают под юрисдикцию законодательства Российской Федерации.</li>
+    <li><strong>10.2</strong> Любой спор, возникающий из настоящего Соглашения, разрешается путем переговоров. Если переговоры не приведут к разрешению спора, то он будет рассматриваться Арбитражным судом г. Санкт-Петербурга и Ленинградской области.</li>
+    <li><strong>10.3</strong> Все положения и условия настоящего Соглашения считаются подлежащими исполнению в соответствие с законодательством Российской Федерации. Если какое-либо положение настоящего Соглашения признается недействительным в соответствии с применимым законодательством, это не влияет на юридическую силу остальных положений. В таком случае недействительное положение будет изменено настолько, насколько это возможно, чтобы сделать его действительным и подлежащим исполнению; если же изменение невозможно, недействительное положение будет считаться исключенным из настоящего Соглашения.</li>
+    <li><strong>10.4</strong> В случае, если стороны не достигли обоюдного согласия разрешения спора, судебное решение является окончательным, обязательным для обеих сторон и должно быть приведено в исполнение, согласно законодательству Российской Федерации.</li>
+  </ul>
+</div>
+</details>
+<!-- На продажу лицензий -->
+<details class="accordion-item">
+  <summary class="accordion-header">Оферта (Продажа)</summary>
+  <div class="license-isolated-container">
+  <h1>Публичная оферта ООО «Матрешка Маркет» на продажу лицензий на программное обеспечение Nocobase</h1>
+  <p>Общество с ограниченной ответственностью «Матрешка Маркет», именуемому далее «Лицензиат», адресует настоящую оферту любому юридическому лицу, индивидуальному предпринимателю и физическому лицу, именуемому далее «Сублицензиат». Настоящее предложение в соответствии с п. 2 ст.437 Гражданского Кодекса РФ является публичной офертой, полным и безоговорочным принятием (акцептом) условий которой в соответствии со ст. 438 Гражданского кодекса РФ считается осуществление Сублицензиатом конклюдентных действий — оплата выставленного Исполнителем счета.</p>
+<h2>1. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h2>
+  <ul>
+    <li><strong>1.1. Программа</strong> — программа для ЭВМ (как в целом, так и её компоненты), являющаяся представленной в объективной форме совокупностью данных и команд, в том числе исходного текста, базы данных, аудиовизуальных произведений, включенных Правообладателем в состав указанной программы для ЭВМ.</li>
+    <li><strong>1.2. Лицензионное соглашение</strong> — соглашение между Лицензиатом и Сублицензиатом, условия которого принимаются Сублицензиатом во время инсталляции Программы и предусматривают порядок и правила эксплуатации Программы.</li>
+  </ul>
+<h2>2. ПРЕДМЕТ ДОГОВОРА</h2>
+  <ul>
+    <li><strong>2.1.</strong> Лицензиат предоставляет Сублицензиату на условиях настоящего Договора простую неисключительную лицензию (далее — Лицензия) на использование указанных в п.2.2 настоящего Договора Программ в пределах и на условиях, установленных настоящим Договором и лицензионным соглашением конкретной Программы.</li>
+    <li><strong>2.2.</strong> Настоящий Договор распространяется на Программы, наименования и размер вознаграждения за использование которых указаны в Счетах, прилагаемых к настоящей Оферте и являющиеся его неотъемлемой частью.</li>
+  </ul>
+<h2>3. СРОК ДЕЙСТВИЯ ДОГОВОРА И ТЕРРИТОРИЯ</h2>
+  <ul>
+    <li><strong>3.1.</strong> Настоящий Договор вступает в силу с 27.05.2025 г. и действует в отношении каждой Программы в течение срока действия исключительных прав на Программу (ст.1281 ГК РФ) на условиях, изложенных в Лицензионном соглашении.</li>
+    <li><strong>3.2.</strong> Территория, на которой допускается использование Сублицензиатом Программы, устанавливается в лицензионном соглашении каждого конкретного программного продукта. Если в лицензионном соглашении Программы не указана территория, то Территория, на которой допускается использование Сублицензиатом Программы, устанавливается как вся территория страны Сублицензиата.</li>
+  </ul>
+<h2>4. ВОЗНАГРАЖДЕНИЕ, РАСЧЕТЫ И ПЕРЕДАЧА ПРАВ</h2>
+  <ul>
+    <li><strong>4.1.</strong> Вознаграждение за предоставленные по настоящему Договору Лицензии подлежит уплате Сублицензиатом в форме фиксированного разового платежа, размер которого указан в Счете.</li>
+    <li><strong>4.2.</strong> Выплата вознаграждения осуществляется Сублицензиатом в безналичной форме на счет Лицензиата, указанный в настоящем Договоре, в срок не позднее 3 (трех) рабочих дней с даты выставления Лицензиатом соответствующего счета. Обязанность по оплате считается исполненной в момент зачисления денежных средств на счет Лицензиата.</li>
+    <li><strong>4.3.</strong> Сумма вознаграждения по настоящему Договору не облагается НДС в соответствии с пп.26 п.2 ст.149 НК РФ.</li>
+    <li><strong>4.4.</strong> Права, предоставляемые Лицензией, передаются Сублицензиату в срок не позднее 3 (трех) рабочих дней после полной ее оплаты посредством отправления Лицензиатом по адресу электронной почты, указанному Сублицензиатом, сообщения (письма), содержащего ссылку для загрузки/установки Программы и/или доступа к ней, лицензионного ключа активации.</li>
+    <li><strong>4.5.</strong> Подтверждением факта получения Сублицензиатом Лицензии на условиях настоящего Договора является логин и пароль, направленного по электронной почте, указанной в момент регистрации заказа на сайте Лицензиата.</li>
+  </ul>
+<h2>5. ПРАВА И ОБЯЗАННОСТИ СТОРОН</h2>
+  <ul>
+    <li><strong>5.1.</strong> Лицензиат обязан предоставить Сублицензиату право пользования в порядке и сроки, установленные в п.4.4 настоящего Договора.</li>
+    <li><strong>5.2.</strong> Сублицензиат обязан:
+      <ul>
+        <li><strong>5.2.1.</strong> Оплатить Счет в порядке и сроки, указанные в разделе 4 настоящего Договора.</li>
+        <li><strong>5.2.2.</strong> Соблюдать авторские права Правообладателя, а также порядок и условия использования и эксплуатации Программ.</li>
+        <li><strong>5.2.3.</strong> Не использовать Программу за пределами предоставленных ему прав и/или способами, не указанными в настоящем Договоре.</li>
+      </ul>
+    </li>
+    <li><strong>5.3.</strong> Сублицензиат имеет право в рамках каждой Лицензии использовать одну копию Программы путем ее воспроизведения исключительно посредством инсталляции и/или запуска в порядке, определенном пользовательской (технической) документацией, а также Лицензионным соглашением.</li>
+    <li><strong>5.4.</strong> Сублицензиат, за исключением случаев, установленных настоящим Договором, имеет право однократно уступить полностью свои права и обязанности по настоящему Договору другому лицу только при условии получения письменного согласия Правообладателя и только при условии полного и безоговорочного согласия нового пользователя со всеми положениями и условиями настоящего Договора и Лицензионного соглашения. Указанное право на уступку не предоставляется тем лицам, которые получили Лицензию в результате аналогичной уступки.</li>
+  </ul>
+<h2>6. ГАРАНТИИ И ОТВЕТСТВЕННОСТЬ</h2>
+  <ul>
+    <li><strong>6.1.</strong> Лицензиат гарантирует, что на момент заключения настоящего Договора обладает всеми необходимыми правами на Программу для правомерного их предоставления Сублицензиату.</li>
+    <li><strong>6.2.</strong> Лицензиат заявляет, что на момент заключения настоящего Договора:
+      <ul>
+        <li><strong>6.2.1.</strong> Ему ничего неизвестно о правах третьих лиц, которые могли бы быть нарушены предоставлением Сублицензиату Лицензии на условиях и в порядке, установленных настоящим Договором.</li>
+        <li><strong>6.2.2.</strong> Программа соответствует функциональным и техническим параметрам, указанным в технической документации, при условии соблюдения требований к программным и аппаратным средствам, необходимым для ее эксплуатации.</li>
+      </ul>
+    </li>
+    <li><strong>6.3.</strong> Программа и сопутствующая документация к ней предоставляются Сублицензиату в соответствии с общепринятым в международной практике принципом «как есть» («as is»), т.е. за проблемы, возникающие в процессе установки, обновления, поддержки и эксплуатации Программы (в том числе проблемы совместимости с другими программными продуктами, пакетами, драйверами и др.; проблемы, возникающие из-за неоднозначного толкования сопроводительной документации, несоответствия результатов использования Программы ожиданиям Сублицензиата и т.п.), Лицензиат ответственности не несет.</li>
+    <li><strong>6.4.</strong> Лицензиат имеет право расторгнуть настоящий Договор в одностороннем порядке в случае, если Сублицензиат:
+      <ul>
+        <li><strong>6.4.1.</strong> нарушает условия и порядок использования Программ, предусмотренные настоящим Договором и Лицензионным соглашением, в том числе в случаях предоставления сублицензий третьим лицам без письменного разрешения Правообладателя;</li>
+      </ul>
+    </li>
+    <li><strong>6.5.</strong> Сублицензиат имеет право расторгнуть настоящий Договор в одностороннем порядке в случае, если Лицензиат:
+      <ul>
+        <li><strong>6.5.1.</strong> В нарушение настоящего Договора отказался предоставить Сублицензиату Лицензии;</li>
+        <li><strong>6.5.2.</strong> Осуществляет действия, препятствующие использованию Программы Сублицензиатом.</li>
+      </ul>
+    </li>
+  </ul>
+<h2>7. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</h2>
+  <ul>
+    <li><strong>7.1.</strong> Стороны Договора не имеют права полностью или частично, единолично или обоюдно передавать свои права и обязанности, вытекающие из настоящего Договора, третьим лицам без предварительного письменного согласия другой Стороны, за исключением случая, указанного в пункте 5.4 настоящего Договора.</li>
+    <li><strong>7.2.</strong> Стороны обязуются прилагать все усилия для разрешения споров и разногласий, которые могут являться результатом или связаны с данным Договором, путем переговоров. Все споры, разногласия или требования, возникающие из Договора или в связи с ним, подлежат урегулированию Сторонами путем переговоров. При отсутствии согласия спор между Сторонами подлежит рассмотрению в соответствующем суде по месту и в соответствии с законодательством страны нахождения Лицензиата.</li>
+    <li><strong>7.3.</strong> Стороны согласовали, что документы (Договоры, Дополнительные соглашения, Акты, Счета), поступившие по факсимильной и электронной (электронная почта) связи, имеют юридическую силу, при условии их надлежащего оформления, наличия печати и подписи уполномоченного лица. Также юридическую силу имеют документы, выгруженные в личном кабинете Заказчика на сайте nocobase.ru.</li>
+    <li><strong>7.4.</strong> В случае, если какое-либо положение настоящего Договора будет признано недействительным или не подлежащим применению по решению суда или иного компетентного органа, это не влечет недействительность Договора в целом и/или остальных положений Договора.</li>
+    <li><strong>7.5.</strong> При досрочном расторжении Лицензиатом настоящего Договора действие предоставленных Сублицензиату Лицензий на Программы прекращается, а перерасчет и возврат вознаграждения не производится.</li>
+    <li><strong>7.6.</strong> По всем вопросам, не урегулированным настоящим Договором, Стороны руководствуются действующим законодательством страны Лицензиата, если иное прямо не предусмотрено настоящим Договором.</li>
+    <li><strong>7.7.</strong> Принимая настоящую оферту, Сублицензиат принимает также Лицензионное соглашение на использование ПО, размещенное в сети интернет по адресу: <a href="https://nocobase.ru/ru/agreement ">https://nocobase.ru/ru/agreement </a></li>
+  </ul>
+<h2>8. РЕКВИЗИТЫ ЛИЦЕНЗИАТА</h2>
+  <ul>
+    <li><strong>Полное наименование:</strong> Общество с ограниченной ответственностью ООО «Матрешка Маркет»</li>
+    <li><strong>Сокращенное наименование:</strong> ООО «Матрешка Маркет»</li>
+    <li><strong>Адрес:</strong> 197229, город Санкт-Петербург, Коннолахтинский пр-кт, д. 19/58 литера А</li>
+    <li><strong>e-mail:</strong> hello@nocobase.ru</li>
+    <li><strong>ИНН:</strong> 7814825148</li>
+    <li><strong>ОГРН:</strong> 1237800082046</li>
+    <li><strong>Р\с:</strong> 40702810610001446651</li>
+    <li><strong>К\с:</strong> 30101810145250000974</li>
+    <li><strong>БИК:</strong> 046015207</li>
+    <li><strong>Адрес размещения оферты в сети Интернет:</strong> <a href="https://nocobase.ru/ru/agreement ">https://nocobase.ru/ru/agreement </a></li>
+    <li><strong>Дата:</strong> «27» Мая 2025 г.</li>
+  </ul>
+  </div>
+</details>
+<!-- На право пользования -->
+<details class="accordion-item">
+  <summary class="accordion-header">Оферта (Аренда)</summary>
+  <div class="license-isolated-container">
+  <h1>Публичная оферта ООО «Матрешка Маркет» на заключение лицензионного договора на право пользования программное обеспечение Nocobase</h1>
+
+<h2>1. Термины и определения:</h2>
+  <ul>
+    <li><strong>1.1. Оферта</strong> — настоящий документ, представляющий собой письменное предложение Лицензиара заключить Договор на указанных ниже условиях.</li>
+    <li><strong>1.2. Акцепт</strong> — полное и безоговорочное принятие условий Оферты путем осуществления указанных в ней действий.</li>
+    <li><strong>1.3. Договор</strong> — возмездный лицензионный договор на право использования Программы для ЭВМ (и/или Расширений), заключаемый в письменной форме посредством Акцепта.</li>
+    <li><strong>1.4. Лицензиар</strong> — Общество с ограниченной ответственностью «Матрешка Маркет», ИНН 7814825148, Юридический адрес: 197229, город Санкт-Петербург, Коннолахтинский пр-кт, д. 19/58 литера А.</li>
+    <li><strong>1.5. Лицензиат</strong> — заказчик, реквизиты которого указаны в Счете.</li>
+    <li><strong>1.6. Программа для ЭВМ (или ПО)</strong> — программа для ЭВМ, Лицензиаром которой в соответствии со счетом является ООО «Матрешка Маркет».</li>
+    <li><strong>1.7. Расширение</strong> — дополнительные функциональные возможности, предоставляемые для использования с соответствующей Программой для ЭВМ.</li>
+    <li><strong>1.8. Счет</strong> — документ с указанием одной или нескольких выбранных Лицензиатом Программ для ЭВМ (и/или Расширений), сгенерированный на основании заказа в автоматизированной системе Лицензиара и являющийся основой для оплаты.</li>
+    <li><strong>1.9. Пользовательское соглашение</strong> — документ правообладателя, определяющий порядок и условия эксплуатации конкретного ПО.</li>
+  </ul>
+
+<h2>2. Общие условия Оферты:</h2>
+  <ul>
+    <li><strong>2.1.</strong> Лицензиату предоставляется право использования (простая неисключительная лицензия) указанных в Счете Программ для ЭВМ (и/или Расширений) для самостоятельного их использования в целях, связанных с осуществлением им предпринимательской или иной экономической, в том числе некоммерческой деятельности (за исключением личных, семейных, домашних и иных подобных нужд). Подробная информация о ПО указана на сайте <a href="https://nocobase.ru ">nocobase.ru</a>.</li>
+    <li><strong>2.2.</strong> Лицензиату предоставляется право в рамках каждой приобретенной лицензии на конкретное ПО использовать его на всей территории Российской Федерации следующим способом: путем воспроизведения (инсталляции) одного его экземпляра (для ПО, предоставляемого для загрузки) или посредством удаленного доступа к ПО через сеть «Интернет» (для ПО, предоставляемого в режиме онлайн) в порядке, предусмотренном Лицензионным соглашением, условия которого безоговорочно принимаются Лицензиатом во время инсталляции или начала иного использования соответствующего ПО, а также в соответствии с пользовательской (технической) документацией.</li>
+    <li><strong>2.3.</strong> Принимая условия Оферты, Лицензиат подтверждает, что надлежащим образом ознакомлен и согласен с положениями, требованиями и ограничениями Лицензионного соглашения, технической и иной документацией по каждому ПО, указанному в Счете.</li>
+    <li><strong>2.4.</strong> Надлежащим Акцептом и существенным условием Договора является полная единовременная оплата Лицензиатом Счета в указанный в нем срок, если иное не определено особыми условиями Оферты.</li>
+    <li><strong>2.5.</strong> Вознаграждением Лицензиара за предоставляемые по Договору права является сумма, указанная в Счете в отношении каждого ПО (и/или Расширений).</li>
+    <li><strong>2.6. Порядок оплаты вознаграждения.</strong></li>
+    <ul>
+      <li><strong>2.6.1.</strong> Оплата по банковским реквизитам Лицензиара признается надлежащей, если осуществлена Лицензиатом в установленный срок с указанием в платежном поручении номера Счета.
+        <ul>
+          <li><strong>(1)</strong> Оплата без указания в платежном поручении номера Счета (или с неверным номером) не допускается и не считается надлежащим Акцептом, за исключением случаев, когда Лицензиар по своему усмотрению признает такую оплату надлежащим Акцептом. В этом случае денежные средства зачисляются по усмотрению Лицензиара в счет оплаты любого из ранее выставленных Лицензиату и еще неоплаченных счетов, срок оплаты по которым не истек к моменту поступления платежа.</li>
+          <li><strong>(2)</strong> Оплата Счета третьим лицом не допускается и не считается акцептом оферты.</li>
+          <li><strong>(3)</strong> В остальных случаях поступившие платежи возвращаются плательщику и не могут быть зачислены в счет оплаты каких-либо сделок.</li>
+        </ul>
+      </li>
+      <li><strong>2.6.2.</strong> Оплата электронными средствами платежа (включая банковские карты) признается надлежащей, если осуществлена их законным владельцем (держателем). Использование таких средств платежа другими лицами не допускается.</li>
+    </ul>
+    <li><strong>2.7.</strong> Лицензиар обязуется осуществить активацию (подключение) функционала ПО, соответствующего оплаченной лицензии (а для версий ПО, требующих лицензионного ключа — отправить электронное письмо с логином и паролем на указанный в Счете e-mail Лицензиата) в течение 3 (трех) рабочих дней с даты зачисления денежных средств на расчетный счет Лицензиара, а при оплате электронными средствами платежа — в течение 3 (трех) рабочих дней с даты поступления информации от эквайера об успешном исполнении платежа.</li>
+    <li><strong>2.8.</strong> Права по Договору считаются предоставленными Лицензиату с даты активации функционала ПО, а для версий ПО, требующих активации — с даты отправки Лицензиаром логина и пароля.</li>
+    <li><strong>2.9.</strong> Подтверждением правомерности использования Лицензиатом ПО являются платежные документы о надлежащей оплате Счета, сформированного автоматизированной системой Лицензиара в электронном виде, и Оферты.</li>
+    <li><strong>2.10.</strong> Первичные учетные документы, подтверждающие передачу прав использования объектов авторских прав по Договору, составляются единолично каждой стороной сделки на дату активации функционала Программы.</li>
+    <li><strong>2.11.</strong> Датой совершения хозяйственных операций по передаче имущественных прав на компьютерные программы, для целей бухгалтерского и налогового учета, независимо от даты подписания ПУД, является дата выдачи Лицензиату регистрационного логина и пароля активации облачного функционала ПО.</li>
+    <li><strong>2.12.</strong> Срок, на который предоставляются права на использование ПО, Лицензиаром которого является ООО «Матрешка Маркет», определяется следующим образом:
+      <ul>
+        <li><strong>(1)</strong> На ПО, срок использования которого указан рядом с его наименованием и суммой вознаграждения — на соответствующий срок;</li>
+        <li><strong>(2)</strong> На другое ПО — на срок один месяц на условиях Стандартной лицензии, изложенных в Пользовательском соглашении, а при переходе со Стандартной Лицензии одного вида на Стандартную Лицензию другого вида при условии соответствующей доплаты вознаграждения Лицензиат вправе использовать Стандартную Лицензию нового вида до окончания срока действия лицензии предыдущего вида, с которой осуществлялся переход. По окончании указанного периода Лицензиат имеет право продолжить использование нового вида лицензии на условиях Ограниченной Лицензии.</li>
+        <li><strong>(3)</strong> Срок и порядок применения Расширений, указанных в Счете, определяется в Лицензионном соглашении.</li>
+      </ul>
+    </li>
+    <li><strong>2.13.</strong> Любые споры, которые могут возникнуть между Лицензиаром и Лицензиатом в связи с Офертой и/или Договором, подлежат рассмотрению Арбитражному суду г. Санкт-Петербурга и Ленинградской области.</li>
+    <li><strong>2.14.</strong> При наличии письменного соглашения между Лицензиаром и Лицензиатом об иных условиях использования ПО, условия Оферты не применяются в той части, в которой они противоречат условиям указанного соглашения.</li>
+    <li><strong>2.15.</strong> Лицензиар оставляет за собой право внести изменения в условия Оферты и/или отозвать Оферту в любой момент по своему усмотрению. Изменения в Оферту вступают в силу с момента размещения ее измененного текста, если иной срок вступления изменений в силу не определен дополнительно при таком размещении.</li>
+    <li><strong>2.16.</strong> Лицензиат соглашается и признает, что внесение изменений в Оферту влечет за собой внесение этих изменений в заключенный и действующий между Лицензиатом и Лицензиаром Договор, и эти изменения в Договор вступают в силу одновременно с такими изменениями в Оферту.</li>
+  </ul>
+
+<h2>3. РЕКВИЗИТЫ ЛИЦЕНЗИАРА</h2>
+  <ul>
+    <li><strong>Полное наименование:</strong> Общество с ограниченной ответственностью ООО «Матрешка Маркет»</li>
+    <li><strong>Сокращенное наименование:</strong> ООО «Матрешка Маркет»</li>
+    <li><strong>Адрес:</strong> 197229, город Санкт-Петербург, Коннолахтинский пр-кт, д. 19/58 литера А</li>
+    <li><strong>e-mail:</strong> hello@nocobase.ru</li>
+    <li><strong>ИНН:</strong> 7814825148</li>
+    <li><strong>ОГРН:</strong> 1237800082046</li>
+    <li><strong>Р\с:</strong> 40702810610001446651</li>
+    <li><strong>К\с:</strong> 30101810145250000974</li>
+    <li><strong>БИК:</strong> 046015207</li>
+    <li><strong>Адрес размещения оферты в сети Интернет:</strong> <a href="https://nocobase.ru/ru/agreement ">https://nocobase.ru/ru/agreement </a></li>
+    <li><strong>Дата:</strong> «27» Мая 2025 г.</li>
+  </ul>
+</div>
+</details>
+<!-- Политика -->
+<details class="accordion-item">
+  <summary class="accordion-header">Политика обработки персональных данных</summary>
+  <div class="license-isolated-container">
+  <h1>Политика Общества с ограниченной ответственностью «Матрешка Маркет» в отношении обработки персональных данных веб-сайта nocobase.ru, а также всех сайтов, размещённых в его доменной зоне</h1>
+
+<h2>1. Термины и определения</h2>
+  <ul>
+    <li><strong>1.1. Автоматизированная обработка персональных данных</strong> — обработка персональных данных с помощью средств вычислительной техники.</li>
+    <li><strong>1.2. Блокирование персональных данных</strong> — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</li>
+    <li><strong>1.3. Вебинар</strong> — видеоконференция в прямом эфире, которую проводят с целью информирования об услугах или презентации продуктов.</li>
+    <li><strong>1.4. Информационная система персональных данных (информационная система)</strong> — совокупность содержащейся в базах данных информации (в том числе персональных данных) и обеспечивающих их обработку информационных технологий и технических средств.</li>
+    <li><strong>1.5. Конфиденциальность персональных данных</strong> — режим обработки персональных данных, исключающий раскрытие оператором и иными лицами, получившими доступ к персональным данным на законных основаниях, таких персональных данных третьим лицам и (или) распространение персональных данных без согласия субъекта персональных данных, если иное не предусмотрено законодательством.</li>
+    <li><strong>1.6. Обработка персональных данных</strong> — любое действие (операция) или совокупность действий (операций), совершаемых с персональными данными с использованием средств автоматизации, в том числе в информационно-телекоммуникационных сетях, или без использования таких средств, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), в том числе трансграничную передачу, блокирование, удаление, уничтожение персональных данных.</li>
+    <li><strong>1.7. Оператор персональных данных (оператор)</strong> — юридическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. В целях настоящей Политики оператором персональных данных является ООО «МАТРЕШКА МАРКЕТ».</li>
+    <li><strong>1.8. Персональные данные</strong> — любая информация, относящаяся к прямо или косвенно определенному, или определяемому на основе такой информации физическому лицу (субъекту персональных данных).</li>
+    <li><strong>1.9. Поручение на обработку персональных данных (поручение оператора)</strong> — поручение оператором, с согласия субъекта персональных данных, обработки персональных данных другому лицу на основании заключаемого с этим лицом договора.</li>
+    <li><strong>1.10. Предоставление персональных данных; доступ к персональным данным</strong> — действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.</li>
+    <li><strong>1.11. Распространение персональных данных</strong> — действия, направленные на раскрытие персональных данных неопределенному кругу лиц.</li>
+    <li><strong>1.12. Сайт</strong> — совокупность программ для электронных вычислительных машин и иной информации, содержащейся в информационной системе, доступ к которой обеспечивается посредством информационно-телекоммуникационной сети «Интернет» по доменному имени nocobase.ru и сайтах этой доменной зоны. Владельцем Сайта является ООО «МАТРЕШКА МАРКЕТ».</li>
+    <li><strong>1.13. Согласие на обработку персональных данных</strong> — согласие на обработку персональных данных, передаваемых субъектом персональных данных, реализовано в форме приложения к настоящему документу, доступному для ознакомления на Сайте Оператора в сети «Интернет». Согласие подтверждается субъектом персональных данных путем проставления отметки в соответствующем поле на Сайте.</li>
+    <li><strong>1.14. Субъекты персональных данных</strong> — в целях настоящего документа, физические лица, являющиеся посетителями Сайта Оператора в сети «Интернет».</li>
+    <li><strong>1.15. Трансграничная передача персональных данных</strong> — предоставление персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому лицу или иностранному юридическому лицу.</li>
+    <li><strong>1.16. Уничтожение персональных данных</strong> — действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных и (или) в результате которых уничтожаются материальные носители персональных данных.</li>
+    <li><strong>1.17. Файл cookie</strong> — текстовый файл, хранящий информацию о настройках интернет-браузеров, скачивается браузером при первом посещении веб-сайта.</li>
+  </ul>
+
+<h2>2. Общие положения</h2>
+  <ul>
+    <li><strong>2.1.</strong> Настоящая Политика в отношении обработки персональных данных Сайта (далее – «Политика») является внутренним документом ООО «МАТРЕШКА МАРКЕТ» (далее – «Оператор») и определяет его политику в отношении обработки персональных данных, а также реализуемые требования к защите персональных данных.</li>
+    <li><strong>2.2.</strong> В соответствии с частью 2 статьи 18.1 Федерального закона от 27 июля 2006 года № 152-ФЗ «О персональных данных» настоящая Политика подлежит опубликованию на Сайте в сети «Интернет» в целях обеспечения к ней неограниченного доступа.</li>
+    <li><strong>2.3.</strong> Настоящая Политика составлена в соответствии с положениями:
+      <ul>
+        <li>ст. 24 Конституции Российской Федерации;</li>
+        <li>Федерального закона от 27 июля 2006 года № 152-ФЗ «О персональных данных»;</li>
+        <li>Федерального закона от 27 июля 2006 года № 149-ФЗ «Об информации, информационных технологиях и о защите информации»;</li>
+        <li>Постановления Правительства РФ от 1 ноября 2012 года № 1119 «Об утверждении требований к защите персональных данных при их обработке в информационных системах персональных данных»;</li>
+        <li>иных нормативных актов уполномоченных государственных органов в области защиты персональных данных - Федеральной службы по надзору в сфере связи, информационных технологий и массовых коммуникаций (далее – «Роскомнадзор»), Федеральной службы безопасности Российской Федерации (далее – «ФСБ России») и Федеральной службы по техническому и экспортному контролю (далее – «ФСТЭК России»);</li>
+        <li>рекомендаций Роскомнадзора по составлению документа, определяющего политику оператора в отношении обработки персональных данных;</li>
+        <li>внутренних политик и процедур Оператора (в части, не противоречащей законодательству Российской Федерации).</li>
+      </ul>
+    </li>
+    <li><strong>2.4.</strong> Оператор включен в Реестр операторов, осуществляющих обработку персональных данных (Приказ № 598 от 16.11.2023; регистрационный номер 78-23-062485). Указанный Реестр опубликован на веб-сайте Роскомнадзора в сети «Интернет»: <a href="https://pd.rkn.gov.ru/operators-registry/operators-list/ ">https://pd.rkn.gov.ru/operators-registry/operators-list/ </a>.</li>
+    <li><strong>2.5. Основные права и обязанности Оператора и субъектов персональных данных.</strong></li>
+    <li><strong>2.5.1. Права и обязанности субъектов персональных данных:</strong></li>
+    <ul>
+      <li>на безвозмездное ознакомление со своими персональными данными, за исключением случаев, предусмотренных законом о персональных данных;</li>
+      <li>на уточнение своих персональных данных, их блокирование или уничтожение в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав;</li>
+      <li>на обжалование действий или бездействий Оператора в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке;</li>
+      <li>на отзыв согласия на обработку персональных данных;</li>
+      <li>на получение информации, касающейся обработки своих персональных данных, в том числе содержащей: подтверждение факта обработки персональных данных Оператором, правовые основания и цели обработки персональных данных, цели и применяемые Оператором способы обработки персональных данных, наименование и место нахождения Оператора, сведения о лицах (за исключением работников Оператора), которые имеют доступ к персональным данным или которым могут быть раскрыты персональные данные на основании договора с Оператором или на основании федерального закона, обрабатываемые персональные данные, относящиеся к соответствующему субъекту персональных данных, источник их получения, сроки обработки персональных данных, наличие или отсутствие трансграничной передачи персональных данных, информацию о лицах, осуществляющих обработку по поручению Оператора, и другие сведения, предусмотренные законодательством Российской Федерации;</li>
+      <li>на защиту своих прав и законных интересов, в том числе на возмещение убытков и (или) компенсацию морального вреда в судебном порядке.</li>
+    </ul>
+    <p><strong>Субъекты персональных данных обязаны:</strong></p>
+    <ul>
+      <li>сообщать достоверную информацию о себе в объеме, необходимом для цели обработки;</li>
+      <li>сообщать Оператору об уточнении (обновлении, изменении) своих персональных данных, необходимых для цели обработки.</li>
+    </ul>
+    <li><strong>2.5.2. Права и обязанности работников Оператора, обрабатывающих персональные данные субъектов персональных данных:</strong></li>
+    <ul>
+      <li>Работники Оператора, обрабатывающие запросы с Сайта, содержащие персональные данные, обязаны:</li>
+      <ul>
+        <li>обрабатывать персональные данные, полученные в установленном действующим законодательством порядке;</li>
+        <li>рассматривать обращения субъекта персональных данных и давать мотивированные ответы в установленные сроки;</li>
+        <li>предоставлять субъекту персональных данных возможность безвозмездного доступа к своим персональным данным;</li>
+        <li>принимать меры по уточнению, уничтожению персональных данных;</li>
+        <li>организовывать оперативное и архивное хранение информации, содержащей персональные данные.</li>
+      </ul>
+    </ul>
+  </ul>
+
+<h2>3. Цели обработки персональных данных</h2>
+  <p>Обработка Оператором персональных данных осуществляется в следующих целях:</p>
+  <ul>
+    <li>предоставление информации по запросу субъекта персональных данных о товарах и услугах Оператора, мероприятиях, проводимых Оператором;</li>
+    <li>установление с субъектом персональных данных обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта, обработка запросов на предоставление информации;</li>
+  </ul>
+
+<h2>4. Правовые основания обработки персональных данных</h2>
+  <ul>
+    <li><strong>4.1.</strong> Правовым основанием обработки персональных данных является совокупность правовых актов, во исполнение которых и в соответствии с которыми Оператор осуществляет обработку персональных данных.</li>
+    <li><strong>4.2.</strong> В качестве правового основания обработки персональных данных выступают:
+      <ul>
+        <li>Федеральные законы и принятые на их основе нормативные правовые акты;</li>
+        <li>Согласие на обработку персональных данных (Приложение № 1 к настоящей Политике). Для использования технических файлов cookie согласие субъекта персональных данных не требуется.</li>
+      </ul>
+    </li>
+  </ul>
+
+<h2>5. Объем и категории обрабатываемых персональных данных</h2>
+  <ul>
+    <li><strong>5.1.</strong> Категории обрабатываемых персональных данных:
+      <ul>
+        <li>Фамилия;</li>
+        <li>Имя;</li>
+        <li>Сведения о банковских реквизитах;</li>
+        <li>номер(-а) контактного(-ых) телефона(-ов);</li>
+        <li>адрес(-а) электронной почты.</li>
+      </ul>
+    </li>
+    <li><strong>5.2.</strong> Данные, собираемые автоматически:
+      <ul>
+        <li>IP-адрес;</li>
+        <li>информация из файлов cookie;</li>
+        <li>информация о браузере;</li>
+        <li>посещенные страницы;</li>
+        <li>страна пользователя;</li>
+        <li>регион пользователя;</li>
+        <li>провайдер пользователя;</li>
+        <li>разрешение экрана пользователя;</li>
+        <li>кол-во цветов экрана пользователя и др.</li>
+      </ul>
+    </li>
+  </ul>
+
+<h2>6. Порядок и условия обработки персональных данных</h2>
+  <ul>
+    <li><strong>6.1.</strong> Обработка персональных данных осуществляется с согласия субъектов персональных данных, если иное не предусмотрено законодательством.</li>
+    <li><strong>6.2.</strong> Обработка персональных данных осуществляется с помощью средств вычислительной техники (автоматизированная обработка).</li>
+    <li><strong>6.3.</strong> К обработке допускаются только те работники Оператора, в должностные обязанности которых она входит.</li>
+    <li><strong>6.4.</strong> Обработка персональных данных осуществляется через формы обратной связи, общедоступные источники, файлы cookie и статистические данные.</li>
+    <li><strong>6.5.</strong> Отключение файлов cookie может повлечь невозможность доступа к частям Сайта, требующим авторизации.</li>
+    <li><strong>6.6.</strong> Передача персональных данных третьим лицам (в том числе трансграничная) запрещена, за исключением случаев, установленных законодательством.</li>
+    <li><strong>6.7.</strong> Хранение персональных данных — до достижения целей обработки или отзыва согласия.</li>
+    <li><strong>6.8.</strong> Оператор не имеет права осуществлять обработку без согласия субъекта, кроме случаев, предусмотренных законом.</li>
+    <li><strong>6.9.</strong> Сроки хранения определяются в соответствии с законодательством РФ и локальными актами Оператора.</li>
+  </ul>
+
+<h2>7. Ответы на запросы субъектов, актуализация, удаление, уничтожение персональных данных</h2>
+  <ul>
+    <li><strong>7.1.</strong> Сведения предоставляются субъекту персональных данных или его представителю при обращении либо по запросу.</li>
+    <li><strong>7.2.</strong> Сведения предоставляются в доступной форме, без раскрытия данных других субъектов.</li>
+    <li><strong>7.3.</strong> При отсутствии достаточных сведений или несоответствии запроса — направляется мотивированный отказ.</li>
+    <li><strong>7.4.</strong> Запрос должен содержать данные документа, удостоверяющего личность, сведения о дате выдачи, выдавшем органе, факт обработки, подпись.</li>
+    <li><strong>7.5.</strong> Доступ может быть ограничен, если он нарушает права третьих лиц.</li>
+    <li><strong>7.6–7.8.</strong> Оператор обязан внести изменения или уничтожить неполные/неточные данные в течение 7 рабочих дней.</li>
+    <li><strong>7.9.</strong> По запросу уполномоченного органа Оператор обязан предоставить информацию в течение 30 дней.</li>
+    <li><strong>7.11.</strong> Согласие может быть отозвано. Оператор обязан уничтожить данные в течение 30 дней.</li>
+    <li><strong>7.12.</strong> В некоторых случаях Оператор вправе продолжить обработку персональных данных после отзыва согласия.</li>
+  </ul>
+
+<h2>8. Требования к защите персональных данных</h2>
+  <ul>
+    <li><strong>8.1.</strong> Безопасность персональных данных обеспечивается в соответствии с российским законодательством и рекомендациями регуляторов.</li>
+    <li><strong>8.2.</strong> Оператор предпринимает меры для защиты от несанкционированного доступа, уничтожения, изменения, блокирования.</li>
+    <li><strong>8.3.</strong> Меры защиты включают создание документов, назначение ответственных лиц, обучение, учет ИС, запрет передачи данных без шифрования, проведение внутреннего контроля.</li>
+    <li><strong>8.4.</strong> Ответственность за нарушение требований — в соответствии с законодательством РФ.</li>
+  </ul>
+<h2>Приложение 1 к Политике Общества с ограниченной ответственностью «МАТРЕШКА МАРКЕТ»</h2>
+  <p><strong>в отношении обработки персональных данных сайта nocobase.ru,</strong><br>
+     а также всех сайтов доменной зоны nocobase.ru</p>
+
+<h3>СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</h3>
+
+  <p>Персональные данные пользователей веб-сайта <a href="https://nocobase.ru ">nocobase.ru</a> (далее – «Сайт») и его доменной зоны, используемые и хранящиеся на Сайте, регулируются Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных». Посетитель (далее – Субъект персональных данных) предоставляет свои персональные данные добровольно с целью получения информационных материалов, в том числе распространяемых по сетям электросвязи путем осуществления прямых контактов с помощью средств связи и/или иным образом.</p>
+
+  <p><strong>Настоящее Согласие на обработку персональных данных (далее – «Согласие»)</strong> предоставляется Субъектом персональных данных на осуществление действий в отношении его персональных данных, которые необходимы для достижения целей, указанных в разделе 3 Политики Общества с ограниченной ответственностью «МАТРЕШКА МАРКЕТ» в отношении обработки персональных данных сайта <a href="https://nocobase.ru ">https://nocobase.ru </a>, а также всех сайтов доменной зоны nocobase.ru (далее – «Политика»).</p>
+
+  <p><strong>Заполняя форму обратной связи на Сайте</strong>, Субъект персональных данных соглашается с Политикой и дает согласие Оператору на обработку персональных данных, указанных в пункте 5.1 Политики и файлов cookie.</p>
+
+  <p><strong>Согласие на обработку персональных данных предоставляется</strong> с момента заполнения Формы обратной связи (далее – «Форма») и действительно до момента его отзыва по письменному заявлению.</p>
+
+  <p><strong>Письменный отзыв должен быть предоставлен:</strong></p>
+  <ul>
+    <li><strong>лично субъектом персональных данных или его законным представителем</strong> по адресу электронной почты: <a href="mailto:hello@nocobase.ru">hello@nocobase.ru</a> (должен быть отправлен только с адреса электронной почты, указанного при выдаче настоящего согласия Субъектом персональных данных в Форме на Сайте), либо</li>
+    <li>направлен почтовым отправлением по адресу Оператора.</li>
+  </ul>
+</div>
+</details>
