@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、カスタム集計変数のサポート、日付フィールドフィルタにおけるカスタムオフセットのサポートなどが含まれます。",
   "slug": "weekly-updates-20250529",
   "publishedAt": "2025-05-29T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -111,7 +111,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-29T00:24:48.699Z",
+  "updatedAt": "2025-05-29T01:21:20.158Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
