@@ -81,7 +81,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fix incorrect record id for ViewAction by @mytharcher
   - Fix appends and data calculation before submit approval process by @mytharcher
 
-
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
@@ -93,7 +92,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 #### 🎉 New Features
 
 - **[undefined]** New support for Gitpod allows you to start the development environment with one click and quickly begin development. ([#6922](https://github.com/nocobase/nocobase/pull/6922)) by @kerwin612
-- **[Input Copy Button]** Add new "Input Copy Button" plugin for single-line text fields ([#6894](https://github.com/nocobase/nocobase/pull/6894)) by @kerwin612
 - **[Action: Import records Pro]**
 
   - Support defining unique records by multiple fields when importing settings by @aaaaaajie
