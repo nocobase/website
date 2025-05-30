@@ -118,21 +118,3 @@
   * コレクションフィールドを使用したストレージの位置指定方法の変更 @mytharcher
   * アクセス URL の有効期限が無効な問題の修正 @jiannx
 * **[ワークフロー：承認]** タスクの統計数カウントエラーの修正 @mytharcher
-
-## NocoBaseについて
-
-NocoBaseは、完全なコントロールと無限のスケーラビリティを提供する、プライベートかつオープンソースのノーコードプラットフォームです。チームが変化に迅速に対応し、コストを大幅に削減することを可能にします。数年に及ぶ開発や多額の投資を避け、数分でNocoBaseを展開できます。
-
-<iframe src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FhOM2MyzHn9I&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhOM2MyzHn9I&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FhOM2MyzHn9I%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube" allowfullscreen="" frameborder="0" height="480" width="854" title="" class="dc n pc cp bh" scrolling="no"></iframe>
-
-3分でNocoBaseを体験！
-
-## 👇 NocoBaseを入手
-
-[**ホームページ**](https://www.nocobase.com/)
-
-[**デモ**](https://demo.nocobase.com/new)
-
-[**ドキュメント**](https://docs.nocobase.com/)
-
-[**GitHub**](https://github.com/nocobase/nocobase)
