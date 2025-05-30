@@ -107,7 +107,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fix client variables to use in approval form by @mytharcher
   - Fix branch mode when `endOnReject` configured as `true` by @mytharcher
 
-
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
@@ -301,21 +300,3 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Collection: Tree]** Migration issue for plugin-collection-tree ([#6537](https://github.com/nocobase/nocobase/pull/6537)) by @2013xile
 - **[Block: Multi-step form]** the submit button has the same color in its default and highlighted by @jiannx
 - **[Workflow: Approval]** Fix approval form values to submit by @mytharcher
-
-## About NocoBase
-
-NocoBase is a private, open-source, no-code platform offering total control and infinite scalability. It empowers teams to adapt quickly to changes while significantly reducing costs. Avoid years of development and substantial investment by deploying NocoBase in minutes.
-
-<iframe src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FhOM2MyzHn9I&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhOM2MyzHn9I&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FhOM2MyzHn9I%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube" allowfullscreen="" frameborder="0" height="480" width="854" title="" class="dc n pc cp bh" scrolling="no"></iframe>
-
-Discover NocoBase in 3 Minutes!
-
-## 👇 Get NocoBase
-
-[**Homepage**](https://www.nocobase.com/)
-
-[**Demo**](https://demo.nocobase.com/new)
-
-[**Documentation**](https://docs.nocobase.com/)
-
-[**GitHub**](https://github.com/nocobase/nocobase)
