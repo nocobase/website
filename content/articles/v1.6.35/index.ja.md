@@ -1,8 +1,6 @@
 ### 🎉 新機能
 
 * **[未定義]**
-  * 一行テキストフィールド用の新規「入力コピーボタン」プラグインを追加（[#6894](https://github.com/nocobase/nocobase/pull/6894)）@kerwin612
-  * 一行テキストフィールド用の新規「入力コピーボタン」プラグインを追加（[#6894](https://github.com/nocobase/nocobase/pull/6894)）@kerwin612
   * Gitpod を新たにサポート。クリック 1 回で開発環境を起動し、すぐに開発を開始できます。（[#6922](https://github.com/nocobase/nocobase/pull/6922)）@kerwin612
 
 ### 🚀 機能改善
