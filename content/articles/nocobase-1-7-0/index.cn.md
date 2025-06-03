@@ -20,14 +20,6 @@
 * [双因素身份认证](https://docs-cn.nocobase.com/handbook/two-factor-authentication)
 * [TOTP 认证器](https://docs-cn.nocobase.com/handbook/verification-totp-authenticator)
 
-### 导入记录Pro
-
-导入配置支持多字段定唯一记录，支持设置空白单元格覆盖和忽略模式。
-
-![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
-
-参考文档：[导入 Pro](https://docs-cn.nocobase.com/handbook/action-import-pro)
-
 ### 模板打印
 
 文档模板支持动态图片和条形码渲染功能。
@@ -92,8 +84,6 @@
 
 ## 优化
 
-### Ant design 相关依赖升级至 5.24.2
-
 ### 联动规则属性优化
 
 * 选择类型字段支持设置可选项属性
@@ -103,16 +93,34 @@
 
 参考文档：[字段联动规则](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
 
+### 导入记录Pro
+
+导入配置支持多字段定唯一记录，支持设置空白单元格覆盖和忽略模式。
+
+![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
+
+参考文档：[导入 Pro](https://docs-cn.nocobase.com/handbook/action-import-pro)
+
 ### 导出xlsx性能优化
 
 * 导出大数据表内存溢出应用卡死
 * 导出有概率出现重复数据
 * 导出数据按索引、唯一约束、索引策略查询优化
-* 新增导出并发队列和环境变量设置并发数 https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
+* 新增导出并发队列和环境变量设置并发数
+  ![20250505171706](https://nocobase-docs.oss-cn-beijing.aliyuncs.com/20250505171706.png)
+
+参考文档：
+
+- [并发导出](https://docs-cn.nocobase.com/handbook/action-export-pro#%E5%B9%B6%E5%8F%91%E5%AF%BC%E5%87%BA)
+- [关于性能](https://docs-cn.nocobase.com/handbook/action-export-pro#%E5%85%B3%E4%BA%8E%E6%80%A7%E8%83%BD)
 
 ### 导入xlsx性能优化
 
 * 导入策略由原来单条改为批量插入
 * 重构重复标识，单条改为批量，更新逻辑，触发工作流等逻辑不变
 
+参考文档：[关于性能](https://docs-cn.nocobase.com/handbook/action-import-pro#%E5%85%B3%E4%BA%8E%E6%80%A7%E8%83%BD)
+
 ### 工作流执行效率提升 100%
+
+![image-va9ose.png](https://static-docs.nocobase.com/image-va9ose.png)
