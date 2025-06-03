@@ -1,5 +1,7 @@
 ## New Feature
 
+### Open source plugins for department and attachment URL
+
 ### Role Union
 
 Role Union is a permission management mode. According to system settings, system developers can choose to use `Independent roles`, `Allow roles union`, or `Allow roles union`, to meet different permission requirements.
@@ -20,68 +22,84 @@ Reference:
 * [Two-Factor Authentication](https://docs.nocobase.com/handbook/two-factor-authentication)
 * [TOTP Authenticator](https://docs.nocobase.com/handbook/verification-totp-authenticator)
 
+### Import Pro
+
+Import configuration now supports using multiple fields to uniquely identify records, as well as options to either overwrite or ignore blank cells during import.
+
+![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
+
+Reference:[Import Pro](https://docs.nocobase.com/handbook/action-import-pro)
+
+### Template Printing
+
+Template printing now supports dynamic image and barcode rendering.
+
+Reference: [Template Printing](https://docs-cn.nocobase.com/handbook/action-template-print#%E5%9C%A8-docx-%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87)
+
 ### Multiple keyword filter
 
 The multi-keyword filter plugin adds powerful text filtering capabilities to the NocoBase platform, enabling you to filter data using multiple keywords and greatly enhancing the flexibility and efficiency of data queries.
 
-![20250417165918_rec_](https://static-docs.nocobase.com/20250417165918_rec_.gif)
+![20250603152726_rec_-ix3j8w.gif](https://static-docs.nocobase.com/20250603152726_rec_-ix3j8w.gif)
 
 Reference: [Multiple keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
 
-### 日期筛选功能支持灵活配置自定义偏移量
+### Date Filter Supports Relative Date Range Selection
 
-支持按自定义时间偏移（天/周/月/季度/年）和指定日期进行筛选，满足更灵活的时间范围查询需求。
+Supports filtering by custom time offsets (days/weeks/months/quarters/years) and specific dates, enabling more flexible time range queries.
 
 ![20250603130948_rec_-plwa6o.gif](https://static-docs.nocobase.com/20250603130948_rec_-plwa6o.gif)
 
-### 联动规则扩展筛选操作符
+### Field Linkage rules extension filter operator
 
-支持为 `select`、`radioGroup`、`multipleSelect`、`checkboxGroup` 等字段类型动态配置选项，实现与表单中其他字段的联动更新。支持为日期字段动态配置可选范围，可根据表单其他字段的变化自动调整日期范围。
+Supports dynamic configuration of options for field types such as `select`, `radioGroup`, `multipleSelect`, `checkboxGroup`, etc., to achieve linkage updates with other fields in the form. Supports dynamic configuration of optional ranges for date fields, and can automatically adjust the date range according to changes in other fields in the form.
 
 ![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
 
-Reference: [字段联动规则](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+Reference: [Field Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
 
-### 联动规则条件左侧支持变量
+### Left-side Variables
 
-条件左侧变量用于定义联动规则中“判断的对象”，即基于该变量的值来进行条件判断，从而决定是否触发联动行为。
+The left-side variables in a condition are used to define the "object being judged" in the linkage rule, i.e., the condition will evaluate this variable’s value to determine whether the linkage behavior should be triggered.
 
 ![20250417214217](https://static-docs.nocobase.com/20250417214217.png)
 
-Reference: [左侧变量](https://docs-cn.nocobase.com/handbook/ui/linkage-rule#%E5%B7%A6%E4%BE%A7%E5%8F%98%E9%87%8F)
+Reference: [Left-side Variables](https://docs.nocobase.com/handbook/ui/linkage-rule#left-side-variables)
 
-### 区块继承模板
+### Inherited Template
 
-继承模板主要适用于希望区块能跟随模板的基础更新，但也需要做一些自己的调整的场景。通过继承模板创建的区块，会继承模板的配置，并能在此基础上进行扩展或覆盖。未被区块覆盖的配置会随模板更新而同步。
+Inherited templates are ideal when you want blocks to follow a template’s basic updates but also allow specific changes. Blocks inherit the template’s settings and can extend or override them. Settings not changed in the block will update automatically with the template.
 
 ![主界面](https://static-docs.nocobase.com/main-screen-block-templates.png)
 
-Reference: [继承模版](https://docs-cn.nocobase.com/handbook/block-template#%E7%BB%A7%E6%89%BF%E6%A8%A1%E6%9D%BF)
+Reference: [Inherited Template](https://docs.nocobase.com/handbook/block-template#inherited-template)
 
-### 区块联动规则
+### Block Linkage Rules
 
-支持在区块中配置联动规则，实现动态显示区块。
+Block linkage rules allow users to dynamically control the visibility of blocks, enabling the management of element display at the block level.
 
 ![image-ccerr7.png](https://static-docs.nocobase.com/image-ccerr7.png)
 
-### 提交成功后
+Reference: [Block Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/block-linkage-rule)
 
-支持刷新其它区块的数据，支持带参数数跳转详情页。
+### After Successful Submission
+
+After successful submission, supports refreshing data in other blocks and navigating to detail pages with parameters.
 
 ![image-v29vlv.png](https://static-docs.nocobase.com/image-v29vlv.png)
 
-Reference: [提交成功后](https://docs-cn.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
+Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
 
-### 新增代码字段
+### Add Code Field
 
 ![image-q0jwvb.png](https://static-docs.nocobase.com/image-q0jwvb.png)
 
-### 工作流分类管理
+### Workflow Category Management
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
-## 优化
+## Improvements
 
-### Ant design 相关依赖升级至 5.24.2
+### Upgrade ant design related dependencies to version 5.24.2
 
-### 导入、导出xlsx性能优化
+### Import and export xlsx performance optimization
