@@ -50,14 +50,6 @@
 
 ![20250603130948_rec_-plwa6o.gif](https://static-docs.nocobase.com/20250603130948_rec_-plwa6o.gif)
 
-### 联动规则扩展筛选操作符
-
-支持为 `select`、`radioGroup`、`multipleSelect`、`checkboxGroup` 等字段类型动态配置选项，实现与表单中其他字段的联动更新。支持为日期字段动态配置可选范围，可根据表单其他字段的变化自动调整日期范围。
-
-![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
-
-参考文档：[字段联动规则](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
-
 ### 联动规则条件左侧支持变量
 
 条件左侧变量用于定义联动规则中“判断的对象”，即基于该变量的值来进行条件判断，从而决定是否触发联动行为。
@@ -90,27 +82,37 @@
 
 参考文档：[提交成功后](https://docs-cn.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
 
-### 新增代码字段
-
-![image-q0jwvb.png](https://static-docs.nocobase.com/image-q0jwvb.png)
-
 ### 工作流分类管理
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
 ### 部门和附件 URL 插件开源
 
+![image-br8u55.png](https://static-docs.nocobase.com/image-br8u55.png)
+
 ## 优化
 
 ### Ant design 相关依赖升级至 5.24.2
+
+### 联动规则属性优化
+
+* 选择类型字段支持设置可选项属性
+* 日期类型字段支持设置日期范围
+
+![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
+
+参考文档：[字段联动规则](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
 
 ### 导出xlsx性能优化
 
 * 导出大数据表内存溢出应用卡死
 * 导出有概率出现重复数据
 * 导出数据按索引、唯一约束、索引策略查询优化
-* 新增导出并发队列和环境变量设置并发数
+* 新增导出并发队列和环境变量设置并发数 https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
 
 ### 导入xlsx性能优化
+
+* 导入策略由原来单条改为批量插入
+* 重构重复标识，单条改为批量，更新逻辑，触发工作流等逻辑不变
 
 ### 工作流执行效率提升 100%
