@@ -20,15 +20,29 @@
 * [双因素身份认证](https://docs-cn.nocobase.com/handbook/two-factor-authentication)
 * [TOTP 认证器](https://docs-cn.nocobase.com/handbook/verification-totp-authenticator)
 
+### 导入记录Pro
+
+导入配置支持多字段定唯一记录，支持设置空白单元格覆盖和忽略模式。
+
+![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
+
+参考文档：[导入 Pro](https://docs-cn.nocobase.com/handbook/action-import-pro)
+
+### 模板打印
+
+文档模板支持动态图片和条形码渲染功能。
+
+参考文档：[模版打印](https://docs-cn.nocobase.com/handbook/action-template-print#%E5%9C%A8-docx-%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87)
+
 ### 多关键词筛选
 
 多关键词筛选插件为 NocoBase 平台增加了强大的文本筛选功能，让您能够使用多个关键词进行筛选，大大提高了数据查询的灵活性和效率。
 
-![20250417165918_rec_](https://static-docs.nocobase.com/20250417165918_rec_.gif)
+![20250603152726_rec_-ix3j8w.gif](https://static-docs.nocobase.com/20250603152726_rec_-ix3j8w.gif)
 
 参考文档：[多关键词筛选](https://docs-cn.nocobase.com/handbook/multi-keyword-filter)
 
-### 日期筛选功能支持灵活配置自定义偏移量
+### 日期筛选支持选择相对时间范围
 
 支持按自定义时间偏移（天/周/月/季度/年）和指定日期进行筛选，满足更灵活的时间范围查询需求。
 
@@ -83,5 +97,7 @@
 ## 优化
 
 ### Ant design 相关依赖升级至 5.24.2
+
+### 部门和附件URL 插件开源
 
 ### 导入、导出xlsx性能优化
