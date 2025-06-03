@@ -50,14 +50,6 @@
 
 ![20250603130948_rec_-plwa6o.gif](https://static-docs.nocobase.com/20250603130948_rec_-plwa6o.gif)
 
-### フィールド連動ルールの拡張フィルター演算子
-
-`select`、`radioGroup`、`multipleSelect`、`checkboxGroup`などのフィールドの選択肢を動的に設定でき、フォーム内の他フィールドの変化に連動して選択肢が更新されます。日付フィールドの範囲も動的に設定可能で、フォームの他のフィールドの変化に応じて自動調整されます。
-
-![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
-
-参考ドキュメント： [Field Linkage Rules](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
-
 ### 左側の変数
 
 条件内の左側変数は連動ルールにおける「判定対象のオブジェクト」を定義し、この変数の値を評価して連動動作のトリガーを判定します。
@@ -90,20 +82,37 @@
 
 参考ドキュメント： [提交成功後](https://docs-jp.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
 
-### コードフィールド追加
-
-![image-q0jwvb.png](https://static-docs.nocobase.com/image-q0jwvb.png)
-
 ### ワークフロー分類管理
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
 ### 部門と添付ファイルURLプラグインのオープンソース化
 
+![image-br8u55.png](https://static-docs.nocobase.com/image-br8u55.png)
+
 ## 改善点
 
 ### Ant Design 関連依存パッケージをバージョン 5.24.2 にアップグレード
 
-### XLSXのインポート・エクスポート処理のパフォーマンス最適化
+### 連動ルールのプロパティ改善
+
+* 選択型フィールドで選択肢の設定が可能に
+* 日付型フィールドで日付範囲の設定が可能に
+
+![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
+
+参考ドキュメント：[Field Linkage Rules](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+
+### XLSXファイルのエクスポート性能最適化
+
+* 大量データの表をエクスポートする際にメモリが溢れ、アプリケーションがクラッシュする問題
+* エクスポートデータに重複データが発生する可能性がある
+* インデックス、一意制約、インデックス戦略に基づいたエクスポートデータのクエリ最適化
+* エクスポート用の並列処理キューを新たに追加し、環境変数を設定して並列処理数を制御する。詳細は以下のリンクを参照してください:** **https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
+
+### XLSXファイルのインポート性能最適化
+
+* 元々の単一レコードインポート戦略をバッチ挿入に変更する
+* 重複識別を再構築し、単一レコード処理をバッチ処理に変更する。ただし、更新ロジックやワークフローのトリガーなどのロジックは変更しない
 
 ### ワークフローの実行効率が100％向上しました
