@@ -3,9 +3,9 @@
   "title": "NocoBase v1.7.0 Officially Released",
   "title_cn": "NocoBase v1.7.0 正式版发布",
   "title_ja": "NocoBase v1.7.0 正式リリース",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Enhanced permission mechanisms and performance optimization, along with plugin open-sourcing, deliver comprehensive improvements in functionality and user experience.",
+  "description_cn": "权限机制增强与性能优化，插件开源，实现功能拓展与用户体验的全面提升",
+  "description_ja": "権限メカニズムを強化し、パフォーマンスを最適化し、プラグインをオープンソース化し、機能とユーザー エクスペリエンスを総合的に向上させます。",
   "slug": "nocobase-1-7-0",
   "publishedAt": "2025-06-03T06:00:03.964Z",
   "status": "drafted",
@@ -251,8 +251,8 @@
   "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-06-03T07:53:35.642Z",
+  "updatedAt": "2025-06-03T08:55:01.808Z",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null
+  "ai_generated_ja": true
 }
