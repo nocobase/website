@@ -1,14 +1,12 @@
 ## 新機能
 
-### 部門と添付ファイルURLプラグインのオープンソース化
-
 ### ロールユニオン
 
 ロールユニオンは権限管理の方式です。システム設定に応じて、システム開発者は「独立したロールの使用」「ロールのユニオンを許可」「ロールのユニオンのみを許可」から選択でき、様々な権限要件に対応します。
 
 ![20250312184651](https://static-docs.nocobase.com/20250312184651.png)
 
-参考ドキュメント： [Role Union](https://docs.nocobase.com/handbook/acl/manual)
+参考ドキュメント： [ユーザーマニュアル](https://docs-jp.nocobase.com/handbook/acl/manual)
 
 ### 認証と二要素認証（2FA）
 
@@ -18,9 +16,9 @@
 
 参考ドキュメント：
 
-* [Verification](https://docs.nocobase.com/handbook/verification)
-* [Two-Factor Authentication](https://docs.nocobase.com/handbook/two-factor-authentication)
-* [TOTP Authenticator](https://docs.nocobase.com/handbook/verification-totp-authenticator)
+* [Verification](https://docs-jp.nocobase.com/handbook/verification)
+* [Two-Factor Authentication](https://docs-jp.nocobase.com/handbook/two-factor-authentication)
+* [TOTP Authenticator](https://docs-jp.nocobase.com/handbook/verification-totp-authenticator)
 
 ### Import Pro
 
@@ -28,7 +26,7 @@
 
 ![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
 
-参考ドキュメント： [Import Pro](https://docs.nocobase.com/handbook/action-import-pro)
+参考ドキュメント： [インポート Pro](https://docs-jp.nocobase.com/handbook/action-import-pro)
 
 ### テンプレート印刷
 
@@ -42,7 +40,7 @@
 
 ![20250603152726_rec_-ix3j8w.gif](https://static-docs.nocobase.com/20250603152726_rec_-ix3j8w.gif)
 
-参考ドキュメント： [Multiple keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
+参考ドキュメント： [Multiple keyword filter](https://docs-jp.nocobase.com/handbook/multi-keyword-filter)
 
 ### 日付フィルターが相対日付範囲選択に対応
 
@@ -56,7 +54,7 @@
 
 ![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
 
-参考ドキュメント： [Field Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+参考ドキュメント： [Field Linkage Rules](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
 
 ### 左側の変数
 
@@ -64,7 +62,7 @@
 
 ![20250417214217](https://static-docs.nocobase.com/20250417214217.png)
 
-参考ドキュメント： [Left-side Variables](https://docs.nocobase.com/handbook/ui/linkage-rule#left-side-variables)
+参考ドキュメント： [Left-side Variables](https://docs-jp.nocobase.com/handbook/ui/linkage-rule#left-side-variables)
 
 ### 継承テンプレート
 
@@ -72,7 +70,7 @@
 
 ![主界面](https://static-docs.nocobase.com/main-screen-block-templates.png)
 
-参考ドキュメント： [Inherited Template](https://docs.nocobase.com/handbook/block-template#inherited-template)
+参考ドキュメント： [Inherited Template](https://docs-jp.nocobase.com/handbook/block-template#inherited-template)
 
 ### ブロック連動ルール
 
@@ -80,7 +78,7 @@
 
 ![image-ccerr7.png](https://static-docs.nocobase.com/image-ccerr7.png)
 
-参考ドキュメント： [Block Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/block-linkage-rule)
+参考ドキュメント： [Block Linkage Rules](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/block-linkage-rule)
 
 ### 送信成功後の動作
 
@@ -88,7 +86,7 @@
 
 ![image-v29vlv.png](https://static-docs.nocobase.com/image-v29vlv.png)
 
-参考ドキュメント： [After Successful Submission](https://docs.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
+参考ドキュメント： [提交成功後](https://docs-jp.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
 
 ### コードフィールド追加
 
@@ -97,6 +95,8 @@
 ### ワークフロー分類管理
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
+
+### 部門と添付ファイルURLプラグインのオープンソース化
 
 ## 改善点
 
