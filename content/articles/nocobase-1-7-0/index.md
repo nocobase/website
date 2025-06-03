@@ -103,3 +103,5 @@ Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/a
 ### Upgrade ant design related dependencies to version 5.24.2
 
 ### Import and export xlsx performance optimization
+
+### Workflow execution efficiency improved by 100%
