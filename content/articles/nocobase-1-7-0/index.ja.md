@@ -32,6 +32,8 @@
 
 テンプレート印刷に動的画像とバーコードのレンダリング機能を追加しました。
 
+![](https://static-docs.nocobase.com/20250414211130-2025-04-14-21-11-31.png)
+
 参考ドキュメント： [Template Printing](https://docs-cn.nocobase.com/handbook/action-template-print#%E5%9C%A8-docx-%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87)
 
 ### 複数キーワードフィルター
