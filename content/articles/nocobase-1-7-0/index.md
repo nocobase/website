@@ -1,7 +1,5 @@
 ## New Feature
 
-### Open source plugins for department and attachment URL
-
 ### Role Union
 
 Role Union is a permission management mode. According to system settings, system developers can choose to use `Independent roles`, `Allow roles union`, or `Allow roles union`, to meet different permission requirements.
@@ -97,6 +95,8 @@ Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/a
 ### Workflow Category Management
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
+
+### Open source plugins for department and attachment URL
 
 ## Improvements
 
