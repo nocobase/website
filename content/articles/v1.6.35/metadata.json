@@ -1,14 +1,14 @@
 {
   "id": 473,
-  "title": "NocoBase v1.6.35: ",
-  "title_cn": "NocoBase v1.6.35：",
-  "title_ja": "NocoBase v1.6.35：",
+  "title": "NocoBase v1.6.35: Add Gitpod support",
+  "title_cn": "NocoBase v1.6.35：新增 gitpod 的支持",
+  "title_ja": "NocoBase v1.6.35：Gitpod を新たにサポート",
   "description": "Release Note of v1.6.35",
   "description_cn": "v1.6.35 更新日志",
   "description_ja": "v1.6.35 のリリースノート",
   "slug": "v1.6.35",
   "publishedAt": "2025-05-29T01:53:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -85,7 +85,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-05-30T09:18:41.678Z",
+  "updatedAt": "2025-06-03T00:17:03.698Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
