@@ -20,14 +20,6 @@ Reference:
 * [Two-Factor Authentication](https://docs.nocobase.com/handbook/two-factor-authentication)
 * [TOTP Authenticator](https://docs.nocobase.com/handbook/verification-totp-authenticator)
 
-### Import Pro
-
-Import configuration now supports using multiple fields to uniquely identify records, as well as options to either overwrite or ignore blank cells during import.
-
-![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
-
-Reference:[Import Pro](https://docs.nocobase.com/handbook/action-import-pro)
-
 ### Template Printing
 
 Template printing now supports dynamic image and barcode rendering.
@@ -36,7 +28,7 @@ Template printing now supports dynamic image and barcode rendering.
 
 Reference: [Template Printing](https://docs-cn.nocobase.com/handbook/action-template-print#%E5%9C%A8-docx-%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87)
 
-### Multiple keyword filter
+### Multiple Keyword Filter
 
 The multi-keyword filter plugin adds powerful text filtering capabilities to the NocoBase platform, enabling you to filter data using multiple keywords and greatly enhancing the flexibility and efficiency of data queries.
 
@@ -86,13 +78,11 @@ Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/a
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
-### Open source plugins for department and attachment URL
+### Open Source Plugins For Department And Attachment URL
 
 ![image-br8u55.png](https://static-docs.nocobase.com/image-br8u55.png)
 
 ## Improvements
-
-### Upgrade ant design related dependencies to version 5.24.2
 
 ### Linkage Rule Property Enhancements
 
@@ -103,16 +93,35 @@ Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/a
 
 Reference: [Field Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
 
-### Performance Optimization for Exporting XLSX
+### Import Pro
+
+Import configuration now supports using multiple fields to uniquely identify records, as well as options to either overwrite or ignore blank cells during import.
+
+![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
+
+Reference:[Import Pro](https://docs.nocobase.com/handbook/action-import-pro)
+
+### Performance Optimization For Exporting XLSX
 
 * Memory overflow and application freezing when exporting large data tables
 * There is a probability of duplicate data in the exported data
 * Query optimization for exported data based on indexes, unique constraints, and index strategies
-* Add an export concurrent queue and set the concurrency number through environment variables. For more information, please refer to: https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
+* Add an export concurrent queue and set the concurrency number through environment variables.
 
-### Performance Optimization for Importing XLSX Files
+![20250505171706](https://nocobase-docs.oss-cn-beijing.aliyuncs.com/20250505171706.png)
+
+Reference:
+
+* [Concurrent Exports](https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports)
+* [About Performance](https://docs.nocobase.com/handbook/action-export-pro#about-performance)
+
+### Performance Optimization For Importing XLSX Files
 
 * Change the original single - row import strategy to batch insertion
 * Reconstruct the duplicate identification mechanism. Change from single - row processing to batch processing while keeping the update logic and triggering workflow unchanged
 
-### Workflow execution efficiency improved by 100%
+Reference: [About Performance](https://docs.nocobase.com/handbook/action-import-pro#about-performance)
+
+### Workflow Execution Efficiency Improved By 100%
+
+![image-ligrnm.png](https://static-docs.nocobase.com/image-ligrnm.png)
