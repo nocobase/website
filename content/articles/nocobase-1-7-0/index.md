@@ -50,14 +50,6 @@ Supports filtering by custom time offsets (days/weeks/months/quarters/years) and
 
 ![20250603130948_rec_-plwa6o.gif](https://static-docs.nocobase.com/20250603130948_rec_-plwa6o.gif)
 
-### Field Linkage rules extension filter operator
-
-Supports dynamic configuration of options for field types such as `select`, `radioGroup`, `multipleSelect`, `checkboxGroup`, etc., to achieve linkage updates with other fields in the form. Supports dynamic configuration of optional ranges for date fields, and can automatically adjust the date range according to changes in other fields in the form.
-
-![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
-
-Reference: [Field Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
-
 ### Left-side Variables
 
 The left-side variables in a condition are used to define the "object being judged" in the linkage rule, i.e., the condition will evaluate this variable’s value to determine whether the linkage behavior should be triggered.
@@ -90,20 +82,37 @@ After successful submission, supports refreshing data in other blocks and naviga
 
 Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/actions/action-settings/affter-successful)
 
-### Add Code Field
-
-![image-q0jwvb.png](https://static-docs.nocobase.com/image-q0jwvb.png)
-
 ### Workflow Category Management
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
 ### Open source plugins for department and attachment URL
 
+![image-br8u55.png](https://static-docs.nocobase.com/image-br8u55.png)
+
 ## Improvements
 
 ### Upgrade ant design related dependencies to version 5.24.2
 
-### Import and export xlsx performance optimization
+### Linkage Rule Property Enhancements
+
+* Selectable fields now support configurable options
+* Date fields now support setting a date range
+
+![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
+
+Reference: [Field Linkage Rules](https://docs.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+
+### Performance Optimization for Exporting XLSX
+
+* Memory overflow and application freezing when exporting large data tables
+* There is a probability of duplicate data in the exported data
+* Query optimization for exported data based on indexes, unique constraints, and index strategies
+* Add an export concurrent queue and set the concurrency number through environment variables. For more information, please refer to: https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
+
+### Performance Optimization for Importing XLSX Files
+
+* Change the original single - row import strategy to batch insertion
+* Reconstruct the duplicate identification mechanism. Change from single - row processing to batch processing while keeping the update logic and triggering workflow unchanged
 
 ### Workflow execution efficiency improved by 100%
