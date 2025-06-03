@@ -422,5 +422,8 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-03-18T07:56:59.115Z"
+  "updatedAt": "2025-06-03T02:20:35.940Z",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }
