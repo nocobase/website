@@ -20,14 +20,6 @@
 * [Two-Factor Authentication](https://docs-jp.nocobase.com/handbook/two-factor-authentication)
 * [TOTP Authenticator](https://docs-jp.nocobase.com/handbook/verification-totp-authenticator)
 
-### Import Pro
-
-インポート設定で複数フィールドを使ったレコードの一意識別が可能になり、空白セルを上書きするか無視するかのモード設定にも対応しました。
-
-![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
-
-参考ドキュメント： [インポート Pro](https://docs-jp.nocobase.com/handbook/action-import-pro)
-
 ### テンプレート印刷
 
 テンプレート印刷に動的画像とバーコードのレンダリング機能を追加しました。
@@ -92,8 +84,6 @@
 
 ## 改善点
 
-### Ant Design 関連依存パッケージをバージョン 5.24.2 にアップグレード
-
 ### 連動ルールのプロパティ改善
 
 * 選択型フィールドで選択肢の設定が可能に
@@ -101,18 +91,38 @@
 
 ![20250603143237_rec_-k8hene.gif](https://static-docs.nocobase.com/20250603143237_rec_-k8hene.gif)
 
-参考ドキュメント：[Field Linkage Rules](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+参考ドキュメント：[Field Linkage Rules](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/field-linkage-rule)
+
+### Import Pro
+
+インポート設定で複数フィールドを使ったレコードの一意識別が可能になり、空白セルを上書きするか無視するかのモード設定にも対応しました。
+
+![20250603153457_rec_-9zfsfx.gif](https://static-docs.nocobase.com/20250603153457_rec_-9zfsfx.gif)
+
+参考ドキュメント： [インポート Pro](https://docs-jp.nocobase.com/handbook/action-import-pro)
 
 ### XLSXファイルのエクスポート性能最適化
 
 * 大量データの表をエクスポートする際にメモリが溢れ、アプリケーションがクラッシュする問題
 * エクスポートデータに重複データが発生する可能性がある
 * インデックス、一意制約、インデックス戦略に基づいたエクスポートデータのクエリ最適化
-* エクスポート用の並列処理キューを新たに追加し、環境変数を設定して並列処理数を制御する。詳細は以下のリンクを参照してください:** **https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports
+* エクスポート用の並列処理キューを新たに追加し、環境変数を設定して並列処理数を制御する。
+
+![image-va9ose.png](https://static-docs.nocobase.com/image-va9ose.png)
+
+参考ドキュメント：
+
+- [並列処理によるエクスポート](https://docs-cn.nocobase.com/handbook/action-export-pro#%E5%B9%B6%E5%8F%91%E5%AF%BC%E5%87%BA)
+- [性能について](https://docs-cn.nocobase.com/handbook/action-export-pro#%E5%85%B3%E4%BA%8E%E6%80%A7%E8%83%BD)
 
 ### XLSXファイルのインポート性能最適化
 
 * 元々の単一レコードインポート戦略をバッチ挿入に変更する
 * 重複識別を再構築し、単一レコード処理をバッチ処理に変更する。ただし、更新ロジックやワークフローのトリガーなどのロジックは変更しない
 
+
+参考ドキュメント: [性能について](https://docs.nocobase.com/handbook/action-import-pro#about-performance)
+
 ### ワークフローの実行効率が100％向上しました
+
+![image-2bzvyz.png](https://static-docs.nocobase.com/image-2bzvyz.png)
