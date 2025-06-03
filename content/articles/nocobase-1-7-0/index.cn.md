@@ -1,5 +1,7 @@
 ## 新特性
 
+### 部门和附件 URL 插件开源
+
 ### 用户角色并集
 
 角色并集是一种权限管理模式，根据系统设置，系统开发者可以选择使用独立角色、允许角色并集，或者仅使用角色并集，以满足不同的权限需求。
@@ -78,6 +80,8 @@
 
 ![image-ccerr7.png](https://static-docs.nocobase.com/image-ccerr7.png)
 
+参考文档：[区块联动规则](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/block-linkage-rule)
+
 ### 提交成功后
 
 支持刷新其它区块的数据，支持带参数数跳转详情页。
@@ -97,7 +101,5 @@
 ## 优化
 
 ### Ant design 相关依赖升级至 5.24.2
-
-### 部门和附件URL 插件开源
 
 ### 导入、导出xlsx性能优化
