@@ -1,14 +1,14 @@
 {
   "id": 484,
-  "title": "NocoBase v1.8.0-beta.3",
-  "title_cn": "NocoBase v1.8.0-beta.3",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-beta.3: Support to use url parameter as variable",
+  "title_cn": "NocoBase v1.8.0-beta.3：支持使用 URL 参数作为变量",
+  "title_ja": "NocoBase v1.8.0-beta.3：URL パラメータを変数として使用可能に",
   "description": "Release Note of v1.8.0-beta.3",
   "description_cn": "v1.8.0-beta.3 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-beta.3 のリリースノート",
   "slug": "v1.8.0-beta.3",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-06-04T04:56:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-04T07:47:45.359Z",
+        "updatedAt": "2025-06-04T07:47:45.359Z",
+        "articles_id": 484,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-04T07:44:59.898Z",
+    "updatedAt": "2025-06-04T07:44:59.898Z",
+    "id": 1396,
+    "title": "next",
+    "filename": "next-ngsx8k.png",
+    "extname": ".png",
+    "size": 114888,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-ngsx8k.png",
+    "preview": "https://static-docs.nocobase.com/next-ngsx8k.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-04T04:56:27.224Z"
+  "updatedAt": "2025-06-04T07:47:45.348Z"
 }
