@@ -372,7 +372,6 @@ export async function listArticles(options?: {
   sort?: string[];
   appends?: string[];
 }) {
-  console.log('listArticles called with options:', JSON.stringify(options, null, 2));
   
   const { 
     hideOnBlog, 
@@ -491,34 +490,15 @@ export async function listArticles(options?: {
   }
 
   // Handle simple filtering conditions
-  for (const key in filter) {
-    if (key !== '$and') {
-      if (typeof filter[key] === 'object' && filter[key] !== null) {
-        // Handle conditions with operators, e.g., { $eq: 'value' }
-        for (const op in filter[key]) {
-          if (op === '$eq') {
-            const value = filter[key][op];
-            filteredArticles = filteredArticles.filter(article => article[key] === value);
-          }
-        }
-      } else {
-        // Handle simple conditions, e.g., status: 'published'
-        const value = filter[key];
-        filteredArticles = filteredArticles.filter(article => article[key] === value);
-      }
-    }
-  }
-
-  // Handle complex filtering conditions
   if (filter.$and && Array.isArray(filter.$and)) {
     
     // Handle simple $and conditions
     filter.$and.forEach(condition => {
       for (const key in condition) {
-        // Process nested path like "tags.title"
+        // Process nested path like "tags.title" or "sub_tags.title"
         if (key.includes('.')) {
           const parts = key.split('.');
-          const objectKey = parts[0]; // e.g., "tags"
+          const objectKey = parts[0]; // e.g., "tags" or "sub_tags"
           
           if (objectKey === 'tags') {
             // Handle tag filtering
@@ -552,6 +532,40 @@ export async function listArticles(options?: {
                     // Check if any tag has the required title
                     return article.tags.some((tag: any) => 
                       tag.title && tag.title === requiredValue
+                    );
+                  });
+                }
+              }
+            }
+          } else if (objectKey === 'sub_tags') {
+            // Handle sub_tags filtering
+            if (parts[1] === 'title') {
+              const titleCondition = condition[key];
+              if (titleCondition && typeof titleCondition === 'object') {
+                if (titleCondition.$eq) {
+                  // Filter articles with the specified sub_tag
+                  const requiredValue = titleCondition.$eq;
+                  filteredArticles = filteredArticles.filter(article => {
+                    if (!article.sub_tags || !Array.isArray(article.sub_tags)) {
+                      return false;
+                    }
+                    
+                    // Check if any sub_tag has the required title
+                    return article.sub_tags.some((tag: any) => 
+                      tag.title && tag.title === requiredValue
+                    );
+                  });
+                } else if (titleCondition.$ne) {
+                  // Filter articles without the specified sub_tag
+                  const excludeValue = titleCondition.$ne;
+                  filteredArticles = filteredArticles.filter(article => {
+                    if (!article.sub_tags || !Array.isArray(article.sub_tags)) {
+                      return true;
+                    }
+                    
+                    // Check that no sub_tag has the excluded title
+                    return !article.sub_tags.some((tag: any) => 
+                      tag.title && tag.title === excludeValue
                     );
                   });
                 }

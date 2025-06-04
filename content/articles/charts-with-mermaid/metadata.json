@@ -15,5 +15,9 @@
   "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-04-11T01:17:33.060Z"
+  "updatedAt": "2025-04-11T01:17:33.060Z",
+  "author": null,
+  "ai_generated": null,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }

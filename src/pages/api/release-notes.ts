@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { listReleaseNotes, processor } from '../../utils';
+import { listReleaseNotes, listMilestoneNotes, processor } from '../../utils';
 
 export const GET: APIRoute = async ({ request }) => {
   // Parse query parameters
@@ -7,10 +7,13 @@ export const GET: APIRoute = async ({ request }) => {
   const page = parseInt(url.searchParams.get('page') || '1');
   const pageSize = parseInt(url.searchParams.get('pageSize') || '8');
   const lang = url.searchParams.get('lang') || 'en'; // 默认英文
+  const milestoneOnly = url.searchParams.get('milestoneOnly') === 'true'; // 是否只获取milestone
   
   try {
-    // Fetch paginated release notes
-    const { data, meta } = await listReleaseNotes({ page, pageSize });
+    // 根据参数选择不同的数据获取方式
+    const { data, meta } = milestoneOnly 
+      ? await listMilestoneNotes({ page, pageSize })
+      : await listReleaseNotes({ page, pageSize });
     
     // Process the content for each note
     const processedItems = await Promise.all(data.map(async (article) => {
