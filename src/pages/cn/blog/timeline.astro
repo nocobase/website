@@ -198,6 +198,7 @@ const tabs = [
     let allLoadedItems = []; // Store all loaded items
     let milestoneItems = []; // Store milestone items separately
     let milestoneLoaded = false; // Track if milestone data is loaded
+    let milestoneLoading = false; // Track if milestone data is currently loading
     
     // Standard page size for all requests
     const pageSize = 20;
@@ -395,6 +396,29 @@ const tabs = [
         return;
       }
       
+      if (milestoneLoading) {
+        console.log('Milestone data is already loading, waiting...');
+        // 如果正在加载且用户要求显示loading，则显示指示器
+        if (showLoading) {
+          const loadingIndicator = document.getElementById('loading-indicator');
+          if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+        }
+        
+        // 等待当前加载完成
+        while (milestoneLoading && !milestoneLoaded) {
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+        
+        // 隐藏loading指示器
+        if (showLoading) {
+          const loadingIndicator = document.getElementById('loading-indicator');
+          if (loadingIndicator) loadingIndicator.classList.add('d-none');
+        }
+        
+        return;
+      }
+      
+      milestoneLoading = true;
       console.log('Loading milestone data...');
       
       // Show loading indicator for milestone (only if explicitly requested)
@@ -428,6 +452,7 @@ const tabs = [
       } catch (error) {
         console.error('Error loading milestone data:', error);
       } finally {
+        milestoneLoading = false;
         // Hide loading indicator (only if it was shown)
         if (showLoading && loadingIndicator) {
           loadingIndicator.classList.add('d-none');
