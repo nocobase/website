@@ -268,7 +268,7 @@
   "hideOnListPage": false,
   "hideOnBlog": false,
   "updatedAt": "2025-06-03T14:35:05.668Z",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
   "author": null
