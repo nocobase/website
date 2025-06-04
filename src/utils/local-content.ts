@@ -534,6 +534,19 @@ export async function listArticles(options?: {
                       tag.title && tag.title === requiredValue
                     );
                   });
+                } else if (titleCondition.$ne) {
+                  // Filter articles without the specified tag
+                  const excludeValue = titleCondition.$ne;
+                  filteredArticles = filteredArticles.filter(article => {
+                    if (!article.tags || !Array.isArray(article.tags)) {
+                      return true;
+                    }
+                    
+                    // Check that no tag has the excluded title
+                    return !article.tags.some((tag: any) => 
+                      tag.title && tag.title === excludeValue
+                    );
+                  });
                 }
               }
             }

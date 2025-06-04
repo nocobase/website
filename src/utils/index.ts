@@ -739,8 +739,8 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   if (milestoneOnly) {
     filterConditions.push({ 'sub_tags.title': { $eq: 'Milestone' } });
   } else {
-    // 如果不是milestone only，排除 Weekly Updates
-    filterConditions.push({ 'sub_tags.title': { $ne: 'News & Updates' } });
+    // 如果不是milestone only，排除主标签中的 News & Updates
+    filterConditions.push({ 'tags.title': { $ne: 'News & Updates' } });
   }
 
   // 使用统一的API调用方式
