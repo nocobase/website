@@ -8,7 +8,7 @@
   "description_ja": "PostgreSQLに対応したノーコードツール6選を徹底比較。スキーマ設計や自社運用に対応し、業務アプリやコラボツール構築に最適な選択肢をご紹介します。",
   "slug": "6-no-code-tools-supporting-postgresql",
   "publishedAt": "2025-06-04T01:07:16.740Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -273,12 +273,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-04T03:51:47.167Z",
+    "updatedAt": "2025-06-04T03:51:47.167Z",
+    "id": 1360,
+    "title": "Frame 76 (1) (1)",
+    "filename": "Frame 76 (1) (1)-lx6gls.jpg",
+    "extname": ".jpg",
+    "size": 93013,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2076%20(1)%20(1)-lx6gls.jpg",
+    "preview": "https://static-docs.nocobase.com/Frame%2076%20(1)%20(1)-lx6gls.jpg",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": true,
   "hideOnBlog": false,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-04T02:52:11.628Z"
+  "updatedAt": "2025-06-04T03:52:00.766Z"
 }
