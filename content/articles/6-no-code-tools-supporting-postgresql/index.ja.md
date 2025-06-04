@@ -30,7 +30,7 @@ PostgreSQL対応ノーコード/ローコードツール6選の比較 以下に�
 
 ## ツール概要
 
-### NocoBase
+### [NocoBase]([NocoBase](https://www.nocobase.com/))
 
 **主な特長：ネイティブPostgreSQL統合、強力なビジュアルスキーマモデリング、プラグインによる拡張性**
 
@@ -77,7 +77,7 @@ PostgreSQLサポートとスキーマ編集機能
 | セルフデプロイとオープンソース | ✅ 完全サポート（AGPL-3.0ライセンス）                                                          |
 | スケーラビリティ               | ✅ 強力なプラグインメカニズム                                                                  |
 
-### Teable
+### [Teable](https://teable.io/)
 
 **主な特長：Airtableライクなユーザーエクスペリエンス、ネイティブPostgreSQLサポート、オープンソースのセルフホスティング**
 
@@ -116,7 +116,7 @@ PostgreSQLサポートとスキーマ編集機能
 | セルフデプロイとオープンソース | ✅ 完全サポート                                                                                                                         |
 | スケーラビリティ               | ➡️ 活発に開発中。将来の機能強化にはプラグインやよりオープンなAPIが含まれる可能性あり。                                                |
 
-### Appsmith
+### [Appsmith](https://www.appsmith.com/)
 
 **主な特長：堅牢なUIビルダー、複数のデータソース接続（PostgreSQLを含む）、オープンソースのセルフホスティング**
 
@@ -155,7 +155,7 @@ PostgreSQLサポートとスキーマ編集機能
 | セルフデプロイとオープンソース | ✅ 完全サポート（Apache License 2.0）。                                     |
 | スケーラビリティ               | ✅ JavaScriptとAPI統合を通じて高度にスケーラブル。                          |
 
-### Retool
+### [Retool](https://retool.com/)
 
 **主な特長：効率的なUIコンポーネントライブラリ、直接データソース接続（PostgreSQLを含む）、JavaScriptによる拡張性**
 
@@ -196,7 +196,7 @@ PostgreSQLサポートとスキーマ編集機能
 | セルフデプロイとオープンソース | ✅ 有料エンタープライズ版はセルフホスティングをサポート。❌ オープンソースではない。 |
 | スケーラビリティ               | ✅ JavaScript、カスタムコンポーネント、API統合を介して高度にスケーラブル。           |
 
-### Budibase
+### [Budibase](https://budibase.com/)
 
 **主な特長：ビジュアルアプリケーション構築、組み込み・外部データベース（PostgreSQLを含む）のサポート、オープンソースのセルフホスティング**
 
@@ -236,7 +236,7 @@ PostgreSQLサポートとスキーマ編集機能
 | セルフデプロイとオープンソース | ✅ 完全サポート。                                                                                                                     |
 | スケーラビリティ               | ✅ REST API統合とJavaScriptコードスニペットを介してある程度拡張可能。                                                                 |
 
-### NocoDB
+### [NocoDB](https://nocodb.com/)
 
 **主な特長：既存データベース（PostgreSQLを含む）をスプレッドシートインターフェースに変換、オープンソースのセルフホスティング、コラボレーション機能**
 
@@ -286,3 +286,13 @@ PostgreSQL互換の6つのプラットフォームを調査した結果、「Pos
 * 既存のデータベースで迅速なバックエンド設定を行う場合：Retool、Appsmith、またはBudibaseを選択してください。
 * セルフホスト型のデータ共同作業プラットフォームを構築する場合：TeableまたはNocoDBを選択してください。
 * 詳細なモデリングと複雑なビジネスシステムを構築する場合：NocoBaseを選択してください。
+
+
+関連読み物：**
+
+* [2025 年におすすめの 6 つのオープンソースチケットシステム](https://www.nocobase.com/ja/blog/open-source-ticketing-systems)
+* [ウェブアプリケーション開発に最適なオープンソースツール 8 選](https://www.nocobase.com/ja/blog/top-8-open-source-tools-for-web-application-development)
+* [2025年企業必备の6つの従業員管理ツールの紹介](https://www.nocobase.com/ja/blog/employee-management-system)
+* [2025年のトップ5オールインワンビジネスソフトウェア](https://www.nocobase.com/ja/blog/all-in-one-business-software)
+* [2025年トップ8のオープンソースIT資産管理ソフトウェア](https://www.nocobase.com/ja/blog/it-asset-management-software)
+* [オープンソースの高速開発プラットフォームトップ7](https://www.nocobase.com/ja/blog/rapid-development-platform)
