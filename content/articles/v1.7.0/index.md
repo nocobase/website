@@ -80,7 +80,7 @@ Reference: [After Successful Submission](https://docs.nocobase.com/handbook/ui/a
 
 ![1-62ogb6.png](https://static-docs.nocobase.com/1-62ogb6.png)
 
-### Open Source Plugins For Department And Attachment URL
+### Open Source Plugins for Department and Attachment URL
 
 ![image-br8u55.png](https://static-docs.nocobase.com/image-br8u55.png)
 
@@ -103,7 +103,7 @@ Import configuration now supports using multiple fields to uniquely identify rec
 
 Reference:[Import Pro](https://docs.nocobase.com/handbook/action-import-pro)
 
-### Performance Optimization For Exporting XLSX
+### Performance Optimization for Exporting XLSX
 
 * Memory overflow and application freezing when exporting large data tables
 * There is a probability of duplicate data in the exported data
@@ -117,14 +117,13 @@ Reference:
 * [Concurrent Exports](https://docs.nocobase.com/handbook/action-export-pro#concurrent-exports)
 * [About Performance](https://docs.nocobase.com/handbook/action-export-pro#about-performance)
 
-### Performance Optimization For Importing XLSX Files
+### Performance Optimization for Importing XLSX Files
 
 * Change the original single - row import strategy to batch insertion
 * Reconstruct the duplicate identification mechanism. Change from single - row processing to batch processing while keeping the update logic and triggering workflow unchanged
 
 Reference: [About Performance](https://docs.nocobase.com/handbook/action-import-pro#about-performance)
 
-### Workflow Execution Efficiency Improved By 100%
+### Workflow Execution Efficiency Improved by 100%
 
 ![image-ligrnm.png](https://static-docs.nocobase.com/image-ligrnm.png)
-
