@@ -266,5 +266,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-03-18T08:02:05.961Z"
+  "updatedAt": "2025-03-18T08:02:05.961Z",
+  "author": "Deng lijia, Zhang Lu",
+  "ai_generated": null,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }

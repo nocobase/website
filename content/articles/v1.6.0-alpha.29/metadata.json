@@ -85,5 +85,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-02-27T12:29:54.782Z"
+  "updatedAt": "2025-02-27T12:29:54.782Z",
+  "author": "nocobase [bot]",
+  "ai_generated": null,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }

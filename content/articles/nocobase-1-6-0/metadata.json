@@ -267,5 +267,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-09T15:56:38.286Z"
+  "updatedAt": "2025-04-09T15:56:38.286Z",
+  "author": "NocoBase team",
+  "ai_generated": null,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true
 }

@@ -87,6 +87,10 @@ async function downloadArticles() {
         cover: article.cover || null,
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
+        author: article.author || null,
+        ai_generated: article.ai_generated || false,
+        ai_generated_cn: article.ai_generated_cn || false,
+        ai_generated_ja: article.ai_generated_ja || false,
         updatedAt: article.updatedAt
       };
       

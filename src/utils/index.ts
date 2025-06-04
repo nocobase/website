@@ -726,9 +726,23 @@ export async function getSitemapLinks() {
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
-export async function listReleaseNotes(options?: { page?: number, pageSize?: number }) {
-  const { page = 1, pageSize = 10 } = options || {};
+export async function listReleaseNotes(options?: { page?: number, pageSize?: number, milestoneOnly?: boolean }) {
+  const { page = 1, pageSize = 10, milestoneOnly = false } = options || {};
   
+  // 构建过滤条件
+  const filterConditions: any[] = [
+    { 'tags.title': { $eq: 'Release Notes' } },
+    { status: { $eq: 'published' } }
+  ];
+  
+  // 如果只要milestone，添加milestone过滤条件
+  if (milestoneOnly) {
+    filterConditions.push({ 'sub_tags.title': { $eq: 'Milestone' } });
+  } else {
+    // 如果不是milestone only，排除 Weekly Updates
+    filterConditions.push({ 'sub_tags.title': { $ne: 'News & Updates' } });
+  }
+
   // 使用统一的API调用方式
   const { data, meta } = await listArticles({ 
     page,
@@ -736,10 +750,7 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     sort: ['-publishedAt'],
     appends: ['sub_tags', 'cover'],
     filter: {
-      $and: [
-        { 'tags.title': { $eq: 'Release Notes' } },
-        { status: { $eq: 'published' } }
-      ]
+      $and: filterConditions
     }
   });
 
@@ -754,9 +765,6 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     // 收集所有标签
     const allTags = subTags.map((t: any) => t.title?.toLowerCase() || '');
 
-    // 过滤掉周更新
-    if (primaryTag === 'Weekly Updates') return null;
-
     return {
       ...article,
       // 保持数据结构一致
@@ -767,7 +775,7 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
       content_ja: article.content_ja || article.content || '',
       content_ru: article.content_ru || article.content || '',
       // 添加里程碑标志
-      isMilestone: (article.sub_tags || []).some((t: any) => t.title === 'Milestone'),
+      isMilestone: subTags.some((t: any) => t.title === 'Milestone'),
       // 保持优先级逻辑
       priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
       // 安全处理日期
@@ -776,7 +784,6 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
       cover: article.cover?.url ? { url: article.cover.url } : null
     };
   })
-  .filter(Boolean) // 过滤掉周更新
   .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); // 按时间倒序排列
 
   // 确定是否有更多内容可加载
@@ -792,4 +799,9 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
       pageCount: Math.ceil(totalItems / pageSize)
     } 
   };
+}
+
+// 新增：专门获取milestone数据的函数
+export async function listMilestoneNotes(options?: { page?: number, pageSize?: number }) {
+  return listReleaseNotes({ ...options, milestoneOnly: true });
 }

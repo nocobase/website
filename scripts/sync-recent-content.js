@@ -1,21 +1,33 @@
-import axios from 'axios';
+const axios = require('axios');
+const {Buffer} = require('buffer');
+const {setTimeout} = require('timers');
 
 // Configuration
-const baseURL = 'your-cms-url.com/api/';
-const token = 'your_api_token_here';
-const timeWindow = 15 * 60 * 60 * 1000; // 15 hours in milliseconds
+const baseURL = 'https://your-cms-url.com/api/';
+const token = 'your_api_token_here';// Define hours as a constant and calculate timeWindow from it
+const defaultHours = 15;
+let timeWindow = defaultHours * 60 * 60 * 1000; // Default: 15 hours in milliseconds
 
 // GitHub configuration
-const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN || 'your-github-token-here',
-  request: {
-    timeout: 60000, // 60 seconds timeout for GitHub API requests
+const githubToken = 'your_github_token_here';
+const githubApi = axios.create({
+  baseURL: 'https://api.github.com',
+  timeout: 60000,
+  headers: {
+    'Accept': 'application/vnd.github.v3+json',
+    'Authorization': `token ${githubToken}`,
+    'User-Agent': `NocoBase-Content-Sync-Script/1.0`
   }
 });
-const owner = process.env.GITHUB_OWNER || 'your-github-username';
-const repo = process.env.GITHUB_REPO || 'your-github-repo';
-const branch = process.env.GITHUB_BRANCH || 'main';
 
+const owner = 'nocobase';
+const repo = 'website';
+const branch = 'main';
+
+const GITHUB_COMMITTER = {
+  name: 'NocoBase',
+  email: 'scripts@nocobase.com'
+};
 
 // Config parameters
 const CONFIG = {
@@ -268,7 +280,9 @@ async function updateGitHubFile(filePath, content, existingFile = null) {
     const payload = {
       message,
       content: Buffer.from(content).toString('base64'),
-      branch
+      branch,
+      author: GITHUB_COMMITTER,
+      committer: GITHUB_COMMITTER
     };
     
     if (existingFile && existingFile.sha) {
@@ -421,6 +435,10 @@ async function syncRecentArticles() {
         cover: article.cover || null,
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
+        author: article.author || null,
+        ai_generated: article.ai_generated || false,
+        ai_generated_cn: article.ai_generated_cn || false,
+        ai_generated_ja: article.ai_generated_ja || false,
         updatedAt: article.updatedAt
       };
       
@@ -758,14 +776,23 @@ async function syncRecentPages() {
         continue;
       }
       
-      // Prepare metadata for the page
+      // Prepare metadata for the page with all required properties
       const metadata = {
         id: page.id,
         title: page.title,
         title_cn: page.title_cn,
         title_ja: page.title_ja,
+        description: page.description,
+        description_cn: page.description_cn,
+        description_ja: page.description_ja,
+        keywords: page.keywords,
+        keywords_cn: page.keywords_cn,
+        keywords_ja: page.keywords_ja,
         slug: page.slug,
-        updatedAt: page.updatedAt
+        createdAt: page.createdAt,
+        updatedAt: page.updatedAt,
+        createdById: page.createdById,
+        updatedById: page.updatedById
       };
       
       // Check if metadata file exists in GitHub
@@ -1374,4 +1401,4 @@ async function main() {
 }
 
 // Run the script
-main(); 
+main();
