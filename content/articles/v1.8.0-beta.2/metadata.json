@@ -1,13 +1,13 @@
 {
   "id": 480,
-  "title": "NocoBase v1.8.0-beta.2",
-  "title_cn": "NocoBase v1.8.0-beta.2",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-beta.2: Template print add more logs",
+  "title_cn": "NocoBase v1.8.0-beta.2：模板打印添加更多日志",
+  "title_ja": "NocoBase v1.8.0-beta.2：テンプレート印刷ログを追加",
   "description": "Release Note of v1.8.0-beta.2",
   "description_cn": "v1.8.0-beta.2 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-beta.2 のリリースノート",
   "slug": "v1.8.0-beta.2",
-  "publishedAt": null,
+  "publishedAt": "2025-06-03T23:33:00.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -37,12 +37,55 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-04T01:11:13.766Z",
+        "updatedAt": "2025-06-04T01:11:13.766Z",
+        "articles_id": 480,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-04T01:08:30.142Z",
+    "updatedAt": "2025-06-04T01:08:30.142Z",
+    "id": 1358,
+    "title": "next (1)",
+    "filename": "next (1)-av6kzr.png",
+    "extname": ".png",
+    "size": 114479,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next%20(1)-av6kzr.png",
+    "preview": "https://static-docs.nocobase.com/next%20(1)-av6kzr.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "updatedAt": "2025-06-03T23:33:50.842Z",
+  "hideOnBlog": true,
+  "updatedAt": "2025-06-04T01:11:13.750Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
