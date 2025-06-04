@@ -1,1 +1,3 @@
-fetch is not defined
+### 🚀 機能改善
+
+* **[テンプレート印刷]** ログを追加 @sheldon66
