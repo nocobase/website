@@ -43,7 +43,7 @@
   "hideOnListPage": false,
   "hideOnBlog": false,
   "updatedAt": "2025-06-03T12:55:32.826Z",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
   "author": "nocobase [bot]"
