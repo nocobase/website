@@ -38,7 +38,7 @@
 
 ## 工具简介
 
-### NocoBase
+### [NocoBase](https://www.nocobase.com/)
 
 **核心亮点：原生 PostgreSQL 支持 + 强大的可视化 Schema 建模 + 插件化扩展**
 
@@ -83,7 +83,7 @@ NocoBase 是一个开源、插件化的无代码 / 低代码平台，从设计�
 | 自部署与开源        | ✅ 完全支持，AGPL-3.0 许可证                            |
 | 可扩展性            | ✅ 强大的插件机制                                       |
 
-### Teable
+### [Teable](https://teable.io/)
 
 **核心亮点：Airtable 式用户体验 + 原生 PostgreSQL 支持 + 开源自托管**
 
@@ -124,7 +124,7 @@ Teable 作为一个新兴的开源无代码平台，以其酷似 Airtable 的现
 | 自部署与开源        | ✅ 完全支持                                                                             |
 | 可扩展性            | ➡️ 发展中，未来可能通过插件或更开放的 API 增强                                        |
 
-### Appsmith
+### [Appsmith](https://www.appsmith.com/)
 
 **核心亮点：强大的 UI 构建器 + 多数据源连接 (包括 PostgreSQL) + 开源自托管**
 
@@ -165,7 +165,7 @@ Appsmith 是一个广受欢迎的开源低代码平台，专注于帮助开发�
 | 自部署与开源        | ✅ 完全支持，Apache License 2.0                              |
 | 可扩展性            | ✅ 通过 JavaScript 和 API 集成实现高度可扩展                 |
 
-### Retool
+### [Retool](https://retool.com/)
 
 **核心亮点：高效的 UI 组件库 + 直接数据源连接 (包括 PostgreSQL) + JavaScript 扩展性**
 
@@ -208,8 +208,7 @@ Retool 是一款广受企业青睐的低代码平台，专为快速构建定制�
 | 自部署与开源        | ✅ 付费企业版支持自托管；❌ 非开源                       |
 | 可扩展性            | ✅ 通过 JavaScript、自定义组件和 API 集成实现高度可扩展  |
 
-
-### Budibase
+### [Budibase](https://budibase.com/)
 
 **核心亮点：可视化应用构建 + 支持内建及外部数据库 (包括 PostgreSQL) + 开源自托管**
 
@@ -251,7 +250,7 @@ Budibase 是一个现代化的开源低代码平台，旨在帮助用户快速�
 | 自部署与开源        | ✅ 完全支持                                                                 |
 | 可扩展性            | ✅ 通过 REST API 集成和 JavaScript 代码片段可进行一定扩展                   |
 
-### NocoDB
+### [NocoDB](https://nocodb.com/)
 
 **核心亮点：将现有数据库（包括 PostgreSQL）转换为电子表格界面 + 开源自托管 + 协作功能**
 
@@ -319,3 +318,13 @@ NocoDB 是一个引人注目的开源 "无代码表格" 平台，它的核心使
 * 想快速搭后台、已有 DB：选 Retool、 Appsmith 或 Budibase
 * 想自建数据协作平台：选 Teable 或 NocoDB
 * 想深度建模、做业务系统：选 NocoBase
+
+
+**相关阅读：**
+
+* [2025 年 6 个最佳开源工单系统推荐](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)
+* [8 大最佳开源工具助力 Web 应用开发](https://www.nocobase.com/cn/blog/top-8-open-source-tools-for-web-application-development)
+* [2025年企业必备的 6 款员工管理工具推荐](https://www.nocobase.com/cn/blog/employee-management-system)
+* [2025年5个最佳 All-in-One 一体化商业软件](https://www.nocobase.com/cn/blog/all-in-one-business-software)
+* [2025年8款顶级的开源IT资产管理软件](https://www.nocobase.com/cn/blog/it-asset-management-software)
+* [国内外十大开源快速开发平台推荐](https://www.nocobase.com/cn/blog/rapid-development-platform)
