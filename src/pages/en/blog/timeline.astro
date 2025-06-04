@@ -193,7 +193,7 @@ const tabs = [
     const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
     let currentPage = 1;
     let isLoading = false;
-    let hasMoreContent = true;
+    let hasMoreContent = initialMeta?.hasMore !== false; // 基于初始元数据设置
     let currentFilter = 'all';
     let allLoadedItems = []; // Store all loaded items
     let milestoneItems = []; // Store milestone items separately
@@ -474,11 +474,18 @@ const tabs = [
           // Render new content
           renderNewItems(data.items);
           console.log('Successfully loaded and rendered new content');
+        } else {
+          // 如果没有新项目返回，强制设置hasMoreContent为false
+          hasMoreContent = false;
         }
         
         // Update hasMoreContent based on API response
-        hasMoreContent = data.meta?.hasMore || false;
-        console.log('Has more content:', hasMoreContent);
+        // 如果没有返回新的items，强制设置为false
+        if (!data.items || data.items.length === 0) {
+          hasMoreContent = false;
+        } else {
+          hasMoreContent = data.meta?.hasMore || false;
+        }
         
       } catch (error) {
         console.error('Error loading more content:', error);
