@@ -290,11 +290,11 @@
     "createdById": 1,
     "updatedById": 1
   },
-  "hideOnListPage": true,
-  "hideOnBlog": false,
+  "hideOnListPage": false,
+  "hideOnBlog": true,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-04T03:52:00.766Z"
+  "updatedAt": "2025-06-04T07:01:44.104Z"
 }
