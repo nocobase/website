@@ -8,7 +8,7 @@
   "description_ja": "権限管理の強化、システム性能の最適化、プラグインのオープンソース化により、機能拡張とユーザー体験を全面的に向上",
   "slug": "nocobase-1-7-0",
   "publishedAt": "2025-06-03T06:00:03.964Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -249,27 +249,27 @@
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-06-03T09:11:04.573Z",
-    "updatedAt": "2025-06-03T09:11:04.573Z",
-    "id": 1353,
-    "title": "大版本发布",
-    "filename": "大版本发布-n3k2m1.png",
+    "createdAt": "2025-06-04T03:54:33.768Z",
+    "updatedAt": "2025-06-04T03:54:33.768Z",
+    "id": 1361,
+    "title": "大版本发布 (1)",
+    "filename": "大版本发布 (1)-l592pc.png",
     "extname": ".png",
-    "size": 111321,
+    "size": 135348,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-n3k2m1.png",
-    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-n3k2m1.png",
+    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(1)-l592pc.png",
+    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(1)-l592pc.png",
     "storageId": 2,
     "createdById": 1,
     "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-06-03T14:35:05.668Z",
+  "updatedAt": "2025-06-04T03:55:09.813Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "author": null
+  "author": "NocoBase team"
 }
