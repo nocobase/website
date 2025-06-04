@@ -24,7 +24,8 @@ const pkgs = [
     'cssesc',
     'sitemap',
     'qrcode',
-    'dotenv'
+    'dotenv',
+    'sift'
 ];
 
 (async () => {

@@ -3,6 +3,7 @@ import path from 'path';
 import { createMarkdownProcessor as coreCreateMarkdownProcessor } from '@astrojs/markdown-remark';
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
+import sift from 'sift';
 
 // Content caches
 const articlesCache: Record<string, any> = {};
@@ -460,151 +461,51 @@ export async function listArticles(options?: {
     }
   }
 
+  // Build comprehensive filter conditions using MongoDB syntax
+  const filterConditions: any[] = [
+    { status: { $eq: 'published' } },
+    { hideOnListPage: { $ne: true } }
+  ];
 
-  // Filter conditions - Simplify filtering logic
-  let filteredArticles = articles;
-  
-  // Basic filtering: status is published
-  filteredArticles = filteredArticles.filter(article => 
-    article.status === 'published'
-  );
-
-  // Handle hideOnBlog and hideOnListPage
+  // Handle hideOnBlog parameter
   if (hideOnBlog === false) {
-    filteredArticles = filteredArticles.filter(article => article.hideOnBlog !== true);
+    filterConditions.push({ hideOnBlog: { $ne: true } });
   }
-  
-  filteredArticles = filteredArticles.filter(article => article.hideOnListPage !== true);
 
-  // Handle tag and category filtering
+  // Handle tag filtering
   if (tagSlug) {
-    filteredArticles = filteredArticles.filter(article => 
-      article.tags && article.tags.some((tag: any) => tag.slug === tagSlug)
-    );
+    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
   }
 
+  // Handle category filtering
   if (categorySlug) {
-    filteredArticles = filteredArticles.filter(article => 
-      article.category && article.category.slug === categorySlug
-    );
+    filterConditions.push({ 'category.slug': { $eq: categorySlug } });
   }
 
-  // Handle simple filtering conditions
-  if (filter.$and && Array.isArray(filter.$and)) {
-    
-    // Handle simple $and conditions
-    filter.$and.forEach(condition => {
-      for (const key in condition) {
-        // Process nested path like "tags.title" or "sub_tags.title"
-        if (key.includes('.')) {
-          const parts = key.split('.');
-          const objectKey = parts[0]; // e.g., "tags" or "sub_tags"
-          
-          if (objectKey === 'tags') {
-            // Handle tag filtering
-            if (parts[1] === 'title') {
-              const titleCondition = condition[key];
-              if (titleCondition && typeof titleCondition === 'object') {
-                // Handle different operators
-                if (titleCondition.$notIncludes) {
-                  // Filter articles without the forbidden tag
-                  const forbiddenValue = titleCondition.$notIncludes;
-                  filteredArticles = filteredArticles.filter(article => {
-                    // If no tags, it passes the filter
-                    if (!article.tags || !Array.isArray(article.tags) || article.tags.length === 0) {
-                      return true;
-                    }
-                    
-                    // Check that no tag has a title containing the forbidden value
-                    return !article.tags.some((tag: any) => 
-                      tag.title && typeof tag.title === 'string' && 
-                      tag.title.includes(forbiddenValue)
-                    );
-                  });
-                } else if (titleCondition.$eq) {
-                  // Filter articles with the specified tag
-                  const requiredValue = titleCondition.$eq;
-                  filteredArticles = filteredArticles.filter(article => {
-                    if (!article.tags || !Array.isArray(article.tags)) {
-                      return false;
-                    }
-                    
-                    // Check if any tag has the required title
-                    return article.tags.some((tag: any) => 
-                      tag.title && tag.title === requiredValue
-                    );
-                  });
-                } else if (titleCondition.$ne) {
-                  // Filter articles without the specified tag
-                  const excludeValue = titleCondition.$ne;
-                  filteredArticles = filteredArticles.filter(article => {
-                    if (!article.tags || !Array.isArray(article.tags)) {
-                      return true;
-                    }
-                    
-                    // Check that no tag has the excluded title
-                    return !article.tags.some((tag: any) => 
-                      tag.title && tag.title === excludeValue
-                    );
-                  });
-                }
-              }
-            }
-          } else if (objectKey === 'sub_tags') {
-            // Handle sub_tags filtering
-            if (parts[1] === 'title') {
-              const titleCondition = condition[key];
-              if (titleCondition && typeof titleCondition === 'object') {
-                if (titleCondition.$eq) {
-                  // Filter articles with the specified sub_tag
-                  const requiredValue = titleCondition.$eq;
-                  filteredArticles = filteredArticles.filter(article => {
-                    if (!article.sub_tags || !Array.isArray(article.sub_tags)) {
-                      return false;
-                    }
-                    
-                    // Check if any sub_tag has the required title
-                    return article.sub_tags.some((tag: any) => 
-                      tag.title && tag.title === requiredValue
-                    );
-                  });
-                } else if (titleCondition.$ne) {
-                  // Filter articles without the specified sub_tag
-                  const excludeValue = titleCondition.$ne;
-                  filteredArticles = filteredArticles.filter(article => {
-                    if (!article.sub_tags || !Array.isArray(article.sub_tags)) {
-                      return true;
-                    }
-                    
-                    // Check that no sub_tag has the excluded title
-                    return !article.sub_tags.some((tag: any) => 
-                      tag.title && tag.title === excludeValue
-                    );
-                  });
-                }
-              }
-            }
-          } else {
-            // Handle other nested paths if needed
-            // This is a placeholder for future extensions
-          }
-        } else if (!key.includes('.')) {
-          if (typeof condition[key] === 'object' && condition[key] !== null) {
-            // Handle conditions with operators, e.g., { $eq: 'value' }
-            for (const op in condition[key]) {
-              if (op === '$eq') {
-                const value = condition[key][op];
-                filteredArticles = filteredArticles.filter(article => article[key] === value);
-              }
-            }
-          } else {
-            // Handle simple conditions, e.g., status: 'published'
-            const value = condition[key];
-            filteredArticles = filteredArticles.filter(article => article[key] === value);
-          }
-        }
-      }
-    });
+  // Merge custom filter if provided
+  if (filter && Object.keys(filter).length > 0) {
+    if (filter.$and) {
+      filterConditions.push(...filter.$and);
+    } else {
+      filterConditions.push(filter);
+    }
+  }
+
+  // Apply all filters using sift.js
+  let filteredArticles = articles;
+  if (filterConditions.length > 0) {
+    const combinedFilter = { $and: filterConditions };
+    console.log('Applying combined article filter:', JSON.stringify(combinedFilter, null, 2));
+    try {
+      const siftFilter = sift(combinedFilter);
+      filteredArticles = articles.filter(siftFilter);
+      console.log(`After combined filtering: ${filteredArticles.length} articles`);
+    } catch (error) {
+      console.error('Error applying combined filter:', error);
+      console.log('Filter object:', combinedFilter);
+      // Fallback to basic published filter only
+      filteredArticles = articles.filter(article => article.status === 'published');
+    }
   }
 
   // Sorting
@@ -664,18 +565,33 @@ export async function listTutorialArticles(options?: {
     return readJsonFile(metadataPath) || null;
   }).filter(Boolean);
 
-  // Filter conditions
-  tutorials = tutorials.filter(tutorial => tutorial.status === 'published');
+  // Build filter conditions using MongoDB syntax
+  const filterConditions: any[] = [
+    { status: { $eq: 'published' } }
+  ];
 
   if (slug) {
-    tutorials = tutorials.filter(tutorial => tutorial.slug === slug);
+    filterConditions.push({ slug: { $eq: slug } });
   }
 
   if (serialsSlug) {
-    tutorials = tutorials.filter(tutorial => 
-      tutorial.serials && tutorial.serials.slug === serialsSlug && 
-      tutorial.serials.status === 'published'
-    );
+    filterConditions.push({ 
+      'serials.slug': { $eq: serialsSlug },
+      'serials.status': { $eq: 'published' }
+    });
+  }
+
+  // Apply filters using sift.js
+  if (filterConditions.length > 0) {
+    const filter = { $and: filterConditions };
+    console.log('Applying tutorial filter:', JSON.stringify(filter, null, 2));
+    try {
+      const siftFilter = sift(filter);
+      tutorials = tutorials.filter(siftFilter);
+      console.log(`After tutorial filtering: ${tutorials.length} tutorials`);
+    } catch (error) {
+      console.error('Error applying tutorial filter:', error);
+    }
   }
 
   // Sort by serialsSort
@@ -701,7 +617,8 @@ export async function listReleases(options?: any) {
   const { 
     page = 1, 
     pageSize = 20,
-    tagSlug
+    tagSlug,
+    filter: customFilter
   } = options || {};
 
   // Get all releases directories
@@ -714,13 +631,35 @@ export async function listReleases(options?: any) {
     return readJsonFile(metadataPath) || null;
   }).filter(Boolean);
 
-  // Filter conditions
-  releases = releases.filter(release => release.status === 'published');
+  // Build filter conditions using MongoDB syntax
+  const filterConditions: any[] = [
+    { status: { $eq: 'published' } }
+  ];
 
   if (tagSlug) {
-    releases = releases.filter(release => 
-      release.tags && release.tags.some((tag: any) => tag.slug === tagSlug)
-    );
+    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
+  }
+
+  // Merge custom filter if provided
+  if (customFilter) {
+    if (customFilter.$and) {
+      filterConditions.push(...customFilter.$and);
+    } else {
+      filterConditions.push(customFilter);
+    }
+  }
+
+  // Apply filters using sift.js
+  if (filterConditions.length > 0) {
+    const filter = { $and: filterConditions };
+    console.log('Applying release filter:', JSON.stringify(filter, null, 2));
+    try {
+      const siftFilter = sift(filter);
+      releases = releases.filter(siftFilter);
+      console.log(`After release filtering: ${releases.length} releases`);
+    } catch (error) {
+      console.error('Error applying release filter:', error);
+    }
   }
 
   // Sort by published date descending
@@ -775,19 +714,18 @@ export async function listArticleTags(options?: any) {
   const tagsPath = path.join(contentRoot, 'tags', 'article-tags.json');
   const tags = readJsonFile(tagsPath) || [];
   
-  // Process filter conditions
+  // Process filter conditions using sift.js
   const { filter } = options || {};
-  if (filter) {
-    // You can implement filtering logic based on the filter parameter here,
-    // e.g. filter: { slug: 'tag-slug' }
-    return tags.filter((tag: any) => {
-      for (const key in filter) {
-        if (tag[key] !== filter[key]) {
-          return false;
-        }
-      }
-      return true;
-    });
+  if (filter && Object.keys(filter).length > 0) {
+    console.log('Applying tag filter:', JSON.stringify(filter, null, 2));
+    try {
+      const siftFilter = sift(filter);
+      return tags.filter(siftFilter);
+    } catch (error) {
+      console.error('Error applying tag filter:', error);
+      console.log('Filter object:', filter);
+      return tags;
+    }
   }
   
   return tags;
