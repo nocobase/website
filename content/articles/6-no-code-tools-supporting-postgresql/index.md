@@ -34,7 +34,7 @@ Below is our selection of six no-code platforms, each distinct in their PostgreS
 
 ## Tool Overview
 
-### **NocoBase**
+### [NocoBase](https://www.nocobase.com/)
 
 **Core Highlights: Native PostgreSQL Integration + Powerful Visual Schema Modeling + Plugin Extensibility**
 
@@ -70,7 +70,6 @@ A user's testimonial highlighting NocoBase's strengths in PostgreSQL and schema 
 
 ![NocoBase+PostgreSQL.png](https://static-docs.nocobase.com/48470f59-6865-48a5-b873-c27d3235d87f-7ql2bu.png)
 
-
 **Summary:**
 
 
@@ -84,7 +83,7 @@ A user's testimonial highlighting NocoBase's strengths in PostgreSQL and schema 
 | Self-Deployment & Open Source | ✅ Fully supported (AGPL-3.0 license)                                                                 |
 | Scalability                   | ✅ Powerful plugin mechanism                                                                          |
 
-### Teable
+### [Teable](https://teable.io/)
 
 **Core Highlights: Airtable-Style User Experience + Native PostgreSQL Support + Open-Source Self-Hosting**
 
@@ -125,8 +124,7 @@ For teams or individuals seeking an Airtable-like convenient data management exp
 | Self-Deployment & Open Source | ✅ Fully supported                                                                                                                    |
 | Scalability                   | ➡️ Actively developing; future enhancements may include plugins or more open APIs                                                   |
 
-
-### Appsmith
+### [Appsmith]([Appsmith](https://www.appsmith.com/))
 
 **Core Highlights: Robust UI Builder + Multi-Data Source Connectivity (including PostgreSQL) + Open-Source Self-Hosting**
 
@@ -167,8 +165,7 @@ Appsmith is an excellent choice for teams needing to quickly build visually appe
 | Self-Deployment & Open Source | ✅ Fully supported (Apache License 2.0)                                   |
 | Scalability                   | ✅ Highly scalable through JavaScript and API integration                 |
 
-
-### Retool
+### [Retool](https://retool.com/)
 
 **Core Highlights: Efficient UI Component Library + Direct Data Source Connectivity (including PostgreSQL) + JavaScript Extensibility**
 
@@ -211,8 +208,7 @@ For enterprises needing to rapidly build powerful, highly customized internal to
 | Self-Deployment & Open Source | ✅ Paid Enterprise version supports self-hosting; ❌ Not open source                 |
 | Scalability                   | ✅ Highly scalable via JavaScript, custom components, and API integration            |
 
-
-### Budibase
+### [Budibase](https://budibase.com/)
 
 **Core Highlights: Visual Application Building + Support for Built-in & External Databases (including PostgreSQL) + Open-Source Self-Hosting**
 
@@ -254,8 +250,7 @@ For teams aiming to quickly build internal tools or business applications with a
 | Self-Deployment & Open Source | ✅ Fully supported                                                                                                           |
 | Scalability                   | ✅ Extensible to a degree via REST API integration and JavaScript code snippets                                              |
 
-
-### NocoDB
+### [NocoDB](https://nocodb.com/)
 
 **Core Highlights: Transforms Existing Databases (including PostgreSQL) into Spreadsheet Interfaces + Open-Source Self-Hosting + Collaboration Features**
 
@@ -307,3 +302,13 @@ Quick Selection Guide:
 * For rapid backend setup with an existing database: Choose Retool, Appsmith, or Budibase.
 * For building a self-hosted data collaboration platform: Choose Teable or NocoDB.
 * For in-depth modeling and building complex business systems: Choose NocoBase.
+
+
+**Related reading:**
+
+* [6 Best Open-Source Ticketing Systems for 2025](https://www.nocobase.com/en/blog/open-source-ticketing-systems)
+* [Top 8 Open-Source Tools for Web Application Development](https://www.nocobase.com/en/blog/top-8-open-source-tools-for-web-application-development)
+* [6 Best Employee Management Systems for 2025](https://www.nocobase.com/en/blog/employee-management-system)
+* [Top 5 All-in-One Business Software for 2025](https://www.nocobase.com/en/blog/all-in-one-business-software)
+* [Top 8 Open Source IT Asset Management Software for 2025](https://www.nocobase.com/en/blog/it-asset-management-software)
+* [Top 7 Open Source Rapid Development Platform](https://www.nocobase.com/en/blog/rapid-development-platform)
