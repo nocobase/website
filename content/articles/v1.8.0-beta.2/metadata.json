@@ -8,7 +8,7 @@
   "description_ja": "v1.8.0-beta.2 のリリースノート",
   "slug": "v1.8.0-beta.2",
   "publishedAt": "2025-06-03T23:33:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -85,7 +85,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-06-04T01:11:13.750Z",
+  "updatedAt": "2025-06-04T07:25:43.858Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
