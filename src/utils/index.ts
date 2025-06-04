@@ -739,10 +739,18 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   if (milestoneOnly) {
     filterConditions.push({ 'sub_tags.title': { $eq: 'Milestone' } });
   } else {
-    // 如果不是milestone only，排除主标签中的 News & Updates
-    filterConditions.push({ 'tags.title': { $ne: 'News & Updates' } });
+    // 主页面模式：包含milestone文章，但排除purely weekly文章
+    // 排除那些同时有"Release Notes"和"News & Updates"但没有"Milestone"子标签的文章
+    filterConditions.push({
+      $or: [
+        // 包含milestone子标签的文章（不管是否有News & Updates标签）
+        { 'sub_tags.title': { $eq: 'Milestone' } },
+        // 或者没有News & Updates主标签的文章
+        { 'tags.title': { $ne: 'News & Updates' } }
+      ]
+    });
   }
-
+  
   // 使用统一的API调用方式
   const { data, meta } = await listArticles({ 
     page,

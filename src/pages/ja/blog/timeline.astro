@@ -136,7 +136,7 @@ const tabs = [
               </div>
             ))}
           </div>
-
+          
           <!-- Loading indicator -->
           <div id="loading-indicator" class="text-center mt-4 d-none">
             <div class="spinner-border text-primary" role="status">
@@ -485,14 +485,14 @@ const tabs = [
         const url = `/api/release-notes?page=${nextPage}&pageSize=${pageSize}&lang=ja&_t=${timestamp}`;
         
         const response = await fetch(url);
-        if (!response.ok) {
+              if (!response.ok) {
           throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-        }
+              }
         
         const data = await response.json();
         console.log('Loaded data:', data.items.length, 'items');
         
-        if (data.items && data.items.length > 0) {
+              if (data.items && data.items.length > 0) {
           currentPage = nextPage;
           allLoadedItems = [...allLoadedItems, ...data.items];
           
@@ -507,7 +507,7 @@ const tabs = [
         // Update hasMoreContent based on API response
         // 如果没有返回新的items，强制设置为false
         if (!data.items || data.items.length === 0) {
-          hasMoreContent = false;
+            hasMoreContent = false;
         } else {
           hasMoreContent = data.meta?.hasMore || false;
         }
@@ -550,7 +550,7 @@ const tabs = [
       // Apply filter to current items
       applyCurrentFilter();
     }
-    
+      
     // Set load more button click event
     const loadMoreButton = document.getElementById('load-more-button');
     if (loadMoreButton) {
@@ -578,7 +578,7 @@ const tabs = [
       
       if (scrollPercentage >= scrollThreshold && hasMoreContent) {
         console.log('Scroll loading triggered at', Math.round(scrollPercentage * 100) + '%');
-        loadMoreContent();
+          loadMoreContent();
       }
     }
     
