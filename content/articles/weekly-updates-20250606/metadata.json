@@ -1,11 +1,11 @@
 {
   "id": 486,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include:",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Add Workflow Category Management",
+  "title_cn": "NocoBase 本周更新汇总：增加工作流分类管理",
+  "title_ja": "NocoBase 今週の更新：ワークフローカテゴリ管理機能を追加",
+  "description": "This week’s updates include: support for multiplication and division in chart transformation configurations, enhancement of import functionality, and more.",
+  "description_cn": "本周更新包括：在图表转换配置中支持乘法和除法，增强导入功能等。",
+  "description_ja": "今週の更新では、チャート変換設定における乗算と除算のサポート、インポート機能の強化などが含まれています。",
   "slug": "weekly-updates-20250606",
   "publishedAt": "2025-06-06T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-05T06:33:42.770Z"
+  "updatedAt": "2025-06-05T08:09:47.192Z"
 }
