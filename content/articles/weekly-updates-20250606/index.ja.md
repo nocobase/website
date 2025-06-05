@@ -1,6 +1,6 @@
 週間のプロダクトアップデートログを要約し、最新リリースは[当社のブログ](https://www.nocobase.com/ja/blog/timeline)でご確認いただけます。
 
-**今週、[NocoBase 1.6.0バージョン](https://www.nocobase.com/ja/blog/nocobase-1-6-0)をリリースしました。クラスターモードの展開、セキュリティポリシーの最適化、性能、セキュリティ、そしてユーザー体験が全面的に向上しました。**
+**今週、[NocoBase 1.7.0](https://www.nocobase.com/ja/blog/nocobase-1-7-0) をリリースいたしました。本バージョンでは、強化されたアクセス権限管理機能、最適化されたシステムパフォーマンス、そしてオープンソースプラグインを導入し、機能性とユーザーエクスペリエンスの包括的な向上を実現しています。**
 
 **NocoBaseは現在、`main`、`next`および`develop`の3つのブランチで更新されています。**
 
@@ -14,207 +14,230 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.6.33](https://www.nocobase.com/en/blog/v1.6.33)
+### [v1.6.35](https://www.nocobase.com/en/blog/v1.6.35)
 
-*リリース日：2025-05-23*
-
-#### 🚀 機能改善
-
-* **[未定義]** フル Docker イメージのビルド（[#6898](https://github.com/nocobase/nocobase/pull/6898)）@chenos
-* **[クライアント]** 使用に伴いページが遅くなる問題を最適化（[#6888](https://github.com/nocobase/nocobase/pull/6888)）@zhangzhonghe
-* **[カレンダー]** カレンダーブロックにリフレッシュボタンの設定可能機能を追加（[#6920](https://github.com/nocobase/nocobase/pull/6920)）@katherinehhh
-* **[ワークフロー：カスタムアクションイベント]** 中国語キーに基づく英語ロケールの修正 @mytharcher
-* **[ワークフロー：承認]** ワークフロータスクセンターでの全ての未処理タスク一括処理をサポート @mytharcher
-
-#### 🐛 不具合修正
-
-* **[クライアント]**
-  * 関連フィールド追加時の無効なスタイルフォーマットによるレンダリングエラー（[#6903](https://github.com/nocobase/nocobase/pull/6903)）@katherinehhh
-  * 連携ルールにおける toMany 関連フィールドの空値チェックエラー（[#6905](https://github.com/nocobase/nocobase/pull/6905)）@katherinehhh
-* **[コレクションフィールド: Markdown (Vditor)]** Markdown (Vditor) フィールドのテーマ適応エラー（[#6919](https://github.com/nocobase/nocobase/pull/6919)）@katherinehhh
-* **[コレクション：ツリー]** パス更新時の類似パスプレフィックスの誤更新を回避（[#6913](https://github.com/nocobase/nocobase/pull/6913)）@2013xile
-* **[ファイルマネージャー]**
-  * プレビューマッチルールの修正（[#6902](https://github.com/nocobase/nocobase/pull/6902)）@mytharcher
-  * クライアントコレクションの注入とアップロードパラメータの修正（[#6909](https://github.com/nocobase/nocobase/pull/6909)）@mytharcher
-  * 非画像ファイルのプレビュー URL の問題を修正（[#6889](https://github.com/nocobase/nocobase/pull/6889)）@mytharcher
-* **[ワークフロー：メールノード]** 未定義の「宛先」フィールドの処理とメール受信者の処理を改善（[#6915](https://github.com/nocobase/nocobase/pull/6915)）@sheldon66
-* **[ワークフロー：カスタムアクションイベント]**
-  * 数回クリック後のボタン動作エラーの修正 @mytharcher
-  * エラーハンドラがクラスでマッチしない問題の修正 @mytharcher
-* **[ワークフロー：承認]** 関連付け追加計算の修正 @mytharcher
-
-### [v1.6.34](https://www.nocobase.com/en/blog/v1.6.34)
-
-*リリース日：2025-05-27*
+*リリース日：2025-05-29*
 
 #### 🎉 新機能
 
-* **[アクション：レコードインポート Pro]**
-  * インポート設定時に複数フィールドでユニークレコードを定義できるようにしました @aaaaaajie
-  * インポート設定時に空白セルの上書き / 無視設定をサポートしました @aaaaaajie
+* **[未定義]**
+  * Gitpod を新たにサポート。クリック 1 回で開発環境を起動し、すぐに開発を開始できます。（[#6922](https://github.com/nocobase/nocobase/pull/6922)）@kerwin612
 
 #### 🚀 機能改善
 
-* **[未定義]** CI 環境の Node バージョンを 20 にアップグレード（[#6927](https://github.com/nocobase/nocobase/pull/6927)）@mytharcher
+* **[クライアント]**
+  * 隠したフォームコントロールが Tab キーをキャプチャする問題を修正し、フォーム操作効率を大幅に向上（[#6942](https://github.com/nocobase/nocobase/pull/6942)）@kerwin612
+  * メニューリンクを新ウィンドウで開くかどうかを設定可能に（[#6918](https://github.com/nocobase/nocobase/pull/6918)）@katherinehhh
+  * 確認ダイアログ表示前に必須フィールドの検証を行う（[#6931](https://github.com/nocobase/nocobase/pull/6931)）@katherinehhh
 
 #### 🐛 不具合修正
 
 * **[クライアント]**
-  * 連携ルールにおける noneOf 条件チェックの失敗（[#6934](https://github.com/nocobase/nocobase/pull/6934)）@katherinehhh
-  * ブロックの高さ設定がリアルタイム適用されない問題（[#6904](https://github.com/nocobase/nocobase/pull/6904)）@katherinehhh
-* **[未定義]** commander パッケージの要件により Node 20 を使用（[#6924](https://github.com/nocobase/nocobase/pull/6924)）@mytharcher
-* **[データベース]** 多対多関連での uuid/nanoid 自動生成機能の不動作を修正（[#6912](https://github.com/nocobase/nocobase/pull/6912)）@aaaaaajie
-* **[アクション：レコードエクスポート]** ネスト関連付けのエクスポートエラーを修正（[#6917](https://github.com/nocobase/nocobase/pull/6917)）@aaaaaajie
-* **[データソースマネージャー]** ドラッグアンドドロップソート機能の不動作を解決（[#6937](https://github.com/nocobase/nocobase/pull/6937)）@chenos
-* **[API ドキュメント]** req.headers に欠落していたサブアプリ情報を追加（[#6933](https://github.com/nocobase/nocobase/pull/6933)）@chenos
-* **[通知：アプリ内メッセージ]** 「全て既読にする」アクションが他ユーザーのデータに影響を及ぼす問題を解決（[#6926](https://github.com/nocobase/nocobase/pull/6926)）@sheldon66
-* **[ワークフロー：カスタムアクションイベント]** プラグインのロード順序に起因するエラーを回避 @mytharcher
-* **[ファイルストレージ: S3 (Pro)]**
-  * プレビュー URL とアップロードパラメータを修正 @mytharcher
-  * 重複するアップロードパラメータを修正 @mytharcher
-* **[ブロック：多段フォーム]** タイプ定義を修正 @mytharcher
-* **[ワークフロー：承認]**
-  * ViewAction のレコード ID 不正を修正 @mytharcher
-  * 承認プロセス送信前のデータ追加・計算を修正 @mytharcher
+  * 関連フィールドのドロップダウンデータをページサイズ 200 でページネーション（[#6950](https://github.com/nocobase/nocobase/pull/6950)）@katherinehhh
+  * テーブル行をドラッグする際のハイライト位置の誤り（[#6952](https://github.com/nocobase/nocobase/pull/6952)）@chenos
+  * ドラッグによるブロックサイズ変更が機能しない問題（[#6944](https://github.com/nocobase/nocobase/pull/6944)）@chenos
+  * フィールド割り当てコンポーネントの i18n 機能不動作（[#6945](https://github.com/nocobase/nocobase/pull/6945)）@katherinehhh
+  * エラーポップアップ内のコピーボタンが「[object Object]」としてコピーされる問題を修正（[#6908](https://github.com/nocobase/nocobase/pull/6908)）@kerwin612
+* **[コレクションフィールド: Markdown (Vditor)]** markdown-vditor フィールドコンポーネントのズーム後の幅問題（[#6946](https://github.com/nocobase/nocobase/pull/6946)）@katherinehhh
+* **[ワークフロー：承認]** ロケールの修正 @mytharcher
+
+### [v1.6.36](https://www.nocobase.com/en/blog/v1.6.36)
+
+*リリース日：2025-05-29*
+
+#### 🚀 機能改善
+
+* **[認証: OIDC]** ユーザーをメールアドレスで照合する際の大文字小文字の区別を無視 @2013xile
+
+### [v1.6.37](https://www.nocobase.com/en/blog/v1.6.37)
+
+*リリース日：2025-05-30*
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * フィルターボタンのドロップダウンリスト内のフィールド順序を修正（[#6962](https://github.com/nocobase/nocobase/pull/6962)）@zhangzhonghe
+  * サブテーブル連携変数がフォーム値を使用せず、クリア時に関連データを取得する問題を修正（[#6963](https://github.com/nocobase/nocobase/pull/6963)）@katherinehhh
+  * サブテーブル内の関連フィールドが空値の反復変数でリクエストをトリガーする問題を修正（[#6969](https://github.com/nocobase/nocobase/pull/6969)）@katherinehhh
+* **[テーマエディタ]** テーマ切り替えオプションを非表示にし、ポップアップスタイルを修正（[#6964](https://github.com/nocobase/nocobase/pull/6964)）@zhangzhonghe
+* **[ワークフロー：承認]** 関連条件を含む担当者スコープのクエリ時のエラーを修正 @mytharcher
+
+### [v1.6.38](https://www.nocobase.com/en/blog/v1.6.38)
+
+*リリース日：2025-06-03*
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * ポップアップ内で作成したブロックのコレクションが不正な問題を修正（[#6961](https://github.com/nocobase/nocobase/pull/6961)）@zhangzhonghe
+  * サブページにおけるフィルターフォームのデフォルト値が無効な問題を修正（[#6960](https://github.com/nocobase/nocobase/pull/6960)）@zhangzhonghe
+  * ロールデータテーブルスコープ内で外部データソースの関連コレクションフィールドを展開できない問題（[#6958](https://github.com/nocobase/nocobase/pull/6958)）@katherinehhh
+  * 関連フィールドの「省略可能なオーバーフローコンテンツ」オプションが機能しない問題を修正（[#6967](https://github.com/nocobase/nocobase/pull/6967)）@zhangzhonghe
+  * 一行テキストフィールドの値が簡易閲覧モードで配列として表示される問題を修正（[#6968](https://github.com/nocobase/nocobase/pull/6968)）@zhangzhonghe
+* **[認証]** 有効期限切れトークンのクリーンアップに起因するパフォーマンス問題（[#6981](https://github.com/nocobase/nocobase/pull/6981)）@2013xile
+* **[ファイルマネージャー]** Ali-OSS のタイムアウト設定を修正（[#6970](https://github.com/nocobase/nocobase/pull/6970)）@mytharcher
+* **[ワークフロー：カスタムアクションイベント]** ワークベンチの初期化処理が省略される問題を修正 @mytharcher
+* **[認証: OIDC]** サインインボタンのテキストがローカライズされない問題 @2013xile
+
+### [v1.7.1](https://www.nocobase.com/en/blog/v1.7.1)
+
+*リリース日：2025-06-04*
+
+#### 🎉 新機能
+
+* **[データ可視化]** チャート変換設定に乗算と除算をサポート（[#6788](https://github.com/nocobase/nocobase/pull/6788)）@bugstark
+
+#### 🚀 機能改善
+
+* **[公開フォーム]** URL パラメータを変数として使用可能に（[#6973](https://github.com/nocobase/nocobase/pull/6973)）@mytharcher
+
+#### 🐛 不具合修正
+
+* **[クライアント]** 重複した API リクエストによりブロックテンプレートにフィールドが表示されない問題を修正（[#6957](https://github.com/nocobase/nocobase/pull/6957)）@zhangzhonghe
+* **[ワークフロー：手動ノード]** 外部データソースを使用する際の初期化エラーを修正（[#6983](https://github.com/nocobase/nocobase/pull/6983)）@mytharcher
 
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v1.7.0-beta.34](https://www.nocobase.com/en/blog/v1.7.0-beta.34)
+### [v1.8.0-beta.1](https://www.nocobase.com/en/blog/v1.8.0-beta.1)
 
-*リリース日：2025-05-28*
+*リリース日：2025-06-04*
 
 #### 🎉 新機能
 
-* **[未定義]** Gitpod を新たにサポート。クリック 1 回で開発環境を起動し、すぐに開発を開始できます。（[#6922](https://github.com/nocobase/nocobase/pull/6922)）@kerwin612
-* **[アクション：レコードインポート Pro]**
-  * インポート設定時に複数フィールドでユニークレコードを定義できるようにしました @aaaaaajie
-  * インポート設定時に空白セルの上書き / 無視設定をサポートしました @aaaaaajie
-* **[コレクションフィールド：コード]** コードエディタフィールドの高さ設定を追加 @mytharcher
-* **[Email マネージャー]**
-  * メールを ToDo としてマークし、メモを追加できるようにしました @jiannx
-  * ラベルと設定の組み合わせをサポートしました @jiannx
+* **[未定義]** 一行テキストフィールド用の新規「入力コピーボタン」プラグインを追加（[#6894](https://github.com/nocobase/nocobase/pull/6894)）@kerwin612
+* **[ワークフロー]** ワークフローカテゴリ管理機能を追加（[#6965](https://github.com/nocobase/nocobase/pull/6965)）@mytharcher
 
 #### 🚀 機能改善
 
-* **[クライアント]**
-  * 日付範囲フィルタコンポーネントのスタイルを改善（[#6939](https://github.com/nocobase/nocobase/pull/6939)）@katherinehhh
-  * 隠したフォームコントロールが Tab キーをキャプチャする問題を修正し、フォーム操作効率を大幅に向上（[#6942](https://github.com/nocobase/nocobase/pull/6942)）@kerwin612
-  * 確認ダイアログ表示前に必須フィールドの検証を行う（[#6931](https://github.com/nocobase/nocobase/pull/6931)）@katherinehhh
-  * 日付フィルタオプションの表示内容を調整（[#6928](https://github.com/nocobase/nocobase/pull/6928)）@katherinehhh
-* **[未定義]** CI 環境の Node バージョンを 20 にアップグレード（[#6927](https://github.com/nocobase/nocobase/pull/6927)）@mytharcher
+* **[クライアント]** メニューリンクを新ウィンドウで開くかどうかを設定可能に（[#6918](https://github.com/nocobase/nocobase/pull/6918)）@katherinehhh
+* **[アクション：レコードインポート Pro]** xlsx インポートのパフォーマンスを最適化 @aaaaaajie
+* **[認証: OIDC]** ユーザーをメールアドレスで照合する際の大文字小文字の区別を無視 @2013xile
+* **[ワークフロー：承認]** ワークフローコレクションをワークフロープラグインからインポートして重複を回避 @mytharcher
 
 #### 🐛 不具合修正
 
 * **[クライアント]**
-  * フォームラベルのコロン表示設定が機能しない問題（[#6947](https://github.com/nocobase/nocobase/pull/6947)）@katherinehhh
-  * ドラッグによるブロックサイズ変更が機能しない問題（[#6944](https://github.com/nocobase/nocobase/pull/6944)）@chenos
-  * フィールド割り当てコンポーネントの i18n 機能不動作（[#6945](https://github.com/nocobase/nocobase/pull/6945)）@katherinehhh
-  * 連携ルールにおける noneOf 条件チェックの失敗（[#6934](https://github.com/nocobase/nocobase/pull/6934)）@katherinehhh
-  * 連携ルール内のネスト条件変数の正しくレンダリングされない問題（[#6929](https://github.com/nocobase/nocobase/pull/6929)）@katherinehhh
-  * ブロックの高さ設定がリアルタイム適用されない問題（[#6904](https://github.com/nocobase/nocobase/pull/6904)）@katherinehhh
-  * エラーポップアップ内のコピーボタンが「[object Object]」としてコピーされる問題を修正（[#6908](https://github.com/nocobase/nocobase/pull/6908)）@kerwin612
-  * 日付範囲制限における日付変数の解析エラー（[#6930](https://github.com/nocobase/nocobase/pull/6930)）@katherinehhh
-* **[データベース]** 多対多関連での uuid/nanoid 自動生成機能の不動作を修正（[#6912](https://github.com/nocobase/nocobase/pull/6912)）@aaaaaajie
-* **[未定義]** commander パッケージの要件により Node 20 を使用（[#6924](https://github.com/nocobase/nocobase/pull/6924)）@mytharcher
-* **[コレクションフィールド: Markdown (Vditor)]** markdown-vditor フィールドコンポーネントのズーム後の幅問題（[#6946](https://github.com/nocobase/nocobase/pull/6946)）@katherinehhh
-* **[API ドキュメント]** req.headers に欠落していたサブアプリ情報を追加（[#6933](https://github.com/nocobase/nocobase/pull/6933)）@chenos
-* **[通知：アプリ内メッセージ]** 「全て既読にする」アクションが他ユーザーのデータに影響を及ぼす問題を解決（[#6926](https://github.com/nocobase/nocobase/pull/6926)）@sheldon66
-* **[データソースマネージャー]** ドラッグアンドドロップソート機能の不動作を解決（[#6937](https://github.com/nocobase/nocobase/pull/6937)）@chenos
-* **[アクション：レコードエクスポート]** ネスト関連付けのエクスポートエラーを修正（[#6917](https://github.com/nocobase/nocobase/pull/6917)）@aaaaaajie
-* **[ワークフロー：カスタムアクションイベント]** プラグインのロード順序に起因するエラーを回避 @mytharcher
-* **[ファイルストレージ: S3 (Pro)]**
-  * 重複するアップロードパラメータを修正 @mytharcher
-  * プレビュー URL とアップロードパラメータを修正 @mytharcher
-* **[ブロック：多段フォーム]** タイプ定義を修正 @mytharcher
-* **[ワークフロー：承認]**
-  * ViewAction のレコード ID 不正を修正 @mytharcher
-  * ロケールの修正 @mytharcher
-  * 承認プロセス送信前のデータ追加・計算を修正 @mytharcher
-* **[Email マネージャー]**
-  * アクションカラムの削除 @jiannx
-  * メモ追加モーダルのエラーを修正 @jiannx
-  * mailMessageNotes と mailMessageLabels コレクションの API アクセス許可を修正 @jiannx
+  * フィールドとアクションがページを更新しないと反映されない問題（[#6977](https://github.com/nocobase/nocobase/pull/6977)）@zhangzhonghe
+  * 重複した API リクエストによりブロックテンプレートにフィールドが表示されない問題を修正（[#6957](https://github.com/nocobase/nocobase/pull/6957)）@zhangzhonghe
+  * ポップアップ内で作成したブロックのコレクションが不正な問題を修正（[#6961](https://github.com/nocobase/nocobase/pull/6961)）@zhangzhonghe
+  * 関連フィールドのデフォルト値を設定する際に変数を選択できない問題（[#6974](https://github.com/nocobase/nocobase/pull/6974)）@zhangzhonghe
+  * 一行テキストフィールドの値が簡易閲覧モードで配列として表示される問題を修正（[#6968](https://github.com/nocobase/nocobase/pull/6968)）@zhangzhonghe
+  * ロールデータテーブルスコープ内で外部データソースの関連コレクションフィールドを展開できない問題（[#6958](https://github.com/nocobase/nocobase/pull/6958)）@katherinehhh
+  * 関連フィールドの「省略可能なオーバーフローコンテンツ」オプションが機能しない問題を修正（[#6967](https://github.com/nocobase/nocobase/pull/6967)）@zhangzhonghe
+  * サブページにおけるフィルターフォームのデフォルト値が無効な問題を修正（[#6960](https://github.com/nocobase/nocobase/pull/6960)）@zhangzhonghe
+  * 新しいデータを追加する際に関連フィールドのポップアップが最初の入力で閉じる問題（[#6971](https://github.com/nocobase/nocobase/pull/6971)）@katherinehhh
+  * サブテーブル内の関連フィールドが空値の反復変数でリクエストをトリガーする問題を修正（[#6969](https://github.com/nocobase/nocobase/pull/6969)）@katherinehhh
+  * フィルターボタンのドロップダウンリスト内のフィールド順序を修正（[#6962](https://github.com/nocobase/nocobase/pull/6962)）@zhangzhonghe
+  * パネルを折りたたむとフォーム検証ルールのデータが失われる問題（[#6949](https://github.com/nocobase/nocobase/pull/6949)）@katherinehhh
+  * 連携ルールでマルチセレクトドロップダウンオプションを更新すると選択値がリセットされる問題（[#6953](https://github.com/nocobase/nocobase/pull/6953)）@katherinehhh
+  * サブテーブル連携変数がフォーム値を使用せず、クリア時に関連データを取得する問題を修正（[#6963](https://github.com/nocobase/nocobase/pull/6963)）@katherinehhh
+  * 関連フィールドのドロップダウンデータをページサイズ 200 でページネーション（[#6950](https://github.com/nocobase/nocobase/pull/6950)）@katherinehhh
+  * 日付ピッカーで「期間」から「指定日」に切り替えた後にリフレッシュされない問題（[#6956](https://github.com/nocobase/nocobase/pull/6956)）@katherinehhh
+  * テーブル行をドラッグする際のハイライト位置の誤り（[#6952](https://github.com/nocobase/nocobase/pull/6952)）@chenos
+* **[認証]** 有効期限切れトークンのクリーンアップに起因するパフォーマンス問題（[#6981](https://github.com/nocobase/nocobase/pull/6981)）@2013xile
+* **[ワークフロー]** ワークフローをフィルタリングする際に発生するエラーを修正（[#6978](https://github.com/nocobase/nocobase/pull/6978)）@mytharcher
+* **[ファイルマネージャー]** Ali-OSS のタイムアウト設定を修正（[#6970](https://github.com/nocobase/nocobase/pull/6970)）@mytharcher
+* **[テーマエディタ]** テーマ切り替えオプションを非表示にし、ポップアップスタイルを修正（[#6964](https://github.com/nocobase/nocobase/pull/6964)）@zhangzhonghe
+* **[ワークフロー：カスタムアクションイベント]** ワークベンチの初期化処理が省略される問題を修正 @mytharcher
+* **[認証: OIDC]** サインインボタンのテキストがローカライズされない問題 @2013xile
+* **[ワークフロー：承認]** 関連条件を含む担当者スコープのクエリ時のエラーを修正 @mytharcher
+
+### [v1.8.0-beta.2](https://www.nocobase.com/en/blog/v1.8.0-beta.2)
+
+*リリース日：2025-06-04*
+
+#### 🚀 機能改善
+
+* **[テンプレート印刷]** ログを追加 @sheldon66
+
+### [v1.8.0-beta.3](https://www.nocobase.com/en/blog/v1.8.0-beta.3)
+
+*リリース日：2025-06-04*
+
+#### 🎉 新機能
+
+* **[データ可視化]** チャート変換設定に乗算と除算をサポート（[#6788](https://github.com/nocobase/nocobase/pull/6788)）@bugstark
+
+#### 🚀 機能改善
+
+* **[公開フォーム]** URL パラメータを変数として使用可能に（[#6973](https://github.com/nocobase/nocobase/pull/6973)）@mytharcher
+
+#### 🐛 不具合修正
+
+* **[クライアント]** 重複した API リクエストによりブロックテンプレートにフィールドが表示されない問題を修正（[#6957](https://github.com/nocobase/nocobase/pull/6957)）@zhangzhonghe
+* **[ワークフロー：手動ノード]** 外部データソースを使用する際の初期化エラーを修正（[#6983](https://github.com/nocobase/nocobase/pull/6983)）@mytharcher
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v1.7.0-alpha.15](https://www.nocobase.com/ja/blog/v1.7.0-alpha.15)
+### [v1.8.0-alpha.1](https://www.nocobase.com/ja/blog/v1.8.0-alpha.1)
 
-*リリース日：2025-05-28*
+*リリース日：2025-06-04*
 
 #### 🎉 新機能
 
-* **[クライアント]** カスタム集計変数のサポート（[#6916](https://github.com/nocobase/nocobase/pull/6916)）@zhangzhonghe
-  参照：[カスタム変数](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
-* **[ユーティリティ]** 日付フィールドフィルタでカスタムオフセットをサポート（[#6854](https://github.com/nocobase/nocobase/pull/6854)）@katherinehhh
-* **[コレクションフィールド：コード]** コードエディタフィールドの高さ設定を追加 @mytharcher
-* **[アクション：レコードインポート Pro]**
-  * インポート設定時に複数フィールドでユニークレコードを定義できるようにしました @aaaaaajie
-  * インポート設定時に空白セルの上書き / 無視設定をサポートしました @aaaaaajie
-* **[カスタム変数]** カスタム集計変数のサポート @zhangzhonghe
-  参照：[カスタム変数](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
-* **[Email マネージャー]**
-  * メールを ToDo としてマークし、メモを追加できるようにしました @jiannx
-  * ラベルと設定の組み合わせをサポートしました @jiannx
+* **[未定義]**
+  * Gitpod を新たにサポート。クリック 1 回で開発環境を起動し、すぐに開発を開始できます。（[#6922](https://github.com/nocobase/nocobase/pull/6922)）@kerwin612
+  * 一行テキストフィールド用の新規「入力コピーボタン」プラグインを追加（[#6894](https://github.com/nocobase/nocobase/pull/6894)）@kerwin612
+* **[データ可視化]** チャート変換設定に乗算と除算をサポート（[#6788](https://github.com/nocobase/nocobase/pull/6788)）@bugstark
+* **[ワークフロー]** ワークフローカテゴリ管理機能を追加（[#6965](https://github.com/nocobase/nocobase/pull/6965)）@mytharcher
+* **[Email マネージャー]** 一括送信機能をサポート @jiannx
 
 #### 🚀 機能改善
 
-* **[クライアント]** 日付フィルタオプションの表示内容を調整（[#6928](https://github.com/nocobase/nocobase/pull/6928)）@katherinehhh
-* **[未定義]** CI 環境の Node バージョンを 20 にアップグレード（[#6927](https://github.com/nocobase/nocobase/pull/6927)）@mytharcher
-* **[カレンダー]** カレンダーブロックにリフレッシュボタンの設定可能機能を追加（[#6920](https://github.com/nocobase/nocobase/pull/6920)）@katherinehhh
-* **[アクション：レコードインポート]**
-  * xlsx インポートのパフォーマンスを最適化（[#6850](https://github.com/nocobase/nocobase/pull/6850)）@aaaaaajie
-  * xlsx インポートのパフォーマンスを最適化（[#6850](https://github.com/nocobase/nocobase/pull/6850)）@aaaaaajie
-* **[アクション：レコードエクスポート]** XLSX 形式へのエクスポート時のパフォーマンス最適化（[#6729](https://github.com/nocobase/nocobase/pull/6729)）@aaaaaajie
-* **[ブロック: iframe]** 日付変数の割り当てロジックを改善（[#6828](https://github.com/nocobase/nocobase/pull/6828)）@katherinehhh
-* **[ワークフロー：カスタムアクションイベント]** 中国語キーに基づく英語ロケールの修正 @mytharcher
-* **[アクション：レコードエクスポート Pro]** XLSX 形式へのエクスポート時のパフォーマンス最適化 @aaaaaajie
-* **[ワークフロー：承認]** ワークフロータスクセンターでの全ての未処理タスク一括処理をサポート @mytharcher
-* **[Email マネージャー]** スキーマ実装後のメール送信と AI 機能をサポート @jiannx
+* **[クライアント]**
+  * 日付範囲フィルタコンポーネントのスタイルを改善（[#6939](https://github.com/nocobase/nocobase/pull/6939)）@katherinehhh
+  * メニューリンクを新ウィンドウで開くかどうかを設定可能に（[#6918](https://github.com/nocobase/nocobase/pull/6918)）@katherinehhh
+  * 隠したフォームコントロールが Tab キーをキャプチャする問題を修正し、フォーム操作効率を大幅に向上（[#6942](https://github.com/nocobase/nocobase/pull/6942)）@kerwin612
+  * 確認ダイアログ表示前に必須フィールドの検証を行う（[#6931](https://github.com/nocobase/nocobase/pull/6931)）@katherinehhh
+* **[公開フォーム]** URL パラメータを変数として使用可能に（[#6973](https://github.com/nocobase/nocobase/pull/6973)）@mytharcher
+* **[アクション：レコードインポート Pro]** xlsx インポートのパフォーマンスを最適化 @aaaaaajie
+* **[テンプレート印刷]** ログを追加 @sheldon66
+* **[認証: OIDC]** ユーザーをメールアドレスで照合する際の大文字小文字の区別を無視 @2013xile
+* **[ワークフロー：承認]** ワークフローコレクションをワークフロープラグインからインポートして重複を回避 @mytharcher
+* **[Email マネージャー]** 一括送信機能を完成 @jiannx
 
 #### 🐛 不具合修正
 
-* **[データベース]** 多対多関連での uuid/nanoid 自動生成機能の不動作を修正（[#6912](https://github.com/nocobase/nocobase/pull/6912)）@aaaaaajie
 * **[クライアント]**
-  * 連携ルールにおける noneOf 条件チェックの失敗（[#6934](https://github.com/nocobase/nocobase/pull/6934)）@katherinehhh
-  * ブロックの高さ設定がリアルタイム適用されない問題（[#6904](https://github.com/nocobase/nocobase/pull/6904)）@katherinehhh
-  * 連携ルール内のネスト条件変数の正しくレンダリングされない問題（[#6929](https://github.com/nocobase/nocobase/pull/6929)）@katherinehhh
-  * 日付範囲制限における日付変数の解析エラー（[#6930](https://github.com/nocobase/nocobase/pull/6930)）@katherinehhh
-  * 連携ルールにおける toMany 関連フィールドの空値チェックエラー（[#6905](https://github.com/nocobase/nocobase/pull/6905)）@katherinehhh
-  * 関連フィールド追加時の無効なスタイルフォーマットによるレンダリングエラー（[#6903](https://github.com/nocobase/nocobase/pull/6903)）@katherinehhh
-  * サブテーブル内の連携ルールにおける現在オブジェクト変数の欠落（[#6907](https://github.com/nocobase/nocobase/pull/6907)）@katherinehhh
-* **[未定義]** commander パッケージの要件により Node 20 を使用（[#6924](https://github.com/nocobase/nocobase/pull/6924)）@mytharcher
-* **[データソースマネージャー]** ドラッグアンドドロップソート機能の不動作を解決（[#6937](https://github.com/nocobase/nocobase/pull/6937)）@chenos
-* **[API ドキュメント]** req.headers に欠落していたサブアプリ情報を追加（[#6933](https://github.com/nocobase/nocobase/pull/6933)）@chenos
-* **[通知：アプリ内メッセージ]** 「全て既読にする」アクションが他ユーザーのデータに影響を及ぼす問題を解決（[#6926](https://github.com/nocobase/nocobase/pull/6926)）@sheldon66
-* **[アクション：レコードエクスポート]** ネスト関連付けのエクスポートエラーを修正（[#6917](https://github.com/nocobase/nocobase/pull/6917)）@aaaaaajie
-* **[コレクションフィールド: Markdown (Vditor)]** Markdown (Vditor) フィールドのテーマ適応エラー（[#6919](https://github.com/nocobase/nocobase/pull/6919)）@katherinehhh
-* **[コレクション：ツリー]** パス更新時の類似パスプレフィックスの誤更新を回避（[#6913](https://github.com/nocobase/nocobase/pull/6913)）@2013xile
-* **[ワークフロー：メールノード]** 未定義の「宛先」フィールドの処理とメール受信者の処理を改善（[#6915](https://github.com/nocobase/nocobase/pull/6915)）@sheldon66
-* **[検証]** 誤った英語表記「verificators」→「verifiers」を修正（[#6834](https://github.com/nocobase/nocobase/pull/6834)）@2013xile
-* **[ファイルマネージャー]**
-  * クライアントコレクションの注入とアップロードパラメータの修正（[#6909](https://github.com/nocobase/nocobase/pull/6909)）@mytharcher
-  * プレビューマッチルールの修正（[#6902](https://github.com/nocobase/nocobase/pull/6902)）@mytharcher
-* **[ワークフロー：カスタムアクションイベント]**
-  * プラグインのロード順序に起因するエラーを回避 @mytharcher
-  * エラーハンドラがクラスでマッチしない問題の修正 @mytharcher
-  * 数回クリック後のボタン動作エラーの修正 @mytharcher
-* **[マルチキーワードフィルタ]** 各キーワードの前後の空白を削除 @zhangzhonghe
-* **[2 段階認証 (2FA)]** 2FA 有効化時に検証機能の設定を必須とする @2013xile
-* **[ファイルストレージ: S3 (Pro)]**
-  * 重複するアップロードパラメータを修正 @mytharcher
-  * プレビュー URL とアップロードパラメータを修正 @mytharcher
-* **[テンプレート印刷]** useFieldsTree 内の hasChildren ロジックを強化し、uiSchema の enum チェックを含める @sheldon66
-* **[ブロック：多段フォーム]** タイプ定義を修正 @mytharcher
-* **[ワークフロー：承認]**
-  * ロケールの修正 @mytharcher
-  * 承認プロセス送信前のデータ追加・計算を修正 @mytharcher
-  * 関連付け追加計算の修正 @mytharcher
-  * ViewAction のレコード ID 不正を修正 @mytharcher
-* **[Email マネージャー]**
-  * mailMessageNotes と mailMessageLabels コレクションの API アクセス許可を修正 @jiannx
-  * メモ追加モーダルのエラーを修正 @jiannx
-  * アクションカラムの削除 @jiannx
+  * 重複した API リクエストによりブロックテンプレートにフィールドが表示されない問題を修正（[#6957](https://github.com/nocobase/nocobase/pull/6957)）@zhangzhonghe
+  * ポップアップ内で作成したブロックのコレクションが不正な問題を修正（[#6961](https://github.com/nocobase/nocobase/pull/6961)）@zhangzhonghe
+  * 一行テキストフィールドの値が簡易閲覧モードで配列として表示される問題を修正（[#6968](https://github.com/nocobase/nocobase/pull/6968)）@zhangzhonghe
+  * フィルターボタンのドロップダウンリスト内のフィールド順序を修正（[#6962](https://github.com/nocobase/nocobase/pull/6962)）@zhangzhonghe
+  * フィールドとアクションがページを更新しないと反映されない問題（[#6977](https://github.com/nocobase/nocobase/pull/6977)）@zhangzhonghe
+  * 関連フィールドの「省略可能なオーバーフローコンテンツ」オプションが機能しない問題を修正（[#6967](https://github.com/nocobase/nocobase/pull/6967)）@zhangzhonghe
+  * 新しいデータを追加する際に関連フィールドのポップアップが最初の入力で閉じる問題（[#6971](https://github.com/nocobase/nocobase/pull/6971)）@katherinehhh
+  * サブテーブル内の関連フィールドが空値の反復変数でリクエストをトリガーする問題を修正（[#6969](https://github.com/nocobase/nocobase/pull/6969)）@katherinehhh
+  * パネルを折りたたむとフォーム検証ルールのデータが失われる問題（[#6949](https://github.com/nocobase/nocobase/pull/6949)）@katherinehhh
+  * サブページにおけるフィルターフォームのデフォルト値が無効な問題を修正（[#6960](https://github.com/nocobase/nocobase/pull/6960)）@zhangzhonghe
+  * フィールド割り当てコンポーネントの i18n 機能不動作（[#6945](https://github.com/nocobase/nocobase/pull/6945)）@katherinehhh
+  * ロールデータテーブルスコープ内で外部データソースの関連コレクションフィールドを展開できない問題（[#6958](https://github.com/nocobase/nocobase/pull/6958)）@katherinehhh
+  * 日付ピッカーで「期間」から「指定日」に切り替えた後にリフレッシュされない問題（[#6956](https://github.com/nocobase/nocobase/pull/6956)）@katherinehhh
+  * サブテーブル連携変数がフォーム値を使用せず、クリア時に関連データを取得する問題を修正（[#6963](https://github.com/nocobase/nocobase/pull/6963)）@katherinehhh
+  * 連携ルールでマルチセレクトドロップダウンオプションを更新すると選択値がリセットされる問題（[#6953](https://github.com/nocobase/nocobase/pull/6953)）@katherinehhh
+  * テーブル行をドラッグする際のハイライト位置の誤り（[#6952](https://github.com/nocobase/nocobase/pull/6952)）@chenos
+  * フォームラベルのコロン表示設定が機能しない問題（[#6947](https://github.com/nocobase/nocobase/pull/6947)）@katherinehhh
+  * 関連フィールドのドロップダウンデータをページサイズ 200 でページネーション（[#6950](https://github.com/nocobase/nocobase/pull/6950)）@katherinehhh
+  * エラーポップアップ内のコピーボタンが「[object Object]」としてコピーされる問題を修正（[#6908](https://github.com/nocobase/nocobase/pull/6908)）@kerwin612
+  * 関連フィールドのデフォルト値を設定する際に変数を選択できない問題（[#6974](https://github.com/nocobase/nocobase/pull/6974)）@zhangzhonghe
+  * ドラッグによるブロックサイズ変更が機能しない問題（[#6944](https://github.com/nocobase/nocobase/pull/6944)）@chenos
+* **[ワークフロー：手動ノード]** 外部データソースを使用する際の初期化エラーを修正（[#6983](https://github.com/nocobase/nocobase/pull/6983)）@mytharcher
+* **[認証]** 有効期限切れトークンのクリーンアップに起因するパフォーマンス問題（[#6981](https://github.com/nocobase/nocobase/pull/6981)）@2013xile
+* **[ファイルマネージャー]** Ali-OSS のタイムアウト設定を修正（[#6970](https://github.com/nocobase/nocobase/pull/6970)）@mytharcher
+* **[ワークフロー]** ワークフローをフィルタリングする際に発生するエラーを修正（[#6978](https://github.com/nocobase/nocobase/pull/6978)）@mytharcher
+* **[テーマエディタ]** テーマ切り替えオプションを非表示にし、ポップアップスタイルを修正（[#6964](https://github.com/nocobase/nocobase/pull/6964)）@zhangzhonghe
+* **[コレクションフィールド: Markdown (Vditor)]** markdown-vditor フィールドコンポーネントのズーム後の幅問題（[#6946](https://github.com/nocobase/nocobase/pull/6946)）@katherinehhh
+* **[ワークフロー：カスタムアクションイベント]** ワークベンチの初期化処理が省略される問題を修正 @mytharcher
+* **[認証: OIDC]** サインインボタンのテキストがローカライズされない問題 @2013xile
+* **[ワークフロー：承認]** 関連条件を含む担当者スコープのクエリ時のエラーを修正 @mytharcher
+
+### [v1.8.0-alpha.2](https://www.nocobase.com/ja/blog/v1.8.0-alpha.2)
+
+*リリース日：2025-06-04*
+
+#### 🐛 不具合修正
+
+* **[クライアント]** 重複した API リクエストによりブロックテンプレート内のフィールドが表示されない問題を修正（[#6957](https://github.com/nocobase/nocobase/pull/6957)）@zhangzhonghe
