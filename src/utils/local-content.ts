@@ -495,7 +495,6 @@ export async function listArticles(options?: {
   let filteredArticles = articles;
   if (filterConditions.length > 0) {
     const combinedFilter = { $and: filterConditions };
-    console.log('Applying combined article filter:', JSON.stringify(combinedFilter, null, 2));
     try {
       const siftFilter = sift(combinedFilter);
       filteredArticles = articles.filter(siftFilter);
@@ -584,7 +583,6 @@ export async function listTutorialArticles(options?: {
   // Apply filters using sift.js
   if (filterConditions.length > 0) {
     const filter = { $and: filterConditions };
-    console.log('Applying tutorial filter:', JSON.stringify(filter, null, 2));
     try {
       const siftFilter = sift(filter);
       tutorials = tutorials.filter(siftFilter);

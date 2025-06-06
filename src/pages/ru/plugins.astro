@@ -25,13 +25,13 @@ const title = page.title_ru || page.title;
 const description = page.description_ru || page.description;
 const keywords = page.keywords_ru || page.keywords;
 
-const allPlugins = data.flatMap((group) => group.plugins);
+const allPlugins = data.flatMap((group: any) => group.plugins);
 
-const newlyPlugins = allPlugins.filter((p) => !!p.newly);
-const comingPlugins = allPlugins.filter((p) => !!p.coming);
+const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
+const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
 
-data.forEach((group) => {
-  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
+data.forEach((group: any) => {
+  group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
 const normalGroups = data.filter((group) => group.plugins.length > 0);

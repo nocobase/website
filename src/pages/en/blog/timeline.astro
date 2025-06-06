@@ -30,7 +30,7 @@ async function renderMarkdown(content: string) {
   return adjustedCode;
 }
 
-// Get first page of data (non-milestone only)
+// Get first page of data (including milestone items)
 const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 20 });
 
 const allItems = await Promise.all(releaseNotes.map(async (article: any) => ({
@@ -230,6 +230,7 @@ const tabs = [
         const contentElement = element.querySelector('.text-muted.mt-2');
         const descriptionElement = element.querySelector('.mt-3.mb-0.text-muted');
         const dateElement = element.querySelector('.duration.date-label-left');
+        const coverElement = element.querySelector('.milestone img');
         
         return {
           title: titleElement ? titleElement.innerText : '',
@@ -238,7 +239,8 @@ const tabs = [
           publishedAt: dateElement ? dateElement.innerText : '',
           tags: tags,
           slug: titleElement ? titleElement.getAttribute('href').split('/').pop() : '',
-          isMilestone: element.querySelector('.milestone') !== null
+          isMilestone: element.querySelector('.milestone') !== null,
+          cover: coverElement ? { url: coverElement.getAttribute('src') } : null
         };
       } catch (error) {
         console.error('Error extracting data:', error);
@@ -538,17 +540,45 @@ const tabs = [
           renderNewItems(milestoneItems, false);
         }
       } else {
-        // Show regular items and apply filter
+        // For "all" filter, combine all loaded items including milestones
         const container = document.getElementById('timeline-container');
-        if (container && currentFilter !== 'milestone') {
-          // Re-render all loaded items
+        if (container) {
           container.innerHTML = '';
-          renderNewItems(allLoadedItems, false);
+          
+          // Combine regular items and milestone items for "all" filter
+          const itemsToRender = currentFilter === 'all' && milestoneLoaded
+            ? combineAndSortItems(allLoadedItems, milestoneItems)
+            : allLoadedItems;
+          
+          renderNewItems(itemsToRender, false);
         }
       }
       
       // Apply filter to current items
       applyCurrentFilter();
+    }
+    
+    // Helper function to combine and sort items by date
+    function combineAndSortItems(regularItems, milestoneItems) {
+      // Create a map to avoid duplicates (based on slug)
+      const itemMap = new Map();
+      
+      // Add regular items
+      regularItems.forEach(item => {
+        itemMap.set(item.slug, item);
+      });
+      
+      // Add milestone items (they will override regular items with same slug)
+      milestoneItems.forEach(item => {
+        itemMap.set(item.slug, item);
+      });
+      
+      // Convert back to array and sort by published date
+      return Array.from(itemMap.values()).sort((a, b) => {
+        const dateA = new Date(a.publishedAt);
+        const dateB = new Date(b.publishedAt);
+        return dateB.getTime() - dateA.getTime();
+      });
     }
     
     // Set load more button click event

@@ -26,16 +26,16 @@ const description = page.description;
 const keywords = page.keywords;
 
 // 1. 将所有插件先扁平化收集
-const allPlugins = data.flatMap((group) => group.plugins);
+const allPlugins = data.flatMap((group: any) => group.plugins);
 
 // 2. 拆分为 newly / coming / normal 三类
-const newlyPlugins = allPlugins.filter((p) => !!p.newly);
-const comingPlugins = allPlugins.filter((p) => !!p.coming);
+const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
+const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
 
 // 3. 从原分组里移除 newly 和 coming 的插件
 //    这样它们就不会和后面的 normal 分组重复出现
 data.forEach((group) => {
-  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
+  group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
 // 4. 去掉空分组（如果一个分组所有插件都是 newly 或 coming，就没必要再显示空分组标题）

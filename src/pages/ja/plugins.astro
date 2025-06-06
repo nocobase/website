@@ -26,14 +26,14 @@ const description = page.description_ja || page.description;
 const keywords = page.keywords_ja || page.keywords;
 
 // 1. 先将所有插件收集到一个数组里
-const allPlugins = data.flatMap((group) => group.plugins);
+const allPlugins = data.flatMap((group: any) => group.plugins);
 
 // 2. 根据 plugin.newly / plugin.coming 拆分
-const newlyPlugins = allPlugins.filter((p) => !!p.newly);
-const comingPlugins = allPlugins.filter((p) => !!p.coming);
+const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
+const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
 
 // 3. 从原分组中移除「新推出」或「即将发布」的插件
-data.forEach((group) => {
+data.forEach((group: any) => {
   group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 

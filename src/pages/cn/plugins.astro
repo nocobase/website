@@ -26,28 +26,28 @@ const description = page.description_cn || page.description;
 const keywords = page.keywords_cn || page.keywords;
 
 // 1. 将所有插件先扁平化
-const allPlugins = data.flatMap((group) => group.plugins);
+const allPlugins = data.flatMap((group: any) => group.plugins);
 
-// 2. 筛选“最新发布 (newly)”和“即将发布 (coming)”
-const newlyPlugins = allPlugins.filter((p) => !!p.newly);
-const comingPlugins = allPlugins.filter((p) => !!p.coming);
+// 2. 筛选"最新发布 (newly)"和"即将发布 (coming)"
+const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
+const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
 
 // 3. 从原有分类中移除这两类插件，避免重复
-data.forEach((group) => {
-  group.plugins = group.plugins.filter((p) => !p.newly && !p.coming && !p.internal && !p.user_specific);
+data.forEach((group: any) => {
+  group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
 // 4. 去掉空分组（若某分类的插件都被移走了，就不显示）
 const normalGroups = data.filter((group) => group.plugins.length > 0);
 
-// 5. 最终要渲染的分组数组，先“最新发布”，再“即将发布”，最后原有分组
+// 5. 最终要渲染的分组数组，先"最新发布"，再"即将发布"，最后原有分组
 const finalGroups = [];
 
 // (a) 最新发布
 if (newlyPlugins.length > 0) {
   finalGroups.push({
     id: 'newly-launched',
-    // 这里可以自定义标题，比如 “最新发布”
+    // 这里可以自定义标题，比如 "最新发布"
     title: '最新发布',
     plugins: newlyPlugins,
   });
