@@ -4,7 +4,7 @@
 
 * 開発文書：[https://docs.nocobase.com/development/server/telemetry](https://docs.nocobase.com/development/server/telemetry)
 * カーネルAPI：[https://docs.nocobase.com/api/telemetry/telemetry](https://docs.nocobase.com/api/telemetry/telemetry)
-* Prometheusプラグイン：[https://docs.nocobase.com/plugins/telemetry-prometheus](https://docs.nocobase.com/plugins/telemetry-prometheus)
+* Prometheusプラグイン：[https://docs-jp.nocobase.com/handbook/telemetry-prometheus](https://docs-jp.nocobase.com/handbook/telemetry-prometheus)
 
 ### アプリケーションのバックアップと復元
 
