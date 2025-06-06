@@ -30,7 +30,7 @@ PostgreSQL対応ノーコード/ローコードツール6選の比較 以下に�
 
 ## ツール概要
 
-### [NocoBase]([NocoBase](https://www.nocobase.com/))
+### [NocoBase](https://www.nocobase.com/)
 
 **主な特長：ネイティブPostgreSQL統合、強力なビジュアルスキーマモデリング、プラグインによる拡張性**
 
@@ -286,7 +286,6 @@ PostgreSQL互換の6つのプラットフォームを調査した結果、「Pos
 * 既存のデータベースで迅速なバックエンド設定を行う場合：Retool、Appsmith、またはBudibaseを選択してください。
 * セルフホスト型のデータ共同作業プラットフォームを構築する場合：TeableまたはNocoDBを選択してください。
 * 詳細なモデリングと複雑なビジネスシステムを構築する場合：NocoBaseを選択してください。
-
 
 関連読み物：**
 
