@@ -1,3 +1,5 @@
+<iframe width="800" height="436" src="https://player.bilibili.com/player.html?isOutside=true&aid=113544406238001&bvid=BV1RfzNYLES5&cid=27009811403&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 小伙伴们，欢迎来到第五章！这一章内容非常精彩，我们将为任务管理页面增添更多的功能，支持各种不同的视图方式。相信你已经期待已久了，对吧？别急，我会一步步带你去实现，像往常一样，咱们一起轻松搞定！
 
 ### 5.1 标签页容器，容纳各种区块
@@ -13,7 +15,7 @@
 2. **再创建一个新标签页**：
 
    - 接下来，咱们再创建一个标签页，叫 **“看板视图”**。我们将在这里创建任务的看板区块。
-     ![创建标签页](https://static-docs.nocobase.com/Solution/demov3N-19N.gif)
+     ![创建标签页](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172155490.gif)
 
 准备好了吗？我们进入各种区块的创建吧！
 
@@ -38,13 +40,13 @@
 
 - 看板内的卡片可以通过排序字段来调整顺序。为了实现这一功能，我们需要新建一个排序字段。点击“添加字段”，创建一个名为 **状态排序（status_sort）** 的字段。
 - 这个字段是为了定位拖拽看板时，卡片的上下顺序，就像坐标一样，左右分组是不同状态，上下位置则是排序的值。后期我们拖拽卡片后，可以从表单中观察排序值的变化。
-  ![创建看板区块](https://static-docs.nocobase.com/Solution/demov3N-20.gif)
+  ![创建看板区块](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172156926.gif)
 
 #### 5.2.2 勾选字段与操作
 
 - 最后，记得在看板区块中勾选需要展示的字段，比如任务名称、任务状态等，确保卡片的信息丰富完整。
 
-![看板字段展示](https://static-docs.nocobase.com/Solution/demov3N-21.gif)
+![看板字段展示](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172156326.gif)
 
 ### 5.3 使用模板：复制与引用
 
@@ -54,7 +56,7 @@
 
 - 在你之前的新增表单中，鼠标移到表单配置上，点击“保存为模板”。你可以为模板取个名字，比如 “任务表_表单 新增”。
 
-![保存表单为模板](https://static-docs.nocobase.com/Solution/demov3N-22.gif)
+![保存表单为模板](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172156356.gif)
 
 #### 5.3.2 **复制或引用模板**
 
@@ -63,7 +65,7 @@
 - [**复制模板**](https://docs-cn.nocobase.com/handbook/ui/blocks/block-templates#%E5%A4%8D%E5%88%B6%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB)：相当于复制了一份新的表单副本，你可以独立修改它，不会影响原来的表单。
 - [**引用模板**](https://docs-cn.nocobase.com/handbook/ui/blocks/block-templates#%E5%A4%8D%E5%88%B6%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB)：则是将原表单直接“借用”过来，任何修改都会同步到其他引用这个模板的地方。比如你修改了字段顺序，所有引用此模板的表单都会跟着变化。
 
-![复制与引用模板](https://static-docs.nocobase.com/Solution/demov3N-23.gif)
+![复制与引用模板](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172157435.gif)
 
 你可以根据自己的需求选择复制还是引用模板。一般来说，**引用模板** 更加方便，因为你只需修改一次，所有地方都会同步生效，非常省时省力。
 
@@ -80,21 +82,19 @@
 - **开始日期（start_date）**：标记任务的开始时间。
 - **结束日期（end_date）**：标记任务的结束时间。
 
-![新增日期字段](https://static-docs.nocobase.com/Solution/202410262038241729946304.png)
+![新增日期字段](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172157585.png)
 
 #### 5.4.2 新建日历区块：
 
 回到日历视图，创建一个日历区块，选择任务表，并使用刚刚创建的 **开始日期** 和 **结束日期** 字段。这样，任务将在日历上显示为一个持续时间段，直观展示任务的进展。
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p1.gif)
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p2.gif)
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p3.gif)
+![日历视图搭建](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172157957.gif)
 
 #### 5.4.3 体验日历操作：
 
 在日历上，你可以随意拖拽任务，点击并编辑任务的详细信息（别忘了复制或引用模板）。
 
-![日历操作](https://static-docs.nocobase.com/Solution/demov3N-25.gif)
+![日历操作](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172158379.gif)
 
 ### 5.5 甘特图区块：管理任务进度的神器
 
@@ -106,21 +106,19 @@
 
 为了让甘特图更好地展示任务进度，我们需要新增一个字段，叫 **完成比例（complete_percent）**。这个字段用来记录任务的完成进度，默认值为 0%。
 
-![新增完成比例字段](https://static-docs.nocobase.com/Solution/202410262108241729948104.png)
+![新增完成比例字段](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172158044.gif)
 
 #### 5.5.3 **新建甘特图区块**：
 
 在甘特图视图里，创建一个甘特图区块，选择任务表，并配置好相关的开始日期、结束日期和完成比例字段。
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.5.3%E6%8B%86%E5%88%86p1.gif)
-
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.5.3%E6%8B%86%E5%88%86p2.gif)
+![甘特图视图搭建](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172158860.gif)
 
 #### 5.5.4 **体验甘特图拖拽功能**：
 
 在甘特图中，你可以通过拖拽任务来调整它的进度和时间，任务的开始日期、结束日期以及完成比例都会跟着更新。
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%20%E5%88%A0%E9%99%A4%E5%B8%A7%E6%95%B0.gif)
+![甘特图拖拽](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172159140.gif)
 
 ### 小结
 
