@@ -1,3 +1,5 @@
+<iframe width="800" height="450" src="https://www.youtube.com/embed/fwkDcZIdT80?si=eiv_trubOrqGzCdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Review of the Last Section
 
 Remember the challenge from the last section? We configured **Status** and **Attachment** fields for our task collection and displayed them in the task list. Let’s reveal the solution!
@@ -5,22 +7,22 @@ Remember the challenge from the last section? We configured **Status** and **Att
 1. **Status Field Configuration**:
    - Select the [Single select](https://docs.nocobase.com/handbook/data-modeling/collection-fields/choices/select) field and enter the following options: **Not Started, In Progress, Under Review, Completed, Canceled, Archived**. Feel free to choose colors you like to make the tasks more vibrant!
 
-![Status Field Configuration](https://static-docs.nocobase.com/Solution/202411062259171730905157.png)
+![Status Field Configuration](https://static-docs.nocobase.com/Solution/511734183711202414214112.png)
 
 2. **Attachment Field Configuration**:
    - Create a new [**Attachment**](https://docs-cn.nocobase.com/handbook/file-manager/field-attachment) field, give it a name like “Attachment,” and hit submit. Simple as that!
 
-![](https://static-docs.nocobase.com/Solution/202411062305571730905557.png)
+![](https://static-docs.nocobase.com/Solution/251734183865202414214412.png)
 
 3. **Display Creator and Status in Task List**:
    - In "configure columns", select the “Creator,” “Status,” and “Attachment” fields to show more critical information in the task list.
 
-![Display Fields in Task List](https://static-docs.nocobase.com/Solution/202411062312011730905921.png)
+![Display Fields in Task List](https://static-docs.nocobase.com/Solution/201734183980202414214612.png)
 
 4. **Display Fields in Add and Edit Forms**:
    - Don’t forget to select the Status and Attachment fields in the pop-up form, so you can easily see these fields when adding or editing a task.
 
-![Display Fields in Forms](https://static-docs.nocobase.com/Solution/202411062314531730906093.png)
+![Display Fields in Forms](https://static-docs.nocobase.com/Solution/201734187340202414224212.png)
 
 Well done! Keep practicing these steps, and you’ll become more comfortable with the core features of NocoBase. Each step builds a solid foundation for future task management. Let’s keep going!
 
@@ -34,7 +36,7 @@ So far, your task management system can handle basic task information. However, 
 
 You may have noticed NocoBase offers both [**Rich Text**](https://docs.nocobase.com/handbook/data-modeling/collection-fields/media/rich-text) and [**Markdown**](https://docs.nocobase.com/handbook/data-modeling/collection-fields/media/markdown) editors, although these may not fully meet your needs. While the rich text editor is somewhat limited, the Markdown editor is easy to use but doesn’t support real-time preview.
 
-![](https://static-docs.nocobase.com/Solution/202411062320261730906426.png)
+![](https://static-docs.nocobase.com/Solution/311734187531202414224512.png))
 
 Is there an editor that supports both real-time preview and extensive features? Absolutely! [**Markdown (Vditor)**](https://docs.nocobase.com/handbook/field-markdown-vditor) is the most powerful text editor in NocoBase, offering real-time preview, image uploading, and even voice recording. Plus, it’s built into the system and completely free!
 
@@ -45,23 +47,23 @@ Let’s walk through enabling this powerful editor step-by-step. Remember our pl
 1. **Enabling the Markdown (Vditor) Plugin**:
    - Open the **Plugin Manager** in the upper right, search for "markdown" in the plugins, and enable the [**Markdown (Vditor)**](https://docs.nocobase.com/handbook/field-markdown-vditor). Don’t worry if the page briefly refreshes – it’ll be back in just a few seconds.
 
-![Enable Markdown Plugin](https://static-docs.nocobase.com/Solution/202411062323421730906622.png)
+![Enable Markdown Plugin](https://static-docs.nocobase.com/Solution/181734187638202414224712.png)
 
 2. **Creating a Markdown Field**:
    - Return to the task collection, click “Add Field,” and our Markdown Pro Plus is ready to go!
 
-![](https://static-docs.nocobase.com/Solution/202411062327441730906864.png)
+![](https://static-docs.nocobase.com/Solution/391734187779202414224912.png)
 
 - Give it a name, such as “Task Details (task_detail),” and enable all available features.
 
 3. You may notice an option for “File collection.” Wondering if not selecting it affects file functionality? No worries; files will be stored in our default storage, so go ahead and use it.
 
-![](https://static-docs.nocobase.com/Solution/202411062330401730907040.png)
+![](https://static-docs.nocobase.com/Solution/281734187948202414225212.png)
 
 4. **Testing the Markdown Field**:
    - Now, return to the task management page and start drafting your first Markdown text! Try pasting an image or uploading a file – it’s quite powerful, isn’t it?
 
-![](https://static-docs.nocobase.com/Solution/202411062335541730907354.png)
+![](https://static-docs.nocobase.com/Solution/551734188155202414225512.png)
 
 Your task collection is getting more feature-rich! With each step, your system’s capabilities expand. Next, let’s explore adjusting field arrangements for a cleaner interface.
 
@@ -73,7 +75,7 @@ As fields increase in the task collection, the page layout might appear cluttere
 
 - Hover over the cross icon in the upper right corner of the field, then click and drag it to your preferred position. Release to complete the adjustment. Isn’t the page instantly tidier?
 
-![Adjust Field Positions](https://static-docs.nocobase.com/Solution/demovv4-013.gif)
+![Adjust Field Positions](https://static-docs.nocobase.com/Solution/demoE3v1-16.gif)
 
 This makes the layout more aligned with your preferences. Now, let’s add a comment function to the task collection to make team collaboration even easier.
 
@@ -85,15 +87,15 @@ Having a task description is helpful, but sometimes team members need to add com
 
 #### 4.2.1.1 Installing the Comment Plugin
 
-> **Comments Plugin (Commercial Plugin)****：** Provides comment collection template and block to add commenting functionality for any collection.
+> **Comments Plugin (Commercial Plugin)：** Provides comment collection template and block to add commenting functionality for any collection.
 >
 > Note: When adding comments, be sure to link the target collection through a relationship field to prevent comment data conflicts.
 
 In the [**Plugin Manager**](https://docs.nocobase.com/handbook/plugin-manager), upload and enable the **Comments Plugin**. Once the plugin is enabled, a new “Comments Collection” option will appear in the data source. Click Add new (Add & update)> Upload Plugin > Drag in the zip file > Submit. After searching for comments, you’ll see the comment plugin! After enabling it, enter the data source and see the Comments Collection option – installation successful!
 
-![Install Comment Plugin](https://static-docs.nocobase.com/Solution/demovv4-014-one.gif)
+![Install Comment Plugin](https://static-docs.nocobase.com/Solution/demoE3v1-17.gif)
 
-![View Comment Plugin](https://static-docs.nocobase.com/Solution/demovv4-014-two.gif)
+![View Comment Plugin](https://static-docs.nocobase.com/Solution/demoE3v1-18.gif)
 
 #### 4.2.1.2 Creating a Comments Collection
 
@@ -107,7 +109,7 @@ Exactly! We’ll use a [**relationship field**](https://docs.nocobase.com/handbo
 
 NocoBase allows us to use relationship fields to establish links between collections at the data level, like building bridges that tightly connect related data.
 
-![](https://static-docs.nocobase.com/Solution/demovv4-015.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-19N.gif)
 
 **Why Choose a Many-to-One Relationship?**
 
@@ -166,15 +168,13 @@ When you reopen the task collection, you’ll see a comments field marked with a
 
 Now comes an exciting moment: return to the edit popup, create a **comment block**, and check the needed features. Done!
 
-![Enable Comments Table](https://static-docs.nocobase.com/Solution/demovv4-016.gif)
-
-![](https://static-docs.nocobase.com/Solution/demovv4-016-two.gif)
+![Enable Comments Collection](https://static-docs.nocobase.com/Solution/demoE3v1-20.gif)
 
 ### 4.3.2 Adjusting the Page
 
 Let’s style the page layout. Hover over the top-right of the edit button, choose a wider popup, and use what we’ve learned to drag the comment block to the right side of the popup. Perfect!
 
-![Adjust Page Layout](https://static-docs.nocobase.com/Solution/demovv4-017.gif)
+![Adjust Page Layout](https://static-docs.nocobase.com/Solution/demoE3v1-21.gif)
 
 Some of you may be wondering: “I want to set up comments too!” Don’t worry; I have another free option prepared for you.
 
@@ -185,11 +185,12 @@ If you haven’t purchased the comments plugin, we can still set up a similar co
 1. **Create a New Comments collection**:
 
    - Create a **Comments Collection (comments2)**, add a **Comment Content (content)** field (Markdown type), and an **Associated Task (belong_task)** field (many-to-one type).
-     ![](https://static-docs.nocobase.com/Solution/202411070034011730910841.png)
+     ![](https://static-docs.nocobase.com/Solution/431734190783202414233912.png)
 2. **Create a Comments List Block on the Page**:
 
    - In the edit popup for the task collection, add a [**List Block**](https://docs.nocobase.com/handbook/ui/blocks/data-blocks/list) (our third type of block, which can display field details), select comments, and test it:
-     ![Create Comments List Block](https://static-docs.nocobase.com/Solution/demovv4-018-two.gif)
+     ![Create Comments List Block](https://static-docs.nocobase.com/Solution/demoE3v1-22N%20-1.gif)
+     ![Create Comments List Block-2](https://static-docs.nocobase.com/Solution/demoE3v1-22N%20-2.gif)
 
 ## Summary
 
