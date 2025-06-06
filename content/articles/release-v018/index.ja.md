@@ -144,8 +144,8 @@ yarn e2e start-app
 
 ### 認証プラグインの最適化
 
-* 認証拡張の開発ガイド [https://docs.nocobase.com/plugins/auth/dev/guide](https://docs.nocobase.com/plugins/auth/dev/guide)
-* 破壊的変更に関する情報 [https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1](https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1)
+* 認証拡張の開発ガイド[https://docs.nocobase.com/handbook/auth/dev/guide](https://docs.nocobase.com/handbook/auth/dev/guide)
+* 破壊的変更に関する情報 [https://docs-cn.nocobase.com/handbook/auth/dev/api](https://docs-cn.nocobase.com/handbook/auth/dev/api)
 
 ### プラグインへのモジュール化分解
 
