@@ -8,7 +8,7 @@
 
 ### Application backup and restore
 
-* Plugin documentation: [https://docs.nocobase.com/plugins/backup-restore](https://docs.nocobase.com/plugins/backup-restore)
+* Plugin documentation: [https://docs.nocobase.com/handbook/backup-restore](https://docs.nocobase.com/handbook/backup-restore)
 
 ## Kernel optimizations
 
