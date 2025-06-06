@@ -74,7 +74,7 @@ const i18n = {
       <ul
       class="list-unstyled social-icon social d-flex flex-wrap justify-content-center gap-2 mb-3"
       >
-        {socialLinks.map(link => (
+        {socialLinks.map((link: any) => (
           <li class="position-relative">
             <a
               href={link.url}
@@ -227,7 +227,7 @@ const i18n = {
     </div>
     <div class="card-body">
       <ul class="list-unstyled mb-0">
-        {recentPosts.slice(0, 5).map((post) => (
+        {recentPosts.slice(0, 5).map((post: any) => (
           <li class="border-bottom pb-2 mb-2">
             <a href={`${basepath}/${post.slug}`} class="text-decoration-none">
               <h6 class="mb-1 text-truncate">{lang === 'cn' ? post.title_cn : (lang === 'ja' ? post.title_ja : post.title)}</h6>

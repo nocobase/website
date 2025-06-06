@@ -5,79 +5,106 @@ import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
 import sift from 'sift';
 
-// Content caches
-const articlesCache: Record<string, any> = {};
-const tutorialsCache: Record<string, any> = {};
-const releasesCache: Record<string, any> = {};
-const pagesCache: Record<string, any> = {};
+// Configuration
+const CONFIG = {
+  contentRoot: path.join(process.cwd(), 'content'),
+  cacheTimeout: 5 * 60 * 1000, // 5 minutes
+} as const;
 
-const contentRoot = path.join(process.cwd(), 'content');
+// Content caches with timestamps
+const caches = {
+  articles: new Map<string, { data: any; timestamp: number }>(),
+  tutorials: new Map<string, { data: any; timestamp: number }>(),
+  releases: new Map<string, { data: any; timestamp: number }>(),
+  pages: new Map<string, { data: any; timestamp: number }>(),
+  processor: null as any,
+  directoryCache: new Map<string, { files: string[]; timestamp: number }>(),
+};
 
-// Create a custom markdown processor to avoid circular dependency
+// Utility functions
+const isValidCacheEntry = (entry: { timestamp: number }) => 
+  Date.now() - entry.timestamp < CONFIG.cacheTimeout;
+
+// Create markdown processor with caching
 async function createMarkdownProcessor() {
-  return await coreCreateMarkdownProcessor({
-    shikiConfig: {
-      theme: 'github-light'
-    },
+  if (caches.processor) {
+    return caches.processor;
+  }
+  
+  caches.processor = await coreCreateMarkdownProcessor({
+    shikiConfig: { theme: 'github-light' },
     syntaxHighlight: 'shiki',
     remarkPlugins: [remarkDirective],
     rehypePlugins: [rehypeSlug]
   });
+  
+  return caches.processor;
 }
 
-// Create markdown processor
 const processor = await createMarkdownProcessor();
 
-// Read file content; if the file does not exist, return null
+// Safe file operations
 function readFileOrNull(filePath: string): string | null {
-  if (fs.existsSync(filePath)) {
-    return fs.readFileSync(filePath, 'utf-8');
-  }
-  return null;
-}
-
-// Read JSON file
-function readJsonFile(filePath: string): any {
   try {
-    if (fs.existsSync(filePath)) {
-      const content = fs.readFileSync(filePath, 'utf-8');
-      try {
-        const json = JSON.parse(content);
-        return json;
-      } catch (parseError) {
-        console.error(`Error parsing JSON file ${filePath}:`, parseError);
-        // 打印文件内容的前100个字符，帮助调试
-        console.error(`File content begins with: ${content.slice(0, 100)}...`);
-        return null;
-      }
-    }
-    return null;
+    return fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : null;
   } catch (error) {
     console.error(`Error reading file ${filePath}:`, error);
     return null;
   }
 }
 
-// List all subdirectories in a given directory
+function readJsonFile(filePath: string): any {
+  try {
+    const content = readFileOrNull(filePath);
+    if (!content) return null;
+    
+    return JSON.parse(content);
+  } catch (parseError) {
+    console.error(`Error parsing JSON file ${filePath}:`, parseError);
+    const content = readFileOrNull(filePath);
+    console.error(`File content begins with: ${content?.slice(0, 100) || 'null'}...`);
+    return null;
+  }
+}
+
+// List subdirectories with caching
 function listSubdirectories(dirPath: string): string[] {
+  const cacheEntry = caches.directoryCache.get(dirPath);
+  if (cacheEntry && isValidCacheEntry(cacheEntry)) {
+    return cacheEntry.files;
+  }
+
   if (!fs.existsSync(dirPath)) {
     return [];
   }
 
-  return fs.readdirSync(dirPath, { withFileTypes: true })
+  try {
+    const files = fs.readdirSync(dirPath, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);
+
+    caches.directoryCache.set(dirPath, {
+      files,
+      timestamp: Date.now()
+    });
+
+    return files;
+  } catch (error) {
+    console.error(`Error reading directory ${dirPath}:`, error);
+    return [];
+  }
 }
 
-// Extract metadata from Markdown frontmatter
+// Extract frontmatter metadata
 async function extractFrontmatter(content: string) {
-  // Simple frontmatter extraction
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n/;
   const match = content.match(frontmatterRegex);
   
-  if (match && match[1]) {
+  if (!match?.[1]) {
+    return { metadata: {}, content };
+  }
+
     try {
-      // Parse YAML formatted frontmatter
       const frontmatterStr = match[1];
       const lines = frontmatterStr.split('\n');
       const metadata: Record<string, any> = {};
@@ -88,12 +115,11 @@ async function extractFrontmatter(content: string) {
           const key = line.substring(0, colonIndex).trim();
           let value: any = line.substring(colonIndex + 1).trim();
           
-          // Attempt to parse array
+        // Parse arrays
           if (value.startsWith('[') && value.endsWith(']')) {
             try {
               value = JSON.parse(value);
             } catch (e) {
-              // Simple array parsing
               value = value.substring(1, value.length - 1)
                 .split(',')
                 .map((item: string) => item.trim())
@@ -111,617 +137,408 @@ async function extractFrontmatter(content: string) {
       };
     } catch (error) {
       console.error('Error parsing frontmatter:', error);
+    return { metadata: {}, content };
+  }
+}
+
+// Custom condition evaluator for unsupported sift operators
+function evaluateCondition(item: any, condition: any): boolean {
+  for (const [key, value] of Object.entries(condition)) {
+    if (key === '$and') {
+      return (value as any[]).every(subCondition => evaluateCondition(item, subCondition));
+    }
+    if (key === '$or') {
+      return (value as any[]).some(subCondition => evaluateCondition(item, subCondition));
+    }
+    
+    // Handle nested key paths like 'tags.title'
+    const keys = key.split('.');
+    let currentValue = item;
+    for (const k of keys) {
+      if (currentValue && typeof currentValue === 'object') {
+        currentValue = currentValue[k];
+      } else {
+        currentValue = undefined;
+        break;
+      }
+    }
+    
+    if (typeof value === 'object' && value !== null) {
+      for (const [op, expected] of Object.entries(value)) {
+        if (op === '$eq') {
+          if (currentValue !== expected) return false;
+        } else if (op === '$ne') {
+          if (currentValue === expected) return false;
+        } else if (op === '$notIncludes') {
+          // Handle $notIncludes for both arrays and nested objects
+          if (Array.isArray(currentValue)) {
+            // currentValue is array like tags: [{title: "News"}, {title: "Updates"}]
+            const hasMatch = currentValue.some(tag => 
+              typeof tag === 'object' && tag.title === expected
+            );
+            if (hasMatch) return false;
+          } else if (typeof currentValue === 'string') {
+                        // currentValue is string
+            if (currentValue.includes(expected as string)) return false;
+          }
+        } else if (op === '$in') {
+          const expectedArray = Array.isArray(expected) ? expected : [expected];
+          if (Array.isArray(currentValue)) {
+            const hasMatch = currentValue.some(val => expectedArray.includes(val));
+            if (!hasMatch) return false;
+          } else {
+            if (!expectedArray.includes(currentValue)) return false;
+          }
+        }
+      }
+    } else {
+      // Direct value comparison
+      if (currentValue !== value) return false;
     }
   }
-  
-  return { metadata: {}, content };
+  return true;
 }
 
-// Get article
+// Generic content loader with caching
+async function loadContent(
+  slug: string,
+  contentType: 'articles' | 'tutorials' | 'releases' | 'pages',
+  locale = 'en'
+) {
+  if (!slug) return {};
+
+  const cacheKey = `${slug}-${locale}`;
+  const cache = caches[contentType];
+  const cached = cache.get(cacheKey);
+  
+  if (cached && isValidCacheEntry(cached)) {
+    return cached.data;
+  }
+
+  const contentDir = path.join(CONFIG.contentRoot, contentType, slug);
+  if (!fs.existsSync(contentDir)) {
+    return {};
+  }
+
+  // Determine content file based on locale
+  const contentFiles = {
+    en: 'index.md',
+    cn: 'index.cn.md',
+    ja: 'index.ja.md',
+    ru: 'index.ru.md'
+  };
+
+  const contentFile = contentFiles[locale as keyof typeof contentFiles] || contentFiles.en;
+  const contentPath = path.join(contentDir, contentFile);
+  const fallbackContentPath = path.join(contentDir, 'index.md');
+  
+  // Read content
+  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
+  
+  // Read JSON metadata
+  const jsonMetadata = readJsonFile(path.join(contentDir, 'metadata.json')) || {};
+  
+  // Extract frontmatter
+  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
+  
+  // Merge metadata
+  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
+  
+  let result: any;
+  
+  if (contentType === 'pages') {
+    // Pages don't need headings
+    const { code } = await processor.render(cleanContent);
+    result = { 
+      ...metadata, 
+      html: code 
+    };
+  } else {
+    // Articles, tutorials, releases need headings
+  const { code, metadata: mdMetadata } = await processor.render(cleanContent);
+  const headings: any[] = mdMetadata.headings || [];
+    result = { 
+    data: metadata, 
+    headings, 
+    html: code 
+  };
+  }
+
+  // Cache the result
+  cache.set(cacheKey, { data: result, timestamp: Date.now() });
+  
+  return result;
+}
+
+// Public API functions using the generic loader
 export async function getArticle(slug?: string, locale = 'en') {
-  if (!slug) {
-    return {};
-  }
-
-  const cacheKey = `${slug}-${locale}`;
-  if (articlesCache[cacheKey]) {
-    return articlesCache[cacheKey];
-  }
-
-  const articleDir = path.join(contentRoot, 'articles', slug);
-  if (!fs.existsSync(articleDir)) {
-    return {};
-  }
-
-  // Read content file for the specified language
-  let contentFile = 'index.md';
-  if (locale === 'cn') {
-    contentFile = 'index.cn.md';
-  } else if (locale === 'ja') {
-    contentFile = 'index.ja.md';
-  } else if (locale === 'ru') {
-    contentFile = 'index.ru.md';
-  }
-
-  const contentPath = path.join(articleDir, contentFile);
-  const fallbackContentPath = path.join(articleDir, 'index.md');
-  
-  // Try to read Markdown content
-  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
-  
-  // Read JSON metadata as backup
-  const jsonMetadata = readJsonFile(path.join(articleDir, 'metadata.json')) || {};
-  
-  // Extract frontmatter metadata from Markdown
-  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
-  
-  // Merge metadata, prioritizing Markdown metadata over JSON
-  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
-  
-  // Process Markdown content
-  const { code, metadata: mdMetadata } = await processor.render(cleanContent);
-  const headings: any[] = mdMetadata.headings || [];
-
-  // Cache result
-  const result = { 
-    data: metadata, 
-    headings, 
-    html: code 
-  };
-  articlesCache[cacheKey] = result;
-  
-  return result;
+  return loadContent(slug || '', 'articles', locale);
 }
 
-// Get tutorial article
 export async function getTutorialArticle(slug?: string, locale = 'en') {
-  if (!slug) {
-    return {};
-  }
-
-  const cacheKey = `${slug}-${locale}`;
-  if (tutorialsCache[cacheKey]) {
-    return tutorialsCache[cacheKey];
-  }
-
-  const tutorialDir = path.join(contentRoot, 'tutorials', slug);
-  if (!fs.existsSync(tutorialDir)) {
-    return {};
-  }
-
-  // Read content file for the specified language
-  let contentFile = 'index.md';
-  if (locale === 'cn') {
-    contentFile = 'index.cn.md';
-  } else if (locale === 'ja') {
-    contentFile = 'index.ja.md';
-  } else if (locale === 'ru') {
-    contentFile = 'index.ru.md';
-  }
-
-  const contentPath = path.join(tutorialDir, contentFile);
-  const fallbackContentPath = path.join(tutorialDir, 'index.md');
-  
-  // Try to read Markdown content
-  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
-  
-  // Read JSON metadata as backup
-  const jsonMetadata = readJsonFile(path.join(tutorialDir, 'metadata.json')) || {};
-  
-  // Extract frontmatter metadata from Markdown
-  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
-  
-  // Merge metadata, prioritizing Markdown metadata over JSON
-  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
-  
-  // Process Markdown content
-  const { code, metadata: mdMetadata } = await processor.render(cleanContent);
-  const headings: any[] = mdMetadata.headings || [];
-
-  // Cache result
-  const result = { 
-    data: metadata, 
-    headings, 
-    html: code 
-  };
-  tutorialsCache[cacheKey] = result;
-  
-  return result;
+  return loadContent(slug || '', 'tutorials', locale);
 }
 
-// Get release
 export async function getRelease(slug?: string, locale = 'en') {
-  if (!slug) {
-    return {};
-  }
-
-  const cacheKey = `${slug}-${locale}`;
-  if (releasesCache[cacheKey]) {
-    return releasesCache[cacheKey];
-  }
-
-  const releaseDir = path.join(contentRoot, 'releases', slug);
-  if (!fs.existsSync(releaseDir)) {
-    return {};
-  }
-
-  // Read content file for the specified language
-  let contentFile = 'index.md';
-  if (locale === 'cn') {
-    contentFile = 'index.cn.md';
-  } else if (locale === 'ja') {
-    contentFile = 'index.ja.md';
-  } else if (locale === 'ru') {
-    contentFile = 'index.ru.md';
-  }
-
-  const contentPath = path.join(releaseDir, contentFile);
-  const fallbackContentPath = path.join(releaseDir, 'index.md');
-  
-  // Try to read Markdown content
-  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
-  
-  // Read JSON metadata as backup
-  const jsonMetadata = readJsonFile(path.join(releaseDir, 'metadata.json')) || {};
-  
-  // Extract frontmatter metadata from Markdown
-  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
-  
-  // Merge metadata, prioritizing Markdown metadata over JSON
-  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
-  
-  // Process Markdown content
-  const { code, metadata: mdMetadata } = await processor.render(cleanContent);
-  const headings: any[] = mdMetadata.headings || [];
-
-  // Cache result
-  const result = { 
-    data: metadata, 
-    headings, 
-    html: code 
-  };
-  releasesCache[cacheKey] = result;
-  
-  return result;
+  return loadContent(slug || '', 'releases', locale);
 }
 
-// Get page
 export async function getPage(slug?: string, locale = 'en') {
-  if (!slug) {
-    return {};
-  }
-
-  const cacheKey = `${slug}-${locale}`;
-  if (pagesCache[cacheKey]) {
-    return pagesCache[cacheKey];
-  }
-
-  const pageDir = path.join(contentRoot, 'pages', slug);
-  if (!fs.existsSync(pageDir)) {
-    return {};
-  }
-
-  // Read content file for the specified language
-  let contentFile = 'index.md';
-  if (locale === 'cn') {
-    contentFile = 'index.cn.md';
-  } else if (locale === 'ja') {
-    contentFile = 'index.ja.md';
-  } else if (locale === 'ru') {
-    contentFile = 'index.ru.md';
-  }
-
-  const contentPath = path.join(pageDir, contentFile);
-  const fallbackContentPath = path.join(pageDir, 'index.md');
-  
-  // Try to read Markdown content
-  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
-  
-  // Read JSON metadata as backup
-  const jsonMetadata = readJsonFile(path.join(pageDir, 'metadata.json')) || {};
-  
-  // Extract frontmatter metadata from Markdown
-  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
-  
-  // Merge metadata, prioritizing Markdown metadata over JSON
-  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
-  
-  // Process Markdown content
-  const { code } = await processor.render(cleanContent);
-
-  // Create a complete result object with all expected page properties
-  const result = { 
-    ...metadata, 
-    id: metadata.id,
-    title: metadata.title,
-    title_cn: metadata.title_cn,
-    title_ja: metadata.title_ja,
-    title_ru: metadata.title_ru,
-    description: metadata.description,
-    description_cn: metadata.description_cn,
-    description_ja: metadata.description_ja,
-    description_ru: metadata.description_ru,
-    keywords: metadata.keywords,
-    keywords_cn: metadata.keywords_cn,
-    keywords_ja: metadata.keywords_ja,
-    keywords_ru: metadata.keywords_ru,
-    slug: metadata.slug,
-    createdAt: metadata.createdAt,
-    updatedAt: metadata.updatedAt,
-    createdById: metadata.createdById,
-    updatedById: metadata.updatedById,
-    content: locale === 'en' ? content : null,
-    content_cn: locale === 'cn' ? content : null,
-    content_ja: locale === 'ja' ? content : null,
-    content_ru: locale === 'ru' ? content : null,
-    html: code 
-  };
-  
-  pagesCache[cacheKey] = result;
-  
-  return result;
+  return loadContent(slug || '', 'pages', locale);
 }
 
-// List articles
-export async function listArticles(options?: { 
-  hideOnBlog?: boolean, 
-  pageSize?: number, 
-  categorySlug?: string; 
-  tagSlug?: string; 
-  page?: number;
-  filter?: Record<string, any>;
-  sort?: string[];
-  appends?: string[];
-}) {
-  
+// Generic list function with filtering and pagination
+async function listContentItems(
+  contentType: 'articles' | 'tutorials' | 'releases',
+  options: any = {}
+) {
   const { 
-    hideOnBlog, 
-    categorySlug, 
-    tagSlug, 
     page = 1, 
     pageSize = 9,
     sort = ['-publishedAt'],
-    filter = {}
-  } = options || {};
+    filter = {},
+    hideOnBlog,
+    categorySlug,
+    tagSlug,
+    slug,
+    serialsSlug,
+    customFilter
+  } = options;
 
-  // Get all articles directories
-  const articlesDir = path.join(contentRoot, 'articles');
-  if (!fs.existsSync(articlesDir)) {
-    console.error(`Articles directory does not exist: ${articlesDir}`);
-    return { data: [], meta: { total: 0, count: 0, pageSize, currentPage: page, totalPages: 0, totalPage: 0 } };
+  // Get content directory
+  const contentDir = path.join(CONFIG.contentRoot, contentType);
+  if (!fs.existsSync(contentDir)) {
+    console.error(`Content directory does not exist: ${contentDir}`);
+    return { data: [], meta: { total: 0, count: 0, pageSize, currentPage: page, totalPages: 0 } };
   }
   
-  const articleSlugs = listSubdirectories(articlesDir);
-  console.log(`Found ${articleSlugs.length} article directories`);
+  const slugs = listSubdirectories(contentDir);
+  console.log(`Found ${slugs.length} ${contentType} directories`);
   
-  // Read all articles metadata
-  const articles = [];
+  // Read all items metadata
+  const items = [];
   
-  for (const slug of articleSlugs) {
+  for (const itemSlug of slugs) {
     try {
-      const metadataPath = path.join(articlesDir, slug, 'metadata.json');
-      if (!fs.existsSync(metadataPath)) {
-        console.log(`Metadata file not found for article: ${slug}`);
-        continue;
-      }
-      
+      const metadataPath = path.join(contentDir, itemSlug, 'metadata.json');
       const metadata = readJsonFile(metadataPath);
-      if (!metadata) {
-        console.log(`Failed to read metadata for article: ${slug}`);
-        continue;
-      }
-      // Ensure necessary fields exist
-      if (!metadata.title) {
-        console.log(`Article missing title: ${slug}`);
+      
+      if (!metadata?.title) {
+        console.log(`${contentType} missing title: ${itemSlug}`);
         continue;
       }
       
-      // Read content in different languages
-      const contentPath = path.join(articlesDir, slug, 'index.md');
-      const contentCnPath = path.join(articlesDir, slug, 'index.cn.md');
-      const contentJaPath = path.join(articlesDir, slug, 'index.ja.md');
-      const contentRuPath = path.join(articlesDir, slug, 'index.ru.md');
-      
-      // Read content and add to metadata
+      // Read content in different languages for articles
+      if (contentType === 'articles') {
+        const languages = ['', '.cn', '.ja', '.ru'];
+        languages.forEach(lang => {
+          const suffix = lang || '';
+          const contentPath = path.join(contentDir, itemSlug, `index${suffix}.md`);
+          const field = lang ? `content${lang}` : 'content';
+          
       if (fs.existsSync(contentPath)) {
-        metadata.content = fs.readFileSync(contentPath, 'utf-8');
-      }
-      if (fs.existsSync(contentCnPath)) {
-        metadata.content_cn = fs.readFileSync(contentCnPath, 'utf-8');
-      }
-      if (fs.existsSync(contentJaPath)) {
-        metadata.content_ja = fs.readFileSync(contentJaPath, 'utf-8');
-      }
-      if (fs.existsSync(contentRuPath)) {
-        metadata.content_ru = fs.readFileSync(contentRuPath, 'utf-8');
-      }
-      
-      // Use default content if specific language content is not found
-      if (!metadata.content_cn && metadata.content) {
-        metadata.content_cn = metadata.content;
-      }
-      if (!metadata.content_ja && metadata.content) {
-        metadata.content_ja = metadata.content;
-      }
-      if (!metadata.content_ru && metadata.content) {
-        metadata.content_ru = metadata.content;
+            metadata[field] = fs.readFileSync(contentPath, 'utf-8');
+          }
+        });
+        
+        // Fallback to default content
+        ['content_cn', 'content_ja', 'content_ru'].forEach(field => {
+          if (!metadata[field] && metadata.content) {
+            metadata[field] = metadata.content;
+          }
+        });
       }
       
-      // Ensure tags field is always an array
-      if (!metadata.tags) {
-        metadata.tags = [];
-      } else if (!Array.isArray(metadata.tags)) {
+      // Ensure tags is always an array
+      if (!Array.isArray(metadata.tags)) {
         metadata.tags = [];
       }
       
-      // Add to articles list
-      articles.push(metadata);
+      items.push(metadata);
     } catch (error) {
-      console.error(`Error processing article ${slug}:`, error);
+      console.error(`Error processing ${contentType} ${itemSlug}:`, error);
     }
   }
 
-  // Build comprehensive filter conditions using MongoDB syntax
+  // Build filter conditions
   const filterConditions: any[] = [
-    { status: { $eq: 'published' } },
-    { hideOnListPage: { $ne: true } }
+    { status: { $eq: 'published' } }
   ];
 
-  // Handle hideOnBlog parameter
+  // Content-specific filters
+  if (contentType === 'articles') {
+    filterConditions.push({ hideOnListPage: { $ne: true } });
+    
   if (hideOnBlog === false) {
     filterConditions.push({ hideOnBlog: { $ne: true } });
   }
-
-  // Handle tag filtering
   if (tagSlug) {
     filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
   }
-
-  // Handle category filtering
   if (categorySlug) {
     filterConditions.push({ 'category.slug': { $eq: categorySlug } });
-  }
-
-  // Merge custom filter if provided
-  if (filter && Object.keys(filter).length > 0) {
-    if (filter.$and) {
-      filterConditions.push(...filter.$and);
-    } else {
-      filterConditions.push(filter);
     }
   }
 
-  // Apply all filters using sift.js
-  let filteredArticles = articles;
+  if (contentType === 'tutorials') {
+    if (slug) {
+      filterConditions.push({ slug: { $eq: slug } });
+    }
+    if (serialsSlug) {
+      filterConditions.push({ 
+        'serials.slug': { $eq: serialsSlug },
+        'serials.status': { $eq: 'published' }
+      });
+    }
+  }
+
+  if (contentType === 'releases' && tagSlug) {
+    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
+  }
+
+  // Merge custom filters
+  if (filter && Object.keys(filter).length > 0) {
+    filterConditions.push(...(filter.$and || [filter]));
+    }
+  if (customFilter) {
+    filterConditions.push(...(customFilter.$and || [customFilter]));
+  }
+
+  // Apply filters
+  let filteredItems = items;
   if (filterConditions.length > 0) {
     const combinedFilter = { $and: filterConditions };
+    
+    // Check if we have unsupported operators like $notIncludes
+    const filterStr = JSON.stringify(combinedFilter);
+    const hasUnsupportedOps = filterStr.includes('$notIncludes');
+    
+    if (hasUnsupportedOps) {
+      // Handle unsupported operators manually
+      filteredItems = items.filter(item => {
+        const result = filterConditions.every(condition => {
+          return evaluateCondition(item, condition);
+        });
+        return result;
+      });
+      console.log(`After custom filtering: ${filteredItems.length} ${contentType}`);
+    } else {
     try {
       const siftFilter = sift(combinedFilter);
-      filteredArticles = articles.filter(siftFilter);
-      console.log(`After combined filtering: ${filteredArticles.length} articles`);
+        filteredItems = items.filter(siftFilter);
+        console.log(`After sift filtering: ${filteredItems.length} ${contentType}`);
     } catch (error) {
-      console.error('Error applying combined filter:', error);
-      console.log('Filter object:', combinedFilter);
-      // Fallback to basic published filter only
-      filteredArticles = articles.filter(article => article.status === 'published');
+        console.error(`Error applying ${contentType} filter:`, error);
+        filteredItems = items.filter(item => item.status === 'published');
+      }
     }
   }
 
-  // Sorting
-  filteredArticles.sort((a, b) => {
-    for (const sortField of sort) {
-      const desc = sortField.startsWith('-');
-      const field = desc ? sortField.substring(1) : sortField;
-      
-      if (!a[field] && !b[field]) continue;
-      if (!a[field]) return desc ? -1 : 1;
-      if (!b[field]) return desc ? 1 : -1;
-      
-      if (a[field] < b[field]) return desc ? 1 : -1;
-      if (a[field] > b[field]) return desc ? -1 : 1;
-    }
-    return 0;
-  });
-
-  // Pagination
-  const startIndex = (page - 1) * pageSize;
-  const paginatedArticles = filteredArticles.slice(startIndex, startIndex + pageSize);
-
-  return {
-    data: paginatedArticles,
-    meta: {
-      total: filteredArticles.length,
-      count: filteredArticles.length,
-      pageSize,
-      currentPage: page,
-      totalPages: Math.ceil(filteredArticles.length / pageSize),
-      totalPage: Math.ceil(filteredArticles.length / pageSize)
-    }
-  };
-}
-
-// List tutorial articles
-export async function listTutorialArticles(options?: { 
-  pageSize?: number, 
-  slug?: string; 
-  serialsSlug?: string; 
-  page?: number; 
-}) {
-  const { 
-    slug, 
-    serialsSlug, 
-    page = 1, 
-    pageSize = 9 
-  } = options || {};
-
-  // Get all tutorials directories
-  const tutorialsDir = path.join(contentRoot, 'tutorials');
-  const tutorialSlugs = listSubdirectories(tutorialsDir);
+  // Sort items
+  const sortField = sort[0]?.startsWith('-') ? sort[0].substring(1) : sort[0];
+  const isDesc = sort[0]?.startsWith('-');
   
-  // Read all tutorials metadata
-  let tutorials = tutorialSlugs.map(slug => {
-    const metadataPath = path.join(tutorialsDir, slug, 'metadata.json');
-    return readJsonFile(metadataPath) || null;
-  }).filter(Boolean);
-
-  // Build filter conditions using MongoDB syntax
-  const filterConditions: any[] = [
-    { status: { $eq: 'published' } }
-  ];
-
-  if (slug) {
-    filterConditions.push({ slug: { $eq: slug } });
-  }
-
-  if (serialsSlug) {
-    filterConditions.push({ 
-      'serials.slug': { $eq: serialsSlug },
-      'serials.status': { $eq: 'published' }
+  if (contentType === 'tutorials' && sortField === 'serialsSort') {
+    filteredItems.sort((a, b) => (a.serialsSort || 0) - (b.serialsSort || 0));
+  } else {
+    filteredItems.sort((a, b) => {
+      if (!a[sortField] && !b[sortField]) return 0;
+      if (!a[sortField]) return isDesc ? -1 : 1;
+      if (!b[sortField]) return isDesc ? 1 : -1;
+      
+      const aDate = new Date(a[sortField]).getTime();
+      const bDate = new Date(b[sortField]).getTime();
+      
+      return isDesc ? bDate - aDate : aDate - bDate;
     });
   }
 
-  // Apply filters using sift.js
-  if (filterConditions.length > 0) {
-    const filter = { $and: filterConditions };
-    try {
-      const siftFilter = sift(filter);
-      tutorials = tutorials.filter(siftFilter);
-      console.log(`After tutorial filtering: ${tutorials.length} tutorials`);
-    } catch (error) {
-      console.error('Error applying tutorial filter:', error);
-    }
-  }
-
-  // Sort by serialsSort
-  tutorials.sort((a, b) => (a.serialsSort || 0) - (b.serialsSort || 0));
-
   // Pagination
   const startIndex = (page - 1) * pageSize;
-  const paginatedTutorials = tutorials.slice(startIndex, startIndex + pageSize);
+  const paginatedItems = filteredItems.slice(startIndex, startIndex + pageSize);
 
   return {
-    data: paginatedTutorials,
+    data: paginatedItems,
     meta: {
-      total: tutorials.length,
+      total: filteredItems.length,
+      count: filteredItems.length,
       pageSize,
       currentPage: page,
-      totalPages: Math.ceil(tutorials.length / pageSize)
+      totalPages: Math.ceil(filteredItems.length / pageSize),
+      totalPage: Math.ceil(filteredItems.length / pageSize)
     }
   };
 }
 
-// List releases
+// Export list functions
+export async function listArticles(options?: any) {
+  return listContentItems('articles', options);
+}
+
+export async function listTutorialArticles(options?: any) {
+  return listContentItems('tutorials', options);
+}
+
 export async function listReleases(options?: any) {
-  const { 
-    page = 1, 
-    pageSize = 20,
-    tagSlug,
-    filter: customFilter
-  } = options || {};
-
-  // Get all releases directories
-  const releasesDir = path.join(contentRoot, 'releases');
-  const releaseSlugs = listSubdirectories(releasesDir);
-  
-  // Read all releases metadata
-  let releases = releaseSlugs.map(slug => {
-    const metadataPath = path.join(releasesDir, slug, 'metadata.json');
-    return readJsonFile(metadataPath) || null;
-  }).filter(Boolean);
-
-  // Build filter conditions using MongoDB syntax
-  const filterConditions: any[] = [
-    { status: { $eq: 'published' } }
-  ];
-
-  if (tagSlug) {
-    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
-  }
-
-  // Merge custom filter if provided
-  if (customFilter) {
-    if (customFilter.$and) {
-      filterConditions.push(...customFilter.$and);
-    } else {
-      filterConditions.push(customFilter);
-    }
-  }
-
-  // Apply filters using sift.js
-  if (filterConditions.length > 0) {
-    const filter = { $and: filterConditions };
-    console.log('Applying release filter:', JSON.stringify(filter, null, 2));
-    try {
-      const siftFilter = sift(filter);
-      releases = releases.filter(siftFilter);
-      console.log(`After release filtering: ${releases.length} releases`);
-    } catch (error) {
-      console.error('Error applying release filter:', error);
-    }
-  }
-
-  // Sort by published date descending
-  releases.sort((a, b) => 
-    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
-
-  // Pagination
-  const startIndex = (page - 1) * pageSize;
-  const paginatedReleases = releases.slice(startIndex, startIndex + pageSize);
-
-  return {
-    data: paginatedReleases,
-    meta: {
-      total: releases.length,
-      pageSize,
-      currentPage: page,
-      totalPages: Math.ceil(releases.length / pageSize)
-    }
-  };
+  return listContentItems('releases', options);
 }
 
-// Read article categories
+// Category and tag functions with caching
+const categoryTagCache = new Map<string, { data: any; timestamp: number }>();
+
+async function getCategoryOrTag(type: 'categories' | 'tags', slug?: string, subPath?: string) {
+  if (!slug) return {};
+
+  const cacheKey = `${type}-${slug}-${subPath || ''}`;
+  const cached = categoryTagCache.get(cacheKey);
+  if (cached && isValidCacheEntry(cached)) {
+    return cached.data;
+  }
+
+  let result = {};
+  
+  // Try individual file first
+  const itemFile = path.join(CONFIG.contentRoot, type, subPath || '', slug, 
+    type === 'categories' ? 'category.json' : 'tag.json');
+  
+  if (fs.existsSync(itemFile)) {
+    result = readJsonFile(itemFile) || {};
+    } else {
+    // Try from collection file
+    const collectionFile = path.join(CONFIG.contentRoot, type, 
+      subPath ? `${subPath}.json` : `article-${type}.json`);
+    
+    if (fs.existsSync(collectionFile)) {
+      const collection = readJsonFile(collectionFile) || [];
+      const item = collection.find((item: any) => item.slug === slug);
+      result = item || {};
+    }
+  }
+
+  categoryTagCache.set(cacheKey, { data: result, timestamp: Date.now() });
+  return result;
+}
+
 export async function listArticleCategories() {
-  const categoriesPath = path.join(contentRoot, 'categories', 'article-categories.json');
+  const categoriesPath = path.join(CONFIG.contentRoot, 'categories', 'article-categories.json');
   return readJsonFile(categoriesPath) || [];
 }
 
-// Get article category by slug
 export async function getArticleCategory(slug?: string) {
-  if (!slug) {
-    return {};
-  }
-
-  const categoryFile = path.join(contentRoot, 'categories', slug, 'category.json');
-  if (!fs.existsSync(categoryFile)) {
-    // Attempt to find from the complete list of categories
-    const allCategoriesFile = path.join(contentRoot, 'categories', 'article-categories.json');
-    if (fs.existsSync(allCategoriesFile)) {
-      const allCategories = readJsonFile(allCategoriesFile) || [];
-      const category = allCategories.find((c: any) => c.slug === slug);
-      return category || {};
-    }
-    return {};
-  }
-
-  return readJsonFile(categoryFile) || {};
+  return getCategoryOrTag('categories', slug);
 }
 
-// Read article tags
 export async function listArticleTags(options?: any) {
-  const tagsPath = path.join(contentRoot, 'tags', 'article-tags.json');
+  const tagsPath = path.join(CONFIG.contentRoot, 'tags', 'article-tags.json');
   const tags = readJsonFile(tagsPath) || [];
   
-  // Process filter conditions using sift.js
   const { filter } = options || {};
   if (filter && Object.keys(filter).length > 0) {
-    console.log('Applying tag filter:', JSON.stringify(filter, null, 2));
     try {
       const siftFilter = sift(filter);
       return tags.filter(siftFilter);
     } catch (error) {
       console.error('Error applying tag filter:', error);
-      console.log('Filter object:', filter);
       return tags;
     }
   }
@@ -729,56 +546,17 @@ export async function listArticleTags(options?: any) {
   return tags;
 }
 
-// Get article tag by slug
 export async function getArticleTag(slug?: string) {
-  if (!slug) {
-    return {};
-  }
-
-  const tagFile = path.join(contentRoot, 'tags', slug, 'tag.json');
-  if (!fs.existsSync(tagFile)) {
-    // Attempt to find from the complete list of tags
-    const allTagsFile = path.join(contentRoot, 'tags', 'article-tags.json');
-    if (fs.existsSync(allTagsFile)) {
-      const allTags = readJsonFile(allTagsFile) || [];
-      const tag = allTags.find((t: any) => t.slug === slug);
-      return tag || {};
-    }
-    return {};
-  }
-
-  return readJsonFile(tagFile) || {};
+  return getCategoryOrTag('tags', slug);
 }
 
-// Get release tag by slug
 export async function getReleaseTag(slug?: string) {
-  if (!slug) {
-    return {};
-  }
-
-  const tagFile = path.join(contentRoot, 'tags', 'release-tags', slug, 'tag.json');
-  if (!fs.existsSync(tagFile)) {
-    // Attempt to find from the complete list of release tags
-    const allTagsFile = path.join(contentRoot, 'tags', 'release-tags.json');
-    if (fs.existsSync(allTagsFile)) {
-      const allTags = readJsonFile(allTagsFile) || [];
-      const tag = allTags.find((t: any) => t.slug === slug);
-      return tag || {};
-    }
-    return {};
-  }
-
-  return readJsonFile(tagFile) || {};
+  return getCategoryOrTag('tags', slug, 'release-tags');
 }
 
-// Get help center items
 export async function listHelpCenterItems(options?: { pageSize?: number, page?: number, tree?: boolean }) {
-  const { tree = true } = options || {};
-  
-  const helpCenterPath = path.join(contentRoot, 'help-center', 'help-center-tree.json');
+  const helpCenterPath = path.join(CONFIG.contentRoot, 'help-center', 'help-center-tree.json');
   const items = readJsonFile(helpCenterPath) || [];
-  
-  // If a tree structure is not needed, you can flatten the structure here
   
   return {
     data: items,
@@ -788,76 +566,62 @@ export async function listHelpCenterItems(options?: { pageSize?: number, page?: 
   };
 }
 
-// Get RSS items
+// RSS and sitemap generation
 export async function getRssItems(locale = '*') {
-  // Retrieve all articles data
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
+  const locales = locale === '*' ? ['en', 'cn', 'ja', 'ru'] : [locale];
+
   for (const post of data) {
-    const { code: content } = await processor.render(post.content || '');
-    const { code: content_cn } = await processor.render(post.content_cn || '');
-    const { code: content_ja } = await processor.render(post.content_ja || '');
-    const { code: content_ru } = await processor.render(post.content_ru || '');
+    for (const currentLocale of locales) {
+      const contentField = currentLocale === 'en' ? 'content' : `content_${currentLocale}`;
+      const titleField = currentLocale === 'en' ? 'title' : `title_${currentLocale}`;
+      const descField = currentLocale === 'en' ? 'description' : `description_${currentLocale}`;
+      
+      const content = post[contentField] || post.content || '';
+      const title = post[titleField] || post.title;
+      const description = post[descField] || post.description;
+      
+      const { code } = await processor.render(content);
+      
+      const localeMap: Record<string, string> = {
+        en: 'en-US',
+        cn: 'zh-CN', 
+        ja: 'ja-JP',
+        ru: 'ru-RU'
+      };
 
-    if (locale === 'en' || locale === '*' || locale === 'ja') {
       items.push({
-        title: post.title,
-        description: post.description,
-        content: locale === 'ja' && post.content_ja ? content_ja : content,
-        link: `/${locale === 'ja' ? 'ja' : 'en'}/blog/${post.slug}`,
+        title,
+        description,
+        content: code,
+        link: `/${currentLocale}/blog/${post.slug}`,
         pubDate: post.publishedAt,
-        customData: `<language>${locale === 'ja' ? 'ja-JP' : 'en-US'}</language>`,
-        author: post.author,
-      });
-    }
-
-    if (locale === 'cn' || locale === '*') {
-      items.push({
-        title: post.title_cn || post.title,
-        description: post.title_cn || post.title,
-        content: content_cn || content,
-        link: `/cn/blog/${post.slug}`,
-        pubDate: post.publishedAt,
-        customData: `<language>zh-CN</language>`,
-        author: post.author,
-      });
-    }
-
-    if (locale === 'ja' || locale === '*') {
-      items.push({
-        title: post.title_ja || post.title,
-        description: post.description_ja || post.description,
-        content: content_ja || content,
-        link: `/ja/blog/${post.slug}`,
-        pubDate: post.publishedAt,
-        customData: `<language>ja-JP</language>`,
-        author: post.author,
-      });
-    }
-    if (locale === 'ru' || locale === '*') {
-      items.push({
-        title: post.title_ru || post.title,
-        description: post.description_ru || post.description,
-        content: content_ru || content,
-        link: `/ru/blog/${post.slug}`,
-        pubDate: post.publishedAt,
-        customData: `<language>ru-RU</language>`,
+        customData: `<language>${localeMap[currentLocale]}</language>`,
         author: post.author,
       });
     }
   }
+  
   return items;
 }
 
-// Get sitemap links
 export async function getSitemapLinks() {
-  // This function is relatively complex and may require reading from multiple data sources; simplified implementation
-  const tags = await listArticleTags();
-  const articles = (await listArticles({ pageSize: 5000 })).data;
-  const tutorials = (await listTutorialArticles({ pageSize: 5000 })).data;
+  const [tags, articles, tutorials] = await Promise.all([
+    listArticleTags(),
+    listArticles({ pageSize: 5000 }),
+    listTutorialArticles({ pageSize: 5000 })
+  ]);
   
-  // Base links
+  const generateLanguageLinks = (path: string) => [
+    { lang: 'en-US', url: `/en${path}` },
+    { lang: 'zh-CN', url: `/cn${path}` },
+    { lang: 'ja-JP', url: `/ja${path}` },
+    { lang: 'ru-RU', url: `/ru${path}` },
+    { lang: 'x-default', url: `/en${path}` },
+  ];
+  
   const baseLinks = [
     {
       url: '/',
@@ -869,46 +633,24 @@ export async function getSitemapLinks() {
         { lang: 'x-default', url: `/` },
       ],
     },
-    // Additional base links can be added as needed
   ];
   
-  // Tag links
   const tagLinks = tags.map((tag: any) => ({
     url: `/en/blog/tags/${tag.slug}`,
     lastmod: tag.updatedAt,
-    links: [
-      { lang: 'en-US', url: `/en/blog/tags/${tag.slug}` },
-      { lang: 'zh-CN', url: `/cn/blog/tags/${tag.slug}` },
-      { lang: 'ja-JP', url: `/ja/blog/tags/${tag.slug}` },
-      { lang: 'ru-RU', url: `/ru/blog/tags/${tag.slug}` },
-      { lang: 'x-default', url: `/en/blog/tags/${tag.slug}` },
-    ],
+    links: generateLanguageLinks(`/blog/tags/${tag.slug}`),
   }));
   
-  // Article links
-  const articleLinks = articles.map((article: any) => ({
+  const articleLinks = articles.data.map((article: any) => ({
     url: `/en/blog/${article.slug}`,
     lastmod: article.updatedAt,
-    links: [
-      { lang: 'en-US', url: `/en/blog/${article.slug}` },
-      { lang: 'zh-CN', url: `/cn/blog/${article.slug}` },
-      { lang: 'ja-JP', url: `/ja/blog/${article.slug}` },
-      { lang: 'ru-RU', url: `/ru/blog/${article.slug}` },
-      { lang: 'x-default', url: `/en/blog/${article.slug}` },
-    ],
+    links: generateLanguageLinks(`/blog/${article.slug}`),
   }));
   
-  // Tutorial links
-  const tutorialLinks = tutorials.map((tutorial: any) => ({
+  const tutorialLinks = tutorials.data.map((tutorial: any) => ({
     url: `/en/tutorials/${tutorial.slug}`,
     lastmod: tutorial.updatedAt,
-    links: [
-      { lang: 'en-US', url: `/en/tutorials/${tutorial.slug}` },
-      { lang: 'zh-CN', url: `/cn/tutorials/${tutorial.slug}` },
-      { lang: 'ja-JP', url: `/ja/tutorials/${tutorial.slug}` },
-      { lang: 'ru-RU', url: `/ru/tutorials/${tutorial.slug}` },
-      { lang: 'x-default', url: `/en/tutorials/${tutorial.slug}` },
-    ],
+    links: generateLanguageLinks(`/tutorials/${tutorial.slug}`),
   }));
   
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
