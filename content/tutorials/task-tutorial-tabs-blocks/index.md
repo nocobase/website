@@ -1,3 +1,6 @@
+<iframe width="800" height="450" src="https://www.youtube.com/embed/gQl894E6KqU?si=0vmiA8Iq8PWSl8WO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 Hello, everyone! Welcome to Chapter 5! This chapter is packed with exciting content as we expand functionality in the task management page, enabling various viewing options. I bet you’ve been looking forward to this, right? No worries — I’ll guide you step-by-step, and as always, we’ll breeze through it together!
 
 ### 5.1 Tab Containers for Organizing Blocks
@@ -14,7 +17,7 @@ We’ve already set up a task management page, but to make the system even more 
 
    - Next, add a second tab, naming it **“Kanban View”**. Here, we’ll create a Kanban block to manage tasks.
 
-   ![Creating a Tab](https://static-docs.nocobase.com/Solution/demov3N-19N.gif)
+   ![Creating New Tab](https://static-docs.nocobase.com/Solution/demoE3v1-23.gif)
 
 Ready? Let’s dive into creating each block type!
 
@@ -37,13 +40,13 @@ Ready? Let’s dive into creating each block type!
    - Within the Kanban view, cards can be organized by a sorting field. To set this up, create a new sorting field named **Status Sort (status_sort)**.
    - This field allows cards to be arranged vertically within each status group. Later, when we drag and drop cards, the sorting values will be updated automatically and can be reviewed in the form.
 
-   ![Creating a Kanban Block](https://static-docs.nocobase.com/Solution/demov3N-20.gif)
+   ![Creating a Kanban Block](https://static-docs.nocobase.com/Solution/demoE3v1-24.gif)
 
 #### 5.2.2 Selecting Fields and Configuring Operations
 
 - Lastly, be sure to select fields in the Kanban block, like task name and task status, to ensure that each card contains complete, relevant information.
 
-![Kanban Field Display](https://static-docs.nocobase.com/Solution/demov3N-21.gif)
+![Kanban Field Display](https://static-docs.nocobase.com/Solution/demoE3v1-25.gif)
 
 ### 5.3 Using Templates: Copying and Referencing
 
@@ -53,7 +56,7 @@ After creating the Kanban block, we’ll need to set up an **Add Form**. Here, N
 
 - In your existing Add Form, hover over the form settings and select “Save as Template.” You might name this template “Task Form_Add.”
 
-![Saving Form as Template](https://static-docs.nocobase.com/Solution/demov3N-22.gif)
+![Saving Form as Template](https://static-docs.nocobase.com/Solution/demoE3v1-26.gif)
 
 #### 5.3.2 **Copying or Referencing a Template**
 
@@ -62,7 +65,7 @@ When creating a form in the Kanban view, you’ll see two options: “**Copy Tem
 - [**Copy Template**](https://docs.nocobase.com/handbook/ui/blocks/block-templates#%E5%A4%8D%E5%88%B6%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB): This creates a duplicate of the form, allowing you to make independent changes without affecting the original form.
 - [**Reference Template**](https://docs.nocobase.com/handbook/ui/blocks/block-templates#%E5%A4%8D%E5%88%B6%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB): This “borrows” the original form, so any changes made to it will automatically update all other forms that reference it.
 
-![Copy and Reference Template](https://static-docs.nocobase.com/Solution/demov3N-23.gif)
+![Copy and Reference Template](https://static-docs.nocobase.com/Solution/demoE3v1-27.gif)
 
 ---
 
@@ -79,21 +82,21 @@ To use the calendar view, the task collection needs **Start Date** and **End Dat
 - **Start Date (start_date)**: Marks the start date of the task.
 - **End Date (end_date)**: Marks the task’s end date.
 
-![Add Date Fields](https://static-docs.nocobase.com/Solution/202410262038241729946304.png)
+![Add Date Fields](https://static-docs.nocobase.com/Solution/391734209379202415044912.png)
 
 #### 5.4.2 Creating the Calendar Block
 
 In the Calendar View, create a calendar block, select the task collection, and set it up using the **Start Date** and **End Date** fields. This configuration will display tasks as spans on the calendar, offering a clear view of task timelines.
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p1.gif)
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p2.gif)
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.4.2%E6%8B%86%E5%88%86p3.gif)
+![Building Calendar View](https://static-docs.nocobase.com/Solution/demoE3v1-28.gif)
+
+![Building Calendar View](https://static-docs.nocobase.com/Solution/demoE3v1-29N.gif)
 
 #### 5.4.3 Exploring Calendar Interactions
 
-On the calendar, you can easily drag tasks around, click to edit task details, and remember to copy or reference templates as needed.
+On the calendar, you can easily choose date, click to edit task details, and remember to copy or reference templates as needed.
 
-![Calendar Operations](https://static-docs.nocobase.com/Solution/demov3N-25.gif)
+![Calendar Operations](https://static-docs.nocobase.com/Solution/demoE3v1-30.gif)
 
 ### 5.5 Gantt Block: The Ultimate Tool for Task Management
 
@@ -105,21 +108,19 @@ The last block we’ll explore is the [**Gantt Block**](https://docs.nocobase.co
 
 To show task progress effectively in the Gantt chart, we’ll need to add a new field named **Completion Percentage (complete_percent)**, with a default value of 0%.
 
-![Add Completion Percentage Field](https://static-docs.nocobase.com/Solution/202410262108241729948104.png)
+![Add Completion Percentage Field](https://static-docs.nocobase.com/Solution/061734211206202415052012.png)
 
 #### 5.5.3 **Creating the Gantt Block**
 
 In the Gantt View, create a Gantt block, select the task collection, and configure it with the start date, end date, and completion percentage fields.
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.5.3%E6%8B%86%E5%88%86p1.gif)
-
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%205.5.3%E6%8B%86%E5%88%86p2.gif)
+![Building Gantt View](https://static-docs.nocobase.com/Solution/demoE3v1-31.gif)
 
 #### 5.5.4 **Using the Gantt Dragging Feature**
 
 In the Gantt view, you can adjust task progress and timelines by dragging, with the start date, end date, and completion percentage fields updating automatically as you make changes.
 
-![](https://static-docs.nocobase.com/2024%E5%B9%B411%E6%9C%887%E6%97%A5%20%E5%88%A0%E9%99%A4%E5%B8%A7%E6%95%B0.gif)
+![Gantt Dragging](https://static-docs.nocobase.com/Solution/demoE3v1-32.gif)
 
 ### Summary
 
