@@ -173,4 +173,4 @@ yarn e2e start-app
 | Workflow - Request             | @nocobase/plugin-workflow-request             |
 | Workflow - SQL                 | @nocobase/plugin-workflow-sql                 |
 
-详情查看 [完整的插件列表](https://docs-cn.nocobase.com/plugins)，需要注意的是，文档正在建设中，部分内容可能缺失或缺少翻译，你可以关注 [nocobase/docs](https://github.com/nocobase/docs) 了解最新动态。
+详情查看 [完整的插件列表](https://www.nocobase.com/cn/plugins)，需要注意的是，文档正在建设中，部分内容可能缺失或缺少翻译，你可以关注 [nocobase/docs](https://github.com/nocobase/docs) 了解最新动态。
