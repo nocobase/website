@@ -89,9 +89,9 @@ The default value may not take effect immediately, let's close and click again t
 
 ### 8.4 Configuring Form Templates and Task Associations
 
-#### 8.4.1 Creating Table and Form [Templates](https://docs.nocobase.com/handbook/ui/blocks/block-settings/block-template)
+#### 8.4.1 Creating Table and Form [Templates](https://docs.nocobase.com/handbook/block-template)
 
-To ease future management, save the Document Table along with its create/edit forms as [templates](https://docs.nocobase.com/handbook/ui/blocks/block-settings/block-template) for reuse on other pages.
+To ease future management, save the Document Table along with its create/edit forms as [templates](https://docs.nocobase.com/handbook/block-template) for reuse on other pages.
 
 ![](https://static-docs.nocobase.com/Solution/571734263097202415194412.png)
 
