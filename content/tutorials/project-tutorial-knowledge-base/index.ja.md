@@ -88,9 +88,9 @@
 
 ### 8.4 フォームテンプレートとタスク関連の設定
 
-#### 8.4.1 テーブルとフォームの[テンプレート](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/block-template)の作成
+#### 8.4.1 テーブルとフォームの[テンプレート](https://docs-jp.nocobase.com/handbook/block-template)の作成
 
-将来の管理を容易にするため、文書テーブルとその作成/編集フォームを[テンプレート](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/block-template)として保存し、他のページで再利用できるようにします。
+将来の管理を容易にするため、文書テーブルとその作成/編集フォームを[テンプレート](https://docs-jp.nocobase.com/handbook/block-template)として保存し、他のページで再利用できるようにします。
 
 ![](https://static-docs.nocobase.com/Solution/202411160300381731697238.png)
 
