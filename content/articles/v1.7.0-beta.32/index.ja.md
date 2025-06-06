@@ -1,9 +1,9 @@
 ### 🎉 新機能
 
 * **[クライアント]** 一行テキストフィールドに複数キーワードフィルタリング機能を追加（[#6685](https://github.com/nocobase/nocobase/pull/6685)）@zhangzhonghe
-  参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  参照：[マルチキーワードフィルタ](https://docs-jp.nocobase.com/handbook/multi-keyword-filter)
 * **[マルチキーワードフィルタ]** 一行テキストフィールドに複数キーワードを入力したフィルタリングをサポート @zhangzhonghe
-  参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  参照：[マルチキーワードフィルタ](https://docs-jp.nocobase.com/handbook/multi-keyword-filter)
 * **[テンプレート印刷]** テンプレート印刷に一括印刷機能を追加 @sheldon66
 
 ### 🚀 機能改善
