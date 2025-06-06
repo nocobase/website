@@ -8,7 +8,7 @@
 
 ### アプリケーションのバックアップと復元
 
-* プラグイン文書：[https://docs.nocobase.com/plugins/backup-restore](https://docs.nocobase.com/plugins/backup-restore)
+* プラグイン文書：[https://docs.nocobase.com/handbook/backup-restore](https://docs.nocobase.com/handbook/backup-restore)
 
 ## カーネル最適化
 
