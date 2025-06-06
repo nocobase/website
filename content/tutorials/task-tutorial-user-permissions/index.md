@@ -1,3 +1,5 @@
+<iframe width="800" height="450" src="https://www.youtube.com/embed/9YzDdchEeGs?si=_paXXB3JbO-CZ6fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 In team collaboration, it’s essential for everyone to clearly understand their roles and permissions to ensure smooth progress. Today, we will learn about role creation and permission management to make teamwork more streamlined and organized.
 
 Don’t worry—this process is simple. We’ll guide you through it step by step, providing guidance at each critical stage. If you encounter any issues, please feel free to reach out to our official forum for assistance.
@@ -20,7 +22,7 @@ We need a "Partner" role with specific permissions to participate in task manage
 - Click on ["**Users and Permissions**"](https://docs.nocobase.com/handbook/users) in the top right of the interface, and select ["**Roles and Permissions**"](https://docs.nocobase.com/handbook/acl). This is where we configure roles and manage permissions.
 - Click on the "**Create Role**" button, and a dialog box will appear. Here, name the role **Partner** and confirm to save.
 
-![](https://static-docs.nocobase.com/Solution/demov3N-28N.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-33.gif)
 
 You have successfully created a new role! Next, we need to assign permissions to this role to ensure they can participate in task management.
 
@@ -30,7 +32,7 @@ To ensure that the role permissions are working as expected, we can first assign
 
 - In the user management section, find your account, click to enter, select "**Roles & Permissions**," and choose "**Partner**."
 
-![](https://static-docs.nocobase.com/Solution/demov3N-29.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-34.gif)
 
 Now you can use your account to simulate the "Partner" role experience. Next, let’s see how to switch roles.
 
@@ -41,7 +43,7 @@ Since you’ve assigned yourself the "Partner" role, let's explore how to switch
 - Click on **Personal Center** in the upper right corner, then choose "**Switch Role**."
 - You may notice that the "Partner" role does not immediately appear in the list. Don’t worry; just **refresh the page/clear cache**, and the role should appear.
 
-![](https://static-docs.nocobase.com/Solution/demov3N-30.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-35.gif)
 
 ### 6.2 Assigning Page Permissions to the Role
 
@@ -55,7 +57,7 @@ Once you switch to the "Partner" role, you may notice that there are no visible 
 
 Return to **Personal Center**, switch back to the "Partner" role, and you should now be able to see the task management menu page.
 
-![](https://static-docs.nocobase.com/Solution/demov3N-31N.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-36.gif)
 
 #### 6.2.2 Setting Collection Action and Operation Permissions
 
@@ -73,9 +75,7 @@ To achieve this, we need to configure the permissions for the "Tasks." Let’s p
 - Here, you will find settings for "Action permissions." Locate the "**Tasks**," and assign the "Partner" the “View” and “Edit” permissions.
 - We won’t assign "Add" or "Delete" permissions to other roles, so no need to assign these from the start.
 
-![](https://static-docs.nocobase.com/Solution/demov3N-32RN1.gif)
-
-![demov3N-32RN2.gif](https://static-docs.nocobase.com/Solution/demov3N-32RN2.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-37.gif)
 
 At this point, the Partner role has the permissions to view and edit the task data. Next, we need further controls to ensure they can only edit tasks assigned to them.
 
@@ -87,17 +87,17 @@ Now, we’ll assign a responsible person to each task. By designating a responsi
 
 1. Go to the "**Task collection**," click on "**Add Field**," and select "**Relationship Field**."
 2. Choose a "**Many-to-One**" relationship (since each task can have only one responsible person, but a user can be responsible for multiple tasks).
-3. Name the field “**Responsible Person (Assigner)**.” No need to select the reverse relationship for now.
+3. Name the field “**Responsible Person (Assignee)**” . No need to select the reverse relationship for now.
 
-![](https://static-docs.nocobase.com/Solution/202410262307101729955230.png)
+![](https://static-docs.nocobase.com/Solution/511734242031202415135312.png)
 
 #### 6.3.2 **Displaying the “Responsible Person” Field**
 
 Next, we need to ensure the "Responsible Person" field is displayed in the task management page’s collection and form, making it easy to assign a responsible person to each task. (If the default display field is set to an ID, simply change the title field to “Nickname” to display names.)
 
-![](https://static-docs.nocobase.com/Solution/202410262311441729955504.png)
+![](https://static-docs.nocobase.com/Solution/181734242358202415135912.png)
 
-### 6.4 Using **Permission Management** to Control Access
+### 6.4 Using **User & Permissions Management** to Control Access
 
 Here comes the highlight! Now, we’ll use NocoBase’s [**Permission Management**](https://docs-cn.nocobase.com/handbook/acl) to implement a powerful feature: **only the responsible person and creator of a task can edit it**, while others can only view it. This is where NocoBase’s flexibility truly shines.
 
@@ -106,18 +106,20 @@ Here comes the highlight! Now, we’ll use NocoBase’s [**Permission Management
 We want only the task’s responsible person to be able to edit it, so we’ll set the following conditions:
 
 - Return to the “Partner” role’s data collection permissions, open the configuration for the task collection, and click on “Data Scope” under “Edit Permission.”
-- Create a custom rule called “Responsible Person Can Edit”:
-  **When "Responsible Person/ID" equals "Current User/ID,"** editing is permitted;
+- Create a custom rule called “Assignee Can Edit”:
+  **When "Assignee/ID" equals "Current User/ID,"** editing is permitted;
   This means that only the task’s responsible person can edit it, while others can only view it.
 - Since we’re using the user collection for the responsible person field, and the logged-in user is also in the user collection, this rule perfectly meets our initial requirement.
 
 Click Add, then Confirm.
 
-![](https://static-docs.nocobase.com/Solution/demov3N-45N.gif)
+![](https://static-docs.nocobase.com/Solution/demoE3v1-38.gif)
 
 Now let’s go back to the page to check:
 
-Perfect! When we switch to the Partner role and revisit the page, only tasks for which we are the responsible person show editing options.
+Perfect! When we switch to the Partner role and revisit the page, only tasks for which we are the assignee will can edit tasks correctly.
+
+![](https://static-docs.nocobase.com/Solution/demoE3v1-39N.gif)
 
 #### 6.4.2 **Adding Conditions for Creators to Modify Forms**
 
@@ -129,13 +131,13 @@ No worries—remember, we assigned the Partner role **view permissions for all d
 
 - Return to the page configuration, select “View” and add a view operation.
 
-![](https://static-docs.nocobase.com/Solution/202410270221581729966918.png)
+![](https://static-docs.nocobase.com/Solution/081734249068202415155112.png)
 
 - Similar to the edit permissions dialog, create a view dialog, and make sure to choose the “Details” section.
 
-![](https://static-docs.nocobase.com/Solution/202410270224221729967062.png)
+![](https://static-docs.nocobase.com/Solution/181734249138202415155212.png)
 
-![](https://static-docs.nocobase.com/Solution/202410270229421729967382.png)
+![](https://static-docs.nocobase.com/Solution/081734249308202415155512.png)
 
 Done!
 
@@ -151,9 +153,9 @@ Next, you can freely assign task responsibilities, invite teammates to collabora
 
 - Create a new user, for example, **Tom**, and assign him the "**Partner**" role.
 
-![](https://static-docs.nocobase.com/Solution/202410270239121729967952.png)
+![](https://static-docs.nocobase.com/Solution/571734249357202415155512.png)
 
-![](https://static-docs.nocobase.com/Solution/202410270242581729968178.png)
+![](https://static-docs.nocobase.com/Solution/221734249442202415155712.png)
 
 - In the task management page, assign a few tasks to **Tom**.
 
@@ -163,7 +165,7 @@ Have Tom log into the system to check if he can view and edit tasks assigned to 
 
 The edit form permissions have now been successfully synchronized across all pages!
 
----
+![](https://static-docs.nocobase.com/Solution/demoE3v1-40N.gif)
 
 ### Summary
 
