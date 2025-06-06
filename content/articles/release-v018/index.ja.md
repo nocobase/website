@@ -153,22 +153,22 @@ yarn e2e start-app
 
 
 | プラグイン名                    | パッケージ名                                  |
-| ------------------------------ | --------------------------------------------- |
-| アクション - 一括編集             | @nocobase/plugin-action-bulk-edit             |
-| アクション - 一括更新             | @nocobase/plugin-action-bulk-update           |
-| アクション - 複製                | @nocobase/plugin-action-duplicate             |
-| カンバン                         | @nocobase/plugin-kanban                       |
-| ガントチャート                     | @nocobase/plugin-gantt                        |
+| ------------------------------- | --------------------------------------------- |
+| アクション - 一括編集           | @nocobase/plugin-action-bulk-edit             |
+| アクション - 一括更新           | @nocobase/plugin-action-bulk-update           |
+| アクション - 複製               | @nocobase/plugin-action-duplicate             |
+| カンバン                        | @nocobase/plugin-kanban                       |
+| ガントチャート                  | @nocobase/plugin-gantt                        |
 | ワークフロー - 集計             | @nocobase/plugin-workflow-aggregate           |
-| ワークフロー - 承認              | @nocobase/plugin-workflow-approval            |
-| ワークフロー - 遅延              | @nocobase/plugin-workflow-delay               |
+| ワークフロー - 承認             | @nocobase/plugin-workflow-approval            |
+| ワークフロー - 遅延             | @nocobase/plugin-workflow-delay               |
 | ワークフロー - 動的計算         | @nocobase/plugin-workflow-dynamic-calculation |
 | ワークフロー - フォームトリガー | @nocobase/plugin-workflow-form-trigger        |
 | ワークフロー - JSONクエリ       | @nocobase/plugin-workflow-json-query          |
-| ワークフロー - ループ            | @nocobase/plugin-workflow-loop                |
-| ワークフロー - 手動              | @nocobase/plugin-workflow-manual              |
-| ワークフロー - 並列              | @nocobase/plugin-workflow-parallel            |
-| ワークフロー - リクエスト        | @nocobase/plugin-workflow-request             |
-| ワークフロー - SQL               | @nocobase/plugin-workflow-sql                 |
+| ワークフロー - ループ           | @nocobase/plugin-workflow-loop                |
+| ワークフロー - 手動             | @nocobase/plugin-workflow-manual              |
+| ワークフロー - 並列             | @nocobase/plugin-workflow-parallel            |
+| ワークフロー - リクエスト       | @nocobase/plugin-workflow-request             |
+| ワークフロー - SQL              | @nocobase/plugin-workflow-sql                 |
 
-詳細は [プラグインの完全なリスト](https://docs.nocobase.com/plugins) を参照してください。文書は現在作成中であり、一部の内容が欠落しているか、翻訳が待たれている可能性があります。最新情報については [nocobase/docs](https://github.com/nocobase/docs) をフォローしてください。
+詳細は [プラグインの完全なリスト](https://www.nocobase.com/en/plugins) を参照してください。文書は現在作成中であり、一部の内容が欠落しているか、翻訳が待たれている可能性があります。最新情報については [nocobase/docs](https://github.com/nocobase/docs) をフォローしてください。
