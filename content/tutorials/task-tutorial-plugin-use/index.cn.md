@@ -1,3 +1,5 @@
+<iframe width="800" height="436" src="https://player.bilibili.com/player.html?isOutside=true&aid=113532393752067&bvid=BV16XB2YqERC&cid=26937593203&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe
+
 ## 回顾上一节
 
 小伙伴们还记得上一节的挑战任务吗？我们要为任务表配置 **状态** 和 **附件** 字段，并在任务列表里展示它们。别急，咱们先揭晓答案！
@@ -5,22 +7,22 @@
 1. **状态字段的配置**：
    - 选择 [**下拉菜单（单选）**](https://docs-cn.nocobase.com/handbook/data-modeling/collection-fields/choices/select) 字段，填写选项标签：**未开始、进行中、待审核、已完成、已取消、已归档**。颜色根据你的喜好自由设置，给任务增添一点色彩吧！
 
-![状态字段配置](https://static-docs.nocobase.com/Solution/202411062259171730905157.png)
+![状态字段配置](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162341275.png)
 
 2. **附件字段的配置**：
    - 新建 [**附件**](https://docs-cn.nocobase.com/handbook/file-manager/field-attachment) 字段，给它取个名字，比如“附件”，点击提交，完成得简简单单。
 
-![](https://static-docs.nocobase.com/Solution/202411062305571730905557.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162343470.png)
 
 3. **任务列表显示创建人和状态**：
    - 在表格区块中勾选“创建人”、“状态”和“附件”字段，让任务列表展示更多关键信息，变得更加丰富。
 
-![任务列表显示字段](https://static-docs.nocobase.com/Solution/202411062312011730905921.png)
+![任务列表显示字段](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162344570.png)
 
 4. **添加和编辑表单中显示字段**：
    - 在弹窗表单中，别忘了勾选状态和附件字段，这样无论是添加还是编辑任务时，都能方便地看到这些字段。
 
-![表单中显示字段](https://static-docs.nocobase.com/Solution/202411062314531730906093.png)
+![表单中显示字段](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162345053.gif)
 
 做得不错吧？别急，反复操作几次，你会发现自己逐渐熟练掌握 NocoBase 的核心用法。每一步操作都为你后续的任务管理打下坚实的基础，咱们继续往下看！
 
@@ -35,7 +37,7 @@
 你可能已经注意到了 NocoBase 提供的 [**富文本**](https://docs-cn.nocobase.com/handbook/data-modeling/collection-fields/media/rich-text) 和 [**Markdown**](https://docs-cn.nocobase.com/handbook/data-modeling/collection-fields/media/markdown) 编辑器，不过它们的功能可能还不够让你满意。
 富文本编辑器功能较为有限，Markdown 编辑器虽然好用，但不支持实时预览。
 
-![202411062320261730906426.png](https://static-docs.nocobase.com/Solution/202411062320261730906426.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162346447.png)
 
 那么，有没有一种编辑器既能实时预览、又支持丰富的功能呢？答案是肯定的！[**Markdown(Vditor)**](https://docs-cn.nocobase.com/handbook/field-markdown-vditor) 是 NocoBase 里功能最强大的文本编辑器，支持实时预览、图片上传、甚至语音录制。而且，它已经内置在系统中，完全免费！
 
@@ -49,24 +51,24 @@
 1. **启用 Markdown(Vditor) 插件**：
    - 打开右上角的 **插件管理器**，输入 "markdown" 搜索插件，启用 [**Markdown(Vditor)**](https://docs-cn.nocobase.com/handbook/field-markdown-vditor)。别担心页面会短暂刷新，几秒钟后它就会恢复正常啦。
 
-![启用 Markdown 插件](https://static-docs.nocobase.com/Solution/202411062323421730906622.png)
+![启用 Markdown 插件](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162348237.png)
 
 2. **创建 Markdown 字段**：
 
    - 回到任务表，点击“创建字段”，我们的 Markdown Pro Plus 加强版已经出现了！
 
-![](https://static-docs.nocobase.com/Solution/202411062327441730906864.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162349275.png)
 
 - 给它取个名字，比如“任务详情（task_detail）”，勾选所有可用功能。
 
 3. 你可能注意到 “文件数据表” 的选项，不选会不会影响文件功能？不必担心，会存储到我们的默认存储空间中，放心使用吧。
 
-![](https://static-docs.nocobase.com/Solution/202411062330401730907040.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162350389.gif)
 
 4. **测试 Markdown 字段**：
    - 现在返回任务管理页面，开始写下你的第一个 Markdown 文本吧！再试试粘贴图片，或者上传文件，是不是感觉很强大？
 
-![](https://static-docs.nocobase.com/Solution/202411062335541730907354.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162351380.gif)
 
 任务表越来越丰富了！跟随每个步骤，你的系统功能逐步扩展，接着我们来看看如何调整字段的排布，让界面更加美观。
 
@@ -78,7 +80,7 @@
 
 - 将鼠标移到字段右上角的十字图标，点击并拖动字段到想要的位置，放手即可完成调整。试试看，页面瞬间整洁多了吧！
 
-![调整字段位置](https://static-docs.nocobase.com/Solution/demovv4-013.gif)
+![调整字段位置](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162352077.gif)
 
 这样操作后，页面布局会更符合你的需求。接下来，我们来为任务表增加评论功能，让团队互动更轻松。
 
@@ -98,9 +100,7 @@
 点击添加 > 上传插件 > 拖入压缩包 > 提交
 搜索评论，评论插件已经出现！开启后进入数据源，看到评论表的选项了，安装成功！
 
-![安装评论插件](https://static-docs.nocobase.com/Solution/demovv4-014-one.gif)
-
-![查看评论插件](https://static-docs.nocobase.com/Solution/demovv4-014-two.gif)
+![安装评论插件](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162353550.gif)
 
 #### 4.2.1.2 新建评论表
 
@@ -114,7 +114,7 @@
 
 NocoBase 允许我们通过关系字段，在数据层面上把表与表之间的关系建立起来，就像搭建桥梁一样，将相关的数据紧密连接。
 
-![](https://static-docs.nocobase.com/Solution/demovv4-015.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162355370.gif)
 
 **为什么选择多对一关系？**
 
@@ -171,15 +171,13 @@ NocoBase 允许我们通过关系字段，在数据层面上把表与表之间�
 
 紧张刺激的时刻来了，我们回到编辑弹窗，创建评论表区块，顺便勾上需要的功能，搞定！
 
-![](https://static-docs.nocobase.com/Solution/demovv4-016.gif)
-
-![](https://static-docs.nocobase.com/Solution/demovv4-016-two.gif)
+![demov3N-16.gif](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162357118.gif)
 
 ### 4.3.2 调整页面
 
 我们美化下页面样式，鼠标放在编辑按钮右上侧，选择较宽的弹窗。运用我们刚学的知识，拖动评论区块，放在弹窗右侧，完美！
 
-![](https://static-docs.nocobase.com/Solution/demovv4-017.gif)
+![demov3N-17.gif](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412162358300.gif)
 
 现在有的朋友可能眼馋了：我也想要实现评论！别怕，我也为你准备了第二种免费方案。
 
@@ -189,13 +187,12 @@ NocoBase 允许我们通过关系字段，在数据层面上把表与表之间�
 
 1. **新建评论表**：
 
-   - 创建 **评论表（comments02）**，添加 **评论内容（comment_content）** 字段（Markdown 类型）和 **所属任务（belong_task）** 字段（多对一类型）。
-     ![](https://static-docs.nocobase.com/Solution/202411070034011730910841.png)
+   - 创建 **评论表（comments2）**，添加 **评论内容（content）** 字段（Markdown 类型）和 **所属任务（belong_task）** 字段（多对一类型）。
+     ![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412170001040.gif)
 2. **在页面中创建评论列表区块**：
 
    - 在任务表的编辑弹窗中，添加一个 [**列表区块**](https://docs-cn.nocobase.com/handbook/ui/blocks/data-blocks/list)（我们的第三种区块出现啦，列表同时可以展示字段的详情信息），选择评论，测试一下：
-     ![创建评论列表区块](https://static-docs.nocobase.com/Solution/demovv4-018-one.gif)
-     ![创建评论列表区块](https://static-docs.nocobase.com/Solution/demovv4-018-two.gif)
+     ![创建评论列表区块](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412170003544.gif)
 
 ## 小结
 
