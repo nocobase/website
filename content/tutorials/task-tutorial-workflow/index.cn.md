@@ -1,3 +1,5 @@
+<iframe  width="800" height="436" src="https://player.bilibili.com/player.html?isOutside=true&aid=113600643469156&bvid=BV1qqidYQER8&cid=27196394345&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 恭喜你走到了这最后一章！我们将在这一章中介绍和简单探索 **NocoBase** 的强大工作流功能。通过这个功能，你可以为系统中的任务自动化操作，节省时间并提升效率。
 
 ### 上节挑战答案
@@ -9,11 +11,11 @@
 3. **编辑权限**：用户仅能编辑自己发布的评论。
 4. **删除权限**：用户仅能删除自己的评论。
 
-![](https://static-docs.nocobase.com/Solution/202410270004241729958664.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172247599.gif)
 
 这样配置后，Tom 不仅能够自由发布评论，还可以查看其他成员的评论，同时确保只有自己能编辑和删除自己的发言。
 
-![](https://static-docs.nocobase.com/Solution/202410270011181729959078.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172248463.gif)
 
 ---
 
@@ -29,14 +31,14 @@
 
 首先，切换到 **Root 角色**，这是系统管理员的角色，拥有所有权限。接着，进入 [**工作流模块**](https://docs-cn.nocobase.com/handbook/workflow)。
 
-![](https://static-docs.nocobase.com/Solution/202410270015231729959323.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172248323.png)
 
-点击右上角的**“添加”**按钮，新建一个工作流，填写基本信息：
+点击右上角的 **“添加”** 按钮，新建一个工作流，填写基本信息：
 
 - **名称**：更换责任人时生成系统通知。
 - **触发方式**：选择“数据表事件”。
 
-![](https://static-docs.nocobase.com/Solution/202410270018231729959503.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172248425.png)
 
 #### 7.1.2 触发方式选择说明：
 
@@ -48,7 +50,7 @@
 
 在这个场景下，我们使用 [**数据表事件**](https://docs-cn.nocobase.com/handbook/workflow/triggers/collection) 来跟踪 “任务表” 中“负责人”的变化。提交工作流后，点击 **配置**，进入工作流设置页面。
 
-![demov3N-37.gif](https://static-docs.nocobase.com/Solution/demov3N-37.gif)
+![demov3N-37.gif](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172248988.gif)
 
 ---
 
@@ -66,7 +68,7 @@
 - **触发条件**：选择“负责人 ID 存在”，确保只有当任务被分配了负责人时，才会发送系统通知。
 - **预加载数据**：选择“负责人”，以便在后续流程中使用其信息。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-38.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172249330.gif)
 
 ---
 
@@ -78,7 +80,7 @@
 
 - 回到插件管理界面，选择“通知管理”，新建任务通知（task_message）
 - 渠道创建完毕，我们回到工作流中，新建 “通知” 节点
-  ![](https://static-docs.nocobase.com/Solution/demov3N-47N2RN.gif)
+  ![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172250497.gif)
 - 节点配置
   **渠道：** 选择“任务通知”
   **接收人：** 选择 “触发器变量/触发数据/负责人/ID”，这样就能定位到变更后的负责人啦。
@@ -87,7 +89,7 @@
 
 完成后，点击右上角开关，启用此工作流。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-48RN.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172250472.gif)
 
 配置好啦~
 
@@ -95,9 +97,9 @@
 
 激动人心的时刻到了，我们回到页面，任意点击一条任务编辑，更改负责人，直接点击提交，系统已经发送通知啦！
 
-![](https://static-docs.nocobase.com/Solution/202410270402331729972953.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172250461.gif)
 
-![](https://static-docs.nocobase.com/Solution/202410270359501729972790.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172250998.gif)
 
 ---
 
@@ -113,7 +115,7 @@
 
 别担心，点击右上角省略号 > [**复制到新版本**](https://docs-cn.nocobase.com/handbook/workflow/advanced/revisions)，我们就来到了新版本的配置页面。当然，之前的版本也会保留，点击 **版本** 按钮，随时可以切换到历史版本（注意：已执行过的工作流版本无法再更改！）。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-49.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172251594.gif)
 
 #### 7.3.2 优化通知内容
 
@@ -126,11 +128,11 @@
 - 我们点击右边的变量，填充任务名称和责任人。
 - 然后点击右上角，启用这个版本。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-50RN.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172251780.gif)
 
 启用更新后的工作流版本，再次测试时，系统通知展示出了新任务的名称。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-51.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172251734.gif)
 
 ---
 
