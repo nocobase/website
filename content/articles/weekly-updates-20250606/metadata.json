@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、チャート変換設定における乗算と除算のサポート、インポート機能の強化などが含まれています。",
   "slug": "weekly-updates-20250606",
   "publishedAt": "2025-06-06T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-05T08:09:47.192Z"
+  "updatedAt": "2025-06-06T02:06:02.725Z"
 }
