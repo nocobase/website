@@ -4,7 +4,7 @@
 
 * 开发文档：[https://docs-cn.nocobase.com/development/server/telemetry](https://docs-cn.nocobase.com/development/server/telemetry)
 * 内核 API：[https://docs-cn.nocobase.com/api/telemetry/telemetry](https://docs-cn.nocobase.com/api/telemetry/telemetry)
-* Prometheus 插件：[https://docs-cn.nocobase.com/plugins/telemetry-prometheus](https://docs-cn.nocobase.com/plugins/telemetry-prometheus)
+* Prometheus 插件：[https://docs-cn.nocobase.com/handbook/telemetry-prometheus](https://docs-cn.nocobase.com/handbook/telemetry-prometheus)
 
 ### 应用的备份和还原
 
