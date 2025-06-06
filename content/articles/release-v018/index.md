@@ -173,4 +173,4 @@ In order to refine the kernel and make it more streamlined, certain functionalit
 | Workflow - Request             | @nocobase/plugin-workflow-request             |
 | Workflow - SQL                 | @nocobase/plugin-workflow-sql                 |
 
-See [complete list of plugins](https://docs.nocobase.com/plugins) for details. The document is currently under construction, with some content possibly missing or awaiting translation. You can follow [nocobase/docs](https://github.com/nocobase/docs) for updates.
+See [complete list of plugins](https://www.nocobase.com/en/plugins) for details. The document is currently under construction, with some content possibly missing or awaiting translation. You can follow [nocobase/docs](https://github.com/nocobase/docs) for updates.
