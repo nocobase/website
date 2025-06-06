@@ -1,6 +1,6 @@
 ## An AI Startup's Critical Choice
 
-[Second-Brain ]([Second-Brain](http://www.dbl-brain.com/))is an AI startup based in Hong Kong, founded by a team with backgrounds in finance and consulting. They specialize in building AI-driven decision-making systems for enterprises.
+[Second-Brain ](http://www.dbl-brain.com/)is an AI startup based in Hong Kong, founded by a team with backgrounds in finance and consulting. They specialize in building AI-driven decision-making systems for enterprises.
 
 ![Second-Brain](https://static-docs.nocobase.com/1-esvvr0.PNG)
 
