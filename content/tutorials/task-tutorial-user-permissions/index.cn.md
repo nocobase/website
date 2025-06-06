@@ -1,3 +1,5 @@
+<iframe width="800" height="436" src="https://player.bilibili.com/player.html?isOutside=true&aid=113595157318206&bvid=BV1EwiUYYE4f&cid=27181319746&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 在团队协作中，每个人都应该明确自己的职责和权限，才能确保工作顺利推进。今天，我们将一起来学习角色创建和权限管理，让协作更加顺畅、有序。
 
 别担心，这个过程并不复杂，我们会带你一步步完成，在每个关键环节引导你。如果你遇到任何问题，请随时来我们官方论坛求助。
@@ -6,7 +8,7 @@
 
 我们需要一个“伙伴”（Partner）角色，这个角色有一定的权限来参与任务管理，但不能随意修改他人的任务。通过这种方式，我们可以灵活进行任务分配和协作。
 
-![角色结构图](https://static-docs.nocobase.com/Solution/WSy8bi0zOozbBKxzlimcyje4n7f.png)
+![](https://static-docs.nocobase.com/241219-5-er.svg)
 
 > **角色和权限简介：** 角色和权限是管理用户访问和操作的重要机制，确保系统的安全性和数据的完整性，角色可以给用户进行绑定，一个用户可以拥有多个角色。对角色的权限设置从而能够控制用户在系统中的行为、操作以及对用户的页面功能展示限制等等，具有重要的权限控制意义。
 > 使用角色和权限功能，与用户进行绑定。能够在此次案例学习中让你对自己的管理系统有了更好地管控，作为管理者你能够随心所欲调动安排谁具有怎么样的系统操作权限！
@@ -18,7 +20,7 @@
 - 点击界面右上角的[“**用户和权限**”](https://docs-cn.nocobase.com/handbook/users)，选择[“**角色和权限**”](https://docs-cn.nocobase.com/handbook/acl)。这是我们设置角色和管理权限的地方。
 - 点击“**创建角色**”按钮，弹出一个对话框。在这里，为角色命名为**伙伴（Partner）**，并确认保存。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-28N.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172222974.gif)
 
 你已经成功创建了一个新角色！接下来，我们需要给这个角色分配权限，确保他们能够参与到任务管理中。
 
@@ -28,7 +30,7 @@
 
 - 在用户管理中找到你的账号，点击进入，选择“**绑定角色**”，选择“**伙伴**”。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-29.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172223483.gif)
 
 这样你就可以用自己账号模拟“伙伴”角色的体验了。接下来，我们要试试如何切换角色。
 
@@ -39,7 +41,7 @@
 - 点击右上角的**个人中心**，然后选择“**切换角色**”。
 - 你可能会发现列表里暂时没有出现“伙伴”角色的选项，别担心，这时候只需要**刷新页面/缓存**，角色就会显示出来啦！
 
-![](https://static-docs.nocobase.com/Solution/demov3N-30.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172223922.gif)
 
 ### 6.2 为角色分配页面权限
 
@@ -53,7 +55,7 @@
 
 回到**个人中心**，再次切换到“伙伴”角色，这时你应该已经能够看到任务管理菜单页了。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-31N.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172223592.gif)
 
 #### 6.2.2 设置数据表和操作权限
 
@@ -74,9 +76,7 @@
   所以一开始保留最大权限是为了后面的控制更加灵活。
 - “新增”、“删除” 我们不希望给其他角色开放，所以从一开始就不必分配。
 
-![](https://static-docs.nocobase.com/Solution/demov3N-32RN1.gif)
-
-![demov3N-32RN2.gif](https://static-docs.nocobase.com/Solution/demov3N-32RN2.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172224941.gif)
 
 到这里为止，伙伴角色已经有权限查看和编辑所有任务表了。接下来我们需要更进一步的控制，以确保他们只能编辑分配给自己的任务。
 
@@ -88,15 +88,15 @@
 
 1. 进入“**任务表**”，点击“**添加字段**”，选择“**关系字段**”。
 2. 选择“**多对一**”关系（因为一个任务只能有一个负责人，而一个用户可以负责多个任务）。
-3. 为字段命名为“**负责人（Assigner）**”。不用勾选反向关系，暂时我们用不上。
+3. 为字段命名为“**负责人（Assignee）**”。不用勾选反向关系，暂时我们用不上。
 
-![](https://static-docs.nocobase.com/Solution/202410262307101729955230.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172224751.gif)
 
 #### 6.3.2 **展示“负责人”字段**
 
 接下来，我们需要确保在任务管理页面的表格和表单中展示“负责人”字段，这样你就可以轻松为每个任务分配负责人了。（如果你的字段默认展示编号，别慌，把标题字段从 ID 改成“昵称”即可）
 
-![](https://static-docs.nocobase.com/Solution/202410262311441729955504.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172224547.png)
 
 ### 6.4 使用**权限管理**控制权限
 
@@ -114,13 +114,13 @@
 
 点击添加，确定
 
-![](https://static-docs.nocobase.com/Solution/demov3N-45N.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172226879.gif)
 
 我们回到页面看一下：
 
 完美，现在我们切换伙伴角色，回到页面看一下，只有项目责任人是我们自己是，编辑操作才会暴露给我们。
 
-![](https://static-docs.nocobase.com/Solution/202410270219441729966784.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172227581.gif)
 
 #### 6.4.2 **条件附加，创建人修改表单**
 
@@ -132,13 +132,13 @@
 
 - 我们回到页面，在配置中点选“查看”，新增一个查看操作
 
-![](https://static-docs.nocobase.com/Solution/202410270221581729966918.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172227426.png)
 
 - 类似编辑操作的弹窗布局，做一个查看弹窗，切记选择“详情”区块。
 
-![](https://static-docs.nocobase.com/Solution/202410270224221729967062.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172227807.png)
 
-![](https://static-docs.nocobase.com/Solution/202410270229421729967382.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172227352.gif)
 
 搞定~
 
@@ -154,9 +154,9 @@
 
 - 创建一个新用户，比如 **Tom**，并分配“**伙伴**”角色。
 
-![](https://static-docs.nocobase.com/Solution/202410270239121729967952.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172228278.png)
 
-![](https://static-docs.nocobase.com/Solution/202410270242581729968178.png)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172228648.gif)
 
 - 在任务管理页面，将几条任务分配给 **Tom**。
 
@@ -166,7 +166,7 @@
 
 所有页面的编辑表单权限已经成功同步~
 
-![](https://static-docs.nocobase.com/Solution/demov3N-46.gif)
+![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412172229408.gif)
 
 ### 小结
 
