@@ -1,6 +1,6 @@
 ## AI スタートアップが下した重要な決断
 
-[Second-Brain ]([Second-Brain](http://www.dbl-brain.com/))は香港に拠点を置く AI スタートアップで、金融やコンサルティング出身のメンバーによって設立されました。企業向けに、AI を活用した意思決定支援システムの開発を手がけています。
+[Second-Brain ](http://www.dbl-brain.com/)は香港に拠点を置く AI スタートアップで、金融やコンサルティング出身のメンバーによって設立されました。企業向けに、AI を活用した意思決定支援システムの開発を手がけています。
 
 ![Second-Brain](https://static-docs.nocobase.com/1-esvvr0.PNG)
 
