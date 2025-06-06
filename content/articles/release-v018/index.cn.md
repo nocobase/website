@@ -146,8 +146,8 @@ yarn e2e start-app
 
 ### 用户认证扩展的优化
 
-* 用户认证扩展开发指南 [https://docs-cn.nocobase.com/plugins/auth/dev/guide](https://docs-cn.nocobase.com/plugins/auth/dev/guide)
-* 用户认证扩展相关不兼容变化 [https://docs-cn.nocobase.com/breaking-changes/v0-18-0-alpha-1](https://docs-cn.nocobase.com/breaking-changes/v0-18-0-alpha-1)
+* 用户认证扩展开发指南 [https://docs-cn.nocobase.com/handbook/auth/dev/guide](https://docs-cn.nocobase.com/handbook/auth/dev/guide)
+* 用户认证扩展相关不兼容变化 [https://docs-cn.nocobase.com/handbook/auth/dev/api](https://docs-cn.nocobase.com/handbook/auth/dev/api)
 
 ### 插件化拆分
 
