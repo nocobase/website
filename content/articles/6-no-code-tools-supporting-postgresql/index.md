@@ -124,7 +124,7 @@ For teams or individuals seeking an Airtable-like convenient data management exp
 | Self-Deployment & Open Source | ✅ Fully supported                                                                                                                    |
 | Scalability                   | ➡️ Actively developing; future enhancements may include plugins or more open APIs                                                   |
 
-### [Appsmith]([Appsmith](https://www.appsmith.com/))
+### [Appsmith](https://www.appsmith.com/)
 
 **Core Highlights: Robust UI Builder + Multi-Data Source Connectivity (including PostgreSQL) + Open-Source Self-Hosting**
 
@@ -302,7 +302,6 @@ Quick Selection Guide:
 * For rapid backend setup with an existing database: Choose Retool, Appsmith, or Budibase.
 * For building a self-hosted data collaboration platform: Choose Teable or NocoDB.
 * For in-depth modeling and building complex business systems: Choose NocoBase.
-
 
 **Related reading:**
 
