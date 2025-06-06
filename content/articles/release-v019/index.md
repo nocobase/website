@@ -4,7 +4,7 @@
 
 * Development documentation: [https://docs.nocobase.com/development/server/telemetry](https://docs.nocobase.com/development/server/telemetry)
 * Kernel API: [https://docs.nocobase.com/api/telemetry/telemetry](https://docs.nocobase.com/api/telemetry/telemetry)
-* Prometheus plugin: [https://docs.nocobase.com/plugins/telemetry-prometheus](https://docs.nocobase.com/plugins/telemetry-prometheus)
+* Prometheus plugin: [https://docs.nocobase.com/handbook/telemetry-prometheus](https://docs.nocobase.com/handbook/telemetry-prometheus)
 
 ### Application backup and restore
 
