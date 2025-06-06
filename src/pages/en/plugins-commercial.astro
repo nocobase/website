@@ -37,13 +37,13 @@ const keywords = page.keywords;
     <div class="container">
       {
         data
-          .filter((group) => group.plugins.filter((plugin: any) => plugin.commercial).length > 0)
+          .filter((group) => group.plugins.filter((plugin: any) => plugin.commercial && !plugin.internal).length > 0)
           .map((group) => (
             <>
               <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
               <div class="row pb-4">
                 {group.plugins
-                  .filter((plugin: any) => plugin.commercial)
+                  .filter((plugin: any) => plugin.commercial && !plugin.internal)
                   .map((plugin: any) => (
                     <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
                       <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
