@@ -89,9 +89,9 @@
 
 ### 8.4 配置表单模板与任务关联
 
-#### 8.4.1 创建表格和表单[模板](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/block-template)
+#### 8.4.1 创建表格和表单[模板](https://docs-cn.nocobase.com/handbook/block-template)
 
-为了便于后续管理，我们将文档的表格、创建和编辑表单[保存为模板](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/block-template)，以便在其他页面复用。
+为了便于后续管理，我们将文档的表格、创建和编辑表单[保存为模板](https://docs-cn.nocobase.com/handbook/block-template)，以便在其他页面复用。
 
 ![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412190013599.png)
 
