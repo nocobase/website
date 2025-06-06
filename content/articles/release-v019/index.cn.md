@@ -8,7 +8,7 @@
 
 ### 应用的备份和还原
 
-* 插件文档：[https://docs-cn.nocobase.com/plugins/backup-restore](https://docs-cn.nocobase.com/plugins/backup-restore)
+* 插件文档：[https://docs-cn.nocobase.com/handbook/backup-restore](https://docs-cn.nocobase.com/handbook/backup-restore)
 
 ## 内核优化
 
