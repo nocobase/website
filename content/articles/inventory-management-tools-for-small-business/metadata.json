@@ -1,6 +1,6 @@
 {
   "id": 281,
-  "title": "Top Inventory Management Tools for Small Businesses (Including Free and Open-Source Options)",
+  "title": "Top Inventory System for Small Business (Including Free and Open-Source Options)",
   "title_cn": "适合小型企业的库存管理工具推荐（含免费、开源）",
   "title_ja": "小規模ビジネス向けのベスト在庫管理ツール（無料・オープンソース含む）",
   "description": "Discover 6 inventory management tools for small businesses, including free, open-source, and paid options, to help you manage inventory efficiently and save costs.",
@@ -266,9 +266,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-03-18T08:00:04.875Z",
+  "updatedAt": "2025-06-08T03:25:37.873Z",
   "author": "Zhang Lu",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
 }
