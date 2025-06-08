@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-Before diving into CRUD optimization, let's first define CRUD and its significance in software development. Understanding the basics of CRUD is essential, especially for developers new to the concept.
+Before we dive into CRUD optimization, let's first define CRUD and its importance in software development. Understanding these basics is crucial, especially for new developers.
 
 ![CRUD](https://static-docs.nocobase.com/93cec7c379ead237aa58efd9de44bb81.png)
 
@@ -13,36 +13,34 @@ CRUD stands for **Create**, **Read**, **Update**, and **Delete** —the fundamen
 * **Update**: Modifying existing records in the database.
 * **Delete**: Removing records that are no longer needed.
 
-🙌 Have a try: [Chapter 3: Task Data Management](https://www.nocobase.com/en/tutorials/task-tutorial-data-management-guide)
+🙌 **Try it out:**[Chapter 3: Task Data Management](https://www.nocobase.com/en/tutorials/task-tutorial-data-management-guide)
 
 ### 1.2 The Importance of CRUD in Software Development
 
-* **Data Management Foundation**: CRUD operations form the backbone of any data-driven application. Whether you're managing a simple to-do list or a complex enterprise resource planning system, these basic operations are essential for data management.
-* **Key to User Interaction**: Most user interactions with applications can be boiled down to these four operations. For example, in social media apps, posting content (Create), browsing the feed (Read), editing profiles (Update), and deleting comments (Delete) are all examples of CRUD operations in action.
+* **Data Management Foundation**: CRUD operations form the backbone of any data-driven application. Whether you're managing a simple to-do list or a complex enterprise resource planning (ERP) system, these basic operations are essential for data management.
+* **Key to User Interaction**: Most user interactions with applications boil down to these four operations. For example, in social media apps, posting content (Create), Browse the feed (Read), editing profiles (Update), and deleting comments (Delete) are all CRUD operations in action.
 * **Foundation of System Design**: When designing software systems, CRUD operations are often the starting point for discussions and planning. They help developers clarify data models and business logic.
-* **Focus of Performance Optimization**: Because CRUD operations are so frequent, their efficiency directly impacts the performance of the entire application. Therefore, optimizing CRUD operations is crucial to improving overall system performance.
+* **Focus of Performance Optimization**: Because CRUD operations are so frequent, their efficiency directly impacts overall application performance. Therefore, optimizing CRUD operations is crucial for improving system performance.
 
 ### 1.3 Typical Implementation of CRUD
 
-CRUD operations are implemented in various ways across different technology stacks, but the principles remain consistent. Here are common examples:
+CRUD operations are implemented in various ways across different technology stacks, but the underlying principles remain consistent. Here are common examples:
 
 * **SQL Databases**:
-
   * Create: `INSERT INTO table_name (column1, column2) VALUES (value1, value2);`
   * Read: `SELECT * FROM table_name WHERE condition;`
   * Update: `UPDATE table_name SET column1 = value1 WHERE condition;`
   * Delete: `DELETE FROM table_name WHERE condition;`
 * **RESTful APIs**:
-
   * Create: HTTP POST request
   * Read: HTTP GET request
   * Update: HTTP PUT or PATCH request
   * Delete: HTTP DELETE request
 * **ORM (Object-Relational Mapping)**: Many programming languages and frameworks provide ORM tools that abstract database operations into object manipulations, simplifying CRUD implementation.
 
-Teams that can quickly build, iterate, and deploy applications often gain a competitive edge in the market. **Thus, optimizing CRUD operations is not just a technical issue but a strategic decision that directly impacts business success.**
+Teams that can quickly build, iterate, and deploy applications often gain a competitive edge. **Thus, optimizing CRUD operations is not just a technical task, but a strategic decision that directly impacts business success.**
 
-This article will explore how to significantly boost development efficiency by optimizing CRUD operations. We will delve into common pain points in traditional CRUD development, explore the use of code generation tools, introduce revolutionary low-code platform solutions.
+This article will explore how to significantly boost development efficiency by optimizing CRUD operations. We'll delve into common pain points in traditional CRUD development, explore code generation tools, and introduce revolutionary low-code platform solutions.
 
 Whether you are an experienced developer or new to programming, this article will provide valuable insights and practical strategies to help you achieve greater efficiency in CRUD development.
 
@@ -50,21 +48,21 @@ Whether you are an experienced developer or new to programming, this article wil
 
 While CRUD operations are central to most applications, traditional CRUD development methods often come with a series of frustrating challenges:
 
-* **Repetitive Code Writing**: Developers often find themselves writing nearly identical CRUD code across different projects. This is time-consuming and prone to errors.
-* **Time-Consuming Basic Functions**: Basic CRUD functionality is necessary but not the core value of an application. Yet, development teams often spend significant time on these basics, leaving less time for unique business logic and user experience.
-* **Difficulty Adapting to Changing Requirements**: In traditional development, modifying CRUD operations to meet changing business needs can require extensive code refactoring, reducing development flexibility.
+* **Repetitive Code Writing**: Developers frequently write nearly identical CRUD code across projects. This is time-consuming and error-prone.
+* **Time-Consuming Basic Functions**: Essential CRUD functionality is necessary but rarely the core value of an application. Yet, development teams often spend significant time on these basics, leaving less time for unique business logic and user experience.
+* **Difficulty Adapting to Changing Requirements**: In traditional development, modifying CRUD operations to meet evolving business needs can require extensive code refactoring, reducing development flexibility.
 * **Challenges of Cross-Platform Development**: With the rise of mobile and web applications, developers must write and maintain multiple sets of CRUD code for different platforms, increasing workload and complexity.
 * **Consistency and Standardization Issues**: In large projects or teams, different developers might implement CRUD operations in various ways, making the codebase difficult to maintain and extend.
-* **Performance Optimization Challenges**: While basic CRUD operations are easy to implement, ensuring they perform efficiently at scale, especially under high concurrency, often requires complex optimizations. Additionally, ensuring seamless collaboration and feedback management is a common challenge in CRUD development. Developers often struggle with gathering and implementing feedback efficiently, leading to delays and miscommunication. A [website proofing tool](https://www.feedbucket.app/blog/website-proofing-tools/)  can simplify this process by allowing clients and team members to provide direct, contextual feedback within the application, reducing back-and-forth and streamlining issue resolution.
-* **Security Concerns**: Each CRUD operation can be a potential security vulnerability. Ensuring that each operation is properly secured is a burdensome and error-prone task.
+* **Performance Optimization Challenges**: While basic CRUD operations are easy to implement, ensuring efficient performance at scale, especially under high concurrency, often requires complex optimizations. Additionally, ensuring seamless collaboration and feedback management is a common challenge in CRUD development. Developers often struggle with gathering and implementing feedback efficiently, leading to delays and miscommunication. A [website proofing tool](https://www.feedbucket.app/blog/website-proofing-tools/) can simplify this process by allowing clients and team members to provide direct, contextual feedback within the application, reducing back-and-forth and streamlining issue resolution.
+* **Security Concerns**: Each CRUD operation can be a potential security vulnerability. Ensuring proper security for each operation is a burdensome and error-prone task.
 
-Recognizing these pain points is the first step in optimizing the CRUD development process. Next, we will explore some modern solutions that effectively address these issues and significantly improve development efficiency.
+Recognizing these pain points is the first step in optimizing the CRUD development process. Next, we will explore modern solutions that effectively address these issues and significantly improve development efficiency.
 
 ## 3. The Role of Code Generation Tools
 
 In response to the many challenges of traditional CRUD development, code generation tools have emerged as powerful allies in improving development efficiency. These tools can automatically generate standardized CRUD code, significantly reducing repetitive tasks and allowing developers to focus more on core business logic.
 
-💡 Read More: [Top 8 Open-Source CRUD Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/crud-projects)
+💡 **Read More:**[Top 8 Open-Source CRUD Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/crud-projects)
 
 ### 3.1 Common CRUD Code Generation Tools
 
@@ -83,9 +81,9 @@ In response to the many challenges of traditional CRUD development, code generat
 
 ### 3.2 Advantages of Using Code Generation Tools
 
-Code generation tools not only help developers save a significant amount of time but also ensure the quality and consistency of the code. Their advantages are primarily reflected in the following aspects:
+Code generation tools not only help developers save significant time but also ensure code quality and consistency. Their advantages are primarily reflected in the following aspects:
 
-* **Increased Development Speed**: Automatically generating basic CRUD code saves significant development time.
+* **Increased Development Speed**: Automatically generating basic CRUD code saves substantial development time.
 * **Error Reduction**: Generated code is often thoroughly tested, reducing human errors.
 * **Standardization**: Ensures consistent CRUD implementation across the team.
 * **Ease of Maintenance**: Generated code typically follows best practices, making it easier to maintain.
@@ -93,29 +91,29 @@ Code generation tools not only help developers save a significant amount of time
 
 ### 3.3 Best Practices for Using Code Generation Tools
 
-Using these tools effectively still requires following some best practices. Here are some recommendations to help developers maximize the potential of code generation tools in their projects:
+Effective use of these tools still requires following some best practices. Here are some recommendations to help developers maximize the potential of code generation tools in their projects:
 
 * **Choose the Right Tool**: Select the most suitable code generation tool based on your project needs and team tech stack.
 * **Customize Generation Templates**: Adjust code generation templates to meet specific project requirements and coding standards.
 * **Version Control**: Include generated code in version control, distinguishing between automatically generated and manually modified parts.
-* **Continuous Integration**: Integrate code generation into the CI/CD process to ensure the generated code is always in sync with the data model.
-* **Combine with Manual Coding**: Use the generated code as a starting point and then manually add specific business logic and custom features.
+* **Continuous Integration**: Integrate code generation into your CI/CD process to ensure generated code is always in sync with the data model.
+* **Combine with Manual Coding**: Use the generated code as a starting point, then manually add specific business logic and custom features.
 
-## 4. Revolutionizing CRUD Development with Low-Code Platforms
+## 4. Revolutionizing CRUD Application with Low-Code Platforms
 
 Beyond code generation tools, low-code platforms are revolutionizing CRUD development.
 
-These platforms allow developers to rapidly build applications through graphical interfaces and pre-built components, greatly reducing the need for manual coding.
+These platforms enable developers to rapidly build applications through graphical interfaces and pre-built components, significantly reducing the need for manual coding.
 
-For CRUD operations, low-code platforms offer a revolutionary approach, making the creation, configuration, and deployment of data management applications easier than ever.
+For CRUD operations, low-code platforms offer a transformative approach, making the creation, configuration, and deployment of data management applications easier than ever.
 
-💡 Read More: [Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
+💡 **Read More:**[Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
 
 ### 4.1 Low-Code Platforms: A Game-Changer for CRUD Apps
 
 Take **NocoBase** as an example—a low-code/no-code platform that provides developers with flexible, powerful, and easy-to-use CRUD solutions.
 
-💡*Dig deeper: [NocoBase Transforms Education Management at University of Siena](https://www.nocobase.com/en/blog/nocobase-transforms-education-management-at-university-of-siena#how-to-discover-the-optimal-solution-for-data-management-and-user-interaction)*
+💡 *Dig deeper: [NocoBase Transforms Education Management at University of Siena](https://www.nocobase.com/en/blog/nocobase-transforms-education-management-at-university-of-siena#how-to-discover-the-optimal-solution-for-data-management-and-user-interaction)*
 
 **Here’s how NocoBase simplifies the CRUD development process:**
 
@@ -140,7 +138,7 @@ Take **NocoBase** as an example—a low-code/no-code platform that provides deve
 
 Let’s dive into a real-world example to see how NocoBase transforms the CRUD app development process.
 
-Imagine you are the tech lead at a mid-sized software company, and your team has been tasked with building a project management system for a rapidly growing startup.
+Imagine you're the tech lead at a mid-sized software company, tasked with building a project management system for a rapidly growing startup.
 
 The traditional development approach would take at least two weeks, but the client needs a working prototype in just three days.
 
@@ -158,11 +156,11 @@ Let's see how NocoBase can accomplish this seemingly impossible task in just a f
 
 **1. Project Setup and Data Model Design (60 minutes)**
 
-Log in to NocoBase and create a new project, “Project Manager.”
+Log in to NocoBase and create a new project: "Project Manager."
 
 Use the visual interface to create the following data models:
 
-* Project: Title, Description, Start Date, End Date, Status
+* Project: Title, Description, Start Date, End Date, Status, Budget
 * Task: Title, Description, Due Date, Status, Priority
 * User: Name, Email, Role
 
@@ -170,17 +168,17 @@ Use the visual interface to create the following data models:
 
 Set up relationships:
 
-* Project 1to n Task
-* User n to m Project (team members)
-* User 1 to n Task (assignee)
+* Project 1-to-N Task
+* User N-to-M Project (team members)
+* User 1-to-N Task (assignee)
 
 ![Set up relationships.png](https://static-docs.nocobase.com/14c9558943c34c9e3350225b911afcc1.png)
 
 ![Set up relationships2.png](https://static-docs.nocobase.com/bbf3bca9c8ba5b0fa3a0b46caecd32d9.png)
 
-😕 **Challenge**: The client suddenly requested the addition of a "Budget" field to the project model.
+😕 **Challenge**: The client suddenly requested a "Budget" field for the project model.
 
-👍 **Solution**: Using NocoBase's instant field addition feature, this was done without the need for redeployment.
+👍 **Solution**: Using NocoBase's instant field addition feature, this was done without redeployment.
 
 **2. Automatic CRUD Function Generation (15 minutes)**
 
@@ -192,7 +190,7 @@ NocoBase automatically generates complete CRUD APIs and management interfaces fo
 
 ![Automatic CRUD2.png](https://static-docs.nocobase.com/218a1874576033fcf39e0f086f5b719e.png)
 
-❤️ **Unexpected Benefit**: NocoBase automatically handled field validation and error processing, saving a significant amount of coding time.
+❤️ **Unexpected Benefit**: NocoBase automatically handled field validation and error processing, saving significant coding time.
 
 **3. Customizing List Views (45 minutes)**
 
@@ -228,11 +226,11 @@ Using traditional development methods, a similar system might take days or even 
 
 💡 More Tutorials: [Tutorials - NocoBase](https://www.nocobase.com/en/tutorials/)
 
-Through this case study, we can see how low-code platforms like NocoBase are revolutionizing CRUD app development. They not only solve many of the pain points in traditional CRUD development, but also provide developers with more room for innovation, allowing them to turn ideas into reality faster.
+Through this case study, we can see how low-code platforms like NocoBase are revolutionizing CRUD app development. They not only solve many of the pain points in traditional CRUD development but also provide developers with more room for innovation, allowing them to turn ideas into reality faster.
 
 ## Conclusion
 
-In this article, we explored the significant impact of CRUD optimization on development efficiency. Starting from the pain points in traditional CRUD development, we introduced modern solutions such as code generation tools and low-code platforms, and discussed the standardization and best practices for CRUD operations.
+In this article, we explored the significant impact of CRUD optimization on development efficiency. Starting from the pain points in traditional CRUD development, we introduced modern solutions such as code generation tools and low-code platforms, and discussed standardization and best practices for CRUD operations.
 
 **Comprehensive Impact of CRUD Optimization on Development Efficiency**
 
@@ -240,13 +238,13 @@ In this article, we explored the significant impact of CRUD optimization on deve
 * **Error Reduction**: Automation tools and standardized practices significantly reduce human errors, improving code quality.
 * **Increased Flexibility**: Low-code platforms allow for quick adjustments and iterations, making applications more adaptable to changing needs.
 * **Focus on Core Business**: Reducing time spent on basic CRUD operations allows developers to focus more on core business logic and user experience.
-* **Improved Collaboration Efficiency**: Standardized CRUD practices and clear code structures enhance team collaboration efficiency.
+* **Improved Collaboration Efficiency**: Standardized CRUD practices and clear code structures enhance team collaboration.
 
 We encourage developers and teams to actively experiment with new CRUD development tools and methods, especially innovative low-code platforms like NocoBase.
 
 These tools not only enhance development efficiency but also inspire innovative thinking, helping teams explore new possibilities. Developers can choose a small project or a module of an existing project to try out new tools and collect feedback from team members during the trial, continuously adjusting and optimizing usage strategies.
 
-💡*Dig deeper: [Top 15 Open-Source Low-Code Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)*
+💡 *Dig deeper: [Top 15 Open-Source Low-Code Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)*
 
 By continuously optimizing the CRUD development process, we can not only improve development efficiency but also create better software products for users. In today’s rapidly advancing technological landscape, maintaining an open and innovative mindset and daring to try new tools and methods will be key to staying competitive.
 
@@ -256,12 +254,6 @@ For developers interested in further exploring CRUD optimization and related tec
 
 **Tools and Platforms**:
 
-* [NocoBase Official Website](https://www.NocoBase.com/)
-* [Swagger Codegen](https://swagger.io/tools/swagger-codegen/)
-* [JHipster](https://www.jhipster.tech/)
-* [MyBatis Generator](https://mybatis.org/generator/)
-* [Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools)
-
 **Articles and Tutorials**:
 
 * *Clean Code: A Handbook of Agile Software Craftsmanship* - by Robert C. Martin
@@ -270,7 +262,6 @@ For developers interested in further exploring CRUD optimization and related tec
 **Online Courses**:
 
 * Coursera: [API Design and Fundamentals of Google Cloud's Apigee API Platform](https://www.coursera.org/learn/api-design-apigee-gcp)
-* Udemy: [Design Patterns in C# and .NET
 
 **Related reading:**
 
