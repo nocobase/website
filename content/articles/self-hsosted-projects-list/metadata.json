@@ -243,6 +243,58 @@
         "tagId": 41,
         "articleId": 73
       }
+    },
+    {
+      "createdAt": "2025-06-08T03:32:33.077Z",
+      "updatedAt": "2025-06-08T03:32:33.077Z",
+      "id": 190,
+      "title": "awesome selfhosted",
+      "title_cn": "awesome selfhosted",
+      "sort": 188,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "awesome selfhosted",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 1,
+      "updatedById": 1,
+      "articlesTags": {
+        "createdAt": "2025-06-08T03:34:30.164Z",
+        "updatedAt": "2025-06-08T03:34:30.164Z",
+        "tagId": 190,
+        "articleId": 73
+      }
+    },
+    {
+      "createdAt": "2025-06-08T03:32:49.849Z",
+      "updatedAt": "2025-06-08T03:32:49.849Z",
+      "id": 191,
+      "title": "awesome-selfhosted",
+      "title_cn": "awesome-selfhosted",
+      "sort": 189,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "awesome-selfhosted",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 1,
+      "updatedById": 1,
+      "articlesTags": {
+        "createdAt": "2025-06-08T03:34:30.165Z",
+        "updatedAt": "2025-06-08T03:34:30.165Z",
+        "tagId": 191,
+        "articleId": 73
+      }
     }
   ],
   "sub_tags": [],
@@ -266,9 +318,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2024-11-25T06:09:45.405Z",
+  "updatedAt": "2025-06-08T03:48:17.760Z",
   "author": "Zhang Lu",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null
 }
