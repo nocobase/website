@@ -3718,5 +3718,25 @@
     "title_cn": "awesome-selfhosted",
     "title_ja": "awesome-selfhosted",
     "updatedById": 1
+  },
+  {
+    "createdAt": "2025-06-08T04:15:37.716Z",
+    "updatedAt": "2025-06-08T04:15:37.716Z",
+    "createdById": 1,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 192,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 190,
+    "title": "crud application",
+    "title_cn": "crud 应用",
+    "title_ja": "CRUDアプリケーション",
+    "updatedById": 1
   }
 ]
