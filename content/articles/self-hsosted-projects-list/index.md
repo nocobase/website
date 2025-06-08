@@ -1,42 +1,42 @@
-Over a month ago, we published an article titled "[The Ultimate Guide to Awesome Self-Hosted Solutions](https://www.nocobase.com/en/blog/the-ultimate-guide-to-awesome-self-hosted-solutions)". In that piece, we explored the comparison between cloud services and self-hosted solutions, the potential challenges of self-hosting, how to choose the right self-hosted solution, and introduced five outstanding self-hosted products for various scenarios.
+A little over a month ago, we published an article titled "[The Ultimate Guide to Awesome Self-Hosted Solutions](https://www.nocobase.com/en/blog/the-ultimate-guide-to-awesome-self-hosted-solutions)". In it, we covered the pros and cons of cloud versus self-hosted solutions, potential self-hosting challenges, how to pick the right solution, and introduced five excellent self-hosted products for various needs.
 
-We won't go into the advantages of self-hosting again here. Instead, today, we will dive into some of the best self-hosted projects on GitHub!
+We won't repeat the advantages of self-hosting here. Instead, today we'll dive into some of the **best self-hosted projects on GitHub!**
 
-From [GitHub's self-hosted topic](https://github.com/topics/self-hosted), we have selected the top 13 projects with the highest number of stars. These projects not only have mature technology but also an active community to provide strong support.
+We've hand-picked the top 13 projects with the most stars from [GitHub's self-hosted topic](https://github.com/topics/self-hosted). These projects aren't just technologically mature; they also boast active communities offering robust support.
 
-This list is ordered by the number of stars on GitHub and is curated to bring some of the best projects to your attention.
+This list is ordered by GitHub stars and highlights some of the best projects available.
 
-(😁 If you find this article helpful, feel free to share it with friends interested in self-hosting.)
+(😁 If you find this article helpful, please share it with friends interested in self-hosting!)
 
-## **Quick Overview of the Top 13 Self-Hosted Projects**
+## **Quick Look: Top 13 Awesome Self-Hosted Projects**
 
-**13.NocoBase——Low-code/No-code Development Platform**
+**13. NocoBase – Low-code/No-code Development Platform**
 
-**12.khoj——AI Knowledge Management System**
+****12. Khoj – AI Knowledge Management System****
 
-**11.changedetection.io——Web Page Change Detection Tool**
+****11. Changedetection.io – Web Page Change Detection Tool****
 
-**10.Dashy——Dashboard Management Tool**
+****10. Dashy – Dashboard Management Tool****
 
-**9.SiYuan——Knowledge Management and Note-Taking System**
+****9. SiYuan – Knowledge Management and Note-Taking System****
 
-**8.SigNoz——Full-stack Application Monitoring and Log Analysis Platform**
+****8. SigNoz – Full-stack Application Monitoring and Log Analysis Platform****
 
-**7.ToolJet——Low-code Development Platform**
+****7. ToolJet – Low-code Development Platform****
 
-**6.Memos——Note-taking and Knowledge Management System**
+****6. Memos – Note-taking and Knowledge Management System****
 
-**5.Appsmith——Low-code Development Platform**
+****5. Appsmith – Low-code Development Platform****
 
-**4.Appwrite——Backend-as-a-Service (BaaS) Platform**
+****4. Appwrite – Backend-as-a-Service (BaaS) Platform****
 
-**3.Immich——Photo and Video Management Platform**
+****3. Immich – Photo and Video Management Platform****
 
-**2.Gogs——Git Repository Management Solution**
+****2. Gogs – Git Repository Management Solution****
 
-**1.n8n——Automation and Workflow Tool**
+**1. n8n – Automation and Workflow Tool**
 
-The list is ordered based on the number of stars on GitHub. Considering the project's activity and maintenance status, projects that haven't been updated in the last three days have been excluded. The table presents valuable GitHub data about each project.
+The list is ordered by GitHub stars. To ensure project activity and maintenance, we've excluded projects that haven't been updated in the last three days. The table below presents key GitHub data for each project.
 
 ## No.13：NocoBase
 
@@ -58,21 +58,21 @@ The list is ordered based on the number of stars on GitHub. Considering the proj
 
 **Introduction**
 
-NocoBase is an open-source, self-hosted low-code/no-code development platform designed for developers. Its plugin-based architecture allows developers to easily add and customize features to meet various complex business needs.
+NocoBase is an open-source, self-hostable low-code/no-code development platform built for developers. Its plugin-based architecture makes it easy to add and customize features for complex business needs.
 
-🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
+🙌 Try it out: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: NocoBase allows users to run applications and databases on their own servers, supporting various mainstream databases including MySQL, MariaDB, PostgreSQL, SQL Server, Oracle, and API integration.
-* **Customization**: As a low-code/no-code platform, NocoBase provides high customizability. Users can create and adjust applications via a WYSIWYG interface, and the plugin-based design allows for infinite extensions to meet specific business needs.
-* **Maintenance Costs**: Low long-term maintenance costs, suitable for enterprises that need quick development and deployment of custom systems without a large development team.
+* **Data Privacy & Control**: NocoBase lets you run applications and databases on your own servers, supporting popular databases like MySQL, MariaDB, PostgreSQL, SQL Server, Oracle, and API integration.
+* **Customization**: As a low-code/no-code platform, NocoBase is highly customizable. Users can create and adjust applications via a WYSIWYG interface, and its plugin-based design allows for limitless extensions to fit specific business requirements.
+* **Maintenance Costs**: Offers low long-term maintenance costs, making it suitable for businesses that need to rapidly develop and deploy custom systems without a large development team.
 
 **Use Cases**
 
-* **Rapid internal tool development**: such as CRM, project management systems, CMS, etc.
-* **Delivering client projects**: using NocoBase to build projects that meet client needs.
-* **As a company's infrastructure**: connecting and integrating different systems, unifying data and management.
+* **Rapid internal tool development**: For CRMs, project management systems, CMS, and more.
+* **Delivering client projects**: Building custom solutions for clients using NocoBase.
+* **Company infrastructure**: Connecting and integrating different systems, unifying data and management.
 
 💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
 
@@ -96,13 +96,13 @@ NocoBase is an open-source, self-hosted low-code/no-code development platform de
 
 **Introduction**
 
-Khoj is a self-hosted AI knowledge management system that integrates online AI models or deploys private local large language models to help teams and individuals organize and manage knowledge bases.
+Khoj is a self-hosted AI knowledge management system. It integrates with online AI models or deploys private local large language models to help teams and individuals organize and manage knowledge bases.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Khoj self-hosted on user servers ensures complete control and privacy of knowledge management data, ideal for users with high data security requirements.
-* **Customization**: Allows users to customize the structure and functionality of their knowledge management system according to their needs, including document types and storage methods.
-* **Maintenance Costs**: Users need to handle software installation, configuration, and maintenance themselves.
+* **Data Privacy & Control**: Self-hosting Khoj on your own servers ensures full control and privacy of your knowledge management data, perfect for users with high data security needs.
+* **Customization**: Allows users to tailor the structure and features of their knowledge management system, including document types and storage methods.
+* **Maintenance Costs**: Users are responsible for software installation, configuration, and maintenance.
 
 ## No.11：changedetection.io
 
@@ -124,12 +124,12 @@ Khoj is a self-hosted AI knowledge management system that integrates online AI m
 
 **Introduction**
 
-changedetection.io is an open-source web page change detection tool that monitors content changes on specified web pages and notifies users when changes occur.
+Changedetection.io is an open-source web page change detection tool. It monitors specified web pages for content changes and notifies users when they occur.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Self-hosting changedetection.io locally ensures that web monitoring data is not accessed by third parties, giving users complete control over monitoring data.
-* **Customization**: Allows detailed configuration of monitoring rules and notification mechanisms, suitable for highly customized use cases.
+* **Data Privacy & Control**: Self-hosting changedetection.io locally ensures that web monitoring data remains private and isn't accessed by third parties, giving users full control.
+* **Customization**: Allows detailed configuration of monitoring rules and notification mechanisms, ideal for highly specific use cases.
 * **Maintenance Costs**: Requires users to manage software updates and issue resolution, but reduces long-term costs.
 
 ## No.10：Dashy
@@ -154,13 +154,13 @@ changedetection.io is an open-source web page change detection tool that monitor
 
 Dashy is a self-hosted dashboard management tool that provides a visually appealing and easy-to-manage interface for accessing various services and applications.
 
-💡 Read More: [Top 6 Core App Dashboard Building Tools](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools)
+💡 **Read More:**[Top 6 Core App Dashboard Building Tools](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools)
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Dashy allows users to centralize all services and applications on a local dashboard, ensuring that user access information and settings are not interfered with by external services.
-* **Customization**: Supports integrating all commonly used services and applications into a single custom dashboard, with support for various themes and customization options.
-* **Maintenance Costs**: Requires users to handle the deployment and maintenance of the dashboard.
+* **Data Privacy & Control**: Dashy allows users to centralize all services and applications on a local dashboard, ensuring user access information and settings are protected from external interference.
+* **Customization**: Supports integrating all commonly used services and applications into a single custom dashboard, with various themes and customization options.
+* **Maintenance Costs**: Users are responsible for deploying and maintaining the dashboard.
 
 ## No.9：siyuan
 
@@ -184,13 +184,13 @@ Dashy is a self-hosted dashboard management tool that provides a visually appeal
 
 SiYuan is a privacy-first, fully open-source, self-hosted personal knowledge management software written in TypeScript and Golang.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: SiYuan can run on users' own servers, ensuring the privacy and security of notes and knowledge base data.
+* **Data Privacy & Control**: SiYuan can run on your own servers, ensuring the privacy and security of your notes and knowledge base data.
 * **Customization**: Supports rich document editing and organizational features, with plugins and extensions for personalized customization.
 * **Maintenance Costs**: Requires users to manage updates and technical support, but avoids long-term costs associated with cloud services.
 
-For anyone interested in [awesome self-hosted](https://affine.pro/blog/best-open-source-notion-alternatives) projects, one tool worth exploring is Affine. With over 41k stars on GitHub, Affine has quickly gained popularity for its open-source workspace designed to be entirely customizable and privacy-focused. It’s a fantastic option for users who want the flexibility of self-hosted tools without sacrificing collaborative features typically found in cloud solutions. Affine’s modular design also allows it to seamlessly adapt to various project needs, making it a valuable resource for teams and individuals alike.
+For anyone interested in [awesome self-hosted](https://affine.pro/blog/best-open-source-notion-alternatives) projects, Affine is worth exploring. With over 41k stars on GitHub, Affine has quickly gained popularity as an open-source workspace designed for complete customization and privacy. It's a fantastic choice for users who want the flexibility of self-hosted tools without sacrificing collaborative features typically found in cloud solutions. Affine's modular design also allows it to seamlessly adapt to various project needs, making it a valuable resource for teams and individuals alike.
 
 ## No.8：SigNoz
 
@@ -212,13 +212,13 @@ For anyone interested in [awesome self-hosted](https://affine.pro/blog/best-open
 
 **Introduction**
 
-SigNoz is an open-source observability platform that natively supports OpenTelemetry, integrating logs, traces, and metrics into one solution.
+SigNoz is an open-source observability platform that natively supports OpenTelemetry, combining logs, traces, and metrics into a single solution.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: SigNoz provides a locally deployed monitoring and log analysis solution, allowing users to control data storage and access permissions.
-* **Customization**: Allows users to configure monitoring dashboards, alerts, and data visualization options as needed, offering powerful customization features.
-* **Maintenance Costs**: Requires users to handle hardware and software maintenance.
+* **Data Privacy & Control**: SigNoz offers a locally deployable monitoring and log analysis solution, allowing users to control data storage and access permissions.
+* **Customization**: Users can configure monitoring dashboards, alerts, and data visualization options as needed, providing powerful customization features.
+* **Maintenance Costs**: Users are responsible for hardware and software maintenance.
 
 ## No.7：ToolJet
 
@@ -242,13 +242,13 @@ SigNoz is an open-source observability platform that natively supports OpenTelem
 
 ToolJet is an open-source low-code development platform that supports drag-and-drop interface building and various integrations for quickly creating and deploying custom web applications.
 
-💡 Read More: [Discover Top Tools: Accelerate Web Application Development](https://www.nocobase.com/en/blog/web-application-development)
+💡 **Read More:**[Discover Top Tools: Accelerate Web Application Development](https://www.nocobase.com/en/blog/web-application-development)
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
 * **Data Privacy & Control**: Users can deploy the platform on their own servers or private cloud, ensuring the privacy of applications and data.
 * **Customization**: Provides extensive drag-and-drop interface building capabilities, allowing users to customize applications based on business needs.
-* **Maintenance Costs**: Requires users to handle installation and maintenance.
+* **Maintenance Costs**: Users are responsible for installation and maintenance.
 
 ## No.6：memos
 
@@ -270,13 +270,13 @@ ToolJet is an open-source low-code development platform that supports drag-and-d
 
 **Introduction**
 
-Memos is an open-source self-hosted note-taking and knowledge management system designed to help users record and organize information, supporting Markdown editing.
+Memos is an open-source, self-hosted note-taking and knowledge management system designed to help users record and organize information, with Markdown editing support.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Memos allows users to run on their own servers, ensuring the security of notes and knowledge data. It provides powerful search and tagging features, suitable for individual or team use.
+* **Data Privacy & Control**: Memos allows users to run it on their own servers, ensuring the security of notes and knowledge data. It offers powerful search and tagging features, suitable for individual or team use.
 * **Customization**: Supports customizing notebook structure, tags, and categories for various note-taking and knowledge management needs.
-* **Maintenance Costs**: Requires users to handle technical support and maintenance.
+* **Maintenance Costs**: Users are responsible for technical support and maintenance.
 
 ## No.5：Appsmith
 
@@ -298,15 +298,15 @@ Memos is an open-source self-hosted note-taking and knowledge management system 
 
 **Introduction**
 
-Appsmith is an open-source low-code platform for quickly building, deploying, and managing effective software with enterprise-level security and governance.
+Appsmith is an open-source low-code platform for rapidly building, deploying, and managing effective software with enterprise-grade security and governance.
 
-💡 Read More: [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
+💡 **Read More:**[NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Appsmith allows hosting on users' own servers, ensuring the privacy and security of application data and user information.
+* **Data Privacy & Control**: Appsmith allows hosting on your own servers, ensuring the privacy and security of application data and user information.
 * **Customization**: Provides extensive low-code development capabilities, supporting integration with various data sources and custom interface design.
-* **Maintenance Costs**: Avoids high costs associated with commercial low-code platforms but requires users to manage self-hosted maintenance and support.
+* **Maintenance Costs**: Avoids the high costs of commercial low-code platforms but requires users to manage self-hosted maintenance and support.
 
 ## No.4：appwrite
 
@@ -328,12 +328,12 @@ Appsmith is an open-source low-code platform for quickly building, deploying, an
 
 **Introduction**
 
-Appwrite is an open-source Backend-as-a-Service (BaaS) platform offering user authentication, database, file storage, and more to help developers build applications quickly.
+Appwrite is an open-source Backend-as-a-Service (BaaS) platform offering user authentication, databases, file storage, and more to help developers build applications quickly.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
 * **Data Privacy & Control**: Appwrite can run on a local server, ensuring the security and privacy of all backend services and user data.
-* **Customization**: Offers various backend service features, including user authentication, database, and file storage, with flexible configuration and extension options.
+* **Customization**: Offers various backend service features, including user authentication, databases, and file storage, with flexible configuration and extension options.
 * **Maintenance Costs**: Avoids subscription fees for cloud services but requires users to handle system maintenance and updates.
 
 ## No.3：immich
@@ -356,12 +356,12 @@ Appwrite is an open-source Backend-as-a-Service (BaaS) platform offering user au
 
 **Introduction**
 
-Immich is an open-source self-hosted photo and video management platform offering photo backup, organization, and sharing functionalities.
+Immich is an open-source, self-hosted photo and video management platform offering photo backup, organization, and sharing functionalities.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
 * **Data Privacy & Control**: Immich allows users to manage and store photos and videos on their own servers, ensuring the privacy and security of media data.
-* **Customization**: Provides features like automatic backup and smart tagging, with configuration options based on user needs.
+* **Customization**: Provides features like automatic backup and smart tagging, with configurable options based on user needs.
 * **Maintenance Costs**: Reduces costs associated with external storage and backup services but requires handling server and software maintenance.
 
 ## No.2：Gogs
@@ -386,10 +386,10 @@ Immich is an open-source self-hosted photo and video management platform offerin
 
 Gogs is an open-source Git server designed to provide a simple, lightweight self-hosted Git repository management solution.
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
-* **Data Privacy & Control**: Gogs self-hosted on local servers ensures complete control over Git repository data.
-* **Customization**: Offers basic Git repository management features, with options for configuration and extension based on needs.
+* **Data Privacy & Control**: Self-hosting Gogs on local servers ensures complete control over Git repository data.
+* **Customization**: Offers basic Git repository management features, with configurable options and extensions based on needs.
 * **Maintenance Costs**: Gogs is easy to use, suitable for resource-limited environments but requires user management and maintenance.
 
 ## No.1：n8n
@@ -414,17 +414,19 @@ Gogs is an open-source Git server designed to provide a simple, lightweight self
 
 n8n is an open-source automation and workflow tool that allows users to create complex workflows and automation tasks, supporting a variety of integrations and triggers.
 
-💡 Read More: [⭐️ Top 10 Open-source Workflows Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
+💡 **Read More:**[⭐️ Top 10 Open-source Workflows Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
 
-**Self-Hosted Highlights**
+**Self-Hosted Advantages**
 
 * **Data Privacy & Control**: Self-hosting n8n ensures complete control over user data and automation processes.
-* **Customization**: Supports creating complex workflows and integrating various services, providing flexible automation solutions to meet diverse business needs.
+* **Customization**: Supports creating complex workflows and integrating various services, providing flexible automation solutions for diverse business needs.
 * **Maintenance Costs**: Reduces dependency on commercial automation platforms and associated costs but requires users to handle maintenance and updates.
 
 ## Conclusion
 
-This self-hosted project list includes low-code development platforms, knowledge management and note-taking systems, monitoring and log analysis tools, and more. We hope this list helps you find suitable self-hosted projects and make better use of their powerful data control capabilities, security, and customization options!
+This list of awesome self-hosted projects includes low-code development platforms, knowledge management and note-taking systems, monitoring and log analysis tools, and more.
+
+We hope this selection helps you discover suitable self-hosted projects and leverage their powerful data control, security, and customization options!
 
 **Related reading:**
 
