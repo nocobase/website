@@ -1,6 +1,6 @@
 {
   "id": 60,
-  "title": "How to Build Efficient CRUD Apps?",
+  "title": "How to Build Efficient CRUD Applications?",
   "title_cn": "如何构建高效的 CRUD 应用程序？",
   "title_ja": "効率的なCRUDアプリの構築方法",
   "description": "Discover how to master CRUD operations and build efficient CRUD apps with this comprehensive guide. Learn about common challenges, the advantages of code generation tools, and how low-code platforms like NocoBase can revolutionize your development process.",
@@ -243,6 +243,32 @@
         "tagId": 39,
         "articleId": 60
       }
+    },
+    {
+      "createdAt": "2025-06-08T04:15:37.716Z",
+      "updatedAt": "2025-06-08T04:15:37.716Z",
+      "id": 192,
+      "title": "crud application",
+      "title_cn": "crud 应用",
+      "sort": 190,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "CRUDアプリケーション",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 1,
+      "updatedById": 1,
+      "articlesTags": {
+        "createdAt": "2025-06-08T06:36:40.826Z",
+        "updatedAt": "2025-06-08T06:36:40.826Z",
+        "tagId": 192,
+        "articleId": 60
+      }
     }
   ],
   "sub_tags": [],
@@ -266,9 +292,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-03-27T08:17:12.879Z",
+  "updatedAt": "2025-06-08T06:36:40.815Z",
   "author": "Deng lijia",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null
 }
