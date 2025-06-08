@@ -641,8 +641,8 @@ export async function getSitemapLinks() {
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
-export async function listReleaseNotes(options?: { page?: number, pageSize?: number, milestoneOnly?: boolean }) {
-  const { page = 1, pageSize = 10, milestoneOnly = false } = options || {};
+export async function listReleaseNotes(options?: { page?: number, pageSize?: number, milestoneOnly?: boolean, locale?: string }) {
+  const { page = 1, pageSize = 10, milestoneOnly = false, locale = DEFAULT_LANGUAGE } = options || {};
   
   const filterConditions: any[] = [
     { 'tags.title': { $eq: 'Release Notes' } },
@@ -675,13 +675,19 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     const primaryTag = subTags[0]?.title || 'Latest';
     const allTags = subTags.map((t: any) => t.title?.toLowerCase() || '');
 
+
+    
+    // Use localized content based on locale parameter
+    const localizedContent = getLocalizedContent(article, 'content', locale);
+    const localizedTitle = getLocalizedContent(article, 'title', locale);
+    const localizedDescription = getLocalizedContent(article, 'description', locale);
+
     return {
       ...article,
+      title: localizedTitle,
+      description: localizedDescription,
+      content: localizedContent,
       tags: allTags,
-      content: article.content || '',
-      content_cn: article.content_cn || article.content || '',
-      content_ja: article.content_ja || article.content || '',
-      content_ru: article.content_ru || article.content || '',
       isMilestone: subTags.some((t: any) => t.title === 'Milestone'),
       priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
       publishedAt: article.publishedAt ? new Date(article.publishedAt) : new Date(),
@@ -703,6 +709,6 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   };
 }
 
-export async function listMilestoneNotes(options?: { page?: number, pageSize?: number }) {
+export async function listMilestoneNotes(options?: { page?: number, pageSize?: number, locale?: string }) {
   return listReleaseNotes({ ...options, milestoneOnly: true });
 }
