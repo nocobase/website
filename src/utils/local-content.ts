@@ -334,7 +334,7 @@ async function listContentItems(
         languages.forEach(lang => {
           const suffix = lang || '';
           const contentPath = path.join(contentDir, itemSlug, `index${suffix}.md`);
-          const field = lang ? `content${lang}` : 'content';
+          const field = lang ? `content${lang.replace('.', '_')}` : 'content';
           
       if (fs.existsSync(contentPath)) {
             metadata[field] = fs.readFileSync(contentPath, 'utf-8');

@@ -12,35 +12,16 @@ export const GET: APIRoute = async ({ request }) => {
   try {
     // 根据参数选择不同的数据获取方式
     const { data, meta } = milestoneOnly 
-      ? await listMilestoneNotes({ page, pageSize })
-      : await listReleaseNotes({ page, pageSize });
+      ? await listMilestoneNotes({ page, pageSize, locale: lang })
+      : await listReleaseNotes({ page, pageSize, locale: lang });
     
-    // Process the content for each note
-    const processedItems = await Promise.all(data.map(async (article) => {
-      let content = '';
-      let title = article.title;
-      let description = article.description;
-      
-      // 根据语言选择内容
-      if (lang === 'cn') {
-        content = article.content_cn || article.content || '';
-        title = article.title_cn || article.title;
-        description = article.description_cn || article.description;
-      } else if (lang === 'ja') {
-        content = article.content_ja || article.content || '';
-        title = article.title_ja || article.title;
-        description = article.description_ja || article.description;
-      } else {
-        content = article.content || '';
-      }
-      
+    // Process the content for each note (listReleaseNotes already handled localization)
+    const processedItems = await Promise.all(data.map(async (article: any) => {
       // Process markdown content
-      const renderedContent = await processMarkdown(content);
+      const renderedContent = await processMarkdown(article.content || '');
       
       return {
         ...article,
-        title,
-        description,
         renderedContent
       };
     }));

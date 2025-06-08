@@ -31,11 +31,11 @@ async function renderMarkdown(content: string) {
 }
 
 // Get first page of data (including milestone items)
-const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 20 });
+const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 20, locale: "ru" });
 
 const allItems = await Promise.all(releaseNotes.map(async (article: any) => ({
   ...article,
-  renderedContent: await renderMarkdown(article.content_ru || article.content || '') // Process original content
+  renderedContent: await renderMarkdown(article.content || '')
 })));
 
 const filterTypes = [
@@ -101,15 +101,15 @@ const tabs = [
                     {article.isMilestone ? (
                       <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
                         {article.cover && (
-                          <img src={url(article.cover.url)} class="img-fluid" alt={article.title_ru || article.title} />
+                          <img src={url(article.cover.url)} class="img-fluid" alt={article.title} />
                         )}
                         <div class="card-body">
                           <h4>
                             <a href={`${basepath}/${article.slug}`}>
-                              {article.title_ru || article.title}
+                              {article.title}
                             </a>
                           </h4>
-                          <p class="mt-3 mb-0 text-muted">{article.description_ru || article.description}</p>
+                          <p class="mt-3 mb-0 text-muted">{article.description}</p>
                         </div>
                       </div>
                     ) : (
@@ -117,7 +117,7 @@ const tabs = [
                         <div class="card-body">
                           <h5 class="h5">
                             <a href={`${basepath}/${article.slug}`}>
-                              {article.title_ru || article.title}
+                              {article.title}
                             </a>
                           </h5>
                           <div class="text-muted mt-2" set:html={article.renderedContent} />
