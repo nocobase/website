@@ -19,7 +19,7 @@ To help small businesses overcome these challenges, this article introduces six 
 
 ![Inventory Management.PNG](https://static-docs.nocobase.com/5f98bd0962270eb6048d518a6c272d32.PNG)
 
-## Top 6 Inventory Management Tools for Small Businesses
+## Top 6 Inventory System for Small Business
 
 ### 1. **[NocoBase](https://www.nocobase.com/) - Open-Source No-Code/Low-Code Platform**
 
