@@ -322,3 +322,12 @@ DreamFactory 是 Firebase 替代方案中的“特殊选手”，适用于：
 Firebase 是很多开发者迈入全栈开发的第一站，但它并不是唯一的选择。无论你是希望更好地掌控数据、实现私有部署，还是想在已有数据库基础上快速搭建应用，这些开源替代方案都为你提供了更多的可能性。
 
 每种工具都有各自的优势与边界，关键在于选一个**最适合你项目场景和技术栈的工具**。希望这篇文章能帮你更清晰地做出判断，也欢迎你在评论或社群中分享你的使用体验。
+
+**相关阅读：**
+
+* [2025 年 AppSheet 最佳开源替代品 ](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [替代 Airtable / 飞书表格？用零代码构建多对多关系的任务管理系统 ](https://www.nocobase.com/cn/blog/appsheet-alternative)
+* [2025 年开源替代方案为何正在取代 OutSystems？技术自由度与成本优势深度解析 ](https://www.nocobase.com/cn/blog/outsystems-open-source-alternatives)
+* [四个强大的 Salesforce 开源替代方案（附成本对比） ](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)
+* [2025 年最佳的 Retool 开源替代方案 ](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)
+* [GitHub上 Star 数量最多的 Airtable 开源替代者 ](https://www.nocobase.com/cn/blog/open-source-airtable-alternatives)
