@@ -65,7 +65,6 @@ RESTやGraphQLのAPI、JavaScriptやFlutter、iOSなど主要環境向けのSDK�
 
 * ✅＝本番運用向けの完全対応
 * ⚠️＝一部制限あり・追加設定が必要
-
 * 🚫＝現時点では未対応
 
 ## 1. [NocoBase]([NocoBase](https://www.nocobase.com/))
@@ -244,3 +243,12 @@ Firebaseは、多くの開発者にとってフルスタック開発のはじま
 あなたにとって最適なツールを選ぶヒントになっていれば嬉しいです。
 
 もし実際に使ってみた経験があれば、ぜひコメント欄やコミュニティで教えてください。お待ちしています！
+
+**関連読み物：**
+
+* [AppSheetの代替物として最適なものは2025年です ](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [AppSheetの代替に！ノーコードで多対多タスク管理を簡単に作る方法 ](https://www.nocobase.com/ja/blog/appsheet-alternative)
+* [2025 年、オープンソース代替案がOutSystemsを置き換えつつある理由：技術的自由度とコスト優位性の徹底分析 ](https://www.nocobase.com/ja/blog/outsystems-open-source-alternatives)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり） ](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
+* [2025年のRetoolに対する最良のオープンソース代替品 ](https://www.nocobase.com/ja/blog/retool-open-source-alternatives)
+* [GitHubで最もスターを獲得したAirtableのオープンソース代替品トップ7 ](https://www.nocobase.com/ja/blog/open-source-airtable-alternatives)
