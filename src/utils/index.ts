@@ -32,8 +32,10 @@ const caches = {
 };
 
 // Utility functions
+// For local content mode: permanent cache (always valid)
+// For API mode: time-based cache (5 minutes timeout)
 const isValidCacheEntry = (entry: { timestamp: number }) => 
-  Date.now() - entry.timestamp < CONFIG.cacheTimeout;
+  CONFIG.useLocalContent ? true : Date.now() - entry.timestamp < CONFIG.cacheTimeout;
 
 const getCacheKey = (id: string, updatedAt?: string, locale?: string) => 
   `${id}-${updatedAt || 'latest'}-${locale || DEFAULT_LANGUAGE}`;

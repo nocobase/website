@@ -21,9 +21,9 @@ const caches = {
   directoryCache: new Map<string, { files: string[]; timestamp: number }>(),
 };
 
-// Utility functions
+// Utility functions - permanent cache for local content
 const isValidCacheEntry = (entry: { timestamp: number }) => 
-  Date.now() - entry.timestamp < CONFIG.cacheTimeout;
+  true; // Always valid for local content - permanent cache
 
 // Create markdown processor with caching
 async function createMarkdownProcessor() {
@@ -491,6 +491,7 @@ async function getCategoryOrTag(type: 'categories' | 'tags', slug?: string, subP
 
   const cacheKey = `${type}-${slug}-${subPath || ''}`;
   const cached = categoryTagCache.get(cacheKey);
+  // Use permanent cache for local content
   if (cached && isValidCacheEntry(cached)) {
     return cached.data;
   }
