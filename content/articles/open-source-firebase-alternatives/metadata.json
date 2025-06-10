@@ -8,7 +8,7 @@
   "description_ja": "Firebase がデータロックイン、コスト上昇、アクセス制限などの課題に直面した場合、開発者はどう突破する？NocoBase や Supabase、Appwrite など 6 つのオープンソースソリューションを解説し、データの自由度とコスト管理を実現します。",
   "slug": "open-source-firebase-alternatives",
   "publishedAt": "2025-06-09T07:47:32.240Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-09T09:12:38.067Z"
+  "updatedAt": "2025-06-10T01:32:57.987Z"
 }
