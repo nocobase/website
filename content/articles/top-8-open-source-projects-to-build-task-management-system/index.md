@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on June 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+
 Nowadays, it’s hard to imagine life without task management software (or task management systems).
 
 Whether for personal use, managing *[tasks handled by project managers](https://jooble.org/career-advice/what-does-a-project-manager-do/)*, or coordinating team projects within a company, task management tools are part of our daily routines. You’ve likely used some popular tools like Asana, Jira, or Notion.
@@ -33,7 +35,7 @@ Here are some key factors to consider:
 
 **Project URL**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-⭐️ **GitHub Stars**: 12.6k
+⭐️ **GitHub Stars**: 15.8k
 
 ![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
 
@@ -76,7 +78,7 @@ Ideal for enterprise-level task management systems that require high customizati
 
 **Project URL**: [https://github.com/redmine/redmine](https://github.com/redmine/redmine)
 
-⭐️ **GitHub Stars**: 5.3k
+⭐️ **GitHub Stars**: 5.6k
 
 ![Redmine.png](https://static-docs.nocobase.com/ac66b131e88dba3e24c18447f283827e.png)
 
@@ -111,7 +113,7 @@ Ideal for teams needing multi-project management and time tracking, especially s
 
 **Project URL**: [https://github.com/opf/openproject](https://github.com/opf/openproject)
 
-⭐️ **GitHub Stars**: 9.4k
+⭐️ **GitHub Stars**: 11.2k
 
 ![OpenProject.png](https://static-docs.nocobase.com/b7a808e313954b8ed2450478bda32000.png)
 
@@ -146,7 +148,7 @@ Ideal for teams needing comprehensive project management features, especially th
 
 **Project URL**: [https://github.com/kanboard/kanboard](https://github.com/kanboard/kanboard)
 
-⭐️ **GitHub Stars**: 8.5k
+⭐️ **GitHub Stars**: 9k
 
 ![Kanboard.png](https://static-docs.nocobase.com/91def75da939a9d46e0e81c55a0499df.png)
 
@@ -181,7 +183,7 @@ Ideal for teams needing simple, intuitive task management, especially small team
 
 **Project URL**: [https://github.com/erengy/taiga](https://github.com/erengy/taiga)
 
-⭐️ **GitHub Stars**: 2.1k
+⭐️ **GitHub Stars**: 2.2k
 
 ![Taiga.png](https://static-docs.nocobase.com/3acfb7902377e91bdc34a19c8ca8de57.png)
 
@@ -216,7 +218,7 @@ Ideal for Agile development teams that need to manage user stories and Sprints.
 
 **Project URL**: [https://github.com/JordanKnott/taskcafe](https://github.com/JordanKnott/taskcafe)
 
-⭐️ **GitHub Stars**: 4.3k
+⭐️ **GitHub Stars**: 4.7k
 
 ![Taskcafe.png](https://static-docs.nocobase.com/cd2d4576aa39d6e8c0acf7209d10eb6d.png)
 
@@ -251,7 +253,7 @@ Perfect for individuals or small teams looking for a lightweight yet feature-ric
 
 **Project URL**: [https://github.com/wekan/wekan](https://github.com/wekan/wekan)
 
-⭐️ **GitHub Stars**: 19.6k
+⭐️ **GitHub Stars**: 20.4k
 
 ![WeKan.png](https://static-docs.nocobase.com/e6854d7a1af97186d5552665a056eee8.png)
 
@@ -286,7 +288,7 @@ Ideal for teams needing a Kanban-based task management system, especially those 
 
 **Project URL**: [https://github.com/mattermost-community/focalboard](https://github.com/mattermost-community/focalboard)
 
-⭐️ **GitHub Stars**: 21.9k
+⭐️ **GitHub Stars**: 23.5k
 
 ![Focalboard.png](https://static-docs.nocobase.com/bf8a4183c102456be0c06b556c3b5d0a.png)
 
