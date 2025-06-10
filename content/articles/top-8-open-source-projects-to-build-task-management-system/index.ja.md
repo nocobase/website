@@ -1,3 +1,5 @@
+📝 注：この記事は 2025 年 6 月 10 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 現在、タスク管理ソフトウェア（またはタスク管理システム）なしの生活を想像するのは難しいです。
 
 個人使用や企業内のチームプロジェクトの調整にかかわらず、タスク管理ツールは私たちの日常的なルーチンの一部です。おそらく、Asana、Jira、Notionなどの人気ツールを使用したことがあるでしょう。
@@ -33,7 +35,7 @@
 
 **プロジェクトURL**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-⭐️ **GitHubスター数**: 12.6k
+⭐️ **GitHubスター数**: 15.8k
 
 ![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
 
@@ -76,7 +78,7 @@ NocoBaseは、ユーザーが簡単に始められるように、[タスク管�
 
 **プロジェクトURL**: [https://github.com/redmine/redmine](https://github.com/redmine/redmine)
 
-⭐️ **GitHubスター数**: 5.3k
+⭐️ **GitHubスター数**: 5.6k
 
 ![Redmine.png](https://static-docs.nocobase.com/ac66b131e88dba3e24c18447f283827e.png)
 
@@ -111,7 +113,7 @@ Redmineは、Ruby on Railsに基づくオープンソースのプロジェクト
 
 **プロジェクトURL**: [https://github.com/opf/openproject](https://github.com/opf/openproject)
 
-⭐️ **GitHubスター数**: 9.4k
+⭐️ **GitHubスター数**: 11.2k
 
 ![OpenProject.png](https://static-docs.nocobase.com/b7a808e313954b8ed2450478bda32000.png)
 
@@ -146,7 +148,7 @@ OpenProjectは、アジャイルおよび従来のプロジェクト管理メソ
 
 **プロジェクトURL**: [https://github.com/kanboard/kanboard](https://github.com/kanboard/kanboard)
 
-⭐️ **GitHubスター数**: 8.5k
+⭐️ **GitHubスター数**: 9k
 
 ![Kanboard.png](https://static-docs.nocobase.com/91def75da939a9d46e0e81c55a0499df.png)
 
@@ -181,7 +183,7 @@ Kanboardは、シンプルなタスク管理に焦点を当てた軽量のオー
 
 **プロジェクトURL**: [https://github.com/erengy/taiga](https://github.com/erengy/taiga)
 
-⭐️ **GitHubスター数**: 2.1k
+⭐️ **GitHubスター数**: 2.2k
 
 ![Taiga.png](https://static-docs.nocobase.com/3acfb7902377e91bdc34a19c8ca8de57.png)
 
@@ -216,7 +218,7 @@ Taigaは、アジャイルチーム向けに設計されたオープンソース
 
 **プロジェクトURL**: [https://github.com/JordanKnott/taskcafe](https://github.com/JordanKnott/taskcafe)
 
-⭐️ **GitHubスター数**: 4.3k
+⭐️ **GitHubスター数**: 4.7k
 
 ![Taskcafe.png](https://static-docs.nocobase.com/cd2d4576aa39d6e8c0acf7209d10eb6d.png)
 
@@ -251,7 +253,7 @@ Taskcafeは、カンバンスタイルのインターフェースを持つオー
 
 **プロジェクトURL**: [https://github.com/wekan/wekan](https://github.com/wekan/wekan)
 
-⭐️ **GitHubスター数**: 19.6k
+⭐️ **GitHubスター数**: 20.4k
 
 ![WeKan.png](https://static-docs.nocobase.com/e6854d7a1af97186d5552665a056eee8.png)
 
@@ -286,7 +288,7 @@ WeKanは、高い完成度を誇るオープンソースのカンバンツール
 
 **プロジェクトURL**: [https://github.com/mattermost-community/focalboard](https://github.com/mattermost-community/focalboard)
 
-⭐️ **GitHubスター数**: 21.9k
+⭐️ **GitHubスター数**: 23.5k
 
 ![Focalboard.png](https://static-docs.nocobase.com/bf8a4183c102456be0c06b556c3b5d0a.png)
 
