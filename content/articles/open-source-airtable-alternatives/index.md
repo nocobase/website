@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on June 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+
 I'm sure you are familiar with Airtable.
 
 Founded in 2012, it began to gain significant popularity around 2018, when its user base and market share surged. **This can be attributed to its intuitive interface and ease of use—users can build powerful management tools without any programming skills through simple drag-and-drop actions, unlike traditional database systems.**
@@ -47,7 +49,7 @@ This article presents a list of the most popular open source alternatives to Air
 
 GitHub：https://github.com/nocodb/nocodb
 
-GitHub Star：48.1k
+GitHub Star：54.8k
 
 License：[AGPL-3.0](https://github.com/nocodb/nocodb?tab=AGPL-3.0-1-ov-file#)
 
@@ -59,13 +61,47 @@ License：[AGPL-3.0](https://github.com/nocodb/nocodb?tab=AGPL-3.0-1-ov-file#)
 
 💡 Read More: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
 
-### [No. 2 AITable.ai](https://aitable.ai/)
+### [No. 2 teable](https://teable.io/)
+
+![teable.png](https://static-docs.nocobase.com/ef7502177b7b70f9bbe2aa8b3d12c3bc.png)
+
+GitHub：https://github.com/teableio/teable
+
+GitHub Star：18.6k
+
+License：[AGPL-3.0](https://github.com/teableio/teable/blob/develop/AGPL_LICENSE)
+
+**Highlights**
+
+* **User-Friendly Interface**: Offers a fast, powerful, and liberating spreadsheet-like interface that is easy to use without programming knowledge, enabling teams to build the systems they need.
+* **High-Performance Processing**: Users can create tables and structures directly on physical databases, processing millions of rows swiftly without performance loss or row limits.
+* **Data Security and Extensibility**: Supports self-hosted data, combining the convenience of the cloud with complete data control, built on PostgreSQL for seamless ecosystem integration and easy BI, low-code, and ETL tool expansion.
+
+### [No. 3 NocoBase](https://www.nocobase.com/)
+
+![NocoBase.png](https://static-docs.nocobase.com/fc5417e9d42c822cb56b23dc389165e3.png)
+
+GitHub：https://github.com/nocobase/nocobase
+
+GitHub Star：15.8k
+
+License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
+
+**Highlights**
+
+* **Flexible Data Model-Driven Development**: NocoBase employs a data model-driven approach, separating the user interface from the data structure, allowing limitless development capabilities.
+* **User-Friendly Configuration Interface**: Provides an easy-to-use WYSIWYG interface, enabling users to switch between usage and configuration modes with one click, allowing for rapid development of complex business systems without programming experience.
+* **Open Source and Plugin Architecture**: The core and basic plugins of NocoBase are fully open-source, ensuring transparency and control. Its microkernel architecture allows for modular functionality, making it easy to install and develop plugins for evolving business needs.
+
+🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
+
+### [No. 4 AITable.ai](https://aitable.ai/)
 
 ![AITable.ai.png](https://static-docs.nocobase.com/6027f107455a51b80fdb146bcc74ae50.png)
 
 GitHub：https://github.com/apitable/apitable
 
-GitHub Star：13k
+GitHub Star：14.5k
 
 License：[AGPL-3.0](https://github.com/apitable/apitable?tab=AGPL-3.0-1-ov-file#)
 
@@ -78,47 +114,13 @@ License：[AGPL-3.0](https://github.com/apitable/apitable?tab=AGPL-3.0-1-ov-file
 
 * **AI Customer Service and Sales Support**: With customizable ChatGPT tools, users can create smart customer service and sales chatbots to optimize customer support and lead management.
 
-### [No. 3 NocoBase](https://www.nocobase.com/)
-
-![NocoBase.png](https://static-docs.nocobase.com/fc5417e9d42c822cb56b23dc389165e3.png)
-
-GitHub：https://github.com/nocobase/nocobase
-
-GitHub Star：12k
-
-License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
-
-**Highlights**
-
-* **Flexible Data Model-Driven Development**: NocoBase employs a data model-driven approach, separating the user interface from the data structure, allowing limitless development capabilities.
-* **User-Friendly Configuration Interface**: Provides an easy-to-use WYSIWYG interface, enabling users to switch between usage and configuration modes with one click, allowing for rapid development of complex business systems without programming experience.
-* **Open Source and Plugin Architecture**: The core and basic plugins of NocoBase are fully open-source, ensuring transparency and control. Its microkernel architecture allows for modular functionality, making it easy to install and develop plugins for evolving business needs.
-
-🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
-
-### [No. 4 teable](https://teable.io/)
-
-![teable.png](https://static-docs.nocobase.com/ef7502177b7b70f9bbe2aa8b3d12c3bc.png)
-
-GitHub：https://github.com/teableio/teable
-
-GitHub Star：11.4k
-
-License：[AGPL-3.0](https://github.com/teableio/teable/blob/develop/AGPL_LICENSE)
-
-**Highlights**
-
-* **User-Friendly Interface**: Offers a fast, powerful, and liberating spreadsheet-like interface that is easy to use without programming knowledge, enabling teams to build the systems they need.
-* **High-Performance Processing**: Users can create tables and structures directly on physical databases, processing millions of rows swiftly without performance loss or row limits.
-* **Data Security and Extensibility**: Supports self-hosted data, combining the convenience of the cloud with complete data control, built on PostgreSQL for seamless ecosystem integration and easy BI, low-code, and ETL tool expansion.
-
 ### [No. 5 rowy](https://www.rowy.io/)
 
 ![rowy.png](https://static-docs.nocobase.com/94ec83be328adf7b5603add63d9f5866.png)
 
 GitHub：https://github.com/rowyio/rowy
 
-GitHub Star：6k
+GitHub Star：6.6k
 
 License：[Apache](https://github.com/rowyio/rowy?tab=License-1-ov-file#)
 
@@ -134,7 +136,7 @@ License：[Apache](https://github.com/rowyio/rowy?tab=License-1-ov-file#)
 
 GitHub：https://github.com/bram2w/baserow
 
-GitHub Star：2.3k
+GitHub Star：2.7k
 
 License：[MIT](https://github.com/bram2w/baserow?tab=License-1-ov-file#)
 
@@ -150,7 +152,7 @@ License：[MIT](https://github.com/bram2w/baserow?tab=License-1-ov-file#)
 
 GitHub：https://github.com/undb-io/undb
 
-GitHub Star：2.1k
+GitHub Star：2.6k
 
 License：[AGPL-3.0](https://github.com/undb-io/undb?tab=AGPL-3.0-1-ov-file#)
 
