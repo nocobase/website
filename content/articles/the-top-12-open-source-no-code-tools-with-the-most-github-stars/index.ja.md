@@ -200,24 +200,38 @@ Flowise は、AI駆動のアプリケーションを迅速に構築およびテ�
 
 ## 第5位：AnythingLLM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGIxOWI3YjMxZDY2OTcxOWFmNTgxYmVhZjlmZDAwNTRfS1d4bTI4eTRIVGZxR3VSZ2JOOXM0TXBZUm9tUmFxTGJfVG9rZW46QTlyeGJpTk1Sb1hwZ2p4UnVWNmNXNm9PbjJiXzE3NDk1NjMxNTk6MTc0OTU2Njc1OV9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/anythingllm-f23lvh.png)
 
 
-| GitHub            | [https://github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| GitHub スター数   | 45.2k                                                                                          |
-| GitHub 最終更新日 | Within one day                                                                                 |
-| 公式サイト        | [https://anythingllm.com/](https://anythingllm.com/)                                           |
-| ドキュメント      | [https://docs.anythingllm.com/](https://docs.anythingllm.com/)                                 |
+| GitHub                | [https://github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| **GitHub スター数**   | 45.2k                                                                                          |
+| **GitHub 最終更新日** | 当日                                                                                           |
+| **公式サイト**        | [https://anythingllm.com/](https://anythingllm.com/)                                           |
+| **ドキュメント**      | [https://docs.anythingllm.com/](https://docs.anythingllm.com/)                                 |
 
-## **第3位：NocoDB**
+**概要：**
+
+AnythingLLM はオープンソースの AI プラットフォームで、複数の AI モデルを接続できるほか、ローカル環境での導入も可能です。検索強化生成（RAG）機能とインテリジェントエージェント機能を組み合わせ、簡単に企業用の AI アシスタントやアプリを作ることができます。
+
+**特徴:**
+
+* **複数モデル対応**：強力な LLM（大規模言語モデル）を組み込んでいて、好きなモデルをワンクリックで使えます。OpenAI、Azure、AWS などの企業向けクラウドモデルもサポートします。
+* **多様なドキュメントとオンラインインポート**：PDF、Word、CSV、コードなどのファイルを処理でき、オンラインからデータを取り込むことも可能。さまざまな業務でのデータ需求を満たします。
+* **データセキュリティ確保**：デフォルトで全てのモデル、ベクトルデータベースなどをローカルで動作させるため、データが外部に漏れません。ユーザーが許可した場合のみデータを共有し、企業・個人的なプライバシーを保護します。
+
+**使用シナリオ:**
+
+企業独自の知識ベースチャットボットや、自動化 AI アシスタント、個人用生産性ツール、チームでの協力プラットフォームを作るのに適しています。
+
+## **第4位：NocoDB**
 
 ![NocoDB](https://static-docs.nocobase.com/02de298c31965e6683438fe538d182a6.png)
 
 
 | **GitHub**            | [https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb) |
 | --------------------- | -------------------------------------------------------------------- |
-| **GitHub スター数**   | 51.7k                                                                |
+| **GitHub スター数**   | 54.8k                                                                |
 | **GitHub 最終更新日** | 当日                                                                 |
 | **公式サイト**        | [https://nocodb.com/](https://nocodb.com/)                           |
 | **ドキュメント**      | [https://docs.nocodb.com/](https://docs.nocodb.com/)                 |
@@ -240,40 +254,14 @@ NocoDB は、データ集約型の操作を必要とする企業に適してお�
 
 💡 続きを読む：[NocoBase と NocoDB：オープンソースノーコードツールの詳細比較](https://www.nocobase.com/ja/blog/nocobase-vs-nocodb)
 
-## **第2位：n8n**
-
-![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
-
-
-| GitHub            | [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n) |
-| ----------------- | -------------------------------------------------------------- |
-| GitHub スター数   | 60.5k                                                          |
-| GitHub 最終更新日 | 当日                                                           |
-| 公式サイト        | [https://n8n.io/](https://n8n.io/)                             |
-| ドキュメント      | [https://docs.n8n.io/](https://docs.n8n.io/)                   |
-
-**概要:**
-
-n8n は、オープンソースのノーコード自動化ツールで、高度にカスタマイズ可能なワークフローをサポートし、ユーザーが異なるアプリケーションを接続してデータ同期や自動化タスクを実現するのに役立ちます。
-
-**特徴:**
-
-* **ビジュアルワークフロー構築**：ドラッグ＆ドロップのノードを使用して自動化プロセスを作成し、コーディングなしで複雑なロジックを実現します。
-* **セルフホスティングとクラウドオプション**：オンプレミスでの展開をサポートし、データプライバシーを確保すると同時に、クラウド版も提供し、さまざまなユーザーニーズに対応します。
-* **豊富な統合**：Google Sheets、Notion、CRM、データベースなど400以上のアプリケーション統合を内蔵し、API接続をサポートして機能を柔軟に拡張できます。
-
-**使用シナリオ:**
-
-n8n は、日常業務の自動化を希望する個人やチームに適しており、データ同期、マーケティング自動化、カスタマーサポートチケット処理、ビジネスプロセス自動化などのシナリオで有効です。
-
-## **第1位：Strapi**
+## **第3位：Strapi**
 
 ![Strapi](https://static-docs.nocobase.com/606c1cb202f9e6bcaad5e40ebfdbb46d.png)
 
 
 | **GitHub**            | [https://github.com/strapi/strapi](https://github.com/strapi/strapi) |
 | --------------------- | -------------------------------------------------------------------- |
-| **GitHub スター数**   | 65k                                                                  |
+| **GitHub スター数**   | 66.9k                                                                |
 | **GitHub 最終更新日** | 当日                                                                 |
 | **公式サイト**        | [https://strapi.io/](https://strapi.io/)                             |
 | **ドキュメント**      | [https://docs.strapi.io/](https://docs.strapi.io/)                   |
@@ -291,6 +279,58 @@ Strapi は、100% JavaScript / TypeScript で構築されたオープンソー�
 **使用シナリオ:**
 
 Strapi は、コンテンツを柔軟に管理し、API を通じてさまざまなフロントエンドフレームワークで使用したい開発者やチームに適しています。
+
+## 第2位：Dify
+
+![dify](https://static-docs.nocobase.com/dify-lofqc2.png)
+
+
+| GitHub            | [https://github.com/langgenius/dify](https://github.com/langgenius/dify) |
+| ----------------- | ------------------------------------------------------------------------ |
+| GitHub スター数   | 103k                                                                     |
+| GitHub 最終更新日 | 当日                                                                     |
+| 公式サイト        | [https://dify.ai/](https://dify.ai/)                                     |
+| ドキュメント      | [https://docs.dify.ai/](https://docs.dify.ai/)                           |
+
+**概要：**
+
+Dify はローカル環境で導入可能なオープンソースの AI アプリ開発プラットフォームで、開発者やチームが大規模言語モデルを使った AI の試作版やアプリをすぐに作って管理、公開できるよう支援します。
+
+**特徴:**
+
+* **複数モデル対応**：OpenAI、Anthropic、Google Gemini、Moonshot、Deepseek などの主流の大規模言語モデルを使うことができます。
+* **視覚的な流れ設定**：Prompt Flow（プロンプトフロー）デザイナーを使えば、コードを書かなくても何度もやり取りする会話や複雑なロジックを作ることができます。
+* **埋め込みと API 呼び出し**：作った AI アプリは Web Widget、API、または組み込み形式でどんなプラットフォームにも導入できます。
+
+**使用シナリオ:**
+
+AI 製品の試作版をすぐに作りたい、社内用の AI アシスタントを導入したい、またはカスタムの AI ツールを作りたい開発者や企業に適しています。
+
+## **第1位：n8n**
+
+![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
+
+
+| GitHub            | [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n) |
+| ----------------- | -------------------------------------------------------------- |
+| GitHub スター数   | 106k                                                           |
+| GitHub 最終更新日 | 当日                                                           |
+| 公式サイト        | [https://n8n.io/](https://n8n.io/)                             |
+| ドキュメント      | [https://docs.n8n.io/](https://docs.n8n.io/)                   |
+
+**概要:**
+
+n8n は、オープンソースのノーコード自動化ツールで、高度にカスタマイズ可能なワークフローをサポートし、ユーザーが異なるアプリケーションを接続してデータ同期や自動化タスクを実現するのに役立ちます。
+
+**特徴:**
+
+* **ビジュアルワークフロー構築**：ドラッグ＆ドロップのノードを使用して自動化プロセスを作成し、コーディングなしで複雑なロジックを実現します。
+* **セルフホスティングとクラウドオプション**：オンプレミスでの展開をサポートし、データプライバシーを確保すると同時に、クラウド版も提供し、さまざまなユーザーニーズに対応します。
+* **豊富な統合**：Google Sheets、Notion、CRM、データベースなど400以上のアプリケーション統合を内蔵し、API接続をサポートして機能を柔軟に拡張できます。
+
+**使用シナリオ:**
+
+n8n は、日常業務の自動化を希望する個人やチームに適しており、データ同期、マーケティング自動化、カスタマーサポートチケット処理、ビジネスプロセス自動化などのシナリオで有効です。
 
 **関連する読み物：**
 
