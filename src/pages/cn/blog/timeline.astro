@@ -446,8 +446,12 @@ const tabs = [
           milestoneItems = data.items;
           milestoneLoaded = true;
           
-          // If currently showing milestone filter, render the items
+          // If currently showing milestone filter, clear container and render the items
           if (currentFilter === 'milestone') {
+            const container = document.getElementById('timeline-container');
+            if (container) {
+              container.innerHTML = '';
+            }
             renderNewItems(milestoneItems, false);
           }
         }
@@ -531,6 +535,12 @@ const tabs = [
       console.log('Applying filter:', filterValue);
       currentFilter = filterValue.toLowerCase();
       
+      // Always clear the container first to avoid stale data
+      const container = document.getElementById('timeline-container');
+      if (container) {
+        container.innerHTML = '';
+      }
+      
       if (currentFilter === 'milestone') {
         // Load milestone data if not loaded yet (with loading indicator)
         if (!milestoneLoaded) {
@@ -539,19 +549,9 @@ const tabs = [
           // Render milestone items immediately if already loaded
           renderNewItems(milestoneItems, false);
         }
-      } else {
-        // For "all" filter, combine all loaded items including milestones
-        const container = document.getElementById('timeline-container');
-        if (container) {
-          container.innerHTML = '';
-          
-          // Combine regular items and milestone items for "all" filter
-          const itemsToRender = currentFilter === 'all' && milestoneLoaded
-            ? combineAndSortItems(allLoadedItems, milestoneItems)
-            : allLoadedItems;
-          
-          renderNewItems(itemsToRender, false);
-        }
+            } else {
+        // For non-milestone filters, only render regular loaded items
+        renderNewItems(allLoadedItems, false);
       }
       
       // Apply filter to current items
