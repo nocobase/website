@@ -1,10 +1,10 @@
-**Note:** This data was last updated on February 14, 2025. We update it regularly to ensure you have the latest information! 😊
+📝 Note: This article was last updated on June 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 In this article, we will explore 12 leading open-source, no-code tools on [GitHub](https://github.com/topics/no-code), each distinguished by its star ranking.
 
 Each tool is designed to streamline and accelerate the development process, though they each focus on different application scenarios.
 
-From the highly customizable [NocoBase](https://www.nocobase.com/) for complex business systems to APITable for flexible data table management; from Teable supporting spreadsheet-style data operations to AMIS helping businesses quickly build admin panels; GrapesJS enables users to create web templates via a visual interface, Budibase simplifies internal tool development, and Directus offers a flexible headless CMS solution. Meanwhile, ToolJet serves as a powerful low-code development platform, Flowise enables visual AI workflow construction, NocoDB transforms traditional SQL databases into Airtable-style tools, n8n provides robust automation workflows, and Strapi remains a leading headless CMS solution.
+From the highly customizable [NocoBase](https://www.nocobase.com/) to the spreadsheet-style Teable, and the visual web template tool GrapesJS, Budibase focuses on internal tool development. Directus and Strapi offer flexible headless CMS solutions; ToolJet serves as a powerful low-code platform, Flowise supports AI process building, NocoDB makes SQL databases more user-friendly, and n8n provides automated workflows. Dify enables rapid development of intelligent AI applications, while AnythingLLM supports multi-format documents and private AI assistants. These tools cover core needs in back-office management, content management, automation, and AI applications.
 
 💡 **Read more:** [Top 15 Open-Source Low-Code Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 
@@ -17,7 +17,7 @@ This article will meticulously outline the core features and suitable scenarios 
 
 | **GitHub**                           | https://github.com/nocobase/nocobase |
 | ------------------------------------ | ------------------------------------ |
-| **GitHub Star**                      | 13.5k                                |
+| **GitHub Star**                      | 15.8k                                |
 | **The most recent update on GitHub** | Within one day                       |
 | **Official website**                 | https://www.nocobase.com/            |
 | **Documentation**                    | https://docs.nocobase.com/           |
@@ -38,42 +38,14 @@ NocoBase is ideal for technical teams needing to quickly develop and deploy comp
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
-## Number 11: APITable
-
-![APITable](https://static-docs.nocobase.com/7719f41745164306ebfe7b5e0fc128de.png)
-
-
-| **GitHub**                           | https://github.com/apitable/apitable           |
-| ------------------------------------ | ---------------------------------------------- |
-| **GitHub Star**                      | 13.8k                                          |
-| **The most recent update on GitHub** | Two months ago                                 |
-| **Official website**                 | https://aitable.ai/                            |
-| **Documentation**                    | https://developers.aitable.ai/api/introduction |
-
-**Introduction:**
-
-APITable is a powerful automation tool focused on streamlining workflows through a visual database, supporting connections with over 6,000 applications via tools like Zapier and Make.
-
-**Features:**
-
-* **Extensive Application Integration:** Connects with over 6,000 applications, supporting code-free automation.
-* **Data Flow Automation:** Simplifies repetitive tasks, such as automatically sending Slack messages and emails after form submissions.
-* **User-Friendly Interface:** Offers an intuitive visual database and customizable form functionalities.
-
-**Use Cases:**
-
-APITable is suitable for individuals and businesses that require automation of data flows and simplification of daily work tasks, especially in the realms of CRM and project management.
-
-💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
-
-## Number 10: Teable
+## Number 11: teable
 
 ![teable.png](https://static-docs.nocobase.com/18e0aa9b12b55dcf80aebe5c11c20a8c.png)
 
 
 | GitHub                               | [https://github.com/teableio/teable](https://github.com/teableio/teable) |
 | ------------------------------------ | ------------------------------------------------------------------------ |
-| **GitHub Star**                      | 16.5k                                                                    |
+| **GitHub Star**                      | 18.6k                                                                    |
 | **The most recent update on GitHub** | Within one day                                                           |
 | **Official website**                 | [https://teable.io/](https://teable.io/)                                 |
 | **Documentation**                    | [https://help.teable.io/](https://help.teable.io/)                       |
@@ -92,40 +64,16 @@ Teable is a spreadsheet-based no-code platform for managing structured data, sim
 
 Ideal for teams managing projects, customers, inventory tracking, and market analysis.
 
-## Number 9: AMIS
+💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
 
-![AMIS](https://static-docs.nocobase.com/ff508ab5b2b251547020df4e920ac64e.png)
-
-
-| **GitHub**                           | https://github.com/baidu/amis             |
-| ------------------------------------ | ----------------------------------------- |
-| **GitHub Star**                      | 17.8k                                     |
-| **The most recent update on GitHub** | Within one day                            |
-| **Official website**                 | https://baidu.github.io/amis              |
-| **Documentation**                    | https://mitosis.builder.io/docs/overview/ |
-
-**Introduction:**
-
-AMIS, developed by Baidu, is a low-code front-end framework that rapidly generates complex front-end interfaces through JSON configuration.
-
-**Features:**
-
-* **JSON Driven:** Pages are generated through JSON configuration, enhancing the efficiency of front-end development.
-* **Rich Component Library:** Includes a variety of components such as tables, forms, and charts to meet the demands of complex pages.
-* **Visual Editing:** Supports visual operations to simplify the development process.
-
-**Use Cases:**
-
-AMIS is ideal for scenarios requiring rapid development of rich, interactive front-end applications, particularly in administrative backends and complex data display areas.
-
-## Number 8: GrapesJS
+## Number 10: GrapesJS
 
 ![GrapesJS](https://static-docs.nocobase.com/628a6f9bca191c0e69651347938bac00.png)
 
 
 | **GitHub**                           | https://github.com/GrapesJS/grapesjs |
 | ------------------------------------ | ------------------------------------ |
-| **GitHub Star**                      | 23.4                                 |
+| **GitHub Star**                      | 24.4k                                |
 | **The most recent update on GitHub** | Two days ago                         |
 | **Official website**                 | https://grapesjs.com/                |
 | **Documentation**                    | https://grapesjs.com/docs/           |
@@ -144,14 +92,14 @@ GrapesJS is an open-source web builder framework that enables the creation of HT
 
 GrapesJS is ideal for developers who wish to quickly create and manage web page templates through a visual interface, particularly suitable for scenarios requiring fine control over web design elements and styles.
 
-## Number 7: Budibase
+## Number 9: Budibase
 
 ![budibase.png](https://static-docs.nocobase.com/89d96658f136306730f4b5f9dbf12967.png)
 
 
 | GitHub                               | [https://github.com/Budibase/budibase](https://github.com/Budibase/budibase) |
 | ------------------------------------ | ---------------------------------------------------------------------------- |
-| **GitHub Star**                      | 23.4k                                                                        |
+| **GitHub Star**                      | 24.7k                                                                        |
 | **The most recent update on GitHub** | Within one day                                                               |
 | **Official website**                 | [https://budibase.com/](https://budibase.com/)                               |
 | **Documentation**                    | [https://docs.budibase.com](https://docs.budibase.com)                       |
@@ -170,14 +118,14 @@ Budibase is an open-source no-code/low-code platform focused on rapidly building
 
 Budibase is ideal for businesses and teams looking to rapidly develop internal applications, such as CRM systems, approval workflows, inventory management tools, and employee portals.
 
-## Number 6: Directus
+## Number 8: Directus
 
 ![Directus](https://static-docs.nocobase.com/2359de49b31393e8ccaa5e287da2488a.png)
 
 
 | **GitHub**                           | https://github.com/directus/directus |
 | ------------------------------------ | ------------------------------------ |
-| **GitHub Star**                      | 29.1k                                |
+| **GitHub Star**                      | 30.9k                                |
 | **The most recent update on GitHub** | One day ago                          |
 | **Official website**                 | https://directus.io/                 |
 | **Documentation**                    | https://docs.directus.io/            |
@@ -196,14 +144,14 @@ Directus is an open-source headless CMS that provides instantaneous REST and Gra
 
 Directus is ideal for developers and businesses needing a dynamic content management system, particularly in scenarios seeking high levels of freedom and scalability.
 
-## Number 5: ToolJet
+## Number 7: ToolJet
 
 ![ToolJet](https://static-docs.nocobase.com/603a069f29e6bb80540390d2581f6f3e.png)
 
 
 | **GitHub**                           | https://github.com/ToolJet/ToolJet |
 | ------------------------------------ | ---------------------------------- |
-| **GitHub Star**                      | 34.7k                              |
+| **GitHub Star**                      | 35.8k                              |
 | **The most recent update on GitHub** | Within one day                     |
 | **Official website**                 | https://www.tooljet.com/           |
 | **Documentation**                    | https://docs.tooljet.com/docs/     |
@@ -222,14 +170,14 @@ ToolJet is an open-source low-code platform designed for building business appli
 
 ToolJet is suitable for businesses that need to quickly build and maintain custom internal tools, especially in scenarios with complex integration requirements.
 
-## Number 5: FlowiseAI
+## Number 6: FlowiseAI
 
 ![FlowiseAI](https://static-docs.nocobase.com/fe6ad4f9f638d33c8029e73b25b965f2.png)
 
 
 | **GitHub**                           | https://github.com/FlowiseAI/Flowise |
 | ------------------------------------ | ------------------------------------ |
-| **GitHub Star**                      | 35.1k                                |
+| **GitHub Star**                      | 39.8k                                |
 | **The most recent update on GitHub** | Two days ago                         |
 | **Official website**                 | https://flowiseai.com/               |
 | **Documentation**                    | https://docs.flowiseai.com/          |
@@ -250,14 +198,40 @@ Ideal for developers who need to quickly build and test AI-driven applications, 
 
 💡 Read More: [Top 5 Open Source Projects for Building Internal Tools](https://www.nocobase.com/en/blog/top-5-open-source-projects-for-building-internal-tools-in-2024)
 
-## Number 3: NocoDB
+## Number 5: AnythingLLM
+
+![AnythingLLM](https://static-docs.nocobase.com/anythingllm-f23lvh.png)
+
+
+| GitHub                               | [https://github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **GitHub Star**                      | 45.2k                                                                                          |
+| **The most recent update on GitHub** | Within one day                                                                                 |
+| **Official website**                 | [https://anythingllm.com/](https://anythingllm.com/)                                           |
+| **Documentation**                    | [https://docs.anythingllm.com/](https://docs.anythingllm.com/)                                 |
+
+**Introduction:**
+
+AnythingLLM is an open-source AI platform that supports multi-model integration and local deployment. Combining Retrieval-Augmented Generation (RAG) with intelligent Agent capabilities, it helps users quickly build private AI assistants and applications.
+
+**Features:**
+
+* **Multi-model compatibility:** Built-in powerful LLM providers allow one-click operation of your preferred models, while supporting enterprise cloud models like OpenAI, Azure, and AWS.
+* **Support for various document types and online import:** Processes documents in formats like PDF, Word, CSV, and code repositories. It also imports from online sources to meet data needs across business scenarios.
+* **Data security assurance:** By default, all models, embedders, vector databases, and storage run locally to prevent data leakage. Data is shared only with user authorization, protecting enterprise and personal privacy.
+
+**Use cases:**
+
+Suitable for building private knowledge base chatbots, automated AI assistants, personal productivity tools, and team collaboration platforms.
+
+## Number 4: NocoDB
 
 ![NocoDB](https://static-docs.nocobase.com/02de298c31965e6683438fe538d182a6.png)
 
 
 | **GitHub**                           | https://github.com/nocodb/nocodb |
 | ------------------------------------ | -------------------------------- |
-| **GitHub Star**                      | 51.7k                            |
+| **GitHub Star**                      | 54.8k                            |
 | **The most recent update on GitHub** | Within one day                   |
 | **Official website**                 | https://nocodb.com/              |
 | **Documentation**                    | https://docs.nocodb.com/         |
@@ -280,40 +254,14 @@ NocoDB is ideal for businesses that require data-intensive operations, such as C
 
 💡 Read More: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
 
-## Number 2: n8n
-
-![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
-
-
-| **GitHub**                           | https://github.com/n8n-io/n8n |
-| ------------------------------------ | ----------------------------- |
-| **GitHub Star**                      | 60.5k                         |
-| **The most recent update on GitHub** | Within one day                |
-| **Official website**                 | https://n8n.io/               |
-| **Documentation**                    | https://docs.n8n.io/          |
-
-**Introduction:**
-
-n8n is an open-source no-code automation tool that supports highly customizable workflows, helping users connect applications and automate tasks.
-
-**Features:**
-
-* **Visual workflow builder:** Create automated workflows by dragging and dropping nodes, enabling complex logic without coding.
-* **Self-hosted and cloud options:** Supports local deployment for data privacy while also offering a cloud version to meet different user needs.
-* **Extensive integrations:** Built-in support for 400+ applications, including Google Sheets, Notion, CRM systems, and databases, with API connectivity for flexible expansion.
-
-**Use Cases:**
-
-n8n is suitable for individuals and teams looking to automate daily tasks, such as data synchronization, marketing automation, customer support ticket processing, and business process automation.
-
-## Number 1: Strapi
+## Number 3: Strapi
 
 ![Strapi](https://static-docs.nocobase.com/606c1cb202f9e6bcaad5e40ebfdbb46d.png)
 
 
 | **GitHub**                           | https://github.com/strapi/strapi |
 | ------------------------------------ | -------------------------------- |
-| **GitHub Star**                      | 65k                              |
+| **GitHub Star**                      | 66.9k                            |
 | **The most recent update on GitHub** | Within one day                   |
 | **Official website**                 | https://strapi.io/               |
 | **Documentation**                    | https://docs.strapi.io/          |
@@ -331,6 +279,58 @@ Strapi is an open-source headless CMS built entirely in JavaScript/TypeScript, a
 **Use Cases:**
 
 Strapi is ideal for developers and teams who need flexible content management and wish to utilize this content across various front-end frameworks via APIs.
+
+## Number 2: Dify
+
+![dify](https://static-docs.nocobase.com/dify-lofqc2.png)
+
+
+| GitHub                               | [https://github.com/langgenius/dify](https://github.com/langgenius/dify) |
+| ------------------------------------ | ------------------------------------------------------------------------ |
+| **GitHub Star**                      | 103k                                                                     |
+| **The most recent update on GitHub** | Within one day                                                           |
+| **Official website**                 | [https://dify.ai/](https://dify.ai/)                                     |
+| **Documentation**                    | [https://docs.dify.ai/](https://docs.dify.ai/)                           |
+
+**Introduction:**
+
+Dify is an open-source AI application development platform supporting local deployment, dedicated to helping developers and teams quickly build, manage, and launch large language model-based AI prototypes and applications.
+
+**Features:**
+
+* **Multi-model integration:** Compatible with mainstream large models like OpenAI, Anthropic, Google Gemini, Moonshot, and Deepseek.
+* **Visual workflow configuration:** Build multi-turn conversations and complex logic without coding via the Prompt Flow designer.
+* **Embedding and API calling:** Generated AI applications can be deployed to any platform as Web Widgets, APIs, or embedded components.
+
+**Use cases:**
+
+Dify is suitable for developers and enterprises looking to rapidly build AI product prototypes, deploy internal assistants, or create custom AI tools.
+
+## Number 1: n8n
+
+![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
+
+
+| **GitHub**                           | https://github.com/n8n-io/n8n |
+| ------------------------------------ | ----------------------------- |
+| **GitHub Star**                      | 106k                          |
+| **The most recent update on GitHub** | Within one day                |
+| **Official website**                 | https://n8n.io/               |
+| **Documentation**                    | https://docs.n8n.io/          |
+
+**Introduction:**
+
+n8n is an open-source no-code automation tool that supports highly customizable workflows, helping users connect applications and automate tasks.
+
+**Features:**
+
+* **Visual workflow builder:** Create automated workflows by dragging and dropping nodes, enabling complex logic without coding.
+* **Self-hosted and cloud options:** Supports local deployment for data privacy while also offering a cloud version to meet different user needs.
+* **Extensive integrations:** Built-in support for 400+ applications, including Google Sheets, Notion, CRM systems, and databases, with API connectivity for flexible expansion.
+
+**Use Cases:**
+
+n8n is suitable for individuals and teams looking to automate daily tasks, such as data synchronization, marketing automation, customer support ticket processing, and business process automation.
 
 **Related reading:**
 
