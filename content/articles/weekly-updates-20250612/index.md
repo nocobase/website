@@ -12,6 +12,14 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### [v1.7.9](https://www.nocobase.com/en/blog/v1.7.9)
+
+*Release date: 2025-06-11*
+
+#### 🐛 Bug Fixes
+
+- **[client]** auto-closing issue when configuring fields in the secondary popup form ([#7042](https://github.com/nocobase/nocobase/pull/7042)) by @katherinehhh
+
 ### [v1.7.8](https://www.nocobase.com/en/blog/v1.7.8)
 
 *Release date: 2025-06-10*
