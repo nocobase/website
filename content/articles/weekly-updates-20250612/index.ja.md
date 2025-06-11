@@ -128,15 +128,93 @@
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v1.8.0-beta.3](https://www.nocobase.com/en/blog/v1.8.0-beta.3)
+### [v1.8.0-beta.5](https://www.nocobase.com/ja/blog/v1.8.0-beta.5)
 
-*リリース日：2025-06-04*
+*リリース日：2025-06-07*
 
+#### 🚀 機能改善
+
+* **[ワークフロー]** ワークフローのより多くのフィールドをフィルタリングできるようにサポート（[#6995](https://github.com/nocobase/nocobase/pull/6995)）@mytharcher
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * ポップアップアクションでトリガーされた場合、markdown ブロックの連携ルールが機能しない問題（[#7007](https://github.com/nocobase/nocobase/pull/7007)）@katherinehhh
+  * 閲覧モードで関連フィールドにマウスを合わせるとサブテーブルとサブフォームが表示される問題（[#7002](https://github.com/nocobase/nocobase/pull/7002)）@zhangzhonghe
+  * フィールドスタイル連携ルールが機能しない問題（[#7003](https://github.com/nocobase/nocobase/pull/7003)）@katherinehhh
+  * 割り当てコンポーネントで変数を設定する際にフィールドタイトルが欠落する問題（[#7001](https://github.com/nocobase/nocobase/pull/7001)）@katherinehhh
+  * モーダル内の詳細ブロックのサブテーブルでページを切り替えると未保存の変更警告が表示される問題（[#7004](https://github.com/nocobase/nocobase/pull/7004)）@katherinehhh
+* **[非同期タスクマネージャー]** 非同期インポート中の多重実行問題を修正（[#7006](https://github.com/nocobase/nocobase/pull/7006)）@aaaaaajie
+* **[ローカリゼーション]** 空テキストに起因するエラーを解決（[#7010](https://github.com/nocobase/nocobase/pull/7010)）@2013xile
+* **[アクション：レコードエクスポート Pro]** 非同期インポート中の多重実行問題を修正 @aaaaaajie
+* **[ワークフロー：承認]** 代理承認時に他者による承認後に処理が続かない問題を修正 @mytharcher
+
+### [v1.8.0-beta.4](https://www.nocobase.com/ja/blog/v1.8.0-beta.4)
+
+*リリース日：2025-06-05*
+
+#### 🚀 機能改善
+
+* **[アクション：一括編集]** 選択モード下で`filter`の代わりに`filterByTk`を使用（[#6994](https://github.com/nocobase/nocobase/pull/6994)）@mytharcher
+* **[アクション：レコードインポート Pro]** 大規模 XLSX ファイル（高行数 / 列数データセット）の処理時のパフォーマンス問題を最適化し、システムクラッシュやフリーズを防止 @aaaaaajie
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * フィールド割り当てコンポーネントにフィールドタイトルが表示されない問題（[#6987](https://github.com/nocobase/nocobase/pull/6987)）@katherinehhh
+  * メニュー移動リストにおいて最後のメニュー項目が選択できない問題（[#6997](https://github.com/nocobase/nocobase/pull/6997)）@zhangzhonghe
+* **[ワークフロー]**
+  * カテゴリタブを切り替えた際にフィルターが更新されない問題を修正（[#6989](https://github.com/nocobase/nocobase/pull/6989)）@mytharcher
+  * ワークフロー統計データが自動生成されない問題を修正（[#6993](https://github.com/nocobase/nocobase/pull/6993)）@mytharcher
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v1.8.0-alpha.2](https://www.nocobase.com/ja/blog/v1.8.0-alpha.2)
+### [v1.8.0-alpha.4](https://www.nocobase.com/ja/blog/v1.8.0-alpha.4)
 
-*リリース日：2025-06-04*
+*リリース日：2025-06-07*
+
+#### 🚀 機能改善
+
+* **[ワークフロー]** ワークフローのより多くのフィールドをフィルタリングできるようにサポート（[#6995](https://github.com/nocobase/nocobase/pull/6995)）@mytharcher
+* **[Email マネージャー]** ポップアップでのデフォルト送信値のサポート、受信者の曖昧検索機能の追加、および諸問題の修正 @jiannx
+
+#### 🐛 不具合修正
+
+* **[データベース]** 修正: XLSX インポート時に欠落していた作成者と更新者フィールドを追加（[#7011](https://github.com/nocobase/nocobase/pull/7011)）@aaaaaajie
+* **[クライアント]**
+  * 割り当てコンポーネントで変数を設定する際にフィールドタイトルが欠落する問題（[#7001](https://github.com/nocobase/nocobase/pull/7001)）@katherinehhh
+  * 閲覧モードで関連フィールドにマウスを合わせるとサブテーブルとサブフォームが表示される問題（[#7002](https://github.com/nocobase/nocobase/pull/7002)）@zhangzhonghe
+  * ポップアップアクションでトリガーされた場合、markdown ブロックの連携ルールが機能しない問題（[#7007](https://github.com/nocobase/nocobase/pull/7007)）@katherinehhh
+  * モーダル内の詳細ブロックのサブテーブルでページを切り替えると未保存の変更警告が表示される問題（[#7004](https://github.com/nocobase/nocobase/pull/7004)）@katherinehhh
+  * フィールドスタイル連携ルールが機能しない問題（[#7003](https://github.com/nocobase/nocobase/pull/7003)）@katherinehhh
+* **[非同期タスクマネージャー]** 非同期インポート中の多重実行問題を修正（[#7006](https://github.com/nocobase/nocobase/pull/7006)）@aaaaaajie
+* **[ローカリゼーション]** 空テキストに起因するエラーを解決（[#7010](https://github.com/nocobase/nocobase/pull/7010)）@2013xile
+* **[アクション：レコードエクスポート Pro]** 非同期インポート中の多重実行問題を修正 @aaaaaajie
+* **[ワークフロー：承認]** 代理承認時に他者による承認後に処理が続かない問題を修正 @mytharcher
+* **[Email マネージャー]**
+  * テーブル "mailmessagelabels\_mailmessages" の複数主キー問題 @jiannx
+  * 設定ポップアップが表示されない問題 @jiannx
+  * メール曖昧検索に一意フィルターを適用 @jiannx
+  * 受信者曖昧検索に関連フィールドをサポート @jiannx
+  * mailmessagelabelsMailmessages に "id" フィールドを追加 @jiannx
+
+### [v1.8.0-alpha.3](https://www.nocobase.com/ja/blog/v1.8.0-alpha.3)
+
+*リリース日：2025-06-06*
+
+#### 🚀 機能改善
+
+* **[アクション：一括編集]** 選択モード下で`filter`の代わりに`filterByTk`を使用（[#6994](https://github.com/nocobase/nocobase/pull/6994)）@mytharcher
+* **[アクション：レコードインポート Pro]** 大規模 XLSX ファイル（高行数 / 列数データセット）の処理時のパフォーマンス問題を最適化し、システムクラッシュやフリーズを防止 @aaaaaajie
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * フィールド割り当てコンポーネントにフィールドタイトルが表示されない問題（[#6987](https://github.com/nocobase/nocobase/pull/6987)）@katherinehhh
+  * メニュー移動リストにおいて最後のメニュー項目が選択できない問題（[#6997](https://github.com/nocobase/nocobase/pull/6997)）@zhangzhonghe
+  * ポップアップリンクから開かれたページでコンテンツが正しく表示されない問題を修正（[#6990](https://github.com/nocobase/nocobase/pull/6990)）@zhangzhonghe
+* **[ワークフロー]**
+  * カテゴリタブを切り替えた際にフィルターが更新されない問題を修正（[#6989](https://github.com/nocobase/nocobase/pull/6989)）@mytharcher
+  * ワークフロー統計データが自動生成されない問題を修正（[#6993](https://github.com/nocobase/nocobase/pull/6993)）@mytharcher
