@@ -131,20 +131,104 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fix filter not updated when switching categories tabs ([#6989](https://github.com/nocobase/nocobase/pull/6989)) by @mytharcher
   - Fix workflow stats not auto created ([#6993](https://github.com/nocobase/nocobase/pull/6993)) by @mytharcher
 
-
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v1.8.0-beta.3](https://www.nocobase.com/en/blog/v1.8.0-beta.3)
+### [v1.8.0-beta.5](https://www.nocobase.com/en/blog/v1.8.0-beta.5)
 
-*Release date: 2025-06-04*
+*Release date: 2025-06-07*
 
+#### 🚀 Improvements
+
+- **[Workflow]** Support to filter more fields of workflow ([#6995](https://github.com/nocobase/nocobase/pull/6995)) by @mytharcher
+
+#### 🐛 Bug Fixes
+
+- **[client]**
+
+  - markdown block linkage rules not working when triggered by popup action ([#7007](https://github.com/nocobase/nocobase/pull/7007)) by @katherinehhh
+  - Association fields shows sub-table and sub-form on hover in read-pretty mode ([#7002](https://github.com/nocobase/nocobase/pull/7002)) by @zhangzhonghe
+  - field style linkage rules not working ([#7003](https://github.com/nocobase/nocobase/pull/7003)) by @katherinehhh
+  - missing field title when setting a variable in the assignment component ([#7001](https://github.com/nocobase/nocobase/pull/7001)) by @katherinehhh
+  - switching page in subtable of detail block within modal triggers unsaved changes warning ([#7004](https://github.com/nocobase/nocobase/pull/7004)) by @katherinehhh
+- **[Async task manager]** Fixed multiple execution issue during async import ([#7006](https://github.com/nocobase/nocobase/pull/7006)) by @aaaaaajie
+- **[Localization]** Resolve error caused by empty texts ([#7010](https://github.com/nocobase/nocobase/pull/7010)) by @2013xile
+- **[Action: Export records Pro]** Fixed multiple execution issue during async import by @aaaaaajie
+- **[Workflow: Approval]** Fix delegated approval can not continue when approved by others by @mytharcher
+
+### [v1.8.0-beta.4](https://www.nocobase.com/en/blog/v1.8.0-beta.4)
+
+*Release date: 2025-06-05*
+
+#### 🚀 Improvements
+
+- **[Action: Batch edit]** Use `filterByTk` instead of `filter` under selected mode ([#6994](https://github.com/nocobase/nocobase/pull/6994)) by @mytharcher
+- **[Action: Import records Pro]** Optimze performance issues when processing large XLSX files (high-row/column datasets), preventing system crashes or freezes. by @aaaaaajie
+
+#### 🐛 Bug Fixes
+
+- **[client]**
+
+  - missing field title in assignedField component ([#6987](https://github.com/nocobase/nocobase/pull/6987)) by @katherinehhh
+  - The last menu item cannot be selected in the move menu list ([#6997](https://github.com/nocobase/nocobase/pull/6997)) by @zhangzhonghe
+- **[Workflow]**
+
+  - Fix filter not updated when switching categories tabs ([#6989](https://github.com/nocobase/nocobase/pull/6989)) by @mytharcher
+  - Fix workflow stats not auto created ([#6993](https://github.com/nocobase/nocobase/pull/6993)) by @mytharcher
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v1.8.0-alpha.2](https://www.nocobase.com/en/blog/v1.8.0-alpha.2)
+### [v1.8.0-alpha.4](https://www.nocobase.com/en/blog/v1.8.0-alpha.4)
 
-*Release date: 2025-06-04*
+*Release date: 2025-06-07*
+
+#### 🚀 Improvements
+
+- **[Workflow]** Support to filter more fields of workflow ([#6995](https://github.com/nocobase/nocobase/pull/6995)) by @mytharcher
+- **[Email manager]** supports the default sending value in pop-up, supports fuzzy search for recipients, and fixes problems by @jiannx
+
+#### 🐛 Bug Fixes
+
+- **[database]** fix: add missing creator and updater fields in import xlsx ([#7011](https://github.com/nocobase/nocobase/pull/7011)) by @aaaaaajie
+- **[client]**
+
+  - missing field title when setting a variable in the assignment component ([#7001](https://github.com/nocobase/nocobase/pull/7001)) by @katherinehhh
+  - Association fields shows sub-table and sub-form on hover in read-pretty mode ([#7002](https://github.com/nocobase/nocobase/pull/7002)) by @zhangzhonghe
+  - markdown block linkage rules not working when triggered by popup action ([#7007](https://github.com/nocobase/nocobase/pull/7007)) by @katherinehhh
+  - switching page in subtable of detail block within modal triggers unsaved changes warning ([#7004](https://github.com/nocobase/nocobase/pull/7004)) by @katherinehhh
+  - field style linkage rules not working ([#7003](https://github.com/nocobase/nocobase/pull/7003)) by @katherinehhh
+- **[Async task manager]** Fixed multiple execution issue during async import ([#7006](https://github.com/nocobase/nocobase/pull/7006)) by @aaaaaajie
+- **[Localization]** Resolve error caused by empty texts ([#7010](https://github.com/nocobase/nocobase/pull/7010)) by @2013xile
+- **[Action: Export records Pro]** Fixed multiple execution issue during async import by @aaaaaajie
+- **[Workflow: Approval]** Fix delegated approval can not continue when approved by others by @mytharcher
+- **[Email manager]**
+
+  - multiple primary keys for table "mailmessagelabels_mailmessages" by @jiannx
+  - setting pop-up not to display by @jiannx
+  - mail fuzzy search to make unique filters by @jiannx
+  - recipient fuzzy search supports associated fields by @jiannx
+  - add the "id" field to the mailmessagelabelsMailmessages by @jiannx
+
+### [v1.8.0-alpha.3](https://www.nocobase.com/en/blog/v1.8.0-alpha.3)
+
+*Release date: 2025-06-06*
+
+#### 🚀 Improvements
+
+- **[Action: Batch edit]** Use `filterByTk` instead of `filter` under selected mode ([#6994](https://github.com/nocobase/nocobase/pull/6994)) by @mytharcher
+- **[Action: Import records Pro]** Optimze performance issues when processing large XLSX files (high-row/column datasets), preventing system crashes or freezes. by @aaaaaajie
+
+#### 🐛 Bug Fixes
+
+- **[client]**
+
+  - missing field title in assignedField component ([#6987](https://github.com/nocobase/nocobase/pull/6987)) by @katherinehhh
+  - The last menu item cannot be selected in the move menu list ([#6997](https://github.com/nocobase/nocobase/pull/6997)) by @zhangzhonghe
+  - The content displayed incorrectly on pages opened through popup links ([#6990](https://github.com/nocobase/nocobase/pull/6990)) by @zhangzhonghe
+- **[Workflow]**
+
+  - Fix filter not updated when switching categories tabs ([#6989](https://github.com/nocobase/nocobase/pull/6989)) by @mytharcher
+  - Fix workflow stats not auto created ([#6993](https://github.com/nocobase/nocobase/pull/6993)) by @mytharcher
