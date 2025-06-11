@@ -12,6 +12,14 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### [v1.7.9](https://www.nocobase.com/ja/blog/v1.7.9)
+
+*リリース日：2025-06-11*
+
+#### 🐛 不具合修正
+
+* **[クライアント]** サブポップアップフォーム内でフィールドを設定する際に自動的に閉じてしまう問題（[#7042](https://github.com/nocobase/nocobase/pull/7042)）@katherinehhh
+
 ### [v1.7.8](https://www.nocobase.com/ja/blog/v1.7.8)
 
 *リリース日：2025-06-10*
