@@ -1,4 +1,6 @@
-注：本文数据更新于2025年2月17日。我们会定期更新，确保你获取最新的信息！😊
+注：本文数据更新于 2025 年 6 月 11 日。我们会定期更新，确保你获取最新的信息！😊
+
+---
 
 上周，我们发布了文章《[GitHub Star 数量前 12 的开源无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)》，收获了许多喜爱。许多朋友留言问，为什么 n8n、Appsmith 等熟知的产品没有上榜？原因是我们是根据 GitHub 上的 "no-code" 标签来制作这份名单的，而这两款产品只打上了 “low-code” 标签。
 
@@ -29,10 +31,10 @@
 
 | **GitHub**                  | https://github.com/nocobase/nocobase                                        |
 | --------------------------- | --------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 13.5k                                                                       |
+| **GitHub Star 数**          | 15.8k                                                                       |
 | **GitHub 最近一次更新时间** | 当天                                                                        |
 | **开源协议**                | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt) |
-| **活跃提交者数量**          | 85                                                                          |
+| **活跃提交者数量**          | 92                                                                          |
 | **是否接受外部PR**          | 是                                                                          |
 | **官网**                    | https://www.nocobase.com/                                                   |
 | **文档**                    | https://docs.nocobase.com/                                                  |
@@ -56,107 +58,14 @@ NocoBase 适用于需要快速开发和部署复杂业务系统的技术团队�
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
-## **第14：**[Amplication](https://amplication.com/)
-
-![Amplication.png](https://static-docs.nocobase.com/a92ab613d119eab94331e83ab4a8d7d5.png)
-
-
-| **GitHub**                  | https://github.com/amplication/amplication                                   |
-| --------------------------- | ---------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 15.5k                                                                        |
-| **GitHub 最近一次更新时间** | 当天                                                                         |
-| **开源协议**                | [Apache 2.0](https://github.com/amplication/amplication/blob/master/LICENSE) |
-| **活跃提交者数量**          | 259                                                                          |
-| **是否接受外部PR**          | 是                                                                           |
-| **官网**                    | https://amplication.com/                                                     |
-| **文档**                    | https://docs.amplication.com/                                                |
-
-**简介**
-
-Amplication 旨在帮助开发者快速构建和部署具备生产级质量的 Node.js 应用。它通过 AI 功能自动生成后端和前端代码。
-
-开发者可以在其直观的界面中定义数据模型和关系。然后，Amplication 会自动生成一个完全功能的、可投入生产的应用程序，包括 REST API、GraphQL API、身份验证、授权和管理界面。设置完模型后，您可以自定义生成的代码或使用自定义代码进行扩展。该平台支持部署到各种云服务，实现简单且持续的集成。
-
-**特点**
-
-* **AI代码生成**：自动生成模型、APIs、配置等。
-* **完全的代码控制**：生成的代码完全可编辑，支持 .NET 和 Node.js。
-* **插件系统**：可扩展性强，支持使用社区构建的插件或创建自定义插件。
-
-**使用场景**
-
-Amplication 适用于需要快速开发企业级应用的开发团队，尤其是那些希望快速从概念到生产，同时需要严格的数据安全和合规性的场景。
-
-💡 阅读更多：[探索 RAD：5 个最佳实践案例解析](https://www.nocobase.com/cn/blog/rapid-application-development-best-application-cases)
-
-## 第13：[kestra](https://kestra.io/)
-
-![kestra.png](https://static-docs.nocobase.com/28f125a0a8b93409eefe69780f12f15c.png)
-
-
-| **GitHub**                  | https://github.com/kestra-io/kestra                                         |
-| --------------------------- | --------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 15.9k                                                                       |
-| **GitHub 最近一次更新时间** | 当天                                                                        |
-| **开源协议**                | [Apache-2.0](https://github.com/kestra-io/kestra?tab=Apache-2.0-1-ov-file#) |
-| **活跃提交者数量**          | 151                                                                         |
-| **是否接受外部PR**          | 是                                                                          |
-| **官网**                    | https://kestra.io/                                                          |
-| **文档**                    | https://kestra.io/docs                                                      |
-
-**简介**
-
-Kestra 是一个开源的低代码工作流编排平台，旨在帮助开发者和数据团队轻松构建、调度和管理任务。它采用 YAML 进行工作流定义，并提供直观的 Web 界面，支持丰富的集成插件和自动化任务处理。
-
-用户可以在 Kestra 的界面中配置数据流、触发器和任务，并利用其分布式架构来处理大规模数据管道和业务流程。工作流可自托管部署，并支持 API 调用，使企业能够灵活扩展和管理自动化任务。
-
-**特点**
-
-* **低代码工作流编排**：使用 YAML 定义任务流，并提供可视化管理界面。
-* **丰富的集成插件**：支持数据库、云存储、API、消息队列等多种服务。
-* **灵活的触发机制**：支持定时调度、事件触发和 API 调用。
-
-**使用场景**
-
-Kestra 适用于数据工程和 DevOps 团队，尤其适合构建 ETL 任务、日志处理、自动化微服务编排等场景。
-
-## 第12：[teable](https://teable.io/)
-
-![teable.png](https://static-docs.nocobase.com/d93318ae98291f1ec49621f2250b7937.png)
-
-
-| **GitHub**                  | https://github.com/teableio/teable                                     |
-| --------------------------- | ---------------------------------------------------------------------- |
-| **GitHub Star 数**          | 16.5k                                                                  |
-| **GitHub 最近一次更新时间** | 当天                                                                   |
-| **开源协议**                | [AGPL-3.0](https://github.com/teableio/teable?tab=AGPL-3.0-2-ov-file#) |
-| **活跃提交者数量**          | 29                                                                     |
-| **是否接受外部PR**          | 是                                                                     |
-| **官网**                    | https://teable.io/                                                     |
-| **文档**                    | https://help.teable.io/                                                |
-
-**简介**
-
-Teable 是一个旨在帮助团队快速构建和部署企业级数据库应用的无代码平台。它通过类似电子表格的直观界面，简化了数据管理和协作流程。
-
-**特点**
-
-* **电子表格式界面**：无需编码即可创建和管理复杂的数据结构，提升团队协作效率。
-* **高性能与可扩展性**：基于 PostgreSQL 构建，支持处理数百万行数据，确保性能稳定。
-* **数据安全与部署灵活性**：支持自托管，用户可完全控制数据，兼顾云端的便利性和本地部署的安全性。
-
-**使用场景**
-
-Teable 适用于需要高效数据管理和实时协作的团队，如 CRM 系统、活动运营管理和内容管理系统（CMS）等。其无代码特性使得非技术人员也能轻松上手，快速构建满足业务需求的应用。
-
-## 第11：**[APIJSON](http://apijson.cn/)**
+## 第14：**[APIJSON](http://apijson.cn/)**
 
 ![APIJSON.png](https://static-docs.nocobase.com/21b16219e72354e0ef41a15687ca7ee0.png)
 
 
 | **GitHub**                  | https://github.com/Tencent/APIJSON                                            |
 | --------------------------- | ----------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 17.4k                                                                         |
+| **GitHub Star 数**          | 18k                                                                           |
 | **GitHub 最近一次更新时间** | 2天前                                                                         |
 | **开源协议**                | [Apache 2.0](https://github.com/Tencent/APIJSON?tab=License-1-ov-file#readme) |
 | **活跃提交者数量**          | 72                                                                            |
@@ -180,19 +89,19 @@ APIJSON 不是传统的低代码平台，它通过自动创建 API 和文档而�
 
 APIJSON 适用于中小型前后端分离项目，如创业项目、内部项目、以及需要快速开发和迭代的应用，尤其是那些涉及到复杂数据库操作的场合。
 
-💡 阅读更多：[GitHub Star 数量前 11 的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)
+💡 阅读更多：[探索 RAD：5 个最佳实践案例解析](https://www.nocobase.com/cn/blog/rapid-application-development-best-application-cases)
 
-## 第10：Amis
+## 第13：Amis
 
 ![Amis.png](https://static-docs.nocobase.com/5992e43b289ca49fd0b1817d0aedda2c.png)
 
 
 | **GitHub**                  | https://github.com/baidu/amis                                                |
 | --------------------------- | ---------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 17.8k                                                                        |
+| **GitHub Star 数**          | 18.3k                                                                        |
 | **GitHub 最近一次更新时间** | 3天前                                                                        |
 | **开源协议**                | [Apache 2.0](https://github.com/amplication/amplication/blob/master/LICENSE) |
-| **活跃提交者数量**          | 235                                                                          |
+| **活跃提交者数量**          | 251                                                                          |
 | **是否接受外部PR**          | 是                                                                           |
 | **官网**                    | 无                                                                           |
 | **文档**                    | https://baidu.github.io/amis                                                 |
@@ -215,17 +124,79 @@ AMIS 的设计目的是简化数据密集型应用的前端开发，特别适用
 
 AMIS 适用于需要快速开发丰富、交互式前端应用的场景，特别是在管理后台和复杂数据展示方面。
 
-## **第9：[Node-RED](https://nodered.org/)**
+## 第12：[kestra](https://kestra.io/)
+
+![kestra.png](https://static-docs.nocobase.com/28f125a0a8b93409eefe69780f12f15c.png)
+
+
+| **GitHub**                  | https://github.com/kestra-io/kestra                                         |
+| --------------------------- | --------------------------------------------------------------------------- |
+| **GitHub Star 数**          | 18.5k                                                                       |
+| **GitHub 最近一次更新时间** | 当天                                                                        |
+| **开源协议**                | [Apache-2.0](https://github.com/kestra-io/kestra?tab=Apache-2.0-1-ov-file#) |
+| **活跃提交者数量**          | 169                                                                         |
+| **是否接受外部PR**          | 是                                                                          |
+| **官网**                    | https://kestra.io/                                                          |
+| **文档**                    | https://kestra.io/docs                                                      |
+
+**简介**
+
+Kestra 是一个开源的低代码工作流编排平台，旨在帮助开发者和数据团队轻松构建、调度和管理任务。它采用 YAML 进行工作流定义，并提供直观的 Web 界面，支持丰富的集成插件和自动化任务处理。
+
+用户可以在 Kestra 的界面中配置数据流、触发器和任务，并利用其分布式架构来处理大规模数据管道和业务流程。工作流可自托管部署，并支持 API 调用，使企业能够灵活扩展和管理自动化任务。
+
+**特点**
+
+* **低代码工作流编排**：使用 YAML 定义任务流，并提供可视化管理界面。
+* **丰富的集成插件**：支持数据库、云存储、API、消息队列等多种服务。
+* **灵活的触发机制**：支持定时调度、事件触发和 API 调用。
+
+**使用场景**
+
+Kestra 适用于数据工程和 DevOps 团队，尤其适合构建 ETL 任务、日志处理、自动化微服务编排等场景。
+
+## 第11：[teable](https://teable.io/)
+
+![teable.png](https://static-docs.nocobase.com/d93318ae98291f1ec49621f2250b7937.png)
+
+
+| **GitHub**                  | https://github.com/teableio/teable                                     |
+| --------------------------- | ---------------------------------------------------------------------- |
+| **GitHub Star 数**          | 18.6k                                                                  |
+| **GitHub 最近一次更新时间** | 当天                                                                   |
+| **开源协议**                | [AGPL-3.0](https://github.com/teableio/teable?tab=AGPL-3.0-2-ov-file#) |
+| **活跃提交者数量**          | 36                                                                     |
+| **是否接受外部PR**          | 是                                                                     |
+| **官网**                    | https://teable.io/                                                     |
+| **文档**                    | https://help.teable.io/                                                |
+
+**简介**
+
+Teable 是一个旨在帮助团队快速构建和部署企业级数据库应用的无代码平台。它通过类似电子表格的直观界面，简化了数据管理和协作流程。
+
+**特点**
+
+* **电子表格式界面**：无需编码即可创建和管理复杂的数据结构，提升团队协作效率。
+* **高性能与可扩展性**：基于 PostgreSQL 构建，支持处理数百万行数据，确保性能稳定。
+* **数据安全与部署灵活性**：支持自托管，用户可完全控制数据，兼顾云端的便利性和本地部署的安全性。
+
+**使用场景**
+
+Teable 适用于需要高效数据管理和实时协作的团队，如 CRM 系统、活动运营管理和内容管理系统（CMS）等。其无代码特性使得非技术人员也能轻松上手，快速构建满足业务需求的应用。
+
+💡 阅读更多：[GitHub Star 数量前 11 的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)
+
+## **第10：[Node-RED](https://nodered.org/)**
 
 ![Node-RED.png](https://static-docs.nocobase.com/009d6d236d9948212350fed014ebad6c.png)
 
 
 | **GitHub**                  | https://github.com/node-red/node-red                                               |
 | --------------------------- | ---------------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 20.4k                                                                              |
+| **GitHub Star 数**          | 21.3k                                                                              |
 | **GitHub 最近一次更新时间** | 2天前                                                                              |
 | **开源协议**                | [Apache 2.0](https://github.com/node-red/node-red?tab=Apache-2.0-1-ov-file#readme) |
-| **活跃提交者数量**          | 234                                                                                |
+| **活跃提交者数量**          | 233                                                                                |
 | **是否接受外部 PR**         | 是                                                                                 |
 | **官网**                    | https://nodered.org/                                                               |
 | **文档**                    | https://nodered.org/docs/                                                          |
@@ -244,17 +215,17 @@ Node-RED 是一个基于 Node.js 的低代码编程工具，用于连接硬件�
 
 Node-RED 适用于需要集成多种系统和服务的项目，如物联网(IoT)设备控制、自动化工作流程以及各种数据处理和分发任务。
 
-## 第8：[Budibase](https://budibase.com/)
+## 第9：[Budibase](https://budibase.com/)
 
 ![budibase.png](https://static-docs.nocobase.com/5d5e2e17f6f419eb6d7353c180febded.png)
 
 
 | **GitHub**                  | https://github.com/Budibase/budibase                                 |
 | --------------------------- | -------------------------------------------------------------------- |
-| **GitHub Star 数**          | 23.4k                                                                |
+| **GitHub Star 数**          | 24.7k                                                                |
 | **GitHub 最近一次更新时间** | 当天                                                                 |
 | **开源协议**                | [GPLv3](https://github.com/Budibase/budibase?tab=License-1-ov-file#) |
-| **活跃提交者数量**          | 104                                                                  |
+| **活跃提交者数量**          | 106                                                                  |
 | **是否接受外部PR**          | 是                                                                   |
 | **官网**                    | https://budibase.com/                                                |
 | **文档**                    | https://docs.budibase.com/docs/                                      |
@@ -273,17 +244,17 @@ Budibase 是一个开源的低代码平台，专为快速构建内部业务工�
 
 Budibase 适用于需要快速开发和部署内部工具的团队，如 CRM、审批系统、库存管理、客户支持平台等。
 
-## 第7：**[Supervision](https://supervision.roboflow.com/)**
+## 第8：**[Supervision](https://supervision.roboflow.com/)**
 
 ![Supervision.png](https://static-docs.nocobase.com/26bd0e41647be31e17fce19990a24c5b.png)
 
 
 | **GitHub**                  | https://github.com/roboflow/supervision                                      |
 | --------------------------- | ---------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 24.9k                                                                        |
+| **GitHub Star 数**          | 26.7k                                                                        |
 | **GitHub 最近一次更新时间** | 当天                                                                         |
 | **开源协议**                | [MIT](https://github.com/roboflow/supervision?tab=MIT-1-ov-file#readme)      |
-| **活跃提交者数量**          | 99                                                                           |
+| **活跃提交者数量**          | 102                                                                          |
 | **是否接受外部PR**          | 是                                                                           |
 | **官网**                    | https://supervision.roboflow.com/                                            |
 | **文档**                    | https://supervision.roboflow.com/0.22.0/how\\\_to/detect\\\_and\\\_annotate/ |
@@ -304,17 +275,17 @@ Supervision 并没有严格将自己宣传为低代码平台。相反，它专�
 
 适用于需要快速开发和部署计算机视觉应用的企业和研究者，特别是在产品质量控制、安全监控和客户体验增强等领域。
 
-## 第6：**[Refine](https://refine.dev/)**
+## 第7：**[Refine](https://refine.dev/)**
 
 ![Refine.png](https://static-docs.nocobase.com/602ebba38351a43db6f2d3cb58c1ead4.png)
 
 
 | **GitHub**                  | https://github.com/refinedev/refine                                 |
 | --------------------------- | ------------------------------------------------------------------- |
-| **GitHub Star 数**          | 29.9k                                                               |
+| **GitHub Star 数**          | 31.2k                                                               |
 | **GitHub 最近一次更新时间** | 4天前                                                               |
 | **开源协议**                | [MIT](https://github.com/refinedev/refine?tab=MIT-1-ov-file#readme) |
-| **活跃提交者数量**          | 284                                                                 |
+| **活跃提交者数量**          | 287                                                                 |
 | **是否接受外部 PR**         | 是                                                                  |
 | **官网**                    | https://refine.dev/                                                 |
 | **文档**                    | https://refine.dev/docs/                                            |
@@ -335,17 +306,17 @@ Refine 适合企业开发者构建和维护高度定制的内部应用，特别�
 
 💡 阅读更多：[开源 CRUD 开发工具：NocoBase 与 Refine 对比](https://www.nocobase.com/cn/blog/nocobase-vs-refine)
 
-## 第5：**[ToolJet](https://www.tooljet.com/)**
+## 第6：**[ToolJet](https://www.tooljet.com/)**
 
 ![ToolJet.png](https://static-docs.nocobase.com/e3775e65b89e89fbbd796bbf5b8a9528.png)
 
 
 | **GitHub**                  | https://github.com/ToolJet/ToolJet                                |
 | --------------------------- | ----------------------------------------------------------------- |
-| **GitHub Star 数**          | 34.7k                                                             |
+| **GitHub Star 数**          | 35.8k                                                             |
 | **GitHub 最近一次更新时间** | 2天前                                                             |
 | **开源协议**                | [AGPL-3.0](https://github.com/ToolJet/ToolJet#AGPL-3.0-1-ov-file) |
-| **活跃提交者数量**          | 629                                                               |
+| **活跃提交者数量**          | 644                                                               |
 | **是否接受外部 PR**         | 是                                                                |
 | **官网**                    | https://www.tooljet.com/                                          |
 | **文档**                    | https://docs.tooljet.com/docs/                                    |
@@ -364,43 +335,14 @@ ToolJet 是一个开源低代码平台，用于构建业务应用，可以连接
 
 ToolJet 适用于需要快速构建和维护自定义内部工具的企业，尤其适用于具有复杂集成需求的场景。
 
-## 第4：**[Flowise](https://flowiseai.com/)**
-
-![Flowise.png](https://static-docs.nocobase.com/fdbbdef6595cdd762173f9817f8adabd.png)
-
-
-| **GitHub**                  | https://github.com/FlowiseAI/Flowise                                               |
-| --------------------------- | ---------------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 35.2k                                                                              |
-| **GitHub 最近一次更新时间** | 4天前                                                                              |
-| **开源协议**                | [Apache 2.0](https://github.com/FlowiseAI/Flowise?tab=Apache-2.0-1-ov-file#readme) |
-| **活跃提交者数量**          | 192                                                                                |
-| **是否接受外部 PR**         | 是                                                                                 |
-| **官网**                    | https://flowiseai.com/                                                             |
-| **文档**                    | https://docs.flowiseai.com/                                                        |
-
-**简介**
-
-Flowise 是一个开源低代码工具，专为开发定制化的大语言模型(LLM)应用而设计。它允许开发者通过简单的拖放界面构建复杂的 LLM 流程和 AI 代理，加速从原型到生产的开发过程
-
-**特点**
-
-* **快速迭代**：支持低代码方法，使从测试到生产的迭代更快。
-* **拖放界面**：简化了 LLM 应用的创建过程，支持使用内置模板和逻辑。
-* **多模态集成**：支持连接到多种数据源和 API，如数据库和云服务。
-
-**使用场景**
-
-Flowise 适合于需要快速开发和部署AI驱动的交互应用的企业，如客户服务自动化、智能数据分析和多语言支持系统。
-
-## 第3：**[Appsmith](https://www.appsmith.com/)**
+## 第5：**[Appsmith](https://www.appsmith.com/)**
 
 ![Appsmith.png](https://static-docs.nocobase.com/e91120006b296b79e6403fafc7584083.png)
 
 
 | **GitHub**                  | https://github.com/appsmithorg/appsmith                                               |
 | --------------------------- | ------------------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 35.7k                                                                                 |
+| **GitHub Star 数**          | 37.2k                                                                                 |
 | **GitHub 最近一次更新时间** | 当天                                                                                  |
 | **开源协议**                | [Apache 2.0](https://github.com/appsmithorg/appsmith?tab=Apache-2.0-1-ov-file#readme) |
 | **活跃提交者数量**          | 334                                                                                   |
@@ -424,17 +366,46 @@ Appsmith 适合于需要快速构建和维护内部管理面板、CRM 系统、�
 
 💡 阅读更多：[NocoBase 与 Appsmith：哪个开源低代码平台更适合你？](https://www.nocobase.com/cn/blog/nocobase-vs-appsmith)
 
-## **第2：**[NocoDB](https://nocodb.com/)
+## 第4：**[Flowise](https://flowiseai.com/)**
+
+![Flowise.png](https://static-docs.nocobase.com/fdbbdef6595cdd762173f9817f8adabd.png)
+
+
+| **GitHub**                  | https://github.com/FlowiseAI/Flowise                                               |
+| --------------------------- | ---------------------------------------------------------------------------------- |
+| **GitHub Star 数**          | 39.9k                                                                              |
+| **GitHub 最近一次更新时间** | 4天前                                                                              |
+| **开源协议**                | [Apache 2.0](https://github.com/FlowiseAI/Flowise?tab=Apache-2.0-1-ov-file#readme) |
+| **活跃提交者数量**          | 237                                                                                |
+| **是否接受外部 PR**         | 是                                                                                 |
+| **官网**                    | https://flowiseai.com/                                                             |
+| **文档**                    | https://docs.flowiseai.com/                                                        |
+
+**简介**
+
+Flowise 是一个开源低代码工具，专为开发定制化的大语言模型(LLM)应用而设计。它允许开发者通过简单的拖放界面构建复杂的 LLM 流程和 AI 代理，加速从原型到生产的开发过程
+
+**特点**
+
+* **快速迭代**：支持低代码方法，使从测试到生产的迭代更快。
+* **拖放界面**：简化了 LLM 应用的创建过程，支持使用内置模板和逻辑。
+* **多模态集成**：支持连接到多种数据源和 API，如数据库和云服务。
+
+**使用场景**
+
+Flowise 适合于需要快速开发和部署AI驱动的交互应用的企业，如客户服务自动化、智能数据分析和多语言支持系统。
+
+## **第3：**[NocoDB](https://nocodb.com/)
 
 ![NocoDB.png](https://static-docs.nocobase.com/7acac7be42aef2371755493d8ffc25fb.png)
 
 
 | **GitHub**                  | https://github.com/nocodb/nocodb                                |
 | --------------------------- | --------------------------------------------------------------- |
-| **GitHub Star 数**          | 51.9k                                                           |
+| **GitHub Star 数**          | 54.8k                                                           |
 | **GitHub 最近一次更新时间** | 当天                                                            |
 | **开源协议**                | [AGPL-3.0](https://github.com/nocodb/nocodb#AGPL-3.0-1-ov-file) |
-| **活跃提交者数量**          | 315                                                             |
+| **活跃提交者数量**          | 326                                                             |
 | **是否接受外部 PR**         | 是                                                              |
 | **官网**                    | https://nocodb.com/                                             |
 | **文档**                    | https://docs.nocodb.com/                                        |
@@ -455,6 +426,35 @@ NocoDB 适用于需要数据密集型操作的企业，如 CRM、项目管理、
 
 💡 阅读更多：[NocoBase 与 NocoDB：开源无代码工具深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
 
+## 第2：**[Dify](https://dify.ai/)**
+
+![dify](https://static-docs.nocobase.com/dify-ziw0to.png)
+
+
+| GitHub                      | [https://github.com/langgenius/dify](https://github.com/langgenius/dify)       |
+| --------------------------- | ------------------------------------------------------------------------------ |
+| **GitHub Star 数**          | 103k                                                                           |
+| **GitHub 最近一次更新时间** | 当日                                                                           |
+| **开源协议**                | [Apache License 2.0](https://github.com/langgenius/dify?tab=License-1-ov-file) |
+| **活跃提交者数量**          | 842                                                                            |
+| **是否接受外部 PR**         | 是                                                                             |
+| **官网**                    | [https://dify.ai/](https://dify.ai/)                                           |
+| **文档**                    | [https://docs.dify.ai/](https://docs.dify.ai/)                                 |
+
+**简介**
+
+Dify 是一款支持本地部署的开源 AI 应用开发平台，专注于帮助开发者和团队快速构建、管理和上线基于大语言模型的 AI 原型与应用。
+
+**特点**
+
+* **支持多模型接入**：兼容 OpenAI、Anthropic、Google Gemini、Moonshot、Deepseek 等主流大模型。
+* **可视化流程配置**：通过 Prompt Flow（提示流）设计器，无需编码即可构建多轮对话与复杂逻辑。
+* **嵌入与 API 调用**：生成的 AI 应用支持以 Web Widget、API 或内嵌形式部署到任意平台。
+
+**使用场景**
+
+Dify 适用于希望快速构建 AI 产品原型、部署内部助手或打造自定义 AI 工具的开发者与企业。
+
 ## 第1：**[n8n](https://n8n.io/)**
 
 ![n8n.png](https://static-docs.nocobase.com/10a56d828deefc995fe87f19b7938336.png)
@@ -462,10 +462,10 @@ NocoDB 适用于需要数据密集型操作的企业，如 CRM、项目管理、
 
 | **GitHub**                  | https://github.com/n8n-io/n8n                                                         |
 | --------------------------- | ------------------------------------------------------------------------------------- |
-| **GitHub Star 数**          | 61k                                                                                   |
+| **GitHub Star 数**          | 106k                                                                                  |
 | **GitHub 最近一次更新时间** | 当天                                                                                  |
 | **开源协议**                | [Sustainable Use License](https://github.com/n8n-io/n8n?tab=License-1-ov-file#readme) |
-| **活跃提交者数量**          | 450                                                                                   |
+| **活跃提交者数量**          | 492                                                                                   |
 | **是否接受外部 PR**         | 是                                                                                    |
 | **官网**                    | https://n8n.io/                                                                       |
 | **文档**                    | https://docs.n8n.io/                                                                  |
