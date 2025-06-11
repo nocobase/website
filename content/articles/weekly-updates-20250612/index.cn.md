@@ -14,6 +14,14 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### [v1.7.9](https://www.nocobase.com/cn/blog/v1.7.9)
+
+*发布时间：2025-06-11*
+
+#### 🐛 修复
+
+- **[client]** 修复二级弹窗配置表单字段时自动关闭弹窗的问题 ([#7042](https://github.com/nocobase/nocobase/pull/7042)) by @katherinehhh
+
 ### [v1.7.8](https://www.nocobase.com/cn/blog/v1.7.8)
 
 *发布时间：2025-06-10*
