@@ -1,4 +1,6 @@
-📝 **Note:** This article was last updated on **February 17, 2025**. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on June 11, 2025. We regularly update the information to ensure you have the latest insights! 😊
+
+---
 
 Last week, we published an article titled "[The Top 12 Open-Source No-Code Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)," which received much appreciation. Many friends commented asking why well-known products like n8n and Appsmith were not on the list. The reason is that we based this list on the "no-code" tag on GitHub, while these products were only tagged as "low-code."
 
@@ -27,10 +29,10 @@ These tools offer developers a variety of solutions, helping them quickly create
 
 | **GitHub**               | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| **GitHub Stars**         | 13.5k                                                                        |
+| **GitHub Stars**         | 15.8k                                                                        |
 | **Last GitHub Update**   | Today                                                                        |
 | **Open-Source License**  | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
-| **Active Contributors**  | 85                                                                           |
+| **Active Contributors**  | 92                                                                           |
 | **Accepts External PRs** | Yes                                                                          |
 | **Official Website**     | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | **Documentation**        | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
@@ -54,107 +56,14 @@ NocoBase is ideal for technical teams that need to quickly develop and deploy co
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
-## Number 14：**[Amplication](https://amplication.com/)**
-
-![Amplication.png](https://static-docs.nocobase.com/a92ab613d119eab94331e83ab4a8d7d5.png)
-
-
-| **GitHub**               | [https://github.com/amplication/amplication](https://github.com/amplication/amplication) |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 15.5k                                                                                    |
-| **Last GitHub Update**   | Today                                                                                    |
-| **Open-Source License**  | [Apache 2.0](https://github.com/amplication/amplication/blob/master/LICENSE)             |
-| **Active Contributors**  | 259                                                                                      |
-| **Accepts External PRs** | Yes                                                                                      |
-| **Official Website**     | [https://amplication.com/](https://amplication.com/)                                     |
-| **Documentation**        | [https://docs.amplication.com/](https://docs.amplication.com/)                           |
-
-**Introduction**
-
-Amplication is designed to assist developers in rapidly building and deploying production-grade Node.js applications. It leverages AI to automatically generate backend and frontend code.
-
-Developers can define data models and relationships through its intuitive interface. Amplication then automatically generates a fully functional, production-ready application, including REST API, GraphQL API, authentication, authorization, and an administration interface. Once the models are set, you can customize the generated code or extend it with custom code. The platform supports deployment to various cloud services, facilitating simple and continuous integration.
-
-**Features**
-
-* **AI Code Generation:** Automatically generates models, APIs, configurations, etc.
-* **Full Code Control:** Generated code is fully editable, supporting both .NET and Node.js.
-* **Plugin System:** Highly extensible, allowing the use of community-built plugins or the creation of custom plugins.
-
-**Use Cases**
-
-Amplication is ideal for development teams that need to rapidly develop enterprise-level applications, especially those that require a quick transition from concept to production while maintaining strict data security and compliance.
-
-💡 Read More: [Exploring RAD: 5 Best Application Cases](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases)
-
-## Number 13: [kestra](https://kestra.io/)
-
-![kestra.png](https://static-docs.nocobase.com/28f125a0a8b93409eefe69780f12f15c.png)
-
-
-| **GitHub**               | [https://github.com/kestra-io/kestra](https://github.com/kestra-io/kestra)  |
-| ------------------------ | --------------------------------------------------------------------------- |
-| **GitHub Stars**         | 15.9k                                                                       |
-| **Last GitHub Update**   | Today                                                                       |
-| **Open-Source License**  | [Apache-2.0](https://github.com/kestra-io/kestra?tab=Apache-2.0-1-ov-file#) |
-| **Active Contributors**  | 151                                                                         |
-| **Accepts External PRs** | Yes                                                                         |
-| **Official Website**     | [https://kestra.io/](https://kestra.io/)                                    |
-| **Documentation**        | [https://kestra.io/docs](https://kestra.io/docs)                            |
-
-**Introduction**
-
-Kestra is an open-source low-code workflow orchestration platform designed to help developers and data teams easily build, schedule, and manage tasks. It uses YAML-based workflow definitions and provides an intuitive web interface with rich plugin integrations and automated task processing.
-
-Users can configure data flows, triggers, and tasks within Kestra’s UI, leveraging its distributed architecture to handle large-scale data pipelines and business processes. Workflows can be self-hosted and support API calls, allowing enterprises to flexibly scale and manage automation tasks.
-
-**Features**
-
-* **Low-Code Workflow Orchestration**: Define workflows using YAML with a visual management interface.
-* **Extensive Plugin Support**: Integrates with databases, cloud storage, APIs, message queues, and more.
-* **Flexible Trigger Mechanisms**: Supports scheduled execution, event-driven triggers, and API calls.
-
-**Use Cases**
-
-Kestra is ideal for data engineering and DevOps teams, particularly for ETL workflows, log processing, and automated microservices orchestration.
-
-## Number 12: [teable](https://teable.io/)
-
-![teable.png](https://static-docs.nocobase.com/d93318ae98291f1ec49621f2250b7937.png)
-
-
-| **GitHub**               | [https://github.com/teableio/teable](https://github.com/teableio/teable) |
-| ------------------------ | ------------------------------------------------------------------------ |
-| **GitHub Stars**         | 16.5k                                                                    |
-| **Last GitHub Update**   | Today                                                                    |
-| **Open-Source License**  | [AGPL-3.0](https://github.com/teableio/teable?tab=AGPL-3.0-2-ov-file#)   |
-| **Active Contributors**  | 29                                                                       |
-| **Accepts External PRs** | Yes                                                                      |
-| **Official Website**     | [https://teable.io/](https://teable.io/)                                 |
-| **Documentation**        | [https://help.teable.io/](https://help.teable.io/)                       |
-
-**Introduction**
-
-Teable is a no-code platform designed to help teams rapidly build and deploy enterprise-grade database applications. With a spreadsheet-like intuitive interface, it simplifies data management and collaboration workflows.
-
-**Features**
-
-* **Spreadsheet-Like Interface**: Allows users to create and manage complex data structures without coding, improving team collaboration.
-* **High Performance & Scalability**: Built on **PostgreSQL**, capable of handling **millions of rows** while ensuring stable performance.
-* **Data Security & Deployment Flexibility**: Supports **self-hosting**, giving users full control over their data while offering the convenience of cloud deployment.
-
-**Use Cases**
-
-Teable is perfect for teams that require efficient data management and real-time collaboration, such as CRM systems, event operations management, and content management systems (CMS). Its no-code nature allows non-technical users to easily build applications tailored to business needs.
-
-## Number **11：**[APIJSON](http://apijson.cn/)
+## Number **14：**[APIJSON](http://apijson.cn/)
 
 ![APIJSON.png](https://static-docs.nocobase.com/21b16219e72354e0ef41a15687ca7ee0.png)
 
 
 | **GitHub**               | [https://github.com/Tencent/APIJSON](https://github.com/Tencent/APIJSON)                       |
 | ------------------------ | ---------------------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 17.4k                                                                                          |
+| **GitHub Stars**         | 18k                                                                                            |
 | **Last GitHub Update**   | 2 days ago                                                                                     |
 | **Open-Source License**  | [Apache 2.0](https://github.com/Tencent/APIJSON?tab=License-1-ov-file#readme)                  |
 | **Active Contributors**  | 72                                                                                             |
@@ -178,19 +87,19 @@ APIJSON is not a traditional low-code platform; it simplifies backend developmen
 
 APIJSON is suitable for small to medium-sized front-end and back-end separated projects, such as startups, internal projects, and applications requiring rapid development and iteration, especially those involving complex database operations.
 
-💡 Read More: [Top 11 Open Source Internal Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/open-source-internal-tools)
+💡 Read More: [Exploring RAD: 5 Best Application Cases](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases)
 
-## Number 10：Amis
+## Number 13：Amis
 
 ![Amis.png](https://static-docs.nocobase.com/5992e43b289ca49fd0b1817d0aedda2c.png)
 
 
 | **GitHub**               | [https://github.com/baidu/amis](https://github.com/baidu/amis)               |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| **GitHub Stars**         | 17.8k                                                                        |
+| **GitHub Stars**         | 18.3k                                                                        |
 | **Last GitHub Update**   | 3 days ago                                                                   |
 | **Open-Source License**  | [Apache 2.0](https://github.com/amplication/amplication/blob/master/LICENSE) |
-| **Active Contributors**  | 235                                                                          |
+| **Active Contributors**  | 251                                                                          |
 | **Accepts External PRs** | Yes                                                                          |
 | **Official Website**     | None                                                                         |
 | **Documentation**        | [https://baidu.github.io/amis](https://baidu.github.io/amis)                 |
@@ -213,17 +122,79 @@ However, the lack of English documentation can be a barrier for non-Chinese spea
 
 AMIS is ideal for scenarios that require the rapid development of rich, interactive front-end applications, especially in the areas of management backends and complex data visualization.
 
-## Number 9：[Node-RED](https://nodered.org/)
+## Number 12: [kestra](https://kestra.io/)
+
+![kestra.png](https://static-docs.nocobase.com/28f125a0a8b93409eefe69780f12f15c.png)
+
+
+| **GitHub**               | [https://github.com/kestra-io/kestra](https://github.com/kestra-io/kestra)  |
+| ------------------------ | --------------------------------------------------------------------------- |
+| **GitHub Stars**         | 18.5k                                                                       |
+| **Last GitHub Update**   | Today                                                                       |
+| **Open-Source License**  | [Apache-2.0](https://github.com/kestra-io/kestra?tab=Apache-2.0-1-ov-file#) |
+| **Active Contributors**  | 169                                                                         |
+| **Accepts External PRs** | Yes                                                                         |
+| **Official Website**     | [https://kestra.io/](https://kestra.io/)                                    |
+| **Documentation**        | [https://kestra.io/docs](https://kestra.io/docs)                            |
+
+**Introduction**
+
+Kestra is an open-source low-code workflow orchestration platform designed to help developers and data teams easily build, schedule, and manage tasks. It uses YAML-based workflow definitions and provides an intuitive web interface with rich plugin integrations and automated task processing.
+
+Users can configure data flows, triggers, and tasks within Kestra’s UI, leveraging its distributed architecture to handle large-scale data pipelines and business processes. Workflows can be self-hosted and support API calls, allowing enterprises to flexibly scale and manage automation tasks.
+
+**Features**
+
+* **Low-Code Workflow Orchestration**: Define workflows using YAML with a visual management interface.
+* **Extensive Plugin Support**: Integrates with databases, cloud storage, APIs, message queues, and more.
+* **Flexible Trigger Mechanisms**: Supports scheduled execution, event-driven triggers, and API calls.
+
+**Use Cases**
+
+Kestra is ideal for data engineering and DevOps teams, particularly for ETL workflows, log processing, and automated microservices orchestration.
+
+## Number 11: [teable](https://teable.io/)
+
+![teable.png](https://static-docs.nocobase.com/d93318ae98291f1ec49621f2250b7937.png)
+
+
+| **GitHub**               | [https://github.com/teableio/teable](https://github.com/teableio/teable) |
+| ------------------------ | ------------------------------------------------------------------------ |
+| **GitHub Stars**         | 18.6k                                                                    |
+| **Last GitHub Update**   | Today                                                                    |
+| **Open-Source License**  | [AGPL-3.0](https://github.com/teableio/teable?tab=AGPL-3.0-2-ov-file#)   |
+| **Active Contributors**  | 36                                                                       |
+| **Accepts External PRs** | Yes                                                                      |
+| **Official Website**     | [https://teable.io/](https://teable.io/)                                 |
+| **Documentation**        | [https://help.teable.io/](https://help.teable.io/)                       |
+
+**Introduction**
+
+Teable is a no-code platform designed to help teams rapidly build and deploy enterprise-grade database applications. With a spreadsheet-like intuitive interface, it simplifies data management and collaboration workflows.
+
+**Features**
+
+* **Spreadsheet-Like Interface**: Allows users to create and manage complex data structures without coding, improving team collaboration.
+* **High Performance & Scalability**: Built on **PostgreSQL**, capable of handling **millions of rows** while ensuring stable performance.
+* **Data Security & Deployment Flexibility**: Supports **self-hosting**, giving users full control over their data while offering the convenience of cloud deployment.
+
+**Use Cases**
+
+Teable is perfect for teams that require efficient data management and real-time collaboration, such as CRM systems, event operations management, and content management systems (CMS). Its no-code nature allows non-technical users to easily build applications tailored to business needs.
+
+💡 Read More: [Top 11 Open Source Internal Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/open-source-internal-tools)
+
+## Number 10：[Node-RED](https://nodered.org/)
 
 ![Node-RED.png](https://static-docs.nocobase.com/009d6d236d9948212350fed014ebad6c.png)
 
 
 | **GitHub**               | [https://github.com/node-red/node-red](https://github.com/node-red/node-red)       |
 | ------------------------ | ---------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 20.4k                                                                              |
+| **GitHub Stars**         | 21.3k                                                                              |
 | **Last GitHub Update**   | 2 days ago                                                                         |
 | **Open-Source License**  | [Apache 2.0](https://github.com/node-red/node-red?tab=Apache-2.0-1-ov-file#readme) |
-| **Active Contributors**  | 234                                                                                |
+| **Active Contributors**  | 233                                                                                |
 | **Accepts External PRs** | Yes                                                                                |
 | **Official Website**     | [https://nodered.org/](https://nodered.org/)                                       |
 | **Documentation**        | [https://nodered.org/docs/](https://nodered.org/docs/)                             |
@@ -242,17 +213,17 @@ Node-RED is a low-code programming tool based on Node.js, designed to connect ha
 
 Node-RED is ideal for projects that require the integration of multiple systems and services, such as IoT device control, automated workflows, and various data processing and distribution tasks.
 
-## Number 8：[Budibase](https://budibase.com/)
+## Number 9：[Budibase](https://budibase.com/)
 
 ![budibase.png](https://static-docs.nocobase.com/5d5e2e17f6f419eb6d7353c180febded.png)
 
 
 | **GitHub**               | [https://github.com/Budibase/budibase](https://github.com/Budibase/budibase) |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| **GitHub Stars**         | 23.4k                                                                        |
+| **GitHub Stars**         | 24.7k                                                                        |
 | **Last GitHub Update**   | Today                                                                        |
 | **Open-Source License**  | [GPLv3](https://github.com/Budibase/budibase?tab=License-1-ov-file#)         |
-| **Active Contributors**  | 104                                                                          |
+| **Active Contributors**  | 106                                                                          |
 | **Accepts External PRs** | Yes                                                                          |
 | **Official Website**     | [https://budibase.com/](https://budibase.com/)                               |
 | **Documentation**        | [https://docs.budibase.com/docs/](https://docs.budibase.com/docs/)           |
@@ -271,17 +242,17 @@ Budibase is an open-source low-code platform designed for rapidly building inter
 
 Budibase is ideal for teams looking to quickly develop and deploy internal tools, such as CRM systems, approval workflows, inventory management, and customer support platforms.
 
-## Number 7：**[Supervision](https://supervision.roboflow.com/)**
+## Number 8：**[Supervision](https://supervision.roboflow.com/)**
 
 ![Supervision.png](https://static-docs.nocobase.com/26bd0e41647be31e17fce19990a24c5b.png)
 
 
 | **GitHub**               | [https://github.com/roboflow/supervision](https://github.com/roboflow/supervision)           |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 24.9k                                                                                        |
+| **GitHub Stars**         | 26.7k                                                                                        |
 | **Last GitHub Update**   | Today                                                                                        |
 | **Open-Source License**  | [MIT](https://github.com/roboflow/supervision?tab=MIT-1-ov-file#readme)                      |
-| **Active Contributors**  | 99                                                                                           |
+| **Active Contributors**  | 102                                                                                          |
 | **Accepts External PRs** | Yes                                                                                          |
 | **Official Website**     | [https://supervision.roboflow.com/](https://supervision.roboflow.com/)                       |
 | **Documentation**        | [https://supervision.roboflow.com/0.22.0/how\\\\\\\_to/detect\\\\\\\_and\\\\\\\_annotate/]() |
@@ -304,17 +275,17 @@ This greatly simplifies the development process for users without deep technical
 
 Supervision is suitable for businesses and researchers needing to rapidly develop and deploy computer vision applications, particularly in areas like product quality control, security monitoring, and enhancing customer experiences.
 
-## Number 6：**[Refine](https://refine.dev/)**
+## Number 7：**[Refine](https://refine.dev/)**
 
 ![Refine.png](https://static-docs.nocobase.com/602ebba38351a43db6f2d3cb58c1ead4.png)
 
 
 | **GitHub**               | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
 | ------------------------ | -------------------------------------------------------------------------- |
-| **GitHub Stars**         | 29.9k                                                                      |
+| **GitHub Stars**         | 31.2k                                                                      |
 | **Last GitHub Update**   | 4 days ago                                                                 |
 | **Open-Source License**  | [MIT](https://github.com/refinedev/refine?tab=MIT-1-ov-file#readme)        |
-| **Active Contributors**  | 284                                                                        |
+| **Active Contributors**  | 287                                                                        |
 | **Accepts External PRs** | Yes                                                                        |
 | **Official Website**     | [https://refine.dev/](https://refine.dev/)                                 |
 | **Documentation**        | [https://refine.dev/docs/](https://refine.dev/docs/)                       |
@@ -335,17 +306,17 @@ Refine is ideal for enterprise developers looking to build and maintain highly c
 
 💡 Read More: [Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
 
-## Number 5：**[ToolJet](https://www.tooljet.com/)**
+## Number 6：**[ToolJet](https://www.tooljet.com/)**
 
 ![ToolJet.png](https://static-docs.nocobase.com/e3775e65b89e89fbbd796bbf5b8a9528.png)
 
 
 | **GitHub**               | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) |
 | ------------------------ | ------------------------------------------------------------------------ |
-| **GitHub Stars**         | 34.7k                                                                    |
+| **GitHub Stars**         | 35.8k                                                                    |
 | **Last GitHub Update**   | 2 days ago                                                               |
 | **Open-Source License**  | [AGPL-3.0](https://github.com/ToolJet/ToolJet#AGPL-3.0-1-ov-file)        |
-| **Active Contributors**  | 629                                                                      |
+| **Active Contributors**  | 644                                                                      |
 | **Accepts External PRs** | Yes                                                                      |
 | **Official Website**     | [https://www.tooljet.com/](https://www.tooljet.com/)                     |
 | **Documentation**        | [https://docs.tooljet.com/docs/](https://docs.tooljet.com/docs/)         |
@@ -364,43 +335,14 @@ ToolJet is an open-source low-code platform designed for building business appli
 
 ToolJet is ideal for enterprises that need to quickly build and maintain custom internal tools, especially suited for scenarios with complex integration requirements.
 
-## Number 4：**[Flowise](https://flowiseai.com/)**
-
-![Flowise.png](https://static-docs.nocobase.com/fdbbdef6595cdd762173f9817f8adabd.png)
-
-
-| **GitHub**               | [https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)       |
-| ------------------------ | ---------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 35.2k                                                                              |
-| **Last GitHub Update**   | 4 days ago                                                                         |
-| **Open-Source License**  | [Apache 2.0](https://github.com/FlowiseAI/Flowise?tab=Apache-2.0-1-ov-file#readme) |
-| **Active Contributors**  | 192                                                                                |
-| **Accepts External PRs** | Yes                                                                                |
-| **Official Website**     | [https://flowiseai.com/](https://flowiseai.com/)                                   |
-| **Documentation**        | [https://docs.flowiseai.com/](https://docs.flowiseai.com/)                         |
-
-**Introduction**
-
-Flowise is an open-source low-code tool specifically designed for creating customized large language model (LLM) applications. It enables developers to build complex LLM workflows and AI agents through a simple drag-and-drop interface, accelerating the development process from prototype to production.
-
-**Features**
-
-* **Rapid Iteration:** Supports a low-code approach that speeds up iterations from testing to production.
-* **Drag-and-Drop Interface:** Simplifies the creation process of LLM applications, supported by built-in templates and logic.
-* **Multimodal Integration:** Facilitates connections to a variety of data sources and APIs, such as databases and cloud services.
-
-**Use Cases**
-
-Flowise is suitable for enterprises that need to quickly develop and deploy AI-driven interactive applications, such as customer service automation, intelligent data analysis, and multilingual support systems.
-
-## Number 3：**[Appsmith](https://www.appsmith.com/)**
+## Number 5：**[Appsmith](https://www.appsmith.com/)**
 
 ![Appsmith.png](https://static-docs.nocobase.com/e91120006b296b79e6403fafc7584083.png)
 
 
 | **GitHub**               | [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)    |
 | ------------------------ | ------------------------------------------------------------------------------------- |
-| **GitHub Stars**         | 35.7k                                                                                 |
+| **GitHub Stars**         | 37.2k                                                                                 |
 | **Last GitHub Update**  | Today                                                                                 |
 | **Open Source License**  | [Apache 2.0](https://github.com/appsmithorg/appsmith?tab=Apache-2.0-1-ov-file#readme) |
 | **Active Contributors**  | 334                                                                                   |
@@ -424,17 +366,46 @@ Appsmith is ideal for enterprises needing to quickly build and maintain internal
 
 💡 Read More: [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
 
-## Number **2：**[NocoDB](https://nocodb.com/)
+## Number 4：**[Flowise](https://flowiseai.com/)**
+
+![Flowise.png](https://static-docs.nocobase.com/fdbbdef6595cdd762173f9817f8adabd.png)
+
+
+| **GitHub**               | [https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)       |
+| ------------------------ | ---------------------------------------------------------------------------------- |
+| **GitHub Stars**         | 39.9k                                                                              |
+| **Last GitHub Update**   | 4 days ago                                                                         |
+| **Open-Source License**  | [Apache 2.0](https://github.com/FlowiseAI/Flowise?tab=Apache-2.0-1-ov-file#readme) |
+| **Active Contributors**  | 237                                                                                |
+| **Accepts External PRs** | Yes                                                                                |
+| **Official Website**     | [https://flowiseai.com/](https://flowiseai.com/)                                   |
+| **Documentation**        | [https://docs.flowiseai.com/](https://docs.flowiseai.com/)                         |
+
+**Introduction**
+
+Flowise is an open-source low-code tool specifically designed for creating customized large language model (LLM) applications. It enables developers to build complex LLM workflows and AI agents through a simple drag-and-drop interface, accelerating the development process from prototype to production.
+
+**Features**
+
+* **Rapid Iteration:** Supports a low-code approach that speeds up iterations from testing to production.
+* **Drag-and-Drop Interface:** Simplifies the creation process of LLM applications, supported by built-in templates and logic.
+* **Multimodal Integration:** Facilitates connections to a variety of data sources and APIs, such as databases and cloud services.
+
+**Use Cases**
+
+Flowise is suitable for enterprises that need to quickly develop and deploy AI-driven interactive applications, such as customer service automation, intelligent data analysis, and multilingual support systems.
+
+## Number **3：**[NocoDB](https://nocodb.com/)
 
 ![NocoDB.png](https://static-docs.nocobase.com/7acac7be42aef2371755493d8ffc25fb.png)
 
 
 | **GitHub**                | https://github.com/nocodb/nocodb                                |
 | ------------------------- | --------------------------------------------------------------- |
-| **GitHub Stars**          | 51.9k                                                           |
+| **GitHub Stars**          | 54.8k                                                           |
 | **Last GitHub Update**    | Within one day                                                  |
 | **Open Source License**   | [AGPL-3.0](https://github.com/nocodb/nocodb#AGPL-3.0-1-ov-file) |
-| **Active Contributors**   | 315                                                             |
+| **Active Contributors**   | 326                                                             |
 | **Accepts External PRs** | Yes                                                             |
 | **Official Website**      | https://nocodb.com/                                             |
 | **Documentation**         | https://docs.nocodb.com/                                        |
@@ -454,6 +425,35 @@ NocoDB is an open-source alternative to Airtable, capable of transforming any da
 NocoDB is ideal for businesses that require data-intensive operations, such as CRM, project management, operations management, and inventory management.
 
 💡 Read More: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
+
+## Number 2: Dify
+
+![dify](https://static-docs.nocobase.com/dify-ziw0to.png)
+
+
+| GitHub               | [https://github.com/langgenius/dify](https://github.com/langgenius/dify)       |
+| -------------------- | ------------------------------------------------------------------------------ |
+| GitHub Stars         | 103k                                                                           |
+| Last GitHub Update   | Today                                                                          |
+| Open-Source License  | [Apache License 2.0](https://github.com/langgenius/dify?tab=License-1-ov-file) |
+| Active Contributors  | 842                                                                            |
+| Accepts External PRs | Yes                                                                            |
+| Official Website     | [https://dify.ai/](https://dify.ai/)                                           |
+| Documentation        | [https://docs.dify.ai/](https://docs.dify.ai/)                                 |
+
+**Introduction:**
+
+Dify is an open-source AI application development platform supporting local deployment, dedicated to helping developers and teams quickly build, manage, and launch large language model-based AI prototypes and applications.
+
+**Features:**
+
+* **Multi-model integration:** Compatible with mainstream large models like OpenAI, Anthropic, Google Gemini, Moonshot, and Deepseek.
+* **Visual workflow configuration:** Build multi-turn conversations and complex logic without coding via the Prompt Flow designer.
+* **Embedding and API calling:** Generated AI applications can be deployed to any platform as Web Widgets, APIs, or embedded components.
+
+**Use cases:**
+
+Dify is suitable for developers and enterprises looking to rapidly build AI product prototypes, deploy internal assistants, or create custom AI tools.
 
 ## Number 1：**[n8n](https://n8n.io/)**
 
