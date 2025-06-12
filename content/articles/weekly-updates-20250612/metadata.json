@@ -1,11 +1,11 @@
 {
   "id": 498,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
+  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
+  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "description": "This week’s updates include: support for filtering workflows by more fields, addition of the environment variable to control audit log output methods, and more.",
+  "description_cn": "本周更新包括：支持使用更多字段筛选工作流，添加环境变量控制日志输出方式等。",
+  "description_ja": "今週の更新では、より多くのフィールドを用いたワークフローのフィルタリング機能のサポート、監査ログの出力方法を制御する環境変数の追加などです。",
   "slug": "weekly-updates-20250612",
   "publishedAt": "2025-06-12T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-11T11:16:01.649Z"
+  "updatedAt": "2025-06-12T00:30:13.326Z"
 }
