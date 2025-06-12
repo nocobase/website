@@ -1,3 +1,7 @@
+📝 注：この記事は 2025 年 6 月 12 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
+---
+
 2017年の発売以来、Retoolは開発者の間で急速に人気を博しています。
 
 **内部ツールを迅速に構築する必要がある企業のギャップを埋めました。** 伝統的なアプリケーション開発は、特にカスタムの内部ビジネスアプリケーションでは、多くの時間とリソースを消費します。Retoolは、開発者がドラッグアンドドロップコンポーネントと少量のカスタムコードを使用して、さまざまなデータベース、API、サードパーティサービスをアプリケーションに統合できる柔軟なプラットフォームを提供し、開発時間を大幅に短縮します。
@@ -52,7 +56,7 @@ RetoolのSaaS版はサブスクリプションモデルで運営されており�
 ![NocoBase.PNG](https://static-docs.nocobase.com/554bf2326387237ba8e621781cad4c79.PNG)
 
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* **GitHubスター数**: 12.4k
+* **GitHubスター数**: 15.8k
 * **ウェブサイト**: [https://www.nocobase.com/](https://www.nocobase.com/)
 * **ドキュメント**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -105,7 +109,7 @@ Retoolは、内部ツールを迅速に構築し、特に複雑な権限管理�
 ![Appsmith.png](https://static-docs.nocobase.com/3af34cface2f9fb97af25ce79d24f5c2.png)
 
 * **GitHub**: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* **GitHubスター数**: 34.2k
+* **GitHubスター数**: 37.2k
 * **ウェブサイト**: [https://www.appsmith.com/](https://www.appsmith.com/)
 * **ドキュメント**: [https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -148,7 +152,7 @@ Retoolは、**標準的な内部ツールを迅速に構築し、複数のサー
 ![Refine.png](https://static-docs.nocobase.com/cf84f95c5c008d7ea507e3b0287c97a0.png)
 
 * **GitHub**: [https://github.com/refinedev/refine](https://github.com/refinedev/refine)
-* **GitHubスター数**: 28.1k
+* **GitHubスター数**: 31.2k
 * **ウェブサイト**: [https://refine.dev/](https://refine.dev/)
 * **ドキュメント**: [https://refine.dev/docs/](https://refine.dev/docs/)
 
@@ -197,7 +201,7 @@ Retoolは、**内部ツールを迅速に構築し、複数のデータソース
 ![Budibase.png](https://static-docs.nocobase.com/26621a28118b18f235967ded42b85178.png)
 
 * **GitHub**: [https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* **GitHubスター数**: 22.5k
+* **GitHubスター数**: 24.7k
 * **ウェブサイト**: [https://budibase.com/](https://budibase.com/)
 * **ドキュメント**: [https://docs.budibase.com/](https://docs.budibase.com/)
 
