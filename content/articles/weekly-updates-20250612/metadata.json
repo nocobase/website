@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、より多くのフィールドを用いたワークフローのフィルタリング機能のサポート、監査ログの出力方法を制御する環境変数の追加などです。",
   "slug": "weekly-updates-20250612",
   "publishedAt": "2025-06-12T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-12T00:30:13.326Z"
+  "updatedAt": "2025-06-12T01:13:21.793Z"
 }
