@@ -56,7 +56,7 @@ NocoBase is ideal for technical teams that need to quickly develop and deploy co
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
-## Number **14：**[APIJSON](http://apijson.cn/)
+## Number **14: **[APIJSON](http://apijson.cn/)
 
 ![APIJSON.png](https://static-docs.nocobase.com/21b16219e72354e0ef41a15687ca7ee0.png)
 
@@ -89,7 +89,7 @@ APIJSON is suitable for small to medium-sized front-end and back-end separated p
 
 💡 Read More: [Exploring RAD: 5 Best Application Cases](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases)
 
-## Number 13：Amis
+## Number 13: Amis
 
 ![Amis.png](https://static-docs.nocobase.com/5992e43b289ca49fd0b1817d0aedda2c.png)
 
@@ -184,7 +184,7 @@ Teable is perfect for teams that require efficient data management and real-time
 
 💡 Read More: [Top 11 Open Source Internal Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/open-source-internal-tools)
 
-## Number 10：[Node-RED](https://nodered.org/)
+## Number 10: [Node-RED](https://nodered.org/)
 
 ![Node-RED.png](https://static-docs.nocobase.com/009d6d236d9948212350fed014ebad6c.png)
 
@@ -213,7 +213,7 @@ Node-RED is a low-code programming tool based on Node.js, designed to connect ha
 
 Node-RED is ideal for projects that require the integration of multiple systems and services, such as IoT device control, automated workflows, and various data processing and distribution tasks.
 
-## Number 9：[Budibase](https://budibase.com/)
+## Number 9: [Budibase](https://budibase.com/)
 
 ![budibase.png](https://static-docs.nocobase.com/5d5e2e17f6f419eb6d7353c180febded.png)
 
@@ -242,7 +242,7 @@ Budibase is an open-source low-code platform designed for rapidly building inter
 
 Budibase is ideal for teams looking to quickly develop and deploy internal tools, such as CRM systems, approval workflows, inventory management, and customer support platforms.
 
-## Number 8：**[Supervision](https://supervision.roboflow.com/)**
+## Number 8: **[Supervision](https://supervision.roboflow.com/)**
 
 ![Supervision.png](https://static-docs.nocobase.com/26bd0e41647be31e17fce19990a24c5b.png)
 
@@ -275,7 +275,7 @@ This greatly simplifies the development process for users without deep technical
 
 Supervision is suitable for businesses and researchers needing to rapidly develop and deploy computer vision applications, particularly in areas like product quality control, security monitoring, and enhancing customer experiences.
 
-## Number 7：**[Refine](https://refine.dev/)**
+## Number 7: **[Refine](https://refine.dev/)**
 
 ![Refine.png](https://static-docs.nocobase.com/602ebba38351a43db6f2d3cb58c1ead4.png)
 
@@ -306,7 +306,7 @@ Refine is ideal for enterprise developers looking to build and maintain highly c
 
 💡 Read More: [Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
 
-## Number 6：**[ToolJet](https://www.tooljet.com/)**
+## Number 6: **[ToolJet](https://www.tooljet.com/)**
 
 ![ToolJet.png](https://static-docs.nocobase.com/e3775e65b89e89fbbd796bbf5b8a9528.png)
 
@@ -335,7 +335,7 @@ ToolJet is an open-source low-code platform designed for building business appli
 
 ToolJet is ideal for enterprises that need to quickly build and maintain custom internal tools, especially suited for scenarios with complex integration requirements.
 
-## Number 5：**[Appsmith](https://www.appsmith.com/)**
+## Number 5: **[Appsmith](https://www.appsmith.com/)**
 
 ![Appsmith.png](https://static-docs.nocobase.com/e91120006b296b79e6403fafc7584083.png)
 
@@ -366,7 +366,7 @@ Appsmith is ideal for enterprises needing to quickly build and maintain internal
 
 💡 Read More: [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
 
-## Number 4：**[Flowise](https://flowiseai.com/)**
+## Number 4: **[Flowise](https://flowiseai.com/)**
 
 ![Flowise.png](https://static-docs.nocobase.com/fdbbdef6595cdd762173f9817f8adabd.png)
 
@@ -395,7 +395,7 @@ Flowise is an open-source low-code tool specifically designed for creating custo
 
 Flowise is suitable for enterprises that need to quickly develop and deploy AI-driven interactive applications, such as customer service automation, intelligent data analysis, and multilingual support systems.
 
-## Number **3：**[NocoDB](https://nocodb.com/)
+## Number **3: **[NocoDB](https://nocodb.com/)
 
 ![NocoDB.png](https://static-docs.nocobase.com/7acac7be42aef2371755493d8ffc25fb.png)
 
@@ -455,7 +455,7 @@ Dify is an open-source AI application development platform supporting local depl
 
 Dify is suitable for developers and enterprises looking to rapidly build AI product prototypes, deploy internal assistants, or create custom AI tools.
 
-## Number 1：**[n8n](https://n8n.io/)**
+## Number 1: **[n8n](https://n8n.io/)**
 
 ![n8n.png](https://static-docs.nocobase.com/10a56d828deefc995fe87f19b7938336.png)
 
