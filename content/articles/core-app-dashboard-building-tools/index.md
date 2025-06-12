@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 10, 2025. In this update, we have optimized the dashboard tools and added the latest tools and functional improvements for 2025. We regularly update the information to ensure you have the latest insights! 😊
+**Last updated [2025.6.10]**
 
 You may not be familiar with the concept of Core App Dashboard, but you certainly know what a dashboard is.
 
