@@ -1,4 +1,3 @@
 ### 🐛 修复
 
-- **[client]** 修复二级弹窗配置表单字段时自动关闭弹窗的问题 ([#7042](https://github.com/nocobase/nocobase/pull/7042)) by @katherinehhh
-
+- **[client]** 修复区块报错的问题 ([#7048](https://github.com/nocobase/nocobase/pull/7048)) by @gchust
