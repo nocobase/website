@@ -1,3 +1,5 @@
+📝 注：この記事は 2025 年 6 月 12 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
 ## Salesforceの基本を知る
@@ -34,11 +36,11 @@ Salesforceは優れた機能を備えていますが、以下のような課題�
 
 ## Salesforceの代替としてのオープンソースCRMトップ候補
 
-### **NocoBase - 柔軟なノーコード/ローコード開発プラットフォーム**
+### **[NocoBase]([NocoBase](https://www.nocobase.com/cn/)) - 柔軟なノーコード/ローコード開発プラットフォーム**
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/fb06535f83c00c486fbf2373d452eeb9.PNG)
 
-NocoBaseは、CRMソリューションの構築に特化したオープンソースのノーコード/ローコードプラットフォームです。 ⭐️ [GitHub](https://github.com/nocobase/nocobase)で13,000以上のスターを獲得し、多くの開発者から支持されています。
+NocoBaseは、CRMソリューションの構築に特化したオープンソースのノーコード/ローコードプラットフォームです。 ⭐️ [GitHub](https://github.com/nocobase/nocobase)で15.8k のスターを獲得し、多くの開発者から支持されています。
 
 NocoBaseは柔軟で拡張性が高く、初心者にも使いやすい設計が特徴です。また、高度なCRM機能が必要な場合には、プラグインを活用することで簡単に対応できます。社内開発とノーコードソリューションの両立を目指すチームにとって、非常に有用なツールです。
 
@@ -90,16 +92,15 @@ NocoBaseは、低コストで柔軟性やデータ管理の自由を求めるチ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3dXeTHlZ19E?si=eEzxIS3UH9BTjne-&start=100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 💡 始めるにはこちら: [NocoBaseチュートリアル - タスク管理システム構築方法](https://www.nocobase.com/ja/tutorials)
 
-### EspoCRM - 軽量なオープンソースCRM
+### [EspoCRM]([EspoCRM](https://www.espocrm.com/)) - 軽量なオープンソースCRM
 
 ![EspoCRM.png](https://static-docs.nocobase.com/cd7c7ba2f8403f6509007e2e267187ad.png)
 
 EspoCRMは、中小企業向けにシンプルでありながら強力なオープンソースCRMソリューションです。現代的なインターフェイスと必要な機能、技術的な敷居の低さが特徴で、チームが営業やカスタマーサービス、マーケティング活動を効率よく管理でき、すぐに使用を開始できます。
 
-⭐️ 現在、EspoCRMはGitHubで1.9kのスターを得ています。
+⭐️ 現在、EspoCRMはGitHubで2.3kのスターを得ています。
 
 #### 主な機能
 
@@ -126,7 +127,7 @@ EspoCRMは、予算重視で直感的に使えるCRMシステムを求める中�
 
 EspoCRMは、複雑な部門間連携やグローバル機能が不要な場合に特に効果を発揮します。データの完全管理を重視する企業にも、手頃で信頼性の高いソリューションを提供します。
 
-### SuiteCRM - Salesforceに匹敵する強力なオープンソースCRM
+### [SuiteCRM]([SuiteCRM](https://suitecrm.com/)) - Salesforceに匹敵する強力なオープンソースCRM
 
 ![SuiteCRM.png](https://static-docs.nocobase.com/db5ce4c02abf138a2d68036432a4bff4.png)
 
@@ -134,7 +135,7 @@ SuiteCRMは、SugarCRMのコミュニティエディションを基に進化し�
 
 Salesforceに似た機能を提供し、完全にオープンソースです。
 
-⭐️ 現在、SuiteCRMはGitHubで4.6kのスターを獲得しています。
+⭐️ 現在、SuiteCRMはGitHubで4.9kのスターを獲得しています。
 
 #### 主な機能
 
@@ -162,13 +163,13 @@ SuiteCRMは、サブスクリプション型CRMの高コストを回避したい
 
 金融やヘルスケアなど、プライベートなデプロイメントとデータ管理を重視する業界にとって、SuiteCRMは信頼できるソリューションです。Salesforceに近い機能を、より安価に実現したい場合は、SuiteCRMが最適な選択肢と言えるでしょう。
 
-### Twenty - Salesforceに代わる現代的なCRMツール
+### [Twenty]([Twenty](https://twenty.com/)) - Salesforceに代わる現代的なCRMツール
 
 ![Twenty.png](https://static-docs.nocobase.com/ab7565471047ba4f5554f21da84f62b2.png)
 
 Twentyは、シンプルで効率的な設計が特徴の最先端の顧客関係管理（CRM）ツールです。従来のプラットフォームとは異なり、Twentyはプロセスを簡素化し、直感的でユーザーに優しいデザインを優先。これにより、企業は顧客との関係を管理し、ワークフローを最適化し、営業活動を効率的に行えます。これを実現しつつ、チームは重要な業務に集中することができます。
 
-⭐️ 現在、TwentyはGitHubで24.2kスターを獲得しています。
+⭐️ 現在、TwentyはGitHubで28.2kスターを獲得しています。
 
 そのテーブル型インターフェースはAirtableに似ており、顧客データの管理が視覚的に直感的で、簡単に操作できます。
 
