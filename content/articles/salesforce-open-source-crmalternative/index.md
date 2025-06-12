@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on June 12, 2025. We regularly update the information to ensure you have the latest insights! 😊
+
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
 ## **Understanding Salesforce**
@@ -38,7 +40,7 @@ Here are four open-source CRM platforms that can rival Salesforce in capability 
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/fb06535f83c00c486fbf2373d452eeb9.PNG)
 
-NocoBase is an open-source no-code/low-code platform designed for creating CRM solutions. ⭐️ Currently, NocoBase has received [13k stars on GitHub](https://github.com/nocobase/nocobase).
+NocoBase is an open-source no-code/low-code platform designed for creating CRM solutions. ⭐️ Currently, NocoBase has received [15.8k stars on GitHub](https://github.com/nocobase/nocobase).
 
 Built for flexibility and scalability, NocoBase is user-friendly for beginners while offering plugin extensions for advanced CRM needs. For teams balancing in-house development and no-code solutions, NocoBase stands out as a versatile and powerful tool.
 
@@ -88,13 +90,13 @@ With NocoBase, businesses can build CRM systems efficiently, reduce technical ba
 
 💡 Get started: [NocoBase Tutorials - How to Build a Task Management System](https://www.nocobase.com/en/tutorials)
 
-### EspoCRM - A Lightweight Open-Source CRM
+### [EspoCRM]([EspoCRM](https://www.espocrm.com/)) - A Lightweight Open-Source CRM
 
 ![EspoCRM.png](https://static-docs.nocobase.com/cd7c7ba2f8403f6509007e2e267187ad.png)
 
 EspoCRM is a simple yet powerful open-source CRM solution tailored for small and medium businesses. With its modern interface, essential features, and low technical barrier, it enables teams to efficiently manage sales, customer service, and marketing activities while getting up and running quickly.
 
-⭐️ Currently, EspoCRM has earned 1.9k stars on GitHub.
+⭐️ Currently, EspoCRM has earned 2.3k stars on GitHub.
 
 #### **Key Features**
 
@@ -121,7 +123,7 @@ EspoCRM is an excellent option for budget-conscious small and medium businesses 
 
 EspoCRM shines in scenarios where advanced cross-department collaboration and global functionality are unnecessary. Additionally, for companies that value private deployment and complete control over their data, EspoCRM offers an affordable and reliable solution.
 
-## SuiteCRM - A Powerful Open-Source CRM Comparable to Salesforce
+## [SuiteCRM]([SuiteCRM](https://suitecrm.com/)) - A Powerful Open-Source CRM Comparable to Salesforce
 
 ![SuiteCRM.png](https://static-docs.nocobase.com/db5ce4c02abf138a2d68036432a4bff4.png)
 
@@ -129,7 +131,7 @@ SuiteCRM is an advanced open-source CRM designed as a continuation and enhanceme
 
 Offering features similar to Salesforce, SuiteCRM is entirely open-source.
 
-⭐️ SuiteCRM currently boasts 4.6k stars on GitHub.
+⭐️ SuiteCRM currently boasts 4.9k stars on GitHub.
 
 #### **Key Features**
 
@@ -155,13 +157,13 @@ Offering features similar to Salesforce, SuiteCRM is entirely open-source.
 
 Industries such as finance and healthcare that prioritize private deployment and data control will find SuiteCRM a reliable option. For those seeking Salesforce-level capabilities at a fraction of the cost, SuiteCRM is an excellent choice.
 
-## Twenty - A Modern CRM Alternative to Salesforce
+## [Twenty]([Twenty](https://twenty.com/)) - A Modern CRM Alternative to Salesforce
 
 ![Twenty.png](https://static-docs.nocobase.com/ab7565471047ba4f5554f21da84f62b2.png)
 
 Twenty is a cutting-edge customer relationship management (CRM) tool designed for simplicity and efficiency. Unlike traditional platforms, Twenty prioritizes streamlined processes and intuitive design, enabling businesses to track customer relationships, manage workflows, and optimize sales activities with ease—all while allowing teams to focus on high-value tasks.
 
-⭐️ As of now, Twenty has earned 24.2k stars on GitHub.
+⭐️ As of now, Twenty has earned 28.2k stars on GitHub.
 
 Its table-based interface, similar to Airtable, makes managing customer data straightforward and visually appealing.
 
