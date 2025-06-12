@@ -1,3 +1,5 @@
+**Last updated [2025.6.12]**
+
 While browsing [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/), I stumbled upon a question from a user:
 
 *"I am looking for software recommendation that covers multiple fields like CRM, Invoicing, Contracts, Project management, Time tracking. So far I have been stuck with Trello, but I am looking for something that can cover everything mentioned above."*
