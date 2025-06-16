@@ -1,14 +1,14 @@
 {
   "id": 535,
-  "title": "NocoBase v1.8.0-alpha.7",
-  "title_cn": "NocoBase v1.8.0-alpha.7",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-alpha.7: support email sync interval setting",
+  "title_cn": "NocoBase v1.8.0-alpha.7：支持邮件同步间隔设置",
+  "title_ja": "NocoBase v1.8.0-alpha.7：メール同期間隔の設定をサポート",
   "description": "Release Note of v1.8.0-alpha.7",
   "description_cn": "v1.8.0-alpha.7 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-alpha.7 のリリースノート",
   "slug": "v1.8.0-alpha.7",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-06-13T10:20:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-16T01:44:24.160Z",
+        "updatedAt": "2025-06-16T01:44:24.160Z",
+        "articles_id": 535,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-16T01:40:53.414Z",
+    "updatedAt": "2025-06-16T01:40:53.414Z",
+    "id": 1448,
+    "title": "develop (1)",
+    "filename": "develop (1)-qwc0rt.png",
+    "extname": ".png",
+    "size": 76762,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(1)-qwc0rt.png",
+    "preview": "https://static-docs.nocobase.com/develop%20(1)-qwc0rt.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-13T10:20:12.561Z"
+  "updatedAt": "2025-06-16T01:47:15.965Z"
 }
