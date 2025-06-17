@@ -6,6 +6,8 @@ You might not have noticed it, but every smooth gear change and effortless pedal
 
 ![SHIMANO](https://static-docs.nocobase.com/1-2bf0x7.png)
 
+Photo by streetsh on Unsplash
+
 As a global manufacturing powerhouse, SHIMANO runs production facilities all over the world.
 
 One of SHIMANO’s key facilities—a factory in the Czech Republic—has been operating continuously for over two decades, playing a vital role in its global production network.
@@ -15,6 +17,8 @@ Here, precision and efficiency are part of the culture. Every screw, every step 
 At the center of today’s story is Zdenek, a seasoned engineer who’s spent years at this Czech facility—and recently, he’s begun exploring a new way to build: without code.
 
 ![Zdenek](https://static-docs.nocobase.com/2-n1j6vu.png)
+
+Zdenek, the Engineer at SHIMANO
 
 ## Zdenek's No-Code Journey
 
@@ -48,6 +52,8 @@ Using NocoBase, they developed their first system: the **Audit App**. This appli
 
 ![Audit App](https://static-docs.nocobase.com/3-xezzjr.png)
 
+Audit App Dashboard
+
 The successful implementation of this system broadened Zdenek's perspective. If one system could be built, why not more? He began systematically migrating other Excel-managed forms and processes within the factory to NocoBase.
 
 Over the following weeks, Zdenek developed several additional systems:
@@ -61,6 +67,8 @@ Over the following weeks, Zdenek developed several additional systems:
 > "The most surprising part was how intuitive it was; users could pick it up almost without any training," Zdenek remarked.
 
 ![systems](https://static-docs.nocobase.com/4-s9441n.png)
+
+Spare parts evidence (store out)
 
 With NocoBase’s flexible setup options and role-based controls, they could tailor each interface to the exact needs of different teams. What truly amazed him, however, was its automated workflow configuration. This enabled features like automatic reminders for responsible parties during audits, notifications sent before task deadlines, and even seamless data transfer across different forms.
 
@@ -80,7 +88,11 @@ Zdenek’s story shows that true digital transformation isn’t reserved for dev
 
 This perfectly exemplifies NocoBase's typical application in manufacturing: enabling those who understand the business to directly transform their processes into practical tools.
 
-**Related reading:**
+
+The cover image of the article is by David Dvořáček on Unsplash.
+
+
+**More Customer Stories:**
 
 * [What made Japan's leading real estate firm switch from Salesforce to open-source NocoBase? ](https://www.nocobase.com/en/blog/century-21)
 * [How Second-Brain built an AI system for financial institutions with NocoBase](https://www.nocobase.com/en/blog/second-brain)
