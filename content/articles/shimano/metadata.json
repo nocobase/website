@@ -1,14 +1,14 @@
 {
   "id": 572,
   "title": "A No-Code Journey Inside SHIMANO",
-  "title_cn": "在禧玛诺工厂，一位工程师的无代码实践",
-  "title_ja": null,
+  "title_cn": "在禧玛诺工厂，一位工程师的零代码实践",
+  "title_ja": "SHIMANOの現場から始まるノーコードの旅",
   "description": "Zdenek is not a developer, but he has truly reshaped the internal management of Shimano's Czech factory using no-code methods.",
-  "description_cn": "Zdenek 不是开发者，但他用无代码的方式，真正重塑了禧玛诺捷克工厂内部的管理方式。",
+  "description_cn": "Zdenek 不是开发者，但他用零代码的方式，真正重塑了禧玛诺捷克工厂内部的管理方式。",
   "description_ja": "ズデネクは開発者ではありませんが、ノーコード手法を用いて、シマノ・チェコ工場の内部管理を実質的に改革しました。",
   "slug": "shimano",
   "publishedAt": "2025-06-17T01:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -322,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-17T02:35:44.967Z"
+  "updatedAt": "2025-06-17T03:55:01.128Z"
 }
