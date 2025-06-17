@@ -1,1 +1,8 @@
-fetch is not defined
+### 🚀 機能改善
+
+* **[クライアント]** チェックボックスフィールドの連携ルールに「空」と「空でない」オプションを追加（[#7073](https://github.com/nocobase/nocobase/pull/7073)）@katherinehhh
+* **[ワークフロー：承認]** 再割り当て先のリストに追加フィールドオプションを追加 @mytharcher
+
+### 🐛 不具合修正
+
+* **[バックアップマネージャー]** Windows 環境下で MySQL バックアップを復元する際に発生する不明コマンドエラーを修正 @gchust
