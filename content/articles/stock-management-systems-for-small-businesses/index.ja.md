@@ -15,6 +15,8 @@ IT 担当者がコスト削減を、運用管理者が在庫混乱の解決策�
 * [中小企業向け！軽量で使いやすいオープンソースCRMソフト4選](https://www.nocobase.com/ja/blog/the-best-4-crm-software-for-small-businesses)
 * [5つの中小企業向け管理ツール（実体験からのおすすめ）](https://www.nocobase.com/ja/blog/5-management-tools-perfect-for-small-businesses)
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 ## **在庫管理システムの選び方**
 
 市場にはさまざまな在庫管理ツールが揃っています。予算が限られ、プロセスが柔軟でチーム規模の小さな企業は、以下の核心的な評価軸に焦点を当てることをおすすめします。
