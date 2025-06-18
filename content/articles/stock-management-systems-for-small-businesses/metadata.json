@@ -3,9 +3,9 @@
   "title": "Top 5 Stock Management Systems for Small Businesse (with Price Comparison)",
   "title_cn": "五款适合小型企业的库存管理系统（含价格对比）",
   "title_ja": "中小企業向け 5 選の在庫管理システム（価格比較付き）",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Recommend 5 stock management systems suitable for small enterprises, covering open-source self-built solutions and lightweight SaaS options, to help enterprises improve inventory efficiency and achieve clear and controllable inventory management.",
+  "description_cn": "推荐 5 款适合小型企业的存货管理系统，涵盖开源自建与轻量 SaaS 方案，帮助企业提升库存效率，实现清晰可控的库存管理。",
+  "description_ja": "中小企業向けに 5 つの在庫管理システムを紹介します。オープンソースによる自作型と軽量 SaaS 型の両方を網羅し、企業の在庫効率向上と明確な在庫管理の実現を支援します。",
   "slug": "stock-management-systems-for-small-businesses",
   "publishedAt": "2025-06-18T06:33:04.351Z",
   "status": "drafted",
@@ -306,5 +306,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-18T06:56:20.780Z"
+  "updatedAt": "2025-06-18T07:30:49.877Z"
 }
