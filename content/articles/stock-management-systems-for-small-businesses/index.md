@@ -176,3 +176,12 @@ Small businesses seeking easy-to-use, web-based inventory management systems.
 * **Skyware Inventory**, with multi-location support and mobile operations, is particularly suitable for equipment management and service-oriented scenarios.
 
 consider starting with **a free plan or open-source tool** to see if it meets your business needs.
+
+**Related reading:**
+
+* [7 Best Data Integration Platforms: Reviews & Top Picks ](https://www.nocobase.com/en/blog/data-integration-platforms)
+* [6 Best Open-Source Ticketing Systems for 2025 ](https://www.nocobase.com/en/blog/open-source-ticketing-systems)
+* [Top 8 Open-Source Tools for Web Application Development ](https://www.nocobase.com/en/blog/top-8-open-source-tools-for-web-application-development)
+* [Top 4 Open Source Products to Help You Avoid Hidden Costs in Low-Code Platforms ](https://www.nocobase.com/en/blog/hidden-cost-in-commen-low-code-platform)
+* [Why Do Developers Struggle with Low-Code? (6 Tools That Actually Help) ](https://www.nocobase.com/en/blog/why-do-developers-struggle-with-low-code)
+* [Choosing and Deploying Low-Code Tools: A Developer's Guide ](https://www.nocobase.com/en/blog/choosing-and-deploying-low-code-tools-a-developers-guide)
