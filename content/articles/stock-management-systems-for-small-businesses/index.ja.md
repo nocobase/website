@@ -8,14 +8,14 @@ IT 担当者がコスト削減を、運用管理者が在庫混乱の解決策�
 
 本記事では、中小企業に最適な 5 つのシステムを紹介し、在庫管理の混乱から解放します。
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 💡 中小企業向けの他の業務システム解決策については：
 
 * [小規模ビジネス向けERPおすすめ4選──業務を効率化するツール](https://www.nocobase.com/ja/blog/best-erp-solutions-for-small-businesses)
 * [小規模ビジネス向けのベスト在庫管理ツール（無料・オープンソース含む）](https://www.nocobase.com/ja/blog/inventory-management-tools-for-small-business)
 * [中小企業向け！軽量で使いやすいオープンソースCRMソフト4選](https://www.nocobase.com/ja/blog/the-best-4-crm-software-for-small-businesses)
 * [5つの中小企業向け管理ツール（実体験からのおすすめ）](https://www.nocobase.com/ja/blog/5-management-tools-perfect-for-small-businesses)
-
-![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
 
 ## **在庫管理システムの選び方**
 
