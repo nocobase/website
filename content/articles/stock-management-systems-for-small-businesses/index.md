@@ -8,14 +8,14 @@ An inventory management system helps enterprises track incoming and outgoing goo
 
 This article selects 5 inventory management systems suitable for small businesses, helping your team break free from inventory management chaos and achieve clear inventory and efficient operations.
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 💡 If you want to learn more about business system solutions for small businesses:
 
 * [Best ERP Solutions for Small Businesses: 4 Tools to Improve Efficiency](https://www.nocobase.com/en/blog/best-erp-solutions-for-small-businesses)
 * [Top Inventory System for Small Business (Including Free and Open-Source Options)](https://www.nocobase.com/en/blog/inventory-management-tools-for-small-business)
 * [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
 * [5 Management Tools Perfect for Small Businesses (Based on Real Experience)](https://www.nocobase.com/en/blog/5-management-tools-perfect-for-small-businesses)
-
-![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
 
 ## **How to Choose an Inventory Management System?**
 
