@@ -1,6 +1,6 @@
 {
   "id": 577,
-  "title": "Top 5 Stock Management Systems for Small Businesse (with Price Comparison)",
+  "title": "Top 5 Stock Management Systems for Small Businesses (with Price Comparison)",
   "title_cn": "五款适合小型企业的库存管理系统（含价格对比）",
   "title_ja": "中小企業向け 5 選の在庫管理システム（価格比較付き）",
   "description": "Recommend 5 stock management systems suitable for small enterprises, covering open-source self-built solutions and lightweight SaaS options, to help enterprises improve inventory efficiency and achieve clear and controllable inventory management.",
@@ -299,12 +299,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-18T08:00:33.879Z",
+    "updatedAt": "2025-06-18T08:00:33.879Z",
+    "id": 1498,
+    "title": "Frame 76",
+    "filename": "Frame 76-rpqffg.png",
+    "extname": ".png",
+    "size": 1337342,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2076-rpqffg.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2076-rpqffg.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Zhang Lu",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-18T07:30:49.877Z"
+  "updatedAt": "2025-06-18T08:49:01.930Z"
 }
