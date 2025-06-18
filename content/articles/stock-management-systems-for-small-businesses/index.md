@@ -15,6 +15,8 @@ This article selects 5 inventory management systems suitable for small businesse
 * [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
 * [5 Management Tools Perfect for Small Businesses (Based on Real Experience)](https://www.nocobase.com/en/blog/5-management-tools-perfect-for-small-businesses)
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 ## **How to Choose an Inventory Management System?**
 
 The market is filled with various inventory management tools. For enterprises with limited budgets, flexible processes, and small team sizes, focus on the following core dimensions:
