@@ -8,14 +8,14 @@
 
 本文将为你精选 5 款适合小型企业的库存管理系统，帮助你的团队从库存管理的混乱中解脱出来，真正实现库存清晰、运营高效。
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 💡 如果你想了解更多适合小型企业的业务系统解决方案：
 
 * [小型企业 ERP 选型指南：这四款软件助你高效管理](https://www.nocobase.com/cn/blog/best-erp-solutions-for-small-businesses)
 * [适合小型企业的库存管理工具推荐（含免费、开源）](https://www.nocobase.com/cn/blog/inventory-management-tools-for-small-business)
 * [适合小型企业的四款开源 CRM 软件：轻量、高效、易上手](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
 * [五个适合小型企业使用的管理软件！（真实经验）](https://www.nocobase.com/cn/blog/5-management-tools-perfect-for-small-businesses)
-
-![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
 
 ## **存货管理系统怎么选?**
 
