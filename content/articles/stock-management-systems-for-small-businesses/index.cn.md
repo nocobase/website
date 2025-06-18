@@ -15,6 +15,8 @@
 * [适合小型企业的四款开源 CRM 软件：轻量、高效、易上手](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
 * [五个适合小型企业使用的管理软件！（真实经验）](https://www.nocobase.com/cn/blog/5-management-tools-perfect-for-small-businesses)
 
+![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
+
 ## **存货管理系统怎么选?**
 
 市场上的存货管理工具琳琅满目，对于预算有限、流程灵活、团队规模较小的企业来说，可以聚焦以下几个核心维度：
