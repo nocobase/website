@@ -1,14 +1,14 @@
 {
   "id": 576,
-  "title": "NocoBase v1.8.0-beta.9",
-  "title_cn": "NocoBase v1.8.0-beta.9",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-beta.9: Auto-hide grid card block action bar when empty",
+  "title_cn": "NocoBase v1.8.0-beta.9：网格卡片区块操作栏为空时自动隐藏",
+  "title_ja": "NocoBase v1.8.0-beta.9：グリッドカードブロックのアクションバーを空の場合に自動的に非表示にする",
   "description": "Release Note of v1.8.0-beta.9",
   "description_cn": "v1.8.0-beta.9 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-beta.9 のリリースノート",
   "slug": "v1.8.0-beta.9",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-06-17T23:37:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-18T08:08:44.340Z",
+        "updatedAt": "2025-06-18T08:08:44.340Z",
+        "articles_id": 576,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-18T08:07:01.872Z",
+    "updatedAt": "2025-06-18T08:07:01.872Z",
+    "id": 1500,
+    "title": "next",
+    "filename": "next-6dx3s3.png",
+    "extname": ".png",
+    "size": 114965,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-6dx3s3.png",
+    "preview": "https://static-docs.nocobase.com/next-6dx3s3.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-17T23:37:53.776Z"
+  "updatedAt": "2025-06-18T08:08:44.335Z"
 }
