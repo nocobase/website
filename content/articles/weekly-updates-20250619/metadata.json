@@ -1,11 +1,11 @@
 {
   "id": 579,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Support Filling Input Fields Via QR Code Scanning",
+  "title_cn": "NocoBase 本周更新汇总：支持扫码填充数据",
+  "title_ja": "NocoBase 今週の更新：QR コードスキャンによる入力フィールドの値の充填をサポート",
+  "description": "This week’s updates include: support for one-click copying of text field content, email sync interval settings, and more.",
+  "description_cn": "本周更新包括：支持一键复制文本字段内容，支持邮件同步间隔设置等。",
+  "description_ja": "今週の更新では、テキストフィールドの一クリックコピー機能、メール同期間隔設定、その他機能を追加しました。",
   "slug": "weekly-updates-20250619",
   "publishedAt": "2025-06-19T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-18T08:45:12.271Z"
+  "updatedAt": "2025-06-18T12:37:43.818Z"
 }
