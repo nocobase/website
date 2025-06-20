@@ -1,3 +1,5 @@
+**Last updated [2025.6.12]**
+
 ## What is Workflow Automation?
 
 Workflow automation refers to the use of technology to automatically execute a series of tasks within business processes, aiming to reduce manual intervention and enhance efficiency and accuracy.

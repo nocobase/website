@@ -1,4 +1,4 @@
-📝 **Note:** This article was last updated on **February 18, 2025**. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on June 11, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 Continuing our GitHub Star series! This is the fourth article in the series. Previous articles include:
 
@@ -17,27 +17,27 @@ First, let's take a quick look at the rankings:
 
 | Rank | Project                    | Stars |
 | ---- | -------------------------- | ----- |
-| 1    | Appsmith                   | 35.7k |
-| 2    | Refine                     | 29.9k |
-| 3    | APIJSON                    | 17.4k |
-| 4    | NocoBase                   | 13.5k |
-| 5    | Library (DDD by Examples） | 5.1k  |
+| 1    | Appsmith                   | 37.2k |
+| 2    | Refine                     | 31.2k |
+| 3    | APIJSON                    | 18k   |
+| 4    | NocoBase                   | 15.8k |
+| 5    | Library (DDD by Examples） | 5.3k  |
 | 6    | Flask-AppBuilder           | 4.8k  |
-| 7    | CRUD (Nestjsx)             | 4.1k  |
-| 8    | PHP-CRUD-API               | 3.6k  |
+| 7    | CRUD (Nestjsx)             | 4.2k  |
+| 8    | PHP-CRUD-API               | 3.7k  |
 
 Let’s get started!
 
 ![Let’s get started!.png](https://static-docs.nocobase.com/d8c3e94c6edec731283553fda5830f28.png)
 
-## **Appsmith (35.7k stars)**
+## **Appsmith (37.2k stars)**
 
 ![Appsmith.png](https://static-docs.nocobase.com/5b9e0d29dba947c184cf9a4171d28991.png)
 
 
 | GitHub                        | [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)    |
 | ----------------------------- | ------------------------------------------------------------------------------------- |
-| GitHub Stars                  | 35.7k                                                                                 |
+| GitHub Stars                  | 37.2k                                                                                 |
 | Most Recent Update on GitHub  | Within one day                                                                        |
 | Open Source License           | [Apache 2.0](https://github.com/appsmithorg/appsmith?tab=Apache-2.0-1-ov-file#readme) |
 | Number of Active Contributors | 334                                                                                   |
@@ -62,14 +62,14 @@ Appsmith is an open-source platform designed for building admin panels, internal
 
 💡 Read More: [Top 11 Open Source Internal Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/open-source-internal-tools)
 
-## **Refine (29.9k stars)**
+## **Refine (31.2k stars)**
 
 ![Refine.png](https://static-docs.nocobase.com/8eeb2fc64694beb8b90f423c02fcd924.png)
 
 
 | GitHub                        | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
 | ----------------------------- | -------------------------------------------------------------------------- |
-| GitHub Stars                  | 29.9k                                                                      |
+| GitHub Stars                  | 31.2k                                                                      |
 | Most Recent Update on GitHub  | Within one day                                                             |
 | Open Source License           | [MIT](https://github.com/refinedev/refine?tab=MIT-1-ov-file#readme)        |
 | Number of Active Contributors | 284                                                                        |
@@ -95,14 +95,14 @@ Refine is a React-based meta-framework designed for CRUD-heavy web applications.
 
 💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
 
-## **APIJSON (17.4k stars)**
+## **APIJSON (18k stars)**
 
 ![APIJSON.png](https://static-docs.nocobase.com/f9ffd26987c00fa0283a9de3f5faba95.png)
 
 
 | GitHub                        | [https://github.com/Tencent/APIJSON](https://github.com/Tencent/APIJSON)                       |
 | ----------------------------- | ---------------------------------------------------------------------------------------------- |
-| GitHub Stars                  | 17.4k                                                                                          |
+| GitHub Stars                  | 18k                                                                                            |
 | Most Recent Update on GitHub  | 3 days ago                                                                                     |
 | Open Source License           | [Apache 2.0](https://github.com/Tencent/APIJSON?tab=License-1-ov-file#readme)                  |
 | Number of Active Contributors | 72                                                                                             |
@@ -124,14 +124,14 @@ APIJSON is a JSON-based communication protocol and ORM library designed for APIs
 * **Internal Tools**: Quickly set up backend management interfaces for enterprise management systems and monitoring systems.
 * **Education and Learning**: Due to its ease of use, APIJSON is also suitable for educational environments to help students and beginners understand API construction and usage.
 
-## **NocoBase (13.5k stars)**
+## **NocoBase (15.8k stars)**
 
 ![NocoBase.png](https://static-docs.nocobase.com/b1c0f7c45d93a4c05fffeeadfbd758f9.png)
 
 
 | GitHub                        | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ----------------------------- | ---------------------------------------------------------------------------- |
-| GitHub Stars                  | 13.5k                                                                        |
+| GitHub Stars                  | 15.8k                                                                        |
 | Most Recent Update on GitHub  | Within one day                                                               |
 | Open Source License           | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | Number of Active Contributors | 85                                                                           |
@@ -155,14 +155,14 @@ NocoBase is a highly extensible open-source no-code/low-code platform designed f
 * **Enterprise Applications**: Suitable for enterprise applications requiring frequent data operations, such as customer data management, inventory tracking, and order processing.
 * **Rapid Prototyping**: Quickly validate business ideas and models, especially suitable for startup environments needing rapid iteration and development.
 
-## **Library  (5.1k stars)**
+## **Library  (5.3k stars)**
 
 ![Library.png](https://static-docs.nocobase.com/6793fc4d006381bf9ac1602ca2b6cb21.png)
 
 
 | GitHub                        | [https://github.com/ddd-by-examples/library](https://github.com/ddd-by-examples/library) |
 | ----------------------------- | ---------------------------------------------------------------------------------------- |
-| GitHub Stars                  | 5.1k                                                                                     |
+| GitHub Stars                  | 5.3k                                                                                     |
 | Most Recent Update on GitHub  | 2 years ago                                                                              |
 | Open Source License           | [MIT](https://github.com/ddd-by-examples/library?tab=MIT-1-ov-file#readme)               |
 | Number of Active Contributors | 17                                                                                       |
@@ -215,14 +215,14 @@ Flask-AppBuilder is a rapid application development framework based on Flask, wi
 * **Data Management Applications**: Provides robust backend management functionality for applications requiring complex data operations, such as content management systems or CRM systems.
 * **Education and Training**: Due to its simplicity and ease of learning, it is ideal for teaching purposes, helping learners quickly understand web development and database operations.
 
-## **CRUD (Nestjsx) (4.1k stars)**
+## **CRUD (Nestjsx) (4.2k stars)**
 
 ![CRUD (Nestjsx).png](https://static-docs.nocobase.com/a44e41c8fdff89f20792f99290d022ba.png)
 
 
 | GitHub                        | [https://github.com/nestjsx/crud](https://github.com/nestjsx/crud)                   |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
-| GitHub Stars                  | 4.1k                                                                                 |
+| GitHub Stars                  | 4.2k                                                                                 |
 | Most Recent Update on GitHub  | 1 years ago                                                                          |
 | Open Source License           | [MIT](https://github.com/nestjsx/crud#MIT-1-ov-file)                                 |
 | Number of Active Contributors | 36                                                                                   |
@@ -248,14 +248,14 @@ CRUD (Nestjsx) is designed to simplify the development process by providing a st
 
 💡 Read More: [Exploring RAD: 5 Best Application Cases](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases)
 
-## **PHP-CRUD-API (3.6k stars)**
+## **PHP-CRUD-API (3.7k stars)**
 
 ![PHP-CRUD-API.png](https://static-docs.nocobase.com/59fcffe88404297034f74e455491cdd0.png)
 
 
 | GitHub                                  | [https://github.com/mevdschee/php-crud-api](https://github.com/mevdschee/php-crud-api) |
 | --------------------------------------- | -------------------------------------------------------------------------------------- |
-| GitHub Stars                            | 3.6k                                                                                   |
+| GitHub Stars                            | 3.7k                                                                                   |
 | Most Recent Update on GitHub            | 1 year ago                                                                             |
 | Open Source License                     | [MIT](https://github.com/mevdschee/php-crud-api#MIT-1-ov-file)                         |
 | Number of Active Contributors This Year | 40                                                                                     |

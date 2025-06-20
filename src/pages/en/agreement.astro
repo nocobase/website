@@ -3,7 +3,7 @@ import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getPage, processor } from "../../utils";
 
-const page = await getPage("agreement", "en");
+const page = await getPage("agreement");
 
 const title = page.title;
 const description = page.description;

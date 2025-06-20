@@ -1,3 +1,5 @@
+注：本文数据更新于 2025 年 6 月 12 日。我们会定期更新，确保你获取最新的信息！😊
+
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
 ## 关于 **Salesforce**
@@ -40,7 +42,7 @@ Salesforce 作为客户关系管理（CRM）领域的领导者，为企业提供
 
 NocoBase 是一款开源的无代码（零代码）/低代码开发平台，非常适合用于构建 CRM 解决方案。
 
-⭐️ 截止目前，NocoBase 已经在 [GitHub](https://github.com/nocobase/nocobase) 上收获了 13k Stars。
+⭐️ 截止目前，NocoBase 已经在 [GitHub](https://github.com/nocobase/nocobase) 上收获了 15.8k Stars。
 
 NocoBase 的设计理念是**灵活性和可扩展性**，用户不仅可以通过无代码（零代码）的方式轻松上手，还能够通过插件扩展其功能，从而满足更高级的CRM开发需求。对于那些希望在自研与无代码（零代码）开发之间找到平衡的团队，NocoBase 提供了一个非常强大的解决方案。
 
@@ -98,7 +100,7 @@ NocoBase 适合预算有限、对灵活定制需求高、并且注重数据自�
 
 EspoCRM 是一款轻量级、开源的客户关系管理（CRM）解决方案，专注于为中小型企业提供简单直观的客户关系管理工具。它具备现代化的界面设计、强大的基本功能以及较低的技术门槛，使团队能够快速上手并高效管理销售、客户服务和市场活动。
 
-⭐️ 截止目前，EspoCRM 在 [GitHub](https://github.com/nocobase/nocobase) 上收获了 1.9k Stars。
+⭐️ 截止目前，EspoCRM 在 [GitHub](https://github.com/espocrm/espocrm) 上收获了 2.3k Stars。
 
 #### **亮点功能**
 
@@ -131,7 +133,7 @@ SuiteCRM 是一款强大的开源客户关系管理（CRM）解决方案，是 S
 
 功能上接近 Salesforce，但又完全开源。
 
-⭐️ 截止目前，SuiteCRM 在 [GitHub](https://github.com/nocobase/nocobase) 上收获了 4.6k Stars。
+⭐️ 截止目前，SuiteCRM 在 [GitHub](https://github.com/salesagility/SuiteCRM) 上收获了 4.9k Stars。
 
 #### **亮点功能**
 
@@ -157,13 +159,13 @@ SuiteCRM 是一款强大的开源客户关系管理（CRM）解决方案，是 S
 
 SuiteCRM 更适合需要企业级 CRM 功能，但希望避免高昂订阅费用的中大型企业。它尤其适合拥有技术团队的企业，可以根据业务需求深度定制系统功能。同时，SuiteCRM 对于需要私有化部署的行业（如金融、医疗等）提供了更高的数据控制能力。它是那些希望获得 Salesforce 类似功能，但预算有限的企业的理想选择。
 
-### **Twenty - 现代化的 Salesforce 替代品**
+### **[Twenty](https://twenty.com/) - 现代化的 Salesforce 替代品**
 
 ![Twenty.png](https://static-docs.nocobase.com/ab7565471047ba4f5554f21da84f62b2.png)
 
 与前面我们分享的 EspoCRM 和 SuiteCRM 不同，Twenty 是一款新兴的现代化客户关系管理（CRM）工具，与传统工具相比 Twenty 更注重简化流程，以更直观的方式帮助企业跟踪客户关系、组织工作流和优化销售活动，使团队能够专注于高价值的业务工作。
 
-⭐️ 截止目前，Twenty 在 [GitHub](https://github.com/nocobase/nocobase) 上收获了 24.2k Stars。
+⭐️ 截止目前，Twenty 在 [GitHub](https://github.com/twentyhq/twenty) 上收获了 28.2k Stars。
 
 或许你也发现了，Twenty 在界面设计和交互上与 Airtable 有几分相似：都是用表格来承载客户数据。
 
@@ -227,3 +229,12 @@ Twenty: https://demo.twenty.com
 但对于那些想要更多自由、少一点预算压力的企业，开源 CRM 工具可能就是您正在寻找的“真香”选项。
 
 ❤️ 最后，如果你觉得这篇文章对你有启发，欢迎帮我们分享给更多想要了解开源 CRM 的朋友们。谢谢你的阅读～
+
+**相关阅读：**
+
+* [10 个最受开发者喜爱的开源 ERP / CRM 项目（GitHub Star 榜单） ](https://www.nocobase.com/cn/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
+* [定制 CRM 的4个真实用户案例（帮你选择更灵活CRM产品） ](https://www.nocobase.com/cn/blog/custom-crm-case-studies)
+* [适合小型企业的四款开源 CRM 软件：轻量、高效、易上手 ](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
+* [在数小时内构建 CRM：你需要了解的顶级无代码（零代码）/低代码工具 ](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder)
+* [NocoBase vs Salesforce：谁才是你的理想 CRM？ ](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)
+* [⭐️ GitHub 上星星数量前 11 的开源 CRM 项目 ](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)

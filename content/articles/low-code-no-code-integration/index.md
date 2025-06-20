@@ -1,3 +1,5 @@
+**Last updated [2025.6.12]**
+
 ## Why is the Integration Capability of Low Code Platforms So Important?
 
 As more businesses adopt low code (or no code) platforms to accelerate application development, **the integration capabilities of these platforms have become a crucial metric**.

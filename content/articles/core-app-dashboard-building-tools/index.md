@@ -1,3 +1,5 @@
+**Last updated [2025.6.10]**
+
 You may not be familiar with the concept of Core App Dashboard, but you certainly know what a dashboard is.
 
 From car dashboards that display speed and fuel levels to fitness trackers monitoring steps and heart rates, and financial dashboards keeping track of stock and fund performance, these tools visualize real-time data to help us make data-driven decisions quickly.

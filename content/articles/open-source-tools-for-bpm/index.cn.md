@@ -1,3 +1,7 @@
+注：本文数据更新于 2025 年 6 月 12 日。我们会定期更新，确保你获取最新的信息！😊
+
+---
+
 在上个月的文章中，我们探讨了 BPM 并总结了构建 BPM 应用程序的三大步骤。
 
 [什么是BPM，如何构建一个BPM App？ - NocoBase](https://www.nocobase.com/cn/blog/business-process-management)
@@ -20,7 +24,7 @@
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Stars：11.9k
+GitHub Stars：15.8k
 
 **推荐理由**：
 
@@ -48,7 +52,7 @@ GitHub Stars：11.9k
 
 GitHub：https://github.com/camunda/camunda
 
-GitHub Stars：3.2k
+GitHub Stars：3.7k
 
 **推荐理由**：
 
@@ -74,7 +78,7 @@ GitHub Stars：3.2k
 
 GitHub：https://github.com/Activiti/Activiti
 
-GitHub Stars：10.1k
+GitHub Stars：10.3k
 
 **推荐理由**：
 
@@ -100,7 +104,7 @@ GitHub Stars：10.1k
 
 GitHub：https://github.com/ProcessMaker/processmaker
 
-GitHub Stars：455
+GitHub Stars：494
 
 **推荐理由**：
 

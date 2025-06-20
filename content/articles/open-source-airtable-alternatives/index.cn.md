@@ -1,3 +1,5 @@
+注：本文数据更新于 2025 年 6 月 10 日。我们会定期更新，确保你获取最新的信息！😊
+
 相信你一定对 Airtable 不陌生。
 
 Airtable 于 2012 年由创立，真正开始走红大概是在 2018 年左右，那个时候它的用户数量和市场份额突然大幅增加。**这归功于它直观的界面和易用性——相比起传统的数据库系统，用户不需要任何编程技能，就能通过简单的拖拽操作搭建一个功能强大的管理工具。**
@@ -47,7 +49,7 @@ Airtable 在提供灵活的云数据库和电子表格功能方面具有优势�
 
 GitHub：https://github.com/nocodb/nocodb
 
-GitHub Star：48.1k
+GitHub Star：54.8k
 
 License：[AGPL-3.0](https://github.com/nocodb/nocodb?tab=AGPL-3.0-1-ov-file#)
 
@@ -59,13 +61,47 @@ License：[AGPL-3.0](https://github.com/nocodb/nocodb?tab=AGPL-3.0-1-ov-file#)
 
 💡 阅读更多：[NocoBase 与 NocoDB：开源无代码（零代码）工具深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
 
-### [No. 2 AITable.ai](https://aitable.ai/)
+### [No. 2 teable](https://teable.io/)
+
+![teable.png](https://static-docs.nocobase.com/ef7502177b7b70f9bbe2aa8b3d12c3bc.png)
+
+GitHub：https://github.com/teableio/teable
+
+GitHub Star：18.6k
+
+License：[AGPL-3.0](https://github.com/teableio/teable/blob/develop/AGPL_LICENSE)
+
+**产品亮点**
+
+* **用户友好的界面**：提供一个快速、强大且解放性的类似电子表格的界面，易于使用，无需编程知识，使团队能够构建所需的系统。
+* **高性能处理**：用户可以直接在物理数据库上创建表格和结构，处理百万级数据迅速，无性能损失或行数限制。
+* **数据安全与可扩展性**：支持自托管数据，结合云便利性与完整数据控制，构建于 PostgreSQL 之上，提供无缝的生态系统整合和简易的 BI、低代码、ETL 工具扩展。
+
+### [No. 3 NocoBase](https://www.nocobase.com/)
+
+![NocoBase.png](https://static-docs.nocobase.com/fc5417e9d42c822cb56b23dc389165e3.png)
+
+GitHub：https://github.com/nocobase/nocobase
+
+GitHub Star：15.8k
+
+License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
+
+**产品亮点**
+
+* **灵活的数据模型驱动开发**：NocoBase 采用数据模型驱动的方法，将用户界面与数据结构分离，使得开发能力不受限制。用户可以为同一表格和记录创建多个块和动作，灵活整合主数据库、外部数据库和第三方API，满足复杂的业务需求。
+* **用户友好的配置界面**：NocoBase 提供易于使用的 WYSIWYG 界面，用户可以通过一键切换在使用模式和配置模式之间，像在 Notion 中一样创建和定制界面。这一设计专为普通用户打造，无需编程经验，便可快速开发复杂的业务系统。
+* **开放源代码与插件架构**：NocoBase 的核心和基础插件完全开源，确保了透明度和可控性。其微内核架构使所有功能模块化，用户可以轻松安装和开发插件，以适应不断变化的业务需求。这种灵活性加上终身有效的商业许可，提供了无订阅费用的长期价值。
+
+🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
+
+### [No. 4 AITable.ai](https://aitable.ai/)
 
 ![AITable.ai.png](https://static-docs.nocobase.com/6027f107455a51b80fdb146bcc74ae50.png)
 
 GitHub：https://github.com/apitable/apitable
 
-GitHub Star：13k
+GitHub Star：14.5k
 
 License：[AGPL-3.0](https://github.com/apitable/apitable?tab=AGPL-3.0-1-ov-file#)
 
@@ -78,47 +114,13 @@ License：[AGPL-3.0](https://github.com/apitable/apitable?tab=AGPL-3.0-1-ov-file
 
 * **AI客服与销售支持**：通过定制化 ChatGPT 工具，用户可以创建智能客服和销售聊天机器人，优化客户支持和潜在客户管理界面，使得数据管理更为简便和高效。
 
-### [No. 3 NocoBase](https://www.nocobase.com/)
-
-![NocoBase.png](https://static-docs.nocobase.com/fc5417e9d42c822cb56b23dc389165e3.png)
-
-GitHub：https://github.com/nocobase/nocobase
-
-GitHub Star：12k
-
-License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
-
-**产品亮点**
-
-* **灵活的数据模型驱动开发**：NocoBase 采用数据模型驱动的方法，将用户界面与数据结构分离，使得开发能力不受限制。用户可以为同一表格和记录创建多个块和动作，灵活整合主数据库、外部数据库和第三方API，满足复杂的业务需求。
-* **用户友好的配置界面**：NocoBase 提供易于使用的 WYSIWYG 界面，用户可以通过一键切换在使用模式和配置模式之间，像在 Notion 中一样创建和定制界面。这一设计专为普通用户打造，无需编程经验，便可快速开发复杂的业务系统。
-* **开放源代码与插件架构**：NocoBase 的核心和基础插件完全开源，确保了透明度和可控性。其微内核架构使所有功能模块化，用户可以轻松安装和开发插件，以适应不断变化的业务需求。这种灵活性加上终身有效的商业许可，提供了无订阅费用的长期价值。
-
-🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
-
-### [No. 4 teable](https://teable.io/)
-
-![teable.png](https://static-docs.nocobase.com/ef7502177b7b70f9bbe2aa8b3d12c3bc.png)
-
-GitHub：https://github.com/teableio/teable
-
-GitHub Star：11.4k
-
-License：[AGPL-3.0](https://github.com/teableio/teable/blob/develop/AGPL_LICENSE)
-
-**产品亮点**
-
-* **用户友好的界面**：提供一个快速、强大且解放性的类似电子表格的界面，易于使用，无需编程知识，使团队能够构建所需的系统。
-* **高性能处理**：用户可以直接在物理数据库上创建表格和结构，处理百万级数据迅速，无性能损失或行数限制。
-* **数据安全与可扩展性**：支持自托管数据，结合云便利性与完整数据控制，构建于 PostgreSQL 之上，提供无缝的生态系统整合和简易的 BI、低代码、ETL 工具扩展。
-
 ### [No. 5 rowy](https://www.rowy.io/)
 
 ![rowy.png](https://static-docs.nocobase.com/94ec83be328adf7b5603add63d9f5866.png)
 
 GitHub：https://github.com/rowyio/rowy
 
-GitHub Star：6k
+GitHub Star：6.6k
 
 License：[Apache](https://github.com/rowyio/rowy?tab=License-1-ov-file#)
 
@@ -134,7 +136,7 @@ License：[Apache](https://github.com/rowyio/rowy?tab=License-1-ov-file#)
 
 GitHub：https://github.com/bram2w/baserow
 
-GitHub Star：2.3k
+GitHub Star：2.7k
 
 License：[MIT](https://github.com/bram2w/baserow?tab=License-1-ov-file#)
 
@@ -150,7 +152,7 @@ License：[MIT](https://github.com/bram2w/baserow?tab=License-1-ov-file#)
 
 GitHub：https://github.com/undb-io/undb
 
-GitHub Star：2.1k
+GitHub Star：2.6k
 
 License：[AGPL-3.0](https://github.com/undb-io/undb?tab=AGPL-3.0-1-ov-file#)
 
