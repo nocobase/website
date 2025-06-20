@@ -1,3 +1,5 @@
+**最后更新：2025.6.12**
+
 大家好，我是来自 [NocoBase](https://www.nocobase.com/) 的 Lijia。
 
 是的，很多次我向大家介绍我们的产品名字叫 NocoBase 时，都会收到许多疑问。

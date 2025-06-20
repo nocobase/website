@@ -1,10 +1,10 @@
-注：本記事のデータは2025年2月14日に更新されました。定期的に更新を行い、最新の情報を提供しています！😊
+📝 注：この記事は 2025 年 6 月 10 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
 この記事では、[GitHub](https://github.com/topics/no-code)で星のランキングの高い12のオープンソースノーコードツールを探求します。それぞれのツールはその星のランキングによって区別されています。
 
 各ツールは開発プロセスを効率化し、加速するように設計されていますが、各自が異なるアプリケーションのシナリオに焦点を当てています。
 
-高度にカスタマイズ可能な [NocoBase](https://www.nocobase.com/) から複雑なビジネスシステム向け、APITable の柔軟なデータテーブル管理、Teable のスプレッドシートスタイルのデータ操作、AMIS の迅速な管理バックエンド構築、GrapesJS のビジュアルインターフェースによるウェブテンプレート作成、Budibase の効率的な内部ツール開発、Directus の柔軟なヘッドレスCMSソリューション、ToolJet の強力なローコード開発プラットフォーム、Flowise のAIプロセスビジュアル構築、NocoDB の従来のSQLデータベースをAirtable風ツールに変える機能、n8n の強力な自動化ワークフロー機能、そしてStrapi の主要なヘッドレスCMSソリューションまで、これらのツールは企業のバックエンド管理からコンテンツ管理、データ集約型操作から自動化ワークフローまで、さまざまなニーズをカバーしています。
+高度にカスタマイズ可能な [NocoBase](https://www.nocobase.com/) からスプレッドシート風の Teable、視覚的な Web テンプレートツール GrapesJS まで、Budibase は内部ツール開発に特化しており、Directus と Strapi は柔軟なヘッドレス CMS を提供します。ToolJet は強力なローコードプラットフォームで、Flowise は AI プロセス構築をサポートし、NocoDB は SQL データベースをより使いやすくし、n8n は自動化ワークフローを提供します。Dify はインテリジェント AI アプリの迅速な構築をサポートし、AnythingLLM は多形式ドキュメントとプライベート AI アシスタントをサポートしています。これらのツールは、バックオフィス管理、コンテンツ管理、自動化、AI アプリケーションの核心的なニーズを網羅しています。
 
 関連する記事：[GitHubのスター数が最も多いオープンソースローコードプロジェクト15選](https://www.nocobase.com/ja/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 
@@ -17,7 +17,7 @@
 
 | **GitHub**            | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | --------------------- | ---------------------------------------------------------------------------- |
-| **GitHub スター数**   | 13.5k                                                                        |
+| **GitHub スター数**   | 15.8k                                                                        |
 | **GitHub 最終更新日** | 当日                                                                         |
 | **公式サイト**        | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | **ドキュメント**      | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
@@ -38,42 +38,14 @@ NocoBase は、迅速な開発と展開が必要な複雑なビジネスシス�
 
 🙌 実践チュートリアル：[NocoBase 実践チュートリアル —— タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
-## **第11位：APITable**
-
-![APITable](https://static-docs.nocobase.com/7719f41745164306ebfe7b5e0fc128de.png)
-
-
-| **GitHub**            | [https://github.com/apitable/apitable](https://github.com/apitable/apitable)                     |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
-| **GitHub スター数**   | 13.8k                                                                                            |
-| **GitHub 最終更新日** | 2ヶ月前                                                                                          |
-| **公式サイト**        | [https://aitable.ai/](https://aitable.ai/)                                                       |
-| **ドキュメント**      | [https://developers.aitable.ai/api/introduction](https://developers.aitable.ai/api/introduction) |
-
-**概要:**
-
-APITable は、ビジュアルデータベースを通じてワークフローを簡素化する強力な自動化ツールで、Zapier や Make などのツールを介して6000以上のアプリケーションと接続できます。
-
-**特徴:**
-
-* **幅広いアプリケーション統合**：6000以上のアプリケーションと接続し、コード不要の自動化をサポートします。
-* **データフロー自動化**：フォーム送信後のSlackメッセージやメール送信などの繰り返しタスクを簡素化します。
-* **ユーザーフレンドリーなインターフェース**：直感的なビジュアルデータベースとカスタムフォーム機能を提供します。
-
-**使用シナリオ:**
-
-APITable は、データフローの自動化と日常業務の簡素化を必要とする個人や企業に適しており、特にCRMやプロジェクト管理の分野で有効です。
-
-💡 続きを読む：[数時間でCRMを構築：知っておくべきトップノーコード/ローコードツール](https://www.nocobase.com/ja/blog/low-code-no-code-crm-builder)
-
-## **第10位：teable**
+## **第11位：teable**
 
 ![teable.png](https://static-docs.nocobase.com/18e0aa9b12b55dcf80aebe5c11c20a8c.png)
 
 
 | GitHub            | [https://github.com/teableio/teable](https://github.com/teableio/teable) |
 | ----------------- | ------------------------------------------------------------------------ |
-| GitHub スター数   | 16.5k                                                                    |
+| GitHub スター数   | 18.6k                                                                    |
 | GitHub 最終更新日 | 当日                                                                     |
 | 公式サイト        | [https://teable.io/](https://teable.io/)                                 |
 | ドキュメント      | [https://help.teable.io/](https://help.teable.io/)                       |
@@ -92,39 +64,16 @@ Teable は、データ管理に特化したノーコードプラットフォー�
 
 Teable は、ノーコードでデータを管理および共同作業したいチームや企業に適しており、プロジェクト管理、顧客管理、在庫追跡、市場分析などのシナリオで有効です。
 
-## **第9位：AMIS**
+💡 続きを読む：[数時間でCRMを構築：知っておくべきトップノーコード/ローコードツール](https://www.nocobase.com/ja/blog/low-code-no-code-crm-builder)
 
-![AMIS](https://static-docs.nocobase.com/ff508ab5b2b251547020df4e920ac64e.png)
-
-
-| **GitHub**            | [https://github.com/baidu/amis](https://github.com/baidu/amis) |
-| --------------------- | -------------------------------------------------------------- |
-| **GitHub スター数**   | 17.8k                                                          |
-| **GitHub 最終更新日** | 当日                                                           |
-| **ドキュメント**      | [https://baidu.github.io/amis](https://baidu.github.io/amis)   |
-
-**概要:**
-
-AMIS は、百度が開発したローコードフロントエンドフレームワークで、主にJSON設定を使用して複雑なフロントエンドインターフェースを迅速に生成します。
-
-**特徴:**
-
-* **JSON駆動**：JSON設定を通じてページを生成し、フロントエンド開発の効率化を実現します。
-* **豊富なコンポーネントライブラリ**：テーブル、フォーム、チャートなどのさまざまなコンポーネントを提供し、複雑なページニーズに対応します。
-* **ビジュアル編集**：ビジュアル操作をサポートし、開発プロセスを簡素化します。
-
-**使用シナリオ:**
-
-AMIS は、迅速にリッチでインタラクティブなフロントエンドアプリケーションを開発する必要があるシナリオに適しており、特に管理バックエンドや複雑なデータ表示に有効です。
-
-## **第8位：GrapesJS**
+## **第10位：GrapesJS**
 
 ![GrapesJS](https://static-docs.nocobase.com/628a6f9bca191c0e69651347938bac00.png)
 
 
 | **GitHub**            | [https://github.com/GrapesJS/grapesjs](https://github.com/GrapesJS/grapesjs) |
 | --------------------- | ---------------------------------------------------------------------------- |
-| **GitHub スター数**   | 23.4k                                                                        |
+| **GitHub スター数**   | 24.4k                                                                        |
 | **GitHub 最終更新日** | 2日前                                                                        |
 | **公式サイト**        | [https://grapesjs.com/](https://grapesjs.com/)                               |
 | **ドキュメント**      | [https://grapesjs.com/docs/](https://grapesjs.com/docs/)                     |
@@ -143,14 +92,14 @@ GrapesJS は、コーディング知識なしでHTMLテンプレートを作成�
 
 GrapesJS は、ビジュアルインターフェースを通じて迅速にウェブテンプレートを作成および管理したい開発者に適しており、特にウェブデザイン要素とスタイルを細かく制御する必要があるシナリオで有効です。
 
-## **第7位：Budibase**
+## **第9位：Budibase**
 
 ![budibase.png](https://static-docs.nocobase.com/89d96658f136306730f4b5f9dbf12967.png)
 
 
 | GitHub            | [https://github.com/Budibase/budibase](https://github.com/Budibase/budibase) |
 | ----------------- | ---------------------------------------------------------------------------- |
-| GitHub スター数   | 23.4k                                                                        |
+| GitHub スター数   | 24.7k                                                                        |
 | GitHub 最終更新日 | 当日                                                                         |
 | 公式サイト        | [https://budibase.com/](https://budibase.com/)                               |
 | ドキュメント      | [https://docs.budibase.com/docs/](https://docs.budibase.com/docs/)           |
@@ -169,14 +118,14 @@ Budibase は、オープンソースのノーコード/ローコードプラッ�
 
 Budibase は、迅速に内部ビジネスアプリケーションを開発したい企業やチームに適しており、CRM、承認システム、在庫管理ツール、従業員ポータルなどの構築に有効です。
 
-## **第6位：Directus**
+## **第8位：Directus**
 
 ![Directus](https://static-docs.nocobase.com/2359de49b31393e8ccaa5e287da2488a.png)
 
 
 | **GitHub**            | [https://github.com/directus/directus](https://github.com/directus/directus) |
 | --------------------- | ---------------------------------------------------------------------------- |
-| **GitHub スター数**   | 29.1k                                                                        |
+| **GitHub スター数**   | 30.9k                                                                        |
 | **GitHub 最終更新日** | 1日前                                                                        |
 | **公式サイト**        | [https://directus.io/](https://directus.io/)                                 |
 | **ドキュメント**      | [https://docs.directus.io/](https://docs.directus.io/)                       |
@@ -195,14 +144,14 @@ Directus は、オープンソースのヘッドレスCMS（Headless CMS）で�
 
 Directus は、動的なコンテンツ管理システムを必要とする開発者や企業に適しており、特に高い自由度と拡張性を求めるアプリケーションシナリオで有効です。
 
-## **第5位：ToolJet**
+## **第7位：ToolJet**
 
 ![ToolJet](https://static-docs.nocobase.com/603a069f29e6bb80540390d2581f6f3e.png)
 
 
 | **GitHub**            | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) |
 | --------------------- | ------------------------------------------------------------------------ |
-| **GitHub スター数**   | 34.7k                                                                    |
+| **GitHub スター数**   | 35.8k                                                                    |
 | **GitHub 最終更新日** | 当日                                                                     |
 | **公式サイト**        | [https://www.tooljet.com/](https://www.tooljet.com/)                     |
 | **ドキュメント**      | [https://docs.tooljet.com/docs/](https://docs.tooljet.com/docs/)         |
@@ -221,14 +170,14 @@ ToolJet は、ビジネスアプリケーションを構築するためのオー
 
 ToolJet は、迅速にカスタム内部ツールを構築および維持する必要がある企業に適しており、特に複雑な統合ニーズがあるシナリオで有効です。
 
-## **第4位：FlowiseAI**
+## **第6位：FlowiseAI**
 
 ![FlowiseAI](https://static-docs.nocobase.com/fe6ad4f9f638d33c8029e73b25b965f2.png)
 
 
 | **GitHub**            | [https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) |
 | --------------------- | ---------------------------------------------------------------------------- |
-| **GitHub スター数**   | 35.1k                                                                        |
+| **GitHub スター数**   | 39.8k                                                                        |
 | **GitHub 最終更新日** | 2日前                                                                        |
 | **公式サイト**        | [https://flowiseai.com/](https://flowiseai.com/)                             |
 | **ドキュメント**      | [https://docs.flowiseai.com/](https://docs.flowiseai.com/)                   |
@@ -249,14 +198,40 @@ Flowise は、AI駆動のアプリケーションを迅速に構築およびテ�
 
 💡 続きを読む：[2024年 内部ツール構築のためのトップ5オープンソースプロジェクト](https://www.nocobase.com/ja/blog/top-5-open-source-projects-for-building-internal-tools-in-2024)
 
-## **第3位：NocoDB**
+## 第5位：AnythingLLM
+
+![AnythingLLM](https://static-docs.nocobase.com/anythingllm-f23lvh.png)
+
+
+| GitHub                | [https://github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| **GitHub スター数**   | 45.2k                                                                                          |
+| **GitHub 最終更新日** | 当日                                                                                           |
+| **公式サイト**        | [https://anythingllm.com/](https://anythingllm.com/)                                           |
+| **ドキュメント**      | [https://docs.anythingllm.com/](https://docs.anythingllm.com/)                                 |
+
+**概要：**
+
+AnythingLLM はオープンソースの AI プラットフォームで、複数の AI モデルを接続できるほか、ローカル環境での導入も可能です。検索強化生成（RAG）機能とインテリジェントエージェント機能を組み合わせ、簡単に企業用の AI アシスタントやアプリを作ることができます。
+
+**特徴:**
+
+* **複数モデル対応**：強力な LLM（大規模言語モデル）を組み込んでいて、好きなモデルをワンクリックで使えます。OpenAI、Azure、AWS などの企業向けクラウドモデルもサポートします。
+* **多様なドキュメントとオンラインインポート**：PDF、Word、CSV、コードなどのファイルを処理でき、オンラインからデータを取り込むことも可能。さまざまな業務でのデータ需求を満たします。
+* **データセキュリティ確保**：デフォルトで全てのモデル、ベクトルデータベースなどをローカルで動作させるため、データが外部に漏れません。ユーザーが許可した場合のみデータを共有し、企業・個人的なプライバシーを保護します。
+
+**使用シナリオ:**
+
+企業独自の知識ベースチャットボットや、自動化 AI アシスタント、個人用生産性ツール、チームでの協力プラットフォームを作るのに適しています。
+
+## **第4位：NocoDB**
 
 ![NocoDB](https://static-docs.nocobase.com/02de298c31965e6683438fe538d182a6.png)
 
 
 | **GitHub**            | [https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb) |
 | --------------------- | -------------------------------------------------------------------- |
-| **GitHub スター数**   | 51.7k                                                                |
+| **GitHub スター数**   | 54.8k                                                                |
 | **GitHub 最終更新日** | 当日                                                                 |
 | **公式サイト**        | [https://nocodb.com/](https://nocodb.com/)                           |
 | **ドキュメント**      | [https://docs.nocodb.com/](https://docs.nocodb.com/)                 |
@@ -279,40 +254,14 @@ NocoDB は、データ集約型の操作を必要とする企業に適してお�
 
 💡 続きを読む：[NocoBase と NocoDB：オープンソースノーコードツールの詳細比較](https://www.nocobase.com/ja/blog/nocobase-vs-nocodb)
 
-## **第2位：n8n**
-
-![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
-
-
-| GitHub            | [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n) |
-| ----------------- | -------------------------------------------------------------- |
-| GitHub スター数   | 60.5k                                                          |
-| GitHub 最終更新日 | 当日                                                           |
-| 公式サイト        | [https://n8n.io/](https://n8n.io/)                             |
-| ドキュメント      | [https://docs.n8n.io/](https://docs.n8n.io/)                   |
-
-**概要:**
-
-n8n は、オープンソースのノーコード自動化ツールで、高度にカスタマイズ可能なワークフローをサポートし、ユーザーが異なるアプリケーションを接続してデータ同期や自動化タスクを実現するのに役立ちます。
-
-**特徴:**
-
-* **ビジュアルワークフロー構築**：ドラッグ＆ドロップのノードを使用して自動化プロセスを作成し、コーディングなしで複雑なロジックを実現します。
-* **セルフホスティングとクラウドオプション**：オンプレミスでの展開をサポートし、データプライバシーを確保すると同時に、クラウド版も提供し、さまざまなユーザーニーズに対応します。
-* **豊富な統合**：Google Sheets、Notion、CRM、データベースなど400以上のアプリケーション統合を内蔵し、API接続をサポートして機能を柔軟に拡張できます。
-
-**使用シナリオ:**
-
-n8n は、日常業務の自動化を希望する個人やチームに適しており、データ同期、マーケティング自動化、カスタマーサポートチケット処理、ビジネスプロセス自動化などのシナリオで有効です。
-
-## **第1位：Strapi**
+## **第3位：Strapi**
 
 ![Strapi](https://static-docs.nocobase.com/606c1cb202f9e6bcaad5e40ebfdbb46d.png)
 
 
 | **GitHub**            | [https://github.com/strapi/strapi](https://github.com/strapi/strapi) |
 | --------------------- | -------------------------------------------------------------------- |
-| **GitHub スター数**   | 65k                                                                  |
+| **GitHub スター数**   | 66.9k                                                                |
 | **GitHub 最終更新日** | 当日                                                                 |
 | **公式サイト**        | [https://strapi.io/](https://strapi.io/)                             |
 | **ドキュメント**      | [https://docs.strapi.io/](https://docs.strapi.io/)                   |
@@ -330,6 +279,58 @@ Strapi は、100% JavaScript / TypeScript で構築されたオープンソー�
 **使用シナリオ:**
 
 Strapi は、コンテンツを柔軟に管理し、API を通じてさまざまなフロントエンドフレームワークで使用したい開発者やチームに適しています。
+
+## 第2位：Dify
+
+![dify](https://static-docs.nocobase.com/dify-lofqc2.png)
+
+
+| GitHub            | [https://github.com/langgenius/dify](https://github.com/langgenius/dify) |
+| ----------------- | ------------------------------------------------------------------------ |
+| GitHub スター数   | 103k                                                                     |
+| GitHub 最終更新日 | 当日                                                                     |
+| 公式サイト        | [https://dify.ai/](https://dify.ai/)                                     |
+| ドキュメント      | [https://docs.dify.ai/](https://docs.dify.ai/)                           |
+
+**概要：**
+
+Dify はローカル環境で導入可能なオープンソースの AI アプリ開発プラットフォームで、開発者やチームが大規模言語モデルを使った AI の試作版やアプリをすぐに作って管理、公開できるよう支援します。
+
+**特徴:**
+
+* **複数モデル対応**：OpenAI、Anthropic、Google Gemini、Moonshot、Deepseek などの主流の大規模言語モデルを使うことができます。
+* **視覚的な流れ設定**：Prompt Flow（プロンプトフロー）デザイナーを使えば、コードを書かなくても何度もやり取りする会話や複雑なロジックを作ることができます。
+* **埋め込みと API 呼び出し**：作った AI アプリは Web Widget、API、または組み込み形式でどんなプラットフォームにも導入できます。
+
+**使用シナリオ:**
+
+AI 製品の試作版をすぐに作りたい、社内用の AI アシスタントを導入したい、またはカスタムの AI ツールを作りたい開発者や企業に適しています。
+
+## **第1位：n8n**
+
+![n8n.png](https://static-docs.nocobase.com/c3e803baa30e129cc2759f2a7b5041b5.png)
+
+
+| GitHub            | [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n) |
+| ----------------- | -------------------------------------------------------------- |
+| GitHub スター数   | 106k                                                           |
+| GitHub 最終更新日 | 当日                                                           |
+| 公式サイト        | [https://n8n.io/](https://n8n.io/)                             |
+| ドキュメント      | [https://docs.n8n.io/](https://docs.n8n.io/)                   |
+
+**概要:**
+
+n8n は、オープンソースのノーコード自動化ツールで、高度にカスタマイズ可能なワークフローをサポートし、ユーザーが異なるアプリケーションを接続してデータ同期や自動化タスクを実現するのに役立ちます。
+
+**特徴:**
+
+* **ビジュアルワークフロー構築**：ドラッグ＆ドロップのノードを使用して自動化プロセスを作成し、コーディングなしで複雑なロジックを実現します。
+* **セルフホスティングとクラウドオプション**：オンプレミスでの展開をサポートし、データプライバシーを確保すると同時に、クラウド版も提供し、さまざまなユーザーニーズに対応します。
+* **豊富な統合**：Google Sheets、Notion、CRM、データベースなど400以上のアプリケーション統合を内蔵し、API接続をサポートして機能を柔軟に拡張できます。
+
+**使用シナリオ:**
+
+n8n は、日常業務の自動化を希望する個人やチームに適しており、データ同期、マーケティング自動化、カスタマーサポートチケット処理、ビジネスプロセス自動化などのシナリオで有効です。
 
 **関連する読み物：**
 

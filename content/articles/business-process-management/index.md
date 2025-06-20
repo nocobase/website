@@ -1,3 +1,5 @@
+**Last updated [2025.6.12]**
+
 ## What is BPM?
 
 BPM, or Business Process Management, is a systematic approach used to analyze, design, execute, monitor, and optimize business processes within an organization. By standardizing and automating processes, BPM helps businesses achieve their goals more efficiently.

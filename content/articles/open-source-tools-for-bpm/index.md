@@ -1,3 +1,7 @@
+📝 Note: This article was last updated on June 12, 2025. We regularly update the information to ensure you have the latest insights! 😊
+
+---
+
 In last month's article, we explored BPM and summarized the three key steps to building BPM applications.
 
 [What is BPM and How to Build a BPM App?](https://www.nocobase.com/en/blog/business-process-management)
@@ -20,7 +24,7 @@ At a prestigious university's admissions office, staff member Anna is overwhelme
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Stars：11.9k
+GitHub Stars：15.8k
 
 **Reasons for Recommendation:**
 
@@ -48,7 +52,7 @@ In a large factory, machines roar on the production line as workers prepare for 
 
 GitHub：https://github.com/camunda/camunda
 
-GitHub Stars：3.2k
+GitHub Stars：3.7k
 
 **Reasons for Recommendation:**
 
@@ -74,7 +78,7 @@ At a bank's customer service center, phone calls ring incessantly as account man
 
 GitHub：https://github.com/Activiti/Activiti
 
-GitHub Stars：10.1k
+GitHub Stars：10.3k
 
 **Reasons for Recommendation:**
 
@@ -100,7 +104,7 @@ At a large retail chain's inventory management center, warehouse manager James i
 
 GitHub：https://github.com/ProcessMaker/processmaker
 
-GitHub Stars：455
+GitHub Stars：494
 
 **Reasons for Recommendation:**
 

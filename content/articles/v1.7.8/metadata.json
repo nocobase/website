@@ -1,0 +1,93 @@
+{
+  "id": 497,
+  "title": "NocoBase v1.7.8: Add the environment variable to control the audit log output method",
+  "title_cn": "NocoBase v1.7.8：添加环境变量来控制日志输出方式",
+  "title_ja": "NocoBase v1.7.8：環境変数を追加し、監査ログの出力方法を制御できるようにしました",
+  "description": "Release Note of v1.7.8",
+  "description_cn": "v1.7.8 更新日志",
+  "description_ja": "v1.7.8 のリリースノート",
+  "slug": "v1.7.8",
+  "publishedAt": "2025-06-10T14:23:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-06-10T14:23:04.770Z",
+        "updatedAt": "2025-06-10T14:23:04.770Z",
+        "tagId": 4,
+        "articleId": 497
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-11T00:59:38.476Z",
+        "updatedAt": "2025-06-11T00:59:38.476Z",
+        "articles_id": 497,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-06-11T00:54:54.375Z",
+    "updatedAt": "2025-06-11T00:54:54.375Z",
+    "id": 1442,
+    "title": "发版封面图-main (1)",
+    "filename": "发版封面图-main (1)-l3b0zl.png",
+    "extname": ".png",
+    "size": 87994,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-l3b0zl.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-l3b0zl.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-06-11T00:59:38.467Z"
+}

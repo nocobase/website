@@ -1,3 +1,7 @@
+The project ranking in this article is based on data from **September 2024**. To provide more up-to-date information, we added the latest GitHub star counts for each project on **June 11, 2025**, as shown in the quick view list, e.g., “13. NocoBase – Low-code/No-code development platform (⭐15.8k)”, helping you better understand the current popularity of each tool.
+
+---
+
 A little over a month ago, we published an article titled "[The Ultimate Guide to Awesome Self-Hosted Solutions](https://www.nocobase.com/en/blog/the-ultimate-guide-to-awesome-self-hosted-solutions)". In it, we covered the pros and cons of cloud versus self-hosted solutions, potential self-hosting challenges, how to pick the right solution, and introduced five excellent self-hosted products for various needs.
 
 We won't repeat the advantages of self-hosting here. Instead, today we'll dive into some of the **best self-hosted projects on GitHub!**
@@ -10,31 +14,31 @@ This list is ordered by GitHub stars and highlights some of the best projects av
 
 ## **Quick Look: Top 13 Awesome Self-Hosted Projects**
 
-**13. NocoBase – Low-code/No-code Development Platform**
+**13. NocoBase – Low-code/No-code Development Platform (⭐15.8k)**
 
-****12. Khoj – AI Knowledge Management System****
+****12. Khoj – AI Knowledge Management System (⭐30.3k)****
 
-****11. Changedetection.io – Web Page Change Detection Tool****
+****11. Changedetection.io – Web Page Change Detection Tool (⭐24.4k)****
 
-****10. Dashy – Dashboard Management Tool****
+****10. Dashy – Dashboard Management Tool (⭐21k)****
 
-****9. SiYuan – Knowledge Management and Note-Taking System****
+****9. SiYuan – Knowledge Management and Note-Taking System (⭐35.2k)****
 
-****8. SigNoz – Full-stack Application Monitoring and Log Analysis Platform****
+****8. SigNoz – Full-stack Application Monitoring and Log Analysis Platform (⭐22.3k)****
 
-****7. ToolJet – Low-code Development Platform****
+****7. ToolJet – Low-code Development Platform (⭐35.8k)****
 
-****6. Memos – Note-taking and Knowledge Management System****
+****6. Memos – Note-taking and Knowledge Management System (⭐41.7k)****
 
-****5. Appsmith – Low-code Development Platform****
+****5. Appsmith – Low-code Development Platform (⭐37.2k)****
 
-****4. Appwrite – Backend-as-a-Service (BaaS) Platform****
+****4. Appwrite – Backend-as-a-Service (BaaS) Platform (⭐51.1k)****
 
-****3. Immich – Photo and Video Management Platform****
+****3. Immich – Photo and Video Management Platform (⭐67.8k)****
 
-****2. Gogs – Git Repository Management Solution****
+****2. Gogs – Git Repository Management Solution (⭐46.5k)****
 
-**1. n8n – Automation and Workflow Tool**
+**1. n8n – Automation and Workflow Tool (⭐106k)**
 
 The list is ordered by GitHub stars. To ensure project activity and maintenance, we've excluded projects that haven't been updated in the last three days. The table below presents key GitHub data for each project.
 

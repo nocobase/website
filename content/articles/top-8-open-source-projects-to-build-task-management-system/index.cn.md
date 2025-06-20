@@ -1,3 +1,5 @@
+注：本文数据更新于 2025 年 6 月 10 日。我们会定期更新，确保你获取最新的信息！😊
+
 我相信，如今没有人能离开任务管理软件（或任务管理系统）。
 
 无论是用来管理个人事项，还是企业用来协调团队任务进展，我们每天都在与任务管理打交道。你一定也或多或少使用过一些知名的任务管理工具，比如 Asana、Jira、或 Notion。
@@ -33,7 +35,7 @@
 
 项目地址：https://github.com/nocobase/nocobase
 
-⭐️ GitHub Stars 数：12.6k
+⭐️ GitHub Stars 数：15.8k
 
 ![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
 
@@ -76,7 +78,7 @@ NocoBase 是一个开源的无代码/低代码开发平台，基于灵活的数�
 
 项目地址：https://github.com/redmine/redmine
 
-⭐️ GitHub Stars 数：5.3k
+⭐️ GitHub Stars 数：5.6k
 
 ![Redmine.png](https://static-docs.nocobase.com/ac66b131e88dba3e24c18447f283827e.png)
 
@@ -111,7 +113,7 @@ Redmine 是一个基于 Ruby on Rails 的开源项目管理工具，支持多项
 
 项目地址：https://github.com/opf/openproject
 
-⭐️ GitHub Stars 数：9.4k
+⭐️ GitHub Stars 数：11.2k
 
 ![OpenProject.png](https://static-docs.nocobase.com/b7a808e313954b8ed2450478bda32000.png)
 
@@ -146,7 +148,7 @@ OpenProject 是一个开源的项目管理软件，支持敏捷和传统项目�
 
 项目地址：https://github.com/kanboard/kanboard
 
-⭐️ GitHub Stars 数：8.5k
+⭐️ GitHub Stars 数：9k
 
 ![Kanboard.png](https://static-docs.nocobase.com/91def75da939a9d46e0e81c55a0499df.png)
 
@@ -181,7 +183,7 @@ Kanboard 是一个轻量级的开源看板工具，专注于简单的任务管�
 
 项目地址：https://github.com/erengy/taiga
 
-⭐️ GitHub Stars 数：2.1k
+⭐️ GitHub Stars 数：2.2k
 
 ![Taiga.png](https://static-docs.nocobase.com/3acfb7902377e91bdc34a19c8ca8de57.png)
 
@@ -216,7 +218,7 @@ Taiga 是一个开源的项目管理平台，专为敏捷开发团队设计，�
 
 项目地址：https://github.com/JordanKnott/taskcafe
 
-⭐️ GitHub Stars 数：4.3k
+⭐️ GitHub Stars 数：4.7k
 
 ![Taskcafe.png](https://static-docs.nocobase.com/cd2d4576aa39d6e8c0acf7209d10eb6d.png)
 
@@ -251,7 +253,7 @@ Taskcafe 是一款开源的任务管理工具，采用看板（Kanban）界面�
 
 项目地址：https://github.com/wekan/wekan
 
-⭐️ GitHub Stars 数：19.6k
+⭐️ GitHub Stars 数：20.4k
 
 ![WeKan.png](https://static-docs.nocobase.com/e6854d7a1af97186d5552665a056eee8.png)
 
@@ -286,7 +288,7 @@ WeKan 是一款完成度很高的开源看板工具，支持 Docker 部署，支
 
 项目地址：https://github.com/mattermost-community/focalboard
 
-⭐️ GitHub Stars 数：21.9k
+⭐️ GitHub Stars 数：23.5k
 
 ![Focalboard.png](https://static-docs.nocobase.com/bf8a4183c102456be0c06b556c3b5d0a.png)
 

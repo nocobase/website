@@ -1,3 +1,5 @@
+**Last updated [2025.6.12]**
+
 Hello everyone, I am Lijia from [NocoBase](https://www.nocobase.com/).
 
 Yes, I often receive many questions when I introduce our product, NocoBase.

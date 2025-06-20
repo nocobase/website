@@ -1,4 +1,4 @@
-注：本文数据更新于2025年2月18日。我们会定期更新，确保你获取最新的信息！😊
+注：本文数据更新于 2025 年 6 月 11 日。我们会定期更新，确保你获取最新的信息！😊
 
 继续我们的 GitHub Star 系列！这是本系列的第四篇文章，之前的内容：
 
@@ -17,27 +17,27 @@
 
 | 名次 | 项目                       | Stars |
 | ---- | -------------------------- | ----- |
-| 1    | Appsmith                   | 35.7k |
-| 2    | Refine                     | 29.9k |
-| 3    | APIJSON                    | 17.4k |
-| 4    | NocoBase                   | 13.5k |
-| 5    | Library (DDD by Examples） | 5.1k  |
+| 1    | Appsmith                   | 37.2k |
+| 2    | Refine                     | 31.2k |
+| 3    | APIJSON                    | 18k   |
+| 4    | NocoBase                   | 15.8k |
+| 5    | Library (DDD by Examples） | 5.3k  |
 | 6    | Flask-AppBuilder           | 4.8k  |
-| 7    | CRUD (Nestjsx)             | 4.1k  |
-| 8    | PHP-CRUD-API               | 3.6k  |
+| 7    | CRUD (Nestjsx)             | 4.2k  |
+| 8    | PHP-CRUD-API               | 3.7k  |
 
 接下来，让我们正式开始吧！
 
 ![Let’s get started!.png](https://static-docs.nocobase.com/d8c3e94c6edec731283553fda5830f28.png)
 
-## **Appsmith (35.7k stars)**
+## **Appsmith (37.2k stars)**
 
 ![Appsmith.png](https://static-docs.nocobase.com/5b9e0d29dba947c184cf9a4171d28991.png)
 
 
 | GitHub                  | [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)    |
 | ----------------------- | ------------------------------------------------------------------------------------- |
-| GitHub Star 数          | 35.7k                                                                                 |
+| GitHub Star 数          | 37.2k                                                                                 |
 | GitHub 最近一次更新时间 | 当天                                                                                  |
 | 开源协议                | [Apache 2.0](https://github.com/appsmithorg/appsmith?tab=Apache-2.0-1-ov-file#readme) |
 | 活跃提交者数量          | 334                                                                                   |
@@ -62,14 +62,14 @@ Appsmith 是一个开源平台，专门用于构建管理员面板、内部工�
 
 💡 阅读更多：[GitHub Star 数量前 11 的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)
 
-## **Refine (29.9k stars)**
+## **Refine (31.2k stars)**
 
 ![Refine.png](https://static-docs.nocobase.com/8eeb2fc64694beb8b90f423c02fcd924.png)
 
 
 | GitHub                  | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
 | ----------------------- | -------------------------------------------------------------------------- |
-| GitHub Star 数          | 29.9k                                                                      |
+| GitHub Star 数          | 31.2k                                                                      |
 | GitHub 最近一次更新时间 | 当天                                                                       |
 | 开源协议                | [MIT](https://github.com/refinedev/refine?tab=MIT-1-ov-file#readme)        |
 | 活跃提交者数量          | 284                                                                        |
@@ -95,14 +95,14 @@ Refine 是一个基于 React 的元框架，专为 CRUD 重型的 Web 应用设�
 
 💡 阅读更多：[在数小时内构建 CRM：你需要了解的顶级无代码（零代码）/低代码工具](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder)
 
-## **APIJSON (17.4k stars)**
+## **APIJSON (18k stars)**
 
 ![APIJSON.png](https://static-docs.nocobase.com/f9ffd26987c00fa0283a9de3f5faba95.png)
 
 
 | GitHub                  | [https://github.com/Tencent/APIJSON](https://github.com/Tencent/APIJSON)                       |
 | ----------------------- | ---------------------------------------------------------------------------------------------- |
-| GitHub Star 数          | 17.4k                                                                                          |
+| GitHub Star 数          | 18k                                                                                            |
 | GitHub 最近一次更新时间 | 3天前                                                                                          |
 | 开源协议                | [Apache 2.0](https://github.com/Tencent/APIJSON?tab=License-1-ov-file#readme)                  |
 | 活跃提交者数量          | 72                                                                                             |
@@ -124,14 +124,14 @@ APIJSON 是一个为 API 设计的基于 JSON 的通信协议和 ORM 库。它�
 * **内部工具**：企业内部的管理系统、监控系统等，可以利用 APIJSON 快速搭建后台管理界面。
 * **教育与学习**：由于 APIJSON 易于上手，它也适用于教育环境，帮助学生和初学者理解 API 的构建和使用。
 
-## **NocoBase (13.5k stars)**
+## **NocoBase (15.8k stars)**
 
 ![NocoBase.png](https://static-docs.nocobase.com/b1c0f7c45d93a4c05fffeeadfbd758f9.png)
 
 
 | GitHub                  | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ----------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star 数          | 13.5k                                                                        |
+| GitHub Star 数          | 15.8k                                                                        |
 | GitHub 最近一次更新时间 | 当天                                                                         |
 | 开源协议                | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 活跃提交者数量          | 85                                                                           |
@@ -155,14 +155,14 @@ NocoBase 是一个高度可扩展的开源无代码/低代码平台，专为企�
 * **企业级应用**：适用于需要频繁进行数据操作的企业应用，如客户数据管理、库存跟踪和订单处理。
 * **快速原型开发**：快速验证业务想法和模型，特别适合需要快速迭代开发的创业环境。
 
-## **Library  (5.1k stars)**
+## **Library  (5.3k stars)**
 
 ![Library.png](https://static-docs.nocobase.com/6793fc4d006381bf9ac1602ca2b6cb21.png)
 
 
 | GitHub                  | [https://github.com/ddd-by-examples/library](https://github.com/ddd-by-examples/library) |
 | ----------------------- | ---------------------------------------------------------------------------------------- |
-| GitHub Star 数          | 5.1k                                                                                     |
+| GitHub Star 数          | 5.3k                                                                                     |
 | GitHub 最近一次更新时间 | 2年前                                                                                    |
 | 开源协议                | [MIT](https://github.com/ddd-by-examples/library?tab=MIT-1-ov-file#readme)               |
 | 活跃提交者数量          | 17                                                                                       |
@@ -215,14 +215,14 @@ Flask-AppBuilder 是一个基于 Flask 的快速应用开发框架，特别强�
 * **数据管理应用**：为需要复杂数据操作的应用提供强大的后台管理功能，如内容管理系统或客户关系管理系统。
 * **教育和培训**：由于其简单易学的特性，非常适合用于教学目的，帮助学习者快速理解 Web 开发和数据库操作。
 
-## **CRUD (Nestjsx) (4.1k stars)**
+## **CRUD (Nestjsx) (4.2k stars)**
 
 ![CRUD (Nestjsx).png](https://static-docs.nocobase.com/a44e41c8fdff89f20792f99290d022ba.png)
 
 
 | GitHub                  | [https://github.com/nestjsx/crud](https://github.com/nestjsx/crud)                   |
 | ----------------------- | ------------------------------------------------------------------------------------ |
-| GitHub Star 数          | 4.1k                                                                                 |
+| GitHub Star 数          | 4.2k                                                                                 |
 | GitHub 最近一次更新时间 | 1年前                                                                                |
 | 开源协议                | [MIT](https://github.com/nestjsx/crud#MIT-1-ov-file)                                 |
 | 活跃提交者数量          | 36                                                                                   |
@@ -248,14 +248,14 @@ CRUD (Nestjsx) 的设计目的是为了简化开发过程，通过提供一套�
 
 💡 阅读更多：[探索 RAD：5 个最佳实践案例解析](https://www.nocobase.com/cn/blog/rapid-application-development-best-application-cases)
 
-## **PHP-CRUD-API (3.6k stars)**
+## **PHP-CRUD-API (3.7k stars)**
 
 ![PHP-CRUD-API.png](https://static-docs.nocobase.com/59fcffe88404297034f74e455491cdd0.png)
 
 
 | GitHub                  | [https://github.com/mevdschee/php-crud-api](https://github.com/mevdschee/php-crud-api) |
 | ----------------------- | -------------------------------------------------------------------------------------- |
-| GitHub Star 数          | 3.6k                                                                                   |
+| GitHub Star 数          | 3.7k                                                                                   |
 | GitHub 最近一次更新时间 | 1年前                                                                                  |
 | 开源协议                | [MIT](https://github.com/mevdschee/php-crud-api#MIT-1-ov-file)                         |
 | 活跃提交者数量          | 40                                                                                     |
