@@ -1,7 +1,7 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getPage } from "../../utils";
+import { getPage, processor } from "../../utils";
 
 const page = await getPage("agreement", "en");
 
@@ -21,7 +21,7 @@ const keywords = page.keywords;
         <div class="col-lg-9">
           <div class="card shadow border-0 rounded">
             <div class="card-body license-body">
-              <div set:html={page.html}></div>
+              <div set:html={page.content}></div>
             </div>
           </div>
         </div><!--end col-->
