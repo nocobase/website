@@ -250,7 +250,8 @@ async function loadContent(
     // Pages don't need headings
     const { code } = await processor.render(cleanContent);
     result = { 
-      ...metadata, 
+      ...metadata,
+      content: cleanContent,
       html: code 
     };
   } else {
