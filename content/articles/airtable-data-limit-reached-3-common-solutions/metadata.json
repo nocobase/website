@@ -295,16 +295,58 @@
         "tagId": 144,
         "articleId": 585
       }
+    },
+    {
+      "createdAt": "2025-06-24T03:08:14.002Z",
+      "updatedAt": "2025-06-24T03:08:14.002Z",
+      "id": 196,
+      "title": "data limit",
+      "title_cn": "数据超限",
+      "sort": 194,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "データ超過",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "articlesTags": {
+        "createdAt": "2025-06-24T03:08:35.769Z",
+        "updatedAt": "2025-06-24T03:08:35.769Z",
+        "tagId": 196,
+        "articleId": 585
+      }
     }
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-24T03:05:42.162Z",
+    "updatedAt": "2025-06-24T03:05:42.162Z",
+    "id": 1508,
+    "title": "fm",
+    "filename": "fm-wod2rg.png",
+    "extname": ".png",
+    "size": 456123,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/fm-wod2rg.png",
+    "preview": "https://static-docs.nocobase.com/fm-wod2rg.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-24T02:23:04.158Z"
+  "updatedAt": "2025-06-24T03:30:13.985Z"
 }
