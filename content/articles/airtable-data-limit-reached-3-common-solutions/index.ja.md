@@ -84,3 +84,12 @@ Airtable の制限を回避するもう一つの方法が、データを複数�
 もし今あなたが、スクリプトと同期処理に多くの時間を費やしているなら——
 
 それは Airtable の限界に近づいているサインかもしれません。
+
+**関連読み物：**
+
+* [AppSheetの代替に！ノーコードで多対多タスク管理を簡単に作る方法 ](https://www.nocobase.com/ja/blog/appsheet-alternative)
+* [GitHubで最もスターを獲得したAirtableのオープンソース代替品トップ7 ](https://www.nocobase.com/ja/blog/open-source-airtable-alternatives)
+* [AppSheetの代替物として最適なものは2025年です ](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [おすすめデータ統合プラットフォーム7選：比較レビュー ](https://www.nocobase.com/ja/blog/data-integration-platforms)
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選 ](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり） ](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
