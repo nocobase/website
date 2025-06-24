@@ -39,7 +39,7 @@ In this article, we’ll walk through each of these approaches to help you figur
 
 ---
 
-Hey, you're reading the NocoBase blog. NocoBase is an open-source no-code platform for building data apps, internal tools, and workflows—fully self-hosted, plugin-based, and developer-friendly.  → [Explore NocoBase on GitHub
+💬 Hey, you're reading the NocoBase blog. NocoBase is an open-source no-code platform for building data apps, internal tools, and workflows—fully self-hosted, plugin-based, and developer-friendly.  →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ](https://github.com/nocobase/nocobase)
 
