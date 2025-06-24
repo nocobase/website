@@ -6,7 +6,7 @@
 
 比如下面这位软件工程师就发帖求助：[Airtable 的 50,000 条记录限制](https://www.reddit.com/r/Airtable/comments/1g8le58/thoughts_on_airtables_50k_record_limit/)，已经让他在构建数据密集型项目时倍感吃力。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzdlNmIzNDYxY2JjMGE5MDJmMTQ1ZmRmMDY4NDlhNmVfMzBLOU1IekE1aHQ4M2ZrVjk4N3dlRG9lQUNFZVN3bG5fVG9rZW46UENQNWJaejNQb2NYVWt4S2w1WGM1TnFKbjJjXzE3NTA3Mjg1NTc6MTc1MDczMjE1N19WNA)
+![Airtable Data Limit](https://static-docs.nocobase.com/1-y4hfi9.PNG)
 
 Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
@@ -14,7 +14,7 @@ Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
 比如我们来看一下 Airtable 当前的定价结构：
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzJmZDQ0OTNhMGMyNzk3OTk2Yzc5NzJkZDE3Y2Y2ZDFfNk53TGFTeWo2U01ZenBFcjFBY3kzSHpPc0lycWJraGpfVG9rZW46SEhsc2I3cDVTb2tJTHZ4OVlOWWNPbDB2bmtoXzE3NTA3Mjg1NTc6MTc1MDczMjE1N19WNA)
+![pricing](https://static-docs.nocobase.com/2-s4obc2.PNG)
 
 * **Free**（免费）— 每个 Base 限制 1,000 条记录
 * **Team**（\$20/人/月）— 限制 50,000 条
@@ -37,13 +37,13 @@ Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
 欢迎来到 NocoBase 的博客。NocoBase 是一个开源无代码开发平台，用于构建数据应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
 
-1. ## 升级套餐：最简单
+## 1. 升级套餐：最简单
 
 如果你认为你的团队处理的数据量不会再大量增长了，很好，升级套餐是最简单的做法。
 
 正如这位 Reddit 用户所说：大多数人都使用不到 5-10k ，要么直接超过 100k。**介于两者之间的不多。**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2NkMTcyMDgzM2ZmNTcxYmIzNTNiZDg1MWYzYzM5OTZfZ3VlZGJ3WWRsQ09yaGh1WkZZbno5eWJGMkxIWTNCQUtfVG9rZW46SjRkTmI4U2tCb2VhMjh4RGI4c2NvNGxybjBlXzE3NTA3Mjg1NTc6MTc1MDczMjE1N19WNA)
+![Upgrade Your Plan](https://static-docs.nocobase.com/3-3hvfqk.PNG)
 
 以一个 10 人团队为例，从 Team 升级到 Business，每人每月价格从 \$20 提升到 \$45。这样一年下来，把每个 Base 的记录数从 5 万条扩展到 12.5 万条，你只需要多付 3,000 美元。
 
@@ -56,7 +56,7 @@ Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
 不过，一旦数据继续增长或结构变得复杂，升级套餐的边际效益就会开始下降。这时，有些团队会考虑另一种方式：**把数据拆分到多个 Base 里。**
 
-2. ## 拆分 Base + 同步脚本
+## 2. 拆分 Base + 同步脚本
 
 另一种常见的做法，是将数据**拆分到多个 Base 中**，并通过 Airtable 的 API 或脚本机制进行同步处理。
 
@@ -64,7 +64,7 @@ Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
 比如这位提到：
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmNiODgzMjQ3ODFiMTdiYzRmN2RiMjIyM2RkMjEzMTNfbzRjUDY4eGs4cDdkM1I0YU5WNWdzaDQ2bHZPclUxVVRfVG9rZW46SnZWa2JGQklrb05ibzZ4WTRRS2NPYTdVbjVnXzE3NTA3Mjg1NTc6MTc1MDczMjE1N19WNA)
+![Splitting Bases + Sync Scripts](https://static-docs.nocobase.com/4-25bo0g.png)
 
 > “通常没有人需要同时对 50 万条记录进行可视化编辑或工作流操作。所以我通过 API 做了一些绕过限制的方式，来让 Airtable 用于编辑交互，而不是记录数据库。”
 
@@ -112,7 +112,7 @@ async function syncUpdatedRecords() {
           offset: offset 
         })
         .firstPage(); // 使用firstPage()并手动处理offset
-    
+  
       allRecords = allRecords.concat(response);
       offset = response.offset;
     } while (offset);
@@ -163,7 +163,7 @@ async function syncUpdatedRecords() {
 
 如果你已经在写脚本、拆分 Base、维护同步逻辑——**那可能说明你正在用 Airtable 做它本身并不擅长的事。**
 
-3. ## 搭建自托管且可扩展结构的系统
+## 3. 搭建自托管且可扩展结构的系统
 
 如果你能做到第二种方案，这也往往意味着：你已经具备了一定技术能力，可以考虑更灵活的解决方案，比如搭建一个**可自定义数据结构和可扩展工作流的自托管系统**。
 
@@ -199,7 +199,7 @@ Airtable 的 Automations 足够轻巧，但当你需要：
 
 不是每个人都需要走到这一步。我也看到有用户，他换到的其他平台，最后还是回到了 Airtable。原因是他认为 Airtable 的功能、易用性和灵活性无人能及。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmQwMGQ5ZWFmNWM3N2Y5YzA1NDMyYWM2ZDlhMjg1MWVfb0NCcHRITWFQdEhmQlo2QXI2V2NIUEFLeXBUN1B3bGJfVG9rZW46WFBlU2JFZlJkb1VDMzR4S3doWGNnRGVNbkRoXzE3NTA3Mjg1NTc6MTc1MDczMjE1N19WNA)
+![Who Should Consider These Platforms?](https://static-docs.nocobase.com/5-taj1yc.png)
 
 但如果你和你的团队正面临以下问题：
 
@@ -235,3 +235,12 @@ Airtable 曾经是许多团队数字化的起点，它降低了搭建工具的�
 不同团队会选择不同的路径，没有一种方式是绝对正确的，重要的是理解**你正在解决什么问题，和它对你未来意味着什么**。
 
 希望这篇文章能为你提供一个观察角度。
+
+**相关阅读：**
+
+* [替代 Airtable / 飞书表格？用零代码构建多对多关系的任务管理系统 ](https://www.nocobase.com/cn/blog/appsheet-alternative)
+* [GitHub上 Star 数量最多的 Airtable 开源替代者 ](https://www.nocobase.com/cn/blog/open-source-airtable-alternatives)
+* [2025 年 AppSheet 最佳开源替代品 ](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [7 款最佳数据集成平台推荐 ](https://www.nocobase.com/cn/blog/data-integration-platforms)
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品 ](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
+* [四个强大的 Salesforce 开源替代方案（附成本对比） ](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)
