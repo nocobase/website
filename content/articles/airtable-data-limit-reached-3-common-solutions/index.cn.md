@@ -37,7 +37,7 @@ Airtable 是一个伟大的产品，它**便捷、易用、上手快**。
 
 ---
 
-欢迎来到 NocoBase 的博客。NocoBase 是一个开源无代码开发平台，用于构建数据应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
+💬 欢迎来到 NocoBase 的博客。NocoBase 是一个开源无代码开发平台，用于构建数据应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
 
 ---
 
