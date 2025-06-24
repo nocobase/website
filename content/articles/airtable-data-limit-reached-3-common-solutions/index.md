@@ -6,6 +6,8 @@ To better understand the situation, I reviewed several community discussions—a
 
 One software engineer, for example, shared his struggle: Airtable’s 50,000-record cap is making it hard for him to build data-heavy projects.
 
+![Airtable Data Limit](https://static-docs.nocobase.com/1-y4hfi9.PNG)
+
 Airtable is amazing—simple, intuitive, and quick to get started with.
 
 For teams of around 10 people, it’s often a perfect fit: smooth to use and relatively affordable.
@@ -13,6 +15,8 @@ For teams of around 10 people, it’s often a perfect fit: smooth to use and rel
 But as your business grows, you may start to encounter some limitations.
 
 Let’s take a closer look at Airtable’s current pricing structure:
+
+![pricing](https://static-docs.nocobase.com/2-s4obc2.PNG)
 
 * Free — 1,000 records per base
 * Team (\$20/user/month) — 50,000 records
@@ -35,13 +39,15 @@ In this article, we’ll walk through each of these approaches to help you figur
 
 Hey, you're reading the NocoBase blog. NocoBase is an open-source no-code platform for building data apps, internal tools, and workflows—fully self-hosted, plugin-based, and developer-friendly.  → [Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
-1. ## Upgrade Your Plan
+## 1. Upgrade Your Plan
 
 The Simplest Route.
 
 If you believe your team's data volume won't increase significantly, then upgrading your Airtable plan is indeed the most straightforward solution.
 
 As one Reddit user noted, most people either use fewer than 5,000–10,000 records or jump straight past 100,000—there’s rarely anything in between.
+
+![Upgrade Your Plan](https://static-docs.nocobase.com/3-3hvfqk.PNG)
 
 For example, in a 10-person team, moving from the Team plan to the Business plan raises the price from \$20 to \$45 per user per month. Over a year, that’s an extra \$3,000 total—giving you a jump from 50,000 to 125,000 records per base.
 
@@ -54,13 +60,15 @@ For example, in a 10-person team, moving from the Team plan to the Business plan
 
 But as your data continues to grow or becomes more complex, the cost-effectiveness of upgrading starts to drop—you’re paying more for smaller improvements. That’s when some teams start considering another option: **splitting data across multiple bases.**
 
-2. ## Splitting Bases + Sync Scripts
+## 2. Splitting Bases + Sync Scripts
 
 Another widely used workaround is splitting your data across multiple Airtable bases and syncing them through the API or custom scripts.
 
 This method is often shared by developers in the community.
 
 One developer explained:
+
+![Splitting Bases + Sync Scripts](https://static-docs.nocobase.com/4-25bo0g.png)
 
 > “Most people don’t need to edit or run workflows on 500,000 records at once. I used Airtable as an editing layer and synced it with a real database via the API.”
 
@@ -161,7 +169,7 @@ But it’s not without downsides:
 
 So if you’re already deep into scripting, syncing, and managing scattered bases—**it might be a sign that you’re stretching Airtable beyond what it was designed to do.**
 
-3. ## Build a Self-Hosted, Scalable System
+## 3. Build a Self-Hosted, Scalable System
 
 If the second solution (splitting Bases and using sync scripts) is something your team can handle, it often suggests you possess the technical expertise to consider even more flexible options. This includes building a **self-hosted system** that offers customizable data structures and scalable workflows.
 
@@ -199,6 +207,8 @@ Not every team needs to take this step.
 
 I've seen users switch to other platforms only to eventually return to Airtable, believing its functionality, ease of use, and flexibility are unparalleled.
 
+![Who Should Consider These Platforms?](https://static-docs.nocobase.com/5-taj1yc.png)
+
 However, if you and your team are encountering any of the following challenges:
 
 * Your **data structure is growing increasingly complex**, with a proliferation of tables and chaotic permission management.
@@ -235,3 +245,12 @@ But as systems grow more complex, we inevitably need to consider how well our to
 Each team will chart its own course—there’s no one-size-fits-all solution. What truly matters is understanding the challenges you're solving today, and how your choices will shape what’s possible tomorrow.
 
 We hope this article has offered a helpful lens for your thinking.
+
+**Related reading:**
+
+* [AppSheet Alternative: Build a Many-to-Many Task System No-Code ](https://www.nocobase.com/en/blog/appsheet-alternative)
+* [Top 7 OSS Airtable Alternatives Ranked by GitHub Stars ](https://www.nocobase.com/en/blog/open-source-airtable-alternatives)
+* [The Best Open-Source Alternatives to AppSheet in 2025 ](https://www.nocobase.com/en/blog/appsheet-open-source-alternatives)
+* [7 Best Data Integration Platforms: Reviews & Top Picks ](https://www.nocobase.com/en/blog/data-integration-platforms)
+* [6 Open-Source Firebase Alternatives for Self-Hosting and Data Control ](https://www.nocobase.com/en/blog/open-source-firebase-alternatives)
+* [4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love) ](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)
