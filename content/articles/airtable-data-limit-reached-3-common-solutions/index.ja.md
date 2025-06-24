@@ -39,11 +39,7 @@ Airtable の料金プランは以下のとおりです：
 
 💬 こんにちは、NocoBase ブログへようこそ。NocoBase は、データアプリ・内部ツール・業務フローを構築できるオープンソースのノーコードプラットフォームです。自社運用・プラグイン構成・開発者に優しい設計が特徴です。  →  [GitHub で詳しく見る](https://github.com/nocobase/nocobase)
 
-](https://github.com/nocobase/nocobase)
-
 ---
-
-
 
 ## 1.プランをアップグレードする
 
