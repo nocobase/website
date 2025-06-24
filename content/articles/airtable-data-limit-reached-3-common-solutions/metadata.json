@@ -3,9 +3,9 @@
   "title": "Airtable Data Limit Reached: 3 Common Solutions",
   "title_cn": "Airtable 的数据超出上限，3 种常见应对方式",
   "title_ja": "Airtable のデータ上限に達したとき、どうする？代表的な3つの対処法",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article explores solutions for Airtable hitting data limits. It covers upgrading plans, splitting Bases + syncing via scripts, and building self - hosted systems.",
+  "description_cn": "本文探讨 Airtable 数据超上限的应对方式，含升级套餐、拆分 Base 同步及搭建自托管系统等方案与适用场景 。",
+  "description_ja": "本記事では、Airtable のデータ上限超過時の対応策を検討します。プランのアップグレード、ベースの分割 + スクリプトによる同期、セルフホスト型システムの構築などを紹介します 。",
   "slug": "airtable-data-limit-reached-3-common-solutions",
   "publishedAt": "2025-06-24T01:29:00.436Z",
   "status": "drafted",
@@ -306,5 +306,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-24T01:34:57.754Z"
+  "updatedAt": "2025-06-24T02:23:04.158Z"
 }
