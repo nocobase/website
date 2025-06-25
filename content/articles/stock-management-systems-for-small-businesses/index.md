@@ -84,7 +84,7 @@ NocoBase is open-source and free to use, with commercial licenses and plugins av
 **✅ Feature Highlights:**
 
 * **Intuitive inventory organization**: Sortly supports batch import of existing inventory lists and provides visual inventory classification, allowing users to flexibly create folders to organize inventory structures by location, item type, etc.
-* **Smart management processes**: Equipped with a built-in barcode and QR code scanner to significantly improve inventory speed; allows uploading high-definition images for visual inventory tracking.
+* **Smart management processes**: Equipped with a built-in barcode and [QR code](https://www.adobe.com/express/feature/image/qr-code-generator) scanner to significantly improve inventory speed; allows uploading high-definition images for visual inventory tracking.
 * **Real-time report insights**: Provides real-time reporting functions, exporting custom reports in PDF or CSV formats for inventory audits, budget planning, and trend forecasting.
 
 **✅ Suitable for:**
