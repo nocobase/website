@@ -53,7 +53,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[File manager]** Fix attachments field can not be updated in approval process ([#7093](https://github.com/nocobase/nocobase/pull/7093)) by @mytharcher
 - **[Workflow: Approval]** Use comparison instead of implicit logic to avoid type issues by @mytharcher
 
-
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
@@ -113,7 +112,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 #### 🎉 New Features
 
 - **[client]** Support the BIT field in SQL Server for external data sources. ([#7058](https://github.com/nocobase/nocobase/pull/7058)) by @aaaaaajie
-- **[Data source: External SQL Server]** 支持外部数据源中的 SQL Server BIT 字段 by @aaaaaajie
 - **[Workflow: Approval]** Add approval records variable to node result by @mytharcher
 
 #### 🚀 Improvements
