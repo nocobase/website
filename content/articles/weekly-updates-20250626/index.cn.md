@@ -114,7 +114,6 @@
 #### 🎉 新特性
 
 - **[client]** 支持外部数据源中的 SQL Server BIT 字段 ([#7058](https://github.com/nocobase/nocobase/pull/7058)) by @aaaaaajie
-- **[数据源：外部 SQL Server]** Added support for SQL Server BIT field in external data sources by @aaaaaajie
 - **[工作流：审批]** 审批节点结果中增加审批记录变量 by @mytharcher
 
 #### 🚀 优化
