@@ -91,3 +91,13 @@ Distinct HealthCare の公式サイトには、こう書かれています：
 > 「私たちは、医療の本質を大切にしています。診療はエビデンスに基づき、不要な検査や投薬は行いません。」
 
 こうした姿勢、そして先進的な取り組みを続ける Distinct HealthCare のような存在があるからこそ、デジタルツールは単なる業務効率化を超えて、医療という“本質的に変わりづらい分野”にも、確かな変化を根づかせていけるのです。
+
+
+**もっと多くのカスタマーストーリー：**
+
+* [SHIMANOの現場から始まるノーコードの旅](https://www.nocobase.com/ja/blog/shimano)
+* [なぜ日本の大手不動産会社はSalesforceからオープンソースのNocoBaseに乗り換えたのか？](https://www.nocobase.com/ja/blog/century-21)
+* [Second-Brain は NocoBase を使って、金融機関向けの AI システムをこう作った](https://www.nocobase.com/ja/blog/second-brain)
+* [AIボイスレコーダー世界No.1企業に学ぶ、急成長を支える社内システム構築術](https://www.nocobase.com/ja/blog/plaud)
+* [Excel 管理からの脱却――Classmethod が NocoBase で実現した従業員情報管理システムの進化](https://www.nocobase.com/ja/blog/classmethod)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
