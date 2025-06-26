@@ -8,7 +8,7 @@
 
 而卓正医疗是中国最早提出并实践“家庭医生式连锁诊所”模式的企业之一。
 
-## 卓正医疗：先行者的探索
+## [卓正医疗](http://www.distinctclinic.com/)：先行者的探索
 
 ![Distinct HealthCare](https://static-docs.nocobase.com/2-yuda5b.PNG)
 
