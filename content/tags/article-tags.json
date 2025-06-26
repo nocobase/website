@@ -3818,5 +3818,25 @@
     "title_cn": "数据超限",
     "title_ja": "データ超過",
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-06-26T00:49:03.735Z",
+    "updatedAt": "2025-06-26T00:49:03.735Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 197,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 195,
+    "title": "General Practitioner",
+    "title_cn": "家庭医生",
+    "title_ja": "家庭医",
+    "updatedById": 3
   }
 ]
