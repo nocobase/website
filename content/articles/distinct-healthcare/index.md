@@ -56,6 +56,8 @@ They started with aesthetic medicine and ophthalmology, building a fully functio
 
 ![One System, Seven Teams](https://static-docs.nocobase.com/3-taaj2t.png)
 
+Follow-Up System
+
 Thanks to NocoBase’s open APIs, the system integrates data from sources like HIS, EMR, and pharmacy systems. On a single interface, doctors and nurses can view patient histories, prescriptions, and appointments; create follow-up tasks; and log communications—eliminating the need for tab-switching or manual lookups. This greatly streamlined frontline operations.
 
 From initial evaluation to rollout, the project took just three months—cutting development time by about 60%. After launch, both follow-up completion rates and patient satisfaction improved significantly.
@@ -70,6 +72,8 @@ Rather than bottlenecking development, this shift empowered business teams and u
 
 ![One System, Seven Teams](https://static-docs.nocobase.com/4-asmcar.png)
 
+The Follow-Up System: Seamless Integration with Diverse Systems
+
 ## More Than Just a System
 
 For Distinct HealthCare, NocoBase isn’t just a tool—it represents a new approach to digital transformation. It enables teams to build and adapt internal systems more efficiently, without being constrained by dev cycles or one-off launches. Instead, teams can iterate continuously, turning real-world frontline needs into standardized workflows—quickly.
@@ -81,7 +85,6 @@ As Distinct HealthCare states on its website:
 > “We stay true to the essence of medicine. Our diagnoses are grounded in evidence-based practices, avoiding unnecessary tests or medication.”
 
 It’s this mindset—and the efforts of pioneers like Distinct HealthCare—that allow digital tools to go beyond surface-level change and truly embed themselves into the heart of healthcare, helping a traditionally slow-moving industry take meaningful steps forward.
-
 
 **More Customer Stories:**
 
