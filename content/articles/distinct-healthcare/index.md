@@ -6,7 +6,7 @@ In countries like those in Europe and the U.S., the General Practitioner (GP) sy
 
 In China, however, this model is only beginning to emerge. As public awareness of health increases, family doctor-style services have gradually taken root through market-driven, chain-based clinics. Especially in major cities, a new generation of clinics is experimenting with GP-centered models that prioritize proactive care, personalized follow-ups, and long-term doctor–patient relationships—distinct from the traditional pay-per-visit model of public hospitals.
 
-**Distinct HealthCare** is one of the pioneers in proposing and practicing this family doctor-style, chain-clinic approach in China.
+**[Distinct HealthCare](http://www.distinctclinic.com/)** is one of the pioneers in proposing and practicing this family doctor-style, chain-clinic approach in China.
 
 ## Distinct HealthCare’s Journey into Family Doctor Care
 
