@@ -8,7 +8,7 @@
   "description_ja": "Distinct HealthCare にとって、NocoBase は単なるシステムではなく、内部ツール構築のハードルを下げ、デジタル認識を再構築し、迅速な対応と需求の標準化を可能にします。",
   "slug": "distinct-healthcare",
   "publishedAt": "2025-06-26T00:33:31.889Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -374,5 +374,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-26T01:27:26.893Z"
+  "updatedAt": "2025-06-26T02:28:31.957Z"
 }
