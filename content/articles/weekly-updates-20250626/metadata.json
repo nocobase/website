@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、ノード結果に承認記録変数の追加、外部データソースの SQL Server における BIT フィールドのサポートなどが含まれます。",
   "slug": "weekly-updates-20250626",
   "publishedAt": "2025-06-26T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-25T07:27:05.943Z"
+  "updatedAt": "2025-06-26T01:53:35.875Z"
 }
