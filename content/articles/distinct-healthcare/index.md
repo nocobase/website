@@ -81,3 +81,13 @@ As Distinct HealthCare states on its website:
 > “We stay true to the essence of medicine. Our diagnoses are grounded in evidence-based practices, avoiding unnecessary tests or medication.”
 
 It’s this mindset—and the efforts of pioneers like Distinct HealthCare—that allow digital tools to go beyond surface-level change and truly embed themselves into the heart of healthcare, helping a traditionally slow-moving industry take meaningful steps forward.
+
+
+**More Customer Stories:**
+
+* [A No-Code Journey Inside SHIMANO](https://www.nocobase.com/en/blog/shimano)
+* [What made Japan’s leading real estate firm switch from Salesforce to open-source NocoBase?](https://www.nocobase.com/en/blog/century-21)
+* [How Second-Brain built an AI system for financial institutions with NocoBase](https://www.nocobase.com/en/blog/second-brain)
+* [How the No.1 AI Voice Recorder Brand Built Its Internal Systems](https://www.nocobase.com/en/blog/plaud)
+* [Beyond Spreadsheets: Classmethod’s Employee Data Management with NocoBase](https://www.nocobase.com/en/blog/classmethod)
+* [How One Furniture Factory Built Its Own ERP—No Coding Needed](https://www.nocobase.com/en/blog/olmon)
