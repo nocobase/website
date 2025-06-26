@@ -3,9 +3,9 @@
   "title": "How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System",
   "title_cn": "卓正医疗如何用 NocoBase 搭建“家庭医生式”服务体系？",
   "title_ja": "NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "For Distinct HealthCare, NocoBase means more than just a system. It lowers the barrier for internal tool-building, reshapes digital understanding, and enables rapid response and demand standardization.",
+  "description_cn": "NocoBase 对卓正医疗而言，不仅是系统，更降低工具搭建门槛，重塑数字化认知，实现快速响应与需求标准化。",
+  "description_ja": "Distinct HealthCare にとって、NocoBase は単なるシステムではなく、内部ツール構築のハードルを下げ、デジタル認識を再構築し、迅速な対応と需求の標準化を可能にします。",
   "slug": "distinct-healthcare",
   "publishedAt": "2025-06-26T00:33:31.889Z",
   "status": "drafted",
@@ -269,6 +269,84 @@
         "tagId": 197,
         "articleId": 588
       }
+    },
+    {
+      "createdAt": "2025-06-26T00:57:34.355Z",
+      "updatedAt": "2025-06-26T00:57:34.355Z",
+      "id": 198,
+      "title": "Digital Healthcare Setup",
+      "title_cn": "医疗数字化搭建",
+      "sort": 196,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "医療デジタル化",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "articlesTags": {
+        "createdAt": "2025-06-26T01:05:40.142Z",
+        "updatedAt": "2025-06-26T01:05:40.142Z",
+        "tagId": 198,
+        "articleId": 588
+      }
+    },
+    {
+      "createdAt": "2025-06-26T00:58:07.977Z",
+      "updatedAt": "2025-06-26T00:58:07.977Z",
+      "id": 199,
+      "title": "No - Code Medical Tools",
+      "title_cn": "医疗零代码工具",
+      "sort": 197,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "医療ノーコード",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "articlesTags": {
+        "createdAt": "2025-06-26T01:05:40.142Z",
+        "updatedAt": "2025-06-26T01:05:40.142Z",
+        "tagId": 199,
+        "articleId": 588
+      }
+    },
+    {
+      "createdAt": "2025-06-26T00:58:36.731Z",
+      "updatedAt": "2025-06-26T00:58:36.731Z",
+      "id": 200,
+      "title": "Healthcare Digital Transformation",
+      "title_cn": "医疗数字化转型",
+      "sort": 198,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "医療デジタルトランス",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "articlesTags": {
+        "createdAt": "2025-06-26T01:05:40.142Z",
+        "updatedAt": "2025-06-26T01:05:40.142Z",
+        "tagId": 200,
+        "articleId": 588
+      }
     }
   ],
   "sub_tags": [],
@@ -296,5 +374,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-26T00:54:11.904Z"
+  "updatedAt": "2025-06-26T01:27:26.893Z"
 }
