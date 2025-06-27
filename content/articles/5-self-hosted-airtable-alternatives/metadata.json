@@ -8,7 +8,7 @@
   "description_ja": "Airtable は高すぎて使えない？5 つのセルフホスト型代替案が登場！コストと機能を比較し、より節約できて柔軟な選択肢を探すのを支援します。",
   "slug": "5-self-hosted-airtable-alternatives",
   "publishedAt": "2025-06-27T05:28:18.412Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -378,18 +378,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-06-27T08:09:28.035Z",
-    "updatedAt": "2025-06-27T08:09:28.035Z",
-    "id": 1519,
-    "title": "Frame 77",
-    "filename": "Frame 77-n6gp4b.png",
+    "createdAt": "2025-06-27T09:01:39.923Z",
+    "updatedAt": "2025-06-27T09:01:39.923Z",
+    "id": 1520,
+    "title": "Frame 77 (1)",
+    "filename": "Frame 77 (1)-2mja2k.png",
     "extname": ".png",
-    "size": 1263134,
+    "size": 1307817,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Frame%2077-n6gp4b.png",
-    "preview": "https://static-docs.nocobase.com/Frame%2077-n6gp4b.png",
+    "url": "https://static-docs.nocobase.com/Frame%2077%20(1)-2mja2k.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2077%20(1)-2mja2k.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -400,5 +400,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-27T08:10:17.948Z"
+  "updatedAt": "2025-06-27T09:02:56.432Z"
 }
