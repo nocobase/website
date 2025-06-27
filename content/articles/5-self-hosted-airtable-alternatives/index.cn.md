@@ -9,7 +9,7 @@
 * **Business**：\$45/月/人（年付）或 \$54/月/人（月付）——全面解锁高级功能
 * **Enterprise Scale**：定制化，支持 SSO、权限管理、扩展性 API 等企业级需求
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWJhYzFhNzI1YWU1ODlkZDVjMWNkMTA3ZjJlNmMzYzZfRW9TTTAyc3FLR3k5U1dWMW5zQUE0c0dUeWV6UmVaTVlfVG9rZW46Q09vbmJKcVBHb1U5M3p4ZXQwamNhUWtjbjJiXzE3NTEwMDIxMTk6MTc1MTAwNTcxOV9WNA)
+![Airtable pricing](https://static-docs.nocobase.com/1-zbubpg.PNG)
 
 变化的关键不只是定价，而是**功能分层重构**：很多原本 Pro 用户依赖的功能，**被挪入更高价的 Business 方案中**。
 
@@ -40,18 +40,18 @@
 ### 价格对比表格
 
 
-| 产品名称     | 版本         | 预估10人团队每年成本 | 预估50人团队每年成本 | 预估100人团队每年成本 |
-| ------------ | ------------ | -------------------- | -------------------- | --------------------- |
-| Airtable     | Team         | \$2,400              | \$12,000             | \$24,000              |
-| Business     | 🔴\$5,400    | 🔴\$27,000           | 🔴\$54,000           |                       |
-| NocoBase     | Standard     | ✅\$800              | ✅\$800              | ✅\$800               |
-| Professional | \$8,000      | \$8,000              | \$8,000              |                       |
-| Teable       | Professional | \$1,200              | \$6,000              | \$12,000              |
-| NocoDB       | Team         | ✅\$228              | ✅\$1,140            | ✅\$2,280             |
-| Business     | \$1,188      | \$5,940              | \$11,880             |                       |
-| Rowy         | Pro          | \$1,440              | \$7,200              | \$14,400              |
-| Baserow      | Premium      | \$1,200              | \$6,000              | \$12,000              |
-| Advanced     | \$2,160      | \$9,000              | \$18,000             |                       |
+| 产品名称 | 版本         | 预估10人团队每年成本 | 预估50人团队每年成本 | 预估100人团队每年成本 |
+| -------- | ------------ | -------------------- | -------------------- | --------------------- |
+| Airtable | Team         | \$2,400              | \$12,000             | \$24,000              |
+| Airtable | Business     | 🔴\$5,400            | 🔴\$27,000           | 🔴\$54,000            |
+| NocoBase | Standard     | ✅\$800              | ✅\$800              | ✅\$800               |
+| NocoBase | Professional | \$8,000              | \$8,000              | \$8,000               |
+| Teable   | Professional | \$1,200              | \$6,000              | \$12,000              |
+| NocoDB   | Team         | ✅\$228              | ✅\$1,140            | ✅\$2,280             |
+| NocoDB   | Business     | \$1,188              | \$5,940              | \$11,880              |
+| Rowy     | Pro          | \$1,440              | \$7,200              | \$14,400              |
+| Baserow  | Premium      | \$1,200              | \$6,000              | \$12,000              |
+| Baserow  | Advanced     | \$2,160              | \$9,000              | \$18,000              |
 
 💡 从上表可以看出几个重要趋势：
 
@@ -92,7 +92,7 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 * **细粒度权限系统**：内建 RBAC 模型，支持字段级权限、视图权限、操作权限等多层控制。
 * **复杂关系支持**：可建模一对多、多对多等复杂关系，更贴近真实业务系统搭建场景。
 
-**适用场景：**各种规模的团队在 CRM、ERP、审批平台等业务系统开发中，需灵活自定义扩展、强化数据管控、精细权限管理及高效流程协作的场景。
+**适用场景**：各种规模的团队在 CRM、ERP、审批平台等业务系统开发中，需灵活自定义扩展、强化数据管控、精细权限管理及高效流程协作的场景。
 
 ### [Teable](https://teable.io/)：AI 无代码数据库
 
@@ -111,7 +111,7 @@ License：[AGPL-3.0](https://github.com/teableio/teable/blob/develop/AGPL_LICENS
 * **自动化与聊天协作功能**：内建机器人、字段提醒等，支持 Slack 类协作体验。
 * **字段类型覆盖全面**：支持链接字段、附件、选择列表、公式等常用类型。
 
-**适用场景：**中小型团队在追求轻便协作与 UI 友好体验时，适配类 Airtable 使用习惯的场景。
+**适用场景**：中小型团队在追求轻便协作与 UI 友好体验时，适配类 Airtable 使用习惯的场景。
 
 ### [NocoDB](https://www.nocodb.com/)：电子表格形式的数据库
 
@@ -129,7 +129,7 @@ License：[AGPL-3.0](https://github.com/nocodb/nocodb?tab=AGPL-3.0-1-ov-file#)
 * **百万行级数据规模**：NocoDB 突破传统无代码平台的数据量限制，支持轻松处理数百万行级别的数据库表，且无需升级企业版或对接销售团队。
 * **移动访问能力**：支持通过智能手机随时随地便捷查看与编辑数据。
 
-**适用场景：**已有数据库系统，需要快速为业务部门提供可视化数据界面的技术型团队。
+**适用场景**：已有数据库系统，需要快速为业务部门提供可视化数据界面的技术型团队。
 
 ### [Rowy](https://www.rowy.io/)：Firebase 开发者的 Airtable 替代方案
 
@@ -147,7 +147,7 @@ License：[Apache](https://github.com/rowyio/rowy?tab=License-1-ov-file#)
 * **字段级逻辑触发器**：支持在字段变更后执行函数逻辑，类似触发器/后端函数。
 * **后端逻辑嵌入**：云函数即为后端逻辑，自动执行异步任务，如写入其他服务或 API 调用。
 
-**适用场景：**Firebase 平台上构建 admin 界面或数据平台，或需要后端逻辑的 serverless Web 应用开发者团队。
+**适用场景**：Firebase 平台上构建 admin 界面或数据平台，或需要后端逻辑的 serverless Web 应用开发者团队。
 
 ### [Baserow](https://baserow.io/)：无代码开源数据库
 
@@ -165,7 +165,7 @@ License：[MIT](https://github.com/bram2w/baserow?tab=License-1-ov-file#)
 * **嵌入式 AI**：Baserow 通过内置 AI 能力实现数据智能化处理。
 * **企业级数据安全**：使用加密、基于角色的访问控制和自托管选项保护数据。
 
-**适用场景：**Baserow 适用于中小企业快速搭建 CRM、ERP、项目管理等定制化无代码应用。
+**适用场景**：Baserow 适用于中小企业快速搭建 CRM、ERP、项目管理等定制化无代码应用。
 
 ## 总结：自托管，不只是省钱
 
@@ -174,3 +174,12 @@ Airtable 无疑是一款优秀的产品，但当它的成本与复杂性不断�
 这些工具不仅能大幅降低团队的年支出，还让你真正拥有对功能、流程和数据的主导权。
 
 👉 如果你正在寻找一个更自由的 Airtable 替代方案，不妨从文中推荐的这 5 个平台开始评估试用。
+
+**相关阅读：**
+
+* [Airtable 的数据超出上限，3 种常见应对方式](https://www.nocobase.com/cn/blog/airtable-data-limit-reached-3-common-solutions)
+* [替代 Airtable / 飞书表格？用零代码构建多对多关系的任务管理系统](https://www.nocobase.com/cn/blog/appsheet-alternative)
+* [GitHub上 Star 数量最多的 Airtable 开源替代者](https://www.nocobase.com/cn/blog/open-source-airtable-alternatives)
+* [2025 年 AppSheet 最佳开源替代品](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [7 款最佳数据集成平台推荐](https://www.nocobase.com/cn/blog/data-integration-platforms)
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
