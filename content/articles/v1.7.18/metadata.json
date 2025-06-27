@@ -1,13 +1,13 @@
 {
-  "id": 582,
-  "title": "NocoBase v1.7.16: Bug Fixes",
-  "title_cn": "NocoBase v1.7.16：缺陷修复",
-  "title_ja": "NocoBase v1.7.16：不具合修正",
-  "description": "Release Note of v1.7.16",
-  "description_cn": "v1.7.16 更新日志",
-  "description_ja": "v1.7.16 のリリースノート",
-  "slug": "v1.7.16",
-  "publishedAt": "2025-06-19T16:40:00.000Z",
+  "id": 589,
+  "title": "NocoBase v1.7.18: Optimize mobile style",
+  "title_cn": "NocoBase v1.7.18：优化移动端样式",
+  "title_ja": "NocoBase v1.7.18：モバイル表示スタイルを最適化",
+  "description": "Release Note of v1.7.18",
+  "description_cn": "v1.7.18 更新日志",
+  "description_ja": "v1.7.18 のリリースノート",
+  "slug": "v1.7.18",
+  "publishedAt": "2025-06-26T14:00:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,10 +30,10 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2025-06-19T16:40:43.759Z",
-        "updatedAt": "2025-06-19T16:40:43.759Z",
+        "createdAt": "2025-06-26T14:00:03.193Z",
+        "updatedAt": "2025-06-26T14:00:03.193Z",
         "tagId": 4,
-        "articleId": 582
+        "articleId": 589
       }
     }
   ],
@@ -58,27 +58,27 @@
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2025-06-23T08:21:07.045Z",
-        "updatedAt": "2025-06-23T08:21:07.045Z",
-        "articles_id": 582,
+        "createdAt": "2025-06-27T01:38:12.463Z",
+        "updatedAt": "2025-06-27T01:38:12.463Z",
+        "articles_id": 589,
         "tags_id": 116
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-06-23T08:19:49.005Z",
-    "updatedAt": "2025-06-23T08:19:49.005Z",
-    "id": 1505,
-    "title": "发版封面图-main (2)",
-    "filename": "发版封面图-main (2)-w2d7q7.png",
+    "createdAt": "2025-06-27T01:35:50.022Z",
+    "updatedAt": "2025-06-27T01:35:50.022Z",
+    "id": 1512,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-8cjto4.png",
     "extname": ".png",
-    "size": 88636,
+    "size": 88809,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(2)-w2d7q7.png",
-    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(2)-w2d7q7.png",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-8cjto4.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-8cjto4.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-23T08:21:07.039Z"
+  "updatedAt": "2025-06-27T01:38:12.456Z"
 }

@@ -1,14 +1,14 @@
 {
   "id": 583,
-  "title": "NocoBase v1.8.0-alpha.9",
-  "title_cn": "NocoBase v1.8.0-alpha.9",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-alpha.9: Add approval records variable to node result",
+  "title_cn": "NocoBase v1.8.0-alpha.9：审批节点结果中增加审批记录变量",
+  "title_ja": "NocoBase v1.8.0-alpha.9：ノード結果に承認記録変数を追加",
   "description": "Release Note of v1.8.0-alpha.9",
   "description_cn": "v1.8.0-alpha.9 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-alpha.9 のリリースノート",
   "slug": "v1.8.0-alpha.9",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-06-20T01:58:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-23T08:26:19.832Z",
+        "updatedAt": "2025-06-23T08:26:19.832Z",
+        "articles_id": 583,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-23T08:26:04.810Z",
+    "updatedAt": "2025-06-23T08:26:04.810Z",
+    "id": 1506,
+    "title": "develop",
+    "filename": "develop-cec737.png",
+    "extname": ".png",
+    "size": 77366,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-cec737.png",
+    "preview": "https://static-docs.nocobase.com/develop-cec737.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-20T01:58:17.966Z"
+  "updatedAt": "2025-06-23T08:26:19.826Z"
 }
