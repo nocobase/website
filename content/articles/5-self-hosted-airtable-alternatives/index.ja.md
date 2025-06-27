@@ -9,7 +9,7 @@
 * **Business**：45 ドル / 月 / 人（年払い）または 54 ドル / 月 / 人（月払い）—— 高度機能を完全にロック解除
 * **Enterprise Scale**：カスタマイズ可能で、SSO、アクセス管理、拡張性のある API などの企業向けのニーズをサポート
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODhhMThiZGQ5NmFlZmFjZmJhODgyZDUzOGEzZjIyNmNfcmpLeGpkSFNKbGU4aTA2U0JnUk5FQ1ZIOU9PeGtKR09fVG9rZW46VDE2QmIwNXRPbzdlZ254SlJDMmMzcGZ5bjJyXzE3NTEwMDIxNTI6MTc1MTAwNTc1Ml9WNA)
+![Airtable pricing](https://static-docs.nocobase.com/1-zbubpg.PNG)
 
 変化のポイントは単に価格設定だけではなく、機能の層別化の再構築です：多くの Pro ユーザーが頼りにしていた機能が、より高価な Business プランに移されました。
 
@@ -40,18 +40,18 @@
 ### チーム規模（10 人 / 50 人 / 100 人）別年間見積もりコスト比較
 
 
-| 製品名       | バージョン   | 10 人チームの年間見積もりコスト | 50 人チームの年間見積もりコスト | 100 人チームの年間見積もりコスト |
-| ------------ | ------------ | ------------------------------- | ------------------------------- | -------------------------------- |
-| Airtable     | Team         | \$2,400                         | \$12,000                        | \$24,000                         |
-| Business     | 🔴\$5,400    | 🔴\$27,000                      | 🔴\$54,000                      |                                  |
-| NocoBase     | Standard     | ✅\$800                         | ✅\$800                         | ✅\$800                          |
-| Professional | \$8,000      | \$8,000                         | \$8,000                         |                                  |
-| Teable       | Professional | \$1,200                         | \$6,000                         | \$12,000                         |
-| NocoDB       | Team         | ✅\$228                         | ✅\$1,140                       | ✅\$2,280                        |
-| Business     | \$1,188      | \$5,940                         | \$11,880                        |                                  |
-| Rowy         | Pro          | \$1,440                         | \$7,200                         | \$14,400                         |
-| Baserow      | Premium      | \$1,200                         | \$6,000                         | \$12,000                         |
-| Advanced     | \$2,160      | \$9,000                         | \$18,000                        |                                  |
+| 製品名   | バージョン   | 10 人チームの年間見積もりコスト | 50 人チームの年間見積もりコスト | 100 人チームの年間見積もりコスト |
+| -------- | ------------ | ------------------------------- | ------------------------------- | -------------------------------- |
+| Airtable | Team         | \$2,400                         | \$12,000                        | \$24,000                         |
+| Airtable | Business     | 🔴\$5,400                       | 🔴\$27,000                      | 🔴\$54,000                       |
+| NocoBase | Standard     | ✅\$800                         | ✅\$800                         | ✅\$800                          |
+| NocoBase | Professional | \$8,000                         | \$8,000                         | \$8,000                          |
+| Teable   | Professional | \$1,200                         | \$6,000                         | \$12,000                         |
+| NocoDB   | Team         | ✅\$228                         | ✅\$1,140                       | ✅\$2,280                        |
+| NocoDB   | Business     | \$1,188                         | \$5,940                         | \$11,880                         |
+| Rowy     | Pro          | \$1,440                         | \$7,200                         | \$14,400                         |
+| Baserow  | Premium      | \$1,200                         | \$6,000                         | \$12,000                         |
+| Baserow  | Advanced     | \$2,160                         | \$9,000                         | \$18,000                         |
 
 💡 上記の表からいくつかの重要な傾向がわかります：
 
@@ -176,3 +176,12 @@ NocoBase のモジュール化プラグインシステムから、Teable の極�
 これらのツールはチームの年間支出を大幅に削減できるだけでなく、機能、プロセス、データに対する主導権を本当に手に入れることができます。
 
 👉 より自由な Airtable 代替案を探しているなら、この記事で紹介した 5 つのプラットフォームから評価と試用を始めることをおすすめします。
+
+**関連読み物：**
+
+* [Airtable のデータ上限に達したとき、どうする？代表的な3つの対処法](https://www.nocobase.com/ja/blog/airtable-data-limit-reached-3-common-solutions)
+* [AppSheetの代替に！ノーコードで多対多タスク管理を簡単に作る方法](https://www.nocobase.com/ja/blog/appsheet-alternative)
+* [GitHubで最もスターを獲得したAirtableのオープンソース代替品トップ7](https://www.nocobase.com/ja/blog/open-source-airtable-alternatives)
+* [AppSheetの代替物として最適なものは2025年です](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [おすすめデータ統合プラットフォーム7選：比較レビュー](https://www.nocobase.com/ja/blog/data-integration-platforms)
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
