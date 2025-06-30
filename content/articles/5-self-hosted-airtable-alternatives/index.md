@@ -17,6 +17,12 @@ For a 10-person team aiming to maintain the same experience as the old Pro plan,
 
 This doesn’t include “hidden costs” from growing user counts, feature expansions, or upgrade plans.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is an open-source no-code platform for building data apps, internal tools, and workflows—fully self-hosted, plugin-based, and developer-friendly.  →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 Many small-to-medium teams realize they only use basic features like tables, linked fields, and simple permissions. Advanced modules (e.g., dashboards, automation, embedded views) are either unused or restricted by pricing tiers. Tech companies, SaaS startups, and system integrators also prefer to control data permissions, deployment, and cost structures over relying on a closed SaaS tool.
 
 **This has made self-hosted Airtable alternatives a trend.** They offer Airtable’s core collaborative experience plus:
