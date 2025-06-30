@@ -1,14 +1,14 @@
 {
   "id": 590,
-  "title": "NocoBase v1.8.0-beta.11",
-  "title_cn": "NocoBase v1.8.0-beta.11",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.0-beta.11: Support `multipart/form-data` request",
+  "title_cn": "NocoBase v1.8.0-beta.11：支持 `multipart/form-data` 类型的请求",
+  "title_ja": "NocoBase v1.8.0-beta.11：multipart/form-data`形式のリクエストをサポート",
   "description": "Release Note of v1.8.0-beta.11",
   "description_cn": "v1.8.0-beta.11 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.0-beta.11 のリリースノート",
   "slug": "v1.8.0-beta.11",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-06-27T02:42:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:43:36.737Z",
+      "updatedAt": "2025-01-22T06:43:36.737Z",
+      "id": 114,
+      "title": "Beta",
+      "title_cn": null,
+      "sort": 113,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-06-30T04:12:14.202Z",
+        "updatedAt": "2025-06-30T04:12:14.202Z",
+        "articles_id": 590,
+        "tags_id": 114
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-06-30T04:08:37.732Z",
+    "updatedAt": "2025-06-30T04:08:37.732Z",
+    "id": 1521,
+    "title": "next",
+    "filename": "next-ngikob.png",
+    "extname": ".png",
+    "size": 114211,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-ngikob.png",
+    "preview": "https://static-docs.nocobase.com/next-ngikob.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-27T02:42:31.943Z"
+  "updatedAt": "2025-06-30T04:12:14.194Z"
 }
