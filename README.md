@@ -1,7 +1,7 @@
 # Development
 
 ```bash
-cp .env.example .env # We have provided an API token for debugging, and it can be found in our `.env.example` file.
+cp .env.example .env
 yarn install
 yarn dev
 ```
