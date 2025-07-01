@@ -25,3 +25,6 @@ pnpm-debug.log*
 yarn.lock
 tmp/
 .vscode
+
+# Yarn files
+.yarn/
