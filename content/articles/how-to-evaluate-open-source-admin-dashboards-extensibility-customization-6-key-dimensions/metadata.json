@@ -8,7 +8,7 @@
   "description_ja": "本稿では、オープンソース管理ダッシュボードの拡張性とカスタマイズ能力を評価する 6 つの重要な軸を紹介します。インターフェース能力、データモデリング、プラグインアーキテクチャ、自動化とワークフロー、アクセス制御、UI カスタマイズの各点を通じて、技術チームの選定を支援します。",
   "slug": "how-to-evaluate-open-source-admin-dashboards-extensibility-customization-6-key-dimensions",
   "publishedAt": "2025-07-01T08:08:42.803Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -430,18 +430,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-07-01T13:11:36.246Z",
-    "updatedAt": "2025-07-01T13:11:36.246Z",
-    "id": 1529,
-    "title": "Frame 78 (1)",
-    "filename": "Frame 78 (1)-00c1kd.png",
+    "createdAt": "2025-07-02T01:04:57.387Z",
+    "updatedAt": "2025-07-02T01:04:57.387Z",
+    "id": 1530,
+    "title": "Frame 78",
+    "filename": "Frame 78-tw0i18.png",
     "extname": ".png",
-    "size": 805184,
+    "size": 792718,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Frame%2078%20(1)-00c1kd.png",
-    "preview": "https://static-docs.nocobase.com/Frame%2078%20(1)-00c1kd.png",
+    "url": "https://static-docs.nocobase.com/Frame%2078-tw0i18.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2078-tw0i18.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -452,5 +452,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-02T00:53:45.993Z"
+  "updatedAt": "2025-07-02T01:05:05.248Z"
 }
