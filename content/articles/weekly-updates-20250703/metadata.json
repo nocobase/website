@@ -1,11 +1,11 @@
 {
   "id": 595,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
+  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
+  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "description": "This week’s updates include: adding filter support to multi-app management, optimizing mobile styles, and more.",
+  "description_cn": "本周更新包括：多应用管理支持筛选操作，优化移动端样式等。",
+  "description_ja": "今週の更新では、マルチアプリ管理へのフィルター機能追加、モバイル表示スタイルの最適化などが含まれます。",
   "slug": "weekly-updates-20250703",
   "publishedAt": "2025-07-03T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-02T06:50:25.049Z"
+  "updatedAt": "2025-07-02T10:43:52.035Z"
 }
