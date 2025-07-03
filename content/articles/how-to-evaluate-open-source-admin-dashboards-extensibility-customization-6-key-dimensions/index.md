@@ -26,7 +26,7 @@ To evaluate the extensibility and customization capabilities of an open-source b
 
 ## Detailed Explanation of the Six Dimensions
 
-1. **Interface Capabilities**
+### 1. **Interface Capabilities**
 
 APIs serve as the bridge between the system and the external world. A highly scalable backend project should support standard API interfaces and allow developers to register custom interfaces or middleware, enabling flexible integration with various third-party systems or in-house services. The lack of interface extension capabilities often makes system integration difficult and restricts business development.
 
@@ -34,7 +34,7 @@ APIs serve as the bridge between the system and the external world. A highly sca
 
 ![Interface Capabilities](https://static-docs.nocobase.com/2-2fxx50.png)
 
-2. Data Modeling Capabilities
+### 2. Data Modeling Capabilities
 
 Business requirements are constantly evolving, and static, hard-coded data structures struggle to support long-term growth. An ideal backend system should allow flexible definition of field types, table relationships, and complex data structures through a graphical interface or configuration files, even supporting multi-level nested relationships. The more abstract and configurable the data model, the stronger the system’s ability to adapt to business changes.
 
@@ -42,7 +42,7 @@ Business requirements are constantly evolving, and static, hard-coded data struc
 
 ![Data Modeling Capabilities](https://static-docs.nocobase.com/3-xob1cc.png)
 
-3. Plugin Architecture
+### 3. Plugin Architecture
 
 Modular design allows the system to load, replace, or upgrade functions on demand, avoiding maintenance challenges caused by code coupling. The plugin mechanism should include clear lifecycle management, dependency management, and event hooks to facilitate rapid extension or customization of business functions by developers. Projects without plugin support typically have extremely high extension costs.
 
@@ -50,7 +50,7 @@ Modular design allows the system to load, replace, or upgrade functions on deman
 
 ![Plugin Architecture](https://static-docs.nocobase.com/4-93fiaj.png)
 
-4. Automation and Workflow
+### 4. Automation and Workflow
 
 Business processes are complex and changeable, making manual operations costly and error-prone. A backend system with a built-in workflow engine can complete approval processes, status transitions, message notifications, and automatic triggering of external APIs through drag-and-drop configuration or minimal coding, significantly enhancing business flexibility and automation.
 
@@ -58,7 +58,7 @@ Business processes are complex and changeable, making manual operations costly a
 
 ![Automation and Workflow](https://static-docs.nocobase.com/5-sklqvb.png)
 
-5. Permission Control Capabilities
+### 5. Permission Control Capabilities
 
 The granularity of the permission system directly affects data security and the system’s support for multi-role scenarios. An ideal backend should support permission control based on users, roles, organizations, or even specific data. For example, restricting different departments to access different data or allowing certain users to view only partial fields are common requirements in real-world scenarios.
 
@@ -66,7 +66,7 @@ The granularity of the permission system directly affects data security and the 
 
 ![Permission Control Capabilities](https://static-docs.nocobase.com/6-nq4l8o.png)
 
-6. UI Customization Capabilities
+### 6. UI Customization Capabilities
 
 The UI flexibility of a backend system impacts practical usage efficiency and user experience. It should support menu configuration, field display control, custom component injection, theme style modification, etc., which are particularly important for scenarios requiring integration with existing systems or front-end pages.
 
