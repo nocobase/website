@@ -137,6 +137,28 @@ const meta = {
       type="text/css"
       id="theme-opt"
     />
+    <!-- Custom Css for megamenu width -->
+    <style>
+      /* 调整megamenu宽度，让它更窄更紧凑 */
+      @media (min-width: 1025px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 780px !important;
+        }
+      }
+
+      @media screen and (max-width: 1024px) and (min-width: 992px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 700px !important;
+        }
+      }
+
+      /* 调整megamenu每列的宽度，使3列布局更均匀 */
+      @media (min-width: 992px) {
+        #topnav .navigation-menu > li .submenu.megamenu > li {
+          width: 33.333% !important;
+        }
+      }
+    </style>
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
     <!-- Language -->
@@ -319,6 +341,40 @@ const meta = {
             </li>
             <li>
               <a href="/cn/commercial" class="sub-menu-item">定价</a>
+            </li>
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+              <ul class="submenu megamenu">
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> 解决方案</li>
+                    <li><a href="/cn/solutions/crm" title="NocoBase CRM解决方案" class="sub-menu-item">CRM</a></li>
+                    <li><a href="/cn/solutions/ticketing" title="NocoBase 工单系统解决方案" class="sub-menu-item">工单系统</a></li>
+                    <li><a href="javascript:void(0)" title="项目管理解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">Project management <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
+                    <li><a href="javascript:void(0)" title="人力资源管理解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">HRM <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
+                    <li><a href="javascript:void(0)" title="内容管理系统解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">CMS <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-chart-growth-alt fs-6 align-middle"></i> 行业方案</li>
+                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">教育行业</a></li>
+                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">制造行业</a></li>
+                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">零售行业</a></li>
+                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">服务行业</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-play fs-6 align-middle"></i> 学习资源</li>
+                    <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">在线Demo <span class="badge text-bg-success ms-2">免费试用</span></a></li>
+                    <li><a href="/cn/tutorials" class="sub-menu-item">系列教程</a></li>
+                    <li><a href="/cn/contact" class="sub-menu-item">联系我们</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="has-submenu parent-menu-item">
               <a href="javascript:void(0)" class="sub-menu-item">插件</a><span class="menu-arrow"></span>

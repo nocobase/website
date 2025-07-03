@@ -573,7 +573,7 @@ import Layout from "../../layouts/Layout.astro";
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <div id="steps-guide">
+                    <div class="steps-guide">
                         <div class="section-title">
                             <h3 class="title mb-4">CRMを構築するための3ステップ</h3>
                         </div>
@@ -582,9 +582,9 @@ import Layout from "../../layouts/Layout.astro";
                                 <div
                                         class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center"
                                 >
-                                    <div class="card-body steps-title guide1" id="guide1">
+                                    <div class="card-body steps-title crm-guide1" id="crm-guide1">
                                         <h6 class="text-dark">
-                                            <span class="h2 fw-bold step">01. </span>コレクションとフィールド
+                                            <span class="h5 fw-bold step">01. </span>コレクションとフィールド
                                         </h6>
                                     </div>
                                 </div>
@@ -594,9 +594,9 @@ import Layout from "../../layouts/Layout.astro";
                                 <div
                                         class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center"
                                 >
-                                    <div class="card-body steps-title guide2" id="guide2">
+                                    <div class="card-body steps-title crm-guide2" id="crm-guide2">
                                         <h6 class="text-dark">
-                                            <span class="h2 fw-bold step">02. </span>メニューとページ
+                                            <span class="h5 fw-bold step">02. </span>メニューとページ
                                         </h6>
                                     </div>
                                 </div>
@@ -606,9 +606,9 @@ import Layout from "../../layouts/Layout.astro";
                                 <div
                                         class="card features feature-clean work-process bg-transparent d-none-arrow border-0 text-center"
                                 >
-                                    <div class="card-body steps-title guide3" id="guide3">
+                                    <div class="card-body steps-title crm-guide3" id="crm-guide3">
                                         <h6 class="text-dark">
-                                            <span class="h2 fw-bold step">03. </span>ブロックとアクション
+                                            <span class="h5 fw-bold step">03. </span>ブロックとアクション
                                         </h6>
                                     </div>
                                 </div>
@@ -616,7 +616,7 @@ import Layout from "../../layouts/Layout.astro";
                         </div>
                     </div>
 
-                    <div class="" id="demo-wrap">
+                    <div class="demo-wrap">
                         <img
                             src="https://static-docs.nocobase.com/1-home-steps.png"
                             alt="NocoBase DEMO"
@@ -624,15 +624,16 @@ import Layout from "../../layouts/Layout.astro";
                             style="z-index: 0;"
                         />
 
-                        <div id="steps-wrap">
-                            <div id="step25" class="demo_step">
+                        <div class="steps-wrap">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/1-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/1-home-steps.png"
+                                        src=""
                                         alt="NocoBase no-code DEMO"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button25"
+                                        id="crm-button25"
                                         aria-label="さあ、NocoBaseを始めましょう！"
                                         data-balloon-length="medium"
                                         data-balloon-pos="down"
@@ -686,14 +687,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step24" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/21-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/21-home-steps.png"
+                                        src=""
                                         alt="NocoBase UI showcasing dynamic order management with automated calculations and industry-specific data visualization."
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button24"
+                                        id="crm-button24"
                                         aria-label="では、UIエディターモードを終了しましょう"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -747,14 +749,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step23" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/20-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/20-home-steps.png"
+                                        src=""
                                         alt="NocoBase platform showcasing dynamic configuration of order entries with customizable columns in an interactive dashboard layout."
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button23"
+                                        id="crm-button23"
                                         aria-label="各ブロックや要素まで構成を設定できます"
                                         data-balloon-length="medium"
                                         data-balloon-pos="right"
@@ -808,14 +811,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step22" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/19-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/19-home-steps.png"
+                                        src=""
                                         alt="NocoBase new order interface with dynamic pricing and customer selection."
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button22"
+                                        id="crm-button22"
                                         aria-label="これらのブロックをドラッグしてレイアウトを調整します"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -869,14 +873,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step21" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/18-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/18-home-steps.png"
+                                        src=""
                                         alt="Screenshot of NocoBase's order creation interface showcasing data entry fields, configuration options, and a bar chart visualization."
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button21"
+                                        id="crm-button21"
                                         aria-label="ページ内に好きなだけブロックを追加できます"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -930,14 +935,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step20" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/17-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/17-home-steps.png"
+                                        src=""
                                         alt="NocoBase interface showcasing a detailed customer management module with industry categorization and contact editing features."
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button20"
+                                        id="crm-button20"
                                         aria-label="続行"
                                         data-balloon-length="medium"
                                         data-balloon-pos="down"
@@ -991,14 +997,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step19" class="demo_step">
+                            <div class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/16-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/16-home-steps.png"
+                                        src=""
                                         alt="NocoBaseユーザーインターフェースが、ブロックの追加とカスタマイズを示す動的な顧客管理システムでのドロップダウンメニューを表示しています。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button19"
+                                        id="crm-button19"
                                         aria-label="次のタブに移動して関連データのブロックを追加し、この顧客の注文を簡単に表示できるようにします"
                                         data-balloon-length="medium"
                                         data-balloon-pos="right"
@@ -1054,12 +1061,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step18" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/15-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/15-home-steps.png"
+                                        src=""
                                         alt="NocoBaseの詳細な顧客プロフィールインターフェースが、業界特有の情報とカスタマイズ可能なフィールドを示しています。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button18"
+                                        id="crm-button18"
                                         aria-label="組み合わせフィールドをドラッグしてレイアウトを調整します"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1115,12 +1123,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step17" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/14-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/14-home-steps.png"
+                                        src=""
                                         alt="顧客管理を特徴とし、機能強化のためのブロックの追加オプションを示すNocoBase UI。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button17"
+                                        id="crm-button17"
                                         aria-label="各タブに豊富なブロックを追加できます。詳細ブロックを追加しましょう"
                                         data-balloon-length="medium"
                                         data-balloon-pos="down"
@@ -1176,12 +1185,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step16" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/13-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/13-home-steps.png"
+                                        src=""
                                         alt="詳細パネルとデータブロックオプションを備えた顧客管理インターフェースを示すNocoBaseプラットフォーム。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button16"
+                                        id="crm-button16"
                                         aria-label="いくつかのタブを追加できます"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1237,12 +1247,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step15" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/12-3-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/12-3-home-steps.png"
+                                        src=""
                                         alt="NocoBase顧客管理画面が詳細ビューオプションと多様な業界へのアタッチメント機能を示しています。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button15"
+                                        id="crm-button15"
                                         aria-label="'表示'をクリックして、各レコードの詳細ページを設定します"
                                         data-balloon-length="medium"
                                         data-balloon-pos="right"
@@ -1298,12 +1309,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step14" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/12-2-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/12-2-home-steps.png"
+                                        src=""
                                         alt="業界の詳細と従業員数を示すカスタム可能な顧客管理画面。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button14"
+                                        id="crm-button14"
                                         aria-label="どの操作を有効にするかも決定できます"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1359,12 +1371,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step13" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/12-1-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/12-1-home-steps.png"
+                                        src=""
                                         alt="編集可能なフィールドと会社情報を示すNocoBaseの設定可能な顧客詳細パネル。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button13"
+                                        id="crm-button13"
                                         aria-label="表示するフィールドを決定できます"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1420,12 +1433,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step9" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/9-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/9-home-steps.png"
+                                        src=""
                                         alt="NocoBaseのカスタマイズ可能なメニューインターフェースで、顧客データの管理を効率化。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button9"
+                                        id="crm-button9"
                                         aria-label="無制限のサブメニューを追加することも可能です"
                                         data-balloon-length="medium"
                                         data-balloon-pos="right"
@@ -1481,12 +1495,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step8" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/8-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/8-home-steps.png"
+                                        src=""
                                         alt="NocoBaseのカスタマイズ可能なメニューは、グループ、ページ、リンクを追加できます。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button8"
+                                        id="crm-button8"
                                         aria-label="今、設定ボタンがインターフェースに表示されています。いくつかのメニューを追加しましょう"
                                         data-balloon-length="medium"
                                         data-balloon-pos="right"
@@ -1542,12 +1557,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step7" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/7-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/7-home-steps.png"
+                                        src=""
                                         alt="NocoBaseプラットフォームのカスタマイズ準備ができた空のユーザーインターフェース。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button7"
+                                        id="crm-button7"
                                         aria-label="空のキャンバスに戻り、UIエディターモードに入りましょう"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1608,12 +1624,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step6" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/6-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/6-home-steps.png"
+                                        src=""
                                         alt="NocoBaseコレクションマネージャーで会社データのフィールドを設定。"
                                 />
                                 <div
                                         class="button button6 demo_tooltip"
-                                        id="button6"
+                                        id="crm-button6"
                                         aria-label="完了、コレクションマネージャーページを終了"
                                         data-balloon-length="medium"
                                         data-balloon-pos="down"
@@ -1669,12 +1686,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step5" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/5-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/5-home-steps.png"
+                                        src=""
                                         alt="会社データ管理のためのシステムフィールド設定を表示しているNocoBaseインターフェース。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button5"
+                                        id="crm-button5"
                                         aria-label="必要に応じて数十種類のフィールドタイプから選択"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1730,12 +1748,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step4" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/4-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/4-home-steps.png"
+                                        src=""
                                         alt="NocoBaseコレクションマネージャーインターフェースは、ビジネスデータコレクションのための設定可能なフィールドを表示。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button4"
+                                        id="crm-button4"
                                         aria-label="次に、コレクションにいくつかのフィールドを追加します"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1791,12 +1810,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step3" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/3-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/3-home-steps.png"
+                                        src=""
                                         alt="データベースコレクションの作成と管理オプションがあるNocoBaseコレクションマネージャーインターフェース。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button3"
+                                        id="crm-button3"
                                         aria-label="企業と注文のコレクションを作成しましょう"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1852,12 +1872,13 @@ import Layout from "../../layouts/Layout.astro";
 
                             <div id="step2" class="demo_step">
                                 <img
-                                        src="https://static-docs.nocobase.com/2-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/2-home-steps.png"
+                                        src=""
                                         alt="迅速な管理と構成のために、役割、権限、コレクション、システム設定、ワークフロー、プラグイン設定へのクイックアクセスを提供するNocoBase管理パネル。"
                                 />
                                 <div
                                         class="button demo_tooltip"
-                                        id="button2"
+                                        id="crm-button2"
                                         aria-label="コレクションマネージャー画面に入る"
                                         data-balloon-length="medium"
                                         data-balloon-pos="left"
@@ -1916,14 +1937,15 @@ import Layout from "../../layouts/Layout.astro";
                                 </div>
                             </div>
 
-                            <div id="step1" class="demo_step demo_step_start">
+                            <div class="demo_step demo_step_start">
                                 <img
-                                        src="https://static-docs.nocobase.com/1-home-steps.png"
+                                        data-src="https://static-docs.nocobase.com/1-home-steps.png"
+                                        src=""
                                         alt="NocoBaseインターフェースに、企業の名前、ウェブサイト、業界、従業員、添付ファイルの列を持つ並べ替え可能なテーブルが表示され、コードなしプラットフォームでのデータカスタマイズオプションが強調されています。"
                                 />
                                 <div
                                         class="button button1 demo_tooltip"
-                                        id="button1"
+                                        id="crm-button1"
                                         aria-label="クリックで、3ステップでCRMを作成"
                                         data-balloon-length="medium"
                                         data-balloon-pos="up"

@@ -1,0 +1,264 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "项目管理解决方案 - NocoBase解决方案（开发中）";
+const description = "基于NocoBase构建全面的项目管理系统，提供任务管理、团队协作、进度跟踪等功能。目前正在开发中。";
+const keywords = "项目管理, 任务管理, 团队协作, NocoBase, 低代码";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title="项目管理解决方案" description={description} />
+  
+  <!-- Development Notice -->
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <div class="me-3">
+              <i class="uil uil-construction text-warning h4 mb-0"></i>
+            </div>
+            <div>
+              <h6 class="alert-heading mb-1">正在开发中</h6>
+              <p class="mb-0">此解决方案正在积极开发中，预计将在未来版本中发布。以下功能特性为规划内容，实际功能以最终发布为准。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  
+  <!-- Start Features -->
+  <section class="section pt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">全面的项目管理平台</h4>
+            <p class="text-muted para-desc mx-auto mb-0">基于NocoBase低代码平台，构建功能完善的项目管理系统，提升团队协作效率和项目交付质量。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-clipboard-notes d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">任务管理</h5>
+              <p class="text-muted">创建、分配和跟踪任务，设置优先级和截止日期，确保项目按时完成。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-users-alt d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">团队协作</h5>
+              <p class="text-muted">团队成员管理、角色权限分配、实时沟通协作，提升团队工作效率。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-chart-line d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">进度跟踪</h5>
+              <p class="text-muted">甘特图、看板视图，可视化项目进度，及时发现风险和瓶颈。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-calendar-alt d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">时间管理</h5>
+              <p class="text-muted">时间记录、工时统计、日程安排，优化资源配置和时间利用。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-folder d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">文档管理</h5>
+              <p class="text-muted">项目文档存储、版本控制、知识库建设，沉淀项目经验。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+          <div class="card features feature-clean shadow border-0 p-4 rounded">
+            <div class="icons text-primary text-center mx-auto">
+              <i class="uil uil-chart-pie d-block rounded h3 mb-0"></i>
+            </div>
+            <div class="content mt-3">
+              <h5 class="title">项目报表</h5>
+              <p class="text-muted">项目绩效分析、资源利用报告、成本控制，支持数据决策。</p>
+              <span class="badge text-bg-light">规划中</span>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Features -->
+
+  <!-- Start Methodology -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">支持多种项目管理方法</h4>
+            <p class="text-muted para-desc mx-auto mb-0">灵活适配不同团队的工作方式和项目管理需求。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-12 mt-4 pt-2">
+          <div class="card shadow border-0 p-4 rounded text-center">
+            <div class="icons text-primary mx-auto mb-3">
+              <i class="uil uil-layers-alt h2 mb-0"></i>
+            </div>
+            <h5 class="title">敏捷开发</h5>
+            <p class="text-muted mb-0">支持Scrum、Sprint管理，迭代开发，快速响应变化。</p>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-12 mt-4 pt-2">
+          <div class="card shadow border-0 p-4 rounded text-center">
+            <div class="icons text-primary mx-auto mb-3">
+              <i class="uil uil-flow h2 mb-0"></i>
+            </div>
+            <h5 class="title">瀑布模型</h5>
+            <p class="text-muted mb-0">传统项目管理方式，阶段性交付，严格流程控制。</p>
+          </div>
+        </div><!--end col-->
+        
+        <div class="col-lg-4 col-12 mt-4 pt-2">
+          <div class="card shadow border-0 p-4 rounded text-center">
+            <div class="icons text-primary mx-auto mb-3">
+              <i class="uil uil-postcard h2 mb-0"></i>
+            </div>
+            <h5 class="title">看板方法</h5>
+            <p class="text-muted mb-0">可视化工作流，持续改进，优化团队效率。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Methodology -->
+
+  <!-- Start Roadmap -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">开发路线图</h4>
+            <p class="text-muted para-desc mx-auto mb-0">我们正在积极开发项目管理解决方案，以下是计划的开发阶段。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="timeline-page position-relative">
+            <div class="timeline-item mt-4">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow rounded">
+                    <div class="card-body p-4">
+                      <h5 class="title">第一阶段</h5>
+                      <p class="text-muted mb-0">基础任务管理、团队协作功能</p>
+                      <span class="badge text-bg-warning">开发中</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="card border-0 shadow rounded">
+                    <div class="card-body p-4">
+                      <h5 class="title">第二阶段</h5>
+                      <p class="text-muted mb-0">进度跟踪、甘特图、看板视图</p>
+                      <span class="badge text-bg-secondary">计划中</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item mt-4">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow rounded">
+                    <div class="card-body p-4">
+                      <h5 class="title">第三阶段</h5>
+                      <p class="text-muted mb-0">时间管理、文档管理、报表分析</p>
+                      <span class="badge text-bg-secondary">计划中</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="card border-0 shadow rounded">
+                    <div class="card-body p-4">
+                      <h5 class="title">第四阶段</h5>
+                      <p class="text-muted mb-0">高级功能、第三方集成、移动端</p>
+                      <span class="badge text-bg-secondary">计划中</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Roadmap -->
+
+  <!-- Start Contact -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">了解更多信息</h4>
+            <p class="text-muted para-desc mx-auto mb-0">如果您对项目管理解决方案感兴趣，请联系我们了解最新进展和发布计划。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <a href="/cn/contact" class="btn btn-primary">联系我们</a>
+            <a href="/cn/roadmap" class="btn btn-outline-primary ms-2">查看路线图</a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Contact -->
+</Layout> 
