@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、マルチアプリ管理へのフィルター機能追加、モバイル表示スタイルの最適化などが含まれます。",
   "slug": "weekly-updates-20250703",
   "publishedAt": "2025-07-03T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-02T10:43:52.035Z"
+  "updatedAt": "2025-07-03T00:21:56.439Z"
 }
