@@ -279,14 +279,9 @@ We believe the best tools don’t compete—they complement, offering users the 
 
 **Read more:**
 
-[NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
-
-[Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
-
-[NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
-
-[NocoBase vs Salesforce: who is your ideal CRM?](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)
-
-[NocoBase vs OutSystems: Open-Source or Enterprise Low-Code?](https://www.nocobase.com/en/blog/nocobase-vs-outsystems)
-
-[Enterprise Low-Code Development? Power Apps vs NocoBase In-Depth Comparison](https://www.nocobase.com/en/blog/nocobase-vs-powerapps)
+* [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
+* [Open Source CRUD Development Tools: NocoBase vs Refine](https://www.nocobase.com/en/blog/nocobase-vs-refine)
+* [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You?](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
+* [NocoBase vs Salesforce: who is your ideal CRM?](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)
+* [NocoBase vs OutSystems: Open-Source or Enterprise Low-Code?](https://www.nocobase.com/en/blog/nocobase-vs-outsystems)
+* [Enterprise Low-Code Development? Power Apps vs NocoBase In-Depth Comparison](https://www.nocobase.com/en/blog/nocobase-vs-powerapps)
