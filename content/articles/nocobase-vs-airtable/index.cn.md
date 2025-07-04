@@ -288,14 +288,9 @@ NocoBase 的出现，不是为了替代 Airtable，而是为更多正在探索�
 
 阅读更多对比文章：
 
-[NocoBase 与 NocoDB：开源无代码（零代码）工具深度对比 ](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
-
-[开源 CRUD 开发工具：NocoBase 与 Refine 对比 ](https://www.nocobase.com/cn/blog/nocobase-vs-refine)
-
-[NocoBase 与 Appsmith：哪个开源低代码平台更适合你？](https://www.nocobase.com/cn/blog/nocobase-vs-appsmith)
-
-[NocoBase vs Salesforce：谁才是你的理想 CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)
-
-[NocoBase vs OutSystems：低代码平台，开源还是闭源？ ](https://www.nocobase.com/cn/blog/nocobase-vs-outsystems)
-
-[企业级低代码开发？Power Apps vs NocoBase 深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-powerapps)
+* [NocoBase 与 NocoDB：开源无代码（零代码）工具深度对比 ](https://www.nocobase.com/cn/blog/nocobase-vs-nocodb)
+* [开源 CRUD 开发工具：NocoBase 与 Refine 对比 ](https://www.nocobase.com/cn/blog/nocobase-vs-refine)
+* [NocoBase 与 Appsmith：哪个开源低代码平台更适合你？](https://www.nocobase.com/cn/blog/nocobase-vs-appsmith)
+* [NocoBase vs Salesforce：谁才是你的理想 CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)
+* [NocoBase vs OutSystems：低代码平台，开源还是闭源？ ](https://www.nocobase.com/cn/blog/nocobase-vs-outsystems)
+* [企业级低代码开发？Power Apps vs NocoBase 深度对比](https://www.nocobase.com/cn/blog/nocobase-vs-powerapps)
