@@ -3,9 +3,9 @@
   "title": "Why Are More and More Airtable Users Exploring NocoBase?",
   "title_cn": "为什么越来越多 Airtable 用户开始尝试 NocoBase？",
   "title_ja": "なぜますます多くの Airtable ユーザーが NocoBase を探し始めているのか？",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article starts from the common operations of Airtable, demonstrates their implementation in NocoBase, and compares the differences in system-building capabilities between the two, providing a reference for users considering migration.",
+  "description_cn": "本文从 Airtable 常见操作出发，演示其在 NocoBase 中的实现方式，对比两者系统构建能力差异，为用户迁移提供参考。",
+  "description_ja": "本記事では Airtable の一般的な操作から始め、NocoBase における実装方法を紹介しながら、両者のシステム構築能力の違いを比較し、移行を検討するユーザーの参考になるようにまとめています。",
   "slug": "nocobase-vs-airtable",
   "publishedAt": "2025-07-04T02:39:15.064Z",
   "status": "drafted",
@@ -254,5 +254,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-04T03:39:10.912Z"
+  "updatedAt": "2025-07-04T05:54:30.049Z"
 }
