@@ -44,17 +44,21 @@ Airtable でコンテンツカレンダー、顧客データベース、タス�
 ### 1. グリッド
 
 ✅ 慣れ親しんだ使い方がそのまま機能 —— 新たな学習曲線はない
+
 ![NocoBase in edit mode](https://static-docs.nocobase.com/2-x65mxg.PNG)
 
 NocoBase の編集モード時
+
 ![Airtable's Grid View](https://static-docs.nocobase.com/3-e140dd.PNG)
 
 Airtable のグリッドビュー
+
 NocoBase にはおなじみのテーブル（グリッド）ビューが搭載されており、データのすばやい参照、ソート、フィルタリング、ページングが可能で、デフォルトのフィールド設定をカスタマイズできる。
 
 Airtable のようなインライン編集機能はまだ利用できないが、現在開発中だ。リリース後は Airtable と同じようにテーブル内で直接編集できるようになる予定だ。
 
 高度な機能：異なるユーザー向けに異なるビューを作成し、表示するフィールドを制御し、親子データ関係の表示に最適なサブテーブルのネストまで行える。
+
 ![Field-Level Permission Settings](https://static-docs.nocobase.com/4-8iw8mo.png)
 
 フィールドレベルのアクセス権設定
@@ -63,16 +67,19 @@ Airtable のようなインライン編集機能はまだ利用できないが�
 
 ✅ リンクレコードから完全な構造化データモデリングまで
 Airtable では、クロステーブル参照は通常リンクレコードとルックアップを使用して実現する。しかし、データモデルが成長して多対多関係や深いネスト関係が生じると、管理がすぐに難しくなる。
+
 ![To add a Linked Record field in Airtable](https://static-docs.nocobase.com/5-l0l74c.png)
 
 Airtable でリンクレコード列を追加する
 
 NocoBase は、一対多や多対多などの複雑な関係設定をネイティブサポートしている。また、設定可能なフロントエンドブロックを使用して、ネストデータ構造を視覚的に表示することもできる。
+
 ![Field relationships can be defined at the time the data field is created](https://static-docs.nocobase.com/6-b8r28b.png)
 
 データフィールド作成時にフィールド関係を定義可能
 
 さらに複雑な多段ネストビューでも、NocoBase では簡単に構築でき、スムーズに動作する。
+
 ![Account view includes multiple relationship fields](https://static-docs.nocobase.com/7-dea9rf.png)
 
 Account ビュー内に複数の関連フィールドが含まれる
@@ -81,14 +88,17 @@ Account ビュー内に複数の関連フィールドが含まれる
 
 ✅ 視覚的ワークフローのための柔軟で設定可能なボード
 Airtable では、データのさまざまなビュー間を切り替えることができ、組み込みのカンバンも含まれている。
+
 ![Airtable's Kanban](https://static-docs.nocobase.com/8-cwxpjj.png)
 
 Airtable のカンバンビュー
 
 NocoBase ではアプローチが少し異なる。フロントエンドとバックエンドの分離設計により、データソース、テーブル、フィールドを定義した後、視覚的レイアウトブロックを使用して、「未完了 / 進行中 / 完了」などの任意のフィールドでグループ化したカンバンボードを作成できる。
+
 ![Select the data table you want to display as a Kanban](https://static-docs.nocobase.com/9-f9es0h.png)
 
 カンバン表示としたいデータテーブルを選択する
+
 ![Kanban's display data can also be chosen arbitrarily](https://static-docs.nocobase.com/10-osy53e.png)
 
 カンバンに表示するデータも自由に選択可能
@@ -98,10 +108,13 @@ Airtable の固定ビュータイプとは異なり、NocoBase のカンバン�
 ### 4. フォーム
 
 ✅ 匿名送信とシームレスなワークフロー統合
+
 ![Form Configuration for Airtable](https://static-docs.nocobase.com/11-lt1res.png)
 
 Airtable のフォーム設定
+
 フォームは外部入力を収集するための Airtable の定番機能で、NocoBase も同じ機能を提供している。公開アクセスリンクでフォームを作成するか、直接 Web ページに埋め込むことができ、必要に応じて匿名送信を有効にすることもできる。
+
 ![Form Configuration for NocoBase](https://static-docs.nocobase.com/12-613ty1.png)
 
 NocoBase のフォーム設定ページ
@@ -109,6 +122,7 @@ NocoBase のフォーム設定ページ
 各フォームには、送信後のカスタムワークフローをペアリングでき、通知の送信、承認ステップの開始、レコードステータスの更新などが可能だ。
 
 NocoBase のフォームはさまざまなシナリオで簡単に統合でき ——Web サイト上、ポップアップ、モバイルアプリ、甚至はスタンドアロンページとしても使用できる。
+
 ![Embedding NocoBase Forms into Popups](https://static-docs.nocobase.com/13-mxvrlv.png)
 
 NocoBase フォームをポップアップに埋め込む
@@ -117,9 +131,11 @@ NocoBase フォームをポップアップに埋め込む
 
 ✅ 基本的なビュー共有を超えて
 Airtable の権限システムは主に誰が閲覧または編集できるかを設定することしかできず、より微細な制御が欠けている。
+
 ![Airtable’s permission system](https://static-docs.nocobase.com/14-1i55qg.png)
 
 NocoBase は、フィールドレベルのアクセス、条件ベースのルール、ビューごとの可視性を含む堅牢な権限フレームワークを提供する。
+
 ![NocoBase's permission settings](https://static-docs.nocobase.com/15-8astlh.png)
 
 NocoBase のアクセス権設定
@@ -133,13 +149,15 @@ NocoBase のアクセス権設定
 
 ✅ 基本アラートからエンドツーエンドのビジネスプロセスまで
 Airtable の Automations は主にアラート送信やレコード更新などの単純なタスクに使用されるが、高度なワークフローに必要な複雑性を欠いている。
+
 ![Airtable currently has 9 default trigger conditions](https://static-docs.nocobase.com/16-kpogla.png)
 
 Airtable は現在 9 種類のデフォルトトリガー条件を備えています
 
-NocoBase は強力なワークフローエンジンを搭載 ——7 種類のトリガーと 24 種類のアクションノードを備え、承認、ステータス遷移などの多段階・条件ベースのプロセスを構築できる。
+NocoBase は強力なワークフローエンジンを搭載 —— [7 種類のトリガー](https://docs.nocobase.com/handbook/workflow/triggers/)と[24 種類のアクションノード](https://docs.nocobase.com/handbook/workflow/nodes) を備え、承認、ステータス遷移などの多段階・条件ベースのプロセスを構築できる。
 
 契約承認、休暇申請、新入社員オンボーディングなど、現実のビジネスプロセスを作成するのに最適だ。
+
 ![NocoBase's Workflow Configuration Interface](https://static-docs.nocobase.com/17-q5yvlt.png)
 
 NocoBase のワークフローノード設定インターフェース
@@ -165,11 +183,13 @@ Airtable を本格的なシステムのように使用し始めたとき、あ�
 
 ✅ テーブルから真の構造モデリングまで
 Airtable では、データモデリングは Link と Lookup フィールドを介したテーブルのリンクに依存しており、シンプルな使用事例にはうまく機能する方法だ。
+
 ![Creating Lookup Fields in Airtable](https://static-docs.nocobase.com/18-0w1lh4.png)
 
 Airtable でルックアップフィールドを作成する
 
 NocoBase はさらに前進し、従来のデータベースと同等のモデリング機能を備えている。エンティティ関係、主キーと外部キー、多対多構造の定義をサポートしており、多段階承認、顧客 - 注文マッピング、役割ベースのデータアクセスなどの複雑なビジネスシナリオに適している。
+
 ![NocoBase's data source management,decouple data and UI](https://static-docs.nocobase.com/19-r6gsh8.png)
 
 NocoBase のデータソース管理：データと UI が分離されています
@@ -178,11 +198,13 @@ NocoBase のデータソース管理：データと UI が分離されていま�
 
 ✅ 単純なビューから真にカスタム化された体験まで
 Airtable の Interface ビューはしばしば制限が多すぎる —— ページレイアウトを自由に設計したり、インタラクティブロジックを定義したりできず、ビュー間の切り替えも制限されて感じられる。
+
 ![Airtable’s Interface view](https://static-docs.nocobase.com/20-zsgp5c.png)
 
 NocoBase では、モジュール式のフロントエンドブロックシステムを使用して、ワークスペース、タスクボード、顧客詳細ページをコンポーネントから UI を組み立てるかのように完全に柔軟に構築できる。
 
 これにより、システムを「単なるデータとテーブル」から「ワークフローを備えた本格的なビジネスアプリケーション」にアップグレードできる。
+
 ![In NocoBase you can combine different blocks in the page](https://static-docs.nocobase.com/21-3nwsu5.png)
 
 NocoBase ではページ内でさまざまなブロックを組み合わせることができます
@@ -193,6 +215,7 @@ NocoBase ではページ内でさまざまなブロックを組み合わせる�
 Airtable の機能はプラットフォームが提供するものに限定されている。
 
 NocoBase はモジュール式のプラグインアーキテクチャで構築されており、権限、ワークフロー、レイアウトなどのコア機能はすべてプラグインだ。
+
 ![NocoBase is built on a modular plugin architecture](https://static-docs.nocobase.com/22-fyio6x.png)
 
 これにより、プラグインをインストール、置換、甚至は独自に開発する自由度が得られ、NocoBase をチームに完全にカスタマイズしたプラットフォームに変えることができる。
@@ -200,8 +223,10 @@ NocoBase はモジュール式のプラグインアーキテクチャで構築�
 ### 4. データ容量制限
 
 ✅ 柔軟性が限界に達したとき
+
 ![Airtable pricing](https://static-docs.nocobase.com/23-pjhk1a.png)
 Airtable は有料プランでもレコード数と添付ファイルサイズの両方に制限を設けている。成長が早いチームにとって、これらの制限はボトルネックになるか、またはより高いサブスクリプションコストを招く可能性がある。（関連：[Airtable は高すぎますか？セルフホスト型の代替案 5 選をコストと機能で比較](https://www.nocobase.com/ja/blog/5-self-hosted-airtable-alternatives)）
+
 ![NocoBase pricing](https://static-docs.nocobase.com/24-md6kvb.png)
 
 一方、NocoBase はレコード数やユーザー数に厳格な制限がない。データの多い使用事例に対応するように設計されており、多くのチームが無料のオープンソースバージョンで十分なニーズを満たすことができる。
