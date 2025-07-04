@@ -11,7 +11,7 @@ But as your operations grow more complex—
 * A desire to turn Airtable into a full-fledged system rather than just a tool
 * Rising usage costs as your team scales
 
-—you may find that Airtable, while powerful, no longer meets all your needs.
+— you may find that Airtable, while powerful, no longer meets all your needs.
 
 That's why many Airtable users are starting to seek more capable alternatives. One name that comes up often among developers and business teams is NocoBase. As an open-source no-code development platform, NocoBase preserves the ease of visual configuration while offering deeper, system-level capabilities—advanced data modeling, granular permission control, built-in workflows, plugin architecture, and self-hosted deployment.
 
@@ -43,13 +43,17 @@ But if you're already comfortable with Airtable’s common workflows, can you sw
 | Team Collaboration  | Shared views + permissions | Built-in user system with field-level, view-level, and conditional controls                                                                    | ✅        | Supports role-based collaboration and secure data separation      |
 | Automation          | Automations + Email        | Use the workflow engine with notification steps                                                                                                | ✅        | Allows multi-condition triggers and branching workflows           |
 
-1. ### Grid
+### 1. Grid
 
 **✅ Works Just Like You’re Used To—No New Learning Curve**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDYxZjYyZThhZWYwOTc4YjhjNzJjNjE2ZWNhNjRlYzJfWFZabTBnUGhLeEZvRmY4bEFtY040TTYxYlhmUjVlZGZfVG9rZW46TGY2dmJSUmlGb3RjdXd4RTFXRmNNQW0xbm1lXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase in edit mode](https://static-docs.nocobase.com/2-x65mxg.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY2YTAwN2QzNDc1NjE4NjdjZmZlMzQ2ZWE4YTUwY2NfUmpyTzcxMmhQUlJ3Vk9GSEozQzhFdUpvRmRGdTl6bHZfVG9rZW46T2o4TmJMcW9Bb0VUY054NVE1ZWNnbXQzbnJoXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+NocoBase in edit mode
+
+![Airtable's Grid View](https://static-docs.nocobase.com/3-e140dd.PNG)
+
+Airtable's Grid View
 
 NocoBase comes with a familiar table (Grid) view, allowing you to quickly browse, sort, filter, and paginate data, with customizable default field settings.
 
@@ -57,86 +61,112 @@ Inline editing—like what Airtable offers—is not yet available, but it’s on
 
 **Advanced Features:** You can create different views for different users, control which fields are visible, and even nest sub-tables—ideal for displaying parent-child data relationships.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzYxOTg5MzIxNmI2NTRmZDY5MTE3MGYwYWIwZDVjOTBfR2pwUzdKNjdtT2VmeDd5TVdTUzMyRkFXcW1kcmJXbUVfVG9rZW46V1phWWJFbXRBbzZWNEl4cXVRQ2NMdkVObnAzXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Field-Level Permission Settings](https://static-docs.nocobase.com/4-8iw8mo.png)
 
-2. ### Table Relationships
+Field-Level Permission Settings
+
+### 2. Table Relationships
 
 **✅ From Linked Records to Fully Structured Data Modeling**
 
 In Airtable, cross-table references are typically achieved using Linked Records and Lookups. But as your data model grows—with many-to-many or deeply nested relationships—it can quickly become difficult to manage.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjFjZGYzMzM4YTgwN2NhMmRjMGUyZDI0OWQ1ZGNiOTlfbFpiNGoxbEU4V0VjZUZTOTJiRUpJVHdzRHBLbkRCT0xfVG9rZW46TUQwVGJWOEs0b3lEVFl4SzBieWM5UGJObmJkXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![To add a Linked Record field in Airtable](https://static-docs.nocobase.com/5-l0l74c.png)
+
+To add a Linked Record field in Airtable
 
 NocoBase offers native support for complex relationship configurations, including one-to-many and many-to-many. You can also visually display nested data structures using configurable frontend blocks.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU5NmJjMTk4MTU5YmZlY2JjZDViOWY2NGZhMWU5MjhfUlhJc2xRRXZYWkJ5Y2hnOFhNR1ZETHlWS3VZeVdJZWJfVG9rZW46SkFUUWJiQkUyb3hORXZ4ZkdUQWNYMmVSbm1jXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Field relationships can be defined at the time the data field is created](https://static-docs.nocobase.com/6-b8r28b.png)
+
+Field relationships can be defined at the time the data field is created
 
 Even complex, multi-level nested views are easy to build and run smoothly in NocoBase.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzgwMjlhMmI0NWNkOWJlNDQzMTljOWNhMmM2MWZjZjNfZkRpUW1UbnNsd21KZmN5NkJMc0drS3hsWG1CSUgwZldfVG9rZW46RU5mdWJDVURab3ZEdk94SmlBTGNuWDlGbndkXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Account view includes multiple relationship fields](https://static-docs.nocobase.com/7-dea9rf.png)
 
-3. ### Kanban
+Account view includes multiple relationship fields
+
+### 3. Kanban
 
 **✅ A Flexible, Configurable Board for Visual Workflows**
 
 Airtable lets you switch between different views of your data, including a built-in Kanban.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzdhYmIzZWM4MWM5M2Q2ZjhjNWJjZjA0OTQ1N2JmYWJfbllreFFuZTIxampuZkhJT2VPVjNmN1RlVzR5VEJ5VHFfVG9rZW46T1YySGJ6blJkb1c2NE14M2NuNWNkTE5BblZiXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Airtable's Kanban](https://static-docs.nocobase.com/8-cwxpjj.png)
+
+Airtable's Kanban
 
 In NocoBase, the approach is slightly different. Thanks to its decoupled frontend-backend design, once you’ve defined your data source, tables, and fields, you can use visual layout blocks to create a Kanban board grouped by any field—such as organizing tasks by status: “To Do / In Progress / Done.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTFlZmRkOGI4NjRlNWNhYTE2Zjg2Y2ZiYmU3YzJmYWRfQUNOdzJna2M0c1BYSVVZWTNYU2xtVXpxczlSUThOYXNfVG9rZW46Q0VHU2JVdkZCb21VSWZ4UzRQNGNIbTNxbnNkXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Select the data table you want to display as a Kanban](https://static-docs.nocobase.com/9-f9es0h.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjE5MWUzNTJhNjU1NmI0ZWYzNjdiNGRhYWUzYjAyNGFfSEdidllNdGM5SmpJSkJWdjJNdFo4dUpaRzJ3ZnY1cENfVG9rZW46TzZ0NGJlOFhFb1dJWnl4bGVnYmNlRkM2bkJlXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+Select the data table you want to display as a Kanban
+
+![Kanban's display data can also be chosen arbitrarily](https://static-docs.nocobase.com/10-osy53e.png)
+
+Kanban's display data can also be chosen arbitrarily
 
 Unlike Airtable’s fixed view types, NocoBase’s Kanban boards are more dynamic. You can link them to permission settings and even use them to trigger workflows—for example, dragging a record from “Follow-up” to “Closed” can automatically start a predefined process.
 
-4. ### Form
+### 4. Form
 
 ✅ **Anonymous Submission and Seamless Workflow Integration**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTViNWU0YmI0NTc5MjA5NzExOWUxZjllMzNkZGJkNjFfQVBBQjhLMFZUMDJrZHRTaVBYajZZVWRIdzBRM0Jla0lfVG9rZW46TGRpemIyWmtxb3NsZ0N4ZnhoU2NTOW1QbjVYXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Form Configuration for Airtable](https://static-docs.nocobase.com/11-lt1res.png)
+
+Form Configuration for Airtable
 
 Forms are a go-to feature in Airtable for collecting external input, and NocoBase offers the same capability. You can create forms with public access links or embed them directly into a webpage—and you can enable anonymous submissions when needed.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWMzOGEzMzhmZjBlOTA2ZTg4N2ZkZGFkYzA5NzU5MjJfVHdnVDlZTTR6ZldzdGFYMTBHdmpWTlVWWWVSbGZBSndfVG9rZW46WjIzTmIwRWI1b0NyQUJ4R21kcWN5WDVtbk9jXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Form Configuration for NocoBase](https://static-docs.nocobase.com/12-613ty1.png)
+
+Form Configuration for NocoBase
 
 Each form can be paired with custom workflows after submission, such as sending notifications, launching approval steps, or updating record statuses.
 
 NocoBase forms also integrate easily across various scenarios—on your website, as pop-ups, in mobile apps, or even as standalone pages.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTY1ODc3MWIwNWEyNTFlODExNzU3ZTNjMTNmYTY0M2NfY2xlbHNrQjA4NW1MM21KVFhWb3FFTjdPRnF3Tm9VcGhfVG9rZW46UEVGMWJpY1hxb2sxODZ4UVRBOGNUV1drbkFiXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Embedding NocoBase Forms into Popups](https://static-docs.nocobase.com/13-mxvrlv.png)
 
-5. ### Team Collaboration & Permissions
+Embedding NocoBase Forms into Popups
+
+### 5. Team Collaboration & Permissions
 
 ✅ **Go Beyond Basic View Sharing**
 
 While Airtable’s permission system mainly allows you to set who can view or edit, it lacks finer control.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZhNWM4YzFmMmI3ZTcyY2MwMWM5ODA4OWU0NWFhZjVfUEtvbjAzeEtwWFdPRFZhcmRKbE9rekxrQ3dSNkM1ZVZfVG9rZW46VjNWS2J5dklIbzVMUkZ4ZUxabmNaMG9jbldkXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Airtable’s permission system](https://static-docs.nocobase.com/14-1i55qg.png)
 
 NocoBase provides a robust permission framework that includes field-level access, condition-based rules, and per-view visibility.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTgwNjc4YWI3YjRlMTNhZmE0NzE4MjAxYThiNzVhYzdfSHBXRmIzV3VQWFV6MHZBbHRkTjdNd0JsQVRUMlJsSlJfVG9rZW46WDZDVGJhQXQ4b1A3Tk94Q3VwZGNjVndXbjZjXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase's permission settings](https://static-docs.nocobase.com/15-8astlh.png)
+
+NocoBase's permission settings
 
 For example, you can set rules like:
 
 * Sales team members can only see the customers they’ve personally added
 * Finance can update payment statuses without access to other customer details
 
-6. ### Automation & Workflow Management
+### 6. Automation & Workflow Management
 
 **✅ From Basic Alerts to End-to-End Business Processes**
 
 Airtable’s Automations are mainly used for simple tasks like sending alerts or updating records, but they lack the complexity needed for advanced workflows.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2NjNjQ4MTI0MGNhNTllNDJlNDNmZWQ0ODQ4Nzk2NzlfVldDNE5HMzRIU1laWTBxZlpYYzJGU1hkOTdHckpIWW9fVG9rZW46Q2l0bWJxd3V2b0lVY2F4ZkVoaWMyalp5bkhoXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Airtable currently has 9 default trigger conditions](https://static-docs.nocobase.com/16-kpogla.png)
+
+Airtable currently has 9 default trigger conditions
 
 NocoBase features a powerful workflow engine—with [7 types of triggers](https://docs.nocobase.com/handbook/workflow/triggers) and [24 types of action nodes](https://docs.nocobase.com/handbook/workflow/nodes)—enabling you to build multi-step, condition-based processes including approvals, status transitions, and more.
 
 It’s perfect for creating sophisticated flows such as contract approvals, leave requests, employee onboarding, and other real-world business processes.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGM0ODRkZTU0M2U3ZjQ3ODFkOWE2NDA0MTA4ZWUzY2JfZVg4SnJXRDZPU2FoS2J3ZWVjZWZtYU9tdlU5WjdoRG5fVG9rZW46VThDWmJ3MXA1b2NweHF4SjkxdmM3bFZVbjJiXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase's Workflow Configuration Interface](https://static-docs.nocobase.com/17-q5yvlt.png)
+
+NocoBase's Workflow Configuration Interface
 
 ## From Managing Data to Building Systems: A Deeper Capability Comparison
 
@@ -155,57 +185,63 @@ Here’s how Airtable and NocoBase compare when it comes to system-level capabil
 | Data Limits            | Record and attachment limits apply                                             | Database-driven; no practical data limit                                                          |
 | Deployment & Ownership | Cloud-only, no self-hosting; users can’t control where data is stored         | Fully self-hostable; complete ownership of both code and data                                     |
 
-1. ### Data Modeling
+### 1. Data Modeling
 
 ✅ **From Tables to True Structural Modeling**
 
 In Airtable, data modeling relies on linking tables through Link and Lookup fields—a method that works well for straightforward use cases.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGEyZTk4ZDMxNzg0OWY0ZTQ0YmRmMTA1M2Y3YzAyZDJfck1FVTh2YVJNWnFxMVZWZXBod29CZHhtV1NKeFN5ZEZfVG9rZW46VXd6amJ5U2czb0dvOXd4Uk0zRGNlTlZIbno0XzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Creating Lookup Fields in Airtable](https://static-docs.nocobase.com/18-0w1lh4.png)
+
+Creating Lookup Fields in Airtable
 
 NocoBase takes it further with modeling capabilities on par with traditional databases. It supports defining entity relationships, primary and foreign keys, and many-to-many structures—making it well-suited for complex business scenarios like multi-level approvals, customer-order mappings, and role-based data access.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTE1N2FkNTVhNjMyZDQzYTNhYzAwZGU2M2I2Y2Q4NTVfMkN5eVlndE9heE4xbzdHU2s4NEpyNXNxY1Bud1U5cjRfVG9rZW46UG9tNmJsMkhxb1R0SFR4Z3g5Y2M4NWU1bkJkXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase's data source management,decouple data and UI](https://static-docs.nocobase.com/19-r6gsh8.png)
 
-2. ### Interface Building
+NocoBase's data source management,decouple data and UI
+
+### 2. Interface Building
 
 **✅ From Simple Views to a Truly Custom Experience**
 
 Airtable’s Interface view is often too limited—you can’t freely design page layouts or define interactive logic, and switching between views can feel restrictive.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDJiYzhhMjAyMDlhZDEzN2JmN2RhZDIzMjA0MmI5ZTJfOWNjdGYzenJHb25lVm9FUzQ3YTNrRUlCbWxrZVpDT0NfVG9rZW46WU1FSmJTOGxUb0J4RUJ4MGdsZGNlbWJ5bmZmXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Airtable’s Interface view](https://static-docs.nocobase.com/20-zsgp5c.png)
 
 With NocoBase, you get a modular frontend block system that lets you build workspaces, task boards, and customer detail pages with full flexibility—almost like assembling your own UI from components.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGRiNTM5ZjNmMTExMzM5ODljM2IwNzllMDMzMjAxNmRfeVRxSE80UFBvZkRIeTl6eUZJbXM2R3F1akZ6d001dVZfVG9rZW46T0NHamJ5V3F3b2lkMFh4SXJKdWNNbnFublhnXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![In NocoBase you can combine different blocks in the page](https://static-docs.nocobase.com/21-3nwsu5.png)
+
+In NocoBase you can combine different blocks in the page
 
 It upgrades your system from “just data and tables” to a real “business application with workflows.”
 
-3. ### Plugin Architecture
+### 3. Plugin Architecture
 
-✅** Go Beyond Built-in Tools—Build Your Own System**
+✅ **Go Beyond Built-in Tools—Build Your Own System**
 
 Airtable’s functionality is bound by what the platform provides.
 
 NocoBase is built on a modular plugin architecture—core features like permissions, workflows, and layouts are all plugins.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGY0ZGE3Yzg5NjRkMmMxMDdjN2ZlODRmYTlhYTY4OGNfSkNJVkM4RXgxM0JkaVZ3U3hjanNCVnBCVUdQZUUyYnJfVG9rZW46UEpaZGJna25Xbzh1dkN4RGd6VmNVYkZZbnloXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase is built on a modular plugin architecture](https://static-docs.nocobase.com/22-fyio6x.png)
 
 This gives you the freedom to install, replace, or even develop your own plugins, turning NocoBase into a platform customized entirely for your team.
 
-4. ### Data Capacity Limits
+### 4. Data Capacity Limits
 
 **✅ When Flexibility Meets the Wall**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGJkZDI1MTU3OWI4YWMyNjY0YTQzYjUwZjczZTgxOGVfSmllS0ZHN0I5VUdXSWtSVEo0TW9jMG1TdVBWeThnc0JfVG9rZW46U2FmOGJOQXVwb08wTW54S1RvdmMwbWN5bldnXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![Airtable pricing](https://static-docs.nocobase.com/23-pjhk1a.png)
 
 Airtable imposes limits on both record count and attachment size, even in its paid plans. For fast-growing teams, these restrictions can become a bottleneck—or result in higher subscription costs. (Related: *Is Airtable Too Expensive? 5 Self-Hosted Alternatives Compared by Cost & Features*)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjI0OTBiMzA3ZDFkY2Q5MzU5NzY4Y2RhY2IzYzZhN2VfU09PVW04ZG8ySlllUkZaT1h6emVjWVNmaGRFckc1N01fVG9rZW46UEp6VGJzZHVib2QyYXN4bGVSa2NxdE5SbkRoXzE3NTE1OTY4MzE6MTc1MTYwMDQzMV9WNA)
+![NocoBase pricing](https://static-docs.nocobase.com/24-md6kvb.png)
 
 NocoBase, on the other hand, has no hard limits on records or users. It’s designed to handle data-heavy use cases, and most teams find the free, open-source version fully meets their needs.
 
-5. ### Deployment & Data Ownership
+### 5. Deployment & Data Ownership
 
 **✅ From Platform Dependency to Full Autonomy**
 
