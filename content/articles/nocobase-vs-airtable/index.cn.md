@@ -47,9 +47,13 @@
 
 **✅ 熟悉的工作方式，无需重新学习**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWYxMDE4ZGVmZmJhNTBiNmJiZjBiNTM0MTY3ODY0ZmZfUnBpRlBHSmxiOW8yNmVNUUl1SmREdUFORnY1aVNRNFdfVG9rZW46QlZkQWJqaFhJb2Z2T0N4Y2xQemNqclpxbm5nXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase in edit mode](https://static-docs.nocobase.com/2-x65mxg.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWM3NTNmNDBlZmVkYjM2ODU4YzY5MGM0ZDBiMjNlMjRfY3Z3aDlJUVVjZ3drM1RONXVGOUNvcER4MlRFcXRQWkhfVG9rZW46WVFhTmJEWmg5bzRlYVB4dDBkeGNzc1IybmduXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+NocoBase 在编辑模式下
+
+![Airtable's Grid View](https://static-docs.nocobase.com/3-e140dd.PNG)
+
+Airtable 的 Grid view
 
 NocoBase 默认提供类似 Airtable 的表格视图（Grid view），你可以快速浏览数据、排序、筛选、分页，并支持配置默认视图字段。
 
@@ -57,7 +61,9 @@ NocoBase 默认提供类似 Airtable 的表格视图（Grid view），你可以�
 
 **进阶能力**：你还可以为不同用户配置不同视图，限制可见字段，或者嵌套子表，适合主从表结构的呈现。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmE5YjI0NmJiZDJmZGMwZDBkZWNiY2QzNGU1NzhkZTVfYmZoSXN3dG5yRE5ERE1DSDBsUG1Jd1FSejNEV1JtTXFfVG9rZW46QVlrcmJSdVI1b0E3VlZ4M1FPd2NqTFk3bm5oXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Field-Level Permission Settings](https://static-docs.nocobase.com/4-8iw8mo.png)
+
+字段级别的权限设置
 
 ### 2. **表间关联**
 
@@ -65,15 +71,21 @@ NocoBase 默认提供类似 Airtable 的表格视图（Grid view），你可以�
 
 在 Airtable 中，常用 Linked Record + Lookup 来实现跨表取值。但当你有多对多、多层嵌套需求时，会变得越来越复杂。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDhhMjhkNmEwNjE2ZTgxNThhMDQ2YmFiMzA4ODRiYThfcHVsRTJvcDloRnlYcVVxOHZYRWhwdzZvZmdyYXg4ZElfVG9rZW46VDVlemJxdmJTb0ZDMzJ4alNxR2NSb3ZBbmNnXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![To add a Linked Record field in Airtable](https://static-docs.nocobase.com/5-l0l74c.png)
+
+在 Airtable 中添加 Linked Record 列
 
 NocoBase 原生支持多种实体关系配置，可以定义一对多、多对多，并在前端区块中可视化嵌套展示。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjU5ZjY4N2QyZjliNTFmOWNiN2FlYTk1ODc3NDk3YjhfV3JWYVBPU203QjhOVUpqR0hkT3BtdEVZNXByN29jY25fVG9rZW46RDZVN2JKR2ZObzJ6Tlh4OUphYmNYMVdCbmljXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Field relationships can be defined at the time the data field is created](https://static-docs.nocobase.com/6-b8r28b.png)
+
+在创建数据字段时即可定义字段关系
 
 复杂关系的多层嵌套视图也能流畅实现。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzQ1Nzg0NDcxZDljMTFlYjI4NTRmOWI4MjQwZmU5ZjdfYzVmbWp5UEY4Z3dqN3F1YmwwRWdmZVVjbkJSYWxwMEZfVG9rZW46UDRUbGJUa2Vhb0RhVjF4WXFJS2M0UXF3blZRXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Account view includes multiple relationship fields](https://static-docs.nocobase.com/7-dea9rf.png)
+
+Account 视图内包括多个关系字段
 
 ### 3. **看板视图**
 
@@ -81,13 +93,19 @@ NocoBase 原生支持多种实体关系配置，可以定义一对多、多对�
 
 在 Airtable 中，你可以为你的数据切换不同视图，其中包括看板。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmY2ZTA0MWRjMWZmMmRmYzQ2MzBkNjI1ZDI5NTUzOWRfMlpsd3htNjhrY3JXeXQxeGlNeElrY0RYTndhaE4zbGpfVG9rZW46SkZXbWJaM0ttb09iUTZ4R0p2cGNZcmVEbjgxXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Airtable's Kanban](https://static-docs.nocobase.com/8-cwxpjj.png)
+
+Airtable 的看板视图
 
 而在 NocoBase 中，逻辑有一些不同。由于前后端分离的设计，在设置好数据源、数据表及字段后。你可以在前端进行区块配置，实现“按字段值分组”的看板效果。例如，任务按状态分为“待办 / 进行中 / 已完成”。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTNhNzIzMjc2NDIxZWFiMTQ1OTNkNTcyMjZmZDI5YWRfc0FRdzR6N2o0TDJlMVZMV3RuWlBNbnRvamM3WXJsNlBfVG9rZW46Tm1qVGJxdkdkbzRUUUJ4bGcwR2NSbzFSbk1mXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Select the data table you want to display as a Kanban](https://static-docs.nocobase.com/9-f9es0h.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzZlMTY2ZmQ3OGJkOWQ0MjdkMDdmYjIwZGI3YThkMzFfMHpjTU9EU3ZTQnl3UzFqV2lGcVRkOGl6bDkzZXBnVGpfVG9rZW46UU9xMmJudjFybzNEMVh4QjhYNGMwNUtRbnBiXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+选择你想要展示为看板的数据表
+
+![Kanban's display data can also be chosen arbitrarily](https://static-docs.nocobase.com/10-osy53e.png)
+
+看板的展示数据也可以任意选择
 
 不同于 Airtable 的固定视图，NocoBase 的看板可以与权限联动，也可以作为流程触发点（例如：从“跟进”拖到“成交”，自动触发流程）。
 
@@ -95,17 +113,23 @@ NocoBase 原生支持多种实体关系配置，可以定义一对多、多对�
 
 **✅  支持匿名提交和流程衔接**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGNkNmQ3M2U5N2I2ZTRjNzgwNWY2YjViOTliYmE4YmJfNXF4TjF5MmJlWm9hSWF5SzUxQkhiU0NzQ2hwc2hrYTJfVG9rZW46Unh5emJQRHVyb3poOWx4dlJmcGN2RXJZbkVnXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Form Configuration for Airtable](https://static-docs.nocobase.com/11-lt1res.png)
+
+Airtable 的表单配置
 
 表单是很多团队用 Airtable 做外部收集的利器。NocoBase 同样支持表单收集，支持生成独立访问链接或嵌入页面，并允许配置匿名权限。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTE3YTk5NDZhZGZkNWI3YWM4YjA1MzFhODdmOTQwMGNfcWU5dVhLajROTkE1UHdUdFc2Q2JtSEpFcmhibXViY0hfVG9rZW46RVNlQWJPcFFwb3dPenF4TGhXQmNWa0hVblFmXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Form Configuration for NocoBase](https://static-docs.nocobase.com/12-613ty1.png)
+
+NocoBase 的表单配置页面
 
 你还可以为每个表单设置提交后的流程逻辑，比如自动通知、数据审批或状态变更。
 
 并且，NocoBase 的表单还能优雅的嵌入你的各种业务场景，比如：官网、弹窗、移动端以及作为单独页面出现。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmQ1ZDYyYWQ4Zjk4NWRkOGUxNjYyNDBmY2U2MDQxM2NfbHM1b0VOYVpLV3pJSnFaQVl0RnN0Z1BUbm1BOG9xbzVfVG9rZW46SkZUWmJGU0lTbzdqbTF4S1c5N2NEa2lHbmpkXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Embedding NocoBase Forms into Popups](https://static-docs.nocobase.com/13-mxvrlv.png)
+
+将 NocoBase 表单嵌入弹窗
 
 ### 5. **多人协作与权限控制**
 
@@ -113,11 +137,13 @@ NocoBase 原生支持多种实体关系配置，可以定义一对多、多对�
 
 Airtable 的权限控制比较简单，通常以“可编辑/可查看”级别为主。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzczYjJhYzdlNTcxYmY4NDZhOTRjNGEyYjhjNzJkMjFfWTNLMFhybWVTTUNOUDJWQzRLblVOMFMwek9FT2EyOTBfVG9rZW46WWc3VGJpRG53b3VUbGt4aG5QVmNCRWJtblNTXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Airtable’s permission system](https://static-docs.nocobase.com/14-1i55qg.png)
 
 NocoBase 则提供了完整的权限系统，包括字段级权限、条件级权限、视图控制等。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDBiYWI4MjcxN2NmNGJhMmY0NjVhMTRlYmNmYTE3YjdfeFZ0cUJqN3l2Z0ZsQ1pHU2RmaEp4a0NnaFprTG9VekRfVG9rZW46VWdHUGJYYlljb1VJZ3R4NzdPOGMwQ3A4blJlXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase's permission settings](https://static-docs.nocobase.com/15-8astlh.png)
+
+NocoBase 的权限设置
 
 比如你可以设置“销售只能查看自己创建的客户”，“财务可以编辑付款状态但不能修改客户信息”。
 
@@ -127,11 +153,15 @@ NocoBase 则提供了完整的权限系统，包括字段级权限、条件级�
 
 Airtable 的 Automations 多用于发送提醒或更新字段，但流程较简单。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDllYWU4ZjQ1NjQzOTEyZDFiZDhmZTBkZGQwMzBiOTNfY3lGelp0TktqNUpNMkJVcUhXZzQzckxvWUJJTDk1eFhfVG9rZW46T1hLb2I5bExab2RURFV4UGRyR2MwV0VKbjdkXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Airtable currently has 9 default trigger conditions](https://static-docs.nocobase.com/16-kpogla.png)
+
+Airtable 目前有 9 种默认的触发条件
 
 NocoBase 拥有完整的流程引擎（[7 种触发器](https://docs.nocobase.com/handbook/workflow/triggers/)，[24 种节点](https://docs.nocobase.com/handbook/workflow/nodes)），可以设置多步骤、多条件、审批流、状态流转等，适合用来搭建复杂业务流程，比如合同审批、请假流、入职流程等。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTk1OWUzNzU5NTEwZDczZWY1MzA2OGE2ZmU4NTg5MmRfaUZFTnFzNG5CQ1BaWk1wSEtIbGpQbWQyOXJsbWt2dEtfVG9rZW46T3pnVWJ0MTRwb0xxQ2N4cDZkTGNHU2E1bkxmXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase's Workflow Configuration Interface](https://static-docs.nocobase.com/17-q5yvlt.png)
+
+NocoBase 的工作流节点配置界面
 
 ## 从数据管理迈向系统层级：进阶能力对比
 
@@ -156,11 +186,15 @@ NocoBase 拥有完整的流程引擎（[7 种触发器](https://docs.nocobase.co
 
 在 Airtable 中，数据建模更多是用表格加上 Link、Lookup 来拼接结构，适合简单场景。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGUzNDRiNGEzYmUxNmJjYjAwYjRlZDhjN2I0ZGUzNTlfZmg1RVlHdVVLd2ZBdGxETXhITW5JRFhyeWZveE9yb3RfVG9rZW46Q3RzR2JjQWdYb0xSR3p4TE5GNmN4dndxbk5iXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Creating Lookup Fields in Airtable](https://static-docs.nocobase.com/18-0w1lh4.png)
+
+Airtable 中创建 Lookup 字段
 
 NocoBase 则具备数据库级的数据建模能力 —— 支持实体关系建模、主外键、多对多结构，适合承载复杂的业务模型，比如多层审批流、客户订单关系、权限隔离逻辑等。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmIzOTk4NDZiZDI3ZGQyNDk3NzViYzA5N2E0NTBlM2FfaVE2dzZhODVRT1ppekg3Vlk4MWdBT0l5OVczOVhjSHZfVG9rZW46SFloWGJ1aEM1b3VtRUx4c0kyRWNlcnV1bnRkXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase's data source management,decouple data and UI](https://static-docs.nocobase.com/19-r6gsh8.png)
+
+NocoBase 的数据源管理，数据和 UI 解耦
 
 ### 2. **界面构建**
 
@@ -168,11 +202,13 @@ NocoBase 则具备数据库级的数据建模能力 —— 支持实体关系建
 
 很多 Airtable 用户会遇到 Interface 功能局限 —— 不能自由定义页面结构或交互逻辑，只能在不同的视图中切换。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTRmZGExZjFjODliNWM2NTAyMjhmYmQxMTcxZjBkM2JfMGY5Sk54a0RoZW12eVVMZjUzcEJ6U2tYRTJiS2huUGZfVG9rZW46S0ljNmJQZXRqb2wyVXN4UzFlUWNkclRabkZnXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Airtable’s Interface view](https://static-docs.nocobase.com/20-zsgp5c.png)
 
 NocoBase 提供可配置的前端区块系统，可以像拼乐高一样搭建自己的工作台、任务面板、客户详情页。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTg2NzVjN2NmZWJlMjU0ZTBkMTU0Mjg0NDgzOTE1YjNfUzc4WTdZbXZLOHRGQVhwVzZBak1CeE11T2hsZ05yMjRfVG9rZW46SXN1UWJEbWEyb3FtaTN4VWRDZ2M1U0NjbldnXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![In NocoBase you can combine different blocks in the page](https://static-docs.nocobase.com/21-3nwsu5.png)
+
+在 NocoBase 中你可以在页面中组合不同的区块
 
 这让你的系统看起来不再是“表格 + 数据”，而是“应用 + 工作流”。
 
@@ -184,7 +220,7 @@ Airtable 的能力边界就是平台本身。
 
 NocoBase 则采用更灵活的插件化架构，权限系统、流程引擎、页面布局等功能本身就是插件。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTBiYWI1NDFkYWY4NDVhM2NhM2ExOThkMGViNGMyOWFfdEM5WDZ0dDkyUkdVVzZuaUZSY1htSTJzcUY1M0JyQnFfVG9rZW46U2NEWWJHdkRrb3h3c3V4MUJRTmM3eTRXbjd1XzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase is built on a modular plugin architecture](https://static-docs.nocobase.com/22-fyio6x.png)
 
 这意味着你可以按需安装、替换、开发插件，甚至打造属于你团队的“专属系统平台”。
 
@@ -192,11 +228,11 @@ NocoBase 则采用更灵活的插件化架构，权限系统、流程引擎、�
 
 **✅  从灵活到瓶颈的分界点**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTE4MjE0YjczM2Y0M2FkNDlhZGJhMjA4YjYxOWQxNDZfa2ZZc0xWMWNxakhOM1U0UDVHU1BBb1hyUjI1d0puQzhfVG9rZW46Vno2MGJ6NzV1b2FOSDZ4R1lQb2NhUkdwbmQ2XzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![Airtable pricing](https://static-docs.nocobase.com/23-pjhk1a.png)
 
 Airtable 免费版与付费版均有记录数和附件空间的限制。对于成长型团队来说，一旦数据规模膨胀，就可能触顶或增加成本。你还可以阅读这篇文章：[Airtable 太贵了？5 个自托管替代方案成本&功能对比](https://www.nocobase.com/cn/blog/5-self-hosted-airtable-alternatives)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzdiOTE2MGFjOTU0ZDlhNjU3YzQ3YjQzYTk1ZDAwZDJfZXdBRVBrNmVkTEFMYlJiNGZuWGh6RkpsZzVtNnlZcTNfVG9rZW46TmZTTmJVNDJTb3FhSld4U1dScmNnemU0blpnXzE3NTE1OTY4MDc6MTc1MTYwMDQwN19WNA)
+![NocoBase pricing](https://static-docs.nocobase.com/24-md6kvb.png)
 
 NocoBase 作为无代码开发平台，不设记录上限和用户限制，更适合数据密集型的场景。并且大部分用户使用免费开源版本即可满足需求。
 
