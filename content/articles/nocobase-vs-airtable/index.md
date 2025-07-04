@@ -235,7 +235,7 @@ This gives you the freedom to install, replace, or even develop your own plugins
 
 ![Airtable pricing](https://static-docs.nocobase.com/23-pjhk1a.png)
 
-Airtable imposes limits on both record count and attachment size, even in its paid plans. For fast-growing teams, these restrictions can become a bottleneck—or result in higher subscription costs. (Related: *Is Airtable Too Expensive? 5 Self-Hosted Alternatives Compared by Cost & Features*)
+Airtable imposes limits on both record count and attachment size, even in its paid plans. For fast-growing teams, these restrictions can become a bottleneck—or result in higher subscription costs. (Related: *[Is Airtable Too Expensive? 5 Self-Hosted Alternatives Compared by Cost & Features](https://www.nocobase.com/en/blog/5-self-hosted-airtable-alternatives)*)
 
 ![NocoBase pricing](https://static-docs.nocobase.com/24-md6kvb.png)
 
@@ -275,7 +275,7 @@ NocoBase isn’t meant to replace Airtable. It’s here for those ready to take 
 
 We believe the best tools don’t compete—they complement, offering users the freedom to evolve with their needs.
 
-👉 If you’re thinking about what comes next, consider giving NocoBase a try. It might just be what you're looking for.
+👉 If you’re thinking about what comes next, consider giving [NocoBase]([NocoBase](https://www.nocobase.com/)) a try. It might just be what you're looking for.
 
 **Read more:**
 
