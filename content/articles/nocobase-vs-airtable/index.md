@@ -23,9 +23,9 @@ Whether you're just beginning to consider a switch or already feeling Airtable's
 
 We’ve also published several related articles you might find useful:
 
-* *Hit Airtable’s Data Limits? Here Are 3 Practical Workarounds*
-* *Is Airtable Too Expensive? A Cost & Feature Comparison of 5 Self-Hosted Alternatives*
-* *The Most-Starred Open Source Airtable Alternatives on GitHub*
+* *[Airtable Data Limit Reached: 3 Common Solutions](https://www.nocobase.com/en/blog/airtable-data-limit-reached-3-common-solutions)*
+* *[Is Airtable Too Expensive? 5 Self-Hosted Alternatives Compared by Cost & Features](https://www.nocobase.com/en/blog/5-self-hosted-airtable-alternatives)*
+* *[Top 7 OSS Airtable Alternatives Ranked by GitHub Stars](https://www.nocobase.com/en/blog/open-source-airtable-alternatives)*
 
 ## How NocoBase Replicates Typical Airtable Usage
 
