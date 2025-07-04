@@ -8,7 +8,7 @@
   "description_ja": "本記事では Airtable の一般的な操作から始め、NocoBase における実装方法を紹介しながら、両者のシステム構築能力の違いを比較し、移行を検討するユーザーの参考になるようにまとめています。",
   "slug": "nocobase-vs-airtable",
   "publishedAt": "2025-07-04T02:39:15.064Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -111,6 +111,32 @@
         "createdAt": "2025-07-04T03:25:19.233Z",
         "updatedAt": "2025-07-04T03:25:19.233Z",
         "tagId": 11,
+        "articleId": 601
+      }
+    },
+    {
+      "createdAt": "2024-07-09T12:38:10.829Z",
+      "updatedAt": "2024-11-24T05:34:20.070Z",
+      "id": 19,
+      "title": "No-Code News",
+      "title_cn": "无代码资讯",
+      "sort": 19,
+      "description": "Stay updated with the latest news in the No-Code universe.",
+      "description_cn": "无代码领域的最新信息。",
+      "displayOnPage": true,
+      "slug": "nocode-news",
+      "displayOnBlog": true,
+      "keywords": "No-code news, No-code updates, No-code technology, No-code trends, Latest in no-code, No-code insights, No-code platforms",
+      "keywords_cn": "无代码新闻, 无代码更新, 无代码技术, 无代码趋势, 最新无代码信息, 无代码洞察, 无代码平台",
+      "title_ja": "ノーコードニュース",
+      "description_ja": "ノーコードの世界の最新ニュースを常に把握しましょう。",
+      "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-07-04T09:35:20.937Z",
+        "updatedAt": "2025-07-04T09:35:20.937Z",
+        "tagId": 19,
         "articleId": 601
       }
     },
@@ -296,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-04T08:55:35.438Z"
+  "updatedAt": "2025-07-04T09:35:20.930Z"
 }
