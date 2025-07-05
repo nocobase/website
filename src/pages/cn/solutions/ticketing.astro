@@ -354,12 +354,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
-                <i class="uil uil-database h2 mb-3"></i>
+                <i class="uil uil-play h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">基础数据模型</h5>
-              <p class="text-muted text-center">创建客户、联系人、工单等基础数据表和关联关系</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">数据模型设计</h5>
+                <p class="text-muted text-center">学习如何创建工单、客户、分类等基础数据结构</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -369,12 +371,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
-                <i class="uil uil-process h2 mb-3"></i>
+                <i class="uil uil-arrow-growth h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">工单流程设计</h5>
-              <p class="text-muted text-center">配置工单状态流转和自动化分配规则</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">工作流设计</h5>
+                <p class="text-muted text-center">配置工单分配、状态流转和处理流程</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -384,12 +388,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
                 <i class="uil uil-bell h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">提醒通知配置</h5>
-              <p class="text-muted text-center">设置多渠道提醒和通知机制</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">通知配置</h5>
+                <p class="text-muted text-center">设置邮件和系统通知，确保及时响应</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -523,12 +529,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-download-alt h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>安装 NocoBase 系统</h5>
-              <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 系统到您的服务器</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安装 NocoBase 系统</h5>
+                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 系统到您的服务器</p>
+              </div>
               <div class="mt-3">
                 <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装文档</a>
               </div>
@@ -538,12 +546,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-cloud-download h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>下载工单系统模板</h5>
-              <p class="text-muted mt-2">获取 NocoBase 工单管理系统的完整模板文件</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下载工单系统模板文件</h5>
+                <p class="text-muted mt-2">获取 NocoBase 工单系统的完整模板文件</p>
+              </div>
               <div class="mt-3">
                 <a href="javascript:void(0)" class="btn btn-outline-primary">下载模板文件</a>
               </div>
@@ -553,12 +563,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-upload h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>在系统内还原</h5>
-              <p class="text-muted mt-2">将模板文件导入到您的 NocoBase 系统中完成部署</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>在系统内还原</h5>
+                <p class="text-muted mt-2">将模板文件导入到您的 NocoBase 系统中完成部署</p>
+              </div>
               <div class="mt-3">
                 <a href="javascript:void(0)" class="btn btn-outline-primary">还原教程</a>
               </div>
@@ -585,14 +597,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-plus-circle h2"></i>
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">工单类型与分类管理</h5>
+                  <p class="text-muted mb-3">根据业务需要创建不同类型的工单分类和处理规则</p>
                 </div>
-                <div class="ms-3">
-                  <h5 class="mb-2">工单类型和优先级</h5>
-                  <p class="text-muted mb-3">根据业务需要添加不同的工单分类和优先级设置</p>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -602,14 +616,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-users-alt h2"></i>
-                </div>
-                <div class="ms-3">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-users-alt h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
                   <h5 class="mb-2">团队协作功能</h5>
-                  <p class="text-muted mb-3">设置工单分配规则和团队协作流程</p>
+                  <p class="text-muted mb-3">设置团队角色、权限和协作工作流</p>
+                </div>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -619,14 +635,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-chart-line h2"></i>
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-chart-line h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">统计报表分析</h5>
+                  <p class="text-muted mb-3">构建工单处理情况和效率分析报表</p>
                 </div>
-                <div class="ms-3">
-                  <h5 class="mb-2">统计报表功能</h5>
-                  <p class="text-muted mb-3">添加工单处理效率和客户满意度统计</p>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -636,14 +654,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-link h2"></i>
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link-h h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">CRM 系统集成</h5>
+                  <p class="text-muted mb-3">与现有 CRM 系统无缝集成，实现数据共享</p>
                 </div>
-                <div class="ms-3">
-                  <h5 class="mb-2">与CRM系统集成</h5>
-                  <p class="text-muted mb-3">与现有CRM系统无缝集成，共享客户数据</p>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>

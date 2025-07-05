@@ -27,14 +27,12 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
               </div>
             </div>
 
-            <!-- 价格区域 -->
+            <!-- 开发者信息 -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-3">价格：</span>
-                  <span class="h4 text-success fw-bold mb-0 me-3">免费</span>
-                  <img src="https://static-docs.nocobase.com/logo-nocobase.png" height="20" alt="NocoBase" class="me-2" />
-                  <span class="text-dark fw-medium">By NocoBase</span>
+                  <span class="text-muted me-2">开发者：</span>
+                  <img src="https://static-docs.nocobase.com/logo-nocobase.png" height="20" alt="NocoBase" title="由 NocoBase 开发" class="developer-logo" />
                 </div>
               </div>
             </div>
@@ -192,11 +190,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div class="section-title">
-            <h3 class="title mb-4">亲自试一试，3 步扩展一个 CRM 功能</h3>
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">亲自试一试，3 步扩展一个 CRM 功能</h4>
             <p class="para-desc mx-auto text-muted mb-0">以添加客户评级功能为例，体验 NocoBase CRM 的扩展能力</p>
           </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
           <div class="row mt-4">
             <div class="col-md-4">
               <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
@@ -228,7 +231,11 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
               </div>
             </div><!--end col-->
           </div>
-        </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
 
         <div class="mt-4" id="crm-demo-wrap">
           <!-- 主演示图片区域 - 参考首页样式 -->
@@ -333,6 +340,7 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
             </div>
           </div><!--end col-->
         </div><!--end row-->
+        </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
@@ -353,12 +361,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
                 <i class="uil uil-play h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">基础搭建</h5>
-              <p class="text-muted text-center">学习如何创建客户、联系人、商机等基础数据模型和关系</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">基础搭建</h5>
+                <p class="text-muted text-center">学习如何创建客户、联系人、商机等基础数据模型和关系</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -368,12 +378,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
                 <i class="uil uil-chart-pie h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">仪表板配置</h5>
-              <p class="text-muted text-center">构建销售数据分析和可视化仪表板，实现业绩监控</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">仪表板配置</h5>
+                <p class="text-muted text-center">构建销售数据分析和可视化仪表板，实现业绩监控</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -383,12 +395,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
+            <div class="card-body p-4 d-flex flex-column">
               <div class="icon text-primary text-center">
                 <i class="uil uil-cog h2 mb-3"></i>
               </div>
-              <h5 class="mb-3 text-center">流程自动化</h5>
-              <p class="text-muted text-center">设置工作流实现销售流程自动化和业务规则</p>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">流程自动化</h5>
+                <p class="text-muted text-center">设置工作流实现销售流程自动化和业务规则</p>
+              </div>
               <div class="text-center">
                 <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
               </div>
@@ -400,126 +414,179 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
   </section><!--end section-->
   <!-- Development Tutorial End -->
 
-  <!-- Plugins & Implementation Start -->
+  <!-- Commercial Plugins Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">CRM 中所使用的商业插件及替代实现方式</h4>
-            <p class="para-desc mx-auto text-muted mb-0">了解如何通过商业插件获得更强大的功能，或在系统内自行实现基础需求</p>
+            <h4 class="title mb-4">CRM 中所使用的商业插件介绍</h4>
+            <p class="para-desc mx-auto text-muted mb-0">了解如何通过商业插件获得更强大的功能，提升 CRM 系统的专业性和易用性</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
-      <div class="row">
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <h5 class="mb-4"><i class="uil uil-star text-warning me-2"></i>商业插件增强功能</h5>
-              <div class="row">
-                <div class="col-12">
-                  <ul class="list-unstyled">
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-chart-bar text-success me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>数据可视化：ECharts</strong><br>
-                        <small class="text-muted">漏斗图、柱状图、饼图等可视化图表配置</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-comments text-primary me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>数据表：评论</strong><br>
-                        <small class="text-muted">对客户、联系人、工单等的评论交互</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-envelope text-info me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>邮件管理</strong><br>
-                        <small class="text-muted">高频使用，全局邮件发送和管理</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-process text-success me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>工作流：审批事件</strong><br>
-                        <small class="text-muted">报价单、订单的提交审批</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-import text-warning me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>操作：导入导出数据 Pro</strong><br>
-                        <small class="text-muted">所有表格的批量导入导出操作</small>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mt-3">
-                <a href="/cn/plugins-commercial" class="btn btn-primary btn-sm">了解商业插件</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 mt-4 pt-2">
-                      <div class="card border-0 shadow rounded h-100">
-              <div class="card-body p-4">
-                <h5 class="mb-4"><i class="uil uil-settings text-primary me-2"></i>替代实现方案</h5>
-                <div class="row">
-                  <div class="col-12">
-                    <ul class="list-unstyled">
-                      <li class="mb-3 d-flex">
-                        <i class="uil uil-chart text-success me-3 h5 mb-0"></i>
-                        <div>
-                          <strong>基础图表组件</strong><br>
-                          <small class="text-muted">使用系统内置图表组件实现简单数据可视化</small>
-                        </div>
-                      </li>
-                      <li class="mb-3 d-flex">
-                        <i class="uil uil-comment text-primary me-3 h5 mb-0"></i>
-                        <div>
-                          <strong>备注字段</strong><br>
-                          <small class="text-muted">通过长文本字段添加客户评论和备注信息</small>
-                        </div>
-                      </li>
-                      <li class="mb-3 d-flex">
-                        <i class="uil uil-envelope-alt text-info me-3 h5 mb-0"></i>
-                        <div>
-                          <strong>第三方邮件集成</strong><br>
-                          <small class="text-muted">通过API接口连接外部邮件服务</small>
-                        </div>
-                      </li>
-                      <li class="mb-3 d-flex">
-                        <i class="uil uil-user-check text-success me-3 h5 mb-0"></i>
-                        <div>
-                          <strong>手动审批流程</strong><br>
-                          <small class="text-muted">通过权限控制和状态字段实现审批管理</small>
-                        </div>
-                      </li>
-                      <li class="mb-3 d-flex">
-                        <i class="uil uil-file-upload text-warning me-3 h5 mb-0"></i>
-                        <div>
-                          <strong>基础导入功能</strong><br>
-                          <small class="text-muted">使用系统基础功能处理数据文件导入</small>
-                        </div>
-                      </li>
-                    </ul>
+      <div class="row pb-4">
+        <!-- ECharts 插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="数据可视化：ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">数据可视化：ECharts</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">专业的图表组件，支持漏斗图、柱状图、饼图等多种可视化图表配置，让 CRM 数据分析更直观
+                   <a href="https://docs-cn.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-soft-success text-success me-1">销售分析</span>
+                    <span class="badge bg-soft-success text-success">数据报表</span>
                   </div>
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 100 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥3,999</span>
+                  </h6>
                 </div>
-                <div class="mt-3">
-                  <a href="https://docs-cn.nocobase.com" target="_blank" class="btn btn-outline-primary btn-sm">查看实现文档</a>
-                </div>
+              </div>
             </div>
           </div>
+        </div>
+
+        <!-- 评论插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="数据表：评论" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">数据表：评论</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">为客户、联系人、工单等数据表添加评论交互功能，团队协作更便捷
+                   <a href="https://docs-cn.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-soft-primary text-primary me-1">团队协作</span>
+                    <span class="badge bg-soft-primary text-primary">沟通记录</span>
+                  </div>
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 30 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥1,499</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 邮件管理插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="邮件管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">邮件管理</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">高频使用的邮件功能，支持全局邮件发送和管理，提升客户沟通效率
+                   <a href="https://docs-cn.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-soft-info text-info me-1">客户沟通</span>
+                    <span class="badge bg-soft-info text-info">营销推广</span>
+                  </div>
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 50 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥1,999</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 工作流审批插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="工作流：审批事件" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">工作流：审批事件</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">为报价单、订单等关键业务流程添加审批管理，确保业务规范性
+                   <a href="https://docs-cn.nocobase.com/plugins/workflow" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-soft-success text-success me-1">流程管理</span>
+                    <span class="badge bg-soft-success text-success">权限控制</span>
+                  </div>
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 80 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,999</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 导入导出插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="操作：导入导出数据 Pro" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">操作：导入导出数据 Pro</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">支持所有表格的批量导入导出操作，数据迁移和备份更便捷
+                   <a href="https://docs-cn.nocobase.com/plugins/action-import" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-soft-warning text-warning me-1">数据迁移</span>
+                    <span class="badge bg-soft-warning text-warning">批量操作</span>
+                  </div>
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 60 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,499</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 占位卡片，保持布局整齐 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">更多插件即将推出</h6>
+                  <p class="text-muted small">我们正在开发更多有用的商业插件，敬请期待</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/cn/plugins-commercial" class="btn btn-primary me-3">查看全部商业插件</a>
+          <a href="/cn/commercial" class="btn btn-outline-primary">了解定价详情</a>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- Plugins & Implementation End -->
+  <!-- Commercial Plugins End -->
 
   <!-- How to Use Start -->
   <section class="section bg-light" id="copy-tutorial">
@@ -536,12 +603,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-download-alt h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>安装 NocoBase 系统</h5>
-              <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 系统到您的服务器</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安装 NocoBase 系统</h5>
+                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 系统到您的服务器</p>
+              </div>
               <div class="mt-3">
                 <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装文档</a>
               </div>
@@ -551,12 +620,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-cloud-download h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>下载 CRM 模板文件</h5>
-              <p class="text-muted mt-2">获取 NocoBase CRM 系统的完整模板文件</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下载 CRM 模板文件</h5>
+                <p class="text-muted mt-2">获取 NocoBase CRM 系统的完整模板文件</p>
+              </div>
               <div class="mt-3">
                 <a href="javascript:void(0)" class="btn btn-outline-primary">下载模板文件</a>
               </div>
@@ -566,12 +637,14 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="icons text-center">
-              <i class="uil uil-upload h1 text-primary"></i>
-            </div>
-            <div class="content mt-4">
-              <h5>在系统内还原</h5>
-              <p class="text-muted mt-2">将模板文件导入到您的 NocoBase 系统中完成部署</p>
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>在系统内还原</h5>
+                <p class="text-muted mt-2">将模板文件导入到您的 NocoBase 系统中完成部署</p>
+              </div>
               <div class="mt-3">
                 <a href="javascript:void(0)" class="btn btn-outline-primary">还原教程</a>
               </div>
@@ -598,14 +671,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row">
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-plus-circle h2"></i>
-                </div>
-                <div class="ms-3">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
                   <h5 class="mb-2">自定义字段、关系、权限与界面布局</h5>
                   <p class="text-muted mb-3">根据行业特点添加专属的客户信息字段，设置数据关系和访问权限</p>
+                </div>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -615,14 +690,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-setting h2"></i>
-                </div>
-                <div class="ms-3">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-setting h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
                   <h5 class="mb-2">业务流程自动化</h5>
                   <p class="text-muted mb-3">配置销售流程、审批流程和自动化任务</p>
+                </div>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -632,14 +709,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-link h2"></i>
-                </div>
-                <div class="ms-3">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
                   <h5 class="mb-2">第三方系统集成</h5>
                   <p class="text-muted mb-3">与邮件系统、财务软件、营销工具等集成</p>
+                </div>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -649,14 +728,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <div class="d-flex">
-                <div class="icon text-primary">
-                  <i class="uil uil-mobile-android h2"></i>
-                </div>
-                <div class="ms-3">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-mobile-android h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
                   <h5 class="mb-2">移动端适配</h5>
                   <p class="text-muted mb-3">确保CRM系统在移动设备上的完美体验</p>
+                </div>
+                <div>
                   <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
                 </div>
               </div>
@@ -772,6 +853,44 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
   .process-arrow:before {
     display: none;
   }
+}
+
+/* 商业插件卡片样式 */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+/* 开发者logo样式 */
+.developer-logo {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.developer-logo:hover {
+  opacity: 0.8;
 }
 </style>
 

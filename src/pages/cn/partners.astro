@@ -1,0 +1,326 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "NocoBase 服务商";
+const description = "查找全球范围内的 NocoBase 认证服务商和合作伙伴，获得专业的技术支持和咨询服务。";
+const keywords = "NocoBase,服务商,合作伙伴,技术支持,咨询服务";
+
+// 合作伙伴数据按大洲分组
+const partnersByContinent = [
+  {
+    continent: "亚洲",
+    partners: [
+      {
+        name: "NocoBase 中国",
+        location: "中国·北京",
+        description: "NocoBase 官方团队，提供全面的产品支持和咨询服务",
+        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
+        website: "https://cn.nocobase.com",
+        services: ["产品开发", "技术咨询", "培训服务", "定制开发"],
+        contact: "hello@nocobase.com",
+        certified: true,
+        featured: true
+      },
+      {
+        name: "TechPartner Asia",
+        location: "新加坡",
+        description: "专注于企业数字化转型的技术服务商，拥有丰富的企业级项目经验",
+        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
+        website: "https://example.com",
+        services: ["系统集成", "数据迁移", "技术培训"],
+        contact: "contact@techpartner.sg",
+        certified: true,
+        featured: false
+      }
+    ]
+  },
+  {
+    continent: "欧洲",
+    partners: [
+      {
+        name: "European NocoBase Solutions",
+        location: "德国·柏林",
+        description: "为欧洲企业提供 NocoBase 解决方案，专注于GDPR合规和本地化服务",
+        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
+        website: "https://example.com",
+        services: ["本地化服务", "技术支持", "培训", "GDPR合规"],
+        contact: "info@nocobase.eu",
+        certified: true,
+        featured: false
+      }
+    ]
+  },
+  {
+    continent: "北美",
+    partners: [
+      {
+        name: "NocoBase Americas",
+        location: "美国·旧金山",
+        description: "北美地区的 NocoBase 认证服务商，服务于财富500强企业",
+        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
+        website: "https://example.com",
+        services: ["企业咨询", "系统实施", "技术支持", "云部署"],
+        contact: "contact@nocobase.us",
+        certified: true,
+        featured: false
+      }
+    ]
+  },
+  {
+    continent: "大洋洲",
+    partners: [
+      {
+        name: "澳新 NocoBase 服务",
+        location: "澳大利亚·悉尼",
+        description: "服务澳洲和新西兰的 NocoBase 技术伙伴，提供本地化技术支持",
+        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
+        website: "https://example.com",
+        services: ["本地化部署", "技术咨询", "维护支持"],
+        contact: "info@nocobase.au",
+        certified: false,
+        featured: false
+      }
+    ]
+  }
+];
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <!-- Start Partners -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <!-- 侧边栏 -->
+        <div class="col-lg-2 col-md-3">
+          <div class="card border-0 shadow rounded sticky-bar" style="z-index: 1;">
+            <div class="card-body">
+              <h6 class="text-dark">快速导航</h6>
+              <ul class="list-unstyled sidebar-nav-list mb-0">
+                {partnersByContinent.map((region) => (
+                  <li>
+                    <a href={`#${region.continent}`} class="text-muted">
+                      <i class="uil uil-globe me-2"></i>{region.continent}
+                    </a>
+                  </li>
+                ))}
+                <!-- <li>
+                  <a href="#become-partner" class="text-muted">
+                    <i class="uil uil-users-alt me-2"></i>成为合作伙伴
+                  </a>
+                </li> -->
+              </ul>
+              <div class="mt-4">
+                <a href="#become-partner" class="btn btn-primary btn-sm w-100">成为合作伙伴</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- 主要内容区 -->
+        <div class="col-lg-9 col-md-8">
+          <div class="ms-lg-4">
+            <div class="mb-4">
+              <p class="text-muted mb-0">
+                我们与全球优秀的技术服务商合作，为您提供专业的 NocoBase 实施、定制开发、技术支持和培训服务。
+                无论您在世界的哪个角落，都能找到就近的专业服务商为您提供帮助。
+              </p>
+            </div>
+
+            {partnersByContinent.map((region) => (
+              <div class="mt-5" id={region.continent}>
+                <h4 class="text-primary mb-4">
+                  <i class="uil uil-globe me-2"></i>{region.continent}
+                </h4>
+                <div class="row">
+                  {region.partners.map((partner) => (
+                    <div class="col-lg-6 col-md-6 mb-4">
+                      <div class="card border shadow-sm h-100">
+                        <div class="card-body">
+                          <div class="mb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <div class="partner-logo">
+                                <img 
+                                  src={partner.logo} 
+                                  alt={partner.name}
+                                  style="max-height: 45px; max-width: 140px; object-fit: contain;"
+                                  loading="lazy"
+                                />
+                              </div>
+                              {partner.certified && (
+                                <span class="badge bg-soft-success text-success">
+                                  <i class="uil uil-check-circle me-1"></i>认证
+                                </span>
+                              )}
+                            </div>
+                            <div class="mt-3">
+                              <h6 class="mb-1">{partner.name}</h6>
+                              <small class="text-muted">
+                                <i class="uil uil-map-marker me-1"></i>{partner.location}
+                              </small>
+                            </div>
+                          </div>
+                          <p class="text-muted mb-3">{partner.description}</p>
+                          
+                          <div class="mb-3">
+                            <h6 class="text-dark mb-2">服务范围：</h6>
+                            <div class="d-flex flex-wrap gap-1">
+                              {partner.services.map((service) => (
+                                <span class="badge bg-soft-primary text-primary">{service}</span>
+                              ))}
+                            </div>
+                          </div>
+                          
+                          <div class="pt-3 border-top">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <a href={`mailto:${partner.contact}`} class="btn btn-sm btn-outline-primary">
+                                <i class="uil uil-envelope me-1"></i>联系我们
+                              </a>
+                              <a href={partner.website} target="_blank" class="btn btn-sm btn-soft-primary">
+                                <i class="uil uil-external-link-alt me-1"></i>官网
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div><!--end col-->
+
+        
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Partners -->
+
+  <!-- Become Partner Start -->
+  <section class="section bg-light" id="become-partner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">成为 NocoBase 合作伙伴</h4>
+            <p class="para-desc mx-auto text-muted mb-0">
+              如果您是专业的技术服务商，并希望成为 NocoBase 的合作伙伴，
+              我们欢迎您的加入。我们将为您提供技术支持、培训资源和市场推广支持。
+            </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card bg-light border-0">
+            <div class="card-body">
+              <h6 class="text-dark mb-4 text-center">合作伙伴权益</h6>
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 text-center">
+                  <ul class="list-unstyled text-muted mb-0">
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>官方认证和品牌授权</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>技术培训和认证体系</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>优先技术支持服务</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 text-center">
+                  <ul class="list-unstyled text-muted mb-0">
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>市场推广资源支持</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>优先获得商业机会推荐</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>专属客户经理服务</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mt-4">
+          <a href="mailto:partners@nocobase.com" class="btn btn-primary me-2">
+            <i class="uil uil-envelope me-1"></i>申请成为合作伙伴
+          </a>
+          <a href="/cn/contact" class="btn btn-outline-primary">
+            <i class="uil uil-phone me-1"></i>了解更多
+          </a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Become Partner End -->
+  
+  <style>
+    .partner-logo {
+      min-height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+    }
+    
+    .partner-logo img {
+      transition: opacity 0.3s ease;
+    }
+    
+    .partner-logo:hover img {
+      opacity: 0.8;
+    }
+
+    .sticky-bar {
+      position: sticky;
+      top: 100px;
+      z-index: 99;
+    }
+
+    .sidebar-nav-list li {
+      margin-bottom: 12px;
+    }
+
+    .sidebar-nav-list li a {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .sidebar-nav-list li a:hover {
+      background-color: #f8f9fa;
+      color: #2f55d4 !important;
+    }
+
+    @media (max-width: 991px) {
+      .sticky-bar {
+        position: relative;
+        top: auto;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</Layout> 

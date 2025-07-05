@@ -15,7 +15,7 @@ const currentPath = Astro.url.pathname;
 const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
 
 // 函数用于生成不同语言的 URL
-const generateUrl = (lang) => {
+const generateUrl = (lang: string) => {
   if (langPrefixRegex.test(currentPath)) {
     // 替换现有的语言前缀
     return currentPath.replace(langPrefixRegex, `/${lang}/`);
@@ -157,6 +157,18 @@ const meta = {
         #topnav .navigation-menu > li .submenu.megamenu > li {
           width: 33.333% !important;
         }
+      }
+
+      /* 增强megamenu标题显示效果 */
+      .megamenu-head {
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        color: #6c757d !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.8px !important;
+        margin-bottom: 12px !important;
+        padding-bottom: 4px !important;
+        border-bottom: 1px solid #e9ecef !important;
       }
     </style>
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
@@ -316,9 +328,14 @@ const meta = {
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
             <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)">开源</a><span class="menu-arrow"
-              ></span>
+              <a href="javascript:void(0)">产品</a><span class="menu-arrow"></span>
               <ul class="submenu">
+                <li>
+                  <a href="javascript:void(0)" title="产品特性即将推出" class="sub-menu-item" style="color: #8492a6;">Features <span class="badge text-bg-secondary ms-2">Coming soon</span></a>
+                </li>
+                <li>
+                  <a href="https://demo-cn.nocobase.com/new" target="_blank" class="sub-menu-item">Live Demo <span class="badge text-bg-success ms-2">免费试用</span></a>
+                </li>
                 <li>
                   <a
                     rel="nofollow"
@@ -339,18 +356,24 @@ const meta = {
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="/cn/commercial" class="sub-menu-item">定价</a>
-            </li>
             <li class="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+              <a href="javascript:void(0)">市场</a><span class="menu-arrow"></span>
               <ul class="submenu megamenu">
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 插件</li>
+                    <li><a href="/cn/plugins" title="NocoBase 全部插件" class="sub-menu-item">全部插件</a></li>
+                    <li><a href="/cn/plugins-commercial" title="NocoBase 商业插件" class="sub-menu-item">商业插件</a></li>
+                    <li><a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件点数</a></li>
+                  </ul>
+                </li>
+
                 <li>
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> 解决方案</li>
                     <li><a href="/cn/solutions/crm" title="NocoBase CRM解决方案" class="sub-menu-item">CRM</a></li>
                     <li><a href="/cn/solutions/ticketing" title="NocoBase 工单系统解决方案" class="sub-menu-item">工单系统</a></li>
-                    <li><a href="javascript:void(0)" title="项目管理解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">Project management <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
+                    <li><a href="javascript:void(0)" title="项目管理解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">项目管理 <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
                     <li><a href="javascript:void(0)" title="人力资源管理解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">HRM <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
                     <li><a href="javascript:void(0)" title="内容管理系统解决方案即将推出" class="sub-menu-item" style="color: #8492a6;">CMS <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
                   </ul>
@@ -358,35 +381,10 @@ const meta = {
 
                 <li>
                   <ul>
-                    <li class="megamenu-head"><i class="uil uil-chart-growth-alt fs-6 align-middle"></i> 行业方案</li>
-                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">教育行业</a></li>
-                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">制造行业</a></li>
-                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">零售行业</a></li>
-                    <li><a href="javascript:void(0)" title="更多行业方案即将推出" class="sub-menu-item" style="color: #8492a6;">服务行业</a></li>
+                    <li class="megamenu-head"><i class="uil uil-users-alt fs-6 align-middle"></i> 合作伙伴</li>
+                    <li><a href="/cn/partners" title="查找NocoBase服务商" class="sub-menu-item">查找 NocoBase 服务商</a></li>
+                    <li><a href="javascript:void(0)" title="加入我们即将推出" class="sub-menu-item" style="color: #8492a6;">加入我们 <span class="badge text-bg-secondary ms-2">Coming soon</span></a></li>
                   </ul>
-                </li>
-
-                <li>
-                  <ul>
-                    <li class="megamenu-head"><i class="uil uil-play fs-6 align-middle"></i> 学习资源</li>
-                    <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">在线Demo <span class="badge text-bg-success ms-2">免费试用</span></a></li>
-                    <li><a href="/cn/tutorials" class="sub-menu-item">系列教程</a></li>
-                    <li><a href="/cn/contact" class="sub-menu-item">联系我们</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)" class="sub-menu-item">插件</a><span class="menu-arrow"></span>
-              <ul class="submenu">
-                <li>
-                  <a href="/cn/plugins" title="NocoBase 全部插件" class="sub-menu-item">全部插件</a>
-                </li>
-                <li>
-                  <a href="/cn/plugins-commercial" title="NocoBase 商业插件" class="sub-menu-item">商业插件</a>
-                </li>
-                <li>
-                  <a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件点数</a>
                 </li>
               </ul>
             </li>
@@ -394,19 +392,19 @@ const meta = {
               <a href="javascript:void(0)">社区</a><span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <a href="https://forum.nocobase.com/c/chinese-forum/6" class="sub-menu-item" title="NocoBase 在线论坛、交流"  target="_blank">在线交流</a>
+                  <a href="https://forum.nocobase.com/c/chinese-forum/6" class="sub-menu-item" title="NocoBase 在线论坛、交流"  target="_blank">论坛</a>
                 </li>
                 <li>
-                  <a href="/cn/blog" title="NocoBase 博客" class="sub-menu-item">博客</a>
+                  <a href="javascript:void(0)" title="用户故事即将推出" class="sub-menu-item" style="color: #8492a6;">用户故事 <span class="badge text-bg-secondary ms-2">Coming soon</span></a>
                 </li>
                 <li>
-                  <a href="/cn/blog/timeline" title=NocoBase 更新日志"" class="sub-menu-item">更新日志</a>
+                  <a href="/cn/blog/timeline" title="NocoBase 更新日志" class="sub-menu-item">更新记录</a>
                 </li>
                 <li>
                   <a href="/cn/roadmap" title="NocoBase 路线图" class="sub-menu-item">路线图</a>
                 </li>
                 <li>
-                  <a href="/cn/contact" title="NocoBase 联系方式" class="sub-menu-item">联系我们</a>
+                  <a href="/cn/blog" title="NocoBase 博客" class="sub-menu-item">博客</a>
                 </li>
               </ul>
             </li>
@@ -419,16 +417,22 @@ const meta = {
                 <li>
                   <a href="/cn/tutorials" title="NocoBase 教程" class="sub-menu-item">教程</a>
                 </li>
-                <!-- <li>
-                  <a href="/cn/help" class="text-foot"> 帮助中心</a>
-                </li> -->
                 <li>
                   <a href="https://docs-cn.nocobase.com/handbook/security" title="NocoBase 安全指南" class="sub-menu-item" target="_blank">安全指南</a>
                 </li>
                 <li>
+                  <a href="javascript:void(0)" title="品牌素材即将推出" class="sub-menu-item" style="color: #8492a6;">品牌素材 <span class="badge text-bg-secondary ms-2">Coming soon</span></a>
+                </li>
+                <li>
                   <a href="/cn/agreement" class="sub-menu-item">许可协议</a>
                 </li>
+                <li>
+                  <a href="/cn/contact" title="NocoBase 联系方式" class="sub-menu-item">联系我们</a>
+                </li>
               </ul>
+            </li>
+            <li>
+              <a href="/cn/commercial" class="sub-menu-item">定价</a>
             </li>
           </ul><!--end navigation menu-->
         </div><!--end navigation-->
@@ -775,16 +779,22 @@ const meta = {
       src="https://sibforms.com/forms/end-form/build/main.js"></script>
     <!--  END Brevo Form -->
 
-    <DocSearch/>
+    <DocSearch 
+      appId="2LZLVZ7DAL"
+      apiKey="c0a0f5b4b19b09b8e4f2fb7b6d9c7b5e"
+      indexName="nocobase"
+    />
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const searchButton = document.querySelector('.DocSearch-Button');
-        const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
-        const keys = searchButton.querySelector('.DocSearch-Button-Keys');
+        if (searchButton) {
+          const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
+          const keys = searchButton.querySelector('.DocSearch-Button-Keys');
 
-        // 隐藏文本和快捷键
-        if (placeholder) placeholder.style.display = 'none';
-        if (keys) keys.style.display = 'none';
+          // 隐藏文本和快捷键
+          if (placeholder) (placeholder as HTMLElement).style.display = 'none';
+          if (keys) (keys as HTMLElement).style.display = 'none';
+        }
       });
     </script>
 
