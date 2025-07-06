@@ -15,7 +15,6 @@
   * 外部データソースからのコレクションの必要時読み込みをサポート @aaaaaajie
 * **[カスタム変数]** カスタム集計変数をサポート @zhangzhonghe
   参照：[カスタム変数](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
-* **[plugin-commercial]** 商用機能をサポート @jiannx
 * **[メールマネージャー]**
   * メール削除をサポート @jiannx
   * メール同期間隔設定をサポート @jiannx
@@ -30,7 +29,6 @@
   * デバイスタイプに基づいてモバイルレイアウトの表示を判断（ページ幅ではなく）（[#6600](https://github.com/nocobase/nocobase/pull/6600)）@zhangzhonghe
 * **[非同期タスクマネージャー]** エクスポート時のタスク作成パフォーマンスを改善（[#7078](https://github.com/nocobase/nocobase/pull/7078)）@aaaaaajie
 * **[モバイル]** モバイルデバイス用の通知ポップアップのスタイルを適応（[#6557](https://github.com/nocobase/nocobase/pull/6557)）@zhangzhonghe
-* **[plugin-commercial]** ログ送信を暗号化し、ライセンス情報表示を改善 @jiannx
 * **[メールマネージャー]**
   * 同じ件名内でのメール個別返信と転送をサポート @jiannx
   * スキーマ実装によるメール送信と AI サポート @jiannx
@@ -56,13 +54,6 @@
 * **[データソースマネージャー]** 必要時データソース読み込みとテーブルプレフィックス設定の組み合わせにより「ConnectionManager.getConnection was called after the connection manager was closed」エラーが発生する問題を修正（[#7150](https://github.com/nocobase/nocobase/pull/7150)）@aaaaaajie
 * **[plugin-service-platform]** ライセンステキストを調整 @jiannx
 * **[カスタム変数]** バッジ値をクリア後、UI が更新されない問題 @zhangzhonghe
-* **[plugin-commercial]**
-  * ライセンス検証ロジックを調整し、パンドメイン名マッチングをサポート @jiannx
-  * 開発モード時のライセンスポップアップ非表示問題 @jiannx
-  * 商用ログの CRM 送信とテキスト翻訳を修正 @jiannx
-  * ライセンス情報にライセンス付きプラグインが表示されない問題 @jiannx
-  * ライセンス検証ポップアップの一時的閉鎖機能を追加 @jiannx
-  * 原型チェーンを使用した withCommercial 関数の実装 @jiannx
 * **[メールマネージャー]**
   * 添付ファイルが表示されない問題 @jiannx
   * メール削除時のエラー @jiannx
