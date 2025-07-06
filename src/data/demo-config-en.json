@@ -1,0 +1,261 @@
+{
+  "title": "Try it yourself, create a CRM in 3 steps",
+  "subtitle": "",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Collections and fields",
+      "id": "crm-guide1"
+    },
+    {
+      "number": "02",
+      "title": "Menus and pages",
+      "id": "crm-guide2"
+    },
+    {
+      "number": "03",
+      "title": "Blocks & actions",
+      "id": "crm-guide3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Start demo",
+      "description": "Click to start creating CRM",
+      "image": "https://static-docs.nocobase.com/1-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button1",
+        "label": "Click, create a CRM in 3 steps",
+        "position": {
+          "left": "46%",
+          "top": "45%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "Data table configuration guide",
+      "description": "Create data tables and fields",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "groupName": "Create data tables and fields",
+      "groupNumber": "01"
+    },
+    {
+      "id": "step-2",
+      "title": "Enter data table configuration",
+      "description": "Enter the data table configuration interface",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button2",
+        "label": "Enter data table configuration interface",
+        "position": {
+          "right": "12%",
+          "top": "6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Create data table",
+      "description": "Let's create data tables for customers and orders",
+      "image": "https://static-docs.nocobase.com/3-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button3",
+        "label": "Let's create data tables for customers and orders",
+        "position": {
+          "right": "13%",
+          "top": "22%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Add fields",
+      "description": "Next, let's add some fields to the data table",
+      "image": "https://static-docs.nocobase.com/4-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button4",
+        "label": "Next, let's add some fields to the data table",
+        "position": {
+          "right": "17%",
+          "top": "52%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Select field type",
+      "description": "Choose from dozens of field types and create as needed",
+      "image": "https://static-docs.nocobase.com/5-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button5",
+        "label": "Choose from dozens of field types and create as needed",
+        "position": {
+          "right": "10%",
+          "top": "30%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Complete data table creation",
+      "description": "Creation completed, exit data table configuration interface",
+      "image": "https://static-docs.nocobase.com/6-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button6",
+        "label": "Creation completed, exit data table configuration interface",
+        "position": {
+          "right": "70%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Menu and page configuration guide",
+      "description": "Configure menus and pages",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "groupName": "Configure menus and pages",
+      "groupNumber": "02"
+    },
+    {
+      "id": "step-8",
+      "title": "Enter interface configuration",
+      "description": "Back to the blank canvas, let's enter interface configuration mode",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button7",
+        "label": "Back to the blank canvas, let's enter interface configuration mode",
+        "position": {
+          "right": "15%",
+          "top": "2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Add menu",
+      "description": "Now, configuration buttons appear on the interface. Let's add some menus",
+      "image": "https://static-docs.nocobase.com/8-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button8",
+        "label": "Now, configuration buttons appear on the interface. Let's add some menus",
+        "position": {
+          "left": "16%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Add submenu",
+      "description": "You can also add unlimited levels of submenus",
+      "image": "https://static-docs.nocobase.com/9-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button9",
+        "label": "You can also add unlimited levels of submenus",
+        "position": {
+          "left": "8%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Block layout guide",
+      "description": "Layout blocks and actions on pages",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "groupName": "Layout blocks on pages",
+      "groupNumber": "03"
+    },
+    {
+      "id": "step-12",
+      "title": "Prepare to add blocks",
+      "description": "Now, you can add blocks to the page",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button10",
+        "label": "Now, you can add blocks to the page",
+        "position": {
+          "left": "18%",
+          "top": "17%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Add table block",
+      "description": "Let's add a table block to display customer data",
+      "image": "https://static-docs.nocobase.com/11-home-steps.png",
+      "alt": "NocoBase lightweight open source no-code and low-code development platform",
+      "button": {
+        "id": "crm-button11",
+        "label": "Let's add a table block to display customer data",
+        "position": {
+          "left": "40%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Configure table columns",
+      "description": "For this table block, we can decide which columns to display",
+      "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
+      "alt": "NocoBase open source low-code platform",
+      "button": {
+        "id": "crm-button13",
+        "label": "For this table block, we can decide which columns to display",
+        "position": {
+          "right": "50%",
+          "top": "17%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "CRM completed",
+      "description": "In just 3 steps, we have created a complete CRM system!",
+      "image": "https://static-docs.nocobase.com/24-home-steps.png",
+      "alt": "NocoBase open source low-code platform"
+    }
+  ]
+} 

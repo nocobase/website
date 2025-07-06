@@ -1,0 +1,261 @@
+{
+  "title": "実際に試してみよう、3ステップでCRMを作成",
+  "subtitle": "",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "データテーブルとフィールドの作成",
+      "id": "crm-guide1"
+    },
+    {
+      "number": "02",
+      "title": "メニューとページの設定",
+      "id": "crm-guide2"
+    },
+    {
+      "number": "03",
+      "title": "ページ内にブロックとアクションを配置",
+      "id": "crm-guide3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "デモ開始",
+      "description": "CRM作成を開始するにはクリック",
+      "image": "https://static-docs.nocobase.com/1-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button1",
+        "label": "クリック、3ステップでCRMを作成",
+        "position": {
+          "left": "46%",
+          "top": "45%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "データテーブル設定ガイド",
+      "description": "データテーブルとフィールドの作成",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "groupName": "データテーブルとフィールドの作成",
+      "groupNumber": "01"
+    },
+    {
+      "id": "step-2",
+      "title": "データテーブル設定に入る",
+      "description": "データテーブル設定画面に入る",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button2",
+        "label": "データテーブル設定画面に入る",
+        "position": {
+          "right": "12%",
+          "top": "6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "データテーブルの作成",
+      "description": "顧客と注文のデータテーブルを作成しましょう",
+      "image": "https://static-docs.nocobase.com/3-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button3",
+        "label": "顧客と注文のデータテーブルを作成しましょう",
+        "position": {
+          "right": "13%",
+          "top": "22%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "フィールドの追加",
+      "description": "次に、データテーブルにいくつかのフィールドを追加しましょう",
+      "image": "https://static-docs.nocobase.com/4-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button4",
+        "label": "次に、データテーブルにいくつかのフィールドを追加しましょう",
+        "position": {
+          "right": "17%",
+          "top": "52%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "フィールドタイプの選択",
+      "description": "必要に応じて数十種類のフィールドタイプから選択して作成",
+      "image": "https://static-docs.nocobase.com/5-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button5",
+        "label": "必要に応じて数十種類のフィールドタイプから選択して作成",
+        "position": {
+          "right": "10%",
+          "top": "30%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "データテーブル作成完了",
+      "description": "作成完了、データテーブル設定画面を終了",
+      "image": "https://static-docs.nocobase.com/6-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button6",
+        "label": "作成完了、データテーブル設定画面を終了",
+        "position": {
+          "right": "70%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "メニューとページ設定ガイド",
+      "description": "メニューとページの設定",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "groupName": "メニューとページの設定",
+      "groupNumber": "02"
+    },
+    {
+      "id": "step-8",
+      "title": "インターフェース設定に入る",
+      "description": "空白のキャンバスに戻り、インターフェース設定モードに入りましょう",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button7",
+        "label": "空白のキャンバスに戻り、インターフェース設定モードに入りましょう",
+        "position": {
+          "right": "15%",
+          "top": "2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "メニューの追加",
+      "description": "この時、インターフェースに設定ボタンが現れます。いくつかのメニューを追加しましょう",
+      "image": "https://static-docs.nocobase.com/8-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button8",
+        "label": "この時、インターフェースに設定ボタンが現れます。いくつかのメニューを追加しましょう",
+        "position": {
+          "left": "16%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "サブメニューの追加",
+      "description": "制限のない階層のサブメニューも追加できます",
+      "image": "https://static-docs.nocobase.com/9-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button9",
+        "label": "制限のない階層のサブメニューも追加できます",
+        "position": {
+          "left": "8%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "ブロックレイアウトガイド",
+      "description": "ページ内にブロックとアクションを配置",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "groupName": "ページ内にブロックを配置",
+      "groupNumber": "03"
+    },
+    {
+      "id": "step-12",
+      "title": "ブロック追加の準備",
+      "description": "これで、ページ内にブロックを追加できます",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button10",
+        "label": "これで、ページ内にブロックを追加できます",
+        "position": {
+          "left": "18%",
+          "top": "17%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "テーブルブロックの追加",
+      "description": "顧客データを表示するためのテーブルブロックを追加しましょう",
+      "image": "https://static-docs.nocobase.com/11-home-steps.png",
+      "alt": "NocoBase 軽量オープンソース ノーコード・ローコード開発プラットフォーム",
+      "button": {
+        "id": "crm-button11",
+        "label": "顧客データを表示するためのテーブルブロックを追加しましょう",
+        "position": {
+          "left": "40%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "テーブル列の設定",
+      "description": "このテーブルブロックについて、どの列を表示するかを決めることができます",
+      "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
+      "alt": "NocoBase オープンソース ローコードプラットフォーム",
+      "button": {
+        "id": "crm-button13",
+        "label": "このテーブルブロックについて、どの列を表示するかを決めることができます",
+        "position": {
+          "right": "50%",
+          "top": "17%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "CRM完成",
+      "description": "わずか3ステップで、完全なCRMシステムを作成しました！",
+      "image": "https://static-docs.nocobase.com/24-home-steps.png",
+      "alt": "NocoBase オープンソース ローコードプラットフォーム"
+    }
+  ]
+} 

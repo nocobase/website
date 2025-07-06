@@ -1,0 +1,261 @@
+{
+  "title": "Попробуйте сами, создайте CRM за 3 шага",
+  "subtitle": "",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Создание таблиц данных и полей",
+      "id": "crm-guide1"
+    },
+    {
+      "number": "02",
+      "title": "Настройка меню и страниц",
+      "id": "crm-guide2"
+    },
+    {
+      "number": "03",
+      "title": "Размещение блоков и действий на страницах",
+      "id": "crm-guide3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Начать демо",
+      "description": "Нажмите, чтобы начать создание CRM",
+      "image": "https://static-docs.nocobase.com/1-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button1",
+        "label": "Нажмите, создайте CRM за 3 шага",
+        "position": {
+          "left": "46%",
+          "top": "45%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "Руководство по настройке таблиц данных",
+      "description": "Создание таблиц данных и полей",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "groupName": "Создание таблиц данных и полей",
+      "groupNumber": "01"
+    },
+    {
+      "id": "step-2",
+      "title": "Войти в настройку таблиц данных",
+      "description": "Войти в интерфейс настройки таблиц данных",
+      "image": "https://static-docs.nocobase.com/2-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button2",
+        "label": "Войти в интерфейс настройки таблиц данных",
+        "position": {
+          "right": "12%",
+          "top": "6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Создать таблицу данных",
+      "description": "Давайте создадим таблицы данных для клиентов и заказов",
+      "image": "https://static-docs.nocobase.com/3-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button3",
+        "label": "Давайте создадим таблицы данных для клиентов и заказов",
+        "position": {
+          "right": "13%",
+          "top": "22%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Добавить поля",
+      "description": "Затем давайте добавим несколько полей в таблицу данных",
+      "image": "https://static-docs.nocobase.com/4-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button4",
+        "label": "Затем давайте добавим несколько полей в таблицу данных",
+        "position": {
+          "right": "17%",
+          "top": "52%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Выбрать тип поля",
+      "description": "Выберите из десятков типов полей и создайте по мере необходимости",
+      "image": "https://static-docs.nocobase.com/5-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button5",
+        "label": "Выберите из десятков типов полей и создайте по мере необходимости",
+        "position": {
+          "right": "10%",
+          "top": "30%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Завершить создание таблицы данных",
+      "description": "Создание завершено, выйти из интерфейса настройки таблицы данных",
+      "image": "https://static-docs.nocobase.com/6-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button6",
+        "label": "Создание завершено, выйти из интерфейса настройки таблицы данных",
+        "position": {
+          "right": "70%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Руководство по настройке меню и страниц",
+      "description": "Настройка меню и страниц",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "groupName": "Настройка меню и страниц",
+      "groupNumber": "02"
+    },
+    {
+      "id": "step-8",
+      "title": "Войти в настройку интерфейса",
+      "description": "Вернемся к пустому холсту и войдем в режим настройки интерфейса",
+      "image": "https://static-docs.nocobase.com/7-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button7",
+        "label": "Вернемся к пустому холсту и войдем в режим настройки интерфейса",
+        "position": {
+          "right": "15%",
+          "top": "2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Добавить меню",
+      "description": "Теперь на интерфейсе появляются кнопки настройки. Давайте добавим несколько меню",
+      "image": "https://static-docs.nocobase.com/8-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button8",
+        "label": "Теперь на интерфейсе появляются кнопки настройки. Давайте добавим несколько меню",
+        "position": {
+          "left": "16%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Добавить подменю",
+      "description": "Вы также можете добавить неограниченные уровни подменю",
+      "image": "https://static-docs.nocobase.com/9-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button9",
+        "label": "Вы также можете добавить неограниченные уровни подменю",
+        "position": {
+          "left": "8%",
+          "top": "7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Руководство по размещению блоков",
+      "description": "Размещение блоков и действий на страницах",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "groupName": "Размещение блоков на страницах",
+      "groupNumber": "03"
+    },
+    {
+      "id": "step-12",
+      "title": "Подготовка к добавлению блоков",
+      "description": "Теперь вы можете добавлять блоки на страницу",
+      "image": "https://static-docs.nocobase.com/10-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button10",
+        "label": "Теперь вы можете добавлять блоки на страницу",
+        "position": {
+          "left": "18%",
+          "top": "17%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Добавить блок таблицы",
+      "description": "Давайте добавим блок таблицы для отображения данных клиентов",
+      "image": "https://static-docs.nocobase.com/11-home-steps.png",
+      "alt": "NocoBase легкая платформа для разработки без кода и с низким кодом с открытым исходным кодом",
+      "button": {
+        "id": "crm-button11",
+        "label": "Давайте добавим блок таблицы для отображения данных клиентов",
+        "position": {
+          "left": "40%",
+          "top": "30%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Настроить столбцы таблицы",
+      "description": "Для этого блока таблицы мы можем решить, какие столбцы отображать",
+      "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
+      "alt": "NocoBase платформа с открытым исходным кодом и низким кодом",
+      "button": {
+        "id": "crm-button13",
+        "label": "Для этого блока таблицы мы можем решить, какие столбцы отображать",
+        "position": {
+          "right": "50%",
+          "top": "17%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "CRM завершена",
+      "description": "Всего за 3 шага мы создали полную CRM-систему!",
+      "image": "https://static-docs.nocobase.com/24-home-steps.png",
+      "alt": "NocoBase платформа с открытым исходным кодом и низким кодом"
+    }
+  ]
+} 

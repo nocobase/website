@@ -1,0 +1,160 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InteractiveDemo from "../components/InteractiveDemo.astro";
+import demoConfig from "../data/demo-config.json";
+---
+
+<Layout>
+  <!-- 使用示例 1：使用 JSON 配置文件 -->
+  <InteractiveDemo guides={demoConfig} />
+
+  <!-- 使用示例 2：直接传入配置对象 -->
+  <InteractiveDemo guides={{
+    title: "快速上手指南",
+    subtitle: "简单三步完成配置",
+    mainSteps: [
+      {
+        number: "01",
+        title: "创建项目",
+        id: "guide-step1"
+      },
+      {
+        number: "02", 
+        title: "配置设置",
+        id: "guide-step2"
+      },
+      {
+        number: "03",
+        title: "发布上线",
+        id: "guide-step3"
+      }
+    ],
+    steps: [
+      {
+        id: "example-step1",
+        title: "开始",
+        description: "点击开始",
+        image: "https://static-docs.nocobase.com/1-home-steps.png",
+        alt: "示例图片",
+        button: {
+          id: "example-button1",
+          label: "点击开始",
+          position: {
+            left: "50%",
+            top: "50%"
+          },
+          balloonPos: "up"
+        }
+      },
+      {
+        id: "example-step2",
+        title: "第二步",
+        description: "配置项目",
+        image: "https://static-docs.nocobase.com/2-home-steps.png",
+        alt: "示例图片2",
+        button: {
+          id: "example-button2",
+          label: "配置项目",
+          position: {
+            right: "20%",
+            top: "30%"
+          },
+          balloonPos: "left"
+        },
+        groupName: "创建项目",
+        groupNumber: "01"
+      }
+    ],
+    nextSectionId: "next-section",
+    nextSectionText: "下一步"
+  }} />
+
+  <!-- 说明文档 -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3>InteractiveDemo 组件使用说明</h3>
+          
+          <h4>1. 基本用法</h4>
+          <p>通过 <code>guides</code> 属性传入配置数据：</p>
+          <pre><code>&lt;InteractiveDemo guides={demoConfig} /&gt;</code></pre>
+
+          <h4>2. 配置结构</h4>
+          <p>配置对象包含以下属性：</p>
+          <ul>
+            <li><strong>title</strong>: 演示标题</li>
+            <li><strong>subtitle</strong>: 副标题（可选）</li>
+            <li><strong>mainSteps</strong>: 主要步骤导航</li>
+            <li><strong>steps</strong>: 详细步骤数组</li>
+            <li><strong>nextSectionId</strong>: 下一节锚点（可选）</li>
+            <li><strong>nextSectionText</strong>: 下一节按钮文本（可选）</li>
+          </ul>
+
+          <h4>3. 步骤配置</h4>
+          <p>每个步骤包含：</p>
+          <ul>
+            <li><strong>id</strong>: 唯一标识符</li>
+            <li><strong>title</strong>: 步骤标题</li>
+            <li><strong>description</strong>: 步骤描述</li>
+            <li><strong>image</strong>: 步骤图片链接</li>
+            <li><strong>alt</strong>: 图片替代文本</li>
+            <li><strong>button</strong>: 交互按钮配置（可选）</li>
+            <li><strong>groupName</strong>: 分组名称（可选）</li>
+            <li><strong>groupNumber</strong>: 分组编号（可选）</li>
+          </ul>
+
+          <h4>4. 按钮配置</h4>
+          <p>按钮配置包含：</p>
+          <ul>
+            <li><strong>id</strong>: 按钮唯一标识符</li>
+            <li><strong>label</strong>: 提示文本</li>
+            <li><strong>position</strong>: 位置配置（left/right + top）</li>
+            <li><strong>balloonPos</strong>: 提示位置（up/down/left/right）</li>
+            <li><strong>balloonLength</strong>: 提示长度（可选）</li>
+          </ul>
+
+          <h4>5. 特性</h4>
+          <ul>
+            <li>✅ 完全自包含，包含所有必需的样式和脚本</li>
+            <li>✅ 支持 JSON 配置，数据与展示分离</li>
+            <li>✅ 响应式设计，适配移动端</li>
+            <li>✅ 平滑过渡动画</li>
+            <li>✅ 交互式提示</li>
+            <li>✅ 图片预加载</li>
+            <li>✅ 可编程控制（通过 window.InteractiveDemo）</li>
+          </ul>
+
+          <h4>6. 方法</h4>
+          <p>可以通过 JavaScript 控制演示：</p>
+          <pre><code>const demo = new InteractiveDemo();
+demo.next();        // 下一步
+demo.previous();    // 上一步  
+demo.reset();       // 重置
+demo.goToStep(5);   // 跳转到第5步</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  pre {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
+  code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  pre code {
+    background: none;
+    padding: 0;
+  }
+</style> 
