@@ -47,7 +47,6 @@ const finalGroups = [];
 if (newlyPlugins.length > 0) {
   finalGroups.push({
     id: 'newly-launched',
-    // 这里可以自定义标题，比如 "最新发布"
     title: '最新发布',
     plugins: newlyPlugins,
   });
@@ -64,6 +63,27 @@ if (comingPlugins.length > 0) {
 
 // (c) 普通分组
 finalGroups.push(...normalGroups);
+
+// 计算总数
+const totalPlugins = finalGroups.reduce((sum, group) => sum + group.plugins.length, 0);
+
+// 准备筛选选项
+const filterOptions = {
+  pricing: [
+    { id: 'all', name: '全部', count: totalPlugins },
+    { id: 'free', name: '免费', count: allPlugins.filter(p => !p.commercial && !p.coming).length },
+    { id: 'commercial', name: '商业', count: allPlugins.filter(p => p.commercial).length },
+  ],
+  release: [
+    { id: 'newly', name: '最新发布', count: newlyPlugins.length },
+    { id: 'coming', name: '即将发布', count: comingPlugins.length },
+  ],
+  categories: normalGroups.map(group => ({
+    id: group.id,
+    name: group.title_cn || group.title,
+    count: group.plugins.length
+  }))
+};
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -77,93 +97,605 @@ finalGroups.push(...normalGroups);
 
   <!-- Section Start -->
   <section class="section">
-    <div class="container">
-      {
-        finalGroups
-            .filter((group) => group.plugins.length > 0)
-            .map((group) => (
-                <>
-                  <h4 class="mt-2 pb-1 text-muted">{group.title_cn || group.title}</h4>
-                  <div class="row pb-4">
-                    {group.plugins.map((plugin: any) => (
-                        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                          <div
-                              title={plugin.name_cn || plugin.name}
-                              style="color: inherit;"
-                              class="card rounded shadow border-0 plugin-card"
-                          >
-                            <div class="card-body">
-                              <div class="mt-2 plugin-box">
-                                <h6 class="card-title mb-1">
-                                  {plugin.name_cn || plugin.name}
-                                </h6>
-                                <div class="plugin-developer text-muted mb-3">
-                                  By <span>{plugin.developer || 'NocoBase'}</span>
-                                </div>
-                                <p class="text-muted mb-2 plugin-overview">
-                                  {plugin.description_cn || plugin.description}
-                                  {plugin.docs_cn && (
-                                      <a
-                                          href={plugin.docs_cn}
-                                          target="_blank"
-                                          style="font-size: 14px;"
-                                      >
-                                        详情
-                                      </a>
-                                  )}
-                                </p>
-                                <div class="plugin-footer">
-                                  {plugin.coming ? (
-                                      <span class="badge bg-soft-info plugin-type">
-                                即将发布
-                              </span>
-                                  ) : plugin.commercial ? (
-                                      <>
-                                        <h6 class="text-primary mb-0">
-                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
-                                    永久使用, 1 年升级
-                                  </span>
-                                          <br />
-                                          <a href="/cn/plugins-bundles">
-                                            {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i>
-                                          </a>
-                                          <span class="text-muted">/</span>
-                                          <span class="text-muted">
-                                    ￥{plugin.price_1_year_cn ? plugin.price_1_year_cn.toLocaleString('en-US') : '?'}
-                                  </span>
-                                        </h6>
-                                        <h6
-                                            class="text-muted mb-0"
-                                            style="margin-left: auto; font-weight: normal;"
-                                        >
-                                  <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
-                                    永久使用和升级
-                                  </span>
-                                          <br />
-                                          <a class="text-muted" href="/cn/plugins-bundles">
-                                            {plugin.point} <i class="uil uil-moon-eclipse me-1"></i>
-                                          </a>
-                                          <span class="text-muted">/</span>
-                                          <span class="text-muted">
-                                    ￥{plugin.price_cny ? plugin.price_cny.toLocaleString('en-US') : '?'}
-                                  </span>
-                                        </h6>
-                                      </>
-                                  ) : (
-                                      <span class="badge bg-soft-primary plugin-type">
-                                免费
-                              </span>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    ))}
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 2rem;">
+        <!-- 左侧筛选栏 -->
+        <div class="col-lg-2 col-md-3 col-12" style="padding-left: 1.5rem;">
+          <div class="plugins-sidebar">
+            <!-- 筛选选项 -->
+            <div class="filter-section">
+              <h6 class="filter-title">价格</h6>
+              <div class="filter-options">
+                {filterOptions.pricing.map((item: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="pricing"
+                    data-filter-value={item.id}
+                    data-active={item.id === 'all'}
+                  >
+                    <input 
+                      type="radio" 
+                      name="pricing" 
+                      value={item.id} 
+                      checked={item.id === 'all'}
+                      style="margin-right: 8px;"
+                    />
+                    {item.name}
+                    <span class="filter-count">({item.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h6 class="filter-title">发布状态</h6>
+              <div class="filter-options">
+                {filterOptions.release.map((item: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="release"
+                    data-filter-value={item.id}
+                    data-active="false"
+                  >
+                    <input 
+                      type="checkbox" 
+                      value={item.id} 
+                      style="margin-right: 8px;"
+                    />
+                    {item.name}
+                    <span class="filter-count">({item.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h6 class="filter-title">分类</h6>
+              <div class="filter-options">
+                <a 
+                  href="#" 
+                  class="filter-link"
+                  data-filter-type="category"
+                  data-filter-value="all"
+                  data-active="true"
+                >
+                  <input 
+                    type="radio" 
+                    name="category" 
+                    value="all" 
+                    checked={true}
+                    style="margin-right: 8px;"
+                  />
+                  全部分类
+                  <span class="filter-count">({totalPlugins})</span>
+                </a>
+                {filterOptions.categories.map((category: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="category"
+                    data-filter-value={category.id}
+                    data-active="false"
+                  >
+                    <input 
+                      type="radio" 
+                      name="category" 
+                      value={category.id} 
+                      style="margin-right: 8px;"
+                    />
+                    {category.name}
+                    <span class="filter-count">({category.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧插件列表 -->
+        <div class="col-lg-10 col-md-9 col-12">
+          <div class="plugins-content">
+            <!-- 搜索、统计和排序 -->
+            <div class="plugins-header mb-4 sticky-search" style="z-index: 1;">
+              <div class="row align-items-center g-3">
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="search-container" style="margin-left: 1rem;">
+                    <div class="position-relative">
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="搜索插件..." 
+                        id="pluginSearch"
+                        style="padding-left: 40px;"
+                      />
+                      <i class="uil uil-search position-absolute" style="left: 12px; top: 50%; transform: translateY(-50%); color: #6c757d; font-size: 18px;"></i>
+                    </div>
                   </div>
-                </>
-            ))
+                </div>
+                <div class="col-lg-4 col-md-3 col-12 text-center">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-end">
+                  <div class="plugins-sort">
+                    <select class="form-select form-select-sm" id="pluginSort">
+                      <option value="default">默认排序</option>
+                      <option value="name">按名称</option>
+                      <option value="newest">最新发布</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 插件网格 -->
+            <div class="row" id="pluginsGrid">
+              {finalGroups.map((group) => (
+                group.plugins.map((plugin: any) => (
+                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                    <div 
+                      title={plugin.name_cn || plugin.name}
+                      style="color: inherit;"
+                      class="card rounded shadow border-0 plugin-card h-100"
+                      data-plugin-name={plugin.name_cn || plugin.name}
+                      data-plugin-type={plugin.coming ? 'coming' : plugin.commercial ? 'commercial' : 'free'}
+                      data-plugin-category={group.id}
+                      data-plugin-newly={plugin.newly ? 'true' : 'false'}
+                    >
+                      <div class="card-body d-flex flex-column">
+                        <div class="mt-2 plugin-box flex-grow-1">
+                          <h6 class="card-title mb-1">
+                            {plugin.name_cn || plugin.name}
+                          </h6>
+                          <div class="plugin-developer text-muted mb-3">
+                            By <span>{plugin.developer || 'NocoBase'}</span>
+                          </div>
+                          <p class="text-muted mb-2 plugin-overview">
+                            {plugin.description_cn || plugin.description}
+                            {plugin.docs_cn && (
+                              <a 
+                                href={plugin.docs_cn} 
+                                target="_blank" 
+                                style="font-size: 14px;"
+                              >
+                                详情
+                              </a>
+                            )}
+                          </p>
+                        </div>
+                        <div class="plugin-footer mt-auto">
+                          {plugin.coming ? (
+                            <span class="badge bg-soft-info plugin-type">
+                              即将发布
+                            </span>
+                          ) : plugin.commercial ? (
+                            <>
+                              <h6 class="text-primary mb-0">
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
+                                  永久使用, 1 年升级
+                                </span>
+                                <br />
+                                <a href="/cn/plugins-bundles">
+                                  {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i>
+                                </a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted">
+                                  ￥{plugin.price_1_year_cn ? plugin.price_1_year_cn.toLocaleString('en-US') : '?'}
+                                </span>
+                              </h6>
+                              <h6 
+                                class="text-muted mb-0"
+                                style="margin-left: auto; font-weight: normal;"
+                              >
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
+                                  永久使用和升级
+                                </span>
+                                <br />
+                                <a class="text-muted" href="/cn/plugins-bundles">
+                                  {plugin.point} <i class="uil uil-moon-eclipse me-1"></i>
+                                </a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted">
+                                  ￥{plugin.price_cny ? plugin.price_cny.toLocaleString('en-US') : '?'}
+                                </span>
+                              </h6>
+                            </>
+                          ) : (
+                            <span class="badge bg-soft-primary plugin-type">
+                              免费
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ))}
+            </div>
+
+            <!-- 无结果提示 -->
+            <div class="no-results text-center py-5" id="noResults" style="display: none;">
+              <i class="uil uil-search text-muted" style="font-size: 3rem;"></i>
+              <h5 class="mt-3 text-muted">没有找到匹配的插件</h5>
+              <p class="text-muted">请尝试调整搜索条件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 样式 -->
+  <style>
+    /* 搜索容器 */
+    .search-container {
+      flex-shrink: 0;
+    }
+
+    /* 悬浮元素 */
+    .sticky-search {
+      position: sticky;
+      top: 70px;
+      z-index: 1000;
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    /* 侧边栏筛选器 */
+    .plugins-sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+    }
+
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #343a40;
+      font-size: 1rem;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .filter-link {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 0.95rem;
+      font-weight: normal;
+      transition: all 0.2s;
+    }
+    
+    .filter-link input[type="radio"], 
+    .filter-link input[type="checkbox"] {
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    
+    .filter-link .filter-count {
+      margin-left: auto;
+    }
+
+    .filter-link:hover {
+      background-color: #f8f9fa;
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .filter-link[data-active="true"] {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .filter-count {
+      color: inherit;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    /* 插件内容区域 */
+    .plugins-content {
+      padding-left: 1rem;
+    }
+
+    /* 插件卡片 */
+    .plugin-card {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .plugin-overview {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .plugin-footer {
+      margin-top: 1rem;
+    }
+
+    .plugin-type .badge {
+      font-size: 0.75rem;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .plugins-sidebar {
+        position: relative;
+        top: auto;
+        margin-bottom: 2rem;
+      }
+      
+      .plugins-content {
+        padding-left: 0;
+      }
+      
+      .sticky-search .col-12 {
+        margin-bottom: 0.5rem;
+      }
+      
+      .sticky-search .col-12:last-child {
+        margin-bottom: 0;
+      }
+      
+      .sticky-search .text-center,
+      .sticky-search .text-end {
+        text-align: left !important;
+      }
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('pluginSearch') as HTMLInputElement;
+      const pluginsGrid = document.getElementById('pluginsGrid') as HTMLElement;
+      const noResults = document.getElementById('noResults') as HTMLElement;
+      const filterLinks = document.querySelectorAll('.filter-link') as NodeListOf<HTMLAnchorElement>;
+      const sortSelect = document.getElementById('pluginSort') as HTMLSelectElement;
+
+      if (!searchInput || !pluginsGrid || !noResults || !sortSelect) {
+        return;
+      }
+
+      let allPlugins = Array.from(document.querySelectorAll('.plugin-card')) as HTMLElement[];
+      let filteredPlugins = [...allPlugins];
+      let selectedPricing = 'all';
+      let selectedRelease = '';
+      let selectedCategory = 'all';
+
+      function filterPlugins() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        filteredPlugins = allPlugins.filter(plugin => {
+          // 搜索过滤
+          const pluginName = plugin.dataset.pluginName?.toLowerCase() || '';
+          const pluginDescElement = plugin.querySelector('.plugin-overview');
+          const pluginDesc = pluginDescElement?.textContent?.toLowerCase() || '';
+          const matchesSearch = pluginName.includes(searchTerm) || pluginDesc.includes(searchTerm);
+
+          // 价格过滤
+          const pluginType = plugin.dataset.pluginType || '';
+          let matchesPricing = true;
+          if (selectedPricing !== 'all') {
+            matchesPricing = pluginType === selectedPricing;
+          }
+
+          // 发布状态过滤
+          const isNewly = plugin.dataset.pluginNewly === 'true';
+          let matchesRelease = true;
+          if (selectedRelease) {
+            if (selectedRelease === 'newly') {
+              matchesRelease = isNewly;
+            } else if (selectedRelease === 'coming') {
+              matchesRelease = pluginType === 'coming';
+            }
+          }
+
+          // 分类过滤
+          const pluginCategory = plugin.dataset.pluginCategory || '';
+          const matchesCategory = selectedCategory === 'all' || pluginCategory === selectedCategory;
+
+          return matchesSearch && matchesPricing && matchesRelease && matchesCategory;
+        });
+
+        updateDisplay();
+      }
+
+      function updateDisplay() {
+        // 隐藏所有插件
+        allPlugins.forEach(plugin => {
+          if (plugin.parentElement) {
+            plugin.parentElement.style.display = 'none';
+          }
+        });
+
+        // 显示筛选后的插件
+        filteredPlugins.forEach(plugin => {
+          if (plugin.parentElement) {
+            plugin.parentElement.style.display = '';
+          }
+        });
+
+        // 更新计数已移除，因为页面中没有计数显示元素
+
+        // 显示/隐藏无结果提示
+        if (filteredPlugins.length === 0) {
+          noResults.style.display = 'block';
+          pluginsGrid.style.display = 'none';
+        } else {
+          noResults.style.display = 'none';
+          pluginsGrid.style.display = '';
         }
-      </div><!--end container-->
-    </section><!--end section-->
-  </Layout><!--end section-->
+      }
+
+      function sortPlugins() {
+        const sortValue = sortSelect.value;
+        
+        filteredPlugins.sort((a, b) => {
+          switch (sortValue) {
+            case 'name':
+              const aName = a.dataset.pluginName || '';
+              const bName = b.dataset.pluginName || '';
+              return aName.localeCompare(bName);
+            case 'newest':
+              // 最新发布的排在前面
+              const aIsNew = a.dataset.pluginNewly === 'true';
+              const bIsNew = b.dataset.pluginNewly === 'true';
+              if (aIsNew && !bIsNew) return -1;
+              if (!aIsNew && bIsNew) return 1;
+              return 0;
+            default:
+              return 0;
+          }
+        });
+
+        // 重新排列DOM元素
+        filteredPlugins.forEach(plugin => {
+          if (plugin.parentElement && plugin.parentElement.parentNode) {
+            plugin.parentElement.parentNode.appendChild(plugin.parentElement);
+          }
+        });
+      }
+
+      function handleFilterClick(e: Event) {
+        e.preventDefault();
+        const target = e.target as HTMLElement;
+        
+        // 如果点击的是输入框，不处理（由change事件处理）
+        if (target.tagName === 'INPUT') {
+          return;
+        }
+        
+        const link = target.closest('.filter-link') as HTMLAnchorElement;
+        if (!link) return;
+
+        const filterType = link.dataset.filterType;
+        const filterValue = link.dataset.filterValue;
+
+        if (!filterType || !filterValue) return;
+
+        // 更新选中状态
+        if (filterType === 'pricing') {
+          selectedPricing = filterValue;
+          // 更新价格链接状态和radio button
+          document.querySelectorAll('[data-filter-type="pricing"]').forEach(el => {
+            el.setAttribute('data-active', 'false');
+            const radio = el.querySelector('input[type="radio"]') as HTMLInputElement;
+            if (radio) radio.checked = false;
+          });
+          link.setAttribute('data-active', 'true');
+          const radio = link.querySelector('input[type="radio"]') as HTMLInputElement;
+          if (radio) radio.checked = true;
+        } else if (filterType === 'release') {
+          // 发布状态可以取消选择
+          const checkbox = link.querySelector('input[type="checkbox"]') as HTMLInputElement;
+          if (selectedRelease === filterValue) {
+            selectedRelease = '';
+            link.setAttribute('data-active', 'false');
+            if (checkbox) checkbox.checked = false;
+          } else {
+            selectedRelease = filterValue;
+            // 先清除所有发布状态的选中
+            document.querySelectorAll('[data-filter-type="release"]').forEach(el => {
+              el.setAttribute('data-active', 'false');
+              const cb = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+              if (cb) cb.checked = false;
+            });
+            link.setAttribute('data-active', 'true');
+            if (checkbox) checkbox.checked = true;
+          }
+        } else if (filterType === 'category') {
+          selectedCategory = filterValue;
+          // 更新分类链接状态和radio button
+          document.querySelectorAll('[data-filter-type="category"]').forEach(el => {
+            el.setAttribute('data-active', 'false');
+            const radio = el.querySelector('input[type="radio"]') as HTMLInputElement;
+            if (radio) radio.checked = false;
+          });
+          link.setAttribute('data-active', 'true');
+          const radio = link.querySelector('input[type="radio"]') as HTMLInputElement;
+          if (radio) radio.checked = true;
+        }
+
+        filterPlugins();
+      }
+
+      // 事件监听器
+      searchInput.addEventListener('input', filterPlugins);
+      filterLinks.forEach(link => link.addEventListener('click', handleFilterClick));
+      
+      // 监听输入框的直接点击
+      document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+        input.addEventListener('change', function(e) {
+          const inputElement = e.target as HTMLInputElement;
+          const link = inputElement.closest('.filter-link') as HTMLAnchorElement;
+          if (link) {
+            const filterType = link.dataset.filterType;
+            const filterValue = link.dataset.filterValue;
+            
+            if (!filterType || !filterValue) return;
+            
+            // 直接处理筛选逻辑
+            if (filterType === 'pricing') {
+              selectedPricing = filterValue;
+              document.querySelectorAll('[data-filter-type="pricing"]').forEach(el => {
+                el.setAttribute('data-active', 'false');
+              });
+              link.setAttribute('data-active', 'true');
+                         } else if (filterType === 'release') {
+               if (inputElement.checked) {
+                 selectedRelease = filterValue;
+                 document.querySelectorAll('[data-filter-type="release"]').forEach(el => {
+                   el.setAttribute('data-active', 'false');
+                   const cb = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+                   if (cb) cb.checked = false;
+                 });
+                 link.setAttribute('data-active', 'true');
+                 inputElement.checked = true;
+               } else {
+                 selectedRelease = '';
+                 link.setAttribute('data-active', 'false');
+               }
+            } else if (filterType === 'category') {
+              selectedCategory = filterValue;
+              document.querySelectorAll('[data-filter-type="category"]').forEach(el => {
+                el.setAttribute('data-active', 'false');
+              });
+              link.setAttribute('data-active', 'true');
+            }
+            
+            filterPlugins();
+          }
+        });
+      });
+      
+      sortSelect.addEventListener('change', () => {
+        sortPlugins();
+        updateDisplay();
+      });
+
+      // 初始化
+      updateDisplay();
+    });
+  </script>
+</Layout>
