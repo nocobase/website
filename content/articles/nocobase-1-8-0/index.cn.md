@@ -88,7 +88,7 @@ Markdown 内容现已支持本地化，可使用 `{{t 'xxx'}}` 语法插入多�
 
 ![image-uu5ubi.png](https://static-docs.nocobase.com/image-uu5ubi.png)
 
-参考文档：缺少手册
+参考文档：[周起始日](https://docs-cn.nocobase.com/handbook/calendar#%E5%91%A8%E8%B5%B7%E5%A7%8B%E6%97%A5)
 
 ### Markdown（Vditor）查看模式支持图片点击放大
 
