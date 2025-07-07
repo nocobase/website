@@ -88,7 +88,7 @@ You can now customize the calendar view’s week start day, choosing either Sund
 
 ![image-uu5ubi.png](https://static-docs.nocobase.com/image-uu5ubi.png)
 
-Reference: None
+Reference: [Week start day](https://docs.nocobase.com/handbook/calendar#week-start-day)
 
 ### Markdown (Vditor) View Mode Supports Image Click-to-Zoom
 
