@@ -93,7 +93,7 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 
 ![image-uu5ubi.png](https://static-docs.nocobase.com/image-uu5ubi.png)
 
-参考ドキュメント：None
+参考ドキュメント：[週の開始曜日](https://docs-jp.nocobase.com/handbook/calendar#week-start-day)
 
 ### Markdown（Vditor）表示モードで画像のクリックズームをサポート
 
