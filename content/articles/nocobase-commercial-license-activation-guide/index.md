@@ -70,7 +70,7 @@ After license activation, you can click the license information icon in the uppe
 When encountering issues, you can refer to this checklist for quick troubleshooting:
 
 - [ ]  **Step 1: Get Instance ID**
-  - [ ]  NocoBase open source/unlicensed version is running successfully.
+  - [ ]  NocoBase Community Edition/Unlicensed Edition is running successfully.
   - [ ]  `Instance ID` has been completely copied from the `License settings` page.
 - [ ]  **Step 2: Generate License Key**
   - [ ]  Application has been created on the Service platform.
