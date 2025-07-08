@@ -70,7 +70,7 @@
 遇到问题时，可以对照这份清单快速排查：
 
 - [ ]  **第一步：获取 Instance ID**
-  - [ ]  NocoBase 开源版/未授权版 已成功运行。
+  - [ ]  NocoBase 社区版/未授权版 已成功运行。
   - [ ]  已从 `License settings` 页面完整复制了 `Instance ID`。
 - [ ]  **第二步：生成 License Key**
   - [ ]  已在 Service 平台创建应用。
