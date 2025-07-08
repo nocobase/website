@@ -10,7 +10,10 @@ The core advantages of the new solution include:
 * **License Protection**: Through backend license management and status monitoring, you can monitor the actual usage of your license, promptly detect and handle unauthorized applications, and prevent commercial license misuse.
 
 This guide will walk you through the complete new NocoBase commercial license activation process.
-<image src="https://static-docs.nocobase.com/undefined20250701165905545.png" >
+
+
+<image src="https://static-docs.nocobase.com/undefined20250701160935956.png" >
+
 
 ---
 
