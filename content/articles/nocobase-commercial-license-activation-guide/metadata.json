@@ -1,0 +1,23 @@
+{
+  "id": 607,
+  "title": "NocoBase Commercial License Activation Guide",
+  "title_cn": "NocoBase 商业授权激活指南",
+  "title_ja": "NocoBase 商用ライセンス認証ガイド",
+  "description": "A guide to activating your NocoBase commercial license. Learn how to quickly and securely activate your commercial features using the new \"Instance ID\" and \"License Key\" method.",
+  "description_cn": "NocoBase 商业授权激活指南。学习如何通过全新的“实例 ID”和“授权密钥”方式，快速、安全地激活您的商业版功能。",
+  "description_ja": "NocoBase商用ライセンスの有効化ガイド。新しい「インスタンスID」と「ライセンスキー」方式を利用して、商用機能を迅速かつ安全に有効化する方法を解説します。",
+  "slug": "nocobase-commercial-license-activation-guide",
+  "publishedAt": "2025-07-08T01:30:33.078Z",
+  "status": "drafted",
+  "tags": [],
+  "sub_tags": [],
+  "category": null,
+  "cover": null,
+  "hideOnListPage": false,
+  "hideOnBlog": false,
+  "author": "Albert Ma",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-07-08T01:52:29.101Z"
+}
