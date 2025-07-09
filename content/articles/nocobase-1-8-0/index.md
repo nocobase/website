@@ -22,15 +22,11 @@ The email management module has been fully upgraded, now supporting email deleti
 
 ![image-9dyulg.png](https://static-docs.nocobase.com/image-9dyulg.png)
 
-Reference: None
-
 ### Data Sources
 
 支Supports the SQL Server BIT field in external data sources and enables on-demand loading of data tables from external sources.
 
 ![image-rml96b.png](https://static-docs.nocobase.com/image-rml96b.png)
-
-Reference: None
 
 ### Text Copy
 
@@ -38,15 +34,11 @@ Supports one-click copying of text field content.
 
 ![20250707105447_rec_-m25b6x.gif](https://static-docs.nocobase.com/20250707105447_rec_-m25b6x.gif)
 
-Reference: None
-
 ### [Workflow: HTTP Request Node] Support for `multipart/form-data` Type
 
 When configuring an HTTP Request node in a workflow, you can now select the `multipart/form-data` content type. Once enabled, the request body accepts form-data submissions—including `file` fields—to support file uploads and similar scenarios.
 
 ![image-gutu74.png](https://static-docs.nocobase.com/image-gutu74.png)
-
-Reference: None
 
 ### [Workflow: Approval] Approval Node Results Support Generating Approval Record Variables
 
@@ -80,8 +72,6 @@ A new **"Open in new window"** option has been added for menu links, allowing yo
 
 ![image-x0qfsq.png](https://static-docs.nocobase.com/image-x0qfsq.png)
 
-Reference: None
-
 ### Calendar Block Supports Setting Week Start Day
 
 You can now customize the calendar view’s week start day, choosing either Sunday or Monday to fit different regional preferences and habits.
@@ -96,8 +86,6 @@ In view mode, images within Markdown content can be clicked to enlarge, enhancin
 
 ![20250707134351_rec_-zd0mvw.gif](https://static-docs.nocobase.com/20250707134351_rec_-zd0mvw.gif)
 
-Reference: None
-
 ### Comprehensive Enhancement Of Workflow Module Functionality And Performance
 
 - Support filtering workflows by more fields to improve search efficiency
@@ -108,8 +96,6 @@ Reference: None
 
 ![image-5b3byb.png](https://static-docs.nocobase.com/image-5b3byb.png)
 
-Reference: None
-
 ### Approval Process Functionality Enhancements And Experience Improvements
 
 - Added Configuration Option For Transfer And Add Sign Personnel Selection Lists, Supporting Display Of More Field Information To Assist More Accurate Selection
@@ -118,8 +104,6 @@ Reference: None
 - Adjusted Variable API Interface Structure To Enhance Flexibility And Consistency
 
 ![20250707141716_rec_-v2nc4q.gif](https://static-docs.nocobase.com/20250707141716_rec_-v2nc4q.gif)
-
-Reference: None
 
 ### Support Configuring Database Connection Pool Options Via Environment Variables
 
@@ -132,8 +116,6 @@ Database connection pool parameters can be flexibly set through environment vari
 Supports paginated loading of comments to enhance loading performance and reading experience in scenarios with large data volumes.
 
 ![20250707155143_rec_-ch7qvy.gif](https://static-docs.nocobase.com/20250707155143_rec_-ch7qvy.gif)
-
-Reference: None
 
 ### Mobile Experience Improvements
 
