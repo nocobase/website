@@ -22,15 +22,11 @@
 
 ![image-fyxonb.png](https://static-docs.nocobase.com/image-fyxonb.png)
 
-参考文档：缺少手册
-
 ### 数据源
 
 支持外部数据源中的 SQL Server BIT 字段，支持外部数据源按需加载数据表
 
 ![image-h3tk70.png](https://static-docs.nocobase.com/image-h3tk70.png)
-
-参考文档：缺少手册
 
 ### 文本复制
 
@@ -38,15 +34,11 @@
 
 ![20250707105447_rec_-m25b6x.gif](https://static-docs.nocobase.com/20250707105447_rec_-m25b6x.gif)
 
-参考文档：缺少手册
-
 ### [工作流：HTTP 请求节点] 支持 `multipart/form-data` 类型
 
 在工作流中配置 HTTP 请求节点时，现已支持选择 `multipart/form-data` 类型。启用该类型后，可在请求 Body 中以 `form-data` 方式传递数据，支持包含 `file` 类型字段，实现文件上传等场景。
 
 ![image-gutu74.png](https://static-docs.nocobase.com/image-gutu74.png)
-
-参考文档：缺少手册
 
 ### [工作流：审批] 审批节点结果支持生成审批记录变量
 
@@ -80,8 +72,6 @@ Markdown 内容现已支持本地化，可使用 `{{t 'xxx'}}` 语法插入多�
 
 ![image-x0qfsq.png](https://static-docs.nocobase.com/image-x0qfsq.png)
 
-参考文档：缺少手册
-
 ### 日历区块支持设置周起始日
 
 可自定义日历视图的周起始日，支持选择「周日」或「周一」，满足不同地区和使用习惯。
@@ -96,8 +86,6 @@ Markdown 内容现已支持本地化，可使用 `{{t 'xxx'}}` 语法插入多�
 
 ![20250707134351_rec_-zd0mvw.gif](https://static-docs.nocobase.com/20250707134351_rec_-zd0mvw.gif)
 
-参考文档：缺少手册
-
 ### 工作流模块功能与性能全面提升
 
 - 支持使用更多字段进行工作流筛选，提升查找效率
@@ -108,8 +96,6 @@ Markdown 内容现已支持本地化，可使用 `{{t 'xxx'}}` 语法插入多�
 
 ![image-5b3byb.png](https://static-docs.nocobase.com/image-5b3byb.png)
 
-参考文档：缺少手册
-
 ### 审批流程功能增强与体验提升
 
 - 转签、加签人员选择列表新增配置项，支持显示更多字段信息，辅助更精准选人
@@ -118,8 +104,6 @@ Markdown 内容现已支持本地化，可使用 `{{t 'xxx'}}` 语法插入多�
 - 调整变量 API 接口结构，提升灵活性与一致性
 
 ![20250707141716_rec_-v2nc4q.gif](https://static-docs.nocobase.com/20250707141716_rec_-v2nc4q.gif)
-
-参考文档：缺少手册
 
 ### 支持通过环境变量配置数据库连接池选项
 
