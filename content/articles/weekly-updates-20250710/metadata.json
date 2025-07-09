@@ -1,11 +1,11 @@
 {
   "id": 609,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Support Custom Aggregation Variables",
+  "title_cn": "NocoBase 本周更新汇总：支持自定义聚合变量",
+  "title_ja": "NocoBase 今週の更新：カスタム集計変数をサポート",
+  "description": "This week’s updates include: adding an event queue to process messages in the queue and supporting on-demand loading of collections from external data sources.",
+  "description_cn": "本周更新包括：新增用于处理队列消息的事件队列，支持外部数据源按需加载数据表等。",
+  "description_ja": "今週の更新では、キュー内のメッセージを処理するイベントキューの追加や、外部データソースからコレクションをオンデマンドで読み込む機能のサポートが含まれています。",
   "slug": "weekly-updates-20250710",
   "publishedAt": "2025-07-10T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-09T10:57:24.799Z"
+  "updatedAt": "2025-07-09T11:54:43.966Z"
 }
