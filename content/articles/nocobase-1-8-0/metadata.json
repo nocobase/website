@@ -1,6 +1,6 @@
 {
   "id": 602,
-  "title": "NocoBase v1.8.0 Officially Released",
+  "title": "Announcing NocoBase v1.8.0",
   "title_cn": "NocoBase v1.8.0 正式版发布",
   "title_ja": "NocoBase v1.8.0 正式リリース",
   "description": "Improved Authentication Process, Supporting Custom Statistical Variables And Email Management Upgrades, Optimizing Workflow Experience And Mobile Interaction",
@@ -271,5 +271,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-07-09T07:05:57.124Z"
+  "updatedAt": "2025-07-09T07:51:15.123Z"
 }
