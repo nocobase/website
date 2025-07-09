@@ -1,5 +1,7 @@
 Summarize the weekly product update logs, and the latest releases can be checked on [our blog](https://www.nocobase.com/en/blog/timeline).
 
+**This week we released [NocoBase 1.8.0](https://www.nocobase.com/en/blog/nocobase-1-8-0), with improved authentication, support for custom stats variables, upgraded email management, and optimized workflow and mobile interaction.**
+
 **NocoBase is currently updated with three branches: `main` , `next` and `develop`.**
 
 ![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
