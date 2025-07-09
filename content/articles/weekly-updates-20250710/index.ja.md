@@ -1,5 +1,7 @@
 週間のプロダクトアップデートログを要約し、最新リリースは[当社のブログ](https://www.nocobase.com/ja/blog/timeline)でご確認いただけます。
 
+**今週、[NocoBase 1.8.0](https://www.nocobase.com/ja/blog/nocobase-1-8-0) をリリースいたしました。本バージョンでは、認証プロセスの改良、カスタム統計変数のサポート、メール管理のアップグレードに加え、ワークフロー体験とモバイル操作の最適化を実施しています。**
+
 **NocoBaseは現在、`main`、`next`および`develop`の3つのブランチで更新されています。**
 
 ![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
