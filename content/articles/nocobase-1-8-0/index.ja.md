@@ -24,15 +24,11 @@
 
 ![image-9dyulg.png](https://static-docs.nocobase.com/image-9dyulg.png)
 
-参考ドキュメント：None
-
 ### データソース
 
 外部データソースの SQL Server の BIT フィールドをサポートし、外部ソースからのデータテーブルのオンデマンド読み込みを可能にします。
 
 ![image-rml96b.png](https://static-docs.nocobase.com/image-rml96b.png)
-
-参考ドキュメント：None
 
 ### テキストコピー
 
@@ -40,16 +36,12 @@
 
 ![20250707105447_rec_-m25b6x.gif](https://static-docs.nocobase.com/20250707105447_rec_-m25b6x.gif)
 
-参考ドキュメント：None
-
 ### 【ワークフロー：HTTPリクエストノード】multipart/form-dataタイプのサポート
 
 ワークフローのHTTPリクエストノードの設定時に、multipart/form-dataコンテンツタイプを選択できるようになりました。
 有効にすると、リクエストボディはフォームデータの送信（fileフィールドを含む）を受け入れ、ファイルアップロードなどのシナリオをサポートします。
 
 ![image-gutu74.png](https://static-docs.nocobase.com/image-gutu74.png)
-
-参考ドキュメント：None
 
 ### 【ワークフロー：承認】承認ノード結果の承認記録変数生成サポート
 
@@ -85,8 +77,6 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 
 ![image-x0qfsq.png](https://static-docs.nocobase.com/image-x0qfsq.png)
 
-参考ドキュメント：None
-
 ### カレンダーブロックで週の開始曜日を設定可能に
 
 カレンダー表示の週の開始曜日を日曜日または月曜日から選択でき、地域ごとの習慣に合わせてカスタマイズ可能になりました。
@@ -101,8 +91,6 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 
 ![20250707134351_rec_-zd0mvw.gif](https://static-docs.nocobase.com/20250707134351_rec_-zd0mvw.gif)
 
-参考ドキュメント：None
-
 ### ワークフローモジュールの機能とパフォーマンスの包括的な強化
 
 - より多くのフィールドによるワークフローのフィルタリングをサポートし、検索効率を向上
@@ -113,8 +101,6 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 
 ![image-5b3byb.png](https://static-docs.nocobase.com/image-5b3byb.png)
 
-参考ドキュメント：None
-
 ### 承認プロセス機能強化と体験向上
 
 - 転署・加署の担当者選択リストに設定項目を追加し、より多くのフィールド情報の表示をサポートして、より正確な選択を支援
@@ -123,8 +109,6 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 - 変数APIインターフェース構造を調整し、柔軟性と一貫性を強化
 
 ![20250707141716_rec_-v2nc4q.gif](https://static-docs.nocobase.com/20250707141716_rec_-v2nc4q.gif)
-
-参考ドキュメント：None
 
 ### 環境変数によるデータベース接続プールオプションの設定をサポート
 
@@ -137,8 +121,6 @@ Markdownコンテンツが {{t 'xxx' }} 構文を使った多言語テキスト�
 大量データのシナリオにおいて、コメントのページ分け読み込みをサポートし、読み込み性能と閲覧体験を向上させます。
 
 ![20250707155143_rec_-ch7qvy.gif](https://static-docs.nocobase.com/20250707155143_rec_-ch7qvy.gif)
-
-参考ドキュメント：None
 
 ### モバイル体験の改善
 
