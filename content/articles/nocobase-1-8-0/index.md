@@ -18,13 +18,13 @@ Reference: [Custom Variables](https://docs.nocobase.com/handbook/custom-variable
 
 ### Email Management
 
-The email management module has been fully upgraded, now supporting email deletion, batch sending, sync interval settings, AI-generated content, and various user experience improvements.
+The email management module has been fully upgraded, now supporting email deletion, batch sending, sync interval settings, and various user experience improvements.
 
 ![Email Management.png](https://static-docs.nocobase.com/image-9dyulg.png)
 
 ### Data Sources
 
-支Supports the SQL Server BIT field in external data sources and enables on-demand loading of data tables from external sources.
+Supports the SQL Server BIT field in external data sources and enables on-demand loading of data tables from external sources.
 
 ![Data Sources.png](https://static-docs.nocobase.com/image-rml96b.png)
 
