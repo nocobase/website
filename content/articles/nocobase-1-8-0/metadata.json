@@ -248,12 +248,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-07-09T05:22:54.392Z",
+    "updatedAt": "2025-07-09T05:22:54.392Z",
+    "id": 1571,
+    "title": "大版本发布 (2)",
+    "filename": "大版本发布 (2)-qh2dyl.png",
+    "extname": ".png",
+    "size": 547691,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(2)-qh2dyl.png",
+    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(2)-qh2dyl.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-07-09T02:24:50.526Z"
+  "updatedAt": "2025-07-09T05:25:47.822Z"
 }
