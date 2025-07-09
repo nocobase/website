@@ -18,7 +18,7 @@
 
 ### 邮件管理
 
-邮件管理模块全面升级，支持邮件删除、批量发送、同步设置、AI 生成内容及多项体验优化。
+邮件管理模块全面升级，支持邮件删除、批量发送、同步设置及多项体验优化。
 
 ![Email Management.png](https://static-docs.nocobase.com/image-fyxonb.png)
 
