@@ -1,5 +1,7 @@
 汇总一周产品更新日志，最新发布可以[前往我们的博客查看](https://www.nocobase.com/cn/blog/timeline)。
 
+**本周我们发布了 [NocoBase 1.8.0 版本](https://www.nocobase.com/cn/blog/nocobase-1-8-0)，该版本完善认证流程，支持自定义统计变量与邮件管理升级，优化工作流体验与移动端交互。**
+
 **NocoBase 目前更新包括的版本更新包括三个分支：`main` ，`next`和 `develop`。**
 
 ![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
