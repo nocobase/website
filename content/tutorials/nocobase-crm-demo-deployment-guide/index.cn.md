@@ -48,7 +48,7 @@ docker pull nocobase/nocobase:1.8.1-full
 **第 2 步：开启《备份管理器》插件**
 
 1. 登录您的 NocoBase 系统。
-2. 进入左侧菜单的 **`插件管理`** 。
+2. 进入 **`插件管理`** 。
 3. 找到并启用 **`备份管理器`** 插件。
 
 ![20250711014113](https://static-docs.nocobase.com/20250711014113.png)
