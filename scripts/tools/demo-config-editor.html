@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Config Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            font-size: 13px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .header {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .header p {
+            font-size: 12px;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 10px;
+            height: calc(100vh - 120px);
+            min-height: 400px;
+        }
+
+        .left-panel {
+            width: 250px;
+            background: white;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center-panel {
+            flex: 1;
+            background: white;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-panel {
+            width: 300px;
+            background: white;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .steps-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 5px;
+        }
+
+        .steps-header {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            background: #f5f5f5;
+        }
+
+        .steps-header h3 {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .step-item {
+            margin-bottom: 3px;
+            padding: 3px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .step-item.active {
+            border-color: #007bff;
+            background: #e6f3ff;
+        }
+
+        .step-item.pending {
+            border: 1px dashed #666;
+            background: #f0f0f0;
+        }
+
+        .step-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2px;
+            font-size: 10px;
+        }
+
+        .step-item-header div {
+            display: flex;
+            gap: 2px;
+        }
+
+        .step-item-header button {
+            padding: 0px 4px;
+            font-size: 10px;
+            line-height: 1.2;
+            min-width: 16px;
+            height: 16px;
+        }
+
+        .step-item input {
+            width: 100%;
+            padding: 1px 2px;
+            margin-bottom: 1px;
+            border: 1px solid #ccc;
+            font-size: 9px;
+        }
+
+        .step-item select {
+            width: 100%;
+            padding: 1px;
+            border: 1px solid #ccc;
+            font-size: 9px;
+            margin-bottom: 1px;
+        }
+
+        .step-item button {
+            padding: 1px 2px;
+            font-size: 9px;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .step-button-config input,
+        .step-button-config select {
+            padding: 3px 5px;
+            font-size: 11px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .add-step-btn {
+            width: 100%;
+            padding: 12px;
+            border: 2px dashed #28a745;
+            background: #f8fff9;
+            color: #28a745;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.2s;
+        }
+
+        .add-step-btn:hover {
+            background: #e8f5e8;
+            border-color: #1e7e34;
+            color: #1e7e34;
+        }
+
+        .image-container {
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+            background: #f8f9fa;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .image-display {
+            width: 100%;
+            height: 100%;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: auto;
+        }
+
+        .demo-image {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 4px;
+            cursor: crosshair;
+        }
+
+        .marker {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marker svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .marker:hover {
+            transform: scale(1.1);
+        }
+
+        .toolbar {
+            padding: 15px;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .toolbar-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .toolbar-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-group {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .form-group:last-child {
+            border-bottom: none;
+        }
+
+        .form-group h3 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .form-row:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            min-width: 80px;
+            font-weight: 500;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        textarea,
+        select {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+
+        .steps-list {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .step-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .step-item:hover {
+            background: #f8f9fa;
+        }
+
+        .step-item.active {
+            background: #e3f2fd;
+            border-left: 3px solid #2196f3;
+        }
+
+        .step-item:last-child {
+            border-bottom: none;
+        }
+
+        .step-title {
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .step-id {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .json-import-export {
+            margin-bottom: 15px;
+        }
+
+        .json-textarea {
+            width: 100%;
+            min-height: 120px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #666;
+            padding: 40px;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 10px;
+        }
+
+        .placeholder-text {
+            color: #999;
+            font-style: italic;
+        }
+
+        .position-display {
+            font-family: monospace;
+            font-size: 12px;
+            color: #666;
+            background: #f8f9fa;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .config-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .config-section h4 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* 预览面板样式 */
+        .preview-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .json-section {
+            height: 200px;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .preview-header {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-header h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .preview-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .preview-controls button {
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+
+        /* 全屏预览样式 */
+        .fullscreen-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fullscreen-overlay.active {
+            display: flex;
+        }
+
+        .fullscreen-content {
+            max-width: 1200px;
+            max-height: 90vh;
+            width: 90vw;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .fullscreen-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fullscreen-header h2 {
+            margin: 0;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .fullscreen-demo {
+            flex: 1;
+            padding: 30px;
+            overflow: auto;
+            background: white;
+        }
+
+        .fullscreen-navigation {
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-fullscreen {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .close-fullscreen:hover {
+            background: #c82333;
+        }
+
+        /* 全屏演示内容样式 - 模仿InteractiveDemo.astro */
+        .fullscreen-demo-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 100%;
+        }
+
+        .fullscreen-demo-container {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .fullscreen-demo-button {
+            position: absolute !important;
+            width: 80px !important;
+            height: 80px !important;
+            cursor: pointer !important;
+            z-index: 10 !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.3s ease !important;
+            border: none !important;
+            background: none !important;
+            padding: 0 !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        .fullscreen-demo-button:hover {
+            transform: translate(-50%, -50%) scale(1.1) !important;
+        }
+
+        .fullscreen-demo-button svg {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* 全屏模式下的步骤信息 */
+        .fullscreen-step-info {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .fullscreen-step-info h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .fullscreen-step-info p {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* 全屏模式下的tooltip样式 - 模仿InteractiveDemo.astro */
+        .fullscreen-demo-button::after {
+            content: attr(aria-label);
+            position: absolute;
+            background: rgba(250, 84, 28, 0.9);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 100;
+            max-width: 200px;
+            word-wrap: break-word;
+            white-space: normal;
+            line-height: 1.4;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .fullscreen-demo-button::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .fullscreen-demo-button:hover::after,
+        .fullscreen-demo-button:hover::before {
+            opacity: 1;
+        }
+
+        /* 上方提示 */
+        .fullscreen-demo-button[data-balloon-pos="up"]::after {
+            bottom: 100%;
+            left: 50%;
+            margin-bottom: 5px;
+            transform: translateX(-50%);
+        }
+
+        .fullscreen-demo-button[data-balloon-pos="up"]::before {
+            bottom: 100%;
+            left: 50%;
+            margin-bottom: -1px;
+            transform: translateX(-50%);
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-top: 6px solid rgba(250, 84, 28, 0.9);
+        }
+
+        /* 下方提示 */
+        .fullscreen-demo-button[data-balloon-pos="down"]::after {
+            top: 100%;
+            left: 50%;
+            margin-top: 5px;
+            transform: translateX(-50%);
+        }
+
+        .fullscreen-demo-button[data-balloon-pos="down"]::before {
+            top: 100%;
+            left: 50%;
+            margin-top: -1px;
+            transform: translateX(-50%);
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-bottom: 6px solid rgba(250, 84, 28, 0.9);
+        }
+
+        /* 左侧提示 */
+        .fullscreen-demo-button[data-balloon-pos="left"]::after {
+            right: 100%;
+            top: 50%;
+            margin-right: 5px;
+            transform: translateY(-50%);
+            max-width: 180px;
+        }
+
+        .fullscreen-demo-button[data-balloon-pos="left"]::before {
+            right: 100%;
+            top: 50%;
+            margin-right: -1px;
+            transform: translateY(-50%);
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 6px solid rgba(250, 84, 28, 0.9);
+        }
+
+        /* 右侧提示 */
+        .fullscreen-demo-button[data-balloon-pos="right"]::after {
+            left: 100%;
+            top: 50%;
+            margin-left: 5px;
+            transform: translateY(-50%);
+            max-width: 180px;
+        }
+
+        .fullscreen-demo-button[data-balloon-pos="right"]::before {
+            left: 100%;
+            top: 50%;
+            margin-left: -1px;
+            transform: translateY(-50%);
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-right: 6px solid rgba(250, 84, 28, 0.9);
+        }
+
+        .preview-content {
+            flex: 1;
+            padding: 15px;
+            overflow: auto;
+        }
+
+        .preview-demo {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .preview-demo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .preview-demo .demo-button {
+            position: absolute !important;
+            width: 40px !important;
+            height: 40px !important;
+            cursor: pointer !important;
+            z-index: 10 !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.3s ease !important;
+            border: none !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        .preview-demo .demo-button:hover {
+            transform: translate(-50%, -50%) scale(1.1) !important;
+        }
+
+        .preview-demo .demo-button svg {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* 小预览窗口样式改进 */
+        .preview-demo-container {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .preview-step-info {
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .preview-step-info strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .preview-step-info .text-muted {
+            color: #666;
+            font-size: 11px;
+        }
+
+        .step-navigation {
+            padding: 10px 15px;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .step-counter {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .nav-buttons button {
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+
+
+
+        /* 提示框动画 */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        /* 拖拽时的视觉反馈 */
+        .marker:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            transition: transform 0.2s ease;
+        }
+
+        .marker[style*="cursor: grabbing"] {
+            transform: translate(-50%, -50%) scale(1.15);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        @media (max-width: 1200px) {
+            .main-content {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .left-panel {
+                width: 100%;
+                height: 300px;
+                margin-bottom: 15px;
+            }
+            
+            .center-panel {
+                width: 100%;
+                height: 500px;
+            }
+
+            .preview-panel {
+                display: none !important;
+            }
+        }
+
+        /* JSON编辑器样式 */
+        #jsonEditor:focus {
+            outline: none;
+            border-color: #0056b3;
+            background: #f0f4ff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+        }
+
+        #jsonEditor:hover {
+            border-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px;
+            }
+            
+            .left-panel {
+                height: 250px;
+            }
+            
+            .center-panel {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Demo Config Editor</h1>
+            <p>可视化编辑演示配置JSON文件 - 📋 <strong>粘贴图片URL自动创建步骤</strong> | 🎯 <strong>点击图片直接添加交互点</strong> | 🤏 <strong>拖拽调整圆点位置</strong> | ⚡ <strong>无需手动添加步骤</strong> | 🗑️ <strong>Shift+点击删除圆点</strong>
+            </p>
+        </div>
+
+        <div class="main-content">
+            <!-- 左侧面板 - 紧凑步骤列表 -->
+            <div class="left-panel">
+                <div class="steps-header">
+                    <h3>📝 步骤列表</h3>
+                </div>
+                <div class="steps-container" id="compactStepsList">
+                    <!-- 紧凑步骤列表将动态生成 -->
+                </div>
+            </div>
+
+            <!-- 中间面板 - 图片编辑区 -->
+            <div class="center-panel">
+                <div class="image-container">
+                    <div class="image-display" id="imageDisplay">
+                        <div class="empty-state">
+                            <h3>开始创建演示</h3>
+                            <p>💡 <strong>超简单流程：</strong></p>
+                            <p>1️⃣ Ctrl+V 粘贴图片链接 → 自动创建步骤</p>
+                            <p>2️⃣ 点击图片任意位置 → 直接添加交互点</p>
+                            <p>3️⃣ 拖拽橙色圆点调整位置 → 完成配置</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="toolbar">
+                    <div class="toolbar-row">
+                        <label>当前图片:</label>
+                        <input type="url" id="imageUrl" name="imageUrl" placeholder="图片链接" readonly style="background: #f8f9fa; flex: 1;">
+                        <button class="btn-warning" id="clearMarkersBtn">清除标记</button>
+                    </div>
+                    <div class="toolbar-row">
+                        <label>全局标题:</label>
+                        <input type="text" id="globalTitle" name="globalTitle" value="Try it out: 3 steps to create a CRM" style="flex: 1;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧面板 - 预览和JSON -->
+            <div class="right-panel">
+                <div class="preview-section">
+                    <div class="preview-header">
+                        <h3>🔍 实时预览</h3>
+                        <div class="preview-controls">
+                            <div class="step-counter" id="stepCounter">0 / 0</div>
+                            <button class="btn-secondary" id="fullscreenBtn" title="全屏预览">⛶</button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-demo" id="previewDemo">
+                            <div style="text-align: center; padding: 40px; color: #666;">
+                                <p>暂无预览内容</p>
+                                <small>添加步骤后会显示预览</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-navigation">
+                        <div class="nav-buttons">
+                            <button class="btn-secondary" id="prevStepBtn" disabled>上一步</button>
+                            <button class="btn-primary" id="nextStepBtn" disabled>下一步</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="json-section">
+                    <h4 style="margin: 0 0 10px 0;">📋 JSON配置 - 实时编辑</h4>
+                    <textarea id="jsonEditor" style="width: 100%; height: 140px; font-family: monospace; font-size: 10px; padding: 5px; border: 1px solid #007bff; border-radius: 4px; resize: none; background: #f8f9ff; transition: border-color 0.2s;" placeholder="JSON配置将在这里实时显示和编辑..."></textarea>
+                    <div id="jsonStatus" style="margin-top: 3px; font-size: 9px; color: #666;">准备就绪</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 全屏预览覆盖层 -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <div class="fullscreen-content">
+            <div class="fullscreen-header">
+                <h2 id="fullscreenTitle">Demo 预览</h2>
+                <button class="close-fullscreen" id="closeFullscreenBtn">✕ 退出全屏</button>
+            </div>
+            <div class="fullscreen-demo" id="fullscreenDemo">
+                <!-- 全屏预览内容将在这里动态生成 -->
+            </div>
+            <div class="fullscreen-navigation">
+                <div class="step-counter" id="fullscreenStepCounter">0 / 0</div>
+                <div class="nav-buttons">
+                    <button class="btn-secondary" id="fullscreenPrevBtn" disabled>上一步</button>
+                    <button class="btn-primary" id="fullscreenNextBtn" disabled>下一步</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class DemoConfigEditor {
+            constructor() {
+                this.config = {
+                    title: "Try it out: 3 steps to create a CRM",
+                    subtitle: "",
+                    mainSteps: [],
+                    steps: []
+                };
+                this.currentStepIndex = -1;
+                this.currentImage = null;
+                this.previewCurrentStep = 0;
+                this.isDragging = false;
+                this.dragStepIndex = -1;
+                this.dragStartPos = { x: 0, y: 0 };
+                this.imageUpdateTimer = null;
+                this.isUpdatingStepsList = false;
+                this.isUpdatingFromJson = false;
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+                this.setupJsonEditor();
+                this.updateCompactStepsList();
+                this.updatePreview();
+                // 初始化JSON编辑器内容
+                this.updateJsonDisplay();
+            }
+
+            bindEvents() {
+                // 图片点击事件
+                document.getElementById('imageDisplay').addEventListener('click', (e) => {
+                    if (this.currentImage && this.currentStepIndex >= 0) {
+                        this.addMarker(e);
+                    }
+                });
+
+                // 按钮事件
+                document.getElementById('clearMarkersBtn').addEventListener('click', () => this.clearMarkers());
+                document.getElementById('prevStepBtn').addEventListener('click', () => this.previewPrevStep());
+                document.getElementById('nextStepBtn').addEventListener('click', () => this.previewNextStep());
+                
+                // 全屏预览事件
+                document.getElementById('fullscreenBtn').addEventListener('click', () => this.openFullscreenPreview());
+                document.getElementById('closeFullscreenBtn').addEventListener('click', () => this.closeFullscreenPreview());
+                document.getElementById('fullscreenPrevBtn').addEventListener('click', () => this.fullscreenPrevStep());
+                document.getElementById('fullscreenNextBtn').addEventListener('click', () => this.fullscreenNextStep());
+                
+                // ESC键退出全屏
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.closeFullscreenPreview();
+                    }
+                });
+                
+                // 点击覆盖层背景退出全屏
+                document.getElementById('fullscreenOverlay').addEventListener('click', (e) => {
+                    if (e.target === document.getElementById('fullscreenOverlay')) {
+                        this.closeFullscreenPreview();
+                    }
+                });
+
+                // 全局配置变化
+                document.getElementById('globalTitle').addEventListener('input', (e) => {
+                    this.config.title = e.target.value;
+                    this.updatePreview(); // 实时更新JSON显示
+                });
+
+                // 全局粘贴事件 - 自动处理图片URL
+                document.addEventListener('paste', (e) => {
+                    // 只有在没有聚焦到输入框时才处理
+                    if (document.activeElement.tagName === 'INPUT' || 
+                        document.activeElement.tagName === 'TEXTAREA') {
+                        return;
+                    }
+                    
+                    const clipboardData = e.clipboardData || window.clipboardData;
+                    const pastedText = clipboardData.getData('text').trim();
+                    
+                    if (pastedText) {
+                        e.preventDefault();
+                        this.handleImagePaste(pastedText);
+                    }
+                });
+            }
+
+            loadImage() {
+                const url = document.getElementById('imageUrl').value.trim();
+                if (!url) return;
+
+                const img = new Image();
+                img.onload = () => {
+                    this.currentImage = img;
+                    this.displayImage(img, url);
+                    this.ensureStepForImage(url);
+                };
+                img.onerror = () => {
+                    // 图片加载失败，静默处理
+                };
+                img.src = url;
+            }
+
+            ensureStepForImage(imageUrl) {
+                const existingStepIndex = this.config.steps.findIndex(step => step.image === imageUrl);
+                
+                if (existingStepIndex >= 0) {
+                    this.selectCompactStep(existingStepIndex);
+                } else if (this.config.steps.length === 0) {
+                    this.autoCreateStepForCurrentImage();
+                }
+            }
+
+            displayImage(img, url) {
+                const container = document.getElementById('imageDisplay');
+                container.innerHTML = '';
+                
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100%';
+                img.style.borderRadius = '4px';
+                img.style.cursor = 'crosshair';
+                img.className = 'demo-image';
+                
+                container.appendChild(img);
+
+                // 如果当前步骤存在，更新其图片URL
+                if (this.currentStepIndex >= 0) {
+                    this.config.steps[this.currentStepIndex].image = url;
+                    this.updateCompactStepsList();
+                }
+
+                // 重新渲染标记
+                this.renderMarkers();
+            }
+
+            addMarker(e) {
+                if (!this.currentImage) return;
+
+                if (this.currentStepIndex < 0 || this.config.steps.length === 0) {
+                    this.autoCreateStepForCurrentImage();
+                }
+
+                const position = this.calculatePositionFromEvent(e);
+                
+                const step = this.config.steps[this.currentStepIndex];
+                if (!step.button) {
+                    step.button = {
+                        id: 'button' + (this.currentStepIndex + 1),
+                        label: step.title || "点击继续",
+                        position: {},
+                        balloonPos: "up",
+                        balloonLength: "medium"
+                    };
+                }
+
+                step.button.position = position;
+
+                this.updateCompactStepsList();
+                this.renderMarkers();
+                this.updatePreview();
+            }
+
+            autoCreateStepForCurrentImage() {
+                const imageUrl = document.getElementById('imageUrl').value.trim();
+                if (!imageUrl) return;
+
+                const newStep = {
+                    id: 'step-' + this.config.steps.length,
+                    title: '步骤 ' + (this.config.steps.length + 1),
+                    description: "步骤描述",
+                    image: imageUrl,
+                    alt: "图片描述"
+                };
+
+                this.config.steps.push(newStep);
+                this.selectCompactStep(this.config.steps.length - 1);
+                this.updateCompactStepsList();
+            }
+
+            calculatePositionFromEvent(e) {
+                const container = document.getElementById('imageDisplay');
+                const containerRect = container.getBoundingClientRect();
+                const img = this.currentImage;
+                const imgRect = img.getBoundingClientRect();
+
+                // 计算相对于图片的精确位置
+                const x = ((e.clientX - imgRect.left) / imgRect.width) * 100;
+                const y = ((e.clientY - imgRect.top) / imgRect.height) * 100;
+
+                // 确保位置在图片范围内
+                const clampedX = Math.max(0, Math.min(100, x));
+                const clampedY = Math.max(0, Math.min(100, y));
+
+                // 根据位置决定使用left还是right
+                if (clampedX <= 50) {
+                    return {
+                        left: clampedX.toFixed(1) + '%',
+                        top: clampedY.toFixed(1) + '%'
+                    };
+                } else {
+                    return {
+                        right: (100 - clampedX).toFixed(1) + '%',
+                        top: clampedY.toFixed(1) + '%'
+                    };
+                }
+            }
+
+            renderMarkers() {
+                if (!this.currentImage) return;
+
+                // 移除现有标记
+                const existingMarkers = document.querySelectorAll('.marker');
+                existingMarkers.forEach(marker => marker.remove());
+
+                const container = document.getElementById('imageDisplay');
+
+                // 只显示当前步骤的标记
+                if (this.currentStepIndex >= 0 && this.currentStepIndex < this.config.steps.length) {
+                    const step = this.config.steps[this.currentStepIndex];
+                    if (step.button && step.button.position) {
+                        const marker = this.createMarker(step.button.position, this.currentStepIndex);
+                        container.appendChild(marker);
+                    }
+                }
+            }
+
+            createMarker(position, stepIndex) {
+                const marker = document.createElement('div');
+                marker.className = 'marker';
+                marker.style.position = 'absolute';
+                marker.style.cursor = 'grab';
+                marker.dataset.stepIndex = stepIndex;
+                
+                if (position.left) {
+                    marker.style.left = position.left;
+                } else if (position.right) {
+                    marker.style.right = position.right;
+                }
+                marker.style.top = position.top;
+                marker.style.transform = 'translate(-50%, -50%)';
+
+                // 如果是当前步骤，使用不同颜色
+                const color = stepIndex === this.currentStepIndex ? '#2196f3' : '#fa541c';
+
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', '80');
+                svg.setAttribute('height', '80');
+                svg.setAttribute('viewBox', '0 0 45 45');
+                svg.setAttribute('stroke', color);
+
+                svg.innerHTML = '<g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">' +
+                    '<circle cx="22" cy="22" r="6" stroke-opacity="0">' +
+                    '<animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>' +
+                    '<animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>' +
+                    '<animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>' +
+                    '</circle>' +
+                    '<circle cx="22" cy="22" r="8">' +
+                    '<animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>' +
+                    '</circle>' +
+                    '<circle cx="22" cy="22" r="3" fill="' + color + '" stroke="none"/>' +
+                    '</g>';
+
+                marker.appendChild(svg);
+
+                // 添加按钮文本标签
+                const step = this.config.steps[stepIndex];
+                if (step.button && step.button.label) {
+                    const label = document.createElement('div');
+                    label.className = 'marker-label';
+                    label.textContent = step.button.label;
+                    label.style.position = 'absolute';
+                    label.style.background = 'rgba(0,0,0,0.8)';
+                    label.style.color = 'white';
+                    label.style.padding = '4px 8px';
+                    label.style.borderRadius = '4px';
+                    label.style.fontSize = '12px';
+                    label.style.whiteSpace = 'nowrap';
+                    label.style.pointerEvents = 'none';
+                    label.style.zIndex = '1';
+                    label.style.maxWidth = '150px';
+
+                    // 根据balloonPos设置位置
+                    const balloonPos = step.button.balloonPos || 'up';
+                    switch (balloonPos) {
+                        case 'up':
+                            label.style.left = '50%';
+                            label.style.bottom = '100%';
+                            label.style.transform = 'translateX(-50%)';
+                            label.style.marginBottom = '8px';
+                            break;
+                        case 'down':
+                            label.style.left = '50%';
+                            label.style.top = '100%';
+                            label.style.transform = 'translateX(-50%)';
+                            label.style.marginTop = '8px';
+                            break;
+                        case 'left':
+                            label.style.right = '100%';
+                            label.style.top = '50%';
+                            label.style.transform = 'translateY(-50%)';
+                            label.style.marginRight = '8px';
+                            break;
+                        case 'right':
+                            label.style.left = '100%';
+                            label.style.top = '50%';
+                            label.style.transform = 'translateY(-50%)';
+                            label.style.marginLeft = '8px';
+                            break;
+                        default:
+                            // 默认显示在下方
+                            label.style.left = '50%';
+                            label.style.top = '100%';
+                            label.style.transform = 'translateX(-50%)';
+                            label.style.marginTop = '8px';
+                    }
+
+                    // 添加箭头指示器
+                    const arrow = document.createElement('div');
+                    arrow.style.position = 'absolute';
+                    arrow.style.width = '0';
+                    arrow.style.height = '0';
+                    arrow.style.zIndex = '2';
+                    
+                    switch (balloonPos) {
+                        case 'up':
+                            arrow.style.left = '50%';
+                            arrow.style.top = '100%';
+                            arrow.style.transform = 'translateX(-50%)';
+                            arrow.style.borderLeft = '6px solid transparent';
+                            arrow.style.borderRight = '6px solid transparent';
+                            arrow.style.borderTop = '6px solid rgba(0,0,0,0.8)';
+                            break;
+                        case 'down':
+                            arrow.style.left = '50%';
+                            arrow.style.bottom = '100%';
+                            arrow.style.transform = 'translateX(-50%)';
+                            arrow.style.borderLeft = '6px solid transparent';
+                            arrow.style.borderRight = '6px solid transparent';
+                            arrow.style.borderBottom = '6px solid rgba(0,0,0,0.8)';
+                            break;
+                        case 'left':
+                            arrow.style.top = '50%';
+                            arrow.style.left = '100%';
+                            arrow.style.transform = 'translateY(-50%)';
+                            arrow.style.borderTop = '6px solid transparent';
+                            arrow.style.borderBottom = '6px solid transparent';
+                            arrow.style.borderLeft = '6px solid rgba(0,0,0,0.8)';
+                            break;
+                        case 'right':
+                            arrow.style.top = '50%';
+                            arrow.style.right = '100%';
+                            arrow.style.transform = 'translateY(-50%)';
+                            arrow.style.borderTop = '6px solid transparent';
+                            arrow.style.borderBottom = '6px solid transparent';
+                            arrow.style.borderRight = '6px solid rgba(0,0,0,0.8)';
+                            break;
+                    }
+                    
+                    label.appendChild(arrow);
+                    
+                    marker.appendChild(label);
+                }
+
+                // 拖拽事件
+                marker.addEventListener('mousedown', (e) => {
+                    e.stopPropagation();
+                    if (e.shiftKey) {
+                        // Shift+点击删除按钮配置
+                        this.config.steps[stepIndex].button = undefined;
+                        this.renderMarkers();
+                        if (stepIndex === this.currentStepIndex) {
+                            this.updateCompactStepsList();
+                        }
+                        this.updatePreview();
+                        return;
+                    }
+                    
+                    this.startDrag(e, stepIndex);
+                });
+
+                // 普通点击选择步骤（只在没有拖拽时触发）
+                marker.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (!this.isDragging) {
+                        this.selectCompactStep(stepIndex);
+                    }
+                });
+
+                return marker;
+            }
+
+            startDrag(e, stepIndex) {
+                this.isDragging = true;
+                this.dragStepIndex = stepIndex;
+                this.dragStartPos = { x: e.clientX, y: e.clientY };
+
+                const marker = e.currentTarget;
+                marker.style.cursor = 'grabbing';
+                marker.style.zIndex = '1000';
+
+                // 全局鼠标事件
+                const onMouseMove = (e) => this.onDrag(e);
+                const onMouseUp = (e) => {
+                    this.endDrag(e);
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                    marker.style.cursor = 'grab';
+                    marker.style.zIndex = '10';
+                };
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+
+                // 选择被拖拽的步骤
+                this.selectCompactStep(stepIndex);
+            }
+
+            onDrag(e) {
+                if (!this.isDragging || this.dragStepIndex < 0) return;
+
+                // 计算新位置
+                const position = this.calculatePositionFromEvent(e);
+                
+                // 更新步骤配置
+                const step = this.config.steps[this.dragStepIndex];
+                if (step.button) {
+                    step.button.position = position;
+                }
+
+                // 实时更新显示
+                this.renderMarkers();
+                this.updateCompactStepsList();
+                this.updatePreview();
+            }
+
+            endDrag(e) {
+                if (!this.isDragging) return;
+
+                const deltaX = Math.abs(e.clientX - this.dragStartPos.x);
+                const deltaY = Math.abs(e.clientY - this.dragStartPos.y);
+                
+                // 如果移动距离很小，视为点击
+                if (deltaX < 5 && deltaY < 5) {
+                    // 这是一个点击，不是拖拽
+                    this.selectCompactStep(this.dragStepIndex);
+                }
+
+                this.isDragging = false;
+                this.dragStepIndex = -1;
+            }
+
+            // === 图片粘贴功能 ===
+
+
+
+            handleImagePaste(imageUrl) {
+                const newStep = {
+                    id: 'step-' + this.config.steps.length,
+                    title: '步骤 ' + (this.config.steps.length + 1),
+                    description: "步骤描述",
+                    image: imageUrl,
+                    alt: "图片描述"
+                };
+
+                this.config.steps.push(newStep);
+                const newStepIndex = this.config.steps.length - 1;
+                
+                document.getElementById('imageUrl').value = imageUrl;
+                
+                const img = new Image();
+                img.onload = () => {
+                    this.currentImage = img;
+                    this.displayImage(img, imageUrl);
+                    this.selectCompactStep(newStepIndex);
+                };
+                img.onerror = () => {
+                    this.config.steps.pop();
+                    this.updateCompactStepsList();
+                };
+                img.src = imageUrl;
+                
+                this.updateCompactStepsList();
+                this.updatePreview();
+            }
+
+
+
+            // === 紧凑步骤列表管理 ===
+
+            updateCompactStepsList() {
+                // 防止重入调用
+                if (this.isUpdatingStepsList) {
+                    return;
+                }
+                this.isUpdatingStepsList = true;
+
+                try {
+                    const container = document.getElementById('compactStepsList');
+                    if (!container) return;
+                    
+                    container.innerHTML = '';
+
+                    // 渲染现有步骤
+                    this.config.steps.forEach((step, index) => {
+                        const stepElement = this.createCompactStepElement(step, index);
+                        container.appendChild(stepElement);
+                    });
+
+                    // 添加"待添加"步骤
+                    const pendingStepElement = this.createPendingStepElement();
+                    container.appendChild(pendingStepElement);
+                } finally {
+                    this.isUpdatingStepsList = false;
+                }
+            }
+
+            createCompactStepElement(step, index) {
+                const div = document.createElement('div');
+                div.className = `step-item ${index === this.currentStepIndex ? 'active' : ''}`;
+                div.addEventListener('click', () => this.selectCompactStep(index));
+
+                // 只在有按钮时显示按钮配置
+                const buttonConfig = step.button ? `
+                    <input type="text" id="step-btn-label-${index}" name="step-btn-label-${index}" placeholder="按钮文本" value="${step.button.label || ''}" 
+                           oninput="demoEditor.updateButtonField(${index}, 'label', this.value)">
+                    <select id="step-btn-pos-${index}" name="step-btn-pos-${index}" onchange="demoEditor.updateButtonField(${index}, 'balloonPos', this.value)">
+                        <option value="up" ${step.button.balloonPos === 'up' ? 'selected' : ''}>上</option>
+                        <option value="down" ${step.button.balloonPos === 'down' ? 'selected' : ''}>下</option>
+                        <option value="left" ${step.button.balloonPos === 'left' ? 'selected' : ''}>左</option>
+                        <option value="right" ${step.button.balloonPos === 'right' ? 'selected' : ''}>右</option>
+                    </select>
+                ` : '';
+
+                // 分组配置（仅在需要时显示）
+                const groupConfig = (step.groupName || step.groupNumber) ? `
+                    <div style="border-top: 1px solid #ddd; padding-top: 2px; margin-top: 2px;">
+                        <input type="text" placeholder="分组号" value="${step.groupNumber || ''}" 
+                               oninput="demoEditor.updateStepField(${index}, 'groupNumber', this.value)">
+                        <input type="text" placeholder="分组名" value="${step.groupName || ''}" 
+                               oninput="demoEditor.updateStepField(${index}, 'groupName', this.value)">
+                    </div>
+                ` : '';
+
+                // 分组标识显示
+                const groupIndicator = (step.groupName || step.groupNumber) ? 
+                    `<span style="color: #007bff; font-size: 8px;">[${step.groupNumber || ''}${step.groupName ? ':' + step.groupName : ''}]</span>` : '';
+
+                div.innerHTML = `
+                    <div class="step-item-header">
+                        <span>${index + 1}. ${step.title || '步骤'} ${groupIndicator}</span>
+                        <div>
+                            <button onclick="demoEditor.toggleGroup(${index})" title="添加分组">📁</button>
+                            <button onclick="demoEditor.deleteStep(${index})">×</button>
+                        </div>
+                    </div>
+                    <input type="text" value="${step.title || ''}" placeholder="标题" 
+                           oninput="demoEditor.updateStepField(${index}, 'title', this.value)">
+                    <input type="url" value="${step.image || ''}" placeholder="图片链接" 
+                           oninput="demoEditor.updateStepImageWithDebounce(${index}, this.value)">
+                    ${buttonConfig}
+                    ${groupConfig}
+                `;
+
+                return div;
+            }
+
+            createPendingStepElement() {
+                const div = document.createElement('div');
+                div.className = 'step-item pending';
+                
+                div.innerHTML = `
+                    <div class="step-item-header">
+                        <span>+ 新建步骤</span>
+                    </div>
+                    <input type="url" placeholder="粘贴图片链接" 
+                           onchange="demoEditor.createStepFromPendingImage(this.value)">
+                `;
+
+                return div;
+            }
+
+            selectCompactStep(index) {
+                if (index === this.currentStepIndex) {
+                    return;
+                }
+                
+                this.currentStepIndex = index;
+                this.previewCurrentStep = index; // 同步预览步骤
+                this.updateCompactStepsList();
+                
+                // 如果步骤有图片，加载它
+                const step = this.config.steps[index];
+                if (step && step.image) {
+                    document.getElementById('imageUrl').value = step.image;
+                    this.loadImage();
+                } else {
+                    const container = document.getElementById('imageDisplay');
+                    container.innerHTML = '<div>选择图片</div>';
+                    this.currentImage = null;
+                }
+
+                this.renderMarkers();
+                this.updatePreview();
+            }
+
+            updateStepField(index, field, value) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    const step = this.config.steps[index];
+                    
+                    if (value && value.trim()) {
+                        step[field] = value.trim();
+                    } else {
+                        // 如果值为空，删除该字段
+                        delete step[field];
+                        
+                        // 如果是分组字段，检查是否需要删除整个分组
+                        if (field === 'groupName' || field === 'groupNumber') {
+                            if (!step.groupName && !step.groupNumber) {
+                                // 两个分组字段都为空时，完全移除分组
+                                delete step.groupName;
+                                delete step.groupNumber;
+                            }
+                        }
+                    }
+                    
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                }
+            }
+
+            updateStepImage(index, imageUrl) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    this.config.steps[index].image = imageUrl;
+                    
+                    // 如果是当前选中的步骤，重新加载图片
+                    if (index === this.currentStepIndex) {
+                        document.getElementById('imageUrl').value = imageUrl;
+                        if (imageUrl) {
+                            this.loadImage();
+                        }
+                    }
+                    
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                }
+            }
+
+            // 防抖版本的图片更新
+            updateStepImageWithDebounce(index, imageUrl) {
+                // 清除之前的定时器
+                if (this.imageUpdateTimer) {
+                    clearTimeout(this.imageUpdateTimer);
+                }
+                
+                // 设置新的定时器
+                this.imageUpdateTimer = setTimeout(() => {
+                    this.updateStepImage(index, imageUrl);
+                }, 500); // 500ms延迟
+            }
+
+            updateButtonField(index, field, value) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    const step = this.config.steps[index];
+                    if (!step.button) {
+                        step.button = {
+                            id: 'button' + (index + 1),
+                            label: "点击继续",
+                            position: { left: "50%", top: "50%" },
+                            balloonPos: "up",
+                            balloonLength: "medium"
+                        };
+                    }
+                    step.button[field] = value;
+                    
+                    // 如果改变的是balloonPos或label，需要重新渲染标记以更新提示位置
+                    if (field === 'balloonPos' || field === 'label') {
+                        this.renderMarkers();
+                    }
+                    
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                }
+            }
+
+            createStepFromPending(field, value) {
+                if (!value.trim()) return;
+
+                const newStep = {
+                    id: 'step-' + this.config.steps.length,
+                    title: field === 'title' ? value : '步骤 ' + (this.config.steps.length + 1),
+                    description: field === 'description' ? value : "步骤描述",
+                    image: "",
+                    alt: "图片描述"
+                };
+
+                this.config.steps.push(newStep);
+                this.selectCompactStep(this.config.steps.length - 1);
+            }
+
+            createStepFromPendingImage(imageUrl) {
+                if (!imageUrl.trim()) return;
+
+                const newStep = {
+                    id: 'step-' + this.config.steps.length,
+                    title: '步骤 ' + (this.config.steps.length + 1),
+                    description: "步骤描述",
+                    image: imageUrl,
+                    alt: "图片描述"
+                };
+
+                this.config.steps.push(newStep);
+                this.selectCompactStep(this.config.steps.length - 1);
+                
+                document.getElementById('imageUrl').value = imageUrl;
+                this.loadImage();
+            }
+
+            addEmptyStep() {
+                const newStep = {
+                    id: 'step-' + this.config.steps.length,
+                    title: '步骤 ' + (this.config.steps.length + 1),
+                    description: "步骤描述",
+                    image: "",
+                    alt: "图片描述"
+                };
+
+                this.config.steps.push(newStep);
+                this.selectCompactStep(this.config.steps.length - 1);
+            }
+
+            deleteStep(index) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    this.config.steps.splice(index, 1);
+                    
+                    if (this.currentStepIndex >= index) {
+                        this.currentStepIndex = Math.max(0, this.currentStepIndex - 1);
+                        if (this.config.steps.length === 0) {
+                            this.currentStepIndex = -1;
+                        }
+                    }
+                    
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                }
+            }
+
+            toggleGroup(index) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    const step = this.config.steps[index];
+                    if (step.groupName || step.groupNumber) {
+                        // 移除分组
+                        delete step.groupName;
+                        delete step.groupNumber;
+                    } else {
+                        // 添加分组
+                        step.groupNumber = "0" + Math.ceil((index + 1) / 5);
+                        step.groupName = "分组 " + step.groupNumber;
+                    }
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                }
+            }
+
+            // JSON实时编辑功能
+            setupJsonEditor() {
+                const jsonEditor = document.getElementById('jsonEditor');
+                
+                // 防抖定时器
+                let jsonUpdateTimer = null;
+                
+                jsonEditor.addEventListener('input', (e) => {
+                    // 清除之前的定时器
+                    if (jsonUpdateTimer) {
+                        clearTimeout(jsonUpdateTimer);
+                    }
+                    
+                    // 设置新的定时器，300ms后应用更改
+                    jsonUpdateTimer = setTimeout(() => {
+                        this.applyJsonFromEditor();
+                    }, 300);
+                    
+                    // 立即显示状态
+                    this.updateJsonStatus('正在输入...');
+                });
+
+                jsonEditor.addEventListener('focus', () => {
+                    this.updateJsonStatus('可直接编辑JSON配置');
+                });
+
+                jsonEditor.addEventListener('blur', () => {
+                    this.updateJsonStatus('准备就绪');
+                });
+            }
+
+            applyJsonFromEditor() {
+                const jsonEditor = document.getElementById('jsonEditor');
+                try {
+                    const newConfig = JSON.parse(jsonEditor.value);
+                    
+                    // 标记为从JSON编辑器更新，避免循环更新
+                    this.isUpdatingFromJson = true;
+                    
+                    this.config = newConfig;
+                    
+                    // 重新初始化当前步骤
+                    this.currentStepIndex = Math.min(this.currentStepIndex, this.config.steps.length - 1);
+                    if (this.currentStepIndex < 0 && this.config.steps.length > 0) {
+                        this.currentStepIndex = 0;
+                    }
+                    
+                    // 更新全局标题
+                    document.getElementById('globalTitle').value = this.config.title || '';
+                    
+                    // 重新加载当前步骤的图片
+                    if (this.currentStepIndex >= 0 && this.config.steps[this.currentStepIndex]) {
+                        const currentStep = this.config.steps[this.currentStepIndex];
+                        if (currentStep.image) {
+                            document.getElementById('imageUrl').value = currentStep.image;
+                            this.loadImage();
+                        }
+                    }
+                    
+                    // 更新界面
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                    
+                    // 重置标记
+                    this.isUpdatingFromJson = false;
+                    
+                    this.updateJsonStatus('✓ 已同步', 'success');
+                } catch (error) {
+                    this.updateJsonStatus('✗ JSON格式错误: ' + error.message, 'error');
+                }
+            }
+
+            updateJsonStatus(message, type = 'info') {
+                const statusEl = document.getElementById('jsonStatus');
+                if (statusEl) {
+                    statusEl.textContent = message;
+                    
+                    if (type === 'success') {
+                        statusEl.style.color = '#28a745';
+                    } else if (type === 'error') {
+                        statusEl.style.color = '#dc3545';
+                    } else {
+                        statusEl.style.color = '#666';
+                    }
+                    
+                    // 如果是成功状态，2秒后恢复默认
+                    if (type === 'success') {
+                        setTimeout(() => {
+                            statusEl.textContent = '准备就绪';
+                            statusEl.style.color = '#666';
+                        }, 2000);
+                    }
+                }
+            }
+
+
+
+            duplicateStep(index) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    const originalStep = this.config.steps[index];
+                    const duplicatedStep = JSON.parse(JSON.stringify(originalStep));
+                    duplicatedStep.id = 'step-' + this.config.steps.length;
+                    duplicatedStep.title += ' (副本)';
+                    
+                    this.config.steps.splice(index + 1, 0, duplicatedStep);
+                    this.selectCompactStep(index + 1);
+                }
+            }
+
+
+
+
+
+
+
+            clearMarkers() {
+                this.config.steps.forEach(step => {
+                    delete step.button;
+                });
+                this.renderMarkers();
+                this.updateCompactStepsList();
+                this.updatePreview();
+            }
+
+            addMainStep() {
+                const newMainStep = {
+                    number: '0' + (this.config.mainSteps.length + 1) + '. ',
+                    title: '主步骤 ' + (this.config.mainSteps.length + 1),
+                    id: 'guide' + (this.config.mainSteps.length + 1)
+                };
+                
+                this.config.mainSteps.push(newMainStep);
+                this.updateMainSteps();
+            }
+
+            updateMainSteps() {
+                const container = document.getElementById('mainStepsContainer');
+                container.innerHTML = '';
+
+                this.config.mainSteps.forEach((mainStep, index) => {
+                    const div = document.createElement('div');
+                    div.style.marginBottom = '10px';
+                    
+                    // 创建表单元素
+                    const numberRow = document.createElement('div');
+                    numberRow.className = 'form-row';
+                    const numberLabel = document.createElement('label');
+                    numberLabel.textContent = '编号:';
+                    const numberInput = document.createElement('input');
+                    numberInput.type = 'text';
+                    numberInput.value = mainStep.number;
+                    numberInput.addEventListener('change', (e) => this.updateMainStep(index, 'number', e.target.value));
+                    numberRow.appendChild(numberLabel);
+                    numberRow.appendChild(numberInput);
+                    
+                    const titleRow = document.createElement('div');
+                    titleRow.className = 'form-row';
+                    const titleLabel = document.createElement('label');
+                    titleLabel.textContent = '标题:';
+                    const titleInput = document.createElement('input');
+                    titleInput.type = 'text';
+                    titleInput.value = mainStep.title;
+                    titleInput.addEventListener('change', (e) => this.updateMainStep(index, 'title', e.target.value));
+                    titleRow.appendChild(titleLabel);
+                    titleRow.appendChild(titleInput);
+                    
+                    const idRow = document.createElement('div');
+                    idRow.className = 'form-row';
+                    const idLabel = document.createElement('label');
+                    idLabel.textContent = 'ID:';
+                    const idInput = document.createElement('input');
+                    idInput.type = 'text';
+                    idInput.value = mainStep.id;
+                    idInput.addEventListener('change', (e) => this.updateMainStep(index, 'id', e.target.value));
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.className = 'btn-danger';
+                    deleteBtn.textContent = '删除';
+                    deleteBtn.addEventListener('click', () => this.deleteMainStep(index));
+                    idRow.appendChild(idLabel);
+                    idRow.appendChild(idInput);
+                    idRow.appendChild(deleteBtn);
+                    
+                    const hr = document.createElement('hr');
+                    hr.style.margin = '10px 0';
+                    
+                    div.appendChild(numberRow);
+                    div.appendChild(titleRow);
+                    div.appendChild(idRow);
+                    div.appendChild(hr);
+                    container.appendChild(div);
+                });
+            }
+
+            updateMainStep(index, field, value) {
+                this.config.mainSteps[index][field] = value;
+            }
+
+            deleteMainStep(index) {
+                if (confirm('确定要删除这个主步骤吗？')) {
+                    this.config.mainSteps.splice(index, 1);
+                    this.updateMainSteps();
+                }
+            }
+
+
+
+
+
+
+
+
+
+            previewDemo() {
+                // 在新窗口中预览演示
+                const html = this.generatePreviewHtml();
+                const newWindow = window.open('', '_blank');
+                if (newWindow) {
+                    newWindow.document.write(html);
+                    newWindow.document.close();
+                }
+            }
+
+            generatePreviewHtml() {
+                let stepsHtml = '';
+                this.config.steps.forEach((step, index) => {
+                    let buttonHtml = '';
+                    if (step.button && step.button.position) {
+                        const leftStyle = step.button.position.left ? `left: ${step.button.position.left};` : '';
+                        const rightStyle = step.button.position.right ? `right: ${step.button.position.right};` : '';
+                        const topStyle = `top: ${step.button.position.top};`;
+                        
+                        // 注意，这里使用了模板字符串（反引号 ``）来构建HTML
+                        buttonHtml = `<div class="demo-button" style="${leftStyle} ${rightStyle} ${topStyle}" onclick="nextStep(${index})">
+                            <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c">
+                                <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                                        <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="8">
+                                        <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="3" fill="#fa541c" stroke="none"/>
+                                </g>
+                            </svg>
+                        </div>`;
+                    }
+                    
+                    stepsHtml += `<div style="display: ${index === 0 ? 'block' : 'none'};" data-step="${index}">
+                        <img src="${step.image}" alt="${step.alt}">
+                        ${buttonHtml}
+                    </div>`;
+                });
+
+                const subtitleHtml = this.config.subtitle ? `<p>${this.config.subtitle}</p>` : '';
+                
+                // 返回一个完整的HTML模板字符串
+                return `<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Demo Preview</title>
+                        <style>
+                            body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+                            .demo-wrap { position: relative; max-width: 100%; }
+                            .demo-wrap img { width: 100%; border-radius: 8px; }
+                            .demo-button { 
+                                position: absolute; 
+                                width: 80px; 
+                                height: 80px; 
+                                cursor: pointer; 
+                                z-index: 10; 
+                                /* 关键修复：增加transform使定位与编辑器一致 */
+                                transform: translate(-50%, -50%); 
+                            }
+                            .demo-button svg { width: 100%; height: 100%; }
+                            .demo-button:hover { 
+                                /* 关键修复：保持transform中心点进行缩放 */
+                                transform: translate(-50%, -50%) scale(1.1); 
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>${this.config.title}</h1>
+                        ${subtitleHtml}
+                        <div class="demo-wrap">
+                            ${stepsHtml}
+                        </div>
+                        <script>
+                            let currentStep = 0;
+                            const totalSteps = ${this.config.steps.length};
+                            
+                            function nextStep(stepIndex) {
+                                // 关键修复：使用更简单的选择器，不再需要复杂的转义
+                                const currentEl = document.querySelector('[data-step="' + currentStep + '"]');
+                                if (currentEl) {
+                                    currentEl.style.display = "none";
+                                }
+                                
+                                currentStep = (stepIndex + 1) % totalSteps;
+                                
+                                const nextEl = document.querySelector('[data-step="' + currentStep + '"]');
+                                if (nextEl) {
+                                    nextEl.style.display = "block";
+                                }
+                            }
+                        <\/script>
+                    </body>
+                    </html>`;
+            }
+
+            // === 预览功能相关方法 ===
+
+
+
+            updatePreview() {
+                // 更新预览演示
+                if (this.config.steps.length === 0) {
+                    const previewDemo = document.getElementById('previewDemo');
+                    previewDemo.innerHTML = `
+                        <div style="text-align: center; padding: 40px; color: #666;">
+                            <p>暂无预览内容</p>
+                            <small>添加步骤后会显示预览</small>
+                        </div>
+                    `;
+                    this.updatePreviewNavigation();
+                    this.updateJsonDisplay();
+                    return;
+                }
+
+                const previewDemo = document.getElementById('previewDemo');
+                const currentStep = this.config.steps[this.previewCurrentStep];
+
+                if (!currentStep || !currentStep.image) {
+                    previewDemo.innerHTML = `
+                        <div style="text-align: center; padding: 40px; color: #666;">
+                            <p>当前步骤无图片</p>
+                            <small>请设置图片URL</small>
+                        </div>
+                    `;
+                    this.updatePreviewNavigation();
+                    this.updateJsonDisplay();
+                    return;
+                }
+
+                let buttonHtml = '';
+                if (currentStep.button && currentStep.button.position) {
+                    const leftStyle = currentStep.button.position.left ? `left: ${currentStep.button.position.left};` : '';
+                    const rightStyle = currentStep.button.position.right ? `right: ${currentStep.button.position.right};` : '';
+                    const topStyle = `top: ${currentStep.button.position.top};`;
+                    
+                    buttonHtml = `
+                        <div class="demo-button" 
+                             style="${leftStyle}${rightStyle}${topStyle}transform: translate(-50%, -50%);" 
+                             onclick="demoEditor.previewNextStep()"
+                             title="${currentStep.button.label}">
+                            <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c">
+                                <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                                        <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="8">
+                                        <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="3" fill="#fa541c" stroke="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    `;
+                }
+
+                previewDemo.innerHTML = `
+                    <div class="preview-demo-container">
+                        <img src="${currentStep.image}" alt="${currentStep.alt}" onload="this.style.opacity=1" style="opacity:0.5; transition: opacity 0.3s; width: 100%; border-radius: 4px;">
+                        ${buttonHtml}
+                    </div>
+                    <div class="preview-step-info">
+                        <strong>${currentStep.title}</strong>
+                        ${currentStep.description ? `<br><small class="text-muted">${currentStep.description}</small>` : ''}
+                    </div>
+                `;
+
+                this.updatePreviewNavigation();
+                this.updateJsonDisplay();
+            }
+
+            updatePreviewNavigation() {
+                const stepCounter = document.getElementById('stepCounter');
+                const prevBtn = document.getElementById('prevStepBtn');
+                const nextBtn = document.getElementById('nextStepBtn');
+
+                const total = this.config.steps.length;
+                const current = this.previewCurrentStep + 1;
+
+                stepCounter.textContent = `${current} / ${total}`;
+                
+                prevBtn.disabled = this.previewCurrentStep <= 0;
+                nextBtn.disabled = this.previewCurrentStep >= total - 1;
+            }
+
+            updateJsonDisplay() {
+                // 避免循环更新：如果正在从JSON编辑器更新，跳过
+                if (this.isUpdatingFromJson) {
+                    return;
+                }
+                
+                const jsonEditor = document.getElementById('jsonEditor');
+                if (jsonEditor) {
+                    const jsonString = JSON.stringify(this.config, null, 2);
+                    
+                    // 只有当内容真的不同时才更新，避免光标跳动
+                    if (jsonEditor.value !== jsonString) {
+                        const cursorPos = jsonEditor.selectionStart;
+                        jsonEditor.value = jsonString;
+                        
+                        // 尝试恢复光标位置（在合理范围内）
+                        if (cursorPos <= jsonString.length) {
+                            jsonEditor.setSelectionRange(cursorPos, cursorPos);
+                        }
+                    }
+                }
+            }
+
+            previewPrevStep() {
+                if (this.previewCurrentStep > 0) {
+                    this.previewCurrentStep--;
+                    this.updatePreview();
+                }
+            }
+
+            previewNextStep() {
+                if (this.previewCurrentStep < this.config.steps.length - 1) {
+                    this.previewCurrentStep++;
+                    this.updatePreview();
+                } else {
+                    // 循环回第一步
+                    this.previewCurrentStep = 0;
+                    this.updatePreview();
+                }
+            }
+
+            // === 全屏预览功能 ===
+
+            openFullscreenPreview() {
+                const overlay = document.getElementById('fullscreenOverlay');
+                overlay.classList.add('active');
+                
+                // 设置全屏标题
+                const titleEl = document.getElementById('fullscreenTitle');
+                titleEl.textContent = this.config.title || 'Demo 预览';
+                
+                // 更新全屏预览内容
+                this.updateFullscreenPreview();
+                
+                // 禁用页面滚动
+                document.body.style.overflow = 'hidden';
+            }
+
+            closeFullscreenPreview() {
+                const overlay = document.getElementById('fullscreenOverlay');
+                overlay.classList.remove('active');
+                
+                // 恢复页面滚动
+                document.body.style.overflow = '';
+            }
+
+            fullscreenPrevStep() {
+                if (this.previewCurrentStep > 0) {
+                    this.previewCurrentStep--;
+                    this.updateFullscreenPreview();
+                }
+            }
+
+            fullscreenNextStep() {
+                if (this.previewCurrentStep < this.config.steps.length - 1) {
+                    this.previewCurrentStep++;
+                    this.updateFullscreenPreview();
+                } else {
+                    // 循环回第一步
+                    this.previewCurrentStep = 0;
+                    this.updateFullscreenPreview();
+                }
+            }
+
+            updateFullscreenPreview() {
+                if (this.config.steps.length === 0) {
+                    const fullscreenDemo = document.getElementById('fullscreenDemo');
+                    fullscreenDemo.innerHTML = `
+                        <div style="text-align: center; padding: 80px 40px; color: #666;">
+                            <h3 style="margin-bottom: 20px; color: #333;">暂无预览内容</h3>
+                            <p>请先添加步骤并配置图片</p>
+                        </div>
+                    `;
+                    this.updateFullscreenNavigation();
+                    return;
+                }
+
+                const currentStep = this.config.steps[this.previewCurrentStep];
+                
+                if (!currentStep || !currentStep.image) {
+                    const fullscreenDemo = document.getElementById('fullscreenDemo');
+                    fullscreenDemo.innerHTML = `
+                        <div style="text-align: center; padding: 80px 40px; color: #666;">
+                            <h3 style="margin-bottom: 20px; color: #333;">当前步骤无图片</h3>
+                            <p>请设置图片URL</p>
+                        </div>
+                    `;
+                    this.updateFullscreenNavigation();
+                    return;
+                }
+
+                let buttonHtml = '';
+                if (currentStep.button && currentStep.button.position) {
+                    const leftStyle = currentStep.button.position.left ? `left: ${currentStep.button.position.left};` : '';
+                    const rightStyle = currentStep.button.position.right ? `right: ${currentStep.button.position.right};` : '';
+                    const topStyle = `top: ${currentStep.button.position.top};`;
+                    
+                    buttonHtml = `
+                        <div class="fullscreen-demo-button" 
+                             style="${leftStyle}${rightStyle}${topStyle}"
+                             onclick="demoEditor.fullscreenNextStep()"
+                             data-balloon-pos="${currentStep.button.balloonPos}"
+                             aria-label="${currentStep.button.label}">
+                            <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c">
+                                <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                                        <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="8">
+                                        <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="3" fill="#fa541c" stroke="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    `;
+                }
+
+                const fullscreenDemo = document.getElementById('fullscreenDemo');
+                fullscreenDemo.innerHTML = `
+                    <div class="fullscreen-demo-wrap">
+                        <div class="fullscreen-demo-container">
+                            <img src="${currentStep.image}" 
+                                 alt="${currentStep.alt}" 
+                                 onload="this.style.opacity=1" 
+                                 style="opacity:0.5; transition: opacity 0.3s; width: 100%; border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+                            ${buttonHtml}
+                        </div>
+                        <div class="fullscreen-step-info">
+                            <h3>${currentStep.title}</h3>
+                            <p>${currentStep.description || ''}</p>
+                        </div>
+                    </div>
+                `;
+
+                this.updateFullscreenNavigation();
+            }
+
+            updateFullscreenNavigation() {
+                const stepCounter = document.getElementById('fullscreenStepCounter');
+                const prevBtn = document.getElementById('fullscreenPrevBtn');
+                const nextBtn = document.getElementById('fullscreenNextBtn');
+
+                const total = this.config.steps.length;
+                const current = this.previewCurrentStep + 1;
+
+                stepCounter.textContent = `${current} / ${total}`;
+                
+                prevBtn.disabled = this.previewCurrentStep <= 0;
+                nextBtn.disabled = this.previewCurrentStep >= total - 1;
+            }
+        }
+
+        // 全局引用，用于预览中的按钮点击
+        let demoEditor;
+
+        // 初始化编辑器
+        document.addEventListener('DOMContentLoaded', () => {
+            demoEditor = new DemoConfigEditor();
+        });
+    </script>
+</body>
+</html> 

@@ -28,14 +28,12 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
               </div>
             </div>
 
-            <!-- 价格区域 -->
+            <!-- 开发者信息 -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-3">价格：</span>
-                  <span class="h4 text-success fw-bold mb-0 me-3">免费</span>
-                  <img src="https://static-docs.nocobase.com/logo-nocobase.png" height="20" alt="NocoBase" class="me-2" />
-                  <span class="text-dark fw-medium">By NocoBase</span>
+                  <span class="text-muted me-2">开发者：</span>
+                  <img src="https://static-docs.nocobase.com/logo-nocobase.png" height="20" alt="NocoBase" title="由 NocoBase 开发" class="developer-logo" />
                 </div>
               </div>
             </div>
@@ -193,11 +191,16 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div class="section-title">
-            <h3 class="title mb-4">亲自试一试，3 步扩展工单系统功能</h3>
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">亲自试一试，3 步扩展工单系统功能</h4>
             <p class="para-desc mx-auto text-muted mb-0">以添加工单评价功能为例，体验 NocoBase 工单系统的扩展能力</p>
           </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
           <div class="row mt-4">
             <div class="col-md-4">
               <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
@@ -229,101 +232,53 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
               </div>
             </div><!--end col-->
           </div>
-        </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
 
         <div class="mt-4" id="ticket-demo-wrap">
-          <!-- 主演示图片区域 -->
-          <img src="https://static-docs.nocobase.com/1-home-steps.png" alt="NocoBase 工单系统扩展演示" class="img-fluid rounded-md shadow-lg" style="z-index: 0;" />
-
-          <!-- 交互步骤区域 -->
-          <div id="ticket-steps-wrap">
-            <!-- 步骤1：添加字段 -->
-            <div id="ticket-step1" class="demo_step demo_step_start">
-              <img src="https://static-docs.nocobase.com/1-home-steps.png" alt="工单系统添加评价字段" />
-              <div class="button button1 demo_tooltip" id="ticket-button1" aria-label="点击开始：为工单添加评价字段" data-balloon-length="medium" data-balloon-pos="up">
-                <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                  <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
-                      <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                    <circle cx="22" cy="22" r="8">
-                      <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                  </g>
-                </svg>
+          <!-- 交互步骤区域 - 预留3个主要交互点 -->
+            <div class="demo_step">
+              <img data-src="https://static-docs.nocobase.com/20250706153733.png" src="" alt="NocoBase no-code DEMO">
+              <div class="button demo_tooltip" id="ticket-button-4zct" aria-label="首页即可看到工单处理概览数据" data-balloon-length="medium" data-balloon-pos="right" style="left: 8.06%; top: 7.17%;">
+                  <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
+                      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                          <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                          <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                      </g>
+                  </svg>
               </div>
-            </div>
-
-            <!-- 步骤2：设置流程 -->
-            <div id="ticket-step2" class="demo_step">
-              <img src="https://static-docs.nocobase.com/2-home-steps.png" alt="工单系统设置评价流程" />
-              <div class="button demo_tooltip" id="ticket-button2" aria-label="设置工单完成后的评价流程" data-balloon-length="medium" data-balloon-pos="left">
-                <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                  <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
-                      <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                    <circle cx="22" cy="22" r="8">
-                      <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                  </g>
-                </svg>
+          </div>
+          
+          <div class="demo_step">
+              <img data-src="https://static-docs.nocobase.com/20250706153857.png" src="" alt="NocoBase no-code DEMO">
+              <div class="button demo_tooltip" id="ticket-button-82wv" aria-label="点击工单——处理，来到工单管理部分" data-balloon-length="medium" data-balloon-pos="right" style="left: 6.63%; top: 25.10%;">
+                  <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
+                      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                          <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                          <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                      </g>
+                  </svg>
               </div>
-            </div>
-
-            <!-- 步骤3：通知提醒 -->
-            <div id="ticket-step3" class="demo_step">
-              <img src="https://static-docs.nocobase.com/3-home-steps.png" alt="工单系统配置通知提醒" />
-              <div class="button demo_tooltip" id="ticket-button3" aria-label="配置评价邀请和提醒通知" data-balloon-length="medium" data-balloon-pos="left">
-                <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                  <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
-                      <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                    <circle cx="22" cy="22" r="8">
-                      <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                  </g>
-                </svg>
+          </div>
+          
+          <div class="demo_step">
+              <img data-src="https://static-docs.nocobase.com/20250706153953.png" src="" alt="NocoBase no-code DEMO">
+              <div class="button demo_tooltip" id="ticket-button-y7e2" aria-label="点击工单可以查看详情和进行处理" data-balloon-length="medium" data-balloon-pos="top" style="left: 24.52%; top: 27.17%;">
+                  <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
+                      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                          <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                          <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
+                      </g>
+                  </svg>
               </div>
-            </div>
-
-            <!-- 完成演示 -->
-            <div id="ticket-step-final" class="demo_step">
-              <img src="https://static-docs.nocobase.com/21-home-steps.png" alt="工单评价功能扩展完成" />
-              <div class="button demo_tooltip" id="ticket-button-final" aria-label="扩展完成！工单评价功能已成功添加" data-balloon-length="medium" data-balloon-pos="down">
-                <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                  <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                    <circle cx="22" cy="22" r="6" stroke-opacity="0">
-                      <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate>
-                      <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                    <circle cx="22" cy="22" r="8">
-                      <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate>
-                    </circle>
-                  </g>
-                </svg>
-              </div>
-            </div>
           </div><!--end ticket-steps-wrap-->
         </div><!--end ticket-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
           <div class="col-12 text-center">
-            <p class="text-muted mb-3">您可以在工单管理 Demo 中体验什么？完整的工单处理流程，包括：</p>
-            <ul class="list-inline text-muted mb-4">
-              <li class="list-inline-item me-4">• 客户联系人信息管理</li>
-              <li class="list-inline-item me-4">• 工单创建、分类和优先级设置</li>
-              <li class="list-inline-item me-4">• 工单分配和进度跟踪</li>
-              <li class="list-inline-item">• 提醒通知和满意度评价</li>
-            </ul>
             <div class="mt-4 pt-2">
               <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
                 <i class="uil uil-play me-1"></i>立即体验
@@ -334,6 +289,7 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
             </div>
           </div><!--end col-->
         </div><!--end row-->
+        </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
@@ -407,112 +363,189 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
   </section><!--end section-->
   <!-- Development Tutorial End -->
 
-  <!-- Plugins & Implementation Start -->
+  <!-- Commercial Plugins Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">工单系统中使用的商业插件及替代实现方式</h4>
-            <p class="para-desc mx-auto text-muted mb-0">了解如何通过商业插件增强功能，或在系统内自行实现基础需求</p>
+            <h4 class="title mb-4">工单系统中所使用的商业插件介绍</h4>
+            <p class="para-desc mx-auto text-muted mb-0">了解如何通过商业插件获得更强大的功能，提升工单系统的专业性和易用性</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
-      <div class="row">
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <h5 class="mb-4"><i class="uil uil-star text-warning me-2"></i>商业插件增强功能</h5>
-              <div class="row">
-                <div class="col-12">
-                  <ul class="list-unstyled">
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-envelope text-info me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>邮件通知</strong><br>
-                        <small class="text-muted">自动邮件提醒和工单状态更新通知</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-clock text-warning me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>定时任务</strong><br>
-                        <small class="text-muted">自动化工单分配和超时提醒</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-comments text-primary me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>评论系统</strong><br>
-                        <small class="text-muted">工单内部沟通和客户反馈记录</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-file-plus text-success me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>文件附件</strong><br>
-                        <small class="text-muted">工单相关文件和图片上传管理</small>
-                      </div>
-                    </li>
-                  </ul>
+      <div class="row pb-4">
+        <!-- 邮件管理插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="邮件管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">邮件管理</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">自动邮件提醒和工单状态更新通知，提升客户沟通效率
+                   <a href="https://docs-cn.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer">
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,400</span>
+                  </h6>
+                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥4,800</span>
+                  </h6>
                 </div>
-              </div>
-              <div class="mt-3">
-                <a href="/cn/plugins-commercial" class="btn btn-primary btn-sm">了解商业插件</a>
               </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <h5 class="mb-4"><i class="uil uil-settings text-primary me-2"></i>替代实现方案</h5>
-              <div class="row">
-                <div class="col-12">
-                  <ul class="list-unstyled">
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-envelope-alt text-info me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>第三方邮件服务</strong><br>
-                        <small class="text-muted">通过API接口集成外部邮件服务</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-clock-three text-warning me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>手动分配管理</strong><br>
-                        <small class="text-muted">通过状态字段和权限控制实现</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-comment text-primary me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>文本记录</strong><br>
-                        <small class="text-muted">使用长文本字段记录沟通内容</small>
-                      </div>
-                    </li>
-                    <li class="mb-3 d-flex">
-                      <i class="uil uil-link text-success me-3 h5 mb-0"></i>
-                      <div>
-                        <strong>外部存储链接</strong><br>
-                        <small class="text-muted">通过URL字段链接到外部文件存储</small>
-                      </div>
-                    </li>
-                  </ul>
+        <!-- 评论插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="数据表：评论" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">数据表：评论</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">为工单添加评论交互功能，工单内部沟通和客户反馈记录
+                   <a href="https://docs-cn.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer">
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥600</span>
+                  </h6>
+                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                    <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥1,200</span>
+                  </h6>
                 </div>
-              </div>
-              <div class="mt-3">
-                <a href="https://docs-cn.nocobase.com" target="_blank" class="btn btn-outline-primary btn-sm">查看实现文档</a>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- 工作流审批插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="工作流：审批事件" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">工作流：审批事件</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">为工单处理流程添加审批管理，自动化工单分配和超时提醒
+                   <a href="https://docs-cn.nocobase.com/plugins/workflow" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer">
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,400</span>
+                  </h6>
+                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥4,800</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 文件管理插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="文件管理器" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">文件管理器</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">工单相关文件和图片上传管理，支持多种文件格式
+                   <a href="https://docs-cn.nocobase.com/plugins/file-manager" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer">
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥1,200</span>
+                  </h6>
+                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                    <a class="text-muted" href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,400</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 导入导出插件 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div title="操作：导入导出数据 Pro" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+            <div class="card-body">
+              <div class="mt-2 plugin-box">
+                <h6 class="card-title mb-1">操作：导入导出数据 Pro</h6>
+                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
+                <p class="text-muted mb-2 plugin-overview">支持工单数据的批量导入导出操作，数据迁移和备份更便捷
+                   <a href="https://docs-cn.nocobase.com/plugins/action-import" target="_blank" style="font-size: 14px;">详情</a>
+                </p>
+                <div class="plugin-footer">
+                  <h6 class="text-primary mb-0">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                    <a href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥1,200</span>
+                  </h6>
+                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                    <a class="text-muted" href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted">/</span>
+                    <span class="text-muted">￥2,400</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 占位卡片，保持布局整齐 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">更多插件即将推出</h6>
+                  <p class="text-muted small">我们正在开发更多有用的商业插件，敬请期待</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/cn/plugins-commercial" class="btn btn-primary me-3">查看全部商业插件</a>
+          <a href="/cn/commercial" class="btn btn-outline-primary">了解定价详情</a>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- Plugins & Implementation End -->
+  <!-- Commercial Plugins End -->
 
   <!-- How to Use Start -->
   <section class="section bg-light" id="copy-tutorial">
@@ -702,7 +735,7 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 </BaseCN>
 
 <style>
-/* Ticketing Demo Styles - 参考首页样式 */
+/* Ticketing Demo Styles - 参考 CRM 页面样式 */
 #ticket-demo-wrap {
   position: relative;
 }
@@ -780,12 +813,78 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
     display: none;
   }
 }
+
+/* 商业插件卡片样式 */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+/* 开发者logo样式 */
+.developer-logo {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.developer-logo:hover {
+  opacity: 0.8;
+}
 </style>
 
 <script>
-// 工单系统演示交互脚本 - 后续可以添加具体的交互逻辑
+// 工单系统演示交互脚本 - 参考 CRM 页面
 document.addEventListener('DOMContentLoaded', function() {
   // 预留交互功能接口
   console.log('Ticketing System Demo ready for interaction');
+  
+  // 懒加载图片
+  const images = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target as HTMLImageElement;
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          imageObserver.unobserve(img);
+        }
+      }
+    });
+  });
+
+  images.forEach(img => imageObserver.observe(img));
+
+  // 开发者 logo 悬停效果
+  const developerLogos = document.querySelectorAll('.developer-logo');
+  developerLogos.forEach(logo => {
+    logo.addEventListener('mouseenter', function(this: HTMLElement) {
+      this.style.opacity = '0.8';
+    });
+    logo.addEventListener('mouseleave', function(this: HTMLElement) {
+      this.style.opacity = '1';
+    });
+  });
 });
 </script> 

@@ -1,261 +1,437 @@
 {
-  "title": "Try it yourself, create a CRM in 3 steps",
+  "title": "Try it out: 3 steps to create a CRM",
   "subtitle": "",
   "mainSteps": [
-    {
-      "number": "01",
-      "title": "Collections and fields",
-      "id": "crm-guide1"
-    },
-    {
-      "number": "02",
-      "title": "Menus and pages",
-      "id": "crm-guide2"
-    },
-    {
-      "number": "03",
-      "title": "Blocks & actions",
-      "id": "crm-guide3"
-    }
+  {
+  "number": "01. ",
+  "title": "Collections and fields",
+  "id": "guide1"
+  },
+  {
+  "number": "02. ",
+  "title": "Menus and pages",
+  "id": "guide2"
+  },
+  {
+  "number": "03. ",
+  "title": "Blocks & actions",
+  "id": "guide3"
+  }
   ],
   "steps": [
-    {
-      "id": "step-start",
-      "title": "Start demo",
-      "description": "Click to start creating CRM",
-      "image": "https://static-docs.nocobase.com/1-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button1",
-        "label": "Click, create a CRM in 3 steps",
-        "position": {
-          "left": "46%",
-          "top": "45%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1",
-      "title": "Data table configuration guide",
-      "description": "Create data tables and fields",
-      "image": "https://static-docs.nocobase.com/2-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "groupName": "Create data tables and fields",
-      "groupNumber": "01"
-    },
-    {
-      "id": "step-2",
-      "title": "Enter data table configuration",
-      "description": "Enter the data table configuration interface",
-      "image": "https://static-docs.nocobase.com/2-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button2",
-        "label": "Enter data table configuration interface",
-        "position": {
-          "right": "12%",
-          "top": "6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Create data table",
-      "description": "Let's create data tables for customers and orders",
-      "image": "https://static-docs.nocobase.com/3-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button3",
-        "label": "Let's create data tables for customers and orders",
-        "position": {
-          "right": "13%",
-          "top": "22%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "Add fields",
-      "description": "Next, let's add some fields to the data table",
-      "image": "https://static-docs.nocobase.com/4-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button4",
-        "label": "Next, let's add some fields to the data table",
-        "position": {
-          "right": "17%",
-          "top": "52%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Select field type",
-      "description": "Choose from dozens of field types and create as needed",
-      "image": "https://static-docs.nocobase.com/5-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button5",
-        "label": "Choose from dozens of field types and create as needed",
-        "position": {
-          "right": "10%",
-          "top": "30%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Complete data table creation",
-      "description": "Creation completed, exit data table configuration interface",
-      "image": "https://static-docs.nocobase.com/6-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button6",
-        "label": "Creation completed, exit data table configuration interface",
-        "position": {
-          "right": "70%",
-          "top": "30%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "Menu and page configuration guide",
-      "description": "Configure menus and pages",
-      "image": "https://static-docs.nocobase.com/7-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "groupName": "Configure menus and pages",
-      "groupNumber": "02"
-    },
-    {
-      "id": "step-8",
-      "title": "Enter interface configuration",
-      "description": "Back to the blank canvas, let's enter interface configuration mode",
-      "image": "https://static-docs.nocobase.com/7-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button7",
-        "label": "Back to the blank canvas, let's enter interface configuration mode",
-        "position": {
-          "right": "15%",
-          "top": "2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "Add menu",
-      "description": "Now, configuration buttons appear on the interface. Let's add some menus",
-      "image": "https://static-docs.nocobase.com/8-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button8",
-        "label": "Now, configuration buttons appear on the interface. Let's add some menus",
-        "position": {
-          "left": "16%",
-          "top": "7%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "Add submenu",
-      "description": "You can also add unlimited levels of submenus",
-      "image": "https://static-docs.nocobase.com/9-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button9",
-        "label": "You can also add unlimited levels of submenus",
-        "position": {
-          "left": "8%",
-          "top": "7%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "Block layout guide",
-      "description": "Layout blocks and actions on pages",
-      "image": "https://static-docs.nocobase.com/10-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "groupName": "Layout blocks on pages",
-      "groupNumber": "03"
-    },
-    {
-      "id": "step-12",
-      "title": "Prepare to add blocks",
-      "description": "Now, you can add blocks to the page",
-      "image": "https://static-docs.nocobase.com/10-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button10",
-        "label": "Now, you can add blocks to the page",
-        "position": {
-          "left": "18%",
-          "top": "17%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-13",
-      "title": "Add table block",
-      "description": "Let's add a table block to display customer data",
-      "image": "https://static-docs.nocobase.com/11-home-steps.png",
-      "alt": "NocoBase lightweight open source no-code and low-code development platform",
-      "button": {
-        "id": "crm-button11",
-        "label": "Let's add a table block to display customer data",
-        "position": {
-          "left": "40%",
-          "top": "30%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-14",
-      "title": "Configure table columns",
-      "description": "For this table block, we can decide which columns to display",
-      "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
-      "alt": "NocoBase open source low-code platform",
-      "button": {
-        "id": "crm-button13",
-        "label": "For this table block, we can decide which columns to display",
-        "position": {
-          "right": "50%",
-          "top": "17%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-15",
-      "title": "CRM completed",
-      "description": "In just 3 steps, we have created a complete CRM system!",
-      "image": "https://static-docs.nocobase.com/24-home-steps.png",
-      "alt": "NocoBase open source low-code platform"
-    }
+  {
+  "id": "step-start",
+  "title": "Start Demo",
+  "description": "Click, 3 steps to create a CRM",
+  "image": "https://static-docs.nocobase.com/1-home-steps.png",
+  "alt": "NocoBase interface displaying a sortable table of companies with columns for name, website, industry, employees, and attachments, highlighting data customization options in a no-code platform. [cite: 435]",
+  "button": {
+  "id": "button1",
+  "label": "Click, 3 steps to create a CRM [cite: 436]",
+  "position": {
+  "left": "46%",
+  "top": "45%"
+  },
+  "balloonPos": "up",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-1",
+  "title": "Enter Collection Manager",
+  "description": "Enter the collection manager screen",
+  "image": "https://static-docs.nocobase.com/2-home-steps.png",
+  "alt": "NocoBase admin panel with quick access to Roles, Permissions, Collections, System Settings, Workflow, and Plugin settings for efficient management and configuration. [cite: 420]",
+  "button": {
+  "id": "button2",
+  "label": "Enter the collection manager screen [cite: 421]",
+  "position": {
+  "right": "12%",
+  "top": "6%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  },
+  "groupName": "Create collections and fields",
+  "groupNumber": "01"
+  },
+  {
+  "id": "step-2",
+  "title": "Create Collections",
+  "description": "Let's create the Companies, Orders collections",
+  "image": "https://static-docs.nocobase.com/3-home-steps.png",
+  "alt": "NocoBase collection manager interface with options for creating and managing database collections. [cite: 406]",
+  "button": {
+  "id": "button3",
+  "label": "Let's create the Companies, Orders collections [cite: 407]",
+  "position": {
+  "right": "13%",
+  "top": "22%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-3",
+  "title": "Add Fields",
+  "description": "Next, we add some fields to the collection",
+  "image": "https://static-docs.nocobase.com/4-home-steps.png",
+  "alt": "NocoBase collection manager interface showing configurable fields for business data collections. [cite: 392]",
+  "button": {
+  "id": "button4",
+  "label": "Next, we add some fields to the collection [cite: 393]",
+  "position": {
+  "right": "17%",
+  "top": "52%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-4",
+  "title": "Choose Field Type",
+  "description": "Choose from dozens of field types as needed",
+  "image": "https://static-docs.nocobase.com/5-home-steps.png",
+  "alt": "NocoBase interface showing system fields configuration for company data management. [cite: 378]",
+  "button": {
+  "id": "button5",
+  "label": "Choose from dozens of field types as needed [cite: 379]",
+  "position": {
+  "right": "10%",
+  "top": "30%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-5",
+  "title": "Complete Collection Creation",
+  "description": "Complete, exit the collection manager page",
+  "image": "https://static-docs.nocobase.com/6-home-steps.png",
+  "alt": "Configuring fields for company data in NocoBase Collection Manager. [cite: 364]",
+  "button": {
+  "id": "button6",
+  "label": "Complete, exit the collection manager page [cite: 365]",
+  "position": {
+  "right": "70%",
+  "top": "30%"
+  },
+  "balloonPos": "down",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-6",
+  "title": "Enter UI Editor",
+  "description": "Back to the blank canvas, let's go into UI Editor mode",
+  "image": "https://static-docs.nocobase.com/7-home-steps.png",
+  "alt": "Empty user interface of NocoBase platform ready for customization. [cite: 349]",
+  "button": {
+  "id": "button7",
+  "label": "Back to the blank canvas, let's go into UI Editor mode [cite: 350]",
+  "position": {
+  "right": "15%",
+  "top": "2%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  },
+  "groupName": "Configure menus and pages",
+  "groupNumber": "02"
+  },
+  {
+  "id": "step-7",
+  "title": "Add Menus",
+  "description": "Now, the configure buttons appears on the interface. Let's add some menus",
+  "image": "https://static-docs.nocobase.com/8-home-steps.png",
+  "alt": "NocoBase customizable menu add options featuring Group, Page, and Link. [cite: 335]",
+  "button": {
+  "id": "button8",
+  "label": "Now, the configure buttons appears on the interface. Let's add some menus [cite: 336]",
+  "position": {
+  "left": "16%",
+  "top": "7%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-8",
+  "title": "Add Submenus",
+  "description": "It is also possible to add unlimited levels of submenus",
+  "image": "https://static-docs.nocobase.com/9-home-steps.png",
+  "alt": "Configurable menu interface in NocoBase for streamlined management of customer data. [cite: 321]",
+  "button": {
+  "id": "button9",
+  "label": "It is also possible to add unlimited levels of submenus [cite: 322]",
+  "position": {
+  "left": "8%",
+  "top": "7%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-9",
+  "title": "Prepare to Add Blocks",
+  "description": "Now, it's time to add blocks within the page",
+  "image": "https://static-docs.nocobase.com/10-home-steps.png",
+  "alt": "NocoBase interactive customer management screen showcasing various customer categories and details options. [cite: 307]",
+  "button": {
+  "id": "button10",
+  "label": "Now, it's time to add blocks within the page [cite: 308]",
+  "position": {
+  "left": "18%",
+  "top": "17%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-10",
+  "title": "Add Table Block",
+  "description": "We add a table block to display companies data",
+  "image": "https://static-docs.nocobase.com/11-home-steps.png",
+  "alt": "Configurable data blocks menu for streamlined operations in NocoBase customer management platform, showing options for adding diverse customer interaction details. [cite: 292]",
+  "button": {
+  "id": "button11",
+  "label": "We add a table block to display companies data [cite: 293]",
+  "position": {
+  "left": "40%",
+  "top": "30%"
+  },
+  "balloonPos": "down",
+  "balloonLength": "medium"
+  },
+  "groupName": "Lay out blocks within a page",
+  "groupNumber": "03"
+  },
+  {
+  "id": "step-11",
+  "title": "Configure Table Columns",
+  "description": "We can decide which fields to display",
+  "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
+  "alt": "Configurable customer details panel in NocoBase showing editable fields and company information. [cite: 278]",
+  "button": {
+  "id": "button13",
+  "label": "We can decide which fields to display [cite: 279]",
+  "position": {
+  "right": "50%",
+  "top": "17%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-12",
+  "title": "Configure Actions",
+  "description": "We can also decide which actions to enable",
+  "image": "https://static-docs.nocobase.com/12-2-home-steps.png",
+  "alt": "Customizable customer management screen in NocoBase showing industry details and employee numbers. [cite: 264]",
+  "button": {
+  "id": "button14",
+  "label": "We can also decide which actions to enable [cite: 265]",
+  "position": {
+  "right": "12%",
+  "top": "16%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-13",
+  "title": "Configure Details Page",
+  "description": "Click 'View' and we go to configure the details page for each record",
+  "image": "https://static-docs.nocobase.com/12-3-home-steps.png",
+  "alt": "NocoBase customer management screen showing detailed view options and attachment features for diverse industries. [cite: 250]",
+  "button": {
+  "id": "button15",
+  "label": "Click 'View' and we go to configure the details page for each record [cite: 251]",
+  "position": {
+  "left": "20%",
+  "top": "47%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-14",
+  "title": "Add Tabs",
+  "description": "We can add some tabs",
+  "image": "https://static-docs.nocobase.com/13-home-steps.png",
+  "alt": "NocoBase platform demonstrating customer management interface with details panel and data block options. [cite: 236]",
+  "button": {
+  "id": "button16",
+  "label": "We can add some tabs [cite: 237]",
+  "position": {
+  "right": "4%",
+  "top": "6%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-15",
+  "title": "Add Details Block",
+  "description": "Rich blocks can be added in each tab. Let's add a details block",
+  "image": "https://static-docs.nocobase.com/14-home-steps.png",
+  "alt": "NocoBase UI showing customer management with detailed options to add blocks for enhanced functionality. [cite: 222]",
+  "button": {
+  "id": "button17",
+  "label": "Rich blocks can be added in each tab. Let's add a details block [cite: 223]",
+  "position": {
+  "right": "30%",
+  "top": "20%"
+  },
+  "balloonPos": "down",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-16",
+  "title": "Adjust Layout",
+  "description": "Drag and drop combination fields to adjust the layout",
+  "image": "https://static-docs.nocobase.com/15-home-steps.png",
+  "alt": "Detailed customer profile interface in NocoBase showing industry-specific information and customizable fields. [cite: 208]",
+  "button": {
+  "id": "button18",
+  "label": "Drag and drop combination fields to adjust the layout [cite: 209]",
+  "position": {
+  "right": "5%",
+  "top": "30%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-17",
+  "title": "Switch Tabs",
+  "description": "Go to the next tab and add a block of association data to make it easy to view this customer's orders",
+  "image": "https://static-docs.nocobase.com/16-home-steps.png",
+  "alt": "NocoBase user interface demonstrating how to add and customize blocks in a dynamic customer management system, showing dropdown menus for block additions. [cite: 194]",
+  "button": {
+  "id": "button19",
+  "label": "Go to the next tab and add a block of association data to make it easy to view this customer's orders [cite: 195]",
+  "position": {
+  "right": "37%",
+  "top": "10%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-18",
+  "title": "Continue Configuration",
+  "description": "Continue",
+  "image": "https://static-docs.nocobase.com/17-home-steps.png",
+  "alt": "NocoBase interface showcasing a detailed customer management module with industry categorization and contact editing features. [cite: 180]",
+  "button": {
+  "id": "button20",
+  "label": "Continue [cite: 181]",
+  "position": {
+  "right": "50%",
+  "top": "20%"
+  },
+  "balloonPos": "down",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-19",
+  "title": "Add More Blocks",
+  "description": "We can add as many blocks as we want within a page",
+  "image": "https://static-docs.nocobase.com/18-home-steps.png",
+  "alt": "Screenshot of NocoBase's order creation interface showcasing data entry fields, configuration options, and a bar chart visualization. [cite: 166]",
+  "button": {
+  "id": "button21",
+  "label": "We can add as many blocks as we want within a page [cite: 167]",
+  "position": {
+  "right": "10%",
+  "top": "34%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-20",
+  "title": "Drag to Adjust",
+  "description": "Drag and drop these blocks to adjust the layout",
+  "image": "https://static-docs.nocobase.com/19-home-steps.png",
+  "alt": "NocoBase new order interface with dynamic pricing and customer selection. [cite: 152]",
+  "button": {
+  "id": "button22",
+  "label": "Drag and drop these blocks to adjust the layout [cite: 153]",
+  "position": {
+  "right": "7%",
+  "top": "36%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-21",
+  "title": "Customize Elements",
+  "description": "Each block and even each element can be configured",
+  "image": "https://static-docs.nocobase.com/20-home-steps.png",
+  "alt": "NocoBase platform showcasing dynamic configuration of order entries with customizable columns in an interactive dashboard layout. [cite: 138]",
+  "button": {
+  "id": "button23",
+  "label": "Each block and even each element can be configured [cite: 139]",
+  "position": {
+  "right": "35%",
+  "top": "35%"
+  },
+  "balloonPos": "right",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-22",
+  "title": "Exit UI Editor",
+  "description": "Okay, let's exit UI Editor mode",
+  "image": "https://static-docs.nocobase.com/21-home-steps.png",
+  "alt": "NocoBase UI showcasing dynamic order management with automated calculations and industry-specific data visualization. [cite: 124]",
+  "button": {
+  "id": "button24",
+  "label": "Okay, let's exit UI Editor mode [cite: 125]",
+  "position": {
+  "right": "18%",
+  "top": "2%"
+  },
+  "balloonPos": "left",
+  "balloonLength": "medium"
+  }
+  },
+  {
+  "id": "step-23",
+  "title": "Demo Complete",
+  "description": "Now, let's get started with NocoBase!",
+  "image": "https://static-docs.nocobase.com/1-home-steps.png",
+  "alt": "NocoBase no-code DEMO [cite: 110]",
+  "button": {
+  "id": "button25",
+  "label": "Now, let's get started with NocoBase! [cite: 111]",
+  "position": {
+  "left": "46%",
+  "top": "45%"
+  },
+  "balloonPos": "down",
+  "balloonLength": "medium"
+  }
+  }
   ]
-} 
+ }
