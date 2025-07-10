@@ -48,7 +48,7 @@ Then use this image to start your NocoBase service.
 **Step 2: Enable the "Backup Manager" Plugin**
 
 1. Log into your NocoBase system.
-2. Go to **`Plugin Management`** in the left menu.
+2. Go to **`Plugin Management`** .
 3. Find and enable the **`Backup Manager`** plugin.
 
 ![20250711014113](https://static-docs.nocobase.com/20250711014113.png)
