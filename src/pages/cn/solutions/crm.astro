@@ -51,10 +51,20 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 
         <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
           <div class="text-center">
-            <!-- CRM 预览图 - 这里预留空位 -->
-            <div class="bg-soft-primary rounded p-4" style="min-height: 300px;">
-              <div class="d-flex align-items-center justify-content-center h-100">
-                <span class="text-muted">CRM 预览图（待添加）</span>
+            <!-- CRM 预览视频 -->
+            <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
+              <video 
+                id="crm-preview-video"
+                class="w-100 rounded shadow"
+                poster="https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g.png"
+                preload="none"
+                style="cursor: pointer; max-height: 400px; object-fit: cover;"
+              >
+                <source src="https://static-docs.nocobase.com/NocoBase_CRM 中文.mp4" type="video/mp4">
+                您的浏览器不支持 HTML5 视频。
+              </video>
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+                <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
               </div>
             </div>
           </div>
@@ -853,12 +863,32 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 .developer-logo:hover {
   opacity: 0.8;
 }
+
+
 </style>
 
 <script>
-// CRM 演示交互脚本 - 后续可以添加具体的交互逻辑
 document.addEventListener('DOMContentLoaded', function() {
-  // 预留交互功能接口
-  console.log('CRM Demo ready for interaction');
+  const video = document.getElementById('crm-preview-video') as HTMLVideoElement;
+  const playButton = document.getElementById('play-button');
+  
+  if (!video || !playButton) return;
+  
+  // 只在初始状态点击大播放按钮时触发播放
+  playButton.addEventListener('click', function() {
+    // 添加控制栏
+    video.setAttribute('controls', '');
+    video.setAttribute('controlslist', 'nodownload');
+    
+    // 开始播放并隐藏播放按钮
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  // 视频结束时显示播放按钮，移除控制栏
+  video.addEventListener('ended', function() {
+    playButton.style.display = 'block';
+    video.removeAttribute('controls');
+  });
 });
 </script> 

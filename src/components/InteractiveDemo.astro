@@ -3,8 +3,7 @@ export interface DemoStep {
   id: string;
   title: string;
   description: string;
-  image: string;
-  alt: string;
+  image?: string;
   button?: {
     id: string;
     label: string;
@@ -16,8 +15,6 @@ export interface DemoStep {
     balloonLength?: string;
     balloonPos: string;
   };
-  groupName?: string;
-  groupNumber?: string;
 }
 
 export interface DemoGuide {
@@ -27,6 +24,7 @@ export interface DemoGuide {
     number: string;
     title: string;
     id: string;
+    targetStepId?: string;
   }>;
   steps: DemoStep[];
 }
@@ -59,21 +57,25 @@ const { guides } = Astro.props;
 </div>
 
 <div class="demo-wrap">
-  <img
-    src={guides.steps[0]?.image}
-    alt={guides.steps[0]?.alt}
-    class="img-fluid rounded-md shadow-lg"
-    style="z-index: 0;"
-  />
+  {guides.steps[0]?.image && (
+    <img
+      src={guides.steps[0]?.image}
+      alt="NocoBase 演示界面"
+      class="img-fluid rounded-md shadow-lg"
+      style="z-index: 0;"
+    />
+  )}
 
   <div class="steps-wrap">
     {guides.steps.map((step, index) => (
       <div class={`demo_step ${index === 0 ? 'demo_step_start' : ''}`} data-step={index}>
-        <img
-          data-src={step.image}
-          src={index === 0 ? step.image : ""}
-          alt={step.alt}
-        />
+        {step.image && (
+          <img
+            data-src={step.image}
+            src={index === 0 ? step.image : ""}
+            alt="NocoBase 演示界面"
+          />
+        )}
         {step.button && (
           <div
             class="demo-button demo_tooltip"
@@ -149,10 +151,12 @@ const { guides } = Astro.props;
             </svg>
           </div>
         )}
-        {step.groupName && (
-          <div class="steps-groups">
-            <div class="steps-group-name">
-              <span>{step.groupNumber}</span><br />{step.groupName}
+        {step.image === undefined && (
+          <div class="chapter-overlay">
+            <div class="chapter-content">
+              <div class="chapter-number">{step.id}</div>
+              <br>
+              <div class="chapter-title">{step.title}</div>
             </div>
           </div>
         )}
@@ -271,17 +275,17 @@ const { guides } = Astro.props;
     height: 100% !important;
   }
 
-  /* 完全移除tooltip效果 */
-  .demo_tooltip::before {
+  /* 移除默认tooltip的before伪元素，但保留我们自定义的箭头 */
+  .demo_tooltip:not(.auto-tooltip)::before {
     display: none !important;
   }
 
-  .demo_tooltip:hover::before {
+  .demo_tooltip:hover:not(.auto-tooltip)::before {
     display: none !important;
   }
 
-  /* 自动提示样式 - 1秒后自动显示，根据balloonPos配置 */
-  .demo-button.auto-tooltip::after {
+  /* 提示框基础样式 */
+  .demo-button::after {
     content: attr(aria-label);
     position: absolute;
     background: rgba(250, 84, 28, 0.9);
@@ -296,59 +300,78 @@ const { guides } = Astro.props;
     word-wrap: break-word;
     white-space: normal;
     line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.15s ease-out;
+  }
+  
+  /* 显示提示框时的样式 */
+  .demo-button.auto-tooltip::after {
     opacity: 1;
+    visibility: visible;
   }
 
-  .demo-button.auto-tooltip::before {
+  /* 箭头基础样式 */
+  .demo-button::before {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
     z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.15s ease-out;
+  }
+  
+  /* 显示箭头时的样式 */
+  .demo-button.auto-tooltip::before {
     opacity: 1;
+    visibility: visible;
   }
 
   /* 上方提示 */
   .demo-button.auto-tooltip[data-balloon-pos="up"]::after {
     bottom: 100%;
     left: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     transform: translateX(-50%);
   }
 
   .demo-button.auto-tooltip[data-balloon-pos="up"]::before {
     bottom: 100%;
     left: 50%;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
     transform: translateX(-50%);
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 6px solid rgba(250, 84, 28, 0.9);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(250, 84, 28, 0.9);
   }
 
   /* 下方提示 */
   .demo-button.auto-tooltip[data-balloon-pos="down"]::after {
     top: 100%;
     left: 50%;
-    margin-top: 5px;
+    margin-top: 8px;
     transform: translateX(-50%);
   }
 
   .demo-button.auto-tooltip[data-balloon-pos="down"]::before {
     top: 100%;
     left: 50%;
-    margin-top: -1px;
+    margin-top: -2px;
     transform: translateX(-50%);
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-bottom: 6px solid rgba(250, 84, 28, 0.9);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(250, 84, 28, 0.9);
   }
 
   /* 左侧提示 */
   .demo-button.auto-tooltip[data-balloon-pos="left"]::after {
     right: 100%;
     top: 50%;
-    margin-right: 5px;
+    margin-right: 8px;
     transform: translateY(-50%);
     max-width: 180px;
   }
@@ -356,18 +379,18 @@ const { guides } = Astro.props;
   .demo-button.auto-tooltip[data-balloon-pos="left"]::before {
     right: 100%;
     top: 50%;
-    margin-right: -1px;
+    margin-right: -2px;
     transform: translateY(-50%);
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-left: 6px solid rgba(250, 84, 28, 0.9);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid rgba(250, 84, 28, 0.9);
   }
 
   /* 右侧提示 */
   .demo-button.auto-tooltip[data-balloon-pos="right"]::after {
     left: 100%;
     top: 50%;
-    margin-left: 5px;
+    margin-left: 8px;
     transform: translateY(-50%);
     max-width: 180px;
   }
@@ -375,110 +398,58 @@ const { guides } = Astro.props;
   .demo-button.auto-tooltip[data-balloon-pos="right"]::before {
     left: 100%;
     top: 50%;
-    margin-left: -1px;
+    margin-left: -2px;
     transform: translateY(-50%);
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-right: 6px solid rgba(250, 84, 28, 0.9);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid rgba(250, 84, 28, 0.9);
   }
 
-  @keyframes tooltipFadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
-  /* 为不同方向的提示框添加特定的动画 */
-  .demo-button.auto-tooltip[data-balloon-pos="up"]::after,
-  .demo-button.auto-tooltip[data-balloon-pos="up"]::before {
-    animation: tooltipFadeInUp 0.18s ease-out;
-  }
 
-  .demo-button.auto-tooltip[data-balloon-pos="down"]::after,
-  .demo-button.auto-tooltip[data-balloon-pos="down"]::before {
-    animation: tooltipFadeInDown 0.18s ease-out;
-  }
 
-  .demo-button.auto-tooltip[data-balloon-pos="left"]::after,
-  .demo-button.auto-tooltip[data-balloon-pos="left"]::before {
-    animation: tooltipFadeInLeft 0.18s ease-out;
-  }
 
-  .demo-button.auto-tooltip[data-balloon-pos="right"]::after,
-  .demo-button.auto-tooltip[data-balloon-pos="right"]::before {
-    animation: tooltipFadeInRight 0.18s ease-out;
-  }
 
-  @keyframes tooltipFadeInUp {
-    from {
-      opacity: 0;
-      transform: translateX(-50%) translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
 
-  @keyframes tooltipFadeInDown {
-    from {
-      opacity: 0;
-      transform: translateX(-50%) translateY(5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
-
-  @keyframes tooltipFadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateY(-50%) translateX(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(-50%) translateX(0);
-    }
-  }
-
-  @keyframes tooltipFadeInRight {
-    from {
-      opacity: 0;
-      transform: translateY(-50%) translateX(5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(-50%) translateX(0);
-    }
-  }
-
-  /* 步骤组标签样式 */
-  .steps-groups {
-    cursor: pointer;
+  /* 章节页样式 */
+  .chapter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
     background: url("../images/step-bg.png") center center repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     z-index: 5;
-    pointer-events: none;
   }
 
-  .steps-group-name {
-    font-size: 24px;
+  .chapter-content {
+    text-align: center;
+    color: #333;
+    max-width: 600px;
     padding: 10%;
-    pointer-events: auto;
   }
 
-  .steps-group-name span {
+  .chapter-number {
     font-size: 72px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 0;
     opacity: 0.3;
   }
+
+  .chapter-title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #333;
+  }
+
+
 
   /* 可点击步骤的样式 */
   .clickable-step {
@@ -555,6 +526,19 @@ const { guides } = Astro.props;
     .demo-button.auto-tooltip[data-balloon-pos="right"]::after {
       max-width: 120px;
     }
+
+    /* 移动设备上的章节页样式 */
+    .chapter-number {
+      font-size: 48px !important;
+    }
+
+    .chapter-title {
+      font-size: 18px !important;
+    }
+
+    .chapter-content {
+      padding: 8% !important;
+    }
   }
 </style>
 
@@ -563,33 +547,35 @@ const { guides } = Astro.props;
     currentStep: number;
     steps: NodeListOf<Element>;
     buttons: NodeListOf<Element>;
+    chapterSteps: number[];
     init(): void;
     bindEvents(): void;
-    preloadImages(): void;
-    initializeFirstStep(): void;
     goToStep(stepIndex: number): void;
-    reset(): void;
-    next(): void;
-    previous(): void;
-    activateStep(stepIndex: number): void;
-    updateStepNavigation(): void;
-    markStepsLoaded(): void;
-    showCurrentStepButton(): void;
-    hideAllButtons(): void;
     jumpToMainStep(mainStepIndex: number): void;
-    updateCurrentStepStyle(): void;
   }
 
   class InteractiveDemo implements DemoInterface {
     currentStep: number;
     steps: NodeListOf<Element>;
     buttons: NodeListOf<Element>;
+    chapterSteps: number[];
 
     constructor() {
       this.currentStep = 0;
       this.steps = document.querySelectorAll('.demo_step');
       this.buttons = document.querySelectorAll('.demo-button');
+      this.chapterSteps = this.findChapterSteps();
       this.init();
+    }
+
+    findChapterSteps(): number[] {
+      const chapterSteps: number[] = [];
+      this.steps.forEach((step, index) => {
+        if (step.querySelector('.chapter-overlay')) {
+          chapterSteps.push(index);
+        }
+      });
+      return chapterSteps;
     }
 
     init(): void {
@@ -608,9 +594,6 @@ const { guides } = Astro.props;
     }
 
     initializeFirstStep(): void {
-      console.log(`总步骤数：${this.steps.length}`);
-      
-      // 隐藏所有步骤
       this.steps.forEach((step, index) => {
         const stepElement = step as HTMLElement;
         if (index === 0) {
@@ -620,24 +603,16 @@ const { guides } = Astro.props;
           stepElement.style.display = 'none';
           stepElement.style.setProperty('display', 'none', 'important');
         }
-        console.log(`步骤 ${index} 设置为：${index === 0 ? 'block' : 'none'}`);
       });
       
-      // 显示第一个步骤的按钮
-      console.log(`初始化：当前步骤 ${this.currentStep}`);
-      console.log(`找到的按钮数量：${this.buttons.length}`);
       this.showCurrentStepButton();
-      
-      // 更新第一个步骤的样式
       this.updateCurrentStepStyle();
     }
 
     hideAllButtons(): void {
       this.buttons.forEach((button) => {
         const buttonElement = button as HTMLElement;
-        buttonElement.classList.remove('show');
-        buttonElement.classList.remove('auto-tooltip');
-        // 在切换步骤时重置提示框状态，让新步骤的按钮可以重新显示提示
+        buttonElement.classList.remove('show', 'auto-tooltip');
         delete buttonElement.dataset.tooltipHidden;
       });
     }
@@ -645,54 +620,47 @@ const { guides } = Astro.props;
     showCurrentStepButton(): void {
       this.hideAllButtons();
       
-      // 检查当前步骤是否有按钮配置
       const currentButton = document.querySelector(`[data-step-button="${this.currentStep}"]`) as HTMLElement;
       if (currentButton) {
         currentButton.classList.add('show');
-        console.log(`显示步骤 ${this.currentStep} 的按钮`);
         
-        // 等待1秒后自动显示提示，但只在首次显示时或用户未手动隐藏时
         setTimeout(() => {
           if (!currentButton.dataset.tooltipHidden) {
             currentButton.classList.add('auto-tooltip');
           }
         }, 1000);
-      } else {
-        console.log(`步骤 ${this.currentStep} 没有按钮配置`);
       }
     }
 
     bindEvents(): void {
-      // 绑定按钮点击事件
+      // 按钮点击事件
       this.buttons.forEach((button) => {
         button.addEventListener('click', () => {
           const stepIndex = parseInt((button as HTMLElement).dataset.stepButton || '0');
-          console.log(`点击步骤 ${stepIndex} 的按钮`);
           
-          // 检查是否是最后一步
           if (stepIndex === this.steps.length - 1) {
-            console.log(`按钮在最后一步，循环回第一步`);
             this.goToStep(0);
           } else {
-            // 点击按钮跳转到下一个步骤
             this.goToStep(stepIndex + 1);
           }
         });
 
-        // 添加鼠标悬停事件监听器
         button.addEventListener('mouseenter', () => {
-          // 鼠标进入时不做任何处理，保持当前状态
+          const buttonElement = button as HTMLElement;
+          if (buttonElement.classList.contains('show')) {
+            delete buttonElement.dataset.tooltipHidden;
+            buttonElement.classList.add('auto-tooltip');
+          }
         });
 
         button.addEventListener('mouseleave', () => {
-          // 鼠标离开时隐藏提示框，并标记为已被用户隐藏
           const buttonElement = button as HTMLElement;
           buttonElement.classList.remove('auto-tooltip');
           buttonElement.dataset.tooltipHidden = 'true';
         });
       });
 
-      // 绑定步骤导航点击事件
+      // 步骤导航点击事件
       const stepTitles = document.querySelectorAll('.steps-title');
       stepTitles.forEach((stepTitle, index) => {
         stepTitle.addEventListener('click', () => {
@@ -700,26 +668,19 @@ const { guides } = Astro.props;
         });
       });
 
-      // 绑定所有步骤的点击事件（适用于没有按钮的步骤，特别是灰色导航页面）
+      // 步骤点击事件
       this.steps.forEach((step, index) => {
         const stepElement = step as HTMLElement;
         
-        // 给所有步骤添加点击事件
         stepElement.addEventListener('click', (e) => {
-          // 如果点击的是按钮，不处理（让按钮自己处理）
           if ((e.target as HTMLElement).closest('.demo-button')) {
             return;
           }
           
-          // 如果是当前步骤且没有按钮配置，就跳转到下一步
           if (index === this.currentStep) {
             const hasButtonConfig = document.querySelector(`[data-step-button="${this.currentStep}"]`);
             if (!hasButtonConfig) {
-              console.log(`点击无按钮配置的步骤 ${index}，跳转到下一步`);
-              
-              // 检查是否是最后一步
               if (index === this.steps.length - 1) {
-                console.log(`到达最后一步，循环回第一步`);
                 this.goToStep(0);
               } else {
                 this.goToStep(index + 1);
@@ -730,45 +691,27 @@ const { guides } = Astro.props;
       });
     }
 
-    // 为当前步骤添加适当的样式
     updateCurrentStepStyle(): void {
-      // 移除所有步骤的特殊样式
       this.steps.forEach((step) => {
         const stepElement = step as HTMLElement;
         stepElement.classList.remove('clickable-step');
         stepElement.style.cursor = 'default';
       });
 
-      // 为当前步骤添加样式
       const currentStepElement = this.steps[this.currentStep] as HTMLElement;
-      
-      // 检查当前步骤是否有按钮配置
+      const isChapterPage = currentStepElement.querySelector('.chapter-overlay');
       const hasButtonConfig = document.querySelector(`[data-step-button="${this.currentStep}"]`);
       
-      if (!hasButtonConfig) {
-        // 如果没有按钮配置，添加可点击样式（灰色导航页面）
+      if (isChapterPage || !hasButtonConfig) {
         currentStepElement.classList.add('clickable-step');
         currentStepElement.style.cursor = 'pointer';
-        console.log(`步骤 ${this.currentStep} 是灰色导航页面，添加可点击样式`);
-      } else {
-        console.log(`步骤 ${this.currentStep} 有按钮，使用默认样式`);
       }
     }
 
-    // 跳转到主步骤的第一个子步骤
     jumpToMainStep(mainStepIndex: number): void {
-      let targetStep = 0;
-      
-      // 根据主步骤索引确定目标步骤（灰色导航页面的位置）
-      if (mainStepIndex === 0) {
-        targetStep = 1; // 跳转到第1步："01 创建数据表和字段"
-      } else if (mainStepIndex === 1) {
-        targetStep = 6; // 跳转到第6步："02 配置菜单和页面"
-      } else if (mainStepIndex === 2) {
-        targetStep = 10; // 跳转到第10步："03 在页面内布置区块和操作"
+      if (mainStepIndex >= 0 && mainStepIndex < this.chapterSteps.length) {
+        this.goToStep(this.chapterSteps[mainStepIndex]);
       }
-      
-      this.goToStep(targetStep);
     }
 
     preloadImages(): void {
@@ -786,97 +729,71 @@ const { guides } = Astro.props;
 
     goToStep(stepIndex: number): void {
       if (stepIndex >= 0 && stepIndex < this.steps.length) {
-        console.log(`从步骤 ${this.currentStep} 跳转到步骤 ${stepIndex}`);
-        
-        // 首先隐藏所有步骤，确保没有重叠显示
-        this.steps.forEach((step, index) => {
+        this.steps.forEach((step) => {
           const stepElement = step as HTMLElement;
           stepElement.style.display = 'none';
           stepElement.style.setProperty('display', 'none', 'important');
           stepElement.classList.remove('clickable-step');
         });
         
-        // 隐藏所有按钮
         this.hideAllButtons();
         
-        // 显示目标步骤
         this.currentStep = stepIndex;
         const targetStepElement = this.steps[this.currentStep] as HTMLElement;
         targetStepElement.style.display = 'block';
         targetStepElement.style.setProperty('display', 'block', 'important');
         
-        console.log(`步骤 ${this.currentStep} 已显示`);
-        
-        // 显示当前步骤的按钮
         this.showCurrentStepButton();
-        
-        // 更新当前步骤的样式
         this.updateCurrentStepStyle();
-        
-        // 同步步骤导航状态
         this.updateStepNavigation();
-      } else {
-        console.log(`无效的步骤索引: ${stepIndex}`);
       }
     }
 
-    // 公共方法：重置演示
     reset(): void {
       this.goToStep(0);
     }
 
-    // 公共方法：下一步
     next(): void {
       if (this.currentStep < this.steps.length - 1) {
         this.goToStep(this.currentStep + 1);
       }
     }
 
-    // 公共方法：上一步
     previous(): void {
       if (this.currentStep > 0) {
         this.goToStep(this.currentStep - 1);
       }
     }
 
-    // 激活步骤导航
     activateStep(stepIndex: number): void {
-      // 移除所有步骤的激活状态
       const stepTitles = document.querySelectorAll('.steps-title');
       stepTitles.forEach(stepTitle => {
         stepTitle.classList.remove('active');
       });
 
-      // 激活当前步骤
       if (stepTitles[stepIndex]) {
         stepTitles[stepIndex].classList.add('active');
       }
     }
 
-    // 更新步骤导航状态
     updateStepNavigation(): void {
-      // 根据当前步骤找到对应的主步骤
       let mainStepIndex = 0;
       
-      // 根据当前步骤确定主步骤（基于实际的灰色导航页面位置）
-      if (this.currentStep >= 0 && this.currentStep <= 5) {
-        mainStepIndex = 0; // 创建数据表和字段
-      } else if (this.currentStep >= 6 && this.currentStep <= 9) {
-        mainStepIndex = 1; // 配置菜单和页面
-      } else if (this.currentStep >= 10) {
-        mainStepIndex = 2; // 在页面内布置区块和操作
+      for (let i = this.chapterSteps.length - 1; i >= 0; i--) {
+        if (this.currentStep >= this.chapterSteps[i]) {
+          mainStepIndex = i;
+          break;
+        }
       }
       
       this.activateStep(mainStepIndex);
     }
   }
 
-  // 初始化演示
   document.addEventListener('DOMContentLoaded', () => {
     new InteractiveDemo();
   });
 
-  // 导出全局访问
   declare global {
     interface Window {
       InteractiveDemo: typeof InteractiveDemo;

@@ -5,17 +5,20 @@
     {
       "number": "01",
       "title": "创建数据表和字段",
-      "id": "crm-guide1"
+      "id": "crm-guide1",
+      "targetStepId": "01"
     },
     {
       "number": "02",
       "title": "配置菜单和页面",
-      "id": "crm-guide2"
+      "id": "crm-guide2",
+      "targetStepId": "02"
     },
     {
       "number": "03",
       "title": "在页面内布置区块和操作",
-      "id": "crm-guide3"
+      "id": "crm-guide3",
+      "targetStepId": "03"
     }
   ],
   "steps": [
@@ -24,7 +27,6 @@
       "title": "开始演示",
       "description": "点击开始创建 CRM",
       "image": "https://static-docs.nocobase.com/1-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button1",
         "label": "点击，3 步创建一个 CRM",
@@ -37,11 +39,15 @@
       }
     },
     {
+      "id": "01",
+      "title": "创建数据表和字段",
+      "description": "第一步：创建数据表和字段"
+    },
+    {
       "id": "step-1",
       "title": "进入数据表配置",
       "description": "进入数据表配置界面",
       "image": "https://static-docs.nocobase.com/2-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button2",
         "label": "进入数据表配置界面",
@@ -51,16 +57,13 @@
         },
         "balloonPos": "left",
         "balloonLength": "medium"
-      },
-      "groupName": "创建数据表和字段",
-      "groupNumber": "01"
+      }
     },
     {
       "id": "step-2",
       "title": "创建数据表",
       "description": "我们来创建顾客、订单的数据表",
       "image": "https://static-docs.nocobase.com/3-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button3",
         "label": "我们来创建顾客、订单的数据表",
@@ -77,7 +80,6 @@
       "title": "添加字段",
       "description": "接下来，我们为数据表添加一些字段",
       "image": "https://static-docs.nocobase.com/4-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button4",
         "label": "接下来，我们为数据表添加一些字段",
@@ -94,7 +96,6 @@
       "title": "选择字段类型",
       "description": "根据需要，从数十种字段类型中选择并创建",
       "image": "https://static-docs.nocobase.com/5-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button5",
         "label": "根据需要，从数十种字段类型中选择并创建",
@@ -111,7 +112,6 @@
       "title": "完成数据表创建",
       "description": "创建完成，退出数据表配置界面",
       "image": "https://static-docs.nocobase.com/6-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button6",
         "label": "创建完成，退出数据表配置界面",
@@ -124,11 +124,15 @@
       }
     },
     {
+      "id": "02",
+      "title": "配置菜单和页面",
+      "description": "第二步：配置菜单和页面"
+    },
+    {
       "id": "step-6",
       "title": "进入界面配置",
       "description": "回到空白的画布，让我们进入界面配置模式",
       "image": "https://static-docs.nocobase.com/7-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button7",
         "label": "回到空白的画布，让我们进入界面配置模式",
@@ -138,16 +142,13 @@
         },
         "balloonPos": "left",
         "balloonLength": "medium"
-      },
-      "groupName": "配置菜单和页面",
-      "groupNumber": "02"
+      }
     },
     {
       "id": "step-7",
       "title": "添加菜单",
       "description": "此时，界面上出现了配置按钮。让我们添加一些菜单",
       "image": "https://static-docs.nocobase.com/8-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button8",
         "label": "此时，界面上出现了配置按钮。让我们添加一些菜单",
@@ -164,7 +165,6 @@
       "title": "添加子菜单",
       "description": "也可以添加不限层级的子菜单",
       "image": "https://static-docs.nocobase.com/9-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button9",
         "label": "也可以添加不限层级的子菜单",
@@ -181,7 +181,6 @@
       "title": "准备添加区块",
       "description": "现在，就可以在页面内添加区块了",
       "image": "https://static-docs.nocobase.com/10-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button10",
         "label": "现在，就可以在页面内添加区块了",
@@ -194,11 +193,15 @@
       }
     },
     {
+      "id": "03",
+      "title": "在页面内布置区块和操作",
+      "description": "第三步：在页面内布置区块和操作"
+    },
+    {
       "id": "step-10",
       "title": "添加表格区块",
       "description": "我们添加一个表格区块，用来显示顾客的数据",
       "image": "https://static-docs.nocobase.com/11-home-steps.png",
-      "alt": "NocoBase 轻量级开源无代码和低代码开发平台",
       "button": {
         "id": "crm-button11",
         "label": "我们添加一个表格区块，用来显示顾客的数据",
@@ -208,16 +211,13 @@
         },
         "balloonPos": "down",
         "balloonLength": "medium"
-      },
-      "groupName": "在页面内布置区块",
-      "groupNumber": "03"
+      }
     },
     {
       "id": "step-11",
       "title": "配置表格列",
       "description": "对这个表格区块，我们可以决定显示哪些列",
       "image": "https://static-docs.nocobase.com/12-1-home-steps.png",
-      "alt": "NocoBase 开源低代码平台",
       "button": {
         "id": "crm-button13",
         "label": "对这个表格区块，我们可以决定显示哪些列",
@@ -234,7 +234,6 @@
       "title": "配置操作",
       "description": "也可以决定启用哪些操作",
       "image": "https://static-docs.nocobase.com/12-2-home-steps.png",
-      "alt": "NocoBase 开源低代码平台",
       "button": {
         "id": "crm-button14",
         "label": "也可以决定启用哪些操作",
@@ -251,7 +250,6 @@
       "title": "配置详情页",
       "description": "点击'查看'，我们去配置每条数据的详情页",
       "image": "https://static-docs.nocobase.com/12-3-home-steps.png",
-      "alt": "NocoBase 开源无代码平台",
       "button": {
         "id": "crm-button15",
         "label": "点击'查看'，我们去配置每条数据的详情页",
@@ -268,7 +266,6 @@
       "title": "添加标签页",
       "description": "我们可以添加一些标签页",
       "image": "https://static-docs.nocobase.com/13-home-steps.png",
-      "alt": "NocoBase 开源低代码平台",
       "button": {
         "id": "crm-button16",
         "label": "我们可以添加一些标签页",
@@ -285,7 +282,6 @@
       "title": "添加详情区块",
       "description": "在每个标签页里都可以添加丰富的区块。让我们添加一个详情区块",
       "image": "https://static-docs.nocobase.com/14-home-steps.png",
-      "alt": "NocoBase 开源低代码平台",
       "button": {
         "id": "crm-button17",
         "label": "在每个标签页里都可以添加丰富的区块。让我们添加一个详情区块",
@@ -302,7 +298,6 @@
       "title": "调整布局",
       "description": "可以拖拽组合字段，调整布局",
       "image": "https://static-docs.nocobase.com/15-home-steps.png",
-      "alt": "NocoBase 低代码开发平台",
       "button": {
         "id": "crm-button18",
         "label": "可以拖拽组合字段，调整布局",
@@ -319,7 +314,6 @@
       "title": "切换标签页",
       "description": "去下一个标签页，添加一个相关数据区块，便于查看这个顾客的订单",
       "image": "https://static-docs.nocobase.com/16-home-steps.png",
-      "alt": "NocoBase 低代码开发工具",
       "button": {
         "id": "crm-button19",
         "label": "去下一个标签页，添加一个相关数据区块，便于查看这个顾客的订单",
@@ -336,7 +330,6 @@
       "title": "继续配置",
       "description": "继续",
       "image": "https://static-docs.nocobase.com/17-home-steps.png",
-      "alt": "NocoBase 开源零代码开发平台",
       "button": {
         "id": "crm-button20",
         "label": "继续",
@@ -353,7 +346,6 @@
       "title": "添加更多区块",
       "description": "我们可以在页面内添加任意多个区块",
       "image": "https://static-docs.nocobase.com/18-home-steps.png",
-      "alt": "NocoBase 开源低代码平台",
       "button": {
         "id": "crm-button21",
         "label": "我们可以在页面内添加任意多个区块",
@@ -370,7 +362,6 @@
       "title": "拖拽调整",
       "description": "拖拽这些区块就可以调整布局",
       "image": "https://static-docs.nocobase.com/19-home-steps.png",
-      "alt": "NocoBase 开源无代码平台",
       "button": {
         "id": "crm-button22",
         "label": "拖拽这些区块就可以调整布局",
@@ -387,7 +378,6 @@
       "title": "个性化配置",
       "description": "每个区块甚至每个元素都可以个性化配置",
       "image": "https://static-docs.nocobase.com/20-home-steps.png",
-      "alt": "NocoBase 企业级无代码平台",
       "button": {
         "id": "crm-button23",
         "label": "每个区块甚至每个元素都可以个性化配置",
@@ -404,7 +394,6 @@
       "title": "完成配置",
       "description": "好了，让我们退出配置模式",
       "image": "https://static-docs.nocobase.com/21-home-steps.png",
-      "alt": "NocoBase 轻量级无代码平台",
       "button": {
         "id": "crm-button24",
         "label": "好了，让我们退出配置模式",
@@ -421,7 +410,6 @@
       "title": "演示完成",
       "description": "现在，开始使用 NocoBase 吧",
       "image": "https://static-docs.nocobase.com/1-home-steps.png",
-      "alt": "NocoBase 无代码 DEMO",
       "button": {
         "id": "crm-button25",
         "label": "现在，开始使用 NocoBase 吧",
