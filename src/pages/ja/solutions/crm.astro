@@ -1,28 +1,28 @@
 ---
-import BaseCN from "../../../layouts/BaseCN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
 
-// 仪表板交互演示数据
+// ダッシュボードインタラクティブデモデータ
 const dashboardDemoGuides = {
-  "title": "玩转仪表板：动态图表与筛选",
-  "subtitle": "只需三步，即可轻松体验销售漏斗、业绩排行等动态图表，并掌握强大的数据筛选功能。",
+  "title": "ダッシュボードをマスター：動的チャートとフィルタリング",
+  "subtitle": "わずか3ステップで、営業ファネル、業績ランキングなどの動的チャートを体験し、強力なデータフィルタリング機能をマスターしましょう。",
   "mainSteps": [
     {
       "number": "01",
-      "title": "洞察销售线索",
+      "title": "リード分析",
       "id": "dashboard-guide1",
       "targetStepId": "01"
     },
     {
       "number": "02",
-      "title": "创建动态筛选",
+      "title": "動的フィルターの作成",
       "id": "dashboard-guide2",
       "targetStepId": "02"
     },
     {
       "number": "03",
-      "title": "自定义图表",
+      "title": "チャートのカスタマイズ",
       "id": "dashboard-guide3",
       "targetStepId": "03"
     }
@@ -30,12 +30,12 @@ const dashboardDemoGuides = {
   "steps": [
     {
       "id": "step-start",
-      "title": "开启数据探索之旅",
-      "description": "欢迎来到仪表板！这里是您的数据驾驶舱，聚合了所有关键业务信息，让您对整体状况一目了然。",
+      "title": "データ探索の開始",
+      "description": "ダッシュボードへようこそ！ここはあなたのデータコックピットで、すべての重要なビジネス情報を集約し、明確な概要を提供します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
       "button": {
         "id": "button1",
-        "label": "开启数据探索之旅",
+        "label": "データ探索を開始",
         "position": {
           "right": "49.3%",
           "top": "41.3%"
@@ -46,17 +46,17 @@ const dashboardDemoGuides = {
     },
     {
       "id": "01",
-      "title": "第一步：洞察销售线索",
-      "description": "首先，让我们深入\"线索专题\"仪表板，看看如何通过可视化图表快速获取业务洞察。"
+      "title": "ステップ1：リード分析",
+      "description": "まず、「リード分析」ダッシュボードに深く入り、視覚的なチャートを通じてビジネス洞察を迅速に得る方法を見てみましょう。"
     },
     {
       "id": "step-1-1",
-      "title": "交互式查看数据",
-      "description": "图表不是静态的。将鼠标悬停在销售漏斗的任意部分，即可交互式地查看该阶段的详细数据。",
+      "title": "インタラクティブデータビュー",
+      "description": "チャートは静的ではありません。営業ファネルの任意の部分にマウスを重ねると、そのステージの詳細データをインタラクティブに表示できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
       "button": {
         "id": "button3",
-        "label": "交互式查看数据",
+        "label": "インタラクティブデータビュー",
         "position": {
           "left": "23.8%",
           "top": "29.5%"
@@ -67,17 +67,17 @@ const dashboardDemoGuides = {
     },
     {
       "id": "02",
-      "title": "第二步：创建动态筛选",
-      "description": "为了更精确地分析，接下来我们为仪表板添加一个筛选器，让数据查询更加灵活。"
+      "title": "ステップ2：動的フィルターの作成",
+      "description": "より精密な分析のために、ダッシュボードにフィルターを追加して、データクエリをより柔軟にしましょう。"
     },
     {
       "id": "step-2-1",
-      "title": "添加筛选区块",
-      "description": "在图表下方，可以轻松添加一个筛选区块，作为数据看板的控制器。",
+      "title": "フィルターブロックの追加",
+      "description": "チャートの下に、データダッシュボードのコントローラーとしてフィルターブロックを簡単に追加できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
       "button": {
         "id": "button5",
-        "label": "添加筛选区块",
+        "label": "フィルターブロックの追加",
         "position": {
           "left": "18.5%",
           "top": "90.6%"
@@ -88,12 +88,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-2-2",
-      "title": "配置过滤字段",
-      "description": "首先，我们需要定义筛选的依据。例如，选择\"负责人\"字段，以便按销售人员过滤数据。",
+      "title": "フィルターフィールドの設定",
+      "description": "まず、フィルタリング基準を定義する必要があります。例えば、「担当者」フィールドを選択して、営業担当者でデータをフィルタリングします。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
       "button": {
         "id": "button6",
-        "label": "配置过滤字段",
+        "label": "フィルターフィールドの設定",
         "position": {
           "left": "18.0%",
           "top": "25.3%"
@@ -104,12 +104,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-2-3",
-      "title": "关联筛选操作",
-      "description": "然后，将这个筛选器与页面上的图表进行关联，让筛选操作能够真正控制图表显示。",
+      "title": "フィルター操作のリンク",
+      "description": "次に、このフィルターをページ上のチャートと関連付けて、フィルター操作が実際にチャート表示を制御できるようにします。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
       "button": {
         "id": "button7",
-        "label": "关联筛选操作",
+        "label": "フィルター操作のリンク",
         "position": {
           "right": "8.4%",
           "top": "30.2%"
@@ -120,12 +120,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-2-4",
-      "title": "应用筛选查看结果",
-      "description": "现在，试着筛选一位负责人，看板上的所有图表都会根据您的选择立刻更新。",
+      "title": "フィルターを適用して結果を表示",
+      "description": "今度は、1人の担当者でフィルタリングしてみてください。ダッシュボード上のすべてのチャートが選択に基づいてすぐに更新されます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
       "button": {
         "id": "button8",
-        "label": "应用筛选查看结果",
+        "label": "フィルターを適用して結果を表示",
         "position": {
           "right": "19.4%",
           "top": "29.9%"
@@ -136,17 +136,17 @@ const dashboardDemoGuides = {
     },
     {
       "id": "03",
-      "title": "第三步：自定义图表",
-      "description": "如果预设的图表不满足需求，您可以随时对图表进行个性化配置。"
+      "title": "ステップ3：チャートのカスタマイズ",
+      "description": "プリセットのチャートがニーズを満たさない場合、いつでもカスタマイズできます。"
     },
     {
       "id": "step-3-1",
-      "title": "进入\"账户洞察\"页面",
-      "description": "我们切换到\"账户洞察\"页面，这里的图表可以更自由地进行配置。",
+      "title": "「アカウント分析」へ移動",
+      "description": "「アカウント分析」ページに切り替えましょう。ここではチャートをより自由に設定できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
       "button": {
         "id": "button10",
-        "label": "进入账户洞察页面",
+        "label": "アカウント分析へ移動",
         "position": {
           "left": "6.0%",
           "top": "35.1%"
@@ -157,12 +157,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-3-2",
-      "title": "打开图表配置",
-      "description": "在配置模式下，每个图表右上角都有一个配置按钮，点击它，开启您的自定义之旅。",
+      "title": "チャート設定を開く",
+      "description": "設定モードでは、各チャートの右上角に設定ボタンがあります。それをクリックして、カスタマイズの旅を始めましょう。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
       "button": {
         "id": "button11",
-        "label": "打开图表配置",
+        "label": "チャート設定を開く",
         "position": {
           "right": "3.3%",
           "top": "17.9%"
@@ -173,12 +173,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-3-3",
-      "title": "切换图表类型",
-      "description": "您可以从丰富的图表库中选择最适合的展现形式，例如，我们将它从饼图改为柱状图。",
+      "title": "チャートタイプの変更",
+      "description": "豊富なチャートライブラリから最適な表示形式を選択できます。例えば、円グラフから棒グラフに変更してみましょう。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
       "button": {
         "id": "button12",
-        "label": "切换图表类型",
+        "label": "チャートタイプの変更",
         "position": {
           "left": "39.5%",
           "top": "41.7%"
@@ -189,28 +189,28 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-3-4",
-      "description": "为了更深入地分析，我们可以为图表增加一个维度，比如按\"客户级别\"进行颜色分组。",
+      "title": "色によるグループ化",
+      "description": "より深い分析のために、チャートに次元を追加できます。例えば、「顧客レベル」による色分けグループ化を行います。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
       "button": {
         "id": "button13",
-        "label": "按照类型分组，颜色随类型修改 ",
+        "label": "タイプでグループ化、色もタイプで変更",
         "position": {
           "left": "36.8%",
           "top": "61.0%"
         },
         "balloonPos": "up",
         "balloonLength": "medium"
-      },
-      "title": "按照颜色分组"
+      }
     },
     {
       "id": "step-3-5",
-      "title": "保存图表设置",
-      "description": "对配置感到满意后，点击\"确定\"保存更改。",
+      "title": "チャート設定の保存",
+      "description": "設定に満足したら、「OK」をクリックして変更を保存します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
       "button": {
         "id": "button14",
-        "label": "保存图表设置",
+        "label": "チャート設定の保存",
         "position": {
           "right": "5.9%",
           "top": "88.5%"
@@ -221,12 +221,12 @@ const dashboardDemoGuides = {
     },
     {
       "id": "step-3-6",
-      "title": "查看焕然一新的图表",
-      "description": "看！图表已按您的要求成功更新，现在可以从新的维度分析客户数据了。",
+      "title": "更新されたチャートを表示",
+      "description": "見てください！チャートは要求に応じて正常に更新され、新しい次元から顧客データを分析できるようになりました。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
       "button": {
         "id": "button15",
-        "label": "图表成功更新！",
+        "label": "チャートが正常に更新されました！",
         "position": {
           "right": "22.6%",
           "top": "35.6%"
@@ -238,26 +238,26 @@ const dashboardDemoGuides = {
   ]
 };
 
-// 线索转化交互演示数据
+// リードコンバージョンインタラクティブデモデータ
 const leadConversionDemoGuides = {
-  "title": "从线索到客户：体验高效转化流程",
-  "subtitle": "学习如何从线索池中认领客户，进行360°全方位跟进，并最终将其无缝转化为商机、联系人。",
+  "title": "リードから顧客へ：効率的なコンバージョンを体験",
+  "subtitle": "プールからリードを獲得し、360°包括的なフォローアップを行い、最終的に商談や連絡先にシームレスに変換する方法を学びましょう。",
   "mainSteps": [
     {
       "number": "01",
-      "title": "线索认领与跟进",
+      "title": "リード獲得とフォローアップ",
       "id": "lead-guide1",
       "targetStepId": "01"
     },
     {
       "number": "02",
-      "title": "线索详情与过程管理",
+      "title": "リード詳細とプロセス管理",
       "id": "lead-guide2",
       "targetStepId": "02"
     },
     {
       "number": "03",
-      "title": "线索转化与价值实现",
+      "title": "リードコンバージョンと価値実現",
       "id": "lead-guide3",
       "targetStepId": "03"
     }
@@ -265,12 +265,12 @@ const leadConversionDemoGuides = {
   "steps": [
     {
       "id": "step-start",
-      "title": "线索公海池",
-      "description": "这里是所有待分配的线索。销售团队的成员可以在此发现潜在客户，并开启跟进。",
+      "title": "リードプール",
+      "description": "ここはすべての未割り当てリードが存在する場所です。営業チームのメンバーは、ここで見込み客を発見し、フォローアップを開始できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
       "button": {
         "id": "button1",
-        "label": "线索公海池",
+        "label": "リードプール",
         "position": {
           "left": "5.9%",
           "top": "20.3%"
@@ -281,17 +281,17 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "01",
-      "title": "第一步：线索认领与跟进",
-      "description": "公海中的线索需要被分配和跟进，才能发挥价值。让我们从认领一条线索开始。"
+      "title": "ステップ1：リード獲得とフォローアップ",
+      "description": "プール内のリードは価値を生み出すために割り当てられ、フォローアップされる必要があります。リードを獲得することから始めましょう。"
     },
     {
       "id": "step-1-1",
-      "title": "一键认领线索",
-      "description": "发现高价值线索？无需复杂流程，点击\"认领\"即可将其锁定至您的名下，准备开始跟进。",
+      "title": "ワンクリックリード獲得",
+      "description": "高価値のリードを発見しましたか？複雑なプロセスは不要です。「獲得」をクリックするだけで自分に割り当て、フォローアップを開始できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
       "button": {
         "id": "button3",
-        "label": "一键认领线索",
+        "label": "ワンクリックリード獲得",
         "position": {
           "left": "18.4%",
           "top": "24.1%"
@@ -302,12 +302,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-1-2",
-      "title": "快速定位您的线索",
-      "description": "认领后，您可以利用强大的筛选功能，通过名称、状态等任意条件，在\"我的线索\"中快速找到目标。",
+      "title": "リードを素早く特定",
+      "description": "獲得後、強力なフィルタリング機能を使用して、名前、ステータス、その他の任意の基準で「マイリード」内のターゲットを素早く見つけることができます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
       "button": {
         "id": "button4",
-        "label": "快速定位您的线索",
+        "label": "リードを素早く特定",
         "position": {
           "left": "18.3%",
           "top": "15.7%"
@@ -318,17 +318,17 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "02",
-      "title": "第二步：线索详情与过程管理",
-      "description": "点击进入线索详情页，这里是您的作战指挥室，管理与该线索相关的所有信息和活动。"
+      "title": "ステップ2：リード詳細とプロセス管理",
+      "description": "クリックしてリード詳細ページに入ります。ここはこのリードに関連するすべての情報と活動を管理するコマンドセンターです。"
     },
     {
       "id": "step-2-1",
-      "title": "进入360°客户视图",
-      "description": "详情页聚合了线索状态、基本信息以及核心操作，如状态变更、放回公海和关键的\"线索转化\"按钮。",
+      "title": "360°顧客ビューに入る",
+      "description": "詳細ページは、リードステータス、基本情報、およびステータス変更、プールへの返却、重要な「リードコンバージョン」ボタンなどの主要操作を集約します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
       "button": {
         "id": "button6",
-        "label": "进入360°客户视图",
+        "label": "360°顧客ビューに入る",
         "position": {
           "left": "21.0%",
           "top": "26.8%"
@@ -339,12 +339,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-2-2",
-      "title": "实时更新跟进状态",
-      "description": "随着沟通的深入，您可以随时更新线索状态，确保团队信息同步，准确反映销售阶段。",
+      "title": "フォローアップステータスをリアルタイムで更新",
+      "description": "コミュニケーションが深まるにつれて、いつでもリードステータスを更新して、チーム情報の同期を確保し、営業段階を正確に反映できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
       "button": {
         "id": "button7",
-        "label": "实时更新跟进状态",
+        "label": "フォローアップステータスの更新",
         "position": {
           "right": "25.8%",
           "top": "10.8%"
@@ -355,12 +355,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-2-3",
-      "title": "管理待办事项",
-      "description": "在\"待办事项\"标签页中，为自己创建跟进任务，确保每一个销售动作都井井有条。",
+      "title": "ToDoアイテムの管理",
+      "description": "「ToDo」タブで、自分用のフォローアップタスクを作成して、すべての営業活動が整理されていることを確認します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
       "button": {
         "id": "button8",
-        "label": "管理待办事项",
+        "label": "ToDoアイテムの管理",
         "position": {
           "left": "38.2%",
           "top": "6.7%"
@@ -371,12 +371,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-2-4",
-      "title": "安排会议与日程",
-      "description": "在\"事件\"标签页中，您可以记录并管理与客户的会议、电话等日程，不错过任何重要约定。",
+      "title": "会議とイベントのスケジュール",
+      "description": "「イベント」タブでは、顧客との会議、通話、その他の予定を記録・管理でき、重要な約束を見逃すことがありません。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
       "button": {
         "id": "button9",
-        "label": "安排会议与日程",
+        "label": "会議とイベントのスケジュール",
         "position": {
           "left": "43.9%",
           "top": "6.0%"
@@ -387,12 +387,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-2-5",
-      "title": "沉淀沟通邮件",
-      "description": "所有与该线索往来的重要邮件都可以在此归档和查看，形成完整的沟通记录。",
+      "title": "コミュニケーションメールのアーカイブ",
+      "description": "このリードとやり取りしたすべての重要なメールをここでアーカイブ・表示でき、完全なコミュニケーション記録を形成します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
       "button": {
         "id": "button10",
-        "label": "沉淀沟通邮件",
+        "label": "コミュニケーションメールのアーカイブ",
         "position": {
           "left": "49.6%",
           "top": "6.0%"
@@ -403,12 +403,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-2-6",
-      "title": "追溯变更历史",
-      "description": "\"历史记录\"标签页清晰地记录了每一次信息修改，让所有操作都有据可查，便于复盘和管理。",
+      "title": "変更履歴の追跡",
+      "description": "「履歴」タブは、すべての情報変更を明確に記録し、すべての操作を追跡可能にして、レビューと管理を容易にします。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
       "button": {
         "id": "button11",
-        "label": "追溯变更历史",
+        "label": "変更履歴の追跡",
         "position": {
           "right": "40.6%",
           "top": "6.6%"
@@ -419,17 +419,17 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "03",
-      "title": "第三步：线索转化与价值实现",
-      "description": "当线索成熟时，最关键的一步就是将其转化为实际的业务机会。让我们开始吧！"
+      "title": "ステップ3：リードコンバージョンと価値実現",
+      "description": "リードが成熟したとき、最も重要なステップは、それを実際のビジネス機会に変換することです。始めましょう！"
     },
     {
       "id": "step-3-1",
-      "title": "启动线索转化流程",
-      "description": "回到主详情页，点击\"线索转化\"按钮，系统将引导您无缝创建新的客户、联系人和商机。",
+      "title": "リードコンバージョンプロセスの開始",
+      "description": "メインの詳細ページに戻り、「リードコンバージョン」ボタンをクリックします。システムが新しい顧客、連絡先、商談をシームレスに作成するようにガイドします。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
       "button": {
         "id": "button13",
-        "label": "启动线索转化",
+        "label": "リードコンバージョンの開始",
         "position": {
           "right": "16.8%",
           "top": "11.3%"
@@ -440,12 +440,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-3-2",
-      "title": "新建关联商机",
-      "description": "在转化过程中，您可以直接新建一个商机，并将线索的关键信息自动带入，无需重复录入。",
+      "title": "関連商談の作成",
+      "description": "コンバージョンプロセス中に、直接商談を作成し、重要なリード情報を自動的にインポートして、重複入力を避けることができます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
       "button": {
         "id": "button14",
-        "label": "新建关联商机",
+        "label": "関連商談の作成",
         "position": {
           "right": "33.7%",
           "top": "33.3%"
@@ -456,12 +456,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-3-3",
-      "title": "完善商机信息",
-      "description": "补充预估金额、预期结单日期等商机信息，然后点击\"保存\"，为后续的赢单分析打下基础。",
+      "title": "商談情報の完成",
+      "description": "予想金額、予想クローズ日、その他の商談情報を追加し、「保存」をクリックして、後続の勝利分析の基盤を築きます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
       "button": {
         "id": "button15",
-        "label": "完善商机信息",
+        "label": "商談情報の完成",
         "position": {
           "right": "48.1%",
           "top": "28.0%"
@@ -472,12 +472,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-3-4",
-      "title": "完成转化",
-      "description": "确认所有信息无误后，点击\"确定\"，系统将自动完成所有实体的创建和关联。",
+      "title": "コンバージョンの完了",
+      "description": "すべての情報が正しいことを確認した後、「OK」をクリックすると、システムがすべてのエンティティの作成と関連付けを自動的に完了します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
       "button": {
         "id": "button16",
-        "label": "完成转化",
+        "label": "コンバージョンの完了",
         "position": {
           "left": "34.0%",
           "top": "37.7%"
@@ -488,12 +488,12 @@ const leadConversionDemoGuides = {
     },
     {
       "id": "step-3-5",
-      "title": "验证转化结果",
-      "description": "现在，我们来到\"商机\"页面，可以看到由线索成功转化的新商机，整个销售流程无缝衔接！",
+      "title": "コンバージョン結果の確認",
+      "description": "今度は「商談」ページに移動しましょう。リードから正常にコンバージョンされた新しい商談を確認できます。営業プロセス全体がシームレスに接続されています！",
       "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
       "button": {
         "id": "button17",
-        "label": "来到商机列表，转化成功！",
+        "label": "商談を表示 - コンバージョン成功！",
         "position": {
           "left": "28.4%",
           "top": "29.3%"
@@ -505,26 +505,26 @@ const leadConversionDemoGuides = {
   ]
 };
 
-// 商机转化交互演示数据
+// 商談コンバージョンインタラクティブデモデータ
 const opportunityDemoGuides = {
-  "title": "赢取商机：从跟进、报价到订单",
-  "subtitle": "体验精细化的商机管理，学习如何分析竞争、发出专业报价，并最终将意向客户成功转化为销售订单。",
+  "title": "商談の獲得：フォローアップ、見積もりから受注まで",
+  "subtitle": "精密な商談管理を体験し、競合分析、プロフェッショナルな見積もり送付、最終的な見込み客の成功受注への変換方法を学びましょう。",
   "mainSteps": [
     {
       "number": "01",
-      "title": "商机跟进与管理",
+      "title": "商談フォローアップと管理",
       "id": "opportunity-guide1",
       "targetStepId": "01"
     },
     {
       "number": "02",
-      "title": "创建专业报价单",
+      "title": "プロフェッショナル見積書の作成",
       "id": "opportunity-guide2",
       "targetStepId": "02"
     },
     {
       "number": "03",
-      "title": "转化商机为订单",
+      "title": "商談から受注への変換",
       "id": "opportunity-guide3",
       "targetStepId": "03"
     }
@@ -532,12 +532,12 @@ const opportunityDemoGuides = {
   "steps": [
     {
       "id": "step-start",
-      "title": "可视化销售",
-      "description": "所有商机在这里集中展示，您可以清晰地看到每个机会所处的阶段，并随时对关键信息进行快速编辑。",
+      "title": "ビジュアル営業管理",
+      "description": "すべての商談がここに一元表示されます。各機会の段階を明確に見ることができ、いつでも重要な情報を素早く編集できます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
       "button": {
         "id": "button1",
-        "label": "可视化商机管理",
+        "label": "ビジュアル商談管理",
         "position": {
           "left": "28.5%",
           "top": "29.3%"
@@ -548,17 +548,17 @@ const opportunityDemoGuides = {
     },
     {
       "id": "01",
-      "title": "第一步：商机跟进与管理",
-      "description": "成功的销售始于对商机的精细化管理。让我们深入一个商机，看看如何跟进和维护。"
+      "title": "ステップ1：商談フォローアップと管理",
+      "description": "成功する営業は、精密な商談管理から始まります。商談に深く入り、フォローアップと維持の方法を見てみましょう。"
     },
     {
       "id": "step-1-1",
-      "title": "深入商机详情",
-      "description": "点击商机名称，进入专属详情页。这里汇集了所有与该商机相关的信息和工具。",
+      "title": "商談詳細に深く入る",
+      "description": "商談名をクリックして、専用の詳細ページに入ります。ここでは、この商談に関連するすべての情報とツールが集約されています。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
       "button": {
         "id": "button3",
-        "label": "深入商机详情",
+        "label": "商談詳細に深く入る",
         "position": {
           "left": "29.9%",
           "top": "37.3%"
@@ -569,12 +569,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-1-2",
-      "title": "分析竞争格局",
-      "description": "知己知彼，百战不殆。在这里记录并分析竞争对手的优劣势，制定更有效的赢单策略。",
+      "title": "競合状況の分析",
+      "description": "己を知り敵を知れば百戦危うからず。ここで競合他社の強みと弱みを記録・分析し、より効果的な勝利戦略を立てます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
       "button": {
         "id": "button4",
-        "label": "分析竞争格局",
+        "label": "競合状況の分析",
         "position": {
           "right": "38.7%",
           "top": "19.0%"
@@ -585,12 +585,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-1-3",
-      "title": "记录跟进动态",
-      "description": "每一次与客户的沟通、每一个进展，都可以在此记录为跟进评论，方便团队协作和后续复盘。",
+      "title": "フォローアップ活動の記録",
+      "description": "顧客とのコミュニケーションや進展をすべてフォローアップコメントとして記録し、チーム協力と将来のレビューに役立てます。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
       "button": {
         "id": "button5",
-        "label": "记录跟进动态",
+        "label": "フォローアップ活動の記録",
         "position": {
           "left": "30.2%",
           "top": "71.2%"
@@ -601,17 +601,17 @@ const opportunityDemoGuides = {
     },
     {
       "id": "02",
-      "title": "第二步：创建专业报价单",
-      "description": "当商机进入报价阶段，一份专业、准确的报价单是赢得客户信任的关键。"
+      "title": "ステップ2：プロフェッショナル見積書の作成",
+      "description": "商談が見積段階に入ったとき、プロフェッショナルで正確な見積書が顧客の信頼を勝ち取る鍵となります。"
     },
     {
       "id": "step-2-1",
-      "title": "发起报价流程",
-      "description": "在商机详情页，直接点击即可发起报价，系统会自动关联客户信息，开启报价单的创建。",
+      "title": "見積プロセスの開始",
+      "description": "商談詳細ページで、直接クリックして見積を開始します。システムが自動的に顧客情報を関連付け、見積書の作成を開始します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
       "button": {
         "id": "button7",
-        "label": "发起报价流程",
+        "label": "見積プロセスの開始",
         "position": {
           "right": "6.9%",
           "top": "39.0%"
@@ -622,12 +622,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-2-2",
-      "title": "填写报价详情",
-      "description": "添加具体的产品、数量、价格和折扣信息，生成一份内容详尽、格式专业的报价单。",
+      "title": "見積詳細の記入",
+      "description": "具体的な製品、数量、価格、割引情報を追加して、包括的でプロフェッショナルにフォーマットされた見積書を生成します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
       "button": {
         "id": "button8",
-        "label": "填写报价详情",
+        "label": "見積詳細の記入",
         "position": {
           "right": "44.7%",
           "top": "35.3%"
@@ -638,17 +638,17 @@ const opportunityDemoGuides = {
     },
     {
       "id": "03",
-      "title": "第三步：转化商机为订单",
-      "description": "报价被客户接受后，就来到了临门一脚的时刻——将商机正式转化为销售订单！"
+      "title": "ステップ3：商談から受注への変換",
+      "description": "見積が顧客に受け入れられた後、いよいよ最後の一押し - 商談を営業受注に変換する時です！"
     },
     {
       "id": "step-3-1",
-      "title": "将商机转化为订单",
-      "description": "报价审批通过后，商机详情页的\"新订单\"按钮将被激活。点击它，将所有信息带入新订单，完成关键转化。",
+      "title": "商談を受注に変換",
+      "description": "見積承認後、商談詳細ページの「新規受注」ボタンがアクティブになります。それをクリックして、すべての情報を新しい受注に取り込み、重要な変換を完了します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
       "button": {
         "id": "button10",
-        "label": "将商机转化为订单",
+        "label": "受注に変換",
         "position": {
           "left": "24.5%",
           "top": "18.8%"
@@ -659,12 +659,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-3-2",
-      "title": "确认最终订单信息",
-      "description": "在这里最后确认合同编号、交付细节等订单信息，确保一切准确无误。",
+      "title": "最終受注情報の確認",
+      "description": "ここで、契約番号、納期詳細、その他の受注情報の最終確認を行い、すべてが正確であることを確認します。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
       "button": {
         "id": "button11",
-        "label": "确认最终订单信息",
+        "label": "最終受注情報の確認",
         "position": {
           "left": "34.7%",
           "top": "93.8%"
@@ -675,12 +675,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-3-3",
-      "title": "成功赢单！",
-      "description": "点击提交，这份商机正式关闭并转化为销售收入。恭喜！",
+      "title": "成功受注！",
+      "description": "送信をクリックすると、この商談は正式にクローズされ、営業収益に変換されます。おめでとうございます！",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
       "button": {
         "id": "button12",
-        "label": "成功赢单！",
+        "label": "成功受注！",
         "position": {
           "left": "28.7%",
           "top": "18.6%"
@@ -691,12 +691,12 @@ const opportunityDemoGuides = {
     },
     {
       "id": "step-3-4",
-      "title": "在订单中心查看成果",
-      "description": "流程完成后，自动跳转到订单列表。您可以看到刚刚创建的成功订单，准备开始交付流程。",
+      "title": "受注センターで結果を表示",
+      "description": "プロセス完了後、受注リストに自動的にジャンプします。正常に作成された受注を確認でき、納期プロセスを開始する準備が整います。",
       "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
       "button": {
         "id": "button13",
-        "label": "在订单中心查看成果",
+        "label": "受注センターで表示",
         "position": {
           "left": "47.3%",
           "top": "24.8%"
@@ -709,10 +709,10 @@ const opportunityDemoGuides = {
 };
 ---
 
-<BaseCN
-  title="无代码、灵活且强大的 CRM 基座"
-  description="NocoBase 的 CRM 开箱即用，提供极致定制能力、保障数据主权。你可以在此基础上任意增加数据、区块、功能及页面，使其完全符合你的业务需求。"
-  keywords="NocoBase CRM, 客户关系管理, 无代码CRM, 开源CRM, 自定义CRM"
+<Layout
+  title="ノーコードで柔軟かつ強力なCRMプラットフォーム"
+  description="NocoBase CRM はすぐに使える状態で提供され、究極のカスタマイズ機能とデータ主権を提供します。この基盤の上にデータ、ブロック、機能、ページを自由に追加して、ビジネスニーズに完全に適合させることができます。"
+  keywords="NocoBase CRM, 顧客関係管理, ノーコードCRM, オープンソースCRM, カスタムCRM"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -720,36 +720,36 @@ const opportunityDemoGuides = {
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">无代码、灵活且强大的<br/>CRM 基座</h1>
-            <p class="para-desc text-muted">NocoBase 的 CRM 开箱即用，提供极致定制能力、保障数据主权。你可以在此基础上任意增加数据、区块、功能及页面，使其完全符合你的业务需求。</p>
+            <h1 class="fw-bold mt-2 mb-3">ノーコードで柔軟かつ強力な<br/>CRMプラットフォーム</h1>
+            <p class="para-desc text-muted">NocoBase CRM はすぐに使える状態で提供され、究極のカスタマイズ機能とデータ主権を提供します。この基盤の上にデータ、ブロック、機能、ページを自由に追加して、ビジネスニーズに完全に適合させることができます。</p>
             
-            <!-- 标签 -->
+            <!-- Tags -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">适用行业：</span>
-                  <span class="badge bg-soft-primary">全行业</span>
+                  <span class="text-muted me-2">対象業界：</span>
+                  <span class="badge bg-soft-primary">全業界</span>
                 </div>
               </div>
             </div>
 
-            <!-- 开发者信息 -->
+            <!-- Developer Info -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">开发者：</span>
+                  <span class="text-muted me-2">開発者：</span>
                   <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
                 </div>
               </div>
             </div>
 
-            <!-- 按钮 -->
+            <!-- Buttons -->
             <div class="mt-4 pt-2">
-              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Live demo
+              <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>ライブデモ
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>复制到自己的环境
+                <i class="uil uil-copy me-1"></i>自分の環境にデプロイ
               </a>
             </div>
           </div>
@@ -757,7 +757,7 @@ const opportunityDemoGuides = {
 
         <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
           <div class="text-center">
-            <!-- CRM 预览视频 -->
+            <!-- CRM Preview Video -->
             <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
               <video 
                 id="crm-preview-video"
@@ -766,8 +766,8 @@ const opportunityDemoGuides = {
                 preload="none"
                 style="cursor: pointer; max-height: 400px; object-fit: cover;"
               >
-                <source src="https://static-docs.nocobase.com/NocoBase_CRM 中文.mp4" type="video/mp4">
-                您的浏览器不支持 HTML5 视频。
+                <source src="https://static-docs.nocobase.com/NocoBase_CRM Japanese.mp4" type="video/mp4">
+                お使いのブラウザはHTML5ビデオをサポートしていません。
               </video>
               <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
                 <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
@@ -786,8 +786,8 @@ const opportunityDemoGuides = {
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">NocoBase CRM 功能特点</h4>
-            <p class="para-desc mx-auto text-muted mb-0">基于 NocoBase 构建的 CRM 系统，为您提供强大而灵活的客户关系管理解决方案</p>
+            <h4 class="title mb-4">NocoBase CRM の機能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">NocoBase で構築された CRM システムは、強力で柔軟な顧客関係管理ソリューションを提供します</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -799,8 +799,8 @@ const opportunityDemoGuides = {
               <i class="uil uil-wrench rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">完全无代码搭建，极易上手</a>
-              <p class="text-muted mt-2">无需编程技能，通过拖拽和配置即可快速搭建专属CRM系统</p>
+              <a href="javascript:void(0)" class="title h5 text-dark">完全ノーコード、簡単スタート</a>
+              <p class="text-muted mt-2">プログラミングスキル不要、ドラッグ＆ドロップと設定で独自のCRMシステムを素早く構築</p>
               <i class="uil uil-wrench full-img"></i>
             </div>
           </div>
@@ -812,8 +812,8 @@ const opportunityDemoGuides = {
               <i class="uil uil-database rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">包括 CRM 所有基础功能</a>
-              <p class="text-muted mt-2">客户管理、销售管道、商机跟进、联系人管理、邮件沟通、审批流程等完整功能模块</p>
+              <a href="javascript:void(0)" class="title h5 text-dark">すべてのCRM基本機能を含む</a>
+              <p class="text-muted mt-2">顧客管理、営業パイプライン、商談追跡、連絡先管理、メール通信、承認プロセスなどの完全な機能モジュール</p>
               <i class="uil uil-database full-img"></i>
             </div>
           </div>
@@ -825,8 +825,8 @@ const opportunityDemoGuides = {
               <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">可以在此基础上任意修改、扩展</a>
-              <p class="text-muted mt-2">灵活的架构设计，支持自定义字段、流程和业务逻辑，满足个性化需求</p>
+              <a href="javascript:void(0)" class="title h5 text-dark">自由に変更・拡張可能</a>
+              <p class="text-muted mt-2">柔軟なアーキテクチャ設計により、カスタムフィールド、プロセス、ビジネスロジックをサポートし、個別のニーズに対応</p>
               <i class="uil uil-cube full-img"></i>
             </div>
           </div>
@@ -838,8 +838,8 @@ const opportunityDemoGuides = {
               <i class="uil uil-shield-check rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">开源，数据完全掌控</a>
-              <p class="text-muted mt-2">开源代码，数据私有部署，确保企业数据安全和自主控制</p>
+              <a href="javascript:void(0)" class="title h5 text-dark">オープンソース、完全なデータ制御</a>
+              <p class="text-muted mt-2">オープンソースコード、プライベートデータデプロイメントにより、企業データのセキュリティと自律制御を保証</p>
               <i class="uil uil-shield-check full-img"></i>
             </div>
           </div>
@@ -855,8 +855,8 @@ const opportunityDemoGuides = {
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">互动展示</h4>
-            <p class="para-desc mx-auto text-muted mb-0">通过实际操作体验 NocoBase CRM 的强大功能</p>
+            <h4 class="title mb-4">インタラクティブデモ</h4>
+            <p class="para-desc mx-auto text-muted mb-0">実際の操作を通じて NocoBase CRM の強力な機能を体験してください</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -865,15 +865,15 @@ const opportunityDemoGuides = {
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
             <div class="card-body p-4">
-              <h5 class="mb-3">仪表板数据展示</h5>
-              <!-- 交互演示入口 -->
+              <h5 class="mb-3">ダッシュボードデータ可視化</h5>
+              <!-- Interactive Demo Entry -->
               <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openDashboardDemo()">
-                <!-- 背景图片 -->
+                <!-- Background Image -->
                 <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png'); background-size: cover; background-position: center;"></div>
-                <!-- 按钮 -->
+                <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-play me-2"></i>体验演示
+                    <i class="uil uil-play me-2"></i>デモを試す
                   </button>
                 </div>
               </div>
@@ -884,15 +884,15 @@ const opportunityDemoGuides = {
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
             <div class="card-body p-4">
-              <h5 class="mb-3">线索转化流程</h5>
-              <!-- 线索转化演示入口 -->
+              <h5 class="mb-3">リード変換プロセス</h5>
+              <!-- Lead Conversion Demo Entry -->
               <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openLeadDemo()">
-                <!-- 背景图片 -->
+                <!-- Background Image -->
                 <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png'); background-size: cover; background-position: center;"></div>
-                <!-- 按钮 -->
+                <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-user-plus me-2"></i>体验转化
+                    <i class="uil uil-user-plus me-2"></i>変換を試す
                   </button>
                 </div>
               </div>
@@ -903,15 +903,15 @@ const opportunityDemoGuides = {
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
           <div class="card border-0 shadow rounded h-100">
             <div class="card-body p-4">
-              <h5 class="mb-3">商机转化为订单</h5>
-              <!-- 商机转化演示入口 -->
+              <h5 class="mb-3">商談から受注へ</h5>
+              <!-- Opportunity Conversion Demo Entry -->
               <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openOpportunityDemo()">
-                <!-- 背景图片 -->
+                <!-- Background Image -->
                 <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png'); background-size: cover; background-position: center;"></div>
-                <!-- 按钮 -->
+                <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-money-bill me-2"></i>体验转化
+                    <i class="uil uil-money-bill me-2"></i>変換を試す
                   </button>
                 </div>
               </div>
@@ -923,26 +923,25 @@ const opportunityDemoGuides = {
   </section><!--end section-->
   <!-- Interactive Demo End -->
 
-  <!-- Try CRM Extension Start -->
+  <!-- Dashboard Demo Section Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
 
         <div class="mt-4" id="crm-demo-wrap">
-          先占个地方（亲自试一试，3 步扩展一个 CRM 功能）
-          <!-- 使用仪表板交互演示 -->
-          <InteractiveDemo guides={dashboardDemoGuides}  />
+          <!-- Dashboard Interactive Demo -->
+          <InteractiveDemo guides={dashboardDemoGuides} />
         </div><!--end crm-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
           <div class="col-12 text-center">
             <div class="mt-4 pt-2">
               <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>立即体验
+                <i class="uil uil-play me-1"></i>今すぐ試す
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>复制到自己的环境
+                <i class="uil uil-copy me-1"></i>自分の環境にコピー
               </a>
             </div>
           </div><!--end col-->
@@ -951,75 +950,7 @@ const opportunityDemoGuides = {
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- Try CRM Extension End -->
-
-  <!-- Development Tutorial Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">CRM 开发教程</h4>
-            <p class="para-desc mx-auto text-muted mb-0">从零开始学习如何使用 NocoBase 构建专业的 CRM 系统</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-play h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">基础搭建</h5>
-                <p class="text-muted text-center">学习如何创建客户、联系人、商机等基础数据模型和关系</p>
-              </div>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-chart-pie h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">仪表板配置</h5>
-                <p class="text-muted text-center">构建销售数据分析和可视化仪表板，实现业绩监控</p>
-              </div>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-cog h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">流程自动化</h5>
-                <p class="text-muted text-center">设置工作流实现销售流程自动化和业务规则</p>
-              </div>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Development Tutorial End -->
+  <!-- Dashboard Demo Section End -->
 
   <!-- Commercial Plugins Start -->
   <section class="section">
@@ -1027,35 +958,35 @@ const opportunityDemoGuides = {
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">CRM 中所使用的商业插件介绍</h4>
-            <p class="para-desc mx-auto text-muted mb-0">了解如何通过商业插件获得更强大的功能，提升 CRM 系统的专业性和易用性</p>
+            <h4 class="title mb-4">CRM で使用されている商用プラグイン</h4>
+            <p class="para-desc mx-auto text-muted mb-0">商用プラグインを通じてより強力な機能を獲得し、CRM システムの専門性と使いやすさを向上させる方法を学びます</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
       <div class="row pb-4">
-        <!-- ECharts 插件 -->
+        <!-- ECharts Plugin -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="数据可视化：ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+          <div title="データ可視化：ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
             <div class="card-body">
               <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">数据可视化：ECharts</h6>
+                <h6 class="card-title mb-1">データ可視化：ECharts</h6>
                 <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">专业的图表组件，支持漏斗图、柱状图、饼图等多种可视化图表配置，让 CRM 数据分析更直观
-                   <a href="https://docs-cn.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">详情</a>
+                <p class="text-muted mb-2 plugin-overview">ファネルチャート、棒グラフ、円グラフなどの様々な可視化設定をサポートする専門的なチャートコンポーネントで、CRM データ分析をより直感的にします
+                   <a href="https://docs-ja.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">詳細</a>
                 </p>
                 <div class="plugin-footer">
                   <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
+                    <a href="/ja/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
+                    <span class="text-muted">$400</span>
                   </h6>
                   <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
+                    <a class="text-muted" href="/ja/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
+                    <span class="text-muted">$800</span>
                   </h6>
                 </div>
               </div>
@@ -1063,28 +994,28 @@ const opportunityDemoGuides = {
           </div>
         </div>
 
-        <!-- 评论插件 -->
+        <!-- Comments Plugin -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="数据表：评论" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+          <div title="データ表：コメント" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
             <div class="card-body">
               <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">数据表：评论</h6>
+                <h6 class="card-title mb-1">データ表：コメント</h6>
                 <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">为客户、联系人、工单等数据表添加评论交互功能，团队协作更便捷
-                   <a href="https://docs-cn.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">详情</a>
+                <p class="text-muted mb-2 plugin-overview">顧客、連絡先、チケットなどのデータ表にコメント機能を追加し、チーム協作をより便利にします
+                   <a href="https://docs-ja.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">詳細</a>
                 </p>
                 <div class="plugin-footer">
                   <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
+                    <a href="/ja/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥600</span>
+                    <span class="text-muted">$100</span>
                   </h6>
                   <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
+                    <a class="text-muted" href="/ja/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥1,200</span>
+                    <span class="text-muted">$200</span>
                   </h6>
                 </div>
               </div>
@@ -1092,102 +1023,29 @@ const opportunityDemoGuides = {
           </div>
         </div>
 
-        <!-- 邮件管理插件 -->
+        <!-- Email Management Plugin -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="邮件管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+          <div title="メール管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
             <div class="card-body">
               <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">邮件管理</h6>
+                <h6 class="card-title mb-1">メール管理</h6>
                 <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">高频使用的邮件功能，支持全局邮件发送和管理，提升客户沟通效率
-                   <a href="https://docs-cn.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">详情</a>
+                <p class="text-muted mb-2 plugin-overview">よく使用されるメール機能で、グローバルメール送信と管理をサポートし、顧客とのコミュニケーション効率を向上
+                   <a href="https://docs-ja.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">詳細</a>
                 </p>
                 <div class="plugin-footer">
                   <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
+                    <a href="/ja/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
+                    <span class="text-muted">$400</span>
                   </h6>
                   <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
+                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
+                    <a class="text-muted" href="/ja/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
                     <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
+                    <span class="text-muted">$800</span>
                   </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 工作流审批插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="工作流：审批事件" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">工作流：审批事件</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">为报价单、订单等关键业务流程添加审批管理，确保业务规范性
-                   <a href="https://docs-cn.nocobase.com/plugins/workflow" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 导入导出插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="操作：导入导出数据 Pro" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">操作：导入导出数据 Pro</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">支持所有表格的批量导入导出操作，数据迁移和备份更便捷
-                   <a href="https://docs-cn.nocobase.com/plugins/action-import" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥1,200</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 占位卡片，保持布局整齐 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
-            <div class="card-body">
-              <div class="mt-2 plugin-box text-center">
-                <div class="mt-4 mb-4">
-                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
-                  <h6 class="text-muted mb-3">更多插件即将推出</h6>
-                  <p class="text-muted small">我们正在开发更多有用的商业插件，敬请期待</p>
                 </div>
               </div>
             </div>
@@ -1197,8 +1055,8 @@ const opportunityDemoGuides = {
 
       <div class="row justify-content-center mt-4">
         <div class="col-12 text-center">
-          <a href="/cn/plugins-commercial" class="btn btn-primary me-3">查看全部商业插件</a>
-          <a href="/cn/commercial" class="btn btn-outline-primary">了解定价详情</a>
+          <a href="/ja/plugins-commercial" class="btn btn-primary me-3">すべての商用プラグインを見る</a>
+          <a href="/ja/commercial" class="btn btn-outline-primary">価格について詳しく</a>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
@@ -1211,8 +1069,8 @@ const opportunityDemoGuides = {
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">如何使用？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">三个步骤快速部署 NocoBase CRM 到您的环境</p>
+            <h4 class="title mb-4">使用方法</h4>
+            <p class="para-desc mx-auto text-muted mb-0">3つのステップで NocoBase CRM を環境に素早くデプロイ</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -1225,11 +1083,11 @@ const opportunityDemoGuides = {
                 <i class="uil uil-download-alt h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>安装 NocoBase 系统</h5>
-                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 系统到您的服务器</p>
+                <h5>NocoBase システムをインストール</h5>
+                <p class="text-muted mt-2">インストールドキュメントに従って、NocoBase システムをサーバーにデプロイ</p>
               </div>
               <div class="mt-3">
-                <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装文档</a>
+                <a href="https://docs-ja.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">インストールドキュメント</a>
               </div>
             </div>
           </div>
@@ -1242,14 +1100,14 @@ const opportunityDemoGuides = {
                 <i class="uil uil-cloud-download h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>下载 CRM 模板文件</h5>
-                <p class="text-muted mt-2">获取 NocoBase CRM 系统的完整模板文件，支持两种格式</p>
+                <h5>CRM テンプレートファイルをダウンロード</h5>
+                <p class="text-muted mt-2">NocoBase CRM システムの完全なテンプレートファイルを取得、2つの形式をサポート</p>
               </div>
               <div class="mt-3">
                 <div>
-                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">下载 SQL 文件</a>
+                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">SQL ファイルをダウンロード</a>
                 </div>
-                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">下载备份文件 (.nbdata)</a>
+                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">バックアップファイル (.nbdata) をダウンロード</a>
               </div>
             </div>
           </div>
@@ -1262,11 +1120,11 @@ const opportunityDemoGuides = {
                 <i class="uil uil-upload h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>在系统内还原</h5>
-                <p class="text-muted mt-2">将模板文件导入到您的 NocoBase 系统中完成部署</p>
+                <h5>システム内で復元</h5>
+                <p class="text-muted mt-2">テンプレートファイルを NocoBase システムにインポートしてデプロイを完了</p>
               </div>
               <div class="mt-3">
-                <a href="/cn/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">还原教程</a>
+                <a href="/ja/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">復元チュートリアル</a>
               </div>
             </div>
           </div>
@@ -1276,114 +1134,21 @@ const opportunityDemoGuides = {
   </section><!--end section-->
   <!-- How to Use End -->
 
-  <!-- How to Extend Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">如何扩展？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">根据业务需求进一步扩展和定制您的 CRM 系统</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="icon text-primary">
-                <i class="uil uil-plus-circle h2"></i>
-              </div>
-              <div class="ms-3 d-flex flex-column flex-grow-1">
-                <div class="flex-grow-1">
-                  <h5 class="mb-2">自定义字段、关系、权限与界面布局</h5>
-                  <p class="text-muted mb-3">根据行业特点添加专属的客户信息字段，设置数据关系和访问权限</p>
-                </div>
-                <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="icon text-primary">
-                <i class="uil uil-setting h2"></i>
-              </div>
-              <div class="ms-3 d-flex flex-column flex-grow-1">
-                <div class="flex-grow-1">
-                  <h5 class="mb-2">业务流程自动化</h5>
-                  <p class="text-muted mb-3">配置销售流程、审批流程和自动化任务</p>
-                </div>
-                <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="icon text-primary">
-                <i class="uil uil-link h2"></i>
-              </div>
-              <div class="ms-3 d-flex flex-column flex-grow-1">
-                <div class="flex-grow-1">
-                  <h5 class="mb-2">第三方系统集成</h5>
-                  <p class="text-muted mb-3">与邮件系统、财务软件、营销工具等集成</p>
-                </div>
-                <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="icon text-primary">
-                <i class="uil uil-mobile-android h2"></i>
-              </div>
-              <div class="ms-3 d-flex flex-column flex-grow-1">
-                <div class="flex-grow-1">
-                  <h5 class="mb-2">移动端适配</h5>
-                  <p class="text-muted mb-3">确保CRM系统在移动设备上的完美体验</p>
-                </div>
-                <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Extend End -->
-
   <!-- CTA Section Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="title mb-4">准备好使用 NocoBase CRM 了吗？</h3>
+          <h3 class="title mb-4">NocoBase CRM を使う準備はできていますか？</h3>
           <p class="text-muted para-desc mx-auto mb-0">
-            1 分钟时间部署一个专属 CRM demo。从配置数据结构，到界面布局，再到流程逻辑，这一切都是通过 NocoBase 的可视化配置完成，无需写一行代码。
+            1分で専用CRMデモをデプロイ。データ構造の設定からインターフェースレイアウト、プロセスロジックまで、すべてNocoBaseの視覚的設定で完了し、一行のコードも書く必要はありません。
           </p>
           <div class="mt-4">
-            <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live demo
+            <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>ライブデモ
             </a>
             <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-copy me-1"></i>复制到自己的环境
+              <i class="uil uil-copy me-1"></i>自分の環境にデプロイ
             </a>
           </div>
         </div><!--end col-->
@@ -1450,127 +1215,10 @@ const opportunityDemoGuides = {
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
-</BaseCN>
+</Layout>
 
 <style>
-/* CRM Demo Styles - 参考首页样式 */
-#crm-demo-wrap {
-  position: relative;
-}
-
-#crm-steps-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.demo_step {
-  position: absolute;
-  display: none;
-}
-
-.demo_step.demo_step_start {
-  display: block;
-}
-
-.demo_step img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-}
-
-.button {
-  position: absolute;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.demo_tooltip {
-  position: relative;
-}
-
-/* 步骤导航样式 */
-.steps-title {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.steps-title:hover {
-  transform: translateY(-2px);
-}
-
-.steps-title.active {
-  background-color: #f8f9fa;
-  border-radius: 8px;
-}
-
-/* 工作流程箭头 */
-.process-arrow:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -45px;
-  width: 0;
-  height: 0;
-  border-left: 20px solid #e9ecef;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.d-none-arrow:before {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .process-arrow:before {
-    display: none;
-  }
-}
-
-/* 商业插件卡片样式 */
-.plugin-card {
-  transition: all 0.3s ease;
-}
-
-.plugin-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.plugin-footer .badge {
-  font-size: 0.7rem;
-  padding: 0.2rem 0.4rem;
-}
-
-.plugin-developer span {
-  color: #6c757d;
-}
-
-.plugin-overview {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.plugin-footer h6 {
-  font-size: 0.8rem;
-}
-
-/* 开发者logo样式 */
-.developer-logo {
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.developer-logo:hover {
-  opacity: 0.8;
-}
-
-/* 交互演示卡片样式 */
+/* Interactive Demo Card Styles */
 .interactive-demo-card {
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -1582,7 +1230,7 @@ const opportunityDemoGuides = {
   box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
 }
 
-/* 弹窗样式 */
+/* Modal Styles */
 .demo-modal {
   position: fixed;
   top: 0;
@@ -1642,9 +1290,6 @@ const opportunityDemoGuides = {
   right: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.demo-modal-close {
   background: none;
   border: none;
   padding: 0.5rem;
@@ -1681,19 +1326,11 @@ const opportunityDemoGuides = {
   }
 }
 
-/* 弹窗内交互演示的基础样式 */
 .demo-content-wrapper {
   margin-top: 0;
 }
 
-/* CRM页面特定的弹窗响应式调整 */
-@media (max-width: 768px) {
-  .demo-modal .demo-modal-body {
-    padding: 1rem !important;
-  }
-}
-
-/* 响应式弹窗 */
+/* Responsive Modal */
 @media (max-width: 768px) {
   .demo-modal-content {
     width: 95vw;
@@ -1709,21 +1346,19 @@ const opportunityDemoGuides = {
     padding: 1rem;
   }
 }
-
-
 </style>
 
 <script is:inline>
-// 弹窗控制函数 - 定义在全局作用域
+// Modal control functions - defined in global scope
 function openDashboardDemo() {
   const modal = document.getElementById('dashboard-demo-modal');
   if (modal) {
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     
-    // 等待弹窗显示后初始化交互演示
+    // Wait for modal to show then initialize interactive demo
     setTimeout(function() {
-      // 为弹窗内的演示创建独立实例
+      // Create independent instance for modal demo
       if (window.InteractiveDemo) {
         new window.InteractiveDemo(modal);
       }
@@ -1739,16 +1374,16 @@ function closeDashboardDemo() {
   }
 }
 
-// 线索转化演示弹窗控制函数
+// Lead conversion demo modal control functions
 function openLeadDemo() {
   const modal = document.getElementById('lead-demo-modal');
   if (modal) {
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     
-    // 等待弹窗显示后初始化交互演示
+    // Wait for modal to show then initialize interactive demo
     setTimeout(function() {
-      // 为弹窗内的演示创建独立实例
+      // Create independent instance for modal demo
       if (window.InteractiveDemo) {
         new window.InteractiveDemo(modal);
       }
@@ -1764,16 +1399,16 @@ function closeLeadDemo() {
   }
 }
 
-// 商机转化演示弹窗控制函数
+// Opportunity conversion demo modal control functions
 function openOpportunityDemo() {
   const modal = document.getElementById('opportunity-demo-modal');
   if (modal) {
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     
-    // 等待弹窗显示后初始化交互演示
+    // Wait for modal to show then initialize interactive demo
     setTimeout(function() {
-      // 为弹窗内的演示创建独立实例
+      // Create independent instance for modal demo
       if (window.InteractiveDemo) {
         new window.InteractiveDemo(modal);
       }
@@ -1795,24 +1430,24 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (!video || !playButton) return;
   
-  // 只在初始状态点击大播放按钮时触发播放
+  // 最初に大きな再生ボタンをクリックした時のみ再生を開始
   playButton.addEventListener('click', function() {
-    // 添加控制栏
+    // コントロールバーを追加
     video.setAttribute('controls', '');
     video.setAttribute('controlslist', 'nodownload');
     
-    // 开始播放并隐藏播放按钮
+    // 再生を開始し、再生ボタンを非表示
     video.play();
     playButton.style.display = 'none';
   });
 
-  // 视频结束时显示播放按钮，移除控制栏
+  // ビデオ終了時に再生ボタンを表示、コントロールバーを削除
   video.addEventListener('ended', function() {
     playButton.style.display = 'block';
     video.removeAttribute('controls');
   });
 
-  // ESC键关闭弹窗
+  // ESC key to close modals
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
       closeDashboardDemo();

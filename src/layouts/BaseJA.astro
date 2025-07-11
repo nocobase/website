@@ -161,6 +161,51 @@ const meta = {
             href="https://sibforms.com/forms/end-form/build/sib-styles.css"
     />
 
+    <!-- Custom Css for megamenu width -->
+    <style>
+        /* 调整megamenu宽度，让它更窄更紧凑 */
+        @media (min-width: 1025px) {
+            #topnav .navigation-menu > li .submenu.megamenu {
+                width: 780px !important;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 992px) {
+            #topnav .navigation-menu > li .submenu.megamenu {
+                width: 700px !important;
+            }
+        }
+
+        /* 调整megamenu每列的宽度，使3列布局更均匀 */
+        @media (min-width: 992px) {
+            #topnav .navigation-menu > li .submenu.megamenu > li {
+                width: 33.333% !important;
+            }
+        }
+
+        /* 增强megamenu标题显示效果 */
+        .megamenu-head {
+            font-weight: 600 !important;
+            font-size: 12px !important;
+            color: #6c757d !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.8px !important;
+            margin-bottom: 12px !important;
+            padding-bottom: 4px !important;
+            border-bottom: 1px solid #e9ecef !important;
+        }
+
+        /* 自定义即将推出标签样式 */
+        .coming-soon-badge {
+            background-color: #e9ecef !important;
+            color: #6c757d !important;
+            font-size: 10px !important;
+            font-weight: 500 !important;
+            padding: 2px 6px !important;
+            border-radius: 8px !important;
+        }
+    </style>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
     <!--  END Brevo Form -->
 
@@ -236,41 +281,72 @@ const meta = {
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu">
-                <li>
-                    <a
-                            rel="nofollow"
-                            href="https://github.com/nocobase/nocobase"
-                            title="GitHubでNocoBaseを開く"
-                            class="sub-menu-item"
-                            target="_blank"
-                    >GitHub<i class="uil uil-star"></i>16k</a>
-                </li>
-                <li>
-                    <a href="/ja/commercial" title="NocoBase 料金" class="sub-menu-item">料金</a>
-                </li>
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)" class="sub-menu-item">プラグイン</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                      <li>
-                        <a href="/ja/plugins" title="NocoBase すべてのプラグイン" class="sub-menu-item">すべてのプラグイン</a>
-                      </li>
-                      <li>
-                        <a href="/ja/plugins-commercial" title="NocoBase 商用プラグイン" class="sub-menu-item">商用プラグイン</a>
-                      </li>
-                      <li>
-                        <a href="/ja/plugins-bundles" title="NocoBase プラグインポイント" class="sub-menu-item">プラグインポイント</a>
-                      </li>
-                    </ul>
-                  </li>
-                <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)" rel="nofollow">コミュニティ</a><span class="menu-arrow"
-                ></span>
+                    <a href="javascript:void(0)">プロダクト</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li>
-                            <a href="https://forum.nocobase.com/" title="NocoBase オンラインコミュニケーション" class="sub-menu-item" target="_blank">オンラインコミュニケーション</a>
+                            <a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">機能 <span class="badge coming-soon-badge ms-2">近日公開</span></a>
                         </li>
                         <li>
-                            <a href="/ja/blog" title="NocoBase ブログ" class="sub-menu-item">ブログ</a>
+                            <a href="https://demo-jp.nocobase.com/new" target="_blank" class="sub-menu-item">ライブデモ <span class="badge text-bg-success ms-2">体験する</span></a>
+                        </li>
+                        <li>
+                            <a
+                                    rel="nofollow"
+                                    href="https://github.com/nocobase/nocobase"
+                                    class="sub-menu-item"
+                                    target="_blank"
+                            >GitHub<i class="uil uil-star"></i>16k</a>
+                        </li>
+                        <li>
+                            <a
+                                    rel="nofollow"
+                                    href="https://gitee.com/nocobase/nocobase"
+                                    class="sub-menu-item"
+                                    target="_blank"
+                            >Gitee <span class="git-project-gvp">GVP</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">マーケットプレイス</a><span class="menu-arrow"></span>
+                    <ul class="submenu megamenu">
+                        <li>
+                            <ul>
+                                <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> プラグイン</li>
+                                <li><a href="/ja/plugins" title="NocoBase すべてのプラグイン" class="sub-menu-item">すべてのプラグイン</a></li>
+                                <li><a href="/ja/plugins-commercial" title="NocoBase 商用プラグイン" class="sub-menu-item">商用プラグイン</a></li>
+                                <li><a href="/ja/plugins-bundles" title="NocoBase プラグインポイント" class="sub-menu-item">プラグインポイント</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> ソリューション</li>
+                                <li><a href="/ja/solutions/crm" title="NocoBase CRMソリューション" class="sub-menu-item">CRM</a></li>
+                                <li><a href="/ja/solutions/ticketing" title="NocoBase チケットシステムソリューション" class="sub-menu-item">チケットシステム</a></li>
+                                <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">プロジェクト管理 <span class="badge coming-soon-badge ms-2">近日公開</span></a></li>
+                                <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">CMS <span class="badge coming-soon-badge ms-2">近日公開</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li class="megamenu-head"><i class="uil uil-users-alt fs-6 align-middle"></i> パートナー</li>
+                                <li><a href="/ja/partners" title="NocoBaseサービスプロバイダーを探す" class="sub-menu-item">NocoBaseサービスプロバイダーを探す</a></li>
+                                <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">参加する <span class="badge coming-soon-badge ms-2">近日公開</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu parent-menu-item">
+                    <a href="javascript:void(0)">コミュニティ</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="https://forum.nocobase.com/" class="sub-menu-item" title="NocoBase オンラインフォーラム・交流" target="_blank">フォーラム</a>
+                        </li>
+                        <li>
+                            <a href="/ja/blog/tags/customer-stories" class="sub-menu-item">カスタマーストーリー</a>
                         </li>
                         <li>
                             <a href="/ja/blog/timeline" title="NocoBase リリースノート" class="sub-menu-item">リリースノート</a>
@@ -279,31 +355,32 @@ const meta = {
                             <a href="/ja/roadmap" title="NocoBase ロードマップ" class="sub-menu-item">ロードマップ</a>
                         </li>
                         <li>
-                            <a href="/ja/contact" title="NocoBase へのお問い合わせ" class="sub-menu-item">お問い合わせ</a>
+                            <a href="/ja/blog" title="NocoBase ブログ" class="sub-menu-item">ブログ</a>
                         </li>
                     </ul>
                 </li>
-
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)" rel="nofollow">リソース</a><span class="menu-arrow"
-                ></span>
+                    <a href="javascript:void(0)">リソース</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li>
-                            <a href="https://docs-jp.nocobase.com" title="NocoBase ガイド ドキュメントとリファレンス" class="sub-menu-item" target="_blank">ドキュメント</a>
+                            <a href="https://docs-jp.nocobase.com" title="NocoBase ドキュメント" class="sub-menu-item" target="_blank">ドキュメント</a>
                         </li>
                         <li>
                             <a href="/ja/tutorials" title="NocoBase チュートリアル" class="sub-menu-item">チュートリアル</a>
                         </li>
-                        <!-- <li>
-                            <a href="/ja/help" title="NocoBase ヘルプセンター" class="sub-menu-item">ヘルプセンター</a>
-                        </li> -->
                         <li>
-                            <a href="https://docs-jp.nocobase.com/handbook/security" title="NocoBase 安全ガイドライン" class="sub-menu-item">安全ガイドライン</a>
+                            <a href="https://docs-jp.nocobase.com/handbook/security" title="NocoBase セキュリティガイド" class="sub-menu-item" target="_blank">セキュリティガイド</a>
                         </li>
                         <li>
                             <a href="/ja/agreement" title="NocoBase ライセンス契約" class="sub-menu-item">ライセンス契約</a>
                         </li>
+                        <li>
+                            <a href="/ja/contact" title="NocoBase へのお問い合わせ" class="sub-menu-item">お問い合わせ</a>
+                        </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="/ja/commercial" class="sub-menu-item">料金</a>
                 </li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
@@ -428,6 +505,10 @@ const meta = {
                                 <li>
                                     <a href="/ja/blog/timeline" title="NocoBaseリリースノート" class="text-foot"
                                     ><i class="uil uil-angle-right-b me-1"></i> リリースノート</a>
+                                </li>
+                                <li>
+                                    <a href="https://logo.shapefactory.co/files?p=5fd023ef44c9e5001783a809" target="_blank" class="text-foot"
+                                    ><i class="uil uil-angle-right-b me-1"></i> ブランド素材</a>
                                 </li>
                                 <li>
                                     <a href="/ja/agreement" class="text-foot" title="NocoBaseライセンス契約"

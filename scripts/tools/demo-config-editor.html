@@ -1141,6 +1141,7 @@
                 this.dragStepIndex = -1;
                 this.dragStartPos = { x: 0, y: 0 };
                 this.imageUpdateTimer = null;
+                this.stepFieldUpdateTimer = null;
                 this.resizeTimer = null;
                 this.isUpdatingStepsList = false;
                 this.isUpdatingFromJson = false;
@@ -1293,11 +1294,9 @@
             }
 
             ensureStepForImage(imageUrl) {
-                const existingStepIndex = this.config.steps.findIndex(step => step.image === imageUrl);
-                
-                if (existingStepIndex >= 0) {
-                    this.selectCompactStep(existingStepIndex);
-                } else if (this.config.steps.length === 0) {
+                // 移除自动跳转到相同图片步骤的逻辑
+                // 现在允许多个步骤使用相同的图片
+                if (this.config.steps.length === 0) {
                     this.autoCreateStepForCurrentImage();
                 }
             }
@@ -1849,9 +1848,23 @@
                         delete step[field];
                     }
                     
+                    // 使用防抖技术避免频繁重新渲染
+                    this.updateStepFieldWithDebounce();
+                    this.updateJsonDisplay();
+                }
+            }
+
+            updateStepFieldWithDebounce() {
+                // 清除之前的定时器
+                if (this.stepFieldUpdateTimer) {
+                    clearTimeout(this.stepFieldUpdateTimer);
+                }
+                
+                // 设置新的定时器
+                this.stepFieldUpdateTimer = setTimeout(() => {
                     this.updateCompactStepsList();
                     this.updatePreview();
-                }
+                }, 300); // 300ms延迟
             }
 
             updateStepImage(index, imageUrl) {
@@ -1901,14 +1914,20 @@
                     }
                     step.button[field] = value;
                     
-                    // 如果改变的是balloonPos或label，需要重新渲染标记以更新提示位置
-                    if (field === 'balloonPos' || field === 'label') {
+                    // 如果改变的是balloonPos，立即重新渲染标记和列表
+                    if (field === 'balloonPos') {
                         this.renderMarkers();
+                        this.updateCompactStepsList();
+                        this.updatePreview();
+                    } else if (field === 'label') {
+                        // label变化使用防抖
+                        this.renderMarkers();
+                        this.updateStepFieldWithDebounce();
+                    } else {
+                        this.updateStepFieldWithDebounce();
                     }
                     
-                    // 重新渲染步骤列表以更新按钮状态
-                    this.updateCompactStepsList();
-                    this.updatePreview();
+                    this.updateJsonDisplay();
                 }
             }
 

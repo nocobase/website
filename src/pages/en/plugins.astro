@@ -25,46 +25,65 @@ const title = page.title;
 const description = page.description;
 const keywords = page.keywords;
 
-// 1. 将所有插件先扁平化收集
+// 1. Flatten all plugins first
 const allPlugins = data.flatMap((group: any) => group.plugins);
 
-// 2. 拆分为 newly / coming / normal 三类
+// 2. Filter "Newly Launched" and "Coming Soon"
 const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
 const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
 
-// 3. 从原分组里移除 newly 和 coming 的插件
-//    这样它们就不会和后面的 normal 分组重复出现
-data.forEach((group) => {
+// 3. Remove these two types from original categories to avoid duplication
+data.forEach((group: any) => {
   group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
 });
 
-// 4. 去掉空分组（如果一个分组所有插件都是 newly 或 coming，就没必要再显示空分组标题）
+// 4. Remove empty categories
 const normalGroups = data.filter((group) => group.plugins.length > 0);
 
-// 5. 组织一个合并后的分组数组，先 newly，后 coming，最后普通分组
+// 5. Final groups array to render, first "Newly Launched", then "Coming Soon", finally normal groups
 const finalGroups = [];
 
-// a) newly launched
+// (a) Newly Launched
 if (newlyPlugins.length > 0) {
   finalGroups.push({
     id: 'newly-launched',
-    title: 'Newly launched',
+    title: 'Newly Launched',
     plugins: newlyPlugins,
   });
 }
 
-// b) coming soon
+// (b) Coming Soon
 if (comingPlugins.length > 0) {
   finalGroups.push({
     id: 'coming-soon',
-    title: 'Coming soon',
+    title: 'Coming Soon',
     plugins: comingPlugins,
   });
 }
 
-// c) normal
+// (c) Normal groups
 finalGroups.push(...normalGroups);
 
+// Calculate totals
+const totalPlugins = finalGroups.reduce((sum, group) => sum + group.plugins.length, 0);
+
+// Prepare filter options
+const filterOptions = {
+  pricing: [
+    { id: 'all', name: 'All', count: totalPlugins },
+    { id: 'free', name: 'Free', count: allPlugins.filter(p => !p.commercial && !p.coming).length },
+    { id: 'commercial', name: 'Commercial', count: allPlugins.filter(p => p.commercial).length },
+  ],
+  release: [
+    { id: 'newly', name: 'Newly Launched', count: newlyPlugins.length },
+    { id: 'coming', name: 'Coming Soon', count: comingPlugins.length },
+  ],
+  categories: normalGroups.map(group => ({
+    id: group.id,
+    name: group.title,
+    count: group.plugins.length
+  }))
+};
 ---
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} tabs={tabs}>
@@ -78,67 +97,603 @@ finalGroups.push(...normalGroups);
   <!-- Section Start -->
   <section class="section">
     <div class="container">
-      {
-        finalGroups
-            .filter((group) => group.plugins.length > 0)
-            .map((group) => (
-                <>
-                  <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
-                  <div class="row pb-4">
-                    {group.plugins.map((plugin: any) => (
-                        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                          <div title={plugin.name} style="color: inherit;" class="card rounded shadow border-0 plugin-card">
-                            <div class="card-body">
-                              <div class="mt-2 plugin-box">
-                                <h6 class="card-title mb-1">{plugin.name}</h6>
-                                <div class="plugin-developer text-muted mb-3">
-                                  By <span>{plugin.developer || 'NocoBase'}</span>
-                                </div>
-                                <p class="text-muted mb-2 plugin-overview">
-                                  {plugin.description}
-                                  {plugin.docs &&
-                                      <a href={plugin.docs} target="_blank" style="font-size: 14px;">Details</a>
-                                  }
-                                </p>
-                                <div class="plugin-footer">
-                                  {plugin.coming ? (
-                                      <span class="badge bg-soft-info plugin-type">
-                                Coming soon
-                              </span>
-                                  ) : plugin.commercial ? (
-                                      <>
-                                        <h6 class="text-primary mb-0">
-                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br/>
-                                          <a href="/en/plugins-bundles"> {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i></a>
-                                          <span class="text-muted">/</span>
-                                          <span class="text-muted">
-                                    ${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}
-                                  </span>
-                                        </h6>
-                                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br/>
-                                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point} <i class="uil uil-moon-eclipse me-1"></i></a>
-                                          <span class="text-muted">/</span>
-                                          <span class="text-muted">
-                                    ${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}
-                                  </span>
-                                        </h6>
-                                      </>
-                                  ) : (
-                                      <span class="badge bg-soft-primary plugin-type">
-                                Free
-                              </span>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    ))}
+      <div class="row" style="margin-top: 2rem;">
+        <!-- Left Filter Sidebar -->
+        <div class="col-lg-2 col-md-3 col-12">
+          <div class="plugins-sidebar">
+            <!-- Filter Options -->
+            <div class="filter-section">
+              <h6 class="filter-title">Pricing</h6>
+              <div class="filter-options">
+                {filterOptions.pricing.map((item: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="pricing"
+                    data-filter-value={item.id}
+                    data-active={item.id === 'all'}
+                  >
+                    <input 
+                      type="radio" 
+                      name="pricing" 
+                      value={item.id} 
+                      checked={item.id === 'all'}
+                      style="margin-right: 8px;"
+                    />
+                    {item.name}
+                    <span class="filter-count">({item.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h6 class="filter-title">Release Status</h6>
+              <div class="filter-options">
+                {filterOptions.release.map((item: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="release"
+                    data-filter-value={item.id}
+                    data-active="false"
+                  >
+                    <input 
+                      type="checkbox" 
+                      value={item.id} 
+                      style="margin-right: 8px;"
+                    />
+                    {item.name}
+                    <span class="filter-count">({item.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h6 class="filter-title">Categories</h6>
+              <div class="filter-options">
+                <a 
+                  href="#" 
+                  class="filter-link"
+                  data-filter-type="category"
+                  data-filter-value="all"
+                  data-active="true"
+                >
+                  <input 
+                    type="radio" 
+                    name="category" 
+                    value="all" 
+                    checked={true}
+                    style="margin-right: 8px;"
+                  />
+                  All Categories
+                  <span class="filter-count">({totalPlugins})</span>
+                </a>
+                {filterOptions.categories.map((category: any) => (
+                  <a 
+                    href="#" 
+                    class="filter-link"
+                    data-filter-type="category"
+                    data-filter-value={category.id}
+                    data-active="false"
+                  >
+                    <input 
+                      type="radio" 
+                      name="category" 
+                      value={category.id} 
+                      style="margin-right: 8px;"
+                    />
+                    {category.name}
+                    <span class="filter-count">({category.count})</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Plugin List -->
+        <div class="col-lg-10 col-md-9 col-12">
+          <div class="plugins-content">
+            <!-- Search, Stats and Sort -->
+            <div class="plugins-header mb-4 sticky-search" style="z-index: 1;">
+              <div class="row align-items-center g-3">
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="search-container">
+                    <div class="position-relative">
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Search plugins..." 
+                        id="pluginSearch"
+                        style="padding-left: 40px;"
+                      />
+                      <i class="uil uil-search position-absolute" style="left: 12px; top: 50%; transform: translateY(-50%); color: #6c757d; font-size: 18px;"></i>
+                    </div>
                   </div>
-                </>
-            ))
+                </div>
+                <div class="col-lg-4 col-md-3 col-12 text-center">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-end">
+                  <div class="plugins-sort">
+                    <select class="form-select form-select-sm" id="pluginSort">
+                      <option value="default">Default Order</option>
+                      <option value="name">By Name</option>
+                      <option value="newest">Newest First</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plugin Grid -->
+            <div class="row" id="pluginsGrid">
+              {finalGroups.map((group) => (
+                group.plugins.map((plugin: any) => (
+                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+                    <div 
+                      title={plugin.name}
+                      style="color: inherit;"
+                      class="card rounded shadow border-0 plugin-card h-100"
+                      data-plugin-name={plugin.name}
+                      data-plugin-type={plugin.coming ? 'coming' : plugin.commercial ? 'commercial' : 'free'}
+                      data-plugin-category={group.id}
+                      data-plugin-newly={plugin.newly ? 'true' : 'false'}
+                    >
+                      <div class="card-body d-flex flex-column">
+                        <div class="mt-2 plugin-box flex-grow-1">
+                          <h6 class="card-title mb-1">
+                            {plugin.name}
+                          </h6>
+                          <div class="plugin-developer text-muted mb-3">
+                            By <span>{plugin.developer || 'NocoBase'}</span>
+                          </div>
+                          <p class="text-muted mb-2 plugin-overview">
+                            {plugin.description}
+                            {plugin.docs && (
+                              <a 
+                                href={plugin.docs} 
+                                target="_blank" 
+                                style="font-size: 14px;"
+                              >
+                                Details
+                              </a>
+                            )}
+                          </p>
+                        </div>
+                        <div class="plugin-footer mt-auto">
+                          {plugin.coming ? (
+                            <span class="badge bg-soft-info plugin-type">
+                              Coming Soon
+                            </span>
+                          ) : plugin.commercial ? (
+                            <>
+                              <h6 class="text-primary mb-0">
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
+                                  Lifetime use, 1-year upgrade
+                                </span>
+                                <br />
+                                <a href="/en/plugins-bundles">
+                                  {plugin.points_1_year} <i class="uil uil-moon-eclipse me-1"></i>
+                                </a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted">
+                                  ${plugin.price_1_year ? plugin.price_1_year.toLocaleString('en-US') : '?'}
+                                </span>
+                              </h6>
+                              <h6 
+                                class="text-muted mb-0"
+                                style="margin-left: auto; font-weight: normal;"
+                              >
+                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">
+                                  Lifetime use & upgrade
+                                </span>
+                                <br />
+                                <a class="text-muted" href="/en/plugins-bundles">
+                                  {plugin.point} <i class="uil uil-moon-eclipse me-1"></i>
+                                </a>
+                                <span class="text-muted">/</span>
+                                <span class="text-muted">
+                                  ${plugin.price ? plugin.price.toLocaleString('en-US') : '?'}
+                                </span>
+                              </h6>
+                            </>
+                          ) : (
+                            <span class="badge bg-soft-primary plugin-type">
+                              Free
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ))}
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results text-center py-5" id="noResults" style="display: none;">
+              <i class="uil uil-search text-muted" style="font-size: 3rem;"></i>
+              <h5 class="mt-3 text-muted">No matching plugins found</h5>
+              <p class="text-muted">Try adjusting your search criteria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Styles -->
+  <style>
+    /* Search container */
+    .search-container {
+      flex-shrink: 0;
+    }
+
+    /* Sticky elements */
+    .sticky-search {
+      position: sticky;
+      top: 70px;
+      z-index: 1000;
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    /* Sidebar filters */
+    .plugins-sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+    }
+
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #343a40;
+      font-size: 1rem;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .filter-link {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 0.95rem;
+      font-weight: normal;
+      transition: all 0.2s;
+    }
+    
+    .filter-link input[type="radio"], 
+    .filter-link input[type="checkbox"] {
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    
+    .filter-link .filter-count {
+      margin-left: auto;
+    }
+
+    .filter-link:hover {
+      background-color: #f8f9fa;
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .filter-link[data-active="true"] {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .filter-count {
+      color: inherit;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    /* Plugin content area */
+    .plugins-content {
+      padding-left: 0;
+    }
+
+    /* Plugin cards */
+    .plugin-card {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .plugin-overview {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .plugin-footer {
+      margin-top: 1rem;
+    }
+
+    .plugin-type .badge {
+      font-size: 0.75rem;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .plugins-sidebar {
+        position: relative;
+        top: auto;
+        margin-bottom: 2rem;
+      }
+      
+      .plugins-content {
+        padding-left: 0;
+      }
+      
+      .sticky-search .col-12 {
+        margin-bottom: 0.5rem;
+      }
+      
+      .sticky-search .col-12:last-child {
+        margin-bottom: 0;
+      }
+      
+      .sticky-search .text-center,
+      .sticky-search .text-end {
+        text-align: left !important;
+      }
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    // Same JavaScript as Chinese version but with English text
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('pluginSearch') as HTMLInputElement;
+      const pluginsGrid = document.getElementById('pluginsGrid') as HTMLElement;
+      const noResults = document.getElementById('noResults') as HTMLElement;
+      const filterLinks = document.querySelectorAll('.filter-link') as NodeListOf<HTMLAnchorElement>;
+      const sortSelect = document.getElementById('pluginSort') as HTMLSelectElement;
+
+      if (!searchInput || !pluginsGrid || !noResults || !sortSelect) {
+        return;
+      }
+
+      let allPlugins = Array.from(document.querySelectorAll('.plugin-card')) as HTMLElement[];
+      let filteredPlugins = [...allPlugins];
+      let selectedPricing = 'all';
+      let selectedRelease = '';
+      let selectedCategory = 'all';
+
+      function filterPlugins() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        filteredPlugins = allPlugins.filter(plugin => {
+          // Search filter
+          const pluginName = plugin.dataset.pluginName?.toLowerCase() || '';
+          const pluginDescElement = plugin.querySelector('.plugin-overview');
+          const pluginDesc = pluginDescElement?.textContent?.toLowerCase() || '';
+          const matchesSearch = pluginName.includes(searchTerm) || pluginDesc.includes(searchTerm);
+
+          // Pricing filter
+          const pluginType = plugin.dataset.pluginType || '';
+          let matchesPricing = true;
+          if (selectedPricing !== 'all') {
+            matchesPricing = pluginType === selectedPricing;
+          }
+
+          // Release status filter
+          const isNewly = plugin.dataset.pluginNewly === 'true';
+          let matchesRelease = true;
+          if (selectedRelease) {
+            if (selectedRelease === 'newly') {
+              matchesRelease = isNewly;
+            } else if (selectedRelease === 'coming') {
+              matchesRelease = pluginType === 'coming';
+            }
+          }
+
+          // Category filter
+          const pluginCategory = plugin.dataset.pluginCategory || '';
+          const matchesCategory = selectedCategory === 'all' || pluginCategory === selectedCategory;
+
+          return matchesSearch && matchesPricing && matchesRelease && matchesCategory;
+        });
+
+        updateDisplay();
+      }
+
+      function updateDisplay() {
+        // Hide all plugins
+        allPlugins.forEach(plugin => {
+          if (plugin.parentElement) {
+            plugin.parentElement.style.display = 'none';
+          }
+        });
+
+        // Show filtered plugins
+        filteredPlugins.forEach(plugin => {
+          if (plugin.parentElement) {
+            plugin.parentElement.style.display = '';
+          }
+        });
+
+        // Show/hide no results message
+        if (filteredPlugins.length === 0) {
+          noResults.style.display = 'block';
+          pluginsGrid.style.display = 'none';
+        } else {
+          noResults.style.display = 'none';
+          pluginsGrid.style.display = '';
         }
-      </div><!--end container-->
-    </section><!--end section-->
-  </Layout><!--end section-->
+      }
+
+      function sortPlugins() {
+        const sortValue = sortSelect.value;
+        
+        filteredPlugins.sort((a, b) => {
+          switch (sortValue) {
+            case 'name':
+              const aName = a.dataset.pluginName || '';
+              const bName = b.dataset.pluginName || '';
+              return aName.localeCompare(bName);
+            case 'newest':
+              // Newly launched plugins first
+              const aIsNew = a.dataset.pluginNewly === 'true';
+              const bIsNew = b.dataset.pluginNewly === 'true';
+              if (aIsNew && !bIsNew) return -1;
+              if (!aIsNew && bIsNew) return 1;
+              return 0;
+            default:
+              return 0;
+          }
+        });
+
+        // Reorder DOM elements
+        filteredPlugins.forEach(plugin => {
+          if (plugin.parentElement && plugin.parentElement.parentNode) {
+            plugin.parentElement.parentNode.appendChild(plugin.parentElement);
+          }
+        });
+      }
+
+      function handleFilterClick(e: Event) {
+        e.preventDefault();
+        const target = e.target as HTMLElement;
+        
+        // If clicked on input, don't handle (will be handled by change event)
+        if (target.tagName === 'INPUT') {
+          return;
+        }
+        
+        const link = target.closest('.filter-link') as HTMLAnchorElement;
+        if (!link) return;
+
+        const filterType = link.dataset.filterType;
+        const filterValue = link.dataset.filterValue;
+
+        if (!filterType || !filterValue) return;
+
+        // Update selected state
+        if (filterType === 'pricing') {
+          selectedPricing = filterValue;
+          // Update pricing links state and radio button
+          document.querySelectorAll('[data-filter-type="pricing"]').forEach(el => {
+            el.setAttribute('data-active', 'false');
+            const radio = el.querySelector('input[type="radio"]') as HTMLInputElement;
+            if (radio) radio.checked = false;
+          });
+          link.setAttribute('data-active', 'true');
+          const radio = link.querySelector('input[type="radio"]') as HTMLInputElement;
+          if (radio) radio.checked = true;
+        } else if (filterType === 'release') {
+          // Release status can be deselected
+          const checkbox = link.querySelector('input[type="checkbox"]') as HTMLInputElement;
+          if (selectedRelease === filterValue) {
+            selectedRelease = '';
+            link.setAttribute('data-active', 'false');
+            if (checkbox) checkbox.checked = false;
+          } else {
+            selectedRelease = filterValue;
+            // Clear all release status selections first
+            document.querySelectorAll('[data-filter-type="release"]').forEach(el => {
+              el.setAttribute('data-active', 'false');
+              const cb = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+              if (cb) cb.checked = false;
+            });
+            link.setAttribute('data-active', 'true');
+            if (checkbox) checkbox.checked = true;
+          }
+        } else if (filterType === 'category') {
+          selectedCategory = filterValue;
+          // Update category links state and radio button
+          document.querySelectorAll('[data-filter-type="category"]').forEach(el => {
+            el.setAttribute('data-active', 'false');
+            const radio = el.querySelector('input[type="radio"]') as HTMLInputElement;
+            if (radio) radio.checked = false;
+          });
+          link.setAttribute('data-active', 'true');
+          const radio = link.querySelector('input[type="radio"]') as HTMLInputElement;
+          if (radio) radio.checked = true;
+        }
+
+        filterPlugins();
+      }
+
+      // Event listeners
+      searchInput.addEventListener('input', filterPlugins);
+      filterLinks.forEach(link => link.addEventListener('click', handleFilterClick));
+      
+      // Listen for direct input clicks
+      document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+        input.addEventListener('change', function(e) {
+          const inputElement = e.target as HTMLInputElement;
+          const link = inputElement.closest('.filter-link') as HTMLAnchorElement;
+          if (link) {
+            const filterType = link.dataset.filterType;
+            const filterValue = link.dataset.filterValue;
+            
+            if (!filterType || !filterValue) return;
+            
+            // Handle filter logic directly
+            if (filterType === 'pricing') {
+              selectedPricing = filterValue;
+              document.querySelectorAll('[data-filter-type="pricing"]').forEach(el => {
+                el.setAttribute('data-active', 'false');
+              });
+              link.setAttribute('data-active', 'true');
+            } else if (filterType === 'release') {
+               if (inputElement.checked) {
+                 selectedRelease = filterValue;
+                 document.querySelectorAll('[data-filter-type="release"]').forEach(el => {
+                   el.setAttribute('data-active', 'false');
+                   const cb = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+                   if (cb) cb.checked = false;
+                 });
+                 link.setAttribute('data-active', 'true');
+                 inputElement.checked = true;
+               } else {
+                 selectedRelease = '';
+                 link.setAttribute('data-active', 'false');
+               }
+            } else if (filterType === 'category') {
+              selectedCategory = filterValue;
+              document.querySelectorAll('[data-filter-type="category"]').forEach(el => {
+                el.setAttribute('data-active', 'false');
+              });
+              link.setAttribute('data-active', 'true');
+            }
+            
+            filterPlugins();
+          }
+        });
+      });
+      
+      sortSelect.addEventListener('change', () => {
+        sortPlugins();
+        updateDisplay();
+      });
+
+      // Initialize
+      updateDisplay();
+    });
+  </script>
+</Layout>

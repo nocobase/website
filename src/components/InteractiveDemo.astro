@@ -31,14 +31,15 @@ export interface DemoGuide {
 
 interface Props {
   guides: DemoGuide;
+  hideTitle?: boolean;
 }
 
-const { guides } = Astro.props;
+const { guides, hideTitle = false } = Astro.props;
 ---
 
 <div class="steps-guide">
   <div class="section-title">
-    <h3 class="title mb-4">{guides.title}</h3>
+    {!hideTitle && <h3 class="title mb-4">{guides.title}</h3>}
     {guides.subtitle && <p class="text-muted para-desc mx-auto mb-0">{guides.subtitle}</p>}
   </div>
   <div class="row">
@@ -70,85 +71,87 @@ const { guides } = Astro.props;
     {guides.steps.map((step, index) => (
       <div class={`demo_step ${index === 0 ? 'demo_step_start' : ''}`} data-step={index}>
         {step.image && (
-          <img
-            data-src={step.image}
-            src={index === 0 ? step.image : ""}
-            alt="NocoBase 演示界面"
-          />
-        )}
-        {step.button && (
-          <div
-            class="demo-button demo_tooltip"
-            data-step-button={index}
-            aria-label={step.button.label}
-            data-balloon-length={step.button.balloonLength || "medium"}
-            data-balloon-pos={step.button.balloonPos}
-            style={`${step.button.position.left ? `left: ${step.button.position.left};` : ''}${step.button.position.right ? `right: ${step.button.position.right};` : ''}top: ${step.button.position.top};`}
-          >
-            <svg
-              width="80"
-              height="80"
-              viewBox="0 0 45 45"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="#fa541c"
-              aria-label="interactive-button"
-            >
-              <g
-                fill="none"
-                fill-rule="evenodd"
-                transform="translate(1 1)"
-                stroke-width="2"
+          <div class="image-container">
+            <img
+              data-src={step.image}
+              src={index === 0 ? step.image : ""}
+              alt="NocoBase 演示界面"
+            />
+            {step.button && (
+              <div
+                class="demo-button demo_tooltip"
+                data-step-button={index}
+                aria-label={step.button.label}
+                data-balloon-length={step.button.balloonLength || "medium"}
+                data-balloon-pos={step.button.balloonPos}
+                style={`${step.button.position.left ? `left: ${step.button.position.left};` : ''}${step.button.position.right ? `right: ${step.button.position.right};` : ''}top: ${step.button.position.top};`}
               >
-                <circle
-                  cx="22"
-                  cy="22"
-                  r="6"
-                  stroke-opacity="0"
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 45 45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#fa541c"
+                  aria-label="interactive-button"
                 >
-                  <animate
-                    attributeName="r"
-                    begin="1.5s"
-                    dur="3s"
-                    values="6;22"
-                    calcMode="linear"
-                    repeatCount="indefinite"
-                  />
-                  <animate
-                    attributeName="stroke-opacity"
-                    begin="1.5s"
-                    dur="3s"
-                    values="1;0"
-                    calcMode="linear"
-                    repeatCount="indefinite"
-                  />
-                  <animate
-                    attributeName="stroke-width"
-                    begin="1.5s"
-                    dur="3s"
-                    values="2;0"
-                    calcMode="linear"
-                    repeatCount="indefinite"
-                  />
-                </circle>
-                <circle cx="22" cy="22" r="8">
-                  <animate
-                    attributeName="r"
-                    begin="0s"
-                    dur="1.5s"
-                    values="6;1;2;3;4;5;6"
-                    calcMode="linear"
-                    repeatCount="indefinite"
-                  />
-                </circle>
-                <circle 
-                  cx="22" 
-                  cy="22" 
-                  r="3" 
-                  fill="#fa541c" 
-                  stroke="none"
-                />
-              </g>
-            </svg>
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    transform="translate(1 1)"
+                    stroke-width="2"
+                  >
+                    <circle
+                      cx="22"
+                      cy="22"
+                      r="6"
+                      stroke-opacity="0"
+                    >
+                      <animate
+                        attributeName="r"
+                        begin="1.5s"
+                        dur="3s"
+                        values="6;22"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="stroke-opacity"
+                        begin="1.5s"
+                        dur="3s"
+                        values="1;0"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="stroke-width"
+                        begin="1.5s"
+                        dur="3s"
+                        values="2;0"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle cx="22" cy="22" r="8">
+                      <animate
+                        attributeName="r"
+                        begin="0s"
+                        dur="1.5s"
+                        values="6;1;2;3;4;5;6"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle 
+                      cx="22" 
+                      cy="22" 
+                      r="3" 
+                      fill="#fa541c" 
+                      stroke="none"
+                    />
+                  </g>
+                </svg>
+              </div>
+            )}
           </div>
         )}
         {step.image === undefined && (
@@ -176,13 +179,15 @@ const { guides } = Astro.props;
   }
 
   .work-process.process-arrow:after {
-    content: '';
+    content: '→';
     position: absolute;
-    width: 50%;
-    height: 20px;
-    top: 8px;
-    left: 78%;
-    background: url("../images/process.png") center center no-repeat;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #e9ecef;
+    font-weight: bold;
+    z-index: 1;
   }
 
   .work-process .step {
@@ -218,11 +223,16 @@ const { guides } = Astro.props;
   }
 
   .steps-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
     opacity: 0;
   }
 
   .steps-wrap.loaded {
-    opacity: 1;
+    opacity: 1 !important;
   }
 
   /* 步骤样式 */
@@ -239,14 +249,21 @@ const { guides } = Astro.props;
     display: block;
   }
 
+  /* 图片容器 - 关键：让按钮相对于图片定位 */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
   .demo_step img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  /* 交互按钮样式 - 使用更具体的选择器防止冲突 */
-  .demo-wrap .demo-button {
+  /* 交互按钮样式 - 相对于image-container定位 */
+  .image-container .demo-button {
     position: absolute !important;
     width: 80px !important;
     height: 80px !important;
@@ -260,17 +277,73 @@ const { guides } = Astro.props;
     border: none !important;
     background: none !important;
     padding: 0 !important;
+    /* 默认按钮居中对齐 */
+    transform: translate(-50%, -50%) !important;
+  }
+  
+  /* 使用right定位的按钮需要不同的transform */
+  .image-container .demo-button[style*="right:"] {
+    transform: translate(50%, -50%) !important;
   }
 
-  .demo-wrap .demo-button.show {
+  .image-container .demo-button.show {
     display: flex !important;
   }
 
-  .demo-wrap .demo-button:hover {
-    transform: scale(1.1) !important;
+  .image-container .demo-button:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+  }
+  
+  /* 使用right定位的按钮hover时也需要调整transform */
+  .image-container .demo-button[style*="right:"]:hover {
+    transform: translate(50%, -50%) scale(1.1) !important;
+  }
+  
+  /* 确保tooltip在使用transform时正确显示 */
+  .image-container .demo-button.auto-tooltip:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+  }
+  
+  .image-container .demo-button[style*="right:"].auto-tooltip:hover {
+    transform: translate(50%, -50%) scale(1.1) !important;
   }
 
-  .demo-wrap .demo-button svg {
+  /* 弹窗环境下的通用样式 - 确保在任何弹窗中都能正确工作 */
+  .demo-modal .image-container {
+    position: relative !important;
+    display: inline-block !important;
+    width: 100% !important;
+  }
+
+  .demo-modal .demo_step img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  .demo-modal .image-container .demo-button {
+    position: absolute !important;
+    z-index: 20 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  
+  .demo-modal .image-container .demo-button[style*="right:"] {
+    transform: translate(50%, -50%) !important;
+  }
+
+  .demo-modal .demo-wrap {
+    overflow: visible !important;
+  }
+
+  /* 弹窗环境下的响应式调整 */
+  @media (max-width: 768px) {
+    .demo-modal .demo_step img {
+      max-width: 100% !important;
+    }
+  }
+
+  .image-container .demo-button svg {
     width: 100% !important;
     height: 100% !important;
   }
@@ -418,7 +491,12 @@ const { guides } = Astro.props;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../images/step-bg.png") center center repeat;
+    background: #f8f9fa;
+    background-image: 
+      radial-gradient(circle at 25% 25%, #e9ecef 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, #e9ecef 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,14 +517,15 @@ const { guides } = Astro.props;
     line-height: 1;
     margin-bottom: 0;
     opacity: 0.3;
+    color: #6c757d;
   }
 
   .chapter-title {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.3;
     margin-bottom: 0;
-    color: #333;
+    color: #495057;
   }
 
 
@@ -511,7 +590,7 @@ const { guides } = Astro.props;
 
   /* 响应式样式 */
   @media (max-width: 768px) {
-    .work-process {
+    .work-process.process-arrow:after {
       display: none;
     }
     
@@ -559,11 +638,13 @@ const { guides } = Astro.props;
     steps: NodeListOf<Element>;
     buttons: NodeListOf<Element>;
     chapterSteps: number[];
+    container: ParentNode;
 
-    constructor() {
+    constructor(container?: Element) {
+      this.container = container || document;
       this.currentStep = 0;
-      this.steps = document.querySelectorAll('.demo_step');
-      this.buttons = document.querySelectorAll('.demo-button');
+      this.steps = this.container.querySelectorAll('.demo_step');
+      this.buttons = this.container.querySelectorAll('.demo-button');
       this.chapterSteps = this.findChapterSteps();
       this.init();
     }
@@ -587,7 +668,7 @@ const { guides } = Astro.props;
     }
 
     markStepsLoaded(): void {
-      const stepsWrap = document.querySelector('.steps-wrap');
+      const stepsWrap = this.container.querySelector('.steps-wrap');
       if (stepsWrap) {
         stepsWrap.classList.add('loaded');
       }
@@ -620,7 +701,7 @@ const { guides } = Astro.props;
     showCurrentStepButton(): void {
       this.hideAllButtons();
       
-      const currentButton = document.querySelector(`[data-step-button="${this.currentStep}"]`) as HTMLElement;
+      const currentButton = this.container.querySelector(`[data-step-button="${this.currentStep}"]`) as HTMLElement;
       if (currentButton) {
         currentButton.classList.add('show');
         
@@ -661,7 +742,7 @@ const { guides } = Astro.props;
       });
 
       // 步骤导航点击事件
-      const stepTitles = document.querySelectorAll('.steps-title');
+      const stepTitles = this.container.querySelectorAll('.steps-title');
       stepTitles.forEach((stepTitle, index) => {
         stepTitle.addEventListener('click', () => {
           this.jumpToMainStep(index);
@@ -678,7 +759,7 @@ const { guides } = Astro.props;
           }
           
           if (index === this.currentStep) {
-            const hasButtonConfig = document.querySelector(`[data-step-button="${this.currentStep}"]`);
+            const hasButtonConfig = this.container.querySelector(`[data-step-button="${this.currentStep}"]`);
             if (!hasButtonConfig) {
               if (index === this.steps.length - 1) {
                 this.goToStep(0);
@@ -700,7 +781,7 @@ const { guides } = Astro.props;
 
       const currentStepElement = this.steps[this.currentStep] as HTMLElement;
       const isChapterPage = currentStepElement.querySelector('.chapter-overlay');
-      const hasButtonConfig = document.querySelector(`[data-step-button="${this.currentStep}"]`);
+      const hasButtonConfig = this.container.querySelector(`[data-step-button="${this.currentStep}"]`);
       
       if (isChapterPage || !hasButtonConfig) {
         currentStepElement.classList.add('clickable-step');
@@ -766,7 +847,7 @@ const { guides } = Astro.props;
     }
 
     activateStep(stepIndex: number): void {
-      const stepTitles = document.querySelectorAll('.steps-title');
+      const stepTitles = this.container.querySelectorAll('.steps-title');
       stepTitles.forEach(stepTitle => {
         stepTitle.classList.remove('active');
       });
@@ -791,7 +872,14 @@ const { guides } = Astro.props;
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    new InteractiveDemo();
+    // 为每个演示容器创建独立实例
+    const demoContainers = document.querySelectorAll('.steps-guide');
+    demoContainers.forEach(container => {
+      const parentElement = container.parentElement;
+      if (parentElement) {
+        new InteractiveDemo(parentElement);
+      }
+    });
   });
 
   declare global {
