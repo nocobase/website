@@ -1,0 +1,31 @@
+{
+  "id": 31,
+  "title": "nocobase-crm-demo-deployment-guide",
+  "title_cn": "NocoBase CRM Demo 部署指南",
+  "title_ja": null,
+  "description": "Learn how to deploy NocoBase CRM Demo to your environment with two deployment methods: Pro/Enterprise Backup Manager (complete file restoration) and universal SQL import (suitable for Community Edition). Choose the best method based on your version and requirements to quickly experience the full CRM functionality demonstration.",
+  "description_cn": "了解如何将 NocoBase CRM Demo 部署到您的环境中。本指南提供两种部署方式：专业/企业版备份管理器（完整还原所有文件）和通用 SQL 导入（适用于社区版）。根据您的版本和需求选择最适合的方法，快速体验完整的 CRM 功能演示。",
+  "description_ja": null,
+  "slug": "nocobase-crm-demo-deployment-guide",
+  "publishedAt": "2025-07-10T17:52:29.010Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-07-10T17:52:24.856Z",
+    "updatedAt": "2025-07-10T17:52:24.856Z",
+    "description": null,
+    "description_cn": null,
+    "id": 6,
+    "title": "CRM Demo",
+    "title_cn": "CRM Demo",
+    "status": "drafted",
+    "sort": 22,
+    "slug": null,
+    "title_ja": "CRM Demo",
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 1,
+  "keywords": [],
+  "updatedAt": "2025-07-11T08:02:00.564Z"
+}

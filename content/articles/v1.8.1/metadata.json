@@ -1,13 +1,13 @@
 {
-  "id": 604,
-  "title": "NocoBase v1.9.0-alpha.1: Add event queue to process messages in queue",
-  "title_cn": "NocoBase v1.9.0-alpha.1：新增用于处理队列消息的事件队列",
-  "title_ja": "NocoBase v1.9.0-alpha.1：イベントキューを追加し、キュー内のメッセージを処理する機能を実装",
-  "description": "Release Note of v1.9.0-alpha.1",
-  "description_cn": "v1.9.0-alpha.1 更新日志",
-  "description_ja": "v1.9.0-alpha.1 のリリースノート",
-  "slug": "v1.9.0-alpha.1",
-  "publishedAt": "2025-07-07T09:47:00.000Z",
+  "id": 608,
+  "title": "NocoBase v1.8.1: Bug Fixes",
+  "title_cn": "NocoBase v1.8.1：缺陷修复",
+  "title_ja": "NocoBase v1.8.1：不具合修正",
+  "description": "Release Note of v1.8.1",
+  "description_cn": "v1.8.1 更新日志",
+  "description_ja": "v1.8.1 のリリースノート",
+  "slug": "v1.8.1",
+  "publishedAt": "2025-07-09T08:35:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,21 +30,21 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2025-07-07T09:47:17.320Z",
-        "updatedAt": "2025-07-07T09:47:17.320Z",
+        "createdAt": "2025-07-09T08:35:48.365Z",
+        "updatedAt": "2025-07-09T08:35:48.365Z",
         "tagId": 4,
-        "articleId": 604
+        "articleId": 608
       }
     }
   ],
   "sub_tags": [
     {
-      "createdAt": "2025-01-22T06:50:37.402Z",
-      "updatedAt": "2025-01-22T06:50:37.402Z",
-      "id": 115,
-      "title": "Alpha",
-      "title_cn": null,
-      "sort": 114,
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -52,33 +52,33 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "Latest",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2025-07-08T00:57:27.454Z",
-        "updatedAt": "2025-07-08T00:57:27.454Z",
-        "articles_id": 604,
-        "tags_id": 115
+        "createdAt": "2025-07-09T08:47:55.627Z",
+        "updatedAt": "2025-07-09T08:47:55.627Z",
+        "articles_id": 608,
+        "tags_id": 116
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-07-08T00:55:14.097Z",
-    "updatedAt": "2025-07-08T00:55:14.097Z",
-    "id": 1567,
-    "title": "develop",
-    "filename": "develop-f7c7ph.png",
+    "createdAt": "2025-07-09T08:45:24.938Z",
+    "updatedAt": "2025-07-09T08:45:24.938Z",
+    "id": 1572,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-0mvhhs.png",
     "extname": ".png",
-    "size": 76488,
+    "size": 87639,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/develop-f7c7ph.png",
-    "preview": "https://static-docs.nocobase.com/develop-f7c7ph.png",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-0mvhhs.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-0mvhhs.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-09T08:40:35.723Z"
+  "updatedAt": "2025-07-09T08:47:55.614Z"
 }

@@ -8,7 +8,7 @@
   "description_ja": "v1.9.0-beta.1 のリリースノート",
   "slug": "v1.9.0-beta.1",
   "publishedAt": "2025-07-07T10:23:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -83,11 +83,11 @@
     "createdById": 3,
     "updatedById": 3
   },
-  "hideOnListPage": true,
-  "hideOnBlog": false,
+  "hideOnListPage": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-08T01:01:15.626Z"
+  "updatedAt": "2025-07-09T08:41:22.293Z"
 }
