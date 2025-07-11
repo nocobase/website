@@ -1,5 +1,3 @@
-## NocoBase CRM 场景 Demo 部署指南
-
 为了让您能够快速、顺畅地将此 Demo 部署到您自己的 NocoBase 环境中，我们提供了两种还原方式。请根据您的用户版本和技术背景选择最适合您的一种。
 
 在开始之前，请确保
@@ -10,8 +8,6 @@
   - **SQL文件**（压缩后约9MB）：[crm_demo_20250711_sql.zip](https://static-docs.nocobase.com/crm_demo_20250711_sql.zip) - 适用于方法二
 
 **重要说明**：本 Demo 基于 **PostgreSQL** 数据库制作，请确保您的环境使用 PostgreSQL 数据库。
-
-本教程专注于如何还原 Demo 数据。
 
 ---
 
