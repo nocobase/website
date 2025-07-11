@@ -1,5 +1,3 @@
-## NocoBase CRM Demo Deployment Guide
-
 To help you quickly and smoothly deploy this Demo to your own NocoBase environment, we provide two restoration methods. Please choose the most suitable one based on your user version and technical background.
 
 Before starting, please ensure:
@@ -10,8 +8,6 @@ Before starting, please ensure:
   - **SQL File** (approx. 9MB compressed): [crm_demo_20250711_sql.zip](https://static-docs.nocobase.com/crm_demo_20250711_sql.zip) - For Method 2
 
 **Important Note**: This Demo is built on **PostgreSQL** database. Please ensure your environment uses PostgreSQL database.
-
-This tutorial focuses on how to restore Demo data.
 
 ---
 
