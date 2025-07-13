@@ -1,0 +1,265 @@
+{
+  "title": "From Lead to Customer: Experience Efficient Conversion Process",
+  "subtitle": "Learn how to claim leads from the lead pool, conduct 360° comprehensive follow-up, and ultimately convert them seamlessly into opportunities and contacts.",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Lead Claim & Follow-up",
+      "id": "lead-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "Lead Details & Process Management",
+      "id": "lead-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "Lead Conversion & Value Realization",
+      "id": "lead-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Lead Pool",
+      "description": "This is where all unassigned leads reside. Sales team members can discover potential customers here and start following up.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button1",
+        "label": "Lead Pool",
+        "position": {
+          "left": "5.9%",
+          "top": "20.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "Step 1: Lead Claim & Follow-up",
+      "description": "Leads in the pool need to be assigned and followed up to create value. Let's start by claiming a lead."
+    },
+    {
+      "id": "step-1-1",
+      "title": "One-Click Lead Claim",
+      "description": "Found a high-value lead? No complex process needed - click \"Claim\" to lock it under your name, ready to start follow-up.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button3",
+        "label": "One-Click Lead Claim",
+        "position": {
+          "left": "18.4%",
+          "top": "24.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "Quickly Locate Your Leads",
+      "description": "After claiming, you can use powerful filtering features to quickly find target leads by name, status, or any other criteria in \"My Leads\".",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
+      "button": {
+        "id": "button4",
+        "label": "Quickly Locate Your Leads",
+        "position": {
+          "left": "18.3%",
+          "top": "15.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Step 2: Lead Details & Process Management",
+      "description": "Click to enter the lead details page, your command center for managing all information and activities related to this lead."
+    },
+    {
+      "id": "step-2-1",
+      "title": "Enter 360° Customer View",
+      "description": "The details page aggregates lead status, basic information, and core operations like status changes, return to pool, and the crucial \"Lead Conversion\" button.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
+      "button": {
+        "id": "button6",
+        "label": "Enter 360° Customer View",
+        "position": {
+          "left": "21.0%",
+          "top": "26.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "Real-time Follow-up Status Update",
+      "description": "As communication deepens, you can update lead status anytime, ensuring team information sync and accurate sales stage reflection.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button7",
+        "label": "Real-time Follow-up Status Update",
+        "position": {
+          "right": "25.8%",
+          "top": "10.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "Manage Tasks",
+      "description": "In the \"Tasks\" tab, create follow-up tasks for yourself to ensure every sales action is well-organized.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
+      "button": {
+        "id": "button8",
+        "label": "Manage Tasks",
+        "position": {
+          "left": "38.2%",
+          "top": "6.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "Schedule Meetings & Events",
+      "description": "In the \"Events\" tab, you can record and manage meetings, calls, and other schedules with customers, never missing important appointments.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
+      "button": {
+        "id": "button9",
+        "label": "Schedule Meetings & Events",
+        "position": {
+          "left": "43.9%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "Archive Communication Emails",
+      "description": "All important emails exchanged with this lead can be archived and viewed here, creating a complete communication record.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
+      "button": {
+        "id": "button10",
+        "label": "Archive Communication Emails",
+        "position": {
+          "left": "49.6%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "Trace Change History",
+      "description": "The \"History\" tab clearly records every information modification, making all operations traceable for review and management.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
+      "button": {
+        "id": "button11",
+        "label": "Trace Change History",
+        "position": {
+          "right": "40.6%",
+          "top": "6.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Step 3: Lead Conversion & Value Realization",
+      "description": "When a lead matures, the most crucial step is converting it into actual business opportunities. Let's begin!"
+    },
+    {
+      "id": "step-3-1",
+      "title": "Start Lead Conversion Process",
+      "description": "Return to the main details page and click the \"Lead Conversion\" button. The system will guide you to seamlessly create new customers, contacts, and opportunities.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button13",
+        "label": "Start Lead Conversion",
+        "position": {
+          "right": "16.8%",
+          "top": "11.3%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "Create Associated Opportunity",
+      "description": "During conversion, you can directly create an opportunity and automatically import key lead information without duplicate entry.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
+      "button": {
+        "id": "button14",
+        "label": "Create Associated Opportunity",
+        "position": {
+          "right": "33.7%",
+          "top": "33.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "Complete Opportunity Information",
+      "description": "Add estimated amount, expected close date, and other opportunity information, then click \"Save\" to lay the foundation for subsequent win analysis.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
+      "button": {
+        "id": "button15",
+        "label": "Complete Opportunity Information",
+        "position": {
+          "right": "48.1%",
+          "top": "28.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "Complete Conversion",
+      "description": "After confirming all information is correct, click \"OK\" and the system will automatically complete all entity creation and associations.",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
+      "button": {
+        "id": "button16",
+        "label": "Complete Conversion",
+        "position": {
+          "left": "34.0%",
+          "top": "37.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "Verify Conversion Results",
+      "description": "Now, let's go to the \"Opportunities\" page to see the new opportunity successfully converted from the lead - a seamless sales process connection!",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
+      "button": {
+        "id": "button17",
+        "label": "Go to Opportunities List, Conversion Successful!",
+        "position": {
+          "left": "28.4%",
+          "top": "29.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

@@ -1,0 +1,201 @@
+{
+  "title": "赢取商机：从跟进、报价到订单",
+  "subtitle": "体验精细化的商机管理，学习如何分析竞争、发出专业报价，并最终将意向客户成功转化为销售订单。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "商机跟进与管理",
+      "id": "opportunity-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "创建专业报价单",
+      "id": "opportunity-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "转化商机为订单",
+      "id": "opportunity-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "可视化销售",
+      "description": "所有商机在这里集中展示，您可以清晰地看到每个机会所处的阶段，并随时对关键信息进行快速编辑。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
+      "button": {
+        "id": "button1",
+        "label": "可视化商机管理",
+        "position": {
+          "left": "28.5%",
+          "top": "29.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "第一步：商机跟进与管理",
+      "description": "成功的销售始于对商机的精细化管理。让我们深入一个商机，看看如何跟进和维护。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "深入商机详情",
+      "description": "点击商机名称，进入专属详情页。这里汇集了所有与该商机相关的信息和工具。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
+      "button": {
+        "id": "button3",
+        "label": "深入商机详情",
+        "position": {
+          "left": "29.9%",
+          "top": "37.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "分析竞争格局",
+      "description": "知己知彼，百战不殆。在这里记录并分析竞争对手的优劣势，制定更有效的赢单策略。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
+      "button": {
+        "id": "button4",
+        "label": "分析竞争格局",
+        "position": {
+          "right": "38.7%",
+          "top": "19.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-3",
+      "title": "记录跟进动态",
+      "description": "每一次与客户的沟通、每一个进展，都可以在此记录为跟进评论，方便团队协作和后续复盘。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button5",
+        "label": "记录跟进动态",
+        "position": {
+          "left": "30.2%",
+          "top": "71.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "第二步：创建专业报价单",
+      "description": "当商机进入报价阶段，一份专业、准确的报价单是赢得客户信任的关键。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "发起报价流程",
+      "description": "在商机详情页，直接点击即可发起报价，系统会自动关联客户信息，开启报价单的创建。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button7",
+        "label": "发起报价流程",
+        "position": {
+          "right": "6.9%",
+          "top": "39.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "填写报价详情",
+      "description": "添加具体的产品、数量、价格和折扣信息，生成一份内容详尽、格式专业的报价单。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
+      "button": {
+        "id": "button8",
+        "label": "填写报价详情",
+        "position": {
+          "right": "44.7%",
+          "top": "35.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "第三步：转化商机为订单",
+      "description": "报价被客户接受后，就来到了临门一脚的时刻——将商机正式转化为销售订单！"
+    },
+    {
+      "id": "step-3-1",
+      "title": "将商机转化为订单",
+      "description": "报价审批通过后，商机详情页的\"新订单\"按钮将被激活。点击它，将所有信息带入新订单，完成关键转化。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button10",
+        "label": "将商机转化为订单",
+        "position": {
+          "left": "24.5%",
+          "top": "18.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "确认最终订单信息",
+      "description": "在这里最后确认合同编号、交付细节等订单信息，确保一切准确无误。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
+      "button": {
+        "id": "button11",
+        "label": "确认最终订单信息",
+        "position": {
+          "left": "34.7%",
+          "top": "93.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "成功赢单！",
+      "description": "点击提交，这份商机正式关闭并转化为销售收入。恭喜！",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
+      "button": {
+        "id": "button12",
+        "label": "成功赢单！",
+        "position": {
+          "left": "28.7%",
+          "top": "18.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "在订单中心查看成果",
+      "description": "流程完成后，自动跳转到订单列表。您可以看到刚刚创建的成功订单，准备开始交付流程。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
+      "button": {
+        "id": "button13",
+        "label": "在订单中心查看成果",
+        "position": {
+          "left": "47.3%",
+          "top": "24.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

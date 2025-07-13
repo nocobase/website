@@ -1,0 +1,201 @@
+{
+  "title": "オポチュニティ獲得：フォローアップ、見積りから注文まで",
+  "subtitle": "精密なオポチュニティ管理を体験し、競争分析、プロフェッショナルな見積書送付、そして見込み客の営業注文への成功転換を学びます。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "オポチュニティ追跡と管理",
+      "id": "opportunity-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "プロフェッショナル見積書の作成",
+      "id": "opportunity-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "オポチュニティの注文転換",
+      "id": "opportunity-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "ビジュアル営業",
+      "description": "すべてのオポチュニティがここに集中表示され、各機会の段階を明確に見て、重要な情報をいつでも迅速に編集できます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
+      "button": {
+        "id": "button1",
+        "label": "ビジュアルオポチュニティ管理",
+        "position": {
+          "left": "28.5%",
+          "top": "29.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "ステップ1：オポチュニティ追跡と管理",
+      "description": "成功する営業は、精密なオポチュニティ管理から始まります。オポチュニティに深入りして、追跡と維持の方法を見てみましょう。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "オポチュニティ詳細に深入り",
+      "description": "オポチュニティ名をクリックして、専用詳細ページに入ります。ここにはこのオポチュニティに関連するすべての情報とツールが集約されています。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
+      "button": {
+        "id": "button3",
+        "label": "オポチュニティ詳細に深入り",
+        "position": {
+          "left": "29.9%",
+          "top": "37.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "競争状況の分析",
+      "description": "敵を知り己を知れば百戦殆うからず。ここで競合他社の長所と短所を記録・分析し、より効果的な受注戦略を策定します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
+      "button": {
+        "id": "button4",
+        "label": "競争状況の分析",
+        "position": {
+          "right": "38.7%",
+          "top": "19.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-3",
+      "title": "フォローアップの進捗記録",
+      "description": "顧客との各コミュニケーション、各進展は、ここでフォローアップコメントとして記録でき、チーム連携と後続のレビューを促進します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button5",
+        "label": "フォローアップの進捗記録",
+        "position": {
+          "left": "30.2%",
+          "top": "71.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "ステップ2：プロフェッショナル見積書の作成",
+      "description": "オポチュニティが見積り段階に入るとき、プロフェッショナルで正確な見積書は顧客の信頼を獲得する鍵となります。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "見積プロセスの開始",
+      "description": "オポチュニティ詳細ページで、直接クリックして見積りを開始します。システムが自動的に顧客情報を関連付けて、見積書作成を開始します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button7",
+        "label": "見積プロセスの開始",
+        "position": {
+          "right": "6.9%",
+          "top": "39.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "見積詳細の記入",
+      "description": "具体的な製品、数量、価格、割引情報を追加し、内容詳細で形式プロフェッショナルな見積書を生成します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
+      "button": {
+        "id": "button8",
+        "label": "見積詳細の記入",
+        "position": {
+          "right": "44.7%",
+          "top": "35.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "ステップ3：オポチュニティの注文転換",
+      "description": "見積書が顧客に受け入れられた後、最後の一歩の時が来ました。オポチュニティを正式に営業注文に転換しましょう！"
+    },
+    {
+      "id": "step-3-1",
+      "title": "オポチュニティの注文転換",
+      "description": "見積承認後、オポチュニティ詳細ページの「新規注文」ボタンが有効になります。それをクリックして、すべての情報を新規注文に移行し、重要な転換を完了します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "button": {
+        "id": "button10",
+        "label": "オポチュニティの注文転換",
+        "position": {
+          "left": "24.5%",
+          "top": "18.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "最終注文情報の確認",
+      "description": "ここで契約番号、配送詳細などの注文情報を最終確認し、すべてが正確であることを確保します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
+      "button": {
+        "id": "button11",
+        "label": "最終注文情報の確認",
+        "position": {
+          "left": "34.7%",
+          "top": "93.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "成功！受注達成！",
+      "description": "提出をクリックすると、このオポチュニティは正式に成約し、営業収益に転換されます。おめでとうございます！",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
+      "button": {
+        "id": "button12",
+        "label": "成功！受注達成！",
+        "position": {
+          "left": "28.7%",
+          "top": "18.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "注文センターで成果を確認",
+      "description": "プロセス完了後、注文一覧に自動的にジャンプします。作成されたばかりの成功注文を確認でき、配送プロセスを開始する準備が整います。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
+      "button": {
+        "id": "button13",
+        "label": "注文センターで成果を確認",
+        "position": {
+          "left": "47.3%",
+          "top": "24.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

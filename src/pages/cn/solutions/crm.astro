@@ -2,711 +2,45 @@
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
 
-// 仪表板交互演示数据
-const dashboardDemoGuides = {
-  "title": "玩转仪表板：动态图表与筛选",
-  "subtitle": "只需三步，即可轻松体验销售漏斗、业绩排行等动态图表，并掌握强大的数据筛选功能。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "洞察销售线索",
-      "id": "dashboard-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "创建动态筛选",
-      "id": "dashboard-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "自定义图表",
-      "id": "dashboard-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "开启数据探索之旅",
-      "description": "欢迎来到仪表板！这里是您的数据驾驶舱，聚合了所有关键业务信息，让您对整体状况一目了然。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
-      "button": {
-        "id": "button1",
-        "label": "开启数据探索之旅",
-        "position": {
-          "right": "49.3%",
-          "top": "41.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "第一步：洞察销售线索",
-      "description": "首先，让我们深入\"线索专题\"仪表板，看看如何通过可视化图表快速获取业务洞察。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "交互式查看数据",
-      "description": "图表不是静态的。将鼠标悬停在销售漏斗的任意部分，即可交互式地查看该阶段的详细数据。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
-      "button": {
-        "id": "button3",
-        "label": "交互式查看数据",
-        "position": {
-          "left": "23.8%",
-          "top": "29.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "第二步：创建动态筛选",
-      "description": "为了更精确地分析，接下来我们为仪表板添加一个筛选器，让数据查询更加灵活。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "添加筛选区块",
-      "description": "在图表下方，可以轻松添加一个筛选区块，作为数据看板的控制器。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
-      "button": {
-        "id": "button5",
-        "label": "添加筛选区块",
-        "position": {
-          "left": "18.5%",
-          "top": "90.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "配置过滤字段",
-      "description": "首先，我们需要定义筛选的依据。例如，选择\"负责人\"字段，以便按销售人员过滤数据。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
-      "button": {
-        "id": "button6",
-        "label": "配置过滤字段",
-        "position": {
-          "left": "18.0%",
-          "top": "25.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "关联筛选操作",
-      "description": "然后，将这个筛选器与页面上的图表进行关联，让筛选操作能够真正控制图表显示。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
-      "button": {
-        "id": "button7",
-        "label": "关联筛选操作",
-        "position": {
-          "right": "8.4%",
-          "top": "30.2%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "应用筛选查看结果",
-      "description": "现在，试着筛选一位负责人，看板上的所有图表都会根据您的选择立刻更新。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button8",
-        "label": "应用筛选查看结果",
-        "position": {
-          "right": "19.4%",
-          "top": "29.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "第三步：自定义图表",
-      "description": "如果预设的图表不满足需求，您可以随时对图表进行个性化配置。"
-    },
-    {
-      "id": "step-3-1",
-      "title": "进入\"账户洞察\"页面",
-      "description": "我们切换到\"账户洞察\"页面，这里的图表可以更自由地进行配置。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button10",
-        "label": "进入账户洞察页面",
-        "position": {
-          "left": "6.0%",
-          "top": "35.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "打开图表配置",
-      "description": "在配置模式下，每个图表右上角都有一个配置按钮，点击它，开启您的自定义之旅。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
-      "button": {
-        "id": "button11",
-        "label": "打开图表配置",
-        "position": {
-          "right": "3.3%",
-          "top": "17.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "切换图表类型",
-      "description": "您可以从丰富的图表库中选择最适合的展现形式，例如，我们将它从饼图改为柱状图。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
-      "button": {
-        "id": "button12",
-        "label": "切换图表类型",
-        "position": {
-          "left": "39.5%",
-          "top": "41.7%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "description": "为了更深入地分析，我们可以为图表增加一个维度，比如按\"客户级别\"进行颜色分组。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button13",
-        "label": "按照类型分组，颜色随类型修改 ",
-        "position": {
-          "left": "36.8%",
-          "top": "61.0%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      },
-      "title": "按照颜色分组"
-    },
-    {
-      "id": "step-3-5",
-      "title": "保存图表设置",
-      "description": "对配置感到满意后，点击\"确定\"保存更改。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button14",
-        "label": "保存图表设置",
-        "position": {
-          "right": "5.9%",
-          "top": "88.5%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-6",
-      "title": "查看焕然一新的图表",
-      "description": "看！图表已按您的要求成功更新，现在可以从新的维度分析客户数据了。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
-      "button": {
-        "id": "button15",
-        "label": "图表成功更新！",
-        "position": {
-          "right": "22.6%",
-          "top": "35.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// 导入交互演示数据
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-cn.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-cn.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-cn.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-cn.json";
 
-// 线索转化交互演示数据
-const leadConversionDemoGuides = {
-  "title": "从线索到客户：体验高效转化流程",
-  "subtitle": "学习如何从线索池中认领客户，进行360°全方位跟进，并最终将其无缝转化为商机、联系人。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "线索认领与跟进",
-      "id": "lead-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "线索详情与过程管理",
-      "id": "lead-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "线索转化与价值实现",
-      "id": "lead-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "线索公海池",
-      "description": "这里是所有待分配的线索。销售团队的成员可以在此发现潜在客户，并开启跟进。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button1",
-        "label": "线索公海池",
-        "position": {
-          "left": "5.9%",
-          "top": "20.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "第一步：线索认领与跟进",
-      "description": "公海中的线索需要被分配和跟进，才能发挥价值。让我们从认领一条线索开始。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "一键认领线索",
-      "description": "发现高价值线索？无需复杂流程，点击\"认领\"即可将其锁定至您的名下，准备开始跟进。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button3",
-        "label": "一键认领线索",
-        "position": {
-          "left": "18.4%",
-          "top": "24.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "快速定位您的线索",
-      "description": "认领后，您可以利用强大的筛选功能，通过名称、状态等任意条件，在\"我的线索\"中快速找到目标。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
-      "button": {
-        "id": "button4",
-        "label": "快速定位您的线索",
-        "position": {
-          "left": "18.3%",
-          "top": "15.7%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "第二步：线索详情与过程管理",
-      "description": "点击进入线索详情页，这里是您的作战指挥室，管理与该线索相关的所有信息和活动。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "进入360°客户视图",
-      "description": "详情页聚合了线索状态、基本信息以及核心操作，如状态变更、放回公海和关键的\"线索转化\"按钮。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
-      "button": {
-        "id": "button6",
-        "label": "进入360°客户视图",
-        "position": {
-          "left": "21.0%",
-          "top": "26.8%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "实时更新跟进状态",
-      "description": "随着沟通的深入，您可以随时更新线索状态，确保团队信息同步，准确反映销售阶段。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button7",
-        "label": "实时更新跟进状态",
-        "position": {
-          "right": "25.8%",
-          "top": "10.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "管理待办事项",
-      "description": "在\"待办事项\"标签页中，为自己创建跟进任务，确保每一个销售动作都井井有条。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
-      "button": {
-        "id": "button8",
-        "label": "管理待办事项",
-        "position": {
-          "left": "38.2%",
-          "top": "6.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "安排会议与日程",
-      "description": "在\"事件\"标签页中，您可以记录并管理与客户的会议、电话等日程，不错过任何重要约定。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
-      "button": {
-        "id": "button9",
-        "label": "安排会议与日程",
-        "position": {
-          "left": "43.9%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-5",
-      "title": "沉淀沟通邮件",
-      "description": "所有与该线索往来的重要邮件都可以在此归档和查看，形成完整的沟通记录。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
-      "button": {
-        "id": "button10",
-        "label": "沉淀沟通邮件",
-        "position": {
-          "left": "49.6%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-6",
-      "title": "追溯变更历史",
-      "description": "\"历史记录\"标签页清晰地记录了每一次信息修改，让所有操作都有据可查，便于复盘和管理。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
-      "button": {
-        "id": "button11",
-        "label": "追溯变更历史",
-        "position": {
-          "right": "40.6%",
-          "top": "6.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "第三步：线索转化与价值实现",
-      "description": "当线索成熟时，最关键的一步就是将其转化为实际的业务机会。让我们开始吧！"
-    },
-    {
-      "id": "step-3-1",
-      "title": "启动线索转化流程",
-      "description": "回到主详情页，点击\"线索转化\"按钮，系统将引导您无缝创建新的客户、联系人和商机。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button13",
-        "label": "启动线索转化",
-        "position": {
-          "right": "16.8%",
-          "top": "11.3%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "新建关联商机",
-      "description": "在转化过程中，您可以直接新建一个商机，并将线索的关键信息自动带入，无需重复录入。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
-      "button": {
-        "id": "button14",
-        "label": "新建关联商机",
-        "position": {
-          "right": "33.7%",
-          "top": "33.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "完善商机信息",
-      "description": "补充预估金额、预期结单日期等商机信息，然后点击\"保存\"，为后续的赢单分析打下基础。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
-      "button": {
-        "id": "button15",
-        "label": "完善商机信息",
-        "position": {
-          "right": "48.1%",
-          "top": "28.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "完成转化",
-      "description": "确认所有信息无误后，点击\"确定\"，系统将自动完成所有实体的创建和关联。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
-      "button": {
-        "id": "button16",
-        "label": "完成转化",
-        "position": {
-          "left": "34.0%",
-          "top": "37.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-5",
-      "title": "验证转化结果",
-      "description": "现在，我们来到\"商机\"页面，可以看到由线索成功转化的新商机，整个销售流程无缝衔接！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
-      "button": {
-        "id": "button17",
-        "label": "来到商机列表，转化成功！",
-        "position": {
-          "left": "28.4%",
-          "top": "29.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// 获取插件数据
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
 
-// 商机转化交互演示数据
-const opportunityDemoGuides = {
-  "title": "赢取商机：从跟进、报价到订单",
-  "subtitle": "体验精细化的商机管理，学习如何分析竞争、发出专业报价，并最终将意向客户成功转化为销售订单。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "商机跟进与管理",
-      "id": "opportunity-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "创建专业报价单",
-      "id": "opportunity-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "转化商机为订单",
-      "id": "opportunity-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "可视化销售",
-      "description": "所有商机在这里集中展示，您可以清晰地看到每个机会所处的阶段，并随时对关键信息进行快速编辑。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
-      "button": {
-        "id": "button1",
-        "label": "可视化商机管理",
-        "position": {
-          "left": "28.5%",
-          "top": "29.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "第一步：商机跟进与管理",
-      "description": "成功的销售始于对商机的精细化管理。让我们深入一个商机，看看如何跟进和维护。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "深入商机详情",
-      "description": "点击商机名称，进入专属详情页。这里汇集了所有与该商机相关的信息和工具。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
-      "button": {
-        "id": "button3",
-        "label": "深入商机详情",
-        "position": {
-          "left": "29.9%",
-          "top": "37.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "分析竞争格局",
-      "description": "知己知彼，百战不殆。在这里记录并分析竞争对手的优劣势，制定更有效的赢单策略。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
-      "button": {
-        "id": "button4",
-        "label": "分析竞争格局",
-        "position": {
-          "right": "38.7%",
-          "top": "19.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-3",
-      "title": "记录跟进动态",
-      "description": "每一次与客户的沟通、每一个进展，都可以在此记录为跟进评论，方便团队协作和后续复盘。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button5",
-        "label": "记录跟进动态",
-        "position": {
-          "left": "30.2%",
-          "top": "71.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "第二步：创建专业报价单",
-      "description": "当商机进入报价阶段，一份专业、准确的报价单是赢得客户信任的关键。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "发起报价流程",
-      "description": "在商机详情页，直接点击即可发起报价，系统会自动关联客户信息，开启报价单的创建。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button7",
-        "label": "发起报价流程",
-        "position": {
-          "right": "6.9%",
-          "top": "39.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "填写报价详情",
-      "description": "添加具体的产品、数量、价格和折扣信息，生成一份内容详尽、格式专业的报价单。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
-      "button": {
-        "id": "button8",
-        "label": "填写报价详情",
-        "position": {
-          "right": "44.7%",
-          "top": "35.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "第三步：转化商机为订单",
-      "description": "报价被客户接受后，就来到了临门一脚的时刻——将商机正式转化为销售订单！"
-    },
-    {
-      "id": "step-3-1",
-      "title": "将商机转化为订单",
-      "description": "报价审批通过后，商机详情页的\"新订单\"按钮将被激活。点击它，将所有信息带入新订单，完成关键转化。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button10",
-        "label": "将商机转化为订单",
-        "position": {
-          "left": "24.5%",
-          "top": "18.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "确认最终订单信息",
-      "description": "在这里最后确认合同编号、交付细节等订单信息，确保一切准确无误。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
-      "button": {
-        "id": "button11",
-        "label": "确认最终订单信息",
-        "position": {
-          "left": "34.7%",
-          "top": "93.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "成功赢单！",
-      "description": "点击提交，这份商机正式关闭并转化为销售收入。恭喜！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
-      "button": {
-        "id": "button12",
-        "label": "成功赢单！",
-        "position": {
-          "left": "28.7%",
-          "top": "18.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "在订单中心查看成果",
-      "description": "流程完成后，自动跳转到订单列表。您可以看到刚刚创建的成功订单，准备开始交付流程。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
-      "button": {
-        "id": "button13",
-        "label": "在订单中心查看成果",
-        "position": {
-          "left": "47.3%",
-          "top": "24.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// 定义CRM中使用的插件名称映射
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print"
+];
+
+// 根据插件名称匹配插件数据
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// 获取CRM相关插件
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// 调试信息
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
 ---
 
 <BaseCN
@@ -873,7 +207,7 @@ const opportunityDemoGuides = {
                 <!-- 按钮 -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-play me-2"></i>体验演示
+                    <i class="uil uil-play me-2"></i>互动演示
                   </button>
                 </div>
               </div>
@@ -892,7 +226,7 @@ const opportunityDemoGuides = {
                 <!-- 按钮 -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-user-plus me-2"></i>体验转化
+                    <i class="uil uil-user-plus me-2"></i>互动演示
                   </button>
                 </div>
               </div>
@@ -911,7 +245,7 @@ const opportunityDemoGuides = {
                 <!-- 按钮 -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-money-bill me-2"></i>体验转化
+                    <i class="uil uil-money-bill me-2"></i>互动演示
                   </button>
                 </div>
               </div>
@@ -930,9 +264,8 @@ const opportunityDemoGuides = {
         <div class="col-12 text-center">
 
         <div class="mt-4" id="crm-demo-wrap">
-          先占个地方（亲自试一试，3 步扩展一个 CRM 功能）
-          <!-- 使用仪表板交互演示 -->
-          <InteractiveDemo guides={dashboardDemoGuides}  />
+          <!-- 使用扩展功能交互演示 -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
         </div><!--end crm-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
@@ -977,7 +310,7 @@ const opportunityDemoGuides = {
                 <p class="text-muted text-center">学习如何创建客户、联系人、商机等基础数据模型和关系</p>
               </div>
               <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
               </div>
             </div>
           </div>
@@ -994,7 +327,7 @@ const opportunityDemoGuides = {
                 <p class="text-muted text-center">构建销售数据分析和可视化仪表板，实现业绩监控</p>
               </div>
               <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
               </div>
             </div>
           </div>
@@ -1011,7 +344,7 @@ const opportunityDemoGuides = {
                 <p class="text-muted text-center">设置工作流实现销售流程自动化和业务规则</p>
               </div>
               <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">查看教程</a>
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
               </div>
             </div>
           </div>
@@ -1034,150 +367,48 @@ const opportunityDemoGuides = {
       </div><!--end row-->
 
       <div class="row pb-4">
-        <!-- ECharts 插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="数据可视化：ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">数据可视化：ECharts</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">专业的图表组件，支持漏斗图、柱状图、饼图等多种可视化图表配置，让 CRM 数据分析更直观
-                   <a href="https://docs-cn.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
-                  </h6>
+        <!-- 动态生成插件卡片 -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_cn || plugin.name;
+          const displayDescription = plugin.description_cn || plugin.description;
+          const docsUrl = plugin.docs_cn || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">详情</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                          <a href="/cn/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_1_year_cn || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                          <a class="text-muted" href="/cn/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_cny || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- 评论插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="数据表：评论" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">数据表：评论</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">为客户、联系人、工单等数据表添加评论交互功能，团队协作更便捷
-                   <a href="https://docs-cn.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥600</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥1,200</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 邮件管理插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="邮件管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">邮件管理</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">高频使用的邮件功能，支持全局邮件发送和管理，提升客户沟通效率
-                   <a href="https://docs-cn.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 工作流审批插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="工作流：审批事件" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">工作流：审批事件</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">为报价单、订单等关键业务流程添加审批管理，确保业务规范性
-                   <a href="https://docs-cn.nocobase.com/plugins/workflow" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥4,800</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 导入导出插件 -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="操作：导入导出数据 Pro" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">操作：导入导出数据 Pro</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">支持所有表格的批量导入导出操作，数据迁移和备份更便捷
-                   <a href="https://docs-cn.nocobase.com/plugins/action-import" target="_blank" style="font-size: 14px;">详情</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
-                    <a href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥1,200</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
-                    <a class="text-muted" href="/cn/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">￥2,400</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          );
+        })}
 
         <!-- 占位卡片，保持布局整齐 -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
@@ -1301,7 +532,7 @@ const opportunityDemoGuides = {
                   <p class="text-muted mb-3">根据行业特点添加专属的客户信息字段，设置数据关系和访问权限</p>
                 </div>
                 <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
+                  <button class="btn btn-sm btn-outline-secondary">即将推出</button>
                 </div>
               </div>
             </div>
@@ -1320,7 +551,7 @@ const opportunityDemoGuides = {
                   <p class="text-muted mb-3">配置销售流程、审批流程和自动化任务</p>
                 </div>
                 <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
+                  <button class="btn btn-sm btn-outline-secondary">即将推出</button>
                 </div>
               </div>
             </div>
@@ -1339,7 +570,7 @@ const opportunityDemoGuides = {
                   <p class="text-muted mb-3">与邮件系统、财务软件、营销工具等集成</p>
                 </div>
                 <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
+                  <button class="btn btn-sm btn-outline-secondary">即将推出</button>
                 </div>
               </div>
             </div>
@@ -1358,7 +589,7 @@ const opportunityDemoGuides = {
                   <p class="text-muted mb-3">确保CRM系统在移动设备上的完美体验</p>
                 </div>
                 <div>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary">查看教程</a>
+                  <button class="btn btn-sm btn-outline-secondary">即将推出</button>
                 </div>
               </div>
             </div>

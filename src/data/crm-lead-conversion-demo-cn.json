@@ -1,0 +1,265 @@
+{
+  "title": "从线索到客户：体验高效转化流程",
+  "subtitle": "学习如何从线索池中认领客户，进行360°全方位跟进，并最终将其无缝转化为商机、联系人。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "线索认领与跟进",
+      "id": "lead-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "线索详情与过程管理",
+      "id": "lead-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "线索转化与价值实现",
+      "id": "lead-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "线索公海池",
+      "description": "这里是所有待分配的线索。销售团队的成员可以在此发现潜在客户，并开启跟进。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button1",
+        "label": "线索公海池",
+        "position": {
+          "left": "5.9%",
+          "top": "20.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "第一步：线索认领与跟进",
+      "description": "公海中的线索需要被分配和跟进，才能发挥价值。让我们从认领一条线索开始。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "一键认领线索",
+      "description": "发现高价值线索？无需复杂流程，点击\"认领\"即可将其锁定至您的名下，准备开始跟进。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button3",
+        "label": "一键认领线索",
+        "position": {
+          "left": "18.4%",
+          "top": "24.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "快速定位您的线索",
+      "description": "认领后，您可以利用强大的筛选功能，通过名称、状态等任意条件，在\"我的线索\"中快速找到目标。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
+      "button": {
+        "id": "button4",
+        "label": "快速定位您的线索",
+        "position": {
+          "left": "18.3%",
+          "top": "15.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "第二步：线索详情与过程管理",
+      "description": "点击进入线索详情页，这里是您的作战指挥室，管理与该线索相关的所有信息和活动。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "进入360°客户视图",
+      "description": "详情页聚合了线索状态、基本信息以及核心操作，如状态变更、放回公海和关键的\"线索转化\"按钮。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
+      "button": {
+        "id": "button6",
+        "label": "进入360°客户视图",
+        "position": {
+          "left": "21.0%",
+          "top": "26.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "实时更新跟进状态",
+      "description": "随着沟通的深入，您可以随时更新线索状态，确保团队信息同步，准确反映销售阶段。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button7",
+        "label": "实时更新跟进状态",
+        "position": {
+          "right": "25.8%",
+          "top": "10.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "管理待办事项",
+      "description": "在\"待办事项\"标签页中，为自己创建跟进任务，确保每一个销售动作都井井有条。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
+      "button": {
+        "id": "button8",
+        "label": "管理待办事项",
+        "position": {
+          "left": "38.2%",
+          "top": "6.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "安排会议与日程",
+      "description": "在\"事件\"标签页中，您可以记录并管理与客户的会议、电话等日程，不错过任何重要约定。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
+      "button": {
+        "id": "button9",
+        "label": "安排会议与日程",
+        "position": {
+          "left": "43.9%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "沉淀沟通邮件",
+      "description": "所有与该线索往来的重要邮件都可以在此归档和查看，形成完整的沟通记录。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
+      "button": {
+        "id": "button10",
+        "label": "沉淀沟通邮件",
+        "position": {
+          "left": "49.6%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "追溯变更历史",
+      "description": "\"历史记录\"标签页清晰地记录了每一次信息修改，让所有操作都有据可查，便于复盘和管理。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
+      "button": {
+        "id": "button11",
+        "label": "追溯变更历史",
+        "position": {
+          "right": "40.6%",
+          "top": "6.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "第三步：线索转化与价值实现",
+      "description": "当线索成熟时，最关键的一步就是将其转化为实际的业务机会。让我们开始吧！"
+    },
+    {
+      "id": "step-3-1",
+      "title": "启动线索转化流程",
+      "description": "回到主详情页，点击\"线索转化\"按钮，系统将引导您无缝创建新的客户、联系人和商机。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button13",
+        "label": "启动线索转化",
+        "position": {
+          "right": "16.8%",
+          "top": "11.3%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "新建关联商机",
+      "description": "在转化过程中，您可以直接新建一个商机，并将线索的关键信息自动带入，无需重复录入。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
+      "button": {
+        "id": "button14",
+        "label": "新建关联商机",
+        "position": {
+          "right": "33.7%",
+          "top": "33.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "完善商机信息",
+      "description": "补充预估金额、预期结单日期等商机信息，然后点击\"保存\"，为后续的赢单分析打下基础。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
+      "button": {
+        "id": "button15",
+        "label": "完善商机信息",
+        "position": {
+          "right": "48.1%",
+          "top": "28.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "完成转化",
+      "description": "确认所有信息无误后，点击\"确定\"，系统将自动完成所有实体的创建和关联。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
+      "button": {
+        "id": "button16",
+        "label": "完成转化",
+        "position": {
+          "left": "34.0%",
+          "top": "37.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "验证转化结果",
+      "description": "现在，我们来到\"商机\"页面，可以看到由线索成功转化的新商机，整个销售流程无缝衔接！",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
+      "button": {
+        "id": "button17",
+        "label": "来到商机列表，转化成功！",
+        "position": {
+          "left": "28.4%",
+          "top": "29.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

@@ -2,711 +2,47 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
 
-// ダッシュボードインタラクティブデモデータ
-const dashboardDemoGuides = {
-  "title": "ダッシュボードをマスター：動的チャートとフィルタリング",
-  "subtitle": "わずか3ステップで、営業ファネル、業績ランキングなどの動的チャートを体験し、強力なデータフィルタリング機能をマスターしましょう。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "リード分析",
-      "id": "dashboard-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "動的フィルターの作成",
-      "id": "dashboard-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "チャートのカスタマイズ",
-      "id": "dashboard-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "データ探索の開始",
-      "description": "ダッシュボードへようこそ！ここはあなたのデータコックピットで、すべての重要なビジネス情報を集約し、明確な概要を提供します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
-      "button": {
-        "id": "button1",
-        "label": "データ探索を開始",
-        "position": {
-          "right": "49.3%",
-          "top": "41.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "ステップ1：リード分析",
-      "description": "まず、「リード分析」ダッシュボードに深く入り、視覚的なチャートを通じてビジネス洞察を迅速に得る方法を見てみましょう。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "インタラクティブデータビュー",
-      "description": "チャートは静的ではありません。営業ファネルの任意の部分にマウスを重ねると、そのステージの詳細データをインタラクティブに表示できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
-      "button": {
-        "id": "button3",
-        "label": "インタラクティブデータビュー",
-        "position": {
-          "left": "23.8%",
-          "top": "29.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "ステップ2：動的フィルターの作成",
-      "description": "より精密な分析のために、ダッシュボードにフィルターを追加して、データクエリをより柔軟にしましょう。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "フィルターブロックの追加",
-      "description": "チャートの下に、データダッシュボードのコントローラーとしてフィルターブロックを簡単に追加できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
-      "button": {
-        "id": "button5",
-        "label": "フィルターブロックの追加",
-        "position": {
-          "left": "18.5%",
-          "top": "90.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "フィルターフィールドの設定",
-      "description": "まず、フィルタリング基準を定義する必要があります。例えば、「担当者」フィールドを選択して、営業担当者でデータをフィルタリングします。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
-      "button": {
-        "id": "button6",
-        "label": "フィルターフィールドの設定",
-        "position": {
-          "left": "18.0%",
-          "top": "25.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "フィルター操作のリンク",
-      "description": "次に、このフィルターをページ上のチャートと関連付けて、フィルター操作が実際にチャート表示を制御できるようにします。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
-      "button": {
-        "id": "button7",
-        "label": "フィルター操作のリンク",
-        "position": {
-          "right": "8.4%",
-          "top": "30.2%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "フィルターを適用して結果を表示",
-      "description": "今度は、1人の担当者でフィルタリングしてみてください。ダッシュボード上のすべてのチャートが選択に基づいてすぐに更新されます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button8",
-        "label": "フィルターを適用して結果を表示",
-        "position": {
-          "right": "19.4%",
-          "top": "29.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "ステップ3：チャートのカスタマイズ",
-      "description": "プリセットのチャートがニーズを満たさない場合、いつでもカスタマイズできます。"
-    },
-    {
-      "id": "step-3-1",
-      "title": "「アカウント分析」へ移動",
-      "description": "「アカウント分析」ページに切り替えましょう。ここではチャートをより自由に設定できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button10",
-        "label": "アカウント分析へ移動",
-        "position": {
-          "left": "6.0%",
-          "top": "35.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "チャート設定を開く",
-      "description": "設定モードでは、各チャートの右上角に設定ボタンがあります。それをクリックして、カスタマイズの旅を始めましょう。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
-      "button": {
-        "id": "button11",
-        "label": "チャート設定を開く",
-        "position": {
-          "right": "3.3%",
-          "top": "17.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "チャートタイプの変更",
-      "description": "豊富なチャートライブラリから最適な表示形式を選択できます。例えば、円グラフから棒グラフに変更してみましょう。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
-      "button": {
-        "id": "button12",
-        "label": "チャートタイプの変更",
-        "position": {
-          "left": "39.5%",
-          "top": "41.7%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "色によるグループ化",
-      "description": "より深い分析のために、チャートに次元を追加できます。例えば、「顧客レベル」による色分けグループ化を行います。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button13",
-        "label": "タイプでグループ化、色もタイプで変更",
-        "position": {
-          "left": "36.8%",
-          "top": "61.0%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-5",
-      "title": "チャート設定の保存",
-      "description": "設定に満足したら、「OK」をクリックして変更を保存します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button14",
-        "label": "チャート設定の保存",
-        "position": {
-          "right": "5.9%",
-          "top": "88.5%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-6",
-      "title": "更新されたチャートを表示",
-      "description": "見てください！チャートは要求に応じて正常に更新され、新しい次元から顧客データを分析できるようになりました。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
-      "button": {
-        "id": "button15",
-        "label": "チャートが正常に更新されました！",
-        "position": {
-          "right": "22.6%",
-          "top": "35.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// インタラクティブデモデータをインポート
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-ja.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-ja.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-ja.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-ja.json";
 
-// リードコンバージョンインタラクティブデモデータ
-const leadConversionDemoGuides = {
-  "title": "リードから顧客へ：効率的なコンバージョンを体験",
-  "subtitle": "プールからリードを獲得し、360°包括的なフォローアップを行い、最終的に商談や連絡先にシームレスに変換する方法を学びましょう。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "リード獲得とフォローアップ",
-      "id": "lead-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "リード詳細とプロセス管理",
-      "id": "lead-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "リードコンバージョンと価値実現",
-      "id": "lead-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "リードプール",
-      "description": "ここはすべての未割り当てリードが存在する場所です。営業チームのメンバーは、ここで見込み客を発見し、フォローアップを開始できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button1",
-        "label": "リードプール",
-        "position": {
-          "left": "5.9%",
-          "top": "20.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "ステップ1：リード獲得とフォローアップ",
-      "description": "プール内のリードは価値を生み出すために割り当てられ、フォローアップされる必要があります。リードを獲得することから始めましょう。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "ワンクリックリード獲得",
-      "description": "高価値のリードを発見しましたか？複雑なプロセスは不要です。「獲得」をクリックするだけで自分に割り当て、フォローアップを開始できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button3",
-        "label": "ワンクリックリード獲得",
-        "position": {
-          "left": "18.4%",
-          "top": "24.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "リードを素早く特定",
-      "description": "獲得後、強力なフィルタリング機能を使用して、名前、ステータス、その他の任意の基準で「マイリード」内のターゲットを素早く見つけることができます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
-      "button": {
-        "id": "button4",
-        "label": "リードを素早く特定",
-        "position": {
-          "left": "18.3%",
-          "top": "15.7%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "ステップ2：リード詳細とプロセス管理",
-      "description": "クリックしてリード詳細ページに入ります。ここはこのリードに関連するすべての情報と活動を管理するコマンドセンターです。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "360°顧客ビューに入る",
-      "description": "詳細ページは、リードステータス、基本情報、およびステータス変更、プールへの返却、重要な「リードコンバージョン」ボタンなどの主要操作を集約します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
-      "button": {
-        "id": "button6",
-        "label": "360°顧客ビューに入る",
-        "position": {
-          "left": "21.0%",
-          "top": "26.8%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "フォローアップステータスをリアルタイムで更新",
-      "description": "コミュニケーションが深まるにつれて、いつでもリードステータスを更新して、チーム情報の同期を確保し、営業段階を正確に反映できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button7",
-        "label": "フォローアップステータスの更新",
-        "position": {
-          "right": "25.8%",
-          "top": "10.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "ToDoアイテムの管理",
-      "description": "「ToDo」タブで、自分用のフォローアップタスクを作成して、すべての営業活動が整理されていることを確認します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
-      "button": {
-        "id": "button8",
-        "label": "ToDoアイテムの管理",
-        "position": {
-          "left": "38.2%",
-          "top": "6.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "会議とイベントのスケジュール",
-      "description": "「イベント」タブでは、顧客との会議、通話、その他の予定を記録・管理でき、重要な約束を見逃すことがありません。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
-      "button": {
-        "id": "button9",
-        "label": "会議とイベントのスケジュール",
-        "position": {
-          "left": "43.9%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-5",
-      "title": "コミュニケーションメールのアーカイブ",
-      "description": "このリードとやり取りしたすべての重要なメールをここでアーカイブ・表示でき、完全なコミュニケーション記録を形成します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
-      "button": {
-        "id": "button10",
-        "label": "コミュニケーションメールのアーカイブ",
-        "position": {
-          "left": "49.6%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-6",
-      "title": "変更履歴の追跡",
-      "description": "「履歴」タブは、すべての情報変更を明確に記録し、すべての操作を追跡可能にして、レビューと管理を容易にします。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
-      "button": {
-        "id": "button11",
-        "label": "変更履歴の追跡",
-        "position": {
-          "right": "40.6%",
-          "top": "6.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "ステップ3：リードコンバージョンと価値実現",
-      "description": "リードが成熟したとき、最も重要なステップは、それを実際のビジネス機会に変換することです。始めましょう！"
-    },
-    {
-      "id": "step-3-1",
-      "title": "リードコンバージョンプロセスの開始",
-      "description": "メインの詳細ページに戻り、「リードコンバージョン」ボタンをクリックします。システムが新しい顧客、連絡先、商談をシームレスに作成するようにガイドします。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button13",
-        "label": "リードコンバージョンの開始",
-        "position": {
-          "right": "16.8%",
-          "top": "11.3%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "関連商談の作成",
-      "description": "コンバージョンプロセス中に、直接商談を作成し、重要なリード情報を自動的にインポートして、重複入力を避けることができます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
-      "button": {
-        "id": "button14",
-        "label": "関連商談の作成",
-        "position": {
-          "right": "33.7%",
-          "top": "33.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "商談情報の完成",
-      "description": "予想金額、予想クローズ日、その他の商談情報を追加し、「保存」をクリックして、後続の勝利分析の基盤を築きます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
-      "button": {
-        "id": "button15",
-        "label": "商談情報の完成",
-        "position": {
-          "right": "48.1%",
-          "top": "28.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "コンバージョンの完了",
-      "description": "すべての情報が正しいことを確認した後、「OK」をクリックすると、システムがすべてのエンティティの作成と関連付けを自動的に完了します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
-      "button": {
-        "id": "button16",
-        "label": "コンバージョンの完了",
-        "position": {
-          "left": "34.0%",
-          "top": "37.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-5",
-      "title": "コンバージョン結果の確認",
-      "description": "今度は「商談」ページに移動しましょう。リードから正常にコンバージョンされた新しい商談を確認できます。営業プロセス全体がシームレスに接続されています！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
-      "button": {
-        "id": "button17",
-        "label": "商談を表示 - コンバージョン成功！",
-        "position": {
-          "left": "28.4%",
-          "top": "29.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// プラグインデータを取得
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
 
-// 商談コンバージョンインタラクティブデモデータ
-const opportunityDemoGuides = {
-  "title": "商談の獲得：フォローアップ、見積もりから受注まで",
-  "subtitle": "精密な商談管理を体験し、競合分析、プロフェッショナルな見積もり送付、最終的な見込み客の成功受注への変換方法を学びましょう。",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "商談フォローアップと管理",
-      "id": "opportunity-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "プロフェッショナル見積書の作成",
-      "id": "opportunity-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "商談から受注への変換",
-      "id": "opportunity-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "ビジュアル営業管理",
-      "description": "すべての商談がここに一元表示されます。各機会の段階を明確に見ることができ、いつでも重要な情報を素早く編集できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
-      "button": {
-        "id": "button1",
-        "label": "ビジュアル商談管理",
-        "position": {
-          "left": "28.5%",
-          "top": "29.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "ステップ1：商談フォローアップと管理",
-      "description": "成功する営業は、精密な商談管理から始まります。商談に深く入り、フォローアップと維持の方法を見てみましょう。"
-    },
-    {
-      "id": "step-1-1",
-      "title": "商談詳細に深く入る",
-      "description": "商談名をクリックして、専用の詳細ページに入ります。ここでは、この商談に関連するすべての情報とツールが集約されています。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
-      "button": {
-        "id": "button3",
-        "label": "商談詳細に深く入る",
-        "position": {
-          "left": "29.9%",
-          "top": "37.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "競合状況の分析",
-      "description": "己を知り敵を知れば百戦危うからず。ここで競合他社の強みと弱みを記録・分析し、より効果的な勝利戦略を立てます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
-      "button": {
-        "id": "button4",
-        "label": "競合状況の分析",
-        "position": {
-          "right": "38.7%",
-          "top": "19.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-3",
-      "title": "フォローアップ活動の記録",
-      "description": "顧客とのコミュニケーションや進展をすべてフォローアップコメントとして記録し、チーム協力と将来のレビューに役立てます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button5",
-        "label": "フォローアップ活動の記録",
-        "position": {
-          "left": "30.2%",
-          "top": "71.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "ステップ2：プロフェッショナル見積書の作成",
-      "description": "商談が見積段階に入ったとき、プロフェッショナルで正確な見積書が顧客の信頼を勝ち取る鍵となります。"
-    },
-    {
-      "id": "step-2-1",
-      "title": "見積プロセスの開始",
-      "description": "商談詳細ページで、直接クリックして見積を開始します。システムが自動的に顧客情報を関連付け、見積書の作成を開始します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button7",
-        "label": "見積プロセスの開始",
-        "position": {
-          "right": "6.9%",
-          "top": "39.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "見積詳細の記入",
-      "description": "具体的な製品、数量、価格、割引情報を追加して、包括的でプロフェッショナルにフォーマットされた見積書を生成します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
-      "button": {
-        "id": "button8",
-        "label": "見積詳細の記入",
-        "position": {
-          "right": "44.7%",
-          "top": "35.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "ステップ3：商談から受注への変換",
-      "description": "見積が顧客に受け入れられた後、いよいよ最後の一押し - 商談を営業受注に変換する時です！"
-    },
-    {
-      "id": "step-3-1",
-      "title": "商談を受注に変換",
-      "description": "見積承認後、商談詳細ページの「新規受注」ボタンがアクティブになります。それをクリックして、すべての情報を新しい受注に取り込み、重要な変換を完了します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button10",
-        "label": "受注に変換",
-        "position": {
-          "left": "24.5%",
-          "top": "18.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "最終受注情報の確認",
-      "description": "ここで、契約番号、納期詳細、その他の受注情報の最終確認を行い、すべてが正確であることを確認します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
-      "button": {
-        "id": "button11",
-        "label": "最終受注情報の確認",
-        "position": {
-          "left": "34.7%",
-          "top": "93.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "成功受注！",
-      "description": "送信をクリックすると、この商談は正式にクローズされ、営業収益に変換されます。おめでとうございます！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
-      "button": {
-        "id": "button12",
-        "label": "成功受注！",
-        "position": {
-          "left": "28.7%",
-          "top": "18.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "受注センターで結果を表示",
-      "description": "プロセス完了後、受注リストに自動的にジャンプします。正常に作成された受注を確認でき、納期プロセスを開始する準備が整います。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
-      "button": {
-        "id": "button13",
-        "label": "受注センターで表示",
-        "position": {
-          "left": "47.3%",
-          "top": "24.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// CRMで使用するプラグインの定義
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print"
+];
+
+// 名前でプラグインを検索
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// CRM関連プラグインを取得
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// デバッグ情報
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
+
+// 元のデータはJSONファイルに移動しました
 ---
 
 <Layout
@@ -873,7 +209,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-play me-2"></i>デモを試す
+                    <i class="uil uil-play me-2"></i>インタラクティブデモ
                   </button>
                 </div>
               </div>
@@ -892,7 +228,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-user-plus me-2"></i>変換を試す
+                    <i class="uil uil-user-plus me-2"></i>インタラクティブデモ
                   </button>
                 </div>
               </div>
@@ -911,7 +247,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-money-bill me-2"></i>変換を試す
+                    <i class="uil uil-money-bill me-2"></i>インタラクティブデモ
                   </button>
                 </div>
               </div>
@@ -930,8 +266,8 @@ const opportunityDemoGuides = {
         <div class="col-12 text-center">
 
         <div class="mt-4" id="crm-demo-wrap">
-          <!-- Dashboard Interactive Demo -->
-          <InteractiveDemo guides={dashboardDemoGuides} />
+          <!-- 拡張機能インタラクティブデモを使用 -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
         </div><!--end crm-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
@@ -952,6 +288,74 @@ const opportunityDemoGuides = {
   </section><!--end section-->
   <!-- Dashboard Demo Section End -->
 
+  <!-- Development Tutorial Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM 開発チュートリアル</h4>
+            <p class="para-desc mx-auto text-muted mb-0">NocoBase を使用して最初からプロフェッショナルなCRMシステムを構築する方法を学びます</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-play h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">基本設定</h5>
+                <p class="text-muted text-center">顧客、連絡先、商談などの基本データモデルと関係を作成する方法を学びます</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-pie h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">ダッシュボード設定</h5>
+                <p class="text-muted text-center">売上データ分析と可視化ダッシュボードを構築し、パフォーマンス監視を実現します</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-cog h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">プロセス自動化</h5>
+                <p class="text-muted text-center">ワークフローを設定して営業プロセスとビジネスルールを自動化します</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
   <!-- Commercial Plugins Start -->
   <section class="section">
     <div class="container">
@@ -965,87 +369,58 @@ const opportunityDemoGuides = {
       </div><!--end row-->
 
       <div class="row pb-4">
-        <!-- ECharts Plugin -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="データ可視化：ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">データ可視化：ECharts</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">ファネルチャート、棒グラフ、円グラフなどの様々な可視化設定をサポートする専門的なチャートコンポーネントで、CRM データ分析をより直感的にします
-                   <a href="https://docs-ja.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">詳細</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
-                    <a href="/ja/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
-                    <a class="text-muted" href="/ja/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$800</span>
-                  </h6>
+        <!-- 動的に生成されるプラグインカード -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_jp || plugin.name_cn || plugin.name;
+          const displayDescription = plugin.description_jp || plugin.description_cn || plugin.description;
+          const docsUrl = plugin.docs_jp || plugin.docs_cn || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">詳細</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
+                          <a href="/ja/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
+                          <a class="text-muted" href="/ja/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          );
+        })}
 
-        <!-- Comments Plugin -->
+        <!-- レイアウト用のプレースホルダーカード -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="データ表：コメント" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
             <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">データ表：コメント</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">顧客、連絡先、チケットなどのデータ表にコメント機能を追加し、チーム協作をより便利にします
-                   <a href="https://docs-ja.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">詳細</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
-                    <a href="/ja/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$100</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
-                    <a class="text-muted" href="/ja/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$200</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Email Management Plugin -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="メール管理" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">メール管理</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">よく使用されるメール機能で、グローバルメール送信と管理をサポートし、顧客とのコミュニケーション効率を向上
-                   <a href="https://docs-ja.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">詳細</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
-                    <a href="/ja/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
-                    <a class="text-muted" href="/ja/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$800</span>
-                  </h6>
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">より多くのプラグインが近日公開予定</h6>
+                  <p class="text-muted small">私たちはより多くの有用な商用プラグインを開発中です。お楽しみに</p>
                 </div>
               </div>
             </div>
@@ -1133,6 +508,99 @@ const opportunityDemoGuides = {
     </div><!--end container-->
   </section><!--end section-->
   <!-- How to Use End -->
+
+  <!-- How to Extend Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">拡張方法</h4>
+            <p class="para-desc mx-auto text-muted mb-0">ビジネス要件に応じてCRMシステムをさらに拡張・カスタマイズします</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">カスタムフィールド、関係、権限、インターフェースレイアウト</h5>
+                  <p class="text-muted mb-3">業界特有の顧客情報フィールドを追加し、データ関係とアクセス権限を設定します</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">近日公開</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-setting h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">ビジネスプロセス自動化</h5>
+                  <p class="text-muted mb-3">営業プロセス、承認ワークフロー、自動化タスクを設定します</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">近日公開</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">第三者システム統合</h5>
+                  <p class="text-muted mb-3">メールシステム、財務ソフトウェア、マーケティングツールなどと統合します</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">近日公開</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-mobile-android h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">モバイル対応</h5>
+                  <p class="text-muted mb-3">CRMシステムがモバイルデバイスで完璧に動作することを確保します</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">近日公開</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Extend End -->
 
   <!-- CTA Section Start -->
   <section class="section bg-light">

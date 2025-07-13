@@ -181,18 +181,6 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     position: relative;
   }
 
-  .work-process.process-arrow:after {
-    content: '→';
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #e9ecef;
-    font-weight: bold;
-    z-index: 1;
-  }
-
   .work-process .step {
     opacity: 0.3;
   }
@@ -201,12 +189,21 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     cursor: pointer;
     padding: 1.5rem 1rem;
     transition: all 0.3s ease;
+    max-width: 100%;
+    overflow: hidden;
   }
 
- 
-
   .card-body h6 {
-    margin-bottom: 0;
+    margin: 0 3rem 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .work-process .card-body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   /* 激活状态的步骤样式 */
@@ -413,25 +410,6 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     visibility: visible;
   }
 
-  /* 箭头基础样式 */
-  .demo-button::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.15s ease-out;
-  }
-  
-  /* 显示箭头时的样式 */
-  .demo-button.auto-tooltip::before {
-    opacity: 1;
-    visibility: visible;
-  }
-
   /* 上方提示 */
   .demo-button.auto-tooltip[data-balloon-pos="up"]::after {
     bottom: 100%;
@@ -440,32 +418,12 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     transform: translateX(-50%);
   }
 
-  .demo-button.auto-tooltip[data-balloon-pos="up"]::before {
-    bottom: 100%;
-    left: 50%;
-    margin-bottom: -2px;
-    transform: translateX(-50%);
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid rgba(250, 84, 28, 0.9);
-  }
-
   /* 下方提示 */
   .demo-button.auto-tooltip[data-balloon-pos="down"]::after {
     top: 100%;
     left: 50%;
     margin-top: 8px;
     transform: translateX(-50%);
-  }
-
-  .demo-button.auto-tooltip[data-balloon-pos="down"]::before {
-    top: 100%;
-    left: 50%;
-    margin-top: -2px;
-    transform: translateX(-50%);
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid rgba(250, 84, 28, 0.9);
   }
 
   /* 左侧提示 */
@@ -477,16 +435,6 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     max-width: 180px;
   }
 
-  .demo-button.auto-tooltip[data-balloon-pos="left"]::before {
-    right: 100%;
-    top: 50%;
-    margin-right: -2px;
-    transform: translateY(-50%);
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 8px solid rgba(250, 84, 28, 0.9);
-  }
-
   /* 右侧提示 */
   .demo-button.auto-tooltip[data-balloon-pos="right"]::after {
     left: 100%;
@@ -494,16 +442,6 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     margin-left: 8px;
     transform: translateY(-50%);
     max-width: 180px;
-  }
-
-  .demo-button.auto-tooltip[data-balloon-pos="right"]::before {
-    left: 100%;
-    top: 50%;
-    margin-left: -2px;
-    transform: translateY(-50%);
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid rgba(250, 84, 28, 0.9);
   }
 
 
@@ -629,10 +567,6 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
 
   /* 响应式样式 */
   @media (max-width: 768px) {
-    .work-process.process-arrow:after {
-      display: none;
-    }
-    
     /* 移动设备上的提示框样式优化 */
     .demo-button.auto-tooltip::after {
       max-width: 150px;

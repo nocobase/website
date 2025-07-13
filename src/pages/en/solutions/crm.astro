@@ -2,711 +2,47 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
 
-// Dashboard Interactive Demo Data
-const dashboardDemoGuides = {
-  "title": "Master Dashboard: Dynamic Charts & Filtering",
-  "subtitle": "Experience sales funnels, performance rankings, and other dynamic charts in just three steps, and master powerful data filtering capabilities.",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "Lead Insights",
-      "id": "dashboard-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "Create Dynamic Filters",
-      "id": "dashboard-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "Customize Charts",
-      "id": "dashboard-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "Start Your Data Exploration",
-      "description": "Welcome to the dashboard! This is your data cockpit, aggregating all key business information for a clear overview.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
-      "button": {
-        "id": "button1",
-        "label": "Start Data Exploration",
-        "position": {
-          "right": "49.3%",
-          "top": "41.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "Step 1: Lead Insights",
-      "description": "First, let's dive into the \"Lead Analytics\" dashboard to see how to quickly gain business insights through visual charts."
-    },
-    {
-      "id": "step-1-1",
-      "title": "Interactive Data View",
-      "description": "Charts are not static. Hover over any part of the sales funnel to interactively view detailed data for that stage.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
-      "button": {
-        "id": "button3",
-        "label": "Interactive Data View",
-        "position": {
-          "left": "23.8%",
-          "top": "29.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "Step 2: Create Dynamic Filters",
-      "description": "For more precise analysis, let's add a filter to the dashboard to make data queries more flexible."
-    },
-    {
-      "id": "step-2-1",
-      "title": "Add Filter Block",
-      "description": "Below the chart, you can easily add a filter block as a controller for the data dashboard.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
-      "button": {
-        "id": "button5",
-        "label": "Add Filter Block",
-        "position": {
-          "left": "18.5%",
-          "top": "90.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "Configure Filter Fields",
-      "description": "First, we need to define the filtering criteria. For example, select the \"Owner\" field to filter data by sales person.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
-      "button": {
-        "id": "button6",
-        "label": "Configure Filter Fields",
-        "position": {
-          "left": "18.0%",
-          "top": "25.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "Link Filter Operations",
-      "description": "Then, associate this filter with the charts on the page so that filter operations can actually control chart display.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
-      "button": {
-        "id": "button7",
-        "label": "Link Filter Operations",
-        "position": {
-          "right": "8.4%",
-          "top": "30.2%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "Apply Filter to View Results",
-      "description": "Now, try filtering by one owner, and all charts on the dashboard will update immediately based on your selection.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button8",
-        "label": "Apply Filter to View Results",
-        "position": {
-          "right": "19.4%",
-          "top": "29.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "Step 3: Customize Charts",
-      "description": "If the preset charts don't meet your needs, you can customize them at any time."
-    },
-    {
-      "id": "step-3-1",
-      "title": "Go to \"Account Insights\"",
-      "description": "Let's switch to the \"Account Insights\" page, where charts can be configured more freely.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
-      "button": {
-        "id": "button10",
-        "label": "Go to Account Insights",
-        "position": {
-          "left": "6.0%",
-          "top": "35.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "Open Chart Configuration",
-      "description": "In configuration mode, each chart has a configuration button in the top-right corner. Click it to start your customization journey.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
-      "button": {
-        "id": "button11",
-        "label": "Open Chart Configuration",
-        "position": {
-          "right": "3.3%",
-          "top": "17.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "Switch Chart Type",
-      "description": "You can choose the most suitable display format from a rich chart library. For example, let's change it from a pie chart to a bar chart.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
-      "button": {
-        "id": "button12",
-        "label": "Switch Chart Type",
-        "position": {
-          "left": "39.5%",
-          "top": "41.7%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "Group by Color",
-      "description": "For deeper analysis, we can add a dimension to the chart, such as color grouping by \"Customer Level\".",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button13",
-        "label": "Group by Type, Colors by Type",
-        "position": {
-          "left": "36.8%",
-          "top": "61.0%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-5",
-      "title": "Save Chart Settings",
-      "description": "When you're satisfied with the configuration, click \"OK\" to save the changes.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
-      "button": {
-        "id": "button14",
-        "label": "Save Chart Settings",
-        "position": {
-          "right": "5.9%",
-          "top": "88.5%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-6",
-      "title": "View the Refreshed Chart",
-      "description": "Look! The chart has been successfully updated according to your requirements, and you can now analyze customer data from a new dimension.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
-      "button": {
-        "id": "button15",
-        "label": "Chart Successfully Updated!",
-        "position": {
-          "right": "22.6%",
-          "top": "35.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// Import interactive demo data
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
 
-// Lead Conversion Interactive Demo Data
-const leadConversionDemoGuides = {
-  "title": "From Lead to Customer: Experience Efficient Conversion",
-  "subtitle": "Learn how to claim leads from the pool, conduct 360° comprehensive follow-ups, and ultimately convert them seamlessly into opportunities and contacts.",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "Lead Claiming & Follow-up",
-      "id": "lead-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "Lead Details & Process Management",
-      "id": "lead-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "Lead Conversion & Value Realization",
-      "id": "lead-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "Lead Pool",
-      "description": "This is where all unassigned leads are located. Sales team members can discover potential customers here and start follow-ups.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button1",
-        "label": "Lead Pool",
-        "position": {
-          "left": "5.9%",
-          "top": "20.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "Step 1: Lead Claiming & Follow-up",
-      "description": "Leads in the pool need to be assigned and followed up to create value. Let's start by claiming a lead."
-    },
-    {
-      "id": "step-1-1",
-      "title": "One-Click Lead Claiming",
-      "description": "Found a high-value lead? No complex process needed - just click \"Claim\" to assign it to yourself and start follow-up.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
-      "button": {
-        "id": "button3",
-        "label": "One-Click Lead Claiming",
-        "position": {
-          "left": "18.4%",
-          "top": "24.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "Quickly Locate Your Leads",
-      "description": "After claiming, you can use powerful filtering features to quickly find targets in \"My Leads\" by name, status, or any other criteria.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
-      "button": {
-        "id": "button4",
-        "label": "Quickly Locate Your Leads",
-        "position": {
-          "left": "18.3%",
-          "top": "15.7%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "Step 2: Lead Details & Process Management",
-      "description": "Click to enter the lead details page - this is your command center for managing all information and activities related to this lead."
-    },
-    {
-      "id": "step-2-1",
-      "title": "Enter 360° Customer View",
-      "description": "The details page aggregates lead status, basic information, and key operations like status changes, returning to pool, and the crucial \"Lead Conversion\" button.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
-      "button": {
-        "id": "button6",
-        "label": "Enter 360° Customer View",
-        "position": {
-          "left": "21.0%",
-          "top": "26.8%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "Update Follow-up Status in Real-time",
-      "description": "As communication deepens, you can update the lead status at any time to ensure team information synchronization and accurately reflect the sales stage.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button7",
-        "label": "Update Follow-up Status",
-        "position": {
-          "right": "25.8%",
-          "top": "10.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-3",
-      "title": "Manage To-Do Items",
-      "description": "In the \"To-Do\" tab, create follow-up tasks for yourself to ensure every sales action is well organized.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
-      "button": {
-        "id": "button8",
-        "label": "Manage To-Do Items",
-        "position": {
-          "left": "38.2%",
-          "top": "6.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-4",
-      "title": "Schedule Meetings & Events",
-      "description": "In the \"Events\" tab, you can record and manage meetings, calls, and other appointments with customers, ensuring no important commitments are missed.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
-      "button": {
-        "id": "button9",
-        "label": "Schedule Meetings & Events",
-        "position": {
-          "left": "43.9%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-5",
-      "title": "Archive Communication Emails",
-      "description": "All important emails exchanged with this lead can be archived and viewed here, forming a complete communication record.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
-      "button": {
-        "id": "button10",
-        "label": "Archive Communication Emails",
-        "position": {
-          "left": "49.6%",
-          "top": "6.0%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-6",
-      "title": "Track Change History",
-      "description": "The \"History\" tab clearly records every information modification, making all operations traceable for review and management.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
-      "button": {
-        "id": "button11",
-        "label": "Track Change History",
-        "position": {
-          "right": "40.6%",
-          "top": "6.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "Step 3: Lead Conversion & Value Realization",
-      "description": "When a lead matures, the most crucial step is converting it into actual business opportunities. Let's begin!"
-    },
-    {
-      "id": "step-3-1",
-      "title": "Initiate Lead Conversion Process",
-      "description": "Back to the main details page, click the \"Lead Conversion\" button, and the system will guide you to seamlessly create new customers, contacts, and opportunities.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
-      "button": {
-        "id": "button13",
-        "label": "Initiate Lead Conversion",
-        "position": {
-          "right": "16.8%",
-          "top": "11.3%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "Create Related Opportunity",
-      "description": "During the conversion process, you can directly create an opportunity and automatically import key lead information without duplicate entry.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
-      "button": {
-        "id": "button14",
-        "label": "Create Related Opportunity",
-        "position": {
-          "right": "33.7%",
-          "top": "33.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "Complete Opportunity Information",
-      "description": "Add estimated amount, expected close date, and other opportunity information, then click \"Save\" to lay the foundation for subsequent win analysis.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
-      "button": {
-        "id": "button15",
-        "label": "Complete Opportunity Information",
-        "position": {
-          "right": "48.1%",
-          "top": "28.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "Complete Conversion",
-      "description": "After confirming all information is correct, click \"OK\" and the system will automatically complete the creation and association of all entities.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
-      "button": {
-        "id": "button16",
-        "label": "Complete Conversion",
-        "position": {
-          "left": "34.0%",
-          "top": "37.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-5",
-      "title": "Verify Conversion Results",
-      "description": "Now, let's go to the \"Opportunities\" page, where you can see the new opportunity successfully converted from the lead. The entire sales process is seamlessly connected!",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
-      "button": {
-        "id": "button17",
-        "label": "View Opportunities - Conversion Success!",
-        "position": {
-          "left": "28.4%",
-          "top": "29.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
 
-// Opportunity Conversion Interactive Demo Data
-const opportunityDemoGuides = {
-  "title": "Winning Opportunities: From Follow-up, Quotes to Orders",
-  "subtitle": "Experience refined opportunity management, learn how to analyze competition, send professional quotes, and ultimately convert prospects into successful sales orders.",
-  "mainSteps": [
-    {
-      "number": "01",
-      "title": "Opportunity Follow-up & Management",
-      "id": "opportunity-guide1",
-      "targetStepId": "01"
-    },
-    {
-      "number": "02",
-      "title": "Create Professional Quotes",
-      "id": "opportunity-guide2",
-      "targetStepId": "02"
-    },
-    {
-      "number": "03",
-      "title": "Convert Opportunities to Orders",
-      "id": "opportunity-guide3",
-      "targetStepId": "03"
-    }
-  ],
-  "steps": [
-    {
-      "id": "step-start",
-      "title": "Visual Sales Management",
-      "description": "All opportunities are centrally displayed here. You can clearly see the stage of each opportunity and quickly edit key information at any time.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
-      "button": {
-        "id": "button1",
-        "label": "Visual Opportunity Management",
-        "position": {
-          "left": "28.5%",
-          "top": "29.3%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "01",
-      "title": "Step 1: Opportunity Follow-up & Management",
-      "description": "Successful sales starts with refined opportunity management. Let's dive into an opportunity to see how to follow up and maintain it."
-    },
-    {
-      "id": "step-1-1",
-      "title": "Dive into Opportunity Details",
-      "description": "Click on the opportunity name to enter the dedicated details page. This aggregates all information and tools related to this opportunity.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
-      "button": {
-        "id": "button3",
-        "label": "Dive into Opportunity Details",
-        "position": {
-          "left": "29.9%",
-          "top": "37.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-2",
-      "title": "Analyze Competitive Landscape",
-      "description": "Know yourself and your competitors to win every battle. Record and analyze competitors' strengths and weaknesses here to develop more effective winning strategies.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
-      "button": {
-        "id": "button4",
-        "label": "Analyze Competitive Landscape",
-        "position": {
-          "right": "38.7%",
-          "top": "19.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-3",
-      "title": "Record Follow-up Activities",
-      "description": "Every communication with customers and every progress can be recorded here as follow-up comments for team collaboration and future review.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button5",
-        "label": "Record Follow-up Activities",
-        "position": {
-          "left": "30.2%",
-          "top": "71.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "02",
-      "title": "Step 2: Create Professional Quotes",
-      "description": "When an opportunity enters the quote stage, a professional and accurate quote is key to winning customer trust."
-    },
-    {
-      "id": "step-2-1",
-      "title": "Initiate Quote Process",
-      "description": "In the opportunity details page, click directly to initiate a quote. The system will automatically associate customer information and begin quote creation.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button7",
-        "label": "Initiate Quote Process",
-        "position": {
-          "right": "6.9%",
-          "top": "39.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-2-2",
-      "title": "Fill Quote Details",
-      "description": "Add specific product, quantity, price, and discount information to generate a comprehensive and professionally formatted quote.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
-      "button": {
-        "id": "button8",
-        "label": "Fill Quote Details",
-        "position": {
-          "right": "44.7%",
-          "top": "35.3%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "03",
-      "title": "Step 3: Convert Opportunities to Orders",
-      "description": "After the quote is accepted by the customer, it's time for the final push - converting the opportunity into a sales order!"
-    },
-    {
-      "id": "step-3-1",
-      "title": "Convert Opportunity to Order",
-      "description": "After quote approval, the \"New Order\" button in the opportunity details page will be activated. Click it to bring all information into the new order and complete the key conversion.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
-      "button": {
-        "id": "button10",
-        "label": "Convert to Order",
-        "position": {
-          "left": "24.5%",
-          "top": "18.8%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-2",
-      "title": "Confirm Final Order Information",
-      "description": "Here, make final confirmation of contract number, delivery details, and other order information to ensure everything is accurate.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
-      "button": {
-        "id": "button11",
-        "label": "Confirm Final Order Info",
-        "position": {
-          "left": "34.7%",
-          "top": "93.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-3",
-      "title": "Successful Deal!",
-      "description": "Click submit, and this opportunity is officially closed and converted to sales revenue. Congratulations!",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
-      "button": {
-        "id": "button12",
-        "label": "Successful Deal!",
-        "position": {
-          "left": "28.7%",
-          "top": "18.6%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3-4",
-      "title": "View Results in Order Center",
-      "description": "After the process is complete, it automatically jumps to the order list. You can see the successfully created order, ready to begin the delivery process.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
-      "button": {
-        "id": "button13",
-        "label": "View in Order Center",
-        "position": {
-          "left": "47.3%",
-          "top": "24.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    }
-  ]
-};
+// Define plugins used in CRM
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print"
+];
+
+// Find plugin by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get CRM related plugins
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// Debug info
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
+
+// Original data moved to JSON files
 ---
 
 <Layout
@@ -873,7 +209,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-play me-2"></i>Try Demo
+                    <i class="uil uil-play me-2"></i>Interactive Demo
                   </button>
                 </div>
               </div>
@@ -892,7 +228,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-user-plus me-2"></i>Try Conversion
+                    <i class="uil uil-user-plus me-2"></i>Interactive Demo
                   </button>
                 </div>
               </div>
@@ -911,7 +247,7 @@ const opportunityDemoGuides = {
                 <!-- Button -->
                 <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
                   <button class="btn btn-primary shadow">
-                    <i class="uil uil-money-bill me-2"></i>Try Conversion
+                    <i class="uil uil-money-bill me-2"></i>Interactive Demo
                   </button>
                 </div>
               </div>
@@ -930,8 +266,8 @@ const opportunityDemoGuides = {
         <div class="col-12 text-center">
 
         <div class="mt-4" id="crm-demo-wrap">
-          <!-- Dashboard Interactive Demo -->
-          <InteractiveDemo guides={dashboardDemoGuides} />
+          <!-- Using Extension Feature Interactive Demo -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
         </div><!--end crm-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
@@ -952,6 +288,74 @@ const opportunityDemoGuides = {
   </section><!--end section-->
   <!-- Dashboard Demo Section End -->
 
+  <!-- Development Tutorial Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM Development Tutorial</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Learn how to use NocoBase to build professional CRM systems from scratch</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-play h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Basic Setup</h5>
+                <p class="text-muted text-center">Learn how to create basic data models and relationships for customers, contacts, opportunities, etc.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-pie h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Dashboard Configuration</h5>
+                <p class="text-muted text-center">Build sales data analysis and visualization dashboards for performance monitoring</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-cog h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Process Automation</h5>
+                <p class="text-muted text-center">Set up workflows to automate sales processes and business rules</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
   <!-- Commercial Plugins Start -->
   <section class="section">
     <div class="container">
@@ -965,87 +369,58 @@ const opportunityDemoGuides = {
       </div><!--end row-->
 
       <div class="row pb-4">
-        <!-- ECharts Plugin -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="Data Visualization: ECharts" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">Data Visualization: ECharts</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">Professional chart components supporting funnel charts, bar charts, pie charts and other visualization configurations, making CRM data analysis more intuitive
-                   <a href="https://docs.nocobase.com/plugins/charts" target="_blank" style="font-size: 14px;">Details</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                    <a href="/en/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                    <a class="text-muted" href="/en/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$800</span>
-                  </h6>
+        <!-- Dynamically generated plugin cards -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Details</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
+                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
+                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          );
+        })}
 
-        <!-- Comments Plugin -->
+        <!-- Placeholder card for layout -->
         <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="Data Table: Comments" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
             <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">Data Table: Comments</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">Add comment interaction features to data tables like customers, contacts, and tickets for more convenient team collaboration
-                   <a href="https://docs.nocobase.com/plugins/block-comments" target="_blank" style="font-size: 14px;">Details</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                    <a href="/en/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$100</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                    <a class="text-muted" href="/en/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$200</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Email Management Plugin -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div title="Email Management" style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-            <div class="card-body">
-              <div class="mt-2 plugin-box">
-                <h6 class="card-title mb-1">Email Management</h6>
-                <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div>
-                <p class="text-muted mb-2 plugin-overview">Frequently used email features, supporting global email sending and management to improve customer communication efficiency
-                   <a href="https://docs.nocobase.com/plugins/mail" target="_blank" style="font-size: 14px;">Details</a>
-                </p>
-                <div class="plugin-footer">
-                  <h6 class="text-primary mb-0">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                    <a href="/en/plugins-bundles"> 8 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$400</span>
-                  </h6>
-                  <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                    <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                    <a class="text-muted" href="/en/plugins-bundles"> 16 <i class="uil uil-moon-eclipse me-1"></i></a>
-                    <span class="text-muted">/</span>
-                    <span class="text-muted">$800</span>
-                  </h6>
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">More plugins coming soon</h6>
+                  <p class="text-muted small">We are developing more useful commercial plugins, stay tuned</p>
                 </div>
               </div>
             </div>
@@ -1133,6 +508,99 @@ const opportunityDemoGuides = {
     </div><!--end container-->
   </section><!--end section-->
   <!-- How to Use End -->
+
+  <!-- How to Extend Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">How to Extend?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Further extend and customize your CRM system according to business requirements</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Custom Fields, Relationships, Permissions & Interface Layout</h5>
+                  <p class="text-muted mb-3">Add industry-specific customer information fields, set data relationships and access permissions</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-setting h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Business Process Automation</h5>
+                  <p class="text-muted mb-3">Configure sales processes, approval workflows and automated tasks</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Third-party System Integration</h5>
+                  <p class="text-muted mb-3">Integrate with email systems, financial software, marketing tools, etc.</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-mobile-android h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Mobile Adaptation</h5>
+                  <p class="text-muted mb-3">Ensure perfect experience of CRM system on mobile devices</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Extend End -->
 
   <!-- CTA Section Start -->
   <section class="section bg-light">

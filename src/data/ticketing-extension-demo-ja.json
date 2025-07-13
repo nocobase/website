@@ -1,0 +1,201 @@
+{
+  "title": "チケットライフサイクル：顧客提出から満足度評価まで",
+  "subtitle": "このガイドに従って、チケットの作成、コミュニケーション、処理から最終評価まで、顧客とサポートの両方の役割を体験します。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "顧客視点：サービスリクエストの提出",
+      "id": "ticket-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "サポート視点：チケットの応答と処理",
+      "id": "ticket-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "クロージング：顧客評価とプロセス完了",
+      "id": "ticket-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "チケットインタラクション全プロセスの体験",
+      "description": "それでは、標準的なチケットサービスプロセスを開始し、顧客とサポートスタッフ間のシームレスな協働を体験しましょう。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_e4b3d227-8692-42c3-adce-dd347a6d380g.png",
+      "button": {
+        "id": "button1",
+        "label": "顧客サービスアカウントを作成してチケットインタラクション全プロセスを体験",
+        "position": {
+          "left": "19.2%",
+          "top": "25.5%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "第1ステップ：顧客視点：サービスリクエストの提出",
+      "description": "まず、管理者として顧客がサービスポータルにログインするためのアカウントを作成し、その後顧客視点で操作を行います。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "バックエンド：顧客のログインアカウント作成",
+      "description": "プロセスの第1ステップとして、管理者またはサポートとして、既存の「連絡先」情報から顧客がサービスポータルにログインできるユーザーアカウントを作成します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_18315fd2-5cf7-4714-9a06-147f76a2473g.png",
+      "button": {
+        "id": "button3",
+        "label": "バックエンド：顧客のログインアカウント作成",
+        "position": {
+          "right": "46.9%",
+          "top": "44.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "顧客：サービスポータルへのログイン",
+      "description": "今度は顧客視点に切り替え、先ほど作成したアカウント情報を使用して、顧客専用のサービスポータルにログインします。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_469e3484-f4de-49af-8122-35e156d103dg.png",
+      "button": {
+        "id": "button4",
+        "label": "顧客：サービスポータルへのログイン",
+        "position": {
+          "right": "45.9%",
+          "top": "36.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-3",
+      "title": "顧客：新しいサービスリクエストの作成",
+      "description": "ログイン後、顧客はポータルホームページで「新しいチケット作成」エントリーを明確に見ることができ、いつでも問題やリクエストを提出することができます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_d60f4f0c-6b3e-4c27-ba69-84d00c9bea1g.png",
+      "button": {
+        "id": "button5",
+        "label": "顧客：新しいサービスリクエストの作成",
+        "position": {
+          "right": "5.6%",
+          "top": "47.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-4",
+      "title": "顧客：チケット詳細の入力",
+      "description": "顧客はガイダンスに従って、問題のタイトル、説明、優先度などの詳細情報を入力し、チケットを提出します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_7fbf0440-e3d8-4646-936b-c094d5f833ag.png",
+      "button": {
+        "id": "button6",
+        "label": "顧客：チケット詳細の入力",
+        "position": {
+          "right": "49.1%",
+          "top": "53.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-5",
+      "title": "顧客：提出済みチケットの確認と情報補足",
+      "description": "提出後、顧客はいつでもチケット詳細ページに入り、処理状況を確認し、コメント機能を通じて追加情報やスクリーンショットを補足することができます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_04f1582b-334e-4d6a-8982-35b3c77455ag.png",
+      "button": {
+        "id": "button7",
+        "label": "顧客：提出済みチケットの確認と情報補足",
+        "position": {
+          "right": "28.6%",
+          "top": "73.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "第2ステップ：サポート視点：チケットの応答と処理",
+      "description": "顧客が問題を提出しました。今度はサポートワークステーションに切り替えて、どのように応答し処理するかを見てみましょう。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "サポート：保留中チケットリストの表示",
+      "description": "再び視点を切り替えます。サポートスタッフは自分のワークステーションで顧客が提出した新しいチケットを即座に確認し、その基本状況を理解できます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_667e9432-ac33-4e92-a2a0-cb58e00af96g.png",
+      "button": {
+        "id": "button9",
+        "label": "サポート：保留中チケットリストの表示",
+        "position": {
+          "left": "38.5%",
+          "top": "65.0%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "サポート：顧客への返信とコミュニケーション",
+      "description": "サポートスタッフはチケット詳細に入り、コメントを通じて顧客と相互作用します。これは安心感を与える、詳細を尋ねる、または進捗を知らせることができ、すべてのコミュニケーション記録が保存されます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_8b544f59-b860-4340-9314-90cfb8b75e7g.png",
+      "button": {
+        "id": "button10",
+        "label": "サポート：顧客への返信とコミュニケーション",
+        "position": {
+          "right": "41.7%",
+          "top": "82.4%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "サポート：チケットの処理（アサイン、解決）",
+      "description": "直接コミュニケーション以外にも、サポートスタッフは必要に応じてより多くの操作を実行できます。例えば、問題をより適切な専門家に転送したり、問題解決後に「完了」とマークしたりできます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_8b544f59-b860-4340-9314-90cfb8b75e7g.png",
+      "button": {
+        "id": "button11",
+        "label": "サポート：チケットの処理（アサイン、解決）",
+        "position": {
+          "left": "49.4%",
+          "top": "12.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "第3ステップ：顧客評価とプロセス完了",
+      "description": "チケット処理が完了しました。最後のステップは顧客フィードバックを得て、全体のサービスプロセスループを完了することです。"
+    },
+    {
+      "id": "step-3-1",
+      "title": "顧客：サービスの評価",
+      "description": "サポートスタッフが問題を解決してチケットを閉じると、顧客は通知を受け取り、サービス満足度を評価できます。これにより完全なサービスループが形成されます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o5_9da19481-afb8-4b65-8159-0e286ac3b85g.png",
+      "button": {
+        "id": "button13",
+        "label": "顧客：サービスの評価",
+        "position": {
+          "right": "46.8%",
+          "top": "21.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

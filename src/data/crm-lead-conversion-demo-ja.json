@@ -1,0 +1,265 @@
+{
+  "title": "リードから顧客へ：効率的な転換プロセスの体験",
+  "subtitle": "リードプールからの顧客獲得、360°全方位フォローアップ、そして最終的なオポチュニティ・連絡先へのシームレスな転換を学びます。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "リード獲得とフォローアップ",
+      "id": "lead-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "リード詳細とプロセス管理",
+      "id": "lead-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "リード転換と価値実現",
+      "id": "lead-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "リード共有プール",
+      "description": "ここはすべての未割り当てリードが置かれる場所です。営業チームのメンバーは、ここで潜在顧客を発見し、フォローアップを開始できます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button1",
+        "label": "リード共有プール",
+        "position": {
+          "left": "5.9%",
+          "top": "20.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "ステップ1：リード獲得とフォローアップ",
+      "description": "プール内のリードは割り当てられ、フォローアップされて初めて価値を発揮します。リードの獲得から始めましょう。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "ワンクリックでリード獲得",
+      "description": "高価値リードを発見しましたか？複雑なプロセスは不要です。「獲得」をクリックして、自分の名前でロックし、フォローアップの準備をしましょう。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g.png",
+      "button": {
+        "id": "button3",
+        "label": "ワンクリックでリード獲得",
+        "position": {
+          "left": "18.4%",
+          "top": "24.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "あなたのリードを素早く特定",
+      "description": "獲得後、強力なフィルタリング機能を使用して、「マイリード」内で名前、ステータスなどの任意の条件でターゲットリードを素早く見つけられます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg.png",
+      "button": {
+        "id": "button4",
+        "label": "あなたのリードを素早く特定",
+        "position": {
+          "left": "18.3%",
+          "top": "15.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "ステップ2：リード詳細とプロセス管理",
+      "description": "クリックしてリード詳細ページに入ります。ここはこのリードに関連するすべての情報と活動を管理するコマンドセンターです。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "360°顧客ビューに入る",
+      "description": "詳細ページは、リードステータス、基本情報、ステータス変更、プール戻し、そして重要な「リード転換」ボタンなどの核心操作を集約しています。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g.png",
+      "button": {
+        "id": "button6",
+        "label": "360°顧客ビューに入る",
+        "position": {
+          "left": "21.0%",
+          "top": "26.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "リアルタイムフォローアップステータス更新",
+      "description": "コミュニケーションが深まるにつれて、いつでもリードステータスを更新でき、チーム情報の同期と営業段階の正確な反映を確保できます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button7",
+        "label": "リアルタイムフォローアップステータス更新",
+        "position": {
+          "right": "25.8%",
+          "top": "10.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "ToDo管理",
+      "description": "「ToDo」タブで、自分用のフォローアップタスクを作成し、すべての営業活動を整理整頓できます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg.png",
+      "button": {
+        "id": "button8",
+        "label": "ToDo管理",
+        "position": {
+          "left": "38.2%",
+          "top": "6.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "ミーティングとイベントの予定",
+      "description": "「イベント」タブで、顧客とのミーティング、電話などの予定を記録・管理でき、重要な約束を見逃すことはありません。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g.png",
+      "button": {
+        "id": "button9",
+        "label": "ミーティングとイベントの予定",
+        "position": {
+          "left": "43.9%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "コミュニケーションメールの蓄積",
+      "description": "このリードとの重要なメールのやり取りはすべてここでアーカイブ・閲覧でき、完全なコミュニケーション記録を形成します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g.png",
+      "button": {
+        "id": "button10",
+        "label": "コミュニケーションメールの蓄積",
+        "position": {
+          "left": "49.6%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "変更履歴の追跡",
+      "description": "「履歴」タブは、すべての情報変更を明確に記録し、すべての操作を追跡可能にして、レビューと管理を容易にします。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg.png",
+      "button": {
+        "id": "button11",
+        "label": "変更履歴の追跡",
+        "position": {
+          "right": "40.6%",
+          "top": "6.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "ステップ3：リード転換と価値実現",
+      "description": "リードが成熟したとき、最も重要なステップは実際のビジネス機会に転換することです。始めましょう！"
+    },
+    {
+      "id": "step-3-1",
+      "title": "リード転換プロセス開始",
+      "description": "メイン詳細ページに戻り、「リード転換」ボタンをクリックします。システムが新しい顧客、連絡先、オポチュニティのシームレスな作成をガイドします。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g.png",
+      "button": {
+        "id": "button13",
+        "label": "リード転換プロセス開始",
+        "position": {
+          "right": "16.8%",
+          "top": "11.3%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "関連オポチュニティの新規作成",
+      "description": "転換プロセス中、直接オポチュニティを新規作成し、リードの重要情報を自動的に取り込み、重複入力を避けられます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag.png",
+      "button": {
+        "id": "button14",
+        "label": "関連オポチュニティの新規作成",
+        "position": {
+          "right": "33.7%",
+          "top": "33.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "オポチュニティ情報の完善",
+      "description": "予想金額、期待成約日などのオポチュニティ情報を追加し、「保存」をクリックして、後続の受注分析の基盤を築きます。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g.png",
+      "button": {
+        "id": "button15",
+        "label": "オポチュニティ情報の完善",
+        "position": {
+          "right": "48.1%",
+          "top": "28.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "転換の完了",
+      "description": "すべての情報が正しいことを確認した後、「OK」をクリックすると、システムが自動的にすべてのエンティティの作成と関連付けを完了します。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g.png",
+      "button": {
+        "id": "button16",
+        "label": "転換の完了",
+        "position": {
+          "left": "34.0%",
+          "top": "37.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "転換結果の確認",
+      "description": "今、「オポチュニティ」ページに移動すると、リードから正常に転換された新しいオポチュニティが見られます。シームレスな営業プロセスの接続です！",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg.png",
+      "button": {
+        "id": "button17",
+        "label": "オポチュニティ一覧に移動、転換成功！",
+        "position": {
+          "left": "28.4%",
+          "top": "29.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

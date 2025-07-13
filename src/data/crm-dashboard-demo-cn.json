@@ -1,0 +1,233 @@
+{
+  "title": "玩转仪表板：动态图表与筛选",
+  "subtitle": "只需三步，即可轻松体验销售漏斗、业绩排行等动态图表，并掌握强大的数据筛选功能。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "洞察销售线索",
+      "id": "dashboard-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "创建动态筛选",
+      "id": "dashboard-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "自定义图表",
+      "id": "dashboard-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "开启数据探索之旅",
+      "description": "欢迎来到仪表板！这里是您的数据驾驶舱，聚合了所有关键业务信息，让您对整体状况一目了然。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
+      "button": {
+        "id": "button1",
+        "label": "开启数据探索之旅",
+        "position": {
+          "right": "49.3%",
+          "top": "41.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "第一步：洞察销售线索",
+      "description": "首先，让我们深入\"线索专题\"仪表板，看看如何通过可视化图表快速获取业务洞察。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "交互式查看数据",
+      "description": "图表不是静态的。将鼠标悬停在销售漏斗的任意部分，即可交互式地查看该阶段的详细数据。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
+      "button": {
+        "id": "button3",
+        "label": "交互式查看数据",
+        "position": {
+          "left": "23.8%",
+          "top": "29.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "第二步：创建动态筛选",
+      "description": "为了更精确地分析，接下来我们为仪表板添加一个筛选器，让数据查询更加灵活。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "添加筛选区块",
+      "description": "在图表下方，可以轻松添加一个筛选区块，作为数据看板的控制器。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
+      "button": {
+        "id": "button5",
+        "label": "添加筛选区块",
+        "position": {
+          "left": "18.5%",
+          "top": "90.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "配置过滤字段",
+      "description": "首先，我们需要定义筛选的依据。例如，选择\"负责人\"字段，以便按销售人员过滤数据。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
+      "button": {
+        "id": "button6",
+        "label": "配置过滤字段",
+        "position": {
+          "left": "18.0%",
+          "top": "25.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "关联筛选操作",
+      "description": "然后，将这个筛选器与页面上的图表进行关联，让筛选操作能够真正控制图表显示。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
+      "button": {
+        "id": "button7",
+        "label": "关联筛选操作",
+        "position": {
+          "right": "8.4%",
+          "top": "30.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "应用筛选查看结果",
+      "description": "现在，试着筛选一位负责人，看板上的所有图表都会根据您的选择立刻更新。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
+      "button": {
+        "id": "button8",
+        "label": "应用筛选查看结果",
+        "position": {
+          "right": "19.4%",
+          "top": "29.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "第三步：自定义图表",
+      "description": "如果预设的图表不满足需求，您可以随时对图表进行个性化配置。"
+    },
+    {
+      "id": "step-3-1",
+      "title": "进入\"账户洞察\"页面",
+      "description": "我们切换到\"账户洞察\"页面，这里的图表可以更自由地进行配置。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
+      "button": {
+        "id": "button10",
+        "label": "进入账户洞察页面",
+        "position": {
+          "left": "6.0%",
+          "top": "35.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "打开图表配置",
+      "description": "在配置模式下，每个图表右上角都有一个配置按钮，点击它，开启您的自定义之旅。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
+      "button": {
+        "id": "button11",
+        "label": "打开图表配置",
+        "position": {
+          "right": "3.3%",
+          "top": "17.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "切换图表类型",
+      "description": "您可以从丰富的图表库中选择最适合的展现形式，例如，我们将它从饼图改为柱状图。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
+      "button": {
+        "id": "button12",
+        "label": "切换图表类型",
+        "position": {
+          "left": "39.5%",
+          "top": "41.7%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "description": "为了更深入地分析，我们可以为图表增加一个维度，比如按\"客户级别\"进行颜色分组。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
+      "button": {
+        "id": "button13",
+        "label": "按照类型分组，颜色随类型修改 ",
+        "position": {
+          "left": "36.8%",
+          "top": "61.0%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      },
+      "title": "按照颜色分组"
+    },
+    {
+      "id": "step-3-5",
+      "title": "保存图表设置",
+      "description": "对配置感到满意后，点击\"确定\"保存更改。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
+      "button": {
+        "id": "button14",
+        "label": "保存图表设置",
+        "position": {
+          "right": "5.9%",
+          "top": "88.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-6",
+      "title": "查看焕然一新的图表",
+      "description": "看！图表已按您的要求成功更新，现在可以从新的维度分析客户数据了。",
+      "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
+      "button": {
+        "id": "button15",
+        "label": "图表成功更新！",
+        "position": {
+          "right": "22.6%",
+          "top": "35.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+} 

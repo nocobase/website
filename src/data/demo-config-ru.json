@@ -3,17 +3,17 @@
   "subtitle": "",
   "mainSteps": [
   {
-  "number": "01. ",
+  "number": "01",
   "title": "Создайте таблицу клиентов",
   "id": "guide1"
   },
   {
-  "number": "02. ",
+  "number": "02",
   "title": "Настройте интерфейс",
   "id": "guide2"
   },
   {
-  "number": "03. ",
+  "number": "03",
   "title": "Добавьте логику",
   "id": "guide3"
   }
