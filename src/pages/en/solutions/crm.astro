@@ -769,7 +769,7 @@ const opportunityDemoGuides = {
                 <source src="https://static-docs.nocobase.com/NocoBase_CRM English.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
-              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
                 <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
               </div>
             </div>
@@ -799,7 +799,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-wrench rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">Completely No-Code, Easy to Get Started</a>
+              <h5 class="title text-dark">Completely No-Code, Easy to Get Started</h5>
               <p class="text-muted mt-2">No programming skills required, quickly build your own CRM system through drag-and-drop and configuration</p>
               <i class="uil uil-wrench full-img"></i>
             </div>
@@ -812,7 +812,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-database rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">Includes All Basic CRM Features</a>
+              <h5 class="title text-dark">Includes All Basic CRM Features</h5>
               <p class="text-muted mt-2">Complete functional modules including customer management, sales pipeline, opportunity tracking, contact management, email communication, approval processes</p>
               <i class="uil uil-database full-img"></i>
             </div>
@@ -825,7 +825,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">Freely Modify and Extend</a>
+              <h5 class="title text-dark">Freely Modify and Extend</h5>
               <p class="text-muted mt-2">Flexible architecture design, supports custom fields, processes and business logic to meet personalized needs</p>
               <i class="uil uil-cube full-img"></i>
             </div>
@@ -838,7 +838,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-shield-check rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">Open Source, Full Data Control</a>
+              <h5 class="title text-dark">Open Source, Full Data Control</h5>
               <p class="text-muted mt-2">Open source code, private data deployment, ensuring enterprise data security and autonomous control</p>
               <i class="uil uil-shield-check full-img"></i>
             </div>
@@ -1169,7 +1169,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={dashboardDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
@@ -1188,7 +1188,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={leadConversionDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
@@ -1207,7 +1207,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={opportunityDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>

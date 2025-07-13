@@ -711,7 +711,7 @@ const opportunityDemoGuides = {
 
 <BaseCN
   title="无代码、灵活且强大的 CRM 基座"
-  description="NocoBase 的 CRM 开箱即用，提供极致定制能力、保障数据主权。你可以在此基础上任意增加数据、区块、功能及页面，使其完全符合你的业务需求。"
+  description="NocoBase 的 CRM 开箱即用，提供极致定制能力、保障数据主权。你可以在此基础上任意扩展字段、区块、功能及页面，使其完全符合你的业务需求。"
   keywords="NocoBase CRM, 客户关系管理, 无代码CRM, 开源CRM, 自定义CRM"
 >
   <!-- Hero/Banner Start -->
@@ -769,7 +769,7 @@ const opportunityDemoGuides = {
                 <source src="https://static-docs.nocobase.com/NocoBase_CRM 中文.mp4" type="video/mp4">
                 您的浏览器不支持 HTML5 视频。
               </video>
-              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
                 <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
               </div>
             </div>
@@ -799,7 +799,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-wrench rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">完全无代码搭建，极易上手</a>
+              <h5 class="title text-dark">完全无代码搭建，极易上手</h5>
               <p class="text-muted mt-2">无需编程技能，通过拖拽和配置即可快速搭建专属CRM系统</p>
               <i class="uil uil-wrench full-img"></i>
             </div>
@@ -812,7 +812,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-database rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">包括 CRM 所有基础功能</a>
+              <h5 class="title text-dark">包括 CRM 所有基础功能</h5>
               <p class="text-muted mt-2">客户管理、销售管道、商机跟进、联系人管理、邮件沟通、审批流程等完整功能模块</p>
               <i class="uil uil-database full-img"></i>
             </div>
@@ -825,7 +825,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">可以在此基础上任意修改、扩展</a>
+              <h5 class="title text-dark">可以在此基础上任意修改、扩展</h5>
               <p class="text-muted mt-2">灵活的架构设计，支持自定义字段、流程和业务逻辑，满足个性化需求</p>
               <i class="uil uil-cube full-img"></i>
             </div>
@@ -838,7 +838,7 @@ const opportunityDemoGuides = {
               <i class="uil uil-shield-check rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <a href="javascript:void(0)" class="title h5 text-dark">开源，数据完全掌控</a>
+              <h5 class="title text-dark">开源，数据完全掌控</h5>
               <p class="text-muted mt-2">开源代码，数据私有部署，确保企业数据安全和自主控制</p>
               <i class="uil uil-shield-check full-img"></i>
             </div>
@@ -1404,7 +1404,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={dashboardDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
@@ -1423,7 +1423,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={leadConversionDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
@@ -1442,7 +1442,7 @@ const opportunityDemoGuides = {
       </div>
       <div class="demo-modal-body">
         <div class="demo-content-wrapper">
-          <InteractiveDemo guides={opportunityDemoGuides} hideTitle={true} />
+          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
@@ -1661,8 +1661,10 @@ const opportunityDemoGuides = {
 .demo-modal-body {
   padding: 2rem;
   flex: 1;
-  overflow-y: auto;
+  overflow: hidden;
   min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes fadeIn {
@@ -1684,13 +1686,16 @@ const opportunityDemoGuides = {
 /* 弹窗内交互演示的基础样式 */
 .demo-content-wrapper {
   margin-top: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
-/* CRM页面特定的弹窗响应式调整 */
-@media (max-width: 768px) {
-  .demo-modal .demo-modal-body {
-    padding: 1rem !important;
-  }
+/* 弹窗内图片自适应 - 由JavaScript控制 */
+.demo-modal img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 响应式弹窗 */
@@ -1707,6 +1712,16 @@ const opportunityDemoGuides = {
   
   .demo-modal-body {
     padding: 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .demo-modal-header {
+    padding: 0.5rem 1rem;
+  }
+  
+  .demo-modal-body {
+    padding: 0.5rem;
   }
 }
 
