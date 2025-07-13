@@ -13,7 +13,7 @@ Before starting, please ensure:
 
 ### Method 1: Restore Using Backup Manager (Recommended for Pro/Enterprise Users)
 
-This method performs one-click restoration through NocoBase's built-in "Backup Manager" (Pro/Enterprise Edition) plugin, with the simplest operation. However, it has certain requirements for environment and user version.
+This method performs one-click restoration through NocoBase's built-in "[Backup Manager](https://docs.nocobase.com/handbook/backups)" (Pro/Enterprise Edition) plugin, with the simplest operation. However, it has certain requirements for environment and user version.
 
 #### Key Features
 
@@ -121,13 +121,13 @@ Configure your NocoBase startup parameters (such as environment variables `DB_HO
 ### Summary and Comparison
 
 
-| Feature                      | Method 1: Backup Manager                                                                                        | Method 2: Direct SQL Import                                                                                                |
-| :--------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| **Applicable Users**         | **Pro/Enterprise Edition** users                                                                                | **All users** (including Community Edition)                                                                                |
-| **Operation Ease**           | ⭐⭐⭐⭐⭐ (Very simple, UI operation)                                                                          | ⭐⭐⭐ (Requires basic database knowledge)                                                                                 |
-| **Environment Requirements** | **Very strict**, database versions etc. need high compatibility                                                 | **Lenient**, only needs database connection capability                                                                     |
-| **Plugin Dependencies**      | **Strong dependency**, missing plugins will cause restoration failure                                           | **Weak dependency**, missing plugins don't affect core functions                                                           |
-| **System Files**             | **✅ Complete preservation** (templates, uploaded files, etc.)                                                  | **❌ Will be lost** (templates, uploaded files, etc.)                                                                      |
-| **Recommended Scenarios**    | Pro/Enterprise users with controllable, consistent environments, requiring complete functionality demonstration | Missing some plugins, pursuing high compatibility and flexibility, non-Pro/Enterprise users, acceptable file function loss |
+| Feature                   | Method 1: Backup Manager                                                                                        | Method 2: Direct SQL Import                                                                                                                                                                          |
+| :------------------------ | :-------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Applicable Users**      | **Pro/Enterprise Edition** users                                                                                | **All users** (including Community Edition)                                                                                                                                                          |
+| **Operation Simplicity**  | ⭐⭐⭐⭐⭐ (Very easy, UI-based operation)                                                                      | ⭐⭐⭐ (Requires basic database knowledge)                                                                                                                                                           |
+| **Environment Needs**     | **Strict**: Database, system version, etc. must be highly compatible                                            | **General**: Only requires database compatibility                                                                                                                                                    |
+| **Plugin Dependency**     | **Strong dependency**: Restoration will fail if any required plugin is missing                                  | **Depends on plugins**. Data can be imported independently, and the system has basic functionality. However, if the corresponding plugin is missing, related features will **not be usable at all**. |
+| **System Files**          | **✅ Fully preserved** (print templates, uploaded files, etc.)                                                  | **❌ Will be lost** (print templates, uploaded files, etc.)                                                                                                                                          |
+| **Recommended Scenarios** | Pro/Enterprise users with controllable, consistent environments, requiring complete functionality demonstration | Missing some plugins, pursuing high compatibility and flexibility, non-Pro/Enterprise users, acceptable file function loss                                                                           |
 
 We hope this tutorial helps you successfully deploy the CRM Demo. If you encounter any problems during the operation, please feel free to contact us!
