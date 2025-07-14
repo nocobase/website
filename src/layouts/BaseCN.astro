@@ -181,6 +181,40 @@ const meta = {
         border-radius: 8px !important;
       }
 
+      /* 自定义搜索按钮样式 */
+      .search-btn {
+        float: right;
+        line-height: 68px;
+        text-align: right;
+        padding-left: 15px;
+        position: relative;
+        margin-top: 4px;
+      }
+
+      .custom-search-button {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        margin-top: 20px; /* 调整到与GitHub图标对齐 */
+      }
+
+      .custom-search-button:hover {
+        background: #f0f0f0;
+        transform: scale(1.05);
+      }
+
+      .custom-search-button i {
+        font-size: 27px; /* 更大的图标 */
+        color: #24292f; /* 黑色，与GitHub图标颜色一致 */
+      }
+
       /* GitHub图标样式 */
       .github {
         float: right;
@@ -206,7 +240,7 @@ const meta = {
       }
 
       .github-btn i {
-        font-size: 20px;
+        font-size: 23px;
         position: relative;
       }
 
@@ -259,26 +293,21 @@ const meta = {
         color: #6c757d !important;
       }
 
+      /* 隐藏原来的DocSearch按钮 */
+      .docsearch-nocobase {
+        display: none !important;
+      }
+
       /* 移动端适配 */
       @media (max-width: 768px) {
-        .github {
+        .github, .search-btn {
           display: none;
-        }
-        
-        .docsearch-nocobase .DocSearch-Button {
-          width: 36px !important; /* 移动端稍小的圆形按钮 */
-          height: 36px !important;
-        }
-        
-        .docsearch-nocobase .DocSearch-Search-Icon {
-          width: 16px !important;
-          height: 16px !important;
         }
       }
       
       @media (min-width: 769px) {
         .github-btn i {
-          font-size: 26px;
+          font-size: 28px;
         }
         
         .github-stars {
@@ -435,6 +464,11 @@ const meta = {
             <span class="github-stars">16k</span>
           </a>
         </div>
+        <div class="search-btn">
+          <button id="custom-search-btn" class="custom-search-button" title="搜索">
+            <i class="uil uil-search"></i>
+          </button>
+        </div>
         <!-- End Logo container-->
         <div class="menu-extras">
           <div class="menu-item">
@@ -450,7 +484,7 @@ const meta = {
           </div>
         </div>
 
-        <div class="menu-extras" style="margin-top: 17px">
+        <div class="menu-extras" style="margin-top: 17px; display: none;">
           <div id="docsearch" class="docsearch-nocobase"></div>
         </div>
 
@@ -493,7 +527,8 @@ const meta = {
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 插件</li>
                     <li><a href="/cn/plugins" title="NocoBase 全部插件" class="sub-menu-item">全部插件</a></li>
-                    <li><a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件点数</a></li>
+                    <li><a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件包</a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">第三方插件 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
                   </ul>
                 </li>
 
@@ -511,7 +546,7 @@ const meta = {
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-users-alt fs-6 align-middle"></i> 合作伙伴</li>
                     <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">查找 NocoBase 伙伴 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
-                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">加入我们 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">成为合作伙伴 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
                   </ul>
                 </li>
               </ul>
@@ -974,6 +1009,39 @@ const meta = {
           attributes: true 
         });
       }
+
+      // 自定义搜索按钮功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const customSearchBtn = document.getElementById('custom-search-btn');
+        
+        function triggerDocSearch() {
+          // 尝试多种方式触发DocSearch
+          const searchButton = document.querySelector('.DocSearch-Button');
+          if (searchButton) {
+            searchButton.click();
+            return;
+          }
+          
+          // 尝试通过docsearch实例触发
+          if (window.docsearch) {
+            const modal = document.querySelector('.DocSearch-Modal');
+            if (modal) {
+              modal.style.display = 'block';
+            }
+          }
+          
+          // 尝试触发键盘事件
+          document.dispatchEvent(new KeyboardEvent('keydown', {
+            key: 'k',
+            metaKey: true,
+            bubbles: true
+          }));
+        }
+        
+        if (customSearchBtn) {
+          customSearchBtn.addEventListener('click', triggerDocSearch);
+        }
+      });
     </script>
   </body>
 </html>
