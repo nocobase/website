@@ -2,7 +2,7 @@
 
 * [GitHub のスター数上位 40 の開発者ツール](https://www.nocobase.com/ja/blog/github-open-source-developer-tools)
 * [2025 年 GitHub 上で最も成長が速い上位 15 のオープンソース低コードプロジェクト](https://www.nocobase.com/ja/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
+* [GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
 * [GitHub上で人気のオープンソース管理ダッシュボード11選](https://www.nocobase.com/ja/blog/top-11-open-source-admin-dashboard-projects-on-github)
 
 今回は、**Webアプリケーション**にフォーカスしました。GitHub上の [web-application](https://github.com/topics/web-application) と [web-app](https://github.com/topics/web-app) という2つのトピックから、スター数が1万以上のプロジェクトをピックアップ。ブログ、ダッシュボード、ローコードツールなど、実用性の高いプロジェクトを紹介します。
@@ -205,12 +205,11 @@ GoネイティブのHTTPサーバーをベースに、MVC構造、テンプレ�
 
 今後も、GitHub上の注目プロジェクトを紹介していきますので、次回もお楽しみに！
 
-
 **関連読み物：**
 
 * [GitHub のスター数上位 40 の開発者ツール](https://www.nocobase.com/ja/blog/github-open-source-developer-tools)
 * [2025 年 GitHub 上で最も成長が速い上位 15 のオープンソース低コードプロジェクト](https://www.nocobase.com/ja/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
+* [GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
 * [GitHub上で人気のオープンソース管理ダッシュボード11選](https://www.nocobase.com/ja/blog/top-11-open-source-admin-dashboard-projects-on-github)
-* [⭐️ GitHubの星が最も多いオープンソースワークフロープロジェクトトップ10](https://www.nocobase.com/ja/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
+* [GitHubの星が最も多いオープンソースワークフロープロジェクトトップ10](https://www.nocobase.com/ja/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
 * [GitHub Stars数が最も多いオープンソースアプリビルダーのツールトップ4](https://www.nocobase.com/ja/blog/app-builder-tools)
