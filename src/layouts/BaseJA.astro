@@ -163,18 +163,18 @@ const meta = {
 
     <!-- Custom Css for megamenu width -->
     <style>
-        /* 调整megamenu宽度，让它更窄更紧凑 */
-        @media (min-width: 1025px) {
-            #topnav .navigation-menu > li .submenu.megamenu {
-                width: 780px !important;
-            }
+              /* 调整megamenu宽度，提供更多空间避免溢出 */
+      @media (min-width: 1025px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 850px !important;
         }
+      }
 
-        @media screen and (max-width: 1024px) and (min-width: 992px) {
-            #topnav .navigation-menu > li .submenu.megamenu {
-                width: 700px !important;
-            }
+      @media screen and (max-width: 1024px) and (min-width: 992px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 750px !important;
         }
+      }
 
         /* 调整megamenu每列的宽度，使3列布局更均匀 */
         @media (min-width: 992px) {
