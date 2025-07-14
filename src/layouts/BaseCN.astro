@@ -180,6 +180,115 @@ const meta = {
         padding: 2px 6px !important;
         border-radius: 8px !important;
       }
+
+      /* GitHub图标样式 */
+      .github {
+        float: right;
+        line-height: 68px;
+        text-align: right;
+        padding-left: 15px;
+        position: relative;
+        margin-top: 4px; /* 往下挪一点 */
+      }
+
+      .github-btn {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none !important;
+        color: #24292f !important;
+        transition: all 0.2s ease;
+        position: relative;
+      }
+
+      .github-btn:hover {
+        color: #000 !important;
+        transform: scale(1.05);
+      }
+
+      .github-btn i {
+        font-size: 20px;
+        position: relative;
+      }
+
+      .github-stars {
+        background: #ffffff;
+        color: #24292f;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 1px 4px;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        line-height: 1.2;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        min-width: 20px;
+        text-align: center;
+      }
+
+      /* 搜索框样式 - 改为图标按钮 */
+      .docsearch-nocobase .DocSearch-Button {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background: transparent !important;
+        border: 1px solid #e9ecef !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .docsearch-nocobase .DocSearch-Button:hover {
+        background: #f8f9fa !important;
+        border-color: #dee2e6 !important;
+      }
+
+      /* 隐藏默认的文本和快捷键 */
+      .docsearch-nocobase .DocSearch-Button-Placeholder,
+      .docsearch-nocobase .DocSearch-Button-Keys {
+        display: none !important;
+      }
+
+      /* 搜索图标样式 */
+      .docsearch-nocobase .DocSearch-Search-Icon {
+        width: 18px !important;
+        height: 18px !important;
+        color: #6c757d !important;
+      }
+
+      /* 移动端适配 */
+      @media (max-width: 768px) {
+        .github {
+          display: none;
+        }
+        
+        .docsearch-nocobase .DocSearch-Button {
+          width: 36px !important; /* 移动端稍小的圆形按钮 */
+          height: 36px !important;
+        }
+        
+        .docsearch-nocobase .DocSearch-Search-Icon {
+          width: 16px !important;
+          height: 16px !important;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        .github-btn i {
+          font-size: 26px;
+        }
+        
+        .github-stars {
+          font-size: 10px;
+          padding: 1px 4px;
+          top: 15px;
+          right: -8px;
+          min-width: 20px;
+        }
+      }
     </style>
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
@@ -315,6 +424,17 @@ const meta = {
         <div class="lang">
           <LanguageSwitcher />
         </div>
+        <div class="github">
+          <a
+            href="https://github.com/nocobase/nocobase"
+            target="_blank"
+            class="github-btn"
+            title="GitHub - NocoBase"
+          >
+            <i class="uil uil-github"></i>
+            <span class="github-stars">16k</span>
+          </a>
+        </div>
         <!-- End Logo container-->
         <div class="menu-extras">
           <div class="menu-item">
@@ -330,7 +450,7 @@ const meta = {
           </div>
         </div>
 
-        <div class="menu-extras" style="margin-top: 20px">
+        <div class="menu-extras" style="margin-top: 17px">
           <div id="docsearch" class="docsearch-nocobase"></div>
         </div>
 
@@ -793,19 +913,7 @@ const meta = {
       apiKey="c0a0f5b4b19b09b8e4f2fb7b6d9c7b5e"
       indexName="nocobase"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const searchButton = document.querySelector('.DocSearch-Button');
-        if (searchButton) {
-          const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
-          const keys = searchButton.querySelector('.DocSearch-Button-Keys');
 
-          // 隐藏文本和快捷键
-          if (placeholder) (placeholder as HTMLElement).style.display = 'none';
-          if (keys) (keys as HTMLElement).style.display = 'none';
-        }
-      });
-    </script>
 
     <!-- common  -->
     <style>

@@ -113,24 +113,7 @@
                       </div><!--end row-->
                   </div><!--end timeline item-->
 
-                  <div class="timeline-item mt-5 pt-2">
-                      <div class="row">
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                              <div class="duration date-label-left position-relative text-md-end">
-                                  <h5>White Label Edition, Contact Us</h5>
-                                  <small class="text-muted mb-0">Provide solutions for brand customization.</small>
-                              </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
-                              <div class="event event-description-right float-left text-start">
-                                  <h6 class="title mb-1 text-capitalize">When you also need</h6>
-                                  <ul class="text-muted">
-                                      <li>Integrate NocoBase into your own products to offer vertical no-code/low-code solutions.</li>
-                                  </ul>
-                              </div>
-                          </div><!--end col-->
-                      </div><!--end row-->
-                  </div><!--end timeline item-->
+
               </div><!--end timeline page-->
               <!-- TIMELINE END -->
           </div><!--end col-->

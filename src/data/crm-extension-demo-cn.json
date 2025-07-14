@@ -1,22 +1,22 @@
 {
-  "title": "亲自试一试，3 步扩展一个 CRM 功能",
-  "subtitle": "无需编写一行代码，即可为您的CRM增加智能跟进提醒功能。跟随引导，体验NocoBase的强大扩展能力。",
+  "title": "3 步扩展一个 CRM 功能",
+  "subtitle": "以增加智能跟进提醒功能为例，体验如何无代码实现功能扩展。",
   "mainSteps": [
     {
       "number": "01",
-      "title": "扩展：为CRM增加新字段与交互",
+      "title": "增加数据字段",
       "id": "workflow-guide1",
       "targetStepId": "01"
     },
     {
       "number": "02",
-      "title": "自动化：创建工作流连接功能",
+      "title": "配置 UI 与交互",
       "id": "workflow-guide2",
       "targetStepId": "02"
     },
     {
       "number": "03",
-      "title": "验证：测试全新的自动化功能",
+      "title": "创建自动化工作流",
       "id": "workflow-guide3",
       "targetStepId": "03"
     }
@@ -26,7 +26,7 @@
       "id": "step-0-1",
       "title": "扩展数据模型",
       "description": "一切功能都始于数据。首先，我们进入\"线索\"数据表，为它增加新的能力。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_9670a524-3ff0-47b0-abea-78671cee573g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9670a524-3ff0-47b0-abea-78671cee573g_1.png",
       "button": {
         "id": "button1",
         "label": "一切功能都始于数据。首先，我们进入\"线索\"数据表，为它增加新的能力。",
@@ -47,7 +47,7 @@
       "id": "step-1-1",
       "title": "添加\"提醒\"相关字段",
       "description": "要实现提醒，首先需要有地方存储提醒信息。我们为线索表添加\"提醒时间\"和\"提醒备注\"两个关键字段。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_d903f38a-5ac1-4646-8cf8-0e19e366c6fg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d903f38a-5ac1-4646-8cf8-0e19e366c6fg_1.png",
       "button": {
         "id": "button3",
         "label": "添加\"提醒\"相关字段",
@@ -63,7 +63,7 @@
       "id": "step-1-2",
       "title": "创建\"新提醒\"按钮",
       "description": "数据就绪，现在为用户创建一个操作入口。我们在详情页添加一个按钮，用于弹出设置提醒的窗口。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_863c7579-e38d-4bc3-84d7-df3a92fbb38g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_863c7579-e38d-4bc3-84d7-df3a92fbb38g_1.png",
       "button": {
         "id": "button4",
         "label": "创建\"新提醒\"按钮",
@@ -79,7 +79,7 @@
       "id": "step-1-3",
       "title": "设计提醒弹窗样式",
       "description": "精心设计弹窗的标题、按钮文字，让交互体验更加清晰、友好。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_b19c5042-ee71-4727-8629-79a1cfca5cbg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b19c5042-ee71-4727-8629-79a1cfca5cbg_1.png",
       "button": {
         "id": "button5",
         "label": "设计提醒弹窗样式",
@@ -95,7 +95,7 @@
       "id": "step-1-4",
       "title": "在弹窗内置入表单",
       "description": "将我们第一步创建的\"提醒时间\"和\"提醒备注\"字段拖入弹窗，构成一个完整的数据录入表单。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_d4d4bdf2-f3da-4f5d-82ff-0b5150f4adag.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d4d4bdf2-f3da-4f5d-82ff-0b5150f4adag_1.png",
       "button": {
         "id": "button6",
         "label": "在弹窗内置入表单",
@@ -111,7 +111,7 @@
       "id": "step-1-5",
       "title": "在详情页显示提醒信息",
       "description": "为了方便随时查看已设定的提醒，我们也将这两个字段直接显示在线索详情页的下方。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_b6e04849-177f-48c3-97ef-90b26a62587g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b6e04849-177f-48c3-97ef-90b26a62587g_1.png",
       "button": {
         "id": "button7",
         "label": "在详情页显示提醒信息",
@@ -132,7 +132,7 @@
       "id": "step-2-1",
       "title": "创建消息通道",
       "description": "自动化流程需要一个出口来发送消息。我们先创建一个专用的\"线索通知\"渠道。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_0b2fd9b4-7051-419f-9ce2-52acf66aaa1g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_0b2fd9b4-7051-419f-9ce2-52acf66aaa1g_1.png",
       "button": {
         "id": "button9",
         "label": "创建消息通道",
@@ -148,7 +148,7 @@
       "id": "step-2-2",
       "title": "新建定时工作流",
       "description": "开始构建核心逻辑：创建一个名为\"发送通知\"的工作流，并将其触发器设置为\"定时任务\"，让它在特定时间自动运行。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_f14012a1-a6fc-4d95-81b9-f8b0a807f07g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f14012a1-a6fc-4d95-81b9-f8b0a807f07g_1.png",
       "button": {
         "id": "button10",
         "label": "新建定时工作流",
@@ -164,7 +164,7 @@
       "id": "step-2-3",
       "title": "设置工作流的触发时机",
       "description": "配置工作流的起点：让它基于\"线索\"表的\"提醒时间\"字段来定时执行。当系统时间到达提醒时间时，工作流便会为该线索启动。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_dc006aeb-a299-4cf4-8610-0804d59b2d2g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_dc006aeb-a299-4cf4-8610-0804d59b2d2g_1.png",
       "button": {
         "id": "button11",
         "label": "设置工作流的触发时机",
@@ -180,7 +180,7 @@
       "id": "step-2-4",
       "title": "设计动态通知内容",
       "description": "添加一个通知节点，选择刚创建的渠道，并精心编排通知内容。您可以使用变量，动态插入线索名称、备注等信息。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_9877b2a2-b378-43c5-8a2f-8c5900321c8g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9877b2a2-b378-43c5-8a2f-8c5900321c8g_1.png",
       "button": {
         "id": "button12",
         "label": "设计动态通知内容",
@@ -196,7 +196,7 @@
       "id": "step-2-5",
       "title": "配置通知跳转链接",
       "description": "为了让通知更实用，我们将配置一个可点击的链接。先复制详情页的URL作为模板，再将末尾的ID替换为\"触发数据ID\"变量，这样每条通知都能精准链接到正确的线索。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_18de1d6b-1daf-4160-917e-0f376d601cdg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_18de1d6b-1daf-4160-917e-0f376d601cdg_1.png",
       "button": {
         "id": "button13",
         "label": "配置通知跳转链接",
@@ -212,7 +212,7 @@
       "id": "step-2-6",
       "title": "启用工作流",
       "description": "万事俱备，点击\"启用\"，让我们的自动化规则正式生效！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_4d64cbf7-b238-47c0-bd92-a7f7b7e8c2eg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_4d64cbf7-b238-47c0-bd92-a7f7b7e8c2eg_1.png",
       "button": {
         "id": "button14",
         "label": "启用工作流",
@@ -233,7 +233,7 @@
       "id": "step-3-1",
       "title": "关联前端按钮与工作流",
       "description": "打通前后端：回到提醒弹窗的配置，将其\"提交\"按钮的操作绑定到我们刚刚创建的\"发送通知\"工作流。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_f96a8a67-7ab2-4e34-95b1-aeb2822bb6ag.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f96a8a67-7ab2-4e34-95b1-aeb2822bb6ag_1.png",
       "button": {
         "id": "button16",
         "label": "关联前端按钮与工作流",
@@ -249,7 +249,7 @@
       "id": "step-3-2",
       "title": "实战测试：创建一条提醒",
       "description": "现在，以用户的身份来实际操作一次。打开一条线索，通过我们制作的弹窗，设定一个几分钟后的提醒。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_9d3641a4-5075-49b9-8afa-3be5eb96ad0g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9d3641a4-5075-49b9-8afa-3be5eb96ad0g_1.png",
       "button": {
         "id": "button17",
         "label": "实战测试：创建一条提醒",
@@ -265,7 +265,7 @@
       "id": "step-3-3",
       "title": "接收定时提醒",
       "description": "到了设定的时间，系统自动执行了工作流，看，一条内容准确的通知已经发送到我们的消息中心！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_e3048bb9-d9ac-421c-9a9b-74c846a68c3g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_e3048bb9-d9ac-421c-9a9b-74c846a68c3g_1.png",
       "button": {
         "id": "button18",
         "label": "接收定时提醒",
@@ -281,7 +281,7 @@
       "id": "step-3-4",
       "title": "验证跳转链接",
       "description": "点击通知中的\"查看\"按钮，验证我们配置的动态链接是否生效。页面成功跳转到了对应的线索详情页，整个自动化流程完美闭环！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o5_3708bc62-3741-4aa1-9e40-29234a610fbg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_3708bc62-3741-4aa1-9e40-29234a610fbg_1.png",
       "button": {
         "id": "button19",
         "label": "验证跳转链接",
@@ -294,4 +294,4 @@
       }
     }
   ]
-} 
+}

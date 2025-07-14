@@ -26,7 +26,7 @@
       "id": "step-start",
       "title": "Visual Sales",
       "description": "All opportunities are displayed centrally here. You can clearly see the stage of each opportunity and quickly edit key information anytime.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1.png",
       "button": {
         "id": "button1",
         "label": "Visual Opportunity Management",
@@ -47,7 +47,7 @@
       "id": "step-1-1",
       "title": "Dive into Opportunity Details",
       "description": "Click the opportunity name to enter the dedicated details page. Here you'll find all information and tools related to this opportunity.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg_1.png",
       "button": {
         "id": "button3",
         "label": "Dive into Opportunity Details",
@@ -63,7 +63,7 @@
       "id": "step-1-2",
       "title": "Analyze Competition",
       "description": "Know yourself and your competitors to win every battle. Record and analyze competitors' strengths and weaknesses here to develop more effective win strategies.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g_1.png",
       "button": {
         "id": "button4",
         "label": "Analyze Competition",
@@ -79,7 +79,7 @@
       "id": "step-1-3",
       "title": "Record Follow-up Progress",
       "description": "Every communication with customers, every progress made, can be recorded here as follow-up comments, facilitating team collaboration and subsequent review.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button5",
         "label": "Record Follow-up Progress",
@@ -100,7 +100,7 @@
       "id": "step-2-1",
       "title": "Initiate Quote Process",
       "description": "On the opportunity details page, directly click to initiate quotation. The system will automatically associate customer information and start quote creation.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button7",
         "label": "Initiate Quote Process",
@@ -116,7 +116,7 @@
       "id": "step-2-2",
       "title": "Fill Quote Details",
       "description": "Add specific product, quantity, price, and discount information to generate a comprehensive and professional quote.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g_1.png",
       "button": {
         "id": "button8",
         "label": "Fill Quote Details",
@@ -137,7 +137,7 @@
       "id": "step-3-1",
       "title": "Convert Opportunity to Order",
       "description": "After quote approval, the \"New Order\" button on the opportunity details page will be activated. Click it to transfer all information to a new order, completing the crucial conversion.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button10",
         "label": "Convert Opportunity to Order",
@@ -153,7 +153,7 @@
       "id": "step-3-2",
       "title": "Confirm Final Order Information",
       "description": "Finally confirm contract number, delivery details, and other order information to ensure everything is accurate.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg_1.png",
       "button": {
         "id": "button11",
         "label": "Confirm Final Order Information",
@@ -169,7 +169,7 @@
       "id": "step-3-3",
       "title": "Success! Deal Won!",
       "description": "Click submit, and this opportunity is officially closed and converted to sales revenue. Congratulations!",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g_1.png",
       "button": {
         "id": "button12",
         "label": "Success! Deal Won!",
@@ -185,7 +185,7 @@
       "id": "step-3-4",
       "title": "View Results in Order Center",
       "description": "After process completion, automatically jump to the order list. You can see the successfully created order, ready to start the delivery process.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g_1.png",
       "button": {
         "id": "button13",
         "label": "View Results in Order Center",
@@ -198,4 +198,4 @@
       }
     }
   ]
-} 
+}

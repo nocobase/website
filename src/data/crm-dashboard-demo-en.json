@@ -26,7 +26,7 @@
       "id": "step-start",
       "title": "Start Your Data Exploration Journey",
       "description": "Welcome to the dashboard! This is your data cockpit, aggregating all key business information for a clear overview.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png",
       "button": {
         "id": "button1",
         "label": "Start Data Exploration Journey",
@@ -47,7 +47,7 @@
       "id": "step-1-1",
       "title": "Interactive Data View",
       "description": "Charts are not static. Hover over any part of the sales funnel to interactively view detailed data for that stage.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g_1.png",
       "button": {
         "id": "button3",
         "label": "Interactive Data View",
@@ -68,7 +68,7 @@
       "id": "step-2-1",
       "title": "Add Filter Block",
       "description": "Below the charts, you can easily add a filter block to serve as a controller for the data dashboard.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g_1.png",
       "button": {
         "id": "button5",
         "label": "Add Filter Block",
@@ -84,7 +84,7 @@
       "id": "step-2-2",
       "title": "Configure Filter Fields",
       "description": "First, we need to define the filter criteria. For example, select the \"Owner\" field to filter data by salesperson.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g_1.png",
       "button": {
         "id": "button6",
         "label": "Configure Filter Fields",
@@ -100,7 +100,7 @@
       "id": "step-2-3",
       "title": "Link Filter Actions",
       "description": "Then, associate this filter with the charts on the page, allowing filter operations to actually control chart display.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g_1.png",
       "button": {
         "id": "button7",
         "label": "Link Filter Actions",
@@ -116,7 +116,7 @@
       "id": "step-2-4",
       "title": "Apply Filter and View Results",
       "description": "Now, try filtering by an owner - all charts on the dashboard will update instantly based on your selection.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
       "button": {
         "id": "button8",
         "label": "Apply Filter and View Results",
@@ -137,7 +137,7 @@
       "id": "step-3-1",
       "title": "Go to \"Account Insights\" Page",
       "description": "Let's switch to the \"Account Insights\" page, where charts can be configured more freely.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
       "button": {
         "id": "button10",
         "label": "Go to Account Insights Page",
@@ -153,7 +153,7 @@
       "id": "step-3-2",
       "title": "Open Chart Configuration",
       "description": "In configuration mode, each chart has a configuration button in the top right corner. Click it to start your customization journey.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g_1.png",
       "button": {
         "id": "button11",
         "label": "Open Chart Configuration",
@@ -169,7 +169,7 @@
       "id": "step-3-3",
       "title": "Switch Chart Type",
       "description": "You can choose the most suitable presentation form from the rich chart library. For example, let's change it from a pie chart to a bar chart.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g_1.png",
       "button": {
         "id": "button12",
         "label": "Switch Chart Type",
@@ -185,7 +185,7 @@
       "id": "step-3-4",
       "title": "Group by Color",
       "description": "For deeper analysis, we can add a dimension to the chart, such as color grouping by \"Customer Level\".",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
       "button": {
         "id": "button13",
         "label": "Group by Type, Color Changes with Type",
@@ -201,7 +201,7 @@
       "id": "step-3-5",
       "title": "Save Chart Settings",
       "description": "When satisfied with the configuration, click \"OK\" to save the changes.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
       "button": {
         "id": "button14",
         "label": "Save Chart Settings",
@@ -217,7 +217,7 @@
       "id": "step-3-6",
       "title": "View the Refreshed Chart",
       "description": "Look! The chart has been successfully updated according to your requirements, and you can now analyze customer data from a new dimension.",
-      "image": "https://static-docs.nocobase.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g_1.png",
       "button": {
         "id": "button15",
         "label": "Chart Successfully Updated!",
@@ -230,4 +230,4 @@
       }
     }
   ]
-} 
+}

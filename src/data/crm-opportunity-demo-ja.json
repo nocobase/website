@@ -26,7 +26,7 @@
       "id": "step-start",
       "title": "ビジュアル営業",
       "description": "すべてのオポチュニティがここに集中表示され、各機会の段階を明確に見て、重要な情報をいつでも迅速に編集できます。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1.png",
       "button": {
         "id": "button1",
         "label": "ビジュアルオポチュニティ管理",
@@ -47,7 +47,7 @@
       "id": "step-1-1",
       "title": "オポチュニティ詳細に深入り",
       "description": "オポチュニティ名をクリックして、専用詳細ページに入ります。ここにはこのオポチュニティに関連するすべての情報とツールが集約されています。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_32939aa0-9e24-4f6e-9023-924beadbfaeg_1.png",
       "button": {
         "id": "button3",
         "label": "オポチュニティ詳細に深入り",
@@ -63,7 +63,7 @@
       "id": "step-1-2",
       "title": "競争状況の分析",
       "description": "敵を知り己を知れば百戦殆うからず。ここで競合他社の長所と短所を記録・分析し、より効果的な受注戦略を策定します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_c078c2ef-b865-48ee-a48c-da52799fa27g_1.png",
       "button": {
         "id": "button4",
         "label": "競争状況の分析",
@@ -79,7 +79,7 @@
       "id": "step-1-3",
       "title": "フォローアップの進捗記録",
       "description": "顧客との各コミュニケーション、各進展は、ここでフォローアップコメントとして記録でき、チーム連携と後続のレビューを促進します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button5",
         "label": "フォローアップの進捗記録",
@@ -100,7 +100,7 @@
       "id": "step-2-1",
       "title": "見積プロセスの開始",
       "description": "オポチュニティ詳細ページで、直接クリックして見積りを開始します。システムが自動的に顧客情報を関連付けて、見積書作成を開始します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button7",
         "label": "見積プロセスの開始",
@@ -116,7 +116,7 @@
       "id": "step-2-2",
       "title": "見積詳細の記入",
       "description": "具体的な製品、数量、価格、割引情報を追加し、内容詳細で形式プロフェッショナルな見積書を生成します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_ef9ad754-57fc-4b9e-b9a6-edd93f690e4g_1.png",
       "button": {
         "id": "button8",
         "label": "見積詳細の記入",
@@ -137,7 +137,7 @@
       "id": "step-3-1",
       "title": "オポチュニティの注文転換",
       "description": "見積承認後、オポチュニティ詳細ページの「新規注文」ボタンが有効になります。それをクリックして、すべての情報を新規注文に移行し、重要な転換を完了します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_6981f22f-c1c2-49a8-b0ef-185723cda45g_1.png",
       "button": {
         "id": "button10",
         "label": "オポチュニティの注文転換",
@@ -153,7 +153,7 @@
       "id": "step-3-2",
       "title": "最終注文情報の確認",
       "description": "ここで契約番号、配送詳細などの注文情報を最終確認し、すべてが正確であることを確保します。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_caf47eb2-254c-4048-a1ad-42a309c18cbg_1.png",
       "button": {
         "id": "button11",
         "label": "最終注文情報の確認",
@@ -169,7 +169,7 @@
       "id": "step-3-3",
       "title": "成功！受注達成！",
       "description": "提出をクリックすると、このオポチュニティは正式に成約し、営業収益に転換されます。おめでとうございます！",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_c9cee26a-6117-431c-b42e-4f89a808b46g_1.png",
       "button": {
         "id": "button12",
         "label": "成功！受注達成！",
@@ -185,7 +185,7 @@
       "id": "step-3-4",
       "title": "注文センターで成果を確認",
       "description": "プロセス完了後、注文一覧に自動的にジャンプします。作成されたばかりの成功注文を確認でき、配送プロセスを開始する準備が整います。",
-      "image": "https://static-docs.nocobase.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g.png",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o4_a09b31a8-bb1d-4bde-985f-818764dd539g_1.png",
       "button": {
         "id": "button13",
         "label": "注文センターで成果を確認",
@@ -198,4 +198,4 @@
       }
     }
   ]
-} 
+}

@@ -222,6 +222,72 @@ const meta = {
         padding: 2px 6px !important;
         border-radius: 8px !important;
       }
+
+      /* GitHub图标样式 */
+      .github {
+        float: right;
+        line-height: 68px;
+        text-align: right;
+        padding-left: 15px;
+        position: relative;
+      }
+
+      .github-btn {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none !important;
+        color: #24292f !important;
+        transition: all 0.2s ease;
+        position: relative;
+      }
+
+      .github-btn:hover {
+        color: #000 !important;
+        transform: scale(1.05);
+      }
+
+      .github-btn i {
+        font-size: 20px;
+        position: relative;
+      }
+
+      .github-stars {
+        background: #ffffff;
+        color: #24292f;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 1px 4px;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        line-height: 1.2;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        min-width: 20px;
+        text-align: center;
+      }
+
+      /* 移动端适配 */
+      @media (max-width: 768px) {
+        .github {
+          display: none;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        .github-btn i {
+          font-size: 30px;
+        }
+        
+        .github-stars {
+          font-size: 10px;
+          padding: 1px 4px;
+          top: 13px;
+          right: -8px;
+          min-width: 20px;
+        }
+      }
     </style>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
@@ -289,6 +355,17 @@ const meta = {
         <div class="lang">
           <LanguageSwitcher />
         </div>
+        <div class="github">
+          <a
+            href="https://github.com/nocobase/nocobase"
+            target="_blank"
+            class="github-btn"
+            title="GitHub - NocoBase"
+          >
+            <i class="uil uil-github"></i>
+            <span class="github-stars">16k</span>
+          </a>
+        </div>
         <!-- End Logo container-->
         <div class="menu-extras">
           <div class="menu-item">
@@ -304,7 +381,7 @@ const meta = {
           </div>
         </div>
 
-        <div class="menu-extras" style="margin-top: 20px">
+        <div class="menu-extras" style="margin-top: 17px">
           <div id="docsearch" class="docsearch-nocobase"></div>
         </div>
 
@@ -327,15 +404,6 @@ const meta = {
                     class="sub-menu-item"
                     target="_blank"
                     >GitHub<i class="uil uil-star"></i>16k</a
-                  >
-                </li>
-                <li>
-                  <a
-                    rel="nofollow"
-                    href="https://gitee.com/nocobase/nocobase"
-                    class="sub-menu-item"
-                    target="_blank"
-                    >Gitee <span class="git-project-gvp">GVP</span></a
                   >
                 </li>
               </ul>
