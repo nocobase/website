@@ -1,0 +1,233 @@
+{
+  "title": "Master Dashboard: Dynamic Charts & Filtering",
+  "subtitle": "Experience sales funnels, performance rankings, and other dynamic charts in just three steps, and master powerful data filtering capabilities.",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Lead Insights",
+      "id": "dashboard-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "Create Dynamic Filters",
+      "id": "dashboard-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "Customize Charts",
+      "id": "dashboard-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Start Your Data Exploration Journey",
+      "description": "Welcome to the dashboard! This is your data cockpit, aggregating all key business information for a clear overview.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "Start Data Exploration Journey",
+        "position": {
+          "right": "49.3%",
+          "top": "41.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "Step 1: Lead Insights",
+      "description": "First, let's dive into the \"Lead Analytics\" dashboard to see how to quickly gain business insights through visual charts."
+    },
+    {
+      "id": "step-1-1",
+      "title": "Interactive Data View",
+      "description": "Charts are not static. Hover over any part of the sales funnel to interactively view detailed data for that stage.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g_1.png",
+      "button": {
+        "id": "button3",
+        "label": "Interactive Data View",
+        "position": {
+          "left": "23.8%",
+          "top": "29.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Step 2: Create Dynamic Filters",
+      "description": "For more precise analysis, let's add a filter to the dashboard to make data queries more flexible."
+    },
+    {
+      "id": "step-2-1",
+      "title": "Add Filter Block",
+      "description": "Below the charts, you can easily add a filter block to serve as a controller for the data dashboard.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g_1.png",
+      "button": {
+        "id": "button5",
+        "label": "Add Filter Block",
+        "position": {
+          "left": "18.5%",
+          "top": "90.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "Configure Filter Fields",
+      "description": "First, we need to define the filter criteria. For example, select the \"Owner\" field to filter data by salesperson.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g_1.png",
+      "button": {
+        "id": "button6",
+        "label": "Configure Filter Fields",
+        "position": {
+          "left": "18.0%",
+          "top": "25.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "Link Filter Actions",
+      "description": "Then, associate this filter with the charts on the page, allowing filter operations to actually control chart display.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "Link Filter Actions",
+        "position": {
+          "right": "8.4%",
+          "top": "30.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "Apply Filter and View Results",
+      "description": "Now, try filtering by an owner - all charts on the dashboard will update instantly based on your selection.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button8",
+        "label": "Apply Filter and View Results",
+        "position": {
+          "right": "19.4%",
+          "top": "29.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Step 3: Customize Charts",
+      "description": "If the preset charts don't meet your needs, you can customize charts at any time."
+    },
+    {
+      "id": "step-3-1",
+      "title": "Go to \"Account Insights\" Page",
+      "description": "Let's switch to the \"Account Insights\" page, where charts can be configured more freely.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "Go to Account Insights Page",
+        "position": {
+          "left": "6.0%",
+          "top": "35.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "Open Chart Configuration",
+      "description": "In configuration mode, each chart has a configuration button in the top right corner. Click it to start your customization journey.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g_1.png",
+      "button": {
+        "id": "button11",
+        "label": "Open Chart Configuration",
+        "position": {
+          "right": "3.3%",
+          "top": "17.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "Switch Chart Type",
+      "description": "You can choose the most suitable presentation form from the rich chart library. For example, let's change it from a pie chart to a bar chart.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g_1.png",
+      "button": {
+        "id": "button12",
+        "label": "Switch Chart Type",
+        "position": {
+          "left": "39.5%",
+          "top": "41.7%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "Group by Color",
+      "description": "For deeper analysis, we can add a dimension to the chart, such as color grouping by \"Customer Level\".",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button13",
+        "label": "Group by Type, Color Changes with Type",
+        "position": {
+          "left": "36.8%",
+          "top": "61.0%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "Save Chart Settings",
+      "description": "When satisfied with the configuration, click \"OK\" to save the changes.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button14",
+        "label": "Save Chart Settings",
+        "position": {
+          "right": "5.9%",
+          "top": "88.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-6",
+      "title": "View the Refreshed Chart",
+      "description": "Look! The chart has been successfully updated according to your requirements, and you can now analyze customer data from a new dimension.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g_1.png",
+      "button": {
+        "id": "button15",
+        "label": "Chart Successfully Updated!",
+        "position": {
+          "right": "22.6%",
+          "top": "35.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

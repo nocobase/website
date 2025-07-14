@@ -1,0 +1,996 @@
+---
+import BaseCN from "../../../layouts/BaseCN.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// 导入交互演示数据
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-cn.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-cn.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-cn.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-cn.json";
+
+// 获取插件数据
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// 定义CRM中使用的插件名称映射
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print"
+];
+
+// 根据插件名称匹配插件数据
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// 获取CRM相关插件
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// 调试信息
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
+---
+
+<BaseCN
+  title="无代码、灵活且强大的 CRM 基座"
+  description="开箱即用。提供极致的定制能力，且完全保障数据主权。你可以在此基础上任意扩展字段、区块、功能及页面，使其完全符合你的业务需求。"
+  keywords="NocoBase CRM, 客户关系管理, 无代码CRM, 开源CRM, 自定义CRM"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">无代码、灵活且强大的<br/>CRM 基座</h1>
+            <p class="para-desc text-muted">开箱即用。提供极致的定制能力，且完全保障数据主权。你可以在此基础上任意扩展字段、区块、功能及页面，使其完全符合你的业务需求。</p>
+            
+            <!-- 标签 -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">适用行业：</span>
+                  <span class="badge bg-soft-primary">全行业</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 开发者信息 -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">开发者：</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 按钮 -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live demo
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>复制到自己的环境
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- CRM 预览视频 -->
+            <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
+              <video 
+                id="crm-preview-video"
+                class="w-100 rounded shadow"
+                poster="https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g.png"
+                preload="none"
+                style="cursor: pointer; max-height: 400px; object-fit: cover;"
+              >
+                <source src="https://static-docs.nocobase.com/NocoBase_CRM 中文.mp4" type="video/mp4">
+                你的浏览器不支持 HTML5 视频。
+              </video>
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
+                <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">NocoBase CRM 的独特之处</h4>
+            <p class="para-desc mx-auto text-muted mb-0">与 SaaS 和其他 CRM 系统不同，NocoBase CRM 灵活且完全掌控</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-wrench rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">完全无代码构建</h5>
+              <p class="text-muted mt-2">无需编程技能，也能对 CRM 进行个性化改造</p>
+              <i class="uil uil-wrench full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-database rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">涵盖市面上 CRM 常用功能</h5>
+              <p class="text-muted mt-2">客户管理、销售管道、商机跟进、联系人管理、邮件沟通、 审批流程等功能模块</p>
+              <i class="uil uil-database full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">可以任意修改且极易扩展</h5>
+              <p class="text-muted mt-2">支持自定义字段、流程和业务逻辑，灵活的架构设计让"二次开发"变得简单</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">开源，数据完全掌控</h5>
+              <p class="text-muted mt-2">对系统代码和系统数据完全掌控，确保企业数据安全</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Interactive Demo Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">试试 NocoBase CRM 的功能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">几次点击，快速体验</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">仪表板数据展示</h5>
+              <!-- 交互演示入口 -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openDashboardDemo()">
+                <!-- 背景图片 -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- 按钮 -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-play me-2"></i>互动演示
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">线索转化流程</h5>
+              <!-- 线索转化演示入口 -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openLeadDemo()">
+                <!-- 背景图片 -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- 按钮 -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-user-plus me-2"></i>互动演示
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">商机转化为订单</h5>
+              <!-- 商机转化演示入口 -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openOpportunityDemo()">
+                <!-- 背景图片 -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- 按钮 -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-money-bill me-2"></i>互动演示
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Interactive Demo End -->
+
+  <!-- Try CRM Extension Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="crm-demo-wrap">
+          <!-- 使用扩展功能交互演示 -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end crm-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>立即体验
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>复制到自己的环境
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try CRM Extension End -->
+
+  <!-- CRM Tutorial and Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM 开发与扩展教程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">学习如何使用 NocoBase 构建和扩展专业的 CRM 系统</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-database h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">基础搭建与自定义</h5>
+                <p class="text-muted text-center">学习创建数据模型、自定义字段关系、配置权限和界面布局</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-pie h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">数据分析与可视化</h5>
+                <p class="text-muted text-center">构建销售数据分析仪表板，实现业绩监控和数据可视化</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-setting h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">流程自动化</h5>
+                <p class="text-muted text-center">设置工作流实现销售流程、审批流程和业务规则自动化</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-link h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">系统集成与扩展</h5>
+                <p class="text-muted text-center">集成第三方系统、移动端适配和其他高级扩展功能</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CRM Tutorial and Extension End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM 中所用到的商业插件</h4>
+            <p class="para-desc mx-auto text-muted mb-0">CRM 核心开源，商业插件丰富功能</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- 动态生成插件卡片 -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_cn || plugin.name;
+          const displayDescription = plugin.description_cn || plugin.description;
+          const docsUrl = plugin.docs_cn || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">详情</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升级</span><br>
+                          <a href="/cn/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_1_year_cn || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升级</span><br>
+                          <a class="text-muted" href="/cn/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_cny || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- 占位卡片，保持布局整齐 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">更多插件即将推出</h6>
+                  <p class="text-muted small">我们正在开发更多有用的商业插件，敬请期待</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/cn/plugins-commercial" class="btn btn-primary me-3">查看全部商业插件</a>
+          <a href="/cn/commercial" class="btn btn-outline-primary">了解定价详情</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section bg-light" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">如何使用？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">三个步骤快速部署 NocoBase CRM 到你的环境</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安装 NocoBase</h5>
+                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 到你的服务器</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装文档</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下载 CRM 模板文件</h5>
+                <p class="text-muted mt-2">获取 NocoBase CRM 系统的完整模板文件，支持两种格式</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">下载 SQL 文件</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">下载备份文件 (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>在系统内还原</h5>
+                <p class="text-muted mt-2">将模板文件导入到你的 NocoBase 系统中完成部署</p>
+              </div>
+              <div class="mt-3">
+                <a href="/cn/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">还原教程</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">准备好使用 NocoBase CRM 了吗？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            1 分钟时间部署一个专属 CRM demo。从配置数据结构，到界面布局，再到流程逻辑，这一切都是通过 NocoBase 的可视化配置完成，无需写一行代码。
+          </p>
+          <div class="mt-4">
+            <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live demo
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>复制到自己的环境
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <!-- Dashboard Demo Modal -->
+  <div id="dashboard-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeDashboardDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{dashboardDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeDashboardDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dashboard Demo Modal End -->
+
+  <!-- Lead Conversion Demo Modal -->
+  <div id="lead-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeLeadDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{leadConversionDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeLeadDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lead Conversion Demo Modal End -->
+
+  <!-- Opportunity Conversion Demo Modal -->
+  <div id="opportunity-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeOpportunityDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{opportunityDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeOpportunityDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Opportunity Conversion Demo Modal End -->
+
+  <ShapeFooter />
+</BaseCN>
+
+<style>
+/* CRM Demo Styles - 参考首页样式 */
+#crm-demo-wrap {
+  position: relative;
+}
+
+#crm-steps-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.demo_step {
+  position: absolute;
+  display: none;
+}
+
+.demo_step.demo_step_start {
+  display: block;
+}
+
+.demo_step img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.demo_tooltip {
+  position: relative;
+}
+
+/* 步骤导航样式 */
+.steps-title {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.steps-title:hover {
+  transform: translateY(-2px);
+}
+
+.steps-title.active {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* 工作流程箭头 */
+.process-arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #e9ecef;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.d-none-arrow:before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .process-arrow:before {
+    display: none;
+  }
+}
+
+/* 商业插件卡片样式 */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+/* 开发者logo样式 */
+.developer-logo {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.developer-logo:hover {
+  opacity: 0.8;
+}
+
+/* 交互演示卡片样式 */
+.interactive-demo-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.interactive-demo-card:hover {
+  transform: translateY(-2px);
+  border-color: #2f55d4;
+  box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
+}
+
+/* 弹窗样式 */
+.demo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.demo-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.demo-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 95vw;
+  max-height: 90vh;
+  width: 1200px;
+  overflow: hidden;
+  animation: slideInUp 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.demo-modal-header .modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.demo-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.demo-modal-close {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.demo-modal-close:hover {
+  color: #dc3545;
+}
+
+.demo-modal-body {
+  padding: 2rem;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 弹窗内交互演示的基础样式 */
+.demo-content-wrapper {
+  margin-top: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* 弹窗内图片自适应 - 由JavaScript控制 */
+.demo-modal img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 响应式弹窗 */
+@media (max-width: 768px) {
+  .demo-modal-content {
+    width: 95vw;
+    margin: 1rem;
+    max-height: 95vh;
+  }
+  
+  .demo-modal-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .demo-modal-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .demo-modal-header {
+    padding: 0.5rem 1rem;
+  }
+  
+  .demo-modal-body {
+    padding: 0.5rem;
+  }
+}
+
+
+</style>
+
+<script is:inline>
+// 弹窗控制函数 - 定义在全局作用域
+function openDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // 等待弹窗显示后初始化交互演示
+    setTimeout(function() {
+      // 为弹窗内的演示创建独立实例
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// 线索转化演示弹窗控制函数
+function openLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // 等待弹窗显示后初始化交互演示
+    setTimeout(function() {
+      // 为弹窗内的演示创建独立实例
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// 商机转化演示弹窗控制函数
+function openOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // 等待弹窗显示后初始化交互演示
+    setTimeout(function() {
+      // 为弹窗内的演示创建独立实例
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('crm-preview-video');
+  const playButton = document.getElementById('play-button');
+  
+  if (!video || !playButton) return;
+  
+  // 只在初始状态点击大播放按钮时触发播放
+  playButton.addEventListener('click', function() {
+    // 添加控制栏
+    video.setAttribute('controls', '');
+    video.setAttribute('controlslist', 'nodownload');
+    
+    // 开始播放并隐藏播放按钮
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  // 视频结束时显示播放按钮，移除控制栏
+  video.addEventListener('ended', function() {
+    playButton.style.display = 'block';
+    video.removeAttribute('controls');
+  });
+
+  // ESC键关闭弹窗
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeDashboardDemo();
+      closeLeadDemo();
+      closeOpportunityDemo();
+    }
+  });
+});
+</script> 

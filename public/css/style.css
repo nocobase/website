@@ -5882,13 +5882,18 @@ html[dir=rtl] .tns-visually-hidden {
 .title-heading .heading.heading-lg {
   font-size: 60px !important;
 }
+.heading-tag {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 0 20px 20px 0;
+}
 @media (max-width: 768px) {
   .title-heading .heading {
     font-size: 35px !important;
   }
 }
 .title-heading .para-desc {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .section-title .title {
@@ -6802,7 +6807,7 @@ body[data-layout-mode=dark] .mode-light {
 }
 .work-process.process-arrow:after {
   width: 50%;
-  height: 40px;
+  height: 20px;
   top: 8px;
   left: 78%;
   background: url("../images/process.png") center center no-repeat;
@@ -6849,21 +6854,21 @@ body[data-layout-mode=dark] .mode-light {
   color: #40a9ff;
 }
 /* Demo */
-#steps-guide .active h6{
+.steps-guide .active h6{
   color: #2f55d4!important;
 }
 .steps-title {
   cursor: pointer;
 }
-#demo-wrap {
+.demo-wrap {
   position: relative;
   display: block;
   width: 100%;
 }
-#steps-wrap {
+.steps-wrap {
   opacity: 0;
 }
-#steps-wrap.loaded {
+.steps-wrap.loaded {
   opacity: 1;
 }
 .steps-groups {
@@ -6913,141 +6918,11 @@ body[data-layout-mode=dark] .mode-light {
   left: 0;
   top: 0;
 }
-#button1 {
-  left: 46%;
-  top: 45%;
-}
-#button2 {
-  right: 12%;
-  top: 6%;
-}
-#button3 {
-  right: 13%;
-  top: 22%;
-}
-#button4 {
-  right: 17%;
-  top: 52%;
-}
-#button5 {
-  right: 10%;
-  top: 30%;
-}
-#button6 {
-  right: 70%;
-  top: 30%;
-}
-#button7 {
-  right: 15%;
-  top: 2%;
-}
-#button8 {
-  left: 16%;
-  top: 7%;
-}
-#button9 {
-  left: 8%;
-  top: 7%;
-}
-#button10 {
-  left: 18%;
-  top: 17%;
-}
-#button11 {
-  left: 40%;
-  top: 30%;
-}
-#button12 {
-  right: 10%;
-  top: 7%;
-}
-#button13 {
-  right: 50%;
-  top: 17%;
-}
-#button14 {
-  right: 12%;
-  top: 16%;
-}
-#button15 {
-  left: 20%;
-  top: 47%;
-}
-#button16 {
-  right: 4%;
-  top: 6%;
-}
-#button17 {
-  right: 30%;
-  top: 20%;
-}
-#button18 {
-  right: 5%;
-  top: 30%;
-}
-#button19 {
-  right: 37%;
-  top: 10%;
-}
-#button20 {
-  right: 50%;
-  top: 20%;
-}
-#button21 {
-  right: 10%;
-  top: 34%;
-}
-#button22 {
-  right: 7%;
-  top: 36%;
-}
-#button23 {
-  right: 35%;
-  top: 35%;
-}
-#button24 {
-  right: 18%;
-  top: 2%;
-}
-#button25 {
-  left: 46%;
-  top: 45%;
-}
-#button26 {
-  left: 27%;
-  top: 20%;
-}
-#button27 {
-  right: 3%;
-  top: 30%;
-}
-
-#button28 {
-  right: 10%;
-  top: 47%;
-}
-
-#button29 {
-  right: 7%;
-  top: 4%;
-}
-#button30 {
-  right: 40%;
-  top: 37%;
-}
-#button31 {
-  right: 15%;
-  top: 4%;
-}
-#button32 {
-  left: 46%;
-  top: 45%;
-}
 .demo_tooltip {
   --balloon-color: #fa541c;
   --balloon-font-size: 14px;
 }
-#how-it-works {
+.how-it-works {
   position: relative;
 }
 .demo-entrance {

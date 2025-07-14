@@ -1,0 +1,1004 @@
+---
+export interface DemoStep {
+  id: string;
+  title: string;
+  description: string;
+  image?: string;
+  button?: {
+    id: string;
+    label: string;
+    position: {
+      left?: string;
+      right?: string;
+      top: string;
+    };
+    balloonLength?: string;
+    balloonPos: string;
+  };
+}
+
+export interface DemoGuide {
+  title: string;
+  subtitle?: string;
+  mainSteps: Array<{
+    number: string;
+    title: string;
+    id: string;
+    targetStepId?: string;
+  }>;
+  steps: DemoStep[];
+}
+
+interface Props {
+  guides: DemoGuide;
+  hideTitle?: boolean;
+  hideHeader?: boolean;
+}
+
+const { guides, hideTitle = false, hideHeader = false } = Astro.props;
+---
+
+{!hideHeader && (
+  <div class="steps-guide">
+    <div class="section-title">
+      {!hideTitle && <h3 class="title mb-4">{guides.title}</h3>}
+      {guides.subtitle && <p class="text-muted para-desc mx-auto mb-0">{guides.subtitle}</p>}
+    </div>
+    <div class="row">
+      {guides.mainSteps.map((step, index) => (
+        <div class="col-md-4">
+          <div class={`card features feature-clean work-process bg-transparent border-0 text-center ${index < guides.mainSteps.length - 1 ? 'process-arrow' : ''}`}>
+            <div class={`card-body steps-title ${step.id}`} id={step.id}>
+              <h6 class="text-dark">
+                <span class="h2 fw-bold step">{step.number}. </span>{step.title}
+              </h6>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+<div class="demo-wrap">
+  {guides.steps[0]?.image && (
+    <img
+      src={guides.steps[0]?.image}
+      alt="NocoBase 演示界面"
+      class="img-fluid rounded-md shadow-lg"
+      style="z-index: 0;"
+    />
+  )}
+
+  <div class="steps-wrap">
+    {guides.steps.map((step, index) => (
+      <div class={`demo_step ${index === 0 ? 'demo_step_start' : ''}`} data-step={index}>
+        {step.image && (
+          <div class="image-container">
+            <img
+              data-src={step.image}
+              src={index === 0 ? step.image : ""}
+              alt="NocoBase 演示界面"
+            />
+            {step.button && (
+              <div
+                class="demo-button demo_tooltip"
+                data-step-button={index}
+                aria-label={step.button.label}
+                data-balloon-length={step.button.balloonLength || "medium"}
+                data-balloon-pos={step.button.balloonPos}
+                style={`${step.button.position.left ? `left: ${step.button.position.left};` : ''}${step.button.position.right ? `right: ${step.button.position.right};` : ''}top: ${step.button.position.top};`}
+              >
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 45 45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#fa541c"
+                  aria-label="interactive-button"
+                >
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    transform="translate(1 1)"
+                    stroke-width="2"
+                  >
+                    <circle
+                      cx="22"
+                      cy="22"
+                      r="6"
+                      stroke-opacity="0"
+                    >
+                      <animate
+                        attributeName="r"
+                        begin="1.5s"
+                        dur="3s"
+                        values="6;22"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="stroke-opacity"
+                        begin="1.5s"
+                        dur="3s"
+                        values="1;0"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="stroke-width"
+                        begin="1.5s"
+                        dur="3s"
+                        values="2;0"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle cx="22" cy="22" r="8">
+                      <animate
+                        attributeName="r"
+                        begin="0s"
+                        dur="1.5s"
+                        values="6;1;2;3;4;5;6"
+                        calcMode="linear"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle 
+                      cx="22" 
+                      cy="22" 
+                      r="3" 
+                      fill="#fa541c" 
+                      stroke="none"
+                    />
+                  </g>
+                </svg>
+              </div>
+            )}
+          </div>
+        )}
+        {step.image === undefined && (
+          <div class="chapter-overlay">
+            <div class="chapter-content">
+              <div class="chapter-number">{step.id}</div>
+              <br>
+              <div class="chapter-title">{step.title}</div>
+            </div>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+
+  .work-process {
+    position: relative;
+  }
+
+  .work-process .step {
+    opacity: 0.3;
+  }
+
+  .steps-title {
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .card-body h6 {
+    margin: 0 3rem 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .work-process .card-body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* 激活状态的步骤样式 */
+  .steps-guide .active h6 {
+    color: #2f55d4 !important;
+  }
+
+  .steps-guide .active .step {
+    opacity: 1 !important;
+  }
+
+  /* 演示区域样式 */
+  .demo-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .steps-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+  }
+
+  .steps-wrap.loaded {
+    opacity: 1 !important;
+  }
+
+  /* 步骤样式 */
+  .demo_step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .demo_step.demo_step_start {
+    display: block;
+  }
+
+  /* 图片容器 - 关键：让按钮相对于图片定位 */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .demo_step img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* 交互按钮样式 - 相对于image-container定位 */
+  .image-container .demo-button {
+    position: absolute !important;
+    width: 80px !important;
+    height: 80px !important;
+    display: none !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    border-radius: 50% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    /* 默认按钮居中对齐 */
+    transform: translate(-50%, -50%) !important;
+  }
+  
+  /* 使用right定位的按钮需要不同的transform */
+  .image-container .demo-button[style*="right:"] {
+    transform: translate(50%, -50%) !important;
+  }
+
+  .image-container .demo-button.show {
+    display: flex !important;
+  }
+
+  .image-container .demo-button:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+  }
+  
+  /* 使用right定位的按钮hover时也需要调整transform */
+  .image-container .demo-button[style*="right:"]:hover {
+    transform: translate(50%, -50%) scale(1.1) !important;
+  }
+  
+  /* 确保tooltip在使用transform时正确显示 */
+  .image-container .demo-button.auto-tooltip:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+  }
+  
+  .image-container .demo-button[style*="right:"].auto-tooltip:hover {
+    transform: translate(50%, -50%) scale(1.1) !important;
+  }
+
+  /* 弹窗环境下的通用样式 - 覆盖原始样式以适应弹窗 */
+  .demo-modal .demo-wrap {
+    overflow: visible !important;
+    flex: 1 !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .demo-modal .demo_step {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .demo-modal .demo_step.demo_step_start {
+    display: flex !important;
+  }
+
+  .demo-modal .image-container {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  /* 弹窗环境中的样式 - 图片大小由JavaScript控制 */
+  .demo-modal .demo_step img,
+  .demo-modal .image-container img,
+  .demo-modal img[src] {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .demo-modal .image-container .demo-button {
+    position: absolute;
+    z-index: 20;
+  }
+  
+  .demo-modal .image-container .demo-button[style*="left:"] {
+    transform: translate(-50%, -50%);
+  }
+  
+  .demo-modal .image-container .demo-button[style*="right:"] {
+    transform: translate(50%, -50%);
+  }
+
+  .image-container .demo-button svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* 移除默认tooltip的before伪元素，但保留我们自定义的箭头 */
+  .demo_tooltip:not(.auto-tooltip)::before {
+    display: none !important;
+  }
+
+  .demo_tooltip:hover:not(.auto-tooltip)::before {
+    display: none !important;
+  }
+
+  /* 提示框基础样式 */
+  .demo-button::after {
+    content: attr(aria-label);
+    position: absolute;
+    background: rgba(250, 84, 28, 0.9);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 100;
+    max-width: 200px;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.15s ease-out;
+  }
+  
+  /* 显示提示框时的样式 */
+  .demo-button.auto-tooltip::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 上方提示 */
+  .demo-button.auto-tooltip[data-balloon-pos="up"]::after {
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 8px;
+    transform: translateX(-50%);
+  }
+
+  /* 下方提示 */
+  .demo-button.auto-tooltip[data-balloon-pos="down"]::after {
+    top: 100%;
+    left: 50%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+  }
+
+  /* 左侧提示 */
+  .demo-button.auto-tooltip[data-balloon-pos="left"]::after {
+    right: 100%;
+    top: 50%;
+    margin-right: 8px;
+    transform: translateY(-50%);
+    max-width: 180px;
+  }
+
+  /* 右侧提示 */
+  .demo-button.auto-tooltip[data-balloon-pos="right"]::after {
+    left: 100%;
+    top: 50%;
+    margin-left: 8px;
+    transform: translateY(-50%);
+    max-width: 180px;
+  }
+
+
+
+
+
+
+
+  /* 章节页样式 */
+  .chapter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f9fa;
+    background-image: 
+      radial-gradient(circle at 25% 25%, #e9ecef 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, #e9ecef 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  /* 弹窗中的章节页样式 */
+  .demo-modal .chapter-overlay {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .chapter-content {
+    text-align: center;
+    color: #333;
+    max-width: 600px;
+    padding: 10%;
+  }
+
+  .chapter-number {
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 0;
+    opacity: 0.3;
+    color: #6c757d;
+  }
+
+  .chapter-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #495057;
+  }
+
+
+
+  /* 可点击步骤的样式 */
+  .clickable-step {
+    position: relative;
+  }
+
+  .clickable-step::after {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(42, 85, 212, 0.9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 100;
+    animation: pulse 2s infinite;
+    white-space: nowrap;
+  }
+
+  /* 确保步骤容器正确定位 */
+  .demo_step {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: none !important;
+  }
+
+  .demo_step.demo_step_start {
+    display: block !important;
+  }
+
+  /* 修复可能的布局问题 */
+  .demo-wrap {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.8;
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1.05);
+    }
+    100% {
+      opacity: 0.8;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+
+  /* 响应式样式 */
+  @media (max-width: 768px) {
+    /* 移动设备上的提示框样式优化 */
+    .demo-button.auto-tooltip::after {
+      max-width: 150px;
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+    
+    .demo-button.auto-tooltip[data-balloon-pos="left"]::after,
+    .demo-button.auto-tooltip[data-balloon-pos="right"]::after {
+      max-width: 120px;
+    }
+
+    /* 移动设备上的章节页样式 */
+    .chapter-number {
+      font-size: 48px !important;
+    }
+
+    .chapter-title {
+      font-size: 18px !important;
+    }
+
+    .chapter-content {
+      padding: 8% !important;
+    }
+  }
+</style>
+
+<script>
+  interface DemoInterface {
+    currentStep: number;
+    steps: NodeListOf<Element>;
+    buttons: NodeListOf<Element>;
+    chapterSteps: number[];
+    init(): void;
+    bindEvents(): void;
+    goToStep(stepIndex: number): void;
+    jumpToMainStep(mainStepIndex: number): void;
+  }
+
+  class InteractiveDemo implements DemoInterface {
+    currentStep: number;
+    steps: NodeListOf<Element>;
+    buttons: NodeListOf<Element>;
+    chapterSteps: number[];
+    container: ParentNode;
+
+    constructor(container?: Element) {
+      this.container = container || document;
+      this.currentStep = 0;
+      this.steps = this.container.querySelectorAll('.demo_step');
+      this.buttons = this.container.querySelectorAll('.demo-button');
+      this.chapterSteps = this.findChapterSteps();
+      this.init();
+      
+      // 添加窗口大小改变监听器
+      if (typeof window !== 'undefined') {
+        window.addEventListener('resize', () => {
+          this.forceImageResize();
+        });
+      }
+    }
+
+    findChapterSteps(): number[] {
+      const chapterSteps: number[] = [];
+      this.steps.forEach((step, index) => {
+        if (step.querySelector('.chapter-overlay')) {
+          chapterSteps.push(index);
+        }
+      });
+      return chapterSteps;
+    }
+
+    init(): void {
+      this.bindEvents();
+      this.preloadImages();
+      this.initializeFirstStep();
+      this.updateStepNavigation();
+      this.markStepsLoaded();
+      this.forceImageResize();
+    }
+
+    markStepsLoaded(): void {
+      const stepsWrap = this.container.querySelector('.steps-wrap');
+      if (stepsWrap) {
+        stepsWrap.classList.add('loaded');
+      }
+    }
+
+    forceImageResize(): void {
+      const containerElement = this.container as HTMLElement;
+      const isInModal = document.querySelector('.demo-modal');
+      
+      if (isInModal) {
+        const images = this.container.querySelectorAll('img');
+        images.forEach((img: HTMLImageElement) => {
+          // 获取弹窗内容区域的实际宽度
+          const modalContent = document.querySelector('.demo-modal-content') as HTMLElement;
+          const modalBody = document.querySelector('.demo-modal-body') as HTMLElement;
+          
+          let availableWidth = window.innerWidth * 0.9 - 80; // 默认值
+          let availableHeight = window.innerHeight * 0.85 - 160; // 默认值
+          
+          // 如果能获取到弹窗内容区域，使用其实际尺寸
+          if (modalContent && modalBody) {
+            const modalRect = modalContent.getBoundingClientRect();
+            const bodyRect = modalBody.getBoundingClientRect();
+            
+            availableWidth = Math.min(bodyRect.width - 40, modalRect.width - 40);
+            availableHeight = Math.min(bodyRect.height - 40, modalRect.height - 80);
+          }
+          
+          // 强制设置样式，覆盖任何现有样式
+          img.style.setProperty('width', 'auto', 'important');
+          img.style.setProperty('height', 'auto', 'important');
+          img.style.setProperty('max-width', `${availableWidth}px`, 'important');
+          img.style.setProperty('max-height', `${availableHeight}px`, 'important');
+          img.style.setProperty('object-fit', 'contain', 'important');
+          img.style.setProperty('display', 'block', 'important');
+          img.style.setProperty('margin', '0 auto', 'important');
+          img.style.setProperty('min-width', '0', 'important');
+          img.style.setProperty('min-height', '0', 'important');
+          img.style.setProperty('position', 'static', 'important');
+          img.style.setProperty('transform', 'none', 'important');
+        });
+        
+        // 重新计算热点按钮位置
+        this.recalculateButtonPositions();
+      }
+    }
+
+    recalculateButtonPositions(): void {
+      const currentStepElement = this.steps[this.currentStep] as HTMLElement;
+      const imgContainer = currentStepElement.querySelector('.image-container') as HTMLElement;
+      const img = currentStepElement.querySelector('img') as HTMLImageElement;
+      
+      if (!imgContainer || !img) return;
+      
+      // 等待图片加载完成
+      const checkImageAndReposition = () => {
+        if (img.complete && img.naturalWidth > 0) {
+          this.repositionButtons(imgContainer, img);
+        } else {
+          setTimeout(checkImageAndReposition, 10);
+        }
+      };
+      
+      checkImageAndReposition();
+    }
+
+    repositionButtons(container: HTMLElement, img: HTMLImageElement): void {
+      const button = container.querySelector('.demo-button') as HTMLElement;
+      if (!button) return;
+      
+      // 获取图片的实际显示尺寸
+      const imgRect = img.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      
+      // 计算图片在容器中的位置（居中显示）
+      const imgDisplayWidth = imgRect.width;
+      const imgDisplayHeight = imgRect.height;
+      const containerWidth = containerRect.width;
+      const containerHeight = containerRect.height;
+      
+      // 计算图片在容器中的偏移量
+      const imgOffsetX = (containerWidth - imgDisplayWidth) / 2;
+      const imgOffsetY = (containerHeight - imgDisplayHeight) / 2;
+      
+      // 获取原始位置数据
+      const buttonData = button.dataset;
+      const originalLeft = buttonData.originalLeft || button.style.left;
+      const originalRight = buttonData.originalRight || button.style.right;
+      const originalTop = buttonData.originalTop || button.style.top;
+      
+      // 保存原始位置数据（只保存一次）
+      if (!buttonData.originalLeft && !buttonData.originalRight) {
+        buttonData.originalLeft = originalLeft;
+        buttonData.originalRight = originalRight;
+        buttonData.originalTop = originalTop;
+      }
+      
+      // 基于图片实际尺寸重新计算位置
+      if (buttonData.originalLeft) {
+        const leftPercent = parseFloat(buttonData.originalLeft.replace('%', '')) / 100;
+        const newLeft = imgOffsetX + (imgDisplayWidth * leftPercent);
+        button.style.left = `${newLeft}px`;
+        button.style.right = '';
+      }
+      
+      if (buttonData.originalRight) {
+        const rightPercent = parseFloat(buttonData.originalRight.replace('%', '')) / 100;
+        const newRight = containerWidth - imgOffsetX - (imgDisplayWidth * (1 - rightPercent));
+        button.style.right = `${newRight}px`;
+        button.style.left = '';
+      }
+      
+      if (buttonData.originalTop) {
+        const topPercent = parseFloat(buttonData.originalTop.replace('%', '')) / 100;
+        const newTop = imgOffsetY + (imgDisplayHeight * topPercent);
+        button.style.top = `${newTop}px`;
+      }
+    }
+
+    initializeFirstStep(): void {
+      const containerElement = this.container as HTMLElement;
+      const isInModal = containerElement.querySelector && document.querySelector('.demo-modal');
+      
+      this.steps.forEach((step, index) => {
+        const stepElement = step as HTMLElement;
+        if (index === 0) {
+          if (isInModal && containerElement.closest && containerElement.closest('.demo-modal')) {
+            stepElement.style.display = 'flex';
+            stepElement.style.setProperty('display', 'flex', 'important');
+          } else {
+            stepElement.style.display = 'block';
+            stepElement.style.setProperty('display', 'block', 'important');
+          }
+        } else {
+          stepElement.style.display = 'none';
+          stepElement.style.setProperty('display', 'none', 'important');
+        }
+      });
+      
+      this.showCurrentStepButton();
+      this.updateCurrentStepStyle();
+      this.forceImageResize();
+    }
+
+    hideAllButtons(): void {
+      this.buttons.forEach((button) => {
+        const buttonElement = button as HTMLElement;
+        buttonElement.classList.remove('show', 'auto-tooltip');
+        delete buttonElement.dataset.tooltipHidden;
+      });
+    }
+
+    showCurrentStepButton(): void {
+      this.hideAllButtons();
+      
+      const currentButton = this.container.querySelector(`[data-step-button="${this.currentStep}"]`) as HTMLElement;
+      if (currentButton) {
+        currentButton.classList.add('show');
+        
+        setTimeout(() => {
+          if (!currentButton.dataset.tooltipHidden) {
+            currentButton.classList.add('auto-tooltip');
+          }
+        }, 1000);
+      }
+    }
+
+    bindEvents(): void {
+      // 按钮点击事件
+      this.buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const stepIndex = parseInt((button as HTMLElement).dataset.stepButton || '0');
+          
+          if (stepIndex === this.steps.length - 1) {
+            this.goToStep(0);
+          } else {
+            this.goToStep(stepIndex + 1);
+          }
+        });
+
+        button.addEventListener('mouseenter', () => {
+          const buttonElement = button as HTMLElement;
+          if (buttonElement.classList.contains('show')) {
+            delete buttonElement.dataset.tooltipHidden;
+            buttonElement.classList.add('auto-tooltip');
+          }
+        });
+
+        button.addEventListener('mouseleave', () => {
+          const buttonElement = button as HTMLElement;
+          buttonElement.classList.remove('auto-tooltip');
+          buttonElement.dataset.tooltipHidden = 'true';
+        });
+      });
+
+      // 步骤导航点击事件
+      const stepTitles = this.container.querySelectorAll('.steps-title');
+      stepTitles.forEach((stepTitle, index) => {
+        stepTitle.addEventListener('click', () => {
+          this.jumpToMainStep(index);
+        });
+      });
+
+      // 步骤点击事件
+      this.steps.forEach((step, index) => {
+        const stepElement = step as HTMLElement;
+        
+        stepElement.addEventListener('click', (e) => {
+          if ((e.target as HTMLElement).closest('.demo-button')) {
+            return;
+          }
+          
+          if (index === this.currentStep) {
+            const hasButtonConfig = this.container.querySelector(`[data-step-button="${this.currentStep}"]`);
+            if (!hasButtonConfig) {
+              if (index === this.steps.length - 1) {
+                this.goToStep(0);
+              } else {
+                this.goToStep(index + 1);
+              }
+            }
+          }
+        });
+      });
+    }
+
+    updateCurrentStepStyle(): void {
+      this.steps.forEach((step) => {
+        const stepElement = step as HTMLElement;
+        stepElement.classList.remove('clickable-step');
+        stepElement.style.cursor = 'default';
+      });
+
+      const currentStepElement = this.steps[this.currentStep] as HTMLElement;
+      const isChapterPage = currentStepElement.querySelector('.chapter-overlay');
+      const hasButtonConfig = this.container.querySelector(`[data-step-button="${this.currentStep}"]`);
+      
+      if (isChapterPage || !hasButtonConfig) {
+        currentStepElement.classList.add('clickable-step');
+        currentStepElement.style.cursor = 'pointer';
+      }
+    }
+
+    jumpToMainStep(mainStepIndex: number): void {
+      if (mainStepIndex >= 0 && mainStepIndex < this.chapterSteps.length) {
+        this.goToStep(this.chapterSteps[mainStepIndex]);
+      }
+    }
+
+    preloadImages(): void {
+      this.steps.forEach((step) => {
+        const img = step.querySelector('img[data-src]') as HTMLImageElement;
+        if (img && img.dataset.src) {
+          const preloadImg = new Image();
+          preloadImg.onload = () => {
+            img.src = img.dataset.src!;
+          };
+          preloadImg.src = img.dataset.src;
+        }
+      });
+    }
+
+    goToStep(stepIndex: number): void {
+      if (stepIndex >= 0 && stepIndex < this.steps.length) {
+        this.steps.forEach((step) => {
+          const stepElement = step as HTMLElement;
+          stepElement.style.display = 'none';
+          stepElement.style.setProperty('display', 'none', 'important');
+          stepElement.classList.remove('clickable-step');
+        });
+        
+        this.hideAllButtons();
+        
+        this.currentStep = stepIndex;
+        const targetStepElement = this.steps[this.currentStep] as HTMLElement;
+        
+        // 检查是否在弹窗中，如果是则使用flex布局
+        const containerElement = this.container as HTMLElement;
+        const isInModal = containerElement.querySelector && document.querySelector('.demo-modal');
+        if (isInModal && containerElement.closest && containerElement.closest('.demo-modal')) {
+          targetStepElement.style.display = 'flex';
+          targetStepElement.style.setProperty('display', 'flex', 'important');
+        } else {
+          targetStepElement.style.display = 'block';
+          targetStepElement.style.setProperty('display', 'block', 'important');
+        }
+        
+        this.showCurrentStepButton();
+        this.updateCurrentStepStyle();
+        this.updateStepNavigation();
+        this.forceImageResize();
+      }
+    }
+
+    reset(): void {
+      this.goToStep(0);
+    }
+
+    next(): void {
+      if (this.currentStep < this.steps.length - 1) {
+        this.goToStep(this.currentStep + 1);
+      }
+    }
+
+    previous(): void {
+      if (this.currentStep > 0) {
+        this.goToStep(this.currentStep - 1);
+      }
+    }
+
+    activateStep(stepIndex: number): void {
+      const stepTitles = this.container.querySelectorAll('.steps-title');
+      stepTitles.forEach(stepTitle => {
+        stepTitle.classList.remove('active');
+      });
+
+      if (stepTitles[stepIndex]) {
+        stepTitles[stepIndex].classList.add('active');
+      }
+    }
+
+    updateStepNavigation(): void {
+      let mainStepIndex = 0;
+      
+      for (let i = this.chapterSteps.length - 1; i >= 0; i--) {
+        if (this.currentStep >= this.chapterSteps[i]) {
+          mainStepIndex = i;
+          break;
+        }
+      }
+      
+      this.activateStep(mainStepIndex);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // 为每个演示容器创建独立实例
+    const demoContainers = document.querySelectorAll('.steps-guide');
+    demoContainers.forEach(container => {
+      const parentElement = container.parentElement;
+      if (parentElement) {
+        new InteractiveDemo(parentElement);
+      }
+    });
+  });
+
+  declare global {
+    interface Window {
+      InteractiveDemo: typeof InteractiveDemo;
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    window.InteractiveDemo = InteractiveDemo;
+  }
+</script> 

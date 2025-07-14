@@ -1,0 +1,233 @@
+{
+  "title": "ダッシュボードをマスター：動的チャートとフィルタリング",
+  "subtitle": "わずか3ステップで、営業ファネル、業績ランキングなどの動的チャートを体験し、強力なデータフィルタリング機能をマスターしましょう。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "リード分析",
+      "id": "dashboard-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "動的フィルターの作成",
+      "id": "dashboard-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "チャートのカスタマイズ",
+      "id": "dashboard-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "データ探索の旅を始める",
+      "description": "ダッシュボードへようこそ！ここはあなたのデータコックピットで、すべての重要なビジネス情報を集約し、明確な概要を提供します。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "データ探索の旅を始める",
+        "position": {
+          "right": "49.3%",
+          "top": "41.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "ステップ1：リード分析",
+      "description": "まず、「リード分析」ダッシュボードに深く入り、視覚的なチャートを通じてビジネス洞察を迅速に得る方法を見てみましょう。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "インタラクティブなデータ表示",
+      "description": "チャートは静的ではありません。営業ファネルの任意の部分にマウスを合わせると、その段階の詳細データをインタラクティブに表示できます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g_1.png",
+      "button": {
+        "id": "button3",
+        "label": "インタラクティブなデータ表示",
+        "position": {
+          "left": "23.8%",
+          "top": "29.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "ステップ2：動的フィルターの作成",
+      "description": "より精密な分析のために、ダッシュボードにフィルターを追加して、データクエリをより柔軟にしましょう。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "フィルターブロックの追加",
+      "description": "チャートの下に、データダッシュボードのコントローラーとしてフィルターブロックを簡単に追加できます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g_1.png",
+      "button": {
+        "id": "button5",
+        "label": "フィルターブロックの追加",
+        "position": {
+          "left": "18.5%",
+          "top": "90.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "フィルターフィールドの設定",
+      "description": "まず、フィルターの基準を定義する必要があります。例えば、「担当者」フィールドを選択して、営業担当者でデータをフィルターします。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g_1.png",
+      "button": {
+        "id": "button6",
+        "label": "フィルターフィールドの設定",
+        "position": {
+          "left": "18.0%",
+          "top": "25.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "フィルターアクションの関連付け",
+      "description": "次に、このフィルターをページ上のチャートと関連付けて、フィルター操作が実際にチャート表示を制御できるようにします。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "フィルターアクションの関連付け",
+        "position": {
+          "right": "8.4%",
+          "top": "30.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "フィルターを適用して結果を確認",
+      "description": "今度は、担当者でフィルターしてみてください。ダッシュボード上のすべてのチャートが、あなたの選択に基づいて瞬時に更新されます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button8",
+        "label": "フィルターを適用して結果を確認",
+        "position": {
+          "right": "19.4%",
+          "top": "29.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "ステップ3：チャートのカスタマイズ",
+      "description": "プリセットのチャートがニーズに合わない場合は、いつでもチャートをカスタマイズできます。"
+    },
+    {
+      "id": "step-3-1",
+      "title": "「アカウント分析」ページに移動",
+      "description": "「アカウント分析」ページに切り替えましょう。ここではチャートをより自由に設定できます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "アカウント分析ページに移動",
+        "position": {
+          "left": "6.0%",
+          "top": "35.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "チャート設定を開く",
+      "description": "設定モードでは、各チャートの右上に設定ボタンがあります。それをクリックして、カスタマイズの旅を始めましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g_1.png",
+      "button": {
+        "id": "button11",
+        "label": "チャート設定を開く",
+        "position": {
+          "right": "3.3%",
+          "top": "17.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "チャートタイプの切り替え",
+      "description": "豊富なチャートライブラリから最適な表示形式を選択できます。例えば、円グラフから棒グラフに変更してみましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g_1.png",
+      "button": {
+        "id": "button12",
+        "label": "チャートタイプの切り替え",
+        "position": {
+          "left": "39.5%",
+          "top": "41.7%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "色でのグループ化",
+      "description": "より深い分析のために、チャートに次元を追加できます。例えば、「顧客レベル」による色分けグループ化などです。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button13",
+        "label": "タイプでグループ化、色がタイプと連動",
+        "position": {
+          "left": "36.8%",
+          "top": "61.0%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "チャート設定を保存",
+      "description": "設定に満足したら、「OK」をクリックして変更を保存します。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button14",
+        "label": "チャート設定を保存",
+        "position": {
+          "right": "5.9%",
+          "top": "88.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-6",
+      "title": "更新されたチャートを確認",
+      "description": "見てください！チャートがあなたの要求に従って正常に更新され、新しい次元から顧客データを分析できるようになりました。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g_1.png",
+      "button": {
+        "id": "button15",
+        "label": "チャートが正常に更新されました！",
+        "position": {
+          "right": "22.6%",
+          "top": "35.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

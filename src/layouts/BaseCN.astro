@@ -15,7 +15,7 @@ const currentPath = Astro.url.pathname;
 const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
 
 // 函数用于生成不同语言的 URL
-const generateUrl = (lang) => {
+const generateUrl = (lang: string) => {
   if (langPrefixRegex.test(currentPath)) {
     // 替换现有的语言前缀
     return currentPath.replace(langPrefixRegex, `/${lang}/`);
@@ -137,6 +137,188 @@ const meta = {
       type="text/css"
       id="theme-opt"
     />
+    <!-- Custom Css for megamenu width -->
+    <style>
+      /* 调整megamenu宽度，让它更窄更紧凑 */
+      @media (min-width: 1025px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 780px !important;
+        }
+      }
+
+      @media screen and (max-width: 1024px) and (min-width: 992px) {
+        #topnav .navigation-menu > li .submenu.megamenu {
+          width: 700px !important;
+        }
+      }
+
+      /* 调整megamenu每列的宽度，使3列布局更均匀 */
+      @media (min-width: 992px) {
+        #topnav .navigation-menu > li .submenu.megamenu > li {
+          width: 33.333% !important;
+        }
+      }
+
+      /* 增强megamenu标题显示效果 */
+      .megamenu-head {
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        color: #6c757d !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.8px !important;
+        margin-bottom: 12px !important;
+        padding-bottom: 4px !important;
+        border-bottom: 1px solid #e9ecef !important;
+      }
+
+      /* 自定义即将推出标签样式 */
+      .coming-soon-badge {
+        background-color: #e9ecef !important;
+        color: #6c757d !important;
+        font-size: 10px !important;
+        font-weight: 500 !important;
+        padding: 2px 6px !important;
+        border-radius: 8px !important;
+      }
+
+      /* 自定义搜索按钮样式 */
+      .search-btn {
+        float: right;
+        line-height: 68px;
+        text-align: right;
+        padding-left: 15px;
+        position: relative;
+        margin-top: 4px;
+      }
+
+      .custom-search-button {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        margin-top: 20px; /* 调整到与GitHub图标对齐 */
+      }
+
+      .custom-search-button:hover {
+        background: #f0f0f0;
+        transform: scale(1.05);
+      }
+
+      .custom-search-button i {
+        font-size: 27px; /* 更大的图标 */
+        color: #24292f; /* 黑色，与GitHub图标颜色一致 */
+      }
+
+      /* GitHub图标样式 */
+      .github {
+        float: right;
+        line-height: 68px;
+        text-align: right;
+        padding-left: 15px;
+        position: relative;
+        margin-top: 4px; /* 往下挪一点 */
+      }
+
+      .github-btn {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none !important;
+        color: #24292f !important;
+        transition: all 0.2s ease;
+        position: relative;
+      }
+
+      .github-btn:hover {
+        color: #000 !important;
+        transform: scale(1.05);
+      }
+
+      .github-btn i {
+        font-size: 23px;
+        position: relative;
+      }
+
+      .github-stars {
+        background: #ffffff;
+        color: #24292f;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 1px 4px;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        line-height: 1.2;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        min-width: 20px;
+        text-align: center;
+      }
+
+      /* 搜索框样式 - 改为图标按钮 */
+      .docsearch-nocobase .DocSearch-Button {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background: transparent !important;
+        border: 1px solid #e9ecef !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .docsearch-nocobase .DocSearch-Button:hover {
+        background: #f8f9fa !important;
+        border-color: #dee2e6 !important;
+      }
+
+      /* 隐藏默认的文本和快捷键 */
+      .docsearch-nocobase .DocSearch-Button-Placeholder,
+      .docsearch-nocobase .DocSearch-Button-Keys {
+        display: none !important;
+      }
+
+      /* 搜索图标样式 */
+      .docsearch-nocobase .DocSearch-Search-Icon {
+        width: 18px !important;
+        height: 18px !important;
+        color: #6c757d !important;
+      }
+
+      /* 隐藏原来的DocSearch按钮 */
+      .docsearch-nocobase {
+        display: none !important;
+      }
+
+      /* 移动端适配 */
+      @media (max-width: 768px) {
+        .github, .search-btn {
+          display: none;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        .github-btn i {
+          font-size: 28px;
+        }
+        
+        .github-stars {
+          font-size: 10px;
+          padding: 1px 4px;
+          top: 15px;
+          right: -8px;
+          min-width: 20px;
+        }
+      }
+    </style>
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
     <!-- Language -->
@@ -271,6 +453,22 @@ const meta = {
         <div class="lang">
           <LanguageSwitcher />
         </div>
+        <div class="github">
+          <a
+            href="https://github.com/nocobase/nocobase"
+            target="_blank"
+            class="github-btn"
+            title="GitHub - NocoBase"
+          >
+            <i class="uil uil-github"></i>
+            <span class="github-stars">16k</span>
+          </a>
+        </div>
+        <div class="search-btn">
+          <button id="custom-search-btn" class="custom-search-button" title="搜索">
+            <i class="uil uil-search"></i>
+          </button>
+        </div>
         <!-- End Logo container-->
         <div class="menu-extras">
           <div class="menu-item">
@@ -286,7 +484,7 @@ const meta = {
           </div>
         </div>
 
-        <div class="menu-extras" style="margin-top: 20px">
+        <div class="menu-extras" style="margin-top: 17px; display: none;">
           <div id="docsearch" class="docsearch-nocobase"></div>
         </div>
 
@@ -294,9 +492,14 @@ const meta = {
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
             <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)">开源</a><span class="menu-arrow"
-              ></span>
+              <a href="javascript:void(0)">产品</a><span class="menu-arrow"></span>
               <ul class="submenu">
+                <li>
+                  <a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">Features <span class="badge coming-soon-badge ms-2">即将推出</span></a>
+                </li>
+                <li>
+                  <a href="https://demo-cn.nocobase.com/new" target="_blank" class="sub-menu-item">Live Demo <span class="badge text-bg-success ms-2">在线体验</span></a>
+                </li>
                 <li>
                   <a
                     rel="nofollow"
@@ -317,20 +520,34 @@ const meta = {
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="/cn/commercial" class="sub-menu-item">定价</a>
-            </li>
-            <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)" class="sub-menu-item">插件</a><span class="menu-arrow"></span>
-              <ul class="submenu">
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">市场</a><span class="menu-arrow"></span>
+              <ul class="submenu megamenu">
                 <li>
-                  <a href="/cn/plugins" title="NocoBase 全部插件" class="sub-menu-item">全部插件</a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 插件</li>
+                    <li><a href="/cn/plugins" title="NocoBase 全部插件" class="sub-menu-item">全部插件</a></li>
+                    <li><a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件包</a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">第三方插件 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                  </ul>
                 </li>
+
                 <li>
-                  <a href="/cn/plugins-commercial" title="NocoBase 商业插件" class="sub-menu-item">商业插件</a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> 解决方案</li>
+                    <li><a href="/cn/solutions/crm" title="NocoBase CRM解决方案" class="sub-menu-item">CRM</a></li>
+                    <li><a href="/cn/solutions/ticketing" title="NocoBase 工单系统解决方案" class="sub-menu-item">工单系统</a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">项目管理 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">CMS <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                  </ul>
                 </li>
+
                 <li>
-                  <a href="/cn/plugins-bundles" title="NocoBase 插件包" class="sub-menu-item">插件点数</a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-users-alt fs-6 align-middle"></i> 合作伙伴</li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">查找 NocoBase 伙伴 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">成为合作伙伴 <span class="badge coming-soon-badge ms-2">即将推出</span></a></li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -338,19 +555,19 @@ const meta = {
               <a href="javascript:void(0)">社区</a><span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <a href="https://forum.nocobase.com/c/chinese-forum/6" class="sub-menu-item" title="NocoBase 在线论坛、交流"  target="_blank">在线交流</a>
+                  <a href="https://forum.nocobase.com/c/chinese-forum/6" class="sub-menu-item" title="NocoBase 在线论坛、交流"  target="_blank">论坛</a>
                 </li>
                 <li>
-                  <a href="/cn/blog" title="NocoBase 博客" class="sub-menu-item">博客</a>
+                  <a href="/cn/blog/tags/customer-stories" class="sub-menu-item">用户故事</a>
                 </li>
                 <li>
-                  <a href="/cn/blog/timeline" title=NocoBase 更新日志"" class="sub-menu-item">更新日志</a>
+                  <a href="/cn/blog/timeline" title="NocoBase 更新日志" class="sub-menu-item">更新记录</a>
                 </li>
                 <li>
                   <a href="/cn/roadmap" title="NocoBase 路线图" class="sub-menu-item">路线图</a>
                 </li>
                 <li>
-                  <a href="/cn/contact" title="NocoBase 联系方式" class="sub-menu-item">联系我们</a>
+                  <a href="/cn/blog" title="NocoBase 博客" class="sub-menu-item">博客</a>
                 </li>
               </ul>
             </li>
@@ -363,16 +580,19 @@ const meta = {
                 <li>
                   <a href="/cn/tutorials" title="NocoBase 教程" class="sub-menu-item">教程</a>
                 </li>
-                <!-- <li>
-                  <a href="/cn/help" class="text-foot"> 帮助中心</a>
-                </li> -->
                 <li>
                   <a href="https://docs-cn.nocobase.com/handbook/security" title="NocoBase 安全指南" class="sub-menu-item" target="_blank">安全指南</a>
                 </li>
                 <li>
                   <a href="/cn/agreement" class="sub-menu-item">许可协议</a>
                 </li>
+                <li>
+                  <a href="/cn/contact" title="NocoBase 联系方式" class="sub-menu-item">联系我们</a>
+                </li>
               </ul>
+            </li>
+            <li>
+              <a href="/cn/commercial" class="sub-menu-item">定价</a>
             </li>
           </ul><!--end navigation menu-->
         </div><!--end navigation-->
@@ -505,6 +725,10 @@ const meta = {
                     <li>
                       <a href="/cn/blog/timeline" class="text-foot"
                         ><i class="uil uil-angle-right-b me-1"></i> 更新记录</a>
+                    </li>
+                    <li>
+                      <a href="https://logo.shapefactory.co/files?p=5fd023ef44c9e5001783a809" target="_blank" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> 品牌素材</a>
                     </li>
                     <li>
                       <a href="/cn/agreement" class="text-foot"
@@ -719,18 +943,12 @@ const meta = {
       src="https://sibforms.com/forms/end-form/build/main.js"></script>
     <!--  END Brevo Form -->
 
-    <DocSearch/>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const searchButton = document.querySelector('.DocSearch-Button');
-        const placeholder = searchButton.querySelector('.DocSearch-Button-Placeholder');
-        const keys = searchButton.querySelector('.DocSearch-Button-Keys');
+    <DocSearch 
+      appId="2LZLVZ7DAL"
+      apiKey="c0a0f5b4b19b09b8e4f2fb7b6d9c7b5e"
+      indexName="nocobase"
+    />
 
-        // 隐藏文本和快捷键
-        if (placeholder) placeholder.style.display = 'none';
-        if (keys) keys.style.display = 'none';
-      });
-    </script>
 
     <!-- common  -->
     <style>
@@ -791,6 +1009,39 @@ const meta = {
           attributes: true 
         });
       }
+
+      // 自定义搜索按钮功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const customSearchBtn = document.getElementById('custom-search-btn');
+        
+        function triggerDocSearch() {
+          // 尝试多种方式触发DocSearch
+          const searchButton = document.querySelector('.DocSearch-Button');
+          if (searchButton) {
+            searchButton.click();
+            return;
+          }
+          
+          // 尝试通过docsearch实例触发
+          if (window.docsearch) {
+            const modal = document.querySelector('.DocSearch-Modal');
+            if (modal) {
+              modal.style.display = 'block';
+            }
+          }
+          
+          // 尝试触发键盘事件
+          document.dispatchEvent(new KeyboardEvent('keydown', {
+            key: 'k',
+            metaKey: true,
+            bubbles: true
+          }));
+        }
+        
+        if (customSearchBtn) {
+          customSearchBtn.addEventListener('click', triggerDocSearch);
+        }
+      });
     </script>
   </body>
 </html>

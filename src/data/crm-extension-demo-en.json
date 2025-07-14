@@ -1,0 +1,297 @@
+{
+  "title": "Extend CRM Functionality in 3 Steps",
+  "subtitle": "Using intelligent follow-up reminders as an example, experience how to implement feature extensions with no-code.",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Add Data Fields",
+      "id": "workflow-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "Configure UI & Interactions",
+      "id": "workflow-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "Create Automated Workflow",
+      "id": "workflow-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-0-1",
+      "title": "Extend Data Model",
+      "description": "All functionality starts with data. First, let's enter the \"Leads\" collection to add new capabilities to it.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9670a524-3ff0-47b0-abea-78671cee573g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "All functionality starts with data. First, let's enter the \"Leads\" collection to add new capabilities to it.",
+        "position": {
+          "right": "18.5%",
+          "top": "36.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "Step 1: Extension - Add New Fields & Interactions to CRM",
+      "description": "The birth of functionality begins with extending data models and user interfaces. Let's start by adding necessary capabilities and operation entries to the CRM."
+    },
+    {
+      "id": "step-1-1",
+      "title": "Add \"Reminder\" Related Fields",
+      "description": "To implement reminders, we first need a place to store reminder information. Let's add two key fields to the leads collection: \"Reminder Time\" and \"Reminder Notes\".",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d903f38a-5ac1-4646-8cf8-0e19e366c6fg_1.png",
+      "button": {
+        "id": "button3",
+        "label": "Add \"Reminder\" Related Fields",
+        "position": {
+          "left": "39.4%",
+          "top": "76.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "Create \"Set Reminder\" Button",
+      "description": "With data ready, now let's create an operation entry for users. We'll add a button on the details page to open a reminder setting popup.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_863c7579-e38d-4bc3-84d7-df3a92fbb38g_1.png",
+      "button": {
+        "id": "button4",
+        "label": "Create \"Set Reminder\" Button",
+        "position": {
+          "right": "8.6%",
+          "top": "21.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-3",
+      "title": "Design Reminder Popup",
+      "description": "Carefully design the popup's title, button text, and style to make the interaction experience clearer and more user-friendly.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b19c5042-ee71-4727-8629-79a1cfca5cbg_1.png",
+      "button": {
+        "id": "button5",
+        "label": "Design Reminder Popup",
+        "position": {
+          "right": "14.3%",
+          "top": "23.4%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-4",
+      "title": "Embed Form in Popup",
+      "description": "Drag the \"Reminder Time\" and \"Reminder Notes\" fields we created in the first step into the popup to form a complete data entry form.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d4d4bdf2-f3da-4f5d-82ff-0b5150f4adag_1.png",
+      "button": {
+        "id": "button6",
+        "label": "Embed Form in Popup",
+        "position": {
+          "left": "40.8%",
+          "top": "37.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-5",
+      "title": "Display Reminder Info on Details Page",
+      "description": "For easy viewing of set reminders, let's also display these two fields directly at the bottom of the lead details page.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b6e04849-177f-48c3-97ef-90b26a62587g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "Display Reminder Info on Details Page",
+        "position": {
+          "left": "37.3%",
+          "top": "48.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Step 2: Automation - Create Workflow Connections",
+      "description": "Now, let's start building the backend automation processing logic, which is key to making the new functionality \"come alive\"."
+    },
+    {
+      "id": "step-2-1",
+      "title": "Create Message Channel",
+      "description": "Automation processes need an outlet to send messages. Let's first create a dedicated \"Lead Notifications\" channel.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_0b2fd9b4-7051-419f-9ce2-52acf66aaa1g_1.png",
+      "button": {
+        "id": "button9",
+        "label": "Create Message Channel",
+        "position": {
+          "left": "8.9%",
+          "top": "76.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "Create Scheduled Workflow",
+      "description": "Start building the core logic: create a workflow named \"Send Notification\" and set its trigger to \"Scheduled Task\" to run automatically at specific times.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f14012a1-a6fc-4d95-81b9-f8b0a807f07g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "Create Scheduled Workflow",
+        "position": {
+          "right": "39.4%",
+          "top": "34.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "Set Workflow Trigger Timing",
+      "description": "Configure the workflow's starting point: let it execute based on the \"Reminder Time\" field in the \"Leads\" collection. When system time reaches the reminder time, the workflow will start for that lead.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_dc006aeb-a299-4cf4-8610-0804d59b2d2g_1.png",
+      "button": {
+        "id": "button11",
+        "label": "Set Workflow Trigger Timing",
+        "position": {
+          "right": "38.1%",
+          "top": "39.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "Design Dynamic Notification Content",
+      "description": "Add a notification node, select the just-created channel, and carefully craft the notification content. You can use variables to dynamically insert lead name, notes, and other information.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9877b2a2-b378-43c5-8a2f-8c5900321c8g_1.png",
+      "button": {
+        "id": "button12",
+        "label": "Design Dynamic Notification Content",
+        "position": {
+          "right": "47.5%",
+          "top": "51.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "Configure Notification Jump Link",
+      "description": "To make notifications more practical, let's configure a clickable link. First copy the details page URL as a template, then replace the ID at the end with the \"Trigger Data ID\" variable, so each notification can precisely link to the correct lead.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_18de1d6b-1daf-4160-917e-0f376d601cdg_1.png",
+      "button": {
+        "id": "button13",
+        "label": "Configure Notification Jump Link",
+        "position": {
+          "right": "49.0%",
+          "top": "69.4%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "Enable Workflow",
+      "description": "Everything is ready, click \"Enable\" to make our automation rules officially take effect!",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_4d64cbf7-b238-47c0-bd92-a7f7b7e8c2eg_1.png",
+      "button": {
+        "id": "button14",
+        "label": "Enable Workflow",
+        "position": {
+          "right": "5.6%",
+          "top": "10.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Step 3: Validation - Test New Automation Features",
+      "description": "Finally, let's connect the frontend interface with backend logic and perform a complete end-to-end test to ensure everything works as expected."
+    },
+    {
+      "id": "step-3-1",
+      "title": "Link Frontend Button to Workflow",
+      "description": "Connect frontend and backend: return to the reminder popup configuration and bind its \"Submit\" button action to the \"Send Notification\" workflow we just created.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f96a8a67-7ab2-4e34-95b1-aeb2822bb6ag_1.png",
+      "button": {
+        "id": "button16",
+        "label": "Link Frontend Button to Workflow",
+        "position": {
+          "left": "35.7%",
+          "top": "49.9%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "Live Test: Create a Reminder",
+      "description": "Now, let's operate from the user's perspective. Open a lead and use the popup we created to set a reminder for a few minutes later.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9d3641a4-5075-49b9-8afa-3be5eb96ad0g_1.png",
+      "button": {
+        "id": "button17",
+        "label": "Live Test: Create a Reminder",
+        "position": {
+          "left": "33.6%",
+          "top": "46.9%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "Receive Scheduled Reminder",
+      "description": "At the set time, the system automatically executed the workflow. Look, an accurate notification has been sent to our message center!",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_e3048bb9-d9ac-421c-9a9b-74c846a68c3g_1.png",
+      "button": {
+        "id": "button18",
+        "label": "Receive Scheduled Reminder",
+        "position": {
+          "right": "23.0%",
+          "top": "15.4%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "Verify Jump Link",
+      "description": "Click the \"View\" button in the notification to verify if our configured dynamic link works. The page successfully jumps to the corresponding lead details page - the entire automation process forms a perfect loop!",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_3708bc62-3741-4aa1-9e40-29234a610fbg_1.png",
+      "button": {
+        "id": "button19",
+        "label": "Verify Jump Link",
+        "position": {
+          "right": "6.2%",
+          "top": "13.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

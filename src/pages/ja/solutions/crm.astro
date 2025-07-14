@@ -1,0 +1,853 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// インタラクティブデモデータをインポート
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-ja.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-ja.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-ja.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-ja.json";
+
+// プラグインデータを取得
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// CRMで使用するプラグインの定義
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print"
+];
+
+// 名前でプラグインを検索
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// CRM関連プラグインを取得
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// デバッグ情報
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
+
+// 元のデータはJSONファイルに移動しました
+---
+
+<Layout
+  title="ノーコードで柔軟かつ強力なCRMプラットフォーム"
+  description="すぐに使えます。究極のカスタマイズ機能を提供し、データ主権を完全に保証します。この基盤の上にフィールド、ブロック、機能、ページを自由に拡張して、ビジネスニーズに完全に適合させることができます。"
+  keywords="NocoBase CRM, 顧客関係管理, ノーコードCRM, オープンソースCRM, カスタムCRM"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">ノーコードで柔軟かつ強力な<br/>CRMプラットフォーム</h1>
+            <p class="para-desc text-muted">すぐに使えます。究極のカスタマイズ機能を提供し、データ主権を完全に保証します。この基盤の上にフィールド、ブロック、機能、ページを自由に拡張して、ビジネスニーズに完全に適合させることができます。</p>
+            
+            <!-- Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">対象業界：</span>
+                  <span class="badge bg-soft-primary">全業界</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">開発者：</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>ライブデモ
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>自分の環境にデプロイ
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- CRM Preview Video -->
+            <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
+              <video 
+                id="crm-preview-video"
+                class="w-100 rounded shadow"
+                poster="https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g.png"
+                preload="none"
+                style="cursor: pointer; max-height: 400px; object-fit: cover;"
+              >
+                <source src="https://static-docs.nocobase.com/NocoBase_CRM Japanese.mp4" type="video/mp4">
+                お使いのブラウザはHTML5ビデオをサポートしていません。
+              </video>
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
+                <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">NocoBase CRM のユニークな特徴</h4>
+            <p class="para-desc mx-auto text-muted mb-0">SaaSや他のCRMシステムとは異なり、NocoBase CRMは柔軟性と完全制御を実現</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-wrench rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">完全ノーコード構築</h5>
+              <p class="text-muted mt-2">プログラミングスキル不要でCRMをカスタマイズ可能</p>
+              <i class="uil uil-wrench full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-database rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">一般的なCRM機能をカバー</h5>
+              <p class="text-muted mt-2">顧客管理、営業パイプライン、商談追跡、連絡先管理、メール通信、承認プロセスなどの機能モジュール</p>
+              <i class="uil uil-database full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">自由な変更と拡張</h5>
+              <p class="text-muted mt-2">カスタムフィールド、プロセス、ビジネスロジックをサポート、柔軟なアーキテクチャで「二次開発」が簡単</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">オープンソース、完全なデータ制御</h5>
+              <p class="text-muted mt-2">システムコードとデータを完全制御、企業データセキュリティを保証</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Interactive Demo Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">NocoBase CRM の機能をお試しください</h4>
+            <p class="para-desc mx-auto text-muted mb-0">数回のクリックで素早く体験</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">ダッシュボードデータ可視化</h5>
+              <!-- Interactive Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openDashboardDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-play me-2"></i>インタラクティブデモ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">リード変換プロセス</h5>
+              <!-- Lead Conversion Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openLeadDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-user-plus me-2"></i>インタラクティブデモ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">商談から受注へ</h5>
+              <!-- Opportunity Conversion Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openOpportunityDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-money-bill me-2"></i>インタラクティブデモ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Interactive Demo End -->
+
+  <!-- Dashboard Demo Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="crm-demo-wrap">
+          <!-- 拡張機能インタラクティブデモを使用 -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end crm-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>今すぐ試す
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>自分の環境にコピー
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Dashboard Demo Section End -->
+
+  <!-- CRM Tutorial and Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM 開発・拡張チュートリアル</h4>
+            <p class="para-desc mx-auto text-muted mb-0">NocoBase を使用してプロフェッショナルなCRMシステムを構築・拡張する方法を学びます</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-database h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">基本設定とカスタマイズ</h5>
+                <p class="text-muted text-center">データモデルの作成、フィールド関係のカスタマイズ、権限とインターフェースレイアウトの設定を学びます</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-pie h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">データ分析・可視化</h5>
+                <p class="text-muted text-center">売上データ分析ダッシュボードを構築し、パフォーマンス監視とデータ可視化を実現します</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-setting h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">プロセス自動化</h5>
+                <p class="text-muted text-center">営業プロセス、承認ワークフロー、ビジネスルールの自動化を設定します</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-link h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">システム統合・拡張</h5>
+                <p class="text-muted text-center">サードパーティシステムとの統合、モバイル対応、その他の高度な拡張機能</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">近日公開</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CRM Tutorial and Extension End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">CRM で使用されている商用プラグイン</h4>
+            <p class="para-desc mx-auto text-muted mb-0">CRMコアはオープンソース、商用プラグインで機能を充実</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- 動的に生成されるプラグインカード -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_jp || plugin.name_cn || plugin.name;
+          const displayDescription = plugin.description_jp || plugin.description_cn || plugin.description;
+          const docsUrl = plugin.docs_jp || plugin.docs_cn || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">詳細</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用、1年間のアップグレード</span><br>
+                          <a href="/ja/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用とアップグレード</span><br>
+                          <a class="text-muted" href="/ja/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- レイアウト用のプレースホルダーカード -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">より多くのプラグインが近日公開予定</h6>
+                  <p class="text-muted small">私たちはより多くの有用な商用プラグインを開発中です。お楽しみに</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/ja/plugins-commercial" class="btn btn-primary me-3">すべての商用プラグインを見る</a>
+          <a href="/ja/commercial" class="btn btn-outline-primary">価格について詳しく</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section bg-light" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">使用方法</h4>
+            <p class="para-desc mx-auto text-muted mb-0">3つのステップで NocoBase CRM を環境に素早くデプロイ</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>NocoBase をインストール</h5>
+                                  <p class="text-muted mt-2">インストールドキュメントに従って、NocoBase をサーバーにデプロイ</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs-ja.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">インストールドキュメント</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>CRM テンプレートファイルをダウンロード</h5>
+                <p class="text-muted mt-2">NocoBase CRM システムの完全なテンプレートファイルを取得、2つの形式をサポート</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">SQL ファイルをダウンロード</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">バックアップファイル (.nbdata) をダウンロード</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>システム内で復元</h5>
+                <p class="text-muted mt-2">テンプレートファイルを NocoBase システムにインポートしてデプロイを完了</p>
+              </div>
+              <div class="mt-3">
+                <a href="/ja/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">復元チュートリアル</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">NocoBase CRM を使う準備はできていますか？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            1分で専用CRMデモをデプロイ。データ構造の設定からインターフェースレイアウト、プロセスロジックまで、すべてNocoBaseの視覚的設定で完了し、一行のコードも書く必要はありません。
+          </p>
+          <div class="mt-4">
+            <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>ライブデモ
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>自分の環境にデプロイ
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <!-- Dashboard Demo Modal -->
+  <div id="dashboard-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeDashboardDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{dashboardDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeDashboardDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dashboard Demo Modal End -->
+
+  <!-- Lead Conversion Demo Modal -->
+  <div id="lead-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeLeadDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{leadConversionDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeLeadDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lead Conversion Demo Modal End -->
+
+  <!-- Opportunity Conversion Demo Modal -->
+  <div id="opportunity-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeOpportunityDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{opportunityDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeOpportunityDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Opportunity Conversion Demo Modal End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* Interactive Demo Card Styles */
+.interactive-demo-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.interactive-demo-card:hover {
+  transform: translateY(-2px);
+  border-color: #2f55d4;
+  box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
+}
+
+/* Modal Styles */
+.demo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.demo-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.demo-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 95vw;
+  max-height: 90vh;
+  width: 1200px;
+  overflow: hidden;
+  animation: slideInUp 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.demo-modal-header .modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.demo-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.demo-modal-close:hover {
+  color: #dc3545;
+}
+
+.demo-modal-body {
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.demo-content-wrapper {
+  margin-top: 0;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .demo-modal-content {
+    width: 95vw;
+    margin: 1rem;
+    max-height: 95vh;
+  }
+  
+  .demo-modal-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .demo-modal-body {
+    padding: 1rem;
+  }
+}
+</style>
+
+<script is:inline>
+// Modal control functions - defined in global scope
+function openDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Lead conversion demo modal control functions
+function openLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Opportunity conversion demo modal control functions
+function openOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('crm-preview-video');
+  const playButton = document.getElementById('play-button');
+  
+  if (!video || !playButton) return;
+  
+  // 最初に大きな再生ボタンをクリックした時のみ再生を開始
+  playButton.addEventListener('click', function() {
+    // コントロールバーを追加
+    video.setAttribute('controls', '');
+    video.setAttribute('controlslist', 'nodownload');
+    
+    // 再生を開始し、再生ボタンを非表示
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  // ビデオ終了時に再生ボタンを表示、コントロールバーを削除
+  video.addEventListener('ended', function() {
+    playButton.style.display = 'block';
+    video.removeAttribute('controls');
+  });
+
+  // ESC key to close modals
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeDashboardDemo();
+      closeLeadDemo();
+      closeOpportunityDemo();
+    }
+  });
+});
+</script> 

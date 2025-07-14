@@ -1,0 +1,297 @@
+{
+  "title": "3ステップでCRM機能を拡張",
+  "subtitle": "インテリジェントなフォローアップリマインダー機能を例に、ノーコードで機能拡張を実現する体験をお楽しみください。",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "データフィールドの追加",
+      "id": "workflow-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "UI と連携の設定",
+      "id": "workflow-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "自動化ワークフローの作成",
+      "id": "workflow-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-0-1",
+      "title": "データモデルの拡張",
+      "description": "すべての機能はデータから始まります。まず、「リード」コレクションに入って、新しい機能を追加しましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9670a524-3ff0-47b0-abea-78671cee573g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "データモデルの拡張",
+        "position": {
+          "right": "18.5%",
+          "top": "36.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "ステップ1：拡張 - CRMに新しいフィールドとインタラクションを追加",
+      "description": "機能の誕生は、データモデルとユーザーインターフェースの拡張から始まります。CRMに必要な機能と操作エントリを追加しましょう。"
+    },
+    {
+      "id": "step-1-1",
+      "title": "「リマインダー」関連フィールドの追加",
+      "description": "リマインダーを実装するには、まずリマインダー情報を保存する場所が必要です。リードコレクションに「リマインダー時間」と「リマインダーメモ」という2つの重要なフィールドを追加しましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d903f38a-5ac1-4646-8cf8-0e19e366c6fg_1.png",
+      "button": {
+        "id": "button3",
+        "label": "「リマインダー」関連フィールドの追加",
+        "position": {
+          "left": "39.4%",
+          "top": "76.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "「リマインダー設定」ボタンの作成",
+      "description": "データが準備できたら、ユーザーのための操作エントリを作成しましょう。詳細ページにボタンを追加して、リマインダー設定ポップアップを開けるようにします。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_863c7579-e38d-4bc3-84d7-df3a92fbb38g_1.png",
+      "button": {
+        "id": "button4",
+        "label": "「リマインダー設定」ボタンの作成",
+        "position": {
+          "right": "8.6%",
+          "top": "21.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-3",
+      "title": "リマインダーポップアップの設計",
+      "description": "ポップアップのタイトル、ボタンテキスト、スタイルを慎重に設計し、インタラクション体験をより明確で友好的にします。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b19c5042-ee71-4727-8629-79a1cfca5cbg_1.png",
+      "button": {
+        "id": "button5",
+        "label": "リマインダーポップアップの設計",
+        "position": {
+          "right": "14.3%",
+          "top": "23.4%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-4",
+      "title": "ポップアップ内にフォームを埋め込み",
+      "description": "最初のステップで作成した「リマインダー時間」と「リマインダーメモ」フィールドをポップアップにドラッグして、完全なデータ入力フォームを構成します。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_d4d4bdf2-f3da-4f5d-82ff-0b5150f4adag_1.png",
+      "button": {
+        "id": "button6",
+        "label": "ポップアップ内にフォームを埋め込み",
+        "position": {
+          "left": "40.8%",
+          "top": "37.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-5",
+      "title": "詳細ページにリマインダー情報を表示",
+      "description": "設定したリマインダーを簡単に確認できるように、これら2つのフィールドをリード詳細ページの下部に直接表示しましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_b6e04849-177f-48c3-97ef-90b26a62587g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "詳細ページにリマインダー情報を表示",
+        "position": {
+          "left": "37.3%",
+          "top": "48.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "ステップ2：自動化 - ワークフロー接続の作成",
+      "description": "今度は、バックエンドの自動化処理ロジックの構築を開始します。これが新機能を「生き生き」とさせる鍵です。"
+    },
+    {
+      "id": "step-2-1",
+      "title": "メッセージチャンネルの作成",
+      "description": "自動化プロセスにはメッセージを送信する出口が必要です。まず専用の「リード通知」チャンネルを作成しましょう。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_0b2fd9b4-7051-419f-9ce2-52acf66aaa1g_1.png",
+      "button": {
+        "id": "button9",
+        "label": "メッセージチャンネルの作成",
+        "position": {
+          "left": "8.9%",
+          "top": "76.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "スケジュール済みワークフローの作成",
+      "description": "コアロジックの構築を開始：「通知送信」という名前のワークフローを作成し、トリガーを「スケジュールタスク」に設定して、特定の時間に自動実行させます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f14012a1-a6fc-4d95-81b9-f8b0a807f07g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "スケジュール済みワークフローの作成",
+        "position": {
+          "right": "39.4%",
+          "top": "34.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "ワークフロートリガータイミングの設定",
+      "description": "ワークフローの開始点を設定：「リード」コレクションの「リマインダー時間」フィールドに基づいて実行するようにします。システム時間がリマインダー時間に達すると、そのリードのワークフローが開始されます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_dc006aeb-a299-4cf4-8610-0804d59b2d2g_1.png",
+      "button": {
+        "id": "button11",
+        "label": "ワークフロートリガータイミングの設定",
+        "position": {
+          "right": "38.1%",
+          "top": "39.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "動的通知コンテンツの設計",
+      "description": "通知ノードを追加し、作成したばかりのチャンネルを選択して、通知コンテンツを丁寧に作成します。変数を使用してリード名、メモなどの情報を動的に挿入できます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9877b2a2-b378-43c5-8a2f-8c5900321c8g_1.png",
+      "button": {
+        "id": "button12",
+        "label": "動的通知コンテンツの設計",
+        "position": {
+          "right": "47.5%",
+          "top": "51.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "通知ジャンプリンクの設定",
+      "description": "通知をより実用的にするために、クリック可能なリンクを設定しましょう。まず詳細ページのURLをテンプレートとしてコピーし、末尾のIDを「トリガーデータID」変数に置き換えます。これにより、各通知が正確なリードに正確にリンクできます。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_18de1d6b-1daf-4160-917e-0f376d601cdg_1.png",
+      "button": {
+        "id": "button13",
+        "label": "通知ジャンプリンクの設定",
+        "position": {
+          "right": "49.0%",
+          "top": "69.4%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "ワークフローの有効化",
+      "description": "すべて準備完了、「有効化」をクリックして、自動化ルールを正式に有効にしましょう！",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_4d64cbf7-b238-47c0-bd92-a7f7b7e8c2eg_1.png",
+      "button": {
+        "id": "button14",
+        "label": "ワークフローの有効化",
+        "position": {
+          "right": "5.6%",
+          "top": "10.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "ステップ3：検証 - 新しい自動化機能のテスト",
+      "description": "最後に、フロントエンドインターフェースとバックエンドロジックを接続し、完全なエンドツーエンドテストを実行して、すべてが期待通りに動作することを確認しましょう。"
+    },
+    {
+      "id": "step-3-1",
+      "title": "フロントエンドボタンとワークフローの連携",
+      "description": "フロントエンドとバックエンドの連携：リマインダーポップアップの設定に戻り、「送信」ボタンのアクションを作成したばかりの「通知送信」ワークフローにバインドします。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_f96a8a67-7ab2-4e34-95b1-aeb2822bb6ag_1.png",
+      "button": {
+        "id": "button16",
+        "label": "フロントエンドボタンとワークフローの連携",
+        "position": {
+          "left": "35.7%",
+          "top": "49.9%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "実践テスト：リマインダーの作成",
+      "description": "今度は、ユーザーの視点で実際に操作してみましょう。リードを開いて、作成したポップアップを使用して数分後のリマインダーを設定します。",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_9d3641a4-5075-49b9-8afa-3be5eb96ad0g_1.png",
+      "button": {
+        "id": "button17",
+        "label": "実践テスト：リマインダーの作成",
+        "position": {
+          "left": "33.6%",
+          "top": "46.9%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "スケジュールリマインダーの受信",
+      "description": "設定した時間になると、システムが自動的にワークフローを実行しました。見てください、正確な内容の通知がメッセージセンターに送信されました！",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_e3048bb9-d9ac-421c-9a9b-74c846a68c3g_1.png",
+      "button": {
+        "id": "button18",
+        "label": "スケジュールリマインダーの受信",
+        "position": {
+          "right": "23.0%",
+          "top": "15.4%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "ジャンプリンクの検証",
+      "description": "通知の「表示」ボタンをクリックして、設定した動的リンクが機能するかどうかを確認します。ページが対応するリード詳細ページに正常にジャンプしました。完全な自動化プロセスが完璧にループしています！",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o5_3708bc62-3741-4aa1-9e40-29234a610fbg_1.png",
+      "button": {
+        "id": "button19",
+        "label": "ジャンプリンクの検証",
+        "position": {
+          "right": "6.2%",
+          "top": "13.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}
