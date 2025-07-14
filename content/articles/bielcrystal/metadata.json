@@ -325,12 +325,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-07-14T05:31:27.241Z",
+    "updatedAt": "2025-07-14T05:31:27.241Z",
+    "id": 1582,
+    "title": "封面",
+    "filename": "封面-51f9yr.png",
+    "extname": ".png",
+    "size": 418241,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-51f9yr.png",
+    "preview": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-51f9yr.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-14T04:56:08.336Z"
+  "updatedAt": "2025-07-14T05:31:30.699Z"
 }
