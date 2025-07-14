@@ -2,7 +2,7 @@
 
 * [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
 * [2025年GitHub Star增长最快的15个开源低代码项目](https://www.nocobase.com/cn/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
+* [GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
 * [GitHub 上排名前 11  的开源管理后台（Admin Dashboard）项目](https://www.nocobase.com/cn/blog/top-11-open-source-admin-dashboard-projects-on-github)
 
 这一次，我们聚焦在 **Web 应用**这一主题，基于 GitHub 上两个官方标签页：[web-application](https://github.com/topics/web-application) 和 [web-app](https://github.com/topics/web-app)，从中筛选出 Star 数超过 10k 且功能较为完整的项目，覆盖内容平台、数据可视化平台、低代码平台等多个方向。
@@ -226,12 +226,11 @@ License：[MIT](https://github.com/revel/revel?tab=MIT-1-ov-file#)
 
 如果你对这些项目有兴趣，欢迎点赞、收藏或留言交流。我们也会持续更新 GitHub 优质项目推荐，敬请期待！
 
-
 **相关阅读：**
 
 * [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
 * [2025年GitHub Star增长最快的15个开源低代码项目](https://www.nocobase.com/cn/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
+* [GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
 * [GitHub 上排名前 11 的开源管理后台（Admin Dashboard）项目](https://www.nocobase.com/cn/blog/top-11-open-source-admin-dashboard-projects-on-github)
-* [⭐️ GitHub Star 数量前十的工作流项目](https://www.nocobase.com/cn/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
+* [GitHub Star 数量前十的工作流项目](https://www.nocobase.com/cn/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
 * [GitHub Star 数量前 4 的开源无代码（零代码）/低代码应用开发平台](https://www.nocobase.com/cn/blog/app-builder-tools)
