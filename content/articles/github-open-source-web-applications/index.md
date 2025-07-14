@@ -1,10 +1,10 @@
-Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
+~~~~Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
 
 Some of our previous lists include:
 
 * [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
 * [Top 15 Fastest-Growing Open-Source Low-Code Projects on GitHub in 2025](https://www.nocobase.com/en/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
+* [Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
 * [Top 11 Open-Source Admin Dashboard Projects on GitHub](https://www.nocobase.com/en/blog/top-11-open-source-admin-dashboard-projects-on-github)
 
 In this post, we’re focusing on **Web Applications**. We searched through the [web-application](https://github.com/topics/web-application) and [web-app](https://github.com/topics/web-app) GitHub topics, and picked projects with **over 10,000 stars** and a clear use case. These include platforms for publishing, data visualization, low-code app building, and more.
@@ -220,12 +220,11 @@ These 7 open source web applications stand out not just for their popularity, bu
 
 If any of these projects caught your attention, give them a star, try a local deploy, or share your thoughts in the comments. We’ll keep sharing handpicked open source projects—stay tuned for more!
 
-
 **Related reading:**
 
 * [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
 * [Top 15 Fastest-Growing Open-Source Low-Code Projects on GitHub in 2025](https://www.nocobase.com/en/blog/github-top15-fastest-growing-open-source-low-code-projects)
-* [⭐️ Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
+* [Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
 * [Top 11 Open-Source Admin Dashboard Projects on GitHub](https://www.nocobase.com/en/blog/top-11-open-source-admin-dashboard-projects-on-github)
-* [⭐️ Top 10 Open-source Workflows Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
+* [Top 10 Open-source Workflows Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
 * [Top 4 Open-source App Builder Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/app-builder-tools)
