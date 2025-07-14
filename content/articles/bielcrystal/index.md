@@ -4,7 +4,7 @@ In January 2007, just weeks before Apple’s first iPhone was set to launch, Ste
 
 ![Image: EverythingApplePro](https://static-docs.nocobase.com/1-8dwndy.PNG)
 
-At the time, virtually all mobile phones used plastic screens. Switching to glass on such short notice posed immense technical and supply chain challenges. But within that narrow window, BIEL Crystal delivered — producing glass panels that met Apple’s exacting standards. That win marked their entry into the core supply chain of the world’s most iconic consumer electronics brand.
+At the time, virtually all mobile phones used plastic screens. Switching to glass on such short notice posed immense technical and supply chain challenges. But within that narrow window, [BIEL Crystal](https://www.bielcrystal.com/) delivered — producing glass panels that met Apple’s exacting standards. That win marked their entry into the core supply chain of the world’s most iconic consumer electronics brand.
 
 Eighteen years later, BIEL has grown into a quietly dominant force in the global consumer electronics industry — a hidden giant in the world of glass.
 
@@ -93,7 +93,6 @@ With over 90,000 employees and an annual output of 1.85 billion units, BIEL Crys
 Now, BIEL is going further—leveraging digital tools to transform the way factories run.
 
 **In manufacturing, innovation isn’t just about better products — it’s the ability to adapt, scale, and stay precise in a world of constant change.**
-
 
 **More Customer Stories:**
 
