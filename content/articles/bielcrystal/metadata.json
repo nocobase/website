@@ -8,7 +8,7 @@
   "description_ja": "伯恩光学（BIEL Crystal）は NocoBase を活用し、設備点検システムの構築から工場間での展開、複数システムの迅速な立ち上げまでを低コストで実現。多様な業務のオンライン化を推進し、デジタルアジャイル工場への進化を加速させています。",
   "slug": "bielcrystal",
   "publishedAt": "2025-07-14T04:23:43.964Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-14T05:31:30.699Z"
+  "updatedAt": "2025-07-14T05:48:25.057Z"
 }
