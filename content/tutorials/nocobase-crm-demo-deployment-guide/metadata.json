@@ -1,11 +1,11 @@
 {
   "id": 31,
-  "title": "nocobase-crm-demo-deployment-guide",
+  "title": "NocoBase CRM Demo Deployment Guide",
   "title_cn": "NocoBase CRM Demo 部署指南",
-  "title_ja": null,
-  "description": "Learn how to deploy NocoBase CRM Demo to your environment with two deployment methods: Pro/Enterprise Backup Manager (complete file restoration) and universal SQL import (suitable for Community Edition). Choose the best method based on your version and requirements to quickly experience the full CRM functionality demonstration.",
-  "description_cn": "了解如何将 NocoBase CRM Demo 部署到您的环境中。本指南提供两种部署方式：专业/企业版备份管理器（完整还原所有文件）和通用 SQL 导入（适用于社区版）。根据您的版本和需求选择最适合的方法，快速体验完整的 CRM 功能演示。",
-  "description_ja": null,
+  "title_ja": "NocoBase CRMデモ 導入ガイド",
+  "description": "Learn how to deploy NocoBase CRM Demo to your environment with two deployment methods:  Backup Manager (Pro/Enterprise) and universal SQL import (suitable for Community Edition). Choose the best method based on your version and requirements to quickly experience the full CRM functionality demonstration.",
+  "description_cn": "了解如何将 NocoBase CRM Demo 部署到您的环境中。本指南提供两种部署方式：备份管理器（专业/企业版）和通用 SQL 导入（适用于社区版）。根据您的版本和需求选择最适合的方法，快速体验完整的 CRM 功能演示。",
+  "description_ja": "NocoBase CRMデモをお使いの環境に導入する方法について説明します。このガイドでは、「バックアップマネージャー」（Pro/Enterprise版）と、汎用的な「SQLインポート」（Community版向け）の2つの導入方法を提供します。お使いのバージョンとニーズに合わせて最適な方法を選択し、CRMの全機能デモを迅速にご体験ください。",
   "slug": "nocobase-crm-demo-deployment-guide",
   "publishedAt": "2025-07-10T17:52:29.010Z",
   "status": "drafted",
@@ -27,5 +27,5 @@
   },
   "serialsSort": 1,
   "keywords": [],
-  "updatedAt": "2025-07-11T08:02:00.564Z"
+  "updatedAt": "2025-07-13T03:55:49.105Z"
 }
