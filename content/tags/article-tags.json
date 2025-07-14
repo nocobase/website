@@ -3978,5 +3978,25 @@
     "title_cn": null,
     "title_ja": null,
     "updatedById": 9
+  },
+  {
+    "createdAt": "2025-07-14T11:33:09.162Z",
+    "updatedAt": "2025-07-14T11:33:09.162Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 205,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 203,
+    "title": "Web Application",
+    "title_cn": "Web 应用",
+    "title_ja": "Webアプリ",
+    "updatedById": 3
   }
 ]
