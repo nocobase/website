@@ -1,13 +1,13 @@
 {
-  "id": 612,
-  "title": "NocoBase v1.8.3: Add database and authorization options for sub-app",
-  "title_cn": "NocoBase v1.8.3：为子应用增加数据库和认证的独立配置",
-  "title_ja": "NocoBase v1.8.3：サブアプリにデータベースと認可オプションを追加",
-  "description": "Release Note of v1.8.3",
-  "description_cn": "v1.8.3 更新日志",
-  "description_ja": "v1.8.3 のリリースノート",
-  "slug": "v1.8.3",
-  "publishedAt": "2025-07-10T16:09:00.000Z",
+  "id": 613,
+  "title": "NocoBase v1.8.4: Support to configure independent auth secret for sub-apps",
+  "title_cn": "NocoBase v1.8.4：支持为子应用配置独立的认证密钥",
+  "title_ja": "NocoBase v1.8.4：サブアプリの独立した認証シークレットを設定できるようにサポート",
+  "description": "Release Note of v1.8.4",
+  "description_cn": "v1.8.4 更新日志",
+  "description_ja": "v1.8.4 のリリースノート",
+  "slug": "v1.8.4",
+  "publishedAt": "2025-07-13T09:22:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,10 +30,10 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2025-07-11T04:09:10.818Z",
-        "updatedAt": "2025-07-11T04:09:10.818Z",
+        "createdAt": "2025-07-13T09:22:39.585Z",
+        "updatedAt": "2025-07-13T09:22:39.585Z",
         "tagId": 4,
-        "articleId": 612
+        "articleId": 613
       }
     }
   ],
@@ -58,27 +58,27 @@
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2025-07-14T01:54:44.241Z",
-        "updatedAt": "2025-07-14T01:54:44.241Z",
-        "articles_id": 612,
+        "createdAt": "2025-07-14T01:57:12.781Z",
+        "updatedAt": "2025-07-14T01:57:12.781Z",
+        "articles_id": 613,
         "tags_id": 116
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-07-14T01:53:17.871Z",
-    "updatedAt": "2025-07-14T01:53:17.871Z",
-    "id": 1576,
-    "title": "发版封面图-main (1)",
-    "filename": "发版封面图-main (1)-gdpckd.png",
+    "createdAt": "2025-07-14T01:55:55.988Z",
+    "updatedAt": "2025-07-14T01:55:55.988Z",
+    "id": 1577,
+    "title": "发版封面图-main (2)",
+    "filename": "发版封面图-main (2)-ovalme.png",
     "extname": ".png",
-    "size": 88753,
+    "size": 88074,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-gdpckd.png",
-    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(1)-gdpckd.png",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(2)-ovalme.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main%20(2)-ovalme.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-14T01:54:44.230Z"
+  "updatedAt": "2025-07-14T01:57:12.769Z"
 }
