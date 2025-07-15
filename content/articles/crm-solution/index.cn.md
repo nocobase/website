@@ -8,7 +8,7 @@
 
 立即体验：[https://www.nocobase.com/cn/solutions/crm](https://www.nocobase.com/cn/solutions/crm)
 
-<iframe width="679" height="382" src="https://www.bilibili.com/video/BV1hJuHzHEg9/?share_source=copy_web&vd_source=24cb19db89fdbad2680a564b48441fa2" title="NocoBase CRM 解决方案正式上线！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114857223390547&bvid=BV1hJuHzHEg9&cid=31055940933&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 为什么 CRM 是我们的第一个解决方案？
 
