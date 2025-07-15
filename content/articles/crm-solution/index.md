@@ -2,7 +2,9 @@ We’re excited to announce the official launch of the NocoBase CRM Solution!
 
 As an open-source no-code platform, NocoBase has been widely used to build all kinds of business applications. Among them, CRM is one of the most common starting points—so it only made sense for us to make it the first official solution in our lineup.
 
-You can now try it directly in our live demo environment and easily replicate it for your own needs.  👉 Try it now: [https://www.nocobase.com/en/solutions/crm](https://www.nocobase.com/en/solutions/crm)
+You can now try it directly in our live demo environment and easily replicate it for your own needs.
+
+👉 Try it now: [https://www.nocobase.com/en/solutions/crm](https://www.nocobase.com/en/solutions/crm)
 
 <iframe width="679" height="382" src="https://www.youtube.com/embed/rU0xaUYEtYk" title="NocoBase CRM Solution is Now Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
