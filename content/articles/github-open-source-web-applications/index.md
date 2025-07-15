@@ -1,4 +1,6 @@
-~~~~Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
+Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
+
+Some of our previous lists include:
 
 Some of our previous lists include:
 
