@@ -2,12 +2,13 @@
 
 NocoBase はこれまでもさまざまな業務アプリの構築に活用されてきましたが、なかでも CRM は特に人気の高いユースケース。そのため、私たちが最初の公式ソリューションとして選んだのもごく自然なことでした。
 
+💡 詳細情報：[数時間でCRMを構築する：知っておくべきトップのノーコード/ローコードツール](https://www.nocobase.com/ja/blog/low-code-no-code-crm-builder)
+
 現在、ライブデモ環境で実際の動作をご確認いただけます。自社のニーズに合わせてすぐに使い始めることも可能です。
 
 👉 今すぐ体験する：[https://www.nocobase.com/ja/solutions/crm](https://www.nocobase.com/ja/solutions/crm)
 
 <iframe width="679" height="382" src="https://www.youtube.com/embed/rU0xaUYEtYk" title="NocoBase CRM Solution is Now Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ## なぜ CRM なのか？
 
@@ -16,6 +17,8 @@ CRM システムは、NocoBase で特によく使われているユースケー�
 その理由は明確です。CRM は構造がはっきりしていて、ワークフローが標準化されており、データの関係性も整理されています。つまり、NocoBase の特長——ビジュアルでのデータモデリング、柔軟な権限設定、自動ワークフロー、内蔵チャートなど——を最大限に活かせる分野です。
 
 さらに嬉しいのは、世界中のユーザーが実際の業務で活用し、その効果がすでに証明されていること。だからこそ、私たちはまず CRM を公式ソリューションとしてリリースしました。
+
+💡 詳細情報：[カスタムCRMの4つの実際の事例（より柔軟なCRM製品の選び方）](https://www.nocobase.com/ja/blog/custom-crm-case-studies)
 
 ## CRM デモでできること
 
@@ -30,6 +33,11 @@ CRM システムは、NocoBase で特によく使われているユースケー�
 * 項目やデータのつながり、権限、画面レイアウトの自由な編集
 
 データ設計から UI、業務ロジックまで、すべてノーコードで直感的に構築されています。
+
+💡 詳細情報：
+
+* [NocoBaseでCRMのリード変換を実装する方法](https://www.nocobase.com/ja/tutorials/how-to-implement-lead-conversion-in-nocobase)
+* [NocoBaseにおけるCRM販売パイプラインの可視化：リードステータスプログレスバーとステージ管理](https://www.nocobase.com/ja/tutorials/nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar)
 
 ## 商用プラグインには何が使われているの？
 
@@ -76,6 +84,8 @@ CRM システムは、NocoBase で特によく使われているユースケー�
 
 制約はありますが、工夫次第で十分に使える CRM を構築できます。必要に応じて、まずは基本機能から始めてみるのがおすすめです。
 
+💡 詳細情報：[中小企業向け！軽量で使いやすいオープンソースCRMソフト4選](https://www.nocobase.com/ja/blog/the-best-4-crm-software-for-small-businesses)
+
 ## 自分の環境にコピーして使ってみよう
 
 この CRM システムは、数クリックでご自身の NocoBase 環境にそのままコピーできます。
@@ -87,3 +97,9 @@ CRM システムは、NocoBase で特によく使われているユースケー�
 さらに、今回の CRM がどのように作られているのかを詳しく解説するチュートリアルも順次公開予定です。
 
 そして、これはまだ第一歩にすぎません。今後は、チケット管理やプロジェクト管理など、すぐに使える新しいソリューションも続々登場予定です。
+
+**関連読み物：**
+
+* [GitHubで人気のオープンソースERP＆CRMプロジェクト10選](https://www.nocobase.com/ja/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
+* [GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
+* [NocoBase vs Salesforce: 理想のCRMを選ぶには？](https://www.nocobase.com/ja/blog/nocobase-vs-salesforce)
