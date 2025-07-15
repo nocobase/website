@@ -2,8 +2,6 @@
 
 作为一个开源的无代码开发平台，NocoBase 已经被全世界用户广泛应用于各种业务场景。在用户的实际使用中，我们发现：**CRM 是很多用户上手构建的第一个系统**。
 
-💡 阅读更多：[在数小时内构建 CRM：你需要了解的顶级无代码（零代码）/低代码工具](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder)
-
 因此，我们将 CRM 作为**第一个官方解决方案**推出，并上线至在线 Demo 环境，供大家直接体验与复制。
 
 立即体验：[https://www.nocobase.com/cn/solutions/crm](https://www.nocobase.com/cn/solutions/crm)
@@ -13,8 +11,6 @@
 ## 为什么 CRM 是我们的第一个解决方案？
 
 CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流程明确，同时具备表单、流程、权限、图表等多个 NocoBase 核心能力，并且已经在许多客户场景中完整验证能力。
-
-💡 阅读更多：[定制 CRM 的4个真实用户案例（帮你选择更灵活CRM产品）](https://www.nocobase.com/cn/blog/custom-crm-case-studies)
 
 ## 你可以在 CRM Demo 中做什么？
 
@@ -27,11 +23,6 @@ CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流
 * 自定义字段、关系、权限与界面布局
 
 从配置数据结构，到界面布局，再到流程逻辑，这一切都是通过 NocoBase 的可视化配置完成，无需写一行代码。
-
-💡 阅读更多：
-
-* [如何在 NocoBase 中实现 CRM 的线索转化](https://www.nocobase.com/cn/tutorials/how-to-implement-lead-conversion-in-nocobase)
-* [在 NocoBase 中实现 CRM 销售漏斗可视化：线索状态进度条与阶段管理](https://www.nocobase.com/cn/tutorials/nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar)
 
 ## 使用了哪些商业插件？
 
@@ -63,8 +54,6 @@ CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流
 3. 对于缺少一些特殊区块，比如评论插件的用户，可以采用列表功能来实现，比如我们教程里的方式：[第四章：任务与评论插件](https://www.nocobase.com/cn/tutorials/task-tutorial-plugin-use#422-%E6%96%B9%E6%B3%95%E4%BA%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%84%E8%AE%BA%E8%A1%A8)
 4. 其他能力，比如自定义变量、模版打印、历史记录，没有插件的情况下，可能会很难完全实现对应功能。
 
-💡 阅读更多：[适合小型企业的四款开源 CRM 软件：轻量、高效、易上手](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
-
 ## 复制到自己的环境
 
 现在你可以直接将这套 CRM 系统复制到自己的环境中。基于这个模版更快速的搭建，增加或删除任意功能，使这个 CRM 完全符合你的业务需求！
@@ -80,3 +69,8 @@ CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流
 * [10 个最受开发者喜爱的开源 ERP / CRM 项目（GitHub Star 榜单）](https://www.nocobase.com/cn/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
 * [GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
 * [NocoBase vs Salesforce：谁才是你的理想 CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)
+* [在数小时内构建 CRM：你需要了解的顶级无代码（零代码）/低代码工具](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder)
+* [定制 CRM 的4个真实用户案例（帮你选择更灵活CRM产品）](https://www.nocobase.com/cn/blog/custom-crm-case-studies)
+* [适合小型企业的四款开源 CRM 软件：轻量、高效、易上手](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
+* [如何在 NocoBase 中实现 CRM 的线索转化](https://www.nocobase.com/cn/tutorials/how-to-implement-lead-conversion-in-nocobase)
+* [在 NocoBase 中实现 CRM 销售漏斗可视化：线索状态进度条与阶段管理](https://www.nocobase.com/cn/tutorials/nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar)
