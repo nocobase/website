@@ -24,7 +24,10 @@ const crmPluginNames = [
   "Action: Export records(Pro)",
   "Custom variables",
   "Block: Tree",
-  "Template print"
+  "Template print",
+  "Workflow: JSON query node",
+  "Workflow: Custom variable",
+  "Workflow: JSON variable mapping node"
 ];
 
 // Find plugin by name
@@ -102,7 +105,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
                 preload="none"
                 style="cursor: pointer; max-height: 400px; object-fit: cover;"
               >
-                <source src="https://static-docs.nocobase.com/NocoBase_CRM English.mp4" type="video/mp4">
+                <source src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/NocoBase-CRM-en-compress.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
               <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
