@@ -1,13 +1,13 @@
 {
-  "id": 616,
-  "title": "NocoBase v1.9.0-beta.3: Support to configure independent auth secret for sub-apps",
-  "title_cn": "NocoBase v1.9.0-beta.3：支持为子应用配置独立的认证密钥",
-  "title_ja": "NocoBase v1.9.0-beta.3：サブアプリの独立した認証シークレットを設定できるようにサポート",
-  "description": "Release Note of v1.9.0-beta.3",
-  "description_cn": "v1.9.0-beta.3 更新日志",
-  "description_ja": "v1.9.0-beta.3 のリリースノート",
-  "slug": "v1.9.0-beta.3",
-  "publishedAt": "2025-07-14T13:10:00.000Z",
+  "id": 618,
+  "title": "NocoBase v1.9.0-alpha.2: Support to configure independent auth secret for sub-apps",
+  "title_cn": "NocoBase v1.9.0-alpha.2：支持为子应用配置独立的认证密钥",
+  "title_ja": "NocoBase v1.9.0-alpha.2：サブアプリの独立した認証シークレットを設定できるようにサポート",
+  "description": "Release Note of v1.9.0-alpha.2",
+  "description_cn": "v1.9.0-alpha.2 更新日志",
+  "description_ja": "v1.9.0-alpha.2 のリリースノート",
+  "slug": "v1.9.0-alpha.2",
+  "publishedAt": "2025-07-15T10:36:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,21 +30,21 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2025-07-14T13:10:50.939Z",
-        "updatedAt": "2025-07-14T13:10:50.939Z",
+        "createdAt": "2025-07-15T10:36:48.214Z",
+        "updatedAt": "2025-07-15T10:36:48.214Z",
         "tagId": 4,
-        "articleId": 616
+        "articleId": 618
       }
     }
   ],
   "sub_tags": [
     {
-      "createdAt": "2025-01-22T06:43:36.737Z",
-      "updatedAt": "2025-01-22T06:43:36.737Z",
-      "id": 114,
-      "title": "Beta",
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
       "title_cn": null,
-      "sort": 113,
+      "sort": 114,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -58,27 +58,27 @@
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2025-07-15T04:37:21.336Z",
-        "updatedAt": "2025-07-15T04:37:21.336Z",
-        "articles_id": 616,
-        "tags_id": 114
+        "createdAt": "2025-07-15T12:41:10.858Z",
+        "updatedAt": "2025-07-15T12:41:10.858Z",
+        "articles_id": 618,
+        "tags_id": 115
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-07-15T04:34:23.897Z",
-    "updatedAt": "2025-07-15T04:34:23.897Z",
-    "id": 1585,
-    "title": "next",
-    "filename": "next-tf9kll.png",
+    "createdAt": "2025-07-15T12:40:06.053Z",
+    "updatedAt": "2025-07-15T12:40:06.053Z",
+    "id": 1588,
+    "title": "develop",
+    "filename": "develop-q4yrlp.png",
     "extname": ".png",
-    "size": 114784,
+    "size": 76836,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/next-tf9kll.png",
-    "preview": "https://static-docs.nocobase.com/next-tf9kll.png",
+    "url": "https://static-docs.nocobase.com/develop-q4yrlp.png",
+    "preview": "https://static-docs.nocobase.com/develop-q4yrlp.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-15T04:37:21.324Z"
+  "updatedAt": "2025-07-15T12:41:12.989Z"
 }

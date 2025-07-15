@@ -3998,5 +3998,25 @@
     "title_cn": "Web 应用",
     "title_ja": "Webアプリ",
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-07-15T11:45:36.650Z",
+    "updatedAt": "2025-07-15T11:45:36.650Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 206,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 204,
+    "title": "CRM solution",
+    "title_cn": "CRM 解决方案",
+    "title_ja": "CRM ソリューション",
+    "updatedById": 3
   }
 ]

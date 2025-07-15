@@ -8,7 +8,7 @@
   "description_ja": "GitHubで人気のオープンソースWebアプリ7選。データ可視化、AIアシスタント、ノーコードなどの注目分野をカバー。実用的で導入しやすく、技術も最新。開発者必見！",
   "slug": "github-open-source-web-applications",
   "publishedAt": "2025-07-14T11:26:37.075Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-14T14:12:07.981Z"
+  "updatedAt": "2025-07-15T04:54:05.273Z"
 }
