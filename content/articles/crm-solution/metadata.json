@@ -3,9 +3,9 @@
   "title": "NocoBase CRM Solution is Now Live — Ready for You to Explore",
   "title_cn": "NocoBase CRM 解决方案正式上线！欢迎体验",
   "title_ja": "NocoBase の CRM ソリューションがついに公開されました",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "NocoBase CRM solution is launched! What features can you experience? Can it be used without commercial plugins? Come and find out!",
+  "description_cn": "NocoBase CRM 解决方案上线啦！能体验哪些功能？无商业插件可用吗？快来一探究竟！",
+  "description_ja": "NocoBase CRM ソリューションがローンチされました！どんな機能を体験できるのでしょうか？商用プラグインなしでも使用可能ですか？さっそく詳細を見てみましょう！",
   "slug": "crm-solution",
   "publishedAt": "2025-07-15T11:14:14.981Z",
   "status": "drafted",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-15T11:50:26.879Z"
+  "updatedAt": "2025-07-15T12:36:50.497Z"
 }
