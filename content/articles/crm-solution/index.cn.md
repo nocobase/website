@@ -36,9 +36,9 @@ CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流
 | [邮件管理](https://docs-cn.nocobase.com/handbook/email-manager/usage-admin)                         | 高频使用，全局邮件发送和管理                                | 用数据表 + 邮件节点部分实现 50% 的能力，不过没有附件功能    |
 | [备份管理器](https://docs-cn.nocobase.com/handbook/backups)                                         | 应用的备份、还原、分发                                      | 可以用数据库迁移的方式实现                                  |
 | [工作流：审批](https://docs-cn.nocobase.com/handbook/workflow/triggers/approval)                    | 报价单、订单的提交审批                                      | 可以用状态字段+联动规则实现，如果流程复杂之后可能会比较困难 |
-| [工作流：JSON 变量映射](https://docs-cn.nocobase.com/handbook/workflow/nodes/json-variable-mapping) | 比如“线索处理”，解析 SQL 结果并分发给销售                 | 使用SQL存储过程实现                                         |
-| [工作流：JSON 计算](https://docs-cn.nocobase.com/handbook/workflow/nodes/json-query)                | 更灵活强大的 Json 解析节点，比如“线索任务”后对 SQL 的解析 | 使用SQL存储过程实现                                         |
-| [工作流：自定义变量](https://docs-cn.nocobase.com/handbook/workflow/nodes/variable)                 | 比如“添加：服务单”后，需要暂存 客户/机器 id               | 使用SQL存储过程实现                                         |
+| [工作流：JSON 变量映射](https://docs-cn.nocobase.com/handbook/workflow/nodes/json-variable-mapping) | 比如“线索处理”，解析 SQL 结果并分发给销售                 | 使用 SQL 存储过程实现                                       |
+| [工作流：JSON 计算](https://docs-cn.nocobase.com/handbook/workflow/nodes/json-query)                | 更灵活强大的 Json 解析节点，比如“线索任务”后对 SQL 的解析 | 使用 SQL 存储过程实现                                       |
+| [工作流：自定义变量](https://docs-cn.nocobase.com/handbook/workflow/nodes/variable)                 | 比如“添加：服务单”后，需要暂存 客户/机器 id               | 使用 SQL 存储过程实现                                       |
 | [操作：导出数据 （Pro）](https://docs-cn.nocobase.com/handbook/action-export-pro)                   | 所有表格的导出操作                                          | 可以采用默认的导入                                          |
 | [操作：导入数据 （Pro）](https://docs-cn.nocobase.com/handbook/action-import-pro)                   | 所有表格的导入操作                                          | 可以采用默认的导出方式                                      |
 | [自定义变量](https://docs-cn.nocobase.com/handbook/custom-variables)                                | 标签右侧的数字气泡                                          | ⚠️ 暂无                                                   |
@@ -49,10 +49,21 @@ CRM 作为用户最常用 NocoBase 搭建的系统类型，它结构清晰、流
 
 在**不启用商业插件的情况下**也能使用核心功能。
 
-1. 对于相对复杂的逻辑，比如筛选合适的销售并分发线索。如果没有操作前事件、JSON 解析节点、JavaScript 节点的情况下，可采用 SQL 数据库内的存储过程来实现复杂逻辑，不过整体的代码管理和后续的迁移会比较困难。
-2. 对于没有数据操作日志的用户，可以先采用操作前事件 + 查询节点 + JavaScript 节点（复杂关系字段） 来对比，实现字段的跟踪。不过整体会很繁琐，可能每次变更都需要单独进行字段对比，而且性能开销会比较大。
-3. 对于缺少一些特殊区块，比如评论插件的用户，可以采用列表功能来实现，比如我们教程里的方式：[第四章：任务与评论插件](https://www.nocobase.com/cn/tutorials/task-tutorial-plugin-use#422-%E6%96%B9%E6%B3%95%E4%BA%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%84%E8%AE%BA%E8%A1%A8)
-4. 其他能力，比如自定义变量、模版打印、历史记录，没有插件的情况下，可能会很难完全实现对应功能。
+1. **实现复杂逻辑**
+
+比如筛选合适的销售并分发线索。如果没有操作前事件、JSON 解析节点、JavaScript 节点的情况下，可采用 SQL 数据库内的存储过程来实现复杂逻辑，不过整体的代码管理和后续的迁移会比较困难。
+
+2. **数据操作日志**
+
+可以先采用操作前事件 + 查询节点 + JavaScript 节点（复杂关系字段） 来对比实现字段的跟踪。不过实现比较繁琐，且性能开销较大。
+
+3. **缺少特殊区****块**
+
+比如[数据表：评论]插件，可以采用列表功能来实现，参考教程：[第四章：任务与评论插件](https://www.nocobase.com/cn/tutorials/task-tutorial-plugin-use#422-%E6%96%B9%E6%B3%95%E4%BA%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%84%E8%AE%BA%E8%A1%A8)。
+
+4. **其他**
+
+如自定义变量、模版打印、历史记录，没有插件的情况下会很难完全实现对应功能。
 
 ## 复制到自己的环境
 
