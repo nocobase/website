@@ -2,8 +2,6 @@ We’re excited to announce the official launch of the NocoBase CRM Solution!
 
 As an open-source no-code platform, NocoBase has been widely used to build all kinds of business applications. Among them, CRM is one of the most common starting points—so it only made sense for us to make it the first official solution in our lineup.
 
-💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
-
 You can now try it directly in our live demo environment and easily replicate it for your own needs.  👉 Try it now: [https://www.nocobase.com/en/solutions/crm](https://www.nocobase.com/en/solutions/crm)
 
 <iframe width="679" height="382" src="https://www.youtube.com/embed/rU0xaUYEtYk" title="NocoBase CRM Solution is Now Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -13,8 +11,6 @@ You can now try it directly in our live demo environment and easily replicate it
 CRM systems are one of the most popular use cases for NocoBase. They have a clear structure, standardized workflows, and well-defined data relationships—making them a perfect showcase of NocoBase’s strengths: visual data modeling, flexible permissions, automated workflows, and built-in charts.
 
 Even more importantly, CRM is a use case that’s been validated across a wide range of real-world scenarios by our global user base.
-
-💡 Read More: [Top 4 Custom CRM Case Studies (Helping You Choose a More Flexible CRM Solution)](https://www.nocobase.com/en/blog/custom-crm-case-studies)
 
 ## What’s Inside the CRM Demo?
 
@@ -27,11 +23,6 @@ You’ll find a fully functional CRM system where you can:
 * Tailor fields, relationships, permissions, and interface layouts
 
 From data modeling to UI design to business logic, everything is configured visually—no code required.
-
-💡 Read More:
-
-* [How to Implement CRM Lead Conversion in NocoBase](https://www.nocobase.com/en/tutorials/how-to-implement-lead-conversion-in-nocobase)
-* [Implementing CRM Sales Pipeline Visualization in NocoBase: Lead Status Progress Bar & Stage Management](https://www.nocobase.com/en/tutorials/nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar)
 
 ## What Commercial Plugins Are Used?
 
@@ -78,8 +69,6 @@ While not as seamless, it covers most basic scenarios.
 
 Some capabilities—like custom variable, template printing, or history logs—are difficult to replicate without the respective plugins. These may require significant custom development or workarounds.
 
-💡 Read More: [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
-
 ## Copy It to Your Own Environment
 
 You can copy the entire CRM system into your own NocoBase environment with just a few clicks. It’s a solid foundation to build on—add, remove, or customize any features to fit your exact business needs.
@@ -95,3 +84,8 @@ And this is just the start—more ready-to-use solutions are on the way, includi
 * [Top 10 Most-Starred Open-Source ERP and CRM on GitHub](https://www.nocobase.com/en/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
 * [Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
 * [NocoBase vs Salesforce: who is your ideal CRM?](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)
+* [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
+* [Top 4 Custom CRM Case Studies (Helping You Choose a More Flexible CRM Solution)](https://www.nocobase.com/en/blog/custom-crm-case-studies)
+* [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
+* [How to Implement CRM Lead Conversion in NocoBase](https://www.nocobase.com/en/tutorials/how-to-implement-lead-conversion-in-nocobase)
+* [Implementing CRM Sales Pipeline Visualization in NocoBase: Lead Status Progress Bar & Stage Management](https://www.nocobase.com/en/tutorials/nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar)
