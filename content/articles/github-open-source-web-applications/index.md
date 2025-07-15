@@ -113,9 +113,6 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL
 
 ### What it does
 
-* **插件式平台架构**：NocoBase 是一个插件驱动的低代码平台，几乎所有功能——包括数据模型、权限系统、工作流、UI 页面等——都以插件形式存在，开发者可以按需启用、禁用或扩展。
-* **数据模型驱动**：用户可以依据业务需求灵活定制数据模型，通过可视化界面快速创建和关联数据表，灵活整合主数据库、外部数据库和第三方API，满足复杂的业务需求。
-* **企业级应用场景适配**：内置字段权限、操作审计、流程审批、角色体系等核心能力，适用于 CRM、ERP、人事管理等复杂业务系统的快速搭建。
 * **Plugin-based low-code framework**: Every core function (data modeling, access control, workflows, UI, etc.) is a plugin. Enable, disable, or extend as needed.
 * **Data-model driven**: Visually create and relate tables, define business models, and integrate external APIs or databases.
 * **Enterprise-ready features**: Role-based permissions, approval flows, field-level controls—ideal for building custom CRMs, HR, ERP systems.
