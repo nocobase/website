@@ -102,6 +102,8 @@ These no-code/low-code tools can help you easily build a simple CRM in a few hou
 
 NocoBase is a highly flexible, open-source no-code platform designed for rapidly building and customizing business applications. Its data model-driven architecture allows users to precisely define and manage business data structures, easily building CRM systems that meet specific business needs and expanding upon them as required.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 **Key Features:**
 
 **Data Model-Driven:** Unlike other low-code/no-code platforms, NocoBase emphasizes building applications through data models. This means users can create and manage data models flexibly according to their business logic, ensuring that the CRM system structure aligns with actual business requirements.
