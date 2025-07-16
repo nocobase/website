@@ -37,6 +37,8 @@
 ![NocoBase.png](https://static-docs.nocobase.com/8aeaa5db8dce75b2662d83255a114798.png)
 NocoBase 是一款轻量级且高度可扩展的开源无代码（零代码）和低代码开发平台。通过快速部署，企业即可拥有一个私有、可控的无代码（零代码）开发环境，帮助团队高效构建各类业务应用，其中便包括搭建一个完全个性化的 CRM 系统。
 
+🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
+
 **优势功能**
 与传统 CRM 系统相比，NocoBase 提供了以下独特优势：
 
