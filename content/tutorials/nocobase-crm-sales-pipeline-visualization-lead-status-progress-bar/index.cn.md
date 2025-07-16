@@ -4,6 +4,8 @@
 
 本章是 [如何在 NocoBase 中实现 CRM 的线索转化](https://www.nocobase.com/cn/tutorials/how-to-implement-lead-conversion-in-nocobase) 系列教程的第二部分。在上一章中，我们已经介绍了线索转化的基础知识，包括创建所需的数据集合（Collections）、配置数据管理页面以及实现线索到公司、联系人和商机的转化功能。本章将重点关注线索的跟进流程和状态管理的实现。
 
+🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
+
 ### 1.2 本章目标
 
 在本章中，我们将一起学习如何在 NocoBase 中实现 CRM 线索转化。通过线索跟进和状态管理，您可以提升业务效率，实现更精细的销售过程控制。
