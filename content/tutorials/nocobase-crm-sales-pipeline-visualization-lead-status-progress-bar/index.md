@@ -4,6 +4,8 @@
 
 This chapter is the second part of the [How to Implement CRM Lead Conversion in NocoBase](https://www.nocobase.com/en/tutorials/how-to-implement-lead-conversion-in-nocobase) tutorial series. In the previous chapter, we covered the fundamentals of lead conversion, including creating the necessary collections, configuring data management pages, and implementing the conversion of leads to companies, contacts, and opportunities. This chapter will focus on implementing the lead follow-up process and status management.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 ### 1.2 Chapter Objective
 
 In this chapter, we will learn how to implement CRM lead conversion in NocoBase. Through lead follow-up and status management, you can boost operational efficiency and achieve more refined sales process control.
