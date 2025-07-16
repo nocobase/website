@@ -2,6 +2,8 @@
 
 This tutorial will guide you step-by-step on how to implement the CRM Opportunity Conversion feature in NocoBase. We will cover how to create the necessary collections, configure data management pages, design the conversion process, and set up association management to help you build the entire business process successfully.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 ## 2. Preparation: Creating the Required Collections
 
 Before starting, we need to prepare the following four collections and configure the relationships between them.
