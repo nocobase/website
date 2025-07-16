@@ -8,7 +8,7 @@
   "description_ja": "オープンソースのノーコードプラットフォームの特性を活かした NocoBase CRM ソリューションは、顧客管理やフロー承認などのコア機能を統合しています。プラグインによる拡張に対応し、自社環境に直接複製することが可能で、業務への適合に柔軟な選択肢を提供します。",
   "slug": "crm-solution",
   "publishedAt": "2025-07-15T11:14:14.981Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-08-29T17:09:45.850Z",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-15T14:17:33.135Z"
+  "updatedAt": "2025-07-16T00:44:40.498Z"
 }
