@@ -8,6 +8,8 @@ We will explore 4 successful custom CRM case studies, showing how customized CRM
 
 GemelSoft is a leading software development company located in China,  specializing in custom software solutions, with rich experience in enterprise management systems. As customer demands diversified, GemelSoft needed a CRM system that could flexibly adapt to different client needs.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 ### **Customization Requirements**
 
 * **Quickly Adapt to Customer Needs:** The CRM needed to support rapid customization to provide tailored solutions based on specific client requirements.
