@@ -221,6 +221,8 @@ Platform is fully open-source, licensed under Apache License 2.0, making all cor
 
 NocoBase is an open-source no-code/low-code platform known for its highly extensible, data model-driven approach. It empowers enterprises and developers to rapidly build various internal management systems such as CRM and ERP.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 Using a Node.js and React tech stack, NocoBase is completely open-source across both frontend and backend. Its standout features include visual data modeling and a robust plugin architecture, enabling non-technical users to build business applications effortlessly, while also offering deep customization capabilities for technical teams.
 
 Centered around customizable data models, NocoBase lets users define their own data structures, workflows, forms, and permission systems. It's perfect for dynamic business environments where rapid adjustments and high-level customizations are frequently needed. Its plugin system easily incorporates advanced functionalities like workflow automation, reporting, and third-party integrations, making it suitable for both rapid deployment and comprehensive enterprise-level expansions.

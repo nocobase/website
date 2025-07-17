@@ -2,6 +2,8 @@
 
 本教程将一步一步地引导您如何在 NocoBase 中实现 CRM 的商机转化（Opportunity Conversion）功能。我们将介绍如何创建所需的 collections（数据表）、配置数据管理页面、设计转化流程以及设置关联管理，从而帮助您顺利构建整个业务流程。
 
+🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
+
 ## 2. 准备工作：创建所需的 Collections
 
 在开始之前，我们需要准备以下 4 个 collections，并配置它们之间的关联关系。

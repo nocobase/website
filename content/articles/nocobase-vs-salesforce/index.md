@@ -36,6 +36,8 @@ This section compares NocoBase and Salesforce across key areas such as CRM solut
 
 NocoBase offers a highly flexible and customizable CRM solution, built on an open-source foundation and a dynamic data model-driven design. Users can design and implement customer management systems tailored to their unique business needs.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 **Unlike traditional pre-configured solutions, NocoBase’s CRM platform eliminates restrictions on fixed fields, data capacity, or layout designs. Users have the freedom to define data structures, field types, and page layouts from the ground up, aligning precisely with their business logic.**
 
 NocoBase’s adaptability extends beyond standard CRM applications. Many large enterprises leverage it to create industry-specific solutions, such as integrated project management tools, sales performance analytics, and automated after-sales service workflows. These custom-built tools align perfectly with business requirements.

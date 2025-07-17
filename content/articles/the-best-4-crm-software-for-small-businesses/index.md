@@ -36,6 +36,8 @@ By prioritizing these factors, small businesses can find a CRM solution that mee
 
 NocoBase is a highly flexible, scalable, and lightweight open-source platform for no-code and low-code development. With rapid deployment, businesses can create a private and fully controllable no-code environment, empowering teams to efficiently build various applications—including fully customized CRM systems.
 
+🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 **Key Features**
 NocoBase stands out from traditional CRMs with these unique benefits:
 

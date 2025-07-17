@@ -128,6 +128,8 @@ GitHub Link: https://github.com/nocobase/nocobase
 
 [NocoBase](https://www.nocobase.com/) 是一款极易拓展的开源无代码（零代码）/低代码 CRM 工具，专注于数据驱动模型和灵活的插件系统，为企业提供高度可定制的客户管理解决方案。
 
+🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
+
 **特点：**
 
 * **无代码（零代码）/低代码平台**：通过拖放组件即可快速搭建所需功能，降低了使用门槛。非技术人员也可以轻松创建和管理复杂的客户关系管理工作流。
