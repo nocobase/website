@@ -243,10 +243,18 @@ export async function listPluginCategories() {
 
 function groupPluginsByCategory(plugins: any[]): any[] {
         const groupMap = new Map<number, any>();
+        
+        // List of plugin names to be intercepted and hidden
+        const blockedPlugins = ['Migration manager', 'Password policy'];
 
         for (const plugin of plugins) {
           const cat = plugin.category;
     if (!cat) continue;
+    
+          // Check if this plugin should be blocked
+          if (blockedPlugins.includes(plugin.name)) {
+            continue; // Skip this plugin
+          }
 
           if (!groupMap.has(cat.id)) {
             groupMap.set(cat.id, {
