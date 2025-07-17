@@ -12,59 +12,21 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.8.2](https://www.nocobase.com/ja/blog/v1.8.2)
+### [v1.8.6](https://www.nocobase.com/ja/blog/v1.8.6)
 
-*リリース日：2025-07-10*
-
-#### 🎉 新機能
-
-* **[ワークフロー：承認]** トリガー用のイニシャライザを追加 @mytharcher
-
-#### 🚀 機能改善
-
-* **[マルチアプリマネージャー]** サブアプリにデータベースと認可オプションを追加（[#7184](https://github.com/nocobase/nocobase/pull/7184)）@mytharcher
-* **[ワークフロー]** ロジック計算における文字列比較の前にオペランドを文字列に変換（[#7190](https://github.com/nocobase/nocobase/pull/7190)）@mytharcher
-* **[コレクションフィールド：コード]** インデント設定を追加 @mytharcher
+*リリース日：2025-07-16*
 
 #### 🐛 不具合修正
 
-* **[データベース]** ビューのフィールドがブロックに表示されない問題を修正（[#7162](https://github.com/nocobase/nocobase/pull/7162)）@aaaaaajie
-* **[ブロック：カンバン]** カンバン内のサブテーブル UI の問題を修正し、カンバン列幅設定をサポート（[#7189](https://github.com/nocobase/nocobase/pull/7189)）@katherinehhh
-* **[ワークフロー：承認]** ブロックと関連データのバグを修正 @mytharcher
-
-### [v1.8.3](https://www.nocobase.com/ja/blog/v1.8.3)
-
-*リリース日：2025-07-11*
-
-#### 🚀 機能改善
-
-* **[マルチアプリマネージャー]** サブアプリにデータベースと認可オプションを追加（[#7184](https://github.com/nocobase/nocobase/pull/7184)）@mytharcher
-
-#### 🐛 不具合修正
-
-* **[アクション：カスタムリクエスト]** カスタムリクエスト成功後のルートナビゲーション時に、URL 内の変数解析に問題が生じる不具合（[#7186](https://github.com/nocobase/nocobase/pull/7186)）@katherinehhh
-
-### [v1.8.4](https://www.nocobase.com/ja/blog/v1.8.4)
-
-*リリース日：2025-07-13*
-
-#### 🎉 新機能
-
-* **[マルチアプリマネージャー]** サブアプリの独立した認証シークレットを設定できるようにサポート（[#7197](https://github.com/nocobase/nocobase/pull/7197)）@mytharcher
-* **[ワークフロー: CC]** ワークフローに CC ノードを追加（[#7201](https://github.com/nocobase/nocobase/pull/7201)）@mytharcher
-
-#### 🚀 機能改善
-
-* **[通知：アプリ内メッセージ]** モバイルメッセージページのフォントサイズを最適化（[#7199](https://github.com/nocobase/nocobase/pull/7199)）@zhangzhonghe
-* **[認証：钉钉（DingTalk）]** コールバック URL のプロトコルとポート番号を設定できるようにサポート @2013xile
-
-#### 🐛 不具合修正
-
-* **[通知：アプリ内メッセージ]** 文字列形式の BigInt タイムスタンプが dayjs で問題を引き起こす不具合を修正（[#7196](https://github.com/nocobase/nocobase/pull/7196)）@mytharcher
+* **[クライアント]**
+  * エラー修正：'react-device-detect' を解決できない問題（[#7224](https://github.com/nocobase/nocobase/pull/7224)）@zhangzhonghe
+  * 連動規則における関連フィールドの表示問題（[#7220](https://github.com/nocobase/nocobase/pull/7220)）@katherinehhh
+* **[データベース]** 外部データソーステーブルでシンプルページネーションを有効にした際のエラーを修正（[#7222](https://github.com/nocobase/nocobase/pull/7222)）@aaaaaajie
+* **[コレクションフィールド：ソート]** レコード複製時にソートフィールドの選択が欠落する問題（[#7116](https://github.com/nocobase/nocobase/pull/7116)）@katherinehhh
 * **[ワークフロー：承認]**
-  * ユーザーが存在しない場合のエラーを回避 @mytharcher
-  * レコードの関連データを再読み込み @mytharcher
-  * UI スキーマ更新時のマイグレーションに`try/catch`を追加 @mytharcher
+  * レコード一覧において削除された承認に対するフォールトトレランスを追加 @mytharcher
+  * 承認送信時の多階層関連データを修正 @mytharcher
+  * レコード削除時の例外を修正 @mytharcher
 
 ### [v1.8.5](https://www.nocobase.com/ja/blog/v1.8.5)
 
@@ -91,39 +53,63 @@
 * **[認証]** ログインページがスクロールできない問題を修正（[#7159](https://github.com/nocobase/nocobase/pull/7159)）@zhangzhonghe
 * **[ワークフロー：承認]** 承認送信時の関連データを修正 @mytharcher
 
-### [v1.8.6](https://www.nocobase.com/ja/blog/v1.8.6)
+### [v1.8.4](https://www.nocobase.com/ja/blog/v1.8.4)
 
-*リリース日：2025-07-16*
+*リリース日：2025-07-13*
+
+#### 🎉 新機能
+
+* **[マルチアプリマネージャー]** サブアプリの独立した認証シークレットを設定できるようにサポート（[#7197](https://github.com/nocobase/nocobase/pull/7197)）@mytharcher
+* **[ワークフロー: CC]** ワークフローに CC ノードを追加（[#7201](https://github.com/nocobase/nocobase/pull/7201)）@mytharcher
+
+#### 🚀 機能改善
+
+* **[通知：アプリ内メッセージ]** モバイルメッセージページのフォントサイズを最適化（[#7199](https://github.com/nocobase/nocobase/pull/7199)）@zhangzhonghe
+* **[認証：钉钉（DingTalk）]** コールバック URL のプロトコルとポート番号を設定できるようにサポート @2013xile
 
 #### 🐛 不具合修正
 
-* **[クライアント]**
-  * エラー修正：'react-device-detect' を解決できない問題（[#7224](https://github.com/nocobase/nocobase/pull/7224)）@zhangzhonghe
-  * 連動規則における関連フィールドの表示問題（[#7220](https://github.com/nocobase/nocobase/pull/7220)）@katherinehhh
-* **[データベース]** 外部データソーステーブルでシンプルページネーションを有効にした際のエラーを修正（[#7222](https://github.com/nocobase/nocobase/pull/7222)）@aaaaaajie
-* **[コレクションフィールド：ソート]** レコード複製時にソートフィールドの選択が欠落する問題（[#7116](https://github.com/nocobase/nocobase/pull/7116)）@katherinehhh
+* **[通知：アプリ内メッセージ]** 文字列形式の BigInt タイムスタンプが dayjs で問題を引き起こす不具合を修正（[#7196](https://github.com/nocobase/nocobase/pull/7196)）@mytharcher
 * **[ワークフロー：承認]**
-  * レコード一覧において削除された承認に対するフォールトトレランスを追加 @mytharcher
-  * 承認送信時の多階層関連データを修正 @mytharcher
-  * レコード削除時の例外を修正 @mytharcher
+  * ユーザーが存在しない場合のエラーを回避 @mytharcher
+  * レコードの関連データを再読み込み @mytharcher
+  * UI スキーマ更新時のマイグレーションに`try/catch`を追加 @mytharcher
+
+### [v1.8.3](https://www.nocobase.com/ja/blog/v1.8.3)
+
+*リリース日：2025-07-11*
+
+#### 🚀 機能改善
+
+* **[マルチアプリマネージャー]** サブアプリにデータベースと認可オプションを追加（[#7184](https://github.com/nocobase/nocobase/pull/7184)）@mytharcher
+
+#### 🐛 不具合修正
+
+* **[アクション：カスタムリクエスト]** カスタムリクエスト成功後のルートナビゲーション時に、URL 内の変数解析に問題が生じる不具合（[#7186](https://github.com/nocobase/nocobase/pull/7186)）@katherinehhh
+
+### [v1.8.2](https://www.nocobase.com/ja/blog/v1.8.2)
+
+*リリース日：2025-07-10*
+
+#### 🎉 新機能
+
+* **[ワークフロー：承認]** トリガー用のイニシャライザを追加 @mytharcher
+
+#### 🚀 機能改善
+
+* **[マルチアプリマネージャー]** サブアプリにデータベースと認可オプションを追加（[#7184](https://github.com/nocobase/nocobase/pull/7184)）@mytharcher
+* **[ワークフロー]** ロジック計算における文字列比較の前にオペランドを文字列に変換（[#7190](https://github.com/nocobase/nocobase/pull/7190)）@mytharcher
+* **[コレクションフィールド：コード]** インデント設定を追加 @mytharcher
+
+#### 🐛 不具合修正
+
+* **[データベース]** ビューのフィールドがブロックに表示されない問題を修正（[#7162](https://github.com/nocobase/nocobase/pull/7162)）@aaaaaajie
+* **[ブロック：カンバン]** カンバン内のサブテーブル UI の問題を修正し、カンバン列幅設定をサポート（[#7189](https://github.com/nocobase/nocobase/pull/7189)）@katherinehhh
+* **[ワークフロー：承認]** ブロックと関連データのバグを修正 @mytharcher
 
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.2](https://www.nocobase.com/ja/blog/v1.9.0-beta.2)
-
-*リリース日：2025-07-10*
-
-#### 🐛 不具合修正
-
-* **[クライアント]**
-  * フォーム内の関連フィールドコレクションにおけるチェックボックスフィールドの表示が不正確な問題（[#7176](https://github.com/nocobase/nocobase/pull/7176)）@zhangzhonghe
-  * ボタンをクリックしてもポップアップが開かない問題を修正（[#7180](https://github.com/nocobase/nocobase/pull/7180)）@zhangzhonghe
-* **[データベース]** ビューのフィールドがブロックに表示されない問題を修正（[#7162](https://github.com/nocobase/nocobase/pull/7162)）@aaaaaajie
-* **[ワークフロー：手動ノード]** 変数を使用した際に発生するエラーを修正（[#7177](https://github.com/nocobase/nocobase/pull/7177)）@mytharcher
-* **[テンプレート印刷]** rootDataType フィールドにマイグレーションスクリプトを追加 @jiannx
-* **[ワークフロー：承認]** 担当者が設定されていない場合に承認済みブランチが実行されない問題を修正 @mytharcher
 
 ### [v1.9.0-beta.3](https://www.nocobase.com/ja/blog/v1.9.0-beta.3)
 
@@ -166,6 +152,20 @@
   * ブロックと関連データのバグを修正 @mytharcher
   * レコードの関連データを再読み込み @mytharcher
   * ユーザーが存在しない場合のエラーを回避 @mytharcher
+
+### [v1.9.0-beta.2](https://www.nocobase.com/ja/blog/v1.9.0-beta.2)
+
+*リリース日：2025-07-10*
+
+#### 🐛 不具合修正
+
+* **[クライアント]**
+  * フォーム内の関連フィールドコレクションにおけるチェックボックスフィールドの表示が不正確な問題（[#7176](https://github.com/nocobase/nocobase/pull/7176)）@zhangzhonghe
+  * ボタンをクリックしてもポップアップが開かない問題を修正（[#7180](https://github.com/nocobase/nocobase/pull/7180)）@zhangzhonghe
+* **[データベース]** ビューのフィールドがブロックに表示されない問題を修正（[#7162](https://github.com/nocobase/nocobase/pull/7162)）@aaaaaajie
+* **[ワークフロー：手動ノード]** 変数を使用した際に発生するエラーを修正（[#7177](https://github.com/nocobase/nocobase/pull/7177)）@mytharcher
+* **[テンプレート印刷]** rootDataType フィールドにマイグレーションスクリプトを追加 @jiannx
+* **[ワークフロー：承認]** 担当者が設定されていない場合に承認済みブランチが実行されない問題を修正 @mytharcher
 
 ## develop
 
