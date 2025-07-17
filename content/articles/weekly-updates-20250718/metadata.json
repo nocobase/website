@@ -1,11 +1,11 @@
 {
   "id": 621,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include:",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
+  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
+  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "description": "This week’s updates include: support for configuring independent auth secrets for sub-apps and the addition of a CC node to workflows.",
+  "description_cn": "本周更新包括：支持为子应用配置独立的认证密钥，工作流新增抄送节点等。",
+  "description_ja": "今週の更新では、サブアプリの独立した認証シークレットの設定サポートと、ワークフローへの CC ノードの追加が含まれます。",
   "slug": "weekly-updates-20250718",
   "publishedAt": "2025-07-18T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-17T07:58:14.737Z"
+  "updatedAt": "2025-07-17T10:06:38.498Z"
 }
