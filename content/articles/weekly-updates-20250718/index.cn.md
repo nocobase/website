@@ -14,60 +14,23 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.8.2](https://www.nocobase.com/cn/blog/v1.8.2)
+### [v1.8.6](https://www.nocobase.com/cn/blog/v1.8.6)
 
-*发布时间：2025-07-10*
-
-#### 🎉 新特性
-
-- **[工作流：审批]** 为触发器增加区块初始化器 by @mytharcher
-
-#### 🚀 优化
-
-- **[多应用管理器]** 为子应用增加数据库和认证的独立配置 ([#7184](https://github.com/nocobase/nocobase/pull/7184)) by @mytharcher
-- **[工作流]** 字符串比较运算前将操作数转换为字符串 ([#7190](https://github.com/nocobase/nocobase/pull/7190)) by @mytharcher
-- **[数据表字段：代码]** 增加字段缩进配置 by @mytharcher
+*发布时间：2025-07-16*
 
 #### 🐛 修复
 
-- **[database]** 修复视图在区块中不显示字段的问题。 ([#7162](https://github.com/nocobase/nocobase/pull/7162)) by @aaaaaajie
-- **[区块：看板]** 修复看板中子表格 UI 异常 & 支持设置看板每列宽度 ([#7189](https://github.com/nocobase/nocobase/pull/7189)) by @katherinehhh
-- **[工作流：审批]** 修复区块和关系数据问题 by @mytharcher
+- **[client]**
 
-### [v1.8.3](https://www.nocobase.com/cn/blog/v1.8.3)
-
-*发布时间：2025-07-11*
-
-#### 🚀 优化
-
-- **[多应用管理器]** 为子应用增加数据库和认证的独立配置 ([#7184](https://github.com/nocobase/nocobase/pull/7184)) by @mytharcher
-
-#### 🐛 修复
-
-- **[操作：自定义请求]** 修复自定义请求操作成功后，跳转路由时链接地址变量解析错误的问题 ([#7186](https://github.com/nocobase/nocobase/pull/7186)) by @katherinehhh
-
-### [v1.8.4](https://www.nocobase.com/cn/blog/v1.8.4)
-
-*发布时间：2025-07-13*
-
-#### 🎉 新特性
-
-- **[多应用管理器]** 支持为子应用配置独立的认证密钥 ([#7197](https://github.com/nocobase/nocobase/pull/7197)) by @mytharcher
-- **[工作流：抄送]** 工作流新增抄送节点 ([#7201](https://github.com/nocobase/nocobase/pull/7201)) by @mytharcher
-
-#### 🚀 优化
-
-- **[通知：站内信]** 优化移动端消息页面的字体大小 ([#7199](https://github.com/nocobase/nocobase/pull/7199)) by @zhangzhonghe
-- **[认证：钉钉]** 支持配置回调 URL 协议和端口号 by @2013xile
-
-#### 🐛 修复
-
-- **[通知：站内信]** 修复字符串格式的大整型时间戳导致的 dayjs 问题 ([#7196](https://github.com/nocobase/nocobase/pull/7196)) by @mytharcher
+  - 修复错误：Can't resolve 'react-device-detect' ([#7224](https://github.com/nocobase/nocobase/pull/7224)) by @zhangzhonghe
+  - 修复联动规则中关系字段显示异常的问题 ([#7220](https://github.com/nocobase/nocobase/pull/7220)) by @katherinehhh
+- **[database]** 修复外部数据源表设置简单分页模式时的报错问题 ([#7222](https://github.com/nocobase/nocobase/pull/7222)) by @aaaaaajie
+- **[数据表字段：排序]** 修复了在复制操作中缺少排序字段的问题 ([#7116](https://github.com/nocobase/nocobase/pull/7116)) by @katherinehhh
 - **[工作流：审批]**
 
-  - 避免用户不存在时的报错 by @mytharcher
-  - 重新加载审批记录上的关系数据 by @mytharcher
-  - 迁移脚本中更新 UI schema 时加入 `try/catch` by @mytharcher
+  - 为审批记录列表增加审批已删除的容错 by @mytharcher
+  - 修复提交审批时的多级关系数据 by @mytharcher
+  - 修复删除数据时的异常 by @mytharcher
 
 ### [v1.8.5](https://www.nocobase.com/cn/blog/v1.8.5)
 
@@ -95,42 +58,64 @@
 - **[用户认证]** 修复登录页面不能滚动的问题 ([#7159](https://github.com/nocobase/nocobase/pull/7159)) by @zhangzhonghe
 - **[工作流：审批]** 修复提交审批时的关系数据 by @mytharcher
 
-### [v1.8.6](https://www.nocobase.com/cn/blog/v1.8.6)
+### [v1.8.4](https://www.nocobase.com/cn/blog/v1.8.4)
 
-*发布时间：2025-07-16*
+*发布时间：2025-07-13*
+
+#### 🎉 新特性
+
+- **[多应用管理器]** 支持为子应用配置独立的认证密钥 ([#7197](https://github.com/nocobase/nocobase/pull/7197)) by @mytharcher
+- **[工作流：抄送]** 工作流新增抄送节点 ([#7201](https://github.com/nocobase/nocobase/pull/7201)) by @mytharcher
+
+#### 🚀 优化
+
+- **[通知：站内信]** 优化移动端消息页面的字体大小 ([#7199](https://github.com/nocobase/nocobase/pull/7199)) by @zhangzhonghe
+- **[认证：钉钉]** 支持配置回调 URL 协议和端口号 by @2013xile
 
 #### 🐛 修复
 
-- **[client]**
-
-  - 修复错误：Can't resolve 'react-device-detect' ([#7224](https://github.com/nocobase/nocobase/pull/7224)) by @zhangzhonghe
-  - 修复联动规则中关系字段显示异常的问题 ([#7220](https://github.com/nocobase/nocobase/pull/7220)) by @katherinehhh
-- **[database]** 修复外部数据源表设置简单分页模式时的报错问题 ([#7222](https://github.com/nocobase/nocobase/pull/7222)) by @aaaaaajie
-- **[数据表字段：排序]** 修复了在复制操作中缺少排序字段的问题 ([#7116](https://github.com/nocobase/nocobase/pull/7116)) by @katherinehhh
+- **[通知：站内信]** 修复字符串格式的大整型时间戳导致的 dayjs 问题 ([#7196](https://github.com/nocobase/nocobase/pull/7196)) by @mytharcher
 - **[工作流：审批]**
 
-  - 为审批记录列表增加审批已删除的容错 by @mytharcher
-  - 修复提交审批时的多级关系数据 by @mytharcher
-  - 修复删除数据时的异常 by @mytharcher
+  - 避免用户不存在时的报错 by @mytharcher
+  - 重新加载审批记录上的关系数据 by @mytharcher
+  - 迁移脚本中更新 UI schema 时加入 `try/catch` by @mytharcher
+
+### [v1.8.3](https://www.nocobase.com/cn/blog/v1.8.3)
+
+*发布时间：2025-07-11*
+
+#### 🚀 优化
+
+- **[多应用管理器]** 为子应用增加数据库和认证的独立配置 ([#7184](https://github.com/nocobase/nocobase/pull/7184)) by @mytharcher
+
+#### 🐛 修复
+
+- **[操作：自定义请求]** 修复自定义请求操作成功后，跳转路由时链接地址变量解析错误的问题 ([#7186](https://github.com/nocobase/nocobase/pull/7186)) by @katherinehhh
+
+### [v1.8.2](https://www.nocobase.com/cn/blog/v1.8.2)
+
+*发布时间：2025-07-10*
+
+#### 🎉 新特性
+
+- **[工作流：审批]** 为触发器增加区块初始化器 by @mytharcher
+
+#### 🚀 优化
+
+- **[多应用管理器]** 为子应用增加数据库和认证的独立配置 ([#7184](https://github.com/nocobase/nocobase/pull/7184)) by @mytharcher
+- **[工作流]** 字符串比较运算前将操作数转换为字符串 ([#7190](https://github.com/nocobase/nocobase/pull/7190)) by @mytharcher
+- **[数据表字段：代码]** 增加字段缩进配置 by @mytharcher
+
+#### 🐛 修复
+
+- **[database]** 修复视图在区块中不显示字段的问题。 ([#7162](https://github.com/nocobase/nocobase/pull/7162)) by @aaaaaajie
+- **[区块：看板]** 修复看板中子表格 UI 异常 & 支持设置看板每列宽度 ([#7189](https://github.com/nocobase/nocobase/pull/7189)) by @katherinehhh
+- **[工作流：审批]** 修复区块和关系数据问题 by @mytharcher
 
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.2](https://www.nocobase.com/cn/blog/v1.9.0-beta.2)
-
-*发布时间：2025-07-10*
-
-#### 🐛 修复
-
-- **[client]**
-
-  - 表单中关系字段表中的勾选字段显示不正确 ([#7176](https://github.com/nocobase/nocobase/pull/7176)) by @zhangzhonghe
-  - 修复点击按钮无法打开弹窗的问题 ([#7180](https://github.com/nocobase/nocobase/pull/7180)) by @zhangzhonghe
-- **[database]** 修复视图在区块中不显示字段的问题。 ([#7162](https://github.com/nocobase/nocobase/pull/7162)) by @aaaaaajie
-- **[工作流：人工处理节点]** 修复使用节点变量时的报错 ([#7177](https://github.com/nocobase/nocobase/pull/7177)) by @mytharcher
-- **[模板打印]** rootDataType字段添加迁移脚本 by @jiannx
-- **[工作流：审批]** 修复通过分支在没有审批人的时候未执行的问题 by @mytharcher
 
 ### [v1.9.0-beta.3](https://www.nocobase.com/cn/blog/v1.9.0-beta.3)
 
@@ -176,6 +161,21 @@
   - 修复区块和关系数据问题 by @mytharcher
   - 重新加载审批记录上的关系数据 by @mytharcher
   - 避免用户不存在时的报错 by @mytharcher
+
+### [v1.9.0-beta.2](https://www.nocobase.com/cn/blog/v1.9.0-beta.2)
+
+*发布时间：2025-07-10*
+
+#### 🐛 修复
+
+- **[client]**
+
+  - 表单中关系字段表中的勾选字段显示不正确 ([#7176](https://github.com/nocobase/nocobase/pull/7176)) by @zhangzhonghe
+  - 修复点击按钮无法打开弹窗的问题 ([#7180](https://github.com/nocobase/nocobase/pull/7180)) by @zhangzhonghe
+- **[database]** 修复视图在区块中不显示字段的问题。 ([#7162](https://github.com/nocobase/nocobase/pull/7162)) by @aaaaaajie
+- **[工作流：人工处理节点]** 修复使用节点变量时的报错 ([#7177](https://github.com/nocobase/nocobase/pull/7177)) by @mytharcher
+- **[模板打印]** rootDataType字段添加迁移脚本 by @jiannx
+- **[工作流：审批]** 修复通过分支在没有审批人的时候未执行的问题 by @mytharcher
 
 ## develop
 
