@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、サブアプリの独立した認証シークレットの設定サポートと、ワークフローへの CC ノードの追加が含まれます。",
   "slug": "weekly-updates-20250718",
   "publishedAt": "2025-07-18T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-17T10:06:38.498Z"
+  "updatedAt": "2025-07-18T01:05:08.456Z"
 }
