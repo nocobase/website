@@ -29,12 +29,12 @@ This method performs one-click restoration through NocoBase's built-in "[Backup 
 
 **Step 1: [Strongly Recommended] Start Application Using `full` Image**
 
-To avoid restoration failures due to missing database clients, we strongly recommend using the `full` version of the Docker image. It has all necessary supporting programs built-in, requiring no additional configuration.
+To avoid restoration failures due to missing database clients, we strongly recommend using the `full` version of the Docker image. It has all necessary supporting programs built-in, requiring no additional configuration. (Note: The image is built on 1.9.0-alpha.1, please pay attention to version compatibility)
 
 Example command to pull the image:
 
 ```bash
-docker pull nocobase/nocobase:1.8.1-full
+docker pull nocobase/nocobase:1.9.0-alpha.3-full
 ```
 
 Then use this image to start your NocoBase service.
