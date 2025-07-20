@@ -3,9 +3,9 @@
 在开始之前，请确保
 
 - 您已经有了一个基础的 NocoBase 运行环境。关于主系统的安装，请参考更详细的[官方安装文档](https://docs-cn.nocobase.com/welcome/getting-started/installation)。
-- 您已经下载了我们 CRM Demo 的相应文件：
-  - **备份文件**（约21.2MB）：[crm_demo_20250711.nbdata](https://static-docs.nocobase.com/crm_demo_20250711.nbdata) - 适用于方法一
-  - **SQL文件**（压缩后约9MB）：[crm_demo_20250711_sql.zip](https://static-docs.nocobase.com/crm_demo_20250711_sql.zip) - 适用于方法二
+- 您已经下载了我们 CRM Demo 的相应文件(中文版)：
+  - **备份文件**（约21.2MB）：[nocobase_crm_demo_cn.nbdata](https://static-docs.nocobase.com/nocobase_crm_demo_cn.nbdata) - 适用于方法一
+  - **SQL文件**（压缩后约9MB）：[nocobase_crm_demo_cn.zip](https://static-docs.nocobase.com/nocobase_crm_demo_cn.zip) - 适用于方法二
 
 **重要说明**：本 Demo 基于 **PostgreSQL** 数据库制作，请确保您的环境使用 PostgreSQL 数据库。
 
@@ -29,12 +29,12 @@
 
 **第 1 步：【强烈建议】使用 `full` 镜像启动应用**
 
-为了避免因缺少数据库客户端而导致的还原失败，我们强烈建议您使用 `full` 版本的 Docker 镜像。它内置了所有必需的配套程序，让您无需进行额外配置。
+为了避免因缺少数据库客户端而导致的还原失败，我们强烈建议您使用 `full` 版本的 Docker 镜像。它内置了所有必需的配套程序，让您无需进行额外配置。（注意：我们镜像由1.9.0-alpha.1制作，请留意版本兼容性）
 
 拉取镜像的指令示例：
 
 ```bash
-docker pull nocobase/nocobase:1.8.1-full
+docker pull nocobase/nocobase:1.9.0-alpha.3-full
 ```
 
 然后使用此镜像启动您的 NocoBase 服务。
