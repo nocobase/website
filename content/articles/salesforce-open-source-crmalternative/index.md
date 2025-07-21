@@ -90,7 +90,7 @@ With NocoBase, businesses can build CRM systems efficiently, reduce technical ba
 
 💡 Get started: [NocoBase Tutorials - How to Build a Task Management System](https://www.nocobase.com/en/tutorials)
 
-### [EspoCRM]([EspoCRM](https://www.espocrm.com/)) - A Lightweight Open-Source CRM
+### [EspoCRM](https://www.espocrm.com/) - A Lightweight Open-Source CRM
 
 ![EspoCRM.png](https://static-docs.nocobase.com/cd7c7ba2f8403f6509007e2e267187ad.png)
 
@@ -123,7 +123,7 @@ EspoCRM is an excellent option for budget-conscious small and medium businesses 
 
 EspoCRM shines in scenarios where advanced cross-department collaboration and global functionality are unnecessary. Additionally, for companies that value private deployment and complete control over their data, EspoCRM offers an affordable and reliable solution.
 
-## [SuiteCRM]([SuiteCRM](https://suitecrm.com/)) - A Powerful Open-Source CRM Comparable to Salesforce
+### [SuiteCRM](https://suitecrm.com/) - A Powerful Open-Source CRM Comparable to Salesforce
 
 ![SuiteCRM.png](https://static-docs.nocobase.com/db5ce4c02abf138a2d68036432a4bff4.png)
 
@@ -157,7 +157,7 @@ Offering features similar to Salesforce, SuiteCRM is entirely open-source.
 
 Industries such as finance and healthcare that prioritize private deployment and data control will find SuiteCRM a reliable option. For those seeking Salesforce-level capabilities at a fraction of the cost, SuiteCRM is an excellent choice.
 
-## [Twenty]([Twenty](https://twenty.com/)) - A Modern CRM Alternative to Salesforce
+### [Twenty](https://twenty.com/) - A Modern CRM Alternative to Salesforce
 
 ![Twenty.png](https://static-docs.nocobase.com/ab7565471047ba4f5554f21da84f62b2.png)
 
@@ -169,7 +169,7 @@ Its table-based interface, similar to Airtable, makes managing customer data str
 
 💡 Learn more: [Top 7 OSS Airtable Alternatives Ranked by GitHub Stars](https://www.nocobase.com/en/blog/open-source-airtable-alternatives)
 
-### **Key Features**
+#### **Key Features**
 
 * **Streamlined Design**: A clean, user-friendly interface that minimizes the need for training.
 * **Smart Customer Management**: Offers automated insights and reminders for critical customer interactions.
@@ -179,7 +179,7 @@ Its table-based interface, similar to Airtable, makes managing customer data str
 
 ![kanban.png](https://static-docs.nocobase.com/733d193d3251fb554a34730761d9957e.png)
 
-### **Twenty vs Salesforce**
+#### **Twenty vs Salesforce**
 
 
 | Feature             | Twenty                                                           | Salesforce                                                        |
@@ -189,7 +189,7 @@ Its table-based interface, similar to Airtable, makes managing customer data str
 | Workflow Automation | Quick setup for basic workflows.                                 | Robust enterprise-level automation for complex scenarios.         |
 | Collaboration       | Real-time tools ideal for small teams.                           | Advanced cross-department collaboration for larger organizations. |
 
-### **Which Should You Choose?**
+#### **Which Should You Choose?**
 
 Twenty is tailored for teams that value simplicity, speed, and ease of use. It’s an excellent choice for small businesses or startups that want to deploy a basic CRM system quickly. With its intuitive interface and intelligent customer management tools, Twenty lets teams focus on their core activities without the hassle of complicated setups or steep learning curves.
 
