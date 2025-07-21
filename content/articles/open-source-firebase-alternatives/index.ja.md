@@ -67,7 +67,7 @@ RESTやGraphQLのAPI、JavaScriptやFlutter、iOSなど主要環境向けのSDK�
 * ⚠️＝一部制限あり・追加設定が必要
 * 🚫＝現時点では未対応
 
-## 1. [NocoBase]([NocoBase](https://www.nocobase.com/))
+## 1. [NocoBase](https://www.nocobase.com/)
 
 ✅ 複雑な業務アプリケーションに最適な、自由度の高いバックエンドプラットフォーム
 
@@ -97,7 +97,7 @@ Firebaseでこんな悩みがありませんか？
 
 業務の成長とともに拡張できる、本格的な業務システムを構築したいなら、NocoBaseは非常に有力な選択肢です。
 
-## 2. [Supabase]([Supabase](https://supabase.com/))
+## 2. [Supabase](https://supabase.com/)
 
 ✅ Firebaseの開発体験を継承した、最も近いオープンソース代替
 
