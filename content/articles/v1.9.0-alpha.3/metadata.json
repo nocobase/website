@@ -1,14 +1,14 @@
 {
   "id": 623,
-  "title": "NocoBase v1.9.0-alpha.3",
-  "title_cn": "NocoBase v1.9.0-alpha.3",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.9.0-alpha.3: Support displaying plugin-defined tables in the main data source",
+  "title_cn": "NocoBase v1.9.0-alpha.3：支持主数据源显示插件定义的表",
+  "title_ja": "NocoBase v1.9.0-alpha.3：メインデータソースにプラグインで定義されたテーブルを表示できるようにサポート",
   "description": "Release Note of v1.9.0-alpha.3",
   "description_cn": "v1.9.0-alpha.3 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.9.0-alpha.3 のリリースノート",
   "slug": "v1.9.0-alpha.3",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-07-18T01:47:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-07-21T01:10:23.867Z",
+        "updatedAt": "2025-07-21T01:10:23.867Z",
+        "articles_id": 623,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-07-21T01:05:38.181Z",
+    "updatedAt": "2025-07-21T01:05:38.181Z",
+    "id": 1592,
+    "title": "develop",
+    "filename": "develop-vlrggd.png",
+    "extname": ".png",
+    "size": 77082,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-vlrggd.png",
+    "preview": "https://static-docs.nocobase.com/develop-vlrggd.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-18T01:47:50.754Z"
+  "updatedAt": "2025-07-21T01:12:11.679Z"
 }
