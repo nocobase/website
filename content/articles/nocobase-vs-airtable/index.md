@@ -275,7 +275,7 @@ NocoBase isn’t meant to replace Airtable. It’s here for those ready to take 
 
 We believe the best tools don’t compete—they complement, offering users the freedom to evolve with their needs.
 
-👉 If you’re thinking about what comes next, consider giving [NocoBase]([NocoBase](https://www.nocobase.com/)) a try. It might just be what you're looking for.
+👉 If you’re thinking about what comes next, consider giving [NocoBase](https://www.nocobase.com/) a try. It might just be what you're looking for.
 
 **Read more:**
 
