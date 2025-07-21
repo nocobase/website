@@ -36,7 +36,7 @@ Salesforceは優れた機能を備えていますが、以下のような課題�
 
 ## Salesforceの代替としてのオープンソースCRMトップ候補
 
-### **[NocoBase]([NocoBase](https://www.nocobase.com/cn/)) - 柔軟なノーコード/ローコード開発プラットフォーム**
+### **[NocoBase](https://www.nocobase.com/)- 柔軟なノーコード/ローコード開発プラットフォーム**
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/fb06535f83c00c486fbf2373d452eeb9.PNG)
 
