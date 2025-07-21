@@ -94,7 +94,7 @@ NocoBaseは、低コストで柔軟性やデータ管理の自由を求めるチ
 
 💡 始めるにはこちら: [NocoBaseチュートリアル - タスク管理システム構築方法](https://www.nocobase.com/ja/tutorials)
 
-### [EspoCRM]([EspoCRM](https://www.espocrm.com/)) - 軽量なオープンソースCRM
+### [EspoCRM](https://www.espocrm.com/) - 軽量なオープンソースCRM
 
 ![EspoCRM.png](https://static-docs.nocobase.com/cd7c7ba2f8403f6509007e2e267187ad.png)
 
@@ -127,7 +127,7 @@ EspoCRMは、予算重視で直感的に使えるCRMシステムを求める中�
 
 EspoCRMは、複雑な部門間連携やグローバル機能が不要な場合に特に効果を発揮します。データの完全管理を重視する企業にも、手頃で信頼性の高いソリューションを提供します。
 
-### [SuiteCRM]([SuiteCRM](https://suitecrm.com/)) - Salesforceに匹敵する強力なオープンソースCRM
+### [SuiteCRM](https://suitecrm.com/) - Salesforceに匹敵する強力なオープンソースCRM
 
 ![SuiteCRM.png](https://static-docs.nocobase.com/db5ce4c02abf138a2d68036432a4bff4.png)
 
@@ -163,7 +163,7 @@ SuiteCRMは、サブスクリプション型CRMの高コストを回避したい
 
 金融やヘルスケアなど、プライベートなデプロイメントとデータ管理を重視する業界にとって、SuiteCRMは信頼できるソリューションです。Salesforceに近い機能を、より安価に実現したい場合は、SuiteCRMが最適な選択肢と言えるでしょう。
 
-### [Twenty]([Twenty](https://twenty.com/)) - Salesforceに代わる現代的なCRMツール
+### [Twenty](https://twenty.com/) - Salesforceに代わる現代的なCRMツール
 
 ![Twenty.png](https://static-docs.nocobase.com/ab7565471047ba4f5554f21da84f62b2.png)
 
