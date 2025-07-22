@@ -73,7 +73,7 @@ While the concept of RBAC is straightforward, **permission systems often become 
 
 To avoid confusion and ensure long-term scalability, we recommend following these four steps when designing a clear and extensible RBAC system:
 
-1. ### Define Roles
+### 1. Define Roles
 
 Roles are the backbone of any RBAC system. Each role represents a group of users with similar responsibilities and access requirements.
 
@@ -92,7 +92,7 @@ Example roles:
 
 **Recommendation**:  Keep the number of roles manageable. Avoid “one user, one role” patterns. Each role should represent a **general set of permissions** for a type of user.
 
-2. ### Define Resources and Actions
+### 2. Define Resources and Actions
 
 Next, identify the resources in your system that require access control, and the actions that can be performed on them.
 
@@ -114,7 +114,7 @@ Next, identify the resources in your system that require access control, and the
 
 These resources and actions form the **horizontal axis** of your permission model.
 
-3. ### Map Permissions to Roles
+### 3. Map Permissions to Roles
 
 Once roles, resources, and actions are defined, you can map permissions to roles.
 
@@ -144,7 +144,7 @@ At this stage, many teams produce a **Role–Resource–Action matrix**, which b
 | Finance Staff   | —                                  | View                             | —                  | View / Export               |
 | System Admin    | Full Access                         | Full Access                      | Full Access         | Full Access                 |
 
-4. ### Implement Field-Level and Conditional Permissions
+### 4. Implement Field-Level and Conditional Permissions
 
 Basic RBAC typically controls access at the resource level. However, many real-world systems require **more granular control**, such as field-level or condition-based permissions.
 
@@ -168,9 +168,9 @@ Let’s say you’re building a CRM system and need to assign different levels o
 
 Start by managing all users centrally in the **Users & Permissions** module. In NocoBase, you can organize users into departments—for example, placing all sales reps under the “Sales” department. This lays the foundation for **data segmentation** and **approval routing** based on organizational structure.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTg0NWNhNGU2MDYxODkzNzc4OGY0ZmU0MjgwM2JhYTdfd3RsdEliWGJ3RkhGMEJ4QXRJUG1sTlRNbEVoRkJqY2RfVG9rZW46SkhBemJwOENSb1hJelZ4WkR5WGNFaFpibnFjXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![Who Will Use the System?](https://static-docs.nocobase.com/11-sl6keh.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzkwMjM5NjU3ODUzNWJkMmU3NmU3ZWU0NTUwNjU4MzZfZHp4Mk9PS2dBaWRwajN2MEplT0dWVmpLU0lDd2hrdHRfVG9rZW46WElDY2J4T043b3lMSVV4Z0J4amN1V01ybnBnXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![Who Will Use the System?](https://static-docs.nocobase.com/12-fut1wu.png)
 
 ### 2. **What Are Their Roles?**
 
@@ -182,7 +182,7 @@ Next, define roles for different user types in the **Roles & Permissions** secti
 
 Each role can be assigned to one or more users.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTgyOTRmNGVhNjQ0NTZhMDRjN2NhZjkxMDk3MzgyYjRfSjI3SWU1Wnd2MlJVWVpCR3Fwa0NlN0wwY0NVSkMyU0JfVG9rZW46VmVYdmJXMlRCb0kwemx4Z1BYcGM3blBHbjdmXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![What Are Their Roles?](https://static-docs.nocobase.com/13-zeboed.png)
 
 ### 3. **What Data Can They Access and Modify?**
 
@@ -191,7 +191,7 @@ Configure permissions for each role on key data collections like **Customers**, 
 * Can they add, view, edit, delete, import, or export data?
 * Can they **only access records they created**?
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY1NDc0NjUxZjI3MDNiNzgxY2E2Y2UyMDRmZjYyZTRfSjVCVzI1SlhNVUtob1MyanI5YldUS3RwR3lRUTVhZXdfVG9rZW46SHNTWGJNcEREb2FQV2t4TUFwcWNHdVVSbmhnXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![What Data Can They Access and Modify?](https://static-docs.nocobase.com/14-g02514.png)
 
 ### 4. **What Modules Should They See?**
 
@@ -202,7 +202,7 @@ For example:
 * **Sales** may only see customer management and follow-up records
 * **Sales Managers** may access dashboards and approval centers
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDc3MjhlMWViOGIzYTQ1OWIyZjgxMTZmMjljMTQ5YWRfczZLUG9WZndjRzl6VVNlWGtuVFdhWkJvUUQ1dlUzRVFfVG9rZW46WDNQRWJiSFY5b0JleEh4ZG9TZ2NPVVNvbkdjXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![What Modules Should They See?](https://static-docs.nocobase.com/15-tngndo.png)
 
 ### 5. **How Should Permissions React to Org Structure?**
 
@@ -212,7 +212,7 @@ With roles and departments in place, you can define **conditional permissions** 
 * Managers can only approve leads submitted by their direct reports
 * After approval, a record automatically gets reassigned to the manager
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjEyMWQ4MWVhMzZiMmRhY2Q2ZmQzMzhkYjNjNjg5NzBfd2tmS3FmQUFsUEZBS0hvb0p3VjhMcWJYeW41dlRnNUFfVG9rZW46UzNYUWI5QU5tb25MMGJ4M3ROMGNTdXhkbm9lXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![How Should Permissions React to Org Structure?](https://static-docs.nocobase.com/16-i5mddu.png)
 
 By following these five steps, you can quickly implement a **real-world-ready RBAC system** in NocoBase. From user identity → page access → data operations → dynamic rules, every step can be visually configured **without writing a single line of code**. This approach works for both simple use cases and complex business processes.
 
@@ -228,7 +228,7 @@ A well-designed permission system should offer:
 
 With the right tools, permissions no longer need to be hardcoded. They can be **visually modeled, centrally managed, and continuously improved**. This not only strengthens security but also streamlines collaboration and speeds up development.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzAxYTk5M2ZkMzczNTQwNWY2OWMxZGE1ZjIzY2UwZTNfb083MWhLU1FqcjhiRzJiUXRIYnFPZ0V5TEMyNTI2MG1fVG9rZW46S0w3QWJqZ296b1ZYRXJ4SVFSOWNrUjVCbkRoXzE3NTMxNTIzNDU6MTc1MzE1NTk0NV9WNA)
+![NocoBase CRM](https://static-docs.nocobase.com/17-9bcgd6.png)
 
 📌 Want to see how RBAC works in practice?  We've preconfigured a full set of roles, data permissions, page controls, and conditional rules in the **NocoBase CRM demo**.
 
