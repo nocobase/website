@@ -223,3 +223,12 @@ RBACは、現代の業務システムにおいて、データの安全性を確�
 こうした仕組みが、セキュリティ強化と業務のスピードアップを同時に実現します。
 
 📌 **RBACが実際にどう動くのか見てみたい方へ**  NocoBaseのCRMデモには、ロールやデータ権限、ページごとの表示制御、条件付きルールまで一式をあらかじめ設定済みです。  👉[ [こちらから]、NocoBaseのRBAC設定をぜひご体験ください。](https://www.nocobase.com/ja/solutions/crm)
+
+**関連読み物：**
+
+* [2025 年におすすめの 6 つのオープンソースチケットシステム](https://www.nocobase.com/ja/blog/open-source-ticketing-systems)
+* [ウェブアプリケーション開発に最適なオープンソースツール 8 選](https://www.nocobase.com/ja/blog/top-8-open-source-tools-for-web-application-development)
+* [2025年企業必备の6つの従業員管理ツールの紹介](https://www.nocobase.com/ja/blog/employee-management-system)
+* [2025年のトップ5オールインワンビジネスソフトウェア](https://www.nocobase.com/ja/blog/all-in-one-business-software)
+* [2025年トップ8のオープンソースIT資産管理ソフトウェア](https://www.nocobase.com/ja/blog/it-asset-management-software)
+* [オープンソースの高速開発プラットフォームトップ7](https://www.nocobase.com/ja/blog/rapid-development-platform)
