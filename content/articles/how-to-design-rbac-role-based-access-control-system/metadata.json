@@ -3,9 +3,9 @@
   "title": "How to Design an RBAC (Role-Based Access Control) System",
   "title_cn": "如何设计 RBAC（基于角色的访问控制）系统",
   "title_ja": "RBAC（ロールベースアクセス制御）システムの設計方法",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Detailed explanation of RBAC system's core concepts, design patterns, and implementation methods, with NocoBase practical cases to help you build a secure and efficient permission system.",
+  "description_cn": "详解 RBAC 系统的核心概念、设计模式、实现方法，附 NocoBase 实操案例，助你构建安全高效权限体系。",
+  "description_ja": "RBAC システムの核心概念、設計パターン、実装方法を詳しく解説し、NocoBase の実践事例を掲載。安全で高効率な権限体系の構築をサポートします。",
   "slug": "how-to-design-rbac-role-based-access-control-system",
   "publishedAt": "2025-07-22T02:20:00.071Z",
   "status": "drafted",
@@ -322,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-22T03:54:08.764Z"
+  "updatedAt": "2025-07-22T04:07:29.724Z"
 }
