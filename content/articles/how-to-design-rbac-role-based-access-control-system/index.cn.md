@@ -230,3 +230,12 @@ RBAC 模型的本质，其实就是回答一个问题：
 你可以直接体验角色定义、数据权限、页面控制和条件规则的实际效果。
 
 👉 [点击这里，立即体验 NocoBase 的权限系统配置](https://www.nocobase.com/en/solutions/crm)
+
+**相关阅读：**
+
+* [2025 年 6 个最佳开源工单系统推荐](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)
+* [8 大最佳开源工具助力 Web 应用开发](https://www.nocobase.com/cn/blog/top-8-open-source-tools-for-web-application-development)
+* [2025年企业必备的 6 款员工管理工具推荐](https://www.nocobase.com/cn/blog/employee-management-system)
+* [2025年5个最佳 All-in-One 一体化商业软件](https://www.nocobase.com/cn/blog/all-in-one-business-software)
+* [2025年8款顶级的开源IT资产管理软件](https://www.nocobase.com/cn/blog/it-asset-management-software)
+* [国内外十大开源快速开发平台推荐](https://www.nocobase.com/cn/blog/rapid-development-platform)
