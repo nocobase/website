@@ -279,3 +279,5 @@ NocoBase は Airtable を置換することを目的としていない。モジ�
 * [NocoBaseとAppsmith：どのオープンソースのローコードプラットフォームがあなたに適していますか？](https://www.nocobase.com/ja/blog/nocobase-vs-appsmith)
 * [NocoBaseとAppsmith：どのオープンソースのローコードプラットフォームがあなたに適していますか？](https://www.nocobase.com/ja/blog/nocobase-vs-appsmith)
 * [企業向けローコード開発 - Power AppsとNocoBaseの徹底比較](https://www.nocobase.com/ja/blog/nocobase-vs-powerapps)
+
+NocoBase vs Airtable: A Powerful Open-Source Alternative
