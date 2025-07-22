@@ -24,6 +24,8 @@ CRUD是"Create（创建）"、"Read（读取）"、"Update（更新）"和"Delet
 * **系统设计的基石**：在设计软件系统时，CRUD操作常常是讨论和规划的起点。它们帮助开发者明确数据模型和业务逻辑。
 * **性能优化的焦点**：由于 CRUD 操作频繁发生，它们的效率直接影响到整个应用程序的性能。因此，优化 CRUD 操作是提升系统整体性能的关键。
 
+💡 阅读更多：[如何设计 RBAC（基于角色的访问控制）系统](https://www.nocobase.com/cn/blog/how-to-design-rbac-role-based-access-control-system)
+
 ### 1.3 CRUD的典型实现
 
 在不同的技术栈中，CRUD 操作有着不同的实现方式，但基本原理是相同的。以下是几个常见的例子：
