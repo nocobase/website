@@ -8,6 +8,8 @@ RBAC 的核心理念是：**权限赋予角色，用户通过角色获取权限*
 
 这种设计方式非常适合企业中多角色、多权限、多系统协作的场景。
 
+💡 阅读更多：[如何构建高效的 CRUD 应用程序？](https://www.nocobase.com/cn/blog/how-to-build-efficient-crud-apps)
+
 ## 二、RBAC 的核心概念
 
 RBAC 模型的本质，其实就是回答一个问题：
