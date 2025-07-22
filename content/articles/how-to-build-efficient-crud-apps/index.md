@@ -24,6 +24,8 @@ CRUD stands for **Create**, **Read**, **Update**, and **Delete** —the fundamen
 * **Foundation of System Design**: When designing software systems, CRUD operations are often the starting point for discussions and planning. They help developers clarify data models and business logic.
 * **Focus of Performance Optimization**: Because CRUD operations are so frequent, their efficiency directly impacts overall application performance. Therefore, optimizing CRUD operations is crucial for improving system performance.
 
+💡 Read More: [How to Design an RBAC (Role-Based Access Control) System](https://www.nocobase.com/en/blog/how-to-design-rbac-role-based-access-control-system)
+
 ### 1.3 Typical Implementation of CRUD
 
 CRUD operations are implemented in various ways across different technology stacks, but the underlying principles remain consistent. Here are common examples:
