@@ -8,7 +8,7 @@
   "description_ja": "RBAC システムの核心概念、設計パターン、実装方法を詳しく解説し、NocoBase の実践事例を掲載。安全で高効率な権限体系の構築をサポートします。",
   "slug": "how-to-design-rbac-role-based-access-control-system",
   "publishedAt": "2025-07-22T02:20:00.071Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -322,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-22T09:29:22.299Z"
+  "updatedAt": "2025-07-22T11:06:06.518Z"
 }
