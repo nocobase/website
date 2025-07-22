@@ -233,3 +233,12 @@ With the right tools, permissions no longer need to be hardcoded. They can be **
 📌 Want to see how RBAC works in practice?  We've preconfigured a full set of roles, data permissions, page controls, and conditional rules in the **NocoBase CRM demo**.
 
 👉 [Click here to try NocoBase’s RBAC system in action.](https://www.nocobase.com/en/solutions/crm)
+
+**Related reading:**
+
+* [6 Best Open-Source Ticketing Systems for 2025](https://www.nocobase.com/en/blog/open-source-ticketing-systems)
+* [Top 8 Open-Source Tools for Web Application Development](https://www.nocobase.com/en/blog/top-8-open-source-tools-for-web-application-development)
+* [6 Best Employee Management Systems for 2025](https://www.nocobase.com/en/blog/employee-management-system)
+* [Top 5 All-in-One Business Software for 2025](https://www.nocobase.com/en/blog/all-in-one-business-software)
+* [Top 8 Open Source IT Asset Management Software for 2025](https://www.nocobase.com/en/blog/it-asset-management-software)
+* [Top 7 Open Source Rapid Development Platform](https://www.nocobase.com/en/blog/rapid-development-platform)
