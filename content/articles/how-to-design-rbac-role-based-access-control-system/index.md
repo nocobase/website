@@ -8,6 +8,8 @@ The core idea behind RBAC is simple: **permissions are assigned to roles, and us
 
 This design is especially effective in organizations with multiple roles, layered permissions, and cross-system collaboration.
 
+💡 Read More: [How to Build Efficient CRUD Applications?](https://www.nocobase.com/en/blog/how-to-build-efficient-crud-apps)
+
 ## Core Concepts of RBAC
 
 At its heart, the RBAC model answers a single question:
