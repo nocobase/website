@@ -5,7 +5,10 @@ const RUSSIAN_REDIRECT_PAGES = [
   '/ru/tutorials',
   '/ru/blog',
   '/ru/tutorials/',
-  '/ru/blog/'
+  '/ru/blog/',
+  '/ru/solutions/',
+  '/ru/solutions',
+  '/ru/partners'
 ];
 
 // Define patterns for dynamic routes that should redirect
