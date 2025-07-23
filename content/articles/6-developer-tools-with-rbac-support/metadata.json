@@ -4,7 +4,7 @@
   "title_cn": "6 款支持角色权限控制（RBAC）的开发工具对比与应用场景解析",
   "title_ja": "RBAC（ロールベースアクセス制御）に対応した6つの開発ツール徹底比較と活用シナリオ",
   "description": "This article compares and recommends 6 development tools that support RBAC, covering open-source, self-hosted, and SaaS solutions. It helps developers quickly build secure and efficient permission control systems based on actual needs.",
-  "description_cn": "对比推荐 6 款支持RBAC的开发工具，涵盖开源、自托管与SaaS方案，帮助开发者根据实际需求快速搭建安全、高效的权限控制系统。",
+  "description_cn": "对比推荐 6 款支持 RBAC 的开发工具，涵盖开源、自托管与 SaaS 方案，帮助开发者根据实际需求快速搭建安全、高效的权限控制系统。",
   "description_ja": "本稿では RBAC に対応する 6 つの開発ツールを比較・推奨しており、オープンソース、セルフホスト、SaaS のソリューションを網羅しています。これにより、開発者は実際のニーズに応じて安全かつ効率的な権限管理システムを迅速に構築することができます。",
   "slug": "6-developer-tools-with-rbac-support",
   "publishedAt": "2025-07-23T06:33:31.053Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-23T07:52:59.763Z"
+  "updatedAt": "2025-07-23T08:38:07.426Z"
 }
