@@ -1,6 +1,6 @@
 {
   "id": 593,
-  "title": "How to Evaluate the Extensibility and Customization Capabilities of Open-Source Admin Dashboards? 6 Key Evaluation Dimensions",
+  "title": "A Practical Guide to Evaluating Open-Source Admin Dashboards’ Flexibility",
   "title_cn": "如何评估开源管理后台的可扩展性和定制化能力？6 大关键评估维度",
   "title_ja": "オープンソース管理ダッシュボードの拡張性とカスタマイズ能力を評価する方法？6 つの重要な評価軸",
   "description": "This article introduces six key dimensions for evaluating the extensibility and customization capabilities of open-source admin dashboards: interface capability, data modeling, plugin architecture, automation & workflow, permission control, and UI customization, assisting technical teams in selection.",
@@ -452,5 +452,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-02T01:05:05.248Z"
+  "updatedAt": "2025-07-23T11:14:42.385Z"
 }
