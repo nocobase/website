@@ -8,7 +8,7 @@
   "description_ja": "本稿では RBAC に対応する 6 つの開発ツールを比較・推奨しており、オープンソース、セルフホスト、SaaS のソリューションを網羅しています。これにより、開発者は実際のニーズに応じて安全かつ効率的な権限管理システムを迅速に構築することができます。",
   "slug": "6-developer-tools-with-rbac-support",
   "publishedAt": "2025-07-23T06:33:31.053Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -325,12 +325,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-07-23T07:52:37.576Z",
+    "updatedAt": "2025-07-23T07:52:37.576Z",
+    "id": 1610,
+    "title": "Frame 84 (1)",
+    "filename": "Frame 84 (1)-jlvje4.png",
+    "extname": ".png",
+    "size": 1368727,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2084%20(1)-jlvje4.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2084%20(1)-jlvje4.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Zhang Lu",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-23T07:10:26.952Z"
+  "updatedAt": "2025-07-23T07:52:59.763Z"
 }
