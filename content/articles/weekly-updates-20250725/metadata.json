@@ -1,11 +1,11 @@
 {
   "id": 627,
-  "title": "NocoBase Weekly Updates: ",
-  "title_cn": "NocoBase 本周更新汇总：",
-  "title_ja": "NocoBase 今週の更新：",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
+  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
+  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "description": "This week’s updates include: support for displaying plugin-defined tables in the main data source, test runs for nodes, and more.",
+  "description_cn": "本周更新包括：支持主数据源显示插件定义的表，支持节点测试执行等。",
+  "description_ja": "今週の更新では、メインデータソースにプラグイン定義のテーブルを表示する機能、ノードのテスト実行機能などを追加しました。",
   "slug": "weekly-updates-20250725",
   "publishedAt": "2025-07-25T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-24T11:06:39.032Z"
+  "updatedAt": "2025-07-24T12:16:30.673Z"
 }
