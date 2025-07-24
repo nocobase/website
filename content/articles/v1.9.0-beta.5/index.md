@@ -1,0 +1,100 @@
+### 🎉 New Features
+
+- **[server]** Support configuring request body size limit via environment variable ([#7273](https://github.com/nocobase/nocobase/pull/7273)) by @aaaaaajie
+
+- **[Workflow: Parallel node]** Add "All settled" mode for parallel node ([#7263](https://github.com/nocobase/nocobase/pull/7263)) by @mytharcher
+
+- **[Auth: SAML 2.0]** Support automatic redirection to the SSO URL when the user is unauthenticated by @2013xile
+
+- **[Redis queue adapter]** Add Redis adapter for event queue by @mytharcher
+
+- **[Workflow: date calculation node]** Support to test run node by @mytharcher
+
+### 🚀 Improvements
+
+- **[server]** Make concurrent memory queue available when processing items not full ([#7267](https://github.com/nocobase/nocobase/pull/7267)) by @mytharcher
+
+- **[database]** Automatically activates simple pagination when dataset exceeds a threshold ([#7227](https://github.com/nocobase/nocobase/pull/7227)) by @aaaaaajie
+
+- **[client]** Color Picker: Add four recommended colors ([#7226](https://github.com/nocobase/nocobase/pull/7226)) by @zhangzhonghe
+
+- **[AI integration]** Remove `await` for invoking `saveJob` ([#7275](https://github.com/nocobase/nocobase/pull/7275)) by @mytharcher
+
+- **[Workflow: Manual node]** storePopupContext supports saving default context ([#7264](https://github.com/nocobase/nocobase/pull/7264)) by @zhangzhonghe
+
+- **[Workflow]**
+  - Add json type constant for test variable ([#7274](https://github.com/nocobase/nocobase/pull/7274)) by @mytharcher
+
+  - Use logging instead of throwing error when execution should not run due to status ([#7217](https://github.com/nocobase/nocobase/pull/7217)) by @mytharcher
+
+  - Make comparison compatible for date values ([#7237](https://github.com/nocobase/nocobase/pull/7237)) by @mytharcher
+
+- **[Collection field: Formula]** Add more calculable interfaces ([#7215](https://github.com/nocobase/nocobase/pull/7215)) by @mytharcher
+
+- **[Redis queue adapter]** Make concurrent queue available when processing items not full for Redis adapter by @mytharcher
+
+- **[Workflow: JSON calculation]** Make JSON query node testable by @mytharcher
+
+- **[Workflow: Approval]** Support to delete approval when related data deleted by @mytharcher
+
+### 🐛 Bug Fixes
+
+- **[client]**
+  - fuzzy search not working in select association field when using formula as title field ([#7280](https://github.com/nocobase/nocobase/pull/7280)) by @katherinehhh
+
+  - missing current object variable in sub-table linkage rules ([#7266](https://github.com/nocobase/nocobase/pull/7266)) by @katherinehhh
+
+  - After field changes, the association fields that depend on this field have not cleared their values ([#7262](https://github.com/nocobase/nocobase/pull/7262)) by @zhangzhonghe
+
+  - Fix issue where Markdown fields were not rendered correctly in the detail view. ([#7257](https://github.com/nocobase/nocobase/pull/7257)) by @aaaaaajie
+
+  - Data selector title field setting is invalid ([#7251](https://github.com/nocobase/nocobase/pull/7251)) by @zhangzhonghe
+
+  - Avoid non-association fields to be selected in appends ([#7231](https://github.com/nocobase/nocobase/pull/7231)) by @mytharcher
+
+  - When deleting a menu, the corresponding data in the uiSchemas table is not deleted ([#7232](https://github.com/nocobase/nocobase/pull/7232)) by @zhangzhonghe
+
+  - style rules not working on table action column ([#7225](https://github.com/nocobase/nocobase/pull/7225)) by @katherinehhh
+
+  - display issue when deprecated date variables are used in date fields of historical data ([#7253](https://github.com/nocobase/nocobase/pull/7253)) by @katherinehhh
+
+  - display issue for association fields in linkage rules ([#7220](https://github.com/nocobase/nocobase/pull/7220)) by @katherinehhh
+
+  - Fix error: Can't resolve 'react-device-detect ([#7224](https://github.com/nocobase/nocobase/pull/7224)) by @zhangzhonghe
+
+- **[database]**
+  - Resolve auto simple pagination failure caused by table naming convention. ([#7256](https://github.com/nocobase/nocobase/pull/7256)) by @aaaaaajie
+
+  - Fix issue where default primary key sorting causes list loading failure when using MSSQL external data source in table block. ([#7259](https://github.com/nocobase/nocobase/pull/7259)) by @aaaaaajie
+
+  - Fixed failure when exporting large datasets from PostgreSQL ([#7228](https://github.com/nocobase/nocobase/pull/7228)) by @aaaaaajie
+
+  - Fixed error when enabling simple pagination for external data source tables ([#7222](https://github.com/nocobase/nocobase/pull/7222)) by @aaaaaajie
+
+- **[auth]** Fix the issue where an empty `secret` in sub-application configuration prevents sign-in ([#7239](https://github.com/nocobase/nocobase/pull/7239)) by @2013xile
+
+- **[Workflow]** Fix wrong version of dependency ([#7258](https://github.com/nocobase/nocobase/pull/7258)) by @mytharcher
+
+- **[Action: Batch edit]** Unable to perform bulk edit and bulk update in data selector ([#7250](https://github.com/nocobase/nocobase/pull/7250)) by @zhangzhonghe
+
+- **[Data source manager]** Fixed preserve external datasource attributes in collection configuration ([#7249](https://github.com/nocobase/nocobase/pull/7249)) by @aaaaaajie
+
+- **[Collection field: Sort]** missing sort field selection when duplicating records ([#7116](https://github.com/nocobase/nocobase/pull/7116)) by @katherinehhh
+
+- **[Data source: External Oracle]** Fixed preserve external datasource attributes in collection configuration by @aaaaaajie
+
+- **[Workflow: Subflow]** Fix error thrown when recall signal arrive but pending execution is not on current instance by @mytharcher
+
+- **[Workflow: Approval]**
+  - Fix multiple levels of associations when submit approval by @mytharcher
+
+  - The Link button's URL points to a popup on the current page, but clicking it shows a 404 error by @zhangzhonghe
+
+  - Fix associations when submit approval by @mytharcher
+
+  - Add fault tolerance for deleted approval in record list by @mytharcher
+
+  - Fix exception when delete record by @mytharcher
+
+- **[Email manager]** the messages and labes relationship collection is exceptional under mysql by @jiannx
+
