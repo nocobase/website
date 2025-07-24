@@ -90,14 +90,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Avoid non-association fields to be selected in appends ([#7231](https://github.com/nocobase/nocobase/pull/7231)) by @mytharcher
 - **[Workflow: Subflow]** Fix error thrown when recall signal arrive but pending execution is not on current instance by @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.3](https://www.nocobase.com/en/blog/v1.9.0-beta.3)
-
-*Release date: 2025-07-14*
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
