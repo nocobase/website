@@ -87,14 +87,6 @@
   * appends で非関連フィールドが選択されるのを回避（[#7231](https://github.com/nocobase/nocobase/pull/7231)）@mytharcher
 * **[ワークフロー：サブフロー]** 取消シグナルが到着したが保留中の実行が現在のインスタンスに存在しない場合に発生するエラーを修正 @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.3](https://www.nocobase.com/ja/blog/v1.9.0-beta.3)
-
-*リリース日：2025-07-14*
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
