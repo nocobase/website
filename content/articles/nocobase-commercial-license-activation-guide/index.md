@@ -11,9 +11,7 @@ The core advantages of the new solution include:
 
 This guide will walk you through the complete new NocoBase commercial license activation process.
 
-
 <image src="https://static-docs.nocobase.com/undefined20250701160935956.png" >
-
 
 ---
 
@@ -93,36 +91,36 @@ During installation or use, you may encounter the following prompts. Please foll
 
 <image src="https://static-docs.nocobase.com/undefined20250701193351673.png" />
 
-【Q】Why do I get `License key mismatch` after configuration?
+[Q]Why do I get `License key mismatch` after configuration?
 
-【A】Your running environment may have changed, causing the "`Instance ID`" to update, but your application still has the old "`License Key`".
+[A]Your running environment may have changed, causing the "`Instance ID`" to update, but your application still has the old "`License Key`".
 **Solution**: Please strictly follow **Step 1** of this guide to get the latest `Instance ID` from your **current environment**, then complete the subsequent process to generate a new "key".
 
 ### 2. `Invalid license key` - License Key Has Expired
 
 <image src="https://static-docs.nocobase.com/undefined20250701193558012.png" />
 
-【Q】What does `Invalid license key` mean?
+[Q]What does `Invalid license key` mean?
 
-【A】Your `License Key` may have expired or been marked as invalid by the platform for other reasons.
+[A]Your `License Key` may have expired or been marked as invalid by the platform for other reasons.
 **Solution**: Please contact us or check your license status on the service platform. If needed, regenerate the `License Key` and configure it.
 
 ### 3. `Invalid license key format` - License Key Format Error
 
 <image src="https://static-docs.nocobase.com/undefined20250701193148501.png" />
 
-【Q】What should I do about `Invalid license key format`?
+[Q]What should I do about `Invalid license key format`?
 
-【A】The `License Key` you pasted is incomplete or has incorrect format, preventing the system from parsing it.
+[A]The `License Key` you pasted is incomplete or has incorrect format, preventing the system from parsing it.
 **Solution**: Please return to the service platform, ensure you have completely copied the `License Key`, then re-paste and save.
 
 ### 4. License Information Dialog Forcibly Appears When Accessing System
 
 <image src="https://static-docs.nocobase.com/undefined20250625164238000.png" width="400" />
 
-【Q】Why does the license information dialog always appear?
+[Q]Why does the license information dialog always appear?
 
-【A】This popup usually indicates license verification failure. Possible reasons include:
+[A]This popup usually indicates license verification failure. Possible reasons include:
 
 - `License Key` is corrupted or doesn't match the local environment
 - License has expired or is invalid
@@ -132,27 +130,40 @@ During installation or use, you may encounter the following prompts. Please foll
 
 ### 5. Environment Migration Related Issues
 
-【Q】I migrated my server/database, and commercial plugins stopped working. What should I do?
+[Q]I migrated my server/database, and commercial plugins stopped working. What should I do?
 
-【A】This is the same issue as above. The server or database is key information that constitutes the "ID card (`Instance ID`)", and when they change, the `Instance ID` changes.
+[A]This is the same issue as above. The server or database is key information that constitutes the "ID card (`Instance ID`)", and when they change, the `Instance ID` changes.
 
 **Solution**: Same as above, get the new `Instance ID`, generate a new `License Key`, and reactivate. The entire process is like updating your ID address after moving.
 
 ### 6. Plugin Not Taking Effect
 
-【Q】I've restarted, why are commercial plugins still not working?
+[Q]I've restarted, why are commercial plugins still not working?
 
-【A】If you've confirmed the `License Key` configuration is correct, try the following troubleshooting:
+[A]If you've confirmed the `License Key` configuration is correct, try the following troubleshooting:
 
 1. **Check Network**: Ensure your server can access NocoBase's npm repository.
 2. **Check Logs**: Review NocoBase startup logs for plugin download failures or license verification errors.
 3. **Manual Execution**: If you're using source deployment, manually execute the `yarn nocobase pkg download-pro` command again and observe the command line output.
 
-### 7. Comparison Between New and Old Authorization Methods
+### 7. Commercial plugins not showing up after activating on a running system?
 
-【Q】How is this process different from the previous username/password method?
+**[Q]** I started the NocoBase system first and then entered the License Key in the settings. The activation was successful, so why aren't the commercial plugins appearing?
 
-【A】The old method exposed your account password directly in the environment, which wasn't secure enough. The new `License Key` system has several benefits:
+**[A]** This is expected behavior and a very common question. NocoBase is designed to check the license and load the corresponding plugins **at service startup**. If you completed the activation while the system was already running, you need to **restart the NocoBase service** to trigger the download and activation of the commercial plugins.
+
+Simply put, the license is like a "pass" for NocoBase, but it needs to "re-enter the door" (restart) to check and use this pass.
+
+Please perform the restart operation according to your deployment method:
+
+* **For Docker deployment**: Execute the restart command `docker compose restart app`.
+* **For source code or `create-nocobase-app` deployment**: First, stop the running service in your terminal (usually by pressing `Ctrl+C`), and then run the start command again, such as `yarn start`.
+
+### 8. Comparison Between New and Old Authorization Methods
+
+[Q]How is this process different from the previous username/password method?
+
+[A]The old method exposed your account password directly in the environment, which wasn't secure enough. The new `License Key` system has several benefits:
 
 1. **More Secure**: You don't need to expose your main account password, only use keys bound to specific environments.
 2. **More Flexible**: You can generate different `License Keys` for different clients or projects, making management easier.
