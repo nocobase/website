@@ -83,11 +83,11 @@
     "createdById": 3,
     "updatedById": 3
   },
-  "hideOnListPage": false,
+  "hideOnListPage": true,
   "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-25T01:31:39.869Z"
+  "updatedAt": "2025-07-25T01:46:59.261Z"
 }
