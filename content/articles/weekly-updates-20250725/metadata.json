@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、メインデータソースにプラグイン定義のテーブルを表示する機能、ノードのテスト実行機能などを追加しました。",
   "slug": "weekly-updates-20250725",
   "publishedAt": "2025-07-25T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-25T01:39:53.698Z"
+  "updatedAt": "2025-07-25T02:26:05.030Z"
 }
