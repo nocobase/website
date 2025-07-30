@@ -2,7 +2,7 @@ The term MCP truly gained widespread attention in early 2025, especially within 
 
 In March, a heated debate about “MCP - flash in the pan or future standard?” ignited the discussion. Core members from LangChain and LangGraph clashed intensely on X, and MCP-related projects on GitHub started trending one after another.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDhiYzZlZWMyNGZhMjhlYTdkYmY0ZDJjM2E5YTM5YzVfRVdheUxUS3pUZFQ0TWZXNXBZU2pWaVFzNGgxODNPbFZfVG9rZW46WWs0R2JsSmtZb3ZFTE54UldIdWN2NGNHbjdKXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
 
 Image source: https://blog.langchain.com/mcp-fad-or-fixture/
 
@@ -10,9 +10,9 @@ Image source: https://blog.langchain.com/mcp-fad-or-fixture/
 
 At its core, developers have finally realized this: ChatGPT can generate content but can’t automatically fetch web pages; Claude can understand PDFs but cannot call APIs. Although the models are powerful, they lack a closed execution loop, and tool integration remains a bottleneck.
 
-MCP aims to solve this “last mile” problem. It acts like a USB-C port for models, helping AI unify access to browsers, databases, plugin systems, and more, enabling models not just to talk but to take action.
+MCP aims to solve this“last mile”problem. It acts like a USB-C port for models, helping AI unify access to browsers, databases, plugin systems, and more, enabling models not just to talk but to take action.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjVjYzI2ZjI5Y2E4YzY3YzlmY2E2MDc5Y2E0MzU1MDVfMzhLY0VteE56b1dzb0J6S3dhRjhvUklSYWZFZmhCd1VfVG9rZW46SWVzVWJVTnpkbzIwWjd4VU40dmNsbktUblFmXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![MCP](https://static-docs.nocobase.com/2-hk5wm2.png)
 
 Image source: https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/
 
@@ -34,7 +34,7 @@ This article summarizes the top 8 most popular [MCP projects on GitHub](https://
 
 ## No.1: n8n
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODVhZTg2NWZjYjI4MjIyZGQ3NGQ3YjdjODdlOTU0ZGRfd1cxdmJOTHJhVzY1ZHBpd21VVFZYa1JVTjhvN2x3ZkpfVG9rZW46TTdKQWJCSWkwb09XN1d4Rlg0NWNOSVg3bndiXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![n8n](https://static-docs.nocobase.com/3-r88s0s.PNG)
 
 GitHub Star: 124k
 
@@ -42,7 +42,7 @@ GitHub: https://github.com/n8n-io/n8n
 
 Website: https://n8n.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzNiNzkxMGNhN2RlYTNhMTc5ZTViY2YyZWIzM2EwNTNfTXc1ZERTU1k4ZUU5YWFzdXI5MTdDb2xzeVU2cm95a2ZfVG9rZW46WVczTWJLaXBUb0dycGJ4dWIzbGNIcEtwbmpjXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![n8n](https://static-docs.nocobase.com/4-jy32yq.png)
 
 **Introduction:**
 
@@ -52,24 +52,24 @@ But n8n is much more than that. Its explosive growth results from the combined d
 
 **Core features:**
 
-* **Visual workflow builder**: Build automation execution chains by dragging and connecting nodes.
-* **Webhook and API support**: Built-in webhook nodes receive structured requests from AI agents; API nodes send requests to external systems.
-* **Logic and data processing**: Function nodes enable conditional logic, loops, and data transformation for flexible task control.
+* **Visual workflow builder:** Build automation execution chains by dragging and connecting nodes.
+* **Webhook and API support:** Built-in webhook nodes receive structured requests from AI agents; API nodes send requests to external systems.
+* **Logic and data processing:** Function nodes enable conditional logic, loops, and data transformation for flexible task control.
 
 **Deployment and integration:**
 
-* **Flexible deployment**: Supports local operation, Docker, one-click installation, and cloud deployment for personal or enterprise environments.
-* **Strong system integration**: Over 500 built-in integrations including databases, third-party APIs, GPT, file services, etc.
+* **Flexible deployment:** Supports local operation, Docker, one-click installation, and cloud deployment for personal or enterprise environments.
+* **Strong system integration:** Over 500 built-in integrations including databases, third-party APIs, GPT, file services, etc.
 
 **What can you do with n8n?**
 
-1. **AI assistant calling external services**: Type “Schedule a meeting for tomorrow afternoon” in the chat; n8n receives the request, extracts context, sends it to OpenAI, and upon intent recognition, automatically calls Google Calendar to create the event and returns confirmation.
-2. **Enterprise knowledge base Q&A system**: When asked “What payment methods does our product support?”, n8n queries an internal document vector database, extracts relevant content, constructs context, generates precise answers via the model, and replies via Slack.
-3. **Auto-entry of model-generated content**: Trigger GPT daily to summarize the previous day’s sales calls; n8n processes the response, extracts keywords, potential clients, next steps, writes into CRM, and posts a daily report summary in group chat.
+1. **AI assistant calling external services:** Type “Schedule a meeting for tomorrow afternoon” in the chat; n8n receives the request, extracts context, sends it to OpenAI, and upon intent recognition, automatically calls Google Calendar to create the event and returns confirmation.
+2. **Enterprise knowledge base Q&A system:** When asked “What payment methods does our product support?”, n8n queries an internal document vector database, extracts relevant content, constructs context, generates precise answers via the model, and replies via Slack.
+3. **Auto-entry of model-generated content:** Trigger GPT daily to summarize the previous day’s sales calls; n8n processes the response, extracts keywords, potential clients, next steps, writes into CRM, and posts a daily report summary in group chat.
 
 ## No.2: dify
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjkyZDZmM2E1ZjBkNWM4YmZmZDM4NDc4OGRlNjY1MjlfZXlLNmVycEwxUVQ3OWdPaVdOblZQYXAxRmlvMDgyMmRfVG9rZW46Q3lGWWJGUldzb1FoUFl4cGZpeGNETFBqblJlXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![dify](https://static-docs.nocobase.com/5-uwta9l.PNG)
 
 GitHub Star: 109k
 
@@ -77,7 +77,7 @@ GitHub: https://github.com/langgenius/dify
 
 Website: https://dify.ai/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDVjZDRiYTRkNDhiNjE2MWU4YmJlZDVkZTcyNzM0ZmZfSmhVWTJ3THUzTFZpWEFNNWVuZjA0TGJhcVBLNHFTS1JfVG9rZW46TzhrWGJOS3pSb3BYMnJ4TjAwN2M4bFY5blJkXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![dify](https://static-docs.nocobase.com/6-jpb7a7.png)
 
 **Introduction:**
 
@@ -87,21 +87,21 @@ Dify provides near “plug-and-play” solutions: supporting OpenAI, Claude, Gem
 
 **Core features:**
 
-* **Bidirectional MCP support**: Can connect to MCP servers or act as an MCP server, directly solving AI-system instruction interaction.
-* **Visual workflow builder**: Drag-and-drop to create AI applications and workflows, making MCP task design intuitive and efficient.
-* **Multi-model and tool integration**: Supports global large language models, plugin integration, and RAG pipelines to extend MCP task capabilities.
+* **Bidirectional MCP support:** Can connect to MCP servers or act as an MCP server, directly solving AI-system instruction interaction.
+* **Visual workflow builder:** Drag-and-drop to create AI applications and workflows, making MCP task design intuitive and efficient.
+* **Multi-model and tool integration:** Supports global large language models, plugin integration, and RAG pipelines to extend MCP task capabilities.
 
-**Deployment and integration**: Supports Docker and AWS AMI one-click deployment, offers SaaS version, adapts to various scale environments, with API and Webhook interfaces.
+**Deployment and integration:** Supports Docker and AWS AMI one-click deployment, offers SaaS version, adapts to various scale environments, with API and Webhook interfaces.
 
 **What can you do with Dify?**
 
-1. **Internal intelligent assistant**: Upload company documents, connect OpenAI or Claude, configure common questions and variables, quickly build a business-aware, memory-capable internal assistant. Frontend SDK and API allow embedding into your website or system with few lines of code.
-2. **Build multi-turn RAG applications**: Dify’s dataset management and context control enable quick vector search-based multi-turn dialog systems, no need to build vector stores or tune prompts. Upload data, configure models, build a memory-enabled Q&A for support, knowledge bases, or AI copilots.
-3. **Orchestrate models and plugins via workflows**: Use Dify workflows to chain multiple model calls, plugin executions, API requests — enabling complex agent logic like intent recognition → database query → result processing → user response in a visual interface.
+1. **Internal intelligent assistant:** Upload company documents, connect OpenAI or Claude, configure common questions and variables, quickly build a business-aware, memory-capable internal assistant. Frontend SDK and API allow embedding into your website or system with few lines of code.
+2. **Build multi-turn RAG applications:** Dify’s dataset management and context control enable quick vector search-based multi-turn dialog systems, no need to build vector stores or tune prompts. Upload data, configure models, build a memory-enabled Q&A for support, knowledge bases, or AI copilots.
+3. **Orchestrate models and plugins via workflows:** Use Dify workflows to chain multiple model calls, plugin executions, API requests — enabling complex agent logic like intent recognition → database query → result processing → user response in a visual interface.
 
 ## No.3: Open WebUI
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTQ3ZDVhOTE0YzQzOTRjYmMyYTRmNjcwMDVmN2RmNWFfbTI3NlBEblNoTDdFTnduakZRdlZ3cUF1RmVTbzJQak1fVG9rZW46UW9sQ2JYaGdJb0pwVXB4alpoTmNrRkg0bkJiXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Open WebUI](https://static-docs.nocobase.com/7-uo7z3x.PNG)
 
 GitHub Star: 104k
 
@@ -109,7 +109,7 @@ GitHub: https://github.com/open-webui/open-webui
 
 Website: https://openwebui.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzc2YmMwNWE3Y2E5ZWUyOTg0NDY2ODYzNjRjNjVlZjlfYUIxNEs5d1VzRUxYeU1tcFc1NGd1ZkJaZkowZzJFREtfVG9rZW46V29DTGJBRjRBb0d4U0l4S3QyZWN5YldnblpmXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Open WebUI](https://static-docs.nocobase.com/8-6ypb5p.png)
 
 **Introduction:**
 
@@ -119,21 +119,21 @@ Open WebUI is favored by developers and teams for its ease of deployment, good i
 
 **Core features:**
 
-* **Multi-model and API integration**: Supports Ollama and OpenAI-compatible APIs via unified interface for AI model requests.
-* **Plugin framework (Pipelines)**: Load custom Python logic or plugins for task pre/post-processing and tool invocation.
-* **Local and remote RAG support**: Built-in inference engine supports local document extraction, remote web integration, and RAG pipeline construction for contextual AI tasks.
+* **Multi-model and API integration:** Supports Ollama and OpenAI-compatible APIs via unified interface for AI model requests.
+* **Plugin framework (Pipelines):** Load custom Python logic or plugins for task pre/post-processing and tool invocation.
+* **Local and remote RAG support:** Built-in inference engine supports local document extraction, remote web integration, and RAG pipeline construction for contextual AI tasks.
 
-**Deployment and integration**: Offers Docker and Kubernetes deployment, suitable for single-machine or enterprise clusters, supports REST API for model and plugin interface calls.
+**Deployment and integration:** Offers Docker and Kubernetes deployment, suitable for single-machine or enterprise clusters, supports REST API for model and plugin interface calls.
 
 **What can you do with Open WebUI?**
 
-1. **Deploy a private ChatGPT copy**: Connect Open WebUI to locally deployed LLMs (e.g., Llama3, Mistral, Qwen) to use full ChatGPT features on LAN. Simple UI, context and multi-turn dialogue, one-click model switching—ideal for internal knowledge Q&A or work assistants.
-2. **Build a developer team AI toolbox**: Centralize model configuration, unify context templates, manage multi-user sessions with role settings. Deliver a style-aligned AI assistant to everyone, avoiding environment duplication.
-3. **Use as an interactive frontend for LLM apps**: Modify Open WebUI as a frontend shell connecting backend inference, databases, and business systems. Plugin mechanisms and API support allow handling Q&A, search, and command execution, making it a lightweight copilot facade.
+1. **Deploy a private ChatGPT copy:** Connect Open WebUI to locally deployed LLMs (e.g., Llama3, Mistral, Qwen) to use full ChatGPT features on LAN. Simple UI, context and multi-turn dialogue, one-click model switching—ideal for internal knowledge Q&A or work assistants.
+2. **Build a developer team AI toolbox:** Centralize model configuration, unify context templates, manage multi-user sessions with role settings. Deliver a style-aligned AI assistant to everyone, avoiding environment duplication.
+3. **Use as an interactive frontend for LLM apps:** Modify Open WebUI as a frontend shell connecting backend inference, databases, and business systems. Plugin mechanisms and API support allow handling Q&A, search, and command execution, making it a lightweight copilot facade.
 
 ## No.4: Netdata
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjE0MjdmNThjODY2NGMyY2MyYjg5YTZhMTIzZGQyYjJfZzZCWUQ3R2hFQ25pN0ZORXFHbFFBbnFkUEZsY21rSnFfVG9rZW46R3BoSmJwWUJ2b0IyTnV4dlFXZ2NCVkdGbjlnXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Netdata](https://static-docs.nocobase.com/9-18kgep.png)
 
 GitHub Star: 75.2k
 
@@ -141,7 +141,7 @@ GitHub: https://github.com/netdata/netdata
 
 Website: https://www.netdata.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWMyZjQ4MWRkNTAyNWQ4MDFmYjAzMWI4YjIyMzMzYjFfdW15MHZodnZTVFJCQ0VQMmE5dFlNRUNkN1hRY3NjRVFfVG9rZW46T3hQSGJNY3Nmb3VmYm54NmxuUGNCUHlDbmNlXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Netdata](https://static-docs.nocobase.com/10-akbrty.png)
 
 **Introduction:**
 
@@ -162,13 +162,13 @@ As LLM deployments and agent workflows grow in complexity, Netdata is becoming a
 
 **What can you do with Netdata?**
 
-1. **Monitor local LLM resource usage in real time: **Netdata can track GPU, CPU, memory, disk, and other key metrics at second-level granularity — ideal for ensuring local model deployments run smoothly.
-2. **Build dashboards for AI workflows: **Embed Netdata into inference services or agent pipelines to visualize API calls, response times, context usage, etc. You can even set up automatic alerts for failures like long model hang-ups or sudden error spikes.
-3. **Give your AI system an observable “black box”: **Netdata’s detailed call traces and historical graphs help recreate the exact environment where a failure occurred — whether it’s a broken RAG link, failed plugin call, or GPU throttling.
+1. **Monitor local LLM resource usage in real time:** Netdata can track GPU, CPU, memory, disk, and other key metrics at second-level granularity — ideal for ensuring local model deployments run smoothly.
+2. **Build dashboards for AI workflows:** Embed Netdata into inference services or agent pipelines to visualize API calls, response times, context usage, etc. You can even set up automatic alerts for failures like long model hang-ups or sudden error spikes.
+3. **Give your AI system an observable “black box”:** Netdata’s detailed call traces and historical graphs help recreate the exact environment where a failure occurred — whether it’s a broken RAG link, failed plugin call, or GPU throttling.
 
 ## No.5: Lobe Chat
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzIyOTUyYjlkMzBiNTQzYzliMWMxZjU5OGNhMzY2OWRfbEVRZHllNDlBTGQ3MWF5MGduYXhWRFVvc1dGYm5VS3FfVG9rZW46WXZWTWJGc2hwb0QyY1R4Y3ZvcGNaR1dSbkRjXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/11-w7o72g.png)
 
 GitHub Star: 63.9k
 
@@ -176,7 +176,7 @@ GitHub: https://github.com/lobehub/lobe-chat
 
 Website: https://lobechat.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWYxYjIxNTIyYWNiMjg2YTBmM2RkN2Y1ZWM5MWE4OWZfZHlQY0RXbjA5ZDM4Q3pqOXFCS3A4Z3oyQThrNVROcWxfVG9rZW46WkNacmJqeERGb1Uwa2N4aGkyeGNQSVVFblBlXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/12-o8ky3v.png)
 
 **Introduction:**
 
@@ -190,17 +190,17 @@ With the rise of MCP architectures in AI applications, Lobe Chat is becoming the
 * **MCP plugin marketplace:** Comes with a built-in MCP plugin store for importing tools and agent actions with one click.
 * **Function calling system:** Supports cross-model external function execution via plugin protocols.
 
-**Deployment and integration**: Deploy privately with one click via Docker, Vercel, and more. Easily embed into apps or integrate with external systems via API.
+**Deployment and integration:** Deploy privately with one click via Docker, Vercel, and more. Easily embed into apps or integrate with external systems via API.
 
 **What can you do with Lobe Chat?**
 
-1. **Deploy your own multi-model assistant: **Hook up Llama3, GPT-4, Claude, Qwen, etc. — switch between them seamlessly. Configure memory, roles, plugin calls. More flexible than ChatGPT, and fully private.
-2. **Build an AI Copilot with plugin chains: **Connect database APIs, search engines, or other tools via plugins. The assistant can process complex tasks like “import this spreadsheet to Notion and summarize” through automatic execution.
-3. **Create shareable AI app frontends: **Lobe Chat enables you to build lightweight, shareable prompt tools or agent workflows. Share links or embed in pages — ideal for internal tools or customer-facing micro-products.
+1. **Deploy your own multi-model assistant:** Hook up Llama3, GPT-4, Claude, Qwen, etc. — switch between them seamlessly. Configure memory, roles, plugin calls. More flexible than ChatGPT, and fully private.
+2. **Build an AI Copilot with plugin chains:** Connect database APIs, search engines, or other tools via plugins. The assistant can process complex tasks like “import this spreadsheet to Notion and summarize” through automatic execution.
+3. **Create shareable AI app frontends:** Lobe Chat enables you to build lightweight, shareable prompt tools or agent workflows. Share links or embed in pages — ideal for internal tools or customer-facing micro-products.
 
 ## No.6: Glama
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTZiNzFjMzgyMGY3MGJjYjk4ZjJlYzdjNjQ3MmY5M2VfU0RNNU11SUlneExldm1Kb3FLOGlxb0pXZ1ZGR1VIdmdfVG9rZW46U3FFdmI2Wkpqb2cwbUV4WXZXVmNINzAzbnBRXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Glama](https://static-docs.nocobase.com/13-4jq2qy.png)
 
 GitHub Star: 63.6k
 
@@ -208,7 +208,7 @@ GitHub: https://github.com/punkpeye/awesome-mcp-servers
 
 Website: https://glama.ai/mcp/servers
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjFiZDlkYTM3ZGEzZDZiNzI5MGVjOGNjN2YzYTUyYTBfR29LNUlTR0N2MmRLdWtaZWVveUJXOGkzNGQ5TlZwRTJfVG9rZW46V0U5WWIwS3lKb3FSNml4TkRTZmNPVVpTbm5VXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![Glama](https://static-docs.nocobase.com/14-p1734h.png)
 
 **Introduction:**
 
@@ -222,17 +222,17 @@ Glama offers a new “modular experience” — pick any MCP-compatible backend,
 * **Standardized interaction layer:** All servers follow the Model Context Protocol, ensuring unified formats for agent instructions.
 * **Targeted resource search:** Quickly find tools and services via keyword search to match your use case.
 
-**Deployment and integration**: Available as a web app with API access. Enterprise users can integrate directly into business systems or databases, receive task instructions via MCP.
+**Deployment and integration:** Available as a web app with API access. Enterprise users can integrate directly into business systems or databases, receive task instructions via MCP.
 
 **What can you do with Glama?**
 
-1. **Centralized MCP service dashboard: **Connect to multiple chat apps (LobeChat, Open WebUI) and plugin servers (AI-Plugin Server), then switch between them with shared context and UX.
-2. **Test agent + plugin interaction: **Quickly verify how different backends handle plugin calls. For example, see if a database plugin runs consistently across models or test response variations to optimize behavior.
+1. **Centralized MCP service dashboard:** Connect to multiple chat apps (LobeChat, Open WebUI) and plugin servers (AI-Plugin Server), then switch between them with shared context and UX.
+2. **Test agent + plugin interaction:** Quickly verify how different backends handle plugin calls. For example, see if a database plugin runs consistently across models or test response variations to optimize behavior.
 3. **Prototype AI Copilot products:** Use Glama to mock up the frontend for an AI product — model selector on the left, chat in the middle, plugin logs on the right. A working MCP loop in minutes.
 
 ## No.7: **RAGFlow**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTgwM2NhZWM0MWI3NjcyNTUwNWU3NjBhM2M3ODc0ZDZfZEgwNmFSNktueDZTMWozUzZyVEZpaWJOc0lqYlY2RDJfVG9rZW46R0l0MWJ2bXZUb0xSMFF4RFExWmN5Q3oxblpHXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![RAGFlow](https://static-docs.nocobase.com/15-7kvvqp.png)
 
 GitHub Star: 61.1k
 
@@ -240,7 +240,7 @@ GitHub: https://github.com/infiniflow/ragflow
 
 Website: https://ragflow.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWJkZjhiNjY3NDFjMWUzM2ZmNTU1NTY5ZGU4OWVkY2ZfaUlVWXZJb3o2OW1WQkw2YXBVSVFCZzVWWktDUE9lQWhfVG9rZW46UXI4OGJIempQb1ZnSmF4VTZrWGNKbktabmZjXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![RAGFlow](https://static-docs.nocobase.com/16-dvstzn.png)
 
 **Introduction:**
 
@@ -254,7 +254,7 @@ Unlike general frameworks like LangChain or LlamaIndex, RAGFlow focuses more on 
 * **Knowledge base management:** Create and manage internal knowledge repositories with parsing and storage capabilities.
 * **RAG generation with citation:** Generates answers grounded in retrieved knowledge, with reference support.
 
-**Deployment and integration**: Available via Docker Compose. Easily integrates with external LLMs.
+**Deployment and integration:** Available via Docker Compose. Easily integrates with external LLMs.
 
 **What can you do with RAGFlow?**
 
@@ -264,7 +264,7 @@ Unlike general frameworks like LangChain or LlamaIndex, RAGFlow focuses more on 
 
 ## No.8: AnythingLLM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjUyMGI2MTZlZDhkN2UwNjA4NGY0ZTc0M2NlYzgwYmZfZjJkRXBqVGFlc0ZRalFlbmZUV3paQUFZVTlNaktCRkZfVG9rZW46WlV4cGIyVUN2b3JyeEl4bEtPZmMxNThkbmxlXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/17-8m9ws2.png)
 
 GitHub Star: 47.1k
 
@@ -272,7 +272,7 @@ GitHub: https://github.com/Mintplex-Labs/anything-llm
 
 Website: https://anythingllm.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmVhMDE5OTY0NGFiYWI5MWZhNmJlNDNlNGZlN2IyMDJfRndXQ1Q2bDdFU0ZMTlM3OUZoVk5PblJHUDJGcHRBWEpfVG9rZW46TE1FWWJ2NXUzb3F5NEp4dzY5aWNNUmdDbmUwXzE3NTM4NDAzMDg6MTc1Mzg0MzkwOF9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/18-2uykf1.png)
 
 **Introduction:**
 
@@ -284,7 +284,7 @@ Website: https://anythingllm.com/
 * **Custom agent skills with MCP:** Extend agent capabilities with "skills" and integrate automated tool actions via MCP.
 * **Private, local-first architecture:** All LLM, vector, and storage components run locally by default. Full control over data and execution.
 
-**Deployment and integration**: Available as a desktop app or via Docker. Offers developer APIs for product integration.
+**Deployment and integration:** Available as a desktop app or via Docker. Offers developer APIs for product integration.
 
 **What can you do with AnythingLLM?**
 
@@ -299,3 +299,12 @@ In just a few months, MCP has gone from a niche concept to a hot topic among dev
 For developers working on AI integration and automation, MCP offers a new perspective: intelligence alone isn't enough. True value comes when AI can connect to real-world systems and drive meaningful action.
 
 Hopefully, this guide gives you a useful snapshot of the emerging ecosystem — and maybe sparks ideas for your next AI build.
+
+**Related reading:**
+
+* [Top 7 Open Source Web Applications with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-web-applications)
+* [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
+* [Top 15 Fastest-Growing Open-Source Low-Code Projects on GitHub in 2025](https://www.nocobase.com/en/blog/github-top15-fastest-growing-open-source-low-code-projects)
+* [Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
+* [Top 11 Open-Source Admin Dashboard Projects on GitHub](https://www.nocobase.com/en/blog/top-11-open-source-admin-dashboard-projects-on-github)
+* [Top 10 Open-source Workflows Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
