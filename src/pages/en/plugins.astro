@@ -252,13 +252,16 @@ const filterOptions = {
                           <p class="text-muted mb-2 plugin-overview">
                             {plugin.description}
                             {plugin.docs && (
-                              <a 
-                                href={plugin.docs} 
-                                target="_blank" 
-                                style="font-size: 14px;"
-                              >
-                                Details
-                              </a>
+                              <>
+                                {' '}
+                                <a 
+                                  href={plugin.docs} 
+                                  target="_blank" 
+                                  style="font-size: 14px;"
+                                >
+                                  Details
+                                </a>
+                              </>
                             )}
                           </p>
                         </div>
@@ -420,14 +423,35 @@ const filterOptions = {
     .plugin-overview {
       font-size: 0.9rem;
       line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      /* Remove line clamping to show full description */
+      word-break: break-word;
     }
 
     .plugin-footer {
       margin-top: 1rem;
+    }
+    
+    
+    /* Ensure consistent card heights in row */
+    .row > [class*='col-'] {
+      display: flex;
+    }
+    
+    .plugin-card {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .plugin-card .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .plugin-box {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .plugin-type .badge {
