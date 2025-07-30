@@ -8,7 +8,7 @@
   "description_ja": "本記事では、GitHubで人気のオープンソースMCPプロジェクト8選を紹介。AI自動化、スマートアシスタント、可視化ワークフローなど、強力なAI統合システムを素早く構築するためのヒントを提供します。",
   "slug": "github-open-source-mcp-projects",
   "publishedAt": "2025-07-30T01:51:09.538Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -325,12 +325,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-07-30T03:21:53.774Z",
+    "updatedAt": "2025-07-30T03:21:53.774Z",
+    "id": 1634,
+    "title": "Frame 85",
+    "filename": "Frame 85-jq8cml.png",
+    "extname": ".png",
+    "size": 1379558,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2085-jq8cml.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2085-jq8cml.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Zhang Lu, Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-07-30T02:55:00.924Z"
+  "updatedAt": "2025-07-30T03:22:31.422Z"
 }
