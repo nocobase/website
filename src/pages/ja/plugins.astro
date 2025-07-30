@@ -252,17 +252,19 @@ const filterOptions = {
                           </div>
                           <p class="text-muted mb-2 plugin-overview">
                             {plugin.description_jp || plugin.description}
+                            {plugin.docs_jp && (
+                              <>
+                                {' '}
+                                <a 
+                                  href={plugin.docs_jp} 
+                                  target="_blank" 
+                                  style="font-size: 14px;"
+                                >
+                                  詳細
+                                </a>
+                              </>
+                            )}
                           </p>
-                          {plugin.docs_jp && (
-                            <a 
-                              href={plugin.docs_jp} 
-                              target="_blank" 
-                              style="font-size: 14px;"
-                              class="plugin-details-link"
-                            >
-                              詳細
-                            </a>
-                          )}
                         </div>
                         <div class="plugin-footer mt-auto">
                           {plugin.coming ? (
@@ -430,10 +432,6 @@ const filterOptions = {
       margin-top: 1rem;
     }
     
-    .plugin-details-link {
-      display: inline-block;
-      margin-top: 0.25rem;
-    }
     
     /* Ensure consistent card heights in row */
     .row > [class*='col-'] {

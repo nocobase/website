@@ -251,17 +251,19 @@ const filterOptions = {
                           </div>
                           <p class="text-muted mb-2 plugin-overview">
                             {plugin.description}
+                            {plugin.docs && (
+                              <>
+                                {' '}
+                                <a 
+                                  href={plugin.docs} 
+                                  target="_blank" 
+                                  style="font-size: 14px;"
+                                >
+                                  Details
+                                </a>
+                              </>
+                            )}
                           </p>
-                          {plugin.docs && (
-                            <a 
-                              href={plugin.docs} 
-                              target="_blank" 
-                              style="font-size: 14px;"
-                              class="plugin-details-link"
-                            >
-                              Details
-                            </a>
-                          )}
                         </div>
                         <div class="plugin-footer mt-auto">
                           {plugin.coming ? (
@@ -429,10 +431,6 @@ const filterOptions = {
       margin-top: 1rem;
     }
     
-    .plugin-details-link {
-      display: inline-block;
-      margin-top: 0.25rem;
-    }
     
     /* Ensure consistent card heights in row */
     .row > [class*='col-'] {
