@@ -1,6 +1,6 @@
 MCP 这个词真正被广泛提起，是在 2025 年年初，尤其是在 AI 工具开发圈。3 月，一场围绕 “MCP 是否能成为未来标准协议” 的争论彻底点燃了讨论热度。LangChain 和 LangGraph 的核心成员在 X 上激烈辩论，GitHub 上的 MCP 项目也接连走红。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MThjNGZmODI5YjM3NDhhOTc3MTQ5NzA0OTU4ZWY2YzRfd2VPcW9ma1N3VkNNZmN5VUxhNGZ3UUo0MGpLN3ZHWktfVG9rZW46WDdJNmJ1emZabzRpR0F4SktZOGNqc1B4bnhmXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
 
 图片来源：https://blog.langchain.com/mcp-fad-or-fixture/
 
@@ -10,7 +10,7 @@ MCP 这个词真正被广泛提起，是在 2025 年年初，尤其是在 AI 工
 
 MCP 想解决的，正是这个“最后一公里”的问题。它像是模型的 USB-C 接口，帮 AI 统一接入浏览器、数据库、插件系统等，让模型不仅会说话，还能动手。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2E0YWZjZWE0YjBiOWU4NjE1OThmMTQ1MDA5ZWIyMjJfdFNZbFZXNjR6SGdBSkRKT2c5enEyck00Vkp0NVBUMkhfVG9rZW46TTlSU2I5SEtyb3BoYVR4N2ZOa2NBcHU4bkloXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![MCP](https://static-docs.nocobase.com/2-hk5wm2.png)
 
 图片来源：https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/
 
@@ -32,7 +32,7 @@ MCP 想解决的，正是这个“最后一公里”的问题。它像是模型�
 
 ## No.1: n8n
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjQ0MzU0ZDY0NTYxY2QzMDI3MmFhN2EyNDA5NzdjNmJfQ0VwNlJOTkthWEhNdWI3NllsZXJIckdKdTM3V1lvN0RfVG9rZW46UkxJVGJYVFR5b1o3c1h4YW1PSGNmSldIblhxXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![n8n](https://static-docs.nocobase.com/3-r88s0s.PNG)
 
 GitHub Star: 124k
 
@@ -40,7 +40,7 @@ GitHub: https://github.com/n8n-io/n8n
 
 Website: https://n8n.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGEzNzk0N2NmMjRhYzA5OGUxYTg2M2JjZTNkMDQ1NTdfblBIV2plSEE2OFBLaGo4d3hCZlNyaExGOUJETVFFbFNfVG9rZW46U3VGVGJyRDdHb2R6clh4M1VrZWNRZHF6bkFoXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![n8n](https://static-docs.nocobase.com/4-jy32yq.png)
 
 **简介**：
 
@@ -75,7 +75,7 @@ Website: https://n8n.io/
 
 ## No.2: dify
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzgzZGQ4NjI3NGRmNTc0ZTEwNDcwNDdmMzcxZjg2ZTBfYzlXRHBiVUpQQnU1dlFLZ2t1Sk1BclRhVkNJeFRqNmpfVG9rZW46TDUwcGJCS29ib1Q5Y3B4MHZsVmNaMjd6bk1oXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![dify](https://static-docs.nocobase.com/5-uwta9l.PNG)
 
 GitHub Star: 109k
 
@@ -83,7 +83,7 @@ GitHub: https://github.com/langgenius/dify
 
 Website: https://dify.ai/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODhkZjAzYTMxYmFjZTNiYmE1NWM1ZmVmYTE3OWEyMTFfV2JyN2R1Wlc2SndKQkJoNWNpOVh2clJiQ2NqS1FabVRfVG9rZW46VEFtcWJBcTdrb0lLS1Z4RmM2V2NjUWZDbnJkXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![dify](https://static-docs.nocobase.com/6-jpb7a7.png)
 
 **简介**：
 
@@ -115,7 +115,7 @@ Dify 内置数据集管理和上下文控制功能，可以快速实现基于向
 
 ## No.3: Open WebUI
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjM3NmU4MzFkZDA3ZWI1YzVhZGI1Y2UzZDViMjRhMmRfNDFKcGRUc1dnS2F0TjBFUWoyMVBYTnYyM1pENU5VeFVfVG9rZW46RGRZaGIwbXlHb2RKN2x4UUZhRGM1V1B5bnBZXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Open WebUI](https://static-docs.nocobase.com/7-uo7z3x.PNG)
 
 GitHub Star: 104k
 
@@ -123,7 +123,7 @@ GitHub: https://github.com/open-webui/open-webui
 
 Website: https://openwebui.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTY5M2Q0N2MzMzk1ZThiMGU0MzdmNjM4NjMwYjc3ZWNfMTExU1k4cnN6TU5qalJBaW5iVUJYSTFzUENkdnRhMUdfVG9rZW46UFVWZ2JWZWdxbzVPckh4UE93cWNYTWExbmllXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Open WebUI](https://static-docs.nocobase.com/8-6ypb5p.png)
 
 **简介**：
 
@@ -139,7 +139,7 @@ Open WebUI 因其部署简单、交互体验好、可二次开发，成为不少
 
 **部署与集成**：提供 Docker 和 Kubernetes 部署方案，适合单机开发或企业集群环境，支持通过 REST API 调用模型与插件接口。
 
-**你可以用 Open WebUI 来做什么****？**
+**你可以用 Open WebUI 来做什么？**
 
 1. **部署一个 ChatGPT 私有副本**
 
@@ -155,7 +155,7 @@ Open WebUI 因其部署简单、交互体验好、可二次开发，成为不少
 
 ## No.4: Netdata
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDk2NGNiYjAyZDFjMjA0OTgwMDA5NTBmNjY3OWUzYmZfcjN5VTdvM3pOOXd6eUM0MG1WYTZKZTJrQlJqNXhmbDVfVG9rZW46TW9qWWJtdHlKb3NRWWZ4Ym1aTWNjcTJwbkxjXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Netdata](https://static-docs.nocobase.com/9-18kgep.png)
 
 GitHub Star: 75.2k
 
@@ -163,7 +163,7 @@ GitHub: https://github.com/netdata/netdata
 
 Website: https://www.netdata.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTZmY2IzMTk4MDdmNzNiZGIzYWRiNGE2MjY3OTc0ODJfaUo4MTB4VjZPMzBndDlkdklWQkhvTUw0WVlZYWtlWGtfVG9rZW46U3l3YmJOOGxCb1FqRVR4UjIyZmNEdzBFbm5oXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Netdata](https://static-docs.nocobase.com/10-akbrty.png)
 
 **简介**：
 
@@ -182,7 +182,7 @@ Website: https://www.netdata.cloud/
 * 安装简单，可通过 Docker、包管理器或自主脚本部署在服务器、容器或云主机上。
 * 具备 800 + 的集成，提供标准 MCP 接口，AI Agent 可实时请求监控数据。
 
-**你可以用 Netdata 来做什么****？**
+**你可以用 Netdata 来做什么？**
 
 1. **实时监控大模型运行资源**
 
@@ -198,7 +198,7 @@ Netdata 提供详细的调用轨迹和历史记录图表，帮助你还原问题
 
 ## No.5: Lobe Chat
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDRlNTJiMmM3YWEwYmQxOWNiMjE1NGM4MGI4NzlmOWVfd0oyNkMxZW1QWkhjaG5xOGI1U0RobTdQSjZtM3ZTRHNfVG9rZW46WkFDNWJHcThMb2dnVVF4ZEZBcmNrdXNibkJmXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/11-w7o72g.png)
 
 GitHub Star: 63.9k
 
@@ -206,7 +206,7 @@ GitHub: https://github.com/lobehub/lobe-chat
 
 Website: https://lobechat.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjAyODMxYjM3YzM5MDY3ZWQwNDAyZjc2MGZlZmM5OGVfNG5pbm5aTlc2SUhaNlFlQm5NQWxScnJJNVBZRjlHUFNfVG9rZW46VkNQOGIzREpqb0VRdDR4QXFsV2MxNk94bkpoXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/12-o8ky3v.png)
 
 **简介**：
 
@@ -222,7 +222,7 @@ Website: https://lobechat.com/
 
 **部署与集成**：支持一键免费部署私有聊天应用，可通过 Docker、Vercel 等方式进行自托管部署，快速搭建服务，支持通过 API 集成外部系统。
 
-**你可以用 Lobe Chat 来做什么****？**
+**你可以用 Lobe Chat 来做什么？**
 
 1. **一键部署自己的多模型助手**
 
@@ -238,7 +238,7 @@ Lobe Chat 支持插件调用链，你可以配置插件连接数据库、搜索�
 
 ## No.6: Glama
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjA1ZjdlZjRlMDI2MjRhNmUwZWFjYzQ4YTM0MzU3NDJfOTZCUDlYQ1lsNjY4ZDZMdnh2OXdWbVBwZlB5b3lVb3VfVG9rZW46V3RiTWJncm9mb0ZyTml4T3lReGN6Y0pLbjJnXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Glama](https://static-docs.nocobase.com/13-4jq2qy.png)
 
 GitHub Star: 63.6k
 
@@ -246,7 +246,7 @@ GitHub: https://github.com/punkpeye/awesome-mcp-servers
 
 Website: https://glama.ai/mcp/servers
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OThiMjRmMTU1MmMxODE5ZWJkOWM5YTNhNGVkYmUzMjNfYW1OQ044VEJEQ0oyeVkyOUthVjlMVjlPTm80VXhCZnNfVG9rZW46QjZmdGJIeU82bzRKS3R4TUlIY2M3QVNSbmpmXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![Glama](https://static-docs.nocobase.com/14-p1734h.png)
 
 **简介**：
 
@@ -262,7 +262,7 @@ Glama 提供了一种全新的“拼装式体验”——你可以选择任意�
 
 **部署与集成**：提供网页版服务与 API 接口，企业用户可直接接入。支持通过接口集成公司业务系统与数据库，基于 MCP 协议接收任务指令。
 
-**你可以用 Glama 来做什么****？**
+**你可以用 Glama 来做什么？**
 
 1. **管理多个 MCP 服务的一站式面板**
 
@@ -278,7 +278,7 @@ Glama 提供了一种全新的“拼装式体验”——你可以选择任意�
 
 ## No.7: **RAGFlow**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Njg2ZDU1YzlmMzViMThmNzNjMjZkNWE3ZThmYTljMTBfdGhjYUdqcG5ZYUVwT0w0MnZlbTZvdEp3ZnY0RnBIYkhfVG9rZW46V3pZMmJwUE5Sb2FnNmp4NHJueWNod3Z1bkFnXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![RAGFlow](https://static-docs.nocobase.com/15-7kvvqp.png)
 
 GitHub Star: 61.1k
 
@@ -286,7 +286,7 @@ GitHub: https://github.com/infiniflow/ragflow
 
 Website: https://ragflow.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjE4NzU3ODYwZDM5ZDFhOTI5ZGE2ZTIxZjAzMWYzNDNfVlQyS2xnSjN0emx1Mkd0d3FnbU80emNqT25KM3hpRzhfVG9rZW46VXRyZ2JNb3hqb3JEdUV4cTBvNGNhVXUybjdlXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![RAGFlow](https://static-docs.nocobase.com/16-dvstzn.png)
 
 **简介**：
 
@@ -302,7 +302,7 @@ Website: https://ragflow.io/
 
 **部署与集成**：提供 Docker Compose 部署方式，可与各类 LLM 集成。
 
-**你可以用 RAGFlow 来做什么****？**
+**你可以用 RAGFlow 来做什么？**
 
 1. **搭建模块化的企业知识库问答系统**
 
@@ -318,7 +318,7 @@ RAGFlow 支持对文档预处理、分块策略、嵌入生成、索引结构等
 
 ## No.8: AnythingLLM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2Y3MDNiNzJmOTg5Y2FkNDU5YWRiYTQzMmQ4NmU0NGZfOGppSm5NdDNsN3ZCSm5LVGpBU0x2MjE0UndMWVNDN01fVG9rZW46RXExWmJLS1NZb3BabWF4R3gzNmNlODk3bkFiXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/17-8m9ws2.png)
 
 GitHub Star: 47.1k
 
@@ -326,7 +326,7 @@ GitHub: https://github.com/Mintplex-Labs/anything-llm
 
 Website: https://anythingllm.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTI2MDRkN2E2M2U5Nzk1MWI3NTg5OWI1YjFmNjFmZDdfMlNBY1ZwTjVOOWIxSlNZaDRIeDJ0TU1PT3JNY2FzVjFfVG9rZW46VVZ2dmJhbU9zbzBHQXl4cUw5WmNucDZoblRnXzE3NTM4NDAyOTI6MTc1Mzg0Mzg5Ml9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/18-2uykf1.png)
 
 **简介**：
 
@@ -340,7 +340,7 @@ Website: https://anythingllm.com/
 
 **部署与集成**：支持桌面端一键安装，也可通过 Docker 实现自托管部署。提供开发者 API，可与现有产品集成。
 
-**你可以用 AnythingLLM 来做什么****？**
+**你可以用 AnythingLLM 来做什么？**
 
 1. **搭建私有 ChatGPT + 知识库**
 
@@ -361,3 +361,12 @@ Website: https://anythingllm.com/
 对于正在做 AI 集成和自动化的开发者来说，MCP 提供了一个思路：不仅关注模型的智能，还要让它能连接外部系统，这样才能让 AI 在真实业务场景中真正发挥作用。
 
 希望本文能为你在 AI 项目的整合和开发上，提供一些参考和启发。
+
+**相关阅读：**
+
+* [GitHub 上 Star 数量前 8 的开源 Web 应用项目](https://www.nocobase.com/cn/blog/github-open-source-web-applications)
+* [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
+* [2025年GitHub Star增长最快的15个开源低代码项目](https://www.nocobase.com/cn/blog/github-top15-fastest-growing-open-source-low-code-projects)
+* [GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)
+* [GitHub 上排名前 11 的开源管理后台（Admin Dashboard）项目](https://www.nocobase.com/cn/blog/top-11-open-source-admin-dashboard-projects-on-github)
+* [GitHub Star 数量前十的工作流项目](https://www.nocobase.com/cn/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
