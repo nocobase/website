@@ -1,6 +1,6 @@
 MCP（Model Context Protocol）という言葉が本格的に広く語られるようになったのは、2025 年初頭、特に AI ツール開発の界隈でした。3月には「 MCP は未来の標準プロトコルになり得るか？」という議論が盛り上がり、LangChain や LangGraph の主要メンバーが X 上で激しく討論。GitHub 上でも関連プロジェクトが次々と注目を集めました。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDYwYTA0MTQzZTA3NTE2ZmI3ZDFmODk1YThkMDRhZGVfeFRhd1l0TnlwZkpmaGVYd2h1NllLUGpWQ3haNXRRUjZfVG9rZW46QWdEUmJmZjEzb0d2bGN4aVlJb2Nmd3NtbmtzXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
 
 Image source: https://blog.langchain.com/mcp-fad-or-fixture/
 
@@ -10,7 +10,7 @@ Image source: https://blog.langchain.com/mcp-fad-or-fixture/
 
 MCP が解決しようとしているのは、まさにこの「最後の 1 マイル」の課題です。MCP は、AI がブラウザ、データベース、プラグインなどに統一的にアクセスできるようにする、いわば「 USB-C ポート」のようなもの。AI が“話す”だけでなく“動ける”ようにする仕組みです。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTY3YzEyZDM4ZTM4MjNiZjc5OGM1ZGFlOTk2MDkyMDFfQ3BzWWpGUUp5Skg3c0xjUmRiMGJZUFVNSXh6TldVeGdfVG9rZW46U0hTc2JuclNrb20zczR4U1htNGNNbnpibjNlXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![MCP](https://static-docs.nocobase.com/2-hk5wm2.png)
 
 Image source: https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/
 
@@ -32,7 +32,7 @@ Image source: https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-expl
 
 ## No.1: n8n
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmEwMjE3ZmQ0OGQ1YWFiOTEwY2JiZGVkMmZkNTM1Y2ZfdUdUWWR1TUZ1Q2g0Nlo5YlJDVGg3cjBQVldNRmRrSnpfVG9rZW46THFwT2JFZjRIb0g0UEl4NkpEUmNqbktCbldlXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![n8n](https://static-docs.nocobase.com/3-r88s0s.PNG)
 
 GitHub Star: 124k
 
@@ -40,7 +40,7 @@ GitHub: https://github.com/n8n-io/n8n
 
 Website: https://n8n.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjg5YjJmNjFkZWIwNWI5NGU1ZjkzMTc4YjRjZjdkYzdfazRIVVJtallrT3NpVVA1U3Z6cVcweHk5QXdEeVp0YTdfVG9rZW46SFlPcGJ1UFVSb2twOG14SDNPcWNPUWhSbnFlXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![n8n](https://static-docs.nocobase.com/4-jy32yq.png)
 
 **概要：**
 
@@ -50,24 +50,24 @@ Website: https://n8n.io/
 
 **主な機能：**
 
-* **ビジュアルフロー構築：**ノードをドラッグ＆ドロップで接続し、サービスや操作を連携して自動実行フローを作成。
-* **Webhook および API 対応：**Webhook ノードで AI Agent からの構造化リクエストを受信し、API ノードで外部システムにリクエストを送信可能。
-* **ロジックおよびデータ処理：**条件分岐、ループ、データ変換などを関数ノードで柔軟に実装し、タスク制御を実現。
+* **ビジュアルフロー構築：** ノードをドラッグ＆ドロップで接続し、サービスや操作を連携して自動実行フローを作成。
+* **Webhook および API 対応：** Webhook ノードで AI Agent からの構造化リクエストを受信し、API ノードで外部システムにリクエストを送信可能。
+* **ロジックおよびデータ処理：** 条件分岐、ループ、データ変換などを関数ノードで柔軟に実装し、タスク制御を実現。
 
 **デプロイと統合：**
 
-* **柔軟な導入方法：**ローカル実行、Docker、ワンクリックインストール、クラウド展開に対応し、個人から企業まで幅広く対応可能。
-* **強力なシステム統合：**データベース、外部 API、GPT、ファイルサービスなど、500 以上の統合に対応。
+* **柔軟な導入方法：** ローカル実行、Docker、ワンクリックインストール、クラウド展開に対応し、個人から企業まで幅広く対応可能。
+* **強力なシステム統合：** データベース、外部 API、GPT、ファイルサービスなど、500 以上の統合に対応。
 
 **n8n でできること：**
 
 1. **AI アシスタントによる外部サービス連携：**「明日の午後に会議を設定して」とチャットに入力すると、n8n がリクエストを受信して対話コンテキストを抽出し、OpenAI に送信。意図を認識した後、n8n が Google Calendar に予定を自動登録し、確認メッセージを返信。
 2. **企業ナレッジベースの QA システム：**「私たちの製品はどの支払い方法に対応していますか？」という質問に対し、n8n が社内ドキュメントのベクトル検索を行い、関連内容を抽出して文脈を構成。AI モデルに渡して正確な回答を生成し、Slack でユーザーに返信。
-3. **モデル生成コンテンツの自動データベース登録：**毎日 GPT を定時実行して前日の営業チャットを要約し、n8n がキーワード、見込み客、次のアクションなどを抽出して CRM に保存。同時にチームチャットに日報要約を投稿。
+3. **モデル生成コンテンツの自動データベース登録：** 毎日 GPT を定時実行して前日の営業チャットを要約し、n8n がキーワード、見込み客、次のアクションなどを抽出して CRM に保存。同時にチームチャットに日報要約を投稿。
 
 ## No.2: dify
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTYxOTViOTJhMTg4ZDYzNGNjMzcxZDAwMmU2YWRjNDBfOG53enRIajF0VUMzcmZCQzRwZ2VJeUhNS09ESVVlRWxfVG9rZW46WnMzaGJkTFRXb3FoUFZ4Ykh5NmN1NHNDbnViXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![dify](https://static-docs.nocobase.com/5-uwta9l.PNG)
 
 GitHub Star: 109k
 
@@ -75,7 +75,7 @@ GitHub: https://github.com/langgenius/dify
 
 Website: https://dify.ai/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjJhYTNlYjk2YmIzOWNhOTM4NzQ3YmYzNTRlZjUwYThfUDF5bHNPTEJEell2RWx6dWpBR2llYU9qcW5ZTzBpdHhfVG9rZW46U094bmJtRXIybzc4dDR4emVaQWNtV0JjblFkXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![dify](https://static-docs.nocobase.com/6-jpb7a7.png)
 
 **概要：**
 
@@ -85,21 +85,21 @@ Dify は、OpenAI、Claude、Gemini などの主要モデルを呼び出せる�
 
 **主な機能：**
 
-* **双方向 MCP 対応：**MCP サーバーとしてもクライアントとしても機能し、AI と外部システムとの指示・応答の連携をスムーズに実現。
-* **ビジュアルワークフロー構築：**ドラッグ＆ドロップで直感的に AI アプリや処理フローを作成可能。MCP 関連の処理設計を可視化し効率化。
-* **マルチモデルとツール統合：**世界中の大規模言語モデル（LLM）に対応し、プラグインや RAG パイプラインとの統合によって、柔軟な拡張が可能。
+* **双方向 MCP 対応：** MCP サーバーとしてもクライアントとしても機能し、AI と外部システムとの指示・応答の連携をスムーズに実現。
+* **ビジュアルワークフロー構築：** ドラッグ＆ドロップで直感的に AI アプリや処理フローを作成可能。MCP 関連の処理設計を可視化し効率化。
+* **マルチモデルとツール統合：** 世界中の大規模言語モデル（LLM）に対応し、プラグインや RAG パイプラインとの統合によって、柔軟な拡張が可能。
 
 **デプロイと統合：** Docker や AWS AMI によるワンクリック導入に対応。SaaS 版も提供されており、API と Webhook インターフェースを通じて様々な環境で利用可能。
 
 **Dify でできること：**
 
-1. **社内向けインテリジェントアシスタントの構築：**社内文書をアップロードし、OpenAI や Claude と連携させ、よくある質問や業務関連変数を設定することで、業務内容を理解したインテリジェントな社内用アシスタントを簡単に作成可能。Dify のフロントエンド SDK や API を使えば、自社サイトやシステムにも簡単に組み込み可能。
-2. **多ターン対応の RAG ベース QA アプリ構築：**Dify に内蔵されたデータセット管理とコンテキスト制御を使えば、ベクトル検索を活用した多ターン対話型 QA システムを簡単に構築可能。ベクトル DB や Prompt 設計を自前で用意する必要がなく、資料のアップロードと設定だけで即稼働。カスタマーサポートや社内ナレッジベースに最適。
-3. **ワークフローでモデルやツールを連携：**Dify のワークフロー機能を使えば、複数モデルの呼び出し、プラグイン実行、API リクエストなどを連携し、複雑な Agent 処理が可能。たとえば、モデルがユーザーの意図を理解 → データベースを呼び出し → 結果を再加工 → 応答、という一連の流れをすべてビジュアルで設計できる。
+1. **社内向けインテリジェントアシスタントの構築：** 社内文書をアップロードし、OpenAI や Claude と連携させ、よくある質問や業務関連変数を設定することで、業務内容を理解したインテリジェントな社内用アシスタントを簡単に作成可能。Dify のフロントエンド SDK や API を使えば、自社サイトやシステムにも簡単に組み込み可能。
+2. **多ターン対応の RAG ベース QA アプリ構築：** Dify に内蔵されたデータセット管理とコンテキスト制御を使えば、ベクトル検索を活用した多ターン対話型 QA システムを簡単に構築可能。ベクトル DB や Prompt 設計を自前で用意する必要がなく、資料のアップロードと設定だけで即稼働。カスタマーサポートや社内ナレッジベースに最適。
+3. **ワークフローでモデルやツールを連携：** Dify のワークフロー機能を使えば、複数モデルの呼び出し、プラグイン実行、API リクエストなどを連携し、複雑な Agent 処理が可能。たとえば、モデルがユーザーの意図を理解 → データベースを呼び出し → 結果を再加工 → 応答、という一連の流れをすべてビジュアルで設計できる。
 
 ## No.3: Open WebUI
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDUwZjE5ZTA4ZTQyYTM2MzZkMTI3MTlhZTc5YTY2OWVfYmoyV0dHUlp1MW5qRlN3NVd1ckdlZFB6azlDOGhNSkJfVG9rZW46QVlJVWJRS0Vqb3c0S2R4RVNYNmNrcmMybjZiXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Open WebUI](https://static-docs.nocobase.com/7-uo7z3x.PNG)
 
 GitHub Star: 104k
 
@@ -107,7 +107,7 @@ GitHub: https://github.com/open-webui/open-webui
 
 Website: https://openwebui.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2QwOWRhNGEwNjY1ZWQ4NWM2Mzc3NzYzMzliNzgwMGJfaGpyd0FkWUx3YW5RR1JINTB5dVd2eFdWRnNwcGJkV2lfVG9rZW46QkhxcGJjTmIwb20zMkV4Z3lhTWNsNXFtbjlmXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Open WebUI](https://static-docs.nocobase.com/8-6ypb5p.png)
 
 **概要：**
 
@@ -117,21 +117,21 @@ Website: https://openwebui.com/
 
 **主な機能：**
 
-* **マルチモデルと API 統合：**OpenAI 互換 API や Ollama などの LLM ランタイムに対応し、共通のインターフェースで AI モデルの操作を一括管理。
-* **プラグインフレームワーク（Pipelines）：**カスタムの Python ロジックや機能プラグインを読み込み、前処理・後処理や外部ツール連携を実現。
-* **ローカル／リモートの RAG 対応：**内蔵の推論エンジンにより、ローカル文書の解析、外部ウェブ情報との連携、RAG パイプライン構築を通じてコンテキスト提供が可能。
+* **マルチモデルと API 統合：** OpenAI 互換 API や Ollama などの LLM ランタイムに対応し、共通のインターフェースで AI モデルの操作を一括管理。
+* **プラグインフレームワーク（Pipelines）：** カスタムの Python ロジックや機能プラグインを読み込み、前処理・後処理や外部ツール連携を実現。
+* **ローカル／リモートの RAG 対応：** 内蔵の推論エンジンにより、ローカル文書の解析、外部ウェブ情報との連携、RAG パイプライン構築を通じてコンテキスト提供が可能。
 
 **デプロイと統合：** Docker や Kubernetes による導入に対応。単体の開発環境から企業のクラスタ環境まで柔軟に対応でき、REST API 経由でモデルやプラグインと連携可能。
 
 **Open WebUI でできること：**
 
-1. **ChatGPT のプライベートコピーを構築：**Open WebUI をローカルにデプロイされた LLM（たとえば Llama3、Mistral、Qwen など）と接続すれば、社内ネットワークで安全に ChatGPT のようなチャット体験が可能。マルチターン対応、モデル切り替え、会話履歴保存などにも対応し、業務アシスタントやナレッジ検索に最適。
-2. **開発チーム用の AI ツールボックスとして活用：**プロンプト作成やモデル設定を個別に行う必要はありません。Open WebUI を使えば、共通のモデル設定やコンテキストテンプレートを一元管理でき、ユーザーごとの会話環境もロールベースで管理可能。チーム全体で統一された AI アシスタントを簡単に提供できます。
-3. **LLM アプリの対話型フロントエンドとして利用：**業務システムやデータベース、推論サービスと接続して、Open WebUI をアプリの UI レイヤーとして活用可能。プラグイン機構と API 統合を活かして、Q&A、検索、命令実行といった対話的処理を受け持つ軽量な Copilot フロントエンドを構築できます。
+1. **ChatGPT のプライベートコピーを構築：** Open WebUI をローカルにデプロイされた LLM（たとえば Llama3、Mistral、Qwen など）と接続すれば、社内ネットワークで安全に ChatGPT のようなチャット体験が可能。マルチターン対応、モデル切り替え、会話履歴保存などにも対応し、業務アシスタントやナレッジ検索に最適。
+2. **開発チーム用の AI ツールボックスとして活用：** プロンプト作成やモデル設定を個別に行う必要はありません。Open WebUI を使えば、共通のモデル設定やコンテキストテンプレートを一元管理でき、ユーザーごとの会話環境もロールベースで管理可能。チーム全体で統一された AI アシスタントを簡単に提供できます。
+3. **LLM アプリの対話型フロントエンドとして利用：** 務システムやデータベース、推論サービスと接続して、Open WebUI をアプリの UI レイヤーとして活用可能。プラグイン機構と API 統合を活かして、Q&A、検索、命令実行といった対話的処理を受け持つ軽量な Copilot フロントエンドを構築できます。
 
 ## No.4: Netdata
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDRiMjcyM2RjZDFlNDFlY2UzZjhlNTA3YzljN2IwNzlfTVc2Z3ZuU1ZvTjdXMDNYODRGOHNPa25wajhXY3hZSzNfVG9rZW46UDBRcWJTUnY5b29uTVF4SVZEQ2NQbUQzblcxXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Netdata](https://static-docs.nocobase.com/9-18kgep.png)
 
 GitHub Star: 75.2k
 
@@ -139,7 +139,7 @@ GitHub: https://github.com/netdata/netdata
 
 Website: https://www.netdata.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODMyODZiY2EzZWQ5Y2Y3ZDRlYTg2Mzg2ZmFmOTM1N2Nfc1U3SmNhbXdkdEtXU29GZFlNNE9EbVVxbTU4OHFkclBfVG9rZW46QnJJbWJYd0xPb1plb0l4OThia2N0T1ZIblNkXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Netdata](https://static-docs.nocobase.com/10-akbrty.png)
 
 **概要：**
 
@@ -149,21 +149,21 @@ Website: https://www.netdata.cloud/
 
 **主な機能：**
 
-* **MCP サーバー機能：**Netdata Agent と Cloud モジュール自体が MCP サーバーとして動作し、AI から監視データへのアクセスを可能にします。
-* **リアルタイム監視と異常検出：**高頻度の性能メトリクス収集、ログ解析、アラート通知、異常検知機能を搭載。
-* **AI 支援の運用対話：**自然言語でインフラ状態を確認し、AI 駆動の DevOps アシスタントとして活用可能。
+* **MCP サーバー機能：** Netdata Agent と Cloud モジュール自体が MCP サーバーとして動作し、AI から監視データへのアクセスを可能にします。
+* **リアルタイム監視と異常検出：** 高頻度の性能メトリクス収集、ログ解析、アラート通知、異常検知機能を搭載。
+* **AI 支援の運用対話：** 自然言語でインフラ状態を確認し、AI 駆動の DevOps アシスタントとして活用可能。
 
 **デプロイと統合：** Docker、パッケージマネージャ、インストールスクリプトなどによって、サーバー、コンテナ、クラウド環境に柔軟に導入可能。800 以上の統合に対応し、標準化された MCP インターフェースを通じて AI Agent がリアルタイムに監視データを取得できます。
 
 **Netdata でできること：**
 
-1. **ローカル LLM のリソースをリアルタイムで監視：**GPU、CPU、メモリ、ディスクなどの利用状況を秒単位で更新。ボトルネックやリソース過負荷をすぐに把握でき、ローカルモデルの運用に最適。
-2. **AI ワークフロー用の監視ダッシュボードを構築：**推論 API の呼び出し回数、レスポンス時間、コンテキストキャッシュの使用状況などをリアルタイムで可視化。モデルの応答停止やエラー率の急上昇などを検知するアラートも設定可能。
-3. **AI システムに可視化された「ブラックボックス」機能を追加：**Netdata の詳細なトレースログや履歴グラフを使えば、障害発生時の状況を時系列で再現可能。RAG システムの故障、プラグインの接続失敗、GPU のクロック低下など、問題の特定と対処が容易になります。
+1. **ローカル LLM のリソースをリアルタイムで監視：** GPU、CPU、メモリ、ディスクなどの利用状況を秒単位で更新。ボトルネックやリソース過負荷をすぐに把握でき、ローカルモデルの運用に最適。
+2. **AI ワークフロー用の監視ダッシュボードを構築：** 推論 API の呼び出し回数、レスポンス時間、コンテキストキャッシュの使用状況などをリアルタイムで可視化。モデルの応答停止やエラー率の急上昇などを検知するアラートも設定可能。
+3. **AI システムに可視化された「ブラックボックス」機能を追加：** Netdata の詳細なトレースログや履歴グラフを使えば、障害発生時の状況を時系列で再現可能。RAG システムの故障、プラグインの接続失敗、GPU のクロック低下など、問題の特定と対処が容易になります。
 
 ## No.5: Lobe Chat
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDMzZmY0ODhhZWE3ZWY1NzIzODA1MDA0NjM2YThlMjVfQ0ZaYWVWaWo1emVUV01HTHRMczUycGJjRVVPM0NCbHJfVG9rZW46RWdUZWJuOWp2bzV6cXZ4YnBxWmNjTlk3blNoXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/11-w7o72g.png)
 
 GitHub Star: 63.9k
 
@@ -171,7 +171,7 @@ GitHub: https://github.com/lobehub/lobe-chat
 
 Website: https://lobechat.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGU3NWEyNDA1ZDQ3NzU0OGQ5OTU5ZTIyM2NmN2MxZmNfcGFkQVlMQzRNRjFzQ1AzbmtUSHh1RHNPQlJnaGRaa0hfVG9rZW46Uml5N2I3aVpSb2tmbnZ4M1QxYmNjMldEbkplXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Lobe Chat](https://static-docs.nocobase.com/12-o8ky3v.png)
 
 **概要：**
 
@@ -181,21 +181,21 @@ MCP アーキテクチャがさまざまな AI アプリケーションで注目
 
 **主な機能：**
 
-* **複数モデル & RAG 対応：**OpenAI、Claude、Gemini、ローカルモデルを柔軟に統合し、ナレッジベース検索やコンテキスト参照を実現。
-* **MCP プラグインマーケット：**MCP プラグインストアを内蔵し、エージェント機能やツール呼び出しを素早く導入可能。
-* **機能呼び出しシステム：**関数呼び出し形式のプラグインプロトコルに対応しており、モデルをまたいだ外部処理が可能。
+* **複数モデル & RAG 対応：** OpenAI、Claude、Gemini、ローカルモデルを柔軟に統合し、ナレッジベース検索やコンテキスト参照を実現。
+* **MCP プラグインマーケット：** MCP プラグインストアを内蔵し、エージェント機能やツール呼び出しを素早く導入可能。
+* **機能呼び出しシステム：** 関数呼び出し形式のプラグインプロトコルに対応しており、モデルをまたいだ外部処理が可能。
 
 **デプロイ & 統合：** Docker や Vercel などでのセルフホスティングに対応し、プライベートなチャットアプリをワンクリックでデプロイ可能。外部システムとの統合用 API も提供。
 
 **Lobe Chat の活用シナリオ：**
 
-1. **自分専用のマルチモデルアシスタントを構築：**Llama3、Qwen、GPT-4、Claude などのローカル/クラウドモデルを簡単に統合し、統一されたチャット体験を実現。記憶、ロール設定、プラグイン呼び出しなど自由度が高く、ChatGPT よりも柔軟。
-2. **プラグイン対応の AI Copilot を構築：**データベース、検索エンジン、ツール API などに接続可能なプラグインを設定し、「この表を Notion に取り込み集計して」といった指示も自動実行可能。
-3. **共有可能な AI アプリ UI を構築：**チャットだけでなく、カスタムエージェントやプロンプトツールの共有リンクや埋め込みを通じて、軽量な社内ツールや顧客向けサービスをすばやく構築可能。
+1. **自分専用のマルチモデルアシスタントを構築：** Llama3、Qwen、GPT-4、Claude などのローカル/クラウドモデルを簡単に統合し、統一されたチャット体験を実現。記憶、ロール設定、プラグイン呼び出しなど自由度が高く、ChatGPT よりも柔軟。
+2. **プラグイン対応の AI Copilot を構築：** データベース、検索エンジン、ツール API などに接続可能なプラグインを設定し、「この表を Notion に取り込み集計して」といった指示も自動実行可能。
+3. **共有可能な AI アプリ UI を構築：** チャットだけでなく、カスタムエージェントやプロンプトツールの共有リンクや埋め込みを通じて、軽量な社内ツールや顧客向けサービスをすばやく構築可能。
 
 ## No.6: Glama
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDJmMWRiOGUwZWUxZWE4YTMyZTNmYWVjYTU0ODBlNDBfSHVEdFNiTTM4M2NmNlNUb3JTNG5LcHR5MVdsNlBFRVJfVG9rZW46Tjd3MmJLZmgyb1hlSTB4NXQ0Y2M5NjJnbkgwXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Glama](https://static-docs.nocobase.com/13-4jq2qy.png)
 
 GitHub Star: 63.6k
 
@@ -203,7 +203,7 @@ GitHub: https://github.com/punkpeye/awesome-mcp-servers
 
 Website: https://glama.ai/mcp/servers
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWU3N2QwNmY3MjUxYTEwYjNkYjdhZWU5YTIyMWVlNGNfVDJvdkJtNUQ2TnJibEtxWEpiOGl0aXJaeTRmc2tVS3pfVG9rZW46SzZkSGJYWTd6b0FFYmh4cTFueGNxMUlJblRoXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![Glama](https://static-docs.nocobase.com/14-p1734h.png)
 
 **概要：**
 
@@ -213,21 +213,21 @@ Glama は新しい「モジュール型体験」を提供し、任意の MCP 対
 
 **主な機能：**
 
-* **多彩な MCP サーバー集約：**Kong Konnect、Powerdrill、YingDao RPA、StarTree など多様な MCP サーバーを統合し、API ゲートウェイ、データ分析、RPA 自動化、DB 連携など多彩なシナリオをカバー。
-* **標準化された相互運用性：**集約する MCP サーバーはすべて Model Context Protocol に準拠し、AI モデルが統一フォーマットで操作要求を送信可能。
-* **効率的なリソース検索：**MCP サーバーやツール名などキーワードで高速検索ができ、特定の業務要件に適合した MCP サービスを簡単に見つけられます。
+* **多彩な MCP サーバー集約：** Kong Konnect、Powerdrill、YingDao RPA、StarTree など多様な MCP サーバーを統合し、API ゲートウェイ、データ分析、RPA 自動化、DB 連携など多彩なシナリオをカバー。
+* **標準化された相互運用性：** 集約する MCP サーバーはすべて Model Context Protocol に準拠し、AI モデルが統一フォーマットで操作要求を送信可能。
+* **効率的なリソース検索：** MCP サーバーやツール名などキーワードで高速検索ができ、特定の業務要件に適合した MCP サービスを簡単に見つけられます。
 
 **デプロイ & 統合：** ウェブ版サービスと API を提供し、法人ユーザーは自社システムや DB と直接連携可能。MCP プロトコルでタスク指示を受け取れます。
 
 **Glama の活用シナリオ：**
 
-1. **複数 MCP サービスを一元管理するダッシュボード：**Lobe Chat、Open WebUI など複数のチャットサービスや AI-Plugins Server など複数のプラグインサーバーを同時接続し、一つの画面で切り替えて使えます。統一された体験とコンテキスト管理が可能。
-2. **エージェントとプラグインの協調動作を即テスト：**Glama を使えば、異なる MCP バックエンドがプラグインをどう呼び出すか、ユーザー指示をどう解釈するかを直接検証可能。たとえばデータベースプラグインが全モデルで正常動作するか比較検証でき、システムチューニングに役立ちます。
-3. **「モデルクラスター＋プラグイン」構成のプロトタイプ構築：**AI Copilot 製品やプラットフォーム構築時の機能構造を Glama で試作可能。左画面にモデル、中央に対話画面、右にプラグインログ表示など MCP ベースの閉ループを可視化し、カスタム開発の基礎を固められます。
+1. **複数 MCP サービスを一元管理するダッシュボード：** Lobe Chat、Open WebUI など複数のチャットサービスや AI-Plugins Server など複数のプラグインサーバーを同時接続し、一つの画面で切り替えて使えます。統一された体験とコンテキスト管理が可能。
+2. **エージェントとプラグインの協調動作を即テスト：** Glama を使えば、異なる MCP バックエンドがプラグインをどう呼び出すか、ユーザー指示をどう解釈するかを直接検証可能。たとえばデータベースプラグインが全モデルで正常動作するか比較検証でき、システムチューニングに役立ちます。
+3. **「モデルクラスター＋プラグイン」構成のプロトタイプ構築：** AI Copilot 製品やプラットフォーム構築時の機能構造を Glama で試作可能。左画面にモデル、中央に対話画面、右にプラグインログ表示など MCP ベースの閉ループを可視化し、カスタム開発の基礎を固められます。
 
 ## No.7: **RAGFlow**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzY0NjUxYWMxNDAyMjQ2MThjMTA1Y2RjNTNiZmY5NzRfb0k3cktnTmJBcTBMazlpS1FERTU3WDZYdVFScENQTHpfVG9rZW46VTBLNmJTYWdIb0g3VDN4ZHN1eGMyVkZxblRlXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![RAGFlow](https://static-docs.nocobase.com/15-7kvvqp.png)
 
 GitHub Star: 61.1k
 
@@ -235,7 +235,7 @@ GitHub: https://github.com/infiniflow/ragflow
 
 Website: https://ragflow.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTRmYmVjYWE1NjlhNTYwN2I0ODhmNTVhNzE3ZDI1ZGNfdnlXTHVMTHpRQmd5RlF4Wnh3VjNRTEpFa0N6T3BDaEZfVG9rZW46TWluWGJLa1I2b3dqNGV4bE1GcWNZaU5nbjJmXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![RAGFlow](https://static-docs.nocobase.com/16-dvstzn.png)
 
 **概要：**
 
@@ -245,21 +245,21 @@ LangChain や LlamaIndex といった汎用フレームワークと比べ、RAGF
 
 **主な機能：**
 
-* **深層ドキュメント解析：**多形式ファイルや構造化データに対応し、重要情報を深く抽出して AI タスク向けに高品質コンテキストを提供。
-* **知識ベース構築・管理：**専用の知識ベース作成をサポートし、アップロードファイルの解析、保存、保守が可能。
-* **検索強化型生成連携：**LLM 統合後、検索結果に基づいた正確な引用付き回答を生成。
+* **深層ドキュメント解析：** 多形式ファイルや構造化データに対応し、重要情報を深く抽出して AI タスク向けに高品質コンテキストを提供。
+* **知識ベース構築・管理：** 専用の知識ベース作成をサポートし、アップロードファイルの解析、保存、保守が可能。
+* **検索強化型生成連携：** LLM 統合後、検索結果に基づいた正確な引用付き回答を生成。
 
 **デプロイ & 統合：** Docker Compose によるデプロイを提供し、さまざまな LLM と統合可能。
 
 **RAGFlow の活用シナリオ：**
 
-1. **モジュール化された企業知識問答システム構築：**文書の前処理、チャンク分割、埋め込み生成、インデックス構造などを細かくモジュール設定でき、部品交換やカスタムノード追加も可能。業務に最適化した RAG システムを構築可能。
-2. **デバッグ可能な RAG 呼び出しチェーン構築：**どこで検索クエリが外れたか、どのコンテキストが長すぎてカットされたかを可視化。RAGFlow のチェーン可視化とデータトレーシングにより回答プロセスを効率的に改善。
-3. **Agent と RAG 構成の統合：**RAGFlow を Dify や Lobe Chat と連携し、プラグインや API 経由で複雑な意図認識 → 検索 → 回答の 3 段階処理を実装。財務アシスタントやカスタマーサポートなど高度な業務感知型エージェントに最適。
+1. **モジュール化された企業知識問答システム構築：** 文書の前処理、チャンク分割、埋め込み生成、インデックス構造などを細かくモジュール設定でき、部品交換やカスタムノード追加も可能。業務に最適化した RAG システムを構築可能。
+2. **デバッグ可能な RAG 呼び出しチェーン構築：** どこで検索クエリが外れたか、どのコンテキストが長すぎてカットされたかを可視化。RAGFlow のチェーン可視化とデータトレーシングにより回答プロセスを効率的に改善。
+3. **Agent と RAG 構成の統合：** RAGFlow を Dify や Lobe Chat と連携し、プラグインや API 経由で複雑な意図認識 → 検索 → 回答の 3 段階処理を実装。財務アシスタントやカスタマーサポートなど高度な業務感知型エージェントに最適。
 
 ## No.8: AnythingLLM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjExZGZiNmE1ZjRjZWE1MzAyNDE3MjIxZjNkMWU5MzVfS0lVckxtdlJSZzNNZmhMeE9HSldIOVVsNklENjRxTWhfVG9rZW46WnJURGJyaTZnb3BnRnV4ZG9RQ2NIbXRWbmlkXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/17-8m9ws2.png)
 
 GitHub Star: 47.1k
 
@@ -267,7 +267,7 @@ GitHub: https://github.com/Mintplex-Labs/anything-llm
 
 Website: https://anythingllm.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGE1Y2Q4MGE4Mzk5M2M2YTY0NjI0NmRjMzYxMDc3Y2RfMzV4UFMzVWVhZFg3amJkS0c4SGpiMTFkSHpGN0tkamdfVG9rZW46QU5KTGJBUmZwb3YzRlZ4TDlPOWNtOEtSblBlXzE3NTM4NDAzMjI6MTc1Mzg0MzkyMl9WNA)
+![AnythingLLM](https://static-docs.nocobase.com/18-2uykf1.png)
 
 **概要：**
 
@@ -275,17 +275,17 @@ Website: https://anythingllm.com/
 
 **主な機能：**
 
-* **マルチモデルとドキュメントインタラクション：**ローカルカスタムモデルやクラウドモデル（OpenAI、Azure など）に対応し、PDF、Word、CSV 等多形式文書の処理が可能。
-* **カスタムエージェントとスキル拡張：**Agent Skills による AI アシスタントのカスタム能力追加に対応し、MCP プロトコルと組み合わせて自動化タスク実行も可能。
-* **ローカル実行とプライバシー保護：**LLM、ベクトルDB、ストレージコンポーネントをローカルで稼働し、AI コマンドやデータ処理はすべてローカルで完結。
+* **マルチモデルとドキュメントインタラクション：** ローカルカスタムモデルやクラウドモデル（OpenAI、Azure など）に対応し、PDF、Word、CSV 等多形式文書の処理が可能。
+* **カスタムエージェントとスキル拡張：** Agent Skills による AI アシスタントのカスタム能力追加に対応し、MCP プロトコルと組み合わせて自動化タスク実行も可能。
+* **ローカル実行とプライバシー保護：** LLM、ベクトルDB、ストレージコンポーネントをローカルで稼働し、AI コマンドやデータ処理はすべてローカルで完結。
 
 **デプロイ & 統合：** デスクトップ向けワンクリックインストール対応。Docker によるセルフホスティングも可能。開発者向け API も提供し既存製品への組み込みに対応。
 
 **AnythingLLM の活用シナリオ：**
 
-1. **プライベート ChatGPT＋知識ベース構築：**PDF やウェブ資料を「Workspace」へドラッグし、自動チャンク化、埋め込み、引用付き回答生成。ローカル・クラウド運用問わず、チーム内の管理された問答入口を提供。
-2. **Agent ＋ MCP ツールチェーン実装：**UI 上で MCP サーバーを設定し、対話中のエージェントが外部ツール（検索、クロール、DB 読み書き）を呼び出すことで「理解 → データ取得 → 処理 → 回答」の閉ループをノーコードで実現。
-3. **マルチモデル＆多ベクトルDB の柔軟組み合わせ：**OpenAI、Claude、Gemini、ローカル Ollama など複数モデルを同時利用可能。LanceDB、PGVector、Pinecone、Milvus、Qdrant など多様なベクトルDB に対応。チャットコンポーネントはウェブやシステムへ埋め込み可能で、エンドツーエンドの完全な納品を実現。
+1. **プライベート ChatGPT＋知識ベース構築：** PDF やウェブ資料を「Workspace」へドラッグし、自動チャンク化、埋め込み、引用付き回答生成。ローカル・クラウド運用問わず、チーム内の管理された問答入口を提供。
+2. **Agent ＋ MCP ツールチェーン実装：** UI 上で MCP サーバーを設定し、対話中のエージェントが外部ツール（検索、クロール、DB 読み書き）を呼び出すことで「理解 → データ取得 → 処理 → 回答」の閉ループをノーコードで実現。
+3. **マルチモデル＆多ベクトルDB の柔軟組み合わせ：** OpenAI、Claude、Gemini、ローカル Ollama など複数モデルを同時利用可能。LanceDB、PGVector、Pinecone、Milvus、Qdrant など多様なベクトルDB に対応。チャットコンポーネントはウェブやシステムへ埋め込み可能で、エンドツーエンドの完全な納品を実現。
 
 ## 総括
 
@@ -294,3 +294,12 @@ Website: https://anythingllm.com/
 AI 統合や自動化に取り組む開発者にとって、MCP は「モデルの知能だけでなく外部システムとの接続を重視し、現実の業務で AI が真価を発揮するための考え方」を示しています。
 
 本稿が AI プロジェクトの統合や開発にあたって、何らかの参考やヒントになれば幸いです。
+
+**関連読み物：**
+
+* [GitHubスター数トップのオープンソースWebアプリ7選](https://www.nocobase.com/ja/blog/github-open-source-web-applications)
+* [GitHub のスター数上位 40 の開発者ツール](https://www.nocobase.com/ja/blog/github-open-source-developer-tools)
+* [2025 年 GitHub 上で最も成長が速い上位 15 のオープンソース低コードプロジェクト](https://www.nocobase.com/ja/blog/github-top15-fastest-growing-open-source-low-code-projects)
+* [GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
+* [GitHub上で人気のオープンソース管理ダッシュボード11選](https://www.nocobase.com/ja/blog/top-11-open-source-admin-dashboard-projects-on-github)
+* [GitHubの星が最も多いオープンソースワークフロープロジェクトトップ10](https://www.nocobase.com/ja/blog/top-10-open-source-workflows-projects-with-the-most-github-stars)
