@@ -433,13 +433,8 @@ const filterOptions = {
     
     
     /* Ensure consistent card heights in row */
-    .row > [class*='col-'] {
-      display: flex;
-    }
-    
     .plugin-card {
-      display: flex;
-      flex-direction: column;
+      height: 100%;
     }
     
     .plugin-card .card-body {
@@ -449,8 +444,6 @@ const filterOptions = {
     }
     
     .plugin-box {
-      display: flex;
-      flex-direction: column;
       flex: 1;
     }
 
