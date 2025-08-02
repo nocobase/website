@@ -1,0 +1,607 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// Import interactive demo data
+import extensionDemoGuides from "../../../data/ticketing-extension-demo-en.json";
+
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// Define plugin names used in ticketing system
+const ticketingPluginNames = [
+  "Email Manager",
+  "Collection: Comment",
+  "File Manager",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables"
+];
+
+// Match plugin data by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get ticketing system related plugins
+const ticketingPlugins = ticketingPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// Debug info
+console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
+---
+
+<Layout
+  title="Эффективная и удобная система управления тикетами"
+  description="Система управления тикетами NocoBase служит важным дополнением к CRM, обеспечивая полное управление жизненным циклом тикетов, от создания контакта с клиентом до назначения и обработки тикетов, достигая полного цифрового управления процессом."
+  keywords="Система тикетов NocoBase, Управление тикетами, Система обслуживания клиентов, Послепродажное обслуживание, Назначение тикетов"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">Эффективная и удобная<br/>система управления тикетами</h1>
+            <p class="para-desc text-muted">Система управления тикетами NocoBase служит важным дополнением к CRM, обеспечивая полное управление жизненным циклом тикетов. От создания контакта с клиентом до ввода тикета, назначения, обработки и отслеживания, достигая полного цифрового управления послепродажным обслуживанием.</p>
+            
+            <!-- Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Применение:</span>
+                  <span class="badge bg-soft-primary me-2">Обслуживание клиентов</span>
+                  <span class="badge bg-soft-primary">Послепродажная поддержка</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Разработчик:</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Демо
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Развернуть на своем сервере
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- Ticketing System Preview -->
+            <div class="position-relative">
+              <img 
+                src="https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g.png" 
+                alt="Предварительный просмотр системы управления тикетами NocoBase" 
+                class="img-fluid rounded shadow"
+                style="max-height: 400px; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Возможности системы управления тикетами NocoBase</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Как важное дополнение к системе CRM, обеспечивает профессиональное управление обслуживанием клиентов и послепродажной поддержкой</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-ticket rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Полный жизненный цикл тикета</h5>
+              <p class="text-muted mt-2">От создания тикета, назначения, обработки до закрытия, полное управление процессом обеспечивает правильную обработку каждого тикета</p>
+              <i class="uil uil-ticket full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-users-alt rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Умное назначение и отслеживание</h5>
+              <p class="text-muted mt-2">Автоматическое назначение задач на основе типов тикетов и навыков членов команды, отслеживание в реальном времени прогресса обработки и статуса</p>
+              <i class="uil uil-users-alt full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-envelope rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Многоканальные записи коммуникации</h5>
+              <p class="text-muted mt-2">Интеграция электронной почты, телефона, онлайн-чата и других каналов связи, унифицированное управление записями коммуникации с клиентами</p>
+              <i class="uil uil-envelope full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Открытый исходный код, полный контроль данных</h5>
+              <p class="text-muted mt-2">Открытый исходный код, приватное развертывание данных, обеспечивая безопасность корпоративных данных и автономный контроль</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Try Ticketing Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- Using extension function interactive demo -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Попробовать сейчас
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Развернуть на своем сервере
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try Ticketing Extension End -->
+
+  <!-- Development Tutorial Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Учебное пособие по разработке системы тикетов</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Узнайте, как создать профессиональную систему управления тикетами с нуля, используя NocoBase</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-play h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Дизайн модели данных</h5>
+                <p class="text-muted text-center">Узнайте, как создавать базовые структуры данных и отношения для тикетов, клиентов, категорий и т.д.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-arrow-growth h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Настройка рабочего процесса</h5>
+                <p class="text-muted text-center">Настройка назначения тикетов, переходов статуса и автоматизированных рабочих процессов обработки</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-bell h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Уведомления и напоминания</h5>
+                <p class="text-muted text-center">Настройка электронных и системных уведомлений для обеспечения своевременной обработки тикетов</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Коммерческие плагины, используемые в системе тикетов</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Узнайте, как получить более мощные функции через коммерческие плагины для повышения профессионализма и удобства использования вашей системы тикетов</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- Dynamic plugin cards -->
+        {ticketingPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">От <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Подробности</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование, 1 год обновлений</span><br>
+                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование и обновления</span><br>
+                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_usd || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- Placeholder card for layout -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">Больше плагинов скоро</h6>
+                  <p class="text-muted small">Мы разрабатываем больше полезных коммерческих плагинов, следите за обновлениями</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/en/plugins-commercial" class="btn btn-primary me-3">Посмотреть все коммерческие плагины</a>
+          <a href="/en/commercial" class="btn btn-outline-primary">Цены</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Как использовать?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Три шага для быстрого развертывания системы CRM NocoBase с функциональностью управления тикетами в вашей среде</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Установить систему NocoBase</h5>
+                <p class="text-muted mt-2">Разверните систему NocoBase на вашем сервере, следуя нашей документации по установке</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">Посмотреть руководство по установке</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Скачать шаблон системы CRM</h5>
+                <p class="text-muted mt-2">Скачайте полный шаблон CRM для получения возможностей управления тикетами</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">Скачать SQL файл</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">Скачать файл резервной копии (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Восстановить в системе</h5>
+                <p class="text-muted mt-2">Импортируйте файл шаблона CRM в вашу систему NocoBase для получения как возможностей CRM, так и управления тикетами</p>
+              </div>
+              <div class="mt-3">
+                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Учебное пособие по восстановлению</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Ticketing feature explanation -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
+            <div class="d-flex align-items-start">
+              <div class="flex-shrink-0 me-3">
+                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-2 text-dark fw-medium">Совет</h6>
+                <p class="mb-0 text-muted">Система управления тикетами полностью интегрирована в шаблон CRM как важный дополнительный модуль. После развертывания вы можете напрямую использовать полную функциональность управления тикетами в системе CRM для достижения полного управления обслуживанием клиентов.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- How to Extend Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Как расширить?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Дальнейшее расширение и настройка вашей системы управления тикетами на основе бизнес-потребностей</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Управление типами тикетов и категориями</h5>
+                  <p class="text-muted mb-3">Создание различных категорий тикетов и правил обработки на основе бизнес-потребностей</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Скоро</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-users-alt h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Командная работа</h5>
+                  <p class="text-muted mb-3">Настройка ролей команды, разрешений и совместных рабочих процессов</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Скоро</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-chart-line h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Статистические отчеты и аналитика</h5>
+                  <p class="text-muted mb-3">Создание аналитических отчетов для статуса обработки тикетов и эффективности</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Скоро</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link-h h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Интеграция с системой CRM</h5>
+                  <p class="text-muted mb-3">Безупречная интеграция с существующими системами CRM для обмена данными</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Скоро</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Extend End -->
+
+  <!-- CTA Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Готовы использовать систему управления тикетами NocoBase?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Разверните выделенную демонстрацию управления тикетами за 1 минуту. Как важное дополнение к CRM, достигните полной системы обслуживания клиентов для улучшения удовлетворенности клиентов и эффективности обслуживания.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Демо
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>Развернуть на своем сервере
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* Ticketing management system styles - reference CRM page styles */
+#ticket-demo-wrap {
+  position: relative;
+}
+
+/* Commercial plugin card styles */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+.plugin-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+</style> 
