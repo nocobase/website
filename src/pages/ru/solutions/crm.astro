@@ -393,9 +393,9 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
         {crmPlugins.map((plugin) => {
           if (!plugin) return null;
           
-          const displayName = plugin.name || plugin.name_cn;
-          const displayDescription = plugin.description || plugin.description_cn;
-          const docsUrl = plugin.docs || plugin.docs_cn;
+          const displayName = plugin.name_ru || plugin.name;
+          const displayDescription = plugin.description_ru || plugin.description;
+          const docsUrl = plugin.docs_ru || plugin.docs;
           
           return (
             <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
@@ -412,16 +412,16 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
                     {plugin.commercial && (
                       <div class="plugin-footer">
                         <h6 class="text-primary mb-0">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование, 1 год обновлений</span><br>
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + 1 год обновлений</span><br>
                           <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                          <span class="text-muted" style="font-size: 0.85rem;"> {plugin.price_1_year_rub ? plugin.price_1_year_rub.toLocaleString('ru-RU') : '?'} ₽ </span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование и обновления</span><br>
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + обновления навсегда</span><br>
                           <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price || 0}</span>
+                          <span class="text-muted" style="font-size: 0.85rem;">{plugin.price_rub ? plugin.price_rub.toLocaleString('ru-RU') : '?'} ₽</span>
                         </h6>
                       </div>
                     )}
