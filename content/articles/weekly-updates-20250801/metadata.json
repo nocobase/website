@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、環境変数を介したリクエストボディのサイズ制限設定のサポート、Microsoft ライブプレビューによるオフィスファイルのプレビューサポート、その他の機能強化が含まれています。",
   "slug": "weekly-updates-20250801",
   "publishedAt": "2025-08-01T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-01T07:54:20.152Z"
+  "updatedAt": "2025-08-03T05:38:56.384Z"
 }
