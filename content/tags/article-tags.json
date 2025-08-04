@@ -4158,5 +4158,25 @@
     "title_cn": "模型上下文协议",
     "title_ja": "モデルコンテキストプロトコル",
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-08-04T13:51:46.093Z",
+    "updatedAt": "2025-08-04T13:51:46.093Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 214,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 212,
+    "title": "SaaS",
+    "title_cn": null,
+    "title_ja": null,
+    "updatedById": 3
   }
 ]
