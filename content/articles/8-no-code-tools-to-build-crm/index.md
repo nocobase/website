@@ -55,7 +55,7 @@ In the sections that follow, I’ll recommend 8 no-code tools—divided into **o
 
 ![NocoBase](https://static-docs.nocobase.com/3-9ir1rj.PNG)
 
-If you want to build a CRM that truly follows *your* logic—rather than being locked into rigid templates and predefined workflows—NocoBase is a platform worth serious consideration.
+If you want to build a CRM that truly follows your logic—rather than being locked into rigid templates and predefined workflows—NocoBase is a platform worth serious consideration.
 
 NocoBase is a data-model-driven no-code development platform built for medium to high-complexity business systems. It offers flexible data modeling, visual interface design, and a plugin-based architecture, making it ideal for creating fully customized CRM systems.
 
@@ -87,7 +87,7 @@ Recently, the NocoBase team also released a preconfigured [CRM solution](https:/
 
 ![Baserow.png](https://static-docs.nocobase.com/4-u5yuhj.png)
 
-Baserow is a spreadsheet-style data modeling platform and one of the most well-known open-source alternatives to Airtable. It offers a lightweight, self-hostable no-code experience—ideal for quickly building clean, table-based CRM systems.
+Baserow is a spreadsheet-style data modeling platform and one of the most well-known open-source alternatives to Airtable. It offers a lightweight, self-hostable no-code experience—ideal for quickly building clean, table-based [CRM systems](https://baserow.io/templates/lightweight-crm).
 
 Primarily positioned as a no-code database tool, Baserow is especially well-suited as a *starting point* for small to mid-sized teams looking to set up a practical, easy-to-use CRM.
 
@@ -117,7 +117,7 @@ Primarily positioned as a no-code database tool, Baserow is especially well-suit
 
 ![Appsmith.png](https://static-docs.nocobase.com/5-bj9oq0.png)
 
-Strictly speaking, Appsmith is a **low-code** rather than a no-code tool. As an open-source platform focused on building internal tools, it offers a rich set of drag-and-drop components, flexible data source integrations, and JavaScript extensibility—making it a strong choice for development teams building custom CRM frontends.
+Strictly speaking, Appsmith is a **low-code** rather than a no-code tool. As an open-source platform focused on building internal tools, it offers a rich set of drag-and-drop components, flexible data source integrations, and JavaScript extensibility—making it a strong choice for development teams building custom [CRM frontends](https://www.appsmith.com/use-case/custom-crm).
 
 While Appsmith is more geared toward frontend construction, it allows you to connect your own database and build a complete customer management interface through a visual UI.
 
@@ -319,3 +319,12 @@ Still unsure? Here’s a comparison table to help guide your decision:
 Ultimately, the right tool isn’t the one that’s “best overall”—it’s the one that fits **your current stage**, **your team’s capabilities**, and **your CRM goals**.
 
 If you found this article helpful, feel free to share it with your team or community. Thanks for reading! ❤️
+
+**Related reading:**
+
+* [Top 11 Open-source CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-crm-projects)
+* [Top 10 Most-Starred Open-Source ERP and CRM on GitHub](https://www.nocobase.com/en/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
+* [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
+* [Top 4 Custom CRM Case Studies (Helping You Choose a More Flexible CRM Solution)](https://www.nocobase.com/en/blog/custom-crm-case-studies)
+* [NocoBase vs Salesforce: who is your ideal CRM?](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)
+* [4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love)](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)
