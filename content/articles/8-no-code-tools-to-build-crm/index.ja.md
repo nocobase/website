@@ -1,4 +1,4 @@
-先日Redditで、あるユーザーがCRMツールをいくつも試したという投稿を見かけました。Monday、Zoho、SuiteCRM、Odoo——そのどれもが使いにくかったそうです。
+先日Redditで、あるユーザーがCRMツールをいくつも試したという[投稿](https://www.reddit.com/r/CRM/comments/1m7agom/weve_used_monday_zoho_suitecrm_odoo_and_weve/)を見かけました。Monday、Zoho、SuiteCRM、Odoo——そのどれもが使いにくかったそうです。
 
 ![A user in the r/CRM community complained](https://static-docs.nocobase.com/1-l7rfcb.PNG)
 
@@ -57,7 +57,7 @@ GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocob
 
 NocoBaseは、データモデルを中心に設計されたノーコード開発基盤で、中〜高難度の業務アプリに対応。柔軟なデータ設計、ビジュアルなUI構築、プラグインによる機能拡張など、高度なカスタマイズ性が特長です。
 
-最近では、すぐに使えるCRMテンプレートも公開されており、ワンクリックで自社環境にコピーして、すぐに使い始めることができます。AirtableやNotionでのCRM構築に限界を感じていた方には、NocoBaseが次の選択肢になるかもしれません。
+最近では、すぐに使える[CRMテンプレート](https://www.nocobase.com/ja/solutions/crm)も公開されており、ワンクリックで自社環境にコピーして、すぐに使い始めることができます。AirtableやNotionでのCRM構築に限界を感じていた方には、NocoBaseが次の選択肢になるかもしれません。
 
 **CRM機能まとめ**
 
@@ -85,7 +85,7 @@ GitHub: [https://github.com/bram2w/baserow](https://github.com/bram2w/baserow)
 
 ![Baserow.png](https://static-docs.nocobase.com/4-u5yuhj.png)
 
-Baserowは、スプレッドシート感覚で使えるオープンソースのデータベースツールです。Airtableの代替としても広く知られており、軽量かつセルフホスティング可能なノーコード基盤として、シンプルなCRMの構築にぴったりです。
+Baserowは、スプレッドシート感覚で使えるオープンソースのデータベースツールです。Airtableの代替としても広く知られており、軽量かつセルフホスティング可能なノーコード基盤として、シンプルな[CRM](https://baserow.io/templates/lightweight-crm)の構築にぴったりです。
 
 操作感は表計算ツールに近く、特に中小規模のチームが手軽にCRMを立ち上げたいときに最適な選択肢といえるでしょう。
 
@@ -115,7 +115,7 @@ GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg
 
 ![Appsmith.png](https://static-docs.nocobase.com/5-bj9oq0.png)
 
-Appsmithはノーコードというより“ローコード”ツール。オープンソースで社内ツール向けに特化しており、豊富なコンポーネント、柔軟なデータ連携、そしてJavaScriptによる拡張が可能な点から、開発チームに人気のあるプラットフォームです。
+Appsmithはノーコードというより“ローコード”ツール。オープンソースで社内ツール向けに特化しており、豊富なコンポーネント、柔軟なデータ連携、そしてJavaScriptによる拡張が可能な点から、開発チームに人気の[あるプラットフォームです](https://www.appsmith.com/use-case/custom-crm)。
 
 特にフロントエンド構築に強く、自前のデータベースを接続すれば、ドラッグ＆ドロップのUIで顧客管理画面を手早く作ることができます。
 
@@ -204,7 +204,7 @@ Budibaseは、社内業務ツールに特化したオープンソースのノー
 * プロトタイプやMVP（最小実用製品）開発をすばやく行いたい場合
 * 複雑なアクセス制御や自動化が不要な初期段階のプロジェクト
 
-💡 関連記事：NocoBase vs Airtable – 柔軟性と拡張性に優れたオープンソース代替ツール
+💡 関連記事：[NocoBase vs Airtable：柔軟性の高いオープンソース代替ツール](https://www.nocobase.com/ja/blog/nocobase-vs-airtable)
 
 ### 2. Glide
 
@@ -323,3 +323,12 @@ Tadabaseは、中小企業向けに設計されたノーコード開発プラッ
 結論：**“一番いいツール”ではなく、“今のあなたのチームに合うツール”が正解です。**
 
 もしこの記事が役に立ったら、チームや仲間にシェアしてもらえると嬉しいです。読んでいただきありがとうございました ❤️
+
+**関連読み物：**
+
+* [GitHubで最も星を集めたオープンソースCRMプロジェクトトップ11 ](https://www.nocobase.com/ja/blog/github-open-source-crm-projects)
+* [GitHubで人気のオープンソースERP＆CRMプロジェクト10選 ](https://www.nocobase.com/ja/blog/top-10-most-starred-open-source-erp-and-crm-on-github)
+* [中小企業向け！軽量で使いやすいオープンソースCRMソフト4選 ](https://www.nocobase.com/ja/blog/the-best-4-crm-software-for-small-businesses)
+* [カスタムCRMの4つの実際の事例（より柔軟なCRM製品の選び方） ](https://www.nocobase.com/ja/blog/custom-crm-case-studies)
+* [NocoBase vs Salesforce: 理想のCRMを選ぶには？ ](https://www.nocobase.com/ja/blog/nocobase-vs-salesforce)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり） ](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
