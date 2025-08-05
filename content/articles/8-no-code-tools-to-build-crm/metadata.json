@@ -8,7 +8,7 @@
   "description_ja": "本稿では、ノーコードプラットフォームを使った適合型 CRM の構築手法を探り、オープンソースと SaaS ツールの違いを比較し、開発者向けに実用的な CRM ツールを 8 つ推奨します。",
   "slug": "8-no-code-tools-to-build-crm",
   "publishedAt": "2025-08-04T13:46:34.405Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -452,5 +452,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-05T05:01:05.819Z"
+  "updatedAt": "2025-08-05T05:50:34.541Z"
 }
