@@ -3,9 +3,9 @@
   "title": "8 No-Code Tools to Build a CRM（Open Source & SaaS Compared）",
   "title_cn": "8 款最适合搭建 CRM 的无代码工具推荐（开源 & SaaS）",
   "title_ja": "CRMを構築できるノーコードツール8選【オープンソースも】",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article explores approaches to building adaptive CRMs with no-code platforms, compares differences between open-source and SaaS tools, and recommends 8 practical CRM tools for developers.",
+  "description_cn": "本文探讨用零代码平台搭建适配 CRM 的思路，对比开源与 SaaS 工具差异，并推荐 8 款实用 CRM 工具供开发者参考。",
+  "description_ja": "本稿では、ノーコードプラットフォームを使った適合型 CRM の構築手法を探り、オープンソースと SaaS ツールの違いを比較し、開発者向けに実用的な CRM ツールを 8 つ推奨します。",
   "slug": "8-no-code-tools-to-build-crm",
   "publishedAt": "2025-08-04T13:46:34.405Z",
   "status": "drafted",
@@ -452,5 +452,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-04T14:09:27.182Z"
+  "updatedAt": "2025-08-05T04:26:47.115Z"
 }
