@@ -1,14 +1,14 @@
 {
   "id": 639,
-  "title": "NocoBase v1.9.0-alpha.5",
-  "title_cn": "NocoBase v1.9.0-alpha.5",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.9.0-alpha.5: Add signature-related configuration options",
+  "title_cn": "NocoBase v1.9.0-alpha.5：增加签名相关配置项",
+  "title_ja": "NocoBase v1.9.0-alpha.5：署名関連の設定オプションを追加",
   "description": "Release Note of v1.9.0-alpha.5",
   "description_cn": "v1.9.0-alpha.5 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.9.0-alpha.5 のリリースノート",
   "slug": "v1.9.0-alpha.5",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-08-05T02:39:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-08-05T04:36:03.640Z",
+        "updatedAt": "2025-08-05T04:36:03.640Z",
+        "articles_id": 639,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-08-05T04:34:30.114Z",
+    "updatedAt": "2025-08-05T04:34:30.119Z",
+    "id": 1642,
+    "title": "develop (1)",
+    "filename": "develop (1)-0cs074.png",
+    "extname": ".png",
+    "size": 76974,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(1)-0cs074.png",
+    "preview": "https://static-docs.nocobase.com/develop%20(1)-0cs074.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-05T02:39:55.721Z"
+  "updatedAt": "2025-08-05T04:36:03.628Z"
 }
