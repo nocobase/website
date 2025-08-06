@@ -1,0 +1,856 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// Import interactive demo data
+import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
+import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
+import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
+import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
+
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// Define plugins used in CRM
+const crmPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment", 
+  "Email Manager",
+  "Workflow: Approval event",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables",
+  "Block: Tree",
+  "Template print",
+  "Workflow: JSON query node",
+  "Workflow: Custom variable",
+  "Workflow: JSON variable mapping node"
+];
+
+// Find plugin by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get CRM related plugins
+const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// Debug info
+console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
+
+// Original data moved to JSON files
+---
+
+<Layout
+  title="no-code, гибкая и мощная CRM платформа"
+  description="Готова к использованию из коробки. Обеспечивает максимальные возможности настройки при полном контроле над данными. Вы можете расширять поля, блоки, функции и страницы на этой основе, чтобы полностью удовлетворить потребности вашего бизнеса."
+  keywords="NocoBase CRM, управление отношениями с клиентами, No-code CRM, открытая CRM, настраиваемая CRM"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">no-code, гибкая и мощная<br/>CRM платформа</h1>
+            <p class="para-desc text-muted">Готова к использованию из коробки с мощными возможностями настройки под ваши уникальные потребности. Расширяйте поля, блоки и страницы для создания идеального решения для вашего бизнеса — при полном контроле над данными.</p>
+            
+            <!-- Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Отрасли:</span>
+                  <span class="badge bg-soft-primary">Все отрасли</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Разработчик:</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Демо
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Развернуть на своем сервере
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- CRM Preview Video -->
+            <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
+              <video 
+                id="crm-preview-video"
+                class="w-100 rounded shadow"
+                poster="https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g.png"
+                preload="none"
+                style="cursor: pointer; max-height: 400px; object-fit: cover;"
+              >
+                <source src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/NocoBase-CRM-en-compress.mp4" type="video/mp4">
+                Ваш браузер не поддерживает HTML5 видео.
+              </video>
+              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
+                <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Что делает NocoBase CRM уникальной</h4>
+            <p class="para-desc mx-auto text-muted mb-0">В отличие от SaaS и других CRM систем, NocoBase CRM гибкая и полностью контролируемая</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-wrench rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Полностью no-code</h5>
+              <p class="text-muted mt-2">Не требуются навыки программирования для настройки CRM</p>
+              <i class="uil uil-wrench full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-database rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Охватывает общие функции CRM</h5>
+              <p class="text-muted mt-2">Управление клиентами, воронка продаж, отслеживание возможностей, управление контактами, email-коммуникация, процессы одобрения и многое другое</p>
+              <i class="uil uil-database full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Легко модифицируется и расширяется</h5>
+              <p class="text-muted mt-2">Поддерживает пользовательские поля, процессы и бизнес-логику, гибкая архитектура делает "вторичную разработку" простой</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Открытый код, полный контроль данных</h5>
+              <p class="text-muted mt-2">Полный контроль над кодом системы и данными, обеспечивая безопасность корпоративных данных</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Interactive Demo Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Попробуйте функции NocoBase CRM</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Быстрый опыт всего несколькими кликами</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">Визуализация данных</h5>
+              <!-- Interactive Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openDashboardDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-play me-2"></i>Интерактивное демо
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">Процесс конвертации лидов</h5>
+              <!-- Lead Conversion Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openLeadDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-user-plus me-2"></i>Интерактивное демо
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4">
+              <h5 class="mb-3">От возможности к заказу</h5>
+              <!-- Opportunity Conversion Demo Entry -->
+              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openOpportunityDemo()">
+                <!-- Background Image -->
+                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1.png'); background-size: cover; background-position: center;"></div>
+                <!-- Button -->
+                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
+                  <button class="btn btn-primary shadow">
+                    <i class="uil uil-money-bill me-2"></i>Интерактивное демо
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Interactive Demo End -->
+
+  <!-- Dashboard Demo Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="crm-demo-wrap">
+          <!-- Using Extension Feature Interactive Demo -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end crm-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Попробовать сейчас
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Скопировать на свой сервер
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Dashboard Demo Section End -->
+
+  <!-- CRM Tutorial and Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Учебник по разработке и расширению CRM</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Узнайте, как использовать NocoBase для создания и расширения профессиональных CRM систем</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-database h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Базовая настройка и кастомизация</h5>
+                <p class="text-muted text-center">Научитесь создавать модели данных, настраивать связи полей, конфигурировать разрешения и макеты интерфейса</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-pie h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Анализ данных и визуализация</h5>
+                <p class="text-muted text-center">Создавайте дашборды анализа данных продаж для мониторинга производительности и визуализации данных</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-setting h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Автоматизация процессов</h5>
+                <p class="text-muted text-center">Настройте рабочие процессы для автоматизации процессов продаж, рабочих процессов одобрения и бизнес-правил</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-link h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Интеграция и расширение системы</h5>
+                <p class="text-muted text-center">Интегрируйте сторонние системы, мобильную адаптацию и другие продвинутые функции расширения</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CRM Tutorial and Extension End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Коммерческие плагины используемые в CRM</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Ядро CRM работает на версии с открытым исходным кодом, коммерческие плагины добавляют функциональность</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- Dynamically generated plugin cards -->
+        {crmPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_ru || plugin.name;
+          const displayDescription = plugin.description_ru || plugin.description;
+          const docsUrl = plugin.docs_ru || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">От <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Подробности</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + 1 год обновлений</span><br>
+                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted" style="font-size: 0.85rem;"> {plugin.price_1_year_rub ? plugin.price_1_year_rub.toLocaleString('ru-RU') : '?'} ₽ </span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + обновления навсегда</span><br>
+                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted" style="font-size: 0.85rem;">{plugin.price_rub ? plugin.price_rub.toLocaleString('ru-RU') : '?'} ₽</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- Placeholder card for layout -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">Больше плагинов скоро</h6>
+                  <p class="text-muted small">Мы разрабатываем больше полезных коммерческих плагинов, следите за обновлениями</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/en/plugins-commercial" class="btn btn-primary me-3">Все коммерческие плагины</a>
+          <a href="/en/commercial" class="btn btn-outline-primary">Цены</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section bg-light" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Как использовать?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Три шага для быстрого развертывания NocoBase CRM в вашей среде</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Установить NocoBase</h5>
+                                  <p class="text-muted mt-2">Следуйте нашей документации по установке для развертывания NocoBase на вашем сервере</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">Посмотреть документацию по установке</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Скачать файл шаблона CRM</h5>
+                <p class="text-muted mt-2">Получите полный файл шаблона для системы NocoBase CRM, поддерживающий два формата</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/crm_demo_20250711_sql.zip" class="text-muted small" style="text-decoration: underline !important;">Скачать SQL файл</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/crm_demo_20250711.nbdata" class="btn btn-outline-primary">Скачать файл резервной копии (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Восстановить в системе</h5>
+                <p class="text-muted mt-2">Импортируйте файл шаблона в вашу систему NocoBase для завершения развертывания</p>
+              </div>
+              <div class="mt-3">
+                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Учебник по восстановлению</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Готовы использовать NocoBase CRM?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Разверните выделенное CRM демо за 1 минуту. От настройки структур данных до макетов интерфейса и логики процессов — все это выполняется через визуальную конфигурацию NocoBase без написания ни одной строки кода.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Живое демо
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>Развернуть на своем сервере
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <!-- Dashboard Demo Modal -->
+  <div id="dashboard-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeDashboardDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{dashboardDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeDashboardDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dashboard Demo Modal End -->
+
+  <!-- Lead Conversion Demo Modal -->
+  <div id="lead-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeLeadDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{leadConversionDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeLeadDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lead Conversion Demo Modal End -->
+
+  <!-- Opportunity Conversion Demo Modal -->
+  <div id="opportunity-demo-modal" class="demo-modal" style="display: none;">
+    <div class="demo-modal-overlay" onclick="closeOpportunityDemo()"></div>
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h4 class="modal-title">{opportunityDemoGuides.title}</h4>
+        <button type="button" class="demo-modal-close" onclick="closeOpportunityDemo()">
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+      <div class="demo-modal-body">
+        <div class="demo-content-wrapper">
+          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Opportunity Conversion Demo Modal End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* Interactive Demo Card Styles */
+.interactive-demo-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.interactive-demo-card:hover {
+  transform: translateY(-2px);
+  border-color: #2f55d4;
+  box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
+}
+
+/* Modal Styles */
+.demo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.demo-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.demo-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 95vw;
+  max-height: 90vh;
+  width: 1200px;
+  overflow: hidden;
+  animation: slideInUp 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.demo-modal-header .modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.demo-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.demo-modal-close:hover {
+  color: #dc3545;
+}
+
+.demo-modal-body {
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.demo-content-wrapper {
+  margin-top: 0;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .demo-modal-content {
+    width: 95vw;
+    margin: 1rem;
+    max-height: 95vh;
+  }
+  
+  .demo-modal-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .demo-modal-body {
+    padding: 1rem;
+  }
+}
+</style>
+
+<script is:inline>
+// Modal control functions - defined in global scope
+function openDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeDashboardDemo() {
+  const modal = document.getElementById('dashboard-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Lead conversion demo modal control functions
+function openLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeLeadDemo() {
+  const modal = document.getElementById('lead-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Opportunity conversion demo modal control functions
+function openOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Wait for modal to show then initialize interactive demo
+    setTimeout(function() {
+      // Create independent instance for modal demo
+      if (window.InteractiveDemo) {
+        new window.InteractiveDemo(modal);
+      }
+    }, 100);
+  }
+}
+
+function closeOpportunityDemo() {
+  const modal = document.getElementById('opportunity-demo-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('crm-preview-video');
+  const playButton = document.getElementById('play-button');
+  
+  if (!video || !playButton) return;
+  
+  // Only trigger play when clicking the big play button initially
+  playButton.addEventListener('click', function() {
+    // Add control bar
+    video.setAttribute('controls', '');
+    video.setAttribute('controlslist', 'nodownload');
+    
+    // Start playing and hide play button
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  // Show play button when video ends, remove control bar
+  video.addEventListener('ended', function() {
+    playButton.style.display = 'block';
+    video.removeAttribute('controls');
+  });
+
+  // ESC key to close modals
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeDashboardDemo();
+      closeLeadDemo();
+      closeOpportunityDemo();
+    }
+  });
+});
+</script> 
