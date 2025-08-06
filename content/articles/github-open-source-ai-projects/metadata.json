@@ -3,9 +3,9 @@
   "title": "Top 20 Open Source AI Projects with the Most GitHub Stars",
   "title_cn": "GitHub 上 Star 数量前 20 的开源 AI 项目",
   "title_ja": "GitHubで最もスターを獲得したオープンソースAIプロジェクト20選",
-  "description": "OpenAI released two open-source large language models, sparking excitement across the developer community. This article highlights 20 of the most popular open-source AI projects on GitHub — spanning intelligent agents, multimodal generation, chat interfaces, and more — to help you dive into the AI world with confidence and speed.",
+  "description": "OpenAI released two open-source large language models, sparking excitement across the developer community. This article highlights 20 of the most popular open-source AI projects on GitHub to help you dive into the AI world with confidence and speed.",
   "description_cn": "OpenAI 重磅发布两个开源大模型，引爆开发者圈！本文精选 GitHub 上最受欢迎的 20 个开源 AI 项目，涵盖智能代理、多模态生成、聊天界面等热门方向，一文带你高效上手 AI 领域！",
-  "description_ja": "OpenAIが2つの大規模オープンソースモデルを発表し、開発者コミュニティで大きな話題に！本記事では、GitHubで人気のオープンソースAIプロジェクト20選を厳選紹介。インテリジェントエージェント、マルチモーダル生成、チャットインターフェースなど注目分野を網羅し、AIの世界に素早く入門できます！",
+  "description_ja": "OpenAIが2つの大規模オープンソースモデルを発表し、開発者コミュニティで大きな話題に！本記事では、GitHubで人気のオープンソースAIプロジェクト20選を厳選紹介。",
   "slug": "github-open-source-ai-projects",
   "publishedAt": "2025-08-06T10:56:26.185Z",
   "status": "drafted",
@@ -280,5 +280,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-06T11:47:23.539Z"
+  "updatedAt": "2025-08-06T12:07:48.855Z"
 }
