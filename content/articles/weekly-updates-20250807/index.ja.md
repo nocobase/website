@@ -64,6 +64,14 @@
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
+### [v1.9.0-alpha.7](https://www.nocobase.com/ja/blog/v1.9.0-alpha.7)
+
+*リリース日：2025-08-06*
+
+#### 🐛 不具合修正
+
+* **[メールマネージャー]** 再同期をサポート @jiannx
+
 ### [v1.9.0-alpha.6](https://www.nocobase.com/ja/blog/v1.9.0-alpha.6)
 
 *リリース日：2025-08-06*
