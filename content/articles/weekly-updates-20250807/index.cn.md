@@ -68,6 +68,14 @@
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
+### [v1.9.0-alpha.7](https://www.nocobase.com/cn/blog/v1.9.0-alpha.7)
+
+*发布时间：2025-08-06*
+
+#### 🐛 修复
+
+- **[邮件管理]** 支持重新同步 by @jiannx
+
 ### [v1.9.0-alpha.6](https://www.nocobase.com/cn/blog/v1.9.0-alpha.6)
 
 *发布时间：2025-08-06*
