@@ -3,9 +3,9 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "description": "This week’s updates include: added signature-related configuration options, email manager support for resync, and more.",
+  "description_cn": "本周更新包括：增加签名相关配置项，邮件管理支持重新同步等。",
+  "description_ja": "今週の更新では、署名関連の設定オプションの追加、メールマネージャーによる再同期のサポート、その他多数です。",
   "slug": "weekly-updates-20250807",
   "publishedAt": "2025-08-07T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-07T03:54:17.257Z"
+  "updatedAt": "2025-08-07T03:58:15.400Z"
 }
