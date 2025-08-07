@@ -1,1 +1,3 @@
-fetch is not defined
+### 🐛 不具合修正
+
+* **[メールマネージャー]** 再同期をサポート @jiannx
