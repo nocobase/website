@@ -66,6 +66,14 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
+### [v1.9.0-alpha.7](https://www.nocobase.com/en/blog/v1.9.0-alpha.7)
+
+*Release date: 2025-08-06*
+
+#### 🐛 Bug Fixes
+
+- **[Email manager]** support resync by @jiannx
+
 ### [v1.9.0-alpha.6](https://www.nocobase.com/en/blog/v1.9.0-alpha.6)
 
 *Release date: 2025-08-06*
