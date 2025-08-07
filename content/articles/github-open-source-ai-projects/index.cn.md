@@ -29,7 +29,7 @@
 
 ## No.1: AutoGPT
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGY2NjU2Yzg4MjYzODk2ZWM4MzM5OWU0ZmE0NzA4ZTlfRjZBb200YmhjTWJ6WlRiaFBpM210blRuVmVnaFNYR3pfVG9rZW46WE9Wc2JvdGtKbzVkYUJ4SVAyWWNRanFabmxlXzE3NTQ0NzgwNTE6MTc1NDQ4MTY1MV9WNA)
+![AutoGPT](https://static-docs.nocobase.com/2-5k8uwc.PNG)
 
 * GitHub Star: 177k
 * GitHub: https://github.com/Significant-Gravitas/AutoGPT
