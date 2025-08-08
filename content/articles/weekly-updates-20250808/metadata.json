@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、署名関連の設定オプションの追加、メールマネージャーによる再同期のサポート、その他多数です。",
   "slug": "weekly-updates-20250808",
   "publishedAt": "2025-08-08T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-07T05:31:19.030Z"
+  "updatedAt": "2025-08-08T03:41:14.976Z"
 }
