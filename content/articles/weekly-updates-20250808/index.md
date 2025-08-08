@@ -80,7 +80,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 #### 🚀 Improvements
 
-- **[Workflow]** Show normal title when disabled ([#7339](https://github.com/nocobase/nocobase/pull/7339)) by @mytharcher
+- **[Workflow]** The workflow title in the task card will no longer be displayed with a strikethrough, even if the corresponding version is disabled ([#7339](https://github.com/nocobase/nocobase/pull/7339)) by @mytharcher
 
 #### 🐛 Bug Fixes
 
