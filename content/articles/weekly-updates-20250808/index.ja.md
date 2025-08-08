@@ -78,7 +78,7 @@
 
 #### 🚀 機能改善
 
-* **[ワークフロー]** 無効化時に通常のタイトルを表示（[#7339](https://github.com/nocobase/nocobase/pull/7339)）@mytharcher
+* **[ワークフロー]** ToDoカード内のワークフロータイトルは、対応するバージョンが無効になっても取り消し線で表示されなくなります（[#7339](https://github.com/nocobase/nocobase/pull/7339)）@mytharcher
 
 #### 🐛 不具合修正
 
