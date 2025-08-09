@@ -8,7 +8,7 @@
   "description_ja": "本稿では、複数の無料オープンソースのノーコードデータベースツールを紹介し、無料版のデータ容量、オープンソース版と商用版の違い、チーム導入の適合性を比較し、個人またはチームのツール選定に参考を提供します。",
   "slug": "6-open-source-no-code-database-tools",
   "publishedAt": "2025-08-09T12:06:27.193Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-08-09T12:44:23.203Z"
+  "updatedAt": "2025-08-09T13:18:13.936Z"
 }
