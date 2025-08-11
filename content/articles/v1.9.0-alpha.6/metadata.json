@@ -1,8 +1,8 @@
 {
   "id": 640,
   "title": "NocoBase v1.9.0-alpha.6: Bug fixes",
-  "title_cn": "NocoBase v1.9.0-alpha.6：修复问题",
-  "title_ja": "NocoBase v1.9.0-alpha.6：問題を修正",
+  "title_cn": "NocoBase v1.9.0-alpha.6：缺陷修复",
+  "title_ja": "NocoBase v1.9.0-alpha.6：不具合修正",
   "description": "Release Note of v1.9.0-alpha.6",
   "description_cn": "v1.9.0-alpha.6 更新日志",
   "description_ja": "v1.9.0-alpha.6 のリリースノート",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-08T02:10:54.628Z"
+  "updatedAt": "2025-08-11T07:06:09.073Z"
 }
