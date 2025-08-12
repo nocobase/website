@@ -88,3 +88,13 @@ Lukardi 使用 NocoBase 搭建的这套系统，实现了真正的业务效率�
 也有越来越多像 Lukardi 这样的企业服务商，正在将 NocoBase 融入他们的交付体系，为各行各业构建定制化的解决方案。从内部管理系统，到面向客户的业务平台。
 
 这正是我们最希望看到的事情：NocoBase 帮助专业的团队，用更少的资源，服务更多真实而复杂的需求。未来，我们也期待看到更多用 NocoBase 交付的项目，在不同场景中持续落地。
+
+
+**更多 NocoBase 的用户故事：**
+
+* [年产量 18.5 亿，伯恩光学背后的数字敏捷工厂](https://www.nocobase.com/cn/blog/bielcrystal)
+* [卓正医疗如何用 NocoBase 搭建“家庭医生式”服务体系？](https://www.nocobase.com/cn/blog/distinct-healthcare)
+* [在禧玛诺工厂，一位工程师的零代码实践](https://www.nocobase.com/cn/blog/shimano)
+* [日本房产中介龙头为何放弃 Salesforce，转向开源平台 NocoBase？](https://www.nocobase.com/cn/blog/century-21)
+* [Second-Brain 如何用 NocoBase 为金融企业构建 AI 系统](https://www.nocobase.com/cn/blog/second-brain)
+* [全球第一 AI 录音笔品牌，如何搭建运营与客服系统？](https://www.nocobase.com/cn/blog/plaud)
