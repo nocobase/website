@@ -20,7 +20,7 @@ As Okechamp scaled its operations across Poland and the Netherlands, coordinatin
 
 In Poland, the company manages peat extraction, fresh mushroom farming, and primary processing. Meanwhile, its Dutch facilities focus on advanced processing and mushroom concentrate production. Together, they form an end-to-end supply chain—from cultivation to distribution.
 
-![Logistics Scheduling](https://static-docs.nocobase.com/3-aketgp.PNG)
+![Logistics Scheduling](https://static-docs.nocobase.com/20250812-212649-pp8ale.jpg)
 
 Every day, large volumes of goods move between these sites, putting intense pressure on the company’s ability to schedule and coordinate logistics efficiently.
 
@@ -94,7 +94,6 @@ More firms like Lukardi are making NocoBase a core part of their delivery stack�
 That’s exactly what we set out to achieve with NocoBase: helping skilled teams deliver real, complex solutions with fewer resources.
 
 And we can’t wait to see more NocoBase-powered systems go live, solving tough problems in real-world settings.
-
 
 **More Customer Stories:**
 
