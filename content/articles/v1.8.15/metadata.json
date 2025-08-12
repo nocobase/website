@@ -1,14 +1,14 @@
 {
   "id": 648,
-  "title": "NocoBase v1.8.15: ",
-  "title_cn": "NocoBase v1.8.15：",
-  "title_ja": "NocoBase v1.8.15：",
+  "title": "NocoBase v1.8.15: Optimize performance when switching popup tabs",
+  "title_cn": "NocoBase v1.8.15：优化切换弹窗标签页的性能",
+  "title_ja": "NocoBase v1.8.15：ポップアップタブ切り替え時のパフォーマンスを最適化",
   "description": "Release Note of v1.8.15",
   "description_cn": "v1.8.15 更新日志",
   "description_ja": "v1.8.15 のリリースノート",
   "slug": "v1.8.15",
   "publishedAt": "2025-08-11T16:27:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-12T01:10:59.385Z"
+  "updatedAt": "2025-08-12T02:53:14.678Z"
 }
