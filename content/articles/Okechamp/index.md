@@ -94,3 +94,13 @@ More firms like Lukardi are making NocoBase a core part of their delivery stack�
 That’s exactly what we set out to achieve with NocoBase: helping skilled teams deliver real, complex solutions with fewer resources.
 
 And we can’t wait to see more NocoBase-powered systems go live, solving tough problems in real-world settings.
+
+
+**More Customer Stories:**
+
+* [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
+* [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
+* [A No-Code Journey Inside SHIMANO](https://www.nocobase.com/en/blog/shimano)
+* [What made Japan’s leading real estate firm switch from Salesforce to open-source NocoBase?](https://www.nocobase.com/en/blog/century-21)
+* [How Second-Brain built an AI system for financial institutions with NocoBase](https://www.nocobase.com/en/blog/second-brain)
+* [How the No.1 AI Voice Recorder Brand Built Its Internal Systems](https://www.nocobase.com/en/blog/plaud)
