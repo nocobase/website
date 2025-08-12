@@ -20,7 +20,7 @@
 
 每天，大量货物在各地基地之间高效流转，对物流调度系统的响应速度和协调能力提出了更高要求。
 
-![Logistics Scheduling](https://static-docs.nocobase.com/3-aketgp.PNG)
+![Logistics Scheduling](https://static-docs.nocobase.com/20250812-212649-pp8ale.jpg)
 
 在之前的实际运营中，他们面临着四个核心问题：
 
@@ -88,7 +88,6 @@ Lukardi 使用 NocoBase 搭建的这套系统，实现了真正的业务效率�
 也有越来越多像 Lukardi 这样的企业服务商，正在将 NocoBase 融入他们的交付体系，为各行各业构建定制化的解决方案。从内部管理系统，到面向客户的业务平台。
 
 这正是我们最希望看到的事情：NocoBase 帮助专业的团队，用更少的资源，服务更多真实而复杂的需求。未来，我们也期待看到更多用 NocoBase 交付的项目，在不同场景中持续落地。
-
 
 **更多 NocoBase 的用户故事：**
 
