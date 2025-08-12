@@ -91,3 +91,13 @@ Lukardi のように、NocoBase をデリバリースタックの中核に据え
 これこそ、NocoBase が目指してきたこと—限られたリソースで、熟練チームが現実的で複雑な課題解決を実現することです。
 
 そして今後も、実社会の難題を解決する NocoBase 搭載システムの誕生を心待ちにしています。
+
+
+**もっと多くのカスタマーストーリー：**
+
+* [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
+* [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
+* [SHIMANOの現場から始まるノーコードの旅](https://www.nocobase.com/ja/blog/shimano)
+* [なぜ日本の大手不動産会社はSalesforceからオープンソースのNocoBaseに乗り換えたのか？](https://www.nocobase.com/ja/blog/century-21)
+* [Second-Brain は NocoBase を使って、金融機関向けの AI システムをこう作った](https://www.nocobase.com/ja/blog/second-brain)
+* [AIボイスレコーダー世界No.1企業に学ぶ、急成長を支える社内システム構築術](https://www.nocobase.com/ja/blog/plaud)
