@@ -8,7 +8,7 @@
   "description_ja": "Lukardi は、NocoBase を基にヨーロッパのキノコ大手 Okechamp のためにカスタム物流スケジューリングシステムを構築し、わずか 6 週間でローンチしました。",
   "slug": "okechamp",
   "publishedAt": "2025-08-12T10:54:29.860Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-12T13:03:02.498Z"
+  "updatedAt": "2025-08-12T13:35:28.321Z"
 }
