@@ -22,7 +22,7 @@ Okechamp がポーランドとオランダに拠点を広げる中で、物流�
 
 日々、大量の貨物が両国間を移動するため、効率的なスケジュール調整能力には大きな負荷がかかります。
 
-![Logistics Scheduling](https://static-docs.nocobase.com/3-aketgp.PNG)
+![Logistics Scheduling](https://static-docs.nocobase.com/20250812-212649-pp8ale.jpg)
 
 システム刷新前、Okechamp では次の4つの課題がありました：
 
@@ -91,7 +91,6 @@ Lukardi のように、NocoBase をデリバリースタックの中核に据え
 これこそ、NocoBase が目指してきたこと—限られたリソースで、熟練チームが現実的で複雑な課題解決を実現することです。
 
 そして今後も、実社会の難題を解決する NocoBase 搭載システムの誕生を心待ちにしています。
-
 
 **もっと多くのカスタマーストーリー：**
 
