@@ -3,9 +3,9 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week’s updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "description": "This week’s updates bring optimized popup-tab switching performance, bug fixes, and more.",
+  "description_cn": "本周更新包括：优化切换弹窗标签页的性能，缺陷修复等。",
+  "description_ja": "今週の更新では、ポップアップタブの切り替えパフォーマンスを最適化し、バグを修正するなど、さらに多くの改善を加えました。",
   "slug": "weekly-updates-20250814",
   "publishedAt": "2025-08-14T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-13T10:05:58.637Z"
+  "updatedAt": "2025-08-13T14:26:09.473Z"
 }
