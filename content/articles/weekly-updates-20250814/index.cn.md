@@ -14,105 +14,82 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.8.14](https://www.nocobase.com/cn/blog/v1.8.14)
+### [v1.8.15](https://www.nocobase.com/cn/blog/v1.8.15)
 
-*发布时间：2025-08-05*
-
-#### 🐛 修复
-
-- **[client]** 修复变量原始字符串会随表单提交的问题 ([#7337](https://github.com/nocobase/nocobase/pull/7337)) by @zhangzhonghe
-- **[工作流：审批]** 为加签和转签的任务增加标题 by @mytharcher
-
-### [v1.8.13](https://www.nocobase.com/cn/blog/v1.8.13)
-
-*发布时间：2025-08-04*
-
-#### 🎉 新特性
-
-- **[认证：SAML 2.0]** 增加签名相关配置项 by @2013xile
+*发布时间：2025-08-12*
 
 #### 🚀 优化
 
-- **[工作流：JavaScript 节点]** 将日志改为使用基础缓存以避免集群模式的问题 by @mytharcher
+- **[client]**
+
+  - 新增“前天”日期变量支持 ([#7359](https://github.com/nocobase/nocobase/pull/7359)) by @katherinehhh
+  - 优化切换弹窗标签页的性能 ([#7353](https://github.com/nocobase/nocobase/pull/7353)) by @zhangzhonghe
+- **[工作流]**
+
+  - 修复不稳定的测试用例 ([#7349](https://github.com/nocobase/nocobase/pull/7349)) by @mytharcher
+  - 待办卡片中的工作流标题，即使对应版本禁用后也不再展示删除线 ([#7339](https://github.com/nocobase/nocobase/pull/7339)) by @mytharcher
+- **[Office 文件预览]** 为预览 `.odt` 文件增加支持 ([#7347](https://github.com/nocobase/nocobase/pull/7347)) by @mytharcher
+- **[备份管理器]** 优化 mysql 数据库备份操作性能 by @gchust
 
 #### 🐛 修复
 
 - **[client]**
 
-  - 修复 操作面板鼠标移上去 tooltip 显示 [object Object] 的问题 ([#7322](https://github.com/nocobase/nocobase/pull/7322)) by @katherinehhh
-  - 当在筛选表单中使用变量设置字段默认值，且变量值为空时，输入框中会显示变量的原始字符串 ([#7335](https://github.com/nocobase/nocobase/pull/7335)) by @zhangzhonghe
-- **[数据表：树]** 修复树表路径同步逻辑 ([#7330](https://github.com/nocobase/nocobase/pull/7330)) by @ChimingLiu
+  - 修复表单的多列布局在移动端没有变成单列布局的问题 ([#7355](https://github.com/nocobase/nocobase/pull/7355)) by @zhangzhonghe
+  - 修复批量删除数据表时的错误 ([#7345](https://github.com/nocobase/nocobase/pull/7345)) by @aaaaaajie
+  - 修复单独配置权限时未默认选中已保存数据范围的问题。 ([#7288](https://github.com/nocobase/nocobase/pull/7288)) by @aaaaaajie
+- **[工作流]**
 
-### [v1.8.12](https://www.nocobase.com/cn/blog/v1.8.12)
+  - 重构添加节点的菜单，并修复其导致的工作流画布渲染的性能问题 ([#7363](https://github.com/nocobase/nocobase/pull/7363)) by @mytharcher
+  - 修复获取单条待办项目时的筛选条件错误问题 ([#7366](https://github.com/nocobase/nocobase/pull/7366)) by @mytharcher
+  - 修复字段选择框的搜索关键词匹配问题 ([#7356](https://github.com/nocobase/nocobase/pull/7356)) by @mytharcher
+  - 避免应用停止时调用队列报错 ([#7348](https://github.com/nocobase/nocobase/pull/7348)) by @mytharcher
+- **[通知：站内信]** 修复接收到站内信消息但未弹出展示的问题 ([#7364](https://github.com/nocobase/nocobase/pull/7364)) by @mytharcher
+- **[移动端]** 修复移动端日期组件使用日期变量限制可选范围时日期显示异常的问题 ([#7362](https://github.com/nocobase/nocobase/pull/7362)) by @katherinehhh
+- **[文件管理器]** 为文件表增加 `storageId` 字段以支持权限配置 ([#7351](https://github.com/nocobase/nocobase/pull/7351)) by @mytharcher
+- **[工作流：并行分支节点]** 修复 MySQL 下并行分支节点在恢复执行后假死的问题 ([#7346](https://github.com/nocobase/nocobase/pull/7346)) by @mytharcher
+- **[工作流：抄送]** 修复区块无法移除的问题 ([#7338](https://github.com/nocobase/nocobase/pull/7338)) by @mytharcher
+- **[Office 文件预览]** 支持 URL 中包含 `.docx`, `.xlsx` 和 `.pptx` 的文件预览 ([#7336](https://github.com/nocobase/nocobase/pull/7336)) by @mytharcher
+- **[数据可视化]** 图表区块中筛选日期字段设置默认值为日期变量时显示不正确的问题 ([#7291](https://github.com/nocobase/nocobase/pull/7291)) by @katherinehhh
+- **[工作流：审批]**
 
-*发布时间：2025-08-01*
-
-#### 🎉 新特性
-
-- **[client]** 为 Input、TextArea、URL 和 InputNumber 组件添加了"自动聚焦"选项，启用后输入框在页面初始渲染时会自动获得焦点 ([#7320](https://github.com/nocobase/nocobase/pull/7320)) by @zhangzhonghe
-
-#### 🐛 修复
-
-- **[client]**
-
-  - 修复文件预览在空 URL 时报错的问题 ([#7315](https://github.com/nocobase/nocobase/pull/7315)) by @mytharcher
-  - 为本地文件预览补全 URL ([#7314](https://github.com/nocobase/nocobase/pull/7314)) by @mytharcher
-- **[utils]** 修复 parseDate 解析时间变量时区处理错误的问题 ([#7318](https://github.com/nocobase/nocobase/pull/7318)) by @katherinehhh
-- **[undefined]** 将新插件加入到预置集合 ([#7319](https://github.com/nocobase/nocobase/pull/7319)) by @mytharcher
-- **[文件管理器]** 修复上传文件时存储引擎外键的权限问题 ([#7316](https://github.com/nocobase/nocobase/pull/7316)) by @mytharcher
-- **[工作流]** 修复执行器退出时对 `undefined` 结果的处理 ([#7317](https://github.com/nocobase/nocobase/pull/7317)) by @mytharcher
-- **[工作流：动态表达式计算节点]** 修复旧 API 导致的错误 ([#7321](https://github.com/nocobase/nocobase/pull/7321)) by @mytharcher
-- **[工作流：子流程]** 修复子流程假死的问题 by @mytharcher
+  - 修复审批原始详情区块中联动规则失效的问题 by @mytharcher
+  - 修复提交草稿时更新关系字段的问题 by @mytharcher
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v1.9.0-alpha.7](https://www.nocobase.com/cn/blog/v1.9.0-alpha.7)
+### [v1.9.0-alpha.10](https://www.nocobase.com/cn/blog/v1.9.0-alpha.10)
 
-*发布时间：2025-08-06*
+*发布时间：2025-08-09*
 
 #### 🐛 修复
 
-- **[邮件管理]** 支持重新同步 by @jiannx
+- **[邮件管理]** 富文本支持软换行 by @jiannx
 
-### [v1.9.0-alpha.6](https://www.nocobase.com/cn/blog/v1.9.0-alpha.6)
+### [v1.9.0-alpha.9](https://www.nocobase.com/cn/blog/v1.9.0-alpha.9)
 
-*发布时间：2025-08-06*
+*发布时间：2025-08-09*
+
+#### 🚀 Improvements
+
+- **[Workflow]** Fix unstable test case ([#7349](https://github.com/nocobase/nocobase/pull/7349)) by @mytharcher
+
+#### 🐛 Bug Fixes
+
+- **[client]** Fix the issue where multi-column form layout doesn't convert to single-column layout on mobile devices ([#7355](https://github.com/nocobase/nocobase/pull/7355)) by @zhangzhonghe
+- **[Workflow]** Fix the issue of keyword matching in the field select ([#7356](https://github.com/nocobase/nocobase/pull/7356)) by @mytharcher
+
+### [v1.9.0-alpha.8](https://www.nocobase.com/cn/blog/v1.9.0-alpha.8)
+
+*发布时间：2025-08-09*
 
 #### 🚀 优化
 
-- **[工作流]** 待办卡片中的工作流标题，即使对应版本禁用后也不再展示删除线 ([#7339](https://github.com/nocobase/nocobase/pull/7339)) by @mytharcher
+- **[工作流]** 修复不稳定的测试用例 ([#7349](https://github.com/nocobase/nocobase/pull/7349)) by @mytharcher
 
 #### 🐛 修复
 
-- **[数据可视化]** 图表区块中筛选日期字段设置默认值为日期变量时显示不正确的问题 ([#7291](https://github.com/nocobase/nocobase/pull/7291)) by @katherinehhh
-- **[工作流：抄送]** 修复区块无法移除的问题 ([#7338](https://github.com/nocobase/nocobase/pull/7338)) by @mytharcher
-- **[邮件管理]** 手动区分转发和回复 by @jiannx
-
-### [v1.9.0-alpha.5](https://www.nocobase.com/cn/blog/v1.9.0-alpha.5)
-
-*发布时间：2025-08-05*
-
-#### 🎉 新特性
-
-- **[client]** 为 Input、TextArea、URL 和 InputNumber 组件添加了"自动聚焦"选项，启用后输入框在页面初始渲染时会自动获得焦点 ([#7320](https://github.com/nocobase/nocobase/pull/7320)) by @zhangzhonghe
-- **[认证：SAML 2.0]** 增加签名相关配置项 by @2013xile
-
-#### 🚀 优化
-
-- **[工作流：JavaScript 节点]** 将日志改为使用基础缓存以避免集群模式的问题 by @mytharcher
-
-#### 🐛 修复
-
-- **[client]**
-
-  - 修复变量原始字符串会随表单提交的问题 ([#7337](https://github.com/nocobase/nocobase/pull/7337)) by @zhangzhonghe
-  - 修复 操作面板鼠标移上去 tooltip 显示 [object Object] 的问题 ([#7322](https://github.com/nocobase/nocobase/pull/7322)) by @katherinehhh
-  - 当在筛选表单中使用变量设置字段默认值，且变量值为空时，输入框中会显示变量的原始字符串 ([#7335](https://github.com/nocobase/nocobase/pull/7335)) by @zhangzhonghe
-- **[undefined]** 将新插件加入到预置集合 ([#7319](https://github.com/nocobase/nocobase/pull/7319)) by @mytharcher
-- **[数据表：树]** 修复树表路径同步逻辑 ([#7330](https://github.com/nocobase/nocobase/pull/7330)) by @ChimingLiu
-- **[Office 文件预览]** 支持 URL 中包含 `.docx`, `.xlsx` 和 `.pptx` 的文件预览 ([#7336](https://github.com/nocobase/nocobase/pull/7336)) by @mytharcher
-- **[工作流：动态表达式计算节点]** 修复旧 API 导致的错误 ([#7321](https://github.com/nocobase/nocobase/pull/7321)) by @mytharcher
-- **[工作流：审批]** 为加签和转签的任务增加标题 by @mytharcher
-- **[邮件管理]** 支持多人相同邮件 by @jiannx
+- **[client]** 修复表单的多列布局在移动端没有变成单列布局的问题 ([#7355](https://github.com/nocobase/nocobase/pull/7355)) by @zhangzhonghe
+- **[工作流]** 修复字段选择框的搜索关键词匹配问题 ([#7356](https://github.com/nocobase/nocobase/pull/7356)) by @mytharcher
