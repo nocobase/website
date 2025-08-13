@@ -92,12 +92,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-08-13T10:05:55.190Z",
+    "updatedAt": "2025-08-13T10:05:55.198Z",
+    "id": 1716,
+    "title": "Weekly Update Summary",
+    "filename": "Weekly Update Summary-lk0qq3.png",
+    "extname": ".png",
+    "size": 151461,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-lk0qq3.png",
+    "preview": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-lk0qq3.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-13T09:45:56.931Z"
+  "updatedAt": "2025-08-13T10:05:58.637Z"
 }
