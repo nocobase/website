@@ -12,102 +12,77 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.8.14](https://www.nocobase.com/ja/blog/v1.8.14)
+### [v1.8.15](https://www.nocobase.com/ja/blog/v1.8.15)
 
-*リリース日：2025-08-05*
-
-#### 🐛 不具合修正
-
-* **[クライアント]** 変数の生の文字列がフォームと共に送信される問題を修正（[#7337](https://github.com/nocobase/nocobase/pull/7337)）@zhangzhonghe
-* **[ワークフロー：承認]** 追加および委任されたアイテムにタスクタイトルを追加 @mytharcher
-
-### [v1.8.13](https://www.nocobase.com/ja/blog/v1.8.13)
-
-*リリース日：2025-08-04*
-
-#### 🎉 新機能
-
-* **[認証: SAML 2.0]** 署名関連の設定オプションを追加 @2013xile
+*リリース日：2025-08-12*
 
 #### 🚀 機能改善
 
-* **[ワークフロー: JavaScript]** キャッシュをアプリキャッシュに変更し、クラスターモードでのバグを回避 @mytharcher
+* **[クライアント]**
+  * 「一昨日」の日付変数をサポート（[#7359](https://github.com/nocobase/nocobase/pull/7359)）@katherinehhh
+  * ポップアップタブ切り替え時のパフォーマンスを最適化（[#7353](https://github.com/nocobase/nocobase/pull/7353)）@zhangzhonghe
+* **[ワークフロー]**
+  * 不安定なテストケースを修正（[#7349](https://github.com/nocobase/nocobase/pull/7349)）@mytharcher
+  * 対応するバージョンが無効化されていても、タスクカードのワークフロータイトルに取り消し線が表示されないように変更（[#7339](https://github.com/nocobase/nocobase/pull/7339)）@mytharcher
+* **[オフィスファイルプレビューワー]** `.odt`ファイルのプレビューをサポート（[#7347](https://github.com/nocobase/nocobase/pull/7347)）@mytharcher
+* **[バックアップマネージャー]** MySQL データベースのバックアップ操作のパフォーマンスを改善 @gchust
 
 #### 🐛 不具合修正
 
 * **[クライアント]**
-  * アクションパネルにホバーした際にツールチップに「[object Object]」が表示される問題を修正（[#7322](https://github.com/nocobase/nocobase/pull/7322)）@katherinehhh
-  * フィルターフォームで変数を使用してフィールドのデフォルト値を設定する場合、変数値が空のときに入力ボックスに元の変数文字列が表示される問題（[#7335](https://github.com/nocobase/nocobase/pull/7335)）@zhangzhonghe
-* **[コレクション：ツリー]** ツリーコレクションのパス同期ロジックを修正（[#7330](https://github.com/nocobase/nocobase/pull/7330)）@ChimingLiu
-
-### [v1.8.12](https://www.nocobase.com/ja/blog/v1.8.12)
-
-*リリース日：2025-08-01*
-
-#### 🎉 新機能
-
-* **[クライアント]** Input、TextArea、URL、InputNumber コンポーネントに「自動フォーカス」オプションを追加。有効にすると、ページ初期描画時に入力フィールドに自動的にフォーカスが当たるようになります（[#7320](https://github.com/nocobase/nocobase/pull/7320)）@zhangzhonghe
-
-#### 🐛 不具合修正
-
-* **[クライアント]**
-  * URL が null の場合のファイルプレビューアイテムを修正（[#7315](https://github.com/nocobase/nocobase/pull/7315)）@mytharcher
-  * プレビュー時にローカルファイルに完全な URL を追加（[#7314](https://github.com/nocobase/nocobase/pull/7314)）@mytharcher
-* **[ユーティリティ]** parseDate のタイムゾーン処理が不正確な問題（[#7318](https://github.com/nocobase/nocobase/pull/7318)）@katherinehhh
-* **[未定義]** プリセットに新しいプラグインを追加（[#7319](https://github.com/nocobase/nocobase/pull/7319)）@mytharcher
-* **[ファイルマネージャー]** ストレージフィールドの権限を修正（[#7316](https://github.com/nocobase/nocobase/pull/7316)）@mytharcher
-* **[ワークフロー]** プロセッサ終了時の`undefined`結果を修正（[#7317](https://github.com/nocobase/nocobase/pull/7317)）@mytharcher
-* **[ワークフロー：動的計算ノード]** レガシー API に起因するエラーを修正（[#7321](https://github.com/nocobase/nocobase/pull/7321)）@mytharcher
-* **[ワークフロー：サブフロー]** フローが中断する問題を修正 @mytharcher
+  * モバイルデバイスで複数列フォームレイアウトが単列レイアウトに変換されない問題を修正（[#7355](https://github.com/nocobase/nocobase/pull/7355)）@zhangzhonghe
+  * コレクションの一括削除エラーを修正（[#7345](https://github.com/nocobase/nocobase/pull/7345)）@aaaaaajie
+  * 個別に権限を設定する際に、以前に保存したデータ範囲が事前に選択されない問題を修正（[#7288](https://github.com/nocobase/nocobase/pull/7288)）@aaaaaajie
+* **[ワークフロー]**
+  * 「ノード追加」メニューをリファクタリングし、それに起因するワークフローキャンバスの描画パフォーマンス問題を修正（[#7363](https://github.com/nocobase/nocobase/pull/7363)）@mytharcher
+  * 単一のタスクアイテムを取得する際のフィルター条件が不正確な問題を修正（[#7366](https://github.com/nocobase/nocobase/pull/7366)）@mytharcher
+  * フィールド選択におけるキーワード一致の問題を修正（[#7356](https://github.com/nocobase/nocobase/pull/7356)）@mytharcher
+  * 停止時にイベントキューに発行することで引き起こされるエラーを回避（[#7348](https://github.com/nocobase/nocobase/pull/7348)）@mytharcher
+* **[通知：アプリ内メッセージ]** サイト内メッセージを受信したがポップアップで表示されない問題を修正（[#7364](https://github.com/nocobase/nocobase/pull/7364)）@mytharcher
+* **[モバイル]** 日付範囲制限を適用した場合に、モバイルデバイスの日付ピッカーが不正に表示される問題を解消（[#7362](https://github.com/nocobase/nocobase/pull/7362)）@katherinehhh
+* **[ファイルマネージャー]** 権限設定をサポートするため、ファイルコレクションに`storageId`フィールドを追加（[#7351](https://github.com/nocobase/nocobase/pull/7351)）@mytharcher
+* **[ワークフロー：並列ノード]** MySQL 環境下で、並列ノードが再開後に中断する問題を修正（[#7346](https://github.com/nocobase/nocobase/pull/7346)）@mytharcher
+* **[ワークフロー: CC]** ブロックを削除できない問題を修正（[#7338](https://github.com/nocobase/nocobase/pull/7338)）@mytharcher
+* **[オフィスファイルプレビューワー]** URL のみで`.docx`、`.xlsx`、`.pptx`ファイルのプレビューをサポート（[#7336](https://github.com/nocobase/nocobase/pull/7336)）@mytharcher
+* **[データ可視化]** チャートフィルターブロックの日付フィールドのデフォルト値における日付変数の問題（[#7291](https://github.com/nocobase/nocobase/pull/7291)）@katherinehhh
+* **[ワークフロー：承認]**
+  * 承認元の詳細ブロックにおいて連動規則が機能しない問題を修正 @mytharcher
+  * ドラフトを送信する際の関連データ更新を修正 @mytharcher
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v1.9.0-alpha.7](https://www.nocobase.com/ja/blog/v1.9.0-alpha.7)
+### [v1.9.0-alpha.10](https://www.nocobase.com/ja/blog/v1.9.0-alpha.10)
 
-*リリース日：2025-08-06*
+*リリース日：2025-08-09*
 
 #### 🐛 不具合修正
 
-* **[メールマネージャー]** 再同期をサポート @jiannx
+* **[メールマネージャー]** リッチエディターがソフト改行をサポートするように修正 @jiannx
 
-### [v1.9.0-alpha.6](https://www.nocobase.com/ja/blog/v1.9.0-alpha.6)
+### [v1.9.0-alpha.9](https://www.nocobase.com/ja/blog/v1.9.0-alpha.9)
 
-*リリース日：2025-08-06*
+*リリース日：2025-08-09*
 
 #### 🚀 機能改善
 
-* **[ワークフロー]** ToDoカード内のワークフロータイトルは、対応するバージョンが無効になっても取り消し線で表示されなくなります（[#7339](https://github.com/nocobase/nocobase/pull/7339)）@mytharcher
+* **[ワークフロー]** 不安定なテストケースを修正（[#7349](https://github.com/nocobase/nocobase/pull/7349)）@mytharcher
 
 #### 🐛 不具合修正
 
-* **[データ可視化]** チャートフィルターブロックの日付フィールドのデフォルト値における日付変数の問題（[#7291](https://github.com/nocobase/nocobase/pull/7291)）@katherinehhh
-* **[ワークフロー: CC]** ブロックを削除できない問題を修正（[#7338](https://github.com/nocobase/nocobase/pull/7338)）@mytharcher
-* **[メールマネージャー]** 転送と返信を手動で区別できるように修正 @jiannx
+* **[クライアント]** モバイルデバイスで複数列フォームレイアウトが単列レイアウトに変換されない問題を修正（[#7355](https://github.com/nocobase/nocobase/pull/7355)）@zhangzhonghe
+* **[ワークフロー]** フィールド選択におけるキーワード一致の問題を修正（[#7356](https://github.com/nocobase/nocobase/pull/7356)）@mytharcher
 
-### [v1.9.0-alpha.5](https://www.nocobase.com/ja/blog/v1.9.0-alpha.5)
+### [v1.9.0-alpha.8](https://www.nocobase.com/ja/blog/v1.9.0-alpha.8)
 
-*リリース日：2025-08-05*
-
-#### 🎉 新機能
-
-* **[クライアント]** Input、TextArea、URL、InputNumber コンポーネントに「自動フォーカス」オプションを追加。有効にすると、ページ初期描画時に入力フィールドに自動的にフォーカスが当たるようになります（[#7320](https://github.com/nocobase/nocobase/pull/7320)）@zhangzhonghe
-* **[認証: SAML 2.0]** 署名関連の設定オプションを追加 @2013xile
+*リリース日：2025-08-09*
 
 #### 🚀 機能改善
 
-* **[ワークフロー: JavaScript]** キャッシュをアプリキャッシュに変更し、クラスターモードでのバグを回避 @mytharcher
+* **[ワークフロー]** 不安定なテストケースを修正（[#7349](https://github.com/nocobase/nocobase/pull/7349)）@mytharcher
 
 #### 🐛 不具合修正
 
-* **[クライアント]**
-  * 変数の生の文字列がフォームと共に送信される問題を修正（[#7337](https://github.com/nocobase/nocobase/pull/7337)）@zhangzhonghe
-  * アクションパネルにホバーした際にツールチップに「[object Object]」が表示される問題を修正（[#7322](https://github.com/nocobase/nocobase/pull/7322)）@katherinehhh
-  * フィルターフォームで変数を使用してフィールドのデフォルト値を設定する場合、変数値が空のときに入力ボックスに元の変数文字列が表示される問題（[#7335](https://github.com/nocobase/nocobase/pull/7335)）@zhangzhonghe
-* **[未定義]** プリセットに新しいプラグインを追加（[#7319](https://github.com/nocobase/nocobase/pull/7319)）@mytharcher
-* **[コレクション：ツリー]** ツリーコレクションのパス同期ロジックを修正（[#7330](https://github.com/nocobase/nocobase/pull/7330)）@ChimingLiu
-* **[オフィスファイルプレビューワー]** URL のみで`.docx`、`.xlsx`、`.pptx`ファイルのプレビューをサポート（[#7336](https://github.com/nocobase/nocobase/pull/7336)）@mytharcher
-* **[ワークフロー：動的計算ノード]** レガシー API に起因するエラーを修正（[#7321](https://github.com/nocobase/nocobase/pull/7321)）@mytharcher
-* **[ワークフロー：承認]** 追加および委任されたアイテムにタスクタイトルを追加 @mytharcher
-* **[メールマネージャー]** 複数人に同じメールを送信できるようにサポート @jiannx
+* **[クライアント]** モバイルデバイスで複数列フォームレイアウトが単列レイアウトに変換されない問題を修正（[#7355](https://github.com/nocobase/nocobase/pull/7355)）@zhangzhonghe
+* **[ワークフロー]** フィールド選択におけるキーワード一致の問題を修正（[#7356](https://github.com/nocobase/nocobase/pull/7356)）@mytharcher
