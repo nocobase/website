@@ -76,13 +76,20 @@
 
 ### [v1.9.0-alpha.8](https://www.nocobase.com/ja/blog/v1.9.0-alpha.8)
 
-*リリース日：2025-08-09*
+*リリース日：2025-08-08*
 
 #### 🚀 機能改善
 
-* **[ワークフロー]** 不安定なテストケースを修正（[#7349](https://github.com/nocobase/nocobase/pull/7349)）@mytharcher
+* **[クライアント]** ポップアップタブ切り替え時のパフォーマンスを最適化（[#7353](https://github.com/nocobase/nocobase/pull/7353)）@zhangzhonghe
+* **[オフィスファイルプレビューワー]** `.odt`ファイルのプレビューをサポート（[#7347](https://github.com/nocobase/nocobase/pull/7347)）@mytharcher
 
 #### 🐛 不具合修正
 
-* **[クライアント]** モバイルデバイスで複数列フォームレイアウトが単列レイアウトに変換されない問題を修正（[#7355](https://github.com/nocobase/nocobase/pull/7355)）@zhangzhonghe
-* **[ワークフロー]** フィールド選択におけるキーワード一致の問題を修正（[#7356](https://github.com/nocobase/nocobase/pull/7356)）@mytharcher
+* **[クライアント]**
+  * 個別に権限を設定する際に、以前に保存したデータ範囲が事前に選択されない問題を修正（[#7288](https://github.com/nocobase/nocobase/pull/7288)）@aaaaaajie
+  * コレクションの一括削除エラーを修正（[#7345](https://github.com/nocobase/nocobase/pull/7345)）@aaaaaajie
+* **[ワークフロー]** 停止時にイベントキューに発行することで引き起こされるエラーを回避（[#7348](https://github.com/nocobase/nocobase/pull/7348)）@mytharcher
+* **[ワークフロー：並列ノード]** MySQL 環境下で、並列ノードが再開後に中断する問題を修正（[#7346](https://github.com/nocobase/nocobase/pull/7346)）@mytharcher
+* **[ワークフロー：承認]**
+  * ドラフトを送信する際の関連データ更新を修正 @mytharcher
+  * 承認元の詳細ブロックにおいて連動規則が機能しない問題を修正 @mytharcher
