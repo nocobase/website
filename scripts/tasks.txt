@@ -1,0 +1,171 @@
+{
+    "data": [
+        {
+            "createdAt": "2025-08-14T08:08:32.779Z",
+            "updatedAt": "2025-08-14T08:08:32.789Z",
+            "createdById": 1,
+            "description": "More flexible extensibility, higher performance, and the power of AI employees.\n",
+            "description_cn": "更灵活的扩展性，更高的性能，AI 员工加持。",
+            "description_ja": "More flexible extensibility, higher performance, and the power of AI employees.",
+            "docUrl": null,
+            "id": 70,
+            "isCommercial": null,
+            "isNewPlugin": null,
+            "sort": 1,
+            "statusId": 2,
+            "title": "NocoBase 2.0",
+            "title_cn": "NocoBase 2.0",
+            "title_ja": "NocoBase 2.0",
+            "updatedById": 1,
+            "status": {
+                "createdAt": "2024-06-13T14:00:05.931Z",
+                "updatedAt": "2024-11-24T06:49:43.002Z",
+                "id": 2,
+                "name": "In progress",
+                "name_cn": null,
+                "type": "primary",
+                "name_ja": "進行中",
+                "createdById": 1,
+                "updatedById": 9
+            },
+            "categories": [
+                {
+                    "createdAt": "2024-06-13T13:51:20.850Z",
+                    "updatedAt": "2024-11-24T06:46:50.309Z",
+                    "id": 1,
+                    "title": "Core",
+                    "title_cn": null,
+                    "sort": 1,
+                    "title_ja": "コア",
+                    "createdById": 1,
+                    "updatedById": 9,
+                    "taskCategory": {
+                        "createdAt": "2025-08-14T08:08:32.786Z",
+                        "updatedAt": "2025-08-14T08:08:32.786Z",
+                        "categoryId": 1,
+                        "taskId": 70
+                    }
+                }
+            ]
+        },
+        {
+            "createdAt": "2025-03-31T13:21:17.185Z",
+            "updatedAt": "2025-08-14T08:06:43.295Z",
+            "createdById": 1,
+            "description": "When users forget their passwords, they can reset them via email.",
+            "description_cn": "用户忘记密码时，可以通过邮件重置密码。",
+            "description_ja": "ユーザーはパスワードを忘れた場合、メールでリセットできます。/ ユーザーがパスワードを忘れた際は、メールでリセットできます。",
+            "docUrl": null,
+            "id": 66,
+            "isCommercial": null,
+            "isNewPlugin": null,
+            "sort": 62,
+            "statusId": 1,
+            "title": "Reset password",
+            "title_cn": "重置密码",
+            "title_ja": "パスワードをリセット",
+            "updatedById": 1,
+            "status": {
+                "createdAt": "2024-06-13T13:59:53.498Z",
+                "updatedAt": "2024-11-24T06:49:42.809Z",
+                "id": 1,
+                "name": "Done",
+                "name_cn": null,
+                "type": "success",
+                "name_ja": "完了",
+                "createdById": 1,
+                "updatedById": 9
+            },
+            "categories": [
+                {
+                    "createdAt": "2024-06-18T03:06:02.839Z",
+                    "updatedAt": "2024-11-24T06:46:51.684Z",
+                    "id": 8,
+                    "title": "Authentication",
+                    "title_cn": "用户认证",
+                    "sort": 7,
+                    "title_ja": "認証",
+                    "createdById": 1,
+                    "updatedById": 9,
+                    "taskCategory": {
+                        "createdAt": "2025-03-31T13:21:17.192Z",
+                        "updatedAt": "2025-03-31T13:21:17.192Z",
+                        "categoryId": 8,
+                        "taskId": 66
+                    }
+                }
+            ]
+        },
+        {
+            "createdAt": "2025-03-31T13:28:17.807Z",
+            "updatedAt": "2025-08-14T08:06:56.196Z",
+            "createdById": 1,
+            "description": "Filter using a bulk input of filter values, or by uploading an Excel file to set filter values, enabling filtering based on a group of filter values.",
+            "description_cn": "批量输入筛选值，或上传 excel 设置筛选值，实现对一组筛选值的筛选。",
+            "description_ja": "複数のフィルタ値をまとめて入力したり、Excelファイルをアップロードしてフィルタ値を設定することでフィルタリングが可能です。これにより、フィルタ値のグループに基づいた絞り込みができます。",
+            "docUrl": null,
+            "id": 69,
+            "isCommercial": null,
+            "isNewPlugin": true,
+            "sort": 65,
+            "statusId": 1,
+            "title": "Bulk filtering",
+            "title_cn": "批量筛选",
+            "title_ja": "一括フィルタリング",
+            "updatedById": 1,
+            "status": {
+                "createdAt": "2024-06-13T13:59:53.498Z",
+                "updatedAt": "2024-11-24T06:49:42.809Z",
+                "id": 1,
+                "name": "Done",
+                "name_cn": null,
+                "type": "success",
+                "name_ja": "完了",
+                "createdById": 1,
+                "updatedById": 9
+            },
+            "categories": [
+                {
+                    "createdAt": "2024-06-18T02:56:18.623Z",
+                    "updatedAt": "2024-11-24T06:46:50.695Z",
+                    "id": 3,
+                    "title": "Actions",
+                    "title_cn": "操作",
+                    "sort": 5,
+                    "title_ja": "アクション",
+                    "createdById": 1,
+                    "updatedById": 9,
+                    "taskCategory": {
+                        "createdAt": "2025-03-31T13:28:17.811Z",
+                        "updatedAt": "2025-03-31T13:28:17.811Z",
+                        "categoryId": 3,
+                        "taskId": 69
+                    }
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "count": 3,
+        "page": 1,
+        "pageSize": 50,
+        "totalPage": 1,
+        "allowedActions": {
+            "view": [
+                70,
+                66,
+                69
+            ],
+            "update": [
+                70,
+                66,
+                69
+            ],
+            "destroy": [
+                70,
+                66,
+                69
+            ]
+        }
+    }
+}
