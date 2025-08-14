@@ -8,7 +8,7 @@
   "description_ja": "v1.8.16 のリリースノート",
   "slug": "v1.8.16",
   "publishedAt": "2025-08-14T02:31:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-14T05:37:52.715Z"
+  "updatedAt": "2025-08-14T06:31:00.722Z"
 }
