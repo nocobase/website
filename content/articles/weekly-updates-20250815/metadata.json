@@ -7,8 +7,8 @@
   "description_cn": "本周更新包括：优化切换弹窗标签页的性能，缺陷修复等。",
   "description_ja": "今週の更新では、ポップアップタブの切り替えパフォーマンスを最適化し、バグを修正するなど、さらに多くの改善を加えました。",
   "slug": "weekly-updates-20250815",
-  "publishedAt": "2025-08-14T00:00:00.000Z",
-  "status": "drafted",
+  "publishedAt": "2025-08-15T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-14T05:55:51.402Z"
+  "updatedAt": "2025-08-14T12:48:06.063Z"
 }
