@@ -475,7 +475,7 @@ Image source: https://decodingml.substack.com/p/stop-building-ai-agents
 
 **プロジェクト概要**
 
-**CopilotKit **は、AI Copilot をアプリに統合するためのオープンソースフレームワーク。React UI コンポーネントや headless アーキテクチャで多様なインターフェースに対応。
+**CopilotKit** は、AI Copilot をアプリに統合するためのオープンソースフレームワーク。React UI コンポーネントや headless アーキテクチャで多様なインターフェースに対応。
 
 **コア機能**
 
