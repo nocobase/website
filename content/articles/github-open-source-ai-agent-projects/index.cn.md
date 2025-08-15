@@ -177,7 +177,7 @@ MetaGPT 是一个多智能体协作框架，强调“软件公司模拟”，将
 
 **项目概览：**
 
-**LLMs-from-scratch **是一个从零实现大型语言模型的教学型项目，帮助开发者理解 LLM 的核心原理与训练过程。
+**LLMs-from-scratch** 是一个从零实现大型语言模型的教学型项目，帮助开发者理解 LLM 的核心原理与训练过程。
 
 👉 [点击查看 LLMs-from-scratch 的完整介绍与应用场景](https://www.nocobase.com/cn/blog/github-open-source-ai-projects#no15-llms-from-scratch)
 
@@ -346,7 +346,7 @@ MetaGPT 是一个多智能体协作框架，强调“软件公司模拟”，将
 
 **项目概览：**
 
-**Cherry Studio **是由 CSDN、GitCode 与华为云 CodeArts IDE 联合打造的一款 AI 编程助手平台，于 2024 年 12 月亮相业界，并迅速吸引关注。其定位是为开发者提供一站式 AI 助手矩阵，支持自然语言交互、项目级代码改写与全栈开发支持。
+**Cherry Studio** 是由 CSDN、GitCode 与华为云 CodeArts IDE 联合打造的一款 AI 编程助手平台，于 2024 年 12 月亮相业界，并迅速吸引关注。其定位是为开发者提供一站式 AI 助手矩阵，支持自然语言交互、项目级代码改写与全栈开发支持。
 
 **核心功能：**
 
