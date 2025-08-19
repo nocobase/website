@@ -3,13 +3,14 @@ const {Buffer} = require('buffer');
 const {setTimeout} = require('timers');
 
 // Configuration
-const baseURL = 'https://your-cms-url.com/api/';
-const token = 'your_api_token_here';// Define hours as a constant and calculate timeWindow from it
+const baseURL = 'Your cms system url';
+const token = 'Your cms system token';
+// Define hours as a constant and calculate timeWindow from it
 const defaultHours = 15;
 let timeWindow = defaultHours * 60 * 60 * 1000; // Default: 15 hours in milliseconds
 
 // GitHub configuration
-const githubToken = 'your_github_token_here';
+const githubToken = 'Your GitHub token';
 const githubApi = axios.create({
   baseURL: 'https://api.github.com',
   timeout: 60000,
@@ -94,42 +95,56 @@ function trackGithubRequest() {
 // Helper function to get content created or updated in the last 15 hours
 async function getRecentContent(endpoint, options = {}) {
   return withRetry(async () => {
-    // Calculate the time 15 hours ago
-    const timeAgo = new Date(Date.now() - timeWindow);
-    
-    // Format to "YYYY-MM-DD HH:MM:SS" format
-    const formattedDate = timeAgo.toISOString()
-      .replace('T', ' ')
-      .replace(/\.\d+Z$/, '');
-    
     let url = `${baseURL}${endpoint}?pageSize=100`;
+    let finalFilter = null;
+    let formattedDate = null;
     
-    // Create OR condition for createdAt and updatedAt
-    const timeFilter = {
-      "$or": [
-        { "createdAt": { "$dateAfter": formattedDate } },
-        { "updatedAt": { "$dateAfter": formattedDate } }
-      ]
-    };
+    // Check if we should skip time filter
+    if (!options.skipTimeFilter) {
+      // Calculate the time 15 hours ago
+      const timeAgo = new Date(Date.now() - timeWindow);
+      
+      // Format to "YYYY-MM-DD HH:MM:SS" format
+      formattedDate = timeAgo.toISOString()
+        .replace('T', ' ')
+        .replace(/\.\d+Z$/, '');
+      
+      // Create OR condition for createdAt and updatedAt
+      const timeFilter = {
+        "$or": [
+          { "createdAt": { "$dateAfter": formattedDate } },
+          { "updatedAt": { "$dateAfter": formattedDate } }
+        ]
+      };
+      
+      finalFilter = timeFilter;
+    }
     
     // Merge user-provided custom filter conditions
-    let finalFilter = timeFilter;
     if (options.filter) {
       try {
         const customFilter = typeof options.filter === 'string' 
           ? JSON.parse(options.filter) 
           : options.filter;
-          
-        finalFilter = {
-          "$and": [timeFilter, customFilter]
-        };
+        
+        if (finalFilter) {
+          // If we have a time filter, combine it with custom filter
+          finalFilter = {
+            "$and": [finalFilter, customFilter]
+          };
+        } else {
+          // If no time filter, use custom filter only
+          finalFilter = customFilter;
+        }
       } catch (err) {
         console.error('Error parsing custom filter:', err.message);
       }
     }
     
-    // Add filter condition to URL
-    url += `&filter=${encodeURIComponent(JSON.stringify(finalFilter))}`;
+    // Add filter condition to URL if we have any filters
+    if (finalFilter) {
+      url += `&filter=${encodeURIComponent(JSON.stringify(finalFilter))}`;
+    }
     
     // Add additional parameters
     if (options.appends) {
@@ -157,7 +172,11 @@ async function getRecentContent(endpoint, options = {}) {
       }
     }
     
-    console.log(`Fetching content from ${endpoint} modified after ${formattedDate}`);
+    if (!options.skipTimeFilter) {
+      console.log(`Fetching content from ${endpoint} modified after ${formattedDate}`);
+    } else {
+      console.log(`Fetching ALL content from ${endpoint} (no time filter)`);
+    }
     // Hide full URL, do not show token
     console.log(`API Endpoint: ${endpoint}`);
     
@@ -437,8 +456,8 @@ async function syncRecentArticles() {
         hideOnBlog: article.hideOnBlog || false,
         author: article.author || null,
         ai_generated: article.ai_generated || false,
-        ai_generated_cn: article.ai_generated_cn || false,
-        ai_generated_ja: article.ai_generated_ja || false,
+        ai_generated_cn: article.ai_generated_cn || null,
+        ai_generated_ja: article.ai_generated_ja || null,
         updatedAt: article.updatedAt
       };
       
@@ -1246,9 +1265,12 @@ async function syncRecentPlugins() {
 async function syncRecentTasks() {
   console.log('Syncing tasks...');
   
+  // For tasks, we need to get ALL categories because tasks might be updated
+  // even if the category itself wasn't modified
   const taskCategories = await getRecentContent('taskCategories:list', {
-    appends: ['tasks(sort=sort)', 'tasks.status'],
-    sort: ['sort']
+    appends: ['tasks', 'tasks.status'],
+    sort: ['sort'],
+    skipTimeFilter: true  // Get all task categories regardless of update time
   });
   
   if (!taskCategories.length) {
