@@ -436,9 +436,6 @@ async function syncRecentArticles() {
         return;
       }
       
-      // Ensure slug is lowercase to avoid case sensitivity issues
-      const normalizedSlug = article.slug.toLowerCase();
-      
       // Prepare metadata for the article
       const metadata = {
         id: article.id,
@@ -448,7 +445,7 @@ async function syncRecentArticles() {
         description: article.description,
         description_cn: article.description_cn,
         description_ja: article.description_ja,
-        slug: normalizedSlug,
+        slug: article.slug,
         publishedAt: article.publishedAt,
         status: article.status,
         tags: article.tags || [],
@@ -465,7 +462,7 @@ async function syncRecentArticles() {
       };
       
       // Check if metadata file exists in GitHub
-      const metadataPath = `content/articles/${normalizedSlug}/metadata.json`;
+      const metadataPath = `content/articles/${article.slug}/metadata.json`;
       const metadataFileStatus = await fileExistsInTree(metadataPath);
       
       let finalMetadata = metadata;
@@ -491,7 +488,7 @@ async function syncRecentArticles() {
       
       // Process content files
       if (article.content) {
-        const contentPath = `content/articles/${normalizedSlug}/index.md`;
+        const contentPath = `content/articles/${article.slug}/index.md`;
         const contentFileStatus = await fileExistsInTree(contentPath);
         if (!contentFileStatus.exists) {
           await updateGitHubFile(
@@ -511,7 +508,7 @@ async function syncRecentArticles() {
       
       // Process Chinese content
       if (article.content_cn) {
-        const contentPath = `content/articles/${normalizedSlug}/index.cn.md`;
+        const contentPath = `content/articles/${article.slug}/index.cn.md`;
         const contentFileStatus = await fileExistsInTree(contentPath);
         if (!contentFileStatus.exists) {
           await updateGitHubFile(
@@ -530,7 +527,7 @@ async function syncRecentArticles() {
       
       // Process Japanese content
       if (article.content_ja) {
-        const contentPath = `content/articles/${normalizedSlug}/index.ja.md`;
+        const contentPath = `content/articles/${article.slug}/index.ja.md`;
         const contentFileStatus = await fileExistsInTree(contentPath);
         if (!contentFileStatus.exists) {
           await updateGitHubFile(
@@ -547,7 +544,7 @@ async function syncRecentArticles() {
         }
       }
       
-      console.log(`Synced article: ${article.title} (${normalizedSlug})`);
+      console.log(`Synced article: ${article.title} (${article.slug})`);
     } catch (error) {
       console.error(`Error syncing article ${article?.title || article?.id || 'unknown'}:`, error.message);
     }
@@ -950,11 +947,8 @@ async function syncRecentArticleTags() {
   for (const tag of tags) {
     if (!tag.slug) continue;
     
-    // Ensure slug is lowercase to avoid case sensitivity issues
-    const normalizedSlug = tag.slug.toLowerCase();
-    
     try {
-      const tagDir = `content/tags/${normalizedSlug}`;
+      const tagDir = `content/tags/${tag.slug}`;
       const tagFilePath = `${tagDir}/tag.json`;
       
       const tagFileStatus = await fileExistsInTree(tagFilePath);
@@ -965,7 +959,7 @@ async function syncRecentArticleTags() {
         tagFileStatus.exists ? tagFileStatus : null
       );
       
-      console.log(`Synced article tag: ${tag.title || normalizedSlug}`);
+      console.log(`Synced article tag: ${tag.title || tag.slug}`);
     } catch (error) {
       console.error(`Error syncing tag ${tag?.title || tag?.slug || tag?.id}: ${error.message}`);
     }
@@ -1040,11 +1034,8 @@ async function syncRecentArticleCategories() {
   for (const category of categories) {
     if (!category.slug) continue;
     
-    // Ensure slug is lowercase to avoid case sensitivity issues
-    const normalizedSlug = category.slug.toLowerCase();
-    
     try {
-      const categoryDir = `content/categories/${normalizedSlug}`;
+      const categoryDir = `content/categories/${category.slug}`;
       const categoryFilePath = `${categoryDir}/category.json`;
       
       const categoryFileStatus = await fileExistsInTree(categoryFilePath);
@@ -1055,7 +1046,7 @@ async function syncRecentArticleCategories() {
         categoryFileStatus.exists ? categoryFileStatus : null
       );
       
-      console.log(`Synced article category: ${category.title || normalizedSlug}`);
+      console.log(`Synced article category: ${category.title || category.slug}`);
     } catch (error) {
       console.error(`Error syncing category ${category?.title || category?.slug || category?.id}: ${error.message}`);
     }
@@ -1130,11 +1121,8 @@ async function syncRecentReleaseTags() {
   for (const tag of tags) {
     if (!tag.slug) continue;
     
-    // Ensure slug is lowercase to avoid case sensitivity issues
-    const normalizedSlug = tag.slug.toLowerCase();
-    
     try {
-      const tagDir = `content/tags/release-tags/${normalizedSlug}`;
+      const tagDir = `content/tags/release-tags/${tag.slug}`;
       const tagFilePath = `${tagDir}/tag.json`;
       
       const tagFileStatus = await fileExistsInTree(tagFilePath);
@@ -1145,9 +1133,9 @@ async function syncRecentReleaseTags() {
         tagFileStatus.exists ? tagFileStatus : null
       );
       
-      console.log(`Synced release tag: ${tag.title || normalizedSlug}`);
+      console.log(`Synced release tag: ${tag.title || tag.slug}`);
     } catch (error) {
-      console.error(`Error syncing release tag ${tag?.title || tag?.slug?.toLowerCase() || tag?.id}: ${error.message}`);
+      console.error(`Error syncing release tag ${tag?.title || tag?.slug || tag?.id}: ${error.message}`);
     }
   }
   
