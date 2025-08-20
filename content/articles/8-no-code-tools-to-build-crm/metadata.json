@@ -402,10 +402,10 @@
     },
     {
       "createdAt": "2025-08-04T13:51:46.093Z",
-      "updatedAt": "2025-08-04T13:51:46.093Z",
+      "updatedAt": "2025-08-12T11:34:42.416Z",
       "id": 214,
       "title": "SaaS",
-      "title_cn": null,
+      "title_cn": "SaaS",
       "sort": 212,
       "description": null,
       "description_cn": null,
@@ -414,7 +414,7 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "SaaS",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 3,
@@ -452,5 +452,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-05T05:50:34.541Z"
+  "updatedAt": "2025-08-20T07:11:09.687Z"
 }
