@@ -4,7 +4,7 @@
 
   - Support the BIT field in SQL Server for external data sources. ([#7058](https://github.com/nocobase/nocobase/pull/7058)) by @aaaaaajie
   - Support custom aggregation variables ([#6916](https://github.com/nocobase/nocobase/pull/6916)) by @zhangzhonghe
-    Reference: [Custom variables](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+    Reference: [Custom variables](https://docs-cn.nocobase.com/handbook/custom-variables)
 - **[build]** support commercial authorization ([#6554](https://github.com/nocobase/nocobase/pull/6554)) by @jiannx
 - **[Data source manager]** ✨ Support on-demand loading of collections from external data sources ([#6979](https://github.com/nocobase/nocobase/pull/6979)) by @aaaaaajie
 - **[License settings]** add license setting and validate license before downloading plugins ([#7026](https://github.com/nocobase/nocobase/pull/7026)) by @jiannx
@@ -16,7 +16,7 @@
   - Added support for SQL Server BIT field in external data sources by @aaaaaajie
   - Support on-demand loading of collections from external data sources by @aaaaaajie
 - **[Custom variables]** Support custom aggregation variables by @zhangzhonghe
-  Reference: [Custom variables](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+  Reference: [Custom variables](https://docs-cn.nocobase.com/handbook/custom-variables)
 - **[Email manager]**
 
   - support delete email by @jiannx
