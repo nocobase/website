@@ -96,7 +96,7 @@
 
 #### 8.4.2 複製した文書テーブルの表示
 
-タスクビューのポップアップ内で、新しい[タブ](https://docs-jp.nocobase.com/manual/ui/pages)「文書」を追加します。このタブ内に、フォームブロック > その他のレコード > 文書 >「テンプレートをコピー」 > を追加し、以前に作成した文書テーブルテンプレートをインポートします（必ず[**テンプレートをコピー**](https://docs-jp.nocobase.com/handbook/ui/blocks/block-settings/block-template)を選択してください）。
+タスクビューのポップアップ内で、新しい[タブ](https://docs-jp.nocobase.com/manual/ui/pages)「文書」を追加します。このタブ内に、フォームブロック > その他のレコード > 文書 >「テンプレートをコピー」 > を追加し、以前に作成した文書テーブルテンプレートをインポートします（必ず[**テンプレートをコピー**](https://docs-jp.nocobase.com/handbook/block-template)を選択してください）。
 
 ![](https://static-docs.nocobase.com/Solution/202411160304401731697480.png)
 
@@ -106,7 +106,7 @@
 
 外部テーブルテンプレートをコピーしたため、タスクコレクションとまだリンクされていません。すべての文書データが表示され、理想的な状態ではありません。
 
-この状況は非常に一般的です。対応する関係フィールドを作成していない場合でも、関連データを表示する必要がある場合、両者を手動でリンクする必要があります。（**注：** テンプレートの[コピー](https://docs-jp.nocobase.com/handbook/ui/blocks/block-templates)を使用します。[参照テンプレート](https://docs-jp.nocobase.com/handbook/ui/blocks/block-templates)ではなく、そうでないと、行ったすべての変更が他のテーブルブロックと同期されます！）
+この状況は非常に一般的です。対応する関係フィールドを作成していない場合でも、関連データを表示する必要がある場合、両者を手動でリンクする必要があります。（**注：** テンプレートの[コピー](https://docs-jp.nocobase.com/handbook/block-template)を使用します。[参照テンプレート](https://docs-jp.nocobase.com/handbook/block-template)ではなく、そうでないと、行ったすべての変更が他のテーブルブロックと同期されます！）
 
 - データ表示の関連付け
 
