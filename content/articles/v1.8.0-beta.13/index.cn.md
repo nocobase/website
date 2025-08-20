@@ -4,7 +4,7 @@
 
   - 支持外部数据源中的 SQL Server BIT 字段 ([#7058](https://github.com/nocobase/nocobase/pull/7058)) by @aaaaaajie
   - 支持自定义聚合变量 ([#6916](https://github.com/nocobase/nocobase/pull/6916)) by @zhangzhonghe
-    参考文档：[自定义变量](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+    参考文档：[自定义变量](https://docs-cn.nocobase.com/handbook/custom-variables)
 - **[build]** 支持商业授权 ([#6554](https://github.com/nocobase/nocobase/pull/6554)) by @jiannx
 - **[数据源管理]** ✨ 支持外部数据源按需加载数据表 ([#6979](https://github.com/nocobase/nocobase/pull/6979)) by @aaaaaajie
 - **[授权设置]** 添加授权设置和下载商业插件前授权校验 ([#7026](https://github.com/nocobase/nocobase/pull/7026)) by @jiannx
@@ -16,7 +16,7 @@
   - 支持外部数据源中的 SQL Server BIT 字段 by @aaaaaajie
   - 支持外部数据源按需加载数据表 by @aaaaaajie
 - **[自定义变量]** 支持自定义聚合变量 by @zhangzhonghe
-  参考文档：[自定义变量](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+  参考文档：[自定义变量](https://docs-cn.nocobase.com/handbook/custom-variables)
 - **[邮件管理]**
 
   - 支持邮件删除 by @jiannx
