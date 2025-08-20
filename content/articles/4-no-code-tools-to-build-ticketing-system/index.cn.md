@@ -4,19 +4,19 @@
 
 > “我需要一个开源的 IT 工单系统，最好能自托管，还要支持资产管理、LDAP 集成和客户自助开票。但我只有一个人来运营，所以系统不能太复杂。”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWJjOWYxMmM5ZmQ2YzA3MzY3ZmUzMThkNDBhNTRkMDdfUUcxVVlVRWNKOHVWRDBzTXBLWU02aHdBTVlyWEJoUVpfVG9rZW46TFRtamJ5RFJ6bzhoZTh4c2dxUGNWMXZ6bjVnXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![best open-source IT ticketing system](https://static-docs.nocobase.com/1-fmw21u.png)
 
 [另一位中小企业 IT 团队则表示](https://www.reddit.com/r/ITManagers/comments/1mt7oy4/modern_it_ticketing_system_with_automation/)：
 
 > “我们终于要替换掉过时的工单系统了。希望找到一个现代化、容易实施、能自动化的工具，但选项太多、价格差异也大，真的不知道从哪里下手。”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWQ2MGUzYTlmMmUxMzQyM2Q2YWYyMDE5ODBiODAxZGFfZEMyRkdneWl0UHRnQTNvcERsRnFSTGxHNnpDeEVQVjBfVG9rZW46Tlp5eGJUUDFqbzBCOWp4YlNISmN5TFNlblJkXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![ticketing system](https://static-docs.nocobase.com/2-om79rc.png)
 
 [还有团队分享了他们的日常需求：](https://www.reddit.com/r/sysadmin/comments/1mc82jv/free_open_source_ticketing_system_for_it_support/)
 
 > “支持邮箱自动生成工单，通知客户和管理层，支持多级升级流转……有没有免费的开源系统能满足这些场景？”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDlmODYwODA3MzFiMjUxNWE4OGVlYjc5MzNkYTYyNzhfUTFnTElJUE9RSHFxSWJocnYxenA5ZTMySTlBUEViV2ZfVG9rZW46SWoxdGJTYkhGb0hqaFl4NWI4UWNKVWxjbkQzXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![ticketing system](https://static-docs.nocobase.com/3-igzf45.png)
 
 这些讨论看似分散，其实反映了同一个现实：
 
@@ -38,13 +38,15 @@
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGZiOGFmYjU4ZGNmMzlmNjhiYTI4MzFmMzI0ZmI0NjRfZVAwZWpza1Jha1d3RTZ3bDhwUzZzT2tVZ1lTeVBEa1RfVG9rZW46UWJhdWJKTEJib1VFbzR4ZG1yT2NXa0pCbnliXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![NocoBase](https://static-docs.nocobase.com/4-v2b19x.png)
 
 * GitHub Star: 16.4k
 * GitHub: https://github.com/nocobase/nocobase
 * Website: https://www.nocobase.com/
 
-**平台概览**[NocoBase](https://www.nocobase.com/) 是一个开源的零代码/低代码平台，**核心特点是数据模型驱动与插件化架构**。与传统的工单系统不同，它提供了灵活的数据建模、流程设计和插件扩展能力。对于希望根据自身业务特点搭建工单系统的团队来说，NocoBase 提供了一个兼具可视化与可扩展性的基础平台。
+**平台概览**
+
+[NocoBase](https://www.nocobase.com/) 是一个开源的零代码/低代码平台，**核心特点是数据模型驱动与插件化架构**。与传统的工单系统不同，它提供了灵活的数据建模、流程设计和插件扩展能力。对于希望根据自身业务特点搭建工单系统的团队来说，NocoBase 提供了一个兼具可视化与可扩展性的基础平台。
 
 **使用 NocoBase 搭建工单系统的亮点**
 
@@ -52,23 +54,23 @@ NocoBase 提供了[工单系统解决方案](https://www.nocobase.com/cn/solutio
 
 * **完整的工单生命周期管理**：从工单的创建、分配、处理到关闭，提供全流程可视化管理，确保每一个工单都能被追踪与妥善处理。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDQ1ZGQzMTVjNTRhMzJhYTY5NjY5ZWY5M2RiZjQ0ODJfQkNsRnN0NXdIZEpmdzNxTHFxYnBiallzaUVSbHhDa21fVG9rZW46RGV3YmJIajd3b29OejZ4YWY2WWNtTjJKblFmXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![NocoBase](https://static-docs.nocobase.com/5-ximtla.png)
 
 * **智能分配与进度跟踪**：支持根据工单类型和团队成员技能进行自动分配，并实时跟踪工单处理状态，提升协作效率。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDJjNDI3MmM4MDk3N2IxNGM2YjgxM2MxMjRiNTc4MjRfSjduM3JNT09mV3pPS0EwVkI4ZVFKZHlSZWVMR0hGa3ZfVG9rZW46SnoyZWJaVDhtb2o1N1Z4NzcwcmNtUmNZbkhoXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![NocoBase](https://static-docs.nocobase.com/6-721pig.png)
 
 * **多渠道沟通记录**：通过 API 同步邮件、电话、在线聊天等多种沟通渠道，统一管理客户交流记录。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWMyYWI1YTc1MDQzYjEzNjQ4MmEwZDQ1OTUxODMyNTJfTlpMdGw4TjdHalJDR2h0T2hUYjhIa3U4MmpSc2RwSW1fVG9rZW46QVBiWGJVbFdVb1pZRXZ4RFZPR2NQMHoxbk1lXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![NocoBase](https://static-docs.nocobase.com/7-q8xn9i.png)
 
 * **插件化与自动化工作流**：内置自动化引擎，可以实现工单升级、通知提醒、数据同步等流程规则。还可通过插件扩展资产管理、统计报表、知识库等功能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDg1NmViNzgwMTA1MmI2OTI4ZTUxZTIwOWRmMDk1Y2NfS1Rnc2FiR1dVRmVZdXMzaU1ySmltYjFydTNXMHNZNlZfVG9rZW46SUJscGJ1Um1Kb3NSTFl4am1FM2NnbGZQbkZoXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![NocoBase](https://static-docs.nocobase.com/8-jtp2bm.png)
 
 ## Budibase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWY1ZjVjMmVlMGM1YzI0OTZkYmZmZmIwZDdjZWQ2NjdfeHU3R3NVRjlLZ3NjWUtlMEZ2QzVzbzJXclJqaFFpNkhfVG9rZW46RW9XOGJGZkZkb3Z1VXN4bXc4QmN2VnNGbnRmXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![Budibase](https://static-docs.nocobase.com/9-jy06b6.png)
 
 * GitHub Star: 25.3k
 * GitHub: https://github.com/Budibase/budibase/
@@ -84,7 +86,7 @@ Budibase 提供了开箱即用的[工单管理模板](https://budibase.com/busin
 
 * **可定制工单模板**：提供内置的 Tickets 表与状态跟踪表，支持自定义字段、角色权限与视图，满足不同团队的工单管理需求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGRkNGRiMDdiOTc5MmUwZDBiOWJjOWU4MDRmYmVjZjZfNjNqd1RlckxpeUlOaTJDQjBIVjJ5ZEdySVZpUlAyMEZfVG9rZW46Uk45UmJYcGdob2JJdEV4ekpGdWNlYjQ0bkVkXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![Budibase](https://static-docs.nocobase.com/10-lru3t0.png)
 
 * **多角色界面设计**：为服务用户与工单处理人员（agents）提供独立 UI，用户可提交与跟踪工单，支持人员则能分配、更新与统计工单状态。
 * **自动化工作流**：内置强大的自动化功能，例如工单取消、状态变更记录等，还支持自定义触发器、条件分支和循环逻辑，提升效率。
@@ -92,7 +94,7 @@ Budibase 提供了开箱即用的[工单管理模板](https://budibase.com/busin
 
 ## Appsmith
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODFmYzlkMjU0MDhjOTUxNzgxNmRkOTczNzVlNDQ2Zjdfc2JkNENoUDd4VUpsdkhDMnhPNVVteW4xdHlVWG94dERfVG9rZW46TWpBUWJLRkwyb3ZKamp4VlZRTGNqTUlmbjZiXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![Appsmith](https://static-docs.nocobase.com/11-bu94pj.png)
 
 * GitHub Star: 37.7k
 * GitHub: https://github.com/appsmithorg/appsmith
@@ -108,7 +110,7 @@ Appsmith 提供了现成的[客户支持解决方案](https://www.appsmith.com/t
 
 * **跨数据源整合与可视化界面构建**：支持在同一界面中整合多个数据源（如数据库、REST/GraphQL API），并通过拖拽组件构建响应式 UI，无需写大量前端代码。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWNjNjA3OGU0NDAwM2Y4MGY1MjdhZDUwZWNkNDBlNzBfaE5veXVJSVhUTUhjdWVleFJ1V0I1RzRNdmpqdUVsemJfVG9rZW46VVNZQ2JEYWoxbzJxYjN4NVdMV2NIYnhsbjRmXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![Appsmith](https://static-docs.nocobase.com/12-ozp10e.png)
 
 * **丰富的角色分层与工作流控制**：提供“用户（客户）”、“Agent”和“Admin”三种角色权限设置：客户可创建 & 查看自己的工单；Agents 可查看与更新其负责的工单；Admin 可对所有工单进行全局查看与分配，并了解每位 Agent 的工作分布。
 * **自定义组件与统计仪表板**：内建支持各种组件（表格、图表、表单等），可以快速构建工单管理界面以及每个 Agent 的工单分布统计图表，帮助团队直观监控与分析工单趋势。
@@ -116,7 +118,7 @@ Appsmith 提供了现成的[客户支持解决方案](https://www.appsmith.com/t
 
 ## Refine
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDE2NDExNzcxN2JhNmFmYTkxNmYwYWNiMTFiZTk5ZDRfbno1MDdlUHNMc0VkbmpYMUV1dFNnZjdrdWtaUEpvM2NfVG9rZW46VmluN2JBSlNRb0J1all4TEcwU2NrMW5Wbm5oXzE3NTU2NzEzOTY6MTc1NTY3NDk5Nl9WNA)
+![Refine](https://static-docs.nocobase.com/13-auopx8.png)
 
 * GitHub Star: 32.2k
 * GitHub: https://github.com/refinedev/refine
