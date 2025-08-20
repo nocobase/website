@@ -97,7 +97,7 @@
 
 #### 8.4.2 文档表格区块复制展示
 
-在任务表的查看弹窗中，添加一个新的[标签页](https://docs-cn.nocobase.com/manual/ui/pages)——“文档”。在该标签页中，添加表单区块 > 其他记录 > 文档表 >“复制模板”> 点击将我们之前创建的文档表单模板引入。（切记选择 [**复制模板**](https://docs-cn.nocobase.com/handbook/ui/blocks/block-settings/block-template)）
+在任务表的查看弹窗中，添加一个新的[标签页](https://docs-cn.nocobase.com/manual/ui/pages)——“文档”。在该标签页中，添加表单区块 > 其他记录 > 文档表 >“复制模板”> 点击将我们之前创建的文档表单模板引入。（切记选择 [**复制模板**](https://docs-cn.nocobase.com/handbook/block-template)。
 
 ![](https://static-docs.nocobase.com/nocobase_tutorials_zh/202412190013140.png)
 
@@ -107,7 +107,7 @@
 
 由于我们是复制的外部表格模板，并没有和任务表关联。你会发现展示出了全部的文档数据，肯定不是我们预期的效果。
 
-这种情况比较常见，如果我们没有创建对应关系字段，又需要展示关联数据的话，就需要对二者做手动关联。（切记我们采用[**复制模板**](https://docs-cn.nocobase.com/handbook/ui/blocks/block-templates)，不要选择[引用模板](https://docs-cn.nocobase.com/handbook/ui/blocks/block-templates)，不然我们做的所有更改会同步到其他表格区块！）
+这种情况比较常见，如果我们没有创建对应关系字段，又需要展示关联数据的话，就需要对二者做手动关联。（切记我们采用[**复制模板**](https://docs-cn.nocobase.com/handbook/block-template)，不要选择[引用模板](https://docs-cn.nocobase.com/handbook/block-template)，不然我们做的所有更改会同步到其他表格区块！）
 
 - 数据展示关联
 
