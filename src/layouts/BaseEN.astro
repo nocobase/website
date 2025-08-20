@@ -113,9 +113,9 @@ const meta = {
     />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
     
-    <!-- Preload critical fonts for faster LCP -->
-    <link rel="preload" href="/css/fonts/nunito/Nunito-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/css/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Preload critical fonts for faster LCP - Using local WOFF2 for better performance -->
+    <link rel="preload" href="/css/fonts/nunito/nunito-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/fonts/nunito/nunito-Bold.woff2" as="font" type="font/woff2" crossorigin>
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://static-docs.nocobase.com">
@@ -126,15 +126,19 @@ const meta = {
     
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- github-markdown -->
-    <link href="/css/github-markdown-light.css" rel="stylesheet" type="text/css" />
-    <!-- Icons -->
-    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
-    <!-- Balloon css -->
-    <link href="/css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
-    <!-- Slider -->
-    <link rel="stylesheet" href="/css/tiny-slider.css" />
+    <!-- github-markdown - Load asynchronously for non-critical styles -->
+    <link rel="preload" href="/css/github-markdown-light.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/github-markdown-light.css"></noscript>
+    <!-- Icons - Load asynchronously -->
+    <link rel="preload" href="/css/materialdesignicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/materialdesignicons.min.css"></noscript>
+    <link rel="preload" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"></noscript>
+    <!-- Balloon css & Slider - Load asynchronously -->
+    <link rel="preload" href="/css/balloon.min.css?v3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/balloon.min.css?v3"></noscript>
+    <link rel="preload" href="/css/tiny-slider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/tiny-slider.css"></noscript>
     <!-- Main Css -->
     <link href="/css/style.css?v1.7" rel="stylesheet" type="text/css" id="theme-opt" />
     <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
@@ -174,7 +178,9 @@ const meta = {
       color: #c0ccda;
       }
     </style>
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <!-- Brevo form styles - Load asynchronously -->
+    <link rel="preload" href="https://sibforms.com/forms/end-form/build/sib-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"></noscript>
 
     <!-- Optimize font loading -->
     <style>
@@ -183,20 +189,34 @@ const meta = {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       
-      /* Preload fonts and apply after load */
+      /* Preload fonts and apply after load - Using WOFF2 for better compression */
       @font-face {
         font-family: 'Nunito';
-        src: url('/css/fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype');
-        font-weight: 200 900;
+        src: url('/css/fonts/nunito/nunito-Regular.woff2') format('woff2'),
+             url('/css/fonts/nunito/nunito-Regular.woff') format('woff'),
+             url('/css/fonts/nunito/nunito-Regular.ttf') format('truetype');
+        font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       
       @font-face {
         font-family: 'Nunito';
-        src: url('/css/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
-        font-weight: 200 900;
-        font-style: italic;
+        src: url('/css/fonts/nunito/nunito-Bold.woff2') format('woff2'),
+             url('/css/fonts/nunito/nunito-Bold.woff') format('woff'),
+             url('/css/fonts/nunito/nunito-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      
+      @font-face {
+        font-family: 'Nunito';
+        src: url('/css/fonts/nunito/nunito-Light.woff2') format('woff2'),
+             url('/css/fonts/nunito/nunito-Light.woff') format('woff'),
+             url('/css/fonts/nunito/nunito-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
         font-display: swap;
       }
       
