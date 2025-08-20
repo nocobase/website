@@ -70,7 +70,7 @@ NocoBase offers [a ticketing system solution](https://www.nocobase.com/en/soluti
 
 ## Budibase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzQ4Yjc4NzcxNzEwYzYxMGM2NGQwZmZhMDJkZGEzNWRfandwNGdJTTJEYkdBaHloeFZnTHNyeVRPQ2czekVXd0dfVG9rZW46WkZaT2JVdHdob1dLQlF4eU5hOWNoMmJIbnhkXzE3NTU2NzE0MTA6MTc1NTY3NTAxMF9WNA)
+![Budibase](https://static-docs.nocobase.com/9-jy06b6.png)
 
 * GitHub Star: 25.3k
 * GitHub: https://github.com/Budibase/budibase/
@@ -86,7 +86,7 @@ Budibase offers an out-of-the-box[ ticket management template ](https://budibase
 
 * **Customizable Ticket Templates**: Prebuilt ticket and status tracking tables with support for custom fields, role-based permissions, and personalized views.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRjNzMyNjBmMTQ0ZmIwMGM0MWFlNTgyYzI4MjI4YzZfckJUa2RvZDVjNnJ1d3NnUmxsNE82a0pwY2VOUWFRaGtfVG9rZW46VHJMMmJHUENLb2dIZld4ODZmVGNhSG5Cbm1mXzE3NTU2NzE0MTA6MTc1NTY3NTAxMF9WNA)
+![Budibase](https://static-docs.nocobase.com/10-lru3t0.png)
 
 * **Role-Based Interface Design**: Separate UIs for end-users and agents: users submit and track tickets, while agents manage assignments, updates, and reporting.
 * **Automation & Workflow Management**: Automate repetitive tasks such as ticket cancellations, status changes, or notifications with flexible triggers, branching, and loops.
@@ -94,7 +94,7 @@ Budibase offers an out-of-the-box[ ticket management template ](https://budibase
 
 ## Appsmith
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjJkOTU5ZmFkZTBhZjc5ZmEzMTAzOWI5NzkzODBkYjFfWVlqTWUwWHpDUHg0eFd3aFRVMVZ2bHhBRzI0ODBiZXJfVG9rZW46RnFxaWJQQVBibzVzc054NFBOSWNpUzhpbnFjXzE3NTU2NzE0MTA6MTc1NTY3NTAxMF9WNA)
+![Appsmith](https://static-docs.nocobase.com/11-bu94pj.png)
 
 * GitHub Star: 37.7k
 * GitHub: https://github.com/appsmithorg/appsmith
@@ -110,7 +110,7 @@ Appsmith offers ready-made [customer support solutions](https://www.appsmith.com
 
 * **Multi-Source Data Integration & Visual UI Builder**: Combine data from multiple sources (databases, REST, or GraphQL APIs) into one interface using drag-and-drop components.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmI1NTk1NmM0MGI0N2M1YmUxODg4YjcxNTIxNzM4YTFfTGt6VkFvN2FsUzlVb3lLS3J5cmN3b3YweXRsT3pTbVJfVG9rZW46SXlxUWIwWDlob29DbFd4aVFHOGNZWmtnbnJjXzE3NTU2NzE0MTA6MTc1NTY3NTAxMF9WNA)
+![Appsmith](https://static-docs.nocobase.com/12-ozp10e.png)
 
 * **Role-Based Access Control**: Built-in permission layers for “Users,” “Agents,” and “Admins” with separate views, ensuring secure and efficient ticket management.
 * **Custom Components & Analytics Dashboards**: Quickly create ticket-tracking dashboards with tables, charts, and custom widgets to monitor workloads and performance trends.
@@ -118,7 +118,7 @@ Appsmith offers ready-made [customer support solutions](https://www.appsmith.com
 
 ## Refine
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWQ3M2U5YzVmNmZkNzI0MGEwMDUwMDgxNjk2NGY4MTJfNVdDOW5EalpBSk43MG9EZGVhV05RM25yemVlQXhCN05fVG9rZW46RnBNd2JmVDdHb1NJUFZ4QjM4NGNkRnVLbjlnXzE3NTU2NzE0MTA6MTc1NTY3NTAxMF9WNA)
+![Refine](https://static-docs.nocobase.com/13-auopx8.png)
 
 * GitHub Star: 32.2k
 * GitHub: https://github.com/refinedev/refine
