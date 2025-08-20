@@ -56,9 +56,9 @@
 #### 🎉 新特性
 
 - **[client]** 单行文本字段支持输入多个关键词进行筛选 ([#6685](https://github.com/nocobase/nocobase/pull/6685)) by @zhangzhonghe
-  参考文档：[多关键词筛选](https://pr-366.docs-cn.nocobase.com/handbook/multi-keyword-filter)
+  参考文档：[多关键词筛选](https://docs-cn.nocobase.com/handbook/multi-keyword-filter)
 - **[多关键词筛选]** 单行文本字段支持输入多个关键词进行筛选 by @zhangzhonghe
-  参考文档：[多关键词筛选](https://pr-366.docs-cn.nocobase.com/handbook/multi-keyword-filter)
+  参考文档：[多关键词筛选](https://docs-cn.nocobase.com/handbook/multi-keyword-filter)
 - **[模板打印]** 模板打印新增批量打印功能支持。 by @sheldon66
 
 #### 🚀 优化
@@ -96,14 +96,14 @@
 - **[client]**
 
   - 单行文本字段支持输入多个关键词进行筛选 ([#6685](https://github.com/nocobase/nocobase/pull/6685)) by @zhangzhonghe
-    参考文档：[多关键词筛选](https://pr-366.docs-cn.nocobase.com/handbook/multi-keyword-filter)
+    参考文档：[多关键词筛选](https://docs-cn.nocobase.com/handbook/multi-keyword-filter)
   - 表单中的操作按钮联动规则 支持「当前表单」变量 ([#6810](https://github.com/nocobase/nocobase/pull/6810)) by @katherinehhh
 - **[build]** 支持商业授权 ([#6554](https://github.com/nocobase/nocobase/pull/6554)) by @jiannx
 - **[undefined]** 添加导入插件日志 by @aaaaaajie
 - **[操作：导入记录]** 添加导入插件日志 ([#6841](https://github.com/nocobase/nocobase/pull/6841)) by @aaaaaajie
 - **[plugin-commercial]** 支持商业授权 by @jiannx
 - **[多关键词筛选]** 单行文本字段支持输入多个关键词进行筛选 by @zhangzhonghe
-  参考文档：[多关键词筛选](https://pr-366.docs-cn.nocobase.com/handbook/multi-keyword-filter)
+  参考文档：[多关键词筛选](https://docs-cn.nocobase.com/handbook/multi-keyword-filter)
 - **[模板打印]**
 
   - 模板打印新增批量打印功能支持。 by @sheldon66
