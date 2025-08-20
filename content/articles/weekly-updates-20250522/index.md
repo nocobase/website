@@ -54,9 +54,9 @@ Summarize the weekly product update logs, and the latest releases can be checked
 #### 🎉 New Features
 
 - **[client]** Single-line text fields support entering multiple keywords for filtering ([#6685](https://github.com/nocobase/nocobase/pull/6685)) by @zhangzhonghe
-  Reference: [Multi-keyword filter](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  Reference: [Multi-keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
 - **[Multi-keyword filter]** Single-line text fields support entering multiple keywords for filtering by @zhangzhonghe
-  Reference: [Multi-keyword filter](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  Reference: [Multi-keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
 - **[Template print]** Add support for bulk printing in template printing. by @sheldon66
 
 #### 🚀 Improvements
@@ -94,14 +94,14 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[client]**
 
   - Single-line text fields support entering multiple keywords for filtering ([#6685](https://github.com/nocobase/nocobase/pull/6685)) by @zhangzhonghe
-    Reference: [Multi-keyword filter](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+    Reference: [Multi-keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
   - action linkage rule support 'current form' variables ([#6810](https://github.com/nocobase/nocobase/pull/6810)) by @katherinehhh
 - **[build]** support commercial authorization ([#6554](https://github.com/nocobase/nocobase/pull/6554)) by @jiannx
 - **[undefined]** Add the log of the import plugin by @aaaaaajie
 - **[Action: Import records]** Add the log of the import plugin ([#6841](https://github.com/nocobase/nocobase/pull/6841)) by @aaaaaajie
 - **[plugin-commercial]** support commercial by @jiannx
 - **[Multi-keyword filter]** Single-line text fields support entering multiple keywords for filtering by @zhangzhonghe
-  Reference: [Multi-keyword filter](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  Reference: [Multi-keyword filter](https://docs.nocobase.com/handbook/multi-keyword-filter)
 - **[Template print]**
 
   - Add support for bulk printing in template printing. by @sheldon66

@@ -53,9 +53,9 @@
 #### 🎉 新機能
 
 * **[クライアント]** 一行テキストフィールドに複数キーワードフィルタリング機能を追加（[#6685](https://github.com/nocobase/nocobase/pull/6685)）@zhangzhonghe
-  参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  参照：[マルチキーワードフィルタ](https://docs.nocobase.com/handbook/multi-keyword-filter)
 * **[マルチキーワードフィルタ]** 一行テキストフィールドに複数キーワードを入力したフィルタリングをサポート @zhangzhonghe
-  参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  参照：[マルチキーワードフィルタ](https://docs.nocobase.com/handbook/multi-keyword-filter)
 * **[テンプレート印刷]** テンプレート印刷に一括印刷機能を追加 @sheldon66
 
 #### 🚀 機能改善
@@ -91,14 +91,14 @@
 
 * **[クライアント]**
   * 一行テキストフィールドに複数キーワードフィルタリング機能を追加（[#6685](https://github.com/nocobase/nocobase/pull/6685)）@zhangzhonghe
-    参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+    参照：[マルチキーワードフィルタ](https://docs.nocobase.com/handbook/multi-keyword-filter)
   * アクション連携ルールに「現在のフォーム」変数のサポートを追加（[#6810](https://github.com/nocobase/nocobase/pull/6810)）@katherinehhh
 * **[ビルド]** 商用認証をサポート（[#6554](https://github.com/nocobase/nocobase/pull/6554)）@jiannx
 * **[未定義]** インポートプラグインのログを追加 @aaaaaajie
 * **[アクション：レコードのインポート]** インポートプラグインのログを追加（[#6841](https://github.com/nocobase/nocobase/pull/6841)）@aaaaaajie
 * **[plugin-commercial]** 商用機能をサポート @jiannx
 * **[マルチキーワードフィルタ]** 一行テキストフィールドに複数キーワードを入力したフィルタリングをサポート @zhangzhonghe
-  参照：[マルチキーワードフィルタ](https://pr-366.docs.nocobase.com/handbook/multi-keyword-filter)
+  参照：[マルチキーワードフィルタ](https://docs.nocobase.com/handbook/multi-keyword-filter)
 * **[テンプレート印刷]**
   * テンプレート印刷に一括印刷機能を追加 @sheldon66
   * テンプレート印刷に一括印刷機能を追加 @sheldon66
