@@ -140,7 +140,7 @@ GitHub：[github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmi
 
 ### 4. Budibase
 
-官网：[budibase.com]([https://budibase.com](https://budibase.com))
+官网：[https://budibase.com](https://budibase.com)
 
 GitHub：[github.com/Budibase/budibase](https://github.com/Budibase/budibase)
 
