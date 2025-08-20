@@ -4,19 +4,19 @@ Redditでは、工単管理システム（Ticketing System）についての議�
 
 > 「オープンソースのITワークオーダーシステムが必要です。できれば自己ホスティングでき、資産管理、LDAP統合、顧客のセルフサービス請求書作成がサポートされているものがいいです。でも、私は一人で運営しているので、システムはあまり複雑にできません。」
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Njk3MGNkZTMyYTlkMzJkM2RjOTVmMmFmNTIxMGIyMDNfWUFUMjNvVmNJeFR0UFBoSTRydGJTWDJKT2x5RnNSMjNfVG9rZW46RlRZZmJ0Zndrb2dMakJ4VkU0RmM2WUc3blVmXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![best open-source IT ticketing system](https://static-docs.nocobase.com/1-fmw21u.png)
 
 [別の中小企業のITチームはこう話しています：](https://www.reddit.com/r/ITManagers/comments/1mt7oy4/modern_it_ticketing_system_with_automation/)：
 
 > 「ようやく古い工単システムを置き換えることになりました。モダンで導入が簡単、さらに自動化できるツールを探していますが、選択肢が多すぎる上に価格差も大きく、どれを選べばよいかわかりません。」
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmQ1Y2IzODhlYjM4OGY0OTMyMWE3NzM4NmZhMTFmNjVfMHRuWFBtejNEZFJjRGV5eDR1c0p0M2dUSGM2alN4STZfVG9rZW46VURrR2JmWGw0b2pXZ054V3ZOamNkbm9Gbk5oXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![ticketing system](https://static-docs.nocobase.com/2-om79rc.png)
 
 [また、別のチームは次のようなニーズを共有していました：](https://www.reddit.com/r/sysadmin/comments/1mc82jv/free_open_source_ticketing_system_for_it_support/)
 
 > 「メールから自動で工単を生成したい。顧客や管理者への通知、多段階のエスカレーション、こうした機能を無料でオープンソースで実現できるツールはありますか？」
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTU3NjZkNTM1M2ExZTJjODFjMjEwODNiMTI4YmY2ZmJfbTlSVVBQNk1pRk9iVnM3eWhDcXAxWmxWTFd3elRrd3RfVG9rZW46QzI4V2JFUVlBb0taVlB4QkRjT2N6WmdBbnJiXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![ticketing system](https://static-docs.nocobase.com/3-igzf45.png)
 
 こうした声は一見バラバラですが、本質的には共通した課題を示しています：
 
@@ -36,13 +36,15 @@ Redditでは、工単管理システム（Ticketing System）についての議�
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTFmZDFmMDFmMjFiNjc1OGM3ZTczZDM0OGU3MmQyOTlfdjlvbndKc2pPUjA3cXRocDFXUnIxTjk2alRHcUI1TldfVG9rZW46VEVqWGJlMW1Hb2RJWmd4OWVKNGNMdE11bjRkXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/4-v2b19x.png)
 
 * GitHub Star: 16.4k
 * GitHub: https://github.com/nocobase/nocobase
 * Website: https://www.nocobase.com/
 
-**プラットフォーム概要**[NocoBase](https://www.nocobase.com/) はデータモデル駆動とプラグインアーキテクチャを採用したオープンソースのローコード／ノーコードプラットフォームです。従来の工単システムと異なり、柔軟なデータ建模、業務フロー設計、プラグイン拡張機能を提供します。業務に合わせた工単システムを自由に構築したいチームに最適な基盤です。
+**プラットフォーム概要**
+
+[NocoBase](https://www.nocobase.com/) はデータモデル駆動とプラグインアーキテクチャを採用したオープンソースのローコード／ノーコードプラットフォームです。従来の工単システムと異なり、柔軟なデータ建模、業務フロー設計、プラグイン拡張機能を提供します。業務に合わせた工単システムを自由に構築したいチームに最適な基盤です。
 
 **NocoBaseで工単システムを構築する際の特徴**
 
@@ -50,23 +52,23 @@ NocoBase は[チケット管理](https://www.nocobase.com/ja/solutions/ticketing
 
 * **工単ライフサイクルの一元管理**：工単の作成、割当、処理、クローズまで全プロセスを可視化し、追跡可能な管理を実現。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWIyMzI4Y2YxYjZkOGM1MGZmNTBiZjBmYTM1ZTAwZWZfUGRzYXd0elpwUDRQcGFkeXF3MU80WWRDbVhBd0JwTGhfVG9rZW46QlU0R2JMQUczb09FYzN4UTRYVGNwbm1Pbk1kXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/5-ximtla.png)
 
 * **インテリジェントな自動割当と進捗管理**：工単の種類や担当者のスキルに応じた自動割当、進捗状況をリアルタイムで把握。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2Q5MjE2MTg2YjRlNjQyNzNlNjZkYjYwYzNjNjY2YmRfNEROaFBtdjNDQzlEcTlVOEhRME5tYVVmV1ZwZWMxWFpfVG9rZW46V1FPQmJqdjMxb251QnR4Tk40eWNqN0o5bmJoXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/6-721pig.png)
 
 * **マルチチャネルでの顧客対応**：メール、電話、チャットなどのコミュニケーションをAPI経由で統合管理。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTgyZWQ1MDZkMjhjY2UwZTBjZWRkOTA4ODI4OTcxYWFfd1BSWlBHSFpTS3d6Sk4zdVVYb1pTTDFzUWtMUDlmdFJfVG9rZW46TTg4MGJNM0M2b3VxRE14bkJubmNlaDBpblljXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/7-q8xn9i.png)
 
 * **プラグインと自動化ワークフロー**：工単のエスカレーション、通知、データ連携を自動化し、さらに資産管理・レポート・ナレッジベースなどもプラグインで拡張可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjMzNDllNTJkYmJiMWY1MzIxOWRiYTYwNmUzNTVkYjdfT0ZXTGM3R2tYMHNFZHg4R2JyUTEzdnFFS1B2b2VBU3pfVG9rZW46Q3J0WWJSalBwbzNRRWp4ZVJUaGN1eDZWbnVjXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/8-jtp2bm.png)
 
 ## Budibase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDIzZTllMzJiZTUwZjE4ZjY0MGNmODAzMGJjNDFhMTRfVDlmRFBPT3BIY1ozYnF6Yks4VndvMnpjNkREbVM1c25fVG9rZW46SlpsM2JkWExxb1E1UDZ4ak9qSWNNR05sbkloXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![Budibase](https://static-docs.nocobase.com/9-jy06b6.png)
 
 * GitHub Star: 25.3k
 * GitHub: https://github.com/Budibase/budibase/
@@ -82,7 +84,7 @@ Budibase は、すぐに使える[チケット管理](https://budibase.com/busin
 
 * **カスタマイズ可能なチケットテンプレート**：Tickets テーブルとステータス追跡テーブルを標準搭載し、フィールド、ロール権限、ビューを自由に設定可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmM0MjBkMWE0MmQ0NzgxZDU2ZGQ4YjU2OGY2MzEyMDlfYzB6bXJGVWFOc0pZUzJ6RGhEbkNLQUlQTTN0bzRpRlNfVG9rZW46Q2x0VWJXSzhobzRwNld4R1ZJMWNJaTAxbnJkXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![Budibase](https://static-docs.nocobase.com/10-lru3t0.png)
 
 * **複数ロールに対応した UI**：エンドユーザーと担当者（Agent）それぞれに専用 UI を提供。エンドユーザーはチケット提出・追跡が可能で、担当者はチケットの割り当てや更新、ステータス統計を管理できます。
 * **ワークフローの自動化**：チケットキャンセル、ステータス変更記録などを自動化でき、カスタムトリガー、条件分岐、ループ処理なども柔軟に設定可能。
@@ -90,7 +92,7 @@ Budibase は、すぐに使える[チケット管理](https://budibase.com/busin
 
 ## Appsmith
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzNiMDJlYmYzZWUxMTJhOTgxYjkxN2E1MWI5NGI0YzZfZ0ZkTkFXcEUxSVN6aXppbDB5ekVxWVlzaVFwUm5heEJfVG9rZW46SjIybmJHSEIzb3hPYll4S3lMSmNBd2ttbjhlXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![Appsmith](https://static-docs.nocobase.com/11-bu94pj.png)
 
 * GitHub Star: 37.7k
 * GitHub: https://github.com/appsmithorg/appsmith
@@ -106,7 +108,7 @@ Appsmith は、特にサービス事業者向けに最適化された[顧客サ�
 
 * **複数データソースの統合とレスポンシブ UI**：データベースや REST/GraphQL API などを単一画面で統合し、ドラッグ＆ドロップ操作でレスポンシブな UI を構築可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjRjMDNiMzFhMGY4ZTYwMWYxOWUyZmMwZTk5ZDM1YThfQWk2YU84bmJHd0tWTmp3STRTc2hMTVlVaW1NMkRvTVFfVG9rZW46VzUyd2JXN0RXbzd1N3N4dG5LNWNxNW5tbnJmXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![Appsmith](https://static-docs.nocobase.com/12-ozp10e.png)
 
 * **多層ロール権限とワークフロー管理**：顧客、Agent、Admin の 3 ロールを設定可能。顧客はチケットを作成・確認、Agent は担当チケットを更新・管理、Admin は全体の可視化・割り当てを統括します。
 * **カスタムコンポーネント & ダッシュボード**：表、グラフ、フォームなど豊富なコンポーネントを活用し、チケット管理画面や Agent 別の統計ダッシュボードを素早く構築可能。
@@ -114,7 +116,7 @@ Appsmith は、特にサービス事業者向けに最適化された[顧客サ�
 
 ## Refine
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmRiMDE5OGMwZTFmNDQ1Mzk2ZmZiOTk2MDY1OWFlYmRfdTFCdFdrdVF0Tjl4bmwzNFhKR3Ywd09pdVo1N2gzckRfVG9rZW46Q1ZQV2JSSUJsb2VUMnF4M3pmWmNlSHdybklmXzE3NTU2NzEzMDk6MTc1NTY3NDkwOV9WNA)
+![Refine](https://static-docs.nocobase.com/13-auopx8.png)
 
 * GitHub Star: 32.2k
 * GitHub: https://github.com/refinedev/refine
