@@ -97,7 +97,7 @@ To ease future management, save the Document Table along with its create/edit fo
 
 #### 8.4.2 Displaying a Copied Document Table
 
-In the Task view popup, [add a new tab](https://docs-cn.nocobase.com/manual/ui/pages#%E6%A0%87%E7%AD%BE%E9%A1%B5) titled "Documents." Within this tab, add a form block > Other Records > Documents > “Copy Template” > and import the previously created document table template. (Ensure you select [**Copy Template**](https://docs.nocobase.com/handbook/ui/blocks/block-settings/block-template)).
+In the Task view popup, [add a new tab](https://docs-cn.nocobase.com/manual/ui/pages#%E6%A0%87%E7%AD%BE%E9%A1%B5) titled "Documents." Within this tab, add a form block > Other Records > Documents > “Copy Template” > and import the previously created document table template. (Ensure you select [**Copy Template**](https://docs.nocobase.com/handbook/block-template)).
 
 ![](https://static-docs.nocobase.com/Solution/111734263351202415194912.png)
 
@@ -107,7 +107,7 @@ This method streamlines document list creation.
 
 Since we copied an external table template, it’s not yet linked with the Task Collection. You might notice it displays all document data, which isn’t ideal.
 
-This situation is quite common. If we have not created a corresponding relationship field but still need to display related data, we must manually link the two. (**Note:** We use a [copy of the template](https://docs.nocobase.com/handbook/ui/blocks/block-templates), not a [reference template](https://docs.nocobase.com/handbook/ui/blocks/block-templates); otherwise, all changes we make will synchronize with other tables block!)
+This situation is quite common. If we have not created a corresponding relationship field but still need to display related data, we must manually link the two. (**Note:** We use a [copy of the template](https://docs.nocobase.com/handbook/block-template), not a [reference template](https://docs.nocobase.com/handbook/block-template); otherwise, all changes we make will synchronize with other tables block!)
 
 - Data Display Association
 
