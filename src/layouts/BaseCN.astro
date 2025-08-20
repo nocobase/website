@@ -112,6 +112,16 @@ const meta = {
       href="/images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    
+    <!-- Preload critical fonts for faster LCP -->
+    <link rel="preload" href="/css/fonts/nunito/Nunito-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/css/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://static-docs.nocobase.com">
+    <link rel="preconnect" href="https://unicons.iconscout.com">
+    <link rel="dns-prefetch" href="https://sibforms.com">
+    
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- github-markdown -->
