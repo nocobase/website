@@ -3,7 +3,7 @@
 * **[クライアント]**
   * 外部データソースの SQL Server における BIT フィールドをサポート（[#7058](https://github.com/nocobase/nocobase/pull/7058)）@aaaaaajie
   * カスタム集計変数をサポート（[#6916](https://github.com/nocobase/nocobase/pull/6916)）@zhangzhonghe
-    参照：[カスタム変数](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+    参照：[カスタム変数](https://docs-cn.nocobase.com/handbook/custom-variables)
 * **[build]** 商用認証をサポート（[#6554](https://github.com/nocobase/nocobase/pull/6554)）@jiannx
 * **[データソースマネージャー]** ✨ 外部データソースからのコレクションの必要時読み込みをサポート（[#6979](https://github.com/nocobase/nocobase/pull/6979)）@aaaaaajie
 * **[ライセンス設定]** ライセンス設定を追加し、プラグインダウンロード前にライセンス検証を行う（[#7026](https://github.com/nocobase/nocobase/pull/7026)）@jiannx
@@ -14,7 +14,7 @@
   * 外部データソースの SQL Server BIT フィールドをサポート @aaaaaajie
   * 外部データソースからのコレクションの必要時読み込みをサポート @aaaaaajie
 * **[カスタム変数]** カスタム集計変数をサポート @zhangzhonghe
-  参照：[カスタム変数](https://pr-383.docs-cn.nocobase.com/handbook/custom-variables)
+  参照：[カスタム変数](https://docs-cn.nocobase.com/handbook/custom-variables)
 * **[メールマネージャー]**
   * メール削除をサポート @jiannx
   * メール同期間隔設定をサポート @jiannx
