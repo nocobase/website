@@ -3,11 +3,11 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": null,
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新では、",
+  "description": "This week's updates include: supporting the use of a consistent  task title for all approval nodes in same workflow, template print supporting many-to-many array, and more.",
+  "description_cn": "本周更新包括：支持在同一个工作流中使用统一的待办任务标题，模板打印支持多对多数组字段等。",
+  "description_ja": "今週の更新では、同一ワークフロー内で統一したタスクタイトルを使用する機能のサポート、テンプレート印刷における多対多配列フィールドのサポートなど。",
   "slug": "weekly-updates-20250822",
-  "publishedAt": "2025-08-15T00:00:00.000Z",
+  "publishedAt": "2025-08-22T00:00:00.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T08:26:54.564Z"
+  "updatedAt": "2025-08-21T10:45:12.886Z"
 }
