@@ -8,6 +8,8 @@ Traditionally, you'd have to write a backend, connect to a database, and then bu
 
 Fortunately, today we have **excellent open-source tools** that allow you to build production-ready data applications within hours.
 
+![data applications](https://static-docs.nocobase.com/0-ggnmxf.png)
+
 In this article, I’ll introduce 10 powerful open-source projects and explain what types of **data applications** they’re best suited for.
 
 ## Quick Categories
