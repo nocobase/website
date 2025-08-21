@@ -28,6 +28,8 @@ These scattered discussions highlight the same underlying reality:
 
 So, instead of compromising with prebuilt tools, why not build a fully customized ticketing system using an **open-source no-code or low-code platform**?
 
+❤ If you think the existing ticketing system already meets your business needs, you can read: [6 Best Open-Source Ticketing Systems for 2025](https://www.nocobase.com/en/blog/open-source-ticketing-systems)
+
 ---
 
 💬 Hey, you’re reading the NocoBase blog. NocoBase is an open-source no-code/low-code development platform for building enterprise applications, internal tools, and workflow systems — fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
