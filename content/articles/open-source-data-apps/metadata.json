@@ -8,7 +8,7 @@
   "description_ja": "可視化、リアルタイム監視、API管理などのシーンを網羅した、人気のオープンソースデータアプリツール10選。効率的で柔軟なデータアプリを素早く構築できます。",
   "slug": "open-source-data-apps",
   "publishedAt": "2025-08-21T00:59:57.841Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T11:01:26.887Z"
+  "updatedAt": "2025-08-21T11:12:28.498Z"
 }
