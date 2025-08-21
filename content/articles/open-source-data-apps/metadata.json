@@ -3,9 +3,9 @@
   "title": "10 Open-Source Tools to Build Data Apps",
   "title_cn": "10 个开源工具，快速构建数据应用",
   "title_ja": "10 個のオープンソースツールでデータアプリを構築する",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Discover 10 popular open-source data application tools covering visualization, real-time monitoring, and API management to help you build efficient, flexible data apps faster.",
+  "description_cn": "推荐 10 款最受欢迎的开源数据应用工具，涵盖可视化、实时监控、API 管理等场景，助你快速搭建高效、灵活的数据应用。",
+  "description_ja": "可視化、リアルタイム監視、API管理などのシーンを網羅した、人気のオープンソースデータアプリツール10選。効率的で柔軟なデータアプリを素早く構築できます。",
   "slug": "open-source-data-apps",
   "publishedAt": "2025-08-21T00:59:57.841Z",
   "status": "drafted",
@@ -228,5 +228,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T05:54:39.214Z"
+  "updatedAt": "2025-08-21T05:59:39.121Z"
 }
