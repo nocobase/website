@@ -1,6 +1,6 @@
 {
   "id": 656,
-  "title": "10 Open-Source Tools to Build Data Apps",
+  "title": "10 Best Open-Source Tools to Build Internal Data Apps",
   "title_cn": "10 个开源工具，快速构建数据应用",
   "title_ja": "10 個のオープンソースツールでデータアプリを構築する",
   "description": "Discover 10 popular open-source data application tools covering visualization, real-time monitoring, and API management to help you build efficient, flexible data apps faster.",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T08:41:29.300Z"
+  "updatedAt": "2025-08-21T10:56:52.752Z"
 }
