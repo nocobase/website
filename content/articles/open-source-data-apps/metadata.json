@@ -221,12 +221,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-08-21T08:15:32.993Z",
+    "updatedAt": "2025-08-21T08:15:32.998Z",
+    "id": 1787,
+    "title": "Frame 90",
+    "filename": "Frame 90-s9uxmf.png",
+    "extname": ".png",
+    "size": 1334393,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2090-s9uxmf.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2090-s9uxmf.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T05:59:39.121Z"
+  "updatedAt": "2025-08-21T08:41:29.300Z"
 }
