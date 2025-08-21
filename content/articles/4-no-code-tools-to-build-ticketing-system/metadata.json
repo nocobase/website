@@ -8,7 +8,7 @@
   "description_ja": "NocoBase、Budibase、Appsmith、Refine の4つのオープンソースのノーコード/ローコードプラットフォームで、柔軟にカスタマイズ可能な工単システムを簡単に構築。",
   "slug": "4-no-code-tools-to-build-ticketing-system",
   "publishedAt": "2025-08-20T06:28:45.168Z",
-  "status": "published",
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T01:03:53.249Z"
+  "updatedAt": "2025-08-21T06:21:33.942Z"
 }
