@@ -28,6 +28,8 @@
 
 或许我们可以换一个思路：与其在现成工具里不断妥协，不如用一种更自由、简单的方式来构建完全符合你需求的工单系统——**零代码或低代码平台**。
 
+❤ 如果你觉得现有工单系统已经可以满足业务需求了，可以阅读：[2025 年 6 个最佳开源工单系统推荐](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)
+
 ---
 
 💬 欢迎来到 [NocoBase](https://www.nocobase.com/) 的博客。NocoBase 是一个开源无代码/低代码开发平台，用于构建企业级应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
