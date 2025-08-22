@@ -8,7 +8,7 @@
   "description_ja": "今週の更新では、同一ワークフロー内で統一したタスクタイトルを使用する機能のサポート、テンプレート印刷における多対多配列フィールドのサポートなど。",
   "slug": "weekly-updates-20250822",
   "publishedAt": "2025-08-22T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-21T10:45:12.886Z"
+  "updatedAt": "2025-08-22T01:37:48.476Z"
 }
