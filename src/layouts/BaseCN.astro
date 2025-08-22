@@ -7,12 +7,12 @@ const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
 // 定义支持的语言列表
-const supportedLanguages = ['en', 'cn', 'ja'];
+const supportedLanguages = ['en', 'cn', 'ja', 'ru'];
 // 获取当前路径
 const currentPath = Astro.url.pathname;
 
-// 正则表达式匹配以 /en/、/cn/ 或 /ja/ 开头的路径
-const langPrefixRegex = /^\/(en|cn|ja)(\/|$)/;
+// 正则表达式匹配以 /en/、/cn/、/ja/ 或 /ru/ 开头的路径
+const langPrefixRegex = /^\/(en|cn|ja|ru)(\/|$)/;
 
 // 函数用于生成不同语言的 URL
 const generateUrl = (lang: string) => {
@@ -29,12 +29,14 @@ const generateUrl = (lang: string) => {
 let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避免重复
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
+let urlRU = generateUrl('ru').replace(/\/$/, '');
 
 // 特殊处理根路径
-if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja') {
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/ru') {
   urlCN = '/cn';
   urlEN = '/';
   urlJA = '/ja';
+  urlRU = '/ru';
 }
 
 // 确保英文主页是 '/'
@@ -77,6 +79,7 @@ const meta = {
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
     <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
+    <link rel="alternate" href={new URL(urlRU, Astro.site)} hreflang="ru-ru">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
