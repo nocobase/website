@@ -187,12 +187,12 @@ const meta = {
 
     <!-- Optimize font loading -->
     <style>
-      /* Critical font styles - use system fonts first */
+      /* Critical font styles - use Nunito as primary font */
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       
-      /* Preload fonts and apply after load - Using WOFF2 for better compression */
+      /* Font definitions - Using WOFF2 for better compression */
       @font-face {
         font-family: 'Nunito';
         src: url('/css/fonts/nunito/nunito-Regular.woff2') format('woff2'),
@@ -221,11 +221,6 @@ const meta = {
         font-weight: 300;
         font-style: normal;
         font-display: swap;
-      }
-      
-      /* Apply custom font after load */
-      .fonts-loaded body {
-        font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
     </style>
     
