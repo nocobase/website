@@ -3,9 +3,9 @@
   "title": "5 Best Open-Source Alternatives to ServiceNow (with Pricing Comparison)",
   "title_cn": "5 个最佳 ServiceNow 开源替代品（含价格对比）",
   "title_ja": "ServiceNowのオープンソース代替5選（価格比較つき）",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Explore open-source alternatives to ServiceNow: This guide reviews NocoBase, Budibase, GLPI, Zammad, and EspoCRM, comparing features, pricing, and use cases to help you quickly choose the best ITSM tool.",
+  "description_cn": "探索 ServiceNow 开源替代品：本文精选 NocoBase、Budibase、GLPI、Zammad、EspoCRM，全面对比功能、价格与适用场景，助你快速选择最合适的 ITSM 工具。",
+  "description_ja": "ServiceNow のオープンソース代替 を紹介：NocoBase、Budibase、GLPI、Zammad、EspoCRM の機能・価格・用途を比較し、最適な ITSM ツール選びをサポート。",
   "slug": "servicenow-open-source-alternatives",
   "publishedAt": "2025-08-26T02:36:44.078Z",
   "status": "drafted",
@@ -254,5 +254,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-26T02:54:50.716Z"
+  "updatedAt": "2025-08-26T03:04:10.810Z"
 }
