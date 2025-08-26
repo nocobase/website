@@ -8,7 +8,7 @@
   "description_ja": "ServiceNow のオープンソース代替 を紹介：NocoBase、Budibase、GLPI、Zammad、EspoCRM の機能・価格・用途を比較し、最適な ITSM ツール選びをサポート。",
   "slug": "servicenow-open-source-alternatives",
   "publishedAt": "2025-08-26T02:36:44.078Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -248,18 +248,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-08-26T05:17:04.389Z",
-    "updatedAt": "2025-08-26T05:17:04.392Z",
-    "id": 1806,
-    "title": "Frame 91",
-    "filename": "Frame 91-k5kch1.png",
+    "createdAt": "2025-08-26T06:56:11.520Z",
+    "updatedAt": "2025-08-26T06:56:11.523Z",
+    "id": 1807,
+    "title": "Frame 91 (1)",
+    "filename": "Frame 91 (1)-hcqun1.png",
     "extname": ".png",
-    "size": 1160020,
+    "size": 1160922,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Frame%2091-k5kch1.png",
-    "preview": "https://static-docs.nocobase.com/Frame%2091-k5kch1.png",
+    "url": "https://static-docs.nocobase.com/Frame%2091%20(1)-hcqun1.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2091%20(1)-hcqun1.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -270,5 +270,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-26T05:17:12.800Z"
+  "updatedAt": "2025-08-26T06:58:02.878Z"
 }
