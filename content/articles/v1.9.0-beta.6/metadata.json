@@ -8,7 +8,7 @@
   "description_ja": "v1.9.0-beta.6 のリリースノート",
   "slug": "v1.9.0-beta.6",
   "publishedAt": "2025-08-22T09:48:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-25T05:46:28.204Z"
+  "updatedAt": "2025-08-26T01:14:56.308Z"
 }
