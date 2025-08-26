@@ -30,6 +30,12 @@
 * **フル機能型ITSMプラットフォーム** → ServiceNowに近い機能を求める場合
 * **軽量チケット・カスタマーサポートシステム** → シンプルで素早く導入したい場合
 
+---
+
+💬 [NocoBase](https://www.nocobase.com/) ブログへようこそ。NocoBase は、エンタープライズアプリケーションや業務ツール、ワークフローシステムを構築できる、オープンソースのノーコード／ローコード開発プラットフォームです。セルフホスティング、プラグインアーキテクチャ、開発者フレンドリーな設計が特徴です。→ [GitHubで詳しく見る](https://github.com/nocobase/nocobase)
+
+---
+
 ❤ また、FirebaseやAppSheet、OutSystems、Salesforceなど、他の商用サービスのオープンソース代替についても記事でまとめています。興味のある方はぜひあわせてご覧ください。
 
 * [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
@@ -247,3 +253,12 @@ NocoBase、Budibase、GLPI、Zammad、EspoCRM はそれぞれ異なる特徴を�
 チームの規模や業務プロセスに合わせて適切なツールを選べば、**効率的で拡張性の高い ITSM 環境**をスピーディーに構築できます。
 
 もし ServiceNow の代替をお探しなら、ぜひこれらのオープンソースツールを試し、**自社専用のカスタム ITSM / 業務管理プラットフォーム**を作り上げてみてください。
+
+
+**関連読み物：**
+
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
+* [AppSheetの代替物として最適なものは2025年です](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [2025 年、オープンソース代替案がOutSystemsを置き換えつつある理由：技術的自由度とコスト優位性の徹底分析](https://www.nocobase.com/ja/blog/outsystems-open-source-alternatives)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり）](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
+* [2025年のRetoolに対する最良のオープンソース代替品](https://www.nocobase.com/ja/blog/retool-open-source-alternatives)
