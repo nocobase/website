@@ -30,6 +30,12 @@ In this guide, we’ve selected **5 of the best open-source ServiceNow alternati
 * **Full-Featured ITSM Platforms** → Closest in functionality to ServiceNow
 * **Lightweight Ticketing & Helpdesk Systems** → Simple, fast to deploy, and highly efficient
 
+---
+
+💬 Hey, you’re reading the NocoBase blog. NocoBase is an open-source no-code/low-code development platform for building enterprise applications, internal tools, and workflow systems — fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 💡 Looking for more open-source alternatives?
 
 We’ve also covered Firebase, AppSheet, OutSystems, and Salesforce:
@@ -251,3 +257,11 @@ Choosing the right tool based on your team size, IT maturity, and business requi
 🚀 **Ready to explore?**
 
 Try one of these open-source solutions today and start building your **own ServiceNow alternative** tailored to your business.
+
+**Related reading:**
+
+* [6 Open-Source Firebase Alternatives for Self-Hosting and Data Control](https://www.nocobase.com/en/blog/open-source-firebase-alternatives)
+* [The Best Open-Source Alternatives to AppSheet in 2025](https://www.nocobase.com/en/blog/appsheet-open-source-alternatives)
+* [Why Open-Source Alternatives Are Replacing OutSystems in 2025?](https://www.nocobase.com/en/blog/outsystems-open-source-alternatives)
+* [4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love)](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)
+* [The Best Open-Source Alternatives to Retool In 2025](https://www.nocobase.com/en/blog/retool-open-source-alternatives)
