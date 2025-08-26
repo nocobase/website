@@ -30,6 +30,12 @@
 * **全功能 ITSM 平台** → 功能最接近 ServiceNow
 * **轻量工单与客服系统** → 简洁高效，部署快速
 
+---
+
+💬 欢迎来到 [NocoBase](https://www.nocobase.com/) 的博客。NocoBase 是一个开源无代码/低代码开发平台，用于构建企业级应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
+
+---
+
 ❤ 除了 ServiceNow，我们之前也整理过 Firebase、AppSheet、OutSystems、Salesforce 的开源替代品，欢迎点击阅读～
 
 * [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
@@ -247,3 +253,11 @@ EspoCRM 是一款开源客户关系管理系统，同时支持工单、项目和
 NocoBase、Budibase、GLPI、Zammad 和 EspoCRM 各具特点，覆盖从工单系统、资产管理到客户关系管理的不同场景。根据团队规模和业务需求选择合适的工具，可以快速搭建高效、可扩展的业务流程。
 
 如果你在寻找 ServiceNow 的替代品，不妨挑选一款开源工具，打造属于你的定制化 ITSM 或业务管理平台！
+
+**相关阅读：**
+
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
+* [2025 年 AppSheet 最佳开源替代品](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [2025 年开源替代方案为何正在取代 OutSystems？技术自由度与成本优势深度解析](https://www.nocobase.com/cn/blog/outsystems-open-source-alternatives)
+* [四个强大的 Salesforce 开源替代方案（附成本对比）](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)
+* [2025 年最佳的 Retool 开源替代方案](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)
