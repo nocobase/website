@@ -3,9 +3,9 @@
   "title": "No-Code or Vibe Coding? 9 Tools to Consider",
   "title_cn": "无代码还是 Vibe Coding？9 大工具推荐",
   "title_ja": "ノーコードか、それともVibe Codingか？",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "In early 2025, the community hotly debated whether Vibe Coding would end no-code. This article points out that each has its suitable scenarios, their boundaries are gradually blurring, and recommends the best Vibe Coding platforms, no-code platforms, and hybrid solutions that combine both.",
+  "description_cn": "2025 年初社区热议 Vibe Coding 是否终结无代码，本文指两者各有适配场景且边界渐模糊，并推荐最佳 Vibe Coding 工具、无代码平台及融合方案。",
+  "description_ja": "2025 年初、コミュニティでは Vibe Coding がノーコードを終わらせるかどうかが大いに議論されていました。本文では両者がそれぞれ適したシナリオを持ち、境界線が徐々に曖昧になっていることを指摘し、最適な Vibe Coding ツール、ノーコードプラットフォーム及び融合ソリューションを推奨しています。",
   "slug": "no-code-or-vibe-coding",
   "publishedAt": "2025-08-28T08:14:08.659Z",
   "status": "drafted",
@@ -322,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-28T09:24:24.341Z"
+  "updatedAt": "2025-08-28T10:44:34.991Z"
 }
