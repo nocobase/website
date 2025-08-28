@@ -1,6 +1,6 @@
 ## **Introduction**
 
-In early 2025, it felt like every day on Reddit I came across the same question: *“Will Vibe Coding replace no-code?”*
+In early 2025, it felt like every day on [Reddit](https://www.reddit.com/r/nocode/comments/1khjivw/been_vibe_coding_for_5_months_but_went_back_to/) I came across the same question: *“Will Vibe Coding replace no-code?”*
 
 The buzz was everywhere—people were excitedly sharing experiments with Vibe Coding, from small features to full applications. It seemed like almost anything could be built just by having a conversation with AI.
 
@@ -15,6 +15,12 @@ The reason was straightforward: the instability of AI-generated results (halluci
 For many who tested Vibe Coding in real-world projects, the conclusion was clear: no-code remains the more stable and controllable option.
 
 So maybe the real question isn’t *which one is better*, but *when to use each*.
+
+---
+
+💬 Hey, you’re reading the NocoBase blog. NocoBase is an open-source no-code/low-code development platform for building enterprise applications, internal tools, and workflow systems — fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
 
 ## **How to Choose?**
 
@@ -330,7 +336,6 @@ In more and more scenarios, the focus is shifting away from *writing code* towar
 Hopefully this article helps you find the tools that best fit your needs.
 
 If you’re already building with these platforms, I’d love to hear about your experience—and feel free to share this article with others who might find it useful. ❤️
-
 
 **Related reading:**
 
