@@ -1,6 +1,6 @@
 ## 引言
 
-2025 年初，我几乎每天都能在 Reddit 上刷到类似话题：“Vibe Coding 会不会终结无代码？”
+2025 年初，我几乎每天都能在 [Reddit](https://www.reddit.com/r/nocode/comments/1khjivw/been_vibe_coding_for_5_months_but_went_back_to/) 上刷到类似话题：“Vibe Coding 会不会终结无代码？”
 
 社区热闹得像是过节，大家都在分享用 Vibe Coding 的各种尝试：从小功能到完整的应用，似乎一切都能通过对话实现。
 
@@ -15,6 +15,12 @@
 这让尝试过 Vibe Coding，并将其投入真实业务的用户发现：无代码依然是一个更稳定、更可控的选择。
 
 也许问题不在于谁更好，而是在于什么时候用哪一个。
+
+---
+
+💬 欢迎来到 [NocoBase](https://www.nocobase.com/) 的博客。NocoBase 是一个开源无代码/低代码开发平台，用于构建企业级应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
+
+---
 
 ## 如何选择无代码或 Vibe Coding？
 
@@ -314,7 +320,6 @@
 希望这篇文章能帮你找到最适合的工具。
 
 如果你已经开始用这些工具构建产品，欢迎来聊聊你的使用体验！也欢迎分享这篇文章给更多的朋友。❤️
-
 
 **相关阅读：**
 
