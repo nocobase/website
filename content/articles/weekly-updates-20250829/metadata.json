@@ -3,11 +3,11 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's updates include: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "fetch is not defined",
+  "description": "This week's update includes: adding an inline template type for notification configuration and supporting consistent task titles across all approval nodes in the same workflow.",
+  "description_cn": "本周更新包括：工作流审批模块新增通知配置内联模板类型，并支持在同一工作流使用统一待办任务标题。",
+  "description_ja": "今週のアップデート内容：通知設定にインラインテンプレートタイプを追加、同一ワークフロー内のすべての承認ノードで統一したタスクタイトルを使用する機能をサポートしました。",
   "slug": "weekly-updates-20250829",
-  "publishedAt": "2025-07-25T00:00:00.000Z",
+  "publishedAt": "2025-08-29T00:00:00.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-28T07:54:38.694Z"
+  "updatedAt": "2025-08-28T08:06:09.371Z"
 }
