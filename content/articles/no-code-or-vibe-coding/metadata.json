@@ -2,7 +2,7 @@
   "id": 666,
   "title": "No-Code or Vibe Coding? 9 Tools to Consider",
   "title_cn": "无代码还是 Vibe Coding？9 大工具推荐",
-  "title_ja": null,
+  "title_ja": "ノーコードか、それともVibe Codingか？",
   "description": null,
   "description_cn": null,
   "description_ja": null,
@@ -321,6 +321,6 @@
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-08-28T08:31:07.779Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-08-28T09:24:24.341Z"
 }
