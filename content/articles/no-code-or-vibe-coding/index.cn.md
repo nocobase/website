@@ -8,7 +8,7 @@
 
 一位用户分享道：“**我 Vibe Coding 了 5 个月，但最终还是回到了无代码。**”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JmZWEyMjdkZDY5MzJmMTBjOTNlZTE3NjY0Njg2YThfREpyVU5XSmFFSEhxb2s5a3VuTHhXdHBVUlBUaUl3M0pfVG9rZW46SmhNMWJhU1Zxb2MzYmF4Smx2QWNSdW1ubnBmXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Been vibe coding for 5 months, but went back no-code.](https://static-docs.nocobase.com/1-2y2mn5.png)
 
 原因很现实：**AI 生成的不稳定性（幻觉问题）**。遇到 bug 后的修复调试让人崩溃，更别提长期维护。
 
@@ -53,7 +53,7 @@
 
 ### Cursor
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGNlZTMzOGMxNjU4ZmVmZmE5OWIzMjQ4ZDA2ZTdjZjVfU2JKeHg0VWRmZjF0WGtQdXZTVDZNZ0JlTWRKdm1PcHVfVG9rZW46TUtQNWJlcWRGb0RPQm14dENoeWNzbTVobjFkXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Cursor](https://static-docs.nocobase.com/2-g9rzlq.PNG)
 
 **官网**：https://www.cursor.sh
 
@@ -80,7 +80,7 @@
 
 ### v0.app
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjE4ZjU3NWMwMjViYjRjYWFhZTkyYjMxODA4Yjc4MzJfMFB1ZDV4TERNb0RCQk51QUlyZVB5bm9yNFFMVHN0N3dfVG9rZW46SmtxNmI1QUl5b2tLbEd4RWNlWGN2NW84bnVoXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![v0.app](https://static-docs.nocobase.com/3-ntbi6k.png)
 
 **官网**：https://v0.dev
 
@@ -107,7 +107,7 @@
 
 ### Lovable
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDIyMTkzZDA3NThkYmQwZDIwNmY1OWUwNTdiOWMwYWRfNkprV0tNenNEd0MxTEl3YzcxZjB4cGJEVUFiOEU5V1VfVG9rZW46Qndwd2JwclhVb0JuOEp4UnNZcGM5S3RUblJkXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Lovable](https://static-docs.nocobase.com/4-0hlhc5.png)
 
 **官网**：https://lovable.so
 
@@ -136,7 +136,7 @@
 
 ### NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzkzOThjOTBiYWNlNTcwOTlkYzIxYmM4NDQ5MmQxY2VfRlp4TTFleTJNUUFyYnpBOGU2cmtDRFc3OFBvUHRQQ3lfVG9rZW46S2pCaWJ1T0FPb25nR3R4eEQzQWM3Vk5rblFmXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![NocoBase](https://static-docs.nocobase.com/5-x1k9fg.png)
 
 **官网**：[https://www.nocobase.com](https://www.nocobase.com)
 
@@ -163,7 +163,7 @@
 
 ### Retool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2QyYTZiNDU2NzczOWQxNTE0YWI2ZDg4NDgxOGJlNmRfU1F0S0xZZEROMmlnOFJGdVVnYkJ6c3hvZlQ0VmV1bDRfVG9rZW46TmRoV2JyOHFOb0g5WWh4d2U1UmN0eDhEbjdlXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Retool](https://static-docs.nocobase.com/6-938ipz.png)
 
 **官网**：[https://retool.com](https://retool.com)
 
@@ -194,7 +194,7 @@
 
 ### Budibase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGZhYWQyNmYzMGM3ODAwNmQ1MTJjYjNkMTBlY2YzNmJfN0N4V2dlQXltWGJtTVU4QWZuTGpPelU5Z3N3aDBBaXVfVG9rZW46Q0I3VGJudnpLb2lyYmp4ZHFZQ2NJTTJBbnpjXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Budibase](https://static-docs.nocobase.com/7-nkihyf.png)
 
 **官网**：[https://budibase.com](https://budibase.com)
 
@@ -224,7 +224,7 @@
 
 ### ToolJet
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDZjMzcxMTUwYmYyOWFlMmQ0YzQ3M2E2ODYxMGViYmVfaG1hZ3ZhVjBCV3lPSXNBOTB0UUFQV2phQmd6VnpkWWZfVG9rZW46R01zU2I3b3drbzNacll4Yjd5U2NoQndQbmhnXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![ToolJet](https://static-docs.nocobase.com/8-2stofd.png)
 
 **官网**：https://www.tooljet.com
 
@@ -251,7 +251,7 @@
 
 ### Bubble
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWQ4MjliZmYzNGJmM2I1ZjFlMmY0YzhlMTU1MjFmMWNfZm16NkxJYzBka3AyQ3NEN05Ub2M5eDh2Wm1LZ1BTUDVfVG9rZW46VVNiVGJXVEpib2pkVnl4R1o5Q2NPRVk4bmtkXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Bubble](https://static-docs.nocobase.com/9-6jhy5s.png)
 
 **官网**：https://bubble.io
 
@@ -280,7 +280,7 @@
 
 ### Flowise
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWM0YTdjODg0YTYyYTYwY2Q3YTFkNjkxNGZlOTI2MTBfSkJ6R3k5dkxaNlVacU9FSGZ6SjVPTTlYekJTYm1aVEhfVG9rZW46QlFGVGJudzZab2RxZ3d4enV5ZWNoNkJRbjljXzE3NTYzNjg4ODA6MTc1NjM3MjQ4MF9WNA)
+![Flowise](https://static-docs.nocobase.com/10-0acu8o.png)
 
 **官网**：[https://flowiseai.com](https://flowiseai.com)
 
