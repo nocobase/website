@@ -4458,5 +4458,25 @@
     "title_cn": "ServiceNow 开源替代",
     "title_ja": "ServiceNowオープンソース代替",
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-08-28T08:24:10.376Z",
+    "updatedAt": "2025-08-28T08:24:10.376Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 229,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 227,
+    "title": "Vibe Coding",
+    "title_cn": "Vibe Coding",
+    "title_ja": "Vibe Coding",
+    "updatedById": 3
   }
 ]
