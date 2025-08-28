@@ -6,7 +6,9 @@ The buzz was everywhere—people were excitedly sharing experiments with Vibe Co
 
 But a few months later, the mood shifted.
 
-One user posted: *“I tried Vibe Coding for five months, but in the end, I went back to no-code.”*
+One user posted: *“Been vibe coding for 5 months, but went back no-code.”*
+
+![Been vibe coding for 5 months, but went back no-code.](https://static-docs.nocobase.com/1-2y2mn5.png)
 
 The reason was straightforward: the instability of AI-generated results (hallucinations). Debugging and fixing errors was exhausting, and long-term maintenance was even more daunting.
 
@@ -51,6 +53,8 @@ Next, I’ll recommend tools across three categories: Vibe Coding platforms, no-
 
 ### **Cursor**
 
+![Cursor](https://static-docs.nocobase.com/2-g9rzlq.PNG)
+
 **Website:**[https://www.cursor.sh](https://www.cursor.sh)
 
 **Overview**
@@ -77,6 +81,8 @@ Cursor is an IDE built specifically for the AI coding experience. It’s not jus
 * **Risk of skill gaps**: Heavy reliance on AI generation may turn developers into “prompt operators” rather than true system designers.
 
 ### **v0.app**
+
+![v0.app](https://static-docs.nocobase.com/3-ntbi6k.png)
 
 **Website:**[https://v0.dev](https://v0.dev)
 
@@ -105,6 +111,8 @@ Built by Vercel, v0 is an AI-powered UI generator that lets you create frontend 
 
 ### **Lovable**
 
+![Lovable](https://static-docs.nocobase.com/4-0hlhc5.png)
+
 **Website:**[https://lovable.so](https://lovable.so)
 
 **Overview** Lovable takes a more conversational approach: you describe what you need in natural language, and it generates a complete website for you.
@@ -132,6 +140,8 @@ Built by Vercel, v0 is an AI-powered UI generator that lets you create frontend 
 
 ### **NocoBase**
 
+![NocoBase](https://static-docs.nocobase.com/5-x1k9fg.png)
+
 **Website:**[https://www.nocobase.com](https://www.nocobase.com)
 
 **Overview**
@@ -158,6 +168,8 @@ NocoBase is a data-model–driven open-source no-code platform built for mid-to-
 * **Plugin ecosystem still maturing**: As an open-source project, the marketplace of plugins and templates is growing but not yet at the level of commercial platforms.
 
 ### **Retool**
+
+![Retool](https://static-docs.nocobase.com/6-938ipz.png)
 
 **Website:**[https://retool.com](https://retool.com)
 
@@ -190,6 +202,8 @@ Retool is an all-in-one platform for building enterprise-grade internal tools. I
 
 ### **Budibase**
 
+![Budibase](https://static-docs.nocobase.com/7-nkihyf.png)
+
 **Website:**[https://budibase.com](https://budibase.com)
 
 **Overview**
@@ -220,6 +234,8 @@ Budibase is an open-source low-code platform focused on building forms, approval
 
 ### **ToolJet**
 
+![ToolJet](https://static-docs.nocobase.com/8-2stofd.png)
+
 **Website:**[https://www.tooljet.com](https://www.tooljet.com)
 
 **Overview**
@@ -246,6 +262,8 @@ ToolJet is an open-source low-code platform built around **drag-and-drop UI + mu
 * **Limited complex interactions**: While JS scripting is supported, building highly customized UIs or managing advanced state logic remains harder compared to fully coded or highly programmable frameworks.
 
 ### **Bubble**
+
+![Bubble](https://static-docs.nocobase.com/9-6jhy5s.png)
 
 **Website:**[https://bubble.io](https://bubble.io)
 
@@ -275,6 +293,8 @@ Bubble is one of the most established full-stack no-code platforms, covering eve
 * **Weak self-hosting support**: Bubble is closed-source and only available as a hosted service, limiting its adoption for enterprises or data-sensitive projects.
 
 ### **Flowise**
+
+![Flowise](https://static-docs.nocobase.com/10-0acu8o.png)
 
 **Website:**[https://flowiseai.com](https://flowiseai.com)
 
