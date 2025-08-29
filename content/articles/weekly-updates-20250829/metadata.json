@@ -8,7 +8,7 @@
   "description_ja": "今週のアップデート内容：通知設定にインラインテンプレートタイプを追加、同一ワークフロー内のすべての承認ノードで統一したタスクタイトルを使用する機能をサポートしました。",
   "slug": "weekly-updates-20250829",
   "publishedAt": "2025-08-29T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-28T13:06:56.406Z"
+  "updatedAt": "2025-08-29T00:52:14.245Z"
 }
