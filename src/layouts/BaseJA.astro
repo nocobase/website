@@ -250,40 +250,6 @@ const meta = {
             border-radius: 8px !important;
         }
 
-        /* 自定义搜索按钮样式 */
-        .search-btn {
-            float: right;
-            line-height: 68px;
-            text-align: right;
-            padding-left: 15px;
-            position: relative;
-            margin-top: 4px;
-        }
-
-        .custom-search-button {
-            width: 27px;
-            height: 27px;
-            border-radius: 50%;
-            background: transparent;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            margin-top: 20px; /* 调整到与GitHub图标对齐 */
-        }
-
-        .custom-search-button:hover {
-            background: #f0f0f0;
-            transform: scale(1.05);
-        }
-
-        .custom-search-button i {
-            font-size: 27px; /* 更大的图标 */
-            color: #24292f; /* 黑色，与GitHub图标颜色一致 */
-        }
-
         /* GitHub图标样式 */
         .github {
             float: right;
@@ -369,7 +335,7 @@ const meta = {
 
         /* 移动端适配 */
         @media (max-width: 768px) {
-            .github, .search-btn {
+            .github {
                 display: none;
             }
         }
@@ -452,11 +418,6 @@ const meta = {
                 <i class="uil uil-github"></i>
                 <span class="github-stars">16k</span>
             </a>
-        </div>
-        <div class="search-btn">
-            <button id="custom-search-btn" class="custom-search-button" title="検索">
-                <i class="uil uil-search"></i>
-            </button>
         </div>
         <!-- End Logo container-->
         <div class="menu-extras">
@@ -903,38 +864,6 @@ const meta = {
 
 <DocSearch/>
 <script>
-      // 自定义搜索按钮功能
-      document.addEventListener('DOMContentLoaded', function() {
-        const customSearchBtn = document.getElementById('custom-search-btn');
-        
-        function triggerDocSearch() {
-          // 尝试多种方式触发DocSearch
-          const searchButton = document.querySelector('.DocSearch-Button');
-          if (searchButton) {
-            searchButton.click();
-            return;
-          }
-          
-          // 尝试通过docsearch实例触发
-          if (window.docsearch) {
-            const modal = document.querySelector('.DocSearch-Modal');
-            if (modal) {
-              modal.style.display = 'block';
-            }
-          }
-          
-          // 尝试触发键盘事件
-          document.dispatchEvent(new KeyboardEvent('keydown', {
-            key: 'k',
-            metaKey: true,
-            bubbles: true
-          }));
-        }
-        
-        if (customSearchBtn) {
-          customSearchBtn.addEventListener('click', triggerDocSearch);
-        }
-      });
 </script>
 </body>
 </html>
