@@ -1,13 +1,13 @@
 {
-  "id": 660,
-  "title": "NocoBase v1.9.0-beta.6: Support to split async task services by env and event queue",
-  "title_cn": "NocoBase v1.9.0-beta.6：支持通过环境变量和队列进行异步任务服务拆分",
-  "title_ja": "NocoBase v1.9.0-beta.6：環境変数（env）とイベントキューによる非同期タスクサービスの分割をサポート",
-  "description": "Release Note of v1.9.0-beta.6",
-  "description_cn": "v1.9.0-beta.6 更新日志",
-  "description_ja": "v1.9.0-beta.6 のリリースノート",
-  "slug": "v1.9.0-beta.6",
-  "publishedAt": "2025-08-22T09:48:00.000Z",
+  "id": 663,
+  "title": "NocoBase v1.8.21: Bug Fixes",
+  "title_cn": "NocoBase v1.8.21：缺陷修复",
+  "title_ja": "NocoBase v1.8.21：不具合修正",
+  "description": "Release Note of v1.8.21",
+  "description_cn": "v1.8.21 更新日志",
+  "description_ja": "v1.8.21 のリリースノート",
+  "slug": "v1.8.21",
+  "publishedAt": "2025-08-26T15:50:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,21 +30,21 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2025-08-22T09:48:58.476Z",
-        "updatedAt": "2025-08-22T09:48:58.476Z",
+        "createdAt": "2025-08-26T15:50:21.752Z",
+        "updatedAt": "2025-08-26T15:50:21.752Z",
         "tagId": 4,
-        "articleId": 660
+        "articleId": 663
       }
     }
   ],
   "sub_tags": [
     {
-      "createdAt": "2025-01-22T06:43:36.737Z",
-      "updatedAt": "2025-01-22T06:43:36.737Z",
-      "id": 114,
-      "title": "Beta",
-      "title_cn": null,
-      "sort": 113,
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -52,33 +52,33 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "Latest",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2025-08-25T05:46:28.208Z",
-        "updatedAt": "2025-08-25T05:46:28.208Z",
-        "articles_id": 660,
-        "tags_id": 114
+        "createdAt": "2025-08-27T01:13:32.424Z",
+        "updatedAt": "2025-08-27T01:13:32.424Z",
+        "articles_id": 663,
+        "tags_id": 116
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-08-25T05:40:21.212Z",
-    "updatedAt": "2025-08-25T05:40:21.216Z",
-    "id": 1790,
-    "title": "next",
-    "filename": "next-97gouq.png",
+    "createdAt": "2025-08-27T01:12:34.123Z",
+    "updatedAt": "2025-08-27T01:12:34.131Z",
+    "id": 1808,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-brboaf.png",
     "extname": ".png",
-    "size": 115143,
+    "size": 88820,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/next-97gouq.png",
-    "preview": "https://static-docs.nocobase.com/next-97gouq.png",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-brboaf.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-brboaf.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-26T01:14:56.308Z"
+  "updatedAt": "2025-08-27T01:13:32.416Z"
 }
