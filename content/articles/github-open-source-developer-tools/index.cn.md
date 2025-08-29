@@ -660,6 +660,8 @@
 
 ### **5. Daily.dev (⭐19.6k)**
 
+![Daily.dev.png](https://static-docs.nocobase.com/Daily.dev-0f5md7.png)
+
 **GitHub**：https://github.com/dailydotdev/daily
 
 **官网**：https://daily.dev/
