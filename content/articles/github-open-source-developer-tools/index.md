@@ -551,7 +551,7 @@ Next, we will introduce these tools in detail according to their functional cate
 **Core Features**:
 
 * Static Analysis & Error Suggestions: Automatically detects syntax errors, unsafe operations, and common pitfalls in shell scripts, providing clear explanations and improvement suggestions to make code more robust.
-* Broad Integration & Ease of Use: Supports integration with 主流 editors (e.g., VS Code, Vim), CI platforms (e.g., CodeClimate, Codacy), and package managers, making it easy to incorporate into development workflows.
+* Broad Integration & Ease of Use: Supports integration with mainstream editors (e.g., VS Code, Vim), CI platforms (e.g., CodeClimate, Codacy), and package managers, making it easy to incorporate into development workflows.
 * Open Source & Comprehensive Documentation: Licensed under GPLv3, with detailed documentation and a Wiki, and continuously maintained on GitHub for community contributions and custom usage.
 
 ### **2. Kaniko (⭐15.7k)**
