@@ -141,7 +141,7 @@
 * 多轮协作式交互：可以就项目结构、Bug 或代码逻辑与你对话、主动提问、请求代码审查，像一个真实的开发同事。
 * 全流程开发伴侣：从需求理解、代码编写、调试测试到部署交付，GPT-Pilot 都可自动或辅助完成。
 
-### **3. Agno (⭐24.3k)**
+### **3. Agno (⭐32.5k)**
 
 ![Agno.png](https://static-docs.nocobase.com/Agno-vl285y.png)
 
@@ -426,7 +426,7 @@
 * 响应式界面与可视化：提供响应式 UI、小部件支持，支持互动式数据流展示。
 * 可复制与共享的 Git 友好 Python：以 Python 为存储格式，可版本控制，支持转换为脚本、管道、API 等。
 
-### **6. Devpod (⭐14k)**
+### **7. Devpod (⭐14k)**
 
 ![Devpod.png](https://static-docs.nocobase.com/Devpod-fxsxl9.png)
 

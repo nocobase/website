@@ -157,7 +157,7 @@ Next, we will introduce these tools in detail according to their functional cate
 * Powerful reasoning & multimodal support: Treats reasoning as a first-class citizen; natively supports text, image, audio and video input/output, ideal for complex autonomous decision-making scenarios.
 * High performance & ecosystem integration: Boasts millisecond-level agent startup, low memory usage, built-in Agentic RAG, 20+ vector database integrations and FastAPI deployment; compatible with 23+ LLM providers for lock-in-free scalability.
 
-### **3. Tabby (⭐32k)**
+### **4. Tabby (⭐32k)**
 
 ![Tabby.png](https://static-docs.nocobase.com/691285de54d548f6f71c2c13a850d29f.png)
 
@@ -237,7 +237,7 @@ Next, we will introduce these tools in detail according to their functional cate
 * Token counting & Git awareness: Counts tokens per file, automatically ignores files per .gitignore, optimizing context input.
 * Balanced security & efficiency: Supports Secretlint security scanning and offers compression—boosts efficiency while preventing sensitive data leaks.
 
-### **9. SWE-agent (⭐15.3k)**
+### **9. SWE-agent (⭐17.2k)**
 
 ![SWE-agent.png](https://static-docs.nocobase.com/SWE-agent-rgfa8w.png)
 
@@ -551,7 +551,7 @@ Next, we will introduce these tools in detail according to their functional cate
 **Core Features**:
 
 * Static Analysis & Error Suggestions: Automatically detects syntax errors, unsafe operations, and common pitfalls in shell scripts, providing clear explanations and improvement suggestions to make code more robust.
-* Broad Integration & Ease of Use: Supports integration with 主流 editors (e.g., VS Code, Vim), CI platforms (e.g., CodeClimate, Codacy), and package managers, making it easy to incorporate into development workflows.
+* Broad Integration & Ease of Use: Supports integration with mainstream editors (e.g., VS Code, Vim), CI platforms (e.g., CodeClimate, Codacy), and package managers, making it easy to incorporate into development workflows.
 * Open Source & Comprehensive Documentation: Licensed under GPLv3, with detailed documentation and a Wiki, and continuously maintained on GitHub for community contributions and custom usage.
 
 ### **2. Kaniko (⭐15.7k)**
@@ -636,7 +636,7 @@ Next, we will introduce these tools in detail according to their functional cate
 * Excellent UX: Emphasizes a simple and intuitive interface design, allowing developers to use it happily and get started quickly.
 * Open-source & free: Fully open-source, supporting self-deployment or direct online use to flexibly meet team needs.
 
-### 3. DevToys (⭐28.5k)
+### 3. DevToys (⭐29.8k)
 
 ![DevToys.png](https://static-docs.nocobase.com/0b4f007802994e39968fa184e1a0bba2.png)
 
