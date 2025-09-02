@@ -1,6 +1,6 @@
 ワークフロー自動化ツールの分野において、**[Zapier](https://zapier.com/)** は長年にわたり最も人気があり、成熟したソリューションの一つです。Zapier は 2011年に Wade Foster、Bryan Helmig、Mike Knoop によって創設され、当初は中小企業が異なる SaaS プラットフォーム間でデータを自動的に同期できるよう支援するために開発されました。十年以上の発展を経て、Zapier は現在 7,000 以上のアプリ統合をサポートし、Gmail、Slack、Notion、Salesforce、Google Sheets などの主要ツールをカバー。全世界で数百万のユーザーに利用されています。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDQ4ZjUzYmE1ZDI3NWE0NWVmOWFhZWVmNmE0NjE2NjVfR3drdUpKaVlTRmdtNU81UGUwSkVSVHJ4UGFzcjhYMnFfVG9rZW46S25qQmJGRnBab2FkRnh4V1JVdmNNNFQybnBsXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
 低コードのビジュアルワークフロー、大量のプリセットテンプレート、安定したクラウドホスティングサービスにより、Zapier は多くの企業にとって自動化プロセスの第一選択となっています。
 
@@ -10,23 +10,23 @@
 
 一見簡単な自動化タスク、例えば Google Docs からドキュメントを取得する といった作業でも、Zapier では Beta API の利用やカスタムコードの作成が必要になる場合があります。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzEwOGEwOWE5MTAwYjIzODM3MTcyZmIyN2U0YWE1MThfN21CQ0EycEQzR01aNG9yY1N0OXByemlwS1RaR3E1TjlfVG9rZW46Um5RRmI1ZE9kb0k1ZW94c2FqdmNoYUFEbjNjXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Limited Flexibility.PNG](https://static-docs.nocobase.com/2-kxyoos.PNG)
 
 **2. 高コストでユーザー体験が不十分**
 
 Zapier のサブスクリプション費用は比較的高額ですが、ユーザーは依然として エラーのトラブルシューティング、フロー設定、ドキュメント確認に多くの時間を費やす必要があります。また、公式サポートの対応も遅いことが多く、「料金を払っているのに、まるで二次開発をしているように感じる」という声もあります。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDFmMjkzY2I5OWM0NGFlZmM2NGIxYzA2N2U1YTEzMDhfZXgySWlSbFlNMW9ySnpiUG9NZ1hPVVM5d3BveFJMd3dfVG9rZW46Vk94ZGIyMkJRbzZianV4WjJjVGN6VEd6bkJoXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/3-ivuemc.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjliZGFmMjg1NTE5ZmJmYzIwYTMwYmVlNDBiMTE2NmVfVlRuUzFaMU9xbVFaOHM4ODJlcGdHZUFPRXpFcDVqOENfVG9rZW46RTEyZmJlUXhXb2NBckN4YkxraGM4Smg2bnVlXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/4-bxonkv.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDc4MTkzZTU3ZmM1MGE2MDUwZDNiYTZmZGE1MWMyOWRfY2lOVEUyRmM5ck16aHpNUHFrWDFvT2NqdjJZWW1pYjdfVG9rZW46VGVKNGJYVjg0b28xb3p4SExwemNyendvbkRjXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/5-hhaqis.PNG)
 
 **3.「ノーコード」の約束が完全ではない**
 
 Zapier は「ノーコード自動化プラットフォーム」と謳っていますが、フローが少し複雑になると、Python や JavaScript のコーディングが必要になることがあります。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU3YmEyMjhiMWNiOTBjNGNjZTEyYWI3Mjc4MDM3YjVfaUhaRGNIS2VCRnl2dFNZMzJhNnF5Njh4WVloRTN2TDRfVG9rZW46TERkeWJ2R2V2b0dCV1p4M0pJdmMxbFV1bmplXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![The “No-Code” Promise Often Falls Short.PNG](https://static-docs.nocobase.com/6-cc9kq0.PNG)
 
 柔軟性の向上、コスト削減、または制御性の強化を求めるチームにとって、**Zapier のオープンソース代替品**の探索はますます価値のある選択肢となっています。
 
@@ -50,7 +50,7 @@ Zapier は「ノーコード自動化プラットフォーム」と謳ってい�
 
 ## n8n — 最も人気のある Zapier オープンソース代替品
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTIyODg5OTc1NWQzYjZkMDU0NGRkNDZjMzc1YmEzZDlfZk1rOVBKQk1NUDM2UXEzUUxjRndVME52NVVVbHUxUEFfVG9rZW46QVF6UWJpR3I2b04wVGV4dWloSGNJRHN5bmRiXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![n8n.PNG](https://static-docs.nocobase.com/7-f97yr1.PNG)
 
 **プロジェクト概要**
 
@@ -62,7 +62,7 @@ Zapier と比較すると、n8n はより高い柔軟性と制御性を提供し
 
 * **AI によるマルチステップ自動化**：LLM（大規模言語モデル）をワークフローにシームレスに統合し、マルチステップの AI エージェントを迅速に構築可能。OpenAI、Claude、自社モデルのいずれも、ノードをドラッグする感覚で簡単に実装できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRkNThjMGEzZDVlNDNiMWMzOTIxZGYyZWViYjZkZWJfOVZXT2NjeXdKaDVCSFRxRUNGTmNMRFVZeHR3TDdaV05fVG9rZW46Tjl4QmJINGdMb3ZpbFJ4U1gzT2MxV1Awbk9oXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![n8n.png](https://static-docs.nocobase.com/8-m51yi7.png)
 
 * **自己ホスティングとデータ制御**：Docker またはソースコードからの自己ホスティングにより、データと AI モデルを完全に制御できます。企業のプライバシーやコンプライアンス要件にも対応可能。公式ホスティング版を選べば、より簡単なデプロイ体験も得られます。
 * **ローコードと拡張性**：視覚的ワークフロー設計画面を提供し、任意のノードで JavaScript や Python を記述可能。npm や Python ライブラリの直接利用も可能で、Zapier より柔軟性が高く、複雑なシステム統合やカスタム要件に対応できます。
@@ -75,7 +75,7 @@ Zapier と比較すると、n8n はより高い柔軟性と制御性を提供し
 
 ## NocoBase — オープンソース低コード／ノーコードプラットフォーム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZiYWNmYWI0NWNkMDg3MzlhY2Y1MDYxNDVlMjY1YjJfWVg0ajFoN3ZPbHF3OVVxdktESHVnbFhNMjR3N2x1NmZfVG9rZW46SjBKMGIwczJib2xBb2J4RlFpaWN0c0Jzbk9mXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![NocoBase.png](https://static-docs.nocobase.com/9-79qh2i.png)
 
 **プロジェクト概要**
 
@@ -87,19 +87,19 @@ Zapier と比べ、NocoBase はより柔軟性と拡張性を提供します。�
 
 * **ワークフロー自動化**：強力なワークフローツールを提供し、トリガー、条件分岐、ループ処理、カスタム操作に対応。データへの直接バインディングだけでなく、複数テーブルの関連付けや条件制御も可能で、柔軟かつ効率的なプロセス設計が可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDI3YmY2MWQ1NWFjOTM0NDZkOTljNzIzODI4NmY0NTZfZTRXZ0ZiT096MnVTdW5acXpmTkVMNkhtbkVzcGtNNWJfVG9rZW46SG5YTmI0ZzJ5b2dyNUd4QzJ6N2NlVzd0bjlkXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Workflow Automation.png](https://static-docs.nocobase.com/10-m8zt5h.png)
 
 * **データモデル駆動**：Zapier の「アプリトリガー」とは異なり、データ構造とフィールド関係を定義することで、自動的に操作画面とフローノードを生成。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTBhZGYyZmU3YjkwNmQ4ZWE2ZDgyOGYxYzBlMjlmOWVfQllseTRGMXN0TVFNaWVyenloSUs2RFRTNmYwdkl4TjVfVG9rZW46R2VQQWJybjFub3BRN294dklHZWNMeFJrbkRkXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Data Model-Driven Design.png](https://static-docs.nocobase.com/11-35s7a9.png)
 
 * **プラグイン拡張**：マイクロカーネルアーキテクチャを採用し、ワークフローと自動化用プラグインを豊富に内蔵。トリガー、条件分岐、ループ処理、カスタム操作をサポート。サードパーティアプリやサービスとシームレスに連携し、複雑なクロスシステム自動化を実現。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjY5OGFjYmEyYTc1ZTRkMGM0Mzg3MzYxYmFiOTM5ZGFfNDhnYzA0elpwOFVCZzhRTk1yM2dHRXhoY1N3aVp6bnFfVG9rZW46SzVQWWJhMDJQb1B1cXp4QkU4dGM0a1A2bnZjXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Plugin-Based Extensibility.png](https://static-docs.nocobase.com/12-pyxapy.png)
 
 * **ビジュアル構築インターフェイス**：直感的な UI で、ユーザーはプログラミング不要でトリガー条件、データフロー、実行ロジックを設定可能。自動化アプリの利用障壁を低減。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDIzM2YyZTFmNjkxYjQ4MDQwNmEzOTA5MGE4NzYwODVfZU1mR2Z5SXVHRDlqNXV5UFVGN283QXA5MnNuVmt5dHVfVG9rZW46R1IxeGJsZVNhb1B6M0h4ejlqaWNSNFhCbjliXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Visual Builder Interface.png](https://static-docs.nocobase.com/13-agz77c.png)
 
 **ユースケース**
 
@@ -109,11 +109,11 @@ Zapier と比べ、NocoBase はより柔軟性と拡張性を提供します。�
 
 ## Activepieces — AI 駆動型自動化ツール
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTliOTdiZGZkNjhlZjNlN2ZjNWU5MzU4OTdkZjc4NmFfSVVTVlVHOFRFUUFCN2hHcFBHNlFjVE1FU2lONHJKNVNfVG9rZW46SThjWmI4VFVvb0Roenp4SUQxaWNlRWFhbjBkXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Activepieces.png](https://static-docs.nocobase.com/14-ncg51l.png)
 
 **プロジェクト概要**
 
-**[Activepieces](https://www.activepieces.com/)**** **は AI 駆動の自動化ツールで、ビジュアルインターフェイスと AI 技術を活用してワークフローの作成・管理を簡素化します。[GitHub](https://github.com/activepieces/activepieces) 上で 16.5k Star を獲得。
+**[Activepieces](https://www.activepieces.com/)** は AI 駆動の自動化ツールで、ビジュアルインターフェイスと AI 技術を活用してワークフローの作成・管理を簡素化します。[GitHub](https://github.com/activepieces/activepieces) 上で 16.5k Star を獲得。
 
 Zapier と比較して、より高度な AI 統合機能を提供。AI 技術で自動的にワークフローを生成し、複雑なタスク処理を簡略化。また、多様なアプリやサービスとの接続をサポートし、柔軟なカスタマイズが可能です。
 
@@ -131,7 +131,7 @@ Zapier と比較して、より高度な AI 統合機能を提供。AI 技術で
 
 ## Node-RED — ビジュアル低コードワークフロー工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjdkMzc0NDg4OGU1OTc3ZTUyMGZmMzMyYTY1MjczMWJfQ29Gc2dGOVk5TlNuQllmckNaVkxLNmptclRMd0xUeHZfVG9rZW46TXlHdGJnSTJNb01FVjF4d1RVN2NUc0lRbmttXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Node-RED.png](https://static-docs.nocobase.com/15-bufaay.png)
 
 **プロジェクト概要**
 
@@ -153,7 +153,7 @@ Zapier と比較すると、Node-RED は **「**フロープログラミング�
 
 ## Windmill — 多言語スクリプト駆動型ワークフロープラットフォーム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWY5OGZlNTU0MjBjNjliM2FjYWI5ZGQ1MjVmNDEyNjFfWTcxc2Z4OTVWYUN4aXpZQ0VxMWdzTHRtZGFGWTNWWHBfVG9rZW46R1hNQmI1Ykpqb3NEbnZ4czUyV2M1dVJKblJkXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Windmill.png](https://static-docs.nocobase.com/16-ivnu6n.png)
 
 **プロジェクト概要**
 
@@ -175,7 +175,7 @@ Zapier と比較すると、Windmill は スクリプト能力とインフラ自
 
 ## Automatisch — シンプルで効率的な自動化ツール
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzE5MzA0ZjI4MzVkYjMwZmNiNTgwOTliMTYyYWZhOWRfVHdWY2ZSdkVUMTg1TkxnNjhHZ3pJejFqSXpmQTVUdnVfVG9rZW46Rmpud2JkV0Qxb1hQbkx4eXF5aGNNTTNRbmtoXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Automatisch.png](https://static-docs.nocobase.com/17-7awlpo.png)
 
 **プロジェクト概要**
 
@@ -197,7 +197,7 @@ Zapier と比較すると、初心者や非技術者向けに より簡潔なイ
 
 ## Flowable — エンタープライズ向け BPM＋ワークフロー管理
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZhMzM4YjY4ZmMxYmJlNzQxYjYxYWZkNDU1ZmNkNzJfM0Jtb09YQlpMa1VkTEw1NWFZdzBKN25oMU9wbllsNG1fVG9rZW46QWtuRmJ5QmRUb1NFZnV4ZWd1Z2NuOHZxbnZqXzE3NTY3OTUyNDg6MTc1Njc5ODg0OF9WNA)
+![Flowable.png](https://static-docs.nocobase.com/18-4cq0f4.png)
 
 **プロジェクト概要**
 
@@ -232,3 +232,13 @@ Zapier と比較すると、Flowable はエンタープライズ向けの複雑�
 * **Flowable**：エンタープライズ BPMN ワークフロー。高度カスタマイズ承認フロー、ルール決定、システム横断業務オーケストレーションに最適。
 
 Zapier のオープンソース代替品を探しているなら、まずこれらのツールから試してみて、**自社の業務シナリオに最適なソリューション** を選ぶことをおすすめします。
+
+
+**関連読み物：**
+
+* [ServiceNowのオープンソース代替5選（価格比較つき）](https://www.nocobase.com/ja/blog/servicenow-open-source-alternatives)
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
+* [AppSheetの代替物として最適なものは2025年です](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [2025 年、オープンソース代替案がOutSystemsを置き換えつつある理由：技術的自由度とコスト優位性の徹底分析](https://www.nocobase.com/ja/blog/outsystems-open-source-alternatives)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり）](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
+* [2025年のRetoolに対する最良のオープンソース代替品](https://www.nocobase.com/ja/blog/retool-open-source-alternatives)
