@@ -1,34 +1,34 @@
 In the world of workflow automation, **[Zapier](https://zapier.com/)** has long been one of the most popular and mature solutions. Founded in 2011 by Wade Foster, Bryan Helmig, and Mike Knoop, Zapier was originally designed to help small and medium-sized businesses automatically synchronize data across different SaaS platforms. Over more than a decade of development, Zapier has grown into a powerful ecosystem supporting 7,000+ app integrations, including Gmail, Slack, Notion, Salesforce, Google Sheets, and many other widely used tools. Today, it has amassed millions of users worldwide.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGJkYTI2ODgyODM1N2ZhN2MzZTRkNWJlYTkzYTk0NTFfQlFvZGxwTFZNWnczdzVTbUszVzVpUFB1ODNvaU5NSTVfVG9rZW46WnVpeWJJR3lWb3Zrdmx4V1NqaWM0U2RabmVnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
 Thanks to its low-code visual workflows, extensive pre-built templates, and reliable cloud hosting, Zapier has become the go-to platform for many businesses looking to automate repetitive processes.
 
 However, as business requirements become increasingly complex — especially around data security, AI integration, and flexible automation — **more teams are turning to open-source alternatives that are self-hosted, customizable, and cost-efficient**.
 
-This shift is driven by some notable **[limitations](https://www.reddit.com/r/zapier/comments/1lhi7zk/so_long_zapier/)**of Zapier that many users have encountered:
+This shift is driven by some notable [limitations](https://www.reddit.com/r/zapier/comments/1lhi7zk/so_long_zapier/) of Zapier that many users have encountered:
 
 **1. Limited Flexibility**
 
 Even for seemingly simple automation tasks — for example, reading document content from Google Docs — Zapier often requires using Beta APIs or writing code to achieve the desired result.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjM3MmMxYWNiYTk1ZDEzNWRlMDM5NDY5ZTJhYmI0OTRfek0waHNzMzFZMldVTEl0QkhmUG15NzZKOVh2cGJ3N2hfVG9rZW46Rjhya2J6c0RRb0hIMkh4ZFRnbWM4eXl3bkFmXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Limited Flexibility.PNG](https://static-docs.nocobase.com/2-kxyoos.PNG)
 
 **2. High Cost, Yet a Frustrating User Experience**
 
 Zapier’s subscription pricing is relatively high, yet users frequently spend significant time troubleshooting errors, configuring workflows, and reading lengthy documentation. In addition, official support tends to be slow, leading to frustration.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJkMGU1NjE1OGNjYzgxZmFkYzYyNmUzYjhlNWJmM2ZfNnpjQTBLdTA1YXR5eGVUcHByMFV0NWdYeHZmSHFGVjhfVG9rZW46VXp6a2JOQnFFb2ZoQVd4MEVMVWNHN09hbkhnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/3-ivuemc.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjJkMzRlMmMxNzFlYzZmMzExNWI0ZTc4ZjBlYTAzYTdfWWpEUE9LNDBDRUFWcHA2ZHFNNlh2V1lPRjJpbnlXNUdfVG9rZW46Rmh2R2Jia1dZb1NCcFl4QkVGTmNHR2lubnZlXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/4-bxonkv.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmQyYTFjYjg5YjhjYjZhOTk5Njg1ZjA1ODAxMjQ0MjBfazRHd3JjV09UWU9mSk9LTHp6WEM2elRGTzZLZ0I1TnFfVG9rZW46U1lKTGJwMjFzb1gwQkt4N1BvaGNtSjBzbkFjXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/5-hhaqis.PNG)
 
 **3. The “No-Code” Promise Often Falls Short**
 
 Although Zapier markets itself as a “no-code automation platform”, once workflows become slightly more complex, users often still need to write Python or JavaScript code.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGYyOGU0MzFiZWNkZTkxMmQ3MzBlMTg1Mjc3ZTY1NTdfNmlrN3BMOXZuYjZqWXV1Y2ltTWUwelh0cnJiRXVKblBfVG9rZW46WFFNeGJTV0xJb0lsbXV4eXZ5ZGM0T3VDblpaXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![The “No-Code” Promise Often Falls Short.PNG](https://static-docs.nocobase.com/6-cc9kq0.PNG)
 
 Whether your goal is to achieve **greater flexibility**, **reduce costs**, or **gain full control over your data**, more and more teams are considering open-source alternatives to Zapier.
 
@@ -52,7 +52,7 @@ In this article, we’ve selected 7 of the most popular open-source workflow aut
 
 ## n8n — The Most Popular Open-Source Alternative to Zapier
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWUyMDNiYzZhMmIzMmEwMDUyYjI5ZDZlZTQyODJmOGZfQTRoc0ZsMG1ESEt4WXNDbjZYV1NkMDNIa1ZNQkg0TzFfVG9rZW46TEFNQmIxeHNWb0t3cld4TlNucmNabHFQbmpmXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![n8n.PNG](https://static-docs.nocobase.com/7-f97yr1.PNG)
 
 **Overview**
 
@@ -64,7 +64,7 @@ Compared to Zapier, n8n offers **greater flexibility and control**. Users can ch
 
 * **AI-Powered Multi-Step Automation**: Integrate large language models (LLMs) seamlessly into workflows to quickly build multi-step AI agents. Whether calling OpenAI, Claude, or self-hosted models, it’s as easy as dragging and dropping nodes.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODQ1OTkzM2FjZDQwYThkMmEzZTU1MzE4MDBmZjNmYzdfaTgzWlU1OFE3S25aYVZ0UUtxVkFzYmliSGZTV2w3RmFfVG9rZW46RzBwWGJLWGpHb0ZGT3J4d3pwRGNMQnNIblhjXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![n8n.png](https://static-docs.nocobase.com/8-m51yi7.png)
 
 * **Self-Hosting & Data Control**: Users can fully control their data and AI models via Docker or source-based self-hosting, meeting enterprise privacy and compliance requirements. The official hosted version is also available for simpler deployment.
 * **Low-Code & Extensible**: n8n offers a visual workflow designer and supports writing JavaScript or Python in any node. You can also import npm or Python libraries, providing far greater flexibility than Zapier for integrating complex systems and custom requirements.
@@ -77,7 +77,7 @@ Compared to Zapier, n8n offers **greater flexibility and control**. Users can ch
 
 ## NocoBase — Open-Source Low-Code/No-Code Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWU1Yjk2YmZiNTZlYmY0M2E0Njk2OWE2NjdmZmMxNDJfSGpOVnVyNUM1N2lsVG50eFNzVkd1enNLNldXVUVDSGJfVG9rZW46U0NRcWI0Qnpmb3VVRlB4eTdxaWNhOVdEbkRkXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![NocoBase.png](https://static-docs.nocobase.com/9-79qh2i.png)
 
 **Overview**
 
@@ -89,19 +89,19 @@ Compared to Zapier, NocoBase provides **higher flexibility and extensibility**. 
 
 * **Workflow Automation**: NocoBase provides a robust workflow engine supporting triggers, conditional logic, loops, and custom actions. Workflows can be directly linked to underlying data and support complex multi-table relationships and conditional controls for more flexible and efficient process design.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTgxNmM2MTE5YjUzOTNmODY5ZDlmMWZhMzQzMDVlMTZfbTFnaE82dXZ1ZHJKTFVPZnQ2R1BjeHBxSmxrazQ3QjhfVG9rZW46Wm94bWJ0aTJCb25IN3B4b05UQ2NYN2dQbjRnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Workflow Automation.png](https://static-docs.nocobase.com/10-m8zt5h.png)
 
 * **Data Model-Driven Design**: NocoBase generates operation interfaces and workflow nodes based on defined data structures and field relationships, enabling more intuitive and data-centric automation.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY2MzI3NmNiMGEzN2JhN2VlMjc4ZTdiMjNiZDc0ODZfQUFwSzFwcjNpYWF0YkU5cnd3eXpiNjg0WXFWdE5rMHJfVG9rZW46RkdYemJRQ0htb2wyNDN4UGZsT2NOQ1RqbmFnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Data Model-Driven Design.png](https://static-docs.nocobase.com/11-35s7a9.png)
 
 * **Plugin-Based Extensibility**: Built on a microkernel architecture, NocoBase offers a rich set of workflow and automation plugins, enabling seamless integration with third-party apps and services for complex cross-system automation tasks.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDkzNTY2MzFhMzY1YWZiNDRlMzZhOTkwZGExN2ZjYjNfQU1xM1hFQmZCM3pYNXlvVVdsR2JUTldoQmxvZUJ0Y2pfVG9rZW46SUs5VWI0WjFnbzJpOUN4QjMwU2NOTFhpblVkXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Plugin-Based Extensibility.png](https://static-docs.nocobase.com/12-pyxapy.png)
 
 * **Visual Builder Interface**: Provides an intuitive visual interface, allowing users to configure triggers, data flows, and execution logic without coding, lowering the barrier to workflow automation.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGI5NTViMmEwOWJkYThiMzI4ZTVhYjQ0YzBhNjE2NDFfU3k3QjY2MGJUR0YwTkZGSmtXcmp0ZlhJZjYyNU9ib0dfVG9rZW46WEsyVmJ6eGlZb0lNb0x4ZGhPcGNaUGk4bjFkXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Visual Builder Interface.png](https://static-docs.nocobase.com/13-agz77c.png)
 
 **Use Cases**
 
@@ -111,11 +111,11 @@ Compared to Zapier, NocoBase provides **higher flexibility and extensibility**. 
 
 ## Activepieces — AI-Powered Automation Tool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWUzYmFiNTg1YTJkZmE1ZWFjM2EyNmVhMDc2ZTc2NDNfR09mdHpHZFM2aHgyNW12cGpMVFF6N3lXQzIxNDhaV2ZfVG9rZW46TUZXWmIwVWF2b1dnVlJ4QXR6V2NhNmltblZOXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Activepieces.png](https://static-docs.nocobase.com/14-ncg51l.png)
 
 **Overview**
 
-**[Activepieces](https://www.activepieces.com/)**** **is an AI-powered automation platform designed to simplify workflow creation and management through a visual interface and AI integration. The project currently has 16.5k stars on [GitHub](https://github.com/activepieces/activepieces).
+**[Activepieces](https://www.activepieces.com/)** is an AI-powered automation platform designed to simplify workflow creation and management through a visual interface and AI integration. The project currently has 16.5k stars on [GitHub](https://github.com/activepieces/activepieces).
 
 Compared to Zapier, Activepieces offers advanced AI integration, allowing users to automatically generate workflows and simplify complex tasks. It also provides flexible customization, supporting connections with various applications and services.
 
@@ -133,7 +133,7 @@ Compared to Zapier, Activepieces offers advanced AI integration, allowing users 
 
 ## Node-RED — Visual Low-Code Workflow Tool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGJmZDVmZWNkNmU3OGYwOWE2MzIxODZkZGM2MTc5M2ZfSjFXRjRPTTM5MXZsWGtWWldZZlBjUDRTZWxaRFprQW1fVG9rZW46UXlZd2JSMW4zbzRnN2x4OHFCcGNjd3ZrbnVmXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Node-RED.png](https://static-docs.nocobase.com/15-bufaay.png)
 
 **Overview**
 
@@ -155,7 +155,7 @@ Compared to Zapier, Node-RED focuses on flow-based programming and IoT applicati
 
 ## Windmill — Multi-Language Script-Driven Workflow Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTY1YWIwM2JmMDExZTQwMTA2ZDA1MTU2NWJjYmI0NzdfUzVjTmhmYjRIWDJta0gzSGh4ZmpoaUVSbFpYdTlWdlhfVG9rZW46SGlvQWJvRlpHb3JtWlV4OHFEcmNjMVFqbmhiXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Windmill.png](https://static-docs.nocobase.com/16-ivnu6n.png)
 
 **Overview**
 
@@ -177,7 +177,7 @@ Compared to Zapier, Windmill emphasizes scripting capabilities and infrastructur
 
 ## Automatisch — Simple & Efficient Automation Tool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjFiYmYzMzc2ZDljMmU5ZDM5MTVhMzAwMzI2YmZmMThfa3JsUVNqUVhhdEx4RmlLeVRwZVdERFgyS0VNeEppV3ZfVG9rZW46WWNGcWI4emFob2M3N0V4cU9DWWNRVUZhbkdnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Automatisch.png](https://static-docs.nocobase.com/17-7awlpo.png)
 
 **Overview**
 
@@ -199,7 +199,7 @@ Compared to Zapier, Automatisch offers a simplified UI and is ideal for beginner
 
 ## Flowable — Enterprise-Grade BPM & Workflow Management
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDNmYzhmOWI2MWFkMGYxZmI0MzUwZGYwOWQ1ODAzYWVfQjIwWEVnYmVDMXNwSVNpcDU2M2oxS3AzVk85V0FUS1VfVG9rZW46RHF1ZmJZczlJb0xBa1N4ZlAwR2NMNU9jbldnXzE3NTY3OTUyMzI6MTc1Njc5ODgzMl9WNA)
+![Flowable.png](https://static-docs.nocobase.com/18-4cq0f4.png)
 
 **Overview**
 
@@ -234,3 +234,13 @@ The seven open-source Zapier alternatives covered in this article — NocoBase, 
 * **Flowable**: Enterprise-grade BPMN workflow platform for complex approval flows, rule-based decisions, and cross-system orchestration.
 
 If you are looking for **open-source alternatives to Zapier**, these seven tools are a great starting point to explore and choose the solution that fits your business needs.
+
+
+**Related reading:**
+
+* [5 Best Open-Source Alternatives to ServiceNow (with Pricing Comparison)](https://www.nocobase.com/en/blog/servicenow-open-source-alternatives)
+* [6 Open-Source Firebase Alternatives for Self-Hosting and Data Control](https://www.nocobase.com/en/blog/open-source-firebase-alternatives)
+* [The Best Open-Source Alternatives to AppSheet in 2025](https://www.nocobase.com/en/blog/appsheet-open-source-alternatives)
+* [Why Open-Source Alternatives Are Replacing OutSystems in 2025?](https://www.nocobase.com/en/blog/outsystems-open-source-alternatives)
+* [4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love)](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)
+* [The Best Open-Source Alternatives to Retool In 2025](https://www.nocobase.com/en/blog/retool-open-source-alternatives)
