@@ -1,4 +1,6 @@
-In the world of workflow automation, **[Zapier](https://zapier.com/)** has long been one of the most popular and mature solutions. Founded in 2011 by Wade Foster, Bryan Helmig, and Mike Knoop, Zapier was originally designed to help small and medium-sized businesses automatically synchronize data across different SaaS platforms. Over more than a decade of development, Zapier has grown into a powerful ecosystem supporting 7,000+ app integrations, including Gmail, Slack, Notion, Salesforce, Google Sheets, and many other widely used tools. Today, it has amassed millions of users worldwide.
+In the world of workflow automation, **[Zapier](https://zapier.com/)** has long been one of the most popular and mature solutions. Founded in 2011 by Wade Foster, Bryan Helmig, and Mike Knoop, Zapier was originally designed to help small and medium-sized businesses automatically synchronize data across different SaaS platforms.
+
+Over more than a decade of development, Zapier has grown into a powerful ecosystem supporting 7,000+ app integrations, including Gmail, Slack, Notion, Salesforce, Google Sheets, and many other widely used tools. Today, it has amassed millions of users worldwide.
 
 ![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
@@ -234,7 +236,6 @@ The seven open-source Zapier alternatives covered in this article — NocoBase, 
 * **Flowable**: Enterprise-grade BPMN workflow platform for complex approval flows, rule-based decisions, and cross-system orchestration.
 
 If you are looking for **open-source alternatives to Zapier**, these seven tools are a great starting point to explore and choose the solution that fits your business needs.
-
 
 **Related reading:**
 
