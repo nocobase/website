@@ -1,4 +1,6 @@
-在工作流自动化工具领域，**[Zapier](https://zapier.com/) 一直是最受欢迎、最成熟的解决方案之一**。该项目由 Wade Foster、Bryan Helmig 和 Mike Knoop 于 2011 年创立，最初是为了帮助中小企业在不同 SaaS 平台之间实现数据自动同步。经过十余年的发展，Zapier 已经支持超过 7,000 款应用集成，涵盖 Gmail、Slack、Notion、Salesforce、Google Sheets 等主流工具，并在全球积累了数百万用户。
+在工作流自动化工具领域，**[Zapier](https://zapier.com/) 一直是最受欢迎、最成熟的解决方案之一**。该项目由 Wade Foster、Bryan Helmig 和 Mike Knoop 于 2011 年创立，最初是为了帮助中小企业在不同 SaaS 平台之间实现数据自动同步。
+
+经过十余年的发展，Zapier 已经支持超过 7,000 款应用集成，涵盖 Gmail、Slack、Notion、Salesforce、Google Sheets 等主流工具，并在全球积累了数百万用户。
 
 ![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
