@@ -1,4 +1,6 @@
-ワークフロー自動化ツールの分野において、**[Zapier](https://zapier.com/)** は長年にわたり最も人気があり、成熟したソリューションの一つです。Zapier は 2011年に Wade Foster、Bryan Helmig、Mike Knoop によって創設され、当初は中小企業が異なる SaaS プラットフォーム間でデータを自動的に同期できるよう支援するために開発されました。十年以上の発展を経て、Zapier は現在 7,000 以上のアプリ統合をサポートし、Gmail、Slack、Notion、Salesforce、Google Sheets などの主要ツールをカバー。全世界で数百万のユーザーに利用されています。
+ワークフロー自動化ツールの分野において、**[Zapier](https://zapier.com/)** は長年にわたり最も人気があり、成熟したソリューションの一つです。Zapier は 2011年に Wade Foster、Bryan Helmig、Mike Knoop によって創設され、当初は中小企業が異なる SaaS プラットフォーム間でデータを自動的に同期できるよう支援するために開発されました。
+
+十年以上の発展を経て、Zapier は現在 7,000 以上のアプリ統合をサポートし、Gmail、Slack、Notion、Salesforce、Google Sheets などの主要ツールをカバー。全世界で数百万のユーザーに利用されています。
 
 ![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
