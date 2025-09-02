@@ -3,9 +3,9 @@
   "title": "7 Powerful Open Source Alternatives to Zapier",
   "title_cn": "7 款替代 Zapier 的开源工作流工具推荐",
   "title_ja": "Zapier の代替となる 7 つのオープンソースワークフローツール",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Discover 7 best open-source Zapier alternatives with self-hosting, AI integration, and visual workflows to boost automation, cut costs, and secure data.",
+  "description_cn": "7 款最佳 Zapier 开源替代品推荐，支持自托管、AI 集成和可视化工作流，助你实现高效自动化，降低成本并掌控数据安全。",
+  "description_ja": "自社ホスティング、AI統合、ビジュアルワークフロー対応のZapierオープンソース代替7選。自動化を強化し、コスト削減とデータ保護を実現。",
   "slug": "zapier-open-source-alternatives",
   "publishedAt": "2025-09-02T06:39:36.623Z",
   "status": "drafted",
@@ -462,5 +462,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-02T06:47:02.630Z"
+  "updatedAt": "2025-09-02T07:48:00.890Z"
 }
