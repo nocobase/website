@@ -1,6 +1,6 @@
 在工作流自动化工具领域，**[Zapier](https://zapier.com/) 一直是最受欢迎、最成熟的解决方案之一**。该项目由 Wade Foster、Bryan Helmig 和 Mike Knoop 于 2011 年创立，最初是为了帮助中小企业在不同 SaaS 平台之间实现数据自动同步。经过十余年的发展，Zapier 已经支持超过 7,000 款应用集成，涵盖 Gmail、Slack、Notion、Salesforce、Google Sheets 等主流工具，并在全球积累了数百万用户。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTAwMWE0M2Y2ODY5MzcwYTg5ZGU0YzY4MzMyNTM1OWFfSTFQd1dJV0gxdzg0bVAxRk9sbkYzZWx1OVZSV3hXSDZfVG9rZW46VDBqZmJmVTVGb3FoV3N4VnRNcGNQWVJRblplXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![zapier.PNG](https://static-docs.nocobase.com/1-djn1cf.PNG)
 
 凭借其低代码的可视化工作流、海量预置模板和高度稳定的云端托管服务，Zapier 成为了许多企业自动化流程的首选平台。
 
@@ -10,23 +10,23 @@
 
 对于一些看似基础的自动化任务——例如从 Google Docs 读取文档内容——在 Zapier 上也需要借助 Beta API 或编写自定义代码。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDhjNzZmZmU2ZjBlYzM2MWM4YzI4YTNiZDRjZGNjODJfWG4xb1UyM3VBdkJ5RG4yOGQxSTlkQ3ZSYjlaSjBsQzBfVG9rZW46Q2pycmJ1VEx3b2tnbE54a1o1R2NFRnhobnhkXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Limited Flexibility.PNG](https://static-docs.nocobase.com/2-kxyoos.PNG)
 
 **2. 高成本但用户体验不佳**
 
 Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来排查错误、配置流程和阅读文档，且官方支持响应缓慢。用户抱怨“明明在付费，却感觉像在做二次开发”。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTYxN2QyMTQ4ZTE5ZjgwMDI4MzY4ODFkMTc2MmVjNDhfZHNwUnl1VVpVY1N2MWVjWUhFaksxYXFPUmI0ZGhVRWZfVG9rZW46WWhOZWJZa2pPb1BTODJ4NWphaWNIYkZFbnBnXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/3-ivuemc.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZjOTQ3NWQ5NWRhOGExZTE5ZmFkYmNiMzRiNzk4MDNfZ21sUkIyS3U1QWVtMUo0QTZ3amRsWHBNRGk2bHROM2pfVG9rZW46QUV3UWJ0c2hKb2RtUHJ4VGIxWWNhbUxrbktlXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/4-bxonkv.PNG)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzNiOWJjNTczZWVlYTMxZDc5M2M2MjNlMWI0Mzc5YTlfc2IxM01DRld1M0U1UW8zOG1NT0xFTkVtRU9XMTBMQURfVG9rZW46QmNLYmJuWDF2b0hJZk54WnRlMmNzM042blZmXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![High Cost, Yet a Frustrating User Experience.PNG](https://static-docs.nocobase.com/5-hhaqis.PNG)
 
 **3.“无代码”承诺落空**
 
 虽然 Zapier 宣称是“无代码自动化平台”，但当自动化流程稍微复杂时，用户依然需要编写 Python 或 JavaScript 代码。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRhZGMwMzJlN2EzZWZkMTY0OGQ3YjEzYTM2Nzk5N2FfUXBQa0lobVMzMjFyc3R4ZlJtVDZwY21VR2ZLMHFQc3lfVG9rZW46RlJmZGJiRVhhbzE0VmN4am15UmNOM3c4bmRjXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![The “No-Code” Promise Often Falls Short.PNG](https://static-docs.nocobase.com/6-cc9kq0.PNG)
 
 无论是出于**更高的灵活性**、**更低的成本**，还是**更强的可控性**，越来越多的团队正在将目光投向 Zapier 的开源替代品。
 
@@ -50,7 +50,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## n8n — 最受欢迎的 Zapier 开源替代品
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTk1NTljOWU3NjBiMThlZTJhMjg5MjU3MWZlMTZlZmZfaHdsM0VWMXRjS0RLNmF6eGdFUlFpYTdvaWdsUFJGeDBfVG9rZW46WGpTUWJUbFJhbzRjb1h4MVdMMmNMZGRlbkplXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![n8n.PNG](https://static-docs.nocobase.com/7-f97yr1.PNG)
 
 **项目概览**
 
@@ -62,7 +62,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 * **AI 驱动的多步骤自动化**：n8n 支持将大型语言模型（LLM）与工作流无缝集成，帮助用户快速构建多步骤 AI Agent。无论是调用 OpenAI、Claude 还是自建模型，都可以像拖拽节点一样轻松实现。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGQ0NjdjZjY5ZWZiMjM3NTYxZDJkNjk0MmFiNzlkZDBfSmlRTjI2ZUhBWUF6ekJrYXByUkxHcVdPYUJDbjZ0bDNfVG9rZW46QWwwYmJnS3ZTb3FXZHJ4REtxYmM4dUdZbkljXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![n8n.png](https://static-docs.nocobase.com/8-m51yi7.png)
 
 * **自托管与数据可控**：用户可通过 Docker 或源码自托管 n8n，实现对数据和 AI 模型的完全控制，同时满足企业隐私与合规要求。此外，也可以选择官方托管版，获得更便捷的部署体验。
 * **低代码与可扩展性**：n8n 提供可视化工作流设计界面，同时支持在任意节点中编写 JavaScript 或 Python，甚至可以直接引入 npm 或 Python 库，灵活性远超 Zapier，适合对接复杂系统与自定义需求。
@@ -75,7 +75,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## NocoBase — 开源低代码/零代码平台
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjVjNjEyOTAxNDFmMjI1YmY2ZDA5ODhiYjc2N2VmOWZfYXdWTVh4c3dldUV4ZjhIekY3dzkyOXRqRHJnd1dQdzdfVG9rZW46UHFXY2JBMEZkb29tdDd4cDhlNmNKTjlDbkl0XzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![NocoBase.png](https://static-docs.nocobase.com/9-79qh2i.png)
 
 **项目概览**
 
@@ -87,19 +87,19 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 * **工作流自动化**：NocoBase 提供强大的工作流工具，支持触发器、条件判断、循环处理和自定义操作。工作流不仅能直接绑定底层数据，还支持复杂的多表关联和条件控制，使流程设计更加灵活高效。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2UyZGFmNTYzY2NjNGZmNDNkZWUwNDU3NDYxZGJjNjNfWndoQ3plYzhWWlhpZWFtTUQ4VXBXcXM5Nnp3bTh6WkxfVG9rZW46THFMeGJ2TWtLb2JhYlV4RHk1N2MzZ1dFbjdjXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Workflow Automation.png](https://static-docs.nocobase.com/10-m8zt5h.png)
 
 * **数据模型驱动**：NocoBase 采用数据模型驱动的设计，通过定义数据结构和字段关系自动生成操作界面和流程节点。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmJiNzRkMjUwZjEwOWVlZTViMjNmZmE2OThlNDhhMTVfYXQ3TVBUMW92b29iOW9NaGhsV2dyRHlqNXZBYW51RlFfVG9rZW46SXlVV2JFYm1sb3FPWHh4YXN5TWNreEVZbkpkXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Data Model-Driven Design.png](https://static-docs.nocobase.com/11-35s7a9.png)
 
 * **插件化扩展**：NocoBase 采用微内核架构，内置丰富的工作流与自动化插件，支持触发器、条件判断、循环处理和自定义操作。同时可无缝对接第三方应用与服务，轻松实现跨系统的复杂自动化任务。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmZkNzFhMjI5OTZlNDU5MDljMjExM2VmMDVlOGI1ZTVfbmFKSlBld00wQXg1elRBZ29zZTgyeWJTTVl0TVcyakdfVG9rZW46TlBQOWJyWXFmb0ZkeVR4NlhLWWNpQ1h4bkdkXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Plugin-Based Extensibility.png](https://static-docs.nocobase.com/12-pyxapy.png)
 
 * **可视化构建界面**：NocoBase 提供直观的可视化界面，用户无需编程即可配置触发条件、数据流转和执行逻辑，降低自动化应用的使用门槛。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTc2MDk1ZTc3ZDg0NzZiMmVkZDliYWQ2M2RkMGJiM2FfMGdkQmtMQURwYXFnM212WVpJRlJpYWp2d2JRejNaZm1fVG9rZW46SkY2QWJMd2JFb1lSSXF4OGY2SGN5UzBsbnVmXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Visual Builder Interface.png](https://static-docs.nocobase.com/13-agz77c.png)
 
 **应用场景**
 
@@ -109,11 +109,11 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## Activepieces — AI 驱动的自动化工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzAwMzM1NzNiMGJmN2Q0ZTA3OTBmYTZkNTY3NTk0ZDlfUFJ6eVZKbW1CbjRjNTdmbUJnS3AyMVBxaVRscUdvSWVfVG9rZW46Q0xVTGJUV1lnbzMwZFJ4NEs0WWM4QUg2blFjXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Activepieces.png](https://static-docs.nocobase.com/14-ncg51l.png)
 
 **项目概览**
 
-**[Activepieces](https://www.activepieces.com/)**** **是一款 AI 驱动的自动化工具，旨在通过可视化界面和 AI 技术简化工作流的创建和管理。目前项目在 [GitHub](https://github.com/activepieces/activepieces) 上获得了 16.5k Star。
+**[Activepieces](https://www.activepieces.com/)** 是一款 AI 驱动的自动化工具，旨在通过可视化界面和 AI 技术简化工作流的创建和管理。目前项目在 [GitHub](https://github.com/activepieces/activepieces) 上获得了 16.5k Star。
 
 与 Zapier 相比，Activepieces 提供了更强大的 AI 集成功能。 用户可以通过 AI 技术自动生成工作流，简化复杂任务的处理。 此外，Activepieces 提供了更灵活的自定义功能，支持与各种应用和服务的连接。
 
@@ -131,7 +131,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## Node-RED — 可视化低代码工作流工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGNjM2YzNDc2MGEzYmI4ZWEyOWMxZDQ0OWE4OGM0N2RfV2ZPOEFDb25vNFVaaGFYNmtzTTRIa252eVdZV0xYZlFfVG9rZW46SjNzaWJMRDV6b2JNS0t4b3M0VGNScDFrbmVlXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Node-RED.png](https://static-docs.nocobase.com/15-bufaay.png)
 
 **项目概览**
 
@@ -153,7 +153,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## Windmill — 多语言脚本驱动的工作流平台
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzIxMmQ1ZmViMzE4ODIzNWM0OWQ5NDJjNjRlOWIyZDJfTlhxYWdOY2NxOEs1OVU5bnRPYWtPRVN6bE5GczlNTGtfVG9rZW46RUYxN2JuVVdIbzJydDh4Sng5M2M2bUhjbmhiXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Windmill.png](https://static-docs.nocobase.com/16-ivnu6n.png)
 
 **项目概览**
 
@@ -175,7 +175,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## Automatisch — 简洁高效的自动化工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTdiYmY2YjQ4MDhjMGRkZmNmYjE2MDQ5YjM5NjRkODlfTjZjMXphTU81akk3VjF5TnZwOUpKaFZDRFJKM1ZqMkhfVG9rZW46Tzlxd2I4V0pGb0xNd3h4R2U3RGNOUDNCblllXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Automatisch.png](https://static-docs.nocobase.com/17-7awlpo.png)
 
 **项目概览**
 
@@ -197,7 +197,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 ## Flowable — 企业级 BPM+流程管理
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjY1ZGRjM2Q1M2VkYzM0M2VlZTg3ZDA1YTkwYWI1YTNfWTJ3bGR5ZHN1ZkU4VW1DUmxLY2FaeGtldHdtb3RkZGhfVG9rZW46RllQRWJyZ1Ywb3pYOVJ4R0RxeWM3TzN2blhlXzE3NTY3OTUxOTk6MTc1Njc5ODc5OV9WNA)
+![Flowable.png](https://static-docs.nocobase.com/18-4cq0f4.png)
 
 **项目概览**
 
@@ -232,3 +232,13 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 * **Flowable**：企业级 BPMN 工作流平台，适合需要高度定制审批流、规则决策和跨系统业务编排的大型企业。
 
 如果你正在寻找 **Zapier 的开源替代品**，不妨从这几款工具开始尝试，根据自己的业务场景选择合适的解决方案。
+
+
+**相关阅读：**
+
+* [5 个最佳 ServiceNow 开源替代品（含价格对比）](https://www.nocobase.com/cn/blog/servicenow-open-source-alternatives)
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
+* [2025 年 AppSheet 最佳开源替代品](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [2025 年开源替代方案为何正在取代 OutSystems？技术自由度与成本优势深度解析](https://www.nocobase.com/cn/blog/outsystems-open-source-alternatives)
+* [四个强大的 Salesforce 开源替代方案（附成本对比）](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)
+* [2025 年最佳的 Retool 开源替代方案](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)
