@@ -4498,5 +4498,25 @@
     "title_cn": "Zapier 开源替代品",
     "title_ja": "Zapier の代替となる",
     "updatedById": 3
+  },
+  {
+    "createdAt": "2025-09-08T09:23:35.577Z",
+    "updatedAt": "2025-09-08T09:23:35.577Z",
+    "createdById": 3,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 231,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 229,
+    "title": "Jira Alternatives",
+    "title_cn": "Jira替代品",
+    "title_ja": "Jira 代替",
+    "updatedById": 3
   }
 ]
