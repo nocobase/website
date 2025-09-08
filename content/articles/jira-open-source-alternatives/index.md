@@ -4,7 +4,7 @@ Recently, a [Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/j
 
 Launched by [Atlassian](https://www.atlassian.com/) in 2002, Jira started as a bug-tracking tool specifically designed for software development teams. Over the years, as agile methodologies gained popularity, Jira evolved into a full-fledged project management and collaboration platform — supporting Scrum, Kanban, task assignment, version control, reporting, and more. It gradually became the go-to choice for development teams worldwide.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTkyNWViMWYzNjE5MjY4ZmNiMzgzY2EyNWMwMWYyMTVfQzZISDBPSWdtVzJOellnQ05nMWtjSDJSRFRFbTlpSEZfVG9rZW46Q2s5bmI2dHk3bzV6aXR4aGxxZmNpemp0bnBoXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![jira.PNG](https://static-docs.nocobase.com/jira-oe4qlv.PNG)
 
 However, in the discussion, many developers raised recurring complaints:
 
@@ -14,7 +14,7 @@ However, in the discussion, many developers raised recurring complaints:
 * New team members struggle to onboard
 * The “tool tax”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWNhMDIwZTg1OTg1YzYyYWJkN2M2MTFkYzE2OWM4OTNfR3Nuaml2dmpwb0t4RXhYZ2oyaGx3YmV5UkRDaVdkdVhfVG9rZW46V0dVbWJJTUZrb3BVRVh4UElUcmNoa0UwblliXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![reddit.PNG](https://static-docs.nocobase.com/reddit-qgwubf.PNG)
 
 These issues have prompted many teams to ask themselves:
 
@@ -38,7 +38,7 @@ In this article, we’ll introduce **6 excellent open-source project management 
 
 ## NocoBase: Extensibility-first No-Code Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjYwMTU3ODgwY2YzYzg0NWE1YTYzNjYwMGZlOGM3MDBfSkVTdVVySjZNN3hHQ2ZhUWgyNENUeDRsSkIxYk9tMGNfVG9rZW46RFBkQmJIcEJEb1plZEF4SkJNd2M0SlowbnNiXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![nocobase.png](https://static-docs.nocobase.com/1-az7el5.png)
 
 **Overview**
 
@@ -51,15 +51,15 @@ Its biggest advantage over Jira lies in flexibility and extensibility: instead o
 * **Custom Data Models**: Define fields, relationships, and data types via a visual interface. Quickly create databases aligned with your business logic without writing code.
 * **Visual Workflow Engine**: Build complex approval flows, automate task assignments, and set up multi-condition triggers for seamless cross-department collaboration.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjdjNTg0MDljZGM0YTMyMjUyZGRlN2JlMzdmYjU1NzJfVmFVSWsyOE43TEQzMFhHMG5sN2hoUTNUdk1la0pFY0dfVG9rZW46TVkzUWJsY010b1paSTF4aXlTeGNTdjdFbkNiXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![Visual Workflow Engine.png](https://static-docs.nocobase.com/Visual%20Workflow%20Engine-0ey31g.png)
 
 * **Multiple Project Views**: Switch freely between Kanban, list, calendar, and Gantt views to track progress from different perspectives.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjQ4Yzc4YTMzZjVlMDUyMjdiZjgyY2VmNmY1NDI4ZWZfeE9nb3ZQUThCSUwzSmNFUGI0N2Y0cFhKV01HWjNBbXdfVG9rZW46QjZ0bGJWS0JXbzFqSWh4a3haY2NHYXVGbjBkXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![Multiple Project Views.png](https://static-docs.nocobase.com/Multiple%20Project%20Views-hpbski.png)
 
 * **Plugin Ecosystem & Extensibility**: Leverage a rich official plugin marketplace or create custom plugins to extend system functionality for complex business needs.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZiNGQ3NTU5MWUxNDY2ODY4MGFmMDk4OWNiM2ExN2NfZkJieXAxYVBiWm91QnZEaGZqZnc0OEx1YmFUTXdjNnBfVG9rZW46S05pWmI4bFlnb2hTUjd4ZU9XS2NuZDU5bmhjXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![Plugin Ecosystem & Extensibility.png](https://static-docs.nocobase.com/Plugin%20Ecosystem%20%26%20Extensibility-zf0392.png)
 
 **Use Cases**
 
@@ -79,7 +79,7 @@ If you want Jira-level project management with far more customization and extens
 
 ## OpenProject: The Most Comprehensive Jira Alternative
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTMwOWYxY2U4MzI2MTQyMGEyNDgzMjhkYTQ2YTBlNDNfVFRiSXQ3MWZub3lRdlR5NHAxNWMwNHR6SGtvWXFXR0dfVG9rZW46WEpkWGJYZ3Izb09HNm14aWNTR2NLTzVVblhkXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![openproject.png](https://static-docs.nocobase.com/openproject-654dm3.png)
 
 **Overview**
 
@@ -108,7 +108,7 @@ If your team needs Jira-grade functionality without license costs, OpenProject i
 
 ## Plane: A Modern Lightweight Agile Project Tool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGQ3NzQwMTQ3NjkyNzI0MmNlMDg1YjA4YjViOGE5MWJfcnNCbjFTNGUwM2lkRzBqd1ZuUlJaNGJiY0tXdmt1QnhfVG9rZW46RlVHVGJvUlpYb2J4bW14bUpKT2NxZlJXbk1jXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![plane.png](https://static-docs.nocobase.com/plane-fcltko.png)
 
 **Overview**
 
@@ -139,7 +139,7 @@ Plane is a lightweight, modern Jira alternative built for teams that value speed
 
 ## Planka: A Minimalist Kanban-Based Project Manager
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWI2ZjVmZTFiMzQyZTEwYTFhMmNmNDI0ZWUzY2E0YzJfMDFad0FtcmdjV3FaQjZEWUpZeXZUcVh0MEZPYlhmSXBfVG9rZW46T09STGJHeTFYb0F6OFh4TFZFUmNOVUtxbktMXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![planka.png](https://static-docs.nocobase.com/planka-5husej.png)
 
 **Overview**
 
@@ -170,7 +170,7 @@ Planka is a minimalist Kanban tool ideal for teams that want simple, visual proj
 
 ## WeKan: A Lightweight Open-Source Kanban Tool
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJhMmRhNjQzMjFhMDZlZDZhM2I4N2VjOWRkMjExMDZfeDlVSkhhZDVWMUpPRTBkZ2JTdlVJVnBXQ0NRRUNXeG1fVG9rZW46VGhmbmIzbHV4b0V0aDh4OW9BemN6aTYybldnXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![wekan.png](https://static-docs.nocobase.com/wekan-nsgq1b.png)
 
 **Overview**
 
@@ -199,7 +199,7 @@ WeKan is a lightweight, easy-to-deploy Kanban solution for teams that want a fas
 
 ## Taiga: An Agile Project Management Tool for Scrum & Kanban
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGUxMDU3NDAzODU2MmJjMGI5YWVmOWE5NjQ2N2YyNWVfc0luWW9sWVptanB1ajJDVTV5Y1B3NUhOeEhxdkVsd0pfVG9rZW46UWx0eWJSSkNlb0FuaTd4WVFnYWNqTTRTbm5mXzE3NTczMjMyOTE6MTc1NzMyNjg5MV9WNA)
+![taiga.png](https://static-docs.nocobase.com/taiga-v5h86i.png)
 
 **Overview**
 
@@ -237,3 +237,12 @@ Comparing these six open-source alternatives, each tool has its unique strengths
 * **Planka, WeKan, Taiga** → From minimalist Kanban boards to full Scrum support, these tools cover diverse agile practices
 
 If Jira feels too complex, too slow, or too costly, these open-source s olutions let you take back control, customize freely, and focus on building projects — not managing tools.
+
+**Related reading:**
+
+* [7 Powerful Open Source Alternatives to Zapier](https://www.nocobase.com/en/blog/zapier-open-source-alternatives)
+* [5 Best Open-Source Alternatives to ServiceNow (with Pricing Comparison)](https://www.nocobase.com/en/blog/servicenow-open-source-alternatives)
+* [6 Open-Source Firebase Alternatives for Self-Hosting and Data Control](https://www.nocobase.com/en/blog/open-source-firebase-alternatives)
+* [The Best Open-Source Alternatives to AppSheet in 2025](https://www.nocobase.com/en/blog/appsheet-open-source-alternatives)
+* [Why Open-Source Alternatives Are Replacing OutSystems in 2025?](https://www.nocobase.com/en/blog/outsystems-open-source-alternatives)
+* [4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love)](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)
