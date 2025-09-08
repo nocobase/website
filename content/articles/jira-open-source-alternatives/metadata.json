@@ -3,9 +3,9 @@
   "title": "6 Best Open Source Alternatives to Jira",
   "title_cn": "6 个替代 Jira 的开源项目管理工具推荐",
   "title_ja": "6 つの Jira 代替オープンソースプロジェクト管理ツール推奨",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article introduces 6 open-source Jira alternatives, comparing their features, use cases, and technical details to help you choose a lightweight, efficient, self-hosted project management solution.",
+  "description_cn": "本文推荐 6 款开源 Jira 替代工具，对比功能、适用场景与技术特点，帮你选择轻量、高效、可自托管的项目管理方案。",
+  "description_ja": "この記事では6つのオープンソースJira代替ツールを紹介し、機能、活用シーン、技術的特徴を比較して、軽量で効率的、セルフホスト可能なプロジェクト管理ソリューション選びをサポートします。",
   "slug": "jira-open-source-alternatives",
   "publishedAt": "2025-09-08T09:20:43.360Z",
   "status": "drafted",
@@ -358,5 +358,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-08T09:31:14.076Z"
+  "updatedAt": "2025-09-08T10:49:27.839Z"
 }
