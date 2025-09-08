@@ -6,7 +6,7 @@
 
 その後、アジャイル開発の普及に伴い、Scrum・Kanban・タスク管理・バージョン管理・レポート分析など、幅広い機能を備えたプロジェクト管理・コラボレーションプラットフォームへと進化し、世界中の開発チームで広く利用されるようになりました。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjczOWI0ODAxODgzYmE5NDFkNjMyM2Y0YTVlNmQ2NTdfeDlwdlVydlpyNElSRlNqaTJmUGRuOTE1djVST0pXSmhfVG9rZW46UGgwamJOY2RTb3dFbkZ4eDNrQ2NZYWlVbkdlXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![jira.PNG](https://static-docs.nocobase.com/jira-oe4qlv.PNG)
 
 しかし、Redditのスレッドでは、多くの開発者が次のような悩みを挙げています：
 
@@ -15,7 +15,7 @@
 * 学習コストが高い → 新メンバーのオンボーディングが難しい
 * “ツール税”が高い → ツールの管理に多大な時間とリソースが必要
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDJiMTdkZDcyMjU5YTE4NjBmNTkwNWU0YTBjMGI3ODZfaVl3OTRsN2FCWFd3WktSSGowbEVISUNVRmxlUjl4T0tfVG9rZW46QmJkUWJrWFFEb3FleEF4SHZFWGM0Tm12bktiXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![reddit.PNG](https://static-docs.nocobase.com/reddit-qgwubf.PNG)
 
 こうした課題から、より軽量で柔軟、かつコントロールしやすいツールを求める声が増えています。
 
@@ -37,7 +37,7 @@
 
 ## NocoBase：柔軟なローコード／ノーコードプラットフォーム
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTlkNjUyMTFhNzc2ZjQwMWM2NjdmNzVlNzU4YThmNDFfVGpPeUJ0bk91cG1lM1gxMGVydVVoakRIdzJ5TkNmYk9fVG9rZW46V2xaSmJkelNWb3RucEl4bFlBY2NvUHhPbnRnXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![nocobase.png](https://static-docs.nocobase.com/1-az7el5.png)
 
 **概要**
 
@@ -50,15 +50,15 @@ Jiraと比べた最大の強みは**柔軟性と拡張性**で、標準的なタ
 * **カスタムデータモデル**：フィールド、リレーション、データ型を自由に設定可能。ビジュアルインターフェースでデータベース構造を簡単に作成でき、コード不要で機能を拡張できます。
 * **柔軟なワークフローエンジン**：複雑な承認フロー、タスク自動割り当て、多条件トリガーに対応し、部門横断的なプロセス管理が可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODc0MDM1YzNlMzdlNTA0MzU1MmEwOTcwM2NhNDA5Y2ZfTUNkT09wTWQ1OG1tTjlFTkNUMmd2NW1Zd1hrS2cwSmZfVG9rZW46RGl3U2JRSHRYbzJmOUp4cnNhbGNoWU9EbnBiXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![Visual Workflow Engine.png](https://static-docs.nocobase.com/Visual%20Workflow%20Engine-0ey31g.png)
 
 * **多視点プロジェクト管理**：Kanban、リスト、カレンダー、ガントチャートなど複数ビューに対応し、進捗やリソースを多角的に把握。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjkzMmM3MWNmMDAyYjNmYmE2MTE0YzE5YWE2MTVjZDNfNldEWlM2YzVFN0loTTBBR0RrV0R6ajFZOGJnZ05rWEpfVG9rZW46WTR1eGJSMHBPb003RzB4N3hEa2NEODU3blhlXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![Multiple Project Views.png](https://static-docs.nocobase.com/Multiple%20Project%20Views-hpbski.png)
 
 * **プラグインと拡張性**：公式プラグインマーケットが充実。独自プラグインや業務ロジックの構築にも対応し、複雑な要件にも柔軟に適応。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDUyYzBhZTdmYWJkMGFmNDljMTg2MTA5ZDZlNDM5MGFfbFZRaWxReE9VUnlSRUpkeUg5c2ZLNzhRejRQekNLWFpfVG9rZW46TFRONmI1SVdSb0pUQmp4RFl6VGNjRWdkbk9nXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![Plugin Ecosystem & Extensibility.png](https://static-docs.nocobase.com/Plugin%20Ecosystem%20%26%20Extensibility-zf0392.png)
 
 **主なユースケース**
 
@@ -78,7 +78,7 @@ Jiraと比べた最大の強みは**柔軟性と拡張性**で、標準的なタ
 
 ## OpenProject：機能が最も充実したJiraオープンソース代替
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTFlY2M2M2YxNGVjNjA0YjVmZTI0OTM5YTNiZDVmZDJfUkhWRGZTMTRTdEE2NXRvVzhLN2p3MVdNUVNQVDBKcGZfVG9rZW46SWJCbGIxOUVtb3lsdTZ4Y21wTWM2TG9oblZmXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![openproject.png](https://static-docs.nocobase.com/openproject-654dm3.png)
 
 **概要**
 
@@ -107,7 +107,7 @@ Jiraに近い機能をオープンソースで使いたいなら、OpenProject�
 
 ## Plane：モダンで軽量なアジャイルプロジェクト管理
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmY4NzBhZjA0MGNlNjg1MWM1NGE2NjY1OWUwNDBkNzJfcG1EMkRvVmFNbVZIZnJtazBEbllqQVJVaUM5T2JQdTZfVG9rZW46RnZIc2JxUkgwb01GZGp4cVlHQmN4TTVIblJlXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![plane.png](https://static-docs.nocobase.com/plane-fcltko.png)
 
 **概要**
 
@@ -138,7 +138,7 @@ Planeは、Jiraの機能を必要最小限に整理した軽量ツールで、�
 
 ## Planka：Kanbanに特化したシンプルな可視化ツール
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2MzMzEzOTU0ZDg3NDE1MzY5M2QwMGExYzNhZjIyMjZfV0ZGVElTU2lSUGJ5aGd6elpxMDhhSDRMbWdpdmVLV3NfVG9rZW46UlliQmJIQWxub0MySHZ4RHl3NWNIelBNbmZiXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![planka.png](https://static-docs.nocobase.com/planka-5husej.png)
 
 **概要**
 
@@ -169,7 +169,7 @@ Plankaは、タスク可視化を重視するチームに最適なシンプル�
 
 ## WeKan：軽量でシンプルなオープンソースKanban
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZjODM0MzNlZjI1NTFiNmY0OGMyNjg1ZThmMjY4NjZfdGtKMGVRdThIMks1aXF5TFhDYjdCR1h5Tm9QemVXY0RfVG9rZW46Qjg5QWJqVXhSb3NuejB4ekNDVWN0SUZEbkZjXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![wekan.png](https://static-docs.nocobase.com/wekan-nsgq1b.png)
 
 **概要**
 
@@ -198,7 +198,7 @@ WeKanは、軽量で即導入可能なKanbanツールで、低コストでタス
 
 ## Taiga：アジャイル開発チーム向けプロジェクト管理
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTU5NTdiNmFmZDVjYWJjN2U3YTRlMTcxYjMwNGY5ZDlfTGRveG5GNnI3dkhOQTZwbFVIU2Z3dTJJeHVpWXhOQ2FfVG9rZW46T3NJYmJacUI1b1owZkV4V3l0RGM0ZFlPbmRLXzE3NTczMjMzMDM6MTc1NzMyNjkwM19WNA)
+![taiga.png](https://static-docs.nocobase.com/taiga-v5h86i.png)
 
 **概要**
 
@@ -235,4 +235,13 @@ Taigaは、アジャイル開発に特化した軽量かつ柔軟なツールで
 * **Plane**：軽量かつ直感的な操作性で、スピード重視のチームに最適
 * **Planka / WeKan / Taiga**：Kanban中心のシンプルな管理からScrum対応まで幅広くカバー
 
-Jiraの設定の複雑さ、動作の重さ、コストの高さに悩むチームは、まずこれらのオープンソースツールを検討することで、**「本当に必要な機能だけに集中した効率的なプロジェクト管理」**を実現できるはずです。
+Jiraの設定の複雑さ、動作の重さ、コストの高さに悩むチームは、まずこれらのオープンソースツールを検討することで、**「本当に必要な機能だけに集中した効率的なプロジェクト管理」** を実現できるはずです。
+
+**関連読み物：**
+
+* [Zapier の代替となる 7 つのオープンソースワークフローツール](https://www.nocobase.com/ja/blog/zapier-open-source-alternatives)
+* [ServiceNowのオープンソース代替5選（価格比較つき）](https://www.nocobase.com/ja/blog/servicenow-open-source-alternatives)
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
+* [AppSheetの代替物として最適なものは2025年です](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [2025 年、オープンソース代替案がOutSystemsを置き換えつつある理由：技術的自由度とコスト優位性の徹底分析](https://www.nocobase.com/ja/blog/outsystems-open-source-alternatives)
+* [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり）](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
