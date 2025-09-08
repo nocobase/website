@@ -4,7 +4,7 @@
 
 **[Jira](https://www.atlassian.com/software/jira)** 由 [Atlassian](https://www.atlassian.com/) 于 2002 年推出，最初是一款专门为软件开发团队设计的 Bug 跟踪工具。随着敏捷开发方法的普及，Jira 很快扩展成一套完整的项目管理与协作平台：支持 Scrum、Kanban、任务分配、版本管理、报告分析等功能，逐渐成为全球开发团队的首选。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzQ0ZGM2NGEwMmEyMDBhODQzMGZiNjk1ODE5YmIxZmFfb3ZPbnE2VFlEN2daOEl2eGtuZEJHeTA4NENpaFJZdHpfVG9rZW46RzM5ZWJGb0Fub1lWVTJ4bUh1NGNRUGxsblllXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![jira.PNG](https://static-docs.nocobase.com/jira-oe4qlv.PNG)
 
 然而，讨论区里许多开发者表达了类似的困扰：
 
@@ -13,7 +13,7 @@
 * 学习曲线陡峭 → 新成员上手难度大
 * “工具税”过高 → 需要投入大量时间和资源来“管理工具”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWVjMGRkZmU2MDhiMTkyYjQ0ZThlYzMzMDY1NWE0MGFfTFgybk5XVnF4dlFTWUNvWUdOaldlcEg5ZnNORHNqM2tfVG9rZW46VjZYcmJtNDhTb3F1Y014NkF2cGNNUHRRbnhiXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![reddit.PNG](https://static-docs.nocobase.com/reddit-qgwubf.PNG)
 
 这些问题让不少团队开始思考：
 
@@ -39,7 +39,7 @@
 
 ## NocoBase：灵活**的低代码/零代码平台**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTkzNTZjMTU1MDE5YTg4M2VhZTY1NGIxNjk2NWMxNTdfMEdHcjJQM3JGeExGS3R5YmplQWZiOTRlZTlNMklOeGJfVG9rZW46WTBGSWJJY0tyb1VMSzF4NDZ1T2NBZ3hKbmVmXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![nocobase.PNG](https://static-docs.nocobase.com/nocobase-asj848.PNG)
 
 **项目概览**
 
@@ -52,15 +52,15 @@
 * **自定义数据模型**：不仅支持任意字段、关系和数据类型，还能通过可视化界面快速搭建符合团队业务逻辑的数据库结构，无需写代码即可扩展功能。
 * **灵活工作流引擎**：支持复杂审批、任务自动分配和多条件触发规则，让业务流程管理更灵活，适合多部门协作。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmZjOTIxYjE3NWYzNjMwODAyYTVjZDFkZGYyODRlZTNfUTJpTEM3UHpGWWZkRldmUm0zMHBLMHBiQVpKUENER3VfVG9rZW46UGp5bGJxdk1nb01TZnF4VVpZOWNZOVF4bm5kXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![灵活的工作流.png](https://static-docs.nocobase.com/%E7%81%B5%E6%B4%BB%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81-aueo7i.png)
 
 * **多视图项目管理**：提供 Kanban、列表、日历、甘特图等多种视图自由切换，支持同一项目从不同角度跟踪进度和资源。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2MyMjJhZGRiNmQ0YzU0N2RjMmI3N2I0ZTQ5NmIyMGFfbEkwZHNGMzdNS1VQMDR0RFVyaHBMaTJaZ0ExYnR2d3NfVG9rZW46TzlOMGJiMzJ5b0gwdjN4T2lVQmNxa1VCbm9jXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![多视图.png](https://static-docs.nocobase.com/%E5%A4%9A%E8%A7%86%E5%9B%BE-888zh4.png)
 
 * **插件与扩展能力**：官方插件市场丰富，允许自定义插件和业务逻辑编排，使系统能够适配复杂或特定业务需求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTU1YzBiZjRiZDc1MTk1YzcyNjg3Mzc5MmE3YzZkZTBfclAyQXBZT1dJdllwckNWOGpWOHFjOWdJWmdlTVJEUkFfVG9rZW46V0Zvb2JlUUZob2thcm14OUlUMWNhdnVYbkxiXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![插件.png](https://static-docs.nocobase.com/%E6%8F%92%E4%BB%B6-vihg0r.png)
 
 **应用场景**
 
@@ -80,7 +80,7 @@
 
 ## OpenProject：**功能最全面的 Jira 开源替代品**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZmMjgxNTQzMTg2ZDY0MThjYjBhMTk4YjFiN2IyZTRfeFBmQzR6ZG5yWXNGQ1F3MHZqZUczVEE5bEpFN2Q3VWhfVG9rZW46WFU5c2JzaVBKb3FFQjJ4ODdka2Nwdjdhbm5iXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![openproject.png](https://static-docs.nocobase.com/openproject-654dm3.png)
 
 **项目概览**
 
@@ -109,7 +109,7 @@
 
 ## Plane：现代化的轻量级敏捷项目管理工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmI3OTc0ZDgzYmQzYWU5YzM0OGExZTQ2MDYyNDQ1NTZfMDl1enNlRFBjQ2J3bEZvQmlXaWtPNVlmYjVqRzV2U3dfVG9rZW46WE9HYWIzSzdJb21uNG14c01CTGNSdzRGbkxxXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![plane.png](https://static-docs.nocobase.com/plane-fcltko.png)
 
 **项目概览**
 
@@ -140,7 +140,7 @@ Plane 是 Jira 的轻量化替代方案，适合希望简化工作流、追求�
 
 ## Planka：专注于 Kanban 的可视化项目管理工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjJiODZhMGY4NzRlYmFkZjIxNWVlNDNkZDBlYzI5NjRfdEFKbHJVZ3VXaWtiRFJ3N2xHTlp4a216RWRlem9xTDVfVG9rZW46WFpWYmJQVWY4b3FQWnN4aDBaWmM4TXp0bkhlXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![planka.png](https://static-docs.nocobase.com/planka-5husej.png)
 
 **项目概览**
 
@@ -171,7 +171,7 @@ Planka 是一款极简、直观的 Kanban 工具，适合希望通过可视化�
 
 ## WeKan：轻量级开源 Kanban 工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGEyZTM4YmVjOGI0M2FhNmIwN2E3NWE1YmM0MDM4YzdfSHFJVTFxVjd2VE5Jb0F1bGtXS1dhVGdhQ1VZdDVVamJfVG9rZW46QjFXQ2J0WDlVb1IxUmF4YzcxeGNjZDljbm5iXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![wekan.png](https://static-docs.nocobase.com/wekan-nsgq1b.png)
 
 **项目概览**
 
@@ -200,7 +200,7 @@ WeKan 是一款轻量、易用、可快速部署的开源看板工具，适合�
 
 ## Taiga：面向敏捷开发团队的项目管理工具
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTI5MjhhN2JlNTM0N2I0YTI5NTQ4ZTBjMTA3MGRmMWZfMGh4Z2VzNkU2MWhHRXprTGE0MGpoYjdKRmNnT1UxTGhfVG9rZW46SWNhemJxU1N4b2pqMWN4RExZR2NyMjBGbmxnXzE3NTczMjMyNjQ6MTc1NzMyNjg2NF9WNA)
+![taiga.png](https://static-docs.nocobase.com/taiga-v5h86i.png)
 
 **项目概览**
 
@@ -238,3 +238,12 @@ Taiga 是一款轻量、灵活、专注于敏捷管理的开源项目管理工�
 * **Planka、WeKan、Taiga、Redmine**：从简洁 Kanban 到完整 Scrum，看板与任务追踪功能均有覆盖，满足不同团队的敏捷实践需求。
 
 对于面临 Jira 繁琐配置、性能瓶颈或工具税困扰的团队，可以从这些开源工具入手，寻找真正可控、可定制的替代方案。
+
+**相关阅读：**
+
+* [7 款替代 Zapier 的开源工作流工具推荐](https://www.nocobase.com/cn/blog/zapier-open-source-alternatives)
+* [5 个最佳 ServiceNow 开源替代品（含价格对比）](https://www.nocobase.com/cn/blog/servicenow-open-source-alternatives)
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
+* [2025 年 AppSheet 最佳开源替代品](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [2025 年开源替代方案为何正在取代 OutSystems？技术自由度与成本优势深度解析](https://www.nocobase.com/cn/blog/outsystems-open-source-alternatives)
+* [四个强大的 Salesforce 开源替代方案（附成本对比）](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)
