@@ -1,11 +1,11 @@
 {
   "id": 672,
-  "title": "NocoBase v1.9.0-alpha.13",
-  "title_cn": "NocoBase v1.9.0-alpha.13",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.9.0-alpha.13: ",
+  "title_cn": "NocoBase v1.9.0-alpha.13：",
+  "title_ja": "NocoBase v1.9.0-alpha.13：",
   "description": "Release Note of v1.9.0-alpha.13",
   "description_cn": "v1.9.0-alpha.13 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.9.0-alpha.13 のリリースノート",
   "slug": "v1.9.0-alpha.13",
   "publishedAt": null,
   "status": "drafted",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-09-09T07:46:11.493Z",
+        "updatedAt": "2025-09-09T07:46:11.493Z",
+        "articles_id": 672,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-09-09T07:41:35.076Z",
+    "updatedAt": "2025-09-09T07:41:35.080Z",
+    "id": 1864,
+    "title": "develop",
+    "filename": "develop-lq9smv.png",
+    "extname": ".png",
+    "size": 77381,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-lq9smv.png",
+    "preview": "https://static-docs.nocobase.com/develop-lq9smv.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-09T04:52:02.822Z"
+  "updatedAt": "2025-09-09T07:46:11.488Z"
 }
