@@ -39,9 +39,9 @@ If you’re considering building an IT asset management system on a no-code plat
 
 ### NocoBase
 
-**Website:**https://www.nocobase.com/
+**Website:** https://www.nocobase.com/
 
-**GitHub:**https://github.com/nocobase/nocobase
+**GitHub:** https://github.com/nocobase/nocobase
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/NocoBase-5v9ar7.PNG)
 
@@ -68,7 +68,7 @@ Ideal for small and mid-sized companies that:
 
 ### Airtable
 
-**Website:**https://airtable.com/
+**Website:** https://airtable.com/
 
 ![Airtable.png](https://static-docs.nocobase.com/Airtable-8cvj1b.png)
 
@@ -92,13 +92,13 @@ Airtable is better suited for lightweight ITAM systems. However:
 * It doesn’t support automated discovery
 * It has limited integration with enterprise IT infrastructure
 
-For open-source alternatives, consider **NocoDB**: 
+For open-source alternatives, consider **NocoDB**:
 
 [Top 7 OSS Airtable Alternatives Ranked by GitHub Stars](https://www.nocobase.com/en/blog/open-source-airtable-alternatives)
 
 ### Glide
 
-**Website:**https://www.glideapps.com/
+**Website:** https://www.glideapps.com/
 
 ![Glide.png](https://static-docs.nocobase.com/Glide-trry7k.png)
 
@@ -122,7 +122,7 @@ Perfect for teams needing **mobile ITAM solutions**, such as:
 
 ### Appsmith
 
-**Website:**https://www.appsmith.com/
+**Website:** https://www.appsmith.com/
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-2zmzdo.png)
 
@@ -143,7 +143,7 @@ Best suited for tech-savvy teams who need custom asset dashboards and tight inte
 
 ### Budibase
 
-**Website:**https://budibase.com/
+**Website:** https://budibase.com/
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-5eetoz.png)
 
@@ -162,7 +162,7 @@ Great for companies that need a secure internal ITAM system integrated with exis
 
 ### Retool
 
-**Website:**https://retool.com/
+**Website:** https://retool.com/
 
 ![Retool.png](https://static-docs.nocobase.com/Retool-toi9i0.png)
 
