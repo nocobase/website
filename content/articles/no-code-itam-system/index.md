@@ -10,6 +10,8 @@ However, in reality, not every company is suited to adopt these platforms direct
 
 This is where **no-code platforms** offer real value: although they may lack some of the advanced automation features of professional ITAM tools, they excel in **simplicity** and **high customizability**. They allow you to **adapt asset management to your specific workflows** and integrate it seamlessly into daily business operations.
 
+💡 Read More: [Top 8 Open Source IT Asset Management Software for 2025](https://www.nocobase.com/en/blog/it-asset-management-software)
+
 ## Core Features of a No-Code ITAM System
 
 After understanding the role of no-code platforms in ITAM, the next question is: What core features can they cover?
