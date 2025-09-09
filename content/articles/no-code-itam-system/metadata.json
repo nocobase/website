@@ -8,7 +8,7 @@
   "description_ja": "本記事では、IT資産管理（ITAM）におけるAirtable、Glide、Appsmith、Budibase、Retoolを比較し、主要機能・利点・適用シーンを解説。最適なIT資産管理システムの選定をサポートします。",
   "slug": "no-code-itam-system",
   "publishedAt": "2025-09-09T03:04:41.697Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-09T08:04:44.033Z"
+  "updatedAt": "2025-09-09T08:14:36.870Z"
 }
