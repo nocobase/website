@@ -53,8 +53,6 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <div class="col-auto">
                 <div class="d-flex align-items-center">
                   <span class="text-muted me-2">適用業界：</span>
-                  <span class="badge bg-soft-primary me-2">IT・ソフトウェア</span>
-                  <span class="badge bg-soft-primary me-2">建設工学</span>
                   <span class="badge bg-soft-primary">全業界</span>
                 </div>
               </div>
@@ -120,7 +118,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
             </div>
             <div class="card-body p-0 mt-4">                                            
               <h5 class="title text-dark">完全なプロジェクトライフサイクル</h5>
-              <p class="text-muted mt-2">開始と計画から実行、監視、完了まで - プロジェクトのすべての段階を管理</p>
+              <p class="text-muted mt-2">開始と計画から実行、監視、完了まで、プロジェクトのすべての段階を管理</p>
               <i class="uil uil-layers full-img"></i>
             </div>
           </div>
@@ -145,8 +143,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-users-alt rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">チームとリソース管理</h5>
-              <p class="text-muted mt-2">効率的にリソースを割り当て、チームのワークロードを管理、利用率を追跡し、チームパフォーマンスを最適化</p>
+              <h5 class="title text-dark">チーム＆リスク管理</h5>
+              <p class="text-muted mt-2">効率的にリソースを割り当て、チームのワークロードを管理し、プロジェクトリスクを積極的に特定・軽減</p>
               <i class="uil uil-users-alt full-img"></i>
             </div>
           </div>
@@ -155,12 +153,12 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
         <div class="col-lg-3 col-md-6 mt-4 pt-2">
           <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
             <div class="icons text-start">
-              <i class="uil uil-shield-exclamation rounded h3 mb-0"></i>
+              <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">リスクと問題管理</h5>
-              <p class="text-muted mt-2">積極的にリスクを特定、影響を評価、緩和計画を策定し、エスカレーションワークフローで問題を追跡</p>
-              <i class="uil uil-shield-exclamation full-img"></i>
+              <h5 class="title text-dark">NocoBase プラットフォーム</h5>
+              <p class="text-muted mt-2">ノーコード開発プラットフォームの柔軟性により、組織固有のニーズに合わせて迅速にカスタマイズ可能</p>
+              <i class="uil uil-cube full-img"></i>
             </div>
           </div>
         </div><!--end col-->
@@ -305,13 +303,13 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">生涯使用、1年アップグレード</span><br>
                           <a href="/ja/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">¥{plugin.price_jpy_1_year || 0}</span>
+                          <span class="text-muted">¥{plugin.price_1_year_jp || 0}</span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">生涯使用とアップグレード</span><br>
                           <a class="text-muted" href="/ja/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">¥{plugin.price_jpy || 0}</span>
+                          <span class="text-muted">¥{plugin.price_jp || 0}</span>
                         </h6>
                       </div>
                     )}
@@ -420,6 +418,31 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
     </div><!--end container-->
   </section><!--end section-->
   <!-- How to Use End -->
+
+  <!-- CTA Start -->
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="text-center">
+            <h3 class="title mb-4 text-white">プロジェクト管理の変革準備はできていますか？</h3>
+            <p class="para-desc mx-auto text-white-50 mb-0">
+              NocoBase プロジェクト管理システムで、チームコラボレーションを強化し、プロジェクトの成功率を向上させましょう。今すぐ体験して、組織のプロジェクト管理効率を最大化してください。
+            </p>
+            <div class="mt-4 pt-2">
+              <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-light me-3">
+                <i class="uil uil-play me-1"></i>今すぐ体験
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-light">
+                <i class="uil uil-copy me-1"></i>環境にデプロイ
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA End -->
 
   <ShapeFooter />
 </Layout>

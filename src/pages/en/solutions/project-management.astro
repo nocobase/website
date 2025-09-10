@@ -53,8 +53,6 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <div class="col-auto">
                 <div class="d-flex align-items-center">
                   <span class="text-muted me-2">Industries:</span>
-                  <span class="badge bg-soft-primary me-2">IT & Software</span>
-                  <span class="badge bg-soft-primary me-2">Construction</span>
                   <span class="badge bg-soft-primary">All Industries</span>
                 </div>
               </div>
@@ -120,7 +118,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
             </div>
             <div class="card-body p-0 mt-4">                                            
               <h5 class="title text-dark">Complete Project Lifecycle</h5>
-              <p class="text-muted mt-2">From initiation and planning to execution, monitoring, and closure - manage every phase of your projects</p>
+              <p class="text-muted mt-2">From initiation and planning to execution, monitoring, closure, manage every phase of your projects</p>
               <i class="uil uil-layers full-img"></i>
             </div>
           </div>
@@ -145,8 +143,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-users-alt rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Team & Resource Management</h5>
-              <p class="text-muted mt-2">Efficiently allocate resources, manage team workload, track utilization, and optimize team performance</p>
+              <h5 class="title text-dark">Team Collaboration & Risk Management</h5>
+              <p class="text-muted mt-2">Efficiently manage team resources, track project risks, handle issue escalation, ensuring smooth project progress</p>
               <i class="uil uil-users-alt full-img"></i>
             </div>
           </div>
@@ -155,12 +153,12 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
         <div class="col-lg-3 col-md-6 mt-4 pt-2">
           <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
             <div class="icons text-start">
-              <i class="uil uil-shield-exclamation rounded h3 mb-0"></i>
+              <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Risk & Issue Management</h5>
-              <p class="text-muted mt-2">Proactive risk identification, assessment, mitigation planning, and issue tracking with escalation workflows</p>
-              <i class="uil uil-shield-exclamation full-img"></i>
+              <h5 class="title text-dark">Easy to Modify & Extend</h5>
+              <p class="text-muted mt-2">Based on NocoBase no-code framework, easily customize fields, processes and business logic with complete control</p>
+              <i class="uil uil-cube full-img"></i>
             </div>
           </div>
         </div><!--end col-->
@@ -305,7 +303,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
                           <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                          <span class="text-muted">${plugin.price_1_year_usd || 0}</span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>

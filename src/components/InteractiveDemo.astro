@@ -42,7 +42,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
   <div class="steps-guide">
     <div class="section-title">
       {!hideTitle && <h3 class="title mb-4">{guides.title}</h3>}
-      {guides.subtitle && <p class="text-muted para-desc mx-auto mb-0">{guides.subtitle}</p>}
+      {guides.subtitle && <p class="text-muted para-desc mx-auto mb-4">{guides.subtitle}</p>}
     </div>
     <div class="row">
       {guides.mainSteps.map((step, index) => (

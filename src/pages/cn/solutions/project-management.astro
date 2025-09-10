@@ -53,9 +53,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <div class="col-auto">
                 <div class="d-flex align-items-center">
                   <span class="text-muted me-2">适用行业：</span>
-                  <span class="badge bg-soft-primary me-2">IT 与软件</span>
-                  <span class="badge bg-soft-primary me-2">建筑工程</span>
-                  <span class="badge bg-soft-primary">所有行业</span>
+                  <span class="badge bg-soft-primary">全行业</span>
                 </div>
               </div>
             </div>
@@ -120,7 +118,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
             </div>
             <div class="card-body p-0 mt-4">                                            
               <h5 class="title text-dark">完整项目生命周期</h5>
-              <p class="text-muted mt-2">从启动和规划到执行、监控和收尾 - 管理项目的每个阶段</p>
+              <p class="text-muted mt-2">从启动和规划到执行、监控、收尾，管理项目的每个阶段</p>
               <i class="uil uil-layers full-img"></i>
             </div>
           </div>
@@ -145,8 +143,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-users-alt rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">团队与资源管理</h5>
-              <p class="text-muted mt-2">高效分配资源、管理团队工作负载、跟踪利用率并优化团队绩效</p>
+              <h5 class="title text-dark">团队协作与风险管理</h5>
+              <p class="text-muted mt-2">高效管理团队资源、跟踪项目风险、处理问题升级，确保项目顺利推进</p>
               <i class="uil uil-users-alt full-img"></i>
             </div>
           </div>
@@ -155,12 +153,12 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
         <div class="col-lg-3 col-md-6 mt-4 pt-2">
           <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
             <div class="icons text-start">
-              <i class="uil uil-shield-exclamation rounded h3 mb-0"></i>
+              <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">风险与问题管理</h5>
-              <p class="text-muted mt-2">主动识别风险、评估影响、制定缓解计划，并通过升级工作流跟踪问题</p>
-              <i class="uil uil-shield-exclamation full-img"></i>
+              <h5 class="title text-dark">极易修改与扩展</h5>
+              <p class="text-muted mt-2">基于NocoBase的无代码特性，轻松自定义字段、流程和业务逻辑，对系统完全掌控</p>
+              <i class="uil uil-cube full-img"></i>
             </div>
           </div>
         </div><!--end col-->
@@ -305,7 +303,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">终身使用，一年升级</span><br>
                           <a href="/cn/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">¥{plugin.price_cny_1_year || 0}</span>
+                          <span class="text-muted">¥{plugin.price_1_year_cn || 0}</span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">终身使用和升级</span><br>
@@ -421,28 +419,28 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   </section><!--end section-->
   <!-- How to Use End -->
 
-  {/* <!-- CTA Section Start -->
+  <!-- CTA Section Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="title mb-4">准备好改变您的项目管理方式了吗？</h3>
+          <h3 class="title mb-4">准备好使用 NocoBase 项目管理系统了吗？</h3>
           <p class="text-muted para-desc mx-auto mb-0">
-            几分钟内部署一个全面的项目管理解决方案。从简单的任务跟踪到复杂的多项目组合，NocoBase 无需编写一行代码即可适应您的需求。
+            1 分钟时间部署一个专属项目管理 demo。从项目规划到任务分配，再到进度跟踪，这一切都是通过 NocoBase 的可视化配置完成，无需写一行代码。
           </p>
           <div class="mt-4">
             <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>在线演示
+              <i class="uil uil-play me-1"></i>Live demo
             </a>
             <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-copy me-1"></i>立即部署
+              <i class="uil uil-copy me-1"></i>复制到自己的环境
             </a>
           </div>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- CTA Section End --> */}
+  <!-- CTA Section End -->
 
   <ShapeFooter />
 </BaseCN>
