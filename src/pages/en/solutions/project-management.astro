@@ -1,24 +1,24 @@
 ---
-import BaseCN from "../../../layouts/BaseCN.astro";
+import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
 import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
-import projectDemoGuides from "../../../data/project-management-demo-cn.json";
+import projectDemoGuides from "../../../data/project-management-demo-en.json";
 
-// 获取插件数据
+// Get plugin data
 const pluginData = await listPluginCategories();
 const allPlugins = pluginData.flatMap((group: any) => group.plugins);
 
-// 定义项目管理中使用的插件
+// Define plugins used in Project Management
 const projectPluginNames = [
   "Data Visualization: ECharts",
   "Collection: Comment",
   "Workflow: Custom action event"
 ];
 
-// 根据插件名称匹配插件数据
+// Find plugin by name
 function findPluginByName(name: string) {
   return allPlugins.find((plugin: any) => 
     plugin.name === name || 
@@ -27,17 +27,17 @@ function findPluginByName(name: string) {
   );
 }
 
-// 获取项目管理相关插件
+// Get Project Management related plugins
 const projectPlugins = projectPluginNames.map(name => findPluginByName(name)).filter(Boolean);
 
-// 调试信息
+// Debug info
 console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 ---
 
-<BaseCN
-  title="全面的项目管理解决方案"
-  description="NocoBase 项目管理系统提供完整的项目生命周期管理能力。从项目规划、任务分配、进度跟踪到风险管理，实现全流程数字化管理和团队协作。"
-  keywords="NocoBase 项目管理, 任务管理, 团队协作, 敏捷开发, 风险管理"
+<Layout
+  title="Comprehensive Project Management Solution"
+  description="NocoBase project management system provides complete project lifecycle management capabilities. From project planning, task assignment, progress tracking to risk management, achieving full-process digital management and team collaboration."
+  keywords="NocoBase Project Management, Task Management, Team Collaboration, Agile Development, Risk Management"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -45,36 +45,36 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">全面的<br/>项目管理解决方案</h1>
-            <p class="para-desc text-muted">基于 NocoBase 构建的强大、灵活的项目管理平台。支持敏捷、瀑布和混合等多种项目管理方法。在一个平台上管理项目、任务、团队、资源和风险。</p>
+            <h1 class="fw-bold mt-2 mb-3">Comprehensive<br/>Project Management Solution</h1>
+            <p class="para-desc text-muted">A powerful, flexible project management platform built with NocoBase. Supports multiple project methodologies including Agile, Waterfall, and hybrid approaches. Manage projects, tasks, teams, resources, and risks all in one place.</p>
             
-            <!-- 标签 -->
+            <!-- Tags -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">适用行业：</span>
-                  <span class="badge bg-soft-primary">全行业</span>
+                  <span class="text-muted me-2">Industries:</span>
+                  <span class="badge bg-soft-primary">All Industries</span>
                 </div>
               </div>
             </div>
 
-            <!-- 开发者信息 -->
+            <!-- Developer Info -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">开发者：</span>
+                  <span class="text-muted me-2">Developer:</span>
                   <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
                 </div>
               </div>
             </div>
 
-            <!-- 按钮 -->
+            <!-- Buttons -->
             <div class="mt-4 pt-2">
-              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>在线演示
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live Demo
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>部署到您的环境
+                <i class="uil uil-copy me-1"></i>Deploy to Your Environment
               </a>
             </div>
           </div>
@@ -82,11 +82,11 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 
         <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
           <div class="text-center">
-            <!-- 项目管理预览 -->
+            <!-- Project Management Preview -->
             <div class="position-relative">
               <img 
                 src="https://static-docs.nocobase.com/screenshot-20250909-151855.png" 
-                alt="NocoBase 项目管理系统预览" 
+                alt="NocoBase Project Management System Preview" 
                 class="img-fluid rounded shadow"
                 style="max-height: 400px; object-fit: cover;"
               />
@@ -104,8 +104,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">NocoBase 项目管理的独特之处</h4>
-            <p class="para-desc mx-auto text-muted mb-0">适应您的项目管理方法论的综合解决方案</p>
+            <h4 class="title mb-4">What Makes NocoBase Project Management Unique</h4>
+            <p class="para-desc mx-auto text-muted mb-0">A comprehensive solution that adapts to your project management methodology</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -117,8 +117,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-layers rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">完整项目生命周期</h5>
-              <p class="text-muted mt-2">从启动和规划到执行、监控、收尾，管理项目的每个阶段</p>
+              <h5 class="title text-dark">Complete Project Lifecycle</h5>
+              <p class="text-muted mt-2">From initiation and planning to execution, monitoring, closure, manage every phase of your projects</p>
               <i class="uil uil-layers full-img"></i>
             </div>
           </div>
@@ -130,8 +130,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-chart-line rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">敏捷与传统方法</h5>
-              <p class="text-muted mt-2">支持 Scrum 冲刺、看板、甘特图、燃尽图和传统瀑布方法</p>
+              <h5 class="title text-dark">Agile & Traditional Methods</h5>
+              <p class="text-muted mt-2">Support for Scrum sprints, Kanban boards, Gantt charts, burndown charts, and traditional waterfall approaches</p>
               <i class="uil uil-chart-line full-img"></i>
             </div>
           </div>
@@ -143,8 +143,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-users-alt rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">团队协作与风险管理</h5>
-              <p class="text-muted mt-2">高效管理团队资源、跟踪项目风险、处理问题升级，确保项目顺利推进</p>
+              <h5 class="title text-dark">Team Collaboration & Risk Management</h5>
+              <p class="text-muted mt-2">Efficiently manage team resources, track project risks, handle issue escalation, ensuring smooth project progress</p>
               <i class="uil uil-users-alt full-img"></i>
             </div>
           </div>
@@ -156,8 +156,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
               <i class="uil uil-cube rounded h3 mb-0"></i>
             </div>
             <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">极易修改与扩展</h5>
-              <p class="text-muted mt-2">基于NocoBase的无代码特性，轻松自定义字段、流程和业务逻辑，对系统完全掌控</p>
+              <h5 class="title text-dark">Easy to Modify & Extend</h5>
+              <p class="text-muted mt-2">Based on NocoBase no-code framework, easily customize fields, processes and business logic with complete control</p>
               <i class="uil uil-cube full-img"></i>
             </div>
           </div>
@@ -167,25 +167,25 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   </section><!--end section-->
   <!-- Features End -->
 
-  <!-- Try Ticketing Extension Start -->
+  <!-- Try Project Management Extension Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
 
         <div class="mt-4" id="ticket-demo-wrap">
-          <!-- 使用扩展功能交互演示 -->
+          <!-- Interactive Demo -->
           <InteractiveDemo guides={projectDemoGuides}  />
         </div><!--end ticket-demo-wrap-->
 
         <div class="row justify-content-center mt-4">
           <div class="col-12 text-center">
             <div class="mt-4 pt-2">
-              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>立即体验
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Try It Now
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>复制到自己的环境
+                <i class="uil uil-copy me-1"></i>Copy to Your Environment
               </a>
             </div>
           </div><!--end col-->
@@ -194,7 +194,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- Try Ticketing Extension End -->
+  <!-- Try Project Management Extension End -->
 
   <!-- Development Tutorial Start -->
   <section class="section">
@@ -202,8 +202,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">项目管理开发教程</h4>
-            <p class="para-desc mx-auto text-muted mb-0">学习如何使用 NocoBase 从零开始构建专业的项目管理系统</p>
+            <h4 class="title mb-4">Project Management Development Tutorial</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Learn how to build a professional project management system using NocoBase from scratch</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -216,11 +216,11 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-database h2 mb-3"></i>
               </div>
               <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">数据模型设计</h5>
-                <p class="text-muted text-center">学习如何创建项目、任务、团队的基础数据结构及其关系</p>
+                <h5 class="mb-3 text-center">Data Model Design</h5>
+                <p class="text-muted text-center">Learn how to create basic data structures for projects, tasks, teams, and their relationships</p>
               </div>
               <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
               </div>
             </div>
           </div>
@@ -233,11 +233,11 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-sitemap h2 mb-3"></i>
               </div>
               <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">工作流配置</h5>
-                <p class="text-muted text-center">设置任务分配、状态流转和自动化项目工作流</p>
+                <h5 class="mb-3 text-center">Workflow Configuration</h5>
+                <p class="text-muted text-center">Set up task assignment, status transitions and automated project workflows</p>
               </div>
               <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
               </div>
             </div>
           </div>
@@ -250,11 +250,11 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-chart-line h2 mb-3"></i>
               </div>
               <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">冲刺与跟踪</h5>
-                <p class="text-muted text-center">配置冲刺、燃尽图和进度跟踪功能</p>
+                <h5 class="mb-3 text-center">Sprint & Tracking</h5>
+                <p class="text-muted text-center">Configure sprints, burndown charts and progress tracking features</p>
               </div>
               <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">即将推出</button>
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
               </div>
             </div>
           </div>
@@ -270,20 +270,20 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">通过商业插件增强功能</h4>
-            <p class="para-desc mx-auto text-muted mb-0">使用强大的商业插件扩展您的项目管理能力</p>
+            <h4 class="title mb-4">Enhance with Commercial Plugins</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Extend your project management capabilities with powerful commercial plugins</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
       <div class="row pb-4">
-        <!-- 动态生成的插件卡片 -->
+        <!-- Dynamically generated plugin cards -->
         {projectPlugins.slice(0, 6).map((plugin) => {
           if (!plugin) return null;
           
-          const displayName = plugin.name_cn || plugin.name;
-          const displayDescription = plugin.description_cn || plugin.description;
-          const docsUrl = plugin.docs_cn || plugin.docs;
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
           
           return (
             <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
@@ -291,25 +291,25 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <div class="card-body">
                   <div class="mt-2 plugin-box">
                     <h6 class="card-title mb-1">{displayName}</h6>
-                    <div class="plugin-developer text-muted mb-3">由 <span>{plugin.developer || 'NocoBase'}</span> 提供</div>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
                     <p class="text-muted mb-2 plugin-overview">{displayDescription}
                       {docsUrl && (
-                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">详情</a>
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Details</a>
                       )}
                     </p>
                     {plugin.commercial && (
                       <div class="plugin-footer">
                         <h6 class="text-primary mb-0">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">终身使用，一年升级</span><br>
-                          <a href="/cn/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
+                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">¥{plugin.price_1_year_cn || 0}</span>
+                          <span class="text-muted">${plugin.price_1_year_usd || 0}</span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">终身使用和升级</span><br>
-                          <a class="text-muted" href="/cn/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
+                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
-                          <span class="text-muted">¥{plugin.price_cny || 0}</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
                         </h6>
                       </div>
                     )}
@@ -323,8 +323,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 
       <div class="row justify-content-center mt-4">
         <div class="col-12 text-center">
-          <a href="/cn/plugins-commercial" class="btn btn-primary me-3">查看所有商业插件</a>
-          <a href="/cn/commercial" class="btn btn-outline-primary">了解定价</a>
+          <a href="/en/plugins-commercial" class="btn btn-primary me-3">View All Commercial Plugins</a>
+          <a href="/en/commercial" class="btn btn-outline-primary">Learn About Pricing</a>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
@@ -337,8 +337,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">如何使用？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">三个步骤快速将带有项目管理功能的 NocoBase CRM 系统部署到您的环境</p>
+            <h4 class="title mb-4">How to Use?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Three steps to quickly deploy NocoBase CRM system with project management functionality to your environment</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -351,11 +351,11 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-download-alt h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>安装 NocoBase 系统</h5>
-                <p class="text-muted mt-2">按照我们的安装文档将 NocoBase 系统部署到您的服务器</p>
+                <h5>Install NocoBase System</h5>
+                <p class="text-muted mt-2">Deploy NocoBase system to your server following our installation documentation</p>
               </div>
               <div class="mt-3">
-                <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装指南</a>
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">View Installation Guide</a>
               </div>
             </div>
           </div>
@@ -368,14 +368,14 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-cloud-download h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>下载 CRM 系统模板</h5>
-                <p class="text-muted mt-2">下载完整的 CRM 模板以获得项目管理功能</p>
+                <h5>Download CRM System Template</h5>
+                <p class="text-muted mt-2">Download the complete CRM template to get project management capability</p>
               </div>
               <div class="mt-3">
                 <div>
-                  <a href="https://static-docs.nocobase.com/pm_demo/demo_cn_250910.zip" class="text-muted small" style="text-decoration: underline !important;">下载 SQL 文件</a>
+                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Download SQL File</a>
                 </div>
-                <a href="https://static-docs.nocobase.com/pm_demo/demo_cn_20250910.nbdata" class="btn btn-outline-primary">下载备份文件 (.nbdata)</a>
+                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Download Backup File (.nbdata)</a>
               </div>
             </div>
           </div>
@@ -388,18 +388,18 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-upload h1 text-primary"></i>
               </div>
               <div class="content mt-4 flex-grow-1">
-                <h5>在系统中恢复</h5>
-                <p class="text-muted mt-2">将 CRM 模板文件导入到您的 NocoBase 系统中，获得 CRM 和项目管理功能</p>
+                <h5>Restore in System</h5>
+                <p class="text-muted mt-2">Import the CRM template file into your NocoBase system to get both CRM and project management capabilities</p>
               </div>
               <div class="mt-3">
-                <a href="/cn/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">恢复教程</a>
+                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Restoration Tutorial</a>
               </div>
             </div>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
-      <!-- 项目管理功能说明 -->
+      <!-- Project management feature explanation -->
       <div class="row justify-content-center mt-5">
         <div class="col-lg-8">
           <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
@@ -408,8 +408,8 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
                 <i class="uil uil-info-circle h4 text-primary mb-0"></i>
               </div>
               <div class="flex-grow-1">
-                <h6 class="mb-2 text-dark fw-medium">提示</h6>
-                <p class="mb-0 text-muted">项目管理系统作为综合模块完全集成到 CRM 模板中。部署后，您可以直接在 CRM 系统中使用完整的项目管理功能，实现项目和团队的全流程管理。</p>
+                <h6 class="mb-2 text-dark fw-medium">Tip</h6>
+                <p class="mb-0 text-muted">The project management system is fully integrated into the CRM template as a comprehensive module. After deployment, you can directly use the complete project management functionality within the CRM system to achieve full-process project and team management.</p>
               </div>
             </div>
           </div>
@@ -424,16 +424,16 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="title mb-4">准备好使用 NocoBase 项目管理系统了吗？</h3>
+          <h3 class="title mb-4">Ready to Transform Your Project Management?</h3>
           <p class="text-muted para-desc mx-auto mb-0">
-            1 分钟时间部署一个专属项目管理 demo。从项目规划到任务分配，再到进度跟踪，这一切都是通过 NocoBase 的可视化配置完成，无需写一行代码。
+            Deploy a comprehensive project management solution in minutes. From simple task tracking to complex multi-project portfolios, NocoBase adapts to your needs without writing a single line of code.
           </p>
           <div class="mt-4">
-            <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live demo
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
             </a>
             <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-copy me-1"></i>复制到自己的环境
+              <i class="uil uil-copy me-1"></i>Deploy Now
             </a>
           </div>
         </div><!--end col-->
@@ -443,15 +443,15 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
-</BaseCN>
+</Layout>
 
 <style>
-/* 项目管理系统样式 - 参考 ticketing 页面样式 */
+/* Project Management System Styles - Reference ticketing page styles */
 #ticket-demo-wrap {
   position: relative;
 }
 
-/* 插件卡片样式 */
+/* Plugin card styles */
 .plugin-card {
   transition: all 0.3s ease;
 }
@@ -466,11 +466,6 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   justify-content: space-between;
   align-items: flex-end;
   margin-top: auto;
-}
-
-.plugin-footer .badge {
-  font-size: 0.7rem;
-  padding: 0.2rem 0.4rem;
 }
 
 .plugin-developer span {

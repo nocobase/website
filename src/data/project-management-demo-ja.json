@@ -1,0 +1,119 @@
+{
+  "title": "プロジェクト管理システムインタラクティブデモ",
+  "subtitle": "NocoBaseでチーム、プロジェクト、タスクを効率的に管理する方法を体験",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "step-0",
+      "title": "チーム一覧",
+      "description": "チーム名、メンバー数、現在のプロジェクトステータスを含むすべてのチームの概要を表示",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-53-47.png",
+      "button": {
+        "id": "button1",
+        "label": "チーム名、メンバー数、現在のプロジェクトステータスを含むすべてのチームの概要を表示",
+        "position": {
+          "left": "8.5%",
+          "top": "39.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "チーム詳細",
+      "description": "チーム情報を詳しく確認し、メンバーリスト、役割割り当て、プロジェクト参加状況を表示",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-14-00-03.png",
+      "button": {
+        "id": "button2",
+        "label": "チーム情報を詳しく確認し、メンバーリスト、役割割り当て、プロジェクト参加状況を表示",
+        "position": {
+          "left": "20.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "タスクタイプ",
+      "description": "要件、バグ、タスクなど、さまざまなタスクタイプを定義および管理",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-37.png",
+      "button": {
+        "id": "button3",
+        "label": "要件、バグ、タスクなど、さまざまなタスクタイプを定義および管理",
+        "position": {
+          "left": "8.2%",
+          "top": "67.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "現在のプロジェクト",
+      "description": "進捗状況、タスク割り当て、チームメンバーを含む現在のプロジェクトの概要を表示",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-49.png",
+      "button": {
+        "id": "button4",
+        "label": "進捗状況、タスク割り当て、チームメンバーを含む現在のプロジェクトの概要を表示",
+        "position": {
+          "left": "33.2%",
+          "top": "11.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "プロジェクト切り替え",
+      "description": "複数のプロジェクト間をすばやく切り替えて、異なるプロジェクトのステータスと進捗を確認",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-17.png",
+      "button": {
+        "id": "button5",
+        "label": "複数のプロジェクト間をすばやく切り替えて、異なるプロジェクトのステータスと進捗を確認",
+        "position": {
+          "left": "35.2%",
+          "top": "17.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "タスク管理",
+      "description": "タスクの作成、割り当て、追跡、完了を含む包括的なタスク管理",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-57.png",
+      "button": {
+        "id": "button6",
+        "label": "タスクの作成、割り当て、追跡、完了を含む包括的なタスク管理",
+        "position": {
+          "left": "8.5%",
+          "top": "17.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "プロジェクトスプリントチャート",
+      "description": "バーンダウンチャート、タスク完了状況、チームのベロシティを含むスプリントの進捗を視覚化",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-56-10.png",
+      "button": {
+        "id": "button7",
+        "label": "バーンダウンチャート、タスク完了状況、チームのベロシティを含むスプリントの進捗を視覚化",
+        "position": {
+          "left": "8.6%",
+          "top": "44.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

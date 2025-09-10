@@ -1,0 +1,119 @@
+{
+  "title": "Project Management System Interactive Demo",
+  "subtitle": "Experience how to efficiently manage teams, projects and tasks with NocoBase",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "step-0",
+      "title": "Teams List",
+      "description": "View all teams overview including team names, member counts and current project status",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-53-47.png",
+      "button": {
+        "id": "button1",
+        "label": "View all teams overview including team names, member counts and current project status",
+        "position": {
+          "left": "8.5%",
+          "top": "39.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "Team Details",
+      "description": "Deep dive into team information, view member list, role assignments and project participation",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-14-00-03.png",
+      "button": {
+        "id": "button2",
+        "label": "Deep dive into team information, view member list, role assignments and project participation",
+        "position": {
+          "left": "20.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Task Types",
+      "description": "Define and manage different task types such as requirements, bugs, tasks, etc.",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-37.png",
+      "button": {
+        "id": "button3",
+        "label": "Define and manage different task types such as requirements, bugs, tasks, etc.",
+        "position": {
+          "left": "8.2%",
+          "top": "67.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Current Project",
+      "description": "View current project overview including progress, task assignments and team members",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-49.png",
+      "button": {
+        "id": "button4",
+        "label": "View current project overview including progress, task assignments and team members",
+        "position": {
+          "left": "33.2%",
+          "top": "11.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Switch Projects",
+      "description": "Quickly switch between multiple projects to view different project status and progress",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-17.png",
+      "button": {
+        "id": "button5",
+        "label": "Quickly switch between multiple projects to view different project status and progress",
+        "position": {
+          "left": "35.2%",
+          "top": "17.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Task Management",
+      "description": "Comprehensive task management including creating, assigning, tracking and completing tasks",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-57.png",
+      "button": {
+        "id": "button6",
+        "label": "Comprehensive task management including creating, assigning, tracking and completing tasks",
+        "position": {
+          "left": "8.5%",
+          "top": "17.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Project Sprint Chart",
+      "description": "Visualize sprint progress including burndown charts, task completion and team velocity",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-56-10.png",
+      "button": {
+        "id": "button7",
+        "label": "Visualize sprint progress including burndown charts, task completion and team velocity",
+        "position": {
+          "left": "8.6%",
+          "top": "44.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "title": "项目管理系统互动演示",
+  "subtitle": "体验如何使用 NocoBase 高效管理团队、项目和任务",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "step-0",
+      "title": "团队列表",
+      "description": "查看所有团队概览，包括团队名称、成员数量和当前项目状态",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-53-47.png",
+      "button": {
+        "id": "button1",
+        "label": "查看所有团队概览，包括团队名称、成员数量和当前项目状态",
+        "position": {
+          "left": "8.5%",
+          "top": "39.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1",
+      "title": "团队详情",
+      "description": "深入了解团队信息，查看成员列表、角色分配和项目参与情况",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-14-00-03.png",
+      "button": {
+        "id": "button2",
+        "label": "深入了解团队信息，查看成员列表、角色分配和项目参与情况",
+        "position": {
+          "left": "20.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "任务类型",
+      "description": "定义和管理不同的任务类型，如需求、缺陷、任务等",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-37.png",
+      "button": {
+        "id": "button3",
+        "label": "定义和管理不同的任务类型，如需求、缺陷、任务等",
+        "position": {
+          "left": "8.2%",
+          "top": "67.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "当前项目",
+      "description": "查看当前项目的概览信息，包括进度、任务分配和团队成员",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-54-49.png",
+      "button": {
+        "id": "button4",
+        "label": "查看当前项目的概览信息，包括进度、任务分配和团队成员",
+        "position": {
+          "left": "33.2%",
+          "top": "11.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "切换项目",
+      "description": "在多个项目之间快速切换，查看不同项目的状态和进展",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-17.png",
+      "button": {
+        "id": "button5",
+        "label": "在多个项目之间快速切换，查看不同项目的状态和进展",
+        "position": {
+          "left": "35.2%",
+          "top": "17.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "任务管理",
+      "description": "全面管理项目任务，包括创建、分配、跟踪和完成任务",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-55-57.png",
+      "button": {
+        "id": "button6",
+        "label": "全面管理项目任务，包括创建、分配、跟踪和完成任务",
+        "position": {
+          "left": "8.5%",
+          "top": "17.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "项目冲刺图",
+      "description": "可视化展示冲刺进度，包括燃尽图、任务完成情况和团队速度",
+      "image": "https://static-docs.nocobase.com/pm-2025-09-10-13-56-10.png",
+      "button": {
+        "id": "button7",
+        "label": "可视化展示冲刺进度，包括燃尽图、任务完成情况和团队速度",
+        "position": {
+          "left": "8.6%",
+          "top": "44.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}
