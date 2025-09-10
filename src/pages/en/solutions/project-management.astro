@@ -4,8 +4,8 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
 import InteractiveDemo from "../../../components/InteractiveDemo.astro";
 import { listPluginCategories } from "../../../utils";
 
-// Import interactive demo data (placeholder for now)
-// import extensionDemoGuides from "../../../data/project-extension-demo-en.json";
+// Import interactive demo data
+import projectDemoGuides from "../../../data/project-management-demo-en.json";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -169,49 +169,34 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   </section><!--end section-->
   <!-- Features End -->
 
-  <!-- Interactive Demo Start -->
+  <!-- Try Project Management Extension Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Try NocoBase Project Management Features</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Quick experience with just a few clicks</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        <div class="col-12 text-center">
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="card border-0 shadow rounded">
-            <div class="card-body p-4">
-              <h5 class="mb-3 text-center">Team-Project-Task Management Demo</h5>
-              <p class="text-muted text-center mb-4">Experience how to manage teams, projects, and tasks efficiently with NocoBase's no-code platform</p>
-              
-              <!-- Placeholder for demo - will be replaced with actual demo component -->
-              <div class="demo-placeholder text-center py-5" style="background: #f8f9fa; border-radius: 8px; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                <div>
-                  <i class="uil uil-folder-plus h1 text-primary mb-3"></i>
-                  <h6 class="text-muted">Interactive demo coming soon</h6>
-                  <p class="text-muted small">The demo will showcase team creation, project setup, and task assignment workflows</p>
-                </div>
-              </div>
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- Interactive Demo -->
+          <InteractiveDemo guides={projectDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
 
-              <div class="text-center mt-4">
-                <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                  <i class="uil uil-play me-1"></i>Try It Now
-                </a>
-                <a href="#copy-tutorial" class="btn btn-outline-primary">
-                  <i class="uil uil-copy me-1"></i>Copy to Your Environment
-                </a>
-              </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Try It Now
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Copy to Your Environment
+              </a>
             </div>
-          </div>
+          </div><!--end col-->
+        </div><!--end row-->
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-  <!-- Interactive Demo End -->
+  <!-- Try Project Management Extension End -->
 
   <!-- Development Tutorial Start -->
   <section class="section">
@@ -463,16 +448,9 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 </Layout>
 
 <style>
-/* Interactive Demo Card Styles */
-.interactive-demo-card {
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.interactive-demo-card:hover {
-  transform: translateY(-2px);
-  border-color: #2f55d4;
-  box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
+/* Project Management System Styles - Reference ticketing page styles */
+#ticket-demo-wrap {
+  position: relative;
 }
 
 /* Plugin card styles */
