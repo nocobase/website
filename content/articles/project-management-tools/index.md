@@ -18,7 +18,7 @@ Here are 5 open-source no-code platforms I recommend for quickly building your o
 
 ## 1. **NocoBase**
 
-![NocoBase.PNG](https://static-docs.nocobase.com/bf16eceb2fc546e8146ab0ddce97e089.PNG)
+![Project management.png](https://static-docs.nocobase.com/Project%20management-soo8fc.png)
 
 **User Experience**
 
@@ -29,9 +29,20 @@ Here are 5 open-source no-code platforms I recommend for quickly building your o
 **Advantages**
 
 * **Highly Customizable Interface:** Allows for customization of fields and views such as tables, kanban boards, Gantt charts, and calendars, simplifying data management and task assignment.
+
+![Configure columns.png](https://static-docs.nocobase.com/Configure%20columns-q1rjfx.png)
+
 * **Automated Workflows:** Easily design and implement automation rules through a graphical interface, covering approval processes, notifications, etc., effectively simplifying complex business workflows.
+
+![Workflow.png](https://static-docs.nocobase.com/Workflow-bhmups.png)
+
 * **Robust Data Integration:** Connects with various databases and data sources like MySQL, PostgreSQL, and SQLite for seamless management of all project-related information.
+
+![data sources.png](https://static-docs.nocobase.com/data%20sources-w8ibnk.png)
+
 * **User-Friendly:** Intuitive drag-and-drop operations, flexible configurations, and detailed documentation make it suitable for users of all technical levels.
+
+![documentation.png](https://static-docs.nocobase.com/documentation-nnyend.png)
 
 **Use Cases**
 
