@@ -45,9 +45,14 @@
 
 Jiraと比べた最大の強みは**柔軟性と拡張性**で、標準的なタスク管理やワークフローだけでなく、企業固有のプロセスに合わせたプロジェクト管理アプリを自由に構築できます。
 
+🎉 NocoBase は近日、[プロジェクト管理ソリューション](https://www.nocobase.com/ja/solutions/project-management)を公開しました。ぜひ体験してみてください！
+
 **コア機能**
 
 * **カスタムデータモデル**：フィールド、リレーション、データ型を自由に設定可能。ビジュアルインターフェースでデータベース構造を簡単に作成でき、コード不要で機能を拡張できます。
+
+![数据源.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E6%BA%90-q45ym2.png)
+
 * **柔軟なワークフローエンジン**：複雑な承認フロー、タスク自動割り当て、多条件トリガーに対応し、部門横断的なプロセス管理が可能。
 
 ![Visual Workflow Engine.png](https://static-docs.nocobase.com/Visual%20Workflow%20Engine-0ey31g.png)
