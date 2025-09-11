@@ -47,9 +47,14 @@
 
 与 Jira 相比，NocoBase 的核心优势在于**灵活性与可扩展性**，用户可自由搭建所需模块，不仅能满足常见的任务管理、工单流转等需求，还支持快速构建符合企业内部流程的个性化项目管理应用。
 
+🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，欢迎体验！
+
 **核心功能**
 
 * **自定义数据模型**：不仅支持任意字段、关系和数据类型，还能通过可视化界面快速搭建符合团队业务逻辑的数据库结构，无需写代码即可扩展功能。
+
+![数据源.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E6%BA%90-3a7lph.png)
+
 * **灵活工作流引擎**：支持复杂审批、任务自动分配和多条件触发规则，让业务流程管理更灵活，适合多部门协作。
 
 ![灵活的工作流.png](https://static-docs.nocobase.com/%E7%81%B5%E6%B4%BB%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81-aueo7i.png)
