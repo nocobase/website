@@ -18,20 +18,33 @@
 
 ## 1. **NocoBase**
 
-![NocoBase.PNG](https://static-docs.nocobase.com/bf16eceb2fc546e8146ab0ddce97e089.PNG)
+![Project management.png](https://static-docs.nocobase.com/Project%20management-soo8fc.png)
 
 **ユーザー体験**
 
 [NocoBase](https://www.nocobase.com/)は、プロジェクト管理システムを構築するのに最適な強力なノーコード開発プラットフォームです。データ駆動型モデルに基づいて、NocoBaseを使用することで、広範なカスタマイズオプションを持つ柔軟なプロジェクト管理システムを構築できます。ミニマリストのインターフェースは、タスク管理やプロジェクト追跡を直感的かつ効率的にします。
+
+🎉 NocoBase は近日、[プロジェクト管理ソリューション](https://www.nocobase.com/ja/solutions/project-management)を公開しました。ぜひ体験してみてください！
 
 🙌 実践してみる：[NocoBase チュートリアル – タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
 **利点**
 
 * **高いカスタマイズ性**：データ管理やタスク割り当てを簡素化するために、テーブル、カンバンボード、ガントチャート、カレンダーなどのフィールドやビューをカスタマイズできます。
+
+![Configure columns.png](https://static-docs.nocobase.com/Configure%20columns-q1rjfx.png)
+
 * **自動化ワークフロー**：グラフィカルインターフェースを通じて自動化ルールを設計・実装でき、承認プロセス、通知などをカバーすることで複雑なビジネスワークフローを効果的に簡素化します。
+
+![Workflow.png](https://static-docs.nocobase.com/Workflow-bhmups.png)
+
 * **堅牢なデータ統合**：MySQL、PostgreSQL、SQLiteなどのさまざまなデータベースやデータソースと接続し、すべてのプロジェクト関連情報のシームレスな管理を実現します。
+
+![data sources.png](https://static-docs.nocobase.com/data%20sources-w8ibnk.png)
+
 * **使いやすさ**：直感的なドラッグアンドドロップ操作、柔軟な構成、詳細な文書があり、すべての技術レベルのユーザーに適しています。
+
+![documentation.png](https://static-docs.nocobase.com/documentation-nnyend.png)
 
 **使用例**
 

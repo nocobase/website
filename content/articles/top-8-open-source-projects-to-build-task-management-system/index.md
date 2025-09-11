@@ -37,9 +37,11 @@ Here are some key factors to consider:
 
 ⭐️ **GitHub Stars**: 15.8k
 
-![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
+![Project management.png](https://static-docs.nocobase.com/Project%20management-9w3rj1.png)
 
 NocoBase is an open-source no-code/low-code development platform featuring flexible data modeling and a powerful plugin architecture suitable for various business needs, including building custom task management systems.
+
+🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management) – feel free to try it out!
 
 NocoBase also provides a [detailed tutorial for setting up a task management system](https://www.nocobase.com/en/tutorials), making it easy for users to get started.
 
@@ -48,9 +50,20 @@ NocoBase also provides a [detailed tutorial for setting up a task management sys
 **Highlights**
 
 * **Flexible Data Modeling**: Supports complex data relationships and custom fields to meet diverse business needs.
+
+![Configure columns.png](https://static-docs.nocobase.com/Configure%20columns-vua1uu.png)
+
 * **Workflow Automation**: A built-in visual workflow designer simplifies the automation of business processes.
+
+![Workflow.png](https://static-docs.nocobase.com/Workflow-7xc40o.png)
+
 * **Permission Management**: Fine-grained permission control ensures data security and access management.
+
+![Permission.png](https://static-docs.nocobase.com/Permission-4xgn8h.png)
+
 * **Plugin Extensibility**: A rich plugin ecosystem supports feature extensions and third-party integrations.
+
+![Integration.png](https://static-docs.nocobase.com/Integration-r4f8ne.png)
 
 **Best Use Case**
 
