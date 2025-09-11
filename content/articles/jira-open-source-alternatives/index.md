@@ -46,9 +46,14 @@ In this article, we’ll introduce **6 excellent open-source project management 
 
 Its biggest advantage over Jira lies in flexibility and extensibility: instead of forcing you to adapt to predefined workflows, NocoBase lets you design your own project management environment.
 
+🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management) – feel free to try it out!
+
 **Core Features**
 
 * **Custom Data Models**: Define fields, relationships, and data types via a visual interface. Quickly create databases aligned with your business logic without writing code.
+
+![数据源.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E6%BA%90-q45ym2.png)
+
 * **Visual Workflow Engine**: Build complex approval flows, automate task assignments, and set up multi-condition triggers for seamless cross-department collaboration.
 
 ![Visual Workflow Engine.png](https://static-docs.nocobase.com/Visual%20Workflow%20Engine-0ey31g.png)
