@@ -24,6 +24,8 @@ Here are 5 open-source no-code platforms I recommend for quickly building your o
 
 [NocoBase](https://www.nocobase.com/) is a powerful no-code development platform ideal for building project management systems. Based on a data-driven model, NocoBase allows you to create a flexible project management system with extensive customization options. Its minimalist interface makes task management and project tracking intuitive and efficient.
 
+🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management) – feel free to try it out!
+
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
 **Advantages**
