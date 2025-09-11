@@ -26,6 +26,8 @@
 
 [NocoBase](https://www.nocobase.com/) 是一个很强大的无代码（零代码）开发平台，可以用于构建项目管理系统。基于数据驱动模型，NocoBase 可以帮你构建一个灵活的项目管理系统，并提供了极大的自定义空间。NocoBase 的界面风格非常简约，使得任务管理和项目追踪变得直观而高效。
 
+🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，欢迎体验！
+
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
 **优点**
