@@ -24,6 +24,8 @@
 
 [NocoBase](https://www.nocobase.com/)は、プロジェクト管理システムを構築するのに最適な強力なノーコード開発プラットフォームです。データ駆動型モデルに基づいて、NocoBaseを使用することで、広範なカスタマイズオプションを持つ柔軟なプロジェクト管理システムを構築できます。ミニマリストのインターフェースは、タスク管理やプロジェクト追跡を直感的かつ効率的にします。
 
+🎉 NocoBase は近日、[プロジェクト管理ソリューション](https://www.nocobase.com/ja/solutions/project-management)を公開しました。ぜひ体験してみてください！
+
 🙌 実践してみる：[NocoBase チュートリアル – タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
 **利点**
