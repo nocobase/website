@@ -3,9 +3,9 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": null,
-  "description_cn": null,
-  "description_ja": "",
+  "description": "This week's update includes: email manager support for batch synchronization, workflow approval support for returning to any node in the approval process, and more.",
+  "description_cn": "本周更新包括：邮件管理支持分批同步，工作流审批支持审批时退回到任意节点等。",
+  "description_ja": "今週の更新内容は以下の通りです：メールマネージャーの一括同期サポート、ワークフロー承認における承認プロセス内の任意のノードへの戻り機能のサポート、その他多数です。",
   "slug": "weekly-updates-20250912",
   "publishedAt": "2025-09-12T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-12T00:41:34.743Z"
+  "updatedAt": "2025-09-12T00:48:31.562Z"
 }
