@@ -8,7 +8,7 @@
   "description_ja": "今週の更新内容は以下の通りです：メールマネージャーの一括同期サポート、ワークフロー承認における承認プロセス内の任意のノードへの戻り機能のサポート、その他多数です。",
   "slug": "weekly-updates-20250912",
   "publishedAt": "2025-09-12T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -93,18 +93,18 @@
   ],
   "category": null,
   "cover": {
-    "createdAt": "2025-08-28T07:44:41.174Z",
-    "updatedAt": "2025-08-28T07:44:41.177Z",
-    "id": 1810,
+    "createdAt": "2025-09-12T01:08:21.694Z",
+    "updatedAt": "2025-09-12T01:08:21.706Z",
+    "id": 1878,
     "title": "Weekly Update Summary",
-    "filename": "Weekly Update Summary-ns3fos.png",
+    "filename": "Weekly Update Summary-kvry89.png",
     "extname": ".png",
-    "size": 152705,
+    "size": 151593,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-ns3fos.png",
-    "preview": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-ns3fos.png",
+    "url": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-kvry89.png",
+    "preview": "https://static-docs.nocobase.com/Weekly%20Update%20Summary-kvry89.png",
     "storageId": 2,
     "createdById": 3,
     "updatedById": 3
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-12T00:48:31.562Z"
+  "updatedAt": "2025-09-12T01:18:33.913Z"
 }
