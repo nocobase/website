@@ -1,14 +1,14 @@
 {
   "id": 676,
-  "title": "NocoBase v1.8.24",
-  "title_cn": "NocoBase v1.8.24",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.24: workflow supports to return to any nodes in approval process",
+  "title_cn": "NocoBase v1.8.24：工作流支持审批时退回到任意节点",
+  "title_ja": "NocoBase v1.8.24：ワークフローは承認時に任意のノードに戻る機能をサポートしています",
   "description": "Release Note of v1.8.24",
   "description_cn": "v1.8.24 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.24 のリリースノート",
   "slug": "v1.8.24",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-09-12T16:23:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-09-15T00:53:57.030Z",
+        "updatedAt": "2025-09-15T00:53:57.030Z",
+        "articles_id": 676,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-09-15T00:46:44.631Z",
+    "updatedAt": "2025-09-15T00:46:44.642Z",
+    "id": 1879,
+    "title": "发版封面图-main",
+    "filename": "发版封面图-main-c7iqie.png",
+    "extname": ".png",
+    "size": 89207,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-c7iqie.png",
+    "preview": "https://static-docs.nocobase.com/%E5%8F%91%E7%89%88%E5%B0%81%E9%9D%A2%E5%9B%BE-main-c7iqie.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-12T16:23:27.362Z"
+  "updatedAt": "2025-09-15T00:53:57.022Z"
 }
