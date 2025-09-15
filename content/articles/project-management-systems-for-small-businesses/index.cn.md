@@ -10,7 +10,7 @@
 
 > “Keep cost at \$0 or close to it, but can afford to spend if it's worthwhile.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGM5MjA4ZjM1MGJlYjI1MzJmYjkxM2U1ZjA5YjFjNzJfUUU3OVlqRHpXcUVWZkVyOGZ1OVZCVll4U0lvWXRmaFRfVG9rZW46QWN3amJCNnYyb1N1bVp4MmEyMGNFcDNHblRjXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Low Cost.png](https://static-docs.nocobase.com/Low%20Cost-neqqg0.png)
 
 [这位用户](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)运营着一家美国小型服务型企业（<10 人），希望用一套系统统一管理 SOP、任务和文件，但预算有限。他的核心需求是：用尽可能少的钱获得尽可能全面的功能。
 
@@ -24,7 +24,7 @@
 
 > “Most of my team are not especially tech-savvy. I don't want to spend weeks teaching them how to use it.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2ZjMGFiODk4NmNlZTYyZThlNjYyMDc3ZTQxNTczMTNfS3AyRHF5dVVrZnlsbE92NEZRbmExYW5nOVR6RXVndFpfVG9rZW46Um91T2JTQlI5b3VEck14R1ZmZmNFektubnNkXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Ease of Use.png](https://static-docs.nocobase.com/Ease%20of%20Use-yq9ggm.png)
 
 [这位用户](https://www.reddit.com/r/projectmanagement/comments/1kl3cw7/any_recommendations_for_software_to_organise/)来自一家非营利组织，团队仅 3 人，大多数成员不熟悉数字化工具。他只想找一款界面直观、上手快的工具，用于创建任务、附加图片、添加评论，而不想为培训员工投入过多时间。
 
@@ -38,7 +38,7 @@
 
 > “We're paying for Dropbox, Google Drive, and O365… I just want to simplify this stuff.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGJiMWQ2NTY0NGI1YmVmMTg2YTRkNTM1NWY5MDZjOTZfZG1DV1Z3dUUySmdxWndjNEdoUXVsYVJiclJ6YUVxd01fVG9rZW46T25DN2JINUYzbzdZUnh4RWx2SGNKOVVJbkZmXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Integration.png](https://static-docs.nocobase.com/Integration-h4dlzx.png)
 
 [这位用户](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)的痛点是工具割裂。他们为了不同需求订阅了多个工具：Dropbox 管文件、Google Docs 写文档、O365 发邮件，但信息和费用分散在不同平台。他希望通过一个系统完成任务、文档、文件、SOP等所有管理。
 
@@ -52,7 +52,7 @@
 
 > “Able to link to live documents so people can make changes to it, leave comments, set deadlines.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmMyYTA1NThjYTE4MTU3YzIwZTE3ZjI5NTRiNzE2MGVfNkhaQVFNWUZ2WXFpblAxN2NnOVBoVFJNQnRJY0drcFRfVG9rZW46Slo5WGJKN05Xb2lKV0l4VDQ3QWNLZnJ6bkVlXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Collaboration Efficiency.png](https://static-docs.nocobase.com/Collaboration%20Efficiency-vnv6a8.png)
 
 [这位用户](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)希望在一个平台上完成多种协作：链接实时文档，团队可直接编辑，在任务中评论和讨论，设置截止日期和优先级。
 
@@ -66,7 +66,7 @@
 
 > “I want something that works now for less than 10 users, but also scales as we grow.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2RjZTEwMWYzNTFhMDM1MDNiMzU3MWFmY2U0MDJlMjBfM3hwSHgxRmRyd1BoV245VmRLTVFpQ1B3SFVWUEFDYjJfVG9rZW46Skc3ZGJVS1Y4b05neFN4NGVhR2NtQnc5bldiXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Scalability.png](https://static-docs.nocobase.com/Scalability-eootb1.png)
 
 [这位用户](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)目前团队不足 10 人，但预计未来几年会扩大。他担心选到的工具只适合小团队，随着业务发展会面临二次迁移，造成时间成本和数据风险。
 
@@ -98,7 +98,7 @@
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTQyODdhZjkxN2VkYzdmOTY1NWU3MjdjMDBiODNjMDVfN1NpR1pqeHlIbnY1TmZ1RnowQjZLVlJ1eTZyVHdVcmZfVG9rZW46WDA1WWIzOFV0b3FicUR4Y2ZQWGNPR296bkhnXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![nocobase.png](https://static-docs.nocobase.com/1-snczne.png)
 
 **概览**[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源无代码平台，它不预设固定功能，而是允许用户完全根据需求搭建所需模块，适合希望通过自定义配置来整合多种功能的小型企业。
 
@@ -108,19 +108,19 @@
 
 * **完整研发生命周期管理**：从需求收集、设计开发到测试、上线与后期维护，NocoBase 提供数据模型驱动的全流程管理能力。每个阶段都能建立对应的数据表和流程，确保研发环节可追溯、可量化、可持续优化。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmM1MzlhMzM1YmJmNjliN2QzZThkYTU2YzIxNmFiOGVfckdqbFI0aWFHRmhRcVlhVXA3bUZyNlFwRXpMclBNNE1fVG9rZW46TXFpemJSdVdFb0NlWkh4Y2FqWGNsb3lobnhnXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![完整研发生命周期管理.png](https://static-docs.nocobase.com/2-j45qef.png)
 
 * **敏捷开发管理**：NocoBase 支持 Scrum 冲刺、看板、燃尽图，让团队能够实现迭代开发和持续交付。同时，灵活的插件架构还能满足不同团队对敏捷实践的个性化需求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTAxMWQzMzdiZmIyMGI3Mzk4ZDMzNTBiODVhZDhkZDBfSUJVZVh4YXRDWTdWNWVpSmI0d01hRk01ZDlqdDJvTWZfVG9rZW46VGo5SWJ5aHJNbzJHdVB4MmU1VGM0R0hmbmllXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![敏捷开发管理.png](https://static-docs.nocobase.com/3-0ordra.png)
 
 * **团队协作与质量管理**：通过任务、评论、文件和通知模块，NocoBase 打造一个集中化的协作环境。结合缺陷管理和代码质量追踪功能，帮助团队快速定位问题，提升交付质量。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDEyMzFhNGRhNzhhNTkzOWI2ZTFhYTkyNTQ5ODMyZjJfWFlEeGNEYVhWOFpKODV2VE5qMVlDeUwwa1VyRk41aklfVG9rZW46UDV4Z2JiZmV2bzVMeXd4NTlicGMxaUNjbnBnXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![团队协作与质量管理.png](https://static-docs.nocobase.com/4-sqknkq.png)
 
 * **极易修改与扩展**：得益于无代码和插件化架构，用户可以轻松自定义字段、流程和业务逻辑，不受工具限制。随着团队规模和业务复杂度的变化，系统可快速扩展而无需更换平台。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTdhMTEzOTkzZDM5NWUwNTkzYWMxMzQ5ZmJmNmVhOGRfZk1BS29iM0ljRGlrYkxTOFJUWTBIME82TjJGbHR3VVBfVG9rZW46SFB0U2Jpb2xxb2cwbmN4ZzNPd2NpNmRMbjRmXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![极易修改与扩展.png](https://static-docs.nocobase.com/5-51yag9.png)
 
 **适合小型企业的理由**
 
@@ -130,7 +130,7 @@
 
 ## **ClickUp**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjUyMGRjOGNmYjk3OGZkNWNkMDcyM2FjYWJhNDliYjZfclYySkJEckk3VEU1WEVlaDV2eGx5UWNvbVV2YzBrOVNfVG9rZW46UXY4ZGI0emZOb1N2a2d4SHc5d2NIZUhhbkhkXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![ClickUp.png](https://static-docs.nocobase.com/ClickUp-6g0zkw.png)
 
 **概览**
 
@@ -152,7 +152,7 @@
 
 ## **Notion**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzU1Nzk0OWY4NGE5NzdkMzlhNWMwYzdkMGQ4ZTYxYzJfVGxCNmZ5c3E4UkJ0eTNIR1BRelZZYWdZNzNncE1naEdfVG9rZW46VkJLSWJZT3kzb2JmZk14SXdwRWM1a2x3bnhoXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Notion.png](https://static-docs.nocobase.com/Notion-6oyq58.png)
 
 **概览**
 
@@ -173,7 +173,7 @@
 
 ## **Trello**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmY4ZDZiMDIxMTJhNDljNjU4NDdkODM2YzNlOTM4Y2VfN2VrRGpkcUpuVHB1SVo4eTI4SEFiT3FQdThmZ0ZRdmRfVG9rZW46RnREY2JkNFdibzNGU2h4MlZnSWNJY3YxbkpoXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Trello.png](https://static-docs.nocobase.com/Trello-pty38i.png)
 
 **概览**
 
@@ -194,7 +194,7 @@
 
 ## **Microsoft Loop**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjY4YjNiOTdmN2QyZjE1ZjJjYTA5NzUyOTQ0ZGQ1YzJfUFJIbktZalBObDMwa0YxellGWXV5bjl2NlFiVVdWSlVfVG9rZW46Snp3RWJ3RmFyb0V4UFR4WkxQcmNQWnZObjllXzE3NTc4OTk0NzI6MTc1NzkwMzA3Ml9WNA)
+![Microsoft Loop.png](https://static-docs.nocobase.com/Microsoft%20Loop-a9wfxx.png)
 
 **概览**
 
@@ -227,3 +227,12 @@
 | Microsoft Loop | O365 生态下的协作工具   | 与 Outlook、Teams、Word、Excel 无缝集成，组件化内容实时同步    | 已经在用 O365，希望在微软生态内扩展协作能力的企业     |
 
 ❤ 希望这篇文章能够为你的团队选型提供一些帮助\~
+
+**相关阅读：**
+
+* [五款适合小型企业的库存管理系统（含价格对比） ](https://www.nocobase.com/cn/blog/stock-management-systems-for-small-businesses)
+* [小型企业 ERP 选型指南：这四款软件助你高效管理 ](https://www.nocobase.com/cn/blog/best-erp-solutions-for-small-businesses)
+* [适合小型企业的库存管理工具推荐（含免费、开源） ](https://www.nocobase.com/cn/blog/inventory-management-tools-for-small-business)
+* [适合小型企业的四款开源 CRM 软件：轻量、高效、易上手 ](https://www.nocobase.com/cn/blog/the-best-4-crm-software-for-small-businesses)
+* [五个适合小型企业使用的管理软件！（真实经验） ](https://www.nocobase.com/cn/blog/5-management-tools-perfect-for-small-businesses)
+* [6 个替代 Jira 的开源项目管理工具推荐 ](https://www.nocobase.com/cn/blog/jira-open-source-alternatives)
