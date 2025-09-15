@@ -10,7 +10,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 
 > “Keep cost at \$0 or close to it, but can afford to spend if it's worthwhile.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmU0NGUwZDIzZDEwYTU0MjM3NTVjMWE3NGUyNGI0OGZfZG1vRWx5MVFZcGExTHBMaXQ0YnVHZ2NVYU1mUnlCZjNfVG9rZW46VGFNbGI5YmR3b3lpdll4eFFGT2NGRElrbkZoXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Low Cost.png](https://static-docs.nocobase.com/Low%20Cost-neqqg0.png)
 
 [このユーザーは](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)、米国の小規模サービス企業（従業員 10 人未満）を経営しており、SOP・タスク・ファイルを統合管理できるシステムを求めています。ただし予算は限られており、「できるだけ少ない費用で包括的な機能」を重視しています。
 
@@ -24,7 +24,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 
 > “Most of my team are not especially tech-savvy. I don't want to spend weeks teaching them how to use it.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Njk5YmRmMDNlYWVjMzQ5MDkwZDQ2YjEwMGVhNWFjYzdfMHBJSEZQUmRwd2NQTktMYVVDWnpwNUVQNHZ5MzlMZVpfVG9rZW46T2xEamJoRkJib00yR0p4R2VDUmM2bGd0bnNnXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Ease of Use.png](https://static-docs.nocobase.com/Ease%20of%20Use-yq9ggm.png)
 
 [このユーザーは](https://www.reddit.com/r/projectmanagement/comments/1kl3cw7/any_recommendations_for_software_to_organise/) 3 人規模の非営利団体に所属。メンバーの多くはデジタルツールに慣れていません。求めているのは「直感的で、すぐに使えるツール」。タスク作成、画像添付、コメント追加が簡単にでき、研修に時間をかけずに導入したいと考えています。
 
@@ -38,7 +38,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 
 > “We're paying for Dropbox, Google Drive, and O365… I just want to simplify this stuff.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmM3MDJmZTk4NDUyZGE3MTlmZjlkOTRkZDE3NTQ2ZGNfb3o5bGJ4b2NOOWJXbHVkVHl3Tk54dk9KUzg5cVcwZGVfVG9rZW46V093eWJTTG9Ib0xrY0d4dFpFSWNNbDB0bjVmXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Integration.png](https://static-docs.nocobase.com/Integration-h4dlzx.png)
 
 [このユーザー](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)の課題は「ツールの分散」。Dropbox でファイル、Google Docs で文書、O365 でメール…と複数契約しており、情報もコストもバラバラ。彼が望むのは、**タスク・ドキュメント・ファイル・SOP を一括管理できるシステム**です。
 
@@ -52,7 +52,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 
 > “Able to link to live documents so people can make changes to it, leave comments, set deadlines.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTJlOGI4OTVjYjEyYTM2NzBkZmRhZmI4NDg2OTBjMWFfbkNSTVFZU0ZkbDZCSEx3V294NDQ0akJBT1lZVU9qYnZfVG9rZW46TVgwSGJVOXFmb2hCRUt4bVN2dGNCa0wwblZiXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Collaboration Efficiency.png](https://static-docs.nocobase.com/Collaboration%20Efficiency-vnv6a8.png)
 
 [このユーザーは](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)、1 つのプラットフォームでリアルタイム文書のリンク、共同編集、コメント、期限や優先度の設定をしたいと考えています。
 
@@ -66,7 +66,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 
 > “I want something that works now for less than 10 users, but also scales as we grow.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2Q5OGJkZTNmNjU3ODJlMDBkYmJmMmM0Mjg5Y2Y1ZDNfWWg2bTB1R1JYVVY3bjdyN2JMTnJVZm9GUTl3VFNxbFpfVG9rZW46SXRBUmIySWU1bzRPZE94NU1oNmM0dUtvbmNmXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Scalability.png](https://static-docs.nocobase.com/Scalability-eootb1.png)
 
 [このユーザー](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)のチームは現在 10 人未満ですが、将来的な拡大を見込んでいます。「小規模にしか対応できないツール」を選んでしまうと、成長後に移行が必要となり、コストやリスクが発生することを懸念しています。
 
@@ -79,7 +79,7 @@ Reddit 上の議論をもとに、中小企業がプロジェクト管理シス�
 Reddit ユーザーのフィードバックを見ると、小規模企業がプロジェクト管理システムに求める中核的なニーズは、5 つのキーワードに集約されます：**低コスト・使いやすさ・一体化・協働効率・拡張性**。
 
 * 小規模企業は、複雑なエンタープライズ向けシステムに高額なコストを払いたくないし、従業員教育に大量の時間を費やすことも望んでいません。
-* 彼らは**「1 つのツールで 80% の課題を解決」**し、ツールの分断や情報の断片化を避けたいと考えています。
+* 彼らは「1 つのツールで 80% の課題を解決」し、ツールの分断や情報の断片化を避けたいと考えています。
 * 現在の小規模チームのニーズを満たすだけでなく、将来的な成長にも対応できるプラットフォームを必要としています。
 
 次に、これら 5 大ニーズに基づいて、小規模企業に本当に適したプロジェクト管理システムを厳選して紹介します。
@@ -98,7 +98,7 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2I3ZjFkNGI0OWY0MGNkZWVhOTlhNjliOTcwOGRhODlfRkhlWVpMZWtsYXVzbjU5QXVIUXJ0WG9jbFhxcWNIZXBfVG9rZW46RXY4MWJvT25mb2MzUG14TjBGSWNYTVVsblF2XzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![NocoBase.png](https://static-docs.nocobase.com/NocoBase-hgmq2o.png)
 
 **概要**
 
@@ -110,19 +110,19 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 * **開発ライフサイクル全体の管理**：要件収集から設計・開発、テスト、本番運用、保守まで、データモデル駆動で全プロセスを一元管理。各フェーズごとにテーブルやフローを構築し、追跡性・定量化・継続改善を可能にします。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjIzZjc0YWJlNzZlYzY0OWU4ODI0ZTI5ZTU5OTI3ZDlfZktBbEtkVmxxbDZDdVNIaVV6NHRUY2lzdFBBVnNHY0RfVG9rZW46TjNmM2JJMnhMb2RjRG94NUNRemNKSFJJbnhmXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Complete Project Lifecycle.png](https://static-docs.nocobase.com/Complete%20Project%20Lifecycle-sgucb2.png)
 
 * **アジャイル開発管理**：Scrum スプリント、カンバン、バーンダウンチャートに対応。チームは反復開発と継続的デリバリーを実現できます。さらに柔軟なプラグインアーキテクチャにより、チーム独自のアジャイル運用にも対応。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDM5NDNhZTg4OGQwMzEzNTFiNDgxNGU4MmY0ZjhmMDBfd3h3RzVkZ0hxdThYSHd1OFFad010aXdCTGRWbmxGNVpfVG9rZW46U1BsamJIQXFXb3BEcU54bnBsTmNGb0tjbjBnXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Agile Development Management.png](https://static-docs.nocobase.com/Agile%20Development%20Management-oss153.png)
 
 * **チーム協働と品質管理**：タスク、コメント、ファイル、通知機能を通じて集中化されたコラボ環境を提供。バグ管理やコード品質のトラッキングと組み合わせ、問題の早期発見と品質向上を支援します。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTdhNTEwODVkNjhjZTA0OTlkOTlkNjEyOGExOTI0ZmJfNzU1SFR6dWJDYlRiY3pkV1l5RWZINm9RWmdEUExqcnRfVG9rZW46WFN5QWJNbVRHb1RWVzd4QkQybWNTYUdubnRjXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Team Collaboration.png](https://static-docs.nocobase.com/Team%20Collaboration-cuins9.png)
 
 * **容易な改変と拡張**：ノーコードとプラグインアーキテクチャにより、フィールド、フロー、ビジネスロジックを自在にカスタマイズ可能。チーム規模や業務の複雑化に応じてシステムを拡張でき、プラットフォーム移行の必要がありません。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODdmZDRmN2FkNTIzZTNkNzA1YjA2ZDM5NDA5NTEzYTZfNkIwWHhFYzI0MVpRd1JoVjVFMDZlNEdOem5PNHZIOGhfVG9rZW46UmRKYmIxMmdsb1BIMDF4UWpsT2NPd0ZiblJiXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Easy Customization.png](https://static-docs.nocobase.com/Easy%20Customization-j2xo60.png)
 
 **小規模企業に適している理由**
 
@@ -132,7 +132,7 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 ## **ClickUp**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTRiZmZhZDI4NmJjNGRhYWI3NWQ5NGZjNmUzYzZkMTNfeXRYQWlYQzAxbjlDZmcySWtkcFFkSGpUWXM4U3RvQXlfVG9rZW46U1VQSmIyaFRub25wZmZ4MzA5V2NXU3RHbjIzXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![ClickUp.png](https://static-docs.nocobase.com/ClickUp-6g0zkw.png)
 
 **概要**
 
@@ -154,7 +154,7 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 ## **Notion**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGViNjU4MWEyMzZhZDUzM2Y1YWIyY2ZhOGI2YjE5NTVfbXJKd1JzN2lMSjJycTVGTndCWHB1d3lSVmUxUkxhY2RfVG9rZW46SGxTUWJnYmNEb3kzZlF4dTVPZGNaUXVkbjBnXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Notion.png](https://static-docs.nocobase.com/Notion-6oyq58.png)
 
 **概要**
 
@@ -175,7 +175,7 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 ## **Trello**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU0ZjVjYzBhODA3MjQ3ZDU1ZjM3N2FmZjllOTYwMDVfcDlTT1h1N0g2MHBrNW9uWFlpdWhWWWFTZUhWdnVQQ1JfVG9rZW46UVRzWGJGUU5Vb0ZDa0p4ZVFqWGM3VUZZbnVlXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Trello.png](https://static-docs.nocobase.com/Trello-pty38i.png)
 
 **概要**
 
@@ -196,7 +196,7 @@ Reddit ユーザーのフィードバックを見ると、小規模企業がプ�
 
 ## **Microsoft Loop**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDEyOTlmZjIzYTYwYjQ0NDRhNWEzY2Y3NWFhZjhhOTRfcFN4NDhEMDNPRUJHU0ZCRTNmTE41SFpMRktDeThGTEJfVG9rZW46TklGdWJ0RTJVb2phU1N4TDlPQWNvVGd6bmxjXzE3NTc4OTk0OTY6MTc1NzkwMzA5Nl9WNA)
+![Microsoft Loop.png](https://static-docs.nocobase.com/Microsoft%20Loop-a9wfxx.png)
 
 **概要**
 
@@ -229,3 +229,12 @@ Reddit ユーザーの実際の議論からも分かる通り、小規模企業�
 | Microsoft Loop | O365 エコシステム下のコラボレーションツール             | Outlook、Teams、Word、Excel とシームレスに統合、コンポーネント化されたコンテンツのリアルタイム同期をサポート   | 既に O365 を使用しており、マイクロソフトエコシステム内でコラボレーション能力を拡張したい企業 |
 
 ❤ 本記事が、あなたのチームのツール選定に少しでも役立てば幸いです。
+
+**関連読み物：**
+
+* [中小企業向け 5 選の在庫管理システム（価格比較付き） ](https://www.nocobase.com/ja/blog/stock-management-systems-for-small-businesses)
+* [小規模ビジネス向けERPおすすめ4選──業務を効率化するツール ](https://www.nocobase.com/ja/blog/best-erp-solutions-for-small-businesses)
+* [小規模ビジネス向けのベスト在庫管理ツール（無料・オープンソース含む） ](https://www.nocobase.com/ja/blog/inventory-management-tools-for-small-business)
+* [中小企業向け！軽量で使いやすいオープンソースCRMソフト4選 ](https://www.nocobase.com/ja/blog/the-best-4-crm-software-for-small-businesses)
+* [5つの中小企業向け管理ツール（実体験からのおすすめ） ](https://www.nocobase.com/ja/blog/5-management-tools-perfect-for-small-businesses)
+* [6 つの Jira 代替オープンソースプロジェクト管理ツール推奨](https://www.nocobase.com/ja/blog/jira-open-source-alternatives)
