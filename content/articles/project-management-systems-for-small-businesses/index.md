@@ -10,7 +10,7 @@ Based on a wide range of Reddit discussions, we’ve summarized **the five core 
 
 > “Keep cost at \$0 or close to it, but can afford to spend if it's worthwhile.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTk5MDIwMGQyMjllZWQ0YmMyMWZjZjZjNDNiOGE0ZjhfM3JxbTR2c1NLZ2p0ZEI4bzM3dXpaNjlEZHptV2Vjc0VfVG9rZW46T3ZFU2JJWDB0b25xRlJ4VW9OUWM5QWNybjBmXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Low Cost.png](https://static-docs.nocobase.com/Low%20Cost-neqqg0.png)
 
 [This user](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/) runs a small U.S.-based service business (<10 people) and wants one system to manage SOPs, tasks, and documents — but with a limited budget. The key requirement: get the most comprehensive functionality at the lowest possible cost.
 
@@ -24,7 +24,7 @@ Analysis:
 
 > “Most of my team are not especially tech-savvy. I don't want to spend weeks teaching them how to use it.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjUzZjZhYzBkYmFkZTgwNTRkZmNlNmI3YzI3ODI4OWZfUnQ3bTI2Ykt4SVRaYlc3bEM2YVlkQ1pPVVdtdFlTZXlfVG9rZW46Q01DRWJpS3hNb1hVbkh4bXpHdmNWcHh6bmplXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Ease of Use.png](https://static-docs.nocobase.com/Ease%20of%20Use-yq9ggm.png)
 
 [This user](https://www.reddit.com/r/projectmanagement/comments/1kl3cw7/any_recommendations_for_software_to_organise/) runs a nonprofit with a team of just three. Most members are unfamiliar with digital tools. They simply want an intuitive tool to create tasks, attach images, and leave comments — without spending weeks on training.
 
@@ -38,7 +38,7 @@ Analysis:
 
 > “We're paying for Dropbox, Google Drive, and O365… I just want to simplify this stuff.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODgzNGJjNGE1ODM2OWIwMWM5OGNhZjBhNTFkZjFjN2ZfaERFU1hBOUxGaHVkcHpIM1ZLNEI5UElnbmFxYzVYVjBfVG9rZW46RTR4MGJncU9pb0NVQTd4MFJFd2N1N0RDbktmXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Integration.png](https://static-docs.nocobase.com/Integration-h4dlzx.png)
 
 [This user](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/)’s main pain point is fragmented tools. They pay separately for Dropbox (files), Google Docs (documents), and O365 (email), but data and costs are spread across platforms. They want one system to handle tasks, docs, files, and SOPs.
 
@@ -52,7 +52,7 @@ Analysis:
 
 > “Able to link to live documents so people can make changes to it, leave comments, set deadlines.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWU3OTg3ZTIxODFhYzlmNTg5NGY3NjFjZjYxODA1ZTdfUUlMMjRIZDVJWkxMcE9uZDd2cnVzUXFNZTIzY3ROR0lfVG9rZW46SjhZTWJzcG1Xb3ZJczJ4ZmYwZ2NlSnU3bkRkXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Collaboration Efficiency.png](https://static-docs.nocobase.com/Collaboration%20Efficiency-vnv6a8.png)
 
 [This user](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/) wants a single platform for linking live documents, enabling team edits, adding comments within tasks, and setting deadlines and priorities.
 
@@ -66,7 +66,7 @@ Analysis:
 
 > “I want something that works now for less than 10 users, but also scales as we grow.”
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2FkNjQyNjVkMmZlZjMyMmY3OWFhMWRlNTExOTMxNTdfVzJHZUdoUzhYeG1NMU00T0ZXanJHSXNjdm9ndGRVWU9fVG9rZW46SG5nNWJVb1Y2b2haQmJ4NndLMGM0UmZvblBmXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Scalability.png](https://static-docs.nocobase.com/Scalability-eootb1.png)
 
 [This user](https://www.reddit.com/r/projectmanagement/comments/1iepygj/small_business_looking_for_project_management/) has fewer than 10 members today but expects future growth. Their concern: choosing a tool that only works for small teams, leading to costly migration later.
 
@@ -98,7 +98,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDdlNTA0ODUwMGQxY2NlZGI1ZGIxMjNkMjI5YTg2ZjhfODNwZjdXMmI3UUVtWlJKUW9UTURTRE5IQ3VUUlVyMVRfVG9rZW46SDlKd2JsWE94b2JBZ2d4SWliaWMxQXBZbmxjXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![NocoBase.png](https://static-docs.nocobase.com/NocoBase-hgmq2o.png)
 
 **Overview**[NocoBase](https://www.nocobase.com/) is a highly extensible open-source no-code platform. Instead of offering fixed features, it lets users build the modules they need. It’s ideal for small businesses that want customized configurations to integrate multiple functions.
 
@@ -107,17 +107,20 @@ Next, we’ll recommend project management systems that best meet these five nee
 **Core Features**
 
 * **Complete Project Lifecycle**: From requirements gathering, design, and development to testing, release, and maintenance, NocoBase provides data-model-driven workflows for traceability, quantification, and continuous optimization.
+
+![Complete Project Lifecycle.png](https://static-docs.nocobase.com/Complete%20Project%20Lifecycle-sgucb2.png)
+
 * **Agile Development Management**: Supports Scrum sprints, Kanban, and burndown charts. The flexible plugin architecture adapts to different agile practices.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTNlOTA4ZjNkZmI4ZGY5MmRlOTc3ODY2ODRmNWU4YTFfejFUOXIwRmE1NHBEamlXZ2NKQjFCODdKcDdiam5YMU9fVG9rZW46RndqZmJkQUN4b1JMaEx4d05KM2NPYzQxbjRlXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Agile Development Management.png](https://static-docs.nocobase.com/Agile%20Development%20Management-oss153.png)
 
 * **Team Collaboration & Quality Management**: With tasks, comments, files, and notifications in one place, NocoBase creates a centralized collaboration hub. Integrated bug tracking and code quality monitoring improve delivery standards.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWM2ZDQwYmRmYjYxNGUzNzRhOGU5OTExMGU1M2MwYzJfMHY4eFY1SlZQNmxhbUZ1ZmE4YU5WTnB0RFBYZ0NtclJfVG9rZW46Q3JqVWJZQ0c3b29Ib2h4RmpTTGN1bVN1bkVnXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Team Collaboration.png](https://static-docs.nocobase.com/Team%20Collaboration-cuins9.png)
 
 * **Easy Customization & Expansion**: Thanks to no-code and plugin-based architecture, users can freely define fields, workflows, and logic. As teams scale, the system adapts without requiring a platform switch.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NThmZjZlMjZiNDNhNjA2ZWZhOWQ1ZWY5Zjg4YzA0YTVfRkhJZGVXbzZBc1lnMU9xOElmODRQSHU5aWVKMGRKb1JfVG9rZW46RHpJRWJCak1jb3N0Ym54QmpjTGNURWxqbnFVXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Easy Customization.png](https://static-docs.nocobase.com/Easy%20Customization-j2xo60.png)
 
 **Why It Works for Small Businesses**
 
@@ -127,7 +130,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 ## **ClickUp**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGI4ZWM2NzlkODgzZDMyYWY3ZmY0MWJmOWIwMzE3NGRfMGdnNXlDcmhvTlRhdGhsc3cxQjBXU2E4bkRRdGtTS21fVG9rZW46UTBsQWJhSVEyb1FDN2Z4djYyQWNUeUhLbkxiXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![ClickUp.png](https://static-docs.nocobase.com/ClickUp-6g0zkw.png)
 
 **Overview**
 
@@ -149,7 +152,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 ## **Notion**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzM3YjExNTQxZWZjMjhjMGI1YTlhYmNiNDRkMGUwNjNfc1Q2WlZydmtyajZia24xaUlXamxVQVZ6WEJLdUhjdnRfVG9rZW46TmJhbGJaNEswbzZXYWt4bGdmN2NZNFVXbnlkXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Notion.png](https://static-docs.nocobase.com/Notion-6oyq58.png)
 
 **Overview**
 
@@ -170,7 +173,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 ## **Trello**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTljODE2OTZlMmZjN2IzZWU0MGQ0NzdiZmNjODc3N2ZfQW1nd2lkV1hNajdwWHJoWDZHMUFXNTM0ZUhRNFZpVGhfVG9rZW46R0hmRGJ2OWttb050b1p4TWc5WmM1cFNqbnEwXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Trello.png](https://static-docs.nocobase.com/Trello-pty38i.png)
 
 **Overview**
 
@@ -191,7 +194,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 ## **Microsoft Loop**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODJlNDZjODU2NDUxYmUzYjhjZDZmYzZjM2Y4YzFhNTdfWWxobktORGtxU1lHS3ZRV3ZXTUQyakxDRmhlaktoRGVfVG9rZW46UERCT2JibG9abzJnWVR4VzRhOGNLUGt2bkhlXzE3NTc4OTk0ODU6MTc1NzkwMzA4NV9WNA)
+![Microsoft Loop.png](https://static-docs.nocobase.com/Microsoft%20Loop-a9wfxx.png)
 
 **Overview**
 
@@ -226,3 +229,12 @@ Here’s how the five tools compare:
 | Microsoft Loop | Collaborative tool under O365 ecosystem    | Seamless integration with Outlook, Teams, Word, Excel; real-time synchronization of componentized content                         | Enterprises already using O365 and looking to expand collaboration capabilities within the Microsoft ecosystem     |
 
 ❤ Hope this article will help your team make a better choice!
+
+**Related reading:**
+
+* [Top 5 Stock Management Systems for Small Businesses (with Price Comparison) ](https://www.nocobase.com/en/blog/stock-management-systems-for-small-businesses)
+* [Best ERP Solutions for Small Businesses: 4 Tools to Improve Efficiency ](https://www.nocobase.com/en/blog/best-erp-solutions-for-small-businesses)
+* [Top Inventory System for Small Business (Including Free and Open-Source Options) ](https://www.nocobase.com/en/blog/inventory-management-tools-for-small-business)
+* [4 Best Open Source CRM Software for Small Businesses: Lightweight & Efficient ](https://www.nocobase.com/en/blog/the-best-4-crm-software-for-small-businesses)
+* [5 Management Tools Perfect for Small Businesses (Based on Real Experience) ](https://www.nocobase.com/en/blog/5-management-tools-perfect-for-small-businesses)
+* [6 Best Open Source Alternatives to Jira ](https://www.nocobase.com/en/blog/jira-open-source-alternatives)
