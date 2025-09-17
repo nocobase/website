@@ -4,7 +4,7 @@
 
 一方、開発者や技術チームにとっては、オープンソースツールを活用することでコスト削減だけでなく、より高いカスタマイズ性や拡張性を得ることができます。さらに、GitHub 上の **[project-management](https://github.com/topics/project-management)** トピックには **19.9k フォロワー**が存在し、オープンソースプロジェクト管理ツールに対するコミュニティの関心の高さがうかがえます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTVmMjMxODNlZDJhOThkOTdjNjI3ODVhZTBjZGIyODRfTTA4OTJmSGRtcUM2VzFpYzNsTDFTWGFLQlZTd2RPWUJfVG9rZW46S3NYemJhQktkbzJqRlF4YTFnNGN0VHB4bldkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![GitHub](https://static-docs.nocobase.com/GitHub-zjxwk7.png)
 
 そこで本記事では、このトピックからスター数トップ10のプロジェクトを厳選しました。軽量なカンバンツールから、エンタープライズ向けのフル機能プラットフォームまで、タスク管理・チームコラボレーション・開発プロセスなど幅広い領域をカバーしています。開発者がこれらのツールの「実運用性」「拡張性」「実際の価値」を見極める助けになれば幸いです。
 
@@ -26,7 +26,7 @@
 
 ## No.1: AppFlowy
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODM5NjY3MWY4YjkzYjMzYzFmMzZkYzUwNGE0OGQ3NWVfbmc4Y1plbFRUUk9Ea2tzcHhmNHRLVzd6bHI4WmNlakpfVG9rZW46SjJqamJpS0F4b2Q3eDd4NkdIZWNqb2dobkNlXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy-k3zmym.png)
 
 **概要**
 
@@ -38,7 +38,7 @@ GitHub: https://github.com/AppFlowy-IO/AppFlowy
 
 Website: https://appflowy.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY4MzBhNDkyOGRjM2ZkYzQ0YmU5MWE2MjA1NjYwYThfYUdnMXBBb2ZRQWxjY1hFeFhxWUJ2c3FlUGdQbFU4bFBfVG9rZW46UGtvMGIzZmRPb204MjF4cnR4emM0eGJXbnRiXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy1-ajiltk.png)
 
 **コアの特徴**
 
@@ -54,7 +54,7 @@ Website: https://appflowy.com/
 
 ## No.2: Plane
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDM3NGM1YmZkN2M5N2E0NTVhYWZhYTZmMjlhNmYxNjNfYXRzYjNKMEVSREdjRnFvcTdwSTEyTEJkNlFrVkJRQlNfVG9rZW46RGx1S2JuZmtQb0RtUWd4U25pR2NxVk1SbkxiXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Plane](https://static-docs.nocobase.com/Plane-1uuddf.png)
 
 **概要**
 
@@ -68,7 +68,7 @@ GitHub: https://github.com/makeplane/plane
 
 Website: http://plane.so/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDZhZDAyNjU3ODdjNWQ3MDhlMmRiMjFhOWIyMDdiNTdfTlZYNlZhRGtna3RvaW9CU0VsUUFhN1lJNU5TRk5NdjNfVG9rZW46QU9kNmJlb0hrb25ieG54QW9JRWM2YXZPbmYyXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Plane1](https://static-docs.nocobase.com/Plane1-3l5c62.png)
 
 **コアの特徴**
 
@@ -84,7 +84,7 @@ Website: http://plane.so/
 
 ## No.3: ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDQ1ZGE1MGUxNWIzZWQ3YWY2MDE1ZjQ3NmIxNjVjYTJfQkRTZGtxeXRpcE5wVFBPVzQ2dWxmUnc4RHFQVlpxU1dfVG9rZW46Rno1dmJoV3FUb2U5bkt4NFl2MmNqSld0bnNkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![ERPNext.png](https://static-docs.nocobase.com/ERPNext-c14jmp.png)
 
 **概要**
 
@@ -96,7 +96,7 @@ GitHub: https://github.com/frappe/erpnext
 
 Website: https://frappe.io/erpnext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDMwZDJhMzI4MGU1ZWQzNWUyOGJkZmYxNTY0OTkwYTFfaXE0MjVJMjNWNmFYNGtzd25KSVpXRW1Ob2c0UzJVRUZfVG9rZW46S0pCZGJ1R3lib3Q3STd4NlNVN2NrN1FrbjlmXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![ERPNext1](https://static-docs.nocobase.com/ERPNext1-7bifes.png)
 
 **コアの特徴**
 
@@ -112,7 +112,7 @@ Website: https://frappe.io/erpnext
 
 ## No.4: Focalboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OThmMjJjMWM0YjVjNjU5OTA5NGU4OTZmYWNlZWVhYzZfempJWmdEdkhhZEc1Wmh2dndBMzZ1Vm5Kak55dUJob0RfVG9rZW46Q3BGZ2JMaFJ5b25uWHl4SGNDUmNVajdIbkVoXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Focalboard](https://static-docs.nocobase.com/Focalboard-3a3jpa.png)
 
 **概要**
 
@@ -124,7 +124,7 @@ GitHub: https://github.com/mattermost-community/focalboard
 
 Website: https://www.focalboard.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2ZkYjEwODJiNWIxMTM4OTYzNmY5Njg4ODBiZjMyYjJfWjZ1UzFaaGFQVFBRUmg2NWdsYnlLMlpJTHAyQUtxRllfVG9rZW46Q3dqVWJQdTRLb043Znd4WUljVGNBRkRablpkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Focalboard1](https://static-docs.nocobase.com/Focalboard1-i2a30f.png)
 
 **コアの特徴**
 
@@ -140,7 +140,7 @@ Website: https://www.focalboard.com/
 
 ## No.5: Huly
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDc3OGRiMjAzYTI1NTdiZGQ1ZDZkZmVmYjc5ODgzZWZfZGJseHp4QTlaMkhnZkNjTUFyR3dJalQxejVmYzdvZ3BfVG9rZW46UmtLVWJDNE5rb0xhOFl4SUdFU2NWeDNJbjFFXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Huly](https://static-docs.nocobase.com/Huly-r1774m.png)
 
 **概要**
 
@@ -152,7 +152,7 @@ GitHub: https://github.com/hcengineering/platform
 
 Website: https://huly.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzIwMjQwMDQ2YTg5ZmU2NjU3ZDMyNTlmM2ViMTA0ZGFfb2s5YkRIeUx0NllmWkpobWN1aUF4NFBXY1ZnRmVkQktfVG9rZW46SElmVWJlSGZCb2VHNUt4MVQwb2N1VWk4bllkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Huly1](https://static-docs.nocobase.com/Huly1-9y8o66.png)
 
 **コアの特徴**
 
@@ -168,7 +168,7 @@ Website: https://huly.io/
 
 ## No.6: NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjE1NTkwYzFlMmQyOWViNGYwNGEyMTI4NzViNDk5MDNfSVhpY3RobTByQmRFVE93WUdaOU42cU9hMkJ2QkxReVBfVG9rZW46U0NiSWJKNFNRb1Y2R0Z4VHIwTWNxRW9BbmljXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![NocoBase](https://static-docs.nocobase.com/NocoBase-su4oqe.png)
 
 **概要**
 
@@ -182,25 +182,25 @@ GitHub: https://github.com/nocobase/nocobase
 
 Website: https://www.nocobase.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWNiMmRmNGE4NTRkNjJlMTZkODg5MmMzMmU1MWM2MzJfYVd1dTRHY0g3RmZCU3J6U2FkckFUUmFNMUllSmtTOHBfVG9rZW46UERuQmJaSFVFb2pDVGJ4SU5HOWNDVXk4bm5kXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![NocoBase1](https://static-docs.nocobase.com/NocoBase1-af92gl.png)
 
 **コアの特徴**
 
 * **開発ライフサイクル全体をカバー**：要件収集、設計・開発、テスト、リリース、保守に至るまで、NocoBase はデータモデル駆動のフルプロセスマネジメントを提供します。各フェーズごとに対応するデータテーブルやワークフローを構築でき、開発工程を追跡可能・定量化・継続的に最適化できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWJkNWUxYzc0N2U4ZWMxMTk0MGU2OWFiYzRlNDAyODFfS2o0ajlXM2Z1N1h6ZUxZOVl1UmpLeFlXcjBDcTRZR2hfVG9rZW46T3QzNGJuMExvb1E0eVZ4Z3NibGNPNlZibk9mXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Complete Project Lifecycle](https://static-docs.nocobase.com/Complete%20Project%20Lifecycle-ciim7r.png)
 
 * **多様なタスクビュー**：テーブル、Kanban、ガントチャート、カレンダーなど複数のビューに対応。たとえば、計画段階ではガントチャートでマイルストーンを確認し、実行段階では Kanban でバックログを管理、テスト段階では表形式で不具合を追跡する、といった柔軟な使い分けが可能です。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Zjg3YzY4ODVlM2I1NjEzNWU2OTI4OTdiODI5MWNkMGJfd0RBekJudThDWjJyc3RYUHV4eTVGNWJnRkE4cW82aFpfVG9rZW46RGFuWWJUOUdLb1V6aEV4QmE1V2MxWm13bnNlXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Multiple Task Views](https://static-docs.nocobase.com/Multiple%20Task%20Views-rytqy6.png)
 
 * **きめ細かい権限管理**：ロールレベル、条件レベル、フィールドレベルの詳細なアクセス制御が可能です。たとえば、開発者は自分のタスクのフィールドだけ編集可能、テストチームはバグを追加できるが進捗は変更できない、プロジェクトマネージャーは全体を閲覧可能、といった複雑なコラボレーションにも対応します。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTc4OTRlZjY0Njk5ZjNlNjBiNjFkNWI2YzhjYzZmYzVfNjhDcU1KUFZnUElOZzlDaFZEZmhsSUNmMmQ5cFRHWEFfVG9rZW46V2FUVGJlMmRNb3NQcDR4UEVaWGNIQWt4blozXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Granular Access Control](https://static-docs.nocobase.com/Granular%20Access%20Control-00cxoz.png)
 
 * **柔軟なワークフロー**：条件分岐、タスクの割り当て、通知などの自動化アクションを設定可能。たとえば、期限が近づいたら自動でリマインド通知を送る、といった使い方ができます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTc4NWI5MzZkYWIwM2Q2YmI0NTdmZGYyYTBlY2RhYzVfaWVVS001dkE4d04wMFFjUVhXVmxvR3IzeGVoMGUwZXVfVG9rZW46RktBQmJiTjN1b09hWGx4OG9LV2NBNTBGbmRoXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Configurable Workflows](https://static-docs.nocobase.com/Configurable%20Workflows-1lodfd.png)
 
 **推奨シーン**
 
@@ -210,7 +210,7 @@ Website: https://www.nocobase.com/
 
 ## No.7: OpenProject
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzliNGVmZTg2MTVmZjFmZDMzNTBhMjhkYmMyMTM5ZTJfMXl0VzYyclpXa2xGNHQ4WlUyWW9Yb0V5ZWZmcnRkN2JfVG9rZW46RjhKNWJLd3lZb1NudWJ4Wm54VmNoQkRGblpkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![OpenProject](https://static-docs.nocobase.com/OpenProject-597ywc.png)
 
 **概要**
 
@@ -222,7 +222,7 @@ GitHub: https://github.com/opf/openproject
 
 Website: https://www.openproject.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDljMDUzOWJlZTI2NWMxNzFhY2FmZmNmMTkxMTc1ZjBfNlFxWmZtd2p6ZmhnRVNTRHY4V0ZQeTRaZHlKRUFJM0FfVG9rZW46SkVnaWJHNU1hb0RTaTh4akh5d2M5RThJbmRnXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![OpenProject1](https://static-docs.nocobase.com/OpenProject1-fswc1w.png)
 
 **コアの特徴**
 
@@ -238,7 +238,7 @@ Website: https://www.openproject.org/
 
 ## No.8: PLANKA
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWY1YWJkNWM1YzQ2NGQ3MTVjN2QzYmJkNDMzZmNmM2NfTVRkeWI4cFF3VXh5QkM2ZGxPbE9WMlJVVlRBYm5nY1dfVG9rZW46RWVnamJraW9Wb0k5ajh4cWJEU2MwTGVpbktkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![PLANKA](https://static-docs.nocobase.com/PLANKA-jm6gvw.png)
 
 **概要**
 
@@ -250,7 +250,7 @@ GitHub: https://github.com/plankanban/planka
 
 Website: https://docs.planka.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDI1Mjc1MmZiOTdmYjhjNTc0ZTI2NmVhMjhlNmMwMTBfSmg4c2JNNlBBdXVnUm45WXVmcUhMZEF2YkpFUGtvZnVfVG9rZW46QjRScGJJZTJlb3dsckp4am5mWGNTYmpxbllkXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![PLANKA1](https://static-docs.nocobase.com/PLANKA1-og72av.png)
 
 **コアの特徴**
 
@@ -266,7 +266,7 @@ Website: https://docs.planka.cloud/
 
 ## No.9: Kanboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzJlODMyMDc2NjBlMDRjMThjNjI3ODMyOWQ3ZjdiOTRfQjZFV3FDTGpMTEI4cUwyZmxVeUlBVWExeHN2TlptdklfVG9rZW46RllGYmJZV2FZb0Eyb0d4b3ZPTmN4ZFhhbjVlXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Kanboard](https://static-docs.nocobase.com/Kanboard-87x9kl.png)
 
 **概要**
 
@@ -278,7 +278,7 @@ GitHub: https://github.com/kanboard/kanboard
 
 Website: https://kanboard.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWVjNDc3NGFkNGU2YjYxYTNhMDQwZTk3ZjZkZjM3NmRfZDB6N1lRdlR6MjFkYzZRWlRZOWgxQzIyUk5IZlFMRGpfVG9rZW46TGViTmJ2ZnZyb3pxcWl4ZU5OTWNEQjg1bmZ4XzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![Kanboard1](https://static-docs.nocobase.com/Kanboard1-oxkyi6.png)
 
 **コアの特徴**
 
@@ -294,7 +294,7 @@ Website: https://kanboard.org/
 
 ## No.10: leantime
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjU0ODJiMDljZGI2MDY4OTViYzQwNjE4Y2YwY2ZkOWZfV3NrS3BzVm9YMlBPanA0bkFFNmw2QTB2SDI2RUQ4RkFfVG9rZW46VTFkYmJqbmtPb2xLcjh4NmE3ZmNNM1hjbm1kXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![leantime](https://static-docs.nocobase.com/leantime-0sak6s.png)
 
 **概要**
 
@@ -306,7 +306,7 @@ GitHub: https://github.com/Leantime/leantime
 
 Website: https://leantime.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzMzYTAxZGQ1ZTA2OWI3YmQ1Yzg3YjYwNWJhYjRmODRfS1BWMmNOSGNVYlVxSENqZk1EWklYZFhLaGZncDh0Z0dfVG9rZW46Rm1EWGI0aEJDb21UT1J4ek81cmNHTGRJbkloXzE3NTgwOTA1Mzk6MTc1ODA5NDEzOV9WNA)
+![leantime1](https://static-docs.nocobase.com/leantime1-1zpjzt.PNG)
 
 **コアの特徴**
 
@@ -336,3 +336,13 @@ Website: https://leantime.io/
 * **[Leantime](https://leantime.io/)** 適用：戦略目標と実行を結びつけたいチーム 特徴：OKR とタスク統合、スタートアップや小規模 R&D 向け
 
 ⭐ 本記事がプロジェクト管理ツールの選定・導入・カスタマイズのヒントになったと感じたら、ぜひオープンソースや効率化に関心のある開発者仲間とシェアしてください！
+
+
+**関連読み物：**
+
+* [GitHub で Star 数トップ18 のオープンソース AI Agent プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)
+* [GitHubで最もスターを獲得したオープンソースAIプロジェクト20選](https://www.nocobase.com/ja/blog/github-open-source-ai-projects)
+* [GitHub でスター数トップ 8 のオープンソース MCP プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-mcp-projects)
+* [GitHubスター数トップのオープンソースWebアプリ7選](https://www.nocobase.com/ja/blog/github-open-source-web-applications)
+* [GitHub のスター数上位 40 の開発者ツール](https://www.nocobase.com/ja/blog/github-open-source-developer-tools)
+* [2025 年 GitHub 上で最も成長が速い上位 15 のオープンソース低コードプロジェクト](https://www.nocobase.com/ja/blog/github-top15-fastest-growing-open-source-low-code-projects)
