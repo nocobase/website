@@ -4,7 +4,7 @@ Last week, we recommended a set of project management tools for **small business
 
 For developers and technical teams, however, **open-source tools** often provide even greater advantages. Not only do they help reduce costs, but they also allow for higher levels of **customization** and **extensibility**. The popularity of this topic is clear: the **[project-management](https://github.com/topics/project-management)** tag on GitHub already has 19.9k **followers**, highlighting the strong community interest in open-source project management solutions.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU0YzYzYWE0ZTM0YWQ3ZTE4YTU2N2NkOWQyNDg0ZGVfNjF1b2Zjb1B3dTlLRWc1Mm40bnZiRWJ2bGdyZkZVWGZfVG9rZW46SmZkVmJqZHZib0s3bXJ4ZldhMWNrMjBMblBiXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![GitHub](https://static-docs.nocobase.com/GitHub-zjxwk7.png)
 
 Based on this topic, we selected the top 10 projects ranked by GitHub Stars. These range from lightweight Kanban boards to full-featured enterprise-grade platforms, covering task management, team collaboration, and R&D workflows. Our goal is to help developers evaluate each tool’s practical usability, scalability, and real-world application value.
 
@@ -26,7 +26,7 @@ Below, we’ll introduce the top 10 open-source project management tools on GitH
 
 ## No.1: AppFlowy
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWMwZThlNjdhZDM4OGE0OWQ2Mzc2MmVlZDU1NjE2ODBfZTVWdUpYNmZMOHJyQXBEWVUwMExoZ0lPQTdEbkJ5bE1fVG9rZW46Umd1amJSM2xEb2pLa3d4MFE5cWNCaTlVbm9kXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy-k3zmym.png)
 
 **Overview**
 
@@ -38,7 +38,7 @@ GitHub: https://github.com/AppFlowy-IO/AppFlowy
 
 Website: https://appflowy.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDc4ZDYzNDdjM2I3Mzk1NTQ1MDM3YmRmMzg1ZmI2MDhfS3JBSEczQjVPeWNrcmZhdHh1RE1VQXR3bk55MFBhaUFfVG9rZW46SVo5eWJseG9Lb25lSTh4eEw2RGM3c2xrbjhlXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy1-ajiltk.png)
 
 **Key Highlights**
 
@@ -54,7 +54,7 @@ Website: https://appflowy.com/
 
 ## No.2: Plane
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTQ1YjIxZjA2MzE0MTZlODBhOWQ1ZWZjZmEzNjJmNmVfV1ZzdFhPNU5PaHBRaFNoa1lhQXNDZ3c1VjhQa0tRczhfVG9rZW46QjZ1RGJEOENmb09XNGF4akkzaWNhZDFGbkdoXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Plane](https://static-docs.nocobase.com/Plane-1uuddf.png)
 
 **Overview**
 
@@ -68,7 +68,7 @@ GitHub: https://github.com/makeplane/plane
 
 Website: http://plane.so/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjk2Nzg1ZmE3YjgwZmIwYjJjMDg1M2Y2MDBmYzkzNTBfcEFMUURZNXRtN1NodDVOVVlZNzZRUktENXlKYkJIOUhfVG9rZW46RlozYWJVZndub0FGS014TEEyQmM3NUd2bktnXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Plane1](https://static-docs.nocobase.com/Plane1-3l5c62.png)
 
 **Key Highlights**
 
@@ -84,7 +84,7 @@ Website: http://plane.so/
 
 ## No.3: ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmUxYTRkNDQ1ZDEyMTM0ZDcyZjAzOThiNzI3ZjkyMzJfY2FtT0lNZlExdnI2MTFpdnhRbHpISmJFT0swYXQ5U2lfVG9rZW46QUdMRmJpMmpub0FYZkt4MnBPTGM4UDY1blljXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![ERPNext.png](https://static-docs.nocobase.com/ERPNext-c14jmp.png)
 
 **Overview**
 
@@ -96,7 +96,7 @@ GitHub: https://github.com/frappe/erpnext
 
 Website: https://frappe.io/erpnext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzMzYjM5ODA5MjUwMmJhNmQyZWJiOGVlNGQyZmQ1ZjRfdlJtN0h1bWlUZkd2SlU1Rkt1VUxONlVGZUdWUkh5NVdfVG9rZW46WUk5YmJVOWZ1b29Sakp4SzVYMGNmd0V2bkFlXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![ERPNext1](https://static-docs.nocobase.com/ERPNext1-7bifes.png)
 
 **Key Highlights**
 
@@ -112,7 +112,7 @@ Website: https://frappe.io/erpnext
 
 ## No.4: Focalboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTUyMzMzNWQ0MGE2OTg3MWU3MjE4MGU0YzgxMjBlMjFfMHplemV3eHlpRm5ISjVTaFFqa1RHY2RtN0lBSUdYRWpfVG9rZW46WHY3bmJnQ3FPbzZDMEh4dGp1TWNpcVdubjNjXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Focalboard](https://static-docs.nocobase.com/Focalboard-3a3jpa.png)
 
 **Overview**
 
@@ -124,7 +124,7 @@ GitHub: https://github.com/mattermost-community/focalboard
 
 Website: https://www.focalboard.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDA4ZDZhMGE0MWY2ODQ0MDkxZjhiYjU2ZTQ3YjcxYjZfQVZwZkQ1SVNWTFl1elZkbkJ6ZjVMNmJocHBWbnNiS0JfVG9rZW46Vm1RVmJ3R3cwb0U2SEF4MHRua2NkVE1PbmhnXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Focalboard1](https://static-docs.nocobase.com/Focalboard1-i2a30f.png)
 
 **Key Highlights**
 
@@ -140,7 +140,7 @@ Website: https://www.focalboard.com/
 
 ## No.5: Huly
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjNiYjU2OTA5YzY3ZTk4ZGI4ZmM3NDU5MTQzNDg5YzNfTzN0Y0dFRkk2VGxtTjIyZWFDVHd1cmJlMTVjdWhVcmNfVG9rZW46TU15RmJMVnRib3BkcWt4SlMwU2NhQk1SbnNnXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Huly](https://static-docs.nocobase.com/Huly-r1774m.png)
 
 **Overview**
 
@@ -152,7 +152,7 @@ GitHub: https://github.com/hcengineering/platform
 
 Website: https://huly.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWU4YmRmMWIwZThkYjNkMTQ4NzkzZTQxNzcyYWM5OWRfNnlOVktuYjBkTVRKVUVDM2laSUZobEtZVnRscWdNdGlfVG9rZW46U2hzVWJQV3Jyb1RmSDl4aVlQZGNnZnJMbk9mXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Huly1](https://static-docs.nocobase.com/Huly1-9y8o66.png)
 
 **Key Highlights**
 
@@ -168,7 +168,7 @@ Website: https://huly.io/
 
 ## No.6: NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmIzM2RlYWIxZTU0N2NlNjM0NzhhYjA3MmM3M2E2NDJfd1NBOUpUMGJTVU82RG12ckpJaGc1U09lbnVrbkNYWWlfVG9rZW46Q1lMSWJQeE1Db1hEMVF4aDdTcGNObVhwbmhjXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![NocoBase](https://static-docs.nocobase.com/NocoBase-su4oqe.png)
 
 **Overview**
 
@@ -182,25 +182,25 @@ GitHub: https://github.com/nocobase/nocobase
 
 Website: https://www.nocobase.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDgxMTNjZDhmNmQzMGNhMGUwYzRhNjRiNzcxMTM5NmFfdWNmQ3VUNnp3d2h2S1RyYjBhc3hPYnZobEhKSXloR2pfVG9rZW46QXFkQmJ5OUpFb1loMk14MjloRGNkTW1ibkhnXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![NocoBase1](https://static-docs.nocobase.com/NocoBase1-af92gl.png)
 
 **Key Highlights**
 
-* **Complete Project Lifecycle **– From requirement gathering and design to testing, release, and maintenance, NocoBase provides data-model-driven end-to-end management. Each stage can have its own tables and workflows, ensuring traceability, quantifiability, and continuous optimization.
+* **Complete Project Lifecycle** – From requirement gathering and design to testing, release, and maintenance, NocoBase provides data-model-driven end-to-end management. Each stage can have its own tables and workflows, ensuring traceability, quantifiability, and continuous optimization.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2ZkOGM2MzNkZTZjOGFlYjg4ZWQ0YzIyODVlN2U1NzFfaTZZV0Nybk93VGc1Z3lBbTRZTTg3ek1qZmdhaFBaMElfVG9rZW46RVl2dGJZYzZBb1lxZlN4MUhhaGNybDF2bm5mXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Complete Project Lifecycle](https://static-docs.nocobase.com/Complete%20Project%20Lifecycle-ciim7r.png)
 
 * **Multiple Task Views** – NocoBase supports tables, Kanban, Gantt charts, and calendars. Teams can switch between views depending on the phase: Gantt for planning milestones, Kanban for sprint backlogs, tables for bug tracking.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDc2OGI1ZWU1ZTA0MzIzZGVkNGMxOWM0NmYzYzJkODBfc3ZJY3BEbWdmMVN4MGRZbHp1bkgzMWlOS3RmSUNNa21fVG9rZW46S0lTYmJoaWhub25Oa3V4dUxnQWN3bmd2bjhkXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Multiple Task Views](https://static-docs.nocobase.com/Multiple%20Task%20Views-rytqy6.png)
 
 * **Granular Access Control** – Role-level, condition-based, and field-level permissions allow fine-tuned collaboration. For example: developers can only edit fields in their tasks, QA can add bugs but not alter progress, while PMs have full visibility.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWNhYTlkZWIxZGNkM2NkNGE2YTk0MDkwMDY5MmQwMzhfMVp0T1h2dmtXWmRMa2RFYUJtclZGMVFXWTVMTFVBQ21fVG9rZW46TG5remJhQkllb3c3OWF4TjJIa2NuZFFFbkRmXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Granular Access Control](https://static-docs.nocobase.com/Granular%20Access%20Control-00cxoz.png)
 
 * **Configurable Workflows** – Workflows support conditions, task assignments, and notifications. For example, reminders can be automatically sent when deadlines approach.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDJlZmM3NGY0MzM4YmQ3MTAzZTY1NWQ4NjEyMWVhN2FfSzljdlhyNFI3TnNZbDhJeElDYTd1VGFBWEtRbTBRT1pfVG9rZW46RkpPVGJYcWpMb1ZqM0t4alhIcmN3RVRabjFiXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Configurable Workflows](https://static-docs.nocobase.com/Configurable%20Workflows-1lodfd.png)
 
 **Recommended Scenarios**
 
@@ -210,7 +210,7 @@ Website: https://www.nocobase.com/
 
 ## No.7: OpenProject
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjk0NmE4ZDM0MmJiOTBmMGMxNjMyZGE1OGY2NmFiYjRfTHg2WTB0RHdrSnNzNTFDZDdORXQ3YVpUc3VQcm5QS2lfVG9rZW46RlkzWGJMVVNFb3dobHN4SnNaVWNrdDhCbjJJXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![OpenProject](https://static-docs.nocobase.com/OpenProject-597ywc.png)
 
 **Overview**
 
@@ -222,7 +222,7 @@ GitHub: https://github.com/opf/openproject
 
 Website: https://www.openproject.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWE0Zjc3MDQwNmRlZWU5NDA4MjVjMzM0NjExZmFiZDlfNHRSRVdUdWRyY2szdHRSb3Njcng0MFJSWktSd0JvNU5fVG9rZW46UlBseWJpM1cxb2tZaWh4MU9EQ2NZam5tbkFlXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![OpenProject1](https://static-docs.nocobase.com/OpenProject1-fswc1w.png)
 
 **Key Highlights**
 
@@ -238,7 +238,7 @@ Website: https://www.openproject.org/
 
 ## No.8: PLANKA
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzFhYzMyOWYzNDk1NjZhZjlkMmVkNzczNjA2OTYyYTFfWTM3MHVGSHFCV2dNUVdzaE5oRnVHTW5yU0ZwdUNwd3dfVG9rZW46WUJURmJvOXR3b1YycnN4SjJKcmM4cXhKblNoXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![PLANKA](https://static-docs.nocobase.com/PLANKA-jm6gvw.png)
 
 **Overview**
 
@@ -250,7 +250,7 @@ GitHub: https://github.com/plankanban/planka
 
 Website: https://docs.planka.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjNhZGEyYWNlNjgxZjFkNDgwMzUyZjRhZWFjNWI2MjRfS0NCZ3IwYlVJWW03bG1aZmxxRnk3aXFPSm5nQ3FvcnFfVG9rZW46V3RyamIxUEx4b2JXQ3N4ZEFLR2NkRk9TbktmXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![PLANKA1](https://static-docs.nocobase.com/PLANKA1-og72av.png)
 
 **Key Highlights**
 
@@ -266,7 +266,7 @@ Website: https://docs.planka.cloud/
 
 ## No.9: Kanboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjUzNzcwMGI4M2M3NzdlMzNmYjkwNTA2ODE2ODkxMzZfNkJpUDVuM01FNm9NZDIyZ3FTTFh5WFl0OUVPMWxKdnBfVG9rZW46T1FtWmI3SWhPb0VzZkN4a1I4Z2Nuc081bmtiXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Kanboard](https://static-docs.nocobase.com/Kanboard-87x9kl.png)
 
 **Overview**
 
@@ -278,7 +278,7 @@ GitHub: https://github.com/kanboard/kanboard
 
 Website: https://kanboard.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDkzMjM3NDI0NzIzNjI4MmE0NDY0MDU0NDc2YWU1NDJfR2hXT0x6WEUwQkdlRUF0MkJQZkU4TTBYVG03anhBWnFfVG9rZW46TTdGMmIxYTRBbzFjNVJ4ZjJJaGN0VlJ3bjNmXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![Kanboard1](https://static-docs.nocobase.com/Kanboard1-oxkyi6.png)
 
 **Key Highlights**
 
@@ -294,7 +294,7 @@ Website: https://kanboard.org/
 
 ## No.10: leantime
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGNlZjk4YjI2YzUwNWI1ZjNlMDk3NzVjNDNhNjQyMDJfenBHNlRoTnZSSkM0Q3dRQjliVElncHBWdXpZMHRDclpfVG9rZW46S25mSWJqSHl1bzVoRUR4d0RPQmM2aUpLbndiXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![leantime](https://static-docs.nocobase.com/leantime-0sak6s.png)
 
 **Overview**
 
@@ -306,7 +306,7 @@ GitHub: https://github.com/Leantime/leantime
 
 Website: https://leantime.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTAzMGMzOTExOGNhMmVkOTkzMGZlNzBjY2FmZjA5MDZfMEQ1R2JkTURTT0dLbXVLc0JsWFJrWXBDUzJZaDY2ZXNfVG9rZW46VWl2R2IxMnp1b3hBdkp4ZTJxMGNqN1JXbmFkXzE3NTgwOTA1Mjc6MTc1ODA5NDEyN19WNA)
+![leantime1](https://static-docs.nocobase.com/leantime1-1zpjzt.PNG)
 
 **Key Highlights**
 
@@ -339,3 +339,13 @@ Here’s a quick comparison of the 10 tools we covered to help you choose more e
 * **[Leantime](https://leantime.io/)** Best for: Teams wanting to connect strategic goals with execution Key traits: OKRs linked with tasks, human-centered design, ideal for startups and small R&D teams
 
 ⭐ If this article inspired you in choosing, deploying, or customizing a project management tool, feel free to share it with fellow developers exploring open-source and productivity solutions!
+
+
+**Related reading:**
+
+* [Top 18 Open Source AI Agent Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects)
+* [Top 20 Open Source AI Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-projects)
+* [Top 8 Open Source MCP Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-mcp-projects)
+* [Top 7 Open Source Web Applications with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-web-applications)
+* [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
+* [Top 15 Fastest-Growing Open-Source Low-Code Projects on GitHub in 2025](https://www.nocobase.com/en/blog/github-top15-fastest-growing-open-source-low-code-projects)
