@@ -8,7 +8,7 @@
   "description_ja": "GitHubで人気のオープンソースプロジェクト管理ツール10選を紹介。アジャイル開発から伝統的管理、チーム協働まで対応し、最適なツール選びをサポートします。",
   "slug": "github-open-source-project-management-tools",
   "publishedAt": "2025-09-17T06:28:19.509Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-17T07:43:43.807Z"
+  "updatedAt": "2025-09-17T10:05:36.131Z"
 }
