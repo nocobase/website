@@ -4,7 +4,7 @@
 
 而对于开发者和技术团队来说，**开源工具**不仅可以节省成本，更能提供更高的可定制性和扩展能力。且在 GitHub 上的 **[project-management](https://github.com/topics/project-management)** 话题拥有 19.9k 关注者，可以看出社区对开源项目管理工具的高度关注。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjcxOTU0ZjczM2RkOWRkOWQ4NDVjMmZjZTU2OGJhNThfSHhDd09EdjUxdXc5bHZOV2VBM2pVZWQwU2J3Z2FDbTRfVG9rZW46SE52S2JsMFlib2ZqRkF4elBEVmNFU01QblNoXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![GitHub](https://static-docs.nocobase.com/GitHub-zjxwk7.png)
 
 因此，我们基于该话题，筛选出 Star 数排名前十的项目。从轻量级 Kanban 工具到功能完整的企业级平台，覆盖任务管理、团队协作、研发流程等多个环节。希望能够帮助开发者判断这些工具的可落地性、扩展性以及实际应用价值。
 
@@ -26,7 +26,7 @@
 
 ## No.1: AppFlowy
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Yzg2OGNkNTk5MGM5ODlhZGIwMTllOGFjMmM0MTdkM2ZfRkZnQVVXQXBkTnphT1NIMmpMU1R3dXdjdWVTQ2ZLaHNfVG9rZW46Tk9NTGJUelBkb2tmbjV4ZjQzOGNiUFo5blRnXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy-k3zmym.png)
 
 **简介**
 
@@ -38,7 +38,7 @@ GitHub: https://github.com/AppFlowy-IO/AppFlowy
 
 Website: https://appflowy.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTNhMWQ4YmY2OTIyM2ZkNTI3OTQxNjRlOTQzMTQxNjBfSE1CVW5Kbk1ud0ZTc3NjQmc0ZjdUNTRMODM0YVdVcHlfVG9rZW46UWpMOWJxMHZQb0I1RG54ZmNPbWNNdHBobmdiXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![AppFlowy](https://static-docs.nocobase.com/AppFlowy1-ajiltk.png)
 
 **核心亮点**
 
@@ -54,7 +54,7 @@ Website: https://appflowy.com/
 
 ## No.2: Plane
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDMxYzM2YjE0YzNmZmVkMmMxM2IwZmQ2NjQyMmRkMGRfYmRNNW96MGdNeGR2d3Bac1dCc1Y0Z2FVRHNxZGpLa0dfVG9rZW46WktLM2JnTGRKb1h4a2p4Mm1zWWM3eFhXbnNkXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Plane](https://static-docs.nocobase.com/Plane-1uuddf.png)
 
 **简介**
 
@@ -68,7 +68,7 @@ GitHub: https://github.com/makeplane/plane
 
 Website: http://plane.so/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTdmNDRiZGVjYTBkOGRhYzZhYjRjMWM2MzgyYjViZWFfS1dtU204ZmJJUVVHS3ZLS1hMcDhOd1RsZzdDQWRmMmFfVG9rZW46R0JFTmJKak9Ub1R2R014SmdTamNDbUdObkliXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Plane1](https://static-docs.nocobase.com/Plane1-3l5c62.png)
 
 **核心亮点**
 
@@ -84,7 +84,7 @@ Website: http://plane.so/
 
 ## No.3: ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmU4N2VmYzljNTdkMGU1MjAzMDg1OTA1OWY4MzY5Nzlfd3liMlBRYlBrMnJZZThIenNaVmVSc0xNeWZ6RHV3ekFfVG9rZW46SkdGSmJ3bENFb2R1b2x4YzdWaWMzSkZ1bnZiXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![ERPNext.png](https://static-docs.nocobase.com/ERPNext-c14jmp.png)
 
 **简介**
 
@@ -96,7 +96,7 @@ GitHub: https://github.com/frappe/erpnext
 
 Website: https://frappe.io/erpnext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjc2NTQwMjQzYjhlMGRjMjBmMjQ2MGIzYjBiZjhmNmVfRzRxWnRaV2pkV2xLVGw2azc0TkN4TklJdTlNdUFTNmRfVG9rZW46VEpOYmJTVXpyb2lHRWJ4eWhUaWNZV3dzbkpmXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![ERPNext1](https://static-docs.nocobase.com/ERPNext1-7bifes.png)
 
 **核心亮点**
 
@@ -112,7 +112,7 @@ Website: https://frappe.io/erpnext
 
 ## No.4: Focalboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDQxN2Y0MjQ5ZDU3ODZmOTAwYzNjNGFiY2QyMzY1NmRfTXdMd2lEMm1aRGEyWEhMV2tqQWxPYnd3cmVxSFY0cHdfVG9rZW46S2diaWIxZkF2bzdwaG54a3lWdmNaWU9HblRmXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Focalboard](https://static-docs.nocobase.com/Focalboard-3a3jpa.png)
 
 **简介**
 
@@ -124,7 +124,7 @@ GitHub: https://github.com/mattermost-community/focalboard
 
 Website: https://www.focalboard.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2RhMzAzMjM0MTM2MGE0MGRhMzcyYzE5MTVmYWVjM2FfbzNScU9aWXlwWWZGbEJHd1p4dlowQW8xVWtWb0c2UXZfVG9rZW46SGpoRGJwYUxMb0FRd214RHlpaWNNWkhHbkloXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Focalboard1](https://static-docs.nocobase.com/Focalboard1-i2a30f.png)
 
 **核心亮点**
 
@@ -140,7 +140,7 @@ Website: https://www.focalboard.com/
 
 ## No.5: Huly
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjI3MTQwOGQ5MGExZGQwOWZmMGJlNTFhZGM2MDUyNzFfR3gzSnpHUTM3bjVxSFhkRVBXUDRPd09iNFc0SU82WFhfVG9rZW46TnBzemJqWkRybzExYnp4OWZmamNERUNmbnVGXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Huly](https://static-docs.nocobase.com/Huly-r1774m.png)
 
 **简介**
 
@@ -152,7 +152,7 @@ GitHub: https://github.com/hcengineering/platform
 
 Website: https://huly.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDg1NDhiYTU0ODZiZTcyOTNiNGVhZDgzYWIxODhhMDBfTWRZSVptNVpDWXdaZllZZjJZYXNNWndIT0xXSnFRSWtfVG9rZW46VGI4ZWIyMzM4b0JkTER4b09CYmNtSDM5bk9iXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Huly1](https://static-docs.nocobase.com/Huly1-9y8o66.png)
 
 **核心亮点**
 
@@ -168,7 +168,7 @@ Website: https://huly.io/
 
 ## No.6: NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzNmODI0ODI3ZTg2MjQyYjIyZTQyN2QzODlkNmZiZTJfY0lTYm54QjhuMlFvVmN5VnBidURuVjBSWk0xckREUElfVG9rZW46RlBZcmJVZFczbzhJbE54enFqaGNNTTFibjhiXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![NocoBase](https://static-docs.nocobase.com/1-yz5w1z.png)
 
 **简介**
 
@@ -182,25 +182,25 @@ GitHub: https://github.com/nocobase/nocobase
 
 Website: https://www.nocobase.com/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzZhN2ZmOTM3YWY0Y2Y1ZWQ0OWUxM2Y5NWMzY2ZkYTBfTzhEWGwwWTNhSVVRUXFQTHFqVUJlRWt3dThGczZUUUJfVG9rZW46WExjZmIwMm9Mb2NwRld4VzlXZGNuUWFPbkN4XzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![NocoBase1](https://static-docs.nocobase.com/NocoBase1-af92gl.png)
 
 **核心亮点**
 
 * **完整研发生命周期管理**：从需求收集、设计开发到测试、上线与后期维护，NocoBase 提供数据模型驱动的全流程管理能力。每个阶段都能建立对应的数据表和流程，确保研发环节可追溯、可量化、可持续优化。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDY0YTg1ODk3Y2RjYzhkN2M2OWQzMGM3YjQ0NTY2YTdfd2M2d1dCR2pYSXE4UDVCa2hjSjg1Nmx4ZUNPckxOYktfVG9rZW46WEFmMmJDSjd1b0lUMGx4Y28zYmNMVXBybnZmXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![完整研发生命周期管理](https://static-docs.nocobase.com/%E5%AE%8C%E6%95%B4%E7%A0%94%E5%8F%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86-wvaq9q.png)
 
 * **多样化任务视图**：NocoBase 同时支持表格、Kanban、甘特图、日历等多视图。团队可以在不同阶段切换视图：规划阶段用甘特图明确里程碑，执行阶段用 Kanban 管理迭代 backlog，测试阶段用表格跟踪缺陷。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDY2N2M5MWMzODU1NWJmNjFjMGY2YWZlNTY5MWJkOGJfbUxUeGhyWEx0Uk9jbGZ0eTVIQXBqM3RUU0EzWTFpT3dfVG9rZW46WUhDRWJUWXcxb2ZHdGl4bUFLdmNWalowbnZoXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![多样化任务视图](https://static-docs.nocobase.com/%E5%A4%9A%E6%A0%B7%E5%8C%96%E4%BB%BB%E5%8A%A1%E8%A7%86%E5%9B%BE-f5vkeu.png)
 
 * **精细化权限控制**：NocoBase 提供角色级、条件级、字段级的细粒度权限设置，支持复杂的协作场景。例如：开发只能修改自己负责的任务字段，测试团队可以添加 bug 但不能改动开发进度，项目经理则拥有全局可见性。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2ZjNjlkZmNlZDUwMjE2YzljODA2NGZhYWIzMmUyZDFfaFV4b3JiRGRqQlRTb0g4OWRqZnpIclJGZkVKc1AweGlfVG9rZW46SDZHV2JmNlNBb0JoTUh4c1ZpNGM2WVVpbkVmXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![精细化权限控制](https://static-docs.nocobase.com/%E7%B2%BE%E7%BB%86%E5%8C%96%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6-elao2e.png)
 
 * **可配置工作流**：NocoBase 的工作流支持条件判断、任务分配、通知提醒等自动化动作。比如，当截止日期临近时，自动发送提醒。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjE1MzAyMjJhODFkNjFhNTI1N2E4MzQ3ZTNkZTcwZmJfQkFEUFA0TzVkbmJGVnRYNkhwOGhMTWFJZWt4VWk2QnVfVG9rZW46VmpFeGJEMDRFb1dZQnp4bW5iZGM2blF0bk5jXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![工作流](https://static-docs.nocobase.com/%E5%B7%A5%E4%BD%9C%E6%B5%81-s6m810.png)
 
 **推荐场景**
 
@@ -210,7 +210,7 @@ Website: https://www.nocobase.com/
 
 ## No.7: OpenProject
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjY0OGNjNjhmOGVkZmRkOTIzMDYzYzMwMmY3N2M1MmJfbFdmSmdsM3pGaDRVVWdFTm5rTFlqdVZyaEdGdE9rQUlfVG9rZW46RktrSmJMZnJsb3F3MzJ4Z2dFbmNuQWh3bkFkXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![OpenProject](https://static-docs.nocobase.com/OpenProject-597ywc.png)
 
 **简介**
 
@@ -222,7 +222,7 @@ GitHub: https://github.com/opf/openproject
 
 Website: https://www.openproject.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2VkNWNjMGQ3ZWZjMTZiOTk1NzFhODBlYzkxNGI1M2ZfdnIwYTNNVEJJREsxQUQ4RGxSTDRMQ2VWQ05DaGxzUk1fVG9rZW46SENPSWJRWXpCb3IwMkh4c21uMWN0MVdtbkhiXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![OpenProject1](https://static-docs.nocobase.com/OpenProject1-fswc1w.png)
 
 **核心亮点**
 
@@ -238,7 +238,7 @@ Website: https://www.openproject.org/
 
 ## No.8: PLANKA
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODE4NDZkNzNmODlhNDYzN2MyYjhlMzNjYzk4MDM1MDVfb0JiVDFJS0NqNWh2YjNKamNXNEE2Sm9mOXU0eWhRVG5fVG9rZW46Q3o4UmJnVmdwb2cyZWx4dlBXR2NCZ3lJblRnXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![PLANKA](https://static-docs.nocobase.com/PLANKA-jm6gvw.png)
 
 **简介**
 
@@ -250,7 +250,7 @@ GitHub: https://github.com/plankanban/planka
 
 Website: https://docs.planka.cloud/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTMxNWVmM2RlYzNjZmRlZTk3MTgxNDBmNDY4MGYxMjBfVWNQbTZ0b0ZTSlBZeFlXcExZNERnWjUyTTZoQ1g1cnNfVG9rZW46R1JhQWJGYnhBb1p1Uk54WDJPT2NpNnFpbk9mXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![PLANKA1](https://static-docs.nocobase.com/PLANKA1-og72av.png)
 
 **核心亮点**
 
@@ -266,7 +266,7 @@ Website: https://docs.planka.cloud/
 
 ## No.9: Kanboard
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDU3NzNhZjZmYmYxMGU5ZTIwNzcwNmY5MmIxNDY5MDBfMEF0dkZFR091d21GeHprZ3RIcEFzcjBJNWc5bGY1cWpfVG9rZW46VTNmVmJNWVdub3NlVkt4ZG5JNGM5NGdZbmlkXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Kanboard](https://static-docs.nocobase.com/Kanboard-87x9kl.png)
 
 **简介**
 
@@ -278,7 +278,7 @@ GitHub: https://github.com/kanboard/kanboard
 
 Website: https://kanboard.org/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmQzNmJhNzY4MGE3NGU4M2Y0MGVkYTRkMjQ4OWM4OTVfcnNYQWZhclZlZVJvTGthdktVZlloa2VSQUd4U1o3MWVfVG9rZW46VWM0bmJadGJOb1dZZ0R4cGxzMWM4a1JFbjhiXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![Kanboard1](https://static-docs.nocobase.com/Kanboard1-oxkyi6.png)
 
 **核心亮点**
 
@@ -294,7 +294,7 @@ Website: https://kanboard.org/
 
 ## No.10: leantime
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjIzNTRjNjFlMjViZWI0NGE3ODEyMTcxYjc5NjcyMGJfb1p3NTlkNHcyQmFhVHo3RVBEV2dDWDVxaERGMHRDRkZfVG9rZW46Tnl2MGJNak1qbzgzY2x4QWU3dmNLZEVGbmViXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![leantime](https://static-docs.nocobase.com/leantime-0sak6s.png)
 
 **简介**
 
@@ -306,7 +306,7 @@ GitHub: https://github.com/Leantime/leantime
 
 Website: https://leantime.io/
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzBkNDAwZmFhNmMxODFjODJhMGQ0ZTQwM2U5ZmM1OThfaVQwd0dCbVBZRXF6enA3OEplR3R6ZHl4TXE5UjVDMlBfVG9rZW46TDM2MWJ4S3BmbzY3dmF4dHFGOWNFWExibmFoXzE3NTgwOTA1MTM6MTc1ODA5NDExM19WNA)
+![leantime1](https://static-docs.nocobase.com/leantime1-1zpjzt.PNG)
 
 **核心亮点**
 
@@ -336,3 +336,13 @@ Website: https://leantime.io/
 * **[Leantime](https://leantime.io/)**  适合：想把战略目标 + 项目执行结合的团队  特点：OKR 与项目任务打通，适合初创公司和小型研发团队
 
 ⭐ 如果这篇文章对你在挑选、部署或定制项目管理工具有所启发，欢迎分享给同样关注开源与效率提升的开发者朋友们\~
+
+
+**相关阅读：**
+
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
+* [GitHub 上 Star 数量前 20 的开源 AI 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
+* [GitHub 上 Star 数量前 8 的开源 MCP 项目](https://www.nocobase.com/cn/blog/github-open-source-mcp-projects)
+* [GitHub 上 Star 数量前 8 的开源 Web 应用项目](https://www.nocobase.com/cn/blog/github-open-source-web-applications)
+* [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
+* [2025年GitHub Star增长最快的15个开源低代码项目](https://www.nocobase.com/cn/blog/github-top15-fastest-growing-open-source-low-code-projects)
