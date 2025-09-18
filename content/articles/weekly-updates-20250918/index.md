@@ -53,15 +53,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Data source: REST API]** fix rest api URL validation rules by @katherinehhh
 - **[Workflow: Approval]** Fix the issue where the status text in the approval completion notification was not translated by @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.7](https://www.nocobase.com/en/blog/v1.9.0-beta.7)
-
-*Release date: 2025-09-11*
-
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
