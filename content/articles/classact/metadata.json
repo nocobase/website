@@ -8,7 +8,7 @@
   "description_ja": "Classact は Kubernetes 上に NocoBase を導入し、数十万件規模のデータを秒単位で応答可能に。人事・コンプライアンス管理を含む業務をカバーし、効率と体験を大幅に向上させました。",
   "slug": "classact",
   "publishedAt": "2025-09-18T12:02:39.753Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-18T12:24:30.320Z"
+  "updatedAt": "2025-09-18T15:44:08.714Z"
 }
