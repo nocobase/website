@@ -52,15 +52,6 @@
 * **[データソース：REST API]** REST API の URL 検証ルールを修正 @katherinehhh
 * **[ワークフロー：承認]** 承認完了通知内のステータステキストが翻訳されない問題を修正 @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.7](https://www.nocobase.com/ja/blog/v1.9.0-beta.7)
-
-*リリース日：2025-09-11*
-
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
