@@ -55,15 +55,6 @@
 - **[数据源：REST API]** 修复 REST API URL 验证规则 by @katherinehhh
 - **[工作流：审批]** 修复审批完成通知中状态文本未翻译的问题 by @mytharcher
 
-## next
-
-![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
-
-### [v1.9.0-beta.7](https://www.nocobase.com/cn/blog/v1.9.0-beta.7)
-
-*发布时间：2025-09-11*
-
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
