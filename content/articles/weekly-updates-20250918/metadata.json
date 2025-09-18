@@ -3,9 +3,9 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": null,
-  "description_cn": "本周更新包括：",
-  "description_ja": "",
+  "description": "This week's updates include: support for locale mapping display for calendar headers, bug fixes, and more.",
+  "description_cn": "本周更新包括：支持日历区块表头多语言显示，缺陷修复等。",
+  "description_ja": "今週の更新内容は以下の通りです：カレンダーブロックのヘッダー多言語表示機能のサポート、不具合修正など。",
   "slug": "weekly-updates-20250918",
   "publishedAt": "2025-09-19T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-18T05:39:09.075Z"
+  "updatedAt": "2025-09-18T12:29:14.060Z"
 }
