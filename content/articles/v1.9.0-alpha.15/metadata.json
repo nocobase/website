@@ -1,14 +1,14 @@
 {
   "id": 680,
-  "title": "NocoBase v1.9.0-alpha.15: ",
-  "title_cn": "NocoBase v1.9.0-alpha.15：",
-  "title_ja": "NocoBase v1.9.0-alpha.15：",
+  "title": "NocoBase v1.9.0-alpha.15: Use standard system logger for message queue",
+  "title_cn": "NocoBase v1.9.0-alpha.15：在消息队列中使用标准的系统日志",
+  "title_ja": "NocoBase v1.9.0-alpha.15：メッセージキューに標準的なシステムロガーを使用",
   "description": "Release Note of v1.9.0-alpha.15",
   "description_cn": "v1.9.0-alpha.15 更新日志",
   "description_ja": "v1.9.0-alpha.15 のリリースノート",
   "slug": "v1.9.0-alpha.15",
   "publishedAt": "2025-09-17T12:04:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-18T03:21:16.533Z"
+  "updatedAt": "2025-09-18T05:05:42.301Z"
 }
