@@ -21,4 +21,4 @@
 * **[データソース：REST API]** REST API の URL 検証ルールを修正 @katherinehhh
 * **[HTTP リクエスト暗号化]** リクエストパラメーターがネイティブの URLSearchParams 型をサポートしない問題を修正 @mytharcher
 * **[テンプレート印刷]** chinaRegions（中国地域）フィールドをサポート @jiannx
-* **[メールマネージャー]** 件名が不適切になる問題を修正 @jiannx
+* **[メールマネージャー]** 件名の文字化け問題を修正 @jiannx
