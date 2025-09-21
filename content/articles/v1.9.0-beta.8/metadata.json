@@ -1,14 +1,14 @@
 {
   "id": 684,
-  "title": "NocoBase v1.9.0-beta.8",
-  "title_cn": "NocoBase v1.9.0-beta.8",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.9.0-beta.8: Add support for side menu color customization",
+  "title_cn": "NocoBase v1.9.0-beta.8：新增对侧边菜单栏的颜色配置",
+  "title_ja": "NocoBase v1.9.0-beta.8：サイドメニューの色のカスタマイズをサポート",
   "description": "Release Note of v1.9.0-beta.8",
   "description_cn": "v1.9.0-beta.8 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.9.0-beta.8 のリリースノート",
   "slug": "v1.9.0-beta.8",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-09-20T15:37:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2025-09-21T12:33:29.606Z",
+        "updatedAt": "2025-09-21T12:33:29.606Z",
+        "articles_id": 684,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-09-21T12:31:37.699Z",
+    "updatedAt": "2025-09-21T12:31:37.702Z",
+    "id": 1933,
+    "title": "next",
+    "filename": "next-fplecf.png",
+    "extname": ".png",
+    "size": 115144,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-fplecf.png",
+    "preview": "https://static-docs.nocobase.com/next-fplecf.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-20T15:37:06.978Z"
+  "updatedAt": "2025-09-21T12:33:29.600Z"
 }
