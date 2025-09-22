@@ -2177,12 +2177,16 @@ p {
   border-radius: 50%;
   display: inline-block;
   color: #ffffff;
-  border: 1px solid #fff;
+}
+
+.play-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .play-icon {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   right: 0;
@@ -3577,7 +3581,7 @@ p {
 }
 
 .bg-half-260 {
-  padding: 260px 0;
+  padding: 260px 0 0px;
   background-size: cover !important;
   -ms-flex-item-align: center;
       align-self: center;
@@ -3688,13 +3692,22 @@ p {
     background-position: 90000%;
   }
 }
-.home-dashboard img {
+.home-video {
   position: relative;
-  top: 60px;
   z-index: 1;
 }
+.home-video img {
+  position: relative;
+  top: 60px;
+  z-index: 0;
+}
+.home-video .bg-overlay {
+  position: absolute; 
+  top: 60px; 
+  opacity: 0.5;
+}
 @media (min-width: 768px) {
-  .home-dashboard.onepage-hero {
+  .home-video.onepage-hero {
     overflow: hidden;
   }
 }
@@ -4006,7 +4019,7 @@ p {
 }
 @media (max-width: 767px) {
   .bg-home, .bg-half-170, .bg-half-260, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
-    padding: 150px 0;
+    padding: 150px 0 0;
     height: auto;
   }
 }
@@ -6798,26 +6811,17 @@ body[data-layout-mode=dark] .mode-light {
   #topnav .demo {
     display: none;
   }
+  #section-video {
+    margin-top: 0!important;
+    padding-top: 0!important;
+  }
 }
 .section-demo {
   padding: 0;
 }
-.work-process.card .card-body {
-  padding-top: 0;
-}
-.work-process.process-arrow:after {
-  width: 50%;
-  height: 20px;
-  top: 8px;
-  left: 78%;
-  background: url("../images/process.png") center center no-repeat;
-}
-.work-process .step {
-  opacity:0.3;
-}
 @media (max-width: 768px) {
   .work-process {
-    display: none;
+    /* display: none; */
   }
   .home-heading {
     margin: 5vh 0 4vh!important;
@@ -6854,6 +6858,43 @@ body[data-layout-mode=dark] .mode-light {
   color: #40a9ff;
 }
 /* Demo */
+#section-video .overlay-work,
+#temp .overlay-work {
+  opacity: 0.3!important;
+  width: 100%;
+  height: 100%;
+}
+.tobii__slider {
+  top: 0!important;
+}
+.tobii__slide .tobii-html {
+  max-width: 80%!important;
+  max-height: 80%!important;
+  width: 80%!important;
+  height: 80%!important;
+  background: none!important;
+  padding: 0!important;
+  overflow: hidden!important;
+  align-items: center;
+  justify-content: center;
+}
+.tobii__slide .tobii-html video {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tobii__slide .tobii-html img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.pb-6 {
+  padding-bottom: 5rem; 
+}
 .steps-guide .active h6{
   color: #2f55d4!important;
 }
