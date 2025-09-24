@@ -1,0 +1,50 @@
+{
+  "id": 685,
+  "title": "NocoBase v1.9.0-alpha.16",
+  "title_cn": "NocoBase v1.9.0-alpha.16",
+  "title_ja": "fetch is not defined",
+  "description": "Release Note of v1.9.0-alpha.16",
+  "description_cn": "v1.9.0-alpha.16 更新日志",
+  "description_ja": "fetch is not defined",
+  "slug": "v1.9.0-alpha.16",
+  "publishedAt": null,
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-09-24T13:34:19.234Z",
+        "updatedAt": "2025-09-24T13:34:19.234Z",
+        "tagId": 4,
+        "articleId": 685
+      }
+    }
+  ],
+  "sub_tags": [],
+  "category": null,
+  "cover": null,
+  "hideOnListPage": false,
+  "hideOnBlog": false,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-09-24T13:34:19.544Z"
+}
