@@ -299,12 +299,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-09-25T07:56:54.807Z",
+    "updatedAt": "2025-09-25T07:56:54.815Z",
+    "id": 1943,
+    "title": "封面",
+    "filename": "封面-q95dfh.png",
+    "extname": ".png",
+    "size": 1051321,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-q95dfh.png",
+    "preview": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-q95dfh.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-25T07:50:26.178Z"
+  "updatedAt": "2025-09-25T07:58:17.659Z"
 }
