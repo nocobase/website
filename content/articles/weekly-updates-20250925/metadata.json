@@ -3,9 +3,9 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": null,
-  "description_cn": null,
-  "description_ja": "",
+  "description": "This week's update includes: support for rotating images during preview, the addition of localization support for tooltips and group item titles, and more.",
+  "description_cn": "本周更新包括：支持预览图片时旋转图片，表格列提示信息和分组标题支持本地化等。",
+  "description_ja": "今週の更新内容は以下の通りです：プレビュー時の画像回転サポート、ツールチップとグループ項目のタイトルに対するローカライズのサポートの追加、その他多数です。",
   "slug": "weekly-updates-20250925",
   "publishedAt": "2025-09-19T00:00:00.000Z",
   "status": "drafted",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-25T02:56:00.928Z"
+  "updatedAt": "2025-09-25T03:04:02.413Z"
 }
