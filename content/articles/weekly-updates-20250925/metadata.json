@@ -7,8 +7,8 @@
   "description_cn": "本周更新包括：支持预览图片时旋转图片，表格列提示信息和分组标题支持本地化等。",
   "description_ja": "今週の更新内容は以下の通りです：プレビュー時の画像回転サポート、ツールチップとグループ項目のタイトルに対するローカライズのサポートの追加、その他多数です。",
   "slug": "weekly-updates-20250925",
-  "publishedAt": "2025-09-19T00:00:00.000Z",
-  "status": "drafted",
+  "publishedAt": "2025-09-25T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-25T03:04:02.413Z"
+  "updatedAt": "2025-09-25T05:40:13.189Z"
 }
