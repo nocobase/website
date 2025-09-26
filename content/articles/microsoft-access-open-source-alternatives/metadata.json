@@ -3,9 +3,9 @@
   "title": "6 Open Source Alternatives to Microsoft Access",
   "title_cn": "6 个替代 Microsoft Access 的开源数据库工具推荐",
   "title_ja": "Microsoft Access の代替となる 6 つのオープンソースデータベースツールおすすめ",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "Explore 6 open-source Microsoft Access alternatives, from NocoBase to DBeaver, and easily achieve more flexible data management and business applications.",
+  "description_cn": "探索 6 大开源 Microsoft Access 替代品，从 NocoBase 到 DBeaver，轻松实现更灵活的数据管理与业务应用。",
+  "description_ja": "NocoBase から DBeaver まで、6 つのオープンソースの Microsoft Access 代替ツールを探索し、より柔軟なデータ管理と業務アプリを実現しましょう。",
   "slug": "microsoft-access-open-source-alternatives",
   "publishedAt": "2025-09-26T08:29:16.195Z",
   "status": "drafted",
@@ -279,6 +279,6 @@
   "author": "Zhang Lu",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-09-26T08:56:19.682Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-09-26T09:46:38.358Z"
 }
