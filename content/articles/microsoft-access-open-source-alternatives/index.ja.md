@@ -1,6 +1,6 @@
 [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/) では、ある開発者が Microsoft Access のライフサイクルを一文で生き生きと描写しています：
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2VmYjViZmNhZjA5MzZhMDVjYTgxNGEyYTdiNmE0YWJfbUxxSGxPTnVYVnE4aWhDMVVoUTJCODlYZ3RkQ09iS2RfVG9rZW46S0JJbWJSbGVGbzBhVHV4bG5GbWNPbE5Pbm1nXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![reddit](https://static-docs.nocobase.com/reddit-en-3gae5i.png)
 
 この言葉は、Access が実際の企業でどのように使われているかをほぼ凝縮しています。最初は便利に始まり、チームでの共有を経て、データ破損や性能のボトルネックに直面し、最終的にはよりモダンなデータベースソリューションに置き換えられるという流れです。
 
@@ -14,15 +14,15 @@ Microsoft Office スイートに含まれるデスクトップ型データベー
 
 > Access ファイルの容量が限られているため大規模データセットを扱えず、Power BI や他のデータベースツールへの移行を検討しているとユーザーは述べています。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjViYzZiYzRiMDgxYWEyMzQ0MzU4OWQxZDY2MWEyNWFfeE9WNzdud1NvQkRiRnA2bklaNzRSZnVkaW1OM2dsVk1fVG9rZW46Uklna2J2T284b0I4Nzd4YnRMcmMwTjlLbjVnXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![issue1](https://static-docs.nocobase.com/issue1-8ff1sr.png)
 
 > 一部の組織では Access がレガシーシステムとして残っており、不具合が発生した際はチーム自身が修復を行う必要があります。しかし IT 部門が Access に詳しくなく、サポート対象外であるケースもあります。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJlMWYyOTg4N2NhNGJmMmFjZjEyYWY3N2ZiNzcwMDZfbzc0N2RNd3dIZ3UyZUJGMXVYZWlkYmJEWUJNR245aEtfVG9rZW46QWt3SGJaTUNYbzJtTlJ4RGlndmNDSFVlbjVlXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![issue2](https://static-docs.nocobase.com/issue2-qdx5lj.png)
 
 > チームの一部メンバーは依然として Access を利用していますが、システムが時代遅れだと感じています。大量のデータをエクスポートする際の制約もあり、大規模な工学データを扱う際には非効率に見えます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjc3M2U5NmQzMTBmMTllOGZiODJmNjczODI1YzAxMDVfVHRwUWw0dlhldFR1WmtiQWxXNWNpVXhMNjdEeGFhUW1fVG9rZW46RnIwTmJEeU8wb1FFSzB4Vm02S2NnbXFWblFmXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![issue3](https://static-docs.nocobase.com/issue3-j4hdp6.png)
 
 こうした性能・セキュリティ・拡張性の不足に対応するため、より多くの企業が Microsoft Access の代替を探し始めています。
 
@@ -30,7 +30,7 @@ Microsoft Office スイートに含まれるデスクトップ型データベー
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzBkMzM0ZThkYjAxZTM5YTE3OGY4MzYwMTIwY2UyZDJfZzh5eEV0Y285b2dNZzFQTnprWWZ6R1dKUHVUcEZrQnRfVG9rZW46TU0yN2IwcU1lbzlNSXV4OUFLYWNhN0xRbmZiXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![NocoBase](https://static-docs.nocobase.com/NocoBase-en-ccbi6v.png)
 
 **概要**
 
@@ -46,19 +46,19 @@ Microsoft Access はデスクトップ型データベースであるのに対し
 
 * **ビジュアルデータモデリング**：複数テーブルのリレーション、豊富なフィールドタイプをサポートし、データ関係を直感的に表示。複雑な業務モデルを迅速に設計可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzljMTllYmViMjYwZWU3OGJhNGE5ZWQ3YjI0OGZjZmNfZThTQk1sVjZEbldKbXdVeTl5NnRGODJCOGU5REVXRnFfVG9rZW46Rk1hcmJNR2Mzb3U0bWF4ZjVhaWNXRGlIbjVoXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![Visual data modeling](https://static-docs.nocobase.com/Visual%20data%20modeling-nq8hwe.png)
 
 * **権限とマルチユーザーコラボレーション**：ロール単位、条件単位、フィールド単位のきめ細かい権限設定を提供し、ユーザーやロールごとに閲覧、編集、管理権限を割り当て可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODYxOTkzOWZmOWJlODZkYWRlNzA1ODNkNGZhNGRkYTlfUGpld2c0S2xqY0lzYVozY2pHVmtRUDBEbjlnZG1HYXpfVG9rZW46SGMyeWJ4OFRQb2ZlTmR4ajUxS2Nqb2l4bk9iXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![permissions](https://static-docs.nocobase.com/permissions-3mg75h.png)
 
 * **柔軟なワークフロー**：業務プロセスの自動化をサポート。承認やリマインダーといった操作をワークフローモジュールで実現し、コーディング不要で業務アプリを迅速に構築可能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTI0YWI4MjlkMTI3MWQ4NDViZjg5MTA0ZGEzYmRmZjNfMllpVkZ2UnphM0lhdUZoMkxkNE9yUlN1SWtORDAzenpfVG9rZW46REFnOGJqV0pCb0Vua3d4TjRaMWN2clRjbnRjXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![workflows](https://static-docs.nocobase.com/workflows-0j76g0.png)
 
 * **強力なプラグイン拡張**：API やプラグインを通じて異なるデータソース（データベース、API、外部サービス）と接続でき、多様な業務ニーズに対応。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGI0YzMwMmFmNWM2ZDkwZmQwMTEwMDBmNTEzNjkzYzFfWjJLTXNiRjQyVUJSSGNyNHoxRTRhaElndk5VdVBORldfVG9rZW46VEtTMWJmd2FGb296eHJ4a2ZtV2N5cEM3bjdkXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![Plugin](https://static-docs.nocobase.com/Plugin-y61b0i.png)
 
 **利用シーン**
 
@@ -70,7 +70,7 @@ NocoBase は、企業内部の管理や業務システム構築に広く活用�
 
 ## NocoDB
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2EwNTkyNzdiZWYwYzU2MzZlY2UxMTU5YThhODZiZDRfNldvZENteVRJY1c2Uk9tdzBKcXlOd3F3OTRMbERyOHRfVG9rZW46RHNNU2Jydkdnb2oyaFN4d3REM2NtVlY5bkZlXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![NocoDB](https://static-docs.nocobase.com/NocoDB-x8b8ve.png)
 
 **概要**
 
@@ -97,7 +97,7 @@ NocoDB はオープンソースのノーコードデータベース管理ツー�
 
 ## Baserow
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzFhOTEwY2QwYTM3MzM2NTJhNTAxZGI3NzRmMTkyZWZfOFhPM0RiZW5xTlJlYzk5NmdlZGtIUW5DanFrNm1VbjNfVG9rZW46TlRtcmJFUFpVb25vWEJ4S3U3ZmNzNDhMblJnXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![Baserow](https://static-docs.nocobase.com/Baserow-ekfmgo.png)
 
 **概要**
 
@@ -124,7 +124,7 @@ Baserow はオープンソースのノーコードデータベース兼アプリ
 
 ## LibreOffice Base
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWI5ZjA4OTc2NjBhYzQyMDBmMzg1MTJiOWM2MzAwZmZfSGtXQ28zWTVxdWV6VFJMNFFTb3hlVGV6ZHVmcUs1UHZfVG9rZW46RnhtSWJ6M1BCb1FlOFV4bTlpUWNrVUprbm5oXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![LibreOffice Base](https://static-docs.nocobase.com/LibreOffice%20Base-oiaw2k.png)
 
 **概要**
 
@@ -148,7 +148,7 @@ LibreOffice Base は LibreOffice スイートに含まれるデータベース�
 
 ## Kexi
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjU0ZWNjZTUyYzA0NGQ4MDVmOTg5MzI1MzIxY2YwNzdfNThjVldKM1NEYmI3aFhuUWgycUczd0dmOU5NOTV2bUtfVG9rZW46RmtROGJCSnVUb04xcGt4UFA2eWNxMTFYbmZkXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![Kexi](https://static-docs.nocobase.com/Kexi-czoqhz.png)
 
 **概要**
 
@@ -173,7 +173,7 @@ Kexi はオープンソースのビジュアルデータベースアプリ構築
 
 ## DBeaver
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTBjOWE5ODRkYzVmMjIxNjRmY2JjYTQ3NDBjZmQ4MTVfSVZvQVZZWWZ0Mnk0UlZXa2xjVVUxRkcyN3F3ZXJvVXhfVG9rZW46T0xQTGJhRE5kb3RSSk14empXMmNibEJsbkFkXzE3NTg4NzU3OTc6MTc1ODg3OTM5N19WNA)
+![DBeaver](https://static-docs.nocobase.com/DBeaver-7it7k8.png)
 
 **概要**
 
@@ -207,3 +207,13 @@ DBeaver はオープンソースの汎用データベースツールで、SQL �
 * 開発者やデータ分析担当者：DBeaver が最強のクロスデータベース対応を提供。
 
 もし Microsoft Access の制約に悩まされているのであれば、これらのオープンソースツールから出発し、自社のニーズに合う最適な代替案を探してみてください。
+
+
+**関連読み物：**
+
+* [6 つの Jira 代替オープンソースプロジェクト管理ツール推奨](https://www.nocobase.com/ja/blog/jira-open-source-alternatives)
+* [Zapier の代替となる 7 つのオープンソースワークフローツール](https://www.nocobase.com/ja/blog/zapier-open-source-alternatives)
+* [ServiceNowのオープンソース代替5選（価格比較つき）](https://www.nocobase.com/ja/blog/servicenow-open-source-alternatives)
+* [自由な開発環境を求めるなら：Firebase の代わりになる OSS 6 選](https://www.nocobase.com/ja/blog/open-source-firebase-alternatives)
+* [AppSheetの代替物として最適なものは2025年です](https://www.nocobase.com/ja/blog/appsheet-open-source-alternatives)
+* [2025 年、オープンソース代替案がOutSystemsを置き換えつつある理由：技術的自由度とコスト優位性の徹底分析](https://www.nocobase.com/ja/blog/outsystems-open-source-alternatives)
