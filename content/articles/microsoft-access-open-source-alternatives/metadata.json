@@ -273,12 +273,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-09-26T09:59:39.101Z",
+    "updatedAt": "2025-09-26T09:59:39.106Z",
+    "id": 1961,
+    "title": "Frame 97",
+    "filename": "Frame 97-6bkoo9.png",
+    "extname": ".png",
+    "size": 41925,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2097-6bkoo9.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2097-6bkoo9.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Zhang Lu",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-26T09:46:38.358Z"
+  "updatedAt": "2025-09-26T09:59:42.782Z"
 }
