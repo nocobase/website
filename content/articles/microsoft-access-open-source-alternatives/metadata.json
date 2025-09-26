@@ -8,7 +8,7 @@
   "description_ja": "NocoBase から DBeaver まで、6 つのオープンソースの Microsoft Access 代替ツールを探索し、より柔軟なデータ管理と業務アプリを実現しましょう。",
   "slug": "microsoft-access-open-source-alternatives",
   "publishedAt": "2025-09-26T08:29:16.195Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-26T09:59:42.782Z"
+  "updatedAt": "2025-09-26T12:25:43.979Z"
 }
