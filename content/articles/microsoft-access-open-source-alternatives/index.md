@@ -1,6 +1,6 @@
 On [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/), one developer vividly described **the lifecycle of Microsoft Access** as below:
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjFjODIzZWZhMmQyOTEwYTY3NDc3M2Y4ZGJhOTdmMDFfZTRzZFowcjdGdXJmbDBScXFaT0NDcXJ1SDNYY0oxWGtfVG9rZW46Tm5udWJMdUdwbzdmUFF4b0ZBRmNvR3lVbkRmXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![reddit](https://static-docs.nocobase.com/reddit-en-3gae5i.png)
 
 This description neatly sums up how Access is often used in real-world businesses: starting as a convenient tool, then shared across teams, eventually running into corruption and performance bottlenecks, and finally being replaced by **more modern database solutions**.
 
@@ -14,15 +14,15 @@ These [issues](https://www.reddit.com/r/CAStateWorkers/comments/1k34y6z/do_you_u
 
 > Access files struggle with large datasets, prompting users to migrate to Power BI or other tools.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTgyYjg5Nzk1M2Q1ZWEwYTE1Yzc5YjlhNDg2NDE3NWJfUkoxNVUwdjVQMzRDVUVuV1poUUJ1S0p1UHpwVzJidVRfVG9rZW46SHZBTGJTRWU1b0w2ZDJ4azh4YWM1WVh3bjhjXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![issue1](https://static-docs.nocobase.com/issue1-8ff1sr.png)
 
 > In some organizations, Access survives as a legacy system. When problems arise, teams must fix them on their own because IT no longer supports Access.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmNhODFmNDI4MGYyYTc2ZmNiNjhlMDRjYThjNWUxZWJfdURkZTNWenpqV1JXRWZsVkZuWE16M1BPSEdnM0ZjM3hfVG9rZW46R2ZoUmJBUkhIb21HWWl4eWYxU2NpRUFabmxlXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![issue2](https://static-docs.nocobase.com/issue2-qdx5lj.png)
 
 > Some team members still use Access but find it outdated. Exporting large datasets is limited, and handling engineering-scale data becomes inefficient.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWM2OTk4NWQ4OTM5YjM4ZGZhM2ZmYTI2ZjAzMjI2MTdfdmpEbEEzU2JkS0c1bHY4Vm1kd0RrZnJSTHI5WWtWZ2RfVG9rZW46RXo5ZmJJQlVob3Z2d3l4SWxoUGNrcWJmbjNtXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![issue3](https://static-docs.nocobase.com/issue3-j4hdp6.png)
 
 To overcome these limitations in performance, security, and scalability, more and more organizations are turning to modern **open source alternatives**.
 
@@ -30,7 +30,7 @@ These tools go beyond simple database management—they also include no-code dev
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzNlZjJjOTExNzAyZDA1YmViZTM2YzkzZjg1YWVjYTdfVlVyV0pGZzY2Q0J5SktFdExSdWY5eDRXc0VrTkdrYkRfVG9rZW46QU9TZWJ1QmwwbzFqWkp4a3g5bmNQNVlUbm9iXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![NocoBase](https://static-docs.nocobase.com/NocoBase-en-ccbi6v.png)
 
 **Overview**
 
@@ -46,19 +46,19 @@ Unlike Microsoft Access, which is a desktop database tool, NocoBase is a compreh
 
 * **Visual data modeling**: Supports multi-table relationships and rich field types, with intuitive visualization of data structures for designing complex models.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmY0MjE2OGVhODU3YjcxZWFiNDgyZGQ3ZjAyYzE1MTRfWkZLWWxlWWhSaHVadHd4Z05WSXpqMEY1NWV6ckxJc1NfVG9rZW46SnlDdGJmRk5nbzd2VVN4VXo4SWM0djM1bjhnXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![Visual data modeling](https://static-docs.nocobase.com/Visual%20data%20modeling-nq8hwe.png)
 
 * **Granular permissions & collaboration**: Role-, condition-, and field-level access controls, enabling secure multi-user operations.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWU5MmQzODcwZmZjZmY1ZmYzMjJkNTViODU5ZjVhZjBfdHEzUUFGQ3ViNUNQMUxmZjJadzdyZ05mVE1rMWMyMk1fVG9rZW46VnlLSGJZN21Ob05PcEt4b01saWNac0l3bmRoXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![permissions](https://static-docs.nocobase.com/permissions-3mg75h.png)
 
 * **Flexible workflows**: Build business process automation (approvals, reminders, etc.) without deep programming knowledge.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTNiMWQxOTg3MmQ5NzIzMGNmYTUxZDhmMTkyZjc3YTNfSzl1c0ZORnRuaElpcHJvd2tma0hJNktqMUQxRFBRalFfVG9rZW46TkxkTmJKSExDb2M4dDB4VnZvU2NDNmM1blpkXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![workflows](https://static-docs.nocobase.com/workflows-0j76g0.png)
 
 * **Plugin ecosystem**: Extend functionality via APIs and plugins, connecting with external databases, APIs, and third-party services.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2IwN2JhNjBjZGU4ZTJkNTY2Y2I1NjU0ZWMxYTU3NDlfbGdsS1Z4aWFvTkdrTzA2TVU4cjhQZEE5MUJsTE8wSU5fVG9rZW46RHFibWJHSmh2b2wxSWZ4aHh6SmN0M0tCbk9FXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![Plugin](https://static-docs.nocobase.com/Plugin-y61b0i.png)
 
 **Use Cases**
 
@@ -70,7 +70,7 @@ NocoBase can be widely applied to internal enterprise management and business sy
 
 ## NocoDB
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDgzNWE4OTlmMzNlZWQ1ZGJjNjc0ZWU3MzJiNDMxMWFfWHlVeFA3UWRXZHlrRjhmRlRFMjF5c25rVGpRdXVOM1BfVG9rZW46V2owRWJKMTVjb1FQcUp4UHRLOWNqMUw3blBmXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![NocoDB](https://static-docs.nocobase.com/NocoDB-x8b8ve.png)
 
 **Overview**
 
@@ -97,7 +97,7 @@ NocoDB is an open-source no-code database management tool that turns traditional
 
 ## Baserow
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGUxMDRkMDg3ZjAxMzkyYjUwNTZlMzgwNjVhYzhjNDdfd25yZng4ZXBGak5BUTZPRjNXRzJZdjlhWUNFbU1HUGRfVG9rZW46VE1RVGJkVDh5bzRpNHZ4ZmVJY2NjSTk2bndiXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![Baserow](https://static-docs.nocobase.com/Baserow-ekfmgo.png)
 
 **Overview**
 
@@ -124,7 +124,7 @@ Baserow is an open-source no-code database and application-building platform tha
 
 ## LibreOffice Base
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzM5MzhkYjE2OWJlYmJjNzMyNTk5MmVlMGQxMWY0NDlfR0VNU283YVhUZlVRWXRRbHRwc0IycXlIRlVieTlZSXhfVG9rZW46WDREb2I4Nnk0b3Zpc0R4eGtxVWNyUWlYbjFnXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![LibreOffice Base](https://static-docs.nocobase.com/LibreOffice%20Base-oiaw2k.png)
 
 **Overview**
 
@@ -148,7 +148,7 @@ LibreOffice Base is the database management tool within the LibreOffice suite. I
 
 ## Kexi
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjEzY2IzZTEzNzBkNjQxM2YxOTQzOTE3MDQyNWY0MzdfN3k3Qm56eFNlNTVsQldRdFU0TzF1QUVqekkxYmo3OGxfVG9rZW46QkJZamJUdDF4bzFOenB4Y2tKNGNZWEhnbmpoXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![Kexi](https://static-docs.nocobase.com/Kexi-czoqhz.png)
 
 **Overview**
 
@@ -172,7 +172,7 @@ Kexi is an open-source visual database application builder designed to fill the 
 
 ## DBeaver
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTM4ODE2NDA2MDM0Njc3YmI1YjIxODk3YjRiMTc0OTlfM3Q1Z28ybkJSdzBkVExZTjMwTU9zQ0dQNnpOeHQwYTVfVG9rZW46TFpJYmJtckJNb0QyMEp4cHlIS2NwM3lZbmhnXzE3NTg4NzU3Mzg6MTc1ODg3OTMzOF9WNA)
+![DBeaver](https://static-docs.nocobase.com/DBeaver-7it7k8.png)
 
 **Overview**
 
@@ -206,3 +206,13 @@ The open-source options introduced here provide solutions tailored to different 
 * If you are a developer or data analyst, **DBeaver** provides the most powerful cross-database support.
 
 If you find yourself constrained by the limitations of Microsoft Access, these open-source tools can help you transition to a more modern, collaborative, and scalable solution that aligns with your business needs.
+
+
+**Related reading:**
+
+* [6 Best Open Source Alternatives to Jira](https://www.nocobase.com/en/blog/jira-open-source-alternatives)
+* [7 Powerful Open Source Alternatives to Zapier](https://www.nocobase.com/en/blog/zapier-open-source-alternatives)
+* [5 Best Open-Source Alternatives to ServiceNow (with Pricing Comparison)](https://www.nocobase.com/en/blog/servicenow-open-source-alternatives)
+* [6 Open-Source Firebase Alternatives for Self-Hosting and Data Control](https://www.nocobase.com/en/blog/open-source-firebase-alternatives)
+* [The Best Open-Source Alternatives to AppSheet in 2025](https://www.nocobase.com/en/blog/appsheet-open-source-alternatives)
+* [Why Open-Source Alternatives Are Replacing OutSystems in 2025?](https://www.nocobase.com/en/blog/outsystems-open-source-alternatives)
