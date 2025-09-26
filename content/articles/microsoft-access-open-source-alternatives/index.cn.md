@@ -1,6 +1,6 @@
 在 [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/) 上，一位开发者用一段话生动描绘了 **Microsoft Access 的生命周期**：
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWY3N2RlYjExMzcyY2EwMGU5ODI0OTkyYjAyNjI3NTlfQkZvU095S0lXb0dCSThDczc0eHFsek1MRXB1UmR6ejJfVG9rZW46VjhzU2JKWWVsbzNOWlJ4ZmRkZWNIOGl2bmJiXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![reddit](https://static-docs.nocobase.com/reddit-wzra4s.PNG)
 
 这段话几乎浓缩了 Access 在现实企业中的使用场景：从最初的便利，到团队共享，再到数据损坏和性能瓶颈，最后不得不被更现代的**数据库解决方案**取代。
 
@@ -14,15 +14,15 @@
 
 > Access 文件容量有限，难以处理大型数据集，用户表示正在考虑迁移到 Power BI 或其他数据库工具。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmZkMTA5MDgyOGMzY2ZjZDQyZTU5YjNjMjkwNDViODVfR0RMU3Z1TFFUdTdPbXVnUVViODB6UGZmQjRHSml6c01fVG9rZW46S3pkOGJNdzVBb1FlamN4bXRsZGNZSDBHbjNjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![issue1](https://static-docs.nocobase.com/issue1-8ff1sr.png)
 
 > 在一些机构中，Access 多为遗留系统，如果出现问题，团队需要自行修复，而 IT 部门不熟悉或不支持 Access。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDIwMjVkNTIwZGM4ZTBiYzMxZjJhN2RmNzc2NTAyN2JfN3laOUVkcWVUeDdTQ0RlNFAzQXl1VzFqYnlRUHJ3emNfVG9rZW46SElaOGJKWXhTb3BUdTB4d243SmNBbXBkbjNiXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![issue2](https://static-docs.nocobase.com/issue2-qdx5lj.png)
 
 > 部分团队成员仍在使用 Access，感到系统过时，同时导出大量数据存在限制，处理大型工程数据时显得效率低下。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWMxNjNlNTlmMWQyMGY1ODEzODRiOGEwMjIyOWYzY2JfRHRvU1Byb2hwUDlFSkJnNW9xODJFVHJTRzVwSUFyTGJfVG9rZW46VXI3Y2JwUE5pb3Vla1B4U3FUbWNnd0JHbjNhXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![issue3](https://static-docs.nocobase.com/issue3-j4hdp6.png)
 
 为了应对性能、安全性和扩展性的不足，越来越多企业开始寻找 **Microsoft Access 替代品**。
 
@@ -30,9 +30,7 @@
 
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWQ3MjBjY2M5OGUzZTFlODZkZmMzODMzZWQxNmU0YzNfN2w5QkNyNVNqTUlvQlh4cHZmWmhVY2ZCWHgyVXcwSGVfVG9rZW46SkNwYmJWTURub1VwSXN4NzZiNWM4b1JRbkRiXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTcyODc3ZGEwOGIxMzkxMzgwZTFmODRiMTliOWVkNGNfaGtXU1Y4bmFmWUJqbTBMQlhGSjR4M2EwTnBHcVFONG1fVG9rZW46RE9vb2Jxc2Rrb2JRd3h4TWVRYWNhSlhXbmlkXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![NocoBase](https://static-docs.nocobase.com/NocoBase-1vgudn.PNG)
 
 **项目概况**
 
@@ -48,25 +46,19 @@ NocoBase 是一款极易扩展的开源低代码/无代码平台，专为企业�
 
 * **可视化数据建模**：支持多表关联、字段类型丰富，并能直观展示数据关系，方便快速设计复杂业务模型。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWExMzZhOGI1YzU4YjQ3ZjQxOWUxMzUzZWI0ZmI1ODlfTkRKcXhwMEtycm9DY0JWTVBxZlJhdURyTXVva0k5enZfVG9rZW46RnZZMWJsc29Hb2NreGF4UEd4Z2N4T3RtbmhjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzkwNDkyMDgyYTRhZTY5ZmNhY2Q5MThhNWE5M2M5MGJfbzJ5Y1VZTloxQ1djeEhLZTl5b2lJYnBHaDNUOGJnSlNfVG9rZW46QkR0cWJ0NVVJb3VrTU14cnNWZ2NjelNabnZjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![可视化数据建模](https://static-docs.nocobase.com/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1-9ywxwb.png)
 
 * **权限与多用户协作**：提供角色级、条件级、字段级的细粒度权限设置，可为不同用户或角色分配查看、编辑或管理权限。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGY2YzFjY2RkNTA3YmM3Y2Y1MTE4YWJhNTE1MDAxNDlfT3hCdlNnUjJJbGVoZjB1Z0dxaFc1cnV2cVRTTTU5cnJfVG9rZW46U0IzMmJEWDRIbzlHbDJ4N1BhYWNJaDd4bnFjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTBhMmY3YzYzM2MwYmU5NjI1MDdjN2RmZWNjNTY0MDlfdGs3T29IRnEwUkdiR3A5eVZpd01XMW40MkdNZWp3NEpfVG9rZW46RkJaWWJpUWhMb3p2WUt4ZWxKb2NkNlZwblNjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![权限](https://static-docs.nocobase.com/%E6%9D%83%E9%99%90-61os9m.png)
 
 * **灵活的工作流**：支持业务流程自动化，通过工作流模块实现审批、提醒等操作，用户无需深入编程即可快速搭建业务应用。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGFjYmIxYmQ0MTRlZjU1MTg0ZjU3YTYxMjgwOWNkMTZfS0lKdWpBTVRXZFhPMzljVWt1aWlFdGVFcTBGdVJiakdfVG9rZW46R3FxQmI1ZzgxbzlPWEh4MEc2ZGNzUjBpbmZoXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![工作流](https://static-docs.nocobase.com/%E5%B7%A5%E4%BD%9C%E6%B5%81-6bz4ez.png)
 
 * **强大的插件扩展**：支持通过 API 和插件接入不同的数据源（数据库、API、第三方服务），满足企业不同业务需求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDcxMDg0YzdhODZjMjVkOTdiOGUyZDllZjE1NzI3NGVfR0w1b0NyWkdvQjlLZ1A2eEgydFlyZng5aGV5UmE2VnhfVG9rZW46TXM5RmJQbzlrb2phY1J4cnRwdWM0OHQwblRmXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzMwYWU2YzQ5YzlmMjExYzA4ZWI1MTY3M2Y5OTdlNzFfck1TY2hnYnFDakk0cjM5Z0hSOGVRS2dmdDdNTDhTUklfVG9rZW46UklGaGJIdjA3b3NqV2l4YWtGS2NzS1M4bkhkXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![插件](https://static-docs.nocobase.com/%E6%8F%92%E4%BB%B6-k6smfx.png)
 
 **使用场景**
 
@@ -78,7 +70,7 @@ NocoBase 可广泛应用于企业内部管理和业务系统建设，适合需�
 
 ## NocoDB
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2YxMTIwNWRiZDZiM2YyOTYzNmRlOGY2MzgwYzUzYTJfZkMyR1kwaUp2VWc1OUhRR3p5bUJlcWVnQWpPQ2poNEVfVG9rZW46TkxnNWI5cVpFb0Y4VEd4SWxNTmN5eWJFbkpiXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![NocoDB](https://static-docs.nocobase.com/NocoDB-x8b8ve.png)
 
 **项目概况**
 
@@ -105,7 +97,7 @@ NocoDB 是一款开源的无代码数据库管理工具，旨在将传统关系�
 
 ## Baserow
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzE1MWE0MGNlYmI3M2JhNTZhZDRmMDc1OTZkM2ZmYjdfSHpFcTNVZ2YwMXN3TWxOd05TTGp2b1ZvUW1nVUE2ZzFfVG9rZW46RnFXbmJMeUljb2Vnell4U1NKYmN1NjFibmlmXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![Baserow](https://static-docs.nocobase.com/Baserow-ekfmgo.png)
 
 **项目概况**
 
@@ -132,7 +124,7 @@ Baserow 是一款开源的无代码数据库和应用构建平台，允许用户
 
 ## LibreOffice Base
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2M0MzFlMmQ5ZjdiMGU0M2QzOTBlYTUxMzAxMTUyMjBfWFZTSzJHV0xOYTBTeTNDZURvbnRNOXRMVWl6ZE4wd1FfVG9rZW46RXdNemJMdzU2b0NyVVN4aWdRN2NENlFobm1nXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![LibreOffice Base](https://static-docs.nocobase.com/LibreOffice%20Base-oiaw2k.png)
 
 **项目概况**
 
@@ -156,7 +148,7 @@ LibreOffice Base 是 LibreOffice 套件中的数据库管理工具，提供图�
 
 ## Kexi
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTNkMmUzNWIwODZmYmZiNDU5NWZmYzNmMDc2ZjMwNjBfOUx6dERyY0ZidXBYT1IzRkM3R1huYzZ3SWdmUmpDa1dfVG9rZW46RTV1bmJ0cG41b1JENlJ4TkN4cmNXTUF6bmdoXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![Kexi](https://static-docs.nocobase.com/Kexi-czoqhz.png)
 
 **项目概况**
 
@@ -180,7 +172,7 @@ Kexi 是一款开源的可视化数据库应用构建工具，旨在填补电子
 
 ## DBeaver
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjdkYjFkNmEwMDQ3NmUxZTA5MGNhYjUxZTM1NTQwZDVfUnNReDE4MVNiM0M5MFJNUHdmNUp0bnhuajl4N0twV1ZfVG9rZW46RW1vWGJrT0dJb3hMME54R2dLVGM0bTBubnVjXzE3NTg4NzU1NzQ6MTc1ODg3OTE3NF9WNA)
+![DBeaver](https://static-docs.nocobase.com/DBeaver-7it7k8.png)
 
 **项目概况**
 
@@ -214,3 +206,13 @@ DBeaver 是一款开源的通用数据库工具，支持多种数据库系统，
 * 如果你是开发者或数据分析人员：DBeaver 提供了最强大的跨数据库支持。
 
 如果你正受限于 Microsoft Access 的使用局限，不妨从这些开源工具入手，寻找契合业务需求的替代方案。
+
+
+**相关阅读：**
+
+* [6 个替代 Jira 的开源项目管理工具推荐](https://www.nocobase.com/cn/blog/jira-open-source-alternatives)
+* [7 款替代 Zapier 的开源工作流工具推荐](https://www.nocobase.com/cn/blog/zapier-open-source-alternatives)
+* [5 个最佳 ServiceNow 开源替代品（含价格对比）](https://www.nocobase.com/cn/blog/servicenow-open-source-alternatives)
+* [开发者推荐：6 款更灵活的 Firebase 开源替代品](https://www.nocobase.com/cn/blog/open-source-firebase-alternatives)
+* [2025 年 AppSheet 最佳开源替代品](https://www.nocobase.com/cn/blog/appsheet-open-source-alternatives)
+* [2025 年开源替代方案为何正在取代 OutSystems？技术自由度与成本优势深度解析](https://www.nocobase.com/cn/blog/outsystems-open-source-alternatives)
