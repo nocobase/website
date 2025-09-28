@@ -20,6 +20,8 @@ Photo by Priscilla Du Preez on Unsplash
 * 潜在客户（Lead）
 * 商机（Opportunity）
 * 客户管理
+
+
   通过这一过程，学生不仅学会了如何**在 NocoBase 中灵活设计数据结构和业务逻辑**，还对比分析了它与 Salesforce 在功能深度、可扩展性和局限性上的差别。与此同时，课程还引入了 Appsmith 和 Microsoft Power Apps，帮助学生横向比较不同平台的优势与不足。
 
   ![sale force-gw09zm.jpg](https://static-docs.nocobase.com/sale%20force-gw09zm.jpg)
@@ -33,6 +35,8 @@ Photo by Priscilla Du Preez on Unsplash
 2. 配置将要使用的数据源（表或集合）
 3. 管理应用页面
 4. 设计与实现业务逻辑模式
+
+
    教师端还能集中查看所有学生项目的细节，并通过内置的评分与评论机制提供反馈。这让系统既成为教学管理工具，也能作为完整的项目文档库。
 
    ![project work-nvxsp4.jpg](https://static-docs.nocobase.com/project%20work-nvxsp4.jpg)
