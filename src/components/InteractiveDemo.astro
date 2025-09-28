@@ -81,7 +81,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
           <div class="image-container">
             <img
               data-src={step.image}
-              src={index === 0 ? step.image : ""}
+              src=""
               alt="NocoBase 演示界面"
             />
             {step.button && (
@@ -900,16 +900,27 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     }
 
     preloadImages(): void {
-      this.steps.forEach((step) => {
-        const img = step.querySelector('img[data-src]') as HTMLImageElement;
-        if (img && img.dataset.src) {
+      // 只预加载前两个步骤的图片
+      for (let i = 0; i < Math.min(2, this.steps.length); i++) {
+        this.loadStepImage(i);
+      }
+    }
+
+    loadStepImage(stepIndex: number): void {
+      if (stepIndex < 0 || stepIndex >= this.steps.length) return;
+      
+      const step = this.steps[stepIndex];
+      const img = step.querySelector('img') as HTMLImageElement;
+      if (img && img.dataset.src) {
+        // 如果图片还没有加载，或者src为空，则加载它
+        if (!img.src || img.src === '' || img.src === window.location.href) {
           const preloadImg = new Image();
           preloadImg.onload = () => {
             img.src = img.dataset.src!;
           };
           preloadImg.src = img.dataset.src;
         }
-      });
+      }
     }
 
     goToStep(stepIndex: number): void {
@@ -936,6 +947,10 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
           targetStepElement.style.display = 'block';
           targetStepElement.style.setProperty('display', 'block', 'important');
         }
+        
+        // 懒加载：加载当前页和下一页的图片
+        this.loadStepImage(stepIndex);
+        this.loadStepImage(stepIndex + 1);
         
         this.showCurrentStepButton();
         this.updateCurrentStepStyle();
