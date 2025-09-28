@@ -21,15 +21,15 @@ Photo by Priscilla Du Preez on Unsplash
 * 商談（Opportunity）
 * 顧客管理
 
+この過程で、学生はNocoBaseで**データ構造や業務ロジックを柔軟に設計する**方法を学んだだけでなく、Salesforceとの機能の深さ、拡張性、限界の違いを比較分析しました。同時に、授業ではAppsmithやMicrosoft Power Appsも取り上げ、学生がさまざまなプラットフォームの長所と短所を比較できるようにしました。
 
+![sale force-d0zc7x.jpg](https://static-docs.nocobase.com/sale%20force-d0zc7x.jpg)
 
-  この過程で、学生はNocoBaseで**データ構造や業務ロジックを柔軟に設計する**方法を学んだだけでなく、Salesforceとの機能の深さ、拡張性、限界の違いを比較分析しました。同時に、授業ではAppsmithやMicrosoft Power Appsも取り上げ、学生がさまざまなプラットフォームの長所と短所を比較できるようにしました。
-
-  ![sale force-d0zc7x.jpg](https://static-docs.nocobase.com/sale%20force-d0zc7x.jpg)
 
 ## プロジェクト実践：低コードアプリ管理システム
 
-3週間の自由プロジェクト期間では、教師がNocoBaseを使って**「低コードアプリ管理システム」**を自作し、学生の開発プロセスをサポートすることにしました。
+3週間の自由プロジェクト期間では、教師がNocoBaseを使って**低コードアプリ管理システム**を自作し、学生の開発プロセスをサポートすることにしました。
+
 このシステムで学生は次のことができます:
 
 1. アプリで解決したい要件を登録する
@@ -37,11 +37,10 @@ Photo by Priscilla Du Preez on Unsplash
 3. アプリのページを管理する
 4. 業務ロジックのパターンを設計・実装する
 
+教師側では、全学生のプロジェクト詳細を一覧で確認でき、組み込みの採点・コメント機能でフィードバックを提供できます。これにより、**システムは授業管理ツールとして機能し、同時に完全なプロジェクト資料庫にもなっています**。
 
+![project work-b0sfhi.jpg](https://static-docs.nocobase.com/project%20work-b0sfhi.jpg)
 
-   教師側では、全学生のプロジェクト詳細を一覧で確認でき、組み込みの採点・コメント機能でフィードバックを提供できます。これにより、**システムは授業管理ツールとして機能し、同時に完全なプロジェクト資料庫にもなっています**。
-
-   ![project work-b0sfhi.jpg](https://static-docs.nocobase.com/project%20work-b0sfhi.jpg)
 
 ## 使用感とフィードバック
 
@@ -55,6 +54,7 @@ NocoBaseは授業での使い勝手が教師に高く評価されました:
 
 **もっと多くのカスタマーストーリー：**
 
+* [EDの技術基盤としてのNocoBase：内部システムから商用プロダクトまで](https://www.nocobase.com/ja/blog/ed)
 * [Classact の事例：Kubernetes 上の NocoBase で数十万件データを高速処理](https://www.nocobase.com/ja/blog/classact)
 * [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
 * [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
