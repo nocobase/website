@@ -21,30 +21,26 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 * Opportunities
 * Customer Management
 
+This exercise taught them how to **design data structures and business logic in NocoBase**, while comparing its feature depth, extensibility, and limitations against Salesforce. The course also included Appsmith and Microsoft Power Apps for a side-by-side comparison of strengths and trade-offs across platforms.
 
+![sale force-ubawcm.jpg](https://static-docs.nocobase.com/sale%20force-ubawcm.jpg)
 
-  This exercise taught them how to **design data structures and business logic in NocoBase**, while comparing its feature depth, extensibility, and limitations against Salesforce. The course also included Appsmith and Microsoft Power Apps for a side-by-side comparison of strengths and trade-offs across platforms.
+## Project Work: A Low-Code Application Manager
 
-  ![sale force-ubawcm.jpg](https://static-docs.nocobase.com/sale%20force-ubawcm.jpg)
-
-  ## Project Work: A Low-Code Application Manager
-
-  For a three-week project phase, the instructor built **a Low-Code Application Manager in NocoBase** to support the class. Within this system, students could:
+For a three-week project phase, the instructor built **a Low-Code Application Manager in NocoBase** to support the class. Within this system, students could:
 
 1. Register the requirements their apps aim to solve
 2. Configure data sources (tables or collections)
 3. Manage app pages
 4. Design and implement business-logic patterns
 
+On the instructor side, the system provided a consolidated view of all projects, plus grading and commenting workflows for feedback. **It served both as a teaching management tool and a project knowledge base**.
 
+![project work-x9z6fb.jpg](https://static-docs.nocobase.com/project%20work-x9z6fb.jpg)
 
-   On the instructor side, the system provided a consolidated view of all projects, plus grading and commenting workflows for feedback. **It served both as a teaching management tool and a project knowledge base**.
+## Experience and Feedback
 
-   ![project work-x9z6fb.jpg](https://static-docs.nocobase.com/project%20work-x9z6fb.jpg)
-
-   ## Experience and Feedback
-
-   The instructor reported positively on NocoBase in class:
+The instructor reported positively on NocoBase in class:
 
 * **Stability**: Ran smoothly across multiple sessions and projects.
 * **Architecture**: Flexible data modeling and a plugin-based design made the coursework easy to extend.
@@ -54,6 +50,7 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 
 **Related reading:**
 
+* [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
 * [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
 * [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
 * [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
