@@ -1,7 +1,7 @@
 ## Background
 
 In a course titled “Application Development with Low-Code Platforms” at a technical university in Germany, the instructor wanted students to go beyond theory and build real applications. The course used several low/no-code tools, with [NocoBase](http:www.nocobase.com/ "NocoBase") as the primary hands-on example.
-![9.28推文照片1-6dqzzp.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%871-6dqzzp.png)
+![9.28推文照片1-6dqzzp.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%871-6dqzzp.png)Photo by Priscilla Du Preez on Unsplash
 
 ## Quick Start: Task Management in the First Session
 
@@ -38,7 +38,6 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 * **Architecture**: Flexible data modeling and a plugin-based design made the coursework easy to extend.
 * **Room to improve**: Some capabilities depended on plugins that weren’t available, but practical workarounds were feasible.
 
-
-  ###### “Overall, I’m very satisfied with the platform and appreciate its design and stability.”
-
-  ###### — Professor, Technical University in Germany
+  > “Overall, I’m very satisfied with the platform and appreciate its design and stability.”
+  > — Professor, Technical University in Germany
+  >
