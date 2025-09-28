@@ -2,13 +2,15 @@
 
 ドイツのとある科技大学の授業「低コードプラットフォームを使ったアプリ開発」では、教師は学生が理論を学ぶだけでなく、実際のプラットフォームでアプリを構築できることを求めました。このため、授業ではさまざまな低コード/ノーコードツールを紹介し、その中で[NocoBase](http://www.nocobase.com/cn)が主要な事例として選ばれました。
 
+![Unsplash-jpdv1b.png](https://static-docs.nocobase.com/Unsplash-jpdv1b.png)
 
-![9.28推文照片1-wa780w.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%871-wa780w.png)Photo by Priscilla Du Preez on Unsplash
+Photo by Priscilla Du Preez on Unsplash
 
 ## 快速上手：タスク管理から始めよう
 
 最初の授業で、学生はいきなり実践に入りました——NocoBaseの基本チュートリアルに沿って、タスク管理アプリを構築するのです。たった1コマの授業で、データモデリングや画面設定の基本を習得し、低コードプラットフォームによる**「素早いプロトタイピング」**の体験を実感できました。
-![9.28推文照片2-xlcxze.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%872-xlcxze.png)
+
+![task management-sxzsq6.jpg](https://static-docs.nocobase.com/task%20management-sxzsq6.jpg)
 
 ## 深入探索：Salesforceの機能を再現する
 
@@ -19,7 +21,8 @@
 * 商談（Opportunity）
 * 顧客管理
   この過程で、学生はNocoBaseで**データ構造や業務ロジックを柔軟に設計する**方法を学んだだけでなく、Salesforceとの機能の深さ、拡張性、限界の違いを比較分析しました。同時に、授業ではAppsmithやMicrosoft Power Appsも取り上げ、学生がさまざまなプラットフォームの長所と短所を比較できるようにしました。
-  ![9.28推文照片3-oxog8w.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%873-oxog8w.png)
+
+  ![sale force-d0zc7x.jpg](https://static-docs.nocobase.com/sale%20force-d0zc7x.jpg)
 
 ## プロジェクト実践：低コードアプリ管理システム
 
@@ -31,7 +34,8 @@
 3. アプリのページを管理する
 4. 業務ロジックのパターンを設計・実装する
    教師側では、全学生のプロジェクト詳細を一覧で確認でき、組み込みの採点・コメント機能でフィードバックを提供できます。これにより、**システムは授業管理ツールとして機能し、同時に完全なプロジェクト資料庫にもなっています**。
-   ![9.28推文照片4-sjzbqx.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%874-sjzbqx.png)
+
+   ![project work-b0sfhi.jpg](https://static-docs.nocobase.com/project%20work-b0sfhi.jpg)
 
 ## 使用感とフィードバック
 
@@ -43,3 +47,12 @@ NocoBaseは授業での使い勝手が教師に高く評価されました:
 
 > 「全体的に、このプラットフォームにはとても満足しています。設計と安定性の高さに感謝します」
 > ——ドイツの某科技大学教授
+
+**もっと多くのカスタマーストーリー：**
+
+* [Classact の事例：Kubernetes 上の NocoBase で数十万件データを高速処理](https://www.nocobase.com/ja/blog/classact)
+* [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
+* [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
+* [なぜ日本の大手不動産会社はSalesforceからオープンソースのNocoBaseに乗り換えたのか？](https://www.nocobase.com/ja/blog/century-21)
+* [ノーコードでここまでできる！家具工場のERP構築ストーリー](https://www.nocobase.com/ja/blog/olmon)
+* [SHIMANOの現場から始まるノーコードの旅](https://www.nocobase.com/ja/blog/shimano)
