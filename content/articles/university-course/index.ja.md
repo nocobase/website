@@ -2,6 +2,7 @@
 
 ドイツのとある科技大学の授業「低コードプラットフォームを使ったアプリ開発」では、教師は学生が理論を学ぶだけでなく、実際のプラットフォームでアプリを構築できることを求めました。このため、授業ではさまざまな低コード/ノーコードツールを紹介し、その中で[NocoBase](http://www.nocobase.com/cn)が主要な事例として選ばれました。
 
+
 ![9.28推文照片1-wa780w.png](https://static-docs.nocobase.com/9.28%E6%8E%A8%E6%96%87%E7%85%A7%E7%89%871-wa780w.png)Photo by Priscilla Du Preez on Unsplash
 
 ## 快速上手：タスク管理から始めよう
