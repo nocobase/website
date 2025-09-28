@@ -22,6 +22,7 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 * Customer Management
 
 
+
   This exercise taught them how to **design data structures and business logic in NocoBase**, while comparing its feature depth, extensibility, and limitations against Salesforce. The course also included Appsmith and Microsoft Power Apps for a side-by-side comparison of strengths and trade-offs across platforms.
 
   ![sale force-ubawcm.jpg](https://static-docs.nocobase.com/sale%20force-ubawcm.jpg)
@@ -34,6 +35,7 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 2. Configure data sources (tables or collections)
 3. Manage app pages
 4. Design and implement business-logic patterns
+
 
 
    On the instructor side, the system provided a consolidated view of all projects, plus grading and commenting workflows for feedback. **It served both as a teaching management tool and a project knowledge base**.
