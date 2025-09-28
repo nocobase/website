@@ -4,7 +4,7 @@
   "title_cn": "NocoBase 在大学课程中的应用",
   "title_ja": "NocoBase の大学課程における応用",
   "description": "Using NocoBase as a classroom tool to guide students in building applications from scratch, bridging the gap between low-code theory and practice.",
-  "description_cn": "以NocoBase为课堂工具，带领学生从零搭建应用，实现从低代码理论到实践的跨越。",
+  "description_cn": "以 NocoBase 为课堂工具，带领学生从零搭建应用，实现从低代码理论到实践的跨越。",
   "description_ja": "NocoBaseを授業ツールとして活用し、学生がアプリを一から構築する過程を導くことで、ローコードの理論と実践の間の架け橋を築きます。",
   "slug": "university-course",
   "publishedAt": "2025-09-28T04:36:41.166Z",
@@ -192,5 +192,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-28T09:35:14.123Z"
+  "updatedAt": "2025-09-28T09:47:16.547Z"
 }
