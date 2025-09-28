@@ -22,6 +22,7 @@ Photo by Priscilla Du Preez on Unsplash
 * 顧客管理
 
 
+
   この過程で、学生はNocoBaseで**データ構造や業務ロジックを柔軟に設計する**方法を学んだだけでなく、Salesforceとの機能の深さ、拡張性、限界の違いを比較分析しました。同時に、授業ではAppsmithやMicrosoft Power Appsも取り上げ、学生がさまざまなプラットフォームの長所と短所を比較できるようにしました。
 
   ![sale force-d0zc7x.jpg](https://static-docs.nocobase.com/sale%20force-d0zc7x.jpg)
@@ -35,6 +36,7 @@ Photo by Priscilla Du Preez on Unsplash
 2. 使うデータソース（テーブルやコレクション）を設定する
 3. アプリのページを管理する
 4. 業務ロジックのパターンを設計・実装する
+
 
 
    教師側では、全学生のプロジェクト詳細を一覧で確認でき、組み込みの採点・コメント機能でフィードバックを提供できます。これにより、**システムは授業管理ツールとして機能し、同時に完全なプロジェクト資料庫にもなっています**。
