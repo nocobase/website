@@ -42,13 +42,12 @@ In later sessions, students used NocoBase to re-implement core Salesforce module
 
 * **Stability**: Ran smoothly across multiple sessions and projects.
 * **Architecture**: Flexible data modeling and a plugin-based design made the coursework easy to extend.
-* **Room to improve**: Some capabilities depended on plugins that weren’t available, but practical workarounds were feasible.
 
-  > “Overall, I’m very satisfied with the platform and appreciate its design and stability.”
-  > — Professor, Technical University in Germany
-  >
+> “Overall, I’m very satisfied with the platform and appreciate its design and stability.”
+> — Professor, Technical University in Germany
 
-  **Related reading:**
+**Related reading:**
+
 * [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
 * [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
 * [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
