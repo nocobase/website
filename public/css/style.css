@@ -6892,6 +6892,11 @@ body[data-layout-mode=dark] .mode-light {
   height: auto;
   object-fit: contain;
 }
+.demo-title-ai-avatar {
+  width: 30px;
+  height: 30px;
+  margin-top: -12px;
+}
 .pb-6 {
   padding-bottom: 5rem; 
 }
