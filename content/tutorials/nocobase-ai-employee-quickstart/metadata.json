@@ -1,0 +1,31 @@
+{
+  "id": 32,
+  "title": "NocoBase AI Employees Guide",
+  "title_cn": "NocoBase AI员工快速启动指南",
+  "title_ja": null,
+  "description": "Complete guide to NocoBase AI Employee system: master\narchitecture, configuration, and prompt engineering in one place.",
+  "description_cn": "AI员工系统完整指南：架构原理、配置方法、提示词技巧一站式掌握。",
+  "description_ja": null,
+  "slug": "nocobase-ai-employee-quickstart",
+  "publishedAt": "2025-09-29T09:09:21.315Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-09-29T09:07:43.107Z",
+    "updatedAt": "2025-09-29T09:08:37.691Z",
+    "description": null,
+    "description_cn": null,
+    "id": 7,
+    "title": "AI employee",
+    "title_cn": "AI 员工",
+    "status": "drafted",
+    "sort": 50,
+    "slug": "ai-employee",
+    "title_ja": null,
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 1,
+  "keywords": [],
+  "updatedAt": "2025-09-29T09:21:11.110Z"
+}
