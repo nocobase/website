@@ -2,35 +2,247 @@
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 
-const title = "NocoBase Partners";
-const description = "Find NocoBase certified partners worldwide for professional technical support and consulting services.";
-const keywords = "NocoBase,Partners,Technical Support,Consulting Services";
+const title = "NocoBase Service Partners";
+const description =
+  "Discover NocoBase certified service partners around the world and get professional technical support and consulting.";
+const keywords = "NocoBase, partners, service partners, technical support, consulting";
 
-// Partner data grouped by continent
 const partnersByContinent = [
   {
     continent: "Asia",
     partners: [
       {
-        name: "NocoBase China",
-        location: "China·Beijing",
-        description: "Official NocoBase team providing comprehensive product support and consulting services",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://cn.nocobase.com",
-        services: ["Product Development", "Technical Consulting", "Training Services", "Custom Development"],
-        contact: "hello@nocobase.com",
+        id: "82",
+        name: "Shanghai Uoqian Information Technology Co., Ltd. (SeaDocker)",
+        location: "China · Shanghai",
+        description:
+          "SeaDocker is Uoqian's one-stop cross-border e-commerce service platform, providing full-process support from order aggregation and warehousing/logistics to global cross-border services. Based on NocoBase, they built a multilingual, multi-entity, multi-role super cross-border OA system for global collaboration across finance, HR, etc.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/攸迁logo-u6g63u.svg",
+        website: "www.seadocker.com",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Enterprise Resource Planning (ERP)", "Warehouse & Inventory (WMS / Inventory)", "Office Automation (OA)"] },
+          { category: "Industry Solutions", sub: ["Retail / E-commerce"] }
+        ],
+        contact: "leon@uoqian.com",
+        cn: true,
         certified: true,
-        featured: true
+        featured: false
       },
       {
-        name: "TechPartner Asia",
-        location: "Singapore",
-        description: "Technology partner specializing in enterprise digital transformation with rich enterprise-level project experience",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["System Integration", "Data Migration", "Technical Training"],
-        contact: "contact@techpartner.sg",
+        id: "22",
+        name: "Zhengzhou Guangliangzi Information Technology Co., Ltd.",
+        location: "China · Zhengzhou",
+        description:
+          "Empowering campus management with no-code technology to reduce costs and increase efficiency. Built teacher honors registration and performance appraisal systems on NocoBase for fully online workflows.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/logo-94chjl.jpg",
+        website: "",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          {
+            category: "Enterprise Systems",
+            sub: ["Booking & Scheduling", "Business Process Management (BPM)", "Content Management System (CMS)", "Customer Relationship Management (CRM)", "Office Automation (OA)", "Warehouse & Inventory (WMS / Inventory)"]
+          },
+          { category: "Industry Solutions", sub: ["Education", "Government & Public Services", "IT & Software", "Construction & Real Estate"] }
+        ],
+        contact: "zhaobo@guanglz.cn",
+        cn: true,
         certified: true,
+        featured: false
+      },
+      {
+        id: "271",
+        name: "Shenzhen Chuanglianyun Technology Co., Ltd.",
+        location: "China · Shenzhen",
+        description: "Focused on digital services for government & public sectors, offering NocoBase deployment, plugin development, and on-prem support.",
+        logo: "https://www.chuanglianyun.cn/upload/%E5%88%9B%E8%81%94%E4%BA%91%20logo.png",
+        website: "https://www.chuanglianyun.cn/",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Industry Solutions", sub: ["Government & Public Services"] }
+        ],
+        contact: "jason@chuanglianyun.cn",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "199",
+        name: "Shanghai Aokun Information Technology Co., Ltd.",
+        location: "China · Shanghai",
+        description: "A comprehensive engineering services provider in aviation. Built an internal civil aviation regulation BPM system on NocoBase.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/六边鹰logo-英字-蓝色(copy)-szo4yi.png",
+        website: "https://www.aerok.com.cn",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Business Process Management (BPM)"] },
+          { category: "Industry Solutions", sub: ["Aviation"] }
+        ],
+        contact: "wu.chaoqian@aerok.com.cn",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "93",
+        name: "Anhui Youchao Digital Intelligence Information Technology Co., Ltd.",
+        location: "China · Wuhu, Anhui",
+        description:
+          "Digital transformation expert for construction, deeply integrating BIM, GIS, and IoT. Delivered a railway safety penetrative management system in 1 week and fully delivered in 2 months.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/有巢数智%20主LOGO-nkke01.png",
+        website: "http://www.youchaoyun.com",
+        services: [
+          { category: "Service Types", sub: ["Custom Development", "Maintenance & Support", "Plugin / Extension Development", "Product Development", "System Integration"] },
+          {
+            category: "Enterprise Systems",
+            sub: ["Customer Relationship Management (CRM)", "Enterprise Resource Planning (ERP)", "Finance & Accounting", "Human Resource Management (HRM)", "Manufacturing (MES / Orders)", "Office Automation (OA)", "Project & Collaboration (PM / Collaboration)", "Warehouse & Inventory (WMS / Inventory)"]
+          },
+          { category: "Industry Solutions", sub: ["Manufacturing", "Construction & Real Estate"] }
+        ],
+        contact: "wxf@youchaoyun.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "38",
+        name: "Shanghai Xuli Information Technology Co., Ltd.",
+        location: "China · Shanghai",
+        description:
+          "A fintech and commercial data services company. Built an investment bank expert database on NocoBase 1.5 with data permissions and expert profiles.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/logo-xnpryg.png",
+        website: "http://www.stander-info.com",
+        services: [
+          { category: "Service Types", sub: ["Deployment (Cloud / On-prem)", "Data Migration", "Product Development", "System Integration", "Technical Consulting"] },
+          { category: "Enterprise Systems", sub: ["Customer Relationship Management (CRM)", "E-commerce / Retail (Membership / Distribution)", "Human Resource Management (HRM)"] },
+          { category: "Industry Solutions", sub: ["Financial Services", "Government & Public Services", "Retail / E-commerce"] }
+        ],
+        contact: "lifeye.yu@stander-info.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "43",
+        name: "Jiangsu Orchisky Software Technology Co., Ltd.",
+        location: "China · Jiangsu",
+        description: "End-to-end digital factory solutions for SMEs in manufacturing. Built a scalable WMS on NocoBase.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/资源 8-xp5mv0.png",
+        website: "http://www.orchisky.com/",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Warehouse & Inventory (WMS / Inventory)"] },
+          { category: "Industry Solutions", sub: ["Manufacturing"] }
+        ],
+        contact: "haifeng.feng@orchisky.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "78",
+        name: "3iWOM (Guangzhou) Information Technology Co., Ltd.",
+        location: "China · Guangzhou",
+        description:
+          "Digital transformation consulting and custom services for mid-to-large enterprises in the Greater Bay Area, with deep experience in real estate, retail, and manufacturing; serving multiple Fortune 500 companies.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/3iwom%20logo-x39lp5.jpg",
+        website: "https://www.3iwom.com",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          {
+            category: "Enterprise Systems",
+            sub: ["Business Process Management (BPM)", "Customer Relationship Management (CRM)", "E-commerce / Retail (Membership / Distribution)", "Enterprise Resource Planning (ERP)", "Finance & Accounting", "Human Resource Management (HRM)", "Manufacturing (MES / Orders)", "Office Automation (OA)", "Project & Collaboration (PM / Collaboration)", "Real Estate / Property Management", "Warehouse & Inventory (WMS / Inventory)"]
+          },
+          { category: "Industry Solutions", sub: ["Government & Public Services", "Healthcare", "IT & Software", "Manufacturing", "Media & Entertainment", "Construction & Real Estate", "Retail / E-commerce"] }
+        ],
+        contact: "forest@3iwom.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "81",
+        name: "Hunan Feiyu Wujie Technology Co., Ltd.",
+        location: "China · Changsha, Hunan (Wangcheng District)",
+        description:
+          "Integrated no-code platform development and implementation services to visualize processes, digitize management, and enable agile innovation.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/微信图片_20250615231905_副本_副本-zto0bj.png",
+        website: "http://mc1122.wicp.net:8088/",
+        services: [
+          { category: "Service Types", sub: ["Deployment (Cloud / On-prem)", "Custom Development", "Maintenance & Support", "Product Development", "System Integration"] },
+          {
+            category: "Enterprise Systems",
+            sub: ["Booking & Scheduling", "Business Process Management (BPM)", "Content Management System (CMS)", "Customer Relationship Management (CRM)", "E-commerce / Retail (Membership / Distribution)", "Education (LMS / Students)", "Enterprise Resource Planning (ERP)", "Finance & Accounting", "Healthcare (EMR / Patient Management)", "Human Resource Management (HRM)", "Manufacturing (MES / Orders)", "Nonprofit (Donations / Events)", "Office Automation (OA)", "Project & Collaboration (PM / Collaboration)", "Real Estate / Property Management", "Warehouse & Inventory (WMS / Inventory)"]
+          },
+          { category: "Industry Solutions", sub: ["Education", "Financial Services", "Government & Public Services", "Healthcare", "IT & Software", "Manufacturing", "Media & Entertainment", "Construction & Real Estate", "Retail / E-commerce"] }
+        ],
+        contact: "249413181@qq.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "1000159",
+        name: "Purple Bridge Sdn Bhd",
+        location: "Malaysia · Kuala Lumpur",
+        description: "Automation consulting and solution development to boost productivity and efficiency through tailored systems.",
+        logo: "https://purplebridge.com.my/wp-content/uploads/2025/05/logor-1.png#149",
+        website: "https://www.purplebridge.my",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Business Process Management (BPM)", "Finance & Accounting", "Project & Collaboration (PM / Collaboration)", "Warehouse & Inventory (WMS / Inventory)"] },
+          { category: "Industry Solutions", sub: ["Financial Services", "Healthcare", "Manufacturing", "Retail / E-commerce"] }
+        ],
+        contact: "charles@purplebridge.my",
+        certified: true,
+        featured: false
+      },
+      {
+        id: "1000102",
+        name: "RakuCloud Co., Ltd.",
+        location: "Japan · Tokyo",
+        description: "Billing, approval, and notification workflows for SMEs and startups, built on NocoBase.",
+        logo: "https://static.wixstatic.com/media/aa943a_bfc9ee216d94418e9ed31b967d0f8444~mv2.png",
+        website: "https://www.rakucloud.co.jp/",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Customer Relationship Management (CRM)", "Billing Management"] },
+          { category: "Industry Solutions", sub: ["Digital Advertising", "IT & Software", "Manufacturing"] }
+        ],
+        contact: "jia@rakucloud.com",
+        certified: false,
+        featured: false
+      },
+      {
+        id: "1000113",
+        name: "Housewell Co., Ltd.",
+        location: "Japan · Saitama (Ōmiya, Saitama City)",
+        description: "DX consulting, solution design, implementation, and operations for real estate and other industries with on-site perspective.",
+        logo: "https://housewell-group.jp/assets/image/common/header/logo.webp",
+        website: "https://housewell-group.jp/",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Content Management System (CMS)", "Customer Relationship Management (CRM)", "Human Resource Management (HRM)", "Real Estate / Property Management"] },
+          { category: "Industry Solutions", sub: ["Construction & Real Estate"] }
+        ],
+        contact: "nakazawa@housewell.co.jp",
+        certified: false,
+        featured: false
+      },
+      {
+        id: "",
+        name: "Appnicorn Sdn Bhd",
+        location: "Malaysia · Kuala Lumpur",
+        description: "Technical team focused on modular systems and low-code; experienced in NocoBase implementation and custom development.",
+        logo: "https://service-cn.nocobase.com/storage/uploads/cropped-Appnicorn_CompanyLogo-9zbmlc.png",
+        website: "https://appnicorn.com",
+        services: [
+          { category: "Service Types", sub: ["Deployment (Cloud / On-prem)", "Custom Development", "Data Migration", "Maintenance & Support", "Plugin / Extension Development", "System Integration", "Technical Consulting"] },
+          { category: "Enterprise Systems", sub: ["Customer Relationship Management (CRM)", "Enterprise Resource Planning (ERP)", "Finance & Accounting", "Project & Collaboration (PM / Collaboration)", "Warehouse & Inventory (WMS / Inventory)"] },
+          { category: "Industry Solutions", sub: ["Education", "Government & Public Services", "Manufacturing", "Retail / E-commerce"] }
+        ],
+        contact: "wing@appnicorn.com.my",
+        certified: false,
         featured: false
       }
     ]
@@ -39,30 +251,60 @@ const partnersByContinent = [
     continent: "Europe",
     partners: [
       {
-        name: "European NocoBase Solutions",
-        location: "Germany·Berlin",
-        description: "Providing NocoBase solutions for European enterprises, focusing on GDPR compliance and localization services",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["Localization Services", "Technical Support", "Training", "GDPR Compliance"],
-        contact: "info@nocobase.eu",
-        certified: true,
+        id: "1000128",
+        name: "NIT Solutions B.V.",
+        location: "Netherlands · Gorinchem",
+        description: "Consulting, implementation, and ongoing optimization of CRM systems aligned with business processes.",
+        logo: "https://nitsolutions.b-cdn.net/wp-content/uploads/2025/01/logo-nit-solutions.png",
+        website: "https://nit.solutions",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support"] },
+          { category: "Enterprise Systems", sub: ["Customer Relationship Management (CRM)"] },
+          { category: "Industry Solutions", sub: ["Manufacturing", "Construction & Real Estate", "Retail / E-commerce"] }
+        ],
+        contact: "dion@nitsolutions.nl",
+        certified: false,
         featured: false
       }
     ]
   },
   {
-    continent: "North America",
+    continent: "South America",
     partners: [
       {
-        name: "NocoBase Americas",
-        location: "USA·San Francisco",
-        description: "NocoBase certified service provider in North America, serving Fortune 500 companies",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["Enterprise Consulting", "System Implementation", "Technical Support", "Cloud Deployment"],
-        contact: "contact@nocobase.us",
-        certified: true,
+        id: "1000177",
+        name: "ED",
+        location: "Brazil · Rio de Janeiro",
+        description:
+          "ED has 120+ consultants across multiple stacks, delivering digital management and efficiency for education, finance, government, healthcare, and more.",
+        logo: "https://ed.dev.br/data/files/ED/B2/BC/58/5FC2091051FD7009600808A8/logo-ed.png",
+        website: "https://ed.dev.br",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support", "Plugin / Extension Development"] },
+          {
+            category: "Enterprise Systems",
+            sub: [
+              "Booking & Scheduling",
+              "Business Process Management (BPM)",
+              "Content Management System (CMS)",
+              "Customer Relationship Management (CRM)",
+              "E-commerce / Retail (Membership / Distribution)",
+              "Education (LMS / Students)",
+              "Finance & Accounting",
+              "Healthcare (EMR / Patient Management)",
+              "Manufacturing (MES / Orders)",
+              "Project & Collaboration (PM / Collaboration)",
+              "Real Estate / Property Management",
+              "Warehouse & Inventory (WMS / Inventory)"
+            ]
+          },
+          {
+            category: "Industry Solutions",
+            sub: ["Education", "Financial Services", "Government & Public Services", "Healthcare", "IT & Software", "Manufacturing", "Media & Entertainment", "Construction & Real Estate", "Retail / E-commerce"]
+          }
+        ],
+        contact: "leandro.postaue@ed.dev.br",
+        certified: false,
         featured: false
       }
     ]
@@ -71,127 +313,377 @@ const partnersByContinent = [
     continent: "Oceania",
     partners: [
       {
-        name: "Australia-New Zealand NocoBase Services",
-        location: "Australia·Sydney",
-        description: "NocoBase technology partner serving Australia and New Zealand, providing localized technical support",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["Localized Deployment", "Technical Consulting", "Maintenance Support"],
-        contact: "info@nocobase.au",
+        id: "1000158",
+        name: "Engineering Business Services Limited",
+        location: "Vanuatu · Port Vila",
+        description:
+          "Rooted in Vanuatu since 2015, EBS provides end-to-end IT services from system design to operations, including SLA contracts and 24×7 support.",
+        logo: "https://ebs-vanuatu.com/wp-content/uploads/2021/05/EBS-LOGO-seul-smol-soml.png",
+        website: "https://ebs-vanuatu.com",
+        services: [
+          { category: "Service Types", sub: ["Deployment & Implementation", "Custom Development", "Technical Support", "Maintenance & Support"] },
+          { category: "Enterprise Systems", sub: ["Business Process Management (BPM)", "Content Management System (CMS)", "E-commerce / Retail (Membership / Distribution)", "Project & Collaboration (PM / Collaboration)"] },
+          { category: "Industry Solutions", sub: ["Financial Services", "IT & Software"] }
+        ],
+        contact: "arnaud@ebs-vanuatu.com",
         certified: false,
         featured: false
       }
     ]
   }
 ];
+
+// ✅ Normalizer
+const normalize = (s: string) => (s || "").trim();
+
+const filterCategoriesMap = {
+  "Service Types": new Set<string>(),
+  "Enterprise Systems": new Set<string>(),
+  "Industry Solutions": new Set<string>(),
+};
+
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((partner) => {
+    partner.services.forEach((service) => {
+      const cat = normalize(service.category);
+
+      // Only collect sub-items for Enterprise Systems / Industry Solutions
+      if (cat === "Enterprise Systems") {
+        service.sub.forEach((sub) => {
+          const item = normalize(sub);
+          if (item) filterCategoriesMap["Enterprise Systems"].add(item);
+        });
+        return;
+      }
+
+      if (cat === "Industry Solutions") {
+        service.sub.forEach((sub) => {
+          const item = normalize(sub);
+          if (item) filterCategoriesMap["Industry Solutions"].add(item);
+        });
+        return;
+      }
+
+      // Everything else goes under "Service Types": the category itself + its sub-items
+      if (cat && cat !== "Service Types") {
+        filterCategoriesMap["Service Types"].add(cat);
+      }
+      service.sub.forEach((sub) => {
+        const item = normalize(sub);
+        if (item) filterCategoriesMap["Service Types"].add(item);
+      });
+    });
+  });
+});
+
+// Convert to array and remove empties / self references
+const filterCategories = Object.entries(filterCategoriesMap).map(([title, set]) => ({
+  title,
+  items: Array.from(set).filter((it) => it && it !== title),
+}));
+
+// Sidebar counts per sub-item (e.g., Deployment, CRM, ERP, …)
+const itemCountMap: Record<string, number> = {};
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((p) => {
+    const seen = new Set<string>();
+    p.services.forEach((s) => {
+      s.sub.forEach((raw) => {
+        const sub = (raw || "").trim();
+        if (!sub || seen.has(sub)) return;
+        seen.add(sub);
+        itemCountMap[sub] = (itemCountMap[sub] || 0) + 1;
+      });
+    });
+  });
+});
+
+// Country list
+const countries = Array.from(
+  new Set(
+    partnersByContinent.flatMap((region) =>
+      region.partners.map((p) => p.location.split("·")[0].trim()),
+    ),
+  ),
+);
+
+// Flatten services (kept here if you need it later)
+const serviceCountMap = {};
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((p) => {
+    p.services.forEach((s) => {
+      serviceCountMap[s] = (serviceCountMap[s] || 0) + 1;
+    });
+  });
+});
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
+
   <!-- Start Partners -->
   <section class="section">
     <div class="container">
       <div class="row">
         <!-- Sidebar -->
-        <div class="col-lg-3 col-md-4">
-          <div class="card border-0 shadow rounded sticky-bar" style="z-index: 1;">
-            <div class="card-body">
+        <div class="col-lg-2 col-md-3">
+          <div class="card border-0 rounded sticky-bar" style="z-index: 1;">
+            <div>
               <h6 class="text-dark">Quick Navigation</h6>
-              <ul class="list-unstyled sidebar-nav-list mb-0">
+              <ul class="list-unstyled sidebar-nav-list mb-4">
                 {partnersByContinent.map((region) => (
                   <li>
                     <a href={`#${region.continent}`} class="text-muted">
-                      <i class="uil uil-globe me-2"></i>{region.continent}
+                      <i class="uil uil-globe me-2"></i>
+                      {region.continent}
                     </a>
                   </li>
                 ))}
               </ul>
+
+              {/* Filter sections */}
+              {filterCategories.map((category) => (
+                <div class="filter-section">
+                  <h6 class="filter-title">
+                    <span>{category.title}</span>
+                    {(category.title === "Enterprise Systems" ||
+                      category.title === "Industry Solutions") && (
+                      <i
+                        class="uil uil-info-circle info-right text-muted small sub-alarm"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title={
+                          category.title === "Enterprise Systems"
+                            ? "Mature products available for direct delivery and deployment"
+                            : "Industry experience for tailored implementations"
+                        }
+                      ></i>
+                    )}
+                  </h6>
+
+                  <div class="filter-options">
+                    {category.items.map((item) => {
+                      const count = itemCountMap[item] || 0;
+                      return (
+                        <a
+                          role="button"
+                          class="filter-link"
+                          data-filter-type="service"
+                          data-filter-value={item}
+                          data-active="false"
+                        >
+                          <input type="checkbox" value={item} style="margin-right: 8px;" />
+                          {item} <span class="filter-count">({count})</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+
               <div class="mt-4">
-                <a href="#become-partner" class="btn btn-primary w-100" style="font-size: 0.85rem; padding: 8px 12px;">Become a Partner</a>
+                <a href="#become-partner" class="btn btn-primary btn-sm w-100">Become a Partner</a>
               </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+        {/* end col */}
 
-        <!-- Main Content -->
+        <!-- Main content -->
         <div class="col-lg-9 col-md-8">
           <div class="ms-lg-4">
-            <div class="mb-4">
-              <p class="text-muted mb-0">
-                We partner with excellent technology partners worldwide to provide you with professional NocoBase implementation, custom development, technical support and training services.
-                No matter where you are in the world, you can find nearby professional partners to help you.
+            <div class="mb-4 d-flex justify-content-between align-items-start">
+              <p class="text-muted mb-0 me-3">
+                We work with excellent service partners worldwide to provide professional NocoBase implementation,
+                custom development, technical support, and training. Wherever you are, you can find a nearby expert to help.
               </p>
+
+              <a id="nocobase"
+                href="https://service-en.nocobase.com/public-forms/q7pbwgd4xr7?partnerId=nocobase"
+                class="btn btn-primary btn-sm btn-help text-nowrap"
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                title="If you’re not sure which partner to choose, or want to contact us directly, please click here.">
+                <i class="uil uil-message me-1"></i>
+                Help
+              </a>
             </div>
 
+            {/* Search & filters */}
+            <div class="partners-header mb-4 sticky-search" style="z-index: 1;">
+              <div class="row align-items-center g-3">
+                {/* Search box */}
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="search-container">
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search partners..."
+                        id="partnerSearch"
+                        style="padding-left: 40px;"
+                      />
+                      <i
+                        class="uil uil-search position-absolute"
+                        style="left: 12px; top: 50%; transform: translateY(-50%); color: #6c757d; font-size: 18px;"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-12 text-center"></div>
+
+                {/* Country filter */}
+                <div class="col-lg-3 col-md-3 col-12 text-end">
+                  <div class="plugins-sort">
+                    <select class="form-select form-select-sm">
+                      <option value="">Choose a country</option>
+                      {countries.map((country) => (
+                        <option value={country}>{country}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Partners Content */}
             {partnersByContinent.map((region) => (
-              <div class="mt-5" id={region.continent}>
+              <div class="mt-4" id={region.continent}>
                 <h4 class="text-primary mb-4">
-                  <i class="uil uil-globe me-2"></i>{region.continent}
+                  <i class="uil uil-globe me-2"></i>
+                  {region.continent}
                 </h4>
+
                 <div class="row">
-                  {region.partners.map((partner) => (
-                    <div class="col-lg-6 col-md-6 mb-4">
-                      <div class="card border shadow-sm h-100">
-                        <div class="card-body">
-                          <div class="mb-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                              <div class="partner-logo">
-                                <img 
-                                  src={partner.logo} 
-                                  alt={partner.name}
-                                  style="max-height: 45px; max-width: 140px; object-fit: contain;"
-                                  loading="lazy"
-                                />
+                  {region.partners.map((partner) => {
+                    // Normalize website URL and show button only if present
+                    const raw = partner.website || "";
+                    const trimmed = raw.trim();
+                    const websiteUrl = trimmed
+                      ? (trimmed.startsWith("http://") || trimmed.startsWith("https://")
+                        ? trimmed
+                        : `https://${trimmed}`)
+                      : "";
+
+                    return (
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div
+                          class="card border shadow-sm h-100 partner-card w-100"
+                          data-name={partner.name}
+                          data-country={partner.location.split("·")[0].trim()}
+                          data-services={encodeURIComponent(
+                            JSON.stringify(partner.services.flatMap((s) => s.sub.map((x) => x.trim()))),
+                          )}
+                        >
+                          <div class="card-body">
+                            <div class="mb-4">
+                              <div class="d-flex align-items-center justify-content-between mb-3">
+                                {partner.name === "Purple Bridge Sdn Bhd" ? (
+                                  <div class="partner-logo" style="background: #050d42;">
+                                    <img src={partner.logo} alt={partner.name} loading="lazy" />
+                                  </div>
+                                ) : (
+                                  <div class="partner-logo">
+                                    <img src={partner.logo} alt={partner.name} loading="lazy" />
+                                  </div>
+                                )}
+
+                                {partner.certified && (
+                                  <span
+                                    class="badge bg-soft-success text-success"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Officially certified by NocoBase to provide recognized professional services"
+                                  >
+                                    <i class="uil uil-check-circle me-1"></i>
+                                    Certified
+                                  </span>
+                                )}
                               </div>
-                              {partner.certified && (
-                                <span class="badge bg-soft-success text-success">
-                                  <i class="uil uil-check-circle me-1"></i>Certified
-                                </span>
-                              )}
+
+                              <div class="mt-3">
+                                <h6 class="mb-1">{partner.name}</h6>
+                                <small class="text-muted">
+                                  <i class="uil uil-map-marker me-1"></i>
+                                  {partner.location}
+                                </small>
+                              </div>
                             </div>
-                            <div class="mt-3">
-                              <h6 class="mb-1">{partner.name}</h6>
-                              <small class="text-muted">
-                                <i class="uil uil-map-marker me-1"></i>{partner.location}
-                              </small>
-                            </div>
-                          </div>
-                          <p class="text-muted mb-3">{partner.description}</p>
-                          
-                          <div class="mb-3">
-                            <h6 class="text-dark mb-2">Services:</h6>
-                            <div class="d-flex flex-wrap gap-1">
-                              {partner.services.map((service) => (
-                                <span class="badge bg-soft-primary text-primary">{service}</span>
-                              ))}
-                            </div>
-                          </div>
-                          
-                          <div class="pt-3 border-top">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <a href={`mailto:${partner.contact}`} class="btn btn-sm btn-outline-primary">
-                                <i class="uil uil-envelope me-1"></i>Contact Us
-                              </a>
-                              <a href={partner.website} target="_blank" class="btn btn-sm btn-soft-primary">
-                                <i class="uil uil-external-link-alt me-1"></i>Website
-                              </a>
+
+                            <p class="text-muted mb-3">{partner.description}</p>
+
+                            {(() => {
+                              const subs =
+                                partner.services
+                                  .filter((s) => s.category === "Service Types")
+                                  .flatMap((s) => (s.sub || []).map((x) => x.trim()))
+                                  .filter(Boolean);
+
+                              const uniqueSubs = Array.from(new Set(subs));
+
+                              if (!uniqueSubs.length) return null;
+
+                              return (
+                                <div class="mb-3 services-block">
+                                  <h6 class="text-dark mb-2">Services:</h6>
+                                  <div class="services-tags">
+                                    {uniqueSubs.map((item) => (
+                                      <span class="badge bg-soft-primary text-primary">{item}</span>
+                                    ))}
+                                  </div>
+                                </div>
+                              );
+                            })()}
+
+                            <div class="pt-3 border-top card-actions">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <a
+                                  href={`${
+                                    partner.cn
+                                      ? "https://service-cn.nocobase.com/public-forms/ivcvb4f8lpe"
+                                      : "https://service-en.nocobase.com/public-forms/ivcvb4f8lpe"
+                                  }?partnerId=${encodeURIComponent(partner.id)}`}
+                                  class="btn btn-sm btn-outline-primary"
+                                >
+                                  <i class="uil uil-envelope me-1"></i>
+                                  Contact this partner
+                                </a>
+
+                                {websiteUrl && (
+                                  <a href={websiteUrl} target="_blank" class="btn btn-sm btn-soft-primary">
+                                    <i class="uil uil-external-link-alt me-1"></i>
+                                    Website
+                                  </a>
+                                )}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End Partners -->
 
-  <!-- Become Partner Start -->
+            {/* No results */}
+            <div class="no-results text-center py-5" id="no-result-message" style="display: none;">
+              <i class="uil uil-search text-muted" style="font-size: 3rem;"></i>
+              <h5 class="mt-3 text-muted">No partners match your filters</h5>
+              <p class="text-muted">Try adjusting your search or filters.</p>
+            </div>
+          </div>
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
+    </div>
+    {/* end container */}
+  </section>
+  {/* End Partners */}
+
+  {/* Become Partner Start */}
   <section class="section bg-light" id="become-partner">
     <div class="container">
       <div class="row justify-content-center">
@@ -199,12 +691,13 @@ const partnersByContinent = [
           <div class="section-title text-center mb-4 pb-2">
             <h4 class="title mb-4">Become a NocoBase Partner</h4>
             <p class="para-desc mx-auto text-muted mb-0">
-              If you are a professional technology partner and would like to become a NocoBase partner,
-              we welcome you to join us. We will provide you with technical support, training resources and marketing support.
+              If you offer professional services and would like to join the NocoBase Partner Program, we warmly welcome you. We provide technical support, training resources, and marketing exposure to help you grow.
             </p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -212,65 +705,69 @@ const partnersByContinent = [
             <div class="card-body">
               <h6 class="text-dark mb-4 text-center">Partner Benefits</h6>
               <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-3 col-md-4 text-center">
                   <ul class="list-unstyled text-muted mb-0">
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Official certification and brand authorization</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Official certification & brand use</span>
                     </li>
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Technical training and certification system</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Training and certification tracks</span>
                     </li>
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Priority technical support services</span>
-                    </li>
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Dedicated customer manager services</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Showcased on our website</span>
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-5 col-md-6">
+
+                <div class="col-lg-3 col-md-4 text-center">
                   <ul class="list-unstyled text-muted mb-0">
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Business project profit sharing</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Marketing support & resources</span>
                     </li>
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Marketing resource support</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Priority lead referrals</span>
                     </li>
-                    <li class="mb-3 d-flex align-items-start">
-                      <i class="uil uil-check-circle text-success me-3 mt-1"></i>
-                      <span>Priority access to business opportunity referrals</span>
+                    <li class="mb-2 d-flex align-items-center justify-content-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>Co-build the NocoBase ecosystem</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
 
       <div class="row justify-content-center">
         <div class="col-12 text-center mt-4">
-          <a href="mailto:partners@nocobase.com" class="btn btn-primary me-2">
-            <i class="uil uil-envelope me-1"></i>Apply to Become a Partner
+          <a href="https://service-cn.nocobase.com/public-forms/iv0g603rvzp" class="btn btn-primary me-2">
+            <i class="uil uil-user-plus me-1"></i>
+            Apply to become a partner
           </a>
-          <a href="/en/contact" class="btn btn-outline-primary">
-            <i class="uil uil-phone me-1"></i>Learn More
+          <a href="/cn/contact" class="btn btn-outline-primary">
+            <i class="uil uil-envelope me-1"></i>
+            Learn more
           </a>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Become Partner End -->
-  
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
+    </div>
+    {/* end container */}
+  </section>
+  {/* Become Partner End */}
+
   <style>
     .partner-logo {
-      min-height: 45px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -279,13 +776,27 @@ const partnersByContinent = [
       border-radius: 8px;
       border: 1px solid #e9ecef;
     }
-    
+
     .partner-logo img {
+      height: 100% !important;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
       transition: opacity 0.3s ease;
     }
-    
+
     .partner-logo:hover img {
       opacity: 0.8;
+    }
+
+    /* Sticky elements */
+    .sticky-search {
+      position: sticky;
+      top: 70px;
+      z-index: 1000;
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e9ecef;
     }
 
     .sticky-bar {
@@ -294,24 +805,131 @@ const partnersByContinent = [
       z-index: 99;
     }
 
-    .sidebar-nav-list li {
-      margin-bottom: 8px;
-    }
-
     .sidebar-nav-list li a {
       display: flex;
       align-items: center;
-      padding: 10px 14px;
+      padding: 8px 12px;
       border-radius: 6px;
       transition: all 0.3s ease;
       text-decoration: none;
-      font-size: 0.9rem;
-      line-height: 1.3;
     }
 
     .sidebar-nav-list li a:hover {
       background-color: #f8f9fa;
       color: #2f55d4 !important;
+    }
+
+    /* Sidebar filters */
+    .plugins-sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+    }
+
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #343a40;
+      font-size: 1rem;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .filter-link {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: normal;
+      transition: all 0.2s;
+    }
+
+    .filter-link input[type="radio"],
+    .filter-link input[type="checkbox"] {
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .filter-link .filter-count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .filter-link:hover {
+      background-color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .filter-link[data-active="true"] {
+      font-weight: bold;
+    }
+
+    /* Cards */
+    .plugin-card {
+      transition: transform 0.2s, box-shadow 0.2s;
+      height: 100%;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .plugin-card .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .plugin-overview {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+
+    .plugin-box {
+      flex: 1;
+    }
+
+    .plugin-footer {
+      margin-top: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .plugins-sidebar {
+        position: relative;
+        top: auto;
+        margin-bottom: 2rem;
+      }
+
+      .plugins-content {
+        padding-left: 0;
+      }
+
+      .sticky-search .col-12 {
+        margin-bottom: 0.5rem;
+      }
+
+      .sticky-search .col-12:last-child {
+        margin-bottom: 0;
+      }
+
+      .sticky-search .text-center,
+      .sticky-search .text-end {
+        text-align: left !important;
+      }
     }
 
     @media (max-width: 991px) {
@@ -321,5 +939,198 @@ const partnersByContinent = [
         margin-bottom: 30px;
       }
     }
+
+    /* Partner card layout */
+    .partner-card .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .partner-card .services-block {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .partner-card .services-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      align-content: flex-start;
+    }
+
+    .partner-card .card-actions {
+      margin-top: auto;
+    }
+
+    .sub-alarm {
+      float: right;
+      margin-right: 0.5rem;
+    }
   </style>
-</Layout> 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Helpers
+      const $ = (s, r = document) => r.querySelector(s);
+      const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+      const norm = (s) => (s || "").normalize("NFKC").trim().toLowerCase();
+
+      const headerOffset = 140;
+
+      // Key nodes
+      const searchInput = $("#partnerSearch");
+      const countrySelect = document.querySelector(".plugins-sort select");
+      const serviceCheckboxes = $$('[data-filter-type="service"] input[type="checkbox"]');
+
+      // Cards and hosts
+      const cards = $$(".partner-card");
+      const cardHosts = new Map();
+      const cardTitles = new Map();
+
+      cards.forEach((card) => {
+        const host =
+          card.closest(".col-lg-6, .col-md-6, .col-sm-12, .col-12, .col-xl-6") || card.parentElement;
+        cardHosts.set(card, host);
+
+        const titleFromData = (card.dataset.name || "").trim();
+        const h6 = card.querySelector("h6");
+        const title = titleFromData || (h6 ? h6.textContent.trim() : "");
+        cardTitles.set(card, title);
+      });
+
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+      // Region groups that contain partner cards
+      const groups = $$("[id]").filter((el) => el.querySelector(".partner-card"));
+
+      // Scroll helpers
+      function scrollToSearch() {
+        if (!searchInput) return;
+        const top = searchInput.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: top - headerOffset - 8, behavior: "smooth" });
+      }
+
+      function scrollToFirstVisibleCardOrSearch() {
+        const first = cards.find((card) => {
+          const host = cardHosts.get(card);
+          return host && host.style.display !== "none";
+        });
+
+        if (first) {
+          const host = cardHosts.get(first);
+          const top = host.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: top - headerOffset - 8, behavior: "smooth" });
+        } else {
+          scrollToSearch();
+        }
+      }
+
+      // No results message
+      function updateNoResult() {
+        const anyVisible = cards.some((card) => {
+          const host = cardHosts.get(card);
+          return host && host.style.display !== "none";
+        });
+        const msg = $("#no-result-message");
+        if (msg) msg.style.display = anyVisible ? "none" : "block";
+      }
+
+      // Core filter: title only + country + service sub-items
+      function filterCards() {
+        const q = norm(searchInput ? searchInput.value : "");
+        const selectedCountry = countrySelect ? countrySelect.value.trim() : "";
+        const selectedServices = serviceCheckboxes.filter((cb) => cb.checked).map((cb) => cb.value);
+
+        cards.forEach((card) => {
+          const host = cardHosts.get(card);
+          if (!host) return;
+
+          const title = norm(cardTitles.get(card));
+          const matchText = !q || title.includes(q);
+
+          const cardCountry = (card.dataset.country || "").trim();
+          const matchCountry = !selectedCountry || cardCountry === selectedCountry;
+
+          let services = [];
+          try {
+            services = JSON.parse(decodeURIComponent(card.dataset.services || "%5B%5D"));
+          } catch {}
+          const matchServices =
+            selectedServices.length === 0 ? true : selectedServices.every((s) => services.includes(s));
+
+          host.style.display = matchText && matchCountry && matchServices ? "" : "none";
+        });
+
+        // Toggle region visibility
+        groups.forEach((group) => {
+          const hasVisible = $$(".partner-card", group).some((card) => {
+            const host = cardHosts.get(card);
+            return host && host.style.display !== "none";
+          });
+          group.style.display = hasVisible ? "" : "none";
+        });
+
+        updateNoResult();
+      }
+
+      // Sidebar checkbox toggles
+      $$(".filter-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const cb = link.querySelector('input[type="checkbox"]');
+          if (!cb) return;
+          cb.checked = !cb.checked;
+          link.dataset.active = String(cb.checked);
+          filterCards();
+          scrollToFirstVisibleCardOrSearch();
+        });
+      });
+
+      serviceCheckboxes.forEach((cb) =>
+        cb.addEventListener("change", () => {
+          filterCards();
+          scrollToFirstVisibleCardOrSearch();
+        }),
+      );
+
+      // Search input
+      if (searchInput) {
+        searchInput.addEventListener("input", filterCards);
+        searchInput.addEventListener("compositionend", filterCards);
+      }
+
+      // Country select
+      if (countrySelect) {
+        countrySelect.addEventListener("change", filterCards);
+      }
+
+      // Smooth scroll for sidebar anchors
+      $$('.sidebar-nav-list a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const id = link.getAttribute("href").substring(1);
+          const group = document.getElementById(id);
+          if (!group) return;
+
+          const firstVisible = $$(".partner-card", group).find((card) => {
+            const host = cardHosts.get(card);
+            return host && host.style.display !== "none";
+          });
+          if (!firstVisible) return;
+
+          const top =
+            (cardHosts.get(firstVisible) || firstVisible).getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: top - headerOffset, behavior: "smooth" });
+        });
+      });
+
+      // Init
+      filterCards();
+    });
+  </script>
+</Layout>
