@@ -1,0 +1,31 @@
+{
+  "id": 33,
+  "title": "Viz - Insights Analyst",
+  "title_cn": "Viz — 业务洞察与增长顾问",
+  "title_ja": null,
+  "description": "Professional guide for Insights Analyst AI - Viz: covering SQL query generation, ECharts visualization, workflow integration, and custom analysis templates.",
+  "description_cn": "AI员工 Viz-专业数据分析师：覆盖SQL查询生成、ECharts 可视化、工作流集成、自定义分析模板等高级功能。",
+  "description_ja": null,
+  "slug": "viz-insights-analyst",
+  "publishedAt": "2025-09-29T10:46:11.880Z",
+  "status": "drafted",
+  "serials": {
+    "createdAt": "2025-09-29T09:07:43.107Z",
+    "updatedAt": "2025-09-29T09:08:37.691Z",
+    "description": null,
+    "description_cn": null,
+    "id": 7,
+    "title": "AI employee",
+    "title_cn": "AI 员工",
+    "status": "drafted",
+    "sort": 50,
+    "slug": "ai-employee",
+    "title_ja": null,
+    "description_ja": null,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "serialsSort": 2,
+  "keywords": [],
+  "updatedAt": "2025-09-29T10:50:43.592Z"
+}
