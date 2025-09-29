@@ -70,7 +70,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     />
   ) : (
     <div class="placeholder-container" style="width: 100%; padding-bottom: 56.25%; position: relative; background: #f8f9fa;">
-      <!-- 占位容器，保持16:9比例 -->
+      <!-- Placeholder container, maintain 16:9 ratio -->
     </div>
   )}
 
@@ -621,7 +621,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
       this.chapterSteps = this.findChapterSteps();
       this.init();
       
-      // 添加窗口大小改变监听器
+      // Add window resize listener
       if (typeof window !== 'undefined') {
         window.addEventListener('resize', () => {
           this.forceImageResize();
@@ -646,6 +646,11 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
       this.updateStepNavigation();
       this.markStepsLoaded();
       this.forceImageResize();
+      
+      // Delay preload all images, don't affect first screen performance
+      setTimeout(() => {
+        this.preloadAllImagesInBackground();
+      }, 2000);
     }
 
     markStepsLoaded(): void {
@@ -662,14 +667,14 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
       if (isInModal) {
         const images = this.container.querySelectorAll('img');
         images.forEach((img: HTMLImageElement) => {
-          // 获取弹窗内容区域的实际宽度
+          // Get actual dimensions of modal content area
           const modalContent = document.querySelector('.demo-modal-content') as HTMLElement;
           const modalBody = document.querySelector('.demo-modal-body') as HTMLElement;
           
-          let availableWidth = window.innerWidth * 0.9 - 80; // 默认值
-          let availableHeight = window.innerHeight * 0.85 - 160; // 默认值
+          let availableWidth = window.innerWidth * 0.9 - 80; // Default value
+          let availableHeight = window.innerHeight * 0.85 - 160; // Default value
           
-          // 如果能获取到弹窗内容区域，使用其实际尺寸
+          // Use actual dimensions if modal content area is available
           if (modalContent && modalBody) {
             const modalRect = modalContent.getBoundingClientRect();
             const bodyRect = modalBody.getBoundingClientRect();
@@ -678,7 +683,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
             availableHeight = Math.min(bodyRect.height - 40, modalRect.height - 80);
           }
           
-          // 强制设置样式，覆盖任何现有样式
+          // Force set styles, override any existing styles
           img.style.setProperty('width', 'auto', 'important');
           img.style.setProperty('height', 'auto', 'important');
           img.style.setProperty('max-width', `${availableWidth}px`, 'important');
@@ -692,7 +697,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
           img.style.setProperty('transform', 'none', 'important');
         });
         
-        // 重新计算热点按钮位置
+        // Recalculate hotspot button positions
         this.recalculateButtonPositions();
       }
     }
@@ -704,7 +709,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
       
       if (!imgContainer || !img) return;
       
-      // 等待图片加载完成
+      // Wait for image to load completely
       const checkImageAndReposition = () => {
         if (img.complete && img.naturalWidth > 0) {
           this.repositionButtons(imgContainer, img);
@@ -720,34 +725,34 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
       const button = container.querySelector('.demo-button') as HTMLElement;
       if (!button) return;
       
-      // 获取图片的实际显示尺寸
+      // Get actual display dimensions of image
       const imgRect = img.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
       
-      // 计算图片在容器中的位置（居中显示）
+      // Calculate image position in container (center display)
       const imgDisplayWidth = imgRect.width;
       const imgDisplayHeight = imgRect.height;
       const containerWidth = containerRect.width;
       const containerHeight = containerRect.height;
       
-      // 计算图片在容器中的偏移量
+      // Calculate image offset in container
       const imgOffsetX = (containerWidth - imgDisplayWidth) / 2;
       const imgOffsetY = (containerHeight - imgDisplayHeight) / 2;
       
-      // 获取原始位置数据
+      // Get original position data
       const buttonData = button.dataset;
       const originalLeft = buttonData.originalLeft || button.style.left;
       const originalRight = buttonData.originalRight || button.style.right;
       const originalTop = buttonData.originalTop || button.style.top;
       
-      // 保存原始位置数据（只保存一次）
+      // Save original position data (only save once)
       if (!buttonData.originalLeft && !buttonData.originalRight) {
         buttonData.originalLeft = originalLeft;
         buttonData.originalRight = originalRight;
         buttonData.originalTop = originalTop;
       }
       
-      // 基于图片实际尺寸重新计算位置
+      // Recalculate position based on actual image dimensions
       if (buttonData.originalLeft) {
         const leftPercent = parseFloat(buttonData.originalLeft.replace('%', '')) / 100;
         const newLeft = imgOffsetX + (imgDisplayWidth * leftPercent);
@@ -900,24 +905,52 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
     }
 
     preloadImages(): void {
-      // 只预加载前两个步骤的图片
-      for (let i = 0; i < Math.min(2, this.steps.length); i++) {
+      // Preload first 5 step images for better user experience
+      for (let i = 0; i < Math.min(5, this.steps.length); i++) {
         this.loadStepImage(i);
       }
     }
 
-    loadStepImage(stepIndex: number): void {
+    preloadAllImagesInBackground(): void {
+      // Silently preload all remaining images in background
+      for (let i = 5; i < this.steps.length; i++) {
+        // Delay loading each image to avoid loading too many at once
+        setTimeout(() => {
+          this.loadStepImage(i);
+        }, (i - 5) * 500); // Load one image every 500ms
+      }
+    }
+
+    loadStepImage(stepIndex: number, retryCount: number = 0): void {
       if (stepIndex < 0 || stepIndex >= this.steps.length) return;
       
       const step = this.steps[stepIndex];
       const img = step.querySelector('img') as HTMLImageElement;
       if (img && img.dataset.src) {
-        // 如果图片还没有加载，或者src为空，则加载它
+        // Load image if not loaded yet or src is empty
         if (!img.src || img.src === '' || img.src === window.location.href) {
           const preloadImg = new Image();
+          
           preloadImg.onload = () => {
             img.src = img.dataset.src!;
           };
+          
+          // Add error handling and retry logic
+          preloadImg.onerror = () => {
+            if (retryCount < 3) {
+              // Retry after delay
+              setTimeout(() => {
+                console.log(`Retrying to load image for step ${stepIndex}, attempt ${retryCount + 1}`);
+                this.loadStepImage(stepIndex, retryCount + 1);
+              }, 1000 * (retryCount + 1)); // Gradually increase delay time
+            } else {
+              console.error(`Failed to load image for step ${stepIndex} after 3 attempts`);
+              // Set placeholder or error image
+              img.alt = 'Image failed to load';
+              img.style.backgroundColor = '#f0f0f0';
+            }
+          };
+          
           preloadImg.src = img.dataset.src;
         }
       }
@@ -937,7 +970,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
         this.currentStep = stepIndex;
         const targetStepElement = this.steps[this.currentStep] as HTMLElement;
         
-        // 检查是否在弹窗中，如果是则使用flex布局
+        // Check if in modal, use flex layout if true
         const containerElement = this.container as HTMLElement;
         const isInModal = containerElement.querySelector && document.querySelector('.demo-modal');
         if (isInModal && containerElement.closest && containerElement.closest('.demo-modal')) {
@@ -948,9 +981,11 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
           targetStepElement.style.setProperty('display', 'block', 'important');
         }
         
-        // 懒加载：加载当前页和下一页的图片
+        // Lazy loading: load current and next 3 pages, cache ahead to prevent loading failures
         this.loadStepImage(stepIndex);
         this.loadStepImage(stepIndex + 1);
+        this.loadStepImage(stepIndex + 2);
+        this.loadStepImage(stepIndex + 3);
         
         this.showCurrentStepButton();
         this.updateCurrentStepStyle();
@@ -1001,7 +1036,7 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    // 为每个演示容器创建独立实例
+    // Create independent instance for each demo container
     const demoContainers = document.querySelectorAll('.steps-guide');
     demoContainers.forEach(container => {
       const parentElement = container.parentElement;
