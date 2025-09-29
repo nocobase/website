@@ -1040,7 +1040,6 @@
                 <div class="steps-container" id="compactStepsList">
                     <!-- 紧凑步骤列表将动态生成 -->
                 </div>
-                <button class="add-chapter-btn" id="addChapterBtn">📁 添加章节页</button>
             </div>
 
             <!-- 中间面板 - 图片编辑区 -->
@@ -1100,7 +1099,10 @@
                 <div class="json-section">
                     <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 8px 0 8px;">
                         <h4 style="margin: 0; font-size: 12px;">📋 JSON配置 - 实时编辑</h4>
-                        <button class="btn-primary" id="exportComponentBtn" style="padding: 4px 10px; font-size: 11px;">导出为组件</button>
+                        <div style="display: flex; gap: 4px;">
+                            <button class="btn-secondary" id="historyBtn" style="padding: 4px 10px; font-size: 11px;">📜 历史</button>
+                            <button class="btn-primary" id="exportComponentBtn" style="padding: 4px 10px; font-size: 11px;">导出为组件</button>
+                        </div>
                     </div>
                     <textarea id="jsonEditor" style="width: calc(100% - 16px); flex: 1; min-height: 150px; margin: 8px 8px 8px 8px; font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace; font-size: 11px; padding: 8px; border: 1px solid #007bff; border-radius: 4px; resize: vertical; background: #f8f9ff; transition: border-color 0.2s; line-height: 1.4;" placeholder="JSON配置将在这里实时显示和编辑..."></textarea>
                     <div id="jsonStatus" style="margin: 4px 8px 8px 8px; font-size: 10px; color: #666;">准备就绪</div>
@@ -1128,6 +1130,23 @@
             </div>
         </div>
     </div>
+    
+    <!-- 历史记录弹窗 -->
+    <div id="historyModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 10000;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; max-width: 800px; width: 90%; max-height: 80vh; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h3 style="margin: 0;">📜 保存历史（最近100条）</h3>
+                <button onclick="document.getElementById('historyModal').style.display='none'" style="background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+            </div>
+            <div id="historyList" style="flex: 1; overflow-y: auto; border: 1px solid #ddd; border-radius: 4px; padding: 10px;">
+                <!-- 历史记录列表 -->
+            </div>
+            <div style="margin-top: 10px; text-align: right;">
+                <button onclick="demoEditor.clearHistory()" class="btn-warning" style="float: left;">清空历史</button>
+                <button onclick="document.getElementById('historyModal').style.display='none'" class="btn-secondary">关闭</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         class DemoConfigEditor {
@@ -1149,158 +1168,27 @@
                 this.isUpdatingStepsList = false;
                 this.isUpdatingFromJson = false;
                 this.draggedStepIndex = null;
+                
+                // 自动保存相关
+                this.lastSavedConfig = '';
+                this.saveHistory = [];
+                this.autoSaveTimer = null;
+                
                 this.init();
             }
 
             init() {
                 this.bindEvents();
                 this.setupJsonEditor();
-                this.loadPresetExample();
+                // 不再加载预置示例，从空配置开始
+                this.loadSaveHistory();
+                this.startAutoSave();
                 this.updateCompactStepsList();
                 this.updatePreview();
                 this.updateJsonDisplay();
             }
 
-            loadPresetExample() {
-                // Preset English demo configuration with chapter pages
-                this.config = {
-                    "title": "Try it out: 3 steps to create a CRM",
-                    "subtitle": "",
-                    "steps": [
-                        {
-                            "id": "intro",
-                            "title": "Welcome to NocoBase",
-                            "description": "Let's build a CRM in 3 simple steps",
-                            "targetStepId": "step-start"
-                            // No image property - this is a chapter page
-                        },
-                        {
-                            "id": "step-start",
-                            "title": "Start Demo",
-                            "description": "Click, 3 steps to create a CRM",
-                            "image": "https://static-docs.nocobase.com/1-home-steps.png",
-                            "button": {
-                                "id": "button1",
-                                "label": "Click, 3 steps to create a CRM",
-                                "position": {
-                                    "left": "46%",
-                                    "top": "45%"
-                                },
-                                "balloonPos": "up",
-                                "balloonLength": "medium"
-                            }
-                        },
-                        {
-                            "id": "chapter-1",
-                            "title": "Step 1: Collections & Fields",
-                            "description": "First, we'll create data collections and define their fields",
-                            "targetStepId": "step-1"
-                            // Chapter page
-                        },
-                        {
-                            "id": "step-1",
-                            "title": "Enter Collection Manager",
-                            "description": "Enter the collection manager screen",
-                            "image": "https://static-docs.nocobase.com/2-home-steps.png",
-                            "button": {
-                                "id": "button2",
-                                "label": "Enter the collection manager screen",
-                                "position": {
-                                    "right": "12%",
-                                    "top": "6%"
-                                },
-                                "balloonPos": "left",
-                                "balloonLength": "medium"
-                            }
-                        },
-                        {
-                            "id": "step-2",
-                            "title": "Create Collections",
-                            "description": "Let's create the Companies, Orders collections",
-                            "image": "https://static-docs.nocobase.com/3-home-steps.png",
-                            "button": {
-                                "id": "button3",
-                                "label": "Let's create the Companies, Orders collections",
-                                "position": {
-                                    "right": "13%",
-                                    "top": "22%"
-                                },
-                                "balloonPos": "left",
-                                "balloonLength": "medium"
-                            }
-                        },
-                        {
-                            "id": "chapter-2",
-                            "title": "Step 2: UI Configuration",
-                            "description": "Now let's configure menus and pages",
-                            "targetStepId": "step-3"
-                            // Chapter page
-                        },
-                        {
-                            "id": "step-3",
-                            "title": "Add Menu Items",
-                            "description": "Configure navigation menus for your CRM",
-                            "image": "https://static-docs.nocobase.com/8-home-steps.png",
-                            "button": {
-                                "id": "button4",
-                                "label": "Add menu items here",
-                                "position": {
-                                    "left": "16%",
-                                    "top": "7%"
-                                },
-                                "balloonPos": "right",
-                                "balloonLength": "medium"
-                            }
-                        },
-                        {
-                            "id": "chapter-3",
-                            "title": "Step 3: Blocks & Actions",
-                            "description": "Finally, let's add data blocks and configure actions",
-                            "targetStepId": "step-4"
-                            // Chapter page
-                        },
-                        {
-                            "id": "step-4",
-                            "title": "Add Table Block",
-                            "description": "Add a table block to display companies data",
-                            "image": "https://static-docs.nocobase.com/11-home-steps.png",
-                            "button": {
-                                "id": "button5",
-                                "label": "Add table block",
-                                "position": {
-                                    "left": "40%",
-                                    "top": "30%"
-                                },
-                                "balloonPos": "down",
-                                "balloonLength": "medium"
-                            }
-                        },
-                        {
-                            "id": "complete",
-                            "title": "Congratulations!",
-                            "description": "Your CRM is ready. Start adding data and customizing further.",
-                            "targetStepId": null
-                            // Final chapter page
-                        }
-                    ]
-                };
-
-                // Update global title input
-                document.getElementById('globalTitle').value = this.config.title;
-                
-                // Set current step to the first one
-                if (this.config.steps.length > 0) {
-                    this.currentStepIndex = 0;
-                    const firstStep = this.config.steps[0];
-                    if (firstStep.image) {
-                        document.getElementById('imageUrl').value = firstStep.image;
-                        this.loadImage();
-                    } else {
-                        document.getElementById('imageUrl').value = '';
-                        this.displayChapterPage();
-                    }
-                }
-            }
+            // loadPresetExample 方法已移除，现在从空配置开始
 
             bindEvents() {
                 // 图片点击事件
@@ -1314,8 +1202,8 @@
                 document.getElementById('clearMarkersBtn').addEventListener('click', () => this.clearMarkers());
                 document.getElementById('prevStepBtn').addEventListener('click', () => this.previewPrevStep());
                 document.getElementById('nextStepBtn').addEventListener('click', () => this.previewNextStep());
-                document.getElementById('addChapterBtn').addEventListener('click', () => this.addChapterStep());
                 document.getElementById('exportComponentBtn').addEventListener('click', () => this.exportAsComponent());
+                document.getElementById('historyBtn').addEventListener('click', () => this.showHistory());
                 
                 // 全屏预览事件
                 document.getElementById('fullscreenBtn').addEventListener('click', () => this.openFullscreenPreview());
@@ -1375,7 +1263,9 @@
 
             // 判断步骤是否为章节页（没有image属性的步骤）
             isChapterStep(step) {
-                return !step.image || step.image.trim() === '';
+                // 只有当没有image属性时才是章节页
+                // 如果有image属性但值无效，仍然是普通步骤
+                return !('image' in step);
             }
 
             loadImage() {
@@ -1840,6 +1730,15 @@
             }
 
             handleImagePaste(imageUrl) {
+                // 检查当前是否在"待添加"输入框中
+                const pendingInput = document.querySelector('.step-item.pending input');
+                if (pendingInput && pendingInput === document.activeElement) {
+                    // 如果在待添加输入框中，填充值但不创建步骤（让输入框的事件处理）
+                    pendingInput.value = imageUrl;
+                    return;
+                }
+                
+                // 否则创建新步骤
                 const newStep = {
                     id: 'step-' + this.config.steps.length,
                     title: '步骤 ' + (this.config.steps.length + 1),
@@ -1881,6 +1780,13 @@
                     const container = document.getElementById('compactStepsList');
                     if (!container) return;
                     
+                    // 保存当前聚焦的元素
+                    const activeElement = document.activeElement;
+                    const activeElementId = activeElement?.id;
+                    const activeElementValue = activeElement?.value;
+                    const activeElementSelectionStart = activeElement?.selectionStart;
+                    const activeElementSelectionEnd = activeElement?.selectionEnd;
+                    
                     container.innerHTML = '';
 
                     // 渲染现有步骤
@@ -1892,6 +1798,18 @@
                     // 添加"待添加"步骤
                     const pendingStepElement = this.createPendingStepElement();
                     container.appendChild(pendingStepElement);
+                    
+                    // 恢复聚焦
+                    if (activeElementId) {
+                        const newActiveElement = document.getElementById(activeElementId);
+                        if (newActiveElement && newActiveElement.tagName === 'INPUT') {
+                            newActiveElement.value = activeElementValue || '';
+                            newActiveElement.focus();
+                            if (activeElementSelectionStart !== undefined && activeElementSelectionEnd !== undefined) {
+                                newActiveElement.setSelectionRange(activeElementSelectionStart, activeElementSelectionEnd);
+                            }
+                        }
+                    }
                 } finally {
                     this.isUpdatingStepsList = false;
                 }
@@ -1922,48 +1840,42 @@
                 // 章节页标识
                 const chapterIndicator = isChapter ? '📁' : '';
                 
-                // 章节页的目标步骤配置
-                const targetStepConfig = isChapter ? `
-                    <input type="text" value="${step.targetStepId || ''}" placeholder="目标步骤ID (可选)" 
-                           oninput="demoEditor.updateStepField(${index}, 'targetStepId', this.value)"
-                           style="margin-bottom: 2px;">
-                ` : '';
+                // 章节页显示实际标题，普通步骤自动生成
+                const displayTitle = isChapter ? (step.title || `章节 ${index + 1}`) : `步骤 ${index + 1}`;
                 
-                // 只在有按钮时显示按钮配置
-                const buttonConfig = step.button ? `
-                    <input type="text" id="step-btn-label-${index}" name="step-btn-label-${index}" placeholder="按钮文本" value="${step.button.label || ''}" 
-                           oninput="demoEditor.updateButtonField(${index}, 'label', this.value)">
-                    <div style="display: flex; gap: 2px; margin-bottom: 2px;">
+                // 章节页需要标题输入框，普通页需要按钮标签输入框和位置选择
+                const titleOrLabelInput = isChapter ? `
+                    <input type="text" id="step-title-${index}" value="${step.title || ''}" placeholder="章节标题" 
+                           oninput="demoEditor.updateStepField(${index}, 'title', this.value)">
+                ` : `
+                    <input type="text" id="step-label-${index}" value="${step.button?.label || ''}" placeholder="按钮文字（点击继续下一步）" 
+                           oninput="demoEditor.updateButtonLabel(${index}, this.value)">
+                    <div style="display: flex; gap: 2px; margin-top: 4px;">
                         <button type="button" onclick="demoEditor.updateButtonField(${index}, 'balloonPos', 'up')" 
-                                style="flex: 1; padding: 2px; font-size: 8px; border: 1px solid ${step.button.balloonPos === 'up' ? '#007bff' : '#ccc'}; 
-                                       background: ${step.button.balloonPos === 'up' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer;">上</button>
+                                style="flex: 1; padding: 4px 2px; font-size: 10px; border: 1px solid ${step.button?.balloonPos === 'up' ? '#007bff' : '#ccc'}; 
+                                       background: ${step.button?.balloonPos === 'up' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer; border-radius: 2px;">上</button>
                         <button type="button" onclick="demoEditor.updateButtonField(${index}, 'balloonPos', 'down')" 
-                                style="flex: 1; padding: 2px; font-size: 8px; border: 1px solid ${step.button.balloonPos === 'down' ? '#007bff' : '#ccc'}; 
-                                       background: ${step.button.balloonPos === 'down' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer;">下</button>
+                                style="flex: 1; padding: 4px 2px; font-size: 10px; border: 1px solid ${step.button?.balloonPos === 'down' ? '#007bff' : '#ccc'}; 
+                                       background: ${step.button?.balloonPos === 'down' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer; border-radius: 2px;">下</button>
                         <button type="button" onclick="demoEditor.updateButtonField(${index}, 'balloonPos', 'left')" 
-                                style="flex: 1; padding: 2px; font-size: 8px; border: 1px solid ${step.button.balloonPos === 'left' ? '#007bff' : '#ccc'}; 
-                                       background: ${step.button.balloonPos === 'left' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer;">左</button>
+                                style="flex: 1; padding: 4px 2px; font-size: 10px; border: 1px solid ${step.button?.balloonPos === 'left' ? '#007bff' : '#ccc'}; 
+                                       background: ${step.button?.balloonPos === 'left' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer; border-radius: 2px;">左</button>
                         <button type="button" onclick="demoEditor.updateButtonField(${index}, 'balloonPos', 'right')" 
-                                style="flex: 1; padding: 2px; font-size: 8px; border: 1px solid ${step.button.balloonPos === 'right' ? '#007bff' : '#ccc'}; 
-                                       background: ${step.button.balloonPos === 'right' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer;">右</button>
+                                style="flex: 1; padding: 4px 2px; font-size: 10px; border: 1px solid ${step.button?.balloonPos === 'right' ? '#007bff' : '#ccc'}; 
+                                       background: ${step.button?.balloonPos === 'right' ? '#e3f2fd' : '#f8f9fa'}; cursor: pointer; border-radius: 2px;">右</button>
                     </div>
-                ` : '';
-
+                `;
+                
                 div.innerHTML = `
                     <div class="step-item-header">
-                        <span><span class="drag-handle">☰</span>${chapterIndicator}${index + 1}. ${step.title || '步骤'}</span>
+                        <span><span class="drag-handle">☰</span>${chapterIndicator}${displayTitle}</span>
                         <div>
                             <button onclick="demoEditor.deleteStep(${index})">×</button>
                         </div>
                     </div>
-                    <input type="text" value="${step.id || ''}" placeholder="ID" 
-                           oninput="demoEditor.updateStepField(${index}, 'id', this.value)">
-                    <input type="text" value="${step.title || ''}" placeholder="标题" 
-                           oninput="demoEditor.updateStepField(${index}, 'title', this.value)">
-                    <input type="url" value="${step.image || ''}" placeholder="图片链接（空白=章节页）" 
+                    <input type="url" id="step-image-${index}" value="${step.image || ''}" placeholder="图片链接（空白或无效=章节页）" 
                            oninput="demoEditor.updateStepImageWithDebounce(${index}, this.value)">
-                    ${targetStepConfig}
-                    ${buttonConfig}
+                    ${titleOrLabelInput}
                 `;
 
                 return div;
@@ -1977,9 +1889,9 @@
                     <div class="step-item-header">
                         <span>+ 新建步骤</span>
                     </div>
-                    <input type="url" placeholder="粘贴图片URL，或按空格/回车创建章节页" 
-                           onchange="demoEditor.createStepFromPendingImage(this.value)"
-                           onkeypress="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); demoEditor.createStepFromPendingImage(''); this.value = ''; }">
+                    <input type="url" placeholder="粘贴图片URL后按回车，或直接按空格/回车创建章节页" 
+                           onpaste="event.stopPropagation()"
+                           onkeypress="if(event.key === 'Enter') { event.preventDefault(); demoEditor.createStepFromPendingImage(this.value); this.value = ''; } else if(event.key === ' ') { event.preventDefault(); demoEditor.createStepFromPendingImage(''); this.value = ''; }">
                 `;
 
                 return div;
@@ -2014,6 +1926,16 @@
                     
                     if (value && value.trim()) {
                         step[field] = value.trim();
+                        
+                        // 如果是章节页的title更新，同步更新其他相关字段
+                        if (field === 'title' && this.isChapterStep(step)) {
+                            // 同步更新description
+                            step.description = value.trim();
+                            // 如果有button配置，同步更新label
+                            if (step.button) {
+                                step.button.label = value.trim();
+                            }
+                        }
                     } else {
                         // 如果值为空，删除该字段
                         delete step[field];
@@ -2038,23 +1960,88 @@
                 }, 300); // 300ms延迟
             }
 
+            // 检查是否为有效的图片URL
+            isValidImageUrl(url) {
+                if (!url || !url.trim()) return false;
+                
+                // 检查是否为URL格式
+                try {
+                    const urlObj = new URL(url);
+                    // 检查是否为http/https协议
+                    if (!['http:', 'https:'].includes(urlObj.protocol)) {
+                        return false;
+                    }
+                    // 检查是否有常见的图片扩展名或者是图片服务的URL
+                    const imageExtensions = /\.(jpg|jpeg|png|gif|webp|svg|bmp|ico)$/i;
+                    const imageServices = /(nocobase|cloudinary|imgur|unsplash|picsum|placeholder)/i;
+                    
+                    return imageExtensions.test(urlObj.pathname) || imageServices.test(url);
+                } catch {
+                    // 如果不是有效的URL格式
+                    return false;
+                }
+            }
+            
             updateStepImage(index, imageUrl) {
                 if (index >= 0 && index < this.config.steps.length) {
-                    if (imageUrl && imageUrl.trim()) {
-                        this.config.steps[index].image = imageUrl.trim();
-                    } else {
+                    const step = this.config.steps[index];
+                    const wasChapter = !('image' in step);  // 判断是否为章节页（没有image属性）
+                    const trimmedUrl = imageUrl ? imageUrl.trim() : '';
+                    const isValidImage = this.isValidImageUrl(trimmedUrl);
+                    
+                    // 如果是空的或无效的URL，变成章节页
+                    if (!isValidImage) {
                         // 删除image属性，变成章节页
-                        delete this.config.steps[index].image;
+                        delete step.image;
+                        
+                        // 如果从普通步骤变为章节页，保持原有的按钮文字作为标题
+                        if (!wasChapter && step.button && step.button.label) {
+                            step.title = step.button.label;
+                            // 同时更新description保持一致
+                            step.description = step.button.label;
+                        }
+                        
+                        // 保留其他属性，用于兼容和导出
+                        
+                    } else {
+                        // 有效的图片URL，保留为普通步骤
+                        step.image = trimmedUrl;
+                        
+                        // 如果从章节页变为普通步骤，保持文字内容
+                        if (wasChapter) {
+                            // 如果有title，将其复制到button.label和description
+                            if (step.title) {
+                                if (!step.button) {
+                                    step.button = {
+                                        id: 'button' + (index + 1),
+                                        label: step.title,
+                                        position: { left: "50%", top: "50%" },
+                                        balloonPos: "up",
+                                        balloonLength: "medium"
+                                    };
+                                } else {
+                                    step.button.label = step.title;
+                                }
+                                step.description = step.title;
+                            }
+                            // 生成标准的步骤title
+                            step.title = `Step ${index + 1}`;
+                        }
                     }
                     
                     // 如果是当前选中的步骤，重新加载
                     if (index === this.currentStepIndex) {
                         document.getElementById('imageUrl').value = imageUrl || '';
-                        this.loadImage();
+                        if (isValidImage) {
+                            this.loadImage();
+                        } else {
+                            this.displayChapterPage();
+                        }
                     }
                     
                     this.updateCompactStepsList();
                     this.updatePreview();
+                    this.updateJsonDisplay();
                 }
             }
 
@@ -2101,24 +2088,62 @@
                     this.updateJsonDisplay();
                 }
             }
+            
+            updateButtonLabel(index, value) {
+                if (index >= 0 && index < this.config.steps.length) {
+                    const step = this.config.steps[index];
+                    
+                    // 如果没有按钮配置，创建一个默认的
+                    if (!step.button) {
+                        step.button = {
+                            id: 'button' + (index + 1),
+                            label: value || "点击继续",
+                            position: { left: "50%", top: "50%" },
+                            balloonPos: "up",
+                            balloonLength: "medium"
+                        };
+                    } else {
+                        step.button.label = value || "点击继续";
+                    }
+                    
+                    // 同时更新description，让它等于label
+                    step.description = value || "点击继续";
+                    
+                    // 更新标记和JSON显示
+                    this.renderMarkers();
+                    this.updateJsonDisplay();
+                }
+            }
 
             createStepFromPendingImage(imageUrl) {
-                const newStep = {
-                    id: 'step-' + this.config.steps.length,
-                    title: '步骤 ' + (this.config.steps.length + 1),
-                    description: "步骤描述"
-                };
-
-                // 只有有图片URL时才添加image属性
-                if (imageUrl && imageUrl.trim()) {
-                    newStep.image = imageUrl.trim();
+                const stepNumber = this.config.steps.length + 1;
+                const trimmedUrl = imageUrl ? imageUrl.trim() : '';
+                const isValidImage = this.isValidImageUrl(trimmedUrl);
+                
+                // 根据URL有效性决定创建章节还是普通步骤
+                if (isValidImage) {
+                    // 创建普通步骤
+                    const newStep = {
+                        id: `step-${stepNumber}`,
+                        title: `Step ${stepNumber}`,
+                        description: "",
+                        image: trimmedUrl
+                    };
+                    this.config.steps.push(newStep);
+                } else {
+                    // 创建章节页（保留所有字段用于兼容）
+                    const newStep = {
+                        id: `chapter-${stepNumber}`,
+                        title: "",  // 空标题等待用户输入
+                        description: ""  // 保留description字段
+                    };
+                    this.config.steps.push(newStep);
                 }
 
-                this.config.steps.push(newStep);
                 this.selectCompactStep(this.config.steps.length - 1);
                 
-                if (imageUrl && imageUrl.trim()) {
-                    document.getElementById('imageUrl').value = imageUrl;
+                if (isValidImage) {
+                    document.getElementById('imageUrl').value = trimmedUrl;
                     this.loadImage();
                 } else {
                     document.getElementById('imageUrl').value = '';
@@ -2329,9 +2354,7 @@
                 const newChapter = {
                     id: `chapter-${chapterNum}`,
                     title: `章节 ${chapterNum}`,
-                    description: "章节描述",
-                    targetStepId: null  // 可以关联到特定步骤
-                    // 注意：不设置 image 属性，这样就是章节页
+                    description: `章节 ${chapterNum}`  // 保留description，与title保持一致
                 };
                 
                 this.config.steps.push(newChapter);
@@ -2716,12 +2739,14 @@
                 });
                 
                 // 为每个有效章节页生成mainSteps条目
-                validChapterSteps.forEach((step) => {
+                validChapterSteps.forEach((step, index) => {
+                    // 使用章节的标题或自动生成
+                    const chapterTitle = step.title || `Chapter ${index + 1}`;
                     mainSteps.push({
                         number: String(stepNumber).padStart(2, '0'),
-                        title: step.title || `Step ${stepNumber}`,
+                        title: chapterTitle,
                         id: `guide${stepNumber}`,
-                        targetStepId: step.id  // 直接使用章节页的ID
+                        targetStepId: step.id  // 章节页指向自己的ID
                     });
                     stepNumber++;
                 });
@@ -2903,6 +2928,166 @@ ${componentCode}`;
                     document.body.removeChild(a);
                     URL.revokeObjectURL(url);
                 });
+            }
+            
+            // === 自动保存功能 ===
+            
+            startAutoSave() {
+                // 每10秒自动保存一次
+                this.autoSaveTimer = setInterval(() => {
+                    this.autoSave();
+                }, 10000);
+            }
+            
+            stopAutoSave() {
+                if (this.autoSaveTimer) {
+                    clearInterval(this.autoSaveTimer);
+                    this.autoSaveTimer = null;
+                }
+            }
+            
+            autoSave() {
+                const currentConfig = JSON.stringify(this.config);
+                
+                // 检查配置是否有变化
+                if (currentConfig !== this.lastSavedConfig) {
+                    const saveItem = {
+                        timestamp: new Date().toISOString(),
+                        time: new Date().toLocaleString('zh-CN'),
+                        config: this.config
+                    };
+                    
+                    // 添加到历史记录
+                    this.saveHistory.unshift(saveItem);
+                    
+                    // 最多保存100条记录
+                    if (this.saveHistory.length > 100) {
+                        this.saveHistory = this.saveHistory.slice(0, 100);
+                    }
+                    
+                    // 保存到localStorage
+                    try {
+                        localStorage.setItem('demoConfigHistory', JSON.stringify(this.saveHistory));
+                        this.lastSavedConfig = currentConfig;
+                        this.showSaveStatus('已自动保存');
+                    } catch (e) {
+                        console.error('保存失败:', e);
+                    }
+                }
+            }
+            
+            loadSaveHistory() {
+                try {
+                    const saved = localStorage.getItem('demoConfigHistory');
+                    if (saved) {
+                        this.saveHistory = JSON.parse(saved);
+                        // 不再自动询问恢复
+                    }
+                } catch (e) {
+                    console.error('加载历史记录失败:', e);
+                    this.saveHistory = [];
+                }
+            }
+            
+            showSaveStatus(message) {
+                // 显示保存状态
+                const statusDiv = document.getElementById('saveStatus') || this.createSaveStatusDiv();
+                statusDiv.textContent = message + ' ' + new Date().toLocaleTimeString('zh-CN');
+                statusDiv.style.opacity = '1';
+                
+                setTimeout(() => {
+                    statusDiv.style.opacity = '0.5';
+                }, 2000);
+            }
+            
+            createSaveStatusDiv() {
+                const statusDiv = document.createElement('div');
+                statusDiv.id = 'saveStatus';
+                statusDiv.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background: #28a745;
+                    color: white;
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    opacity: 0.5;
+                    transition: opacity 0.3s;
+                    z-index: 1000;
+                `;
+                document.body.appendChild(statusDiv);
+                return statusDiv;
+            }
+            
+            showHistory() {
+                const modal = document.getElementById('historyModal');
+                const list = document.getElementById('historyList');
+                
+                if (this.saveHistory.length === 0) {
+                    list.innerHTML = '<p style="text-align: center; color: #999;">暂无保存记录</p>';
+                } else {
+                    list.innerHTML = this.saveHistory.map((item, index) => `
+                        <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s;"
+                             onmouseover="this.style.background='#f5f5f5'"
+                             onmouseout="this.style.background=''"
+                             onclick="demoEditor.loadHistory(${index})">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>保存时间：${item.time}</strong>
+                                    <div style="color: #666; font-size: 12px; margin-top: 4px;">
+                                        步骤数：${item.config.steps ? item.config.steps.length : 0} | 
+                                        标题：${item.config.title || '未命名'}
+                                    </div>
+                                </div>
+                                <button onclick="event.stopPropagation(); demoEditor.deleteHistory(${index})" 
+                                        style="background: #dc3545; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">
+                                    删除
+                                </button>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+                
+                modal.style.display = 'block';
+            }
+            
+            loadHistory(index) {
+                if (index >= 0 && index < this.saveHistory.length) {
+                    if (confirm('确定要加载这个历史记录吗？当前的编辑内容将被替换。')) {
+                        this.config = JSON.parse(JSON.stringify(this.saveHistory[index].config));
+                        this.lastSavedConfig = JSON.stringify(this.config);
+                        this.updateCompactStepsList();
+                        this.updateJsonDisplay();
+                        this.updatePreview();
+                        
+                        // 如果有步骤，选择第一个
+                        if (this.config.steps && this.config.steps.length > 0) {
+                            this.selectCompactStep(0);
+                        }
+                        
+                        document.getElementById('historyModal').style.display = 'none';
+                        this.showSaveStatus('已加载历史记录');
+                    }
+                }
+            }
+            
+            deleteHistory(index) {
+                if (index >= 0 && index < this.saveHistory.length) {
+                    if (confirm('确定要删除这条历史记录吗？')) {
+                        this.saveHistory.splice(index, 1);
+                        localStorage.setItem('demoConfigHistory', JSON.stringify(this.saveHistory));
+                        this.showHistory(); // 刷新列表
+                    }
+                }
+            }
+            
+            clearHistory() {
+                if (confirm('确定要清空所有历史记录吗？此操作不可恢复。')) {
+                    this.saveHistory = [];
+                    localStorage.removeItem('demoConfigHistory');
+                    this.showHistory(); // 刷新列表
+                }
             }
         }
 
