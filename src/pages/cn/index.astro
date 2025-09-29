@@ -1,932 +1,2102 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import InteractiveDemo from "../../components/InteractiveDemo.astro";
-import demoConfig from "../../data/demo-config-cn.json";
+import demoConfig from "../../data/demo-config-en.json";
+
+const demo_20250928234035 = {
+  "title": "Step 1",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "description": "",
+      "title": "当我们部署 NocoBase 后，会得到一个空应用",
+      "id": "开始"
+    },
+    {
+      "id": "step-1-1",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S1.png",
+      "button": {
+        "id": "button2",
+        "label": "首先，去配置数据模型和数据源",
+        "position": {
+          "right": "28.1%",
+          "top": "13.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase 自带主数据库，我们也可以添加各种外部数据源",
+        "position": {
+          "right": "12.5%",
+          "top": "12.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      },
+      "id": "step-1-2"
+    },
+    {
+      "id": "step-1-3",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S3.png",
+      "button": {
+        "id": "button5",
+        "label": "让我们去主数据库创建表和字段",
+        "position": {
+          "right": "22.0%",
+          "top": "28.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-4",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S4.png",
+      "button": {
+        "id": "button5",
+        "label": "从这里创建数据表",
+        "position": {
+          "right": "15.2%",
+          "top": "20.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-5",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S5.png",
+      "button": {
+        "id": "button6",
+        "label": "让我们创建公司、联系人、商机、订单等数据表",
+        "position": {
+          "right": "26.5%",
+          "top": "18.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-6",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S6.png",
+      "button": {
+        "id": "button7",
+        "label": "接下来，为数据表创建字段",
+        "position": {
+          "right": "21.2%",
+          "top": "51.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-7",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S7.png",
+      "button": {
+        "id": "button8",
+        "label": "从数十种字段类型中选择",
+        "position": {
+          "right": "19.7%",
+          "top": "51.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-8",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S8.png",
+      "button": {
+        "id": "button9",
+        "label": "我们为数据表创建好了字段",
+        "position": {
+          "right": "42.5%",
+          "top": "67.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "description": "",
+      "targetStepId": null,
+      "id": "等等",
+      "title": "事情是不是可以更简单？"
+    },
+    {
+      "id": "step-1-9",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S9.png",
+      "button": {
+        "id": "button11",
+        "label": "Orin 是一位数据建模专家，请他来帮忙",
+        "position": {
+          "right": "22.2%",
+          "top": "38.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-10",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S11-CN.png",
+      "button": {
+        "id": "button12",
+        "label": "告诉 Orin 我们需要什么",
+        "position": {
+          "right": "31.6%",
+          "top": "86.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-11",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S12-CN.png",
+      "button": {
+        "id": "button13",
+        "label": "喔，Orin 为我们设计了数据模型",
+        "position": {
+          "right": "29.7%",
+          "top": "39.4%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-12",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S13-CN.png",
+      "button": {
+        "id": "button14",
+        "label": "打开 Orin 为我们创建的数据模型，复核，修改，然后确认",
+        "position": {
+          "left": "22.8%",
+          "top": "74.4%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-13",
+      "description": "",
+      "image": "https://static-docs.nocobase.com/S14-CN.png",
+      "button": {
+        "id": "button15",
+        "label": "数据表和字段已经创建成功",
+        "position": {
+          "left": "44.9%",
+          "top": "89.1%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "我们已经配置好了数据模型,请关闭弹窗，进入下一步",
+      "description": "",
+      "targetStepId": null
+    },
+    {
+      "id": " ",
+      "title": " ",
+      "description": "",
+      "targetStepId": null
+    }
+  ]
+};
+
+const demo_20250929185215 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "第二步",
+      "title": "添加区块，将数据源中的数据显示在页面中",
+      "description": "Add blocks to display data from the data source on the page."
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
+      "image": "https://static-docs.nocobase.com/S2-1.png",
+      "button": {
+        "id": "button2",
+        "label": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
+        "position": {
+          "right": "14.9%",
+          "top": "13.5%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "First, create a page.",
+      "image": "https://static-docs.nocobase.com/S2-2.png",
+      "button": {
+        "id": "button3",
+        "label": "首先，创建一个页面",
+        "position": {
+          "left": "24.9%",
+          "top": "14.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": " Add a table block to the page and select the Lead collection to display its data.",
+      "image": "https://static-docs.nocobase.com/S2-3.png",
+      "button": {
+        "id": "button4",
+        "label": "在页面中添加表格区块并选择“线索”表，即可显示“线索”表的数据",
+        "position": {
+          "left": "41.0%",
+          "top": "39.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Configure the table block to display the fields we need.",
+      "image": "https://static-docs.nocobase.com/S2-4.png",
+      "button": {
+        "id": "button5",
+        "label": "配置表格区块，显示我们需要的字段",
+        "position": {
+          "right": "13.2%",
+          "top": "21.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "We also want to analyze industry distribution of “Leads” with a chart. Add a charts block.",
+      "image": "https://static-docs.nocobase.com/S2-5.png",
+      "button": {
+        "id": "button6",
+        "label": "我们还希望用图表来分析的行业分布，添加 charts 区块",
+        "position": {
+          "left": "13.9%",
+          "top": "64.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Configure the query and chart.",
+      "image": "https://static-docs.nocobase.com/S2-6.png",
+      "button": {
+        "id": "button7",
+        "label": "配置 query 和 chart",
+        "position": {
+          "right": "35.2%",
+          "top": "41.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "The industry distribution is now clearly visualized.",
+      "image": "https://static-docs.nocobase.com/S2-7.png",
+      "button": {
+        "id": "button8",
+        "label": "行业分布情况直观地展示出来",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Next, we need a form to input “Leads” data. Add a form block select the Lead collection.",
+      "image": "https://static-docs.nocobase.com/S2-8.png",
+      "button": {
+        "id": "button9",
+        "label": "接下来，我们需要一个表单，录入“线索”数据。添加表单区块并选中线索表",
+        "position": {
+          "left": "14.4%",
+          "top": "52.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Configure the form block to display the fields we need.",
+      "image": "https://static-docs.nocobase.com/S2-9.png",
+      "button": {
+        "id": "button10",
+        "label": "配置表单区块，显示我们需要的字段",
+        "position": {
+          "left": "12.3%",
+          "top": "79.2%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Finally, drag and arrange the blocks as needed. The page now has three blocks, all showing data from the “Leads” collection.",
+      "image": "https://static-docs.nocobase.com/S2-10.png",
+      "button": {
+        "id": "button11",
+        "label": "最后，拖拽这些区块，按需布局。页面上 3 个区块，显示的都是“线索”表的数据",
+        "position": {
+          "left": "30.0%",
+          "top": "14.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "等等",
+      "title": "如果我们想要一个自定义的区块呢？",
+      "description": "如果我们想要一个自定义的区块呢？"
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "Add a JS Block.",
+      "image": "https://static-docs.nocobase.com/S2-11.png",
+      "button": {
+        "id": "button13",
+        "label": "添加一个 JS Block",
+        "position": {
+          "left": "13.9%",
+          "top": "78.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "Nathan is a frontend expert—tell him what we need.",
+      "image": "https://static-docs.nocobase.com/S2-12-CN.png",
+      "button": {
+        "id": "button14",
+        "label": "Nathan 是一位前端编程专家，告诉他我们想要什么",
+        "position": {
+          "right": "28.0%",
+          "top": "28.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Step 15",
+      "description": "Haha, Nathan has built the block for us.",
+      "image": "https://static-docs.nocobase.com/S2-13.png",
+      "button": {
+        "id": "button15",
+        "label": "哈，Nathan 帮我们写出了这个区块",
+        "position": {
+          "left": "13.7%",
+          "top": "47.1%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "我们已经知道如何将数据显示在页面中。请关闭弹窗，进入下一步",
+      "description": "We now know how to display data on the page. Close this window to continue."
+    },
+    {
+      "id": " ",
+      "title": " ",
+      "description": "",
+      "targetStepId": null
+    }
+  ]
+};
+
+const demo_20250929192111 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "第三步",
+      "title": "配置操作，对数据进行处理",
+      "description": "Configure actions to process data."
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "We want to query, edit, add, and delete “Leads” data.",
+      "image": "https://static-docs.nocobase.com/S3-1.png",
+      "button": {
+        "id": "button2",
+        "label": "我们希望对“线索”数据进行查询、编辑、新增、删除等操作",
+        "position": {
+          "left": "37.1%",
+          "top": "52.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "In the table block, enable filter, add, import, and print.",
+      "image": "https://static-docs.nocobase.com/S3-2.png",
+      "button": {
+        "id": "button3",
+        "label": "在表格区块中，启用筛选、新增、导入、打印等操作",
+        "position": {
+          "right": "10.3%",
+          "top": "26.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "We can also add actions for single rows.",
+      "image": "https://static-docs.nocobase.com/S3-3.png",
+      "button": {
+        "id": "button4",
+        "label": "也可以针对单行数据添加操作",
+        "position": {
+          "left": "48.3%",
+          "top": "23.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "In the form block, enable submit and trigger workflows.",
+      "image": "https://static-docs.nocobase.com/S3-4.png",
+      "button": {
+        "id": "button5",
+        "label": "在表单区块中，启用提交、触发工作流等操作",
+        "position": {
+          "left": "24.6%",
+          "top": "67.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Now we can perform various operations on the “Leads” collection.",
+      "image": "https://static-docs.nocobase.com/S3-5.png",
+      "button": {
+        "id": "button6",
+        "label": "现在，我们就可以对“线索”表中的数据做各种操作了",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "接下来",
+      "title": "如果我们需要个性化的操作呢？",
+      "description": "What if we need a custom action?"
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Let’s add a JS Action in the form block.",
+      "image": "https://static-docs.nocobase.com/S3-6.png",
+      "button": {
+        "id": "button8",
+        "label": "让我们在表单区块中添加一个 JS Action",
+        "position": {
+          "left": "28.3%",
+          "top": "80.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Call Nathan again and tell him what we need.",
+      "image": "https://static-docs.nocobase.com/S3-7-CN.png",
+      "button": {
+        "id": "button9",
+        "label": "再次呼叫 Nathan，告诉他我们需要什么",
+        "position": {
+          "right": "30.1%",
+          "top": "28.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Nathan has generated the code for us.",
+      "image": "https://static-docs.nocobase.com/S3-8.png",
+      "button": {
+        "id": "button10",
+        "label": "Nathan 为我们生成了代码",
+        "position": {
+          "right": "21.7%",
+          "top": "70.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Run it to see the result. Great — this action can fetch data from a third-party API and auto-fill the form.",
+      "image": "https://static-docs.nocobase.com/S3-9.png",
+      "button": {
+        "id": "button11",
+        "label": "运行看一下效果。很棒，这个 Action 可以从第三方 API 请求数据并自动填写到表单中",
+        "position": {
+          "left": "18.4%",
+          "top": "66.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "我们已经完成了一个最基础的应用的搭建。请关闭弹窗，探索更多特性",
+      "description": "We have completed building a basic app. Close this window and explore more features."
+    },
+    {
+      "id": " ",
+      "title": " ",
+      "description": "",
+      "targetStepId": null
+    }
+  ]
+};
+
+const demo_20250929193842 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI 员工",
+      "title": "在 NocoBase 中，有很多专业的 AI 员工供你调遣",
+      "description": "In NocoBase, you have many professional AI employees at your command."
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "When filling in “Leads” data, ask Dex for help.",
+      "image": "https://static-docs.nocobase.com/F1-1.png",
+      "button": {
+        "id": "button2",
+        "label": "填写“线索”数据时，找 Dex 帮忙",
+        "position": {
+          "left": "46.0%",
+          "top": "76.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "Send messy lead details and files to Dex.",
+      "image": "https://static-docs.nocobase.com/F1-2.png",
+      "button": {
+        "id": "button3",
+        "label": "将杂乱的线索内容、文件发给 Dex",
+        "position": {
+          "right": "26.3%",
+          "top": "61.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Dex organizes the data and auto-fills the form.",
+      "image": "https://static-docs.nocobase.com/F1-3.png",
+      "button": {
+        "id": "button4",
+        "label": "Dex 整理好了这些数据，并自动填到表单中",
+        "position": {
+          "right": "31.7%",
+          "top": "66.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Then call Lexi to translate the form content into Thai.",
+      "image": "https://static-docs.nocobase.com/F1-4.png",
+      "button": {
+        "id": "button5",
+        "label": "然后呼唤 Lexi，让她把表单中的内容翻译成泰语",
+        "position": {
+          "right": "32.1%",
+          "top": "64.5%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "When new customer leads appear, ask Vera to research background information and assist decision-making.",
+      "image": "https://static-docs.nocobase.com/F1-5.png",
+      "button": {
+        "id": "button6",
+        "label": "当我们有了新的客户线索，请 Vera 帮忙，调查客户背景信息，协助我们决策",
+        "position": {
+          "right": "9.5%",
+          "top": "6.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "With one click, Vera searches the web and delivers a research report.",
+      "image": "https://static-docs.nocobase.com/F1-6.png",
+      "button": {
+        "id": "button7",
+        "label": "只需点击一次 Vera，她就会搜索全网信息，汇总为调查报告提供给我们",
+        "position": {
+          "right": "27.9%",
+          "top": "50.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Viz helps us analyze data and generate visual reports.",
+      "image": "https://static-docs.nocobase.com/F1-7.png",
+      "button": {
+        "id": "button8",
+        "label": "而 Viz 帮助我们分析数据，生成可视化报告",
+        "position": {
+          "right": "28.3%",
+          "top": "56.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "More?",
+      "title": "可以拥有更多帮我处理业务或开发系统的员工吗？",
+      "description": "Can we have more employees to handle business or build systems?"
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Of course—go to the AI Employees management interface.",
+      "image": "https://static-docs.nocobase.com/F1-8.png",
+      "button": {
+        "id": "button10",
+        "label": "当然，去 AI 员工 管理界面",
+        "position": {
+          "right": "22.3%",
+          "top": "22.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Create your own AI employee, Max — a contract review expert.",
+      "image": "https://static-docs.nocobase.com/F1-9.png",
+      "button": {
+        "id": "button11",
+        "label": "创建你自己的 AI 员工 Max，他是合同审查专家",
+        "position": {
+          "left": "48.8%",
+          "top": "26.4%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "Configure his skills, model, and knowledge base.",
+      "image": "https://static-docs.nocobase.com/F1-10.png",
+      "button": {
+        "id": "button12",
+        "label": "配置他的技能、模型、知识库",
+        "position": {
+          "right": "16.8%",
+          "top": "19.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "Then place him wherever you need.",
+      "image": "https://static-docs.nocobase.com/F1-11.png",
+      "button": {
+        "id": "button13",
+        "label": "然后，你可以让他出现在需要他的任何地方",
+        "position": {
+          "right": "15.2%",
+          "top": "77.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "Assign the tasks he should perform there.",
+      "image": "https://static-docs.nocobase.com/F1-12.png",
+      "button": {
+        "id": "button14",
+        "label": "并给他设定在此处要做的任务",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "你已经拥有了许多专业的 AI 员工。请关闭弹窗，探索更多特性",
+      "description": "You now have many professional AI employees. Close this window and explore more features."
+    },
+    {
+      "id": " ",
+      "title": " ",
+      "description": "",
+      "targetStepId": null
+    }
+  ]
+};
+
+const demo_20250929200011 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "工作流",
+      "title": "使用工作流编排逻辑，实现流程自动化",
+      "description": "Use workflows to orchestrate logic and automate processes."
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "We have built dozens of workflows to keep business running automatically in this application.",
+      "image": "https://static-docs.nocobase.com/F2-1.png",
+      "button": {
+        "id": "button2",
+        "label": "在这个应用中我们编排了数十个工作流，让很多业务自动运转起来",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "Add a new workflow here and choose its trigger. There are plenty of triggers to pick from.",
+      "image": "https://static-docs.nocobase.com/F2-2.png",
+      "button": {
+        "id": "button3",
+        "label": "从这里添加一个新的工作流，并选择它的触发时机。有丰富的触发时机可供选择。",
+        "position": {
+          "right": "49.7%",
+          "top": "21.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Then configure its logic and actions.",
+      "image": "https://static-docs.nocobase.com/F2-3.png",
+      "button": {
+        "id": "button4",
+        "label": "然后，去配置它的逻辑和动作",
+        "position": {
+          "right": "23.1%",
+          "top": "32.8%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Click the plus sign to add a node.",
+      "image": "https://static-docs.nocobase.com/F2-4.png",
+      "button": {
+        "id": "button5",
+        "label": "点击加号，增加节点",
+        "position": {
+          "right": "47.7%",
+          "top": "27.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "There are dozens of node types to arrange, including flow control, calculation, data operations, manual steps, AI nodes, and more.",
+      "image": "https://static-docs.nocobase.com/F2-5.png",
+      "button": {
+        "id": "button6",
+        "label": "有数十种节点可供编排，包括流程控制，运算，数据操作，人工操作，AI 节点，等等",
+        "position": {
+          "right": "48.7%",
+          "top": "24.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Check out this running workflow.",
+      "image": "https://static-docs.nocobase.com/F2-6.png",
+      "button": {
+        "id": "button7",
+        "label": "看一下这个运行中的工作流",
+        "position": {
+          "right": "37.8%",
+          "top": "26.2%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "You can trigger it manually to debug results.",
+      "image": "https://static-docs.nocobase.com/F2-7.png",
+      "button": {
+        "id": "button8",
+        "label": "可以手动触发，调试结果",
+        "position": {
+          "right": "22.5%",
+          "top": "12.1%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "You can record and switch versions.",
+      "image": "https://static-docs.nocobase.com/F2-8.png",
+      "button": {
+        "id": "button9",
+        "label": "可以记录并切换版本",
+        "position": {
+          "right": "15.9%",
+          "top": "15.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "You can view execution history.",
+      "image": "https://static-docs.nocobase.com/F2-9.png",
+      "button": {
+        "id": "button10",
+        "label": "可以查看运行记录",
+        "position": {
+          "right": "46.2%",
+          "top": "31.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "You can view the execution log of each node.",
+      "image": "https://static-docs.nocobase.com/F2-10.png",
+      "button": {
+        "id": "button11",
+        "label": "可以查看每个节点的运行日志",
+        "position": {
+          "right": "37.4%",
+          "top": "62.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "Continue.",
+      "image": "https://static-docs.nocobase.com/F2-11.png",
+      "button": {
+        "id": "button12",
+        "label": "继续",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "工作流可以让你的业务自动化运转。请关闭弹窗，探索更多特性。",
+      "description": "Workflows can keep your business running automatically. Close this window and explore more features."
+    },
+    {
+      "id": "",
+      "title": "",
+      "description": ""
+    }
+  ]
+};
+
+const demo_20250929200757 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "权限",
+      "title": "基于资源与操作的访问控制模型",
+      "description": "Resource- and action-based access control model"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "Create roles as needed",
+      "image": "https://static-docs.nocobase.com/F3-1.png",
+      "button": {
+        "id": "button2",
+        "label": "按需创建角色",
+        "position": {
+          "left": "25.2%",
+          "top": "21.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "Assign system permissions to roles, including plugin permissions",
+      "image": "https://static-docs.nocobase.com/F3-2.png",
+      "button": {
+        "id": "button3",
+        "label": "为角色分配系统权限，包括每一个插件的权限",
+        "position": {
+          "left": "39.9%",
+          "top": "29.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Configure data source permissions for each role",
+      "image": "https://static-docs.nocobase.com/F3-3.png",
+      "button": {
+        "id": "button4",
+        "label": "配置角色的数据源权限",
+        "position": {
+          "left": "46.6%",
+          "top": "31.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Set global permissions for each data source",
+      "image": "https://static-docs.nocobase.com/F3-4.png",
+      "button": {
+        "id": "button5",
+        "label": "配置每个数据源的全局权限",
+        "position": {
+          "right": "28.4%",
+          "top": "44.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Configure permissions for each collection",
+      "image": "https://static-docs.nocobase.com/F3-5.png",
+      "button": {
+        "id": "button6",
+        "label": "为每个数据表单独配置权限",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Configure action-level permissions for each dataset",
+      "image": "https://static-docs.nocobase.com/F3-6.png",
+      "button": {
+        "id": "button7",
+        "label": "配置每个操作针对每个数据集的权限",
+        "position": {
+          "right": "15.8%",
+          "top": "36.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Configure action-level permissions for each field",
+      "image": "https://static-docs.nocobase.com/F3-6.png",
+      "button": {
+        "id": "button8",
+        "label": "配置每个操作针对每个字段的权限",
+        "position": {
+          "right": "29.1%",
+          "top": "56.7%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Configure route (menu) permissions",
+      "image": "https://static-docs.nocobase.com/F3-7.png",
+      "button": {
+        "id": "button9",
+        "label": "配置路由（菜单）的权限",
+        "position": {
+          "right": "42.8%",
+          "top": "24.4%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Configure AI employee permissions",
+      "image": "https://static-docs.nocobase.com/F3-8.png",
+      "button": {
+        "id": "button10",
+        "label": "配置 AI 员工的权限",
+        "position": {
+          "right": "27.0%",
+          "top": "23.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Define permission policies—when users have multiple roles, allow independent switching or merging",
+      "image": "https://static-docs.nocobase.com/F3-9.png",
+      "button": {
+        "id": "button11",
+        "label": "还可以配置权限策略，当用户拥有多角色时，独立切换或取并集",
+        "position": {
+          "left": "40.5%",
+          "top": "22.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "NocoBase 为你提供强大的权限控制能力。请关闭弹窗，探索更多特性。",
+      "description": "NocoBase provides powerful permission control. Close this window to explore more features."
+    },
+    {
+      "id": "",
+      "title": "",
+      "description": ""
+    }
+  ]
+};
+
+const demo_20250929202533 = {
+  "title": "",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "集成",
+      "title": "将 NocoBase 与其他应用集成",
+      "description": "Connect NocoBase with other applications."
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "Log in to NocoBase with SSO, supporting all common protocols.",
+      "image": "https://static-docs.nocobase.com/W3-1.png",
+      "button": {
+        "id": "button2",
+        "label": "使用 SSO 能力登录 NocoBase，支持所有常见的协议",
+        "position": {
+          "right": "12.4%",
+          "top": "18.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "Add an external application’s database as a data source in NocoBase.",
+      "image": "https://static-docs.nocobase.com/W3-2.png",
+      "button": {
+        "id": "button3",
+        "label": "将外部应用的数据库添加为 NocoBase 的数据源",
+        "position": {
+          "right": "12.6%",
+          "top": "17.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Use an HTTP request node in a workflow to call third-party APIs.",
+      "image": "https://static-docs.nocobase.com/W3-3.png",
+      "button": {
+        "id": "button4",
+        "label": "在工作流中使用 HTTP 请求节点，请求第三方 API",
+        "position": {
+          "left": "47.8%",
+          "top": "41.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Use a Webhook trigger in a workflow to receive requests from other applications.",
+      "image": "https://static-docs.nocobase.com/W3-4.png",
+      "button": {
+        "id": "button5",
+        "label": "在工作流中使用 Webhook 触发器，接收其他应用的请求",
+        "position": {
+          "left": "47.3%",
+          "top": "25.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "NocoBase automatically generates HTTP APIs for other applications to use.",
+      "image": "https://static-docs.nocobase.com/W3-5.png",
+      "button": {
+        "id": "button6",
+        "label": "NocoBase 自动生成 HTTP API，供其他应用使用",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Embed NocoBase pages into other applications.",
+      "image": "https://static-docs.nocobase.com/W3-6.png",
+      "button": {
+        "id": "button7",
+        "label": "将 NocoBase 的页面嵌入其他应用",
+        "position": {
+          "right": "15.7%",
+          "top": "25.5%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Embed other applications’ pages into NocoBase.",
+      "image": "https://static-docs.nocobase.com/W3-7.png",
+      "button": {
+        "id": "button8",
+        "label": "将其他应用的页面嵌入 NocoBase",
+        "position": {
+          "left": "48.8%",
+          "top": "60.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Use JS Actions, JS Blocks, and more to freely integrate with third parties.",
+      "image": "https://static-docs.nocobase.com/W3-8.png",
+      "button": {
+        "id": "button9",
+        "label": "使用 JS Action、JS Block 等能力自由地与第三方集成",
+        "position": {
+          "right": "34.3%",
+          "top": "46.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "您可以选择合适的方式将 NocoBase 与您的应用集成。关闭此窗口探索更多功能。",
+      "description": ""
+    },
+    {
+      "id": "",
+      "title": "",
+      "description": ""
+    }
+  ]
+};
 ---
 
 <Layout>
     <!-- Hero Start -->
     <section class="bg-half-260 bg-light d-table w-100">
-        <!-- <div class="bg-overlay"></div> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-heading text-center mt-4">
-                        <h1 class="display-4 fw-bold mb-3">
-                            极易扩展的<br />无代码开发平台
-                        </h1>
-                        <p class="para-desc mx-auto text-muted">
-                            完全掌控，无限扩展，助力你的开发团队快速响应变化，显著降低成本。<br
-                            />这一切，不必投入几年时间和数百万资金研发<br />-
-                            只需要花几分钟部署 NocoBase。
-                        </p>
-                        <div class="mt-4 pt-2">
-                            <a
-                                href="#section-for-you"
-                                class="btn btn-primary mb-2"
-                                >适合你吗？<i class="uil uil-arrow-down"></i></a
-                            >
-                            <a
-                                href="https://demo-cn.nocobase.com/new"
-                                target="_blank"
-                                class="btn btn-outline-primary mb-2"
-                                >在线体验<i class="uil uil-angle-right-b"
-                                ></i></a
-                            >
-                        </div>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- Hero End -->
-
-    <!-- Shape Start -->
-    <div class="position-relative">
-        <div class="shape overflow-hidden text-color-white">
-            <svg
-                viewBox="0 0 2880 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
-                    fill="currentColor"></path>
-            </svg>
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">极易扩展的<br />AI 无代码开发平台</h1>
+          <p class="para-desc mx-auto text-muted">
+            完全掌控，无限扩展，AI 协同。<br />
+            让你的团队快速响应变化，大幅降低成本。<br />
+            无需多年研发，无需数百万投入。<br />
+            花几分钟部署 NocoBase，立即拥有一切。
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="#section-video" title="了解更多" class="btn btn-primary mb-2">了解更多<i class="uil uil-arrow-down"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">在线体验<i class="uil uil-angle-right-b"></i></a>
+          </div>
         </div>
-    </div>
-    <!--Shape End-->
 
-    <!-- For you Start -->
-    <section class="section pb-0" id="section-for-you">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h3 class="title mb-4">NocoBase 适合谁</h3>
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            你的开发团队为自身或者客户交付各种业务系统，你们正在面临这样的<span
-                                class="text-primary fw-bold">严重困扰</span
-                            >：
-                        </p>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
+        <div class="row justify-content-center mt-5 pt-5" id="section-video">
+          <div class="col-lg-10 text-center">
+            <div class="home-video">
+              <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
+              <div class="bg-overlay rounded-md shadow-lg" style=""></div>
+              <div class="play-icon">
+                <a href="?fallback_url" class="play-btn lightbox" data-type="html" data-target="#nocobase_video_lightbox" title="Watch NocoBase Video">
+                  <i class="mdi mdi-play text-primary rounded-circle shadow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!--end row-->
+      </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
 
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="d-flex features feature-primary pt-4 pb-4">
-                        <div
-                            class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
-                        >
-                            <i
-                                class="uil uil-silent-squint text-primary text-warning"
-                            ></i>
-                        </div>
-                        <div class="flex-1">
-                            <p class="para mb-0">业务需求<br />频繁变化</p>
-                        </div>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="d-flex features feature-primary pt-4 pb-4">
-                        <div
-                            class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
-                        >
-                            <i
-                                class="uil uil-silent-squint text-primary text-warning"
-                            ></i>
-                        </div>
-                        <div class="flex-1">
-                            <p class="para mb-0">交付时间<br />短暂紧迫</p>
-                        </div>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="d-flex features feature-primary pt-4 pb-4">
-                        <div
-                            class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
-                        >
-                            <i
-                                class="uil uil-silent-squint text-primary text-warning"
-                            ></i>
-                        </div>
-                        <div class="flex-1">
-                            <p class="para mb-0">开发流程<br />迟钝漫长</p>
-                        </div>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-4 col-6">
-                    <div class="d-flex features feature-primary pt-4 pb-4">
-                        <div
-                            class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
-                        >
-                            <i
-                                class="uil uil-silent-squint text-primary text-warning"
-                            ></i>
-                        </div>
-                        <div class="flex-1">
-                            <p class="para mb-0">人员成本<br />居高不下</p>
-                        </div>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mt-5 mb-4 pb-2">
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            你的团队已经意识到需要抛弃传统开发方式，引入无代码开发可能是很好的选择。但你们经过调研或尝试后，对无代码平台有<span
-                                class="text-primary fw-bold">诸多担忧</span
-                            >。
-                        </p>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row justify-content-center">
-                <div
-                    class="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0"
-                >
-                    <ul class="list-unstyled">
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >无代码能力有限，主要是表单或表格
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >笨重死板，遇到无法满足的需求时无可奈何
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >看不到源代码，数据在第三方服务器，隐私和安全难保证
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >系统不稳定，遇到问题又难以追踪和排查
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >与现有的系统难以无缝融合
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-sad-dizzy align-middle text-warning"
-                                ></i></span
-                            >按用户或按应用收费，被绑架，购买的产品并不属于自己
-                        </li>
-                    </ul>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mt-4 mb-4 pb-2">
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            不必担忧！试一试 NocoBase<br />
-                            NocoBase 就是为你的开发团队量身定制的<span
-                                class="text-primary fw-bold">基础设施</span
-                            >！
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-2 text-center">
-                        <a href="#section-how" class="btn btn-primary"
-                            >如何做到？ <i class="uil uil-arrow-down"></i></a
-                        >
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- For you End -->
-
-    <!-- How Start -->
-    <section class="section pb-0" id="section-how">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h3 class="title mb-4">NocoBase 是如何做的</h3>
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            “无代码”对于快速开发业务系统有很大的帮助，但不可能满足所有需求，NocoBase
-                            的设计原则是：
-                        </p>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7 p-4 bg-light rounded shadow text-center">
-                    <p class="mb-0">
-                        <span
-                            class="text-primary fw-bold"
-                            style="font-size: 20px;">80%</span
-                        > 的需求通过无代码实现，<span
-                            class="text-primary fw-bold"
-                            style="font-size: 20px;">20%</span
-                        > 由扩展开发实现。
-                    </p>
+  <!-- Demo Start -->
+  <section class="section pb-0 mt-5" id="section-3-steps">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">亲自试一试：3 步创建一个 <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "客户关系管理", "项目管理", "工单系统", "库存管理", "订单管理" ]'></span></h3>
+                    <p class="text-muted para-desc mx-auto mb-0">先定义“数据”来源，再使用“区块”将数据展示出来，最后用“操作”来处理数据。</p>
                 </div>
-            </div><!--end row-->
-
-            <div class="row align-items-top mt-100">
-                <div class="col-lg-5 col-md-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            <span class="text-primary">数据模型驱动</span
-                            >，“数据结构”与“使用界面”分离
-                        </h5>
-                        <p class="text-muted">
-                            相比于表单和表格驱动，数据模型驱动可以提供没有上限的开发能力。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >数据和 UI 解耦
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >同一张表、同一条记录可以创建任意数量、任意形态的区块和操作
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >支持主数据库、外部数据库、第三方 API 作为数据源
-                            </li>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                           与 <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Orin">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseYellow-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseYellow-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23FEEAC3%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.356%203.884-25.823-46.25.844-33.982%205.866%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.236-5.145%2065.104%2024.254%203.915%2040.144-.024%2082.156-24.972%2082.159a46.7%2046.7%200%200%201-8.132-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.166%2031.253-46.934%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%23FFB804%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%23FFB804%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M159.838%2011.324c11.056-1.832%2019.408%204.698%2019.408%204.698.042-.026%207.393-4.486%2015.835%201.102%208.466%205.605%206.809%2011.957%206.809%2011.957.042-.005%2015.003-1.862%2024.937%2012.161%209.949%2014.043%202.018%2027.016%202.018%2027.016s10.633-4.246%2014.597%204.302c3.961%208.539-2.721%2015.27-2.736%2015.286.053.032%207.586%204.593%207.285%2016.591-.301%2012.014-7.253%2014.954-7.285%2014.968.039.061%205.428%208.415-1.471%2017.178-6.925%208.795-16.859%204.586-16.859%204.586.011.036%203.467%2011.169-3.476%2016.324l-.048.034c2.891-14.975%202.774-33.96.968-52.542-2.838-29.195-35.931%206.633-64.435-24.085%201.584%2030.718-14.779%2034.425-20.586%2030.718-26.392-12.181-26.92%2037.602-.835%2033.745-.007.388.066%2011.847.143%2024.565-6.038.496-10.379-1.532-10.379-7.791%200%200-7.256%203.838-13.908%200s-8.207-10.085-8.207-10.085c-.028.02-9.239%206.724-17.19-2.127-7.938-8.836-2.253-14.164-2.218-14.197-.04-.008-9.875-2.013-9.875-12.668%200-10.676%206.64-14.538%206.64-14.538-.041-.022-8.75-4.62-6.64-17.212%202.11-12.59%209.834-15.42%209.875-15.435%200%200-3.245-14.153%205.545-23.947%208.764-9.766%2020.266-9.788%2020.332-9.788%200%200-.968-14.557%2012.622-18.91s21.882%202.586%2021.882%202.586%206.196-12.66%2017.252-14.492%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m132.717%20268.623-17.632-50.248-4.841%201.693%2017.633%2050.249zM74%20239.868l22.637%2034.171%204.237-2.885-22.636-34.172zm112.204%2030.583%2021.802-52.49-4.737-1.961-21.803%2052.489zm53.523-34.083-24.688%2037.127%204.274%202.832L244%20239.2z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M104.314%20272.67h104.788c3.22%200%205.83%202.606%205.83%205.821v36.388H98.484v-36.388a5.826%205.826%200%200%201%205.83-5.821m104.788-5.121c6.053%200%2010.959%204.899%2010.959%2010.942V320H93.354v-41.509c0-6.043%204.907-10.942%2010.96-10.942z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M130.461%20130.382c0%202.972-2.118%205.382-4.73%205.382s-4.731-2.41-4.731-5.382%202.118-5.382%204.731-5.382%204.73%202.41%204.73%205.382%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M136.174%20180.158c-7.353-20.418-10.569-39.978-11.03-48.261l4.721-.34c.426%207.639%203.508%2026.626%2010.687%2046.561%207.191%2019.967%2018.324%2040.409%2034.592%2051.54l.084.057.079.065s.072.096.445.022c.433-.087%201.117-.385%202.073-1.098%201.91-1.424%204.366-4.088%207.28-8.053%205.795-7.884%2012.978-20.328%2020.75-36.403l4.145%202.594c-7.841%2016.217-15.193%2029-21.266%2037.261-3.019%204.108-5.828%207.246-8.316%209.102-2.281%201.701-5.26%202.995-7.784%201.015-17.516-12.022-29.129-33.706-36.46-54.062%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M175.403%20310v-78.036h4.731V310z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 一起，配置“数据源”
+                        </h6>
+                        <p class="text-muted para">定义你的主数据库模型，或者连接外部数据库或 API 作为数据源。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 试一下 <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Step 01.</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
-
-                <div class="col-lg-7">
-                    <div class="card rounded border-0 shadow ms-lg-5">
-                        <div class="card-body feature-card-img">
-                            <img
-                                src="https://static-docs.nocobase.com/model.png"
-                                alt="NocoBase 数据模型"
-                            />
-                        </div>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row align-items-top mt-100">
-                <div class="col-lg-5 col-md-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            <span class="text-primary">所见即所得</span
-                            >，使用超简单
-                        </h5>
-                        <p class="text-muted">
-                            NocoBase
-                            可以开发复杂和有特色的业务系统，但它的使用却非常简单。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >一键切换使用模式和配置模式
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >页面就是一块画布，在画布上摆放各种区块和操作，组合出合适的界面，就像
-                                Notion
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >界面配置模式为普通人设计，而不是为程序员设计
-                            </li>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            与 <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Nathan">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22basePurple-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23basePurple-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23E5D1F4%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.357%203.884-25.823-46.25.843-33.982%205.867%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.237-5.145%2065.104%2024.254%203.916%2040.144-.023%2082.156-24.971%2082.159a46.7%2046.7%200%200%201-8.133-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.165%2031.253-46.933%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%23A250CC%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%23A250CC%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M128.016%2068.87s14.658-23.072%2026.428-21.913c11.77%201.16%203.989%2012.65%203.989%2012.65s18.185-14.238%2031.323-9.173c13.137%205.066%203.545%2016.38%203.545%2016.38s18.202-6.694%2020.825%202.05-7.431%2016.24-7.431%2016.24c.013.005%2014.711%204.346%2017.769%2013.62%202.176%206.602-.348%2025.63-3.786%2036.603.81-12.175.057-25.498-1.659-37.156-21.887-1.59-53.369%2019.564-68.656%2014.182s2.646%2014.95-3.316%2017.084c-5.95%202.129-11.195-10.776-11.215-10.825-22.519-8.567-21.597%2029.729-.325%2026.755q.365.05.746.099c.097%202.131.44%207.828.847%2014.486-8.654%205.921-22.075-9.874-22.12-9.927-2.056-2.196-20.694-22.662-15.313-46.053%205.381-23.392%2014.931-14.736%2014.931-14.736s-.449-20.037%205.649-25.094c6.099-5.056%207.769%204.728%207.769%204.728%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M166.154%20322H39s.191-2.183.589-5.803c1.448-13.187%205.64-45.444%2013.327-60.755%209.798-19.514%2055.447-34.501%2055.447-34.501%205.98%202.323%2010.053%2017.131%2014.893%2034.729%206.12%2022.253%2013.467%2048.965%2027.448%2060.527%204.428%203.662%209.52%205.803%2015.45%205.803%202.851%200%205.567-2.141%208.176-5.803%206.808-9.551%2012.892-29.441%2018.757-48.612%206.871-22.462%2013.441-43.936%2020.518-46.644%200%200%2047.162%2017.03%2056.957%2036.539%207.637%2015.21%2012.75%2045.92%2014.632%2058.717.532%203.617.806%205.803.806%205.803zm113.121-5.803H181.27c1.227-2.089%202.381-4.372%203.475-6.756%204.316-9.412%208.309-21.849%2012.072-34.062a2766%202766%200%200%200%201.893-6.169c3.126-10.219%206.121-20.008%209.125-27.951%201.802-4.764%203.514-8.606%205.134-11.349.638-1.081%201.179-1.846%201.608-2.382%201.156.452%202.607%201.033%204.285%201.73%204.475%201.86%2010.523%204.532%2016.85%207.787%206.348%203.266%2012.848%207.055%2018.289%2011.127%205.547%204.151%209.473%208.218%2011.318%2011.894%204.495%208.951%208.24%2024.344%2010.883%2038.077a443%20443%200%200%201%203.073%2018.054m-136.901%200H45.48l.136-1.199a425%20425%200%200%201%202.453-18.057c2.266-14.27%205.646-30.063%2010.09-38.914%201.843-3.669%205.668-7.604%2011.038-11.543%205.276-3.87%2011.565-7.399%2017.71-10.407%206.123-2.997%2011.97-5.413%2016.295-7.081a197%20197%200%200%201%204.041-1.511c.37.509.829%201.232%201.361%202.247%201.426%202.723%202.858%206.544%204.373%2011.344%201.503%204.759%203%2010.199%204.619%2016.087l.019.069c1.604%205.829%203.317%2012.057%205.219%2018.25%203.788%2012.333%208.482%2025.072%2015.003%2034.808%201.394%202.079%202.902%204.067%204.537%205.907%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.103%20231.057c-4.694%205.723-12.693%2012.319-23.379%2012.319-11.36%200-25.289-15.152-12.731-32.052%201.472-1.982%203.59-4.131%205.653-5.865%202.387-2.007%204.7-3.459%205.857-3.459v7.529c0%207.436%2014.07%2011.539%2023.406%2012.918%201.857.274%203.527.44%204.861.503a51%2051%200%200%200%204.8-.473c9.485-1.347%2023.39-5.457%2023.39-12.948V202c1.157%200%203.47%201.452%205.857%203.459%202.063%201.734%204.18%203.883%205.653%205.865%2012.558%2016.9-1.371%2032.052-12.731%2032.052-10.686%200-18.685-6.596-23.38-12.319a40%2040%200%200%201-1.826-2.403%2034%2034%200%200%201-1.618-2.529l-.184-.325-.107.192a33%2033%200%200%201-1.687%202.651%2040%2040%200%200%201-1.834%202.414m-4.818-3.331a33.6%2033.6%200%200%201-4.57%204.502c-3.847%203.101-8.541%205.345-13.991%205.345-3.291%200-7.789-2.408-10.224-6.72-2.159-3.822-2.77-9.386%202.209-16.088.415-.559.915-1.155%201.467-1.76.915%202.911%202.885%205.176%204.893%206.811%202.746%202.236%206.216%203.871%209.542%205.075%203.483%201.26%207.236%202.197%2010.674%202.835m16.926.041c3.523-.64%207.345-1.592%2010.873-2.884%203.298-1.21%206.726-2.853%209.432-5.105%201.981-1.648%203.886-3.901%204.776-6.768a23%2023%200%200%201%201.462%201.755m-26.543%2013.002a33.5%2033.5%200%200%200%204.537%204.461c3.846%203.102%208.54%205.345%2013.991%205.345%203.291%200%207.789-2.408%2010.224-6.72%202.159-3.822%202.77-9.387-2.209-16.088%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M120.117%20129.412c1.918%202.669%208.873%207.368%2011.547%205.454s.055-9.717-1.863-12.385a5.967%205.967%200%200%200-8.315-1.366%205.94%205.94%200%200%200-1.369%208.297%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.332%20123.625a1.25%201.25%200%200%201-1.004%201.465l-21.824%204.145a1.266%201.266%200%200%201-1.481-.993%201.25%201.25%200%200%201%201.003-1.464l21.825-4.145c.686-.13%201.35.314%201.481.992%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m181.373%20106.705-24.492%203.405c-1.49.207-2.469%201.645-2.102%203.088l6.206%2024.407a2.53%202.53%200%200%200%202.806%201.867l21.808-3.03c1.384-.192%202.348-1.458%202.154-2.826l-3.522-24.78c-.194-1.37-1.474-2.323-2.858-2.131m-24.845.926c-2.979.415-4.937%203.292-4.203%206.177l6.207%2024.407c.63%202.481%203.05%204.091%205.612%203.736l21.807-3.031c2.768-.385%204.697-2.916%204.307-5.653l-3.522-24.78c-.388-2.737-2.947-4.644-5.716-4.26zm45.73-3.7%2024.492-3.404c1.49-.206%202.832.91%202.881%202.396l.838%2025.154a2.51%202.51%200%200%201-2.178%202.56l-21.807%203.031c-1.384.192-2.663-.761-2.858-2.13l-3.522-24.781c-.194-1.368.77-2.633%202.154-2.826m24.14-5.881c2.979-.415%205.664%201.817%205.763%204.791l.836%2025.153c.085%202.556-1.792%204.765-4.354%205.121l-21.807%203.031c-2.768.385-5.326-1.523-5.716-4.26l-3.521-24.78c-.389-2.737%201.539-5.268%204.307-5.652z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m201.207%20119.546-13.917%202.189-.398-2.471%2013.918-2.19z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 一起，使用“区块”展示数据
+                        </h6>
+                        <p class="text-muted para">在页面上通过表格、表单、图表、日历等区块直观地组织和展示数据。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Step 02.</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
-
-                <div class="col-lg-7 col-md-7">
-                    <div class="card rounded border-0 shadow ms-lg-5">
-                        <div class="card-body feature-card-img">
-                            <img
-                                src="https://static-docs.nocobase.com/wysiwyg.gif"
-                                alt="NocoBase WYSIWYG 编辑器"
-                            />
-                        </div>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row align-items-top mt-100">
-                <div class="col-lg-5 col-md-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            一切皆<span class="text-primary">插件</span
-                            >，为扩展开发而生
-                        </h5>
-                        <p class="text-muted">
-                            面对复杂多变的业务场景，靠堆砌无代码能力来试图穷尽所有需求是徒劳的。
-                            NocoBase
-                            为扩展开发而生，自由扩展插件，满足各种需求。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >采用微内核架构，全部功能都是插件，就像
-                                Wordpress
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >插件即插即用
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >无论是页面、区块、操作，还是
-                                API、数据源，都可以开发新的插件来满足新的需求
-                            </li>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            与 <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Nathan">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22basePurple-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23basePurple-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23E5D1F4%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.357%203.884-25.823-46.25.843-33.982%205.867%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.237-5.145%2065.104%2024.254%203.916%2040.144-.023%2082.156-24.971%2082.159a46.7%2046.7%200%200%201-8.133-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.165%2031.253-46.933%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%23A250CC%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%23A250CC%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M128.016%2068.87s14.658-23.072%2026.428-21.913c11.77%201.16%203.989%2012.65%203.989%2012.65s18.185-14.238%2031.323-9.173c13.137%205.066%203.545%2016.38%203.545%2016.38s18.202-6.694%2020.825%202.05-7.431%2016.24-7.431%2016.24c.013.005%2014.711%204.346%2017.769%2013.62%202.176%206.602-.348%2025.63-3.786%2036.603.81-12.175.057-25.498-1.659-37.156-21.887-1.59-53.369%2019.564-68.656%2014.182s2.646%2014.95-3.316%2017.084c-5.95%202.129-11.195-10.776-11.215-10.825-22.519-8.567-21.597%2029.729-.325%2026.755q.365.05.746.099c.097%202.131.44%207.828.847%2014.486-8.654%205.921-22.075-9.874-22.12-9.927-2.056-2.196-20.694-22.662-15.313-46.053%205.381-23.392%2014.931-14.736%2014.931-14.736s-.449-20.037%205.649-25.094c6.099-5.056%207.769%204.728%207.769%204.728%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M166.154%20322H39s.191-2.183.589-5.803c1.448-13.187%205.64-45.444%2013.327-60.755%209.798-19.514%2055.447-34.501%2055.447-34.501%205.98%202.323%2010.053%2017.131%2014.893%2034.729%206.12%2022.253%2013.467%2048.965%2027.448%2060.527%204.428%203.662%209.52%205.803%2015.45%205.803%202.851%200%205.567-2.141%208.176-5.803%206.808-9.551%2012.892-29.441%2018.757-48.612%206.871-22.462%2013.441-43.936%2020.518-46.644%200%200%2047.162%2017.03%2056.957%2036.539%207.637%2015.21%2012.75%2045.92%2014.632%2058.717.532%203.617.806%205.803.806%205.803zm113.121-5.803H181.27c1.227-2.089%202.381-4.372%203.475-6.756%204.316-9.412%208.309-21.849%2012.072-34.062a2766%202766%200%200%200%201.893-6.169c3.126-10.219%206.121-20.008%209.125-27.951%201.802-4.764%203.514-8.606%205.134-11.349.638-1.081%201.179-1.846%201.608-2.382%201.156.452%202.607%201.033%204.285%201.73%204.475%201.86%2010.523%204.532%2016.85%207.787%206.348%203.266%2012.848%207.055%2018.289%2011.127%205.547%204.151%209.473%208.218%2011.318%2011.894%204.495%208.951%208.24%2024.344%2010.883%2038.077a443%20443%200%200%201%203.073%2018.054m-136.901%200H45.48l.136-1.199a425%20425%200%200%201%202.453-18.057c2.266-14.27%205.646-30.063%2010.09-38.914%201.843-3.669%205.668-7.604%2011.038-11.543%205.276-3.87%2011.565-7.399%2017.71-10.407%206.123-2.997%2011.97-5.413%2016.295-7.081a197%20197%200%200%201%204.041-1.511c.37.509.829%201.232%201.361%202.247%201.426%202.723%202.858%206.544%204.373%2011.344%201.503%204.759%203%2010.199%204.619%2016.087l.019.069c1.604%205.829%203.317%2012.057%205.219%2018.25%203.788%2012.333%208.482%2025.072%2015.003%2034.808%201.394%202.079%202.902%204.067%204.537%205.907%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.103%20231.057c-4.694%205.723-12.693%2012.319-23.379%2012.319-11.36%200-25.289-15.152-12.731-32.052%201.472-1.982%203.59-4.131%205.653-5.865%202.387-2.007%204.7-3.459%205.857-3.459v7.529c0%207.436%2014.07%2011.539%2023.406%2012.918%201.857.274%203.527.44%204.861.503a51%2051%200%200%200%204.8-.473c9.485-1.347%2023.39-5.457%2023.39-12.948V202c1.157%200%203.47%201.452%205.857%203.459%202.063%201.734%204.18%203.883%205.653%205.865%2012.558%2016.9-1.371%2032.052-12.731%2032.052-10.686%200-18.685-6.596-23.38-12.319a40%2040%200%200%201-1.826-2.403%2034%2034%200%200%201-1.618-2.529l-.184-.325-.107.192a33%2033%200%200%201-1.687%202.651%2040%2040%200%200%201-1.834%202.414m-4.818-3.331a33.6%2033.6%200%200%201-4.57%204.502c-3.847%203.101-8.541%205.345-13.991%205.345-3.291%200-7.789-2.408-10.224-6.72-2.159-3.822-2.77-9.386%202.209-16.088.415-.559.915-1.155%201.467-1.76.915%202.911%202.885%205.176%204.893%206.811%202.746%202.236%206.216%203.871%209.542%205.075%203.483%201.26%207.236%202.197%2010.674%202.835m16.926.041c3.523-.64%207.345-1.592%2010.873-2.884%203.298-1.21%206.726-2.853%209.432-5.105%201.981-1.648%203.886-3.901%204.776-6.768a23%2023%200%200%201%201.462%201.755m-26.543%2013.002a33.5%2033.5%200%200%200%204.537%204.461c3.846%203.102%208.54%205.345%2013.991%205.345%203.291%200%207.789-2.408%2010.224-6.72%202.159-3.822%202.77-9.387-2.209-16.088%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M120.117%20129.412c1.918%202.669%208.873%207.368%2011.547%205.454s.055-9.717-1.863-12.385a5.967%205.967%200%200%200-8.315-1.366%205.94%205.94%200%200%200-1.369%208.297%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.332%20123.625a1.25%201.25%200%200%201-1.004%201.465l-21.824%204.145a1.266%201.266%200%200%201-1.481-.993%201.25%201.25%200%200%201%201.003-1.464l21.825-4.145c.686-.13%201.35.314%201.481.992%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m181.373%20106.705-24.492%203.405c-1.49.207-2.469%201.645-2.102%203.088l6.206%2024.407a2.53%202.53%200%200%200%202.806%201.867l21.808-3.03c1.384-.192%202.348-1.458%202.154-2.826l-3.522-24.78c-.194-1.37-1.474-2.323-2.858-2.131m-24.845.926c-2.979.415-4.937%203.292-4.203%206.177l6.207%2024.407c.63%202.481%203.05%204.091%205.612%203.736l21.807-3.031c2.768-.385%204.697-2.916%204.307-5.653l-3.522-24.78c-.388-2.737-2.947-4.644-5.716-4.26zm45.73-3.7%2024.492-3.404c1.49-.206%202.832.91%202.881%202.396l.838%2025.154a2.51%202.51%200%200%201-2.178%202.56l-21.807%203.031c-1.384.192-2.663-.761-2.858-2.13l-3.522-24.781c-.194-1.368.77-2.633%202.154-2.826m24.14-5.881c2.979-.415%205.664%201.817%205.763%204.791l.836%2025.153c.085%202.556-1.792%204.765-4.354%205.121l-21.807%203.031c-2.768.385-5.326-1.523-5.716-4.26l-3.521-24.78c-.389-2.737%201.539-5.268%204.307-5.652z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m201.207%20119.546-13.917%202.189-.398-2.471%2013.918-2.19z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 一起，使用“操作”处理数据
+                        </h6>
+                        <p class="text-muted para">通过操作对数据进行新增、编辑、查询、导入、导出、触发工作流等处理。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Step 03.</li>
+                            <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
 
-                <div class="col-lg-7 col-md-7">
-                    <div class="card rounded border-0 shadow ms-lg-5">
-                        <div class="card-body feature-card-img">
-                            <img
-                                src="https://static-docs.nocobase.com/plugins.png"
-                                alt="NocoBase 插件系统"
-                            />
+  <!-- Advanced Feature Start -->
+  <section class="section pb-0" id="section-advanced-feature">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">接下来：探索更多核心能力 </h3>
+                    <p class="text-muted para-desc mx-auto mb-0">解锁 AI 员工、工作流和权限等强大功能，构建更智能的业务系统。</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Orin">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseGreen-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160a160%20160%200%201%200-320%200%20160%20160%200%200%200%20320%200%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseGreen-a)%22%3E%3Cpath%20d%3D%22M320%20160a160%20160%200%201%200-320%200%20160%20160%200%200%200%20320%200%22%20fill%3D%22%23C0E4A3%22%2F%3E%3Cpath%20d%3D%22m133.7%20203-.3-57.7c-26.3%203.9-25.8-46.2.9-34%205.8%203.8%2022.4%200%2020.8-31%2028.8%2031%2062.2-5%2065%2024.4%204%2040%200%2082.1-25%2082.1q-4%200-8-.8v17c0%2010.7%2019.2%2016%2019.2%2016s-33.2%2031.3-47%2031.1-44.8-31-44.8-31%2019.2-5.4%2019.2-16%22%20fill%3D%22%23517933%22%2F%3E%3Cpath%20d%3D%22M187%20186a105%20105%200%200%201-36.9-16.1s9.2%2022.5%2037%2026.8z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.5%20251c7.8%2017.3%2011.8%2069.4%2011.8%2069.4H50.5s4-52.1%2011.8-69.3c6.7-15%2051.4-32.4%2064.5-37.4a43%2043%200%200%200%2033.6%2013.9c15.2%200%2026-5.4%2033.6-13.9%2013%205%2057.7%2022.3%2064.5%2037.4%22%20fill%3D%22%23517933%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M89.6%20124.5C95.9%2050.2%20165.2%2040.1%20206%2077c33.9-7.4%2023.5%2025.6%2014.8%2043v-1.1q-.4-10.3-1.8-19.8c-31.6-5.6-54.3%2018.9-69.8%2013.5s2.6%2014.7-3.5%2016.8q-1.6.4-3.3-.3-2-1.6-4-3.6c-2.4-3-4-6.8-4-6.8-23-8.7-22.1%2029.9.2%2026%200%202.3.5%209.9%201%2018.2-3.3-3.8-10.5-7.4-12.3-8.9-22-10.4-24.7-24.2-23.2-29.9-9.3%204-11%202-10.5.4%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M212%20138.3c8.3.8%2015.7-5.5%2016.4-14s-5.4-16-13.8-16.7a15.3%2015.3%200%200%200-16.5%2014c-.7%208.5%205.5%2016%2013.9%2016.7m-.3%202.6c9.8.9%2018.4-6.5%2019.2-16.4a18%2018%200%200%200-16-19.4%2018%2018%200%200%200-19.3%2016.3%2018%2018%200%200%200%2016.1%2019.5m-42.5-.5a15.4%2015.4%200%200%200%202.6-30.7%2015.3%2015.3%200%200%200-16.4%2014c-.7%208.5%205.5%2016%2013.8%2016.7m-.2%202.5c9.7.9%2018.3-6.4%2019.2-16.3A18%2018%200%200%200%20172%20107a18%2018%200%200%200-19.2%2016.4%2018%2018%200%200%200%2016%2019.4%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M188%20120.7a6.3%206.3%200%200%201%209%20.8q1.5%202%201.4%204.7l-2.5-.2q0-1.5-1-2.9a4%204%200%200%200-5.3-.4q-1.1%201-1.3%202.6l-2.5-.2q.3-2.7%202.2-4.4m-53%204.7%2019.2-1.8.3%202.5-19.3%201.9z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.5%20167.3q.4%201.1-.6%201.8c-13%206.4-22%20.8-25-3q-.6-1.2.3-1.9%201-.5%201.9.3c2.2%203%209.8%208.1%2021.6%202.3q1-.4%201.8.5%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 
+                            <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Viz">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseRed-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseRed-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23FFC9C9%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.356%203.884-25.823-46.25.844-33.982%205.866%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.236-5.145%2065.104%2024.254%203.915%2040.144-.024%2082.156-24.972%2082.159a46.7%2046.7%200%200%201-8.132-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.166%2031.253-46.934%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%23FE3B03%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%23FE3B03%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M167.23%2036C207.239%2036%20233%2069.14%20233%20114.039c0%2024.347-5.803%2044.065-17.776%2057.438%206.254-14.797%207.242-38.144%205.012-63.44-2.411-22.388-39.824%2014.459-67.23-6.271%204.06%2013.993-8.39%2019.228-12.957%2017.155-25.52-13.715-30.473%2026.191-5.076%2026.579v64.45c-24.433%2012.167-61.834%2026.075-69.023%2040.089C62.732%20256.314%2058.382%20283%2058.382%20283s.526-3.279%200%203c-20.254-12.919-11.882-8-37.367-26.334.532-19.821%2011.688-37.208%2028.703-48.306a52%2052%200%200%201-2.061-14.535c0-15.616%207.425-29.922%2018.746-39.557a65%2065%200%200%201%204.091-4.842c-4.46-7.669-7.097-16.247-7.097-24.994%200-23.279%2017.465-41.19%2039.1-46.666C114.419%2054.214%20138.929%2036%20167.23%2036%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M201.522%20185.94c.147%201.644%200%202.807%200%204.484%200%207.22-3.549%2016.487-6.789%2023.144-3.278-1.377-4.857-4.178-7.757-6.086V185.94c2.565.414%205.163.572%207.757.471%202.327%200%204.738.166%206.789-.471%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M153.897%20234.894h16.752V320h-16.752zm31.221%2036.475a4.565%204.565%200%200%201%204.569-4.56h32.744a4.565%204.565%200%200%201%204.569%204.56%204.564%204.564%200%200%201-4.569%204.559h-32.744a4.564%204.564%200%200%201-4.569-4.559%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M133.584%20232.088c-7.816-2.942-14.458-7.475-17.584-13.879l4.545-2.209c2.313%204.737%207.552%208.631%2014.823%2011.367%207.209%202.714%2016.051%204.143%2024.952%204.213%208.903.069%2017.709-1.224%2024.851-3.83%207.203-2.63%2012.326-6.445%2014.524-11.146l4.581%202.133c-3.012%206.443-9.599%2010.915-17.369%2013.751-7.832%202.858-17.263%204.209-26.626%204.136-9.365-.073-18.818-1.571-26.697-4.536%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M127.593%20142.278a.76.76%200%200%201%201.519%200v9.112a.76.76%200%200%201-1.519%200zm0%2012.909a.76.76%200%201%201%201.519%200v5.315a.76.76%200%200%201-1.519%200z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M132.516%20173.8a2.75%202.75%200%200%200%201.01-3.763l-.407-.704h.828a2.756%202.756%200%201%200%200-5.51h-.83l.409-.707a2.75%202.75%200%200%200-1.01-3.763%202.76%202.76%200%200%200-3.768%201.009l-.408.705-.408-.705a2.76%202.76%200%200%200-3.769-1.009%202.753%202.753%200%200%200-1.009%203.763l.409.707h-.804a2.757%202.757%200%200%200-2.759%202.755%202.757%202.757%200%200%200%202.759%202.755h.802l-.407.704a2.753%202.753%200%200%200%201.009%203.763%202.76%202.76%200%200%200%203.769-1.008l.408-.705.408.705a2.76%202.76%200%200%200%203.768%201.008m-4.163-29.244a2.278%202.278%200%201%201%200-4.556%202.278%202.278%200%200%201%200%204.556%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.332%20123.625a1.25%201.25%200%200%201-1.004%201.465l-21.824%204.145a1.266%201.266%200%200%201-1.481-.993%201.25%201.25%200%200%201%201.003-1.464l21.825-4.145c.686-.13%201.35.314%201.481.992%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m181.373%20106.705-24.492%203.405c-1.49.207-2.469%201.645-2.102%203.088l6.206%2024.407a2.53%202.53%200%200%200%202.806%201.867l21.808-3.03c1.384-.192%202.348-1.458%202.154-2.826l-3.522-24.78c-.194-1.37-1.474-2.323-2.858-2.131m-24.845.926c-2.979.415-4.937%203.292-4.203%206.177l6.207%2024.407c.63%202.481%203.05%204.091%205.612%203.736l21.807-3.031c2.768-.385%204.697-2.916%204.307-5.653l-3.522-24.78c-.388-2.737-2.947-4.644-5.716-4.26zm45.73-3.7%2024.492-3.404c1.49-.206%202.832.91%202.881%202.396l.838%2025.154a2.51%202.51%200%200%201-2.178%202.56l-21.807%203.031c-1.384.192-2.663-.761-2.858-2.13l-3.522-24.781c-.194-1.368.77-2.633%202.154-2.826m24.14-5.881c2.979-.415%205.664%201.817%205.763%204.791l.836%2025.153c.085%202.556-1.792%204.765-4.354%205.121l-21.807%203.031c-2.768.385-5.326-1.523-5.716-4.26l-3.521-24.78c-.389-2.737%201.539-5.268%204.307-5.652z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m201.207%20119.546-13.917%202.189-.398-2.471%2013.918-2.19z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 
+                            <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Alex">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseBrown-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseBrown-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23E1D3D0%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.356%203.884-25.823-46.25.844-33.982%205.866%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.236-5.145%2065.104%2024.254%203.915%2040.144-.024%2082.156-24.972%2082.159a46.7%2046.7%200%200%201-8.132-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.166%2031.253-46.934%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%237E6561%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%237E6561%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M171.923%2043.312c-33.702-3.413-63.751%2021.53-67.117%2055.712L89%20231c19.087-7.261%2044.199-20.938%2044.199-20.938.005-.037%201.366-10.509%204.976-11.356.63-.147%201.768-.274%203.218-.362q-.266-51.729-.257-52.441c-24.435%203.652-23.94-43.485.781-31.952%205.439%203.51%2017.8%206.519%2016.317-22.565%2037.577%2026.577%2058.369-11.659%2061.027%2015.984%203.631%2037.744-2.319%2078.352-25.449%2079.355-2.205.1-14.713-2.384-14.734-2.384v13.282c0%20.341%202.403.927%203.014%201.083%202.009%201.301%204.015%2010.476%204.018%2010.497s0%204.427%2036.835%2018.391l11.747-115.416c3.365-34.182-21.229-64.659-54.931-68.072z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m188.093%20217.265%204.841%208.173c-3.095%204.756-5.522%206.813-6.947%207.694l-6.015-10.199c2.33-1.002%205.455-2.754%208.121-5.668m3.239-5.69c-1.402-2.367-4.613-2.138-5.932-.097-2.906%204.498-7.739%206.367-9.635%206.937-2.069.623-3.232%203.099-2.02%205.153l8.378%2014.207c.596%201.01%201.88%201.908%203.483%201.611%202.26-.419%206.997-2.553%2012.874-12.076a3.49%203.49%200%200%200%20.036-3.607z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22m166.761%20237.16-6.48-15.537-5.04%2010.84z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M160.308%20220.178c.57.011%201.08.359%201.301.887l6.48%2015.536a1.443%201.443%200%200%201-1.872%201.899l-11.52-4.697a1.45%201.45%200%200%201-.764-1.952l5.041-10.839a1.44%201.44%200%200%201%201.334-.834m-3.122%2011.517%206.907%202.816-3.885-9.313z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22m169.711%20234.756%205.584-13.386%204.343%209.339z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M175.271%20220.124a1.24%201.24%200%200%200-1.12.765l-5.584%2013.385c-.194.464-.09%201%20.263%201.357.353.358.886.468%201.35.278l9.926-4.046a1.245%201.245%200%200%200%20.658-1.682l-4.343-9.339a1.24%201.24%200%200%200-1.15-.718m2.69%209.923-5.951%202.426%203.347-8.024zm-43.242-14.967-5.655%209.706c3.19%204.509%207.648%207.595%2011.826%209.661a44%2044%200%200%200%208.174%203.061l6.836-13.009c-5.261.057-13.231-1.538-21.181-9.419m-3.484-5.316c1.282-2.199%204.225-2.293%205.763-.556%209.237%2010.429%2018.375%209.926%2021.699%209.329%201.557-.279%202.853.486%203.557%201.381.711.904%201.192%202.443.394%203.963l-9.33%2017.757c-.696%201.325-2.213%202.167-3.84%201.826-1.557-.325-6.038-1.399-11.1-3.903-5.048-2.495-10.86-6.505-14.828-12.792a3.58%203.58%200%200%201-.064-3.707z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M161.15%20309.419c0-.906.268-1.792.769-2.544a4.557%204.557%200%200%201%207.022-.694%204.59%204.59%200%200%201-.691%207.047%204.554%204.554%200%200%201-5.763-.57%204.6%204.6%200%200%201-1.337-3.239m0-22.902c0-.906.268-1.792.769-2.545a4.57%204.57%200%200%201%202.049-1.687%204.55%204.55%200%200%201%204.973.993%204.593%204.593%200%200%201-.691%207.047%204.554%204.554%200%200%201-5.763-.569%204.6%204.6%200%200%201-1.337-3.239m0-22.903c0-.906.268-1.791.769-2.544a4.557%204.557%200%200%201%207.022-.695%204.59%204.59%200%200%201-.691%207.048%204.554%204.554%200%200%201-5.763-.57%204.6%204.6%200%200%201-1.337-3.239%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M211.956%20138.347c8.359.739%2015.726-5.539%2016.453-14.021.728-8.483-5.457-15.958-13.816-16.697s-15.726%205.538-16.454%2014.021c-.728%208.482%205.458%2015.958%2013.817%2016.697m-.22%202.56c9.752.862%2018.347-6.462%2019.196-16.358s-6.367-18.618-16.119-19.48-18.347%206.462-19.196%2016.358%206.367%2018.618%2016.119%2019.48m-42.524-.536c8.359.739%2015.726-5.538%2016.454-14.021.728-8.482-5.458-15.958-13.817-16.697s-15.725%205.539-16.453%2014.021c-.729%208.483%205.457%2015.958%2013.816%2016.697m-.22%202.56c9.753.862%2018.347-6.462%2019.196-16.358s-6.367-18.618-16.119-19.48-18.346%206.462-19.196%2016.358c-.849%209.896%206.367%2018.618%2016.119%2019.48%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M188.011%20120.709a6.27%206.27%200%200%201%204.62-1.481%206.3%206.3%200%200%201%204.298%202.269%206.48%206.48%200%200%201%201.458%204.688l-2.522-.223a3.9%203.9%200%200%200-.875-2.813%203.8%203.8%200%200%200-2.579-1.361%203.76%203.76%200%200%200-2.772.889%203.87%203.87%200%200%200-1.341%202.617l-2.523-.223a6.46%206.46%200%200%201%202.236-4.362M135%20125.438l19.221-1.847.239%202.558-19.221%201.848z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 
+                            <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Orin">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseYellow-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseYellow-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23FEEAC3%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.356%203.884-25.823-46.25.844-33.982%205.866%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.236-5.145%2065.104%2024.254%203.915%2040.144-.024%2082.156-24.972%2082.159a46.7%2046.7%200%200%201-8.132-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.166%2031.253-46.934%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%23FFB804%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%23FFB804%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M98.982%2074.59c15.476-31.39%2056.847-25.918%2070.455-23.94%2036.515%202.478%2050.849%2034.082%2053.563%2048.072-.994.63-2.193%201.274-3.563%201.926-5.524-21.983-37.021%209.029-64.341-20.27%201.597%2030.833-14.909%2034.554-20.765%2030.833-26.621-12.227-27.154%2037.742-.843%2033.871-.015.801.31%2047.994.31%2057.562-.001%2010.632-19.168%2015.947-19.168%2015.947s2.017%202.005%205.249%204.994L83%20227c27.875-33.534-3.364-113.174%2015.982-152.41%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m130.473%2078.18-13.202-18.26c-1.153-1.595-3.582-1.423-4.497.318l-11.832%2022.5c-.915%201.742.323%203.835%202.291%203.877l22.552.48%2013.203%2018.261c1.152%201.594%203.581%201.422%204.496-.319l11.832-22.5c.915-1.74-.323-3.835-2.291-3.877z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M184.254%20205.101v10.024l-27.556%2026.494%2014.196%2029.516L208%20227.373zm16.827%2022.668-29.016%2034.22-9.267-19.268%2026.474-25.454v-.574z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M135.958%20205v10.711l27.715%2026.592-14.27%2030.321L116%20228.347zm-13.521%2023.544%2025.966%2034.418%209.192-19.531-26.307-25.241z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M165.237%20312.962a4.04%204.04%200%200%200-2.489-3.73%204.028%204.028%200%200%200-5.496%202.943%204.04%204.04%200%200%200%201.714%204.145%204.031%204.031%200%200%200%206.271-3.358m0-20.188a4.038%204.038%200%200%200-4.818-3.959%204.04%204.04%200%200%200-1.453%207.317%204.031%204.031%200%200%200%206.271-3.358m0-20.187a4.04%204.04%200%200%200-2.489-3.731%204.03%204.03%200%200%200-4.392.875%204.043%204.043%200%200%200%20.61%206.212%204.024%204.024%200%200%200%205.09-.502%204.04%204.04%200%200%200%201.181-2.854%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 
+                            众多 AI 员工协助你工作
+                          </h6>
+                          <p class="text-muted para">使用内置或自定义的 AI 员工，执行分析、翻译、录入等多种任务。</p>
+                          <a href="?fallback_url" data-type="html" data-target="#feat1_lightbox" data-group="feat1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                          <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Feat 01.</li>
+                            <li class="step-icon"><i class="uil uil-smile-squint-wink h1 mb-0"></i></li>
+                          </ul>
                         </div>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
-            <div class="row align-items-top mt-5">
-                <div class="col-lg-6 col-md-6 mt-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            <span class="text-primary">开源</span
-                            >，使用主流技术栈
-                        </h5>
-                        <p class="text-muted">
-                            NocoBase
-                            核心代码和基础插件全部开源，提供绝对的透明度和可控性。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >使用 TypeScript 编写
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >使用 Node.js、React、Koa 等主流技术栈
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >只定义标准接口，不定义私有 DSL
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >极致简单轻量，单台低配服务器即可运行，单人即可扩展开发
-                            </li>
+                      </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 mt-4 pt-2">
+                      <div class="card work-process border-0 rounded shadow">
+                        <div class="card-body">
+                          <h6 class="title">
+                            使用工作流，编排复杂逻辑
+                          </h6>
+                          <p class="text-muted para">自动化业务流程，轻松编排复杂逻辑，实现高效协同与智能运转。</p>
+                          <a href="?fallback_url" data-type="html" data-target="#feat2_lightbox" data-group="feat2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                          <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Feat 02.</li>
+                            <li class="step-icon"><i class="uil uil-arrow-random h1 mb-0"></i></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            精细管控菜单、数据范围、操作的权限
+                        </h6>
+                        <p class="text-muted para">通过精细化权限，全面管控菜单、数据、操作和 AI 员工。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#feat3_lightbox" data-group="feat3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Feat 03.</li>
+                            <li class="step-icon"><i class="uil uil-check h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
 
-                <div class="col-lg-6 col-md-6 mt-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            日志和<span class="text-primary">监控</span>
-                        </h5>
-                        <p class="text-muted">
-                            NocoBase
-                            不是黑盒子，提供翔实的日志和监控警告基础设施。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >日志插件提供接口请求日志和系统运行日志
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >日志支持级别、滚动策略、大小、打印格式等丰富的配置
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >一系列遥测插件集成了 OpenTelemetry、Prometheus
-                                等设施，让开发者可以监控任何指标
-                            </li>
+  <!-- Extend Start -->
+  <section class="section" id="section-extend">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+              <h3 class="title mb-4">最后：多种方式扩展 NocoBase</h3>
+              <p class="text-muted para-desc mx-auto mb-0">超越基础能力，通过插件、脚本和多种集成方式灵活扩展 NocoBase。</p>
+          </div>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+          <div class="card work-process border-0 rounded shadow">
+              <div class="card-body">
+            <h6 class="title">
+                开发通用插件
+            </h6>
+            <p class="text-muted para">开发可复用的插件，扩展核心功能，更易于维护和推广。</p>
+            <a href="?fallback_url" data-type="html" data-target="#way1_lightbox" data-group="way1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+            <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                <li class="step h1 mb-0 fw-bold">Way 01.</li>
+                <li class="step-icon"><i class="uil uil-battery-bolt h1 mb-0"></i></li>
+            </ul>
+              </div>
+          </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            与 <a href="javascript:void" class="avatar-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Cole">
+                              <img class="demo-title-ai-avatar" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20320%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cmetadata%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3ENocoBase%20AI%20employee%20avatars%3C%2Fdc%3Atitle%3E%3Cdc%3Arights%3ERemix%20of%20%E2%80%9ENocoBase%20AI%20employee%20avatars%E2%80%9D%20by%20%E2%80%9EUnknown%E2%80%9D%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cmask%20id%3D%22baseBlue-a%22%20style%3D%22mask-type%3Aluminance%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22320%22%20height%3D%22320%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22white%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23baseBlue-a)%22%3E%3Cpath%20d%3D%22M320%20160C320%2071.634%20248.366%200%20160%200S0%2071.634%200%20160s71.634%20160%20160%20160%20160-71.634%20160-160%22%20fill%3D%22%23BDC1FF%22%2F%3E%3Cpath%20d%3D%22M133.733%20203.066c0-9.6-.326-56.951-.31-57.751-26.356%203.884-25.823-46.25.844-33.982%205.866%203.733%2022.4%200%2020.8-30.934%2028.8%2030.934%2062.236-5.145%2065.104%2024.254%203.915%2040.144-.024%2082.156-24.972%2082.159a46.7%2046.7%200%200%201-8.132-.813v17.067c0%2010.667%2019.2%2016%2019.2%2016s-33.166%2031.253-46.934%2031.08c-13.769-.172-44.8-31.08-44.8-31.08s19.2-5.333%2019.2-16%22%20fill%3D%22%232520F9%22%2F%3E%3Cpath%20d%3D%22M187.062%20185.994a105%20105%200%200%201-36.927-16.106s9.203%2022.5%2036.892%2026.769z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M258.529%20251.066c7.739%2017.196%2011.734%2069.333%2011.734%2069.333H50.529s3.995-52.137%2011.733-69.333c6.78-15.065%2051.456-32.362%2064.548-37.334%207.559%208.457%2018.392%2013.867%2033.586%2013.867s26.027-5.41%2033.586-13.867c13.092%204.972%2057.767%2022.269%2064.547%2037.334%22%20fill%3D%22%232520F9%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M159.838%2011.324c11.056-1.832%2019.408%204.698%2019.408%204.698.042-.026%207.393-4.486%2015.835%201.102%208.466%205.605%206.809%2011.957%206.809%2011.957.042-.005%2015.003-1.862%2024.937%2012.161%209.949%2014.043%202.018%2027.016%202.018%2027.016s10.633-4.246%2014.597%204.302c3.961%208.539-2.721%2015.27-2.736%2015.286.053.032%207.586%204.593%207.285%2016.591-.301%2012.014-7.253%2014.954-7.285%2014.968.039.061%205.428%208.415-1.471%2017.178-6.925%208.795-16.859%204.586-16.859%204.586.011.036%203.467%2011.169-3.476%2016.324l-.048.034c2.891-14.975%202.774-33.96.968-52.542-2.838-29.195-35.931%206.633-64.435-24.085%201.584%2030.718-14.779%2034.425-20.586%2030.718-26.392-12.181-26.92%2037.602-.835%2033.745-.007.388.066%2011.847.143%2024.565-6.038.496-10.379-1.532-10.379-7.791%200%200-7.256%203.838-13.908%200s-8.207-10.085-8.207-10.085c-.028.02-9.239%206.724-17.19-2.127-7.938-8.836-2.253-14.164-2.218-14.197-.04-.008-9.875-2.013-9.875-12.668%200-10.676%206.64-14.538%206.64-14.538-.041-.022-8.75-4.62-6.64-17.212%202.11-12.59%209.834-15.42%209.875-15.435%200%200-3.245-14.153%205.545-23.947%208.764-9.766%2020.266-9.788%2020.332-9.788%200%200-.968-14.557%2012.622-18.91s21.882%202.586%2021.882%202.586%206.196-12.66%2017.252-14.492%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M150.665%20235.792%20144.703%20378h28.621l-5.963-142.208s-5.565-5.998-8.347-5.998c-2.783%200-8.349%205.998-8.349%205.998m16.465%20136.235-5.604-133.648a34%2034%200%200%200-1.16-1.05%2021%2021%200%200%200-1.352-1.083c-.408.296-.867.662-1.354%201.083-.411.354-.805.714-1.16%201.05l-5.604%20133.648z%22%20fill%3D%22black%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M159.002%20227.181%20197.164%20213%20214%20224.559l-43.073%2026.83-11.925-21.605-11.926%2021.605L106%20224.559%20120.839%20213zm-37.132-7.43%2029.771%2011.062-6.668%2012.08-28.725-18.762zm51.226%2023.261-6.734-12.199%2029.985-11.142%206.765%204.645z%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M130.461%20130.382c0%202.972-2.118%205.382-4.73%205.382s-4.731-2.41-4.731-5.382%202.118-5.382%204.731-5.382%204.73%202.41%204.73%205.382%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M136.174%20180.158c-7.353-20.418-10.569-39.978-11.03-48.261l4.721-.34c.426%207.639%203.508%2026.626%2010.687%2046.561%207.191%2019.967%2018.324%2040.409%2034.592%2051.54l.084.057.079.065s.072.096.445.022c.433-.087%201.117-.385%202.073-1.098%201.91-1.424%204.366-4.088%207.28-8.053%205.795-7.884%2012.978-20.328%2020.75-36.403l4.145%202.594c-7.841%2016.217-15.193%2029-21.266%2037.261-3.019%204.108-5.828%207.246-8.316%209.102-2.281%201.701-5.26%202.995-7.784%201.015-17.516-12.022-29.129-33.706-36.46-54.062%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M175.403%20310v-78.036h4.731V310z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M157.332%20123.625a1.25%201.25%200%200%201-1.004%201.465l-21.824%204.145a1.266%201.266%200%200%201-1.481-.993%201.25%201.25%200%200%201%201.003-1.464l21.825-4.145c.686-.13%201.35.314%201.481.992%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m181.373%20106.705-24.492%203.405c-1.49.207-2.469%201.645-2.102%203.088l6.206%2024.407a2.53%202.53%200%200%200%202.806%201.867l21.808-3.03c1.384-.192%202.348-1.458%202.154-2.826l-3.522-24.78c-.194-1.37-1.474-2.323-2.858-2.131m-24.845.926c-2.979.415-4.937%203.292-4.203%206.177l6.207%2024.407c.63%202.481%203.05%204.091%205.612%203.736l21.807-3.031c2.768-.385%204.697-2.916%204.307-5.653l-3.522-24.78c-.388-2.737-2.947-4.644-5.716-4.26zm45.73-3.7%2024.492-3.404c1.49-.206%202.832.91%202.881%202.396l.838%2025.154a2.51%202.51%200%200%201-2.178%202.56l-21.807%203.031c-1.384.192-2.663-.761-2.858-2.13l-3.522-24.781c-.194-1.368.77-2.633%202.154-2.826m24.14-5.881c2.979-.415%205.664%201.817%205.763%204.791l.836%2025.153c.085%202.556-1.792%204.765-4.354%205.121l-21.807%203.031c-2.768.385-5.326-1.523-5.716-4.26l-3.521-24.78c-.389-2.737%201.539-5.268%204.307-5.652z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m201.207%20119.546-13.917%202.189-.398-2.471%2013.918-2.19z%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M207.484%20167.339c.345.622.09%201.391-.568%201.716-13.046%206.45-22.07.858-25.027-3.044-.432-.571-.292-1.365.312-1.774.604-.408%201.445-.276%201.877.295%202.255%202.975%209.85%208.075%2021.59%202.271.658-.325%201.472-.085%201.816.536%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                            </a> 一起，在页面上编写 Scripts
+                        </h6>
+                        <p class="text-muted para">在页面中编写脚本，实现更灵活的业务逻辑和交互界面。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#way2_lightbox" data-group="way2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Way 02.</li>
+                            <li class="step-icon"><i class="uil uil-bolt h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
-
-                <div class="col-lg-6 col-md-6 mt-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            与已有系统<span class="text-primary">融合</span>
-                        </h5>
-                        <p class="text-muted">
-                            NocoBase 提供多种方式与第三方系统融合：
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >将第三方的数据库作为数据源
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >将其他系统的 API 作为数据源
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >单点登录 (SSO)，实现无缝身份验证
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >与第三方系统互相嵌入，融为一体
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >多个 NocoBase 应用之间实现多应用、父子应用
-                            </li>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow">
+                    <div class="card-body">
+                        <h6 class="title">
+                            多种方式集成其他应用
+                        </h6>
+                        <p class="text-muted para">通过 API、数据源、Webhook 等方式灵活集成外部应用与服务，实现系统互通。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#way3_lightbox" data-group="way3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
+                            <li class="step h1 mb-0 fw-bold">Way 03.</li>
+                            <li class="step-icon"><i class="uil uil-apps h1 mb-0"></i></li>
                         </ul>
                     </div>
-                </div><!--end col-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
 
-                <div class="col-lg-6 col-md-6 mt-5">
-                    <div class="section-title">
-                        <h5 class="mb-4">
-                            <span class="text-primary">免费</span
-                            >，或者一次付费，终身使用
-                        </h5>
-                        <p class="text-muted">
-                            NocoBase
-                            开源免费使用，在开源版本基础上提供商业授权和商业插件。商业授权和商业插件都是一次性购买，终身有效。
-                        </p>
-                        <ul class="list-unstyled text-muted">
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >不需要订阅
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >不需要考虑用户数量
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >不需要考虑应用数量
-                            </li>
-                            <li class="mb-1 concerns-li">
-                                <span class="text-primary h5 me-2 concerns-span"
-                                    ><i class="uil uil-smile-beam align-middle"
-                                    ></i></span
-                                >不需要考虑数据量
-                            </li>
-                        </ul>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
+  <!-- For you Start -->
+  <section class="section pb-5 bg-light" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">NocoBase 适合谁</h3>
+            <p class="text-muted para-desc mx-auto mb-0">在为企业内部或客户交付各类业务系统时，你的开发团队正面临以下 <span class="text-primary fw-bold">严峻挑战</span>：</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="mt-4 pt-2 text-center">
-                        <a href="#section-right" class="btn btn-primary"
-                            >不是什么？<i class="uil uil-arrow-down"></i></a
-                        >
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- For you End -->
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">业务需求<br />频繁变化</p>
+            </div>
+          </div>
+        </div><!--end col-->
 
-    <!-- Right way Start -->
-    <section class="section pb-0" id="section-right">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h3 class="title mb-4">NocoBase 的正确使用方式</h3>
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            无代码不是万能的，NocoBase 也不是万能的。
-                        </p>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">交付时间<br />短暂紧迫</p>
+            </div>
+          </div>
+        </div><!--end col-->
 
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-silent-squint align-middle text-warning"
-                                ></i></span
-                            >NocoBase 不是低代码平台，不希望直接在界面上写代码
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-silent-squint align-middle text-warning"
-                                ></i></span
-                            >NocoBase 不是代码生成器，不提供代码导出
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-silent-squint align-middle text-warning"
-                                ></i></span
-                            >NocoBase 不是为没有技术背景的团队准备的工具
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i
-                                    class="uil uil-silent-squint align-middle text-warning"
-                                ></i></span
-                            >NocoBase 不是 SaaS，不提供订阅和按量付费
-                        </li>
-                    </ul>
-                </div><!--end col-->
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">开发过程<br />缓慢冗长</p>
+            </div>
+          </div>
+        </div><!--end col-->
 
-                <div class="col-md-6 col-12">
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i class="uil uil-grin align-middle"></i></span
-                            >开发团队将 NocoBase
-                            作为基础设施，极大提升交付速度和效率
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i class="uil uil-grin align-middle"></i></span
-                            >开发团队通过扩展插件来扩充能力，非开发人员可以在此基础上进行无代码搭建
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i class="uil uil-grin align-middle"></i></span
-                            >使用 NocoBase 开发从简单到复杂的业务系统和内部工具
-                        </li>
-                        <li class="mb-1 concerns-li">
-                            <span class="text-primary h5 me-2 concerns-span"
-                                ><i class="uil uil-grin align-middle"></i></span
-                            >在自己的服务器上部署 NocoBase 并使用，完全掌控它
-                        </li>
-                    </ul>
-                </div><!--end col-->
-            </div><!--end row-->
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">人员成本<br />居高不下</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="mt-4 pt-2 text-center">
-                        <a href="#section-try" class="btn btn-primary"
-                            >试一下 <i class="uil uil-arrow-down"></i></a
-                        >
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- End -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">与此同时，随着 <span class="text-primary fw-bold">AI</span> 的兴起，你们可能还在为以下问题苦恼：</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-    <!-- Try Start -->
-    <section class="section pb-0" id="section-try">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <InteractiveDemo guides={demoConfig} />
-                </div><!--end col-->
-            </div><!--end row-->
+      <div class="row  justify-content-center">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">各种 AI 演示层出不穷，但落地到业务场景却十分困难</p>
+            </div>
+          </div>
+        </div><!--end col-->
 
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="mt-4 pt-2 text-center">
-                        <a href="#section-feedback" class="btn btn-primary"
-                            >用户声音 <i class="uil uil-arrow-down"></i></a
-                        >
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- End -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">AI 模型难以与现有系统和业务流程无缝集成</p>
+            </div>
+          </div>
+        </div><!--end col-->
 
-    <!-- Feedback Start -->
-    <section class="section pb-0" id="section-feedback">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h3 class="title mb-4">这很重要，听听用户们怎么说</h3>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">AI 方案难以契合企业独特的流程与数据安全要求</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-            <div class="row justify-content-center">
-                <div class="col-lg-9 mt-4 pt-2">
-                    <div class="tiny-single-item text-center">
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                使用 NocoBase 后我们的行政任务时间缩短了50%，协作与沟通得到加强，招聘流程更加迅速和高效。
-                            </p>
-                            <p class="text-muted fst-italic">
-                                在 TEDxDUTH，我们相信创新和协作的力量可以改变世界。NocoBase 使我们能够简化日常运营，从而将更多精力投入到真正重要的事务上——举办精彩的活动，传播有价值的思想。
-                            </p>
-                            <p class="text-muted fst-italic">
-                                如果你的组织正面临混乱或低效的工作流程，NocoBase 不仅仅是一个工具——它更是一个全面的解决方案，能够激发团队的潜能，实现更多可能。对我们来说，NocoBase 更像一个游戏规则的改变者，它让我们敢于梦想，彻底改变了我们的工作方式，并持续影响着我们的社区。
-                            </p>
-                            <p class="text-muted fst-italic">
-                                感谢 NocoBase 成为我们旅程中不可或缺的伙伴。我们携手并进，共同推进创新与灵感的传播！
-                            </p>
-                            <img
-                                src="https://static-docs.nocobase.com/20250713094749.png"
-                                class="mt-4 mb-4"
-                                width="160"
-                                alt="TED"
-                              />
-                            <h6 class="text-primary">
-                                Sarantis Antoniou <small class="text-muted">Lead Organizer </small>
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                我们曾对 AirTable 和 NocoDB 进行过评估，最终选择 NocoBase，是因为它更符合我们对系统自由度与部署方式的需求。NocoBase 可部署在我们的 AWS 环境中，不限制用户数量，权限控制精细，页面与数据分离的架构也让我们能灵活定制前端。同时，内建工作流和自动生成 API 的功能，大大提升了效率。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://classmethod.jp/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094650.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="classmethod"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                クラスメソッド株式会社（Classmethod, Inc.）
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                在选择 NocoBase 之前，我们并没有一个专门的客服与运营管理系统。业务发展迅速，需要快速搭建并承接越来越多的需求，NocoBase 很好地解决了这个问题。它的数据表关联能力尤其出色，让我们可以将不同的数据结构高效整合，客服人员能快速查询用户信息并实时处理用户权益问题，极大提升了业务效率。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://www.plaud.ai/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094635.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="PLAUD"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                PLAUD 产品经理 Lucas
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                我们一直在寻找一款灵活的无代码平台，以构建一个完全定制的排班系统，满足客户 Okechamp 快速增长的物流业务需求。调研阶段，NocoBase 凭借 Schema-first 架构、模块化设计和活跃的社区脱颖而出。它让我们轻松实现了自定义视图和报表管理。我们将继续在更多客户项目中采用 NocoBase。
-                            </p>
-                            <img
-                                src="https://static-docs.nocobase.com/20250713094700.png"
-                                class="mt-4 mb-4"
-                                width="160"
-                                alt="Lukardi"
-                            />
-                            <h6 class="text-primary">
-                                Lukardi SA
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                我们原本依赖纸质流程进行人事管理与休假审批，不仅效率低，还容易出错。自从使用 NocoBase 构建人事、出勤、休假等业务流程后，我们实现了真正的无纸化办公，110 多名员工的管理变得高效直观。NocoBase 灵活的界面设计和强大的 API 能力，完全满足了我们房地产行业的多样化需求。相比 Salesforce 等工具，它不仅可高度定制，还支持一次性买断，性价比非常高。我们正计划将更多系统迁移到 NocoBase，包括 CRM，并将其打造为公司门户与业务核心平台。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://housewell-group.jp/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094720.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="HouseWell"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                ハウスウェル株式会社(HouseWell)
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                在构建智能工厂系统过程中，我们选择了 NocoBase 作为核心平台。它的极简配置流程让非技术人员也能快速构建系统页面，极大提升了开发效率；同时，插件生态和工作流引擎让我们能灵活应对多样的业务场景，确保系统质量与扩展性。借助 NocoBase 的细粒度权限系统，我们实现了设备维护、人事管理等流程的高效协作与数据安全共存。系统部署后，配合 PC + 移动端 + 5G 网络架构，成功实现数据的实时反馈与高效录入，为智能工厂建设打下了坚实基础。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://www.bielcrystal.com"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094732.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="BIEL"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                伯恩光学控股有限公司 BIEL
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                在众多新型数据库产品中，NocoBase 是唯一让我感受到'即要、又要、还要'可以实现的解决方案。我们需要一个非 SaaS、低代码、可扩展的系统，来支撑跨几十个团队的任务协同和规范性强的专业场景。NocoBase 的学习曲线出乎意料地平滑，几天内我就能在不依赖开发的情况下完成业务流程的搭建。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://www.aoya-hk.com/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094804.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="奥雅设计"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                奥雅设计 业务负责人 张廷源
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                在对比调研了多个国内外低代码平台后，我们最终选择了 NocoBase。它支持本地化部署和功能拓展，完美契合我们在化学领域对数据安全和系统定制化的高标准需求。NocoBase 提供的专业支持团队和灵活的数据建模能力，让系统上线变得高效且可靠。
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://xtalpi.com/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094812.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="晶泰科技"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                晶泰科技 项目负责人 熊智
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                I cannot emphasize enough the great experience we've had with
-                                NocoBase as a no-code/low-code platform. It stands out as
-                                exceptionally user-friendly, making our development process both
-                                smooth and efficient. What impressed me most was how easy it was
-                                to work on development of the user experience once the data
-                                model was in place. This streamlined approach allowed us to
-                                develop a full-fledged system, designed to be used by several
-                                hundred organizations, in just a matter of weeks.
-                              </p>
-                              <p class="text-muted fst-italic">
-                                NocoBase has effectively shattered the common misconception that
-                                powerful systems require months or even years of work. I highly
-                                recommend it for any organization looking to fast-track their
-                                development cycle without sacrificing quality.
-                              </p>
-                            <a
-                                rel="nofollow"
-                                href="https://sambruk.se/"
-                                target="_blank"
-                                ><img
-                                    src="https://static-docs.nocobase.com/20250713094827.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt="Sambruk"
-                                /></a
-                            >
-                            <h6 class="text-primary">
-                                Thomas Wennersten <small class="text-muted"
-                                    >CTO</small>
-                            </h6>
-                        </div>
-                        <div class="tiny-slide client-testi text-center">
-                            <p class="text-muted fst-italic">
-                                NocoBase 作为数据管理、API
-                                服务、工作流的核心，极大的降低了开发难度，使得我们的开发者能够更专注于业务逻辑的实现，从而大大提高了开发效率。
-                            </p>
-                            <p class="text-muted fst-italic">
-                                NocoBase
-                                具备出色的集成能力，能够与各种第三方服务和系统进行无缝对接，实现数据共享和功能整合。这意味着我们无需从零开始构建所有功能，而是可以充分利用现有的服务和资源，将各种功能和服务快速集成到应用中。这种集成能力不仅减少了开发时间和成本，更使得应用的功能更加丰富和多样化，满足了用户多样化的需求。
-                            </p>
-                            <p class="text-muted fst-italic">
-                                在这个快速发展的数字化时代，NocoBase
-                                无疑是我们应对挑战、实现创新的有力武器，感谢
-                                NocoBase 团队的付出！
-                            </p>
-                            <a
-                                rel="nofollow"
-                                href="https://www.chinaunicom.com/"
-                                target="_blank"
-                                ><img
-                                    src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png"
-                                    class="mt-4 mb-4"
-                                    width="160"
-                                    alt=""
-                                /></a
-                            >
-                            <h6 class="text-primary">新疆联通科创实验室</h6>
-                        </div>
-                    </div><!--end owl carousel-->
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section>
-    <!-- Feedback End -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">你的团队已经意识到必须抛弃传统的开发方式，引入无代码开发可能是一条出路。然而，在调研或试用后，你们又常常对无代码平台产生 <span class="text-primary fw-bold">诸多担忧</span>：</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-    <!-- Get Start -->
-    <section class="section" id="section-get">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h3 class="title mb-4">准备好使用 NocoBase 了吗？</h3>
-                    <p class="text-muted para-desc mx-auto mb-0">
-                        1 分钟时间部署一个专属 demo。自己部署
-                        NocoBase，同样很简单。
-                    </p>
-                    <div class="mt-4">
-                        <a
-                            href="https://demo-cn.nocobase.com/new"
-                            target="_blank"
-                            class="btn btn-primary mt-2 mb-4"
-                            >开通 demo <i class="uil uil-arrow-right"></i></a
-                        >
-                        <a
-                            href="https://docs-cn.nocobase.com/welcome/getting-started/installation"
-                            target="_blank"
-                            class="btn btn-outline-primary mt-2 mb-4"
-                            >本地部署 <i class="uil uil-arrow-right"></i></a
-                        >
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section>
-    <!-- Get End -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>能力有限，大多停留在表单和表格</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>笨拙而缺乏灵活性，面对未覆盖的需求无能为力</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>AI 相关功能停留在演示层面，难以结合实际业务场景落地</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>缺乏可扩展机制，将 AI 模型无缝嵌入到企业的数据和流程中十分困难</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>无法访问底层源代码，数据又托管在第三方服务器，隐私与安全难以保障</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>与既有系统难以实现无缝集成</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>受制于按用户或应用计费模式，最终购买的产品并不真正属于自己</li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">不必担忧！试一试 NocoBase <br /> NocoBase 就是为你的开发团队量身定制的 <span class="text-primary fw-bold">基础设施</span>！</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start -->
+  <section class="section pb-0" id="section-how">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">NocoBase 是如何做的</h3>
+            <p class="text-muted para-desc mx-auto mb-0">无代码和 AI 都不是万能的。<br />人、AI、代码的协同框架，才是当下可信赖的企业级基础。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row  justify-content-center">
+        <div class="col-lg-6 col-md-6 col-12">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>试图封装所有功能为无代码组件，用无代码满足一切需求</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>用无代码覆盖 80% 的通用需求，扩展开发解决剩余的个性化需求</li>
+          </ul>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 col-12">
+         <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>依赖 AI 生成完整业务系统，试图替代所有业务流程</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>构建优秀的人与 AI 协同框架，让 AI 在特定环节发挥最大价值</li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top  mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">数据模型</span> 驱动，而非表单/表格驱动</h5>
+            <p class="text-muted">NocoBase 采用 数据模型驱动 的方式，将数据结构与用户界面分离，突破了传统表单或表格驱动开发的限制，释放无限可能。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>界面与数据结构彻底解耦</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>同一个表或记录可以创建任意数量、任意形式的区块和操作</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持主数据库、外部数据库以及第三方 API 作为数据源</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="Data model-driven approach in NocoBase, separating user interface from data structure. Supports multiple blocks and actions for the same table and record, integrating main database, external databases, and third-party APIs as data sources." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">所见即所得</span>，极易上手</h5>
+            <p class="text-muted">NocoBase 能够开发复杂而独特的业务系统，但使用体验却简单直观。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>一键切换使用模式与配置模式</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>页面即画布，可随意拖拽区块和操作，像 Notion 一样搭建界面</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>配置模式面向普通用户设计，而非仅限程序员</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG interface, showcasing easy-to-use, configurable UI for developing complex business systems. Features one-click switch between usage and configuration modes, allowing ordinary users to create and customize interfaces like Notion." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 员工</span>，融入你的业务系统</h5>
+            <p class="text-muted">不同于停留在演示层面的 AI，NocoBase 让你能够将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>定义 AI 员工，担任翻译员、分析员、调研员或助手等角色</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 与人工无缝协同于交互界面和业务流程</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>确保 AI 的使用符合企业的安全、透明和定制化需求</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase plugin architecture, designed for extension development with a microkernel approach. All functionalities are implemented as plugins, similar to Wordpress. Plugins, including pages, blocks, actions, APIs, and data sources, can be easily installed and developed to meet complex and evolving business requirements." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">一切皆 <span class="text-primary">插件</span>，为扩展而生</h5>
+            <p class="text-muted">仅仅堆叠无代码功能，永远无法覆盖所有业务场景。NocoBase 基于 插件化微内核架构，为扩展而设计。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>所有功能都是插件，类似于 WordPress</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>插件安装即用</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>页面、区块、操作、API、数据源等都可以通过插件扩展</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture, designed for extension development with a microkernel approach. All functionalities are implemented as plugins, similar to Wordpress. Plugins, including pages, blocks, actions, APIs, and data sources, can be easily installed and developed to meet complex and evolving business requirements." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-5">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">开源透明</span>，采用主流技术栈</h5>
+            <p class="text-muted">NocoBase 核心代码和基础插件全部开源，且采用主流技术栈，提供绝对的透明度和可控性。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>核心与基础插件完全开源</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>使用 TypeScript 编写，基于 Node.js、React、Koa 等主流技术栈</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>仅定义标准接口，不使用私有 DSL</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>极简轻量，可运行在低配服务器上，一个人即可维护和扩展</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">透明且友好的 <span class="text-primary">授权模式</span></h5>
+            <p class="text-muted">NocoBase 提供免费开源版本，同时提供商业授权和插件，采用 一次性购买，终身使用 的模式。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>无需订阅</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按用户数量计费</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按应用数量计费</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按数据量计费</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Feedback Start -->
+  <section class="section pb-0" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">这很重要，听听用户们怎么说</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">使用 NocoBase 后我们的行政任务时间缩短了50%，协作与沟通得到加强，招聘流程更加迅速和高效。</p>
+              <p class="text-muted fst-italic">在 TEDxDUTH，我们相信创新和协作的力量可以改变世界。NocoBase 使我们能够简化日常运营，从而将更多精力投入到真正重要的事务上——举办精彩的活动，传播有价值的思想。</p>
+              <p class="text-muted fst-italic">如果你的组织正面临混乱或低效的工作流程，NocoBase 不仅仅是一个工具——它更是一个全面的解决方案，能够激发团队的潜能，实现更多可能。对我们来说，NocoBase 更像一个游戏规则的改变者，它让我们敢于梦想，彻底改变了我们的工作方式，并持续影响着我们的社区。</p>
+              <p class="text-muted fst-italic">感谢 NocoBase 成为我们旅程中不可或缺的伙伴。我们携手并进，共同推进创新与灵感的传播！</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我们曾对 AirTable 和 NocoDB 进行过评估，最终选择 NocoBase，是因为它更符合我们对系统自由度与部署方式的需求。NocoBase 可部署在我们的 AWS 环境中，不限制用户数量，权限控制精细，页面与数据分离的架构也让我们能灵活定制前端。同时，内建工作流和自动生成 API 的功能，大大提升了效率。</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式会社（Classmethod, Inc.）</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在选择 NocoBase 之前，我们并没有一个专门的客服与运营管理系统。业务发展迅速，需要快速搭建并承接越来越多的需求，NocoBase 很好地解决了这个问题。它的数据表关联能力尤其出色，让我们可以将不同的数据结构高效整合，客服人员能快速查询用户信息并实时处理用户权益问题，极大提升了业务效率。</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">PLAUD 产品经理 Lucas</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我们一直在寻找一款灵活的无代码平台，以构建一个完全定制的排班系统，满足客户 Okechamp 快速增长的物流业务需求。调研阶段，NocoBase 凭借 Schema-first 架构、模块化设计和活跃的社区脱颖而出。它让我们轻松实现了自定义视图和报表管理。我们将继续在更多客户项目中采用 NocoBase。</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
+              <h6 class="text-primary">Lukardi SA</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我们原本依赖纸质流程进行人事管理与休假审批，不仅效率低，还容易出错。自从使用 NocoBase 构建人事、出勤、休假等业务流程后，我们实现了真正的无纸化办公，110 多名员工的管理变得高效直观。NocoBase 灵活的界面设计和强大的 API 能力，完全满足了我们房地产行业的多样化需求。相比 Salesforce 等工具，它不仅可高度定制，还支持一次性买断，性价比非常高。我们正计划将更多系统迁移到 NocoBase，包括 CRM，并将其打造为公司门户与业务核心平台。</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式会社(HouseWell)</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在构建智能工厂系统过程中，我们选择了 NocoBase 作为核心平台。它的极简配置流程让非技术人员也能快速构建系统页面，极大提升了开发效率；同时，插件生态和工作流引擎让我们能灵活应对多样的业务场景，确保系统质量与扩展性。借助 NocoBase 的细粒度权限系统，我们实现了设备维护、人事管理等流程的高效协作与数据安全共存。系统部署后，配合 PC + 移动端 + 5G 网络架构，成功实现数据的实时反馈与高效录入，为智能工厂建设打下了坚实基础。</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">伯恩光学控股有限公司 BIEL</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在众多新型数据库产品中，NocoBase 是唯一让我感受到'即要、又要、还要'可以实现的解决方案。我们需要一个非 SaaS、低代码、可扩展的系统，来支撑跨几十个团队的任务协同和规范性强的专业场景。NocoBase 的学习曲线出乎意料地平滑，几天内我就能在不依赖开发的情况下完成业务流程的搭建。</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奥雅设计" /></a>
+              <h6 class="text-primary">奥雅设计 业务负责人 张廷源</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在对比调研了多个国内外低代码平台后，我们最终选择了 NocoBase。它支持本地化部署和功能拓展，完美契合我们在化学领域对数据安全和系统定制化的高标准需求。NocoBase 提供的专业支持团队和灵活的数据建模能力，让系统上线变得高效且可靠。</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">晶泰科技 项目负责人 熊智</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks.</p>
+              <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
+              <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">NocoBase 作为数据管理、API 服务、工作流的核心，极大的降低了开发难度，使得我们的开发者能够更专注于业务逻辑的实现，从而大大提高了开发效率。</p>
+              <p class="text-muted fst-italic">NocoBase 具备出色的集成能力，能够与各种第三方服务和系统进行无缝对接，实现数据共享和功能整合。这意味着我们无需从零开始构建所有功能，而是可以充分利用现有的服务和资源，将各种功能和服务快速集成到应用中。这种集成能力不仅减少了开发时间和成本，更使得应用的功能更加丰富和多样化，满足了用户多样化的需求。</p>
+              <p class="text-muted fst-italic">在这个快速发展的数字化时代，NocoBase 无疑是我们应对挑战、实现创新的有力武器，感谢 NocoBase 团队的付出！</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">新疆联通科创实验室</h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">准备好使用 NocoBase 了吗？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">1 分钟时间部署一个专属 demo。自己部署 NocoBase，同样很简单。</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Click to experience NocoBase online">Live Demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Learn how to deploy NocoBase locally">Deploy locally <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+
+  <!-- Lightbox Start -->
+    <!-- video in lightbox  -->
+      <div style="display: none;">
+        <div id="nocobase_video_lightbox">
+          <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2>
+          <!-- <video controls="">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          </video> -->
+        </div>
+      </div>
+      <!-- end video in lightbox  -->
+
+      <!-- step1 lightbox -->
+      <div style="display: none;">
+        <div id="step1_lightbox">
+          <InteractiveDemo guides={demo_20250928234035} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end step1 lightbox -->
+
+      <!-- step2 lightbox -->
+      <div style="display: none;">
+        <div id="step2_lightbox">
+          <InteractiveDemo guides={demo_20250929185215} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end step2 lightbox -->
+
+      <!-- step3 lightbox -->
+      <div style="display: none;">
+        <div id="step3_lightbox">
+          <InteractiveDemo guides={demo_20250929192111} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end step3 lightbox -->
+
+      <!-- feat1 lightbox -->
+      <div style="display: none;">
+        <div id="feat1_lightbox">
+          <InteractiveDemo guides={demo_20250929193842} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end feat1 lightbox -->
+
+      <!-- feat2 lightbox -->
+      <div style="display: none;">
+        <div id="feat2_lightbox">
+          <InteractiveDemo guides={demo_20250929200011} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end feat2 lightbox -->
+
+      <!-- feat3 lightbox -->
+      <div style="display: none;">
+        <div id="feat3_lightbox">
+          <InteractiveDemo guides={demo_20250929200757} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end feat3 lightbox -->
+
+      <!-- way1 lightbox -->
+      <div style="display: none;">
+        <div id="way1_lightbox">
+          <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2>
+          <!-- <InteractiveDemo guides={demo_2025092919211} hideHeaser={true}/> -->
+        </div>
+      </div>
+      <!-- end way1 lightbox -->
+
+      <!-- way2 lightbox -->
+      <div style="display: none;">
+        <div id="way2_lightbox">
+          <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2>
+          <!-- <InteractiveDemo guides={demo_2025092919211} hideHeaser={true}/> -->
+        </div>
+      </div>
+      <!-- end way2 lightbox -->
+
+      <!-- way3 lightbox -->
+      <div style="display: none;">
+        <div id="way3_lightbox">
+          <InteractiveDemo guides={demo_20250929202533} hideHeaser={true}/>
+        </div>
+      </div>
+      <!-- end way3 lightbox -->
+
+  <!-- Lightbox End --> 
 </Layout>

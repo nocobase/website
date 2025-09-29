@@ -1,0 +1,893 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InteractiveDemo from "../../components/InteractiveDemo.astro";
+import demoConfig from "../../data/demo-config-en.json";
+---
+
+<Layout>
+  <!-- Hero Start -->
+  <section class="bg-half-260 bg-light d-table w-100">
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-heading text-center mt-4">
+            <h1 class="display-4 fw-bold mb-3">
+              Extensibility-first<br />open-source<br />no-code platform
+            </h1>
+            <p class="para-desc mx-auto text-muted">
+              Total control, infinite extensibility, empower your team to swiftly
+              adapt to changes and significantly reduce costs. Skip years of
+              development and millions in investment<br />- just deploy NocoBase
+              in minutes.
+            </p>
+            <div class="mt-4 pt-2">
+              <a href="#section-for-you" title="Who NocoBase is for" class="btn btn-primary mb-2"
+                >Is it for you? <i class="uil uil-arrow-down"></i></a
+              >
+              <a
+                href="https://demo.nocobase.com/new"
+                target="_blank"
+                class="btn btn-outline-primary mb-2"
+                title="Click to experience NocoBase online"
+                >Experience online<i class="uil uil-angle-right-b"></i></a
+              >
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
+
+  <!-- Shape Start -->
+  <div class="position-relative">
+    <div class="shape overflow-hidden text-color-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+          fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <!--Shape End-->
+
+  <!-- For you Start -->
+  <section class="section pb-0" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">Who NocoBase is for</h3>
+            <p class="text-muted para-desc mx-auto mb-0">
+              Your development team is facing these serious <span
+                class="text-primary fw-bold">challenges</span
+              > as they deliver various business systems for either internal or client
+              use.
+            </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div
+              class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
+            >
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Frequent changes in business needs</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div
+              class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
+            >
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Tight and urgent delivery deadlines</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div
+              class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
+            >
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Slow and lengthy development processes</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div
+              class="icon text-center rounded-circle text-primary me-3 h5 mb-0"
+            >
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">High personnel costs</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">
+              Your team has realized the need to abandon traditional development
+              methods, and introducing a no-code development approach could be a
+              good option. However, after research or experimentation, your team
+              has <span class="text-primary fw-bold">numerous concerns</span> regarding
+              the no-code platform.
+            </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div
+          class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0"
+        >
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >Limited no-code capabilities, primarily for forms or tables
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >Clumsy and inflexible, leaving users helpless when faced with
+              unmet requirements
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >Without access to the underlying source code and with data hosted
+              on third-party servers, both privacy and security are difficult to
+              guarantee
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >System instability, coupled with challenges in tracking and
+              troubleshooting
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >Difficult to integrate seamlessly with existing systems
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-sad-dizzy align-middle text-warning"
+                ></i></span
+              >Being held hostage by user or application-based pricing models,
+              resulting in purchased products not truly belonging to yourselves
+            </li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">
+              No need to worry! Give NocoBase a try. <br />
+              NocoBase is the <span class="text-primary fw-bold"
+                >tailored infrastructure</span
+              > designed specifically for your development team!
+            </p>
+          </div>
+          <div class="mt-4 pt-2 text-center">
+            <a href="#section-how" class="btn btn-primary"
+              >How? <i class="uil uil-arrow-down"></i></a
+            >
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start -->
+  <section class="section pb-0" id="section-how">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">How NocoBase gets it done</h3>
+            <p class="text-muted para-desc mx-auto mb-0">
+              "No code" is very helpful for rapid development of business
+              systems, but it is not possible to fulfill all the needs. The
+              design principle of NocoBase is:
+            </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7 p-4 bg-light rounded shadow text-center">
+          <p class="mb-0">
+            <span class="text-primary fw-bold" style="font-size: 20px;"
+              >80%</span
+            > of requirements are achieved through no-code solutions, <br
+            /><span class="text-primary fw-bold" style="font-size: 20px;"
+              >20%</span
+            > are implemented through extended development.
+          </p>
+        </div>
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              <span class="text-primary">Data model-driven</span>, separate
+              "user interface" from "data structure"
+            </h5>
+            <p class="text-muted">
+              Compared to form and table-driven approaches, data model-driven
+              development offers uncapped development capabilities.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Decouple data and UI
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Multiple blocks and actions can be created for the same table
+                and record in any quantity and form
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Support main database, external databases, and third-party APIs
+                as data sources
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="Data model-driven approach in NocoBase"   />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              <span class="text-primary">What you see is what you get</span>,
+              incredibly easy to use
+            </h5>
+            <p class="text-muted">
+              NocoBase can develop complex and distinctive business systems, yet
+              its usage is remarkably simple.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >One-click switch between usage mode and configuration mode
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Pages serve as a canvas where various blocks and actions are
+                placed to compose suitable interfaces, much like Notion
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >The UI configuration mode is designed for ordinary users, not
+                programmers
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG interface"   />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              Everything is implemented as <span class="text-primary"
+                >plugins</span
+              >, designed for extension development
+            </h5>
+            <p class="text-muted">
+              Facing complex and ever-changing business scenarios, relying
+              solely on stacking no-code capabilities to exhaust all
+              requirements is futile. NocoBase is designed for extension
+              development, freely expanding plugins to meet various needs.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Adopts a microkernel architecture where all functionalities are
+                plugins, much like Wordpress
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Plugins are ready to use upon installation
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Whether they are pages, blocks, actions, APIs, or data sources,
+                new plugins can be developed to meet new requirements
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture"   />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-5">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              <span class="text-primary">Open source</span>, using mainstream
+              technology stacks
+            </h5>
+            <p class="text-muted">
+              NocoBase's core and foundational plugins are entirely open-source,
+              ensuring absolute transparency and controllability.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Written in TypeScript
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Utilizes mainstream technology stacks such as Node.js, React,
+                Koa, and more
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Defines only standard interfaces, avoiding private DSLs
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Extremely simple and lightweight, capable of running on a
+                single low-spec server and extensible with just one person
+                managing the development
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              Logging & <span class="text-primary">Monitoring</span>
+            </h5>
+            <p class="text-muted">
+              NocoBase is not a black box; it provides detailed logging and
+              monitoring alert infrastructure.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >The logging plugin offers interface request logs and system
+                operation logs
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Supporting configurations such as log levels, rolling policies,
+                size, and print formats
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >A series of telemetry plugins integrate facilities like
+                OpenTelemetry and Prometheus, enabling developers to monitor any
+                metric
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              <span class="text-primary">Integrate</span> with third-party systems
+            </h5>
+            <p class="text-muted">
+              NocoBase offers multiple ways to integrate with third-party
+              systems:
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Using third-party databases as data sources
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Utilizing APIs from other systems as data sources
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Single Sign-On (SSO) for seamless authentication
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Integrate seamlessly with third-party systems, becoming one
+                entity
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >Implement multi-applications and parent-child applications
+                among multiple NocoBase applications
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">
+              <span class="text-primary">Free</span>, or one-time payment for
+              lifetime usage
+            </h5>
+            <p class="text-muted">
+              NocoBase is freely available for open-source use, with commercial
+              license and plugins offered on top of the open-source version.
+              Commercial license and plugins are purchased once and remain valid
+              for a lifetime.
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >No subscription required
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >No consideration for the number of users
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >No consideration for the number of applications
+              </li>
+              <li class="mb-1 concerns-li">
+                <span class="text-primary h5 me-2 concerns-span"
+                  ><i class="uil uil-smile-beam align-middle"></i></span
+                >No consideration for the amount of data
+              </li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="mt-4 pt-2 text-center">
+            <a href="#section-right" class="btn btn-primary"
+              >What's not? <i class="uil uil-arrow-down"></i></a
+            >
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Right way Start -->
+  <section class="section pb-0" id="section-right">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">The right way to use NocoBase</h3>
+            <p class="text-muted para-desc mx-auto mb-0">
+              No-code is not omnipotent, and neither is NocoBase.
+            </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <ul class="list-unstyled text-muted">
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-silent-squint align-middle text-warning"
+                ></i></span
+              >NocoBase is not a low-code platform and does not support coding
+              directly in the interface
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-silent-squint align-middle text-warning"
+                ></i></span
+              >NocoBase is not a code generator and does not offer code export
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-silent-squint align-middle text-warning"
+                ></i></span
+              >NocoBase is not a tool designed for teams without a technical
+              background
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-silent-squint align-middle text-warning"
+                ></i></span
+              >NocoBase is not a SaaS, no subscription or pay-as-you-go
+              offerings
+            </li>
+          </ul>
+        </div><!--end col-->
+
+        <div class="col-md-6 col-12">
+          <ul class="list-unstyled text-muted">
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-grin align-middle"></i></span
+              >Technical teams use NocoBase as infrastructure to dramatically
+              improve delivery speed and efficiency
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-grin align-middle"></i></span
+              >Technical teams can extend the capabilities of NocoBase with
+              extension plugins, and non-developers can build on top of it
+              without code
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-grin align-middle"></i></span
+              >Use NocoBase to develop business systems and internal tools
+              ranging from simple to complex
+            </li>
+            <li class="mb-1 concerns-li">
+              <span class="text-primary h5 me-2 concerns-span"
+                ><i class="uil uil-grin align-middle"></i></span
+              >Deploy NocoBase on your own servers, use it, and take full
+              control
+            </li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="mt-4 pt-2 text-center">
+            <a href="#section-try" class="btn btn-primary"
+              >Have a try <i class="uil uil-arrow-down"></i></a
+            >
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+  <!-- Try Start -->
+  <section class="section pb-0" id="section-try">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <InteractiveDemo guides={demoConfig} />
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="mt-4 pt-2 text-center">
+            <a href="#section-feedback" class="btn btn-primary"
+              >Happy users <i class="uil uil-arrow-down"></i></a
+            >
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+  <!-- Feedback Start -->
+  <section class="section pb-0" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">It's important to hear what users say</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                With NocoBase we have reduced our administrative task time by 50%, improved collaboration and communication, and a faster and more efficient hiring process.
+              </p>
+              <p class="text-muted fst-italic">
+                At TEDxDUTH, we believe in the power of innovation and collaboration to change the world. NocoBase has empowered us to streamline our operations and focus more on what truly matters—delivering inspiring events that spread ideas worth sharing.
+              </p>
+              <p class="text-muted fst-italic">
+                If your organization is struggling with disorganization or inefficient workflows, NocoBase isn't just a tool—it's a solution that can empower your team to achieve more. For us, it's been a game-changer, helping us dream bigger, work smarter, and create lasting impact in our community.
+              </p>
+              <p class="text-muted fst-italic">
+                Thank you, NocoBase, for being an integral part of our journey. We look forward to growing alongside you as we continue to push boundaries and spread ideas that matter!
+              </p>
+              <img
+                  src="https://static-docs.nocobase.com/20250713094749.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="TED"
+                />
+              <h6 class="text-primary">
+                  Sarantis Antoniou <small class="text-muted">Lead Organizer </small>
+              </h6>
+          </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                We considered AirTable and NocoDB but ultimately chose NocoBase due to its superior flexibility and deployment options. It allows deployment directly within our AWS environment, supports unlimited users, offers granular permission management, and features a decoupled frontend-data architecture that enables easy interface customization. Moreover, its integrated workflow system and automatic API generation have significantly streamlined our processes.
+              </p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094650.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="classmethod"
+                /></a>
+              <h6 class="text-primary">
+                Classmethod, Inc.
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                Before NocoBase, we lacked a dedicated customer service and operations management system. Our business was expanding rapidly, and we needed a solution that could be quickly built to handle increasing demands. NocoBase addressed this challenge exceptionally well. Its outstanding data table relational capabilities allowed us to efficiently integrate diverse data structures. This enabled our customer service team to quickly retrieve user information and resolve customer entitlement issues in real-time, significantly boosting our operational efficiency.
+              </p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094635.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="PLAUD"
+                /></a>
+              <h6 class="text-primary">
+                Lucas, Product Manager, PLAUD
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                We were looking for a flexible no-code platform to create a customized scheduling solution tailored to Okechamp's fast-expanding logistics needs. NocoBase quickly emerged as the best choice with its Schema-first approach, modular structure, and vibrant community. It allowed us to easily build custom views and reporting tools. We plan to continue leveraging NocoBase in more client projects moving forward.
+              </p>
+              <img
+                  src="https://static-docs.nocobase.com/20250713094700.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="Lukardi"
+                />
+              <h6 class="text-primary">
+                Lukardi SA
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                Previously, we relied on paper-based processes for HR management and leave approvals, which was both inefficient and error-prone. Since using NocoBase to build our HR, attendance, and leave management workflows, we've achieved a truly paperless office. Managing over 110 employees has become efficient and intuitive. NocoBase's flexible interface design and powerful API capabilities perfectly cater to the diverse needs of our real estate business. Compared to tools like Salesforce, it's not only highly customizable but also supports a one-time purchase, making it incredibly cost-effective. We're now planning to migrate more systems, including our CRM, to NocoBase, transforming it into our company's core business platform and portal.
+              </p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094720.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="HouseWell"
+                /></a>
+              <h6 class="text-primary">
+                HouseWell, Inc.
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                During the development of our smart factory system, we chose NocoBase as our core platform. Its streamlined setup process empowered even non-technical staff to quickly build interfaces, dramatically boosting development efficiency. With its rich plugin ecosystem and powerful workflow engine, we could flexibly adapt to a wide range of business scenarios while maintaining system quality and scalability. Thanks to NocoBase's granular permission controls, we ensured secure and efficient collaboration across workflows like equipment maintenance and HR management. Once deployed, the system—integrated with PC, mobile, and 5G infrastructure—enabled real-time data feedback and fast input, laying a strong foundation for our smart factory initiative.
+              </p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094732.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="BIEL"
+                /></a>
+              <h6 class="text-primary">
+                BIEL
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                Among the many new database products available, NocoBase is the only solution that truly made me feel like I could have it all. We needed a self-hosted, low-code, scalable system to facilitate task collaboration across dozens of teams and support highly standardized professional scenarios. The learning curve for NocoBase was surprisingly smooth; I was able to build out business processes within days, without needing to rely on developers.
+              </p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094804.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="L&A Design"
+                /></a>
+              <h6 class="text-primary">
+                Zhang Tingyuan, Business Leader, L&A Design
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                After evaluating multiple low-code platforms globally, we ultimately selected NocoBase. Its capability for on-premises deployment and easy extensibility aligns perfectly with our rigorous demands for data security and tailored system design in the chemical industry. With NocoBase's expert support team and flexible data modeling features, deploying our system was both swift and dependable.
+              </p>
+              <a rel="nofollow" href="https://en.xtalpi.com/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094812.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="XtalPi"
+                /></a>
+              <h6 class="text-primary">
+                Xiong Zhi, Project Lead, XtalPi
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                I cannot emphasize enough the great experience we've had with
+                NocoBase as a no-code/low-code platform. It stands out as
+                exceptionally user-friendly, making our development process both
+                smooth and efficient. What impressed me most was how easy it was
+                to work on development of the user experience once the data
+                model was in place. This streamlined approach allowed us to
+                develop a full-fledged system, designed to be used by several
+                hundred organizations, in just a matter of weeks.
+              </p>
+              <p class="text-muted fst-italic">
+                NocoBase has effectively shattered the common misconception that
+                powerful systems require months or even years of work. I highly
+                recommend it for any organization looking to fast-track their
+                development cycle without sacrificing quality.
+              </p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"
+                ><img
+                  src="https://static-docs.nocobase.com/20250713094827.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="Sambruk"
+                /></a>
+              <h6 class="text-primary">
+                Thomas Wennersten <small class="text-muted">CTO</small>
+              </h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">
+                As the core of data management, API services, and workflows,
+                NocoBase significantly lowers the development difficulty,
+                allowing our developers to focus more on the implementation of
+                business logic, thereby greatly improving development
+                efficiency.
+              </p>
+              <p class="text-muted fst-italic">
+                NocoBase possesses excellent integration capabilities, enabling
+                seamless interfacing with various third-party services and
+                systems to achieve data sharing and functional integration. This
+                means we do not need to build all functionalities from scratch
+                but can instead make full use of existing services and resources
+                to quickly integrate various functions and services into our
+                applications. This integration capability not only reduces
+                development time and costs but also enriches and diversifies the
+                application's functionalities, meeting the diverse needs of
+                users.
+              </p>
+              <p class="text-muted fst-italic">
+                In this rapidly evolving digital age, NocoBase is undoubtedly a
+                powerful weapon for us to face challenges and achieve
+                innovation. We are thankful for the NocoBase team's efforts.
+              </p>
+              <a
+                rel="nofollow"
+                href="https://www.chinaunicom.com/"
+                target="_blank"
+                ><img
+                  src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png"
+                  class="mt-4 mb-4"
+                  width="160"
+                  alt="China unicom"
+                /></a
+              >
+              <h6 class="text-primary">
+                Xinjiang Unicom's Scientific Innovation Laboratory
+              </h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Ready for NocoBase?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Deploy a personalized live demo in just 1 minute, or deploy NocoBase
+            locally, it's equally simple.
+          </p>
+          <div class="mt-4">
+            <a
+              href="https://demo.nocobase.com/new"
+              target="_blank"
+              class="btn btn-primary mt-2 mb-4"
+              title="Click to experience NocoBase online"
+              >Live Demo <i class="uil uil-arrow-right"></i></a
+            >
+            <a
+              href="https://docs.nocobase.com/welcome/getting-started/installation"
+              target="_blank"
+              class="btn btn-outline-primary mt-2 mb-4"
+              title="Learn to deploy NocoBase locally"
+              >Deploy locally <i class="uil uil-arrow-right"></i></a
+            >
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+</Layout>
