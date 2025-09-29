@@ -37,9 +37,11 @@
 
 ⭐️ GitHub Stars 数：15.8k
 
-![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
+![项目管理.png](https://static-docs.nocobase.com/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86-a2g0cs.png)
 
 NocoBase 是一个开源的无代码/低代码开发平台，基于灵活的数据建模和强大的插件架构，使其适用于各种业务需求。其中包括构建**自定义的任务管理系统**。
+
+🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，欢迎体验！
 
 并且 NocoBase 专门提供了[如何搭建任务管理系统的详细教程](https://www.nocobase.com/cn/tutorials)，可以帮助用户快速上手进行搭建。
 
@@ -48,9 +50,20 @@ NocoBase 是一个开源的无代码/低代码开发平台，基于灵活的数�
 **功能亮点**
 
 * **灵活的数据建模**：支持复杂的数据关系和自定义字段，满足多样化的业务需求。
+
+![字段配置.png](https://static-docs.nocobase.com/%E5%AD%97%E6%AE%B5%E9%85%8D%E7%BD%AE-myd1vk.png)
+
 * **工作流自动化**：内置可视化工作流设计器，简化业务流程的自动化配置。
+
+![工作流.png](https://static-docs.nocobase.com/%E5%B7%A5%E4%BD%9C%E6%B5%81-l4u45q.png)
+
 * **权限管理**：提供细粒度的权限控制，确保数据安全和访问控制。
+
+![权限管理.png](https://static-docs.nocobase.com/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86-lqcp8a.png)
+
 * **插件扩展**：丰富的插件生态，支持功能扩展和第三方集成。
+
+![AI集成.PNG](https://static-docs.nocobase.com/AI%E9%9B%86%E6%88%90-nwjhgx.PNG)
 
 **最佳场景**
 

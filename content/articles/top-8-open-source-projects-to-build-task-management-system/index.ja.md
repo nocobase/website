@@ -37,9 +37,11 @@
 
 ⭐️ **GitHubスター数**: 15.8k
 
-![NocoBase.png](https://static-docs.nocobase.com/3b207a70c6969eee74e43f34eb4bcf84.png)
+![Project management.png](https://static-docs.nocobase.com/Project%20management-9w3rj1.png)
 
 NocoBaseは、柔軟なデータモデリングと強力なプラグインアーキテクチャを特徴とするオープンソースのノーコード/ローコード開発プラットフォームであり、カスタムタスク管理システムの構築を含むさまざまなビジネスニーズに適しています。
+
+🎉 NocoBase は近日、[プロジェクト管理ソリューション](https://www.nocobase.com/ja/solutions/project-management)を公開しました。ぜひ体験してみてください！
 
 NocoBaseは、ユーザーが簡単に始められるように、[タスク管理システムの設定に関する詳細なチュートリアル](https://www.nocobase.com/en/tutorials)も提供しています。
 
@@ -48,9 +50,20 @@ NocoBaseは、ユーザーが簡単に始められるように、[タスク管�
 **ハイライト**
 
 * **柔軟なデータモデリング**: 複雑なデータ関係やカスタムフィールドをサポートし、多様なビジネスニーズに応えます。
+
+![Configure columns.png](https://static-docs.nocobase.com/Configure%20columns-vua1uu.png)
+
 * **ワークフロー自動化**: 内蔵のビジュアルワークフローデザイナーにより、ビジネスプロセスの自動化が簡素化されます。
+
+![Workflow.png](https://static-docs.nocobase.com/Workflow-7xc40o.png)
+
 * **権限管理**: 詳細な権限制御を提供し、データセキュリティとアクセス管理を確保します。
+
+![Permission.png](https://static-docs.nocobase.com/Permission-4xgn8h.png)
+
 * **プラグインの拡張性**: 豊富なプラグインエコシステムが機能拡張とサードパーティ統合をサポートします。
+
+![Integration.png](https://static-docs.nocobase.com/Integration-r4f8ne.png)
 
 **ベストユースケース**
 

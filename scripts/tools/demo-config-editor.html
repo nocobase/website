@@ -508,20 +508,20 @@
 
         /* 预览面板样式 */
         .preview-section {
-            flex: 1;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            min-height: 300px;
+            flex-shrink: 0;
         }
 
         .json-section {
-            height: 120px;
-            border-top: 1px solid #eee;
-            padding: 8px;
+            padding: 0;
             overflow-y: auto;
             background: #f8f9fa;
-            flex-shrink: 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #eee;
         }
 
         .preview-header {
@@ -817,17 +817,12 @@
         }
 
         .preview-content {
-            flex: 1;
             padding: 8px;
             overflow: auto;
-            min-height: 200px;
         }
 
         .preview-demo {
             position: relative;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            overflow: hidden;
             background: white;
         }
 
@@ -865,7 +860,7 @@
         /* 小预览窗口样式改进 */
         .preview-demo-container {
             position: relative;
-            margin-bottom: 10px;
+            width: 100%;
         }
 
         .preview-step-info {
@@ -912,38 +907,6 @@
             font-size: 12px;
         }
 
-        /* MainSteps 配置面板 */
-        .main-steps-section {
-            border-bottom: 1px solid #eee;
-            padding: 8px;
-            max-height: 180px;
-            overflow-y: auto;
-            flex-shrink: 0;
-        }
-
-        .main-step-item {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 3px;
-            padding: 4px;
-            margin-bottom: 4px;
-            font-size: 10px;
-        }
-
-        .main-step-item input {
-            margin-bottom: 2px;
-            padding: 2px 4px;
-            font-size: 9px;
-            height: 20px;
-            width: 100%;
-        }
-
-        .main-step-item button {
-            padding: 1px 4px;
-            font-size: 9px;
-            height: 18px;
-        }
-
         /* 拖拽时的视觉反馈 */
         .marker:hover {
             transform: scale(1.1);
@@ -953,6 +916,52 @@
         .marker[style*="cursor: grabbing"] {
             transform: scale(1.15);
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        /* 步骤拖拽样式 */
+        .step-item.dragging {
+            opacity: 0.5;
+            background: #e3f2fd;
+            border: 2px dashed #2196f3;
+        }
+
+        .step-item.drag-over {
+            border-top: 3px solid #2196f3;
+        }
+
+        .drag-handle {
+            cursor: move;
+            color: #999;
+            margin-right: 4px;
+            font-size: 12px;
+            display: inline-block;
+            width: 16px;
+            text-align: center;
+        }
+
+        .drag-handle:hover {
+            color: #333;
+        }
+
+        /* 添加章节按钮样式 */
+        .add-chapter-btn {
+            width: 100%;
+            padding: 8px;
+            border: 2px dashed #6c757d;
+            background: #f8f9fa;
+            color: #6c757d;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 5px;
+            transition: all 0.2s;
+        }
+
+        .add-chapter-btn:hover {
+            background: #e9ecef;
+            border-color: #495057;
+            color: #495057;
         }
 
         @media (max-width: 1200px) {
@@ -1031,6 +1040,7 @@
                 <div class="steps-container" id="compactStepsList">
                     <!-- 紧凑步骤列表将动态生成 -->
                 </div>
+                <button class="add-chapter-btn" id="addChapterBtn">📁 添加章节页</button>
             </div>
 
             <!-- 中间面板 - 图片编辑区 -->
@@ -1063,15 +1073,6 @@
 
             <!-- 右侧面板 - 预览和JSON -->
             <div class="right-panel">
-                <!-- MainSteps 配置 -->
-                <div class="main-steps-section">
-                    <h4 style="margin: 0 0 4px 0; font-size: 11px;">🎯 主步骤配置</h4>
-                    <div id="mainStepsContainer">
-                        <!-- MainSteps 将动态生成 -->
-                    </div>
-                    <button class="btn-success" id="addMainStepBtn" style="width: 100%; padding: 3px; font-size: 10px;">➕ 添加主步骤</button>
-                </div>
-
                 <div class="preview-section">
                     <div class="preview-header">
                         <h3>🔍 实时预览</h3>
@@ -1097,9 +1098,12 @@
                 </div>
                 
                 <div class="json-section">
-                    <h4 style="margin: 0 0 4px 0; font-size: 11px;">📋 JSON配置 - 实时编辑</h4>
-                    <textarea id="jsonEditor" style="width: 100%; height: 85px; font-family: monospace; font-size: 9px; padding: 4px; border: 1px solid #007bff; border-radius: 3px; resize: none; background: #f8f9ff; transition: border-color 0.2s;" placeholder="JSON配置将在这里实时显示和编辑..."></textarea>
-                    <div id="jsonStatus" style="margin-top: 2px; font-size: 8px; color: #666;">准备就绪</div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 8px 0 8px;">
+                        <h4 style="margin: 0; font-size: 12px;">📋 JSON配置 - 实时编辑</h4>
+                        <button class="btn-primary" id="exportComponentBtn" style="padding: 4px 10px; font-size: 11px;">导出为组件</button>
+                    </div>
+                    <textarea id="jsonEditor" style="width: calc(100% - 16px); flex: 1; min-height: 150px; margin: 8px 8px 8px 8px; font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace; font-size: 11px; padding: 8px; border: 1px solid #007bff; border-radius: 4px; resize: vertical; background: #f8f9ff; transition: border-color 0.2s; line-height: 1.4;" placeholder="JSON配置将在这里实时显示和编辑..."></textarea>
+                    <div id="jsonStatus" style="margin: 4px 8px 8px 8px; font-size: 10px; color: #666;">准备就绪</div>
                 </div>
             </div>
         </div>
@@ -1131,8 +1135,7 @@
                 this.config = {
                     title: "亲自试一试，3 步创建一个 CRM",
                     subtitle: "",
-                    mainSteps: [],
-                    steps: []
+                    steps: []  // mainSteps 将从章节页自动生成
                 };
                 this.currentStepIndex = -1;
                 this.currentImage = null;
@@ -1145,16 +1148,158 @@
                 this.resizeTimer = null;
                 this.isUpdatingStepsList = false;
                 this.isUpdatingFromJson = false;
+                this.draggedStepIndex = null;
                 this.init();
             }
 
             init() {
                 this.bindEvents();
                 this.setupJsonEditor();
-                this.updateMainSteps();
+                this.loadPresetExample();
                 this.updateCompactStepsList();
                 this.updatePreview();
                 this.updateJsonDisplay();
+            }
+
+            loadPresetExample() {
+                // Preset English demo configuration with chapter pages
+                this.config = {
+                    "title": "Try it out: 3 steps to create a CRM",
+                    "subtitle": "",
+                    "steps": [
+                        {
+                            "id": "intro",
+                            "title": "Welcome to NocoBase",
+                            "description": "Let's build a CRM in 3 simple steps",
+                            "targetStepId": "step-start"
+                            // No image property - this is a chapter page
+                        },
+                        {
+                            "id": "step-start",
+                            "title": "Start Demo",
+                            "description": "Click, 3 steps to create a CRM",
+                            "image": "https://static-docs.nocobase.com/1-home-steps.png",
+                            "button": {
+                                "id": "button1",
+                                "label": "Click, 3 steps to create a CRM",
+                                "position": {
+                                    "left": "46%",
+                                    "top": "45%"
+                                },
+                                "balloonPos": "up",
+                                "balloonLength": "medium"
+                            }
+                        },
+                        {
+                            "id": "chapter-1",
+                            "title": "Step 1: Collections & Fields",
+                            "description": "First, we'll create data collections and define their fields",
+                            "targetStepId": "step-1"
+                            // Chapter page
+                        },
+                        {
+                            "id": "step-1",
+                            "title": "Enter Collection Manager",
+                            "description": "Enter the collection manager screen",
+                            "image": "https://static-docs.nocobase.com/2-home-steps.png",
+                            "button": {
+                                "id": "button2",
+                                "label": "Enter the collection manager screen",
+                                "position": {
+                                    "right": "12%",
+                                    "top": "6%"
+                                },
+                                "balloonPos": "left",
+                                "balloonLength": "medium"
+                            }
+                        },
+                        {
+                            "id": "step-2",
+                            "title": "Create Collections",
+                            "description": "Let's create the Companies, Orders collections",
+                            "image": "https://static-docs.nocobase.com/3-home-steps.png",
+                            "button": {
+                                "id": "button3",
+                                "label": "Let's create the Companies, Orders collections",
+                                "position": {
+                                    "right": "13%",
+                                    "top": "22%"
+                                },
+                                "balloonPos": "left",
+                                "balloonLength": "medium"
+                            }
+                        },
+                        {
+                            "id": "chapter-2",
+                            "title": "Step 2: UI Configuration",
+                            "description": "Now let's configure menus and pages",
+                            "targetStepId": "step-3"
+                            // Chapter page
+                        },
+                        {
+                            "id": "step-3",
+                            "title": "Add Menu Items",
+                            "description": "Configure navigation menus for your CRM",
+                            "image": "https://static-docs.nocobase.com/8-home-steps.png",
+                            "button": {
+                                "id": "button4",
+                                "label": "Add menu items here",
+                                "position": {
+                                    "left": "16%",
+                                    "top": "7%"
+                                },
+                                "balloonPos": "right",
+                                "balloonLength": "medium"
+                            }
+                        },
+                        {
+                            "id": "chapter-3",
+                            "title": "Step 3: Blocks & Actions",
+                            "description": "Finally, let's add data blocks and configure actions",
+                            "targetStepId": "step-4"
+                            // Chapter page
+                        },
+                        {
+                            "id": "step-4",
+                            "title": "Add Table Block",
+                            "description": "Add a table block to display companies data",
+                            "image": "https://static-docs.nocobase.com/11-home-steps.png",
+                            "button": {
+                                "id": "button5",
+                                "label": "Add table block",
+                                "position": {
+                                    "left": "40%",
+                                    "top": "30%"
+                                },
+                                "balloonPos": "down",
+                                "balloonLength": "medium"
+                            }
+                        },
+                        {
+                            "id": "complete",
+                            "title": "Congratulations!",
+                            "description": "Your CRM is ready. Start adding data and customizing further.",
+                            "targetStepId": null
+                            // Final chapter page
+                        }
+                    ]
+                };
+
+                // Update global title input
+                document.getElementById('globalTitle').value = this.config.title;
+                
+                // Set current step to the first one
+                if (this.config.steps.length > 0) {
+                    this.currentStepIndex = 0;
+                    const firstStep = this.config.steps[0];
+                    if (firstStep.image) {
+                        document.getElementById('imageUrl').value = firstStep.image;
+                        this.loadImage();
+                    } else {
+                        document.getElementById('imageUrl').value = '';
+                        this.displayChapterPage();
+                    }
+                }
             }
 
             bindEvents() {
@@ -1169,7 +1314,8 @@
                 document.getElementById('clearMarkersBtn').addEventListener('click', () => this.clearMarkers());
                 document.getElementById('prevStepBtn').addEventListener('click', () => this.previewPrevStep());
                 document.getElementById('nextStepBtn').addEventListener('click', () => this.previewNextStep());
-                document.getElementById('addMainStepBtn').addEventListener('click', () => this.addMainStep());
+                document.getElementById('addChapterBtn').addEventListener('click', () => this.addChapterStep());
+                document.getElementById('exportComponentBtn').addEventListener('click', () => this.exportAsComponent());
                 
                 // 全屏预览事件
                 document.getElementById('fullscreenBtn').addEventListener('click', () => this.openFullscreenPreview());
@@ -1755,10 +1901,33 @@
                 const div = document.createElement('div');
                 const isChapter = this.isChapterStep(step);
                 div.className = `step-item ${index === this.currentStepIndex ? 'active' : ''} ${isChapter ? 'chapter' : ''}`;
-                div.addEventListener('click', () => this.selectCompactStep(index));
+                div.dataset.stepIndex = index;
+                div.draggable = true;
+                
+                // 添加拖拽事件
+                div.addEventListener('dragstart', (e) => this.onStepDragStart(e, index));
+                div.addEventListener('dragover', (e) => this.onStepDragOver(e, index));
+                div.addEventListener('drop', (e) => this.onStepDrop(e, index));
+                div.addEventListener('dragend', (e) => this.onStepDragEnd(e));
+                div.addEventListener('dragenter', (e) => this.onStepDragEnter(e));
+                div.addEventListener('dragleave', (e) => this.onStepDragLeave(e));
+                
+                div.addEventListener('click', (e) => {
+                    // 避免拖拽手柄触发选择
+                    if (!e.target.classList.contains('drag-handle')) {
+                        this.selectCompactStep(index);
+                    }
+                });
 
                 // 章节页标识
                 const chapterIndicator = isChapter ? '📁' : '';
+                
+                // 章节页的目标步骤配置
+                const targetStepConfig = isChapter ? `
+                    <input type="text" value="${step.targetStepId || ''}" placeholder="目标步骤ID (可选)" 
+                           oninput="demoEditor.updateStepField(${index}, 'targetStepId', this.value)"
+                           style="margin-bottom: 2px;">
+                ` : '';
                 
                 // 只在有按钮时显示按钮配置
                 const buttonConfig = step.button ? `
@@ -1782,7 +1951,7 @@
 
                 div.innerHTML = `
                     <div class="step-item-header">
-                        <span>${chapterIndicator}${index + 1}. ${step.title || '步骤'}</span>
+                        <span><span class="drag-handle">☰</span>${chapterIndicator}${index + 1}. ${step.title || '步骤'}</span>
                         <div>
                             <button onclick="demoEditor.deleteStep(${index})">×</button>
                         </div>
@@ -1793,6 +1962,7 @@
                            oninput="demoEditor.updateStepField(${index}, 'title', this.value)">
                     <input type="url" value="${step.image || ''}" placeholder="图片链接（空白=章节页）" 
                            oninput="demoEditor.updateStepImageWithDebounce(${index}, this.value)">
+                    ${targetStepConfig}
                     ${buttonConfig}
                 `;
 
@@ -1807,8 +1977,9 @@
                     <div class="step-item-header">
                         <span>+ 新建步骤</span>
                     </div>
-                    <input type="url" placeholder="图片链接（空白=章节页）" 
-                           onchange="demoEditor.createStepFromPendingImage(this.value)">
+                    <input type="url" placeholder="粘贴图片URL，或按空格/回车创建章节页" 
+                           onchange="demoEditor.createStepFromPendingImage(this.value)"
+                           onkeypress="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); demoEditor.createStepFromPendingImage(''); this.value = ''; }">
                 `;
 
                 return div;
@@ -1971,66 +2142,6 @@
                 }
             }
 
-            // === MainSteps 管理 ===
-
-            updateMainSteps() {
-                const container = document.getElementById('mainStepsContainer');
-                container.innerHTML = '';
-
-                if (this.config.mainSteps.length === 0) {
-                    container.innerHTML = '<div style="text-align: center; color: #999; font-size: 11px; padding: 8px;">暂无主步骤配置</div>';
-                    return;
-                }
-
-                this.config.mainSteps.forEach((mainStep, index) => {
-                    const div = document.createElement('div');
-                    div.className = 'main-step-item';
-                    
-                    div.innerHTML = `
-                        <input type="text" value="${mainStep.number || ''}" placeholder="编号" 
-                               oninput="demoEditor.updateMainStep(${index}, 'number', this.value)">
-                        <input type="text" value="${mainStep.title || ''}" placeholder="标题" 
-                               oninput="demoEditor.updateMainStep(${index}, 'title', this.value)">
-                        <input type="text" value="${mainStep.id || ''}" placeholder="ID" 
-                               oninput="demoEditor.updateMainStep(${index}, 'id', this.value)">
-                        <input type="text" value="${mainStep.targetStepId || ''}" placeholder="目标步骤ID" 
-                               oninput="demoEditor.updateMainStep(${index}, 'targetStepId', this.value)">
-                        <button class="btn-danger" onclick="demoEditor.deleteMainStep(${index})" style="width: 100%; margin-top: 3px;">删除</button>
-                    `;
-                    
-                    container.appendChild(div);
-                });
-            }
-
-            updateMainStep(index, field, value) {
-                if (index >= 0 && index < this.config.mainSteps.length) {
-                    this.config.mainSteps[index][field] = value;
-                    this.updateJsonDisplay();
-                }
-            }
-
-            addMainStep() {
-                const stepNum = String(this.config.mainSteps.length + 1).padStart(2, '0');
-                const newMainStep = {
-                    number: stepNum,
-                    title: '步骤 ' + (this.config.mainSteps.length + 1),
-                    id: 'guide' + (this.config.mainSteps.length + 1),
-                    targetStepId: stepNum
-                };
-                
-                this.config.mainSteps.push(newMainStep);
-                this.updateMainSteps();
-                this.updateJsonDisplay();
-            }
-
-            deleteMainStep(index) {
-                if (confirm('确定要删除这个主步骤吗？')) {
-                    this.config.mainSteps.splice(index, 1);
-                    this.updateMainSteps();
-                    this.updateJsonDisplay();
-                }
-            }
-
             // JSON实时编辑功能
             setupJsonEditor() {
                 const jsonEditor = document.getElementById('jsonEditor');
@@ -2094,7 +2205,6 @@
                     }
                     
                     // 更新界面
-                    this.updateMainSteps();
                     this.updateCompactStepsList();
                     this.updatePreview();
                     
@@ -2139,6 +2249,99 @@
                 this.updatePreview();
             }
 
+            // === 拖拽排序功能 ===
+            
+            onStepDragStart(e, index) {
+                this.draggedStepIndex = index;
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/html', e.target.innerHTML);
+                e.target.classList.add('dragging');
+            }
+
+            onStepDragOver(e, index) {
+                if (e.preventDefault) {
+                    e.preventDefault();
+                }
+                e.dataTransfer.dropEffect = 'move';
+                return false;
+            }
+
+            onStepDragEnter(e) {
+                e.target.closest('.step-item')?.classList.add('drag-over');
+            }
+
+            onStepDragLeave(e) {
+                e.target.closest('.step-item')?.classList.remove('drag-over');
+            }
+
+            onStepDrop(e, dropIndex) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                }
+                
+                const draggedIndex = this.draggedStepIndex;
+                
+                if (draggedIndex !== null && draggedIndex !== dropIndex) {
+                    // 移动步骤
+                    const [movedStep] = this.config.steps.splice(draggedIndex, 1);
+                    this.config.steps.splice(dropIndex, 0, movedStep);
+                    
+                    // 更新当前选中的索引
+                    if (this.currentStepIndex === draggedIndex) {
+                        this.currentStepIndex = dropIndex;
+                    } else if (draggedIndex < this.currentStepIndex && dropIndex >= this.currentStepIndex) {
+                        this.currentStepIndex--;
+                    } else if (draggedIndex > this.currentStepIndex && dropIndex <= this.currentStepIndex) {
+                        this.currentStepIndex++;
+                    }
+                    
+                    // 更新预览当前步骤
+                    if (this.previewCurrentStep === draggedIndex) {
+                        this.previewCurrentStep = dropIndex;
+                    } else if (draggedIndex < this.previewCurrentStep && dropIndex >= this.previewCurrentStep) {
+                        this.previewCurrentStep--;
+                    } else if (draggedIndex > this.previewCurrentStep && dropIndex <= this.previewCurrentStep) {
+                        this.previewCurrentStep++;
+                    }
+                    
+                    this.updateCompactStepsList();
+                    this.updatePreview();
+                    this.updateJsonDisplay();
+                }
+                
+                e.target.closest('.step-item')?.classList.remove('drag-over');
+                return false;
+            }
+
+            onStepDragEnd(e) {
+                e.target.classList.remove('dragging');
+                // 清除所有drag-over类
+                document.querySelectorAll('.step-item').forEach(item => {
+                    item.classList.remove('drag-over');
+                });
+                this.draggedStepIndex = null;
+            }
+
+            // === 添加章节页功能 ===
+            
+            addChapterStep() {
+                const chapterNum = this.config.steps.filter(s => this.isChapterStep(s)).length + 1;
+                const newChapter = {
+                    id: `chapter-${chapterNum}`,
+                    title: `章节 ${chapterNum}`,
+                    description: "章节描述",
+                    targetStepId: null  // 可以关联到特定步骤
+                    // 注意：不设置 image 属性，这样就是章节页
+                };
+                
+                this.config.steps.push(newChapter);
+                const newIndex = this.config.steps.length - 1;
+                this.selectCompactStep(newIndex);
+                this.updateCompactStepsList();
+                this.updatePreview();
+                this.updateJsonDisplay();
+            }
+
             // === 预览功能相关方法 ===
 
             updatePreview() {
@@ -2173,18 +2376,17 @@
                 // 如果是章节页
                 if (this.isChapterStep(currentStep)) {
                     previewDemo.innerHTML = `
-                        <div class="preview-demo-container">
-                            <div class="chapter-display" onclick="demoEditor.previewNextStep()" style="cursor: pointer;">
-                                <div class="chapter-content">
-                                    <div class="chapter-number">${currentStep.id}</div>
-                                    <br>
-                                    <div class="chapter-title">${currentStep.title}</div>
-                                </div>
+                        <div class="chapter-display" onclick="demoEditor.previewNextStep()" style="cursor: pointer; min-height: 300px;">
+                            <div class="chapter-content">
+                                <div class="chapter-number">${currentStep.id}</div>
+                                <br>
+                                <div class="chapter-title">${currentStep.title}</div>
                             </div>
                         </div>
                         <div class="preview-step-info">
                             <strong>📁 ${currentStep.title}</strong>
                             ${currentStep.description ? `<br><small class="text-muted">${currentStep.description}</small>` : ''}
+                            ${currentStep.targetStepId ? `<br><small class="text-muted">→ 目标: ${currentStep.targetStepId}</small>` : ''}
                         </div>
                     `;
                 } else if (!currentStep.image) {
@@ -2232,7 +2434,7 @@
 
                     previewDemo.innerHTML = `
                         <div class="preview-demo-container">
-                            <img src="${currentStep.image}" onload="this.style.opacity=1" style="opacity:0.5; transition: opacity 0.3s; width: 100%; border-radius: 4px;">
+                            <img src="${currentStep.image}" onload="this.style.opacity=1" style="opacity:0.5; transition: opacity 0.3s; width: 100%; height: auto; border-radius: 4px;">
                             ${buttonHtml}
                         </div>
                         <div class="preview-step-info">
@@ -2478,6 +2680,229 @@
                 
                 prevBtn.disabled = this.previewCurrentStep <= 0;
                 nextBtn.disabled = this.previewCurrentStep >= total - 1;
+            }
+
+            // === 导出为组件功能 ===
+            
+            exportAsComponent() {
+                // 生成时间戳变量名
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                const varName = `demo_${year}${month}${day}${hours}${minutes}${seconds}`;
+                
+                // 自动从有效章节页生成 mainSteps
+                const mainSteps = [];
+                let stepNumber = 1;
+                
+                // 找出所有有效的章节页（不包括intro/complete/finish但包括chapter-X）
+                const validChapterSteps = this.config.steps.filter(step => {
+                    if (!this.isChapterStep(step)) return false;
+                    if (!step.id) return false;
+                    
+                    // 跳过特殊的介绍和结束章节，但保留chapter-X格式的章节
+                    const skipIds = ['intro', 'complete', 'finish', 'start', 'end'];
+                    const shouldSkip = skipIds.some(skipId => 
+                        step.id.toLowerCase() === skipId || 
+                        step.id.toLowerCase().startsWith(skipId + '-') ||
+                        step.id.toLowerCase().endsWith('-' + skipId)
+                    );
+                    
+                    return !shouldSkip;
+                });
+                
+                // 为每个有效章节页生成mainSteps条目
+                validChapterSteps.forEach((step) => {
+                    mainSteps.push({
+                        number: String(stepNumber).padStart(2, '0'),
+                        title: step.title || `Step ${stepNumber}`,
+                        id: `guide${stepNumber}`,
+                        targetStepId: step.id  // 直接使用章节页的ID
+                    });
+                    stepNumber++;
+                });
+                
+                // 生成导出配置
+                const exportConfig = {
+                    title: this.config.title || "",
+                    subtitle: this.config.subtitle || "",
+                    mainSteps: mainSteps,
+                    steps: this.config.steps
+                };
+                
+                // 格式化JSON配置
+                const jsonString = JSON.stringify(exportConfig, null, 2);
+                
+                // 创建模态框显示代码
+                this.showExportModal(jsonString, varName);
+            }
+
+            showExportModal(jsonString, varName) {
+                // 创建模态框覆盖层
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 10000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                `;
+
+                // 创建模态框内容
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background: white;
+                    padding: 25px;
+                    border-radius: 10px;
+                    max-width: 1000px;
+                    width: 95%;
+                    height: 90vh;
+                    max-height: 800px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+                `;
+
+                // 生成两部分代码
+                const definitionCode = `const ${varName} = ${jsonString};`;
+                const componentCode = `<InteractiveDemo guides={${varName}} />`;
+                
+                modalContent.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-shrink: 0;">
+                        <h3 style="margin: 0; font-size: 20px; color: #333;">🚀 导出为 Astro 组件</h3>
+                        <button id="closeModalBtn" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px;">✕ 关闭</button>
+                    </div>
+                    <div style="background: #f0f7ff; padding: 15px; border-radius: 6px; margin-bottom: 20px; border: 1px solid #b8daff; flex-shrink: 0;">
+                        <p style="margin: 0 0 8px 0; font-size: 14px; color: #004085; font-weight: 500;">📌 使用说明：</p>
+                        <p style="margin: 0; font-size: 13px; color: #004085; line-height: 1.6;">
+                            1. 确保已经导入 InteractiveDemo 组件：<code style="background: white; padding: 2px 6px; border-radius: 3px; font-family: monospace;">import InteractiveDemo from '@components/InteractiveDemo.astro';</code><br>
+                            2. 将配置定义复制到 Astro 页面的 frontmatter 部分（--- 之间）<br>
+                            3. 将组件使用代码复制到页面需要展示的位置
+                        </p>
+                    </div>
+                    <div style="flex: 1; min-height: 0; display: flex; gap: 15px; overflow: hidden;">
+                        <div style="flex: 1; display: flex; flex-direction: column;">
+                            <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #333; display: flex; align-items: center; gap: 8px;">
+                                <span style="background: #007bff; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Part 1</span>
+                                配置定义
+                                <span style="font-size: 12px; color: #666; font-weight: normal;">（变量名: ${varName}）</span>
+                            </h4>
+                            <textarea id="definitionCode" style="flex: 1; width: 100%; font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace; font-size: 12px; line-height: 1.5; padding: 12px; border: 2px solid #e0e0e0; border-radius: 6px; background: #fafafa; resize: none; overflow: auto;" readonly>${definitionCode}</textarea>
+                            <button id="copyDefinitionBtn" class="btn-success" style="margin-top: 10px; padding: 8px; font-size: 13px; border-radius: 4px;">📋 复制配置定义</button>
+                        </div>
+                        <div style="flex: 0 0 350px; display: flex; flex-direction: column;">
+                            <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #333; display: flex; align-items: center; gap: 8px;">
+                                <span style="background: #28a745; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Part 2</span>
+                                组件使用
+                            </h4>
+                            <textarea id="componentCode" style="flex: 0 0 100px; width: 100%; font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace; font-size: 12px; line-height: 1.5; padding: 12px; border: 2px solid #e0e0e0; border-radius: 6px; background: #fafafa; resize: none; overflow: auto;" readonly>${componentCode}</textarea>
+                            <button id="copyComponentBtn" class="btn-success" style="margin-top: 10px; padding: 8px; font-size: 13px; border-radius: 4px;">📋 复制组件代码</button>
+                            <div style="flex: 1; margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 6px; border: 1px solid #dee2e6;">
+                                <h5 style="margin: 0 0 10px 0; font-size: 13px; color: #495057;">💡 完整示例：</h5>
+                                <pre style="margin: 0; font-size: 11px; line-height: 1.4; color: #495057; font-family: monospace; white-space: pre-wrap; word-wrap: break-word;">---
+import InteractiveDemo from '@components/InteractiveDemo.astro';
+
+${definitionCode}
+---
+
+&lt;!-- 页面内容 --&gt;
+${componentCode}</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 12px; margin-top: 20px; flex-shrink: 0;">
+                        <button id="copyAllBtn" class="btn-primary" style="flex: 1; padding: 12px; font-size: 14px; font-weight: 500; border-radius: 6px;">📋 复制全部代码</button>
+                        <button id="downloadCodeBtn" class="btn-primary" style="flex: 1; padding: 12px; font-size: 14px; font-weight: 500; border-radius: 6px;">💾 下载为文件</button>
+                    </div>
+                `;
+
+                modal.appendChild(modalContent);
+                document.body.appendChild(modal);
+
+                // 绑定事件
+                document.getElementById('closeModalBtn').addEventListener('click', () => {
+                    document.body.removeChild(modal);
+                });
+
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        document.body.removeChild(modal);
+                    }
+                });
+
+                // 复制功能辅助函数
+                const copyToClipboard = (text, btnId) => {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = text;
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    
+                    // 显示复制成功提示
+                    const btn = document.getElementById(btnId);
+                    const originalText = btn.textContent;
+                    btn.textContent = '✓ 已复制!';
+                    btn.style.background = '#28a745';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.style.background = '';
+                    }, 2000);
+                };
+
+                // 复制配置定义
+                document.getElementById('copyDefinitionBtn').addEventListener('click', () => {
+                    copyToClipboard(definitionCode, 'copyDefinitionBtn');
+                });
+
+                // 复制组件代码
+                document.getElementById('copyComponentBtn').addEventListener('click', () => {
+                    copyToClipboard(componentCode, 'copyComponentBtn');
+                });
+
+                // 复制全部代码
+                document.getElementById('copyAllBtn').addEventListener('click', () => {
+                    const fullCode = `---
+import InteractiveDemo from '@components/InteractiveDemo.astro';
+
+${definitionCode}
+---
+
+<!-- 页面内容 -->
+${componentCode}`;
+                    copyToClipboard(fullCode, 'copyAllBtn');
+                });
+
+                document.getElementById('downloadCodeBtn').addEventListener('click', () => {
+                    const fullCode = `---
+import InteractiveDemo from '@components/InteractiveDemo.astro';
+
+${definitionCode}
+---
+
+<!-- 页面内容 -->
+${componentCode}`;
+                    const blob = new Blob([fullCode], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `demo-config-${varName}.astro`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
             }
         }
 

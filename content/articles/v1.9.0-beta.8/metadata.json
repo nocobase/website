@@ -1,0 +1,93 @@
+{
+  "id": 684,
+  "title": "NocoBase v1.9.0-beta.8: Add support for side menu color customization",
+  "title_cn": "NocoBase v1.9.0-beta.8：新增对侧边菜单栏的颜色配置",
+  "title_ja": "NocoBase v1.9.0-beta.8：サイドメニューの色のカスタマイズをサポート",
+  "description": "Release Note of v1.9.0-beta.8",
+  "description_cn": "v1.9.0-beta.8 更新日志",
+  "description_ja": "v1.9.0-beta.8 のリリースノート",
+  "slug": "v1.9.0-beta.8",
+  "publishedAt": "2025-09-20T15:37:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-09-20T15:37:06.859Z",
+        "updatedAt": "2025-09-20T15:37:06.859Z",
+        "tagId": 4,
+        "articleId": 684
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2025-09-21T12:33:29.606Z",
+        "updatedAt": "2025-09-21T12:33:29.606Z",
+        "articles_id": 684,
+        "tags_id": 234
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-09-21T12:31:37.699Z",
+    "updatedAt": "2025-09-21T12:31:37.702Z",
+    "id": 1933,
+    "title": "next",
+    "filename": "next-fplecf.png",
+    "extname": ".png",
+    "size": 115144,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next-fplecf.png",
+    "preview": "https://static-docs.nocobase.com/next-fplecf.png",
+    "storageId": 2,
+    "createdById": 3,
+    "updatedById": 3
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-09-21T12:33:29.600Z"
+}

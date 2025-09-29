@@ -20,20 +20,33 @@
 
 ## 1. **NocoBase**
 
-![NocoBase.PNG](https://static-docs.nocobase.com/bf16eceb2fc546e8146ab0ddce97e089.PNG)
+![项目管理.png](https://static-docs.nocobase.com/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86-c88xwr.png)
 
 **使用体验**
 
 [NocoBase](https://www.nocobase.com/) 是一个很强大的无代码（零代码）开发平台，可以用于构建项目管理系统。基于数据驱动模型，NocoBase 可以帮你构建一个灵活的项目管理系统，并提供了极大的自定义空间。NocoBase 的界面风格非常简约，使得任务管理和项目追踪变得直观而高效。
+
+🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，欢迎体验！
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
 **优点**
 
 * **高度自定义的界面:** 允许自定义字段和视图，如表格、看板、甘特图、日历等，简化了数据管理和任务分配。
+
+![字段配置.png](https://static-docs.nocobase.com/%E5%AD%97%E6%AE%B5%E9%85%8D%E7%BD%AE-rjd05c.png)
+
 * **自动化工作流:** 通过图形化界面，可以轻松设计并实施自动化规则，涵盖审批流程、通知机制等，有效简化复杂业务流程。
+
+![工作流.png](https://static-docs.nocobase.com/%E5%B7%A5%E4%BD%9C%E6%B5%81-w7sao4.png)
+
 * **强大的数据集成:** 可以连接多种数据库和数据源，如 MySQL、PostgreSQL、SQLite 等，轻松管理所有项目相关的信息。
+
+![数据源.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E6%BA%90-yara1a.png)
+
 * **易于上手:** 直观的拖放操作、灵活的配置、详细的文档和教程，适合各种技术水平的用户。
+
+![文档.png](https://static-docs.nocobase.com/%E6%96%87%E6%A1%A3-w4txha.png)
 
 **适用场景**
 
