@@ -2,35 +2,247 @@
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 
-const title = "NocoBase 伙伴";
-const description = "查找全球范围内的 NocoBase 认证伙伴和合作伙伴，获得专业的技术支持和咨询服务。";
+const title = "NocoBase 服务伙伴";
+const description =
+  "发现遍布全球的 NocoBase 认证服务伙伴，享受专业的技术支持和咨询服务。";
 const keywords = "NocoBase,伙伴,合作伙伴,技术支持,咨询服务";
 
-// 合作伙伴数据按大洲分组
 const partnersByContinent = [
   {
     continent: "亚洲",
     partners: [
       {
-        name: "NocoBase 中国",
-        location: "中国·北京",
-        description: "NocoBase 官方团队，提供全面的产品支持和咨询服务",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://cn.nocobase.com",
-        services: ["产品开发", "技术咨询", "培训服务", "定制开发"],
-        contact: "hello@nocobase.com",
+        id: "82",
+        name: "上海攸迁信息科技有限公司 (SeaDocker)",
+        location: "中国·上海",
+        description:
+          "SeaDocker 海多客是攸迁科技旗下跨境电商一站式交易服务平台，提供从订单聚合、仓储物流到全球跨境服务的全流程支持。基于 NocoBase 构建多语言、多海外主体、多角色的超级跨境 OA 系统，实现财务、人事等全球协作管理。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/攸迁logo-u6g63u.svg",
+        website: "https://www.seadocker.com/",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["企业资源计划 (ERP)", "库存与仓储（WMS / Inventory）", "办公自动化（OA）"] },
+          { category: "行业解决方案", sub: ["零售/电商"] }
+        ],
+        contact: "leon@uoqian.com",
+        cn: true,
         certified: true,
-        featured: true
+        featured: false
       },
       {
-        name: "TechPartner Asia",
-        location: "新加坡",
-        description: "专注于企业数字化转型的技术伙伴，拥有丰富的企业级项目经验",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["系统集成", "数据迁移", "技术培训"],
-        contact: "contact@techpartner.sg",
+        id: "22",
+        name: "郑州光量子信息科技有限公司",
+        location: "中国·郑州",
+        description:
+          "光量子科技以零代码技术赋能校园管理，实现降本增效。基于 NocoBase 平台，为学校快速搭建教师荣誉登记与绩效考核系统，实现全流程线上化。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/logo-94chjl.jpg",
+        website: "",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          {
+            category: "企业管理系统",
+            sub: ["预约与排期系统", "业务流程管理 (BPM)", "内容管理系统 (CMS)", "客户关系管理 (CRM)", "办公自动化（OA）", "库存与仓储（WMS / Inventory）"]
+          },
+          { category: "行业解决方案", sub: ["教育", "政府与公共事业", "信息技术与软件", "建筑与地产"] }
+        ],
+        contact: "zhaobo@guanglz.cn",
+        cn: true,
         certified: true,
+        featured: false
+      },
+      {
+        id: "271",
+        name: "深圳市创联云科技有限公司",
+        location: "中国·深圳",
+        description: "聚焦政府与公共事业信息化服务，提供基于 NocoBase 的部署、插件开发与本地化支持。",
+        logo: "https://www.chuanglianyun.cn/upload/%E5%88%9B%E8%81%94%E4%BA%91%20logo.png",
+        website: "https://www.chuanglianyun.cn/",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "行业解决方案", sub: ["政府与公共事业"] }
+        ],
+        contact: "jason@chuanglianyun.cn",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "199",
+        name: "上海翱坤信息科技有限公司",
+        location: "中国·上海",
+        description: "航空领域综合工程服务商，内部基于 NocoBase 搭建民航规章的业务流程管理系统。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/六边鹰logo-英字-蓝色(copy)-szo4yi.png",
+        website: "https://www.aerok.com.cn",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["业务流程管理 (BPM)"] },
+          { category: "行业解决方案", sub: ["航空"] }
+        ],
+        contact: "wu.chaoqian@aerok.com.cn",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "93",
+        name: "安徽有巢数智信息科技有限公司",
+        location: "中国·安徽芜湖",
+        description:
+          "建筑行业数智化解决方案专家，深度集成 BIM、GIS、IoT 技术，以推动建筑行业数智化转型。仅用 1 周开发出铁路安全穿透式管理系统并 2 个月交付，创造同类项目最快纪录。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/有巢数智%20主LOGO-nkke01.png",
+        website: "http://www.youchaoyun.com",
+        services: [
+          { category: "服务类型", sub: ["定制开发", "维护与支持", "插件/扩展开发", "产品开发", "系统集成"] },
+          {
+            category: "企业管理系统",
+            sub: ["客户关系管理 (CRM)", "企业资源计划 (ERP)", "财务与会计", "人力资源管理 (HRM)", "制造（MES / 订单）", "办公自动化（OA）", "项目与协同（PM / 协同）", "库存与仓储（WMS / Inventory）"]
+          },
+          { category: "行业解决方案", sub: ["制造业", "建筑与地产"] }
+        ],
+        contact: "wxf@youchaoyun.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "38",
+        name: "上海旭立信息技术有限公司",
+        location: "中国·上海",
+        description:
+          "专业金融科技和商业数据服务公司，基于 NocoBase 1.5 搭建投行专家库系统，满足数据权限及专家信息展示需求。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/logo-xnpryg.png",
+        website: "http://www.stander-info.com",
+        services: [
+          { category: "服务类型", sub: ["部署（云/本地化）", "数据迁移", "产品开发", "系统集成", "技术咨询"] },
+          { category: "企业管理系统", sub: ["客户关系管理 (CRM)", "电商/零售（会员/分销等）", "人力资源管理 (HRM)"] },
+          { category: "行业解决方案", sub: ["金融", "政府与公共事业", "零售/电商"] }
+        ],
+        contact: "lifeye.yu@stander-info.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "43",
+        name: "江苏兰之天软件技术有限公司",
+        location: "中国·江苏",
+        description: "为中小型制造企业提供全场景数字工厂解决方案；基于 NocoBase 构建可扩展的 WMS 仓储管理系统。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/资源 8-xp5mv0.png",
+        website: "http://www.orchisky.com/",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["库存与仓储（WMS / Inventory）"] },
+          { category: "行业解决方案", sub: ["制造业"] }
+        ],
+        contact: "haifeng.feng@orchisky.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "78",
+        name: "三兴堂（广州）信息技术有限公司",
+        location: "中国·广州",
+        description:
+          "专注为大湾区中大型企业提供数字化转型咨询与定制化服务，深耕地产、零售、制造等行业，并服务多家500强。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/3iwom%20logo-x39lp5.jpg",
+        website: "https://www.3iwom.com",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          {
+            category: "企业管理系统",
+            sub: ["业务流程管理 (BPM)", "客户关系管理 (CRM)", "电商/零售（会员/分销等）", "企业资源计划 (ERP)", "财务与会计", "人力资源管理 (HRM)", "制造（MES / 订单）", "办公自动化（OA）", "项目与协同（PM / 协同）", "地产/物业管理", "库存与仓储（WMS / Inventory）"]
+          },
+          { category: "行业解决方案", sub: ["政府与公共事业", "医疗健康", "信息技术与软件", "制造业", "媒体与娱乐", "建筑与地产", "零售/电商"] }
+        ],
+        contact: "forest@3iwom.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "81",
+        name: "湖南飞域无界科技有限公司",
+        location: "中国·湖南长沙望城区",
+        description:
+          "为企业提供一体化的零代码平台研发与实施服务，帮助客户实现业务流程可视化、管理数字化、创新敏捷化。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/微信图片_20250615231905_副本_副本-zto0bj.png",
+        website: "http://mc1122.wicp.net:8088/",
+        services: [
+          { category: "服务类型", sub: ["部署（云/本地化）", "定制开发", "维护与支持", "产品开发", "系统集成"] },
+          {
+            category: "企业管理系统",
+            sub: ["预约与排期系统", "业务流程管理 (BPM)", "内容管理系统 (CMS)", "客户关系管理 (CRM)", "电商/零售（会员/分销等）", "教育（LMS / 学员）", "企业资源计划 (ERP)", "财务与会计", "医疗（EMR / 患者管理）", "人力资源管理 (HRM)", "制造（MES / 订单）", "非营利组织（捐赠/活动）", "办公自动化（OA）", "项目与协同（PM / 协同）", "地产/物业管理", "库存与仓储（WMS / Inventory）"]
+          },
+          { category: "行业解决方案", sub: ["教育", "金融", "政府与公共事业", "医疗健康", "信息技术与软件", "制造业", "媒体与娱乐", "建筑与地产", "零售/电商"] }
+        ],
+        contact: "249413181@qq.com",
+        cn: true,
+        certified: false,
+        featured: false
+      },
+      {
+        id: "1000159",
+        name: "Purple Bridge Sdn Bhd",
+        location: "马来西亚·吉隆坡",
+        description: "专注自动化咨询与解决方案开发，通过定制化方案提升生产力与效率。",
+        logo: "https://purplebridge.com.my/wp-content/uploads/2025/05/logor-1.png#149",
+        website: "https://www.purplebridge.my",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["业务流程管理 (BPM)", "财务与会计", "项目与协同（PM / 协同）", "库存与仓储（WMS / Inventory）"] },
+          { category: "行业解决方案", sub: ["金融", "医疗健康", "制造业", "零售/电商"] }
+        ],
+        contact: "charles@purplebridge.my",
+        certified: true,
+        featured: false
+      },
+      {
+        id: "1000102",
+        name: "RakuCloud株式会社",
+        location: "日本·东京",
+        description: "为中小企业与创业公司提供基于 NocoBase 的账单管理、审批与通知工作流解决方案。",
+        logo: "https://static.wixstatic.com/media/aa943a_bfc9ee216d94418e9ed31b967d0f8444~mv2.png",
+        website: "https://www.rakucloud.co.jp/",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["客户关系管理 (CRM)", "账单管理"] },
+          { category: "行业解决方案", sub: ["数字广告", "信息技术与软件", "制造业"] }
+        ],
+        contact: "jia@rakucloud.com",
+        certified: false,
+        featured: false
+      },
+      {
+        id: "1000113",
+        name: "ハウスウェル株式会社",
+        location: "日本·埼玉县さいたま市大宮区",
+        description: "为不动产行业及其他行业提供业务改善与数字化转型（DX）解决方案，从现场视角设计、构建和运维。",
+        logo: "https://housewell-group.jp/assets/image/common/header/logo.webp",
+        website: "https://housewell-group.jp/",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["内容管理系统 (CMS)", "客户关系管理 (CRM)", "人力资源管理 (HRM)", "地产/物业管理"] },
+          { category: "行业解决方案", sub: ["建筑与地产"] }
+        ],
+        contact: "nakazawa@housewell.co.jp",
+        certified: false,
+        featured: false
+      },
+      {
+        id: "",
+        name: "Appnicorn Sdn Bhd",
+        location: "马来西亚·吉隆坡",
+        description: "专注于模块化系统与低代码解决方案的技术团队，擅长基于 NocoBase 的系统实施与定制开发。",
+        logo: "https://service-cn.nocobase.com/storage/uploads/cropped-Appnicorn_CompanyLogo-9zbmlc.png",
+        website: "https://appnicorn.com",
+        services: [
+          { category: "服务类型", sub: ["部署（云/本地化）", "定制开发", "数据迁移", "维护与支持", "插件/扩展开发", "系统集成", "技术咨询"] },
+          { category: "企业管理系统", sub: ["客户关系管理 (CRM)", "企业资源计划 (ERP)", "财务与会计", "项目与协同（PM / 协同）", "库存与仓储（WMS / Inventory）"] },
+          { category: "行业解决方案", sub: ["教育", "政府与公共事业", "制造业", "零售/电商"] }
+        ],
+        contact: "wing@appnicorn.com.my",
+        certified: false,
         featured: false
       }
     ]
@@ -39,30 +251,60 @@ const partnersByContinent = [
     continent: "欧洲",
     partners: [
       {
-        name: "European NocoBase Solutions",
-        location: "德国·柏林",
-        description: "为欧洲企业提供 NocoBase 解决方案，专注于GDPR合规和本地化服务",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["本地化服务", "技术支持", "培训", "GDPR合规"],
-        contact: "info@nocobase.eu",
-        certified: true,
+        id: "1000128",
+        name: "NIT Solutions B.V.",
+        location: "荷兰·Gorinchem",
+        description: "专注构建契合业务流程的 CRM 系统，提供咨询与实施，并在上线后持续运维与优化。",
+        logo: "https://nitsolutions.b-cdn.net/wp-content/uploads/2025/01/logo-nit-solutions.png",
+        website: "https://nit.solutions",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持"] },
+          { category: "企业管理系统", sub: ["客户关系管理 (CRM)"] },
+          { category: "行业解决方案", sub: ["制造业", "建筑与地产", "零售/电商"] }
+        ],
+        contact: "dion@nitsolutions.nl",
+        certified: false,
         featured: false
       }
     ]
   },
   {
-    continent: "北美",
+    continent: "南美洲",
     partners: [
       {
-        name: "NocoBase Americas",
-        location: "美国·旧金山",
-        description: "北美地区的 NocoBase 认证伙伴，服务于财富500强企业",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["企业咨询", "系统实施", "技术支持", "云部署"],
-        contact: "contact@nocobase.us",
-        certified: true,
+        id: "1000177",
+        name: "ED",
+        location: "巴西·里约热内卢",
+        description:
+          "ED 拥有 120 余名顾问，擅长多种技术栈，为教育、金融、政府、医疗等领域提供数字化管理与业务效率提升。",
+        logo: "https://ed.dev.br/data/files/ED/B2/BC/58/5FC2091051FD7009600808A8/logo-ed.png",
+        website: "https://ed.dev.br",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持", "插件/扩展开发"] },
+          {
+            category: "企业管理系统",
+            sub: [
+              "预约与排期系统",
+              "业务流程管理 (BPM)",
+              "内容管理系统 (CMS)",
+              "客户关系管理 (CRM)",
+              "电商/零售（会员/分销等）",
+              "教育（LMS / 学员）",
+              "财务与会计",
+              "医疗（EMR / 患者管理）",
+              "制造（MES / 订单）",
+              "项目与协同（PM / 协同）",
+              "地产/物业管理",
+              "库存与仓储（WMS / Inventory）"
+            ]
+          },
+          {
+            category: "行业解决方案",
+            sub: ["教育", "金融", "政府与公共事业", "医疗健康", "信息技术与软件", "制造业", "媒体与娱乐", "建筑与地产", "零售/电商"]
+          }
+        ],
+        contact: "leandro.postaue@ed.dev.br",
+        certified: false,
         featured: false
       }
     ]
@@ -71,134 +313,375 @@ const partnersByContinent = [
     continent: "大洋洲",
     partners: [
       {
-        name: "澳新 NocoBase 服务",
-        location: "澳大利亚·悉尼",
-        description: "服务澳洲和新西兰的 NocoBase 技术伙伴，提供本地化技术支持",
-        logo: "https://static-docs.nocobase.com/logo-nocobase.png",
-        website: "https://example.com",
-        services: ["本地化部署", "技术咨询", "维护支持"],
-        contact: "info@nocobase.au",
+        id: "1000158",
+        name: "Engineering Business Services Limited",
+        location: "瓦努阿图·维拉港（Port Vila）",
+        description:
+          "EBS 自 2015 年起扎根瓦努阿图，提供从系统设计到运维支持的全流程 IT 服务，含 SLA 合约与 7×24 支持。",
+        logo: "https://ebs-vanuatu.com/wp-content/uploads/2021/05/EBS-LOGO-seul-smol-soml.png",
+        website: "https://ebs-vanuatu.com",
+        services: [
+          { category: "服务类型", sub: ["部署实施", "定制开发", "技术支持", "维护与支持"] },
+          { category: "企业管理系统", sub: ["业务流程管理 (BPM)", "内容管理系统 (CMS)", "电商/零售（会员/分销等）", "项目与协同（PM / 协同）"] },
+          { category: "行业解决方案", sub: ["金融", "信息技术与软件"] }
+        ],
+        contact: "arnaud@ebs-vanuatu.com",
         certified: false,
         featured: false
       }
     ]
   }
 ];
+
+// ✅ 统一用标准化函数，避免空格/全角/括号说明造成误判
+const normalize = (s: string) => (s || "").trim();
+
+const filterCategoriesMap = {
+  服务类型: new Set<string>(),
+  企业管理系统: new Set<string>(),
+  行业解决方案: new Set<string>(),
+};
+
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((partner) => {
+    partner.services.forEach((service) => {
+      const cat = normalize(service.category);
+
+      // 只把“企业管理系统 / 行业解决方案”的【子项】放入对应分组
+      if (cat === "企业管理系统") {
+        service.sub.forEach((sub) => {
+          const item = normalize(sub);
+          if (item) filterCategoriesMap["企业管理系统"].add(item);
+        });
+        return;
+      }
+
+      if (cat === "行业解决方案") {
+        service.sub.forEach((sub) => {
+          const item = normalize(sub);
+          if (item) filterCategoriesMap["行业解决方案"].add(item);
+        });
+        return;
+      }
+
+      // 其他一律归为「服务类型」：类别本身 + 它的子项
+      if (cat && cat !== "服务类型") {
+        filterCategoriesMap["服务类型"].add(cat);
+      }
+      service.sub.forEach((sub) => {
+        const item = normalize(sub);
+        if (item) filterCategoriesMap["服务类型"].add(item);
+      });
+    });
+  });
+});
+
+// 转数组（并去掉空项，确保不会出现“行业解决方案/企业管理系统”自己作为子项）
+const filterCategories = Object.entries(filterCategoriesMap).map(([title, set]) => ({
+  title,
+  items: Array.from(set).filter((it) => it && it !== title),
+}));
+
+// 侧边栏显示用：每个“子项”(如 部署实施/定制开发/技术支持/CRM/ERP/…) 的伙伴数量
+const itemCountMap: Record<string, number> = {};
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((p) => {
+    const seen = new Set<string>(); // 同一伙伴内同一子项只计一次
+    p.services.forEach((s) => {
+      s.sub.forEach((raw) => {
+        const sub = (raw || "").trim();
+        if (!sub || seen.has(sub)) return;
+        seen.add(sub);
+        itemCountMap[sub] = (itemCountMap[sub] || 0) + 1;
+      });
+    });
+  });
+});
+
+const countries = Array.from(
+  new Set(
+    partnersByContinent.flatMap((region) =>
+      region.partners.map((p) => p.location.split("·")[0]),
+    ),
+  ),
+);
+
+// 扁平化所有 services，并统计次数
+const serviceCountMap = {};
+partnersByContinent.forEach((region) => {
+  region.partners.forEach((p) => {
+    p.services.forEach((s) => {
+      serviceCountMap[s] = (serviceCountMap[s] || 0) + 1;
+    });
+  });
+});
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
+
   <!-- Start Partners -->
   <section class="section">
     <div class="container">
       <div class="row">
         <!-- 侧边栏 -->
         <div class="col-lg-2 col-md-3">
-          <div class="card border-0 shadow rounded sticky-bar" style="z-index: 1;">
-            <div class="card-body">
+          <div class="card border-0 rounded sticky-bar" style="z-index: 1;">
+            <div>
               <h6 class="text-dark">快速导航</h6>
-              <ul class="list-unstyled sidebar-nav-list mb-0">
+              <ul class="list-unstyled sidebar-nav-list mb-4">
                 {partnersByContinent.map((region) => (
                   <li>
                     <a href={`#${region.continent}`} class="text-muted">
-                      <i class="uil uil-globe me-2"></i>{region.continent}
+                      <i class="uil uil-globe me-2"></i>
+                      {region.continent}
                     </a>
                   </li>
                 ))}
-                <!-- <li>
-                  <a href="#become-partner" class="text-muted">
-                    <i class="uil uil-users-alt me-2"></i>成为合作伙伴
-                  </a>
-                </li> -->
               </ul>
+
+              {/* Service Type filter section */}
+              {filterCategories.map((category) => (
+                <div class="filter-section">
+                  <h6 class="filter-title">
+                    <span>{category.title}</span>
+                    {(category.title === "企业管理系统" ||
+                      category.title === "行业解决方案") && (
+                      <i
+                        class="uil uil-info-circle info-right text-muted small sub-alarm"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title={
+                          category.title === "企业管理系统"
+                            ? "已有成熟产品，可直接交付与部署"
+                            : "有行业方案与实施经验，可按需定制开发"
+                        }
+                      ></i>
+                    )}
+                  </h6>
+
+                  <div class="filter-options">
+                    {category.items.map((item) => {
+                      const count = itemCountMap[item] || 0;
+                      return (
+                        <a
+                          role="button"
+                          class="filter-link"
+                          data-filter-type="service"
+                          data-filter-value={item}
+                          data-active="false"
+                        >
+                          <input type="checkbox" value={item} style="margin-right: 8px;" />
+                          {item} <span class="filter-count">({count})</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+
               <div class="mt-4">
                 <a href="#become-partner" class="btn btn-primary btn-sm w-100">成为合作伙伴</a>
               </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+        {/* end col */}
 
         <!-- 主要内容区 -->
         <div class="col-lg-9 col-md-8">
           <div class="ms-lg-4">
-            <div class="mb-4">
-              <p class="text-muted mb-0">
-                我们与全球优秀的技术伙伴合作，为您提供专业的 NocoBase 实施、定制开发、技术支持和培训服务。
-                无论您在世界的哪个角落，都能找到就近的专业伙伴为您提供帮助。
+            <div class="mb-4 d-flex justify-content-between align-items-start">
+              <p class="text-muted mb-0 me-3">
+                我们与全球优秀的服务伙伴合作，为您提供专业的 NocoBase 实施、定制开发、技术支持和培训服务。无论您在世界的哪个角落，都能找到就近的专业伙伴为您提供帮助。
               </p>
+
+              <a id="nocobase"
+                href="https://service-cn.nocobase.com/public-forms/ivcvb4f8lpe?partnerId=nocobase"
+                class="btn btn-primary btn-sm btn-help text-nowrap"
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                title="如果不确定选择哪位合作伙伴，或想直接咨询我们，请点击这里">
+                <i class="uil uil-message me-1"></i>
+                咨询
+              </a>
             </div>
 
+            {/* 搜索、统计和排序 */}
+            <div class="partners-header mb-4 sticky-search" style="z-index: 1;">
+              <div class="row align-items-center g-3">
+                {/* 左侧搜索框 */}
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="search-container">
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="搜索合作伙伴..."
+                        id="partnerSearch"
+                        style="padding-left: 40px;"
+                      />
+                      <i
+                        class="uil uil-search position-absolute"
+                        style="left: 12px; top: 50%; transform: translateY(-50%); color: #6c757d; font-size: 18px;"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-12 text-center"></div>
+
+                {/* 国家筛选 */}
+                <div class="col-lg-3 col-md-3 col-12 text-end">
+                  <div class="plugins-sort">
+                    <select class="form-select form-select-sm">
+                      <option value="">选择国家</option>
+                      {countries.map((country) => (
+                        <option value={country}>{country}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Partners Content */}
             {partnersByContinent.map((region) => (
-              <div class="mt-5" id={region.continent}>
+              <div class="mt-4" id={region.continent}>
                 <h4 class="text-primary mb-4">
-                  <i class="uil uil-globe me-2"></i>{region.continent}
+                  <i class="uil uil-globe me-2"></i>
+                  {region.continent}
                 </h4>
+
                 <div class="row">
-                  {region.partners.map((partner) => (
-                    <div class="col-lg-6 col-md-6 mb-4">
-                      <div class="card border shadow-sm h-100">
-                        <div class="card-body">
-                          <div class="mb-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                              <div class="partner-logo">
-                                <img 
-                                  src={partner.logo} 
-                                  alt={partner.name}
-                                  style="max-height: 45px; max-width: 140px; object-fit: contain;"
-                                  loading="lazy"
-                                />
+                  {region.partners.map((partner) => {
+                    // 处理官网按钮的显示与 URL 规范化
+                    const raw = partner.website || "";
+                    const trimmed = raw.trim();
+                    const websiteUrl = trimmed
+                      ? (trimmed.startsWith("http://") || trimmed.startsWith("https://")
+                        ? trimmed
+                        : `https://${trimmed}`)
+                      : "";
+
+                    return (
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div
+                          class="card border shadow-sm h-100 partner-card w-100"
+                          data-name={partner.name}
+                          data-country={partner.location.split("·")[0]}
+                          data-services={encodeURIComponent(
+                            JSON.stringify(partner.services.flatMap((s) => s.sub.map((x) => x.trim()))),
+                          )}
+                        >
+                          <div class="card-body">
+                            <div class="mb-4">
+                              <div class="d-flex align-items-center justify-content-between mb-3">
+                                {partner.name === "Purple Bridge Sdn Bhd" ? (
+                                  <div class="partner-logo" style="background: #050d42;">
+                                    <img src={partner.logo} alt={partner.name} loading="lazy" />
+                                  </div>
+                                ) : (
+                                  <div class="partner-logo">
+                                    <img src={partner.logo} alt={partner.name} loading="lazy" />
+                                  </div>
+                                )}
+
+                                {partner.certified && (
+                                  <span
+                                    class="badge bg-soft-success text-success"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="已通过 NocoBase 官方认证，可提供官方认可的专业服务"
+                                  >
+                                    <i class="uil uil-check-circle me-1"></i>
+                                    认证
+                                  </span>
+                                )}
                               </div>
-                              {partner.certified && (
-                                <span class="badge bg-soft-success text-success">
-                                  <i class="uil uil-check-circle me-1"></i>认证
-                                </span>
-                              )}
+
+                              <div class="mt-3">
+                                <h6 class="mb-1">{partner.name}</h6>
+                                <small class="text-muted">
+                                  <i class="uil uil-map-marker me-1"></i>
+                                  {partner.location}
+                                </small>
+                              </div>
                             </div>
-                            <div class="mt-3">
-                              <h6 class="mb-1">{partner.name}</h6>
-                              <small class="text-muted">
-                                <i class="uil uil-map-marker me-1"></i>{partner.location}
-                              </small>
-                            </div>
-                          </div>
-                          <p class="text-muted mb-3">{partner.description}</p>
-                          
-                          <div class="mb-3">
-                            <h6 class="text-dark mb-2">服务范围：</h6>
-                            <div class="d-flex flex-wrap gap-1">
-                              {partner.services.map((service) => (
-                                <span class="badge bg-soft-primary text-primary">{service}</span>
-                              ))}
-                            </div>
-                          </div>
-                          
-                          <div class="pt-3 border-top">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <a href={`mailto:${partner.contact}`} class="btn btn-sm btn-outline-primary">
-                                <i class="uil uil-envelope me-1"></i>联系我们
-                              </a>
-                              <a href={partner.website} target="_blank" class="btn btn-sm btn-soft-primary">
-                                <i class="uil uil-external-link-alt me-1"></i>官网
-                              </a>
+
+                            <p class="text-muted mb-3">{partner.description}</p>
+
+                            {(() => {
+                              const subs =
+                                partner.services
+                                  .filter((s) => s.category === "服务类型")
+                                  .flatMap((s) => (s.sub || []).map((x) => x.trim()))
+                                  .filter(Boolean);
+
+                              const uniqueSubs = Array.from(new Set(subs));
+
+                              if (!uniqueSubs.length) return null;
+
+                              return (
+                                <div class="mb-3 services-block">
+                                  <h6 class="text-dark mb-2">服务范围：</h6>
+                                  <div class="services-tags">
+                                    {uniqueSubs.map((item) => (
+                                      <span class="badge bg-soft-primary text-primary">{item}</span>
+                                    ))}
+                                  </div>
+                                </div>
+                              );
+                            })()}
+
+                            <div class="pt-3 border-top card-actions">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <a
+                                  href={`${
+                                    partner.cn
+                                      ? "https://service-cn.nocobase.com/public-forms/ivcvb4f8lpe"
+                                      : "https://service-en.nocobase.com/public-forms/q7pbwgd4xr7"
+                                  }?partnerId=${encodeURIComponent(partner.id)}`}
+                                  class="btn btn-sm btn-outline-primary"
+                                >
+                                  <i class="uil uil-envelope me-1"></i>
+                                  咨询该服务
+                                </a>
+
+                                {websiteUrl && (
+                                  <a href={websiteUrl} target="_blank" class="btn btn-sm btn-soft-primary">
+                                    <i class="uil uil-external-link-alt me-1"></i>
+                                    官网
+                                  </a>
+                                )}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
+
+            {/* 无结果提示 */}
+            <div class="no-results text-center py-5" id="no-result-message" style="display: none;">
+              <i class="uil uil-search text-muted" style="font-size: 3rem;"></i>
+              <h5 class="mt-3 text-muted">没有找到符合条件的合作伙伴</h5>
+              <p class="text-muted">请尝试调整搜索条件</p>
+            </div>
           </div>
-        </div><!--end col-->
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
+    </div>
+    {/* end container */}
+  </section>
+  {/* End Partners */}
 
-        
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End Partners -->
-
-  <!-- Become Partner Start -->
+  {/* Become Partner Start */}
   <section class="section bg-light" id="become-partner">
     <div class="container">
       <div class="row justify-content-center">
@@ -206,12 +689,13 @@ const partnersByContinent = [
           <div class="section-title text-center mb-4 pb-2">
             <h4 class="title mb-4">成为 NocoBase 合作伙伴</h4>
             <p class="para-desc mx-auto text-muted mb-0">
-              如果您是专业的技术伙伴，并希望成为 NocoBase 的合作伙伴，
-              我们欢迎您的加入。我们将为您提供技术支持、培训资源和市场推广支持。
+              如果您具备专业的服务能力，并希望加入 NocoBase 成为合作伙伴，我们诚挚欢迎您的加入，并将为您提供技术支持、培训资源与市场推广等全面支持。
             </p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -223,28 +707,21 @@ const partnersByContinent = [
                   <ul class="list-unstyled text-muted mb-0">
                     <li class="mb-2 d-flex align-items-center justify-content-start">
                       <i class="uil uil-check-circle text-success me-2"></i>
-                      <span>官方认证和品牌授权</span>
+                      <span>官方认证与品牌授权</span>
                     </li>
                     <li class="mb-2 d-flex align-items-center justify-content-start">
                       <i class="uil uil-check-circle text-success me-2"></i>
                       <span>技术培训和认证体系</span>
                     </li>
                     <li class="mb-2 d-flex align-items-center justify-content-start">
-                      <i class="uil uil-check-circle text-success me-2"></i>
-                      <span>优先技术支持服务</span>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center justify-content-start">
-                      <i class="uil uil-check-circle text-success me-2"></i>
-                      <span>专属客户经理服务</span>
+                      <i class="uil uil-check-circle text成功 me-2"></i>
+                      <span>官网展示与品牌曝光</span>
                     </li>
                   </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-4 text-center">
                   <ul class="list-unstyled text-muted mb-0">
-                    <li class="mb-2 d-flex align-items-center justify-content-start">
-                      <i class="uil uil-check-circle text-success me-2"></i>
-                      <span>商业项目利润分成</span>
-                    </li>
                     <li class="mb-2 d-flex align-items-center justify-content-start">
                       <i class="uil uil-check-circle text-success me-2"></i>
                       <span>市场推广资源支持</span>
@@ -253,31 +730,42 @@ const partnersByContinent = [
                       <i class="uil uil-check-circle text-success me-2"></i>
                       <span>优先获得商业机会推荐</span>
                     </li>
+                    <li class="mb-2 d-flex align-items-center justify内容-start">
+                      <i class="uil uil-check-circle text-success me-2"></i>
+                      <span>参与官方生态共建</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
 
       <div class="row justify-content-center">
         <div class="col-12 text-center mt-4">
-          <a href="mailto:partners@nocobase.com" class="btn btn-primary me-2">
-            <i class="uil uil-envelope me-1"></i>申请成为合作伙伴
+          <a href="https://service-cn.nocobase.com/public-forms/iv0g603rvzp" class="btn btn-primary me-2">
+            <i class="uil uil-user-plus me-1"></i>
+            申请成为合作伙伴
           </a>
           <a href="/cn/contact" class="btn btn-outline-primary">
-            <i class="uil uil-phone me-1"></i>了解更多
+            <i class="uil uil-envelope me-1"></i>
+            了解更多
           </a>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Become Partner End -->
-  
+        </div>
+        {/* end col */}
+      </div>
+      {/* end row */}
+    </div>
+    {/* end container */}
+  </section>
+  {/* Become Partner End */}
+
   <style>
     .partner-logo {
-      min-height: 45px;
+      height: 30px; /* 统一显示高度，可按需改 40~60px */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -286,23 +774,33 @@ const partnersByContinent = [
       border-radius: 8px;
       border: 1px solid #e9ecef;
     }
-    
+
     .partner-logo img {
+      height: 100% !important; /* 关键：按容器高度铺满 */
+      width: auto; /* 宽度自适应，保持比例 */
+      max-width: 100%; /* 防止超出容器 */
+      object-fit: contain; /* 保持完整可见 */
       transition: opacity 0.3s ease;
     }
-    
+
     .partner-logo:hover img {
       opacity: 0.8;
+    }
+
+    /* 悬浮元素 */
+    .sticky-search {
+      position: sticky;
+      top: 70px;
+      z-index: 1000;
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e9ecef;
     }
 
     .sticky-bar {
       position: sticky;
       top: 100px;
       z-index: 99;
-    }
-
-    .sidebar-nav-list li {
-      margin-bottom: 12px;
     }
 
     .sidebar-nav-list li a {
@@ -319,6 +817,137 @@ const partnersByContinent = [
       color: #2f55d4 !important;
     }
 
+    /* 侧边栏筛选器 */
+    .plugins-sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+    }
+
+    /* 筛选选项 */
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #343a40;
+      font-size: 1rem;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .filter-link {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+
+    .filter-link input[type="radio"],
+    .filter-link input[type="checkbox"] {
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .filter-link .filter-count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .filter-link:hover {
+      background-color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .filter-link[data-active="true"] {
+      font-weight: bold;
+    }
+
+    .filter-section .form-check {
+      margin-bottom: 0.5rem;
+    }
+
+    .filter-section .form-check-label {
+      font-size: 0.9rem;
+      color: #343a40;
+    }
+
+    .filter-section .form-check input[type="checkbox"]:checked + .form-check-label {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    /* 插件内容区域 */
+    .plugins-content {
+      padding-left: 0;
+    }
+
+    .plugin-card {
+      transition: transform 0.2s, box-shadow 0.2s;
+      height: 100%;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .plugin-card .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .plugin-overview {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+
+    .plugin-box {
+      flex: 1;
+    }
+
+    .plugin-footer {
+      margin-top: 1rem;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .plugins-sidebar {
+        position: relative;
+        top: auto;
+        margin-bottom: 2rem;
+      }
+
+      .plugins-content {
+        padding-left: 0;
+      }
+
+      .sticky-search .col-12 {
+        margin-bottom: 0.5rem;
+      }
+
+      .sticky-search .col-12:last-child {
+        margin-bottom: 0;
+      }
+
+      .sticky-search .text-center,
+      .sticky-search .text-end {
+        text-align: left !important;
+      }
+    }
+
     @media (max-width: 991px) {
       .sticky-bar {
         position: relative;
@@ -326,5 +955,200 @@ const partnersByContinent = [
         margin-bottom: 30px;
       }
     }
+
+    /* 让卡片主体是“头部(不伸缩) + 服务区(可伸缩) + 底部(固定在底)” */
+    .partner-card .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .partner-card .services-block {
+      flex: 1 1 auto; /* 关键：让这一块吃掉额外空间 */
+      display: flex;
+      flex-direction: column;
+      min-height: 0; /* 防止与 flex 子项在某些浏览器的高度冲突 */
+    }
+
+    .partner-card .services-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem; /* badge 间距 */
+      align-content: flex-start; /* 多行从上方开始堆叠，下面留白 */
+    }
+
+    .partner-card .card-actions {
+      margin-top: auto; /* 底部区域贴底 */
+    }
+
+    .sub-alarm {
+      float: right;
+      margin-right: 0.5rem;
+    }
   </style>
-</Layout> 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 小工具
+      const $ = (s, r = document) => r.querySelector(s);
+      const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+      const norm = (s) => (s || "").normalize("NFKC").trim().toLowerCase(); // 兼容全角/半角
+
+      const headerOffset = 140;
+
+      // 关键节点
+      const searchInput = $("#partnerSearch");
+      const countrySelect = document.querySelector(".plugins-sort select");
+      const serviceCheckboxes = $$('[data-filter-type="service"] input[type="checkbox"]');
+
+      // 卡片与其外层列容器
+      const cards = $$(".partner-card");
+      const cardHosts = new Map(); // card -> 宿主列元素（用于隐藏/测量）
+      const cardTitles = new Map(); // card -> 标题文本（仅用于搜索）
+
+      cards.forEach((card) => {
+        const host =
+          card.closest(".col-lg-6, .col-md-6, .col-sm-12, .col-12, .col-xl-6") || card.parentElement;
+        cardHosts.set(card, host);
+
+        // 标题优先取 data-name，兜底取 h6 文本
+        const titleFromData = (card.dataset.name || "").trim();
+        const h6 = card.querySelector("h6");
+        const title = titleFromData || (h6 ? h6.textContent.trim() : "");
+        cardTitles.set(card, title);
+      });
+
+      // 所有大洲分组容器（带 id 且内部含有 .partner-card）
+      const groups = $$("[id]").filter((el) => el.querySelector(".partner-card"));
+
+      // === 滚动工具 ===
+      function scrollToSearch() {
+        if (!searchInput) return;
+        const top = searchInput.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: top - headerOffset - 8, behavior: "smooth" });
+      }
+
+      function scrollToFirstVisibleCardOrSearch() {
+        // 找到第一个可见卡片的宿主列
+        const first = cards.find((card) => {
+          const host = cardHosts.get(card);
+          return host && host.style.display !== "none";
+        });
+
+        if (first) {
+          const host = cardHosts.get(first);
+          const top = host.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: top - headerOffset - 8, behavior: "smooth" });
+        } else {
+          // 无匹配卡片，滚到搜索框可见位置
+          scrollToSearch();
+        }
+      }
+
+      // 无结果提示
+      function updateNoResult() {
+        const anyVisible = cards.some((card) => {
+          const host = cardHosts.get(card);
+          return host && host.style.display !== "none";
+        });
+        const msg = $("#no-result-message");
+        if (msg) msg.style.display = anyVisible ? "none" : "block";
+      }
+
+      // 核心过滤：只按“标题”匹配
+      function filterCards() {
+        const q = norm(searchInput ? searchInput.value : "");
+        const selectedCountry = countrySelect ? countrySelect.value : "";
+        const selectedServices = serviceCheckboxes.filter((cb) => cb.checked).map((cb) => cb.value);
+
+        cards.forEach((card) => {
+          const host = cardHosts.get(card);
+          if (!host) return;
+
+          // 仅使用标题参与搜索
+          const title = norm(cardTitles.get(card));
+          const matchText = !q || title.includes(q);
+
+          // 国家筛选（data-country 来自模板）
+          const cardCountry = (card.dataset.country || "").trim();
+          const matchCountry = !selectedCountry || cardCountry === selectedCountry;
+
+          // 服务筛选（data-services 里是 JSON 字符串）
+          let services = [];
+          try {
+            services = JSON.parse(decodeURIComponent(card.dataset.services || "%5B%5D"));
+          } catch {}
+          const matchServices =
+            selectedServices.length === 0 ? true : selectedServices.every((s) => services.includes(s));
+
+          host.style.display = matchText && matchCountry && matchServices ? "" : "none";
+        });
+
+        // 组显隐
+        groups.forEach((group) => {
+          const hasVisible = $$(".partner-card", group).some((card) => {
+            const host = cardHosts.get(card);
+            return host && host.style.display !== "none";
+          });
+          group.style.display = hasVisible ? "" : "none";
+        });
+
+        updateNoResult();
+      }
+
+      // 侧边栏 filter-link 点击切换复选框并过滤 + 自动滚动到第一个卡片
+      $$(".filter-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const cb = link.querySelector('input[type="checkbox"]');
+          if (!cb) return;
+          cb.checked = !cb.checked;
+          link.dataset.active = String(cb.checked);
+          filterCards();
+          scrollToFirstVisibleCardOrSearch();
+        });
+      });
+
+      // 侧边栏复选框变化（键盘或无障碍操作）同样滚动
+      serviceCheckboxes.forEach((cb) =>
+        cb.addEventListener("change", () => {
+          filterCards();
+          scrollToFirstVisibleCardOrSearch();
+        }),
+      );
+
+      // 搜索框：只过滤，不自动滚动（保留原体验）
+      if (searchInput) {
+        searchInput.addEventListener("input", filterCards);
+        searchInput.addEventListener("compositionend", filterCards);
+      }
+
+      // 国家筛选（顶部右侧）：只过滤，不滚动（不是侧边栏）
+      if (countrySelect) {
+        countrySelect.addEventListener("change", filterCards);
+      }
+
+      // 侧边栏锚点平滑滚动（不触发自动滚）
+      $$('.sidebar-nav-list a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const id = link.getAttribute("href").substring(1);
+          const group = document.getElementById(id);
+          if (!group) return;
+
+          const firstVisible = $$(".partner-card", group).find((card) => {
+            const host = cardHosts.get(card);
+            return host && host.style.display !== "none";
+          });
+          if (!firstVisible) return;
+
+          const top =
+            (cardHosts.get(firstVisible) || firstVisible).getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: top - headerOffset, behavior: "smooth" });
+        });
+      });
+
+      // 初始化
+      filterCards();
+    });
+  </script>
+</Layout>
