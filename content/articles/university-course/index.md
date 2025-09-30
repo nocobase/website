@@ -48,7 +48,7 @@ The instructor reported positively on NocoBase in class:
 > “Overall, I’m very satisfied with the platform and appreciate its design and stability.”
 > — Professor, Technical University in Germany
 
-**Related reading:**
+**More Customer Stories:**
 
 * [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
 * [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
