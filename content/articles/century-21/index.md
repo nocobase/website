@@ -38,14 +38,14 @@ HouseWell had three main options on the table, each with its own strengths:
 
 Before making a final decision, the team did a deep dive comparison of these three options:
 
-### 1.**Salesforce: Powerful but Pricey**
+### 1. Salesforce: Powerful but Limited in Scope
 
-Salesforce is widely seen as a powerful tool in real estate. It offers rich CRM features, standard processes, and many third-party integrations. It's great for large companies needing customer management, data analysis, and sales automation.
+Salesforce is widely recognized as a powerful tool in the real estate industry. It offers a rich set of CRM features, standardized processes, and numerous third-party integrations — all well-suited to large enterprises seeking customer management, data analysis, and sales automation.
 
-However, during their detailed evaluation, the HouseWell team found a few issues:
+However, during a deeper evaluation, the HouseWell team encountered several practical challenges:
 
-* **High Costs:** Salesforce charges a monthly fee based on the number of users and features. As employee numbers and business size grow, this model leads to very high long-term costs, making it less economical over time.
-* **Limited Customization:** While feature-rich, Salesforce's interface and process customization options are limited in practice. This made it hard to precisely meet the specific needs of HouseWell's diverse business areas. The cost of extra custom development was also alarmingly high.
+* **Cost Concerns**: Salesforce was mainly used by the sales and investment teams, while other departments had little need for CRM functions. To support the back-office operations targeted in this project, licenses would have to be purchased for users who do not actually need CRM features, significantly increasing overall costs.
+* **Limited Customization**: Although feature-rich, Salesforce’s interface and process customization options are relatively limited in practice, making it difficult to precisely adapt the system to the specific needs of HouseWell’s diverse business areas.
 
 ### 2.**Kintone: Easy to Use, but Lacks Flexibility**
 
@@ -63,7 +63,7 @@ Initially, NocoBase was just another option on their evaluation list. But as the
 * Strong API integration capabilities, allowing seamless connection with existing systems like Salesforce and providing room for future system integrations.
 * Completely open-source, making deep customization and further development easier. This also provides a technical foundation for potentially standardizing the system for external use later.
 
-After detailed functional testing and cost assessment, the team found that NocoBase was not only flexible enough in its features but also had a total cost of ownership far lower than Salesforce. At the same time, its openness and scalability were much better than Kintone's.
+After thorough functional testing and cost evaluation, the team concluded that NocoBase is not only highly flexible in terms of functionality but also excels in openness and scalability — making it a system that can evolve and grow alongside the company.
 
 After careful consideration, HouseWell ultimately chose NocoBase.
 
@@ -91,14 +91,14 @@ Compared to managing information through scattered spreadsheets and emails befor
 
 ![Clearer visibility of HR information](https://static-docs.nocobase.com/5-3aw62g.png)
 
-### **Phase Two: From Integration to Replacement**
+### Phase Two: System Integration and Real Estate Management Package Development
 
-Before bringing in NocoBase, HouseWell was already using Salesforce for their customer management. All their customer details and transaction records were stored there. As they used NocoBase more, they gradually realized something: NocoBase wasn't just good for flexible HR management. It was also fully capable of building a CRM system.
+Before adopting NocoBase, HouseWell was already using Salesforce for customer management, with all customer details and transaction records stored there. As they continued using NocoBase, they gradually realized that it was not only suitable for flexible HR management but also fully capable of supporting CRM system development.
 
-So, the tech team quickly got to work on system integration:
+The technical team quickly started working on system integration:
 
-* They used NocoBase's powerful API capabilities to sync existing customer data from Salesforce, allowing data to be shared. This efficient data integration meant the team could access both customer information and internal operational data in one place. It avoided duplicate data entry and improved data consistency.
-* Even more significantly, HouseWell is now planning to gradually move their CRM system from Salesforce over to NocoBase. They aim to use NocoBase's customizable data models and page layouts to build a customer management solution that better fits their specific business logic and gives them more control.
+* **By leveraging NocoBase’s powerful API capabilities**, they synchronized existing customer data from Salesforce, enabling seamless data sharing. This efficient integration allowed the team to access both customer information and internal business data in one place, avoiding duplicate data entry and improving data consistency.
+* **Using NocoBase’s customizable data models and page layouts**, HouseWell is now developing a new real estate management solution tailored for the industry, built upon their expertise in customer management. (Planned for release soon)
 
 Through this process, NocoBase evolved from just a "supplementary tool" into the core platform for HouseWell to create a unified business system.
 
@@ -123,15 +123,13 @@ This not only helps them quickly recoup their system development costs but also 
 
 ## **Conclusion**
 
-HouseWell's decision to choose NocoBase over Salesforce and Kintone wasn't just a simple software selection. It was a precise and strategically farsighted move:
+HouseWell’s choice of NocoBase over Salesforce or Kintone was far more than a simple software decision — it was a **precise, forward-looking strategic move**:
 
-* Moving from high long-term costs to a flexible, cost-effective one-time purchase model.
-* Shifting from rigid functional modules to a highly customizable open architecture.
-* Transforming from a system user to a developer and provider of industry solutions.
+* **From** high long-term costs to a flexible and cost-effective one-time purchase model.
+* **From** rigid functional modules to a highly customizable open architecture.
+* **From** being a system user to becoming a developer and provider of industry solutions.
 
-HouseWell's success story reminds us:
-
-The key to true digital success isn't about choosing the most famous or most expensive tools. It’s about finding solutions that genuinely match your business needs and future strategy.
+HouseWell’s success story shows us that **true digital transformation lies in finding a solution that truly aligns with your business needs and future strategy.**
 
 We hope HouseWell's story inspires other businesses.
 
