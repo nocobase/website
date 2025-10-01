@@ -5911,6 +5911,7 @@ html[dir=rtl] .tns-visually-hidden {
 
 .section-title .title {
   letter-spacing: 0.5px;
+  white-space: nowrap;
   /* font-size: 36px !important; */
 }
 @media (max-width: 768px) {
