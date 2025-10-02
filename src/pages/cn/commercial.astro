@@ -43,6 +43,7 @@ const keywords = page.keywords_cn || page.keywords;
                       <li>一个无代码开发平台作为团队的基础设施，开发业务系统和内部工具</li>
                       <li>拥有全部源代码，私有部署，完全掌控</li>
                       <li>具备完整、丰富的能力，可以满足大部分需求</li>
+                      <li>具备绝大部分的 AI 员工功能</li>
                       <li>不要被这个平台绑架，希望自由地扩展它的功能，满足个性化需求</li>
                       <li>可以下载安装插件，也可以自己开发插件</li>
                       <li>可以用它开发无限数量的应用，也不受用户数、数据量的限制</li>
@@ -90,8 +91,11 @@ const keywords = page.keywords_cn || page.keywords;
                     <h6 class="title mb-1 text-capitalize">当你还需要</h6>
                     <ul class="text-muted">
                       <li>使用 NocoBase 为客户开发上层应用</li>
-                      <li>使用 父-子 架构部署和管理多个应用</li>
+                      <li>使用 多应用 架构部署和管理多个应用，可实现多租户的用法</li>
+                      <li>使用 多空间 功能部署和管理多个空间，可实现多门店、多工厂的用法</li>
+                      <li>记录并展示每条数据的编辑历史</li>
                       <li>定时自动备份数据</li>
+                      <li>赋予 AI 员工 RAG 知识库能力</li>
                       <li>在安全性方面有更出色的表现</li>
                       <li>支持国产数据库和环境</li>
                       <li>在开发流程方面有更高要求，有开发、测试、生产等多个环境</li>
@@ -116,9 +120,9 @@ const keywords = page.keywords_cn || page.keywords;
                     <h6 class="title mb-1 text-capitalize">当你还需要</h6>
                     <ul class="text-muted">
                       <li>集群部署 NocoBase 应用</li>
-                      <li>详细记录每个用户的每个操作</li>
+                      <li>详细记录每个用户的每个操作以用作审计</li>
                       <li>对遥测有专业要求，包括日志、监控指标、链路追踪</li>
-                      <li>接入第三方 LLM 并在整个系统内提供 AI 能力</li>
+                      <li>接入私有部署的大语言模型（LLM），支撑 AI 员工的能力</li>
                       <li>NocoBase 团队在路线图中优先安排你所需的功能</li>
                       <li>NocoBase 团队用更快的响应速度提供更长时间的专属支持</li>
                       <li>NocoBase 团队为你提供专属的扩展开发方案，包括插件、第三方集成等</li>
@@ -183,10 +187,10 @@ const keywords = page.keywords_cn || page.keywords;
                   </tr>
                   <tr>
                     <td class="compare-item text-muted">许可证类型</td>
-                    <td class="text-nowrap">AGPL 3.0</td>
-                    <td class="text-nowrap">商业许可证</td>
-                    <td class="text-nowrap">商业许可证</td>
-                    <td class="text-nowrap">商业许可证</td>
+                    <td class="text-nowrap">社区版许可证<a href="https://www.nocobase.com/cn/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="去查看详情"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                    <td class="text-nowrap">商业版许可证<a href="https://www.nocobase.com/cn/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="去查看详情"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                    <td class="text-nowrap">商业版许可证<a href="https://www.nocobase.com/cn/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="去查看详情"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                    <td class="text-nowrap">商业版许可证<a href="https://www.nocobase.com/cn/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="去查看详情"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
                   </tr>
                   <tr>
                     <td class="compare-item text-muted">永久授权<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="许可证终身有效，这意味着您可以永久使用 NocoBase 而无需再次付费。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
@@ -294,7 +298,14 @@ const keywords = page.keywords_cn || page.keywords;
                     <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
                   </tr>
                   <tr>
-                    <td class="compare-item text-muted">多应用 **<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="以‘父-子’应用的方式组合多个 NocoBase 实例一起使用。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                    <td class="compare-item text-muted">多应用<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="以‘父-子’应用的方式组合多个 NocoBase 实例一起使用，也可用于多租户架构。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">多空间<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在同一个应用中逻辑隔离多个空间，用于多门店、多工厂等场景。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
                     <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
                     <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
                     <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
@@ -329,11 +340,46 @@ const keywords = page.keywords_cn || page.keywords;
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="compare-item text-muted">即将到来...</td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-smile"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-smile-beam"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-grin"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-laughing"></i></td>
+                    <td class="compare-item text-muted">内置众多 AI 员工</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">自由扩展 AI 员工</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">接入常见的 LLM</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">调用 Tools</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">使用 RAG 知识库</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">接入私有部署的 LLM</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
                   </tr>
                   <tr>
                     <th class="compare-item">安全</th>
@@ -372,6 +418,13 @@ const keywords = page.keywords_cn || page.keywords;
                   </tr>
                   <tr>
                     <td class="compare-item text-muted">自动备份<a href="https://docs-cn.nocobase.com/handbook/backups" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="去查看详情"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">数据历史记录<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="记录并展示每条数据的编辑历史"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
                     <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
                     <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
                     <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
@@ -472,8 +525,8 @@ const keywords = page.keywords_cn || page.keywords;
                     <td class="compare-item text-muted">咨询工单数量<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在支持有效期内，可以获得支持的使用咨询工单数（不包括 bug 反馈）。超出后，可单独购买咨询工单。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
                     <td>-</td>
                     <td>-</td>
-                    <td>15</td>
-                    <td>30</td>
+                    <td>不限</td>
+                    <td>不限</td>
                   </tr>
                   <tr>
                     <td class="compare-item text-muted">扩展开发方案数量<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="在支持有效期内，NocoBase 核心团队协助你开发插件、集成第三方系统，包括撰写文档、编写核心代码等。超出后，可单独购买。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
@@ -492,7 +545,6 @@ const keywords = page.keywords_cn || page.keywords;
                   </tbody>
                 </table>
               </div>
-              <p class="para-desc text-muted fst-italic mt-4">标记 ** 的特性将于 2025 年第二季度发布。</p>
               <p class="para-desc text-muted fst-italic mt-4">以上定价和权益仅面向中国大陆的公司和公民。</p>
             </div>
           </div>
@@ -542,7 +594,7 @@ const keywords = page.keywords_cn || page.keywords;
               <div id="collapse1-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-2"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">升级有效期结束后，你仍然可以永久使用当前版本的 NocoBase。以首年价格 30% 可以再次购买 1 年产品升级；以首年价格 30% 可以再次购买 1 年技术支持。二者可以同时或分别购买。</p>
+                  <p class="answer text-muted mb-0">升级有效期结束后，你仍然可以永久使用当前版本的 NocoBase。以首年价格 30% 可以再次购买 1 年产品升级和技术支持。</p>
                 </div>
               </div>
             </div>
@@ -655,7 +707,7 @@ const keywords = page.keywords_cn || page.keywords;
               <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="heading7"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">商业插件与许可证绑定，由许可证的类型决定商业插件的使用范围。如果你拥有专业版和企业版许可证，则可以使用你购买的商业插件为你的客户开发应用。</p>
+                  <p class="answer text-muted mb-0">商业插件与许可证绑定，由许可证的类型决定商业插件的使用范围。如果你拥有专业版和企业版许可证，则可以使用你购买的商业插件为你的客户开发应用。如果你使用社区版或标准版许可证，则商业插件仅限你的公司内部使用。</p>
                 </div>
               </div>
             </div>
@@ -689,7 +741,7 @@ const keywords = page.keywords_cn || page.keywords;
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
                   <p class="answer text-muted mb-0">
-                    当然可以。花费一分钟时间，开通专属的沙箱环境，其中包含 NocoBase 全部商业插件：<a href="https://demo-cn.nocobase.com/new" target="_blank">立即开通</a><br>
+                    当然可以。花费一分钟时间，开通专属的沙箱环境，其中包含 NocoBase 全部商业插件：<a href="https://demo.nocobase.com/new" target="_blank">立即开通</a><br>
                     沙箱环境默认有效期为 48 小时。如果你需要更长的试用时间，请联系我们: hello@nocobase.com
                   </p>
                 </div>
