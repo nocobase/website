@@ -586,7 +586,10 @@ try {
 //=========================================//
 
 try {
-    const tobii = new Tobii()
+    const tobii = new Tobii({
+        zoom: false,
+        draggable: false
+    })
 } catch (err) {
 
 }

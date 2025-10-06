@@ -35,15 +35,21 @@ interface Props {
   hideHeader?: boolean;
 }
 
-const { guides, hideTitle = false, hideHeader = false } = Astro.props;
+const {
+  guides,
+  hideTitle = false,
+  hideHeader = false,
+} = Astro.props as Props;
 ---
 
-{!hideHeader && (
-  <div class="steps-guide">
+<div class="steps-guide" hidden={hideHeader ? true : undefined}>
+  {(guides.title || guides.subtitle) && (
     <div class="section-title">
-      {!hideTitle && <h3 class="title mb-4">{guides.title}</h3>}
+      {!hideTitle && guides.title && <h3 class="title mb-4">{guides.title}</h3>}
       {guides.subtitle && <p class="text-muted para-desc mx-auto mb-4">{guides.subtitle}</p>}
     </div>
+  )}
+  {guides.mainSteps.length > 0 && (
     <div class="row">
       {guides.mainSteps.map((step, index) => (
         <div class="col-md-4">
@@ -57,8 +63,8 @@ const { guides, hideTitle = false, hideHeader = false } = Astro.props;
         </div>
       ))}
     </div>
-  </div>
-)}
+  )}
+</div>
 
 <div class="demo-wrap">
   {guides.steps[0]?.image ? (
