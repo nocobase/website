@@ -1,14 +1,14 @@
 {
   "id": 695,
-  "title": "NocoBase v1.8.27: Supports rotating images when previewing images",
+  "title": "NocoBase v1.8.27: Support to rotate image when previewing",
   "title_cn": "NocoBase v1.8.27：支持预览图片时旋转图片",
   "title_ja": "NocoBase v1.8.27：画像プレビュー時に画像の回転に対応",
   "description": "Release Note of v1.8.27",
   "description_cn": "v1.8.27 更新日志",
   "description_ja": "v1.8.27 のリリースノート",
   "slug": "v1.8.27",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-02T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-09T08:47:16.974Z"
+  "updatedAt": "2025-10-09T09:27:48.591Z"
 }
