@@ -5917,6 +5917,7 @@ html[dir=rtl] .tns-visually-hidden {
 @media (max-width: 768px) {
   .section-title .title {
     font-size: 24px !important;
+    flex-wrap:wrap; justify-content:center; align-items:center; max-width:100%; white-space:normal; word-break:break-word; overflow-wrap:anywhere; text-align:center;
   }
 }
 
