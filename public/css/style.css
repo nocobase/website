@@ -6870,9 +6870,7 @@ body[data-layout-mode=dark] .mode-light {
 }
 .tobii__slide .tobii-html {
   max-width: 80%!important;
-  max-height: 80%!important;
   width: 80%!important;
-  height: 80%!important;
   background: none!important;
   padding: 0!important;
   overflow: hidden!important;
