@@ -1,14 +1,14 @@
 {
   "id": 704,
-  "title": "NocoBase v1.8.28",
-  "title_cn": "NocoBase v1.8.28",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.28: Add print button to detail popup in custom approval blocks",
+  "title_cn": "NocoBase v1.8.28：为自定义审批区块的详情弹窗增加打印按钮",
+  "title_ja": "NocoBase v1.8.28：カスタム承認ブロックの詳細ダイアログに印刷ボタンを追加",
   "description": "Release Note of v1.8.28",
   "description_cn": "v1.8.28 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.28 のリリースノート",
   "slug": "v1.8.28",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-14T06:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-14T08:31:16.520Z",
+        "updatedAt": "2025-10-14T08:31:16.520Z",
+        "articles_id": 704,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-14T08:31:05.325Z",
+    "updatedAt": "2025-10-14T08:31:05.339Z",
+    "id": 1984,
+    "title": "main v1.8.28",
+    "filename": "main v1.8.28-g4ri8r.png",
+    "extname": ".png",
+    "size": 87156,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20v1.8.28-g4ri8r.png",
+    "preview": "https://static-docs.nocobase.com/main%20v1.8.28-g4ri8r.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-14T05:51:45.006Z"
+  "updatedAt": "2025-10-14T08:31:16.507Z"
 }
