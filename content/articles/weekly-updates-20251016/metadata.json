@@ -3,12 +3,12 @@
   "title": " NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes:",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新内容は以下の通りです：",
+  "description": "This week's update includes: Add \"Current device type\" variable, Improve web search function of plugin-ai",
+  "description_cn": "本周更新包括：新增“当前设备类型”变量，改进AI插件的联网搜索功能",
+  "description_ja": "今週の更新内容は以下の通りです：新しく「利用中のデバイス種別」変数を追加，AIプラグインのオンライン検索機能を強化",
   "slug": "weekly-updates-20251016",
-  "publishedAt": "2025-10-10T02:43:38.146Z",
-  "status": "drafted",
+  "publishedAt": "2025-10-16T02:43:38.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -110,10 +110,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "author": null,
+  "hideOnBlog": true,
+  "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-15T08:54:48.158Z"
+  "updatedAt": "2025-10-15T09:53:14.481Z"
 }
