@@ -8,7 +8,7 @@
   "description_ja": "小規模チームから一万人規模のプロジェクトまで、NocoBase はロシアの組織に大きな効率向上をもたらしています。",
   "slug": "nocobase-in-russia",
   "publishedAt": "2025-10-14T16:16:06.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -421,10 +421,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": true,
+  "hideOnBlog": false,
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-15T01:36:49.054Z"
+  "updatedAt": "2025-10-15T01:37:30.587Z"
 }
