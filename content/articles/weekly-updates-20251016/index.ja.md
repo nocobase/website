@@ -50,131 +50,61 @@
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v1.9.0-beta.11](https://www.nocobase.com/ja/blog/v1.9.0-beta.11)
+### [v1.9.0-beta.12](https://www.nocobase.com/ja/blog/v1.9.0-beta.12)
 
-*リリース日：2025-09-30*
-
-### 🚀 機能改善
-
-* **[サーバー]** アプリケーションに優雅な終了処理のライフサイクル管理を新たに追加 ([#7536](https://github.com/nocobase/nocobase/pull/7536)) by @mytharcher
-* **[ワークフロー：ループノード]** 環境変数によるループノードの最大ループ回数制限機能をサポート ([#7543](https://github.com/nocobase/nocobase/pull/7543)) by @mytharcher
-* **[ワークフロー]** 環境変数によるワークフロー内最大ノード数制限機能をサポート ([#7542](https://github.com/nocobase/nocobase/pull/7542)) by @mytharcher
-* **[ワークフロー：承認]** カスタム承認ブロックの詳細画面に印刷ボタンを追加 by @mytharcher
+*リリース日：2025-10-11*
 
 ### 🐛 不具合修正
 
-* **[メール管理]** 再認証の問題 by @jiannx
-* ームのファイルフィールドのアップロードルールに関する問題を修正 ([#7553](https://github.com/nocobase/nocobase/pull/7553)) by @mytharcher
-
-### [v1.9.0-beta.10](https://www.nocobase.com/ja/blog/v1.9.0-beta.10)
-
-*リリース日：2025-09-30*
-
-### 🐛 不具合修正
-
-* **[クライアント]** AssignedField コンポーネントが動的属性を未実装のため、新規および更新ノードでのファイルアップロードエラーを修正 ([#7556](https://github.com/nocobase/nocobase/pull/7556)) by @mytharcher
-* **[公開フォーム]** 公開フォ
-
-### [v1.9.0-beta.9](https://www.nocobase.com/ja/blog/v1.9.0-beta.9)
-
-*リリース日：2025-09-30*
-
-### 🎉 新機能
-
-* **[クライアント]**
-  * テーブルブロックに「列設定」ボタンを追加し、列の並び順や表示・非表示を設定可能に（[#7204](https://github.com/nocobase/nocobase/pull/7204)）by @kerwin612
-  * フィールドの検証ルールに対応（[#7297](https://github.com/nocobase/nocobase/pull/7297)）by @aaaaaajie
-* **[データソース: メイン]**
-  * メインデータソースのテーブル読み込みに対応（[#7238](https://github.com/nocobase/nocobase/pull/7238)）by @aaaaaajie
-  * プラグインで定義されたテーブルもメインデータソースに表示可能に（[#7187](https://github.com/nocobase/nocobase/pull/7187)）by @aaaaaajie
-
-### 🚀 機能改善
-
-* **[クライアント]** プレビュー時に画像を回転できる機能を追加（[#7523](https://github.com/nocobase/nocobase/pull/7523)）by @mytharcher
-* **[snowflake-id]** 一意識別子を持たない自動採番の主キーを、53ビットのSnowflake形式IDに変更（[#7465](https://github.com/nocobase/nocobase/pull/7465)）by @2013xile
-* **[ワークフロー]** ディスパッチ処理を独立したモジュールに分離（[#7535](https://github.com/nocobase/nocobase/pull/7535)）by @mytharcher
-* **[RabbitMQキューアダプタ]** 接続処理とメッセージ処理ロジックを改善 by @sdp-ncd
-* **[メールマネージャー]**
-  * 複数件の同期をまとめて実行可能に by @jiannx
-  * リッチエディタで画像サイズを変更可能に by @jiannx
-
-### 🐛 不具合修正
-
-* **[クライアント]**
-  * 「列設定」ボタンがモーダルダイアログ内のテーブル列を読み込んでしまう不具合を修正（[#7385](https://github.com/nocobase/nocobase/pull/7385)）by @kerwin612
-  * サイドバーのサブメニューが正しくハイライトされない不具合を修正（[#7520](https://github.com/nocobase/nocobase/pull/7520)）by @duannyuuu
-* **[ワークフロー]**
-  * キュー処理の不具合によりタスクが二重に実行される問題を修正（[#7533](https://github.com/nocobase/nocobase/pull/7533)）by @mytharcher
-  * 関連フィールドのコンテキスト読み込み時にワークフロー条件が正しく処理されない問題を修正（[#7516](https://github.com/nocobase/nocobase/pull/7516)）by @mytharcher
-  * 日付フィールドを基準とするスケジュールタスクが開始後に実行されない問題を修正（[#7524](https://github.com/nocobase/nocobase/pull/7524)）by @mytharcher
-* **[ワークフロー: ループノード]** 条件を満たさなくても次の処理に進んでしまう不具合を修正（[#7521](https://github.com/nocobase/nocobase/pull/7521)）by @mytharcher
-* **[メールマネージャー]**
-  * 不正な件名のメールが表示される不具合を修正 by @jiannx
-  * リッチエディタでソフト改行に対応 by @jiannx
-  * 同じメールを複数の宛先に送信可能に by @jiannx
-  * メール一覧表示のパフォーマンスを改善 by @jiannx
-  * 行を選択した後に既読/未読を設定できるよう修正 by @jiannx
-  * パフォーマンス向上のため rawId フィールドを追加 by @jiannx
-  * HTML内のref属性が原因でレンダリング例外が発生する不具合を修正 by @jiannx
-  * サブメールの内容がフィルタされない不具合を修正 by @jiannx
-  * 再同期に対応 by @jiannx
-  * 転送と返信を手動で判別できるよう修正 by @jiannx
+* **[サーバー]** 主キー移行スクリプトで発生していたエラーを修正（[#7568](https://github.com/nocobase/nocobase/pull/7568)）@2013xile
+* **[カレンダー]** カレンダーブロックのデータテーブルで一意識別子を設定した際、詳細データの取得時にエラーが発生する問題を修正（[#7562](https://github.com/nocobase/nocobase/pull/7562)）@katherinehhh
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v2.0.0-alpha.5](https://www.nocobase.com/ja/blog/v2.0.0-alpha.5)
+### [v2.0.0-alpha.8](https://www.nocobase.com/ja/blog/v2.0.0-alpha.8)
 
-*リリース日：2025-10-10*
+*リリース日：2025-10-14*
+
+### 🎉 新機能
+
+* **[AIスタッフ]** AIプラグインのオンライン検索機能を改善（[#7580](https://github.com/nocobase/nocobase/pull/7580)）@cgyrock
+
+### 🚀 機能改善
+
+* **[クライアント]** フロントエンドで `mime` パッケージを使用し、ファイルのMIMEタイプをより正確に取得できるよう改善（[#7551](https://github.com/nocobase/nocobase/pull/7551)）@mytharcher
+* **[フローエンジン]**
+  * ポップアップ変数をサポート（[#7583](https://github.com/nocobase/nocobase/pull/7583)）@gchust
+  * コードエディタのユーザー体験を改善し、コードスニペットを追加、異なるシナリオで動的にコード補完を表示（[#7559](https://github.com/nocobase/nocobase/pull/7559)）@gchust
+  * 自動フローを標準化し、“beforeRender” イベントで統一的にトリガーすることで、フローの実行の一貫性と予測可能性を向上（[#7577](https://github.com/nocobase/nocobase/pull/7577)）@gchust
+* **[ワークフロー]** ノード削除時に「分岐を保持」オプションを追加（[#7571](https://github.com/nocobase/nocobase/pull/7571)）@mytharcher
+* **[データ可視化]** グラフ種類を拡張し、UIと操作体験を改善（[#7581](https://github.com/nocobase/nocobase/pull/7581)）@heziqiang
+* **[ワークフロー：承認]** 内核変更に対応するためブランチ設定を再構築 @mytharcher
 
 ### 🐛 不具合修正
 
-* **[サーバー]** 主キー移行スクリプトエラー修正 ([#7563](https://github.com/nocobase/nocobase/pull/7563)) by @2013xile
 * **[クライアント]**
-  * フォーム送信後にデータがリフレッシュされない問題を修正 ([#7560](https://github.com/nocobase/nocobase/pull/7560)) by @zhangzhonghe
-  * AssignedField コンポーネントの動的属性未実装による新規および更新ノードでのファイルアップロードエラー修正 ([#7556](https://github.com/nocobase/nocobase/pull/7556)) by @mytharcher
-* **[カレンダー]** カレンダーブロックのデータテーブルで一意識別子設定後の詳細データ取得エラー修正 ([#7562](https://github.com/nocobase/nocobase/pull/7562)) by @katherinehhh
-* **[ブロック：テンプレート（廃止予定）]** ポップアップ開閉時に不必要なテンプレートリクエスト発生問題修正 ([#7561](https://github.com/nocobase/nocobase/pull/7561)) by @gchust
-* **[公開フォーム]** 公開フォーム内のファイルフィールドアップロードルール修正 ([#7553](https://github.com/nocobase/nocobase/pull/7553)) by @mytharcher
-* **[マルチアプリケーションマネージャー（廃止予定）]** マルチアプリケーション移行ポート検証エラー修正 ([#7540](https://github.com/nocobase/nocobase/pull/7540)) by @jiannx
+  * 表のページ切り替え時の表示乱れを修正（[#7572](https://github.com/nocobase/nocobase/pull/7572)）@zhangzhonghe
+  * `一括更新` および `更新` 操作でフィールドの割り当てができない問題を修正（[#7565](https://github.com/nocobase/nocobase/pull/7565)）@gchust
+  * 画像プレビューで回転とズームを同時に行う際の表示乱れを修正（[#7573](https://github.com/nocobase/nocobase/pull/7573)）@mytharcher
+* **[ワークフロー：承認]** アプリ未インストール時にテーブルが存在せず発生するマイグレーションスクリプトのエラーを修正 @mytharcher
+* **[認証：LDAP]** 非ASCII文字（UTF-8）を含むADでのログイン失敗問題を修正 @2013xile
 
-### [v2.0.0-alpha.4](https://www.nocobase.com/ja/blog/v2.0.0-alpha.4)
+### [v2.0.0-alpha.7](https://www.nocobase.com/ja/blog/v2.0.0-alpha.7)
 
-*リリース日：2025-10-05*
+*リリース日：2025-10-13*
 
-### 🚀 機能改善
+### 🎉 新機能
 
-* **[フローエンジン]** ドラッグ＆ドロップ機能の改善 ([#7526](https://github.com/nocobase/nocobase/pull/7526)) by @zhangzhonghe
-* **[ワークフロー：ループノード]** 環境変数によるループノードの最大ループ回数制限機能をサポート ([#7543](https://github.com/nocobase/nocobase/pull/7543)) by @mytharcher
-* **[ワークフロー]** 環境変数によるワークフロー内最大ノード数制限機能をサポート ([#7542](https://github.com/nocobase/nocobase/pull/7542)) by @mytharcher
-* **[ワークフロー：承認]** カスタム承認ブロックの詳細画面に印刷ボタンを追加 by @mytharcher
+* **[クライアント]** 「使用中のデバイス種別」を取得できる新しい変数を追加（[#7576](https://github.com/nocobase/nocobase/pull/7576)）@zhangzhonghe
 
-### 🐛 不具合修正
+### [v2.0.0-alpha.6](https://www.nocobase.com/ja/blog/v2.0.0-alpha.6)
 
-* **[クライアント]** コードエディターの「実行」ボタンが正常に動作しない問題を修正、ユーザーはコードを正しく実行できるようになりました。 ([#7547](https://github.com/nocobase/nocobase/pull/7547)) by @gchust
-* **[AIスタッフ]** AIスタッフ権限設定ページのエラーを修正 ([#7548](https://github.com/nocobase/nocobase/pull/7548)) by @2013xile
-* **[ワークフロー]** ワークフローボタンでワークフローを追加後、クリック時にフリーズする問題を修正 ([#7541](https://github.com/nocobase/nocobase/pull/7541)) by @mytharcher
-* **[メール管理]** 再認証に関する問題 by @jiannx
-
-### [v1.9.0-alpha.17](https://www.nocobase.com/ja/blog/v1.9.0-alpha.17)
-
-*リリース日：2025-09-30*
-
-### 🚀 機能改善
-
-* **[ワークフロー]** ディスパッチ処理ロジックを独立したディスパッチャーとして分離（[#7535](https://github.com/nocobase/nocobase/pull/7535)） by @mytharcher
+*リリース日：2025-10-11
 
 ### 🐛 不具合修正
 
-* **[ワークフロー]**
-  * キュー処理の不具合によりタスクが二重に実行される問題を修正（[#7533](https://github.com/nocobase/nocobase/pull/7533)） by @mytharcher
-  * 日付フィールドを基準としたスケジュールタスクが開始後に正しく起動しない問題を修正（[#7524](https://github.com/nocobase/nocobase/pull/7524)） by @mytharcher
-
-### [v2.0.0-alpha.1](https://www.nocobase.com/ja/blog/v2.0.0-alpha.1)
-
-*リリース日：2025-09-30*
-
-### 🚀 機能改善
-
-* **[サーバー]** アプリケーションに優雅な終了処理のライフサイクル管理を新たに追加 ([#7536](https://github.com/nocobase/nocobase/pull/7536)) by @mytharcher
+* **[サーバー]** 主キー移行スクリプトで発生していたエラーを修正（[#7568](https://github.com/nocobase/nocobase/pull/7568)）@2013xile
+* **[ルーティング]** ルーティング処理を新しいマルチアプリ構成に対応させる修正を実施（[#7570](https://github.com/nocobase/nocobase/pull/7570)）@jiannx
+* **[AIスタッフ]** ChatGPT-4o使用時にAIスタッフモデリングツールで発生していた不具合を修正（[#7566](https://github.com/nocobase/nocobase/pull/7566)）@cgyrock
