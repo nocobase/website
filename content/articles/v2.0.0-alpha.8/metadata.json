@@ -1,7 +1,7 @@
 {
   "id": 705,
   "title": "NocoBase v2.0.0-alpha.8: Improve web search function of plugin-ai",
-  "title_cn": "NocoBase v2.0.0-alpha.8：改进AI插件的联网搜索功能",
+  "title_cn": "NocoBase v2.0.0-alpha.8：改进 AI 插件的联网搜索功能",
   "title_ja": "NocoBase v2.0.0-alpha.8：AIプラグインのオンライン検索機能を強化",
   "description": "Release Note of v2.0.0-alpha.8",
   "description_cn": "v2.0.0-alpha.8 更新日志",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-15T10:09:21.076Z"
+  "updatedAt": "2025-10-15T10:11:50.470Z"
 }
