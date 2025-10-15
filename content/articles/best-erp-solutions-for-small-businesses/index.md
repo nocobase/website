@@ -123,6 +123,8 @@ When selecting an ERP system, small businesses should consider the following fac
 | **ERPNext** |   Businesses needing an open-source ERP   |    Open-source    | Comprehensive ERP, ideal for growing businesses |
 | **Zoho ERP** | Businesses needing a cloud-based SaaS ERP | User-based pricing |        Easy to use, ideal for SaaS users        |
 
+Recently, we also came across an interesting open-source ERP project called [Aureus ERP](https://aureuserp.com/), built with Laravel and FilamentPHP. It offers a modular architecture covering HR, CRM, project management, and more — which you can also try out to see if it fits your requirements.
+
 ## Conclusion: How Can Small Businesses Make the Most of ERP?
 
 When selecting an ERP, small businesses should prioritize **business needs, budget, and scalability**.
