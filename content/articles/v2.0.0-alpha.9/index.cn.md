@@ -9,6 +9,4 @@
 ### 🐛 修复
 
 - **[server]** 保留复制引用字段时的 field.targetKey 值 ([#7599](https://github.com/nocobase/nocobase/pull/7599)) by @chenos
-
-- **[AI 员工]** 修复了移动端布局界面中AI员工对话框的布局问题 ([#7591](https://github.com/nocobase/nocobase/pull/7591)) by @cgyrock
-
+- **[AI 员工]** 修复了移动端布局界面中 AI 员工对话框的布局问题 ([#7591](https://github.com/nocobase/nocobase/pull/7591)) by @cgyrock
