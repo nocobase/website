@@ -378,21 +378,21 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-09-28T08:39:23.333Z",
-    "updatedAt": "2025-09-28T08:39:23.338Z",
-    "id": 1967,
-    "title": "9.28封面",
-    "filename": "9.28封面-9p76a9.jpg",
+    "createdAt": "2025-10-17T03:46:05.849Z",
+    "updatedAt": "2025-10-17T03:46:05.857Z",
+    "id": 1995,
+    "title": "德国大学 (1)",
+    "filename": "德国大学 (1)-lmy74c.jpg",
     "extname": ".jpg",
-    "size": 565771,
+    "size": 85521,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/9.28%E5%B0%81%E9%9D%A2-9p76a9.jpg",
-    "preview": "https://static-docs.nocobase.com/9.28%E5%B0%81%E9%9D%A2-9p76a9.jpg",
+    "url": "https://static-docs.nocobase.com/%E5%BE%B7%E5%9B%BD%E5%A4%A7%E5%AD%A6%20(1)-lmy74c.jpg",
+    "preview": "https://static-docs.nocobase.com/%E5%BE%B7%E5%9B%BD%E5%A4%A7%E5%AD%A6%20(1)-lmy74c.jpg",
     "storageId": 2,
-    "createdById": 20,
-    "updatedById": 20
+    "createdById": 1,
+    "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
@@ -400,5 +400,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-30T09:36:13.631Z"
+  "updatedAt": "2025-10-17T03:46:27.693Z"
 }
