@@ -300,21 +300,21 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-06-17T02:35:38.934Z",
-    "updatedAt": "2025-06-17T02:35:38.934Z",
-    "id": 1486,
-    "title": "封面",
-    "filename": "封面-ym6ukz.png",
-    "extname": ".png",
-    "size": 1484113,
-    "mimetype": "image/png",
+    "createdAt": "2025-10-17T03:48:56.431Z",
+    "updatedAt": "2025-10-17T03:48:56.436Z",
+    "id": 1999,
+    "title": "shimano (1)",
+    "filename": "shimano (1)-yokbo8.jpg",
+    "extname": ".jpg",
+    "size": 123212,
+    "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-ym6ukz.png",
-    "preview": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-ym6ukz.png",
+    "url": "https://static-docs.nocobase.com/shimano%20(1)-yokbo8.jpg",
+    "preview": "https://static-docs.nocobase.com/shimano%20(1)-yokbo8.jpg",
     "storageId": 2,
-    "createdById": 3,
-    "updatedById": 3
+    "createdById": 1,
+    "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
@@ -322,5 +322,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-06-17T03:55:01.128Z"
+  "updatedAt": "2025-10-17T03:49:00.279Z"
 }
