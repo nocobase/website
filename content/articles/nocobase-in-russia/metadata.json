@@ -404,21 +404,21 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-10-14T15:42:01.915Z",
-    "updatedAt": "2025-10-14T15:42:01.922Z",
-    "id": 1986,
-    "title": "20251014-234142",
-    "filename": "20251014-234142-ckxzml.png",
-    "extname": ".png",
-    "size": 984030,
-    "mimetype": "image/png",
+    "createdAt": "2025-10-17T03:46:37.151Z",
+    "updatedAt": "2025-10-17T03:46:37.157Z",
+    "id": 1996,
+    "title": "俄罗斯 (1)",
+    "filename": "俄罗斯 (1)-02eyfp.jpg",
+    "extname": ".jpg",
+    "size": 96301,
+    "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/20251014-234142-ckxzml.png",
-    "preview": "https://static-docs.nocobase.com/20251014-234142-ckxzml.png",
+    "url": "https://static-docs.nocobase.com/%E4%BF%84%E7%BD%97%E6%96%AF%20(1)-02eyfp.jpg",
+    "preview": "https://static-docs.nocobase.com/%E4%BF%84%E7%BD%97%E6%96%AF%20(1)-02eyfp.jpg",
     "storageId": 2,
-    "createdById": 22,
-    "updatedById": 22
+    "createdById": 1,
+    "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
@@ -426,5 +426,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-15T04:32:56.550Z"
+  "updatedAt": "2025-10-17T03:46:43.662Z"
 }
