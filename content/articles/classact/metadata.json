@@ -326,21 +326,21 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-09-18T12:24:26.649Z",
-    "updatedAt": "2025-09-18T12:24:26.654Z",
-    "id": 1930,
-    "title": "封面",
-    "filename": "封面-quhqcp.png",
-    "extname": ".png",
-    "size": 1069475,
-    "mimetype": "image/png",
+    "createdAt": "2025-10-17T03:47:32.994Z",
+    "updatedAt": "2025-10-17T03:47:33.010Z",
+    "id": 1998,
+    "title": "classact (1)",
+    "filename": "classact (1)-6wsgy4.jpg",
+    "extname": ".jpg",
+    "size": 50167,
+    "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-quhqcp.png",
-    "preview": "https://static-docs.nocobase.com/%E5%B0%81%E9%9D%A2-quhqcp.png",
+    "url": "https://static-docs.nocobase.com/classact%20(1)-6wsgy4.jpg",
+    "preview": "https://static-docs.nocobase.com/classact%20(1)-6wsgy4.jpg",
     "storageId": 2,
-    "createdById": 3,
-    "updatedById": 3
+    "createdById": 1,
+    "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-09-18T15:44:08.714Z"
+  "updatedAt": "2025-10-17T03:47:37.184Z"
 }
