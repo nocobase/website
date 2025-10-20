@@ -46,7 +46,9 @@
 
 **⭐️ Stars: 17k**
 
-**介绍** 开源的 AI agent 工作流构建平台，用户可以通过可视化界面以拖拽方式搭建 AI 代理流程，无需编写代码，就能把模型、API、数据库、第三方服务连起来。
+**介绍**
+
+开源的 AI agent 工作流构建平台，用户可以通过可视化界面以拖拽方式搭建 AI 代理流程，无需编写代码，就能把模型、API、数据库、第三方服务连起来。
 
 ![Sim.png](https://static-docs.nocobase.com/Sim-aamc24.png)
 
@@ -60,7 +62,7 @@
 
 * **流程自动化**：把重复操作交给 AI 代理处理，比如定期数据抓取、邮件自动响应、流程审批等。
 * **客服 / 智能助理**：构建智能机器人接入知识库，为用户自动回答问题、执行查询操作。
-* **跨系统协同：**当多个系统需要交互时，Sim 可以成为调度中心，把不同服务整合成一个智能链路。
+* **跨系统协同**：当多个系统需要交互时，Sim 可以成为调度中心，把不同服务整合成一个智能链路。
 
 **AI 是如何融入搭建与使用的**
 
@@ -72,7 +74,9 @@
 
 **⭐️ Stars: 17.9k**
 
-**介绍** Coze Studio 是字节跳动推出的智能应用开发平台，用低代码或无代码的方式构建、调试和部署 AI Agent。
+**介绍**
+
+Coze Studio 是字节跳动推出的智能应用开发平台，用低代码或无代码的方式构建、调试和部署 AI Agent。
 
 ![CozeStudio.png](https://static-docs.nocobase.com/Coze%20Studio-1edqx9.png)
 
@@ -98,7 +102,9 @@ Coze Studio 让 AI 成为构建过程的核心角色——用户通过拖拽逻�
 
 **⭐️ Stars: 27.1k**
 
-**介绍**  Budibase 是一个开源低代码 / 无代码平台，聚焦于快速搭建内部工具与业务应用。它在传统表单与流程的基础上，引入了 AI 辅助逻辑生成与数据处理能力。
+**介绍**
+
+Budibase 是一个开源低代码 / 无代码平台，聚焦于快速搭建内部工具与业务应用。它在传统表单与流程的基础上，引入了 AI 辅助逻辑生成与数据处理能力。
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-n35qaa.png)
 
@@ -124,7 +130,9 @@ Budibase 让 AI 成为构建过程的得力助手——它能自动生成字段�
 
 **⭐️ Stars: 36.7k**
 
-**介绍** ToolJet 是一个开源的低代码平台，结合自然语言生成与拖拽式构建，让团队能更快搭出内部工具或 AI 应用。
+**介绍**
+
+ToolJet 是一个开源的低代码平台，结合自然语言生成与拖拽式构建，让团队能更快搭出内部工具或 AI 应用。
 
 ![ToolJet.png](https://static-docs.nocobase.com/ToolJet-2fclnb.png)
 
@@ -132,11 +140,11 @@ Budibase 让 AI 成为构建过程的得力助手——它能自动生成字段�
 
 * **自然语言应用生成**：描述想要的功能或界面，可以自动帮你生成初步的应用框架。
 * **Agent 与自动化能力**：可以让 AI 触发流程、执行任务、调用 API。
-* **AI 辅助开发体验：**在编写 SQL、JS 时提供代码补全与优化建议。
+* **AI 辅助开发体验**：在编写 SQL、JS 时提供代码补全与优化建议。
 
 **最佳使用场景**
 
-* **企业后台与管理系统：**客户管理、订单处理、审批流等
+* **企业后台与管理系统**：客户管理、订单处理、审批流等
 * **有 AI 加持的应用功能**：比如智能搜索、客服机器人、知识问答、报告生成等。
 
 **AI 是如何融入搭建与使用的**
@@ -149,13 +157,15 @@ ToolJet 把 AI 融入应用搭建的各个环节：用户可以用自然语言�
 
 **⭐️ Stars: 45.6k**
 
-**介绍** Flowise 是一个专注于 LLM 与 Agent 的可视化构建平台。用户可以通过拖拽方式，把模型、工具与逻辑节点拼成完整的智能流程，快速实现对话机器人、检索系统等功能。
+**介绍**
+
+Flowise 是一个专注于 LLM 与 Agent 的可视化构建平台。用户可以通过拖拽方式，把模型、工具与逻辑节点拼成完整的智能流程，快速实现对话机器人、检索系统等功能。
 
 ![Flowise.png](https://static-docs.nocobase.com/Flowise-0jqpc0.png)
 
 **核心 AI 功能亮点**
 
-* **图形化流程设计：**让模型调用、工具连接和逻辑关系一目了然
+* **图形化流程设计**：让模型调用、工具连接和逻辑关系一目了然
 * **多模型与多工具支持**：支持多种大模型、向量数据库、外部 API 组合使用。
 * **流程导出与嵌入**：构建出的流程可以导出为服务 / API，嵌入其他系统中使用。
 
@@ -165,7 +175,9 @@ ToolJet 把 AI 融入应用搭建的各个环节：用户可以用自然语言�
 * **内部智能中台**：为已有系统增加智能推理与自动化处理能力。
 * **AI 应用原型验证**：想快速试验某个 LLM 组合逻辑时，用 Flowise 可快速搭流程。
 
-**AI 是如何融入搭建与使用的** Flowise 通过可视化流程让用户直接搭建智能应用，AI 管理模型调用、数据处理和接口连接，提高问答、检索和自动化流程的构建效率。
+**AI 是如何融入搭建与使用的**
+
+Flowise 通过可视化流程让用户直接搭建智能应用，AI 管理模型调用、数据处理和接口连接，提高问答、检索和自动化流程的构建效率。
 
 ## 第5 Anything-LLM
 
@@ -173,19 +185,21 @@ ToolJet 把 AI 融入应用搭建的各个环节：用户可以用自然语言�
 
 **⭐️ Stars: 50k**
 
-**介绍** AnythingLLM 是一个开源的全功能 AI 平台，可用于构建聊天、检索、Agent 或 RAG 应用。
+**介绍**
+
+AnythingLLM 是一个开源的全功能 AI 平台，可用于构建聊天、检索、Agent 或 RAG 应用。
 
 ![Anything-LLM.png](https://static-docs.nocobase.com/Anything-LLM-v441sn.png)
 
 **核心 AI 功能亮点**
 
-* **文档对话与上下文检索：**支持上传资料，让 AI 在回答中引用内容。
+* **文档对话与上下文检索**：支持上传资料，让 AI 在回答中引用内容。
 * **多模型切换**：可灵活切换不同模型或供应商，以平衡性能与成本
-* **插件与 Agent 扩展：**开放的扩展机制，方便接入自定义工具或功能模块。
+* **插件与 Agent 扩展**：开放的扩展机制，方便接入自定义工具或功能模块。
 
 **最佳使用场景**
 
-* **内部知识问答系统：**员工可直接“问文档”，高效检索信息。
+* **内部知识问答系统**：员工可直接“问文档”，高效检索信息。
 * **本地化 AI 应用**：希望在本地运行，不依赖云模型或外部服务（数据隐私敏感时）的环境中构建私有智能助手，保障数据安全。
 * **轻量 agent 组合**：快速组合 agent、工具、对话模块，构建小而灵活的智能应用。
 
@@ -199,7 +213,9 @@ Anything-LLM 通过内置多模型和插件，让用户在构建聊天、检索�
 
 **⭐️ Stars: 58.2k**
 
-**介绍**  NocoDB 是一个开源的 Airtable 替代方案，把数据库（Postgres、MySQL 等）转成表格界面，让非技术用户也能操作数据库。最新的 Noco AI 功能正在将智能化引入数据建模和管理。
+**介绍**
+
+NocoDB 是一个开源的 Airtable 替代方案，把数据库（Postgres、MySQL 等）转成表格界面，让非技术用户也能操作数据库。最新的 Noco AI 功能正在将智能化引入数据建模和管理。
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-en3prs.png)
 
@@ -240,7 +256,7 @@ NocoDB 通过 AI 辅助功能，将自然语言建表、字段与关系推荐以
 
 * **内容驱动型网站或产品**：博客、资讯站、品牌官网、内容平台背后都可以用 Strapi 做内容管理层。
 * **前后端分离应用**：前端用 React/Vue/Next 等框架，后端由 Strapi 提供内容 API 和 AI 辅助功能。
-* **多语言与本地化管理：**结合 AI 翻译和摘要功能，提高跨语言内容处理效率。
+* **多语言与本地化管理**：结合 AI 翻译和摘要功能，提高跨语言内容处理效率。
 
 **AI 是如何融入搭建与使用的**
 
@@ -252,7 +268,9 @@ Strapi 通过插件方式将 AI 接入内容管理流程，让内容创作、审
 
 **⭐️ Stars: 117k**
 
-**介绍**  Dify 是一个专注于 AI 应用和 agent 构建的低代码 / 无代码平台，旨在让更多产品方能快速上线具备智能能力的应用。
+**介绍**
+
+Dify 是一个专注于 AI 应用和 agent 构建的低代码 / 无代码平台，旨在让更多产品方能快速上线具备智能能力的应用。
 
 ![Dify.png](https://static-docs.nocobase.com/Dify-v7kex6.png)
 
@@ -278,7 +296,9 @@ Dify 把大模型能力系统化提供给应用构建流程，用户无需编码
 
 **⭐️ Stars: 149k**
 
-**介绍**  n8n 是一个开源的工作流自动化平台，可以把多个服务、API、数据库通过节点方式串联起来形成自动化流程，近年来也在向 AI / Agent 方向扩展。
+**介绍**
+
+n8n 是一个开源的工作流自动化平台，可以把多个服务、API、数据库通过节点方式串联起来形成自动化流程，近年来也在向 AI / Agent 方向扩展。
 
 ![n8n.png](https://static-docs.nocobase.com/n8n-hs3wo1.png)
 
@@ -303,7 +323,7 @@ n8n 将 AI 融入自动化流程中，主要通过可视化 AI 节点、Agent �
 回顾这 11 款工具，我们能看到 AI 正在以各种方式嵌入无代码生态：
 
 * **自然语言生成界面与数据模型**（NocoBase、ToolJet、NocoDB）
-* **AI 辅助开发****与自动化逻辑生成**（Budibase、NocoBase）
+* **AI 辅助开发与自动化逻辑生成**（Budibase、NocoBase）
 * **可视化 Agent 与智能流程构建**（Sim、Flowise、Coze Studio、n8n）
 * **RAG 与知识问答型应用搭建**（Dify、AnythingLLM）
 * **内容创作与管理智能化**（Strapi）
@@ -313,3 +333,14 @@ n8n 将 AI 融入自动化流程中，主要通过可视化 AI 节点、Agent �
 或许未来我们不再讨论“要不要学代码”，而是——**如何与 AI 一起构建应用**
 
 如果这篇文章对你有所启发，欢迎分享给同样在探索 **AI 与无代码结合** 的朋友。👍
+
+
+**相关阅读：**
+
+* [GitHub 上 Star 数量前 10 的开源项目管理工具](https://www.nocobase.com/cn/blog/github-open-source-project-management-tools)
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
+* [GitHub 上 Star 数量前 20 的开源 AI 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
+* [GitHub 上 Star 数量前 8 的开源 MCP 项目](https://www.nocobase.com/cn/blog/github-open-source-mcp-projects)
+* [GitHub 上 Star 数量前 8 的开源 Web 应用项目](https://www.nocobase.com/cn/blog/github-open-source-web-applications)
+* [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
+* [2025年GitHub Star增长最快的15个开源低代码项目](https://www.nocobase.com/cn/blog/github-top15-fastest-growing-open-source-low-code-projects)
