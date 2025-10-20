@@ -7,8 +7,8 @@
   "description_cn": "v2.0.0-alpha.16 更新日志",
   "description_ja": "v2.0.0-alpha.16 のリリースノート",
   "slug": "v2.0.0-alpha.16",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-20T04:11:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,7 +37,34 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-20T07:10:09.070Z",
+        "updatedAt": "2025-10-20T07:10:09.070Z",
+        "articles_id": 719,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
   "cover": {
     "createdAt": "2025-10-20T06:26:26.332Z",
@@ -57,10 +84,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-20T06:26:31.983Z"
+  "updatedAt": "2025-10-20T07:10:09.052Z"
 }
