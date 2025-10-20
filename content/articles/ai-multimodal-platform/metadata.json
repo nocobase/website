@@ -326,18 +326,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2025-10-20T03:48:14.750Z",
-    "updatedAt": "2025-10-20T03:48:14.757Z",
-    "id": 2003,
-    "title": "华数",
-    "filename": "华数-k3cr7d.png",
-    "extname": ".png",
-    "size": 430496,
-    "mimetype": "image/png",
+    "createdAt": "2025-10-20T06:26:47.461Z",
+    "updatedAt": "2025-10-20T06:26:47.465Z",
+    "id": 2005,
+    "title": "20251020-120956",
+    "filename": "20251020-120956-t9jk7z.jpg",
+    "extname": ".jpg",
+    "size": 88187,
+    "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E5%8D%8E%E6%95%B0-k3cr7d.png",
-    "preview": "https://static-docs.nocobase.com/%E5%8D%8E%E6%95%B0-k3cr7d.png",
+    "url": "https://static-docs.nocobase.com/20251020-120956-t9jk7z.jpg",
+    "preview": "https://static-docs.nocobase.com/20251020-120956-t9jk7z.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-20T04:30:20.263Z"
+  "updatedAt": "2025-10-20T06:26:58.685Z"
 }
