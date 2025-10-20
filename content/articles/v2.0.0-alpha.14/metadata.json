@@ -1,14 +1,14 @@
 {
   "id": 715,
-  "title": "NocoBase v2.0.0-alpha.14",
-  "title_cn": "NocoBase v2.0.0-alpha.14",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v2.0.0-alpha.14: AI coding optimization",
+  "title_cn": "NocoBase v2.0.0-alpha.14：AI 写代码功能优化",
+  "title_ja": "NocoBase v2.0.0-alpha.14: AIコード生成機能の強化",
   "description": "Release Note of v2.0.0-alpha.14",
   "description_cn": "v2.0.0-alpha.14 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v2.0.0-alpha.14 のリリースノート",
   "slug": "v2.0.0-alpha.14",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-17T10:02:03.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-20T02:24:39.224Z",
+        "updatedAt": "2025-10-20T02:24:39.224Z",
+        "articles_id": 715,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-20T02:30:03.590Z",
+    "updatedAt": "2025-10-20T02:30:03.605Z",
+    "id": 2000,
+    "title": "develop v2.0.0-alpha.14",
+    "filename": "develop v2.0.0-alpha.14-ycso5t.png",
+    "extname": ".png",
+    "size": 77158,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.14-ycso5t.png",
+    "preview": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.14-ycso5t.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-17T08:28:38.994Z"
+  "updatedAt": "2025-10-20T02:30:11.696Z"
 }
