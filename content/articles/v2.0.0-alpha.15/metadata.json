@@ -1,14 +1,14 @@
 {
   "id": 717,
-  "title": "NocoBase v2.0.0-alpha.15",
-  "title_cn": "NocoBase v2.0.0-alpha.15",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v2.0.0-alpha.15: Add new LLM providers",
+  "title_cn": "NocoBase v2.0.0-alpha.15：添加了新的 LLM 提供商",
+  "title_ja": "NocoBase v2.0.0-alpha.15：新たなLLMプロバイダを追加",
   "description": "Release Note of v2.0.0-alpha.15",
   "description_cn": "v2.0.0-alpha.15 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v2.0.0-alpha.15 のリリースノート",
   "slug": "v2.0.0-alpha.15",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-20T02:06:07.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-20T02:31:13.591Z",
+        "updatedAt": "2025-10-20T02:31:13.591Z",
+        "articles_id": 717,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-20T02:50:37.888Z",
+    "updatedAt": "2025-10-20T02:50:37.895Z",
+    "id": 2001,
+    "title": "develop v2.0.0-alpha.15",
+    "filename": "develop v2.0.0-alpha.15-csaug6.png",
+    "extname": ".png",
+    "size": 77406,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.15-csaug6.png",
+    "preview": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.15-csaug6.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-20T01:27:04.806Z"
+  "updatedAt": "2025-10-20T02:50:59.922Z"
 }
