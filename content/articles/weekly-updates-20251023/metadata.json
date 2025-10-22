@@ -7,7 +7,7 @@
   "description_cn": "本周更新包括：添加对自定义变量的支持，增加对表格行点击事件监听的支持等。",
   "description_ja": "今週の更新内容は以下の通りです：カスタム変数への対応やテーブル行クリックイベントの追加対応などが行われました",
   "slug": "weekly-updates-20251023",
-  "publishedAt": "2025-10-22T07:00:59.107Z",
+  "publishedAt": "2025-10-23T00:00:59.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-22T07:53:08.224Z"
+  "updatedAt": "2025-10-22T07:58:17.208Z"
 }
