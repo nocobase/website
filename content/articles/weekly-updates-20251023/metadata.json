@@ -8,7 +8,7 @@
   "description_ja": "今週の更新内容は以下の通りです：カスタム変数への対応やテーブル行クリックイベントの追加対応などが行われました",
   "slug": "weekly-updates-20251023",
   "publishedAt": "2025-10-23T00:00:59.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-22T07:58:17.208Z"
+  "updatedAt": "2025-10-23T02:03:02.453Z"
 }
