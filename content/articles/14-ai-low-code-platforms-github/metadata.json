@@ -12,12 +12,28 @@
   "tags": [],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-24T19:04:05.450Z",
+    "updatedAt": "2025-10-24T19:04:05.459Z",
+    "id": 2015,
+    "title": "Frame 83",
+    "filename": "Frame 83-oaumsq.jpg",
+    "extname": ".jpg",
+    "size": 71796,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2083-oaumsq.jpg",
+    "preview": "https://static-docs.nocobase.com/Frame%2083-oaumsq.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-10-24T18:38:20.123Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-10-24T19:04:16.673Z"
 }
