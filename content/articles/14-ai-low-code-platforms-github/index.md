@@ -35,9 +35,9 @@ But this time, instead of asking “Can AI build systems?”, we’re shifting t
 
 No-code is about enabling non-technical users to use AI — you don’t write code, but you can call models or generate content.
 
-**Low-code**, however, is for people who understand the business and know a bit of tech — it focuses on **data modeling, process logic, permission systems, and plugin extensibility**, which are closer to real system building.
+Low-code, however, is for people who understand the business and know a bit of tech — it focuses on **data modeling, process logic, permission systems, and plugin extensibility**, which are closer to real system building.
 
-So, we looked into the [GitHub “low-code”](https://github.com//topics/low-code) topic and focused on tools that:
+So, we looked into the [GitHub“low-code”](https://github.com//topics/low-code) topic and focused on tools that:
 
 * ⭐ Have active communities and good maintenance (stars, updates, feedback)
 * 🤖 Clearly provide AI capabilities in their docs, not just a chatbot window
@@ -101,7 +101,7 @@ GitHub: [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 
 ![ToolJet.png](https://static-docs.nocobase.com/ToolJet-7balkk.png)
 
-* **Overview**: A low-code platform for internal enterprise apps, combining **AI Copilot + visual UI building + API integration**.
+* **Overview**: A low-code platform for internal enterprise apps, combining AI Copilot + visual UI building + API integration.
 * **Target users**: Engineering, operations, or data teams that need internal dashboards fast.
 * **Use cases**: Admin panels, internal tools, API-based applications where AI can help write SQL, generate layouts, or scripts.
 
@@ -117,7 +117,7 @@ GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-ycvv0e.png)
 
-* **Overview**: Open-source internal app builder with **Appsmith AI** for automatic SQL generation, form logic, and component setup.
+* **Overview**: Open-source internal app builder with Appsmith AI for automatic SQL generation, form logic, and component setup.
 * **Target users**: Front-end developers, data tool builders, teams creating CRUD systems.
 * **Use cases**: Query dashboards, internal admin tools, database utilities — e.g. natural language → AI generates SQL → table output.
 
@@ -294,7 +294,7 @@ GitHub: [https://github.com/teableio/teable](https://github.com/teableio/teable)
 * **Overview**: A PostgreSQL-based collaborative spreadsheet database with AI chat and smart autofill.
 * **Target users**: Airtable/Notion users or teams needing data collaboration with AI-powered assistance.
 * **Use cases**: Content management, lightweight data warehouse, team project tables.
-  Supports **conversational data interaction** — such as querying records via natural language, generating table data in bulk, or auto-creating reports.
+  Supports conversational data interaction — such as querying records via natural language, generating table data in bulk, or auto-creating reports.
 
 ## **Tools That Don’t Fully Fit Into the Above Categories**
 
