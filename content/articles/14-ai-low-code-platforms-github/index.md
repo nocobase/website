@@ -16,7 +16,7 @@ It’s a harsh take, but it also reflects a real concern: **If AI is already so 
 
 The interesting thing is — that comment was posted **eight months ago**. And today, not only are these tools still around, many have grown more mature, with even more new projects emerging.
 
-Just a few days ago, we compiled 💡[**The Most Popular Open-Source No-Code AI Tools on GitHub**](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)\. Looking at stars, community activity, and feature maturity, many of these tools are not only alive — they’re actively improving and expanding their AI capabilities.
+Just a few days ago, we compiled 💡[The Most Popular Open-Source No-Code AI Tools on GitHub](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)\. Looking at stars, community activity, and feature maturity, many of these tools are not only alive — they’re actively improving and expanding their AI capabilities.
 This shows that no-code/low-code + AI isn’t a short-lived hype — it’s something real, being built, used, and evolving.
 
 That said, skepticism still matters. Another comment put it clearly:
@@ -29,7 +29,7 @@ That said, skepticism still matters. Another comment put it clearly:
 
 It’s hard to argue with that. Many “AI agent platforms” do little more than connect automation flows to an LLM — smarter on the surface, but still just tools.
 
-We’ve covered related topics before, like **💡[Noteworthy Open-Source AI Agent Projects](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects)** and 💡**[Great Open-Source AI Tools](https://www.nocobase.com/en/blog/github-open-source-ai-projects).**
+We’ve covered related topics before, like 💡[Noteworthy Open-Source AI Agent Projects](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects) and 💡[Great Open-Source AI Tools](https://www.nocobase.com/en/blog/github-open-source-ai-projects).
 
 But this time, instead of asking “Can AI build systems?”, we’re shifting the focus naturally from no-code to low-code.
 
