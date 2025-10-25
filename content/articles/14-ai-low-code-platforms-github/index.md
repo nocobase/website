@@ -16,7 +16,7 @@ It’s a harsh take, but it also reflects a real concern: **If AI is already so 
 
 The interesting thing is — that comment was posted **eight months ago**. And today, not only are these tools still around, many have grown more mature, with even more new projects emerging.
 
-Just a few days ago, we compiled 💡\*\*[The Most Popular Open-Source No-Code AI Tools on GitHub](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)\*\*. Looking at stars, community activity, and feature maturity, many of these tools are not only alive — they’re actively improving and expanding their AI capabilities.
+Just a few days ago, we compiled 💡[**The Most Popular Open-Source No-Code AI Tools on GitHub**](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)\. Looking at stars, community activity, and feature maturity, many of these tools are not only alive — they’re actively improving and expanding their AI capabilities.
 This shows that **no-code/low-code + AI isn’t a short-lived hype — it’s something real, being built, used, and evolving.**
 
 That said, skepticism still matters. Another comment put it clearly:
@@ -162,8 +162,6 @@ These tools stand out because **AI is not just generating content — it activel
 Think of them as **AI-enhanced workflow engines or agent execution platforms**, rather than full low-code business system builders.
 
 They excel at automation and execution, but usually lack complex data modeling, permission systems, or UI/page building capabilities.
-
----
 
 ### **n8n**
 
@@ -351,9 +349,7 @@ The real challenge is no longer whether we are using AI, but whether we can **de
 AI is moving from a **conversation tool** to a **construction tool**. It isn’t perfect yet, but the direction is clear.
 In the future, systems may not be “developed” — they may be **described**. And we will start from real business problems, not just from a code editor.
 
-If you’ve read this far and feel the same shift happening, feel free to share this list with others who care about **AI × low-code**.
-
-
+If you’ve read this far and feel the same shift happening, feel free to share this list with others who care about **AI × low-code**.👍
 
 **Related reading:**
 
