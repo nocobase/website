@@ -16,7 +16,9 @@
 
 事实是 —— 这条评论已经是**8 个月前**的事了。而现在回头看，这些工具不仅没有“消失”，反而越做越成熟，新的项目也在不断涌现。
 
-就在几天前，我们还整理过💡**[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)**，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。  这也从侧面证明了：无代码 / 低代码 + AI 并不是昙花一现的泡沫，而是在被稳定地使用、试验和进化。
+就在几天前，我们还整理过💡**[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)**，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。
+
+这也从侧面证明了：无代码 / 低代码 + AI 并不是昙花一现的泡沫，而是在被稳定地使用、试验和进化。
 
 当然，质疑并不是没有价值。因为另一种声音也提醒得很清晰：
 
@@ -221,7 +223,7 @@ GitHub：[https://github.com/kestra-io/kestra](https://github.com/kestra-io/kest
 ![Kestra.png](https://static-docs.nocobase.com/Kestra-1n19xy.png)
 
 * **定位**：后端任务编排与数据调度平台，支持 AI Copilot 自动生成 workflow。
-* **面向人群**：数据工程师、后端开发、DevOps团队。
+* **面向人群**：数据工程师、后端开发、DevOps 团队。
 * **适合场景**：AI 生成定时任务、数据清洗流程、API 调用任务链，偏后端执行型工作流。
 
 ---
