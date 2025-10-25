@@ -317,7 +317,7 @@ GitHub: [https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onl
 With natural language or wireframes, AI can automatically generate page layouts, UI components, and even React code. These tools sit between **design platforms** and **frontend low-code development**, focusing on **AI-assisted UI creation**.
 
 
-## **Some Tools Don’t Fit Just One Category — NocoBase Is a Good Example**
+## **Tools That Span More Than One Category — Such as NocoBase**
 
 Earlier, we grouped tools into three types — business application builders, workflow/agent tools, and data/table intelligence platforms.
 But in practice, some platforms span multiple categories — and **NocoBase is the most complete and architecturally unified among them.**
