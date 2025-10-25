@@ -1,8 +1,8 @@
 {
   "id": 728,
   "title": "14 AI-Powered Low-Code Platforms on GitHub Worth Watching",
-  "title_cn": "AI 低代码工具天花板？GitHub 上最值得关注的 14 个项目盘点",
-  "title_ja": "AIローコードツールの“最高峰”？GitHubで注目すべき14のオープンソースプロジェクトを徹底紹介！",
+  "title_cn": "GitHub 上最值得关注的 14 个开源 AI 低代码工具",
+  "title_ja": "GitHubで注目のオープンソースAIローコードツール14選",
   "description": "We’ve rounded up 14 popular AI-powered low-code platforms on GitHub — covering workflows, agents, system building, and intelligent databases — to help you build smarter and more scalable systems.",
   "description_cn": "盘点 GitHub 上 14 款热门的 AI 低代码平台，涵盖工作流、Agent、系统搭建与智能数据库，助你搭建更智能、更可扩展的系统架构。",
   "description_ja": "GitHubで注目を集めるAI搭載ローコードツール14選。\nワークフロー、エージェント、業務システム構築、スマートデータベースまで網羅し、より賢く拡張可能なシステムづくりを後押しします。",
@@ -478,5 +478,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-25T07:06:33.881Z"
+  "updatedAt": "2025-10-25T14:14:10.595Z"
 }
