@@ -16,7 +16,7 @@
 
 事实是 —— 这条评论已经是**8 个月前**的事了。而现在回头看，这些工具不仅没有“消失”，反而越做越成熟，新的项目也在不断涌现。
 
-就在几天前，我们还整理过💡**[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)**，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。
+就在几天前，我们还整理过💡[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。
 
 这也从侧面证明了：无代码 / 低代码 + AI 并不是昙花一现的泡沫，而是在被稳定地使用、试验和进化。
 
@@ -32,7 +32,7 @@
 
 这句话很难反驳。很多“AI Agent 平台”确实只是把自动化流程接上 LLM，看起来很智能，但本质还是工具。
 
-我们过去也做过不少相关的研究和盘点：**💡[「GitHub 上值得关注的 AI Agent 项目」](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)**、💡[**「优秀的 AI 开源工具」**](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
+我们过去也做过不少相关的研究和盘点：💡[「GitHub 上值得关注的 AI Agent 项目」](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)、💡[「优秀的 AI 开源工具」](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
 
 但是这一次，我们不是在重复讨论“AI 能不能做系统”，而是把视角从无代码自然延伸到了低代码。 我们之前盘点过[无代码 AI 工具](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)，无代码强调“让非技术用户也能用 AI”，所以很多无代码工具确实也能让人“不写代码也能调用模型、生成内容”。
 
@@ -329,7 +329,7 @@ Onlook 的特殊之处在于：它将“AI 生成 UI 界面”作为核心能力
 * Appsmith、ToolJet、Budibase等在构建界面的同时，也支持“按钮触发 → API → 数据写入”这类轻量流程；
 * NocoDB、Teable 这类数据型工具，也开始提供 AI 自动填充、Webhook 触发、规则执行等功能。
 
-但这些工具更多是**在原有能力上补了一点 AI 功能，让体验更完整**，而不是形成完整的流程引擎或系统能力，扩展性和自由度也有限。
+但这些工具更多是在原有能力上补了一点 AI 功能，让体验更完整，而不是形成完整的流程引擎或系统能力，扩展性和自由度也有限。
 
 相比之下，NocoBase 并不只是“覆盖多方向”，而是一个真正的**复合型平台**——它从底层的数据建模开始，延伸到页面生成、权限控制，再通过插件扩展到工作流和 AI，这种架构上的一体化能力，是目前开源低代码工具中少见的。
 
