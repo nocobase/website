@@ -7,8 +7,8 @@
   "description_cn": "盘点 GitHub 上 14 款热门的 AI 低代码平台，涵盖工作流、Agent、系统搭建与智能数据库，助你搭建更智能、更可扩展的系统架构。",
   "description_ja": "GitHubで注目を集めるAI搭載ローコードツール14選。\nワークフロー、エージェント、業務システム構築、スマートデータベースまで網羅し、より賢く拡張可能なシステムづくりを後押しします。",
   "slug": "14-ai-low-code-platforms-github",
-  "publishedAt": "2025-10-25T07:08:11.000Z",
-  "status": "drafted",
+  "publishedAt": "2025-10-26T04:01:11.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
@@ -478,5 +478,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-25T16:44:08.039Z"
+  "updatedAt": "2025-10-26T05:17:51.021Z"
 }
