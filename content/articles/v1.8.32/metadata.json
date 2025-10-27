@@ -1,14 +1,14 @@
 {
   "id": 734,
-  "title": "NocoBase v1.8.32",
-  "title_cn": "NocoBase v1.8.32",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v1.8.32: Methods for Optimizing the Loading of Localized Resources",
+  "title_cn": "NocoBase v1.8.32：优化加载本地化资源的方法",
+  "title_ja": "NocoBase v1.8.32：ローカライズリソースの読み込み方法を最適化し",
   "description": "Release Note of v1.8.32",
   "description_cn": "v1.8.32 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v1.8.32 のリリースノート",
   "slug": "v1.8.32",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-27T12:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,12 +39,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-27T15:20:24.662Z",
+    "updatedAt": "2025-10-27T15:20:24.670Z",
+    "id": 2020,
+    "title": "main v1.8.32",
+    "filename": "main v1.8.32-d5rk8n.jpg",
+    "extname": ".jpg",
+    "size": 90042,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20v1.8.32-d5rk8n.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20v1.8.32-d5rk8n.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-27T09:52:37.956Z"
+  "updatedAt": "2025-10-27T15:24:31.308Z"
 }
