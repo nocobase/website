@@ -202,3 +202,15 @@ NocoBaseを導入してからは状況が一変。直近3件のセキュリテ�
 > —— 創聯雲テクノロジー代表 呉正杰
 
 創聯雲は、この考え方をさまざまな業界の開発チームにも広めていきたいと考えています。
+
+
+**もっと多くのカスタマーストーリー：**
+
+* [数日で完成したAIマルチモーダル開発基盤 — NocoBaseで実現](https://www.nocobase.com/ja/blog/ai-multimodal-platform)
+* [ロシアにおける NocoBase：多様な分野で広がるデジタルソリューション](https://www.nocobase.com/ja/blog/nocobase-in-russia)
+* [NocoBase、ドイツの大学の授業へ](https://www.nocobase.com/ja/blog/university-course)
+* [EDの技術基盤としてのNocoBase：内部システムから商用プロダクトまで](https://www.nocobase.com/ja/blog/ed)
+* [Classact の事例：Kubernetes 上の NocoBase で数十万件データを高速処理](https://www.nocobase.com/ja/blog/classact)
+* [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
+* [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
+* [なぜ日本の大手不動産会社はSalesforceからオープンソースのNocoBaseに乗り換えたのか？](https://www.nocobase.com/ja/blog/century-21)
