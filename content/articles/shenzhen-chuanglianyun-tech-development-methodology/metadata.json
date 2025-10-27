@@ -7,8 +7,8 @@
   "description_cn": "一支 8 人的技术团队，常年服务于食品检测行业——两个月交付三个项目，项目投入人力减半，交付质量仍保持稳定。他们不靠加班，而靠方法论和工具，让效率成为体系。",
   "description_ja": "この8名のチームは長年、食品検査業界のクライアントにサービスを提供し、わずか2か月で3件のプロジェクトを完遂しました。通常の人員の半分で、品質を一切妥協することなく達成したのです。",
   "slug": "shenzhen-chuanglianyun-tech-development-methodology",
-  "publishedAt": "2025-10-27T02:17:43.432Z",
-  "status": "drafted",
+  "publishedAt": "2025-10-27T02:50:43.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-27T02:44:41.574Z"
+  "updatedAt": "2025-10-27T02:52:06.247Z"
 }
