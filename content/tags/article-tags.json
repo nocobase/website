@@ -4638,5 +4638,25 @@
     "title_cn": null,
     "title_ja": null,
     "updatedById": 22
+  },
+  {
+    "createdAt": "2025-10-27T02:41:25.567Z",
+    "updatedAt": "2025-10-27T02:41:25.567Z",
+    "createdById": 22,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 238,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 236,
+    "title": "Software Delivery",
+    "title_cn": null,
+    "title_ja": null,
+    "updatedById": 22
   }
 ]
