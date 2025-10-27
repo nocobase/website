@@ -162,3 +162,15 @@ App 团队直接根据接口文档进行并行开发，无需等待后端联调�
 > “小团队并不意味着小产出，只要方法对，八个人也能做出八十人的成果。”  —— 吴正杰，创联云科技负责人
 
 这也是创联云希望传递给更多垂直行业开发团队的信念。
+
+
+**更多 NocoBase 的用户故事：**
+
+* [华数传媒用 NocoBase 快速搭建 AI 多模态研发平台 ](https://www.nocobase.com/cn/blog/ai-multimodal-platform)
+* [俄罗斯合作伙伴 Mobx，用 NocoBase 交付多场景方案 ](https://www.nocobase.com/cn/blog/nocobase-in-russia)
+* [NocoBase 走进德国大学课堂](https://www.nocobase.com/cn/blog/university-course)
+* [NocoBase 如何成为 ED 的技术底座，支撑内部系统到商业化产品？](https://www.nocobase.com/cn/blog/ed)
+* [数十万条数据秒级响应——Classact 在 Kubernetes 上的 NocoBase 应用实践](https://www.nocobase.com/cn/blog/classact)
+* [年产量 18.5 亿，伯恩光学背后的数字敏捷工厂](https://www.nocobase.com/cn/blog/bielcrystal)
+* [卓正医疗如何用 NocoBase 搭建“家庭医生式”服务体系？](https://www.nocobase.com/cn/blog/distinct-healthcare)
+* [日本房产中介龙头为何放弃 Salesforce，转向开源平台 NocoBase？](https://www.nocobase.com/cn/blog/century-21)
