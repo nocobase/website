@@ -180,3 +180,15 @@ That's the true competitive edge of a small team.
 > “A small team doesn't mean small output — with the right approach, eight people can achieve what eighty would.”  — **Wu Zhengjie, Head of Chuanglianyun Tech**
 
 This is the belief Chuanglianyun hopes to share with more development teams across different industries.
+
+
+**More Customer Stories:**
+
+* [Built an AI Multimodal R&D Platform in Days — with NocoBase ](https://www.nocobase.com/en/blog/ai-multimodal-platform)
+* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/en/blog/nocobase-in-russia)
+* [NocoBase Enters German University Classrooms](https://www.nocobase.com/en/blog/university-course)
+* [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
+* [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
+* [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
+* [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
+* [What made Japan’s leading real estate firm switch from Salesforce to open-source NocoBase?](https://www.nocobase.com/en/blog/century-21)
