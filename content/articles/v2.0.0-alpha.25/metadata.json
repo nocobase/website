@@ -1,14 +1,14 @@
 {
   "id": 736,
-  "title": "NocoBase v2.0.0-alpha.25",
-  "title_cn": "NocoBase v2.0.0-alpha.25",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v2.0.0-alpha.25: Optimized AI coding experience",
+  "title_cn": "NocoBase v2.0.0-alpha.25：优化 AI 编程体验",
+  "title_ja": "NocoBase v2.0.0-alpha.25：AIプログラミング体験を最適化",
   "description": "Release Note of v2.0.0-alpha.25",
   "description_cn": "v2.0.0-alpha.25 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v2.0.0-alpha.25 のリリースノート",
   "slug": "v2.0.0-alpha.25",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-10-29T14:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-29T14:50:00.149Z",
+        "updatedAt": "2025-10-29T14:50:00.149Z",
+        "articles_id": 736,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-10-29T14:46:15.265Z",
+    "updatedAt": "2025-10-29T14:46:15.276Z",
+    "id": 2021,
+    "title": "developv2.0.0-alpha.25",
+    "filename": "developv2.0.0-alpha.25-ku15h4.jpg",
+    "extname": ".jpg",
+    "size": 81289,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/developv2.0.0-alpha.25-ku15h4.jpg",
+    "preview": "https://static-docs.nocobase.com/developv2.0.0-alpha.25-ku15h4.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-29T11:24:36.909Z"
+  "updatedAt": "2025-10-29T14:50:00.128Z"
 }
