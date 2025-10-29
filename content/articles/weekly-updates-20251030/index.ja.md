@@ -12,172 +12,180 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.8.31](https://www.nocobase.com/ja/blog/v1.8.31)
+### [v1.8.33](https://www.nocobase.com/ja/blog/v1.8.33)
 
-*リリース日：2025-10-17*
+*リリース日：2025-10-29*
+
+### 🚀 機能改善
+
+* **[server]** Gatewayレイヤーのログを追加しました（[#7683](https://github.com/nocobase/nocobase/pull/7683)）by @2013xile
 
 ### 🐛 不具合修正
 
-* **[database]**`$in` オペレーターの値が `null` の場合に発生するエラーを修正（[#7610](https://github.com/nocobase/nocobase/pull/7610)）@mytharcher
+* **[database]** MySQLのJSONカラムに対するデフォルト値同期処理をスキップするようにしました（[#7696](https://github.com/nocobase/nocobase/pull/7696)）by @2013xile
+* **[client]**
+  * モーダル内の iframe ブロックで連動ルールが動作しない問題を修正しました（[#7694](https://github.com/nocobase/nocobase/pull/7694)）by @katherinehhh
+  * 操作パネル内のQRコードスキャン機能で連動ルールを設定できない問題を修正しました（[#7693](https://github.com/nocobase/nocobase/pull/7693)）by @katherinehhh
+* **[ワークフロー]** サービス分割モードにおいて、ワークフローのメモリ待機キューが不適切に処理され、一部ワークフローが実行されない問題を修正しました（[#7692](https://github.com/nocobase/nocobase/pull/7692)）by @mytharcher
+
+### [v1.8.32](https://www.nocobase.com/ja/blog/v1.8.32)
+
+*リリース日：2025-10-27*
+
+### 🚀 機能改善
+
+* **[server]** ローカライズリソースの読み込み方法を最適化し、イベントループのブロッキングを回避しました（[#7653](https://github.com/nocobase/nocobase/pull/7653)）by @2013xile
+* **[cache]** ブルームフィルターのクローンによるパフォーマンス低下を防止しました（[#7652](https://github.com/nocobase/nocobase/pull/7652)）by @2013xile
+* **[操作：レコードのインポート]** ヘッダーが見つからない場合のエラーメッセージを改善しました（[#7656](https://github.com/nocobase/nocobase/pull/7656)）by @mytharcher
+
+### 🐛 不具合修正
+
+* **[client]**
+  * フィルター内の日付フィールドをクリアした際に発生するエラーを修正しました（[#7632](https://github.com/nocobase/nocobase/pull/7632)）by @katherinehhh
+  * フィールド名が改行される際に単語が分断される問題を修正しました（[#7647](https://github.com/nocobase/nocobase/pull/7647)）by @katherinehhh
+  * 編集モーダル内のサブテーブルのデフォルト値が反映されない問題を修正しました（[#7631](https://github.com/nocobase/nocobase/pull/7631)）by @katherinehhh
+* **[データフィールド：中国行政区画]** 市と区の名称が同じ場合にインポートできない問題を修正しました（[#7673](https://github.com/nocobase/nocobase/pull/7673)）by @2013xile
+* **[ワークフロー]**
+  * 分岐を有効にしたノードを削除後、保持された分岐内の最初のノードのkeyが新しい値に変わってしまう問題を修正しました（[#7665](https://github.com/nocobase/nocobase/pull/7665)）by @mytharcher
+  * アプリ停止時にログ出力でエラーが発生する問題を修正しました（[#7639](https://github.com/nocobase/nocobase/pull/7639)）by @mytharcher
+* **[ファイルマネージャー]**`.msg` ファイルが正常にアップロードできない問題を修正しました（[#7662](https://github.com/nocobase/nocobase/pull/7662)）by @mytharcher
+* **[データソース：メインデータベース]** 逆リレーションフィールド作成後、複数ノード間でメタデータが同期されない問題を修正しました（[#7628](https://github.com/nocobase/nocobase/pull/7628)）by @mytharcher
 * **[ワークフロー：承認]**
-  * 承認送信後にデータベースエラーが起きた際、トランザクションが正常にロールバックされずタイムアウトする不具合を修正 @mytharcher
-  * 承認フォーム送信時、一部の変数が正しく解釈されない不具合を修正 @mytharcher
-
-### [v1.8.30](https://www.nocobase.com/ja/blog/v1.8.30)
-
-*リリース日：2025-10-16*
-
-### 🐛 不具合修正
-
-* **[クライアント]** タブアイコン設定のポップアップが他の要素に隠れる問題を修正（[#7607](https://github.com/nocobase/nocobase/pull/7607)）by @zhangzhonghe
+  * 承認完了通知のステータス文言が正しく翻訳されない問題を修正し、ユーザーが言語設定をしていない場合はシステムのデフォルト言語を使用するようにしました by @mytharcher
+  * 追加承認後にToDo数が更新されない問題を修正しました by @mytharcher
 
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v1.9.0-beta.13](https://www.nocobase.com/ja/blog/v1.9.0-beta.13)
+### [v1.9.0-beta.15](https://www.nocobase.com/ja/blog/v1.9.0-beta.15)
 
-*リリース日：2025-10-22*
+*リリース日：2025-10-25*
+
+不具合修正
+
+* **[Redis メッセージキューアダプター]** 起動後にサブスクライブしたチャンネルを正しく受信できない問題を修正しました by @mytharcher
+
+### [v1.9.0-beta.14](https://www.nocobase.com/ja/blog/v1.9.0-beta.14)
+
+*リリース日：2025-10-25*
+
+### 🎉 新機能
+
+* **[ワークフロー：承認]** 承認トリガーで申請番号（承認番号）の変数が使用できるようになりました by @mytharcher
 
 ### 🚀 機能改善
 
-* **[client]** フロントエンドで `mime` パッケージを使用し、ファイルのMIMEタイプをより正確に判定できるようにしました（[#7551](https://github.com/nocobase/nocobase/pull/7551)）@mytharcher
-* **[データソース：メインDB]** フィールド検証エラーのローカライズ処理を見直し、エラーハンドリング用プラグイン側で対応するよう改善しました（[#7582](https://github.com/nocobase/nocobase/pull/7582)）@2013xile
-* **[ワークフロー]** ノード削除時に「ブランチを残す」オプションを追加しました（[#7571](https://github.com/nocobase/nocobase/pull/7571)）@mytharcher
-* **[ワークフロー：承認]** コア変更に対応するため、分岐設定をリファクタリングしました @mytharcher
+* **[server]** ローカライズリソースの読み込み処理を最適化し、イベントループをブロックしないよう改善しました（[#7653](https://github.com/nocobase/nocobase/pull/7653)) by @2013xile
+* **[cache]** ブルームフィルターをcloneする際に発生するパフォーマンス低下を防止しました（[#7652](https://github.com/nocobase/nocobase/pull/7652)) by @2013xile
+* **[操作：レコードインポート]** ヘッダーが見つからない場合のエラーメッセージを分かりやすく改善しました（[#7656](https://github.com/nocobase/nocobase/pull/7656)) by @mytharcher
 
 ### 🐛 不具合修正
 
-* **[client]**
-  * フィルターで日付フィールドをクリアした際に発生するエラーを修正（[#7632](https://github.com/nocobase/nocobase/pull/7632)）@katherinehhh
-  * 編集ダイアログでサブテーブルの初期値が反映されない問題を修正（[#7631](https://github.com/nocobase/nocobase/pull/7631)）@katherinehhh
-  * 画像プレビューで回転と拡大を同時に行うと表示が崩れる問題を修正（[#7573](https://github.com/nocobase/nocobase/pull/7573)）@mytharcher
-  * タブのアイコン設定ポップアップが隠れてしまう問題を修正（[#7607](https://github.com/nocobase/nocobase/pull/7607)）@zhangzhonghe
-* **[database]**`$in` 演算子の値が `null` の場合に発生するエラーを修正（[#7610](https://github.com/nocobase/nocobase/pull/7610)）@mytharcher
-* **[データソース：メインDB]** 逆リレーション作成後に複数ノードでメタデータが同期されない問題を修正（[#7628](https://github.com/nocobase/nocobase/pull/7628)）@mytharcher
+* **[client]** フィールド名が改行時に途中で切れる問題を修正しました（[#7647](https://github.com/nocobase/nocobase/pull/7647)) by @katherinehhh
+* **[ワークフロー]** アプリ停止時にログ出力でエラーが発生する問題を修正しました（[#7639](https://github.com/nocobase/nocobase/pull/7639)) by @mytharcher
 * **[ワークフロー：承認]**
-  * アプリ未インストール時にマイグレーションでテーブルが見つからず発生するエラーを修正 @mytharcher
-  * hooksをスキップした際にSnowflake IDが生成されない問題を修正 @mytharcher
-* **[認証：LDAP]** 非ASCII文字を含むDNでADログインに失敗する問題を修正 @2013xile
+  * 承認送信後にDBエラーが発生した際、トランザクションが正しくロールバックされずタイムアウトになる問題を修正しました by @mytharcher
+  * 加署後、未処理件数（ToDo）が更新されない問題を修正しました by @mytharcher
+  * 承認フォーム送信時に一部の変数が正しく展開されない問題を修正しました by @mytharcher
+* **[メール管理]** 同期エラーを適切に処理するよう対応しました by @jiannx
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v2.0.0-alpha.19](https://www.nocobase.com/ja/blog/v2.0.0-alpha.19)
+### [v2.0.0-alpha.25](https://www.nocobase.com/ja/blog/v2.0.0-alpha.25)
 
-*リリース日：2025-10-21*
+*リリース日：2025-10-29*
+
+### 🚀 機能改善
+
+* **[server]** Gatewayレイヤーのログを追加しました（[#7683](https://github.com/nocobase/nocobase/pull/7683)）by @2013xile
+* **[flow-engine]** flow step 内でコンテキスト変数を定義できるようになりました（[#7674](https://github.com/nocobase/nocobase/pull/7674)）by @gchust
+* **[データ可視化]**
+  * 「クエリを実行」をクリックしてからチャートオプションを設定するよう案内メッセージを追加しました（[#7685](https://github.com/nocobase/nocobase/pull/7685)）by @heziqiang
+  * チャート設定パネルの共通プレビューボタンをクリックすると、チャートデータが自動更新されるようになりました（[#7678](https://github.com/nocobase/nocobase/pull/7678)）by @heziqiang
+* **[AIスタッフ]** AIによるコードレビュー・診断・修復を含むAIプログラミング体験を改善しました（[#7679](https://github.com/nocobase/nocobase/pull/7679)）by @cgyrock
+* **[データソース管理]** フィールドタイプとinterface列の順序を調整し、変更時に確認ダイアログを追加しました（[#7680](https://github.com/nocobase/nocobase/pull/7680)）by @2013xile
+* **[ワークフロー]** レコード更新操作ボタンに関連ワークフロー設定項目を補完しました（[#7668](https://github.com/nocobase/nocobase/pull/7668)）by @mytharcher
+* **[マルチアプリ管理（非推奨）]** app supervisor を改善しました（[#7661](https://github.com/nocobase/nocobase/pull/7661)）by @chenos
 
 ### 🐛 不具合修正
 
 * **[client]**
-  * ポップアップ内でタブを切り替えた後、二重ポップアップを開いてすべて閉じた際に、URLが正しく更新されない問題を修正しました（[#7630](https://github.com/nocobase/nocobase/pull/7630)) by @gchust
-  * 編集ダイアログ内のサブテーブルでデフォルト値が反映されない問題を修正しました（[#7631](https://github.com/nocobase/nocobase/pull/7631)) by @katherinehhh
-  * フィルターで日付をクリアするとエラーになる問題を修正しました（[#7632](https://github.com/nocobase/nocobase/pull/7632)) by @katherinehhh
-* **[マルチアプリ管理（廃止済み）]** 旧マルチアプリ管理が無効化できない不具合を修正しました（[#7633](https://github.com/nocobase/nocobase/pull/7633)) by @jiannx
+  * フィールドが読み取り専用モードの場合にデフォルト値を設定できない問題を修正し、編集不可でもスムーズに設定できるようになりました（[#7689](https://github.com/nocobase/nocobase/pull/7689)）by @gchust
+  * サブフォームの連動ルールに関する既知の問題を修正しました（[#7698](https://github.com/nocobase/nocobase/pull/7698)）by @zhangzhonghe
+  * フィルターフォーム内のJSブロックフィールドが読み込まれない問題を修正しました（[#7690](https://github.com/nocobase/nocobase/pull/7690)）by @gchust
+* **[flow-engine]** モーダル内で編集フォームの関連フィールドが誤ったレコードコンテキストを選択する問題を修正しました（[#7675](https://github.com/nocobase/nocobase/pull/7675)）by @gchust
+* **[ワークフロー：手動処理ノード]** ワークフローを停止した際、ToDoセンターから手動処理タスクが消える問題を修正しました（[#7687](https://github.com/nocobase/nocobase/pull/7687)）by @mytharcher
+* **[AIスタッフ]** APIリソースを含むブロック選択時に対応データを正しく取得できない問題を修正しました（[#7688](https://github.com/nocobase/nocobase/pull/7688)）by @cgyrock
+* **[ワークフロー]** 分岐を有効にしたノード削除後、残った分岐内の最初のノードのkeyが新しい値に変更される問題を修正しました（[#7665](https://github.com/nocobase/nocobase/pull/7665)）by @mytharcher
+* **[データフィールド：中国行政区画]** 市と区の名称が同じ場合にデータをインポートできない問題を修正しました（[#7673](https://github.com/nocobase/nocobase/pull/7673)）by @2013xile
+* **[ファイルマネージャー]**`.msg` ファイルが正常にアップロードできない問題を修正しました（[#7662](https://github.com/nocobase/nocobase/pull/7662)）by @mytharcher
+* **[フロントエンドフローエンジン]** 連動ルール内で変数代入が正しく解析されない問題を修正しました（[#7684](https://github.com/nocobase/nocobase/pull/7684)）by @gchust
+* **[データ可視化]** チャート初期化時に `sql:runById` APIを使用してデータを取得するよう修正しました（[#7677](https://github.com/nocobase/nocobase/pull/7677)）by @heziqiang
+* **[ワークフロー：承認]** 承認完了通知のステータス文言翻訳が不正確な問題を修正し、ユーザーが言語設定をしていない場合はシステムのデフォルト言語を使用するようにしました by @mytharcher
 
-### [v2.0.0-alpha.17](https://www.nocobase.com/ja/blog/v2.0.0-alpha.17)
+### [v2.0.0-alpha.24](https://www.nocobase.com/ja/blog/v2.0.0-alpha.24)
 
-*リリース日：2025-10-21*
-
-### 🎉 新機能
-
-* **[client]** テーブル行クリックイベントに対応し、行をクリックした際に任意の処理を実行できるようになりました（[#7622](https://github.com/nocobase/nocobase/pull/7622)）@zhangzhonghe
-* **[ワークフロー：承認]** 承認トリガーで申請書番号（承認ドキュメント番号）の変数が利用可能になりました @mytharcher
-
-### 🐛 不具合修正
-
-* **[flow-engine]** antdコンポーネントの翻訳が反映されない問題を修正（[#7621](https://github.com/nocobase/nocobase/pull/7621)）@zhangzhonghe
-* **[データソース：メインDB]** 逆リレーションフィールド作成後に複数ノードでメタデータが同期されない問題を修正（[#7628](https://github.com/nocobase/nocobase/pull/7628)）@mytharcher
-* **[plugin-demo-platform]** デモ環境でアプリを自動終了できるように対応 @jiannx
-* **[マルチアプリ]**
-  * マルチアプリのデータ移行時にhooksが発火しない問題を修正 @jiannx
-  * マルチアプリのプロキシ機能でキャッシュをサポート @jiannx
-
-### [v2.0.0-alpha.16](https://www.nocobase.com/ja/blog/v2.0.0-alpha.16)
-
-*リリース日：2025-10-20*
+*リリース日：2025-10-27*
 
 ### 🎉 新機能
 
-* **[plugin-form-drafts]** フォームの下書き保存機能を追加 by @chenos
+* **[フロントエンドフローエンジン]** SQL記述時に LiquidJS テンプレート文字列の使用をサポートしました（[#7667](https://github.com/nocobase/nocobase/pull/7667)）by @2013xile
 
-### 🐛 不具合修正
+### [v2.0.0-alpha.22](https://www.nocobase.com/ja/blog/v2.0.0-alpha.22)
 
-* **[flow-engine]** 引用ブロックで現在のビューに関連する変数が取得できない問題を修正（[#7620](https://github.com/nocobase/nocobase/pull/7620)）by @gchust
-* **[client]** usePluginのコンテキストが未設定の場合に発生するエラーを修正（[#7627](https://github.com/nocobase/nocobase/pull/7627)）by @chenos
-
-### [v2.0.0-alpha.15](https://www.nocobase.com/ja/blog/v2.0.0-alpha.15)
-
-*リリース日：2025-10-20*
-
-### 🚀 機能改善
-
-* **[クライアント]** JSフィールドモデルがリレーションフィールドをサポート（[#7618](https://github.com/nocobase/nocobase/pull/7618)）@gchust
-* **[AI エージェント]**
-  * OpenAI LLM プロバイダーをリファクタリングし、Completions API と Chat Completions API をそれぞれサポートする2つの独立したプロバイダーに分割（[#7615](https://github.com/nocobase/nocobase/pull/7615)）@cgyrock
-  * 新しい LLM プロバイダー Ollama を追加（[#7612](https://github.com/nocobase/nocobase/pull/7612)）@ReLaMi96
-
-### 🐛 不具合修正
-
-* **[ワークフロー：承認]**
-  * 追加承認者を設定した後、未処理タスク数が更新されない問題を修正 @mytharcher
-  * 承認送信後にデータベースエラーが発生した際、トランザクションがロールバックされずタイムアウトする問題を修正 @mytharcher
-
-### [v2.0.0-alpha.14](https://www.nocobase.com/ja/blog/v2.0.0-alpha.14)
-
-*リリース日：2025-10-17*
-
-### 🚀 機能改善
-
-* **[AI 従業員]** AI によるコード生成機能を強化（[#7614](https://github.com/nocobase/nocobase/pull/7614)）@cgyrock
-* **[データソース：主データベース]** フィールド検証エラーメッセージのローカライズロジックをリファクタリングし、エラー処理プラグインで統一（[#7582](https://github.com/nocobase/nocobase/pull/7582)）@2013xile
-
-### 🐛 不具合修正
-
-* **[database]**
-  * `runSQL` で SQL を実行する前に `search_path` を設定するよう修正（[#7611](https://github.com/nocobase/nocobase/pull/7611)）@2013xile
-  * `$in` オペレーターの値が `null` の場合に発生するエラーを修正（[#7610](https://github.com/nocobase/nocobase/pull/7610)）@mytharcher
-* **[クライアント]** タブのアイコン設定ポップアップが他の要素に隠れる問題を修正（[#7607](https://github.com/nocobase/nocobase/pull/7607)）@zhangzhonghe
-* **[ワークフロー：承認]** 承認フォーム送信時に一部の変数が正しく解析されない問題を修正 @mytharcher
-
-### [v2.0.0-alpha.13](https://www.nocobase.com/ja/blog/v2.0.0-alpha.13)
-
-*リリース日：2025-10-16*
+*リリース日：2025-10-25*
 
 ### 🎉 新機能
 
-* **[ブロック：参照]** 実験的な「参照ブロック」プラグインを追加し、既存のブロックを参照または複製して再利用できるようになりました。（[#7584](https://github.com/nocobase/nocobase/pull/7584)）by @gchust
+* **[client]** 2.0版のMarkdownブロックを追加しました（[#7613](https://github.com/nocobase/nocobase/pull/7613)）by @katherinehhh
+* **[データソース管理]**
+  * メインデータソースでメインデータベースのテーブル読み込みとフィールドのinterface変更に対応しました（[#7118](https://github.com/nocobase/nocobase/pull/7118)）by @aaaaaajie
+  * メインデータソースでメインデータベースのテーブル読み込みとフィールドのinterface変更に対応しました（[#7118](https://github.com/nocobase/nocobase/pull/7118)）by @aaaaaajie
+* **[履歴]** 履歴ブロックを新たに追加しました by @2013xile
 
 ### 🐛 不具合修正
 
-* **[データビジュアライゼーション]** イベント登録がタイムアウトした場合にグラフが表示されない問題を修正（[#7608](https://github.com/nocobase/nocobase/pull/7608)）by @heziqiang
+* **[flow-engine]** FlowModelでカスタムflow actionが設定できない問題を修正し、正常に設定できるようになりました（[#7666](https://github.com/nocobase/nocobase/pull/7666)）by @gchust
+* **[Redis メッセージキューアダプター]** 起動後にサブスクライブしたチャンネルを正しく受信できない問題を修正しました by @mytharcher
 
-### [v2.0.0-alpha.10](https://www.nocobase.com/ja/blog/v2.0.0-alpha.10)
+### [v2.0.0-alpha.21](https://www.nocobase.com/ja/blog/v2.0.0-alpha.21)
 
-*リリース日：2025-10-15*
+*リリース日：2025-10-25*
 
 ### 🚀 機能改善
 
-* **[データ可視化]** データ可視化プラグインを VI 2.0 に更新し、不具合の修正と UI の改善を実施（[#7597](https://github.com/nocobase/nocobase/pull/7597)）by @heziqiang
+* **[cache]** ブルームフィルターをcloneした際に発生するパフォーマンス低下を防止しました（[#7652](https://github.com/nocobase/nocobase/pull/7652)) by @2013xile
+* **[server]** ローカライズリソースの読み込み処理を見直し、イベントループのブロックを回避しました（[#7653](https://github.com/nocobase/nocobase/pull/7653)) by @2013xile
+* **[操作：レコードインポート]** ヘッダーが見つからない場合のエラーメッセージをよりわかりやすく改善しました（[#7656](https://github.com/nocobase/nocobase/pull/7656)) by @mytharcher
 
 ### 🐛 不具合修正
 
-* **[ワークフロー：承認]** フックをスキップした際に Snowflake ID が生成されない問題を修正 by @mytharcher
+* **[client]** フィールド名の折り返し表示で単語が途中で切れてしまう問題を修正しました（[#7647](https://github.com/nocobase/nocobase/pull/7647)) by @katherinehhh
+* **[データ可視化]** チャートのSQLクエリ内で変数が誤って自動的に解析される問題を修正しました（[#7642](https://github.com/nocobase/nocobase/pull/7642)) by @heziqiang
+* **[ワークフロー]** アプリ停止時にログ出力でエラーが発生する問題を修正しました（[#7639](https://github.com/nocobase/nocobase/pull/7639)) by @mytharcher
 
-### [v2.0.0-alpha.9](https://www.nocobase.com/ja/blog/v2.0.0-alpha.9)
+### [v2.0.0-alpha.20](https://www.nocobase.com/ja/blog/v2.0.0-alpha.20)
 
-*リリース日：2025-10-15*
+*リリース日：2025-10-23*
 
 ### 🎉 新機能
 
-* **[クライアント]** カスタム変数をサポート ([#7585](https://github.com/nocobase/nocobase/pull/7585)) by @zhangzhonghe
+* **[client]** サブフォームに連動ルールを設定できるようになりました（[#7640](https://github.com/nocobase/nocobase/pull/7640)）by @zhangzhonghe
+* **[ブロック：リスト]** 新たに2.0版のリストブロックを追加しました（[#7574](https://github.com/nocobase/nocobase/pull/7574)）by @katherinehhh
+* **[データ可視化]** 環形チャート（ドーナツグラフ）を新しく追加しました（[#7629](https://github.com/nocobase/nocobase/pull/7629)）by @heziqiang
+* **[ブロック：操作パネル]** 2.0版の操作パネルブロックを追加しました（[#7594](https://github.com/nocobase/nocobase/pull/7594)）by @katherinehhh
+* **[ブロック：グリッドカード]** 2.0版グリッドカードブロックを追加しました（[#7579](https://github.com/nocobase/nocobase/pull/7579)）by @katherinehhh
 
 ### 🚀 機能改善
 
-* **[AIアシスタント]** モバイルレイアウトでチャットボックスに最小化ボタンを追加 ([#7595](https://github.com/nocobase/nocobase/pull/7595)) by @cgyrock
+* **[flow-engine]** URLクエリに `skipRunJs=true` を追加することで、runjsフローのステップをスキップできるようになりました（[#7638](https://github.com/nocobase/nocobase/pull/7638)）by @gchust
 
 ### 🐛 不具合修正
 
-* **[サーバー]** コピー時に参照フィールドの field.targetKey 値を保持 ([#7599](https://github.com/nocobase/nocobase/pull/7599)) by @chenos
-* **[AIアシスタント]** モバイルレイアウトでのダイアログ表示の不具合を修正 ([#7591](https://github.com/nocobase/nocobase/pull/7591)) by @cgyrock
+* **[flow-engine]** JSコードエディタでコピー＆ペーストしたコード断片がエラーになる問題を修正しました（[#7641](https://github.com/nocobase/nocobase/pull/7641)）by @gchust
+* **[フロントエンドフローエンジン]** 親ポップアップ内のレコード変数が正しく解析されない問題を修正しました（[#7637](https://github.com/nocobase/nocobase/pull/7637)）by @gchust
+* **[データ可視化]** チャートのデータリクエスト時に `orders` パラメータが欠落する問題を修正しました（[#7636](https://github.com/nocobase/nocobase/pull/7636)）by @heziqiang
+* **[メール管理]** 同期時の例外を適切に捕捉するよう対応しました by @jiannx
