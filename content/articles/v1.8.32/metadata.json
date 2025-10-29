@@ -37,7 +37,34 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-10-29T10:01:07.060Z",
+        "updatedAt": "2025-10-29T10:01:07.060Z",
+        "articles_id": 734,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
   "cover": {
     "createdAt": "2025-10-27T15:20:24.662Z",
@@ -62,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-27T15:24:31.308Z"
+  "updatedAt": "2025-10-29T10:01:07.047Z"
 }
