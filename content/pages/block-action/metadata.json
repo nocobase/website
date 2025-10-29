@@ -1,0 +1,17 @@
+{
+  "id": 11,
+  "title": "Block & Action",
+  "title_cn": "区块和操作",
+  "title_ja": "Block & Action",
+  "description": "Blocks are the visual presentation units of data (such as tables, forms, charts, calendars, etc.);<br>\nActions are the ways users interact with data (such as query, create, edit, import, etc.).<br>\nThey are decoupled from data sources, allowing flexible combinations to build any complex page.",
+  "description_cn": "区块是数据的可视化呈现单元（如表格、表单、图表、日历等）；<br>\n操作是用户与数据交互的方式（如查询、新增、编辑、导入等）。<br>\n它们与数据源解耦，可灵活组合，构建出任何复杂页面。",
+  "description_ja": "Blocks are the visual presentation units of data (such as tables, forms, charts, calendars, etc.);<br>\nActions are the ways users interact with data (such as query, create, edit, import, etc.).<br>\nThey are decoupled from data sources, allowing flexible combinations to build any complex page.",
+  "keywords": null,
+  "keywords_cn": null,
+  "keywords_ja": null,
+  "slug": "block-action",
+  "createdAt": "2025-10-29T23:56:13.277Z",
+  "updatedAt": "2025-10-29T23:56:13.277Z",
+  "createdById": 1,
+  "updatedById": 1
+}
