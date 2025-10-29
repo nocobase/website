@@ -2193,6 +2193,9 @@ p {
   left: 0;
   text-align: center;
 }
+.highlight-video .play-icon {
+  top: 28%;
+}
 .play-icon i {
   height: 75px;
   -webkit-text-stroke: 2px #2f55d4;
@@ -2212,6 +2215,9 @@ p {
   iframe {
     width: auto !important;
   }
+  .highlight-video .play-icon {
+  top: 18%;
+}
 }
 /*********************************/
 /*     Features & Services       */
@@ -3692,19 +3698,22 @@ p {
     background-position: 90000%;
   }
 }
-.home-video {
+.home-video, .highlight-video {
   position: relative;
   z-index: 1;
 }
-.home-video img {
+.home-video img, .highlight-video img {
   position: relative;
   top: 60px;
   z-index: 0;
 }
-.home-video .bg-overlay {
+.home-video .bg-overlay, .highlight-video .bg-overlay {
   position: absolute; 
   top: 60px; 
   opacity: 0.5;
+}
+.highlight-video img, .highlight-video .bg-overlay {
+  top: 0;
 }
 @media (min-width: 768px) {
   .home-video.onepage-hero {
@@ -4018,7 +4027,11 @@ p {
   }
 }
 @media (max-width: 767px) {
-  .bg-home, .bg-half-170, .bg-half-260, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
+  .bg-half-170, .bg-half-260, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
+    padding: 150px 0 80px;
+    height: auto;
+  }
+  .bg-home {
     padding: 150px 0 0;
     height: auto;
   }
@@ -5812,6 +5825,9 @@ html[dir=rtl] .tns-visually-hidden {
 @media (max-width: 768px) {
   .section {
     padding: 60px 0;
+  }
+  #section-3-steps {
+    margin-top: 0!important;
   }
 }
 
