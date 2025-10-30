@@ -3,12 +3,12 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes: Expose the `approvalId` variable for use from approval triggers, and more.",
-  "description_cn": "本周更新包括：审批触发器中开放审批单据编号变量以供使用等。",
-  "description_ja": "今週の更新内容は以下の通りです：承認トリガーで申請番号（承認番号）の変数が使用できるようになりました",
+  "description": "This week's update includes: Expose the `approvalId` variable for use from approval triggers, introduces new charts and additional block types, and more.",
+  "description_cn": "本周更新包括：审批触发器中开放审批单据编号变量以供使用，新增图表与多类区块等。",
+  "description_ja": "今週の更新内容は以下の通りです：チャート機能と複数タイプのブロックを新たに追加，承認トリガーで申請番号（承認番号）の変数が使用できるようになりました",
   "slug": "weekly-updates-20251030",
-  "publishedAt": "2025-10-30T00:01:38.000Z",
-  "status": "drafted",
+  "publishedAt": "2025-10-30T02:19:38.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-29T15:12:29.916Z"
+  "updatedAt": "2025-10-30T02:22:06.080Z"
 }
