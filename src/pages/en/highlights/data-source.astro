@@ -1,9 +1,9 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import Layout from "../../layouts/Layout.astro";
-import { getPage } from "../../utils";
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
 
-const page = await getPage("highlights-data-source");
+const page = await getPage("data-source");
 
 const title = page.title;
 const description = page.description;
