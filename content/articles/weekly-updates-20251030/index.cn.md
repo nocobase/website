@@ -127,7 +127,7 @@
   - 筛选表单中 JS 区块的字段无法被加载 ([#7690](https://github.com/nocobase/nocobase/pull/7690)) by @gchust
 - **[flow-engine]** 弹窗里编辑表单关联字段的数据范围中的当前弹窗记录上下文选择不正确 ([#7675](https://github.com/nocobase/nocobase/pull/7675)) by @gchust
 - **[工作流：人工处理节点]** 修复工作流停用后人工处理任务从待办中心消失的问题 ([#7687](https://github.com/nocobase/nocobase/pull/7687)) by @mytharcher
-- **[AI 员工]** 修复了在选择包含API资源的区块时未正确获取对应数据的问题。 ([#7688](https://github.com/nocobase/nocobase/pull/7688)) by @cgyrock
+- **[AI 员工]** 修复了在选择包含 API 资源的区块时未正确获取对应数据的问题。 ([#7688](https://github.com/nocobase/nocobase/pull/7688)) by @cgyrock
 - **[工作流]** 修复开启分支的节点删除后，保留的分支内部第一个节点的 key 被改为新值的问题 ([#7665](https://github.com/nocobase/nocobase/pull/7665)) by @mytharcher
 - **[数据表字段：中国行政区划]** 城市和县区相同时，无法导入数据 ([#7673](https://github.com/nocobase/nocobase/pull/7673)) by @2013xile
 - **[文件管理器]** 修复 `.msg` 文件无法正常上传的问题 ([#7662](https://github.com/nocobase/nocobase/pull/7662)) by @mytharcher
