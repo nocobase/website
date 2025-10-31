@@ -4,7 +4,7 @@
 
 在 Reddit 上，这类讨论几乎从未间断。
 
-![1-jynjqp.PNG](https://static-docs.nocobase.com/1-jynjqp.PNG)
+![1Reddit.PNG](https://static-docs.nocobase.com/1-jynjqp.PNG)
 
 > “Every time I try to add user authentication with roles and permissions, things fall apart. The logic seems straightforward, but the execution just breaks down, especially once I start layering role-based access.”
 
@@ -16,7 +16,7 @@
 
 在 r/nocode 的讨论区，有人提到：
 
-![2-cdafla.PNG](https://static-docs.nocobase.com/2-cdafla.PNG)
+![nocode.PNG](https://static-docs.nocobase.com/2-cdafla.PNG)
 
 > “Budibase says it’s open-source but user limits apply. Appsmith says granular access control is only in the paid plan. ”
 
@@ -56,11 +56,11 @@
 
 ## NocoBase
 
-🔗 官网：[https://www.nocobase.com](https://www.nocobase.com)
+🔗 官网：[https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
 📘 **官方文档**：[https://docs-cn.nocobase.com/handbook/ui/actions/permission](https://docs-cn.nocobase.com/handbook/ui/actions/permission)
 
-![3-y4vcqt.png](https://static-docs.nocobase.com/3-y4vcqt.png)
+![NocoBase.png](https://static-docs.nocobase.com/3-y4vcqt.png)
 
 * **权限粒度**：**★★★★★ 字段级、条件级、视图级、动作级、API 级全面覆盖**。
 * **特性**：支持基于角色的多层权限管理，可对不同资源类型灵活设定访问范围；支持字段级与条件级过滤，还能在视图和动作层绑定权限逻辑。
@@ -68,7 +68,7 @@
 * **扩展性**：基于插件体系，可扩展策略逻辑、引入外部认证（如 OAuth、SSO、LDAP），并支持二次开发。企业可自定义复杂访问规则或结合多系统统一身份管理。
 * **用户评价**：在 NocoBase 的官方视频评论区中，有用户反馈它的 RBAC （基于角色的权限控制）功能非常强大，同时整体成本也相对可控。
 
-![33-k8bhzc.png](https://static-docs.nocobase.com/33-k8bhzc.png)
+![NocoBaseRBAC.png](https://static-docs.nocobase.com/33-k8bhzc.png)
 
 
 ---
@@ -79,7 +79,7 @@
 
 📘 **官方文档**：[https://docs.appsmith.com/advanced-concepts/granular-access-control](https://docs.appsmith.com/advanced-concepts/granular-access-control)
 
-![4-d9xcwy.png](https://static-docs.nocobase.com/4-d9xcwy.png)
+![Appsmith.png](https://static-docs.nocobase.com/4-d9xcwy.png)
 
 * **权限粒度**：★★★★☆ 可控制到应用、页面、查询与数据源层级；企业版还支持更细的属性级规则。
 * **特性**：内置 Granular Access Control，结合角色继承体系与自定义权限字段。支持团队协作、多人编辑与审批工作流权限绑定。
@@ -87,7 +87,7 @@
 * **扩展性**：支持 OAuth、SAML、OpenID 等身份管理协议；可通过 REST API 与外部权限系统对接。
 * **用户评价**：某些用户认为免费版缺少更精细的用户权限，[官方指出涉及高级特性（如属性级访问）在企业版中才可用。](https://community.appsmith.com/solution/can-i-restrict-user-viewing-one-page-application)
 
-![41-pqd1on.png](https://static-docs.nocobase.com/41-pqd1on.png)
+![Appsmith2.png](https://static-docs.nocobase.com/41-pqd1on.png)![Appsmith3.png](https://static-docs.nocobase.com/42-3wns84.png)
 
 ---
 
@@ -97,7 +97,7 @@
 
 📘 **官方文档**：[https://docs.budibase.com/changelog/rbac](https://docs.budibase.com/changelog/rbac)
 
-![5-93g198.png](https://static-docs.nocobase.com/5-93g198.png)
+![Budibase.png](https://static-docs.nocobase.com/5-93g198.png)
 
 * **权限粒度**：★★★★ 支持表、视图、页面层级控制，部分字段和条件逻辑需要自定义。
 * **特性**：内置 Role-Based Access Control 模块，可为角色配置访问权限、可见性与操作范围，支持动态数据过滤与多角色组合策略。
@@ -105,7 +105,7 @@
 * **扩展性**：提供 REST API 与 Webhook，可集成第三方认证服务或内部网关，支持自动化角色同步。
 * **用户评价**：[ Budibase 的官方 GitHub 讨论](https://github.com/budibase/budibase/discussions/13411)里，用户普遍认可其“功能完整且开源”，特别是自托管部署和内置的 RBAC 模块。但同时也有人指出，免费版本虽然标称开源，但对自托管用户存在人数限制（最多 20 用户），与官方宣传的“完全开放”存在落差。
 
-![51-6snnrx.png](https://static-docs.nocobase.com/51-6snnrx.png)
+![Budibase2.png](https://static-docs.nocobase.com/51-6snnrx.png)
 
 ## Mendix
 
@@ -113,7 +113,7 @@
 
 **📘官方文档**：[https://docs.mendix.com/refguide9/user-roles/](https://docs.mendix.com/refguide9/user-roles/)
 
-![6-zb8c0p.png](https://static-docs.nocobase.com/6-zb8c0p.png)
+![Mendix.png](https://static-docs.nocobase.com/6-zb8c0p.png)
 
 * **权限粒度**：★★★★ 支持模块、数据实体、页面和微流程层级的访问控制。
 * **特性**：通过 Module Roles → User Roles 双层映射实现细分权限，可针对页面组件、按钮、数据源独立设定访问规则。
@@ -121,7 +121,7 @@
 * **扩展性**：可使用 Java 动作或微流程扩展逻辑，并与外部身份管理系统（如 Azure AD、Okta）集成。
 * **用户评价**：[G2 里有开发者表示权限模型完善](https://www.g2.com/products/mendix/reviews/mendix-review-11260772)开发效率高、能快速响应业务需求，但是复杂实现会拖慢性能、授权费用偏高，而在做复杂系统集成时“低代码空间”显得受限。
 
-![61-jyhmqr.png](https://static-docs.nocobase.com/61-jyhmqr.png)
+![Mendix2.png](https://static-docs.nocobase.com/61-jyhmqr.png)
 
 ## Retool 
 
@@ -129,7 +129,7 @@
 
 📘 **官方文档**：[https://docs.retool.com/permissions/quickstart](https://docs.retool.com/permissions/quickstart)
 
-![7-1iv36b.png](https://static-docs.nocobase.com/7-1iv36b.png)
+![Retool.png](https://static-docs.nocobase.com/7-1iv36b.png)
 
 * **权限粒度**：★★★★ 支持应用、资源、查询层级；企业版提供行级安全（Row-Level Security）与审计日志。
 * **特性**：通过 Permission Groups 管理角色与资源访问规则，适用于多环境治理；可定义资源隔离与访问审批流程。
@@ -137,7 +137,7 @@
 * **扩展性**：支持 SSO、SCIM、SAML 等企业级身份系统集成，可结合 API 进行二次开发。
 * **用户评价**：[在 Retool 社区中](https://community.retool.com/t/best-practices-for-permission-management/55709)，有用户提到：“虽然后端把权限组做了，但对多页应用想做更细粒度的控制（比如不同用户能编辑的数据）还得靠自定义用户属性，这在规模放大后会变得难以管理。”
 
-![71-h3a9wy.png](https://static-docs.nocobase.com/71-h3a9wy.png)
+![Retool2.png](https://static-docs.nocobase.com/71-h3a9wy.png)
 
 💡 阅读更多：[2025 年最佳的 Retool 开源替代方案 ](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)
 
@@ -149,7 +149,7 @@
 
 📘**官方文档**：[https://success.outsystems.com/documentation/11/user\_management/user\_roles](https://success.outsystems.com/documentation/11/user\_management/user\_roles)
 
-![8-t6bf6d.png](https://static-docs.nocobase.com/8-t6bf6d.png)![81-82gsuu.png](https://static-docs.nocobase.com/81-82gsuu.png)
+![OutSystems.png](https://static-docs.nocobase.com/8-t6bf6d.png)![OutSystems2.png](https://static-docs.nocobase.com/81-82gsuu.png)
 
 * **权限粒度**：★★★★ 支持屏幕、模块、数据实体和 UI 控件级访问；可在逻辑层实现额外条件控制。
 * **特性**：内置完整的角色管理与访问控制机制，可针对应用模块、屏幕、动作及数据对象独立授权。
@@ -157,7 +157,7 @@
 * **扩展性**：提供多种安全扩展接口，可结合自定义逻辑函数或集成外部身份系统（如 Azure AD、Okta、LDAP）。
 * **用户评价**： 用户[在 G2 中](https://www.g2.com/products/outsystems/reviews?page=4#reviews)评论 OutSystems 在外部用户身份与权限管理上提供了相对清晰、独立的可视化配置界面，避免了传统应用中“代码混杂”的复杂性。
 
-![82-73bank.png](https://static-docs.nocobase.com/82-73bank.png)
+![OutSystems3.png](https://static-docs.nocobase.com/82-73bank.png)
 
 ## 结语
 
