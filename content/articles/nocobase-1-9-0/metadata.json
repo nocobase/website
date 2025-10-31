@@ -8,7 +8,7 @@
   "description_ja": "データ検証とタスクスケジューリング機能を強化。サービスの分離化と安全な終了に対応し、システム全体の安定性と柔軟性をさらに高めました。",
   "slug": "nocobase-1-9-0",
   "publishedAt": "2025-10-31T12:00:00.000Z",
-  "status": "published",
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -271,5 +271,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-31T14:13:22.689Z"
+  "updatedAt": "2025-10-31T15:26:10.293Z"
 }
