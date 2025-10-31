@@ -3,11 +3,11 @@
   "title": "Announcing NocoBase v1.9.0",
   "title_cn": "NocoBase v1.9.0 正式版发布",
   "title_ja": "fetch is not defined",
-  "description": null,
-  "description_cn": null,
+  "description": "Enhanced data validation and task scheduling, supporting service decoupling and graceful shutdown to improve overall system stability and flexibility.",
+  "description_cn": "强化数据验证与任务调度，支持服务拆分与优雅停机，全面提升系统稳定性与灵活性",
   "description_ja": "fetch is not defined",
   "slug": "nocobase-1-9-0",
-  "publishedAt": "2025-07-09T02:00:00.000Z",
+  "publishedAt": "2025-10-31T12:00:00.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -255,5 +255,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-31T04:54:42.940Z"
+  "updatedAt": "2025-10-31T06:51:52.910Z"
 }
