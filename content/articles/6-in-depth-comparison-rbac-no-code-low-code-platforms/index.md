@@ -64,8 +64,6 @@ For reference:
 * **Extensibility:** Built on a plugin-based framework, supporting external authentication (OAuth, SSO, LDAP), custom logic extensions, and advanced identity integrations. Enterprises can define complex access policies or connect unified login systems.
 * **User Feedback:** Users in official NocoBase videos highlighted its powerful RBAC features and overall cost efficiency.![NocoBaseRBAC.png](https://static-docs.nocobase.com/33-k8bhzc.png)
 
----
-
 ## **Appsmith**
 
 🔗 Official Site: [https://www.appsmith.com](https://www.appsmith.com)
@@ -79,8 +77,6 @@ For reference:
 * **User Experience:** Clean, intuitive interface for managing users, teams, and resources in one place. Syncs permissions across development, staging, and production environments to enhance collaboration.
 * **Extensibility:** Integrates with OAuth, SAML, and OpenID; supports external access control through REST APIs.
 * **User Feedback:** Some community members note the free version lacks fine-grained control, with advanced features available only [in the enterprise plan](https://community.appsmith.com/solution/can-i-restrict-user-viewing-one-page-application).  ![Appsmith2.png](https://static-docs.nocobase.com/41-pqd1on.png)![Appsmith3.png](https://static-docs.nocobase.com/42-3wns84.png)
-
----
 
 ## **Budibase**
 
@@ -112,8 +108,6 @@ For reference:
 
 ![Mendix2.png](https://static-docs.nocobase.com/61-jyhmqr.png)
 
----
-
 ## **Retool**
 
 🔗 Official Site: [https://retool.com](https://retool.com)
@@ -127,8 +121,6 @@ For reference:
 * **User Experience:** Straightforward admin console, but complex structures require extra governance. Documentation is thorough, ideal for IT-managed setups.
 * **Extensibility:** Supports SSO, SCIM, and SAML integrations and custom APIs for further extensions.
 * **User Feedback:** [A user mentioned](https://community.retool.com/t/best-practices-for-permission-management/55709)，that while permission groups work well, fine-grained control (like per-user data editing) still relies on custom attributes — which can be hard to maintain at scale.![Retool2.png](https://static-docs.nocobase.com/71-h3a9wy.png)💡 *Read more: [The Best Open-Source Alternatives to Retool In 2025](https://www.nocobase.com/en/blog/retool-open-source-alternatives)*
-
----
 
 ## **OutSystems**
 
@@ -145,8 +137,6 @@ For reference:
 * **User Feedback:** [G2 reviewers praised](https://www.g2.com/products/outsystems/reviews?page=4#reviews) its clean, visual interface for external user and permission management — eliminating the messy “code-mix” common in traditional apps.
 
   ![OutSystems3.png](https://static-docs.nocobase.com/82-73bank.png)
-
----
 
 ## **Conclusion**
 
