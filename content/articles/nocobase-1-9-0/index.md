@@ -76,7 +76,6 @@ Manual task blocks now display pending tasks even from disabled workflows and al
 
 ### Workflow Module Optimization
 
-* Added shared components to improve reusability across modules.
 * Optimized query performance in workflow queue execution by introducing separated fields and indexes for faster data retrieval.
 
 ![Workflow Module.png](https://static-docs.nocobase.com/image-5b3byb.png)
