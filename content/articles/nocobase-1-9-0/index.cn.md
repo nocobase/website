@@ -1,26 +1,26 @@
 ## 新特性
 
-### 新增「忘记密码」功能，支持邮箱找回
+### 支持字段验证规则
 
-支持通过邮件找回密码。在「设置 > 用户认证 > 忘记密码」中启用该功能，配置邮件通知渠道，并自定义重置密码邮件内容（支持变量与 HTML 格式）。
+支持为字段配置多种验证规则（如必填、格式、长度、范围、自定义表达式等），在表单提交时自动校验输入数据，确保数据准确性与一致性。验证规则可在字段设置中灵活配置。
 
-![Forgot Password – Email Recovery Supported.gif](https://static-docs.nocobase.com/20250707104631_rec_-ihynhs.gif)
+![Field_validations.gif](https://static-docs.nocobase.com/20251031111521_rec_-6mjzt5.gif)
 
-参考文档：[忘记密码](https://docs-cn.nocobase.com/handbook/auth/user#%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81)
+参考文档：[字段验证](https://docs-cn.nocobase.com/handbook/data-modeling/collection-fields/validation)
 
-### 自定义聚合变量
+### 表格区块支持添加“列设置”
 
-支持创建计数、求和、平均值等统计变量，可用于菜单徽章、页面标签等位置，让界面展示更加直观、信息更丰富。
+表格区块新增“列设置”功能，支持在非编辑状态下调整列的顺序、显隐与固定方式，让数据展示更灵活、更贴合用户需求。
 
-![Custom Aggregation Variables.gif](https://static-docs.nocobase.com/20250707110736_rec_-fzpk98.gif)
+![20251031113318_rec_-5ffltd.gif](https://static-docs.nocobase.com/20251031113318_rec_-5ffltd.gif)
 
-参考文档：[自定义变量](https://docs-cn.nocobase.com/handbook/custom-variables)
-
-### 邮件管理
+### 支持通过环境变量和队列进行异步任务服务拆分
 
 邮件管理模块全面升级，支持邮件删除、批量发送、同步设置及多项体验优化。
 
 ![Email Management.png](https://static-docs.nocobase.com/image-fyxonb.png)
+
+参考文档：[服务拆分](https://docs-cn.nocobase.com/welcome/getting-started/deployment/cluster-mode/services-splitting#%E5%A4%9A%E8%8A%82%E7%82%B9%E5%88%86%E5%88%AB%E5%A4%84%E7%90%86)
 
 ### 数据源
 
