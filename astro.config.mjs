@@ -35,6 +35,13 @@ export default defineConfig({
   vite: {
     define: {
       'import.meta.env.USE_LOCAL_CONTENT': JSON.stringify(process.env.USE_LOCAL_CONTENT)
+    },
+    optimizeDeps: {
+      include: ['cytoscape'],
+      exclude: ['mermaid']
+    },
+    ssr: {
+      noExternal: ['mermaid', 'cytoscape']
     }
   }
 });

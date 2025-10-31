@@ -10,7 +10,7 @@ const description = page.description;
 const keywords = page.keywords;
 ---
 
-<Layout title="Plugin bundle" description={description} keywords={keywords}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title}>
     <span slot="description" set:html={description}></span>
   </PageHeader>
