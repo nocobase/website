@@ -3,9 +3,9 @@
   "title": "6 In-Depth Comparison of RBAC in Enterprise-Grade No-Code/Low-Code Platforms",
   "title_cn": "6 大企业级无代码低代码平台 RBAC 权限体系深度对比",
   "title_ja": "6 大企業向けノーコード・ローコードプラットフォームのRBAC権限体系詳細比較",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article compares the RBAC systems of six leading no-code/low-code platforms — NocoBase, Retool, OutSystems, Appsmith, Budibase, and Mendix — analyzing their permission granularity, flexibility, and user experience to help you choose the right platform for your access control needs.",
+  "description_cn": "本文对比了六款主流无代码／低代码平台（NocoBase、Retool、OutSystems、Appsmith、Budibase、Mendix）的 RBAC 权限体系，从粒度、灵活性与使用体验三方面深入解析，帮助您快速了解各平台在权限控制上的差异与适用场景。",
+  "description_ja": "本記事では、NocoBase、Retool、OutSystems、Appsmith、Budibase、Mendix の6つのノーコード／ローコードプラットフォームを比較し、RBAC（ロールベースアクセス制御）の粒度・柔軟性・操作性を解説。各ツールの特徴を理解し、自分に合った権限管理を選ぶ手助けになります。",
   "slug": "6-in-depth-comparison-rbac-no-code-low-code-platforms",
   "publishedAt": "2025-10-31T07:00:01.000Z",
   "status": "drafted",
@@ -35,5 +35,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-31T07:05:36.237Z"
+  "updatedAt": "2025-10-31T08:52:56.839Z"
 }
