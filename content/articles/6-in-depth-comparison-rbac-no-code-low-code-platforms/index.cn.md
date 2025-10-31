@@ -58,7 +58,7 @@
 
 🔗 官网：[https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
-📘 **官方文档**：[https://docs-cn.nocobase.com/handbook/ui/actions/permission](https://docs-cn.nocobase.com/handbook/ui/actions/permission)
+📘 官方文档：[https://docs-cn.nocobase.com/handbook/ui/actions/permission](https://docs-cn.nocobase.com/handbook/ui/actions/permission)
 
 ![NocoBase.png](https://static-docs.nocobase.com/3-y4vcqt.png)
 
@@ -71,13 +71,11 @@
 ![NocoBaseRBAC.png](https://static-docs.nocobase.com/33-k8bhzc.png)
 
 
----
-
 ## Appsmith
 
 🔗 官网：[https://www.appsmith.com](https://www.appsmith.com)
 
-📘 **官方文档**：[https://docs.appsmith.com/advanced-concepts/granular-access-control](https://docs.appsmith.com/advanced-concepts/granular-access-control)
+📘 官方文档：[https://docs.appsmith.com/advanced-concepts/granular-access-control](https://docs.appsmith.com/advanced-concepts/granular-access-control)
 
 ![Appsmith.png](https://static-docs.nocobase.com/4-d9xcwy.png)
 
@@ -89,13 +87,11 @@
 
 ![Appsmith2.png](https://static-docs.nocobase.com/41-pqd1on.png)![Appsmith3.png](https://static-docs.nocobase.com/42-3wns84.png)
 
----
-
 ## Budibase
 
 🔗 官网：[https://www.budibase.com](https://www.budibase.com)
 
-📘 **官方文档**：[https://docs.budibase.com/changelog/rbac](https://docs.budibase.com/changelog/rbac)
+📘 官方文档：[https://docs.budibase.com/changelog/rbac](https://docs.budibase.com/changelog/rbac)
 
 ![Budibase.png](https://static-docs.nocobase.com/5-93g198.png)
 
@@ -111,7 +107,7 @@
 
 🔗 官网：[https://www.mendix.com](https://www.mendix.com)
 
-**📘官方文档**：[https://docs.mendix.com/refguide9/user-roles/](https://docs.mendix.com/refguide9/user-roles/)
+📘官方文档：[https://docs.mendix.com/refguide9/user-roles/](https://docs.mendix.com/refguide9/user-roles/)
 
 ![Mendix.png](https://static-docs.nocobase.com/6-zb8c0p.png)
 
@@ -127,7 +123,7 @@
 
 🔗 官网：[https://retool.com](https://retool.com)
 
-📘 **官方文档**：[https://docs.retool.com/permissions/quickstart](https://docs.retool.com/permissions/quickstart)
+📘 官方文档：[https://docs.retool.com/permissions/quickstart](https://docs.retool.com/permissions/quickstart)
 
 ![Retool.png](https://static-docs.nocobase.com/7-1iv36b.png)
 
@@ -139,15 +135,13 @@
 
 ![Retool2.png](https://static-docs.nocobase.com/71-h3a9wy.png)
 
-💡 阅读更多：[2025 年最佳的 Retool 开源替代方案 ](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)
-
----
+💡 *阅读更多：[2025 年最佳的 Retool 开源替代方案 ](https://www.nocobase.com/cn/blog/retool-open-source-alternatives)*
 
 ## OutSystems
 
 🔗 官网：[https://www.outsystems.com](https://www.outsystems.com)
 
-📘**官方文档**：[https://success.outsystems.com/documentation/11/user\_management/user\_roles](https://success.outsystems.com/documentation/11/user\_management/user\_roles)
+📘官方文档：[https://success.outsystems.com/documentation/11/user\_management/user\_roles](https://success.outsystems.com/documentation/11/user\_management/user\_roles)
 
 ![OutSystems.png](https://static-docs.nocobase.com/8-t6bf6d.png)![OutSystems2.png](https://static-docs.nocobase.com/81-82gsuu.png)
 
