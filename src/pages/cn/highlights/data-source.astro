@@ -3,7 +3,7 @@ import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getPage } from "../../../utils";
 
-const page = await getPage("block-action");
+const page = await getPage("data-source");
 
 const title = page.title;
 const description = page.description;
@@ -20,14 +20,14 @@ const keywords = page.keywords;
       <div class="row align-items-top ">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Interface and Data <span class="text-primary">Decoupling</span>: Freely Combine Blocks and Actions</h5>
-            <p class="text-muted">Unlike no-code products that start from page design, NocoBase is data-driven — data structure comes first, then the interface. This means the same dataset can provide different interfaces and actions for different use cases.</p>
+            <h5 class="mb-4">Connect <span class="text-primary">multiple data sources</span> and manage enterprise data in one place</h5>
+            <p class="text-muted">Data is often scattered across CRM, ERP, finance, and inventory systems. By connecting them all to NocoBase, multi-source data can be integrated and queried on a single interface, reducing system switching, breaking down data silos, and significantly lowering maintenance costs.</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <video controls class="rounded shadow">
-              <source src="https://static-docs.nocobase.com/BA-2.1-EN.mp4" type="video/mp4">
+              <source src="https://static-docs.nocobase.com/DS-1.1-CN.mp4" type="video/mp4">
             </video>
           </div>
         </div><!--end col-->
@@ -35,14 +35,14 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">One <span class="text-primary">Filter Block</span> for Multiple Data Blocks Event Flows</h5>
-            <p class="text-muted">When a page contains multiple data blocks, such as tables or charts, a single filter block can be used to filter all of them simultaneously.</p>
+            <h5 class="mb-4">Connect different data sources on the frontend with <span class="text-primary">Event Flows</span></h5>
+            <p class="text-muted">When a page includes blocks from multiple data sources, event flows can be used to orchestrate interactions between them. This enables data linkage across sources directly on the frontend.<br>For example, when viewing a customer in the CRM, you can simultaneously query that customer’s order records from the ERP system.</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <video controls class="rounded shadow">
-              <source src="https://static-docs.nocobase.com/BA-2.2-EN.mp4" type="video/mp4">
+              <source src="https://static-docs.nocobase.com/DS-1.2-CN.mp4" type="video/mp4">
             </video>
           </div>
         </div><!--end col-->
@@ -50,14 +50,14 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Use <span class="text-primary">Event Flows</span> to Link Multiple Blocks and ActionsWorkflows</h5>
-            <p class="text-muted">When a page contains multiple blocks and actions, we can use event flows to orchestrate their interaction logic. For example, when viewing a customer in the CRM, we can simultaneously query that customer’s order records from the ERP system.</p>
+            <h5 class="mb-4">Connect different data sources on the backend with <span class="text-primary">Workflows</span></h5>
+            <p class="text-muted">When a NocoBase application includes multiple data sources, workflows can be used to orchestrate their logic on the backend, enabling business automation across systems.<br>For example, when a new order is created in the ERP, the corresponding customer’s level in the CRM should be upgraded to “Paid”.</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <video controls class="rounded shadow">
-              <source src="https://static-docs.nocobase.com/BA-2.3-EN.mp4" type="video/mp4">
+              <source src="https://static-docs.nocobase.com/DS-1.3-CN.mp4" type="video/mp4">
             </video>
           </div>
         </div><!--end col-->
