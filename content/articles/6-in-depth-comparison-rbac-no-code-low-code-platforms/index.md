@@ -151,3 +151,14 @@ Each no-code and low-code platform takes a different approach to RBAC — but al
 * 🟠 **Retool:** Secure and user-friendly, though per-user control across large apps still needs manual logic.
 
 If this helped you, feel free to share it with others exploring **no-code, low-code, or RBAC** topics!
+
+
+**Related reading:**
+
+* [14 AI-Powered Low-Code Platforms on GitHub Worth Watching](https://www.nocobase.com/en/blog/14-ai-low-code-platforms-github)
+* [Top 11 Open Source No-Code AI Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)
+* [Top 18 Open Source AI Agent Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects)
+* [Top 20 Open Source AI Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-projects)
+* [Top 8 Open Source MCP Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-mcp-projects)
+* [Top 7 Open Source Web Applications with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-web-applications)
+* [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
