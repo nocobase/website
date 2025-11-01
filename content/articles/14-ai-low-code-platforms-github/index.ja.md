@@ -28,7 +28,7 @@
 
 確かにその通りで、多くの「AI Agentプラットフォーム」はLLMを組み込んだ自動化ツールにすぎません。
 
-これまでにも、**💡[「注目すべきAI Agentプロジェクト」](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)や💡[「優秀なAIオープンソースツール」](https://www.nocobase.com/ja/blog/github-open-source-ai-projects)**などを紹介してきましたが、今回はテーマを「ノーコードかどうか」ではなく、そこから自然にローコードへと広げています。
+これまでにも、💡[「注目すべきAI Agentプロジェクト」](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)や💡[「優秀なAIオープンソースツール」](https://www.nocobase.com/ja/blog/github-open-source-ai-projects)などを紹介してきましたが、今回はテーマを「ノーコードかどうか」ではなく、そこから自然にローコードへと広げています。
 
 ノーコードは「コードを書かずにAIを使えること」に重きを置いていますが、ローコードはビジネスを理解し、少し技術知識もある人を対象にしており、**データモデリング、プロセス設計、権限管理、プラグイン拡張**など、よりシステム構築に近い機能を重視しています。
 
@@ -76,8 +76,8 @@ CRM、承認ワークフロー、ERP、管理ダッシュボード、データ�
 ### **NocoBase**
 
 ⭐️ Stars: 17k
-公式サイト：[https://www.nocobase.com/](https://www.nocobase.com/?utm_source=chatgpt.com)
-GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+公式サイト：[https://www.nocobase.com/](https://www.nocobase.com/)
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 ![noocobase.png](https://static-docs.nocobase.com/noocobase-auxpuu.png)
 
@@ -90,8 +90,8 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 ### **ToolJet**
 
 ⭐️ Stars: 36.8k
-公式サイト：[https://www.tooljet.ai/](https://www.tooljet.ai/?utm_source=chatgpt.com)
-GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet?utm_source=chatgpt.com)
+公式サイト：[https://www.tooljet.ai/](https://www.tooljet.ai/)
+GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 
 ![ToolJet.png](https://static-docs.nocobase.com/ToolJet-7balkk.png)
 
@@ -104,8 +104,8 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 ### **Appsmith**
 
 ⭐️ Stars: 38.3k
-公式サイト：[https://www.appsmith.com/](https://www.appsmith.com/?utm_source=chatgpt.com)
-GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith?utm_source=chatgpt.com)
+公式サイト：[https://www.appsmith.com/](https://www.appsmith.com/)
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-ycvv0e.png)
 
@@ -118,8 +118,8 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 ### **Budibase**
 
 ⭐️ Stars: 27.2k
-公式サイト：[https://budibase.com/](https://budibase.com/?utm_source=chatgpt.com)
-GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase?utm_source=chatgpt.com)
+公式サイト：[https://budibase.com/](https://budibase.com)
+GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-gjjun3.png)
 
@@ -150,8 +150,8 @@ GitHub：[https://github.com/refinedev/refine](https://github.com/refinedev/refi
 ### **n8n**
 
 ⭐️ Stars: 151k
-公式サイト：[https://n8n.io/](https://n8n.io/?utm_source=chatgpt.com)
-GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n?utm_source=chatgpt.com)
+公式サイト：[https://n8n.io/](https://n8n.io/)
+GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n)
 
 ![n8n.png](https://static-docs.nocobase.com/n8n-8riwih.png)
 
@@ -164,8 +164,8 @@ GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n?utm_sourc
 ### **Dify**
 
 ⭐️ Stars: 117k
-公式サイト：[https://dify.ai/](https://dify.ai/?utm_source=chatgpt.com)
-GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify?utm_source=chatgpt.com)
+公式サイト：[https://dify.ai/](https://dify.ai/)
+GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify)
 
 ![Dify.png](https://static-docs.nocobase.com/Dify-gk2be6.png)
 
@@ -179,7 +179,7 @@ GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify
 
 ⭐️ Stars: 46k
 公式サイト：[https://flowiseai.com/](https://flowiseai.com/)
-GitHub：[https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise?utm_source=chatgpt.com)
+GitHub：[https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)
 
 ![Flowise.png](https://static-docs.nocobase.com/Flowise-2vawwu.png)
 
@@ -221,7 +221,7 @@ GitHub：[https://github.com/node-red/node-red](https://github.com/node-red/node
 
 ⭐️ Stars: 17.2k
 公式サイト：[https://www.sim.ai/](https://www.sim.ai/)
-GitHub：[https://github.com/simstudioai/sim](https://github.com/simstudioai/sim?utm_source=chatgpt.com)
+GitHub：[https://github.com/simstudioai/sim](https://github.com/simstudioai/sim)
 
 ![Sim.png](https://static-docs.nocobase.com/Sim-sygfqw.png)
 
@@ -240,8 +240,8 @@ AI の役割は、データの生成・補完・検索・分析であり、複�
 ### **NocoDB**
 
 ⭐️ Stars: 58.4k
-公式サイト：[https://nocodb.com/](https://nocodb.com/?utm_source=chatgpt.com)
-GitHub：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb?utm_source=chatgpt.com)
+公式サイト：[https://nocodb.com/](https://nocodb.com/)
+GitHub：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb)
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-qk45qn.png)
 
@@ -255,7 +255,7 @@ GitHub：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb?utm
 
 ⭐️ Stars: 20k
 公式サイト：[https://teable.ai/](https://teable.ai/)
-GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable?utm_source=chatgpt.com)
+GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable)
 
 ![Teable.png](https://static-docs.nocobase.com/Teable-n74cv7.png)
 
@@ -270,8 +270,8 @@ GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable
 分類の中で、どれにも完全には当てはまらないツールもあります。その代表が **Onlook** です。
 
 ⭐️ Stars: 22.9k
-公式サイト：[https://onlook.com/](https://onlook.com/?utm_source=chatgpt.com)
-GitHub：[https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook?utm_source=chatgpt.com)
+公式サイト：[https://onlook.com/](https://onlook.com/)
+GitHub：[https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook)
 
 ![Onlook.png](https://static-docs.nocobase.com/Onlook-bnn4iz.png)
 
