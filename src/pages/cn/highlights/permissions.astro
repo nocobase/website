@@ -10,7 +10,7 @@ const description = page.description;
 const keywords = page.keywords;
 ---
 
-<Layout title={title} description={description} keywords={keywords}>
+<Layout title="Plugin bundle" description={description} keywords={keywords}>
   <PageHeader title={title}>
     <span slot="description" set:html={description}></span>
   </PageHeader>
@@ -20,8 +20,8 @@ const keywords = page.keywords;
       <div class="row align-items-top ">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">System Permission</span> Control</h5>
-            <p class="text-muted">When developing with NocoBase, you can assign different system permissions to different developers, ensuring that each person can only operate on authorized modules.</p>
+            <h5 class="mb-4"><span class="text-primary">系统权限</span>控制</h5>
+            <p class="text-muted">在使用 NocoBase 开发时，可以给不同的开发人员分配不同的系统权限，确保每个人只能操作被授权的模块。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
@@ -35,8 +35,8 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Fine-Grained Control over <span class="text-primary">Row-Level and Field-Level</span> Permissions</h5>
-            <p class="text-muted">NocoBase supports fine-grained control over both row-level and field-level permissions, ensuring that employees can only access and modify data they are authorized to.<br>For example, a salesperson can view and edit information for customers they are responsible for, view but not edit customers handled by others in their department, and cannot see the total order amount of all customers.</p>
+            <h5 class="mb-4">精确控制数据源的<span class="text-primary">字段级与行级</span>权限</h5>
+            <p class="text-muted">NocoBase 支持对数据的行级和字段级权限进行精细控制，确保员工只能访问和修改其被授权的数据。比如销售员可以查看和编辑自己负责的客户的信息，可以查看但不能编辑本部门其他人负责的客户的信息，且不能查看所有客户的订单总金额。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
@@ -50,8 +50,8 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">Multiple Roles</span> and Combined Permissions for a Single User</h5>
-            <p class="text-muted">When a page contains multiple blocks and actions, we can use event flows to orchestrate their interaction logic. For example, when viewing a customer in the CRM, we can simultaneously query that customer's order records from the ERP system.  - In business systems, users often take on multiple roles at the same time. NocoBase supports assigning multiple roles to a single user and provides three permission strategies to meet different needs.</p>
+            <h5 class="mb-4">单个用户拥有多角色<span class="text-primary">权限叠加</span></h5>
+            <p class="text-muted">在业务系统中，用户常常同时承担多种岗位角色。NocoBase 支持为同一用户绑定多个角色，并通过三种权限策略满足不同场景的需求。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
@@ -61,6 +61,8 @@ const keywords = page.keywords;
             </video>
           </div>
         </div><!--end col-->
+      </div><!--end row-->
+      
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->

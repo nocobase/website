@@ -69,7 +69,7 @@
 * 富文本编辑器支持软换行，优化邮件排版体验。
 * 优化邮件列表性能，操作更流畅。
 
-![20251031124117_rec_-qa39pq.gif](https://static-docs.nocobase.com/20251031124117_rec_-qa39pq.gif)
+![20251031234300_rec_-jifryr.gif](https://static-docs.nocobase.com/20251031234300_rec_-jifryr.gif)
 
 ### 工作流模块优化
 

@@ -72,7 +72,7 @@ Manual task blocks now display pending tasks even from disabled workflows and al
 * Rich text editor now supports soft line breaks, improving email formatting experience.
 * Improved email list performance for smoother operations.
 
-![20251031124117_rec_-qa39pq.gif](https://static-docs.nocobase.com/20251031124117_rec_-qa39pq.gif)
+![20251031234300_rec_-jifryr.gif](https://static-docs.nocobase.com/20251031234300_rec_-jifryr.gif)
 
 ### Workflow Module Optimization
 
