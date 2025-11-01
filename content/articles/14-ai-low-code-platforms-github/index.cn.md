@@ -82,9 +82,9 @@
 
 ⭐️ Stars: 17k
 
-官网：[https://www.nocobase.com/](https://www.nocobase.com/?utm_source=chatgpt.com)
+官网：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 ![noocobase.png](https://static-docs.nocobase.com/noocobase-auxpuu.png)
 
@@ -98,9 +98,9 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 ⭐️ Stars: 36.8k
 
-官网：[https://www.tooljet.ai/](https://www.tooljet.ai/?utm_source=chatgpt.com)
+官网：[https://www.tooljet.ai/](https://www.tooljet.ai/)
 
-GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet?utm_source=chatgpt.com)
+GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 
 ![ToolJet.png](https://static-docs.nocobase.com/ToolJet-7balkk.png)
 
@@ -114,9 +114,9 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 ⭐️ Stars: 38.3k
 
-官网：[https://www.appsmith.com/](https://www.appsmith.com/?utm_source=chatgpt.com)
+官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 
-GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith?utm_source=chatgpt.com)
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-ycvv0e.png)
 
@@ -130,9 +130,9 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 ⭐️ Stars: 27.2k
 
-官网：[https://budibase.com/](https://budibase.com/?utm_source=chatgpt.com)
+官网：[https://budibase.com/](https://budibase.com/)
 
-GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase?utm_source=chatgpt.com)
+GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-gjjun3.png)
 
@@ -168,9 +168,9 @@ GitHub：[https://github.com/refinedev/refine](https://github.com/refinedev/refi
 
 ⭐️ Stars: 151k
 
-官网：[https://n8n.io/](https://n8n.io/?utm_source=chatgpt.com)
+官网：[https://n8n.io/](https://n8n.io/)
 
-GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n?utm_source=chatgpt.com)
+GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n)
 
 ![n8n.png](https://static-docs.nocobase.com/n8n-8riwih.png)
 
@@ -184,9 +184,9 @@ GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n?utm_sourc
 
 ⭐️ Stars: 117k
 
-官网：[https://dify.ai/](https://dify.ai/?utm_source=chatgpt.com)
+官网：[https://dify.ai/](https://dify.ai/)
 
-GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify?utm_source=chatgpt.com)
+GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify)
 
 ![Dify.png](https://static-docs.nocobase.com/Dify-gk2be6.png)
 
@@ -202,7 +202,7 @@ GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify
 
 官网：[https://flowiseai.com/](https://flowiseai.com/)
 
-GitHub：[https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise?utm_source=chatgpt.com)
+GitHub：[https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)
 
 ![Flowise.png](https://static-docs.nocobase.com/Flowise-2vawwu.png)
 
@@ -250,7 +250,7 @@ GitHub：[https://github.com/node-red/node-red](https://github.com/node-red/node
 
 官网：[https://www.sim.ai/](https://www.sim.ai/)
 
-GitHub：[https://github.com/simstudioai/sim](https://github.com/simstudioai/sim?utm_source=chatgpt.com)
+GitHub：[https://github.com/simstudioai/sim](https://github.com/simstudioai/sim)
 
 ![Sim.png](https://static-docs.nocobase.com/Sim-sygfqw.png)
 
@@ -288,7 +288,7 @@ GitHub：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb?utm
 
 官网：[https://teable.ai/](https://teable.ai/)
 
-GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable?utm_source=chatgpt.com)
+GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable)
 
 ![Teable.png](https://static-docs.nocobase.com/Teable-n74cv7.png)
 
@@ -304,9 +304,9 @@ GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable
 
 ⭐️ Stars: 22.9k
 
-官网：[https://onlook.com/](https://onlook.com/?utm_source=chatgpt.com)
+官网：[https://onlook.com/](https://onlook.com/)
 
-GitHub：[https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook?utm_source=chatgpt.com)
+GitHub：[https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook)
 
 ![Onlook.png](https://static-docs.nocobase.com/Onlook-bnn4iz.png)
 
