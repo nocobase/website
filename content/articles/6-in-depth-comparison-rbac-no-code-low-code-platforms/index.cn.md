@@ -1,6 +1,6 @@
 ## 引言
 
-在无代码／低代码平台的设计中，**RBAC（Role-Based Access Control，基于角色的访问控制）**几乎是无法回避的话题。 无论是团队协作、数据安全，还是多业务模块的系统治理，只要涉及到不同用户与资源的边界，就离不开角色与权限的设计。 而在实际使用中，开发者和企业用户对 RBAC 的关注度一直都很高，它既是平台安全体系的一部分，也是影响可扩展性与可维护性的关键点。
+在无代码／低代码平台的设计中，RBAC（Role-Based Access Control，基于角色的访问控制）几乎是无法回避的话题。 无论是团队协作、数据安全，还是多业务模块的系统治理，只要涉及到不同用户与资源的边界，就离不开角色与权限的设计。 而在实际使用中，开发者和企业用户对 RBAC 的关注度一直都很高，它既是平台安全体系的一部分，也是影响可扩展性与可维护性的关键点。
 
 在 Reddit 上，这类讨论几乎从未间断。
 
@@ -70,7 +70,6 @@
 
 ![NocoBaseRBAC.png](https://static-docs.nocobase.com/33-k8bhzc.png)
 
-
 ## Appsmith
 
 🔗 官网：[https://www.appsmith.com](https://www.appsmith.com)
@@ -119,7 +118,7 @@
 
 ![Mendix2.png](https://static-docs.nocobase.com/61-jyhmqr.png)
 
-## Retool 
+## Retool
 
 🔗 官网：[https://retool.com](https://retool.com)
 
@@ -166,3 +165,13 @@
 * **🟠 Retool**  界面友好、企业安全做得不错，但要做到多页面、多角色的细粒度控制，还需要自己写逻辑或额外配置。
 
 如果你觉得这篇对你有帮助，也欢迎分享给对无代码、低代码或 RBAC 感兴趣的朋友\~
+
+相关阅读：
+
+* [GitHub 上最值得关注的 14 个开源 AI 低代码工具 ](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)
+* [11 个在 GitHub 上最受欢迎的开源无代码 AI 工具 ](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
+* [GitHub 上 Star 数量前 20 的开源 AI 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
+* [GitHub 上 Star 数量前 8 的开源 MCP 项目](https://www.nocobase.com/cn/blog/github-open-source-mcp-projects)
+* [GitHub 上 Star 数量前 8 的开源 Web 应用项目](https://www.nocobase.com/cn/blog/github-open-source-web-applications)
+* [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)
