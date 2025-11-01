@@ -5,12 +5,12 @@ import { getPage } from "../../../utils";
 
 const page = await getPage("workflow");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
 ---
 
-<Layout title="Plugin bundle" description={description} keywords={keywords}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title}>
     <span slot="description" set:html={description}></span>
   </PageHeader>

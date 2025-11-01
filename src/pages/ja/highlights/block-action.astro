@@ -5,9 +5,9 @@ import { getPage } from "../../../utils";
 
 const page = await getPage("block-action");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ja || page.title;
+const description = page.description_ja || page.description;
+const keywords = page.keywords_ja || page.keywords;
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
