@@ -8,7 +8,7 @@
   "description_ja": "本記事では、NocoBase、Retool、OutSystems、Appsmith、Budibase、Mendix の6つのノーコード／ローコードプラットフォームを比較し、RBAC（ロールベースアクセス制御）の粒度・柔軟性・操作性を解説。各ツールの特徴を理解し、自分に合った権限管理を選ぶ手助けになります。",
   "slug": "6-in-depth-comparison-rbac-no-code-low-code-platforms",
   "publishedAt": "2025-10-31T09:00:01.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -400,5 +400,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-31T09:16:57.469Z"
+  "updatedAt": "2025-11-01T05:24:11.848Z"
 }
