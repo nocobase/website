@@ -10,7 +10,7 @@ const description = page.description;
 const keywords = page.keywords;
 ---
 
-<Layout title={title} description={description} keywords={keywords}>
+<Layout title="Plugin bundle" description={description} keywords={keywords}>
   <PageHeader title={title}>
     <span slot="description" set:html={description}></span>
   </PageHeader>
@@ -20,8 +20,8 @@ const keywords = page.keywords;
       <div class="row align-items-top ">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Connect <span class="text-primary">multiple data sources</span> and manage enterprise data in one place</h5>
-            <p class="text-muted">Data is often scattered across CRM, ERP, finance, and inventory systems. By connecting them all to NocoBase, multi-source data can be integrated and queried on a single interface, reducing system switching, breaking down data silos, and significantly lowering maintenance costs.</p>
+            <h5 class="mb-4">同时连接<span class="text-primary">多个数据源</span>，统一管理企业数据</h5>
+            <p class="text-muted">数据散落在 CRM、ERP、财务与库存等系统。统一接入 NocoBase，多源数据在同一界面被整合与查询，减少跨系统切换，打破系统间隔阂，显著降低维护成本。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
@@ -35,8 +35,8 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Connect different data sources on the frontend with <span class="text-primary">Event Flows</span></h5>
-            <p class="text-muted">When a page includes blocks from multiple data sources, event flows can be used to orchestrate interactions between them. This enables data linkage across sources directly on the frontend.<br>For example, when viewing a customer in the CRM, you can simultaneously query that customer’s order records from the ERP system.</p>
+            <h5 class="mb-4">通过<span class="text-primary">事件流</span>在前端连通不同数据源</h5>
+            <p class="text-muted">当一个页面中有多个数据源的区块时，可以使用事件流来编排他们之间的交互逻辑，在前端实现多个数据源的数据之间发生联动。比如在 CRM 中查看客户时，需要同时从 ERP 中查询出该客户的订单记录。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
@@ -50,8 +50,8 @@ const keywords = page.keywords;
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">Connect different data sources on the backend with <span class="text-primary">Workflows</span></h5>
-            <p class="text-muted">When a NocoBase application includes multiple data sources, workflows can be used to orchestrate their logic on the backend, enabling business automation across systems.<br>For example, when a new order is created in the ERP, the corresponding customer’s level in the CRM should be upgraded to “Paid”.</p>
+            <h5 class="mb-4">通过<span class="text-primary">工作流</span>在后端连通不同数据源</h5>
+            <p class="text-muted">当一个 NocoBase 应用中有多个数据源时，可以使用工作流来编排它们之间的流程逻辑，在后端实现多个数据源之间的业务自动化。比如在 ERP 中新增订单时，需要将 CRM 中该客户的等级提升为 “付费客户”。</p>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
