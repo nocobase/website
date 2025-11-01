@@ -1,20 +1,16 @@
 import { createMarkdownProcessor as coreCreateMarkdownProcessor } from '@astrojs/markdown-remark';
 import rehypeSlug from 'rehype-slug';
 import remarkDirective from 'remark-directive';
-import * as localContent from './local-content';
 import path from 'path';
 import fs from 'fs';
+import sift from 'sift';
 
-// Configuration constants
+// Configuration
 const CONFIG = {
-  baseURL: (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + 'api/',
-  token: import.meta.env.NOCOBASE_TOKEN || process.env.NOCOBASE_TOKEN,
-  useLocalContent: true,
   contentRoot: path.join(process.cwd(), 'content'),
-  cacheTimeout: 5 * 60 * 1000, // 5 minutes
 } as const;
 
-// Common language configuration for easy extension
+// Language configuration
 export const SUPPORTED_LANGUAGES = {
   en: { code: 'en', locale: 'en-US', name: 'English', default: true },
   cn: { code: 'cn', locale: 'zh-CN', name: 'Chinese' },
@@ -24,111 +20,436 @@ export const SUPPORTED_LANGUAGES = {
 
 export const DEFAULT_LANGUAGE = 'en';
 
-// Cache management
+// Simplified cache structure (permanent cache for local content)
 const caches = {
-  articles: new Map<string, { data: any; timestamp: number }>(),
+  articles: new Map<string, any>(),
+  tutorials: new Map<string, any>(),
+  releases: new Map<string, any>(),
+  pages: new Map<string, any>(),
   processor: null as any,
-  lastUpdated: new Map<string, { time: string; timestamp: number }>()
+  directoryCache: new Map<string, string[]>(),
+  categoryTagCache: new Map<string, any>()
 };
 
-// Utility functions
-// For local content mode: permanent cache (always valid)
-// For API mode: time-based cache (5 minutes timeout)
-const isValidCacheEntry = (entry: { timestamp: number }) => 
-  CONFIG.useLocalContent ? true : Date.now() - entry.timestamp < CONFIG.cacheTimeout;
-
-const getCacheKey = (id: string, updatedAt?: string, locale?: string) => 
-  `${id}-${updatedAt || 'latest'}-${locale || DEFAULT_LANGUAGE}`;
-
-// Get content field based on locale
-export function getLocalizedContent(data: any, field: string, locale: string = DEFAULT_LANGUAGE): string {
-  if (locale === DEFAULT_LANGUAGE) {
-    return data[field] || '';
-  }
-  
-  const localizedField = `${field}_${locale}`;
-  return data[localizedField] || data[field] || '';
-}
-
-export function url(path: string): string {
-  if (path.startsWith('https')) {
-    return path;
-  }
-  return (import.meta.env.NOCOBASE_URL || process.env.NOCOBASE_URL) + path;
-}
-
-// Optimized markdown processor creation with caching
+// Markdown processor with caching
 export async function createMarkdownProcessor() {
   if (caches.processor) {
     return caches.processor;
   }
-  
+
   caches.processor = await coreCreateMarkdownProcessor({
     shikiConfig: { theme: 'github-light' },
     syntaxHighlight: 'shiki',
     remarkPlugins: [remarkDirective],
     rehypePlugins: [rehypeSlug]
   });
-  
+
   return caches.processor;
 }
 
 export const processor = await createMarkdownProcessor();
 
-// Generic API fetch function
-async function fetchFromAPI(endpoint: string, params: Record<string, any> = {}): Promise<any> {
-  const searchParams = new URLSearchParams();
-  
-  Object.entries(params).forEach(([key, value]) => {
-    if (Array.isArray(value)) {
-      value.forEach(v => searchParams.append(`${key}[]`, v));
-    } else if (typeof value === 'object') {
-      searchParams.append(key, JSON.stringify(value));
-    } else {
-      searchParams.append(key, value);
-    }
-  });
-  
-  searchParams.append('token', CONFIG.token);
-  
+// File operations
+function readFileOrNull(filePath: string): string | null {
   try {
-    const response = await fetch(`${CONFIG.baseURL}${endpoint}?${searchParams}`);
-    if (!response.ok) {
-      throw new Error(`API request failed: ${response.status}`);
-    }
-    return await response.json();
+    return fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : null;
   } catch (error) {
-    console.error(`Error fetching from API endpoint ${endpoint}:`, error);
-    throw error;
+    console.error(`Error reading file ${filePath}:`, error);
+    return null;
   }
 }
 
-// Get last updated time with caching
-async function getLastUpdatedWithCache(collection: string): Promise<string> {
-  const cacheEntry = caches.lastUpdated.get(collection);
-  if (cacheEntry && isValidCacheEntry(cacheEntry)) {
-    return cacheEntry.time;
+function readJsonFile(filePath: string): any {
+  try {
+    const content = readFileOrNull(filePath);
+    return content ? JSON.parse(content) : null;
+  } catch (error) {
+    console.error(`Error parsing JSON file ${filePath}:`, error);
+    return null;
+  }
+}
+
+// List subdirectories with caching
+function listSubdirectories(dirPath: string): string[] {
+  if (caches.directoryCache.has(dirPath)) {
+    return caches.directoryCache.get(dirPath)!;
   }
 
-  let lastUpdated: string;
-  
-  if (CONFIG.useLocalContent) {
-    lastUpdated = await getLocalLastUpdated(collection);
+  if (!fs.existsSync(dirPath)) {
+    return [];
+  }
+
+  try {
+    const files = fs.readdirSync(dirPath, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+    caches.directoryCache.set(dirPath, files);
+    return files;
+  } catch (error) {
+    console.error(`Error reading directory ${dirPath}:`, error);
+    return [];
+  }
+}
+
+// Extract frontmatter metadata
+async function extractFrontmatter(content: string) {
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n/;
+  const match = content.match(frontmatterRegex);
+
+  if (!match?.[1]) {
+    return { metadata: {}, content };
+  }
+
+  try {
+    const frontmatterStr = match[1];
+    const lines = frontmatterStr.split('\n');
+    const metadata: Record<string, any> = {};
+
+    lines.forEach(line => {
+      const colonIndex = line.indexOf(':');
+      if (colonIndex > 0) {
+        const key = line.substring(0, colonIndex).trim();
+        let value: any = line.substring(colonIndex + 1).trim();
+
+        // Parse arrays
+        if (value.startsWith('[') && value.endsWith(']')) {
+          try {
+            value = JSON.parse(value);
+          } catch (e) {
+            value = value.substring(1, value.length - 1)
+              .split(',')
+              .map((item: string) => item.trim())
+              .filter(Boolean);
+          }
+        }
+
+        metadata[key] = value;
+      }
+    });
+
+    return {
+      metadata,
+      content: content.replace(frontmatterRegex, '')
+    };
+  } catch (error) {
+    console.error('Error parsing frontmatter:', error);
+    return { metadata: {}, content };
+  }
+}
+
+// Custom condition evaluator for unsupported sift operators
+function evaluateCondition(item: any, condition: any): boolean {
+  for (const [key, value] of Object.entries(condition)) {
+    if (key === '$and') {
+      return (value as any[]).every(subCondition => evaluateCondition(item, subCondition));
+    }
+    if (key === '$or') {
+      return (value as any[]).some(subCondition => evaluateCondition(item, subCondition));
+    }
+
+    // Handle nested key paths like 'tags.title'
+    const keys = key.split('.');
+    let currentValue = item;
+    for (const k of keys) {
+      if (currentValue && typeof currentValue === 'object') {
+        currentValue = currentValue[k];
+      } else {
+        currentValue = undefined;
+        break;
+      }
+    }
+
+    if (typeof value === 'object' && value !== null) {
+      for (const [op, expected] of Object.entries(value)) {
+        if (op === '$eq') {
+          if (currentValue !== expected) return false;
+        } else if (op === '$ne') {
+          if (currentValue === expected) return false;
+        } else if (op === '$notIncludes') {
+          if (Array.isArray(currentValue)) {
+            const hasMatch = currentValue.some(tag =>
+              typeof tag === 'object' && tag.title === expected
+            );
+            if (hasMatch) return false;
+          } else if (typeof currentValue === 'string') {
+            if (currentValue.includes(expected as string)) return false;
+          }
+        } else if (op === '$in') {
+          const expectedArray = Array.isArray(expected) ? expected : [expected];
+          if (Array.isArray(currentValue)) {
+            const hasMatch = currentValue.some(val => expectedArray.includes(val));
+            if (!hasMatch) return false;
+          } else {
+            if (!expectedArray.includes(currentValue)) return false;
+          }
+        }
+      }
+    } else {
+      if (currentValue !== value) return false;
+    }
+  }
+  return true;
+}
+
+// Generic content loader with caching
+async function loadContent(
+  slug: string,
+  contentType: 'articles' | 'tutorials' | 'releases' | 'pages',
+  locale = 'en'
+) {
+  if (!slug) return {};
+
+  const cacheKey = `${slug}-${locale}`;
+  const cache = caches[contentType];
+
+  if (cache.has(cacheKey)) {
+    return cache.get(cacheKey);
+  }
+
+  const contentDir = path.join(CONFIG.contentRoot, contentType, slug);
+  if (!fs.existsSync(contentDir)) {
+    return {};
+  }
+
+  // Determine content file based on locale
+  const contentFiles: Record<string, string> = {
+    en: 'index.md',
+    cn: 'index.cn.md',
+    ja: 'index.ja.md',
+    ru: 'index.ru.md'
+  };
+
+  const contentFile = contentFiles[locale] || contentFiles.en;
+  const contentPath = path.join(contentDir, contentFile);
+  const fallbackContentPath = path.join(contentDir, 'index.md');
+
+  // Read content
+  let content = readFileOrNull(contentPath) || readFileOrNull(fallbackContentPath) || '';
+
+  // Read JSON metadata
+  const jsonMetadata = readJsonFile(path.join(contentDir, 'metadata.json')) || {};
+
+  // Extract frontmatter
+  const { metadata: frontMatterMetadata, content: cleanContent } = await extractFrontmatter(content);
+
+  // Merge metadata
+  const metadata = { ...jsonMetadata, ...frontMatterMetadata };
+
+  let result: any;
+
+  if (contentType === 'pages') {
+    // Pages don't need headings
+    const { code } = await processor.render(cleanContent);
+    result = {
+      ...metadata,
+      content: cleanContent,
+      html: code
+    };
   } else {
-    const { data } = await fetchFromAPI(`${collection}:get`, { sort: '-updatedAt' });
-    lastUpdated = data.updatedAt;
+    // Articles, tutorials, releases need headings
+    const { code, metadata: mdMetadata } = await processor.render(cleanContent);
+    const headings: any[] = mdMetadata.headings || [];
+    result = {
+      data: metadata,
+      headings,
+      html: code
+    };
   }
 
-  caches.lastUpdated.set(collection, {
-    time: lastUpdated,
-    timestamp: Date.now()
-  });
-  
-  return lastUpdated;
+  cache.set(cacheKey, result);
+  return result;
 }
 
-// Local content last updated helper
-async function getLocalLastUpdated(collection: string): Promise<string> {
+// Simplified list function with filtering and pagination
+async function listContentItems(
+  contentType: 'articles' | 'tutorials' | 'releases',
+  options: any = {}
+) {
+  const {
+    page = 1,
+    pageSize = 9,
+    sort = ['-publishedAt'],
+    filter = {},
+    hideOnBlog,
+    categorySlug,
+    tagSlug,
+    slug,
+    serialsSlug
+  } = options;
+
+  // Get content directory
+  const contentDir = path.join(CONFIG.contentRoot, contentType);
+  if (!fs.existsSync(contentDir)) {
+    return { data: [], meta: { total: 0, count: 0, pageSize, currentPage: page, totalPages: 0 } };
+  }
+
+  const slugs = listSubdirectories(contentDir);
+
+  // Read all items metadata
+  const items = [];
+
+  for (const itemSlug of slugs) {
+    try {
+      const metadataPath = path.join(contentDir, itemSlug, 'metadata.json');
+      const metadata = readJsonFile(metadataPath);
+
+      if (!metadata?.title) continue;
+
+      // Read content in different languages for articles
+      if (contentType === 'articles') {
+        const languages = ['', '.cn', '.ja', '.ru'];
+        languages.forEach(lang => {
+          const suffix = lang || '';
+          const contentPath = path.join(contentDir, itemSlug, `index${suffix}.md`);
+          const field = lang ? `content${lang.replace('.', '_')}` : 'content';
+
+          if (fs.existsSync(contentPath)) {
+            metadata[field] = fs.readFileSync(contentPath, 'utf-8');
+          }
+        });
+
+        // Fallback to default content
+        ['content_cn', 'content_ja', 'content_ru'].forEach(field => {
+          if (!metadata[field] && metadata.content) {
+            metadata[field] = metadata.content;
+          }
+        });
+      }
+
+      // Ensure tags is always an array
+      if (!Array.isArray(metadata.tags)) {
+        metadata.tags = [];
+      }
+
+      items.push(metadata);
+    } catch (error) {
+      console.error(`Error processing ${contentType} ${itemSlug}:`, error);
+    }
+  }
+
+  // Build filter conditions
+  const filterConditions: any[] = [
+    { status: { $eq: 'published' } }
+  ];
+
+  // Content-specific filters
+  if (contentType === 'articles') {
+    filterConditions.push({ hideOnListPage: { $ne: true } });
+
+    if (hideOnBlog === false) {
+      filterConditions.push({ hideOnBlog: { $ne: true } });
+    }
+    if (tagSlug) {
+      filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
+    }
+    if (categorySlug) {
+      filterConditions.push({ 'category.slug': { $eq: categorySlug } });
+    }
+  }
+
+  if (contentType === 'tutorials') {
+    if (slug) {
+      filterConditions.push({ slug: { $eq: slug } });
+    }
+    if (serialsSlug) {
+      filterConditions.push({
+        'serials.slug': { $eq: serialsSlug },
+        'serials.status': { $eq: 'published' }
+      });
+    }
+  }
+
+  if (contentType === 'releases' && tagSlug) {
+    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
+  }
+
+  // Merge custom filters
+  if (filter && Object.keys(filter).length > 0) {
+    filterConditions.push(...(filter.$and || [filter]));
+  }
+
+  // Apply filters
+  let filteredItems = items;
+  if (filterConditions.length > 0) {
+    const combinedFilter = { $and: filterConditions };
+    const filterStr = JSON.stringify(combinedFilter);
+    const hasUnsupportedOps = filterStr.includes('$notIncludes');
+
+    if (hasUnsupportedOps) {
+      filteredItems = items.filter(item =>
+        filterConditions.every(condition => evaluateCondition(item, condition))
+      );
+    } else {
+      try {
+        const siftFilter = sift(combinedFilter);
+        filteredItems = items.filter(siftFilter);
+      } catch (error) {
+        console.error(`Error applying ${contentType} filter:`, error);
+        filteredItems = items.filter(item => item.status === 'published');
+      }
+    }
+  }
+
+  // Sort items
+  const sortField = sort[0]?.startsWith('-') ? sort[0].substring(1) : sort[0];
+  const isDesc = sort[0]?.startsWith('-');
+
+  if (contentType === 'tutorials' && sortField === 'serialsSort') {
+    filteredItems.sort((a, b) => (a.serialsSort || 0) - (b.serialsSort || 0));
+  } else {
+    filteredItems.sort((a, b) => {
+      if (!a[sortField] && !b[sortField]) return 0;
+      if (!a[sortField]) return isDesc ? -1 : 1;
+      if (!b[sortField]) return isDesc ? 1 : -1;
+
+      const aDate = new Date(a[sortField]).getTime();
+      const bDate = new Date(b[sortField]).getTime();
+
+      return isDesc ? bDate - aDate : aDate - bDate;
+    });
+  }
+
+  // Pagination
+  const startIndex = (page - 1) * pageSize;
+  const paginatedItems = filteredItems.slice(startIndex, startIndex + pageSize);
+
+  return {
+    data: paginatedItems,
+    meta: {
+      total: filteredItems.length,
+      count: filteredItems.length,
+      pageSize,
+      currentPage: page,
+      totalPages: Math.ceil(filteredItems.length / pageSize),
+      totalPage: Math.ceil(filteredItems.length / pageSize)
+    }
+  };
+}
+
+// Task and Plugin functions
+export async function getTaskLastUpdatedAt(): Promise<string> {
+  try {
+    const taskCategoriesFile = path.join(CONFIG.contentRoot, 'tasks', 'task-categories.json');
+    if (fs.existsSync(taskCategoriesFile)) {
+      const data = JSON.parse(fs.readFileSync(taskCategoriesFile, 'utf-8'));
+      if (Array.isArray(data) && data.length > 0) {
+        const latestItem = data.reduce((latest, current) => {
+          const currentTime = new Date(current.updatedAt || 0).getTime();
+          const latestTime = latest ? new Date(latest.updatedAt || 0).getTime() : 0;
+          return currentTime > latestTime ? current : latest;
+        }, null);
+        return latestItem?.updatedAt || new Date().toISOString();
+      }
+    }
+    return new Date().toISOString();
+  } catch (error) {
+    console.error('Error getting task last updated:', error);
+    return new Date().toISOString();
+  }
+}
+
+export async function getLastUpdatedAt(collection: string): Promise<string> {
   try {
     const pathMap: Record<string, string> = {
       articles: path.join(CONFIG.contentRoot, 'articles'),
@@ -139,526 +460,392 @@ async function getLocalLastUpdated(collection: string): Promise<string> {
 
     const filePath = pathMap[collection];
     if (!filePath || !fs.existsSync(filePath)) {
-          return new Date().toISOString();
-      }
-      
+      return new Date().toISOString();
+    }
+
     const stat = fs.statSync(filePath);
-    
+
     if (stat.isDirectory()) {
-      return getDirectoryLastModified(filePath);
+      const files = fs.readdirSync(filePath);
+      let latestTime = 0;
+
+      for (const file of files) {
+        const fullPath = path.join(filePath, file);
+        const stat = fs.statSync(fullPath);
+        if (stat.mtime.getTime() > latestTime) {
+          latestTime = stat.mtime.getTime();
+        }
+      }
+
+      return latestTime ? new Date(latestTime).toISOString() : new Date().toISOString();
     } else {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-      return getLatestUpdatedFromData(data);
+      if (Array.isArray(data) && data.length > 0) {
+        const latestItem = data.reduce((latest, current) => {
+          const currentTime = new Date(current.updatedAt || 0).getTime();
+          const latestTime = latest ? new Date(latest.updatedAt || 0).getTime() : 0;
+          return currentTime > latestTime ? current : latest;
+        }, null);
+        return latestItem?.updatedAt || new Date().toISOString();
+      }
+      return new Date().toISOString();
     }
   } catch (error) {
-    console.error(`Error getting local last updated for ${collection}:`, error);
+    console.error(`Error getting last updated for ${collection}:`, error);
     return new Date().toISOString();
   }
-}
-
-function getDirectoryLastModified(dirPath: string): string {
-  const files = fs.readdirSync(dirPath);
-          let latestTime = 0;
-          
-          for (const file of files) {
-    const fullPath = path.join(dirPath, file);
-            const stat = fs.statSync(fullPath);
-    if (stat.mtime.getTime() > latestTime) {
-      latestTime = stat.mtime.getTime();
-            }
-          }
-          
-          return latestTime ? new Date(latestTime).toISOString() : new Date().toISOString();
-}
-
-function getLatestUpdatedFromData(data: any[]): string {
-  if (!Array.isArray(data) || data.length === 0) {
-    return new Date().toISOString();
-  }
-  
-  const latestItem = data.reduce((latest, current) => {
-    const currentTime = new Date(current.updatedAt || 0).getTime();
-    const latestTime = latest ? new Date(latest.updatedAt || 0).getTime() : 0;
-    return currentTime > latestTime ? current : latest;
-            }, null);
-            
-            return latestItem?.updatedAt || new Date().toISOString();
-          }
-
-// Public API functions with improved caching
-export async function getTaskLastUpdatedAt(): Promise<string> {
-  return getLastUpdatedWithCache('tasks');
-}
-
-export async function getLastUpdatedAt(collection: string): Promise<string> {
-  return getLastUpdatedWithCache(collection);
 }
 
 export async function listTaskCategories() {
-  if (CONFIG.useLocalContent) {
-    try {
-      const taskCategoriesFile = path.join(CONFIG.contentRoot, 'tasks', 'task-categories.json');
-      if (fs.existsSync(taskCategoriesFile)) {
-        return JSON.parse(fs.readFileSync(taskCategoriesFile, 'utf-8'));
-      }
-      return [];
-    } catch (error) {
-      console.error('Error reading task categories:', error);
-      return [];
+  try {
+    const taskCategoriesFile = path.join(CONFIG.contentRoot, 'tasks', 'task-categories.json');
+    if (fs.existsSync(taskCategoriesFile)) {
+      return JSON.parse(fs.readFileSync(taskCategoriesFile, 'utf-8'));
     }
+    return [];
+  } catch (error) {
+    console.error('Error reading task categories:', error);
+    return [];
   }
-
-  const { data } = await fetchFromAPI('taskCategories:list', {
-    pageSize: 200,
-    appends: 'tasks(sort=sort),tasks.status',
-    sort: 'sort'
-  });
-  return data;
 }
 
 export async function listPluginCategories() {
-  if (CONFIG.useLocalContent) {
-    try {
-      const pluginsFile = path.join(CONFIG.contentRoot, 'plugins', 'plugins.json');
-      if (fs.existsSync(pluginsFile)) {
-        const plugins = JSON.parse(fs.readFileSync(pluginsFile, 'utf-8'));
-        return groupPluginsByCategory(plugins);
-      }
-      return [];
-    } catch (error) {
-      console.error('Error reading plugin categories:', error);
-      return [];
+  try {
+    const pluginsFile = path.join(CONFIG.contentRoot, 'plugins', 'plugins.json');
+    if (fs.existsSync(pluginsFile)) {
+      const plugins = JSON.parse(fs.readFileSync(pluginsFile, 'utf-8'));
+      return groupPluginsByCategory(plugins);
     }
+    return [];
+  } catch (error) {
+    console.error('Error reading plugin categories:', error);
+    return [];
+  }
+}
+
+// Get plugins grouped by status (newly, coming, normal categories)
+export async function getPluginsGrouped() {
+  const data = await listPluginCategories();
+  const allPlugins = data.flatMap((group: any) => group.plugins);
+
+  // Filter different types of plugins
+  const newlyPlugins = allPlugins.filter((p: any) => p.newly && !p.internal);
+  const comingPlugins = allPlugins.filter((p: any) => p.coming && !p.internal);
+
+  // Remove special plugins from categories, keep only normal ones
+  const normalCategories = data
+    .map((group: any) => ({
+      ...group,
+      plugins: group.plugins.filter((p: any) =>
+        !p.newly && !p.coming && !p.internal && !p.user_specific
+      )
+    }))
+    .filter((group: any) => group.plugins.length > 0);
+
+  // Build final groups array: newly -> coming -> normal categories
+  const finalGroups = [];
+
+  if (newlyPlugins.length > 0) {
+    finalGroups.push({
+      id: 'newly-launched',
+      title: 'Newly Launched',
+      title_cn: '最新发布',
+      title_ja: '新着リリース',
+      title_ru: 'Недавно запущенные',
+      plugins: newlyPlugins,
+    });
   }
 
-  const { data } = await fetchFromAPI('plugins_2025:list', {
-    pageSize: 400,
-    sort: ['sort'],
-    appends: ['category'],
-    filter: {}
-  });
-  
-  return groupPluginsByCategory(data);
+  if (comingPlugins.length > 0) {
+    finalGroups.push({
+      id: 'coming-soon',
+      title: 'Coming Soon',
+      title_cn: '即将发布',
+      title_ja: '近日公開',
+      title_ru: 'Скоро',
+      plugins: comingPlugins,
+    });
+  }
+
+  finalGroups.push(...normalCategories);
+
+  return {
+    finalGroups,
+    allPlugins,
+    newlyPlugins,
+    comingPlugins,
+    normalCategories
+  };
 }
 
 function groupPluginsByCategory(plugins: any[]): any[] {
-        const groupMap = new Map<number, any>();
-        
-        // List of plugin names to be intercepted and hidden
-        const blockedPlugins = ['Migration manager', 'Password policy'];
+  const groupMap = new Map<number, any>();
+  const blockedPlugins = ['Migration manager', 'Password policy'];
 
-        for (const plugin of plugins) {
-          const cat = plugin.category;
-    if (!cat) continue;
-    
-          // Check if this plugin should be blocked
-          if (blockedPlugins.includes(plugin.name)) {
-            continue; // Skip this plugin
-          }
+  for (const plugin of plugins) {
+    const cat = plugin.category;
+    if (!cat || blockedPlugins.includes(plugin.name)) continue;
 
-          if (!groupMap.has(cat.id)) {
-            groupMap.set(cat.id, {
-              id: cat.id,
-              title: cat.title,
-              title_cn: cat.title_cn,
-              title_ja: cat.title_ja,
-              title_ru: cat.title_ru,
-              slug: cat.slug,
-              sort: cat.sort,
-              plugins: [],
-            });
-          }
-          groupMap.get(cat.id).plugins.push(plugin);
-        }
+    if (!groupMap.has(cat.id)) {
+      groupMap.set(cat.id, {
+        id: cat.id,
+        title: cat.title,
+        title_cn: cat.title_cn,
+        title_ja: cat.title_ja,
+        title_ru: cat.title_ru,
+        slug: cat.slug,
+        sort: cat.sort,
+        plugins: [],
+      });
+    }
+    groupMap.get(cat.id).plugins.push(plugin);
+  }
 
-        return Array.from(groupMap.values());
+  return Array.from(groupMap.values());
 }
 
-// Simplified list functions that delegate to local content when needed
-export async function listArticles(options?: { 
-  hideOnBlog?: boolean, 
-  pageSize?: number, 
-  categorySlug?: string; 
-  tagSlug?: string; 
+// List functions
+export async function listArticles(options?: {
+  hideOnBlog?: boolean,
+  pageSize?: number,
+  categorySlug?: string;
+  tagSlug?: string;
   page?: number;
   filter?: Record<string, any>;
   sort?: string[];
   appends?: string[];
 }) {
-  if (CONFIG.useLocalContent) {
-    return localContent.listArticles(options);
-  }
-
-  const { 
-    hideOnBlog, 
-    categorySlug, 
-    tagSlug, 
-    page = 1, 
-    pageSize = 9,
-    filter: customFilter,
-    sort = ['-publishedAt'],
-    appends = ['cover']
-  } = options || {};
-
-  // 正常处理支持的过滤条件
-  const filterConditions: any[] = [
-      { status: 'published' },
-      { hideOnListPage: { $isFalsy: true } }
-    ];
-
-    if (hideOnBlog === false) {
-      filterConditions.push({ hideOnBlog: { $isFalsy: true } });
-    }
-    if (tagSlug) {
-      filterConditions.push({ 'tags.slug': tagSlug });
-    }
-    if (categorySlug) {
-      filterConditions.push({ 'category.slug': categorySlug });
-    }
-    if (customFilter) {
-      filterConditions.push(...(customFilter.$and || [customFilter]));
-    }
-
-    const { data, meta } = await fetchFromAPI('articles:list', {
-      page,
-      pageSize,
-      appends,
-      sort,
-      filter: { $and: filterConditions }
-    });
-
-  return { data, meta };
+  return listContentItems('articles', options);
 }
 
-export async function listTutorialArticles(options?: { pageSize?: number, slug?: string; serialsSlug?: string; page?: number; }) {
-  if (CONFIG.useLocalContent) {
-    return localContent.listTutorialArticles(options);
-  }
+export async function listTutorialArticles(options?: {
+  pageSize?: number,
+  slug?: string;
+  serialsSlug?: string;
+  page?: number;
+}) {
+  return listContentItems('tutorials', options);
+}
 
-  const { slug, serialsSlug, page = 1, pageSize = 9 } = options || {};
-  
-  const params: any = {
-    page,
-    pageSize,
-    appends: 'serials',
-    sort: 'serialsSort',
-    'filter[serials.status]': 'published',
-    'filter[status]': 'published'
+export async function listHelpCenterItems(_options?: {
+  pageSize?: number,
+  page?: number,
+  tree?: boolean
+}) {
+  const helpCenterPath = path.join(CONFIG.contentRoot, 'help-center', 'help-center-tree.json');
+  const items = readJsonFile(helpCenterPath) || [];
+
+  return {
+    data: items,
+    meta: {
+      total: items.length
+    }
   };
-  
-  if (slug) params.slug = slug;
-  if (serialsSlug) params['filter[serials.slug]'] = serialsSlug;
-
-  return await fetchFromAPI('tutorialArticles:list', params);
 }
 
-export async function listHelpCenterItems(options?: { pageSize?: number, page?: number, tree?: boolean}) {
-  if (CONFIG.useLocalContent) {
-    return localContent.listHelpCenterItems(options);
-  }
-
-  const { tree = true, page = 1, pageSize = 20 } = options || {};
-  
-  return await fetchFromAPI('help_center_tree:list', {
-    page,
-    pageSize,
-    sort: 'item_sort',
-    tree,
-    'filter[status]': 'published'
-  });
-}
-
-// RSS items generation with improved performance
+// RSS items generation
 export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
-  const langConfigs = locale === '*' 
-    ? Object.values(SUPPORTED_LANGUAGES)
-    : [SUPPORTED_LANGUAGES[locale as keyof typeof SUPPORTED_LANGUAGES] || SUPPORTED_LANGUAGES[DEFAULT_LANGUAGE]];
+  const locales = locale === '*' ? ['en', 'cn', 'ja', 'ru'] : [locale];
 
   for (const post of data) {
-    for (const lang of langConfigs) {
-        const content = getLocalizedContent(post, 'content', lang.code);
-        const title = getLocalizedContent(post, 'title', lang.code);
-        const description = getLocalizedContent(post, 'description', lang.code);
-        
-        const { code: processedContent } = await processor.render(content);
-        
-        items.push({
-          title,
-          description,
-          content: processedContent,
-          link: `/${lang.code}/blog/${post.slug}`,
-          pubDate: post.publishedAt,
-          customData: `<language>${lang.locale}</language>`,
+    for (const currentLocale of locales) {
+      const contentField = currentLocale === 'en' ? 'content' : `content_${currentLocale}`;
+      const titleField = currentLocale === 'en' ? 'title' : `title_${currentLocale}`;
+      const descField = currentLocale === 'en' ? 'description' : `description_${currentLocale}`;
+
+      const content = post[contentField] || post.content || '';
+      const title = post[titleField] || post.title;
+      const description = post[descField] || post.description;
+
+      const { code } = await processor.render(content);
+
+      const localeMap: Record<string, string> = {
+        en: 'en-US',
+        cn: 'zh-CN',
+        ja: 'ja-JP',
+        ru: 'ru-RU'
+      };
+
+      items.push({
+        title,
+        description,
+        content: code,
+        link: `/${currentLocale}/blog/${post.slug}`,
+        pubDate: post.publishedAt,
+        customData: `<language>${localeMap[currentLocale]}</language>`,
         author: post.author,
       });
     }
   }
-  
+
   return items;
 }
 
-// Simplified category and tag functions
-const createSimpleListFunction = (endpoint: string, localFunction?: Function) => 
-  async (options?: any) => {
-    if (CONFIG.useLocalContent && localFunction) {
-      return localFunction(options);
-    }
-    
-    const { filter, ...otherOptions } = options || {};
-    const params = {
-      pageSize: 200,
-      sort: 'sort',
-      ...otherOptions
-    };
-    
-    if (filter) {
-      params.filter = JSON.stringify(filter);
-    }
-    
-    const { data } = await fetchFromAPI(endpoint, params);
-    return data;
-  };
-
-export const listArticleCategories = createSimpleListFunction('articleCategories:list', localContent.listArticleCategories);
-export const listArticleTags = createSimpleListFunction('articleTags:list', localContent.listArticleTags);
-
-// Get functions with improved caching
-async function getWithCache<T>(
-  cacheMap: Map<string, { data: T; timestamp: number }>,
-  key: string,
-  fetcher: () => Promise<T>
-): Promise<T> {
-  const cached = cacheMap.get(key);
-  if (cached && isValidCacheEntry(cached)) {
-    return cached.data;
-  }
-
-  const data = await fetcher();
-  cacheMap.set(key, { data, timestamp: Date.now() });
-  return data;
-}
-
-export async function getPage(slug?: string, locale = DEFAULT_LANGUAGE) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getPage(slug, locale);
-  }
-
+// Category and tag functions with caching
+async function getCategoryOrTag(type: 'categories' | 'tags', slug?: string, subPath?: string) {
   if (!slug) return {};
 
-  return getWithCache(caches.articles, `page-${slug}-${locale}`, async () => {
-    const { data } = await fetchFromAPI('pages:get', { 'filter[slug]': slug });
-    
-    if (!data.id) return {};
-    
-  const content = getLocalizedContent(data, 'content', locale);
-  if (content) {
-    const { code } = await processor.render(content);
-    data.html = code;
+  const cacheKey = `${type}-${slug}-${subPath || ''}`;
+
+  if (caches.categoryTagCache.has(cacheKey)) {
+    return caches.categoryTagCache.get(cacheKey);
   }
-  
-  return data;
-  });
+
+  let result = {};
+
+  // Try individual file first
+  const itemFile = path.join(
+    CONFIG.contentRoot,
+    type,
+    subPath || '',
+    slug,
+    type === 'categories' ? 'category.json' : 'tag.json'
+  );
+
+  if (fs.existsSync(itemFile)) {
+    result = readJsonFile(itemFile) || {};
+  } else {
+    // Try from collection file
+    const collectionFile = path.join(
+      CONFIG.contentRoot,
+      type,
+      subPath ? `${subPath}.json` : `article-${type}.json`
+    );
+
+    if (fs.existsSync(collectionFile)) {
+      const collection = readJsonFile(collectionFile) || [];
+      const item = collection.find((item: any) => item.slug === slug);
+      result = item || {};
+    }
+  }
+
+  caches.categoryTagCache.set(cacheKey, result);
+  return result;
+}
+
+export async function listArticleCategories() {
+  const categoriesPath = path.join(CONFIG.contentRoot, 'categories', 'article-categories.json');
+  return readJsonFile(categoriesPath) || [];
+}
+
+export async function listArticleTags(options?: any) {
+  const tagsPath = path.join(CONFIG.contentRoot, 'tags', 'article-tags.json');
+  const tags = readJsonFile(tagsPath) || [];
+
+  const { filter } = options || {};
+  if (filter && Object.keys(filter).length > 0) {
+    try {
+      const siftFilter = sift(filter);
+      return tags.filter(siftFilter);
+    } catch (error) {
+      console.error('Error applying tag filter:', error);
+      return tags;
+    }
+  }
+
+  return tags;
+}
+
+// Get functions
+export async function getPage(slug?: string, locale = DEFAULT_LANGUAGE) {
+  return loadContent(slug || '', 'pages', locale);
 }
 
 export async function getArticleCategory(slug?: string) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getArticleCategory(slug);
-  }
-
-  if (!slug) return {};
-  
-  const { data } = await fetchFromAPI('articleCategories:get', { 'filter[slug]': slug });
-  return data || {};
+  return getCategoryOrTag('categories', slug);
 }
 
 export async function getArticleTag(slug?: string) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getArticleTag(slug);
-  }
-
-  if (!slug) return {};
-  
-  const { data } = await fetchFromAPI('articleTags:get', { 'filter[slug]': slug });
-  return data || {};
+  return getCategoryOrTag('tags', slug);
 }
 
 export async function getArticle(slug?: string, locale = DEFAULT_LANGUAGE) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getArticle(slug, locale);
-  }
-
-  if (!slug) return {};
-
-  return getWithCache(caches.articles, `article-${slug}-${locale}`, async () => {
-    const { data } = await fetchFromAPI('articles:get', {
-      appends: 'cover,tags',
-      'filter[slug]': slug
-    });
-    
-    if (!data.id) return {};
-  
-  const content = getLocalizedContent(data, 'content', locale);
-  const { code, metadata } = await processor.render(content);
-  const headings: any[] = metadata.headings || [];
-    
-    return { data, headings, html: code };
-  });
+  return loadContent(slug || '', 'articles', locale);
 }
 
 export async function getTutorialArticle(slug?: string, locale = DEFAULT_LANGUAGE) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getTutorialArticle(slug, locale);
-  }
-
-  if (!slug) return {};
-
-  return getWithCache(caches.articles, `tutorial-${slug}-${locale}`, async () => {
-    const { data } = await fetchFromAPI('tutorialArticles:get', {
-      appends: 'serials,keywords',
-      'filter[slug]': slug
-    });
-    
-    if (!data.id) return {};
-  
-  const content = getLocalizedContent(data, 'content', locale);
-  const { code, metadata } = await processor.render(content);
-  const headings: any[] = metadata.headings || [];
-    
-    return { data, headings, html: code };
-  });
+  return loadContent(slug || '', 'tutorials', locale);
 }
 
 export async function listReleases(options?: any) {
-  if (CONFIG.useLocalContent) {
-    return localContent.listReleases(options);
-  }
-
-  const { page = 1, tagSlug } = options || {};
-  const params: any = {
-    page,
-    pageSize: 20,
-    sort: '-publishedAt',
-    'filter[status]': 'published'
-  };
-  
-  if (tagSlug) {
-    params['filter[tags.slug]'] = tagSlug;
-  }
-
-  return await fetchFromAPI('releases:list', params);
+  return listContentItems('releases', options);
 }
 
 export async function getRelease(slug?: string, locale = DEFAULT_LANGUAGE) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getRelease(slug, locale);
-  }
-
-  if (!slug) return {};
-
-  return getWithCache(caches.articles, `release-${slug}-${locale}`, async () => {
-    const { data } = await fetchFromAPI('releases:get', {
-      appends: 'tags',
-      'filter[slug]': slug
-    });
-    
-    if (!data.id) return {};
-  
-  const content = getLocalizedContent(data, 'content', locale);
-  const { code, metadata } = await processor.render(content);
-  const headings: any[] = metadata.headings || [];
-    
-    return { data, headings, html: code };
-  });
+  return loadContent(slug || '', 'releases', locale);
 }
 
 export async function getReleaseTag(slug?: string) {
-  if (CONFIG.useLocalContent) {
-    return localContent.getReleaseTag(slug);
-  }
-
-  if (!slug) return {};
-  
-  const { data } = await fetchFromAPI('releaseTags:get', { 'filter[slug]': slug });
-  return data || {};
+  return getCategoryOrTag('tags', slug, 'release-tags');
 }
 
+// Sitemap generation
 export async function getSitemapLinks() {
-  if (CONFIG.useLocalContent) {
-    return localContent.getSitemapLinks();
-  }
-
-  const generateLanguageLinks = (path: string) => {
-    return Object.values(SUPPORTED_LANGUAGES).map(lang => ({
-      lang: lang.locale as string,
-      url: `/${lang.code}${path}`
-    })).concat([{ lang: 'x-default', url: `/${DEFAULT_LANGUAGE}${path}` }]);
-  };
-
   const [tags, articles, tutorials] = await Promise.all([
-    fetchFromAPI('articleTags:list', { sort: 'sort', paginate: false }),
-    fetchFromAPI('articles:list', { 'filter[status]': 'published', sort: '-publishedAt', paginate: false }),
-    fetchFromAPI('tutorialArticles:list', { 'filter[status]': 'published', sort: '-publishedAt', paginate: false })
+    listArticleTags(),
+    listArticles({ pageSize: 5000 }),
+    listTutorialArticles({ pageSize: 5000 })
   ]);
 
-  const [tasksLastUpdated, articlesLastUpdated, pluginsLastUpdated, tutorialsLastUpdated] = await Promise.all([
-    getTaskLastUpdatedAt(),
-    getLastUpdatedAt('articles'),
-    getLastUpdatedAt('plugins_2025'),
-    getLastUpdatedAt('tutorialArticles')
-  ]);
+  const generateLanguageLinks = (path: string) => [
+    { lang: 'en-US', url: `/en${path}` },
+    { lang: 'zh-CN', url: `/cn${path}` },
+    { lang: 'ja-JP', url: `/ja${path}` },
+    { lang: 'ru-RU', url: `/ru${path}` },
+    { lang: 'x-default', url: `/en${path}` },
+  ];
 
   const baseLinks = [
     {
       url: '/',
-      links: Object.values(SUPPORTED_LANGUAGES).map(lang => ({
-        lang: lang.locale as string,
-        url: `/${lang.code}/`
-      })).concat([{ lang: 'x-default', url: `/` }]),
+      links: [
+        { lang: 'en-US', url: `/en/` },
+        { lang: 'zh-CN', url: `/cn/` },
+        { lang: 'ja-JP', url: `/ja/` },
+        { lang: 'ru-RU', url: `/ru/` },
+        { lang: 'x-default', url: `/` },
+      ],
     },
-    { url: '/en/roadmap', lastmod: tasksLastUpdated, links: generateLanguageLinks('/roadmap') },
-    { url: '/en/plugins', lastmod: pluginsLastUpdated, links: generateLanguageLinks('/plugins') },
-    { url: '/en/plugins-commercial', links: generateLanguageLinks('/plugins-commercial') },
-    { url: '/en/plugins-bundles', links: generateLanguageLinks('/plugins-bundles') },
-    { url: '/en/commercial', links: generateLanguageLinks('/commercial') },
-    { url: '/en/community', links: generateLanguageLinks('/community') },
-    { url: '/en/contact', links: generateLanguageLinks('/contact') },
-    { url: '/en/agreement', links: generateLanguageLinks('/agreement') },
-    { url: '/en/blog', lastmod: articlesLastUpdated, links: generateLanguageLinks('/blog') },
-    { url: '/en/tutorials', lastmod: tutorialsLastUpdated, links: generateLanguageLinks('/tutorials') },
   ];
 
-  const tagLinks = tags.data.filter((item: any) => item.slug).map((item: any) => ({
-      url: `/en/blog/tags/${item.slug}`,
-      lastmod: item.updatedAt,
-      links: generateLanguageLinks(`/blog/tags/${item.slug}`),
+  const tagLinks = tags.map((tag: any) => ({
+    url: `/en/blog/tags/${tag.slug}`,
+    lastmod: tag.updatedAt,
+    links: generateLanguageLinks(`/blog/tags/${tag.slug}`),
   }));
 
-  const articleLinks = articles.data.map((item: any) => ({
-      url: `/en/blog/${item.slug}`,
-      lastmod: item.updatedAt,
-      links: generateLanguageLinks(`/blog/${item.slug}`),
+  const articleLinks = articles.data.map((article: any) => ({
+    url: `/en/blog/${article.slug}`,
+    lastmod: article.updatedAt,
+    links: generateLanguageLinks(`/blog/${article.slug}`),
   }));
 
-  const tutorialLinks = tutorials.data.map((item: any) => ({
-      url: `/en/tutorials/${item.slug}`,
-      lastmod: item.updatedAt,
-      links: generateLanguageLinks(`/tutorials/${item.slug}`),
+  const tutorialLinks = tutorials.data.map((tutorial: any) => ({
+    url: `/en/tutorials/${tutorial.slug}`,
+    lastmod: tutorial.updatedAt,
+    links: generateLanguageLinks(`/tutorials/${tutorial.slug}`),
   }));
 
   return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
 }
 
-export async function listReleaseNotes(options?: { page?: number, pageSize?: number, milestoneOnly?: boolean, locale?: string }) {
+// Release notes functions
+export async function listReleaseNotes(options?: {
+  page?: number,
+  pageSize?: number,
+  milestoneOnly?: boolean,
+  locale?: string
+}) {
   const { page = 1, pageSize = 10, milestoneOnly = false, locale = DEFAULT_LANGUAGE } = options || {};
-  
+
   const filterConditions: any[] = [
     { 'tags.title': { $eq: 'Release Notes' } },
     { status: { $eq: 'published' } }
   ];
-  
+
   if (milestoneOnly) {
     filterConditions.push({ 'sub_tags.title': { $eq: 'Milestone' } });
   } else {
@@ -669,8 +856,8 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
       ]
     });
   }
-  
-  const { data, meta } = await listArticles({ 
+
+  const { data, meta } = await listArticles({
     page,
     pageSize,
     sort: ['-publishedAt'],
@@ -685,18 +872,15 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
     const primaryTag = subTags[0]?.title || 'Latest';
     const allTags = subTags.map((t: any) => t.title?.toLowerCase() || '');
 
-
-    
-    // Use localized content based on locale parameter
-    const localizedContent = getLocalizedContent(article, 'content', locale);
-    const localizedTitle = getLocalizedContent(article, 'title', locale);
-    const localizedDescription = getLocalizedContent(article, 'description', locale);
+    const contentField = locale === 'en' ? 'content' : `content_${locale}`;
+    const titleField = locale === 'en' ? 'title' : `title_${locale}`;
+    const descField = locale === 'en' ? 'description' : `description_${locale}`;
 
     return {
       ...article,
-      title: localizedTitle,
-      description: localizedDescription,
-      content: localizedContent,
+      title: article[titleField] || article.title,
+      description: article[descField] || article.description,
+      content: article[contentField] || article.content,
       tags: allTags,
       isMilestone: subTags.some((t: any) => t.title === 'Milestone'),
       priority: ['Milestone', 'Latest', 'Beta', 'Alpha'].indexOf(primaryTag) + 1,
@@ -709,16 +893,25 @@ export async function listReleaseNotes(options?: { page?: number, pageSize?: num
   const currentCount = (page - 1) * pageSize + processedData.length;
   const hasMore = currentCount < totalItems;
 
-  return { 
-    data: processedData, 
+  return {
+    data: processedData,
     meta: {
       ...meta,
       hasMore,
       pageCount: Math.ceil(totalItems / pageSize)
-    } 
+    }
   };
 }
 
-export async function listMilestoneNotes(options?: { page?: number, pageSize?: number, locale?: string }) {
+export async function listMilestoneNotes(options?: {
+  page?: number,
+  pageSize?: number,
+  locale?: string
+}) {
   return listReleaseNotes({ ...options, milestoneOnly: true });
+}
+
+// Legacy url helper (kept for compatibility, but now just returns the path)
+export function url(path: string): string {
+  return path.startsWith('https') ? path : path;
 }

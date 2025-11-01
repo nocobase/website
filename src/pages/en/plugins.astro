@@ -1,7 +1,7 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getPage, listPluginCategories } from "../../utils";
+import { getPage, getPluginsGrouped } from "../../utils";
 
 const tabs = [
   {
@@ -19,50 +19,11 @@ const tabs = [
   }
 ];
 
-const data = await listPluginCategories();
+const { finalGroups, allPlugins, newlyPlugins, comingPlugins, normalCategories } = await getPluginsGrouped();
 const page = await getPage("plugins");
 const title = page.title;
 const description = page.description;
 const keywords = page.keywords;
-
-// 1. Flatten all plugins first
-const allPlugins = data.flatMap((group: any) => group.plugins);
-
-// 2. Filter "Newly Launched" and "Coming Soon"
-const newlyPlugins = allPlugins.filter((p: any) => !!p.newly && !p.internal);
-const comingPlugins = allPlugins.filter((p: any) => !!p.coming && !p.internal);
-
-// 3. Remove these two types from original categories to avoid duplication
-data.forEach((group: any) => {
-  group.plugins = group.plugins.filter((p: any) => !p.newly && !p.coming && !p.internal && !p.user_specific);
-});
-
-// 4. Remove empty categories
-const normalGroups = data.filter((group) => group.plugins.length > 0);
-
-// 5. Final groups array to render, first "Newly Launched", then "Coming Soon", finally normal groups
-const finalGroups = [];
-
-// (a) Newly Launched
-if (newlyPlugins.length > 0) {
-  finalGroups.push({
-    id: 'newly-launched',
-    title: 'Newly Launched',
-    plugins: newlyPlugins,
-  });
-}
-
-// (b) Coming Soon
-if (comingPlugins.length > 0) {
-  finalGroups.push({
-    id: 'coming-soon',
-    title: 'Coming Soon',
-    plugins: comingPlugins,
-  });
-}
-
-// (c) Normal groups
-finalGroups.push(...normalGroups);
 
 // Calculate totals
 const totalPlugins = finalGroups.reduce((sum, group) => sum + group.plugins.length, 0);
@@ -71,14 +32,14 @@ const totalPlugins = finalGroups.reduce((sum, group) => sum + group.plugins.leng
 const filterOptions = {
   pricing: [
     { id: 'all', name: 'All', count: totalPlugins },
-    { id: 'free', name: 'Free', count: allPlugins.filter(p => !p.commercial && !p.coming).length },
-    { id: 'commercial', name: 'Commercial', count: allPlugins.filter(p => p.commercial).length },
+    { id: 'free', name: 'Free', count: allPlugins.filter((p: any) => !p.commercial && !p.coming).length },
+    { id: 'commercial', name: 'Commercial', count: allPlugins.filter((p: any) => p.commercial).length },
   ],
   release: [
     { id: 'newly', name: 'Newly Launched', count: newlyPlugins.length },
     { id: 'coming', name: 'Coming Soon', count: comingPlugins.length },
   ],
-  categories: normalGroups.map(group => ({
+  categories: normalCategories.map((group: any) => ({
     id: group.id,
     name: group.title,
     count: group.plugins.length

@@ -5,9 +5,9 @@ import { getPage } from "../../../utils";
 
 const page = await getPage("data-source");
 
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = page.title_ja || page.title;
+const description = page.description_ja || page.description;
+const keywords = page.keywords_ja || page.keywords;
 ---
 
 <Layout title="Plugin bundle" description={description} keywords={keywords}>
