@@ -169,3 +169,14 @@ RBACモデルの本質は次の問いに集約されます：
 * **🟠 Retool**：企業向けセキュリティが優秀だが、多ページ・多ロール構成では追加設定が必要。
 
 ニーズに応じて、自社の開発体制やセキュリティ要件に最も適したRBACモデルを選択するのが良いでしょう。
+
+
+**関連読み物：**
+
+* [GitHubで注目のオープンソースAIローコードツール14選 ](https://www.nocobase.com/ja/blog/14-ai-low-code-platforms-github)
+* [GitHubで人気のオープンソースノーコードAIツール11選](https://www.nocobase.com/ja/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub で Star 数トップ18 のオープンソース AI Agent プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)
+* [GitHubで最もスターを獲得したオープンソースAIプロジェクト20選](https://www.nocobase.com/ja/blog/github-open-source-ai-projects)
+* [GitHub でスター数トップ 8 のオープンソース MCP プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-mcp-projects)
+* [GitHubスター数トップのオープンソースWebアプリ7選](https://www.nocobase.com/ja/blog/github-open-source-web-applications)
+* [GitHub のスター数上位 40 の開発者ツール](https://www.nocobase.com/ja/blog/github-open-source-developer-tools)
