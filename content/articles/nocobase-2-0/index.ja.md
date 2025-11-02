@@ -19,7 +19,7 @@ They are **seamlessly integrated** into your business system, capable of underst
 * Each has unique skills, tools, and knowledge bases.
 * You can create an unlimited number of AI Employees to form your own AI team.
 
-[Learn more about AI Employees](https://develop.v2.docs.nocobase.com/ai-employees)
+[Learn more about AI Employees](https://v2.docs.nocobase.com/ai-employees)
 
 [Try the Demo](https://demo.nocobase.com/new)
 
@@ -53,7 +53,7 @@ RunJS is supported in:
 * Linkage rules
 * Event flows
 
-[Learn more about RUNJS](https://develop.v2.docs.nocobase.com/ai-employees)
+[Learn more about RUNJS](https://v2.docs.nocobase.com/ai-employees)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
@@ -75,17 +75,17 @@ An Event Flow consists of:
 In version 1.x, blocks and fields used a full-width flexible drag layout, which limited precision and aesthetics.
 NocoBase 2.0 introduces a **new grid layout system**, allowing every element to align with grid units for more refined control.
 
-<video controls>
-  <source src="https://static-docs.nocobase.com/z-2025-11-02-21.45.55-2025-11-02-21-47-12.mp4" type="video/mp4">
-</video>
+![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251029201501.gif)
 
 ### Reusable Blocks and Modals
 
 In 1.x, the copy/reference features for blocks were limited and prone to bugs, and entire modals couldn’t be referenced.
 NocoBase 2.0 completely redefines this - enabling **flexible referencing and duplication** of both blocks and modals, dramatically reducing configuration effort.
 
-[Learn more about Block References & Copies](https://develop.v2.docs.nocobase.com/ai-employees)
-[Learn more about Modal References](https://develop.v2.docs.nocobase.com/ai-employees)
+![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
+
+[Learn more about Block References & Copies](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
+[Learn more about Modal References](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
 ### Enhanced Block Experience
 
@@ -107,7 +107,7 @@ By leveraging Flow’s configurable nature, it brings no-code orchestration to f
 
 Developing plugin frontends in 1.x often involved complex challenges. With FlowEngine, these are now greatly simplified.
 
-[Learn more about FlowEngine](https://develop.v2.docs.nocobase.com/flow-engine/what-is-flow-engine)
+[Learn more about FlowEngine](https://v2.docs.nocobase.com/flow-engine/what-is-flow-engine)
 
 ## Multi-Application and Multi-Space
 
@@ -124,7 +124,7 @@ NocoBase 2.0 introduces **a completely new Multi-App and Multi-Space architectur
 
 ![20251102220714-2025-11-02-22-07-16](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
 
-[Learn more about Multi-Space](https://develop.v2.docs.nocobase.com/multi-app/multi-space)
+[Learn more about Multi-Space](https://v2.docs.nocobase.com/multi-app/multi-space)
 
 ## New Data Visualization
 
@@ -140,7 +140,7 @@ And if SQL or JSON seems too complex - your AI Employee **Nathan** can help.
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
-[Learn more about Data Visualization](https://develop.v2.docs.nocobase.com/multi-app/multi-space)
+[Learn more about Data Visualization](https://v2.docs.nocobase.com/multi-app/multi-space)
 
 ## Syncing Database Structure & Changing Field Types
 
@@ -162,7 +162,7 @@ The Record History plugin automatically tracks data changes - insertions, update
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
 
-[Learn more about Record History](https://develop.v2.docs.nocobase.com/record-history/)
+[Learn more about Record History](https://v2.docs.nocobase.com/record-history/)
 
 ### Form Drafts
 
@@ -175,11 +175,11 @@ It also introduces automatic draft saving and other enhancements.
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 
-[Learn more about Email Manager](https://develop.v2.docs.nocobase.com/email-manager/)
+[Learn more about Email Manager](https://v2.docs.nocobase.com/email-manager/)
 
 ## Upgrading from 1.x to 2.0
 
-Upgrading from 1.x to 2.0 is straightforward - simply follow the [official guide](https://develop.v2.docs.nocobase.com/get-started/upgrading/docker).
+Upgrading from 1.x to 2.0 is straightforward - simply follow the [official guide](https://v2.docs.nocobase.com/get-started/upgrading/docker).
 However, note that **NocoBase 2.0 is currently in alpha**, so expect some instability.
 
 Thanks to NocoBase’s **decoupled architecture between UI and data**, your existing 1.x applications will remain fully intact.
