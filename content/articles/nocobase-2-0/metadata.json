@@ -13,19 +13,19 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2024-06-18T06:46:22.069Z",
-    "updatedAt": "2024-06-18T06:46:22.069Z",
-    "id": 9,
-    "title": "Frame 11 (1)",
-    "filename": "7093762b0327a6f04aec4633061621c5.png",
+    "createdAt": "2025-11-02T16:07:27.119Z",
+    "updatedAt": "2025-11-02T16:07:27.128Z",
+    "id": 2035,
+    "title": "大版本发布 (4)",
+    "filename": "大版本发布 (4)-rfz58t.png",
     "extname": ".png",
-    "size": 794148,
+    "size": 142584,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "/storage/uploads/7093762b0327a6f04aec4633061621c5.png",
-    "preview": "/storage/uploads/7093762b0327a6f04aec4633061621c5.png",
-    "storageId": 1,
+    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(4)-rfz58t.png",
+    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(4)-rfz58t.png",
+    "storageId": 2,
     "createdById": 1,
     "updatedById": 1
   },
@@ -35,5 +35,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-11-02T15:22:49.638Z"
+  "updatedAt": "2025-11-02T16:07:31.665Z"
 }
