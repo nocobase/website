@@ -1,14 +1,14 @@
 {
   "id": 742,
-  "title": "NocoBase v2.0.0-alpha.28",
-  "title_cn": "NocoBase v2.0.0-alpha.28",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v2.0.0-alpha.28: Improved the error message displayed when copying UID fails",
+  "title_cn": "NocoBase v2.0.0-alpha.28：优化复制 UID 失败时的错误提示消息",
+  "title_ja": "NocoBase v2.0.0-alpha.28：UIDコピー失敗時のエラーメッセージを最適化",
   "description": "Release Note of v2.0.0-alpha.28",
   "description_cn": "v2.0.0-alpha.28 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v2.0.0-alpha.28 のリリースノート",
   "slug": "v2.0.0-alpha.28",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-01T01:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-02T08:28:24.854Z",
+        "updatedAt": "2025-11-02T08:28:24.854Z",
+        "articles_id": 742,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-02T08:27:50.693Z",
+    "updatedAt": "2025-11-02T08:27:50.705Z",
+    "id": 2032,
+    "title": "developv2.0.0-alpha.28",
+    "filename": "developv2.0.0-alpha.28-8ida86.jpg",
+    "extname": ".jpg",
+    "size": 81430,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/developv2.0.0-alpha.28-8ida86.jpg",
+    "preview": "https://static-docs.nocobase.com/developv2.0.0-alpha.28-8ida86.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-31T12:19:27.974Z"
+  "updatedAt": "2025-11-02T08:28:24.841Z"
 }
