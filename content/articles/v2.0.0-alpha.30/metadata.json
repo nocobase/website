@@ -1,14 +1,14 @@
 {
   "id": 745,
-  "title": "NocoBase v2.0.0-alpha.30",
-  "title_cn": "NocoBase v2.0.0-alpha.30",
-  "title_ja": "fetch is not defined",
+  "title": "NocoBase v2.0.0-alpha.30: improved the notification step in workflows",
+  "title_cn": "NocoBase v2.0.0-alpha.30：优化了工作流的通知节点",
+  "title_ja": "NocoBase v2.0.0-alpha.30：ワークフローの通知ノードを最適化",
   "description": "Release Note of v2.0.0-alpha.30",
   "description_cn": "v2.0.0-alpha.30 更新日志",
-  "description_ja": "fetch is not defined",
+  "description_ja": "v2.0.0-alpha.30 のリリースノート",
   "slug": "v2.0.0-alpha.30",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-02T11:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-02T14:11:21.052Z",
+        "updatedAt": "2025-11-02T14:11:21.052Z",
+        "articles_id": 745,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-02T14:11:00.850Z",
+    "updatedAt": "2025-11-02T14:11:00.864Z",
+    "id": 2034,
+    "title": "develop v2.0.0-alpha.30",
+    "filename": "develop v2.0.0-alpha.30-o8zpz2.jpg",
+    "extname": ".jpg",
+    "size": 81378,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.30-o8zpz2.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.30-o8zpz2.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-02T10:53:30.362Z"
+  "updatedAt": "2025-11-02T14:11:21.039Z"
 }
