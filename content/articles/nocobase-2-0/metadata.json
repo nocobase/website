@@ -1,8 +1,8 @@
 {
   "id": 743,
-  "title": "NocoBase 2.0 发布日志",
-  "title_cn": null,
-  "title_ja": null,
+  "title": "NocoBase 2.0: Meet Your AI Employees",
+  "title_cn": "NocoBase 2.0：与你的 AI 员工见面",
+  "title_ja": "NocoBase 2.0: Meet Your AI Employees",
   "description": null,
   "description_cn": null,
   "description_ja": null,
@@ -35,5 +35,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-11-02T12:00:38.820Z"
+  "updatedAt": "2025-11-02T14:53:32.387Z"
 }
