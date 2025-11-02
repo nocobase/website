@@ -12,7 +12,7 @@ NocoBase 中的 AI 员工不是聊天机器人，也不是孤立的 Agent，而�
 - 他们每个人都具备独特的技能、工具、知识库
 - 你可以创建无限个 AI 员工，组成你的 AI 团队
 
-[详细了解 AI 员工](https://develop.v2.docs.nocobase.com/cn/ai-employees)
+[详细了解 AI 员工](https://v2.docs.nocobase.com/cn/ai-employees)
 
 [开通 Demo，亲自体验](https://demo.nocobase.com/new)
 
@@ -45,7 +45,7 @@ RunJS 提供了一种轻量级的扩展方式，适合快速在界面上实现�
 - 联动规则
 - 事件流
 
-[详细了解 RUNJS](https://develop.v2.docs.nocobase.com/cn/ai-employees)
+[详细了解 RUNJS](https://v2.docs.nocobase.com/cn/ai-employees)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
@@ -62,22 +62,22 @@ NocoBase 2.0 中新增了事件流功能，使前端逻辑编排能力大大增�
 
 ![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251031093341.png)
 
-#### 格栅布局
+#### 栅格布局
 
 在 NocoBase 1.x 中，对区块、字段拖拽布局时，每个元素的宽度是自由拖拽且必须充满整行宽度的，这在很多时候并不方便做出精确、美观的布局。
 NocoBase 2.0 中采用了全新的格栅布局，每个元素都可以对其格栅。
 
-<video controls>
-  <source src="https://static-docs.nocobase.com/z-2025-11-02-21.45.55-2025-11-02-21-47-12.mp4" type="video/mp4">
-</video>
+![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251029201501.gif)
 
 #### 引用和复制区块、弹窗
 
 在 NocoBase 1.x 中虽然提供了区块模板、复制和引用的功能，但是由于逻辑复杂，存在不少 bug，并且灵活性不高，而且只能引用区块而不能引用整个弹窗。
 在 NocoBase 2.0 中，我们用全新的方式实现了区块和弹窗的引用和复制，这极大增加了灵活性，减小配置工作量。
 
-[详细了解引用和复制区块](https://develop.v2.docs.nocobase.com/cn/ai-employees)
-[详细了解引用弹窗](https://develop.v2.docs.nocobase.com/cn/ai-employees)
+![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
+
+[详细了解引用和复制区块](https://v2.docs.nocobase.com/cn/interface-builder/blocks/other-blocks/block-reference)
+[详细了解引用弹窗](https://v2.docs.nocobase.com/cn/interface-builder/actions/action-settings/edit-popup)
 
 #### 提升区块体验
 
@@ -96,7 +96,7 @@ NocoBase 2.0 的页面带来比 1.x 更高的前端性能。
 
 在 1.x 中，开发插件的前端部分经常遇到繁琐甚至很难处理的问题。有了 FlowEngine，这些问题将大大简化。
 
-[详细了解 FlowEngine](https://develop.v2.docs.nocobase.com/cn/flow-engine/what-is-flow-engine)
+[详细了解 FlowEngine](https://v2.docs.nocobase.com/cn/flow-engine/what-is-flow-engine)
 
 ## 多应用和多空间
 
@@ -108,7 +108,7 @@ NocoBase 2.0 的页面带来比 1.x 更高的前端性能。
 
 ![20251102220714-2025-11-02-22-07-16](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
 
-[详细了解 多空间](https://develop.v2.docs.nocobase.com/cn/multi-app/multi-space)
+[详细了解 多空间](https://v2.docs.nocobase.com/cn/multi-app/multi-space)
 
 ## 全新的数据可视化
 
@@ -118,7 +118,7 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
-[详细了解 数据可视化](https://develop.v2.docs.nocobase.com/cn/multi-app/multi-space)
+[详细了解 数据可视化](https://v2.docs.nocobase.com/cn/multi-app/multi-space)
 
 ## 同步主数据库结构，修改字段类型
 
@@ -135,7 +135,7 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
 
-[详细了解 数据历史记录](https://develop.v2.docs.nocobase.com/cn/record-history/)
+[详细了解 数据历史记录](https://v2.docs.nocobase.com/cn/record-history/)
 
 #### 表单草稿
 
@@ -147,11 +147,11 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 
-[详细了解 邮件管理](https://develop.v2.docs.nocobase.com/cn/email-manager/)
+[详细了解 邮件管理](https://v2.docs.nocobase.com/cn/email-manager/)
 
 ## 如何升级
 
-从 1.x 升级到 2.0 很简单，只需要按照 [手册](https://develop.v2.docs.nocobase.com/cn/get-started/upgrading/docker) 正常操作即可。但请注意 NocoBase 2.0 目前为 alpha 版本，请确保你可以接受诸多不稳定。
+从 1.x 升级到 2.0 很简单，只需要按照 [手册](https://v2.docs.nocobase.com/cn/get-started/upgrading/docker) 正常操作即可。但请注意 NocoBase 2.0 目前为 alpha 版本，请确保你可以接受诸多不稳定。
 
 得益于 NocoBase 的界面与数据解耦的架构，升级之后，在 1.x 中搭建的应用不受任何影响。在新建页面的选项中，分为 v1 和 v2 两种页面，新建 v2 页面即可使用 NocoBase 2.0 的新功能。
 
