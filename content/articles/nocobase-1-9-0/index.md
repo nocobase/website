@@ -47,12 +47,6 @@ Reference: [Cluster Mode: Message Queue](https://docs.nocobase.com/welcome/getti
 Introduces graceful shutdown handling.
 When the application process receives a SIGTERM or SIGINT signal, it now initiates a proper shutdown sequence to prevent issues from ongoing operations.
 
-### Plugin-Defined Tables Visible in Main Data Source
-
-Plugin-defined tables can now be displayed in the main data source management interface, making them available for use in blocks and workflows.
-
-![image-1pcd91.png](https://static-docs.nocobase.com/image-1pcd91.png)
-
 ## Improvements
 
 ### System Tables Use 53-bit Snowflake-like IDs
