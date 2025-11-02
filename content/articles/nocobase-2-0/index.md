@@ -23,9 +23,9 @@ FlowEngine 是 NocoBase 2.0 全新推出的前端无代码、低代码开发引�
 我们对基础的区块、字段和操作进行了重构，新增了事件流（初版）和 RunJS（实验性）。让你在界面配置上拥有更多灵活性与控制力。
 ![image-f89cws.png](https://static-docs.nocobase.com/image-f89cws.png)
 
-- [快速入门](https://v2.docs.nocobase.com/cn/interface-builder/quickstart)
-- [事件流（初版）](https://v2.docs.nocobase.com/cn/interface-builder/quickstart)
-- [RunJS（实验性功能）](https://v2.docs.nocobase.com/cn/interface-builder/quickstart)
+- [快速入门](https://v2.docs.nocobase.com/cn/interface-builder)
+- [事件流（初版）](https://v2.docs.nocobase.com/cn/interface-builder/event-flow)
+- [RunJS（实验性功能）](https://v2.docs.nocobase.com/cn/interface-builder/runjs)
 
 ### AI 员工
 
