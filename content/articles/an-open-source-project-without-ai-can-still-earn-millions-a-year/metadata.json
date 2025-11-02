@@ -12,12 +12,28 @@
   "tags": [],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-02T16:15:19.663Z",
+    "updatedAt": "2025-11-02T16:15:19.669Z",
+    "id": 2036,
+    "title": "Frame 84 (1)",
+    "filename": "Frame 84 (1)-kjl1lo.png",
+    "extname": ".png",
+    "size": 49427,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%2084%20(1)-kjl1lo.png",
+    "preview": "https://static-docs.nocobase.com/Frame%2084%20(1)-kjl1lo.png",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "author": null,
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-02T15:40:51.971Z"
+  "updatedAt": "2025-11-02T16:15:23.005Z"
 }
