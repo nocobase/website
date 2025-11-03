@@ -8,9 +8,11 @@ Now, it’s time to officially introduce **NocoBase 2.0-alpha!**
 ## AI Employees
 
 The past year has seen rapid advances in AI, with large models showing remarkable-even astonishing-capabilities across many domains.
+
 As heavy AI users ourselves, we’ve brought AI directly into NocoBase 2.0 in the form of **AI Employees** - intelligent colleagues that work inside your system.
 
 AI Employees in NocoBase are **not chatbots**, nor isolated agents.
+
 They are **seamlessly integrated** into your business system, capable of understanding context and executing tasks directly.
 
 * They appear wherever you need them - beside your tables and forms - ready to assist.
@@ -30,6 +32,7 @@ They are **seamlessly integrated** into your business system, capable of underst
 ## A Brand-New 2.0 Page System
 
 While NocoBase has always been plugin-based, version 1.x had limitations when dealing with dynamic interactions, flexible layouts, or customized logic on the frontend.
+
 It was difficult to achieve such requirements without significant cost.
 
 NocoBase 2.0 introduces a **completely restructured page system** designed to support personalized and complex frontend needs efficiently.
@@ -60,6 +63,7 @@ RunJS is supported in:
 ### Event Flow
 
 In NocoBase 1.x, the linkage rule system allowed limited logic orchestration, constrained to a single block.
+
 NocoBase 2.0 introduces **Event Flow**, a major enhancement to frontend logic configuration.
 
 An Event Flow consists of:
@@ -73,6 +77,7 @@ An Event Flow consists of:
 ### Grid Layout
 
 In version 1.x, blocks and fields used a full-width flexible drag layout, which limited precision and aesthetics.
+
 NocoBase 2.0 introduces a **new grid layout system**, allowing every element to align with grid units for more refined control.
 
 ![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251029201501.gif)
@@ -80,6 +85,7 @@ NocoBase 2.0 introduces a **new grid layout system**, allowing every element to 
 ### Reusable Blocks and Modals
 
 In 1.x, the copy/reference features for blocks were limited and prone to bugs, and entire modals couldn’t be referenced.
+
 NocoBase 2.0 completely redefines this - enabling **flexible referencing and duplication** of both blocks and modals, dramatically reducing configuration effort.
 
 ![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
@@ -90,7 +96,9 @@ NocoBase 2.0 completely redefines this - enabling **flexible referencing and dup
 ### Enhanced Block Experience
 
 Based on user feedback, NocoBase 2.0 brings many refinements to block components.
+
 For example, tables now support **inline editing** directly within cells - no popup needed.
+
 More improvements are on the way.
 
 ![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102215026-2025-11-02-21-50-28.png)
@@ -102,7 +110,9 @@ NocoBase 2.0 delivers significantly improved frontend performance compared to 1.
 ## FlowEngine
 
 The new page system in 2.0 is powered by **FlowEngine** - a next-generation low-code frontend engine combining **Models** and **Flows**.
+
 It simplifies frontend logic, enhances reusability, and improves maintainability.
+
 By leveraging Flow’s configurable nature, it brings no-code orchestration to frontend components and business logic.
 
 Developing plugin frontends in 1.x often involved complex challenges. With FlowEngine, these are now greatly simplified.
@@ -112,6 +122,7 @@ Developing plugin frontends in 1.x often involved complex challenges. With FlowE
 ## Multi-Application and Multi-Space
 
 Version 1.x supported basic multi-application capability, but all apps shared a single process and could not be monitored or managed individually.
+
 NocoBase 2.0 introduces **a completely new Multi-App and Multi-Space architecture**.
 
 * **Multi-App Plugin** *(in development)*
@@ -129,6 +140,7 @@ NocoBase 2.0 introduces **a completely new Multi-App and Multi-Space architectur
 ## New Data Visualization
 
 The 1.x chart plugin was based on Ant Design Charts and ECharts, suitable for simple cases but limited for complex, interactive, or linked visualizations.
+
 NocoBase 2.0 introduces a **new Data Visualization Plugin** built fully on ECharts, supporting:
 
 * Visual configuration mode
@@ -145,6 +157,7 @@ And if SQL or JSON seems too complex - your AI Employee **Nathan** can help.
 ## Syncing Database Structure & Changing Field Types
 
 In version 1.x, tables and fields could only be created through NocoBase’s Data Source Manager and field types couldn’t be changed afterward.
+
 NocoBase 2.0 now allows:
 
 * Synchronizing existing tables and fields from your main database
@@ -171,6 +184,7 @@ The Form Draft plugin automatically saves draft data while users fill out forms,
 ### New Email Manager
 
 Rebuilt with FlowEngine, the new Email Manager seamlessly integrates AI Employees for summarizing, analyzing, and composing emails.
+
 It also introduces automatic draft saving and other enhancements.
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
@@ -180,9 +194,11 @@ It also introduces automatic draft saving and other enhancements.
 ## Upgrading from 1.x to 2.0
 
 Upgrading from 1.x to 2.0 is straightforward - simply follow the [official guide](https://v2.docs.nocobase.com/get-started/upgrading/docker).
+
 However, note that **NocoBase 2.0 is currently in alpha**, so expect some instability.
 
 Thanks to NocoBase’s **decoupled architecture between UI and data**, your existing 1.x applications will remain fully intact.
+
 When creating new pages, you can now choose between **v1** and **v2** types - select v2 to access the new NocoBase 2.0 features.
 
 ![20251102222729-2025-11-02-22-27-31](https://static-docs.nocobase.com/20251102222729-2025-11-02-22-27-31.png)
