@@ -137,7 +137,7 @@ NocoBase 希望成为这种场景下的人与 AI 协同的框架，一方面提�
 
 ### 最后
 
-我们已经准备好了，正式向你介绍 NocoBase 2.0，请与你的 AI 员工见面：
+我们已经准备好了，正式向你介绍 [NocoBase 2.0](https://www.nocobase.com/cn/blog/nocobase-2-0)，请与你的 AI 员工见面：
 
 <video controls>
   <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-CN.mp4" type="video/mp4">
