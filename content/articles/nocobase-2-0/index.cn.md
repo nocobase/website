@@ -45,7 +45,7 @@ RunJS 提供了一种轻量级的扩展方式，适合快速在界面上实现�
 - 联动规则
 - 事件流
 
-[详细了解 RUNJS](https://v2.docs.nocobase.com/cn/ai-employees)
+[详细了解 RUNJS](https://v2.docs.nocobase.com/cn//interface-builder/runjs)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
