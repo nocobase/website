@@ -50,6 +50,8 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 
 トリガー（レンダー前、クリック、値変更など）・条件・アクション（通知、ブロック更新、JS 実行）を組み合わせ、画面ロジックを視覚的に構成できます。
 
+[イベントフローの詳細](https://v2.docs.nocobase.com/interface-builder/event-flow)
+
 ![イベントフロー](https://static-docs.nocobase.com/20251031093341.png)
 
 ### グリッドレイアウト
