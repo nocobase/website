@@ -177,7 +177,9 @@ Today, while major players and startups with vast resources create dazzling AI p
 We’ll keep focusing on real, practical problems - helping AI employees blend naturally into enterprise workflows, solving one real problem at a time.
 
 Right now, AI accounts for less than 10% of what NocoBase 2.0 can do.
+
 Over the coming year, we hope to keep raising that percentage.
+
 When it reaches 50%, that may be the moment we release **NocoBase 3.0**.
 
 ### The Finale
