@@ -1,188 +1,145 @@
-NocoBase 1.0-alpha was released on April 28, 2024, marking the beginning of our commercial journey.
-In the past year or so, we have received feedback from thousands of users, code contributions from developers around the world, and commercial orders from hundreds of companies across more than 50 countries.
-We sincerely thank every user, contributor, and paying customer for your trust and support.
+NocoBase 1.0-alpha は 2024 年 4 月 28 日にリリースし、ここから商用展開が本格的に始まりました。
+この約 1 年で、世界 50 以上の国・地域の数百社に導入いただき、数千名のユーザーからのフィードバックと、世界中の開発者からの貢献を受けました。
 
-During the past six months, while continuously iterating and improving version 1.x, we have also spent significant time thinking, discussing, and developing the next generation of NocoBase.
-Now, it’s time to officially introduce **NocoBase 2.0-alpha!**
+ご支援くださったすべてのユーザー、コントリビューター、そしてお客様に心より感謝します。
 
-## AI Employees
+過去 6 か月は 1.x の改善を続けながら、次世代版の検討・設計・開発を進めてきました。
 
-The past year has seen rapid advances in AI, with large models showing remarkable-even astonishing-capabilities across many domains.
-As heavy AI users ourselves, we’ve brought AI directly into NocoBase 2.0 in the form of **AI Employees** - intelligent colleagues that work inside your system.
+いよいよ **NocoBase 2.0-alpha** を正式にご紹介します。
 
-AI Employees in NocoBase are **not chatbots**, nor isolated agents.
-They are **seamlessly integrated** into your business system, capable of understanding context and executing tasks directly.
+## AI スタッフ
 
-* They appear wherever you need them - beside your tables and forms - ready to assist.
-* They can summarize emails, analyze data, organize unstructured content and fill forms automatically, design data models, or even write JavaScript code.
-* They automatically retrieve contextual data and page structures for intelligent task execution.
-* Each has unique skills, tools, and knowledge bases.
-* You can create an unlimited number of AI Employees to form your own AI team.
+この 1 年で大規模モデルは飛躍的に進化しました。
+NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに直結。チャットボットではなく、業務システムに溶け込み、文脈を理解してタスクを実行します。
 
-[Learn more about AI Employees](https://v2.docs.nocobase.com/ai-employees)
+* テーブルやフォームの横で、必要なときにすぐ支援
+* メール要約、データ分析、非構造データの整理、フォーム自動入力、データモデル設計、JavaScript の生成まで対応
+* コンテキストデータやページ構造を自動取得し、最適に処理
+* それぞれ固有のスキル／ツール／知識を保持
+* 何体でも作成でき、独自の AI チームを構築可能
 
-[Try the Demo](https://demo.nocobase.com/new)
+[AI 従業員の詳細](https://v2.docs.nocobase.com/ai-employees) / [デモ](https://demo.nocobase.com/new)
+
+[デモを試す](https://demo.nocobase.com/new)
 
 <video controls>
   <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-EN.mp4" type="video/mp4">
 </video>
 
-## A Brand-New 2.0 Page System
+## 新しいページシステム 2.0
 
-While NocoBase has always been plugin-based, version 1.x had limitations when dealing with dynamic interactions, flexible layouts, or customized logic on the frontend.
-It was difficult to achieve such requirements without significant cost.
-
-NocoBase 2.0 introduces a **completely restructured page system** designed to support personalized and complex frontend needs efficiently.
+1.x では、フロントエンドの動的挙動や柔軟なレイアウト、独自ロジックの実装にコストがかかりました。
+2.0 では、こうした要件に応える **再設計されたページシステム** を搭載しています。
 
 ### RUNJS
 
-**RunJS** provides a lightweight way to extend and customize UI logic or styling - without creating plugins or modifying source code.
+プラグイン作成やソース改変なしに、ページデザイナー上で UI ロジックや見た目を軽量に拡張できる仕組みです。
 
-Within the page designer, you can write JavaScript directly to:
+* フィールド／ブロック／カラム／アイテムの表示内容をカスタマイズ
+* ボタン動作やイベントの独自アクションを定義
+* コンテキストデータと組み合わせた動的制御
 
-* Customize rendered content (fields, blocks, columns, items, etc.)
-* Define custom interactions (button actions, event triggers)
-* Combine with contextual data for dynamic behaviors
-
-RunJS is supported in:
-
-* JS block
-* JS action
-* JS field
-* JS item
-* Linkage rules
-* Event flows
-
-[Learn more about RUNJS](https://v2.docs.nocobase.com//interface-builder/runjs)
+利用可能箇所：JS ブロック／JS アクション／JS フィールド／JS アイテム／連動ルール／イベントフロー
+[RUNJS の詳細](https://v2.docs.nocobase.com/interface-builder/runjs)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
-### Event Flow
+### イベントフロー
 
-In NocoBase 1.x, the linkage rule system allowed limited logic orchestration, constrained to a single block.
-NocoBase 2.0 introduces **Event Flow**, a major enhancement to frontend logic configuration.
+トリガー（レンダー前、クリック、値変更など）・条件・アクション（通知、ブロック更新、JS 実行）を組み合わせ、画面ロジックを視覚的に構成できます。
 
-An Event Flow consists of:
+![イベントフロー](https://static-docs.nocobase.com/20251031093341.png)
 
-* **Trigger events**, such as before render, on click, or value change
-* **Trigger conditions**
-* **Action steps**, such as showing notifications, refreshing target blocks, or executing JavaScript
+### グリッドレイアウト
 
-![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251031093341.png)
+**グリッドレイアウト** により、各要素をグリッド単位で揃え、精密で美しい配置を実現します。
 
-### Grid Layout
+![グリッド](https://static-docs.nocobase.com/20251029201501.gif)
 
-In version 1.x, blocks and fields used a full-width flexible drag layout, which limited precision and aesthetics.
-NocoBase 2.0 introduces a **new grid layout system**, allowing every element to align with grid units for more refined control.
+### 再利用可能なブロック／モーダル
 
-![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251029201501.gif)
+ブロックとモーダルを **参照・複製** できるよう再設計。構成作業を大幅に削減します。
+[ブロック参照とコピー](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference) / [モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
-### Reusable Blocks and Modals
+![再利用](https://static-docs.nocobase.com/20251102211459_rec_.gif)
 
-In 1.x, the copy/reference features for blocks were limited and prone to bugs, and entire modals couldn’t be referenced.
-NocoBase 2.0 completely redefines this - enabling **flexible referencing and duplication** of both blocks and modals, dramatically reducing configuration effort.
+### ブロック体験の改善
 
-![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
+テーブルの **インライン編集** など、使い勝手を随所で向上。今後もアップデートを予定しています。
 
-[Learn more about Block References & Copies](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
-[Learn more about Modal References](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
+![インライン編集](https://static-docs.nocobase.com/20251102215026-2025-11-02-21-50-28.png)
 
-### Enhanced Block Experience
+### パフォーマンス
 
-Based on user feedback, NocoBase 2.0 brings many refinements to block components.
-For example, tables now support **inline editing** directly within cells - no popup needed.
-More improvements are on the way.
-
-![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102215026-2025-11-02-21-50-28.png)
-
-### Better Performance
-
-NocoBase 2.0 delivers significantly improved frontend performance compared to 1.x.
+フロントエンド全体の体感性能を 1.x 比で大きく改善しました。
 
 ## FlowEngine
 
-The new page system in 2.0 is powered by **FlowEngine** - a next-generation low-code frontend engine combining **Models** and **Flows**.
-It simplifies frontend logic, enhances reusability, and improves maintainability.
-By leveraging Flow’s configurable nature, it brings no-code orchestration to frontend components and business logic.
+**FlowEngine** は、モデルとフローを組み合わせた次世代のローコードフロントエンドエンジンです。
+ロジックの見通しを良くし、再利用性と保守性を高めます。1.x で複雑だったプラグイン UI 実装も、格段に簡単になります。
+[FlowEngine の概要](https://v2.docs.nocobase.com/flow-engine/what-is-flow-engine)
 
-Developing plugin frontends in 1.x often involved complex challenges. With FlowEngine, these are now greatly simplified.
+## マルチアプリ／マルチスペース
 
-[Learn more about FlowEngine](https://v2.docs.nocobase.com/flow-engine/what-is-flow-engine)
+**新アーキテクチャ** により、アプリ単位での監視・管理や、インスタンス内の論理分離を実現します。
 
-## Multi-Application and Multi-Space
+* **マルチアプリ（開発中）：**個別デプロイなしでアプリを動的作成。各アプリは独自 DB・プラグイン・設定を持ち、分離／共有プロセスで稼働。親アプリからリソース状況を一元管理でき、マルチテナントに最適。
+* **マルチスペース**：単一インスタンス内での組織・拠点別のデータ分離に対応。ロジックや設定は共通化しつつ、データは完全に隔離。
 
-Version 1.x supported basic multi-application capability, but all apps shared a single process and could not be monitored or managed individually.
-NocoBase 2.0 introduces **a completely new Multi-App and Multi-Space architecture**.
+![マルチ](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
+[マルチスペースの詳細](https://v2.docs.nocobase.com/multi-app/multi-space)
 
-* **Multi-App Plugin** *(in development)*
-  Enables dynamic creation and management of multiple standalone apps without separate deployments.
-  Each app runs as an independent instance with its own database, plugins, and configuration - either in isolated or shared processes.
-  The parent app can monitor and manage resource usage and status of sub-apps, ideal for multi-tenant scenarios.
-* **Multi-Space Plugin**
-  Allows logical isolation within a single instance - perfect for scenarios like multi-branch or multi-factory setups.
-  Business logic, workflows, and configurations remain consistent, while data stays completely isolated.
+## 新しいデータ可視化
 
-![20251102220714-2025-11-02-22-07-16](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
+ECharts ベースの **新データ可視化プラグイン** を搭載。
 
-[Learn more about Multi-Space](https://v2.docs.nocobase.com/multi-app/multi-space)
+ビジュアル構成／SQL／JSON、イベント連動、複数チャートの連携・ドリルダウンに対応。
 
-## New Data Visualization
+SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けします。
+[可視化の詳細](https://v2.docs.nocobase.com/multi-app/multi-space)
 
-The 1.x chart plugin was based on Ant Design Charts and ECharts, suitable for simple cases but limited for complex, interactive, or linked visualizations.
-NocoBase 2.0 introduces a **new Data Visualization Plugin** built fully on ECharts, supporting:
+![可視化](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
-* Visual configuration mode
-* SQL and JSON modes
-* Event-driven interaction
-* Multi-chart linkage and drill-down
+## スキーマ同期とフィールド型変更
 
-And if SQL or JSON seems too complex - your AI Employee **Nathan** can help.
+既存 DB のテーブルやフィールドを同期し、作成後でもフィールド型を変更できます。
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
+既存スキーマをそのまま主要データソースとして活用可能です。
 
-[Learn more about Data Visualization](https://v2.docs.nocobase.com/multi-app/multi-space)
+![スキーマ同期](https://static-docs.nocobase.com/20251102222325-2025-11-02-22-23-27.png)
 
-## Syncing Database Structure & Changing Field Types
+## 追加プラグイン
 
-In version 1.x, tables and fields could only be created through NocoBase’s Data Source Manager and field types couldn’t be changed afterward.
-NocoBase 2.0 now allows:
+### レコード履歴
 
-* Synchronizing existing tables and fields from your main database
-* Changing field types after creation
+挿入・更新・削除を自動追跡し、スナップショットや差分を保存。監査・ロールバックに有効です。
+[レコード履歴](https://v2.docs.nocobase.com/record-history/)
 
-This means you can directly use an existing database schema as your primary data source.
+![履歴](https://static-docs.nocobase.com/202511011346400.png)
 
-![20251102222325-2025-11-02-22-23-27](https://static-docs.nocobase.com/20251102222325-2025-11-02-22-23-27.png)
+### フォーム下書き
 
-## Additional Plugins
+入力途中のデータを自動保存し、思わぬロスを防ぎます。
 
-### Record History
+### 新メールマネージャー
 
-The Record History plugin automatically tracks data changes - insertions, updates, deletions - saving snapshots and diffs for audit and rollback purposes.
+FlowEngine で再構築し、AI 従業員と連携して要約・分析・作成を支援。自動下書き保存なども追加しました。
+[メールマネージャー](https://v2.docs.nocobase.com/email-manager/)
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
+![メール](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 
-[Learn more about Record History](https://v2.docs.nocobase.com/record-history/)
+## 1.x から 2.0 へ
 
-### Form Drafts
+移行はシンプルです。手順は [公式ガイド](https://v2.docs.nocobase.com/get-started/upgrading/docker) をご覧ください。
 
-The Form Draft plugin automatically saves draft data while users fill out forms, preventing accidental loss.
+**2.0 は α 版** のため、一部に不安定な挙動が残る可能性があります。
 
-### New Email Manager
+**UI とデータの分離アーキテクチャ** により、1.x のアプリはそのまま維持されます。
 
-Rebuilt with FlowEngine, the new Email Manager seamlessly integrates AI Employees for summarizing, analyzing, and composing emails.
-It also introduces automatic draft saving and other enhancements.
+新規ページ作成時に **v1／v2** を選択でき、v2 を選べば 2.0 の新機能を利用できます。
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
+![切替](https://static-docs.nocobase.com/20251102222729-2025-11-02-22-27-31.png)NocoBase 1.0-alpha は 2024 年 4 月 28 日にリリースし、ここから商用展開が本格的に始まりました。
 
-[Learn more about Email Manager](https://v2.docs.nocobase.com/email-manager/)
+この約 1 年で、世界 50 以上の国・地域の数百社に導入いただき、数千名のユーザーからのフィードバックと、世界中の開発者からの貢献を受けました。
 
-## Upgrading from 1.x to 2.0
-
-Upgrading from 1.x to 2.0 is straightforward - simply follow the [official guide](https://v2.docs.nocobase.com/get-started/upgrading/docker).
-However, note that **NocoBase 2.0 is currently in alpha**, so expect some instability.
-
-Thanks to NocoBase’s **decoupled architecture between UI and data**, your existing 1.x applications will remain fully intact.
-When creating new pages, you can now choose between **v1** and **v2** types - select v2 to access the new NocoBase 2.0 features.
-
-![20251102222729-2025-11-02-22-27-31](https://static-docs.nocobase.com/20251102222729-2025-11-02-22-27-31.png)
+ご支援くださったすべてのユーザー、コントリビューター、そしてお客様に心より感謝します。
