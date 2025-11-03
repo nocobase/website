@@ -74,6 +74,8 @@ An Event Flow consists of:
 * **Trigger conditions**
 * **Action steps**, such as showing notifications, refreshing target blocks, or executing JavaScript
 
+[Learn more about Event Flow](https://v2.docs.nocobase.com/interface-builder/event-flow)
+
 ![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251031093341.png)
 
 ### Grid Layout
