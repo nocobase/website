@@ -142,11 +142,16 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
   main {
     margin: 0 auto;
   }
-  
+
   :global(.markdown-body iframe) {
     max-width: 100%;
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+  :global(.markdown-body video) {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
   }
 </style>
