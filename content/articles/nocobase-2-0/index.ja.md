@@ -64,7 +64,7 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 
 [ブロック参照とコピー](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
 
- [モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
+[モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
 ![再利用](https://static-docs.nocobase.com/20251102211459_rec_.gif)
 
@@ -105,7 +105,7 @@ ECharts ベースの **新データ可視化プラグイン** を搭載。
 
 SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けします。
 
-[可視化の詳細](https://v2.docs.nocobase.com/multi-app/multi-space)
+[可視化の詳細](https://v2.docs.nocobase.com/data-visualization)
 
 ![可視化](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
