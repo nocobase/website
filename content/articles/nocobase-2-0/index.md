@@ -153,7 +153,7 @@ NocoBase 2.0 introduces a **new Data Visualization Plugin** built fully on EChar
 
 And if SQL or JSON seems too complex - your AI Employee **Nathan** can help.
 
-[Learn more about Data Visualization](https://v2.docs.nocobase.com/multi-app/multi-space)
+[Learn more about Data Visualization](https://v2.docs.nocobase.com/data-visualization)
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
