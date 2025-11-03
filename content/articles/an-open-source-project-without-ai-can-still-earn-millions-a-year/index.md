@@ -184,7 +184,7 @@ When it reaches 50%, that may be the moment we release **NocoBase 3.0**.
 
 ### The Finale
 
-We’re ready. It’s time to officially introduce NocoBase 2.0 - and invite you to meet your AI Employees.
+We’re ready. It’s time to officially introduce [NocoBase 2.0](https://www.nocobase.com/en/blog/nocobase-2-0) - and invite you to meet your AI Employees.
 
 <video controls>
   <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-EN.mp4" type="video/mp4">
