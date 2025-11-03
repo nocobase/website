@@ -10,6 +10,7 @@ NocoBase 1.0-alpha は 2024 年 4 月 28 日にリリースし、ここから商
 ## AI スタッフ
 
 この 1 年で大規模モデルは飛躍的に進化しました。
+
 NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに直結。チャットボットではなく、業務システムに溶け込み、文脈を理解してタスクを実行します。
 
 * テーブルやフォームの横で、必要なときにすぐ支援
@@ -40,6 +41,7 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 * コンテキストデータと組み合わせた動的制御
 
 利用可能箇所：JS ブロック／JS アクション／JS フィールド／JS アイテム／連動ルール／イベントフロー
+
 [RUNJS の詳細](https://v2.docs.nocobase.com/interface-builder/runjs)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
@@ -59,7 +61,10 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 ### 再利用可能なブロック／モーダル
 
 ブロックとモーダルを **参照・複製** できるよう再設計。構成作業を大幅に削減します。
-[ブロック参照とコピー](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference) / [モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
+
+[ブロック参照とコピー](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
+
+ [モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
 ![再利用](https://static-docs.nocobase.com/20251102211459_rec_.gif)
 
@@ -76,7 +81,9 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 ## FlowEngine
 
 **FlowEngine** は、モデルとフローを組み合わせた次世代のローコードフロントエンドエンジンです。
+
 ロジックの見通しを良くし、再利用性と保守性を高めます。1.x で複雑だったプラグイン UI 実装も、格段に簡単になります。
+
 [FlowEngine の概要](https://v2.docs.nocobase.com/flow-engine/what-is-flow-engine)
 
 ## マルチアプリ／マルチスペース
@@ -86,8 +93,9 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 * **マルチアプリ（開発中）：**個別デプロイなしでアプリを動的作成。各アプリは独自 DB・プラグイン・設定を持ち、分離／共有プロセスで稼働。親アプリからリソース状況を一元管理でき、マルチテナントに最適。
 * **マルチスペース**：単一インスタンス内での組織・拠点別のデータ分離に対応。ロジックや設定は共通化しつつ、データは完全に隔離。
 
-![マルチ](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
 [マルチスペースの詳細](https://v2.docs.nocobase.com/multi-app/multi-space)
+
+![マルチ](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
 
 ## 新しいデータ可視化
 
@@ -96,6 +104,7 @@ ECharts ベースの **新データ可視化プラグイン** を搭載。
 ビジュアル構成／SQL／JSON、イベント連動、複数チャートの連携・ドリルダウンに対応。
 
 SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けします。
+
 [可視化の詳細](https://v2.docs.nocobase.com/multi-app/multi-space)
 
 ![可視化](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
@@ -113,6 +122,7 @@ SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けしま�
 ### レコード履歴
 
 挿入・更新・削除を自動追跡し、スナップショットや差分を保存。監査・ロールバックに有効です。
+
 [レコード履歴](https://v2.docs.nocobase.com/record-history/)
 
 ![履歴](https://static-docs.nocobase.com/202511011346400.png)
@@ -124,6 +134,7 @@ SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けしま�
 ### 新メールマネージャー
 
 FlowEngine で再構築し、AI 従業員と連携して要約・分析・作成を支援。自動下書き保存なども追加しました。
+
 [メールマネージャー](https://v2.docs.nocobase.com/email-manager/)
 
 ![メール](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
