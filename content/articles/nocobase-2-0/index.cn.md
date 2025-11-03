@@ -49,7 +49,7 @@ RunJS 提供了一种轻量级的扩展方式，适合快速在界面上实现�
 - 联动规则
 - 事件流
 
-[详细了解 RUNJS](https://v2.docs.nocobase.com/cn//interface-builder/runjs)
+[详细了解 RUNJS](https://v2.docs.nocobase.com/cn/interface-builder/runjs)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
@@ -84,6 +84,8 @@ NocoBase 2.0 中采用了全新的栅格布局，每个元素都可以对齐格�
 [详细了解引用和复制区块](https://v2.docs.nocobase.com/cn/interface-builder/blocks/other-blocks/block-reference)
 
 [详细了解引用弹窗](https://v2.docs.nocobase.com/cn/interface-builder/actions/action-settings/edit-popup)
+
+![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
 
 #### 提升区块体验
 
