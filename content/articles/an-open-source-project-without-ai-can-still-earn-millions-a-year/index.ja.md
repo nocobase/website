@@ -142,7 +142,8 @@ NocoBaseは、人とAIが共に働くための基盤を目指しています。�
 ### 最後に
 
 私たちは準備を整えました。
-NocoBase 2.0を正式に紹介します。あなたのAI社員に、ぜひ会ってください。
+
+[NocoBase 2.0](https://www.nocobase.com/ja/blog/nocobase-2-0)を正式に紹介します。あなたのAI社員に、ぜひ会ってください。
 
 <video controls>
   <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-EN.mp4" type="video/mp4">
