@@ -1,6 +1,6 @@
 ### 前情
 
-我们在去年 NocoBase 发布 1.0 的时候，写过一篇文章：《一个不知名的开源产品能带来多少收入》，分享了过去 12 个月 NocoBase 的收入。如今又一年过去了，在这一年里世界发生了很大的变化，家喻户晓的 ChatGPT，超低成本的 Deepseek，你追我赶的 Cursor 和 Claude，全世界都在谈论 AI，仿佛 AI 已经准备接管全世界，股市也因此来到了前所未有的高度。
+我们在去年 NocoBase 发布 1.0 的时候，写过一篇文章：《[一个不知名的开源产品可以带来多少收入](https://www.nocobase.com/cn/blog/how-much-revenue-can-an-unknown-open-source-project-get)》，分享了过去 12 个月 NocoBase 的收入。如今又一年过去了，在这一年里世界发生了很大的变化，家喻户晓的 ChatGPT，超低成本的 Deepseek，你追我赶的 Cursor 和 Claude，全世界都在谈论 AI，仿佛 AI 已经准备接管全世界，股市也因此来到了前所未有的高度。
 
 在如此热烈的 AI 氛围中，NocoBase 仍然在“无代码平台”这个定位和话题下，一边持续迭代开发 1.X 版本，一边经常被质问：
 
