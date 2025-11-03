@@ -71,7 +71,7 @@ NocoBase 2.0 中新增了事件流功能，使前端逻辑编排能力大大增�
 
 在 NocoBase 1.x 中，对区块、字段拖拽布局时，每个元素的宽度是自由拖拽且必须充满整行宽度的，这在很多时候并不方便做出精确、美观的布局。
 
-NocoBase 2.0 中采用了全新的格栅布局，每个元素都可以对其格栅。
+NocoBase 2.0 中采用了全新的栅格布局，每个元素都可以对齐格栅。
 
 ![20251031093341-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251029201501.gif)
 
@@ -84,7 +84,6 @@ NocoBase 2.0 中采用了全新的格栅布局，每个元素都可以对其格�
 [详细了解引用和复制区块](https://v2.docs.nocobase.com/cn/interface-builder/blocks/other-blocks/block-reference)
 
 [详细了解引用弹窗](https://v2.docs.nocobase.com/cn/interface-builder/actions/action-settings/edit-popup)
-
 
 #### 提升区块体验
 
