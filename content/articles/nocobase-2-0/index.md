@@ -1,8 +1,10 @@
 NocoBase 1.0-alpha was released on April 28, 2024, marking the beginning of our commercial journey.
 In the past year or so, we have received feedback from thousands of users, code contributions from developers around the world, and commercial orders from hundreds of companies across more than 50 countries.
+
 We sincerely thank every user, contributor, and paying customer for your trust and support.
 
 During the past six months, while continuously iterating and improving version 1.x, we have also spent significant time thinking, discussing, and developing the next generation of NocoBase.
+
 Now, it’s time to officially introduce **NocoBase 2.0-alpha!**
 
 ## AI Employees
@@ -88,10 +90,11 @@ In 1.x, the copy/reference features for blocks were limited and prone to bugs, a
 
 NocoBase 2.0 completely redefines this - enabling **flexible referencing and duplication** of both blocks and modals, dramatically reducing configuration effort.
 
-![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
-
 [Learn more about Block References & Copies](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
+
 [Learn more about Modal References](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
+
+![20251102215026-2025-11-02-21-50-28](https://static-docs.nocobase.com/20251102211459_rec_.gif)
 
 ### Enhanced Block Experience
 
@@ -133,9 +136,9 @@ NocoBase 2.0 introduces **a completely new Multi-App and Multi-Space architectur
   Allows logical isolation within a single instance - perfect for scenarios like multi-branch or multi-factory setups.
   Business logic, workflows, and configurations remain consistent, while data stays completely isolated.
 
-![20251102220714-2025-11-02-22-07-16](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
-
 [Learn more about Multi-Space](https://v2.docs.nocobase.com/multi-app/multi-space)
+
+![20251102220714-2025-11-02-22-07-16](https://static-docs.nocobase.com/20251102220714-2025-11-02-22-07-16.png)
 
 ## New Data Visualization
 
@@ -150,9 +153,9 @@ NocoBase 2.0 introduces a **new Data Visualization Plugin** built fully on EChar
 
 And if SQL or JSON seems too complex - your AI Employee **Nathan** can help.
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
-
 [Learn more about Data Visualization](https://v2.docs.nocobase.com/multi-app/multi-space)
+
+![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
 ## Syncing Database Structure & Changing Field Types
 
@@ -173,9 +176,9 @@ This means you can directly use an existing database schema as your primary data
 
 The Record History plugin automatically tracks data changes - insertions, updates, deletions - saving snapshots and diffs for audit and rollback purposes.
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
-
 [Learn more about Record History](https://v2.docs.nocobase.com/record-history/)
+
+![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
 
 ### Form Drafts
 
@@ -187,9 +190,9 @@ Rebuilt with FlowEngine, the new Email Manager seamlessly integrates AI Employee
 
 It also introduces automatic draft saving and other enhancements.
 
-![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
-
 [Learn more about Email Manager](https://v2.docs.nocobase.com/email-manager/)
+
+![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 
 ## Upgrading from 1.x to 2.0
 
