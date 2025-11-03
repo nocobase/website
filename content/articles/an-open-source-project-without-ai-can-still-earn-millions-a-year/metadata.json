@@ -1,8 +1,8 @@
 {
   "id": 746,
-  "title": "An Open Source Project Without AI Can Still Earn Millions a Year",
-  "title_cn": "与 AI 无关的开源项目也能年入千万",
-  "title_ja": "AIと無関係なオープンソースプロジェクトでも年間一千万元を稼ぐことができる",
+  "title": "How Much Can an Open Source Product Earn — When It Has Nothing to Do with AI",
+  "title_cn": "一个与 AI 无关的开源产品可以带来多少收入",
+  "title_ja": "AIと無縁のオープンソースプロジェクトは、どこまで収益を上げられるのか",
   "description": "In the past 12 months, we received orders from more than 400 companies across 57 countries, with total revenue reaching 1.45 million USD (converted at current exchange rates).",
   "description_cn": "在过去的 12 个月里，我们总共收到 57 个国家、400 多家企业的订单，总收入合计为人民币 1030 万元（外币按当前汇率折算成人民币）。",
   "description_ja": "過去12か月で、NocoBaseは57か国・400社以上の企業から注文を受け、総収益は人民元で1,030万元（為替換算後）に達しました。",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-03T02:40:14.687Z"
+  "updatedAt": "2025-11-03T03:03:17.140Z"
 }
