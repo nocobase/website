@@ -53,7 +53,7 @@ RunJS is supported in:
 * Linkage rules
 * Event flows
 
-[Learn more about RUNJS](https://v2.docs.nocobase.com/ai-employees)
+[Learn more about RUNJS](https://v2.docs.nocobase.com//interface-builder/runjs)
 
 ![20251102213506-2025-11-02-21-35-08](https://static-docs.nocobase.com/20251102213506-2025-11-02-21-35-08.png)
 
