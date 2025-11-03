@@ -124,7 +124,6 @@ NocoBase 2.0では、顧客メールの横にAI社員**Ellis**を配置しまし
 
 ![img2](https://static-docs.nocobase.com/2025-10-31_21-20-44.png)
 
-
 冒頭の問いに戻りましょう。AIはNocoBaseを終わらせるのでしょうか？
 私の答えはこうです。もしAIが本当にNocoBaseを終わらせるのなら、それはNocoBaseだけでなく、私たちの暮らしにも、もっと深刻で心配すべき変化が起きているということです。逆にAIがNocoBaseを終わらせないのなら、その能力が高まるほど、NocoBaseはより多くの恩恵を受けるでしょう。
 
@@ -145,5 +144,5 @@ NocoBaseは、人とAIが共に働くための基盤を目指しています。�
 NocoBase 2.0を正式に紹介します。あなたのAI社員に、ぜひ会ってください。
 
 <video controls>
-  <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-CN.mp4" type="video/mp4">
+  <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-EN.mp4" type="video/mp4">
 </video>
