@@ -1,14 +1,14 @@
 {
   "id": 747,
-  "title": "NocoBase v1.9.0-beta.16",
-  "title_cn": "NocoBase v1.9.0-beta.16",
-  "title_ja": null,
+  "title": "NocoBase v1.9.0-beta.16: Support trigger mode of \"Before data saved\"",
+  "title_cn": "NocoBase v1.9.0-beta.16：支持“数据保存前”的触发模式",
+  "title_ja": "NocoBase v1.9.0-beta.16：データ保存前トリガーモードをサポート",
   "description": "Release Note of v1.9.0-beta.16",
   "description_cn": "v1.9.0-beta.16 更新日志",
-  "description_ja": null,
+  "description_ja": "v1.9.0-beta.16 のリリースノート",
   "slug": "v1.9.0-beta.16",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-03T08:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2025-11-04T02:47:34.528Z",
+        "updatedAt": "2025-11-04T02:47:34.528Z",
+        "articles_id": 747,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-04T02:47:13.592Z",
+    "updatedAt": "2025-11-04T02:47:13.606Z",
+    "id": 2038,
+    "title": "next_ v1.9.0-beta.16",
+    "filename": "next_ v1.9.0-beta.16-82ctv7.jpg",
+    "extname": ".jpg",
+    "size": 94640,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20v1.9.0-beta.16-82ctv7.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20v1.9.0-beta.16-82ctv7.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-11-02T16:02:44.854Z"
+  "updatedAt": "2025-11-04T02:47:47.441Z"
 }
