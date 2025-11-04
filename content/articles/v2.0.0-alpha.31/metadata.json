@@ -1,14 +1,14 @@
 {
   "id": 749,
-  "title": "NocoBase v2.0.0-alpha.31",
-  "title_cn": "NocoBase v2.0.0-alpha.31",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.31: Support trigger mode of \"Before data saved\"",
+  "title_cn": "NocoBase v2.0.0-alpha.31：支持“数据保存前”的触发模式",
+  "title_ja": "NocoBase v2.0.0-alpha.31：データ保存前トリガーモードをサポート",
   "description": "Release Note of v2.0.0-alpha.31",
   "description_cn": "v2.0.0-alpha.31 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.31 のリリースノート",
   "slug": "v2.0.0-alpha.31",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-03T10:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-04T02:52:40.487Z",
+        "updatedAt": "2025-11-04T02:52:40.487Z",
+        "articles_id": 749,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-04T02:51:10.583Z",
+    "updatedAt": "2025-11-04T02:51:10.588Z",
+    "id": 2039,
+    "title": "developv2.0.0-alpha.31",
+    "filename": "developv2.0.0-alpha.31-kb3j6s.jpg",
+    "extname": ".jpg",
+    "size": 81315,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/developv2.0.0-alpha.31-kb3j6s.jpg",
+    "preview": "https://static-docs.nocobase.com/developv2.0.0-alpha.31-kb3j6s.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-11-03T01:48:30.515Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-11-04T02:52:40.477Z"
 }
