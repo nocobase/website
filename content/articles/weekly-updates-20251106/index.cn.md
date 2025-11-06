@@ -231,7 +231,7 @@
 
 ### 🐛 修复
 
-- **[client]** 修复数据表关系字段删除后UI 区块显示异常问题 ([#7706](https://github.com/nocobase/nocobase/pull/7706)) by @katherinehhh
+- **[client]** 修复数据表关系字段删除后 UI 区块显示异常问题 ([#7706](https://github.com/nocobase/nocobase/pull/7706)) by @katherinehhh
 
 ### [v2.0.0-alpha.26](https://www.nocobase.com/cn/blog/v2.0.0-alpha.26)
 
