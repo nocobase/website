@@ -1,0 +1,65 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, processor } from "../../utils";
+
+const page = await getPage("join-us", "cn");
+
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+  </PageHeader>
+
+  <!-- Start Join -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body">
+              <h5 class="title fw-bold mb-1">合作伙伴生态体系负责人</h5>
+              <p></p>
+              <p>有越来越多的来自全球各地的公司和开发者联系我们希望进行合作，在当地做市场、分销、服务等工作。我们决定开始着手建设合作伙伴生态体系，希望寻找一位对 NocoBase 有兴趣、对这方面工作有兴趣的新同事加入我们。 </p>
+              <p>角色职责：</p> 
+              <ul>
+                <li>搭建 NocoBase 合作伙伴生态体系，包括规则、流程、文档等 </li> 
+                <li>与全球各地的潜在合作伙伴、用户沟通，推动伙伴发展</li> 
+              </ul>
+              <p>基本要求：</p> 
+              <ul>
+                <li>互联网技术开发出身，熟悉前后端技术栈</li>
+                <li>擅长交流和写作</li>
+                <li>可以用中文和英语流畅交流</li>
+                <li>熟悉各类 AI 产品的使用</li>
+              </ul>
+              <p>加分项：</p>
+              <ul>
+                <li>有无代码、低代码产品开发或使用经验</li>
+                <li>有社区建设或管理经验</li>
+                <li>有个人作品</li>
+                <li>熟悉日语、西语等语言</li>
+              </ul>
+              <p>工作地点：</p>
+              <ul>
+                <li>远程工作，不限地点</li>
+              </ul>
+              <p>联系方式：</p>
+              <ul>
+                <li>hello@nocobase.com</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Join -->
+</Layout>
