@@ -11,16 +11,16 @@
   "status": "published",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
-    "updatedAt": "2025-02-26T08:08:16.796Z",
+    "updatedAt": "2025-09-29T11:07:32.310Z",
     "description": "By showcasing concise examples and tips based on real-world use cases, you’ll quickly gain familiarity with NocoBase’s core features and best practices—enabling you to get started and develop efficiently.",
     "description_cn": "旨在通过简洁的小需求示例与小技巧分享，帮助你快速熟悉并掌握 NocoBase 的核心功能与最佳实践，让你轻松上手、高效开发。",
     "id": 4,
-    "title": "Tips & Tricks",
-    "title_cn": "实用技巧",
+    "title": "Tips & Tricks (1.0)",
+    "title_cn": "实用技巧 (1.0)",
     "status": "published",
-    "sort": 20,
+    "sort": 300,
     "slug": "tips-tricks",
-    "title_ja": "ヒントとコツ",
+    "title_ja": "ヒントとコツ (1.0)",
     "description_ja": "シンプルな小規模ニーズの例やちょっとしたテクニックを紹介しながら、NocoBaseのコア機能とベストプラクティスを手軽に習得できるようサポートします。これにより、スムーズに使い始められ、効率的な開発を実現できます。",
     "createdById": 9,
     "updatedById": 9
@@ -314,5 +314,5 @@
       }
     }
   ],
-  "updatedAt": "2025-04-17T06:56:42.033Z"
+  "updatedAt": "2025-11-10T08:48:43.744Z"
 }
