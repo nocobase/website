@@ -1,14 +1,14 @@
 {
   "id": 757,
-  "title": "NocoBase v2.0.0-alpha.36",
-  "title_cn": "NocoBase v2.0.0-alpha.36",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.36: Optimize the toolbar styles for page tabs",
+  "title_cn": "NocoBase v2.0.0-alpha.36：优化页面标签的工具栏样式",
+  "title_ja": "NocoBase v2.0.0-alpha.36：ページタブのツールバーのスタイルを最適化",
   "description": "Release Note of v2.0.0-alpha.36",
   "description_cn": "v2.0.0-alpha.36 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.36 のリリースノート",
   "slug": "v2.0.0-alpha.36",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-07T03:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-10T03:36:09.375Z",
+        "updatedAt": "2025-11-10T03:36:09.375Z",
+        "articles_id": 757,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-10T03:33:40.831Z",
+    "updatedAt": "2025-11-10T03:33:40.847Z",
+    "id": 2047,
+    "title": "develop (1)",
+    "filename": "develop (1)-g1iba9.jpg",
+    "extname": ".jpg",
+    "size": 81529,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(1)-g1iba9.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(1)-g1iba9.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-11-07T02:53:48.795Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-11-10T03:36:09.356Z"
 }
