@@ -2,12 +2,12 @@
   "id": 763,
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
-  "title_ja": null,
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "description": "This week's update includes: ",
+  "description_cn": "本周更新包括：",
+  "description_ja": "今週の更新内容は以下の通りです：",
   "slug": "weekly-updates-20251113",
-  "publishedAt": "2025-11-05T16:51:38.000Z",
+  "publishedAt": "2025-11-12T18:51:38.000Z",
   "status": "drafted",
   "tags": [
     {
@@ -63,7 +63,34 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T07:04:48.761Z",
+      "updatedAt": "2025-03-31T15:42:56.701Z",
+      "id": 117,
+      "title": "News & Updates",
+      "title_cn": "最新动态",
+      "sort": 116,
+      "description": "Stay up to date with weekly progress, upcoming features, and important announcements from NocoBase.",
+      "description_cn": "汇总 NocoBase 的每周进展、版本预告与重要消息。",
+      "displayOnPage": true,
+      "slug": "news-updates",
+      "displayOnBlog": true,
+      "keywords": "NocoBase news, weekly updates, feature previews, official announcements, product progress",
+      "keywords_cn": "NocoBase 最新动态, 每周更新, 功能预告, 官方公告, 产品进展",
+      "title_ja": "最新情報",
+      "description_ja": "NocoBaseの週間進捗、新機能の予告、お知らせなどをまとめてお届けします。",
+      "keywords_ja": "NocoBase 最新情報, 週間アップデート, 機能予告, 公式発表, 製品進捗",
+      "createdById": 9,
+      "updatedById": 1,
+      "article_sub_tags": {
+        "createdAt": "2025-11-12T18:30:04.793Z",
+        "updatedAt": "2025-11-12T18:30:04.793Z",
+        "articles_id": 763,
+        "tags_id": 117
+      }
+    }
+  ],
   "category": null,
   "cover": {
     "createdAt": "2025-11-12T17:23:41.482Z",
@@ -83,10 +110,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "author": null,
+  "hideOnBlog": true,
+  "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-11-12T17:23:51.901Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-11-12T18:30:04.760Z"
 }
