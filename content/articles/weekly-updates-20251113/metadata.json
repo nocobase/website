@@ -3,12 +3,12 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新内容は以下の通りです：",
+  "description": "This week's update includes: Support dragging for table column actions, add chart SQL datasource, and more.",
+  "description_cn": "本周更新包括：支持表格列操作的拖动，新增图表 SQL 数据源等。",
+  "description_ja": "今週の更新内容は以下の通りです：テーブル列のドラッグ操作をサポート ，チャート用 SQL データソースを新規追加",
   "slug": "weekly-updates-20251113",
   "publishedAt": "2025-11-12T18:51:38.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-12T18:30:04.760Z"
+  "updatedAt": "2025-11-12T19:20:18.128Z"
 }
