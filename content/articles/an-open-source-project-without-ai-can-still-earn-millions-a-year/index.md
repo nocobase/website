@@ -1,6 +1,6 @@
 ### Background
 
-Last year, when NocoBase 1.0 was released, we published an article titled “[How much revenue can an unknown open-source project get]([https://www.nocobase.com/en/blog/how-much-revenue-can-an-unknown-open-source-project-get)” sharing what we had earned over the previous 12 months.
+Last year, when NocoBase 1.0 was released, we published an article titled “[How much revenue can an unknown open-source project get](https://www.nocobase.com/en/blog/how-much-revenue-can-an-unknown-open-source-project-get)” sharing what we had earned over the previous 12 months.
 
 Another year has passed. The world has changed dramatically - ChatGPT became a household name, DeepSeek pushed costs to almost nothing, and Cursor and Claude are in a fierce race. The whole world is talking about AI, as if it’s ready to take over everything. Stock markets have surged to historic highs on that belief.
 
