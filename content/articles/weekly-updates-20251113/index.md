@@ -158,4 +158,4 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - block's data scope is not working if set by page event flow ([#7788](https://github.com/nocobase/nocobase/pull/7788)) by @gchust
 - **[Workflow]** Add `workflowId` as identity data for logs of workflow ([#7789](https://github.com/nocobase/nocobase/pull/7789)) by @mytharcher
 - **[Workflow: Custom variable]** Fix error thrown when no config in variable node by @mytharcher
-- **[Email manager]** collection mailMessages add indexes by @jiannx
+- **[Email manager]** collection MailMessages add indexes by @jiannx
