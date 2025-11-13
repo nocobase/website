@@ -149,4 +149,4 @@
   * ページイベントフロー設定でブロックのデータ範囲が有効にならない問題を修正 ([#7788](https://github.com/nocobase/nocobase/pull/7788)) by @gchust
 * **[ワークフロー]** ワークフローのログに `workflowId` データ識別子を追加 ([#7789](https://github.com/nocobase/nocobase/pull/7789)) by @mytharcher
 * **[ワークフロー：カスタム変数ノード]** 変数ノードで config が欠落している場合にエラーが発生する問題を修正 by @mytharcher
-* **[メール管理]**`mailMessages` にインデックスを追加 by @jiannx
+* **[メール管理]**`MailMessages` にインデックスを追加 by @jiannx
