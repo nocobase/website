@@ -32,7 +32,7 @@
 ### 🐛 修复
 
 - **[工作流：审批]** 修复重查关系数据时未屏蔽主表字段的问题 by @mytharcher
-- **[邮件管理]** 修复 outlook 内敛图片和同步问题 by @jiannx
+- **[邮件管理]** 修复 Outlook 内敛图片和同步问题 by @jiannx
 
 ### [v1.9.4](https://www.nocobase.com/cn/blog/v1.9.4)
 
@@ -101,7 +101,7 @@
 - **[client]**
 
   - 新增页面版本到 flow engine 上下文里 ([#7826](https://github.com/nocobase/nocobase/pull/7826)) by @gchust
-  - 优化 markdown 编辑器 ([#7793](https://github.com/nocobase/nocobase/pull/7793)) by @katherinehhh
+  - 优化 Markdown 编辑器 ([#7793](https://github.com/nocobase/nocobase/pull/7793)) by @katherinehhh
   - 2.0 区块适配 tableoid 字段 ([#7809](https://github.com/nocobase/nocobase/pull/7809)) by @katherinehhh
 - **[数据可视化]** 更新图表提示栏和事件代码模板注释 ([#7814](https://github.com/nocobase/nocobase/pull/7814)) by @heziqiang
 - **[权限控制]** 优化关系字段关联操作的权限控制逻辑 ([#7800](https://github.com/nocobase/nocobase/pull/7800)) by @2013xile
@@ -118,7 +118,7 @@
 - **[flow-engine]** 修复事件流修改后需要刷新页面才会生效的问题。 ([#7811](https://github.com/nocobase/nocobase/pull/7811)) by @gchust
 - **[工作流]** 修复服务拆分模式下，工作流插件不处于服务模式时仍然消费队列的问题 ([#7820](https://github.com/nocobase/nocobase/pull/7820)) by @mytharcher
 - **[工作流：审批]** 修复重查关系数据时未屏蔽主表字段的问题 by @mytharcher
-- **[邮件管理]** 修复 outlook 内敛图片和同步问题 by @jiannx
+- **[邮件管理]** 修复 Outlook 内敛图片和同步问题 by @jiannx
 
 ### [v2.0.0-alpha.36](https://www.nocobase.com/cn/blog/v2.0.0-alpha.36)
 
@@ -160,4 +160,4 @@
   - 页面的事件流设置页面区块数据范围不生效 ([#7788](https://github.com/nocobase/nocobase/pull/7788)) by @gchust
 - **[工作流]** 为工作流的日志增加 `workflowId` 的数据标识 ([#7789](https://github.com/nocobase/nocobase/pull/7789)) by @mytharcher
 - **[工作流：自定义变量节点]** 修复变量节点缺失 config 时报错的问题 by @mytharcher
-- **[邮件管理]** mailMessages 添加索引 by @jiannx
+- **[邮件管理]** MailMessages 添加索引 by @jiannx
