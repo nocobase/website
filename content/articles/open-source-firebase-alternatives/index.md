@@ -17,6 +17,12 @@ If you've started to wonder, "Are there more flexible and controllable options o
 
 When looking for a Firebase replacement, I set a few essential criteria. Not every open-source project is ready for production use—especially if you want something that works seamlessly out of the box like Firebase. That’s why it’s crucial to choose tools that offer complete functionality and a refined user experience.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 ![Firebase Alternative](https://static-docs.nocobase.com/2-h1kxqg.PNG)
 
 Here are the key factors I believe matter most:
