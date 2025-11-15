@@ -6,6 +6,12 @@ IT 担当者がコスト削減を、運用管理者が在庫混乱の解決策�
 
 在庫管理システムは、商品の入出庫、リアルタイム在庫、在庫回転率を把握し、調達と販売を連携させることで、きめ細かい在庫コントロールを実現します。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 本記事では、中小企業に最適な 5 つのシステムを紹介し、在庫管理の混乱から解放します。
 
 ![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
