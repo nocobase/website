@@ -6,6 +6,14 @@
 
 ![github crm.png](https://static-docs.nocobase.com/d4a574b73c1350044f6ee68595473ebf.png)
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 本文将进一步探索 GitHub 上最受欢迎的开源 CRM 项目，从轻量化的工具到功能丰富的企业级解决方案，它们各具特色，满足了不同企业的需求。在这篇文章中，我们将详细介绍以下 star 数量排名前 11 的开源 CRM 项目：
 
 * **Twenty**：以极简设计和强大 API 支持为特色，适合中小型企业快速搭建客户管理系统。
