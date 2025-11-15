@@ -6,6 +6,14 @@ Recently, while browsing the [r/AI\_Agents](https://www.reddit.com/r/AI_Agents/c
 
 It sounds like a simple question, but it hits a pain point many developers share. There are plenty of “AI-powered low-code platforms” out there, but most of them only add a chat box — maybe they generate some SQL or form fields. But tools that let AI truly run workflows, call APIs, and function as an agent are still rare.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 Then the comments started to split. Someone bluntly said:
 
 ![Reddit2.png](https://static-docs.nocobase.com/image-4j39lb.png)
