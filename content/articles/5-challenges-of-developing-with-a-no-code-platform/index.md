@@ -1,5 +1,13 @@
 In recent years, many developers use no-code platforms to build business systems. Developers don't need to build the entire system from the beginning. [No-code platforms](https://docs.nocobase.com/welcome/introduction) provide easy templates and visual tools, saving time.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ![e8a79b853596a2079a1859bca0e87235.jpg](https://static-docs.nocobase.com/e8a79b853596a2079a1859bca0e87235.jpg)
 
 No-code platforms help developers and businesses create applications without needing extensive coding knowledge. These platforms offer a range of pre-built components and drag-and-drop features that simplify the development process. This convenience benefits small businesses and startups that lack resources for a full development team.
