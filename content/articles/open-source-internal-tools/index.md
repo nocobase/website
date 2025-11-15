@@ -1,4 +1,4 @@
-📝 **Note:** This article was last updated on **February 18, 2025**. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 Welcome back to our GitHub Star series!
 
@@ -7,6 +7,12 @@ In previous articles, we delved into GitHub's most popular open-source low-code 
 💡 Read More: [Top 5 Open Source Projects for Building Internal Tools](https://www.nocobase.com/en/blog/top-5-open-source-projects-for-building-internal-tools-in-2024)
 
 It's worth noting that, in addition to Star counts, this article incorporates data on Forks, Issues, Pull Requests, and Contributors from GitHub. These dimensions provide developers with a more comprehensive perspective, revealing the actual usage, development activity, and community contributions of these tools, offering a holistic evaluation.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
 
 To present a more comprehensive view of the diversity and impact of these internal tools, we have divided the 11 tools into two groups:
 
