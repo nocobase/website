@@ -4,6 +4,14 @@
 
 本文将使用以下技术：NocoBase、Postgres 和 Docker。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 什么是 NocoBase？
 
 [NocoBase](https://www.nocobase.com/) 是一个开源平台，由 JavaScript 编写，基于 NodeJS、TypeScript 和 AntDesign，旨在无需编码即可创建自定义应用程序。这是一个低代码后端解决方案，可视化创建表格、自定义表单、工作流自动化和定制界面。
