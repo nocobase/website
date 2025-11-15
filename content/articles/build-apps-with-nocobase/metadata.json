@@ -266,9 +266,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-03-18T07:45:07.250Z",
+  "updatedAt": "2025-11-15T16:27:22.740Z",
   "author": "Don Freeman",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null
 }
