@@ -7,6 +7,12 @@ To help small businesses overcome these challenges, this article introduces six 
 * How can developers extend system functionality to meet business needs?
 * Can non-technical users configure and manage inventory rules with ease?
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 **Golden Criteria for Choosing an Inventory Management Tool:**
 
 ✔️ **Easy to Use in 30 Minutes** – The tool should be user-friendly, even for those with limited technical skills.
