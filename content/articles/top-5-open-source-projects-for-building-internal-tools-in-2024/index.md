@@ -13,6 +13,14 @@ Investing in the right internal tools can greatly improve efficiency, lower cost
 
 💡 Read More: [Top 11 Open Source Internal Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/open-source-internal-tools)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## What are internal tools?
 
 Today's businesses use internal tools to boost efficiency. These tools help with many tasks like managing data, projects, and customer relationships (CRM). Here are some common types of internal tools:
