@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 Hello everyone, I am Lijia from [NocoBase](https://www.nocobase.com/).
 
@@ -27,6 +27,14 @@ This article is quite lengthy, so feel free to skip to the sections you are most
 7. Data Integration Capability
 
 Let’s dive in!
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Introduction to NocoBase and NocoDB
 
