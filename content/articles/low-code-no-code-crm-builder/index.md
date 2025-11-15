@@ -14,6 +14,14 @@ So, instead of viewing traditional CRM systems and low-code/no-code CRMs as oppo
 
 In today’s fast-paced, flexibility-driven environment, we see more and more businesses turning to low-code/no-code solutions. These platforms not only solve the pain points of traditional CRMs but also enable businesses to respond more quickly to market changes and gain a competitive edge.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## Traditional CRM vs. Low-Code/No-Code CRM
 
 To better understand the differences between traditional CRM and low-code/no-code CRM, let’s compare them across several key dimensions:
