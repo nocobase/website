@@ -6,6 +6,14 @@
 
 这个提问看似简单，却戳中了不少开发者的真实痛点—— 现在市面上“支持 AI 的低代码平台”很多，但大多只是加了一个聊天窗口，顶多能生成 SQL 或补表单字段，真正能让 AI 跑流程、调 API、当 Agent 的工具其实并不多。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 评论区开始出现分歧，有人直接泼冷水说：
 
 ![Reddit2.png](https://static-docs.nocobase.com/image-4j39lb.png)
