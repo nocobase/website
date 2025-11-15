@@ -9,6 +9,14 @@ Some of our previous lists include:
 
 In this post, we’re focusing on **Web Applications**. We searched through the [web-application](https://github.com/topics/web-application) and [web-app](https://github.com/topics/web-app) GitHub topics, and picked projects with **over 10,000 stars** and a clear use case. These include platforms for publishing, data visualization, low-code app building, and more.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 To help you quickly understand and evaluate each project, we’ve broken down the analysis into three simple parts:
 
 * **What it does** – What problem does the project solve, and who is it for?
