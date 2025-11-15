@@ -10,6 +10,14 @@ Whether you're a business decision-maker considering a shift to self-hosting or 
 
 💡 Dig deeper: [Top 13 Self-Hosted Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/self-hsosted-projects-list)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## The Rise of Self-Hosted Solutions
 
 In recent years, we've witnessed a growing trend. More and more businesses are choosing self-hosted solutions over cloud options.
