@@ -12,6 +12,12 @@ You urgently need a solution to address the following specific needs:
 
 When outlining these requirements, you might think that a project management system capable of meeting such complex demands would require significant time and resources, potentially needing a dedicated development team for custom development, which would undoubtedly strain the budget.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 However, I discovered an exciting solution: several simple, user-friendly no-code project management tools can easily meet all your needs. They are not only cost-effective but also easy to use without coding, allowing you to quickly get started and manage projects efficiently, thus saving on the high costs and cumbersome processes of traditional development.
 
 Here are 5 open-source no-code platforms I recommend for quickly building your own project management tool:
