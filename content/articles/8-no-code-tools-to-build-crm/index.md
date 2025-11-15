@@ -6,6 +6,12 @@ A user in the r/CRM community complained
 
 Their feedback was blunt: these tools are overly complex and rigid, making things harder rather than easier.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 The core issue? They’re too generic and overloaded with features, forcing users to adapt to the system’s logic and workflows.
 
 But ideally, it should be the other way around: users should be able to build exactly what they need—and nothing more.
