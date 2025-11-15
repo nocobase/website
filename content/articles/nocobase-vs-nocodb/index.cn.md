@@ -1,4 +1,4 @@
-**最后更新：2025.6.12**
+**最后更新：2025.11.16**
 
 大家好，我是来自 [NocoBase](https://www.nocobase.com/) 的 Lijia。
 
@@ -27,6 +27,14 @@
 7. 数据集成能力
 
 接下来让我们开始吧！
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## **NocoBase 与 NocoDB 的简介**
 
