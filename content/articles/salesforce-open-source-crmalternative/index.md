@@ -14,6 +14,14 @@ Founded in 1999 in San Francisco, Salesforce was one of the first companies to i
 
 As a dominant force in the CRM space, Salesforce provides an extensive suite of tools for sales, marketing, and customer service. However, its high pricing and reliance on a cloud-based infrastructure have led many businesses to explore open-source alternatives.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **Why Consider Open-Source CRM Alternatives?**
 
 While Salesforce is feature-rich, it comes with certain drawbacks:
