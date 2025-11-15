@@ -8,6 +8,12 @@ No-code is also going through a clear shift: instead of simply designing interfa
 
 In this article, we reviewed no-code projects on GitHub and selected open-source tools that have integrated AI or offer intelligent features. We organized them into this “AI + No-code Tool List” by their GitHub star count.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 This follows our list from last year, ***[The Most Starred Open-source No-code Tools on GitHub](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)***. But this time, it’s not just about who has more stars — it’s about who is actually making AI useful and reusable in real scenarios.
 
 If you’re exploring **AI tools, workflow automation, Agent building, or planning to create an intelligent application**, this list is a great place to start.
@@ -80,7 +86,7 @@ Official website: [https://www.coze.com/](https://www.coze.com/)
 
 **Overview**
 
-Coze Studio, developed by ByteDance, is a platform for building, testing, and deploying AI agents using low-code or no-code methods. 
+Coze Studio, developed by ByteDance, is a platform for building, testing, and deploying AI agents using low-code or no-code methods.
 
 ![CozeStudio.png](https://static-docs.nocobase.com/Coze%20Studio-1edqx9.png)
 
@@ -341,7 +347,6 @@ It is reshaping the entire no-code development experience — making it lighter,
 Perhaps in the future, the question won’t be “Do I need to learn to code?” but rather — “How do I build with AI?”
 
 If this article inspired you, feel free to share it with others who are also exploring the fusion of AI and no-code. 👍
-
 
 **Related reading:**
 
