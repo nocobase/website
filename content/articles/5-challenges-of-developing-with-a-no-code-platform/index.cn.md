@@ -4,6 +4,14 @@
 
 在这篇文章中，我们将与大家探讨这些已有的挑战，并且可以怎样更好地应对。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ![4bf9d0eabeb989779d6249d224565e7d.jpg](https://static-docs.nocobase.com/4bf9d0eabeb989779d6249d224565e7d.jpg)
 
 ## 挑战 1 ：难以准确评估项目复杂度和无代码/低代码平台的灵活性
