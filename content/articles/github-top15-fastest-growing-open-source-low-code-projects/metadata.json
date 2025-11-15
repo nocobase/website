@@ -422,9 +422,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-04-08T05:41:17.143Z",
+  "updatedAt": "2025-11-15T16:06:54.421Z",
   "author": "Deng lijia",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
 }
