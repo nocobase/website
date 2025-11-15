@@ -6,6 +6,12 @@
 
 こうしたツールの問題は、“ユーザーがツールに合わせなければならない”という点にあります。あらゆる業務に対応しようとするあまり、肝心の使いやすさが失われてしまうのです。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 本来なら、必要な機能だけを自分で選んで、業務にぴったり合った仕組みを作れるのが理想です。
 
 そこで注目されているのがノーコードプラットフォームです。自社の業務フローに沿って自由に設計できるため、柔軟性とコントロール性に優れたCRMを構築できます。
@@ -332,3 +338,4 @@ Tadabaseは、中小企業向けに設計されたノーコード開発プラッ
 * [カスタムCRMの4つの実際の事例（より柔軟なCRM製品の選び方） ](https://www.nocobase.com/ja/blog/custom-crm-case-studies)
 * [NocoBase vs Salesforce: 理想のCRMを選ぶには？ ](https://www.nocobase.com/ja/blog/nocobase-vs-salesforce)
 * [Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり） ](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)
+*
