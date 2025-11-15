@@ -4,6 +4,14 @@ I believe there is some truth to this viewpoint, but it is a bit extreme. **A cu
 
 We will explore 4 successful custom CRM case studies, showing how customized CRMs help businesses improve the efficiency of customer relationship management and solve industry-specific challenges with flexible customization features.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## NocoBase: How GemelSoft Achieved Custom CRM with a Low-Code Platform
 
 GemelSoft is a leading software development company located in China,  specializing in custom software solutions, with rich experience in enterprise management systems. As customer demands diversified, GemelSoft needed a CRM system that could flexibly adapt to different client needs.
