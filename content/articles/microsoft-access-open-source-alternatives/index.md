@@ -4,6 +4,12 @@ On [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/), o
 
 This description neatly sums up how Access is often used in real-world businesses: starting as a convenient tool, then shared across teams, eventually running into corruption and performance bottlenecks, and finally being replaced by **more modern database solutions**.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 As part of the Microsoft Office suite, Access is indeed easy to get started with. However, it has well-known limitations in performance, security, and scalability:
 
 * **Limited performance**: The maximum size of a single database file is 2GB. Performance declines sharply with large datasets and high concurrency.
@@ -206,7 +212,6 @@ The open-source options introduced here provide solutions tailored to different 
 * If you are a developer or data analyst, **DBeaver** provides the most powerful cross-database support.
 
 If you find yourself constrained by the limitations of Microsoft Access, these open-source tools can help you transition to a more modern, collaborative, and scalable solution that aligns with your business needs.
-
 
 **Related reading:**
 
