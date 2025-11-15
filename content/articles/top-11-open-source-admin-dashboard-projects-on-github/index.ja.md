@@ -19,6 +19,14 @@
 
 選びやすくするため、GitHubで人気の高い管理ダッシュボードプロジェクトを11選にまとめました。これらのツールを比較して、自分にぴったりのソリューションを見つけてください！ランキングはこちら: [https://github.com/topics/admin-dashboard](https://github.com/topics/admin-dashboard)
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## [#11: NocoBase](https://www.nocobase.com/ja)
 
 **⭐️ スター数: 13k**
