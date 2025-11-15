@@ -4,6 +4,14 @@
 
 この記事では、次の技術を使用します：NocoBase、PostgreSQL、Docker。これらのツールはすでに設定されていることを前提としています。インストール手順については、私が書いた別のガイド[こちら](https://www.nocobase.com/en/blog/building-an-application-catalog-with-nocobase)を参照してください。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## プラグインアーキテクチャ
 
 ![Plugin Architecture.png](https://static-docs.nocobase.com/dfcb0082a99b45aa4334c8460708a50b.png)
