@@ -10,6 +10,14 @@
 * **LangFlow**，本地运行，可通过 Docker 安装（安装指南在此处）。
 * **向量数据库**，通过注册 **AstraDB** 账户实现，本文将使用该数据库作为向量存储。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **架构概览**
 
 ![Architecture Overview.png](https://static-docs.nocobase.com/c22d65bc1b29655b4384722d666d3a8a.png)
