@@ -4,6 +4,12 @@ RBAC（Role-Based Access Control／ロールベースアクセス制御）は、
 
 企業のユーザー数が増え、職務内容が多様化する中で、より柔軟かつ精緻で安全なアクセス制御が求められるようになっています。そのため、RBACに関する議論はRedditなどの開発者コミュニティでも頻繁に取り上げられています。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 例えば、あるユーザーはOAuthによるログインやロールの割り当てプロセスで課題を抱え、**「設定が簡単で無料で使えるRBACツールを探している」**と投稿していました。
 
 ![an easy-to-setup and free RBAC tool](https://static-docs.nocobase.com/1-6u7f5b.PNG)
