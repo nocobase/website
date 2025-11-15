@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 ## What is Workflow Automation?
 
@@ -7,6 +7,14 @@ Workflow automation refers to the use of technology to automatically execute a s
 It encompasses operations from information transmission to task assignment, transforming manual processes into automated systems.
 
 This automation can be applied across various industries and business scenarios, from simple data entry and processing to complex cross-department collaboration processes.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Why Automate Workflows?
 
