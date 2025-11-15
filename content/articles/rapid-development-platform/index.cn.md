@@ -5,6 +5,14 @@
 * 选择合适的平台时，需考虑技术栈的匹配性，以确保与现有系统的无缝集成。
 * 根据项目需求、技术背景和预算选择平台，对于需要高度自定义和插件化架构的项目，NocoBase 是理想选择；而对于追求特定技术栈深度集成的项目，可以考虑 JeecgBoot 等平台。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 什么是快速开发平台？
 
 快速开发平台，也称为[快速应用开发平台（RAD）](https://www.nocobase.com/cn/blog/rapid-application-development-best-application-cases)，是一种开发工具，旨在通过提供预构建的模块、自动化流程和简化的编程接口来加速应用程序的开发和部署。这类平台包括[低代码（Low-code）](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)和[无代码（零代码）（No-code）](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)解决方案，允许开发者和非技术用户通过可视化界面和模型驱动的逻辑来构建应用程序，而无需深入编写代码。
