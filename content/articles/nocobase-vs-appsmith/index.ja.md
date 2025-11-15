@@ -12,6 +12,14 @@ NocoBaseとAppsmithは、開源のローコード/ノーコード開発プラッ
 
 🙌 実践してみる：[NocoBase チュートリアル – タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 しかし、これらの製品は機能や使用ケースにおいて大きく異なります。
 
 ![NocoBase.png](https://static-docs.nocobase.com/d49e5487e79d12e87af924120b0bf67b.png)
