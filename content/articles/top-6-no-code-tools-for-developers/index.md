@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 In the fast-evolving world of software development, nocode tools are gaining traction rapidly.
 
@@ -9,6 +9,14 @@ Nocode tools offer a blend of efficiency, flexibility, and innovation, enabling 
 But why should developers consider using nocode tools?
 
 Let's explore.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Why Developers Should Embrace No-Code Development Tools？
 
