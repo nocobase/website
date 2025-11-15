@@ -12,6 +12,12 @@ Despite AppSheet's excellent performance in the no-code development field, we ha
 
 *"I'll soon be looking to switch some business operations away from Google, and this may also involve moving away from Appsheet. I was wondering if anyone has found any good alternatives, with user permissions, possibly an option for self hosting."*
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 🔴 **Performance Issues**
 
 *"I have a fairly large inventory system built into appsheet, but Appsheet is slow, especially with the addition of virtual columns for billing. Is there another platform I can transition to?"*
