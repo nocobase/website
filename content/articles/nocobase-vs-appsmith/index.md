@@ -12,6 +12,14 @@ Both NocoBase and Appsmith are open-source low-code/no-code development platform
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 However, these products differ significantly in terms of features and use cases.
 
 ![NocoBase.png](https://static-docs.nocobase.com/d49e5487e79d12e87af924120b0bf67b.png)
