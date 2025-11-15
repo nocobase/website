@@ -1,8 +1,16 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 In today's rapidly evolving digital era, businesses face increasingly complex technological challenges and market competition. To remain competitive and accelerate business innovation, many companies are turning to low-code open-source platforms. However, selecting the right low-code platform and implementing it successfully remains a challenge.
 
 This article explores five successful case studies that demonstrate how low-code open-source platforms have addressed real-world challenges in various sectors, including logistics, financial services, energy, and aerospace & defense. These case studies provide valuable insights and best practices.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Why Are Open-Source Low-Code Platforms So Important?
 
