@@ -12,6 +12,12 @@ These challenges leave many small businesses unsure of where to start. But here�
 
 In this article, I’ll introduce you to four **lightweight, open-source CRM tools**: **NocoBase, Twenty, Monica, and Huly**. These tools offer powerful features, user-friendly interfaces, and are tailored for small businesses to quickly adopt and streamline customer relationship management.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 The best part? These tools are **completely free**, thanks to their open-source nature. While paid versions are available for unlocking advanced features, their overall costs remain far below those of traditional CRMs.
 
 Additionally, these tools have garnered significant attention on GitHub. If you’re curious, check out our recent article: [⭐️ Top 11 Open-Source CRM Projects on GitHub](https://www.nocobase.com/cn/blog/github-open-source-crm-projects) for a deeper dive.
