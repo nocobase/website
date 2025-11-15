@@ -8,6 +8,12 @@
 
 本記事では、GitHub の[ no-code ](https://github.com//topics/no-code)関連プロジェクトをもとに、AIを搭載、あるいは知能化機能を備えたオープンソースツールを選び、Star数順にまとめた「AI × ノーコードツールリスト」を紹介します。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 これは、昨年公開した[《GitHubで最もStarを獲得したオープンソースノーコードツールランキング》](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)の続編でもあります。今年は「Star数」だけではなく、「AIがどれだけ現実的で再利用できる形で活用されているか」に注目しました。
 
 もしあなたがAIツール、業務自動化、Agent開発、あるいはスマートアプリの構築に関心があるなら、このリストはきっと良い出発点になるはずです。
