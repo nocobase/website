@@ -1,4 +1,4 @@
-**最后更新：2025.6.12**
+**最后更新：2025.11.16**
 
 ## 1. 引言
 
@@ -16,6 +16,14 @@ CRUD是"Create（创建）"、"Read（读取）"、"Update（更新）"和"Delet
 * **Delete（删除）**：从数据库中移除不再需要的记录。
 
 🙌 上手操作 CRUD ：[第三章：任务数据管理 —— 运筹帷幄，轻松上手](https://www.nocobase.com/cn/tutorials/task-tutorial-data-management-guide)
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ### 1.2 CRUD 在软件开发中的重要性
 
