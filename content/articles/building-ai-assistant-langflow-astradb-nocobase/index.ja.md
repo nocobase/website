@@ -10,6 +10,14 @@
 * **LangFlow**（ローカルで実行、Docker経由でインストール可能）。
 * **ベクトルデータベース**（**AstraDB** のアカウントを作成し、この記事ではAstraDBをベクトルデータベースとして使用します）。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **アーキテクチャ概要**
 
 ![Architecture Overview.png](https://static-docs.nocobase.com/c22d65bc1b29655b4384722d666d3a8a.png)
