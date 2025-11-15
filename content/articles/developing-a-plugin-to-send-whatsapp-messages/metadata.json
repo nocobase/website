@@ -344,9 +344,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-01-10T06:01:15.960Z",
+  "updatedAt": "2025-11-15T16:20:21.348Z",
   "author": "Leandro Martins",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
 }
