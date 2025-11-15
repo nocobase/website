@@ -13,6 +13,12 @@
 
 那么，低代码平台到底有哪些隐藏成本？如何识别潜在陷阱？又有哪些策略可以避免陷入这些陷阱？希望本文可以为你提供一些解决思路。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 💡 阅读更多：[使用无代码/低代码平台进行开发的 5 大挑战](https://www.nocobase.com/cn/blog/5-challenges-of-developing-with-a-no-code-platform)
 
 ## **低代码平台的隐藏成本**
