@@ -6,6 +6,14 @@ Low-code platforms provide users with a toolkit. This toolkit includes pre-built
 
 These platforms feature intuitive drag-and-drop interfaces. This design allows anyone in an organization to develop business applications. No specialized coding expertise is required.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **Is Low-Code a Code Generator?**
 
 While low-code platforms may function as code generators, they encompass far more than traditional code generators. Low-code platforms do not merely generate code; they offer a comprehensive development environment and toolkit. This enables users to quickly build, test, and deploy applications through a graphical interface, enhancing efficiency and accessibility for developers and non-developers alike.
