@@ -12,6 +12,12 @@ Now let's review CRUD projects. In software development, CRUD (Create, Read, Upd
 
 In today's article, I'll introduce these CRUD projects on GitHub, focusing on their popularity and functionality to help you understand how various projects can enhance software development efficiency!
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 First, let's take a quick look at the rankings:
 
 
