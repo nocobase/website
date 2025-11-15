@@ -18,6 +18,12 @@ NocoBaseはデータ駆動型アプリを簡単に構築できるノーコード
 
 まず、作業するディレクトリを作成し、そのディレクトリにターミナルで切り替えます。その後、docker composeファイルを作成する必要があります。上記のNocoBaseウェブサイトの入門資料からのものを使用し、少し修正しました。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 ***以下のdocker composeは、ローカルでPostgreSQL DBを実行していますが、実際の生産環境では専用のDBを持つことを推奨します。***
 
 ![docker compose.png](https://static-docs.nocobase.com/8c25f1c572a1330beb04376b5053dcd4.png)
