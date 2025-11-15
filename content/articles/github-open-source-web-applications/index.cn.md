@@ -7,6 +7,12 @@
 
 这一次，我们聚焦在 **Web 应用**这一主题，基于 GitHub 上两个官方标签页：[web-application](https://github.com/topics/web-application) 和 [web-app](https://github.com/topics/web-app)，从中筛选出 Star 数超过 10k 且功能较为完整的项目，覆盖内容平台、数据可视化平台、低代码平台等多个方向。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 在选择推荐项目时，我们不仅关注它们的功能是否有价值，更希望帮助开发者判断它们是否能落地、能改造、值得深入学习。因此，本文将从三个维度对每个项目进行介绍：
 
 * **功能价值**：它解决了什么问题，适用于哪些场景，是否具备可持续的产品思路；
