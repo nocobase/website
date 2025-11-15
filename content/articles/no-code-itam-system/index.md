@@ -6,6 +6,12 @@ Professional IT Asset Management (ITAM) tools such as Lansweeper, AssetSonar, an
 
 In environments with large-scale assets, strict compliance requirements, and a need to minimize manual maintenance, these dedicated ITAM tools are undoubtedly the best choice.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 However, in reality, not every company is suited to adopt these platforms directly. For small to mid-sized businesses or teams with unique business workflows, a **flexible**, **low-cost**, and **fast-to-deploy** solution can be more practical.
 
 This is where **no-code platforms** offer real value: although they may lack some of the advanced automation features of professional ITAM tools, they excel in **simplicity** and **high customizability**. They allow you to **adapt asset management to your specific workflows** and integrate it seamlessly into daily business operations.
