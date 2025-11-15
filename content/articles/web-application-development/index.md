@@ -4,6 +4,14 @@ From user-friendly online forms to robust enterprise solutions, the diversity an
 
 For newcomers to the field of web development, the right low-code/no-code tools not only speed up the learning process but also enhance development efficiency and project quality. **This article will introduce some top tools from a beginner-friendly perspective and showcase their application examples**, helping novice developers quickly get started with web application development.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## What is Web Application Development?
 
 Web application development is the process of creating and maintaining applications accessed via the internet. Unlike traditional desktop software, web applications can run on any device that supports a browser, making them crucial for modern business and personal use. **[Web application development](https://azumo.com/artificial-intelligence) typically includes:**
