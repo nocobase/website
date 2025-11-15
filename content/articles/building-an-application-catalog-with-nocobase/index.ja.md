@@ -4,6 +4,14 @@
 
 この記事では、以下の技術を使用します：NocoBase、Postgres、Docker。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **NocoBaseとは何ですか？**
 
 [NocoBase](https://www.nocobase.com/)は、JavaScriptで書かれたオープンソースプラットフォームで、NodeJS、TypeScript、AntDesignを使用して、コーディングを必要とせずにカスタムアプリケーションを作成することを目的としています。ビジュアルでテーブル、カスタムフォーム、ワークフロー自動化、TAILORED INTERFACEの作成が可能になるローコードバックエンドソリューションです。
