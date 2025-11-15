@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 ## 1. Introduction
 
@@ -16,6 +16,14 @@ CRUD stands for **Create**, **Read**, **Update**, and **Delete** —the fundamen
 * **Delete**: Removing records that are no longer needed.
 
 🙌 **Try it out:**[Chapter 3: Task Data Management](https://www.nocobase.com/en/tutorials/task-tutorial-data-management-guide)
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ### 1.2 The Importance of CRUD in Software Development
 
