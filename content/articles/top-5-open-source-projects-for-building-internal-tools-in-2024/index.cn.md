@@ -13,6 +13,14 @@
 
 💡 阅读更多：[GitHub Star 数量前 11 的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 哪些是内部工具？
 
 当下的企业一定会使用一些内部工具来提升效率。这些工具可以在多种业务功能中发挥作用，如数据管理、项目管理、客户关系管理（CRM）等。以下是一些常见的内部工具类型：
