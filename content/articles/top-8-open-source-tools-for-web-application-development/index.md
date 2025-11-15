@@ -4,6 +4,14 @@ Building a web application has never been an easy task. Front-end, back-end, dat
 
 Now, an increasing number of open-source tools are changing the game. They allow you to skip the cumbersome setup process and focus on refining your product and validating your ideas. In this article, from a developer's perspective, I'll select 8 truly useful open-source tools that will enable you to build web applications faster and more easily.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## How to Evaluate Open-Source Web Development Tools?
 
 When choosing a tool, don't just rely on the official website's promotion. What truly matters is whether it can **solve practical problems** and **provide a good development experience**.
