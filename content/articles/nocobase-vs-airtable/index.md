@@ -13,6 +13,12 @@ But as your operations grow more complex—
 
 — you may find that Airtable, while powerful, no longer meets all your needs.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 That's why many Airtable users are starting to seek more capable alternatives. One name that comes up often among developers and business teams is NocoBase. As an open-source no-code development platform, NocoBase preserves the ease of visual configuration while offering deeper, system-level capabilities—advanced data modeling, granular permission control, built-in workflows, plugin architecture, and self-hosted deployment.
 
 But that raises an important question: can you replicate your familiar Airtable workflows in NocoBase?
