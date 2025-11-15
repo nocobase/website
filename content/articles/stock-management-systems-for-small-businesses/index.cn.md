@@ -6,6 +6,12 @@
 
 存货管理体系能够帮助企业掌握货物的进出库、实时库存状态、库存周转情况，以及与采购、销售的高效衔接，从而实现更精细的库存控制。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 本文将为你精选 5 款适合小型企业的库存管理系统，帮助你的团队从库存管理的混乱中解脱出来，真正实现库存清晰、运营高效。
 
 ![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
