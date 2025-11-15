@@ -6,6 +6,14 @@
 
 请收藏好这份推荐给开发者的优秀开源项目！
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## [Node.js](https://nodejs.org/en)
 
 ![Node.js.png](https://static-docs.nocobase.com/026a1c277a424ca087b3e9de6b71942a.png)
