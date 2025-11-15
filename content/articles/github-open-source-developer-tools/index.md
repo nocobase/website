@@ -14,6 +14,12 @@ These lists not only help developers quickly locate high-quality tools but also 
 
 This time, after several days of organization, we have compiled this list of the top 40 [developer-tools](https://github.com/topics/developer-tools) on GitHub ranked by the number of Stars. It covers seven key areas, from low-code platforms to AI programming assistants, and from API development tools to terminal enhancement tools, comprehensively presenting the latest trends in the developer tools ecosystem. Whether you want to improve code quality, optimize the development process, or explore AI-assisted development, this list can provide you with precisely matched solutions.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 Next, we will introduce these tools in detail according to their functional categories and sort them by the number of stars, helping you quickly find the most suitable development tools.
 
 **💡 Tips: You can locate the categories you are interested in according to the table of contents.**
