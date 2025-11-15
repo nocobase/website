@@ -26,6 +26,12 @@
 
 所以，我们将这两个领域放在一起，用一份榜单，帮你发现那些**强大、受认可又具备一体化能力的开源管理系统**，让你少走弯路。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 本文推荐项目可以在以下链接查看：
 
 [https://github.com/topics/crm ](https://github.com/topics/crm)
