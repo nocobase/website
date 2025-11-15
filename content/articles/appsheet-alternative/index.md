@@ -14,6 +14,14 @@ Here’s a summary of the user's **core requirements**:
 
 **Since none of the platforms this user tried could fully meet these needs, they reached out to the community for help.**
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## Why Most No-Code Platforms Struggle with Complex Data Relationships?
 
 Most no-code tools like AppSheet, Bubble, Clappia, Airtable, or NocoDB rely on a **spreadsheet-like data structure**, where data is stored in **single tables or form-based views**. This works well for simple applications, but when it comes to managing complex relationships, things start to break down.
