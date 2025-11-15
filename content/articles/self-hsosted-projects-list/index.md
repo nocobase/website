@@ -12,6 +12,14 @@ This list is ordered by GitHub stars and highlights some of the best projects av
 
 (😁 If you find this article helpful, please share it with friends interested in self-hosting!)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **Quick Look: Top 13 Awesome Self-Hosted Projects**
 
 **13. NocoBase – Low-code/No-code Development Platform (⭐15.8k)**
