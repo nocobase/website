@@ -9,6 +9,12 @@ Today, let’s talk about **ERP**. 
 ![ERP.jpg](https://static-docs.nocobase.com/1a76d2533fb75a9c650dab76003949f0.jpg)
 Many small business owners assume that **Enterprise Resource Planning (ERP)** systems are only meant for large enterprises—but that’s a misconception. As a business grows, managing operations becomes increasingly complex. If you’re still using **Excel or a mix of disconnected tools** to track customers, orders, inventory, finances, and projects, you might be losing efficiency and creating unnecessary confusion.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 **ERP software** helps streamline operations, integrate key business processes, and reduce human errors—making it a valuable tool even for small businesses.
 
 So, which ERP systems are the best fit for small businesses? In this article, we’ll introduce **4 ERP solutions** that can help you find the right tool for smarter and more efficient management.
