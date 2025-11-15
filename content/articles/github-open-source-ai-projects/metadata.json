@@ -220,10 +220,10 @@
     },
     {
       "createdAt": "2025-08-06T10:59:21.721Z",
-      "updatedAt": "2025-08-06T10:59:21.721Z",
+      "updatedAt": "2025-08-12T11:34:48.156Z",
       "id": 215,
       "title": "OpenAI",
-      "title_cn": null,
+      "title_cn": "OpenAI",
       "sort": 213,
       "description": null,
       "description_cn": null,
@@ -232,7 +232,7 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "OpenAI",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 3,
@@ -246,10 +246,10 @@
     },
     {
       "createdAt": "2025-08-06T11:00:33.673Z",
-      "updatedAt": "2025-08-06T11:00:33.673Z",
+      "updatedAt": "2025-08-12T11:36:04.980Z",
       "id": 216,
       "title": "Top GitHub AI Projects",
-      "title_cn": null,
+      "title_cn": "GitHub最佳开源AI项目",
       "sort": 214,
       "description": null,
       "description_cn": null,
@@ -258,7 +258,7 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "AIプロジェクト",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 3,
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-08-07T02:05:20.191Z"
+  "updatedAt": "2025-11-15T15:34:06.489Z"
 }
