@@ -26,6 +26,12 @@ In practice, ERP and CRM are frequently discussed together in enterprise managem
 
 By merging these two areas into one guide, we help you identify robust, reputable, and integrated open-source management solutions, simplifying your selection process.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 Explore the recommended projects via the links below: [https://github.com/topics/crm](https://github.com/topics/crm)[https://github.com/topics/erp](https://github.com/topics/erp)
 
 ## **#1: Odoo ⭐️ 42.6k**
