@@ -26,6 +26,12 @@
 
 このように、両方の機能を併せ持つプロジェクトをまとめて紹介することで、より強力で信頼できる統合ソリューション選びをサポートします。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 以下のリンクからおすすめプロジェクトをご覧ください：
 
 [https://github.com/topics/crm](https://github.com/topics/crm)[https://github.com/topics/erp](https://github.com/topics/erp)
