@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 ## Why is the Integration Capability of Low Code Platforms So Important?
 
@@ -13,6 +13,14 @@ In this analysis, we’ll explore the integration capabilities of several mainst
 Whether you are looking to integrate CRM systems, automate business processes, or unify multiple data sources, understanding the strengths of each platform will help you choose the best solution for your business needs.
 
 💡 Read More: [Build CRM in Hours: Top No-Code/Low-Code Tools You Need to Know](https://www.nocobase.com/en/blog/low-code-no-code-crm-builder)
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Key Dimensions of Integration Capability Analysis
 
