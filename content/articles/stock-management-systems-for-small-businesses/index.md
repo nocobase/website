@@ -6,6 +6,12 @@ Whether you are an enterprise IT manager seeking inventory management tools to r
 
 An inventory management system helps enterprises track incoming and outgoing goods, real-time inventory status, inventory turnover, and efficient integration with procurement and sales, enabling more precise inventory control.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 This article selects 5 inventory management systems suitable for small businesses, helping your team break free from inventory management chaos and achieve clear inventory and efficient operations.
 
 ![stock management](https://static-docs.nocobase.com/cpg-io-ecommerce-execution-CBTmEZqUaM0-unsplash-afoouh.jpg)
