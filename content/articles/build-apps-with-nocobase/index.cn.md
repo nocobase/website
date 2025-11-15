@@ -18,6 +18,12 @@ NocoBase 是一个无代码（零代码）/低代码平台，用于轻松构建�
 
 首先，创建一个工作目录，并在终端中切换到该目录。之后，你需要创建一个 docker compose 文件。我参考了 NocoBase 官网上的入门指南，并调整了细节。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 ***下面的 docker compose 显示了在本地运行 PostgreSQL 数据库，但建议在实际生产环境中使用专用数据库。***
 
 ![docker compose.png](https://static-docs.nocobase.com/8c25f1c572a1330beb04376b5053dcd4.png)
