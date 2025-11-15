@@ -6,6 +6,14 @@ Additionally, "*[Top 4 Custom CRM Case Studies (Helping You Choose a More Flexib
 
 ![github crm.png](https://static-docs.nocobase.com/d4a574b73c1350044f6ee68595473ebf.png)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 This article will further explore the most popular open-source CRM projects on GitHub, ranging from lightweight tools to feature-rich enterprise-level solutions, each with its own unique features catering to different business needs. In this article, we will dive into the top 11 open-source CRM projects by star count:
 
 * **Twenty**: Featuring minimalist design and powerful API support, Twenty is ideal for small and medium-sized businesses looking to quickly set up a customer management system.
