@@ -12,6 +12,12 @@
 
 今天，我将为你推荐几款**轻量级开源 CRM 工具**：**NocoBase、Twenty、Monica 和 Huly**。它们功能强大、操作简单，并且非常适合小型企业快速上手，轻松管理客户关系。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 更重要的是，这些工具可以**免费使用**，这是开源的一大优势。当然，你还可以选择付费版本以解锁更多高级功能，但整体使用成本仍远低于传统 CRM 工具。
 
 值得一提的是，这些产品在 GitHub 上的表现也十分亮眼。上个月，我们特别整理了一篇文章：[⭐️ GitHub 上星星数量前 11 的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)，感兴趣可以点击阅读。
