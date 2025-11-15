@@ -4,6 +4,14 @@ In the design of no-code and low-code platforms, **RBAC (Role-Based Access Contr
 
 Developers and enterprise users have long paid close attention to RBAC — it’s not only a pillar of platform security but also a key factor influencing scalability and maintainability.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 On Reddit, discussions around this topic are constant.
 
 ![1Reddit.PNG](https://static-docs.nocobase.com/1-jynjqp.PNG)
@@ -151,7 +159,6 @@ Each no-code and low-code platform takes a different approach to RBAC — but al
 * 🟠 **Retool:** Secure and user-friendly, though per-user control across large apps still needs manual logic.
 
 If this helped you, feel free to share it with others exploring **no-code, low-code, or RBAC** topics!
-
 
 **Related reading:**
 
