@@ -1,4 +1,4 @@
-注：本文数据更新于 2025 年 6 月 10 日。我们会定期更新，确保你获取最新的信息！😊
+注：本文数据更新于 2025 年 11 月 16 日。我们会定期更新，确保你获取最新的信息！😊
 
 在本篇文章中，我们将探索 12 款在 [GitHub](https://github.com/topics/no-code) 上星级排名前列的开源无代码（零代码）工具。
 
@@ -9,6 +9,14 @@
 💡 阅读更多：[GitHub Star 数量前 15 的开源低代码项目](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 
 本文将一一梳理这些工具的核心功能和适用场景，帮助开发者选择最适合自己项目需求的解决方案。
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## **第12：NocoBase**
 
