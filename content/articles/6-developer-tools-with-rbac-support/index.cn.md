@@ -6,6 +6,12 @@ RBAC（Role-Based Access Control，基于角色的访问控制）是一种将 �
 
 这也是为什么关于 RBAC 相关话题的讨论会频繁出现在 Reddit 等开发者社区中。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 有用户在 Reddit 上分享了他们在构建 OAuth 登录与角色分配流程时遇到的困难，希望能找到“**易于配置且免费的 RBAC 工具**”来简化管理。
 
 ![an easy-to-setup and free RBAC tool](https://static-docs.nocobase.com/1-6u7f5b.PNG)
