@@ -8,6 +8,12 @@ The founder wears multiple hats, guiding the product's overall direction while m
 
 Last year, we faced a pressing challenge: **how to boost team productivity while ensuring everyone could track project progress effortlessly.**
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 We turned to our own product—NocoBase—to build a management system tailored entirely to our needs. This system now encompasses critical functions like customer management, ticketing, order tracking, content management, and marketing. Gradually, we transitioned our work processes into this unified system, covering everything from customer relations to project tracking, team collaboration, and workflow automation. The result? A management solution perfectly customized for our team.
 
 This transformation significantly improved our collaboration and gave us a deeper understanding of just how essential a flexible and powerful management tool can be for a small team.
