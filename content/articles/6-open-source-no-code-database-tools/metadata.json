@@ -298,10 +298,10 @@
     },
     {
       "createdAt": "2025-08-09T12:11:36.118Z",
-      "updatedAt": "2025-08-09T12:11:36.118Z",
+      "updatedAt": "2025-08-12T11:36:12.003Z",
       "id": 218,
       "title": "Notion",
-      "title_cn": null,
+      "title_cn": "Notion",
       "sort": 216,
       "description": null,
       "description_cn": null,
@@ -310,7 +310,7 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "Notion",
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 3,
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-08-09T13:18:13.936Z"
+  "updatedAt": "2025-11-15T15:27:16.544Z"
 }
