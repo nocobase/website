@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 12, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Nov.  16, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 ---
 
@@ -11,6 +11,14 @@ Since its launch in 2017, Retool has quickly become a popular choice among devel
 Today, this concept is well-known, and many products similar to Retool have appeared in the market.
 
 In this article, we will focus on excellent open-source alternatives to Retool. I will introduce their unique capabilities and advantages, giving you more options when choosing a tool for accelerating development.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Why Choose Open-Source Alternatives to Retool?
 
