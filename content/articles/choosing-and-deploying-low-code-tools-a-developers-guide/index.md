@@ -13,6 +13,14 @@ Not all business development requires a low-code platform. If your project meets
 
 If you meet any of these conditions, you can continue reading this article.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## How to Choose a Low-Code Platform?
 
 ### **Step 1: Collect and Analyze Requirements**
