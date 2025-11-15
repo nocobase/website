@@ -18,7 +18,7 @@
 
 ---
 
-💬 欢迎来到 [NocoBase](https://www.nocobase.com/) 的博客。NocoBase 是一个开源无代码/低代码开发平台，用于构建企业级应用、内部工具和流程系统，支持自托管，插件化设计，开发者友好。→ [在 GitHub 上了解更多](https://github.com/nocobase/nocobase)
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，开源、完全掌控、极易扩展与修改，欢迎体验！
 
@@ -336,7 +336,6 @@ Website: https://leantime.io/
 * **[Leantime](https://leantime.io/)**  适合：想把战略目标 + 项目执行结合的团队  特点：OKR 与项目任务打通，适合初创公司和小型研发团队
 
 ⭐ 如果这篇文章对你在挑选、部署或定制项目管理工具有所启发，欢迎分享给同样关注开源与效率提升的开发者朋友们\~
-
 
 **相关阅读：**
 
