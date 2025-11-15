@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 **Time is money!**
 
@@ -13,6 +13,14 @@ Rapid Application Development (RAD) is an application development methodology fo
 1. **Accelerated Development Speed**: Compared to traditional methods, RAD can deliver application prototypes within weeks or even days, allowing businesses to bring products to market faster.
 2. **Flexibility in Adapting to Change**: User feedback and changing requirements can be quickly incorporated into the development process, enabling teams to adjust application features timely and ensure the final product meets user needs accurately.
 3. **Reduced Development Costs**: By minimizing manual coding and repetitive development tasks through pre-built components and modular design, RAD allows developers to construct applications more efficiently, reducing overall development costs.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## **Common RAD Tools**
 
