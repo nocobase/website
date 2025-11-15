@@ -8,6 +8,12 @@ This is where **Data Integration Platforms** come in. Their core value lies in c
 * **ETL Tools** focused on data warehousing, emphasizing efficient and reliable data movement.
 * **No-Code iPaaS Tools** for automation, designed to connect disparate business processes.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 Below, we've curated 7 top data integration platforms across these three categories:
 
 ## 1. Data Model-Driven Application Platforms
