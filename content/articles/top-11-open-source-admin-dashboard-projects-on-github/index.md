@@ -21,6 +21,14 @@ Open-source admin dashboards offer rapid solutions for building management inter
 
 To make your search easier, we’ve curated the top 11 most popular admin dashboard projects on GitHub. Explore these tools and find the one that suits your needs best! Rankings are based on: [https://github.com/topics/admin-dashboard](https://github.com/topics/admin-dashboard)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **[#11: NocoBase](https://www.nocobase.com/)**
 
 **⭐️ Stars: 13k**
