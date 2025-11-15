@@ -396,9 +396,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2025-01-14T08:06:30.243Z",
+  "updatedAt": "2025-11-15T16:31:11.613Z",
   "author": "Zhang Lu",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true
 }
