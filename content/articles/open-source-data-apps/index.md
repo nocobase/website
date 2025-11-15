@@ -8,6 +8,12 @@ Traditionally, you'd have to write a backend, connect to a database, and then bu
 
 Fortunately, today we have **excellent open-source tools** that allow you to build production-ready data applications within hours.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 ![data applications](https://static-docs.nocobase.com/0-ggnmxf.png)
 
 In this article, I’ll introduce 10 powerful open-source projects and explain what types of **data applications** they’re best suited for.
