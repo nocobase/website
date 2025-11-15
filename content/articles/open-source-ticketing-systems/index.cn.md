@@ -4,6 +4,12 @@
 
 于是我们决定用 NocoBase 自己搭建一套专属的工单系统。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 过程中，我们也尝试和测试了多个开源项目，选出了几个不错的工单工具作为参考，也从中总结出：**哪些功能对工单系统至关重要**。
 
 ![Ticketing Systems](https://static-docs.nocobase.com/Frame%2073%20(1)-nwwjl2.png)
