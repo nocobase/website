@@ -8,6 +8,12 @@ The most popular thread is titled *"[I'm skeptical of low-code](https://news.yco
 
 These heated discussions highlight developers' doubts about the true capabilities of no-code and low-code platforms.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 In this article, we’ll explore the key characteristics that make a low-code platform truly *easy to use.*
 
 ## **Rethinking "Ease of Use"**
