@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 12, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 ---
 
@@ -11,6 +11,14 @@ However, BPM faces unique challenges across various industries. In education, op
 Therefore, we will delve into the pain points of BPM in these industries and recommend corresponding BPM solutions.
 
 **It’s worth noting that the open-source tools recommended in this article are not specifically tailored to the listed industries. We aim to help readers understand and effectively utilize these tools by considering the unique needs of each sector.**
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## 1.Education Sector
 
