@@ -4,6 +4,14 @@
 * When choosing the right platform, it's essential to consider **the compatibility with the technology stack** to ensure seamless integration with existing systems.
 * Choose a platform based on **project requirements, technical background, and budget**. For projects needing high customization and a plugin-based architecture, **NocoBase** is an ideal choice.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## What is a Rapid Development Platform?
 
 A rapid development platform, also known as a [Rapid Application Development (RAD)](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases) platform, is a development tool designed to accelerate application development and deployment by providing pre-built modules, automated workflows, and simplified programming interfaces. These platforms include both[ low-code](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars) and [no-code ](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)solutions, enabling developers and non-technical users to build applications through visual interfaces and model-driven logic without extensive coding.
