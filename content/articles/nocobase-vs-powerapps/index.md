@@ -8,6 +8,12 @@ Leveraging the Microsoft ecosystem, its powerful features and rich components ha
 
 However, as usage deepens, more and more teams encounter practical challenges: rising costs with increasing user numbers, limited customization, uncontrollable deployments, and gradually emerging issues like system responsiveness. Discussions like "[Is Power Apps still worth choosing?](https://www.reddit.com/r/PowerApps/comments/1e5ypgy/would_you_still_choose_power_apps_today/)" are not uncommon in developer communities such as Reddit.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 So, is there a way to maintain agile development while being **more flexible, controllable, and even open-source**?
 
 This is precisely why an increasing number of teams are turning their attention to NocoBase. NocoBase is an open-source, enterprise-grade no-code development platform that supports private deployment. It features a plugin-based architecture, powerful data modeling capabilities, and a robust permission system, striking a balance between development efficiency and system control. Compared to Power Apps, NocoBase emphasizes flexibility, autonomy, and sustainability, making it suitable for enterprises and technical teams looking to build long-term, controllable systems.
