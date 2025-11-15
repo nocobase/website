@@ -4,6 +4,12 @@ Users reached out via emails, community forums, and even through internal collea
 
 So, we decided to build our own custom ticketing system using NocoBase.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 During this process, we tested several open-source projects and identified some excellent tools, while also defining **the core features essential for an effective ticketing system**.
 
 ![Ticketing Systems](https://static-docs.nocobase.com/Frame%2073%20(1)-nwwjl2.png)
