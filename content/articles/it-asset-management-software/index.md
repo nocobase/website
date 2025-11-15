@@ -4,6 +4,14 @@ In today’s fast-paced, technology-driven business environment, companies are i
 
 In this article, we will explore the world of open-source IT asset management software, delve into its key features and benefits, and recommend some of the top open-source ITAM tools available on the market today.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## What is Open Source IT Asset Management Software?
 
 Open-source IT asset management (ITAM) software is a cost-effective solution for tracking and managing an organization’s IT assets throughout their lifecycle. It provides a centralized platform to monitor and control hardware, software, licenses, and digital assets, ensuring that businesses have a clear understanding of their IT inventory, usage, and compliance status.
