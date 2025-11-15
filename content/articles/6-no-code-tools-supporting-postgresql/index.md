@@ -4,6 +4,12 @@ Why do most no-code tools struggle with deep PostgreSQL integration? No-code and
 
 Many platforms, in their quest to offer a "spreadsheet-simple" experience, compromise on direct control over database structures. They often rely on built-in databases or connect to PostgreSQL only indirectly via APIs, thus failing to support crucial capabilities such as field constraints, index configuration, relational modeling, and granular permission settings. This limitation—where users can populate tables but not define their underlying structure—has hindered the widespread adoption of no-code tools in enterprise-level applications.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 However, this landscape is evolving. A new generation of no-code/low-code platforms is emerging. These tools are no longer content with merely connecting to PostgreSQL; they actively strive to bridge the gap between database modeling, permission management, and interface construction. You can now configure fields, create tables, define relationships, and even set row-level permissions within a visual interface, much like using a dedicated modeling tool. This signifies a shift where no-code tools can indeed facilitate robust architectural design.
 
 In this article, we've identified six no-code/low-code tools genuinely suited for PostgreSQL, evaluating them across four key dimensions:
