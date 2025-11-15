@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
 
 In this article, we will explore 12 leading open-source, no-code tools on [GitHub](https://github.com/topics/no-code), each distinguished by its star ranking.
 
@@ -9,6 +9,14 @@ From the highly customizable [NocoBase](https://www.nocobase.com/) to the spread
 💡 **Read more:** [Top 15 Open-Source Low-Code Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 
 This article will meticulously outline the core features and suitable scenarios of these tools, assisting developers in selecting the solutions that best fit their project requirements.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Number 12: **NocoBase**
 
