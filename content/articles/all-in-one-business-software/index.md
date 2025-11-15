@@ -10,6 +10,12 @@ All-in-one business software is designed to integrate multiple functions into a 
 
 However, in reality, the concept of "all-in-one" often remains an idealized goal. Many businesses find that no single tool can perfectly cater to all their needs, especially when addressing diverse departmental requirements. Missing features or usability complexities can often prevent such tools from meeting expectations.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 **As a result, most businesses opt for a combination of solutions tailored to their unique needs.**
 
 When selecting an all-in-one business software, it’s essential to consider factors such as **comprehensive functionality, flexibility, user experience, and cost-effectiveness**.
