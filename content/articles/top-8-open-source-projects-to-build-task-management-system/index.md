@@ -6,6 +6,12 @@ Whether for personal use, managing *[tasks handled by project managers](https://
 
 These tools are powerful and convenient, but you may have noticed that they come with high costs or limited customization, which may not fully meet your specific needs.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 That’s why today, we’re exploring a more flexible and controllable solution: **open-source task management software.**
 
 In this article, I’ll share 8 outstanding open-source projects that can help you build a task management system tailored to your needs, saving costs and offering greater freedom and customization.
