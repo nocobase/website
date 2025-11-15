@@ -18,7 +18,7 @@
 
 ---
 
-💬 [NocoBase](https://www.nocobase.com/) ブログへようこそ。NocoBase は、エンタープライズアプリケーションや業務ツール、ワークフローシステムを構築できる、オープンソースのノーコード／ローコード開発プラットフォームです。セルフホスティング、プラグインアーキテクチャ、開発者フレンドリーな設計が特徴です。→ [GitHubで詳しく見る](https://github.com/nocobase/nocobase)
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
 
 🎉 最近 NocoBase は[プロジェクト管理](https://www.nocobase.com/cn/solutions/project-management)ソリューションをリリースしました。オープンソース、完全なコントロール、容易な拡張と改変を実現！
 
@@ -336,7 +336,6 @@ Website: https://leantime.io/
 * **[Leantime](https://leantime.io/)** 適用：戦略目標と実行を結びつけたいチーム 特徴：OKR とタスク統合、スタートアップや小規模 R&D 向け
 
 ⭐ 本記事がプロジェクト管理ツールの選定・導入・カスタマイズのヒントになったと感じたら、ぜひオープンソースや効率化に関心のある開発者仲間とシェアしてください！
-
 
 **関連読み物：**
 
