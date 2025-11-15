@@ -10,6 +10,14 @@ For this article, we will use the following technologies:
 * **LangFlow**, used locally, whose installation can be found here via Docker.
 * **Vector database**, by opening an account in **AstraDB**, which will be the vector database used in this article.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## **Architecture Overview**
 
 ![Architecture Overview.png](https://static-docs.nocobase.com/c22d65bc1b29655b4384722d666d3a8a.png)
