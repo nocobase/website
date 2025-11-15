@@ -8,6 +8,12 @@
 
 但与此同时，随着使用深入，也有越来越多的团队开始遇到一些实际挑战：用户数量增多、成本迅速上升，自定义受限、部署不可控，系统响应速度等问题也逐渐显现。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 在 Reddit 等开发者社区中，也不乏“[Power Apps 是否仍值得选择？](https://www.reddit.com/r/PowerApps/comments/1e5ypgy/would_you_still_choose_power_apps_today/)”这样的讨论。
 
 那么，有没有一种方式，既能保持**敏捷开发，又更灵活、更可控，甚至是开源的**？
