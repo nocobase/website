@@ -4,6 +4,12 @@ In modern enterprise applications, controlling **who can access which data and p
 
 One of the most widely used and practical models for this purpose is **RBAC—Role-Based Access Control**.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 The core idea behind RBAC is simple: **permissions are assigned to roles, and users gain permissions by being assigned roles**. In other words, instead of assigning permissions to each user individually, you define a set of roles and their associated permissions, then assign users to the appropriate roles.
 
 This design is especially effective in organizations with multiple roles, layered permissions, and cross-system collaboration.
