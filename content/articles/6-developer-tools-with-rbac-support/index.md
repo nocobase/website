@@ -6,6 +6,12 @@ As companies grow and user roles become increasingly diverse, managing secure, f
 
 This explains why RBAC-related topics frequently surface in developer communities like Reddit.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 One developer [shared on Reddit](https://www.reddit.com/r/nextjs/comments/1liinza/rbac_tools/) how difficult it was to manage OAuth login and assign user roles, and was looking for an **easy-to-setup and free RBAC tool** to streamline the workflow.
 
 ![an easy-to-setup and free RBAC tool](https://static-docs.nocobase.com/1-6u7f5b.PNG)
