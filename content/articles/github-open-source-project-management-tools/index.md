@@ -18,7 +18,7 @@ Below, we’ll introduce the top 10 open-source project management tools on GitH
 
 ---
 
-💬 Hey, you’re reading the NocoBase blog. NocoBase is an open-source no-code/low-code development platform for building enterprise applications, internal tools, and workflow systems — fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 🎉 NocoBase recently launched a [project management solution](https://www.nocobase.com/en/solutions/project-management) — open-source, fully controllable, and highly extensible. Try it out!
 
@@ -339,7 +339,6 @@ Here’s a quick comparison of the 10 tools we covered to help you choose more e
 * **[Leantime](https://leantime.io/)** Best for: Teams wanting to connect strategic goals with execution Key traits: OKRs linked with tasks, human-centered design, ideal for startups and small R&D teams
 
 ⭐ If this article inspired you in choosing, deploying, or customizing a project management tool, feel free to share it with fellow developers exploring open-source and productivity solutions!
-
 
 **Related reading:**
 
