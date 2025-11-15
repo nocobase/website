@@ -12,6 +12,14 @@ NocoBase 和 Appsmith 均为开源的低代码/无代码（零代码）开发平
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 但是这两个产品在功能特性和应用场景上却有显著差异：
 
 ![NocoBase.png](https://static-docs.nocobase.com/d49e5487e79d12e87af924120b0bf67b.png)
