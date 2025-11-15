@@ -1,4 +1,4 @@
-**最終更新日：[2025.6.12]**
+**最終更新日：[2025.11.16]**
 
 ## 1. はじめに
 
@@ -17,6 +17,14 @@ CRUD は "Create（作成）"、"Read（読み取り）"、"Update（更新）"�
 * **Delete（削除）**：不要になったレコードをデータベースから削除します。
 
 🙌 上手操作 CRUD ：[第3章：タスクデータ管理](https://www.nocobase.com/ja/tutorials/task-tutorial-data-management-guide)
+
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ### 1.2 ソフトウェア開発における CRUD の重要性
 
