@@ -10,7 +10,14 @@ But with **so many options available**, choosing the right one can feel overwhel
 
 If you jump into choosing a tool without **defining your needs first**, you might fall into the trap of selecting a platform first and then trying to figure out how to use it. This often leads to frustration, increased costs, and, in some cases, having to start over with a different tool.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 **So before you decide, ask yourself one crucial question:**
+
 *"What exactly do I need this tool for?"*
 
 In this guide, I’ll walk you through **a step-by-step process** to help you identify your needs and recommend the best no-code tools for different scenarios. By the end, you’ll have a clear understanding of which tool suits you best!
