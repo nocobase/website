@@ -18,6 +18,14 @@ Why compare these two platforms? Because they represent **two distinct approache
 
 Both platforms have their strengths and serve different use cases. This article will explore their differences in depth, focusing on the **open-source vs. closed-source** debate, helping businesses and developers determine which low-code platform best suits their needs.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## Open-Source vs. Closed-Source
 
 When choosing between an open-source or closed-source low-code platform, **scalability, integration capabilities, and cost** are the three key factors influencing long-term technical decisions.
