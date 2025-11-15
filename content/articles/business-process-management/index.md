@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 ## What is BPM?
 
@@ -9,6 +9,14 @@ BPM, or Business Process Management, is a systematic approach used to analyze, d
 The core of BPM lies in organizing all activities and tasks into systematic processes. This ensures that these processes run in the most efficient manner possible. Through BPM, businesses can better understand and control both internal and external processes, reducing errors from manual operations and improving overall work efficiency and customer satisfaction.
 
 If these concepts seem abstract, let's delve into a practical example to better understand how BPM can be applied.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## **How BPM Helps Online Education Platforms Optimize Workflow**
 
