@@ -13,6 +13,12 @@ Experienced developers have even given explicit advice:
 
 So, what are the hidden costs of low-code platforms? How to identify potential traps? And what strategies can be used to avoid falling into these traps? It is hoped that this article can provide you with some solutions.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 💡 Read more: [5 Challenges of Developing with a No-Code Platform](https://www.nocobase.com/en/blog/5-challenges-of-developing-with-a-no-code-platform)
 
 ## **Hidden Costs in Low-Code Platforms**
