@@ -19,6 +19,12 @@
 
 在选择 Firebase 替代工具时，我设定了一些核心评估标准。并不是所有开源项目都适合实际应用，特别是当你希望它像 Firebase 一样“开箱即用”的时候，更需要挑选那些**功能完整、体验成熟**的方案。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 ![Firebase Alternative](https://static-docs.nocobase.com/2-h1kxqg.PNG)
 
 以下是我认为值得重点考虑的几个维度：
