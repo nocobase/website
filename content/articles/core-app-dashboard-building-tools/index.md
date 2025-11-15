@@ -1,10 +1,18 @@
-**Last updated [2025.6.10]**
+**Last updated [2025.11.16]**
 
 You may not be familiar with the concept of Core App Dashboard, but you certainly know what a dashboard is.
 
 From car dashboards that display speed and fuel levels to fitness trackers monitoring steps and heart rates, and financial dashboards keeping track of stock and fund performance, these tools visualize real-time data to help us make data-driven decisions quickly.
 
 In the digital age, with the explosive growth of data and increasingly complex business demands, companies are seeking real-time monitoring, analysis, and decision-making support, leading to the emergence of Core App Dashboard.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## What is a Core App Dashboard？
 
