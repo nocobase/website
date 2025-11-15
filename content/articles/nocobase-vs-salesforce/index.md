@@ -8,6 +8,12 @@ Today, we’ll explore two CRM tools—[NocoBase](https://www.nocobase.com/en/) 
 
 Salesforce, as the leading name in the CRM market, is widely adopted by medium and large enterprises for its robust SaaS platform and comprehensive features. However, its powerful capabilities come with a steep price: the Enterprise edition costs \$165 per user per month, while the Unlimited edition reaches \$330. **For a 10-person team, the first year’s subscription costs alone would total \$19,800.**
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 NocoBase, on the other hand, offers a more budget-friendly and flexible pricing model. The Standard edition has a one-time fee of \$800, the Professional edition is \$8,000, and the Enterprise edition is custom-priced to fit specific needs. This approach provides cost-conscious businesses with a more controllable and value-driven CRM solution.
 
 
