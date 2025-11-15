@@ -4,6 +4,14 @@
 * 適切なプラットフォームを選択する際は、既存のシステムとのシームレスな統合を確保するために、技術スタックとの互換性を考慮することが重要です。
 * プロジェクトの要件、技術的背景、予算に基づいてプラットフォームを選択しましょう。高いカスタマイズ性とプラグインベースのアーキテクチャが必要なプロジェクトには、NocoBaseが理想的な選択です。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## ラピッド開発プラットフォームとは？
 
 迅速な開発プラットフォーム（または [Rapid Application Development (RAD)](https://www.nocobase.com/en/blog/rapid-application-development-best-application-cases)**プラットフォーム）は、事前に構築されたモジュール、ワークフローの自動化、簡素化されたプログラミングインターフェースを提供することにより、アプリケーションの開発と展開を加速させる開発ツールです。これらのプラットフォームは、**[ローコード](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)**および**[ノーコード](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)のソリューションを含んでおり、開発者だけでなく技術的な知識を持たないユーザーも視覚的なインターフェースとモデル駆動のロジックを使用して、広範なコーディングなしでアプリケーションを構築することができます。
