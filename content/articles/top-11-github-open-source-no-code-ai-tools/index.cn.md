@@ -8,6 +8,12 @@
 
 在这篇文章中，我们基于 GitHub 的[ no-code ](https://github.com//topics/no-code)主题项目，对目前**已接入 AI 或具备智能化能力的开源工具**进行了筛选，并按照 Star 数整理成这份「AI + 无代码工具清单」。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 这也是继我们去年推出的[《GitHub Star 数最多的开源无代码工具榜单》](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)之后的延伸。今年，我们不再只关注“谁的 Star 多”，而是更关心“谁真正把 AI 落在了可用、可复用的场景里”。
 
 如果你正在关注 AI 工具、自动化流程、Agent 构建，或者准备搭建一个智能应用，这份清单会是一个不错的起点。
@@ -333,7 +339,6 @@ n8n 将 AI 融入自动化流程中，主要通过可视化 AI 节点、Agent �
 或许未来我们不再讨论“要不要学代码”，而是——**如何与 AI 一起构建应用**
 
 如果这篇文章对你有所启发，欢迎分享给同样在探索 **AI 与无代码结合** 的朋友。👍
-
 
 **相关阅读：**
 
