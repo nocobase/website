@@ -4,6 +4,14 @@
 
 本文将使用以下技术：NocoBase、PostgreSQL 和 Docker。这些工具应该已经配置好。有关安装说明，请参考我编写的[指南](https://www.nocobase.com/en/blog/building-an-application-catalog-with-nocobase)。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 插件架构
 
 ![Plugin Architecture.png](https://static-docs.nocobase.com/dfcb0082a99b45aa4334c8460708a50b.png)
