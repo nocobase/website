@@ -4,6 +4,12 @@
 
 这一次，我们带来 2025 年第一季度中，GitHub Star 增长最快的开源低代码项目 Top 15，看看最近三个月哪些项目最受欢迎，哪些项目依然强劲增长，哪些新星正在崛起。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 **数据说明**
 
 统计时间范围为：2024 年 12 月 31 日至 2025 年 3 月 31 日，按 Star 增长数量倒序排列。 **数据来自 **[OSSInsight](https://ossinsight.io/collections/low-code-development-tool/)**，所展示的 Star 数与 GitHub 页面上的实时数据可能略有出入，但在同一统计口径下进行对比，依然具备参考价值。**
