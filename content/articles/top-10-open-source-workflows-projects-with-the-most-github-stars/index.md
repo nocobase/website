@@ -4,6 +4,12 @@ Workflow tools are now a cornerstone of improving efficiency. In an earlier blog
 
 This time, we’re shifting our focus to **open-source workflow tools**. With more developers and teams turning to open-source solutions for simplifying operations and enhancing business processes, we’ve decided to analyze the top ten most-starred projects in the [“workflows” category on GitHub](https://github.com/topics/workflows). Our goal? To help you find the perfect open-source tool for your needs.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 📈 Here’s the lineup:
 
 1. **[Dify](https://dify.ai/)**: A platform for developing LLM applications, offering tools that take you from prototyping to production. It supports RAG and workflow automation to boost efficiency.
