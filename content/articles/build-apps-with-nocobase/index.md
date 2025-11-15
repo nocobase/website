@@ -18,6 +18,12 @@ NocoBase is a No-Code platform for easily building data-driven apps. You define 
 
 First, create a directory where you will be working. In your terminal switch into that directory. After that, you need to create a docker compose file. I used the one from the above references getting started on the NocoBase website and slightly modified it.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 ***The below docker compose shows running a PostgreSQL DB locally but it is suggested to have a dedicated DB in a real production environment.***
 
 ![docker compose.png](https://static-docs.nocobase.com/8c25f1c572a1330beb04376b5053dcd4.png)
