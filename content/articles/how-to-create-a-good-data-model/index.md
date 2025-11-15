@@ -1,10 +1,18 @@
-**Last updated [2025.6.12]**
+**Last updated [2025.11.16]**
 
 A data model is the foundation of building an efficient and stable system. It not only determines how data is stored and managed but also directly impacts the performance and scalability of the system.
 
 This article will guide you through creating an effective data model, using NocoBase as an example, to quickly build a data structure that meets your business needs.
 
 Whether you are new to data modeling or an experienced developer looking to optimize an existing model, this guide will provide you with valuable insights.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## What is a Data Model?
 
