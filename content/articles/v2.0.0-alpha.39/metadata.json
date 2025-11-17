@@ -1,14 +1,14 @@
 {
   "id": 765,
-  "title": "NocoBase v2.0.0-alpha.39",
-  "title_cn": "NocoBase v2.0.0-alpha.39",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.39: Adapt Components for Mobile Devices",
+  "title_cn": "NocoBase v2.0.0-alpha.39：适配移动端组件",
+  "title_ja": "NocoBase v2.0.0-alpha.39：モバイル向けコンポーネントに対応しました",
   "description": "Release Note of v2.0.0-alpha.39",
   "description_cn": "v2.0.0-alpha.39 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.39 のリリースノート",
   "slug": "v2.0.0-alpha.39",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-16T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-17T03:28:27.725Z",
+        "updatedAt": "2025-11-17T03:28:27.725Z",
+        "articles_id": 765,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-17T03:27:05.727Z",
+    "updatedAt": "2025-11-17T03:27:05.740Z",
+    "id": 2055,
+    "title": "develop v2.0.0-alpha.39",
+    "filename": "develop v2.0.0-alpha.39-yb4g6t.jpg",
+    "extname": ".jpg",
+    "size": 81510,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.39-yb4g6t.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20v2.0.0-alpha.39-yb4g6t.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-11-14T18:26:19.704Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-11-17T03:28:27.708Z"
 }
