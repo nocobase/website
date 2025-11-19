@@ -1,10 +1,14 @@
-最近在逛 Reddit 的[ r/AI\_Agents ](https://www.reddit.com/r/AI_Agents/comments/1iwsiby/best_lowcode_ai_agent_builder/)版块，有看到一个很真实的问题：
+注：本文数据更新于 2025 年 11 月 16 日。我们会定期更新，确保你获取最新的信息！😊
 
-![Reddit1.png](https://static-docs.nocobase.com/image%20(1)-qx24dx.png)
+最近在 Reddit 上看到一句很真实的评论：![Reddit2.png](https://static-docs.nocobase.com/image-4j39lb.png)
 
-> *“ 有没有真正能让 AI 去执行任务、流程化运行的低代码工具？”*
+> *“ 这些做 AI 的无代码平台活不过一年。AI 如果真的这么强大，就不应该还靠拖流程框来实现功能。”*
 
-这个提问看似简单，却戳中了不少开发者的真实痛点—— 现在市面上“支持 AI 的低代码平台”很多，但大多只是加了一个聊天窗口，顶多能生成 SQL 或补表单字段，真正能让 AI 跑流程、调 API、当 Agent 的工具其实并不多。
+这种观点虽然很扎心，但事实是这条评论已经是**8 个月前**的事了。而现在回头看，这些工具不仅没有“消失”，反而越做越成熟，新的项目也在不断涌现。
+
+就在几天前，我们还整理过💡[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。
+
+当然，Reddit 上也有人认为“现在的大部分 AI 低代码工具都很早期，有些所谓的 AI Agent 其实只是自动化工具加了个 LLM”。![Reddit3.png](https://static-docs.nocobase.com/img_v3_02rc_522ac857-0534-4006-ae62-6b989e7e13bg-v1yz3w.png)
 
 ---
 
@@ -12,49 +16,9 @@
 
 ---
 
+但从我们观察到的情况来看，低代码生态的发展并不弱 —— 很多项目在数据建模、流程逻辑、插件扩展和 AI 协作方面，都已经能支持真实业务场景。
 
-
-评论区开始出现分歧，有人直接泼冷水说：
-
-![Reddit2.png](https://static-docs.nocobase.com/image-4j39lb.png)
-
-> *“ 这些做 AI 的无代码平台活不过一年。AI 如果真的这么强大，就不应该还靠拖流程框来实现功能。”*
-
-这种观点虽然激烈，但也确实反映了一部分开发者的担忧：**如果 AI 已经这么强，为何我们还需要无代码？这种拖拽式工具是不是早晚会被淘汰？**
-
-事实是 —— 这条评论已经是**8 个月前**的事了。而现在回头看，这些工具不仅没有“消失”，反而越做越成熟，新的项目也在不断涌现。
-
-就在几天前，我们还整理过💡[「 GitHub 上最受欢迎的开源无代码 AI 工具」](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)，从 Star 数据、社区活跃度和功能成熟度来看，很多工具不仅活得很好，还在持续迭代、不断扩展 AI 能力。
-
-这也从侧面证明了：无代码 / 低代码 + AI 并不是昙花一现的泡沫，而是在被稳定地使用、试验和进化。
-
-当然，质疑并不是没有价值。因为另一种声音也提醒得很清晰：
-
-![Reddit3.png](https://static-docs.nocobase.com/img_v3_02rc_522ac857-0534-4006-ae62-6b989e7e13bg-v1yz3w.png)
-
-> *“ 建议去看看开源的替代方案，大部分低代码 AI 工具还都很早期。*
->
-> *但重点是 —— 先想清楚你要解决什么问题，再去选工具。*
->
-> *有些所谓的 ‘AI Agent’，其实就是普通自动化上面贴了个 LLM。”*
-
-这句话很难反驳。很多“AI Agent 平台”确实只是把自动化流程接上 LLM，看起来很智能，但本质还是工具。
-
-我们过去也做过不少相关的研究和盘点：💡[「GitHub 上值得关注的 AI Agent 项目」](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)、💡[「优秀的 AI 开源工具」](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
-
-但是这一次，我们不是在重复讨论“AI 能不能做系统”，而是把视角从无代码自然延伸到了低代码。 我们之前盘点过[无代码 AI 工具](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)，无代码强调“让非技术用户也能用 AI”，所以很多无代码工具确实也能让人“不写代码也能调用模型、生成内容”。
-
-而低代码则面向“懂业务、会一点技术的人”，重点是**数据建模、流程逻辑、权限体系、插件扩展**等更接近系统建设的能力。
-
-因此，我们从 [GitHub「low-code」](https://github.com//topics/low-code)话题出发，重点关注以下类型的工具：
-
-* ⭐ 社区热度和维护活跃度较高（Star 数、更新频率、使用反馈）
-* 🤖 在官网或文档中明确提供 AI 能力，而不是简单提供“对话式接口”
-* 🛠️ 支持本地部署或开放扩展，能够真正用于产品或企业环境
-
-基于这些标准，我们筛选出了14 个当前具备代表性、并已实际集成 AI 能力的低代码开发平台。
-
-它们的方向各不相同，有的用于业务系统搭建，有的强调Agent 工作流，有的专注数据与表格应用。
+所以这次，我们从 GitHub 的 low-code 话题出发，按照**业务系统搭建、Agent 工作流、以及数据表型应用**三个方向，整理出当前最值得关注、并已实际集成 AI 能力的低代码平台。
 
 在进入详细介绍之前，如果你希望对这 14 个工具的定位与 AI 能力有一个整体概览，这张对比表会更一目了然👇
 
@@ -88,7 +52,7 @@
 
 ### **NocoBase**
 
-⭐️ Stars: 17k
+⭐️ Stars: 20k
 
 官网：[https://www.nocobase.com/](https://www.nocobase.com/)
 
@@ -96,15 +60,25 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 ![noocobase.png](https://static-docs.nocobase.com/noocobase-auxpuu.png)
 
-* **定位**：开源低代码平台，核心在于拥有真正可参与工作的 **AI 员工**——不仅能在搭建阶段自动协助建模、生成页面结构，也能在系统使用阶段执行查询、分析数据、回答业务问题，让应用既好搭也会用。
-* **面向人群**：需要构建业务系统的团队，如企业内部信息化人员、ToB 产品团队、系统集成商。
-* **适合场景**：CRM 系统、审批流、项目管理、订单系统等需要结构化数据、权限控制和界面的应用，并可通过插件扩展流程与 AI 自动建模。
+**定位**：NocoBase 最初是一款开源低代码开发平台，以数据模型驱动和插件架构为核心。 而在 2.0 中，它能够让 AI 直接参与系统构建与运行，在平台内在线编写并执行 JS，完成更复杂的业务脚本与自动化任务，还可以将 AI 员工设置在系统任意位置，帮助提升使用体验。
+![noocobase2.png](https://static-docs.nocobase.com/noocobase2-83efsk.png)
 
----
+**在搭建阶段**
+
+AI 员工能根据自然语言自动生成数据模型、字段关系、页面结构和基础逻辑，原本需要多轮配置的低代码开发流程可以变得更直接、更省心。搭建一个业务系统不再依赖繁琐的操作，而是能在 AI 员工的协助下快速成型，显著提升开发者的构建效率。
+![noocobase3.png](https://static-docs.nocobase.com/noocobase3-geirqa.png)
+
+**在使用阶段**
+
+AI 可以基于系统内的数据完成查询、分析和解释，并输出相应的业务结论或操作建议（比如自动填写表单、总结客户信息、客户调研等）。
+
+**面向人群**：需要构建业务系统的团队，如企业内部信息化人员、ToB 产品团队、系统集成商。
+
+**适合场景**：CRM 系统、审批流、项目管理、订单系统等需要结构化数据、权限控制和界面的应用，并可通过插件扩展流程与 AI 自动建模。
 
 ### **ToolJet**
 
-⭐️ Stars: 36.8k
+⭐️ Stars: 37k
 
 官网：[https://www.tooljet.ai/](https://www.tooljet.ai/)
 
@@ -112,15 +86,15 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 ![ToolJet.png](https://static-docs.nocobase.com/ToolJet-7balkk.png)
 
-* **定位**：面向企业内部应用的低代码工具，强调“AI Copilot + 可视化 UI + API 连接”。
-* **面向人群**：企业技术团队、运营/数据团队、希望快速搭建管理后台的开发者。
-* **适合场景**：内部运营工具、后台管理界面、API驱动的数据应用，AI 辅助写 SQL、生成页面布局和逻辑脚本。
+**定位**：ToolJet 一直是企业内部应用开发的高效工具，而在引入 AI 后，其构建流程的效率得到了进一步提升。AI Copilot 能根据自然语言生成页面结构、组件逻辑与基本交互，不再需要开发者在组件、脚本和 API 之间频繁切换。通过“描述需求 → 自动生成”的方式，ToolJet 在一定程度上减少了手工配置与脚本编写的工作量，使内部工具的构建过程更加集中、顺畅，也有助于团队降低开发与维护成本。
 
----
+**面向人群**：企业技术团队、运营/数据团队、希望快速搭建管理后台的开发者。
+
+**适合场景**：内部运营工具、后台管理界面、API驱动的数据应用，AI 辅助写 SQL、生成页面布局和逻辑脚本。
 
 ### **Appsmith**
 
-⭐️ Stars: 38.3k
+⭐️ Stars: 38k
 
 官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 
@@ -128,15 +102,17 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-ycvv0e.png)
 
-* **定位**：开源内部工具开发平台，提供“Appsmith AI”用于自动生成 SQL、表单逻辑和页面组件配置。
-* **面向人群**：前端工程师、数据工具开发人员、需要快速搭建 CRUD 系统的团队。
-* **适合场景**：查询平台、内部仪表盘、数据库管理工具（例如：输入自然语言 → AI 生成 SQL → 显示表格结果）。
+**定位**：Appsmith 是一款专注于内部工具构建的开源低代码平台，其核心优势在于稳定的组件体系、数据源连接能力以及较成熟的 CRUD 场景支持。在引入 AI 功能后，Appsmith 的构建体验也得到了进一步的补充。
 
----
+AI 能根据自然语言生成 SQL 查询、表单校验逻辑与基础脚本，并能自动协助完成常见的页面配置，开发者不必在代码与组件配置之间频繁切换。通过将部分重复性操作交由 AI 辅助完成，Appsmith 可以让内部工具的搭建流程更加高效，也降低了数据类应用的开发门槛。
+
+**面向人群**：前端工程师、数据工具开发人员、需要快速搭建 CRUD 系统的团队。
+
+**适合场景**：查询平台、内部仪表盘、数据库管理工具（例如：输入自然语言 → AI 生成 SQL → 显示表格结果）。
 
 ### **Budibase**
 
-⭐️ Stars: 27.2k
+⭐️ Stars: 27k
 
 官网：[https://budibase.com/](https://budibase.com/)
 
@@ -144,15 +120,17 @@ GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budi
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-gjjun3.png)
 
-* **定位**：用于构建自定义业务应用的平台，支持数据库建模、表单生成和简单流程，同时提供 AI 字段与文本生成能力。
-* **面向人群**：中小企业内部团队、轻量业务系统开发者、无代码爱好者。
-* **适合场景**：表单系统、内部办公应用、数据录入平台，AI 可以自动补充文本字段或生成样例数据，但对复杂逻辑的支持有限。
+**定位**：Budibase 是一款面向企业内部应用的开源低代码构建平台，重点提供数据建模、表单生成和基础流程等能力，适用于中小规模的业务场景。在加入 AI 功能后，Budibase 主要以辅助性质提升构建体验。
 
----
+AI 可用于生成字段文本、补充数据内容以及创建基础页面结构，减少在表单配置和数据录入上的重复操作。虽然对复杂业务逻辑的支持仍然有限，但 AI 的介入让 Budibase 在轻量业务系统、内部表单工具和数据录入类应用中都具备更高的效率和可用性。
 
-### **refine**
+**面向人群**：中小企业内部团队、轻量业务系统开发者、无代码爱好者。
 
-⭐️ Stars: 33.1k
+**适合场景**：表单系统、内部办公应用、数据录入平台，AI 可以自动补充文本字段或生成样例数据，但对复杂逻辑的支持有限。
+
+### **Refine**
+
+⭐️ Stars: 33k
 
 官网：[https://refine.dev/](https://refine.dev/)
 
@@ -160,9 +138,11 @@ GitHub：[https://github.com/refinedev/refine](https://github.com/refinedev/refi
 
 ![refine.png](https://static-docs.nocobase.com/refine-64wrxv.png)
 
-* **定位**：基于 React 的前端开发框架，专注于快速生成 CRUD、权限、界面逻辑，提供 AI 辅助生成代码示例与接口绑定。
-* **面向人群**：前端开发工程师、需要灵活度而非纯可视化操作的技术团队。
-* **适合场景**：需要可控代码、又希望提升开发效率的后台管理系统，例如管理面板、数据可视化工具，但不提供完整后端建模能力。
+**定位**：refine 是一个用于构建后台应用和内部工具的 React 框架，擅长处理常见的 CRUD、路由、权限和数据连接场景。开发者可以直接用自然语言描述界面或功能，由 AI 自动生成页面结构、交互逻辑和基础代码，并保持输出为可直接使用的 React 项目。
+
+**面向人群**：前端开发工程师、需要灵活度而非纯可视化操作的技术团队。
+
+**适合场景**：需要可控代码、又希望提升开发效率的后台管理系统，例如管理面板、数据可视化工具，但不提供完整后端建模能力。
 
 ## AI 工作流 / Agent 编排类
 
@@ -174,7 +154,7 @@ GitHub：[https://github.com/refinedev/refine](https://github.com/refinedev/refi
 
 ### **n8n**
 
-⭐️ Stars: 151k
+⭐️ Stars: 157k
 
 官网：[https://n8n.io/](https://n8n.io/)
 
@@ -182,15 +162,15 @@ GitHub：[https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n)
 
 ![n8n.png](https://static-docs.nocobase.com/n8n-8riwih.png)
 
-* **定位**：开源工作流自动化平台，可将 AI 节点与 API 流程组合执行。
-* **面向人群**：运营人员、技术支持、自动化工程师、中小型企业内部团队。
-* **适合场景**：内容生成自动化、数据同步、邮件回复、AI参与决策的流程自动化（如客服自动回复→写入数据库→发送邮件）。
+**定位**：n8n 是一款开源的低代码自动化与工作流平台，擅长把不同系统、API 和服务以可视化方式串联起来，帮助团队快速构建自动化流程。在加入 AI 节点之后，n8n 不再只是执行固定规则的流程，而是能让 LLM 参与判断、生成内容、分析数据，并在流程中调用外部工具或 API。
 
----
+**面向人群**：运营人员、技术支持、自动化工程师、中小型企业内部团队。
+
+**适合场景**：内容生成自动化、数据同步、邮件回复、AI参与决策的流程自动化（如客服自动回复→写入数据库→发送邮件）。
 
 ### **Dify**
 
-⭐️ Stars: 117k
+⭐️ Stars: 119k
 
 官网：[https://dify.ai/](https://dify.ai/)
 
@@ -198,15 +178,15 @@ GitHub：[https://github.com/langgenius/dify](https://github.com/langgenius/dify
 
 ![Dify.png](https://static-docs.nocobase.com/Dify-gk2be6.png)
 
-* **定位**：AI 原生应用与 Agent 工作流平台，支持模型、知识库、记忆与工具调用。
-* **面向人群**：需要搭建智能客服、企业知识库助手、AI 应用原型的产品团队与开发者。
-* **适合场景**：基于企业知识库的问答助手、智能工单处理、AI 执行 API 动作的 Agent 服务。
+**定位**：Dify 是一个用于构建 AI 应用与 Agent 的开源平台，提供模型管理、知识库、对话编排和工具集成等基础能力。结合了 AI 的 Dify 能让模型在工作流中执行多步骤推理、调用 API、检索外部知识、读写数据，并以可视化方式构建可执行的 Agent 流程，实现从对话到操作的完整链路。
 
----
+**面向人群**：需要搭建智能客服、企业知识库助手、AI 应用原型的产品团队与开发者。
+
+**适合场景**：基于企业知识库的问答助手、智能工单处理、AI 执行 API 动作的 Agent 服务。
 
 ### **Flowise**
 
-⭐️ Stars: 46k
+⭐️ Stars: 47k
 
 官网：[https://flowiseai.com/](https://flowiseai.com/)
 
@@ -214,15 +194,15 @@ GitHub：[https://github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flo
 
 ![Flowise.png](https://static-docs.nocobase.com/Flowise-2vawwu.png)
 
-* **定位**：基于 LangChain 的可视化 AI 流程工具，用于构建 RAG、对话式 Agent。
-* **面向人群**：AI 开发者、需要快速 Demo 的团队、初创产品探索阶段。
-* **适合场景**：知识库问答、简单 AI 机器人、多步骤推理流程原型，但不支持复杂业务逻辑或系统搭建。
+**定位**：Flowise 是一个开源的低代码/可视化平台，用于构建 AI 代理与 LLM 工作流。它提供可视化构建器、执行追踪、API/SDK 集成与本地部署能力。AI 结合后，Flowise 支持多步骤代理系统、工具调用与知识检索，人机协作与流程编排都可通过拖拽节点实现。
 
----
+**面向人群**：AI 开发者、需要快速 Demo 的团队、初创产品探索阶段。
+
+**适合场景**：知识库问答、简单 AI 机器人、多步骤推理流程原型，但不支持复杂业务逻辑或系统搭建。
 
 ### **Kestra**
 
-⭐️ Stars: 22.7k
+⭐️ Stars: 23k
 
 官网：[https://kestra.io/](https://kestra.io/)
 
@@ -230,15 +210,15 @@ GitHub：[https://github.com/kestra-io/kestra](https://github.com/kestra-io/kest
 
 ![Kestra.png](https://static-docs.nocobase.com/Kestra-1n19xy.png)
 
-* **定位**：后端任务编排与数据调度平台，支持 AI Copilot 自动生成 workflow。
-* **面向人群**：数据工程师、后端开发、DevOps 团队。
-* **适合场景**：AI 生成定时任务、数据清洗流程、API 调用任务链，偏后端执行型工作流。
+**定位**：Kestra 是一款开源的任务编排与调度平台，专注于构建可视化工作流、执行计划和监控机制。支持 AI 驱动的 YAML 流程生成、模型调用和条件决策节点，用户可以通过自然语言或配置模板快速生产复杂任务链条，并获得完整的执行追踪与日志分析能力。
 
----
+**面向人群**：数据工程师、后端开发、DevOps 团队。
+
+**适合场景**：AI 生成定时任务、数据清洗流程、API 调用任务链，偏后端执行型工作流。
 
 ### **Node-RED**
 
-⭐️ Stars:22.2k
+⭐️ Stars: 22k
 
 官网：[https://nodered.org/](https://nodered.org/)
 
@@ -246,15 +226,15 @@ GitHub：[https://github.com/node-red/node-red](https://github.com/node-red/node
 
 ![Node-RED.png](https://static-docs.nocobase.com/Node-RED-0c9pxy.png)
 
-* **定位**：事件驱动可视化流程工具，广泛用于 IoT 与系统集成领域。
-* **面向人群**：自动化工程师、硬件开发人员、智能家居/IoT 开发团队。
-* **适合场景**：摄像头识别→AI 判断→执行开关操作、设备异常→AI分析→触发告警等场景。
+**定位**：Node-RED 是一种基于事件的可视化流程工具，通过节点串联设备、服务和 API，构建自动化逻辑与数据流。平台提供了多种 AI 节点，可用于模型推理、内容生成、信息分析和条件判断，流程能根据模型的输出完成更灵活的操作。节点可与 IoT、Webhook 或系统事件对接，形成完整的处理链路。
 
----
+**面向人群**：自动化工程师、硬件开发人员、智能家居/IoT 开发团队。
+
+**适合场景**：摄像头识别→AI 判断→执行开关操作、设备异常→AI分析→触发告警等场景。
 
 ### **Sim**
 
-⭐️ Stars: 17.2k
+⭐️ Stars: 18k
 
 官网：[https://www.sim.ai/](https://www.sim.ai/)
 
@@ -262,9 +242,11 @@ GitHub：[https://github.com/simstudioai/sim](https://github.com/simstudioai/sim
 
 ![Sim.png](https://static-docs.nocobase.com/Sim-sygfqw.png)
 
-* **定位**：专注多 Agent 协作流程，可视化构建、执行，并支持部署为 API。
-* **面向人群**：希望构建多角色 AI 代理系统的 AI 团队、智能助理初创公司。
-* **适合场景**：AI 助手、自动报告生成、智能执行机器人，但生态成熟度仍低于 n8n/Dify。
+**定位**：Sim 是一个用于构建多 Agent 协作流程的开源平台，通过可视化方式组织模型、工具和任务步骤。平台支持多模型协作、工具调用、任务拆解和流程执行，Agent 可在同一工作流中交流、分工和完成推理或操作。用户可根据需求配置角色、能力和任务链条，生成可执行的多 Agent 系统。
+
+**面向人群**：希望构建多角色 AI 代理系统的 AI 团队、智能助理初创公司。
+
+**适合场景**：AI 助手、自动报告生成、智能执行机器人，但生态成熟度仍低于 n8n/Dify。
 
 ## **AI + 数据表格 / 数据库智能化类**
 
@@ -276,7 +258,7 @@ AI 的主要任务是生成、补全、查询、分析，而非执行复杂业�
 
 ### **NocoDB**
 
-⭐️ Stars: 58.4k
+⭐️ Stars: 59k
 
 官网：[https://nocodb.com/](https://nocodb.com/?utm_source=chatgpt.com)
 
@@ -284,11 +266,11 @@ GitHub：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb?utm
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-qk45qn.png)
 
-* **定位**：开源版 Airtable，支持将任意数据库（MySQL、PostgreSQL 等）转换为可视化表格工具。
-* **面向人群**：需要管理结构化数据的团队，如数据运营人员、内部项目协作团队、轻 CRM 需求用户。
-* **适合场景**：内容库、客户表、库存数据管理、团队协作表格。AI 能力主要体现在字段推荐、内容生成、自动补全与智能 Insights（数据分析建议）。
+**定位**：开源版 Airtable，支持字段配置、视图管理和基础自动化。平台提供 AI 辅助能力，可用于生成字段内容、补充数据、分析表格信息和输出智能建议。
 
----
+**面向人群**：需要管理结构化数据的团队，如数据运营人员、内部项目协作团队、轻 CRM 需求用户。
+
+**适合场景**：内容库、客户表、库存数据管理、团队协作表格。AI 能力主要体现在字段推荐、内容生成、自动补全与智能 Insights（数据分析建议）。
 
 ### **Teable**
 
@@ -300,17 +282,17 @@ GitHub：[https://github.com/teableio/teable](https://github.com/teableio/teable
 
 ![Teable.png](https://static-docs.nocobase.com/Teable-n74cv7.png)
 
-* **定位**：基于 PostgreSQL 的协作型表格数据库，结合 AI 会话与智能填充。
-* **面向人群**：Notion/Airtable 用户、需要数据协作 + AI 辅助分析的团队。
-* **适合场景**：内容管理、轻量数据仓库、团队项目表格系统。支持“对话式处理数据”，例如通过自然语言查询记录、批量生成表格内容或自动产出报表。
+**定位**：提供类似 Airtable 的数据管理界面，支持字段类型、视图管理和数据协作。平台提供 AI 的能力，可以通过对话生成数据内容、处理表格信息、创建报表和执行文本类指令，模型可直接在表格中完成数据相关操作。
 
----
+**面向人群**：Notion/Airtable 用户、需要数据协作 + AI 辅助分析的团队。
+
+**适合场景**：内容管理、轻量数据仓库、团队项目表格系统。支持“对话式处理数据”，例如通过自然语言查询记录、批量生成表格内容或自动产出报表。
 
 ## **不完全属于以上三类的工具**
 
 在梳理的过程中，我们也发现有部分工具并不完全落在前三类中，例如 **Onlook**。
 
-⭐️ Stars: 22.9k
+⭐️ Stars: 23k
 
 官网：[https://onlook.com/](https://onlook.com/)
 
@@ -318,28 +300,9 @@ GitHub：[https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/on
 
 ![Onlook.png](https://static-docs.nocobase.com/Onlook-bnn4iz.png)
 
-Onlook 的特殊之处在于：它将“AI 生成 UI 界面”作为核心能力。
+**Onlook 的特殊之处在于：它把“AI 生成 UI 界面”作为其核心能力。**
 
-通过自然语言或线框，AI 可以自动生成页面结构、组件布局、甚至 React 代码。这类工具更多服务于「界面搭建 + AI 设计辅助」，介于设计工具与前端开发低代码平台之间。
-
-## **有些工具不仅属于一个分类 —— 例如 NocoBase**
-
-虽然我们在前文将工具划分为“业务系统搭建类、工作流类、数据表格类”三大方向，但在实际对比中也发现，有一些平台具备跨类能力——**其中最完整、架构最统一的，是 NocoBase。**
-
-与大多数工具不同，NocoBase 的能力体现在：
-
-* 像数据平台一样，它具备数据表结构、字段、视图、API 能力；
-* 像内部系统搭建工具一样，它可以生成页面、表单、权限、页面逻辑与关系模型；
-* 通过插件和开放架构，它也可以扩展工作流（Workflow）、自动化，甚至嵌入 AI 节点，实现部分流程执行能力。
-
-当然了，也确实存在一些具备“跨类特性”的工具，例如：
-
-* Appsmith、ToolJet、Budibase等在构建界面的同时，也支持“按钮触发 → API → 数据写入”这类轻量流程；
-* NocoDB、Teable 这类数据型工具，也开始提供 AI 自动填充、Webhook 触发、规则执行等功能。
-
-但这些工具更多是在原有能力上补了一点 AI 功能，让体验更完整，而不是形成完整的流程引擎或系统能力，扩展性和自由度也有限。
-
-相比之下，NocoBase 并不只是“覆盖多方向”，而是一个真正的**复合型平台**——它从底层的数据建模开始，延伸到页面生成、权限控制，再通过插件扩展到工作流和 AI，这种架构上的一体化能力，是目前开源低代码工具中少见的。
+通过自然语言或线框描述创建页面结构和组件布局。平台可生成 React 代码、自动处理样式和结构关系，并提供可视化编辑能力，支持在生成基础上进一步调整界面内容和组件层级。这类工具更多服务于「界面搭建 + AI 设计辅助」，介于**设计工具**与**前端开发低代码平台**之间。
 
 ## 写在最后
 
