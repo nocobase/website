@@ -12,7 +12,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v2.0.0-v1.9.8](https://www.nocobase.com/en/blog/v1.9.8)
+### [v1.9.8](https://www.nocobase.com/en/blog/v1.9.8)
 
 *Release date: 2025-11-19*
 
@@ -22,7 +22,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Template print]** parse the variables in the filter by @jiannx
 - **[Workflow: Approval]** Fix an issue where race conditions occurring during concurrent approval processing by multiple approvers could cause a workflow node to execute more than once by @mytharcher
 
-### [v2.0.0-v1.9.7](https://www.nocobase.com/en/blog/v1.9.7)
+### [v1.9.7](https://www.nocobase.com/en/blog/v1.9.7)
 
 *Release date: 2025-11-18*
 
