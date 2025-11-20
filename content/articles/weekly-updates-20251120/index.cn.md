@@ -91,7 +91,7 @@
 - **[权限控制]** 关系字段关联操作 snippets 不生效的问题 ([#7876](https://github.com/nocobase/nocobase/pull/7876)) by @2013xile
 - **[工作流：自定义操作事件]** 修复监听不存在的外部数据源事件产生的报错 by @mytharcher
 - **[评论]** 修复评论区块引用评论失效问题 by @katherinehhh
-- **[模板打印]** 解析filter中变量 by @jiannx
+- **[模板打印]** 解析 ilter 中变量 by @jiannx
 - **[工作流：审批]** 修复由于多个审批人并发处理审批时的竞态导致的节点重复执行的问题 by @mytharcher
 
 ### [v2.0.0-alpha.40](https://www.nocobase.com/cn/blog/v2.0.0-alpha.40)
@@ -134,4 +134,4 @@
   - 修复富文本字段无法输入默认值及多选字段默认值无法选择多个选项的问题。 ([#7864](https://github.com/nocobase/nocobase/pull/7864)) by @gchust
 - **[多应用管理器（已废弃）]** 子应用停止后发布同步信号，通知其他节点停止对应子应用 ([#7849](https://github.com/nocobase/nocobase/pull/7849)) by @2013xile
 - **[工作流：审批]** 修复审批表单的联动规则不生效的问题 by @zhangzhonghe
-- **[邮件管理]** ShadowHtml刷新报错 by @jiannx
+- **[邮件管理]** ShadowHtml 刷新报错 by @jiannx
