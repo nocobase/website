@@ -1,11 +1,11 @@
 {
   "id": 774,
-  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
-  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
-  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
+  "title": "NocoBase Weekly Updates: Add AI employee for configuring chart",
+  "title_cn": "NocoBase 本周更新汇总：新增图表配置的 Al 员工",
+  "title_ja": "NocoBase 今週の更新：チャート設定用の AI アシスタントを追加しました",
   "description": "This week's update includes: add AI employee for configuring chart.",
   "description_cn": "本周更新包括：新增图表配置的 AI 员工。",
-  "description_ja": "今週の更新内容は以下の通りです：** チャート設定用の AI アシスタントを追加しました。",
+  "description_ja": "今週の更新内容は以下の通りです：チャート設定用の AI アシスタントを追加しました。",
   "slug": "weekly-updates-20251120",
   "publishedAt": "2025-11-20T03:04:17.286Z",
   "status": "published",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-20T03:17:03.514Z"
+  "updatedAt": "2025-11-20T03:53:23.491Z"
 }
