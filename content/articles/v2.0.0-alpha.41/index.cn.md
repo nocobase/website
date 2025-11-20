@@ -28,5 +28,5 @@
 - **[权限控制]** 关系字段关联操作 snippets 不生效的问题 ([#7876](https://github.com/nocobase/nocobase/pull/7876)) by @2013xile
 - **[工作流：自定义操作事件]** 修复监听不存在的外部数据源事件产生的报错 by @mytharcher
 - **[评论]** 修复评论区块引用评论失效问题 by @katherinehhh
-- **[模板打印]** 解析filter中变量 by @jiannx
+- **[模板打印]** 解析 filter 中变量 by @jiannx
 - **[工作流：审批]** 修复由于多个审批人并发处理审批时的竞态导致的节点重复执行的问题 by @mytharcher
