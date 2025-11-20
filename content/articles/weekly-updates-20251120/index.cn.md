@@ -14,7 +14,7 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v2.0.0-v1.9.8](https://www.nocobase.com/cn/blog/v1.9.8)
+### [v1.9.8](https://www.nocobase.com/cn/blog/v1.9.8)
 
 *发布时间：2025-11-19*
 
@@ -24,7 +24,7 @@
 - **[模板打印]** 解析filter中变量 by @jiannx
 - **[工作流：审批]** 修复由于多个审批人并发处理审批时的竞态导致的节点重复执行的问题 by @mytharcher
 
-### [v2.0.0-v1.9.7](https://www.nocobase.com/cn/blog/v1.9.7)
+### [v1.9.7](https://www.nocobase.com/cn/blog/v1.9.7)
 
 *发布时间：2025-11-18*
 
