@@ -12,7 +12,7 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v2.0.0-v1.9.8](https://www.nocobase.com/ja/blog/v1.9.8)
+### [v1.9.8](https://www.nocobase.com/ja/blog/v1.9.8)
 
 *リリース日：2025-11-19*
 
@@ -22,7 +22,7 @@
 * **[テンプレート印刷]** filter 内で使用される変数の解析処理を修正しました。by @jiannx
 * **[ワークフロー：承認]** 複数の承認者が同時に処理した場合に競合が発生し、ノードが重複実行される問題を修正しました。by @mytharcher
 
-### [v2.0.0-v1.9.7](https://www.nocobase.com/ja/blog/v1.9.7)
+### [v1.9.7](https://www.nocobase.com/ja/blog/v1.9.7)
 
 *リリース日：2025-11-18*
 
