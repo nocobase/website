@@ -325,12 +325,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-23T18:09:12.522Z",
+    "updatedAt": "2025-11-23T18:09:12.535Z",
+    "id": 2069,
+    "title": "Group 18",
+    "filename": "Group 18-c49h9x.png",
+    "extname": ".png",
+    "size": 361243,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Group%2018-c49h9x.png",
+    "preview": "https://static-docs.nocobase.com/Group%2018-c49h9x.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Yuan tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-23T17:34:57.821Z"
+  "updatedAt": "2025-11-23T18:12:46.432Z"
 }
