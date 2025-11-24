@@ -8,7 +8,7 @@
   "description_ja": "PoC をスピーディーに構築できるオープンソースのローコード／ノーコードツール 6 つを整理し、検証内容に応じて選べる指針として紹介します。",
   "slug": "6-open-source-no-low-code-tools-for-building-pocs",
   "publishedAt": "2025-11-23T16:40:06.058Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-24T03:30:08.491Z"
+  "updatedAt": "2025-11-24T14:07:37.590Z"
 }
