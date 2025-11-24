@@ -23,6 +23,8 @@ This guide helps technical leaders and developers clearly redefine when low code
 
 > 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
+![low code and no code.png](https://static-docs.nocobase.com/8169e9da-7ce5-4ca9-b3c3-b56c231e04b3-cubwhz.png)
+
 ## When should you use it?
 
 Evaluate suitability with engineering discipline. If a core system hits any “not suitable” condition, you should switch to traditional development immediately.
