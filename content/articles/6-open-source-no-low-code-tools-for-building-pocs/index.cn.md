@@ -28,7 +28,7 @@ AI 主要负责生成界面和结构，但 PoC 的关键不在界面本身，而
 | GitHub        | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------- | ---------------------------------------------------------------------------- |
 | GitHub Stars | 20k                                                                          |
-| 官网          | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
+| 官网          | [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)                 |
 | 文档          | [https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)         |
 
 NocoBase 是一个开源、自部署且插件化的低代码／无代码平台，专为构建业务系统和内部工具设计。
@@ -191,7 +191,6 @@ Refine 是一个开源的 React 应用框架，用于快速构建数据密集型
 随着 AI 在界面生成和部分开发环节中提供了更高的效率，许多无代码和低代码工具也开始加入适度的 AI 辅助能力。PoC 的核心仍然在于快速验证思路而非构建完备系统，选择与验证点贴近的工具，并在需要时利用这些辅助能力，就能以更低成本、更短周期跑通关键流程，让团队将精力集中在真正影响判断的部分。
 
 希望这篇文章对你有所帮助，也欢迎分享给有 Poc 需求的朋友。
-
 
 相关阅读：
 
