@@ -195,3 +195,14 @@ Refine は、React ベースでデータ量の多い管理システムや内部�
 AI によって画面生成や一部の作業は格段に効率化されましたが、PoC の本質はあくまで「素早い検証」です。検証ポイントに合ったツールを選び、必要な部分で AI を活用すれば、より低コスト・短期間で重要な業務フローを動かし、チームは判断に直結する部分へ集中できます。
 
 この記事が少しでも参考になれば幸いです。PoC を検討している方にもぜひ共有してください。
+
+
+**関連読み物：**
+
+* [開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企業向けノーコード・ローコードプラットフォームのRBAC権限体系詳細比較](https://www.nocobase.com/ja/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHubで注目のオープンソースAIローコードツール14選 ](https://www.nocobase.com/ja/blog/14-ai-low-code-platforms-github)
+* [GitHubで人気のオープンソースノーコードAIツール11選](https://www.nocobase.com/ja/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub で Star 数トップ18 のオープンソース AI Agent プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)
+* [GitHubで最もスターを獲得したオープンソースAIプロジェクト20選](https://www.nocobase.com/ja/blog/github-open-source-ai-projects)
+* [GitHub でスター数トップ 8 のオープンソース MCP プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-mcp-projects)
