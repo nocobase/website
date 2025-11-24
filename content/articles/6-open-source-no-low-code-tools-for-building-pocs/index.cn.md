@@ -39,8 +39,7 @@ NocoBase 是一个开源、自部署且插件化的低代码／无代码平台�
 
 **适合的使用场景**
 
-*  当你需要快速搭建一个包含数据模型、操作界面、流程逻辑的内部系统，例如员工管理、订单处理、或客户服务后台。
-
+* 当你需要快速搭建一个包含数据模型、操作界面、流程逻辑的内部系统，例如员工管理、订单处理、或客户服务后台。
 * 有多个用户角色、复杂权限控制需求，以及需要接口整合外部系统或数据源的应用场合。
 * NocoBase 支持自部署，并提供可扩展的插件机制，适合需要在内部环境中运行系统、并保持架构灵活度的团队。
 
@@ -192,3 +191,14 @@ Refine 是一个开源的 React 应用框架，用于快速构建数据密集型
 随着 AI 在界面生成和部分开发环节中提供了更高的效率，许多无代码和低代码工具也开始加入适度的 AI 辅助能力。PoC 的核心仍然在于快速验证思路而非构建完备系统，选择与验证点贴近的工具，并在需要时利用这些辅助能力，就能以更低成本、更短周期跑通关键流程，让团队将精力集中在真正影响判断的部分。
 
 希望这篇文章对你有所帮助，也欢迎分享给有 Poc 需求的朋友。
+
+
+相关阅读：
+
+* [给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企业级无代码低代码平台 RBAC 权限体系深度对比](https://www.nocobase.com/cn/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHub 上最值得关注的 14 个开源 AI 低代码工具 ](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)
+* [11 个在 GitHub 上最受欢迎的开源无代码 AI 工具 ](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
+* [GitHub 上 Star 数量前 20 的开源 AI 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
+* [GitHub 上 Star 数量前 8 的开源 MCP 项目](https://www.nocobase.com/cn/blog/github-open-source-mcp-projects)
