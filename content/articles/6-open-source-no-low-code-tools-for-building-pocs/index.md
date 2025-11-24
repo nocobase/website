@@ -29,7 +29,7 @@ With this in mind, we’ve put together six open-source no-code/low-code tools w
 | ------------ | ---------------------------------------------------------------------------- |
 | GitHub Stars | 20k                                                                          |
 | Website      | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| Docs         | [https://v2.docs.nocobase.com/cn/                                            |
+| Docs         | [https://v2.docs.nocobase.com](https://v2.docs.nocobase.com)                 |
 
 NocoBase is an open-source, self-hosted, and plugin-driven low-code/no-code platform designed for building business systems and internal tools.
 
@@ -193,7 +193,6 @@ Each of these six open source tools serves a different PoC need.
 As AI makes UI generation and parts of development more efficient, many no code and low code tools now offer light AI support. The core purpose of a PoC is still to validate ideas quickly. Choosing tools that match what you need to test and using AI assistance where helpful lets you run key steps faster and at lower cost, so the team can focus on what truly drives decisions.
 
 Hope this article helps and feel free to share it with anyone working on a PoC.
-
 
 **Related reading:**
 
