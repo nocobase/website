@@ -4,7 +4,7 @@
   "title_cn": "6个适合做 PoC 的开源无代码/低代码工具推荐 ",
   "title_ja": " PoC に最適なオープンソースのノーコード／ローコードツール 6 選",
   "description": "This summary covers six open source low code and no code tools for quickly building PoCs and offers guidance on choosing the right option for different validation needs.",
-  "description_cn": "汇总了 6 个适合快速构建 PoC 的开源低码/无代码工具，为你提供在不同验证场景下的选择指南。",
+  "description_cn": "汇总了 6 个适合快速构建 PoC 的开源低代码/无代码工具，为你提供在不同验证场景下的选择指南。",
   "description_ja": "PoC をスピーディーに構築できるオープンソースのローコード／ノーコードツール 6 つを整理し、検証内容に応じて選べる指針として紹介します。",
   "slug": "6-open-source-no-low-code-tools-for-building-pocs",
   "publishedAt": "2025-11-23T16:40:06.058Z",
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-24T14:07:37.590Z"
+  "updatedAt": "2025-11-24T14:52:34.801Z"
 }
