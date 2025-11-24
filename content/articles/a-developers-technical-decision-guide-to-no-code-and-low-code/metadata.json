@@ -4,11 +4,11 @@
   "title_cn": "给开发者的无代码/低代码技术决策指南（2026）",
   "title_ja": "開発者向けノーコード／ローコードの技術判断ガイド（2026）      ",
   "description": "A concise decision guide for developers. Clear best-fit cases, non-fit cases, and key risks of no-code.",
-  "description_cn": "开发者必读的无代码使用判断表。适用场景、不适用场景和关键风险一目了然。",
+  "description_cn": "开发者必读的无代码低代码使用指南。适用场景、不适用场景和关键风险一目了然。",
   "description_ja": "開発者向けのノーコード判断ガイド。向いている場面、向いていない場面、主要リスクを短くまとめました。",
   "slug": "a-developers-technical-decision-guide-to-no-code-and-low-code",
   "publishedAt": "2025-11-24T00:39:47.242Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -400,5 +400,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-24T00:43:29.889Z"
+  "updatedAt": "2025-11-24T13:41:07.529Z"
 }
