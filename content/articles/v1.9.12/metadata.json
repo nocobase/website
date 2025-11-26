@@ -1,14 +1,14 @@
 {
   "id": 784,
-  "title": "NocoBase v1.9.12",
-  "title_cn": "NocoBase v1.9.12",
-  "title_ja": null,
+  "title": "NocoBase v1.9.12: Enhanced error messages for asynchronous tasks to provide users with specific reasons for task failures",
+  "title_cn": "NocoBase v1.9.12：优化异步任务的错误信息，任务失败时将明确提示具体的错误原因",
+  "title_ja": "NocoBase v1.9.12：タスク失敗時のエラー内容がより分かりやすく表示されるようになりました",
   "description": "Release Note of v1.9.12",
   "description_cn": "v1.9.12 更新日志",
-  "description_ja": null,
+  "description_ja": "v1.9.12 リリースノート",
   "slug": "v1.9.12",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-11-24T15:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-11-26T07:09:22.628Z",
+        "updatedAt": "2025-11-26T07:09:22.628Z",
+        "articles_id": 784,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-11-26T07:08:13.954Z",
+    "updatedAt": "2025-11-26T07:08:13.967Z",
+    "id": 2072,
+    "title": "main v1.9.12",
+    "filename": "main v1.9.12-atq8da.jpg",
+    "extname": ".jpg",
+    "size": 89772,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20v1.9.12-atq8da.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20v1.9.12-atq8da.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-11-24T15:55:11.185Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-11-26T07:09:22.614Z"
 }
