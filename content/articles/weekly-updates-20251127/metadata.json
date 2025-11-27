@@ -8,7 +8,7 @@
   "description_ja": "今週の更新内容は以下の通りです：今週は、テーブル列の並び替えに対応し、未ログイン時に自動で SSO ログインページへ遷移できるようになりました。",
   "slug": "weekly-updates-20251127",
   "publishedAt": "2025-11-27T02:29:54.053Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-11-27T02:56:40.371Z"
+  "updatedAt": "2025-11-27T03:23:02.437Z"
 }
