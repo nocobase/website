@@ -8,7 +8,7 @@
   "description_ja": "今週の更新内容は以下の通りです：チャート機能と複数タイプのブロックを新たに追加，承認トリガーで申請番号（承認番号）の変数が使用できるようになりました",
   "slug": "weekly-updates-20251030",
   "publishedAt": "2025-10-30T02:19:38.000Z",
-  "status": "published",
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-30T02:22:06.080Z"
+  "updatedAt": "2025-11-27T03:03:53.288Z"
 }
