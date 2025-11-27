@@ -149,7 +149,7 @@
 
 ### 🎉 新特性
 
-- **[client]** 增加 2.0 markdown 区块 ([#7613](https://github.com/nocobase/nocobase/pull/7613)) by @katherinehhh
+- **[client]** 增加 2.0 Markdown 区块 ([#7613](https://github.com/nocobase/nocobase/pull/7613)) by @katherinehhh
 - **[数据源管理]**
 
   - 主数据源支持从主数据库中读取数据表，并支持更改字段 interface ([#7118](https://github.com/nocobase/nocobase/pull/7118)) by @aaaaaajie
