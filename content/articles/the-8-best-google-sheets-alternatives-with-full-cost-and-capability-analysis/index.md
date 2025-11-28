@@ -4,7 +4,7 @@ It is lightweight, easy to get started with, and simple for teams to collaborate
 
 As teams grow, involve more people, and deal with more complex business logic, the structural and collaborative limitations of spreadsheets start to show. When there is a growing need for cross departmental collaboration, granular permissions, or workflow driven operations, Google Sheets often becomes difficult to scale.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTNiMzY3Nzg0OTE4NDQyMDcxNGVlMDRmNTkzNmFkM2VfRmZFdnZMTmpxbk10ZHJKeUx4cE9TYmg4ZzJCYXdUUnJfVG9rZW46WFNuc2JOZHdYbzB0UTV4QkZkdWM2NnBpbjJmXzE3NjQzMDYxNzY6MTc2NDMwOTc3Nl9WNA)
+![Hacker News.png](https://static-docs.nocobase.com/Group%2019-bhyfdg.png)
 
 On [Hacker News](https://news.ycombinator.com/item?id=39155449), many users are also searching for alternatives to Google Sheets. Some point out that in more complex scenarios it feels more like a temporary tool rather than something suited for serious data work. As data volume grows or models become more complex, it tends to fall short and cannot fully support end to end analysis.
 
@@ -58,6 +58,8 @@ Before we go into the details, I grouped the 8 tools for today’s overview by c
 
 ### NocoBase
 
+![NocoBase.PNG](https://static-docs.nocobase.com/NocoBase-2wy1ke.PNG)
+
 Official website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
 NocoBase is an open source no code and low code platform for building business applications. It can be used to create internal systems, admin dashboards, and data centric workflows. It supports self hosting and also offers an official hosted service, making it a good fit for teams moving from spreadsheets to more structured system based management. Applications are built through visual configuration, with additional capabilities available through plugins and APIs. In some cases, the platform’s AI features can further improve data entry and workflow efficiency.
@@ -92,6 +94,8 @@ For teams shifting from spreadsheets to more systematic management and seeking s
 
 ### Retool
 
+![Retool.png](https://static-docs.nocobase.com/Retool-r3nc54.png)
+
 Official website: [https://retool.com/](https://retool.com/)
 
 Retool is a closed source SaaS platform designed for quickly building internal tools, with a self hosted option available for enterprise plans. It is built for engineering teams and allows developers to combine databases, APIs, and backend logic into working internal applications using drag and drop components along with small amounts of code. Typical examples include operations dashboards, data tools, review systems, and customer support interfaces.
@@ -120,6 +124,8 @@ For teams with engineers that need to build internal tools or operations dashboa
 
 ### Appsmith
 
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-hm5lub.png)
+
 Official website: [https://appsmith.com/](https://appsmith.com/)
 
 Appsmith is an open source low code and no code platform built for creating internal tools, backend systems, and admin dashboards. Users can assemble interfaces by dragging components, connecting to databases or APIs, and adding small pieces of script. It also supports full self hosted deployment, giving teams more control over data security and privacy.
@@ -146,6 +152,8 @@ If your team has some technical ability, prioritizes data security and control, 
 💡 Recommended reading: [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You? ](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
 
 ### Budibase
+
+![Budibase.png](https://static-docs.nocobase.com/Budibase-9y12px.png)
 
 Official website: [https://budibase.com/](https://budibase.com/)
 
@@ -193,6 +201,8 @@ Baserow is well suited for teams wanting to transition from spreadsheets to more
 
 ### NocoDB
 
+![NocoDB-y5sve6.png](https://static-docs.nocobase.com/NocoDB-y5sve6.png)
+
 Official website: [https://nocodb.com/](https://nocodb.com/)
 
 NocoDB is an open source database management tool with a spreadsheet style interface. It offers an Airtable like user experience while running on top of real relational databases and supports full self hosted deployment. Teams can connect existing MySQL, PostgreSQL, and other databases directly to NocoDB, turning systems that normally require engineering expertise into a more visual and accessible interface.
@@ -221,6 +231,8 @@ For teams managing structured data that want a visual database interface, need s
 💡 Recommended reading: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
 
 ### Airtable
+
+![Airtable](https://static-docs.nocobase.com/Airtable-2jokkb.png)
 
 Official website: [https://airtable.com/](https://airtable.com/)
 
@@ -251,6 +263,8 @@ Airtable is a solid choice for teams that need a more structured and collaborati
 💡 Recommended reading: [Is Airtable Too Expensive? 5 Self-Hosted Alternatives Compared by Cost & Features](https://www.nocobase.com/en/blog/5-self-hosted-airtable-alternatives)
 
 ### Smartsheet
+
+![Smartsheet.png](https://static-docs.nocobase.com/Smartsheet-0nmmv3.png)
 
 Official website: [https://www.smartsheet.com/](https://www.smartsheet.com/)
 
@@ -284,3 +298,14 @@ Google Sheets is an excellent spreadsheet tool but not a business system. As dat
 This guide aims to give a clearer view when comparing alternatives—from scenarios and capabilities to pricing—to help you identify the right tool for your needs earlier.
 
 If you found it helpful, feel free to share it with other teams looking for similar tools.
+
+
+**Related reading:**
+
+* [6 Open-Source No/Low-Code Tools for Building PoCs ](https://www.nocobase.com/en/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [A Developer’s Technical Decision Guide to No-Code and Low-Code (2026) ](https://www.nocobase.com/en/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 In-Depth Comparison of RBAC in Enterprise-Grade No-Code/Low-Code Platforms](https://www.nocobase.com/en/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [14 AI-Powered Low-Code Platforms on GitHub Worth Watching](https://www.nocobase.com/en/blog/14-ai-low-code-platforms-github)
+* [Top 11 Open Source No-Code AI Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)
+* [Top 18 Open Source AI Agent Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects)
+* [Top 20 Open Source AI Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-projects)
