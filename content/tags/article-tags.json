@@ -4818,5 +4818,25 @@
     "title_cn": null,
     "title_ja": null,
     "updatedById": 22
+  },
+  {
+    "createdAt": "2025-11-28T06:28:26.012Z",
+    "updatedAt": "2025-11-28T06:28:26.012Z",
+    "createdById": 22,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 247,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 245,
+    "title": "Google Sheets",
+    "title_cn": null,
+    "title_ja": null,
+    "updatedById": 22
   }
 ]
