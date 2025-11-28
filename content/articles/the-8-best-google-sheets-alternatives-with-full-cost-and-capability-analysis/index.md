@@ -24,9 +24,17 @@ The following sections will look at three key aspects:
 
 Before we go into the details, I grouped the 8 tools for today’s overview by common business needs so you can quickly scan through the categories.
 
-** ① Tools for building business systems**  NocoBase, Retool, Appsmith, Budibase  Designed for teams moving from chaotic spreadsheets to internal systems that require data models, permissions, automated workflows, or modular applications.
+**① Tools for building business systems**
 
-** ② Tools for structured data**  Airtable, Smartsheet, Baserow, NocoDB  Designed for teams that have outgrown traditional spreadsheets but do not yet need a full business system. They provide structured data models, multiple views, basic permission settings, and in some cases self hosting options to support more organized data management
+**NocoBase, Retool, Appsmith, Budibase**
+
+Designed for teams moving from chaotic spreadsheets to internal systems that require data models, permissions, automated workflows, or modular applications.
+
+**② Tools for structured data**
+
+**Airtable, Smartsheet, Baserow, NocoDB**
+
+Designed for teams that have outgrown traditional spreadsheets but do not yet need a full business system. They provide structured data models, multiple views, basic permission settings, and in some cases self hosting options to support more organized data management
 
 ### Price comparison table
 
@@ -54,7 +62,7 @@ Before we go into the details, I grouped the 8 tools for today’s overview by c
 * Budibase and Teable fall in the mid price range. Their spreadsheet like interfaces are friendly for teams upgrading from Google Sheets but not yet needing a full business system.
 * Overall, self hosted tools become more cost effective as team size increases and work well for teams preparing to move Google Sheets data into more structured, long term systems. SaaS based tools remain a better fit for small teams or short term use.
 
-💡 Recommended reading:[7 Best Self-Hosted AI Tools for Building Business Apps](https://www.nocobase.com/en/blog/7-self-hosted-ai-tools-build-business-app)
+💡 Recommended reading: [7 Best Self-Hosted AI Tools for Building Business Apps](https://www.nocobase.com/en/blog/7-self-hosted-ai-tools-build-business-app)
 
 ### NocoBase
 
@@ -178,7 +186,13 @@ Budibase is suitable for teams that want to quickly build admin panels, data ent
 
 Budibase is a flexible and cost efficient option if you need to build internal tools with structured data management, self hosting capabilities, and basic permission control. For more complex business needs, however, it works best as a lightweight foundation rather than a full system replacement.
 
-Baserow  [Image]  Official website: [https://baserow.io/](https://baserow.io/)  Baserow is an open source data management tool built around a database core. It offers a spreadsheet style interface, but underneath it is a structured data management platform. It supports full self hosting and also provides a cloud service. Compared with traditional spreadsheets, it focuses more on clarity of data models and long term scalability, making it a strong fit for teams that want data ownership or require on premises deployment.
+### Baserow
+
+![Baserow.png](https://static-docs.nocobase.com/Baserow-p5tvpo.png)
+
+Official website: [https://baserow.io/](https://baserow.io/)
+
+Baserow is an open source data management tool built around a database core. It offers a spreadsheet style interface, but underneath it is a structured data management platform. It supports full self hosting and also provides a cloud service. Compared with traditional spreadsheets, it focuses more on clarity of data models and long term scalability, making it a strong fit for teams that want data ownership or require on premises deployment.
 
 **Usage scenarios**
 
@@ -298,7 +312,6 @@ Google Sheets is an excellent spreadsheet tool but not a business system. As dat
 This guide aims to give a clearer view when comparing alternatives—from scenarios and capabilities to pricing—to help you identify the right tool for your needs earlier.
 
 If you found it helpful, feel free to share it with other teams looking for similar tools.
-
 
 **Related reading:**
 
