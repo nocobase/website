@@ -4,7 +4,7 @@
 
 但随着团队规模扩大、参与者增多、业务逻辑变得复杂，表格在结构和协作方面的限制会逐渐显现。跨部门协作、细粒度权限管理、流程化操作等需求越来越多时，Google Sheets 往往难以满足后续的扩展。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTRlMDBlMzMxZTZhNGE3MDg2ZGVkMWIzZTM4NGQ1MzVfdEV5a0NWWXg5OEZYVER4OUNSMHk0eTdSMUxIT3VtTDFfVG9rZW46RmdWWmJ6YVBabzd4bkx4UUlpRWNsR1FWbnhiXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Hacker News.png](https://static-docs.nocobase.com/Group%2019-bhyfdg.png)
 
 在 [Hacker News](https://news.ycombinator.com/item?id=39155449) 的讨论里，也有不少用户在寻找 Google Sheets 的替代方案。一些用户提到，它在复杂场景下显得更像是工具链里的“临时选项”，难以承担严肃的数据工作；面对更大的数据规模或更复杂的模型构建时，也容易力不从心，难以支持完整的数据分析流程。
 
@@ -62,9 +62,9 @@
 
 ### NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjhkZWVkYzgwODMwOTQ1NmZkOWQ3NmNlNzA2OTlmY2VfRGpZR3hRc2ZCNjNkZzhTSzkwb1l3dFpPRWY4S3o1czRfVG9rZW46VHg0SGJ4QUVKb1NwcVV4YThWbWN5WUpDblYxXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![NocoBase.PNG](https://static-docs.nocobase.com/NocoBase-2wy1ke.PNG)
 
-官网：https://www.nocobase.com/
+官网：[https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
 NocoBase 是一个开源的无代码／低代码业务应用构建平台，用于搭建内部系统、管理后台以及以数据为中心的业务流程。支持自托管，也提供官方托管方案，适合希望从表格迁移到系统化管理的团队。平台基于可视化配置构建应用，并可通过插件和 API 扩展能力，部分场景还可以结合官方提供的 AI 功能提升数据录入与流程效率。
 
@@ -92,7 +92,7 @@ NocoBase 是一个开源的无代码／低代码业务应用构建平台，用�
 
 ### **Retool**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjVhMGIwYTdiZDA1OWM5Y2JmZjBlNWNkN2EyZmU2ZWZfN1lDY3BTWE9TSjIwVld5WGFIVHhIbjIwVnlYenNDU3lfVG9rZW46R2ljSmJ1cE10b3E0Q1l4OEpIQmNMdUVabmRnXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Retool.png](https://static-docs.nocobase.com/Retool-gzseyo.png)
 
 官网：[https://retool.com/](https://retool.com/)
 
@@ -116,7 +116,7 @@ Retool 是一个用于快速构建内部工具的闭源 SaaS 平台，也提供�
 
 ### **Appsmith**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDgyNTkzNjU2MzhiYzUyZDA5MTIxMTJlNzcwOTI0NmFfTDhxQ1lxNFdoVkpXUkdDY0VqeG16cFN1cFBzOUtIT3NfVG9rZW46WmJNUmJoMkkwb1JmUjl4NGVCRGNzT2YzbkJiXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-hm5lub.png)
 
 官网：[https://appsmith.com/]([https://appsmith.com/)
 
@@ -139,9 +139,9 @@ Appsmith 是一个开源低代码／无代码平台，专为构建内部工具�
 
 ### **Budibase**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWM1MTA4NWVlOWYyOTk4YTA3MGZkYTkxZTgwNzlhZmFfbDNCYjk5UGQySnlqQTc4anZGR2VPU2JxV2FKcDhHS1ZfVG9rZW46VFpiUmJBd1JjbzBqdVF4ZDhKS2N6U3ZvbkNoXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Budibase.png](https://static-docs.nocobase.com/Budibase-9y12px.png)
 
-官网：https://budibase.com/
+官网：[https://budibase.com/]([https://budibase.com/)
 
 Budibase 是一个开源的低代码平台，用于构建内部工具和管理后台。它支持自托管，也支持部署到云端，对于需要掌控数据安全或希望在本地运行系统的团队来说更加灵活。
 
@@ -185,9 +185,9 @@ Baserow 是一个开源、以数据库为核心的数据管理工具。它提供
 
 ### **NocoDB**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTYxMGYyZDRmMzg0MGVhOWVkN2Q0NjllYTVlYWU5Y2FfaGdTWWtxM1BjVWgydzR5SDRZMUZNTGxCOTBmWTZGVXZfVG9rZW46UUV4ZGI2SGJqb09ibXN4NVY3UGNrMGh1blBmXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![NocoDB.png](https://static-docs.nocobase.com/NocoDB-49hta1.png)
 
-官网：https://nocodb.com/
+官网：[https://nocodb.com/]([https://nocodb.com/)
 
 NocoDB 是一个开源的电子表格风格数据库管理工具。它提供类似 Airtable 的界面体验，但底层使用真实的关系型数据库，并支持自托管部署。团队可以将现有的 MySQL、PostgreSQL 或其他数据库直接连接到 NocoDB，让原本需要工程师才能管理的数据库以更可视化的方式呈现。
 
@@ -208,9 +208,9 @@ NocoDB 是一个开源的电子表格风格数据库管理工具。它提供类�
 
 ### Airtable
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmQ1ODU5MmRhN2E5YjQxMThlNjI0MmNlOWMwNzcyYzVfZXBTN0YwWmEybFlNZEY0aEdKNW1FWWhOWEc4SllCQWNfVG9rZW46UFVHZmJ0YWEyb3Z4Vmd4RHNncWNtSFBFbnBjXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Airtable](https://static-docs.nocobase.com/Airtable-2jokkb.png)
 
-官网：https://airtable.com/
+官网：[https://airtable.com](https://airtable.com/)
 
 Airtable 是一个集电子表格、数据库和协作能力于一体的闭源 SaaS 工具。它提供灵活的数据结构、直观的界面设计和多人在线协作，但不支持自托管或本地部署，所有数据均托管在 Airtable 的云端。
 
@@ -222,7 +222,7 @@ Airtable 是一个集电子表格、数据库和协作能力于一体的闭源 S
 
 **能力表现**
 
-* **数据结构能力**  Airtable 支持表与表之间建立关联，数据结构比传统电子表格更清晰，更适合管理轻量到中等复杂度的数据模型。 💡推荐阅读：[Airtable 的数据超出上限，3 种常见应对方式](https://www.nocobase.com/cn/blog/airtable-data-limit-reached-3-common-solutions)
+* **数据结构能力**  Airtable 支持表与表之间建立关联，数据结构比传统电子表格更清晰，更适合管理轻量到中等复杂度的数据模型。💡推荐阅读：[Airtable 的数据超出上限，3 种常见应对方式](https://www.nocobase.com/cn/blog/airtable-data-limit-reached-3-common-solutions)
 * **协作与权限**  提供基础的多人协作功能，包括查看、编辑、评论和权限分配。相比本地表格，它在协作场景中的体验更为顺畅，也更容易保持数据一致。
 * **使用门槛**  对非技术用户非常友好，不需要写代码即可搭建基础的数据结构和视图。界面直观，学习成本较低。
 * **局限性**  当数据量增大、业务需要更多表结构、更加细致的权限控制或自动化流程时，Airtable 的能力会逐渐受到限制。
@@ -233,7 +233,7 @@ Airtable 是一个集电子表格、数据库和协作能力于一体的闭源 S
 
 ### **Smartsheet**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmRkMjVlNGY5Yzc2ZDEzYTk3OTQ3OTU1YWQ4MDg0ZGRfcngzM2Z0S2dENUJpT05maWtVWGE5b25sTzlXZ01QZ0JfVG9rZW46RTkxZWJIVDhXb1NPTk54cXVVYWNGVEpWbk1lXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Smartsheet.png](https://static-docs.nocobase.com/Smartsheet-2ofp3b.png)
 
 官网：https://www.smartsheet.com/
 
@@ -263,3 +263,14 @@ Google Sheets 是一个优秀的表格工具，但并不是为业务系统而设
 希望这一份工具清单，能够让团队在评估替代方案时有更清晰的视角——从使用场景、核心能力到价格与成本，帮助你在早期就判断哪种工具更贴近自己的实际需求。
 
 如果这些内容对你有启发，也欢迎你分享给同样在寻找工具的团队，也许能帮助更多人更快地找到合适的方案。
+
+
+相关阅读：
+
+* [6个适合做 PoC 的开源无代码/低代码工具推荐 ](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企业级无代码低代码平台 RBAC 权限体系深度对比](https://www.nocobase.com/cn/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHub 上最值得关注的 14 个开源 AI 低代码工具 ](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)
+* [11 个在 GitHub 上最受欢迎的开源无代码 AI 工具 ](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
+* [GitHub 上 Star 数量前 20 的开源 AI 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-projects)
