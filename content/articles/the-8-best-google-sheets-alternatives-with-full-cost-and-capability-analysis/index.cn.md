@@ -26,11 +26,15 @@
 
 **① 构建业务系统型工具**
 
-**NocoBase、Retool、Appsmith、Budibase** 适合从“表格混乱”升级到“真正的内部系统”，需要数据模型、权限、自动化流转或模块化应用的团队。
+**NocoBase、Retool、Appsmith、Budibase**
+
+适合从“表格混乱”升级到“真正的内部系统”，需要数据模型、权限、自动化流转或模块化应用的团队。
 
 **② 结构化数据型工具**
 
-**Airtable、Smartsheet、Baserow、NocoDB** 适合已经不满足传统表格，但还不需要完整业务系统的团队；提供结构化数据模型、多视图、基础权限协作、自托管选项（部分工具），用于更规范地管理数据。
+**Airtable、Smartsheet、Baserow、NocoDB**
+
+适合已经不满足传统表格，但还不需要完整业务系统的团队；提供结构化数据模型、多视图、基础权限协作、自托管选项（部分工具），用于更规范地管理数据。
 
 ### 价格对比表格
 
@@ -68,7 +72,9 @@
 
 NocoBase 是一个开源的无代码／低代码业务应用构建平台，用于搭建内部系统、管理后台以及以数据为中心的业务流程。支持自托管，也提供官方托管方案，适合希望从表格迁移到系统化管理的团队。平台基于可视化配置构建应用，并可通过插件和 API 扩展能力，部分场景还可以结合官方提供的 AI 功能提升数据录入与流程效率。
 
-**使用场景** 适合已经不满足于用表格管理数据，希望构建更结构化、更可控的内部系统的团队。  典型场景包括：
+**使用场景**
+
+适合已经不满足于用表格管理数据，希望构建更结构化、更可控的内部系统的团队。  典型场景包括：
 
 * 以数据管理为核心的业务，如客户管理、库存管理、资产管理
 * 依赖流程流转的场景，如审批、项目协作、任务推进
@@ -90,7 +96,7 @@ NocoBase 是一个开源的无代码／低代码业务应用构建平台，用�
 
 **总结**  如果团队正在从电子表格转向系统化管理，并希望在数据结构、权限、流程和扩展性上有更完整的能力，同时希望系统能随业务规模逐步增长，NocoBase 是一个适合长期投入的选择。它兼顾可视化易用性与深度扩展能力，适合从小团队到企业的不同阶段。
 
-### **Retool**
+### Retool
 
 ![Retool.png](https://static-docs.nocobase.com/Retool-gzseyo.png)
 
@@ -98,7 +104,9 @@ NocoBase 是一个开源的无代码／低代码业务应用构建平台，用�
 
 Retool 是一个用于快速构建内部工具的闭源 SaaS 平台，也提供自托管版本（企业计划）。它主要面向工程团队，通过拖拽组件和少量代码，将数据库、API 和后台逻辑快速组合成可用的内部应用，例如运营后台、数据面板、审核系统或客服支持工具。
 
-**使用场景**  适合拥有工程师团队、需要快速构建内部业务工具的公司。  典型场景包括：
+**使用场景**
+
+适合拥有工程师团队、需要快速构建内部业务工具的公司。  典型场景包括：
 
 * 后台运营工具，例如订单管理、申诉处理、内容审核
 * 数据运营与支持团队使用的数据面板或工具化界面
@@ -114,7 +122,7 @@ Retool 是一个用于快速构建内部工具的闭源 SaaS 平台，也提供�
 
 **总结**  如果团队拥有工程师，并且核心诉求是快速搭建内部工具或运营后台，而不是构建完整业务系统，Retool 会是效率非常高的选择。但如果团队没有开发人员，或希望从数据结构到流程自动化都可视化完成，它可能不是最合适的工具。
 
-### **Appsmith**
+### Appsmith
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-hm5lub.png)
 
@@ -137,7 +145,7 @@ Appsmith 是一个开源低代码／无代码平台，专为构建内部工具�
 
 **总结**  如果你的团队有一定技术基础，或者你们重视数据安全和可控性，并希望快速搭建内部工具（后台管理、运营面板、审核系统等），Appsmith 是一个性价比高、灵活、适合长期使用的平台。但如果团队完全没有工程资源，也不愿意做运维和维护，那么就要慎重考虑它的使用门槛和长期投入。 💡推荐阅读：[NocoBase 与 Appsmith：哪个开源低代码平台更适合你？](https://www.nocobase.com/cn/blog/nocobase-vs-appsmith)
 
-### **Budibase**
+### Budibase
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-9y12px.png)
 
@@ -160,9 +168,9 @@ Budibase 是一个开源的低代码平台，用于构建内部工具和管理�
 
 **总结**  如果你需要一款能够快速搭建内部工具、具备结构化数据管理、自托管能力和基础权限控制的平台，Budibase 是一个灵活且成本相对较低的选择。但对于更复杂的业务场景，它更适合作为轻量级框架，而不是完整的系统解决方案。
 
-### **Baserow**
+### Baserow
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWIxOTcwZWYwYTU3NzFlNTBmOWU1NWEyNDc5ZWZhNDJfMUxCS0drRU0zWklrdTdKZHBab3g4QTNMaFE2d3U2Y0tfVG9rZW46RlM0UGJRNm4yb2FhY0N4TEQxOWNjdTZXbmtXXzE3NjQzMDYxNzA6MTc2NDMwOTc3MF9WNA)
+![Baserow.png](https://static-docs.nocobase.com/Baserow-p5tvpo.png)
 
 官网：https://baserow.io/
 
@@ -183,7 +191,7 @@ Baserow 是一个开源、以数据库为核心的数据管理工具。它提供
 
 **总结**  如果团队目标是从表格升级到更可维护的结构化数据管理，同时希望掌握数据所有权、支持自托管或进行二次开发，Baserow 是一个合适的选择。但如果需要业务流程、自动化或界面构建能力，它更适合作为系统的数据层，而非完整的应用平台。
 
-### **NocoDB**
+### NocoDB
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-49hta1.png)
 
@@ -231,7 +239,7 @@ Airtable 是一个集电子表格、数据库和协作能力于一体的闭源 S
 
 💡推荐阅读：[Airtable 太贵了？5 个自托管替代方案成本&功能对比](https://www.nocobase.com/cn/blog/5-self-hosted-airtable-alternatives)
 
-### **Smartsheet**
+### Smartsheet
 
 ![Smartsheet.png](https://static-docs.nocobase.com/Smartsheet-2ofp3b.png)
 
