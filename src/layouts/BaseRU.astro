@@ -470,29 +470,48 @@ const meta = {
         <div id="navigation">
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
-            <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)">Товары</a><span class="menu-arrow"></span>
-              <ul class="submenu">
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="#">О продукте</a><span class="menu-arrow"></span>
+              <ul class="submenu megamenu">
                 <li>
-                  <a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">Возможности <span class="badge coming-soon-badge ms-2">Скоро</span></a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-lightbulb-alt fs-6 align-middle"></i> Основные возможности</li>
+                    <li><a href="/ru/highlights/data-source" title="Источник данных" class="sub-menu-item">Источники данных</a></li>
+                    <li><a href="/ru/highlights/block-action" title="Блок и действие" class="sub-menu-item">Блоки и действия</a></li>
+                    <li><a href="/ru/highlights/ai-employee" title="AI Сотрудник" class="sub-menu-item">AI Сотрудники</a></li>
+                    <li><a href="/ru/highlights/permissions" title="Разрешения" class="sub-menu-item">Разрешения</a></li>
+                    <li><a href="/ru/highlights/workflow" title="Рабочий процесс" class="sub-menu-item">Рабочие процессы</a></li>
+                    <li><a href="#" title="Мульти-приложение" class="sub-menu-item" style="color: #CCC!important; cursor: not-allowed;" onclick="return false;">Мульти-приложение</a></li>
+                    <li><a href="#" title="Мульти-пространство" class="sub-menu-item" style="color: #CCC!important; cursor: not-allowed;" onclick="return false;">Мульти-пространство</a></li>
+                    <li><a href="#" title="История и журнал" class="sub-menu-item" style="color: #CCC!important; cursor: not-allowed;" onclick="return false;">История и журнал</a></li>
+                    <li><a href="#" title="Управление релизами" class="sub-menu-item" style="color: #CCC!important; cursor: not-allowed;" onclick="return false;">Управление релизами</a></li>
+                    <li><a href="#" title="Расширяемость" class="sub-menu-item" style="color: #CCC!important; cursor: not-allowed;" onclick="return false;">Расширяемость</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Демо <span class="badge text-bg-success ms-2">Пробовать</span></a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> Изучить</li>
+                    <li><a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">Как это работает <i class="uil uil-external-link-alt"></i></a></li>
+                    <li><a href="https://my.nocobase.ru/" target="_blank" class="sub-menu-item">Живое демо <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">Попробовать</span></a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub<i class="uil uil-star"></i>20k</a>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> Открытый исходный код</li>
+                    <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub<i class="uil uil-star"></i>20k <i class="uil uil-external-link-alt"></i></a></li>
+                  </ul>
                 </li>
               </ul>
             </li>
             <li class="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Маркет</a><span class="menu-arrow"></span>
+              <a href="#">Магазин</a><span class="menu-arrow"></span>
               <ul class="submenu megamenu">
                 <li>
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i>Плагины</li>
                     <li><a href="/ru/plugins" title="NocoBase Все плагины" class="sub-menu-item">Все плагины</a></li>
                     <li><a href="/ru/plugins-bundles" title="NocoBase Пакеты плагинов" class="sub-menu-item">Пакеты плагинов</a></li>
-                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">Сторонние плагины <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
+                    <li><a href="#" class="sub-menu-item" style="color: #8492a6; cursor: not-allowed;" onclick="return false;">Сторонние плагины <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
                   </ul>
                 </li>
 
@@ -501,54 +520,61 @@ const meta = {
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Решения</li>
                     <li><a href="/ru/solutions/crm" title="NocoBase CRM система" class="sub-menu-item">CRM <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
                     <li><a href="/ru/solutions/ticketing" title="NocoBase Служба поддержки" class="sub-menu-item">Служба поддержки <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
-                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">Управление проектами <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
-                    <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">CMS <span style="color: #2f55d4; font-size: 0.85em; margin-left: 4px;">2.0</span> <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
+                    <li><a href="/ru/solutions/project-management" title="NocoBase Управление проектами" class="sub-menu-item">Управление проектами <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
+                    <li><a href="#" class="sub-menu-item" style="color: #8492a6; cursor: not-allowed;" onclick="return false;">CMS <span style="color: #2f55d4; font-size: 0.85em; margin-left: 4px;">2.0</span> <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
                   </ul>
                 </li>
 
                 <li>
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-users-alt fs-6 align-middle"></i> Партнеры</li>
-                                          <li><a href="javascript:void(0)" class="sub-menu-item" style="color: #8492a6;">Партнеры NocoBase <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
-                    <li><a href="https://service-en.nocobase.com/public-forms/rm0ciw12obf" target="_blank" class="sub-menu-item">Стать партнером</a></li>
+                    <li><a href="#" title="Найти партнеров NocoBase" class="sub-menu-item" style="color: #8492a6; cursor: not-allowed;" onclick="return false;">Найти партнеров NocoBase <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
+                    <li><a href="#" title="Стать партнером NocoBase" class="sub-menu-item" style="color: #8492a6; cursor: not-allowed;" onclick="return false;">Стать партнером <span class="badge coming-soon-badge ms-2">Скоро</span></a></li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)" rel="nofollow">Сообщество</a><span class="menu-arrow"></span>
+              <a href="#" rel="nofollow">Сообщество</a><span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <a href="https://forum.nocobase.com/c/russian-forum/27" title="NocoBase Форум" class="sub-menu-item" target="_blank">Форум</a>
+                  <a href="https://forum.nocobase.com/c/russian-forum/27" class="sub-menu-item" title="NocoBase онлайн форум" target="_blank">Форум <i class="uil uil-external-link-alt"></i></a>
                 </li>
                 <li>
-                  <a href="/ru/blog" title="NocoBase Блог" class="sub-menu-item">Блог</a>
+                  <a href="/ru/blog/tags/customer-stories" class="sub-menu-item">Истории пользователей</a>
                 </li>
                 <li>
                   <a href="/ru/blog/timeline" title="Список изменений NocoBase" class="sub-menu-item">Список изменений</a>
                 </li>
                 <li>
-                  <a href="/ru/roadmap" title="Дорожная карта NocoBase" class="sub-menu-item">Дорожная карта</a>
+                  <!-- <a href="/ru/roadmap" title="Дорожная карта NocoBase" class="sub-menu-item">Дорожная карта</a> -->
+                  <a href="#" title="Дорожная карта NocoBase" class="sub-menu-item" style="cursor: not-allowed;" onclick="return false;">Дорожная карта <span class="badge coming-soon-badge ms-2">Скоро</span></a>
                 </li>
                 <li>
-                  <a href="/ru/contact" title="Контакты NocoBase" class="sub-menu-item">Контакты</a>
+                  <a href="/ru/blog" title="NocoBase Блог" class="sub-menu-item">Блог</a>
                 </li>
               </ul>
             </li>
             <li class="has-submenu parent-menu-item">
-              <a href="javascript:void(0)" rel="nofollow">Ресурсы</a><span class="menu-arrow"></span>
+              <a href="#" rel="nofollow">Ресурсы</a><span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <a href="https://v2.docs.nocobase.com" title="NocoBase: Справочники" class="sub-menu-item" target="_blank">Справочник</a>
+                  <a href="https://v2.docs.nocobase.com/" title="NocoBase документация" class="sub-menu-item" target="_blank">Документация(2.x) <i class="uil uil-external-link-alt"></i></a>
                 </li>
                 <li>
-                  <a href="https://v2.docs.nocobase.com/security/guide" title="Руководство по безопасности" class="sub-menu-item" target="_blank">Руководство по безопасности </a>
+                  <a href="https://docs-ru.nocobase.com/" title="NocoBase документация" class="sub-menu-item" target="_blank">Документация(1.x) <i class="uil uil-external-link-alt"></i></a>
                 </li>
                 <li>
-                  <a href="/ru/agreement" title="Документы NocoBase" class="sub-menu-item">Документы</a>
+                  <a href="https://v2.docs.nocobase.com/security/guide" title="Руководство по безопасности NocoBase" class="sub-menu-item" target="_blank">Руководство по безопасности</a>
                 </li>
                 <li>
-                  <a href="/ru/contact" title="NocoBase Контакты" class="sub-menu-item">Контакты</a>
+                  <a href="/ru/agreement" class="sub-menu-item">Лицензионное соглашение</a>
+                </li>
+                <!-- <li>
+                  <a href="/ru/join-us" title="Карьера в NocoBase" class="sub-menu-item">Присоединиться</a>
+                </li> -->
+                <li>
+                  <a href="/ru/contact" title="Контакты NocoBase" class="sub-menu-item">Связаться с нами</a>
                 </li>
               </ul>
             </li>
@@ -765,3 +791,4 @@ const meta = {
     </script>
   </body>
 </html>
+

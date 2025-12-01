@@ -1,0 +1,66 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, processor } from "../../utils";
+
+const page = await getPage("join-us", "ru");
+
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+  </PageHeader>
+
+  <!-- Start Join -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body">
+              <h5 class="title fw-bold mb-1">Руководитель экосистемы партнеров</h5>
+              <p></p>
+              <p>Все больше компаний и разработчиков со всего мира обращаются к нам с предложениями о сотрудничестве — в области локального маркетинга, дистрибуции и сервисных инициатив. Мы решили начать создание глобальной экосистемы партнеров. Мы ищем нового члена команды, который искренне заинтересован в NocoBase и увлечен такой работой.</p>
+              <p>Роль и обязанности:</p>
+              <ul>
+                <li>Создание и управление глобальной экосистемой партнеров NocoBase — включая структуры, процессы и документацию.</li>
+                <li>Взаимодействие с потенциальными партнерами и пользователями по всему миру, развитие партнерской сети.</li> 
+              </ul>
+              <p>Базовые требования:</p> 
+              <ul>
+                <li>Опыт работы в интернет-разработке или разработке программного обеспечения; знакомство с технологиями frontend и backend.</li>
+                <li>Сильные коммуникативные навыки и навыки письма.</li>
+                <li>Способность свободно общаться на китайском и английском языках.</li>
+                <li>Уверенное использование различных AI-инструментов и продуктов.</li>
+              </ul>
+              <p>Предпочтительные квалификации:</p>
+              <ul>
+                <li>Опыт разработки или использования no-code / low-code продуктов.</li>
+                <li>Опыт в создании или управлении сообществами.</li>
+                <li>Личные технические или творческие проекты.</li>
+                <li>Знание дополнительных языков, таких как японский или испанский.</li>
+              </ul>
+              <p>Местоположение:</p>
+              <ul>
+                <li>Полностью удаленная работа, без ограничений по местоположению.</li>
+              </ul>
+              <p>Свяжитесь с нами:</p>
+              <ul>
+                <li>hello@nocobase.com</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Join -->
+</Layout>
+

@@ -1,0 +1,493 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// Import interactive demo data
+import projectDemoGuides from "../../../data/project-management-demo-en.json";
+
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// Define plugins used in Project Management
+const projectPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment",
+  "Workflow: Custom action event"
+];
+
+// Find plugin by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get Project Management related plugins
+const projectPlugins = projectPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+---
+
+<Layout
+  title="Комплексное решение для управления R&D проектами"
+  description="Система управления R&D проектами NocoBase предоставляет полные возможности управления жизненным циклом разработки. От планирования требований, назначения задач, отслеживания прогресса до управления качеством, обеспечивая полный цифровой процесс управления и командное сотрудничество."
+  keywords="NocoBase управление R&D проектами, Управление задачами, Командное сотрудничество, Гибкая разработка, Управление качеством"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">Комплексное<br/>решение для управления R&D проектами</h1>
+            <p class="para-desc text-muted">Мощная и гибкая платформа управления R&D проектами, построенная на NocoBase. Поддерживает множество методологий разработки, включая Agile, Waterfall и гибридные подходы. Управляйте требованиями, задачами, командами, итерациями и качеством в одном месте.</p>
+            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
+              <small class="text-muted">
+                <i class="uil uil-info-circle"></i> Построено на NocoBase 1.x (2.0 в разработке)
+              </small>
+            </div>
+
+            <!-- Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Отрасли:</span>
+                  <span class="badge bg-soft-primary">R&D</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Разработчик:</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Живая демонстрация
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Развернуть в вашей среде
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- Project Management Preview -->
+            <div class="position-relative">
+              <img 
+                src="https://static-docs.nocobase.com/screenshot-20250909-151855-1.png" 
+                alt="Предпросмотр системы управления R&D проектами NocoBase" 
+                class="img-fluid rounded shadow"
+                style="max-height: 400px; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Что делает управление проектами NocoBase уникальным</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Комплексное решение, которое адаптируется к вашей методологии управления проектами</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-layers rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Полный жизненный цикл проекта</h5>
+              <p class="text-muted mt-2">От инициации и планирования до выполнения, мониторинга и закрытия, управляйте каждой фазой ваших проектов</p>
+              <i class="uil uil-layers full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-chart-line rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Agile и традиционные методы</h5>
+              <p class="text-muted mt-2">Поддержка спринтов Scrum, досок Kanban, диаграмм Ганта, графиков сгорания и традиционных подходов Waterfall</p>
+              <i class="uil uil-chart-line full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-users-alt rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Командное сотрудничество и управление качеством</h5>
+              <p class="text-muted mt-2">Эффективно управляйте командами разработки, отслеживайте качество кода, обрабатывайте дефекты и проблемы, обеспечивая качество продукта</p>
+              <i class="uil uil-users-alt full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Легко изменять и расширять</h5>
+              <p class="text-muted mt-2">На основе no-code возможностей NocoBase легко настраивайте поля, процессы и бизнес-логику с полным контролем</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+
+  <!-- Try Project Management Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- Interactive Demo -->
+          <InteractiveDemo guides={projectDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Попробовать сейчас
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Скопировать в вашу среду
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try Project Management Extension End -->
+
+  <!-- Development Tutorial Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Учебник по разработке системы управления проектами</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Узнайте, как создать профессиональную систему управления проектами с помощью NocoBase с нуля</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-database h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Дизайн модели данных</h5>
+                <p class="text-muted text-center">Узнайте, как создавать базовые структуры данных для проектов, задач, команд и их взаимосвязей</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-sitemap h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Конфигурация рабочего процесса</h5>
+                <p class="text-muted text-center">Настройте назначение задач, переходы статусов и автоматизированные рабочие процессы проекта</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-line h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Спринт и отслеживание</h5>
+                <p class="text-muted text-center">Настройте спринты, графики сгорания и функции отслеживания прогресса</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Скоро</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Расширьте возможности коммерческими плагинами</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Расширьте возможности управления проектами с помощью мощных коммерческих плагинов</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- Dynamically generated plugin cards -->
+        {projectPlugins.slice(0, 6).map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">От <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Подробности</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование, обновления на 1 год</span><br>
+                          <a href="/ru/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year_usd || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Пожизненное использование и обновления</span><br>
+                          <a class="text-muted" href="/ru/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/ru/plugins-commercial" class="btn btn-primary me-3">Посмотреть все коммерческие плагины</a>
+          <a href="/ru/commercial" class="btn btn-outline-primary">Узнать о ценах</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Как использовать?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Три шага для быстрого развертывания системы CRM NocoBase с функциональностью управления проектами в вашей среде</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Установите систему NocoBase</h5>
+                <p class="text-muted mt-2">Разверните систему NocoBase на вашем сервере, следуя нашей документации по установке</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">Посмотреть руководство по установке</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Скачайте шаблон системы CRM</h5>
+                <p class="text-muted mt-2">Скачайте полный шаблон CRM для получения возможности управления проектами</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Скачать SQL файл</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Скачать файл резервной копии (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Восстановите в системе</h5>
+                <p class="text-muted mt-2">Импортируйте файл шаблона CRM в вашу систему NocoBase для получения возможностей CRM и управления проектами</p>
+              </div>
+              <div class="mt-3">
+                <a href="/ru/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Учебник по восстановлению</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Project management feature explanation -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
+            <div class="d-flex align-items-start">
+              <div class="flex-shrink-0 me-3">
+                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-2 text-dark fw-medium">Совет</h6>
+                <p class="mb-0 text-muted">Система управления проектами полностью интегрирована в шаблон CRM как комплексный модуль. После развертывания вы можете напрямую использовать полную функциональность управления проектами в системе CRM для достижения полного процесса управления проектами и командой.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Готовы преобразовать ваше управление R&D?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Разверните комплексное решение для управления R&D за считанные минуты. От планирования требований до отслеживания задач и контроля качества, NocoBase адаптируется к вашему процессу разработки без написания ни одной строки кода.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Живая демонстрация
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>Развернуть сейчас
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* Project Management System Styles - Reference ticketing page styles */
+#ticket-demo-wrap {
+  position: relative;
+}
+
+/* Plugin card styles */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+.plugin-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+</style>
+
