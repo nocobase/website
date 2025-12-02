@@ -1,0 +1,234 @@
+{
+  "title": "Мастер панели: Динамические графики и фильтрация",
+  "subtitle": "Освойте воронки продаж, рейтинги эффективности и другие динамические графики всего за три шага, а также изучите мощные возможности фильтрации данных.",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Аналитика лидов",
+      "id": "dashboard-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "Создание динамических фильтров",
+      "id": "dashboard-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "Настройка графиков",
+      "id": "dashboard-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Начните исследование данных",
+      "description": "Добро пожаловать на панель управления! Это ваша кабина пилота для данных, где собрана вся ключевая деловая информация для наглядного обзора.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "Начать исследование данных",
+        "position": {
+          "right": "49.3%",
+          "top": "41.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "Шаг 1: Аналитика лидов",
+      "description": "Сначала давайте перейдём к панели «Аналитика лидов», чтобы увидеть, как быстро получить бизнес-инсайты через визуальные графики."
+    },
+    {
+      "id": "step-1-1",
+      "title": "Интерактивный просмотр данных",
+      "description": "Графики не статичны. Наведите курсор на любую часть воронки продаж, чтобы интерактивно просмотреть детальные данные для этого этапа.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_12d3ecd2-5748-4ad2-904f-f19ea4f76c7g_1.png",
+      "button": {
+        "id": "button3",
+        "label": "Интерактивный просмотр данных",
+        "position": {
+          "left": "23.8%",
+          "top": "29.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Шаг 2: Создание динамических фильтров",
+      "description": "Для более точного анализа давайте добавим фильтр на панель, чтобы сделать запросы данных более гибкими."
+    },
+    {
+      "id": "step-2-1",
+      "title": "Добавление блока фильтра",
+      "description": "Под графиками вы можете легко добавить блок фильтра, который будет служить контроллером для панели данных.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6e748cb9-1f99-48ce-bb3c-1fcd3874c35g_1.png",
+      "button": {
+        "id": "button5",
+        "label": "Добавить блок фильтра",
+        "position": {
+          "left": "18.5%",
+          "top": "90.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "Настройка полей фильтра",
+      "description": "Сначала нужно определить критерии фильтрации. Например, выберите поле «Владелец», чтобы фильтровать данные по менеджеру.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_cbcaa53e-f7a4-4a22-80dd-a9b7f8a81d5g_1.png",
+      "button": {
+        "id": "button6",
+        "label": "Настроить поля фильтра",
+        "position": {
+          "left": "18.0%",
+          "top": "25.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "Связывание действий фильтра",
+      "description": "Затем свяжите этот фильтр с графиками на странице, чтобы операции фильтрации реально управляли отображением графиков.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_624b640b-093c-44f7-b9ba-828a7cfc740g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "Связать действия фильтра",
+        "position": {
+          "right": "8.4%",
+          "top": "30.2%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "Применение фильтра и просмотр результатов",
+      "description": "Теперь попробуйте отфильтровать по владельцу - все графики на панели мгновенно обновятся в соответствии с вашим выбором.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button8",
+        "label": "Применить фильтр и просмотреть результаты",
+        "position": {
+          "right": "19.4%",
+          "top": "29.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Шаг 3: Настройка графиков",
+      "description": "Если предустановленные графики не соответствуют вашим потребностям, вы можете настроить графики в любое время."
+    },
+    {
+      "id": "step-3-1",
+      "title": "Переход на страницу «Аналитика клиентов»",
+      "description": "Давайте переключимся на страницу «Аналитика клиентов», где графики можно настраивать более свободно.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_33967ea8-0f5a-48c0-925d-4398bb67e03g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "Перейти к странице аналитики клиентов",
+        "position": {
+          "left": "6.0%",
+          "top": "35.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "Открытие настроек графика",
+      "description": "В режиме конфигурации каждый график имеет кнопку настройки в правом верхнем углу. Нажмите её, чтобы начать персонализацию.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_6bea9aa7-02b7-4fe6-a0c2-945beb385f2g_1.png",
+      "button": {
+        "id": "button11",
+        "label": "Открыть настройки графика",
+        "position": {
+          "right": "3.3%",
+          "top": "17.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "Переключение типа графика",
+      "description": "Вы можете выбрать наиболее подходящую форму представления из богатой библиотеки графиков. Например, давайте изменим круговую диаграмму на столбчатую.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_9529fbea-9f6f-4272-aba7-0357bf6c499g_1.png",
+      "button": {
+        "id": "button12",
+        "label": "Переключить тип графика",
+        "position": {
+          "left": "39.5%",
+          "top": "41.7%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "Группировка по цвету",
+      "description": "Для более глубокого анализа мы можем добавить измерение к графику, например, цветовую группировку по «Уровню клиента».",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button13",
+        "label": "Группировка по типу, цвет меняется в зависимости от типа",
+        "position": {
+          "left": "36.8%",
+          "top": "61.0%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "Сохранение настроек графика",
+      "description": "Когда будете довольны конфигурацией, нажмите «ОК», чтобы сохранить изменения.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_43f0391f-0230-4570-baf3-e29c4f998fcg_1.png",
+      "button": {
+        "id": "button14",
+        "label": "Сохранить настройки графика",
+        "position": {
+          "right": "5.9%",
+          "top": "88.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-6",
+      "title": "Просмотр обновлённого графика",
+      "description": "Смотрите! График был успешно обновлён в соответствии с вашими требованиями, и теперь вы можете анализировать данные клиентов с новой точки зрения.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_5d6fe94c-6f76-4234-8c74-7aca35acfc7g_1.png",
+      "button": {
+        "id": "button15",
+        "label": "График успешно обновлён!",
+        "position": {
+          "right": "22.6%",
+          "top": "35.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}
+
