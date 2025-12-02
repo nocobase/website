@@ -7,7 +7,7 @@
   "description": "Workflow is the core of business process automation.<br>\nBy combining triggers and action nodes, NocoBase enables the automated execution and orchestration of various business processes — from data updates and message notifications to condition validation and approval workflows.",
   "description_cn": "工作流是自动化业务逻辑的核心。通过触发器与动作节点的组合，NocoBase 能实现从更新数据、消息通知到条件验证、业务审批等各种流程的自动化执行和逻辑编排。",
   "description_ja": "Workflow is the core of business process automation.<br>\nBy combining triggers and action nodes, NocoBase enables the automated execution and orchestration of various business processes — from data updates and message notifications to condition validation and approval workflows.",
-  "description_ru": "Рабочие процессы — это основа автоматизации бизнес-процессов.<br>\nКомбинируя триггеры и узлы действий, NocoBase обеспечивает автоматическое выполнение и оркестрацию различных бизнес-процессов — от обновления данных и уведомлений до проверки условий и процессов утверждения.",
+  "description_ru": "Рабочие процессы — это основа автоматизации бизнес-процессов.<br>\nКомбинируя триггеры и узлы действий, NocoBase обеспечивает автоматическое выполнение и оркестрацию различных бизнес-процессов — от обновления данных и уведомлений до проверки условий и подтверждений.",
   "keywords": null,
   "keywords_cn": null,
   "keywords_ja": null,
