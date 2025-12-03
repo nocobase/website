@@ -5,7 +5,7 @@ import InteractiveDemo from "../../../components/InteractiveDemo.astro";
 import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
-import extensionDemoGuides from "../../../data/ticketing-extension-demo-en.json";
+import extensionDemoGuides from "../../../data/ticketing-extension-demo-ru.json";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -79,7 +79,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
 
             <!-- Buttons -->
             <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+              <a href="https://my.nocobase.ru/" target="_blank" class="btn btn-primary me-3">
                 <i class="uil uil-play me-1"></i>Демо
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
@@ -190,7 +190,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
         <div class="row justify-content-center mt-4">
           <div class="col-12 text-center">
             <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+              <a href="https://my.nocobase.ru/" target="_blank" class="btn btn-primary me-3">
                 <i class="uil uil-play me-1"></i>Попробовать сейчас
               </a>
               <a href="#copy-tutorial" class="btn btn-outline-primary">
@@ -310,13 +310,13 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
                       <div class="plugin-footer">
                         <h6 class="text-primary mb-0">
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + 1 год обновлений</span><br>
-                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <a href="/ru/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
                           <span class="text-muted" style="font-size: 0.85rem;"> {plugin.price_1_year_rub ? plugin.price_1_year_rub.toLocaleString('ru-RU') : '?'} ₽ </span>
                         </h6>
                         <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
                           <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Навсегда + обновления навсегда</span><br>
-                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <a class="text-muted" href="/ru/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
                           <span class="text-muted">/</span>
                           <span class="text-muted" style="font-size: 0.85rem;">{plugin.price_rub ? plugin.price_rub.toLocaleString('ru-RU') : '?'} ₽</span>
                         </h6>
@@ -347,8 +347,8 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
 
       <div class="row justify-content-center mt-4">
         <div class="col-12 text-center">
-          <a href="/en/plugins-commercial" class="btn btn-primary me-3">Посмотреть все коммерческие плагины</a>
-          <a href="/en/commercial" class="btn btn-outline-primary">Цены</a>
+          <a href="/ru/plugins-commercial" class="btn btn-primary me-3">Посмотреть все коммерческие плагины</a>
+          <a href="/ru/commercial" class="btn btn-outline-primary">Цены</a>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
@@ -416,7 +416,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
                 <p class="text-muted mt-2">Импортируйте файл шаблона CRM в вашу систему NocoBase для получения как возможностей CRM, так и управления тикетами</p>
               </div>
               <div class="mt-3">
-                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Учебное пособие по восстановлению</a>
+                <a href="/ru/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Учебное пособие по восстановлению</a>
               </div>
             </div>
           </div>
@@ -546,7 +546,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
             Разверните выделенную демонстрацию управления тикетами за 1 минуту. Как важное дополнение к CRM, достигните полной системы обслуживания клиентов для улучшения удовлетворенности клиентов и эффективности обслуживания.
           </p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+            <a href="https://my.nocobase.ru/" target="_blank" class="btn btn-primary mt-2 me-3">
               <i class="uil uil-play me-1"></i>Демо
             </a>
             <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">

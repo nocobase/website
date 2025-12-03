@@ -1,0 +1,266 @@
+{
+  "title": "От лида к клиенту: Эффективный процесс конверсии",
+  "subtitle": "Узнайте, как получать лиды из пула лидов, проводить 360° комплексное сопровождение и, в конечном итоге, плавно конвертировать их в возможности и контакты.",
+  "mainSteps": [
+    {
+      "number": "01",
+      "title": "Получение и сопровождение лидов",
+      "id": "lead-guide1",
+      "targetStepId": "01"
+    },
+    {
+      "number": "02",
+      "title": "Детали лида и управление процессом",
+      "id": "lead-guide2",
+      "targetStepId": "02"
+    },
+    {
+      "number": "03",
+      "title": "Конверсия лида и реализация ценности",
+      "id": "lead-guide3",
+      "targetStepId": "03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-start",
+      "title": "Пул лидов",
+      "description": "Здесь находятся все неназначенные лиды. Члены команды продаж могут находить здесь потенциальных клиентов и начинать сопровождение.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1.png",
+      "button": {
+        "id": "button1",
+        "label": "Пул лидов",
+        "position": {
+          "left": "5.9%",
+          "top": "20.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "01",
+      "title": "Шаг 1: Получение и сопровождение лидов",
+      "description": "Лиды в пуле нужно назначить и сопровождать, чтобы создать ценность. Начнём с получения лида."
+    },
+    {
+      "id": "step-1-1",
+      "title": "Получение лида в один клик",
+      "description": "Нашли ценный лид? Сложный процесс не нужен - нажмите «Получить», чтобы закрепить его за собой и начать сопровождение.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1.png",
+      "button": {
+        "id": "button3",
+        "label": "Получение лида в один клик",
+        "position": {
+          "left": "18.4%",
+          "top": "24.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-1-2",
+      "title": "Быстрый поиск ваших лидов",
+      "description": "После получения вы можете использовать мощные функции фильтрации, чтобы быстро найти целевые лиды по имени, статусу или любому другому критерию в «Мои лиды».",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_13c95192-8eb3-41a5-9982-73911fb56cdg_1.png",
+      "button": {
+        "id": "button4",
+        "label": "Быстро найти ваши лиды",
+        "position": {
+          "left": "18.3%",
+          "top": "15.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Шаг 2: Детали лида и управление процессом",
+      "description": "Нажмите, чтобы войти на страницу деталей лида, ваш командный центр для управления всей информацией и активностью, связанной с этим лидом."
+    },
+    {
+      "id": "step-2-1",
+      "title": "Войти в 360° представление клиента",
+      "description": "Страница деталей агрегирует статус лида, базовую информацию и основные операции, такие как изменение статуса, возврат в пул и важнейшую кнопку «Конверсия лида».",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_235b04ee-4d2d-4310-8d90-d9ca5c01767g_1.png",
+      "button": {
+        "id": "button6",
+        "label": "Войти в 360° представление клиента",
+        "position": {
+          "left": "21.0%",
+          "top": "26.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-2",
+      "title": "Обновление статуса сопровождения в реальном времени",
+      "description": "По мере углубления коммуникации вы можете обновлять статус лида в любое время, обеспечивая синхронизацию информации в команде и точное отражение этапа продаж.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g_1.png",
+      "button": {
+        "id": "button7",
+        "label": "Обновить статус сопровождения в реальном времени",
+        "position": {
+          "right": "25.8%",
+          "top": "10.8%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-3",
+      "title": "Управление задачами",
+      "description": "На вкладке «Задачи» создавайте задачи по сопровождению для себя, чтобы каждое действие по продажам было хорошо организовано.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_1af8e183-e85e-4243-9b76-470488c094dg_1.png",
+      "button": {
+        "id": "button8",
+        "label": "Управлять задачами",
+        "position": {
+          "left": "38.2%",
+          "top": "6.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-4",
+      "title": "Планирование встреч и событий",
+      "description": "На вкладке «События» вы можете записывать и управлять встречами, звонками и другими планами с клиентами, никогда не пропуская важные встречи.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_cd021311-3883-4383-8825-1cb0b2109f8g_1.png",
+      "button": {
+        "id": "button9",
+        "label": "Планировать встречи и события",
+        "position": {
+          "left": "43.9%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-5",
+      "title": "Архивирование коммуникационных писем",
+      "description": "Все важные письма, которыми обменивались с этим лидом, могут быть заархивированы и просмотрены здесь, создавая полную запись коммуникации.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_c972c226-991d-4348-abd8-4ad4b2c8738g_1.png",
+      "button": {
+        "id": "button10",
+        "label": "Архивировать коммуникационные письма",
+        "position": {
+          "left": "49.6%",
+          "top": "6.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2-6",
+      "title": "Отслеживание истории изменений",
+      "description": "Вкладка «История» чётко записывает каждое изменение информации, делая все операции отслеживаемыми для проверки и управления.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_200ce26d-dd58-4bcd-b0a5-ddd26ea342dg_1.png",
+      "button": {
+        "id": "button11",
+        "label": "Отследить историю изменений",
+        "position": {
+          "right": "40.6%",
+          "top": "6.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Шаг 3: Конверсия лида и реализация ценности",
+      "description": "Когда лид созревает, самый важный шаг - конвертировать его в реальные бизнес-возможности. Давайте начнём!"
+    },
+    {
+      "id": "step-3-1",
+      "title": "Начало процесса конверсии лида",
+      "description": "Вернитесь на главную страницу деталей и нажмите кнопку «Конверсия лида». Система проведёт вас к плавному созданию новых клиентов, контактов и возможностей.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_1d8cc818-ceda-4c62-a490-7b71c2becf1g_1.png",
+      "button": {
+        "id": "button13",
+        "label": "Начать конверсию лида",
+        "position": {
+          "right": "16.8%",
+          "top": "11.3%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-2",
+      "title": "Создание связанной возможности",
+      "description": "Во время конверсии вы можете напрямую создать возможность и автоматически импортировать ключевую информацию о лиде без дублирования ввода.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_f210e379-4240-4813-a36b-2bbace848fag_1.png",
+      "button": {
+        "id": "button14",
+        "label": "Создать связанную возможность",
+        "position": {
+          "right": "33.7%",
+          "top": "33.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-3",
+      "title": "Заполнение информации о возможности",
+      "description": "Добавьте предполагаемую сумму, ожидаемую дату закрытия и другую информацию о возможности, затем нажмите «Сохранить», чтобы заложить основу для последующего анализа выигрышей.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_36bea1cb-6f1e-4fd5-abab-7e65b157510g_1.png",
+      "button": {
+        "id": "button15",
+        "label": "Заполнить информацию о возможности",
+        "position": {
+          "right": "48.1%",
+          "top": "28.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-4",
+      "title": "Завершение конверсии",
+      "description": "После подтверждения правильности всей информации нажмите «ОК», и система автоматически завершит создание всех объектов и связей.",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_124f07c8-bdde-46a2-9b46-cc42a589045g_1.png",
+      "button": {
+        "id": "button16",
+        "label": "Завершить конверсию",
+        "position": {
+          "left": "34.0%",
+          "top": "37.7%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3-5",
+      "title": "Проверка результатов конверсии",
+      "description": "Теперь давайте перейдём на страницу «Возможности», чтобы увидеть новую возможность, успешно конвертированную из лида - плавное соединение процесса продаж!",
+      "image": "https://nocobase-docs.oss-cn-beijing.aliyuncs.com/img_v3_02o3_98373098-c78a-4c26-a4cb-6fbb6089a1fg_1.png",
+      "button": {
+        "id": "button17",
+        "label": "Перейти к списку возможностей, конверсия успешна!",
+        "position": {
+          "left": "28.4%",
+          "top": "29.3%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    }
+  ]
+}
+
