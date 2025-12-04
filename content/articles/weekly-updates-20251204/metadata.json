@@ -7,7 +7,7 @@
   "description_cn": "本周更新包括：在 restful api 数据源配置中新增接口错误信息转换配置项，允许选择在审批处理界面中展示数据的快照还是最新状态等。",
   "description_ja": "今週の更新内容は以下の通りです：restful api データソース設定に「インターフェースエラーメッセージ変換」設定項目を追加，承認画面で「スナップショット」または「最新データ」を表示するか選べるようになりました",
   "slug": "weekly-updates-20251204",
-  "publishedAt": "2025-12-04T08:17:17.900Z",
+  "publishedAt": "2025-12-04T09:00:17.000Z",
   "status": "published",
   "tags": [
     {
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-04T08:53:36.520Z"
+  "updatedAt": "2025-12-04T09:38:01.388Z"
 }
