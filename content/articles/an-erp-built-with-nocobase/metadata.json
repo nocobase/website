@@ -1,9 +1,9 @@
 {
   "id": 797,
-  "title": "An ERP Built with NocoBase: From a Community User",
+  "title": "Community Spotlight: Building a Real-World ERP with NocoBase",
   "title_cn": "社区用户分享：用 NocoBase 搭建可落地的 ERP",
   "title_ja": "NocoBase で構築するノーコード ERP の実例",
-  "description": "A user from Mexico shares how he built his ERP with NocoBase. This case is adapted from his original community post.",
+  "description": "A user from Mexico shares how he independently built an ERP system using NocoBase. This case study is\nadapted and translated from his original community post.",
   "description_cn": "一位来自墨西哥的用户分享了他如何用 NocoBase 自行构建 ERP。本案例基于其社区原帖整理与翻译。",
   "description_ja": "メキシコのユーザーが NocoBase で ERP を構築した事例です。内容はコミュニティ投稿を基に編集しました。",
   "slug": "an-erp-built-with-nocobase",
@@ -296,5 +296,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-04T06:22:40.186Z"
+  "updatedAt": "2025-12-04T12:18:55.260Z"
 }
