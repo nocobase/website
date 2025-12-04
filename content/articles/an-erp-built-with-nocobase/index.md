@@ -84,7 +84,7 @@ Why NocoBase became the real solution?
 
 * **Completely free:** The community version is powerful and doesn’t cost a peso.
 * **Self-hosted:** I installed it on my own server, with full control.
-* **No limits: **No user caps, no record caps, no automation caps.
+* **No limits:** No user caps, no record caps, no automation caps.
 * **Highly customizable:** The drag-and-drop interface lets me build everything I needed without writing code.
 * **Easy access:** I connected it to a domain, and now we can use it from any device with the internet — or even offline on our local network.
 
@@ -123,11 +123,11 @@ This lets us capture real-time data from the field with almost no errors.
 
 And the biggest transformation is that we can now analyze our information to make better strategic decisions:
 
-* **Smarter purchasing: **We can identify the best suppliers and the most profitable products.
-* **Sales and customers: **We can see who our most valuable customers are, who has stopped buying, and offer tailored deals based on data.
-* **Inventory control: **We make sure essential items never run out.
-* **Trend insights: **We know when sales rise or fall, helping us plan ahead.
-* **Workforce management: **We measure each employee’s productivity and profitability.
+* **Smarter purchasing:** We can identify the best suppliers and the most profitable products.
+* **Sales and customers:** We can see who our most valuable customers are, who has stopped buying, and offer tailored deals based on data.
+* **Inventory control:** We make sure essential items never run out.
+* **Trend insights:** We know when sales rise or fall, helping us plan ahead.
+* **Workforce management:** We measure each employee’s productivity and profitability.
 * **Predictive maintenance:** We stay on top of equipment and machinery upkeep.
 * **Complete traceability:** We keep a detailed log for every field and plot.
 
@@ -184,7 +184,6 @@ Thank you to everyone who shares experiences, offers suggestions, contributes pl
 We will continue to listen and bring your feedback into the product so that more people can build the applications they envision.
 
 We also look forward to hearing more voices from around the world and seeing the NocoBase community continue to grow!
-
 
 **More Customer Stories:**
 
