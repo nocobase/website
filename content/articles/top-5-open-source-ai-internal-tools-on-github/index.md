@@ -104,7 +104,7 @@ When building new modules such as customer management, contract workflows, or ta
 
 ### NO.3 Refine
 
-![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
+![refine-li9il9.png](https://static-docs.nocobase.com/refine-li9il9.png)
 
 
 | GitHub        | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
@@ -143,7 +143,7 @@ Because Refine AI generates code that follows enterprise grade patterns and best
 
 ### NO.2 ToolJet
 
-![ToolJet.png](https://static-docs.nocobase.com/ToolJet-sblclm.png)
+![ToolJet-4nyv0g.png](https://static-docs.nocobase.com/ToolJet-4nyv0g.png)
 
 
 | GitHub        | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)                                     |
