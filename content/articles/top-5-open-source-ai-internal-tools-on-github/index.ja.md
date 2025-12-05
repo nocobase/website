@@ -102,7 +102,7 @@ AI Column を使ってデータを自動的に整形・修正でき、顧客フ�
 
 ### NO.3 Refine
 
-![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
+![refine-n5b1bb.png](https://static-docs.nocobase.com/refine-n5b1bb.png)
 
 
 | GitHub アドレス          | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
@@ -139,7 +139,7 @@ Refine AI は既存プロジェクトにも活用でき、ベストプラクテ�
 
 ### NO.2 ToolJet
 
-![ToolJet.png](https://static-docs.nocobase.com/ToolJet-sblclm.png)
+![ToolJet-4nyv0g.png](https://static-docs.nocobase.com/ToolJet-4nyv0g.png)
 
 
 | GitHub アドレス          | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)                                     |
