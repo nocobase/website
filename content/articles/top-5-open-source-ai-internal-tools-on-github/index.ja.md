@@ -2,7 +2,7 @@
 
 同じ動きは、内部ツール（Internal Tools）分野でも起こっています。昨年、私たちは[優れたオープンソース内部ツールのまとめ](https://www.nocobase.com/cn/blog/open-source-internal-tools)を紹介しましたが、2025 年に入ってそれらの多くが AI 機能を取り込み、大きく進化しました。そのため、今回あらためて体系的にアップデートすることにしました。
 
-😄 *内部ツールとは何か、どのような価値があるのかを知りたい方は、こちらの解説をご覧ください。*
+😄 [内部ツールとは何か、どのような価値があるのかを知りたい方は、こちらの解説をご覧ください。](https://www.nocobase.com/ja/blog/top-5-open-source-projects-for-building-internal-tools-in-2024#%E5%86%85%E9%83%A8%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AE%E5%88%A9%E7%82%B9%E3%81%A8%E3%81%AF)
 
 今回の記事では、[GitHub の Internal Tools](https://github.com/topics/internal-tools) タグの中から Star 数が上位で、20k 以上の Star を獲得しているオープンソースツールを再度選び、技術的特徴や利用シーンを紹介します。
 
