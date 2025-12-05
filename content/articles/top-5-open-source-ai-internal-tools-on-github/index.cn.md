@@ -55,7 +55,7 @@ NocoBase 是一个数据模型驱动的无代码开发平台，非常适合用�
 
 **前端交互配置场景（Nathan 前端工程师）**
 
-在需要编写 JSBlock、JSField、JSItem、JSColumn、JSAction、事件流（Event Flow）等需要写JavaScript的场景下，AI 员工可以读取当前代码编辑器中的上下文，根据自然语言需求自动生成或优化前端代码。
+在需要编写 JSBlock、JSField、JSItem、JSColumn、JSAction、事件流（Event Flow）等需要写 JavaScript 的场景下，AI 员工可以读取当前代码编辑器中的上下文，根据自然语言需求自动生成或优化前端代码。
 
 ![Nathan.png](https://static-docs.nocobase.com/Nathan-n9ybjn.png)
 
@@ -86,7 +86,7 @@ NocoBase 是一个数据模型驱动的无代码开发平台，非常适合用�
 
 Budibase 是一个开源低代码内部工具平台，它提供数据库连接、多种数据源支持、拖拽 UI 构建、自动生成 CRUD 界面与工作流功能，适合快速搭建企业后台、审批系统、表单／管理面板等业务系统。其内置数据库 + REST API 连接能力 + 可视化界面构建，使得即便没有深度前端经验，也能构建功能完备的内部应用。
 
-Budibase 已将 AI 能力整合为其平台内置功能之一。通过启用 Budibase AI，用户可以为表格添加 AI Column，用自然语言生成 JavaScript 逻辑，为数据库自动生成表结构，还可通过 AI 自动化动作自动处理文本、分类、清洗、生成数据等。 
+Budibase 已将 AI 能力整合为其平台内置功能之一。通过启用 Budibase AI，用户可以为表格添加 AI Column，用自然语言生成 JavaScript 逻辑，为数据库自动生成表结构，还可通过 AI 自动化动作自动处理文本、分类、清洗、生成数据等。
 
 **适用场景**
 
@@ -98,7 +98,7 @@ Budibase 已将 AI 能力整合为其平台内置功能之一。通过启用 Bud
 
 ![数据库表结构.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84-rc0ka3.png)
 
-### NO.3 refine
+### NO.3 Refine
 
 ![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
 
@@ -229,7 +229,6 @@ Appsmith 是一个开源低代码平台，旨在帮助团队以更少代码、�
 随着生成式 AI 的不断演进，这些开源项目也会持续更新迭代，新的能力也会不断涌现。
 
 期待这些工具能帮助你的团队在未来构建更高效、更智能的内部系统。
-
 
 相关阅读：
 
