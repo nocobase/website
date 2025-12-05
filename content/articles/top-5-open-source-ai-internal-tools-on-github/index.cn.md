@@ -100,7 +100,7 @@ Budibase 已将 AI 能力整合为其平台内置功能之一。通过启用 Bud
 
 ### NO.3 Refine
 
-![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
+![refine-gg18kg.png](https://static-docs.nocobase.com/refine-gg18kg.png)
 
 
 | GitHub 地址             | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
@@ -139,7 +139,7 @@ Refine AI 的生成机制不仅适合新项目，也可以用在已有项目上�
 
 ### NO.2 ToolJet
 
-![ToolJet.png](https://static-docs.nocobase.com/ToolJet-sblclm.png)
+![ToolJet-4nyv0g.png](https://static-docs.nocobase.com/ToolJet-4nyv0g.png)
 
 
 | GitHub 地址             | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)                                     |
