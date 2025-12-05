@@ -18,20 +18,20 @@ AI 時代において、どの内部ツールが依然として有力なのか�
 
 ### NO.5 nocobase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDNiZjQ5MTVhOGY4Y2UwM2RkZmYxM2YzYzQ5YzMyYTFfbGFHRTZqcEVLUUZ4WFpaT2tTam9OMTh1YWRwSVI3enhfVG9rZW46UlB5aGI5RWZnb2tFTVV4OHR1ZmNQZjNibmhnXzE3NjQ5MjE3NzU6MTc2NDkyNTM3NV9WNA)
+![nocobase.png](https://static-docs.nocobase.com/nocobase-ovk3pi.png)
 
 
-| GitHub アドレス          | https://github.com/nocobase/nocobase         |
-| ------------------------ | -------------------------------------------- |
-| 公式サイト               | https://www.nocobase.com/                    |
-| オープンソースライセンス | AGPL-3.0                                     |
-| GitHub Star 数           | 20.5k                                        |
-| GitHub Fork 数           | 2.3k                                         |
-| GitHub Issue 数          | 129                                          |
-| GitHub Pull Request 数   | 125                                          |
-| GitHub Contributor 数    | 101                                          |
-| GitHub 最終更新          | 当日更新                                     |
-| 関連ドキュメント         | https://v2.docs.nocobase.com/cn/ai-employees |
+| GitHub アドレス          | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)           |
+| ------------------------ | -------------------------------------------------------------------------------------- |
+| 公式サイト               | [https://www.nocobase.com/]([https://www.nocobase.com/](https://www.nocobase.com/))    |
+| オープンソースライセンス | AGPL-3.0                                                                               |
+| GitHub Star 数           | 20.5k                                                                                  |
+| GitHub Fork 数           | 2.3k                                                                                   |
+| GitHub Issue 数          | 129                                                                                    |
+| GitHub Pull Request 数   | 125                                                                                    |
+| GitHub Contributor 数    | 101                                                                                    |
+| GitHub 最終更新          | 当日                                                                                   |
+| 関連ドキュメント         | [https://v2.docs.nocobase.com/ai-employees](https://v2.docs.nocobase.com/ai-employees) |
 
 **ツール紹介**
 
@@ -45,32 +45,42 @@ NocoBase の AI 機能は独立したモジュールではなく、テーブル�
 
 顧客情報や工単、契約情報などの入力時に、AI 社員が非構造化データやファイルから必要な情報を抽出し、構造化データとして整理し、フォームに入力することもできます。
 
+![Dex.gif](https://static-docs.nocobase.com/Dex-c4uwn4.gif)
+
 **データ分析（Viz インサイトアナリスト）**
 
 Leads や Opportunities、Accounts などのデータページの内容を読み取り、トレンド、比較、KPI などのチャートを自動生成し、分析をわかりやすく提示します。
+
+![Viz.gif](https://static-docs.nocobase.com/Viz-demgin.gif)
 
 **フロントエンド設定（Nathan フロントエンドエンジニア）**
 
 JavaScript が必要な場面で、エディタ内のコンテキストを理解し、自然言語の指示からコードの生成・改善を自動で行います。
 
+![Nathan.png](https://static-docs.nocobase.com/Nathan-n9ybjn.png)
+
 **データモデリング（Orin データモデラー）**
 
 CRM や工単、在庫、プロジェクト管理などのデータ構造を作る際に、AI がテーブルの作成・編集を支援します。
 
+![Orin.png](https://static-docs.nocobase.com/Orin-ahkat1.png)
+
 ### NO.4 budibase
 
+![budibase.png](https://static-docs.nocobase.com/budibase-wahysy.png)
 
-| GitHub アドレス          | https://github.com/Budibase/budibase                  |
-| ------------------------ | ----------------------------------------------------- |
-| 公式サイト               | https://budibase.com/                                 |
-| オープンソースライセンス | GPL-v3                                                |
-| GitHub Star 数           | 27.4k                                                 |
-| GitHub Fork 数           | 2k                                                    |
-| GitHub Issue 数          | 294                                                   |
-| GitHub Pull Request 数   | 12                                                    |
-| GitHub Contributor 数    | 112                                                   |
-| GitHub 最終更新          | 当日                                                  |
-| 関連ドキュメント         | https://docs.budibase.com/docs/quickstart-budibase-ai |
+
+| GitHub アドレス          | [https://github.com/Budibase/budibase]([https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)) |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| 公式サイト               | [https://budibase.com/](https://budibase.com/)                                                                       |
+| オープンソースライセンス | GPL-v3                                                                                                               |
+| GitHub Star 数           | 27.4k                                                                                                                |
+| GitHub Fork 数           | 2k                                                                                                                   |
+| GitHub Issue 数          | 294                                                                                                                  |
+| GitHub Pull Request 数   | 12                                                                                                                   |
+| GitHub Contributor 数    | 112                                                                                                                  |
+| GitHub 最終更新          | 当日                                                                                                                 |
+| 関連ドキュメント         | [https://docs.budibase.com/docs/quickstart-budibase-ai](https://docs.budibase.com/docs/quickstart-budibase-ai)       |
 
 **ツール紹介**
 
@@ -83,25 +93,29 @@ Budibase には AI 機能も組み込まれており、AI Column によるデー
 **データ整理・クレンジング**
 AI Column を使ってデータを自動的に整形・修正でき、顧客フィードバック管理や内容審査、工単処理などに役立ちます。
 
+![AI Column.png](https://static-docs.nocobase.com/AI%20Column-imcj5c.png)
+
 **データベース構造の自動生成**
 顧客管理や契約管理、タスク管理など新しい業務モジュールを始める際、AI が適切なテーブル構造やサンプルデータを自動で作成します。
 
----
+![数据库表结构.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84-rc0ka3.png)
 
 ### NO.3 refine
 
+![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
 
-| GitHub アドレス          | https://github.com/refinedev/refine |
-| ------------------------ | ----------------------------------- |
-| 公式サイト               | https://refine.dev/                 |
-| オープンソースライセンス | MIT                                 |
-| GitHub Star 数           | 33.5k                               |
-| GitHub Fork 数           | 2.9k                                |
-| GitHub Issue 数          | 17                                  |
-| GitHub Pull Request 数   | 11                                  |
-| GitHub Contributor 数    | 311                                 |
-| GitHub 最終更新          | 2日前                               |
-| 関連ドキュメント         | https://ai.refine.dev/              |
+
+| GitHub アドレス          | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
+| ------------------------ | -------------------------------------------------------------------------- |
+| 公式サイト               | [https://refine.dev/](https://refine.dev/)                                 |
+| オープンソースライセンス | MIT                                                                        |
+| GitHub Star 数           | 33.5k                                                                      |
+| GitHub Fork 数           | 2.9k                                                                       |
+| GitHub Issue 数          | 17                                                                         |
+| GitHub Pull Request 数   | 11                                                                         |
+| GitHub Contributor 数    | 311                                                                        |
+| GitHub 最終更新          | 2日前                                                                      |
+| 関連ドキュメント         | [https://ai.refine.dev/](https://ai.refine.dev/)                           |
 
 **ツール紹介**
 
@@ -114,29 +128,31 @@ Refine AI を利用すると、自然言語や API 仕様、ドキュメント�
 **管理画面の自動生成**
 API やデータモデルに基づき、在庫・注文・プロジェクト管理などの管理画面を一括で生成し、内部システムの立ち上げを大幅に効率化できます。
 
+![后台管理系统生成-3eh30p.png](https://static-docs.nocobase.com/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%94%9F%E6%88%90-3eh30p.png)
+
 **既存コードの再構築**
 Refine AI は既存プロジェクトにも活用でき、ベストプラクティスに沿った構造を生成するため、老朽化したシステムの再構築や新機能の追加作業をスムーズにします。
 
-💡おすすめ記事：開源 CRUD 開発ツール：NocoBase と Refine の比較
+![代码重构与维护.png](https://static-docs.nocobase.com/%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84%E4%B8%8E%E7%BB%B4%E6%8A%A4-muoonn.png)
 
-
+💡おすすめ記事：[開源 CRUD 開発ツール：NocoBase と Refine の比較](https://www.nocobase.com/ja/blog/nocobase-vs-refine)
 
 ### NO.2 ToolJet
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2E4N2MxOGRhOTgyOWRkZTg5MWM5MTdkODQzZGI1MDBfNkZaUVNBNVhjYmV4UUN0a0dLOHVNTEk2TmJXNGQ4WkpfVG9rZW46TVBzTmJEbTRYb3R3VDl4MzAyUWNoa05jblVlXzE3NjQ5MjE3NzU6MTc2NDkyNTM3NV9WNA)
+![ToolJet.png](https://static-docs.nocobase.com/ToolJet-sblclm.png)
 
 
-| GitHub アドレス          | https://github.com/ToolJet/ToolJet                   |
-| ------------------------ | ---------------------------------------------------- |
-| 公式サイト               | https://tooljet.ai/                                  |
-| オープンソースライセンス | AGPL-3.0                                             |
-| GitHub Star 数           | 37k                                                  |
-| GitHub Fork 数           | 4.9k                                                 |
-| GitHub Issue 数          | 646                                                  |
-| GitHub Pull Request 数   | 313                                                  |
-| GitHub Contributor 数    | 651                                                  |
-| GitHub 最終更新          | 1日前                                                |
-| 関連ドキュメント         | https://docs.tooljet.com/docs/build-with-ai/overview |
+| GitHub アドレス          | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| 公式サイト               | [https://tooljet.ai/](https://tooljet.ai/)                                                                   |
+| オープンソースライセンス | AGPL-3.0                                                                                                     |
+| GitHub Star 数           | 37k                                                                                                          |
+| GitHub Fork 数           | 4.9k                                                                                                         |
+| GitHub Issue 数          | 646                                                                                                          |
+| GitHub Pull Request 数   | 313                                                                                                          |
+| GitHub Contributor 数    | 651                                                                                                          |
+| GitHub 最終更新          | 1日前                                                                                                        |
+| 関連ドキュメント         | [https://docs.tooljet.com/docs/build-with-ai/overview](https://docs.tooljet.com/docs/build-with-ai/overview) |
 
 **ツール紹介**
 
@@ -150,28 +166,30 @@ ToolJet は、企業向けの内部ツールやダッシュボード、管理シ
 
 要件を文章で伝えるだけで、ToolJet が内部ツールの UI・データ構造・ロジックを自動作成します。既存アプリの調整や機能追加も可能で、在庫管理などの基本的な業務システムを短時間で構築できます。
 
+![自然语言快速生成.png](https://static-docs.nocobase.com/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90-nwf730.png)
+
 **AI ドキュメントアシスタント**
 
 組み込みの AI アシスタントが、コンポーネントや機能、統合方法について質問に答え、理解と構築をサポートします。フロントエンドに詳しくないチームでもスムーズに使い始められます。
 
----
+![AI 文档助手.png](https://static-docs.nocobase.com/AI%20%E6%96%87%E6%A1%A3%E5%8A%A9%E6%89%8B-75vt0c.png)
 
 ### NO.1 appsmith
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2UyMGZiMTNiZmNkNTZkMmZjMDNlMDBhZjI0YjUxNDBfWHFUM3N1V0dNSDJQeUNFb29nTUZWaFFmR05uU2NyblJfVG9rZW46RXNmd2JYVklmb1NBckh4WW01cWNObmlqbkRoXzE3NjQ5MjE3NzU6MTc2NDkyNTM3NV9WNA)
+![appsmith-of0467.png](https://static-docs.nocobase.com/appsmith-of0467.png)
 
 
-| GitHub アドレス          | https://github.com/appsmithorg/appsmith |
-| ------------------------ | --------------------------------------- |
-| 公式サイト               | https://www.appsmith.com/               |
-| オープンソースライセンス | Apache-2.0                              |
-| GitHub Star 数           | 38.6k                                   |
-| GitHub Fork 数           | 4.4k                                    |
-| GitHub Issue 数          | 4.4k                                    |
-| GitHub Pull Request 数   | 38                                      |
-| GitHub Contributor 数    | 335                                     |
-| GitHub 最終更新          | 1日前                                   |
-| 関連ドキュメント         | https://www.appsmith.com/ai/low-code    |
+| GitHub アドレス          |  [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) |
+| ------------------------ | ----------------------------------------------------------------------------------- |
+| 公式サイト               | [https://www.appsmith.com/](https://www.appsmith.com/)                              |
+| オープンソースライセンス | Apache-2.0                                                                          |
+| GitHub Star 数           | 38.6k                                                                               |
+| GitHub Fork 数           | 4.4k                                                                                |
+| GitHub Issue 数          | 4.4k                                                                                |
+| GitHub Pull Request 数   | 38                                                                                  |
+| GitHub Contributor 数    | 335                                                                                 |
+| GitHub 最終更新          | 1日前                                                                               |
+| 関連ドキュメント         | [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)        |
 
 **ツール紹介**
 
@@ -185,13 +203,17 @@ Appsmith は、内部業務アプリを素早く作れるオープンソース�
 
 Appsmith では、アプリ作成時に AI が文脈に応じた支援を行います。操作説明、機能解説、クエリ作成、JavaScript ロジック提案、UI カスタマイズなど、画面横のヘルプから Appy を呼び出せば、その場でサポートを得られます。
 
+![借助 AI 提升构建速度.png](https://static-docs.nocobase.com/%E5%80%9F%E5%8A%A9%20AI%20%E6%8F%90%E5%8D%87%E6%9E%84%E5%BB%BA%E9%80%9F%E5%BA%A6-76dac4.png)
+
 **内部アプリへの AI 統合**
 
 顧客レビューの感情分析など、AI を取り込んだ業務ツールを簡単に構築できます。レビューを取得して表示し、AI で分類し、結果を画面に反映することで、業務効率を高めたインタラクティブなアプリを作れます。
 
-💡おすすめ記事：NocoBase と Appsmith の比較
+![整合 AI 能力.png](https://static-docs.nocobase.com/%E6%95%B4%E5%90%88%20AI%20%E8%83%BD%E5%8A%9B-n2t9w0.png)
 
-また、前述の5つの主要プロジェクト以外にも、Yao や ILLA Builder といったオープンソースツールはコミュニティが活発で、内部ツール構築に十分活用できます。Yao はフルスタックのアプリケーションエンジンとしてモデル・フロー・API を素早く構築でき、ILLA Builder は可視化 UI の作成に特化しており、短時間で管理画面やデータツールを立ち上げたいケースに向いています。どちらも AI 拡張に対応しており、内部ツールづくりの補完的な選択肢になります。
+💡おすすめ記事：[NocoBase と Appsmith の比較](https://www.nocobase.com/ja/blog/nocobase-vs-appsmith)
+
+また、前述の5つの主要プロジェクト以外にも、[Yao]([Yao](https://github.com/YaoApp/yao)) や[ILLA Builder ](https://github.com/illacloud/illa-builder)といったオープンソースツールはコミュニティが活発で、内部ツール構築に十分活用できます。[Yao](https://github.com/YaoApp/yao) はフルスタックのアプリケーションエンジンとしてモデル・フロー・API を素早く構築でき、[ILLA Builder](https://github.com/illacloud/illa-builder) は可視化 UI の作成に特化しており、短時間で管理画面やデータツールを立ち上げたいケースに向いています。どちらも AI 拡張に対応しており、内部ツールづくりの補完的な選択肢になります。
 
 ### **結語**
 
@@ -207,3 +229,14 @@ Appsmith では、アプリ作成時に AI が文脈に応じた支援を行い�
 生成系 AI の進化に伴い、これらのオープンソースプロジェクトも引き続きアップデートが進み、新たな機能が生まれてくるでしょう。
 
 これらのツールが、あなたのチームのより効率的でスマートな内部システム構築に貢献できることを願っています。
+
+
+**関連読み物：**
+
+* [8つの Google Sheets 最良代替ツール（コストと機能まとめ）](https://www.nocobase.com/ja/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [PoC に最適なオープンソースのノーコード／ローコードツール 6 選](https://www.nocobase.com/ja/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企業向けノーコード・ローコードプラットフォームのRBAC権限体系詳細比較](https://www.nocobase.com/ja/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHubで注目のオープンソースAIローコードツール14選 ](https://www.nocobase.com/ja/blog/14-ai-low-code-platforms-github)
+* [GitHubで人気のオープンソースノーコードAIツール11選](https://www.nocobase.com/ja/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub で Star 数トップ18 のオープンソース AI Agent プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)
