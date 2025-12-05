@@ -41,19 +41,27 @@ In NocoBase, AI is not an isolated module. Instead, it is woven directly into ta
 
 **Use cases**
 
-**Data cleaning (Dex, Data Processing Specialist)**  AI employees extract structured information from unstructured content such as customer data, tickets, or contract text and can automatically populate forms.
+**Data cleaning (Dex, Data Processing Specialist)**
+
+AI employees extract structured information from unstructured content such as customer data, tickets, or contract text and can automatically populate forms.
 
 ![Dex.gif](https://static-docs.nocobase.com/Dex-c4uwn4.gif)
 
-**Data analysis (Viz, Insight Analyst)**  On pages like Leads, Opportunities, or Accounts, AI employees can analyze the current dataset and automatically create trend charts, comparisons, KPI cards, and concise insights.
+**Data analysis (Viz, Insight Analyst)**
+
+On pages like Leads, Opportunities, or Accounts, AI employees can analyze the current dataset and automatically create trend charts, comparisons, KPI cards, and concise insights.
 
 ![Viz.gif](https://static-docs.nocobase.com/Viz-demgin.gif)
 
-**Frontend configuration (Nathan, Frontend Engineer)**  When working with JSBlock, JSField, JSItem, JSColumn, JSAction, or Event Flow, AI employees can review the code context and generate or refine JavaScript based on natural language prompts.
+**Frontend configuration (Nathan, Frontend Engineer)**
+
+When working with JSBlock, JSField, JSItem, JSColumn, JSAction, or Event Flow, AI employees can review the code context and generate or refine JavaScript based on natural language prompts.
 
 ![Nathan.png](https://static-docs.nocobase.com/Nathan-n9ybjn.png)
 
-**Data modeling (Orin, Data Modeler)**  When creating internal systems such as CRMs, ticketing, inventory, or project management, AI employees can help generate or update data tables.
+**Data modeling (Orin, Data Modeler)**
+
+When creating internal systems such as CRMs, ticketing, inventory, or project management, AI employees can help generate or update data tables.
 
 ![Orin.png](https://static-docs.nocobase.com/Orin-ahkat1.png)
 
@@ -82,11 +90,15 @@ Budibase has also integrated AI as a native platform capability. With Budibase A
 
 **Use cases**
 
-**Smart data cleaning and content preparation**  AI Columns can automatically clean, normalize, and categorize data, useful for customer feedback, content moderation, ticket processing, and similar workflows.
+**Smart data cleaning and content preparation**
+
+AI Columns can automatically clean, normalize, and categorize data, useful for customer feedback, content moderation, ticket processing, and similar workflows.
 
 ![AI Column.png](https://static-docs.nocobase.com/AI%20Column-imcj5c.png)
 
-**Auto generating database schemas**  When building new modules such as customer management, contract workflows, or task systems, Budibase AI can generate suitable table structures and example records from a single natural language prompt.
+**Auto generating database schemas**
+
+When building new modules such as customer management, contract workflows, or task systems, Budibase AI can generate suitable table structures and example records from a single natural language prompt.
 
 ![数据库表结构.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84-rc0ka3.png)
 
@@ -219,7 +231,6 @@ We hope this guide offers useful technical insight and helps you make more infor
 As generative AI continues to advance, these open source projects will keep evolving as well, bringing new capabilities over time.
 
 We look forward to seeing how these tools help your team build more efficient and intelligent internal systems in the future.
-
 
 **Related reading:**
 
