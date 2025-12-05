@@ -7,8 +7,8 @@
   "description_cn": "盘点五款 20k 星以上的开源内部工具，解析其 AI 能力与核心适用场景。",
   "description_ja": "20kスター超えのオープンソース内部ツール5選──AI機能と活用シーンを徹底解説",
   "slug": "top-5-open-source-ai-internal-tools-on-github",
-  "publishedAt": "2025-12-05T08:02:48.508Z",
-  "status": "drafted",
+  "publishedAt": "2025-12-05T11:02:48.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -634,5 +634,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-05T10:44:39.905Z"
+  "updatedAt": "2025-12-05T14:05:31.825Z"
 }
