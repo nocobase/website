@@ -100,7 +100,7 @@ AI Column を使ってデータを自動的に整形・修正でき、顧客フ�
 
 ![数据库表结构.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84-rc0ka3.png)
 
-### NO.3 refine
+### NO.3 Refine
 
 ![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
 
@@ -179,17 +179,17 @@ ToolJet は、企業向けの内部ツールやダッシュボード、管理シ
 ![appsmith-of0467.png](https://static-docs.nocobase.com/appsmith-of0467.png)
 
 
-| GitHub アドレス          |  [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) |
-| ------------------------ | ----------------------------------------------------------------------------------- |
-| 公式サイト               | [https://www.appsmith.com/](https://www.appsmith.com/)                              |
-| オープンソースライセンス | Apache-2.0                                                                          |
-| GitHub Star 数           | 38.6k                                                                               |
-| GitHub Fork 数           | 4.4k                                                                                |
-| GitHub Issue 数          | 4.4k                                                                                |
-| GitHub Pull Request 数   | 38                                                                                  |
-| GitHub Contributor 数    | 335                                                                                 |
-| GitHub 最終更新          | 1日前                                                                               |
-| 関連ドキュメント         | [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)        |
+| GitHub アドレス          | [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) |
+| ------------------------ | ---------------------------------------------------------------------------------- |
+| 公式サイト               | [https://www.appsmith.com/](https://www.appsmith.com/)                             |
+| オープンソースライセンス | Apache-2.0                                                                         |
+| GitHub Star 数           | 38.6k                                                                              |
+| GitHub Fork 数           | 4.4k                                                                               |
+| GitHub Issue 数          | 4.4k                                                                               |
+| GitHub Pull Request 数   | 38                                                                                 |
+| GitHub Contributor 数    | 335                                                                                |
+| GitHub 最終更新          | 1日前                                                                              |
+| 関連ドキュメント         | [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)       |
 
 **ツール紹介**
 
@@ -229,7 +229,6 @@ Appsmith では、アプリ作成時に AI が文脈に応じた支援を行い�
 生成系 AI の進化に伴い、これらのオープンソースプロジェクトも引き続きアップデートが進み、新たな機能が生まれてくるでしょう。
 
 これらのツールが、あなたのチームのより効率的でスマートな内部システム構築に貢献できることを願っています。
-
 
 **関連読み物：**
 
