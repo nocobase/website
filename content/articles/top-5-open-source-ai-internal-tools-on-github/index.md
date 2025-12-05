@@ -18,20 +18,20 @@ Here is a quick preview of the 5 open source internal tools we will cover.
 
 ### NO.5 NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjY1YjMwOTE2ODY0ZGYxNzYxZjhkOWEzYzVjNGRiOWJfVGJIUlNJTDhZN3BJS0wzaVVscldGZVYxZ2ZXaXJoYXlfVG9rZW46THZDZWJHMUZ3bzZjWWt4Y1k0UWNuYVo0bllkXzE3NjQ5MjQxOTg6MTc2NDkyNzc5OF9WNA)
+![nocobase.png](https://static-docs.nocobase.com/nocobase-ovk3pi.png)
 
 
-| GitHub        | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)                 |
-| ------------- | -------------------------------------------------------------------------------------------- |
-| Website       | [https://www.nocobase.com/](https://www.nocobase.com/)                                       |
-| License       | AGPL-3.0                                                                                     |
-| GitHub Stars  | 20.5k                                                                                        |
-| Forks         | 2.3k                                                                                         |
-| Issues        | 129                                                                                          |
-| Pull Requests | 125                                                                                          |
-| Contributors  | 101                                                                                          |
-| Last updated  | updated today                                                                                |
-| Documentation | [https://v2.docs.nocobase.com/cn/ai-employees](https://v2.docs.nocobase.com/cn/ai-employees) |
+| GitHub        | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)           |
+| ------------- | -------------------------------------------------------------------------------------- |
+| Website       | [https://www.nocobase.com/](https://www.nocobase.com/)                                 |
+| License       | AGPL-3.0                                                                               |
+| GitHub Stars  | 20.5k                                                                                  |
+| Forks         | 2.3k                                                                                   |
+| Issues        | 129                                                                                    |
+| Pull Requests | 125                                                                                    |
+| Contributors  | 101                                                                                    |
+| Last updated  | updated today                                                                          |
+| Documentation | [https://v2.docs.nocobase.com/ai-employees](https://v2.docs.nocobase.com/ai-employees) |
 
 **Overview**
 
@@ -43,15 +43,23 @@ In NocoBase, AI is not an isolated module. Instead, it is woven directly into ta
 
 **Data cleaning (Dex, Data Processing Specialist)**  AI employees extract structured information from unstructured content such as customer data, tickets, or contract text and can automatically populate forms.
 
+![Dex.gif](https://static-docs.nocobase.com/Dex-c4uwn4.gif)
+
 **Data analysis (Viz, Insight Analyst)**  On pages like Leads, Opportunities, or Accounts, AI employees can analyze the current dataset and automatically create trend charts, comparisons, KPI cards, and concise insights.
+
+![Viz.gif](https://static-docs.nocobase.com/Viz-demgin.gif)
 
 **Frontend configuration (Nathan, Frontend Engineer)**  When working with JSBlock, JSField, JSItem, JSColumn, JSAction, or Event Flow, AI employees can review the code context and generate or refine JavaScript based on natural language prompts.
 
+![Nathan.png](https://static-docs.nocobase.com/Nathan-n9ybjn.png)
+
 **Data modeling (Orin, Data Modeler)**  When creating internal systems such as CRMs, ticketing, inventory, or project management, AI employees can help generate or update data tables.
+
+![Orin.png](https://static-docs.nocobase.com/Orin-ahkat1.png)
 
 ### NO.4 Budibase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2ViNGE4MjMyODY3OGNhZDRjMzc5NzE3OWIyZTVlZjFfSW5QN0tERU1OWEwzMzdSa1dSWmRDRW1LRnI1dU9QMHRfVG9rZW46SmVqQmJIdHJBb0lySG14cnRIY2NWOUFPbnpjXzE3NjQ5MjQxOTg6MTc2NDkyNzc5OF9WNA)
+![budibase.png](https://static-docs.nocobase.com/budibase-wahysy.png)
 
 
 | GitHub        | [https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)                                   |
@@ -76,11 +84,15 @@ Budibase has also integrated AI as a native platform capability. With Budibase A
 
 **Smart data cleaning and content preparation**  AI Columns can automatically clean, normalize, and categorize data, useful for customer feedback, content moderation, ticket processing, and similar workflows.
 
+![AI Column.png](https://static-docs.nocobase.com/AI%20Column-imcj5c.png)
+
 **Auto generating database schemas**  When building new modules such as customer management, contract workflows, or task systems, Budibase AI can generate suitable table structures and example records from a single natural language prompt.
+
+![数据库表结构.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84-rc0ka3.png)
 
 ### NO.3 Refine
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjhkOTc1NjhjYTQ0NzdiNzY3NzBlOGJmZDRjYTEwNGNfNTJNZlZLNjdjYnZwV2NGZHQwVDJvaFpEZ0dsWkl3NTZfVG9rZW46SElBbGJqTU1Nb21GZkJ4c3ZyZ2N2VmdsblFlXzE3NjQ5MjQxOTg6MTc2NDkyNzc5OF9WNA)
+![refine-dvhndk.png](https://static-docs.nocobase.com/refine-dvhndk.png)
 
 
 | GitHub        | [https://github.com/refinedev/refine](https://github.com/refinedev/refine) |
@@ -107,15 +119,19 @@ Refine AI brings AI into the development workflow. With natural language, docume
 
 Based on APIs or data models, Refine AI can create CRUD interfaces with list, form, and detail pages, making it ideal for quickly bootstrapping systems such as inventory, orders, or project management.
 
+![后台管理系统生成-3eh30p.png](https://static-docs.nocobase.com/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%94%9F%E6%88%90-3eh30p.png)
+
 **Refactoring and maintaining existing codebases**
 
 Because Refine AI generates code that follows enterprise grade patterns and best practices, it can also be used to refactor older systems into modular components or to add new business modules quickly on top of an existing project, improving both development speed and long term maintainability.
+
+![代码重构与维护.png](https://static-docs.nocobase.com/%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84%E4%B8%8E%E7%BB%B4%E6%8A%A4-muoonn.png)
 
 💡 Recommended reading: [NocoBase vs Refine](https://www.nocobase.com/cn/blog/nocobase-vs-refine)
 
 ### NO.2 ToolJet
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODI3ZjU2NGViNjFjYzcyNjMxYzZkNTMzYTlmODBjOGRfV2RUb3NkQ0tvRjdPY3JLYjlsbTdmaUYwbmVPSm1FZHJfVG9rZW46RXA5MWJsYUZpb2F2cDh4SGxYWWNveU5jbmplXzE3NjQ5MjQxOTg6MTc2NDkyNzc5OF9WNA)
+![ToolJet.png](https://static-docs.nocobase.com/ToolJet-sblclm.png)
 
 
 | GitHub        | [https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)                                     |
@@ -142,13 +158,15 @@ In ToolJet, AI is woven directly into the app building workflow. Developers can 
 
 ToolJet allows teams to create internal tools by describing requirements in natural language. It can build UI, data structures, and logic from scratch or modify existing applications. This makes it easy to produce common internal systems such as inventory management in a short amount of time.
 
+![自然语言快速生成.png](https://static-docs.nocobase.com/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90-nwf730.png)
+
 **AI documentation assistant**
 
 The built in AI documentation assistant answers questions about components, features, and integrations, helping users get familiar with ToolJet more quickly. For teams without frontend experience, the assistant reduces the learning curve and speeds up development.
 
 ### NO.1 Appsmith
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTFlZTAxNTU4MDgyYmNjNmUwNzNjOGQ1YTJmOTdhN2ZfODhPQUJycUxQQVkwUjg5Q2t0VjFxenpDU2U2R25LbVZfVG9rZW46WlhGV2J6dG9Mb09CVE14T25nNmN5c3Iybk5lXzE3NjQ5MjQxOTg6MTc2NDkyNzc5OF9WNA)
+![appsmith-of0467.png](https://static-docs.nocobase.com/appsmith-of0467.png)
 
 
 | GitHub        | [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) |
@@ -175,13 +193,17 @@ The latest release introduces native AI support. Appsmith can connect to leading
 
 Appsmith’s AI assistant provides contextual support during development, offering guidance on operations, platform features, query building, JavaScript logic, and UI customization. Through the sidebar assistant Appy, developers can get relevant help directly on the page they are editing, reducing documentation lookup time and speeding up iteration.
 
+![借助 AI 提升构建速度.png](https://static-docs.nocobase.com/%E5%80%9F%E5%8A%A9%20AI%20%E6%8F%90%E5%8D%87%E6%9E%84%E5%BB%BA%E9%80%9F%E5%BA%A6-76dac4.png)
+
 **Embedding AI into internal workflows**
 
 Teams can build AI augmented internal tools, such as a customer review analysis dashboard. Appsmith can fetch review data, display it in tables, run sentiment analysis via the Appsmith AI datasource, and use JS Objects to write results back into the UI. This enables teams to automatically classify feedback and prioritize issues more efficiently.
 
+![整合 AI 能力.png](https://static-docs.nocobase.com/%E6%95%B4%E5%90%88%20AI%20%E8%83%BD%E5%8A%9B-n2t9w0.png)
+
 💡 Recommended reading: [NocoBase vs. Appsmith: Which Open Source Low-Code Platform is Right for You? ](https://www.nocobase.com/en/blog/nocobase-vs-appsmith)
 
-Additionally, beyond the five major high star projects above, open source tools like Yao and ILLA Builder also maintain strong community activity. Yao provides a full stack application engine that enables rapid construction of models, workflows, and APIs for internal systems. ILLA Builder focuses on visual interface building, making it suitable for quickly creating admin panels and data tools. Both projects also offer basic AI extensions and can be useful complementary options when teams are building internal tools.
+Additionally, beyond the five major high star projects above, open source tools like [Yao](https://github.com/YaoApp/yao) and [ILLA Builder ](https://github.com/illacloud/illa-builder) also maintain strong community activity. [Yao](https://github.com/YaoApp/yao) provides a full stack application engine that enables rapid construction of models, workflows, and APIs for internal systems. [ILLA Builder ](https://github.com/illacloud/illa-builder) focuses on visual interface building, making it suitable for quickly creating admin panels and data tools. Both projects also offer basic AI extensions and can be useful complementary options when teams are building internal tools.
 
 ### Conclusion
 
@@ -197,3 +219,14 @@ We hope this guide offers useful technical insight and helps you make more infor
 As generative AI continues to advance, these open source projects will keep evolving as well, bringing new capabilities over time.
 
 We look forward to seeing how these tools help your team build more efficient and intelligent internal systems in the future.
+
+
+**Related reading:**
+
+* [The 8 Best Google Sheets Alternatives (Specs & Pricing) ](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [6 Open-Source No/Low-Code Tools for Building PoCs ](https://www.nocobase.com/en/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [A Developer’s Technical Decision Guide to No-Code and Low-Code (2026) ](https://www.nocobase.com/en/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 In-Depth Comparison of RBAC in Enterprise-Grade No-Code/Low-Code Platforms](https://www.nocobase.com/en/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [14 AI-Powered Low-Code Platforms on GitHub Worth Watching](https://www.nocobase.com/en/blog/14-ai-low-code-platforms-github)
+* [Top 11 Open Source No-Code AI Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools)
+* [Top 18 Open Source AI Agent Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects)
