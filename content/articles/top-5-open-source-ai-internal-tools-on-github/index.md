@@ -176,6 +176,8 @@ ToolJet allows teams to create internal tools by describing requirements in natu
 
 The built in AI documentation assistant answers questions about components, features, and integrations, helping users get familiar with ToolJet more quickly. For teams without frontend experience, the assistant reduces the learning curve and speeds up development.
 
+![AI 文档助手.png](https://static-docs.nocobase.com/AI%20%E6%96%87%E6%A1%A3%E5%8A%A9%E6%89%8B-75vt0c.png)
+
 ### NO.1 Appsmith
 
 ![appsmith-of0467.png](https://static-docs.nocobase.com/appsmith-of0467.png)
