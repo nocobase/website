@@ -1,14 +1,14 @@
 {
   "id": 800,
-  "title": "NocoBase v1.9.20",
-  "title_cn": "NocoBase v1.9.20",
-  "title_ja": null,
+  "title": "NocoBase v1.9.20: Automatically update sequence fields after data migration",
+  "title_cn": "NocoBase v1.9.20：数据迁移后自动更新'自动编码'字段",
+  "title_ja": "NocoBase v1.9.20：データ移行後に「自動コード」項目が自動的に更新されるようになりました",
   "description": "Release Note of v1.9.20",
   "description_cn": "v1.9.20 更新日志",
-  "description_ja": null,
+  "description_ja": "v1.9.20 リリースノート",
   "slug": "v1.9.20",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-12-05T05:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-07T15:15:59.163Z",
+        "updatedAt": "2025-12-07T15:15:59.163Z",
+        "articles_id": 800,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-07T15:15:11.418Z",
+    "updatedAt": "2025-12-07T15:15:11.424Z",
+    "id": 2098,
+    "title": "main",
+    "filename": "main-w95j1d.jpg",
+    "extname": ".jpg",
+    "size": 90001,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main-w95j1d.jpg",
+    "preview": "https://static-docs.nocobase.com/main-w95j1d.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-12-05T04:11:40.754Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-07T15:15:59.150Z"
 }
