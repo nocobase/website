@@ -145,3 +145,16 @@ NocoBase を取り入れたことで、同社はその優先順位をより明�
 「コアシステム + NocoBase 拡張」という構造にすることで、主力製品は無駄な膨張を避け、ロードマップも乱れない。追加要件はすべて分離された拡張層で処理できる。
 
 この仕組みによって、企業は長期的なプロダクト競争力を維持しつつ、現場の変化に素早く対応できる。そして、コストも運用負荷も最小限に抑えられる。
+
+
+**もっと多くのカスタマーストーリー：**
+
+* [NocoBase で構築するノーコード ERP の実例 ](https://www.nocobase.com/ja/blog/an-erp-built-with-nocobase)
+* [8人チームで実現するシステム効率——創聯雲の開発メソッド](https://www.nocobase.com/ja/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [数日で完成したAIマルチモーダル開発基盤 — NocoBaseで実現](https://www.nocobase.com/ja/blog/ai-multimodal-platform)
+* [ロシアにおける NocoBase：多様な分野で広がるデジタルソリューション](https://www.nocobase.com/ja/blog/nocobase-in-russia)
+* [NocoBase、ドイツの大学の授業へ](https://www.nocobase.com/ja/blog/university-course)
+* [EDの技術基盤としてのNocoBase：内部システムから商用プロダクトまで](https://www.nocobase.com/ja/blog/ed)
+* [Classact の事例：Kubernetes 上の NocoBase で数十万件データを高速処理](https://www.nocobase.com/ja/blog/classact)
+* [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
+* [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
