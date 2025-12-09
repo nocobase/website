@@ -10,7 +10,6 @@ Factories differ in process routes, equipment scale, organizational models, and 
 
 ![image.png](https://static-docs.nocobase.com/image-x0wy1r.png)
 
-
 And in reality, this challenge extends far beyond petrochemicals. Most B2B software vendors encounter the same issues when serving diverse customer environments.
 
 ## Challenges
@@ -142,3 +141,16 @@ Scattered customization work is moved onto NocoBase, where it can be delivered f
 With a “core system + NocoBase extensions” model, the main product stays stable and uncluttered, and its roadmap remains unaffected by customization projects.
 
 This approach allows the company to maintain long-term product strength while adapting to fast-changing frontline business needs, all at far lower cost and operational burden.
+
+
+**More Customer Stories:**
+
+* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/en/blog/an-erp-built-with-nocobase)
+* [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/en/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/en/blog/ai-multimodal-platform)
+* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/en/blog/nocobase-in-russia)
+* [NocoBase Enters German University Classrooms](https://www.nocobase.com/en/blog/university-course)
+* [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
+* [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
+* [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
+* [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
