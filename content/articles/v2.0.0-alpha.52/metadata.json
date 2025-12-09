@@ -1,14 +1,14 @@
 {
   "id": 807,
-  "title": "NocoBase v2.0.0-alpha.52",
-  "title_cn": "NocoBase v2.0.0-alpha.52",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.52: add support for add/select/disassociate settings in to-many subform",
+  "title_cn": "NocoBase v2.0.0-alpha.52：为对多子表单增加允许添加数据、选择已有数据及解除关联的设置项支持",
+  "title_ja": "NocoBase v2.0.0-alpha.52：多対サブフォームで「データ追加」「既存データの選択」「関連解除」が設定できるように機能を追加",
   "description": "Release Note of v2.0.0-alpha.52",
   "description_cn": "v2.0.0-alpha.52 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.52  リリースノート",
   "slug": "v2.0.0-alpha.52",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-12-09T14:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-09T14:38:02.564Z",
+        "updatedAt": "2025-12-09T14:38:02.564Z",
+        "articles_id": 807,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-09T14:31:13.740Z",
+    "updatedAt": "2025-12-09T14:31:13.747Z",
+    "id": 2101,
+    "title": "v2.0.0-alpha.52",
+    "filename": "v2.0.0-alpha.52-150j5q.jpg",
+    "extname": ".jpg",
+    "size": 81352,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/v2.0.0-alpha.52-150j5q.jpg",
+    "preview": "https://static-docs.nocobase.com/v2.0.0-alpha.52-150j5q.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-12-09T10:13:47.150Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-09T14:38:02.543Z"
 }
