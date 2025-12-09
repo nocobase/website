@@ -127,3 +127,16 @@ ToB 软件企业的竞争核心始终是**核心能力产品力和健康的项�
 3. **架构纯粹化：** 实现了**自研核心 + NocoBase 扩展的双模架构**。主产品代码库保持稳定、纯净，产品迭代完全不受定制项目的拖累。
 
 在这样的路径下，企业既**能保持产品的长期竞争力，又能以极低成本应对不断变化的一线业务。**
+
+
+**更多 NocoBase 的用户故事：**
+
+* [社区用户分享：用 NocoBase 搭建可落地的 ERP ](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
+* [8 人团队如何效率拉满？——创联云的开发方法论](https://www.nocobase.com/cn/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [华数传媒用 NocoBase 快速搭建 AI 多模态研发平台](https://www.nocobase.com/cn/blog/ai-multimodal-platform)
+* [俄罗斯合作伙伴 Mobx，用 NocoBase 交付多场景方案](https://www.nocobase.com/cn/blog/nocobase-in-russia)
+* [NocoBase 走进德国大学课堂](https://www.nocobase.com/cn/blog/university-course)
+* [NocoBase 如何成为 ED 的技术底座，支撑内部系统到商业化产品？](https://www.nocobase.com/cn/blog/ed)
+* [数十万条数据秒级响应——Classact 在 Kubernetes 上的 NocoBase 应用实践](https://www.nocobase.com/cn/blog/classact)
+* [年产量 18.5 亿，伯恩光学背后的数字敏捷工厂](https://www.nocobase.com/cn/blog/bielcrystal)
+* [卓正医疗如何用 NocoBase 搭建“家庭医生式”服务体系？](https://www.nocobase.com/cn/blog/distinct-healthcare)
