@@ -4,7 +4,7 @@
   "title_cn": "石化行业软件公司用 NocoBase 把交付效率提升 70%",
   "title_ja": "NocoBase 導入でソフトウェア企業の納品効率が 70% 向上",
   "description": "This case highlights how NocoBase enhances large enterprise software architectures. Even teams with strong internal development capabilities find that a lightweight, open-source no-code/low-code layer is often the most effective way to handle long-tail customization.",
-  "description_cn": "本案例展示了 NocoBase 在大型行业软件架构中的**补充能力**。即便是在拥有强大自研能力的软件企业中，轻量级开源无代码/低代码依然是解决长尾交付难题的最佳选择。",
+  "description_cn": "本案例展示了 NocoBase 在大型行业软件架构中的补充能力。即便是在拥有强大自研能力的软件企业中，轻量级开源无代码/低代码依然是解决长尾交付难题的最佳选择。",
   "description_ja": "本ケースでは、NocoBase が大規模な企業向けソフトウェア基盤をどのように補完し、強化するのかを紹介する。自社開発力の高い企業であっても、細かな追加要件に対応するには、軽く扱いやすいオープンソースのノーコード／ローコード層が最も実用的な選択肢となる場面が少なくない。",
   "slug": "software-vendor-boosts-delivery-efficiency-with-nocobase",
   "publishedAt": "2025-12-09T15:39:36.240Z",
@@ -920,5 +920,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-09T16:31:36.647Z"
+  "updatedAt": "2025-12-10T00:51:12.726Z"
 }
