@@ -2,7 +2,7 @@
 
 **NocoBaseは現在、`main`、`next`および`develop`の3つのブランチで更新されています。**
 
-![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
+![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860-djgsxo.png)
 
 * `main`：現時点で最も安定したバージョンで、インストールを推奨します；
 * `next`：ベータ版で、近日公開予定の新機能を含み、初期テスト済みです。既知・未知の不具合が存在する可能性があります。主にテストユーザー向けで、フィードバックを収集し機能の最適化を図るためのものです。早期に新機能を体験し意見を提供したいテストユーザーに最適です；
