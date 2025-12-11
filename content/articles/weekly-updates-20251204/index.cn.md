@@ -2,7 +2,7 @@
 
 **NocoBase 目前更新包括的版本更新包括三个分支：`main` ，`next`和 `develop`。**
 
-![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
+![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860-djgsxo.png)
 
 `main` ：截止目前最稳定的版本，推荐安装此版本。
 
