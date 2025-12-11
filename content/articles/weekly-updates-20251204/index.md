@@ -2,7 +2,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 **NocoBase is currently updated with three branches: `main` , `next` and `develop`.**
 
-![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
+![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860-djgsxo.png)
 
 * `main`：The most stable version to date, recommended for installation;
 * `next`：Beta version, contains upcoming new features and has been preliminarily tested. There might be some known or unknown issues. It's mainly for test users to collect feedback and optimize functions further. Ideal for test users who want to experience new features early and give feedback;
