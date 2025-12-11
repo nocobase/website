@@ -533,11 +533,12 @@ export async function getPluginsGrouped() {
   const comingPlugins = allPlugins.filter((p: any) => p.coming && !p.internal);
 
   // Remove special plugins from categories, keep only normal ones
+  // Note: newly plugins should still appear in their original categories
   const normalCategories = data
     .map((group: any) => ({
       ...group,
       plugins: group.plugins.filter((p: any) =>
-        !p.newly && !p.coming && !p.internal && !p.user_specific
+        !p.coming && !p.internal && !p.user_specific
       )
     }))
     .filter((group: any) => group.plugins.length > 0);
