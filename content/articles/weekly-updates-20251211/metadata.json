@@ -3,12 +3,12 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新内容は以下の通りです：",
+  "description": "This week's update includes: Support customizing global styles in the theme editor and support setting default sorting rule in detail bloc, and more.",
+  "description_cn": "本周更新包括：支持在主题编辑器中自定义全局样式、支持在详情区块中配置默认排序规则等。",
+  "description_ja": "今週の更新内容は以下の通りです：テーマエディタで全体のスタイルを自由にカスタマイズできるようになりました 、詳細ブロックでデフォルトの並び順を設定できるようになりました",
   "slug": "weekly-updates-20251211",
   "publishedAt": "2025-12-11T01:00:25.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -92,12 +92,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-11T01:25:02.354Z",
+    "updatedAt": "2025-12-11T01:25:02.366Z",
+    "id": 2104,
+    "title": "每周汇总",
+    "filename": "每周汇总-ikwhwq.jpg",
+    "extname": ".jpg",
+    "size": 101152,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-ikwhwq.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-ikwhwq.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-11T00:56:01.588Z"
+  "updatedAt": "2025-12-11T01:42:27.217Z"
 }
