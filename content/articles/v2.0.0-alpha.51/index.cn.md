@@ -29,7 +29,7 @@
   - 修复移除区块后筛选区块里已经配置的该区块的字段未删除的问题。 ([#8098](https://github.com/nocobase/nocobase/pull/8098)) by @gchust
   - 修复按钮隐藏后在非配置模式下出现多余间距的问题 ([#8092](https://github.com/nocobase/nocobase/pull/8092)) by @katherinehhh
   - 修复无法修改筛选表单中的重制按钮文字的问题。 ([#8089](https://github.com/nocobase/nocobase/pull/8089)) by @gchust
-  - 修复字段筛选操作符为 $in 和 $notIn 时字段输入框不支持多个输入值的问题。 ([#8081](https://github.com/nocobase/nocobase/pull/8081)) by @gchust
+  - 修复字段筛选操作符为$in / \$notIn时字段输入框不支持多个输入值的问题。 ([#8081](https://github.com/nocobase/nocobase/pull/8081)) by @gchust
   - 修复添加数据区块后不会自动出现在筛选表单的字段菜单中的问题。 ([#8085](https://github.com/nocobase/nocobase/pull/8085)) by @gchust
   - 筛选表单中的关系字段的配置菜单不应该显示快捷创建。 ([#8083](https://github.com/nocobase/nocobase/pull/8083)) by @gchust
   - 修复列表区块中关系子表格数据错误的问题 ([#8082](https://github.com/nocobase/nocobase/pull/8082)) by @katherinehhh
