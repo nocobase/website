@@ -7,8 +7,8 @@
   "description_cn": "盘点六款开源 AI 仪表盘工具，聚焦核心功能与使用场景，轻松创建数据驱动的仪表盘。",
   "description_ja": "6 つのオープンソース AI ダッシュボードツールを紹介し、主要機能と使いどころを整理。データドリブンなダッシュボードを手軽につくれるようになる。",
   "slug": "6-best-open-source-ai-tools-to-build-dashboards",
-  "publishedAt": "2025-12-12T04:05:40.564Z",
-  "status": "drafted",
+  "publishedAt": "2025-12-12T08:05:40.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -816,5 +816,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-12T10:26:49.114Z"
+  "updatedAt": "2025-12-12T11:13:55.913Z"
 }
