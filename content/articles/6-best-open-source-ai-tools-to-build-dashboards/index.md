@@ -26,7 +26,7 @@ Here is a quick overview of the six tools we will cover.
 
 ### NocoBase
 
-![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)Official site: [https://www.nocobase.com](https://www.nocobase.com)
+![nocobase1.PNG](https://static-docs.nocobase.com/2-ukigr5.PNG)Official site: [https://www.nocobase.com](https://www.nocobase.com)
 
 Documentation: [https://v2.docs.nocobase.com/](https://v2.docs.nocobase.com/)
 
