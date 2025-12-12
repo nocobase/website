@@ -1,10 +1,10 @@
 ## Introduction
 
-Last year we published a review of core dashboard tools, highlighting several common challenges teams encounter when building data visualizations. Most of the tools we discussed were mature commercial products with good user experience, yet they offered limited flexibility in licensing, deployment, and extensibility. In conversations with readers afterward, we learned that many teams were actually seeking lower cost, more customizable, and self hosted open source alternatives.
+Last year we published [a review of core dashboard tools](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools), highlighting several common challenges teams encounter when building data visualizations. Most of the tools we discussed were mature commercial products with good user experience, yet they offered limited flexibility in licensing, deployment, and extensibility. In conversations with readers afterward, we learned that many teams were actually seeking lower cost, more customizable, and [self hosted](https://www.nocobase.com/en/blog/7-self-hosted-ai-tools-build-business-app) open source alternatives.
 
 ![dashboards.PNG](https://static-docs.nocobase.com/1-zy9fzj.PNG)
 
-Recommended reading: A technical decision guide to no code and low code for developers (2026)
+💡Recommended reading: [A Developer’s Technical Decision Guide to No-Code and Low-Code (2026)](https://www.nocobase.com/en/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
 
 Over the past year, the open source ecosystem in this space has evolved quickly. Increasingly, dashboard and analytics tools are incorporating AI into their core features, including natural language querying, automated chart creation, metric explanations, and semantic report generation. Many teams also hope these tools can handle more of the operational workload so they can focus their time on decisions that require real business judgment.
 
@@ -26,15 +26,17 @@ Here is a quick overview of the six tools we will cover.
 
 ### NocoBase
 
-![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)Official site: [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
+![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)Official site: [https://www.nocobase.com](https://www.nocobase.com)
 
-Documentation: [https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
+Documentation: [https://v2.docs.nocobase.com/](https://v2.docs.nocobase.com/)
 
 GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHub Stars: 20.7k
 
-**Positioning**  NocoBase is an open source and self hostable AI no code development platform built on a unified data model and an extensible plugin architecture. The platform supports business records, data management, and visualization building under one data structure. It is suitable for building internal applications and creating dashboards and BI boards based on business system data.
+**Positioning**
+
+NocoBase is an open source and self hostable AI no code development platform built on a unified data model and an extensible plugin architecture. The platform supports business records, data management, and visualization building under one data structure. It is suitable for building internal applications and creating dashboards and BI boards based on business system data.
 
 **Core uses**
 
@@ -47,7 +49,7 @@ GitHub Stars: 20.7k
 
 * **Plug-based extensibility and system integration**:  Built on a microkernel architecture, the platform allows on demand extension of page components, action capabilities, and data sources. It can connect to the primary database, external databases, and third party APIs, making it suitable for teams that need to integrate multiple data sources or create custom logic.
 
-**AI feature highlights**
+**AI highlights**
 
 * **Built in [AI Employees]**:  NocoBase provides native AI employee capabilities, where AI employees take on specific visualization generation tasks inside the system. They can analyze designated datasets and automatically build charts, KPI cards, and basic analytical layouts from natural language instructions, reducing manual configuration and improving visualization efficiency. Enterprises can define additional AI employees according to workflow needs, allowing them to extend their role in visualization and analytical tasks.
 
@@ -73,7 +75,7 @@ GitHub Stars: 13.2k
 
 **Overview**  Wren AI is an open source generative BI tool that produces queries, charts, and analytical visuals directly from natural language.
 
-**Core use cases**
+**Core uses**
 
 * **Fast visualization building**  It can automatically create charts and starter dashboards from connected data sources, making it suitable for operations dashboards and routine metric views.
 * **Embedding analytics into other systems**  Its API based architecture allows teams to integrate generative analytics into existing business applications.
@@ -100,12 +102,12 @@ GitHub Stars: 28.1k
 
 **Overview**  Redash is an open source SQL based visualization and analytics tool for building charts, query panels, and lightweight BI dashboards. It is widely used by data teams for self service analytics.
 
-**Core use cases**
+**Core uses**
 
 * **SQL driven dashboards**  Users write SQL to query data and build charts, tables, and metric cards from the results, then combine them into dashboards. Ideal for teams comfortable with SQL.
 * **Integrating multiple data sources**  It supports PostgreSQL, MySQL, BigQuery, Athena, and many other databases or APIs, making it easy to unify enterprise data into a simple analysis layer.
 
-**AI highlights**
+**AI-related features**
 
 Although Redash does not include native AI features, its SQL and API centric design integrates well with external AI tools.
 
@@ -124,9 +126,11 @@ GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg
 
 GitHub Stars: 38.6k
 
-**Overview**  Appsmith is an open source platform for visually building applications. It can be used to create business dashboards and lightweight visual panels, supported by a component library, data connections, and flexible UI configuration. It is well suited for internal systems focused on data display, business monitoring, and operational workflows.
+**Overview**
 
-**Core use cases**
+Appsmith is an open source platform for visually building applications. It can be used to create business dashboards and lightweight visual panels, supported by a component library, data connections, and flexible UI configuration. It is well suited for internal systems focused on data display, business monitoring, and operational workflows.
+
+**Core uses**
 
 * **Building dashboards and visual panels**  Teams can present data from databases or APIs using charts, tables, and list components. This supports operations monitoring, business reporting, and simple metric displays, with the flexibility to customize interactions and layout.
 * **Building internal tools and admin applications**  With its UI components, permission controls, and action logic, Appsmith supports data display, entry, and workflow handling within a single application. It is ideal for operation-heavy or data-centric internal processes.
@@ -150,15 +154,17 @@ GitHub: [https://github.com/metabase/metabase](https://github.com/metabase/metab
 
 GitHub Stars: 44.9k
 
-**Overview**  Metabase is a widely adopted open source BI platform designed for enterprise analytics dashboards and self service data exploration.
+**Overview**
 
-**Core use cases**
+Metabase is a widely adopted open source BI platform designed for enterprise analytics dashboards and self service data exploration.
+
+**Core uses**
 
 * **Visual exploration and reporting**  Users explore data by forming questions, visualizing results, and assembling dashboards, often without writing SQL. It supports charts, tables, filters, and shared dashboards for KPI tracking, trend analysis, user behavior studies, and sales insights.
 * **Teamwide sharing and collaboration**  Reports and dashboards can be shared, edited, or subscribed to across teams, enabling coordinated analysis and centralized tracking of key metrics.
 * **Broad data connectivity**  Metabase connects to many popular databases, making it easy to bring dispersed enterprise data into a unified analysis layer.
 
-**AI-related features**
+**AI highlights**
 
 * **Metabot AI assistant**  The built-in Metabot helps interpret metrics, generate insights, and respond to data questions.
 * **Natural language queries**  Users can ask questions in plain language, and Metabase will attempt to return relevant data or visualizations.
@@ -176,14 +182,16 @@ GitHub: [https://github.com/grafana/grafana](https://github.com/grafana/grafana)
 
 GitHub Stars: 71.2k
 
-**Overview**  Grafana is an open source platform for visualization and monitoring. It is built around time series and observability data, and is also widely used for business metrics and dashboard creation.
+**Overview**
 
-**Core use cases**
+Grafana is an open source platform for visualization and monitoring. It is built around time series and observability data, and is also widely used for business metrics and dashboard creation.
+
+**Core uses**
 
 * **Real time monitoring and metric visualization**  Grafana connects to time series databases, log services, and monitoring tools to display data as charts, trends, and metric cards. It supports system monitoring, service performance tracking, and real time business analysis.
 * **Unified views across multiple data sources**  With support for sources such as Prometheus, Elasticsearch, MySQL, PostgreSQL and BigQuery, Grafana lets teams combine heterogeneous data into a single dashboard for consolidated monitoring and operations views.
 
-**AI related capabilities**
+**AI-related features**
 
 Grafana does not include native AI features, but its plugin system and API based data sources make AI integration straightforward:
 
@@ -199,6 +207,6 @@ From the six tools discussed:
 * For lightweight dashboards with minimal upkeep, Redash, Grafana, or Wren AI are strong candidates.
 * For platforms that combine business applications, data management, and analytics, NocoBase, Appsmith, or Metabase are better aligned.
 
-Quick start guide: [Quickly Build a Core App Dashboard with NocoBase](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools#quickly-build-a-core-app-dashboard-with-nocobase)
+👉Quick start guide: [Quickly Build a Core App Dashboard with NocoBase](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools#quickly-build-a-core-app-dashboard-with-nocobase)
 
 These ecosystems continue to evolve, allowing teams to refine their stack over time. If you are using or evaluating any of these tools, we welcome your insights and experience.
