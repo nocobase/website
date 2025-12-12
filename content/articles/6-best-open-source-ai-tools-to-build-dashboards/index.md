@@ -73,7 +73,9 @@ GitHub: [https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)
 
 GitHub Stars: 13.2k
 
-**Overview**  Wren AI is an open source generative BI tool that produces queries, charts, and analytical visuals directly from natural language.
+**Overview**
+
+Wren AI is an open source generative BI tool that produces queries, charts, and analytical visuals directly from natural language.
 
 **Core uses**
 
