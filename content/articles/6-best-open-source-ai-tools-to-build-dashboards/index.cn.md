@@ -26,7 +26,7 @@
 
 ### **NocoBase**
 
-![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
+![nocobase1.PNG](https://static-docs.nocobase.com/2-1gg8bi.PNG)
 
 官网：[https://www.nocobase.com/cn/]([https://www.nocobase.com/cn/](https://www.nocobase.com/cn/))
 
