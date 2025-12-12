@@ -26,7 +26,7 @@
 
 ### **NocoBase**
 
-![nocobase1.PNG](https://static-docs.nocobase.com/2-fs2nua.PNG)![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
+![nocobase1.PNG](https://static-docs.nocobase.com/2-fs2nua.PNG)
 
 Official site: [https://www.nocobase.com/](https://www.nocobase.com/)
 
