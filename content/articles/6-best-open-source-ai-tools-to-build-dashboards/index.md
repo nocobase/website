@@ -34,7 +34,7 @@ GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocob
 
 GitHub Stars: 20.7k
 
-**Positioning**
+**Overview**
 
 NocoBase is an open source and self hostable AI no code development platform built on a unified data model and an extensible plugin architecture. The platform supports business records, data management, and visualization building under one data structure. It is suitable for building internal applications and creating dashboards and BI boards based on business system data.
 
@@ -100,7 +100,9 @@ GitHub: [https://github.com/getredash/redash](https://github.com/getredash/redas
 
 GitHub Stars: 28.1k
 
-**Overview**  Redash is an open source SQL based visualization and analytics tool for building charts, query panels, and lightweight BI dashboards. It is widely used by data teams for self service analytics.
+**Overview**
+
+Redash is an open source SQL based visualization and analytics tool for building charts, query panels, and lightweight BI dashboards. It is widely used by data teams for self service analytics.
 
 **Core uses**
 
