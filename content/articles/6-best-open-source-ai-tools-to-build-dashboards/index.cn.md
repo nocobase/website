@@ -100,7 +100,9 @@ GitHub：[https://github.com/getredash/redash](https://github.com/getredash/reda
 
 GitHub Stars：28.1k
 
-**定位** Redash 是一个开源的 SQL 查询与可视化分析平台，用于构建图表、查询面板和轻量级 BI 仪表盘，是数据团队中最常使用的自助分析工具之一。
+**定位**
+
+Redash 是一个开源的 SQL 查询与可视化分析平台，用于构建图表、查询面板和轻量级 BI 仪表盘，是数据团队中最常使用的自助分析工具之一。
 
 **核心用途**
 
