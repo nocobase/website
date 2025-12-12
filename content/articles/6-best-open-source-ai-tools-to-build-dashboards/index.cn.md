@@ -2,7 +2,7 @@
 
 去年我们写过一篇[核心应用仪表盘工具盘点，](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)聊到不少团队在做数据可视化时遇到的一些共性问题。当时我们提到的，大多是已经比较成熟的商业化产品，体验不错，但在授权方式、部署模式和扩展能力上，都有相对固定的边界。后来和一些读者交流时也发现，很多团队其实更希望找到一种成本更低、可定制度更高、还能支持[自托管](https://www.nocobase.com/cn/blog/7-self-hosted-ai-tools-build-business-app)的开源替代方案。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjU3MWFhMzAyY2E4YjNjZjA5NmY3NmFhMDE5MzU1YjZfc0l2MXk3SGwwZEZyY0RESlBjeGgxQmo2a2RSRVhoMDJfVG9rZW46RDBGWWJPbGtpb3QweDF4MjJUSWMwclhDbm1lXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![dashboards.PNG](https://static-docs.nocobase.com/1-zy9fzj.PNG)
 
 💡推荐阅读：[给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
 
@@ -26,7 +26,7 @@
 
 ### **NocoBase**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODRkMDk2NjUyZjE2ZDk0ZWIyYjIzOTA3MTBmZjMxNWVfaTBsQkhDQVB0TGNWZWxnc0NIS3VXNFdQT3Y3enJkQkJfVG9rZW46UFVURWJkengxb2tPZHB4aUtEOGN6TWxQbjZlXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
 
 官网：https://www.nocobase.com/cn/
 
@@ -46,25 +46,22 @@ GitHub Stars：20.7k
   * 借助 AI 员工根据自然语言指令自动生成可视化布局与图表配置。
     整体能力既支持快速搭建常规仪表盘，也覆盖更复杂的分析与自定义场景。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDE0YTNkMDE5M2FmY2M1M2E2YmM3Mzk5NzdiOWZhNTdfVXNZNFViZjZtOGZjVUN0ckM5SmdjZGdQd2xTRFE2QzNfVG9rZW46VkFKUmJiSDFpb3VISEN4VnhkaGNjd0tLbkhmXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![NocoBase2.PNG](https://static-docs.nocobase.com/3-deeat7.PNG)
 
 * **插件化扩展与系统集成能力**：采用微内核架构，可按需扩展页面组件、动作能力和数据源。可以连接主数据库、外部数据库与第三方接口，适合需要整合多类数据来源或构建自定义逻辑的团队。
 
 **AI 功能亮点**
 
-* **系统内置 ****[AI 员工](https://v2.docs.nocobase.com/cn/ai-employees)**：NocoBase 提供原生的 AI 员工能力，AI 员工可以在系统中承担具体的可视化生成任务。它能能分析指定的数据集，根据自然语言指令自动生成图表、指标卡和基础分析布局，减少手动配置工作量，提高可视化搭建效率。企业可以根据自身流程需求定义更多 AI 员工，使其在可视化和分析任务中发挥扩展作用。
+* **系统内置 [AI 员工](https://v2.docs.nocobase.com/cn/ai-employees)**：NocoBase 提供原生的 AI 员工能力，AI 员工可以在系统中承担具体的可视化生成任务。它能能分析指定的数据集，根据自然语言指令自动生成图表、指标卡和基础分析布局，减少手动配置工作量，提高可视化搭建效率。企业可以根据自身流程需求定义更多 AI 员工，使其在可视化和分析任务中发挥扩展作用。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjQ0YzM3MGE2ZTBjODAyNzY2YTM0MWJhNTAyMTZjZTRfa2JQUlgzTmN5RU1iMzIxWVJTc1ljZDRlOWxLRHI3ZGRfVG9rZW46WHNidGJhNEx1b0pkZDd4eUlLR2NFREJ2blJmXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
-* **结合知识库与向量数据库的扩展能力**：AI 员工能够引用知识库内容，并通过向量数据库执行检索与匹配，用于补充说明、文档理解或结构化输出，适合需要结合业务文档或规则进行分析的场景。
-
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzg5YTcyMGQzOGFmMWQxMWVkMGY1Mjc5ZmE2MzI4NmZfSm9RZWNPQ3V3Q1V5Nm1HeEQwMktwNDVkVDBRZDNYb2tfVG9rZW46T3pITWJNcDNnb3ZSMGh4RUJ2a2NLZ1JBbnhnXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
-
+* **结合知识库与向量数据库的扩展能力**：AI 员工能够引用知识库内容，并通过向量数据库执行检索与匹配，用于补充说明、文档理解或结构化输出，适合需要结合业务文档或规则进行分析的场景。![NocoBase4.png](https://static-docs.nocobase.com/5-me76ou.png)
 * **多模型选择与灵活部署方式**：平台支持配置多种模型服务，包括本地模型和云端模型，当前可使用的模型包含 OpenAI、Gemini、Anthropic 等。团队可以根据安全性、成本与使用环境选择适合的模型方案。
 
 ### **Wren AI**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTc5OWIzNTJjZjFjODlkNzU3ZmFlMGJmZWIyZmQyMGNfdU1lQUQyMFV0Z280MVlYdGdKRGlVaElPNGNPNWR3S2VfVG9rZW46V3ZmSGJtVUh6b2tma1V4SkNaT2NDVG45bjZlXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![WrenAI.png](https://static-docs.nocobase.com/6-8v20j4.png)
 
 官网：https://www.getwren.ai/
 
@@ -74,7 +71,9 @@ GitHub：https://github.com/Canner/WrenAI
 
 GitHub Stars：13.2k
 
-**定位** Wren AI 是一个开源的生成式 BI 工具，可以通过自然语言生成查询、图表和可视化分析结果。
+**定位**
+
+Wren AI 是一个开源的生成式 BI 工具，可以通过自然语言生成查询、图表和可视化分析结果。
 
 **核心用途**
 
@@ -89,7 +88,7 @@ GitHub Stars：13.2k
 
 ### **Redash**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzk0MzU0MDMxMmE3ODdlZGQ5NTYzYzgzNTk4MGQxNDVfMEFQOEM2NTJacFRqWERDRU9FcFUxQWNnNDJVSUJVQmhfVG9rZW46VU0xQmJuTVhzb1RSa3Z4Uk11b2NQYUw4bmloXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![redash.png](https://static-docs.nocobase.com/7-f9csk8.png)
 
 官网：[https://redash.io](https://redash.io)
 
@@ -113,7 +112,7 @@ GitHub Stars：28.1k
 
 ### **Appsmith**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTllZDUxOGQ1NmM3YWZlZmZkOGUwYjhhOTcxZjI4ZDZfN3JxZlpOM0ZoSERncEZTUm5pTThNS1Q5c3RMeHJ4N2RfVG9rZW46RmpVNGJMVGZ0b0hIUkZ4aXg1SWNCZ1U2bnNmXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![appsmith.png](https://static-docs.nocobase.com/8-oritl2.png)
 
 官网：https://www.appsmith.com/
 
@@ -139,7 +138,7 @@ GitHub Stars：38.6k
 
 ### **Metabase**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDE5NDQxYWY3NTNiNTVmMDM0YWYxMDdiMzVhZTBiMGRfNUZQMlVialZVZVFHREpLTU1HZGZJcnFJSXk2QzJjTlNfVG9rZW46RGlNa2JGNDE1b1VtS3R4UnRwVGNLeWwybnplXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![metabase.png](https://static-docs.nocobase.com/9-bigavl.png)
 
 官网：https://www.metabase.com/
 
@@ -165,7 +164,7 @@ GitHub Stars：44.9k
 
 ### **Grafana**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGI3OWZlZTQwNGZiODMzM2JlZjExZjI1ZTAwMzRiZWZfOWkyU001QlJnVE5uQTNiMlZ6NTE3NExsR2Y3c1g3TTNfVG9rZW46VnZEN2J3SkdSb3Z5Ynh4bnY0Y2NMMmxnbnFoXzE3NjU1MTIzMDI6MTc2NTUxNTkwMl9WNA)
+![grafana.png](https://static-docs.nocobase.com/10-9sv6rf.png)
 
 官网：[https://grafana.com](https://grafana.com)
 
