@@ -236,6 +236,7 @@ We look forward to seeing how these tools help your team build more efficient an
 
 **Related reading:**
 
+* [Top 5 Open-Source AI Internal Tools on GitHub ](https://www.nocobase.com/en/blog/top-5-open-source-ai-internal-tools-on-github)
 * [The 8 Best Google Sheets Alternatives (Specs & Pricing) ](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
 * [6 Open-Source No/Low-Code Tools for Building PoCs ](https://www.nocobase.com/en/blog/6-open-source-no-low-code-tools-for-building-pocs)
 * [A Developer’s Technical Decision Guide to No-Code and Low-Code (2026) ](https://www.nocobase.com/en/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
