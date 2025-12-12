@@ -2,6 +2,8 @@
 
 昨年、私たちは[コアアプリ向けダッシュボードツールのまとめ](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)を公開し、データ可視化に取り組むチームが直面しがちな課題について紹介しました。当時取り上げたのは、使い勝手の良い成熟した商用ツールが中心でしたが、ライセンス形態やデプロイ方法、拡張性にはどうしても制約があります。その後読者の方々と話す中で、より低コストで、自由度が高く、しかも[セルフホスト](https://www.nocobase.com/cn/blog/7-self-hosted-ai-tools-build-business-app)にも対応できるオープンソースの選択肢を求める声が多いことが分かりました。
 
+![dashboards.PNG](https://static-docs.nocobase.com/1-zy9fzj.PNG)
+
 この一年で、オープンソースコミュニティの可視化系ツールは大きく進化しました。自然言語での検索、チャートの自動生成、指標の説明、意味ベースのレポート作成など、AI を標準機能として取り込むプロジェクトが増えています。ダッシュボード構築の作業部分をツール側に任せ、チームが本質的な業務判断に集中できるようにしたいというニーズも高まっています。
 
 そこで今回は、コミュニティで活発に開発され、すでに AI を取り入れているコアアプリ向けのオープンソースダッシュボードツールを改めてまとめました。各ツールの特徴、代表的な用途、AI 機能の成熟度という三つの観点から紹介していきます。あなたのユースケースに合うツールを素早く見極めるための一助になれば幸いです。
@@ -22,6 +24,18 @@
 
 ### **NocoBase**
 
+![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
+
+
+
+Official site: [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
+
+Documentation: [https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
+
+GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+
+GitHub Stars: 20.7k
+
 **位置付け**  NocoBase は、セルフホストにも対応したオープンソースの AI ノーコード開発基盤です。統一データモデルと柔軟なプラグイン構造を軸に、業務データ管理、可視化、内部アプリ構築をひとつの環境で行える点が特徴です。業務システムのデータをそのまま利用してダッシュボードや BI ボードを構築できるため、社内向けツールづくりに適しています。
 
 **主な用途**
@@ -30,17 +44,33 @@
   * 標準のチャートブロックで折れ線・棒グラフ・指標カードなどを配置
   * JS ブロックでカスタム UI を柔軟に実装
   * AI ワーカーが自然言語からレイアウトやチャート構成を自動生成  通常のダッシュボードから複雑な分析まで、幅広い用途に対応できます。
+
+![NocoBase2.PNG](https://static-docs.nocobase.com/3-deeat7.PNG)
+
 * **プラグインによる高い拡張性とシステム連携**  マイクロカーネル方式のため、画面パーツ・動作・データソースを必要に応じて追加できます。外部 DB や API とも簡単に連携し、複数データを扱う業務でも柔軟に対応できます。
 
 **AI 機能の特徴**
 
 * **ネイティブ AI ワーカーによる自動可視化**  AI ワーカーはデータセットを読み取り、自然言語指示に応じてグラフやレイアウトを自動生成します。設定作業を大きく削減でき、可視化の試行を高速に行えます。
-* **ナレッジベースやベクターデータベースと連携した分析**  業務ドキュメントやルールを参照しながら、検索・要約・構造化出力が可能で、より高度な分析ワークに対応できます。
+
+![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
+
+* **ナレッジベースやベクターデータベースと連携した分析**  業務ドキュメントやルールを参照しながら、検索・要約・構造化出力が可能で、より高度な分析ワークに対応できます。![NocoBase4.png](https://static-docs.nocobase.com/5-me76ou.png)
 * **複数モデルのサポートと自由度の高いデプロイ**  OpenAI・Gemini・Anthropic をはじめとする複数モデルが利用可能で、オンプレ／クラウドの運用形態に合わせて選択できます。
 
 ### **Wren AI**
 
-公式サイト・ドキュメント・GitHub 情報は直訳版のまま掲載。
+![WrenAI.png](https://static-docs.nocobase.com/6-8v20j4.png)
+
+
+
+Official site: [https://www.getwren.ai/](https://www.getwren.ai/)
+
+Documentation: [https://docs.getwren.ai/cp/overview](https://docs.getwren.ai/cp/overview)
+
+GitHub: [https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)
+
+GitHub Stars: 13.2k
 
 **位置付け**  Wren AI は、自然言語からクエリやチャートを生成し、分析結果まで出力できるオープンソースの生成型 BI プラットフォームです。
 
@@ -55,9 +85,19 @@
 * **セマンティックレイヤー対応**  ビジネス構造を理解した上で問い合わせを解釈し、より正確なクエリ生成と可視化が可能になります。
 * **複数モデルとセルフホストを柔軟に選択可能**  大手モデルサービスと接続でき、ローカルデプロイ版もあるため、セキュリティや運用コストが気になる環境にも導入できます。
 
----
-
 ### **Redash**
+
+![redash.png](https://static-docs.nocobase.com/7-f9csk8.png)
+
+
+
+Official site: [https://redash.io](https://redash.io)
+
+Documentation: [https://redash.io/help](https://redash.io/help)
+
+GitHub: [https://github.com/getredash/redash](https://github.com/getredash/redash)
+
+GitHub Stars: 28.1k
 
 **位置付け**  Redash は SQL を軸に可視化と分析を行う OSS プラットフォームで、データチームでの自助分析ツールとして長く利用されています。
 
@@ -72,6 +112,18 @@
 * **AI 生成データをそのまま可視化**  AI の出力（JSON や表形式）を API データソースとして接続し、チャートとして表示できます。
 
 ### **Appsmith**
+
+![appsmith.png](https://static-docs.nocobase.com/8-oritl2.png)
+
+
+
+Official site: [https://www.appsmith.com/](https://www.appsmith.com/)
+
+Documentation: [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)
+
+GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
+
+GitHub Stars: 38.6k
 
 **位置付け**  Appsmith は、ビジュアル操作で業務アプリを構築できるオープンソースのプラットフォームです。コンポーネント群とデータ接続機能を使い、業務ボードやダッシュボードを柔軟に作成できます。
 
@@ -89,6 +141,16 @@
 
 ### **Metabase**
 
+![metabase.png](https://static-docs.nocobase.com/9-bigavl.png)
+
+Official site: [https://www.metabase.com/](https://www.metabase.com/)
+
+Documentation: [https://www.metabase.com/docs/latest/](https://www.metabase.com/docs/latest/)
+
+GitHub: [https://github.com/metabase/metabase](https://github.com/metabase/metabase)
+
+GitHub Stars: 44.9k
+
 **位置付け**  Metabase は、直感的にデータ探索を行えるオープンソースの BI プラットフォームで、企業全体での分析やレポート作成に広く使われています。
 
 **主な用途**
@@ -105,6 +167,16 @@
 
 ### **Grafana**
 
+![grafana.png](https://static-docs.nocobase.com/10-9sv6rf.png)
+
+Official site: [https://grafana.com](https://grafana.com)
+
+Documentation: [https://grafana.com/docs](https://grafana.com/docs)
+
+GitHub: [https://github.com/grafana/grafana](https://github.com/grafana/grafana)
+
+GitHub Stars: 71.2k
+
 **位置付け**  Grafana は、時系列データを中心とした可視化・監視のためのオープンソースプラットフォームで、業務指標やダッシュボードの構築にも幅広く利用されています。
 
 **主な用途**
@@ -119,15 +191,17 @@ Grafana 自体は AI を内蔵していませんが、プラグインや API を
 * **AI による異常検知・トレンド分析の可視化**  外部の AIOps などで検出した異常や変化を Grafana 上で表示できます。
 * **AI 生成データをそのままデータソース化**  AI が出力した構造化データや指標を API で取り込み、グラフとして可視化できます。
 
----
-
 ## まとめ
 
-企業の分析基盤では商用 BI ツールが安定した選択肢ですが、コストや構成の自由度を考えると、オープンソースはより柔軟に導入できます。
+企業の分析基盤では商用 BI ツールが依然として安定した選択肢ですが、ライセンス費用やデプロイの制約、拡張性の限界などから、導入段階で悩むケースも少なくありません。コストを抑えたい場合や、より自由度の高いカスタマイズを求める場合には、オープンソースの方が柔軟で、段階的に育てていく分析基盤づくりに適しています。
 
-* **軽量なダッシュボードを手早く作りたい場合**：  Redash / Grafana / Wren AI が向いています。
-* **業務アプリ・データ管理・可視化まで一体で扱いたい場合**：  NocoBase / Appsmith / Metabase が強力です。
+本記事で紹介した 6 つのツールは、用途に応じて次のように選ぶことができます：
 
-👉はじめての方へ：[NocoBaseを使ってコアアプリダッシュボードを迅速に構築する](https://www.nocobase.com/ja/blog/core-app-dashboard-building-tools#nocobase%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B3%E3%82%A2%E3%82%A2%E3%83%97%E3%83%AA%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E8%BF%85%E9%80%9F%E3%81%AB%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)
+* 軽量なダッシュボードを手早く作り、運用負荷を下げたい場合：
+  Redash、Grafana、Wren AI といったクエリ・可視化中心のツールが向いています。
+* 業務アプリ、データ管理、可視化を一つの基盤でまとめて扱いたい場合：
+  NocoBase、Appsmith、Metabase のようなより包括的なプラットフォームが適しています。
 
-ツールのコミュニティと機能は今も進化中で、段階に応じて選択肢を調整できます。利用経験や検討中のツールがあれば、ぜひ共有してください。
+👉はじめての方へ：[NocoBaseを使ってコアアプリダッシュボードを迅速に構築する
+
+これらのツールはコミュニティや機能が今も発展し続けており、チームの成熟度に合わせて技術スタックを柔軟に調整できます。もしどれかを利用している場合や、新しい選択肢を検討している場合は、ぜひ経験や考えを共有してください。
