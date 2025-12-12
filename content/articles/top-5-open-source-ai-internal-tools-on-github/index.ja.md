@@ -232,6 +232,7 @@ Appsmith では、アプリ作成時に AI が文脈に応じた支援を行い�
 
 **関連読み物：**
 
+* [GitHubで注目のオープンソースAI内部ツール5選](https://www.nocobase.com/ja/blog/top-5-open-source-ai-internal-tools-on-github)
 * [8つの Google Sheets 最良代替ツール（コストと機能まとめ）](https://www.nocobase.com/ja/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
 * [PoC に最適なオープンソースのノーコード／ローコードツール 6 選](https://www.nocobase.com/ja/blog/6-open-source-no-low-code-tools-for-building-pocs)
 * [開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
