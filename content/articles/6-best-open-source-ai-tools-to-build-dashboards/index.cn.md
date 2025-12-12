@@ -1,4 +1,4 @@
-## **引言**
+## 引言
 
 去年我们写过一篇[核心应用仪表盘工具盘点，](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)聊到不少团队在做数据可视化时遇到的一些共性问题。当时我们提到的，大多是已经比较成熟的商业化产品，体验不错，但在授权方式、部署模式和扩展能力上，都有相对固定的边界。后来和一些读者交流时也发现，很多团队其实更希望找到一种成本更低、可定制度更高、还能支持[自托管](https://www.nocobase.com/cn/blog/7-self-hosted-ai-tools-build-business-app)的开源替代方案。
 
@@ -28,15 +28,17 @@
 
 ![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
 
-官网：https://www.nocobase.com/cn/
+官网：[https://www.nocobase.com/cn/]([https://www.nocobase.com/cn/](https://www.nocobase.com/cn/))
 
-文档：https://v2.docs.nocobase.com/cn/
+文档：[https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
 
-GitHub：https://github.com/nocobase/nocobase
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHub Stars：20.7k
 
-**定位** NocoBase 是一个开源且可自托管的 AI 无代码开发平台，以统一的数据模型和可扩展的插件架构为基础。平台支持在同一数据结构下完成业务记录、数据管理和可视化构建，适合搭建内部应用，并基于业务系统的数据创建仪表盘和 BI 看板。
+**定位**
+
+NocoBase 是一个开源且可自托管的 AI 无代码开发平台，以统一的数据模型和可扩展的插件架构为基础。平台支持在同一数据结构下完成业务记录、数据管理和可视化构建，适合搭建内部应用，并基于业务系统的数据创建仪表盘和 BI 看板。
 
 **核心用途**
 
@@ -63,11 +65,11 @@ GitHub Stars：20.7k
 
 ![WrenAI.png](https://static-docs.nocobase.com/6-8v20j4.png)
 
-官网：https://www.getwren.ai/
+官网：[https://www.getwren.ai/](https://www.getwren.ai/)
 
-文档：https://docs.getwren.ai/cp/overview
+文档：[https://docs.getwren.ai/cp/overview](https://docs.getwren.ai/cp/overview)
 
-GitHub：https://github.com/Canner/WrenAI
+GitHub：[https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)
 
 GitHub Stars：13.2k
 
@@ -105,7 +107,9 @@ GitHub Stars：28.1k
 * **通过 SQL 构建图表与仪表盘**：Redash 允许用户通过 SQL 查询连接数据库，从查询结果创建图表、表格和指标卡，并组合成仪表盘。适合已经具备 SQL 能力的团队快速构建自助分析界面。
 * **提供多数据源整合能力**：支持多种数据库与 API 作为数据源，包括 PostgreSQL、MySQL、BigQuery、Athena 等，使其适合整合企业内部多类数据以构建轻量分析体系。
 
-**AI 功能亮点** Redash 本身不内置 AI 功能，但由于 Redash 完全基于 SQL 查询和 API 结果渲染，其架构非常容易与外部 AI 工具结合。
+**AI 相关功能**
+
+Redash 本身不内置 AI 功能，但由于 Redash 完全基于 SQL 查询和 API 结果渲染，其架构非常容易与外部 AI 工具结合。
 
 * **外接 AI 进行 Text to SQL**：通过与 OpenAI、Anthropic 或自建 LLM 服务连接，AI 可以根据描述生成 SQL，再将 SQL 直接提交给 Redash 查询编辑器。社区用户普遍通过浏览器插件、内部工具或 API 代理方式实现。
 * **将 AI 模型输出作为数据源**：AI 的生成结果（包括 JSON、表格类结构、聚合数据）可以作为“API 数据源”直接接入 Redash，从而渲染成图表或指标卡。
@@ -114,15 +118,17 @@ GitHub Stars：28.1k
 
 ![appsmith.png](https://static-docs.nocobase.com/8-oritl2.png)
 
-官网：https://www.appsmith.com/
+官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 
-文档：https://www.appsmith.com/ai/low-code
+文档：[https://www.appsmith.com/ai/low-code]([https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code))
 
-GitHub：https://github.com/appsmithorg/appsmith
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
 GitHub Stars：38.6k
 
-**定位** Appsmith 是一个开源的可视化应用构建平台，可以用于搭建业务分析看板和基础仪表盘。依托组件库、数据源连接以及灵活的前端配置方式，适合在内部系统中构建以数据展示、业务监控和操作面板为主的应用界面。
+**定位**
+
+Appsmith 是一个开源的可视化应用构建平台，可以用于搭建业务分析看板和基础仪表盘。依托组件库、数据源连接以及灵活的前端配置方式，适合在内部系统中构建以数据展示、业务监控和操作面板为主的应用界面。
 
 **核心用途**
 
@@ -148,7 +154,9 @@ GitHub：https://github.com/metabase/metabase
 
 GitHub Stars：44.9k
 
-**定位** Metabase 是一个成熟的开源 BI 平台，适用于构建企业级的业务分析仪表盘与自助数据查询系统。
+**定位**
+
+Metabase 是一个成熟的开源 BI 平台，适用于构建企业级的业务分析仪表盘与自助数据查询系统。
 
 **核心用途**
 
@@ -156,7 +164,7 @@ GitHub Stars：44.9k
 * **团队协作与共享仪表盘** 仪表盘与报表可以被团队共享，不同成员可以查看、编辑、订阅结果，适合企业内跨部门协作分析、统一监控关键指标、共享数据洞察。
 * **多数据源支持与灵活连接能力** 支持连接多种数据库类型（PostgreSQL、MySQL、MariaDB、SQL Server等），方便企业将散落在不同系统的数据整合到同一个分析平台进行统一查询和展示。
 
-**AI 相关功能**
+**AI 功能亮点**
 
 * **AI 助手** Metabase 提供名为 “Metabot” 的 AI Data Assistant 模块用于增强数据分析体验。根据官网，该助手可以协助解释指标、生成洞察与回答与数据相关的问题。
 * **自然语言查询与智能解释** Metabot 支持通过自然语言提出问题，平台将尝试理解问题并返回相应数据结果或图表，降低非技术用户的数据访问门槛。
@@ -174,14 +182,18 @@ GitHub：https://github.com/grafana/grafana
 
 GitHub Stars：71.2k
 
-**定位** Grafana 是一个开源的可视化与监控仪表盘平台，以时序数据和可观测性场景为核心，同时被广泛用于业务指标展示与仪表盘搭建。
+**定位**
+
+Grafana 是一个开源的可视化与监控仪表盘平台，以时序数据和可观测性场景为核心，同时被广泛用于业务指标展示与仪表盘搭建。
 
 **核心用途**
 
 * **构建实时监控面板与指标可视化**：Grafana 能连接多种时序数据库、日志系统与监控工具，将数据以图表、趋势线、指标卡等形式展示。适用于系统监控、服务运行指标、业务实时分析等场景。
 * **统一展示来自多数据源的业务信息**：平台支持连接 Prometheus、Elasticsearch、MySQL、PostgreSQL、BigQuery 等多类数据源，可以在同一个仪表盘组合不同来源的数据，构建统一监控大盘或业务运营面板。
 
-**AI 功能亮点** Grafana 不直接提供 AI 功能，不过由于其支持插件与 API 数据源，团队可以将外部模型的分析结果接入，从而实现 AI 在监控与分析场景的应用：
+**AI 相关功能**
+
+Grafana 不直接提供 AI 功能，不过由于其支持插件与 API 数据源，团队可以将外部模型的分析结果接入，从而实现 AI 在监控与分析场景的应用：
 
 * **基于 AI 的异常检测与趋势分析**：通过外部 AIOps 工具或 AI 服务插件，将模型分析后的异常点、趋势变化等信息回写到 Grafana 仪表盘中，用于辅助监控与诊断。
 * **将 AI 输出作为数据源使用** AI 模型生成的指标、分析结果或结构化数据可以通过 API 数据源方式导入 Grafana，并以图表呈现。
