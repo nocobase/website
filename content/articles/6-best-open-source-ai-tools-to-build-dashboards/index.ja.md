@@ -1,8 +1,10 @@
-## **序論**
+## 序論
 
-昨年、私たちは[コアアプリ向けダッシュボードツールのまとめ](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)を公開し、データ可視化に取り組むチームが直面しがちな課題について紹介しました。当時取り上げたのは、使い勝手の良い成熟した商用ツールが中心でしたが、ライセンス形態やデプロイ方法、拡張性にはどうしても制約があります。その後読者の方々と話す中で、より低コストで、自由度が高く、しかも[セルフホスト](https://www.nocobase.com/cn/blog/7-self-hosted-ai-tools-build-business-app)にも対応できるオープンソースの選択肢を求める声が多いことが分かりました。
+昨年、私たちは[コアアプリ向けダッシュボードツールのまとめ](https://www.nocobase.com/ja/blog/core-app-dashboard-building-tools)を公開し、データ可視化に取り組むチームが直面しがちな課題について紹介しました。当時取り上げたのは、使い勝手の良い成熟した商用ツールが中心でしたが、ライセンス形態やデプロイ方法、拡張性にはどうしても制約があります。その後読者の方々と話す中で、より低コストで、自由度が高く、しかも[セルフホスト](https://www.nocobase.com/ja/blog/7-self-hosted-ai-tools-build-business-app)にも対応できるオープンソースの選択肢を求める声が多いことが分かりました。
 
 ![dashboards.PNG](https://static-docs.nocobase.com/1-zy9fzj.PNG)
+
+💡おすすめ記事：[開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
 
 この一年で、オープンソースコミュニティの可視化系ツールは大きく進化しました。自然言語での検索、チャートの自動生成、指標の説明、意味ベースのレポート作成など、AI を標準機能として取り込むプロジェクトが増えています。ダッシュボード構築の作業部分をツール側に任せ、チームが本質的な業務判断に集中できるようにしたいというニーズも高まっています。
 
@@ -26,17 +28,17 @@
 
 ![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)
 
+Official site: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-
-Official site: [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
-
-Documentation: [https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
+Documentation: [https://v2.docs.nocobase.com/](https://v2.docs.nocobase.com/)
 
 GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHub Stars: 20.7k
 
-**位置付け**  NocoBase は、セルフホストにも対応したオープンソースの AI ノーコード開発基盤です。統一データモデルと柔軟なプラグイン構造を軸に、業務データ管理、可視化、内部アプリ構築をひとつの環境で行える点が特徴です。業務システムのデータをそのまま利用してダッシュボードや BI ボードを構築できるため、社内向けツールづくりに適しています。
+**位置付け**
+
+NocoBase は、セルフホストにも対応したオープンソースの AI ノーコード開発基盤です。統一データモデルと柔軟なプラグイン構造を軸に、業務データ管理、可視化、内部アプリ構築をひとつの環境で行える点が特徴です。業務システムのデータをそのまま利用してダッシュボードや BI ボードを構築できるため、社内向けツールづくりに適しています。
 
 **主な用途**
 
@@ -51,7 +53,7 @@ GitHub Stars: 20.7k
 
 **AI 機能の特徴**
 
-* **ネイティブ AI ワーカーによる自動可視化**  AI ワーカーはデータセットを読み取り、自然言語指示に応じてグラフやレイアウトを自動生成します。設定作業を大きく削減でき、可視化の試行を高速に行えます。
+* **ネイティブ [AI](https://v2.docs.nocobase.com/ai-employees) ワーカーによる自動可視化**  AI ワーカーはデータセットを読み取り、自然言語指示に応じてグラフやレイアウトを自動生成します。設定作業を大きく削減でき、可視化の試行を高速に行えます。
 
 ![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
@@ -62,8 +64,6 @@ GitHub Stars: 20.7k
 
 ![WrenAI.png](https://static-docs.nocobase.com/6-8v20j4.png)
 
-
-
 Official site: [https://www.getwren.ai/](https://www.getwren.ai/)
 
 Documentation: [https://docs.getwren.ai/cp/overview](https://docs.getwren.ai/cp/overview)
@@ -72,7 +72,9 @@ GitHub: [https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)
 
 GitHub Stars: 13.2k
 
-**位置付け**  Wren AI は、自然言語からクエリやチャートを生成し、分析結果まで出力できるオープンソースの生成型 BI プラットフォームです。
+**位置付け**
+
+Wren AI は、自然言語からクエリやチャートを生成し、分析結果まで出力できるオープンソースの生成型 BI プラットフォームです。
 
 **主な用途**
 
@@ -89,8 +91,6 @@ GitHub Stars: 13.2k
 
 ![redash.png](https://static-docs.nocobase.com/7-f9csk8.png)
 
-
-
 Official site: [https://redash.io](https://redash.io)
 
 Documentation: [https://redash.io/help](https://redash.io/help)
@@ -99,14 +99,16 @@ GitHub: [https://github.com/getredash/redash](https://github.com/getredash/redas
 
 GitHub Stars: 28.1k
 
-**位置付け**  Redash は SQL を軸に可視化と分析を行う OSS プラットフォームで、データチームでの自助分析ツールとして長く利用されています。
+**位置付け**
+
+Redash は SQL を軸に可視化と分析を行う OSS プラットフォームで、データチームでの自助分析ツールとして長く利用されています。
 
 **主な用途**
 
 * **SQL ベースでチャート・ダッシュボードを作成**  クエリ結果をもとにグラフ・表・指標カードを作り、自由にダッシュボード化できます。SQL に慣れているチームなら素早く導入できます。
 * **多様なデータソースを横断した利用**  多種類のデータベースや API を扱え、企業のデータ集約に適した軽量 BI 基盤を構築できます。
 
-**AI 機能の特徴**
+**AI 活用ポイント**
 
 * **外部 AI を使った Text to SQL**  LLM と連携して自然文から SQL を生成し、そのまま Redash で実行できます。
 * **AI 生成データをそのまま可視化**  AI の出力（JSON や表形式）を API データソースとして接続し、チャートとして表示できます。
@@ -114,8 +116,6 @@ GitHub Stars: 28.1k
 ### **Appsmith**
 
 ![appsmith.png](https://static-docs.nocobase.com/8-oritl2.png)
-
-
 
 Official site: [https://www.appsmith.com/](https://www.appsmith.com/)
 
@@ -125,7 +125,9 @@ GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg
 
 GitHub Stars: 38.6k
 
-**位置付け**  Appsmith は、ビジュアル操作で業務アプリを構築できるオープンソースのプラットフォームです。コンポーネント群とデータ接続機能を使い、業務ボードやダッシュボードを柔軟に作成できます。
+**位置付け**
+
+Appsmith は、ビジュアル操作で業務アプリを構築できるオープンソースのプラットフォームです。コンポーネント群とデータ接続機能を使い、業務ボードやダッシュボードを柔軟に作成できます。
 
 **主な用途**
 
@@ -151,7 +153,9 @@ GitHub: [https://github.com/metabase/metabase](https://github.com/metabase/metab
 
 GitHub Stars: 44.9k
 
-**位置付け**  Metabase は、直感的にデータ探索を行えるオープンソースの BI プラットフォームで、企業全体での分析やレポート作成に広く使われています。
+**位置付け**
+
+Metabase は、直感的にデータ探索を行えるオープンソースの BI プラットフォームで、企業全体での分析やレポート作成に広く使われています。
 
 **主な用途**
 
@@ -159,7 +163,7 @@ GitHub Stars: 44.9k
 * **チームでの共有と運用**  ダッシュボードやレポートを共有し、閲覧・編集・購読できるため、部門横断の分析基盤として活躍します。
 * **複数データソースを統合して分析**  多様な DB と接続でき、散在したデータをひとつの画面で扱える環境を構築できます。
 
-**AI 関連機能**
+**AI 機能の特徴**
 
 * **AI アシスタント「Metabot」**  指標の説明、インサイト提供、質問応答などを通じて分析をサポートします。
 * **自然言語でのデータ問い合わせ**  コマンドではなく文章で質問でき、非エンジニアでも利用しやすい設計です。
@@ -177,7 +181,9 @@ GitHub: [https://github.com/grafana/grafana](https://github.com/grafana/grafana)
 
 GitHub Stars: 71.2k
 
-**位置付け**  Grafana は、時系列データを中心とした可視化・監視のためのオープンソースプラットフォームで、業務指標やダッシュボードの構築にも幅広く利用されています。
+**位置付け**
+
+Grafana は、時系列データを中心とした可視化・監視のためのオープンソースプラットフォームで、業務指標やダッシュボードの構築にも幅広く利用されています。
 
 **主な用途**
 
@@ -202,6 +208,6 @@ Grafana 自体は AI を内蔵していませんが、プラグインや API を
 * 業務アプリ、データ管理、可視化を一つの基盤でまとめて扱いたい場合：
   NocoBase、Appsmith、Metabase のようなより包括的なプラットフォームが適しています。
 
-👉はじめての方へ：[NocoBaseを使ってコアアプリダッシュボードを迅速に構築する
+👉はじめての方へ：[NocoBaseを使ってコアアプリダッシュボードを迅速に構築する](https://www.nocobase.com/ja/blog/core-app-dashboard-building-tools#nocobase%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B3%E3%82%A2%E3%82%A2%E3%83%97%E3%83%AA%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E8%BF%85%E9%80%9F%E3%81%AB%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)
 
 これらのツールはコミュニティや機能が今も発展し続けており、チームの成熟度に合わせて技術スタックを柔軟に調整できます。もしどれかを利用している場合や、新しい選択肢を検討している場合は、ぜひ経験や考えを共有してください。
