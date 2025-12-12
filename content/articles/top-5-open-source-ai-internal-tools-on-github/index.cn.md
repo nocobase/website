@@ -232,6 +232,7 @@ Appsmith 是一个开源低代码平台，旨在帮助团队以更少代码、�
 
 相关阅读：
 
+* [GitHub Star 数量前 5 的开源 AI 内部工具](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
 * [8 个最佳 Google Sheets 替代方案（附成本与能力分析）](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
 * [6个适合做 PoC 的开源无代码/低代码工具推荐 ](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
 * [给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
