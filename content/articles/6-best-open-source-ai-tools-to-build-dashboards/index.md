@@ -2,6 +2,8 @@
 
 Last year we published a review of core dashboard tools, highlighting several common challenges teams encounter when building data visualizations. Most of the tools we discussed were mature commercial products with good user experience, yet they offered limited flexibility in licensing, deployment, and extensibility. In conversations with readers afterward, we learned that many teams were actually seeking lower cost, more customizable, and self hosted open source alternatives.
 
+![dashboards.PNG](https://static-docs.nocobase.com/1-zy9fzj.PNG)
+
 Recommended reading: A technical decision guide to no code and low code for developers (2026)
 
 Over the past year, the open source ecosystem in this space has evolved quickly. Increasingly, dashboard and analytics tools are incorporating AI into their core features, including natural language querying, automated chart creation, metric explanations, and semantic report generation. Many teams also hope these tools can handle more of the operational workload so they can focus their time on decisions that require real business judgment.
@@ -24,9 +26,7 @@ Here is a quick overview of the six tools we will cover.
 
 ### NocoBase
 
-[Image]
-
-Official site: [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
+![NocoBase1.PNG](https://static-docs.nocobase.com/2-zumxgb.PNG)Official site: [https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
 Documentation: [https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
 
@@ -43,7 +43,7 @@ GitHub Stars: 20.7k
   * Implement more flexible custom rendering in JS blocks.
   * Use AI employees to automatically generate visual layouts and chart configurations from natural language instructions.  Overall, these capabilities support building both standard dashboards and more complex analytical or customized scenarios.
 
-[Image]
+![NocoBase2.PNG](https://static-docs.nocobase.com/3-deeat7.PNG)
 
 * **Plug-based extensibility and system integration**:  Built on a microkernel architecture, the platform allows on demand extension of page components, action capabilities, and data sources. It can connect to the primary database, external databases, and third party APIs, making it suitable for teams that need to integrate multiple data sources or create custom logic.
 
@@ -51,19 +51,25 @@ GitHub Stars: 20.7k
 
 * **Built in [AI Employees]**:  NocoBase provides native AI employee capabilities, where AI employees take on specific visualization generation tasks inside the system. They can analyze designated datasets and automatically build charts, KPI cards, and basic analytical layouts from natural language instructions, reducing manual configuration and improving visualization efficiency. Enterprises can define additional AI employees according to workflow needs, allowing them to extend their role in visualization and analytical tasks.
 
-[Image]
+![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
 * **Integration with knowledge bases and vector databases**:  AI employees can reference knowledge base content and perform retrieval and matching through vector databases to support explanations, document understanding, or structured outputs. This is useful in scenarios requiring business document or rule based analysis.
 
-[Image]
+![NocoBase4.png](https://static-docs.nocobase.com/5-me76ou.png)
 
 * **Support for multiple models and flexible deployment**:  The platform supports configuring multiple model services, including local and cloud models. Available model options include OpenAI, Gemini, Anthropic, and others. Teams can choose model setups based on security, cost, and runtime environment.
 
 ### Wren AI
 
-[Image]
+![WrenAI.png](https://static-docs.nocobase.com/6-8v20j4.png)
 
-Official site: [https://www.getwren.ai/](https://www.getwren.ai/)  Documentation: [https://docs.getwren.ai/cp/overview](https://docs.getwren.ai/cp/overview)  GitHub: [https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)  GitHub Stars: 13.2k
+Official site: [https://www.getwren.ai/](https://www.getwren.ai/)
+
+Documentation: [https://docs.getwren.ai/cp/overview](https://docs.getwren.ai/cp/overview)
+
+GitHub: [https://github.com/Canner/WrenAI](https://github.com/Canner/WrenAI)
+
+GitHub Stars: 13.2k
 
 **Overview**  Wren AI is an open source generative BI tool that produces queries, charts, and analytical visuals directly from natural language.
 
@@ -82,9 +88,15 @@ Official site: [https://www.getwren.ai/](https://www.getwren.ai/)  Documentation
 
 ### Redash
 
-[Image]
+![redash.png](https://static-docs.nocobase.com/7-f9csk8.png)
 
-Official site: [https://redash.io](https://redash.io)  Documentation: [https://redash.io/help](https://redash.io/help)  GitHub: [https://github.com/getredash/redash](https://github.com/getredash/redash)  GitHub Stars: 28.1k
+Official site: [https://redash.io](https://redash.io)
+
+Documentation: [https://redash.io/help](https://redash.io/help)
+
+GitHub: [https://github.com/getredash/redash](https://github.com/getredash/redash)
+
+GitHub Stars: 28.1k
 
 **Overview**  Redash is an open source SQL based visualization and analytics tool for building charts, query panels, and lightweight BI dashboards. It is widely used by data teams for self service analytics.
 
@@ -102,9 +114,15 @@ Although Redash does not include native AI features, its SQL and API centric des
 
 ### Appsmith
 
-[Image]
+![appsmith.png](https://static-docs.nocobase.com/8-oritl2.png)
 
-Official site: [https://www.appsmith.com/](https://www.appsmith.com/)  Documentation: [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)  GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)  GitHub Stars: 38.6k
+Official site: [https://www.appsmith.com/](https://www.appsmith.com/)
+
+Documentation: [https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)
+
+GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
+
+GitHub Stars: 38.6k
 
 **Overview**  Appsmith is an open source platform for visually building applications. It can be used to create business dashboards and lightweight visual panels, supported by a component library, data connections, and flexible UI configuration. It is well suited for internal systems focused on data display, business monitoring, and operational workflows.
 
@@ -122,9 +140,15 @@ Official site: [https://www.appsmith.com/](https://www.appsmith.com/)  Documenta
 
 ### Metabase
 
-[Image]
+![metabase.png](https://static-docs.nocobase.com/9-bigavl.png)
 
-Official site: [https://www.metabase.com/](https://www.metabase.com/)  Documentation: [https://www.metabase.com/docs/latest/](https://www.metabase.com/docs/latest/)  GitHub: [https://github.com/metabase/metabase](https://github.com/metabase/metabase)  GitHub Stars: 44.9k
+Official site: [https://www.metabase.com/](https://www.metabase.com/)
+
+Documentation: [https://www.metabase.com/docs/latest/](https://www.metabase.com/docs/latest/)
+
+GitHub: [https://github.com/metabase/metabase](https://github.com/metabase/metabase)
+
+GitHub Stars: 44.9k
 
 **Overview**  Metabase is a widely adopted open source BI platform designed for enterprise analytics dashboards and self service data exploration.
 
@@ -142,9 +166,15 @@ Official site: [https://www.metabase.com/](https://www.metabase.com/)  Documenta
 
 ### Grafana
 
-[Image]
+![grafana.png](https://static-docs.nocobase.com/10-9sv6rf.png)
 
-Official site: [https://grafana.com](https://grafana.com)  Documentation: [https://grafana.com/docs](https://grafana.com/docs)  GitHub: [https://github.com/grafana/grafana](https://github.com/grafana/grafana)  GitHub Stars: 71.2k
+Official site: [https://grafana.com](https://grafana.com)
+
+Documentation: [https://grafana.com/docs](https://grafana.com/docs)
+
+GitHub: [https://github.com/grafana/grafana](https://github.com/grafana/grafana)
+
+GitHub Stars: 71.2k
 
 **Overview**  Grafana is an open source platform for visualization and monitoring. It is built around time series and observability data, and is also widely used for business metrics and dashboard creation.
 
