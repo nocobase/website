@@ -51,7 +51,7 @@ NocoBase is an open source and self hostable AI no code development platform bui
 
 **AI highlights**
 
-* **Built in [AI Employees]**:  NocoBase provides native AI employee capabilities, where AI employees take on specific visualization generation tasks inside the system. They can analyze designated datasets and automatically build charts, KPI cards, and basic analytical layouts from natural language instructions, reducing manual configuration and improving visualization efficiency. Enterprises can define additional AI employees according to workflow needs, allowing them to extend their role in visualization and analytical tasks.
+* **Built in [AI Employees](https://v2.docs.nocobase.com/ai-employees)**:  NocoBase provides native AI employee capabilities, where AI employees take on specific visualization generation tasks inside the system. They can analyze designated datasets and automatically build charts, KPI cards, and basic analytical layouts from natural language instructions, reducing manual configuration and improving visualization efficiency. Enterprises can define additional AI employees according to workflow needs, allowing them to extend their role in visualization and analytical tasks.
 
 ![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
@@ -77,14 +77,14 @@ GitHub Stars: 13.2k
 
 **Core uses**
 
-* **Fast visualization building**  It can automatically create charts and starter dashboards from connected data sources, making it suitable for operations dashboards and routine metric views.
-* **Embedding analytics into other systems**  Its API based architecture allows teams to integrate generative analytics into existing business applications.
+* **Fast visualization building**: It can automatically create charts and starter dashboards from connected data sources, making it suitable for operations dashboards and routine metric views.
+* **Embedding analytics into other systems**: Its API based architecture allows teams to integrate generative analytics into existing business applications.
 
 **AI highlights**
 
-* **End to end generative analytics**  Wren AI converts natural language into SQL and then into charts or reports, covering the full workflow from Text to SQL to visualization.
-* **Semantic layer**  A built in semantic engine interprets business models and data structures, improving the accuracy of natural language queries and generated charts.
-* **Model flexibility and self hosting**  Supports multiple models such as OpenAI, Gemini, Google AI, and Anthropic, and provides an open source self hosted edition for environments requiring data security or cost control.
+* **End to end generative analytics**: Wren AI converts natural language into SQL and then into charts or reports, covering the full workflow from Text to SQL to visualization.
+* **Semantic layer**: A built in semantic engine interprets business models and data structures, improving the accuracy of natural language queries and generated charts.
+* **Model flexibility and self hosting**: Supports multiple models such as OpenAI, Gemini, Google AI, and Anthropic, and provides an open source self hosted edition for environments requiring data security or cost control.
 
 ---
 
@@ -104,15 +104,15 @@ GitHub Stars: 28.1k
 
 **Core uses**
 
-* **SQL driven dashboards**  Users write SQL to query data and build charts, tables, and metric cards from the results, then combine them into dashboards. Ideal for teams comfortable with SQL.
-* **Integrating multiple data sources**  It supports PostgreSQL, MySQL, BigQuery, Athena, and many other databases or APIs, making it easy to unify enterprise data into a simple analysis layer.
+* **SQL driven dashboards**: Users write SQL to query data and build charts, tables, and metric cards from the results, then combine them into dashboards. Ideal for teams comfortable with SQL.
+* **Integrating multiple data sources**: It supports PostgreSQL, MySQL, BigQuery, Athena, and many other databases or APIs, making it easy to unify enterprise data into a simple analysis layer.
 
 **AI-related features**
 
 Although Redash does not include native AI features, its SQL and API centric design integrates well with external AI tools.
 
-* **Text to SQL using external LLMs**  By connecting services such as OpenAI or Anthropic, AI can generate SQL from user descriptions and feed it directly into Redash.
-* **AI outputs as data sources**  AI generated JSON, tabular results, or aggregated metrics can be treated as API data sources and visualized within Redash.
+* **Text to SQL using external LLMs**: By connecting services such as OpenAI or Anthropic, AI can generate SQL from user descriptions and feed it directly into Redash.
+* **AI outputs as data sources**: AI generated JSON, tabular results, or aggregated metrics can be treated as API data sources and visualized within Redash.
 
 ### Appsmith
 
@@ -132,13 +132,13 @@ Appsmith is an open source platform for visually building applications. It can b
 
 **Core uses**
 
-* **Building dashboards and visual panels**  Teams can present data from databases or APIs using charts, tables, and list components. This supports operations monitoring, business reporting, and simple metric displays, with the flexibility to customize interactions and layout.
-* **Building internal tools and admin applications**  With its UI components, permission controls, and action logic, Appsmith supports data display, entry, and workflow handling within a single application. It is ideal for operation-heavy or data-centric internal processes.
+* **Building dashboards and visual panels**: Teams can present data from databases or APIs using charts, tables, and list components. This supports operations monitoring, business reporting, and simple metric displays, with the flexibility to customize interactions and layout.
+* **Building internal tools and admin applications**: With its UI components, permission controls, and action logic, Appsmith supports data display, entry, and workflow handling within a single application. It is ideal for operation-heavy or data-centric internal processes.
 
 **AI highlights**
 
-* **AI Assistant for faster application creation**  The assistant generates layouts, components, API requests, and basic logic from natural language prompts, helping reduce manual UI configuration and speeding up development.
-* **Logic and content generation support**  AI can produce script snippets for queries or formatting logic and generate explanatory text when needed, improving content creation efficiency.
+* **AI Assistant for faster application creation**: The assistant generates layouts, components, API requests, and basic logic from natural language prompts, helping reduce manual UI configuration and speeding up development.
+* **Logic and content generation support**: AI can produce script snippets for queries or formatting logic and generate explanatory text when needed, improving content creation efficiency.
 
 ---
 
@@ -160,15 +160,15 @@ Metabase is a widely adopted open source BI platform designed for enterprise ana
 
 **Core uses**
 
-* **Visual exploration and reporting**  Users explore data by forming questions, visualizing results, and assembling dashboards, often without writing SQL. It supports charts, tables, filters, and shared dashboards for KPI tracking, trend analysis, user behavior studies, and sales insights.
-* **Teamwide sharing and collaboration**  Reports and dashboards can be shared, edited, or subscribed to across teams, enabling coordinated analysis and centralized tracking of key metrics.
-* **Broad data connectivity**  Metabase connects to many popular databases, making it easy to bring dispersed enterprise data into a unified analysis layer.
+* **Visual exploration and reporting**: Users explore data by forming questions, visualizing results, and assembling dashboards, often without writing SQL. It supports charts, tables, filters, and shared dashboards for KPI tracking, trend analysis, user behavior studies, and sales insights.
+* **Teamwide sharing and collaboration**: Reports and dashboards can be shared, edited, or subscribed to across teams, enabling coordinated analysis and centralized tracking of key metrics.
+* **Broad data connectivity**: Metabase connects to many popular databases, making it easy to bring dispersed enterprise data into a unified analysis layer.
 
 **AI highlights**
 
-* **Metabot AI assistant**  The built-in Metabot helps interpret metrics, generate insights, and respond to data questions.
-* **Natural language queries**  Users can ask questions in plain language, and Metabase will attempt to return relevant data or visualizations.
-* **Automated insights**  Metabot provides explanations and context when data changes or when results are generated, helping users understand the meaning behind metrics.
+* **Metabot AI assistant**: The built-in Metabot helps interpret metrics, generate insights, and respond to data questions.
+* **Natural language queries**: Users can ask questions in plain language, and Metabase will attempt to return relevant data or visualizations.
+* **Automated insights**: Metabot provides explanations and context when data changes or when results are generated, helping users understand the meaning behind metrics.
 
 ### Grafana
 
@@ -188,15 +188,15 @@ Grafana is an open source platform for visualization and monitoring. It is built
 
 **Core uses**
 
-* **Real time monitoring and metric visualization**  Grafana connects to time series databases, log services, and monitoring tools to display data as charts, trends, and metric cards. It supports system monitoring, service performance tracking, and real time business analysis.
-* **Unified views across multiple data sources**  With support for sources such as Prometheus, Elasticsearch, MySQL, PostgreSQL and BigQuery, Grafana lets teams combine heterogeneous data into a single dashboard for consolidated monitoring and operations views.
+* **Real time monitoring and metric visualization**: Grafana connects to time series databases, log services, and monitoring tools to display data as charts, trends, and metric cards. It supports system monitoring, service performance tracking, and real time business analysis.
+* **Unified views across multiple data sources**: With support for sources such as Prometheus, Elasticsearch, MySQL, PostgreSQL and BigQuery, Grafana lets teams combine heterogeneous data into a single dashboard for consolidated monitoring and operations views.
 
 **AI-related features**
 
 Grafana does not include native AI features, but its plugin system and API based data sources make AI integration straightforward:
 
-* **Anomaly detection and trend analysis with external AI**  Outputs from AIOps tools or AI services can be brought into Grafana to highlight anomalies or shifts in trends and assist with diagnostics.
-* **Using AI generated data as a source**  Insights or structured outputs from AI models can be fed into Grafana through an API source and visualized like any other dataset.
+* **Anomaly detection and trend analysis with external AI**: Outputs from AIOps tools or AI services can be brought into Grafana to highlight anomalies or shifts in trends and assist with diagnostics.
+* **Using AI generated data as a source**: Insights or structured outputs from AI models can be fed into Grafana through an API source and visualized like any other dataset.
 
 ## Closing notes
 
