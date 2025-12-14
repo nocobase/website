@@ -211,3 +211,14 @@ Grafana 自体は AI を内蔵していませんが、プラグインや API を
 👉はじめての方へ：[NocoBaseを使ってコアアプリダッシュボードを迅速に構築する](https://www.nocobase.com/ja/blog/core-app-dashboard-building-tools#nocobase%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B3%E3%82%A2%E3%82%A2%E3%83%97%E3%83%AA%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E8%BF%85%E9%80%9F%E3%81%AB%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)
 
 これらのツールはコミュニティや機能が今も発展し続けており、チームの成熟度に合わせて技術スタックを柔軟に調整できます。もしどれかを利用している場合や、新しい選択肢を検討している場合は、ぜひ経験や考えを共有してください。
+
+
+**関連読み物：**
+
+* [8つの Google Sheets 最良代替ツール（コストと機能まとめ）](https://www.nocobase.com/ja/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [PoC に最適なオープンソースのノーコード／ローコードツール 6 選](https://www.nocobase.com/ja/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企業向けノーコード・ローコードプラットフォームのRBAC権限体系詳細比較](https://www.nocobase.com/ja/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHubで注目のオープンソースAIローコードツール14選](https://www.nocobase.com/ja/blog/14-ai-low-code-platforms-github)
+* [GitHubで人気のオープンソースノーコードAIツール11選](https://www.nocobase.com/ja/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub で Star 数トップ18 のオープンソース AI Agent プロジェクト](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-projects)
