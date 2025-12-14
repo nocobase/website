@@ -4,7 +4,7 @@
 
 Excel やオンラインスプレッドシートで業務を管理するのが、そろそろ限界ではないか、と。
 
-実際、Reddit でも同じ悩みを抱える人たちの議論を何度も見かけてきました。
+実際、[Reddit](https://www.reddit.com/r/googlesheets/comments/1p969rt/how_do_you_develop_a_system_based_on_a_large/) でも同じ悩みを抱える人たちの議論を何度も見かけてきました。
 
 ![Reddit.png](https://static-docs.nocobase.com/5161a8be-abe9-41e9-a3aa-0ace55c9ad66-02h0xf.png)
 
@@ -272,7 +272,6 @@ Excel を、協業や自動化、そして将来の拡張にも耐えられる�
 数時間のセットアップだけで、NocoBase を使って自分たちの業務に合ったシステムを構築できます。
 
 この記事で紹介した機能は、すべて NocoBase のデモで実際に試すことができます。 [https://nocobase.com/en/demo](https://nocobase.com/en/demo)
-
 
 **関連読み物：**
 
