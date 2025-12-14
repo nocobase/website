@@ -212,3 +212,14 @@ Grafana 不直接提供 AI 功能，不过由于其支持插件与 API 数据源
 👉[快速上手：用 NocoBase 快速搭建一个核心应用仪表盘](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools#%E7%94%A8-nocobase-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA-core-app-dashboard)
 
 这些工具背后的社区生态和功能能力仍在持续完善，也意味着团队可以根据自身阶段逐步调整技术栈。如果你在使用其中任何一个工具，或正在评估新的方案，也欢迎向我们分享经验与思考！
+
+
+相关阅读：
+
+* [8 个最佳 Google Sheets 替代方案（附成本与能力分析）](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [6个适合做 PoC 的开源无代码/低代码工具推荐](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企业级无代码低代码平台 RBAC 权限体系深度对比](https://www.nocobase.com/cn/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHub 上最值得关注的 14 个开源 AI 低代码工具](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)
+* [11 个在 GitHub 上最受欢迎的开源无代码 AI 工具](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)
+* [GitHub 上 Star 数量前 18 的开源 AI Agent 项目](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects)
