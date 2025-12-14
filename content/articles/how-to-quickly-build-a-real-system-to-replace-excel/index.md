@@ -2,7 +2,7 @@
 
 If you click on this article, you are probably already asking yourself one thing: managing your business with Excel or online spreadsheets feels increasingly frustrating.
 
-I have seen many similar discussions on Reddit as well:
+I have seen many [similar discussions](https://www.reddit.com/r/googlesheets/comments/1p969rt/how_do_you_develop_a_system_based_on_a_large/) on Reddit as well:
 
 ![Reddit.png](https://static-docs.nocobase.com/5161a8be-abe9-41e9-a3aa-0ace55c9ad66-02h0xf.png)
 
@@ -244,7 +244,6 @@ But at this point, one thing should be clear:
 With just a few hours of setup, you can build a business system tailored to your needs using NocoBase.
 
 You can try all the features mentioned in this article in the NocoBase demo: [https://nocobase.com/en/demo](https://nocobase.com/en/demo)
-
 
 **Related reading:**
 
