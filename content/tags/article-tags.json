@@ -4858,5 +4858,25 @@
     "title_cn": "ERP",
     "title_ja": "ERP",
     "updatedById": 1
+  },
+  {
+    "createdAt": "2025-12-14T12:43:16.075Z",
+    "updatedAt": "2025-12-14T12:43:16.075Z",
+    "createdById": 1,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 249,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 247,
+    "title": "Excel",
+    "title_cn": "Excel",
+    "title_ja": "Excel",
+    "updatedById": 1
   }
 ]
