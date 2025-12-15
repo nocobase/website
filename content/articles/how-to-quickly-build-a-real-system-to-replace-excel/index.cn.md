@@ -229,7 +229,7 @@ Excel 最大的问题是：**无法设置权限。即使是 Google Sheets 权限
 * 流程自动化能帮你省下大量手动更新的时间
 * 权限管理让系统变得更安全、更可靠
 
-**只需要几个个小时，你就能在 NocoBase 快速搭建一个属于你的业务系统。**
+**只需要几个小时，你就能在 NocoBase 快速搭建一个属于你的业务系统。**
 
 欢迎在 NocoBase 的 demo 中体验文章中提到的所有功能：[https://nocobase.com/en/demo](https://nocobase.com/en/demo)
 
