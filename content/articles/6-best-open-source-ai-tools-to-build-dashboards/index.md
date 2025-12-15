@@ -8,6 +8,12 @@ Last year we published [a review of core dashboard tools](https://www.nocobase.c
 
 Over the past year, the open source ecosystem in this space has evolved quickly. Increasingly, dashboard and analytics tools are incorporating AI into their core features, including natural language querying, automated chart creation, metric explanations, and semantic report generation. Many teams also hope these tools can handle more of the operational workload so they can focus their time on decisions that require real business judgment.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 With this context in mind, we curated a new list of active open source dashboard projects that have already introduced AI capabilities. In this article, we look at each tool through three lenses: its core positioning, common use cases, and the maturity and scope of its AI features. We hope this helps you quickly identify which open source tool best fits your needs.
 
 Here is a quick overview of the six tools we will cover.
@@ -214,7 +220,6 @@ From the six tools discussed:
 👉Quick start guide: [Quickly Build a Core App Dashboard with NocoBase](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools#quickly-build-a-core-app-dashboard-with-nocobase)
 
 These ecosystems continue to evolve, allowing teams to refine their stack over time. If you are using or evaluating any of these tools, we welcome your insights and experience.
-
 
 **Related reading:**
 
