@@ -20,6 +20,14 @@ This is the reality for many teams that rely on Excel to run their business.
 
 Now, it is time to change that.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## Step 1: Splitting the Data
 
 The Excel sheet contains more than a dozen columns, with different types of information all mixed together.
