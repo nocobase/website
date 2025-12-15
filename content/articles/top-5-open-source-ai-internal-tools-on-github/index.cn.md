@@ -6,6 +6,12 @@
 
 这次，我们从 [GitHub Internal Tools](https://github.com/topics/internal-tools) 话题里重新筛选了 Star 数排名靠前且 GitHub Star 数均超过 20k 的开源内部工具项目，介绍他们的技术信息以及适用场景.
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 希望这份更新能帮助你快速了解哪些开源内部工具在 AI 时代依然值得投入，也为正在自建内部工具的技术团队提供清晰的参考方向。
 
 你可以先快速浏览一下本文会介绍的 5 款开源内部工具：
