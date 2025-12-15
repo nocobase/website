@@ -6,6 +6,12 @@ A similar shift is happening in the internal tools space. Last year we profiled 
 
 In this update, we selected open source internal tools from the [GitHub Internal Tools](https://github.com/topics/internal-tools) topic with more than 20k Stars and strong community traction, and summarized their technical features and ideal use cases.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 Our goal is to help you quickly understand which internal tools remain worth investing in during the AI era, and to provide clear direction for technical teams building their own internal systems.
 
 Here is a quick preview of the 5 open source internal tools we will cover.
