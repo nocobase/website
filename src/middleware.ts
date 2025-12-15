@@ -8,13 +8,16 @@ const RUSSIAN_REDIRECT_PAGES = [
   '/ru/blog/',
   '/ru/solutions/',
   '/ru/solutions',
-  '/ru/partners'
+  '/ru/partners',
+  '/ru/highlights',
+  '/ru/highlights/'
 ];
 
 // Define patterns for dynamic routes that should redirect
 const RUSSIAN_REDIRECT_PATTERNS = [
   /^\/ru\/tutorials\/.*$/,
-  /^\/ru\/blog\/.*$/
+  /^\/ru\/blog\/.*$/,
+  /^\/ru\/highlights\/.*$/
 ];
 
 // Define Chinese pages that should redirect to other pages
