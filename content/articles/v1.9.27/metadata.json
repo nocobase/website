@@ -1,14 +1,14 @@
 {
   "id": 816,
-  "title": "NocoBase v1.9.27",
-  "title_cn": "NocoBase v1.9.27",
-  "title_ja": null,
+  "title": "NocoBase v1.9.27: Add fault tolerance when missing app instances cause errors while fetching app maintaining messages",
+  "title_cn": "NocoBase v1.9.27：优化因应用实例不存在导致获取应用维护状态消息异常的容错机制",
+  "title_ja": "NocoBase v1.9.27：アプリケーションインスタンスが存在しない場合でも、メンテナンス状態メッセージ取得時にエラーが発生しないよう耐障害性を改善",
   "description": "Release Note of v1.9.27",
   "description_cn": "v1.9.27 更新日志",
-  "description_ja": null,
+  "description_ja": "v1.9.27 リリースノート",
   "slug": "v1.9.27",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-12-17T01:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-17T05:32:15.952Z",
+        "updatedAt": "2025-12-17T05:32:15.952Z",
+        "articles_id": 816,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-17T05:32:06.462Z",
+    "updatedAt": "2025-12-17T05:32:06.468Z",
+    "id": 2113,
+    "title": "main (4)",
+    "filename": "main (4)-8iruc1.jpg",
+    "extname": ".jpg",
+    "size": 89651,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(4)-8iruc1.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20(4)-8iruc1.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-12-17T00:08:07.208Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-17T05:32:15.940Z"
 }
