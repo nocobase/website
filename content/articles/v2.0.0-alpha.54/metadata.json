@@ -1,7 +1,7 @@
 {
   "id": 817,
   "title": "NocoBase v2.0.0-alpha.54: When creating colletion, the preset id field type can be changed",
-  "title_cn": "NocoBase v2.0.0-alpha.54：创建数据表时可以更改预设id字段类型",
+  "title_cn": "NocoBase v2.0.0-alpha.54：创建数据表时可以更改预设 id 字段类型",
   "title_ja": "NocoBase v2.0.0-alpha.54：データテーブル作成時に、既定の id フィールド型を変更できるようになりました",
   "description": "Release Note of v2.0.0-alpha.54",
   "description_cn": "v2.0.0-alpha.54 更新日志",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-12-17T05:32:01.010Z"
+  "updatedAt": "2025-12-18T02:32:23.494Z"
 }
