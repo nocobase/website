@@ -4,7 +4,7 @@
 
 对很多团队来说，答案大概率是 SaaS 类型的 CRM，比如 Salesforce 这类成熟产品。它们功能完整、生态完善，在企业中也有很高的普及度。当然，也有一些更偏技术导向或追求灵活性的团队会开始关注 [Salesforce 的开源替代方案](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)，这些低代码/无代码平台可以帮助他们用更低的成本、更短的时间，构建出完全符合自己业务需求的 CRM 系统。我们此前也整理过一批 [GitHub 上高星的开源 CRM 项目](https://www.nocobase.com/cn/blog/github-open-source-crm-projects)，为 CRM 的选型提供过一轮基础参考。不过在当时的盘点中，AI 还并未成为这些项目的核心能力之一。
 
-💡 阅读更多：[定制 CRM 的4个真实用户案例（帮你选择更灵活CRM产品）](https://www.nocobase.com/cn/blog/custom-crm-case-studies)
+💡阅读更多：[定制 CRM 的4个真实用户案例（帮你选择更灵活CRM产品）](https://www.nocobase.com/cn/blog/custom-crm-case-studies)
 
 随着越来越多工具和系统开始灵活地与 AI 结合，很多开源的 CRM 项目也在发生变化。从技术上看，它正在从一个偏重记录和管理的系统，逐步演变为更具主动性的业务系统。一部分项目已经将 AI 能力作为原生功能内建进系统中；而另一部分则通过扩展、插件或 API 的方式与 AI 结合。
 
@@ -12,7 +12,7 @@
 
 ---
 
-💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+💬嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
 
@@ -32,21 +32,21 @@
 * **Monica**：个人关系管理工具，通过 API 与外部 AI 服务结合使用。
 * **Akaunting**：以会计与业务管理为主，通过应用和 API 扩展引入 AI 能力。
 * **Idurar ERP CRM**：面向中小团队的 ERP + CRM 组合系统，通过 API 方式与 AI 集成。
-* **Dolibarr**：模块化 ERP/CRM 平台，可通过模块和 API 与外部 AI 系统结合。
+* **Dolibarr**：模块化 CRM 平台，可通过模块和 API 与外部 AI 系统结合。
 
 ## 原生 AI CRM
 
 ### NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjczNDVmOTVmYzVlY2QwMWEwZGFhZmRiYTZkOWMyOWFfZjdZcVhvdW1ITWlWNk5tV2MxQmsyMmpBWmZtaGtJTTVfVG9rZW46UXhmVmJNTkw2b3RyakV4NlZVOGNjeWFEbnFnXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![nocobase1.png](https://static-docs.nocobase.com/nocobase1-voq8jv.png)
 
-**官网：**[https://www.nocobase.com/](https://www.nocobase.com/)
+官网：[https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
-**GitHub 链接：**[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+GitHub 链接：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-**GitHub Star 数：**20.8k
+GitHub Star 数：20.8k
 
-**AI 功能文档链接：**[https://v2.docs.nocobase.com/cn/ai-employees](https://v2.docs.nocobase.com/cn/ai-employees)
+AI 功能文档链接：[https://v2.docs.nocobase.com/cn/ai-employees](https://v2.docs.nocobase.com/cn/ai-employees)
 
 **简介**
 
@@ -56,37 +56,37 @@ NocoBase 是一个开源、可私有部署的 AI 无代码/低代码开发平台
 
 在 NocoBase 中，AI 被设计为系统可直接调用的“AI 员工”（AI Employees），作为业务系统的一部分嵌入界面和工作流程：
 
-* **AI 员工自动理解上下文数据**：AI 员工可以读取当前页面所关联的数据表、字段定义和记录内容，并在此基础上进行操作。
-* **智能内容生成与辅助执行**：AI 员工可根据业务场景执行内容生成、摘要、分析或自动填写，例如自动总结文本、分析数据等。
-* **增强构建效率**：在构建阶段，AI 员工可以辅助生成数据模型、页面布局与自动化逻辑，从而提升系统搭建效率。
+* AI 员工自动理解上下文数据：AI 员工可以读取当前页面所关联的数据表、字段定义和记录内容，并在此基础上进行操作。
+* 智能内容生成与辅助执行：AI 员工可根据业务场景执行内容生成、摘要、分析或自动填写，例如自动总结文本、分析数据等。
+* 增强构建效率：在构建阶段，AI 员工可以辅助生成数据模型、页面布局与自动化逻辑，从而提升系统搭建效率。
 
 **典型使用场景**
 
 在 CRM 的实际应用中，NocoBase 的 AI 员工能力可以融入多个与客户数据管理、业务分析与决策支持相关的流程，使 CRM 系统具备更多“智能化”交互和分析能力：
 
-* **数据整理和录入：**在 CRM 数据录入或沟通记录整理过程中，AI 员工可以从非结构化文本中提取关键信息，并将其转换为结构化字段，例如将邮件、备注或沟通文本拆分成规范化的客户属性或业务事件，填入系统相关表格内，从而降低人工整理成本。
+* 数据整理和录入：在 CRM 数据录入或沟通记录整理过程中，AI 员工可以从非结构化文本中提取关键信息，并将其转换为结构化字段，例如将邮件、备注或沟通文本拆分成规范化的客户属性或业务事件，填入系统相关表格内，从而降低人工整理成本。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjM0NDM3NTNmYjRmYTBhMDA5ODk1NzM2MTQyMTM2N2RfQThkZU5vUkxjekJsY1czaUprVlVKRUxoZHMyVmJaZ1FfVG9rZW46WEo1dGJuUXM4b0ZoT1h4cTRSMWNwdmVCbk1jXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![nocobase2.gif](https://static-docs.nocobase.com/nocobase2-3jul27.gif)
 
-* **业务数据分析与可视化：**在销售线索、客户账户、机会等数据页面中，AI 员工可以基于当前业务数据自动生成趋势图、对比图、指标（如 KPI 卡片）以及简明分析结论，使用者能够更直观地查看业务变化情况和关键指标。
+* 业务数据分析与可视化：在销售线索、客户账户、机会等数据页面中，AI 员工可以基于当前业务数据自动生成趋势图、对比图、指标（如 KPI 卡片）以及简明分析结论，使用者能够更直观地查看业务变化情况和关键指标。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjZlNTAxZjFmMmMxZDJlNjkzNzdjZDkxNDc4YjBlN2NfYnE0Tll6SHQ2SEcwakFNb09TYmE0YjlxbzRNME5Vc2VfVG9rZW46Wm53WmJLZ2FCb2pjY2x4WTBNeGNDZnVzbk1nXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![nocobase3.gif](https://static-docs.nocobase.com/nocobase3-0aik71.gif)
 
-* **多语言内容翻译并填表：**在涉及跨语言沟通的 CRM 场景中，AI 员工可以对外语邮件、沟通记录或客户资料进行翻译，并将翻译后的内容填写至系统相应字段中。不同语言来源的客户信息能够以统一形式沉淀在 CRM 系统中，更便于后续的分析和使用。
+* 多语言内容翻译并填表：在涉及跨语言沟通的 CRM 场景中，AI 员工可以对外语邮件、沟通记录或客户资料进行翻译，并将翻译后的内容填写至系统相应字段中。不同语言来源的客户信息能够以统一形式沉淀在 CRM 系统中，更便于后续的分析和使用。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzAyMDY1YmI3NzJjMzU3MmRhMzAyODVmYTQzY2MwY2VfT0ZxQ1Vpa1I2WmE2WkZhb3hSMVk3eDIzb3JybXJWSkdfVG9rZW46WnBROWJvVUx6b3gzVGR4OWdRMWNIMEZ2bk5iXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![nocobase4.gif](https://static-docs.nocobase.com/nocobase4-plcdr3.gif)
 
 ### Huly Platform
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDUzNzQ4Njg5NjRiNzc3YWY4NzM5ZmJlN2FmYzNiNDZfQ0YzVjJMZzMzeXRvNGllUG1FbW1wcmNtNnFPV3o3RXFfVG9rZW46QXdZdmJKVDNsb1NadGl4aUhReWN6bFJObjlPXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Huly Platform.png](https://static-docs.nocobase.com/Huly%20Platform-3s2br9.png)
 
-**官网：**[https://huly.io/](https://huly.io/)
+官网：[https://huly.io/](https://huly.io/)
 
-**GitHub 链接：**[https://github.com/hcengineering/platform](https://github.com/hcengineering/platform)
+GitHub 链接：[https://github.com/hcengineering/platform](https://github.com/hcengineering/platform)
 
-**GitHub Star 数：** 23.9k
+GitHub Star 数：23.9k
 
-**AI 功能文档链接：**[https://docs.huly.io/communication/live-transcription/](https://docs.huly.io/communication/live-transcription/)
+AI 功能文档链接：[https://docs.huly.io/communication/live-transcription/](https://docs.huly.io/communication/live-transcription/)
 
 **简介**
 
@@ -106,15 +106,15 @@ Huly 非常适合需要高频协作与沟通的团队使用，例如：
 
 ### Krayin CRM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDcxNjFjNzM5Y2I2MmYwMGYzYjI0NDk3NmE0MWM2OTdfd1BSUjhpYW1FNmRmWmhpMW00UUdrOUxGTGwxb2hJbjdfVG9rZW46TzlVY2JoSlZab21RTXZ4SGVqTGNGYnpDbnFlXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Krayin CRM.png](https://static-docs.nocobase.com/Krayin%20CRM-wo95u4.png)
 
-**官网：**[https://krayincrm.com/](https://krayincrm.com/)
+官网：[https://krayincrm.com/](https://krayincrm.com/)
 
-**GitHub 链接：**[https://github.com/krayin/laravel-crm](https://github.com/krayin/laravel-crm)
+GitHub 链接：[https://github.com/krayin/laravel-crm](https://github.com/krayin/laravel-crm)
 
-**GitHub Star 数：**20.6k
+GitHub Star 数：20.6k
 
-**AI 功能文档链接：**[https://krayincrm.com/ai-crm/](https://krayincrm.com/ai-crm/)
+AI 功能文档链接：[https://krayincrm.com/ai-crm/](https://krayincrm.com/ai-crm/)
 
 **简介**
 
@@ -124,9 +124,9 @@ Krayin CRM 是基于 Laravel 框架构建的开源客户关系管理系统，提
 
 Krayin CRM 官方提供了 AI 功能模块，通过与大模型集成为用户带来智能交互能力。在系统中，AI 可用于：
 
-* **生成和完善销售相关内容** — 例如自动生成跟进邮件文案、联系人备注、会议总结等文本内容；
-* **线索与客户智能助手** — 在联系人或线索详情页中提供 AI 建议或自动补充信息；
-* **智能内容编辑** — 在 CRM 日志、任务、备注等文本输入区域集成 AI 生成与提示，帮助用户快速撰写高质量内容。  这些功能通过与 AI 模型联动，使得原本的 CRM 文本处理更加高效、智能。
+* 生成和完善销售相关内容：例如自动生成跟进邮件文案、联系人备注、会议总结等文本内容；
+* 线索与客户智能助手：在联系人或线索详情页中提供 AI 建议或自动补充信息；
+* 智能内容编辑：在 CRM 日志、任务、备注等文本输入区域集成 AI 生成与提示，帮助用户快速撰写高质量内容。  这些功能通过与 AI 模型联动，使得原本的 CRM 文本处理更加高效、智能。
 
 **典型使用场景**
 
@@ -140,13 +140,13 @@ Krayin CRM 的 AI 能力适合以下场景：
 
 ### Twenty
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTExZWFiNWFhMmYwYzc0MDE0YWUzYWQwMWNmMjgzZjFfWWk1cXhNNFBia1FQYlF5RWhXelZmbDdqck9lcnFqWTBfVG9rZW46R2pNcmJJMFdBb0JJMTN4RHVnQmNETlJEbkgxXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Twenty.png](https://static-docs.nocobase.com/Twenty-9id6n2.png)
 
-**官网：**[https://twenty.com/](https://twenty.com/)
+官网：[https://twenty.com/](https://twenty.com/)
 
-**GitHub 链接：**[https://github.com/twentyhq/twenty](https://github.com/twentyhq/twenty)
+GitHub 链接：[https://github.com/twentyhq/twenty](https://github.com/twentyhq/twenty)
 
-**GitHub Star 数**：37.3k
+GitHub Star 数：37.3k
 
 **简介**
 
@@ -158,13 +158,13 @@ Twenty 官方提供并开放了完整的 GraphQL 与 REST API，使其可以通�
 
 ### ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmRmNTI4YjdhZTQyNDYyNDdlY2UyZDJmY2IxYjRiNzhfV1drenQ4TTlWUjM3d2dJRVlveUVpenRVSmpNN3NiR3VfVG9rZW46TnBMN2JDb0FTb3VpVjh4QkpUeGNGSzJTbjRkXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![ERPNext.png](https://static-docs.nocobase.com/ERPNext-jtmlm0.png)
 
-**官网：**[https://erpnext.com/](https://erpnext.com/)
+官网：[https://erpnext.com/](https://erpnext.com/)
 
-**GitHub 链接：**[https://github.com/frappe/erpnext](https://github.com/frappe/erpnext)
+GitHub 链接：[https://github.com/frappe/erpnext](https://github.com/frappe/erpnext)
 
-**GitHub Star 数**：30.6k
+GitHub Star 数：30.6k
 
 **简介**
 
@@ -176,13 +176,13 @@ ERPNext 提供了完善的 API 与插件机制，可通过扩展方式与 AI 能
 
 ### SuiteCRM
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGY1MzEwMmJmMGRmMWZkZTRkMjE3NDViM2M1MWUwZmNfUXRVdnlsc3kyS0dVVDBSc0dBczJsbW9kZEFMcG42V0hfVG9rZW46TkU1dmI1TEU0b0J6OG14RERCVmMyYzhpbjdjXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![SuiteCRM.png](https://static-docs.nocobase.com/SuiteCRM-8wdoh4.png)
 
-**官网：**[https://suitecrm.com/](https://suitecrm.com/)
+官网：[https://suitecrm.com/](https://suitecrm.com/)
 
-**GitHub 链接：**[https://github.com/SuiteCRM/SuiteCRM](https://github.com/SuiteCRM/SuiteCRM)
+GitHub 链接：[https://github.com/SuiteCRM/SuiteCRM](https://github.com/SuiteCRM/SuiteCRM)
 
-**GitHub Star 数**：5.2k
+GitHub Star 数：5.2k
 
 **简介**
 
@@ -194,13 +194,13 @@ SuiteCRM 提供完善的 REST API 和模块化扩展机制，可通过第三方�
 
 ### Monica
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmYxOWI1ZGQ5M2I5MzcwODlhMmJhZWI5NGRiOTE1N2JfRzlRWFJPaVRZWW9QTFIxVlFvTk44YzQ2bVl5dWNYMzhfVG9rZW46UnJ6MWJuRGVpb29XcDV4czM5Q2NXUmJoblZoXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Monica.png](https://static-docs.nocobase.com/Monica-bj87me.png)
 
-**官网：**[https://www.monicahq.com/](https://www.monicahq.com/)
+官网：[https://www.monicahq.com/](https://www.monicahq.com/)
 
-**GitHub 链接：**[https://github.com/monicahq/monica](https://github.com/monicahq/monica)
+GitHub 链接：[https://github.com/monicahq/monica](https://github.com/monicahq/monica)
 
-**GitHub Star 数：**23.8k
+GitHub Star 数：23.8k
 
 **简介**
 
@@ -212,13 +212,13 @@ Monica 提供了 REST API 和 Webhook 机制，可通过外部扩展或第三方
 
 ### Akaunting
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmNmYTYxZDllOTAwYWQxZTM1ODRkNjUzN2U5OWIyMjBfNGNCQWxROU9NaUN3NUF0Y1IxOGFGZEFWOFRrekhUdzVfVG9rZW46Qm8yaWJ6T0xzb1BtQW14d3NNTGNtcUZkbktoXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Akaunting.png](https://static-docs.nocobase.com/Akaunting-3j2qgv.png)
 
-**官网：**[https://akaunting.com/](https://akaunting.com/)
+官网：[https://akaunting.com/](https://akaunting.com/)
 
-**GitHub 链接：**[https://github.com/akaunting/akaunting](https://github.com/akaunting/akaunting)
+GitHub 链接：[https://github.com/akaunting/akaunting](https://github.com/akaunting/akaunting)
 
-**GitHub Star 数：**9.4k
+GitHub Star 数：9.4k
 
 **简介**
 
@@ -230,13 +230,13 @@ Akaunting 提供 REST API 以及应用（App）扩展体系，支持通过第三
 
 ### IDURAR
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTIyMGY4MDFmYjA2NDAxODYyZWVmM2I5ZWIyZDcyZDZfMnVJa3dOY2JPUVRhTVN1dmtVTmFkbWp6Uk1NWGtZbGRfVG9rZW46Q3lybWJ1NkFjb1hDbk94VEZmbWNYQUlkbmFjXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![IDURAR.png](https://static-docs.nocobase.com/IDURAR-vys5jd.png)
 
-**官网：**[https://www.idurarapp.com/](https://www.idurarapp.com/)
+官网：[https://www.idurarapp.com/](https://www.idurarapp.com/)
 
-**GitHub 链接：**[https://github.com/idurar/idurar-erp-crm](https://github.com/idurar/idurar-erp-crm)
+GitHub 链接：[https://github.com/idurar/idurar-erp-crm](https://github.com/idurar/idurar-erp-crm)
 
-**GitHub Star 数：**8.1k
+GitHub Star 数：8.1k
 
 **简介**
 
@@ -248,13 +248,13 @@ IDURAR 提供 API 接口与可扩展的系统架构，可通过外部服务或�
 
 ### Dolibarr
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTQ3OTVkNGUyYTgwOTE2Njc3ODAwMDc1NWViZmIwNWNfZXRWd01scHo0cHVtcEFuYUt5SDNtQVpzSk9qblFFRk9fVG9rZW46UUJZVWIyWHhHb1RsSXl4SmlVOWNqTjdZbk9lXzE3NjYzMzc1NjE6MTc2NjM0MTE2MV9WNA)
+![Dolibarr.png](https://static-docs.nocobase.com/Dolibarr-1j7qnu.png)
 
-**官网：**[https://www.dolibarr.org/](https://www.dolibarr.org/)
+官网：[https://www.dolibarr.org/](https://www.dolibarr.org/)
 
-**GitHub 链接：**[https://github.com/Dolibarr/dolibarr](https://github.com/Dolibarr/dolibarr)
+GitHub 链接：[https://github.com/Dolibarr/dolibarr](https://github.com/Dolibarr/dolibarr)
 
-**GitHub Star 数：**6.8k
+GitHub Star 数：6.8k
 
 **简介**
 
@@ -272,7 +272,7 @@ Dolibarr 提供 REST API 以及模块（Module）扩展机制，可通过外部�
 
 当然了，原生 AI CRM 同样支持插件和 API 扩展，而扩展型 CRM 在合理投入下也可以构建出较为完整的 AI 使用体验。在实际选择时，更重要的是结合自身业务所处阶段、技术能力以及对系统灵活性的需求，判断哪一类 CRM 更为合适。
 
-如果你觉得这篇文章对你有所帮助，欢迎分享给同样关注 AI + CRM 方向的朋友。
+如果你觉得这篇文章对你有所帮助，欢迎分享给同样关注 AI CRM 方向的朋友。
 
 相关阅读：
 
