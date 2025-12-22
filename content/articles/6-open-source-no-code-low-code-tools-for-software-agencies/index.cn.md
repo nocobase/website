@@ -8,11 +8,19 @@
 
 在一些[开发者社区里](https://www.reddit.com/r/nocode/comments/1g1plyf/what_is_wrong_with_vendor_lockin/)，大家对无代码的看法也差异很大：有人认为它能快速交付，有人则认为供应商锁定的风险以及**在复杂系统和长期维护上不那么可靠**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjFiZGE0ODZlMzAyMDcwMDE2N2ExYTRmNjE4ZjU3ZWVfWkpzRHh6eHFJM0RwTXl6V0xCbEpORjVsTzBxYzVBZFpfVG9rZW46RVQ2OGJ4MHVHbzJPM0t4VWJWUmNlRU14bkpjXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![reddit.PNG](https://static-docs.nocobase.com/720X720-m0s664.PNG)
 
 因此，这篇文章我们从外包交付的视角出发，帮你分析：**在开源无代码与低代码平台里，哪一个更适合被用来交付给客户长期使用？**
 
 💡 扩展阅读：[6个适合做 PoC 的开源无代码/低代码工具推荐](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
+
+---
+
+💬嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## **外包项目 vs 公司内部项目：本质区别在哪？**
 
@@ -62,7 +70,7 @@ NocoBase 是一款**开源、自托管的 AI 无代码/低代码开发平台**�
 
 从外包交付的角度看，NocoBase 更像是一套**灵活、轻量、可扩展的开发底座**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjA4MmY1ZjhjMjFiMDNmYzY1YmI4MGJiNTNiYmVjNjRfdzJPSGtGNTNzaGFGNUlhTWk2ZExyV3Z0ZFAxbzhnb3FfVG9rZW46WWtOdmJRUmdVb2ZLMGt4bVJLRGNvbGNGblFnXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![NocoBase.PNG](https://static-docs.nocobase.com/1280X1280%20(45)-nwyljo.PNG)
 
 **什么时候适合用 NocoBase 做外包项目？**
 
@@ -72,29 +80,31 @@ NocoBase 是一款**开源、自托管的 AI 无代码/低代码开发平台**�
 
 NocoBase 将 AI 作为“AI 员工”内置在系统中，AI 可以作为系统角色参与表单、流程和数据操作，其行为逻辑和权限边界是可配置、可控制的。这使它更适合交付带有智能辅助能力、且需要逐步引入 AI 的业务系统。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTE5YWUwZTI1ODAzNjM4YzhkN2EwNjI4OGUzNmRjOTlfZEZPazRJOWh1WHQ1NzhDSlgzdmhldUxFakd3MTRxRG1fVG9rZW46UG9oWmJ4QnBMb0RsMjd4UlA0MWNpUzlObmNkXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![AI Employee.png](https://static-docs.nocobase.com/94fe5c16-f0e2-49df-adf4-f4aa6cadfa7f-ydx3ki.png)
 
 比如，AI 员工可以直接读取系统内的线索数据进行分析。
 
-**2. 数据关系、权限和流程是系统核心复杂度的项目** 当项目涉及多个业务对象、复杂权限或跨角色流程流转时，系统级的数据关系、RBAC 和工作流能力会明显降低后期维护成本。
+**2. 数据关系、权限和流程是系统核心复杂度的项目** 
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzFiYzJhOTY4MTEwNDAyMGQ2MjhlNWE0NjQ1ODhhMGJfeWtyMzgyNGtDMzZzbEZQdG8wRnoyQWlFczh1Mjd4NFJfVG9rZW46UDVHZGIwOUVFb1BocTd4cVdzc2NZTEc2bnpiXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+当项目涉及多个业务对象、复杂权限或跨角色流程流转时，系统级的数据关系、RBAC 和工作流能力会明显降低后期维护成本。
+
+![data modeling.png](https://static-docs.nocobase.com/6dd829c6-de63-4534-aa65-5fbb2f6b3450-ijazui.png)
 
 这是 NocoBase 的数据设置界面。NocoBase 以数据为核心驱动力，支持主数据库、外部数据库（包括：MySQL、MariaDB、PostgreSQL、Oracle 等）、以及 API 等多种数据源。页面上的区块与操作与数据源完全解耦，使系统结构更贴近专业软件开发方式，能灵活应对各种复杂业务。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDY5MjMxYTNlYWFhNjVkODU2YTU5ODA4OTBkNWQwNWFfNjVIeFhiV3hjUUNTdExZM3h6ZVJlRlc0SXcwOHhjVFJfVG9rZW46TUhNSmJMWW82b1lmVGN4ZkFIV2NYOEJQblBlXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![field-level permission control.png](https://static-docs.nocobase.com/cd822014-956f-476c-938e-8d9a40992fb2-fq56hv.png)
 
 NocoBase 的权限设置可以到字段级别。
 
 **3. 需求会持续变化的系统** NocoBase 以数据模型为核心，先稳定结构，再配置界面、流程和权限，更适合在后期不断增加字段、关系和业务逻辑。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTY2YWEwN2Q2ZTEyNmVkMzg5ZDg0NDYzZTM0YTRiZTBfb1VqVXQ1N0U0NlpHQzNNVUFVMDlTZXFuMEVSMmhsVkhfVG9rZW46TzA0aWJlcWlXb3l6czF4WFJjQmNIeEUzbjVkXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![UI.png](https://static-docs.nocobase.com/448f7aac-a483-471f-a419-dce163adf67b-rbwhf8.png)
 
 在 NocoBase 中，前端页面的修改调整非常简单。点击右上角进入编辑模式，即可开始编辑与调整。
 
 **4. 需要定制和扩展的项目**  对于标准功能无法完全覆盖的场景，NocoBase 可以通过插件机制进行代码级扩展，而不是被限制在平台预设能力内。轻量功能还可以在前端使用 JS 区块完成，比如这几个字段的个性化展示。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTI1YTc2ZDk2MGY4YmM1YTcyNDg4YTcwOGMzMjI4OGFfMzJXR09kZTIyS3dkSDFUZmpFSGZZMVpMQW0weE9nNGdfVG9rZW46SHJLamJVU2tGb2RLM0d4OWxXbmMzbnk5bml4XzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![frontend JS blocks.png](https://static-docs.nocobase.com/f0bc985d-7aa5-4e4f-bb4f-81135c1aa756-p6kh42.png)
 
 **在外包中，NocoBase 常被用来交付的系统**
 
@@ -119,25 +129,25 @@ Appsmith 是一款开源、可自托管的无代码/低代码平台，核心定�
 
 从外包交付的角度看，Appsmith 更偏向于**界面层和工具型应用。**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmE0M2Q5YWI5MWZiYzA3OTZiMmQzZDcwYjFiMTFhOWRfUHFLWUlVMkp4ZzFLMlZSSDNVejVldW5Pa2dLTW4zQUJfVG9rZW46UlZhV2I4RmVxb3lFek14ejdjM2NnV01SblBiXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![Appsmith.png](https://static-docs.nocobase.com/f31dc2fb-9a7f-4eed-a67e-de3a1d5ff92a-fr0sr5.png)
 
 **什么时候适合用 Appsmith 做外包项目？**
 
 在外包场景中，Appsmith 通常适合以下几类项目：
 
-1. **以界面和数据操作为主的工具型项目**
+**1.以界面和数据操作为主的工具型项目**
 
 当项目目标是快速搭建管理后台、运营工具或数据操作界面，Appsmith 的组件化 UI 和 API 绑定方式可以显著缩短交付时间。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTMzZjEwYWM2OGViNGQ1ZGViMWE5NWQ0N2M5YzhhMzlfejA5eWU1Smd2VXhCcUV5cXFiTUhZZnhoMTFEcXY3eVBfVG9rZW46UndwTGJ3VnA3b0dvZ3l4ckdCeGNpUEpkbjZmXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![UI.png](https://static-docs.nocobase.com/3ea5fb6c-ead8-4d4a-95a8-9a49aee75c48-mbjbkv.png)
 
-2. **后端逻辑已经存在的项目**
+**2.后端逻辑已经存在的项目**
 
 如果客户已经有稳定的后端服务或数据库，只需要一个前端工具来做查询、编辑和简单操作，Appsmith 的使用成本较低。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmQ5MDcyZTk4ODE1N2E4ZDdlZTk0ZWQxN2EwMTI5YzJfUjRkWDBnSER3N0psNUtESUpvTFdQbGpRSEo3TFNzcEJfVG9rZW46V25paGJNUEJLb0JVWGJ4ZFZrdGMxaWJDbmxoXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![UI.png](https://static-docs.nocobase.com/3ea5fb6c-ead8-4d4a-95a8-9a49aee75c48-mbjbkv.png)
 
-3. **需求相对稳定、变更频率不高的项目**
+**3.需求相对稳定、变更频率不高的项目**
 
 在字段、数据关系和流程基本确定的情况下，Appsmith 可以较快完成交付，而不需要复杂的前期建模。
 
@@ -163,25 +173,25 @@ Budibase 是一款开源、可自托管的无代码平台，定位在**快速构
 
 从外包交付的角度看，Budibase 与 Appsmith 类似，擅长构建界面工具。如果有模版能满足你的需求，那么构建起来会非常迅速。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWJiYjEyM2YwMzlmY2Q3M2FkN2ZkYmUyYWU4NDdhOGVfdU1FeVU2N1oxMjVRTXZFdEVzUk5OZXZiclV0S0hmb3pfVG9rZW46RWNzVGI1dEI2b0ZlVVd4Q2xQc2NXMjBUbnVoXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![Budibase.png](https://static-docs.nocobase.com/d99173bc-e9b3-4837-abb3-486fc6f6bb56-k2fnmm.png)
 
 **什么时候适合用 Budibase 做外包项目？**
 
 在外包场景中，Budibase 通常适合以下几类项目：
 
-1. **中低复杂度的数据管理类系统**
+**1.中低复杂度的数据管理类系统**
 
 当项目以数据录入、查询、状态更新为主，且数据关系相对简单时，Budibase 可以较快完成交付。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmM5ZGY2YzgzMzY4NGFlOTY2OTRkYjliYTk3MTNjNWJfeG1ZYVFYNHF4b3MxOFNlUUpvU21MeVFKckJudXpwZDVfVG9rZW46T2kzOGJnYTJKb2xWajl4UDJkZWMwa1pQblNiXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![databases.png](https://static-docs.nocobase.com/b80cc4d9-2b74-4cd4-97e6-e976202255d8-v60vra.png)
 
-2. **需要较快落地的项目**
+**2.需要较快落地的项目**
 
 Budibase 的配置方式和内置组件可以帮助外包团队快速完成第一版，适合交付周期较短、后续改动有限的项目。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDdmZGY0MjJhN2JkZTUzNmQxMTE5ZDlkYzg0MGFkYTZfZm1SME1odlFVWnltbWtiNm5GM09oNllhVnRQUFZYdWpfVG9rZW46QXl1T2JMbm1Qb2YzdUp4REtRZWN3dXBqbmNmXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![UI components.png](https://static-docs.nocobase.com/f2ab748d-4e8e-4f3f-981f-cbd4ab7dab31-qmix9k.png)
 
-3. **基于现有数据库或表结构的应用**
+**3.基于现有数据库或表结构的应用**
 
 如果客户已经有明确的数据结构，Budibase 可以在此基础上直接构建应用界面，减少前期建模成本。
 
@@ -206,25 +216,25 @@ NocoDB 是一款开源、可自托管的无代码平台，核心定位是**将�
 
 从外包交付的角度看，NocoDB 更接近“数据库可视化与协作层”，而不是完整的业务系统框架。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDk5ZGM5OWU2ZTZlZjI0ODMyY2I0MTQxYjEyY2RlZTRfZ3EyNzZxT1lpOVc4STZYemI2QUY4VVFUWnRYNk1BYmtfVG9rZW46U0wzR2JKTjJEb3BjMmd4RFJDTmM2Zk9jbmZnXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![NocoDB.png](https://static-docs.nocobase.com/6322e1f7-36dc-4263-adec-a139784ce851-39wkzj.png)
 
 **什么时候适合用 NocoDB 做外包项目？**
 
 在外包场景中，NocoDB 适用的场景稍微有些局限，主要集中在“表格”类型的项目中。
 
-1. **以表格为核心的数据管理需求**
+**1.以表格为核心的数据管理需求**
 
 当客户需求本质上仍是“表格协作”，只是希望比 Excel 更安全、更可控，NocoDB 可以较快完成交付。
 
-2. **客户明确希望要 Airtable 的开源替代方案**
+**2.客户明确希望要 Airtable 的开源替代方案**
 
 在对 SaaS 有顾虑、但又不需要复杂流程和权限的情况下，NocoDB 是一个直接且易理解的选择。
 
-3. **数据结构相对固定的项目**
+**3.数据结构相对固定的项目**
 
 如果表结构基本稳定，且不涉及复杂关系或业务逻辑。NocoDB 支持 MySQL 和 PostgreSQL 两种外部数据源。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmRmZWY2ODUxMzFlNDhiNDhhY2I2ZjhiYmUwMzNkY2Ffa1FlbDA3MDN6bTM0dE15cERnVDNrNWphQTJsdEVPV2FfVG9rZW46Qm1FTmJ0NE1nb3NPTzN4RGJrZmNrRGNJbklmXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![MySQL and PostgreSQL.png](https://static-docs.nocobase.com/5ee128e4-bb07-41cb-9321-e1c32bca7b08-vvsw2p.png)
 
 **在外包中，NocoDB 常被用来交付的系统**
 
@@ -247,21 +257,21 @@ ToolJet 是一款开源、可自托管的低代码平台。用户可以通过自
 
 从外包交付的角度看，ToolJet 既具备低代码开发的可视化构建能力，又支持通过自然语言提示快速生成基础结构，但其核心适用领域仍然偏向于**内部工具和业务应用加速构建平台。**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDk4YjIzYjY3OGQwYzc5MDQyYTljYTRiOWQ3ODZmZGRfbXdxTnp5YXZqVWJGV1pSMHdxN3JCbGc3UUNFazZoNkxfVG9rZW46WFJ1bmJXVkg2b1Q0a2x4aVZPOGNuWndtbk1nXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![ToolJet.png](https://static-docs.nocobase.com/941b14d2-d59e-4940-8255-bde5298e7864-43c3vd.png)
 
 **什么时候适合用 ToolJet 做外包项目？**
 
-1. **需要快速从需求到应用原型的项目**
+**1.需要快速从需求到应用原型的项目**
 
 ToolJet 支持用自然语言描述需求并生成初始应用结构，加快从想法到可迭代应用的速度，适合外包团队在早期快速搭建原型和演示版本。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDFhZTVkN2U3ZjAzMTNlNzE4YzFmZWNhMTg3NDUxNWRfbWU3TElQR3JUdUlTN3ZEelR4djBoYnRHUHJGcFcyMm5fVG9rZW46UXVoQmJFUTN0b2lOUUl4WkVaQ2NDOU5Ubkt2XzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![describe requirements.png](https://static-docs.nocobase.com/a5e5b76b-a8dd-42dd-9fab-56120d8adbf7-sxzn7k.png)
 
-2. **以内部工具为主、数据整合驱动的应用**
+**2.以内部工具为主、数据整合驱动的应用**
 
 当项目目标是将数据库、API 或现有业务数据整合为一个内部使用的管理界面、仪表盘或操作面板时，ToolJet 的可视化界面和数据源连接能力能够降低开发成本。
 
-3. **需要简单流程或自动化触发的业务逻辑**
+**3.需要简单流程或自动化触发的业务逻辑**
 
 ToolJet 支持定义触发事件、工作流节点和自动化逻辑，可以满足一些基础的业务流程自动化需求。
 
@@ -286,21 +296,21 @@ Directus 是一款开源、可自托管的 Headless 平台，核心定位是**�
 
 从外包交付的角度看，Directus 更偏向于**数据与内容管理层**。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjY5YjZhNDY0ZDRmYjFlMzYzODE5NjcxZGQ4NTgwYzhfZHJ2Y216ZzZLNFM1SFVzdUVVUVFBRFNzd3hTVHpKRHRfVG9rZW46UHlFRGJyR0VHb3ZReFB4N3ZNYWNBakhxblJiXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![Directus.png](https://static-docs.nocobase.com/ea9cced2-111f-43a8-980c-c016e998457a-d0zdlr.png)
 
 **什么时候适合用 Directus 做外包项目？**
 
-1. **以内容或数据管理为核心的项目**
+**1.以内容或数据管理为核心的项目**
 
 当项目重点在于管理内容结构、数据权限和对外 API，Directus 非常适合。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY4MTQxNGNmNDFkY2YyOTAyMmY1ZjQ2OWI1MDU4NDJfTUxqUUtCZUdUbFJMY3pUYW9FbEMxTXJqWTJac0VUQU5fVG9rZW46U0xnSmJ1RUl2b0E5Mmt4cDRBOGN0Ymk3bkVnXzE3NjYzMzIzNTM6MTc2NjMzNTk1M19WNA)
+![managing content.png](https://static-docs.nocobase.com/a60780f9-605b-4319-821e-7f2f7f39e354-pwclss.png)
 
-2. **需要稳定数据模型和强权限控制的项目**
+**2.需要稳定数据模型和强权限控制的项目**
 
 Directus 在数据层权限控制和 API 生成方面能力较强，适合对数据访问有严格要求的场景。
 
-3. **作为系统中的“数据中台”或后端服务**
+**3.作为系统中的“数据中台”或后端服务**
 
 在一些外包项目中，Directus 更适合作为底层数据服务，为多个前端或应用提供统一的数据接口。
 
@@ -317,11 +327,24 @@ Directus 在数据层权限控制和 API 生成方面能力较强，适合对数
 
 开源无代码平台之间的最适合的**交付场景都有不同**。
 
-* **Appsmith、ToolJet、Budibase：**更偏向应用和工具层，适合快速构建内部工具、管理界面或原型，在交付效率和系统能力之间做了折中。
-* **NocoDB：**本质是表格协作和数据库可视化方案，更适合替代 Excel 或 Airtable。
-* **Directus：**更像数据和内容管理基础设施，适合作为系统后端或数据中台。
-* **NocoBase：**接近一个可扩展的业务系统底座，适合需求持续变化、数据关系复杂、权限和流程是核心问题的外包项目。
+* **Appsmith、ToolJet、Budibase：** 更偏向应用和工具层，适合快速构建内部工具、管理界面或原型，在交付效率和系统能力之间做了折中。
+* **NocoDB：** 本质是表格协作和数据库可视化方案，更适合替代 Excel 或 Airtable。
+* **Directus：** 更像数据和内容管理基础设施，适合作为系统后端或数据中台。
+* **NocoBase：** 接近一个可扩展的业务系统底座，适合需求持续变化、数据关系复杂、权限和流程是核心问题的外包项目。
 
 归根结底，最适合场景的工具才是最好的工具。
 
 ❤️ 感谢你阅读到最后，如果你认为这篇文章有帮助，欢迎分享给更多的朋友！
+
+
+
+**相关阅读：**
+
+* [如何快速搭建一个替换 Excel 的系统？（完整指南）](https://www.nocobase.com/cn/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [GitHub Star 数量前 5 的开源 AI 内部工具](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
+* [8 个最佳 Google Sheets 替代方案（附成本与能力分析）](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [6个适合做 PoC 的开源无代码/低代码工具推荐](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [给开发者的无代码/低代码技术决策指南（2026）](https://www.nocobase.com/cn/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企业级无代码低代码平台 RBAC 权限体系深度对比](https://www.nocobase.com/cn/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHub 上最值得关注的 14 个开源 AI 低代码工具](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)
+* [11 个在 GitHub 上最受欢迎的开源无代码 AI 工具](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)
