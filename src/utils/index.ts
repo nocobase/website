@@ -217,7 +217,8 @@ async function loadContent(
     en: 'index.md',
     cn: 'index.cn.md',
     ja: 'index.ja.md',
-    ru: 'index.ru.md'
+    ru: 'index.ru.md',
+    fr: 'index.fr.md'
   };
 
   const contentFile = contentFiles[locale] || contentFiles.en;
@@ -298,7 +299,7 @@ async function listContentItems(
 
       // Read content in different languages for articles
       if (contentType === 'articles') {
-        const languages = ['', '.cn', '.ja', '.ru'];
+        const languages = ['', '.cn', '.ja', '.ru', '.fr'];
         languages.forEach(lang => {
           const suffix = lang || '';
           const contentPath = path.join(contentDir, itemSlug, `index${suffix}.md`);
@@ -310,7 +311,7 @@ async function listContentItems(
         });
 
         // Fallback to default content
-        ['content_cn', 'content_ja', 'content_ru'].forEach(field => {
+        ['content_cn', 'content_ja', 'content_ru', 'content_fr'].forEach(field => {
           if (!metadata[field] && metadata.content) {
             metadata[field] = metadata.content;
           }
@@ -553,6 +554,7 @@ export async function getPluginsGrouped() {
       title_cn: '最新发布',
       title_ja: '新着リリース',
       title_ru: 'Недавно запущенные',
+      title_fr: 'Nouveautés',
       plugins: newlyPlugins,
     });
   }
@@ -564,6 +566,7 @@ export async function getPluginsGrouped() {
       title_cn: '即将发布',
       title_ja: '近日公開',
       title_ru: 'Скоро',
+      title_fr: 'À venir',
       plugins: comingPlugins,
     });
   }
@@ -594,6 +597,7 @@ function groupPluginsByCategory(plugins: any[]): any[] {
         title_cn: cat.title_cn,
         title_ja: cat.title_ja,
         title_ru: cat.title_ru,
+        title_fr: cat.title_fr,
         slug: cat.slug,
         sort: cat.sort,
         plugins: [],
@@ -649,7 +653,7 @@ export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
-  const locales = locale === '*' ? ['en', 'cn', 'ja', 'ru'] : [locale];
+  const locales = locale === '*' ? ['en', 'cn', 'ja', 'ru', 'fr'] : [locale];
 
   for (const post of data) {
     for (const currentLocale of locales) {
@@ -667,7 +671,8 @@ export async function getRssItems(locale = '*') {
         en: 'en-US',
         cn: 'zh-CN',
         ja: 'ja-JP',
-        ru: 'ru-RU'
+        ru: 'ru-RU',
+        fr: 'fr-FR'
       };
 
       items.push({
@@ -796,6 +801,7 @@ export async function getSitemapLinks() {
     { lang: 'zh-CN', url: `/cn${path}` },
     { lang: 'ja-JP', url: `/ja${path}` },
     { lang: 'ru-RU', url: `/ru${path}` },
+    { lang: 'fr-FR', url: `/fr${path}` },
     { lang: 'x-default', url: `/en${path}` },
   ];
 
@@ -807,6 +813,7 @@ export async function getSitemapLinks() {
         { lang: 'zh-CN', url: `/cn/` },
         { lang: 'ja-JP', url: `/ja/` },
         { lang: 'ru-RU', url: `/ru/` },
+        { lang: 'fr-FR', url: `/fr/` },
         { lang: 'x-default', url: `/` },
       ],
     },

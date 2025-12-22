@@ -1,0 +1,151 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, listPluginCategories } from "../../utils";
+
+const tabs = [
+  {
+    title: "All plugins",
+    link: "/en/plugins",
+  },
+  // {
+  //   title: "Commercial plugins",
+  //   link: "/en/plugins-commercial",
+  // },
+  {
+    title: "Plugin bundles",
+    link: "/en/plugins-bundles",
+    active: true,
+  },
+];
+
+const data = await listPluginCategories();
+const page = await getPage("plugins");
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title="Plugin bundle" description={description} keywords={keywords}>
+  <PageHeader title={title} tabs={tabs}>
+    <span slot="description" set:html={description}></span>
+    <a href="/en/contact" class="btn btn-outline-primary">Inquire to Buy<i class="uil uil-angle-right-b"></i></a>
+  </PageHeader>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card shadow border-0 rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">What are Plugin Points?</h5>
+                        <p class="text-muted">NocoBase offers dozens of commercial plugins (with more being added rapidly). To give users the flexibility to choose the plugins they need, we introduced the concept of "Plugin Points," where 1 point = 50 USD. For commercial plugins developed by NocoBase, in addition to purchasing plugins directly, you can also use points to redeem the plugins you need (note: plugin points are not applicable to plugins developed by third parties).</p>
+                    
+                        <p class="text-muted">On the <a href="/en/plugins">plugin list page</a>, you can see the price and corresponding points for each plugin. For example, the "Data source: External PostgreSQL" plugin is priced at $200 or 4 <i class="uil uil-moon-eclipse me-1"></i>.</p>
+                        
+                        <div class="col-lg-6 col-md-6 col-12 pt-0 pb-4">
+                            <div style="color: inherit;" class="card rounded shadow border-0 plugin-card">
+                                <div class="card-body"> 
+                                    <div class="mt-2 plugin-box"> 
+                                        <h6 class="card-title mb-1">Data source: External PostgreSQL</h6> 
+                                        <div class="plugin-developer text-muted mb-3">By <span>NocoBase</span></div> 
+                                        <p class="text-muted mb-2 plugin-overview">Connect an external PostgreSQL database as a data source.</p> 
+                    
+                                        <div class="plugin-footer"> 
+                                            <h6 class="text-primary mb-0"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Perpetual use, 1-year upgrades</span><br> 
+                                                <a href="/cn/plugins-bundles"> 2 <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">$100</span> 
+                                            </h6>
+                                            <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;"> 
+                                                <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Perpetual use and upgrades</span><br> 
+                                                <a class="text-muted" href="/cn/plugins-bundles"> 4 <i class="uil uil-moon-eclipse me-1"></i></a> 
+                                                <span class="text-muted">/</span> 
+                                                <span class="text-muted">$200</span> 
+                                            </h6> 
+                                        </div>
+                                    
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <p class="text-muted">If you have 32 <i class="uil uil-moon-eclipse me-1"></i>, you can redeem 16 plugins priced at $100, or 8 plugins priced at $200, or 1 plugin priced at $400 + 3 plugins priced at $200 + 6 plugins priced at $100.</p>
+                        <p class="text-muted">The remaining points in your account are valid indefinitely. You don't need to choose all plugins at once; you can select and redeem them progressively as you develop.</p>
+                    
+                        <h5 class="card-title mt-4">How to Earn Points</h5>
+                        <p class="text-muted">You can earn points through the following methods:</p>
+                        <ul class="text-muted">
+                            <li>Purchase a <a href="/en/commercial">commercial license</a>, which includes a certain number of plugin points</li>
+                            <li>Purchase a plugin bundle, which includes a certain number of plugin points</li>
+                            <li>As a representative user, share your company's or client's NocoBase usage story with the community and receive plugin points. <a href="/en/contact">Contact us for details</a></li>
+                        </ul>
+                    
+                        <h5 class="card-title mt-4">What is a Plugin Bundle?</h5>
+                        <p class="text-muted">If your company's payment process is complex, purchasing NocoBase plugins individually may be inconvenient. To address this, we've introduced plugin bundles. You can purchase a plugin bundle, which contains "points," and then redeem the plugins you need during your use of NocoBase.</p>
+                        <p class="text-muted">Additionally, we offer discounts on plugin bundles—the more points you purchase, the higher the discount.</p>
+                    
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center commercial-table">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col" class="col-sm-4">Bundle Name</th>
+                                        <th scope="col" class="col-sm-2">Points</th>
+                                        <th scope="col" class="col-sm-2">Regular Price</th>
+                                        <th scope="col" class="col-sm-2">Discount</th>
+                                        <th scope="col" class="col-sm-2">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">P8</td>
+                                        <td class="text-muted">8 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$400</td>
+                                        <td class="fst-italic text-muted"> </td>
+                                        <td class="fst-italic text-muted">$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P16</td>
+                                        <td class="text-muted">16 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$800</td>
+                                        <td class="fst-italic text-muted">2%</td>
+                                        <td class="fst-italic text-muted">$784</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P32</td>
+                                        <td class="text-muted">32 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$1,600</td>
+                                        <td class="fst-italic text-muted">5%</td>
+                                        <td class="fst-italic text-muted">$1,520</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P64</td>
+                                        <td class="text-muted">64 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$3,200</td>
+                                        <td class="fst-italic text-muted">10%</td>
+                                        <td class="fst-italic text-muted">$2,880</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">P128</td>
+                                        <td class="text-muted">128 <i class="uil uil-moon-eclipse me-1"></i></td>
+                                        <td class="fst-italic text-muted">$6,400</td>
+                                        <td class="fst-italic text-muted">20%</td>
+                                        <td class="fst-italic text-muted">$5,120</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Unlimited</td>
+                                        <td class="text-muted" colspan="3"><span style="font-weight: normal;font-style: italic;font-size: 12px;">Licensed to use all current and future commercial plugins developed by NocoBase.</span></td>
+                                        <td class="fst-italic text-muted">$10,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout><!--end section-->

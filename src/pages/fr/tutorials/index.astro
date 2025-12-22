@@ -1,0 +1,123 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage, listTutorialArticles } from "../../../utils";
+
+const page = await getPage("tutorials");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+// Increase pageSize to ensure we get all tutorials
+const tutorialsData = await listTutorialArticles({ pageSize: 1000 });
+
+// Define types for better TypeScript support
+interface TutorialItem {
+  title: string;
+  slug: string;
+  description?: string;
+  serials?: {
+    title: string;
+    description?: string;
+    sort: number;
+  };
+  serialsSort?: number;
+}
+
+interface SeriesData {
+  description: string;
+  articles: Array<{
+    title: string;
+    link: string;
+    description: string;
+  }>;
+}
+
+interface TutorialSeries {
+  seriesTitle: string;
+  description: string;
+  articles: Array<{
+    title: string;
+    link: string;
+    description: string;
+  }>;
+  sort: number;
+}
+
+// Group tutorials by series dynamically
+const tutorials = tutorialsData.data.reduce((acc: Record<string, SeriesData>, item: TutorialItem) => {
+  const seriesTitle = item.serials?.title || 'Uncategorized';
+  const seriesDescription = item.serials?.description || "";
+
+  // Initialize the series if not present in the accumulator
+  if (!acc[seriesTitle]) {
+    acc[seriesTitle] = {
+      description: seriesDescription,
+      articles: [],
+    };
+  }
+
+  // Add the tutorial to the respective series
+  acc[seriesTitle].articles.push({
+    title: item.title,
+    link: `/en/tutorials/${item.slug}`,
+    description: item.description || "",
+  });
+
+  return acc;
+}, {});
+
+// Convert the tutorials object into an array of series objects and sort by serials.sort
+const tutorialSeries: TutorialSeries[] = Object.entries(tutorials)
+  .map(([seriesTitle, seriesData]: [string, SeriesData]): TutorialSeries => ({
+    seriesTitle,
+    description: seriesData.description,
+    articles: seriesData.articles,
+    // Use serialsSort from the tutorial item directly, which is more reliable
+    sort: tutorialsData.data.find((item: TutorialItem) => item.serials?.title === seriesTitle)?.serials?.sort || 
+          tutorialsData.data.find((item: TutorialItem) => item.serials?.title === seriesTitle)?.serialsSort || 
+          999999
+  }))
+  .sort((a, b) => a.sort - b.sort);
+
+// Sort articles within each series by serialsSort
+tutorialSeries.forEach(series => {
+  series.articles.sort((a, b) => {
+    const aItem = tutorialsData.data.find((item: TutorialItem) => item.slug === a.link.split('/').pop());
+    const bItem = tutorialsData.data.find((item: TutorialItem) => item.slug === b.link.split('/').pop());
+    const aSort = aItem?.serialsSort || aItem?.serials?.sort || 999999;
+    const bSort = bItem?.serialsSort || bItem?.serials?.sort || 999999;
+    return aSort - bSort;
+  });
+});
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body">
+              {tutorialSeries.map((series: TutorialSeries) => (
+                  <>
+                    <h5 class="card-title">{series.seriesTitle}</h5>
+                    {series.description && <p class="text-muted">{series.description}</p>}
+                    <ul class="list-unstyled text-muted mb-4 pb-4">
+                      {series.articles.map((article: { title: string; link: string; description: string }) => (
+                          <li>
+                            <i data-feather="arrow-right" class="fea icon-sm me-2"></i>
+                            <a href={article.link} target="_blank">{article.title}</a>
+                          </li>
+                      ))}
+                    </ul>
+                  </>
+                ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

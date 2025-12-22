@@ -1,0 +1,644 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { listReleaseNotes, url, processor } from "../../../utils";
+
+const description = "Learn about the latest features, improvements, and bug fixes.";
+const basepath = "/en/blog";
+
+// Add this function to process markdown content
+async function renderMarkdown(content: string) {
+  // First process with existing processor
+  const { code } = await processor.render(content || '');
+  
+  // Then adjust heading levels by replacing h1-h6 tags
+  const adjustedCode = code
+    .replace(/<h1/g, '<h3')
+    .replace(/<\/h1>/g, '</h3>')
+    .replace(/<h2/g, '<h4')
+    .replace(/<\/h2>/g, '</h4>')
+    .replace(/<h3/g, '<h5')
+    .replace(/<\/h3>/g, '</h5>')
+    .replace(/<h4/g, '<h6')
+    .replace(/<\/h4>/g, '</h6>')
+    .replace(/<h5/g, '<h6')
+    .replace(/<\/h5>/g, '</h6>')
+    .replace(/<h6/g, '<h6')
+    .replace(/<\/h6>/g, '</h6>');
+    
+  return adjustedCode;
+}
+
+// Get first page of data (including milestone items)
+const { data: releaseNotes, meta: initialMeta } = await listReleaseNotes({ page: 1, pageSize: 20 });
+
+const allItems = await Promise.all(releaseNotes.map(async (article: any) => ({
+  ...article,
+  renderedContent: await renderMarkdown(article.content || '') // Process original content
+})));
+
+const filterTypes = [
+  { id: 'all', label: 'All', value: 'all', className: '' },
+  { id: 'milestone', label: 'Milestone', value: 'milestone', className: 'text-primary' },
+  { id: 'latest', label: 'latest', value: 'latest', className: 'text-info' },
+  { id: 'beta', label: 'beta', value: 'beta', className: 'text-warning' },
+  { id: 'alpha', label: 'alpha', value: 'alpha', className: 'text-danger' }
+];
+
+// Add helper function to get tag style class
+function getTagClassName(tag: string) {
+  const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+  return filterType ? `bg-${filterType.className.replace('text-', '')}` : 'bg-secondary';
+}
+
+const tabs = [
+  { title: "Home", link: "/en/" },
+  { title: "Blog", link: "/en/blog" },
+  { title: "Release Notes", active: true }
+];
+---
+
+<Layout title="Release Notes" description={description}>
+  <PageHeader
+    title="Release Notes"
+    description={description}
+    breadcrumb={tabs}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="filter-buttons text-center mb-4">
+            {filterTypes.map(filter => (
+              <div class="form-check form-check-inline">
+                <input 
+                  class="form-check-input" 
+                  type="radio" 
+                  name="filter-type"
+                  id={`filter-${filter.id}`}
+                  value={filter.value}
+                  checked={filter.value === 'all'}
+                />
+                <label class={`form-check-label ${filter.className}`} for={`filter-${filter.id}`}>
+                  {filter.label}
+                </label>
+              </div>
+            ))}
+          </div>
+          <div class="timeline-page position-relative" id="timeline-container">
+            {allItems.map(article => (
+              <div class="timeline-item mt-4" data-tags={article.tags.join(',')}>
+                <div class="row">
+                  <div class="col-lg-3 col-md-3" style="width: 24.65%;">
+                    <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                      <FormattedDate date={article.publishedAt} />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-9 col-md-9">
+                    {article.isMilestone ? (
+                      <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
+                        {article.cover && (
+                          <img src={url(article.cover.url)} class="img-fluid" alt={article.title} />
+                        )}
+                        <div class="card-body">
+                          <h4>
+                            <a href={`${basepath}/${article.slug}`}>
+                              {article.title}
+                            </a>
+                          </h4>
+                          <p class="mt-3 mb-0 text-muted">{article.description}</p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div class="card event rounded shadow border-0 overflow-hidden float-start">
+                        <div class="card-body">
+                          <h5 class="h5">
+                            <a href={`${basepath}/${article.slug}`}>
+                              {article.title}
+                            </a>
+                          </h5>
+                          <div class="text-muted mt-2" set:html={article.renderedContent} />
+                          {article.tags.length > 0 && (
+                            <div class="mt-2">
+                              {article.tags.map((tag: string) => (
+                                <span class={`badge me-1 ${getTagClassName(tag)}`}>{tag}</span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Loading indicator -->
+          <div id="loading-indicator" class="text-center mt-4 d-none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Loading more content...</p>
+          </div>
+          
+          <!-- Load more button -->
+          <div id="load-more-button" class="text-center mt-4">
+            <button class="btn btn-primary">Load more</button>
+          </div>
+          
+          <!-- No more content message -->
+          <div id="no-more-content" class="text-center mt-4 d-none">
+            <p class="text-muted">No more content to load</p>
+          </div>
+          
+          <!-- Initial metadata -->
+          <div id="initial-meta" class="d-none" data-meta={JSON.stringify(initialMeta)}></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.timeline-page:after {
+  right: auto;
+  left: 24%;
+}
+
+.card.event img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card.event {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .timeline-page:after {
+    left: 0;
+  }
+}
+</style>
+
+<script is:inline>
+  // Run after page load
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get initial metadata
+    const initialMeta = JSON.parse(document.getElementById('initial-meta')?.dataset.meta || '{}');
+    let currentPage = 1;
+    let isLoading = false;
+    let hasMoreContent = initialMeta?.hasMore !== false; // 基于初始元数据设置
+    let currentFilter = 'all';
+    let allLoadedItems = []; // Store all loaded items
+    let milestoneItems = []; // Store milestone items separately
+    let milestoneLoaded = false; // Track if milestone data is loaded
+    let milestoneLoading = false; // Track if milestone data is currently loading
+    
+    // Standard page size for all requests
+    const pageSize = 20;
+    
+    console.log('Page initialized', { 
+      initialMeta, 
+      hasMoreContent,
+      currentFilter
+    });
+
+    // Initialize: collect initial items
+    const initialItems = [];
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      const dataItem = extractDataFromElement(item);
+      if (dataItem) {
+        initialItems.push(dataItem);
+      }
+    });
+    allLoadedItems = [...initialItems];
+    console.log('Initial items collected:', initialItems.length);
+    
+    // Extract data from DOM element
+    function extractDataFromElement(element) {
+      try {
+        const tagsAttr = element.dataset.tags || '';
+        const tags = tagsAttr ? tagsAttr.split(',') : [];
+        
+        const titleElement = element.querySelector('h5 a, h4 a');
+        const contentElement = element.querySelector('.text-muted.mt-2');
+        const descriptionElement = element.querySelector('.mt-3.mb-0.text-muted');
+        const dateElement = element.querySelector('.duration.date-label-left');
+        const coverElement = element.querySelector('.milestone img');
+        
+        return {
+          title: titleElement ? titleElement.innerText : '',
+          renderedContent: contentElement ? contentElement.innerHTML : '',
+          description: descriptionElement ? descriptionElement.innerText : '',
+          publishedAt: dateElement ? dateElement.innerText : '',
+          tags: tags,
+          slug: titleElement ? titleElement.getAttribute('href').split('/').pop() : '',
+          isMilestone: element.querySelector('.milestone') !== null,
+          cover: coverElement ? { url: coverElement.getAttribute('src') } : null
+        };
+      } catch (error) {
+        console.error('Error extracting data:', error);
+        return null;
+      }
+    }
+    
+    // Format date
+    function formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    }
+    
+    // Get tag class name
+    function getTagClassName(tag) {
+      const filterTypes = [
+        { value: 'milestone', className: 'bg-primary' },
+        { value: 'latest', className: 'bg-info' },
+        { value: 'beta', className: 'bg-warning' },
+        { value: 'alpha', className: 'bg-danger' }
+      ];
+      
+      const filterType = filterTypes.find(f => f.value === tag.toLowerCase());
+      return filterType ? filterType.className : 'bg-secondary';
+    }
+
+    // Render new articles to the page
+    function renderNewItems(items, append = true) {
+      const container = document.getElementById('timeline-container');
+      if (!container) {
+        console.error('Container element not found');
+        return;
+      }
+      
+      // If not in append mode, clear the container
+      if (!append) {
+        container.innerHTML = '';
+      }
+      
+      console.log(`Rendering ${items.length} new items`);
+      
+      items.forEach(item => {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'timeline-item mt-4';
+        articleDiv.dataset.tags = item.tags.join(',');
+        
+        const articleHtml = `
+          <div class="row">
+            <div class="col-lg-3 col-md-3" style="width: 24.65%;">
+              <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">
+                ${formatDate(new Date(item.publishedAt))}
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-9">
+              ${item.isMilestone ? `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start milestone">
+                  ${item.cover ? `<img src="${item.cover.url}" class="img-fluid" alt="${item.title}" />` : ''}
+                  <div class="card-body">
+                    <h4>
+                      <a href="/en/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h4>
+                    <p class="mt-3 mb-0 text-muted">${item.description}</p>
+                  </div>
+                </div>
+              ` : `
+                <div class="card event rounded shadow border-0 overflow-hidden float-start">
+                  <div class="card-body">
+                    <h5>
+                      <a href="/en/blog/${item.slug}">
+                        ${item.title}
+                      </a>
+                    </h5>
+                    <div class="text-muted mt-2">${item.renderedContent}</div>
+                    ${item.tags.length > 0 ? `
+                      <div class="mt-2">
+                        ${item.tags.map(tag => `
+                          <span class="badge me-1 ${getTagClassName(tag)}">${tag}</span>
+                        `).join('')}
+                      </div>
+                    ` : ''}
+                  </div>
+                </div>
+              `}
+            </div>
+          </div>
+        `;
+        
+        articleDiv.innerHTML = articleHtml;
+        container.appendChild(articleDiv);
+      });
+      
+      // Apply current filter
+      applyCurrentFilter();
+    }
+    
+    // Apply current filter
+    function applyCurrentFilter() {
+      console.log('Applying current filter:', currentFilter);
+      let visibleCount = 0;
+      
+      // Count visible items before filtering
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        if (!(item instanceof HTMLElement)) return;
+        
+        const tagsAttr = item.dataset.tags || '';
+        const tags = tagsAttr ? tagsAttr.split(',').map(t => t.toLowerCase()) : [];
+        let isVisible = false;
+        
+        // Determine visibility based on filter
+        if (currentFilter === 'all') {
+          isVisible = true;
+        } else if (currentFilter === 'milestone') {
+          isVisible = item.querySelector('.milestone') !== null;
+        } else {
+          isVisible = tags.includes(currentFilter);
+        }
+        
+        // Apply visibility
+        item.style.display = isVisible ? 'block' : 'none';
+        
+        if (isVisible) {
+          visibleCount++;
+        }
+      });
+      
+      console.log(`Filter applied: ${visibleCount} items visible`);
+      
+      // Update load more button visibility
+      updateLoadMoreVisibility();
+    }
+    
+    // Update load more button and message visibility
+    function updateLoadMoreVisibility() {
+      const loadMoreButton = document.getElementById('load-more-button');
+      const noMoreContent = document.getElementById('no-more-content');
+      
+      // Show load more button if there's more content to load
+      const shouldShowLoadMore = hasMoreContent && currentFilter !== 'milestone';
+      
+      if (loadMoreButton) {
+        loadMoreButton.style.display = shouldShowLoadMore ? 'block' : 'none';
+      }
+      
+      if (noMoreContent) {
+        noMoreContent.style.display = !shouldShowLoadMore ? 'block' : 'none';
+      }
+    }
+    
+    // Load milestone data separately
+    async function loadMilestoneData(showLoading = true) {
+      if (milestoneLoaded) {
+        console.log('Milestone data already loaded');
+        return;
+      }
+      
+      if (milestoneLoading) {
+        console.log('Milestone data is already loading, waiting...');
+        // 如果正在加载且用户要求显示loading，则显示指示器
+        if (showLoading) {
+          const loadingIndicator = document.getElementById('loading-indicator');
+          if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+        }
+        
+        // 等待当前加载完成
+        while (milestoneLoading && !milestoneLoaded) {
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+        
+        // 隐藏loading指示器
+        if (showLoading) {
+          const loadingIndicator = document.getElementById('loading-indicator');
+          if (loadingIndicator) loadingIndicator.classList.add('d-none');
+        }
+        
+        return;
+      }
+      
+      milestoneLoading = true;
+      console.log('Loading milestone data...');
+      
+      // Show loading indicator for milestone (only if explicitly requested)
+      let loadingIndicator;
+      if (showLoading) {
+        loadingIndicator = document.getElementById('loading-indicator');
+        if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+      }
+      
+      try {
+        const timestamp = new Date().getTime();
+        const url = `/api/release-notes?milestoneOnly=true&pageSize=50&lang=en&_t=${timestamp}`;
+        
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        console.log('Milestone data loaded:', data.items.length, 'items');
+        
+        if (data.items && data.items.length > 0) {
+          milestoneItems = data.items;
+          milestoneLoaded = true;
+          
+          // If currently showing milestone filter, clear container and render the items
+          if (currentFilter === 'milestone') {
+            const container = document.getElementById('timeline-container');
+            if (container) {
+              container.innerHTML = '';
+            }
+            renderNewItems(milestoneItems, false);
+          }
+        }
+      } catch (error) {
+        console.error('Error loading milestone data:', error);
+      } finally {
+        milestoneLoading = false;
+        // Hide loading indicator (only if it was shown)
+        if (showLoading && loadingIndicator) {
+          loadingIndicator.classList.add('d-none');
+        }
+      }
+    }
+    
+    // Load more content (for non-milestone filters)
+    async function loadMoreContent() {
+      if (isLoading || currentFilter === 'milestone') {
+        console.log('Loading in progress or milestone filter active');
+        return;
+      }
+      
+      isLoading = true;
+      console.log('Loading more content, page:', currentPage + 1);
+      
+      // Show loading indicator
+      const loadingIndicator = document.getElementById('loading-indicator');
+      if (loadingIndicator) loadingIndicator.classList.remove('d-none');
+      
+      // Hide load button
+      const loadMoreButton = document.getElementById('load-more-button');
+      if (loadMoreButton) loadMoreButton.classList.add('d-none');
+      
+      try {
+        const nextPage = currentPage + 1;
+        const timestamp = new Date().getTime();
+        const url = `/api/release-notes?page=${nextPage}&pageSize=${pageSize}&lang=en&_t=${timestamp}`;
+        
+        const response = await fetch(url);
+              if (!response.ok) {
+                throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+              }
+        
+        const data = await response.json();
+        console.log('Loaded data:', data.items.length, 'items');
+        
+        if (data.items && data.items.length > 0) {
+          currentPage = nextPage;
+          allLoadedItems = [...allLoadedItems, ...data.items];
+          
+          // Render new content
+          renderNewItems(data.items);
+          console.log('Successfully loaded and rendered new content');
+        } else {
+          // 如果没有新项目返回，强制设置hasMoreContent为false
+          hasMoreContent = false;
+        }
+        
+        // Update hasMoreContent based on API response
+        // 如果没有返回新的items，强制设置为false
+        if (!data.items || data.items.length === 0) {
+          hasMoreContent = false;
+        } else {
+          hasMoreContent = data.meta?.hasMore || false;
+        }
+        
+      } catch (error) {
+        console.error('Error loading more content:', error);
+        hasMoreContent = true; // Keep trying on error
+      } finally {
+        isLoading = false;
+        const loadingIndicator = document.getElementById('loading-indicator');
+        if (loadingIndicator) loadingIndicator.classList.add('d-none');
+        
+        updateLoadMoreVisibility();
+      }
+    }
+    
+    // Apply filter
+    function applyFilter(filterValue) {
+      console.log('Applying filter:', filterValue);
+      currentFilter = filterValue.toLowerCase();
+      
+      // Always clear the container first to avoid stale data
+      const container = document.getElementById('timeline-container');
+      if (container) {
+        container.innerHTML = '';
+      }
+      
+      if (currentFilter === 'milestone') {
+        // Load milestone data if not loaded yet (with loading indicator)
+        if (!milestoneLoaded) {
+          loadMilestoneData(true);
+        } else {
+          // Render milestone items immediately if already loaded
+          renderNewItems(milestoneItems, false);
+        }
+            } else {
+        // For non-milestone filters, only render regular loaded items
+        renderNewItems(allLoadedItems, false);
+      }
+      
+      // Apply filter to current items
+      applyCurrentFilter();
+    }
+    
+    // Helper function to combine and sort items by date
+    function combineAndSortItems(regularItems, milestoneItems) {
+      // Create a map to avoid duplicates (based on slug)
+      const itemMap = new Map();
+      
+      // Add regular items
+      regularItems.forEach(item => {
+        itemMap.set(item.slug, item);
+      });
+      
+      // Add milestone items (they will override regular items with same slug)
+      milestoneItems.forEach(item => {
+        itemMap.set(item.slug, item);
+      });
+      
+      // Convert back to array and sort by published date
+      return Array.from(itemMap.values()).sort((a, b) => {
+        const dateA = new Date(a.publishedAt);
+        const dateB = new Date(b.publishedAt);
+        return dateB.getTime() - dateA.getTime();
+      });
+    }
+    
+    // Set load more button click event
+    const loadMoreButton = document.getElementById('load-more-button');
+    if (loadMoreButton) {
+      console.log('Setting up load more button click event');
+      const btn = loadMoreButton.querySelector('button');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          console.log('Load more button clicked');
+          loadMoreContent();
+        });
+      }
+    }
+    
+    // Scroll detection function for auto-loading
+    function handleScroll() {
+      // Check if we need to load more (only for non-milestone filters)
+      if (isLoading || currentFilter === 'milestone') {
+        return; // Still loading or milestone filter active
+      }
+      
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.body.offsetHeight;
+      const scrollPercentage = scrollPosition / pageHeight;
+      const scrollThreshold = 0.8; // Trigger loading at 80% scroll
+      
+      if (scrollPercentage >= scrollThreshold && hasMoreContent) {
+        console.log('Scroll loading triggered at', Math.round(scrollPercentage * 100) + '%');
+          loadMoreContent();
+      }
+    }
+    
+    // Set up scroll listener with debounce to avoid too many events
+    console.log('Setting up scroll listener');
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 150);
+    });
+    
+    // Set up filter listeners
+    console.log('Setting up filter listeners');
+    document.querySelectorAll('.form-check-input').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const target = e.target;
+        if (!(target instanceof HTMLInputElement)) return;
+        
+        console.log('Filter changed:', target.value);
+        applyFilter(target.value);
+      });
+    });
+    
+    // Initialize: apply default filter
+    applyFilter('all');
+    
+    // Preload milestone data in background after a short delay
+    setTimeout(() => {
+      console.log('Preloading milestone data in background...');
+      loadMilestoneData(false); // Load without showing loading indicator
+    }, 1000); // Wait 1 second after page load to avoid interfering with initial rendering
+  });
+</script>

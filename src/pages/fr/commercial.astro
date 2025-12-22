@@ -1,0 +1,920 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import BaseLayout from "../../layouts/BaseEN.astro";
+import { getPage } from "../../utils";
+
+const page = await getPage("commercial");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<BaseLayout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <!-- Which Edition Start -->
+  <section class="section pb-0" id="experience">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">Quelle édition choisir&nbsp;?</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mt-4 pt-2">
+          <div class="timeline-page position-relative">
+            <div class="timeline-item">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Community Edition, Gratuit</h5>
+                    <small class="text-muted mb-0">Le choix adapté à la majorité des équipes</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">À privilégier lorsque vous avez besoin</h6>
+                    <ul class="text-muted">
+                      <li>D’une plateforme no-code servant d’infrastructure à votre équipe pour construire des applications métiers et des outils internes</li>
+                      <li>De l’intégralité du code source, d’un déploiement sur vos propres serveurs et d’un contrôle total</li>
+                      <li>D’un socle fonctionnel riche permettant de couvrir la plupart des besoins standard</li>
+                      <li>De la majorité des capacités d’agents IA (AI employees) prêtes à l’emploi</li>
+                      <li>De la liberté d’étendre les fonctionnalités sans verrouillage éditeur</li>
+                      <li>De la possibilité d’installer et de développer vos propres plugins</li>
+                      <li>D’un nombre illimité d’applications, sans limite d’utilisateurs ni de volume de données</li>
+                      <li>D’accepter l’affichage discret du logo NocoBase dans l’interface</li>
+                      <li>D’un appui de la communauté NocoBase pour les questions techniques</li>
+                      <li>D’être en mesure de contribuer vos plugins développés à la communauté open source</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Standard Edition, $800</h5>
+                    <small class="text-muted mb-0">L’édition idéale pour un usage récurrent</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">À choisir lorsque vous avez aussi besoin</h6>
+                    <ul class="text-muted">
+                      <li>De conserver votre propre code et vos plugins en mode propriétaire (non open source)</li>
+                      <li>De remplacer le logo NocoBase par votre propre marque</li>
+                      <li>D’un paiement unique pour un droit d’usage à vie</li>
+                      <li>De 8 points pour obtenir des plugins commerciaux</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Professional Edition, $8,000</h5>
+                    <small class="text-muted mb-0">Pensée pour les équipes expertes et les intégrateurs</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">À choisir lorsque vous avez aussi besoin</h6>
+                    <ul class="text-muted">
+                      <li>D’utiliser NocoBase pour construire des applications destinées à vos clients</li>
+                      <li>De déployer et d’administrer plusieurs applications dans une architecture multi-application pour des contextes multi-tenant</li>
+                      <li>De gérer plusieurs espaces (multi-space) pour des réseaux multi-sites, multi-agences, multi-usines, etc.</li>
+                      <li>De tracer et de visualiser l’historique complet des modifications de chaque enregistrement</li>
+                      <li>De planifier des sauvegardes automatiques des données</li>
+                      <li>D’équiper les agents IA d’une base de connaissances RAG intégrée</li>
+                      <li>De capacités de sécurité renforcées</li>
+                      <li>De workflows de développement avancés avec plusieurs environnements (développement, test, production)</li>
+                      <li>D’un accompagnement à l’usage dédié par l’équipe NocoBase</li>
+                      <li>De 64 points pour obtenir des plugins commerciaux</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Enterprise Edition, Nous contacter</h5>
+                    <small class="text-muted mb-0">Pour les grands systèmes et organisations exigeantes</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">À choisir lorsque vous avez aussi besoin</h6>
+                    <ul class="text-muted">
+                      <li>D’un déploiement en cluster de vos applications NocoBase</li>
+                      <li>D’un journal détaillé des actions des utilisateurs, à des fins d’audit</li>
+                      <li>De capacités de télémétrie complètes&nbsp;: logs, métriques et traces</li>
+                      <li>D’intégrer vos propres modèles de langage (LLM) auto-hébergés pour alimenter les agents IA</li>
+                      <li>De prioriser vos besoins fonctionnels dans la feuille de route NocoBase</li>
+                      <li>De temps de réponse plus courts et d’un support dédié de l’équipe NocoBase sur une durée étendue</li>
+                      <li>De prestations de développement sur mesure par l’équipe cœur (plugins, intégrations tierces, etc.)</li>
+                      <li>D’un accès illimité à l’ensemble des plugins commerciaux actuels et futurs développés par NocoBase</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+
+          </div><!--end timeline page-->
+          <!-- TIMELINE END -->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!--Which Editon End-->
+
+  <!-- Licenses Start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">Comparer les éditions</h4>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="component-wrapper">
+            <div class="p-4">
+              <div class="table-responsive bg-white">
+                <table class="table mb-0 table-center commercial-table">
+                  <thead class="">
+                  <tr>
+                    <th scope="col" class="col-sm-4"></th>
+                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Community<br>Edition</h5></th>
+                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Standard<br>Edition</h5></th>
+                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Professional<br>Edition</h5></th>
+                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Enterprise<br>Edition</h5></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="compare-item text-muted">Tarif</td>
+                    <td class="fw-bold fst-italic">Gratuit</td>
+                    <td class="fw-bold fst-italic">$800</td>
+                    <td class="fw-bold fst-italic">$8,000</td>
+                    <td class="fw-bold fst-italic">Nous contacter</td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Licence</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Type de licence</td>
+                    <td class="text-nowrap">
+                      Community license
+                      <a href="https://www.nocobase.com/en/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Voir le détail de la licence">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td class="text-nowrap">
+                      Commercial license
+                      <a href="https://www.nocobase.com/en/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Voir le détail de la licence">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td class="text-nowrap">
+                      Commercial license
+                      <a href="https://www.nocobase.com/en/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Voir le détail de la licence">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td class="text-nowrap">
+                      Commercial license
+                      <a href="https://www.nocobase.com/en/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Voir le détail de la licence">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Licence à vie
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="La licence est valable à vie&nbsp;: vous pouvez utiliser NocoBase de façon permanente, sans renouvellement annuel.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Période de mises à jour
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Pendant la période de mise à jour, vous pouvez installer gratuitement les nouvelles versions. Une fois cette période terminée, vous pouvez continuer à utiliser votre version actuelle sans limite de temps.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td>-</td>
+                    <td>1 an</td>
+                    <td>1 an</td>
+                    <td>1 an</td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Plugins commerciaux</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Packs de plugins inclus
+                      <a href="/en/plugins-bundles" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Voir la liste des packs de plugins">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td>-</td>
+                    <td>P8</td>
+                    <td>P64</td>
+                    <td>Illimité</td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Restrictions d’usage</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Utilisateurs illimités</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Applications illimitées</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Enregistrements illimités</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Installation de plugins gratuits ou commerciaux</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Développer des applications pour un usage interne</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Garder votre code propriétaire (non open source)
+                    </td>
+                    <td>
+                      <i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i>
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Votre propre code et vos plugins doivent être publiés sous licence AGPL 3.0.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted text-nowrap">
+                      Utiliser votre propre marque dans l’interface
+                    </td>
+                    <td>
+                      <i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i>
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Les mentions de copyright et de version NocoBase dans l’interface ne peuvent pas être supprimées ni modifiées.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Développer des applications pour des clients</td>
+                    <td>-</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Accès au code source des plugins commerciaux</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Fonctionnalités</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Multi-applications
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Utiliser plusieurs instances NocoBase dans une logique d’application «&nbsp;parent-enfant&nbsp;», adaptée notamment aux scénarios multi-tenant.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Multi-espaces
+                      <a href="https://v2.docs.nocobase.com/multi-app/multi-space" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Gestion des migrations & releases
+                      <a href="https://v2.docs.nocobase.com/ops-management/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Déploiement en cluster
+                      <a href="https://v2.docs.nocobase.com/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Télémétrie
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Journaux, métriques, traces">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Agents IA</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Agents IA intégrés</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Extension libre des agents IA</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Connexion aux LLM du marché</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Appel d’outils (tools calling)</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Bases de connaissances RAG</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <!-- <tr>
+                    <td class="compare-item text-muted">Connect privately deployed LLM</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr> -->
+                  <tr>
+                    <th class="compare-item">Sécurité</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Variables et Secrets
+                      <a href="https://v2.docs.nocobase.com/ops-management/variables-and-secrets/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Politique de jeton (Token Policy)
+                      <a href="https://v2.docs.nocobase.com/security/token-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Politique de mot de passe
+                      <a href="https://v2.docs.nocobase.com/security/password-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Verrouillage de compte
+                      <a href="https://v2.docs.nocobase.com/security/password-policy/lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Sauvegarde automatique
+                      <a href="https://v2.docs.nocobase.com/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Historique des enregistrements
+                      <a href="https://v2.docs.nocobase.com/record-history" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Chiffrement des échanges API
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Les données sont chiffrées lors de leur transmission HTTP.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Restriction d’IP
+                      <a href="https://v2.docs.nocobase.com/security/ip-restriction/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Authentification à deux facteurs
+                      <a href="https://v2.docs.nocobase.com/auth-verification/2fa/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Journal d’audit
+                      <a href="https://v2.docs.nocobase.com/security/audit-logger/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i>
+                      </a>
+                    </td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <th class="compare-item">Support & accompagnement</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Support communautaire</td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Correction prioritaire des bugs</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Conseil d’usage dédié</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Conseil dédié au développement</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Priorisation des demandes de nouvelles fonctionnalités</td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Durée du support</td>
+                    <td>-</td>
+                    <td>1 an</td>
+                    <td>1 an</td>
+                    <td>1 an</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Nombre de tickets d’usage
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Pendant la période de support, vous bénéficiez d’un nombre défini de tickets d’assistance à l’usage (hors remontée de bugs). Au-delà, des tickets supplémentaires peuvent être achetés.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Illimité</td>
+                    <td>Illimité</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">
+                      Nombre de tickets de développement
+                      <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Pendant la période de support, l’équipe cœur NocoBase peut vous accompagner sur le développement de plugins, les intégrations tierces, la rédaction de documentation et les contributions au cœur. Des tickets supplémentaires peuvent être achetés si besoin.">
+                        <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i>
+                      </a>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td class="compare-item text-muted">Délai de première réponse</td>
+                    <td>-</td>
+                    <td>24 heures</td>
+                    <td>12 heures</td>
+                    <td>4 heures</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Licenses end -->
+
+  <!-- FAQ start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h3 class="mb-4">Questions fréquentes</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-1">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-1" aria-expanded="false" aria-controls="collapse1-1">
+                  Que signifie exactement «&nbsp;licence à vie&nbsp;»&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse1-1" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-1"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    La licence n’a pas de date d’expiration et ne nécessite aucun renouvellement annuel. Une fois la licence commerciale ou le plugin acheté, vous disposez d’un droit d’usage permanent de la version acquise.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+                  Comment continuer à bénéficier des mises à jour et du support après la fin de la période de mises à jour&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse1-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    À l’issue de la période de mises à jour, vous pouvez continuer à utiliser votre version actuelle de NocoBase sans limite de temps. Pour bénéficier à nouveau d’un an de mises à jour et de support, il est possible de racheter ce service pour 30&nbsp;% du prix initial de la licence.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                  Faut-il une licence commerciale pour utiliser NocoBase dans un contexte professionnel&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Non. Le cœur de NocoBase et les plugins open source sont distribués sous licence AGPL&nbsp;3.0. Tant que vous respectez cette licence et conservez les informations de copyright et de version NocoBase dans l’interface, vous pouvez l’utiliser gratuitement y compris dans un contexte commercial.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Dans quels cas dois-je acheter une licence commerciale&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">
+                    Une licence commerciale est nécessaire si vous vous trouvez dans l’un des cas suivants&nbsp;:
+                  </p>
+                  <ul class="text-muted">
+                    <li>Vous avez modifié le code de NocoBase ou développé vos propres plugins et vous ne souhaitez pas publier ces développements sous licence AGPL.</li>
+                    <li>Vous intégrez NocoBase dans votre propre produit et ne souhaitez pas que ce produit soit soumis à la licence AGPL.</li>
+                    <li>Vous souhaitez remplacer les mentions de copyright et de version NocoBase (pied de page, coin supérieur droit) par votre propre marque.</li>
+                    <li>Vous avez besoin de fonctionnalités de sécurité avancées, telles que la gestion dynamique des accès, les journaux d’audit et les sauvegardes automatiques.</li>
+                    <li>Vous avez besoin de capacités avancées de développement et de déploiement&nbsp;: multi-applications, isolation par environnement, architecture distribuée, etc.</li>
+                    <li>Vous souhaitez bénéficier d’un support technique avancé directement par l’équipe NocoBase.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Dois-je acheter des plugins commerciaux en plus de la licence commerciale&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">
+                    Chaque édition commerciale inclut un certain nombre de points de plugins, utilisables pour activer les plugins commerciaux de votre choix, sans achat supplémentaire. Si vous avez besoin de davantage de plugins après épuisement des points, vous pouvez les acquérir séparément.
+                  </p>
+                  <p class="answer text-muted mb-0 pb-2">
+                    Lors d’un achat séparé, vous pouvez&nbsp;:
+                  </p>
+                  <ul class="text-muted">
+                    <li>Acquérir uniquement les plugins nécessaires, un par un.</li>
+                    <li>Si vous avez besoin de nombreux plugins, acheter d’abord un <a href="https://www.nocobase.com/en/plugins-bundles" target="_blank">pack de plugins</a> à tarif préférentiel, puis utiliser ce pack pour les activer.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading4-2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4-2" aria-expanded="false" aria-controls="collapse4-2">
+                  Puis-je acheter des plugins commerciaux sans licence commerciale&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse4-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading4-2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">
+                    Oui. Les plugins commerciaux et les licences commerciales sont indépendants. Les plugins commerciaux apportent des fonctionnalités avancées qui peuvent être installées sur une instance NocoBase open source ou licenciée. Lorsque vous achetez une licence commerciale, un volume de points de plugins est également inclus.
+                  </p>
+                  <p class="answer text-muted mb-0 pb-2">
+                    Vous pouvez donc&nbsp;:
+                  </p>
+                  <ul class="text-muted">
+                    <li>Acheter une licence commerciale et utiliser les points inclus pour activer les plugins commerciaux de votre choix.</li>
+                    <li>Acheter une licence commerciale et, si besoin, acquérir d’autres plugins commerciaux séparément.</li>
+                    <li>N’acheter que des plugins commerciaux afin d’enrichir une instance NocoBase open source.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Une même licence peut-elle être utilisée pour plusieurs entreprises&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="heading6"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    L’édition Standard est réservée aux usages internes de l’entité détentrice de la licence. Les éditions Professional et Enterprise permettent, elles, de développer des applications pour vos clients ou de commercialiser des solutions construites sur NocoBase.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Si le produit livré au client ne lui donne pas accès aux fonctions de configuration, et qu’il se limite à l’utilisation de ce que vous avez développé, seule votre organisation doit détenir une licence commerciale.
+                    </li>
+                    <li>
+                      Si le produit livré au client lui donne accès aux fonctions de configuration NocoBase (paramétrages, création de vues, automatisations, etc.), ce client doit lui aussi disposer d’une licence commerciale.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Les plugins commerciaux peuvent-ils être utilisés pour plusieurs entreprises&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="heading7"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Les plugins commerciaux sont rattachés à une licence, et leur périmètre d’utilisation dépend du type de licence. Avec une licence Professional ou Enterprise, vous pouvez les utiliser pour développer des applications destinées à vos clients. Avec les licences Community ou Standard, les plugins commerciaux sont réservés aux usages internes de votre organisation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  Est-il possible de changer d’édition par la suite&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse border-0 collapse" aria-labelledby="heading8"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Vous pouvez passer d’une édition inférieure à une édition supérieure, mais l’inverse n’est pas possible. <br/>
+                    Lors d’une montée d’édition, la différence de prix est calculée au prorata de la période de mises à jour restante, et les points de plugins sont ajustés de la même manière. <br/>
+                    Par exemple, si vous utilisez actuellement l’édition Standard avec 6&nbsp;mois de mises à jour restantes, le passage à l’édition Professional donnerait&nbsp;: <br/>
+                    8000 - 800 * (6/12) = 7600
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  Puis-je tester la solution avant de m’engager&nbsp;?
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="heading9"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Oui, bien sûr. Vous pouvez créer en quelques instants un environnement de démonstration dédié incluant l’ensemble des plugins commerciaux NocoBase&nbsp;: <a href="https://demo.nocobase.com/new" target="_blank">Lancer un environnement de test</a><br>
+                    L’environnement est valide pendant 48&nbsp;heures par défaut. Pour une période d’essai plus longue, vous pouvez nous contacter à&nbsp;: hello@nocobase.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+  <!-- Contact start -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <h3>Comment acheter&nbsp;?</h3>
+        <p class="para-desc text-center mx-auto text-muted">
+          Contactez-nous par e-mail pour définir avec l’équipe cœur NocoBase le dispositif le plus adapté à votre organisation. Vous pourrez ensuite vous connecter à la plateforme de services commerciaux NocoBase, sélectionner les licences et plugins nécessaires, générer un bon de commande et finaliser votre achat.
+        </p>
+        <div class="mt-4 pt-2 text-center">
+          <a href="https://www.nocobase.com/en/contact" class="btn btn-primary">
+            Nous contacter <i class="uil uil-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact end -->
+</BaseLayout>

@@ -1,0 +1,612 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// Import interactive demo data
+import extensionDemoGuides from "../../../data/ticketing-extension-demo-en.json";
+
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// Define plugin names used in ticketing system
+const ticketingPluginNames = [
+  "Email Manager",
+  "Collection: Comment",
+  "File Manager",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables"
+];
+
+// Match plugin data by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get ticketing system related plugins
+const ticketingPlugins = ticketingPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// Debug info
+console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
+---
+
+<Layout
+  title="Efficient and Convenient Ticketing Management System"
+  description="NocoBase ticketing management system serves as an important complement to CRM, providing complete ticket lifecycle management, from customer contact creation to ticket assignment and processing, achieving full-process digital management."
+  keywords="NocoBase Ticketing System, Ticket Management, Customer Service System, After-sales Service, Ticket Assignment"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">Efficient and Convenient<br/>Ticketing Management System</h1>
+            <p class="para-desc text-muted">NocoBase ticketing management system serves as an important complement to CRM, providing complete ticket lifecycle management. From customer contact creation to ticket entry, assignment, processing and tracking, achieving full-process digital management of after-sales service.</p>
+            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
+              <small class="text-muted">
+                <i class="uil uil-info-circle"></i> Built with NocoBase 1.x (2.0 in development)
+              </small>
+            </div>
+
+            <!-- Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Use Cases:</span>
+                  <span class="badge bg-soft-primary me-2">Customer Service</span>
+                  <span class="badge bg-soft-primary">After-sales Support</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Developer:</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live demo
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Deploy to Your Environment
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- Ticketing System Preview -->
+            <div class="position-relative">
+              <img 
+                src="https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png" 
+                alt="NocoBase Ticketing Management System Preview" 
+                class="img-fluid rounded shadow"
+                style="max-height: 400px; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">NocoBase Ticketing Management System Features</h4>
+            <p class="para-desc mx-auto text-muted mb-0">As an important complement to the CRM system, providing professional customer service and after-sales support management</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-ticket rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Complete Ticket Lifecycle</h5>
+              <p class="text-muted mt-2">From ticket creation, assignment, processing to closure, full-process management ensures every ticket is properly handled</p>
+              <i class="uil uil-ticket full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-users-alt rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Smart Assignment & Tracking</h5>
+              <p class="text-muted mt-2">Automatically assign tasks based on ticket types and team member skills, real-time tracking of processing progress and status</p>
+              <i class="uil uil-users-alt full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-envelope rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Multi-channel Communication Records</h5>
+              <p class="text-muted mt-2">Sync email, phone, online chat and other communication channels via API, unified management of customer communication records</p>
+              <i class="uil uil-envelope full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Open Source, Complete Data Control</h5>
+              <p class="text-muted mt-2">Open source code, private data deployment, ensuring enterprise data security and autonomous control</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Try Ticketing Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- Using extension function interactive demo -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Try Now
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Deploy to Your Environment
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try Ticketing Extension End -->
+
+  <!-- Development Tutorial Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Ticketing System Development Tutorial</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Learn how to build a professional ticketing management system using NocoBase from scratch</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-play h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Data Model Design</h5>
+                <p class="text-muted text-center">Learn how to create basic data structures and relationships for tickets, customers, categories, etc.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-arrow-growth h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Workflow Configuration</h5>
+                <p class="text-muted text-center">Set up ticket assignment, status transitions and automated processing workflows</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-bell h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Notifications & Reminders</h5>
+                <p class="text-muted text-center">Configure email and system notifications to ensure timely ticket processing</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Commercial Plugins Used in Ticketing System</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Learn how to get more powerful features through commercial plugins to enhance the professionalism and usability of your ticketing system</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- Dynamic plugin cards -->
+        {ticketingPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Details</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
+                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
+                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_usd || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- Placeholder card for layout -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">More Plugins Coming Soon</h6>
+                  <p class="text-muted small">We are developing more useful commercial plugins, stay tuned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/en/plugins-commercial" class="btn btn-primary me-3">View All Commercial Plugins</a>
+          <a href="/en/commercial" class="btn btn-outline-primary">Learn About Pricing</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">How to Use?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Three steps to quickly deploy NocoBase CRM system with ticketing management functionality to your environment</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Install NocoBase System</h5>
+                <p class="text-muted mt-2">Deploy NocoBase system to your server following our installation documentation</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">View Installation Guide</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Download CRM System Template</h5>
+                <p class="text-muted mt-2">Download the complete CRM template to get ticketing management capability</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Download SQL File</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Download Backup File (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Restore in System</h5>
+                <p class="text-muted mt-2">Import the CRM template file into your NocoBase system to get both CRM and ticketing management capabilities</p>
+              </div>
+              <div class="mt-3">
+                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Restoration Tutorial</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Ticketing feature explanation -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
+            <div class="d-flex align-items-start">
+              <div class="flex-shrink-0 me-3">
+                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-2 text-dark fw-medium">Tip</h6>
+                <p class="mb-0 text-muted">The ticketing management system is fully integrated into the CRM template as an important supplementary module. After deployment, you can directly use the complete ticketing management functionality within the CRM system to achieve full-process customer service management.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- How to Extend Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">How to Extend?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Further extend and customize your ticketing management system based on business needs</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Ticket Types & Category Management</h5>
+                  <p class="text-muted mb-3">Create different ticket categories and processing rules based on business needs</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-users-alt h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Team Collaboration Features</h5>
+                  <p class="text-muted mb-3">Set up team roles, permissions and collaborative workflows</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-chart-line h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">Statistical Reports & Analytics</h5>
+                  <p class="text-muted mb-3">Build analytical reports for ticket processing status and efficiency</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link-h h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">CRM System Integration</h5>
+                  <p class="text-muted mb-3">Seamlessly integrate with existing CRM systems for data sharing</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">Coming Soon</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Extend End -->
+
+  <!-- CTA Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Ready to Use NocoBase Ticketing Management System?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Deploy a dedicated ticketing management demo in 1 minute. As an important complement to CRM, achieve a complete customer service system to improve customer satisfaction and service efficiency.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live demo
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>Deploy to Your Environment
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* Ticketing management system styles - reference CRM page styles */
+#ticket-demo-wrap {
+  position: relative;
+}
+
+/* Commercial plugin card styles */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+.plugin-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+</style> 
