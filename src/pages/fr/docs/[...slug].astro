@@ -1,0 +1,76 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Toc from "../../../components/Toc.astro";
+
+import Menu from "../../../components/Menu.astro";
+import Layout from "../../../layouts/Layout.astro";
+import sidebar from "../../../sidebar";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const posts = await getCollection("docs-en");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+type Props = CollectionEntry<"docs-cn">;
+
+const post = Astro.props;
+const { Content, headings } = await post.render();
+const showToc = post.data.toc !== false && headings.length > 0;
+const groupName = Astro.url.pathname.split("/")?.[3] || "";
+const groups = sidebar[groupName];
+---
+
+<Layout>
+  <section class="section">
+    <div class="container bd-layout">
+      <main class="bd-main">
+        <div class={"blog-container row"}>
+          <aside class="col bd-sidebar">
+            <nav class="bd-links">
+              <Menu basename={'/en/docs'} items={groups} />
+            </nav>
+          </aside>
+          <div class="col-8 markdown-body">
+            <Content />
+          </div>
+          <div class="col markdown-toc">
+            {showToc && <Toc headings={headings} />}
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bd-layout {
+    display: flex;
+    margin-top: 50px;
+  }
+  .bd-links {
+    position: sticky;
+    top: 150px;
+    height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  .markdown-body {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+  .bd-sidebar {
+    /* width: 220px; */
+    /* padding-right: 20px; */
+  }
+  .bd-main {
+    /* flex: 1; */
+    /* width: calc(100% - 300px); */
+  }
+  #topnav {
+    border-bottom: 1px solid #dd;
+  }
+</style>

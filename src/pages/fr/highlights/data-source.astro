@@ -1,0 +1,89 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
+
+const page = await getPage("data-source");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description" set:html={description}></span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Bloc 1 -->
+      <div class="row align-items-top">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Connectez <span class="text-primary">toutes vos sources de données</span> et unifiez votre pilotage</h5>
+            <p class="text-muted">
+              Les données sont souvent réparties entre le CRM, l’ERP, la comptabilité ou les systèmes de gestion internes.
+              Avec NocoBase, vous centralisez ces informations dans une interface unique, réduisez les aller-retour entre outils,
+              supprimez les silos et simplifiez l’exploitation de vos données métiers.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc 2 -->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Faites interagir vos systèmes côté interface avec les <span class="text-primary">Event Flows</span></h5>
+            <p class="text-muted">
+              Lorsque plusieurs sources de données sont utilisées sur une même page, les Event Flows orchestrent leurs interactions
+              en temps réel. Résultat : une vue unifiée qui combine plusieurs systèmes sans développement complexe.<br>
+              Exemple : afficher la fiche d’un client depuis le CRM et, simultanément, ses commandes provenant de l’ERP.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc 3 -->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Automatisez vos processus multi-systèmes avec les <span class="text-primary">Workflows</span></h5>
+            <p class="text-muted">
+              Les Workflows permettent d’automatiser vos règles métiers entre différentes applications : ERP, CRM,
+              back-office, outils internes… Tous vos systèmes peuvent réagir ensemble, sans intégration lourde.<br>
+              Exemple : lorsqu’une commande est validée dans l’ERP, les informations du client sont automatiquement mises à jour dans le CRM.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Highlights End -->
+</Layout>

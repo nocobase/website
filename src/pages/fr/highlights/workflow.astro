@@ -1,0 +1,113 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
+
+const page = await getPage("workflow");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description" set:html={description}></span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Building Workflows with <span class="text-primary">Triggers and Actions</span></h5>
+            <p class="text-muted">A NocoBase workflow consists of one trigger and a series of action nodes. The trigger initiates the workflow, and the actions are executed node by node.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Logic Validation</span> Before Form Submission</h5>
+            <p class="text-muted">Pre-action events are triggered before an action is executed. For example, when a salesperson submits an order, the system needs to check whether inventory is sufficient.<br>If stock is insufficient, the workflow automatically blocks the submission and alerts the user, preventing overselling or data errors.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Passing Data Between <span class="text-primary">Multiple Data Sources</span></h5>
+            <p class="text-muted">When a NocoBase application includes multiple data sources, workflows can orchestrate logic between them to achieve backend automation. For example, when a new order is created in the ERP, the customer’s level in the CRM should automatically be upgraded to “Paid”.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Receiving <span class="text-primary">External Data</span> with Webhook Trigger</h5>
+            <p class="text-muted">With Webhook trigger, NocoBase can receive data from external systems and automatically perform specified actions.<br>For example, in an external customer support system, whenever a user submits new feedback, the data can be sent to NocoBase to automatically create a new ticket record.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.4-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Connecting to <span class="text-primary">External Systems</span> with HTTP Request Node</h5>
+            <p class="text-muted">With HTTP Request nodes, NocoBase can actively interact with external systems — calling APIs, pushing data automatically, and receiving responses.<br>For example, when the shipping status is updated in NocoBase, the order information can be automatically pushed to a logistics platform.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.5-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Debugging</span>, Version Control, and Execution Tracking</h5>
+            <p class="text-muted">NocoBase workflows provide capabilities for manual debugging, version control, and log tracking — making development, testing, and execution traceability easier and more reliable.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.7-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>

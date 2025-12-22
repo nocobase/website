@@ -3,16 +3,27 @@ import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
 import BaseLayoutJA from "./BaseJA.astro";
 import BaseLayoutRU from "./BaseRU.astro";
+import BaseLayoutFR from "./BaseFR.astro";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
 const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/");
 const ru = Astro.url.pathname == "/ru" || Astro.url.pathname.startsWith("/ru/");
+const fr = Astro.url.pathname == "/fr" || Astro.url.pathname.startsWith("/fr/");
 const { title, description, keywords, image } = Astro.props;
 ---
 
 {
-    ru ? (
+    fr ? (
+    <BaseLayoutFR
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutFR>
+        ) : ru ? (
     <BaseLayoutRU
             title={title}
             description={description}

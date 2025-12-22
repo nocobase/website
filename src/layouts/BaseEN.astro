@@ -7,12 +7,12 @@ const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
 // Define the list of supported languages
-const supportedLanguages = ['en', 'cn', 'ja', 'ru'];
+const supportedLanguages = ['en', 'cn', 'ja', 'ru', 'fr'];
 // Get the current path
 const currentPath = Astro.url.pathname;
 
-// Regular expression to match paths starting with /en/, /cn/, /ja/, or /ru/
-const langPrefixRegex = /^\/(en|cn|ja|ru)(\/|$)/;
+// Regular expression to match paths starting with /en/, /cn/, /ja/, /ru/ or /fr/
+const langPrefixRegex = /^\/(en|cn|ja|ru|fr)(\/|$)/;
 
 // Function to generate URLs for different languages
 const generateUrl = (lang) => {
@@ -30,13 +30,15 @@ let urlCN = generateUrl('cn').replace(/\/$/, ''); // Remove the trailing slash t
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
 let urlRU = generateUrl('ru').replace(/\/$/, '');
+let urlFR = generateUrl('fr').replace(/\/$/, '');
 
 // Special handling for the root path
-if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/ru') {
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/ru'|| currentPath === '/fr') {
   urlCN = '/cn';
   urlEN = '/';
   urlJA = '/ja';
   urlRU = '/ru';
+  urlFR = '/fr';
 }
 
 // Ensure the English homepage is '/'
@@ -80,6 +82,7 @@ const meta = {
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
     <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
     <link rel="alternate" href={new URL(urlRU, Astro.site)} hreflang="ru-ru">
+    <link rel="alternate" href={new URL(urlFR, Astro.site)} hreflang="fr-FR">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
