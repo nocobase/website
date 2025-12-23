@@ -34,7 +34,7 @@
 
 ![nocobase1.PNG](https://static-docs.nocobase.com/2-1gg8bi.PNG)
 
-官网：[https://www.nocobase.com/cn/]([https://www.nocobase.com/cn/](https://www.nocobase.com/cn/))
+官网：[https://www.nocobase.com/cn/](https://www.nocobase.com/cn/)
 
 文档：[https://v2.docs.nocobase.com/cn/](https://v2.docs.nocobase.com/cn/)
 
@@ -128,7 +128,7 @@ Redash 本身不内置 AI 功能，但由于 Redash 完全基于 SQL 查询和 A
 
 官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 
-文档：[https://www.appsmith.com/ai/low-code]([https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code))
+文档：[https://www.appsmith.com/ai/low-code](https://www.appsmith.com/ai/low-code)
 
 GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
