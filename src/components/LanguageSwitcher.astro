@@ -4,12 +4,13 @@ const supportedLanguages = [
     { code: 'cn', label: '简体中文' },
     { code: 'ja', label: '日本語' },
     { code: 'ru', label: 'Русский' },
+    { code: 'fr', label: 'Français' },
 ];
 
 const currentLang = Astro.url.pathname.split('/')[1] || 'en';
 
 const generateUrl = (lang) => {
-    const pathWithoutLang = Astro.url.pathname.replace(/^\/(en|cn|ja|ru)/, '');
+    const pathWithoutLang = Astro.url.pathname.replace(/^\/(en|cn|ja|ru|fr)/, '');
     return pathWithoutLang ? `/${lang}${pathWithoutLang}` : `/${lang}/`;
 };
 ---

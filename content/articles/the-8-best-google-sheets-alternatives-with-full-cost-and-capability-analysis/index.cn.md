@@ -10,6 +10,12 @@
 
 本质上，Google Sheets 的定位始终是电子表格，而不是业务系统。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 因此，当团队尝试用它承载 CRM、项目管理、资产登记或审批流程时，往往会遇到数据关系难以维护、权限管理受限、自动化链路难以扩展等问题。
 
 基于这些真实的使用背景，我整理了几类常见的替代工具，希望能帮助你在不同阶段、不同需求下，找到比 Google Sheets 更适合的选择。
@@ -126,7 +132,7 @@ Retool 是一个用于快速构建内部工具的闭源 SaaS 平台，也提供�
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-hm5lub.png)
 
-官网：[https://appsmith.com/]([https://appsmith.com/)
+官网：[https://appsmith.com/](https://appsmith.com/)
 
 Appsmith 是一个开源低代码／无代码平台，专为构建内部工具、后台系统和管理面板设计。它允许用户通过拖拽组件、连接数据库或 API、编写少量脚本，快速搭建业务界面，也支持自托管部署，对数据安全和隐私有更好控制。
 
@@ -149,7 +155,7 @@ Appsmith 是一个开源低代码／无代码平台，专为构建内部工具�
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-9y12px.png)
 
-官网：[https://budibase.com/]([https://budibase.com/)
+官网：[https://budibase.com/](https://budibase.com/)
 
 Budibase 是一个开源的低代码平台，用于构建内部工具和管理后台。它支持自托管，也支持部署到云端，对于需要掌控数据安全或希望在本地运行系统的团队来说更加灵活。
 
@@ -195,7 +201,7 @@ Baserow 是一个开源、以数据库为核心的数据管理工具。它提供
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-49hta1.png)
 
-官网：[https://nocodb.com/]([https://nocodb.com/)
+官网：[https://nocodb.com/](https://nocodb.com/)
 
 NocoDB 是一个开源的电子表格风格数据库管理工具。它提供类似 Airtable 的界面体验，但底层使用真实的关系型数据库，并支持自托管部署。团队可以将现有的 MySQL、PostgreSQL 或其他数据库直接连接到 NocoDB，让原本需要工程师才能管理的数据库以更可视化的方式呈现。
 
@@ -271,7 +277,6 @@ Google Sheets 是一个优秀的表格工具，但并不是为业务系统而设
 希望这一份工具清单，能够让团队在评估替代方案时有更清晰的视角——从使用场景、核心能力到价格与成本，帮助你在早期就判断哪种工具更贴近自己的实际需求。
 
 如果这些内容对你有启发，也欢迎你分享给同样在寻找工具的团队，也许能帮助更多人更快地找到合适的方案。
-
 
 相关阅读：
 

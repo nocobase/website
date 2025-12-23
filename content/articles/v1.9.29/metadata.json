@@ -1,0 +1,93 @@
+{
+  "id": 821,
+  "title": "NocoBase v1.9.29: Fix missing migration description and set the current time as the default",
+  "title_cn": "NocoBase v1.9.29：修复用户输入的迁移描述丢失问题，并使用当前时间作为默认迁移描述",
+  "title_ja": "NocoBase v1.9.29：ユーザー入力のマイグレーション説明が失われる不具合を修正し、未入力時は現在時刻をデフォルトの説明として設定するよう改善",
+  "description": "Release Note of v1.9.29",
+  "description_cn": "v1.9.29 更新日志",
+  "description_ja": "v1.9.29  リリースノート",
+  "slug": "v1.9.29",
+  "publishedAt": "2025-12-18T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-12-18T07:33:01.992Z",
+        "updatedAt": "2025-12-18T07:33:01.992Z",
+        "tagId": 4,
+        "articleId": 821
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-21T12:05:17.473Z",
+        "updatedAt": "2025-12-21T12:05:17.473Z",
+        "articles_id": 821,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-12-21T12:04:10.102Z",
+    "updatedAt": "2025-12-21T12:04:10.108Z",
+    "id": 2119,
+    "title": "main (6)",
+    "filename": "main (6)-52o8ft.jpg",
+    "extname": ".jpg",
+    "size": 90034,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(6)-52o8ft.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20(6)-52o8ft.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-21T12:05:17.450Z"
+}

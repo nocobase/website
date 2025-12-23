@@ -10,6 +10,12 @@ On [Hacker News](https://news.ycombinator.com/item?id=39155449), many users are 
 
 At its core, Google Sheets is still a spreadsheet, not a business system.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 This is why teams trying to use it for CRM, project management, asset tracking, or approval workflows often face issues such as fragile data relationships, limited permission control, and automation that is difficult to extend.
 
 Based on these real world experiences, I have grouped several common types of alternatives to help you find options that may suit different stages and needs better than Google Sheets.

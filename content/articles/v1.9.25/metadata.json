@@ -1,0 +1,93 @@
+{
+  "id": 811,
+  "title": "NocoBase v1.9.25: Add fault-tolerant logic for data missing in the processor preparation",
+  "title_cn": "NocoBase v1.9.25：为执行器的准备阶段增加容错逻辑",
+  "title_ja": "NocoBase v1.9.25：実行器の準備フェーズに耐障害性を持たせ",
+  "description": "Release Note of v1.9.25",
+  "description_cn": "v1.9.25 更新日志",
+  "description_ja": "v1.9.25 リリースノート",
+  "slug": "v1.9.25",
+  "publishedAt": "2025-12-12T04:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2025-12-12T02:45:41.458Z",
+        "updatedAt": "2025-12-12T02:45:41.458Z",
+        "tagId": 4,
+        "articleId": 811
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-12T14:04:15.772Z",
+        "updatedAt": "2025-12-12T14:04:15.772Z",
+        "articles_id": 811,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2025-12-12T14:01:33.029Z",
+    "updatedAt": "2025-12-12T14:01:33.043Z",
+    "id": 2107,
+    "title": "main (2)",
+    "filename": "main (2)-vf12c3.jpg",
+    "extname": ".jpg",
+    "size": 90062,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(2)-vf12c3.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20(2)-vf12c3.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-12T14:04:15.758Z"
+}

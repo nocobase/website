@@ -7,12 +7,12 @@ const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
 // 定义支持的语言列表
-const supportedLanguages = ['en', 'cn', 'ja', 'ru'];
+const supportedLanguages = ['en', 'cn', 'ja', 'ru', 'fr'];
 // 获取当前路径
 const currentPath = Astro.url.pathname;
 
 // 正则表达式匹配以 /en/、/cn/、/ja/ 或 /ru/ 开头的路径
-const langPrefixRegex = /^\/(en|cn|ja|ru)(\/|$)/;
+const langPrefixRegex = /^\/(en|cn|ja|ru|fr)(\/|$)/;
 
 // 函数用于生成不同语言的 URL
 const generateUrl = (lang: string) => {
@@ -30,6 +30,7 @@ let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
 let urlRU = generateUrl('ru').replace(/\/$/, '');
+let urlFR = generateUrl('fr').replace(/\/$/, '');
 
 // 特殊处理根路径
 if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/ru') {
@@ -37,6 +38,7 @@ if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || c
   urlEN = '/';
   urlJA = '/ja';
   urlRU = '/ru';
+  urlFR = '/fr';
 }
 
 // 确保英文主页是 '/'

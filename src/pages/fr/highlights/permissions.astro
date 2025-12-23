@@ -1,0 +1,68 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
+
+const page = await getPage("permissions");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description" set:html={description}></span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">System Permission</span> Control</h5>
+            <p class="text-muted">When developing with NocoBase, you can assign different system permissions to different developers, ensuring that each person can only operate on authorized modules.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/PM-4.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Fine-Grained Control over <span class="text-primary">Row-Level and Field-Level</span> Permissions</h5>
+            <p class="text-muted">NocoBase supports fine-grained control over both row-level and field-level permissions, ensuring that employees can only access and modify data they are authorized to.<br>For example, a salesperson can view and edit information for customers they are responsible for, view but not edit customers handled by others in their department, and cannot see the total order amount of all customers.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/PM-4.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Multiple Roles</span> and Combined Permissions for a Single User</h5>
+            <p class="text-muted">When a page contains multiple blocks and actions, we can use event flows to orchestrate their interaction logic. For example, when viewing a customer in the CRM, we can simultaneously query that customer's order records from the ERP system.  - In business systems, users often take on multiple roles at the same time. NocoBase supports assigning multiple roles to a single user and provides three permission strategies to meet different needs.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/PM-4.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>
