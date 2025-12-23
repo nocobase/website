@@ -29,7 +29,7 @@ AI 時代において、どの内部ツールが依然として有力なのか�
 
 | GitHub アドレス          | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)           |
 | ------------------------ | -------------------------------------------------------------------------------------- |
-| 公式サイト               | [https://www.nocobase.com/]([https://www.nocobase.com/](https://www.nocobase.com/))    |
+| 公式サイト               | [https://www.nocobase.com/](https://www.nocobase.com/)                                 |
 | オープンソースライセンス | AGPL-3.0                                                                               |
 | GitHub Star 数           | 20.5k                                                                                  |
 | GitHub Fork 数           | 2.3k                                                                                   |
@@ -76,17 +76,17 @@ CRM や工単、在庫、プロジェクト管理などのデータ構造を作�
 ![budibase.png](https://static-docs.nocobase.com/budibase-wahysy.png)
 
 
-| GitHub アドレス          | [https://github.com/Budibase/budibase]([https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)) |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| 公式サイト               | [https://budibase.com/](https://budibase.com/)                                                                       |
-| オープンソースライセンス | GPL-v3                                                                                                               |
-| GitHub Star 数           | 27.4k                                                                                                                |
-| GitHub Fork 数           | 2k                                                                                                                   |
-| GitHub Issue 数          | 294                                                                                                                  |
-| GitHub Pull Request 数   | 12                                                                                                                   |
-| GitHub Contributor 数    | 112                                                                                                                  |
-| GitHub 最終更新          | 当日                                                                                                                 |
-| 関連ドキュメント         | [https://docs.budibase.com/docs/quickstart-budibase-ai](https://docs.budibase.com/docs/quickstart-budibase-ai)       |
+| GitHub アドレス          | [https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)                                   |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| 公式サイト               | [https://budibase.com/](https://budibase.com/)                                                                 |
+| オープンソースライセンス | GPL-v3                                                                                                         |
+| GitHub Star 数           | 27.4k                                                                                                          |
+| GitHub Fork 数           | 2k                                                                                                             |
+| GitHub Issue 数          | 294                                                                                                            |
+| GitHub Pull Request 数   | 12                                                                                                             |
+| GitHub Contributor 数    | 112                                                                                                            |
+| GitHub 最終更新          | 当日                                                                                                           |
+| 関連ドキュメント         | [https://docs.budibase.com/docs/quickstart-budibase-ai](https://docs.budibase.com/docs/quickstart-budibase-ai) |
 
 **ツール紹介**
 
@@ -219,7 +219,7 @@ Appsmith では、アプリ作成時に AI が文脈に応じた支援を行い�
 
 💡おすすめ記事：[NocoBase と Appsmith の比較](https://www.nocobase.com/ja/blog/nocobase-vs-appsmith)
 
-また、前述の5つの主要プロジェクト以外にも、[Yao]([Yao](https://github.com/YaoApp/yao)) や[ILLA Builder ](https://github.com/illacloud/illa-builder)といったオープンソースツールはコミュニティが活発で、内部ツール構築に十分活用できます。[Yao](https://github.com/YaoApp/yao) はフルスタックのアプリケーションエンジンとしてモデル・フロー・API を素早く構築でき、[ILLA Builder](https://github.com/illacloud/illa-builder) は可視化 UI の作成に特化しており、短時間で管理画面やデータツールを立ち上げたいケースに向いています。どちらも AI 拡張に対応しており、内部ツールづくりの補完的な選択肢になります。
+また、前述の5つの主要プロジェクト以外にも、[Yao](https://github.com/YaoApp/yao) や[ILLA Builder ](https://github.com/illacloud/illa-builder)といったオープンソースツールはコミュニティが活発で、内部ツール構築に十分活用できます。[Yao](https://github.com/YaoApp/yao) はフルスタックのアプリケーションエンジンとしてモデル・フロー・API を素早く構築でき、[ILLA Builder](https://github.com/illacloud/illa-builder) は可視化 UI の作成に特化しており、短時間で管理画面やデータツールを立ち上げたいケースに向いています。どちらも AI 拡張に対応しており、内部ツールづくりの補完的な選択肢になります。
 
 ### **結語**
 
