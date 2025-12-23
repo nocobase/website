@@ -7,7 +7,7 @@
   "description_cn": "从外包交付视角，对比主流开源无代码平台，分析它们在长期维护、成本控制、权限、流程和扩展性上的差异，帮助你选择最适合交付给客户的方案。",
   "description_ja": "外部開発・受託開発の視点から、主要なオープンソースノーコードプラットフォームを比較。長期運用、保守コスト、拡張性の観点で、顧客に本当に適した選択肢を解説します。",
   "slug": "6-open-source-no-code-low-code-tools-for-software-agencies",
-  "publishedAt": "2025-12-21T15:52:15.098Z",
+  "publishedAt": "2025-12-22T15:52:15.000Z",
   "status": "published",
   "tags": [
     {
@@ -348,5 +348,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2025-12-22T07:38:36.006Z"
+  "updatedAt": "2025-12-23T02:09:31.106Z"
 }
