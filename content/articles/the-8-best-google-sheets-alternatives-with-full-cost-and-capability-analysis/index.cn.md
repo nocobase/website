@@ -132,7 +132,7 @@ Retool 是一个用于快速构建内部工具的闭源 SaaS 平台，也提供�
 
 ![Appsmith.png](https://static-docs.nocobase.com/Appsmith-hm5lub.png)
 
-官网：[https://appsmith.com/]([https://appsmith.com/)
+官网：[https://appsmith.com/](https://appsmith.com/)
 
 Appsmith 是一个开源低代码／无代码平台，专为构建内部工具、后台系统和管理面板设计。它允许用户通过拖拽组件、连接数据库或 API、编写少量脚本，快速搭建业务界面，也支持自托管部署，对数据安全和隐私有更好控制。
 
@@ -155,7 +155,7 @@ Appsmith 是一个开源低代码／无代码平台，专为构建内部工具�
 
 ![Budibase.png](https://static-docs.nocobase.com/Budibase-9y12px.png)
 
-官网：[https://budibase.com/]([https://budibase.com/)
+官网：[https://budibase.com/](https://budibase.com/)
 
 Budibase 是一个开源的低代码平台，用于构建内部工具和管理后台。它支持自托管，也支持部署到云端，对于需要掌控数据安全或希望在本地运行系统的团队来说更加灵活。
 
@@ -201,7 +201,7 @@ Baserow 是一个开源、以数据库为核心的数据管理工具。它提供
 
 ![NocoDB.png](https://static-docs.nocobase.com/NocoDB-49hta1.png)
 
-官网：[https://nocodb.com/]([https://nocodb.com/)
+官网：[https://nocodb.com/](https://nocodb.com/)
 
 NocoDB 是一个开源的电子表格风格数据库管理工具。它提供类似 Airtable 的界面体验，但底层使用真实的关系型数据库，并支持自托管部署。团队可以将现有的 MySQL、PostgreSQL 或其他数据库直接连接到 NocoDB，让原本需要工程师才能管理的数据库以更可视化的方式呈现。
 
