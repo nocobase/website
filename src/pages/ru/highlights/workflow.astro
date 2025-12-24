@@ -1,0 +1,117 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
+
+const page = await getPage("workflow", "ru");
+
+const title = page.title_ru || page.title;
+const description = page.description_ru || page.description;
+const keywords = page.keywords_ru || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description" set:html={description}></span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Создание рабочих процессов с помощью <span class="text-primary">триггеров и действий</span></h5>
+            <p class="text-muted">Рабочий процесс NocoBase состоит из одного триггера и серии узлов действий. Триггер инициирует рабочий процесс, а действия выполняются по порядку.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Проверка условий</span> перед отправкой формы</h5>
+            <p class="text-muted">"События перед действием" срабатывают до выполнения действия. Например, при создании заказа, система должна проверить, достаточно ли товара на складе.<br>Если запасов недостаточно, рабочий процесс автоматически блокирует создание и предупреждает пользователя, предотвращая перепродажу или ошибки данных.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Передача данных между <span class="text-primary">несколькими источниками данных</span></h5>
+            <p class="text-muted">Когда приложение NocoBase включает несколько источников данных, рабочие процессы могут оркестрировать логику между ними для достижения автоматизации на бэкенде. Например, когда новый заказ создается в ERP, уровень клиента в CRM должен автоматически быть повышен до "Оплачен".</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Получение <span class="text-primary">внешних данных</span> с помощью триггера Webhook</h5>
+            <p class="text-muted">С помощью триггера Webhook NocoBase может получать данные из внешних систем и автоматически выполнять указанные действия.<br>Например, во внешней системе поддержки клиентов, когда пользователь отправляет новую обратную связь, данные могут быть отправлены в NocoBase для автоматического создания новой записи тикета.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.4-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Подключение к <span class="text-primary">внешним системам</span> с помощью узла HTTP-запроса</h5>
+            <p class="text-muted">С помощью узлов HTTP-запроса NocoBase может активно взаимодействовать с внешними системами — вызывать API, автоматически отправлять данные и получать ответы.<br>Например, когда статус доставки обновляется в NocoBase, информация о заказе может быть автоматически отправлена на платформу логистики.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.5-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Отладка</span>, контроль версий и отслеживание выполнения</h5>
+            <p class="text-muted">Рабочие процессы NocoBase предоставляют возможности для ручной отладки, контроля версий и отслеживания логов — делая разработку, тестирование и отслеживаемость выполнения проще и надежнее.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.7-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>
+
+
+
+
