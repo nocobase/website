@@ -1,14 +1,14 @@
 {
   "id": 826,
-  "title": "NocoBase v2.0.0-alpha.57",
-  "title_cn": "NocoBase v2.0.0-alpha.57",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.57: Add new system variables in workflow, including `instanceId` and `genSnowflakeId`",
+  "title_cn": "NocoBase v2.0.0-alpha.57：为工作流增加新的系统变量，包括“应用实例 ID”和“生成雪花 ID”",
+  "title_ja": "NocoBase v2.0.0-alpha.57：「アプリケーションインスタンス ID」「Snowflake ID の生成」など、新しいシステム変数を追加",
   "description": "Release Note of v2.0.0-alpha.57",
   "description_cn": "v2.0.0-alpha.57 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.57 リリースノート",
   "slug": "v2.0.0-alpha.57",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-12-23T19:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-25T01:34:52.544Z",
+        "updatedAt": "2025-12-25T01:34:52.544Z",
+        "articles_id": 826,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-25T01:32:47.011Z",
+    "updatedAt": "2025-12-25T01:32:47.029Z",
+    "id": 2143,
+    "title": "develop (5)",
+    "filename": "develop (5)-muaukz.jpg",
+    "extname": ".jpg",
+    "size": 80866,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(5)-muaukz.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(5)-muaukz.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-12-23T17:40:50.832Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-25T01:34:52.524Z"
 }
