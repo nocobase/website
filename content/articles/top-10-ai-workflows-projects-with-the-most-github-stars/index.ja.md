@@ -3,11 +3,10 @@
 プロジェクトの目的や機能に基づき、これらのAIワークフロープロジェクトは次の3つのカテゴリに分けて紹介します：
 
 * 事業システム型プラットフォーム：NocoBase、Appsmith、OpenProject
-
 * 自動化ワークフローエンジン：Continue、Mastra、wshobson / agents、Activepieces、Trigger.dev
 * ワークフロー基盤およびシナリオ型ツール：Temporal、Conductor、Dagger、UVDesk
 
-💡 詳細情報：[ワークフロー自動化のための最適な5つのツール](https://www.nocobase.com/cn/blog/workflow-automation-tools)
+💡 詳細情報：[ワークフロー自動化のためのベストツール5選](https://www.nocobase.com/ja/blog/workflow-automation-tools)
 
 ---
 
@@ -15,13 +14,13 @@
 
 ---
 
-
-
 ## ビジネスシステム型プラットフォーム
 
 AI、ワークフロー、ビジネスシステムを一つのシステムに統合し、実際のビジネスシーンで即座に利用できる能力を持っています。
 
 ### NocoBase
+
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-jw0ize.PNG)
 
 NocoBaseはオープンソースで自己ホスティング可能なAIノーコード/ローコードビジネスシステムプラットフォームで、データモデル駆動型、プラグインアーキテクチャを基盤に、複雑なビジネスシステムを迅速に構築・カスタマイズすることを支援します。さらに、内蔵されたAI機能により、インテリジェントな協働が可能になります。
 
@@ -29,12 +28,14 @@ GitHub Stars: 20.9k
 
 GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-Official Website: [[https://www.nocobase.com]([https://www.nocobase.com](https://www.nocobase.com))
+Official Website: [https://www.nocobase.com]([https://www.nocobase.com](https://www.nocobase.com))
 
 **AI機能のハイライト**
 
 * システム内で協働するAIスタッフ NocoBaseのAI能力は、AIスタッフという形で提供されます。これらのAIスタッフは、システムのデータモデル、インターフェース設定、ビジネスの文脈を理解し、ユーザーの操作やワークフローのトリガーに従って、実際のタスクを実行します。AIは単なる対話の役割に留まらず、システムの一部として、ユーザーと共に業務を進めます。
 * ワークフローにおけるAIスタッフの深い統合 NocoBaseのワークフローシステムには、AIスタッフ専用のノードがあり、テキスト対話、マルチモーダル対話、構造化された出力を提供します。これらのノードを活用することで、AIは実行中のワークフローからコンテキスト情報を取得し、構造化された結果を生成することができ、場合によっては条件判断にも参加します。これにより、従来のルールベースのワークフローから、インテリジェントな処理能力を加えたワークフローに進化します。
+
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-m357m3.PNG)
 
 **できることは？**
 
@@ -42,11 +43,24 @@ Official Website: [[https://www.nocobase.com]([https://www.nocobase.com](https:/
 
 💡 詳しく読む：[GitHubでスター数トップ10のAI CRMオープンソースプロジェクト](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
 
+![NocoBase3.PNG](https://static-docs.nocobase.com/NocoBase3-x5t14a.PNG)
+
 * プロセスの重要なノードでAIによる実行と判断を支援 ビジネスプロセス実行中、NocoBaseのワークフローはAIスタッフを特定のノードに組み込み、テキストの理解・検証や、構造化出力結果の生成、プロセス進行前の補助的な判断を行います。この方法は、従来のプロセス構造を維持しながら、重要なステップでAI
+
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-l7s91h.png)
+
+
+* 公式の知識ベースとベクトルデータベースを活用することで、AI 従業員はワークフロー実行中に既存のドキュメントや業務データを検索し、その結果を基に処理内容を生成できます。過去の資料や社内規程、業務知識を参照しながら進める必要があるフローに適しており、自動化された処理においても、より高い文脈理解と情報の統合を実現します。
+
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-ib2brm.png)
 
 ### Appsmith
 
-**プロジェクト概要** Appsmithは、開発者とチームが内部ツール、ビジネスアプリケーション、および自動化されたプロセスインターフェースを迅速に構築するためのオープンソースローコードプラットフォームです。AI分野では、Appsmithは複数の大規模モデルサービスとAppsmith AI機能を統合し、開発者がアプリケーションロジックとワークフロー実行にAIを組み込むことを可能にし、内部プロセスのインテリジェント化を進めます。 💡 詳しく読む：[GitHubスター数トップ5のAIツール](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-bvnvgb.png)
+
+Appsmithは、開発者とチームが内部ツール、ビジネスアプリケーション、および自動化されたプロセスインターフェースを迅速に構築するためのオープンソースローコードプラットフォームです。AI分野では、Appsmithは複数の大規模モデルサービスとAppsmith AI機能を統合し、開発者がアプリケーションロジックとワークフロー実行にAIを組み込むことを可能にし、内部プロセスのインテリジェント化を進めます。
+
+💡 詳しく読む：[GitHubスター数トップ5のAIツール](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
 
 GitHub Stars: 38.7k
 
@@ -66,7 +80,9 @@ Official Website: [https://www.appsmith.com](https://www.appsmith.com)
 
 ### OpenProject
 
-**プロジェクト概要** OpenProjectは、オープンソースのWebプロジェクト管理ソフトウェアで、チームがプロジェクトの計画、タスク管理、進捗追跡、及び協力的なコミュニケーションに至るまで、プロジェクト全体のライフサイクル管理をサポートします。従来のプロジェクト管理方法だけでなく、アジャイルやハイブリッド手法にも対応しており、ワークパッケージ、カンバン、ガントチャートなどのビューを使って、チームが作業を整理しやすくなります。 
+![OpenProject.png](https://static-docs.nocobase.com/OpenProject-9rg5c8.png)
+
+OpenProjectは、オープンソースのWebプロジェクト管理ソフトウェアで、チームがプロジェクトの計画、タスク管理、進捗追跡、及び協力的なコミュニケーションに至るまで、プロジェクト全体のライフサイクル管理をサポートします。従来のプロジェクト管理方法だけでなく、アジャイルやハイブリッド手法にも対応しており、ワークパッケージ、カンバン、ガントチャートなどのビューを使って、チームが作業を整理しやすくなります。
 
 GitHub Stars: 13.4k
 
@@ -89,7 +105,9 @@ Official Website: [https://www.openproject.org](https://www.openproject.org)
 
 ### Continue
 
-**プロジェクト概要** Continueは、開発者の日常的なワークフローにおけるインテリジェントな協働ツールを提供するオープンソースのAIプログラミングアシスタントプロジェクトです。エディタを中心とした使用シーンで、コードのコンテキスト、プロジェクト構造、過去の変更履歴を深く統合し、AIがコーディングやコード理解、複数ステップのタスク実行時に実際の開発フローと密接に連携します。
+![Continue.png](https://static-docs.nocobase.com/Continue-xf8ep9.png)
+
+Continueは、開発者の日常的なワークフローにおけるインテリジェントな協働ツールを提供するオープンソースのAIプログラミングアシスタントプロジェクトです。エディタを中心とした使用シーンで、コードのコンテキスト、プロジェクト構造、過去の変更履歴を深く統合し、AIがコーディングやコード理解、複数ステップのタスク実行時に実際の開発フローと密接に連携します。
 
 GitHub Stars: 30.5k
 
@@ -109,7 +127,9 @@ Official Website: [https://continue.dev](https://continue.dev)
 
 ### Mastra
 
-**プロジェクト概要** Mastra は、インテリジェントなアプリケーションやエージェントの構築を支援するオープンソースの TypeScript フレームワークです。これにより、複雑な AI 主導のプロセスを統一的に定義し、編成するためのインフラが提供されます。多段階ワークフロー、コンテキストや記憶の管理、大規模言語モデルの統合、インテリジェントエージェントの開発を支援します。 **
+![Mastra.png](https://static-docs.nocobase.com/Mastra-231hhv.png)
+
+Mastra は、インテリジェントなアプリケーションやエージェントの構築を支援するオープンソースの TypeScript フレームワークです。これにより、複雑な AI 主導のプロセスを統一的に定義し、編成するためのインフラが提供されます。多段階ワークフロー、コンテキストや記憶の管理、大規模言語モデルの統合、インテリジェントエージェントの開発を支援します。 **
 
 GitHub Stars: 19k
 
@@ -127,7 +147,9 @@ Official Website: [https://mastra.ai](https://mastra.ai)
 
 ### wshobson agents
 
-**プロジェクト概要** wshobson agentsは、AIエージェントの拡張とプラグインを集めたオープンソースプロジェクトです。目的は、AIエージェントに再利用可能なツール機能とタスクコンポーネントを提供することです。このプロジェクトは、完全なプラットフォームや実行エンジンを構築するのではなく、標準化されたエージェントコンポーネントを使って、既存のAIエージェントやワークフローシステムに迅速に実行能力を拡張し、エージェントがより具体的で構造化されたタスクを実行できるように支援します。
+![wshobson agents.png](https://static-docs.nocobase.com/wshobson%20agents-mahvoo.png)
+
+wshobson agentsは、AIエージェントの拡張とプラグインを集めたオープンソースプロジェクトです。目的は、AIエージェントに再利用可能なツール機能とタスクコンポーネントを提供することです。このプロジェクトは、完全なプラットフォームや実行エンジンを構築するのではなく、標準化されたエージェントコンポーネントを使って、既存のAIエージェントやワークフローシステムに迅速に実行能力を拡張し、エージェントがより具体的で構造化されたタスクを実行できるように支援します。
 
 GitHub Stars: 23.4k
 
@@ -146,7 +168,9 @@ Official Website: [https://sethhobson.com/](https://sethhobson.com/)
 
 ### Activepieces
 
-**プロジェクト概要** Activepiecesは、チームが可視化されたワークフローを構築および実行し、異なるシステムやサービス間で自動的に接続し、協力できるようにすることを目的としたオープンソースの自動化プラットフォームです。プラットフォームの進化に伴い、ActivepiecesはAI機能を統合し、ワークフローにインテリジェントな処理とエージェント機能を提供することで、より複雑な自動化ロジックを実現しています。
+![Activepieces.png](https://static-docs.nocobase.com/Activepieces-lmwl57.png)
+
+Activepiecesは、チームが可視化されたワークフローを構築および実行し、異なるシステムやサービス間で自動的に接続し、協力できるようにすることを目的としたオープンソースの自動化プラットフォームです。プラットフォームの進化に伴い、ActivepiecesはAI機能を統合し、ワークフローにインテリジェントな処理とエージェント機能を提供することで、より複雑な自動化ロジックを実現しています。
 
 GitHub Stars: 20k
 
@@ -167,7 +191,9 @@ Official Website: [https://www.activepieces.com](https://www.activepieces.com)
 
 ### Trigger.dev
 
-**プロジェクト概要** Trigger.devは、AIワークフローおよびバックエンドタスクの作成と実行のためのオープンソースプラットフォームで、開発者が標準的な非同期コードを使用して信頼性が高く、スケーラブルで持続的なワークフローを構築できるようにすることを目的としています。これは、従来のワークフロータスクに加え、AIに関連する機能も提供しており、長時間実行されるAIタスク、複雑なタスクキュー、およびインテリジェントエージェントが安定して動作することを可能にします。
+![Trigger.png](https://static-docs.nocobase.com/Trigger.dev-ppvc62.png)
+
+Trigger.devは、AIワークフローおよびバックエンドタスクの作成と実行のためのオープンソースプラットフォームで、開発者が標準的な非同期コードを使用して信頼性が高く、スケーラブルで持続的なワークフローを構築できるようにすることを目的としています。これは、従来のワークフロータスクに加え、AIに関連する機能も提供しており、長時間実行されるAIタスク、複雑なタスクキュー、およびインテリジェントエージェントが安定して動作することを可能にします。
 
 GitHub Stars: 13.1k
 
@@ -189,7 +215,9 @@ Official Website: [https://trigger.dev](https://trigger.dev)
 
 ### Temporal
 
-**プロジェクト概要** Temporalは、オープンソースの分散型ワークフローオーケストレーションプラットフォームで、主に持続的で信頼性の高いビジネスプロセスコードを実行するために使用されます。開発者はSDK内で親しみのあるプログラミング言語を使用してワークフローのロジックを定義でき、プロセスはサービス間、ノード間で安定して実行され、失敗と回復が自動的に処理されます。
+![Temporal.png](https://static-docs.nocobase.com/Temporal-9nl4ir.png)
+
+Temporalは、オープンソースの分散型ワークフローオーケストレーションプラットフォームで、主に持続的で信頼性の高いビジネスプロセスコードを実行するために使用されます。開発者はSDK内で親しみのあるプログラミング言語を使用してワークフローのロジックを定義でき、プロセスはサービス間、ノード間で安定して実行され、失敗と回復が自動的に処理されます。
 
 GitHub Stars: 17.2k
 
@@ -208,7 +236,9 @@ Official Website: [https://temporal.io](https://temporal.io)
 
 ### Conductor
 
-**プロジェクト概要** Conductorは、オープンソースのマイクロサービスワークフローオーケストレーションエンジンで、元々Netflixによってオープンソース化され、分散型システム内で複雑なビジネスプロセスの調整および管理を行うために使用されます。プロセスを実行可能なワークフローとして定義することで、タスクやサービス呼び出しを統一的にスケジュールし、高い同時実行性と高い複雑性を持つシナリオにおいて、プロセスの制御性と復元性を維持します。
+![Conductor.png](https://static-docs.nocobase.com/Conductor-5cw1xs.png)
+
+Conductorは、オープンソースのマイクロサービスワークフローオーケストレーションエンジンで、元々Netflixによってオープンソース化され、分散型システム内で複雑なビジネスプロセスの調整および管理を行うために使用されます。プロセスを実行可能なワークフローとして定義することで、タスクやサービス呼び出しを統一的にスケジュールし、高い同時実行性と高い複雑性を持つシナリオにおいて、プロセスの制御性と復元性を維持します。
 
 GitHub Stars: 31.7k
 
@@ -226,7 +256,9 @@ Official Website:  [https://conductor-oss.org/](https://conductor-oss.org/)
 
 ### Dagger
 
-**プロジェクト概要** Daggerは、最初に継続的インテグレーションおよび継続的デリバリーのシナリオ向けに設計されたオープンソースのワークフローエンジンで、その基本的なコンセプトはワークフローを組み合わせ可能なコードモジュールとして定義することです。使用シナリオの拡張により、Daggerはデータ処理やAI関連タスクを扱うツールとしても利用され、エンジニアリング用ワークフローおよびAIパイプラインの重要な基盤ツールとなっています。
+![Dagger.png](https://static-docs.nocobase.com/Dagger-wxcy12.png)
+
+Daggerは、最初に継続的インテグレーションおよび継続的デリバリーのシナリオ向けに設計されたオープンソースのワークフローエンジンで、その基本的なコンセプトはワークフローを組み合わせ可能なコードモジュールとして定義することです。使用シナリオの拡張により、Daggerはデータ処理やAI関連タスクを扱うツールとしても利用され、エンジニアリング用ワークフローおよびAIパイプラインの重要な基盤ツールとなっています。
 
 GitHub Stars: 15.2k
 
@@ -244,7 +276,9 @@ Official Website: [https://dagger.io](https://dagger.io)
 
 ### UVDesk
 
-**プロジェクト概要** UVDeskは、オープンソースのカスタマーサポートおよびチケット管理システムで、主にチームがカスタマーサービスセンターとサポートプロセスを構築するために使用されます。製品の進化に伴い、UVDeskはカスタマーサポートシナリオにAI関連機能を導入し、チケット処理の効率と品質を向上させることを目指しています。これにより、サポートプロセスは自動化の基盤にインテリジェンスを追加する特徴を持つようになります。
+![UVDesk.png](https://static-docs.nocobase.com/UVDesk-2cp9j3.png)
+
+UVDeskは、オープンソースのカスタマーサポートおよびチケット管理システムで、主にチームがカスタマーサービスセンターとサポートプロセスを構築するために使用されます。製品の進化に伴い、UVDeskはカスタマーサポートシナリオにAI関連機能を導入し、チケット処理の効率と品質を向上させることを目指しています。これにより、サポートプロセスは自動化の基盤にインテリジェンスを追加する特徴を持つようになります。
 
 GitHub Stars: 17k
 
