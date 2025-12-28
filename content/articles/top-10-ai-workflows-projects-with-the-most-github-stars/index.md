@@ -6,7 +6,7 @@ Based on project positioning and key features, this article categorizes AI workf
 * Automation Workflow Engines: Continue, Mastra, wshobson/agents, Activepieces, Trigger.dev
 * Workflow Infrastructure & Scenario Tools: Temporal, Conductor, Dagger, UVDesk
 
-💡 Read More: [5 Best Tools for Building Workflow Automation](https://www.nocobase.com/cn/blog/workflow-automation-tools)
+💡 Read More: [5 Best Tools for Building Workflow Automation](https://www.nocobase.com/en/blog/workflow-automation-tools)
 
 ---
 
@@ -14,13 +14,13 @@ Based on project positioning and key features, this article categorizes AI workf
 
 ---
 
-
-
 ## Business System Platforms
 
 These platforms integrate AI, workflows, and business systems into one framework, enabling real-world business applications.
 
 ### NocoBase
+
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-jw0ize.PNG)
 
 NocoBase is an open-source, self-hosted AI no-code/low-code platform designed for building business systems. It is built around data models and plugins, supporting the rapid creation and customization of complex business systems while embedding AI features for smarter collaboration.
 
@@ -35,16 +35,27 @@ Official Website: [https://www.nocobase.com](https://www.nocobase.com)
 * AI employees act as roles in business operations NocoBase’s AI functions as AI employees who can read data models, interface configurations, and business context. They assist in executing tasks when users interact or workflows are triggered. These AI employees are more than just conversational agents—they function as integral parts of the system, helping users complete tasks.
 * Deep integration of AI employees into workflow nodes The platform’s workflow system includes nodes specifically for AI employees, such as text and multimodal conversations and structured output. These nodes allow AI to process workflow context, generate structured results, and contribute to decision-making, turning workflows from rule-based processes into ones that can incorporate intelligent inputs.
 
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-m357m3.PNG)
+
 **What can it be used for?**
 
 * Building internal business systems with AI collaboration NocoBase is ideal for creating internal systems like CRMs, approval systems, or asset management systems. In these systems, AI employees can understand data structures and context, assisting with tasks such as organizing information, completing fields, or generating content, which reduces repetitive manual work.
 
 💡 Read More: [Top 10 AI CRM Open-Source Projects on GitHub](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
 
+![NocoBase3.PNG](https://static-docs.nocobase.com/NocoBase3-x5t14a.PNG)
+
 * Enhancing workflow with AI at key decision points During workflow execution, AI employees can assist at critical points, such as verifying text content, generating structured outputs, or offering judgment before advancing the process. This adds intelligent processing without altering the underlying workflow structure.
+
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-l7s91h.png)
+
 * Context-aware workflow execution using knowledge bases With access to a knowledge base and vector databases, AI employees can retrieve and utilize historical documents or business data, helping to generate output based on relevant content. This is especially useful for workflows requiring historical or policy-related data, improving contextual understanding during automation.
 
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-ib2brm.png)
+
 ### **Appsmith**
+
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-bvnvgb.png)
 
 Appsmith is an open-source low-code application platform designed to help developers and teams quickly create internal tools, business applications, and automation interfaces. In the AI space, Appsmith integrates various large model services and its own Appsmith AI features, allowing developers to embed AI capabilities into application logic and workflow execution, thereby enhancing the intelligence of internal processes.
 
@@ -67,6 +78,8 @@ Official Website: [https://www.appsmith.com](https://www.appsmith.com)
 * Enhance the analytics capabilities of existing applications By integrating large language models (LLM) into custom applications, users can perform tasks such as text summarization, classification, and semantic search. For instance, feedback collected within Appsmith can be analyzed by the model to generate actionable business insights.
 
 ### **OpenProject**
+
+![OpenProject.png](https://static-docs.nocobase.com/OpenProject-9rg5c8.png)
 
 OpenProject is an open-source web project management software that supports full project lifecycle management, from planning and task management to progress tracking and collaboration. It supports both traditional project management methods and agile/hybrid approaches, helping teams organize workflows clearly with views like work packages, Kanban boards, and Gantt charts.
 
@@ -91,6 +104,8 @@ These tools are centered around Agents or process execution, and are more aligne
 
 ### **Continue**
 
+![Continue.png](https://static-docs.nocobase.com/Continue-xf8ep9.png)
+
 Continue is an open-source AI programming assistant designed as an intelligent collaboration tool for developers' daily workflows. It focuses on the editor as the primary use case, deeply integrating code context, project structure, and historical modification data. This allows the AI to closely match real development workflows while coding, understanding code, and executing multi-step tasks.
 
 GitHub Stars: 30.5k
@@ -111,6 +126,8 @@ Official Website: [https://continue.dev](https://continue.dev)
 
 ### **Mastra**
 
+![Mastra.png](https://static-docs.nocobase.com/Mastra-231hhv.png)
+
 Mastra is an open-source TypeScript framework designed for building intelligent applications and agents. It provides infrastructure for creating multi-step workflows, managing context and memory, integrating large language models, and building intelligent agents, allowing developers to define and orchestrate complex AI-driven processes in a unified manner.
 
 GitHub Stars: 19k
@@ -128,6 +145,8 @@ Official Website: [https://mastra.ai](https://mastra.ai)
 * Build intelligent multi-step interactions with context retention For workflows that require continuous context understanding, Mastra enables intelligent agents to track previous states during multi-step tasks. For example, in knowledge retrieval workflows, it can first gather information from a data source and then use its memory to perform further tasks like content generation and summarization.
 
 ### **wshobson agents**
+
+![wshobson agents.png](https://static-docs.nocobase.com/wshobson%20agents-mahvoo.png)
 
 wshobson agents is an open-source collection of AI Agent extensions and plugins designed to provide reusable tool capabilities and task components for AI Agents. Rather than creating a complete platform or execution engine, this project offers standardized Agent components that help developers quickly extend executable capabilities in existing AI Agent or workflow systems, enabling Agents to perform more specific, structured tasks.
 
@@ -147,6 +166,8 @@ Official Website: [https://sethhobson.com/](https://sethhobson.com/)
 * Build composable Agent execution workflows By combining multiple Agent tools, developers can create structured execution workflows, ensuring more stable behavior patterns for AI in multi-step tasks. This approach is ideal for AI automation scenarios requiring predictability and control.
 
 ### **Activepieces**
+
+![Activepieces.png](https://static-docs.nocobase.com/Activepieces-lmwl57.png)
 
 Activepieces is an open-source automation platform designed to help teams visually build and execute workflows, enabling seamless connection and collaboration between systems and services. As the platform evolves, Activepieces has integrated AI capabilities to add intelligent processing and Agent functionality, enabling more complex automation logic.
 
@@ -168,6 +189,8 @@ Official Website: [https://www.activepieces.com](https://www.activepieces.com)
 * Extend cross-system automation capabilities Activepieces offers many pre-built integration components, allowing businesses to combine services like calendars, document services, messaging platforms, and AI capabilities to create workflows that not only perform rule-based tasks but also incorporate AI analysis or content generation, improving efficiency and reducing repetitive work.
 
 ### **Trigger.dev**
+
+![Trigger.png](https://static-docs.nocobase.com/Trigger.dev-ppvc62.png)
 
 Trigger.dev is an open-source platform for writing and running AI workflows and backend tasks, allowing developers to use standard asynchronous code to build reliable, scalable, and durable workflows. It not only supports regular workflow tasks but also provides AI-related capabilities, enabling long-running AI tasks, complex task queues, and intelligent agents to run smoothly.
 
@@ -191,6 +214,8 @@ Providing support for stable operations or specific business scenarios, primaril
 
 ### **Temporal**
 
+![Temporal.png](https://static-docs.nocobase.com/Temporal-9nl4ir.png)
+
 Temporal is an open-source distributed workflow orchestration platform designed to run persistent and reliable business process code. Developers can define workflow logic using familiar programming languages in its SDK, enabling processes to run stably across services and nodes while automatically handling failures and recovery.
 
 GitHub Stars: 17.2k
@@ -210,6 +235,8 @@ Official Website: [https://temporal.io](https://temporal.io)
 
 ### **Conductor**
 
+![Conductor.png](https://static-docs.nocobase.com/Conductor-5cw1xs.png)
+
 Conductor is an open-source microservices workflow orchestration engine originally released by Netflix, designed to coordinate and manage complex business processes in distributed systems. It defines workflows as executable tasks and orchestrates multiple tasks and service calls, helping teams maintain workflow controllability and recoverability in high concurrency and complex scenarios.
 
 GitHub Stars: 31.7k
@@ -228,6 +255,8 @@ Official Website:  [https://conductor-oss.org/](https://conductor-oss.org/)
 
 ### **Dagger**
 
+![Dagger.png](https://static-docs.nocobase.com/Dagger-wxcy12.png)
+
 Dagger is an open-source workflow engine originally designed for continuous integration and delivery. The core idea is to define workflows as composable code modules. As use cases expanded, Dagger evolved to handle data processing and AI tasks, becoming a crucial tool for engineering workflows and AI pipelines.
 
 GitHub Stars: 15.2k
@@ -245,6 +274,8 @@ Official Website: [https://dagger.io](https://dagger.io)
 * Foundation for AI task automation In broader automation scenarios, Dagger can serve as the underlying execution tool, integrating AI inference or data processing tasks into existing engineering workflows, progressively automating and smartening them.
 
 ### **UVDesk**
+
+![UVDesk.png](https://static-docs.nocobase.com/UVDesk-2cp9j3.png)
 
 UVDesk is an open-source customer support and ticket management system designed to help teams build customer service centers and support workflows. Over time, UVDesk has integrated AI capabilities into the customer support scenario, enhancing ticket handling efficiency and response quality, adding intelligence to the support process based on automation.
 
