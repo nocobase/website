@@ -20,7 +20,7 @@
 
 ### **NocoBase**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzBhNGMzM2IwMjQ3M2QyYjI2YzA0ZDM0NDlkZTBlMjhfYVlLSW15a0VKeE14NkYwcGlJVVJrUmRWUFN1N0VVVVNfVG9rZW46UmgxRGJ2a2Vnb0x4RVR4ZXYxRGNXS0VTbnBoXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-jw0ize.PNG)
 
 NocoBase 是一个开源、自托管的 AI 无代码/低代码业务系统平台，它以数据模型驱动、插件化架构为核心，支持快速构建和自定义复杂业务系统，同时通过内嵌 AI 功能使系统具备智能协作能力。
 
@@ -28,36 +28,42 @@ GitHub Stars: 20.9k
 
 GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-Official Website: [[https://www.nocobase.com]([https://www.nocobase.com](https://www.nocobase.com))
+Official Website: [https://www.nocobase.com]([https://www.nocobase.com](https://www.nocobase.com))
 
 **AI 功能亮点**
 
 * AI 员工作为系统内协作角色参与业务执行 NocoBase 的 AI 能力以 AI 员工的形式存在。这些 AI 员工可以读取系统中的数据模型、界面配置和业务上下文，并在用户操作或工作流触发时参与具体任务执行。它们并非仅用于对话，而是可以作为系统的一部分，与用户共同完成业务操作。
 * AI 员工深度集成至工作流节点 NocoBase 的工作流系统提供了与 AI 员工相关的专用节点，包括文本对话、多模态对话以及结构化输出节点。通过这些节点，AI 可以在工作流执行过程中读取上下文信息、生成结构化结果或参与条件判断，使工作流不再局限于固定规则，而具备一定的智能处理能力。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDk3MjE4MGM1MmNiZDI2N2ZiNjI1NjNkNTk0NjFjMGNfaFlnSGpySG9OUlBwckpKMUxrZWtLbUhBYWxEUTZhNnJfVG9rZW46RDhWTmJCYVNab20wNGV4T2V2eWM4bjAzbnZlXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-m357m3.PNG)
 
 **可以用来做什么？**
 
-* 构建具备智能协作能力的内部业务系统 NocoBase 适合用于构建 CRM、审批系统、资产管理等内部业务系统。在这些系统中，AI 员工以系统内角色的形式存在，能够理解业务数据结构和页面上下文，协助完成信息整理、字段补全或内容生成等操作，从而减轻人工在系统操作层面的重复性工作负担。
+* 构建具备智能协作能力的内部业务系统
+
+NocoBase 适合用于构建 CRM、审批系统、资产管理等内部业务系统。在这些系统中，AI 员工以系统内角色的形式存在，能够理解业务数据结构和页面上下文，协助完成信息整理、字段补全或内容生成等操作，从而减轻人工在系统操作层面的重复性工作负担。
 
 💡 阅读更多：[GitHub 上星星数量前 10 的 AI CRM 开源项目](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzliMmFiMDhlYmQzZjhkYjYxZjNmNzhiNjVhZDJhMDNfdzhYZXV5aTg0c1ZwdWJ5RElpTXZZejNEODliUDNONFlfVG9rZW46RjRFRWJ0Zldtb2RTbXp4dzczYmNaWkJrbnZnXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![NocoBase3.PNG](https://static-docs.nocobase.com/NocoBase3-x5t14a.PNG)
 
-* 在流程关键节点引入 AI 执行与判断能力 在业务流程运行过程中，NocoBase 的工作流可以在特定节点引入 AI 员工参与执行，例如对文本内容进行理解与校验、生成结构化输出结果，或在流程推进前提供辅助判断。这种方式并不改变原有流程结构，而是在关键步骤增强流程的处理能力，使自动化流程从规则执行过渡到具备一定智能参与。
+* 在流程关键节点引入 AI 执行与判断能力
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTcyZTJkMzFlYWM4ZmU4MzcwMTM1M2Y2OGNlMGI3NjBfaWtrMlVSUEx1bEZkd2ViUkZtQ1F3RXlUbEQ4d3RTYjZfVG9rZW46Wm9TVGJlOEt3b1VQNFR4aVdHd2NiQlBlbnRiXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+在业务流程运行过程中，NocoBase 的工作流可以在特定节点引入 AI 员工参与执行，例如对文本内容进行理解与校验、生成结构化输出结果，或在流程推进前提供辅助判断。这种方式并不改变原有流程结构，而是在关键步骤增强流程的处理能力，使自动化流程从规则执行过渡到具备一定智能参与。
 
-* 基于知识库实现上下文感知的流程执行 借助官方提供的知识库与向量数据库能力，AI 员工可以在工作流执行过程中检索已有文档和业务数据，并基于检索结果生成输出内容。这一能力适用于需要结合历史资料、制度文档或业务知识执行流程的场景，使系统在自动化运行时具备更强的上下文理解和信息整合能力。
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-l7s91h.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZlNTk1ZDVlOGFiM2VkYWRkNmJiNjNkZDc4ZTQ3MzZfamJtcjRMR05rSU9NeGlBVFR6ZzdZREdFOHBtZ2YxSkRfVG9rZW46U3Q0T2JINUlCb3ZSY2d4Njl0Y2MzUjN4bllmXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+* 基于知识库实现上下文感知的流程执行
+
+借助官方提供的知识库与向量数据库能力，AI 员工可以在工作流执行过程中检索已有文档和业务数据，并基于检索结果生成输出内容。这一能力适用于需要结合历史资料、制度文档或业务知识执行流程的场景，使系统在自动化运行时具备更强的上下文理解和信息整合能力。
+
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-ib2brm.png)
 
 ### **Appsmith**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDNkYTU3OTk2YWVjN2UzZGQ5ZTZiYjI3MGNhZWQzYmVfbHlXWENWZ2MxVmFXeWZrQ09YbERuVEJCUjN4Z09xMVZfVG9rZW46WGh1NWJPbkNIb25hdU94SjczSWM2QzdObm1iXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-bvnvgb.png)
 
-**项目简介** Appsmith 是一款开源的低代码应用平台，旨在帮助开发者和团队快速构建内部工具、业务应用以及自动化流程界面。在 AI 方向，Appsmith 通过集成多种大模型服务以及 Appsmith AI 功能，开发者能够将 AI 能力融入应用逻辑和工作流执行中，从而提升内部流程智能化水平。
+Appsmith 是一款开源的低代码应用平台，旨在帮助开发者和团队快速构建内部工具、业务应用以及自动化流程界面。在 AI 方向，Appsmith 通过集成多种大模型服务以及 Appsmith AI 功能，开发者能够将 AI 能力融入应用逻辑和工作流执行中，从而提升内部流程智能化水平。
 
 💡 阅读更多：[GitHub Star 数量前 5 的开源 AI 内部工具 ](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
 
@@ -79,9 +85,9 @@ Official Website: [https://www.appsmith.com](https://www.appsmith.com)
 
 ### **OpenProject**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NGZmODhjZTI0NDNlMzViNmMxNGYzMzkwNzljNTM5YThfd2l5QmpmUU1pMEJ0Qm5VVm5TM0RuM3FTUFNMeVBoUzVfVG9rZW46RmNxU2JuQlp4b2NvSnV4TldmRmNmSmVLbkZmXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![OpenProject.png](https://static-docs.nocobase.com/OpenProject-9rg5c8.png)
 
-**项目简介** OpenProject 是一款开源的 Web 项目管理软件，支持团队从项目规划、任务管理、进度跟踪到协作沟通的全生命周期管理。它既支持传统项目管理方法，也支持敏捷与混合方法，通过工作包、看板和甘特图等视图帮助团队清晰组织工作流程。
+OpenProject 是一款开源的 Web 项目管理软件，支持团队从项目规划、任务管理、进度跟踪到协作沟通的全生命周期管理。它既支持传统项目管理方法，也支持敏捷与混合方法，通过工作包、看板和甘特图等视图帮助团队清晰组织工作流程。
 
 GitHub Stars: 13.4k
 
@@ -104,9 +110,9 @@ Official Website: [https://www.openproject.org](https://www.openproject.org)
 
 ### **Continue**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWE4ZjNjNGE1OTU2Yjk5MTFmYWZiYWRhMjc4YzZjY2JfZERESUxkSlNEMFpwT21JS0lHUEZFc1BncE5NTTRYclhfVG9rZW46RzFXZ2JMbU11bzZJdGx4MjVhb2NZNGhIbnJlXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Continue.png](https://static-docs.nocobase.com/Continue-xf8ep9.png)
 
-**项目简介**  Continue 是一个开源的 AI 编程助手项目，定位于开发者日常工作流中的智能协作工具。它以编辑器为核心使用场景，通过深度集成代码上下文、项目结构和历史修改记录，使 AI 能够在编码、理解代码和执行多步任务时更贴近真实开发流程。
+Continue 是一个开源的 AI 编程助手项目，定位于开发者日常工作流中的智能协作工具。它以编辑器为核心使用场景，通过深度集成代码上下文、项目结构和历史修改记录，使 AI 能够在编码、理解代码和执行多步任务时更贴近真实开发流程。
 
 GitHub Stars: 30.5k
 
@@ -126,9 +132,9 @@ Official Website: [https://continue.dev](https://continue.dev)
 
 ### **Mastra**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTUwNjA0M2JmZTVlMTQ1ZDczYzJkNzk2MjZjYzdmMzRfeWg1Y3dtb2tZcEFUWldtV1FDUmlsTWtJeFdUOGgxTUtfVG9rZW46UE85c2JHa0Rnb2p6SVN4WXd4dWMwVmRYbmZOXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Mastra.png](https://static-docs.nocobase.com/Mastra-231hhv.png)
 
-**项目简介** Mastra 是一个开源的 TypeScript 框架，用于构建具有智能能力的应用与代理。它提供了构建多步骤工作流、管理上下文和记忆、集成大型语言模型以及构建智能代理的基础设施，使开发者可以用统一的方式定义和编排复杂的 AI 驱动流程。
+Mastra 是一个开源的 TypeScript 框架，用于构建具有智能能力的应用与代理。它提供了构建多步骤工作流、管理上下文和记忆、集成大型语言模型以及构建智能代理的基础设施，使开发者可以用统一的方式定义和编排复杂的 AI 驱动流程。
 
 GitHub Stars: 19k
 
@@ -146,9 +152,9 @@ Official Website: [https://mastra.ai](https://mastra.ai)
 
 ### **wshobson agents**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjVhNWNiNzI3NGE1ODg5ZTcwOWFlZjQyYzAzYmU2ZDFfTkVTd1ZpREppeGRQVWE5RG1LUVhsMWhKTFFCamJ2ZUZfVG9rZW46TEpjWGJCaExSbzRzaHJ4UjkyNmNNNzM2bjBlXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![wshobson agents.png](https://static-docs.nocobase.com/wshobson%20agents-mahvoo.png)
 
-**项目简介** wshobson agents 是一个开源的 AI Agent 扩展与插件集合项目，目标是为 AI Agent 提供可复用的工具能力与任务组件。该项目并不试图构建完整的平台或执行引擎，而是通过一组标准化的 Agent 组件，帮助开发者在既有的 AI Agent 或工作流体系中，快速扩展可执行能力，使 Agent 能够完成更具体、更结构化的任务。
+wshobson agents 是一个开源的 AI Agent 扩展与插件集合项目，目标是为 AI Agent 提供可复用的工具能力与任务组件。该项目并不试图构建完整的平台或执行引擎，而是通过一组标准化的 Agent 组件，帮助开发者在既有的 AI Agent 或工作流体系中，快速扩展可执行能力，使 Agent 能够完成更具体、更结构化的任务。
 
 GitHub Stars: 23.4k
 
@@ -167,9 +173,9 @@ Official Website: [https://sethhobson.com/](https://sethhobson.com/)
 
 ### **Activepieces**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmMwZjQzYTA3OTZjNzA4NGNlOTEyYjI1Y2EzZTk5ZmRfcFc2YTVlUENPZ2FXZDVHck9BcWdWOEdxMkJKZUNlRGlfVG9rZW46WXc0YWJPellzb3p1bjZ4eVZ2U2N2dlpZbjRjXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Activepieces.png](https://static-docs.nocobase.com/Activepieces-lmwl57.png)
 
-**项目简介** Activepieces 是一款开源的自动化流程平台，旨在帮助团队通过可视化的工作流构建与执行功能，在不同系统和服务之间自动连接与协作。随着平台的演进，Activepieces 也引入了 AI 能力，为工作流提供智能化处理与 Agent 功能，从而实现更复杂的自动化逻辑。
+Activepieces 是一款开源的自动化流程平台，旨在帮助团队通过可视化的工作流构建与执行功能，在不同系统和服务之间自动连接与协作。随着平台的演进，Activepieces 也引入了 AI 能力，为工作流提供智能化处理与 Agent 功能，从而实现更复杂的自动化逻辑。
 
 GitHub Stars: 20k
 
@@ -190,9 +196,9 @@ Official Website: [https://www.activepieces.com](https://www.activepieces.com)
 
 ### **Trigger.dev**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWJiMGNiN2Y0YWEyYWUyYjZmZGIxNjg0MjZkZDNhOGFfNkp5YUsxV01JUFB6SGp5TTFIME1ram02MFRFc3BpMnpfVG9rZW46UWNUVmJzMDVTbzFyTTB4akNmbmNjaUxxbjNjXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Trigger.png](https://static-docs.nocobase.com/Trigger.dev-ppvc62.png)
 
-**项目简介** Trigger.dev 是一个开源的平台，用于编写和运行 **AI 工作流与后台任务**，目标是让开发者可以使用标准的异步代码来构建可靠、可伸缩且持久的工作流。它不仅支持常规的工作流任务，还提供与 AI 相关的能力，使得长时间运行的 AI 任务、复杂的任务队列和智能代理能够稳定运行。
+Trigger.dev 是一个开源的平台，用于编写和运行AI 工作流与后台任务，目标是让开发者可以使用标准的异步代码来构建可靠、可伸缩且持久的工作流。它不仅支持常规的工作流任务，还提供与 AI 相关的能力，使得长时间运行的 AI 任务、复杂的任务队列和智能代理能够稳定运行。
 
 GitHub Stars: 13.1k
 
@@ -214,9 +220,9 @@ Official Website: [https://trigger.dev](https://trigger.dev)
 
 ### **Temporal**
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YmZjOTNmMmUwYjQxYmM3Njg3MTUyYzMxNDE4NjU1YTlfVXM0QkVoa09tS1ZSNFI5S0ZSaDRwa0ZadXUzTGxhczBfVG9rZW46V2ZObGJmSWRzb1YyYTh4QVZwM2NNNFJ6bkxmXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Temporal.png](https://static-docs.nocobase.com/Temporal-9nl4ir.png)
 
-**项目简介** Temporal 是一个开源的分布式工作流编排平台，主要用于运行持久化和可靠的业务流程代码。开发者可以使用熟悉的编程语言在其 SDK 中定义工作流逻辑，使得流程能够跨服务、跨节点稳定运行并自动处理失败与恢复。
+Temporal 是一个开源的分布式工作流编排平台，主要用于运行持久化和可靠的业务流程代码。开发者可以使用熟悉的编程语言在其 SDK 中定义工作流逻辑，使得流程能够跨服务、跨节点稳定运行并自动处理失败与恢复。
 
 GitHub Stars: 17.2k
 
@@ -235,9 +241,9 @@ Official Website: [https://temporal.io](https://temporal.io)
 
 ### Conductor
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YjcxZDI1M2E4ZmJlZDgxZjZkZTgwODY5NzViNmNiNzNfdUhXNjY5RXFsaU1UNXAycEVKb0lpRHhZM01LbVAwUVFfVG9rZW46VTV1MGJFR05Kb0tIMEZ4Wk5rNmNkcnhvbk9oXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Conductor.png](https://static-docs.nocobase.com/Conductor-5cw1xs.png)
 
-**项目简介** Conductor 是一个开源的微服务工作流编排引擎，最初由 Netflix 开源，用于在分布式系统中协调和管理复杂的业务流程。它通过将流程定义为可执行的工作流，统一调度多个任务与服务调用，帮助团队在高并发和高复杂度场景下保持流程的可控性与可恢复性。
+Conductor 是一个开源的微服务工作流编排引擎，最初由 Netflix 开源，用于在分布式系统中协调和管理复杂的业务流程。它通过将流程定义为可执行的工作流，统一调度多个任务与服务调用，帮助团队在高并发和高复杂度场景下保持流程的可控性与可恢复性。
 
 GitHub Stars: 31.7k
 
@@ -255,9 +261,9 @@ Official Website:  [https://conductor-oss.org/](https://conductor-oss.org/)
 
 ### Dagger
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzJmNTk3MjkyZmI3M2I0NWVjMGRhMGQ4ZGVlOTMyYzZfcUgxSjAxNnlyTkoyZkk1SzREWldUeVdXWmFsTkw5R2ZfVG9rZW46VUdGaWJiZll6b1hmVGZ4MHFIeWNxV3Q0bmZlXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![Dagger.png](https://static-docs.nocobase.com/Dagger-wxcy12.png)
 
-**项目简介** Dagger 是一个开源的工作流引擎，最初面向持续集成与持续交付场景设计，核心理念是将工作流定义为可组合的代码模块。随着使用场景的扩展，Dagger 逐渐被用于承载数据处理和 AI 相关任务，成为工程型工作流与 AI 管道的重要基础工具。
+Dagger 是一个开源的工作流引擎，最初面向持续集成与持续交付场景设计，核心理念是将工作流定义为可组合的代码模块。随着使用场景的扩展，Dagger 逐渐被用于承载数据处理和 AI 相关任务，成为工程型工作流与 AI 管道的重要基础工具。
 
 GitHub Stars: 15.2k
 
@@ -275,9 +281,9 @@ Official Website: [https://dagger.io](https://dagger.io)
 
 ### UVDesk
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZmYzU5MDY5OWE3NzVlNDZmZTEwMjEyODA0YzU5MTNfQTB4anFrUVlHbTcyN3lxWUt6alhSYzRPbXNHcHoza2JfVG9rZW46TjZ5SmJIOWNDb1dERGV4VUFJbmNOcHptbm1kXzE3NjY3NjQzMTY6MTc2Njc2NzkxNl9WNA)
+![UVDesk.png](https://static-docs.nocobase.com/UVDesk-2cp9j3.png)
 
-**项目简介** UVDesk 是一个开源的客户支持与工单管理系统，主要用于帮助团队构建客服中心和支持流程。随着产品演进，UVDesk 在客服场景中引入了 AI 相关能力，用于提升工单处理效率和响应质量，使支持流程在自动化基础上具备一定的智能化特征。
+UVDesk 是一个开源的客户支持与工单管理系统，主要用于帮助团队构建客服中心和支持流程。随着产品演进，UVDesk 在客服场景中引入了 AI 相关能力，用于提升工单处理效率和响应质量，使支持流程在自动化基础上具备一定的智能化特征。
 
 GitHub Stars: 17k
 
