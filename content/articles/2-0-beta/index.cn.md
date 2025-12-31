@@ -1,3 +1,48 @@
+## 新特性
+
+### AI 员工
+
+https://v2.docs.nocobase.com/cn/ai-employees
+
+### 多空间
+
+https://v2.docs.nocobase.com/cn/multi-app/multi-space
+
+### 历史记录
+
+https://v2.docs.nocobase.com/cn/record-history/
+
+### 遥测
+
+https://v2.docs.nocobase.com/cn/log-and-monitor/telemetry/
+
+### 界面搭建 2.0
+
+- 新的页面 2.0
+- 全新的 UI 模板，支持区块、字段和弹窗
+
+https://v2.docs.nocobase.com/interface-builder
+
+### 邮件管理 2.0
+
+https://v2.docs.nocobase.com/cn/email-manager
+
+### 审批 2.0
+
+即将发布
+
+https://v2.docs.nocobase.com/cn/workflow/nodes/approval
+
+### 多应用 2.0
+
+即将发布
+
+https://v2.docs.nocobase.com/cn/multi-app/multi-app
+
+## 解决方案
+
+待补充
+
 ## 2.0-beta 升级详细指南
 
 ### 图例说明
