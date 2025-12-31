@@ -129,7 +129,37 @@ https://v2.docs.nocobase.com/cn/record-history/
 
 ## 解决方案
 
-待补充
+NocoBase 2.0 提供开箱即用的解决方案模板，以便于快速搭建业务系统。
+
+### 智能工单系统
+
+AI 驱动的工单管理平台，实现：
+
+- **多源统一接入**：公开表单、客户门户、邮件解析、API/Webhook
+- **AI 员工团队**：Sam（分流）、Grace（回复）、Max（知识）、Lexi（翻译）...
+- **SLA 全程监控**：P0-P3 四级优先级，自动预警升级
+- **知识自循环**：工单解决后自动沉淀为知识文章
+
+方案文档https://v2.docs.nocobase.com/cn/solution/ticket-system/
+
+![ticketing-imgs-2026-01-01-00-46-12](https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12.jpg)
+
+### CRM 客户管理（预览版）
+
+> **版本说明**：当前版本基于1.x版本，对部分前端界面进行了2.0适配，**仅供学习预览**。
+
+NocoBase CRM 是一个无代码、灵活且强大的客户关系管理基座，涵盖：
+
+- **客户管理**：客户信息、联系人、客户分级
+- **销售管道**：线索管理、商机跟进、销售漏斗
+- **订单管理**：报价单、订单、合同
+- **数据分析**：仪表板、报表、数据可视化
+
+方案文档：https://v2.docs.nocobase.com/cn/solution/crm/
+
+在线演示：https://demo.nocobase.com/new
+
+![ticketing-imgs-2026-01-01-00-47-06](https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-47-06.jpg)
 
 ## 2.0-beta 对比 1.x
 
