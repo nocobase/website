@@ -9,7 +9,7 @@
 - ❌ 暂不支持：2.0 版本暂不支持的功能
 - ⚠️ 已废弃：已废弃的功能
 - P0/P1/P2：功能优先级
-  - P0：2.0 正式版之前会支持
+  - P0：即将发布
   - P1：2.0 正式版之前会支持
   - P2：2.0 正式版之后支持
 
@@ -32,7 +32,7 @@
 | ---------- | ------------------ | ----------- | ------ | ---- |
 | 页面配置项 | Display page title | ✅ 已支持   | -      | -    |
 | 页面配置项 | Edit page title    | ✅ 已支持   | -      | -    |
-| 页面配置项 | Enable page tabs   | ``✅ 已支持 | -      | -    |
+| 页面配置项 | Enable page tabs   | ✅ 已支持   | -      | -    |
 | 页面配置项 | Copy embedded link | ❌ 暂不支持 | -      | -    |
 | 页面配置项 | Enable page header | ⚠️ 已废弃 | -      | -    |
 | 拖拽布局   | 区块拖拽布局       | ✨ 功能增强 | -      | -    |
@@ -474,195 +474,175 @@
 ## 进阶功能
 
 
-| 分类            | 功能项           | 状态                  | 优先级    | 备注 |
-| --------------- | ---------------- | --------------------- | --------- | ---- |
-| 界面模板        | 区块             | 🆕 新功能             | -         | -    |
-| 界面模板        | 弹窗             | 🆕 新功能             | -         | -    |
-| 界面模板        | 字段             | 🆕 新功能             | -         | -    |
-| 界面模板 > 字段 | 表单字段         | 🆕 新功能             | -         | -    |
-| 界面模板 > 字段 | 详情字段         | 🆕 新功能             | -         | -    |
-| 界面模板 > 字段 | 审批字段         | 🆕 新功能             | -         | -    |
-| 界面和权限      | 界面和权限       | ✨ 功能增强           | -         | -    |
-| 事件流          | 事件流事件       | 🆕 新功能、🚀 优化中 | 🔄 进行中 | -    |
-| 事件流          | 事件流操作       | 🆕 新功能、🚀 优化中 | P1        | -    |
-| 联动规则        | 联动规则         | 🚀 优化中            | P1        | -    |
-| 变量            | 当前用户         | 🚀 优化中            | P1        | -    |
-| 变量            | 当前角色（标识） | ✅ 已支持             | -         | -    |
-| 变量            | 当前空间（标识） | ❌ 暂不支持           | P1        | -    |
-| 变量            | API 密钥         | ✅ 已支持             | -         | -    |
-| 变量            | URL 查询参数     | ✅ 已支持             | -         | -    |
-| 变量            | 当前设备         | 🆕 新功能             | -         | -    |
-| 变量            | 当前记录         | ✅ 已支持             | -         | -    |
-| 变量            | 当前表单         | ✅ 已支持             | -         | -    |
-| 变量            | 当前对象         | ❌ 暂不支持           | -         | -    |
-| 变量            | 当前弹窗         | 🚀 优化中            | P1        | -    |
-| 变量            | 当前选中记录     | ❌ 暂不支持           | P2        | -    |
-| 变量            | 日期变量         | 🔄 进行中             | P1        | -    |
-| 变量            | 变量与密钥       | 🔄 进行中             | P1        | -    |
-| JavaScript      | 运行 JavaScript  | 🆕 新功能             | -         | -    |
+| 分类            | 功能项           | 状态                  | 优先级 | 备注 |
+| --------------- | ---------------- | --------------------- | ------ | ---- |
+| 界面模板        | 区块             | 🆕 新功能             | -      | -    |
+| 界面模板        | 弹窗             | 🆕 新功能             | -      | -    |
+| 界面模板        | 字段             | 🆕 新功能             | -      | -    |
+| 界面模板 > 字段 | 表单字段         | 🆕 新功能             | -      | -    |
+| 界面模板 > 字段 | 详情字段         | 🆕 新功能             | -      | -    |
+| 界面模板 > 字段 | 审批字段         | 🆕 新功能             | -      | -    |
+| 界面和权限      | 界面和权限       | ✨ 功能增强           | -      | -    |
+| 事件流          | 事件流事件       | 🆕 新功能、🚀 优化中 | P1     | -    |
+| 事件流          | 事件流操作       | 🆕 新功能、🚀 优化中 | P1     | -    |
+| 联动规则        | 联动规则         | 🚀 优化中            | P1     | -    |
+| 变量            | 当前用户         | 🚀 优化中            | P1     | -    |
+| 变量            | 当前角色（标识） | ✅ 已支持             | -      | -    |
+| 变量            | 当前空间（标识） | ❌ 暂不支持           | P1     | -    |
+| 变量            | API 密钥         | ✅ 已支持             | -      | -    |
+| 变量            | URL 查询参数     | ✅ 已支持             | -      | -    |
+| 变量            | 当前设备         | 🆕 新功能             | -      | -    |
+| 变量            | 当前记录         | ✅ 已支持             | -      | -    |
+| 变量            | 当前表单         | ✅ 已支持             | -      | -    |
+| 变量            | 当前对象         | ❌ 暂不支持           | P1     | -    |
+| 变量            | 当前弹窗         | 🚀 优化中            | P1     | -    |
+| 变量            | 当前选中记录     | ❌ 暂不支持           | P2     | -    |
+| 变量            | 日期变量         | 🔄 进行中             | P1     | -    |
+| 变量            | 变量与密钥       | 🔄 进行中             | P1     | -    |
+| JavaScript      | 运行 JavaScript  | 🆕 新功能             | -      | -    |
 
 ## 插件状态
 
-### 未适配 2.0
 
-
-| 插件名称                               | 备注 |
-| -------------------------------------- | ---- |
-| @nocobase/plugin-action-bulk-edit      | -    |
-| @nocobase/plugin-action-custom-request | -    |
-| @nocobase/plugin-action-duplicate      | -    |
-| @nocobase/plugin-action-print          | -    |
-| @nocobase/plugin-block-multi-step-form | -    |
-| @nocobase/plugin-block-tree            | -    |
-| @nocobase/plugin-calendar              | -    |
-| @nocobase/plugin-custom-variables      | -    |
-| @nocobase/plugin-embed                 | -    |
-| @nocobase/plugin-field-china-region    | -    |
-| @nocobase/plugin-field-code            | -    |
-| @nocobase/plugin-field-sort            | -    |
-| @nocobase/plugin-file-previewer-office | -    |
-| @nocobase/plugin-gantt                 | -    |
-| @nocobase/plugin-kanban                | -    |
-| @nocobase/plugin-public-forms          | -    |
-| @nocobase/plugin-text-copy             | -    |
-
-### 2.0 不再维护
-
-
-| 插件名称                                    | 替代方案                                      |
-| ------------------------------------------- | --------------------------------------------- |
-| @nocobase/plugin-data-visualization-echarts | 使用 @nocobase/plugin-data-visualization 代替 |
-| @nocobase/plugin-field-component-mask       | -                                             |
-| @nocobase/plugin-mobile                     | 使用 @nocobase/plugin-ui-layout 代替          |
-| @nocobase/plugin-multi-app-manager          | 使用 @nocobase/plugin-app-supervisor 代替     |
-
-### 仅 2.0
-
-
-| 插件名称                         | 状态     |
-| -------------------------------- | -------- |
-| @nocobase/plugin-app-supervisor  | 即将推出 |
-| @nocobase/plugin-ai              | -        |
-| @nocobase/plugin-ai-gigachat     | -        |
-| @nocobase/plugin-block-grid-card | -        |
-| @nocobase/plugin-block-list      | -        |
-| @nocobase/plugin-block-markdown  | -        |
-| @nocobase/plugin-flow-engine     | -        |
-| @nocobase/plugin-form-drafts     | -        |
-| @nocobase/plugin-multi-space     | -        |
-| @nocobase/plugin-record-history  | -        |
-| @nocobase/plugin-telemetry       | -        |
-| @nocobase/plugin-ui-layout       | 计划中   |
-| @nocobase/plugin-ui-templates    | -        |
-
-### 已适配 2.0
-
-
-| 插件名称                                         |
-| ------------------------------------------------ |
-| @nocobase/plugin-acl                             |
-| @nocobase/plugin-action-bulk-update              |
-| @nocobase/plugin-action-export                   |
-| @nocobase/plugin-action-export-pro               |
-| @nocobase/plugin-action-import                   |
-| @nocobase/plugin-action-import-pro               |
-| @nocobase/plugin-action-template-print           |
-| @nocobase/plugin-api-doc                         |
-| @nocobase/plugin-api-keys                        |
-| @nocobase/plugin-async-task-manager              |
-| @nocobase/plugin-audit-logger                    |
-| @nocobase/plugin-audit-logs                      |
-| @nocobase/plugin-auth                            |
-| @nocobase/plugin-auth-cas                        |
-| @nocobase/plugin-auth-dingtalk                   |
-| @nocobase/plugin-auth-ldap                       |
-| @nocobase/plugin-auth-oidc                       |
-| @nocobase/plugin-auth-saml                       |
-| @nocobase/plugin-auth-sms                        |
-| @nocobase/plugin-auth-wecom                      |
-| @nocobase/plugin-backup-restore                  |
-| @nocobase/plugin-backups                         |
-| @nocobase/plugin-block-iframe                    |
-| @nocobase/plugin-block-template                  |
-| @nocobase/plugin-block-tree                      |
-| @nocobase/plugin-block-workbench                 |
-| @nocobase/plugin-client                          |
-| @nocobase/plugin-collection-fdw                  |
-| @nocobase/plugin-collection-sql                  |
-| @nocobase/plugin-collection-tree                 |
-| @nocobase/plugin-comments                        |
-| @nocobase/plugin-custom-brand                    |
-| @nocobase/plugin-data-source-external-mariadb    |
-| @nocobase/plugin-data-source-external-mssql      |
-| @nocobase/plugin-data-source-external-mysql      |
-| @nocobase/plugin-data-source-external-oracle     |
-| @nocobase/plugin-data-source-external-postgres   |
-| @nocobase/plugin-data-source-kingbase            |
-| @nocobase/plugin-data-source-main                |
-| @nocobase/plugin-data-source-manager             |
-| @nocobase/plugin-data-source-rest-api            |
-| @nocobase/plugin-data-visualization              |
-| @nocobase/plugin-departments                     |
-| @nocobase/plugin-email-manager                   |
-| @nocobase/plugin-environment-variables           |
-| @nocobase/plugin-error-handler                   |
-| @nocobase/plugin-field-attachment-url            |
-| @nocobase/plugin-field-encryption                |
-| @nocobase/plugin-field-formula                   |
-| @nocobase/plugin-field-m2m-array                 |
-| @nocobase/plugin-field-markdown-vditor           |
-| @nocobase/plugin-field-sequence                  |
-| @nocobase/plugin-file-manager                    |
-| @nocobase/plugin-file-storage-s3-pro             |
-| @nocobase/plugin-graph-collection-manager        |
-| @nocobase/plugin-ip-restriction                  |
-| @nocobase/plugin-license                         |
-| @nocobase/plugin-locale-tester                   |
-| @nocobase/plugin-localization                    |
-| @nocobase/plugin-lock-adapter-redis              |
-| @nocobase/plugin-logger                          |
-| @nocobase/plugin-map                             |
-| @nocobase/plugin-migration-manager               |
-| @nocobase/plugin-multi-keyword-filter            |
-| @nocobase/plugin-notification-email              |
-| @nocobase/plugin-notification-in-app-message     |
-| @nocobase/plugin-notification-manager            |
-| @nocobase/plugin-password-policy                 |
-| @nocobase/plugin-pubsub-adapter-redis            |
-| @nocobase/plugin-queue-adapter-rabbitmq          |
-| @nocobase/plugin-queue-adapter-redis             |
-| @nocobase/plugin-request-encryption              |
-| @nocobase/plugin-system-settings                 |
-| @nocobase/plugin-telemetry-prometheus            |
-| @nocobase/plugin-theme-editor                    |
-| @nocobase/plugin-two-factor-authentication       |
-| @nocobase/plugin-ui-schema-storage               |
-| @nocobase/plugin-user-data-sync                  |
-| @nocobase/plugin-users                           |
-| @nocobase/plugin-verification                    |
-| @nocobase/plugin-verification-totp-authenticator |
-| @nocobase/plugin-workerid-allocator-redis        |
-| @nocobase/plugin-workflow                        |
-| @nocobase/plugin-workflow-action-trigger         |
-| @nocobase/plugin-workflow-aggregate              |
-| @nocobase/plugin-workflow-approval               |
-| @nocobase/plugin-workflow-cc                     |
-| @nocobase/plugin-workflow-custom-action-trigger  |
-| @nocobase/plugin-workflow-date-calculation       |
-| @nocobase/plugin-workflow-delay                  |
-| @nocobase/plugin-workflow-dynamic-calculation    |
-| @nocobase/plugin-workflow-javascript             |
-| @nocobase/plugin-workflow-json-query             |
-| @nocobase/plugin-workflow-json-variable-mapping  |
-| @nocobase/plugin-workflow-loop                   |
-| @nocobase/plugin-workflow-mailer                 |
-| @nocobase/plugin-workflow-manual                 |
-| @nocobase/plugin-workflow-notification           |
-| @nocobase/plugin-workflow-parallel               |
-| @nocobase/plugin-workflow-request                |
-| @nocobase/plugin-workflow-request-interceptor    |
-| @nocobase/plugin-workflow-response-message       |
-| @nocobase/plugin-workflow-sql                    |
-| @nocobase/plugin-workflow-subflow                |
-| @nocobase/plugin-workflow-variable               |
-| @nocobase/plugin-workflow-webhook                |
+| 插件名称                                         | 插件状态     | 优先级 | 备注                                          |
+| ------------------------------------------------ | ------------ | ------ | --------------------------------------------- |
+| @nocobase/plugin-action-bulk-edit                | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-action-custom-request           | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-action-duplicate                | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-action-print                    | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-block-multi-step-form           | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-block-tree                      | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-calendar                        | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-custom-variables                | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-embed                           | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-field-china-region              | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-field-code                      | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-field-sort                      | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-file-previewer-office           | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-gantt                           | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-kanban                          | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-public-forms                    | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-text-copy                       | ❌ 暂不支持  | 待定   | -                                             |
+| @nocobase/plugin-data-visualization-echarts      | 2.0 不再维护 | 低     | 使用 @nocobase/plugin-data-visualization 代替 |
+| @nocobase/plugin-field-component-mask            | 2.0 不再维护 | 低     | -                                             |
+| @nocobase/plugin-mobile                          | 2.0 不再维护 | 低     | 使用 @nocobase/plugin-ui-layout 代替          |
+| @nocobase/plugin-multi-app-manager               | 2.0 不再维护 | 低     | 使用 @nocobase/plugin-app-supervisor 代替     |
+| @nocobase/plugin-app-supervisor                  | 🆕 新功能    | 高     | 🔜 即将推出                                   |
+| @nocobase/plugin-ai                              | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-ai-gigachat                     | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-block-grid-card                 | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-block-list                      | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-block-markdown                  | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-flow-engine                     | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-form-drafts                     | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-multi-space                     | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-record-history                  | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-telemetry                       | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-ui-layout                       | 🆕 新功能    | 高     | 🧭 计划中                                     |
+| @nocobase/plugin-ui-templates                    | 🆕 新功能    | 高     | ✅ 已发布                                     |
+| @nocobase/plugin-acl                             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-bulk-update              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-export                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-export-pro               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-import                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-import-pro               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-action-template-print           | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-api-doc                         | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-api-keys                        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-async-task-manager              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-audit-logger                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-audit-logs                      | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth                            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-cas                        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-dingtalk                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-ldap                       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-oidc                       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-saml                       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-sms                        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-auth-wecom                      | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-backup-restore                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-backups                         | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-block-iframe                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-block-template                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-block-tree                      | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-block-workbench                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-client                          | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-collection-fdw                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-collection-sql                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-collection-tree                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-comments                        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-custom-brand                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-external-mariadb    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-external-mssql      | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-external-mysql      | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-external-oracle     | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-external-postgres   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-kingbase            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-main                | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-manager             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-source-rest-api            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-data-visualization              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-departments                     | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-email-manager                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-environment-variables           | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-error-handler                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-attachment-url            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-encryption                | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-formula                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-m2m-array                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-markdown-vditor           | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-field-sequence                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-file-manager                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-file-storage-s3-pro             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-graph-collection-manager        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-ip-restriction                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-license                         | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-locale-tester                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-localization                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-lock-adapter-redis              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-logger                          | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-map                             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-migration-manager               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-multi-keyword-filter            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-notification-email              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-notification-in-app-message     | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-notification-manager            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-password-policy                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-pubsub-adapter-redis            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-queue-adapter-rabbitmq          | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-queue-adapter-redis             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-request-encryption              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-system-settings                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-telemetry-prometheus            | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-theme-editor                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-two-factor-authentication       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-ui-schema-storage               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-user-data-sync                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-users                           | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-verification                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-verification-totp-authenticator | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workerid-allocator-redis        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow                        | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-action-trigger         | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-aggregate              | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-approval               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-cc                     | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-custom-action-trigger  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-date-calculation       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-delay                  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-dynamic-calculation    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-javascript             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-json-query             | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-json-variable-mapping  | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-loop                   | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-mailer                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-manual                 | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-notification           | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-parallel               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-request                | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-request-interceptor    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-response-message       | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-sql                    | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-subflow                | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-variable               | ✅ 已支持    | 中     | -                                             |
+| @nocobase/plugin-workflow-webhook                | ✅ 已支持    | 中     | -                                             |
