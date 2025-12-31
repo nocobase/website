@@ -1,54 +1,105 @@
+经过 NocoBase 团队及所有贡献者 8 个星期的努力，NocoBase 2.0-beta 如期发布。这个版本对 NocoBase 2.0 的大量新特性进行了打磨和测试，使得 2.0 进入更稳定的阶段，欢迎尝鲜用户将该版本用于生产测试，并将遇到的问题和建议及时反馈给我们。
+
+2.0-rc 将于 2026 年 2 月 11 日之前发布，将覆盖更全面的测试及更多新特性，敬请期待。
+
+---
+
 ## 新特性
 
 ### AI 员工
 
+我们对 AI 员工做了大量改进， 包括：
+
+- 优化内置 AI 员工的能力
+- 支持访问外部数据源
+- 支持查询大量数据
+- 让对话内容保持原始格式
+- 优化错误提示
+
+使用手册：
 https://v2.docs.nocobase.com/cn/ai-employees
 
-### 多空间
+![](https://static-docs.nocobase.com/20251102121036-2025-11-02-12-10-38.png)
 
-https://v2.docs.nocobase.com/cn/multi-app/multi-space
+### UI 模板
 
-### 历史记录
+在 2.0 beta 中带来了全新的 UI 模板功能，每种模板均支持复制和引用，包括：
 
-https://v2.docs.nocobase.com/cn/record-history/
+- 区块模板
+- 字段模板
+- 弹窗模板
 
-### 遥测
+其中，弹窗模板可以将整个弹窗里的内容（子页面中的全部标签页、区块）保存为模板，这大幅减少了在 1.x 中的重复工作。
 
-https://v2.docs.nocobase.com/cn/log-and-monitor/telemetry/
+使用手册：
 
-### 界面搭建 2.0
-
-- 新的页面 2.0
-- 全新的 UI 模板，支持区块、字段和弹窗
-- 事件流
-
-https://v2.docs.nocobase.com/interface-builder
-
-### 数据可视化 2.0
-
-https://v2.docs.nocobase.com/cn/data-visualization
-
-### 邮件管理 2.0
-
-https://v2.docs.nocobase.com/cn/email-manager
-
-### 审批 2.0
-
-即将发布
-
-https://v2.docs.nocobase.com/cn/workflow/nodes/approval
+![](https://static-docs.nocobase.com/edit-popup-select-20251228.png)
 
 ### 多应用 2.0
 
-即将发布
+多应用管理是 NocoBase 提供的统一应用管理方案，用于在一个或多个运行环境中创建和管理多个物理隔离的 NocoBase 应用实例。通过应用监管器 (AppSupervisor)，用户可以在统一入口中创建和维护多个应用，满足不同业务、不同规模阶段的需求。NocoBase 支持以下三种架构部署：
 
+- **单应用**：只部署一个 NocoBase 实例，所有业务功能、数据和用户都运行在同一个应用中。
+- **共享内存多应用**：一个 NocoBase 实例中可以同时运行多个应用。每个应用是独立的，可以连接独立的数据库，可以单独创建、启动和停止，但它们共享同一个进程和内存空间，用户仍然只需要维护一个 NocoBase 实例。
+- **多环境混合部署**：部署一个 NocoBase 作为统一的管理中心，同时部署多个 NocoBase 作为应用运行环境，用于实际运行业务应用，不同应用可以运行在不同节点或集群。
+
+使用手册：
 https://v2.docs.nocobase.com/cn/multi-app/multi-app
+
+![](https://static-docs.nocobase.com/202512231215186.png)
+
+### 多空间
+
+多空间插件允许在单一应用实例中，通过逻辑隔离实现多个独立的数据空间，适用于业务流程和系统配置高度一致的多工厂或多门店等场景。
+
+使用手册：
+https://v2.docs.nocobase.com/cn/multi-app/multi-space
+
+### 数据可视化 2.0
+
+1.x 中提供了基础的数据可视化插件，基于 Ant Design Charts 和 Echarts 实现最基本的数据可视化展示，但对于复杂图表、个性化交互、数据联动的场景却无能为力。
+
+NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持可视化配置模式和 SQL、JSON 模式，支持事件，可以方便地满足复杂图表、多图表联动、数据下钻等场景。
+
+不需要担心 SQL 和 JSON 过于复杂，有 AI 员工 Nathan 帮你。
+
+使用手册：
+https://v2.docs.nocobase.com/cn/data-visualization
+
+![](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
+
+### 审批 2.0
+
+xxxxxxxxxx
+
+使用手册：
+https://v2.docs.nocobase.com/cn/workflow/nodes/approval
+
+### 邮件管理 2.0
+
+邮件管理插件使用 FlowEngine 进行了重构，使 AI 员工可以无缝参与到邮件的总结、分析、撰写中，同时新增了自动保存草稿等功能。
+
+使用手册：
+https://v2.docs.nocobase.com/cn/email-manager
+
+![](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
+
+### 数据历史记录
+
+历史记录插件用于追踪数据的变更过程，自动保存新增、修改、删除操作的快照与差异记录，帮助用户快速回溯数据变化、审计操作行为。
+
+使用手册：
+https://v2.docs.nocobase.com/cn/record-history/
+
+![](https://static-docs.nocobase.com/202511011346400.png)
+
+---
 
 ## 解决方案
 
 待补充
 
-## 2.0-beta 升级详细指南
+## 2.0-beta 对比 1.x
 
 ### 图例说明
 
