@@ -20,8 +20,13 @@ https://v2.docs.nocobase.com/cn/log-and-monitor/telemetry/
 
 - 新的页面 2.0
 - 全新的 UI 模板，支持区块、字段和弹窗
+- 事件流
 
 https://v2.docs.nocobase.com/interface-builder
+
+### 数据可视化 2.0
+
+https://v2.docs.nocobase.com/cn/data-visualization
 
 ### 邮件管理 2.0
 
