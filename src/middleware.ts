@@ -17,7 +17,8 @@ const RUSSIAN_REDIRECT_PAGES = [
 const RUSSIAN_REDIRECT_PATTERNS = [
   /^\/ru\/tutorials\/.*$/,
   /^\/ru\/blog\/.*$/,
-  /^\/ru\/highlights\/.*$/
+  /^\/ru\/highlights\/.*$/,
+  /^\/ru\/solutions\/ticketing-v2$/
 ];
 
 // Define Chinese pages that should redirect to other pages
