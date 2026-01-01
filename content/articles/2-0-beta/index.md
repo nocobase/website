@@ -2,8 +2,6 @@ After 8 weeks of hard work by the NocoBase team and all contributors, NocoBase 2
 
 2.0-rc will be released before February 11, 2026, with more comprehensive testing and additional new features. Stay tuned.
 
----
-
 ## New Features
 
 ### AI Employees
