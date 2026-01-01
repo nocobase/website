@@ -1,156 +1,157 @@
-经过 NocoBase 团队及所有贡献者 8 个星期的努力，NocoBase 2.0-beta 如期发布。这个版本对 NocoBase 2.0 的大量新特性进行了打磨和测试，使得 2.0 进入更稳定的阶段，欢迎尝鲜用户将该版本用于生产测试，并将遇到的问题和建议及时反馈给我们。
+After 8 weeks of hard work by the NocoBase team and all contributors, NocoBase 2.0-beta has been released on schedule. This version includes extensive refinements and testing of the new features in NocoBase 2.0, bringing 2.0 into a more stable phase. We welcome early adopters to use this version for production testing and provide timely feedback on any issues or suggestions.
 
-2.0-rc 将于 2026 年 2 月 11 日之前发布，将覆盖更全面的测试及更多新特性，敬请期待。
+2.0-rc will be released before February 11, 2026, with more comprehensive testing and additional new features. Stay tuned.
 
 ---
 
-## 新特性
+## New Features
 
-### AI 员工
+### AI Employees
 
-我们对 AI 员工做了大量改进， 包括：
+We have made significant improvements to AI Employees, including:
 
-- 优化内置 AI 员工的能力
-- 支持访问外部数据源
-- 支持查询大量数据
-- 让对话内容保持原始格式
-- 优化错误提示
+- Optimized capabilities of built-in AI Employees
+- Support for accessing external data sources
+- Support for querying large amounts of data
+- Preserving original formatting in conversation content
+- Improved error messages
 
-使用手册：[AI 员工](https://v2.docs.nocobase.com/cn/ai-employees)
+User Manual: [AI Employees](https://v2.docs.nocobase.com/ai-employees)
 
 ![](https://static-docs.nocobase.com/20251102121036-2025-11-02-12-10-38.png)
 
-### UI 模板
+### UI Templates
 
-在 2.0 beta 中带来了全新的 UI 模板功能，每种模板均支持复制和引用，包括：
+The 2.0 beta introduces a brand new UI Templates feature. Each template type supports both copying and referencing, including:
 
-- 区块模板
-- 字段模板
-- 弹窗模板
+- Block Templates
+- Field Templates
+- Popup Templates
 
-其中，弹窗模板可以将整个弹窗里的内容（子页面中的全部标签页、区块）保存为模板，这大幅减少了在 1.x 中的重复工作。
+Notably, Popup Templates allow you to save the entire popup content (all tabs and blocks in sub-pages) as a template, significantly reducing repetitive work from version 1.x.
 
-使用手册：[UI Templates](https://v2.docs.nocobase.com/interface-builder/ui-templates)
+User Manual: [UI Templates](https://v2.docs.nocobase.com/interface-builder/ui-templates)
 
 ![](https://static-docs.nocobase.com/edit-popup-select-20251228.png)
 
-### 多应用 2.0
+### Multi-App 2.0
 
-多应用管理是 NocoBase 提供的统一应用管理方案，用于在一个或多个运行环境中创建和管理多个物理隔离的 NocoBase 应用实例。通过应用监管器 (AppSupervisor)，用户可以在统一入口中创建和维护多个应用，满足不同业务、不同规模阶段的需求。NocoBase 支持以下三种架构部署：
+Multi-App Management is NocoBase's unified application management solution for creating and managing multiple physically isolated NocoBase application instances across one or more runtime environments. Through the App Supervisor, users can create and maintain multiple applications from a unified entry point, meeting the needs of different businesses and scales. NocoBase supports three deployment architectures:
 
-- **单应用**：只部署一个 NocoBase 实例，所有业务功能、数据和用户都运行在同一个应用中。
-- **共享内存多应用**：一个 NocoBase 实例中可以同时运行多个应用。每个应用是独立的，可以连接独立的数据库，可以单独创建、启动和停止，但它们共享同一个进程和内存空间，用户仍然只需要维护一个 NocoBase 实例。
-- **多环境混合部署**：部署一个 NocoBase 作为统一的管理中心，同时部署多个 NocoBase 作为应用运行环境，用于实际运行业务应用，不同应用可以运行在不同节点或集群。
+- **Single App**: Deploy only one NocoBase instance where all business functions, data, and users run in the same application.
+- **Shared Memory Multi-App**: Multiple applications can run simultaneously within one NocoBase instance. Each application is independent, can connect to its own database, and can be created, started, and stopped individually, but they share the same process and memory space. Users still only need to maintain one NocoBase instance.
+- **Multi-Environment Hybrid Deployment**: Deploy one NocoBase as a unified management center, while deploying multiple NocoBase instances as application runtime environments for running business applications. Different applications can run on different nodes or clusters.
 
-使用手册：[多应用](https://v2.docs.nocobase.com/cn/multi-app/multi-app)![](https://static-docs.nocobase.com/202512231215186.png)
+User Manual: [Multi-App](https://v2.docs.nocobase.com/multi-app/multi-app)
 
-### 多空间
+![](https://static-docs.nocobase.com/202512231215186.png)
 
-多空间插件允许在单一应用实例中，通过逻辑隔离实现多个独立的数据空间，适用于业务流程和系统配置高度一致的多工厂或多门店等场景。
+### Multi-Space
 
-使用手册：[多空间](https://v2.docs.nocobase.com/cn/multi-app/multi-space)
+The Multi-Space plugin enables logical isolation to create multiple independent data spaces within a single application instance, suitable for scenarios like multi-factory or multi-store operations with highly consistent business processes and system configurations.
 
-### 数据可视化 2.0
+User Manual: [Multi-Space](https://v2.docs.nocobase.com/multi-app/multi-space)
 
-1.x 中提供了基础的数据可视化插件，基于 Ant Design Charts 和 Echarts 实现最基本的数据可视化展示，但对于复杂图表、个性化交互、数据联动的场景却无能为力。
+### Data Visualization 2.0
 
-NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持可视化配置模式和 SQL、JSON 模式，支持事件，可以方便地满足复杂图表、多图表联动、数据下钻等场景。
+Version 1.x provided basic data visualization plugins based on Ant Design Charts and ECharts for fundamental data visualization. However, it fell short in handling complex charts, personalized interactions, and data linkage scenarios.
 
-不需要担心 SQL 和 JSON 过于复杂，有 AI 员工 Nathan 帮你。
+NocoBase 2.0 introduces a brand new data visualization plugin based on ECharts, supporting visual configuration mode as well as SQL and JSON modes. It supports events, making it easy to handle complex charts, multi-chart linkage, and data drill-down scenarios.
 
-使用手册：[数据可视化](https://v2.docs.nocobase.com/cn/data-visualization)
+Don't worry about SQL and JSON being too complex—AI Employee Nathan is here to help.
+
+User Manual: [Data Visualization](https://v2.docs.nocobase.com/data-visualization)
 
 ![](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
-### 工作流
+### Workflow
 
-#### 新增“多条件分支”节点
+#### New "Multi-Condition Branch" Node
 
-类似于编程语言中的 `switch / case` 或 `if / else if` 语句。系统将根据配置的多个条件，按顺序逐个判断，仅执行满足某个条件的分支下的流程。该节点将代替“并行分支”的部分功能，建议同时使用条件和并行节点解决此类编排的流程都可以用新的“多条件分支”节点替代。
+Similar to `switch / case` or `if / else if` statements in programming languages. The system evaluates multiple configured conditions in sequence and executes only the branch that satisfies a condition. This node will replace some functionality of the "Parallel Branch" node. We recommend replacing workflows that use both condition and parallel nodes with the new "Multi-Condition Branch" node.
 
 ![20251123224209](https://static-docs.nocobase.com/20251123224209.png)
 
-使用手册：[多条件分支](https://v2.docs.nocobase.com/cn/workflow/nodes/multi-conditions)
+User Manual: [Multi-Condition Branch](https://v2.docs.nocobase.com/workflow/nodes/multi-conditions)
 
-### 审批 2.0
+### Approval 2.0
 
-审批插件的大部分区块配置使用 FlowEngine 进行了重构，支持更灵活的配置和使用。同时也提供了几个新功能。
+Most block configurations in the Approval plugin have been refactored using FlowEngine, supporting more flexible configuration and usage. Several new features have also been added.
 
-使用手册：[审批](https://v2.docs.nocobase.com/cn/workflow/triggers/approval)
+User Manual: [Approval](https://v2.docs.nocobase.com/workflow/triggers/approval)
 
-#### 允许选择在审批处理界面中展示数据的快照还是最新状态
+#### Option to Display Data Snapshot or Latest State in Approval Processing Interface
 
-* **快照**
-  在审批流程中，申请人和审批人在进入时看到的记录状态，并且在提交后只能看到自己修改的记录——不会看到其他人之后所做的更新。
-* **最新**
-  在审批流程中，申请人和审批人在整个流程中始终看到记录的最新版本，无论他们操作之前记录是什么状态。在流程结束后，他们将看到记录的最终版本。
+* **Snapshot**
+  During the approval process, the applicant and approvers see the record state as it was when they entered, and after submission, they can only see the records they modified—they won't see updates made by others afterward.
+* **Latest**
+  During the approval process, the applicant and approvers always see the latest version of the record throughout the process, regardless of the record's state before their action. After the process ends, they will see the final version of the record.
 
-#### 支持配置发起人的数据范围
+#### Support for Configuring Initiator Data Scope
 
-可以配置基于用户范围的权限，决定哪些用户可以发起该审批。
+You can configure user scope-based permissions to determine which users can initiate the approval.
 
 ![20251226114623](https://static-docs.nocobase.com/20251226114623.png)
 
-#### 待办中心里，支持“我发起的”和“我的审批”列表中的卡片配置业务数据字段
+#### In the To-Do Center, Support for Configuring Business Data Fields in "My Initiated" and "My Approvals" List Cards
 
-“我发起的”卡片，可灵活配置审批信息和业务数据的字段。
+The "My Initiated" card allows flexible configuration of approval information and business data fields.
 
 ![20251231222654](https://static-docs.nocobase.com/20251231222654.png)
 
-“我的审批”卡片，可灵活配置审批任务和业务数据的字段。
+The "My Approvals" card allows flexible configuration of approval task and business data fields.
 
 ![20251231222815](https://static-docs.nocobase.com/20251231222815.png)
 
-### 邮件管理 2.0
+### Email Manager 2.0
 
-邮件管理插件使用 FlowEngine 进行了重构，使 AI 员工可以无缝参与到邮件的总结、分析、撰写中，同时新增了自动保存草稿等功能。
+The Email Manager plugin has been refactored using FlowEngine, enabling AI Employees to seamlessly participate in email summarization, analysis, and composition. New features like auto-save drafts have also been added.
 
-使用手册：
-https://v2.docs.nocobase.com/cn/email-manager
+User Manual: [Email Manager](https://v2.docs.nocobase.com/email-manager)
 
 ![](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 
-### 数据历史记录
+### Record History
 
-历史记录插件用于追踪数据的变更过程，自动保存新增、修改、删除操作的快照与差异记录，帮助用户快速回溯数据变化、审计操作行为。
+The Record History plugin tracks data changes by automatically saving snapshots and difference records for create, update, and delete operations, helping users quickly trace data changes and audit operations.
 
-使用手册：[数据历史记录](https://v2.docs.nocobase.com/cn/record-history/)
+User Manual: [Record History](https://v2.docs.nocobase.com/record-history/)
 
 ![](https://static-docs.nocobase.com/202511011346400.png)
 
 ---
 
-## 解决方案
+## Solutions
 
-NocoBase 2.0 提供开箱即用的解决方案模板，以便于快速搭建业务系统。
+NocoBase 2.0 provides ready-to-use solution templates for quickly building business systems.
 
-### 智能工单系统
+### Intelligent Ticketing System
 
-AI 驱动的工单管理平台，实现：
+An AI-driven ticket management platform featuring:
 
-- **多源统一接入**：公开表单、客户门户、邮件解析、API/Webhook
-- **AI 员工团队**：Sam（分流）、Grace（回复）、Max（知识）、Lexi（翻译）...
-- **SLA 全程监控**：P0-P3 四级优先级，自动预警升级
-- **知识自循环**：工单解决后自动沉淀为知识文章
+- **Multi-Source Unified Access**: Public forms, customer portal, email parsing, API/Webhook
+- **AI Employee Team**: Sam (routing), Grace (replies), Max (knowledge), Lexi (translation)...
+- **Full SLA Monitoring**: P0-P3 four-level priority with automatic escalation alerts
+- **Knowledge Self-Circulation**: Tickets automatically become knowledge articles after resolution
 
-方案文档：https://v2.docs.nocobase.com/cn/solution/ticket-system/
+Solution Documentation: https://v2.docs.nocobase.com/solution/ticket-system/
 
 ![ticketing-imgs-2026-01-01-00-46-12](https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12.jpg)
 
-### CRM 客户管理（预览版）
+### CRM Customer Management (Preview)
 
-> **版本说明**：当前版本基于1.x版本，对部分前端界面进行了2.0适配，**仅供学习预览**。
+> **Version Note**: The current version is based on 1.x with partial frontend UI adapted for 2.0, **for learning and preview only**.
 
-NocoBase CRM 是一个无代码、灵活且强大的客户关系管理基座，涵盖：
+NocoBase CRM is a no-code, flexible, and powerful customer relationship management platform, covering:
 
-- **客户管理**：客户信息、联系人、客户分级
-- **销售管道**：线索管理、商机跟进、销售漏斗
-- **订单管理**：报价单、订单、合同
-- **数据分析**：仪表板、报表、数据可视化
+- **Customer Management**: Customer information, contacts, customer grading
+- **Sales Pipeline**: Lead management, opportunity tracking, sales funnel
+- **Order Management**: Quotations, orders, contracts
+- **Data Analysis**: Dashboards, reports, data visualization
 
-方案文档：https://v2.docs.nocobase.com/cn/solution/crm/
+Solution Documentation: https://v2.docs.nocobase.com/solution/crm/
 
-在线演示：https://demo.nocobase.com/new
+Live Demo: https://demo.nocobase.com/new
 
 ![ticketing-imgs-2026-01-01-00-47-06](https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-47-06.jpg)
 
