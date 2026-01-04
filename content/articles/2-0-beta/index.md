@@ -623,7 +623,7 @@ Live Demo: https://demo.nocobase.com/new
 | Import             | ✅ Supported     | -        | -     |
 | Export             | ✅ Supported     | -        | -     |
 | Export attachments | ✅ Supported     | -        | -     |
-| Scan QR code       | ❌ Not supported | -        | -     |
+| Scan QR code       | ✅ Supported     | -        | -     |
 | AI employees       | 🆕 New feature   | -        | -     |
 | JS Action          | 🆕 New feature   | -        | -     |
 
