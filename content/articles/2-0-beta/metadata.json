@@ -8,7 +8,7 @@
   "description_ja": "8週間にわたるブラッシュアップを経て、NocoBase 2.0 は正式に安定版テスト（Beta）フェーズへ移行しました。本バージョンでは、AI Employee、可視化2.0、承認システムを大幅に強化。さらに、UIテンプレートやマルチアプリアーキテクチャなどの新機能も追加されました。",
   "slug": "2-0-beta",
   "publishedAt": "2026-01-01T04:43:10.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -245,5 +245,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-04T01:29:44.673Z"
+  "updatedAt": "2026-01-04T01:31:15.672Z"
 }
