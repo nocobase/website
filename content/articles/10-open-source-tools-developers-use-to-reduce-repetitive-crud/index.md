@@ -12,6 +12,12 @@ In this article, we’ll look at different approaches developers use to reduce r
 
 💡 Dive deep: [Top 8 Open-Source CRUD Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/crud-projects)
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 ## Ways to Reduce Repetitive CRUD
 
 Repetitive CRUD can be addressed at different levels of abstraction.
@@ -449,3 +455,17 @@ Tools are only the entry point. The real dividing line for long-term efficiency 
 ❤️If you found this article useful, feel free to share it with others who may be facing similar challenges.
 
 Note: This article was written with AI assistance, with human review and additions for viewpoints, data, and examples.
+
+
+**Related reading:**
+
+* [Top 12 Open-source AI Workflows Projects with the Most GitHub Stars ](https://www.nocobase.com/en/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [6 Open-Source No-Code & Low-Code Tools for Software Agencies](https://www.nocobase.com/en/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [Top 10 Open-source AI CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [How to Quickly Build a Real System to Replace Excel: A Complete Guide](https://www.nocobase.com/en/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [Top 5 Open-Source AI Internal Tools on GitHub](https://www.nocobase.com/en/blog/top-5-open-source-ai-internal-tools-on-github)
+* [The 8 Best Google Sheets Alternatives (Specs & Pricing)](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [6 Open-Source No/Low-Code Tools for Building PoCs](https://www.nocobase.com/en/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [A Developer’s Technical Decision Guide to No-Code and Low-Code (2026)](https://www.nocobase.com/en/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 In-Depth Comparison of RBAC in Enterprise-Grade No-Code/Low-Code Platforms](https://www.nocobase.com/en/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [14 AI-Powered Low-Code Platforms on GitHub Worth Watching](https://www.nocobase.com/en/blog/14-ai-low-code-platforms-github)
