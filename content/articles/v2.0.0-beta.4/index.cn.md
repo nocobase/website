@@ -1,8 +1,5 @@
 ### 🐛 修复
 
-- **[操作：导入记录]** 修复异步导入xlsx文件触发唯一约束异常时错误信息不正确的问题 ([#8342](https://github.com/nocobase/nocobase/pull/8342)) by @cgyrock
-
+- **[操作：导入记录]** 修复异步导入 xlsx 文件触发唯一约束异常时错误信息不正确的问题 ([#8342](https://github.com/nocobase/nocobase/pull/8342)) by @cgyrock
 - **[操作：导出记录 Pro]** 修复主应用未启用导入/导出专业版插件时，子应用执行异步导入/导出任务报错问题 by @cgyrock
-
 - **[邮件管理]** 显示回复全部按钮和数据范围支持筛选子邮件 by @jiannx
-
