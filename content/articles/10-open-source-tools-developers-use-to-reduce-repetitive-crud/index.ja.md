@@ -10,7 +10,7 @@ CRMシステム、内部管理システム、承認ワークフロー、管理�
 
 今日の記事では、さまざまなアプローチに沿って、開発者が効果的に反復的なCRUDを減らすことができるオープンソースツールを紹介します。
 
-**おすすめ記事：GitHubでスター数が最も多い8つのCRUDオープンソースプロジェクト**
+💡おすすめ記事：[GitHub で最も多くのスターを獲得したトップ 8 のオープンソース CRUD プロジェクト](https://www.nocobase.com/ja/blog/crud-projects)
 
 ## 反復的なCRUDを減らすアプローチ
 
@@ -40,34 +40,53 @@ CRMシステム、内部管理システム、承認ワークフロー、管理�
 
 ### NocoBase
 
-ウェブサイト：https://www.nocobase.com/
+ウェブサイト：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-GitHub：https://github.com/nocobase/nocobase
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHubスター数：21k
 
 NocoBaseは、エンタープライズのCRUD能力をワンタイム開発からシステム能力に変えることができるオープンソースのノーコード/ローコード開発プラットフォームです。データモデル駆動のアプローチを通じて、ビジネス担当者と技術担当者が協力して複雑なビジネスシステムを構築でき、毎回ゼロからCRUDコードを書く必要がありません。
 
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
+
 **核心能力：**
 
 * **データモデル駆動のCRUD**：ビジュアルインターフェースを通じてデータテーブル、フィールド、関係を定義すると、システムが自動的に完全な作成、読み取り、更新、削除インターフェースとAPIを生成し、コードを書く必要がありません。NocoBaseはPostgreSQL、MySQL、MariaDBなどの主流データベースに直接接続でき、既存のデータを迅速に統合し、データ構造を移行 or 変換することなくビジネスシステムを構築できます。
+
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-qica0c.PNG)
+
 * **柔軟なフロントエンド設定**：さまざまなフィールドタイプ、フォーム検証、動的な表示/非表示、連動ルールをサポートし、ビジネスロジックに一致したデータ入力インターフェースを設定でき、フロントエンド開発作業を削減します。
+
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-f78boi.png)
+
 * **強力なクエリとリスト能力**：さまざまなタイプのブロックが組み込まれ、フィルタリング、ソート、ページネーション、エクスポートなどの機能をサポートし、設定を通じて複雑なデータ表示要件を実現できます。
+
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-uznhdh.png)
+
 * **きめ細かな権限制御**：ロールとユーザー権限だけでなく、フィールドレベル（誰がどのフィールドを表示/編集できるか）とデータレベル（誰がどのデータ行を操作できるか）まで制御でき、CRUDレベルでデータセキュリティを保証します。
+
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-qegojj.png)
+
 * **拡張可能なワークフロー**：ワークフローエンジンを通じてビジネスプロセスを設定できます。たとえば、データ提出後の承認、ステータス変更、自動通知などで、CRUD操作をビジネスプロセスに統合し、孤立したデータ操作ではなくします。
+
+![NocoBase6.png](https://static-docs.nocobase.com/NocoBase6-w400bs.png)
+
 * **プラグインアーキテクチャ**：複雑なCRUDロジックの場合、プラグインを通じてシステム機能を拡張でき、一度開発、何度も再利用でき、異なるプロジェクトでカスタムプラグインを共有できます。
 
 **適用シナリオ**：長期的な保守が必要なエンタープライズ内部システム、複数の類似プロジェクト、ビジネス設定権限を非技術担当者に渡したいチーム。
 
 ### Odoo
 
-ウェブサイト：https://www.odoo.com/
+ウェブサイト：[https://www.odoo.com/](https://www.odoo.com/)
 
-GitHub：https://github.com/odoo/odoo
+GitHub：[https://github.com/odoo/odoo](https://github.com/odoo/odoo)
 
 GitHubスター数：48.1k
 
 Odooは高度にモジュール化されたエンタープライズリソースプランニング（ERP）およびビジネス管理プラットフォームで、統一されたデータベースモデルとアプリケーションフレームワークを通じて、さまざまなビジネスシナリオのCRUD操作を標準化し、モジュール化します。CRMから在庫管理、会計から人事まで、すべてのモジュールは同じデータモデルと権限システムに基づいており、異なるシステム間の反復的な開発とデータの断片化を回避します。
+
+![Odoo.png](https://static-docs.nocobase.com/Odoo-haoe9b.png)
 
 **核心能力：**
 
@@ -82,13 +101,15 @@ Odooは高度にモジュール化されたエンタープライズリソース�
 
 ### Directus
 
-ウェブサイト：https://directus.io/
+ウェブサイト：[https://directus.io/](https://directus.io/)
 
-GitHub：https://github.com/directus/directus
+GitHub：[https://github.com/directus/directus](https://github.com/directus/directus)
 
 GitHubスター数：33.8k
 
 Directusは、既存のデータベースを完全なバックエンドプラットフォームとCRUDアプリケーションに変換するツールです。既存のSQLデータベースに接続し、自動的にRESTfulおよびGraphQL APIを生成すると同時に、ビジュアル管理インターフェースとデータモデル設定機能を提供し、バックエンドコードを書くことなく、任意のデータベースに完全な作成、読み取り、更新、削除能力を提供できます。
+
+![Directus.png](https://static-docs.nocobase.com/Directus-1k9u7k.png)
 
 **核心能力：**
 
@@ -101,13 +122,15 @@ Directusは、既存のデータベースを完全なバックエンドプラッ
 
 ### Hasura
 
-ウェブサイト：https://hasura.io/
+ウェブサイト：[https://hasura.io/](https://hasura.io/)
 
-GitHub：https://github.com/hasura/graphql-engine
+GitHub：[https://github.com/hasura/graphql-engine](https://github.com/hasura/graphql-engine)
 
 GitHubスター数：31.9k
 
 **位置づけ**：既存のデータベースに接続すると、数秒で高性能なCRUD GraphQL APIを生成するインスタントGraphQLエンジンです。設定を通じて権限、検証、ビジネスロジックを制御し、バックエンドコードを書くことなく、任意のアプリケーションに完全なデータクエリと変更能力を提供できます。
+
+![Hasura.png](https://static-docs.nocobase.com/Hasura-f48vc6.png)
 
 **核心能力：**
 
@@ -121,13 +144,15 @@ GitHubスター数：31.9k
 
 ### Supabase
 
-ウェブサイト：https://supabase.com/
+ウェブサイト：[https://supabase.com/](https://supabase.com/)
 
-GitHub：https://github.com/supabase/supabase
+GitHub：[https://github.com/supabase/supabase](https://github.com/supabase/supabase)
 
 GitHubスター数：95.4k
 
 オープンソースのFirebase代替案として、SupabaseはPostgreSQLデータベース、インスタントCRUD API、認証、リアルタイムサブスクリプション、ファイル保存などの完全なバックエンド機能を提供します。データベース構造を定義するだけで、Supabaseは自動的に対応する作成、読み取り、更新、削除能力を生成し、数分で完全なフルスタックアプリケーションを起動でき、バックエンドコードを書く必要がありません。
+
+![Supabase.png](https://static-docs.nocobase.com/Supabase-93lygj.png)
 
 **核心能力：**
 
@@ -143,13 +168,15 @@ GitHubスター数：95.4k
 
 ### Appsmith
 
-ウェブサイト：https://appsmith.com/
+ウェブサイト：[https://appsmith.com/](https://appsmith.com/)
 
-GitHub：https://github.com/appsmithorg/appsmith
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
 GitHubスター数：38.8k
 
 Appsmithは開発者がビジュアル方式で迅速にCRUDインターフェースを構築できるようにします。Retoolに似ていますが、完全にオープンソースでセルフホスト可能で、独自のサーバーにデプロイでき、データは第三者サービスを通過せず、データセキュリティ要件が高いシナリオに非常に適しています。
+
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-6js1ku.png)
 
 **核心能力：**
 
@@ -163,13 +190,15 @@ Appsmithは開発者がビジュアル方式で迅速にCRUDインターフェ�
 
 ### AdminJS
 
-ウェブサイト：https://adminjs.co/
+ウェブサイト：[https://adminjs.co/](https://adminjs.co/)
 
-GitHub：https://github.com/softwarebrothers/adminjs
+GitHub：[https://github.com/softwarebrothers/adminjs](https://github.com/softwarebrothers/adminjs)
 
 GitHubスター数：8.9k
 
 **位置づけ**：Node.jsベースの自動管理バックエンド生成ツールで、既存のバックエンドアプリケーションに接続し、データモデルに基づいて完全なCRUD管理インターフェースを自動的に生成できます。データモデル定義（TypeORMエンティティ、Prismaスキーマなど）を提供するだけで、AdminJSはリストページ、フォームページ、フィルターなどすべての標準機能を自動的に生成します。
+
+![AdminJS.png](https://static-docs.nocobase.com/AdminJS-csg1n8.png)
 
 **核心能力：**
 
@@ -184,13 +213,15 @@ GitHubスター数：8.9k
 
 ### Rails Generators
 
-ウェブサイト：https://rubyonrails.org/
+ウェブサイト：[https://rubyonrails.org/](https://rubyonrails.org/)
 
-GitHub：https://github.com/rails/rails
+GitHub：[https://github.com/rails/rails](https://github.com/rails/rails)
 
 GitHubスター数：58k
 
 **位置づけ**：Ruby on Railsフレームワークに組み込まれているコード生成ツールで、設定より規約の哲学とスキャフォールディングメカニズムを通じて、完全なCRUDコードを迅速に生成できます。データモデルを定義するだけで、1つのコマンドでモデルクラス、データベース移行、コントローラー、ビュー、ルート、テストなどすべての必要なコードを生成し、反復的なボイラープレートコードの作成を大幅に削減します。
+
+![Rails Generators.png](https://static-docs.nocobase.com/Rails%20Generators-cz4prn.png)
 
 **核心能力：**
 
@@ -203,13 +234,15 @@ GitHubスター数：58k
 
 ### JHipster
 
-ウェブサイト：https://www.jhipster.tech/
+ウェブサイト：[https://www.jhipster.tech/](https://www.jhipster.tech/)
 
-GitHub：https://github.com/jhipster/generator-jhipster
+GitHub：[https://github.com/jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster)
 
 GitHubスター数：22.3k
 
 **位置づけ**：Java / Spring Bootエコシステム向けに構築されたアプリケーションスキャフォールディングで、エンティティ、CRUD API、フロントエンドインターフェース、セキュリティ設定など完全な機能を含むエンタープライズレベルのアプリケーションを迅速に生成できます。業界標準に準拠し、保守性の高いコードを生成し、Java開発者を面倒な設定とボイラープレートコードから解放してビジネスロジックに集中させます。
+
+![JHipster.png](https://static-docs.nocobase.com/JHipster-3ruve9.png)
 
 **核心能力：**
 
@@ -222,13 +255,15 @@ GitHubスター数：22.3k
 
 ### Yeoman
 
-ウェブサイト：https://yeoman.io/
+ウェブサイト：[https://yeoman.io/](https://yeoman.io/)
 
-GitHub：https://github.com/yeoman/yeoman
+GitHub：[https://github.com/yeoman/yeoman](https://github.com/yeoman/yeoman)
 
 GitHubスター数：10.1k
 
 **位置づけ**：汎用プロジェクトスキャフォールディングツールで、Generator（ジェネレーター）エコシステムを通じて、さまざまな技術スタックとプロジェクトタイプのCRUDプロジェクトを迅速に初期化する能力を提供します。コード自体は生成しませんが、Generatorを実行するフレームワークを提供し、開発者はコミュニティGeneratorを作成または再利用して、プロジェクトの基盤構造を迅速に構築できます。
+
+![Yeoman.png](https://static-docs.nocobase.com/Yeoman-n8kalu.png)
 
 **核心能力：**
 
