@@ -12,6 +12,12 @@ CRMシステム、内部管理システム、承認ワークフロー、管理�
 
 💡おすすめ記事：[GitHub で最も多くのスターを獲得したトップ 8 のオープンソース CRUD プロジェクト](https://www.nocobase.com/ja/blog/crud-projects)
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
 ## 反復的なCRUDを減らすアプローチ
 
 反復的なCRUDを減らすには、異なるレベルからアプローチできます。
@@ -293,3 +299,17 @@ GitHubスター数：10.1k
 この記事が役立つと思ったら、より多くの友達と共有してください！
 
 **免責事項**：この記事はAIの支援を得て執筆され、実際の人間が視点、データ、画像を追加しています。
+
+
+**関連読み物：**
+
+* [GitHub スター数が最も多いAIワークフロープロジェクトTop 12](https://www.nocobase.com/ja/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [ソフトウェア受託会社向けのオープンソース・ノーコード／ローコードツール6選](https://www.nocobase.com/ja/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub スター数トップ 10 の AI CRM オープンソースプロジェクト](https://www.nocobase.com/ja/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [Excel を卒業し、本当に使える業務システムを最短で構築する完全ガイド ](https://www.nocobase.com/ja/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [GitHubで注目のオープンソースAI内部ツール5選](https://www.nocobase.com/ja/blog/top-5-open-source-ai-internal-tools-on-github)
+* [8つの Google Sheets 最良代替ツール（コストと機能まとめ）](https://www.nocobase.com/ja/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [PoC に最適なオープンソースのノーコード／ローコードツール 6 選](https://www.nocobase.com/ja/blog/6-open-source-no-low-code-tools-for-building-pocs)
+* [開発者向けノーコード／ローコードの技術判断ガイド（2026）](https://www.nocobase.com/ja/blog/a-developers-technical-decision-guide-to-no-code-and-low-code)
+* [6 大企業向けノーコード・ローコードプラットフォームのRBAC権限体系詳細比較](https://www.nocobase.com/ja/blog/6-in-depth-comparison-rbac-no-code-low-code-platforms)
+* [GitHubで注目のオープンソースAIローコードツール14選](https://www.nocobase.com/ja/blog/14-ai-low-code-platforms-github)
