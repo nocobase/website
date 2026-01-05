@@ -10,7 +10,7 @@ This problem becomes even more apparent in outsourcing and system integration sc
 
 In this article, we’ll look at different approaches developers use to reduce repetitive CRUD, and introduce open source tools that fit each approach.
 
-**💡 Dive deep: **[Top 8 Open-Source CRUD Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/crud-projects)
+💡 Dive deep: [Top 8 Open-Source CRUD Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/crud-projects)
 
 ## Ways to Reduce Repetitive CRUD
 
@@ -42,11 +42,17 @@ Let’s begin.
 
 #### NocoBase
 
-Website: [https://www.nocobase.com/](https://www.nocobase.com/) GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) GitHub Stars: 21k
+Website: [https://www.nocobase.com/](https://www.nocobase.com/)
+
+GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+
+GitHub Stars: 21k
 
 NocoBase treats CRUD not as something you implement once per project, but as a **long-term system capability that evolves over time**. Instead of repeatedly writing CRUD logic from scratch, teams define data models and system behavior up front, and let the system generate and extend CRUD functionality as requirements change.
 
 By using a data model–driven approach, NocoBase allows business users and engineers to collaborate on building complex internal systems, while keeping the underlying structure reusable across projects.
+
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
 
 **Core capabilities in this approach include:**
 
@@ -54,21 +60,31 @@ By using a data model–driven approach, NocoBase allows business users and engi
 
 Define tables, fields, and relationships through a visual interface, and the system automatically generates create, read, update, and delete interfaces and APIs. NocoBase supports direct connections to PostgreSQL, MySQL, and MariaDB, allowing teams to work with existing databases without migrating or reshaping their data.
 
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-qica0c.PNG)
+
 * **Configurable frontend interfaces**
 
 Forms, validations, dynamic visibility, and field linkage rules can be configured instead of hard-coded, reducing repeated frontend work when business logic changes.
+
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-f78boi.png)
 
 * **Advanced querying and list views**
 
 Built-in block types support filtering, sorting, pagination, exports, and other common data operations, making complex data views configurable rather than custom-built.
 
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-uznhdh.png)
+
 * **Fine-grained permission control**
 
 Permissions can be defined at the role, field, and row level, ensuring that CRUD access rules evolve together with the data model.
 
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-qegojj.png)
+
 * **Workflow integration**
 
 CRUD operations can be embedded into business processes such as approvals, state transitions, and notifications, instead of remaining isolated data actions.
+
+![NocoBase6.png](https://static-docs.nocobase.com/NocoBase6-w400bs.png)
 
 * **Plugin-based extensibility**
 
@@ -78,11 +94,17 @@ When custom logic is required, it can be implemented once as a plugin and reused
 
 #### Odoo
 
-Website: [https://www.odoo.com/](https://www.odoo.com/) GitHub: [https://github.com/odoo/odoo](https://github.com/odoo/odoo) GitHub Stars: 48.1k
+Website: [https://www.odoo.com/](https://www.odoo.com/)
+
+GitHub: [https://github.com/odoo/odoo](https://github.com/odoo/odoo)
+
+GitHub Stars: 48.1k
 
 Odoo addresses repetitive CRUD from a different angle: **standardization through a unified business platform**. Instead of building systems project by project, Odoo provides a comprehensive ERP framework where all applications share the same data model, permission system, and interaction patterns.
 
 From CRM and inventory to accounting and HR, CRUD operations are predefined within a consistent structure, reducing duplication across business domains.
+
+![Odoo.png](https://static-docs.nocobase.com/Odoo-haoe9b.png)
 
 **Key characteristics of this approach include:**
 
@@ -110,11 +132,17 @@ This category focuses on a common idea: instead of writing and maintaining CRUD 
 
 ### Directus
 
-Website: [https://directus.io/](https://directus.io/) GitHub: [https://github.com/directus/directus](https://github.com/directus/directus) GitHub Stars: 33.8k
+Website: [https://directus.io/](https://directus.io/)
+
+GitHub: [https://github.com/directus/directus](https://github.com/directus/directus)
+
+GitHub Stars: 33.8k
 
 Directus turns existing SQL databases into configurable backend systems. Rather than generating application code, it layers a **configuration-driven CRUD and permission system** on top of your database, exposing APIs and admin interfaces that stay in sync with the underlying schema.
 
 In this model, CRUD behavior is no longer scattered across services and controllers. It is defined once, declaratively, and applied consistently.
+
+![Directus.png](https://static-docs.nocobase.com/Directus-1k9u7k.png)
 
 **Key capabilities in this approach:**
 
@@ -138,11 +166,17 @@ List and form views are generated automatically for each table, with built-in fi
 
 ### Hasura
 
-Website: [https://hasura.io/](https://hasura.io/) GitHub: [https://github.com/hasura/graphql-engine](https://github.com/hasura/graphql-engine) GitHub Stars: 31.9k
+Website: [https://hasura.io/](https://hasura.io/)
+
+GitHub: [https://github.com/hasura/graphql-engine](https://github.com/hasura/graphql-engine)
+
+GitHub Stars: 31.9k
 
 Hasura approaches the same problem from a **GraphQL-first perspective**. Instead of building REST endpoints or backend services, teams connect Hasura to an existing database and expose CRUD operations through a single, high-performance GraphQL API.
 
 Here, CRUD logic is expressed as **query structure and permission rules**, not application code.
+
+![Hasura.png](https://static-docs.nocobase.com/Hasura-f48vc6.png)
 
 **Key characteristics of this approach:**
 
@@ -172,11 +206,17 @@ Applications that rely heavily on GraphQL, frontend-driven data access patterns,
 
 ### Supabase
 
-Website: [https://supabase.com/](https://supabase.com/) GitHub: [https://github.com/supabase/supabase](https://github.com/supabase/supabase) GitHub Stars: 95.4k
+Website: [https://supabase.com/](https://supabase.com/)
+
+GitHub: [https://github.com/supabase/supabase](https://github.com/supabase/supabase)
+
+GitHub Stars: 95.4k
 
 Supabase packages configuration-driven CRUD into a **full backend platform**. Built on PostgreSQL, it combines database, APIs, authentication, real-time features, and storage into a single system where CRUD capabilities emerge automatically from schema and policy definitions.
 
 In this approach, CRUD behavior is pushed as close to the database as possible.
+
+![Supabase.png](https://static-docs.nocobase.com/Supabase-93lygj.png)
 
 **Key characteristics include:**
 
@@ -210,11 +250,17 @@ CRUD logic still lives in code, but the cost of building and maintaining managem
 
 ### Appsmith
 
-Website: [https://appsmith.com/](https://appsmith.com/) GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) GitHub Stars: 38.8k
+Website: [https://appsmith.com/](https://appsmith.com/)
+
+GitHub: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
+
+GitHub Stars: 38.8k
 
 Appsmith helps developers build CRUD interfaces quickly through a visual, component-based approach. It sits on top of existing data sources and backend logic, focusing on **speeding up admin and internal tool development** rather than changing how systems are modeled.
 
 Compared to tools like Retool, Appsmith is fully open-source and self-hostable, making it suitable for teams with strict data security or deployment requirements.
+
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-6js1ku.png)
 
 **Key characteristics of this approach:**
 
@@ -244,11 +290,17 @@ Teams building customized internal backends, open-source–first projects that r
 
 ### AdminJS
 
-Website: [https://adminjs.co/](https://adminjs.co/) GitHub: [https://github.com/softwarebrothers/adminjs](https://github.com/softwarebrothers/adminjs) GitHub Stars: 8.9k
+Website: [https://adminjs.co/](https://adminjs.co/)
+
+GitHub: [https://github.com/softwarebrothers/adminjs](https://github.com/softwarebrothers/adminjs)
+
+GitHub Stars: 8.9k
 
 AdminJS takes a more **code-centric but automation-focused** approach. Instead of visually assembling interfaces, it generates complete admin backends directly from existing backend models in Node.js applications.
 
 Here, the goal is not to redesign CRUD flows, but to **avoid writing admin interfaces altogether**.
+
+![AdminJS.png](https://static-docs.nocobase.com/AdminJS-csg1n8.png)
 
 **Key characteristics of this approach:**
 
@@ -276,13 +328,19 @@ This category focuses on **accelerating CRUD implementation through code generat
 
 CRUD logic is still written and maintained as application code, but scaffolding tools significantly reduce the amount of boilerplate developers need to write by hand.
 
-### Ruby on Rails** — Rails Generators**
+### Ruby on Rails — Rails Generators
 
-Website: [https://rubyonrails.org/](https://rubyonrails.org/) GitHub: [https://github.com/rails/rails](https://github.com/rails/rails) GitHub Stars: 58k
+Website: [https://rubyonrails.org/](https://rubyonrails.org/)
+
+GitHub: [https://github.com/rails/rails](https://github.com/rails/rails)
+
+GitHub Stars: 58k
 
 Rails generators are built-in code generation tools that embody Rails’ “convention over configuration” philosophy. By defining data models, developers can generate a complete set of CRUD code with a single command, covering backend logic, database schema, routing, and views.
 
 In this approach, CRUD is still implemented as code, but **the initial setup cost is dramatically reduced**.
+
+![Rails Generators.png](https://static-docs.nocobase.com/Rails%20Generators-cz4prn.png)
 
 **Key characteristics of this approach:**
 
@@ -308,11 +366,17 @@ Teams using the Ruby on Rails stack, projects that need to launch CRUD features 
 
 ### JHipster
 
-Website: [https://www.jhipster.tech/](https://www.jhipster.tech/) GitHub: [https://github.com/jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster) GitHub Stars: 22.3k
+Website: [https://www.jhipster.tech/](https://www.jhipster.tech/)
+
+GitHub: [https://github.com/jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster)
+
+GitHub Stars: 22.3k
 
 JHipster brings the same idea of scaffolding-driven CRUD acceleration to the Java and Spring Boot ecosystem. It generates production-ready applications that include entities, CRUD APIs, security configuration, and frontend interfaces based on predefined standards.
 
 Here, CRUD is accelerated not just by code generation, but by **pre-assembling a full enterprise-grade technology stack**.
+
+![JHipster.png](https://static-docs.nocobase.com/JHipster-3ruve9.png)
 
 **Key characteristics of this approach:**
 
@@ -336,11 +400,17 @@ Applications can be generated as monoliths or microservices, with infrastructure
 
 ### Yeoman
 
-Website: [https://yeoman.io/](https://yeoman.io/) GitHub: [https://github.com/yeoman/yeoman](https://github.com/yeoman/yeoman) GitHub Stars: 10.1k
+Website: [https://yeoman.io/](https://yeoman.io/)
+
+GitHub: [https://github.com/yeoman/yeoman](https://github.com/yeoman/yeoman)
+
+GitHub Stars: 10.1k
 
 Yeoman is a more general scaffolding framework rather than a CRUD generator itself. It provides the foundation for running and composing Generators, allowing teams to codify how new CRUD projects are initialized across different stacks.
 
 Its value lies in **standardizing project setup**, not in redefining CRUD behavior.
+
+![Yeoman.png](https://static-docs.nocobase.com/Yeoman-n8kalu.png)
 
 **Key characteristics of this approach:**
 
