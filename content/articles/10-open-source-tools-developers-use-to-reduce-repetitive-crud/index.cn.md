@@ -40,37 +40,37 @@
 
 ### NocoBase
 
-**官网：**https://www.nocobase.com/
+官网：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-**GitHub：**https://github.com/nocobase/nocobase
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-**GitHub Star 数：**21k
+GitHub Star 数：21k
 
 NocoBase 是一款开源的无代码/低代码开发平台，可以帮助将企业的 CRUD 能力从一次性开发转变为系统能力。它通过数据模型驱动的方式，让业务人员和技术人员能够协同构建复杂的业务系统，而无需每次都从零开始编写增删改查代码。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzA1OGYxMzFkNjU1NjdiMzMxMjMwYzUwMTE4ZDIxMGFfbFcxUlBXQ0hXTWNGNmhwSXFzdDRvV2s2TGVTVzRYcjZfVG9rZW46UzYyM2J0UWRIbzd6VVV4Y3VyaGN5WHFEbllmXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
 
 **核心能力**：
 
 * **数据模型驱动的 CRUD**：通过可视化界面定义数据表、字段和关联关系，系统自动生成完整的创建、读取、更新、删除界面和 API，无需手写任何代码。NocoBase 支持直接连接 PostgreSQL、MySQL、MariaDB 等主流数据库，在不迁移、不改造原有数据结构的前提下，将已有数据快速接入并构建业务系统。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjFkM2ViZTRmNWEyZjNiNTZkMjY5ODcxOTMzZTNhYjhfR2JXUDF1S3pkbTc2NTJNaVM4RWw3b2Vid3hiOFA0SnlfVG9rZW46R1lFS2JNYjRXb1FrMjJ4ZjhIVWM0enlhbkpoXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase2.PNG](https://static-docs.nocobase.com/NocoBase2-qica0c.PNG)
 
 * **灵活的前端配置**：支持各种字段类型、表单验证、动态显隐、联动规则，可以配置出符合业务逻辑的数据录入界面，减少前端开发工作。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTg2MjRlNWEzODI2Yjc1NTVhODgyMmJiZGE5M2M1MjFfaWxDZmxadnV4b2tHY3E1RjVBaEZWMmVRWTJlWUhGdmVfVG9rZW46RGFXYWJob2RHb0pselB4Y2Q2bGNSZzQxbm0wXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-f78boi.png)
 
 * **强大的查询和列表能力**：内置不同类型的区块，支持筛选、排序、分页、导出等功能，可以通过配置实现复杂的数据展示需求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDhiZjAxMTMxOGRjODEzYzExNzJkM2ZiY2U1N2ZhYjBfRm1rVFN3WGNmNWJ2YUNpNmprUlV2VzdWd1JOemRuUlBfVG9rZW46RFVnb2JjN1V1b3dhMEt4WUpBMWNCOEc0blpnXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-uznhdh.png)
 
 * **细粒度权限控制**：不仅支持角色和用户权限，还可以控制到字段级别（谁能查看/编辑哪些字段）和数据级别（谁能操作哪些数据行），在 CRUD 层面保证数据安全。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGYyMDIyMmJjNzYwNWFjNDE5ZTIxMTM4YTZhNTg1MjFfeG5rVTRuVlBCTTJjeDkwamxKeGUycHRyWlFtWk50aWlfVG9rZW46UDJpVGJidVNKb05GNUl4NW9xdGNLRlFkblFmXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-qegojj.png)
 
 * **可扩展的工作流**：通过工作流引擎配置业务流程，比如数据提交后的审批、状态变更、自动通知等，让 CRUD 操作融入业务流程而非孤立的数据操作。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDdkNmU2NDQxYjcwYzc4MzBkZmQ3MGJkZTlhY2U1ZmFfWW4wdlpDT1prR2Y2MXlOQ1ZLdXQ3bHZFbTNmd3gxSEJfVG9rZW46T3lqYWIzSExJb1AxcHl4Q0MyZ2NKaGtzbkdoXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![NocoBase6.png](https://static-docs.nocobase.com/NocoBase6-w400bs.png)
 
 * **插件化架构**：对于复杂的 CRUD 逻辑，可以通过插件扩展系统功能，一次开发、多次复用，不同项目可以共享自定义插件。
 
@@ -78,15 +78,15 @@ NocoBase 是一款开源的无代码/低代码开发平台，可以帮助将企�
 
 ### Odoo
 
-**官网**：https://www.odoo.com/
+官网：[https://www.odoo.com/](https://www.odoo.com/)
 
-**GitHub**：https://github.com/odoo/odoo
+GitHub：[https://github.com/odoo/odoo](https://github.com/odoo/odoo)
 
-**GitHub Star 数：**48.1k
+GitHub Star 数：48.1k
 
 Odoo 是高度模块化的企业资源规划（ERP）和业务管理平台，通过统一的数据库模型和应用框架，将各类业务场景的 CRUD 操作标准化、模块化。从 CRM 到库存管理，从会计到人力资源，所有模块都基于同一套数据模型和权限体系，避免了不同系统之间的重复开发和数据割裂。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWU3YzU5NzMxYjYzNzQzZWJlMTdlNmRiN2UzOTljNThfMVlhSEhtVllZbWhGV21wbG9tYjg1MXBSRERvSllrSWlfVG9rZW46VkY1RGJJaGNWb3FpVkN4b0VzbmNvbWNhbmZkXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Odoo.png](https://static-docs.nocobase.com/Odoo-haoe9b.png)
 
 **核心能力**：
 
@@ -101,15 +101,15 @@ Odoo 是高度模块化的企业资源规划（ERP）和业务管理平台，通
 
 ### Directus
 
-**官网**：https://directus.io/
+官网：[https://directus.io/](https://directus.io/)
 
-**GitHub**：https://github.com/directus/directus
+GitHub：[https://github.com/directus/directus](https://github.com/directus/directus)
 
-**GitHub Star 数：**33.8k
+GitHub Star 数：33.8k
 
 Directus 是一个将现有数据库转化为完整的后端平台和 CRUD 应用的工具。它连接到你已有的 SQL 数据库，自动生成 RESTful 和 GraphQL API，同时提供可视化的管理界面和数据模型配置能力，让你无需编写任何后端代码，就能为任意数据库提供完整的增删改查能力。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmM3NDFlNWY5MjU1YmI3ZDMyYzMxNTRmNTg2OWEzNzFfRzdNeWVjSFhOYUtDNjZwWnpMdmJBU1NraEpUbjVpTEdfVG9rZW46WnFEM2JXUVp2b210Unl4S05ZaWMyWlNYbnFYXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Directus.png](https://static-docs.nocobase.com/Directus-1k9u7k.png)
 
 **核心能力**：
 
@@ -122,15 +122,15 @@ Directus 是一个将现有数据库转化为完整的后端平台和 CRUD 应�
 
 ### Hasura
 
-**官网**：https://hasura.io/
+官网：[https://hasura.io/](https://hasura.io/)
 
-**GitHub**：https://github.com/hasura/graphql-engine
+GitHub：[https://github.com/hasura/graphql-engine](https://github.com/hasura/graphql-engine)
 
-**GitHub Star 数**：31.9k
+GitHub Star 数：31.9k
 
 **定位**：一个即时的 GraphQL 引擎，连接到现有数据库后，在几秒钟内为你生成高性能的 CRUD GraphQL API。它通过配置化的方式控制权限、验证和业务逻辑，让你无需编写后端代码，就能为任何应用提供完整的数据查询和变更能力。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTI1MTMxZTg5NjNkNjU3YWFlMjExOGVlNzUyMzQ5MmJfS29oR2k0c2I1MzR3UkhjN3FyWWtxSzhXalBMYThzTlhfVG9rZW46WVdxa2JBa0JYbzRsckV4UG5HNmNFQ2NUbmRoXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Hasura.png](https://static-docs.nocobase.com/Hasura-f48vc6.png)
 
 **核心能力**：
 
@@ -144,15 +144,15 @@ Directus 是一个将现有数据库转化为完整的后端平台和 CRUD 应�
 
 ### Supabase
 
-**官网**：https://supabase.com/
+官网：[https://supabase.com/](https://supabase.com/)
 
-**GitHub**：https://github.com/supabase/supabase
+GitHub：[https://github.com/supabase/supabase](https://github.com/supabase/supabase)
 
-**GitHub Star 数**：95.4k
+GitHub Star 数：95.4k
 
 作为开源的 Firebase 替代方案，Supabase 提供 PostgreSQL 数据库、即时 CRUD API、身份验证、实时订阅、文件存储等完整后端功能。你只需要定义数据库结构，Supabase 会自动生成相应的增删改查能力，让你在几分钟内启动一个完整的全栈应用，无需编写任何后端代码。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MDgyMjJlMTkyYmYzYTVkYjJkMTE4NzQ0YTRhODVlZDZfOVFENnp5YlU0MDBINDV4UzVEMk4wZFZ4Q3ZkejJyY0VfVG9rZW46SVZ2Z2JEUUZRb2R5d0J4RVp6MmMxa2hYbnJmXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Supabase.png](https://static-docs.nocobase.com/Supabase-93lygj.png)
 
 **核心能力**：
 
@@ -168,15 +168,15 @@ Directus 是一个将现有数据库转化为完整的后端平台和 CRUD 应�
 
 ### Appsmith
 
-**官网**：https://appsmith.com/
+官网：[https://appsmith.com/](https://appsmith.com/)
 
-**GitHub**：https://github.com/appsmithorg/appsmith
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
-**GitHub Star 数**：38.8k
+GitHub Star 数：38.8k
 
-Appsmith** **可以让开发者能够通过可视化方式快速构建 CRUD 界面。与 Retool 类似，但完全开源且可自托管，你可以将它部署在自己的服务器上，数据无需经过第三方服务，非常适合对数据安全有要求的场景。
+Appsmith可以让开发者能够通过可视化方式快速构建 CRUD 界面。与 Retool 类似，但完全开源且可自托管，你可以将它部署在自己的服务器上，数据无需经过第三方服务，非常适合对数据安全有要求的场景。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDk0MjRjNTE0YzAzNWM5MThiMTA2ZTJjZGNkZmZjZmRfek10bnVDc2hKVGJLNFE1TWdqRGVlam0wRXJoN1d1R0VfVG9rZW46SVZ0WGJNdXZMb1dVOG14R1p0MmN4UURrblRiXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Appsmith.png](https://static-docs.nocobase.com/Appsmith-6js1ku.png)
 
 **核心能力**：
 
@@ -190,15 +190,15 @@ Appsmith** **可以让开发者能够通过可视化方式快速构建 CRUD 界�
 
 ### AdminJS
 
-**官网**：https://adminjs.co/
+官网：[https://adminjs.co/](https://adminjs.co/)
 
-**GitHub**：https://github.com/softwarebrothers/adminjs
+GitHub：[https://github.com/softwarebrothers/adminjs](https://github.com/softwarebrothers/adminjs)
 
-**GitHub Star 数**：8.9k
+GitHub Star 数：8.9k
 
 **定位**：一个基于 Node.js 的自动管理后台生成工具，它能够连接到现有的后端应用，根据数据模型自动生成完整的 CRUD 管理界面。你只需要提供数据模型定义（比如 TypeORM 实体、Prisma schema），AdminJS 会自动生成列表页、表单页、筛选器等所有标准功能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzUxMzYwOGNmZTcyYjMyMGFkZTMyMzE0NzU0MDNjNThfajZVVnFtN1BxaWhheTdiMFRRZkJwMFYzNGo1aVFkQ2xfVG9rZW46UU9EcmJhTkFVb3Z3QTV4aGRyZmNpWXgwbllmXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![AdminJS.png](https://static-docs.nocobase.com/AdminJS-csg1n8.png)
 
 **核心能力**：
 
@@ -213,15 +213,15 @@ Appsmith** **可以让开发者能够通过可视化方式快速构建 CRUD 界�
 
 ### Rails Generators
 
-**官网**：https://rubyonrails.org/
+官网：[https://rubyonrails.org/](https://rubyonrails.org/)
 
-**GitHub**：https://github.com/rails/rails
+GitHub：[https://github.com/rails/rails](https://github.com/rails/rails)
 
-**GitHub Star 数**：58k
+GitHub Star 数：58k
 
 **定位**：Ruby on Rails 框架内置的代码生成工具，通过约定优于配置的理念和脚手架机制，能够快速生成完整的 CRUD 代码。你只需要定义数据模型，一条命令就能生成模型类、数据库迁移、控制器、视图、路由、测试等所有必要的代码，大幅减少重复的样板代码编写。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTk1NzkyZmEwNTMzMDYxZTE4OThjMDA5ZmQ3MzE0NjhfcEtXMjJnWXUyVHZyM01RTUxFV1pwMTVZUmIzVDFyNGFfVG9rZW46RUQ3ZGJyMFhob3YwV2N4SUkyR2Nnam5TbkhmXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Rails Generators.png](https://static-docs.nocobase.com/Rails%20Generators-cz4prn.png)
 
 **核心能力**：
 
@@ -234,15 +234,15 @@ Appsmith** **可以让开发者能够通过可视化方式快速构建 CRUD 界�
 
 ### JHipster
 
-**官网**：https://www.jhipster.tech/
+官网：[https://www.jhipster.tech/](https://www.jhipster.tech/)
 
-**GitHub**：https://github.com/jhipster/generator-jhipster
+GitHub：[https://github.com/jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster)
 
-**GitHub Star 数**：22.3k
+GitHub Star 数：22.3k
 
 **定位**：一个为 Java / Spring Boot 生态打造的应用脚手架，能够快速生成包含实体、CRUD API、前端界面、安全配置等完整功能的企业级应用。它生成符合行业标准、可维护性高的代码，让 Java 开发者从繁琐的配置和样板代码中解放出来，专注于业务逻辑。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MTBmYmNjMjkyM2VlZGYxODI1ZmRlOTFlZmU5YmJkM2ZfWUlSUlVzcGdxNWJUWVVJcG04VmhVN1k0Z2Q3Z3VnOWlfVG9rZW46UGVocGI0VU1Kb1pubjZ4QW5ZcGMyS1B0bjRJXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![JHipster.png](https://static-docs.nocobase.com/JHipster-3ruve9.png)
 
 **核心能力**：
 
@@ -255,15 +255,15 @@ Appsmith** **可以让开发者能够通过可视化方式快速构建 CRUD 界�
 
 ### Yeoman
 
-**官网**：https://yeoman.io/
+官网：[https://yeoman.io/](https://yeoman.io/)
 
-**GitHub**：https://github.com/yeoman/yeoman
+GitHub：[https://github.com/yeoman/yeoman](https://github.com/yeoman/yeoman)
 
-**GitHub Star 数**：10.1k
+GitHub Star 数：10.1k
 
 **定位**：一个通用的项目脚手架工具，通过 Generator（生成器）生态系统，为各种技术栈和项目类型提供快速初始化 CRUD 项目的能力。它本身不生成代码，而是提供一个运行 Generator 的框架，开发者可以创建或复用社区 Generator，快速搭建项目基础结构。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDViMWZlMjhkMDc0NjBmOTljOGMwMThlY2VkY2JjOWVfbVFtbnJNQ0pPOUhPTGxFV0NoM1BxbUF6b3hYd1dTSVdfVG9rZW46RVU3RGJBcmFUb0l4ZWN4MnZobmNwU0VjbndnXzE3Njc2MTYxMTM6MTc2NzYxOTcxM19WNA)
+![Yeoman.png](https://static-docs.nocobase.com/Yeoman-n8kalu.png)
 
 **核心能力**：
 
