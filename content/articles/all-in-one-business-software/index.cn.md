@@ -1,4 +1,4 @@
-**最后更新：2025.6.12**
+📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
 
 在一次浏览 [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/) 的过程中，我偶然看到了一位用户的提问：
 
