@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 This article lists 8 powerful no-code development platforms, each strong in its own field. We will discuss their features, usage case,  pros and cons, giving you a complete overview. You can choose the one that fits your needs.
 
@@ -18,8 +18,6 @@ Eight platforms cover various areas. These areas include website and app develop
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **[NocoBase](https://www.nocobase.com/)**
 
