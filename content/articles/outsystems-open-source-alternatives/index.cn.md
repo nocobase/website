@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+
 ## OutSystems 的隐藏成本不只是金钱
 
 OutSystems 是企业低代码开发领域的领军者。通过将生成式 AI 工具深度集成到软件生命周期，OutSystems 助力企业快速构建客户导向的门户、定制化核心系统和提升效率的内部工具，成为企业级应用开发的标杆。
@@ -9,8 +11,6 @@ OutSystems 是企业低代码开发领域的领军者。通过将生成式 AI �
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **用户反馈的四大核心痛点**
 
@@ -40,7 +40,7 @@ OutSystems 的定价较高，尤其对于小型企业来说，使用成本可能
 
 [NocoBase](https://www.nocobase.com/) 是一个基于插件架构的开源低代码平台，专为企业和开发者提供灵活可扩展的应用开发环境。
 
-⭐️ Stars: 13.6k
+⭐️ Stars: 21.1k
 
 GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
@@ -80,7 +80,7 @@ NocoBase 适用于：
 
 ![Appsmith.png](https://static-docs.nocobase.com/60e751d070d0807b35665bfb80a3eff3.png)
 
-⭐️ Stars: 35.8k
+⭐️ Stars: 38.8k
 
 GitHub Link: https://github.com/appsmithorg/appsmith
 
@@ -101,7 +101,7 @@ GitHub Link: https://github.com/appsmithorg/appsmith
 
 ![Budibase.png](https://static-docs.nocobase.com/c0e535dbfbfbe75b655e753dad876eae.png)
 
-⭐️ Stars: 23.5k
+⭐️ Stars: 27.5k
 
 GitHub Link: https://github.com/budibase/budibase
 
@@ -122,7 +122,7 @@ GitHub Link: https://github.com/budibase/budibase
 
 ![ToolJet.png](https://static-docs.nocobase.com/211df7a189124b0741f6faa6f057567e.png)
 
-⭐️ Stars: 34.9k
+⭐️ Stars: 37.1k
 
 GitHub Link: https://github.com/ToolJet/ToolJet
 
@@ -143,7 +143,7 @@ GitHub Link: https://github.com/ToolJet/ToolJet
 
 ![Refine.png](https://static-docs.nocobase.com/4fcbb6a895c6eef34b1a7150944a1f99.png)
 
-⭐️ Stars: 30.1k
+⭐️ Stars: 33.8k
 
 GitHub Link: https://github.com/refinedev/refine
 
