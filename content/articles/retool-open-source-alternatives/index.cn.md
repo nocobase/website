@@ -1,4 +1,4 @@
-注：本文数据更新于 2025 年 11 月 16 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
 
 ---
 
@@ -17,8 +17,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 为什么选择 Retool 的开源替代品？
 
@@ -58,7 +56,7 @@ Retool 的 SaaS 版本是基于订阅模式的，价格根据用户数量和功�
 ![NocoBase.PNG](https://static-docs.nocobase.com/554bf2326387237ba8e621781cad4c79.PNG)
 
 * **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* **GitHub Star 数**: 15.8k
+* **GitHub Star 数**: 21.1k
 * **官网**：[https://www.nocobase.com/](https://www.nocobase.com/)
 * **文档**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -111,7 +109,7 @@ Retool 则更适合希望快速构建内部工具并依赖第三方服务和数�
 ![Appsmith.png](https://static-docs.nocobase.com/3af34cface2f9fb97af25ce79d24f5c2.png)
 
 * **GitHub**：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* **GitHub Star 数**: 37.2k
+* **GitHub Star 数**: 38.8k
 * **官网**：[https://www.appsmith.com/](https://www.appsmith.com/)
 * **文档**：[https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -154,7 +152,7 @@ Retool 更适合那些**希望快速搭建标准内部工具、并且注重与�
 ![Refine.png](https://static-docs.nocobase.com/cf84f95c5c008d7ea507e3b0287c97a0.png)
 
 * **GitHub**：[https://github.com/refinedev/refine](https://github.com/refinedev/refine)
-* **GitHub Star 数**: 31.2k
+* **GitHub Star 数**: 33.8k
 * **官网**：[https://refine.dev/](https://refine.dev/)
 * **文档**：[https://refine.dev/docs/](https://refine.dev/docs/)
 
@@ -203,7 +201,7 @@ Retool 更适合那些**需要快速构建内部工具并且注重与多数据�
 ![Budibase.png](https://static-docs.nocobase.com/26621a28118b18f235967ded42b85178.png)
 
 * **GitHub**：[https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* **GitHub Star 数**: 24.7k
+* **GitHub Star 数**: 27.5k
 * **官网**：[https://budibase.com/](https://budibase.com/)
 * **文档**：[https://docs.budibase.com/](https://docs.budibase.com/)
 
