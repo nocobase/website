@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 6, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Last year, as the number of NocoBase users grew, we faced a pressing challenge: **how to efficiently manage customer feedback and support requests**.
 
 Users reached out via emails, community forums, and even through internal colleagues. With information scattered across multiple channels, issues were easily missed, and collaboration on follow-ups became cumbersome. We realized it was time to implement a ticketing system tailored to our workflows.
@@ -38,7 +40,7 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 
 🔗 Website: https://www.nocobase.com/
 
-⭐ Stars: 15.5k
+⭐ Stars: 21.1k
 
 📄 License: AGPL-3.0
 
@@ -62,7 +64,7 @@ We integrated a ticketing system into our existing NocoBase-built CRM. User data
 
 🔗 Website: https://www.uvdesk.com/
 
-⭐ Stars: 11.6k
+⭐ Stars: 17.1k
 
 📄 License: OSL-3.0
 
@@ -84,7 +86,7 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 
 🔗 Website: https://zammad.com/
 
-⭐ Stars: 4.8k
+⭐ Stars: 5.3k
 
 📄 License: AGPL-3.0
 
@@ -106,7 +108,7 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 
 🔗 Website: https://freescout.net/
 
-⭐ Stars: 3.5k
+⭐ Stars: 4k
 
 📄 License: AGPL-3.0
 
@@ -127,7 +129,7 @@ Built on Symfony, **UVdesk** suits teams familiar with Laravel/Symfony, especial
 
 🔗 Website: http://osticket.com/
 
-⭐ Stars: 3.4k
+⭐ Stars: 3.6k
 
 📄 License: GPL-2.0
 
@@ -148,7 +150,7 @@ One of the earliest open-source ticketing systems, **osTicket** prioritizes stab
 
 🔗 Website: https://helpy.io/
 
-⭐ Stars: 2.4k
+⭐ Stars: 2.5k
 
 📄 License: MIT
 
