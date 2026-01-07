@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 6 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 昨年、NocoBase のユーザー数が増加するにつれて、私たちはますます現実的な課題に直面しました。それは、顧客のフィードバックとサポートリクエストを効率的に管理する方法というものでした。
 
 ユーザーからの連絡は、メール、コミュニティ、さまざまな同僚を通じた伝言など、さまざまなチャネルで寄せられていました。情報が分散しているため、漏れが発生しやすく、フォローアップの連携も難しい状況でした。そこで、私たちのビジネスプロセスに真正面から適したチケットシステムを導入する時期が来たと痛感しました。
@@ -40,7 +42,7 @@
 
 🔗 Website：https://www.nocobase.com/
 
-⭐ Stars：15.5k
+⭐ Stars：21.1k
 
 📄 License: AGPL-3.0
 
@@ -64,7 +66,7 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 🔗 Website：https://www.uvdesk.com/
 
-⭐ Stars：11.6k
+⭐ Stars：17.1k
 
 📄 License: OSL-3.0
 
@@ -86,7 +88,7 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 🔗 Website：https://zammad.com/
 
-⭐ Stars：4.8k
+⭐ Stars：5.3k
 
 📄 License: AGPL-3.0
 
@@ -108,7 +110,7 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 🔗 Website：https://freescout.net/
 
-⭐ Stars：3.5k
+⭐ Stars：4k
 
 📄 License: AGPL-3.0
 
@@ -129,7 +131,7 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 🔗 Website：http://osticket.com/
 
-⭐ Stars：3.4k
+⭐ Stars：3.6k
 
 📄 License: GPL-2.0
 
@@ -150,7 +152,7 @@ NocoBase は、データモデル駆動でプラグイン拡張が可能なオ�
 
 🔗 Website：https://helpy.io/
 
-⭐ Stars：2.4k
+⭐ Stars：2.5k
 
 📄 License: MIT
 
