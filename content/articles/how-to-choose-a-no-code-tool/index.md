@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 No-code tools have become a go-to solution for individuals and businesses looking to **quickly build applications and automate workflows**. Whether you’re creating an internal management system, setting up a website, or streamlining repetitive tasks, no-code platforms provide an efficient way to get things done.
 
 ![No-code tools.jpg](https://static-docs.nocobase.com/2f538501dc7e8b0be5eb6381358ca018.png)
