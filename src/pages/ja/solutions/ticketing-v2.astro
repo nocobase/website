@@ -15,7 +15,6 @@ import AIAvatar from "../../../components/AIAvatar.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <span class="badge bg-soft-primary rounded-pill mb-3">NocoBase ソリューション</span>
             <h1 class="fw-bold mt-2 mb-3">AI駆動の<br/>インテリジェントチケット</h1>
             <p class="para-desc text-muted">
               サポートチームが複雑なワークフローではなく、問題解決に集中できるように。NocoBaseローコードプラットフォーム上に構築し、T型データアーキテクチャで複数ビジネスを統合管理。AIエージェントチームがチケット作成からクローズまでのライフサイクル全体をサポートします。
@@ -64,17 +63,17 @@ import AIAvatar from "../../../components/AIAvatar.astro";
 
             <!-- Buttons -->
             <div class="mt-4 pt-2">
-              <a href="#pain-points" class="btn btn-primary me-3">
-                <i class="uil uil-lightbulb-alt me-1"></i>詳しく見る
+              <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live Demo
               </a>
-              <a href="/ja/contact" class="btn btn-outline-primary">
-                <i class="uil uil-envelope me-1"></i>お問い合わせ
+              <a href="#how-to-use" class="btn btn-outline-primary">
+                <i class="uil uil-download-alt me-1"></i>使い方
               </a>
             </div>
 
             <div class="mt-3 p-2" style="background-color: #fff3e0; border-left: 3px solid #ff9800; border-radius: 4px;">
               <small class="text-muted">
-                <i class="uil uil-info-circle"></i> NocoBase 2.x で構築中（開発中）
+                <i class="uil uil-info-circle me-1"></i>Alpha版公開中。ぜひお試しください。継続的に改善しています。
               </small>
             </div>
           </div>
@@ -773,21 +772,89 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   </section><!--end section-->
   <!-- Competitive Advantages End -->
 
+  <!-- How to Use Start -->
+  <section class="section" id="how-to-use">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">使い方</h4>
+            <p class="para-desc mx-auto text-muted mb-0">3つのステップでインテリジェントチケットシステムをデプロイ</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>NocoBaseをインストール</h5>
+                <p class="text-muted mt-2">インストールガイドに従って、NocoBaseをサーバーにデプロイ</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">インストールガイド</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-book-open h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>ソリューションを理解</h5>
+                <p class="text-muted mt-2">ソリューション概要を読んで、機能、アーキテクチャ、ユースケースを理解</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/solution/ticket-system/" target="_blank" class="btn btn-outline-primary">ソリューション概要</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>システムに復元</h5>
+                <p class="text-muted mt-2">復元チュートリアルに従って、NocoBase環境にチケットシステムをデプロイ</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/solution/ticket-system/installation" target="_blank" class="btn btn-outline-primary">復元チュートリアル</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
   <!-- CTA Section Start -->
-  <section class="section">
+  <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h3 class="title mb-4">AIでチケット管理を再定義</h3>
           <p class="text-muted para-desc mx-auto mb-0">
-            汎用チケット追跡システムは開発中です。カスタムニーズがある方、詳細を知りたい方、ベータテストに参加したい方は、お気軽にお問い合わせください。
+            NocoBase 2.x で構築されたAI駆動のインテリジェントチケットシステム。カスタムニーズがある方、詳細を知りたい方は、お気軽にお問い合わせください。
           </p>
           <div class="mt-4">
-            <a href="/ja/contact" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-envelope me-1"></i>お問い合わせ
+            <a href="https://demo-ja.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
             </a>
-            <a href="/ja/solutions/ticketing" class="btn btn-outline-secondary mt-2">
-              <i class="uil uil-arrow-left me-1"></i>チケット1.0を見る
+            <a href="/ja/contact" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-envelope me-1"></i>お問い合わせ
             </a>
           </div>
         </div><!--end col-->
