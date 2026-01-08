@@ -110,10 +110,6 @@
 - **[flow-engine]** 修复多次打开弹窗可能出现的状态污染问题。 ([#8327](https://github.com/nocobase/nocobase/pull/8327)) by @gchust
 - **[database]** 修复对象类型的 `appends` 参数处理，并且提升参数解析的 `arrayLimit` 上限 ([#8328](https://github.com/nocobase/nocobase/pull/8328)) by @mytharcher
 
-### [v2.0.0-beta.1](https://www.nocobase.com/cn/blog/v2.0.0-beta.1)
-
-*发布时间：2026-01-01*
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
@@ -158,7 +154,7 @@
 
 - **[client]**
 
-  - 修复targetKey 可选字段的处理逻辑 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) by @katherinehhh
+  - 修复 targetKey 可选字段的处理逻辑 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) by @katherinehhh
   - 修复 `FilterAction` 组件中关系字段展示不对的问题 ([#8295](https://github.com/nocobase/nocobase/pull/8295)) by @mytharcher
   - 修复编辑态子表格中关系字段 Select 的 filter 参数错误问题 ([#8335](https://github.com/nocobase/nocobase/pull/8335)) by @katherinehhh
 - **[flow-engine]** 修复多次打开弹窗可能出现的状态污染问题。 ([#8327](https://github.com/nocobase/nocobase/pull/8327)) by @gchust
