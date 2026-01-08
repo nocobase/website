@@ -108,10 +108,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[flow-engine]** Fix an issue where state pollution could occur when opening popups multiple times. ([#8327](https://github.com/nocobase/nocobase/pull/8327)) by @gchust
 - **[database]** Fix object `appends` in `OptionsParser`, and increase `arrayLimit` for parameters ([#8328](https://github.com/nocobase/nocobase/pull/8328)) by @mytharcher
 
-### [v2.0.0-beta.1](https://www.nocobase.com/en/blog/v2.0.0-beta.1)
-
-*Release date: 2026-01-01*
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
