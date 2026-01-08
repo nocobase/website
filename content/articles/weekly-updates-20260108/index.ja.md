@@ -12,135 +12,166 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v1.9.32](https://www.nocobase.com/ja/blog/v1.9.32)
+### [v1.9.33](https://www.nocobase.com/ja/blog/v1.9.33)
 
-*リリース日：2025-12-24*
+*リリース日：2026-01-04*
 
 ### 🎉 新機能
 
-* **[ワークフロー]** 「アプリケーションインスタンス ID」「Snowflake ID の生成」など、新しいシステム変数を追加 ([#8223](https://github.com/nocobase/nocobase/pull/8223)) by @mytharcher
-
-### 🐛 不具合修正
-
-* **[client]** 関連フィールドの遅延読み込み時に、無限ループが発生してスタックオーバーフローになる不具合を修正 ([#8262](https://github.com/nocobase/nocobase/pull/8262)) by @zhangzhonghe
-* **[操作：レコードインポート]** インポート時にエラーが発生した場合でも、行番号が常に 1 と表示されてしまう問題を修正 ([#8244](https://github.com/nocobase/nocobase/pull/8244)) by @mytharcher
-* **[ワークフロー：手動処理ノード]** 削除済みワークフローの実行計画をキャンセルする際にエラーが発生する不具合を修正 ([#8258](https://github.com/nocobase/nocobase/pull/8258)) by @mytharcher
-* **[データテーブルフィールド：自動採番]** field-sequence プラグインの repair 実行時、存在しないコレクションが原因でエラーになる問題を修正 ([#8251](https://github.com/nocobase/nocobase/pull/8251)) by @cgyrock
-* **[操作：レコードインポート Pro]** 重複フィールドのチェック処理を見直し、一意フィールドが null の場合にエラーを返すよう修正 by @mytharcher
-* **[ワークフロー：承認]** 同一トランザクションを重複してロールバックしてしまう不具合を修正 by @mytharcher
-
-### [v1.9.31](https://www.nocobase.com/ja/blog/v1.9.31)
-
-*リリース日：2025-12-22*
+* **[client]** アプリがメンテナンス状態に入った際、プラグインで定義したメンテナンス表示コンポーネントを表示できるよう対応 ([#8252](https://github.com/nocobase/nocobase/pull/8252)) by @cgyrock
+* **[ファイルマネージャー]** ストレージでファイル名のリネーム方法を設定できるように改善 ([#8231](https://github.com/nocobase/nocobase/pull/8231)) by @JAVA-LW
+* **[ファイルストレージ：S3 (Pro)]** S3 Pro ストレージにリネーム方式の選択オプションを追加 by @mytharcher
 
 ### 🚀 機能改善
 
-* **[非同期タスクマネージャー]** タスクのクリーンアップ処理に例外処理を追加し、アプリケーションのクラッシュを防いで安定性を向上 ([#8215](https://github.com/nocobase/nocobase/pull/8215)) by @mytharcher
-* **[ワークフロー]** ワークフロー複製 API に、複製元ワークフローのインスタンスを指定できるパラメータを追加 ([#8225](https://github.com/nocobase/nocobase/pull/8225)) by @mytharcher
+* **[マイグレーション管理]** マイグレーションのチェックや SQL ダウンロード、ログ表示形式、実行状況の可視化を含む操作体験を全体的に改善 by @cgyrock
 
 ### 🐛 不具合修正
 
-* **[client]** 連動ルールが未設定の場合でもエラーが発生しないよう修正 ([#8239](https://github.com/nocobase/nocobase/pull/8239)) by @zhangzhonghe
-* **[部門]** 集約検索でユーザーを正しく特定できない不具合を修正 ([#8222](https://github.com/nocobase/nocobase/pull/8222)) by @2013xile
+* **[database]**
+  * 多対多リレーションのデータ取得時に、through scope 条件が正しく適用されるよう修正 ([#8277](https://github.com/nocobase/nocobase/pull/8277)) by @2013xile
+  * オブジェクト型 `appends` パラメータの処理を見直し、配列パラメータの上限を拡張 ([#8328](https://github.com/nocobase/nocobase/pull/8328)) by @mytharcher
+* **[client]** 手動ノードのフォームで、多対多データセレクターのブロックメニューにエラーが発生する不具合を修正 ([#8282](https://github.com/nocobase/nocobase/pull/8282)) by @mytharcher
+* **[非同期タスクマネージャー]** バックグラウンドタスクをキャンセルする際の表示メッセージを修正 ([#8245](https://github.com/nocobase/nocobase/pull/8245)) by @mytharcher
+* **[ファイルマネージャー]** AWS S3 へ 5MB 超のファイルをアップロードするとエラーになる問題を修正 ([#8275](https://github.com/nocobase/nocobase/pull/8275)) by @mytharcher
+* **[ワークフロー]** 外部データソース更新後に、関連するデータテーブルイベントが無効になる不具合を修正 ([#8207](https://github.com/nocobase/nocobase/pull/8207)) by @cgyrock
+* **[データテーブル：ツリー]** ツリーノードを一括作成した後に、パス情報が正しく更新されない問題を修正 ([#8267](https://github.com/nocobase/nocobase/pull/8267)) by @2013xile
+* **[データソース：外部 PostgreSQL]** 外部データソース更新後に、関連イベントが無効になる問題を修正 by @cgyrock
+* **[データソース：外部 Oracle]** 外部データソース更新後に、関連イベントが無効になる問題を修正 by @cgyrock
 
-### [v1.9.30](https://www.nocobase.com/ja/blog/v1.9.30)
+## next
 
-*リリース日：2025-12-19*
+![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
+
+### [v2.0.0-beta.6](https://www.nocobase.com/ja/blog/v2.0.0-beta.6)
+
+*リリース日：2026-01-07*
 
 ### 🚀 機能改善
 
-* **[ワークフロー]** データテーブルイベントにおける「変更されたフィールド」設定の説明を見直し、誤解が生じにくい表現に改善 ([#8216](https://github.com/nocobase/nocobase/pull/8216)) by @mytharcher
+* **[ワークフロー：承認]** クエリパラメータを整理し、検索パフォーマンスを向上 by @mytharcher
 
 ### 🐛 不具合修正
 
-* **[cli]** DB\_PASSWORD が未設定の場合でも license-kit が正しく動作するよう対応 ([#8220](https://github.com/nocobase/nocobase/pull/8220)) by @jiannx
-* **[database]** メインデータソースと外部データソース間で、日付フィールドの検索結果が一致しない不具合を修正 ([#8181](https://github.com/nocobase/nocobase/pull/8181)) by @cgyrock
-* **[ライセンス設定]** ライセンスプラグインの表示に関する不具合を修正 ([#8214](https://github.com/nocobase/nocobase/pull/8214)) by @jiannx
-* **[ワークフロー：承認]**
-  * 承認完了時にリレーションフィールドで不要な新規データが作成される不具合を修正 by @mytharcher
-  * 承認完了時に多対多リレーションフィールドで不要な新規データが作成される不具合を修正 by @mytharcher
+* **[sdk]** トークン共有の仕組みを見直し、実装を改善 ([#8357](https://github.com/nocobase/nocobase/pull/8357)) by @chenos
+* **[client]** フォームブロック内の外部データソースの関連テーブルで、リレーションフィールドのデータが正しく読み込まれない不具合を修正 ([#8356](https://github.com/nocobase/nocobase/pull/8356)) by @katherinehhh
+* **[ワークフロー：ループノード]** 条件分岐内で失敗したノードの状態が上位の分岐に反映されず、処理が誤動作する問題を修正 ([#8360](https://github.com/nocobase/nocobase/pull/8360)) by @mytharcher
+* **[権限管理]** リレーションフィールドでターゲットキーを用いた関連付けができるよう改善 ([#8352](https://github.com/nocobase/nocobase/pull/8352)) by @2013xile
+* **[ワークフロー：Webhook トリガー]** サブアプリケーションで webhook リクエストが 404 エラーになる不具合を修正 by @mytharcher
+* **[メール管理]** Outlook の返信処理がまれに中断される問題を修正 by @jiannx
 
-### [v1.9.29](https://www.nocobase.com/ja/blog/v1.9.29)
+### [v2.0.0-beta.5](https://www.nocobase.com/ja/blog/v2.0.0-beta.5)
 
-*リリース日：2025-12-18*
+*リリース日：2026-01-06*
+
+### 🚀 機能改善
+
+* **[client]** AI 編集タスクフォームのテキスト入力欄で、入力内容に応じて高さが自動調整されるよう改善 ([#8350](https://github.com/nocobase/nocobase/pull/8350)) by @heziqiang
+* **[ワークフロー：承認]** 起案者のデータ範囲について、マイグレーション後に不整合を補正する処理を追加 by @mytharcher
 
 ### 🐛 不具合修正
 
-* **[ワークフロー]** メイン以外のワークフローバージョンを削除する際にエラーが発生する不具合を修正 ([#8203](https://github.com/nocobase/nocobase/pull/8203)) by @mytharcher
-* **[マイグレーション管理]** ユーザー入力のマイグレーション説明が失われる不具合を修正し、未入力時は現在時刻をデフォルトの説明として設定するよう改善 by @cgyrock
+* **[client]** 詳細・一覧・フォームブロックでページを切り替えた際に、フィールドや操作の権限が再計算されない不具合を修正 ([#8336](https://github.com/nocobase/nocobase/pull/8336)) by @gchust
+* **[ワークフロー：承認]** 依存関係の不足により発生していたビルドエラーを修正 by @mytharcher
+
+### [v2.0.0-beta.4](https://www.nocobase.com/ja/blog/v2.0.0-beta.4)
+
+*リリース日：2026-01-05*
+
+### 🐛 不具合修正
+
+* **[操作：レコードインポート]** xlsx ファイルの非同期インポート時に一意制約エラーが発生した場合、エラーメッセージが正しく表示されない不具合を修正 ([#8342](https://github.com/nocobase/nocobase/pull/8342)) by @cgyrock
+* **[操作：レコードエクスポート Pro]** メインアプリでインポート／エクスポート Pro プラグインが無効な場合に、サブアプリで非同期のインポート／エクスポート処理を実行するとエラーになる不具合を修正 by @cgyrock
+* **[メール管理]** 「全員に返信」ボタンを表示し、データ範囲のフィルターでサブメールも対象にできるよう改善 by @jiannx
+
+### [v2.0.0-beta.3](https://www.nocobase.com/ja/blog/v2.0.0-beta.3)
+
+*リリース日：2026-01-05*
+
+### 🚀 機能改善
+
+* **[権限管理]** ネストされたリレーションフィールドを編集する際の権限チェックロジックを見直し、判定の精度を向上 ([#7856](https://github.com/nocobase/nocobase/pull/7856)) by @2013xile
+
+### 🐛 不具合修正
+
+* **[client]**`FilterAction` コンポーネントでリレーションフィールドが正しく表示されない不具合を修正 ([#8295](https://github.com/nocobase/nocobase/pull/8295)) by @mytharcher
+* **[データソース：メインデータベース]** ビューテーブルのメタデータに、元のフィールド情報が正しく含まれるよう修正 ([#8337](https://github.com/nocobase/nocobase/pull/8337)) by @2013xile
+* **[ワークフロー：承認]** 待ちタスクセンターでフィルターフィールドが正常に利用できない不具合を修正 by @mytharcher
+
+### [v2.0.0-beta.2](https://www.nocobase.com/ja/blog/v2.0.0-beta.2)
+
+*リリース日：2026-01-04*
+
+### 🐛 不具合修正
+
+* **[flow-engine]** モーダルを繰り返し開いた際に、状態が意図せず引き継がれてしまう不具合を修正 ([#8327](https://github.com/nocobase/nocobase/pull/8327)) by @gchust
+* **[database]** オブジェクト型 `appends` パラメータの処理を見直し、パラメータ解析時の `arrayLimit` の上限を拡張 ([#8328](https://github.com/nocobase/nocobase/pull/8328)) by @mytharcher
+
+### [v2.0.0-beta.1](https://www.nocobase.com/ja/blog/v2.0.0-beta.1)
+
+*リリース日：2026-01-01*
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v2.0.0-alpha.58](https://www.nocobase.com/ja/blog/v2.0.0-alpha.58)
+### [v2.0.0-alpha.63](https://www.nocobase.com/ja/blog/v2.0.0-alpha.63)
 
-*リリース日：2025-12-24*
-
-### 🐛 不具合修正
-
-* **[AI 従業員]** LLM ノードのメッセージが正しく表示されない不具合を修正 ([#8257](https://github.com/nocobase/nocobase/pull/8257)) by @heziqiang
-
-### [v2.0.0-alpha.57](https://www.nocobase.com/ja/blog/v2.0.0-alpha.57)
-
-*リリース日：2025-12-24*
-
-### 🎉 新機能
-
-* **[ワークフロー]** 「アプリケーションインスタンス ID」「Snowflake ID の生成」など、新しいシステム変数を追加 ([#8223](https://github.com/nocobase/nocobase/pull/8223)) by @mytharcher
+*リリース日：2026-01-07*
 
 ### 🚀 機能改善
 
-* **[client]** 操作列の列幅設定を、選択式（Select）で指定できるように改善 ([#8218](https://github.com/nocobase/nocobase/pull/8218)) by @katherinehhh
-* **[AI 従業員]** 初回編集後に送信しても反応しない不具合を解消し、内蔵 AI 従業員の整理と権限初期設定を実施。エラー処理や出力結果を改善するとともに、モーダルのコンテキスト変数対応、外部データソース対応を追加。大量データ処理時に会話内容が切り捨てられる問題も修正 ([#8191](https://github.com/nocobase/nocobase/pull/8191)) by @heziqiang
-* **[ワークフロー]**
-  * ワークフロー複製 API に、複製元ワークフローのインスタンスを指定できるパラメータを追加 ([#8225](https://github.com/nocobase/nocobase/pull/8225)) by @mytharcher
-  * データテーブルイベントにおける「変更が発生したフィールド」の説明を見直し、誤解を防止 ([#8216](https://github.com/nocobase/nocobase/pull/8216)) by @mytharcher
-* **[非同期タスクマネージャー]** タスクのクリーンアップ処理に例外処理を追加し、クラッシュ防止と安定性を向上 ([#8215](https://github.com/nocobase/nocobase/pull/8215)) by @mytharcher
-* **[ブロック：操作パネル]** 設定画面でブロック／操作／フィールドを非表示にした場合の表示を改善 ([#8174](https://github.com/nocobase/nocobase/pull/8174)) by @katherinehhh
-* **[UI テンプレート]** ブロックテンプレートおよびモーダルテンプレートを再利用できる UI テンプレートプラグインを追加 ([#8163](https://github.com/nocobase/nocobase/pull/8163)) by @gchust
-* **[操作：レコードエクスポート Pro]** Import Pro／Export Pro ボタンに権限制御を追加 by @katherinehhh
-* **[ワークフロー：承認]** フロー完了時に `approval.data` を最新の承認データへ更新し、「最新」表示モードに対応 by @mytharcher
+* **[client]**
+  * セル更新時にテーブル全体が再描画されてしまう挙動を改善 ([#8349](https://github.com/nocobase/nocobase/pull/8349)) by @katherinehhh
+  * AI 編集タスクフォームのテキスト入力欄で、入力内容に応じて高さが自動調整されるよう改善 ([#8350](https://github.com/nocobase/nocobase/pull/8350)) by @heziqiang
+* **[ワークフロー：承認]**
+  * 起案者のデータ範囲について、マイグレーション後の不整合を補正する処理を追加 by @mytharcher
+  * クエリパラメータを整理し、検索パフォーマンスを向上 by @mytharcher
 
 ### 🐛 不具合修正
+
+* **[client]**
+  * 詳細・一覧・フォームブロックでページを切り替えた際に、フィールドや操作の権限が再計算されない不具合を修正 ([#8336](https://github.com/nocobase/nocobase/pull/8336)) by @gchust
+  * フォームブロック内の外部データソースの関連テーブルで、リレーションフィールドのデータが正しく読み込まれない不具合を修正 ([#8356](https://github.com/nocobase/nocobase/pull/8356)) by @katherinehhh
+* **[sdk]** トークン共有の仕組みを見直し、実装を改善 ([#8357](https://github.com/nocobase/nocobase/pull/8357)) by @chenos
+* **[権限管理]** リレーションフィールドでターゲットキーを用いた関連付けができるよう改善 ([#8352](https://github.com/nocobase/nocobase/pull/8352)) by @2013xile
+* **[ワークフロー：ループノード]** 条件分岐内で失敗したノードの状態が上位の分岐に反映されず、処理が誤動作する問題を修正 ([#8360](https://github.com/nocobase/nocobase/pull/8360)) by @mytharcher
+* **[ワークフロー：Webhook トリガー]** サブアプリケーションで webhook リクエストが 404 エラーになる不具合を修正 by @mytharcher
+* **[ワークフロー：承認]** 依存関係の不足により発生していたビルドエラーを修正 by @mytharcher
+* **[メール管理]** Outlook の返信処理がまれに中断される問題を修正 by @jiannx
+
+### [v2.0.0-alpha.62](https://www.nocobase.com/ja/blog/v2.0.0-alpha.62)
+
+*リリース日：2026-01-05*
+
+### 🚀 機能改善
+
+* **[権限管理]** ネストされたリレーションフィールドを変更する際の権限チェックロジックを見直し、判定をより適切に改善 ([#7856](https://github.com/nocobase/nocobase/pull/7856)) by @2013xile
+
+### 🐛 不具合修正
+
+* **[client]**
+  * targetKey の選択可能フィールドに関する処理を修正 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) by @katherinehhh
+  * `FilterAction` コンポーネントでリレーションフィールドが正しく表示されない不具合を修正 ([#8295](https://github.com/nocobase/nocobase/pull/8295)) by @mytharcher
+  * 編集中のサブテーブルで、リレーションフィールドの Select に設定される filter パラメータが誤っている問題を修正 ([#8335](https://github.com/nocobase/nocobase/pull/8335)) by @katherinehhh
+* **[flow-engine]** モーダルを繰り返し開いた際に、状態が意図せず引き継がれてしまう不具合を修正 ([#8327](https://github.com/nocobase/nocobase/pull/8327)) by @gchust
+* **[database]** オブジェクト型 `appends` パラメータの処理を見直し、パラメータ解析時の `arrayLimit` の上限を拡張 ([#8328](https://github.com/nocobase/nocobase/pull/8328)) by @mytharcher
+* **[操作：レコードインポート]** xlsx ファイルの非同期インポート時に、一意制約エラーが発生した場合のエラーメッセージが正しく表示されない問題を修正 ([#8342](https://github.com/nocobase/nocobase/pull/8342)) by @cgyrock
+* **[データソース：メインデータベース]** ビュー用テーブルのメタデータに、元のフィールド情報が含まれるよう対応 ([#8337](https://github.com/nocobase/nocobase/pull/8337)) by @2013xile
+* **[操作：レコードエクスポート Pro]** メインアプリで Pro プラグインが無効な場合に、サブアプリの非同期インポート／エクスポート処理でエラーが発生する問題を修正 by @cgyrock
+* **[ワークフロー：承認]** 待ちタスクセンターでフィルターフィールドが正常に動作しない不具合を修正 by @mytharcher
+* **[メール管理]** 「全員に返信」ボタンを表示し、データ範囲のフィルターでサブメールも対象にできるよう改善 by @jiannx
+
+### [v2.0.0-alpha.59](https://www.nocobase.com/ja/blog/v2.0.0-alpha.59)
+
+*リリース日：2025-12-25*
+
+### 🚀 機能改善
 
 * **[flow-engine]**
-  * ツリーテーブルで子レコードを追加する際の権限判定不具合を修正 ([#8240](https://github.com/nocobase/nocobase/pull/8240)) by @katherinehhh
-  * 一部ブロックのモーダルで、レコード関連変数が正しく表示されない問題を修正 ([#8060](https://github.com/nocobase/nocobase/pull/8060)) by @gchust
-  * 操作やタブをドラッグ後に、新しく追加した操作やタブが表示されない問題を修正 ([#8224](https://github.com/nocobase/nocobase/pull/8224)) by @gchust
-  * 外部データソースの権限判定に関する不具合を修正 ([#8221](https://github.com/nocobase/nocobase/pull/8221)) by @katherinehhh
-  * 権限がある外部データソース操作が非表示になる問題を修正 ([#8217](https://github.com/nocobase/nocobase/pull/8217)) by @katherinehhh
-* **[client]**
-  * 連動ルールが未設定の場合でもエラーが発生しないよう対応 ([#8239](https://github.com/nocobase/nocobase/pull/8239)) by @zhangzhonghe
-  * テーブルブロックの操作列を削除できない問題を修正 ([#8230](https://github.com/nocobase/nocobase/pull/8230)) by @gchust
-  * プレビュー実行時に JSX のコンパイル結果が保存時に反映されてしまう問題を修正 ([#8171](https://github.com/nocobase/nocobase/pull/8171)) by @gchust
-  * S3 Pro の添付ファイルアップロードエラーを修正し、プレビュー表示を改善 ([#8211](https://github.com/nocobase/nocobase/pull/8211)) by @katherinehhh
-* **[cli]** DB\_PASSWORD が未設定の場合でも license-kit が動作するよう対応 ([#8220](https://github.com/nocobase/nocobase/pull/8220)) by @jiannx
-* **[database]** メインデータソースと外部データソース間で、日付フィールドの検索結果が一致しない問題を修正 ([#8181](https://github.com/nocobase/nocobase/pull/8181)) by @cgyrock
-* **[データテーブルフィールド：自動採番]** field-sequence プラグインの repair 実行時、存在しないコレクションによりエラーが発生する問題を修正 ([#8251](https://github.com/nocobase/nocobase/pull/8251)) by @cgyrock
-* **[ワークフロー：手動処理ノード]** 削除済みワークフローの実行計画をキャンセルする際のエラーを修正 ([#8258](https://github.com/nocobase/nocobase/pull/8258)) by @mytharcher
-* **[UI テンプレート]** リレーションフィールドのモーダルで、非リレーション用テンプレートを開くとエラーになる問題を修正 ([#8233](https://github.com/nocobase/nocobase/pull/8233)) by @gchust
-* **[部門]** 集約検索でユーザーを正しく特定できない問題を修正 ([#8222](https://github.com/nocobase/nocobase/pull/8222)) by @2013xile
-* **[データテーブルフィールド：多対多（配列）]** 対象キーが Snowflake ID（53 bits）の場合に、多対多（配列）フィールドを作成できない問題を修正 ([#8226](https://github.com/nocobase/nocobase/pull/8226)) by @2013xile
-* **[認可設定]** 認可プラグインの表示不具合を修正 ([#8214](https://github.com/nocobase/nocobase/pull/8214)) by @jiannx
-* **[操作：レコードインポート]** インポート時のエラーで、行番号が常に 1 と表示される問題を修正 ([#8244](https://github.com/nocobase/nocobase/pull/8244)) by @mytharcher
-* **[テンプレート印刷]** 外部データソースに対応していないテンプレート印刷リクエストの不具合を修正 by @katherinehhh
-* **[ワークフロー：承認]**
-  * 同一トランザクションを重複してロールバックしてしまう問題を修正 by @mytharcher
-  * 承認完了時にリレーションフィールドへ新規データが作成される問題を修正 by @mytharcher
-  * 承認完了時に多対多リレーションフィールドへ新規データが作成される問題を修正 by @mytharcher
-
-### [v2.0.0-alpha.56](https://www.nocobase.com/ja/blog/v2.0.0-alpha.56)
-
-*リリース日：2025-12-18*
-
-### 🚀 機能改善
-
-* **[client]** テーブルの列幅設定で、任意の幅を直接入力できるように改善 ([#8200](https://github.com/nocobase/nocobase/pull/8200)) by @katherinehhh
+  * 設定モード切り替え時の動作パフォーマンスを改善 ([#8241](https://github.com/nocobase/nocobase/pull/8241)) by @zhangzhonghe
+  * runjs 環境で FormData オブジェクトを利用できるように対応 ([#8263](https://github.com/nocobase/nocobase/pull/8263)) by @gchust
 
 ### 🐛 不具合修正
 
-* **[client]** 列幅調整時に、1 行の合計幅が制限を超えないようにする不具合を修正 ([#8166](https://github.com/nocobase/nocobase/pull/8166)) by @zhangzhonghe
-* **[flow-engine]** モーダルの uid を再利用して開いた際、モーダル内フォーム送信後にブロックデータが更新されない不具合を修正 ([#8202](https://github.com/nocobase/nocobase/pull/8202)) by @gchust
-* **[データテーブルフィールド：数式]** BigInt フィールドを詳細ブロックおよびフォームブロックに追加できない不具合を修正 ([#8201](https://github.com/nocobase/nocobase/pull/8201)) by @katherinehhh
-* **[ワークフロー]** メイン以外のワークフローバージョン削除時にエラーが発生する不具合を修正 ([#8203](https://github.com/nocobase/nocobase/pull/8203)) by @mytharcher
+* **[client]** 関連フィールドを遅延読み込みで表示する際、無限ループによりスタックオーバーフローが発生する不具合を修正 ([#8262](https://github.com/nocobase/nocobase/pull/8262)) by @zhangzhonghe
