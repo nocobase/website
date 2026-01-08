@@ -1,23 +1,23 @@
 ### 🚀 Improvements
 
 - **[client]**
-  - Auto-resize textarea in AI edit task form. ([#8350](https://github.com/nocobase/nocobase/pull/8350)) by @heziqiang
-
   - prevent full table re-render when updating a cell ([#8349](https://github.com/nocobase/nocobase/pull/8349)) by @katherinehhh
 
-- **[Workflow: Approval]**
-  - Simplify parameters in query, and improve performance by @mytharcher
+  - Auto-resize textarea in AI edit task form. ([#8350](https://github.com/nocobase/nocobase/pull/8350)) by @heziqiang
 
+- **[Workflow: Approval]**
   - Add repair logic for sync audiences after migration by @mytharcher
 
-### 🐛 Bug Fixes
+  - Simplify parameters in query, and improve performance by @mytharcher
 
-- **[sdk]** Improve token sharing implementation ([#8357](https://github.com/nocobase/nocobase/pull/8357)) by @chenos
+### 🐛 Bug Fixes
 
 - **[client]**
   - Fixed an issue where field and action permissions were not recalculated after pagination in details, list, and form blocks. ([#8336](https://github.com/nocobase/nocobase/pull/8336)) by @gchust
 
   - fix association fields from external data sources not loading association data in form blocks ([#8356](https://github.com/nocobase/nocobase/pull/8356)) by @katherinehhh
+
+- **[sdk]** Improve token sharing implementation ([#8357](https://github.com/nocobase/nocobase/pull/8357)) by @chenos
 
 - **[Access control]** Allow association fields to associate using the target keys ([#8352](https://github.com/nocobase/nocobase/pull/8352)) by @2013xile
 
