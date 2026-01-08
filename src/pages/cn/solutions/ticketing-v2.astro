@@ -15,7 +15,6 @@ import AIAvatar from "../../../components/AIAvatar.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <span class="badge bg-soft-primary rounded-pill mb-3">NocoBase 解决方案</span>
             <h1 class="fw-bold mt-2 mb-3">AI 驱动的<br/>智能工单系统</h1>
             <p class="para-desc text-muted">
               让客服更专注于解决问题，而非繁琐的流程操作。基于 NocoBase 无代码平台，采用 T 型数据架构统一管理多种业务场景，AI 员工团队贯穿工单全生命周期，实现从创建到闭环的智能化管理。
@@ -64,17 +63,17 @@ import AIAvatar from "../../../components/AIAvatar.astro";
 
             <!-- 按钮 -->
             <div class="mt-4 pt-2">
-              <a href="#pain-points" class="btn btn-primary me-3">
-                <i class="uil uil-lightbulb-alt me-1"></i>了解方案
+              <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live Demo
               </a>
-              <a href="/cn/contact" class="btn btn-outline-primary">
-                <i class="uil uil-envelope me-1"></i>联系我们
+              <a href="#how-to-use" class="btn btn-outline-primary">
+                <i class="uil uil-download-alt me-1"></i>如何使用
               </a>
             </div>
 
             <div class="mt-3 p-2" style="background-color: #fff3e0; border-left: 3px solid #ff9800; border-radius: 4px;">
               <small class="text-muted">
-                <i class="uil uil-info-circle"></i> 基于 NocoBase 2.x 搭建（开发中）
+                <i class="uil uil-info-circle me-1"></i>Alpha 版本已上线，欢迎体验，功能持续更新中
               </small>
             </div>
           </div>
@@ -771,21 +770,89 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   </section><!--end section-->
   <!-- 差异化优势 End -->
 
+  <!-- How to Use Start -->
+  <section class="section" id="how-to-use">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">如何使用？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">三个步骤快速部署智能工单系统到你的环境</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安装 NocoBase</h5>
+                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 到你的服务器</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://docs-cn.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-primary">查看安装文档</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-book-open h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>了解方案</h5>
+                <p class="text-muted mt-2">阅读方案介绍文档，了解系统功能、架构设计和使用场景</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/" target="_blank" class="btn btn-outline-primary">方案介绍</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>还原到系统</h5>
+                <p class="text-muted mt-2">按照还原教程，将智能工单系统部署到你的 NocoBase 环境</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/installation" target="_blank" class="btn btn-outline-primary">还原教程</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
   <!-- CTA Section Start -->
-  <section class="section">
+  <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h3 class="title mb-4">让 AI 重新定义工单管理</h3>
           <p class="text-muted para-desc mx-auto mb-0">
-            通用工单追踪系统正在开发中。如果您有定制需求、想了解更多细节，或希望参与内测，欢迎联系我们。
+            基于 NocoBase 2.x 构建的 AI 驱动智能工单系统。如果您有定制需求或想了解更多细节，欢迎联系我们。
           </p>
           <div class="mt-4">
-            <a href="/cn/contact" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-envelope me-1"></i>联系我们
+            <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
             </a>
-            <a href="/cn/solutions/ticketing" class="btn btn-outline-secondary mt-2">
-              <i class="uil uil-arrow-left me-1"></i>查看工单 1.0
+            <a href="/cn/contact" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-envelope me-1"></i>联系我们
             </a>
           </div>
         </div><!--end col-->
