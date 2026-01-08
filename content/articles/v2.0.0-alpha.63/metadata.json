@@ -1,6 +1,6 @@
 {
   "id": 842,
-  "title": "NocoBase v2.0.0-alpha.63: uto-resize textarea in AI edit task form.",
+  "title": "NocoBase v2.0.0-alpha.63：Auto-resize textarea in AI edit task form",
   "title_cn": "NocoBase v2.0.0-alpha.63：AI 编辑任务表单中的文本输入框支持自动高度调整",
   "title_ja": "NocoBase v2.0.0-alpha.63：AI 編集タスクフォームのテキスト入力欄で、入力内容に応じて高さが自動調整されるよう改善",
   "description": "Release Note of v2.0.0-alpha.63",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-07T10:19:32.336Z"
+  "updatedAt": "2026-01-08T02:29:39.266Z"
 }
