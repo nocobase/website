@@ -7,7 +7,7 @@
   "description_cn": "本周更新包括：应用进入维护状态时支持显示插件自定义的应用维护状态组件等",
   "description_ja": "今週の更新内容は以下の通りです：アプリがメンテナンス状態に入った際、プラグインで定義したメンテナンス表示コンポーネントを表示できるよう対応",
   "slug": "weekly-updates-20260108",
-  "publishedAt": "2025-12-25T01:37:33.803Z",
+  "publishedAt": "2026-01-08T01:37:33.000Z",
   "status": "published",
   "tags": [
     {
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-08T05:06:33.118Z"
+  "updatedAt": "2026-01-09T04:16:54.804Z"
 }
