@@ -1,14 +1,14 @@
 {
   "id": 847,
-  "title": "NocoBase v2.0.0-alpha.64",
-  "title_cn": "NocoBase v2.0.0-alpha.64",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.64: Support Gemini-3 model with function-calling thought signature",
+  "title_cn": "NocoBase v2.0.0-alpha.64：支持 Gemini-3 模型，并包含函数调用的思维签名能力",
+  "title_ja": "NocoBase v2.0.0-alpha.64：Gemini-3 モデルに対応し、関数呼び出しを含む思考プロセスのシグネチャ機能を利用可能に",
   "description": "Release Note of v2.0.0-alpha.64",
   "description_cn": "v2.0.0-alpha.64 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.64 リリースノート",
   "slug": "v2.0.0-alpha.64",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-01-08T10:31:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-01-09T03:56:11.652Z",
+        "updatedAt": "2026-01-09T03:56:11.652Z",
+        "articles_id": 847,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-01-09T03:55:12.808Z",
+    "updatedAt": "2026-01-09T03:55:12.814Z",
+    "id": 2166,
+    "title": "develop (10)",
+    "filename": "develop (10)-398wkx.jpg",
+    "extname": ".jpg",
+    "size": 81298,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(10)-398wkx.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(10)-398wkx.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-01-08T10:31:13.062Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-01-09T03:56:11.636Z"
 }
