@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## OutSystems' Hidden Costs Go Beyond Money
 
 OutSystems is a leader in enterprise low-code development. By deeply integrating generative AI tools into the software lifecycle, OutSystems empowers enterprises to rapidly build customer-oriented portals, customized core systems, and efficiency-boosting internal tools, establishing itself as a benchmark in enterprise application development.
@@ -9,8 +11,6 @@ However, despite OutSystems' technical prowess, more enterprises are turning to 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **Four Core Pain Points from User Feedback**
 
@@ -40,7 +40,7 @@ OutSystems’ pricing is steep, especially for small businesses. Complex licensi
 
 [NocoBase](https://www.nocobase.com/) is an open-source low-code platform built on a plugin architecture, designed to provide enterprises and developers with a flexible, extensible application development environment.
 
-⭐️ Stars: 13.6k
+⭐️ Stars: 21.1k
 
 GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
@@ -80,7 +80,7 @@ Documentation: https://docs.nocobase.com/welcome/introduction
 
 ![Appsmith.png](https://static-docs.nocobase.com/60e751d070d0807b35665bfb80a3eff3.png)
 
-⭐️ Stars: 35.8k
+⭐️ Stars: 38.8k
 
 GitHub Link: https://github.com/appsmithorg/appsmith
 
@@ -101,7 +101,7 @@ GitHub Link: https://github.com/appsmithorg/appsmith
 
 ![Budibase.png](https://static-docs.nocobase.com/c0e535dbfbfbe75b655e753dad876eae.png)
 
-⭐️ Stars: 23.5k
+⭐️ Stars: 27.5k
 
 GitHub Link: https://github.com/budibase/budibase
 
@@ -122,7 +122,7 @@ GitHub Link: https://github.com/budibase/budibase
 
 ![ToolJet.png](https://static-docs.nocobase.com/211df7a189124b0741f6faa6f057567e.png)
 
-⭐️ Stars: 34.9k
+⭐️ Stars: 37.1k
 
 GitHub Link: https://github.com/ToolJet/ToolJet
 
@@ -143,7 +143,7 @@ GitHub Link: https://github.com/ToolJet/ToolJet
 
 ![Refine.png](https://static-docs.nocobase.com/4fcbb6a895c6eef34b1a7150944a1f99.png)
 
-⭐️ Stars: 30.1k
+⭐️ Stars: 33.8k
 
 GitHub Link: https://github.com/refinedev/refine
 

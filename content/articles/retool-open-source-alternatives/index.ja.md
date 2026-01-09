@@ -1,4 +1,4 @@
-📝 注：この記事は 2025 年 11 月 16 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+📝 注：この記事は 2026 年 1 月 8 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
 ---
 
@@ -17,8 +17,6 @@
 💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Retoolのオープンソース代替品を選ぶ理由
 
@@ -64,7 +62,7 @@ RetoolのSaaS版はサブスクリプションモデルで運営されており�
 ![NocoBase.PNG](https://static-docs.nocobase.com/554bf2326387237ba8e621781cad4c79.PNG)
 
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* **GitHubスター数**: 15.8k
+* **GitHubスター数**: 21.1k
 * **ウェブサイト**: [https://www.nocobase.com/](https://www.nocobase.com/)
 * **ドキュメント**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -117,7 +115,7 @@ Retoolは、内部ツールを迅速に構築し、特に複雑な権限管理�
 ![Appsmith.png](https://static-docs.nocobase.com/3af34cface2f9fb97af25ce79d24f5c2.png)
 
 * **GitHub**: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* **GitHubスター数**: 37.2k
+* **GitHubスター数**: 38.8k
 * **ウェブサイト**: [https://www.appsmith.com/](https://www.appsmith.com/)
 * **ドキュメント**: [https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -160,7 +158,7 @@ Retoolは、**標準的な内部ツールを迅速に構築し、複数のサー
 ![Refine.png](https://static-docs.nocobase.com/cf84f95c5c008d7ea507e3b0287c97a0.png)
 
 * **GitHub**: [https://github.com/refinedev/refine](https://github.com/refinedev/refine)
-* **GitHubスター数**: 31.2k
+* **GitHubスター数**: 33.8k
 * **ウェブサイト**: [https://refine.dev/](https://refine.dev/)
 * **ドキュメント**: [https://refine.dev/docs/](https://refine.dev/docs/)
 
@@ -209,7 +207,7 @@ Retoolは、**内部ツールを迅速に構築し、複数のデータソース
 ![Budibase.png](https://static-docs.nocobase.com/26621a28118b18f235967ded42b85178.png)
 
 * **GitHub**: [https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* **GitHubスター数**: 24.7k
+* **GitHubスター数**: 27.5k
 * **ウェブサイト**: [https://budibase.com/](https://budibase.com/)
 * **ドキュメント**: [https://docs.budibase.com/](https://docs.budibase.com/)
 

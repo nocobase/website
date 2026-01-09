@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+
 在当今快节奏、技术驱动的商业环境中，企业越来越依赖硬件、软件和数字资源来支持其运营，对高效和成本效益的 IT 资产管理解决方案的需求迫切。
 
 **开源 IT 资产管理（ITAM）软件**提供了一种灵活、透明和社区驱动的方法来控制其 IT 基础设施，定制其资产管理流程，并避免供应商锁定的陷阱。
@@ -9,8 +11,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 什么是开源 IT 资产管理软件？
 
@@ -49,7 +49,7 @@
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Star：12.9k
+GitHub Star：21.1k
 
 License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
 
@@ -77,7 +77,7 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 
 GitHub：https://github.com/snipe/snipe-it
 
-GitHub Star：11.2k
+GitHub Star：13.2k
 
 License：[AGPL-3.0](https://github.com/snipe/snipe-it#AGPL-3.0-1-ov-file)
 
@@ -99,7 +99,7 @@ License：[AGPL-3.0](https://github.com/snipe/snipe-it#AGPL-3.0-1-ov-file)
 
 GitHub：https://github.com/glpi-project/glpi
 
-GitHub Star：4.4k
+GitHub Star：5.5k
 
 License：[GPL-3.0](https://github.com/glpi-project/glpi?tab=GPL-3.0-1-ov-file#)
 
@@ -143,7 +143,7 @@ License：[Apache-2.0](https://github.com/allegro/ralph/?tab=Apache-2.0-1-ov-fil
 
 GitHub：https://github.com/openboxes/openboxes
 
-GitHub Star：664
+GitHub Star：809
 
 License：[EPL-1.0](https://github.com/openboxes/openboxes?tab=EPL-1.0-1-ov-file#)
 

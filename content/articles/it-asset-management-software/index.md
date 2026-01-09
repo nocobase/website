@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 In today’s fast-paced, technology-driven business environment, companies are increasingly relying on hardware, software, and digital resources to support their operations. This has created a pressing need for efficient and cost-effective IT asset management (ITAM) solutions.
 
 **Open-source IT asset management software** offers a flexible, transparent, and community-driven approach to controlling IT infrastructure, customizing asset management processes, and avoiding vendor lock-in.
@@ -9,8 +11,6 @@ In this article, we will explore the world of open-source IT asset management so
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## What is Open Source IT Asset Management Software?
 
@@ -49,7 +49,7 @@ Open-source IT asset management (ITAM) software is a cost-effective solution for
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Star：12.9k
+GitHub Star：21.1k
 
 License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#)
 
@@ -77,7 +77,7 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 
 GitHub：https://github.com/snipe/snipe-it
 
-GitHub Star：11.2k
+GitHub Star：13.2k
 
 License：[AGPL-3.0](https://github.com/snipe/snipe-it#AGPL-3.0-1-ov-file)
 
@@ -99,7 +99,7 @@ License：[AGPL-3.0](https://github.com/snipe/snipe-it#AGPL-3.0-1-ov-file)
 
 GitHub：https://github.com/glpi-project/glpi
 
-GitHub Star：4.4k
+GitHub Star：5.5k
 
 License：[GPL-3.0](https://github.com/glpi-project/glpi?tab=GPL-3.0-1-ov-file#)
 
@@ -143,7 +143,7 @@ License：[Apache-2.0](https://github.com/allegro/ralph/?tab=Apache-2.0-1-ov-fil
 
 GitHub：https://github.com/openboxes/openboxes
 
-GitHub Star：664
+GitHub Star：809
 
 License：[EPL-1.0](https://github.com/openboxes/openboxes?tab=EPL-1.0-1-ov-file#)
 

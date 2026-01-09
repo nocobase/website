@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Nov.  16, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ---
 
@@ -17,8 +17,6 @@ In this article, we will focus on excellent open-source alternatives to Retool. 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Why Choose Open-Source Alternatives to Retool?
 
@@ -64,7 +62,7 @@ Now, let’s compare each of these four products with Retool.
 ![NocoBase.PNG](https://static-docs.nocobase.com/554bf2326387237ba8e621781cad4c79.PNG)
 
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* **GitHub Stars**: 15.8k
+* **GitHub Stars**: 21.1k
 * **Website**: [https://www.nocobase.com/](https://www.nocobase.com/)
 * **Documentation**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -117,7 +115,7 @@ Retool is better suited for companies looking to quickly build internal tools th
 ![Appsmith.png](https://static-docs.nocobase.com/3af34cface2f9fb97af25ce79d24f5c2.png)
 
 * **GitHub**: [https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* **GitHub Stars**: 37.2k
+* **GitHub Stars**: 38.8k
 * **Website**: [https://www.appsmith.com/](https://www.appsmith.com/)
 * **Documentation**: [https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -160,7 +158,7 @@ Retool is more suitable for teams looking to quickly build standard internal too
 ![Refine.png](https://static-docs.nocobase.com/cf84f95c5c008d7ea507e3b0287c97a0.png)
 
 * **GitHub**: [https://github.com/refinedev/refine](https://github.com/refinedev/refine)
-* **GitHub Stars**: 31.2k
+* **GitHub Stars**: 33.8k
 * **Website**: [https://refine.dev/](https://refine.dev/)
 * **Documentation**: [https://refine.dev/docs/](https://refine.dev/docs/)
 
@@ -209,7 +207,7 @@ Retool is more suitable for companies that need to quickly build internal tools 
 ![Budibase.png](https://static-docs.nocobase.com/26621a28118b18f235967ded42b85178.png)
 
 * **GitHub**: [https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* **GitHub Stars**: 24.7k
+* **GitHub Stars**: 27.5k
 * **Website**: [https://budibase.com/](https://budibase.com/)
 * **Documentation**: [https://docs.budibase.com/](https://docs.budibase.com/)
 

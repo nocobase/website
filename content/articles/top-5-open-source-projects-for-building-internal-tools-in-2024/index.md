@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 😄 *If you're already familiar with the concept of internal tools, jump straight to > **Best Open Source Projects for Building Internal Tools***
 
 ## What are the benefits of internal tools?
@@ -18,8 +20,6 @@ Investing in the right internal tools can greatly improve efficiency, lower cost
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## What are internal tools?
 
@@ -57,7 +57,7 @@ I hope this list helps you build internal tools better, faster, and cheaper!
 
 **Related Resources:**[Website](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [Docs](https://docs.nocobase.com/)
 
-⭐️ **Stars**: 11.2K
+⭐️ **Stars**: 21.2K
 
 NocoBase is an open-source no-code/low-code platform made for building internal tools, business apps, and company solutions. NocoBase helps businesses quickly set up custom business apps like CRM, PM tools, and other business process management solutions without spending a lot of time and money on software development.
 
@@ -125,7 +125,7 @@ All paid versions offer lifetime licenses.
 
 **Related Resources:** [Website](https://budibase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [Docs](https://docs.budibase.com/docs/what-is-budibase)
 
-⭐️ **Stars**: 21.4K
+⭐️ **Stars**: 27.5K
 
 Budibase is a powerful no-code platform designed for quickly building and managing internal tools. It supports everything from simple forms and database apps to complex business process management systems. Even non-technical users can easily create custom applications.
 
@@ -187,7 +187,7 @@ React-based framework
 
 **Related Resources:**[Website](https://refine.dev/) | [GitHub](https://github.com/refinedev/refine) | [Docs](https://refine.dev/docs/)
 
-⭐️ **Stars**: 26.4K
+⭐️ **Stars**: 33.8K
 
 Refine is a React framework designed for building internal tools. It offers many pre-built components and strong data handling features. This helps development teams quickly create admin panels, data dashboards, and custom business systems.
 
@@ -245,7 +245,7 @@ Enterprise Version: Priced based on specific project
 
 **Related Resources:**[Website](https://www.tooljet.com/) | [GitHub](https://github.com/ToolJet/ToolJet) | [Docs](https://docs.tooljet.com/docs/)
 
-⭐️ **Stars**: 28.3K
+⭐️ **Stars**: 37.1K
 
 ToolJet is an open-source low-code platform designed for quickly building and launching internal tools. With its easy-to-use drag-and-drop interface, ToolJet lets non-tech users easily create complex, responsive front-end apps, greatly simplifying the development process and time.
 
@@ -306,7 +306,7 @@ Enterprise Version: Priced based on specific project
 
 **Related Resources:** [Website](https://www.appsmith.com/) | [GitHub](https://github.com/appsmithorg/appsmith) | [Docs](https://docs.appsmith.com/)
 
-⭐️ **Stars**：32.5K
+⭐️ **Stars**：38.8K
 
 Appsmith and ToolJet are very similar in many ways. They're both open-source low-code platforms for building internal tools and management dashboards. Both tools offer drag-and-drop interfaces, support page code development, work with many databases and APIs, and can be used as cloud services or self-hosted.
 

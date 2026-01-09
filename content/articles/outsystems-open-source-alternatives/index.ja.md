@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 8 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ## **OutSystemsの隠れたコストは金銭以上のもの**
 
 OutSystemsは企業向けローコード開発領域のリーダーです。生成 AIツールをソフトウェアライフサイクルに深く統合することで、顧客指向のポータル、カスタマイズされた基幹システム、効率化された内部ツールを迅速に構築し、エンタープライズアプリケーション開発の基準となっています。
@@ -9,8 +11,6 @@ OutSystemsは企業向けローコード開発領域のリーダーです。生�
 💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **ユーザーフィードバックから見る4 大核心的課題**
 
@@ -40,7 +40,7 @@ OutSystemsの価格設定は高く、特に中小企業にとっては負担が�
 
 [NocoBase](https://www.nocobase.com/) はプラグインアーキテクチャに基づくオープンソースローコードプラットフォームで、企業や開発者に柔軟で拡張可能なアプリケーション開発環境を提供します。
 
-⭐️ Stars: 13.6k
+⭐️ Stars: 21.1k
 
 GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
@@ -80,7 +80,7 @@ Demo：https://demo.nocobase.com/new
 
 ![Appsmith.png](https://static-docs.nocobase.com/60e751d070d0807b35665bfb80a3eff3.png)
 
-⭐️ Stars: 35.8k
+⭐️ Stars: 38.8k
 
 GitHub Link: https://github.com/appsmithorg/appsmith
 
@@ -101,7 +101,7 @@ GitHub Link: https://github.com/appsmithorg/appsmith
 
 ![Budibase.png](https://static-docs.nocobase.com/c0e535dbfbfbe75b655e753dad876eae.png)
 
-⭐️ Stars: 23.5k
+⭐️ Stars: 27.5k
 
 GitHub Link: https://github.com/budibase/budibase
 
@@ -122,7 +122,7 @@ GitHub Link: https://github.com/budibase/budibase
 
 ![ToolJet.png](https://static-docs.nocobase.com/211df7a189124b0741f6faa6f057567e.png)
 
-⭐️ Stars: 34.9k
+⭐️ Stars: 37.1k
 
 GitHub Link: https://github.com/ToolJet/ToolJet
 
@@ -143,7 +143,7 @@ GitHub Link: https://github.com/ToolJet/ToolJet
 
 ![Refine.png](https://static-docs.nocobase.com/4fcbb6a895c6eef34b1a7150944a1f99.png)
 
-⭐️ Stars: 30.1k
+⭐️ Stars: 33.8k
 
 GitHub Link: https://github.com/refinedev/refine
 

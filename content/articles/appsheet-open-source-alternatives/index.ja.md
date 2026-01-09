@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 6 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ## **プロローグです**
 
 2012年に創業したGoogleのゼロコードのアプリケーション開発プラットフォームAppSheetは、コーディングを必要としない視覚的なインターフェース、Googleエコシステム(Sheets/Drive/AI)との深い統合、クラウド上での連携、クロスプラットフォームでの互換性を備えています。プロジェクト管理、データ収集、自動化プロセスなどのシーンをカバーするモバイルやWebアプリケーションを、数百万の企業が迅速に構築できるようにしています。
@@ -35,7 +37,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![NocoBase.png](https://static-docs.nocobase.com/d29235958d60478d0a11680994012bcf.png)
 
 * GitHub:[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* GitHub Stars: 14k
+* GitHub Stars:21.1k
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 * Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -60,7 +62,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![Budibase.png](https://static-docs.nocobase.com/f9097830816ca11278324cba88bcd33f.png)
 
 * GitHub:[https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* GitHub Stars: 23.8k
+* GitHub Stars:27.5k
 * Website: [https://budibase.com/](https://budibase.com/)
 * Documentation: [https://docs.budibase.com/](https://docs.budibase.com/)
 
@@ -75,7 +77,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![Directus.png](https://static-docs.nocobase.com/95fc6c5df0eeaa37e35bf950f43135b9.png)
 
 * GitHub:https://github.com/directus/directus
-* GitHub Stars: 29.7k
+* GitHub Stars: 33.9k
 * Website: [https://directus.io](https://directus.io/)
 * Documentation: https://docs.directus.io/
 
@@ -90,7 +92,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![Appsmith.png](https://static-docs.nocobase.com/cbd7b31930d0d05796aebba63aa282c0.png)
 
 * GitHub:[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* GitHub Stars: 36.5k
+* GitHub Stars:38.8k
 * Website: [https://www.appsmith.com/](https://www.appsmith.com/)
 * Documentation: [https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -105,7 +107,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![ToolJet.png](https://static-docs.nocobase.com/ba007058300db25dc2a99722c8eb0bc9.png)
 
 * GitHub:https://github.com/ToolJet/ToolJet
-* GitHub Stars: 35.2k
+* GitHub Stars: 37.1k
 * Website: [https://tooljet.io](https://tooljet.io/)
 * Documentation: https://docs.tooljet.ai/docs/
 

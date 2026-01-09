@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 6 日。我们会定期更新，确保你获取最新的信息！😊
+
 ## **引言**
 
 作为 Google 旗下领先的零代码应用开发平台，AppSheet 自 2012 年创立以来，凭借无需编码的可视化界面、与 Google 生态（Sheets/Drive/AI）的深度整合，以及云端协作和跨平台兼容能力，已帮助数百万企业快速构建了覆盖项目管理、数据收集、自动化流程等场景的移动与 Web 应用。
@@ -35,7 +37,7 @@
 ![NocoBase.png](https://static-docs.nocobase.com/d29235958d60478d0a11680994012bcf.png)
 
 * GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
-* GitHub Star 数: 14k
+* GitHub Star 数: 21.1k
 * 官网：[https://www.nocobase.com/](https://www.nocobase.com/)
 * 文档：[https://docs.nocobase.com/](https://docs.nocobase.com/)
 
@@ -60,7 +62,7 @@
 ![Budibase.png](https://static-docs.nocobase.com/f9097830816ca11278324cba88bcd33f.png)
 
 * GitHub：[https://github.com/budibase/budibase](https://github.com/budibase/budibase)
-* GitHub Star 数: 23.8k
+* GitHub Star 数: 27.5k
 * 官网：[https://budibase.com/](https://budibase.com/)
 * 文档：[https://docs.budibase.com/](https://docs.budibase.com/)
 
@@ -75,7 +77,7 @@
 ![Directus.png](https://static-docs.nocobase.com/95fc6c5df0eeaa37e35bf950f43135b9.png)
 
 * GitHub：https://github.com/directus/directus
-* GitHub Star 数: 29.7k
+* GitHub Star 数: 33.9k
 * 官网：[https://directus.io](https://directus.io/)
 * 文档：https://docs.directus.io/
 
@@ -90,7 +92,7 @@
 ![Appsmith.png](https://static-docs.nocobase.com/cbd7b31930d0d05796aebba63aa282c0.png)
 
 * GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
-* GitHub Star 数: 36.5k
+* GitHub Star 数: 38.8k
 * 官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 * 文档：[https://docs.appsmith.com/](https://docs.appsmith.com/)
 
@@ -105,7 +107,7 @@
 ![ToolJet.png](https://static-docs.nocobase.com/ba007058300db25dc2a99722c8eb0bc9.png)
 
 * GitHub：https://github.com/ToolJet/ToolJet
-* GitHub Star 数: 35.2k
+* GitHub Star 数: 37.1k
 * 官网：[https://tooljet.io](https://tooljet.io/)
 * 文档：https://docs.tooljet.ai/docs/
 

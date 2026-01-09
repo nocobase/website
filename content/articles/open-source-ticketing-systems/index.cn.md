@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 6 日。我们会定期更新，确保你获取最新的信息！😊
+
 去年，随着 NocoBase 用户数量不断增长，我们面临了一个越来越现实的问题：**如何高效管理客户反馈和支持请求。**
 
 有的用户通过邮件反馈，有的在社区里反馈，还有一些通过不同的同事转述。信息分散在不同渠道，容易遗漏，跟进也难以协同。我们意识到，是时候引入一个真正适合我们业务流程的工单系统了。
@@ -40,7 +42,7 @@
 
 🔗 Website：https://www.nocobase.com/
 
-⭐ Stars：15.5k
+⭐ Stars：21.1k
 
 📄 License: AGPL-3.0
 
@@ -64,7 +66,7 @@
 
 🔗 Website：https://www.uvdesk.com/
 
-⭐ Stars：11.6k
+⭐ Stars：17.1k
 
 📄 License: OSL-3.0
 
@@ -86,7 +88,7 @@
 
 🔗 Website：https://zammad.com/
 
-⭐ Stars：4.8k
+⭐ Stars：5.3k
 
 📄 License: AGPL-3.0
 
@@ -108,7 +110,7 @@
 
 🔗 Website：https://freescout.net/
 
-⭐ Stars：3.5k
+⭐ Stars：4k
 
 📄 License: AGPL-3.0
 
@@ -129,7 +131,7 @@
 
 🔗 Website：http://osticket.com/
 
-⭐ Stars：3.4k
+⭐ Stars：3.6k
 
 📄 License: GPL-2.0
 
@@ -150,7 +152,7 @@
 
 🔗 Website：https://helpy.io/
 
-⭐ Stars：2.4k
+⭐ Stars：2.5k
 
 📄 License: MIT
 

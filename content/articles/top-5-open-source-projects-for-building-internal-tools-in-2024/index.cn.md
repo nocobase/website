@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+
 😄 *如果你已经对内部工具的概念非常熟悉了，请直接点击目录跳转 > **最佳构建内部工具的开源项目***
 
 ## 内部工具有什么好处？
@@ -18,8 +20,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 哪些是内部工具？
 
@@ -57,7 +57,7 @@
 
 **相关资源：**[官网](https://www.nocobase.com/) ｜[GitHub](https://github.com/nocobase/nocobase) ｜ [文档](https://docs.nocobase.com/)
 
-⭐️ **Star 数**：11.2K
+⭐️ **Star 数**：21.2K
 
 NocoBase 是一个专为构建内部工具、业务应用和企业解决方案而设计的开源无代码/低代码平台。NocoBase 使企业能够快速部署定制化的业务应用，无需投入大量的时间和资金进行软件开发。
 
@@ -126,7 +126,7 @@ NocoBase 支持三种安装方式：[Docker 安装（推荐）](https://docs-cn.
 
 **相关资源：**[官网](https://budibase.com/) ｜[GitHub](https://github.com/Budibase/budibase) ｜ [文档](https://docs.budibase.com/docs/what-is-budibase)
 
-⭐️ **Star 数**：21.4K
+⭐️ **Star 数**：27.5K
 
 Budibase 是一个高效的低代码平台，专为快速构建和管理内部工具而设计。它支持从简单的表单和数据库应用到复杂的业务流程管理系统，使非技术用户也能轻松创建自定义应用。
 
@@ -188,7 +188,7 @@ Budibase 特别适合需要快速部署、易于维护，并且成本效益高�
 
 **相关资源：**[官网](https://refine.dev/) ｜[GitHub](https://github.com/refinedev/refine) ｜ [文档](https://refine.dev/docs/)
 
-⭐️ **Star 数**：26.4K
+⭐️ **Star 数**：33.8K
 
 Refine 是一个专为构建内部工具而设计的 React 框架，它提供了丰富的预构建组件和强大的数据处理能力，使得开发团队能够快速创建管理后台、数据仪表板和各种定制化的企业内部系统。
 
@@ -246,7 +246,7 @@ Refine 可在任何可运行 React 的环境中运行。
 
 **相关资源：**[官网](https://www.tooljet.com/) ｜[GitHub](https://github.com/ToolJet/ToolJet) ｜ [文档](https://docs.tooljet.com/docs/)
 
-⭐️ **Star 数**：28.3K
+⭐️ **Star 数**：37.1K
 
 ToolJet 是一款开源的低代码开发平台，专为快速构建和部署内部工具而设计。ToolJet 通过其直观的拖放界面，使非技术用户能够轻松创建复杂的响应式前端应用，大大简化了开发过程和时间。
 
@@ -307,7 +307,7 @@ ToolJet 的一个显著优势是其协作功能，支持多用户同时在线编
 
 **相关资源：**[官网](https://www.appsmith.com/) ｜[GitHub](https://github.com/appsmithorg/appsmith) ｜ [文档](https://docs.appsmith.com/)
 
-⭐️ **Star 数**：32.5K
+⭐️ **Star 数**：38.8K
 
 Appsmith 和 ToolJet 在很多方面都非常相似，它们都是用于构建内部工具和管理面板的开源低代码平台。这两个工具都提供了拖放式的界面、支持页面代码开发、都支持广泛的数据库和 API 集成、均支持云服务和自托管部署选项。
 

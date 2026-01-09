@@ -1,14 +1,14 @@
 {
   "id": 827,
-  "title": "NocoBase v2.0.0-alpha.58",
-  "title_cn": "NocoBase v2.0.0-alpha.58",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.58: Rresolve issue where llm node message content was not displayed",
+  "title_cn": "NocoBase v2.0.0-alpha.58：修复 LLM 节点消息内容未显示的问题",
+  "title_ja": "NocoBase v2.0.0-alpha.58：LLM ノードのメッセージが正しく表示されない不具合を修正",
   "description": "Release Note of v2.0.0-alpha.58",
   "description_cn": "v2.0.0-alpha.58 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.58 リリースノート",
   "slug": "v2.0.0-alpha.58",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2025-12-25T08:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2025-12-25T01:35:54.952Z",
+        "updatedAt": "2025-12-25T01:35:54.952Z",
+        "articles_id": 827,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2025-12-25T01:35:21.212Z",
+    "updatedAt": "2025-12-25T01:35:21.218Z",
+    "id": 2144,
+    "title": "develop (6)",
+    "filename": "develop (6)-di0yar.jpg",
+    "extname": ".jpg",
+    "size": 81393,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(6)-di0yar.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(6)-di0yar.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2025-12-24T07:44:37.498Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2025-12-25T01:35:54.939Z"
 }
