@@ -24,6 +24,12 @@
 
 基于这样的思考，本文将不止于重复这些“耳熟能详”的选择，而是从企业内部运营的实际使用出发，结合不同管理需求和使用方式，介绍 6 个可以在不同场景下替代 Excel 的企业内部管理软件。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 这些产品既包括 SaaS 方案，也包括在相同场景下可选的开源替代方案。我会根据企业实际使用 Excel 的方式，分为几类进行说明。
 
 1. 业务运营类：
@@ -147,7 +153,7 @@ monday work management 以看板为核心数据载体。 同一份数据可以�
 * **官网**：[https://nocodb.com](https://nocodb.com)
 * **GitHub**：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb)
 * **GitHub Stars**：61.1k
-* **文档**：https://nocodb.com/docs/product-docs
+* **文档**：[https://nocodb.com/docs/product-docs]([https://nocodb.com/docs/product-docs](https://nocodb.com/docs/product-docs))
 
 **概览**
 
@@ -323,3 +329,15 @@ Excel 是企业内部非常重要的工具，在台账、统计和日常记录�
 在合适的场景中引入企业级管理软件，与 Excel 形成更清晰的分工，企业的协作和管理往往会更加顺畅。
 
 如果你觉得这篇内容对你有所帮助，欢迎分享给感兴趣朋友。
+
+
+相关阅读：
+
+* [开发者收藏！10 个减少重复 CRUD 的开源工具](https://www.nocobase.com/cn/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub Star 数量前 12 的 AI 工作流项目](https://www.nocobase.com/cn/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [最适合外包交付的 6 个开源无代码与低代码](https://www.nocobase.com/cn/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub 上星星数量前 10 的 AI CRM 开源项目 ](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [如何快速搭建一个替换 Excel 的系统？（完整指南）](https://www.nocobase.com/cn/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [GitHub Star 数量前 5 的开源 AI 内部工具](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
+* [8 个最佳 Google Sheets 替代方案（附成本与能力分析）](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+* [6个适合做 PoC 的开源无代码/低代码工具推荐](https://www.nocobase.com/cn/blog/6-open-source-no-low-code-tools-for-building-pocs)
