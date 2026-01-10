@@ -8,7 +8,7 @@
   "description_ja": "業務の複雑さと利用形態に基づき、企業向け Excel 代替ツール6選を解説",
   "slug": "6-enterprise-softwares-to-replace-excel-for-internal-operations",
   "publishedAt": "2026-01-10T14:15:09.512Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -582,5 +582,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-10T16:31:03.588Z"
+  "updatedAt": "2026-01-10T17:20:09.552Z"
 }
