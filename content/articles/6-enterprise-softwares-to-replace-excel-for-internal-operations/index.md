@@ -16,7 +16,7 @@ in collaborative, multi user environments, spreadsheets are difficult to keep in
 
 Many suggestions appear in the community, but the tools mentioned most often are familiar, established products such as Google Sheets and Smartsheet.
 
-💡 Read more:[ 8 best Google Sheets alternatives with cost and capability analysis](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+💡 Read more: [The 8 Best Google Sheets Alternatives (Specs & Pricing)](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
 
 But are these tools truly suitable for every company, or for every stage of a company’s growth?
 
@@ -53,6 +53,8 @@ It is designed for organizations that require internal operations management or 
 
 From a positioning standpoint, NocoBase is centered on data models and focuses on building internal business systems rather than replicating spreadsheet based collaboration, which makes it better suited to managing complex business structures.
 
+![nocobase1.png](https://static-docs.nocobase.com/nocobase1-0hxryu.png)
+
 In practice, NocoBase enables organizations to consolidate business data, status rules, and collaboration relationships that were once scattered across Excel files into structured data models, access controls, and process logic. The result is a system that is clearer, easier to govern, and more scalable, while reducing reliance on manual spreadsheet maintenance.
 
 **Core capabilities**
@@ -61,13 +63,19 @@ In practice, NocoBase enables organizations to consolidate business data, status
 
 NocoBase follows a data first design approach, defining business data structures before building interfaces and interaction logic. Because data and presentation are decoupled, the same dataset can be displayed as tables, forms, kanban boards, or charts. This makes it more effective for representing complex, real world business relationships than forcing all information into a single spreadsheet.
 
+![nocobase2.png](https://static-docs.nocobase.com/nocobase2-fs5rju.png)
+
 **Multi role collaboration with fine grained access control**
 
 The platform provides a comprehensive permission system covering roles, fields, data rows, and actions. Through configuration, organizations can clearly define what each role can view and operate, addressing Excel’s limitations in collaborative environments where permissions are coarse and accountability is unclear.
 
+![nocobase3.png](https://static-docs.nocobase.com/nocobase3-8az6mc.png)
+
 **AI employees**
 
 NocoBase embeds AI capabilities into business systems in the form of “employees”. These AI employees can understand the current context, including pages, data rows, and table structures, and perform practical actions such as querying data, running analyses, and filling out forms. They support data analysis, content assistance, and process automation, rather than functioning as simple conversational tools.
+
+![nocobase4.png](https://static-docs.nocobase.com/nocobase4-x06yij.png)
 
 **Typical use cases**
 
@@ -127,6 +135,8 @@ Their focus is on online collaboration, structured tables, and flexible views, r
 
 NocoDB is an open source collaborative spreadsheet tool, often positioned as an open source alternative to Airtable. It turns existing relational databases such as MySQL and PostgreSQL directly into collaborative online spreadsheets, enabling non technical users to view and maintain data in a familiar, Excel like interface.
 
+![nocodb1.png](https://static-docs.nocobase.com/nocodb1-z5hu2c.png)
+
 NocoDB is typically used to replace Excel in scenarios such as data records, list management, and shared spreadsheets. Data that was previously scattered across multiple Excel files can be centralized in a database and collaboratively maintained through a unified spreadsheet interface.
 
 **Core capabilities**
@@ -142,6 +152,8 @@ The platform supports multiple users editing the same data simultaneously and pr
 **AI assisted field and view recommendations**
 
 When designing data structures, NocoAI offers recommendations for fields, relationships, and views based on the current context. This reduces the cognitive load associated with database design and improves setup efficiency. Even users without database experience can quickly configure basic tables and views.
+
+![nocodb2.png](https://static-docs.nocobase.com/nocodb2-nsnsiw.png)
 
 **Typical use cases**
 
@@ -160,6 +172,8 @@ Collaborative data tables, operational data records, content or resource list ma
 
 Airtable is a SaaS data management platform built around collaborative spreadsheets. By combining tables, multiple views, and lightweight automation, it helps teams manage structured data more efficiently. Its core focus is enabling data to be collaboratively edited and visualized in spreadsheet form.
 
+![Airtable1.png](https://static-docs.nocobase.com/Airtable1-036rzf.png)
+
 Airtable is commonly used to replace Excel in scenarios such as shared data tables, operational records, and cross team information synchronization. Data that once depended on shared Excel files and manual updates can be managed through online tables with real time collaboration.
 
 **Core capabilities**
@@ -175,6 +189,8 @@ The platform offers a rich set of field types along with basic formula and valid
 **Workflow focused AI assistance**
 
 Rather than acting purely as a content generator, Airtable’s AI is designed to support existing workflows. It can be embedded into automations to trigger summaries, content completion, or data routing, allowing teams to introduce a degree of intelligence while maintaining familiar spreadsheet based collaboration.
+
+![Airtable2.png](https://static-docs.nocobase.com/Airtable2-aw1grq.png)
 
 **Typical use cases**
 
@@ -203,6 +219,8 @@ Typical use cases include data entry, status updates, approval actions, and simp
 
 Appsmith is an open source low code platform for building internal tools, designed to rapidly create management interfaces and operational back offices for internal use. By combining visual components with data source integrations, teams can quickly build web interfaces for data entry, status updates, and administrative actions.
 
+![Appsmith1.png](https://static-docs.nocobase.com/Appsmith1-sz0ee1.png)
+
 In internal operations, Appsmith often replaces Excel as the interface for interacting with data. Tasks such as data entry, status updates, and simple approval steps that were previously handled in spreadsheets can be moved into clearer, more structured management interfaces with well defined access controls.
 
 **Core capabilities**
@@ -216,6 +234,8 @@ Through drag and drop and configuration, users can quickly assemble internal man
 **Multiple data source integration**
 
 The platform supports direct connections to relational databases, REST APIs, and third party services. Actions taken in the interface can trigger data queries and updates, positioning Appsmith as a practical intermediary between spreadsheets and backend systems.
+
+![Appsmith2.png](https://static-docs.nocobase.com/Appsmith2-ss8bb1.png)
 
 **AI enabled capabilities**
 
@@ -242,6 +262,8 @@ Retool is a low code internal tool platform built around developer productivity,
 
 Delivered primarily as a cloud based SaaS product, Retool emphasizes deep integration with existing databases and APIs, making it well suited for internal use cases that involve frequent data operations.
 
+![Retool1.png](https://static-docs.nocobase.com/Retool1-xjfakg.png)
+
 Use cases where Excel is applied for data manipulation, status tracking, and internal management interfaces can all be replaced by Retool. Manual update and operation workflows previously handled in spreadsheets can be migrated to more secure and controllable web based management interfaces.
 
 **Core capabilities**
@@ -249,6 +271,8 @@ Use cases where Excel is applied for data manipulation, status tracking, and int
 **Component based interface building**
 
 Retool provides a rich library of prebuilt components, including tables, forms, charts, and control elements. These components can be rapidly combined to create internal tools, significantly reducing front end development effort.
+
+![Retool2.png](https://static-docs.nocobase.com/Retool2-x5cr9o.png)
 
 **Robust data source connectivity**
 
