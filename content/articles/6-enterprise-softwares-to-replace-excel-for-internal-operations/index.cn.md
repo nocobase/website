@@ -10,11 +10,11 @@
 
 > 有没有更合适的工具可以替代 Excel？
 
-![reddit1-gghgoj.png](https://static-docs.nocobase.com/reddit1-gghgoj.png)
+![reddit1.png](https://static-docs.nocobase.com/reddit1-gghgoj.png)
 
 这些讨论都集中在同一类问题上： 在多人协作场景下，表格难以同步，数据修改缺乏清晰记录，权限和流程能力不足，Excel 很难继续承载更复杂的业务管理需求。
 
-![reddit2-lsdznz.png](https://static-docs.nocobase.com/reddit2-lsdznz.png)
+![reddit2.png](https://static-docs.nocobase.com/reddit2-lsdznz.png)
 
 社区中也有不少建议，但被反复提及的，往往是 Google Sheets、Smartsheet 等大家已经非常熟悉的成熟产品。
 
@@ -59,7 +59,7 @@ Retool（SaaS）
 * **官网**：[https://www.nocobase.com](https://www.nocobase.com)
 * **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Stars**：21.1k
-* **文档**：https://v2.docs.nocobase.com/
+* **文档**：[https://v2.docs.nocobase.com/]([https://v2.docs.nocobase.com/](https://v2.docs.nocobase.com/))
 
 **概览**
 
@@ -67,23 +67,29 @@ NocoBase 是一款开源的 AI 无代码 / 低代码业务系统构建平台，�
 
 从产品定位来看，NocoBase 以数据模型为核心，面向内部业务系统的构建，而不是单纯协作表格的使用体验，更适合用来承载和管理复杂的业务结构。
 
-![nocobase1-0hxryu.png](https://static-docs.nocobase.com/nocobase1-0hxryu.png)
+![nocobase1.png](https://static-docs.nocobase.com/nocobase1-0hxryu.png)
 
 在企业内部运营中，运用 NocoBase 可以将原本分散在 Excel 表格中的业务数据、状态规则和协作关系，整理为清晰的数据模型、权限配置和流程逻辑，从而形成结构明确、可治理、也更易扩展的系统，减少对人工维护表格的依赖。
 
 **核心能力**
 
-**数据模型驱动的数据管理能力** NocoBase 采用数据模型优先的设计方式，先定义业务数据结构，再构建界面和操作逻辑。数据结构与界面解耦，同一份数据可以以表格、表单、看板或图表等多种形式呈现，更适合表达真实且复杂的业务关系，而不是将所有信息堆叠在单一表格中。
+**数据模型驱动的数据管理能力**
 
-![nocobase2-fs5rju.png](https://static-docs.nocobase.com/nocobase2-fs5rju.png)
+NocoBase 采用数据模型优先的设计方式，先定义业务数据结构，再构建界面和操作逻辑。数据结构与界面解耦，同一份数据可以以表格、表单、看板或图表等多种形式呈现，更适合表达真实且复杂的业务关系，而不是将所有信息堆叠在单一表格中。
 
-**多角色协作与细粒度权限控制** 系统内置完整的权限体系，覆盖角色、字段、数据行和操作层级。通过权限配置，企业可以清晰界定不同角色的可见范围和可执行操作，解决 Excel 在多人协作场景下权限粗糙、责任边界不清的问题。
+![nocobase2.png](https://static-docs.nocobase.com/nocobase2-fs5rju.png)
 
-![nocobase3-8az6mc.png](https://static-docs.nocobase.com/nocobase3-8az6mc.png)
+**多角色协作与细粒度权限控制**
 
-**AI 员工** NocoBase 将 AI 能力以“员工”的形式嵌入到业务系统中。AI 员工可以理解当前页面、数据行和表结构，并执行查询、分析、填写表单等实际业务操作，用于数据分析、内容辅助或流程自动化，而不仅仅是提供对话式建议。
+系统内置完整的权限体系，覆盖角色、字段、数据行和操作层级。通过权限配置，企业可以清晰界定不同角色的可见范围和可执行操作，解决 Excel 在多人协作场景下权限粗糙、责任边界不清的问题。
 
-![nocobase4-x06yij.png](https://static-docs.nocobase.com/nocobase4-x06yij.png)
+![nocobase3.png](https://static-docs.nocobase.com/nocobase3-8az6mc.png)
+
+**AI 员工**
+
+NocoBase 将 AI 能力以“员工”的形式嵌入到业务系统中。AI 员工可以理解当前页面、数据行和表结构，并执行查询、分析、填写表单等实际业务操作，用于数据分析、内容辅助或流程自动化，而不仅仅是提供对话式建议。
+
+![nocobase4.png](https://static-docs.nocobase.com/nocobase4-x06yij.png)
 
 **典型使用场景**
 
@@ -96,13 +102,13 @@ CRM 与客户线索管理、项目与任务管理、内部审批流与表单系�
 * **部署方式**：SaaS
 * **目标使用对象**：业务团队、职能部门、跨团队协作场景
 * **官网**：[https://monday.com/work-management](https://monday.com/work-management)
-* **文档**：https://support.monday.com/hc/en-us
+* **文档**：[https://support.monday.com/hc/en-us]([https://support.monday.com/hc/en-us](https://support.monday.com/hc/en-us))
 
 **概览**
 
 monday work management 是一款以协作和流程可视化为核心的 SaaS 工作管理平台，主要用于组织团队工作、管理业务进度和协调跨部门协作。产品通过云端方式交付，用户无需自行部署或维护基础设施。
 
-![monday1-pvrdnn.png](https://static-docs.nocobase.com/monday1-pvrdnn.png)
+![monday1.png](https://static-docs.nocobase.com/monday1-pvrdnn.png)
 
 在企业内部运营中，monday work management 通常用于替代 Excel 在任务跟踪、进度管理和协作台账等场景下的使用。Excel 里需要手动更新的状态字段、负责人和截止时间，会被转移到实时同步的协作看板中，减少沟通成本和重复维护。
 
@@ -112,7 +118,7 @@ monday work management 是一款以协作和流程可视化为核心的 SaaS 工
 
 monday work management 以看板为核心数据载体。 同一份数据可以通过表格、看板、时间轴、日历等视图展示，适合用于管理任务状态、项目进度和业务流程节点，比传统 Excel 更直观。
 
-![monday2-zqhdzn.png](https://static-docs.nocobase.com/monday2-zqhdzn.png)
+![monday2.png](https://static-docs.nocobase.com/monday2-zqhdzn.png)
 
 **多人协作与实时状态同步**
 
@@ -147,7 +153,7 @@ monday work management 以看板为核心数据载体。 同一份数据可以�
 
 NocoDB 是一款开源的协作表格工具，常被视为 Airtable 的开源替代方案。它将现有的关系型数据库（如 MySQL、PostgreSQL）直接转换为可协作的在线表格界面，非技术用户也可以通过类似 Excel 的方式查看和维护数据。
 
-![nocodb1-z5hu2c.png](https://static-docs.nocobase.com/nocodb1-z5hu2c.png)
+![nocodb1.png](https://static-docs.nocobase.com/nocodb1-z5hu2c.png)
 
 NocoDB 主要用于支持 Excel 在数据台账、清单管理和多人协作表格等场景下的使用。分散在多个 Excel 文件中的数据，可以集中存储在数据库中，通过统一的表格界面进行协作维护。
 
@@ -163,7 +169,7 @@ NocoDB 直接基于已有数据库工作。数据库表会被映射为可编辑�
 
 **AI 驱动的字段与视图建议** 在编辑数据结构时，NocoAI 会根据现有上下文提供字段、关联关系和视图的推荐建议，这减少了用户对数据库结构细节的认知负担，同时提高了基础构建效率。即便是缺乏数据库经验的业务人员，也可以迅速完成基础表和视图的配置。
 
-![nocodb2-nsnsiw.png](https://static-docs.nocobase.com/nocodb2-nsnsiw.png)
+![nocodb2.png](https://static-docs.nocobase.com/nocodb2-nsnsiw.png)
 
 **典型使用场景**
 
@@ -182,7 +188,7 @@ NocoDB 直接基于已有数据库工作。数据库表会被映射为可编辑�
 
 Airtable 是一款以协作表格为核心的 SaaS 数据管理平台，通过将表格、视图和轻量自动化结合，帮助团队更高效地管理结构化数据。从产品定位来看，Airtable 关注的是如何让数据以表格形态被更好地协作和可视化。
 
-![Airtable1-036rzf.png](https://static-docs.nocobase.com/Airtable1-036rzf.png)
+![Airtable1.png](https://static-docs.nocobase.com/Airtable1-036rzf.png)
 
 Airtable 通常用于替代 Excel 在协作数据表、运营台账和跨团队信息同步等场景下的使用。Excel 文件共享和手动维护的数据，可以通过在线表格实现实时协作和统一管理。
 
@@ -200,7 +206,7 @@ Airtable 在表格基础上提供了看板、日历、时间轴等多种视图�
 
 与单纯的内容生成不同，Airtable 的 AI 更侧重于服务既有工作流。AI 可以嵌入自动化流程中，用于触发摘要、内容补全或数据路由等操作，帮助团队在保持协作表格使用习惯的同时，引入一定程度的智能化支持。
 
-![Airtable2-aw1grq.png](https://static-docs.nocobase.com/Airtable2-aw1grq.png)
+![Airtable2.png](https://static-docs.nocobase.com/Airtable2-aw1grq.png)
 
 **典型使用场景**
 
@@ -229,7 +235,7 @@ Airtable 在表格基础上提供了看板、日历、时间轴等多种视图�
 
 Appsmith 是一款开源的低代码内部工具开发平台，主要用于快速构建面向内部使用的管理界面和操作后台。它通过可视化组件和数据源连接能力，让团队能够在较短时间内搭建用于数据录入、状态修改和管理操作的 Web 界面。
 
-![Appsmith1-sz0ee1.png](https://static-docs.nocobase.com/Appsmith1-sz0ee1.png)!)
+![Appsmith1.png](https://static-docs.nocobase.com/Appsmith1-sz0ee1.png)!)
 
 在企业内部运营中，Appsmith 通常用于替代 Excel 在数据操作和管理界面方面的角色。原本通过 Excel 完成的数据录入、状态更新或简单审批操作，可以被迁移到结构更清晰、权限更明确的管理界面中完成。
 
@@ -245,7 +251,7 @@ Appsmith 提供大量现成的 UI 组件，如表格、表单、按钮和图表�
 
 平台支持直接连接关系型数据库、REST API 以及第三方服务。界面上的操作可以直接触发数据查询和更新，使 Appsmith 成为 Excel 与后端系统之间的中间层。
 
-![Appsmith2-ss8bb1.png](https://static-docs.nocobase.com/Appsmith2-ss8bb1.png)
+![Appsmith2.png](https://static-docs.nocobase.com/Appsmith2-ss8bb1.png)
 
 **智能驱动能力** Appsmith 平台内置了与主流大型语言模型，推出了 Appsmith AI 功能，开发人员可以在应用中快速添加文本生成、分析和分类等 AI 动作。这种能力让内部工具不仅能展示数据，还能基于业务上下文自动生成内容、提取洞察和辅助分析，减少重复性工作，提高效率。
 
@@ -268,7 +274,7 @@ Appsmith 提供大量现成的 UI 组件，如表格、表单、按钮和图表�
 
 Retool 是一款以开发者效率为核心的低代码内部工具平台，用于快速构建企业内部的管理界面和操作后台。 产品以云端 SaaS 形式为主，强调与现有数据库和 API 的深度连接能力，适合需要频繁操作业务数据的内部场景。
 
-![Retool1-xjfakg.png](https://static-docs.nocobase.com/Retool1-xjfakg.png)
+![Retool1.png](https://static-docs.nocobase.com/Retool1-xjfakg.png)
 
 Excel 在数据操作、状态维护和内部管理界面方面的使用，Retool 均可以替代。原本通过 Excel 手动维护的数据修改和操作流程，可以被迁移到更安全、可控的 Web 管理界面中完成。
 
@@ -278,7 +284,7 @@ Excel 在数据操作、状态维护和内部管理界面方面的使用，Retoo
 
 Retool 提供丰富的现成组件，包括表格、表单、图表和控制组件。这些组件可以快速组合成内部工具界面，减少前端开发工作量。
 
-![Retool2-x5cr9o.png](https://static-docs.nocobase.com/Retool2-x5cr9o.png)
+![Retool2.png](https://static-docs.nocobase.com/Retool2-x5cr9o.png)
 
 **强大的数据源连接能力**
 
