@@ -104,6 +104,8 @@ CRM and lead management, project and task management, internal approval workflow
 
 monday work management is a SaaS work management platform focused on collaboration and process visualization. It is primarily used to organize team work, track progress, and coordinate cross department efforts, and is delivered entirely through the cloud without the need for self managed infrastructure.
 
+![monday1.png](https://static-docs.nocobase.com/monday1-pvrdnn.png)
+
 In internal operations, monday work management is often used to replace Excel for task tracking, progress management, and collaborative records. Status updates, owners, and deadlines that require manual maintenance in Excel are handled through real time synchronized boards, reducing communication overhead and duplicated effort.
 
 **Core capabilities**
@@ -119,6 +121,8 @@ The platform supports multiple users working simultaneously, with all changes sy
 **Intelligent assistance and content generation**
 
 Through its AI capabilities, monday work management provides contextual assistance such as suggesting resource allocation, generating summaries, organizing meeting notes, and creating automation templates. These features reduce manual information handling and allow teams to focus more on execution and strategic work.
+
+![monday2.png](https://static-docs.nocobase.com/monday2-zqhdzn.png)
 
 **Typical use cases**
 
@@ -323,7 +327,6 @@ Excel remains a critical tool in internal environments and continues to be effic
 By introducing enterprise management software in the right scenarios and establishing a clearer division of responsibilities alongside Excel, organizations can often achieve smoother collaboration and more effective management.
 
 If you found this content useful, feel free to share it with others who may be interested.
-
 
 **Related reading:**
 
