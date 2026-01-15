@@ -11,7 +11,7 @@
 
 - **[client]**
 
-  - input number component does not display value ([#8410](https://github.com/nocobase/nocobase/pull/8410)) by @chenos
+  - 数字组件不显示值 ([#8410](https://github.com/nocobase/nocobase/pull/8410)) by @chenos
   - 修复新建表单中级联组件成功提交数据后，级联组件数据未清空 ([#8403](https://github.com/nocobase/nocobase/pull/8403)) by @katherinehhh
   - 修复提交按钮同时设置二次确认和跳过必填校验时跳过必填校验不生效的问题 ([#8400](https://github.com/nocobase/nocobase/pull/8400)) by @katherinehhh
   - 修复关系关联文件表中对一关系字段选择文件弹窗右下角出现提交按钮问题 ([#8398](https://github.com/nocobase/nocobase/pull/8398)) by @katherinehhh
