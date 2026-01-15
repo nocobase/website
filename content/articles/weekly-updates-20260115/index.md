@@ -90,7 +90,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 - **[client]**
 
-  - 数字组件不显示值 ([#8410](https://github.com/nocobase/nocobase/pull/8410)) by @chenos
+  - input number component does not display value ([#8410](https://github.com/nocobase/nocobase/pull/8410)) by @chenos
   - fix cascading select data not cleared after successful submission in create form ([#8403](https://github.com/nocobase/nocobase/pull/8403)) by @katherinehhh
   - fix issue with submit button where skip required validation does not work when confirmation is enabled ([#8400](https://github.com/nocobase/nocobase/pull/8400)) by @katherinehhh
   - resolve issue with submit button appearing in the file selection popup of one-to-one association field ([#8398](https://github.com/nocobase/nocobase/pull/8398)) by @katherinehhh
