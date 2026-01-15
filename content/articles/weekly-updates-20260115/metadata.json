@@ -4,7 +4,7 @@
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
   "description": "This week's update includes: Support Gemini-3 model with function-calling thought signature, and more.",
-  "description_cn": "本周更新包括：支持 Gemini-3 模型，并包含函数调用的思维签名能力",
+  "description_cn": "本周更新包括：支持 Gemini-3 模型，并包含函数调用的思维签名能力等。",
   "description_ja": "今週の更新内容は以下の通りです：Gemini-3 モデルに対応し、関数呼び出しを含む思考プロセスのシグネチャ機能を利用可能に",
   "slug": "weekly-updates-20260115",
   "publishedAt": "2026-01-15T02:07:47.361Z",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-15T03:44:22.554Z"
+  "updatedAt": "2026-01-15T03:52:40.117Z"
 }
