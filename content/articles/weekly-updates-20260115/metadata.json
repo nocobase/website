@@ -3,12 +3,12 @@
   "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
   "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
   "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes: ",
-  "description_cn": "本周更新包括：",
-  "description_ja": "今週の更新内容は以下の通りです：",
+  "description": "This week's update includes: Support Gemini-3 model with function-calling thought signature, and more.",
+  "description_cn": "本周更新包括：支持 Gemini-3 模型，并包含函数调用的思维签名能力",
+  "description_ja": "今週の更新内容は以下の通りです：Gemini-3 モデルに対応し、関数呼び出しを含む思考プロセスのシグネチャ機能を利用可能に",
   "slug": "weekly-updates-20260115",
   "publishedAt": "2026-01-15T02:07:47.361Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -92,12 +92,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-01-15T03:20:38.719Z",
+    "updatedAt": "2026-01-15T03:20:38.730Z",
+    "id": 2174,
+    "title": "每周汇总",
+    "filename": "每周汇总-cqfkbk.jpg",
+    "extname": ".jpg",
+    "size": 101307,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-cqfkbk.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-cqfkbk.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-15T02:11:31.805Z"
+  "updatedAt": "2026-01-15T03:21:45.751Z"
 }
