@@ -1,14 +1,14 @@
 {
   "id": 861,
-  "title": "NocoBase v2.0.0-alpha.66",
-  "title_cn": "NocoBase v2.0.0-alpha.66",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.66: Bug Fixes",
+  "title_cn": "NocoBase v2.0.0-alpha.66：缺陷修复",
+  "title_ja": "NocoBase v2.0.0-alpha.66：不具合修正",
   "description": "Release Note of v2.0.0-alpha.66",
   "description_cn": "v2.0.0-alpha.66 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.66 リリースノート",
   "slug": "v2.0.0-alpha.66",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-01-16T07:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-01-17T17:33:27.004Z",
+        "updatedAt": "2026-01-17T17:33:27.004Z",
+        "articles_id": 861,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-01-17T17:32:47.543Z",
+    "updatedAt": "2026-01-17T17:32:47.550Z",
+    "id": 2179,
+    "title": "develop",
+    "filename": "develop-3rgrbf.jpg",
+    "extname": ".jpg",
+    "size": 81554,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-3rgrbf.jpg",
+    "preview": "https://static-docs.nocobase.com/develop-3rgrbf.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-01-16T08:52:56.707Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-01-17T17:35:10.509Z"
 }
