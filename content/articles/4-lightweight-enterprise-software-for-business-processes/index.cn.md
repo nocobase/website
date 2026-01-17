@@ -30,9 +30,9 @@ NocoBase 是一款开源、AI 驱动的企业系统构建工具，面向企业�
 
 ![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-2s7i7n.png)
 
-官网：[https://www.nocobase.com](https://www.nocobase.com?utm_source=chatgpt.com)
+官网：[https://www.nocobase.com](https://www.nocobase.com)
 
-GitHub 链接：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHub Star 数： 21.1k
 
