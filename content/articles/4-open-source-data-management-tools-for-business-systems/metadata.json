@@ -8,7 +8,7 @@
   "description_ja": "本稿では、業務システムにおけるデータ管理に焦点を当て、NocoBase、Directus、Budibase、Appsmith を対象に、データモデリング、権限、ワークフロー、拡張性の観点からそれぞれの特性と適用シーンを比較・整理する。",
   "slug": "4-open-source-data-management-tools-for-business-systems",
   "publishedAt": "2026-01-19T12:44:16.088Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -660,5 +660,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-19T12:56:22.929Z"
+  "updatedAt": "2026-01-19T13:27:11.926Z"
 }
