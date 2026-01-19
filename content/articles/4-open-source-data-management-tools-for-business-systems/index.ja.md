@@ -4,7 +4,9 @@
 
 開発者コミュニティでは、多くのエンジニアが次のような感想を抱いています：広く推奨されているデータ管理ツールを試してみたものの、結局は技術スタックに積み重なるだけで、期待される改善をもたらすことはなかった、と。
 
-中には、「本当に自分のニーズに合ったソリューションが欲しいなら、既存のツールの上で独自に修正したり、トレードオフを行ったり、不完全さを常態として受け入れるしかない」と直言する人さえいます。
+中には、「本当に自分のニーズに合ったソリューションが欲しいなら、既存のツールの上で独自に修正したり、トレードオフを行ったり、不完全さを常態として受け入れるしかない」と[直言](https://www.reddit.com/r/dataengineering/comments/1lsgsxp/lets_open_this_up_which_data_management_tools/)する人さえいます。
+
+![reddit.PNG](https://static-docs.nocobase.com/reddit-amksss.PNG)
 
 本日は、ビジネスシステムにおけるデータ管理の課題に焦点を当てます。データ管理ツールをお探しの方にとって、この記事が役立つかもしれません。
 
@@ -104,9 +106,13 @@
 
 NocoBaseは、データモデルを中核とするオープンソースのAIビジネスシステム構築プラットフォーム（ノーコード/ローコード開発プラットフォームでもあります）。設定可能なデータモデリング、権限、プロセス、プラグインメカニズムを通じて、チームが複雑なビジネスシステムを構築・反復的に改善できるようにします—単なる汎用的なデータバックエンドや管理画面を提供するだけではありません。
 
+![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-wcnur2.png)
+
 ### 1. データモデリング
 
 NocoBaseの中核哲学は、ビジネスシステムをデータモデル中心にすることです。既存のデータソース（MySQL、PostgreSQL、MariaDBなどのリレーショナルデータベースをサポート）に接続するか、独自にデータコレクションやフィールドを再定義できます。その上にインターフェース、権限、プロセスを重ね合わせます。
+
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-l5y00k.png)
 
 ビジネスの変化によりフィールドや構造の調整が必要になった場合、システムの他のレイヤーがより安定的に追随でき、毎回UIやスクリプトレイヤーでパッチを当てる必要がなくなります。
 
@@ -116,11 +122,15 @@ NocoBaseはデータ構造自体を保守可能・反復可能にし、長期的
 
 ビジネスシステムを扱う場合、データ関係はフィールドよりも重要になることが多いです。顧客、注文、契約、承認、タスクなど、これらのオブジェクトは本質的に関連しており、関係はビジネスの発展に伴って複雑になります。
 
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-yjoj95.png)
+
 NocoBaseのアプローチは、関係モデリングをシステムの第一級機能にすることです。ビジネスエンティティを中心に明確な関係構造を構築し、その後の権限、プロセス、ページインタラクションでこれらの関係を継続的に再利用できます—関係ロジックをあちこちに散らばせるのではなく。
 
 ### 3. 権限
 
 権限はNocoBaseの強みの一つです。システムレベルから行レベル、フィールドレベルまでの細粒度制御を重視し、一人のユーザーが複数のロールを持つなどの一般的なエンタープライズシナリオもサポートしています。
+
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-jvo499.png)
 
 ビジネスシステムデータ管理ツールにとって、権限は追加オプションではなく、ビジネスルールの一部です。制御が必要なのは単に「テーブルを見れるか」ではなく、以下のことです：
 
@@ -135,11 +145,15 @@ NocoBaseのアプローチは、関係モデリングをシステムの第一級
 
 データ変更に承認、通知、自動化処理が必要な場合、システムはプロセス駆動の段階に入ります。NocoBaseのワークフロー関連機能はプラグイン形式で提供され、承認、メール通知、カスタムアクションイベントなどの一般的なノードをカバーしています。これにより、データ変更を「手動でのフィールド編集」から「ルールベースのビジネスプロセス」へとアップグレードします。
 
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-5qxzq5.png)
+
 こうした機能の意義は、データ管理が単なるCRUDではなく、データ変更をめぐるコラボレーションと制御になることです。例えば、承認を開始した後にのみ重要フィールドを変更できる、あるいは特定のアクションがトリガされた後に一連のデータ処理を実行するなど。
 
 ### 5. 拡張性
 
 NocoBaseの拡張方法はプラグインシステムを中心としています。機能をモジュールに分割して組み合わせることができます—ワークフローノード、APIドキュメント、モバイル設定、UIブロックなどがすべてプラグインとして登場します。
+
+![NocoBase6.png](https://static-docs.nocobase.com/NocoBase6-mwvw1o.png)
 
 ビジネスシステム向けツールにとって、拡張性とは通常、「コードを書けるか」ではなく、システムが以下のことができるかどうかを指します：
 
@@ -159,9 +173,13 @@ NocoBaseの拡張方法はプラグインシステムを中心としています
 
 Directusの中核的ポジショニングは、オープンソースのヘッドレスCMSとオープンデータプラットフォームです。任意のSQLデータベースに対して自動的にリアルタイムAPIと可視化管理インターフェースを生成することで、開発者とビジネスユーザーの両方が構造化データを効率的に管理・アクセスできるようにします。
 
+![Directus1.png](https://static-docs.nocobase.com/Directus1-91vg1b.png)
+
 ### 1. データモデリング
 
 Directusの出発点は、データベースをシステムの中核にすることです。既存のデータベースの上に直接構築され、テーブル構造、フィールド、制約、メタデータを可視化方式で管理します。
+
+![Directus2.png](https://static-docs.nocobase.com/Directus2-5gye1c.png)
 
 このアプローチの利点は以下の通りです：
 
@@ -180,11 +198,15 @@ Directusの関係の扱いもデータベースレイヤーに密着していま
 
 利点は、関係定義が非常に明確で「歪み」にくいことです。
 
+![Directus3.png](https://static-docs.nocobase.com/Directus3-t4bvim.png)
+
 しかし同時に、ビジネス関係が頻繁に変化する場合、システムの調整コストがスキーマレイヤーに集中することを意味し、より高レベルのビジネス抽象化ではありません。
 
 ### 3. 権限
 
 Directusの権限はロール、コレクション、フィールドレベルのアクセス制御をサポートし、データモデルと高度に結びついています。
+
+![Directus4.png](https://static-docs.nocobase.com/Directus4-uwcugi.png)
 
 実際の使用では、Directusの権限システムは以下のようなものです：
 
@@ -200,6 +222,8 @@ Directusの権限はロール、コレクション、フィールドレベルの
 * 主にイベント、フック、Webhookなどのメカニズムを通じてデータ変更に応答する
 * 完全なビジネスプロセスオーケストレーションよりも「データ変更が行動をトリガーする」傾向がある
 
+![Directus5.png](https://static-docs.nocobase.com/Directus5-r2outg.png)
+
 したがって、複雑な承認やクロスロールコラボレーションプロセスを担う中核システムというよりも、システムバックエンドのデータ・APIレイヤーとして適しています。
 
 ### 5. 拡張性
@@ -208,6 +232,8 @@ Directusの拡張哲学は主にバックエンドのプログラマビリティ
 
 * カスタム拡張、フック、APIを通じてロジックを拡張できる
 * フロントエンドや他のシステムからの分離度が高い
+
+![Directus6.png](https://static-docs.nocobase.com/Directus6-9bv79r.png)
 
 この拡張方法は開発者にとって非常に友好的ですが、システム機能の成長が構成やプラグインの組み合わせではなく、コードレベルの投資に依存することも意味します。
 
@@ -221,6 +247,8 @@ Directusの拡張哲学は主にバックエンドのプログラマビリティ
 
 Budibaseは、オープンソースの内部ビジネスツール構築プラットフォームで、ローコード方式を通じてCRUD型ビジネスアプリケーションを迅速に構築することを重視しています。デリバリー効率が優先され、システム複雑性が比較的制御可能なビジネスシナリオに適しています。
 
+![Budibase1.png](https://static-docs.nocobase.com/Budibase1-5z9j69.png)
+
 ### 1. データモデリング
 
 Budibaseのデータモデリングは、ビジネスモデルではなくアプリケーションに必要なデータ構造を中心としています。
@@ -231,9 +259,13 @@ Budibaseのデータモデリングは、ビジネスモデルではなくアプ
 
 データ管理の観点からは、特定の内部アプリケーションのためにデータ構造を準備するようなものです。
 
+![Budibase2.png](https://static-docs.nocobase.com/Budibase2-8vsw3k.png)
+
 ### 2. 関係
 
 Budibaseは基本的なデータ関係をサポートしていますが、関係機能は主にページ表示とシンプルなビジネスロジックを満たすためのものです。
+
+![Budibase3.png](https://static-docs.nocobase.com/Budibase3-g5kniu.png)
 
 * 1対多などの一般的な関係に適している
 * 複雑、多階層、クロスモジュール関係のサポートは比較的限定的
@@ -250,14 +282,20 @@ Budibaseはロールとユーザーレベルの権限制御を提供し、内部
 
 全体として、権限モデルはアプリケーションレベルの制御に傾向しており、システムレベル、データレベルの細粒度ガバナンスではありません。
 
+![Budibase4.png](https://static-docs.nocobase.com/Budibase44-ehn0y8.png)
+
 権限ロジック自体がビジネスの中核であるシステム（マルチロール、マルチデータ範囲のシナリオなど）の場合、通常、追加の設計が必要か、複雑な要件を回避する必要があります。
 
 ### 4. プロセス
 
 プロセスレベルでは、Budibaseは軽量な自動化機能を提供しています：
 
+![Budibase5.png](https://static-docs.nocobase.com/Budibase5-9vsein.png)
+
 * イベントによってトリガーされる自動操作
 * シンプルなロジック判定とアクション実行
+
+![Budibase6.png](https://static-docs.nocobase.com/Budibase6-8nit84.png)
 
 こうした機能は一般的な内部プロセス自動化を処理するのに非常に適していますが、複雑な承認フローやクロスロールコラボレーションが主な目标ではありません。
 
@@ -270,6 +308,8 @@ Budibaseの拡張機能は主に以下に反映されています：
 
 既存のアプリケーションの上に機能を素早く補完することを重視しています。
 
+![Budibase7.png](https://static-docs.nocobase.com/Budibase7-ixv454.png)
+
 ## Appsmith
 
 **Webサイト：** https://www.appsmith.com/
@@ -280,6 +320,8 @@ Budibaseの拡張機能は主に以下に反映されています：
 
 Appsmithは開発者向けのオープンソースローコードツールで、コードとコンポーネントの組み合わせを通じて、管理インターフェースと操作的アプリケーションを素早く構築します。
 
+![Appsmith1.png](https://static-docs.nocobase.com/Appsmith1-fh3ipd.png)
+
 ### 1. データモデリング
 
 Appsmith自体はデータモデリングを中核機能としていません。
@@ -289,6 +331,8 @@ Appsmith自体はデータモデリングを中核機能としていません。
 * Appsmithが担当するのは「このデータをどう操作するか」であり、「データモデル自体をどう設計するか」ではない
 
 データ管理の観点からは、これらの問題は他の場所で既に処理されていると仮定しています。
+
+![Appsmith2.png](https://static-docs.nocobase.com/Appsmith2-vpper5.png)
 
 ### 2. 関係
 
@@ -305,6 +349,7 @@ Appsmithは基本的なアクセス制御機能を提供し、主に以下に集
 
 * アプリケーションレベル、ページレベルの権限
 * どのユーザーが特定のツールにアクセス・編集できるかを制御する
+* ![Appsmith3.png](https://static-docs.nocobase.com/Appsmith3-vrj1fp.png)
 
 ただし、権限モデルはツール使用のセキュリティによりサービスを提供しています。
 
@@ -317,6 +362,8 @@ Appsmithは基本的なアクセス制御機能を提供し、主に以下に集
 
 完全なビジネスプロセスエンジンを構築しようとはしません。複雑なプロセスは通常、外部システムまたはカスタムコードを通じて実装する必要があります。
 
+![Appsmith4.png](https://static-docs.nocobase.com/Appsmith4-rbq5bi.png)
+
 ### 5. 拡張性
 
 Appsmithの拡張性は主に開発者の制御可能性に反映されています：
@@ -326,6 +373,8 @@ Appsmithの拡張性は主に開発者の制御可能性に反映されていま
 * 技術者にとって非常に柔軟
 
 しかし、この拡張方法はツールレベルのカスタマイズにより適しています。
+
+![Appsmith5.png](https://static-docs.nocobase.com/Appsmith5-sxdhwa.png)
 
 ## まとめ
 
@@ -356,3 +405,15 @@ Appsmithの拡張性は主に開発者の制御可能性に反映されていま
 | 拡張アプローチ   | プラグインによるシステムレベルの拡張     | バックエンド拡張やフック               | コンポーネントと外部連携     | スクリプトやAPIを組み合わせて構成 |
 
 ぜひ体験・試用してみてください。あなたに最適なデータ管理ツールが見つかることを願っています。
+
+**関連読み物：**
+
+* [実例で見る ビジネスプロセス向け軽量エンタープライズソフトウェア 4 選](https://www.nocobase.com/ja/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6つの企業向けソフトウェア：社内業務でExcelの代替となる製品 ](https://www.nocobase.com/ja/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [CRUD実装の重複を減らすためのオープンソースツール10選](https://www.nocobase.com/ja/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub スター数が最も多いAIワークフロープロジェクトTop 12](https://www.nocobase.com/ja/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [ソフトウェア受託会社向けのオープンソース・ノーコード／ローコードツール6選](https://www.nocobase.com/ja/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub スター数トップ 10 の AI CRM オープンソースプロジェクト](https://www.nocobase.com/ja/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [Excel を卒業し、本当に使える業務システムを最短で構築する完全ガイド ](https://www.nocobase.com/ja/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [GitHubで注目のオープンソースAI内部ツール5選](https://www.nocobase.com/ja/blog/top-5-open-source-ai-internal-tools-on-github)
+* [8つの Google Sheets 最良代替ツール（コストと機能まとめ）](https://www.nocobase.com/ja/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
