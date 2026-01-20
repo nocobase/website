@@ -4,7 +4,7 @@
 2. 详细分析选择自托管的核心原因。
 3. 讨论自托管的潜在挑战。
 4. 提供选择适合自托管解决方案的全面评估指南。
-5. 推荐并深入介绍五款优秀的自托管产品：NocoBase（无代码开发平台）、Matomo（网络分析工具）、Nextcloud（文件共享与协作）、Bitwarden（密码管理）和Ghost（内容管理系统）。
+5. 推荐并深入介绍五款优秀的自托管产品：NocoBase（AI 无代码开发平台）、Matomo（网络分析工具）、Nextcloud（文件共享与协作）、Bitwarden（密码管理）和Ghost（内容管理系统）。
 
 无论你是考虑转向自托管的企业决策者，还是寻求更多数据控制权的开发者，本指南都将为你提供有价值的见解和实用建议。
 
@@ -23,8 +23,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 云端方案与自托管对比
 
@@ -109,7 +107,7 @@
 
 今天这份列表是我强烈给开发者推荐了解的自托管产品。这些在各自行业内非常优秀的自托管软件，或许可以彻底改变你的业务运营。
 
-1. [NocoBase——无代码/低代码开发平台](https://www.nocobase.com/)
+1. [NocoBase——AI 无代码/低代码开发平台](https://www.nocobase.com/)
 2. [Matomo——Google Analytics 替代品](https://matomo.org/)
 3. [Nextcloud——文件共享和协作平台](https://nextcloud.com/)
 4. [Bitwarden——密码管理器](https://bitwarden.com/)
@@ -121,9 +119,9 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hOM2MyzHn9I?si=NXekCjZ9VtUPTntA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-NocoBase 是一个开源、自托管的无代码和低代码开发平台。NocoBase 专为开发者设计。其插件化架构使开发者能够轻松添加和定制功能，满足各种复杂的业务需求。
+NocoBase 是一个开源、自托管的 AI 无代码和低代码开发平台。NocoBase 专为开发者设计。其插件化架构使开发者能够轻松添加和定制功能，满足各种复杂的业务需求。
 
-NocoBase 在 GitHub 上有 11.3k 的收藏。参与开源的贡献者一共有 66 位。并且 NocoBase 拿下过 GitHut 当日排名第一，和Prouducthunt 周最佳开发工具。
+NocoBase 在 GitHub 上有 21.3k 的收藏。参与开源的贡献者一共有 102 位。并且 NocoBase 拿下过 GitHut 当日排名第一，和Prouducthunt 周最佳开发工具。
 
 #### 主要特点
 
@@ -132,6 +130,7 @@ NocoBase 在 GitHub 上有 11.3k 的收藏。参与开源的贡献者一共有 6
 * **数据模型驱动**：“数据结构”与“使用界面”分离。与表单、表格形式的无代码/低代码产品相比，数据模型驱动可以提供没有上限的开发能力。
 * **工作流自动化**：强大的工作流可以实现自动化处理各种类型的业务流程和数据流。
 * **丰富的数据源支持**：支持多种主流数据库接入，包括： MySQL、MariaDB、PostgreSQL、SQL Server、Oracle，以及 API 接入。
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 #### NocoBase 能用来做什么？
 
@@ -139,7 +138,7 @@ NocoBase 在 GitHub 上有 11.3k 的收藏。参与开源的贡献者一共有 6
 * **交付客户项目**：使用NocoBase搭建满足客户需求的系统。
 * **作为企业的基础设施**：连接和集成不同系统，统一数据和管理。
 
-对于需要快速开发和部署自定义系统且不希望负担大型开发团队的企业来说，NocoBase 特别有用。其开源性质确保开发者对数据和定制选项拥有完全控制。NocoBase 客户中不乏物流、能源、教育等业务复杂且庞大的行业。
+对于需要快速开发和部署自定义系统且不希望负担大型开发团队的企业来说，NocoBase 特别有用。其开源性质确保开发者对数据和定制选项拥有完全控制。
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
