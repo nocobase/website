@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 In this article, we will explore 12 leading open-source, no-code tools on [GitHub](https://github.com/topics/no-code), each distinguished by its star ranking.
 
@@ -16,29 +16,28 @@ This article will meticulously outline the core features and suitable scenarios 
 
 ---
 
-
-
 ## Number 12: **NocoBase**
 
-![NocoBase](https://static-docs.nocobase.com/7b0000309b95f96e1d5e87668f057892.png)
+![NocoBase](https://static-docs.nocobase.com/image-hmy6gw.png)
 
 
 | **GitHub**                           | https://github.com/nocobase/nocobase |
 | ------------------------------------ | ------------------------------------ |
-| **GitHub Star**                      | 15.8k                                |
+| **GitHub Star**                      | 21.3k                                |
 | **The most recent update on GitHub** | Within one day                       |
 | **Official website**                 | https://www.nocobase.com/            |
 | **Documentation**                    | https://docs.nocobase.com/           |
 
 **Introduction:**
 
-NocoBase is an open-source, self-hosted, highly scalable no-code/low-code development platform that is flexible and easy to use, designed to rapidly build and extend enterprise applications through a plugin and modular approach.
+NocoBase is an open-source, self-hosted,  AI-powered, highly scalable no-code/low-code development platform that is flexible and easy to use, designed to rapidly build and extend enterprise applications through a plugin and modular approach.
 
 **Features:**
 
 * **Data Model Driven:** Unlike traditional form and table-driven methods, NocoBase employs a data model-driven approach, separating user interface from data structure, supporting the development of complex business systems.
 * **Plugin System:** All functionalities are implemented through plugins using a microkernel architecture, supporting extensive customization, including data sources and third-party API integration.
 * **Open Source and Technology Stack:** Utilizes mainstream technology stacks such as Node.js and React, ensuring openness and transparency.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Use Cases:**
 
