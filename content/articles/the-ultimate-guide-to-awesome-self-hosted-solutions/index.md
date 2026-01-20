@@ -4,7 +4,7 @@ This comprehensive guide delves deep into the world of awesome self-hosted solut
 * Analyze the core reasons for choosing self-hosting.
 * Discuss the potential challenges of self-hosting.
 * Provide a comprehensive guide for selecting suitable self-hosted solutions.
-* Recommend and introduce five outstanding self-hosted products: NocoBase (no-code development platform), Matomo (web analytics tool), Nextcloud (file sharing and collaboration), Bitwarden (password management), and Ghost (content management system).
+* Recommend and introduce five outstanding self-hosted products: NocoBase ( AI-powered no-code development platform), Matomo (web analytics tool), Nextcloud (file sharing and collaboration), Bitwarden (password management), and Ghost (content management system).
 
 Whether you're a business decision-maker considering a shift to self-hosting or a developer seeking more control over your data, this guide will provide valuable insights and practical advice.
 
@@ -15,8 +15,6 @@ Whether you're a business decision-maker considering a shift to self-hosting or 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## The Rise of Self-Hosted Solutions
 
@@ -108,7 +106,7 @@ These points can serve as key considerations when choosing self-hosted software.
 
 Today's list includes self-hosted products I highly recommend developers explore. These are excellent self-hosted software options in their respective industries. They could potentially revolutionize your business operations.
 
-1. [NocoBase——No-Code/Low-Code Development Platform](https://www.nocobase.com/)
+1. [NocoBase——AI-powered No-Code/Low-Code Development Platform](https://www.nocobase.com/)
 2. [Matomo——Web Analytics Tool](https://matomo.org/)
 3. [Nextcloud——File Sharing and Collaboration Platform](https://nextcloud.com/)
 4. [Bitwarden——Password Management](https://bitwarden.com/)
@@ -120,12 +118,12 @@ Today's list includes self-hosted products I highly recommend developers explore
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hOM2MyzHn9I?si=NXekCjZ9VtUPTntA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted no-code and low-code development platform. It's designed for developers. Its plugin-based architecture allows easy addition and customization of features. This meets various complex business needs.
+[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted AI-powered no-code and low-code development platform. It's designed for developers. Its plugin-based architecture allows easy addition and customization of features. This meets various complex business needs.
 
 **GitHub Stats**:
 
-* 11.3k stars
-* 66 contributors
+* 21.3k stars
+* 102 contributors
 * Development started in 2021
 * Reached #1 on GitHub daily ranking
 * Won ProductHunt's best dev tool of the week
@@ -137,6 +135,7 @@ Today's list includes self-hosted products I highly recommend developers explore
 * **Data model-driven**: Separates "data structure" from "user interface". Compared to form and table-based no-code/low-code products, this offers unlimited development potential.
 * **Workflow automation**: Powerful workflows can automate various types of business processes and data flows.
 * **Rich data source support**: Supports multiple mainstream databases including MySQL, MariaDB, PostgreSQL, SQL Server, Oracle, as well as API connections.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **What can NocoBase do?**
 
@@ -144,7 +143,7 @@ Today's list includes self-hosted products I highly recommend developers explore
 * **Deliver customer projects**: Use NocoBase to build systems that meet customer needs.
 * **Serve as enterprise infrastructure**: Connect and integrate different systems, unifying data and management.
 
-NocoBase is particularly useful for companies that need to quickly develop and deploy custom systems without the burden of a large development team. Its open-source nature ensures developers have complete control over data and customization options. NocoBase's clients include complex and large-scale industries such as logistics, energy, and education.
+NocoBase is particularly useful for companies that need to quickly develop and deploy custom systems without the burden of a large development team. Its open-source nature ensures developers have complete control over data and customization options. 
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
