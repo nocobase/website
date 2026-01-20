@@ -1,4 +1,4 @@
-注：本文数据更新于 2025 年 11 月 16 日。我们会定期更新，确保你获取最新的信息！😊
+注：本文数据更新于 2026 年 1 月 20 日。我们会定期更新，确保你获取最新的信息！😊
 
 在本篇文章中，我们将探索 12 款在 [GitHub](https://github.com/topics/no-code) 上星级排名前列的开源无代码（零代码）工具。
 
@@ -16,29 +16,29 @@
 
 ---
 
-
-
 ## **第12：NocoBase**
 
-![NocoBase](https://static-docs.nocobase.com/7b0000309b95f96e1d5e87668f057892.png)
+![NocoBase](https://static-docs.nocobase.com/image-hmy6gw.png)
+
 
 
 | **GitHub**                  | https://github.com/nocobase/nocobase |
 | --------------------------- | ------------------------------------ |
-| **GitHub Star 数**          | 15.8k                                |
+| **GitHub Star 数**          | 21.3k                                |
 | **GitHub 最近一次更新时间** | 当天                                 |
 | **官网**                    | https://www.nocobase.com/            |
 | **文档**                    | https://docs.nocobase.com/           |
 
 **简介:**
 
-NocoBase 是一款开源、自托管、扩展性极强的无代码/低代码开发平台，设计灵活且易于使用，旨在通过插件化和模块化的方式快速构建和扩展企业应用。
+NocoBase 是一款开源、自托管、扩展性极强的 AI 无代码/低代码开发平台，设计灵活且易于使用，旨在通过插件化和模块化的方式快速构建和扩展企业应用。
 
 **特点:**
 
 * **数据模型驱动**：与传统的表单和表格驱动方法不同，NocoBase 采用数据模型驱动，分离了用户界面和数据结构，支持复杂的业务系统开发。
 * **插件系统**：所有功能都通过插件实现，采用微内核架构，支持扩展和自定义，包括数据源和第三方 API 集成。
 * **开源和技术栈**：使用主流技术栈如 Node.js 和 React，确保了开放性和透明性。
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 **使用场景:**
 
@@ -347,4 +347,4 @@ n8n 适用于希望自动化日常任务的个人和团队，例如数据同步�
 * [GitHub Star 数量前 15 的开源低代码项目](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 * [如何构建高效的 CRUD 应用程序？](https://www.nocobase.com/cn/blog/how-to-build-efficient-crud-apps)
 * [探索最佳无代码低代码工具：加速 Web 应用开发](https://www.nocobase.com/cn/blog/web-application-development)
-* [在数小时内构建 CRM：你需要了解的顶级无代码/低代码工具](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder)
+* [在数小时内构建 CRM：你需要了解的顶级无代码/低代码工具](https://www.nocobase.com/cn/blog/low-code-no-code-crm-builder
