@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 😄 *If you're already familiar with the concept of internal tools, jump straight to > **Best Open Source Projects for Building Internal Tools***
 
@@ -51,33 +51,29 @@ I hope this list helps you build internal tools better, faster, and cheaper!
 
 #### Info
 
-**No-code / Low-code**
+**AI / No-code / Low-code**
 
 **GitHub Project Start Date**: 2021
 
 **Related Resources:**[Website](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [Docs](https://docs.nocobase.com/)
 
-⭐️ **Stars**: 21.2K
+⭐️ **Stars**: 21.3K
 
-NocoBase is an open-source no-code/low-code platform made for building internal tools, business apps, and company solutions. NocoBase helps businesses quickly set up custom business apps like CRM, PM tools, and other business process management solutions without spending a lot of time and money on software development.
-
-Here's a real-world example: Let's say your company needs to quickly build a custom inventory management system to track stock in different warehouses.
-
-In NocoBase, you'd first set up the needed database, tables, and fields, defining key details for inventory items like product name, quantity, and warehouse location. Next, using its WYSIWYG UI design interface, you'd build an easy-to-use interface linked to your data model by dragging and dropping blocks like tables, charts, and forms. Lastly, you'd set up automated processes, like sending a restock request when inventory gets low. These processes are made using NocoBase's workflow feature, making sure business processes are automated and need less manual work.
+NocoBase is an open-source, AI-powered no-code/low-code platform built for creating internal tools, business applications, and enterprise solutions. NocoBase helps businesses quickly set up custom business apps like CRM, PM tools, and other business process management solutions without spending a lot of time and money on software development.
 
 **NocoBase Setup Page:**
 
-![Setup Page.png](https://static-docs.nocobase.com/b12358d6c8ca7e358c52340e06169049.png)
+![Setup Page.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A5-nu863w.png)
 
-![Setup Page2.png](https://static-docs.nocobase.com/d76b3d7545e093560ab947d354184a0a.png)
+![Setup Page2.png](https://static-docs.nocobase.com/%E9%85%8D%E7%BD%AE%E7%95%8C%E9%9D%A2-909txa.png)
 
 **NocoBase Data Source Connection:**
 
 ![NocoBase Data Source Connection.png](https://static-docs.nocobase.com/267f5207279c53e7f46c779cc298de64.png)
 
-**Customer Lifecycle Management:**
+**AI employees embedded in the system:**
 
-![Customer Lifecycle Management.png](https://static-docs.nocobase.com/e97cb5c9971fee57542c3e41f26fe779.png)
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 #### **Strengths**
 
@@ -85,6 +81,7 @@ In NocoBase, you'd first set up the needed database, tables, and fields, definin
 * **Plugin-based structure**: Uses a microkernel and plugin design. All features are provided through plugins, so users can customize and expand system functions as needed.
 * **Workflow automation**: Has a built-in workflow control system. This achieves efficient business operations and management by automating data flows and business process organization.
 * **Enterprise-level security**: Offers advanced user authentication and permission management features. This ensures data and application safety, suitable for business environments that need strict data protection.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 #### **Suitable for**
 
