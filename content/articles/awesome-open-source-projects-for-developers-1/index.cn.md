@@ -1,6 +1,6 @@
 开源项目已经彻底改变了开发者的创建、创新和协作方式。
 
-[NocoBase](https://www.nocobase.com/en/blog/what-is-no-code) 作为一个极易扩展的开源无代码开发平台，在创造的过程中，我们也使用了许多优秀且成熟的开源项目。我们向这些优秀的开源项目表示感谢。
+[NocoBase](https://www.nocobase.com/en/blog/what-is-no-code) 作为一个极易扩展的开源 AI 无代码开发平台，在创造的过程中，我们也使用了许多优秀且成熟的开源项目。我们向这些优秀的开源项目表示感谢。
 
 本文将介绍 [NocoBase 所使用的开源项目](https://docs-cn.nocobase.com/welcome/community/thanks)，分析它们的优势、缺点、使用场景和更多案例。
 
@@ -11,8 +11,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## [Node.js](https://nodejs.org/en)
 
