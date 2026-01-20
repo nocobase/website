@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## **What is Low-Code?**
 
 Low-code development is a streamlined approach to software creation. This method enables teams to craft digital solutions and enterprise applications with minimal coding.
@@ -11,8 +13,6 @@ These platforms feature intuitive drag-and-drop interfaces. This design allows a
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **Is Low-Code a Code Generator?**
 
@@ -56,7 +56,9 @@ These platforms offer a completely graphical user interface, allowing users with
 
 ## **What is NocoBase?**
 
-NocoBase is a highly extensible no-code development platform. It combines the simplicity and ease of use of no-code with the extensive flexibility of native development. The design principle of NocoBase is: 80% of needs can be met through no-code solutions, while the remaining 20% can be achieved through extended development. This is why NocoBase embraces the concept of "[Everything is implemented as plugins.](https://www.nocobase.com/en/plugins)"
+NocoBase is an AI-powered no-code platform designed for easy and extensive extensibility.
+
+It combines the simplicity and ease of use of no-code with the extensive flexibility of native development. The design principle of NocoBase is: 80% of needs can be met through no-code solutions, while the remaining 20% can be achieved through extended development. This is why NocoBase embraces the concept of "[Everything is implemented as plugins.](https://www.nocobase.com/en/plugins)"
 
 Plugins are plug-and-play, allowing users to develop new plugins to meet new requirements, whether it's for pages, blocks, operations, APIs, or data sources.
 
@@ -64,7 +66,7 @@ Plugins are plug-and-play, allowing users to develop new plugins to meet new req
 
 ## **Is NocoBase a Low-Code Platform?**
 
-NocoBase is not a low-code platform; it does not allow users to write code directly in the interface. Additionally, NocoBase is not a code generator and does not provide code export. To extend NocoBase's functionality, you can develop plugins.
+In NocoBase, you can write frontend logic using JS blocks. However, NocoBase is not a code generator and does not support code export. To extend its functionality, you can develop custom plugins.
 
 ## **Is NocoBase a No-Code Platform?**
 
