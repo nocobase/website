@@ -1,10 +1,10 @@
-📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 20 日。我们会定期更新，确保你获取最新的信息！😊
 
 这篇文章收集了 8 个在各自领域强大的无代码（零代码）开发平台。本文将从产品特点、使用场景和优缺点展开，为你提供一个全面的列表。不同的无代码（零代码）开发平台有自己的侧重场景，可以根据自己的需求选择适合的产品。
 
 这 8 大产品涵盖了网站应用开发、数据管理、系统构建、自动化工作流、移动应用开发、表单构建等不同业务场景。
 
-1. **[NocoBase：开发者用于快速构建大型系统](https://www.nocobase.com/)**
+1. **[NocoBase：开发者用于快速构建 AI 能力系统](https://www.nocobase.com/)**
 2. **[Bubble：全栈无代码开发平台](https://bubble.io/)**
 3. **[Airtable：基于表格的数据管理及展示](https://www.airtable.com/)**
 4. **[Zapier：连接不同应用的自动化工作流](https://zapier.com/)**
@@ -21,13 +21,13 @@
 
 ## [NocoBase](https://www.nocobase.com/)
 
-**开发者用于快速构建大型系统**
+**开发者用于快速构建 AI 能力系统**
 
-![NocoBase: Developer tool for rapidly building large systems](https://static-docs.nocobase.com/6445da8223caafd89b804a9cea74676d.png)
+![NocoBase: Developer tool for rapidly building large systems](https://static-docs.nocobase.com/1280X1280%20(45)-iexyth.PNG)
 
 ### **产品特点**
 
-NocoBase 是一个开源、轻量且灵活的无代码开发平台，适合作为基础设施用于构建系统。与其他无代码开发（零代码）平台不同是，NocoBase 采用了数据模型驱动的产品设计，相比表单和表格型的无代码（零代码）产品，NocoBase 有更强的开发能力。
+NocoBase 是一个开源、轻量且灵活的 AI 无代码开发平台，适合作为基础设施用于构建系统。与其他无代码开发（零代码）平台不同是，NocoBase 采用了数据模型驱动的产品设计，相比表单和表格型的无代码（零代码）产品，NocoBase 有更强的开发能力。
 
 同时 NocoBase [“功能既插件”的理念](https://www.nocobase.com/cn/plugins)，让产品内核轻量的同时拓展功能也变得简单（用户只需开发新插件即可）。它的无代码部分也非常简单直观，点击右上角的【UI Editor】就可以直接进行所见即所得的页面配置。
 
@@ -47,7 +47,7 @@ NocoBase 是一个开源、轻量且灵活的无代码开发平台，适合作�
 
 ### 优点和缺点
 
-* 优点：开源可控、灵活且扩展性强、快速构建大型系统
+* 优点：开源可控、灵活且扩展性强、快速构建具有 AI 能力的系统
 * 缺点：缺少教程、对非技术用户有一定门槛
 
 ## [Bubble](https://bubble.io/)
