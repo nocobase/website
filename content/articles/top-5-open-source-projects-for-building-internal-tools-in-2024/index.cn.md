@@ -1,4 +1,4 @@
-📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 20 日。我们会定期更新，确保你获取最新的信息！😊
 
 😄 *如果你已经对内部工具的概念非常熟悉了，请直接点击目录跳转 > **最佳构建内部工具的开源项目***
 
@@ -51,33 +51,29 @@
 
 #### 基础信息
 
-**无代码 / 低代码**
+**AI / 无代码 / 低代码**
 
 **GitHub 项目开始时间**：2021年
 
 **相关资源：**[官网](https://www.nocobase.com/) ｜[GitHub](https://github.com/nocobase/nocobase) ｜ [文档](https://docs.nocobase.com/)
 
-⭐️ **Star 数**：21.2K
+⭐️ **Star 数**：21.3K
 
-NocoBase 是一个专为构建内部工具、业务应用和企业解决方案而设计的开源无代码/低代码平台。NocoBase 使企业能够快速部署定制化的业务应用，无需投入大量的时间和资金进行软件开发。
-
-举个具体的使用场景，假设你的公司需要快速构建一个定制的库存管理系统来追踪不同仓库的库存情况。
-
-在 NocoBase 中，首先设置所需的数据库、表和字段，定义库存项如产品名称、数量和仓库位置等关键属性。接着，利用其所见即所得的 UI 设计界面，通过拖放表格、图表和表单等区块，直接构建与数据模型相连的直观用户界面。最后，配置自动化流程，例如当库存低于安全水平时自动触发补货请求，这些流程通过 NocoBase 的工作流实现，确保业务流程的自动化和减少人工干预。
+NocoBase 是一个专为构建内部工具、业务应用和企业解决方案而设计的开源 AI 无代码/低代码平台。NocoBase 使企业能够快速部署定制化的业务应用，无需投入大量的时间和资金进行软件开发。
 
 **NocoBase 配置页面:**
 
-![Setup Page.png](https://static-docs.nocobase.com/b12358d6c8ca7e358c52340e06169049.png)
+![Setup Page.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A5-nu863w.png)
 
-![Setup Page2.png](https://static-docs.nocobase.com/d76b3d7545e093560ab947d354184a0a.png)
+![Setup Page2.png](https://static-docs.nocobase.com/%E9%85%8D%E7%BD%AE%E7%95%8C%E9%9D%A2-909txa.png)
 
 **NocoBase 数据源接入：**
 
 ![NocoBase Data Source Connection.png](https://static-docs.nocobase.com/267f5207279c53e7f46c779cc298de64.png)
 
-**客户生命周期管理：**
+**融入系统的 AI 员工：**
 
-![Customer Lifecycle Management.png](https://static-docs.nocobase.com/e97cb5c9971fee57542c3e41f26fe779.png)
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 #### **优势**
 
@@ -85,6 +81,7 @@ NocoBase 是一个专为构建内部工具、业务应用和企业解决方案�
 * **插件式架构**：采用微内核和插件架构设计，所有功能均通过插件提供，用户可以根据需求自定义和扩展系统功能。
 * **工作流自动化**：内置工作流控制系统，通过自动化数据流和业务流程编排，实现高效的业务操作和管理。
 * **企业级安全特性**：提供高级的用户认证和权限管理功能，确保数据和应用的安全，适合需要严格数据保护的企业环境。
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 #### 适合用于
 
