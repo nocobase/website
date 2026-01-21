@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 ## **引言**
 
 [ServiceNow](https://www.servicenow.com/) 是 Gartner 评选的“企业 ITSM 三巨头”之一，与 AWS、Azure 齐名，功能覆盖 **IT 服务管理 (ITSM)**、**资产管理 (ITAM)**、**客户支持 (CSM)**、**HR 流程**等多个企业核心场景。
@@ -92,7 +94,7 @@ ServiceNow 是按模块和用户数量收费的 SaaS 平台，价格结构较为
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase 是一款专注于业务应用构建的开源低代码平台，采用高度插件化的架构和数据模型驱动设计，非常适合快速搭建定制化的 ITSM 系统。
+NocoBase 是一款专注于业务应用构建的开源、AI 驱动的低代码平台，采用高度插件化的架构和数据模型驱动设计，非常适合快速搭建定制化的 ITSM 系统。
 
 **核心功能**
 
@@ -107,6 +109,10 @@ NocoBase 是一款专注于业务应用构建的开源低代码平台，采用�
 * **自动化工作流引擎**：内置低代码流程编排工具，支持条件判断、审批节点、跨系统 API 调用等操作，可轻松实现自动派单、工单升级、跨部门协作等复杂流程。
 
 ![Built-In Workflow Automation](https://static-docs.nocobase.com/9-oh2cyu.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **应用场景**
 
