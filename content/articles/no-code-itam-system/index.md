@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 Professional IT Asset Management (ITAM) tools such as Lansweeper, AssetSonar, and Bluetally are already highly mature. So, why should we still consider using no-code tools to build an IT asset management system?
@@ -55,7 +57,7 @@ If you’re considering building an IT asset management system on a no-code plat
 
 NocoBase is an open-source, data-model-driven no-code platform with a plugin-based architecture. Every feature can be extended via plugins, giving teams full control over customization.
 
-It supports **granular role-based access control (RBAC)**, **field-level and row-level data isolation**, **workflow automation**, and integration with multiple data sources via APIs or plugins. As a fully open-source platform, businesses can **extend its capabilities** while maintaining low deployment costs.
+NocoBase is a data model–driven, open-source, AI-driven no-code platform built on a plugin-based architecture, where all functionality can be extended through plugins. It supports fine-grained access control (RBAC), field-level and row-level data isolation, and workflow automation, and with AI-driven assistance, can connect to various data sources (databases, APIs, and third-party services) via APIs and plugins, enabling more flexible centralized asset data management. As a fully open-source platform, enterprises can also extend functionality based on their needs, achieving a high level of customization while keeping costs low.
 
 **ITAM Advantages:**
 
