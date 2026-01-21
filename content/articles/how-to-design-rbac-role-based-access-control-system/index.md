@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ## Why RBAC Matters
 
 In modern enterprise applications, controlling **who can access which data and perform which actions** is a foundational yet critical capability. As organizations grow, systems become more complex, user roles diversify, and the demands for data security, access control, and compliance become increasingly strict. At this point, a clear, maintainable, and scalable access control system becomes essential.
