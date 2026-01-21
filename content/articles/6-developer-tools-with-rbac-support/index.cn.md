@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 RBAC（Role-Based Access Control，基于角色的访问控制）是一种将 “用户 → 角色 → 权限” 进行清晰映射的权限模型，因其易于管理、便于审计、适用于多种业务场景，成为大多数企业权限系统的首选。
 
 💡 如果你对 RBAC 的核心概念还不太清楚，可以先阅读：[如何设计 RBAC（基于角色的访问控制）系统](https://www.nocobase.com/cn/blog/how-to-design-rbac-role-based-access-control-system)
@@ -30,7 +32,7 @@ Website：https://www.nocobase.com/
 
 GitHub：https://github.com/nocobase/nocobase
 
-**简介**：NocoBase 是一款开源的低代码/无代码平台，专为构建业务后台系统而设计。它不仅支持灵活的数据建模，还内置了强大的 RBAC 权限管理模块，适用于 CRM、ERP、CMS 等多角色、多用户的企业应用场景。
+**简介**：NocoBase 是一款开源、AI 驱动的低代码 / 无代码平台，专为构建业务后台系统而设计。它不仅支持灵活的数据建模，还内置了强大的 RBAC 权限管理模块，并在 AI 驱动能力的辅助下，适用于 CRM、ERP、CMS 等多角色、多用户的企业应用场景。
 
 **核心功能**
 
