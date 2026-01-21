@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## **Introduction**
 
 Back in mid-2024, we published [a list of the top 15 open-source low-code projects on GitHub by star count.](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars) The article received widespread attention and was widely shared among developers.
@@ -127,7 +129,7 @@ In Q1 2025, GrapesJS rolled out several important updates:
 
 **About the Project:**
 
-NocoBase is a highly extensible open-source no-code/low-code development platform, purpose-built for rapidly building and scaling enterprise applications. Unlike spreadsheet-based tools or UI-first builders, NocoBase adopts a fully data model–driven architecture—ideal for applications with complex workflows, fine-grained permissions, and clearly defined user roles.
+**NocoBase** is an open-source, AI-driven no-code/low-code development platform with extensibility at its core, designed to rapidly build and extend enterprise applications through a plugin-based architecture. Compared to approaches centered on spreadsheets or UI, NocoBase is built entirely around a data model–driven architecture, and with AI-driven capabilities, is better suited for enterprise applications with complex workflows, fine-grained permissions, and clearly defined roles.
 
 What makes NocoBase unique:
 
@@ -135,6 +137,8 @@ What makes NocoBase unique:
 * **Model-Driven Development:** Every table structure and field relationship is driven by configuration, supporting many-to-many relationships, nested fields, and data views for complex business logic.
 * **Frontend-Backend Separation:** The backend focuses on data modeling, while the frontend uses visual building blocks to assemble custom UIs—decoupling data structure from UI design.
 * **Advanced Permissions:** Offers role-based, condition-based, and field-level access control—suited for multi-role systems.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Best For:**
 
