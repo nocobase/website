@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 If you had asked a product manager or technical lead a few years ago, “What’s the fastest way to build a PoC?”, most would have given a similar answer — pick a low-code or no-code platform and quickly assemble the business flow, interface, and core logic so the idea can reach a working state as fast as possible.
 
 But over the past two years, rapid advances in AI have started to shift that view. Models can now produce front-end code and component structures from natural-language prompts, and even generate full pages from rough sketches. Interface creation has become dramatically faster, with parts of front-end work already automated. The newly released [Gemini 3](https://gemini.google.com/) pushes this further with stronger code generation, layout understanding, and interaction-logic completion, making front-end design more direct and controllable.
@@ -31,7 +33,7 @@ With this in mind, we’ve put together six open-source no-code/low-code tools w
 | Website      | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | Docs         | [https://v2.docs.nocobase.com](https://v2.docs.nocobase.com)                 |
 
-NocoBase is an open-source, self-hosted, and plugin-driven low-code/no-code platform designed for building business systems and internal tools.
+NocoBase is an open-source, self-hosted, AI-driven, and plugin-based low-code/no-code platform designed for building business systems and internal tools.
 
 In an official case study, the ED team used NocoBase to quickly build several internal system PoCs, then evolved them into production-ready products — including CRM, operations consoles, and project management modules. According to ED engineers, NocoBase has significantly reshaped their development workflow. With visual data modeling, automatic CRUD generation, flexible workflows, and auto-generated APIs, developers can focus on business goals instead of repetitive setup work. It also shortens QA and feedback loops, enabling projects to reach production faster..
 
