@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Last week, we recommended a set of project management tools for **small businesses**, based on real discussions and needs shared by Reddit users:
 
 [Project Management Systems for Small Businesses: Real Needs from Reddit Users](https://www.nocobase.com/en/blog/project-management-systems-for-small-businesses)
@@ -172,7 +174,7 @@ Website: https://huly.io/
 
 **Overview**
 
-[NocoBase](https://www.nocobase.com/) is a highly extensible open-source no-code platform. Instead of enforcing fixed functions, it offers flexible data models and a plugin system, allowing teams to build project management modules entirely based on their needs.
+[NocoBase](https://www.nocobase.com/) is a highly extensible, open-source, AI-driven no-code platform. Instead of predefined features, it provides flexible data models and a plugin mechanism, combined with AI-driven capabilities, enabling teams to build project management modules entirely based on their own requirements.
 
 🎉 NocoBase recently launched a [project management solution](https://www.nocobase.com/en/solutions/project-management) — open-source, fully controllable, and highly extensible. Try it out!
 
@@ -190,9 +192,9 @@ Website: https://www.nocobase.com/
 
 ![Complete Project Lifecycle](https://static-docs.nocobase.com/Complete%20Project%20Lifecycle-ciim7r.png)
 
-* **Multiple Task Views** – NocoBase supports tables, Kanban, Gantt charts, and calendars. Teams can switch between views depending on the phase: Gantt for planning milestones, Kanban for sprint backlogs, tables for bug tracking.
+* **Multiple Task Views** – NocoBase supports multiple task views, including tables, Kanban boards, Gantt charts, and calendars. Teams can switch views flexibly based on project stages: using Gantt charts to break down milestones and dependencies during planning, managing iteration backlogs with Kanban during execution, and tracking defects and status in tables during testing. On top of this, AI-driven AI Employees can understand the active view structure and selected task data to assist with day-to-day work.
 
-![Multiple Task Views](https://static-docs.nocobase.com/Multiple%20Task%20Views-rytqy6.png)
+![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
 * **Granular Access Control** – Role-level, condition-based, and field-level permissions allow fine-tuned collaboration. For example: developers can only edit fields in their tasks, QA can add bugs but not alter progress, while PMs have full visibility.
 
