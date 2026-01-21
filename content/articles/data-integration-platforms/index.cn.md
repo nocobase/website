@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 在当今的数字化企业中，“信息孤岛”依然无处不在。一个客户在 CRM 中有记录，在客服系统中留有工单，在支付系统中发生交易，但这些数据却往往无法统一呈现，更别说驱动下一步自动化动作。你可能需要人工导出 Excel、编写脚本或手动对接系统，只为完成一次简单的业务流转。
 
 **数据碎片化，正在成为数字化转型的最大障碍之一。**
@@ -20,7 +22,7 @@
 
 适合：需要构建包含表单、数据视图、权限控制的业务系统。
 
-### **NocoBase** – 开源无代码/低代码平台
+### NocoBase – 开源、AI 驱动的无代码 / 低代码平台
 
 ![NocoBase](https://static-docs.nocobase.com/1-38tsye.PNG)
 
@@ -28,7 +30,7 @@ Website: https://www.nocobase.com/
 
 GitHub: https://github.com/nocobase/nocobase
 
-GitHub Stars: 15.7k
+GitHub Stars: 21.3k
 
 **三大亮点**：
 
