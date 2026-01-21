@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 Redditでは、工単管理システム（Ticketing System）についての議論が頻繁に見られます。
 
 [小さなオフィスで独自に運営しているユーザーが言いました：](https://www.reddit.com/r/selfhosted/comments/1282l0y/best_opensource_it_ticketing_system/)
@@ -40,13 +42,13 @@ Redditでは、工単管理システム（Ticketing System）についての議�
 
 ![NocoBase](https://static-docs.nocobase.com/4-v2b19x.png)
 
-* GitHub Star: 16.4k
+* GitHub Star: 21.3k
 * GitHub: https://github.com/nocobase/nocobase
 * Website: https://www.nocobase.com/
 
 **プラットフォーム概要**
 
-[NocoBase](https://www.nocobase.com/) はデータモデル駆動とプラグインアーキテクチャを採用したオープンソースのローコード／ノーコードプラットフォームです。従来の工単システムと異なり、柔軟なデータ建模、業務フロー設計、プラグイン拡張機能を提供します。業務に合わせた工単システムを自由に構築したいチームに最適な基盤です。
+[NocoBase](https://www.nocobase.com/)  は、データモデル駆動とプラグイン型アーキテクチャを中核とし、AI 駆動の機能も取り入れたオープンソースのノーコード／ローコードプラットフォームです。従来の工单（チケット）システムとは異なり、柔軟なデータモデリング、プロセス設計、プラグインによる拡張性を備えており、AI 駆動の支援によって設定や利用の効率を高めることができます。自社の業務特性に合わせて工单システムを構築したいチームにとって、NocoBase は可視化と拡張性を両立した基盤となります。
 
 **NocoBaseで工単システムを構築する際の特徴**
 
@@ -67,6 +69,10 @@ NocoBase は[チケット管理](https://www.nocobase.com/ja/solutions/ticketing
 * **プラグインと自動化ワークフロー**：工単のエスカレーション、通知、データ連携を自動化し、さらに資産管理・レポート・ナレッジベースなどもプラグインで拡張可能。
 
 ![NocoBase](https://static-docs.nocobase.com/8-jtp2bm.png)
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## Budibase
 
