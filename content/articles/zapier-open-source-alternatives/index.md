@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 In the world of workflow automation, **[Zapier](https://zapier.com/)** has long been one of the most popular and mature solutions. Founded in 2011 by Wade Foster, Bryan Helmig, and Mike Knoop, Zapier was originally designed to help small and medium-sized businesses automatically synchronize data across different SaaS platforms.
 
 Over more than a decade of development, Zapier has grown into a powerful ecosystem supporting 7,000+ app integrations, including Gmail, Slack, Notion, Salesforce, Google Sheets, and many other widely used tools. Today, it has amassed millions of users worldwide.
@@ -83,7 +85,7 @@ Compared to Zapier, n8n offers **greater flexibility and control**. Users can ch
 
 **Overview**
 
-**[NocoBase](https://www.nocobase.com/)** is an open-source, self-hosted low-code/no-code development platform designed to simplify enterprise internal system development. It uses a **data model-driven + plugin architecture**, enabling rapid construction of complex business systems while maintaining high scalability and flexibility. NocoBase currently has 16.5k stars on  [GitHub](https://github.com/nocobase/nocobase).
+**[NocoBase](https://www.nocobase.com/)** is an open-source, self-hosted, AI-driven low-code/no-code development platform designed to simplify the development of internal enterprise systems. Built on a data model–driven and plugin-based architecture, it enables rapid construction of complex business systems while maintaining a high level of extensibility and flexibility with the support of AI-driven capabilities. The project currently has 16.5k stars on [GitHub](https://github.com/nocobase/nocobase).
 
 Compared to Zapier, NocoBase provides **higher flexibility and extensibility**. Users can customize functionality through the plugin system to meet specific business needs. It also supports self-hosted deployment, ensuring data security and privacy.
 
@@ -107,7 +109,7 @@ Compared to Zapier, NocoBase provides **higher flexibility and extensibility**. 
 
 **Use Cases**
 
-* **AI-Powered Business Processes**: Integrate LLMs in CRM, customer support, or BI systems for automated analysis, prediction, and report generation.
+* **AI-Powered Business Processes**: Integrate LLMs in CRM, customer support, or BI systems for automated analysis, prediction, and report generation.![Viz.gif](https://static-docs.nocobase.com/Viz-demgin.gif)
 * **Multi-System Data Sync**: Seamlessly connect ERP, CRM, project management, and data warehouse systems to maintain consistent data.
 * **Internal Process Automation**: Automate approval flows, task assignment, and notifications to improve team collaboration efficiency.
 
