@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ## **はじめに**
 
 [ServiceNow](https://www.servicenow.com/) は、Gartnerが選ぶ「エンタープライズITSM三大プラットフォーム」の1つで、AWSやAzureと並ぶ存在です。ITサービス管理（ITSM）、IT資産管理（ITAM）、顧客サポート（CSM）、人事業務など、企業の基幹業務を幅広くカバーしています。
@@ -90,7 +92,7 @@ ServiceNowはSaaS型の課金体系で、モジュール数とユーザー数に
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBaseは、ビジネスアプリケーション開発に特化したオープンソースのローコードプラットフォームです。高い拡張性を持つプラグインアーキテクチャとデータモデル駆動設計を採用しており、カスタムITSMシステムの迅速な構築に適しています。
+NocoBase は、業務アプリケーション構築に特化したオープンソースの AI 駆動型ローコードプラットフォームです。高度にプラグイン化されたアーキテクチャとデータモデル駆動設計を採用しており、カスタマイズ性の高い ITSM システムを迅速に構築するのに適しています。
 
 **核心機能**
 
@@ -105,6 +107,10 @@ NocoBaseは、ビジネスアプリケーション開発に特化したオープ
 * **自動化ワークフローエンジン**：条件分岐、承認フロー、API連携を組み合わせた複雑な業務プロセスをノーコードで実現。チケットの自動振り分けや部門間連携も効率化できます。
 
 ![Built-In Workflow Automation](https://static-docs.nocobase.com/9-oh2cyu.png)
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **活用シーン**
 
