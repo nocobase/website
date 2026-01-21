@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Why Are More People Seeking Airtable Alternatives?
 
 In the past few years, Airtable has been one of the most popular collaborative database platforms, integrating spreadsheets, relational databases, and collaborative views for scenarios like project management, CRM, and process tracking. However, more teams are now reassessing Airtable’s long-term costs and flexibility—primarily because **it’s getting increasingly expensive.**
@@ -81,7 +83,7 @@ Many small-to-medium teams realize they only use basic features like tables, lin
 
 ### Feature Details of Self-Hosted Alternatives
 
-### [NocoBase](https://www.nocobase.com/): A Data Model-Driven Open-Source Low-Code Platform
+### [NocoBase](https://www.nocobase.com/): A Data Model-Driven AI Open-Source Low-Code Platform
 
 ![NocoBase](https://static-docs.nocobase.com/2-dndbj1.PNG)
 
@@ -97,6 +99,7 @@ License: [AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file#
 * **Workflow automation**: Node-based process design for complex approvals and state transitions, surpassing Airtable Automation.
 * **Fine-grained permissions**: Built-in RBAC model with field-level, view-level, and action-level controls.
 * **Complex relationship support**: Models one-to-many and many-to-many relationships for real-world business systems.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Ideal for**: Teams of all sizes building CRM, ERP, or approval platforms that require custom extensions, strict data control, detailed permissions, and efficient workflow collaboration.
 
