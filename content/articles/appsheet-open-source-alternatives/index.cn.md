@@ -1,4 +1,4 @@
-📝 注：本文最后更新于 2026 年 1 月 6 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
 
 ## **引言**
 
@@ -32,7 +32,7 @@
 
 💡 阅读更多：[替代 Airtable / 飞书表格？用零代码构建多对多关系的任务管理系统](https://www.nocobase.com/cn/blog/appsheet-alternative)
 
-## **NocoBase（数据模型驱动的低代码/零代码平台）**
+## **NocoBase**（数据模型驱动、AI 驱动的低代码 / 零代码平台）
 
 ![NocoBase.png](https://static-docs.nocobase.com/d29235958d60478d0a11680994012bcf.png)
 
@@ -56,6 +56,9 @@
 ![Role-Based Permission Management.png](https://static-docs.nocobase.com/9398794bc38886f89644afaa87821a4e.png)
 
 * **支持 Docker/本地部署**，数据完全掌握在自己手里，避免供应商锁定。
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## **Budibase（低代码应用构建平台）**
 
