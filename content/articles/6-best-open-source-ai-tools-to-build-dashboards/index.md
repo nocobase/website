@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 Last year we published [a review of core dashboard tools](https://www.nocobase.com/en/blog/core-app-dashboard-building-tools), highlighting several common challenges teams encounter when building data visualizations. Most of the tools we discussed were mature commercial products with good user experience, yet they offered limited flexibility in licensing, deployment, and extensibility. In conversations with readers afterward, we learned that many teams were actually seeking lower cost, more customizable, and [self hosted](https://www.nocobase.com/en/blog/7-self-hosted-ai-tools-build-business-app) open source alternatives.
