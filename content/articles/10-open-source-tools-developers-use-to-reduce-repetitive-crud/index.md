@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 All business systems inevitably involve CRUD.
@@ -54,9 +56,9 @@ GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocob
 
 GitHub Stars: 21k
 
-NocoBase treats CRUD not as something you implement once per project, but as a **long-term system capability that evolves over time**. Instead of repeatedly writing CRUD logic from scratch, teams define data models and system behavior up front, and let the system generate and extend CRUD functionality as requirements change.
+NocoBase is an open-source, AI-driven no-code/low-code development platform that helps transform enterprise CRUD capabilities from one-off implementations into reusable system capabilities.
 
-By using a data model–driven approach, NocoBase allows business users and engineers to collaborate on building complex internal systems, while keeping the underlying structure reusable across projects.
+By combining data model–driven design with built-in AI assistance, it enables business users and developers to collaboratively build complex business systems while reducing repetitive work, without having to write CRUD code from scratch each time.
 
 ![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
 
@@ -455,7 +457,6 @@ Tools are only the entry point. The real dividing line for long-term efficiency 
 ❤️If you found this article useful, feel free to share it with others who may be facing similar challenges.
 
 Note: This article was written with AI assistance, with human review and additions for viewpoints, data, and examples.
-
 
 **Related reading:**
 
