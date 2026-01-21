@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## **Introduction**
 
 If you've ever built a content calendar, customer database, task manager, or even a basic CRM with Airtable, you've likely appreciated how efficient and flexible it is—especially during the early stages of system building. It often feels like the ultimate evolution of spreadsheets.
@@ -19,7 +21,7 @@ But as your operations grow more complex—
 
 ---
 
-That's why many Airtable users are starting to seek more capable alternatives. One name that comes up often among developers and business teams is NocoBase. As an open-source no-code development platform, NocoBase preserves the ease of visual configuration while offering deeper, system-level capabilities—advanced data modeling, granular permission control, built-in workflows, plugin architecture, and self-hosted deployment.
+As a result, many Airtable users have started looking for more powerful alternatives. Among these options, NocoBase is increasingly mentioned by developers and business teams. As an open-source, AI-driven no-code development platform, NocoBase retains the convenience of visual operations while, with AI-driven capabilities, offering true system-level features such as complex data modeling, fine-grained access control, built-in workflows, plugin extensibility, and self-hosted deployment, making it suitable for more demanding business scenarios.
 
 But that raises an important question: can you replicate your familiar Airtable workflows in NocoBase?
 
