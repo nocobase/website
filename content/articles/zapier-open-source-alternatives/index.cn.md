@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 在工作流自动化工具领域，**[Zapier](https://zapier.com/) 一直是最受欢迎、最成熟的解决方案之一**。该项目由 Wade Foster、Bryan Helmig 和 Mike Knoop 于 2011 年创立，最初是为了帮助中小企业在不同 SaaS 平台之间实现数据自动同步。
 
 经过十余年的发展，Zapier 已经支持超过 7,000 款应用集成，涵盖 Gmail、Slack、Notion、Salesforce、Google Sheets 等主流工具，并在全球积累了数百万用户。
@@ -81,7 +83,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 **项目概览**
 
-**[NocoBase](https://www.nocobase.com/)** 是一款开源、自托管的低代码/无代码开发平台，旨在简化企业内部系统的开发。它采用**数据模型驱动 + 插件化架构**，可快速构建复杂业务系统，同时具备高度可扩展性和灵活性。目前项目在 [GitHub](https://github.com/nocobase/nocobase) 上获得了 16.5k Star。
+**[NocoBase](https://www.nocobase.com/)** 是一款开源、自托管的 AI 驱动低代码 / 无代码开发平台，旨在简化企业内部系统的开发。它采用数据模型驱动与插件化架构，可快速构建复杂业务系统，并在 AI 驱动能力的辅助下，兼顾高度的可扩展性与灵活性。目前项目在[ GitHub ]([GitHub](https://github.com/nocobase/nocobase)) 上获得了 21.3k Star。
 
 与 Zapier 相比，**NocoBase 提供了更高的灵活性和可扩展性**。 用户可以通过插件系统自定义功能，满足特定业务需求。 此外，NocoBase 支持自托管部署，确保数据安全和隐私保护。
 
@@ -105,7 +107,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 **应用场景**
 
-* **AI 驱动的业务流程**：在 CRM、客服、BI 系统中集成 LLM，实现自动分析、预测和生成报告。
+* **AI 驱动的业务流程**：在 CRM、客服、BI 系统中集成 LLM，实现自动分析、预测和生成报告。![Viz.gif](https://static-docs.nocobase.com/Viz-demgin.gif)
 * **多系统数据同步**：将 ERP、CRM、项目管理、数据仓库等系统无缝打通，保持数据一致性。
 * **企业内部流程自动化**：审批流、任务分发、消息通知等自动触发，提高团队协作效率。
 
