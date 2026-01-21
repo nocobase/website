@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Previously we compiled a range of open source AI project resources, including a review of [11 open source AI no code platforms on GitHub](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools) and [several summaries of AI low code tools](https://www.nocobase.com/en/blog/14-ai-low-code-platforms-github). As AI technology advances rapidly, more open source projects are beginning to actively adopt AI capabilities.
 
 A similar shift is happening in the internal tools space. Last year we profiled a number of [outstanding open source internal tool projects](https://www.nocobase.com/en/blog/open-source-internal-tools), and by 2025 most of them have added AI features, making the overall ecosystem feel renewed. This prompted us to create an updated, more systematic overview.
