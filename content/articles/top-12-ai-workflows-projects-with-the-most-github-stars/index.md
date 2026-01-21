@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 When discussing workflows and automation, tools like [n8n](https://n8n.io/), [Dify](https://dify.ai/zh), as well as well-known commercial products such as [Zapier](https://zapier.com/) and [Make](https://www.make.com/en), are likely familiar to you. However, in this GitHub AI project roundup, we’ll shift our focus back to GitHub workflows and highlight other notable projects. Among the tools with high star ratings, some may not be large in scale but are designed with a more specific focus, continuously refining the integration of workflows and AI. This article explores AI-integrated [workflow](https://github.com/topics/workflows) projects, showcasing their unique features and use cases. It aims to provide a clearer understanding of how AI has enhanced workflow tools.
 
 Based on project positioning and key features, this article categorizes AI workflow tools into three groups:
@@ -295,7 +297,6 @@ Official Website: [https://www.uvdesk.com](https://www.uvdesk.com)
 * **Automating processes for frequently occurring issues** For common or standardized inquiries, UVDesk can quickly generate initial responses by combining automation rules with AI content generation capabilities, reducing customer waiting time when tickets enter the system.
 
 Thank you for reading this. If this content was helpful, feel free to share it with teams exploring AI automation and workflow practices.
-
 
 **Related reading:**
 
