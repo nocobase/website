@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 On Reddit, discussions around IT ticketing systems often reveal a common challenge: finding the right balance between **simplicity, flexibility, and cost**.
 
 [One sysadmin running IT operations solo at a small office said:](https://www.reddit.com/r/selfhosted/comments/1282l0y/best_opensource_it_ticketing_system/)
@@ -42,13 +44,13 @@ So, instead of compromising with prebuilt tools, why not build a fully customize
 
 ![NocoBase](https://static-docs.nocobase.com/4-v2b19x.png)
 
-* GitHub Star: 16.4k
+* GitHub Star: 21.3k
 * GitHub: https://github.com/nocobase/nocobase
 * Website: https://www.nocobase.com/
 
 **Platform Overview**
 
-**[NocoBase](https://www.nocobase.com/)** is an open-source no-code/low-code platform built around **a data-model-driven and plugin-based architecture**. Unlike traditional ticketing systems, it focuses on flexible data modeling, workflow design, and plugin extensions, making it ideal for teams that want a highly customized ticketing system tailored to their unique business processes.
+**[NocoBase](https://www.nocobase.com/)** is an open-source no-code/low-code platform, with data model–driven design and a plugin-based architecture as its core characteristics, and it incorporates AI-driven capabilities. Unlike traditional ticketing systems, it offers flexible data modeling, process design, and plugin extensibility, with AI-driven assistance to improve configuration and usage efficiency. For teams looking to build ticketing systems tailored to their specific business needs, NocoBase provides a foundation that balances visual configuration with extensibility.
 
 **Why Build Your Ticketing System with NocoBase**
 
@@ -69,6 +71,10 @@ NocoBase offers [a ticketing system solution](https://www.nocobase.com/en/soluti
 * **Plugins & Automated Workflows**: Use the built-in automation engine to configure escalations, notifications, and data syncs. Extend functionality via plugins for asset management, reporting, or knowledge base integration.
 
 ![NocoBase](https://static-docs.nocobase.com/8-jtp2bm.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## Budibase
 
