@@ -94,7 +94,7 @@ Next, we will introduce these tools in detail according to their functional cate
 * Powerful task scheduling & long-task support: Built-in Task Scheduler runs methods on schedule/cycle and supports background heavy computing tasks for smooth UX.
 * Rich integrations & NLP interaction: Seamlessly integrates with Databricks, Dataiku, Google Colab, AWS SageMaker, IBM Watson, etc.; built-in TalkToTaipy lets users explore datasets via natural language.
 
-### **5. NocoBase (⭐16.5k)**
+### **5. NocoBase (⭐21.3k)**
 
 ![NocoBase.png](https://static-docs.nocobase.com/19d2408d66f2f9ce47142eefb3d35d2c.png)
 
@@ -102,13 +102,14 @@ Next, we will introduce these tools in detail according to their functional cate
 
 **Website**: https://www.nocobase.com/
 
-**Introduction**: An extremely extensible open-source no-code/low-code development platform that can flexibly build personalized enterprise applications and internal systems.
+**Introduction**: A highly extensible, open-source, AI-driven no-code/low-code development platform for flexibly building customized enterprise applications and internal systems.
 
 **Core Features**:
 
 * Data Model Driven: Different from traditional form and table-driven methods, business logic is defined through a structured data model, adapting to more complex and changeable enterprise scenarios.
 * Plugin Architecture: All functions are provided through plugins. Adopting a microkernel architecture, it supports the expansion of function modules as needed. Developers can easily create and introduce custom plugins to achieve flexible expansion and reuse of system capabilities.
 * WYSIWYG Interface: An intuitive operation interface simplifies the development of complex systems.
+* AI employees embedded in the system: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ---
 
