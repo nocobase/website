@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 About a month ago, I came across a highly discussed post on [Hacker News](https://news.ycombinator.com/item?id=44450160) — “[Stop Building AI Agents](https://decodingml.substack.com/p/stop-building-ai-agents)”
 
 ![Stop Building AI Agents](https://static-docs.nocobase.com/1-472k2u.png)
