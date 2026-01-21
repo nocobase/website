@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 大概一个多月前，我在 [Hacker News](https://news.ycombinator.com/item?id=44450160) 上刷到一篇讨论热度很高的文章——[《停止构建 AI Agent》](https://decodingml.substack.com/p/stop-building-ai-agents)。
 
 ![Stop Building AI Agents](https://static-docs.nocobase.com/1-472k2u.png)
