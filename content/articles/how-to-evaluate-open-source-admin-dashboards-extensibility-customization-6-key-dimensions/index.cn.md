@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 在我们上一篇[《GitHub 上最受欢迎的开源管理后台项目》](https://www.nocobase.com/cn/blog/top-11-open-source-admin-dashboard-projects-on-github)发布后，有读者留言提问：
 
 > **“如何评估开源 Admin Dashboard 项目的可扩展性和定制化能力，以确保其能适应不断变化的企业业务需求？”**
