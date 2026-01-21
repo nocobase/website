@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 In today's article, we're taking a closer look at GitHub's most popular projects among developers.
 
 You might have read numerous "Top 10" articles before, but we’re doing something different—**ranking projects purely by actual GitHub stars**, ensuring we highlight only those open-source solutions that have proven value and developer approval.
@@ -214,18 +216,18 @@ Platform is fully open-source, licensed under Apache License 2.0, making all cor
 
 **Note:** Given its role as foundational infrastructure, Platform requires a certain level of technical proficiency, especially in data modeling and custom application development. It is best suited for organizations with well-established technical expertise and the capability for in-house development.
 
-## **#6: NocoBase ⭐️ 15.5k**
+## **#6: NocoBase ⭐️ 21.3k**
 
 ![NocoBase.png](https://static-docs.nocobase.com/88b4ac7f-43f2-4e5a-a923-9324749c2d85-e3nvc0.png)
 
 * GitHub Release: 2021
-* Stars: 15.5k
+* Stars: 21.3k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com](https://www.nocobase.com)
 
 **Overview**
 
-NocoBase is an open-source no-code/low-code platform known for its highly extensible, data model-driven approach. It empowers enterprises and developers to rapidly build various internal management systems such as CRM and ERP.
+**NocoBase** is an open-source, AI-driven no-code/low-code development platform built around the principles of high extensibility and data model–driven design. With AI-driven capabilities, it helps enterprises and developers quickly build management systems such as CRM and ERP.
 
 🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
@@ -240,6 +242,7 @@ Centered around customizable data models, NocoBase lets users define their own d
 * **Visual Development Experience:** Intuitive WYSIWYG interface allows rapid application creation, even for non-technical business users.
 * **Comprehensive ERP/CRM Capabilities:** Perfect for building not only CRM or ERP but also broader applications like office automation, approval systems, and project management tools.
 * **Active & Multilingual Community:** Vibrant user communities in Chinese, English, and Japanese, alongside well-maintained documentation and tutorials by an active core team.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Ideal For**
 
