@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 Why do most no-code tools struggle with deep PostgreSQL integration? No-code and low-code platforms are rapidly gaining traction, simplifying the creation of business systems more than ever. Yet, for users with a technical background, a persistent question remains: can these platforms truly interact effectively with professional databases like PostgreSQL?
@@ -48,7 +50,7 @@ Below is our selection of six no-code platforms, each distinct in their PostgreS
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/1280X1280%20(38)-oug9b4.PNG)
 
-NocoBase is an open-source, plugin-based no-code/low-code platform designed with **"data modeling-driven system building"** at its core. PostgreSQL is one of its default integrated core databases. Unlike platforms that merely connect to PostgreSQL, NocoBase goes further by offering **developer-friendly structural control capabilities**. This allows you to define business structures directly within the frontend interface, much like using a dedicated database modeling tool.
+**NocoBase** is an open-source, plugin-based, AI-driven no-code/low-code platform. From the very beginning, it has been built around the core concept of “data model–driven system construction,” with AI-driven capabilities enhancing configuration and usage efficiency. PostgreSQL is one of its default integrated core databases.Unlike platforms that merely connect to PostgreSQL, NocoBase goes further by offering **developer-friendly structural control capabilities**. This allows you to define business structures directly within the frontend interface, much like using a dedicated database modeling tool.
 
 **PostgreSQL Support and Schema Editing Capabilities**
 
@@ -67,6 +69,7 @@ NocoBase is an open-source, plugin-based no-code/low-code platform designed with
 * **Plugin Architecture:** Allows extending field types, logical functions, and UI components via plugins for customized needs.
 * **Automatic API Generation:** Each data model automatically generates REST APIs, facilitating seamless integration with other systems.
 * **Fine-grained Permission Control:** Supports role, field, and record-level permission settings, ideal for multi-user collaboration.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Reasons for Recommendation**
 
