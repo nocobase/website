@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 これまでにも、私たちは多くのオープンソース AI 関連のプロジェクトを整理してきました。たとえば、[GitHub の 11 個のオープンソース AI ノーコードツール](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools) や、[AI 低コードツールのまとめ記事](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github) などです。AI 技術の進化が加速する中で、より多くのオープンソースプロジェクトが積極的に AI を取り入れ始めています。
 
 同じ動きは、内部ツール（Internal Tools）分野でも起こっています。昨年、私たちは[優れたオープンソース内部ツールのまとめ](https://www.nocobase.com/cn/blog/open-source-internal-tools)を紹介しましたが、2025 年に入ってそれらの多くが AI 機能を取り込み、大きく進化しました。そのため、今回あらためて体系的にアップデートすることにしました。
