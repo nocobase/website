@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 上周，我们针对 Reddit 上的用户讨论与需求，为小型企业推荐了一些项目管理工具：
 
 [适合小型企业的项目管理系统推荐：Reddit 用户真实需求](https://www.nocobase.com/cn/blog/project-management-systems-for-small-businesses)
@@ -172,7 +174,7 @@ Website: https://huly.io/
 
 **简介**
 
-[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源无代码平台，它不预设固定功能，而是提供灵活的数据模型和插件机制，让团队能够完全根据需求灵活搭建项目管理所需模块。
+[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源、AI 驱动的无代码平台，它不预设固定功能，而是提供灵活的数据模型和插件机制，并结合 AI 驱动能力，让团队能够完全根据自身需求灵活搭建项目管理所需的各类模块。
 
 🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，开源、完全掌控、极易扩展与修改，欢迎体验！
 
@@ -190,9 +192,9 @@ Website: https://www.nocobase.com/
 
 ![完整研发生命周期管理](https://static-docs.nocobase.com/%E5%AE%8C%E6%95%B4%E7%A0%94%E5%8F%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86-wvaq9q.png)
 
-* **多样化任务视图**：NocoBase 同时支持表格、Kanban、甘特图、日历等多视图。团队可以在不同阶段切换视图：规划阶段用甘特图明确里程碑，执行阶段用 Kanban 管理迭代 backlog，测试阶段用表格跟踪缺陷。
+* **多样化任务视图**：NocoBase 同时支持表格、Kanban、甘特图、日历等多种任务视图。团队可根据项目阶段灵活切换：规划阶段使用甘特图拆解里程碑与依赖关系，执行阶段通过 Kanban 管理迭代 backlog，测试阶段以表格方式集中跟踪缺陷与处理状态。在此基础上，AI 员工能够感知当前视图结构和选中的任务数据，辅助完成实际工作。
 
-![多样化任务视图](https://static-docs.nocobase.com/%E5%A4%9A%E6%A0%B7%E5%8C%96%E4%BB%BB%E5%8A%A1%E8%A7%86%E5%9B%BE-f5vkeu.png)
+![NocoBase3.png](https://static-docs.nocobase.com/4-mrbehf.png)
 
 * **精细化权限控制**：NocoBase 提供角色级、条件级、字段级的细粒度权限设置，支持复杂的协作场景。例如：开发只能修改自己负责的任务字段，测试团队可以添加 bug 但不能改动开发进度，项目经理则拥有全局可见性。
 
