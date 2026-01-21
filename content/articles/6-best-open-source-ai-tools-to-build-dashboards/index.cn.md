@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 ## 引言
 
 去年我们写过一篇[核心应用仪表盘工具盘点，](https://www.nocobase.com/cn/blog/core-app-dashboard-building-tools)聊到不少团队在做数据可视化时遇到的一些共性问题。当时我们提到的，大多是已经比较成熟的商业化产品，体验不错，但在授权方式、部署模式和扩展能力上，都有相对固定的边界。后来和一些读者交流时也发现，很多团队其实更希望找到一种成本更低、可定制度更高、还能支持[自托管](https://www.nocobase.com/cn/blog/7-self-hosted-ai-tools-build-business-app)的开源替代方案。
