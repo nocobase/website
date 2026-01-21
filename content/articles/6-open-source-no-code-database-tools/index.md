@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 If you’ve used Airtable or Notion, you probably feel the same way I do: they’re far more convenient than traditional spreadsheets like Excel or Google Sheets.
@@ -30,11 +32,13 @@ Whether you’re an individual developer or selecting tools for a team, this sho
 
 * **GitHub:** [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **Website:** [https://www.nocobase.com](https://www.nocobase.com/)
-* **Stars:** 16.3k
+* **Stars:** 21.3k
 * **Contributors:** 94
 * **Activity:** Updated almost daily, active community
 
-**Overview** NocoBase is an open-source no-code platform for mid-to-high complexity business systems. Its core concept: *data modeling drives application building*.
+**Overview**
+
+NocoBase is an open-source, AI-driven no-code development platform designed for mid- to high-complexity business systems. Its core concept is building applications through data modeling, with AI-driven capabilities enhancing system construction and usage efficiency.
 
 Compared to Airtable, NocoBase offers a full modeling system: define fields, views, and relationships; configure user permissions; set up workflows; design page layouts; and extend via plugins.
 
