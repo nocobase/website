@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 RBAC (Role-Based Access Control) is a widely adopted access control model that maps **users → roles → permissions** in a structured and manageable way. Its simplicity, auditability, and flexibility across diverse business scenarios have made it a default choice for many enterprise-grade systems.
 
 💡 New to RBAC? Start with this guide: [How to Design an RBAC (Role-Based Access Control) System](https://www.nocobase.com/en/blog/how-to-design-rbac-role-based-access-control-system)
@@ -30,7 +32,7 @@ Website: https://www.nocobase.com/
 
 GitHub: https://github.com/nocobase/nocobase
 
-**Overview**: NocoBase is an open-source low-code/no-code platform purpose-built for internal business systems. It features robust RBAC support with visual permission management and fine-grained controls, ideal for CRM, ERP, CMS, or any role-driven system.
+**Overview**: NocoBase is an open-source, AI-driven low-code/no-code platform designed for building business back-end systems. It supports flexible data modeling and includes a powerful RBAC permission management module, and with AI-driven assistance, is well suited for multi-role, multi-user enterprise application scenarios such as CRM, ERP, and CMS.
 
 **Key Features:**
 
