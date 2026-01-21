@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 On [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/), one developer vividly described **the lifecycle of Microsoft Access** as below:
 
 ![reddit](https://static-docs.nocobase.com/reddit-en-3gae5i.png)
@@ -40,7 +42,7 @@ These tools go beyond simple database management—they also include no-code dev
 
 **Overview**
 
-NocoBase is a highly extensible open-source low-code/no-code platform designed for enterprise applications and business systems. It supports visual modeling, permission management, workflow configuration, and flexible feature expansion through plugins.
+NocoBase is a highly extensible, open-source, AI-driven low-code/no-code platform designed for enterprise applications and business systems. It supports visual data modeling, permission management, and workflow configuration, and can be flexibly extended through plugins with the assistance of AI-driven capabilities.
 
 Unlike Microsoft Access, which is a desktop database tool, NocoBase is a comprehensive platform for building online business applications. In many enterprise use cases—such as collaborative databases, form-driven applications, departmental data management, and visual reporting—NocoBase can serve as a modern alternative to Access.
 
