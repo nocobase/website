@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 6, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ## **Introduction**
 
@@ -32,7 +32,7 @@ These feedbacks indicate that developers are seeking more **cost-effective, flex
 
 💡 Read More: [AppSheet Alternative: Build a Many-to-Many Task System No-Code](https://www.nocobase.com/en/blog/appsheet-alternative)
 
-## **NocoBase (Data Model-Driven Low-Code/No-Code Platform)**
+## **NocoBase** (A Data Model–Driven, AI-Driven Low-Code / No-Code Platform)
 
 ![NocoBase.png](https://static-docs.nocobase.com/d29235958d60478d0a11680994012bcf.png)
 
@@ -56,6 +56,10 @@ These feedbacks indicate that developers are seeking more **cost-effective, flex
 ![Role-Based Permission Management.png](https://static-docs.nocobase.com/9398794bc38886f89644afaa87821a4e.png)
 
 * **Supports Docker/local deployment**: NocoBase enables Docker and local deployment, ensuring full data ownership and eliminating the risk of vendor lock-in.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## **Budibase (Low-Code App Builder)**
 
