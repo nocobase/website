@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 过去一年，我们一直在持续关注自托管生态。
 
 从最初的[系统搭建指南](https://www.nocobase.com/cn/blog/the-ultimate-guide-to-awesome-self-hosted-solutions)，再到后来的[数据管理与工具推荐](https://www.nocobase.com/cn/blog/data-transformation-tools)，为了帮助开发者快速了解行业趋势，我们还整理了[《GitHub Star 数量前 13 的自托管项目》](https://www.nocobase.com/cn/blog/self-hsosted-projects-list)，盘点了包括工作流、Git 管理、低代码、日志分析等的热门项目。
@@ -42,7 +44,7 @@
 
 **功能方向：**
 
-自托管的无代码 / 低代码开发平台。
+自托管的、AI 驱动的无代码 / 低代码开发平台。
 
 **核心亮点：**
 
