@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Background
 
 A few days ago, I came across [this post on Reddit](https://www.reddit.com/r/nocode/comments/1iwcsrf/comment/miefglw/?context=3):
@@ -19,8 +21,6 @@ Here’s a summary of the user's **core requirements**:
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Why Most No-Code Platforms Struggle with Complex Data Relationships?
 
