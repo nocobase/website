@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 6, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 Last year, as the number of NocoBase users grew, we faced a pressing challenge: **how to efficiently manage customer feedback and support requests**.
 
@@ -44,7 +44,7 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 
 📄 License: AGPL-3.0
 
-**NocoBase** is an open-source no-code platform driven by data models and plugin extensions. Unlike rigid traditional ticketing systems, it lets you **fully customize interfaces, form fields, workflows, and automation rules**.
+**NocoBase is a data model–driven, plugin-extensible, open-source, AI-driven no-code platform. Unlike traditional ticketing systems with fixed workflows, NocoBase allows teams, with the support of AI-driven capabilities, to fully customize interfaces, form fields, processes, and automation rules based on their specific requirements.
 
 We integrated a ticketing system into our existing NocoBase-built CRM. User data sync was seamless, and we configured the interface in just half a day.
 
@@ -53,6 +53,8 @@ We integrated a ticketing system into our existing NocoBase-built CRM. User data
 * **Visual No-Code Building**: A WYSIWYG interface lets you quickly design custom ticketing systems—forms, workflows, statuses—without coding, even for complex logic.
 * **Plugin Architecture**: Modular features (e.g., comments, alerts, automation triggers, collaborative editing) can be installed on demand, enhancing scalability and maintainability.
 * **Data Model-Driven**: Robust data modeling integrates ticketing with CRM, project management, HR, and asset management modules, unifying business data.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ✅ **Use Cases**: Internal IT support, customer service centers, approval workflows, after-sales management, task assignment.
 
