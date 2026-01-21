@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 > “I don’t see anyone who actually likes Jira.”
 
 Recently, a [Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/jira_is_it_still_helping_teams_or_just_slowing/) thread about **[Jira](https://www.atlassian.com/software/jira)** sparked heated discussions among developers. Many shared their frustrations and struggles when using the platform.
@@ -42,7 +44,7 @@ In this article, we’ll introduce **6 excellent open-source project management 
 
 **Overview**
 
-**[NocoBase](https://www.nocobase.com/)** is an open-source low-code/no-code platform designed to help teams build highly customized systems quickly. With 16K+ [GitHub](https://github.com/nocobase/nocobase) Stars, it enables you to create personalized project management apps that fit your workflows.
+**[NocoBase](https://www.nocobase.com/)** is an open-source, AI-driven low-code/no-code development platform focused on helping teams quickly build highly customized systems. The project has gained over 21K stars on  [GitHub](https://github.com/nocobase/nocobase).
 
 Its biggest advantage over Jira lies in flexibility and extensibility: instead of forcing you to adapt to predefined workflows, NocoBase lets you design your own project management environment.
 
@@ -65,6 +67,8 @@ Its biggest advantage over Jira lies in flexibility and extensibility: instead o
 * **Plugin Ecosystem & Extensibility**: Leverage a rich official plugin marketplace or create custom plugins to extend system functionality for complex business needs.
 
 ![Plugin Ecosystem & Extensibility.png](https://static-docs.nocobase.com/Plugin%20Ecosystem%20%26%20Extensibility-zf0392.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
