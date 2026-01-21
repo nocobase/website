@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
 
 Some of our previous lists include:
@@ -14,8 +16,6 @@ In this post, we’re focusing on **Web Applications**. We searched through the 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 To help you quickly understand and evaluate each project, we’ve broken down the analysis into three simple parts:
 
@@ -122,6 +122,7 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL
 * **Plugin-based low-code framework**: Every core function (data modeling, access control, workflows, UI, etc.) is a plugin. Enable, disable, or extend as needed.
 * **Data-model driven**: Visually create and relate tables, define business models, and integrate external APIs or databases.
 * **Enterprise-ready features**: Role-based permissions, approval flows, field-level controls—ideal for building custom CRMs, HR, ERP systems.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ### How to use it
 
