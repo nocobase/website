@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 過去1年、私たちはセルフホストの領域を継続して追いかけてきました。
 
 システム[構築の基本ガイドから始まり](https://www.nocobase.com/ja/blog/the-ultimate-guide-to-awesome-self-hosted-solutions)、[データ管理やツール紹介へと広げつつ](https://www.nocobase.com/ja/blog/data-transformation-tools)、開発者が業界動向を素早く把握できるように、ワークフロー、Git管理、ローコード、ログ分析などを含む[「GitHubスター数トップ13」](https://www.nocobase.com/ja/blog/self-hsosted-projects-list)のプロジェクトもまとめてきました。
@@ -44,7 +46,7 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 主な特徴：
 
-ノーコード／ローコード開発プラットフォーム
+セルフホスト可能な AI 駆動型ノーコード／ローコード開発プラットフォーム。
 
 主なポイント：
 
