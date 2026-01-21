@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 ## 背景
 
 前几天，我在逛 Reddit 的时候，看到了[这样一篇帖子](https://www.reddit.com/r/nocode/comments/1iwcsrf/comment/miefglw/?context=3)：
@@ -19,8 +21,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 为什么许多零代码平台在复杂关系管理上有局限？
 
