@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## **Introduction**
 
 [ServiceNow](https://www.servicenow.com/) is widely recognized as one of Gartner’s “Big Three” enterprise ITSM platforms, alongside AWS and Azure. It offers a comprehensive suite of features covering **IT Service Management (ITSM)**, **IT Asset Management (ITAM)**, **Customer Service Management (CSM)**, **HR workflows**, and more.
@@ -92,7 +94,7 @@ ServiceNow follows a **SaaS subscription model** with pricing based on modules, 
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase is an open-source low-code platform designed for building business applications. It features a highly modular plugin-based architecture and a data model-driven design, making it ideal for quickly creating custom ITSM solutions.
+NocoBase is an open-source, AI-driven low-code platform focused on business application development. Built on a highly plugin-based architecture and a data model–driven design, it is well suited for rapidly building customized ITSM systems.
 
 **Key Features**
 
@@ -107,6 +109,10 @@ NocoBase is an open-source low-code platform designed for building business appl
 * **Built-In Workflow Automation**: Includes a low-code process orchestration engine with conditions, approvals, API integrations, and cross-system triggers. You can automate SLA escalations, ticket routing, and inter-department workflows without heavy coding.
 
 ![Built-In Workflow Automation](https://static-docs.nocobase.com/9-oh2cyu.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
