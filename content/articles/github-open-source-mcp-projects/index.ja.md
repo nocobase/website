@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 MCP（Model Context Protocol）という言葉が本格的に広く語られるようになったのは、2025 年初頭、特に AI ツール開発の界隈でした。3月には「 MCP は未来の標準プロトコルになり得るか？」という議論が盛り上がり、LangChain や LangGraph の主要メンバーが X 上で激しく討論。GitHub 上でも関連プロジェクトが次々と注目を集めました。
 
 ![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
