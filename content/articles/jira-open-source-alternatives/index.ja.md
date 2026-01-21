@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 > “I don’t see anyone who actually likes Jira.”
 
 最近、[Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/jira_is_it_still_helping_teams_or_just_slowing/)でJiraに関する投稿が話題になりました。
@@ -41,7 +43,7 @@
 
 **概要**
 
-**[NocoBase](https://www.nocobase.com/)** は、オープンソースのローコード／ノーコード開発プラットフォームで、チームが高度にカスタマイズされたシステムを迅速に構築できるよう設計されています。現在、[GitHub](https://github.com/nocobase/nocobase)ではStar数が16Kを超えています。
+**[NocoBase](https://www.nocobase.com/)** は、チームが高度にカスタマイズされたシステムを迅速に構築できるよう支援する、オープンソースの AI 駆動型ローコード／ノーコード開発プラットフォームです。現在、[GitHub]([GitHub](https://github.com/nocobase/nocobase)) では 21K 以上の Star を獲得しています。
 
 Jiraと比べた最大の強みは**柔軟性と拡張性**で、標準的なタスク管理やワークフローだけでなく、企業固有のプロセスに合わせたプロジェクト管理アプリを自由に構築できます。
 
@@ -64,6 +66,10 @@ Jiraと比べた最大の強みは**柔軟性と拡張性**で、標準的なタ
 * **プラグインと拡張性**：公式プラグインマーケットが充実。独自プラグインや業務ロジックの構築にも対応し、複雑な要件にも柔軟に適応。
 
 ![Plugin Ecosystem & Extensibility.png](https://static-docs.nocobase.com/Plugin%20Ecosystem%20%26%20Extensibility-zf0392.png)
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **主なユースケース**
 
