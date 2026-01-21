@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Has your team used Google Sheets in the past or is it using it now?
 
 It is lightweight, easy to get started with, and simple for teams to collaborate on, which is why many organizations choose it at the early stages of digitalization. For tasks like recording data, tracking work, managing content, or doing basic analysis, spreadsheets can be a quick solution.
@@ -76,7 +78,7 @@ Designed for teams that have outgrown traditional spreadsheets but do not yet ne
 
 Official website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase is an open source no code and low code platform for building business applications. It can be used to create internal systems, admin dashboards, and data centric workflows. It supports self hosting and also offers an official hosted service, making it a good fit for teams moving from spreadsheets to more structured system based management. Applications are built through visual configuration, with additional capabilities available through plugins and APIs. In some cases, the platform’s AI features can further improve data entry and workflow efficiency.
+NocoBase is an open-source, AI-driven no-code/low-code business application building platform designed for internal systems, admin panels, and data-centric business workflows. It supports self-hosting and also offers an official hosting option, making it suitable for teams looking to move from spreadsheets to more structured system-based management. Applications are built through visual configuration, with extensibility provided via plugins and APIs, and in certain scenarios, official AI features can be used to further improve data entry and workflow efficiency.
 
 **Usage scenarios**
 
