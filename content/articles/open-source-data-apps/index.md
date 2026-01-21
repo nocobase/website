@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 For developers, one of the most common needs at work is to quickly build a data application.
@@ -39,7 +41,7 @@ Let's go through each category to explore the key features and ideal use cases o
 
 ## NocoBase
 
-An open-source, no-code platform driven by data models. All features are provided as plugins, supporting visual app building and flexible extensions.
+A data model–driven, open-source, AI-driven no-code platform where all functionality is delivered through plugins, supporting visual building and flexible extensibility.
 
 ![NocoBase](https://static-docs.nocobase.com/1-0o45ri.png)
 
