@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 之前我们整理过很多开源 AI 项目相关的内容，包括 [GitHub 上 11 款开源的 AI 无代码平台](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools)、以及 [AI 低代码工具的盘点文章](https://www.nocobase.com/cn/blog/14-ai-low-code-platforms-github)。AI 技术的快速演进，我们看到越来越多的开源项目开始主动拥抱 AI。
 
 同样的趋势，也正在发生在内部工具（Internal Tools）领域。去年我们盘点过[一批优秀的开源内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)，但进入 2025 年后，这些工具几乎都陆续加入了 AI 能力，整体都已经焕然一新。因此，我们决定重新做一次系统性的更新。
