@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 在 [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/) 上，一位开发者用一段话生动描绘了 **Microsoft Access 的生命周期**：
 
 ![reddit](https://static-docs.nocobase.com/reddit-wzra4s.PNG)
@@ -40,7 +42,7 @@
 
 **项目概况**
 
-NocoBase 是一款极易扩展的开源低代码/无代码平台，专为企业级应用和业务系统设计。它支持可视化的数据建模、权限管理、工作流配置，并可通过插件灵活扩展功能。
+NocoBase 是一款极易扩展的开源、AI 驱动的低代码 / 无代码平台，专为企业级应用和业务系统设计。它支持可视化的数据建模、权限管理、工作流配置，并可在 AI 驱动能力的辅助下，通过插件灵活扩展功能。
 
 虽然 NocoBase 与 Microsoft Access 的定位并不相同——Access 是桌面数据库，而 NocoBase 是无代码平台，但在许多企业常见的使用场景下，NocoBase 依然可以成为理想的替代方案，例如团队协作数据库、表单驱动的业务应用、部门级数据管理和可视化报表分析等。
 
