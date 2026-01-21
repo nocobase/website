@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 If you click on this article, you are probably already asking yourself one thing: managing your business with Excel or online spreadsheets feels increasingly frustrating.
@@ -25,8 +27,6 @@ Now, it is time to change that.
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Step 1: Splitting the Data
 
