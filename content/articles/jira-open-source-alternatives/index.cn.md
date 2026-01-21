@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 > “我没见过有谁是真的喜欢 Jira。”
 
 最近逛 [Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/jira_is_it_still_helping_teams_or_just_slowing/) 时，看到一条讨论 Jira 的帖子，底下不少开发者都在分享自己的使用感受。
@@ -43,7 +45,7 @@
 
 **项目概览**
 
-**[NocoBase](https://www.nocobase.com/)** 是一款开源的低代码/零代码开发平台，专注于帮助团队快速构建高度定制化系统。项目目前在 [GitHub](https://github.com/nocobase/nocobase) 上 Star 超过 16K。
+**[NocoBase](https://www.nocobase.com/)** 是一款开源、AI 驱动的低代码 / 零代码开发平台，专注于帮助团队快速构建高度定制化系统。项目目前在 GitHub 上 Star 超过 21K。
 
 与 Jira 相比，NocoBase 的核心优势在于**灵活性与可扩展性**，用户可自由搭建所需模块，不仅能满足常见的任务管理、工单流转等需求，还支持快速构建符合企业内部流程的个性化项目管理应用。
 
@@ -63,9 +65,14 @@
 
 ![多视图.png](https://static-docs.nocobase.com/%E5%A4%9A%E8%A7%86%E5%9B%BE-888zh4.png)
 
+
 * **插件与扩展能力**：官方插件市场丰富，允许自定义插件和业务逻辑编排，使系统能够适配复杂或特定业务需求。
 
 ![插件.png](https://static-docs.nocobase.com/%E6%8F%92%E4%BB%B6-vihg0r.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **应用场景**
 
