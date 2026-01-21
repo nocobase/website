@@ -1,4 +1,4 @@
-📝 注：この記事は 2026 年 1 月 6 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
 ## **プロローグです**
 
@@ -32,7 +32,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 
 💡 詳細情報：[AppSheetの代替に！ノーコードで多対多タスク管理を簡単に作る方法](https://www.nocobase.com/ja/blog/appsheet-alternative)
 
-## **NocoBase (データモデルによるローコード/ゼロコードのプラットフォームです)**
+## **NocoBase**（データモデル駆動の AI 駆動型ローコード／ノーコードプラットフォーム）
 
 ![NocoBase.png](https://static-docs.nocobase.com/d29235958d60478d0a11680994012bcf.png)
 
@@ -56,6 +56,10 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 ![Role-Based Permission Management.png](https://static-docs.nocobase.com/9398794bc38886f89644afaa87821a4e.png)
 
 * **Docker/ローカル展開をサポートし**、ベンダーのロックを回避するためにデータを完全に自分の手に入れます。
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## **Budibase (ローコードアプリケーション構築プラットフォームです)**
 
