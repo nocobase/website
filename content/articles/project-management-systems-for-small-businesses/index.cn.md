@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 对于小型企业来说，项目管理系统（Project Management System，PMS）并不是“越强大越好”。
 
 在 Reddit 社区上，许多创业者、非营利组织管理者和小团队负责人分享了他们在选型过程中的真实困惑，几乎所有人都在问同一个问题：
@@ -100,7 +102,9 @@
 
 ![nocobase.png](https://static-docs.nocobase.com/1-snczne.png)
 
-**概览**[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源无代码平台，它不预设固定功能，而是允许用户完全根据需求搭建所需模块，适合希望通过自定义配置来整合多种功能的小型企业。
+**概览**
+
+[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源、AI 驱动的无代码平台，它不预设固定功能，而是允许用户完全根据需求搭建所需模块，并在 AI 驱动能力的辅助下，通过自定义配置整合多种功能，适合希望以较低成本实现灵活系统组合的小型企业。
 
 🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，开源、完全掌控、极易扩展与修改，欢迎体验！
 
@@ -121,6 +125,10 @@
 * **极易修改与扩展**：得益于无代码和插件化架构，用户可以轻松自定义字段、流程和业务逻辑，不受工具限制。随着团队规模和业务复杂度的变化，系统可快速扩展而无需更换平台。
 
 ![极易修改与扩展.png](https://static-docs.nocobase.com/5-51yag9.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **适合小型企业的理由**
 
