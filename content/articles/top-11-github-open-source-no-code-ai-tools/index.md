@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 Over the past year, AI and no-code have come together much faster than anyone expected. **It’s no longer just about adding an AI feature — it’s changing the way we build applications.**
@@ -26,7 +28,7 @@ Official website: [https://www.nocobase.com](https://www.nocobase.com)
 
 **Overview**
 
-NocoBase is an open-source, self-hosted no-code development platform built around data modeling. With its “AI Employee” feature, it brings AI into real business systems.
+An open-source, self-hosted no-code development platform centered on data modeling, introducing intelligence into business systems through AI-driven “AI Employees” capabilities.
 
 ![nocobase.png](https://static-docs.nocobase.com/nocobase-s1wqmh.png)
 
