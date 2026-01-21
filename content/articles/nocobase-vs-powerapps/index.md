@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 When businesses begin building internal systems, Power Apps often comes to mind first for IT teams.
