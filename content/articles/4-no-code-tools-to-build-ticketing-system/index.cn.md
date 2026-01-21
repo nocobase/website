@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
+
 在 Reddit 上，关于工单系统的讨论经常能看到用户的困惑。
 
 [一位在小型办公室独自运维的用户说：](https://www.reddit.com/r/selfhosted/comments/1282l0y/best_opensource_it_ticketing_system/)
@@ -42,13 +44,13 @@
 
 ![NocoBase](https://static-docs.nocobase.com/4-v2b19x.png)
 
-* GitHub Star: 16.4k
+* GitHub Star: 21.3k
 * GitHub: https://github.com/nocobase/nocobase
 * Website: https://www.nocobase.com/
 
 **平台概览**
 
-[NocoBase](https://www.nocobase.com/) 是一个开源的零代码/低代码平台，**核心特点是数据模型驱动与插件化架构**。与传统的工单系统不同，它提供了灵活的数据建模、流程设计和插件扩展能力。对于希望根据自身业务特点搭建工单系统的团队来说，NocoBase 提供了一个兼具可视化与可扩展性的基础平台。
+[NocoBase](https://www.nocobase.com/) 是一个开源的零代码 / 低代码平台，核心特点是数据模型驱动与插件化架构，并逐步引入 AI 驱动能力。与传统的工单系统不同，它提供了灵活的数据建模、流程设计和插件扩展能力，并可在 AI 驱动能力的辅助下提升配置与使用效率。对于希望根据自身业务特点搭建工单系统的团队来说，NocoBase 提供了一个兼具可视化与可扩展性的基础平台。
 
 **使用 NocoBase 搭建工单系统的亮点**
 
@@ -69,6 +71,10 @@ NocoBase 提供了[工单系统解决方案](https://www.nocobase.com/cn/solutio
 * **插件化与自动化工作流**：内置自动化引擎，可以实现工单升级、通知提醒、数据同步等流程规则。还可通过插件扩展资产管理、统计报表、知识库等功能。
 
 ![NocoBase](https://static-docs.nocobase.com/8-jtp2bm.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ## Budibase
 
