@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Welcome to the seventh article in the series ranking GitHub Stars—today, we’ll explore the most popular app builder tools.
 
 Previously, we have delved into the most favored [no-code tools](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars), [low-code projects](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars), [internal tools](https://www.nocobase.com/en/blog/open-source-internal-tools), [CRUD projects](https://www.nocobase.com/en/blog/crud-projects), [self-hosted projects](https://www.nocobase.com/en/blog/self-hsosted-projects-list), and [Airtable open-source alternatives](https://www.nocobase.com/en/blog/open-source-airtable-alternatives) on GitHub, totaling over 50 high-quality projects! (😁 Feel free to click and read anytime.)
@@ -69,7 +71,7 @@ Appsmith is ideal for development teams that need to rapidly develop custom appl
 
 **Introduction**
 
-Unlike other no-code development platforms, NocoBase is designed specifically for developers or teams with development capabilities. As an open-source, self-hosted no-code and low-code development platform, its plugin-based architecture allows developers to easily add and customize applications.
+**NocoBase** differs from other no-code (zero-code) platforms by being designed specifically for developers or teams with development capabilities. As an open-source, self-hosted, AI-driven no-code and low-code development platform, its plugin-based architecture allows developers to easily extend and customize applications.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
@@ -87,6 +89,10 @@ Unlike other no-code development platforms, NocoBase is designed specifically fo
 ![Data Model Driven.png](https://static-docs.nocobase.com/cc1f58bb72859f40d6f5925d3f09f84c.png)
 
 * **Flexible Applicability**: NocoBase supports web application development, offering a free community edition and a more professional commercial edition to meet the needs of enterprises of all sizes.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
