@@ -1,6 +1,4 @@
-📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
-
----
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 In last month's article, we explored BPM and summarized the three key steps to building BPM applications.
 
@@ -18,8 +16,6 @@ Therefore, we will delve into the pain points of BPM in these industries and rec
 
 ---
 
-
-
 ## 1.Education Sector
 
 ### **Typical Scenario**
@@ -32,7 +28,7 @@ At a prestigious university's admissions office, staff member Anna is overwhelme
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Stars：15.8k
+GitHub Stars：21.3k
 
 **Reasons for Recommendation:**
 
