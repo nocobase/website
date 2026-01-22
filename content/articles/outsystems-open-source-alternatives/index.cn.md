@@ -1,4 +1,4 @@
-📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 ## OutSystems 的隐藏成本不只是金钱
 
@@ -38,7 +38,7 @@ OutSystems 的定价较高，尤其对于小型企业来说，使用成本可能
 
 ![NocoBase.png](https://static-docs.nocobase.com/28a98c76dc908ccd49baded5cd0189bf.png)
 
-[NocoBase](https://www.nocobase.com/) 是一个基于插件架构的开源低代码平台，专为企业和开发者提供灵活可扩展的应用开发环境。
+[NocoBase](https://www.nocobase.com/) 是一个基于插件架构的开源、AI 驱动的低代码平台，专为企业和开发者提供灵活、可扩展的应用开发环境。
 
 ⭐️ Stars: 21.1k
 
@@ -57,6 +57,10 @@ GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/
 
 * **低学习曲线**：NocoBase 提供直观的可视化界面和拖拽式 UI 编辑器，即使是非技术用户也能轻松上手。且平台配备丰富的文档和教程，结合活跃的社区支持，用户可以快速掌握平台的使用方法，降低学习成本。
 * **成本优势**：NocoBase 开源免费使用，在开源版本基础上提供商业授权和商业插件。商业授权和商业插件都是一次性购买，终身有效。
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **适用场景**
 
