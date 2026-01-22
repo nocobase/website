@@ -6,6 +6,8 @@
 
 于是我们决定用 NocoBase 自己搭建一套专属的工单系统。
 
+🎉[基于 NocoBase 2.0 构建的智能工单系统](https://www.nocobase.com/cn/blog/ai-powered-ticketing-built-with-nocobase-2-0)
+
 ---
 
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
