@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 GitHub Starsに基づくランキングシリーズの第7弾へようこそ。今日は、最も人気のあるアプリビルダーツールについて探求します。
 
 これまでに、最も人気のある[ノーコードツール](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)、[ローコードプロジェクト](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)、[内部ツール](https://www.nocobase.com/en/blog/open-source-internal-tools)、[CRUDプロジェクト](https://www.nocobase.com/en/blog/crud-projects)、[セルフホスティングプロジェクト](https://www.nocobase.com/en/blog/self-hsosted-projects-list)、および[Airtableのオープンソース代替品](https://www.nocobase.com/en/blog/open-source-airtable-alternatives)について掘り下げてきました。これらは合計50以上の高品質プロジェクトです！(😁 いつでもクリックして読んでください。）
@@ -69,7 +71,7 @@ Appsmithは、特に内部管理システムやカスタマイズされたビジ
 
 **紹介**
 
-NocoBaseは、開発者や開発能力を持つチームのために特別に設計されたオープンソースのセルフホスト型ノーコードおよびローコード開発プラットフォームです。そのプラグインベースのアーキテクチャにより、開発者はアプリケーションを簡単に追加およびカスタマイズできます。
+**NocoBase** は、他のノーコード（ゼロコード）開発プラットフォームとは異なり、開発者や開発スキルを持つチーム向けに設計されています。オープンソースでセルフホスト可能な AI 駆動型ノーコード／ローコード開発プラットフォームとして、プラグイン型アーキテクチャにより、アプリケーションの追加やカスタマイズを容易に行えます。
 
 🙌 実践してみる：[NocoBase チュートリアル – タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
@@ -87,6 +89,10 @@ NocoBaseは、開発者や開発能力を持つチームのために特別に設
 ![Data Model Driven.png](https://static-docs.nocobase.com/cc1f58bb72859f40d6f5925d3f09f84c.png)
 
 * **柔軟な適用性**：NocoBaseはWebアプリケーション開発をサポートし、無料のコミュニティエディションと、さまざまな規模の企業のニーズに応えるより専門的な商業エディションを提供します。
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **使用例**
 
