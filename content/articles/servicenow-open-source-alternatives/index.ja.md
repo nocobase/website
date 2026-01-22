@@ -92,7 +92,7 @@ ServiceNowはSaaS型の課金体系で、モジュール数とユーザー数に
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase は、業務アプリケーション構築に特化したオープンソースの AI 駆動型ローコードプラットフォームです。高度にプラグイン化されたアーキテクチャとデータモデル駆動設計を採用しており、カスタマイズ性の高い ITSM システムを迅速に構築するのに適しています。
+NocoBase 直感的なユーザーインターフェースとドラッグ＆ドロップ操作により、開発者がアプリケーションを迅速に作成・管理できる、高い柔軟性を備えたオープンソースの AI ノーコード／ローコードツールです。
 
 **核心機能**
 
