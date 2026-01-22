@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Before we begin, let’s ask a quick question: Have you ever used workflow automation tools at work? 🙋 If not, this article might just inspire you to start!
 
 Workflow tools are now a cornerstone of improving efficiency. In an earlier blog post, we shared [five highly recommended workflow tools](https://www.nocobase.com/en/blog/workflow-automation-tools) with our readers.
@@ -15,7 +17,7 @@ This time, we’re shifting our focus to **open-source workflow tools**. With mo
 1. **[Dify](https://dify.ai/)**: A platform for developing LLM applications, offering tools that take you from prototyping to production. It supports RAG and workflow automation to boost efficiency.
 2. **[Appsmith](https://www.appsmith.com/)**: A visual low-code platform designed to build internal tools and dashboards quickly, with support for connecting multiple data sources.
 3. **[Conductor](https://conductor-oss.org/)**: Developed by Netflix, this distributed workflow orchestration engine is perfect for managing asynchronous tasks in complex microservices architectures.
-4. **[NocoBase](https://www.nocobase.com/)**: An open-source, no-code platform driven by data models. It’s highly flexible, supporting plugin extensions and enabling the construction of complex business systems.
+4. **[NocoBase](https://www.nocobase.com/)**: A data model–driven, open-source, AI no-code (zero-code) development platform that supports plugin extensibility and the construction of complex business systems.
 5. **[Temporal](https://temporal.io/)**: A robust distributed workflow management system that excels in reliability and scalability, making it ideal for long-running processes.
 6. **[Openproject](https://www.openproject.org/)**: A project management tool supporting both traditional and agile methodologies, complete with task management, scheduling, and collaboration features.
 7. **[UVdesk](https://www.uvdesk.com/en/)**: A customer support platform that integrates multiple channels and automates workflows to streamline and optimize support operations.
@@ -156,10 +158,10 @@ Use Conductor as a base to design custom workflow platforms tailored to your ind
 
 ![NocoBase.png](https://static-docs.nocobase.com/d677b2f41857e3502ad2282541dffcf6.png)
 
-NocoBase is an open-source no-code/low-code platform that empowers developers and businesses to quickly create business applications and enterprise solutions. Its plugin-based architecture emphasizes flexibility and scalability, allowing users to easily extend functionalities by installing plugins, much like adding apps to a smartphone.
+**NocoBase** is an open-source, AI-driven no-code (zero-code) / low-code development platform that empowers developers and businesses to quickly create business applications and enterprise solutions. Its plugin-based architecture emphasizes flexibility and scalability, allowing users to easily extend functionalities by installing plugins, much like adding apps to a smartphone.
 
 * **Key Details**:
-* ⭐️ GitHub Stars: 12.7k
+* ⭐️ GitHub Stars: 21.3k
 * Contributors: 80
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
@@ -171,6 +173,8 @@ NocoBase is an open-source no-code/low-code platform that empowers developers an
 * **Seamless Data Integration**: Connect to multiple databases and APIs to manage diverse data sources effortlessly.
 * **Granular Permission Control**: Ensure secure data management with fine-tuned access control options.
 * **WYSIWYG UI Builder**: Design interfaces intuitively by arranging blocks and operations on a canvas, much like Notion, to create complex systems without coding.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **How Can NocoBase Help Your Business?**
 
