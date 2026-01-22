@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 低代码开发平台近年来饱受争议。在 Hacker News 平台上，关于“low-code”排名靠前的热门讨论都是对低代码开发的质疑。
 
 排名第一的是“[我对低代码持怀疑态度](https://news.ycombinator.com/item?id=38816135)”，第五位则直接说“[低代码软件开发是个谎言](https://news.ycombinator.com/item?id=35578240)”。
@@ -87,7 +89,7 @@
 | Appsmith | 内部应用     | ✅       | 拖拽式 UI、自定义 API、JavaScript 逻辑 |
 | N8n      | 自动化       | ✅       | 替代 Zapier、可视化工作流、开源        |
 
-### 1. [NocoBase](https://www.nocobase.com/)（高自由度的开源无代码/零代码平台）
+### 1. [NocoBase](https://www.nocobase.com/)（高自由度的开源 AI 无代码/零代码平台）
 
 ![NocoBase.png](https://static-docs.nocobase.com/26002e136164bdacddf02be8ece7052e.png)
 
@@ -138,6 +140,8 @@
 ✅ 提供 API 方式访问数据，并可通过插件进行扩展。
 
 ✅ 可与任意 SQL 数据库无缝对接，同时支持 Webhook 与 GraphQL。
+
+✅将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 **适合用户： 需要构建数据库驱动应用，并希望轻松管理 API 访问的团队。**
 
