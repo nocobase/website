@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 这是我们第 4 篇关于 CRM 的深度讨论，在之前的文章 [四个强大的Salesforce开源替代方案（附成本对比）](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)中，我们详细对比了 EspoCRM、SuiteCRM、Twenty 等开源 CRM 方案与 Salesforce 的差异，特别是在成本效益、功能特性及适用场景上的差异。
 
 接着在 [NocoBase vs Salesforce：谁才是你的理想CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)这篇文章中，我们全面对比了 NocoBase 和 Salesforce，从插件与扩展、系统集成、安全与权限管理以及用户体验等多个角度，展现了NocoBase作为开源CRM所具备的灵活性和竞争力。
@@ -12,15 +14,13 @@
 
 ---
 
-
-
 本文将进一步探索 GitHub 上最受欢迎的开源 CRM 项目，从轻量化的工具到功能丰富的企业级解决方案，它们各具特色，满足了不同企业的需求。在这篇文章中，我们将详细介绍以下 star 数量排名前 11 的开源 CRM 项目：
 
 * **Twenty**：以极简设计和强大 API 支持为特色，适合中小型企业快速搭建客户管理系统。
 * **ERPNext**：全能型企业资源计划系统，整合了 CRM、财务、库存等多模块功能，适合全方位管理的企业。
 * **Monica**：专注于个人和小型团队的客户关系管理，通过简洁的界面帮助用户高效记录和管理联系人。
 * **Huly**：灵活的开源项目管理工具，提供一体化的定制功能，适合需要随时间扩展的团队。
-* **NocoBase**：通过数据模型驱动的无代码（零代码）平台，插件化架构让企业快速开发个性化的 CRM 系统。
+* **NocoBase**：通过数据模型、AI 驱动的无代码（零代码）平台，借助插件化架构，企业可以快速开发个性化的 CRM 系统。
 * **Krayin**：低代码开源 CRM，旨在通过简单易用的方式提供企业级功能。
 * **Akaunting**：除了 CRM 功能，还集成了财务管理和会计功能，适合需要全方位财务支持的小型企业。
 * **iDURAR**：专为销售团队设计的 CRM，提供自动化功能，简化日常客户管理工作。
@@ -134,7 +134,7 @@ GitHub Link: https://github.com/nocobase/nocobase
 
 ![nocobase.png](https://static-docs.nocobase.com/cc93e4b01872728b468b521de7f79b99.png)
 
-[NocoBase](https://www.nocobase.com/) 是一款极易拓展的开源无代码（零代码）/低代码 CRM 工具，专注于数据驱动模型和灵活的插件系统，为企业提供高度可定制的客户管理解决方案。
+[NocoBase](https://www.nocobase.com/) 是一款极易拓展的开源、AI 驱动的无代码（零代码）/低代码 CRM 工具，专注于数据模型驱动和灵活的插件系统，在 AI 驱动能力的辅助下，为企业提供高度可定制的客户管理解决方案。
 
 🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
 
@@ -145,6 +145,8 @@ GitHub Link: https://github.com/nocobase/nocobase
 * **数据模型驱动**：根据具体的业务逻辑，灵活创建和管理数据模型，使得 CRM 系统的结构更加符合企业实际需求。
 * **灵活的工作流自动化**：支持基于条件触发的自动化规则，提升工作效率。
 * **多语言与权限管理**：支持多语言功能，并内置强大的权限管理系统，确保敏感数据的安全性。
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 **适用场景：**
 
