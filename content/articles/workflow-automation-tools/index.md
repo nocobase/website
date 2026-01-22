@@ -1,4 +1,4 @@
-**Last updated [2025.11.16]**
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ## What is Workflow Automation?
 
@@ -13,8 +13,6 @@ This automation can be applied across various industries and business scenarios,
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Why Automate Workflows?
 
@@ -63,7 +61,7 @@ Next, we will delve into the specific features of these top workflow automation 
 
 ### NocoBase
 
-[NocoBase](https://www.nocobase.com/) is an open-source, scalable no-code/low-code development platform that allows users to quickly build internal tools and workflow automation systems.
+[NocoBase](https://www.nocobase.com/) is an open-source, extensible AI no-code (zero-code) / low-code development platform that enables users to quickly build internal tools and workflow automation systems.
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/372c811a70f87789ca571ca0b6090179.PNG)
 
