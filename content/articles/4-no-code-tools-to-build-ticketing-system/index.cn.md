@@ -28,6 +28,8 @@
 
 **现成的工单系统虽然丰富，却难以同时满足“简单上手”和“灵活定制”的双重要求**。
 
+🎉[基于 NocoBase 2.0 构建的智能工单系统](https://www.nocobase.com/cn/blog/ai-powered-ticketing-built-with-nocobase-2-0)
+
 或许我们可以换一个思路：与其在现成工具里不断妥协，不如用一种更自由、简单的方式来构建完全符合你需求的工单系统——**零代码或低代码平台**。
 
 ❤ 如果你觉得现有工单系统已经可以满足业务需求了，可以阅读：[2025 年 6 个最佳开源工单系统推荐](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)
