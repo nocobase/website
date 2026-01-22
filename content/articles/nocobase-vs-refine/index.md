@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 **Today, we’re focusing on two outstanding open-source CRUD development tools: [NocoBase](https://www.nocobase.com/) and [Refine](https://refine.dev/).** These tools are excellent representatives of no-code/low-code development platforms and low-code frontend development frameworks, respectively.
@@ -8,7 +10,7 @@ It’s worth mentioning that **NocoBase has already gained 12k stars on GitHub**
 
 💡 Read More: [The Best Open-Source Alternatives to Retool In 2025](https://www.nocobase.com/en/blog/retool-open-source-alternatives)
 
-As a no-code/low-code development platform, **NocoBase** is characterized by its intuitive interface and ease of use. With NocoBase, users can quickly build complex business applications. For developers with a technical background, NocoBase offers extensive customization capabilities. Its plugin architecture and flexible data model design allow developers to quickly tailor and deploy applications, significantly improving development efficiency.
+**NocoBase**, as an AI no-code / low-code development platform, features an intuitive and easy-to-use interface that allows users to quickly build complex business applications. For developers with technical backgrounds, NocoBase also offers extensive extensibility. Through its plugin architecture and flexible data model design, developers can customize and deploy applications more efficiently, significantly improving development productivity.
 
 On the other hand, **Refine** is a low-code frontend development framework that focuses on providing developers with high flexibility and customization options. Built on a React-based architecture, Refine enables developers to freely design complex user interfaces while achieving functionality with minimal code.
 
@@ -27,8 +29,6 @@ Feel free to jump to the section that interests you most. We hope this article h
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Feature Comparison
 
