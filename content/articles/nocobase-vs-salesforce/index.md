@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Background
 
 ![NocoBase vs Salesforce.jpg](https://static-docs.nocobase.com/be4d6bf3c87e36b98e7173de634f8e44.jpg)
