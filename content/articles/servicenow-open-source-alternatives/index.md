@@ -94,7 +94,7 @@ ServiceNow follows a **SaaS subscription model** with pricing based on modules, 
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase is an open-source, AI-driven low-code platform focused on business application development. Built on a highly plugin-based architecture and a data model–driven design, it is well suited for rapidly building customized ITSM systems.
+NocoBase is a highly flexible, open-source AI no-code / low-code tool that helps developers quickly create and manage applications through an intuitive user interface and drag-and-drop functionality.
 
 **Key Features**
 
