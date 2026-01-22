@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 ## **背景**
 
 ![NocoBase vs Salesforce.jpg](https://static-docs.nocobase.com/be4d6bf3c87e36b98e7173de634f8e44.jpg)
