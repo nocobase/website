@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 12, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
@@ -19,8 +19,6 @@ As a dominant force in the CRM space, Salesforce provides an extensive suite of 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **Why Consider Open-Source CRM Alternatives?**
 
@@ -48,7 +46,9 @@ Here are four open-source CRM platforms that can rival Salesforce in capability 
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/fb06535f83c00c486fbf2373d452eeb9.PNG)
 
-NocoBase is an open-source no-code/low-code platform designed for creating CRM solutions. ⭐️ Currently, NocoBase has received [15.8k stars on GitHub](https://github.com/nocobase/nocobase).
+**NocoBase** is an open-source, AI-driven no-code (zero-code) / low-code development platform, well suited for building CRM solutions.
+
+ ⭐️ Currently, NocoBase has received [21.3k stars on GitHub](https://github.com/nocobase/nocobase).
 
 Built for flexibility and scalability, NocoBase is user-friendly for beginners while offering plugin extensions for advanced CRM needs. For teams balancing in-house development and no-code solutions, NocoBase stands out as a versatile and powerful tool.
 
@@ -60,6 +60,8 @@ Built for flexibility and scalability, NocoBase is user-friendly for beginners w
 * **User-Friendly Visual Interface**: The intuitive WYSIWYG interface makes it easy to set up data tables, design user interfaces, and configure workflows for features like customer management and sales tracking.
 * **Efficient Automation Workflows**: The built-in workflow system automates tasks, reducing manual effort and boosting operational efficiency.
 * **Extensive Plugin Ecosystem**: With a rich selection of plugins, NocoBase lets users expand CRM functionalities and tailor solutions to their specific needs.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ![kanban.png](https://static-docs.nocobase.com/2ed823e88d16562ca786121c369e7804.png)
 
@@ -93,6 +95,8 @@ NocoBase WYSIWYG Configuration Interface
 #### **Which Should You Choose?**
 
 NocoBase is ideal for budget-conscious teams with high customization demands and a need for data autonomy. It’s especially suitable for small to medium-sized businesses, individual departments, or specific project needs. With a technical team, NocoBase truly shines—developers can quickly deploy and enhance features, while non-technical users easily create business pages using no-code tools.
+
+🎉[NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
 With NocoBase, businesses can build CRM systems efficiently, reduce technical barriers, support private deployment, and maintain flexibility and security—making it a smart choice for adapting to dynamic requirements and testing new ideas.
 
