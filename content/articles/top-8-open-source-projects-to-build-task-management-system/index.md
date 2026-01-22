@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 Nowadays, it’s hard to imagine life without task management software (or task management systems).
 
@@ -45,7 +45,7 @@ Here are some key factors to consider:
 
 ![Project management.png](https://static-docs.nocobase.com/Project%20management-9w3rj1.png)
 
-NocoBase is an open-source no-code/low-code development platform featuring flexible data modeling and a powerful plugin architecture suitable for various business needs, including building custom task management systems.
+**NocoBase** is an open-source AI no-code / low-code development platform. Built on flexible data modeling and a powerful plugin architecture, it can adapt to a wide range of business needs, including the creation of custom task management systems.
 
 🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management) – feel free to try it out!
 
@@ -70,6 +70,10 @@ NocoBase also provides a [detailed tutorial for setting up a task management sys
 * **Plugin Extensibility**: A rich plugin ecosystem supports feature extensions and third-party integrations.
 
 ![Integration.png](https://static-docs.nocobase.com/Integration-r4f8ne.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Best Use Case**
 
