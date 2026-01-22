@@ -12,6 +12,8 @@
 
 そこで本記事では、[GitHub の CRM トピック](https://github.com/topics/crm) に掲載されているスター数の多いプロジェクトを改めて整理し、「ネイティブな AI 機能を備えた CRM」と「AI の拡張に対応した CRM」の2種類に分類しました。それぞれの AI 機能の特長や活用シーンを整理することで、各ツールの役割や適用範囲を理解し、自身のニーズに合った CRM を選ぶための参考になればと考えています。
 
+🎉 [NocoBase の CRM ソリューションがついに公開されました](https://www.nocobase.com/ja/blog/crm-solution)
+
 ---
 
 💬NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
