@@ -1,4 +1,4 @@
-注：本文数据更新于 2025 年 6 月 11 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 继续我们的 GitHub Star 系列！这是本系列的第四篇文章，之前的内容：
 
@@ -130,7 +130,7 @@ APIJSON 是一个为 API 设计的基于 JSON 的通信协议和 ORM 库。它�
 * **内部工具**：企业内部的管理系统、监控系统等，可以利用 APIJSON 快速搭建后台管理界面。
 * **教育与学习**：由于 APIJSON 易于上手，它也适用于教育环境，帮助学生和初学者理解 API 的构建和使用。
 
-## **NocoBase (15.8k stars)**
+## **NocoBase (21.3k stars)**
 
 ![NocoBase.png](https://static-docs.nocobase.com/b1c0f7c45d93a4c05fffeeadfbd758f9.png)
 
@@ -145,7 +145,7 @@ APIJSON 是一个为 API 设计的基于 JSON 的通信协议和 ORM 库。它�
 | 官网                    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | 文档                    | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
 
-NocoBase 是一个高度可扩展的开源无代码/低代码平台，专为企业级业务应用和解决方案设计。从 CRUD（创建、读取、更新、删除）的角度来看，NocoBase 提供了强大的数据模型驱动方法，使其成为构建和管理复杂数据交互的理想选择。通过 NocoBase，企业可以快速部署具有复杂数据处理能力的应用，而无需深入后端开发，极大地提高了开发效率和系统的可扩展性。
+**NocoBase** 是一个高度可扩展的开源 AI 无代码 / 低代码平台，专为企业级业务应用和解决方案设计。从 CRUD（创建、读取、更新、删除）的角度来看，NocoBase 提供了强大的数据模型驱动方法，使其成为构建和管理复杂数据交互的理想选择。通过 NocoBase，企业可以快速部署具有复杂数据处理能力的应用，而无需深入后端开发，极大地提高了开发效率和系统的可扩展性。
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
