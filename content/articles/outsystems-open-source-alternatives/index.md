@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ## OutSystems' Hidden Costs Go Beyond Money
 
@@ -38,7 +38,7 @@ OutSystems’ pricing is steep, especially for small businesses. Complex licensi
 
 ![NocoBase.png](https://static-docs.nocobase.com/28a98c76dc908ccd49baded5cd0189bf.png)
 
-[NocoBase](https://www.nocobase.com/) is an open-source low-code platform built on a plugin architecture, designed to provide enterprises and developers with a flexible, extensible application development environment.
+[NocoBase](https://www.nocobase.com/) is an open-source, AI-driven low-code platform built on a plugin-based architecture, providing enterprises and developers with a flexible and extensible application development environment.
 
 ⭐️ Stars: 21.1k
 
@@ -57,6 +57,10 @@ GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/
 
 * **Low Learning Curve**: Intuitive drag-and-drop UI editor allows non-technical users to start quickly. Comprehensive documentation, tutorials, and active community support further reduce learning costs.
 * **Cost Advantage**: Free open-source version + commercial licenses/plugins available as one-time purchases with lifetime validity.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
