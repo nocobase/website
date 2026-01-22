@@ -18,8 +18,6 @@ This list is ordered by GitHub stars and highlights some of the best projects av
 
 ---
 
-
-
 ## **Quick Look: Top 13 Awesome Self-Hosted Projects**
 
 **13. NocoBase – Low-code/No-code Development Platform (⭐15.8k)**
@@ -70,7 +68,7 @@ The list is ordered by GitHub stars. To ensure project activity and maintenance,
 
 **Introduction**
 
-NocoBase is an open-source, self-hostable low-code/no-code development platform built for developers. Its plugin-based architecture makes it easy to add and customize features for complex business needs.
+**NocoBase** is an open-source, self-hosted AI no-code / low-code development platform. Designed specifically for developers, its plugin-based architecture allows them to easily add and customize functionality to meet a wide range of complex business requirements.
 
 🙌 Try it out: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
