@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 The comprehensive rise of low-code technology has provided developers with more diverse development methods, but challenges have also emerged. This article aims to offer a comprehensive guide to help developers effectively choose and implement low-code or no-code development platforms.
 
 ![Low-Code Tools.png](https://static-docs.nocobase.com/0d3d8a0c04ba34ae71779479d7707f7a.png)
@@ -18,8 +20,6 @@ If you meet any of these conditions, you can continue reading this article.
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## How to Choose a Low-Code Platform?
 
@@ -85,7 +85,7 @@ The low-code market is becoming increasingly rich. Here are several open-source 
 
 💡 Read More: [Top 15 Open-Source Low-Code Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)
 
-### **[NocoBase](https://www.nocobase.com/)** – An extremely extensible open-source no-code/low-code platform
+### **[NocoBase](https://www.nocobase.com/)** – A highly extensible, open-source, AI-driven no-code (zero-code) / low-code platform
 
 ![nocobase.png](https://static-docs.nocobase.com/56f3a3d21bf7aa88b9ff6da501732a7b.png)
 
@@ -96,6 +96,7 @@ The low-code market is becoming increasingly rich. Here are several open-source 
 * **Data model-driven**: Without complex coding, developers can establish related data tables and configure field types through a visual interface, enabling flexible definition and management of data structures.
 * **Plugin-based architecture**: Not only can it easily integrate modules such as identity authentication, permission management, and automated processes, but developers can also customize plugins based on business logic.
 * **Private deployment**: Supports data storage on your own servers or cloud environments, ensuring compliance with internal data regulations.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 NocoBase is suitable for technical teams that want a high degree of development freedom on a low-code basis, especially for companies with highly customized requirements for internal management tools and business systems.
 
