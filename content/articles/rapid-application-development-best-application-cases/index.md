@@ -1,4 +1,4 @@
-**Last updated [2025.11.16]**
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 **Time is money!**
 
@@ -19,8 +19,6 @@ Rapid Application Development (RAD) is an application development methodology fo
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **Common RAD Tools**
 
@@ -43,6 +41,7 @@ In a rapidly changing market environment, RAD is undoubtedly a key asset for bus
 * **Intuitive Visual Interface**: Provides a simple, WYSIWYG interface, allowing users to quickly create data tables, design user interfaces, and configure workflows through clicks.
 * **Plugin-Based Architecture**: Utilizes a microkernel and plugin-based architecture where all functionalities are provided through plugins, enabling customization and expansion of system features according to user needs.
 * **Data Model-Driven**: Users can flexibly customize data models according to business requirements, aligning with the underlying design of system development, optimizing data migration and processing workflows.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ### Application Case
 
