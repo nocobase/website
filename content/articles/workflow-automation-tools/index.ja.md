@@ -1,4 +1,4 @@
-**最終更新日：[2025.11.16]**
+📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
 ## ワークフロー自動化とは？
 
@@ -13,8 +13,6 @@
 💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## ワークフローを自動化する理由
 
@@ -63,7 +61,7 @@
 
 ### NocoBase
 
-[NocoBase](https://www.nocobase.com/) は、ユーザーが内部ツールとワークフロー自動化システムを迅速に構築できるオープンソースでスケーラブルなノーコード/ローコード開発プラットフォームです。
+[NocoBase](https://www.nocobase.com/) オープンソースで拡張性の高い AI ノーコード（ゼロコード）／ローコード開発プラットフォームで、社内ツールやワークフロー自動化システムを迅速に構築できます。す。
 
 * **ノーコードオーケストレーション**：NocoBaseのワークフロープラグインはノーコードシナリオに特化しており、ユーザーがプログラミング知識なしでビジネスタスクのためのデータ処理とオーケストレーションを迅速に行うことを可能にします。
 * **高い統合能力**：データモデル主導のノーコード/ローコード開発プラットフォームとして、NocoBaseは外部データベースをデータソースとしてサポートし、ワークフローの情報の流れを円滑に保障します。
@@ -71,7 +69,88 @@
 
 🙌 実践してみる：[NocoBase チュートリアル – タスク管理システム](https://www.nocobase.com/ja/tutorials/task-tutorial-introduction)
 
-以下では、NocoBaseを用いたワークフローの迅速な設定方法を紹介します。
+#### NocoBase を使ってワークフローを簡単に設定する
+
+以下は、基本的なワークフロー自動化の例です。新しい記事が作成されると、システムが自動で文字列結合処理を行い、タイトルフィールドと ID フィールドを組み合わせて、記事タイトルを「記事タイトル + 記事 ID」の形式に自動更新します。
+
+1. **管理ページを開く**：上部メニューバーのプラグイン設定メニューから、ワークフロープラグインの管理ページを開きます。
+
+![Access the Management Page.png](https://static-docs.nocobase.com/72d4bd646ed147e71ecf85a9e5f43064.png)
+
+2. **ワークフローを作成**：「新規作成」をクリックし、データテーブルイベントを選択します。
+
+![Create a New Workflow.png](https://static-docs.nocobase.com/bf18902ffdadca52633b2dda1f081dee.png)
+
+3. **トリガーを設定**：「設定」をクリックしてトリガーカードを選択し、対象のデータテーブル（例：「記事」テーブル）を指定します。トリガータイミングを「データ追加後」に設定し、「保存」をクリックします。
+
+![Configure the Trigger.png](https://static-docs.nocobase.com/a15a6d1be695eb2a397614ac5f3a6c21.png)
+
+4. **演算ノードを追加**：プラスボタンをクリックして演算ノードを追加し、Formula.js の `CONCATENATE` 関数を使用して「タイトル」と「ID」フィールドを結合します。
+
+![Add a Node.png](https://static-docs.nocobase.com/222fdff7ae65ea77abd995706fa48dfe.png)
+
+5. **更新ノードを設定**：データ更新ノードを追加し、「記事」テーブルを選択します。更新対象を「タイトル」に設定し、演算ノードの結果を更新値として指定します。
+
+![Create an Update Node.png](https://static-docs.nocobase.com/201648bd3b3a65866e25d00cd55c2b77.png)
+
+6. **ワークフローを有効化**：右上の「有効化」スイッチをオンにして、ワークフローを有効にします。これにより、条件を満たした際に自動で処理が実行されます
+
+
+### Appy Pie
+
+[Appy Pie](https://www.appypie.com/) は、コーディング不要で利用できるプラットフォームで、ドラッグ＆ドロップ操作によって自動化ワークフローを構築できます。
+
+![Appy Pie.png](https://static-docs.nocobase.com/9bbdf64d64eaa718d0f7f9b92c383491.png)
+
+* **ノーコードプラットフォーム**：視覚的なワークフローエンジンにより、プログラミングの知識がなくても自動化を構築でき、導入のハードルを下げます。
+* **マルチプラットフォーム連携**：多様な外部アプリケーションと連携でき、情報の流れをスムーズにし、クロスプラットフォームでの業務効率を向上させます。
+* **セキュリティとコンプライアンス**：GDPR や CCPA などの主要なデータ保護規制に準拠し、二要素認証や暗号化といったセキュリティ機能を備えています。
+
+💡 さらに読む：[ノーコード（ゼロコード）／ローコードプラットフォームの統合機能を深掘り分析](https://www.nocobase.com/cn/blog/low-code-no-code-integration)
+
+#### Appy Pie を使ったワークフロー設定の流れ
+
+![Quickly Configuring a Workflow with Appy Pie.png](https://static-docs.nocobase.com/013756f513b7c15b65d218c739d5420b.png)
+
+1. **トリガーアプリを選択**：自動化を開始するアプリケーションを指定します。
+2. **アクションアプリを選択**：トリガー発生後に実行する処理を持つアプリケーションを設定します。
+3. **テストと有効化**：作成したワークフローをテストして結果を確認し、問題がなければ有効化して自動化を開始します。
+
+### Zapier
+
+[Zapier](https://zapier.com/) は、さまざまなアプリケーションやツールを連携させ、業務プロセスを自動化できる代表的なワークフローエンジンです。
+
+![Zapier.png](https://static-docs.nocobase.com/d218a0550ee9a05ab913fa6abf8b4976.png)
+
+* **高度な自動化機能**：「Zap」を作成することで、コードを書かずにアプリ間の処理を自動化できます。
+* **豊富な連携先**：数多くのアプリやサービスと接続でき、ツール間の情報連携を円滑にします。
+* **使いやすい UI**：直感的な操作画面により、ワークフローの作成や管理を短時間で行うことができます。
+
+事例：[How Smart Charge America uses automation to scale operations and fight climate change | Zapier](https://zapier.com)
+
+### Make
+
+[Make](https://www.make.com/en) は、データ変換や API 呼び出し、条件分岐などを組み合わせて高度な自動化を行えるワークフロー自動化ツールです。
+
+![Make.png](https://static-docs.nocobase.com/47dff3450b97ce57fb542c0fd2c1153b.png)
+
+* **ビジュアルなワークフロー設計**：ドラッグ＆ドロップ操作により、複雑な自動化フローも直感的に構築できます。
+* **高い連携力**：多数のアプリやサービスと接続でき、異なるプラットフォーム間でのデータ連携をスムーズに行えます。
+* **多段階処理と条件分岐**：複数ステップや条件ロジックを組み合わせることで、幅広い業務シナリオに対応できます。
+
+事例：[Brevo automates 100+ workflows to supercharge lead gen and gain 16 days a month](https://www.make.com/en/blog/brevo-automates-hundred-workflows-to-supercharge-lead-gen)
+
+### n8n
+
+[n8n](https://n8n.io/) は、データ処理の自動化とワークフロー管理を目的とした、オープンソースのビジュアルワークフローエンジンです。
+
+![n8n.png](https://static-docs.nocobase.com/fce44339758aae7f1b77b827d0ef03b7.png)
+
+* **オープンソース／セルフホスト対応**：自社環境に導入することで、データの管理性とプライバシーを確保できます。
+* **多彩な連携先**：多くのアプリケーションやサービスと接続でき、業務をまたいだ自動化を実現します。
+* **柔軟なロジック設計**：条件分岐や複数ステップの処理を組み合わせ、複雑な業務フローにも対応できます。
+
+事例：[Delivery Hero saved 200 hours/month with a single IT ops workflow](https://n8n.io)
 
 ## 結論
 
