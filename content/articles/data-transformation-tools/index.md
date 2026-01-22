@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 In the era of big data, businesses and organizations face the challenge of handling vast amounts of data. As applications become more complex and user needs evolve, development teams need to efficiently process large volumes of data to make quick decisions. However, how can they identify and effectively utilize the data that is critical for decision-making amid all this information?
 
 **Data transformation tools**provide solutions to help development teams extract value from complex information, optimizing data structures and ensuring effective data usage.
@@ -9,8 +11,6 @@ In this ultimate guide, we will explore **the fundamental concepts, key steps, i
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## What is Data Transformation?
 
@@ -55,7 +55,7 @@ When selecting the right data transformation tools, developers and teams should 
 
 GitHub：https://github.com/nocobase/nocobase
 
-[NocoBase](https://www.nocobase.com/) is an open-source no-code/low-code development platform that efficiently integrates data from various sources and automates data cleaning, significantly reducing data governance costs. It helps users quickly build customized solutions and improve work efficiency.
+[NocoBase](https://www.nocobase.com/) is an open-source AI no-code / low-code development platform. With efficient data integration capabilities, it consolidates data from multiple sources into a unified view; at the same time, its automated data cleansing capabilities significantly reduce data governance costs, enabling users to quickly build customized solutions and improve work efficiency.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
@@ -71,6 +71,10 @@ GitHub：https://github.com/nocobase/nocobase
 * **[Support multiple data sources](https://www.nocobase.com/en/tutorials/task-tutorial-data-management-guide)**: Compatible with various data formats, including databases and APIs.
 
 ![Support multiple data sources.png](https://static-docs.nocobase.com/e612b0a7f0c96965f0044d6f3bc33de4.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Pros and Cons**
 
