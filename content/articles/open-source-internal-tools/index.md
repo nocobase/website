@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 Welcome back to our GitHub Star series!
 
@@ -82,7 +82,7 @@ ILLA Builder is an open-source low-code platform designed to simplify the develo
 
 **Introduction**
 
-NocoBase is an open-source no-code/low-code platform designed for building internal tools, business applications, and enterprise solutions. It helps development teams rapidly deploy customized business applications without significant time or financial investment.
+**NocoBase** is an open-source AI no-code / low-code platform designed for building internal tools, business applications, and enterprise solutions. It helps development teams rapidly deploy customized business applications without significant time or financial investment.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
@@ -97,6 +97,10 @@ NocoBase is an open-source no-code/low-code platform designed for building inter
 * **WYSIWYG Editor**: Offers a user-friendly visual interface, making design and configuration straightforward for users without programming backgrounds.
 
 ![WYSIWYG Editor.png](https://static-docs.nocobase.com/06badc418aa3455f13643a5305b70502.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 ### No.4：Budibase
 
