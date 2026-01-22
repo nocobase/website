@@ -1,8 +1,10 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 这篇博客来自 [Freeman Tech Consulting](https://freemantechconsulting.com/) 的 Don Freeman，首发于[nocodefounders.com](http://nocodefounders.com/)。Freeman Tech Consulting 是一家全方位服务的软件工程公司，可以帮助进行无代码（零代码）部署、网页应用开发、云基础设施设计/构建、GRC管理、数据分析等多种服务。
 
 ## 🌟什么是 NocoBase？
 
-NocoBase 是一个无代码（零代码）/低代码平台，用于轻松构建数据驱动的应用程序。用户可以定义数据模型，然后围绕该模型构建应用程序。该平台提供去除 NocoBase 标志的付费版本。NocoBase 作为开源项目，你可以在 GitHub 上轻松贡献代码。值得一提的是，NocoBase 的插件化架构能够在需要时轻松扩展平台的功能。
+**NocoBase** 是一个 AI 无代码（零代码）/低代码平台，用于轻松构建数据驱动的应用程序。用户可以定义数据模型，然后围绕该模型构建应用程序。该平台提供去除 NocoBase 标志的付费版本。NocoBase 作为开源项目，你可以在 GitHub 上轻松贡献代码。值得一提的是，NocoBase 的插件化架构能够在需要时轻松扩展平台的功能。
 
 ## 🚀 本地部署 NocoBase
 
