@@ -36,6 +36,8 @@ In this article, I’ll take that approach.
 
 I’ll break down 8 standout no-code tools into two categories—**open-source** and **SaaS**—and explore how each performs in CRM-building scenarios.
 
+🎉[NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 ## Open Source vs SaaS: Which No-Code Path Is Right for You?
 
 Before choosing a no-code tool, start with this fundamental question: **Do you want full control over your data and system, or do you prioritize speed and convenience?**
