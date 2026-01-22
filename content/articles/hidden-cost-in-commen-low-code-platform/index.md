@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## **Introduction: The Promise of Low-Code vs. the Reality of "Pitfalls"**
 
 Low-code platforms promise to enable enterprises to build applications faster, reduce development costs, and decrease reliance on professional developers. However, many enterprises gradually discover hidden traps and hidden costs when they actually use low-code platforms.
@@ -136,7 +138,7 @@ Although low-code reduces the development threshold, enterprises still need to i
 
 Although most low-code platforms have the above problems, there are also some open-source low-code platforms that are constantly optimizing and gradually breaking through these limitations.
 
-### NocoBase: Open-source no-code/low-code platform
+### NocoBase: An open-source, AI-driven no-code (zero-code) / low-code platform
 
 ![NocoBase.png](https://static-docs.nocobase.com/4362d14413370ffd195f61bf49aa40fe.png)
 
@@ -144,11 +146,12 @@ Website: https://www.nocobase.com/
 
 GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-GitHub Star: 13.8k
+GitHub Star: 21.3k
 
 * **Plugin-based architecture**, extremely high scalability, and no functional limitations.
 * **Self-deployment**, no hidden fees, and no restrictions on the number of users, storage, concurrency, etc.
 * **Active community**, abundant learning resources, and reduced training and maintenance costs.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ### Budibase
 
