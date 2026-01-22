@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 In today’s fast-paced, technology-driven business environment, companies are increasingly relying on hardware, software, and digital resources to support their operations. This has created a pressing need for efficient and cost-effective IT asset management (ITAM) solutions.
 
@@ -45,7 +45,7 @@ Open-source IT asset management (ITAM) software is a cost-effective solution for
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/c414d29d422277127a46abf8f9518551.PNG)
 
-[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted, no-code/low-code development platform that enables businesses to quickly build IT asset management systems with a plugin-based architecture, offering a flexible, efficient, and secure solution for managing IT assets.
+[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted, AI-driven no-code (zero-code) / low-code development platform. With its plugin-based architecture, it enables rapid construction of IT asset management systems and, with AI assistance, delivers a flexible, efficient, and secure IT asset management solution.
 
 GitHub：https://github.com/nocobase/nocobase
 
@@ -66,6 +66,10 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 * **Role-Based Access Control (RBAC):** NocoBase offers flexible RBAC, allowing enterprises to control access permissions for different team members, ensuring data security.
 
 ![Role-Based Access Control (RBAC):.gif](https://static-docs.nocobase.com/feb22be307348f872de465633e7d8435.gif)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**: Ideal for SMEs, organizations requiring highly customized solutions, multi-departmental asset management, and scenarios that demand integration with multiple data sources and cross-system compatibility.
 
