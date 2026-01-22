@@ -1,4 +1,4 @@
-📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 在一次浏览 [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/) 的过程中，我偶然看到了一位用户的提问：
 
@@ -28,7 +28,7 @@
 
 ### **介绍**
 
-[NocoBase](https://www.nocobase.com/) 是一款高扩展性的开源[无代码（零代码）](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[低代码](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)开发平台，以数据模型驱动为核心，专注于为企业提供一体化商业解决方案。NocoBase 结合强大的权限管理和自动化工作流功能，满足企业对多角色协作和灵活定制的需求。通过直观的拖拽界面，用户无需编程即可快速构建复杂的数据结构和动态页面，整合多数据源并优化业务流程。NocoBase 凭借其高效、统一的操作体验，帮助企业简化管理、提升效率，是现代企业应对多样化业务场景的理想选择。
+[NocoBase](https://www.nocobase.com/) 是一款高扩展性的开源 AI [无代码（零代码）](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[低代码](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)开发平台，以数据模型驱动为核心，专注于为企业提供一体化商业解决方案。NocoBase 结合强大的权限管理和自动化工作流功能，满足企业对多角色协作和灵活定制的需求。通过直观的拖拽界面，用户无需编程即可快速构建复杂的数据结构和动态页面，整合多数据源并优化业务流程。NocoBase 凭借其高效、统一的操作体验，帮助企业简化管理、提升效率，是现代企业应对多样化业务场景的理想选择。
 
 ### 核心**功能**
 
@@ -43,6 +43,10 @@
 * **工作流自动化**：强大的自动化工具支持多步骤流程的设置，从任务分配到审批提醒，帮助企业优化业务操作，提升效率并减少人为干预。
 
 ![Workflow Automation.png](https://static-docs.nocobase.com/de46244d9116431d7243c290826b4697.png)
+
+* 融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 基于这些核心功能，NocoBase 不仅能够快速搭建 CRM、合同管理、项目管理等系统，还可以将多种系统和数据接入统一的平台进行集中管理，从而帮助企业快速构建一个高度贴合业务需求的一体化管理系统。
 
