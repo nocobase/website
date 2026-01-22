@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 欢迎来到“小型企业”系列的第四篇文章！快速回顾之前内容：
 
 * [5 个适合小型企业使用的管理软件！（真实经验）](https://www.nocobase.com/cn/blog/5-management-tools-perfect-for-small-businesses)
