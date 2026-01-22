@@ -12,6 +12,8 @@
 
 我们对 [GitHub CRM 话题](https://github.com/topics/crm)下的高星项目进行了新一轮的整理与盘点，将它们分为“具备原生 AI 能力的 CRM”和“支持扩展 AI 的 CRM”两类，并梳理了各自的 AI 功能亮点与应用场景，希望能帮助你更清晰地理解这些工具的能力边界，选择更适合自身需求的工具。
 
+🎉[NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
+
 ---
 
 💬嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
