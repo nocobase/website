@@ -1,4 +1,4 @@
-**最后更新：2025.6.12**
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 或许你在阅读这篇文章时，心里会有一个疑问：在类似 Salesforce 这样强大的传统 CRM 系统已经如此成熟的今天，为什么企业还需要选择用低代码或无代码（零代码）平台来构建 CRM 呢？
 
@@ -19,8 +19,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 传统 CRM 和无代码（零代码）/低代码 CRM 能力对比
 
@@ -123,7 +121,7 @@
 
 ![NocoBase.png](https://static-docs.nocobase.com/752ae5de360b51c2d551f5bb43766907.png)
 
-NocoBase 是一个高度灵活的开源无代码平台，专为快速构建和定制业务应用而设计。其数据模型驱动的架构使得用户能够精确定义和管理业务数据结构，轻松搭建满足特定业务需求的 CRM 系统，并在此基础上进行无限扩展。
+**NocoBase** 是一个高度灵活的开源 AI 无代码平台，专为快速构建和定制业务应用而设计。其数据模型驱动的架构使用户能够精确定义和管理业务数据结构，轻松搭建满足特定业务需求的 CRM 系统，并在此基础上实现持续扩展。
 
 🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
 
@@ -144,6 +142,10 @@ NocoBase 是一个高度灵活的开源无代码平台，专为快速构建和�
 * **丰富的插件生态：** 提供丰富的插件选择，用户可以根据自身业务需求自由安装和配置插件，进一步扩展 CRM 的功能，实现个性化定制。
 
 ![Rich Plugin Ecosystem.png](https://static-docs.nocobase.com/b39dd1cab17fc6f6fdc6c1b22acff4e1.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **适用场景：**
 
