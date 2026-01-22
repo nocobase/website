@@ -1,3 +1,5 @@
+📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+
 このブログは Leandro Martins によって作成され、最初に[Build Application Catalog with NocoBase](https://leandromartins.hashnode.dev/simplified-architecture-governance-building-an-application-catalog-with-nocobase#)で公開されました。
 
 目標は、[NocoBase](https://www.nocobase.com/)を用いてコーディングなしでWebアプリケーションを開発する可能性と容易さを示すことです。案例として、アーキテクチャガバナンスを支援するアプリケーションカタログを作成します。この案例では、NocoBaseの機能を用いたモデリング、インストール、テーブル作成、メニュー、フォーム、チャート、ワークフローに関わる作業を行います。
@@ -9,8 +11,6 @@
 💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **NocoBaseとは何ですか？**
 
@@ -25,6 +25,8 @@
 * **データベース互換性**：PostgresやMySQLなどの主要なリレーショナルデータベースをサポート。
 * **ビジュアルデータモデリング**：メインデータベースプラグインを使用してテーブルとデータをビジュアルに定義。
 * **豊富なプラグインライブラリ**：無料および有料のプラグインを幅広く提供し、カスタムプラグインの開発が可能。
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
 
 ![Key Highlights of NocoBase.png](https://static-docs.nocobase.com/95c4cc96a72c8e414e5399d7d9b6ee18.png)
 
