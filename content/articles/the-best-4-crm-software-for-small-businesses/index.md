@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 For small businesses, finding the right CRM can feel like navigating a maze.
@@ -38,9 +40,9 @@ By prioritizing these factors, small businesses can find a CRM solution that mee
 
 ### [NocoBase](https://www.nocobase.com)
 
-![NocoBase.png](https://static-docs.nocobase.com/a6e20c531129109445d14c99fa3df6df.png)
+![image-4bv1wm.png](https://static-docs.nocobase.com/image-4bv1wm.png)
 
-NocoBase is a highly flexible, scalable, and lightweight open-source platform for no-code and low-code development. With rapid deployment, businesses can create a private and fully controllable no-code environment, empowering teams to efficiently build various applications—including fully customized CRM systems.
+**NocoBase** is a lightweight and highly extensible, open-source, AI-driven no-code (zero-code) and low-code development platform. With rapid deployment, enterprises can quickly set up a private and controllable development environment enhanced by AI-driven capabilities, enabling teams to efficiently build a wide range of business applications, including fully customized CRM systems.
 
 🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
@@ -51,6 +53,8 @@ NocoBase stands out from traditional CRMs with these unique benefits:
 * **Data-Driven Design:** Its data model-driven architecture separates the interface from the data structure, allowing users to flexibly create and manage tables, fields, and relationships to suit different business scenarios.
 * **Modular Plugin System:** Built on a microkernel design, all functionalities are plugin-based, much like WordPress. You can add or remove features as needed, ensuring a highly adaptable and extensible system.
 * **Open-Source and Secure:** Fully open-source and supporting self-hosting, NocoBase gives businesses complete control over their data and systems, safeguarding privacy and security.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Hands-On Experience**
 
