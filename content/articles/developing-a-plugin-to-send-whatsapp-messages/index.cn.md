@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 本文由 Leandro Martins 编写，最初发布于 [Developing a Plugin to Send WhatsApp Messages in NocoBase](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase)。
 
 本文的目标是展示在 NocoBase 中创建插件的步骤，以满足特定需求。我们将涵盖架构设计、创建基础结构、激活插件、定义和创建集合、创建端点、构建配置界面、与工作流集成以及导出插件等内容。
@@ -9,8 +11,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 插件架构
 
