@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 In recent years, low-code development platforms have sparked intense debate. On Hacker News, many highly upvoted discussions about low-code focus on skepticism.
 
 The most popular thread is titled *"[I'm skeptical of low-code](https://news.ycombinator.com/item?id=38816135),"* while another, ranked fifth, bluntly claims *"[Low Code Software Development Is a Lie](https://news.ycombinator.com/item?id=35578240)"*
@@ -91,7 +93,7 @@ The following six platforms stand out for their strong development logic, flexib
 | Appsmith | Internal applications            | ✅          | Drag-and-drop UI, custom APIs, JavaScript logic                   |
 | n8n      | Workflow automation              | ✅          | Self-hosted Zapier alternative, visual workflow builder           |
 
-### 1. [NocoBase](https://www.nocobase.com/) (A Highly Flexible, Open-Source No-Code Platform)
+### 1. [NocoBase](https://www.nocobase.com/) (A Highly Flexible, Open-Source AI No-Code Platform)
 
 ![NocoBase.png](https://static-docs.nocobase.com/26002e136164bdacddf02be8ece7052e.png)
 
@@ -106,6 +108,8 @@ The following six platforms stand out for their strong development logic, flexib
 ✅ Plugin-based architecture with API support for custom functionality and multi-data source compatibility
 
 ✅ Seamlessly embeddable into other systems with rich API support for enterprise integrations
+
+✅ Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Ideal for:** Enterprises and teams that need full control over their business logic, permission management, and application architecture.
 
