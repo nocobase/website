@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 Imagine you're a project manager. Every morning, as you settle at your desk with your coffee in hand, your phone and computer screens are already filled with a multitude of unfinished tasks, project updates, and team messages.
 
 Emails flash by, task assignment notifications keep popping up, each requiring you to make quick decisions. Meanwhile, team members are messaging you for progress updates, discussing issues, and some even bring new challenges and change requests directly to meetings.
@@ -28,7 +30,7 @@ Here are 5 open-source no-code platforms I recommend for quickly building your o
 
 **User Experience**
 
-[NocoBase](https://www.nocobase.com/) is a powerful no-code development platform ideal for building project management systems. Based on a data-driven model, NocoBase allows you to create a flexible project management system with extensive customization options. Its minimalist interface makes task management and project tracking intuitive and efficient.
+**NocoBase** is a powerful AI no-code (zero-code) development platform that can be used to build project management systems. Based on a data-driven model, NocoBase helps teams create flexible project management solutions with extensive customization options. Its clean and minimal interface makes task management and project tracking intuitive and efficient.
 
 🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management) – feel free to try it out!
 
@@ -51,6 +53,10 @@ Here are 5 open-source no-code platforms I recommend for quickly building your o
 * **User-Friendly:** Intuitive drag-and-drop operations, flexible configurations, and detailed documentation make it suitable for users of all technical levels.
 
 ![documentation.png](https://static-docs.nocobase.com/documentation-nnyend.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
