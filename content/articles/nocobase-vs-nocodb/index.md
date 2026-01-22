@@ -1,4 +1,4 @@
-**Last updated [2025.11.16]**
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 Hello everyone, I am Lijia from [NocoBase](https://www.nocobase.com/).
 
@@ -34,15 +34,13 @@ Let’s dive in!
 
 ---
 
-
-
 ## Introduction to NocoBase and NocoDB
 
 **Both NocoBase and NocoDB are open-source no-code platforms, but they serve different purposes.**
 
 ![NocoBase.png](https://static-docs.nocobase.com/6f8ab172beb5e7bd39f3781f00b63b29.png)
 
-NocoBase is a highly scalable no-code/low-code development platform that allows users to quickly build various business applications. It is built around a data model-driven core, enabling users to design and manage complex workflows through simple configurations.
+**NocoBase** is a highly extensible AI no-code / low-code development platform that enables users to quickly build a wide range of business applications. Built around a data model–driven approach, it allows users to design and manage complex business processes through simple configuration.
 
 NocoBase emphasizes flexibility and scalability, providing a strong solution for teams that need a balance between custom development and no-code applications. Users can also extend its functionality with plugins to meet more advanced development requirements.
 
