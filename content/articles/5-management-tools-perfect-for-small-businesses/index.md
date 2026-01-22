@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction: The Origins of Our Management Tools
 
 Our team at NocoBase is made up of 14 people, and we operate entirely as a remote team.
@@ -69,6 +71,8 @@ Our CMS, built with NocoBase, manages the blogs on our official website.
 * **No-Code/Low-Code Development**: Intuitive and accessible for anyone, enabling quick adoption and system building without technical expertise.
 * **Advanced Permission Management**: Granular controls ensure secure and appropriate data access for all team members.
 * **Open Source with Private Deployment**: The open-source framework empowers businesses to retain full control over their data and systems, ensuring security and compliance.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Why NocoBase is Perfect for Small Businesses**
 
