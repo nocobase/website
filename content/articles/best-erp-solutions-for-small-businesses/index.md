@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 This is the fourth article in our **"Small Business"** series! Here’s a quick look back at our previous topics:
 
 * [5 Must-Have Management Tools for Small Businesses \(Based on Real Experience\)](https://www.nocobase.com/cn/blog/5-management-tools-perfect-for-small-businesses)
