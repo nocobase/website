@@ -12,6 +12,8 @@ As more tools and systems integrate more deeply with AI, open source CRM project
 
 In this updated review, we looked at high star repositories under the  [GitHub CRM topic](https://github.com/topics/crm) and grouped them into two categories: CRMs with built in AI capabilities and CRMs that support AI extensions. We summarize their AI features and common use cases to help you understand their capability boundaries and choose the option that best fits your needs.
 
+🎉[NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
+
 ---
 
 💬Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
