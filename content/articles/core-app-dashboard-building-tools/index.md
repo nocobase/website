@@ -1,4 +1,4 @@
-**Last updated [2025.11.16]**
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 You may not be familiar with the concept of Core App Dashboard, but you certainly know what a dashboard is.
 
@@ -11,8 +11,6 @@ In the digital age, with the explosive growth of data and increasingly complex b
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## What is a Core App Dashboard？
 
@@ -32,7 +30,7 @@ As an efficient data visualization tool, Core App Dashboards offer several pract
 
 ## Best Core App Dashboard Building Tools
 
-### [NocoBase](https://www.nocobase.com/): No-Code/Low-Code Development Platform
+### [NocoBase](https://www.nocobase.com/): An AI no-code / low-code development platform
 
 * **Data Model Driven**: NocoBase employs a data model-driven design, allowing users to flexibly define and adjust data structures and quickly connect to various data sources (like MySQL and PostgreSQL). Its visual modeling tools simplify complex data relationships while providing a variety of data table types to meet different business needs, enhancing data management and analysis capabilities.
 
@@ -46,6 +44,10 @@ As an efficient data visualization tool, Core App Dashboards offer several pract
 * **Easily Extensible Plugin Architecture**: NocoBase's microkernel architecture allows users to develop custom plugins based on specific business needs, enabling easy feature expansion without affecting existing systems.
 
 ![Easily Extensible Plugin Architecture.PNG](https://static-docs.nocobase.com/f5f2c8056c536f0edf54115f5cedba28.PNG)
+
+* AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
