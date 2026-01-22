@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Nov. 10, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 I'm sure you are familiar with Airtable.
 
@@ -98,6 +98,7 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 * **Flexible Data Model-Driven Development**: NocoBase employs a data model-driven approach, separating the user interface from the data structure, allowing limitless development capabilities.
 * **User-Friendly Configuration Interface**: Provides an easy-to-use WYSIWYG interface, enabling users to switch between usage and configuration modes with one click, allowing for rapid development of complex business systems without programming experience.
 * **Open Source and Plugin Architecture**: The core and basic plugins of NocoBase are fully open-source, ensuring transparency and control. Its microkernel architecture allows for modular functionality, making it easy to install and develop plugins for evolving business needs.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
