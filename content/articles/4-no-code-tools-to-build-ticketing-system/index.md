@@ -28,6 +28,8 @@ These scattered discussions highlight the same underlying reality:
 
 **While there are plenty of off-the-shelf ticketing systems, most fail to balance easy adoption with deep customization.**
 
+🎉[AI-Powered Ticketing Built with NocoBase 2.0 ](https://www.nocobase.com/en/blog/ai-powered-ticketing-built-with-nocobase-2-0)
+
 So, instead of compromising with prebuilt tools, why not build a fully customized ticketing system using an **open-source no-code or low-code platform**?
 
 ❤ If you think the existing ticketing system already meets your business needs, you can read: [6 Best Open-Source Ticketing Systems for 2025](https://www.nocobase.com/en/blog/open-source-ticketing-systems)
