@@ -1,4 +1,4 @@
-**Last updated [2025.6.12]**
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 You might be wondering, with powerful traditional CRM systems like Salesforce being so mature today, why would a business choose to build a CRM using low-code or no-code platforms?
 
@@ -19,8 +19,6 @@ In today’s fast-paced, flexibility-driven environment, we see more and more bu
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Traditional CRM vs. Low-Code/No-Code CRM
 
@@ -108,7 +106,7 @@ These no-code/low-code tools can help you easily build a simple CRM in a few hou
 
 ![NocoBase.png](https://static-docs.nocobase.com/752ae5de360b51c2d551f5bb43766907.png)
 
-NocoBase is a highly flexible, open-source no-code platform designed for rapidly building and customizing business applications. Its data model-driven architecture allows users to precisely define and manage business data structures, easily building CRM systems that meet specific business needs and expanding upon them as required.
+**NocoBase** is a highly flexible, open-source AI no-code platform designed for rapidly building and customizing business applications. Its data model–driven architecture allows users to precisely define and manage business data structures, easily build CRM systems tailored to specific business needs, and continuously extend them over time.
 
 🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
@@ -129,6 +127,10 @@ NocoBase is a highly flexible, open-source no-code platform designed for rapidly
 **Rich Plugin Ecosystem:** Provides a wide variety of plugin options, allowing users to freely install and configure plugins based on their business needs, further expanding CRM functionality and achieving personalized customization.
 
 ![Rich Plugin Ecosystem.png](https://static-docs.nocobase.com/b39dd1cab17fc6f6fdc6c1b22acff4e1.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Case:**
 
