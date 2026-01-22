@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 This blog was produced by Leandro Martins and was originally published at [Build Application Catalog with NocoBase](https://leandromartins.hashnode.dev/simplified-architecture-governance-building-an-application-catalog-with-nocobase#).
 
 The goal is to demonstrate the potential and ease of [NocoBase](https://www.nocobase.com/) for developing web applications without coding. As a case study, I will create an application catalog to assist with architecture governance. This case will involve modeling, installation, table creation, menus, forms, charts, and workflows using NocoBase features.
@@ -9,8 +11,6 @@ For this article, we will use the following technologies: NocoBase, Postgres, an
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **What is NocoBase?**
 
@@ -25,6 +25,8 @@ For this article, we will use the following technologies: NocoBase, Postgres, an
 * **Database compatibility**: Supports major relational databases like Postgres and MySQL.
 * **Visual data modeling**: Define tables and data visually using the Main Database plugin.
 * **Extensive plugin library**: Offers a wide range of free and paid plugins, with the ability to develop custom plugins.
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ![Key Highlights of NocoBase.png](https://static-docs.nocobase.com/95c4cc96a72c8e414e5399d7d9b6ee18.png)
 
