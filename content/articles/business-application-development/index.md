@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 **❤️ Friendly Reminder**
 
 This article is quite long, so feel free to jump to the sections that interest you the most using the table of contents. Of course, I believe if you read through the entire piece, you'll find plenty of valuable insights.
@@ -25,8 +27,6 @@ This pain point is particularly pronounced for small and medium-sized businesses
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## **Can No-Code and Low-Code Accelerate Business Application Development?**
 
