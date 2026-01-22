@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on June 11, 2025. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 Continuing our GitHub Star series! This is the fourth article in the series. Previous articles include:
 
@@ -130,7 +130,7 @@ APIJSON is a JSON-based communication protocol and ORM library designed for APIs
 * **Internal Tools**: Quickly set up backend management interfaces for enterprise management systems and monitoring systems.
 * **Education and Learning**: Due to its ease of use, APIJSON is also suitable for educational environments to help students and beginners understand API construction and usage.
 
-## **NocoBase (15.8k stars)**
+## **NocoBase (21.3k stars)**
 
 ![NocoBase.png](https://static-docs.nocobase.com/b1c0f7c45d93a4c05fffeeadfbd758f9.png)
 
@@ -145,7 +145,7 @@ APIJSON is a JSON-based communication protocol and ORM library designed for APIs
 | Official Website              | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | Documentation                 | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
 
-NocoBase is a highly extensible open-source no-code/low-code platform designed for enterprise-grade business applications and solutions. From a CRUD perspective, NocoBase offers a robust data model-driven approach, making it ideal for building and managing complex data interactions. Through NocoBase, enterprises can quickly deploy applications with complex data processing capabilities without deep backend development, greatly improving development efficiency and system scalability.
+**NocoBase** is a highly extensible, open-source AI no-code / low-code platform designed for enterprise-grade business applications and solutions. From a CRUD perspective, NocoBase offers a robust data model-driven approach, making it ideal for building and managing complex data interactions. Through NocoBase, enterprises can quickly deploy applications with complex data processing capabilities without deep backend development, greatly improving development efficiency and system scalability.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
