@@ -1,3 +1,5 @@
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
+
 在大数据时代，企业和组织面临着海量的数据挑战。随着应用程序复杂性的提高以及用户需求不断演变，开发团队需要高效地处理大量数据，以便快速做出决策。然而，在众多信息中，如何识别并有效利用那些对决策至关重要的数据呢？
 
 **数据管理工具**提供了解决方案，帮助开发团队从繁杂的信息中提取价值，优化数据结构，使有效数据得到更好的应用。
@@ -9,8 +11,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 什么是数据管理？
 
@@ -55,7 +55,7 @@
 
 GitHub：https://github.com/nocobase/nocobase
 
-[NocoBase](https://www.nocobase.com/) 是一个开源无代码/低代码开发平台，通过高效的数据集成能力，能够将分散在不同来源的数据统一整合，同时其自动化数据清洗能力，能够显著降低数据治理成本，帮助用户快速构建定制化解决方案，提升工作效率。
+[NocoBase](https://www.nocobase.com/) 是一个开源的 AI 无代码 / 低代码开发平台，通过高效的数据集成能力，能够将分散在不同来源的数据统一整合；同时其自动化数据清洗能力，能够显著降低数据治理成本，帮助用户快速构建定制化解决方案，提升工作效率。
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
@@ -71,6 +71,10 @@ GitHub：https://github.com/nocobase/nocobase
 * **[支持多种数据源](https://www.nocobase.com/cn/tutorials/task-tutorial-data-management-guide)**：兼容多种数据源，支持数据库、API 等不同格式的数据，满足各种应用场景的需求。
 
 ![Support multiple data sources.png](https://static-docs.nocobase.com/e612b0a7f0c96965f0044d6f3bc33de4.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **优缺点**
 
