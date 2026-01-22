@@ -1,4 +1,4 @@
-📝 Note: This article was last updated on Jan. 8, 2026. We regularly update the information to ensure you have the latest insights! 😊
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 While browsing [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/), I stumbled upon a question from a user:
 
@@ -28,7 +28,7 @@ In the following sections, we’ll introduce several recommended tools, explorin
 
 ### Introduction
 
-[NocoBase](https://www.nocobase.com/) is a highly extensible open-source [no-code](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[low-code](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars) development platform. Its core focus on a data model-driven architecture makes it an excellent all-in-one business solution. By combining robust permissions management and workflow automation features, it caters to businesses requiring multi-role collaboration and flexible customization. With an intuitive drag-and-drop interface, users can build complex data structures, dynamic pages, and workflows without any programming knowledge. It also allows seamless integration of multiple data sources, enabling businesses to streamline operations efficiently.
+[NocoBase](https://www.nocobase.com/) is a highly extensible open-source AI [no-code](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[low-code](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars) development platform. Its core focus on a data model-driven architecture makes it an excellent all-in-one business solution. By combining robust permissions management and workflow automation features, it caters to businesses requiring multi-role collaboration and flexible customization. With an intuitive drag-and-drop interface, users can build complex data structures, dynamic pages, and workflows without any programming knowledge. It also allows seamless integration of multiple data sources, enabling businesses to streamline operations efficiently.
 
 ### **Core Features**
 
@@ -43,6 +43,10 @@ In the following sections, we’ll introduce several recommended tools, explorin
 * **Workflow Automation**: Supports multi-step processes, from task assignment to approval notifications, optimizing operations, enhancing efficiency, and reducing manual intervention.
 
 ![Workflow Automation.png](https://static-docs.nocobase.com/de46244d9116431d7243c290826b4697.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 With these capabilities, NocoBase enables quick construction of CRM, contract management, and project management systems. Furthermore, it allows businesses to integrate various systems and data into a centralized platform, creating a highly tailored and unified management system.
 
