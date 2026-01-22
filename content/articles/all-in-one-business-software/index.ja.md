@@ -1,4 +1,4 @@
-📝 注：この記事は 2026 年 1 月 8 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
 [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/)を閲覧中、あるユーザーの質問が目に留まりました。
 
@@ -28,7 +28,7 @@
 
 ### **紹介**
 
-[NocoBase](https://www.nocobase.com/) は、高拡張性を備えたオープンソースの[ノーコード（ゼロコード）](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[ローコード](https://www.nocobase.com/ja/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)開発プラットフォームであり、データモデル駆動を中心とした一体型ビジネスソリューションを提供します。NocoBaseは強力な権限管理と自動化ワークフロー機能を組み合わせ、複数の役割によるコラボレーションや柔軟なカスタマイズのニーズに対応しています。直感的なドラッグ＆ドロップインターフェースを通じて、ユーザーはプログラミング不要で複雑なデータ構造や動的ページを迅速に構築し、複数のデータソースを統合してビジネスプロセスを最適化できます。NocoBaseは、効率的で統一された操作体験を提供し、企業の管理を簡素化し、効率を向上させるための理想的な選択肢です。
+[NocoBase](https://www.nocobase.com/) は、高拡張性を備えたオープンソースの AI [ノーコード（ゼロコード）](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)/[ローコード](https://www.nocobase.com/ja/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)開発プラットフォームであり、データモデル駆動を中心とした一体型ビジネスソリューションを提供します。NocoBaseは強力な権限管理と自動化ワークフロー機能を組み合わせ、複数の役割によるコラボレーションや柔軟なカスタマイズのニーズに対応しています。直感的なドラッグ＆ドロップインターフェースを通じて、ユーザーはプログラミング不要で複雑なデータ構造や動的ページを迅速に構築し、複数のデータソースを統合してビジネスプロセスを最適化できます。NocoBaseは、効率的で統一された操作体験を提供し、企業の管理を簡素化し、効率を向上させるための理想的な選択肢です。
 
 ### **コア機能**
 
@@ -43,6 +43,10 @@
 * **ワークフロー自動化**: 強力な自動化ツールにより、タスクの割り当てから承認リマインダーまで、複数ステップのプロセスを設定でき、企業の業務操作を最適化し、効率を向上させるとともに人的介入を減少させます。
 
 ![Workflow Automation.png](https://static-docs.nocobase.com/de46244d9116431d7243c290826b4697.png)
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 これらのコア機能に基づき、NocoBaseはCRM、契約管理、プロジェクト管理などのシステムを迅速に構築できるだけでなく、さまざまなシステムやデータを統一プラットフォームに接続して集中管理することが可能です。これにより、企業はビジネスニーズに高い適合性を持つ一体型管理システムを迅速に構築することができます。
 
