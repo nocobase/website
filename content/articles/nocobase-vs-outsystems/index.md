@@ -1,3 +1,5 @@
+📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
+
 ## Introduction
 
 I’ve previously written several in-depth comparisons of low-code and no-code platforms. If you're interested, check out these articles:
@@ -13,7 +15,7 @@ Today, we’re diving into another widely recognized low-code platform: **OutSys
 
 Why compare these two platforms? Because they represent **two distinct approaches** to low-code development:
 
-* **NocoBase** – An **open-source**, plugin-based **low-code application development platform**. It is **data model-driven**, highly customizable, and designed for tech teams building tailored business applications.
+* **NocoBase** – It is an open-source, plugin-based, AI-driven low-code application development platform built around a data model–driven approach. With the support of AI-driven capabilities, it offers a high level of customization and flexibility, making it suitable for technical teams building tailored business systems.
 * **OutSystems** – A **closed-source enterprise low-code platform**. It offers an all-in-one development and deployment solution, catering to large enterprises looking for **rapid deployment with official support**.
 
 Both platforms have their strengths and serve different use cases. This article will explore their differences in depth, focusing on the **open-source vs. closed-source** debate, helping businesses and developers determine which low-code platform best suits their needs.
@@ -23,8 +25,6 @@ Both platforms have their strengths and serve different use cases. This article 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## Open-Source vs. Closed-Source
 
