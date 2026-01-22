@@ -1,4 +1,4 @@
-**最后更新：2025.11.16**
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 **核心应用仪表盘**（Core App Dashboard）的概念或许你不太熟悉，但仪表盘你一定不陌生。
 
@@ -11,8 +11,6 @@
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 什么是核心应用仪表盘？
 
@@ -32,7 +30,7 @@
 
 ## 最佳核心应用仪表盘构建工具
 
-### [NocoBase](https://www.nocobase.com/)：无代码/低代码开发平台
+### [NocoBase](https://www.nocobase.com/)：AI 无代码 / 低代码开发平台
 
 * **数据模型驱动**：NocoBase 采用数据模型驱动的设计理念，允许用户灵活定义和调整数据结构，快速接入多种数据源（如 MySQL 和 PostgreSQL）。通过可视化建模工具简化复杂数据关系，同时提供丰富的数据表类型，以满足不同业务场景的需求，增强数据管理与分析能力。
 
@@ -46,6 +44,10 @@
 * **插件架构极易拓展**：NocoBase 的微内核架构允许用户根据具体业务需求开发自定义插件。这种插件化的设计使得用户可以在不影响现有系统的情况下，轻松扩展功能，满足特定需求。
 
 ![Easily Extensible Plugin Architecture.PNG](https://static-docs.nocobase.com/f5f2c8056c536f0edf54115f5cedba28.PNG)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 🙌 上手实践：[NocoBase 实战教程 —— 任务管理系统](https://www.nocobase.com/cn/tutorials/task-tutorial-introduction)
 
