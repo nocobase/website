@@ -1,4 +1,4 @@
-📝 注：本文最后更新于 2026 年 1 月 8 日。我们会定期更新，确保你获取最新的信息！😊
+📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
 
 在当今快节奏、技术驱动的商业环境中，企业越来越依赖硬件、软件和数字资源来支持其运营，对高效和成本效益的 IT 资产管理解决方案的需求迫切。
 
@@ -45,7 +45,7 @@
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/c414d29d422277127a46abf8f9518551.PNG)
 
-[NocoBase](https://www.nocobase.com/) 是一个开源自托管的无代码（零代码）/低代码开发平台，通过其插件化架构，可以快速搭建 IT 资产管理系统，是灵活、高效且安全的 IT资产管理解决方案。
+[NocoBase](https://www.nocobase.com/) 是一个开源、自托管、AI 驱动的无代码（零代码）/低代码开发平台，通过插件化架构，可以快速搭建 IT 资产管理系统，在 AI 的辅助下，成为灵活、高效且安全的 IT 资产管理解决方案。
 
 GitHub：https://github.com/nocobase/nocobase
 
@@ -66,6 +66,10 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 * **角色访问控制（RBAC）**：NocoBase 内置了灵活的角色权限控制（RBAC），允许用户根据实际需要为不同的团队成员设置不同的权限级别，确保敏感资产数据的安全性。
 
 ![Role-Based Access Control (RBAC):.gif](https://static-docs.nocobase.com/feb22be307348f872de465633e7d8435.gif)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **适用场景**：适用于中小型企业、需要高度定制化解决方案的组织、多部门协作资产管理、以及需整合多数据源和跨系统集成的场景。
 
