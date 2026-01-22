@@ -94,7 +94,7 @@ ServiceNow 是按模块和用户数量收费的 SaaS 平台，价格结构较为
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
-NocoBase 是一款专注于业务应用构建的开源、AI 驱动的低代码平台，采用高度插件化的架构和数据模型驱动设计，非常适合快速搭建定制化的 ITSM 系统。
+NocoBase 是高度灵活的开源 AI 无代码 / 低代码工具，通过直观的用户界面和拖放功能，帮助开发者快速创建和管理应用程序。
 
 **核心功能**
 
