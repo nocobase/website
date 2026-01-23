@@ -1,11 +1,11 @@
 {
   "id": 867,
-  "title": "NocoBase Weekly Updates: Optimization and Bug Fixes",
-  "title_cn": "NocoBase 本周更新汇总：优化及缺陷修复",
-  "title_ja": "NocoBase 今週の更新：最適化とバグ修正",
-  "description": "This week's update includes: add process level concurrency control for base task manager, and more.",
-  "description_cn": "本周更新包括：为默认任务管理器添加进程级并发控制等。",
-  "description_ja": "今週の更新内容は以下の通りです：デフォルトのタスクマネージャーに、プロセス単位での並行実行制御を追加",
+  "title": "Weekly Updates: Add Process-Level Concurrency Control to the Base Task Manager",
+  "title_cn": "本周更新｜为默认任务管理器添加进程及并发控制",
+  "title_ja": "今週の更新：デフォルトのタスクマネージャーに、プロセス単位での並行実行制御を追加",
+  "description": "This is a summary of NocoBase feature updates and improvements from January 15 to January 22, 2026.",
+  "description_cn": "汇总了 2026.01.15-01.22 期间 NocoBase 的功能更新与改进。",
+  "description_ja": "2026.01.15〜01.22 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260123",
   "publishedAt": "2026-01-22T16:07:28.524Z",
   "status": "published",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-22T17:35:03.830Z"
+  "updatedAt": "2026-01-23T03:01:10.128Z"
 }
