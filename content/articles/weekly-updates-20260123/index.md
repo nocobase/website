@@ -212,4 +212,4 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Email manager]**
 
   - fix conversation chain by @jiannx
-  - 管理页面添加筛选 by @jiannx
+  - Add filtering to the management page by @jiannx
