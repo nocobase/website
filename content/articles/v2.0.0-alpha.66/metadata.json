@@ -1,14 +1,14 @@
 {
   "id": 861,
-  "title": "NocoBase v2.0.0-alpha.66: Bug Fixes",
-  "title_cn": "NocoBase v2.0.0-alpha.66：缺陷修复",
+  "title": "NocoBase v2.0.0-alpha.66",
+  "title_cn": "NocoBase v2.0.0-alpha.66",
   "title_ja": "NocoBase v2.0.0-alpha.66：不具合修正",
   "description": "Release Note of v2.0.0-alpha.66",
   "description_cn": "v2.0.0-alpha.66 更新日志",
   "description_ja": "v2.0.0-alpha.66 リリースノート",
   "slug": "v2.0.0-alpha.66",
   "publishedAt": "2026-01-16T07:00:00.000Z",
-  "status": "published",
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-17T17:35:10.509Z"
+  "updatedAt": "2026-01-23T10:02:50.129Z"
 }
