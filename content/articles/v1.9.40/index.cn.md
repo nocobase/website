@@ -5,29 +5,20 @@
 ### 🐛 修复
 
 - **[client]**
+
   - 修复 nanoid 字段在表单提交后不重新生成数据的问题 ([#8491](https://github.com/nocobase/nocobase/pull/8491)) by @katherinehhh
-
   - 修复级联组件必填校验重复提示的问题 ([#8476](https://github.com/nocobase/nocobase/pull/8476)) by @katherinehhh
-
 - **[database]**
+
   - 修复数据表重载后使用 `empty` 操作符筛选报错的问题 ([#8496](https://github.com/nocobase/nocobase/pull/8496)) by @2013xile
-
   - 修复嵌套关联的深度更新问题 ([#8492](https://github.com/nocobase/nocobase/pull/8492)) by @chenos
-
 - **[文件管理器]** 修复上传文件时请求中的文件名被重复解码产生的乱码问题 ([#8481](https://github.com/nocobase/nocobase/pull/8481)) by @mytharcher
-
 - **[数据源：主数据库]** 修复在多对多关系表格区块中删除数据时，未遵循关系字段 `onDelete: 'restrict'` 约束的问题 ([#8493](https://github.com/nocobase/nocobase/pull/8493)) by @2013xile
-
 - **[区块：iframe]** 修复 Iframe 添加聚合变量报错的问题 ([#8482](https://github.com/nocobase/nocobase/pull/8482)) by @zhangzhonghe
-
 - **[工作流：Webhook 触发器]** 修复未配置请求体解析时触发器数据中该数据缺失的问题 by @mytharcher
-
 - **[模板打印]** 复了联合角色时打印按钮权限逻辑错误 by @jiannx
-
 - **[工作流：审批]**
+
   - 修复并发提交导致流程被重复恢复执行的问题 by @mytharcher
-
   - 修复分支模式的审批未能正确退回至指定节点的问题 by @mytharcher
-
-- **[迁移管理]** 修复迁移异常后打印异常对象所包含sql过大容易卡死进程的问题 by @cgyrock
-
+- **[迁移管理]** 修复迁移异常后打印异常对象所包含 SQL 过大容易卡死进程的问题 by @cgyrock
