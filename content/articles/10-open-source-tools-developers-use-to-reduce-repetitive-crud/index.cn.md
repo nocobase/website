@@ -54,7 +54,7 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 GitHub Star 数：21k
 
-NocoBase 是一款开源、AI 驱动的无代码/低代码开发平台，可以帮助将企业的 CRUD 能力从一次性开发转变为系统能力。它通过数据模型与 AI 能力共同驱动的方式，让业务人员和技术人员能够协同构建复杂的业务系统，并在 AI 的辅助下减少重复性工作，而无需每次都从零开始编写增删改查代码。
+**NocoBase** 是一款开源的 AI 无代码 / 低代码开发平台，可以帮助将企业的 CRUD 能力从一次性开发转变为系统能力。它通过数据模型驱动的方式，让业务人员和技术人员能够协同构建复杂的业务系统，而无需每次都从零开始编写增删改查代码。
 
 ![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
 
