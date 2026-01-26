@@ -83,7 +83,7 @@ Zapier 的订阅费用相对较高，但用户依然需要花费大量时间来�
 
 **项目概览**
 
-**[NocoBase](https://www.nocobase.com/)** 是一款开源、自托管的 AI 驱动低代码 / 无代码开发平台，旨在简化企业内部系统的开发。它采用数据模型驱动与插件化架构，可快速构建复杂业务系统，并在 AI 驱动能力的辅助下，兼顾高度的可扩展性与灵活性。目前项目在[ GitHub ]([GitHub](https://github.com/nocobase/nocobase)) 上获得了 21.3k Star。
+**[NocoBase](https://www.nocobase.com/)** 是一款开源、自托管的 AI 低代码 / 无代码开发平台，旨在简化企业内部系统的开发。它采用数据模型驱动与插件化架构，可快速构建复杂业务系统，兼顾高度的可扩展性与灵活性。目前项目在[ GitHub ]([GitHub](https://github.com/nocobase/nocobase)) 上获得了 21.3k Star。
 
 与 Zapier 相比，**NocoBase 提供了更高的灵活性和可扩展性**。 用户可以通过插件系统自定义功能，满足特定业务需求。 此外，NocoBase 支持自托管部署，确保数据安全和隐私保护。
 
