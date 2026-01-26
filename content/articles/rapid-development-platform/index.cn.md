@@ -38,7 +38,7 @@
 
 ## 国内外十大开源私有化快速开发平台概览
 
-1. **[NocoBase](https://www.nocobase.com/)** ：插件化架构，支持高自由度的功能定制和业务流程自动化，并结合 AI 驱动能力，适合多场景数据管理与内部工具构建。
+1. **[NocoBase](https://www.nocobase.com/)** ：基于插件化架构的 AI 无代码平台，支持高自由度的功能定制和业务流程自动化，并结合 AI 能力，适用于多场景数据管理与内部工具构建。
 2. **[JeecgBoot](https://jeecg.com/)**：基于 BPM 的低代码平台，采用 SpringBoot + Vue 技术架构，适合OA、CRM等企业级应用。
 3. **[简道云](https://www.jiandaoyun.com/)**：无代码（零代码）/低代码开发平台，支持通过拖拽组件快速构建应用。
 4. **[织信Informat](https://www.informat.cn/)**：无需代码或少量代码即可搭建企业管理系统的能力，非常适合中小型企业的数字化转型需求。
