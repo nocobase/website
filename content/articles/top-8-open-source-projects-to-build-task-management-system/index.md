@@ -41,7 +41,7 @@ Here are some key factors to consider:
 
 **Project URL**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-⭐️ **GitHub Stars**: 15.8k
+⭐️ **GitHub Stars**: 21.3k
 
 ![Project management.png](https://static-docs.nocobase.com/Project%20management-9w3rj1.png)
 
