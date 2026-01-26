@@ -45,7 +45,7 @@
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/c414d29d422277127a46abf8f9518551.PNG)
 
-[NocoBase](https://www.nocobase.com/) 是一个开源、自托管、AI 驱动的无代码（零代码）/低代码开发平台，通过插件化架构，可以快速搭建 IT 资产管理系统，在 AI 的辅助下，成为灵活、高效且安全的 IT 资产管理解决方案。
+[NocoBase](https://www.nocobase.com/) 是一个开源、自托管的 AI 无代码（零代码）/低代码开发平台，通过插件化架构，可以灵活、高效且安全地搭建 IT 资产管理系统。
 
 GitHub：https://github.com/nocobase/nocobase
 
