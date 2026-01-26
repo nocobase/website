@@ -66,7 +66,7 @@ Github：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 如果你想搭建一套**真正“属于自己逻辑”的 CRM 系统**，而不是被模板框住思维、局限在平台设定好的流程中，NocoBase 会是你该认真评估的选项之一。
 
-NocoBase 是一个数据模型驱动、AI 驱动的零代码开发平台，专注于中高复杂度业务系统的搭建。它提供灵活的数据结构配置、可视化页面设计和插件式扩展机制，并在 AI 驱动能力的辅助下，适合用于构建完全定制化的 CRM 系统。
+NocoBase 是一个数据模型驱动、AI 驱动的零代码开发平台，专注于中高复杂度业务系统的搭建。它提供灵活的数据结构配置、可视化页面设计和插件式扩展机制，并在 AI 的辅助下，适合用于构建完全定制化的 CRM 系统。
 
 近期，NocoBase 官方也推出了预配置的 [CRM 解决方案](https://www.nocobase.com/cn/solutions/crm)，用户可以一键复制模板并快速开始使用，大幅降低了搭建门槛。如果你过去在 Airtable 或 Notion 上勉强搭过 CRM，但总感觉受限，不妨试试 NocoBase。
 
