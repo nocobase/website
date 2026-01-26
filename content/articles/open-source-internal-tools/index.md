@@ -70,11 +70,11 @@ ILLA Builder is an open-source low-code platform designed to simplify the develo
 
 | GitHub                       | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ---------------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star                  | 13.5k                                                                        |
-| GitHub Fork                  | 1.5k                                                                         |
-| GitHub Issue                 | 45                                                                           |
-| GitHub Pull Request          | 49                                                                           |
-| GitHub Contributor           | 85                                                                           |
+| GitHub Star                  | 21.3k                                                                        |
+| GitHub Fork                  | 2.4k                                                                         |
+| GitHub Issue                 | 123                                                                          |
+| GitHub Pull Request          | 133                                                                          |
+| GitHub Contributor           | 103                                                                          |
 | Most Recent Update on GitHub | Within one day                                                               |
 | Open Source License          | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | Official Website             | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
