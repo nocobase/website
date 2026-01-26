@@ -45,7 +45,7 @@ Open-source IT asset management (ITAM) software is a cost-effective solution for
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/c414d29d422277127a46abf8f9518551.PNG)
 
-[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted, AI-driven no-code (zero-code) / low-code development platform. With its plugin-based architecture, it enables rapid construction of IT asset management systems and, with AI assistance, delivers a flexible, efficient, and secure IT asset management solution.
+[NocoBase](https://www.nocobase.com/) is an open-source, self-hosted AI no-code (zero-code) / low-code development platform that enables flexible, efficient, and secure construction of IT asset management systems through a plugin-based architecture.
 
 GitHub：https://github.com/nocobase/nocobase
 
