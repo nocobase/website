@@ -42,11 +42,11 @@ These tools go beyond simple database management—they also include no-code dev
 
 **Overview**
 
-NocoBase is a highly extensible, open-source, AI-driven low-code/no-code platform designed for enterprise applications and business systems. It supports visual data modeling, permission management, and workflow configuration, and can be flexibly extended through plugins with the assistance of AI-driven capabilities.
+NocoBase is a highly extensible, open-source AI low-code / no-code platform designed for enterprise applications and business systems. It supports visual data modeling, permission management, and workflow configuration, and can be flexibly extended through plugins to address complex business requirements.
 
 Unlike Microsoft Access, which is a desktop database tool, NocoBase is a comprehensive platform for building online business applications. In many enterprise use cases—such as collaborative databases, form-driven applications, departmental data management, and visual reporting—NocoBase can serve as a modern alternative to Access.
 
-* GitHub Star: ⭐16.7k
+* GitHub Star: ⭐21.3k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
 * Website: https://www.nocobase.com
 
@@ -67,6 +67,10 @@ Unlike Microsoft Access, which is a desktop database tool, NocoBase is a compreh
 * **Plugin ecosystem**: Extend functionality via APIs and plugins, connecting with external databases, APIs, and third-party services.
 
 ![Plugin](https://static-docs.nocobase.com/Plugin-y61b0i.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Use Cases**
 
