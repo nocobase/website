@@ -227,7 +227,7 @@ Platform is fully open-source, licensed under Apache License 2.0, making all cor
 
 **Overview**
 
-**NocoBase** is an open-source, AI-driven no-code/low-code development platform built around the principles of high extensibility and data model–driven design. With AI-driven capabilities, it helps enterprises and developers quickly build management systems such as CRM and ERP.
+**NocoBase** is an open-source, AI-driven no-code/low-code development platform built around the principles of high extensibility and data model–driven design. With AI  capabilities, it helps enterprises and developers quickly build management systems such as CRM and ERP.
 
 🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
