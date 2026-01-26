@@ -128,13 +128,13 @@ Huly 非常适合任何规模的团队，特别是那些需要可定制工具并
 
 ## 5.[NocoBase](https://www.nocobase.com/)
 
-⭐️ Stars: 13.2k
+⭐️ Stars: 21.3k
 
 GitHub Link: https://github.com/nocobase/nocobase
 
 ![nocobase.png](https://static-docs.nocobase.com/cc93e4b01872728b468b521de7f79b99.png)
 
-[NocoBase](https://www.nocobase.com/) 是一款极易拓展的开源、AI 驱动的无代码（零代码）/低代码 CRM 工具，专注于数据模型驱动和灵活的插件系统，在 AI 驱动能力的辅助下，为企业提供高度可定制的客户管理解决方案。
+[NocoBase](https://www.nocobase.com/) 是一款极易拓展的开源 AI 无代码（零代码）/低代码 CRM 工具，专注于数据模型驱动和灵活的插件系统，结合 AI 能力，为企业提供高度可定制的客户管理解决方案。
 
 🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
 
@@ -145,7 +145,6 @@ GitHub Link: https://github.com/nocobase/nocobase
 * **数据模型驱动**：根据具体的业务逻辑，灵活创建和管理数据模型，使得 CRM 系统的结构更加符合企业实际需求。
 * **灵活的工作流自动化**：支持基于条件触发的自动化规则，提升工作效率。
 * **多语言与权限管理**：支持多语言功能，并内置强大的权限管理系统，确保敏感数据的安全性。
-
 * **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 **适用场景：**
