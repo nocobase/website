@@ -28,7 +28,7 @@ Official website: [https://www.nocobase.com](https://www.nocobase.com)
 
 **Overview**
 
-An open-source, self-hosted no-code development platform centered on data modeling, introducing intelligence into business systems through AI-driven “AI Employees” capabilities.
+An open-source, self-hosted AI no-code development platform centered on data modeling, bringing intelligence into business systems through AI Employees.
 
 ![nocobase.png](https://static-docs.nocobase.com/nocobase-s1wqmh.png)
 
