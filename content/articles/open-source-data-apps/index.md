@@ -47,7 +47,7 @@ A data model–driven, open-source, AI-driven no-code platform where all functio
 
 **GitHub:** [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-**GitHub Stars:** 16.4k
+**GitHub Stars:** 21.3k
 
 **Highlights:**
 
@@ -55,6 +55,7 @@ A data model–driven, open-source, AI-driven no-code platform where all functio
 * Granular permission control
 * Automated workflows
 * Plugin-based architecture
+* AI employees embedded in the system
 
 **Best for:**
 
