@@ -54,7 +54,7 @@
 
 GitHub 链接：https://github.com/nocobase/nocobase
 
-GitHub Star 数：16.4k
+GitHub Star 数：21.3k
 
 **亮点功能**：
 
@@ -62,6 +62,7 @@ GitHub Star 数：16.4k
 * 精细化权限控制
 * 自动化工作流
 * 插件扩展机制
+* 融入系统的 AI 员工
 
 **最适合的数据应用类型**：
 
