@@ -178,7 +178,7 @@ Website: https://huly.io/
 
 🎉 最近 NocoBase は[プロジェクト管理](https://www.nocobase.com/cn/solutions/project-management)ソリューションをリリースしました。オープンソース、完全なコントロール、容易な拡張と改変を実現！
 
-GitHub Star: 16.6k
+GitHub Star: 21.3k
 
 GitHub: https://github.com/nocobase/nocobase
 
@@ -203,6 +203,10 @@ Website: https://www.nocobase.com/
 * **柔軟なワークフロー**：条件分岐、タスクの割り当て、通知などの自動化アクションを設定可能。たとえば、期限が近づいたら自動でリマインド通知を送る、といった使い方ができます。
 
 ![Configurable Workflows](https://static-docs.nocobase.com/Configurable%20Workflows-1lodfd.png)
+
+* **システムに組み込まれた AI エージェント**：ユーザーインターフェースや業務ワークフロー、データの文脈に AI を自然に組み込み、企業の実際の業務シーンで AI を実用的に活用できるようにします。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **推奨シーン**
 
