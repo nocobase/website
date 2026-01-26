@@ -70,11 +70,11 @@ ILLA Builderは、エンタープライズアプリケーションの開発を�
 
 | GitHub                   | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| GitHubスター数           | 13.5k                                                                        |
-| GitHubフォーク数         | 1.5k                                                                         |
-| GitHubイシュー数         | 45                                                                           |
-| GitHubプルリクエスト数   | 49                                                                           |
-| GitHub貢献者数           | 85                                                                           |
+| GitHubスター数           | 21.3k                                                                        |
+| GitHubフォーク数2.4k     | 2.4k                                                                         |
+| GitHubイシュー数         | 123                                                                          |
+| GitHubプルリクエスト数   | 133                                                                          |
+| GitHub貢献者数           | 103                                                                          |
 | GitHub最近の更新日       | 1日前                                                                        |
 | オープンソースライセンス | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 公式ウェブサイト         | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
