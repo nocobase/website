@@ -20,7 +20,7 @@
 
 ## **快速浏览 13 个优秀****自托管****项目**
 
-**13.NocoBase——低代码/无代码开发平台（⭐15.8k）**
+**13.NocoBase——低代码/无代码开发平台（⭐21.3k）**
 
 **12.khoj——人工智能知识管理系统（⭐30.3k）**
 
@@ -57,11 +57,11 @@
 
 | GitHub                 | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ---------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star 数         | 11.6k                                                                        |
-| GitHub Fork 数         | 1.3k                                                                         |
-| GitHub Issue 数        | 31                                                                           |
-| GitHub Pull Request 数 | 41                                                                           |
-| GitHub Contributor 数  | 71                                                                           |
+| GitHub Star 数         | 21.3k                                                                        |
+| GitHub Fork 数         | 2.4k                                                                         |
+| GitHub Issue 数        | 123                                                                          |
+| GitHub Pull Request 数 | 133                                                                          |
+| GitHub Contributor 数  | 103                                                                          |
 | 开源协议               | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 官网                   | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | 文档                   | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
