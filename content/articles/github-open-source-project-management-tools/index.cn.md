@@ -174,11 +174,11 @@ Website: https://huly.io/
 
 **简介**
 
-[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源、AI 驱动的无代码平台，它不预设固定功能，而是提供灵活的数据模型和插件机制，并结合 AI 驱动能力，让团队能够完全根据自身需求灵活搭建项目管理所需的各类模块。
+[NocoBase](https://www.nocobase.com/) 是一款极易扩展的开源 AI 无代码平台，它不预设固定功能，而是提供灵活的数据模型和插件机制，并结合 AI 能力，让团队能够完全根据自身需求灵活搭建项目管理所需的各类模块。
 
 🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，开源、完全掌控、极易扩展与修改，欢迎体验！
 
-GitHub Star: 16.6k
+GitHub Star: 21.3k
 
 GitHub: https://github.com/nocobase/nocobase
 
@@ -203,6 +203,10 @@ Website: https://www.nocobase.com/
 * **可配置工作流**：NocoBase 的工作流支持条件判断、任务分配、通知提醒等自动化动作。比如，当截止日期临近时，自动发送提醒。
 
 ![工作流](https://static-docs.nocobase.com/%E5%B7%A5%E4%BD%9C%E6%B5%81-s6m810.png)
+
+* **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **推荐场景**
 
