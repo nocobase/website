@@ -56,11 +56,9 @@ GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocob
 
 GitHub Stars: 21k
 
-NocoBase is an open-source, AI-driven no-code/low-code development platform that helps transform enterprise CRUD capabilities from one-off implementations into reusable system capabilities.
+**NocoBase** is an open-source AI no-code / low-code development platform that helps transform enterprise CRUD capabilities from one-off implementations into reusable system capabilities.
 
-By combining data model–driven design with built-in AI assistance, it enables business users and developers to collaboratively build complex business systems while reducing repetitive work, without having to write CRUD code from scratch each time.
-
-![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
+Through a data model–driven approach, it enables business users and developers to collaboratively build complex business systems without repeatedly writing CRUD code from scratch.
 
 **Core capabilities in this approach include:**
 
