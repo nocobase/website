@@ -137,10 +137,10 @@ APIJSON is a JSON-based communication protocol and ORM library designed for APIs
 
 | GitHub                        | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ----------------------------- | ---------------------------------------------------------------------------- |
-| GitHub Stars                  | 15.8k                                                                        |
+| GitHub Stars                  | 21.3k                                                                        |
 | Most Recent Update on GitHub  | Within one day                                                               |
 | Open Source License           | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
-| Number of Active Contributors | 85                                                                           |
+| Number of Active Contributors | 103                                                                          |
 | Acceptance of External PRs    | Yes                                                                          |
 | Official Website              | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | Documentation                 | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
