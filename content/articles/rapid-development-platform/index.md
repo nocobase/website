@@ -27,7 +27,7 @@ A rapid development platform, also known as a [Rapid Application Development (RA
 
 1. **[NocoBase](https://www.nocobase.com/)**
 
-NocoBase offers a plugin-based architecture that supports flexible database management and application building, combined with AI-driven capabilities, ideal for customized data management and internal tools.
+**NocoBase** is an AI no-code platform built on a plugin-based architecture. It supports highly flexible functional customization and business process automation, and with AI capabilities, enables multi-scenario data management and internal tool development.
 
 2. **[Appsmith](https://www.appsmith.com/)**
 
