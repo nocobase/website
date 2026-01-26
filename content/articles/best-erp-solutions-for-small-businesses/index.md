@@ -48,6 +48,7 @@ NocoBase utilizes a **low-code/no-code** framework, enabling users to build an E
 * **Highly Customizable**: Build data models aligned with your business operations to meet various management needs.
 * **Low Development Barrier**: Create applications through a visual interface without complex coding.
 * **Openness**: Supports integration with other systems, catering to diverse business integration requirements.
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ⠀✅ **Key Features**:
 
