@@ -137,10 +137,10 @@ APIJSON 是一个为 API 设计的基于 JSON 的通信协议和 ORM 库。它�
 
 | GitHub                  | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ----------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star 数          | 15.8k                                                                        |
+| GitHub Star 数          | 21.3k                                                                        |
 | GitHub 最近一次更新时间 | 当天                                                                         |
 | 开源协议                | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
-| 活跃提交者数量          | 85                                                                           |
+| 活跃提交者数量          | 103                                                                          |
 | 是否接受外部PR          | 是                                                                           |
 | 官网                    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | 文档                    | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
