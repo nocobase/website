@@ -126,13 +126,13 @@ Huly is an open-source project management tool focused on flexibility. Its all-i
 
 ## 5.[NocoBase](https://www.nocobase.com/)
 
-⭐️ Stars: 13.2k
+⭐️ Stars: 21.3k
 
 GitHub Link: https://github.com/nocobase/nocobase
 
 ![nocobase.png](https://static-docs.nocobase.com/cc93e4b01872728b468b521de7f79b99.png)
 
-[NocoBase](https://www.nocobase.com/) is a highly extensible, open-source, AI-driven no-code (zero-code) / low-code CRM tool focused on data model–driven design and a flexible plugin system. With AI-driven capabilities, it provides enterprises with highly customizable customer management solutions.
+[NocoBase](https://www.nocobase.com/) is a highly extensible, open-source AI no-code (zero-code) / low-code CRM tool focused on data model–driven design and a flexible plugin system. With AI capabilities, it delivers highly customizable customer management solutions for enterprises.
 
 🎉 [NocoBase CRM Solution is Now Live — Ready for You to Explore](https://www.nocobase.com/en/blog/crm-solution)
 
@@ -143,7 +143,6 @@ GitHub Link: https://github.com/nocobase/nocobase
 * **Data Model-Driven**: Allows businesses to create and manage data models based on their specific business logic, ensuring the CRM system structure aligns with actual enterprise requirements.
 * **Flexible Workflow Automation**: Supports condition-based automation rules to enhance work efficiency.
 * **Multi-language and Permission Management**: Supports multilingual features and includes a powerful permission management system to ensure sensitive data security.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Ideal Use Case**:
