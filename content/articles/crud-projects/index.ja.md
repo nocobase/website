@@ -137,10 +137,10 @@ APIJSON は、API 用に設計された JSON ベースの通信プロトコル�
 
 | GitHub                         | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------------------------ | ---------------------------------------------------------------------------- |
-| GitHub スター数                | 15.8k                                                                        |
+| GitHub スター数                | 21.3k                                                                        |
 | GitHub での最新の更新          | 1 日以内                                                                     |
 | オープンソースライセンス       | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
-| アクティブコントリビューター数 | 85                                                                           |
+| アクティブコントリビューター数 | 103                                                                          |
 | 外部 PR の受け入れ             | はい                                                                         |
 | 公式ウェブサイト               | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | ドキュメンテーション           | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
