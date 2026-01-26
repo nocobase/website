@@ -67,7 +67,7 @@ GitHub: https://github.com/nocobase/nocobase
 
 GitHub Star: 21.3k
 
-[NocoBase](https://www.nocobase.com/) is an open-source, AI-driven low-code/no-code platform that enables teams to quickly build core functions such as inbound, outbound, inventory checks, and transfers. With AI-driven capabilities, it also supports deeper customization based on specific business workflows, making it suitable for more complex operational scenarios.
+[NocoBase](https://www.nocobase.com/) is an open-source AI low-code / no-code platform that enables rapid construction of core functions such as inbound, outbound, inventory checks, and transfers. With AI capabilities, it also supports deeper customization based on specific business workflows, addressing complex operational scenarios.
 
 **✅ Feature Highlights:**
 
