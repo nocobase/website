@@ -88,7 +88,7 @@ ServiceNowはSaaS型の課金体系で、モジュール数とユーザー数に
 
 **概要**
 
-* GitHub Star: 16.5k
+* GitHub Star: 21.3k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
