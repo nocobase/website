@@ -24,7 +24,7 @@ Another [Reddit user](https://www.reddit.com/r/sailpoint/comments/1iny3lt/curiou
 
 To help you build a secure and manageable permission system, we’ve selected **6 powerful tools that support RBAC**, covering open-source, self-hosted, and SaaS models. These tools are suitable for everything from small projects to large enterprise systems.
 
-## **No.1 NocoBase: Open Source No-Code Platform**
+## **No.1 NocoBase: Open Source AI No-Code Platform**
 
 ![NocoBase](https://static-docs.nocobase.com/3-gr9113.PNG)
 
@@ -32,7 +32,7 @@ Website: https://www.nocobase.com/
 
 GitHub: https://github.com/nocobase/nocobase
 
-**Overview**: NocoBase is an open-source, AI-driven low-code/no-code platform designed for building business back-end systems. It supports flexible data modeling and includes a powerful RBAC permission management module, and with AI-driven assistance, is well suited for multi-role, multi-user enterprise application scenarios such as CRM, ERP, and CMS.
+**Overview**: **NocoBase** is an open-source AI low-code / no-code platform designed for building business back-end systems. It supports flexible data modeling and includes a powerful RBAC permission management module, making it suitable for multi-role, multi-user enterprise applications such as CRM, ERP, and CMS.
 
 **Key Features:**
 
