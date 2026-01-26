@@ -20,7 +20,7 @@ This list is ordered by GitHub stars and highlights some of the best projects av
 
 ## **Quick Look: Top 13 Awesome Self-Hosted Projects**
 
-**13. NocoBase – Low-code/No-code Development Platform (⭐15.8k)**
+**13. NocoBase – Low-code/No-code Development Platform (⭐21.3k)**
 
 ****12. Khoj – AI Knowledge Management System (⭐30.3k)****
 
@@ -57,11 +57,11 @@ The list is ordered by GitHub stars. To ensure project activity and maintenance,
 
 | GitHub              | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star         | 11.6k                                                                        |
-| GitHub Fork         | 1.3k                                                                         |
-| GitHub Issue        | 31                                                                           |
-| GitHub Pull Request | 41                                                                           |
-| GitHub Contributor  | 71                                                                           |
+| GitHub Star         | 21.3k                                                                        |
+| GitHub Fork         | 2.4k                                                                         |
+| GitHub Issue        | 123                                                                          |
+| GitHub Pull Request | 133                                                                          |
+| GitHub Contributor  | 103                                                                          |
 | Open Source License | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | Official Website    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | Documentation       | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
