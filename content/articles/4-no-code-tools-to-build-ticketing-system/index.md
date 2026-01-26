@@ -52,7 +52,7 @@ So, instead of compromising with prebuilt tools, why not build a fully customize
 
 **Platform Overview**
 
-**[NocoBase](https://www.nocobase.com/)** is an open-source no-code/low-code platform, with data model–driven design and a plugin-based architecture as its core characteristics, and it incorporates AI-driven capabilities. Unlike traditional ticketing systems, it offers flexible data modeling, process design, and plugin extensibility, with AI-driven assistance to improve configuration and usage efficiency. For teams looking to build ticketing systems tailored to their specific business needs, NocoBase provides a foundation that balances visual configuration with extensibility.
+**[NocoBase](https://www.nocobase.com/)** is an open-source AI no-code / low-code platform built around a data model–driven approach and a plugin-based architecture. Unlike traditional ticketing systems, it offers flexible data modeling, process design, and plugin extensibility, with AI Employees assisting in improving configuration and usage efficiency. For teams looking to build ticketing systems tailored to their specific business requirements, NocoBase provides a foundation that balances visual configuration with extensibility.
 
 **Why Build Your Ticketing System with NocoBase**
 
