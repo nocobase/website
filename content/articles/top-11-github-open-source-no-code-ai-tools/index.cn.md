@@ -28,7 +28,7 @@
 
 **介绍**
 
-开源、可自托管的无代码开发平台，以数据建模为核心，并通过 AI 驱动的「AI 员工」功能将智能化引入业务系统。
+开源、可自托管的 AI 无代码开发平台，以数据建模为核心，通过 AI 员工将智能化引入业务系统。
 
 ![nocobase.png](https://static-docs.nocobase.com/nocobase-s1wqmh.png)
 
