@@ -50,7 +50,7 @@ Below is our selection of six no-code platforms, each distinct in their PostgreS
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/1280X1280%20(38)-oug9b4.PNG)
 
-**NocoBase** is an open-source, plugin-based, AI-driven no-code/low-code platform. From the very beginning, it has been built around the core concept of “data model–driven system construction,” with AI-driven capabilities enhancing configuration and usage efficiency. PostgreSQL is one of its default integrated core databases.Unlike platforms that merely connect to PostgreSQL, NocoBase goes further by offering **developer-friendly structural control capabilities**. This allows you to define business structures directly within the frontend interface, much like using a dedicated database modeling tool.
+**NocoBase** is an open-source, plugin-based AI no-code / low-code platform built around the core concept of data model–driven system construction. With AI capabilities, it improves system configuration and usability efficiency. PostgreSQL is one of its default integrated core databases. Compared to platforms that only connect to PostgreSQL, NocoBase goes further by offering developer-friendly, structure-level control, allowing business structures to be defined directly in the front-end interface, much like using a database modeling tool.
 
 **PostgreSQL Support and Schema Editing Capabilities**
 
