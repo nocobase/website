@@ -24,7 +24,7 @@ RBAC（Role-Based Access Control，基于角色的访问控制）是一种将 �
 
 为了帮助你快速落地权限控制系统，本文精选了 6 款高效、可靠且支持 RBAC 的开发工具，覆盖开源、自托管与 SaaS 模式，适合从中小项目到复杂企业系统的不同需求。
 
-## No.1 NocoBase：开源无代码平台
+## No.1 NocoBase：开源 AI 无代码平台
 
 ![NocoBase](https://static-docs.nocobase.com/3-gr9113.PNG)
 
@@ -32,7 +32,7 @@ Website：https://www.nocobase.com/
 
 GitHub：https://github.com/nocobase/nocobase
 
-**简介**：NocoBase 是一款开源、AI 驱动的低代码 / 无代码平台，专为构建业务后台系统而设计。它不仅支持灵活的数据建模，还内置了强大的 RBAC 权限管理模块，并在 AI 驱动能力的辅助下，适用于 CRM、ERP、CMS 等多角色、多用户的企业应用场景。
+**简介**：**NocoBase** 是一款开源的 AI 低代码 / 无代码平台，专为构建业务后台系统而设计。它不仅支持灵活的数据建模，还内置了强大的 RBAC 权限管理模块，适用于 CRM、ERP、CMS 等多角色、多用户的企业应用场景。
 
 **核心功能**
 
