@@ -32,7 +32,7 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 * **Data Control**: Self-hosted solutions ensure data security and compliance.
 * **Flexible Customization**: Open-source code allows deep customization to match unique workflows.
 
-## 1. NocoBase: Flexible Low-Code/No-Code Platform
+## 1. NocoBase: Flexible AI Low-Code/No-Code Platform
 
 ![NocoBase](https://static-docs.nocobase.com/1-s1wpjn.PNG)
 
@@ -46,7 +46,7 @@ This article shares our top 6 recommended open-source ticketing systems. Here’
 
 📄 License: AGPL-3.0
 
-**NocoBase is a data model–driven, plugin-extensible, open-source, AI-driven no-code platform. Unlike traditional ticketing systems with fixed workflows, NocoBase allows teams, with the support of AI-driven capabilities, to fully customize interfaces, form fields, processes, and automation rules based on their specific requirements.
+NocoBase is a data model–driven, plugin-extensible, open-source, AI-driven no-code platform. Unlike traditional ticketing systems with fixed workflows, NocoBase allows teams, with the support of AI capabilities, to fully customize interfaces, form fields, processes, and automation rules based on their specific requirements.
 
 We integrated a ticketing system into our existing NocoBase-built CRM. User data sync was seamless, and we configured the interface in just half a day.
 
