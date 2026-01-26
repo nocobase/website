@@ -238,7 +238,7 @@ Platform 项目采用 **Apache License 2.0** 开源协议，**完全开源，核
 
 **项目简介**
 
-**NocoBase** 是一款开源、AI 驱动的无代码 / 低代码开发平台，主打“高度可扩展和数据模型驱动”的理念，并在 AI 驱动能力的辅助下，帮助企业与开发者快速搭建包括 CRM、ERP 在内的各类管理系统。
+**NocoBase** 是一款开源、AI 驱动的无代码 / 低代码开发平台，主打“高度可扩展和数据模型驱动”的理念，并在 AI 能力的辅助下，帮助企业与开发者快速搭建包括 CRM、ERP 在内的各类管理系统。
 
 🎉 [NocoBase CRM 解决方案正式上线！欢迎体验](https://www.nocobase.com/cn/blog/crm-solution)
 
