@@ -104,7 +104,7 @@ Next, we’ll recommend project management systems that best meet these five nee
 
 **Overview**
 
-[NocoBase](https://www.nocobase.com/) is a highly extensible, open-source, AI-driven no-code platform. Instead of offering predefined features, it allows users to build required modules entirely based on their needs, and with the support of AI-driven capabilities, integrate multiple functions through custom configuration, making it suitable for small businesses seeking flexible system composition.
+[NocoBase](https://www.nocobase.com/) is a highly extensible, open-source AI no-code platform. Instead of predefined features, it allows users to build required modules entirely based on their needs and, with AI capabilities, integrate multiple functions through custom configuration, making it suitable for small businesses seeking flexible system composition at lower cost.
 
 🎉 NocoBase recently launched a **[project management solution](https://www.nocobase.com/en/solutions/project-management)** — open-source, fully controllable, and highly extensible. Try it out!
 
