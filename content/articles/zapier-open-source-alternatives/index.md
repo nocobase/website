@@ -85,7 +85,7 @@ Compared to Zapier, n8n offers **greater flexibility and control**. Users can ch
 
 **Overview**
 
-**[NocoBase](https://www.nocobase.com/)** is an open-source, self-hosted, AI-driven low-code/no-code development platform designed to simplify the development of internal enterprise systems. Built on a data model–driven and plugin-based architecture, it enables rapid construction of complex business systems while maintaining a high level of extensibility and flexibility with the support of AI-driven capabilities. The project currently has 16.5k stars on [GitHub](https://github.com/nocobase/nocobase).
+**[NocoBase](https://www.nocobase.com/)** is an open-source, self-hosted AI low-code / no-code development platform designed to simplify the development of internal enterprise systems. Built on a data model–driven and plugin-based architecture, it enables rapid construction of complex business systems while maintaining a high level of extensibility and flexibility. The project currently has 16.5k stars on [GitHub](https://github.com/nocobase/nocobase).
 
 Compared to Zapier, NocoBase provides **higher flexibility and extensibility**. Users can customize functionality through the plugin system to meet specific business needs. It also supports self-hosted deployment, ensuring data security and privacy.
 
