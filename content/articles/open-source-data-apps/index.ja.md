@@ -54,7 +54,7 @@
 
 GitHub リンク: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-GitHub Star 数: 16.4k
+GitHub Star 数: 21.3k
 
 **主な機能**
 
@@ -62,6 +62,7 @@ GitHub Star 数: 16.4k
 * 精緻な権限管理
 * 自動化ワークフロー
 * プラグインによる機能拡張
+* システムに組み込まれた AI エージェント
 
 **最適なデータアプリの種類**
 
