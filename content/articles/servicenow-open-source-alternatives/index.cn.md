@@ -90,7 +90,7 @@ ServiceNow 是按模块和用户数量收费的 SaaS 平台，价格结构较为
 
 **项目概览**
 
-* GitHub Star: 16.5k
+* GitHub Star: 21.3k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
