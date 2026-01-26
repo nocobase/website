@@ -28,7 +28,7 @@ The 8 tools to be introduced next have been selected based on these strict crite
 
 ## 8 Recommended Open-Source Web Application Development Tools
 
-### 1. **NocoBase** – A Data Model–Driven, AI-Driven No-Code Platform
+### 1. **NocoBase** – A data model–driven AI no-code platform
 
 ![NocoBase](https://static-docs.nocobase.com/nocobase-ah9g07.PNG)
 
