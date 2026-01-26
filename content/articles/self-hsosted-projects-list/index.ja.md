@@ -20,7 +20,7 @@
 
 ## **トップ13セルフホスティングプロジェクトのクイックオーバービュー**
 
-**13.NocoBase——ローコード/ノーコード開発プラットフォーム（⭐15.8k）**
+**13.NocoBase——ローコード/ノーコード開発プラットフォーム（⭐21.3k）**
 
 **12.khoj——AIナレッジ管理システム（⭐30.3k）**
 
@@ -57,11 +57,11 @@
 
 | GitHub                   | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| GitHubスター             | 11.6k                                                                        |
-| GitHubフォーク           | 1.3k                                                                         |
-| GitHubイシュー           | 31                                                                           |
-| GitHubプルリクエスト     | 41                                                                           |
-| GitHub貢献者             | 71                                                                           |
+| GitHubスター             | 21.3k                                                                        |
+| GitHubフォーク           | 2.4k                                                                         |
+| GitHubイシュー123        | 123                                                                          |
+| GitHubプルリクエスト     | 133                                                                          |
+| GitHub貢献者             | 103                                                                          |
 | オープンソースライセンス | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 公式サイト               | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
 | ドキュメント             | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
