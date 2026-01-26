@@ -70,11 +70,11 @@ ILLA Builder 是一个开源低代码平台，旨在简化企业级应用的构�
 
 | GitHub                  | [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) |
 | ----------------------- | ---------------------------------------------------------------------------- |
-| GitHub Star 数          | 13.5k                                                                        |
-| GitHub Fork 数          | 1.5k                                                                         |
-| GitHub Issue 数         | 45                                                                           |
-| GitHub Pull Request 数  | 49                                                                           |
-| GitHub Contributor 数   | 85                                                                           |
+| GitHub Star 数          | 21.3k                                                                        |
+| GitHub Fork 数          | 2.4k                                                                         |
+| GitHub Issue 数         | 123                                                                          |
+| GitHub Pull Request 数  | 133                                                                          |
+| GitHub Contributor 数   | 103                                                                          |
 | GitHub 最近一次更新时间 | 当天                                                                         |
 | 开源协议                | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 官网                    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
