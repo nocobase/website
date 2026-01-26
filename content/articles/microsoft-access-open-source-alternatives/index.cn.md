@@ -44,7 +44,7 @@
 
 NocoBase 是一款极易扩展的开源 AI 低代码 / 无代码平台，专为企业级应用和业务系统设计。它支持可视化的数据建模、权限管理和工作流配置，并可通过插件机制灵活扩展功能，满足复杂业务场景的需求。
 
-虽然 NocoBase 与 Microsoft Access 的定位并不相同——Access 是桌面数据库，而 NocoBase 是无代码平台，但在许多企业常见的使用场景下，NocoBase 依然可以成为理想的替代方案，例如团队协作数据库、表单驱动的业务应用、部门级数据管理和可视化报表分析等。
+虽然 NocoBase 与 Microsoft Access 的定位并不相同——Access 是桌面数据库，而 NocoBase 是 AI 无代码平台，但在许多企业常见的使用场景下，NocoBase 依然可以成为理想的替代方案，例如团队协作数据库、表单驱动的业务应用、部门级数据管理和可视化报表分析等。
 
 * GitHub Star：⭐21.3k
 * GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
