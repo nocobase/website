@@ -41,7 +41,7 @@
 
 项目地址：https://github.com/nocobase/nocobase
 
-⭐️ GitHub Stars 数：15.8k
+⭐️ GitHub Stars 数：21.3k
 
 ![项目管理.png](https://static-docs.nocobase.com/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86-a2g0cs.png)
 
@@ -70,7 +70,6 @@
 * **插件扩展**：丰富的插件生态，支持功能扩展和第三方集成。
 
 ![AI集成.PNG](https://static-docs.nocobase.com/AI%E9%9B%86%E6%88%90-nwjhgx.PNG)
-
 
 * **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
