@@ -45,7 +45,7 @@
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/c414d29d422277127a46abf8f9518551.PNG)
 
-[NocoBase](https://www.nocobase.com/) は、オープンソースでセルフホスト可能な AI 駆動型ノーコード（ゼロコード）／ローコード開発プラットフォームです。プラグイン型アーキテクチャにより IT 資産管理システムを迅速に構築でき、AI の支援を活用することで、柔軟かつ高効率で安全な IT 資産管理ソリューションを実現します。
+[NocoBase](https://www.nocobase.com/) は、オープンソースでセルフホスト可能な AI ノーコード（ゼロコード）／ローコード開発プラットフォームです。プラグイン型アーキテクチャにより、柔軟かつ高効率で安全な IT 資産管理システムを構築できます。
 
 GitHub：https://github.com/nocobase/nocobase
 
