@@ -38,7 +38,7 @@ Whether you’re an individual developer or selecting tools for a team, this sho
 
 **Overview**
 
-NocoBase is an open-source, AI-driven no-code development platform designed for mid- to high-complexity business systems. Its core concept is building applications through data modeling, with AI-driven capabilities enhancing system construction and usage efficiency.
+NocoBase is an open-source, AI-driven no-code development platform designed for mid- to high-complexity business systems. Its core concept is building applications through data modeling, with AI capabilities enhancing system construction and usage efficiency.
 
 Compared to Airtable, NocoBase offers a full modeling system: define fields, views, and relationships; configure user permissions; set up workflows; design page layouts; and extend via plugins.
 
@@ -113,6 +113,7 @@ The open-source version is sufficient for most basic use cases, while the Enterp
 * Works with any database
 * Auto-generated REST APIs for easy integration
 * Self-hostable for full data control
+* AI employees embedded in the system
 
 **Best For**
 
