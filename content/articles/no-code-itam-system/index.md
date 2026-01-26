@@ -55,9 +55,9 @@ If you’re considering building an IT asset management system on a no-code plat
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/NocoBase-5v9ar7.PNG)
 
-NocoBase is an open-source, data-model-driven no-code platform with a plugin-based architecture. Every feature can be extended via plugins, giving teams full control over customization.
+**NocoBase** is a data model–driven, open-source AI no-code platform built on a plugin-based architecture, where all functionality can be extended through plugins. It supports fine-grained access control (RBAC), field-level and row-level data isolation, and workflow automation, and can leverage AI capabilities to connect to multiple data sources (databases, APIs, and third-party services) via APIs and plugins, enabling more flexible centralized asset data management.
 
-NocoBase is a data model–driven, open-source, AI-driven no-code platform built on a plugin-based architecture, where all functionality can be extended through plugins. It supports fine-grained access control (RBAC), field-level and row-level data isolation, and workflow automation, and with AI-driven assistance, can connect to various data sources (databases, APIs, and third-party services) via APIs and plugins, enabling more flexible centralized asset data management. As a fully open-source platform, enterprises can also extend functionality based on their needs, achieving a high level of customization while keeping costs low.
+As a fully open-source platform, it also allows enterprises to extend functionality as needed, achieving a high level of customization while keeping costs low.
 
 **ITAM Advantages:**
 
