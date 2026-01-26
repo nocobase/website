@@ -90,7 +90,7 @@ ServiceNow follows a **SaaS subscription model** with pricing based on modules, 
 
 **Overview**
 
-* GitHub Star: 16.5k
+* GitHub Star: 21.3k
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 
