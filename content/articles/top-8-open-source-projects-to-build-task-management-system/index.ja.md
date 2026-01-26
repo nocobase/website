@@ -41,7 +41,7 @@
 
 **プロジェクトURL**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-⭐️ **GitHubスター数**: 15.8k
+⭐️ **GitHubスター数**: 21.3k
 
 ![Project management.png](https://static-docs.nocobase.com/Project%20management-9w3rj1.png)
 
