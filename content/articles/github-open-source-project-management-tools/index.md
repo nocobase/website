@@ -178,7 +178,7 @@ Website: https://huly.io/
 
 🎉 NocoBase recently launched a [project management solution](https://www.nocobase.com/en/solutions/project-management) — open-source, fully controllable, and highly extensible. Try it out!
 
-GitHub Star: 16.6k
+GitHub Star: 21.3k
 
 GitHub: https://github.com/nocobase/nocobase
 
@@ -203,6 +203,10 @@ Website: https://www.nocobase.com/
 * **Configurable Workflows** – Workflows support conditions, task assignments, and notifications. For example, reminders can be automatically sent when deadlines approach.
 
 ![Configurable Workflows](https://static-docs.nocobase.com/Configurable%20Workflows-1lodfd.png)
+
+* **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)
 
 **Recommended Scenarios**
 
