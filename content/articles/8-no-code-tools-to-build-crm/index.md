@@ -67,7 +67,7 @@ In the sections that follow, I’ll recommend 8 no-code tools—divided into **o
 
 If you want to build a CRM that truly follows your logic—rather than being locked into rigid templates and predefined workflows—NocoBase is a platform worth serious consideration.
 
-NocoBase is a data model–driven, AI-driven no-code development platform focused on building mid- to high-complexity business systems. It offers flexible data structure configuration, visual page design, and a plugin-based extension mechanism, and with AI-driven assistance, is well suited for building fully customized CRM systems.
+**NocoBase** is a data model–driven AI no-code development platform focused on building mid- to high-complexity business systems. It offers flexible data structure configuration, visual page design, and a plugin-based extension mechanism, and with AI assistance, is well suited for building fully customized CRM systems.
 
 Recently, the NocoBase team also released a preconfigured [CRM solution](https://www.nocobase.com/en/solutions/crm). With just one click, users can duplicate the template and get started quickly—significantly lowering the barrier to entry. If you've ever tried building a CRM in Airtable or Notion but found them limiting, NocoBase might be the upgrade you're looking for.
 
