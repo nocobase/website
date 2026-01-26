@@ -54,7 +54,7 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 GitHubスター数：21k
 
-NocoBase は、オープンソースの AI 駆動型 ノーコード／ローコード開発プラットフォームです。企業における CRUD 機能を一度きりの開発から、再利用可能なシステム能力へと転換することを支援します。データモデルと AI の支援を組み合わせた仕組みにより、業務担当者とエンジニアが協力して複雑な業務システムを構築でき、毎回ゼロから CRUD コードを書く必要はありません。
+**NocoBase** は、企業における CRUD 機能を一度きりの開発からシステムとしての能力へと転換することを支援する、オープンソースの AI ノーコード／ローコード開発プラットフォームです。データモデル駆動の仕組みにより、業務担当者とエンジニアが連携して複雑な業務システムを構築でき、毎回ゼロから CRUD コードを書く必要がありません。
 
 ![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-w8gcmp.PNG)
 
