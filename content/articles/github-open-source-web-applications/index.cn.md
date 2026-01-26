@@ -129,7 +129,7 @@ Wasp 编译器将 DSL 转换为标准 Web 项目代码，后端用 Node.js 和 P
 
 GitHub：https://github.com/nocobase/nocobase
 
-GitHub Star：16.1k
+GitHub Star：21.3k
 
 License：[AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)
 
