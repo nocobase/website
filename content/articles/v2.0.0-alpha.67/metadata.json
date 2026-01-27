@@ -1,14 +1,14 @@
 {
   "id": 871,
-  "title": "NocoBase v2.0.0-alpha.67",
-  "title_cn": "NocoBase v2.0.0-alpha.67",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-alpha.67:  add subtable (popup editing) field component",
+  "title_cn": "NocoBase v2.0.0-alpha.67：新增子表格（弹窗编辑）字段组件",
+  "title_ja": "NocoBase v2.0.0-alpha.67：サブテーブルをダイアログ形式で編集できる新しいフィールドコンポーネントを追加",
   "description": "Release Note of v2.0.0-alpha.67",
   "description_cn": "v2.0.0-alpha.67 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-alpha.67 リリースノート",
   "slug": "v2.0.0-alpha.67",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-01-27T06:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-01-27T13:39:26.532Z",
+        "updatedAt": "2026-01-27T13:39:26.532Z",
+        "articles_id": 871,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-01-27T13:12:01.548Z",
+    "updatedAt": "2026-01-27T13:12:01.564Z",
+    "id": 2202,
+    "title": "develop (3)",
+    "filename": "develop (3)-wbwrxh.jpg",
+    "extname": ".jpg",
+    "size": 81020,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(3)-wbwrxh.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(3)-wbwrxh.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-01-26T10:50:22.628Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-01-27T13:39:26.517Z"
 }
