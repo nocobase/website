@@ -4,7 +4,7 @@
 
 Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工单系统的标准形态：邮件转工单、多渠道支持、SLA 管理、知识库与团队协作。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODgzZjY5OGRlODA4ZjI0ZmI3OTlkZWFmOTg4OGVkOTVfWXdlUGs4UEVxZHhJU2tvV2kxYXp1SUFYOHhXR1k4dTdfVG9rZW46T1VVR2JORXpyb1FxdzR4S2l1S2NWTEhtbm5kXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zendesk.PNG](https://static-docs.nocobase.com/Zendesk-vr5j27.PNG)
 
 但进入 2026 年，企业对工单系统的期待似乎正在发生变化。
 
@@ -12,9 +12,17 @@ Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工
 
 另一方面，**AI 正在改变工单系统的角色**。企业不再只需要自动回复，而是希望 AI 能在权限控制下访问真实数据、调用历史案例、触发工作流动作，让支持流程真正走向自动化。
 
-在这篇文章中，我们将梳理最值得关注的 Zendesk 开源替代方案。其中既包括像 Zammad、osTicket 这样发展多年、能力成熟的经典项目，也包括一些如 NocoBase** **更强调扩展性、自动化，甚至开始与 AI 场景结合的新一代方案。
+在这篇文章中，我们将梳理最值得关注的 Zendesk 开源替代方案。其中既包括像 Zammad、osTicket 这样发展多年、能力成熟的经典项目，也包括一些如 NocoBase 更强调扩展性、自动化，甚至开始与 AI 场景结合的新一代方案。
 
 无论你希望快速替换 Zendesk，还是想为 AI 支持流程打下基础，都可以在下面的对比中找到适合自己的方向。
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## 开源 Zendesk 替代品
 
@@ -43,7 +51,7 @@ Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工
 
 **官网**： [https://www.nocobase.com/](https://www.nocobase.com/?utm_source=chatgpt.com)
 
-**GitHub**： [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+**GitHub**： [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 **GitHub Stars**：21.4k
 
@@ -51,7 +59,7 @@ Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工
 
 NocoBase 是一个**开源、自托管、AI 驱动的无代码/低代码开发平台**，以数据模型驱动和插件化架构为核心，可以快速构建与迭代企业业务系统。它不仅能用于构建 CRM、项目管理，还支持构建可扩展的智能工单系统。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWVlZDMwYzM0M2FhYmU4ODE5ZDNlZDI2YjkzNDM5YWVfTExSanB0UTB2aTVXdGtDSFllMk5OZklzRm5PT1JOWE9fVG9rZW46V25WUWJMN3J6b2kxUGh4Sm8yYWM0ekRkbjNjXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-p08slg.PNG)
 
 NocoBase 的工单系统覆盖从请求接入、自动分派、SLA 管理到知识沉淀的完整支持流程。
 
@@ -76,7 +84,7 @@ NocoBase 的工单系统支持**多源统一接入**，包括：
 
 所有渠道的请求都能自动去重并纳入统一工单入口，能够覆盖典型的邮件转工单场景。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzgzMWUwMzU3ZmQyZTNiMjQyMDQ4ZjNkNmRhN2I1YjJfSWdObmJWSnhMZ29YWE10NWVTRlhnU2gxWTJEYUJxU29fVG9rZW46WUpNOWJMU0Iwb245cDN4QUVad2NrYktzbnEwXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase2.gif](https://static-docs.nocobase.com/NocoBase2-na72wr.gif)
 
 在 NocoBase 中，邮件转工单也可以与 AI 员工协作。比如，当一轮邮件沟通结束后，你可以直接调用 AI 员工 Dex 自动整理邮件内容，并将关键信息填入工单表单中。整个过程只需一次点击，无需手动复制、粘贴或重复输入，就能快速生成一条结构化工单。
 
@@ -90,9 +98,9 @@ NocoBase 工单系统包含**知识自动沉淀能力**：
 
 这让工单系统不仅处理请求，还逐步构建知识库闭环。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTFiODJlNjc0ZTU4MTBkYzg1N2NlNTc1MjBmNDQ5YTJfTEU5Vkx0NE5LUEtia20zYW9rSGw5STBBYW0zRE1mRG5fVG9rZW46Tm4yZWJ6b3ltbzlMSlV4Z1RyUGNxYTJhbm5NXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase3.gif](https://static-docs.nocobase.com/NocoBase3-p503vt.gif)
 
-#### **自动化/SLA**
+**自动化/SLA**
 
 系统支持完整的 **自动化与 SLA 管理机制**：
 
@@ -100,7 +108,7 @@ NocoBase 工单系统包含**知识自动沉淀能力**：
 * 自动追踪响应/解决时间、超时预警与升级机制
 * 流程自动流转与规则触发能力
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzNiYjg2MTVmZjBkMWEzZWJjNGRjMDkwNDZmZWU5MTdfWGNhVmRpQVhONXVFSUpNSTYybEN2OWJhdmxyVUlEOUtfVG9rZW46TTE4V2J1Zml1b0dxSTN4RlNlMGNBY2dTbldoXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-5kmvne.png)
 
 智能工单流程将 SLA 纳入生命周期的每个环节，而不是仅作为静态字段。
 
@@ -113,7 +121,7 @@ NocoBase 工单系统包含**知识自动沉淀能力**：
 * 支持行级、字段级权限约束
 * AI 员工同样支持 RBAC
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWViNjYwYjBhMTVhNTdkMWQzNmNkNGM1YWM1YjM1MGRfVHY3ZDI5Z20yNmR5UFBNMXZuUVgyUDNKSWJuUVJEbUpfVG9rZW46UHFEM2JBVkpab1ZSVlJ4NjZLNGMwRndTbmFoXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-y8x54g.png)
 
 这种权限架构非常适合企业级服务台与多团队协作场景。
 
@@ -125,7 +133,7 @@ NocoBase 的扩展能力并不只是加几个字段，而是面向系统级集�
 
 另一方面，NocoBase 的插件体系允许你在服务端和界面侧持续扩展能力，例如自定义区块、字段和业务动作，让工单系统可以随着业务需求不断演进，而不是停留在固定模板里。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NWNjY2Y1MzA1NzliOGEwYmVjZjRlOWM1Y2FhZWMyYTFfdkl5VTRremZ6QThQaG5Jc0ZlbDNpU01lMmtYRU1KVmxfVG9rZW46UzhsV2JxaDJib1c2WjR4MnlZT2MxeEc3bkdkXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase6.png](https://static-docs.nocobase.com/NocoBase6-uwhzw1.png)
 
 以前端扩展为例，在 NocoBase 的工单系统中，一些更灵活的页面展示可以通过 **JS 区块**来实现。这些区块的代码可以由 AI 员工直接生成并完成配置。你只需要描述想要的效果，AI 就能快速产出可用的展示组件。
 
@@ -137,7 +145,7 @@ NocoBase 的扩展能力并不只是加几个字段，而是面向系统级集�
 
 在许多传统工单系统中，AI 的主要形态往往是**自动客服机器人**或**回复生成**，更多停留在工单处理的最后一步：帮助客服更快回答用户。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWI1ODIxMjRiMzhjNTFiZjNiYWIyNzk2ZTk5NTJjMWJfSmUwdFpuaWtyejJBS2hiSVc0RkIySU9nYUpUMDdnb1ZfVG9rZW46QU5VUWJWS3E2b0pxaWN4OUhxM2NQOUg0bnBnXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![NocoBase7.png](https://static-docs.nocobase.com/NocoBase7-m9r2ai.png)
 
 而在 NocoBase 中，AI 员工使用场景非常广泛，可以跟你自己的业务系统来个性化设置。
 
@@ -145,31 +153,31 @@ NocoBase 的扩展能力并不只是加几个字段，而是面向系统级集�
 
 **官网**： [https://zammad.com/](https://zammad.com/)
 
-**GitHub**： [https://github.com/zammad/zammad](https://github.com/zammad/zammad?utm_source=chatgpt.com)
+**GitHub**： [https://github.com/zammad/zammad](https://github.com/zammad/zammad)
 
 **GitHub Stars**：5.3k
 
 Zammad 是一款成熟的**开源工单与客服支持系统**，发布于 2016 年。它可运行在自有服务器或 Docker 环境，提供统一的工单入口，将来自邮件、聊天、电话和社交渠道的请求集中管理。作为一个 AGPL-3.0 开源项目，Zammad 强调透明、可定制和长期可维护的帮助台解决方案。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRkNGNhNjVmNTNhNDIyN2RmOWJiYjRhZGI2N2UyNGZfVUdNdktLaVltSnhBdHU0aTVYZkY2ZmVKNmdxZ0hweHBfVG9rZW46VVZlSWJTWkNEb2lQM254Y29CMGNVMnlpbnpnXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad1.png](https://static-docs.nocobase.com/Zammad1-sshj01.png)
 
 #### **Email 工单**
 
 Zammad 原生支持**邮件转工单机制**，并且可以将来自各种渠道的客户请求（包括邮件、聊天消息）转换成结构化工单，让客服团队无需手工录入即可处理大量来信。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NDkwMDUyNzViZGZmNDE4NjBjNmNkYjFmZGJmNzMxMzRfUU5vS0h0WVduNGpDWnFhNm4yZ05uSWFtQWNlTExGVGlfVG9rZW46TG52ZWJYQ2FPbzRreGd4dEZqNWN6bzljbmNoXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad2.png](https://static-docs.nocobase.com/Zammad2-ikwx76.png)
 
 #### **知识库**
 
 Zammad 内置**知识库与文本模块**功能，支持团队创建常见问题回答、标准回复模板以及可查询的客户帮助内容。客服人员和最终用户均可从知识库中查找信息，从而减少重复工单提交。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmQ5OGZiYmMxN2JhZTkyNmJmYWI2NGYzYTIxYTFhM2NfOHNYWWhxT3dCRXY0ZzRUWHJPSEpiZHdZWHh1a2xBbTBfVG9rZW46T2E4SWJScW44b1gycUN4UnN0SGNXZzBwbkJkXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad3.png](https://static-docs.nocobase.com/Zammad3-ln6l3a.png)
 
 #### **自动化/SLA**
 
 Zammad 内建对 SLA 的支持，让团队可以为不同类型的请求定义明确的响应和解决时间目标。管理员可以根据工单类别、客户群体或优先级设置**首次响应时间、更新响应时间和最终解决时间**，并根据这些时间点自动追踪和升级工单状态。系统还会基于定义的业务时间进行 SLA 计算，并在临近或超过目标时通过通知提示相关人员，从而帮助团队按承诺及时处理客户请求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzg3NTk3MzVkMjE4OWZiNGNiNzcyOWEwMWFiMTY4NThfVUNxOG9iTUFyOTRhTmQycUZ2cW45UFdUWDM0c2loVktfVG9rZW46QzN2Q2IwVDJRb1pkNzF4MTB5dGNlczA0bldiXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad4.png](https://static-docs.nocobase.com/Zammad4-lmfbx5.png)
 
 #### **RBAC**
 
@@ -177,7 +185,7 @@ Zammad 的权限控制是以 **Roles（角色）+ Groups（工单组）访问级
 
 在工单层面，Zammad 通过 **Group Access Levels** 来控制代理在特定组内的可见范围与操作能力（例如只读、可修改、可创建/可分配等）。角色还可以包含组权限配置，使不同团队在不同工单组里的权限边界更清晰。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YTcxMzcxMDY5M2M2YmYyNGQ3YzFkYTllYmEwOTY0NDJfNzdrV2x0UVdmeExDNVVVbndSR000TWpHNmowald1MVhfVG9rZW46QkxyeWJ1MW1Jb29jd2x4a3Y4OWN2WDNOblVnXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad5.png](https://static-docs.nocobase.com/Zammad5-181ish.png)
 
 #### **扩展与集成**
 
@@ -185,7 +193,7 @@ Zammad 提供全面的 **REST API**，你可以通过 API 与其他业务系统�
 
 此外，一些内置集成（如 GitHub/GitLab 的 Issue 关联）也让开发团队能在帮助台中查看和操作代码仓库问题。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MmQ0ZjRiYTQ0YWEyZjZkNzFhMmVmZjk4ZDdjZThhY2NfaktuaGRWVWp5SmNwVEV6SEg4eWtoNjl6c2lHeXV5aERfVG9rZW46VGNINGI0Znh5b1RCbHB4SWk1TWNPYmZLbmViXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![Zammad6.png](https://static-docs.nocobase.com/Zammad6-blwrqc.png)
 
 #### **AI 能力**
 
@@ -208,9 +216,9 @@ FreeScout 是一个轻量级开源帮助台系统，定位为**开源 Help Scout
 
 与一些传统工单系统不同，它的侧重点不是复杂工作流或企业级 SLA 管理，而是让团队可以快速开始和维护基础的支持流程。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDIwMWZlOTc1YjRlODMwYWNiMzc5Njk3YTU3ZjM3ZDNfT01lSzM2ZjljZ1c1d0I5a0lZTlNObTRFNTVQQUk1bE1fVG9rZW46UFprZWJFY2hEbzVpRzd4WGhZdGNwMGZmbm1nXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![FreeScout1.png](https://static-docs.nocobase.com/FreeScout1-0qtoo9.png)
 
-#### **Email 工单**
+**Email 工单**
 
 FreeScout 的核心功能之一就是**邮件转工单**：
 
@@ -218,7 +226,7 @@ FreeScout 的核心功能之一就是**邮件转工单**：
 * 将邮件转换成可分配的支持工单
 * 支持邮件与工单的双向回复同步
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDFmODMzN2Y3M2M0OTc0YjlmZjIwYWZkNjk0ZTdkYTlfdGx0RGU5YlpFTndlQkEyNDdwYUlOdVV3bXI3VnBzT0FfVG9rZW46RXRzN2I0TkUzb2dISU94a0FRV2NPdTFrbkdiXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![FreeScout2.png](https://static-docs.nocobase.com/FreeScout2-whkj1v.png)
 
 对于多数邮件驱动的支持流程，这是 FreeScout 的基础能力，且逻辑清晰、运行稳定。
 
@@ -229,7 +237,7 @@ FreeScout 提供了**基础的知识库模块**，可以用来发布常见问题
 * 支持标题、内容分类
 * 可供客户自助查询常见问题
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTlkNTA1OTBiYjdhN2IxNmFlZTBlYTEzZDBlZTAyNTNfdllYbnVIQ1FMZmlNYXFhbDg2SlZncG1MQmJlRzJsSk1fVG9rZW46WnhRWWJ6a3VYbzRZdDF4UlBZd2NHNzdqbkpkXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![FreeScout3.png](https://static-docs.nocobase.com/FreeScout3-6boq0u.png)
 
 整体而言，它适合用作问题解答汇总，但不够强大或复杂。
 
@@ -240,7 +248,7 @@ FreeScout 的自动化能力是基础级别的：
 * 支持简单规则触发（如条件分配、自动回复模板）
 * 支持一些扩展模块来增强自动化逻辑
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODZhZGE1ZGU1Mzg5ZWYyYzlmOGIxMzVkODVhZjM1OTFfdGZHTzd2bGRSa0F1WVNXWks2cGtUUTZaajVJVFJnRmJfVG9rZW46QzhEeWI4MnU1b0l6ZkJ4TGlLZ2Nyb0lvbm1jXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![FreeScout4.png](https://static-docs.nocobase.com/FreeScout4-62bkh8.png)
 
 但它不具备像企业级工单系统那样的细粒度 **SLA 管理、复杂条件判断与工作流链**。通常需要借助插件或外部自动化引擎来实现更复杂的流程需求。
 
@@ -254,7 +262,7 @@ FreeScout 提供基础的**角色与权限控制**，让管理员可以管理用
 
 FreeScout 的扩展主要通过官方的 [Modules 模块体系](https://freescout.net/modules/)实现，户可以根据团队规模和支持流程启用不同模块，例如团队协作、客户门户、自动化规则、SSO 登录、Telegram 通知等。这种模块化设计让 FreeScout 保持了轻量和易部署的特点，也适合中小团队快速补齐所需功能。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OTcwNjAyYzRlMjVlMDQxMzRjYzk5MDdiNzFiZDllYThfMjZwS1hVZ2xVUU9xWHR6TDQ1MXN2WEd2TXZrTWZOVVVfVG9rZW46U2lTemJWVUJmb2NFQmJ4UGRremNDb0k2bnFkXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![FreeScout5b.png](https://static-docs.nocobase.com/FreeScout5-prh0ab.png)
 
 #### **AI 能力**
 
@@ -272,7 +280,7 @@ FreeScout 本身没有内置 AI 功能，也没有原生为 AI 场景设计的�
 
 osTicket 是一款经典的**开源工单系统。**它的设计理念是**简单、稳定、低维护成本。**用最少的复杂度满足核心支持需求。osTicket 将邮件、表单、Web 门户等多渠道请求转为结构化工单，并通过队列、分配和状态管理实现这些请求的处理流转。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzNjY2NiZDM4MmUxOGFkY2QxNjUzMTVkM2U2NzYyYWVfZG9RZjdYdmY2MHhlSlBuOXhreURYZmpYZXlsZDB0RFdfVG9rZW46TllNMmJNREkwb3p4WGZ4eGM5U2NBaEpFbmFlXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![osTicket1.png](https://static-docs.nocobase.com/osTicket1-q0at15.png)
 
 osTicket 的整体功能覆盖了常规支持团队所需的核心能力：
 
@@ -298,7 +306,7 @@ osTicket 的整体功能覆盖了常规支持团队所需的核心能力：
 
 **GLPI** 更偏向企业内部的 IT 服务管理（ITSM），用于处理设备报修、权限申请、运维支持等内部服务请求。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWQ0YTRmM2M5NDU5MGZiNDc3NGJjNGMyZDgxYmJiMmJfeE94VUl5azUwN1dMSHI0aWJXeU5ha1VpMVRYT1pxc2RfVG9rZW46TUQwRmI4bkJnb242Z0x4SmZjZWNVTGdvbjNkXzE3Njk1MjEwODc6MTc2OTUyNDY4N19WNA)
+![GLPI1.png](https://static-docs.nocobase.com/GLPI1-6jttq6.png)
 
 ## 总结
 
@@ -311,3 +319,15 @@ osTicket 的整体功能覆盖了常规支持团队所需的核心能力：
 如果你的目标只是替换 Zendesk，一个成熟的开源 help desk 可能已经足够；但如果你希望工单系统未来能够与业务深度集成，并成为 AI 支持流程的基础，那么选择 NocoBase 会更具长期价值。
 
 ❤️ 感谢你阅读到这里，如果你觉得这篇文章内容还不错，欢迎分享给更多朋友！
+
+相关阅读：
+
+* [4 个值得关注的开源业务数据管理工具 ](https://www.nocobase.com/cn/blog/4-open-source-data-management-tools-for-business-systems)
+* [4个适合企业业务流程的轻量化软件（附真实案例）](https://www.nocobase.com/cn/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6 个替代 Excel 的企业内部管理软件](https://www.nocobase.com/cn/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [开发者收藏！10 个减少重复 CRUD 的开源工具](https://www.nocobase.com/cn/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub Star 数量前 12 的 AI 工作流项目](https://www.nocobase.com/cn/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [最适合外包交付的 6 个开源无代码与低代码](https://www.nocobase.com/cn/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub 上星星数量前 10 的 AI CRM 开源项目 ](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [如何快速搭建一个替换 Excel 的系统？（完整指南）](https://www.nocobase.com/cn/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+* [GitHub Star 数量前 5 的开源 AI 内部工具](https://www.nocobase.com/cn/blog/top-5-open-source-ai-internal-tools-on-github)
