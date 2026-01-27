@@ -10,6 +10,12 @@ Some even state bluntly that if you truly want a solution that perfectly fits yo
 
 Today's article focuses on data management challenges within business systems. If you're looking for data management tools, this article may be helpful.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 💡Dive deep：[4 Lightweight Enterprise Software for Business Processes (With Real-World Cases)](https://www.nocobase.com/en/blog/4-lightweight-enterprise-software-for-business-processes)
 
 ## **What Problems Do Data Management Tools Actually Solve?**
