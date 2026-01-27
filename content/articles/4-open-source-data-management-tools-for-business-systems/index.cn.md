@@ -8,7 +8,15 @@
 
 ![reddit.PNG](https://static-docs.nocobase.com/reddit-amksss.PNG)
 
-今天这篇文章，我们会聚焦**业务系统中的数据管理问题。**如果你正在寻找一些数据管理工具，这篇文章或许会有帮助。
+今天这篇文章，我们会聚焦业务系统中的数据管理问题。如果你正在寻找一些数据管理工具，这篇文章或许会有帮助。
+
+
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
 
 💡阅读更多：[4个适合企业业务流程的轻量化软件（附真实案例）](https://www.nocobase.com/cn/blog/4-lightweight-enterprise-software-for-business-processes)
 
