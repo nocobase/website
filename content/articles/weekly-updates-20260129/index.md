@@ -177,7 +177,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
   - Improve the upload and edit buttons for attachment fields in sub-table to better guide users to click upload. ([#8474](https://github.com/nocobase/nocobase/pull/8474)) by @katherinehhh
   - Improve to-many subform to initialize with a default item and avoid creating records when left empty ([#8473](https://github.com/nocobase/nocobase/pull/8473)) by @katherinehhh
-  - Improve to-many subform to initialize with a default item and avoid creating records when left empty ([#8458](https://github.com/nocobase/nocobase/pull/8458)) by @katherinehhh
 - **[flow-engine]** Improve ctx.libs in runjs to support on-demand loading, and add predefined libraries: lodash, math, and formula. ([#8468](https://github.com/nocobase/nocobase/pull/8468)) by @gchust
 - **[server]** Support configuring a CORS origin whitelist ([#8454](https://github.com/nocobase/nocobase/pull/8454)) by @2013xile
 - **[File manager]** Add extensible previewer for file manager ([#8501](https://github.com/nocobase/nocobase/pull/8501)) by @mytharcher
@@ -191,7 +190,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 - **[client]**
 
-  - Fix duplicated time in filter DateTime value ([#8506](https://github.com/nocobase/nocobase/pull/8506)) by @zhangzhonghe
   - Fix duplicated time in filter DateTime value ([#8484](https://github.com/nocobase/nocobase/pull/8484)) by @zhangzhonghe
   - fix nanoid field not regenerated after form submit ([#8491](https://github.com/nocobase/nocobase/pull/8491)) by @katherinehhh
   - Fix the issue where the rich text editor's popovers are obscured ([#8443](https://github.com/nocobase/nocobase/pull/8443)) by @zhangzhonghe
