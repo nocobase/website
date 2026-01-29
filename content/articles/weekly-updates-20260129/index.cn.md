@@ -179,7 +179,6 @@
 
   - 改进子表格中附件字段的上传与编辑按钮，引导用户点击上传 ([#8474](https://github.com/nocobase/nocobase/pull/8474)) by @katherinehhh
   - 改进对多子表单默认包含一个对象，无需点击 Add New，未填写时不创建记录 ([#8473](https://github.com/nocobase/nocobase/pull/8473)) by @katherinehhh
-  - 改进对多子表单默认包含一个对象，无需点击 Add New，未填写时不创建记录 ([#8458](https://github.com/nocobase/nocobase/pull/8458)) by @katherinehhh
 - **[flow-engine]** 优化 runjs 的 ctx.libs, 使其支持按需加载，并新增 lodash, math, formula 预定义库。 ([#8468](https://github.com/nocobase/nocobase/pull/8468)) by @gchust
 - **[server]** 支持配置跨域 Origin 白名单 ([#8454](https://github.com/nocobase/nocobase/pull/8454)) by @2013xile
 - **[文件管理器]** 为文件管理器增加可扩展的预览组件 ([#8501](https://github.com/nocobase/nocobase/pull/8501)) by @mytharcher
@@ -193,7 +192,6 @@
 
 - **[client]**
 
-  - 修复筛选区块日期带时间时时间格式重复的问题 ([#8506](https://github.com/nocobase/nocobase/pull/8506)) by @zhangzhonghe
   - 修复筛选区块日期带时间时时间格式重复的问题 ([#8484](https://github.com/nocobase/nocobase/pull/8484)) by @zhangzhonghe
   - 修复 nanoid 字段在表单提交后不重新生成数据的问题 ([#8491](https://github.com/nocobase/nocobase/pull/8491)) by @katherinehhh
   - 修复富文本编辑器的弹出层被遮挡的问题 ([#8443](https://github.com/nocobase/nocobase/pull/8443)) by @zhangzhonghe
