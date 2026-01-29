@@ -180,7 +180,7 @@
 
 * **[client]**
 
-  * 日付＋時刻を含むフィルター条件で、時刻表記が重複表示される不具合を修正 ([#8506](https://github.com/nocobase/nocobase/pull/8506), [#8484](https://github.com/nocobase/nocobase/pull/8484)) by @zhangzhonghe
+  * 日付＋時刻を含むフィルター条件で、時刻表記が重複表示される不具合を修正 ([#8484](https://github.com/nocobase/nocobase/pull/8484)) by @zhangzhonghe
   * nanoid フィールドがフォーム送信後に再生成されない問題を修正 ([#8491](https://github.com/nocobase/nocobase/pull/8491)) by @katherinehhh
   * リッチテキストエディターのポップアップが他要素に隠れて表示される問題を修正 ([#8443](https://github.com/nocobase/nocobase/pull/8443)) by @zhangzhonghe
   * フィルター一覧の重複を解消 ([#8431](https://github.com/nocobase/nocobase/pull/8431)) by @jiannx
