@@ -50,7 +50,7 @@ GitHub Star 数：21.4k
 
 NocoBase は、データモデルを中心に設計されたオープンソースの業務システムプラットフォームです。プラグイン型アーキテクチャにより柔軟に業務機能を拡張でき、AI 機能もシステムの中核レベルで深く統合されています。チケット管理、ナレッジベース、ワークフロー、社内サービスデスクなどを、一つの基盤上で構築できます。
 
-🎉 [NocoBase 2.0 を基盤としたインテリジェントなチケットシステム](https://www.nocobase.com/cn/blog/ai-powered-ticketing-built-with-nocobase-2-0)
+🎉 [NocoBase 2.0 を基盤としたインテリジェントなチケットシステム](https://www.nocobase.com/ja/blog/ai-powered-ticketing-built-with-nocobase-2-0)
 
 **適した利用シーン**
 
@@ -69,7 +69,7 @@ NocoBase の AI 機能は単なる追加オプションではなく、「AI 従�
 * データモデルやフィールド構造と連携し、重要情報を自動的に抽出
 * 要約を生成してチケット項目に反映し、担当者の確認作業や文脈把握の負担を軽減
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzg1MDI4Y2RkOWE3M2M4ODkxNDg5ZTVjNmUxNWI2MmJfUXIxMlVxTnBidkRoTjdWM3BuWElUallVZHQ0bFBxcTBfVG9rZW46WkF6RGJoVU9Zb0RpN3V4QWxJTmN1T3lYbndiXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-zc5d3r.png)
 
 2. **インテリジェントな分類とルーティング**
 
@@ -77,7 +77,7 @@ NocoBase の AI 機能は単なる追加オプションではなく、「AI 従�
 * チケット内容やフィールド情報、過去のデータをもとに自動で分類を実行
 * 優先度を算出し、適切なチーム・担当者、または SLA フローへ自動的に振り分ける
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=Njk2M2M1ODI3YWFjODBjMjI1YzMxNDg4OTcyOTFlMWRfdGFEV2RoUzRHdmNIQ0pDcng5Vkh4VGg4NXZBa3E5cWdfVG9rZW46WWV1SWJNU0pGb2gycXJ4czMwNWNPQ1NtbkhnXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-o9ob6j.png)
 
 3. **ナレッジベースに基づく返信提案（RAG）**
 
@@ -85,7 +85,7 @@ NocoBase の AI 機能は単なる追加オプションではなく、「AI 従�
 * 新規チケット作成時に、既存のナレッジを参照し、類似する解決方法を提示
 * AI 従業員がナレッジ検索を支援し、編集可能な返信案を生成
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWI2MTcwMDFhM2Y4ZDVhNjZmN2ZkNTJmOTJhMDA0MjBfczh1N0lFdzZLRzRJZHg1UWM3MTM5ZUxxQ3JCWnNQMHFfVG9rZW46UWZzSWJOY0Mxb2E3Uk14Uks2QWNNam5sbjNaXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![NocoBase3.gif](https://static-docs.nocobase.com/NocoBase3-qs43ex.gif)
 
 4. **プロセスにおける AI の関与ポイント**
 
@@ -93,7 +93,7 @@ NocoBase の AI 機能は単なる追加オプションではなく、「AI 従�
 * 対応中には、分析や提案、情報補完を通じて AI が支援
 * クローズ時には、チケットの整理・要約やナレッジ化を担当
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=OGIxYzBhMTRlMGQ0OTNjZDEzYzgwZTA5ZWRkNTRlMGVfd1diREVvOG91TWJzdENUQ2hld3R2VEhNa2x1SEJlVVJfVG9rZW46QUhtMGJIcEt0bzBNa0p4eDdPRGNqbFEzbnpsXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![NocoBase4.gif](https://static-docs.nocobase.com/NocoBase4-rjp33t.gif)
 
 5. **制御性・拡張性・セルフホスト性**
 
@@ -101,7 +101,7 @@ NocoBase の AI 機能は単なる追加オプションではなく、「AI 従�
 * OpenAI、Claude、ローカルモデルなど、複数の AI モデルを選択可能
 * プラグイン型アーキテクチャにより、企業の業務要件に合わせて柔軟にシステムを拡張・調整できる
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmYxY2YxMTlmZjExZDExN2MwYTUzNmMzNTlhOTE0YTZfM291VGc5dHZ3RGdVQXh0OENCaUVXZ1FFSVRJb2FPM05fVG9rZW46RnIxT2IyaE9ybzd1SWd4bDVmWWNXU0ZGbmdlXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-54k6ql.png)
 
 ### 2.Frappe Helpdesk
 
@@ -131,7 +131,7 @@ Frappe Helpdesk は業務プラットフォームの一部として、チケッ�
 * Frappe プラットフォームの既存データ構造と連携
 * 外部 LLM や自社 AI サービスを活用し、チケット内容を基礎的に解析・分類
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YjkwYjY4ZGY0NzBkOTAxZWQxMzRlM2Y0OTQyMGVhMDNfY3lsZnhuQ2pNQ2hRY1ppWnZlc1RscnI2OUpBMG96UWRfVG9rZW46U0RuUGJnMTJqb3k4ZVp4dDZuemM3TkNNblVmXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Frappe Helpdesk1.png](https://static-docs.nocobase.com/Frappe%20Helpdesk1-3dpcb9.png)
 
 2. **業務データに基づく支援的な提案**
 
@@ -139,7 +139,7 @@ Frappe Helpdesk は業務プラットフォームの一部として、チケッ�
 * AI が既存の業務記録を参照し、対応時の参考情報や背景説明を提示
 * 高頻度なカスタマーサポートよりも、「業務支援型」のシナリオに適している
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZlM2E4Y2IxNGRiN2IzYWQ2ODljOTYwMWU2NDdmMzVfV212SUR1cnVOdExvc1BZWkVsU3Y3ZlBXa3ZLamlWb2NfVG9rZW46UUxNSGJUeVF2b3lkZmN4bkRwYmM2YldBbmNkXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Frappe Helpdesk2.png](https://static-docs.nocobase.com/Frappe%20Helpdesk2-1oy8ea.png)
 
 ### 3.Chatwoot
 
@@ -171,7 +171,7 @@ Chatwoot は、複雑なチケット管理機能よりも、コミュニケー�
   * 返信文案の自動生成
   * よくある質問への自動応答
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=Yzc1MGEwNWY1YTYzYWE1ODczZTMzOGU2ZmFmZGQxNDhfYXNEeGQweWsxV2FXNFNvNTZ3cEtLZWVFQUZmMnlVNzJfVG9rZW46WnQybWI3RXozb0FNemF4RjdpUGN2VE9YbnhjXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Chatwoot1.png](https://static-docs.nocobase.com/Chatwoot1-s6o9k1.png)
 
 2. **チケット生成と事前の振り分け**
 
@@ -179,7 +179,7 @@ Chatwoot は、複雑なチケット管理機能よりも、コミュニケー�
 * チケット作成前の段階で、簡易的な選別や振り分けを行う
 * 不要または重複したチケットがシステムに登録されるのを防ぐ
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=NzNjMWMxNDhmYjIwZjQyZDQwMTdhZjE3ZDNjYzQ1MjlfZ3hGVk5kR3g3SGVkM3lobzF2NWwxZ0JOVWFyVXdxMmdfVG9rZW46RjFodGI4QUwxb1hVcjZ4bU9HeWNPN2FTbkRnXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Chatwoot2.png](https://static-docs.nocobase.com/Chatwoot2-pw7nzp.png)
 
 ### 4.Zammad
 
@@ -205,7 +205,7 @@ GitHub Star 数：5.4k
 * API や Webhook を利用して外部の LLM と連携できる
 * 問題の要点を素早く把握できるようになり、サポート担当者の確認負担を軽減する
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=NzczMTFiYTRkYzk4YzUyNTk0ZWEwMzEzNzU0NjFjNTdfTXFSTU81TEV2Nm1Td0hISkcxUmU5SEVRRmVkMUU0N2dfVG9rZW46V1FmRmJEMHZxb3hQMnF4WG9MbGNjZkx6bjJ5XzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Zammad1.png](https://static-docs.nocobase.com/Zammad1-oepxnd.png)
 
 2. **ルールを軸にした分類と分派**
 
@@ -213,14 +213,14 @@ GitHub Star 数：5.4k
 * AI を活用することで、チケットの主題判定や優先度判断を補助できる
 * 既存のルールと組み合わせることで、より柔軟で高度な分派やエスカレーションのフローを構築できる
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YjJmMWRiMTk3MmExOGUyYzExYTQzOTlhNjMyYmNkMzlfTFZ0bk41bzFPSktKQjlRbGp6c3VPam11RnNEd3VKZHBfVG9rZW46WUM3emJsc3dRb2xrUlB4N2pubGNNR3JabjRlXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Zammad2.png](https://static-docs.nocobase.com/Zammad2-zgz0dw.png)
 
 3. **ナレッジベースを活用した返信提案**
 
 * Zammad にはナレッジベース機能が標準で用意されている
 * 外部 AI サービスと連携することで、既存のナレッジ内容を参照しながら、対応に使える返信案を生成できる
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDg2OGMyYjA4MDJiNTM3YzBmYTQ0ODRmZmFiODZmMDlfekFWYkprSXdCMWd5c1Fzc3Y3a0o3cjV3QmR0bFZBZVZfVG9rZW46SFdVWGJaMEJSbzRSVWh4U01VWmNYdWNRblBmXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Zammad3.png](https://static-docs.nocobase.com/Zammad3-8vo5w0.png)
 
 ### 5.FreeScout
 
@@ -247,14 +247,14 @@ GitHub Star 数：4k
 * LLM により編集可能な返信の下書きを生成し、サポート担当者が確認・調整できる
 * 複雑な多段階推論よりも、よくある質問や繰り返し発生する問い合わせへの対応に適している
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=OTQ1YWQ1YzdkNjY2OTk0OThjNmZlNWUyNDJkYTg1Y2RfOVQ4ekdjNUhjVTBYVzhYc1k1Q1lUYThXTnl5UTdUdTVfVG9rZW46U2xkYmJhcjdrb1l5Y3p4SEx6TWNla1ZKbjBnXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![FreeScout1.png](https://static-docs.nocobase.com/FreeScout1-5mb956.png)
 
 2. **ルールベースによる一次分類**
 
 * 既存のルールと AI の判断結果を組み合わせて活用できる
 * メールで受信したチケットに対し、一次的な分類やタグ付けを行う
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmMxNmU5NjRhNjcxNDljNTk1Mzg0ZmE1ZTVlZjdmYmZfUXh6NkdXOVRjdjBjVnNGS1QxMDRLYUhxVEFNQXp2TUxfVG9rZW46V1ZjcGI4VWsxb0JQZlB4WkkwVGNuRWhjblVmXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![FreeScout2.png](https://static-docs.nocobase.com/FreeScout2-ukcycf.png)
 
 ### 6.Faveo Helpdesk
 
@@ -281,7 +281,7 @@ GitHub Star：1.2k
 * 外部 LLM と連携し、ナレッジベース内容の検索や文章生成を行える
 * サポート担当者が編集可能な返信案を提示し、対応効率を高める
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=OTc5OTJkYTdiZmFlY2I2OWQwMzkxNDU2Y2JhNDVlY2VfQUdQaUNHRk0yUmFQRmRVdDJKcU52Rk5WcUJuaWhOZ05fVG9rZW46T3FzZGIzMXJJbzRUakh4UGt0dGNHcHQ2bkdiXzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Faveo Helpdesk1.png](https://static-docs.nocobase.com/Faveo%20Helpdesk1-dwqn7w.png)
 
 2. **チケット内容の自動理解と要約（拡張可能）**
 
@@ -289,7 +289,7 @@ GitHub Star：1.2k
 * チケットの説明文を解析し、要点を自動的に整理・要約
 * サポート担当者が問題の全体像や背景を素早く把握できるようにする
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YTNlZmZiMDhiNTA3MGY1N2EwODk0MGRiNGI2NjI1ZjFfbWdBdzZiRDc0ZWFQQm5uaHROV2J2Z09UdUNwdW16WlhfVG9rZW46UXVkamJxWUV2b0x0Z3p4eEw0bGM2NEt5blB1XzE3Njk2ODU5NzQ6MTc2OTY4OTU3NF9WNA)
+![Faveo Helpdesk2.png](https://static-docs.nocobase.com/Faveo%20Helpdesk2-cac6lg.png)
 
 ## 結論
 
@@ -298,3 +298,14 @@ GitHub Star：1.2k
 利用シーンの変化とともに、チケットシステムの役割も進化してきた。単なる問い合わせ記録ツールから、内部向けサービスデスクへ、そして現在では AI によって駆動される業務支援プラットフォームへと広がりつつある。新世代のチケットシステムは、企業内の協業やサービス提供を支える重要な基盤になり始めている。
 
 💕チケットシステムの選定や AI チケットシステムの活用に悩んでいる方にとって、本記事が少しでも参考になれば幸いである。役立ちそうだと感じたら、ぜひ興味のありそうな方にも共有してほしい。
+
+**関連読み物：**
+
+* [OSSデータ管理ツールを再考する：業務向け4選](https://www.nocobase.com/ja/blog/4-open-source-data-management-tools-for-business-systems)
+* [実例で見る ビジネスプロセス向け軽量エンタープライズソフトウェア 4 選](https://www.nocobase.com/ja/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6つの企業向けソフトウェア：社内業務でExcelの代替となる製品 ](https://www.nocobase.com/ja/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [CRUD実装の重複を減らすためのオープンソースツール10選](https://www.nocobase.com/ja/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub スター数が最も多いAIワークフロープロジェクトTop 12](https://www.nocobase.com/ja/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [ソフトウェア受託会社向けのオープンソース・ノーコード／ローコードツール6選](https://www.nocobase.com/ja/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub スター数トップ 10 の AI CRM オープンソースプロジェクト](https://www.nocobase.com/ja/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [Excel を卒業し、本当に使える業務システムを最短で構築する完全ガイド ](https://www.nocobase.com/ja/blog/how-to-quickly-build-a-real-system-to-replace-excel)
