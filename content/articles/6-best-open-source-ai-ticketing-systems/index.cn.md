@@ -38,9 +38,9 @@
 
 ### 1.NocoBase
 
-官网链接：[https://www.nocobase.com/](https://www.nocobase.com/?utm_source=chatgpt.com)
+官网链接：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-GitHub 链接：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 GitHub Star 数：21.4k
 
@@ -101,9 +101,9 @@ NocoBase 的 AI 能力不是附加功能，而是通过 AI 员工深度融入业
 
 ### 2. Frappe Helpdesk
 
-官网链接：[https://frappe.io/helpdesk](https://frappe.io/helpdesk?utm_source=chatgpt.com)
+官网链接：[https://frappe.io/helpdesk](https://frappe.io/helpdesk)
 
-GitHub 链接：[https://github.com/frappe/helpdesk](https://github.com/frappe/helpdesk?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/frappe/helpdesk](https://github.com/frappe/helpdesk)
 
 GitHub Star 数：2.9k
 
@@ -125,7 +125,7 @@ Frappe Helpdesk 的可以作为业务平台的一部分，能够让工单自然�
 * 可结合 Frappe 平台已有的数据结构
 * 通过外部 LLM 或自建 AI 服务，对工单描述进行基础理解
 
-![Faveo Helpdesk1.png](https://static-docs.nocobase.com/Faveo%20Helpdesk1-qskxnx.png)
+![Frappe Helpdesk1.png](https://static-docs.nocobase.com/Frappe%20Helpdesk1-3dpcb9.png)
 
 2. **基于业务数据的辅助建议**
 
@@ -133,13 +133,13 @@ Frappe Helpdesk 的可以作为业务平台的一部分，能够让工单自然�
 * AI 可基于已有业务记录，给出处理参考或背景说明
 * 更适合“业务支持型”场景，而非高并发客服场景
 
-![Faveo Helpdesk2.png](https://static-docs.nocobase.com/Faveo%20Helpdesk2-2xophy.png)
+![Frappe Helpdesk2.png](https://static-docs.nocobase.com/Frappe%20Helpdesk2-1oy8ea.png)
 
 ### 3. Chatwoot
 
-官网链接：[https://www.chatwoot.com/](https://www.chatwoot.com/?utm_source=chatgpt.com)
+官网链接：[https://www.chatwoot.com/](https://www.chatwoot.com/)
 
-GitHub 链接：[https://github.com/chatwoot/chatwoot](https://github.com/chatwoot/chatwoot?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/chatwoot/chatwoot](https://github.com/chatwoot/chatwoot)
 
 GitHub Star 数： 27.1k
 
@@ -177,7 +177,7 @@ Chatwoot 并不以复杂的工单生命周期管理见长，其 AI 能力更多�
 
 官网链接：[https://zammad.com/](https://zammad.com/)
 
-GitHub 链接：[https://github.com/zammad/zammad](https://github.com/zammad/zammad?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/zammad/zammad](https://github.com/zammad/zammad)
 
 GitHub Star 数： 5.4k
 
@@ -220,7 +220,7 @@ Zammad 本身并不内置 AI 功能，但其规则引擎与 API 设计，使其�
 
 官网链接：[https://freescout.net/](https://freescout.net/)
 
-GitHub 链接：[https://github.com/freescout-help-desk/freescout](https://github.com/freescout-help-desk/freescout?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/freescout-help-desk/freescout](https://github.com/freescout-help-desk/freescout)
 
 GitHub Star 数：4k
 
@@ -256,7 +256,7 @@ FreeScout 本身并不内置 AI 能力，但其插件机制和简单的数据结
 
 官网链接：[https://www.faveohelpdesk.com/](https://www.faveohelpdesk.com/)
 
-GitHub 链接：[https://github.com/faveosuite/faveo-helpdesk](https://github.com/faveosuite/faveo-helpdesk?utm_source=chatgpt.com)
+GitHub 链接：[https://github.com/faveosuite/faveo-helpdesk](https://github.com/faveosuite/faveo-helpdesk)
 
 GitHub Star 数：1.2k
 
@@ -295,4 +295,17 @@ Faveo Helpdesk 的 AI 扩展主要依托其知识库结构清晰、代码可扩�
 
 在选型过程中，比起功能数量，更应该关注 AI 能够在多深的程度上参与到你的工单流程中，系统是否具备持续扩展这些能力的空间。
 
-随着使用场景的变化，工单系统的边界也在不断延展，从最初的问题记录工具，到内部服务台，再到如今的 AI 驱动的业务支持平台，新一代的工单系统正在逐步成为企业内部协作与服务交付的重要基础设施。 💕如果你在工单系统选型或 AI 工单系统实践中有类似困惑，希望这篇文章能带来一些参考，欢迎分享给更多感兴趣的朋友。
+随着使用场景的变化，工单系统的边界也在不断延展，从最初的问题记录工具，到内部服务台，再到如今的 AI 驱动的业务支持平台，新一代的工单系统正在逐步成为企业内部协作与服务交付的重要基础设施。
+
+ 💕如果你在工单系统选型或 AI 工单系统实践中有类似困惑，希望这篇文章能带来一些参考，欢迎分享给更多感兴趣的朋友。
+
+相关阅读：
+
+* [4 个值得关注的开源业务数据管理工具 ](https://www.nocobase.com/cn/blog/4-open-source-data-management-tools-for-business-systems)
+* [4个适合企业业务流程的轻量化软件（附真实案例）](https://www.nocobase.com/cn/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6 个替代 Excel 的企业内部管理软件](https://www.nocobase.com/cn/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [开发者收藏！10 个减少重复 CRUD 的开源工具](https://www.nocobase.com/cn/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub Star 数量前 12 的 AI 工作流项目](https://www.nocobase.com/cn/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [最适合外包交付的 6 个开源无代码与低代码](https://www.nocobase.com/cn/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub 上星星数量前 10 的 AI CRM 开源项目 ](https://www.nocobase.com/cn/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [如何快速搭建一个替换 Excel 的系统？（完整指南）](https://www.nocobase.com/cn/blog/how-to-quickly-build-a-real-system-to-replace-excel)
