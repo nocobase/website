@@ -59,7 +59,7 @@ GitHub Stars: 21.4k
 
 NocoBase is an open-source business system platform built around data models. It extends functionality through a plugin-based architecture and deeply embeds AI capabilities into its core modules. Ticketing, knowledge bases, workflows, and internal service desks can all be implemented as part of the system.
 
-🎉 [Intelligent Ticketing System Built on NocoBase 2.0](https://www.nocobase.com/cn/blog/ai-powered-ticketing-built-with-nocobase-2-0)
+🎉 [Intelligent Ticketing System Built on NocoBase 2.0](https://www.nocobase.com/en/blog/ai-powered-ticketing-built-with-nocobase-2-0)
 
 **Suitable Scenarios**
 
@@ -78,7 +78,7 @@ In NocoBase, AI is not an add-on feature. Instead, AI “employees” are deeply
 * By combining data models with structured fields, they automatically extract key information
 * They can generate summaries and write them back into ticket fields, reducing manual review and context verification efforts
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZjODhkZTZmZjVlZjhkNGEwMjg0NmUzYmYzNTM2NDZfcmJ1cTZ1a3M2OFMwMFhYU3lPQVd4RE5vc0N5eTJPTjFfVG9rZW46UUF1RmJ6SENPbzRSUUZ4cWhkTWNuNEJUbk5nXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-zc5d3r.png)
 
 2. **Intelligent Classification and Routing**
 
@@ -86,7 +86,7 @@ In NocoBase, AI is not an add-on feature. Instead, AI “employees” are deeply
 * Tickets are automatically categorized based on their content, structured fields, and historical data
 * Priority is determined and tickets are routed to the appropriate teams, roles, or SLA processes
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YzkwNmI5NDY2NDk2YzA5NjRkOTY5MDljMzNhYTNiZWJfbXV6UVduSmdpdGFPT05aQTJGSXF0TDBtdGMzdFh1U3dfVG9rZW46SXJOUWJzZjBIb0FaMHJ4QjZISGNrazZibktoXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-o9ob6j.png)
 
 3. **Knowledge-Based Response Recommendations (RAG)**
 
@@ -94,7 +94,7 @@ In NocoBase, AI is not an add-on feature. Instead, AI “employees” are deeply
 * When a new ticket is created, similar solutions can be recommended based on existing knowledge
 * AI employees can help locate relevant knowledge and generate suggested responses
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=MTM2YjI2Y2VmN2I0OGY3MTk0NzBhMTM2ZGI3NzQ1ZmJfdFZQUHA1RXExUUZBY1VmUkd1S2hha095ZE53RUxYVlpfVG9rZW46SGtpamJqZkVxb2FxZTN4SlBuWmNTdjBlbnZnXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![NocoBase3.gif](https://static-docs.nocobase.com/NocoBase3-qs43ex.gif)
 
 4. **AI Touchpoints Within the Workflow**
 
@@ -102,7 +102,7 @@ In NocoBase, AI is not an add-on feature. Instead, AI “employees” are deeply
 * During processing, AI can support analysis, provide recommendations, and request additional information
 * At the closing stage, AI can summarize tickets and turn outcomes into reusable knowledge
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YzE3N2IxMzU1NGEzMGMwNTcyNTlkMDcyNmQ2N2Y4MWRfT1JjZmI2YVZIRktrc2RiWGx3d2d4ZjBsTWJFWGVUdUNfVG9rZW46UEJFMmJrT0E4b2V0a3h4dmZnRmNTVVl5bmJoXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![NocoBase4.gif](https://static-docs.nocobase.com/NocoBase4-rjp33t.gif)
 
 5. **Controlled, Extensible, and Self-Hosted**
 
@@ -110,7 +110,7 @@ In NocoBase, AI is not an add-on feature. Instead, AI “employees” are deeply
 * Supports multiple AI models, including OpenAI, Claude, and local deployments
 * A plugin-based architecture that allows the system to be flexibly adapted to enterprise-specific workflows
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=MDA5MWZhYTY4MmUzZmFlZjNiY2VhYzQzNTg2YWZjMDlfVWdlR1lIdDREa1ozNVAwS1Myd0kwQnVYSmVtQ3dTR0pfVG9rZW46TFF5SWJNVG5qb25hNEp4SXpSbGNleFJTblVoXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![NocoBase5.png](https://static-docs.nocobase.com/NocoBase5-54k6ql.png)
 
 ### 2.Frappe Helpdesk
 
@@ -140,7 +140,7 @@ As a component of the broader business platform, Frappe Helpdesk allows tickets 
 * Leverages the existing data structures of the Frappe platform
 * Uses external LLMs or in-house AI services to perform basic interpretation of ticket descriptions
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=OTlmNGI5YmJjOTUzOTVjNWYwMTQ5OWJkZDg3NWZiMTVfYTRFSVBIcUdWZWo3MmhXSGJpdFVxWUVsbml5c3N4ejJfVG9rZW46TjJRUWJWS0RnbzdTVk94Q0RoZWNrYXpabkZiXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Frappe Helpdesk1.png](https://static-docs.nocobase.com/Frappe%20Helpdesk1-3dpcb9.png)
 
 2. **Business Data–Driven Support Recommendations**
 
@@ -148,7 +148,7 @@ As a component of the broader business platform, Frappe Helpdesk allows tickets 
 * AI can use existing business records to provide handling guidance and relevant background information
 * Better suited for business-support use cases rather than high-volume customer support environments
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=MTVjMWRlYThhNDkyMGM0MjM3NWNhZDhhZmM5OTNiMTZfb2ZFYVVhR3l1RWlkQ1NnYkpURlhlVWhwbDFUckk0RjJfVG9rZW46V1M4M2JYMDZzb1N3RlZ4dWJIcWNDa0xpbjNjXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Frappe Helpdesk2.png](https://static-docs.nocobase.com/Frappe%20Helpdesk2-1oy8ea.png)
 
 ### 3.Chatwoot
 
@@ -180,7 +180,7 @@ Chatwoot is not designed for complex ticket lifecycle management. Instead, its A
   * Draft response generation
   * Automated replies for common questions
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=MzllMzlkOTllODk5M2RiZDQxOWZkYzJlYTQ5OGE3OTZfVlFLbllyZE1RUExGVXFvbmh0Vld2RHJTYVh2S2EzUXlfVG9rZW46U3I0R2JrSk04b2F2Tkl4bm5IU2N5cUE0blhjXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Chatwoot1.png](https://static-docs.nocobase.com/Chatwoot1-s6o9k1.png)
 
 2. **Ticket Creation and Pre-Routing**
 
@@ -188,7 +188,7 @@ Chatwoot is not designed for complex ticket lifecycle management. Instead, its A
 * Initial screening and routing are completed before tickets are created
 * This helps prevent invalid or duplicate tickets from reaching the core support system
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=MTAyYzc0MmQ5NDE5NjExZDRlMWNhZmVmMjdjYmNmZmRfQmp0aXB4YnhJaTA4SjZqdGhTN1FaZlVtZFZvbFp2NlVfVG9rZW46SWFFbGIwdUF4b1RwS1Z4VE9uUWMzMzhBbnNnXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Chatwoot2.png](https://static-docs.nocobase.com/Chatwoot2-pw7nzp.png)
 
 ### 4.Zammad
 
@@ -214,7 +214,7 @@ Zammad does not ship with built-in AI features, but its rule engine and API arch
 * External LLMs can be integrated through APIs or webhooks
 * This helps support agents quickly identify the core issue and reduces the need for manual review
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YmM5ODRiMjA0NGQ5MzNiYTFmYTE0MjcwYWM5Zjc4YThfSzBsR2JtdmF3bnVVeU5Qd2dPd2NyU3RCVkIwN0huNnJfVG9rZW46RW5OVmI4QnZYb281ZzR4SDZaZ2NxeGhCblViXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Zammad1.png](https://static-docs.nocobase.com/Zammad1-oepxnd.png)
 
 2. **Rule-Based Classification and Routing**
 
@@ -222,14 +222,14 @@ Zammad does not ship with built-in AI features, but its rule engine and API arch
 * AI can support topic detection and priority evaluation
 * When combined with existing rules, this enables smarter routing and escalation workflows
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZmMTNmNzk0MWQ1ZmYwNWRlZGEzYzgyYzk4YmZlZDFfSWFuWFBVSWJpcTJEdk03eEFPU1p3bHVzV3UzZEN3TGFfVG9rZW46VEJPQ2JuZmM1b2V6dkd4RUVMWGM3YzJybnlEXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Zammad2.png](https://static-docs.nocobase.com/Zammad2-zgz0dw.png)
 
 3. **Knowledge-Based Response Recommendations**
 
 * Zammad provides a built-in knowledge base
 * By integrating external AI services, response suggestions can be generated based on existing knowledge content
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRjYzIxYjNjY2RjMDU4YTY5NzE1ZDM4ZDhlMTU4OTlfM3NXREVZckVSWXlueTBDZ0tXaVlTMWlacWt5bkdGUzhfVG9rZW46TlIzYmJya2h0bzNsWnp4bURMd2M4dHhLbklkXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Zammad3.png](https://static-docs.nocobase.com/Zammad3-8vo5w0.png)
 
 ### 5.FreeScout
 
@@ -260,14 +260,14 @@ FreeScout does not ship with built-in AI features, but its plugin system and str
 * Uses LLMs to generate editable response drafts for agents to review and refine
 * Best suited for common questions or repetitive scenarios, rather than complex, multi-step reasoning
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YmI1NjUwMDc2ZTg0Y2FhNmQ0OGM3MjczZGE4YmYyZTJfanRsWXhHUlhjV2l0bWprcG9Jb3NVVzlkZ01RWVB6RTBfVG9rZW46WTRBOWJXeTFvbzBSZlh4T2ZEZ2NhWGNTbjViXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![FreeScout1.png](https://static-docs.nocobase.com/FreeScout1-5mb956.png)
 
 2. **Rule-Based Initial Classification**
 
 * Combines predefined rules with AI-assisted decision-making
 * Applies initial classification or tags to email-based tickets
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=M2I3MWIxNDEzMWExNTQxYmM4ZDQxZDRjNzRlZTkzOGVfa2h4ekNITUpvcktWYkxRTEtIUlE5TkpzZlZMNHVFeVZfVG9rZW46SDlmNGJ4WWh1bzVxOFZ4WlpwNGNRZk15bnRjXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![FreeScout2.png](https://static-docs.nocobase.com/FreeScout2-ukcycf.png)
 
 ### 6.Faveo Helpdesk
 
@@ -298,7 +298,7 @@ Faveo Helpdesk’s AI extensions primarily build on its well-structured knowledg
 * Can integrate external LLMs to retrieve and generate content from the knowledge base
 * Offers editable response suggestions for support agents
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YjQyZTAzNTEwOWNkYWZiYWJhZGFjY2I4MzQ1MDQ5MzRfWFptbkdRYVFpT25YQUE4V2E4aUZMRlRFMU8yR2lnMHBfVG9rZW46SklycGJ2WU93b2k3SXl4OE1jQ2NBckw2bkJlXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Faveo Helpdesk1.png](https://static-docs.nocobase.com/Faveo%20Helpdesk1-dwqn7w.png)
 
 2. **Automatic Understanding and Summarization (Extensible)**
 
@@ -306,7 +306,7 @@ Faveo Helpdesk’s AI extensions primarily build on its well-structured knowledg
 * Performs basic semantic analysis and summarization of ticket descriptions
 * Helps support agents understand the issue context more quickly
 
-![](https://hcn96cxzr0yf.feishu.cn/space/api/box/stream/download/asynccode/?code=YzEwOWUxNDA0MDBhNTlmNzU4NDJkYTdjY2MxNDc5MWJfREMxd2V5UVZtbW9iWFdCZ2Jsa1pEM3pMbFpyUlNHQXNfVG9rZW46TVVXMmJBend4b2tIMlN4VTVhZmNOSUFtblBiXzE3Njk2ODU5NTM6MTc2OTY4OTU1M19WNA)
+![Faveo Helpdesk2.png](https://static-docs.nocobase.com/Faveo%20Helpdesk2-cac6lg.png)
 
 ## **Conclusion**
 
@@ -315,3 +315,14 @@ When choosing a system, it matters less how many features it offers and more how
 As use cases evolve, the boundaries of ticketing systems continue to expand—from basic issue-tracking tools, to internal service desks, and now to AI-driven business support platforms. A new generation of ticketing systems is gradually becoming a core piece of infrastructure for internal collaboration and service delivery.
 
 💕If you are facing similar questions when selecting or implementing an AI ticketing system, we hope this article offers useful perspective. Feel free to share it with others who may find it helpful.
+
+**Related reading:**
+
+* [4 Open Source Data Management Tools for Business Systems ](https://www.nocobase.com/en/blog/4-open-source-data-management-tools-for-business-systems)
+* [4 Lightweight Enterprise Software for Business Processes (With Real-World Cases) ](https://www.nocobase.com/en/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6 Enterprise Softwares to Replace Excel for Internal Operations](https://www.nocobase.com/en/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [10 Open Source Tools Developers Use to Reduce Repetitive CRUD](https://www.nocobase.com/en/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [Top 12 Open-source AI Workflows Projects with the Most GitHub Stars ](https://www.nocobase.com/en/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [6 Open-Source No-Code & Low-Code Tools for Software Agencies](https://www.nocobase.com/en/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [Top 10 Open-source AI CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
+* [How to Quickly Build a Real System to Replace Excel: A Complete Guide](https://www.nocobase.com/en/blog/how-to-quickly-build-a-real-system-to-replace-excel)
