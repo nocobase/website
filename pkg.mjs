@@ -25,7 +25,9 @@ const pkgs = [
     'sitemap',
     'qrcode',
     'dotenv',
-    'sift'
+    'sift',
+    '@dicebear/core',
+    '@nocobase/ai-employee-avatars'
 ];
 
 (async () => {
