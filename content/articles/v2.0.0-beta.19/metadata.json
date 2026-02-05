@@ -1,14 +1,14 @@
 {
   "id": 881,
-  "title": "NocoBase v2.0.0-beta.19",
-  "title_cn": "NocoBase v2.0.0-beta.19",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-beta.19: DingTalk Allows to bind user with `unionId",
+  "title_cn": "NocoBase v2.0.0-beta.19：钉钉支持通过 `unionId` 绑定用户",
+  "title_ja": "NocoBase v2.0.0-beta.19：钉钉で unionId によるユーザー連携をサポート",
   "description": "Release Note of v2.0.0-beta.19",
   "description_cn": "v2.0.0-beta.19 更新日志",
-  "description_ja": null,
+  "description_ja": " v2.0.0-beta.19 リリースノート",
   "slug": "v2.0.0-beta.19",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-02-05T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-02-05T02:44:53.528Z",
+        "updatedAt": "2026-02-05T02:44:53.528Z",
+        "articles_id": 881,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-02-05T02:41:16.165Z",
+    "updatedAt": "2026-02-05T02:41:16.179Z",
+    "id": 2213,
+    "title": "next_ 需要确保文字都在虚线内",
+    "filename": "next_ 需要确保文字都在虚线内-niubo7.jpg",
+    "extname": ".jpg",
+    "size": 95113,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85-niubo7.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85-niubo7.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-02-05T00:51:42.151Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-02-05T02:44:53.514Z"
 }
