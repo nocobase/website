@@ -1,8 +1,8 @@
-私たちは以前、[GitHub 上 Star 数量前 10 の开源项目管理工具 ](https://www.nocobase.com/cn/blog/github-open-source-project-management-tools) をまとめたことがあります。このような内容は多くのユーザーに保存・共有され、継続的に議論されています。セルフホスト型かつオープンソースのプロジェクト管理ツールは、現在も多くのチームにとって重要な選択肢となっています。
+私たちは以前、[GitHubスター数トップ10のオープンソースプロジェクト管理ツール](https://www.nocobase.com/ja/blog/github-open-source-project-management-tools) をまとめたことがあります。このような内容は多くのユーザーに保存・共有され、継続的に議論されています。セルフホスト型かつオープンソースのプロジェクト管理ツールは、現在も多くのチームにとって重要な選択肢となっています。
 
 しかし最近、[Reddit](https://www.reddit.com/r/projectmanagement/comments/1nlsyz0/best_ai_tools_for_project_managers_right_now/) を見ると、ユーザーの関心はより直接的なテーマへと移りつつあります——AI は実際にプロジェクト管理の日常業務に関われるのか、という点です。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JmODhmYjQ1M2Q0OWRhNjc0ZGI0M2ViMTM5YjRkOGJfRHRkWkpsbDB3Vkpia0NCc1NCdmNUVFJVUVkyQmZMQTZfVG9rZW46UHVwU2J5allqb0phblF4VU9IQWN3S3VibkpnXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Reddit.PNG](https://static-docs.nocobase.com/Reddit-cm87lz.PNG)
 
 こうした議論の中では、すでに多くのユーザーが実践事例を共有し始めています：
 
@@ -12,7 +12,15 @@
 
 プロジェクト管理の役割分担は変化しつつあり、AI は整理や分析といった業務を担う存在として徐々に活用が進んでいます。また、チームが AI に期待する役割も、単なる効率向上から、具体的な業務プロセスへの関与へと広がりつつあります。
 
-こうした背景から、本記事では単なるプロジェクト管理ツールの紹介にはとどまりません。各製品の公式情報をもとに、[GitHub 项目管理话题](https://github.com/topics/project-management) から、すでに AI 機能を統合している、または AI 協働を明確に推進している TOP 5 のオープンソースツールを選定し、それぞれの AI 機能と、プロジェクト管理における具体的な活用方法を詳しく解説します
+こうした背景から、本記事では単なるプロジェクト管理ツールの紹介にはとどまりません。各製品の公式情報をもとに、[GitHub](https://github.com/topics/project-management) から、すでに AI 機能を統合している、または AI 協働を明確に推進している TOP 5 のオープンソースツールを選定し、それぞれの AI 機能と、プロジェクト管理における具体的な活用方法を詳しく解説します
+
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## おすすめツール一覧
 
@@ -28,7 +36,7 @@
 
 ## No 5 NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzZmNGM0YjI3NTgwMDQ4ZWViNmYyOGM0ZDg3N2UzYzZfdnVFdGVGWDg3QVhPS0NUbTlyUzVRT3FHQmdsNFFxZGFfVG9rZW46WFNFOWJqc25ib3VFd2Z4akVINmNUZDM5bnhnXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![]()![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-npjv8t.PNG)
 
 1. ### 基本情報
 
@@ -50,13 +58,11 @@ NocoBase は、従来のようにあらかじめ固定されたプロジェク�
 
 プラットフォームには、テーブル、カンバン、カレンダー、フォーム、ワークフロー自動化などの機能が標準搭載されており、これらを組み合わせることで、アジャイル型、カンバン型、またはハイブリッド型のプロジェクト管理を実現できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjdhNjhmMjY3ZGU3ZmU3MWI3OTkwOWJlNGM3NDVlZWNfZkg1ZG1NN09jSllnclZxWGtlNjREdUNBR1FWbVdvdk9fVG9rZW46SmlOaWJiYkZ4b1pYQmt4TDFFa2MwU0JMbndjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-pv6utg.png)NocoBase は、「AI 社員」というコアコンセプトを導入しています。AI 社員は、業務データや画面構造、ワークフローを理解できるデジタルチームメンバーとして設計されており、コンテンツ生成にとどまらず、データベース検索、タスクステータス更新、フォーム自動入力など、実際の業務操作も実行できます。
 
-NocoBase は、「AI 社員」というコアコンセプトを導入しています。AI 社員は、業務データや画面構造、ワークフローを理解できるデジタルチームメンバーとして設計されており、コンテンツ生成にとどまらず、データベース検索、タスクステータス更新、フォーム自動入力など、実際の業務操作も実行できます。
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-tpgybd.png)
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzg3MzE2ZTEzZGE5ZmNlYzVlMDRiODQ3NjEyYmZiN2ZfTVdZSnBBNDJjSlBvUGtwWm1SOWlGZHhQV243YjRacFVfVG9rZW46TTVybGJFZlBGb1RuNUp4UXhLZ2NxQ0ZFblJjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
-
-3. ### AI 機能
+4. ### AI 機能
 
 * **情報整理とコンテンツ生成**
 
@@ -66,17 +72,17 @@ NocoBase は、「AI 社員」というコアコンセプトを導入してい�
 
 プロジェクト進行中、AI 社員は権限範囲内でシステムデータを参照し、タスク情報の補完や実行記録の更新、関連データの維持管理を支援します。これにより、重複入力やシステム間のデータ連携にかかる作業を削減できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmNmODcyNmVmOTBjMzc1NmUzZDQ3YzM4MTMyMjQ0NjdfTklLTDJXbjNha2NGTWR1cXV0QWE3WjVjREp2cVJ6d2pfVG9rZW46SE1NcGJkMnR1b3JvTVB4M05JMmNIeUdsblY0XzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase4.PNG](https://static-docs.nocobase.com/NocoBase4-mj49ku.PNG)
 
 * **ワークフロー連携とプロセス自動化**
 
-AI はワークフロー内のインテリジェントノードとして業務に参加できます。承認、タスク進行、デリバリープロセスなどにおいて、AI はコンテキストに基づいて情報分析や内容補完を行います。さらに、固定ルールによる処理だけでなく、会話記録やドキュメントなどの非構造化データにも対応し、手作業による業務連携を減らすことができます。
+AI はワークフロー内のインテリジェントノードとして、プロセスの進行に関与できます。承認、タスクの引き継ぎ、業務の実行フローにおいて、AI はトリガー条件に応じてデータ処理や業務操作を実行し、ワークフローを固定ルールだけに依存させるのではなく、業務コンテキストに基づいて自動的に次の処理へ進めることができます。これにより、人手による引き継ぎ作業を削減できます
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODJkMDJlNjk2YjhmMzc1M2QzNTE2MjM3ZmM0NjRiMGJfZW5rQndYR2dyUGxBYkJyNENVam1tWFpYeDdPdjdJaVdfVG9rZW46TEVBeWJ6V21Ub0RhTDd4WDNhb2NaRm5QbmtoXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase5.PNG](https://static-docs.nocobase.com/NocoBase5-u0jmvo.PNG)
 
 ## No 4 Huly
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTg2MGRlNjcxOTI5NDYzNmJhYjc1ZmQ5MGNmNjZjZmNfRHpBbnhGNWhuYnBTWlVCOFhqQlpiNXg3U3RhWFBheU9fVG9rZW46Wk14cmJ2Q25wb2dIMkZ4MlZ4QWNLRXd6bkZkXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly1.png](https://static-docs.nocobase.com/Huly1-8g3zon.png)
 
 1. ### 概要
 
@@ -104,17 +110,17 @@ GitHub Star：24.3k
 
 Huly は、コミュニケーションや会議の場面で AI を活用でき、リアルタイム文字起こしや議論内容の整理を行います。これにより、チーム内のやり取りを構造化された記録として残し、会議整理にかかる負担を軽減します。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODY5OTkxZGExMDgyZjJjODQ5YWE1ZjJhMmE0YzZjYzlfMDd0RzdjTVdHeE9TdlBnZlYyYTY3VWxCVHBUVW9OeDVfVG9rZW46S3RpZmJPMWF3b3JReXp4eFR4dmNGZFREbjRlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly2.png](https://static-docs.nocobase.com/Huly2-gle59e.png)
 
 * **情報管理とナレッジ整理の支援**
 
 Huly は、プロジェクトデータ、ドキュメント、チーム内コミュニケーションを一元管理し、AI によるナレッジ整理や検索をサポートします。これにより、チームはプロジェクト資料や過去の記録をより効率的に参照できるようになります。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzA4OWVkZWUzYjdlMjAyMGE0ZTYxY2FlYTZmMjVmNzdfT3VFRWFQNkZjbEZOV2FXa3FTNHo0RGpFZ2FnbGFCcmlfVG9rZW46QXlNTWIya2tlbzhOTVR4RmFCQmNla1dObnVmXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly3.png](https://static-docs.nocobase.com/Huly3-tmnwjc.png)
 
 ## No 3 ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWJhMGE5NDdkYWFkNThmZTYzYjQ5NWE4NzE4NzE1NjJfaGxoMFJ0Z0JLWGR5R1Q5eDFBenQ3OU1NODZ0UEpaR05fVG9rZW46VmFhc2JiOEdKb01zOU54WEh5TGNlNXgxbjdjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext1.png](https://static-docs.nocobase.com/ERPNext1-p6ac0s.png)
 
 ### 1. 概要
 
@@ -128,7 +134,7 @@ ERPNext はオープンソースの企業向け統合管理システムで、ERP
 
 開発協働に特化したプロジェクト管理ツールと比べると、ERPNext の AI 機能は、業務協働や企業プロセスに関わる文書・コミュニケーション領域での活用が中心です。プロジェクト型の企業や、サービス提供型の組織に向いています。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWUxODI5ZjMwYTViZDg5NGM4NjVkYzcxY2Q5NTJiYzdfczdpcHIxZ3N2UEx1V1NNNkRvc0s3RU1rRlJyZGo1dW1fVG9rZW46U1U1bmJxV2ZLb3lPMDl4aDB2UmM4cVQybjlSXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext2.png](https://static-docs.nocobase.com/ERPNext2-l0gnjp.png)
 
 ### 2. 基本情報
 
@@ -142,11 +148,11 @@ ERPNext はオープンソースの企業向け統合管理システムで、ERP
 
 ERPNext のエコシステムでは、AI 拡張により業務文書や顧客向けのコミュニケーション、プロジェクト関連の文章作成を支援できます。たとえば、契約書のドラフト、業務説明資料、プロジェクト報告などの作成を補助し、日常的な文章作成・整理にかかる負担を減らします。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWFjMjg3Yzg1MjIyNDU2MzE4MWVhZTAwNjZiYTYzNjFfeXdDQUh2d3N4WW96RnBqSGI0MHJHVXJ5QnBlb2dyRHJfVG9rZW46RXRCN2I4T2t6b0xMemJ4dWtFYWNubjlXblplXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext3.png](https://static-docs.nocobase.com/ERPNext3-dbch1g.png)
 
 ## No 2 Plane
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2IxZmY2OTkxNzFhYTliYWJjNTVmNDcwZmRmNGU2MTRfTnZEVFE3SHl5VElZVXh0UXA2R08wMkl2aWxKQkhKZWFfVG9rZW46RDNxNGIzMDQxb0hmWEF4QlhsemNXRmFpblJlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane1.png](https://static-docs.nocobase.com/Plane1-wotnvk.png)
 
 1. ### 概要
 
@@ -174,17 +180,17 @@ GitHub Star：45.3k
 
 Plane AI は、要件の説明やプロジェクト背景をもとに、タスク内容、サブタスク構成、補足説明を自動生成できます。これにより、チームは要件の分解とタスク計画をより素早く進められます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjg0MDBiYTYzMDRhZDJlYzZhYjA2N2I4Mjg4MzkyZDFfbXc5eW1FVXlLVDRwVXlOSnRLN0F6MHJhU1RQUXJoNTZfVG9rZW46Q2Rod2IyWFFYbzJQdnZ4cjJQSmNiVGZXblBlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane2.png](https://static-docs.nocobase.com/Plane2-ggbubt.png)
 
 * **イテレーション計画と作業項目の整理支援**
 
 Plane AI は、既存のタスク情報をもとに作業項目の構成を整理し、タスクのまとめ方を最適化したり、背景情報を補足したりすることができます。これにより、イテレーション計画をより整合的で実行しやすい形にできます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzkwYjQ1N2VjNDU0YjhjMTIwMjlkMWQxNjczNDQ5ZTNfMFNwY055Z3FSSkxNVUNRNk92TXFFZ2lNSnhXWjl4QmhfVG9rZW46WHZIamJWcGtPb3hxbmR4ODRDTGNVQTZlbnBmXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane3.png](https://static-docs.nocobase.com/Plane3-4qd6fe.png)
 
 ## No 1 AppFlowy
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGE4YTE4ZWY0MWU4MWNlOTk2NDhmNTE0NTc0NTBjNjJfVFRPZjdOaUx5a3NuUURHS2Q5U01tSEhOeDFvdVlqNERfVG9rZW46V1FFMmJtRk1lbzR4bVh4TTByaGNwN24ybkVjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy1.png](https://static-docs.nocobase.com/AppFlowy1-6yes30.png)
 
 1. ### 概要
 
@@ -212,13 +218,13 @@ GitHub Star：67.9k
 
 AppFlowy AI はドキュメント編集時に、コンテンツ生成、文章表現の改善、ノート情報の整理を支援します。これにより、要件やプロジェクト資料、協働内容をより効率的に記録でき、情報の蓄積をより構造化できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmNiYmNlZGQ0MDFiZDEwNTAwMmFjYWU0YzMxZDdhNGJfcklkak1JUVlYQ2dHS1dxTmVqa0pINGl0Q1QxZ3JzckNfVG9rZW46RDNSc2J1RHlqb1dxMlp4U0htWmNKVHBYbk9kXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy2.png](https://static-docs.nocobase.com/AppFlowy2-bjmdii.png)
 
 * **ナレッジ整理・情報検索の支援**
 
 AppFlowy AI はドキュメントやデータベースの内容をもとに、ナレッジ情報の整理を支援します。また、自然言語でプロジェクト資料やチームのナレッジを検索できるため、過去の履歴や協働情報をより手軽に参照できます。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjY3MjM2NGY4ZjM2ZDI3MDg5NDA5ZTVhNGY2NDAyODJfYkZrdmFJRmZPdFROMVpZQkFyWHBTYzJuaGxkVUlNUzBfVG9rZW46VXBKaGJsdGFFb0FOcVl4cUxsTGNPUndIbkRkXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy3.png](https://static-docs.nocobase.com/AppFlowy3-vas31g.png)
 
 ## おわりに
 
@@ -227,3 +233,14 @@ AppFlowy AI はドキュメントやデータベースの内容をもとに、�
 オープンソース／セルフホストの前提であれば、チームは固定機能や単一の作業スタイルに縛られることなく、自社の業務プロセスに合ったツールを選び、実際の協働の中で AI の活用方法を段階的に探っていけます。
 
 この文章が役に立ったと感じたら、ぜひ興味のある方にもシェアしてください
+
+**関連読み物：**
+
+* [注目のオープンソース AI 工单システム 6選](https://www.nocobase.com/ja/blog/6-best-open-source-ai-ticketing-systems)
+* [OSSデータ管理ツールを再考する：業務向け4選](https://www.nocobase.com/ja/blog/4-open-source-data-management-tools-for-business-systems)
+* [実例で見る ビジネスプロセス向け軽量エンタープライズソフトウェア 4 選](https://www.nocobase.com/ja/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6つの企業向けソフトウェア：社内業務でExcelの代替となる製品 ](https://www.nocobase.com/ja/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [CRUD実装の重複を減らすためのオープンソースツール10選](https://www.nocobase.com/ja/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub スター数が最も多いAIワークフロープロジェクトTop 12](https://www.nocobase.com/ja/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [ソフトウェア受託会社向けのオープンソース・ノーコード／ローコードツール6選](https://www.nocobase.com/ja/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [GitHub スター数トップ 10 の AI CRM オープンソースプロジェクト](https://www.nocobase.com/ja/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
