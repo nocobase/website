@@ -1,8 +1,8 @@
 {
   "id": 882,
-  "title": "Weekly Updates｜support env.ESM_CDN_BASE_URL",
-  "title_cn": "本周更新｜支持配置 ESM_CDN_BASE_URL 环境变量",
-  "title_ja": "今週の更新｜ESM\\_CDN\\_BASE\\_URL 環境変数の設定に対応",
+  "title": "Weekly Updates｜Optimization and Bug Fixes",
+  "title_cn": "本周更新｜优化及缺陷修复",
+  "title_ja": "今週の更新｜最適化とバグ修正",
   "description": "This is a summary of NocoBase feature updates and improvements from January 29 to February 5, 2026.",
   "description_cn": "汇总了 2026.01.29-02.05 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.01.29〜02.05 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-05T03:27:13.841Z"
+  "updatedAt": "2026-02-05T03:47:47.462Z"
 }
