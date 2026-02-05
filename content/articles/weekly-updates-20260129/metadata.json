@@ -1,8 +1,8 @@
 {
   "id": 876,
-  "title": "Weekly Updates: Support file paste in AI chat",
+  "title": "Weekly Updates｜Support file paste in AI chat",
   "title_cn": "本周更新｜AI 对话支持复制粘贴文件",
-  "title_ja": "今週の更新：AI チャットでファイルのコピー＆ペースト操作が可能に",
+  "title_ja": "今週の更新｜AI チャットでファイルのコピー＆ペースト操作が可能に",
   "description": "This is a summary of NocoBase feature updates and improvements from January 22 to January 28, 2026.",
   "description_cn": "汇总了 2026.01.22-01.28 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.01.22〜01.28 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-29T03:32:33.444Z"
+  "updatedAt": "2026-02-05T02:46:09.701Z"
 }
