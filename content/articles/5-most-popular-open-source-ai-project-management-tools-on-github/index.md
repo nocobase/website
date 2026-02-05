@@ -20,8 +20,6 @@ For this reason, this article does not provide a general overview of project man
 
 ---
 
-
-
 ## Recommended Tool List
 
 **NocoBase** — An open-source platform for enterprise application development that enables teams to build highly customizable project management systems, with AI integrated into business workflow execution.
@@ -38,8 +36,7 @@ For this reason, this article does not provide a general overview of project man
 
 ![]()![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-npjv8t.PNG)
 
-
-1. ### Key Information
+### 1. Key Information
 
 Official website: [https://www.nocobase.com](https://www.nocobase.com)
 
@@ -47,7 +44,7 @@ GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocob
 
 GitHub Stars: 21.4k
 
-2. ### Overview
+### 2. Overview
 
 Unlike traditional project management tools, NocoBase is not built around predefined project workflows. Instead, it is an open-source AI-powered no-code/low-code development platform based on data modeling, enabling teams to build project management, collaboration, or delivery management systems tailored to their own business processes.
 
@@ -65,8 +62,7 @@ NocoBase introduces a core concept known as AI Employees. These digital teammate
 
 ![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-tpgybd.png)
 
-
-4. ### AI Capabilities
+### 3. AI Capabilities
 
 * **Information Structuring and Content Generation**
 
@@ -88,7 +84,7 @@ AI can act as an intelligent workflow node to help drive process execution. In a
 
 ![Huly1.png](https://static-docs.nocobase.com/Huly1-8g3zon.png)
 
-1. ### Overview
+### 1. Overview
 
 Huly is an open-source all-in-one team collaboration platform designed to replace tools such as Linear, Jira, Slack, and Notion by consolidating task management, communication, document collaboration, and process management into a single system.
 
@@ -100,7 +96,7 @@ From a project management perspective, Huly is well suited for:
 
 Compared with standalone task management tools, Huly focuses on building a unified collaboration workspace where teams can plan tasks, communicate, manage documentation, and drive projects forward within the same environment.
 
-2. ### Key Information
+### 2. Key Information
 
 Official website: [https://huly.io](https://huly.io?utm_source=chatgpt.com)
 
@@ -108,7 +104,7 @@ GitHub: [https://github.com/hcengineering/platform](https://github.com/hcenginee
 
 GitHub Stars: 24.3k
 
-3. ### AI Capabilities
+### 3. AI Capabilities
 
 * **Automated Communication and Meeting Summarization**
 
@@ -158,7 +154,7 @@ Within the ERPNext ecosystem, AI-based extensions can help generate business doc
 
 ![Plane1.png](https://static-docs.nocobase.com/Plane1-wotnvk.png)
 
-1. ### Overview
+### 1. Overview
 
 Plane is an open-source agile project management tool built for product and engineering teams. It supports requirements management, sprint and iteration planning, task tracking, and team collaboration, offering a workflow and user experience similar to modern tools like Linear.
 
@@ -170,7 +166,7 @@ From a project management perspective, Plane is best suited for:
 
 Compared with traditional project management tools, Plane puts greater emphasis on breaking down requirements and managing the pace of iterations, making it a strong fit for software teams that ship continuously and iterate quickly.
 
-2. ### Key Information
+### 2. Key Information
 
 Official website: [https://plane.so](https://plane.so)
 
@@ -196,7 +192,7 @@ Plane AI can also help structure work items based on existing tasks — for exam
 
 ![AppFlowy1.png](https://static-docs.nocobase.com/AppFlowy1-6yes30.png)
 
-1. ### Overview
+### 1. Overview
 
 AppFlowy is an open-source collaboration platform positioned as an alternative to Notion. It supports document editing, database management, task collaboration, and knowledge management, with a strong emphasis on local deployment and full data ownership.
 
@@ -208,7 +204,7 @@ From a project management perspective, AppFlowy is best suited for:
 
 Compared with traditional task management tools, AppFlowy emphasizes the integration of content and tasks, making it well suited for teams that need seamless continuity between documentation, knowledge management, and project execution.
 
-2. ### Key Information
+### 2. Key Information
 
 Official website: [https://appflowy.io](https://appflowy.io)
 
