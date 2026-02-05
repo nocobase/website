@@ -1,8 +1,8 @@
-We previously compiled [the top 10 open-source project management tools by GitHub Star count](https://www.nocobase.com/cn/blog/github-open-source-project-management-tools). This type of content has been widely bookmarked and discussed, and self-hosted, open-source project management tools remain a practical requirement for many teams.
+We previously compiled [Top 10 Open Source Project Management Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-project-management-tools). This type of content has been widely bookmarked and discussed, and self-hosted, open-source project management tools remain a practical requirement for many teams.
 
 Recently, however, discussions in the [Reddit project management community](https://www.reddit.com/r/projectmanagement/comments/1nlsyz0/best_ai_tools_for_project_managers_right_now/) show that more users are focusing on a more direct question — can AI meaningfully support the day-to-day work of project management?
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JmODhmYjQ1M2Q0OWRhNjc0ZGI0M2ViMTM5YjRkOGJfRHRkWkpsbDB3Vkpia0NCc1NCdmNUVFJVUVkyQmZMQTZfVG9rZW46UHVwU2J5allqb0phblF4VU9IQWN3S3VibkpnXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Reddit.PNG](https://static-docs.nocobase.com/Reddit-cm87lz.PNG)
 
 In these discussions, many users have begun sharing their hands-on experience:
 
@@ -13,6 +13,14 @@ In these discussions, many users have begun sharing their hands-on experience:
 The division of project management work is gradually evolving, with AI increasingly handling information organization and analytical tasks. As a result, teams are shifting their expectations of AI from simply improving efficiency to actively supporting core business workflows.
 
 For this reason, this article does not provide a general overview of project management tools. Instead, based on official product information, it selects the TOP 5 open-source tools under the [GitHub project management topic](https://github.com/topics/project-management) that have already integrated AI capabilities or are actively advancing AI-driven collaboration. The article focuses on analyzing their AI features and their practical applications in project management scenarios.
+
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## Recommended Tool List
 
@@ -28,7 +36,8 @@ For this reason, this article does not provide a general overview of project man
 
 ## No 5 NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzZmNGM0YjI3NTgwMDQ4ZWViNmYyOGM0ZDg3N2UzYzZfdnVFdGVGWDg3QVhPS0NUbTlyUzVRT3FHQmdsNFFxZGFfVG9rZW46WFNFOWJqc25ib3VFd2Z4akVINmNUZDM5bnhnXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![]()![NocoBase1.PNG](https://static-docs.nocobase.com/NocoBase1-npjv8t.PNG)
+
 
 1. ### Key Information
 
@@ -50,13 +59,14 @@ From a project management perspective, NocoBase is particularly suited for:
 
 The platform provides built-in components such as tables, kanban boards, calendars, forms, and workflow automation, which can be flexibly combined to support agile, kanban, or hybrid project management approaches.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjdhNjhmMjY3ZGU3ZmU3MWI3OTkwOWJlNGM3NDVlZWNfZkg1ZG1NN09jSllnclZxWGtlNjREdUNBR1FWbVdvdk9fVG9rZW46SmlOaWJiYkZ4b1pYQmt4TDFFa2MwU0JMbndjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-pv6utg.png)
 
 NocoBase introduces a core concept known as AI Employees. These digital teammates are designed to understand business data, interface structures, and workflows. Beyond generating content, they can also perform real operational tasks, such as querying databases, updating task statuses, and automatically completing forms.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzg3MzE2ZTEzZGE5ZmNlYzVlMDRiODQ3NjEyYmZiN2ZfTVdZSnBBNDJjSlBvUGtwWm1SOWlGZHhQV243YjRacFVfVG9rZW46TTVybGJFZlBGb1RuNUp4UXhLZ2NxQ0ZFblJjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-tpgybd.png)
 
-3. ### AI Capabilities
+
+4. ### AI Capabilities
 
 * **Information Structuring and Content Generation**
 
@@ -66,17 +76,17 @@ After requirement discussions or meetings, AI Employees can help transform discu
 
 During project execution, AI Employees can access system data within permission boundaries, assist with completing task information, updating execution records, and maintaining related data. This helps reduce repetitive manual input and cross-system data synchronization.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmNmODcyNmVmOTBjMzc1NmUzZDQ3YzM4MTMyMjQ0NjdfTklLTDJXbjNha2NGTWR1cXV0QWE3WjVjREp2cVJ6d2pfVG9rZW46SE1NcGJkMnR1b3JvTVB4M05JMmNIeUdsblY0XzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase4.PNG](https://static-docs.nocobase.com/NocoBase4-mj49ku.PNG)
 
 * **Workflow Collaboration and Process Automation**
 
-AI can act as an intelligent workflow node to support business execution. In approval, task progression, or delivery workflows, AI can analyze context and assist with information processing or content completion. Workflows can follow predefined rules while also handling unstructured data such as communication records and documents, helping reduce manual handoffs between teams.
+AI can act as an intelligent workflow node to help drive process execution. In approval workflows, task transitions, or delivery processes, AI can perform data processing and business actions based on workflow triggers. This allows workflows to operate beyond fixed rules by leveraging business context to automatically move tasks forward, reducing the need for manual handoffs between teams.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODJkMDJlNjk2YjhmMzc1M2QzNTE2MjM3ZmM0NjRiMGJfZW5rQndYR2dyUGxBYkJyNENVam1tWFpYeDdPdjdJaVdfVG9rZW46TEVBeWJ6V21Ub0RhTDd4WDNhb2NaRm5QbmtoXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![NocoBase5.PNG](https://static-docs.nocobase.com/NocoBase5-u0jmvo.PNG)
 
 ## No 4 Huly
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NTg2MGRlNjcxOTI5NDYzNmJhYjc1ZmQ5MGNmNjZjZmNfRHpBbnhGNWhuYnBTWlVCOFhqQlpiNXg3U3RhWFBheU9fVG9rZW46Wk14cmJ2Q25wb2dIMkZ4MlZ4QWNLRXd6bkZkXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly1.png](https://static-docs.nocobase.com/Huly1-8g3zon.png)
 
 1. ### Overview
 
@@ -104,17 +114,17 @@ GitHub Stars: 24.3k
 
 Huly integrates AI into communication and meeting workflows, such as real-time transcription and structured summarization of discussions, helping reduce post-meeting processing effort.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ODY5OTkxZGExMDgyZjJjODQ5YWE1ZjJhMmE0YzZjYzlfMDd0RzdjTVdHeE9TdlBnZlYyYTY3VWxCVHBUVW9OeDVfVG9rZW46S3RpZmJPMWF3b3JReXp4eFR4dmNGZFREbjRlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly2.png](https://static-docs.nocobase.com/Huly2-gle59e.png)
 
 * **Knowledge and Information Management Assistance**
 
 Huly centralizes project data, documents, and team communication, while enabling AI to organize and retrieve knowledge content, making it easier for teams to locate project resources and historical information.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MzA4OWVkZWUzYjdlMjAyMGE0ZTYxY2FlYTZmMjVmNzdfT3VFRWFQNkZjbEZOV2FXa3FTNHo0RGpFZ2FnbGFCcmlfVG9rZW46QXlNTWIya2tlbzhOTVR4RmFCQmNla1dObnVmXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Huly3.png](https://static-docs.nocobase.com/Huly3-tmnwjc.png)
 
 ## No 3 ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MWJhMGE5NDdkYWFkNThmZTYzYjQ5NWE4NzE4NzE1NjJfaGxoMFJ0Z0JLWGR5R1Q5eDFBenQ3OU1NODZ0UEpaR05fVG9rZW46VmFhc2JiOEdKb01zOU54WEh5TGNlNXgxbjdjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext1.png](https://static-docs.nocobase.com/ERPNext1-p6ac0s.png)
 
 ### 1. Overview
 
@@ -128,7 +138,7 @@ From a project management perspective, ERPNext is best suited for:
 
 Compared with project tools built primarily for engineering collaboration, ERPNext’s AI capabilities are mainly applied to business workflows and enterprise process content, making it a strong fit for project-based companies and service organizations.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWUxODI5ZjMwYTViZDg5NGM4NjVkYzcxY2Q5NTJiYzdfczdpcHIxZ3N2UEx1V1NNNkRvc0s3RU1rRlJyZGo1dW1fVG9rZW46U1U1bmJxV2ZLb3lPMDl4aDB2UmM4cVQybjlSXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext2.png](https://static-docs.nocobase.com/ERPNext2-l0gnjp.png)
 
 ### 2. Key Information
 
@@ -142,11 +152,11 @@ Compared with project tools built primarily for engineering collaboration, ERPNe
 
 Within the ERPNext ecosystem, AI-based extensions can help generate business documents, customer-facing messages, and project-related text — such as contract drafts, business notes, or project updates — reducing day-to-day writing and content整理 work for teams.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWFjMjg3Yzg1MjIyNDU2MzE4MWVhZTAwNjZiYTYzNjFfeXdDQUh2d3N4WW96RnBqSGI0MHJHVXJ5QnBlb2dyRHJfVG9rZW46RXRCN2I4T2t6b0xMemJ4dWtFYWNubjlXblplXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![ERPNext3.png](https://static-docs.nocobase.com/ERPNext3-dbch1g.png)
 
 ## No 2 Plane
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2IxZmY2OTkxNzFhYTliYWJjNTVmNDcwZmRmNGU2MTRfTnZEVFE3SHl5VElZVXh0UXA2R08wMkl2aWxKQkhKZWFfVG9rZW46RDNxNGIzMDQxb0hmWEF4QlhsemNXRmFpblJlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane1.png](https://static-docs.nocobase.com/Plane1-wotnvk.png)
 
 1. ### Overview
 
@@ -174,17 +184,17 @@ GitHub Stars: 45.3k
 
 Plane AI can generate task descriptions, sub-task structures, and additional context based on a requirement brief or project background, helping teams break down work and plan tasks faster.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjg0MDBiYTYzMDRhZDJlYzZhYjA2N2I4Mjg4MzkyZDFfbXc5eW1FVXlLVDRwVXlOSnRLN0F6MHJhU1RQUXJoNTZfVG9rZW46Q2Rod2IyWFFYbzJQdnZ4cjJQSmNiVGZXblBlXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane2.png](https://static-docs.nocobase.com/Plane2-ggbubt.png)
 
 * **Iteration Planning and Work-Item Structuring Support**
 
 Plane AI can also help structure work items based on existing tasks — for example, by improving how tasks are organized or filling in missing background information — making iteration plans more complete and easier to execute.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzkwYjQ1N2VjNDU0YjhjMTIwMjlkMWQxNjczNDQ5ZTNfMFNwY055Z3FSSkxNVUNRNk92TXFFZ2lNSnhXWjl4QmhfVG9rZW46WHZIamJWcGtPb3hxbmR4ODRDTGNVQTZlbnBmXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![Plane3.png](https://static-docs.nocobase.com/Plane3-4qd6fe.png)
 
 ## No 1 AppFlowy
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OGE4YTE4ZWY0MWU4MWNlOTk2NDhmNTE0NTc0NTBjNjJfVFRPZjdOaUx5a3NuUURHS2Q5U01tSEhOeDFvdVlqNERfVG9rZW46V1FFMmJtRk1lbzR4bVh4TTByaGNwN24ybkVjXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy1.png](https://static-docs.nocobase.com/AppFlowy1-6yes30.png)
 
 1. ### Overview
 
@@ -212,13 +222,13 @@ GitHub Stars: 67.9k
 
 AppFlowy AI assists with content generation, text refinement, and note organization during document editing. This helps teams record requirements, project materials, and collaboration content more efficiently while improving content structure and clarity.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NmNiYmNlZGQ0MDFiZDEwNTAwMmFjYWU0YzMxZDdhNGJfcklkak1JUVlYQ2dHS1dxTmVqa0pINGl0Q1QxZ3JzckNfVG9rZW46RDNSc2J1RHlqb1dxMlp4U0htWmNKVHBYbk9kXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy2.png](https://static-docs.nocobase.com/AppFlowy2-bjmdii.png)
 
 * **Knowledge Organization and Information Retrieval Support**
 
 AppFlowy AI can organize knowledge using document and database content and enables natural language search across project resources and team knowledge, making it easier to access historical records and collaboration data.
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MjY3MjM2NGY4ZjM2ZDI3MDg5NDA5ZTVhNGY2NDAyODJfYkZrdmFJRmZPdFROMVpZQkFyWHBTYzJuaGxkVUlNUzBfVG9rZW46VXBKaGJsdGFFb0FOcVl4cUxsTGNPUndIbkRkXzE3NzAzMTA2MTk6MTc3MDMxNDIxOV9WNA)
+![AppFlowy3.png](https://static-docs.nocobase.com/AppFlowy3-vas31g.png)
 
 ## Final Thoughts
 
@@ -226,4 +236,15 @@ As collaboration models continue to evolve, project management tools are likely 
 
 With open-source and self-hosted options, teams are no longer restricted by fixed features or rigid workflows. Instead, they can select tools that align with their business processes and gradually explore how AI can support real-world collaboration.
 
-If you found this article helpful, feel free to share it with others who may be interested
+If you found this article helpful, feel free to share it with others who may be interested.
+
+**Related reading:**
+
+* [6 Best Open-Source AI Ticketing Systems ](https://www.nocobase.com/en/blog/6-best-open-source-ai-ticketing-systems)
+* [4 Open Source Data Management Tools for Business Systems ](https://www.nocobase.com/en/blog/4-open-source-data-management-tools-for-business-systems)
+* [4 Lightweight Enterprise Software for Business Processes (With Real-World Cases) ](https://www.nocobase.com/en/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6 Enterprise Softwares to Replace Excel for Internal Operations](https://www.nocobase.com/en/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [10 Open Source Tools Developers Use to Reduce Repetitive CRUD](https://www.nocobase.com/en/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [Top 12 Open-source AI Workflows Projects with the Most GitHub Stars ](https://www.nocobase.com/en/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [6 Open-Source No-Code & Low-Code Tools for Software Agencies](https://www.nocobase.com/en/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
+* [Top 10 Open-source AI CRM Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/top-10-open-source-ai-crm-projects-with-the-most-github-stars)
