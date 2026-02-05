@@ -3,12 +3,12 @@
   "title": "5 Most Popular Open-Source AI Project Management Tools on GitHub",
   "title_cn": "5个 GitHub 上最受欢迎的开源 AI 项目管理工具",
   "title_ja": "GitHubで人気の高いオープンソースAIプロジェクト管理ツール5選",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "A review of five open-source tools that have already integrated AI capabilities or are actively advancing AI-driven collaboration",
+  "description_cn": "盘点 5 款已经融入 AI 能力或正在明确推进 AI 协作方向的开源工具",
+  "description_ja": "AI機能をすでに統合、またはAI協働の導入を積極的に進めている5つのオープンソースツールを紹介",
   "slug": "5-most-popular-open-source-ai-project-management-tools-on-github",
   "publishedAt": "2026-02-05T16:57:03.065Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -556,5 +556,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-05T17:54:40.465Z"
+  "updatedAt": "2026-02-05T18:26:36.079Z"
 }
