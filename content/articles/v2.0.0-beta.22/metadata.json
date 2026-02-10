@@ -1,14 +1,14 @@
 {
   "id": 891,
-  "title": "NocoBase v2.0.0-beta.22",
-  "title_cn": "NocoBase v2.0.0-beta.22",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-beta.22:Support configuring browser tab titles for pages, page tabs, popups, and popup tabs",
+  "title_cn": "NocoBase v2.0.0-beta.22：支持在页面、页面标签、弹窗、弹窗标签配置浏览器页签标题",
+  "title_ja": "NocoBase v2.0.0-beta.22：ページ、ページタブ、ポップアップ、ポップアップタブでブラウザのタブタイトルを設定できるように対応",
   "description": "Release Note of v2.0.0-beta.22",
   "description_cn": "v2.0.0-beta.22 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-beta.22 リリースノート",
   "slug": "v2.0.0-beta.22",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-02-09T23:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-02-10T02:45:30.482Z",
+        "updatedAt": "2026-02-10T02:45:30.482Z",
+        "articles_id": 891,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-02-10T02:41:23.800Z",
+    "updatedAt": "2026-02-10T02:41:23.810Z",
+    "id": 2225,
+    "title": "22",
+    "filename": "22-b32jbp.jpg",
+    "extname": ".jpg",
+    "size": 95064,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/22-b32jbp.jpg",
+    "preview": "https://static-docs.nocobase.com/22-b32jbp.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-02-09T23:41:28.801Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-02-10T02:45:30.444Z"
 }
