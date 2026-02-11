@@ -1,13 +1,13 @@
 {
-  "id": 887,
-  "title": "NocoBase v1.9.43: Fix the vulnerability of import action",
-  "title_cn": "NocoBase v1.9.43：修复导入操作的安全隐患",
-  "title_ja": "NocoBase v1.9.43：インポート処理におけるセキュリティリスクを修正",
-  "description": "Release Note of v1.9.43",
-  "description_cn": "v1.9.43 更新日志",
-  "description_ja": "v1.9.43 リリースノート",
-  "slug": "v1.9.43",
-  "publishedAt": "2026-02-06T06:08:00.000Z",
+  "id": 890,
+  "title": "NocoBase v1.9.45: Fix incorrect id to load detail record",
+  "title_cn": "NocoBase v1.9.45：修复加载详情数据时使用了错误的 id 参数",
+  "title_ja": "NocoBase v1.9.45：詳細データ読み込み時に誤った id パラメータを使用していた問題を修正",
+  "description": "Release Note of v1.9.45",
+  "description_cn": "v1.9.45 更新日志",
+  "description_ja": "v1.9.45 リリースノート",
+  "slug": "v1.9.45",
+  "publishedAt": "2026-02-09T00:00:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,10 +30,10 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-02-06T06:08:01.607Z",
-        "updatedAt": "2026-02-06T06:08:01.607Z",
+        "createdAt": "2026-02-09T15:03:23.318Z",
+        "updatedAt": "2026-02-09T15:03:23.318Z",
         "tagId": 4,
-        "articleId": 887
+        "articleId": 890
       }
     }
   ],
@@ -58,27 +58,27 @@
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2026-02-10T01:24:17.928Z",
-        "updatedAt": "2026-02-10T01:24:17.928Z",
-        "articles_id": 887,
+        "createdAt": "2026-02-10T02:40:49.027Z",
+        "updatedAt": "2026-02-10T02:40:49.027Z",
+        "articles_id": 890,
         "tags_id": 116
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2026-02-10T01:23:04.646Z",
-    "updatedAt": "2026-02-10T01:23:04.656Z",
-    "id": 2219,
-    "title": "main",
-    "filename": "main-w1w8by.jpg",
+    "createdAt": "2026-02-10T02:38:51.176Z",
+    "updatedAt": "2026-02-10T02:38:51.181Z",
+    "id": 2224,
+    "title": "main (2)",
+    "filename": "main (2)-bkd68i.jpg",
     "extname": ".jpg",
-    "size": 90091,
+    "size": 90067,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/main-w1w8by.jpg",
-    "preview": "https://static-docs.nocobase.com/main-w1w8by.jpg",
+    "url": "https://static-docs.nocobase.com/main%20(2)-bkd68i.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20(2)-bkd68i.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-10T01:24:17.911Z"
+  "updatedAt": "2026-02-10T02:40:49.011Z"
 }

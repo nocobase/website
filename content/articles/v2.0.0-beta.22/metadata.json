@@ -1,13 +1,13 @@
 {
-  "id": 887,
-  "title": "NocoBase v1.9.43: Fix the vulnerability of import action",
-  "title_cn": "NocoBase v1.9.43：修复导入操作的安全隐患",
-  "title_ja": "NocoBase v1.9.43：インポート処理におけるセキュリティリスクを修正",
-  "description": "Release Note of v1.9.43",
-  "description_cn": "v1.9.43 更新日志",
-  "description_ja": "v1.9.43 リリースノート",
-  "slug": "v1.9.43",
-  "publishedAt": "2026-02-06T06:08:00.000Z",
+  "id": 891,
+  "title": "NocoBase v2.0.0-beta.22:Support configuring browser tab titles for pages, page tabs, popups, and popup tabs",
+  "title_cn": "NocoBase v2.0.0-beta.22：支持在页面、页面标签、弹窗、弹窗标签配置浏览器页签标题",
+  "title_ja": "NocoBase v2.0.0-beta.22：ページ、ページタブ、ポップアップ、ポップアップタブでブラウザのタブタイトルを設定できるように対応",
+  "description": "Release Note of v2.0.0-beta.22",
+  "description_cn": "v2.0.0-beta.22 更新日志",
+  "description_ja": "v2.0.0-beta.22 リリースノート",
+  "slug": "v2.0.0-beta.22",
+  "publishedAt": "2026-02-09T23:00:00.000Z",
   "status": "published",
   "tags": [
     {
@@ -30,21 +30,21 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-02-06T06:08:01.607Z",
-        "updatedAt": "2026-02-06T06:08:01.607Z",
+        "createdAt": "2026-02-09T23:41:28.822Z",
+        "updatedAt": "2026-02-09T23:41:28.822Z",
         "tagId": 4,
-        "articleId": 887
+        "articleId": 891
       }
     }
   ],
   "sub_tags": [
     {
-      "createdAt": "2025-01-22T06:52:40.087Z",
-      "updatedAt": "2025-02-06T14:24:49.435Z",
-      "id": 116,
-      "title": "Latest",
-      "title_cn": "Latest",
-      "sort": 115,
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -52,33 +52,33 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": "Latest",
+      "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
+      "createdById": 3,
+      "updatedById": 3,
       "article_sub_tags": {
-        "createdAt": "2026-02-10T01:24:17.928Z",
-        "updatedAt": "2026-02-10T01:24:17.928Z",
-        "articles_id": 887,
-        "tags_id": 116
+        "createdAt": "2026-02-10T02:45:30.482Z",
+        "updatedAt": "2026-02-10T02:45:30.482Z",
+        "articles_id": 891,
+        "tags_id": 234
       }
     }
   ],
   "category": null,
   "cover": {
-    "createdAt": "2026-02-10T01:23:04.646Z",
-    "updatedAt": "2026-02-10T01:23:04.656Z",
-    "id": 2219,
-    "title": "main",
-    "filename": "main-w1w8by.jpg",
+    "createdAt": "2026-02-10T02:41:23.800Z",
+    "updatedAt": "2026-02-10T02:41:23.810Z",
+    "id": 2225,
+    "title": "22",
+    "filename": "22-b32jbp.jpg",
     "extname": ".jpg",
-    "size": 90091,
+    "size": 95064,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/main-w1w8by.jpg",
-    "preview": "https://static-docs.nocobase.com/main-w1w8by.jpg",
+    "url": "https://static-docs.nocobase.com/22-b32jbp.jpg",
+    "preview": "https://static-docs.nocobase.com/22-b32jbp.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-10T01:24:17.911Z"
+  "updatedAt": "2026-02-10T02:45:30.444Z"
 }
