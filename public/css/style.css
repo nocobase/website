@@ -964,7 +964,7 @@ p {
 }
 .avatar.avatar-small {
   height: 65px !important;
-  width: 65px !important;
+  /* width: 65px !important; */
 }
 .avatar.avatar-md-md {
   height: 80px !important;
