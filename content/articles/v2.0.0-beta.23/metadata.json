@@ -1,14 +1,14 @@
 {
   "id": 894,
-  "title": "NocoBase v2.0.0-beta.23",
-  "title_cn": "NocoBase v2.0.0-beta.23",
-  "title_ja": null,
+  "title": "NocoBase v2.0.0-beta.23: support configurable block height",
+  "title_cn": "NocoBase v2.0.0-beta.23：区块支持高度设置",
+  "title_ja": "NocoBase v2.0.0-beta.23：ブロックの高さを設定できるように対応",
   "description": "Release Note of v2.0.0-beta.23",
   "description_cn": "v2.0.0-beta.23 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.0-beta.23  リリースノート",
   "slug": "v2.0.0-beta.23",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-02-12T02:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-02-12T03:13:49.962Z",
+        "updatedAt": "2026-02-12T03:13:49.962Z",
+        "articles_id": 894,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-02-12T03:12:58.525Z",
+    "updatedAt": "2026-02-12T03:12:58.535Z",
+    "id": 2230,
+    "title": "next_ 需要确保文字都在虚线内 (3)",
+    "filename": "next_ 需要确保文字都在虚线内 (3)-w75mv0.jpg",
+    "extname": ".jpg",
+    "size": 238286,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(3)-w75mv0.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(3)-w75mv0.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-02-12T02:29:46.917Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-02-12T03:13:49.948Z"
 }
