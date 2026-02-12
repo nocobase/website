@@ -153,7 +153,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[flow-engine]** fix column delete action not working in popup sub-table edit when createModelOptions is configured ([#8576](https://github.com/nocobase/nocobase/pull/8576)) by @katherinehhh
 - **[Email manager]**
 
-  - 管理页面添加筛选 by @jiannx
+  - add filters to the management by @jiannx
   - Fixed the problem of emails in the same mailbox between multiple users and optimized performance by @jiannx
   - fix conversation chain by @jiannx
 
