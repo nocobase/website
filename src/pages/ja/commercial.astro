@@ -26,7 +26,7 @@ const keywords = page.keywords_ja || page.keywords;
       </div><!--end row-->
 
       <div class="row">
-        <div class="col-12 mt-4 pt-2">
+        <div class="col-12 pt-2">
           <div class="timeline-page position-relative">
             <div class="timeline-item">
               <div class="row">
@@ -157,630 +157,1124 @@ const keywords = page.keywords_ja || page.keywords;
       <div class="row align-items-center">
         <div class="col-12">
           <div class="component-wrapper">
-            <div class="p-4">
-              <div class="table-responsive bg-white">
-                <table class="table mb-0 table-center commercial-table">
-                  <thead class="">
-                  <tr>
-                    <th scope="col" class="col-sm-4"></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">コミュニティ<br>版</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">スタンダード<br>版</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">プロフェッショナル<br>版</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">エンタープライズ<br>版</h5></th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td class="compare-item text-muted">価格</td>
-                    <td class="fw-bold fst-italic">無料</td>
-                    <td class="fw-bold fst-italic">$800</td>
-                    <td class="fw-bold fst-italic">$8,000</td>
-                    <td class="fw-bold fst-italic">お問い合わせ</td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">ライセンス</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ライセンス種別</td>
-                    <td class="text-nowrap">コミュニティライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">永久ライセンス<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="ライセンスは永久有効で、再度の支払いは不要です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">アップグレード有効期間<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="ライセンス取得後、有効期間内はいつでも最新バージョンへアップグレード可能。有効期間終了後も現在のバージョンを永久に無料使用できます。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>1年</td>
-                    <td>1年</td>
-                    <td>1年</td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">利用制限</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ユーザー数無制限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">アプリ数無制限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">レコード数無制限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">社内向けアプリ開発</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted text-nowrap">自作コード・プラグインを非公開にできる</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="自作コードやプラグインはAGPL 3.0でオープンソース化する必要があります。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted text-nowrap">インターフェースで自社ブランド使用</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="NocoBaseの著作権・バージョン情報は改変・削除できません。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">顧客向けアプリの開発</td>
-                    <td>-</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">商用エディションのソースコードへのアクセス</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">コア</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted text-nowrap">データモデル駆動<a href="https://v2.docs.nocobase.com/ja/data-sources" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI駆動の開発</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">WYSIWYG開発<a href="https://v2.docs.nocobase.com/ja/interface-builder" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI従業員<a href="https://v2.docs.nocobase.com/ja/ai-employees" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ユーザー認証<a href="https://v2.docs.nocobase.com/ja/auth-verification/auth" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ロールと権限<a href="https://v2.docs.nocobase.com/ja/users-permissions/user" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ワークフロー<a href="https://v2.docs.nocobase.com/ja/workflow/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">イベントフロー<a href="https://v2.docs.nocobase.com/ja/interface-builder/event-flow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">通知<a href="https://v2.docs.nocobase.com/ja/notification-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ローカリゼーション<a href="https://v2.docs.nocobase.com/ja/system-management/localization/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">アーキテクチャ</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">プラグインアーキテクチャ</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">移行とリリース管理<a href="https://v2.docs.nocobase.com/ja/ops-management/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">マルチアプリケーション<a href="https://v2.docs.nocobase.com/ja/multi-app/multi-app/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">マルチスペース<a href="https://v2.docs.nocobase.com/ja/multi-app/multi-space" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">クラスターアーキテクチャ<a href="https://v2.docs.nocobase.com/ja/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">テレメトリ<a href="https://v2.docs.nocobase.com/ja/log-and-monitor/telemetry/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">データソース</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">メインデータソース<a href="https://v2.docs.nocobase.com/ja/data-sources/data-source-main/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL, PostgreSQL, MariaDB"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">外部データソース<a href="https://v2.docs.nocobase.com/ja/data-sources/data-source-manager/external-database" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL, PostgreSQL, MariaDB, SQL Server, Rest API"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL, PostgreSQL, MariaDB, SQL Server, Rest API"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL, PostgreSQL, MariaDB, SQL Server, Rest API, Oracle, ClickHouse, Doris"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">ロールと権限</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">システム権限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">データソースのフィールド権限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ルート権限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI従業員の権限</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">AI従業員</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ビルトインのAI従業員</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI従業員を自由に拡張</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI従業員の開発システム</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">AI従業員が業務タスクを処理</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">主流LLMとの接続</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ツールとスキルの利用</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">RAGナレッジベースの利用</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">ワークフロー</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ワークフローエンジン<a href="https://v2.docs.nocobase.com/ja/workflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">複数のトリガータイプ</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">数十種類のアクションノード</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">承認<a href="https://v2.docs.nocobase.com/ja/workflow/triggers/approval" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">サブフロー<a href="https://v2.docs.nocobase.com/ja/workflow/nodes/subflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Webhook<a href="https://v2.docs.nocobase.com/ja/workflow/triggers/webhook" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">セキュリティと認証</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">変数とシークレット<a href="https://v2.docs.nocobase.com/ja/ops-management/variables-and-secrets/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Tokenポリシー<a href="https://v2.docs.nocobase.com/ja/security/token-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">フィールドマスキング</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">フィールド暗号化<a href="https://v2.docs.nocobase.com/ja/data-sources/field-encryption" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">パスワードポリシー<a href="https://v2.docs.nocobase.com/ja/security/password-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">ユーザーロックアウト<a href="https://v2.docs.nocobase.com/ja/security/password-policy/lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">自動バックアップ<a href="https://v2.docs.nocobase.com/ja/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">データ履歴<a href="https://v2.docs.nocobase.com/ja/record-history/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">SSO<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="OIDC, SAML, LDAP, CAS, DingTalk"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a><a href="https://v2.docs.nocobase.com/ja/integration/sso/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">API暗号化通信<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="データをHTTP通信中に暗号化します"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">IP制限<a href="https://v2.docs.nocobase.com/ja/security/ip-restriction/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">監査ログ<a href="https://v2.docs.nocobase.com/ja/security/audit-logger/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">二要素認証(2FA)<a href="https://v2.docs.nocobase.com/ja/auth-verification/2fa/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">その他</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Excelインポート/エクスポート</td>
-                    <td>小規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり最大2,000行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">プライベートファイルアクセス<a href="https://v2.docs.nocobase.com/ja/data-sources/file-manager/storage/s3-pro" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">手書き署名</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">テンプレート印刷<a href="https://v2.docs.nocobase.com/ja/template-print/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">メール連携<a href="https://v2.docs.nocobase.com/ja/email-manager/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">サポート</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">コミュニティサポート</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">専属かつ迅速なバグ修正</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">専属の利用コンサルティング</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">専属の拡張開発コンサルティング</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">新機能に対する優先的な開発対応</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">電話サポート</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">リアルタイムチャットサポート</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">サポート有効期間</td>
-                    <td>-</td>
-                    <td>1年</td>
-                    <td>1年</td>
-                    <td>1年</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">コンサルティング工数(チケット数)<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="サポート期間中、バグ報告を除く一定数の利用相談を受けられます。超過分は別途購入可能です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>無制限</td>
-                    <td>無制限</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">開発支援工数(チケット数)<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="サポート期間中、NocoBaseコアチームがプラグイン開発や第三者システム連携などを支援します。超過分は別途購入可能です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">初回応答時間</td>
-                    <td>-</td>
-                    <td>24時間</td>
-                    <td>12時間</td>
-                    <td>4時間</td>
-                  </tr>
-                  </tbody>
-                </table>
+            <div class="">
+              <div class="accordion" id="commercialPricingAccordion">
+                <div class="accordion-item rounded">
+                  <h2 class="accordion-header" id="pricing-heading-license">
+                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-license" aria-expanded="true" aria-controls="pricing-collapse-license">
+                      ライセンス
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-license" class="accordion-collapse border-0 collapse show"
+                       aria-labelledby="pricing-heading-license" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">価格</td>
+                            <td class="fw-bold fst-italic">無料</td>
+                            <td class="fw-bold fst-italic">$800</td>
+                            <td class="fw-bold fst-italic">$8,000</td>
+                            <td class="fw-bold fst-italic">お問い合わせ</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ライセンス種別</td>
+                            <td class="text-nowrap">コミュニティライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">商用ライセンス<a href="https://www.nocobase.com/ja/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">永久ライセンス<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="ライセンスは永久有効で、再度の支払いは不要です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">アップグレード有効期間<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="ライセンス取得後、有効期間内はいつでも最新バージョンへアップグレード可能。有効期間終了後も現在のバージョンを永久に無料使用できます。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>1年</td>
+                            <td>1年</td>
+                            <td>1年</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-limits">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-limits" aria-expanded="false" aria-controls="pricing-collapse-limits">
+                      利用制限
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-limits" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-limits" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">ユーザー数無制限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">アプリ数無制限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">レコード数無制限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">社内向けアプリ開発</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">自作コード・プラグインを非公開にできる</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="自作コードやプラグインはAGPL 3.0でオープンソース化する必要があります。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">インターフェースで自社ブランド使用</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="NocoBaseの著作権・バージョン情報は改変・削除できません。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">顧客向けアプリの開発</td>
+                            <td>-</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">商用エディションのソースコードへのアクセス</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-core">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-core" aria-expanded="false" aria-controls="pricing-collapse-core">
+                      コア
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-core" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-core" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">データモデル駆動<a href="https://v2.docs.nocobase.com/ja/data-sources" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI駆動の開発</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">WYSIWYG開発<a href="https://v2.docs.nocobase.com/ja/interface-builder" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI従業員<a href="https://v2.docs.nocobase.com/ja/ai-employees" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ユーザー認証<a href="https://v2.docs.nocobase.com/ja/auth-verification/auth" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ロールと権限<a href="https://v2.docs.nocobase.com/ja/users-permissions/user" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ワークフロー<a href="https://v2.docs.nocobase.com/ja/workflow/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">イベントフロー<a href="https://v2.docs.nocobase.com/ja/interface-builder/event-flow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">通知<a href="https://v2.docs.nocobase.com/ja/notification-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ローカリゼーション<a href="https://v2.docs.nocobase.com/ja/system-management/localization/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-architecture">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-architecture" aria-expanded="false" aria-controls="pricing-collapse-architecture">
+                      アーキテクチャ
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-architecture" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-architecture" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">プラグインアーキテクチャ</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">移行とリリース管理<a href="https://v2.docs.nocobase.com/ja/ops-management/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">マルチアプリケーション<a href="https://v2.docs.nocobase.com/ja/multi-app/multi-app/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">マルチスペース<a href="https://v2.docs.nocobase.com/ja/multi-app/multi-space" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">クラスターアーキテクチャ<a href="https://v2.docs.nocobase.com/ja/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">テレメトリ<a href="https://v2.docs.nocobase.com/ja/log-and-monitor/telemetry/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-data-source">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-data-source" aria-expanded="false" aria-controls="pricing-collapse-data-source">
+                      データソース
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-data-source" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-data-source" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">メインデータソース：MySQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">メインデータソース：PostgreSQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">メインデータソース：MariaDB</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：MySQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：PostgreSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：MariaDB</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：MSSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：Rest API</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：Oracle</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：ClickHouse</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">外部データソース：Doris</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-permissions">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-permissions" aria-expanded="false" aria-controls="pricing-collapse-permissions">
+                      ロールと権限
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-permissions" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-permissions" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">システム権限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">データソースのフィールド権限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ルート権限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI従業員の権限</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-ai-workers">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-ai-workers" aria-expanded="false" aria-controls="pricing-collapse-ai-workers">
+                      AI従業員
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-ai-workers" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-ai-workers" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">ビルトインのAI従業員</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI従業員を自由に拡張</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI従業員の開発システム</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">AI従業員が業務タスクを処理</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">主流LLMとの接続</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ツールとスキルの利用</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">RAGナレッジベースの利用</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-workflow">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-workflow" aria-expanded="false" aria-controls="pricing-collapse-workflow">
+                      ワークフロー
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-workflow" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-workflow" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">ワークフローエンジン<a href="https://v2.docs.nocobase.com/ja/workflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">トリガー：データテーブルイベント</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">トリガー：定時タスク</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">トリガー：操作前イベント</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">トリガー：操作後イベント</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">トリガー：カスタム操作イベント</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：LLM</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Condition</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Multi-conditions</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Loop</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Variable</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Parallel Branch</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：JSON Variable Mapping</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Delay</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：End Workflow</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Date Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：JSON Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Create Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Update Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Delete Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Query Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Aggregate Query</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：SQL Action</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Manual Handling</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：CC</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：HTTP Request</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：JavaScript</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Send Email</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Notification</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Response</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ノード：Response Message</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">承認<a href="https://v2.docs.nocobase.com/ja/workflow/triggers/approval" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">サブフロー<a href="https://v2.docs.nocobase.com/ja/workflow/nodes/subflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Webhook<a href="https://v2.docs.nocobase.com/ja/workflow/triggers/webhook" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-security">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-security" aria-expanded="false" aria-controls="pricing-collapse-security">
+                      セキュリティと認証
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-security" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-security" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">変数とシークレット<a href="https://v2.docs.nocobase.com/ja/ops-management/variables-and-secrets/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Tokenポリシー<a href="https://v2.docs.nocobase.com/ja/security/token-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">フィールドマスキング</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">フィールド暗号化<a href="https://v2.docs.nocobase.com/ja/data-sources/field-encryption" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">パスワードポリシー<a href="https://v2.docs.nocobase.com/ja/security/password-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ユーザーロックアウト<a href="https://v2.docs.nocobase.com/ja/security/password-policy/lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">自動バックアップ<a href="https://v2.docs.nocobase.com/ja/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">データ履歴<a href="https://v2.docs.nocobase.com/ja/record-history/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">SSO<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="OIDC, SAML, LDAP, CAS, DingTalk"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a><a href="https://v2.docs.nocobase.com/ja/integration/sso/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">API暗号化通信<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="データをHTTP通信中に暗号化します"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">IP制限<a href="https://v2.docs.nocobase.com/ja/security/ip-restriction/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">監査ログ<a href="https://v2.docs.nocobase.com/ja/security/audit-logger/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">二要素認証(2FA)<a href="https://v2.docs.nocobase.com/ja/auth-verification/2fa/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-other">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-other" aria-expanded="false" aria-controls="pricing-collapse-other">
+                      その他
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-other" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-other" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Excelインポート/エクスポート</td>
+                            <td>小規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり最大2,000行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>大規模<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="1回あたり数万行のインポート/エクスポート"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">プライベートファイルアクセス<a href="https://v2.docs.nocobase.com/ja/data-sources/file-manager/storage/s3-pro" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">手書き署名</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">テンプレート印刷<a href="https://v2.docs.nocobase.com/ja/template-print/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">メール連携<a href="https://v2.docs.nocobase.com/ja/email-manager/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="詳細情報"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-support">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-support" aria-expanded="false" aria-controls="pricing-collapse-support">
+                      サポート
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-support" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-support" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">コミュニティ版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">スタンダード版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">プロフェッショナル版</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">エンタープライズ版</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">コミュニティサポート</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">専属かつ迅速なバグ修正</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">専属の利用コンサルティング</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">専属の拡張開発コンサルティング</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">新機能に対する優先的な開発対応</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">電話サポート</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">リアルタイムチャットサポート</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">サポート有効期間</td>
+                            <td>-</td>
+                            <td>1年</td>
+                            <td>1年</td>
+                            <td>1年</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">コンサルティング工数(チケット数)<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="サポート期間中、バグ報告を除く一定数の利用相談を受けられます。超過分は別途購入可能です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>無制限</td>
+                            <td>無制限</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">開発支援工数(チケット数)<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="サポート期間中、NocoBaseコアチームがプラグイン開発や第三者システム連携などを支援します。超過分は別途購入可能です。"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">初回応答時間</td>
+                            <td>-</td>
+                            <td>24時間</td>
+                            <td>12時間</td>
+                            <td>4時間</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
