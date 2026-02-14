@@ -6,15 +6,15 @@ NocoBase 2.0 is a major upgrade focused on **building complex applications and s
 
 AI capabilities are now built into the core as a first-class citizen, with extensibility through the plugin system:
 
-- AI moved to the core with plugin-based extensibility
+- Integrated into the core with plugin-based extensibility
 - Upgraded and optimized LangChain dependencies for better stability and scalability
 - Simplified AI employee interaction flow, lowering configuration and usage barriers
 
 ![20260214075059](https://static-docs.nocobase.com/20260214075059.png)
 
-Reference:
+**Reference:**
 
-- [AI Employees](https://v2.docs.nocobase.com/en/ai-employees)
+- [AI Employees](https://v2.docs.nocobase.com/ai-employees)
 
 ### App Supervisor
 
@@ -24,53 +24,51 @@ The App Supervisor plugin provides **unified discovery, scheduling, and manageme
 - Shared memory mechanism for improved inter-instance collaboration
 - Multi-environment hybrid deployment for complex delivery requirements
 
-Shared Memory
+**Shared Memory**
 
 ![20260214075803](https://static-docs.nocobase.com/20260214075803.png)
 
-Multi-Environment Hybrid Deployment
+**Multi-Environment Hybrid Deployment**
 
 ![20260214075815](https://static-docs.nocobase.com/20260214075815.png)
 
-Reference:
+**Reference:**
 
-- [Multi-App Management](https://v2.docs.nocobase.com/en/multi-app/multi-app)
+- [Multi-App Management](https://v2.docs.nocobase.com/multi-app/multi-app)
 
 ### Sub-table (Inline Edit / Popup Edit)
 
-To meet different levels of complexity in related data editing, NocoBase offers two sub-table edit modes that can be chosen flexibly based on your scenario:
+To meet different levels of complexity in related data editing, NocoBase offers two sub-table edit modes:
 
 - **Sub-table (Inline Edit)**: Edit related data directly in the table for efficient operations, ideal for quick data entry and batch updates
 - **Sub-table (Popup Edit)**: Edit data via popup forms with support for more complex field types and validation logic, suitable for high-complexity scenarios
 
-Sub-table (Inline Edit)
+**Sub-table (Inline Edit)**
 
 ![20260214080224](https://static-docs.nocobase.com/20260214080224.png)
 
-Sub-table (Popup Edit)
+**Sub-table (Popup Edit)**
 
 ![20260214080233](https://static-docs.nocobase.com/20260214080233.png)
 
-Reference:
+**Reference:**
 
-- [Sub-table (Inline Edit)](https://v2.docs.nocobase.com/en/interface-builder/fields/specific/sub-table)
-- [Sub-table (Popup Edit)](https://v2.docs.nocobase.com/en/interface-builder/fields/specific/sub-table-popup)
+- [Sub-table (Inline Edit)](https://v2.docs.nocobase.com/interface-builder/fields/specific/sub-table)
+- [Sub-table (Popup Edit)](https://v2.docs.nocobase.com/interface-builder/fields/specific/sub-table-popup)
 
-### Field Assignment (New)
+### Field Assignment
 
-The new field assignment mechanism unifies and strengthens **initialization and write logic** for form data, significantly improving clarity and consistency:
+The new field assignment mechanism unifies and enhances **initialization and write logic** for form data, improving clarity and consistency:
 
-- **Unified** field assignment configuration entry, reducing the cognitive overhead of scattered configuration
+- **Unified** field assignment configuration entry, reducing the complexity of scattered configuration
 - Field assignment logic **no longer depends on field component type**, making data behavior more stable and predictable
-- Support for **field-level assignment on relation fields**, meeting complex association modeling needs
-- Both **default value** and **fixed value** assignment modes, covering initialization and forced write scenarios
+- Support for **field-level assignment on relation fields**, enabling complex relational data modeling
+- Both **default value** and **constant value** assignment modes, covering initialization and override scenarios
 - Legacy "field default value" is deprecated; please migrate to the new field assignment mechanism
 
 ![20260214080932](https://static-docs.nocobase.com/20260214080932.png)
 
-Reference:
-
-- Field Assignment (documentation coming soon)
+**Reference:** Field Assignment (documentation coming soon)
 
 ### Event Flow Execution Order
 
@@ -101,61 +99,65 @@ event:
 
 ![20260214081527](https://static-docs.nocobase.com/20260214081527.png)
 
-Reference:
+**Reference:**
 
-- [Event Flow](https://v2.docs.nocobase.com/en/interface-builder/event-flow)
+- [Event Flow](https://v2.docs.nocobase.com/interface-builder/event-flow)
 
-## 2.0 Adaptations
+## Features Adapted to 2.0
 
 ### Bulk Edit
 
 ![20260214083041](https://static-docs.nocobase.com/20260214083041.png)
 
-Reference:
+**Reference:**
 
-- [Bulk Edit](https://v2.docs.nocobase.com/en/interface-builder/actions/types/bulk-edit)
+- [Bulk Edit](https://v2.docs.nocobase.com/interface-builder/actions/types/bulk-edit)
 
 ### Duplicate
 
 ![20260214083146](https://static-docs.nocobase.com/20260214083146.png)
 
-Reference:
+**Reference:**
 
-- [Duplicate](https://v2.docs.nocobase.com/en/interface-builder/actions/types/duplicate)
+- [Duplicate](https://v2.docs.nocobase.com/interface-builder/actions/types/duplicate)
 
 ### Block Height
 
 ![20260214083319](https://static-docs.nocobase.com/20260214083319.png)
 
-Reference:
+**Reference:**
 
-- [Block Height](https://v2.docs.nocobase.com/en/interface-builder/blocks/block-settings/block-height)
+- [Block Height](https://v2.docs.nocobase.com/interface-builder/blocks/block-settings/block-height)
 
 ### Table Row Drag-and-Drop Sort
 
 ![20260214085152](https://static-docs.nocobase.com/20260214085152.png)
 
+**Reference:**
+
+- [Drag Sort](https://v2.docs.nocobase.com/interface-builder/blocks/block-settings/drag-sort)
+
 ### Data Loading Method
 
 ![20260214083433](https://static-docs.nocobase.com/20260214083433.png)
 
-Reference:
+**Reference:**
 
-- [Data Loading Method](https://v2.docs.nocobase.com/en/interface-builder/blocks/block-settings/data-loading-method)
+- [Data Loading Method](https://v2.docs.nocobase.com/interface-builder/blocks/block-settings/data-loading-method)
 
 ### Displaying Relation Fields in Forms
 
 ![20260214083517](https://static-docs.nocobase.com/20260214083517.png)
 
-Reference:
+**Reference:**
 
-- [Form](https://v2.docs.nocobase.com/en/interface-builder/blocks/data-blocks/form)
+- [Form](https://v2.docs.nocobase.com/interface-builder/blocks/data-blocks/form)
 
 ### Page (V2) Localization Support
 
 V2 pages now fully support localization across **pages, blocks, actions, and fields**.
 
-After enabling the localization plugin, the system automatically collects missing translation entries and displays them in the localization management list for unified maintenance.
+After enabling the localization plugin, the system automatically collects missing translation entries and displays them in the localization management list for centralized maintenance.
 
 In JS blocks, use `ctx.t()` to retrieve localized text with variable interpolation:
 
@@ -168,49 +170,40 @@ ctx.render(label);
 
 ### Approval 2.0
 
-Reference:
+**Reference:**
 
-- [Approval](https://v2.docs.nocobase.com/en/workflow/nodes/approval)
+- [Approval](https://v2.docs.nocobase.com/workflow/nodes/approval)
 
 ### CC (Carbon Copy) 2.0
 
-Reference:
+**Reference:**
 
-- [CC](https://v2.docs.nocobase.com/en/workflow/nodes/cc)
+- [CC](https://v2.docs.nocobase.com/workflow/nodes/cc)
 
-### Office File Preview
+## Not Yet Available in 2.0
 
-Reference:
-
-- [Office File Preview](https://v2.docs.nocobase.com/en/file-manager/file-preview/ms-office)
-
-## Not Yet Adapted
-
-The following features are not yet adapted in 2.0 and will be upgraded in future releases:
-
-| Feature | Current Alternative |
-| ------------------ | -------------- |
-| Custom Request | Workflow Request Node |
-| Browser Print | JS Action |
-| Step Form | JS Block |
-| Tree Filter Block | JS Block |
-| Calendar Block | JS Block |
-| Custom Variable | Event Flow |
-| Gantt Block | JS Block |
-| Kanban Block | JS Block |
-| Text Copy | Event Flow |
-| Table Column Settings | JS Action |
-| Style Linkage Rules | Event Flow |
-| Copy Text Shortcut | Event Flow |
-| QR Code Field | JS Field |
-| Scan to Input | Event Flow |
-| Embed NocoBase | — |
-| China Administrative Region Field | — |
-| Code Field | — |
-| Public Form | — |
-| Workflow Manual Node Todo | — |
-| After Submit Success | Event Flow |
-| Form Data Template | Event Flow |
+The following features are not yet available in 2.0 and will be upgraded in future releases:
 
 
-
+| Feature                           | Current Alternative   |
+| --------------------------------- | --------------------- |
+| Custom Request                    | Workflow Request Node |
+| Browser Print                     | JS Action             |
+| Multi-step Form                   | JS Block              |
+| Tree Filter Block                 | JS Block              |
+| Calendar Block                    | JS Block              |
+| Custom Variable                   | Event Flow            |
+| Gantt Block                       | JS Block              |
+| Kanban Block                      | JS Block              |
+| Text Copy                         | Event Flow            |
+| Column Settings                   | JS Action             |
+| Style Linkage Rule                | Event Flow            |
+| QR Code Field                     | JS Field              |
+| Scan to Input                     | Event Flow            |
+| Embed NocoBase                    | —                    |
+| China Administrative Region Field | —                    |
+| Code Field                        | —                    |
+| Public Form                       | —                    |
+| Workflow Manual Node Todo         | —                    |
+| After Successful Submission       | Event Flow            |
+| Data Template                     | Event Flow            |
