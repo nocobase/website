@@ -34,6 +34,10 @@ AI 能力正式下沉至内核，成为 NocoBase 的一等公民，支持通过�
 
 - [多应用管理](https://v2.docs.nocobase.com/cn/multi-app/multi-app)
 
+### 工作流画布编排能力增强
+
+支持拖拽节点调整顺序
+
 ### 子表格（行内编辑 / 弹窗编辑）
 
 为满足不同复杂度的关联数据编辑需求，NocoBase 提供两种子表格编辑模式，可按场景灵活选择：
@@ -164,15 +168,21 @@ ctx.render(label);
 
 ### 审批 2.0
 
-参考文档：
+新创建的审批工作流均以 2.0 的区块编排界面。1.x 已配置的仍支持继续使用，如 1.x 已配置的审批希望使用 2.0 的界面编排，需要选择 v2 版本重新配置界面，且配置后不能再还原到 1.x。
 
-- [审批](https://v2.docs.nocobase.com/cn/workflow/nodes/approval)
+#### 配置发起人的界面
+
+![image-ba3ann.png](https://static-docs.nocobase.com/image-ba3ann.png)
+
+#### 配置审批人的界面
+
+![image-dl448q.png](https://static-docs.nocobase.com/image-dl448q.png)
 
 ### 抄送 2.0
 
-参考文档：
+新创建的抄送节点，被抄送人的查看界面均以 2.0 的区块编排，1.x 已配置的仍支持继续使用，如 1.x 已配置的抄送希望使用 2.0 的界面编排，需要选择 v2 版本重新配置界面，且配置后不能再还原到 1.x。
 
-- [抄送](https://v2.docs.nocobase.com/cn/workflow/nodes/cc)
+![image-z26oib.png](https://static-docs.nocobase.com/image-z26oib.png)
 
 ## 尚未适配的功能
 
