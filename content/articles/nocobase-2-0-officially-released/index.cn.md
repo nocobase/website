@@ -174,12 +174,6 @@ ctx.render(label);
 
 - [抄送](https://v2.docs.nocobase.com/cn/workflow/nodes/cc)
 
-### Office 文件预览
-
-参考文档：
-
-- [Office 文件预览](https://v2.docs.nocobase.com/cn/file-manager/file-preview/ms-office)
-
 ## 尚未适配的功能
 
 以下功能模块尚未在 2.0 中完成适配，将在后续版本中逐步升级：
