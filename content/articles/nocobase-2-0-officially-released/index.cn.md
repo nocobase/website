@@ -36,7 +36,13 @@ AI 能力正式下沉至内核，成为 NocoBase 的一等公民，支持通过�
 
 ### 工作流画布编排能力增强
 
-支持拖拽节点调整顺序
+#### 支持拖拽节点调整顺序
+
+![image-8ajlez.png](https://static-docs.nocobase.com/image-8ajlez.png)
+
+#### 支持复制粘贴节点
+
+![image-nskgho.png](https://static-docs.nocobase.com/image-nskgho.png)
 
 ### 子表格（行内编辑 / 弹窗编辑）
 
