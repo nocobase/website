@@ -40,19 +40,19 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2024-06-17T09:13:21.997Z",
-    "updatedAt": "2024-06-17T09:13:21.997Z",
-    "id": 7,
-    "title": "WechatIMG2042",
-    "filename": "93986fa5daae8261448cda280ed8dede.jpg",
-    "extname": ".jpg",
-    "size": 720079,
-    "mimetype": "image/jpeg",
+    "createdAt": "2026-02-14T02:53:23.642Z",
+    "updatedAt": "2026-02-14T02:53:23.658Z",
+    "id": 2232,
+    "title": "大版本发布 (7)",
+    "filename": "大版本发布 (7)-0v21kw.png",
+    "extname": ".png",
+    "size": 149824,
+    "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "/storage/uploads/93986fa5daae8261448cda280ed8dede.jpg",
-    "preview": "/storage/uploads/93986fa5daae8261448cda280ed8dede.jpg",
-    "storageId": 1,
+    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(7)-0v21kw.png",
+    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(7)-0v21kw.png",
+    "storageId": 2,
     "createdById": 1,
     "updatedById": 1
   },
@@ -62,5 +62,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-02-14T02:26:38.575Z"
+  "updatedAt": "2026-02-14T02:53:34.358Z"
 }
