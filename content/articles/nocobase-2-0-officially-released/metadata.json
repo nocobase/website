@@ -5,7 +5,7 @@
   "title_ja": "NocoBase 2.0 发布",
   "description": "This release brings systematic improvements to AI capabilities, application architecture, data editing experience, and frontend event flow, along with full adaptation of V2 pages and core features.",
   "description_cn": "本次版本在 AI 能力、应用架构、数据编辑体验以及前端事件流等方面进行了系统性增强，同时全面推进 V2 页面与核心能力的适配。",
-  "description_ja": "NocoBase 2.0 发布",
+  "description_ja": "本リリースでは、AI 機能、アプリケーションアーキテクチャ、データ編集体験、フロントエンドイベントフローにわたって体系的な改善を行い、V2 ページとコア機能の全面的な適応を完了しました。",
   "slug": "nocobase-2-0-officially-released",
   "publishedAt": "2026-02-14T01:01:01.567Z",
   "status": "drafted",
@@ -62,5 +62,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-02-14T02:53:34.358Z"
+  "updatedAt": "2026-02-14T06:42:09.412Z"
 }
