@@ -36,6 +36,16 @@ The App Supervisor plugin provides **unified discovery, scheduling, and manageme
 
 - [Multi-App Management](https://v2.docs.nocobase.com/multi-app/multi-app)
 
+### Workflow Canvas Enhancement
+
+#### Drag-and-Drop Node Reordering
+
+![image-8ajlez.png](https://static-docs.nocobase.com/image-8ajlez.png)
+
+#### Copy and Paste Nodes
+
+![image-nskgho.png](https://static-docs.nocobase.com/image-nskgho.png)
+
 ### Sub-table (Inline Edit / Popup Edit)
 
 To meet different levels of complexity in related data editing, NocoBase offers two sub-table edit modes:
@@ -170,15 +180,21 @@ ctx.render(label);
 
 ### Approval 2.0
 
-**Reference:**
+All newly created approval workflows use the 2.0 block-based layout. Existing 1.x configurations remain supported. To switch a 1.x approval to the 2.0 layout, select the v2 version and reconfigure the interface. Note that once switched, it cannot be reverted to 1.x.
 
-- [Approval](https://v2.docs.nocobase.com/workflow/nodes/approval)
+#### Configure Initiator Interface
+
+![image-ba3ann.png](https://static-docs.nocobase.com/image-ba3ann.png)
+
+#### Configure Approver Interface
+
+![image-dl448q.png](https://static-docs.nocobase.com/image-dl448q.png)
 
 ### CC (Carbon Copy) 2.0
 
-**Reference:**
+All newly created CC nodes use the 2.0 block-based layout for the recipient's view. Existing 1.x configurations remain supported. To switch a 1.x CC to the 2.0 layout, select the v2 version and reconfigure the interface. Note that once switched, it cannot be reverted to 1.x.
 
-- [CC](https://v2.docs.nocobase.com/workflow/nodes/cc)
+![image-z26oib.png](https://static-docs.nocobase.com/image-z26oib.png)
 
 ## Not Yet Available in 2.0
 
@@ -198,6 +214,7 @@ The following features are not yet available in 2.0 and will be upgraded in futu
 | Text Copy                         | Event Flow            |
 | Column Settings                   | JS Action             |
 | Style Linkage Rule                | Event Flow            |
+| Copy Text Shortcut                | Event Flow            |
 | QR Code Field                     | JS Field              |
 | Scan to Input                     | Event Flow            |
 | Embed NocoBase                    | —                    |
