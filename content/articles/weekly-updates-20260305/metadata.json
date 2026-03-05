@@ -1,8 +1,8 @@
 {
   "id": 924,
-  "title": "Weekly Updates｜AI employees support searching built-in docs with multiple keywords and reading multiple documents in a single tool calling",
-  "title_cn": "本周更新｜AI 员工支持通过多个关键词检索内置文档，一次性读取多个文档",
-  "title_ja": "今週の更新｜AI 従業員は、複数のキーワードによる組み込みドキュメントの検索に対応し、複数のドキュメントを一度に読み込めます",
+  "title": "Weekly Updates｜AI Employees Now Support Searching Built-in Documents with Multiple Keywords",
+  "title_cn": "本周更新｜AI 员工支持通过多个关键词检索内置文档",
+  "title_ja": "今週の更新｜AI 従業員が複数のキーワードによる組み込みドキュメント検索に対応",
   "description": "This is a summary of NocoBase feature updates and improvements from February 27 to March 5, 2026.",
   "description_cn": "汇总了 2026.02.27-03.05 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.02.27〜03.05 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-03-05T04:50:29.646Z"
+  "updatedAt": "2026-03-05T05:21:20.876Z"
 }
