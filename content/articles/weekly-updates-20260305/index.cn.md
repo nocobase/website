@@ -80,7 +80,7 @@
 - **[AI 员工]** 修复 AI 对话消息中渲染了 0 的问题 ([#8723](https://github.com/nocobase/nocobase/pull/8723)) by @heziqiang
 - **[模板打印]** 修复未适配 ACL API 变更导致的报错问题 by @mytharcher
 - **[工作流：审批]** 在审批操作中过滤关系字段的值，以避免越权的数据操作 by @mytharcher
-- **[邮件管理]** 修复图片contentId格式解析 by @jiannx
+- **[邮件管理]** 修复图片 contentId 格式解析 by @jiannx
 
 ### [v2.0.6](https://www.nocobase.com/cn/blog/v2.0.6)
 
@@ -114,7 +114,7 @@
 - **[权限控制]** 设置 ACL 元数据时使用的数据库实例不正确 ([#8747](https://github.com/nocobase/nocobase/pull/8747)) by @2013xile
 - **[AI 员工]**
 
-  - 修复启用知识库后和AI员工对话报错问题 ([#8746](https://github.com/nocobase/nocobase/pull/8746)) by @cgyrock
+  - 修复启用知识库后和 AI 员工对话报错问题 ([#8746](https://github.com/nocobase/nocobase/pull/8746)) by @cgyrock
   - 修复 AI 数据源配置渲染异常 ([#8731](https://github.com/nocobase/nocobase/pull/8731)) by @cgyrock
 - **[前端流引擎]** 修复 SQL 删除报错 ([#8745](https://github.com/nocobase/nocobase/pull/8745)) by @chenos
 - **[工作流：自定义操作事件]** 修复自定义操作事件作为子流程被调用时卡住的问题 ([#8738](https://github.com/nocobase/nocobase/pull/8738)) by @mytharcher
