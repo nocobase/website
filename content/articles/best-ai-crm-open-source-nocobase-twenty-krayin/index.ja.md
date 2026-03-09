@@ -22,6 +22,14 @@ Salesforce の [2026年版「State of Sales」](https://www.salesforce.com/news/
 
 そこで今回は、GitHub 上で注目度の高い 3 つのオープンソース CRM、NocoBase、Twenty、Krayin CRM を取り上げます。製品構造、AI の統合度、実際の活用シーンという 3 つの観点から整理し、オープンソース AI CRM を比較・検討する際の参考になるようまとめました。
 
+---
+
+💬 NocoBase ブログへようこそ。NocoBase は、あらゆる種類のシステム、業務アプリケーション、社内ツールを構築できる、拡張性に優れた AI 搭載のノーコード／ローコード開発プラットフォームです。完全なセルフホストに対応し、プラグインベースの設計で、開発者にもやさしい構成になっています。→ [GitHub で NocoBase を見る](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 3つのオープンソース CRM 比較一覧
 
 
