@@ -20,7 +20,13 @@ Salesforce [2026《State of Sales》](https://www.salesforce.com/news/stories/st
 
 但是目前大多数商业 SaaS 的 AI 仍然运行在封闭架构之内，用户更多只能被动的使用系统预制的能力，难以真正参与智能能力的延展和调整。相比封闭式 SaaS，开源体系不仅提供现成能力，更提供了一个可编辑、可扩展、可自定义的空间，让 AI 能有机会真正嵌入业务流程，沉淀为企业自己的生产力资产。
 
-正因如此，我们选取了三款 GitHub 上关注度较高的开源 CRM 项目：NocoBase、Twenty、Krayin CRM**。**从产品结构、AI 集成深度和实际应用场景三个层面进行拆解，希望能为你在选择和评估开源 AI CRM 时提供一些参考。
+正因如此，我们选取了三款 GitHub 上关注度较高的开源 CRM 项目：NocoBase、Twenty、Krayin CRM。从产品结构、AI 集成深度和实际应用场景三个层面进行拆解，希望能为你在选择和评估开源 AI CRM 时提供一些参考。
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
 
 ## 三款开源 CRM 对比总览
 
