@@ -1,6 +1,6 @@
 {
   "id": 916,
-  "title": "NocoBase v2.1.0-alpha.7 :** Support searching built-in docs with multiple keywords and reading multiple documents in a single tool calling",
+  "title": "NocoBase v2.1.0-alpha.7 : Support searching built-in docs with multiple keywords and reading multiple documents in a single tool calling",
   "title_cn": "NocoBase v2.1.0-alpha.7：支持通过多个关键词检索内置文档，一次性读取多个文档",
   "title_ja": "NocoBase v2.1.0-alpha.7：複数のキーワードによる組み込みドキュメントの検索をサポートし、複数のドキュメントを一度に読み取ることが可能に",
   "description": "Release Note of v2.1.0-alpha.7",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-26T16:20:47.096Z"
+  "updatedAt": "2026-03-09T13:17:08.670Z"
 }
