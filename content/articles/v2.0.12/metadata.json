@@ -1,14 +1,14 @@
 {
   "id": 926,
-  "title": "NocoBase v2.0.12",
-  "title_cn": "NocoBase v2.0.12",
-  "title_ja": null,
+  "title": "NocoBase v2.0.12:Add lock for scheduled backing-up across cluster nodes ",
+  "title_cn": "NocoBase v2.0.12：为定时备份增加分布式锁，避免重复备份",
+  "title_ja": "NocoBase v2.0.12：重複バックアップを防ぐため、定期バックアップに分散ロックを追加 ",
   "description": "Release Note of v2.0.12",
   "description_cn": "v2.0.12 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.12 リリースノート",
   "slug": "v2.0.12",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-03-09T08:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-03-09T13:24:50.327Z",
+        "updatedAt": "2026-03-09T13:24:50.327Z",
+        "articles_id": 926,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-09T13:21:49.654Z",
+    "updatedAt": "2026-03-09T13:21:49.665Z",
+    "id": 2263,
+    "title": "main (5)",
+    "filename": "main (5)-fm9xmx.png",
+    "extname": ".png",
+    "size": 86445,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(5)-fm9xmx.png",
+    "preview": "https://static-docs.nocobase.com/main%20(5)-fm9xmx.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-09T03:07:55.790Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-09T13:24:50.298Z"
 }
