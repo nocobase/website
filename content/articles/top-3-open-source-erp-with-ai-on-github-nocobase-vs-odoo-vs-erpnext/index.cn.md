@@ -8,6 +8,12 @@
 
 这些问题其实也是很多企业在选择 ERP 时都会遇到的困惑。如果你正在为小型团队寻找合适的 ERP，我们之前也写过一篇针对[中小企业 ERP 选型](https://www.nocobase.com/cn/blog/best-erp-solutions-for-small-businesses)的整理。 随着开源生态的发展，GitHub 上已经涌现出不少成熟的 ERP 项目。此前我们也在[《10 个最受开发者喜爱的开源 ERP / CRM 项目（GitHub Star 榜单）》](https://www.nocobase.com/cn/blog/top-10-most-starred-open-source-erp-and-crm-on-github)中对这些项目做过整体盘点。不过真正实现深度 AI 集成的开源 ERP 仍然不多，多数系统仍依赖插件或二次开发实现 AI 能力。
 
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
 所以这篇文章，我们就来一起看看 GitHub 上 3 款在社区中讨论度较高、并且具备一定 AI 扩展能力或已开始集成 AI 功能的系统：
 
 * NocoBase
