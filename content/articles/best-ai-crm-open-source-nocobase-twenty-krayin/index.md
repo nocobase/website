@@ -22,6 +22,14 @@ At the same time, most commercial SaaS products still keep AI inside closed syst
 
 That is why we selected three popular open source CRM projects on GitHub, **NocoBase, Twenty, and Krayin CRM**. We compare them across product structure, depth of AI integration, and real-world use cases to help you better evaluate your options when choosing an open source AI CRM.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## Overall Comparison of Three Open Source CRMs
 
 
