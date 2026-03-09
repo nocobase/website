@@ -1,7 +1,7 @@
 {
   "id": 733,
   "title": "Inside: How an 8-Person Team Delivers at Enterprise Speed ",
-  "title_cn": " 8 人团队如何效率拉满？——创联云的开发方法论",
+  "title_cn": " 8 人团队如何效率拉满？创联云的开发方法论",
   "title_ja": "8人チームで実現するシステム効率——創聯雲の開発メソッド",
   "description": "This eight-person team has long served clients in the food inspection industry, completing three full projects in just two months — with half the usual manpower and no compromise on quality.",
   "description_cn": "一支 8 人的技术团队，常年服务于食品检测行业——两个月交付三个项目，项目投入人力减半，交付质量仍保持稳定。他们不靠加班，而靠方法论和工具，让效率成为体系。",
@@ -244,5 +244,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2025-10-27T05:19:54.543Z"
+  "updatedAt": "2026-03-09T02:21:16.006Z"
 }
