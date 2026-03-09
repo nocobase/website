@@ -10,6 +10,12 @@ These challenges are common for many organizations when selecting an ERP system.
 
 As the open source ecosystem continues to grow, a number of mature ERP projects have emerged on GitHub. We previously provided an overall overview in “[10 Most Developer Loved Open Source ERP and CRM Projects on GitHub](https://www.nocobase.com/en/blog/top-10-most-starred-open-source-erp-and-crm-on-github)”. However, open source ERPs with deep AI integration remain relatively limited, as most platforms still depend on plugins or custom development to introduce AI capabilities.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 In this article, we take a closer look at three ERP systems on GitHub that are widely discussed in the community and offer AI extensibility or early stage AI integration:
 
 * NocoBase
