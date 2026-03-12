@@ -1,4 +1,4 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
+📝 Note: This article was last updated on Mar. 12, 2026. We regularly update the information to ensure you have the latest insights! 😊
 
 ## Why RBAC Matters
 
