@@ -1,14 +1,14 @@
 {
   "id": 933,
-  "title": "Weekly Updates｜",
-  "title_cn": "本周更新｜",
-  "title_ja": "今週の更新｜",
+  "title": "Weekly Updates｜Update AI chatbox user prompt",
+  "title_cn": "本周更新｜更新 AI 对话用户提示词编辑",
+  "title_ja": "今週の更新｜AI 対話のユーザープロンプト編集機能を更新しました",
   "description": "This is a summary of NocoBase feature updates and improvements from March 6 to March 12, 2026.",
   "description_cn": "汇总了 2026.03.06-03.12 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.03.06-03.12 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260312",
   "publishedAt": "2026-03-12T03:52:26.383Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -92,12 +92,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-12T04:21:10.127Z",
+    "updatedAt": "2026-03-12T04:21:10.135Z",
+    "id": 2276,
+    "title": "每周汇总 (5)",
+    "filename": "每周汇总 (5)-3jvbq0.jpg",
+    "extname": ".jpg",
+    "size": 101534,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(5)-3jvbq0.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(5)-3jvbq0.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": true,
+  "hideOnBlog": false,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-12T03:54:50.613Z"
+  "updatedAt": "2026-03-12T04:25:44.950Z"
 }
