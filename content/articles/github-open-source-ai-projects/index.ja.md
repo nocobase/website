@@ -1,8 +1,10 @@
-2025年8月5日、**[OpenAI は2つのオープンソース大規模言語モデル（LLM）](https://openai.com/ja-JP/index/introducing-gpt-oss/)****gpt-oss-120b** と **gpt-oss-20b** を正式に公開しました。これは **GPT-2** 以来、OpenAI にとって初のオープンソース LLM のリリースです。
+2025年8月5日、[OpenAI は2つのオープンソース大規模言語モデル（LLM）](https://openai.com/ja-JP/index/introducing-gpt-oss/)**gpt-oss-120b** と **gpt-oss-20b** を正式に公開しました。これは **GPT-2** 以来、OpenAI にとって初のオープンソース LLM のリリースです。
 
 ![OpenAI released two open-source large language models](https://static-docs.nocobase.com/1-zowkui.png)
 
 オープンソースの言語モデルの陣営に、また新たな大型プレイヤーが加わりました。多くの開発者にとって、AIプロジェクトにおいてオープンソースは常に優先事項です。OpenAI の参加により、オープンソースの LLM 界隈はさらに勢いを増しています。
+
+✨2026年版のGitHub注目オープンソースAIプロジェクトまとめを公開しました。ぜひこちらからご覧ください：[https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026)
 
 この機会に、注目すべきオープンソースの AI プロジェクトを紹介します。
 
