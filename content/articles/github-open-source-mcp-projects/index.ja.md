@@ -2,6 +2,9 @@
 
 MCP（Model Context Protocol）という言葉が本格的に広く語られるようになったのは、2025 年初頭、特に AI ツール開発の界隈でした。3月には「 MCP は未来の標準プロトコルになり得るか？」という議論が盛り上がり、LangChain や LangGraph の主要メンバーが X 上で激しく討論。GitHub 上でも関連プロジェクトが次々と注目を集めました。
 
+✨2026年版のGitHub注目オープンソースAIプロジェクトまとめを公開しました。ぜひこちらからご覧ください：[https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026)
+
+
 ![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
 
 Image source: https://blog.langchain.com/mcp-fad-or-fixture/
