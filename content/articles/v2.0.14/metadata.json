@@ -1,14 +1,14 @@
 {
   "id": 929,
-  "title": "NocoBase v2.0.14",
-  "title_cn": "NocoBase v2.0.14",
-  "title_ja": null,
+  "title": "NocoBase v2.0.14: Improved migration checks, SQL download support, log formatting, and execution process visibility",
+  "title_cn": "NocoBase v2.0.14：优化迁移检查、迁移 SQL 下载、迁移日志格式及迁移执行过程的可视化体验",
+  "title_ja": "NocoBase v2.0.14：移行チェック、移行 SQL のダウンロード、移行ログ形式、および移行実行プロセスの可視化を改善",
   "description": "Release Note of v2.0.14",
   "description_cn": "v2.0.14 更新日志",
-  "description_ja": null,
+  "description_ja": " v2.0.14リリースノート",
   "slug": "v2.0.14",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-03-11T21:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-03-12T03:49:14.991Z",
+        "updatedAt": "2026-03-12T03:49:14.991Z",
+        "articles_id": 929,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-12T03:48:03.909Z",
+    "updatedAt": "2026-03-12T03:48:03.916Z",
+    "id": 2274,
+    "title": "main (7)",
+    "filename": "main (7)-iobxg1.png",
+    "extname": ".png",
+    "size": 86181,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(7)-iobxg1.png",
+    "preview": "https://static-docs.nocobase.com/main%20(7)-iobxg1.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-11T20:19:08.484Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-12T03:49:14.976Z"
 }
