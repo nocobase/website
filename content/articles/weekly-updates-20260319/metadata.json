@@ -1,14 +1,14 @@
 {
   "id": 941,
-  "title": "Weekly Updates｜",
-  "title_cn": "本周更新｜",
-  "title_ja": "今週の更新｜",
+  "title": "Weekly Updates｜Allows to add AI employees in popup of sub tables",
+  "title_cn": "本周更新｜支持在子表格弹窗中添加 AI 员工",
+  "title_ja": "今週の更新｜サブテーブルのポップアップ内で AI 従業員を追加できるように対応",
   "description": "This is a summary of NocoBase feature updates and improvements from March 13 to March 19, 2026.",
   "description_cn": "汇总了 2026.03.13-03.19 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.03.13-03.19 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260319",
   "publishedAt": "2026-03-19T02:42:05.755Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -92,12 +92,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-19T02:55:58.616Z",
+    "updatedAt": "2026-03-19T02:55:58.629Z",
+    "id": 2285,
+    "title": "每周汇总 (6)",
+    "filename": "每周汇总 (6)-yzkv20.jpg",
+    "extname": ".jpg",
+    "size": 101530,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(6)-yzkv20.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(6)-yzkv20.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "author": null,
+  "hideOnBlog": true,
+  "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-19T02:46:35.417Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-19T03:08:54.141Z"
 }
