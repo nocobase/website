@@ -1,14 +1,14 @@
 {
   "id": 947,
-  "title": "NocoBase v2.1.0-alpha.10",
-  "title_cn": "NocoBase v2.1.0-alpha.10",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-alpha.10: Scheduled cleanup of AI conversation checkpoint data",
+  "title_cn": "NocoBase v2.1.0-alpha.10：定时清除 AI 会话 Checkpoint 数据",
+  "title_ja": "NocoBase v2.1.0-alpha.10：AI 会話のチェックポイントデータを定期的に削除する機能を追加",
   "description": "Release Note of v2.1.0-alpha.10",
   "description_cn": "v2.1.0-alpha.10 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.0-alpha.10 リリースノート",
   "slug": "v2.1.0-alpha.10",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-03-20T09:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-03-20T17:51:37.414Z",
+        "updatedAt": "2026-03-20T17:51:37.414Z",
+        "articles_id": 947,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-20T17:47:51.901Z",
+    "updatedAt": "2026-03-20T17:47:51.906Z",
+    "id": 2293,
+    "title": "develop (9)",
+    "filename": "develop (9)-8crlam.jpg",
+    "extname": ".jpg",
+    "size": 80814,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(9)-8crlam.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(9)-8crlam.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-20T09:00:25.626Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-20T17:51:37.401Z"
 }
