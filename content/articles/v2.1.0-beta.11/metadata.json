@@ -1,14 +1,14 @@
 {
   "id": 946,
-  "title": "NocoBase v2.1.0-beta.11",
-  "title_cn": "NocoBase v2.1.0-beta.11",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-beta.11: Add filter executions list",
+  "title_cn": "NocoBase v2.1.0-beta.11：为执行记录列表增加筛选功能",
+  "title_ja": "NocoBase v2.1.0-beta.11：実行記録一覧にフィルタ機能を追加",
   "description": "Release Note of v2.1.0-beta.11",
   "description_cn": "v2.1.0-beta.11 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.0-beta.11 リリースノート",
   "slug": "v2.1.0-beta.11",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-03-20T04:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-03-20T17:57:37.243Z",
+        "updatedAt": "2026-03-20T17:57:37.243Z",
+        "articles_id": 946,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-03-20T17:43:35.555Z",
+    "updatedAt": "2026-03-20T17:43:35.568Z",
+    "id": 2290,
+    "title": "next_ 需要确保文字都在虚线内 (15)",
+    "filename": "next_ 需要确保文字都在虚线内 (15)-go86mg.jpg",
+    "extname": ".jpg",
+    "size": 234989,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(15)-go86mg.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(15)-go86mg.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-20T08:03:45.440Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-20T17:57:37.229Z"
 }
