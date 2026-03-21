@@ -3,12 +3,12 @@
   "title": "Open Source Project Management Tool Selection Guide, 2026 Edition",
   "title_cn": "开源项目管理工具选型指南（2026年最新）",
   "title_ja": "オープンソースのプロジェクト管理ツール比較・選定ガイド（2026年最新版）",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "A Complete Guide to Open Source Project Management Tools in 2026, covering OpenProject, Plane, NocoBase, and more, with a focus on AI, selection criteria, and best fit scenarios.",
+  "description_cn": "2026 开源项目管理工具全解析，覆盖 OpenProject、Plane、NocoBase 等，聚焦 AI、选型逻辑与使用场景。",
+  "description_ja": "2026年版のオープンソースプロジェクト管理ツールを徹底解説。OpenProject、Plane、NocoBase などを幅広く取り上げ、AIの動向、選び方、活用シーンに注目します。",
   "slug": "open-source-project-management-tool-selection-guide-2026-edition",
   "publishedAt": "2026-03-20T18:10:12.512Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -453,5 +453,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-21T14:38:14.047Z"
+  "updatedAt": "2026-03-21T15:03:10.742Z"
 }
