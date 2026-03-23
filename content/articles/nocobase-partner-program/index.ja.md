@@ -1,52 +1,52 @@
-The NocoBase Partner Program is now officially launched, open to software development companies, system integrators, IT consulting firms, and other teams with enterprise digital delivery capabilities worldwide. The program primarily supports two areas of collaboration: channel distribution and service delivery. As more and more customers build their business systems on NocoBase, market demand for implementation, custom development, and long-term service support continues to grow. The launch of the Partner Program is designed to systematically address this trend and foster a more stable, professional, and sustainable ecosystem of collaboration.
+NocoBase パートナープログラムを正式に開始しました。対象は、ソフトウェア開発会社、システムインテグレーター、IT コンサルティング企業など、企業のデジタル化支援を担える世界中のチームです。現在は主に、チャネル販売と導入支援の 2 つのパートナー形態を中心に展開しています。NocoBase を活用して業務システムを構築する企業が増えるなか、導入支援、カスタム開発、長期的な保守サポートに対する需要も高まり続けています。今回のパートナープログラムは、こうした流れにより体系的に対応し、安定的で専門性が高く、持続可能なエコシステム連携の仕組みを築くために立ち上げられました。
 
-[Apply Now](https://www.nocobase.com/en/partner)
+[今すぐ申し込む](https://www.nocobase.com/ja/partner)
 
-## Why We're Launching a Partner Program
+## なぜパートナープログラムを開始したのか
 
-As NocoBase continues to expand across different regions and industries, an increasing number of customers are seeking professional support for system development and project delivery—including requirements analysis, implementation and deployment, custom development, training, and ongoing maintenance.
+NocoBase の導入がさまざまな地域や業界で進むにつれ、システム構築やプロジェクト推進に関する専門的な支援を求めるお客様が増えています。たとえば、要件整理、導入・展開、カスタマイズ開発、トレーニング提供、運用保守などです。
 
-At the same time, the NocoBase team will continue to focus on product development and platform capabilities, and does not provide implementation services directly. Within this positioning, partners play a vital role in bridging customer needs and platform capabilities: on one hand, helping customers advance their projects more efficiently; on the other, expanding their own service capabilities and business opportunities through NocoBase.
+一方で、NocoBase チームは今後も製品開発とプラットフォーム機能の強化に注力し、導入支援そのものは直接提供しません。この方針のもと、パートナーはお客様のニーズと NocoBase の機能をつなぐ重要な存在になります。お客様のプロジェクト推進をよりスムーズに支援できるだけでなく、パートナー自身も NocoBase を軸にサービス提供の幅を広げ、新たな事業機会を生み出すことができます。
 
-The launch of the Partner Program is intended to formalize this collaborative relationship and lay the foundation for long-term ecosystem development.
+このプログラムは、そうした協業関係をより明確な仕組みとして整え、今後のエコシステムづくりの基盤とするためのものです。
 
-Looking ahead, NocoBase will continue to advance its AI capabilities, progressively enabling the construction and operation of reliable business systems through AI. This will mark a key inflection point in the platform's evolution, opening up new service scenarios, solution opportunities, and business growth potential for partners. For teams looking to invest in this ecosystem for the long term, now is an important moment to get involved.
+今後のバージョン進化にあわせて、NocoBase は AI 分野での取り組みも継続的に進め、AI を活用して信頼性の高い業務システムを構築・運用できるよう、段階的に対応を広げていきます。これはプラットフォームにとって大きな転換点であると同時に、パートナーにとっても新たなサービス機会、ソリューション提案の余地、そして事業成長の可能性につながります。長期的にこのエコシステムに取り組みたいチームにとって、今はまさに参加の好機です。
 
-## Two Partnership Models
+## 2 つのパートナー形態
 
-At this stage, the NocoBase Partner Program includes two partnership models. Partners can choose to participate in one based on their capabilities and business direction, or pursue both simultaneously based on their situation.
+現在の NocoBase パートナープログラムには、主に 2 つの形態があります。各チームは、自社の強みや事業方針に応じていずれかを選ぶことも、状況に応じて両方に取り組むこともできます。
 
-### Channel Distribution
+### チャネル販売
 
-The channel distribution model is designed for teams with market development capabilities, customer resources, or industry connections. Partners can promote NocoBase products within target regions or vertical industries, connect with potential customers, facilitate commercial license purchases, and earn corresponding commission rebates.
+チャネル販売は、市場開拓力、顧客ネットワーク、業界との接点を持つチームに適した形態です。パートナーは対象地域や特定業界で NocoBase を提案し、見込み顧客との接点をつくり、商用ライセンスの成約を後押しすることで、所定の販売手数料を受け取ることができます。
 
-This model is suited for teams looking to collaborate around product promotion, customer conversion, and market coverage.
+製品の提案活動、顧客獲得、市場拡大を軸に取り組みたいチームに向いています。
 
-### Service Delivery
+### 導入支援
 
-The service delivery model is designed for teams with technical delivery capabilities and project implementation experience. Partners can provide professional services to customers based on NocoBase, including requirements analysis, solution design, system implementation, custom development, training, and technical support.
+導入支援は、技術力とプロジェクト実行経験を持つチームに適した形態です。パートナーは NocoBase を活用し、お客様に対して要件分析、提案設計、システム導入、カスタマイズ開発、トレーニング提供、技術サポートなどの専門サービスを提供できます。
 
-This model is suited for teams looking to collaborate around project delivery, industry solution development, and ongoing service capabilities.
+プロジェクトの実装、業界別ソリューションの構築、継続的な支援体制を強みにしたいチームに向いています。
 
-## Ideal Partner Profiles
+## どのようなパートナーに向いているか
 
-The NocoBase Partner Program is best suited for teams that are already familiar with NocoBase and possess real delivery capabilities. Generally, the following types of teams are a strong fit:
+NocoBase パートナープログラムは、すでに NocoBase に一定の理解があり、実務として導入・提供まで担えるチームに特に適しています。一般的には、以下のようなチームが参加に向いています。
 
-* Already familiar with NocoBase with relevant project experience
-* Capable of independently completing system implementation, custom development, or customer delivery
-* Have expansion capabilities within specific regions, industries, or customer segments
-* Committed to long-term collaboration rather than short-term transactions
+* NocoBase に精通しており、関連プロジェクトの実績がある
+* システム導入、カスタマイズ開発、顧客向け提供を独力で進められる
+* 特定の地域、業界、顧客層に対する営業・展開力がある
+* 短期的な取引ではなく、長期的な協業を重視している
 
-## Our Vision for the Partner Ecosystem
+## パートナーエコシステムの構築方針
 
-Through the Partner Program, NocoBase aims to gradually build a long-term, open, and sustainable partner ecosystem.
+NocoBase は、このパートナープログラムを通じて、長期的でオープンかつ持続可能なパートナーエコシステムを段階的に築いていきたいと考えています。
 
-The core objectives of this ecosystem include: enabling customers to access professional services and reliable delivery more conveniently; providing capable partners with clearer business opportunities; and ensuring that outstanding implementation experience, industry solutions, and extension outcomes are continuously accumulated within the ecosystem.
+このエコシステムの中心にあるのは、お客様が専門的な支援と信頼できる導入サービスをよりスムーズに受けられるようにすること、実力あるパートナーがより明確なビジネス機会を得られるようにすること、そして優れた導入ノウハウや業界別ソリューション、拡張成果を継続的に蓄積していくことです。
 
-The Partner Program is not just the launch of a collaboration framework—it is the beginning of long-term ecosystem development. Going forward, NocoBase will continue to advance the partner system across areas including partnership support, market collaboration, joint case studies, and ecosystem improvement, driving a long-term, stable value cycle among the platform, partners, and customers.
+パートナープログラムは、単なる協力制度の発表ではなく、長期的なエコシステム構築の出発点でもあります。今後、NocoBase はパートナー支援、市場連携、事例の共同創出、エコシステム整備を継続的に進め、プラットフォーム、パートナー、お客様のあいだに、安定した価値循環を築いていきます。
 
-## How to Apply
+## 申し込み方法
 
-We welcome qualified teams to join the NocoBase Partner Program.
+条件に合うチームの皆さまのご参加を歓迎します。
 
-For more information on partnership models, application requirements, and related details, please visit the [Become a Partner page](https://www.nocobase.com/en/partner).
+協業形態、申請条件、詳細については、[パートナー募集ページ](https://www.nocobase.com/ja/partner)をご覧ください。
