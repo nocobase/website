@@ -456,18 +456,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-03-11T14:28:22.207Z",
-    "updatedAt": "2026-03-11T14:28:22.223Z",
-    "id": 2264,
-    "title": "Frame 96 (1)",
-    "filename": "Frame 96 (1)-ub09gj.jpg",
+    "createdAt": "2026-03-23T09:02:23.131Z",
+    "updatedAt": "2026-03-23T09:02:23.139Z",
+    "id": 2297,
+    "title": "Frame 96",
+    "filename": "Frame 96-sw8vc8.jpg",
     "extname": ".jpg",
-    "size": 225336,
+    "size": 54422,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Frame%2096%20(1)-ub09gj.jpg",
-    "preview": "https://static-docs.nocobase.com/Frame%2096%20(1)-ub09gj.jpg",
+    "url": "https://static-docs.nocobase.com/Frame%2096-sw8vc8.jpg",
+    "preview": "https://static-docs.nocobase.com/Frame%2096-sw8vc8.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -478,5 +478,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-11T16:41:06.542Z"
+  "updatedAt": "2026-03-23T09:02:29.072Z"
 }
