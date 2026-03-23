@@ -2,10 +2,10 @@
   "id": 951,
   "title": "The NocoBase Partner Program Is Live",
   "title_cn": "NocoBase 合作伙伴计划正式发布",
-  "title_ja": "The NocoBase Partner Program Is Live",
+  "title_ja": "NocoBase パートナープログラムを正式ローンチ",
   "description": "Building a long-term, open, and sustainable partner ecosystem to more efficiently connect customer needs, platform capabilities, and professional services.",
   "description_cn": "建立长期、开放、可持续的合作伙伴生态，更高效地连接客户需求、平台能力与专业服务。",
-  "description_ja": "Building a long-term, open, and sustainable partner ecosystem to more efficiently connect customer needs, platform capabilities, and professional services.",
+  "description_ja": "長期的でオープンかつ持続可能なパートナーエコシステムを構築し、顧客ニーズ、プラットフォームの機能、専門サービスをより効率的につなげます",
   "slug": "nocobase-partner-program",
   "publishedAt": "2026-03-23T12:47:27.930Z",
   "status": "published",
@@ -61,6 +61,6 @@
   "author": "NocoBase Team",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-03-23T12:58:51.856Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-23T15:15:05.555Z"
 }
