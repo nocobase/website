@@ -1,11 +1,8 @@
 ---
-import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
+import { getPage } from "../../utils";
 
-const lastUpdatedAt = await getLastUpdatedAt("tasks");
-const data = await listTaskCategories();
 const page = await getPage("roadmap");
 const title = page.title;
 const description = page.description;
@@ -14,64 +11,122 @@ const keywords = page.keywords;
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    <!-- Updated on <FormattedDate date={lastUpdatedAt} /> -->
   </PageHeader>
 
-  <!-- Section Start -->
   <section class="section">
     <div class="container">
-      {
-        data
-          .filter((group) => group.tasks.length > 0)
-          .map((group) => (
-            <>
-              <h4 class="mt-2 pb-1 text-muted">{group.title}</h4>
-              <div class="row pb-4">
-                {group.tasks.map((task: any) => (
-                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                    <div class="card rounded shadow border-0 plugin-card">
-                      <div class="card-body">
-                        <div class="mt-2">
-                          <h6 title={task.title} class="card-title">
-                            {task.title}
-                          </h6>
-                          <p class="text-muted mb-2">{task.description}</p>
-                          {task.status && (
-                            <span
-                              class={
-                                "badge bg-soft-" +
-                                task.status.type +
-                                " plugin-type"
-                              }
-                            >
-                              {task.status.name}
-                            </span>
-                          )}
-                          {task.isNewPlugin && (
-                            <span class="badge bg-soft-danger plugin-type">
-                              New plugin
-                            </span>
-                          )}
-                          {task.isCommercial && (
-                            <span class="badge bg-soft-warning plugin-type">
-                              Commercial
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          ))
-      }
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body roadmap-body">
+              <h5>AI Employees Optimization <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Kernel-level AI extension interface</li>
+                <li>MCP integration support</li>
+                <li>Sub Agent support</li>
+              </ul>
+
+              <h5>NocoBase MCP & Skills <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Build complete NocoBase applications using local coding agents (Claude Code, Codex, OpenCode, etc.)</li>
+                <li>Connect to NocoBase for business processing via local agents (OpenClaw, etc.)</li>
+                <li>End-to-end AI workflow for local building, validation, and automated debugging</li>
+                <li>AI Worktree</li>
+              </ul>
+
+              <h5>IdP: OAuth <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Based on OAuth 2.1 and OpenID Connect, enabling NocoBase to act as an identity provider for SSO into other systems</li>
+              </ul>
+
+              <h5>New /v2/ Branch <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li><code>@nocobase/app</code> ships client-v2</li>
+                <li>Core package <code>@nocobase/client-v2</code></li>
+                <li>Each plugin provides a <code>/src/client-v2</code> directory</li>
+                <li>New <code>/v2/</code> route</li>
+              </ul>
+
+              <h5>Migration Management with Multi-Environment Merge & Release <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Rsbuild-Based Build System <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li><code>yarn dev</code> and <code>yarn dev:umi</code></li>
+              </ul>
+
+              <h5>Lazy Loading of Plugins <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Significantly improve initial load time for NocoBase applications</li>
+              </ul>
+
+              <h5>JS Item Action Support <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Multiple action presentation styles</li>
+              </ul>
+
+              <h5>Custom Request 2.0 <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Custom request buttons</li>
+                <li>Custom request support in workflow steps</li>
+              </ul>
+
+              <h5>NocoBase Embed 2.0 <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Configurable Button Colors <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Configurable Label Colors for Field Display Modes <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Custom Variables <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Tree Filter Block 2.0 <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Calendar Block 2.0 <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Kanban Block 2.0 <span class="badge bg-soft-primary">In Progress</span></h5>
+
+              <h5>Full Plugin Migration to client-v2 <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Each plugin provides and refines <code>/src/client-v2</code></li>
+              </ul>
+
+              <h5>UI Layout <span class="badge bg-soft-primary">In Progress</span></h5>
+              <ul>
+                <li>Freely create custom layouts beyond desktop and mobile</li>
+              </ul>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-</Layout><!--end section-->
+</Layout>
 
 <style>
-  .plugin-type {
-    margin-right: 5px;
+  .roadmap-body h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .roadmap-body h5:first-child {
+    margin-top: 0;
+  }
+
+  .roadmap-body ul {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .roadmap-body .badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+
+  .roadmap-body code {
+    font-size: 0.875em;
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
   }
 </style>

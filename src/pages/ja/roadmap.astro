@@ -1,11 +1,8 @@
 ---
-import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
+import { getPage } from "../../utils";
 
-const lastUpdatedAt = await getLastUpdatedAt("tasks");
-const data = await listTaskCategories();
 const page = await getPage("roadmap");
 const title = page.title_ja || page.title;
 const description = page.description_ja || page.description;
@@ -14,70 +11,122 @@ const keywords = page.keywords_ja || page.keywords;
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    更新日 <FormattedDate locale="ja" date={lastUpdatedAt} />
   </PageHeader>
 
-  <!-- Section Start -->
   <section class="section">
     <div class="container">
-      {
-        data
-          .filter((group) => group.tasks.length > 0)
-          .map((group) => (
-            <>
-              <h4 class="mt-2 pb-1 text-muted">
-                {group.title_ja || group.title}
-              </h4>
-              <div class="row pb-4">
-                {group.tasks.map((task: any) => (
-                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                    <div class="card rounded shadow border-0 plugin-card">
-                      <div class="card-body">
-                        <div class="mt-2">
-                          <h6 class="card-title">
-                            {task.title_ja || task.title}
-                          </h6>
-                          <p class="text-muted mb-2">
-                            {task.description_ja || task.description}
-                          </p>
-                          {task.status && (
-                            <span
-                              class={
-                                "badge bg-soft-" +
-                                task.status.type +
-                                " plugin-type"
-                              }
-                            >
-                              {task.status.name}
-                            </span>
-                          )}
-                          {task.isNewPlugin && (
-                            <span class="badge bg-soft-danger plugin-type">
-                              新しいプラグイン
-                            </span>
-                          )}
-                          {task.isCommercial && (
-                            <span class="badge bg-soft-warning plugin-type">
-                              商業用
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          ))
-      }
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body roadmap-body">
+              <h5>AIエンプロイー最適化 <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>カーネルレベルのAI拡張インターフェース</li>
+                <li>MCP連携のサポート</li>
+                <li>Sub Agentのサポート</li>
+              </ul>
+
+              <h5>NocoBase MCP & Skills <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>ローカルCoding Agent（Claude Code、Codex、OpenCode等）を使用して完全なNocoBaseアプリケーションを構築</li>
+                <li>ローカルAgent（OpenClaw等）を介してNocoBaseに接続し業務を処理</li>
+                <li>AIによるローカルでの構築・検証・自動デバッグのエンドツーエンドワークフロー</li>
+                <li>AI Worktree</li>
+              </ul>
+
+              <h5>IdP: OAuth <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>OAuth 2.1およびOpenID Connectプロトコルに基づき、NocoBaseをIDプロバイダーとして他のシステムへのSSOを実現</li>
+              </ul>
+
+              <h5>新しい /v2/ ブランチ <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li><code>@nocobase/app</code> がclient-v2を提供</li>
+                <li>コアパッケージ <code>@nocobase/client-v2</code></li>
+                <li>各プラグインが <code>/src/client-v2</code> ディレクトリを提供</li>
+                <li>新しいルート <code>/v2/</code> を追加</li>
+              </ul>
+
+              <h5>マイグレーション管理：複数開発環境のマージ＆リリース <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>Rsbuildベースのビルドシステム <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li><code>yarn dev</code> と <code>yarn dev:umi</code></li>
+              </ul>
+
+              <h5>プラグインの遅延読み込み <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>NocoBaseアプリケーションの初回読み込み速度を大幅に改善</li>
+              </ul>
+
+              <h5>JS Item Actionのサポート <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>複数のAction表示スタイルを提供</li>
+              </ul>
+
+              <h5>カスタムリクエスト 2.0 <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>カスタムリクエストボタン</li>
+                <li>ワークフローステップでのカスタムリクエスト対応</li>
+              </ul>
+
+              <h5>NocoBase埋め込み 2.0 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>ボタン色の設定 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>フィールド表示モードのラベル色設定 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>カスタム変数 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>ツリーフィルターブロック 2.0 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>カレンダーブロック 2.0 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>カンバンブロック 2.0 <span class="badge bg-soft-primary">進行中</span></h5>
+
+              <h5>全プラグインのclient-v2への移行 <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>各プラグインが <code>/src/client-v2</code> を提供・改善</li>
+              </ul>
+
+              <h5>UI Layout <span class="badge bg-soft-primary">進行中</span></h5>
+              <ul>
+                <li>デスクトップやモバイルに限定されない、自由なレイアウト作成が可能</li>
+              </ul>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-</Layout><!--end section-->
+</Layout>
 
 <style>
-  .plugin-type {
-    margin-right: 5px;
+  .roadmap-body h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .roadmap-body h5:first-child {
+    margin-top: 0;
+  }
+
+  .roadmap-body ul {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .roadmap-body .badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+
+  .roadmap-body code {
+    font-size: 0.875em;
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
   }
 </style>
-
-
