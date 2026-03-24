@@ -40,18 +40,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-03-23T12:55:51.762Z",
-    "updatedAt": "2026-03-23T12:55:51.771Z",
-    "id": 2299,
-    "title": "20260323-204702",
-    "filename": "20260323-204702-zwkqdd.png",
+    "createdAt": "2026-03-24T02:57:24.892Z",
+    "updatedAt": "2026-03-24T02:57:24.909Z",
+    "id": 2300,
+    "title": "20260324-105652",
+    "filename": "20260324-105652-eep0cq.png",
     "extname": ".png",
-    "size": 1450669,
+    "size": 371206,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/20260323-204702-zwkqdd.png",
-    "preview": "https://static-docs.nocobase.com/20260323-204702-zwkqdd.png",
+    "url": "https://static-docs.nocobase.com/20260324-105652-eep0cq.png",
+    "preview": "https://static-docs.nocobase.com/20260324-105652-eep0cq.png",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -62,5 +62,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-23T15:15:05.555Z"
+  "updatedAt": "2026-03-24T02:57:28.789Z"
 }
