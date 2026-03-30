@@ -24,7 +24,7 @@ PostgreSQL 只是常见选项之一，很多团队现有的数据库可能是 My
 
 我们选择了五个当下备受关注的无代码/低代码开发平台来进行分析，它们分别是：
 
-### **NocoBase**
+### NocoBase
 
 ![nocobase1.png](https://static-docs.nocobase.com/nocobase1-qzflkw.png)
 
@@ -34,9 +34,9 @@ PostgreSQL 只是常见选项之一，很多团队现有的数据库可能是 My
 
 GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
-数据源相关文档：https://docs.nocobase.com/data-sources/data-source-manager/
+数据源相关文档：[https://docs.nocobase.com/data-sources/data-source-manager/](https://docs.nocobase.com/data-sources/data-source-manager/)
 
-### **Retool**
+### Retool
 
 ![Retool1.png](https://static-docs.nocobase.com/Retool1-zn0fig.png)
 
@@ -48,7 +48,7 @@ GitHub：[https://github.com/retool](https://github.com/retool)
 
 数据源相关文档：[https://docs.retool.com/data-sources/](https://docs.retool.com/data-sources/)
 
-### **Appsmith**
+### Appsmith
 
 ![Appsmith1.png](https://static-docs.nocobase.com/Appsmith1-91mu10.png)
 
@@ -60,7 +60,7 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 数据源相关文档：[https://docs.appsmith.com/connect-data/overview](https://docs.appsmith.com/connect-data/overview)
 
-### **Budibase**
+### Budibase
 
 ![Budibase1.png](https://static-docs.nocobase.com/Budibase1-k89657.png)
 
@@ -173,7 +173,6 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 * **Retool、ToolJet、Appsmith** 这类平台的 AI 能力更偏向生成应用、生成查询或提升开发效率。
 * **Budibase** 更适合把 AI 放进业务页面和流程中实际使用。
-
 * **NocoBase** 既可以在搭建阶段借助 AI 降低配置门槛，也可以在后续业务页面和流程中继续使用 AI。
 
 ![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-nwiahc.png)
@@ -190,13 +189,16 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 **ToolJet** 可以把数据库、API 和第三方系统接成统一的工具层界面，优势在于多数据源连接下的企业内部工具构建；如果你的需求更偏多系统整合、运营后台或工具型应用，ToolJet 会是一个更直接的选择。其官网将自己定位为可快速构建企业级应用的平台。
 
+
 ## FAQ（常见问题）
 
-1. ### 如果我们更看重复杂业务关系，而不只是简单 CRUD，选型时该关注哪个平台？
-2. **NocoBase。**如果业务里有较多多表关系、关联对象、角色差异和业务动作，NocoBase 会更适合围绕数据模型继续搭建系统。
-3. ### 如果数据源不只一个，而是数据库和 API 混在一起，选型时最该看什么？
+1. ### 如果我们更看重复杂业务关系，而不只是简单 CRUD，选型时该关注哪个平台
 
-平台是否支持**多数据源并存，**能不能同时对接数据库和 API，页面和流程会不会因为数据源变多而变得难维护，以及后续新增数据源时是否容易继续接入。
+**NocoBase**。如果业务里有较多多表关系、关联对象、角色差异和业务动作，NocoBase 会更适合围绕数据模型继续搭建系统。
+
+2. ### 如果数据源不只一个，而是数据库和 API 混在一起，选型时最该看什么？
+
+平台是否支持**多数据源并存**，能不能同时对接数据库和 API，页面和流程会不会因为数据源变多而变得难维护，以及后续新增数据源时是否容易继续接入。
 
 3. ### 如果我们的数据库后面还会继续加字段、加表，甚至改关系，平台选型时该看什么？
 
@@ -204,7 +206,7 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 4. ### 如果现在只是想先做一个后台或内部工具，后面再慢慢补审批、工单和更多模块，应该怎么选？
 
-**Retool **更适合先把现有数据库接成一个工具层或操作层界面，用来快速搭后台、数据工具和内部应用。**NocoBase **则更适合后续继续增加流程、权限和模块。 如果一开始就判断这个项目后面会往更完整的业务系统方向发展，选型时更建议看 **NocoBase** 这类更适合承接业务结构的平台。
+**Retool** 更适合先把现有数据库接成一个工具层或操作层界面，用来快速搭后台、数据工具和内部应用。**NocoBase** 则更适合后续继续增加流程、权限和模块。 如果一开始就判断这个项目后面会往更完整的业务系统方向发展，选型时更建议看 **NocoBase** 这类更适合承接业务结构的平台。
 
 5. ### 如果我的需求主要是审批、请求处理、工单流转这类流程型应用，应该选什么？
 
@@ -212,7 +214,7 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 6. ### 我的团队本身会 JavaScript，也希望开发者主导页面和逻辑控制，适合选什么样的平台？
 
-如果团队本身具备一定前端或 JavaScript 能力，并希望开发者继续掌握页面、查询和交互逻辑，那么更适合看 **Appsmith、Retool **这类平台。 这类产品通常更适合在已有数据库和 API 之上，由开发者主导去搭内部工具、操作台和定制页面。
+如果团队本身具备一定前端或 JavaScript 能力，并希望开发者继续掌握页面、查询和交互逻辑，那么更适合看 **Appsmith、Retool** 这类平台。 这类产品通常更适合在已有数据库和 API 之上，由开发者主导去搭内部工具、操作台和定制页面。
 
 **你可以结合文中整理的官网、文档和数据源接入相关链接，进一步查看各个平台对你当前数据源的支持情况。在确认数据源能够顺利对接的基础上，再结合自身的业务流程、页面需求和后续扩展方向，选择更适合的平台进行搭建。**
 
