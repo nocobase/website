@@ -3,9 +3,9 @@
   "title": "Not Just PostgreSQL: Comparing 5 No-Code/Low-Code Platforms with External Database Support",
   "title_cn": "不只 PostgreSQL：5 个支持外部数据库的无代码/低代码平台对比",
   "title_ja": "PostgreSQL だけじゃない 外部データベース対応のノーコード／ローコードプラットフォーム 5 選 비교",
-  "description": "This article compares five low-code platforms: NocoBase, Retool, Appsmith, Budibase, and ToolJet. It analyzes data sources, business relationships, permissions, efficiency, and AI capabilities to clarify their strengths and applicable scenarios.\n",
-  "description_cn": "本文对比 NocoBase、Retool、Appsmith、Budibase、ToolJet 五款低代码平台，从数据源、业务关系、流程权限、搭建效率、AI 能力展开分析，明确各平台适用场景与核心优势。\n",
-  "description_ja": "本稿では NocoBase、Retool、Appsmith、Budibase、ToolJet の 5 つのローコードプラットフォームを比較し、データソース、業務関係、権限、構築効率、AI 機能を分析し、各製品の特長と適用シナリオを明確にしています。\n",
+  "description": "This article compares five low-code platforms: NocoBase, Retool, Appsmith, Budibase, and ToolJet. It analyzes data sources, business relationships, permissions, efficiency, and AI capabilities to clarify their strengths and applicable scenarios.",
+  "description_cn": "本文对比 NocoBase、Retool、Appsmith、Budibase、ToolJet 五款低代码平台，从数据源、业务关系、流程权限、搭建效率、AI 能力展开分析，明确各平台适用场景与核心优势。",
+  "description_ja": "本稿では NocoBase、Retool、Appsmith、Budibase、ToolJet の 5 つのローコードプラットフォームを比較し、データソース、業務関係、権限、構築効率、AI 機能を分析し、各製品の特長と適用シナリオを明確にしています。",
   "slug": "5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api",
   "publishedAt": "2026-03-30T11:47:21.223Z",
   "status": "published",
@@ -686,5 +686,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-30T14:55:52.988Z"
+  "updatedAt": "2026-03-30T16:14:39.840Z"
 }
