@@ -30,9 +30,9 @@ PostgreSQL 只是常见选项之一，很多团队现有的数据库可能是 My
 
 以数据模型驱动的开源 AI 无代码/低代码平台，把复杂数据关系、权限、工作流和插件扩展一起纳入同一套系统底座，适合在现有数据基础上持续搭建企业级应用、内部工具和复杂业务系统。
 
-官网：[https://www.nocobase.com/](https://www.nocobase.com/?utm_source=chatgpt.com)
+官网：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase?utm_source=chatgpt.com)
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
 数据源相关文档：https://docs.nocobase.com/data-sources/data-source-manager/
 
@@ -42,9 +42,9 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 
 面向内部团队的操作台和数据工具，可以把数据库、API、工作流和前端组件迅速拼成可用的内部软件，适合管理后台、运营面板、数据处理工具这类内部软件交付场景。
 
-官网：[https://retool.com/](https://retool.com/?utm_source=chatgpt.com)
+官网：[https://retool.com/](https://retool.com/)
 
-GitHub：[https://github.com/retool](https://github.com/retool?utm_source=chatgpt.com)
+GitHub：[https://github.com/retool](https://github.com/retool)
 
 数据源相关文档：[https://docs.retool.com/data-sources/](https://docs.retool.com/data-sources/)
 
@@ -54,9 +54,9 @@ GitHub：[https://github.com/retool](https://github.com/retool?utm_source=chatgp
 
 偏向开发者友好的低代码前端层，能让工程团队在现有数据库、API 和脚本之上，更快做出 CRUD 应用、后台页面和定制化内部工具，而且保留较强的 JavaScript 和 Git 工作流控制感。
 
-官网：[https://www.appsmith.com/](https://www.appsmith.com/?utm_source=chatgpt.com)
+官网：[https://www.appsmith.com/](https://www.appsmith.com/)
 
-GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith?utm_source=chatgpt.com)
+GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithorg/appsmith)
 
 数据源相关文档：[https://docs.appsmith.com/connect-data/overview](https://docs.appsmith.com/connect-data/overview)
 
@@ -66,9 +66,9 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 擅长处理表单、审批、请求和流程驱动型应用，它的产品重心明显更靠近内部流程自动化这一侧，所以比较适合服务申请、工单流转、审批处理、数据收集这类流程先行的场景。
 
-官网：[https://budibase.com/](https://budibase.com/?utm_source=chatgpt.com)
+官网：[https://budibase.com/](https://budibase.com/)
 
-GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase?utm_source=chatgpt.com)
+GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budibase)
 
 数据源相关文档：[https://docs.budibase.com/docs/data-sources](https://docs.budibase.com/docs/data-sources)
 
@@ -78,9 +78,9 @@ GitHub：[https://github.com/Budibase/budibase](https://github.com/Budibase/budi
 
 一个强调多数据源接入 + 快速做企业内部工具的平台，它的连接面比较广，既能接数据库，也能接 API、SaaS 和云服务，适合需要把多套现有系统快速拼成一个统一操作界面的团队。
 
-官网：[https://www.tooljet.com/](https://www.tooljet.com/?utm_source=chatgpt.com)
+官网：[https://www.tooljet.com/](https://www.tooljet.com/)
 
-GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet?utm_source=chatgpt.com)
+GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 
 数据源相关文档：[https://docs.tooljet.com/docs/data-sources/overview/](https://docs.tooljet.com/docs/data-sources/overview/)
 
@@ -97,9 +97,9 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 **亮点总结**
 
-* Retool、Appsmith 和 ToolJet 是在现有数据库和 API 之上快速搭一层操作界面或工具层，把数据接进来、查出来、改起来
-* Budibase 在此基础上更靠近流程型应用
-* NocoBase 的切入点更靠近“以现有数据为底座继续搭系统”，在多数据源管理、跨源关联和继续建模上更有延展性
+* **Retool、Appsmith** 和 **ToolJet** 是在现有数据库和 API 之上快速搭一层操作界面或工具层，把数据接进来、查出来、改起来
+* **Budibase** 在此基础上更靠近流程型应用
+* **NocoBase** 的切入点更靠近“以现有数据为底座继续搭系统”，在多数据源管理、跨源关联和继续建模上更有延展性
 
 ![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-1y15os.png)
 
@@ -116,8 +116,8 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 **亮点总结**
 
-* 如果你的业务复杂，且希望在现有数据库基础上继续搭建 CRM、ERP、审批或工单这类完整业务系统，NocoBase 会更合适。
-* 如果你的需求更偏轻量，重点是快速做一个内部工具、运营后台或流程应用，那么 Retool 这类平台会更容易上手。
+* 如果你的业务复杂，且希望在现有数据库基础上继续搭建 CRM、ERP、审批或工单这类完整业务系统，**NocoBase** 会更合适。
+* 如果你的需求更偏轻量，重点是快速做一个内部工具、运营后台或流程应用，那么 **Retool** 这类平台会更容易上手。
   ![Retool2.png](https://static-docs.nocobase.com/Retool2-bn1u34.png)
 
 ## 三、业务页面搭建效率
@@ -153,8 +153,8 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 **亮点总结**
 
-* NocoBase 的插件机制非常强，更适合那些需要较高控制力和深度自定义能力的团队，在后续维护和持续扩展上也更有空间。
-* 开发者可以更深入参与 Appsmith 的页面和逻辑控制，后期持续迭代和定制化方面也比较很优秀。
+* **NocoBase** 的插件机制非常强，更适合那些需要较高控制力和深度自定义能力的团队，在后续维护和持续扩展上也更有空间。
+* 开发者可以更深入参与 **Appsmith** 的页面和逻辑控制，后期持续迭代和定制化方面也比较很优秀。
 
 ![Appsmith2.png](https://static-docs.nocobase.com/Appsmith2-hu5ul4.png)
 
@@ -171,17 +171,16 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 **亮点总结**
 
-**Retool、ToolJet、Appsmith** 这类平台的 AI 能力更偏向生成应用、生成查询或提升开发效率。
+* **Retool、ToolJet、Appsmith** 这类平台的 AI 能力更偏向生成应用、生成查询或提升开发效率。
+* **Budibase** 更适合把 AI 放进业务页面和流程中实际使用。
 
-**Budibase** 更适合把 AI 放进业务页面和流程中实际使用。
-
-**NocoBase** 既可以在搭建阶段借助 AI 降低配置门槛，也可以在后续业务页面和流程中继续使用 AI。
+* **NocoBase** 既可以在搭建阶段借助 AI 降低配置门槛，也可以在后续业务页面和流程中继续使用 AI。
 
 ![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-nwiahc.png)
 
 ## 总结
 
-**NocoBase **作为一个以数据模型和插件机制为核心的平台，不仅支持多样的外部数据源，也更适合在现有数据库基础上继续搭建 CRM、ERP、审批、工单等更完整的业务系统，且后续计划逐步把 AI 能力接入到系统中；如果你拥有技术团队，并希望在现有数据基础上做更深度的控制和定制，NocoBase 会是更合适的选择。
+**NocoBase** 作为一个以数据模型和插件机制为核心的平台，不仅支持多样的外部数据源，也更适合在现有数据库基础上继续搭建 CRM、ERP、审批、工单等更完整的业务系统，且后续计划逐步把 AI 能力接入到系统中；如果你拥有技术团队，并希望在现有数据基础上做更深度的控制和定制，NocoBase 会是更合适的选择。
 
 **Retool** 适合把数据库、API 和工作流快速接成一个内部操作层，优势在于内部软件、运营后台和数据工具的交付效率；如果你的重点是快速做出一个可用的内部系统，并且团队本身具备一定开发能力，Retool 会更顺手。 Retool 官网也强调其可将数据、系统和规则连接起来，用于构建内部软件，并支持数据库、API、工作流与版本控制。
 
@@ -219,6 +218,7 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 
 相关阅读：
 
+* [开源项目管理工具选型指南（2026年最新）](https://www.nocobase.com/cn/blog/open-source-project-management-tool-selection-guide-2026-edition)
 * [如何用 PostgreSQL 构建一个自定义 CRM](https://www.nocobase.com/cn/blog/how-to-build-a-custom-crm-with-postgresql)
 * [2026 年值得关注的 20 个 GitHub AI 项目：不只有 OpenClaw](https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026)
 * [GitHub 上开源 CRM AI 能力深度拆解：NocoBase vs Twenty vs Krayin CRM](https://www.nocobase.com/cn/blog/best-ai-crm-open-source-nocobase-twenty-krayin)
@@ -226,4 +226,3 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 * [5 个 GitHub 上最受欢迎的开源 AI 项目管理工具](https://www.nocobase.com/cn/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
 * [6 个值得关注的开源 AI 工单系统](https://www.nocobase.com/cn/blog/6-best-open-source-ai-ticketing-systems)
 * [4 个值得关注的开源业务数据管理工具](https://www.nocobase.com/cn/blog/4-open-source-data-management-tools-for-business-systems)
-* [4个适合企业业务流程的轻量化软件（附真实案例）](https://www.nocobase.com/cn/blog/4-lightweight-enterprise-software-for-business-processes)
