@@ -1,4 +1,4 @@
-**保密说明**：为保护该组织的隐私和安全，本研究以匿名形式发布。下文所述的工作流程和成果真实反映了医疗器械行业中的实际应用情况。
+**保密说明**：为保护该组织的隐私和安全，本案例以匿名形式发布。下文所述的工作流程和成果真实反映了医疗器械行业中的实际应用情况。
 
 ---
 
@@ -32,7 +32,7 @@
 
 目前，他们先是完成了设备管理、IT 资产管理和验证记录管理三套内部系统的搭建。
 
-1. ### 设备管理：从台账管理到经验沉淀
+### 1. 设备管理：从台账管理到经验沉淀
 
 设备管理是最早落地的场景。过去，他们主要依赖 Excel 和纸质文档管理设备，维修记录、验收资料和相关文档分散，查找和追溯都不方便。
 
@@ -42,7 +42,7 @@
 
 除此之外，他们还进一步沉淀了“维修经验及分享”，把常见问题、易损件和处理经验留在系统里，减少对个人经验的依赖。
 
-2. ### IT 资产管理：覆盖入账、转移和盘点
+### 2. IT 资产管理：覆盖入账、转移和盘点
 
 第二个场景是 IT 资产管理。过去这部分工作同样依赖纸质方式，流程分散，资产状态和流转过程不够清晰。
 
@@ -54,7 +54,7 @@
 
 相比传统台账，这套系统的价值在于把资产从录入到流转的全过程放进了统一结构里，让后续管理更清楚，也更容易维护。
 
-3. ### 验证记录管理：支撑内部留存与追溯
+### 3. 验证记录管理：支撑内部留存与追溯
 
 第三个场景是验证记录管理，主要涉及设备、系统和工艺流程相关的记录。这部分工作的重点是文档收集和资料追溯，与设备管理有相似之处。
 
@@ -72,14 +72,13 @@
 
 对于企业应用来说，当下最重要的仍然是**企业级可靠性**。数字化的第一步是把混乱的流程管理起来，只有当底层底座足够稳固，AI 等先进能力才有机会在真实的业务中发挥实效。
 
-
 **更多 NocoBase 的用户故事：**
 
+* [石化行业软件公司用 NocoBase 把交付效率提升 70% ](https://www.nocobase.com/cn/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [社区用户分享：用 NocoBase 搭建可落地的 ERP](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
 * [8 人团队如何效率拉满？——创联云的开发方法论](https://www.nocobase.com/cn/blog/shenzhen-chuanglianyun-tech-development-methodology)
 * [华数传媒用 NocoBase 快速搭建 AI 多模态研发平台](https://www.nocobase.com/cn/blog/ai-multimodal-platform)
 * [俄罗斯合作伙伴 Mobx，用 NocoBase 交付多场景方案](https://www.nocobase.com/cn/blog/nocobase-in-russia)
 * [NocoBase 走进德国大学课堂](https://www.nocobase.com/cn/blog/university-course)
 * [NocoBase 如何成为 ED 的技术底座，支撑内部系统到商业化产品？](https://www.nocobase.com/cn/blog/ed)
 * [数十万条数据秒级响应——Classact 在 Kubernetes 上的 NocoBase 应用实践](https://www.nocobase.com/cn/blog/classact)
-* [年产量 18.5 亿，伯恩光学背后的数字敏捷工厂](https://www.nocobase.com/cn/blog/bielcrystal)
-* [卓正医疗如何用 NocoBase 搭建“家庭医生式”服务体系？](https://www.nocobase.com/cn/blog/distinct-healthcare)
