@@ -28,7 +28,7 @@ The team chose NocoBase to balance the control of custom software with the speed
 
 ## Key Implementation Details
 
-1. ### Equipment Management & Knowledge Base
+### 1. Equipment Management & Knowledge Base
 
 Previously, maintenance logs and acceptance documents were scattered across Excel files and physical folders.
 
@@ -38,7 +38,7 @@ Previously, maintenance logs and acceptance documents were scattered across Exce
 * **Workflow:** Every piece of hardware now has a digital twin containing its status, technical manuals, and historical maintenance records.
 * **Knowledge Retention:** They implemented a "Maintenance Wiki" within the system to document common faults and spare-part lifespans, transforming individual technician "know-how" into a searchable corporate asset.
 
-2. ### IT Asset Lifecycle Tracking
+### 2. IT Asset Lifecycle Tracking
 
 Managing hardware like computers and networking gear through paper trails led to frequent discrepancies during audits.
 
@@ -49,7 +49,7 @@ Managing hardware like computers and networking gear through paper trails led to
 * **Data Model:** A lifecycle-based model was implemented to track assets from **procurement (inbound)** to **assignment (transfer)** and **retirement**.
 * **Auditability:** By using NocoBase's built-in logging, the IT team can now perform digital inventories and verify the chain of custody for any asset in real-time.
 
-3. ### Validation Record Management (V&V)
+### 3. Validation Record Management (V&V)
 
 Verification and Validation (V&V) records for equipment and processes are critical in medical manufacturing.
 
@@ -74,14 +74,13 @@ Start by structuring **core operational data and workflows**, especially those s
 
 For enterprise applications, reliability at the data and system level remains the prerequisite. Only after that foundation is in place can more advanced capabilities, such as AI-driven automation, deliver meaningful impact.
 
-
 **More Customer Stories:**
 
+* [Software Vendor Boosts Delivery Efficiency by 70% with NocoBase](https://www.nocobase.com/en/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/en/blog/an-erp-built-with-nocobase)
 * [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/en/blog/shenzhen-chuanglianyun-tech-development-methodology)
 * [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/en/blog/ai-multimodal-platform)
 * [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/en/blog/nocobase-in-russia)
 * [NocoBase Enters German University Classrooms](https://www.nocobase.com/en/blog/university-course)
 * [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
 * [Sub-Second Response at Scale: Classact Runs NocoBase on Kubernetes](https://www.nocobase.com/en/blog/classact)
-* [BIEL Crystal’s Digital Factory: Powering 1.85 Billion Units a Year](https://www.nocobase.com/en/blog/bielcrystal)
-* [How Distinct HealthCare Uses NocoBase to Build a Personalized, Long-Term Care System](https://www.nocobase.com/en/blog/distinct-healthcare)
