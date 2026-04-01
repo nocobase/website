@@ -38,7 +38,7 @@
 * 運用：各設備に対して、状態、マニュアル、保守履歴を一元管理
 * ナレッジ活用：システム内にメンテナンスWikiを構築し、故障事例や部品寿命を蓄積。個人の経験を組織全体で共有・検索可能な知識へと転換
 
-2. ** IT資産ライフサイクル管理**
+2. **IT資産ライフサイクル管理**
 
 PCやネットワーク機器の管理を紙ベースで行っていたため、監査時に差異が発生していました。
 
@@ -74,15 +74,13 @@ PCやネットワーク機器の管理を紙ベースで行っていたため、
 
 エンタープライズシステムにおいては、まずデータと基盤の信頼性を確保することが重要です。その上で初めて、AIによる自動化などの高度な機能が実際の価値を生み出します。
 
-
 **もっと多くのカスタマーストーリー：**
 
 * [NocoBase 導入でソフトウェア企業の納品効率が 70% 向上](https://www.nocobase.com/ja/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [NocoBase で構築するノーコード ERP の実例 ](https://www.nocobase.com/ja/blog/an-erp-built-with-nocobase)
 * [8人チームで実現するシステム効率——創聯雲の開発メソッド](https://www.nocobase.com/ja/blog/shenzhen-chuanglianyun-tech-development-methodology)
 * [数日で完成したAIマルチモーダル開発基盤 — NocoBaseで実現](https://www.nocobase.com/ja/blog/ai-multimodal-platform)
 * [ロシアにおける NocoBase：多様な分野で広がるデジタルソリューション](https://www.nocobase.com/ja/blog/nocobase-in-russia)
 * [NocoBase、ドイツの大学の授業へ](https://www.nocobase.com/ja/blog/university-course)
 * [EDの技術基盤としてのNocoBase：内部システムから商用プロダクトまで](https://www.nocobase.com/ja/blog/ed)
 * [Classact の事例：Kubernetes 上の NocoBase で数十万件データを高速処理](https://www.nocobase.com/ja/blog/classact)
-* [BIELクリスタルのデジタル工場——年間18億5千万枚のガラスを支える力](https://www.nocobase.com/ja/blog/bielcrystal)
-* [NocoBase を活用し、個別・長期ケア体制を構築する Distinct HealthCare](https://www.nocobase.com/ja/blog/distinct-healthcare)
