@@ -1,6 +1,6 @@
 {
   "id": 964,
-  "title": "Weekly Updates｜add js variables to event flow",
+  "title": "Weekly Updates｜Add JS variables to event flow",
   "title_cn": "本周更新｜事件流添加 JS 变量",
   "title_ja": "今週の更新｜イベントフローに JS 変数を追加しました",
   "description": "This is a summary of NocoBase feature updates and improvements from March 27 to April 2, 2026.",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-02T03:21:06.702Z"
+  "updatedAt": "2026-04-02T03:21:40.961Z"
 }
