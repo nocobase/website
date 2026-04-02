@@ -88,7 +88,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Authentication]** fix acl to support custom state filtering parameters ([#8918](https://github.com/nocobase/nocobase/pull/8918)) by @jiannx
 - **[Email manager]** Fixed signature being overwritten when using templates by @jiannx
 
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
@@ -99,7 +98,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### 🎉 New Features
 
-- **[client]** add js variables to event flow ([#8938](https://github.com/nocobase/nocobase/pull/8938)) by @jiannx
+- **[client]** Add JS variables to event flow ([#8938](https://github.com/nocobase/nocobase/pull/8938)) by @jiannx
 
 ### 🚀 Improvements
 
