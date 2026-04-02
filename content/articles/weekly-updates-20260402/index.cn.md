@@ -89,7 +89,6 @@
 - **[用户认证]** 修复 acl 支持自定义 state 筛选参数 ([#8918](https://github.com/nocobase/nocobase/pull/8918)) by @jiannx
 - **[邮件管理]** 修复使用模板时覆盖了签名 by @jiannx
 
-
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
@@ -100,7 +99,7 @@
 
 ### 🎉 新特性
 
-- **[client]** 事件流添加 js 变量 ([#8938](https://github.com/nocobase/nocobase/pull/8938)) by @jiannx
+- **[client]** 事件流添加 JS 变量 ([#8938](https://github.com/nocobase/nocobase/pull/8938)) by @jiannx
 
 ### 🚀 优化
 
