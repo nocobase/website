@@ -2,13 +2,13 @@ Many companies do not start with formal systems for their internal processes.
 
 As we recently reviewed customer cases, we noticed a very common pattern. In the early stages of a business, or before internal systems are fully in place, many companies rely on Excel to manage customers, track orders, follow projects, handle approvals, and maintain inventory records.
 
-💡Read more: [How to Quickly Build a System to Replace Excel? (Complete Guide)](https://www.nocobase.com/cn/blog/how-to-quickly-build-a-real-system-to-replace-excel)
+💡Read more: [How to Quickly Build a System to Replace Excel? (Complete Guide)](https://www.nocobase.com/en/blog/how-to-quickly-build-a-real-system-to-replace-excel)
 
 But as more and more business data and workflow logic are pushed into spreadsheets, Excel’s limitations gradually become harder to ignore. Many spreadsheets that were originally used only for recordkeeping eventually begin to take on part of the role of CRM, ERP, ticketing, or project management tools.
 
 That is exactly why turning Excel-based workflows into web applications has become a practical need for more and more companies. Still, different approaches fit different business stages, involve different levels of implementation effort, and offer different levels of long-term flexibility. In the following sections, we will walk through several common approaches and look at which one may fit your current stage best.
 
-💡Featured case: [From Paper to Digital: How This Medical Manufacturer Chose NocoBase - NocoBase](https://www.nocobase.com/cn/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
+💡Featured case: [From Paper to Digital: How This Medical Manufacturer Chose NocoBase](https://www.nocobase.com/en/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
 
 **Before we get into the details, the table below gives a quick overview of the 4 approaches covered in this article.**
 
@@ -89,7 +89,7 @@ If this type of platform also includes native AI capabilities, it becomes even m
 * It is better suited to medium and long-term use, not to quickly building a temporary page
 * The software itself may not be the biggest cost. In many cases, the real cost comes from implementation, process design, migration, and ongoing maintenance
 
-🎉 [NocoBase 2.0 Tutorial](https://docs.nocobase.com/cn/tutorials/v2/) is now available. Using a ticketing system as an example, it shows how to build a complete business system from zero.
+🎉 [NocoBase 2.0 Tutorial](https://docs.nocobase.com/tutorials/v2/) is now available. Using a ticketing system as an example, it shows how to build a complete business system from zero.
 
 
 ## Method 2: Move data into an online data platform first, then gradually build applications
@@ -178,7 +178,7 @@ Typical tools in this category include Lovable, Bolt, and v0. These are better s
 * It is easy to create the interface and interaction first, but that does not mean the underlying structure is ready for long-term operation
 * If the product later needs to support complex permissions, cross-table relationships, database design, or long-term maintenance, it usually still needs to be redesigned
 
-💡Read more: [Comparison and Use Cases of 6 Development Tools with RBAC Support - NocoBase](https://www.nocobase.com/cn/blog/6-developer-tools-with-rbac-support)
+💡Read more: [Comparison and Use Cases of 6 Development Tools with RBAC Support ](https://www.nocobase.com/en/blog/6-developer-tools-with-rbac-support)
 
 * For many organizations, this approach is better suited to early exploration and validation than to serving directly as the final system form
 
@@ -198,7 +198,7 @@ Typical tools in this category include Microsoft Excel for the web, Google Sheet
 
 This article uses Google Sheets as the example. It is better suited to scenarios that do not yet require full system-level transformation, but already need better support for shared access and online collaboration. For teams that are already used to Excel, this approach requires almost no relearning and very little structural redesign, so the switching cost is lower.
 
-💡Read more: [The 8 Best Google Sheets Alternatives with Full Cost and Capability Analysis](https://www.nocobase.com/cn/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
+💡Read more: [The 8 Best Google Sheets Alternatives with Full Cost and Capability Analysis](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
 
 It can support online co-editing, shared links, comments, simple filtering, and basic access control. It is also a practical option for moving routine maintenance spreadsheets online so teams can continue collaborating more easily.
 
@@ -260,3 +260,16 @@ Once Excel starts handling multi-person collaboration, permission control, statu
 If the current goal is simply to organize data online and sort out the structure first, then **Airtable** or **Feishu Bitable** would usually be a better starting point.
 
 **Excel is still an effective tool for many teams in everyday work. But as business needs continue to grow, spreadsheets alone often become less able to support the full workflow. In that situation, introducing more suitable tools or systems is usually the more practical choice. We hope this article gives you a useful reference, and feel free to share it with others who are thinking about the same issue.**
+
+
+**Related reading:**
+
+* [Not Just PostgreSQL: Comparing 5 No-Code/Low-Code Platforms with External Database Support ](https://www.nocobase.com/en/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api)
+* [Open Source Project Management Tool Selection Guide, 2026 Edition ](https://www.nocobase.com/en/blog/open-source-project-management-tool-selection-guide-2026-edition)
+* [How to Build a Custom CRM with PostgreSQL](https://www.nocobase.com/en/blog/how-to-build-a-custom-crm-with-postgresql)
+* [Top 20 AI Projects on GitHub to Watch in 2026: Not Just OpenClaw](https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026)
+* [Best Open Source AI CRM: NocoBase vs Twenty vs Krayin](https://www.nocobase.com/en/blog/best-ai-crm-open-source-nocobase-twenty-krayin)
+* [Top 3 Open Source ERP with AI on GitHub: NocoBase vs Odoo vs ERPNext](https://www.nocobase.com/en/blog/top-3-open-source-erp-with-ai-on-github-nocobase-vs-odoo-vs-erpnext)
+* [5 Most Popular Open-Source AI Project Management Tools on GitHub](https://www.nocobase.com/en/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
+* [6 Best Open-Source AI Ticketing Systems](https://www.nocobase.com/en/blog/6-best-open-source-ai-ticketing-systems)
+* [4 Open Source Data Management Tools for Business Systems](https://www.nocobase.com/en/blog/4-open-source-data-management-tools-for-business-systems)
