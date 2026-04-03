@@ -259,3 +259,15 @@
 如果当前只是想先把数据整理到线上、把结构理顺，用 **Airtable** 或 **飞书多维表格** 会更合适。
 
 **Excel 依然是很多团队日常工作的有效载体，但当业务需求不断增加时，单靠表格很难继续承接完整流程，所以引入更合适的外部工具或系统通常会是更现实的选择。希望这篇文章能给你一些参考，也欢迎分享给同样在关注这个话题的朋友。**
+
+
+相关阅读：
+
+* [不只 PostgreSQL：5 个支持外部数据库的无代码/低代码平台对比](https://www.nocobase.com/cn/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api)
+* [开源项目管理工具选型指南（2026年最新）](https://www.nocobase.com/cn/blog/open-source-project-management-tool-selection-guide-2026-edition)
+* [如何用 PostgreSQL 构建一个自定义 CRM](https://www.nocobase.com/cn/blog/how-to-build-a-custom-crm-with-postgresql)
+* [2026 年值得关注的 20 个 GitHub AI 项目：不只有 OpenClaw](https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026)
+* [GitHub 上开源 CRM AI 能力深度拆解：NocoBase vs Twenty vs Krayin CRM](https://www.nocobase.com/cn/blog/best-ai-crm-open-source-nocobase-twenty-krayin)
+* [GitHub 上 3 款开源 AI ERP 对比：NocoBase、Odoo 与 ERPNext](https://www.nocobase.com/cn/blog/top-3-open-source-erp-with-ai-on-github-nocobase-vs-odoo-vs-erpnext)
+* [5 个 GitHub 上最受欢迎的开源 AI 项目管理工具](https://www.nocobase.com/cn/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
+* [6 个值得关注的开源 AI 工单系统](https://www.nocobase.com/cn/blog/6-best-open-source-ai-ticketing-systems)
