@@ -8,7 +8,7 @@
   "description_ja": "本記事では、Excel データを Web アプリへ発展させる 4 つの代表的な方法を比較し、それぞれが適した業務段階と利用上の限界を整理します。",
   "slug": "excel-to-web-app-4-methods",
   "publishedAt": "2026-04-03T07:20:50.171Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
@@ -299,12 +299,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-04-03T11:27:59.393Z",
+    "updatedAt": "2026-04-03T11:27:59.404Z",
+    "id": 2316,
+    "title": "Group 26",
+    "filename": "Group 26-acxcsm.png",
+    "extname": ".png",
+    "size": 146194,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Group%2026-acxcsm.png",
+    "preview": "https://static-docs.nocobase.com/Group%2026-acxcsm.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-03T10:20:59.050Z"
+  "updatedAt": "2026-04-03T11:33:18.755Z"
 }
