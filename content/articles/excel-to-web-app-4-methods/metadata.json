@@ -3,9 +3,9 @@
   "title": "4 Ways to Quickly Build Web Apps from Excel Data",
   "title_cn": "为 Excel 数据快速构建 Web 应用：4 种方法对比 ",
   "title_ja": "Excel データをすばやく Web アプリ化する 4 つの方法を比較",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "description": "This article compares four common ways to turn Excel data into web applications, and explains which business stage each approach fits best and where its limits appear.",
+  "description_cn": "本文围绕 4 种常见路径，比较企业如何将 Excel 数据逐步升级为 Web 应用，并分析它们各自适合的业务阶段与使用边界。",
+  "description_ja": "本記事では、Excel データを Web アプリへ発展させる 4 つの代表的な方法を比較し、それぞれが適した業務段階と利用上の限界を整理します。",
   "slug": "excel-to-web-app-4-methods",
   "publishedAt": "2026-04-03T07:20:50.171Z",
   "status": "drafted",
@@ -306,5 +306,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-03T09:21:38.719Z"
+  "updatedAt": "2026-04-03T10:20:59.050Z"
 }
