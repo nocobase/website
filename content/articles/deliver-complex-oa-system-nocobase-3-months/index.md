@@ -77,11 +77,11 @@ This replaced manual entry of approximately **1,400 financial records per month*
 
 The main challenge was not API integration itself, but structuring business logic.
 
-Using NocoBase’s data models and plugin architecture, the team transformed manual accounting rules into system-level logic, enabling stable end-to-end automation.
+Using NocoBase’s [data models](https://docs.nocobase.com/data-sources) and [plugin architecture](https://docs.nocobase.com/plugins/), the team transformed manual accounting rules into system-level logic, enabling stable end-to-end automation.
 
 ### 4. System Integration & Unified Identity
 
-To support future system expansion, the team first established a unified identity system:
+To support future system expansion, the team first established a unified [identity system](https://docs.nocobase.com/auth-verification/auth/):
 
 * integrated with existing authentication services
 * used NocoBase as the centralized user management layer
@@ -106,7 +106,7 @@ To maintain development efficiency, the team adopted a hybrid approach:
 
 Using NocoBase’s configuration migration mechanism, the system could be deployed as a whole without repeated redevelopment inside the isolated environment.
 
-This enabled **weekly or even faster iteration cycles**, despite strict security constraints.
+This enabled , [weekly or even faster iteration cycles](https://docs.nocobase.com/ops-management/migration-manager/)despite strict security constraints.
 
 ## Delivery Timeline
 
@@ -148,4 +148,16 @@ NocoBase provides the foundation that makes this possible.
 
 It allows experienced teams to deliver faster, adapt continuously, and evolve systems over time, even under strict constraints.
 
-The team plans to join the NocoBase partner ecosystem and replicate this delivery model across more enterprise projects.
+The team plans to join the  [NocoBase partner ecosystem](https://www.nocobase.com/en/partner) and replicate this delivery model across more enterprise projects.
+
+
+**More Customer Stories:**
+
+* [Case Study: Digitizing Medical Manufacturing Workflows with NocoBase](https://www.nocobase.com/en/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
+* [Software Vendor Boosts Delivery Efficiency by 70% with NocoBase](https://www.nocobase.com/en/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/en/blog/an-erp-built-with-nocobase)
+* [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/en/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/en/blog/ai-multimodal-platform)
+* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/en/blog/nocobase-in-russia)
+* [NocoBase Enters German University Classrooms](https://www.nocobase.com/en/blog/university-course)
+* [NocoBase as ED’s Technology Foundation: From Internal Systems to Commercial Products](https://www.nocobase.com/en/blog/ed)
