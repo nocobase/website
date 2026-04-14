@@ -64,11 +64,11 @@ NocoBaseの能力を 기반으로、チームは複雑なOAプロセスのシス
 
 このプロセスにより、財務担当者の毎月約1,400枚のドキュメントの手動入力が置き換えられました。
 
-**連携自体よりも、真の难点はビジネスロジックの構造化にあります**。チームはNocoBaseの[データモデル](https://docs.nocobase.com/cn/data-sources)と[プラグイン機構](https://docs.nocobase.com/cn/plugins)に基づいて、従来は手動判断に依存していた財務ルールをシステムルールに変換し、ビジネスドキュメントと財務処理の安定した接続を実現しました。
+**連携自体よりも、真の难点はビジネスロジックの構造化にあります**。チームはNocoBaseの[データモデル](https://docs.nocobase.com/cn/data-sources)と[プラグイン機構](https://docs.nocobase.com/ja/plugins)に基づいて、従来は手動判断に依存していた財務ルールをシステムルールに変換し、ビジネスドキュメントと財務処理の安定した接続を実現しました。
 
 ### 4. システム連携
 
-今後の追加ビジネスシステム接続を支えるため、チームはまず統一身份体系の統合を完了しました。[統一身份認証システム](https://docs.nocobase.com/cn/auth-verification/auth)と連携し、NocoBaseをユーザー管理センターとして統一的に新規ユーザーの追加、変更、削除を処理すると同時に、認証情報が各システム間で一貫であることを確保しました。
+今後の追加ビジネスシステム接続を支えるため、チームはまず統一身份体系の統合を完了しました。[統一身份認証システム](https://docs.nocobase.com/ja/auth-verification/auth)と連携し、NocoBaseをユーザー管理センターとして統一的に新規ユーザーの追加、変更、削除を処理すると同時に、認証情報が各システム間で一貫であることを確保しました。
 
 メッセージ協調において、チームは追加でプライベートIMプラットフォームをデプロイし、システム既存のメッセージ通知メカニズムを補足しました：
 
@@ -84,7 +84,7 @@ NocoBaseの能力を 기반으로、チームは複雑なOAプロセスのシス
 
 この「設定＝アプリケーション」方式により、隔離環境での繰り返し開発とデバッグのコストを回避でき、システムが厳格な安全制限下でも毎週、さらにはそれ以上の周期的イテレーション速度を維持できました。
 
-この能力はNocoBaseの[設定移行メカニズム](https://docs.nocobase.com/cn/ops-management/migration-manager/)に依存しており、チームも複雑な納品環境で安定したイテレーションリズムを維持できました。
+この能力はNocoBaseの[設定移行メカニズム](https://docs.nocobase.com/ja/ops-management/migration-manager/)に依存しており、チームも複雑な納品環境で安定したイテレーションリズムを維持できました。
 
 ## **納品時間が大幅に短縮**
 
@@ -120,4 +120,16 @@ NocoBase 2.0のプラグインアーキテクチャとAI能力に基づいて、
 
 そして、NocoBaseが提供するのは、まさにこのような可能性です：業界経験があり、複雑なプロジェクトを担当できるチームが、より効率的に計画を顧客先に落とし込み、継続的にビジネスの進化と智能化アップグレードをサポートできるようになります。
 
-次に、プロジェクトチームも[NocoBaseパートナープログラム](https://www.nocobase.com/cn/partner)に将进一步参加する取り組みを行い、この実践検証された納品方式をより多くの顧客プロジェクトに展開していく計画です。
+次に、プロジェクトチームも[NocoBaseパートナープログラム](https://www.nocobase.com/ja/partner)に将进一步参加する取り組みを行い、この実践検証された納品方式をより多くの顧客プロジェクトに展開していく計画です。
+
+
+**もっと多くのカスタマーストーリー：**
+
+* [NocoBaseによる医療機器製造ワークフローのデジタル化](https://www.nocobase.com/ja/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
+* [NocoBase 導入でソフトウェア企業の納品効率が 70% 向上](https://www.nocobase.com/ja/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [NocoBase で構築するノーコード ERP の実例 ](https://www.nocobase.com/ja/blog/an-erp-built-with-nocobase)
+* [8人チームで実現するシステム効率——創聯雲の開発メソッド](https://www.nocobase.com/ja/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [数日で完成したAIマルチモーダル開発基盤 — NocoBaseで実現](https://www.nocobase.com/ja/blog/ai-multimodal-platform)
+* [ロシアにおける NocoBase：多様な分野で広がるデジタルソリューション](https://www.nocobase.com/ja/blog/nocobase-in-russia)
+* [NocoBase、ドイツの大学の授業へ](https://www.nocobase.com/ja/blog/university-course)
+* [EDの技術基盤としてのNocoBase：内部システムから商用プロダクトまで](https://www.nocobase.com/ja/blog/ed)
