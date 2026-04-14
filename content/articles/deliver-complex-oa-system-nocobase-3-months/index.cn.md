@@ -121,3 +121,15 @@
 而 NocoBase 提供的，正是这样一种可能性：让有行业经验、有复杂项目能力的团队，可以更高效地把方案落到客户现场，并持续支撑后续的业务演进与智能化升级。
 
 接下来，项目团队也计划进一步加入 NocoBase 的[合作伙伴生态](https://www.nocobase.com/cn/partner)，将这套经过实践验证的交付方式，复制到更多客户项目中。
+
+
+更多 NocoBase 的用户故事：
+
+* [纸质到数字化：这家医疗制造企业选择 NocoBase](https://www.nocobase.com/cn/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
+* [石化行业软件公司用 NocoBase 把交付效率提升 70% ](https://www.nocobase.com/cn/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [社区用户分享：用 NocoBase 搭建可落地的 ERP](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
+* [8 人团队如何效率拉满？——创联云的开发方法论](https://www.nocobase.com/cn/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [华数传媒用 NocoBase 快速搭建 AI 多模态研发平台](https://www.nocobase.com/cn/blog/ai-multimodal-platform)
+* [俄罗斯合作伙伴 Mobx，用 NocoBase 交付多场景方案](https://www.nocobase.com/cn/blog/nocobase-in-russia)
+* [NocoBase 走进德国大学课堂](https://www.nocobase.com/cn/blog/university-course)
+* [NocoBase 如何成为 ED 的技术底座，支撑内部系统到商业化产品？](https://www.nocobase.com/cn/blog/ed)
