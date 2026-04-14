@@ -2,13 +2,13 @@
   "id": 979,
   "title": "How to Deliver a Complex OA System in 3 Months with NocoBase",
   "title_cn": "如何用 NocoBase 在 3 个月内交付复杂 OA 系统",
-  "title_ja": null,
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title_ja": "NocoBaseで3ヶ月以内に複雑なOAシステムを納品する方法",
+  "description": "A team delivered a complex OA system using NocoBase in just 3 months, covering finance, administration, and budget      management modules, achieving 75% time reduction while exploringtAI integration.",
+  "description_cn": "借助NocoBase，仅用3个月完成复杂OA系统交付，实现财务、行政、预算管理等全模块上线，压缩75%交付时间，并探索AI能力集成。",
+  "description_ja": "あるチームがNocoBaseを活用し、3ヶ月という短時間で複雑なOAシステムの納品を実現しました。財務、行政、予算管理などの全モ  ジュールをローンチし、交付時間を75%短縮するとともに、AI統合の探索も行っています。",
   "slug": "deliver-complex-oa-system-nocobase-3-months",
   "publishedAt": "2026-04-14T07:57:11.691Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -426,5 +426,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-14T08:48:55.661Z"
+  "updatedAt": "2026-04-14T10:55:35.499Z"
 }
