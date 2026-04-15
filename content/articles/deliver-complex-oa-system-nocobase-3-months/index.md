@@ -22,7 +22,7 @@ They chose **NocoBase**.
 
 ## Solution & Implementation
 
-### 6. Digitizing Administrative and Financial Workflows
+### 1. Digitizing Administrative and Financial Workflows
 
 The first phase focused on the most critical and frequently used scenarios: administrative and financial processes.
 
@@ -149,7 +149,6 @@ NocoBase provides the foundation that makes this possible.
 It allows experienced teams to deliver faster, adapt continuously, and evolve systems over time, even under strict constraints.
 
 The team plans to join the  [NocoBase partner ecosystem](https://www.nocobase.com/en/partner) and replicate this delivery model across more enterprise projects.
-
 
 **More Customer Stories:**
 
