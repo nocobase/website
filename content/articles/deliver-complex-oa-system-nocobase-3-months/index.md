@@ -8,6 +8,12 @@ The project was led by a team experienced in enterprise management systems and p
 
 Historically, they relied on traditional custom development. A project of similar scope would normally take nearly a year from requirement analysis to delivery.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 This time, the client introduced a set of non-negotiable constraints:
 
 * **Network Isolation**: The system had to run entirely within an internal network, physically disconnected from the internet
