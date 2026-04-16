@@ -21,6 +21,12 @@ Here are the 6 main dimensions we focused on in this evaluation of self hosted t
 * **Maintainability over time**: maintenance cost, upgrade complexity, plugin extensibility, and version compatibility
 * **AI readiness**: whether AI is built in and whether AI can be connected through APIs
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 We grouped the self hosted tools mentioned here into 5 categories based on common business scenarios, but these categories do not define hard product boundaries. Platforms like NocoBase are relatively easy to build with and highly flexible, so they are well suited to quickly supporting different business scenarios. That means they are not only internal business system platforms, but can also extend into CRM, ticketing, project management, and many other use cases. The table below gives a quick overview of the general scope of each category.
 
 
@@ -507,7 +513,6 @@ In many cases, yes. ERP and CRM are better suited to standardized business modul
 These needs are often better handled by internal app platforms such as **NocoBase** and **Appsmith**.
 
 I hope this article helps you sort through the options and gives you some practical reference. If people around you are also looking at tools like these, feel free to share it with them.
-
 
 **Related reading:**
 
