@@ -4,6 +4,12 @@ For many teams, Airtable is a natural next step. It is attractive for spreadshee
 
 With that in mind, [we also explained how common Airtable use cases can be handled in NocoBase](https://www.nocobase.com/ja/blog/nocobase-vs-airtable), giving teams that are exploring a more modular, system based, and self controlled approach another option to consider.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
 If you are still deciding how to move beyond Excel, the difference between Airtable and NocoBase is not just about features. It is also about the real cost of migration. Different goals lead to different workloads during implementation, and they also create very different long term cost structures.
 
 In the rest of this article, we look at migration cost from a more practical angle and compare what teams actually need to invest when moving from Excel to Airtable or NocoBase. Hopefully, this will give you a clearer reference when making your choice.
@@ -143,3 +149,14 @@ NocoBase is the better fit.
 Airtable's cost keeps rising as the number of editable collaborators increases. NocoBase uses a one time licensing model. Self hosting does bring maintenance costs, but the software licensing itself is more stable and better suited for long term use.
 
 Thanks for your interest in Airtable, NocoBase, and similar tools. If this was helpful, feel free to share it with others who are also comparing tools or planning a system migration.
+
+**Related reading:**
+
+* [4 Ways to Quickly Build Web Apps from Excel Data](https://www.nocobase.com/en/blog/excel-to-web-app-4-methods)
+* [Not Just PostgreSQL: Comparing 5 No-Code/Low-Code Platforms with External Database Support](https://www.nocobase.com/en/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api)
+* [Open Source Project Management Tool Selection Guide, 2026 Edition](https://www.nocobase.com/en/blog/open-source-project-management-tool-selection-guide-2026-edition)
+* [How to Build a Custom CRM with PostgreSQL](https://www.nocobase.com/en/blog/how-to-build-a-custom-crm-with-postgresql)
+* [Top 20 AI Projects on GitHub to Watch in 2026: Not Just OpenClaw](https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026)
+* [Best Open Source AI CRM: NocoBase vs Twenty vs Krayin](https://www.nocobase.com/en/blog/best-ai-crm-open-source-nocobase-twenty-krayin)
+* [Top 3 Open Source ERP with AI on GitHub: NocoBase vs Odoo vs ERPNext](https://www.nocobase.com/en/blog/top-3-open-source-erp-with-ai-on-github-nocobase-vs-odoo-vs-erpnext)
+* [5 Most Popular Open-Source AI Project Management Tools on GitHub](https://www.nocobase.com/en/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
