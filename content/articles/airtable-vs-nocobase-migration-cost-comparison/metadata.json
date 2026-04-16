@@ -8,7 +8,7 @@
   "description_ja": "本記事では、データ構造、ワークフロー、権限管理、導入方法、料金、長期的な拡張性という観点から、Airtable と NocoBase の移行コストと適した利用シーンを比較しています。",
   "slug": "airtable-vs-nocobase-migration-cost-comparison",
   "publishedAt": "2026-04-16T18:57:38.911Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -351,12 +351,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-04-16T19:56:02.379Z",
+    "updatedAt": "2026-04-16T19:56:02.399Z",
+    "id": 2333,
+    "title": "Frame 102",
+    "filename": "Frame 102-u1quan.png",
+    "extname": ".png",
+    "size": 332886,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%20102-u1quan.png",
+    "preview": "https://static-docs.nocobase.com/Frame%20102-u1quan.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-16T19:45:42.088Z"
+  "updatedAt": "2026-04-16T19:57:14.484Z"
 }
