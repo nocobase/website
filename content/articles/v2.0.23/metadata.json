@@ -1,0 +1,93 @@
+{
+  "id": 948,
+  "title": "NocoBase v2.0.23: Bug Fixes",
+  "title_cn": "NocoBase v2.0.23：缺陷修复",
+  "title_ja": "NocoBase v2.0.23：不具合修正",
+  "description": "Release Note of v2.0.23",
+  "description_cn": "v2.0.23 更新日志",
+  "description_ja": "v2.0.23 リリースノート",
+  "slug": "v2.0.23",
+  "publishedAt": "2026-03-20T00:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2026-03-20T16:23:29.180Z",
+        "updatedAt": "2026-03-20T16:23:29.180Z",
+        "tagId": 4,
+        "articleId": 948
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-03-20T17:46:37.266Z",
+        "updatedAt": "2026-03-20T17:46:37.266Z",
+        "articles_id": 948,
+        "tags_id": 116
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2026-03-20T17:44:38.315Z",
+    "updatedAt": "2026-03-20T17:44:38.325Z",
+    "id": 2291,
+    "title": "main (16)",
+    "filename": "main (16)-zkt98j.png",
+    "extname": ".png",
+    "size": 87947,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(16)-zkt98j.png",
+    "preview": "https://static-docs.nocobase.com/main%20(16)-zkt98j.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-20T17:46:37.250Z"
+}

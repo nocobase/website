@@ -1,0 +1,93 @@
+{
+  "id": 935,
+  "title": "NocoBase v2.1.0-beta.9: Fix the issue that system tables cannot be selected in custom rules",
+  "title_cn": "NocoBase v2.1.0-beta.9：修复系统表再自定义规则无法选中问题",
+  "title_ja": "NocoBase v2.1.0-beta.9：システムテーブルでカスタムルールを設定する際に選択できない問題を修正",
+  "description": "Release Note of v2.1.0-beta.9",
+  "description_cn": "v2.1.0-beta.9 更新日志",
+  "description_ja": "v2.1.0-beta.9 リリースノート",
+  "slug": "v2.1.0-beta.9",
+  "publishedAt": "2026-03-12T10:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-06-18T06:25:03.110Z",
+      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "id": 4,
+      "title": "Release Notes",
+      "title_cn": "发布日志",
+      "sort": 4,
+      "description": "Learn about the latest features, improvements, and bug fixes.",
+      "description_cn": "了解最新功能、改进和错误修复。",
+      "displayOnPage": true,
+      "slug": "release-notes",
+      "displayOnBlog": true,
+      "keywords": "NocoBase release notes, software updates, version releases, NocoBase updates, latest features, release announcements, product updates",
+      "keywords_cn": "NocoBase发布说明, 软件更新, 版本发布, NocoBase更新, 最新功能, 发布公告, 产品更新",
+      "title_ja": "リリースノート",
+      "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
+      "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2026-03-12T13:26:51.670Z",
+        "updatedAt": "2026-03-12T13:26:51.670Z",
+        "tagId": 4,
+        "articleId": 935
+      }
+    }
+  ],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-03-12T14:56:54.578Z",
+        "updatedAt": "2026-03-12T14:56:54.578Z",
+        "articles_id": 935,
+        "tags_id": 234
+      }
+    }
+  ],
+  "category": null,
+  "cover": {
+    "createdAt": "2026-03-12T14:55:16.318Z",
+    "updatedAt": "2026-03-12T14:55:16.324Z",
+    "id": 2278,
+    "title": "next_ 需要确保文字都在虚线内 (13)",
+    "filename": "next_ 需要确保文字都在虚线内 (13)-taraid.jpg",
+    "extname": ".jpg",
+    "size": 233603,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(13)-taraid.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(13)-taraid.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "nocobase [bot]",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2026-03-12T14:56:54.559Z"
+}

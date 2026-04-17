@@ -1,11 +1,8 @@
 ---
-import FormattedDate from "../../components/FormattedDate.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getLastUpdatedAt, getPage, listTaskCategories } from "../../utils";
+import { getPage } from "../../utils";
 
-const lastUpdatedAt = await getLastUpdatedAt("tasks");
-const data = await listTaskCategories();
 const page = await getPage("roadmap");
 const title = page.title_cn || page.title;
 const description = page.description_cn || page.description;
@@ -14,68 +11,125 @@ const keywords = page.keywords_cn || page.keywords;
 
 <Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description}>
-    <!-- 更新于<FormattedDate locale="zh-cn" date={lastUpdatedAt} /> -->
   </PageHeader>
 
-  <!-- Section Start -->
   <section class="section">
     <div class="container">
-      {
-        data
-          .filter((group) => group.tasks.length > 0)
-          .map((group) => (
-            <>
-              <h4 class="mt-2 pb-1 text-muted">
-                {group.title_cn || group.title}
-              </h4>
-              <div class="row pb-4">
-                {group.tasks.map((task: any) => (
-                  <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-                    <div class="card rounded shadow border-0 plugin-card">
-                      <div class="card-body">
-                        <div class="mt-2">
-                          <h6 class="card-title">
-                            {task.title_cn || task.title}
-                          </h6>
-                          <p class="text-muted mb-2">
-                            {task.description_cn || task.description}
-                          </p>
-                          {task.status && (
-                            <span
-                              class={
-                                "badge bg-soft-" +
-                                task.status.type +
-                                " plugin-type"
-                              }
-                            >
-                              {task.status.name}
-                            </span>
-                          )}
-                          {task.isNewPlugin && (
-                            <span class="badge bg-soft-danger plugin-type">
-                              New plugin
-                            </span>
-                          )}
-                          {task.isCommercial && (
-                            <span class="badge bg-soft-warning plugin-type">
-                              Commercial
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          ))
-      }
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body roadmap-body">
+              <h5>AI 员工优化 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>内核提供 AI 扩展接口</li>
+                <li>支持接入 MCP</li>
+                <li>工作流： AI 员工节点</li>
+                <li>支持 Sub Agent</li>
+              </ul>
+
+              <h5>NocoBase MCP & CLI & Skills <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>通过本地 Coding Agent（Claude Code、Codex、OpenCode 等）搭建完整 NocoBase 应用</li>
+                <li>通过本地 Agent（OpenClaw 等）连接 NocoBase 处理业务</li>
+                <li>AI 本地搭建、验证与自动化调试的闭环</li>
+                <li>AI Worktree</li>
+              </ul>
+
+              <h5>IdP: OAuth <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>基于 OAuth 2.1 和 OpenID Connect 协议，支持将 NocoBase 作为身份提供方登录其他系统</li>
+              </ul>
+
+              <h5>全新的 /v2/ 分支 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li><code>@nocobase/app</code> 提供 client-v2</li>
+                <li>内核 <code>@nocobase/client-v2</code></li>
+                <li>各插件提供 <code>/src/client-v2</code> 目录</li>
+                <li>路由新增 <code>/v2/</code></li>
+              </ul>
+
+              <h5>迁移管理支持多开发环境合并发布 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>使用 Rsbuild 构建 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li><code>yarn dev</code> 和 <code>yarn dev:umi</code></li>
+              </ul>
+
+              <h5>按需加载插件 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>大幅提升首次打开 NocoBase 应用的速度</li>
+              </ul>
+
+              <h5>支持 JS Item Action <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>提供不同形态的 Action</li>
+              </ul>
+
+              <h5>自定义请求 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>自定义请求按钮</li>
+                <li>事件流步骤支持自定义请求</li>
+              </ul>
+
+              <h5>NocoBase 嵌入 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>支持配置按钮颜色 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>字段显示模式支持配置标签颜色 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>中国行政区划字段 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>自定义变量 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>树筛选区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>日历区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>看板区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+
+              <h5>各插件全面迁移 client-v2 <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>各插件提供并完善 <code>/src/client-v2</code></li>
+              </ul>
+
+              <h5>UI Layout <span class="badge bg-soft-primary">进行中</span></h5>
+              <ul>
+                <li>支持自由创建各种 Layout，不局限于桌面端和移动端</li>
+              </ul>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
-</Layout><!--end section-->
+</Layout>
 
 <style>
-  .plugin-type {
-    margin-right: 5px;
+  .roadmap-body h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .roadmap-body h5:first-child {
+    margin-top: 0;
+  }
+
+  .roadmap-body ul {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .roadmap-body .badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+
+  .roadmap-body code {
+    font-size: 0.875em;
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
   }
 </style>

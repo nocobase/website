@@ -1,0 +1,181 @@
+我们之前写过一篇 [Excel 替代工具选型指南](https://www.nocobase.com/cn/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)，详细拆解了企业在不同业务复杂度和使用方式下，应该如何选择替代 Excel 的工具。
+
+Airtable 是很多团队常见的下一步选择，它在表格协作和轻量化管理上很有吸引力；但当业务开始变复杂，团队也常常会进一步关注系统化能力、模块化扩展和更高的自主控制空间。
+
+基于这个背景，[我们从 Airtable 用户常见的使用方式出发，讲解过一些典型操作在 NocoBase 里如何实现](https://www.nocobase.com/cn/blog/nocobase-vs-airtable)，帮助更多正在探索系统化、模块化、自主可控方向的团队，提供另一种选择。
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
+
+如果你现在还在考虑从 Excel 升级到新工具，那么 Airtable 和 NocoBase 之间的区别，就不只是看功能本身，还要看迁移过程中真正要投入的成本。目标不同，迁移时需要付出的工作内容，以及最终要承担的成本结构，也会明显不同。
+
+接下来，我们就从迁移成本的角度具体展开，看看团队从 Excel 迁移到 Airtable 和 NocoBase 时，真正要付出的成本分别有哪些，希望能给正在做选择的你一些参考。
+
+**想先快速抓住两款产品的核心差异？可以直接看下面这张表，先判断哪一种更接近你当前的需求。**
+
+
+| 如果你的情况是…               | 更适合 Airtable | 更适合 NocoBase |
+| ------------------------------ | --------------- | --------------- |
+| 只想先把 Excel 快速搬到线上    | ✓              |                 |
+| 重点是表格协作和信息整理       | ✓              |                 |
+| 需要复杂流程、审批和业务联动   |                 | ✓              |
+| 需要行级、字段级、数据范围权限 |                 | ✓              |
+| 团队人数会持续增加             |                 | ✓              |
+| 更看重长期总成本               |                 | ✓              |
+| 未来还要继续扩成内部系统       |                 | ✓              |
+| 想降低前期上线和部署压力       | ✓              |                 |
+
+## Airtable 和 NocoBase，迁移成本分析
+
+NocoBase 是一个开源、可自托管、AI 驱动的无代码/低代码平台，适合从 Excel 继续搭建 CRM、审批、工单、项目管理等企业内部系统。
+
+Airtable 是一个面向协作型应用的低代码平台，适合把 Excel 中的表格管理、信息整理和轻量流程快速在线化。
+
+> 相关链接
+>
+> NocoBase 官网：[www.nocobase.com](https://www.nocobase.com/?utm_source=chatgpt.com)
+>
+> NocoBase 文档：[https://docs.nocobase.com](https://docs.nocobase.com/)
+>
+> Airtable 官网：[www.airtable.com](https://www.airtable.com/?utm_source=chatgpt.com)
+>
+> Airtable 文档：[https://support.airtable.com/](https://support.airtable.com/)
+
+### 2.1 数据整理与结构重构成本
+
+**NocoBase**
+
+NocoBase 是数据模型驱动的平台，页面与数据结构解耦，因此数据整理、结构设计和界面搭建可以同步推进。主数据源既可以直接建表，也可以同步已有数据库表结构；后续无论是接入外部数据源，还是扩展新的业务对象，都不需要再重做一遍底层结构。
+
+NocoBase 的建模和搭建路径比较清晰，官网和文档信息也足够完整，因此借助 Agent 工具，用户可以先通过自然语言快速生成系统雏形，再在此基础上做确认和修改。前期整理、建模和初步搭建可以连续推进，时间成本更低。
+
+**Airtable**
+
+Airtable 更适合“先迁入、再整理”。Excel 和 CSV 可以直接导入新表或现有表；导入时可调整字段、表头和字段类型，现有表补数据也可以用 CSV 导入扩展做合并。
+
+结构更偏标准化。核心组织方式是库、表、字段、记录、视图；关联记录可以建立表间关系，视图适合在同一张表内做分组和整理。前期整理效率高，但随着业务关系变深，建模工作仍然要在这套既有框架内完成，适配成本会上升。
+
+### 2.2 **流程配置成本**
+
+**NocoBase**
+
+在流程配置上，核心就是 NocoBase 的**工作流能力**。它覆盖前置动作、后置动作、自定义动作、审批、Webhook、定时任务，以及条件分支、并行分支、子流程、人工节点和大语言模型节点。前期配置会更重，但复杂流程可以直接放进系统里处理，后期适配成本更低。。
+
+其工作流是直接绑定到具体业务动作上。新增、编辑、提交、审批这类节点可以进入同一条流程，适合审批、校验、拦截、人工处理这类系统型场景。
+
+![nocobase1.png](https://static-docs.nocobase.com/nocobase1-g4d5pk.png)
+
+**Airtable**
+
+Airtable 的流程配置以“触发器 + 动作”为核心，适合记录创建、字段更新、表单提交之后的通知、同步、写回、集成和脚本执行。前期配置成本更低，基础自动化流程落地更快。
+
+但它的流程逻辑仍然建立在现有表结构和自动化框架之内。常规流程足够顺手，流程一旦涉及更细的业务校验、审批链路或人工节点，适配空间就会受限。Airtable 的 AI 助手 Omni 可以直接帮助创建自动化流程，能进一步降低配置门槛，但不会改变这一层边界。
+
+![Airtable4-3vjb30.png](https://static-docs.nocobase.com/Airtable4-3vjb30.png)
+
+### 2.3 **权限与协作成本**
+
+**NocoBase**
+
+NocoBase 的权限体系更偏业务系统。角色、数据范围、字段权限可以放在同一套配置里处理，颗粒度可以下沉到行级、字段级。
+
+这类配置前期需要多花一点时间，边界一旦定清，后续加角色、加页面、加流程，都能沿着原有权限模型继续扩展。复杂协作场景里，前期配置成本更高，后续适配成本更低。
+
+![nocobase2.png](https://static-docs.nocobase.com/nocobase2-bm8z7a.png)
+
+**Airtable**
+
+Airtable 的权限结构更偏协作管理。工作区、资料库、界面这些层级的查看和编辑边界比较清晰，适合先把“谁能看、谁能改、谁能进入哪个界面”这件事快速理顺。
+
+这一套前期配置成本更低，多人协作启动更快。但是权限组织方式更接近协作平台本身；业务需求一旦继续细化，后续适配只能围绕既有的层级展开，不够灵活。
+
+![airtable2.png](https://static-docs.nocobase.com/airtable2-86g7c2.png)
+
+### 2.4 **部署、维护与定价成本**
+
+**NocoBase**
+
+NocoBase 的成本结构主要分成两部分：软件授权和自主运维。软件本身开源可用，商业授权采用一次性付费，不按用户数、应用数和数据量计费；标准版为 800 美元，专业版为 8,000 美元，都属于永久授权。部署侧需要团队自行负责，安装方式以 Docker 容器部署 为主，前期会有环境配置、版本升级和日常维护成本，但人数增长后，软件授权成本不会随之线性上升。
+
+![nocobase3.png](https://static-docs.nocobase.com/nocobase3-crf4tg.png)
+
+**Airtable**
+
+Airtable 的成本结构更简单，重点在持续订阅。自助方案按工作区计费，团队版年付为 20 美元/用户/月，商业版年付为 45 美元/用户/月；计费对象覆盖评论权限及以上的协作者。部署和基础设施不需要团队自己处理，前期上线和维护压力更低，但团队人数增加后，软件成本会随着席位持续增长。
+
+![airtable1.png](https://static-docs.nocobase.com/airtable1-tfesor.png)
+
+### 2.5 **长期调整与扩展成本**
+
+**NocoBase**
+
+NocoBase 的长期扩展能力主要来自插件架构。页面、区块、动作、接口、数据源都可以通过插件扩展，后续新增业务对象、补页面、接新能力，不需要反复推翻原有结构。对会持续迭代的内部系统来说，这种底层设计更适合长期扩展。
+
+长期调整的成本，则更多体现在日常重复性工作上。NocoBase 的 AI 员工已经内置在系统中，可以结合页面结构、数据行和表结构参与查询、分析、填写表单、业务协作这类操作；放到长期使用阶段，本质上是在减少重复整理、重复录入和重复配置的时间投入。
+
+![nocobase5-psudzu.png](https://static-docs.nocobase.com/nocobase5-psudzu.png)
+
+**Airtable**
+
+Airtable 的长期调整，主要围绕既有资料库和表结构展开。字段、关联记录、视图、界面和自动化流程可以支撑大多数日常修改，但调整路径基本都在原有框架内完成。
+
+但扩展方式仍然建立在这套既有框架上。业务复杂度继续上升时，前期省下来的配置成本，后面会逐步转化为结构适配和规则调整成本；尤其是对象关系变多、流程变深之后，要反复在原有结构里做适配。
+
+![Airtable5-3cp828.png](https://static-docs.nocobase.com/Airtable5-3cp828.png)
+
+## AI 能降低部分操作成本
+
+两种工具都可以借助 AI 提高建设效率，因为两者都有完善的文档和帮助页面，很多操作问题都可以先让 AI 做检索和步骤整理。对习惯使用 Agent 的团队来说，也可以直接借助 Claude Code 这类通用型 AI 工具参与 NocoBase 内的系统搭建。
+
+**NocoBase 的操作路径已不局限于手动配置或系统内建的 AI 能力。开发者可以直接借助 AI Agent，通过自然语言生成数据模型、页面布局和系统雏形。人工只需进入系统做最终的确认和微调即可。这种模式跳过了繁琐的初步搭建步骤，前期操作成本大幅降低。**
+
+![NocoBase6-vekfnp.png](https://static-docs.nocobase.com/NocoBase6-vekfnp.png)
+
+Airtable 在类似场景下，AI 更多是帮助用户理解和执行“字段改关联、再创建新表”这类手动操作指引。
+
+![airtable3.png](https://static-docs.nocobase.com/airtable3-fqwymz.png)
+
+## FAQ
+
+### 1.我现在只有一张很乱的 Excel，目标是先把协作跑起来，应该先选 Airtable 还是直接上 NocoBase？
+
+如果当前目标是**先上线、先协作、先把表格整理起来**，Airtable 会更直接。 如果你已经明确后面会走到**权限、流程、外部数据源和内部系统**，NocoBase 更适合直接按系统思路开始，避免后面再做一轮结构重建。
+
+### 2.我们有 20 到 50 个协作者，但不是每个人都需要编辑，Airtable 会不会越用越贵？
+
+会。Airtable 的计费核心是**按可编辑协作者席位收费**，只要对某个资料库有编辑权限，就会计入成本。 如果团队人数会持续增加，NocoBase 会更合适：**不按席位收费，商业授权一次性付费，长期总成本更容易控制。**
+
+### 3.我们希望销售只能看自己的客户，财务能看金额，运营不能看金额，哪个更合适？
+
+NocoBase 更适合。 NocoBase 的权限模型可以覆盖**行级、字段级和数据范围控制**，更贴近真实业务场景。
+
+### 4.我可以先用 Airtable，等流程复杂了再迁到 NocoBase 吗？
+
+可以，但前提是要接受**二次迁移**的成本。 如果一开始就能判断后面会走向更复杂的流程和系统，通常更建议直接用 NocoBase，一步到位。Airtable 能做的很多能力，NocoBase 同样可以覆盖。
+
+### 5.我对平台还不熟，能不能先用 AI 把操作步骤问清楚，再开始搭？
+
+可以。
+
+Airtable 的 AI 助手 Omni 可以帮助你建、改、查资料库，也能辅助创建自动化流程；NocoBase 的 AI 员工则已经进入系统搭建、数据分析和业务操作场景。对于新手来说，先借助 AI 理清操作路径，确实能降低上手成本。
+
+### 6.我们不想按人数持续付费，更看重长期总成本，选哪个？
+
+NocoBase 更合适。
+
+Airtable 的成本会随着可编辑协作者增加而持续上涨；NocoBase 采用一次性授权模式，自托管会带来运维成本，但软件授权本身更稳定，也更适合长期使用。
+
+感谢你对 Airtable 和 NocoBase 这两类产品的关注。如果你觉得有帮助，也欢迎分享给同样在做系统迁移或工具选型的朋友。
+
+相关阅读：
+
+* [为 Excel 数据快速构建 Web 应用：4 种方法对比 ](https://www.nocobase.com/cn/blog/excel-to-web-app-4-methods)
+* [不只 PostgreSQL：5 个支持外部数据库的无代码/低代码平台对比](https://www.nocobase.com/cn/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api)
+* [开源项目管理工具选型指南（2026年最新）](https://www.nocobase.com/cn/blog/open-source-project-management-tool-selection-guide-2026-edition)
+* [如何用 PostgreSQL 构建一个自定义 CRM](https://www.nocobase.com/cn/blog/how-to-build-a-custom-crm-with-postgresql)
+* [2026 年值得关注的 20 个 GitHub AI 项目：不只有 OpenClaw](https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026)
+* [GitHub 上开源 CRM AI 能力深度拆解：NocoBase vs Twenty vs Krayin CRM](https://www.nocobase.com/cn/blog/best-ai-crm-open-source-nocobase-twenty-krayin)
+* [GitHub 上 3 款开源 AI ERP 对比：NocoBase、Odoo 与 ERPNext](https://www.nocobase.com/cn/blog/top-3-open-source-erp-with-ai-on-github-nocobase-vs-odoo-vs-erpnext)

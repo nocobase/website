@@ -1,5 +1,7 @@
 📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
 
+✨2026年版のGitHub注目オープンソースAIプロジェクトまとめを公開しました。ぜひこちらからご覧ください：[https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/ja/blog/best-open-source-ai-projects-github-2026)
+
 約1か月前、[Hacker News](https://news.ycombinator.com/item?id=44450160)で大きな議論を呼んだ記事 [「Stop Building AI Agents」](https://decodingml.substack.com/p/stop-building-ai-agents) を目にしました。
 
 ![Stop Building AI Agents](https://static-docs.nocobase.com/1-472k2u.png)

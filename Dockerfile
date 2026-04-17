@@ -1,7 +1,9 @@
-FROM node:18.20.3-slim as builder
+FROM node:18.20.3-slim AS builder
 
-ENV SITE_APPDIR /site
-ENV USE_LOCAL_CONTENT true
+ENV SITE_APPDIR=/site
+ENV USE_LOCAL_CONTENT=true
+
+RUN corepack enable
 
 # RUN npm config set registry https://registry.npmmirror.com/
 
@@ -11,17 +13,19 @@ COPY ./content $SITE_APPDIR/content
 COPY ./astro.config.mjs $SITE_APPDIR/astro.config.mjs
 COPY ./tsconfig.json $SITE_APPDIR/tsconfig.json
 COPY ./package.json $SITE_APPDIR/package.json
+COPY ./yarn.lock $SITE_APPDIR/yarn.lock
+COPY ./.yarnrc.yml $SITE_APPDIR/.yarnrc.yml
 COPY ./pkg.mjs $SITE_APPDIR/pkg.mjs
 RUN cd $SITE_APPDIR && yarn install && yarn astro build
 RUN cd $SITE_APPDIR && node pkg.mjs
 RUN cd $SITE_APPDIR && rm -rf node_modules
-RUN cd $SITE_APPDIR && yarn install --production
+RUN cd $SITE_APPDIR && yarn workspaces focus --production
 
 FROM node:18.20.3-slim
 
-ENV SITE_APPDIR /site
-ENV SITE_PORT 4321
-ENV USE_LOCAL_CONTENT true
+ENV SITE_APPDIR=/site
+ENV SITE_PORT=4321
+ENV USE_LOCAL_CONTENT=true
 
 COPY --from=builder /site /site
 EXPOSE $SITE_PORT

@@ -4,6 +4,8 @@
 
 开源语言模型的阵营，又多了两个重量级新成员。开源本身就是很多开发者在 AI 项目中优先考虑的方向，而 OpenAI 的加入，无疑进一步壮大了开源大模型的阵营。
 
+✨2026 年最新版 GitHub 开源 AI 项目盘点，立即查看：[https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026)
+
 借此机会，我们也来聊聊开源 AI 项目。无论是接入大模型、构建代理系统，还是做多模态生成、知识问答，GitHub 上已有不少值得关注的开源项目。
 
 我们整理了 GitHub  上 Star 数排名前 20 的 [AI 项目](https://github.com/topics/ai)，按功能维度分类，供你参考使用。

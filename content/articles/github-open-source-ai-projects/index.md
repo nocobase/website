@@ -4,6 +4,8 @@ On August 5, 2025, [OpenAI released two open-source large language models](https
 
 The open-source LLM ecosystem has just gained two heavyweight members. For many developers, open-source has always been a priority when building AI projects. OpenAI’s participation undoubtedly strengthens the open-source movement even further.
 
+✨ Check out our updated 2026 roundup of open-source AI projects on GitHub: [https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026)
+
 Taking this opportunity, let’s explore some of the most noteworthy open-source AI projects. Whether you're integrating LLMs, building autonomous agents, working on multimodal generation, or developing knowledge-based Q&A systems—GitHub already offers a wealth of high-quality open-source options.
 
 We’ve compiled a list of the top 20 most-starred **[AI projects](https://github.com/topics/ai)** on GitHub, categorized by functionality, to help you navigate and choose the right tools.

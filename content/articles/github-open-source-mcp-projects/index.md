@@ -4,6 +4,8 @@ The term MCP truly gained widespread attention in early 2025, especially within 
 
 In March, a heated debate about “MCP - flash in the pan or future standard?” ignited the discussion. Core members from LangChain and LangGraph clashed intensely on X, and MCP-related projects on GitHub started trending one after another.
 
+✨ Check out our updated 2026 roundup of open-source AI projects on GitHub: [https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/en/blog/best-open-source-ai-projects-github-2026)
+
 ![MCP - flash in the pan or future standard?](https://static-docs.nocobase.com/1-n6gfmb.png)
 
 Image source: https://blog.langchain.com/mcp-fad-or-fixture/
