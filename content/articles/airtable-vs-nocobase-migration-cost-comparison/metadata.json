@@ -1,7 +1,7 @@
 {
   "id": 982,
-  "title": "Airtable vs NocoBase: The Real Cost of Migration",
-  "title_cn": "Airtable vs NocoBase 真实迁移成本",
+  "title": "Replace Excel with NocoBase or Airtable? A Cost-by-Cost Comparison",
+  "title_cn": "Airtable 与 NocoBase：从Excel迁移的真实成本对比",
   "title_ja": "Airtable vs NocoBase のリアルな移行コスト",
   "description": "This article compares the real migration costs of Airtable and NocoBase across data structure, workflows, permissions, deployment, pricing, and long term scalability, helping teams choose the right path when moving beyond Excel.",
   "description_cn": "本文围绕数据结构、流程、权限、部署定价与长期扩展，对比 Airtable 与 NocoBase 的迁移成本与适用场景。",
@@ -374,5 +374,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-16T19:57:14.484Z"
+  "updatedAt": "2026-04-17T04:50:06.455Z"
 }
