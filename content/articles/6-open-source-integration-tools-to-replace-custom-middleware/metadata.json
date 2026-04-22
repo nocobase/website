@@ -1,0 +1,23 @@
+{
+  "id": 990,
+  "title": "6 Best Open-Source Tools to Replace Custom Integration Middleware",
+  "title_cn": "告别自研中间件：6个开源系统集成工具推荐",
+  "title_ja": null,
+  "description": "Compare 6 open-source integration tools by deployment, connectivity, extensibility, and long-term cost to support tool selection.",
+  "description_cn": "本文对比6款可替代自研中间件的开源集成工具，从部署、连接、扩展与长期成本四个维度，帮助企业按场景完成选型。",
+  "description_ja": "本記事では、自社開発ミドルウェアの代替となる6つのオープンソース統合ツールを、導入方式、接続性、拡張性、長期コストの4つの観点から比較し、企業の選定を支援します。",
+  "slug": "6-open-source-integration-tools-to-replace-custom-middleware",
+  "publishedAt": "2026-04-20T12:10:06.290Z",
+  "status": "drafted",
+  "tags": [],
+  "sub_tags": [],
+  "category": null,
+  "cover": null,
+  "hideOnListPage": false,
+  "hideOnBlog": true,
+  "author": "Deng Lijia，Yuan Tianqi",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2026-04-22T08:49:25.019Z"
+}
