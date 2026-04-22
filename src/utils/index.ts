@@ -216,7 +216,6 @@ async function loadContent(
     en: 'index.md',
     cn: 'index.cn.md',
     ja: 'index.ja.md',
-    ru: 'index.ru.md',
     fr: 'index.fr.md'
   };
 
@@ -298,7 +297,7 @@ async function listContentItems(
 
       // Read content in different languages for articles
       if (contentType === 'articles') {
-        const languages = ['', '.cn', '.ja', '.ru', '.fr'];
+        const languages = ['', '.cn', '.ja', '.fr'];
         languages.forEach(lang => {
           const suffix = lang || '';
           const contentPath = path.join(contentDir, itemSlug, `index${suffix}.md`);
@@ -310,7 +309,7 @@ async function listContentItems(
         });
 
         // Fallback to default content
-        ['content_cn', 'content_ja', 'content_ru', 'content_fr'].forEach(field => {
+        ['content_cn', 'content_ja', 'content_fr'].forEach(field => {
           if (!metadata[field] && metadata.content) {
             metadata[field] = metadata.content;
           }
@@ -552,7 +551,6 @@ export async function getPluginsGrouped() {
       title: 'Newly Launched',
       title_cn: '最新发布',
       title_ja: '新着リリース',
-      title_ru: 'Недавно запущенные',
       title_fr: 'Nouveautés',
       plugins: newlyPlugins,
     });
@@ -564,7 +562,6 @@ export async function getPluginsGrouped() {
       title: 'Coming Soon',
       title_cn: '即将发布',
       title_ja: '近日公開',
-      title_ru: 'Скоро',
       title_fr: 'À venir',
       plugins: comingPlugins,
     });
@@ -595,7 +592,6 @@ function groupPluginsByCategory(plugins: any[]): any[] {
         title: cat.title,
         title_cn: cat.title_cn,
         title_ja: cat.title_ja,
-        title_ru: cat.title_ru,
         title_fr: cat.title_fr,
         slug: cat.slug,
         sort: cat.sort,
@@ -670,7 +666,6 @@ export async function getRssItems(locale = '*') {
         en: 'en-US',
         cn: 'zh-CN',
         ja: 'ja-JP',
-        ru: 'ru-RU',
         fr: 'fr-FR'
       };
 
