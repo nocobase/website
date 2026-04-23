@@ -1,7 +1,7 @@
 {
   "id": 992,
   "title": "Weekly Updates｜Improve AI employees' ability to parse uploaded documents",
-  "title_cn": "本周更新｜完善 AI 员工对上传文档解析能力",
+  "title_cn": "本周更新｜完善 AI 员工对上传文档的解析能力",
   "title_ja": "今週の更新｜AI従業員の上传ドキュメント解析能力を向上",
   "description": "This is a summary of NocoBase feature updates and improvements from April 16 to April 23, 2026.",
   "description_cn": "汇总了 2026.04.16-04.23 期间 NocoBase 的功能更新与改进。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-23T03:48:16.108Z"
+  "updatedAt": "2026-04-23T04:11:48.085Z"
 }
