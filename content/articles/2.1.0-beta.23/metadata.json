@@ -12,12 +12,28 @@
   "tags": [],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-04-29T08:16:03.055Z",
+    "updatedAt": "2026-04-29T08:16:03.070Z",
+    "id": 2364,
+    "title": "大版本发布 (8)",
+    "filename": "大版本发布 (8)-3ikd1q.png",
+    "extname": ".png",
+    "size": 93961,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(8)-3ikd1q.png",
+    "preview": "https://static-docs.nocobase.com/%E5%A4%A7%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%20(8)-3ikd1q.png",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "author": null,
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-04-29T01:32:33.420Z"
+  "updatedAt": "2026-04-29T08:16:17.690Z"
 }
