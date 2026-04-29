@@ -4,212 +4,219 @@ import InteractiveDemo from "../../components/InteractiveDemo.astro";
 import AIAvatar from '../../components/AIAvatar.astro';
 import demoConfig from "../../data/demo-config-en.json";
 
-const demo_20250928234035 = {
-  "title": "Step 1",
+const demo_20260429083220 = {
+  "title": "AI Building",
   "subtitle": "",
   "mainSteps": [],
   "steps": [
     {
-      "description": "",
-      "title": "当我们部署 NocoBase 后，会得到一个空应用",
-      "id": "开始"
+      "id": "AI building",
+      "title": "AI Coding Agent 快速开发",
+      "description": "AI Coding Agent 快速开发"
     },
     {
-      "id": "step-1-1",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S1.png",
+      "id": "step-1",
+      "title": "Step 1",
+      "description": "通过 CLI 将 Claude code、Codex、Opencode 等 Coding agent 连接 NocoBase",
+      "image": "https://static-docs.nocobase.com/A1.png",
       "button": {
         "id": "button2",
-        "label": "首先，去配置数据模型和数据源",
+        "label": "通过 CLI 将 Claude code、Codex、Opencode 等 Coding agent 连接 NocoBase",
         "position": {
-          "right": "28.1%",
-          "top": "13.1%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S2.png",
-      "button": {
-        "id": "button3",
-        "label": "NocoBase 自带主数据库，我们也可以添加各种外部数据源",
-        "position": {
-          "right": "12.5%",
-          "top": "12.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      },
-      "id": "step-1-2"
-    },
-    {
-      "id": "step-1-3",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S3.png",
-      "button": {
-        "id": "button5",
-        "label": "让我们去主数据库创建表和字段",
-        "position": {
-          "right": "22.0%",
-          "top": "28.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-4",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S4.png",
-      "button": {
-        "id": "button5",
-        "label": "从这里创建数据表",
-        "position": {
-          "right": "15.2%",
-          "top": "20.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-5",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S5.png",
-      "button": {
-        "id": "button6",
-        "label": "让我们创建公司、联系人、商机、订单等数据表",
-        "position": {
-          "right": "26.5%",
-          "top": "18.6%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-6",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S6.png",
-      "button": {
-        "id": "button7",
-        "label": "接下来，为数据表创建字段",
-        "position": {
-          "right": "21.2%",
-          "top": "51.2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-7",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S7.png",
-      "button": {
-        "id": "button8",
-        "label": "从数十种字段类型中选择",
-        "position": {
-          "right": "19.7%",
-          "top": "51.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-8",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S8.png",
-      "button": {
-        "id": "button9",
-        "label": "我们为数据表创建好了字段",
-        "position": {
-          "right": "42.5%",
-          "top": "67.5%"
+          "left": "28.7%",
+          "top": "48.8%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
       }
     },
     {
-      "description": "",
-      "targetStepId": null,
-      "id": "等等",
-      "title": "事情是不是可以更简单？"
-    },
-    {
-      "id": "step-1-9",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S9.png",
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase 会引导我们连接现有应用或者部署新应用",
+      "image": "https://static-docs.nocobase.com/A2.png",
       "button": {
-        "id": "button11",
-        "label": "Orin 是一位数据建模专家，请他来帮忙",
+        "id": "button3",
+        "label": "NocoBase 会引导我们连接现有应用或者部署新应用",
         "position": {
-          "right": "22.2%",
-          "top": "38.3%"
+          "left": "47.6%",
+          "top": "47.9%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-10",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S11-CN.png",
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "连接成功，接下来，就可以用自然语言与 Agent 对话，操作 NocoBase 进行搭建",
+      "image": "https://static-docs.nocobase.com/A3.png",
       "button": {
-        "id": "button12",
-        "label": "告诉 Orin 我们需要什么",
+        "id": "button4",
+        "label": "连接成功，接下来，就可以用自然语言与 Agent 对话，操作 NocoBase 进行搭建",
         "position": {
-          "right": "31.6%",
-          "top": "86.2%"
+          "left": "27.8%",
+          "top": "57.7%"
         },
-        "balloonPos": "left",
+        "balloonPos": "right",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-11",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S12-CN.png",
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "让 AI 创建公司、联系人、商机、订单等数据表和字段",
+      "image": "https://static-docs.nocobase.com/A4.png",
       "button": {
-        "id": "button13",
-        "label": "喔，Orin 为我们设计了数据模型",
+        "id": "button5",
+        "label": "让 AI 创建公司、联系人、商机、订单等数据表和字段",
         "position": {
-          "right": "29.7%",
-          "top": "39.4%"
+          "left": "28.7%",
+          "top": "47.7%"
         },
-        "balloonPos": "left",
+        "balloonPos": "right",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-12",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S13-CN.png",
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "全部数据表和字段一次创建完成",
+      "image": "https://static-docs.nocobase.com/A5.png",
       "button": {
-        "id": "button14",
-        "label": "打开 Orin 为我们创建的数据模型，复核，修改，然后确认",
+        "id": "button6",
+        "label": "全部数据表和字段一次创建完成",
         "position": {
-          "left": "22.8%",
-          "top": "74.4%"
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "让 AI 创建菜单和仪表盘、客户管理页面",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "让 AI 创建菜单和仪表盘、客户管理页面",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "3 个页面一次创建完成",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "3 个页面一次创建完成",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
         },
         "balloonPos": "down",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-13",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S14-CN.png",
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "每个页面都具备完整功能",
+      "image": "https://static-docs.nocobase.com/A8.png",
       "button": {
-        "id": "button15",
-        "label": "数据表和字段已经创建成功",
+        "id": "button9",
+        "label": "每个页面都具备完整功能",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "让 AI 修改仪表盘页面，增加一个个性化的客户跟进任务管理模块",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "让 AI 修改仪表盘页面，增加一个个性化的客户跟进任务管理模块",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "它用 JS Block 编写了一个美观易用的任务区块",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "它用 JS Block 编写了一个美观易用的任务区块",
         "position": {
           "left": "44.9%",
-          "top": "89.1%"
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "接下来，让 AI 设计并配置角色和权限，让销售、商品运营、物流团队各司其职",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "接下来，让 AI 设计并配置角色和权限，让销售、商品运营、物流团队各司其职",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "各个角色都已到位，每个角色的权限已经精确到字段级",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "各个角色都已到位，每个角色的权限已经精确到字段级",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "最后让 AI 搭建一个自动化流程，根据消费金额来自动升级客户的等级",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "最后让 AI 搭建一个自动化流程，根据消费金额来自动升级客户的等级",
+        "position": {
+          "left": "50%",
+          "top": "50%"
         },
         "balloonPos": "up",
         "balloonLength": "medium"
@@ -217,71 +224,386 @@ const demo_20250928234035 = {
     },
     {
       "id": "恭喜",
-      "title": "我们已经配置好了数据模型,请关闭弹窗，进入下一步",
-      "description": "",
-      "targetStepId": null
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
+      "title": "恭喜你，一个简单的客户管理系统已经初步完成",
+      "description": "恭喜你，一个简单的客户管理系统已经初步完成"
     }
   ]
 };
 
-const demo_20250929185215 = {
-  "title": "",
+const demo_20260429085434 = {
+  "title": "亲自试一试，3 步创建一个 CRM",
   "subtitle": "",
   "mainSteps": [],
   "steps": [
     {
-      "id": "第二步",
-      "title": "添加区块，将数据源中的数据显示在页面中",
-      "description": "Add blocks to display data from the data source on the page."
+      "id": "无代码搭建",
+      "description": "无代码开发，所见即所得",
+      "title": "无代码开发，所见即所得"
     },
     {
       "id": "step-2",
       "title": "Step 2",
-      "description": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
-      "image": "https://static-docs.nocobase.com/S2-1.png",
+      "description": "首先，去配置数据源和数据模型",
+      "image": "https://static-docs.nocobase.com/S1.png",
       "button": {
         "id": "button2",
-        "label": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
+        "label": "首先，去配置数据源和数据模型",
         "position": {
-          "right": "14.9%",
-          "top": "13.5%"
+          "right": "27.8%",
+          "top": "13.1%"
         },
-        "balloonPos": "down",
+        "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
       "id": "step-3",
       "title": "Step 3",
-      "description": "First, create a page.",
-      "image": "https://static-docs.nocobase.com/S2-2.png",
+      "description": "NocoBase 自带主数据库，我们也可以添加各种外部数据源",
+      "image": "https://static-docs.nocobase.com/S2.png",
       "button": {
         "id": "button3",
-        "label": "首先，创建一个页面",
+        "label": "NocoBase 自带主数据库，我们也可以添加各种外部数据源",
         "position": {
-          "left": "24.9%",
-          "top": "14.1%"
+          "right": "12.3%",
+          "top": "17.1%"
         },
-        "balloonPos": "right",
+        "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
       "id": "step-4",
       "title": "Step 4",
-      "description": " Add a table block to the page and select the Lead collection to display its data.",
-      "image": "https://static-docs.nocobase.com/S2-3.png",
+      "description": "让我们去主数据库创建表和字段",
+      "image": "https://static-docs.nocobase.com/S3.png",
       "button": {
         "id": "button4",
-        "label": "在页面中添加表格区块并选择“线索”表，即可显示“线索”表的数据",
+        "label": "让我们去主数据库创建表和字段",
         "position": {
-          "left": "41.0%",
+          "right": "17.1%",
+          "top": "31.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "可以审查或修改 AI 创建的数据模型，也可以手动创建新的数据表",
+      "image": "https://static-docs.nocobase.com/B4.png",
+      "button": {
+        "id": "button5",
+        "label": "可以审查或修改 AI 创建的数据模型，也可以手动创建新的数据表",
+        "position": {
+          "right": "21.3%",
+          "top": "27.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "从数十种字段类型中选择所需的类型",
+      "image": "https://static-docs.nocobase.com/B5.png",
+      "button": {
+        "id": "button6",
+        "label": "从数十种字段类型中选择所需的类型",
+        "position": {
+          "right": "13.0%",
+          "top": "8.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "接下来，回到页面，可以审查 AI 搭建的成果，也可以手动搭建新的页面",
+      "image": "https://static-docs.nocobase.com/B6.png",
+      "button": {
+        "id": "button7",
+        "label": "接下来，回到页面，可以审查 AI 搭建的成果，也可以手动搭建新的页面",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
+      "image": "https://static-docs.nocobase.com/B7.png",
+      "button": {
+        "id": "button8",
+        "label": "切换 UI 配置模式，我们将进入所见即所得的开发状态",
+        "position": {
+          "right": "18.8%",
+          "top": "8.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "在页面中添加“表格区块”并选择“商品”表，即可显示“商品”表的数据",
+      "image": "https://static-docs.nocobase.com/B8.png",
+      "button": {
+        "id": "button9",
+        "label": "在页面中添加“表格区块”并选择“商品”表，即可显示“商品”表的数据",
+        "position": {
+          "left": "38.1%",
+          "top": "38.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "配置表格区块，显示我们需要的字段",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "配置表格区块，显示我们需要的字段",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "在表格上添加我们需要的操作",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "在表格上添加我们需要的操作",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "我们还希望用图表来分析商品的分类，添加 Charts 区块",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "我们还希望用图表来分析商品的分类，添加 Charts 区块",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "配置 query 和 chart，商品分布情况直观的显示出来",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "配置 query 和 chart，商品分布情况直观的显示出来",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "再添加一个表单区块，用于录入商品数据",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "再添加一个表单区块，用于录入商品数据",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Step 15",
+      "description": "最后，拖拽这些区块，按需布局。页面上 3 个区块，显示的都是“商品”表的数据",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "最后，拖拽这些区块，按需布局。页面上 3 个区块，显示的都是“商品”表的数据",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Step 16",
+      "description": "去角色和权限配置页面，审查和修改 AI 搭建的结果",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "去角色和权限配置页面，审查和修改 AI 搭建的结果",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Step 17",
+      "description": "可以手动创建角色",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "可以手动创建角色",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Step 18",
+      "description": "为每个角色审查和修改详细的权限",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "为每个角色审查和修改详细的权限",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Step 19",
+      "description": "去工作流配置页面，审查和修改 AI 搭建的结果",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "去工作流配置页面，审查和修改 AI 搭建的结果",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Step 20",
+      "description": "配置或修改工作流，数十个节点可以使用",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "配置或修改工作流，数十个节点可以使用",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "恭喜你，一个客户管理系统已经可以投入使用",
+      "description": "恭喜你，一个客户管理系统已经可以投入使用"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "亲自试一试，3 步创建一个 CRM",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI 员工",
+      "title": "让 AI 员工协助处理业务",
+      "description": "让 AI 员工协助处理业务"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase 的 AI 员工，可以协助人类完成各种任务",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "NocoBase 的 AI 员工，可以协助人类完成各种任务",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "在客户表格上，添加数据洞察员 Viz",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "在客户表格上，添加数据洞察员 Viz",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "为 Viz 配置任务，协助我们分析客户数据并生成报告",
+      "image": "https://static-docs.nocobase.com/C3.png",
+      "button": {
+        "id": "button4",
+        "label": "为 Viz 配置任务，协助我们分析客户数据并生成报告",
+        "position": {
+          "right": "33.4%",
           "top": "39.9%"
         },
         "balloonPos": "right",
@@ -291,14 +613,14 @@ const demo_20250929185215 = {
     {
       "id": "step-5",
       "title": "Step 5",
-      "description": "Configure the table block to display the fields we need.",
-      "image": "https://static-docs.nocobase.com/S2-4.png",
+      "description": "点击唤起 Viz",
+      "image": "https://static-docs.nocobase.com/C4.png",
       "button": {
         "id": "button5",
-        "label": "配置表格区块，显示我们需要的字段",
+        "label": "点击唤起 Viz",
         "position": {
-          "right": "13.2%",
-          "top": "21.7%"
+          "right": "22.0%",
+          "top": "37.6%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -307,14 +629,14 @@ const demo_20250929185215 = {
     {
       "id": "step-6",
       "title": "Step 6",
-      "description": "We also want to analyze industry distribution of “Leads” with a chart. Add a charts block.",
-      "image": "https://static-docs.nocobase.com/S2-5.png",
+      "description": "Viz 对客户数据进行了分析，并生成了 PDF、Markdown、HTML 三种格式，供我们按需选择",
+      "image": "https://static-docs.nocobase.com/C5.png",
       "button": {
         "id": "button6",
-        "label": "我们还希望用图表来分析的行业分布，添加 charts 区块",
+        "label": "Viz 对客户数据进行了分析，并生成了 PDF、Markdown、HTML 三种格式，供我们按需选择",
         "position": {
-          "left": "13.9%",
-          "top": "64.7%"
+          "left": "27.5%",
+          "top": "35.4%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
@@ -323,14 +645,14 @@ const demo_20250929185215 = {
     {
       "id": "step-7",
       "title": "Step 7",
-      "description": "Configure the query and chart.",
-      "image": "https://static-docs.nocobase.com/S2-6.png",
+      "description": "在详情区块上添加调查员 Vera",
+      "image": "https://static-docs.nocobase.com/C6.png",
       "button": {
         "id": "button7",
-        "label": "配置 query 和 chart",
+        "label": "在详情区块上添加调查员 Vera",
         "position": {
-          "right": "35.2%",
-          "top": "41.3%"
+          "right": "25.5%",
+          "top": "73.3%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -339,240 +661,14 @@ const demo_20250929185215 = {
     {
       "id": "step-8",
       "title": "Step 8",
-      "description": "The industry distribution is now clearly visualized.",
-      "image": "https://static-docs.nocobase.com/S2-7.png",
+      "description": "为 Vera 配置任务，在网络上搜集资料，对我们的客户进行背景调查",
+      "image": "https://static-docs.nocobase.com/C7.png",
       "button": {
         "id": "button8",
-        "label": "行业分布情况直观地展示出来",
+        "label": "为 Vera 配置任务，在网络上搜集资料，对我们的客户进行背景调查",
         "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "Step 9",
-      "description": "Next, we need a form to input “Leads” data. Add a form block select the Lead collection.",
-      "image": "https://static-docs.nocobase.com/S2-8.png",
-      "button": {
-        "id": "button9",
-        "label": "接下来，我们需要一个表单，录入“线索”数据。添加表单区块并选中线索表",
-        "position": {
-          "left": "14.4%",
-          "top": "52.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "Step 10",
-      "description": "Configure the form block to display the fields we need.",
-      "image": "https://static-docs.nocobase.com/S2-9.png",
-      "button": {
-        "id": "button10",
-        "label": "配置表单区块，显示我们需要的字段",
-        "position": {
-          "left": "12.3%",
-          "top": "79.2%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "Step 11",
-      "description": "Finally, drag and arrange the blocks as needed. The page now has three blocks, all showing data from the “Leads” collection.",
-      "image": "https://static-docs.nocobase.com/S2-10.png",
-      "button": {
-        "id": "button11",
-        "label": "最后，拖拽这些区块，按需布局。页面上 3 个区块，显示的都是“线索”表的数据",
-        "position": {
-          "left": "30.0%",
-          "top": "14.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "等等",
-      "title": "如果我们想要一个自定义的区块呢？",
-      "description": "如果我们想要一个自定义的区块呢？"
-    },
-    {
-      "id": "step-13",
-      "title": "Step 13",
-      "description": "Add a JS Block.",
-      "image": "https://static-docs.nocobase.com/S2-11.png",
-      "button": {
-        "id": "button13",
-        "label": "添加一个 JS Block",
-        "position": {
-          "left": "13.9%",
-          "top": "78.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-14",
-      "title": "Step 14",
-      "description": "Nathan is a frontend expert—tell him what we need.",
-      "image": "https://static-docs.nocobase.com/S2-12-CN.png",
-      "button": {
-        "id": "button14",
-        "label": "Nathan 是一位前端编程专家，告诉他我们想要什么",
-        "position": {
-          "right": "28.0%",
-          "top": "28.2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-15",
-      "title": "Step 15",
-      "description": "Haha, Nathan has built the block for us.",
-      "image": "https://static-docs.nocobase.com/S2-13.png",
-      "button": {
-        "id": "button15",
-        "label": "哈，Nathan 帮我们写出了这个区块",
-        "position": {
-          "left": "13.7%",
-          "top": "47.1%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "恭喜",
-      "title": "我们已经知道如何将数据显示在页面中。请关闭弹窗，进入下一步",
-      "description": "We now know how to display data on the page. Close this window to continue."
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929192111 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "第三步",
-      "title": "配置操作，对数据进行处理",
-      "description": "Configure actions to process data."
-    },
-    {
-      "id": "step-2",
-      "title": "Step 2",
-      "description": "We want to query, edit, add, and delete “Leads” data.",
-      "image": "https://static-docs.nocobase.com/S3-1.png",
-      "button": {
-        "id": "button2",
-        "label": "我们希望对“线索”数据进行查询、编辑、新增、删除等操作",
-        "position": {
-          "left": "37.1%",
-          "top": "52.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Step 3",
-      "description": "In the table block, enable filter, add, import, and print.",
-      "image": "https://static-docs.nocobase.com/S3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "在表格区块中，启用筛选、新增、导入、打印等操作",
-        "position": {
-          "right": "10.3%",
-          "top": "26.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "Step 4",
-      "description": "We can also add actions for single rows.",
-      "image": "https://static-docs.nocobase.com/S3-3.png",
-      "button": {
-        "id": "button4",
-        "label": "也可以针对单行数据添加操作",
-        "position": {
-          "left": "48.3%",
-          "top": "23.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Step 5",
-      "description": "In the form block, enable submit and trigger workflows.",
-      "image": "https://static-docs.nocobase.com/S3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "在表单区块中，启用提交、触发工作流等操作",
-        "position": {
-          "left": "24.6%",
-          "top": "67.4%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Step 6",
-      "description": "Now we can perform various operations on the “Leads” collection.",
-      "image": "https://static-docs.nocobase.com/S3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "现在，我们就可以对“线索”表中的数据做各种操作了",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "接下来",
-      "title": "如果我们需要个性化的操作呢？",
-      "description": "What if we need a custom action?"
-    },
-    {
-      "id": "step-8",
-      "title": "Step 8",
-      "description": "Let’s add a JS Action in the form block.",
-      "image": "https://static-docs.nocobase.com/S3-6.png",
-      "button": {
-        "id": "button8",
-        "label": "让我们在表单区块中添加一个 JS Action",
-        "position": {
-          "left": "28.3%",
-          "top": "80.5%"
+          "right": "32.5%",
+          "top": "39.6%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
@@ -581,419 +677,14 @@ const demo_20250929192111 = {
     {
       "id": "step-9",
       "title": "Step 9",
-      "description": "Call Nathan again and tell him what we need.",
-      "image": "https://static-docs.nocobase.com/S3-7-CN.png",
+      "description": "点击唤醒 Vera",
+      "image": "https://static-docs.nocobase.com/C8.png",
       "button": {
         "id": "button9",
-        "label": "再次呼叫 Nathan，告诉他我们需要什么",
-        "position": {
-          "right": "30.1%",
-          "top": "28.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "Step 10",
-      "description": "Nathan has generated the code for us.",
-      "image": "https://static-docs.nocobase.com/S3-8.png",
-      "button": {
-        "id": "button10",
-        "label": "Nathan 为我们生成了代码",
-        "position": {
-          "right": "21.7%",
-          "top": "70.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "Step 11",
-      "description": "Run it to see the result. Great — this action can fetch data from a third-party API and auto-fill the form.",
-      "image": "https://static-docs.nocobase.com/S3-9.png",
-      "button": {
-        "id": "button11",
-        "label": "运行看一下效果。很棒，这个 Action 可以从第三方 API 请求数据并自动填写到表单中",
-        "position": {
-          "left": "18.4%",
-          "top": "66.4%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "恭喜",
-      "title": "我们已经完成了一个最基础的应用的搭建。请关闭弹窗，探索更多特性",
-      "description": "We have completed building a basic app. Close this window and explore more features."
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929193842 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "AI 员工",
-      "title": "在 NocoBase 中，有很多专业的 AI 员工供你调遣",
-      "description": "In NocoBase, you have many professional AI employees at your command."
-    },
-    {
-      "id": "step-2",
-      "title": "Step 2",
-      "description": "When filling in “Leads” data, ask Dex for help.",
-      "image": "https://static-docs.nocobase.com/F1-1.png",
-      "button": {
-        "id": "button2",
-        "label": "填写“线索”数据时，找 Dex 帮忙",
-        "position": {
-          "left": "46.0%",
-          "top": "76.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Step 3",
-      "description": "Send messy lead details and files to Dex.",
-      "image": "https://static-docs.nocobase.com/F1-2.png",
-      "button": {
-        "id": "button3",
-        "label": "将杂乱的线索内容、文件发给 Dex",
-        "position": {
-          "right": "26.3%",
-          "top": "61.1%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "Step 4",
-      "description": "Dex organizes the data and auto-fills the form.",
-      "image": "https://static-docs.nocobase.com/F1-3.png",
-      "button": {
-        "id": "button4",
-        "label": "Dex 整理好了这些数据，并自动填到表单中",
-        "position": {
-          "right": "31.7%",
-          "top": "66.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Step 5",
-      "description": "Then call Lexi to translate the form content into Thai.",
-      "image": "https://static-docs.nocobase.com/F1-4.png",
-      "button": {
-        "id": "button5",
-        "label": "然后呼唤 Lexi，让她把表单中的内容翻译成泰语",
-        "position": {
-          "right": "32.1%",
-          "top": "64.5%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Step 6",
-      "description": "When new customer leads appear, ask Vera to research background information and assist decision-making.",
-      "image": "https://static-docs.nocobase.com/F1-5.png",
-      "button": {
-        "id": "button6",
-        "label": "当我们有了新的客户线索，请 Vera 帮忙，调查客户背景信息，协助我们决策",
-        "position": {
-          "right": "9.5%",
-          "top": "6.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "Step 7",
-      "description": "With one click, Vera searches the web and delivers a research report.",
-      "image": "https://static-docs.nocobase.com/F1-6.png",
-      "button": {
-        "id": "button7",
-        "label": "只需点击一次 Vera，她就会搜索全网信息，汇总为调查报告提供给我们",
-        "position": {
-          "right": "27.9%",
-          "top": "50.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "Step 8",
-      "description": "Viz helps us analyze data and generate visual reports.",
-      "image": "https://static-docs.nocobase.com/F1-7.png",
-      "button": {
-        "id": "button8",
-        "label": "而 Viz 帮助我们分析数据，生成可视化报告",
-        "position": {
-          "right": "28.3%",
-          "top": "56.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "More?",
-      "title": "可以拥有更多帮我处理业务或开发系统的员工吗？",
-      "description": "Can we have more employees to handle business or build systems?"
-    },
-    {
-      "id": "step-10",
-      "title": "Step 10",
-      "description": "Of course—go to the AI Employees management interface.",
-      "image": "https://static-docs.nocobase.com/F1-8.png",
-      "button": {
-        "id": "button10",
-        "label": "当然，去 AI 员工 管理界面",
+        "label": "点击唤醒 Vera",
         "position": {
           "right": "22.3%",
-          "top": "22.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "Step 11",
-      "description": "Create your own AI employee, Max — a contract review expert.",
-      "image": "https://static-docs.nocobase.com/F1-9.png",
-      "button": {
-        "id": "button11",
-        "label": "创建你自己的 AI 员工 Max，他是合同审查专家",
-        "position": {
-          "left": "48.8%",
-          "top": "26.4%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-12",
-      "title": "Step 12",
-      "description": "Configure his skills, model, and knowledge base.",
-      "image": "https://static-docs.nocobase.com/F1-10.png",
-      "button": {
-        "id": "button12",
-        "label": "配置他的技能、模型、知识库",
-        "position": {
-          "right": "16.8%",
-          "top": "19.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-13",
-      "title": "Step 13",
-      "description": "Then place him wherever you need.",
-      "image": "https://static-docs.nocobase.com/F1-11.png",
-      "button": {
-        "id": "button13",
-        "label": "然后，你可以让他出现在需要他的任何地方",
-        "position": {
-          "right": "15.2%",
-          "top": "77.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-14",
-      "title": "Step 14",
-      "description": "Assign the tasks he should perform there.",
-      "image": "https://static-docs.nocobase.com/F1-12.png",
-      "button": {
-        "id": "button14",
-        "label": "并给他设定在此处要做的任务",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "恭喜",
-      "title": "你已经拥有了许多专业的 AI 员工。请关闭弹窗，探索更多特性",
-      "description": "You now have many professional AI employees. Close this window and explore more features."
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929200011 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "工作流",
-      "title": "使用工作流编排逻辑，实现流程自动化",
-      "description": "Use workflows to orchestrate logic and automate processes."
-    },
-    {
-      "id": "step-2",
-      "title": "Step 2",
-      "description": "We have built dozens of workflows to keep business running automatically in this application.",
-      "image": "https://static-docs.nocobase.com/F2-1.png",
-      "button": {
-        "id": "button2",
-        "label": "在这个应用中我们编排了数十个工作流，让很多业务自动运转起来",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Step 3",
-      "description": "Add a new workflow here and choose its trigger. There are plenty of triggers to pick from.",
-      "image": "https://static-docs.nocobase.com/F2-2.png",
-      "button": {
-        "id": "button3",
-        "label": "从这里添加一个新的工作流，并选择它的触发时机。有丰富的触发时机可供选择。",
-        "position": {
-          "right": "49.7%",
-          "top": "21.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "Step 4",
-      "description": "Then configure its logic and actions.",
-      "image": "https://static-docs.nocobase.com/F2-3.png",
-      "button": {
-        "id": "button4",
-        "label": "然后，去配置它的逻辑和动作",
-        "position": {
-          "right": "23.1%",
-          "top": "32.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Step 5",
-      "description": "Click the plus sign to add a node.",
-      "image": "https://static-docs.nocobase.com/F2-4.png",
-      "button": {
-        "id": "button5",
-        "label": "点击加号，增加节点",
-        "position": {
-          "right": "47.7%",
-          "top": "27.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Step 6",
-      "description": "There are dozens of node types to arrange, including flow control, calculation, data operations, manual steps, AI nodes, and more.",
-      "image": "https://static-docs.nocobase.com/F2-5.png",
-      "button": {
-        "id": "button6",
-        "label": "有数十种节点可供编排，包括流程控制，运算，数据操作，人工操作，AI 节点，等等",
-        "position": {
-          "right": "48.7%",
-          "top": "24.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "Step 7",
-      "description": "Check out this running workflow.",
-      "image": "https://static-docs.nocobase.com/F2-6.png",
-      "button": {
-        "id": "button7",
-        "label": "看一下这个运行中的工作流",
-        "position": {
-          "right": "37.8%",
-          "top": "26.2%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "Step 8",
-      "description": "You can trigger it manually to debug results.",
-      "image": "https://static-docs.nocobase.com/F2-7.png",
-      "button": {
-        "id": "button8",
-        "label": "可以手动触发，调试结果",
-        "position": {
-          "right": "22.5%",
-          "top": "12.1%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "Step 9",
-      "description": "You can record and switch versions.",
-      "image": "https://static-docs.nocobase.com/F2-8.png",
-      "button": {
-        "id": "button9",
-        "label": "可以记录并切换版本",
-        "position": {
-          "right": "15.9%",
-          "top": "15.7%"
+          "top": "16.0%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -1002,13 +693,29 @@ const demo_20250929200011 = {
     {
       "id": "step-10",
       "title": "Step 10",
-      "description": "You can view execution history.",
-      "image": "https://static-docs.nocobase.com/F2-9.png",
+      "description": "她通过数十个信源搜到了该客户的资料，并整理成一份背景调查报告",
+      "image": "https://static-docs.nocobase.com/C9.png",
       "button": {
         "id": "button10",
-        "label": "可以查看运行记录",
+        "label": "她通过数十个信源搜到了该客户的资料，并整理成一份背景调查报告",
         "position": {
-          "right": "46.2%",
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "我们再将 NocoBase 对接到 Hermes、OpenClaw 等 Agent 中，这样你就能从 Slack、Whatsapp、飞书中直接与 NocoBase 对话",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "我们再将 NocoBase 对接到 Hermes、OpenClaw 等 Agent 中，这样你就能从 Slack、Whatsapp、飞书中直接与 NocoBase 对话",
+        "position": {
+          "left": "48.8%",
           "top": "31.7%"
         },
         "balloonPos": "left",
@@ -1016,215 +723,32 @@ const demo_20250929200011 = {
       }
     },
     {
-      "id": "step-11",
-      "title": "Step 11",
-      "description": "You can view the execution log of each node.",
-      "image": "https://static-docs.nocobase.com/F2-10.png",
-      "button": {
-        "id": "button11",
-        "label": "可以查看每个节点的运行日志",
-        "position": {
-          "right": "37.4%",
-          "top": "62.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
       "id": "step-12",
       "title": "Step 12",
-      "description": "Continue.",
-      "image": "https://static-docs.nocobase.com/F2-11.png",
+      "description": "在 飞书、微信、Telegram 中直接下达指令，整理这段聊天记录并将客户信息添加到 NocoBase 中",
+      "image": "https://static-docs.nocobase.com/C11.png",
       "button": {
         "id": "button12",
-        "label": "继续",
+        "label": "在 飞书、微信、Telegram 中直接下达指令，整理这段聊天记录并将客户信息添加到 NocoBase 中",
         "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "恭喜",
-      "title": "工作流可以让你的业务自动化运转。请关闭弹窗，探索更多特性。",
-      "description": "Workflows can keep your business running automatically. Close this window and explore more features."
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
-    }
-  ]
-};
-
-const demo_20250929200757 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "权限",
-      "title": "基于资源与操作的访问控制模型",
-      "description": "Resource- and action-based access control model"
-    },
-    {
-      "id": "step-2",
-      "title": "Step 2",
-      "description": "Create roles as needed",
-      "image": "https://static-docs.nocobase.com/F3-1.png",
-      "button": {
-        "id": "button2",
-        "label": "按需创建角色",
-        "position": {
-          "left": "25.2%",
-          "top": "21.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Step 3",
-      "description": "Assign system permissions to roles, including plugin permissions",
-      "image": "https://static-docs.nocobase.com/F3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "为角色分配系统权限，包括每一个插件的权限",
-        "position": {
-          "left": "39.9%",
-          "top": "29.5%"
+          "right": "28.5%",
+          "top": "39.6%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-4",
-      "title": "Step 4",
-      "description": "Configure data source permissions for each role",
-      "image": "https://static-docs.nocobase.com/F3-3.png",
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "在 NocoBase 中可以看到客户已添加",
+      "image": "https://static-docs.nocobase.com/C12.png",
       "button": {
-        "id": "button4",
-        "label": "配置角色的数据源权限",
+        "id": "button13",
+        "label": "在 NocoBase 中可以看到客户已添加",
         "position": {
-          "left": "46.6%",
-          "top": "31.3%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Step 5",
-      "description": "Set global permissions for each data source",
-      "image": "https://static-docs.nocobase.com/F3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "配置每个数据源的全局权限",
-        "position": {
-          "right": "28.4%",
-          "top": "44.9%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Step 6",
-      "description": "Configure permissions for each collection",
-      "image": "https://static-docs.nocobase.com/F3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "为每个数据表单独配置权限",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "Step 7",
-      "description": "Configure action-level permissions for each dataset",
-      "image": "https://static-docs.nocobase.com/F3-6.png",
-      "button": {
-        "id": "button7",
-        "label": "配置每个操作针对每个数据集的权限",
-        "position": {
-          "right": "15.8%",
-          "top": "36.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "Step 8",
-      "description": "Configure action-level permissions for each field",
-      "image": "https://static-docs.nocobase.com/F3-6.png",
-      "button": {
-        "id": "button8",
-        "label": "配置每个操作针对每个字段的权限",
-        "position": {
-          "right": "29.1%",
-          "top": "56.7%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "Step 9",
-      "description": "Configure route (menu) permissions",
-      "image": "https://static-docs.nocobase.com/F3-7.png",
-      "button": {
-        "id": "button9",
-        "label": "配置路由（菜单）的权限",
-        "position": {
-          "right": "42.8%",
-          "top": "24.4%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "Step 10",
-      "description": "Configure AI employee permissions",
-      "image": "https://static-docs.nocobase.com/F3-8.png",
-      "button": {
-        "id": "button10",
-        "label": "配置 AI 员工的权限",
-        "position": {
-          "right": "27.0%",
-          "top": "23.5%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "Step 11",
-      "description": "Define permission policies—when users have multiple roles, allow independent switching or merging",
-      "image": "https://static-docs.nocobase.com/F3-9.png",
-      "button": {
-        "id": "button11",
-        "label": "还可以配置权限策略，当用户拥有多角色时，独立切换或取并集",
-        "position": {
-          "left": "40.5%",
-          "top": "22.9%"
+          "right": "44.1%",
+          "top": "48.1%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
@@ -1232,164 +756,8 @@ const demo_20250929200757 = {
     },
     {
       "id": "恭喜",
-      "title": "NocoBase 为你提供强大的权限控制能力。请关闭弹窗，探索更多特性。",
-      "description": "NocoBase provides powerful permission control. Close this window to explore more features."
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
-    }
-  ]
-};
-
-const demo_20250929202533 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "集成",
-      "title": "将 NocoBase 与其他应用集成",
-      "description": "Connect NocoBase with other applications."
-    },
-    {
-      "id": "step-2",
-      "title": "Step 2",
-      "description": "Log in to NocoBase with SSO, supporting all common protocols.",
-      "image": "https://static-docs.nocobase.com/W3-1.png",
-      "button": {
-        "id": "button2",
-        "label": "使用 SSO 能力登录 NocoBase，支持所有常见的协议",
-        "position": {
-          "right": "12.4%",
-          "top": "18.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "Step 3",
-      "description": "Add an external application’s database as a data source in NocoBase.",
-      "image": "https://static-docs.nocobase.com/W3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "将外部应用的数据库添加为 NocoBase 的数据源",
-        "position": {
-          "right": "12.6%",
-          "top": "17.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "Step 4",
-      "description": "Use an HTTP request node in a workflow to call third-party APIs.",
-      "image": "https://static-docs.nocobase.com/W3-3.png",
-      "button": {
-        "id": "button4",
-        "label": "在工作流中使用 HTTP 请求节点，请求第三方 API",
-        "position": {
-          "left": "47.8%",
-          "top": "41.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "Step 5",
-      "description": "Use a Webhook trigger in a workflow to receive requests from other applications.",
-      "image": "https://static-docs.nocobase.com/W3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "在工作流中使用 Webhook 触发器，接收其他应用的请求",
-        "position": {
-          "left": "47.3%",
-          "top": "25.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "Step 6",
-      "description": "NocoBase automatically generates HTTP APIs for other applications to use.",
-      "image": "https://static-docs.nocobase.com/W3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "NocoBase 自动生成 HTTP API，供其他应用使用",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "Step 7",
-      "description": "Embed NocoBase pages into other applications.",
-      "image": "https://static-docs.nocobase.com/W3-6.png",
-      "button": {
-        "id": "button7",
-        "label": "将 NocoBase 的页面嵌入其他应用",
-        "position": {
-          "right": "15.7%",
-          "top": "25.5%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "Step 8",
-      "description": "Embed other applications’ pages into NocoBase.",
-      "image": "https://static-docs.nocobase.com/W3-7.png",
-      "button": {
-        "id": "button8",
-        "label": "将其他应用的页面嵌入 NocoBase",
-        "position": {
-          "left": "48.8%",
-          "top": "60.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "Step 9",
-      "description": "Use JS Actions, JS Blocks, and more to freely integrate with third parties.",
-      "image": "https://static-docs.nocobase.com/W3-8.png",
-      "button": {
-        "id": "button9",
-        "label": "使用 JS Action、JS Block 等能力自由地与第三方集成",
-        "position": {
-          "right": "34.3%",
-          "top": "46.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "恭喜",
-      "title": "您可以选择合适的方式将 NocoBase 与您的应用集成。关闭此窗口探索更多功能。",
-      "description": ""
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
+      "title": "恭喜你，一个完整的智能客户管理系统已经就绪",
+      "description": "恭喜你，一个完整的智能客户管理系统已经就绪"
     }
   ]
 };
@@ -1403,12 +771,9 @@ const demo_20250929202533 = {
       <div class="row">
       <div class="col-12">
         <div class="title-heading text-center mt-4">
-          <h1 class="display-4 fw-bold mb-3">极易扩展的<br />AI 无代码开发平台</h1>
+          <h1 class="display-4 fw-bold mb-3">AI + 无代码<br />构建<span class="text-primary fw-bold">可靠的</span>业务系统</h1>
           <p class="para-desc mx-auto text-muted">
-            完全掌控，无限扩展，AI 协同。<br />
-            让你的团队快速响应变化，大幅降低成本。<br />
-            无需多年研发，无需数百万投入。<br />
-            花几分钟部署 NocoBase，立即拥有一切。
+            NocoBase 是一个开源的 “AI + 无代码” 开发平台，用于快速开发企业业务系统。不同于让 AI 从零生成代码，NocoBase 提供经过生产验证的基础设施和所见即所得的无代码界面，让 AI 与人高效协同，既保证开发速度又保证系统可靠性。
           </p>
           <div class="mt-4 pt-2">
             <a href="https://v2.docs.nocobase.com/cn/get-started/how-nocobase-works" target="_blank" title="NocoBase 如何工作" class="btn btn-outline-primary mb-2">了解如何工作<i class="uil uil-angle-right-b"></i></a>
@@ -1465,13 +830,13 @@ const demo_20250929202533 = {
   <!-- Hero End -->
 
   <!-- Demo Start -->
-  <section class="section pb-0 mt-5" id="section-3-steps">
+  <section class="section pb-5 mt-5" id="section-3-steps">
       <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h3 class="title mb-4">亲自试一试：3 步创建一个 <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "客户关系管理", "项目管理", "工单系统", "库存管理", "订单管理" ]'></span></h3>
-                    <p class="text-muted para-desc mx-auto mb-0">先定义“数据”来源，再使用“区块”将数据展示出来，最后用“操作”来处理数据。</p>
+                    <h3 class="title mb-4">亲自试一试：AI + 无代码 协同构建一个智能  <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "客户关系管理", "项目管理", "工单系统", "库存管理", "订单管理" ]'></span></h3>
+                    <p class="text-muted para-desc mx-auto mb-0">可以由 AI 搭建，也可以由人工无代码搭建；同时让 AI 员工帮你处理日常业务。</p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
@@ -1481,12 +846,12 @@ const demo_20250929202533 = {
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                           与 <AIAvatar name="orin" /> 一起，配置“数据源”
+                           AI Coding Agent 快速开发
                         </h6>
-                        <p class="text-muted para">定义你的主数据库模型，或者连接外部数据库或 API 作为数据源。</p>
+                        <p class="text-muted para">用 Claude Code、Codex、Cursor 等主流 Coding Agent 快速搭建完整系统。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 试一下 <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 01.</li>
+                            <li class="step h1 mb-0 fw-bold">AI building</li>
                             <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
@@ -1497,12 +862,12 @@ const demo_20250929202533 = {
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                            与 <AIAvatar name="nathan" /> 一起，使用“区块”展示数据
+                            人工无代码开发，所见即所得
                         </h6>
-                        <p class="text-muted para">在页面上通过表格、表单、图表、日历等区块直观地组织和展示数据。</p>
+                        <p class="text-muted para">人可以随时介入开发，在所见即所得的无代码界面上便捷操作，与 AI 协同迭代。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 02.</li>
+                            <li class="step h1 mb-0 fw-bold">No code</li>
                             <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
@@ -1513,12 +878,16 @@ const demo_20250929202533 = {
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                            与 <AIAvatar name="nathan" /> 一起，使用“操作”处理数据
+                            <AIAvatar name="lexi" /> 
+                            <AIAvatar name="viz" /> 
+                            <AIAvatar name="vera" /> 
+                            <AIAvatar name="dex" /> 
+                            让 AI 员工协助处理业务
                         </h6>
-                        <p class="text-muted para">通过操作对数据进行新增、编辑、查询、导入、导出、触发工作流等处理。</p>
+                        <p class="text-muted para">让系统内的 AI 员工或外部 Agent 协助你执行数据分析、流程决策等多种任务。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 03.</li>
+                            <li class="step h1 mb-0 fw-bold">AI employee</li>
                             <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
                         </ul>
                     </div>
@@ -1529,139 +898,7 @@ const demo_20250929202533 = {
   </section><!--end section-->
   <!-- End -->
 
-  <!-- Advanced Feature Start -->
-  <section class="section pb-0" id="section-advanced-feature">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="section-title mb-4 pb-2">
-                    <h3 class="title mb-4">接下来：探索更多核心能力 </h3>
-                    <p class="text-muted para-desc mx-auto mb-0">解锁 AI 员工、工作流和权限等强大功能，构建更智能的业务系统。</p>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-        
-        <div class="row">
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            <AIAvatar name="orin-green" /> 
-                            <AIAvatar name="viz" /> 
-                            <AIAvatar name="alex" /> 
-                            <AIAvatar name="orin" /> 
-                            众多 AI 员工协助你工作
-                          </h6>
-                          <p class="text-muted para">使用内置或自定义的 AI 员工，执行分析、翻译、录入等多种任务。</p>
-                          <a href="?fallback_url" data-type="html" data-target="#feat1_lightbox" data-group="feat1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-                          <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 01.</li>
-                            <li class="step-icon"><i class="uil uil-smile-squint-wink h1 mb-0"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-4 mt-4 pt-2">
-                      <div class="card work-process border-0 rounded shadow">
-                        <div class="card-body">
-                          <h6 class="title">
-                            使用工作流，编排复杂逻辑
-                          </h6>
-                          <p class="text-muted para">自动化业务流程，轻松编排复杂逻辑，实现高效协同与智能运转。</p>
-                          <a href="?fallback_url" data-type="html" data-target="#feat2_lightbox" data-group="feat2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-                          <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 02.</li>
-                            <li class="step-icon"><i class="uil uil-arrow-random h1 mb-0"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            精细管控菜单、数据范围、操作的权限
-                        </h6>
-                        <p class="text-muted para">通过精细化权限，全面管控菜单、数据、操作和 AI 员工。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#feat3_lightbox" data-group="feat3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 03.</li>
-                            <li class="step-icon"><i class="uil uil-check h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End -->
-
-  <!-- Extend Start -->
-  <section class="section" id="section-extend">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-          <div class="section-title mb-4 pb-2">
-              <h3 class="title mb-4">最后：多种方式扩展 NocoBase</h3>
-              <p class="text-muted para-desc mx-auto mb-0">超越基础能力，通过插件、脚本和多种集成方式灵活扩展 NocoBase。</p>
-          </div>
-            </div><!--end col-->
-        </div><!--end row-->
-        
-        <div class="row">
-            <div class="col-md-4 mt-4 pt-2">
-          <div class="card work-process border-0 rounded shadow">
-              <div class="card-body">
-            <h6 class="title">
-                开发通用插件
-            </h6>
-            <p class="text-muted para">开发可复用的插件，扩展核心功能，更易于维护和推广。</p>
-            <a href="?fallback_url" data-type="html" data-target="#way1_lightbox" data-group="way1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-            <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                <li class="step h1 mb-0 fw-bold">Way 01.</li>
-                <li class="step-icon"><i class="uil uil-battery-bolt h1 mb-0"></i></li>
-            </ul>
-              </div>
-          </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            与 <AIAvatar name="cole" /> 一起，在页面上编写 Scripts
-                        </h6>
-                        <p class="text-muted para">在页面中编写脚本，实现更灵活的业务逻辑和交互界面。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#way2_lightbox" data-group="way2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Way 02.</li>
-                            <li class="step-icon"><i class="uil uil-bolt h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            多种方式集成其他应用
-                        </h6>
-                        <p class="text-muted para">通过 API、数据源、Webhook 等方式灵活集成外部应用与服务，实现系统互通。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#way3_lightbox" data-group="way3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 Try it yourself <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Way 03.</li>
-                            <li class="step-icon"><i class="uil uil-apps h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End -->
+  
 
   <!-- For you Start -->
   <section class="section pb-5 bg-light" id="section-for-you">
@@ -1670,7 +907,7 @@ const demo_20250929202533 = {
         <div class="col-12 text-center">
           <div class="section-title mb-4 pb-2">
             <h3 class="title mb-4">NocoBase 适合谁</h3>
-            <p class="text-muted para-desc mx-auto mb-0">在为企业内部或客户交付各类业务系统时，你的开发团队正面临以下 <span class="text-primary fw-bold">严峻挑战</span>：</p>
+            <p class="text-muted para-desc mx-auto mb-0">在为企业内部或客户交付各类业务系统时，你的团队始终面临 <span class="text-primary fw-bold">严峻挑战</span>：</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -1724,50 +961,7 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title mt-5 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">与此同时，随着 <span class="text-primary fw-bold">AI</span> 的兴起，你们可能还在为以下问题苦恼：</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row  justify-content-center">
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">各种 AI 演示层出不穷，但落地到业务场景却十分困难</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">AI 模型难以与现有系统和业务流程无缝集成</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">AI 方案难以契合企业独特的流程与数据安全要求</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div class="section-title mt-5 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">你的团队已经意识到必须抛弃传统的开发方式，引入无代码开发可能是一条出路。然而，在调研或试用后，你们又常常对无代码平台产生 <span class="text-primary fw-bold">诸多担忧</span>：</p>
+            <p class="text-muted para-desc mx-auto mb-0">AI 编程正在改变开发方式，但当你真正尝试之后，<span class="text-primary fw-bold">新的问题 </span>随之而来：</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -1775,13 +969,10 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
           <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>能力有限，大多停留在表单和表格</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>笨拙而缺乏灵活性，面对未覆盖的需求无能为力</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>AI 相关功能停留在演示层面，难以结合实际业务场景落地</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>缺乏可扩展机制，将 AI 模型无缝嵌入到企业的数据和流程中十分困难</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>无法访问底层源代码，数据又托管在第三方服务器，隐私与安全难以保障</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>与既有系统难以实现无缝集成</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>受制于按用户或应用计费模式，最终购买的产品并不真正属于自己</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>架构脆弱，难以持续迭代<br><span class="text-muted">AI 可以快速生成代码，但很难交出一个架构合理、稳定可靠、可持续迭代的系统</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>基础模块反复重建，质量不稳定<br><span class="text-muted">每个项目都要让 AI 重建用户管理、权限控制、流程编排等基础模块，重复、低效、质量不可控</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>生成结果是黑盒，维护越来越难<br><span class="text-muted">AI 生成的代码对业务人员不可见、不可调整，后续维护和变更成本越来越高</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>难以在真实业务边界内工作<br><span class="text-muted">AI 难以在严格的权限和流程约束下处理企业的实际业务</span></li>
           </ul>
         </div><!--end col-->
       </div><!--end row-->
@@ -1789,7 +980,7 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title mt-4 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">不必担忧！试一试 NocoBase <br /> NocoBase 就是为你的开发团队量身定制的 <span class="text-primary fw-bold">基础设施</span>！</p>
+            <p class="text-muted para-desc mx-auto mb-0">不必担忧！试一试 NocoBase <br />NocoBase 为你的团队提供构建业务系统所需的全部 <span class="text-primary fw-bold">基础设施</span>，AI 和人都能在上面高效工作。 </p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -1797,48 +988,35 @@ const demo_20250929202533 = {
   </section><!--end section-->
   <!-- For you End -->
 
-  <!-- How Start -->
+  <!-- How Start 1 -->
   <section class="section" id="section-how">
     <div class="container">
+      <!-- 可靠 -->
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <div class="section-title mb-4 pb-2">
-            <h3 class="title mb-4">NocoBase 是如何做的</h3>
-            <p class="text-muted para-desc mx-auto mb-0">无代码和 AI 都不是万能的。<br />人、AI、代码的协同框架，才是当下可信赖的企业级基础。</p>
+          <div class="section-title">
+            <h3 class="title mb-4">可靠：基础能力就绪，只需关注业务本身</h3>
+            <p class="text-muted para-desc mx-auto mb-0">数据模型、权限控制、流程编排等功能逻辑复杂且不允许出错。<br>NocoBase 将它们作为内置基础设施提供，经过严格测试和大量生产环境验证。</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
-      <div class="row  justify-content-center">
-        <div class="col-lg-6 col-md-6 col-12">
-          <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>试图封装所有功能为无代码组件，用无代码满足一切需求</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>用无代码覆盖 80% 的通用需求，扩展开发解决剩余的个性化需求</li>
-          </ul>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-6 col-12">
-         <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>依赖 AI 生成完整业务系统，试图替代所有业务流程</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>构建优秀的人与 AI 协同框架，让 AI 在特定环节发挥最大价值</li>
-          </ul>
-        </div><!--end col-->
-      </div><!--end row-->
-      <div class="row align-items-top  mt-100">
+      
+      <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">数据模型</span> 驱动，而非表单/表格驱动</h5>
-            <p class="text-muted">NocoBase 采用 数据模型驱动 的方式，将数据结构与用户界面分离，突破了传统表单或表格驱动开发的限制，释放无限可能。</p>
+            <h5 class="mb-4"><span class="text-primary">完善的基础设施</span>，不再每次从零开始</h5>
+            <p class="text-muted">NocoBase 内置数十个基础模块，覆盖业务系统开发中最常见也最关键的需求。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>界面与数据结构彻底解耦</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>同一个表或记录可以创建任意数量、任意形式的区块和操作</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持主数据库、外部数据库以及第三方 API 作为数据源</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>数据建模、权限控制、工作流、审计日志等核心能力开箱即用</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>经过大量企业生产环境验证，不是每次由 AI 重新生成的黑盒代码</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>为 AI 提供规范和约束，确保生成的结果符合系统架构要求</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/model.png" alt="Data model-driven approach in NocoBase, separating user interface from data structure. Supports multiple blocks and actions for the same table and record, integrating main database, external databases, and third-party APIs as data sources." />
+              <img src="https://static-docs.nocobase.com/f-core.jpeg" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
             </div>
           </div>
         </div><!--end col-->
@@ -1846,19 +1024,89 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">所见即所得</span>，极易上手</h5>
-            <p class="text-muted">NocoBase 能够开发复杂而独特的业务系统，但使用体验却简单直观。</p>
+            <h5 class="mb-4"><span class="text-primary">数据模型驱动</span>，数据与界面解耦</h5>
+            <p class="text-muted">所有业务沉淀为标准关系型数据库结构，数据模型与用户界面完全分离。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持主数据库、外部数据库以及第三方 API 作为数据源</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 和人都基于同一个数据模型工作，结果透明、可审查</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>数据始终存储在你自己的数据库中，不被平台锁定</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">插件化架构</span>，系统可持续演进</h5>
+            <p class="text-muted">微内核设计，一切功能皆插件。系统随业务增长长期迭代而不失控。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>新功能通过插件组合扩展，遵循统一规范，互不干扰</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持自研插件与官方插件混合使用，灵活适配业务需求</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>架构统一，无论 AI 生成还是人工开发的插件，都遵循同一套标准</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 协同 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">协同：AI 与人一起构建</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase 既为 Coding Agent 提供了完善的 CLI 和 Skills，又为人提供了所见即所得的无代码开发界面，让 AI 与人可以高效协同。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">用你熟悉的 <span class="text-primary">AI Coding Agent</span> 开发</h5>
+            <p class="text-muted">使用主流 Coding Agent，从部署到搭建业务系统只需数十分钟。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持 Claude Code、Cursor、Codex、Opencode、TRAE 等所有主流 Agent</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>从安装部署，到搭建开发，到迁移发布，都由 Agent 完成</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, Opencode, TRAE and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">在 <span class="text-primary">所见即所得</span> 的无代码界面上人工开发</h5>
+            <p class="text-muted">所见即所得的配置界面，人可以直接可视化搭建和修改，不用 AI 也可以完成整个系统搭建。</p>
             <ul class="list-unstyled text-muted">
               <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>一键切换使用模式与配置模式</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>页面即画布，可随意拖拽区块和操作，像 Notion 一样搭建界面</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>配置模式面向普通用户设计，而非仅限程序员</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>数据模型、页面、工作流、权限全部都可以可视化审查和配置</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>配置模式面向普通用户设计，而非仅限专业开发人员</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG interface, showcasing easy-to-use, configurable UI for developing complex business systems. Features one-click switch between usage and configuration modes, allowing ordinary users to create and customize interfaces like Notion." />
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
             </div>
           </div>
         </div><!--end col-->
@@ -1866,19 +1114,50 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">AI 员工</span>，融入你的业务系统</h5>
-            <p class="text-muted">不同于停留在演示层面的 AI，NocoBase 让你能够将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。</p>
+            <h5 class="mb-4"><span class="text-primary">AI 开发与人工搭建</span> 自由组合</h5>
+            <p class="text-muted">按需分工，AI 搭建的结果，人可以随时接管修改；人配置的内容，AI 也能理解并继续迭代。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>定义 AI 员工，担任翻译员、分析员、调研员或助手等角色</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 与人工无缝协同于交互界面和业务流程</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>确保 AI 的使用符合企业的安全、透明和定制化需求</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 可以高效创建数据模型、基础页面、工作流</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>人可以快速对界面交互进行调整</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>按需协同，持续迭代</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase plugin architecture, designed for extension development with a microkernel approach. All functionalities are implemented as plugins, similar to Wordpress. Plugins, including pages, blocks, actions, APIs, and data sources, can be easily installed and developed to meet complex and evolving business requirements." />
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">智能：AI 不只参与开发，更参与业务处理</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase 内置 AI 员工能力，让 AI 作为业务参与者直接在系统内工作。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 员工</span> 融入业务流程</h5>
+            <p class="text-muted">AI 员工自动获取业务上下文，在系统内直接执行任务，而非仅作为对话窗口。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>前台：协助用户完成数据分析、智能问答、表单填写等操作</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>后台：持续运行，自动处理文档识别、风险监测、任务分发等工作</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>与工作流深度集成，AI 员工可以作为流程中的一个节点参与决策和执行</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
             </div>
           </div>
         </div><!--end col-->
@@ -1886,39 +1165,69 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">一切皆 <span class="text-primary">插件</span>，为扩展而生</h5>
-            <p class="text-muted">仅仅堆叠无代码功能，永远无法覆盖所有业务场景。NocoBase 基于 插件化微内核架构，为扩展而设计。</p>
+            <h5 class="mb-4"><span class="text-primary">开放接口</span>，连接 Agent 生态</h5>
+            <p class="text-muted">提供 MCP、HTTP API、CLI 等标准接口和完善的 Skills，让外部 Agent 安全接入。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>所有功能都是插件，类似于 WordPress</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>插件安装即用</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>页面、区块、操作、API、数据源等都可以通过插件扩展</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>OpenClaw、Hermes、Dify、Coze、n8n 等外部 Agent 平台可通过标准协议接入</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>与飞书、微信、Whatsapp、Slack、Gmail 打通，能够查询数据、触发操作、执行业务流程</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>统一接口规范，内部 AI 员工与外部 Agent 使用相同的能力边界</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture, designed for extension development with a microkernel approach. All functionalities are implemented as plugins, similar to Wordpress. Plugins, including pages, blocks, actions, APIs, and data sources, can be easily installed and developed to meet complex and evolving business requirements." />
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
             </div>
           </div>
         </div><!--end col-->
       </div><!--end row-->
-      <div class="row align-items-top mt-5">
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">权限约束</span>，行为可控</h5>
+            <p class="text-muted">AI 的所有操作都受细粒度权限控制，与人类用户遵循相同的安全规则。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>每个 AI 员工拥有独立角色，读写权限精确到字段级别</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>所有操作记录在审计日志中，可追溯每一次数据变更和流程触发</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>管理员可随时调整 AI 员工的权限范围，确保行为边界清晰</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">还有更多</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top">
         <div class="col-lg-6 col-md-6 mt-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">开源透明</span>，采用主流技术栈</h5>
+            <h5 class="mb-4"><span class="text-primary">开源透明</span>，完全掌控</h5>
             <p class="text-muted">NocoBase 核心代码和基础插件全部开源，且采用主流技术栈，提供绝对的透明度和可控性。</p>
             <ul class="list-unstyled text-muted">
               <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>核心与基础插件完全开源</li>
               <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>使用 TypeScript 编写，基于 Node.js、React、Koa 等主流技术栈</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>仅定义标准接口，不使用私有 DSL</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>- 安全可控，所有数据和 AI 交互都在你自己的环境中运行</li>
               <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>极简轻量，可运行在低配服务器上，一个人即可维护和扩展</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-6 col-md-6 mt-5">
           <div class="section-title">
-            <h5 class="mb-4">透明且友好的 <span class="text-primary">授权模式</span></h5>
+            <h5 class="mb-4">简单友好的 <span class="text-primary">授权模式</span></h5>
             <p class="text-muted">NocoBase 提供免费开源版本，同时提供商业授权和插件，采用 一次性购买，终身使用 的模式。</p>
             <ul class="list-unstyled text-muted">
               <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>无需订阅</li>
@@ -2163,7 +1472,7 @@ const demo_20250929202533 = {
         <div id="nocobase_video_lightbox">
           <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
           <video controls>
-            <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-CN-V2.mp4" type="video/mp4">
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-CN.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -2172,7 +1481,7 @@ const demo_20250929202533 = {
       <!-- step1 lightbox -->
       <div style="display: none;">
         <div id="step1_lightbox">
-          <InteractiveDemo guides={demo_20250928234035} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
         </div>
       </div>
       <!-- end step1 lightbox -->
@@ -2180,7 +1489,7 @@ const demo_20250929202533 = {
       <!-- step2 lightbox -->
       <div style="display: none;">
         <div id="step2_lightbox">
-          <InteractiveDemo guides={demo_20250929185215} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
         </div>
       </div>
       <!-- end step2 lightbox -->
@@ -2188,60 +1497,10 @@ const demo_20250929202533 = {
       <!-- step3 lightbox -->
       <div style="display: none;">
         <div id="step3_lightbox">
-          <InteractiveDemo guides={demo_20250929192111} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
         </div>
       </div>
       <!-- end step3 lightbox -->
-
-      <!-- feat1 lightbox -->
-      <div style="display: none;">
-        <div id="feat1_lightbox">
-          <InteractiveDemo guides={demo_20250929193842} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat1 lightbox -->
-
-      <!-- feat2 lightbox -->
-      <div style="display: none;">
-        <div id="feat2_lightbox">
-          <InteractiveDemo guides={demo_20250929200011} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat2 lightbox -->
-
-      <!-- feat3 lightbox -->
-      <div style="display: none;">
-        <div id="feat3_lightbox">
-          <InteractiveDemo guides={demo_20250929200757} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat3 lightbox -->
-
-      <!-- way1 lightbox -->
-      <div style="display: none;">
-        <div id="way1_lightbox">
-          <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2>
-          <!-- <InteractiveDemo guides={demo_2025092919211} hideHeader={true}/> -->
-        </div>
-      </div>
-      <!-- end way1 lightbox -->
-
-      <!-- way2 lightbox -->
-      <div style="display: none;">
-        <div id="way2_lightbox">
-          <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2>
-          <!-- <InteractiveDemo guides={demo_2025092919211} hideHeader={true}/> -->
-        </div>
-      </div>
-      <!-- end way2 lightbox -->
-
-      <!-- way3 lightbox -->
-      <div style="display: none;">
-        <div id="way3_lightbox">
-          <InteractiveDemo guides={demo_20250929202533} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end way3 lightbox -->
 
   <!-- Lightbox End --> 
 </Layout>

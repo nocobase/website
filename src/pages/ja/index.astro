@@ -4,25 +4,252 @@ import InteractiveDemo from "../../components/InteractiveDemo.astro";
 import AIAvatar from '../../components/AIAvatar.astro';
 import demoConfig from "../../data/demo-config-en.json";
 
-const demo_20250928234035 = {
-  "title": "",
+const demo_20260429083220 = {
+  "title": "AI Building",
   "subtitle": "",
   "mainSteps": [],
   "steps": [
     {
-      "description": "",
-      "title": "NocoBase をデプロイすると、まずは空のアプリからスタートします。",
-      "id": "Start"
+      "id": "AI building",
+      "title": "AI Coding Agentで素早く開発",
+      "description": "AI Coding Agentで素早く開発"
     },
     {
-      "id": "step-1-1",
-      "description": "",
+      "id": "step-1",
+      "title": "Step 1",
+      "description": "CLI を使って Claude Code、Codex、Opencode などの Coding Agent を NocoBase に接続します",
+      "image": "https://static-docs.nocobase.com/A1.png",
+      "button": {
+        "id": "button2",
+        "label": "CLI を使って Claude Code、Codex、Opencode などの Coding Agent を NocoBase に接続します",
+        "position": {
+          "left": "28.7%",
+          "top": "48.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase が既存アプリへの接続、または新規アプリのデプロイをガイドします",
+      "image": "https://static-docs.nocobase.com/A2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase が既存アプリへの接続、または新規アプリのデプロイをガイドします",
+        "position": {
+          "left": "47.6%",
+          "top": "47.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "接続が完了したら、自然言語で Agent と対話しながら NocoBase 上で構築を進められます",
+      "image": "https://static-docs.nocobase.com/A3.png",
+      "button": {
+        "id": "button4",
+        "label": "接続が完了したら、自然言語で Agent と対話しながら NocoBase 上で構築を進められます",
+        "position": {
+          "left": "27.8%",
+          "top": "57.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "AI に会社、連絡先、商談、注文などのデータテーブルとフィールドを作成させます",
+      "image": "https://static-docs.nocobase.com/A4.png",
+      "button": {
+        "id": "button5",
+        "label": "AI に会社、連絡先、商談、注文などのデータテーブルとフィールドを作成させます",
+        "position": {
+          "left": "28.7%",
+          "top": "47.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "すべてのテーブルとフィールドが一度に作成されます",
+      "image": "https://static-docs.nocobase.com/A5.png",
+      "button": {
+        "id": "button6",
+        "label": "すべてのテーブルとフィールドが一度に作成されます",
+        "position": {
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "AI にメニュー、ダッシュボード、顧客管理ページを作成させます",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "AI にメニュー、ダッシュボード、顧客管理ページを作成させます",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "3 つのページが一度に作成されます",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "3 つのページが一度に作成されます",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "各ページに必要な機能がひと通りそろっています",
+      "image": "https://static-docs.nocobase.com/A8.png",
+      "button": {
+        "id": "button9",
+        "label": "各ページに必要な機能がひと通りそろっています",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "AI にダッシュボードを更新させ、顧客フォロー向けのパーソナライズされたタスク管理モジュールを追加します",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "AI にダッシュボードを更新させ、顧客フォロー向けのパーソナライズされたタスク管理モジュールを追加します",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "JS Block を使って、見た目も使い勝手も良いタスクブロックを作成しました",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "JS Block を使って、見た目も使い勝手も良いタスクブロックを作成しました",
+        "position": {
+          "left": "44.9%",
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "次に、AI にロールと権限を設計・設定させ、営業、商品運営、物流の各チームがそれぞれの役割を担えるようにします",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "次に、AI にロールと権限を設計・設定させ、営業、商品運営、物流の各チームがそれぞれの役割を担えるようにします",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "すべてのロールが整い、各ロールの権限はフィールド単位まで細かく設定されています",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "すべてのロールが整い、各ロールの権限はフィールド単位まで細かく設定されています",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "最後に、購入金額に応じて顧客ランクを自動で引き上げるワークフローを AI に構築させます",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "最後に、購入金額に応じて顧客ランクを自動で引き上げるワークフローを AI に構築させます",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "完了",
+      "title": "おめでとうございます。シンプルな顧客管理システムの基本形が完成しました",
+      "description": "おめでとうございます。シンプルな顧客管理システムの基本形が完成しました"
+    }
+  ]
+};
+
+const demo_20260429085434 = {
+  "title": "まずは体験: 3 ステップで CRM を作成",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "ノーコード構築",
+      "description": "ノーコード開発、見たままに構築",
+      "title": "ノーコード開発、見たままに構築"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "まずはデータソースとデータモデルを設定しましょう",
       "image": "https://static-docs.nocobase.com/S1.png",
       "button": {
         "id": "button2",
-        "label": "最初に、データモデルとデータソースを設定しましょう。",
+        "label": "まずはデータソースとデータモデルを設定しましょう",
         "position": {
-          "right": "28.1%",
+          "right": "27.8%",
           "top": "13.1%"
         },
         "balloonPos": "left",
@@ -30,258 +257,353 @@ const demo_20250928234035 = {
       }
     },
     {
-      "description": "",
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "NocoBase にはメインデータベースが標準搭載されており、各種外部データソースも追加できます",
       "image": "https://static-docs.nocobase.com/S2.png",
       "button": {
         "id": "button3",
-        "label": "NocoBase にはメインデータベースが組み込まれており、外部データソースも追加できます。",
+        "label": "NocoBase にはメインデータベースが標準搭載されており、各種外部データソースも追加できます",
         "position": {
-          "right": "12.5%",
-          "top": "12.8%"
+          "right": "12.3%",
+          "top": "17.1%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
-      },
-      "id": "step-1-2"
+      }
     },
     {
-      "id": "step-1-3",
-      "description": "",
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "メインデータベースでテーブルとフィールドを作成しましょう",
       "image": "https://static-docs.nocobase.com/S3.png",
       "button": {
-        "id": "button5",
-        "label": "メインデータベースでコレクションとフィールドを作成します。",
+        "id": "button4",
+        "label": "メインデータベースでテーブルとフィールドを作成しましょう",
         "position": {
-          "right": "22.0%",
-          "top": "28.2%"
+          "right": "17.1%",
+          "top": "31.0%"
         },
         "balloonPos": "down",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-4",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S4.png",
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "AI が作成したデータモデルを確認・修正することも、新しいデータテーブルを手動で作ることもできます",
+      "image": "https://static-docs.nocobase.com/B4.png",
       "button": {
         "id": "button5",
-        "label": "ここからコレクションを作成します。",
+        "label": "AI が作成したデータモデルを確認・修正することも、新しいデータテーブルを手動で作ることもできます",
         "position": {
-          "right": "15.2%",
-          "top": "20.5%"
+          "right": "21.3%",
+          "top": "27.8%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-5",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S5.png",
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "数十種類のフィールドタイプから必要なものを選択します",
+      "image": "https://static-docs.nocobase.com/B5.png",
       "button": {
         "id": "button6",
-        "label": "会社、連絡先、商談、受注といったコレクションを作りましょう。",
+        "label": "数十種類のフィールドタイプから必要なものを選択します",
         "position": {
-          "right": "26.5%",
-          "top": "18.6%"
+          "right": "13.0%",
+          "top": "8.7%"
         },
-        "balloonPos": "down",
+        "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-1-6",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S6.png",
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "次にページへ戻り、AI が構築した内容を確認したり、新しいページを手動で作成したりできます",
+      "image": "https://static-docs.nocobase.com/B6.png",
       "button": {
         "id": "button7",
-        "label": "次に、コレクションにフィールドを追加します。",
+        "label": "次にページへ戻り、AI が構築した内容を確認したり、新しいページを手動で作成したりできます",
         "position": {
-          "right": "21.2%",
-          "top": "51.2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-7",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S7.png",
-      "button": {
-        "id": "button8",
-        "label": "数十種類のフィールドタイプから選択できます。",
-        "position": {
-          "right": "19.7%",
-          "top": "51.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-8",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S8.png",
-      "button": {
-        "id": "button9",
-        "label": "コレクションにフィールドが作成されました。",
-        "position": {
-          "right": "42.5%",
-          "top": "67.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "description": "",
-      "targetStepId": null,
-      "id": "Wait",
-      "title": "もっと簡単にできないでしょうか？"
-    },
-    {
-      "id": "step-1-9",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S9.png",
-      "button": {
-        "id": "button11",
-        "label": "データモデリングの達人 Orin に手伝ってもらいましょう。",
-        "position": {
-          "right": "22.2%",
-          "top": "38.3%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-10",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S11-EN.png",
-      "button": {
-        "id": "button12",
-        "label": "Orin に必要なものを伝えます。",
-        "position": {
-          "right": "31.6%",
-          "top": "86.2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-11",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S12-EN.png",
-      "button": {
-        "id": "button13",
-        "label": "Orin がデータモデルを設計してくれました。",
-        "position": {
-          "right": "29.7%",
-          "top": "39.4%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-12",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S13-EN.png",
-      "button": {
-        "id": "button14",
-        "label": "Orin が作成したデータモデルを開き、確認・編集して確定します。",
-        "position": {
-          "left": "22.8%",
-          "top": "74.4%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-1-13",
-      "description": "",
-      "image": "https://static-docs.nocobase.com/S14-EN.png",
-      "button": {
-        "id": "button15",
-        "label": "コレクションとフィールドが問題なく作成されました。",
-        "position": {
-          "left": "44.9%",
-          "top": "89.1%"
+          "left": "50%",
+          "top": "50%"
         },
         "balloonPos": "up",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "Congratulations",
-      "title": "データモデルの準備が完了しました。ウィンドウを閉じて続行してください。",
-      "description": "",
-      "targetStepId": null
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929185215 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "Step Two",
-      "title": "データソースのデータをページに表示するブロックを追加します。",
-      "description": "データソースのデータをページに表示するブロックを追加します。"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "UI 設定モードに切り替えて、WYSIWYG 開発に入ります。",
-      "image": "https://static-docs.nocobase.com/S2-1.png",
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "UI 設定モードに切り替えると、見たまま編集できる開発状態に入ります",
+      "image": "https://static-docs.nocobase.com/B7.png",
       "button": {
-        "id": "button2",
-        "label": "UI 設定モードに切り替えて、WYSIWYG 開発に入ります。",
+        "id": "button8",
+        "label": "UI 設定モードに切り替えると、見たまま編集できる開発状態に入ります",
         "position": {
-          "right": "14.9%",
-          "top": "13.5%"
+          "right": "18.8%",
+          "top": "8.9%"
         },
-        "balloonPos": "down",
+        "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "まず最初にページを作成します。",
-      "image": "https://static-docs.nocobase.com/S2-2.png",
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "ページに「テーブルブロック」を追加し、「商品」テーブルを選ぶと、そのデータを表示できます",
+      "image": "https://static-docs.nocobase.com/B8.png",
       "button": {
-        "id": "button3",
-        "label": "まず最初にページを作成します。",
+        "id": "button9",
+        "label": "ページに「テーブルブロック」を追加し、「商品」テーブルを選ぶと、そのデータを表示できます",
         "position": {
-          "left": "24.9%",
-          "top": "14.1%"
+          "left": "38.1%",
+          "top": "38.3%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
       }
     },
     {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "テーブルブロックを設定して、必要なフィールドを表示します",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "テーブルブロックを設定して、必要なフィールドを表示します",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "テーブルに必要な操作を追加します",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "テーブルに必要な操作を追加します",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "商品の分類をグラフで分析したいので、Charts ブロックを追加します",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "商品の分類をグラフで分析したいので、Charts ブロックを追加します",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "query と chart を設定し、商品の分布をわかりやすく可視化します",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "query と chart を設定し、商品の分布をわかりやすく可視化します",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "さらに商品データ入力用のフォームブロックを追加します",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "さらに商品データ入力用のフォームブロックを追加します",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Step 15",
+      "description": "最後に、これらのブロックをドラッグして必要に応じて配置します。ページ上の 3 つのブロックはいずれも「商品」テーブルのデータを表示します",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "最後に、これらのブロックをドラッグして必要に応じて配置します。ページ上の 3 つのブロックはいずれも「商品」テーブルのデータを表示します",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Step 16",
+      "description": "ロールと権限の設定ページで、AI が構築した内容を確認・修正します",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "ロールと権限の設定ページで、AI が構築した内容を確認・修正します",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Step 17",
+      "description": "ロールは手動でも作成できます",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "ロールは手動でも作成できます",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Step 18",
+      "description": "各ロールごとに詳細な権限を確認・修正します",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "各ロールごとに詳細な権限を確認・修正します",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Step 19",
+      "description": "ワークフロー設定ページで、AI が構築した内容を確認・修正します",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "ワークフロー設定ページで、AI が構築した内容を確認・修正します",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Step 20",
+      "description": "数十種類のノードを使ってワークフローを設定・修正できます",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "数十種類のノードを使ってワークフローを設定・修正できます",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "完了",
+      "title": "おめでとうございます。顧客管理システムはすぐに利用開始できます",
+      "description": "おめでとうございます。顧客管理システムはすぐに利用開始できます"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "まずは体験: 3 ステップで CRM を作成",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI 社員",
+      "title": "AI 社員に業務を手伝わせる",
+      "description": "AI 社員に業務を手伝わせる"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase の AI 社員は、人のさまざまな業務をサポートできます",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "NocoBase の AI 社員は、人のさまざまな業務をサポートできます",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "顧客テーブルにデータインサイト担当 Viz を追加します",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "顧客テーブルにデータインサイト担当 Viz を追加します",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
       "id": "step-4",
-      "title": "ステップ 4",
-      "description": "ページにテーブルブロックを追加し、「リード」コレクションを選択してデータを表示します。",
-      "image": "https://static-docs.nocobase.com/S2-3.png",
+      "title": "Step 4",
+      "description": "Viz にタスクを設定し、顧客データの分析とレポート作成を支援させます",
+      "image": "https://static-docs.nocobase.com/C3.png",
       "button": {
         "id": "button4",
-        "label": "ページにテーブルブロックを追加し、「リード」コレクションを選択してデータを表示します。",
+        "label": "Viz にタスクを設定し、顧客データの分析とレポート作成を支援させます",
         "position": {
-          "left": "41.0%",
+          "right": "33.4%",
           "top": "39.9%"
         },
         "balloonPos": "right",
@@ -290,15 +612,15 @@ const demo_20250929185215 = {
     },
     {
       "id": "step-5",
-      "title": "ステップ 5",
-      "description": "テーブルブロックを設定して必要なフィールドを表示します。",
-      "image": "https://static-docs.nocobase.com/S2-4.png",
+      "title": "Step 5",
+      "description": "クリックして Viz を呼び出します",
+      "image": "https://static-docs.nocobase.com/C4.png",
       "button": {
         "id": "button5",
-        "label": "テーブルブロックを設定して必要なフィールドを表示します。",
+        "label": "クリックして Viz を呼び出します",
         "position": {
-          "right": "13.2%",
-          "top": "21.7%"
+          "right": "22.0%",
+          "top": "37.6%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -306,15 +628,15 @@ const demo_20250929185215 = {
     },
     {
       "id": "step-6",
-      "title": "ステップ 6",
-      "description": "リードの業種分布もチャートで分析したいので、チャートブロックを追加します。",
-      "image": "https://static-docs.nocobase.com/S2-5.png",
+      "title": "Step 6",
+      "description": "Viz は顧客データを分析し、PDF、Markdown、HTML の 3 形式で出力を生成してくれます",
+      "image": "https://static-docs.nocobase.com/C5.png",
       "button": {
         "id": "button6",
-        "label": "リードの業種分布もチャートで分析したいので、チャートブロックを追加します。",
+        "label": "Viz は顧客データを分析し、PDF、Markdown、HTML の 3 形式で出力を生成してくれます",
         "position": {
-          "left": "13.9%",
-          "top": "64.7%"
+          "left": "27.5%",
+          "top": "35.4%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
@@ -322,15 +644,15 @@ const demo_20250929185215 = {
     },
     {
       "id": "step-7",
-      "title": "ステップ 7",
-      "description": "クエリとチャートを設定します。",
-      "image": "https://static-docs.nocobase.com/S2-6.png",
+      "title": "Step 7",
+      "description": "詳細ブロックに調査担当 Vera を追加します",
+      "image": "https://static-docs.nocobase.com/C6.png",
       "button": {
         "id": "button7",
-        "label": "クエリとチャートを設定します。",
+        "label": "詳細ブロックに調査担当 Vera を追加します",
         "position": {
-          "right": "35.2%",
-          "top": "41.3%"
+          "right": "25.5%",
+          "top": "73.3%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -338,241 +660,15 @@ const demo_20250929185215 = {
     },
     {
       "id": "step-8",
-      "title": "ステップ 8",
-      "description": "業種分布がわかりやすく可視化されました。",
-      "image": "https://static-docs.nocobase.com/S2-7.png",
+      "title": "Step 8",
+      "description": "Vera にタスクを設定し、オンラインで情報を収集して顧客の背景調査を行わせます",
+      "image": "https://static-docs.nocobase.com/C7.png",
       "button": {
         "id": "button8",
-        "label": "業種分布がわかりやすく可視化されました。",
+        "label": "Vera にタスクを設定し、オンラインで情報を収集して顧客の背景調査を行わせます",
         "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "ステップ 9",
-      "description": "次に、リード情報を入力するフォームが必要です。フォームブロックを追加して「リード」コレクションを選択します。",
-      "image": "https://static-docs.nocobase.com/S2-8.png",
-      "button": {
-        "id": "button9",
-        "label": "次に、リード情報を入力するフォームが必要です。フォームブロックを追加して「リード」コレクションを選択します。",
-        "position": {
-          "left": "14.4%",
-          "top": "52.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "ステップ 10",
-      "description": "フォームブロックを設定し、必要なフィールドを表示します。",
-      "image": "https://static-docs.nocobase.com/S2-9.png",
-      "button": {
-        "id": "button10",
-        "label": "フォームブロックを設定し、必要なフィールドを表示します。",
-        "position": {
-          "left": "12.3%",
-          "top": "79.2%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "ステップ 11",
-      "description": "最後に、ブロックをドラッグして配置を調整します。このページには「リード」コレクションのデータを表示する 3 つのブロックが揃いました。",
-      "image": "https://static-docs.nocobase.com/S2-10.png",
-      "button": {
-        "id": "button11",
-        "label": "最後に、ブロックをドラッグして配置を調整します。このページには「リード」コレクションのデータを表示する 3 つのブロックが揃いました。",
-        "position": {
-          "left": "30.0%",
-          "top": "14.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Wait",
-      "title": "カスタムブロックが欲しいときは？",
-      "description": "カスタムブロックが欲しいときは？"
-    },
-    {
-      "id": "step-13",
-      "title": "ステップ 13",
-      "description": "JS ブロックを追加します。",
-      "image": "https://static-docs.nocobase.com/S2-11.png",
-      "button": {
-        "id": "button13",
-        "label": "JS ブロックを追加します。",
-        "position": {
-          "left": "13.9%",
-          "top": "78.1%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-14",
-      "title": "ステップ 14",
-      "description": "フロントエンドの達人 Nathan に要望を伝えましょう。",
-      "image": "https://static-docs.nocobase.com/S2-12-EN.png",
-      "button": {
-        "id": "button14",
-        "label": "フロントエンドの達人 Nathan に要望を伝えましょう。",
-        "position": {
-          "right": "28.0%",
-          "top": "28.2%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-15",
-      "title": "ステップ 15",
-      "description": "Nathan がブロックを作ってくれました。",
-      "image": "https://static-docs.nocobase.com/S2-13.png",
-      "button": {
-        "id": "button15",
-        "label": "Nathan がブロックを作ってくれました。",
-        "position": {
-          "left": "13.7%",
-          "top": "47.1%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Congratulations",
-      "title": "ページにデータを表示する方法が分かりました。ウィンドウを閉じて続行してください。",
-      "description": "ページにデータを表示する方法が分かりました。ウィンドウを閉じて続行してください。"
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929192111 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "Step Three",
-      "title": "データを処理するアクションを設定します。",
-      "description": "データを処理するアクションを設定します。"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "「リード」データを検索・編集・追加・削除できるようにします。",
-      "image": "https://static-docs.nocobase.com/S3-1.png",
-      "button": {
-        "id": "button2",
-        "label": "「リード」データを検索・編集・追加・削除できるようにします。",
-        "position": {
-          "left": "37.1%",
-          "top": "52.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "テーブルブロックでフィルター、追加、インポート、印刷を有効にします。",
-      "image": "https://static-docs.nocobase.com/S3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "テーブルブロックでフィルター、追加、インポート、印刷を有効にします。",
-        "position": {
-          "right": "10.3%",
-          "top": "26.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "ステップ 4",
-      "description": "単一行向けのアクションも追加できます。",
-      "image": "https://static-docs.nocobase.com/S3-3.png",
-      "button": {
-        "id": "button4",
-        "label": "単一行向けのアクションも追加できます。",
-        "position": {
-          "left": "48.3%",
-          "top": "23.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "ステップ 5",
-      "description": "フォームブロックで送信とワークフローのトリガーを有効にします。",
-      "image": "https://static-docs.nocobase.com/S3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "フォームブロックで送信とワークフローのトリガーを有効にします。",
-        "position": {
-          "left": "24.6%",
-          "top": "67.4%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "ステップ 6",
-      "description": "これで「リード」コレクションに対してさまざまな操作が行えます。",
-      "image": "https://static-docs.nocobase.com/S3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "これで「リード」コレクションに対してさまざまな操作が行えます。",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Next",
-      "title": "カスタムアクションが必要なときは？",
-      "description": "カスタムアクションが必要なときは？"
-    },
-    {
-      "id": "step-8",
-      "title": "ステップ 8",
-      "description": "フォームブロックに JS アクションを追加しましょう。",
-      "image": "https://static-docs.nocobase.com/S3-6.png",
-      "button": {
-        "id": "button8",
-        "label": "フォームブロックに JS アクションを追加しましょう。",
-        "position": {
-          "left": "28.3%",
-          "top": "80.5%"
+          "right": "32.5%",
+          "top": "39.6%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
@@ -580,420 +676,15 @@ const demo_20250929192111 = {
     },
     {
       "id": "step-9",
-      "title": "ステップ 9",
-      "description": "もう一度 Nathan を呼んで、必要なことを伝えます。",
-      "image": "https://static-docs.nocobase.com/S3-7-EN.png",
+      "title": "Step 9",
+      "description": "クリックして Vera を起動します",
+      "image": "https://static-docs.nocobase.com/C8.png",
       "button": {
         "id": "button9",
-        "label": "もう一度 Nathan を呼んで、必要なことを伝えます。",
-        "position": {
-          "right": "30.1%",
-          "top": "28.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "ステップ 10",
-      "description": "Nathan がコードを生成してくれました。",
-      "image": "https://static-docs.nocobase.com/S3-8.png",
-      "button": {
-        "id": "button10",
-        "label": "Nathan がコードを生成してくれました。",
-        "position": {
-          "right": "21.7%",
-          "top": "70.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "ステップ 11",
-      "description": "実行して結果を確認します。これでサードパーティ API からデータを取得し、フォームを自動入力できるようになりました。",
-      "image": "https://static-docs.nocobase.com/S3-9.png",
-      "button": {
-        "id": "button11",
-        "label": "実行して結果を確認します。これでサードパーティ API からデータを取得し、フォームを自動入力できるようになりました。",
-        "position": {
-          "left": "18.4%",
-          "top": "66.4%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Congratulations",
-      "title": "基本的なアプリが完成しました。ウィンドウを閉じて、さらに機能を探索してください。",
-      "description": "基本的なアプリが完成しました。ウィンドウを閉じて、さらに機能を探索してください。"
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929193842 = {
-  "title": "体験デモ：3 ステップで CRM を構築",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "AI Employees",
-      "title": "NocoBase では、プロフェッショナルな AI 従業員を自由に活用できます。",
-      "description": "NocoBase では、プロフェッショナルな AI 従業員を自由に活用できます。"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "「リード」データを入力するときは、Dex に手伝ってもらいましょう。",
-      "image": "https://static-docs.nocobase.com/F1-1.png",
-      "button": {
-        "id": "button2",
-        "label": "「リード」データを入力するときは、Dex に手伝ってもらいましょう。",
-        "position": {
-          "left": "46.0%",
-          "top": "76.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "バラバラなリード情報やファイルを Dex に送ります。",
-      "image": "https://static-docs.nocobase.com/F1-2.png",
-      "button": {
-        "id": "button3",
-        "label": "バラバラなリード情報やファイルを Dex に送ります。",
-        "position": {
-          "right": "26.3%",
-          "top": "61.1%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "ステップ 4",
-      "description": "Dex がデータを整理し、フォームを自動入力します。",
-      "image": "https://static-docs.nocobase.com/F1-3.png",
-      "button": {
-        "id": "button4",
-        "label": "Dex がデータを整理し、フォームを自動入力します。",
-        "position": {
-          "right": "31.7%",
-          "top": "66.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "ステップ 5",
-      "description": "次に Lexi を呼び出し、フォーム内容をタイ語に翻訳します。",
-      "image": "https://static-docs.nocobase.com/F1-4.png",
-      "button": {
-        "id": "button5",
-        "label": "次に Lexi を呼び出し、フォーム内容をタイ語に翻訳します。",
-        "position": {
-          "right": "32.1%",
-          "top": "64.5%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "ステップ 6",
-      "description": "新しいリードが現れたら、Vera に調査を依頼して意思決定を支援してもらいます。",
-      "image": "https://static-docs.nocobase.com/F1-5.png",
-      "button": {
-        "id": "button6",
-        "label": "新しいリードが現れたら、Vera に調査を依頼して意思決定を支援してもらいます。",
-        "position": {
-          "right": "9.5%",
-          "top": "6.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "ステップ 7",
-      "description": "Vera はワンクリックで調査を実行し、リサーチレポートを届けてくれます。",
-      "image": "https://static-docs.nocobase.com/F1-6.png",
-      "button": {
-        "id": "button7",
-        "label": "Vera はワンクリックで調査を実行し、リサーチレポートを届けてくれます。",
-        "position": {
-          "right": "27.9%",
-          "top": "50.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "ステップ 8",
-      "description": "Viz がデータ分析とビジュアルレポート作成を支援します。",
-      "image": "https://static-docs.nocobase.com/F1-7.png",
-      "button": {
-        "id": "button8",
-        "label": "Viz がデータ分析とビジュアルレポート作成を支援します。",
-        "position": {
-          "right": "28.3%",
-          "top": "56.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "More?",
-      "title": "業務対応やシステム構築を担う AI 従業員をもっと増やせますか？",
-      "description": "業務対応やシステム構築を担う AI 従業員をもっと増やせますか？"
-    },
-    {
-      "id": "step-10",
-      "title": "ステップ 10",
-      "description": "もちろんです。AI 従業員の管理画面に進みましょう。",
-      "image": "https://static-docs.nocobase.com/F1-8.png",
-      "button": {
-        "id": "button10",
-        "label": "もちろんです。AI 従業員の管理画面に進みましょう。",
+        "label": "クリックして Vera を起動します",
         "position": {
           "right": "22.3%",
-          "top": "22.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "ステップ 11",
-      "description": "契約レビューの専門家である AI 従業員 Max を作成します。",
-      "image": "https://static-docs.nocobase.com/F1-9.png",
-      "button": {
-        "id": "button11",
-        "label": "契約レビューの専門家である AI 従業員 Max を作成します。",
-        "position": {
-          "left": "48.8%",
-          "top": "26.4%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-12",
-      "title": "ステップ 12",
-      "description": "スキル、モデル、ナレッジベースを設定します。",
-      "image": "https://static-docs.nocobase.com/F1-10.png",
-      "button": {
-        "id": "button12",
-        "label": "スキル、モデル、ナレッジベースを設定します。",
-        "position": {
-          "right": "16.8%",
-          "top": "19.0%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-13",
-      "title": "ステップ 13",
-      "description": "必要な場所に配置します。",
-      "image": "https://static-docs.nocobase.com/F1-11.png",
-      "button": {
-        "id": "button13",
-        "label": "必要な場所に配置します。",
-        "position": {
-          "right": "15.2%",
-          "top": "77.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-14",
-      "title": "ステップ 14",
-      "description": "そこですべきタスクを割り当てます。",
-      "image": "https://static-docs.nocobase.com/F1-12.png",
-      "button": {
-        "id": "button14",
-        "label": "そこですべきタスクを割り当てます。",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Congratulations",
-      "title": "多彩なプロフェッショナル AI 従業員を手に入れました。ウィンドウを閉じて、さらに機能を探索してください。",
-      "description": "多彩なプロフェッショナル AI 従業員を手に入れました。ウィンドウを閉じて、さらに機能を探索してください。"
-    },
-    {
-      "id": " ",
-      "title": " ",
-      "description": "",
-      "targetStepId": null
-    }
-  ]
-};
-
-const demo_20250929200011 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "Workflow",
-      "title": "ワークフローでロジックを構築し、業務を自動化します。",
-      "description": "ワークフローでロジックを構築し、業務を自動化します。"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "このアプリでは、業務を自動で回すために数十本のワークフローを用意しています。",
-      "image": "https://static-docs.nocobase.com/F2-1.png",
-      "button": {
-        "id": "button2",
-        "label": "このアプリでは、業務を自動で回すために数十本のワークフローを用意しています。",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "ここから新しいワークフローを追加し、トリガーを選択します。多数のトリガーが用意されています。",
-      "image": "https://static-docs.nocobase.com/F2-2.png",
-      "button": {
-        "id": "button3",
-        "label": "ここから新しいワークフローを追加し、トリガーを選択します。多数のトリガーが用意されています。",
-        "position": {
-          "right": "49.7%",
-          "top": "21.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "ステップ 4",
-      "description": "続いてロジックとアクションを設定します。",
-      "image": "https://static-docs.nocobase.com/F2-3.png",
-      "button": {
-        "id": "button4",
-        "label": "続いてロジックとアクションを設定します。",
-        "position": {
-          "right": "23.1%",
-          "top": "32.8%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "ステップ 5",
-      "description": "プラスアイコンをクリックしてノードを追加します。",
-      "image": "https://static-docs.nocobase.com/F2-4.png",
-      "button": {
-        "id": "button5",
-        "label": "プラスアイコンをクリックしてノードを追加します。",
-        "position": {
-          "right": "47.7%",
-          "top": "27.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "ステップ 6",
-      "description": "フロー制御、計算、データ操作、手動ステップ、AI ノードなど、数十種類のノードを組み合わせられます。",
-      "image": "https://static-docs.nocobase.com/F2-5.png",
-      "button": {
-        "id": "button6",
-        "label": "フロー制御、計算、データ操作、手動ステップ、AI ノードなど、数十種類のノードを組み合わせられます。",
-        "position": {
-          "right": "48.7%",
-          "top": "24.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "ステップ 7",
-      "description": "稼働中のワークフローを確認してみましょう。",
-      "image": "https://static-docs.nocobase.com/F2-6.png",
-      "button": {
-        "id": "button7",
-        "label": "稼働中のワークフローを確認してみましょう。",
-        "position": {
-          "right": "37.8%",
-          "top": "26.2%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "ステップ 8",
-      "description": "手動でトリガーして結果をデバッグできます。",
-      "image": "https://static-docs.nocobase.com/F2-7.png",
-      "button": {
-        "id": "button8",
-        "label": "手動でトリガーして結果をデバッグできます。",
-        "position": {
-          "right": "22.5%",
-          "top": "12.1%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "ステップ 9",
-      "description": "バージョンの記録や切り替えも可能です。",
-      "image": "https://static-docs.nocobase.com/F2-8.png",
-      "button": {
-        "id": "button9",
-        "label": "バージョンの記録や切り替えも可能です。",
-        "position": {
-          "right": "15.9%",
-          "top": "15.7%"
+          "top": "16.0%"
         },
         "balloonPos": "left",
         "balloonLength": "medium"
@@ -1001,14 +692,30 @@ const demo_20250929200011 = {
     },
     {
       "id": "step-10",
-      "title": "ステップ 10",
-      "description": "実行履歴を確認できます。",
-      "image": "https://static-docs.nocobase.com/F2-9.png",
+      "title": "Step 10",
+      "description": "彼女は数十の情報源からその顧客に関する情報を集め、背景調査レポートにまとめました",
+      "image": "https://static-docs.nocobase.com/C9.png",
       "button": {
         "id": "button10",
-        "label": "実行履歴を確認できます。",
+        "label": "彼女は数十の情報源からその顧客に関する情報を集め、背景調査レポートにまとめました",
         "position": {
-          "right": "46.2%",
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "さらに NocoBase を Hermes や OpenClaw などの Agent に接続すれば、Slack、WhatsApp、Feishu から直接 NocoBase と対話できます",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "さらに NocoBase を Hermes や OpenClaw などの Agent に接続すれば、Slack、WhatsApp、Feishu から直接 NocoBase と対話できます",
+        "position": {
+          "left": "48.8%",
           "top": "31.7%"
         },
         "balloonPos": "left",
@@ -1016,436 +723,94 @@ const demo_20250929200011 = {
       }
     },
     {
-      "id": "step-11",
-      "title": "ステップ 11",
-      "description": "各ノードの実行ログも確認できます。",
-      "image": "https://static-docs.nocobase.com/F2-10.png",
-      "button": {
-        "id": "button11",
-        "label": "各ノードの実行ログも確認できます。",
-        "position": {
-          "right": "37.4%",
-          "top": "62.5%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
       "id": "step-12",
-      "title": "ステップ 12",
-      "description": "続けて確認します。",
-      "image": "https://static-docs.nocobase.com/F2-11.png",
+      "title": "Step 12",
+      "description": "Feishu、WeChat、Telegram から直接指示を出し、この会話を整理して顧客情報を NocoBase に追加できます",
+      "image": "https://static-docs.nocobase.com/C11.png",
       "button": {
         "id": "button12",
-        "label": "続けて確認します。",
+        "label": "Feishu、WeChat、Telegram から直接指示を出し、この会話を整理して顧客情報を NocoBase に追加できます",
         "position": {
-          "left": "50%",
-          "top": "50%"
+          "right": "28.5%",
+          "top": "39.6%"
         },
-        "balloonPos": "up",
+        "balloonPos": "left",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "Congratulations",
-      "title": "ワークフローがビジネスを自動で動かし続けます。ウィンドウを閉じて、さらに機能を探索してください。",
-      "description": "ワークフローがビジネスを自動で動かし続けます。ウィンドウを閉じて、さらに機能を探索してください。"
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
-    }
-  ]
-};
-
-const demo_20250929200757 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "Permissions",
-      "title": "リソースとアクションに基づくアクセス制御モデル",
-      "description": "リソースとアクションに基づくアクセス制御モデル"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "必要に応じてロールを作成します。",
-      "image": "https://static-docs.nocobase.com/F3-1.png",
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "NocoBase 上で顧客が追加されたことを確認できます",
+      "image": "https://static-docs.nocobase.com/C12.png",
       "button": {
-        "id": "button2",
-        "label": "必要に応じてロールを作成します。",
+        "id": "button13",
+        "label": "NocoBase 上で顧客が追加されたことを確認できます",
         "position": {
-          "left": "25.2%",
-          "top": "21.9%"
+          "right": "44.1%",
+          "top": "48.1%"
         },
         "balloonPos": "right",
         "balloonLength": "medium"
       }
     },
     {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "ロールにシステム権限を割り当てます。プラグイン権限も含まれます。",
-      "image": "https://static-docs.nocobase.com/F3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "ロールにシステム権限を割り当てます。プラグイン権限も含まれます。",
-        "position": {
-          "left": "39.9%",
-          "top": "29.5%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "ステップ 4",
-      "description": "ロールごとにデータソース権限を設定します。",
-      "image": "https://static-docs.nocobase.com/F3-3.png",
-      "button": {
-        "id": "button4",
-        "label": "ロールごとにデータソース権限を設定します。",
-        "position": {
-          "left": "46.6%",
-          "top": "31.3%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "ステップ 5",
-      "description": "データソースごとのグローバル権限を設定します。",
-      "image": "https://static-docs.nocobase.com/F3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "データソースごとのグローバル権限を設定します。",
-        "position": {
-          "right": "28.4%",
-          "top": "44.9%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "ステップ 6",
-      "description": "コレクション単位の権限を設定します。",
-      "image": "https://static-docs.nocobase.com/F3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "コレクション単位の権限を設定します。",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "ステップ 7",
-      "description": "データセットごとのアクション権限を構成します。",
-      "image": "https://static-docs.nocobase.com/F3-6.png",
-      "button": {
-        "id": "button7",
-        "label": "データセットごとのアクション権限を構成します。",
-        "position": {
-          "right": "15.8%",
-          "top": "36.2%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "ステップ 8",
-      "description": "フィールドごとのアクション権限を構成します。",
-      "image": "https://static-docs.nocobase.com/F3-6.png",
-      "button": {
-        "id": "button8",
-        "label": "フィールドごとのアクション権限を構成します。",
-        "position": {
-          "right": "29.1%",
-          "top": "56.7%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "ステップ 9",
-      "description": "ルート（メニュー）権限を設定します。",
-      "image": "https://static-docs.nocobase.com/F3-7.png",
-      "button": {
-        "id": "button9",
-        "label": "ルート（メニュー）権限を設定します。",
-        "position": {
-          "right": "42.8%",
-          "top": "24.4%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-10",
-      "title": "ステップ 10",
-      "description": "AI 従業員の権限を設定します。",
-      "image": "https://static-docs.nocobase.com/F3-8.png",
-      "button": {
-        "id": "button10",
-        "label": "AI 従業員の権限を設定します。",
-        "position": {
-          "right": "27.0%",
-          "top": "23.5%"
-        },
-        "balloonPos": "up",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-11",
-      "title": "ステップ 11",
-      "description": "権限ポリシーを定義します。複数のロールを持つユーザーが独立して切り替えるか、統合して利用するかを指定できます。",
-      "image": "https://static-docs.nocobase.com/F3-9.png",
-      "button": {
-        "id": "button11",
-        "label": "権限ポリシーを定義します。複数のロールを持つユーザーが独立して切り替えるか、統合して利用するかを指定できます。",
-        "position": {
-          "left": "40.5%",
-          "top": "22.9%"
-        },
-        "balloonPos": "right",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Congratulations",
-      "title": "NocoBase には強力な権限管理機能があります。ウィンドウを閉じて、さらに機能を探索してください。",
-      "description": "NocoBase には強力な権限管理機能があります。ウィンドウを閉じて、さらに機能を探索してください。"
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
-    }
-  ]
-};
-
-const demo_20250929202533 = {
-  "title": "",
-  "subtitle": "",
-  "mainSteps": [],
-  "steps": [
-    {
-      "id": "Integration",
-      "title": "NocoBase を他のアプリケーションと連携します。",
-      "description": "NocoBase を他のアプリケーションと連携します。"
-    },
-    {
-      "id": "step-2",
-      "title": "ステップ 2",
-      "description": "一般的なプロトコルに対応した SSO で NocoBase にログインします。",
-      "image": "https://static-docs.nocobase.com/W3-1.png",
-      "button": {
-        "id": "button2",
-        "label": "一般的なプロトコルに対応した SSO で NocoBase にログインします。",
-        "position": {
-          "right": "12.4%",
-          "top": "18.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-3",
-      "title": "ステップ 3",
-      "description": "外部アプリケーションのデータベースを NocoBase のデータソースとして追加します。",
-      "image": "https://static-docs.nocobase.com/W3-2.png",
-      "button": {
-        "id": "button3",
-        "label": "外部アプリケーションのデータベースを NocoBase のデータソースとして追加します。",
-        "position": {
-          "right": "12.6%",
-          "top": "17.6%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-4",
-      "title": "ステップ 4",
-      "description": "ワークフローの HTTP リクエストノードでサードパーティ API を呼び出します。",
-      "image": "https://static-docs.nocobase.com/W3-3.png",
-      "button": {
-        "id": "button4",
-        "label": "ワークフローの HTTP リクエストノードでサードパーティ API を呼び出します。",
-        "position": {
-          "left": "47.8%",
-          "top": "41.8%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-5",
-      "title": "ステップ 5",
-      "description": "ワークフローの Webhook トリガーで他アプリからのリクエストを受け取ります。",
-      "image": "https://static-docs.nocobase.com/W3-4.png",
-      "button": {
-        "id": "button5",
-        "label": "ワークフローの Webhook トリガーで他アプリからのリクエストを受け取ります。",
-        "position": {
-          "left": "47.3%",
-          "top": "25.9%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-6",
-      "title": "ステップ 6",
-      "description": "NocoBase は他アプリから利用できる HTTP API を自動生成します。",
-      "image": "https://static-docs.nocobase.com/W3-5.png",
-      "button": {
-        "id": "button6",
-        "label": "NocoBase は他アプリから利用できる HTTP API を自動生成します。",
-        "position": {
-          "left": "50%",
-          "top": "50%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-7",
-      "title": "ステップ 7",
-      "description": "NocoBase のページを他のアプリに埋め込みます。",
-      "image": "https://static-docs.nocobase.com/W3-6.png",
-      "button": {
-        "id": "button7",
-        "label": "NocoBase のページを他のアプリに埋め込みます。",
-        "position": {
-          "right": "15.7%",
-          "top": "25.5%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-8",
-      "title": "ステップ 8",
-      "description": "他アプリのページを NocoBase に埋め込みます。",
-      "image": "https://static-docs.nocobase.com/W3-7.png",
-      "button": {
-        "id": "button8",
-        "label": "他アプリのページを NocoBase に埋め込みます。",
-        "position": {
-          "left": "48.8%",
-          "top": "60.7%"
-        },
-        "balloonPos": "down",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "step-9",
-      "title": "ステップ 9",
-      "description": "JS アクションや JS ブロックなどを使って、サードパーティと自在に連携します。",
-      "image": "https://static-docs.nocobase.com/W3-8.png",
-      "button": {
-        "id": "button9",
-        "label": "JS アクションや JS ブロックなどを使って、サードパーティと自在に連携します。",
-        "position": {
-          "right": "34.3%",
-          "top": "46.7%"
-        },
-        "balloonPos": "left",
-        "balloonLength": "medium"
-      }
-    },
-    {
-      "id": "Congratulations",
-      "title": "目的に合わせて NocoBase と他システムを連携できます。ウィンドウを閉じて、さらに機能を探索してください。",
-      "description": "NocoBase は他のアプリケーションと簡単に連携できます。ウィンドウを閉じて、さらに機能を探索してください。"
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": ""
+      "id": "完了",
+      "title": "おめでとうございます。完全なインテリジェント顧客管理システムの準備が整いました",
+      "description": "おめでとうございます。完全なインテリジェント顧客管理システムの準備が整いました"
     }
   ]
 };
 ---
 
 <Layout>
-  <!-- Hero Start -->
-  <section class="bg-half-260 bg-light d-table w-100">
+    <!-- Hero Start -->
+    <section class="bg-half-260 bg-light d-table w-100">
     <!-- <div class="bg-overlay"></div> -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="title-heading text-center mt-4">
-            <h1 class="display-4 fw-bold mb-3">超拡張可能な<br />AIノーコード開発プラットフォーム</h1>
-            <p class="para-desc mx-auto text-muted">
-              完全なコントロール、無限の拡張性、AIの協働。<br />
-              チームが変化に素早く対応し、コストを大幅に削減。<br />
-              長年の開発も、数百万円規模の投資も不要。<br />
-              数分で NocoBase をデプロイすれば、すぐにすべてが手に入ります。
-            </p>
-            <div class="mt-4 pt-2">
-              <a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" title="仕組みを見る"  class="btn btn-outline-primary mb-2">仕組みを見る<i class="uil uil-angle-right-b"></i></a>
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">デモを試す<i class="uil uil-angle-right-b"></i></a>
-            </div>
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">AI + ノーコードで<br /><span class="text-primary fw-bold">信頼できる</span>業務システムを構築</h1>
+          <p class="para-desc mx-auto text-muted">
+            NocoBase は、企業向け業務システムをすばやく構築するためのオープンソース AI + ノーコード開発プラットフォームです。AI にゼロからコードを生成させるのとは異なり、NocoBase は本番環境で検証済みの基盤機能と、見たまま操作できるノーコード UI を提供します。これにより、AI と人が効率よく協働し、開発スピードとシステムの信頼性を両立できます。
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="https://v2.docs.nocobase.com/ja/get-started/how-nocobase-works" target="_blank" title="NocoBase の仕組みを見る" class="btn btn-outline-primary mb-2">仕組みを見る<i class="uil uil-angle-right-b"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">オンラインで試す<i class="uil uil-angle-right-b"></i></a>
           </div>
+        </div>
 
-          <!-- Hero Users start -->
-          <div class="row justify-content-center text-center mt-5 pt-5"><span class="para-desc mx-auto text-muted">実際の業務システムで利用されています</span></div>
-          <div class="row justify-content-center">
-              <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
-              </div><!--end col-->
+        <!-- Hero Users start -->
+        <div class="row justify-content-center text-center mt-5 pt-5"><span class="para-desc mx-auto text-muted">多くの企業が実運用の業務システムで活用</span></div>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
 
-              <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
-              </div> -->
-              
-              <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
-              </div><!--end col-->
-              
-              <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
-              </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
+            </div> -->
 
-              <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
-              </div><!--end col-->
-              
-              <div class="col-lg-2 col-md-2 col-6 text-center">
-                  <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
-              </div><!--end col-->
-          </div><!--end row-->
-          <!-- Hero Users End -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
 
-          <div class="row justify-content-center" id="section-video">
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+        </div><!--end row-->
+        <!-- Hero Users End -->
+
+        <div class="row justify-content-center " id="section-video">
           <div class="col-lg-10 text-center">
             <div class="home-video">
               <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
@@ -1458,67 +823,71 @@ const demo_20250929202533 = {
             </div>
           </div>
         </div><!--end row-->
-        </div><!--end col-->
+      </div><!--end col-->
       </div><!--end row-->
     </div><!--end container-->
   </section><!--end section-->
   <!-- Hero End -->
 
   <!-- Demo Start -->
-  <section class="section pb-0 mt-5" id="section-3-steps">
+  <section class="section pb-5 mt-5" id="section-3-steps">
       <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h3 class="title mb-4">まずは体験：3ステップで <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "CRM（顧客関係管理）", "問い合わせ管理", "プロジェクト管理", "在庫管理", "受注管理" ]'></span> を作成</h3>
-                    <p class="text-muted para-desc mx-auto mb-0">まず「データソース」を定義し、「ブロック」でデータを表示し、最後に「アクション」で処理します。</p>
+                    <h3 class="title mb-4">まずは体験: AI + ノーコードで協働しながらスマートな <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "CRM", "プロジェクト管理", "チケット管理", "在庫管理", "受注管理" ]'></span> を構築</h3>
+                    <p class="text-muted para-desc mx-auto mb-0">AI に構築させることも、人がノーコードで構築することもできます。さらに AI 社員が日常業務もサポートします。</p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
-        
+
         <div class="row">
             <div class="col-md-4 mt-4 pt-2">
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                            <AIAvatar name="orin" /> と一緒に「データソース」を設定
+                           AI Coding Agent で素早く開発
                         </h6>
-                        <p class="text-muted para">主データベースのモデルを定義するか、外部データベースや API をデータソースとして接続します。</p>
+                        <p class="text-muted para">Claude Code、Codex、Cursor などの主要な Coding Agent を使って、完全なシステムをすばやく構築できます。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 01.</li>
+                            <li class="step h1 mb-0 fw-bold">AI building</li>
                             <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
                 </div>
             </div><!--end col-->
-            
+
             <div class="col-md-4 mt-4 pt-2">
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                            <AIAvatar name="nathan" /> と一緒に「ブロック」でデータを表示
+                            人がノーコードで構築、見たまま編集
                         </h6>
-                        <p class="text-muted para">表、フォーム、チャート、カレンダーなどのブロックで、ページ上に直感的にデータを整理・可視化します。</p>
+                        <p class="text-muted para">人はいつでも開発に参加でき、見たまま操作できるノーコード画面で手軽に作業しながら、AI と一緒に改善を重ねられます。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 02.</li>
+                            <li class="step h1 mb-0 fw-bold">No code</li>
                             <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
                         </ul>
                     </div>
                 </div>
             </div><!--end col-->
-            
+
             <div class="col-md-4 mt-4 pt-2">
                 <div class="card work-process border-0 rounded shadow">
                     <div class="card-body">
                         <h6 class="title">
-                            <AIAvatar name="nathan" /> と一緒に「アクション」でデータを処理
+                            <AIAvatar name="lexi" />
+                            <AIAvatar name="viz" />
+                            <AIAvatar name="vera" />
+                            <AIAvatar name="dex" />
+                            AI 社員に業務を手伝わせる
                         </h6>
-                        <p class="text-muted para">追加、編集、検索、インポート、エクスポート、ワークフロー起動など、各種処理を実行します。</p>
+                        <p class="text-muted para">システム内の AI 社員や外部 Agent に、データ分析や業務フロー判断などさまざまなタスクを任せられます。</p>
                         <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Step 03.</li>
+                            <li class="step h1 mb-0 fw-bold">AI employee</li>
                             <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
                         </ul>
                     </div>
@@ -1529,139 +898,7 @@ const demo_20250929202533 = {
   </section><!--end section-->
   <!-- End -->
 
-  <!-- Advanced Feature Start -->
-  <section class="section pb-0" id="section-advanced-feature">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="section-title mb-4 pb-2">
-                    <h3 class="title mb-4">次へ：もっと核心機能を探索 </h3>
-                    <p class="text-muted para-desc mx-auto mb-0">AIスタッフ、ワークフロー、権限などの強力な機能を解放し、よりスマートな業務システムを構築しましょう。</p>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-        
-        <div class="row">
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            <AIAvatar name="orin-green" />
-                            <AIAvatar name="viz" />
-                            <AIAvatar name="alex" />
-                            <AIAvatar name="orin" />
-                            たくさんの AI スタッフが業務を支援
-                        </h6>
-                        <p class="text-muted para">内蔵またはカスタムの AI スタッフで、分析・翻訳・データ入力など多様なタスクを実行します。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#feat1_lightbox" data-group="feat1" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 01.</li>
-                            <li class="step-icon"><i class="uil uil-smile-squint-wink h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            ワークフローで複雑なロジックを編成
-                        </h6>
-                        <p class="text-muted para">業務プロセスを自動化し、複雑なロジックも容易にオーケストレーションできます。高効率な協働とインテリジェントな運用を実現します。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#feat2_lightbox" data-group="feat2" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 02.</li>
-                            <li class="step-icon"><i class="uil uil-arrow-random h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            メニュー・データ範囲・アクションの権限を精緻に制御
-                        </h6>
-                        <p class="text-muted para">きめ細かな権限で、メニュー、データ、アクション、AI スタッフを包括的に管理します。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#feat3_lightbox" data-group="feat2" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Feat 03.</li>
-                            <li class="step-icon"><i class="uil uil-check h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End -->
 
-  <!-- Extend Start -->
-  <section class="section" id="section-extend">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="section-title mb-4 pb-2">
-                    <h3 class="title mb-4">最後に：NocoBase を多彩に拡張</h3>
-                    <p class="text-muted para-desc mx-auto mb-0">基礎機能を超えて、プラグイン、スクリプト、各種連携で柔軟に拡張できます。</p>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-        
-        <div class="row">
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            汎用プラグインを開発
-                        </h6>
-                        <p class="text-muted para">再利用可能なプラグインでコア機能を拡張。保守と展開が容易です。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#way1_lightbox" data-group="way1" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Way 01.</li>
-                            <li class="step-icon"><i class="uil uil-battery-bolt h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            <AIAvatar name="cole" /> と一緒にページ上でスクリプトを組み込み
-                        </h6>
-                        <p class="text-muted para">ページ内にスクリプトを書いて、より柔軟な業務ロジックやインタラクションを実装します。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#way2_lightbox" data-group="way2" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Way 02.</li>
-                            <li class="step-icon"><i class="uil uil-bolt h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-            
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="card work-process border-0 rounded shadow">
-                    <div class="card-body">
-                        <h6 class="title">
-                            他アプリとの多様な連携
-                        </h6>
-                        <p class="text-muted para">API・データソース・Webhook などで外部アプリ／サービスと柔軟に連携し、システム間の相互運用を実現。</p>
-                        <a href="?fallback_url" data-type="html" data-target="#way3_lightbox" data-group="way3" data-zoom="false" title="NocoBase デモを試す" class="text-primary lightbox">👉 試してみる <i class="uil uil-angle-right-b"></i></a>
-                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                            <li class="step h1 mb-0 fw-bold">Way 03.</li>
-                            <li class="step-icon"><i class="uil uil-apps h1 mb-0"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- End -->
 
   <!-- For you Start -->
   <section class="section pb-5 bg-light" id="section-for-you">
@@ -1669,53 +906,53 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title mb-4 pb-2">
-            <h3 class="title mb-4">NocoBase は誰に適しているか</h3>
-            <p class="text-muted para-desc mx-auto mb-0">企業内や顧客向けに各種業務システムを提供する際、開発チームは次の厳しい<span class="text-primary fw-bold">課題</span>に直面します：</p>
+            <h3 class="title mb-4">NocoBase はどんなチームに向いているか</h3>
+            <p class="text-muted para-desc mx-auto mb-0">社内向けや顧客向けの業務システムを提供する際、チームは常に <span class="text-primary fw-bold">厳しい課題</span> に直面します:</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6">
           <div class="d-flex features feature-primary pt-4 pb-4">
             <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
               <i class="uil uil-silent-squint text-primary text-warning"></i>
             </div>
             <div class="flex-1">
-              <p class="para mb-0">要件の頻繁な変更</p>
+              <p class="para mb-0">業務要件が<br />頻繁に変わる</p>
             </div>
           </div>
         </div><!--end col-->
 
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-2 col-md-4 col-6">
           <div class="d-flex features feature-primary pt-4 pb-4">
             <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
               <i class="uil uil-silent-squint text-primary text-warning"></i>
             </div>
             <div class="flex-1">
-              <p class="para mb-0">納期の短さと逼迫</p>
+              <p class="para mb-0">納期が<br />短く切迫している</p>
             </div>
           </div>
         </div><!--end col-->
 
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-2 col-md-4 col-6">
           <div class="d-flex features feature-primary pt-4 pb-4">
             <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
               <i class="uil uil-silent-squint text-primary text-warning"></i>
             </div>
             <div class="flex-1">
-              <p class="para mb-0">開発プロセスの冗長さ・低速</p>
+              <p class="para mb-0">開発プロセスが<br />遅く長い</p>
             </div>
           </div>
         </div><!--end col-->
 
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-2 col-md-4 col-6">
           <div class="d-flex features feature-primary pt-4 pb-4">
             <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
               <i class="uil uil-silent-squint text-primary text-warning"></i>
             </div>
             <div class="flex-1">
-              <p class="para mb-0">人件費の高止まり</p>
+              <p class="para mb-0">人件費が<br />高止まりする</p>
             </div>
           </div>
         </div><!--end col-->
@@ -1724,64 +961,18 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title mt-5 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">同時に、<span class="text-primary fw-bold">AI</span> の台頭により、次のような悩みも抱えていませんか？</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">魅力的な AI デモは数多くあるものの、実際の業務にはなかなか適用できない</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">AI モデルを既存システムや業務フローにシームレスに統合するのが難しい</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="d-flex features feature-primary pt-4 pb-4">
-            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
-              <i class="uil uil-silent-squint text-primary text-warning"></i>
-            </div>
-            <div class="flex-1">
-              <p class="para mb-0">自社固有のプロセスやセキュリティ要件に合わせて AI ソリューションを柔軟に調整できない</p>
-            </div>
+            <p class="text-muted para-desc mx-auto mb-0">AI コーディングは開発の進め方を変えつつありますが、実際に試してみると <span class="text-primary fw-bold">新たな課題</span> も見えてきます:</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
 
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div class="section-title mt-5 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">従来型の開発手法を見直し、ノーコード開発の導入が有効だと感じていても、調査や PoC を重ねるなかでノーコードプラットフォームには <span class="text-primary fw-bold">多くの不安</span> が残っているのではないでしょうか。</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
           <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>ノーコード機能が限定的で、フォームやテーブルの構築にとどまってしまう</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>柔軟性に欠け、要件を満たせないときに利用者が打つ手を失ってしまう</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>AI 機能がデモの域を出ず、実際の業務に活用できない</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>AI モデルを企業データやワークフローにシームレスに組み込む拡張性がない</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>ソースコードにアクセスできず、データも外部サーバーに置くため、プライバシーやセキュリティを確保しづらい</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>既存システムとのシームレスな連携が難しい</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>ユーザー数やアプリ数に基づく課金モデルに縛られ、導入しても自社の資産にならない</li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>アーキテクチャが脆弱で継続的に改善しにくい<br><span class="text-muted">AI はすばやくコードを生成できますが、設計が整い、安定していて、継続的に改善できるシステムに仕上げるのは簡単ではありません</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>基盤モジュールを何度も作り直す必要があり、品質が安定しない<br><span class="text-muted">プロジェクトごとにユーザー管理、権限制御、ワークフロー編成などの基盤機能を AI に作り直させることになり、重複が多く非効率で、品質も安定しません</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>生成結果がブラックボックス化し、保守が難しくなる<br><span class="text-muted">AI が生成したコードは業務担当者から見えず調整もしにくいため、その後の保守や変更コストが大きくなりがちです</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>実際の業務制約の中で動かしにくい<br><span class="text-muted">AI は厳格な権限設定や業務フロー制約の中で、現実の企業業務を処理するのが得意ではありません</span></li>
           </ul>
         </div><!--end col-->
       </div><!--end row-->
@@ -1789,7 +980,7 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title mt-4 mb-4 pb-2">
-            <p class="text-muted para-desc mx-auto mb-0">ご安心ください。ぜひ NocoBase をお試しください。<br />NocoBase は開発チームのために設計された <span class="text-primary fw-bold">専用インフラ</span> です！</p>
+            <p class="text-muted para-desc mx-auto mb-0">心配はいりません。NocoBase をお試しください。<br />NocoBase は、業務システム構築に必要な <span class="text-primary fw-bold">基盤機能</span> をまとめて提供し、AI と人の双方がその上で効率よく働けます。 </p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -1797,48 +988,35 @@ const demo_20250929202533 = {
   </section><!--end section-->
   <!-- For you End -->
 
-  <!-- How Start -->
+  <!-- How Start 1 -->
   <section class="section" id="section-how">
     <div class="container">
+      <!-- 可靠 -->
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <div class="section-title mb-4 pb-2">
-            <h3 class="title mb-4">NocoBase のアプローチ</h3>
-            <p class="text-muted para-desc mx-auto mb-0">ノーコードも AI も万能ではありません。<br />人・AI・コードが協働するフレームワークこそ、いま信頼できるエンタープライズ基盤です。</p>
+          <div class="section-title">
+            <h3 class="title mb-4">信頼性: 基盤機能は用意済み、業務そのものに集中できる</h3>
+            <p class="text-muted para-desc mx-auto mb-0">データモデル、権限制御、ワークフロー編成といった機能は複雑で、ミスが許されません。<br />NocoBase はそれらを組み込みの基盤機能として提供し、厳格なテストと多数の本番利用で検証されています。</p>
           </div>
         </div><!--end col-->
       </div><!--end row-->
-      <div class="row  justify-content-center">
-        <div class="col-lg-6 col-md-6 col-12">
-          <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>✖ あらゆる機能をノーコード部品に封じ込め、すべてをノーコードで満たそうとする</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>◯ ノーコードで 80% の共通要件を満たし、残りは拡張開発で解決</li>
-          </ul>
-        </div><!--end col-->
 
-        <div class="col-lg-6 col-md-6 col-12">
-         <ul class="list-unstyled">
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-times-circle align-middle text-warning"></i></span>✖ AI 生成に依存して完全な業務システムを作り、すべての業務フローを置き換える</li>
-            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-check-circle align-middle"></i></span>◯ 人×AI の協働フレームを構築し、AI が特定局面で最大価値を発揮</li>
-          </ul>
-        </div><!--end col-->
-      </div><!--end row-->
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">データモデル駆動</span> ― フォーム／テーブル駆動ではありません</h5>
-            <p class="text-muted">フォームやテーブルに縛られるのではなく、データモデル駆動のアプローチでデータ構造と UI を分離し、無限の可能性を切り開きます。</p>
+            <h5 class="mb-4"><span class="text-primary">充実した基盤機能</span> があり、毎回ゼロから始めなくてよい</h5>
+            <p class="text-muted">NocoBase には数十の基盤モジュールが組み込まれており、業務システム開発で最もよくある重要な要件を広くカバーします。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>UI とデータ構造が完全にデカップリングされている</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>同じテーブルやレコードでも、形式を問わず複数のブロックやアクションを作成できる</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>メイン DB・外部 DB・サードパーティ API をデータソースとして利用できる</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>データモデリング、権限制御、ワークフロー、監査ログなどの中核機能をすぐに利用できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>毎回 AI が生成し直すブラックボックスなコードではなく、多くの企業の本番環境で検証されています</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI に標準と制約を与え、生成結果がシステムアーキテクチャ要件に沿うようにします</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase のデータモデル駆動アプローチ。UI とデータ構造を分離し、同じテーブルでも複数のブロックやアクションを構成でき、メイン DB・外部 DB・サードパーティ API を統合可能。" />
+              <img src="https://static-docs.nocobase.com/f-core.jpeg" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
             </div>
           </div>
         </div><!--end col-->
@@ -1846,19 +1024,19 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">WYSIWYG</span> ― 直感的で使いやすい</h5>
-            <p class="text-muted">複雑な業務システムを構築できる一方で、NocoBase の体験は常にシンプルで直感的です。</p>
+            <h5 class="mb-4"><span class="text-primary">データモデル駆動</span> で、データと UI を分離</h5>
+            <p class="text-muted">すべての業務データは標準的なリレーショナルデータベース構造に蓄積され、データモデルとユーザーインターフェースは完全に分離されます。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ワンクリックで利用モードと設定モードを切り替え</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ページは Notion のようにブロックとアクションを配置するキャンバス</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>プログラマーだけでなく、一般ユーザーでも扱いやすい設定画面</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>メインデータベース、外部データベース、サードパーティ API をデータソースとして利用できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI も人も同じデータモデルを基盤に作業するため、結果は透明で確認可能です</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>データは常に自分のデータベースに保存され、プラットフォームにロックインされません</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase の WYSIWYG インターフェース。ワンクリックで利用モードと設定モードを切り替え、Notion 風のキャンバスで誰でも UI を構築できる。" />
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
             </div>
           </div>
         </div><!--end col-->
@@ -1866,19 +1044,49 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">AI スタッフ</span> を業務システムに統合</h5>
-            <p class="text-muted">単体の AI デモとは異なり、NocoBase ならインターフェースやワークフロー、データの文脈に AI をシームレスに埋め込み、実践的な価値を生み出せます。</p>
+            <h5 class="mb-4"><span class="text-primary">プラグインアーキテクチャ</span> で、システムを持続的に進化できる</h5>
+            <p class="text-muted">マイクロカーネル設計を採用し、あらゆる機能がプラグイン化されています。業務の成長に合わせて長期的に進化させても、全体が制御不能になりません。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>翻訳者・アナリスト・リサーチャー・アシスタントなど役割別に AI スタッフを定義</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>インターフェースとワークフローで人と AI がシームレスに協働</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ビジネス要件に合わせて、安全・透明・カスタマイズ可能な AI 利用を実現</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>新機能はプラグインの組み合わせで拡張され、共通ルールに従うため互いに干渉しません</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>自社開発プラグインと公式プラグインを組み合わせて、業務要件に柔軟に対応できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 生成でも手動開発でも、プラグインは同じ標準に従うためアーキテクチャが統一されます</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase に組み込まれた AI スタッフ。業務画面やワークフローに溶け込み、翻訳や分析、データ入力などを支援する様子。" />
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 协同 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">協働: AI と人が一緒に構築</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase は Coding Agent 向けに充実した CLI と Skills を提供し、人には見たまま操作できるノーコード開発 UI を提供することで、AI と人の高効率な協働を実現します。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">使い慣れた <span class="text-primary">AI Coding Agent</span> で開発</h5>
+            <p class="text-muted">主要な Coding Agent を使えば、デプロイから業務システム構築までわずか数十分で進められます。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Claude Code、Cursor、Codex、Opencode、TRAE など主要な Agent を幅広くサポートします</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>インストールとデプロイから、構築、移行、公開まで Agent が一通り担えます</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, Opencode, TRAE and more." />
             </div>
           </div>
         </div><!--end col-->
@@ -1886,45 +1094,146 @@ const demo_20250929202533 = {
       <div class="row align-items-top mt-100">
         <div class="col-lg-5 col-md-5">
           <div class="section-title">
-            <h5 class="mb-4">すべてが <span class="text-primary">プラグイン</span> ― 拡張のための設計</h5>
-            <p class="text-muted">ノーコード機能を増やすだけでは、すべての業務シナリオをカバーできません。NocoBase はマイクロカーネル型のプラグインアーキテクチャで拡張を前提に設計されています。</p>
+            <h5 class="mb-4"><span class="text-primary">見たまま操作できる</span> ノーコード UI で人が構築</h5>
+            <p class="text-muted">見たまま操作できる設定画面で、人が直接可視化しながら構築・修正できます。AI を使わなくても、システム全体を作り上げることが可能です。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>すべての機能が WordPress のようにプラグインとして提供</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>インストールするだけですぐに利用可能</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ページ・ブロック・アクション・API・データソースをカスタムプラグインで拡張できる</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>利用モードと設定モードをワンクリックで切り替え</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>データモデル、ページ、ワークフロー、権限をすべて可視化して確認・設定できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>設定モードは一般ユーザー向けに設計されており、専門開発者だけのものではありません</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-7 col-md-7">
           <div class="card rounded border-0 shadow ms-lg-5">
             <div class="card-body feature-card-img">
-              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase のプラグインアーキテクチャ。マイクロカーネル構造で、ページやブロック、アクション、API、データソースなどをプラグインとして追加できる。" />
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
             </div>
           </div>
         </div><!--end col-->
       </div><!--end row-->
-      <div class="row align-items-top mt-5">
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 開発と手動構築</span> を自由に組み合わせ</h5>
+            <p class="text-muted">必要に応じて役割分担できます。AI が構築した内容を人がいつでも引き継いで修正でき、人が設定した内容も AI が理解して継続的に改善できます。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI はデータモデル、基本ページ、ワークフローを効率よく作成できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>人は UI や操作性をすばやく調整できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>必要に応じて協働し、継続的に改善</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">インテリジェント: AI は開発だけでなく業務処理にも参加</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase には AI 社員の機能が組み込まれており、AI が業務の参加者としてシステム内で直接働けます。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 社員</span> が業務フローに組み込まれる</h5>
+            <p class="text-muted">AI 社員は業務コンテキストを自動で取得し、単なるチャット窓口ではなく、システム内で直接タスクを実行します。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>フロント側: データ分析、AI 質問応答、フォーム入力などをユーザー支援</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>バックエンド側: 継続的に動作し、文書認識、リスク監視、タスク配布などを自動処理</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ワークフローと深く統合され、AI 社員はフロー内のノードとして意思決定や実行に参加できます</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">オープンな接続口</span> で Agent エコシステムと連携</h5>
+            <p class="text-muted">MCP、HTTP API、CLI などの標準インターフェースと充実した Skills を提供し、外部 Agent が安全に接続できます。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>OpenClaw、Hermes、Dify、Coze、n8n などの外部 Agent プラットフォームが標準プロトコルで接続できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Feishu、WeChat、WhatsApp、Slack、Gmail と連携し、データ参照、操作実行、業務フロー起動が行えます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>統一されたインターフェース仕様により、内部 AI 社員と外部 Agent は同じ能力境界で動作します</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">権限制御</span> により、振る舞いを管理できる</h5>
+            <p class="text-muted">AI のすべての操作は細かな権限制御の対象となり、人間のユーザーと同じセキュリティルールに従います。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>各 AI 社員は独立したロールを持ち、読み書き権限はフィールド単位まで設定できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>すべての操作は監査ログに記録され、各データ変更やフロー起動を追跡できます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>管理者は AI 社員の権限範囲をいつでも調整でき、行動の境界を明確に保てます</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">そのほかにも多数</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top">
         <div class="col-lg-6 col-md-6 mt-5">
           <div class="section-title">
-            <h5 class="mb-4"><span class="text-primary">オープンソース</span> ― 主流技術で構築</h5>
-            <p class="text-muted">NocoBase は透明性が高く、制御しやすく、導入も容易です。</p>
+            <h5 class="mb-4"><span class="text-primary">オープンで透明</span>、完全にコントロール可能</h5>
+            <p class="text-muted">NocoBase のコアコードと基本プラグインはすべてオープンソースで、主流技術スタックを採用しており、高い透明性と可制御性を備えています。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>コアおよび基盤プラグインを完全オープンソース化</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>TypeScript で実装し、Node.js・React・Koa など主流スタックを採用</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>標準インターフェースのみを定義し、独自 DSL を排除</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>軽量で低スペックのサーバーでも稼働し、1 人でも運用可能</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>コアと基本プラグインは完全にオープンソース</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>TypeScript で実装され、Node.js、React、Koa などの主流技術スタックを採用</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>安全かつ制御可能で、すべてのデータと AI 連携は自社環境内で実行されます</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>シンプルで軽量なため、低スペックなサーバーでも動作し、1 人でも保守・拡張できます</li>
             </ul>
           </div>
         </div><!--end col-->
         <div class="col-lg-6 col-md-6 mt-5">
           <div class="section-title">
-            <h5 class="mb-4">透明で柔軟な <span class="text-primary">ライセンス</span></h5>
-            <p class="text-muted">NocoBase はオープンソースで無料。商用ライセンスやプラグインは買い切りモデルで提供しています。</p>
+            <h5 class="mb-4">シンプルでわかりやすい <span class="text-primary">ライセンスモデル</span></h5>
+            <p class="text-muted">NocoBase は無料のオープンソース版に加え、商用ライセンスとプラグインも提供しており、買い切りで長く利用できるモデルを採用しています。</p>
             <ul class="list-unstyled text-muted">
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>サブスクリプションなし</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ユーザー数による制限なし</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>アプリケーション数による制限なし</li>
-              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>データ量による制限なし</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>サブスクリプション不要</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>ユーザー数課金なし</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>アプリ数課金なし</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>データ量課金なし</li>
             </ul>
           </div>
         </div><!--end col-->
@@ -1938,7 +1247,7 @@ const demo_20250929202533 = {
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="title mb-4">NocoBase を本番環境で利用している企業</h3>
+          <h3 class="title mb-4">多くの組織が本番で NocoBase を利用</h3>
         </div><!--end col-->
         <div class="row justify-content-center">
           <div class="col-lg-2 col-md-2 col-6 text-center">
@@ -2070,7 +1379,7 @@ const demo_20250929202533 = {
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title">
-            <h3 class="title mb-4">ユーザーの声が何よりの証拠</h3>
+            <h3 class="title mb-4">ユーザーの声を見てみましょう</h3>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -2078,60 +1387,60 @@ const demo_20250929202533 = {
         <div class="col-lg-9 mt-4 pt-2">
           <div class="tiny-single-item text-center">
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">NocoBase を導入して管理業務の時間を 50% 削減でき、コラボレーションやコミュニケーションが向上し、採用プロセスもさらに迅速で効率的になりました。</p>
-              <p class="text-muted fst-italic">TEDxDUTH では、イノベーションと協働の力が世界を変えると信じています。NocoBase は私たちの運営を効率化し、価値あるアイデアを伝えるイベントづくりに集中できるよう後押ししてくれました。</p>
-              <p class="text-muted fst-italic">もし組織が非効率なワークフローに悩んでいるなら、NocoBase は単なるツールではなく、チームがより多くを実現できるソリューションです。私たちにとってはゲームチェンジャーであり、大きな夢を描き、スマートに働き、コミュニティに持続的なインパクトを与える支えとなりました。</p>
-              <p class="text-muted fst-italic">この旅路を支えてくれる NocoBase に感謝しています。これからも境界を越え、意味のあるアイデアを広めながら、共に成長していきたいと思います！</p>
-              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED ロゴ" />
-              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">リードオーガナイザー </small></h6>
+              <p class="text-muted fst-italic">NocoBase を導入してから、管理業務にかかる時間が 50% 短縮され、連携とコミュニケーションが改善し、採用プロセスもより迅速で効率的になりました。</p>
+              <p class="text-muted fst-italic">TEDxDUTH では、イノベーションと協働の力が世界を変えると信じています。NocoBase により日々の運営を簡素化でき、本当に重要なこと、つまり魅力的なイベントの開催と価値あるアイデアの発信に、より多くの力を注げるようになりました。</p>
+              <p class="text-muted fst-italic">もし組織が混乱した、あるいは非効率なワークフローに悩んでいるなら、NocoBase は単なるツールではありません。チームの可能性を引き出し、より多くを実現できる包括的なソリューションです。私たちにとって NocoBase はまさにゲームチェンジャーであり、大きな夢を持つ力を与え、働き方を根本から変え、コミュニティにも継続的な影響を与えています。</p>
+              <p class="text-muted fst-italic">私たちの歩みに欠かせないパートナーでいてくれる NocoBase に感謝しています。これからも共に、イノベーションとインスピレーションの広がりを推し進めていきます。</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">AirTable と NocoDB も検討しましたが、柔軟性とデプロイの自由度から最終的に NocoBase を選びました。AWS 環境に直接デプロイでき、ユーザー数無制限で利用できるうえ、きめ細かな権限管理やフロントエンドとデータを分離した構造によって UI カスタマイズも容易です。さらに、統合ワークフローと自動 API 生成が業務プロセスを大幅に効率化してくれました。</p>
-              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="クラスメソッド ロゴ" /></a>
-              <h6 class="text-primary">株式会社クラスメソッド</h6>
+              <p class="text-muted fst-italic">私たちは Airtable と NocoDB も評価しましたが、最終的に NocoBase を選んだのは、システムの自由度とデプロイ方法の要件に最も合っていたからです。NocoBase は AWS 環境にデプロイでき、ユーザー数の制限がなく、権限制御も細かく、ページとデータが分離された構成によってフロントエンドを柔軟にカスタマイズできます。さらに、組み込みのワークフローと API 自動生成機能により、効率が大きく向上しました。</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式会社（Classmethod, Inc.）</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">NocoBase を導入する前は、カスタマーサービスと運用管理の専用システムがなく、急速に拡大する需要へ迅速に対応できるソリューションが必要でした。NocoBase はこの課題を見事に解決してくれました。優れたデータテーブルのリレーション機能により、多様なデータ構造を効率よく統合できるようになったのです。その結果、カスタマーサービスチームはユーザー情報を瞬時に取得し、顧客の権利に関する問題をリアルタイムで解決できるようになり、運用効率が大幅に向上しました。</p>
-              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD ロゴ" /></a>
-              <h6 class="text-primary">Lucas（PLAUD プロダクトマネージャー）</h6>
+              <p class="text-muted fst-italic">NocoBase を導入する前、私たちには専用のカスタマーサポート兼オペレーション管理システムがありませんでした。事業が急速に成長する中で、増え続ける要件にすばやく対応できる仕組みが必要でしたが、NocoBase はその課題をうまく解決してくれました。特にテーブル間の関連付け機能が優れており、異なるデータ構造を効率よく統合できるため、サポート担当者はユーザー情報をすばやく確認し、権益に関する問題にもリアルタイムで対応でき、業務効率が大きく向上しました。</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">PLAUD プロダクトマネージャー Lucas</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">急成長する Okechamp の物流ニーズに合わせたカスタムスケジューリングソリューションを構築するため、私たちは柔軟なノーコードプラットフォームを探していました。スキーマファーストのアプローチ、モジュラー構造、活発なコミュニティを備えた NocoBase が最適解だとすぐに分かりました。カスタムビューやレポートツールも簡単に構築でき、今後もクライアント案件で積極的に活用していく予定です。</p>
-              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi ロゴ" />
+              <p class="text-muted fst-italic">私たちは、顧客 Okechamp の急成長する物流業務に対応する、完全にカスタマイズされたスケジューリングシステムを構築できる柔軟なノーコードプラットフォームを探していました。調査段階で、NocoBase は Schema-first アーキテクチャ、モジュール設計、活発なコミュニティによって際立っていました。カスタムビューやレポート管理もスムーズに実現でき、今後もより多くの顧客プロジェクトで NocoBase を採用していく予定です。</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
               <h6 class="text-primary">Lukardi SA</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">以前は人事管理や休暇承認を紙ベースで行っており、非効率でミスも多く発生していました。NocoBase で人事・勤怠・休暇ワークフローを構築してからは、本当の意味でのペーパーレス化を実現できました。110 名を超える従業員を直感的かつ効率的に管理でき、柔軟なインターフェースと強力な API は不動産事業の多様な要件にぴったりです。Salesforce などと比べても高いカスタマイズ性を持ちながら買い切りで導入でき、非常にコスト効率に優れています。現在は CRM を含むさらなるシステムも NocoBase へ移行し、当社の中核ビジネスプラットフォーム兼ポータルとして育てています。</p>
-              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell ロゴ" /></a>
-              <h6 class="text-primary">HouseWell株式会社</h6>
+              <p class="text-muted fst-italic">以前は人事管理や休暇承認を紙ベースの手続きに頼っており、非効率でミスも起こりやすい状態でした。NocoBase で人事、勤怠、休暇などの業務フローを構築してからは、真のペーパーレス運用を実現し、110 名以上の従業員管理が効率的かつ直感的になりました。NocoBase の柔軟な UI 設計と強力な API 機能は、不動産業界における多様な要件を十分に満たしています。Salesforce などと比べても高いカスタマイズ性があり、買い切りにも対応しているため、費用対効果にも優れています。現在は CRM を含むより多くのシステムを NocoBase に移行し、社内ポータル兼業務基盤として育てていく計画です。</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式会社(HouseWell)</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">スマートファクトリーシステムの開発では、コアプラットフォームとして NocoBase を採用しました。シンプルなセットアップにより非技術者でもすぐに画面を構築でき、開発効率が大幅に向上しました。豊富なプラグインと強力なワークフローエンジンによって、品質と拡張性を保ちながら多様な業務シナリオに柔軟に対応できます。細かな権限管理のおかげで、設備保守や人事管理などのワークフローも安全かつ効率的に連携できました。PC・モバイル・5G 基盤と統合されたこのシステムは、リアルタイムなデータフィードバックと高速入力を実現し、スマートファクトリー構想の強固な土台となりました。</p>
-              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL ロゴ" /></a>
-              <h6 class="text-primary">BIEL</h6>
+              <p class="text-muted fst-italic">スマートファクトリーシステムの構築にあたり、私たちは NocoBase を中核プラットフォームとして選びました。非常にシンプルな設定フローにより、非技術者でもシステム画面をすばやく構築でき、開発効率が大幅に向上しました。さらに、プラグインエコシステムとワークフローエンジンのおかげで、多様な業務シナリオにも柔軟に対応しながら、品質と拡張性を両立できます。NocoBase の細かな権限制御により、設備保守や人事管理などのプロセスで高い協働性とデータ安全性を両立できました。導入後は PC、モバイル、5G ネットワークを組み合わせることで、リアルタイムのデータフィードバックと効率的なデータ入力も実現し、スマートファクトリー構築の確かな基盤となりました。</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">BIEL Crystal Holdings</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">数ある新しいデータベース製品のなかで、望むものをすべて手にできると実感させてくれたのは NocoBase だけでした。数十のチームがタスク連携でき、標準化された専門業務にも対応できる、自社ホスト型でローコードかつスケーラブルなシステムが必要でしたが、NocoBase の学習コストは驚くほど低く、開発者に頼らず数日で業務プロセスを構築できました。</p>
-              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="L&A Design ロゴ" /></a>
-              <h6 class="text-primary">Zhang Tingyuan（L&A Design ビジネスリーダー）</h6>
+              <p class="text-muted fst-italic">数ある新しいデータベース製品の中で、NocoBase は「これも欲しい、あれも欲しい、それも必要」という要求を本当に実現できると感じさせてくれた唯一のソリューションでした。私たちには、SaaS ではなく、ローコードで拡張性があり、数十のチームにまたがる業務連携と高い標準化が求められる専門業務を支えられるシステムが必要でした。NocoBase の学習曲線は驚くほどなだらかで、数日もあれば開発に頼らず業務フローを構築できました。</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奥雅设计" /></a>
+              <h6 class="text-primary">Aoya Design 業務責任者 張廷源</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">世界中のローコードプラットフォームを比較検討した結果、私たちは NocoBase を選びました。オンプレミス展開と拡張のしやすさが、化学産業で求められる厳格なデータセキュリティやカスタム設計の要件に完璧に合致したからです。専門チームによるサポートと柔軟なデータモデリング機能のおかげで、短期間かつ確実にシステムを導入できました。</p>
-              <a rel="nofollow" href="https://en.xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="XtalPi ロゴ" /></a>
-              <h6 class="text-primary">Xiong Zhi（XtalPi プロジェクトリード）</h6>
+              <p class="text-muted fst-italic">国内外の複数のローコードプラットフォームを比較検討した結果、私たちは最終的に NocoBase を選びました。ローカル環境への導入と機能拡張に対応しており、化学分野で求められる高水準のデータセキュリティとシステムカスタマイズ要件にぴったり合っていたからです。NocoBase の専門サポートチームと柔軟なデータモデリング機能により、システム導入も効率的かつ信頼性高く進められました。</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">XtalPi プロジェクト責任者 熊智</h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">NocoBase をノーコード／ローコード基盤として活用した体験は実に素晴らしいものでした。非常にユーザーフレンドリーで、開発プロセスを滑らかかつ効率的に進められます。データモデルさえ整えば、ユーザー体験の開発に取り組むのが驚くほど簡単であることに感銘を受けました。この効率的なアプローチにより、数百の組織が利用する本格的なシステムをわずか数週間で構築できました。</p>
-              <p class="text-muted fst-italic">「強力なシステムには数カ月から数年かかる」という一般的な思い込みを、NocoBase は見事に打ち破ってくれました。品質を犠牲にせず開発サイクルを加速させたい組織には強くおすすめします。</p>
-              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk ロゴ" /></a>
+              <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks.</p>
+              <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
               <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
             </div>
             <div class="tiny-slide client-testi text-center">
-              <p class="text-muted fst-italic">データ管理・API サービス・ワークフローの中核として NocoBase を活用することで、開発の難易度が大幅に下がり、開発者はビジネスロジックの実装に集中できるようになりました。その結果、開発効率が大きく向上しました。</p>
-              <p class="text-muted fst-italic">NocoBase には優れた統合能力があり、さまざまなサードパーティサービスやシステムとシームレスに連携してデータ共有や機能統合を実現できます。すべてをゼロから作るのではなく、既存のサービスやリソースを活用して多彩な機能を素早くアプリケーションに統合できるのです。この統合力は開発時間とコストを削減するだけでなく、アプリケーションの機能を豊かにし、ユーザーの多様なニーズに応えます。</p>
-              <p class="text-muted fst-italic">目まぐるしく変化するデジタル時代において、NocoBase は私たちが挑戦に立ち向かい、イノベーションを実現するための強力な武器にほかなりません。NocoBase チームの尽力に感謝しています。</p>
-              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="中国聯通 ロゴ" /></a>
-              <h6 class="text-primary">新疆聯通 科技イノベーション研究所</h6>
+              <p class="text-muted fst-italic">NocoBase はデータ管理、API サービス、ワークフローの中核として機能し、開発の難易度を大きく下げてくれました。その結果、開発者は業務ロジックの実装により集中でき、開発効率が大幅に向上しました。</p>
+              <p class="text-muted fst-italic">NocoBase は優れた統合能力を備えており、さまざまなサードパーティサービスやシステムとシームレスに接続して、データ共有と機能統合を実現できます。これにより、すべてをゼロから構築する必要がなくなり、既存のサービスやリソースを活用して、さまざまな機能をすばやくアプリケーションへ取り込めます。この統合力は開発時間とコストを削減するだけでなく、アプリケーションの機能をより豊かで多様にし、ユーザーの幅広いニーズに応えてくれます。</p>
+              <p class="text-muted fst-italic">急速に進化するデジタル時代において、NocoBase は私たちが課題に立ち向かい、イノベーションを実現するための力強い武器です。NocoBase チームの尽力に感謝します。</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">新疆聯通イノベーションラボ</h6>
             </div>
           </div><!--end owl carousel-->
         </div><!--end col-->
@@ -2145,11 +1454,11 @@ const demo_20250929202533 = {
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="title mb-4">NocoBase を今すぐ始めましょう</h3>
-          <p class="text-muted para-desc mx-auto mb-0">わずか 1 分でカスタムライブデモを立ち上げることも、ローカル環境へデプロイすることも、どちらも驚くほど簡単です。</p>
+          <h3 class="title mb-4">NocoBase を使う準備はできましたか？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">1 分で専用デモをデプロイできます。NocoBase を自分でデプロイするのもとても簡単です。</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="オンラインで NocoBase を体験する">ライブデモを見る <i class="uil uil-arrow-right"></i></a>
-            <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="NocoBase をローカル環境にデプロイする方法">ローカルにデプロイ <i class="uil uil-arrow-right"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Click to experience NocoBase online">Live Demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://v2.docs.nocobase.com/ja/getting-started/installation" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Learn how to deploy NocoBase locally">Deploy locally <i class="uil uil-arrow-right"></i></a>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -2161,8 +1470,9 @@ const demo_20250929202533 = {
     <!-- video in lightbox  -->
       <div style="display: none;">
         <div id="nocobase_video_lightbox">
+          <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
           <video controls>
-            <source src="https://static-docs.nocobase.com/Meet-Your-AI-Employee-EN.mp4" type="video/mp4">
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-EN.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -2171,7 +1481,7 @@ const demo_20250929202533 = {
       <!-- step1 lightbox -->
       <div style="display: none;">
         <div id="step1_lightbox">
-          <InteractiveDemo guides={demo_20250928234035} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
         </div>
       </div>
       <!-- end step1 lightbox -->
@@ -2179,7 +1489,7 @@ const demo_20250929202533 = {
       <!-- step2 lightbox -->
       <div style="display: none;">
         <div id="step2_lightbox">
-          <InteractiveDemo guides={demo_20250929185215} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
         </div>
       </div>
       <!-- end step2 lightbox -->
@@ -2187,59 +1497,10 @@ const demo_20250929202533 = {
       <!-- step3 lightbox -->
       <div style="display: none;">
         <div id="step3_lightbox">
-          <InteractiveDemo guides={demo_20250929192111} hideHeader={true}/>
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
         </div>
       </div>
       <!-- end step3 lightbox -->
 
-      <!-- feat1 lightbox -->
-      <div style="display: none;">
-        <div id="feat1_lightbox">
-          <InteractiveDemo guides={demo_20250929193842} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat1 lightbox -->
-
-      <!-- feat2 lightbox -->
-      <div style="display: none;">
-        <div id="feat2_lightbox">
-          <InteractiveDemo guides={demo_20250929200011} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat2 lightbox -->
-
-      <!-- feat3 lightbox -->
-      <div style="display: none;">
-        <div id="feat3_lightbox">
-          <InteractiveDemo guides={demo_20250929200757} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end feat3 lightbox -->
-
-      <!-- way1 lightbox -->
-      <!-- <div style="display: none;">
-        <div id="way1_lightbox">
-          <InteractiveDemo guides={demo_2025092919211} hideHeader={true}/>
-        </div>
-      </div>-->
-      <!-- end way1 lightbox -->
-
-      <!-- way2 lightbox -->
-      <!-- <div style="display: none;">
-        <div id="way2_lightbox">
-          <InteractiveDemo guides={demo_2025092919211} hideHeader={true}/>
-        </div>
-      </div>-->
-      <!-- end way2 lightbox -->
-
-      <!-- way3 lightbox -->
-      <div style="display: none;">
-        <div id="way3_lightbox">
-          <InteractiveDemo guides={demo_20250929202533} hideHeader={true}/>
-        </div>
-      </div>
-      <!-- end way3 lightbox -->
-
-  <!-- Lightbox End --> 
-
+  <!-- Lightbox End -->
 </Layout>
