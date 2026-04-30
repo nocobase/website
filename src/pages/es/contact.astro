@@ -1,0 +1,43 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Contacto";
+const description = "Habla con el equipo de NocoBase para consultas comerciales, licencias y colaboración.";
+const keywords = "NocoBase, contacto, ventas, licencias, consulta comercial";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <!-- Start Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-4 pb-4">
+          <div class="d-flex contact-detail align-items-center mt-4">
+            <div class="flex-1 content mb-4">
+              <h4 class="title fw-bold mb-1">Contáctanos por correo</h4>
+              <a href="mailto:hello@nocobase.com" class="text-primary">hello@nocobase.com</a>
+            </div>
+          </div>
+
+          <h4>Dónde estamos</h4>
+          <div class="p-4 bg-light rounded shadow mb-4">
+            Somos un equipo remoto distribuido en varios países y, actualmente, contamos con las siguientes oficinas:
+            <ul class="list-unstyled text-muted mb-0">
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>Singapur: 68 CIRCULAR ROAD, #02-01, SINGAPORE</li>
+              <li><i data-feather="arrow-right" class="text-primary fea icon-sm me-2"></i>Japón: 501, 1-55-8 Akabane, Kita-ku, Tokio, Japón</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6">
+          <div class="card shadow border-0 rounded p-4" style="height: 850px;">
+            <iframe src="https://service-en.nocobase.com/public-forms/ect266yzsld" height="100%"></iframe>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Contact -->
+</Layout>

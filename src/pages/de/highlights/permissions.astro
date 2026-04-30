@@ -1,0 +1,19 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Berechtigungen";
+const description = "Verwalten Sie System-, Datensatz- und Feldberechtigungen in NocoBase mit feingranularer Kontrolle.";
+const keywords = "NocoBase, Berechtigungen, Rollen, Zugriffskontrolle, Sicherheit, Daten";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container">
+    <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Kontrolle ueber <span class="text-primary">Systemberechtigungen</span></h5><p class="text-muted">Beim Entwickeln mit NocoBase koennen Sie verschiedenen Personen unterschiedliche Systemrechte zuweisen, sodass jeder nur auf autorisierte Module zugreift.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.1-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Feingranulare Kontrolle auf <span class="text-primary">Datensatz- und Feldebene</span></h5><p class="text-muted">NocoBase unterstuetzt eine sehr genaue Steuerung auf Datensatz- und Feldebene, damit Mitarbeitende nur die Informationen sehen und bearbeiten, fuer die sie berechtigt sind.<br>So kann ein Vertriebsmitarbeiter beispielsweise seine eigenen Kunden bearbeiten, Kunden anderer Kollegen nur lesen und den Gesamtwert aller Bestellungen nicht einsehen.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.2-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4"><span class="text-primary">Mehrere Rollen</span> und kombinierte Rechte fuer einen Benutzer</h5><p class="text-muted">In Geschaeftssystemen uebernehmen Benutzer haeufig mehrere Rollen gleichzeitig. NocoBase erlaubt mehrere Rollen pro Nutzer und bietet unterschiedliche Strategien, um Berechtigungen passend zu kombinieren.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.3-EN.mp4" type="video/mp4"></video></div></div></div>
+  </div></section>
+</Layout>

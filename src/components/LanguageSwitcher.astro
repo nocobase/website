@@ -1,15 +1,25 @@
 ---
+type SupportedLanguage = {
+    code: string;
+    label: string;
+};
+
 const supportedLanguages = [
     { code: 'en', label: 'English' },
+    { code: 'es', label: 'Español' },
+    { code: 'pt', label: 'Português' },
+    { code: 'id', label: 'Bahasa Indonesia' },
+    { code: 'vi', label: 'Tiếng Việt' },
+    { code: 'fr', label: 'Français' },
+    { code: 'de', label: 'Deutsch' },
     { code: 'cn', label: '简体中文' },
     { code: 'ja', label: '日本語' },
-    { code: 'fr', label: 'Français' },
-];
+] satisfies SupportedLanguage[];
 
 const currentLang = Astro.url.pathname.split('/')[1] || 'en';
 
-const generateUrl = (lang) => {
-    const pathWithoutLang = Astro.url.pathname.replace(/^\/(en|cn|ja|fr)/, '');
+const generateUrl = (lang: string) => {
+    const pathWithoutLang = Astro.url.pathname.replace(/^\/(en|es|pt|id|vi|de|cn|ja|fr)/, '');
     return pathWithoutLang ? `/${lang}${pathWithoutLang}` : `/${lang}/`;
 };
 ---
@@ -29,8 +39,8 @@ const generateUrl = (lang) => {
         </svg>
     </div>
     <ul id="language-menu" class="language-menu">
-        {supportedLanguages.map(lang => (
-                <li key={lang.code} class={lang.code === currentLang ? 'active' : ''}>
+        {supportedLanguages.map((lang) => (
+                <li class={lang.code === currentLang ? 'active' : ''}>
                     <a href={generateUrl(lang.code)}>
                         {lang.label}
                     </a>
@@ -44,6 +54,10 @@ const generateUrl = (lang) => {
         const languageIcon = document.getElementById('language-icon');
         const languageMenu = document.getElementById('language-menu');
         const languageSwitch = document.getElementById('language-switch'); // 确保定义了 languageSwitch
+
+        if (!languageIcon || !languageMenu || !languageSwitch) {
+            return;
+        }
 
         // 切换菜单显示状态
         const toggleMenu = () => {
@@ -65,7 +79,12 @@ const generateUrl = (lang) => {
 
         // 点击页面其他区域时关闭下拉菜单
         document.addEventListener('click', (event) => {
-            if (!languageIcon.contains(event.target) && !languageMenu.contains(event.target)) {
+            const target = event.target;
+            if (!(target instanceof Node)) {
+                return;
+            }
+
+            if (!languageIcon.contains(target) && !languageMenu.contains(target)) {
                 if (languageMenu.classList.contains('show')) {
                     languageMenu.classList.remove('show');
                 }
@@ -82,3 +101,29 @@ const generateUrl = (lang) => {
         });
     });
 </script>
+
+<style>
+    .language-switcher {
+        position: relative;
+    }
+
+    .language-menu {
+        margin: 0;
+        padding: 6px 0;
+        min-width: 132px;
+        list-style: none;
+    }
+
+    .language-menu li {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+    }
+
+    .language-menu li a {
+        display: block;
+        padding: 7px 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+</style>

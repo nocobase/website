@@ -1,0 +1,33 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Funcionarios de IA";
+const description = "Veja como os funcionarios de IA da NocoBase trabalham dentro do seu sistema de negocio e executam tarefas com contexto real.";
+const keywords = "NocoBase, funcionarios de IA, IA empresarial, automacao, agentes";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Funcionarios de IA trabalham <span class="text-primary">ao seu lado</span></h5>
+            <p class="text-muted">Na NocoBase, funcionarios de IA nao sao apenas chatbots ou agentes isolados. Eles fazem parte do sistema de negocio, entendem o contexto operacional e conseguem executar tarefas diretamente dentro do fluxo de trabalho real.</p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/AE-3.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

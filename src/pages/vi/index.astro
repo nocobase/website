@@ -1,0 +1,1510 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InteractiveDemo from "../../components/InteractiveDemo.astro";
+import AIAvatar from '../../components/AIAvatar.astro';
+import demoConfig from "../../data/demo-config-en.json";
+
+const demo_20260429083220 = {
+  "title": "Xay dung voi AI",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI building",
+  "title": "Xay dung nhanh hon voi agent lap trinh AI",
+      "description": "Xay dung nhanh hon voi agent lap trinh AI"
+    },
+    {
+      "id": "step-1",
+      "title": "Buoc 1",
+      "description": "Ket noi Claude Code, Codex, OpenCode va cac agent lap trinh khac voi NocoBase thong qua CLI",
+      "image": "https://static-docs.nocobase.com/A1.png",
+      "button": {
+        "id": "button2",
+        "label": "Ket noi Claude Code, Codex, OpenCode va cac agent lap trinh khac voi NocoBase thong qua CLI",
+        "position": {
+          "left": "28.7%",
+          "top": "48.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Buoc 2",
+      "description": "NocoBase huong dan ket noi mot ung dung co san hoac trien khai ung dung moi",
+      "image": "https://static-docs.nocobase.com/A2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase huong dan ket noi mot ung dung co san hoac trien khai ung dung moi",
+        "position": {
+          "left": "47.6%",
+          "top": "47.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Buoc 4",
+      "description": "Sau khi ket noi, chung ta co the noi chuyen voi agent bang ngon ngu tu nhien va xay dung trong NocoBase",
+      "image": "https://static-docs.nocobase.com/A3.png",
+      "button": {
+        "id": "button4",
+        "label": "Sau khi ket noi, chung ta co the noi chuyen voi agent bang ngon ngu tu nhien va xay dung trong NocoBase",
+        "position": {
+          "left": "27.8%",
+          "top": "57.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Buoc 5",
+      "description": "Yeu cau AI tao bang du lieu va truong cho cong ty, lien he, co hoi, don hang va nhieu hon nua",
+      "image": "https://static-docs.nocobase.com/A4.png",
+      "button": {
+        "id": "button5",
+        "label": "Yeu cau AI tao bang du lieu va truong cho cong ty, lien he, co hoi, don hang va nhieu hon nua",
+        "position": {
+          "left": "28.7%",
+          "top": "47.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Buoc 6",
+      "description": "Tat ca bang va truong duoc tao trong mot lan",
+      "image": "https://static-docs.nocobase.com/A5.png",
+      "button": {
+        "id": "button6",
+        "label": "Tat ca bang va truong duoc tao trong mot lan",
+        "position": {
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Buoc 7",
+      "description": "Yeu cau AI tao menu, dashboard va cac trang quan ly khach hang",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "Yeu cau AI tao menu, dashboard va cac trang quan ly khach hang",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Buoc 8",
+      "description": "Ca ba trang duoc tao trong mot lan",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "Ca ba trang duoc tao trong mot lan",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Buoc 9",
+      "description": "Moi trang deu di kem day du chuc nang",
+      "image": "https://static-docs.nocobase.com/A8.png",
+      "button": {
+        "id": "button9",
+        "label": "Moi trang deu di kem day du chuc nang",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Buoc 10",
+      "description": "Yeu cau AI cap nhat dashboard va them module cong viec ca nhan hoa cho viec cham soc khach hang",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "Yeu cau AI cap nhat dashboard va them module cong viec ca nhan hoa cho viec cham soc khach hang",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Buoc 11",
+      "description": "AI da dung JS Block de tao mot khoi cong viec gon gang va de su dung",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "AI da dung JS Block de tao mot khoi cong viec gon gang va de su dung",
+        "position": {
+          "left": "44.9%",
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Buoc 12",
+      "description": "Tiep theo, yeu cau AI thiet ke role va quyen han de cac doi sales, merchandising va logistics co the lam phan viec cua minh",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "Tiep theo, yeu cau AI thiet ke role va quyen han de cac doi sales, merchandising va logistics co the lam phan viec cua minh",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Buoc 13",
+      "description": "Tat ca role da san sang, voi quyen han duoc dinh nghia den cap truong",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "Tat ca role da san sang, voi quyen han duoc dinh nghia den cap truong",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Buoc 14",
+      "description": "Cuoi cung, yeu cau AI tao mot quy trinh tu dong nang hang khach hang dua tren muc chi tieu",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "Cuoi cung, yeu cau AI tao mot quy trinh tu dong nang hang khach hang dua tren muc chi tieu",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Hoan tat",
+      "title": "Hoan tat: he thong quan ly khach hang don gian cua ban da san sang hoat dong",
+      "description": "Hoan tat: he thong quan ly khach hang don gian cua ban da san sang hoat dong"
+    }
+  ]
+};
+
+const demo_20260429085434 = {
+  "title": "Tu trai nghiem: tao CRM trong 3 buoc",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Phat trien no-code",
+      "description": "Phat trien no-code: thay gi xay do",
+      "title": "Phat trien no-code: thay gi xay do"
+    },
+    {
+      "id": "step-2",
+      "title": "Buoc 2",
+      "description": "Dau tien, cau hinh nguon du lieu va mo hinh du lieu",
+      "image": "https://static-docs.nocobase.com/S1.png",
+      "button": {
+        "id": "button2",
+        "label": "Dau tien, cau hinh nguon du lieu va mo hinh du lieu",
+        "position": {
+          "right": "27.8%",
+          "top": "13.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Buoc 3",
+      "description": "NocoBase di kem co so du lieu chinh tich hop san, va chung ta cung co the them cac nguon du lieu ben ngoai",
+      "image": "https://static-docs.nocobase.com/S2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase di kem co so du lieu chinh tich hop san, va chung ta cung co the them cac nguon du lieu ben ngoai",
+        "position": {
+          "right": "12.3%",
+          "top": "17.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Buoc 4",
+      "description": "Hay tao bang va truong trong co so du lieu chinh",
+      "image": "https://static-docs.nocobase.com/S3.png",
+      "button": {
+        "id": "button4",
+        "label": "Hay tao bang va truong trong co so du lieu chinh",
+        "position": {
+          "right": "17.1%",
+          "top": "31.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Buoc 5",
+      "description": "Ban co the xem lai hoac dieu chinh mo hinh du lieu do AI tao, hoac tu tao bang moi bang tay",
+      "image": "https://static-docs.nocobase.com/B4.png",
+      "button": {
+        "id": "button5",
+        "label": "Ban co the xem lai hoac dieu chinh mo hinh du lieu do AI tao, hoac tu tao bang moi bang tay",
+        "position": {
+          "right": "21.3%",
+          "top": "27.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Buoc 6",
+      "description": "Chon kieu truong ban can tu hang chuc lua chon",
+      "image": "https://static-docs.nocobase.com/B5.png",
+      "button": {
+        "id": "button6",
+        "label": "Chon kieu truong ban can tu hang chuc lua chon",
+        "position": {
+          "right": "13.0%",
+          "top": "8.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Buoc 7",
+      "description": "Tiep theo, quay lai trang de xem va chinh sua nhung gi AI da tao, hoac tu tao trang moi bang tay",
+      "image": "https://static-docs.nocobase.com/B6.png",
+      "button": {
+        "id": "button7",
+        "label": "Tiep theo, quay lai trang de xem va chinh sua nhung gi AI da tao, hoac tu tao trang moi bang tay",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Buoc 8",
+      "description": "Chuyen sang che do cau hinh UI de vao trai nghiem phat trien WYSIWYG",
+      "image": "https://static-docs.nocobase.com/B7.png",
+      "button": {
+        "id": "button8",
+        "label": "Chuyen sang che do cau hinh UI de vao trai nghiem phat trien WYSIWYG",
+        "position": {
+          "right": "18.8%",
+          "top": "8.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Buoc 9",
+      "description": "Them \"Table Block\" vao trang va chon bang \"Products\" de hien thi du lieu",
+      "image": "https://static-docs.nocobase.com/B8.png",
+      "button": {
+        "id": "button9",
+        "label": "Them \"Table Block\" vao trang va chon bang \"Products\" de hien thi du lieu",
+        "position": {
+          "left": "38.1%",
+          "top": "38.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Buoc 10",
+      "description": "Cau hinh table block de hien thi cac truong can thiet",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "Cau hinh table block de hien thi cac truong can thiet",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Buoc 11",
+      "description": "Them cac hanh dong can thiet vao bang",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "Them cac hanh dong can thiet vao bang",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Buoc 12",
+      "description": "Chung ta cung muon phan tich nhom san pham bang bieu do, vi vay hay them Charts block",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "Chung ta cung muon phan tich nhom san pham bang bieu do, vi vay hay them Charts block",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Buoc 13",
+      "description": "Cau hinh truy van va bieu do de hinh dung ro rang phan bo san pham",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "Cau hinh truy van va bieu do de hinh dung ro rang phan bo san pham",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Buoc 14",
+      "description": "Them form block de nhap du lieu san pham",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "Them form block de nhap du lieu san pham",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Buoc 15",
+      "description": "Cuoi cung, keo cac block nay vao bo cuc ban can. Ca ba block tren trang deu hien thi du lieu tu bang \"Products\"",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "Cuoi cung, keo cac block nay vao bo cuc ban can. Ca ba block tren trang deu hien thi du lieu tu bang \"Products\"",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Buoc 16",
+      "description": "Mo trang role va permission de xem lai va tinh chinh nhung gi AI da tao",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "Mo trang role va permission de xem lai va tinh chinh nhung gi AI da tao",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Buoc 17",
+      "description": "Ban cung co the tao role thu cong",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "Ban cung co the tao role thu cong",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Buoc 18",
+      "description": "Xem lai va dieu chinh quyen han chi tiet cho tung role",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "Xem lai va dieu chinh quyen han chi tiet cho tung role",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Buoc 19",
+      "description": "Mo trang cau hinh workflow de xem lai va tinh chinh nhung gi AI da tao",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "Mo trang cau hinh workflow de xem lai va tinh chinh nhung gi AI da tao",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Buoc 20",
+      "description": "Cau hinh hoac chinh sua workflow voi hang chuc node co san",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "Cau hinh hoac chinh sua workflow voi hang chuc node co san",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Hoan tat",
+      "title": "Hoan tat: he thong quan ly khach hang cua ban da san sang de su dung",
+      "description": "Hoan tat: he thong quan ly khach hang cua ban da san sang de su dung"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "Tu trai nghiem: tao CRM trong 3 buoc",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Nhan vien AI",
+      "title": "De nhan vien AI ho tro van hanh kinh doanh",
+      "description": "De nhan vien AI ho tro van hanh kinh doanh"
+    },
+    {
+      "id": "step-2",
+      "title": "Buoc 2",
+      "description": "Nhan vien AI cua NocoBase co the ho tro con nguoi trong rat nhieu cong viec",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "Nhan vien AI cua NocoBase co the ho tro con nguoi trong rat nhieu cong viec",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Buoc 3",
+      "description": "Them Viz, mot nha phan tich du lieu, vao bang khach hang",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "Them Viz, mot nha phan tich du lieu, vao bang khach hang",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Buoc 4",
+      "description": "Cau hinh nhiem vu cho Viz de phan tich du lieu khach hang va tao bao cao",
+      "image": "https://static-docs.nocobase.com/C3.png",
+      "button": {
+        "id": "button4",
+        "label": "Cau hinh nhiem vu cho Viz de phan tich du lieu khach hang va tao bao cao",
+        "position": {
+          "right": "33.4%",
+          "top": "39.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Buoc 5",
+      "description": "Nhan de goi Viz",
+      "image": "https://static-docs.nocobase.com/C4.png",
+      "button": {
+        "id": "button5",
+        "label": "Nhan de goi Viz",
+        "position": {
+          "right": "22.0%",
+          "top": "37.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Buoc 6",
+      "description": "Viz da phan tich du lieu khach hang va tao ra cac dau ra PDF, Markdown va HTML de lua chon",
+      "image": "https://static-docs.nocobase.com/C5.png",
+      "button": {
+        "id": "button6",
+        "label": "Viz da phan tich du lieu khach hang va tao ra cac dau ra PDF, Markdown va HTML de lua chon",
+        "position": {
+          "left": "27.5%",
+          "top": "35.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Buoc 7",
+      "description": "Them Vera, mot dieu tra vien, vao detail block",
+      "image": "https://static-docs.nocobase.com/C6.png",
+      "button": {
+        "id": "button7",
+        "label": "Them Vera, mot dieu tra vien, vao detail block",
+        "position": {
+          "right": "25.5%",
+          "top": "73.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Buoc 8",
+      "description": "Cau hinh nhiem vu cho Vera de thu thap thong tin truc tuyen va nghien cuu boi canh cua khach hang",
+      "image": "https://static-docs.nocobase.com/C7.png",
+      "button": {
+        "id": "button8",
+        "label": "Cau hinh nhiem vu cho Vera de thu thap thong tin truc tuyen va nghien cuu boi canh cua khach hang",
+        "position": {
+          "right": "32.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Buoc 9",
+      "description": "Nhan de kich hoat Vera",
+      "image": "https://static-docs.nocobase.com/C8.png",
+      "button": {
+        "id": "button9",
+        "label": "Nhan de kich hoat Vera",
+        "position": {
+          "right": "22.3%",
+          "top": "16.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Buoc 10",
+      "description": "Co ay da thu thap thong tin ve khach hang tu hang chuc nguon va tong hop thanh bao cao boi canh",
+      "image": "https://static-docs.nocobase.com/C9.png",
+      "button": {
+        "id": "button10",
+        "label": "Co ay da thu thap thong tin ve khach hang tu hang chuc nguon va tong hop thanh bao cao boi canh",
+        "position": {
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Buoc 11",
+      "description": "Tich hop NocoBase voi Hermes, OpenClaw va cac agent khac de ban co the tro chuyen truc tiep voi NocoBase tu Slack, WhatsApp va Feishu",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "Tich hop NocoBase voi Hermes, OpenClaw va cac agent khac de ban co the tro chuyen truc tiep voi NocoBase tu Slack, WhatsApp va Feishu",
+        "position": {
+          "left": "48.8%",
+          "top": "31.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Buoc 12",
+      "description": "Gui lenh truc tiep trong Telegram de tom tat cuoc trao doi nay va them thong tin khach hang vao NocoBase",
+      "image": "https://static-docs.nocobase.com/C11.png",
+      "button": {
+        "id": "button12",
+        "label": "Gui lenh truc tiep trong Telegram de tom tat cuoc trao doi nay va them thong tin khach hang vao NocoBase",
+        "position": {
+          "right": "28.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Buoc 13",
+      "description": "Ban co the thay khach hang da duoc them vao NocoBase",
+      "image": "https://static-docs.nocobase.com/C12.png",
+      "button": {
+        "id": "button13",
+        "label": "Ban co the thay khach hang da duoc them vao NocoBase",
+        "position": {
+          "right": "44.1%",
+          "top": "48.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Hoan tat",
+      "title": "Hoan tat: he thong quan ly khach hang thong minh va day du da san sang",
+      "description": "Hoan tat: he thong quan ly khach hang thong minh va day du da san sang"
+    }
+  ]
+};
+---
+
+<Layout>
+    <!-- Hero Start -->
+    <section class="bg-half-260 bg-light d-table w-100">
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">AI + No-Code<br />Xay dung he thong nghiep vu <span class="text-primary fw-bold">dang tin cay</span></h1>
+          <p class="para-desc mx-auto text-muted">
+            NocoBase la nen tang open source ket hop AI + no-code de xay dung he thong nghiep vu nhanh hon. Thay vi tao moi moi thu tu dau, AI van hanh tren ha tang da duoc kiem chung trong thuc te va giao dien WYSIWYG, giup ban co ca toc do lan do tin cay.
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" title="Xem NocoBase van hanh nhu the nao" class="btn btn-outline-primary mb-2">Xem cach hoat dong<i class="uil uil-angle-right-b"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">Dung thu online<i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center " id="section-video">
+          <div class="col-lg-10 text-center">
+            <div class="home-video">
+              <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
+              <div class="bg-overlay rounded-md shadow-lg" style=""></div>
+              <div class="play-icon">
+                <a href="?fallback_url" class="play-btn lightbox" data-type="html" data-target="#nocobase_video_lightbox" title="Xem video NocoBase">
+                  <i class="mdi mdi-play text-primary rounded-circle shadow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!--end row-->
+      </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
+
+  <!-- Demo Start -->
+  <section class="section pb-5 mt-5" id="section-3-steps">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center  mb-5 pb-5">
+                <!-- Hero Users start -->
+                <div class="row justify-content-center text-center"><span class="para-desc mx-auto text-muted">Duoc doanh nghiep su dung cho cac he thong nghiep vu thuc te</span></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
+                    </div> -->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+                <!-- Hero Users End -->
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">Tu trai nghiem:<br>xay dung <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "CRM", "he thong quan ly du an", "he thong ticket", "he thong ton kho", "he thong don hang" ]'></span> thong minh voi AI + no-code</h3>
+                    <p class="text-muted para-desc mx-auto mb-0">Xay dung bang AI, tinh chinh bang no-code, va de nhan vien AI ho tro van hanh hang ngay.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                           Xay dung nhanh voi coding agent AI
+                        </h6>
+                        <p class="text-muted para">Tao nhanh mot he thong hoan chinh voi cac agent nhu Claude Code, Codex va Cursor.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Dung thu demo NocoBase" class="text-primary lightbox">👉 Dung thu <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">Xay dung bang AI</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            Phat trien thu cong voi no-code
+                        </h6>
+                        <p class="text-muted para">Ban co the tham gia bat cu luc nao va chinh sua truc tiep trong giao dien WYSIWYG.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Dung thu demo NocoBase" class="text-primary lightbox">👉 Dung thu <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">No code</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            <AIAvatar name="lexi" />
+                            <AIAvatar name="viz" />
+                            <AIAvatar name="vera" />
+                            <AIAvatar name="dex" />
+                            De nhan vien AI xu ly cong viec nghiep vu
+                        </h6>
+                        <p class="text-muted para">Su dung nhan vien AI tich hop san hoac agent ben ngoai de ho tro phan tich, ra quyet dinh va cong viec lap lai.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Dung thu demo NocoBase" class="text-primary lightbox">👉 Dung thu <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">Nhan vien AI</li>
+                            <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+
+
+  <!-- For you Start -->
+  <section class="section pb-5 bg-light" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">NocoBase danh cho ai</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Du ban xay dung cho doi ngu noi bo hay cho khach hang, he thong nghiep vu luon di kem voi <span class="text-primary fw-bold">nhung thach thuc lon</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Nhu cau nghiep vu<br />thay doi lien tuc</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Tien do ban giao<br />rat gap</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Chu ky phat trien<br />con cham</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Chi phi nhan su<br />van cao</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">AI coding dang thay doi cach xay dung phan mem, nhung trong thuc te no cung mang lai <span class="text-primary fw-bold">nhung van de moi</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Kien truc mong manh, kho mo rong ve sau<br><span class="text-muted">AI tao code nhanh, nhung hiem khi tao ra mot he thong co kien truc tot, do on dinh thuc su va kha nang tiep tuc lap lai</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Cac module cot loi lien tuc bi lam lai, chat luong khong dong deu<br><span class="text-muted">Moi du an lai phai tu lam lai quan ly nguoi dung, quyen han, workflow va nhung nen tang khac, vua lap lai vua kho kiem soat</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>He thong do AI tao ra dan tro thanh hop den<br><span class="text-muted">Nguoi dung nghiep vu khong de de hieu hoac dieu chinh ket qua ma AI tao ra, khien viec bao tri va thay doi ton kem hon</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Kho van hanh trong cac rang buoc nghiep vu thuc te<br><span class="text-muted">AI gap kho khi xu ly van hanh doanh nghiep thuc su duoi cac quy tac quyen han va workflow nghiem ngat</span></li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">Hay thu NocoBase.<br />Nen tang nay mang den cho doi ngu cua ban <span class="text-primary fw-bold">ha tang</span> de xay dung he thong nghiep vu, giup AI va con nguoi phoi hop hieu qua.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start 1 -->
+  <section class="section" id="section-how">
+    <div class="container">
+      <!-- 可靠 -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Dang tin cay: ha tang san sang cho nghiep vu thuc te</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Model du lieu, quyen han va workflow rat phuc tap va de sai sot.<br />NocoBase cung cap san tat ca nhu mot lop ha tang tich hop, da duoc kiem chung trong moi truong van hanh.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Ha tang day du</span>, khong can bat dau lai tu dau</h5>
+            <p class="text-muted">Hang chuc module tich hop san bao phu nhung nhu cau pho bien nhat cua he thong nghiep vu.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Data models, permissions, workflows, and audit logs work out of the box</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Proven in production, instead of regenerated as black-box code each time</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Built-in guardrails keep AI output aligned with the system architecture</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-core.png" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Van hanh theo model du lieu</span>, tach biet du lieu va giao dien</h5>
+            <p class="text-muted">Du lieu nghiep vu duoc giu trong cau truc quan he tieu chuan, tach rieng khoi lop giao dien.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Use the main database, external databases, and third-party APIs as data sources</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI and people work on the same data model, so results stay transparent</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Your data always stays in your own database, without platform lock-in</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Kien truc plugin</span> de phat trien ben vung</h5>
+            <p class="text-muted">Voi thiet ke microkernel, moi kha nang deu co the mo rong qua plugin ma van giu duoc tinh nhat quan.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>New features are added through composable plugins with shared conventions</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Mix custom and official plugins to fit your business</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>The same architecture applies to both AI-built and manually built plugins</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 协同 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Phoi hop: AI va con nguoi xay dung cung nhau</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Coding agent co day du CLI va skill, trong khi con nguoi co giao dien WYSIWYG. Ca hai co the phoi hop hieu qua trong cung mot he thong.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Xay dung voi <span class="text-primary">AI coding agent</span> ma ban da quen thuoc</h5>
+            <p class="text-muted">Tu buoc trien khai den mot he thong co the su dung duoc chi trong vai phut voi cac agent pho bien.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tuong thich voi cac agent pho bien nhu Claude Code, Cursor, Codex, OpenCode va TRAE</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Agent co the dam nhan setup, phat trien, di chuyen va phat hanh tu dau den cuoi</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, OpenCode, TRAE and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Tu xay dung trong giao dien no-code <span class="text-primary">WYSIWYG</span></h5>
+            <p class="text-muted">Ngay ca khi khong dung AI, ban van co the tao va dieu chinh moi thu truc quan trong giao dien visual.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Chuyen doi giua che do su dung va che do cau hinh chi voi mot cu nhap</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Xem va cau hinh mo hinh du lieu, trang, workflow va quyen han bang giao dien truc quan</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Duoc thiet ke cho nguoi dung nghiep vu, khong chi danh cho lap trinh vien</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Ket hop <span class="text-primary">phat trien bang AI va xay dung thu cong</span> theo cach ban muon</h5>
+            <p class="text-muted">Chia cong viec linh hoat: con nguoi chinh sua nhung gi AI tao, va AI tiep tuc dua tren nhung gi con nguoi da cau hinh.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI co the nhanh chong tao mo hinh du lieu, trang va workflow</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Con nguoi co the nhanh chong tinh chinh UI va tuong tac</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Hop tac khi can va tiep tuc lap lai de hoan thien</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Thong minh: AI giup van hanh nghiep vu, khong chi dung de xay he thong</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase tich hop nhan vien AI de AI co the lam viec truc tiep ben trong he thong.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Nhan vien AI</span> duoc tich hop vao workflow nghiep vu</h5>
+            <p class="text-muted">Nhan vien AI tu dong nhan biet boi canh nghiep vu va thuc thi tac vu ngay trong he thong.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>O front-end, ho tro phan tich, hoi dap, dien bieu mau va nhieu viec khac</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>O back-end, tu dong xu ly nhan dang tai lieu, giam sat rui ro va dieu phoi tac vu</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tich hop voi workflow, nhan vien AI co the tham gia ra quyet dinh va thuc thi</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Giao dien mo</span> cho he sinh thai agent</h5>
+            <p class="text-muted">MCP, HTTP API, CLI va he skill phong phu cho phep agent ben ngoai ket noi an toan.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Cac nen tang nhu OpenClaw, Hermes, Dify, Coze va n8n ket noi qua cac giao thuc tieu chuan</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Ket noi voi Telegram, WhatsApp, Slack va Gmail de truy van du lieu, kich hoat hanh dong va thuc thi workflow kinh doanh</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Mot mo hinh giao tiep giu cho agent ben trong va ben ngoai nam trong cung mot gioi han</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Co che phan quyen</span> giu hanh vi AI trong tam kiem soat</h5>
+            <p class="text-muted">Moi hanh dong cua AI deu tuan theo cung mot he thong quyen chi tiet nhu nguoi dung thuc.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Moi nhan vien AI co role rieng, voi quyen doc va ghi den cap truong</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Nhat ky kiem toan giup moi thay doi du lieu va moi lan kich hoat workflow deu co the truy vet</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Quan tri vien co the dieu chinh quyen AI bat cu luc nao de giu ranh gioi ro rang</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Va con nhieu hon nua</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Ma nguon mo va minh bach</span>, voi quyen kiem soat day du</h5>
+            <p class="text-muted">Ma nguon cot loi va cac plugin nen tang cua NocoBase deu mo hoan toan, giup ban minh bach va chu dong.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Phan loi va cac plugin nen tang deu hoan toan open source</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Duoc xay dung bang TypeScript tren cac cong nghe pho bien nhu Node.js, React va Koa</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>An toan va co the kiem soat: moi du lieu va tuong tac AI deu chay trong moi truong cua ban</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Nho gon va nhe: chay duoc tren may chu cau hinh vua phai va co the duoc mot nguoi duy tri, mo rong</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Mo hinh cap phep</span> don gian</h5>
+            <p class="text-muted">NocoBase cung cap ban open source mien phi, cung voi license thuong mai va plugin theo mo hinh mua mot lan, dung lau dai.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Khong can tra phi dang ky dinh ky</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Khong tinh phi theo nguoi dung</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Khong tinh phi theo ung dung</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Khong tinh phi theo dung luong du lieu</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Users Start -->
+  <section class="section pb-0 bg-light" id="section-users">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Nhieu doi ngu da dung NocoBase trong moi truong van hanh thuc te</h3>
+        </div><!--end col-->
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/isuzu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iopex.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhuozheng-yiliao.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhejiang-nengyuan.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/yamaha.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wuhan-liangyou.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wasu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/vinfast.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/ville-dyverdon-les-bains.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/toyota.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/tomsk-polytechnic-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/sony.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smfl.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smart-devil.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shimano.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shanghai-civil-aircraft-landing-gear.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/region-grand-est.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/pland.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/peking-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/osg.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/nxp.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/lenovo.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iit-madras.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hygea.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hi-p.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/haideshi.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/gadgeon-systems.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/feilihua.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/dgac.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/daikin.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/copenhagen-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/biel.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/beijing-shiji-hulian.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/bank-of-china.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/aozora-bank.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/american-express.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/allobank.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/luxshareict.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/changan-2.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+        </div><!--end row-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Users End -->
+
+  <!-- Feedback Start -->
+  <section class="section bg-light" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Vi sao dieu nay quan trong: lang nghe nguoi dung chia se</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">After adopting NocoBase, the time we spend on administrative tasks dropped by 50%, collaboration and communication improved, and our recruitment process became faster and more efficient.</p>
+              <p class="text-muted fst-italic">At TEDxDUTH, we believe innovation and collaboration can change the world. NocoBase helps us streamline daily operations so we can focus more energy on what truly matters: creating inspiring events and spreading meaningful ideas.</p>
+              <p class="text-muted fst-italic">If your organization is dealing with chaotic or inefficient workflows, NocoBase is not just a tool. It is a comprehensive solution that unlocks your team's potential and makes more possible. For us, NocoBase has been a true game changer: it has empowered us to dream bigger, transformed how we work, and continues to shape our community.</p>
+              <p class="text-muted fst-italic">We are grateful to NocoBase for being an indispensable partner on our journey. Together, we keep advancing innovation and the spread of ideas.</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We evaluated Airtable and NocoDB before ultimately choosing NocoBase because it better matched our needs for system flexibility and deployment control. We can deploy NocoBase in our AWS environment, it does not limit the number of users, its permission controls are fine-grained, and its separation of pages and data lets us customize the frontend flexibly. Built-in workflows and automatic API generation have also greatly improved efficiency.</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式会社（Classmethod, Inc.）</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Before choosing NocoBase, we did not have a dedicated customer service and operations management system. As the business grew quickly, we needed to build fast and support more and more demands, and NocoBase solved that well. Its relational data modeling is especially strong, allowing us to integrate different data structures efficiently so customer service staff can quickly look up user information and handle entitlement issues in real time, which has greatly improved operational efficiency.</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">PLAUD Product Manager Lucas</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We had been looking for a flexible no-code platform to build a fully customized scheduling system for our client Okechamp and its rapidly growing logistics business. During our evaluation, NocoBase stood out for its schema-first architecture, modular design, and active community. It made it easy for us to implement custom views and report management, and we plan to keep using NocoBase in more client projects.</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
+              <h6 class="text-primary">Lukardi SA</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We used to rely on paper-based processes for HR management and leave approvals, which was inefficient and error-prone. After building HR, attendance, leave, and related processes with NocoBase, we achieved truly paperless operations, and managing more than 110 employees became far more efficient and intuitive. NocoBase's flexible interface design and powerful APIs fully meet the diverse needs of our real estate business. Compared with tools like Salesforce, it is not only highly customizable but also available through a one-time purchase model, making it extremely cost-effective. We are now planning to migrate more systems to NocoBase, including CRM, and make it the company portal and core business platform.</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式会社(HouseWell)</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">When building our smart factory system, we chose NocoBase as the core platform. Its streamlined configuration process allows non-technical staff to build system pages quickly, greatly improving development efficiency. At the same time, its plugin ecosystem and workflow engine help us adapt flexibly to a variety of business scenarios while maintaining system quality and scalability. With NocoBase's fine-grained permission system, we achieved efficient collaboration and strong data security across processes such as equipment maintenance and HR management. After deployment, together with a PC, mobile, and 5G architecture, it enabled real-time data feedback and efficient data entry, laying a solid foundation for our smart factory initiative.</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">BIEL Crystal Holdings Limited</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Among many modern database products, NocoBase is the only solution that truly made me feel we could have it all. We needed a non-SaaS, low-code, extensible system to support collaboration across dozens of teams and highly standardized professional scenarios. The learning curve was unexpectedly smooth. Within just a few days, I was able to build business processes without depending on developers.</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奥雅设计" /></a>
+              <h6 class="text-primary">Aoya Design, Business Lead Zhang Tingyuan</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">After comparing and evaluating several low-code platforms from China and abroad, we ultimately chose NocoBase. It supports local deployment and functional extensibility, which perfectly matches our high standards for data security and system customization in the chemistry field. NocoBase's professional support team and flexible data modeling capabilities made our go-live process efficient and reliable.</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">XtalPi Project Lead Xiong Zhi</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks.</p>
+              <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
+              <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">NocoBase serves as the core for data management, API services, and workflows, greatly reducing development complexity and allowing our developers to focus more on implementing business logic, which has significantly improved development efficiency.</p>
+              <p class="text-muted fst-italic">NocoBase offers excellent integration capabilities, connecting seamlessly with various third-party services and systems to enable data sharing and functional integration. That means we do not need to build everything from scratch. Instead, we can make full use of existing services and resources and quickly integrate them into our applications. This not only reduces development time and cost, but also makes our applications richer and more capable in meeting diverse user needs.</p>
+              <p class="text-muted fst-italic">In this fast-moving digital era, NocoBase is undoubtedly a powerful tool for helping us meet challenges and drive innovation. Thanks to the NocoBase team for all their work.</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">Xinjiang Unicom Innovation Lab</h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">San sang su dung NocoBase?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Trien khai demo cua rieng ban trong mot phut. Tu trien khai NocoBase trong moi truong cua ban cung de nhu vay.</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Dung thu NocoBase online">Live Demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Tim hieu cach trien khai NocoBase cuc bo">Trien khai cuc bo <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+
+  <!-- Lightbox Start -->
+    <!-- video in lightbox  -->
+      <div style="display: none;">
+        <div id="nocobase_video_lightbox">
+          <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
+          <video controls>
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-EN.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- end video in lightbox  -->
+
+      <!-- step1 lightbox -->
+      <div style="display: none;">
+        <div id="step1_lightbox">
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step1 lightbox -->
+
+      <!-- step2 lightbox -->
+      <div style="display: none;">
+        <div id="step2_lightbox">
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step2 lightbox -->
+
+      <!-- step3 lightbox -->
+      <div style="display: none;">
+        <div id="step3_lightbox">
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step3 lightbox -->
+
+  <!-- Lightbox End -->
+</Layout>

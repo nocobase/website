@@ -1,0 +1,19 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Bloecke und Aktionen";
+const description = "Erfahren Sie, wie NocoBase Benutzeroberflaeche und Daten entkoppelt, damit sich Bloecke, Aktionen und Event-Flows flexibel kombinieren lassen.";
+const keywords = "NocoBase, Bloecke, Aktionen, Event-Flows, Benutzeroberflaeche, no-code";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container">
+    <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Entkoppeln Sie <span class="text-primary">Oberflaeche und Daten</span>, um Bloecke und Aktionen frei zu kombinieren</h5><p class="text-muted">Im Unterschied zu vielen no-code Produkten, die von der Seitenstruktur ausgehen, ist NocoBase datengetrieben. Erst wird das Datenmodell definiert, dann die Oberflaeche. So kann dieselbe Datenbasis unterschiedliche Ansichten und Aktionen fuer verschiedene Szenarien tragen.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.1-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Ein <span class="text-primary">Filterblock</span> fuer mehrere Datenbloecke und Event-Flows</h5><p class="text-muted">Wenn eine Seite mehrere Datenbloecke wie Tabellen oder Diagramme enthaelt, kann ein einziger Filterblock alle gleichzeitig steuern.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.2-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Nutzen Sie <span class="text-primary">Event-Flows</span>, um Bloecke und Aktionen zu verbinden</h5><p class="text-muted">Wenn eine Seite viele Bloecke und Aktionen zusammenfuehrt, helfen Event-Flows dabei, deren Interaktionslogik zu orchestrieren. So lassen sich etwa beim Oeffnen eines Kunden im CRM gleichzeitig passende Bestellungen aus dem ERP anzeigen.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.3-EN.mp4" type="video/mp4"></video></div></div></div>
+  </div></section>
+</Layout>

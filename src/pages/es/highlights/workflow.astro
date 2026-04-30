@@ -1,0 +1,110 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Flujos de trabajo";
+const description = "Descubre cómo NocoBase automatiza procesos empresariales con disparadores, acciones, webhooks e integraciones entre sistemas.";
+const keywords = "NocoBase, flujos de trabajo, automatización, webhook, integración, procesos";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Crea flujos de trabajo con <span class="text-primary">disparadores y acciones</span></h5>
+            <p class="text-muted">Un workflow de NocoBase se compone de un disparador y una serie de nodos de acción. El disparador pone en marcha el flujo y las acciones se ejecutan paso a paso.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Validación lógica</span> antes de enviar formularios</h5>
+            <p class="text-muted">Los eventos previos a la acción se activan antes de ejecutar una operación. Por ejemplo, cuando un comercial envía un pedido, el sistema puede comprobar si hay stock suficiente.<br>Si el inventario no alcanza, el workflow bloquea automáticamente el envío y avisa al usuario, evitando sobreventa o errores de datos.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Intercambio de datos entre <span class="text-primary">múltiples fuentes</span></h5>
+            <p class="text-muted">Cuando una aplicación de NocoBase incluye varias fuentes de datos, los workflows pueden orquestar la lógica entre ellas para automatizar procesos en el backend. Por ejemplo, cuando se crea un nuevo pedido en el ERP, el nivel del cliente en el CRM puede pasar automáticamente a “cliente de pago”.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Recibe <span class="text-primary">datos externos</span> con el disparador Webhook</h5>
+            <p class="text-muted">Con el disparador Webhook, NocoBase puede recibir datos de sistemas externos y ejecutar automáticamente las acciones definidas.<br>Por ejemplo, en un sistema externo de soporte, cada vez que un usuario envía nuevo feedback, esos datos pueden enviarse a NocoBase para crear automáticamente un nuevo ticket.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.4-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Conecta con <span class="text-primary">sistemas externos</span> mediante el nodo HTTP Request</h5>
+            <p class="text-muted">Con los nodos HTTP Request, NocoBase puede interactuar activamente con sistemas externos: llamar APIs, enviar datos automáticamente y recibir respuestas.<br>Por ejemplo, cuando el estado de envío se actualiza en NocoBase, la información del pedido puede enviarse automáticamente a una plataforma logística.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.5-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Depuración</span>, control de versiones y trazabilidad de ejecución</h5>
+            <p class="text-muted">Los workflows de NocoBase ofrecen depuración manual, control de versiones y seguimiento de logs, lo que hace que el desarrollo, las pruebas y la trazabilidad de la ejecución sean más fáciles y fiables.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.7-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>

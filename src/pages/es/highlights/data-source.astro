@@ -1,0 +1,65 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Fuentes de datos";
+const description = "Conecta varias fuentes de datos en NocoBase y gestiona la información empresarial desde una sola interfaz.";
+const keywords = "NocoBase, fuentes de datos, CRM, ERP, integración de datos, flujos de trabajo";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Conecta <span class="text-primary">múltiples fuentes de datos</span> y gestiona la información empresarial desde un solo lugar</h5>
+            <p class="text-muted">Los datos suelen estar repartidos entre CRM, ERP, finanzas e inventario. Al conectarlos todos con NocoBase, puedes integrarlos y consultarlos desde una sola interfaz, reducir el salto entre sistemas, eliminar silos y rebajar de forma notable los costes de mantenimiento.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.1-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Conecta distintas fuentes en el frontend con <span class="text-primary">flujos de eventos</span></h5>
+            <p class="text-muted">Cuando una página incluye bloques procedentes de varias fuentes de datos, los flujos de eventos permiten orquestar sus interacciones. Así puedes vincular información entre sistemas directamente en el frontend.<br>Por ejemplo, al ver un cliente en el CRM, puedes consultar al mismo tiempo sus pedidos en el ERP.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.2-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Conecta distintas fuentes en el backend con <span class="text-primary">flujos de trabajo</span></h5>
+            <p class="text-muted">Cuando una aplicación de NocoBase incluye varias fuentes de datos, los flujos de trabajo permiten orquestar la lógica en el backend y automatizar procesos entre sistemas.<br>Por ejemplo, cuando se crea un nuevo pedido en el ERP, el nivel correspondiente del cliente en el CRM puede actualizarse automáticamente a “cliente de pago”.</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>

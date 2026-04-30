@@ -1,0 +1,1510 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InteractiveDemo from "../../components/InteractiveDemo.astro";
+import AIAvatar from '../../components/AIAvatar.astro';
+import demoConfig from "../../data/demo-config-en.json";
+
+const demo_20260429083220 = {
+  "title": "AI Building",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI building",
+  "title": "Desarrolla rápido con agentes de código con IA",
+      "description": "Desarrolla rápido con agentes de código con IA"
+    },
+    {
+      "id": "step-1",
+      "title": "Step 1",
+      "description": "Conecta Claude Code, Codex, OpenCode y otros agentes de código a NocoBase desde la CLI",
+      "image": "https://static-docs.nocobase.com/A1.png",
+      "button": {
+        "id": "button2",
+        "label": "Conecta Claude Code, Codex, OpenCode y otros agentes de código a NocoBase desde la CLI",
+        "position": {
+          "left": "28.7%",
+          "top": "48.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase nos guía para conectar una aplicación existente o desplegar una nueva",
+      "image": "https://static-docs.nocobase.com/A2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase nos guía para conectar una aplicación existente o desplegar una nueva",
+        "position": {
+          "left": "47.6%",
+          "top": "47.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Una vez conectado, podemos hablar con el agente en lenguaje natural y construir en NocoBase",
+      "image": "https://static-docs.nocobase.com/A3.png",
+      "button": {
+        "id": "button4",
+        "label": "Una vez conectado, podemos hablar con el agente en lenguaje natural y construir en NocoBase",
+        "position": {
+          "left": "27.8%",
+          "top": "57.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Pide a la IA que cree tablas y campos para empresas, contactos, oportunidades, pedidos y más",
+      "image": "https://static-docs.nocobase.com/A4.png",
+      "button": {
+        "id": "button5",
+        "label": "Pide a la IA que cree tablas y campos para empresas, contactos, oportunidades, pedidos y más",
+        "position": {
+          "left": "28.7%",
+          "top": "47.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Todas las tablas y campos se crean de una sola vez",
+      "image": "https://static-docs.nocobase.com/A5.png",
+      "button": {
+        "id": "button6",
+        "label": "Todas las tablas y campos se crean de una sola vez",
+        "position": {
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Pide a la IA que cree un menú, un panel y páginas de gestión de clientes",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "Pide a la IA que cree un menú, un panel y páginas de gestión de clientes",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Las tres páginas se crean de una sola vez",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "Las tres páginas se crean de una sola vez",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Cada página queda lista con funcionalidad completa",
+      "image": "https://static-docs.nocobase.com/A8.png",
+      "button": {
+        "id": "button9",
+        "label": "Cada página queda lista con funcionalidad completa",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Pide a la IA que actualice el panel y añada un módulo personalizado de seguimiento comercial",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "Pide a la IA que actualice el panel y añada un módulo personalizado de seguimiento comercial",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Ha usado un JS Block para crear un bloque de tareas cuidado y fácil de usar",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "Ha usado un JS Block para crear un bloque de tareas cuidado y fácil de usar",
+        "position": {
+          "left": "44.9%",
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "Después, pide a la IA que diseñe y configure roles y permisos para que ventas, operaciones y logística trabajen dentro de su ámbito",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "Después, pide a la IA que diseñe y configure roles y permisos para que ventas, operaciones y logística trabajen dentro de su ámbito",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "Todos los roles quedan definidos, con permisos hasta nivel de campo",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "Todos los roles quedan definidos, con permisos hasta nivel de campo",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "Por último, pide a la IA que cree una automatización que actualice el nivel del cliente según su gasto",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "Por último, pide a la IA que cree una automatización que actualice el nivel del cliente según su gasto",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Enhorabuena",
+      "title": "Enhorabuena, tu sistema básico de gestión de clientes ya está en marcha",
+      "description": "Enhorabuena, tu sistema básico de gestión de clientes ya está en marcha"
+    }
+  ]
+};
+
+const demo_20260429085434 = {
+  "title": "Pruébalo tú mismo: crea un CRM en 3 pasos",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Construction no-code",
+      "description": "Desarrollo no-code, con una experiencia WYSIWYG",
+      "title": "Desarrollo no-code, con una experiencia WYSIWYG"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "Empieza configurando la fuente de datos y el modelo de datos",
+      "image": "https://static-docs.nocobase.com/S1.png",
+      "button": {
+        "id": "button2",
+        "label": "Empieza configurando la fuente de datos y el modelo de datos",
+        "position": {
+          "right": "27.8%",
+          "top": "13.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "NocoBase incluye una base de datos principal integrada y también permite añadir distintas fuentes de datos externas",
+      "image": "https://static-docs.nocobase.com/S2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase incluye una base de datos principal integrada y también permite añadir distintas fuentes de datos externas",
+        "position": {
+          "right": "12.3%",
+          "top": "17.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Ahora creemos las tablas y los campos en la base de datos principal",
+      "image": "https://static-docs.nocobase.com/S3.png",
+      "button": {
+        "id": "button4",
+        "label": "Ahora creemos las tablas y los campos en la base de datos principal",
+        "position": {
+          "right": "17.1%",
+          "top": "31.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Puedes revisar o ajustar el modelo de datos creado por la IA, o crear nuevas tablas manualmente",
+      "image": "https://static-docs.nocobase.com/B4.png",
+      "button": {
+        "id": "button5",
+        "label": "Puedes revisar o ajustar el modelo de datos creado por la IA, o crear nuevas tablas manualmente",
+        "position": {
+          "right": "21.3%",
+          "top": "27.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Elige entre decenas de tipos de campo el que necesites",
+      "image": "https://static-docs.nocobase.com/B5.png",
+      "button": {
+        "id": "button6",
+        "label": "Elige entre decenas de tipos de campo el que necesites",
+        "position": {
+          "right": "13.0%",
+          "top": "8.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Después vuelve a la página para revisar lo que ha creado la IA o crear nuevas páginas manualmente",
+      "image": "https://static-docs.nocobase.com/B6.png",
+      "button": {
+        "id": "button7",
+        "label": "Después vuelve a la página para revisar lo que ha creado la IA o crear nuevas páginas manualmente",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Cambia al modo de configuración de la interfaz para entrar en una experiencia WYSIWYG",
+      "image": "https://static-docs.nocobase.com/B7.png",
+      "button": {
+        "id": "button8",
+        "label": "Cambia al modo de configuración de la interfaz para entrar en una experiencia WYSIWYG",
+        "position": {
+          "right": "18.8%",
+          "top": "8.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Añade un bloque de tabla a la página y selecciona la tabla Productos para mostrar sus datos",
+      "image": "https://static-docs.nocobase.com/B8.png",
+      "button": {
+        "id": "button9",
+        "label": "Añade un bloque de tabla a la página y selecciona la tabla Productos para mostrar sus datos",
+        "position": {
+          "left": "38.1%",
+          "top": "38.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Configura el bloque de tabla para mostrar los campos que necesitas",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "Configura el bloque de tabla para mostrar los campos que necesitas",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Añade a la tabla las acciones que necesitas",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "Añade a la tabla las acciones que necesitas",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "También queremos analizar las categorías de producto con gráficos, así que añadamos un bloque de Charts",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "También queremos analizar las categorías de producto con gráficos, así que añadamos un bloque de Charts",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "Configura la consulta y el gráfico para visualizar con claridad la distribución de productos",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "Configura la consulta y el gráfico para visualizar con claridad la distribución de productos",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "Añade después un bloque de formulario para introducir datos de producto",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "Añade después un bloque de formulario para introducir datos de producto",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Step 15",
+      "description": "Por último, arrastra estos bloques hasta la disposición que necesites. Los tres muestran datos de la tabla Productos",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "Por último, arrastra estos bloques hasta la disposición que necesites. Los tres muestran datos de la tabla Productos",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Step 16",
+      "description": "Ve a la página de roles y permisos para revisar y ajustar lo que ha creado la IA",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "Ve a la página de roles y permisos para revisar y ajustar lo que ha creado la IA",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Step 17",
+      "description": "También puedes crear los roles manualmente",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "También puedes crear los roles manualmente",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Step 18",
+      "description": "Revisa y ajusta los permisos detallados de cada rol",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "Revisa y ajusta los permisos detallados de cada rol",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Step 19",
+      "description": "Ve a la página de flujos de trabajo para revisar y ajustar lo que ha creado la IA",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "Ve a la página de flujos de trabajo para revisar y ajustar lo que ha creado la IA",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Step 20",
+      "description": "Configura o modifica flujos de trabajo con decenas de nodos disponibles",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "Configura o modifica flujos de trabajo con decenas de nodos disponibles",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Bravo",
+      "title": "Enhorabuena, tu sistema de gestión de clientes ya está listo para usarse",
+      "description": "Enhorabuena, tu sistema de gestión de clientes ya está listo para usarse"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "Pruébalo tú mismo: crea un CRM en 3 pasos",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Collaborateurs IA",
+      "title": "Haz que empleados de IA participen en la operación",
+      "description": "Haz que empleados de IA participen en la operación"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "Los empleados de IA de NocoBase pueden ayudar a los equipos humanos en muchas tareas",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "Los empleados de IA de NocoBase pueden ayudar a los equipos humanos en muchas tareas",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "Añade a Viz, analista de datos, a la tabla de clientes",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "Añade a Viz, analista de datos, a la tabla de clientes",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "Configura las tareas de Viz para analizar los datos de clientes y generar informes",
+      "image": "https://static-docs.nocobase.com/C3.png",
+      "button": {
+        "id": "button4",
+        "label": "Configura las tareas de Viz para analizar los datos de clientes y generar informes",
+        "position": {
+          "right": "33.4%",
+          "top": "39.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "Haz clic para invocar a Viz",
+      "image": "https://static-docs.nocobase.com/C4.png",
+      "button": {
+        "id": "button5",
+        "label": "Haz clic para invocar a Viz",
+        "position": {
+          "right": "22.0%",
+          "top": "37.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Viz ha analizado los datos de clientes y ha generado salidas en PDF, Markdown y HTML para elegir",
+      "image": "https://static-docs.nocobase.com/C5.png",
+      "button": {
+        "id": "button6",
+        "label": "Viz ha analizado los datos de clientes y ha generado salidas en PDF, Markdown y HTML para elegir",
+        "position": {
+          "left": "27.5%",
+          "top": "35.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "Añade a Vera, investigadora, al bloque de detalle",
+      "image": "https://static-docs.nocobase.com/C6.png",
+      "button": {
+        "id": "button7",
+        "label": "Añade a Vera, investigadora, al bloque de detalle",
+        "position": {
+          "right": "25.5%",
+          "top": "73.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "Configura las tareas de Vera para recopilar información en línea y hacer una investigación previa sobre el cliente",
+      "image": "https://static-docs.nocobase.com/C7.png",
+      "button": {
+        "id": "button8",
+        "label": "Configura las tareas de Vera para recopilar información en línea y hacer una investigación previa sobre el cliente",
+        "position": {
+          "right": "32.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "Haz clic para despertar a Vera",
+      "image": "https://static-docs.nocobase.com/C8.png",
+      "button": {
+        "id": "button9",
+        "label": "Haz clic para despertar a Vera",
+        "position": {
+          "right": "22.3%",
+          "top": "16.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "Ha reunido información sobre el cliente desde decenas de fuentes y la ha resumido en un informe de contexto",
+      "image": "https://static-docs.nocobase.com/C9.png",
+      "button": {
+        "id": "button10",
+        "label": "Ha reunido información sobre el cliente desde decenas de fuentes y la ha resumido en un informe de contexto",
+        "position": {
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "Después conectemos NocoBase con Hermes, OpenClaw y otros agentes para hablar con NocoBase desde Slack, WhatsApp o Feishu",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "Después conectemos NocoBase con Hermes, OpenClaw y otros agentes para hablar con NocoBase desde Slack, WhatsApp o Feishu",
+        "position": {
+          "left": "48.8%",
+          "top": "31.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "Da una instrucción directa en Telegram para resumir esta conversación y añadir la información del cliente en NocoBase",
+      "image": "https://static-docs.nocobase.com/C11.png",
+      "button": {
+        "id": "button12",
+        "label": "Da una instrucción directa en Telegram para resumir esta conversación y añadir la información del cliente en NocoBase",
+        "position": {
+          "right": "28.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "En NocoBase puedes ver que el cliente ya se ha añadido",
+      "image": "https://static-docs.nocobase.com/C12.png",
+      "button": {
+        "id": "button13",
+        "label": "En NocoBase puedes ver que el cliente ya se ha añadido",
+        "position": {
+          "right": "44.1%",
+          "top": "48.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Bravo",
+      "title": "Enhorabuena, tu sistema inteligente de gestión de clientes ya está listo",
+      "description": "Enhorabuena, tu sistema inteligente de gestión de clientes ya está listo"
+    }
+  ]
+};
+---
+
+<Layout>
+    <!-- Hero Start -->
+    <section class="bg-half-260 bg-light d-table w-100">
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">IA + no-code<br />para crear sistemas de negocio <span class="text-primary fw-bold">fiables</span></h1>
+          <p class="para-desc mx-auto text-muted">
+            NocoBase es una plataforma open source de desarrollo con IA + no-code pensada para crear sistemas de negocio con rapidez. En lugar de pedir a la IA que genere todo el código desde cero, NocoBase aporta una infraestructura probada en producción y una interfaz no-code WYSIWYG para que IA y personas colaboren con eficiencia, sin sacrificar fiabilidad.
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="https://v2.docs.nocobase.com/en/get-started/how-nocobase-works" target="_blank" title="Descubre cómo funciona NocoBase" class="btn btn-outline-primary mb-2">Cómo funciona<i class="uil uil-angle-right-b"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">Probar online<i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center " id="section-video">
+          <div class="col-lg-10 text-center">
+            <div class="home-video">
+              <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
+              <div class="bg-overlay rounded-md shadow-lg" style=""></div>
+              <div class="play-icon">
+                <a href="?fallback_url" class="play-btn lightbox" data-type="html" data-target="#nocobase_video_lightbox" title="Ver el video de NocoBase">
+                  <i class="mdi mdi-play text-primary rounded-circle shadow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!--end row-->
+      </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
+
+  <!-- Demo Start -->
+  <section class="section pb-5 mt-5" id="section-3-steps">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center  mb-5 pb-5">
+                <!-- Hero Users start -->
+                <div class="row justify-content-center text-center"><span class="para-desc mx-auto text-muted">Usado por muchas empresas para sistemas de negocio en producción</span></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
+                    </div> -->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+                <!-- Hero Users End -->
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">Pruébalo tú mismo:<br>crea con IA y no-code un <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "CRM", "gestor de proyectos", "sistema de tickets", "sistema de inventario", "sistema de pedidos" ]'></span> inteligente</h3>
+                    <p class="text-muted para-desc mx-auto mb-0">Construye con IA, ajusta con no-code y deja que empleados de IA ayuden en la operativa diaria.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                           Desarrolla rápido con agentes de código con IA
+                        </h6>
+                        <p class="text-muted para">Crea rápidamente un sistema completo con agentes de código como Claude Code, Codex o Cursor.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Probar la demo de NocoBase" class="text-primary lightbox">👉 Probar <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">AI building</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            Desarrollo manual en no-code, con una experiencia WYSIWYG
+                        </h6>
+                        <p class="text-muted para">Tu equipo puede intervenir en cualquier momento y trabajar directamente en una interfaz no-code WYSIWYG.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Probar la demo de NocoBase" class="text-primary lightbox">👉 Probar <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">No code</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            <AIAvatar name="lexi" />
+                            <AIAvatar name="viz" />
+                            <AIAvatar name="vera" />
+                            <AIAvatar name="dex" />
+                            Haz que empleados de IA participen en la operación
+                        </h6>
+                        <p class="text-muted para">Deja que empleados de IA integrados o agentes externos ayuden con análisis, decisiones y tareas rutinarias.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Probar la demo de NocoBase" class="text-primary lightbox">👉 Probar <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">AI employee</li>
+                            <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+
+
+  <!-- For you Start -->
+  <section class="section pb-5 bg-light" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">Para quién es NocoBase</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Tanto si desarrollas para tu propio equipo como para clientes, los sistemas de negocio vienen con <span class="text-primary fw-bold">retos reales</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Las necesidades del negocio<br />cambian con frecuencia</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Los plazos de entrega<br />son ajustados</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Los ciclos de desarrollo<br />son lentos</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Los costes de equipo<br />siguen siendo altos</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">La programación con IA está cambiando cómo se desarrolla software, pero en la práctica trae <span class="text-primary fw-bold">nuevos problemas</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Arquitecturas frágiles, difíciles de evolucionar<br><span class="text-muted">La IA genera código rápido, pero rara vez entrega un sistema con buena arquitectura, estabilidad real y margen para seguir iterando</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Las piezas base se rehacen una y otra vez, con calidad inestable<br><span class="text-muted">En cada proyecto hay que volver a construir usuarios, permisos, flujos y otras bases con IA: es repetitivo, poco eficiente y difícil de controlar</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>El resultado termina siendo una caja negra cada vez más difícil de mantener<br><span class="text-muted">El código generado por IA suele ser opaco para el negocio, lo que eleva con el tiempo los costes de mantenimiento y evolución</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Cuesta operar dentro de límites reales de negocio<br><span class="text-muted">La IA tiene dificultades para trabajar bajo restricciones reales de permisos y flujos empresariales</span></li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">Prueba NocoBase.<br />Da a tu equipo la <span class="text-primary fw-bold">infraestructura</span> para crear sistemas de negocio, de modo que IA y personas puedan trabajar juntas con eficiencia.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start 1 -->
+  <section class="section" id="section-how">
+    <div class="container">
+      <!-- 可靠 -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Fiable: infraestructura lista para negocio real</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Modelos de datos, permisos y flujos son complejos y sensibles al error.<br />NocoBase los ofrece como infraestructura integrada, probada y validada en producción.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Infraestructura completa</span>, sin empezar de cero cada vez</h5>
+            <p class="text-muted">Decenas de módulos integrados cubren las necesidades de negocio más habituales.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Modelo de datos, permisos, flujos y auditoría funcionan desde el primer momento</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Probado en producción, en lugar de regenerarse como código opaco en cada proyecto</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Las salvaguardas integradas mantienen a la IA dentro de la arquitectura del sistema</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-core.png" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Impulsado por el modelo de datos</span>, con datos desacoplados de la interfaz</h5>
+            <p class="text-muted">Los datos de negocio permanecen en estructuras relacionales estándar, separadas de la interfaz.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>La base principal, bases externas y API de terceros pueden ser fuentes de datos</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>IA y personas trabajan sobre el mismo modelo de datos, con resultados transparentes</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tus datos siguen en tu propia base, sin bloqueo de plataforma</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Arquitectura de plugins</span> para crecer de forma sostenible</h5>
+            <p class="text-muted">Con un diseño de microkernel, todo es un plugin y el sistema puede crecer sin perder el control.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Las nuevas funciones se añaden con plugins componibles y convenciones comunes</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Combina plugins propios y oficiales según tu negocio</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>La misma arquitectura sirve tanto para plugins creados por IA como para los desarrollados a mano</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 协同 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Colaborativo: IA y personas construyen juntas</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Los agentes de código tienen CLI y skills, mientras que las personas cuentan con una interfaz no-code WYSIWYG para colaborar con eficiencia.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Desarrolla con los <span class="text-primary">agentes de código con IA</span> que ya conoces</h5>
+            <p class="text-muted">Con los principales agentes de código, pasas del despliegue a un sistema operativo en minutos.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Compatible con Claude Code, Cursor, Codex, OpenCode, TRAE y otros agentes destacados</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Los agentes pueden encargarse del setup, desarrollo, migración y puesta en producción</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, OpenCode, TRAE and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Construye manualmente en una interfaz no-code <span class="text-primary">WYSIWYG</span></h5>
+            <p class="text-muted">Las personas pueden construir y modificar visualmente en una interfaz WYSIWYG, incluso sin IA.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Cambia con un clic entre modo de uso y modo de configuración</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Modelo de datos, páginas, flujos y permisos se revisan y configuran visualmente</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Diseñado para usuarios de negocio, no solo para desarrolladores</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Combina como quieras <span class="text-primary">desarrollo con IA y construcción manual</span></h5>
+            <p class="text-muted">Reparte el trabajo según lo necesites: las personas afinan lo que crea la IA, y la IA continúa desde lo configurado por el equipo.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>La IA puede crear rápidamente modelos de datos, páginas y flujos</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Las personas pueden ajustar con rapidez la interfaz y las interacciones</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Colabora según haga falta y sigue iterando</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Inteligente: la IA ayuda a operar, no solo a construir</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase incorpora empleados de IA para que la IA trabaje directamente dentro del sistema.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Empleados de IA</span> integrados en los procesos de negocio</h5>
+            <p class="text-muted">Los empleados de IA obtienen automáticamente el contexto del negocio y ejecutan tareas directamente dentro del sistema.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Front office: ayuda con análisis, respuestas inteligentes y formularios</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Back office: procesamiento automático de documentos, riesgos y reparto de tareas</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Integrados con los flujos, participan en decisiones y ejecución</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Interfaces abiertas</span> para conectar con el ecosistema de agentes</h5>
+            <p class="text-muted">MCP, API HTTP, CLI y un amplio sistema de skills permiten conectar agentes externos de forma segura.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Plataformas como OpenClaw, Hermes, Dify, Coze o n8n se conectan mediante protocolos estándar</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>La integración con Telegram, WhatsApp, Slack o Gmail permite consultar datos, lanzar acciones y ejecutar procesos</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Un modelo de interfaz único mantiene a agentes internos y externos dentro de los mismos límites</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Permisos granulares</span> para mantener el control</h5>
+            <p class="text-muted">Todas las acciones de la IA siguen los mismos permisos detallados que los usuarios humanos.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Cada empleado de IA tiene su propio rol, con permisos hasta nivel de campo</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Los registros de auditoría hacen trazable cada cambio de datos y cada ejecución de flujo</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Los administradores pueden ajustar los permisos de IA en cualquier momento para mantener límites claros</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Y mucho más</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Open source y transparente</span>, con control total</h5>
+            <p class="text-muted">El núcleo de NocoBase y sus plugins base son completamente open source, se apoyan en tecnologías ampliamente adoptadas y ofrecen transparencia y control totales.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>El núcleo y los plugins fundamentales son completamente open source</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>El producto está desarrollado en TypeScript sobre tecnologías como Node.js, React y Koa</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Seguro y controlado: todos los datos y las interacciones con IA se ejecutan en tu propio entorno</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Minimalista y ligero: funciona en servidores modestos y una sola persona puede mantenerlo y ampliarlo</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">Un <span class="text-primary">modelo de licencia</span> simple y claro</h5>
+            <p class="text-muted">NocoBase ofrece una edición open source gratuita, además de licencias y plugins comerciales, con un modelo de compra única y uso perpetuo.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Sin suscripción</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Sin cobro por número de usuarios</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Sin cobro por número de aplicaciones</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Sin cobro por volumen de datos</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Users Start -->
+  <section class="section pb-0 bg-light" id="section-users">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Usan NocoBase en producción</h3>
+        </div><!--end col-->
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/isuzu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iopex.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhuozheng-yiliao.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhejiang-nengyuan.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/yamaha.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wuhan-liangyou.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wasu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/vinfast.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/ville-dyverdon-les-bains.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/toyota.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/tomsk-polytechnic-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/sony.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smfl.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smart-devil.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shimano.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shanghai-civil-aircraft-landing-gear.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/region-grand-est.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/pland.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/peking-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/osg.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/nxp.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/lenovo.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iit-madras.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hygea.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hi-p.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/haideshi.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/gadgeon-systems.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/feilihua.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/dgac.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/daikin.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/copenhagen-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/biel.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/beijing-shiji-hulian.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/bank-of-china.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/aozora-bank.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/american-express.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/allobank.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/luxshareict.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/changan-2.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+        </div><!--end row-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Users End -->
+
+  <!-- Feedback Start -->
+  <section class="section bg-light" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Por qué importa: la voz de los usuarios</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Desde que adoptamos NocoBase, el tiempo dedicado a tareas administrativas se redujo un 50 %, mejoraron la colaboración y la comunicación, y nuestro proceso de selección pasó a ser más rápido y eficiente.</p>
+              <p class="text-muted fst-italic">En TEDxDUTH creemos que la innovación y la colaboración pueden cambiar el mundo. NocoBase nos ayuda a simplificar la operativa diaria para poder dedicar más energía a lo que de verdad importa: crear eventos inspiradores y difundir ideas con impacto.</p>
+              <p class="text-muted fst-italic">Si tu organización sufre flujos desordenados o ineficientes, NocoBase no es solo una herramienta: es una solución completa que libera el potencial del equipo y hace posible mucho más. Para nosotros ha sido un punto de inflexión real: nos ha ayudado a pensar en grande, ha transformado nuestra forma de trabajar y sigue dejando huella en nuestra comunidad.</p>
+              <p class="text-muted fst-italic">Agradecemos a NocoBase que sea un socio imprescindible en este camino. Juntos seguimos impulsando la innovación y la difusión de ideas.</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Evaluamos Airtable y NocoDB antes de elegir NocoBase porque encajaba mejor con nuestras necesidades de flexibilidad del sistema y control del despliegue. Podemos desplegar NocoBase en nuestro entorno AWS, sin límite de usuarios. Sus permisos granulares y la separación entre páginas y datos también nos permiten personalizar el front-end con mucha libertad. Además, los flujos integrados y la generación automática de API han mejorado enormemente nuestra eficiencia.</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式会社（Classmethod, Inc.）</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Antes de elegir NocoBase no teníamos un sistema específico para atención al cliente y operaciones. Como el negocio crecía rápido, necesitábamos una solución capaz de absorber cada vez más demandas, y NocoBase respondió muy bien. Su capacidad para relacionar tablas de datos es especialmente valiosa: nos permite integrar estructuras distintas con eficiencia para que el equipo de soporte encuentre rápido la información de usuario y gestione en tiempo real incidencias relacionadas con derechos del cliente. Esto ha mejorado mucho nuestra eficiencia operativa.</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">Lucas, Product Manager en PLAUD</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Buscábamos una plataforma no-code lo bastante flexible para construir un sistema de planificación totalmente a medida para la logística en rápido crecimiento de nuestro cliente Okechamp. Durante la evaluación, NocoBase destacó por su arquitectura schema-first, su diseño modular y su comunidad activa. Nos permitió implementar con facilidad vistas personalizadas y gestión de informes, y pensamos seguir utilizándolo en más proyectos de clientes.</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
+              <h6 class="text-primary">Lukardi SA</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Antes dependíamos de procesos en papel para RR. HH. y aprobaciones de vacaciones, algo ineficiente y propenso a errores. Desde que construimos con NocoBase los procesos de RR. HH., asistencia y permisos, hemos logrado una operativa realmente sin papel y gestionar a más de 110 empleados es ahora mucho más eficiente e intuitivo. La flexibilidad de la interfaz y la potencia de las API de NocoBase responden plenamente a las necesidades diversas de nuestro negocio inmobiliario. Frente a herramientas como Salesforce, NocoBase no solo es muy personalizable, sino que además puede adquirirse con un pago único, con una relación coste-beneficio excelente. Ahora planeamos migrar más sistemas a NocoBase, incluido nuestro CRM, para convertirlo en el portal corporativo y la plataforma central del negocio.</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式会社(HouseWell)</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Al construir nuestro sistema de fábrica inteligente elegimos NocoBase como plataforma central. Su proceso de configuración, muy sencillo, permite incluso a perfiles no técnicos crear páginas del sistema con rapidez, lo que mejoró claramente la eficiencia de desarrollo. Su ecosistema de plugins y su motor de workflows también nos ayudan a adaptarnos con flexibilidad a distintos escenarios de negocio sin perder calidad ni escalabilidad. Gracias al control granular de acceso de NocoBase, logramos combinar colaboración eficiente y seguridad de datos en procesos como mantenimiento de equipos y gestión de RR. HH. Tras el despliegue, junto con una arquitectura PC + móvil + 5G, hizo posible un retorno de datos en tiempo real y una captura eficiente, sentando una base sólida para nuestra fábrica inteligente.</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">BIEL Crystal Holdings</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Entre muchas soluciones modernas centradas en bases de datos, NocoBase fue la única que realmente me hizo sentir que podíamos tenerlo todo a la vez. Necesitábamos un sistema no SaaS, low-code y extensible para sostener la colaboración de decenas de equipos y escenarios profesionales muy estandarizados. La curva de aprendizaje de NocoBase fue sorprendentemente suave: en apenas unos días ya podía construir procesos de negocio sin depender de desarrolladores.</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奥雅设计" /></a>
+              <h6 class="text-primary">Aoya Design, responsable de negocio Zhang Tingyuan</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Después de comparar varias plataformas low-code chinas e internacionales, acabamos eligiendo NocoBase. Admite despliegue local y ampliación funcional, lo que encaja perfectamente con nuestras altas exigencias de seguridad de datos y personalización del sistema en el sector químico. El equipo de soporte de NocoBase y sus capacidades flexibles de modelado de datos hicieron que nuestra puesta en producción fuera eficiente y fiable.</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">XtalPi, jefe de proyecto Xiong Zhi</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">No puedo insistir lo suficiente en lo buena que ha sido nuestra experiencia con NocoBase como plataforma no-code/low-code. Destaca por ser especialmente fácil de usar, lo que hizo que nuestro desarrollo fuera fluido y eficiente. Lo que más me impresionó fue lo sencillo que resultó trabajar en la experiencia de usuario una vez definido el modelo de datos. Ese enfoque nos permitió desarrollar un sistema completo, pensado para ser usado por varios cientos de organizaciones, en cuestión de semanas.</p>
+              <p class="text-muted fst-italic">NocoBase ha desmontado de forma clara la idea de que un sistema potente requiere meses o incluso años de trabajo. Lo recomiendo totalmente a cualquier organización que quiera acelerar su desarrollo sin renunciar a la calidad.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
+              <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">NocoBase desempeña un papel central para nosotros en gestión de datos, servicios API y flujos de trabajo. Esto ha reducido mucho la complejidad del desarrollo y ha permitido que nuestros equipos se centren más en la lógica de negocio, mejorando claramente la eficiencia.</p>
+              <p class="text-muted fst-italic">NocoBase ofrece excelentes capacidades de integración, conectándose con fluidez a numerosos servicios y sistemas de terceros para compartir datos y unificar funciones. Eso significa que no tenemos que reconstruirlo todo desde cero: podemos aprovechar servicios y recursos existentes para integrar distintas funciones rápidamente en nuestras aplicaciones. Esta capacidad no solo reduce tiempo y costes de desarrollo, también enriquece mucho más los casos de uso disponibles para responder a necesidades diversas.</p>
+              <p class="text-muted fst-italic">En esta era digital que cambia con tanta rapidez, NocoBase es sin duda una herramienta muy potente para afrontar retos e impulsar la innovación. Gracias a todo el equipo de NocoBase por su trabajo.</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">Laboratorio de Innovación de Xinjiang Unicom</h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">¿Listo para usar NocoBase?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Despliega tu propia demo en un minuto. Desplegar NocoBase por tu cuenta es igual de sencillo.</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Click to experience NocoBase online">Live Demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://docs.nocobase.com/en/get-started/quickstart" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Learn how to deploy NocoBase locally">Desplegar localmente <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+
+  <!-- Lightbox Start -->
+    <!-- video in lightbox  -->
+      <div style="display: none;">
+        <div id="nocobase_video_lightbox">
+          <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
+          <video controls>
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-EN.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- end video in lightbox  -->
+
+      <!-- step1 lightbox -->
+      <div style="display: none;">
+        <div id="step1_lightbox">
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step1 lightbox -->
+
+      <!-- step2 lightbox -->
+      <div style="display: none;">
+        <div id="step2_lightbox">
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step2 lightbox -->
+
+      <!-- step3 lightbox -->
+      <div style="display: none;">
+        <div id="step3_lightbox">
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step3 lightbox -->
+
+  <!-- Lightbox End -->
+</Layout>

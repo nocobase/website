@@ -1,0 +1,19 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Phan quyen";
+const description = "Quan ly quyen he thong, quyen theo ban ghi va quyen theo truong trong NocoBase voi muc do kiem soat chi tiet.";
+const keywords = "NocoBase, phan quyen, vai tro, kiem soat truy cap, bao mat, du lieu";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container">
+    <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Kiem soat <span class="text-primary">quyen he thong</span></h5><p class="text-muted">Khi xay dung voi NocoBase, ban co the cap cac quyen he thong khac nhau cho tung thanh vien, dam bao moi nguoi chi thao tac tren cac module duoc phep.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.1-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Kiem soat chi tiet quyen <span class="text-primary">theo ban ghi va theo truong</span></h5><p class="text-muted">NocoBase ho tro kiem soat rat chi tiet o cap ban ghi va cap truong, de moi nhan vien chi duoc truy cap va chinh sua du lieu phu hop voi pham vi cua minh.<br>Vi du, mot nhan vien kinh doanh co the xem va sua khach hang do minh phu trach, chi duoc xem khach hang cua dong nghiep cung phong ban va khong duoc thay tong gia tri cua tat ca don hang.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.2-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4"><span class="text-primary">Nhieu vai tro</span> va quyen ket hop cho mot nguoi dung</h5><p class="text-muted">Trong he thong kinh doanh, mot nguoi dung thuong dong thoi dam nhan nhieu vai tro. NocoBase cho phep gan nhieu vai tro cho cung mot tai khoan va cung cap cac chien luoc ket hop quyen phu hop voi nhieu tinh huong khac nhau.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.3-EN.mp4" type="video/mp4"></video></div></div></div>
+  </div></section>
+</Layout>

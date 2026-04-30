@@ -1,0 +1,35 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Blocos e acoes";
+const description = "Entenda como a NocoBase desacopla interface e dados para combinar blocos, acoes e fluxos de eventos com liberdade.";
+const keywords = "NocoBase, blocos, acoes, fluxos de eventos, interface, no-code";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Desacople <span class="text-primary">interface e dados</span> para combinar blocos e acoes com liberdade</h5>
+            <p class="text-muted">Diferente de ferramentas no-code centradas no desenho da pagina, a NocoBase parte dos dados. Primeiro vem a estrutura; depois, a interface. Assim, o mesmo conjunto de dados pode sustentar experiencias e acoes diferentes conforme o contexto.</p>
+          </div>
+        </div>
+        <div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.1-EN.mp4" type="video/mp4"></video></div></div>
+      </div>
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Um <span class="text-primary">bloco de filtros</span> para varios blocos de dados e fluxos de eventos</h5><p class="text-muted">Quando uma pagina inclui varios blocos de dados, como tabelas e graficos, um unico bloco de filtros pode controlar todos eles ao mesmo tempo.</p></div></div>
+        <div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.2-EN.mp4" type="video/mp4"></video></div></div>
+      </div>
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Use <span class="text-primary">fluxos de eventos</span> para conectar blocos e acoes</h5><p class="text-muted">Quando uma pagina reune varios blocos e acoes, os fluxos de eventos ajudam a orquestrar a interacao entre eles. Por exemplo, ao abrir um cliente no CRM, voce pode consultar ao mesmo tempo os pedidos relacionados no ERP.</p></div></div>
+        <div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/BA-2.3-EN.mp4" type="video/mp4"></video></div></div>
+      </div>
+    </div>
+  </section>
+</Layout>

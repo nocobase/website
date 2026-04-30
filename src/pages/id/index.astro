@@ -1,0 +1,1510 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InteractiveDemo from "../../components/InteractiveDemo.astro";
+import AIAvatar from '../../components/AIAvatar.astro';
+import demoConfig from "../../data/demo-config-en.json";
+
+const demo_20260429083220 = {
+  "title": "Pembangunan dengan AI",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI building",
+  "title": "Bangun lebih cepat dengan agen coding AI",
+      "description": "Bangun lebih cepat dengan agen coding AI"
+    },
+    {
+      "id": "step-1",
+      "title": "Langkah 1",
+      "description": "Hubungkan Claude Code, Codex, OpenCode, dan agen coding lainnya ke NocoBase melalui CLI",
+      "image": "https://static-docs.nocobase.com/A1.png",
+      "button": {
+        "id": "button2",
+        "label": "Hubungkan Claude Code, Codex, OpenCode, dan agen coding lainnya ke NocoBase melalui CLI",
+        "position": {
+          "left": "28.7%",
+          "top": "48.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Langkah 2",
+      "description": "NocoBase memandu kita untuk menghubungkan aplikasi yang sudah ada atau men-deploy yang baru",
+      "image": "https://static-docs.nocobase.com/A2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase memandu kita untuk menghubungkan aplikasi yang sudah ada atau men-deploy yang baru",
+        "position": {
+          "left": "47.6%",
+          "top": "47.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Langkah 4",
+      "description": "Setelah terhubung, kita bisa berbicara dengan agen dalam bahasa alami dan membangun di NocoBase",
+      "image": "https://static-docs.nocobase.com/A3.png",
+      "button": {
+        "id": "button4",
+        "label": "Setelah terhubung, kita bisa berbicara dengan agen dalam bahasa alami dan membangun di NocoBase",
+        "position": {
+          "left": "27.8%",
+          "top": "57.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Langkah 5",
+      "description": "Minta AI membuat tabel dan field data untuk perusahaan, kontak, peluang, pesanan, dan lainnya",
+      "image": "https://static-docs.nocobase.com/A4.png",
+      "button": {
+        "id": "button5",
+        "label": "Minta AI membuat tabel dan field data untuk perusahaan, kontak, peluang, pesanan, dan lainnya",
+        "position": {
+          "left": "28.7%",
+          "top": "47.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Langkah 6",
+      "description": "Semua tabel dan field dibuat sekaligus",
+      "image": "https://static-docs.nocobase.com/A5.png",
+      "button": {
+        "id": "button6",
+        "label": "Semua tabel dan field dibuat sekaligus",
+        "position": {
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Langkah 7",
+      "description": "Minta AI membuat menu, dashboard, dan halaman pengelolaan pelanggan",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "Minta AI membuat menu, dashboard, dan halaman pengelolaan pelanggan",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Langkah 8",
+      "description": "Ketiga halaman dibuat sekaligus",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "Ketiga halaman dibuat sekaligus",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Langkah 9",
+      "description": "Setiap halaman sudah dilengkapi fungsi yang lengkap",
+      "image": "https://static-docs.nocobase.com/A8.png",
+      "button": {
+        "id": "button9",
+        "label": "Setiap halaman sudah dilengkapi fungsi yang lengkap",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Langkah 10",
+      "description": "Minta AI memperbarui dashboard dan menambahkan modul tugas yang dipersonalisasi untuk tindak lanjut pelanggan",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "Minta AI memperbarui dashboard dan menambahkan modul tugas yang dipersonalisasi untuk tindak lanjut pelanggan",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Langkah 11",
+      "description": "AI menggunakan JS Block untuk membuat blok tugas yang rapi dan mudah dipakai",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "AI menggunakan JS Block untuk membuat blok tugas yang rapi dan mudah dipakai",
+        "position": {
+          "left": "44.9%",
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Langkah 12",
+      "description": "Lalu minta AI merancang dan mengatur role serta izin agar tim sales, merchandising, dan logistik bisa bekerja sesuai perannya",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "Lalu minta AI merancang dan mengatur role serta izin agar tim sales, merchandising, dan logistik bisa bekerja sesuai perannya",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Langkah 13",
+      "description": "Semua role sudah siap, dengan izin yang diatur hingga level field",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "Semua role sudah siap, dengan izin yang diatur hingga level field",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Langkah 14",
+      "description": "Terakhir, minta AI membangun automasi yang menaikkan tingkat pelanggan berdasarkan pengeluaran",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "Terakhir, minta AI membangun automasi yang menaikkan tingkat pelanggan berdasarkan pengeluaran",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Selesai",
+      "title": "Selesai: sistem pengelolaan pelanggan sederhana Anda sudah berjalan",
+      "description": "Selesai: sistem pengelolaan pelanggan sederhana Anda sudah berjalan"
+    }
+  ]
+};
+
+const demo_20260429085434 = {
+  "title": "Coba sendiri: bangun CRM dalam 3 langkah",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Pengembangan no-code",
+      "description": "Pengembangan no-code: apa yang Anda lihat adalah apa yang Anda bangun",
+      "title": "Pengembangan no-code: apa yang Anda lihat adalah apa yang Anda bangun"
+    },
+    {
+      "id": "step-2",
+      "title": "Langkah 2",
+      "description": "Pertama, konfigurasikan sumber data dan model data",
+      "image": "https://static-docs.nocobase.com/S1.png",
+      "button": {
+        "id": "button2",
+        "label": "Pertama, konfigurasikan sumber data dan model data",
+        "position": {
+          "right": "27.8%",
+          "top": "13.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Langkah 3",
+      "description": "NocoBase memiliki database utama bawaan, dan kita juga bisa menambahkan sumber data eksternal",
+      "image": "https://static-docs.nocobase.com/S2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase memiliki database utama bawaan, dan kita juga bisa menambahkan sumber data eksternal",
+        "position": {
+          "right": "12.3%",
+          "top": "17.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Langkah 4",
+      "description": "Mari buat tabel dan field di database utama",
+      "image": "https://static-docs.nocobase.com/S3.png",
+      "button": {
+        "id": "button4",
+        "label": "Mari buat tabel dan field di database utama",
+        "position": {
+          "right": "17.1%",
+          "top": "31.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Langkah 5",
+      "description": "Anda bisa meninjau atau menyesuaikan model data yang dibuat AI, atau membuat tabel baru secara manual",
+      "image": "https://static-docs.nocobase.com/B4.png",
+      "button": {
+        "id": "button5",
+        "label": "Anda bisa meninjau atau menyesuaikan model data yang dibuat AI, atau membuat tabel baru secara manual",
+        "position": {
+          "right": "21.3%",
+          "top": "27.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Langkah 6",
+      "description": "Pilih tipe field yang Anda butuhkan dari puluhan opsi",
+      "image": "https://static-docs.nocobase.com/B5.png",
+      "button": {
+        "id": "button6",
+        "label": "Pilih tipe field yang Anda butuhkan dari puluhan opsi",
+        "position": {
+          "right": "13.0%",
+          "top": "8.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Langkah 7",
+      "description": "Lalu kembali ke halaman untuk meninjau apa yang dibuat AI, atau buat halaman baru secara manual",
+      "image": "https://static-docs.nocobase.com/B6.png",
+      "button": {
+        "id": "button7",
+        "label": "Lalu kembali ke halaman untuk meninjau apa yang dibuat AI, atau buat halaman baru secara manual",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Langkah 8",
+      "description": "Beralih ke mode konfigurasi UI untuk masuk ke pengalaman pengembangan WYSIWYG",
+      "image": "https://static-docs.nocobase.com/B7.png",
+      "button": {
+        "id": "button8",
+        "label": "Beralih ke mode konfigurasi UI untuk masuk ke pengalaman pengembangan WYSIWYG",
+        "position": {
+          "right": "18.8%",
+          "top": "8.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Langkah 9",
+      "description": "Tambahkan \"Table Block\" ke halaman dan pilih tabel \"Products\" untuk menampilkan datanya",
+      "image": "https://static-docs.nocobase.com/B8.png",
+      "button": {
+        "id": "button9",
+        "label": "Tambahkan \"Table Block\" ke halaman dan pilih tabel \"Products\" untuk menampilkan datanya",
+        "position": {
+          "left": "38.1%",
+          "top": "38.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Langkah 10",
+      "description": "Konfigurasikan table block agar menampilkan field yang kita butuhkan",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "Konfigurasikan table block agar menampilkan field yang kita butuhkan",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Langkah 11",
+      "description": "Tambahkan aksi yang kita butuhkan ke tabel",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "Tambahkan aksi yang kita butuhkan ke tabel",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Langkah 12",
+      "description": "Kita juga ingin menganalisis kategori produk dengan grafik, jadi mari tambahkan Charts block",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "Kita juga ingin menganalisis kategori produk dengan grafik, jadi mari tambahkan Charts block",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Langkah 13",
+      "description": "Konfigurasikan query dan grafik agar distribusi produk terlihat jelas",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "Konfigurasikan query dan grafik agar distribusi produk terlihat jelas",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Langkah 14",
+      "description": "Tambahkan form block untuk memasukkan data produk",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "Tambahkan form block untuk memasukkan data produk",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Langkah 15",
+      "description": "Terakhir, seret blok-blok ini ke layout yang Anda butuhkan. Ketiga blok di halaman menampilkan data dari tabel \"Products\"",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "Terakhir, seret blok-blok ini ke layout yang Anda butuhkan. Ketiga blok di halaman menampilkan data dari tabel \"Products\"",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Langkah 16",
+      "description": "Buka halaman roles dan permissions untuk meninjau dan menyempurnakan hasil buatan AI",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "Buka halaman roles dan permissions untuk meninjau dan menyempurnakan hasil buatan AI",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Langkah 17",
+      "description": "Anda juga bisa membuat role secara manual",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "Anda juga bisa membuat role secara manual",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Langkah 18",
+      "description": "Tinjau dan sesuaikan izin detail untuk setiap role",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "Tinjau dan sesuaikan izin detail untuk setiap role",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Langkah 19",
+      "description": "Buka halaman konfigurasi workflow untuk meninjau dan menyempurnakan hasil buatan AI",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "Buka halaman konfigurasi workflow untuk meninjau dan menyempurnakan hasil buatan AI",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Langkah 20",
+      "description": "Konfigurasikan atau ubah workflow dengan puluhan node yang tersedia",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "Konfigurasikan atau ubah workflow dengan puluhan node yang tersedia",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Selesai",
+      "title": "Selesai: sistem pengelolaan pelanggan Anda siap digunakan",
+      "description": "Selesai: sistem pengelolaan pelanggan Anda siap digunakan"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "Coba sendiri: bangun CRM dalam 3 langkah",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "Pegawai AI",
+      "title": "Biarkan pegawai AI membantu menjalankan operasi bisnis",
+      "description": "Biarkan pegawai AI membantu menjalankan operasi bisnis"
+    },
+    {
+      "id": "step-2",
+      "title": "Langkah 2",
+      "description": "Pegawai AI NocoBase dapat membantu berbagai jenis pekerjaan",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "Pegawai AI NocoBase dapat membantu berbagai jenis pekerjaan",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Langkah 3",
+      "description": "Tambahkan Viz, seorang analis data, ke tabel pelanggan",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "Tambahkan Viz, seorang analis data, ke tabel pelanggan",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Langkah 4",
+      "description": "Konfigurasikan tugas untuk Viz agar menganalisis data pelanggan dan membuat laporan",
+      "image": "https://static-docs.nocobase.com/C3.png",
+      "button": {
+        "id": "button4",
+        "label": "Konfigurasikan tugas untuk Viz agar menganalisis data pelanggan dan membuat laporan",
+        "position": {
+          "right": "33.4%",
+          "top": "39.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Langkah 5",
+      "description": "Klik untuk memanggil Viz",
+      "image": "https://static-docs.nocobase.com/C4.png",
+      "button": {
+        "id": "button5",
+        "label": "Klik untuk memanggil Viz",
+        "position": {
+          "right": "22.0%",
+          "top": "37.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Langkah 6",
+      "description": "Viz menganalisis data pelanggan dan menghasilkan keluaran PDF, Markdown, dan HTML untuk dipilih",
+      "image": "https://static-docs.nocobase.com/C5.png",
+      "button": {
+        "id": "button6",
+        "label": "Viz menganalisis data pelanggan dan menghasilkan keluaran PDF, Markdown, dan HTML untuk dipilih",
+        "position": {
+          "left": "27.5%",
+          "top": "35.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Langkah 7",
+      "description": "Tambahkan Vera, seorang investigator, ke blok detail",
+      "image": "https://static-docs.nocobase.com/C6.png",
+      "button": {
+        "id": "button7",
+        "label": "Tambahkan Vera, seorang investigator, ke blok detail",
+        "position": {
+          "right": "25.5%",
+          "top": "73.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Langkah 8",
+      "description": "Konfigurasikan tugas untuk Vera agar mengumpulkan informasi online dan melakukan riset latar belakang pelanggan",
+      "image": "https://static-docs.nocobase.com/C7.png",
+      "button": {
+        "id": "button8",
+        "label": "Konfigurasikan tugas untuk Vera agar mengumpulkan informasi online dan melakukan riset latar belakang pelanggan",
+        "position": {
+          "right": "32.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Langkah 9",
+      "description": "Klik untuk membangunkan Vera",
+      "image": "https://static-docs.nocobase.com/C8.png",
+      "button": {
+        "id": "button9",
+        "label": "Klik untuk membangunkan Vera",
+        "position": {
+          "right": "22.3%",
+          "top": "16.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Langkah 10",
+      "description": "Ia mengumpulkan informasi pelanggan dari puluhan sumber dan menyusun laporan latar belakang",
+      "image": "https://static-docs.nocobase.com/C9.png",
+      "button": {
+        "id": "button10",
+        "label": "Ia mengumpulkan informasi pelanggan dari puluhan sumber dan menyusun laporan latar belakang",
+        "position": {
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Langkah 11",
+      "description": "Integrasikan NocoBase dengan Hermes, OpenClaw, dan agen lainnya agar Anda bisa berbicara langsung dengan NocoBase dari Slack, WhatsApp, dan Feishu",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "Integrasikan NocoBase dengan Hermes, OpenClaw, dan agen lainnya agar Anda bisa berbicara langsung dengan NocoBase dari Slack, WhatsApp, dan Feishu",
+        "position": {
+          "left": "48.8%",
+          "top": "31.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Langkah 12",
+      "description": "Berikan instruksi langsung di Telegram untuk merangkum percakapan ini dan menambahkan informasi pelanggan ke NocoBase",
+      "image": "https://static-docs.nocobase.com/C11.png",
+      "button": {
+        "id": "button12",
+        "label": "Berikan instruksi langsung di Telegram untuk merangkum percakapan ini dan menambahkan informasi pelanggan ke NocoBase",
+        "position": {
+          "right": "28.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Langkah 13",
+      "description": "Anda bisa melihat pelanggan tersebut sudah ditambahkan ke NocoBase",
+      "image": "https://static-docs.nocobase.com/C12.png",
+      "button": {
+        "id": "button13",
+        "label": "Anda bisa melihat pelanggan tersebut sudah ditambahkan ke NocoBase",
+        "position": {
+          "right": "44.1%",
+          "top": "48.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "Selesai",
+      "title": "Selesai: sistem pengelolaan pelanggan yang lengkap dan cerdas kini siap digunakan",
+      "description": "Selesai: sistem pengelolaan pelanggan yang lengkap dan cerdas kini siap digunakan"
+    }
+  ]
+};
+---
+
+<Layout>
+    <!-- Hero Start -->
+    <section class="bg-half-260 bg-light d-table w-100">
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">AI + No-Code<br />Bangun sistem bisnis yang <span class="text-primary fw-bold">andal</span></h1>
+          <p class="para-desc mx-auto text-muted">
+            NocoBase adalah platform open source AI + no-code untuk membangun sistem bisnis dengan lebih cepat. Alih-alih membuat semuanya dari nol, AI bekerja di atas infrastruktur yang sudah teruji di produksi dan antarmuka visual WYSIWYG, sehingga Anda mendapatkan kecepatan sekaligus keandalan.
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" title="Lihat cara kerja NocoBase" class="btn btn-outline-primary mb-2">Lihat cara kerjanya<i class="uil uil-angle-right-b"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">Coba online<i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center " id="section-video">
+          <div class="col-lg-10 text-center">
+            <div class="home-video">
+              <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
+              <div class="bg-overlay rounded-md shadow-lg" style=""></div>
+              <div class="play-icon">
+                <a href="?fallback_url" class="play-btn lightbox" data-type="html" data-target="#nocobase_video_lightbox" title="Tonton video NocoBase">
+                  <i class="mdi mdi-play text-primary rounded-circle shadow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!--end row-->
+      </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
+
+  <!-- Demo Start -->
+  <section class="section pb-5 mt-5" id="section-3-steps">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center  mb-5 pb-5">
+                <!-- Hero Users start -->
+                <div class="row justify-content-center text-center"><span class="para-desc mx-auto text-muted">Dipakai perusahaan untuk sistem bisnis nyata</span></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
+                    </div> -->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+                <!-- Hero Users End -->
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">Coba sendiri:<br>bangun <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "CRM", "sistem manajemen proyek", "sistem ticketing", "sistem inventaris", "sistem pesanan" ]'></span> cerdas dengan AI + no-code</h3>
+                    <p class="text-muted para-desc mx-auto mb-0">Bangun dengan AI, sempurnakan dengan no-code, dan biarkan pegawai AI membantu menjalankan operasi harian.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                           Bangun lebih cepat dengan coding agent AI
+                        </h6>
+                        <p class="text-muted para">Bangun sistem lengkap dengan cepat menggunakan agent seperti Claude Code, Codex, dan Cursor.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Coba demo NocoBase" class="text-primary lightbox">👉 Coba <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">Pembangunan dengan AI</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            Pengembangan manual dengan no-code
+                        </h6>
+                        <p class="text-muted para">Masuk kapan saja dan bangun langsung di antarmuka visual WYSIWYG.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Coba demo NocoBase" class="text-primary lightbox">👉 Coba <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">No code</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            <AIAvatar name="lexi" />
+                            <AIAvatar name="viz" />
+                            <AIAvatar name="vera" />
+                            <AIAvatar name="dex" />
+                            Biarkan pegawai AI menangani tugas bisnis
+                        </h6>
+                        <p class="text-muted para">Gunakan pegawai AI bawaan atau agent eksternal untuk membantu analisis, pengambilan keputusan, dan pekerjaan rutin.</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Coba demo NocoBase" class="text-primary lightbox">👉 Coba <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">Pegawai AI</li>
+                            <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+
+
+  <!-- For you Start -->
+  <section class="section pb-5 bg-light" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">NocoBase cocok untuk siapa</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Baik membangun untuk tim sendiri maupun untuk klien, sistem bisnis selalu membawa <span class="text-primary fw-bold">tantangan serius</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Kebutuhan bisnis<br />sering berubah</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Tenggat pengiriman<br />sangat ketat</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Siklus pengembangan<br />berjalan lambat</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">Biaya tenaga kerja<br />tetap tinggi</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">AI coding sedang mengubah cara software dibangun, tetapi dalam praktiknya juga membawa <span class="text-primary fw-bold">masalah baru</span>:</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Arsitektur rapuh dan sulit dikembangkan lebih lanjut<br><span class="text-muted">AI memang cepat menghasilkan kode, tetapi jarang memberikan sistem dengan arsitektur sehat, stabilitas nyata, dan ruang untuk iterasi berkelanjutan</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Modul inti terus dibangun ulang dengan kualitas yang tidak merata<br><span class="text-muted">Setiap proyek harus mengulang manajemen pengguna, permission, workflow, dan fondasi lain, sehingga boros, berulang, dan sulit dikendalikan</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Sistem hasil AI berubah menjadi kotak hitam seiring waktu<br><span class="text-muted">Pengguna bisnis sulit melihat atau menyesuaikan hasil yang dibuat AI, sehingga pemeliharaan dan perubahan makin mahal</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Sulit beroperasi dalam batasan bisnis yang nyata<br><span class="text-muted">AI kesulitan menangani operasi enterprise yang tunduk pada aturan permission dan workflow yang ketat</span></li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">Coba NocoBase.<br />NocoBase memberi tim Anda <span class="text-primary fw-bold">infrastruktur</span> untuk membangun sistem bisnis, sehingga AI dan manusia bisa bekerja bersama dengan efisien.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start 1 -->
+  <section class="section" id="section-how">
+    <div class="container">
+      <!-- 可靠 -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Andal: infrastruktur siap pakai untuk bisnis nyata</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Model data, permission, dan workflow itu kompleks dan sensitif terhadap kesalahan.<br />NocoBase menyediakannya sebagai infrastruktur bawaan yang sudah teruji di produksi.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Infrastruktur lengkap</span>, tanpa memulai dari nol</h5>
+            <p class="text-muted">Puluhan modul bawaan sudah mencakup kebutuhan paling umum dalam sistem bisnis.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Data models, permissions, workflows, and audit logs work out of the box</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Proven in production, instead of regenerated as black-box code each time</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Built-in guardrails keep AI output aligned with the system architecture</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-core.png" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Berbasis model data</span>, dengan data terpisah dari UI</h5>
+            <p class="text-muted">Data bisnis tetap berada dalam struktur relasional standar, terpisah dari lapisan antarmuka.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Use the main database, external databases, and third-party APIs as data sources</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI and people work on the same data model, so results stay transparent</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Your data always stays in your own database, without platform lock-in</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Arsitektur plugin</span> untuk pertumbuhan yang berkelanjutan</h5>
+            <p class="text-muted">Dengan desain microkernel, semuanya dapat berkembang lewat plugin tanpa kehilangan kendali.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>New features are added through composable plugins with shared conventions</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Mix custom and official plugins to fit your business</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>The same architecture applies to both AI-built and manually built plugins</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 协同 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Kolaboratif: AI dan manusia membangun bersama</h3>
+            <p class="text-muted para-desc mx-auto mb-0">Coding agent mendapatkan CLI dan skill yang lengkap, sementara manusia memakai antarmuka visual WYSIWYG. Keduanya bisa berkolaborasi dengan efisien.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Bangun dengan <span class="text-primary">AI coding agent</span> yang sudah Anda kenal</h5>
+            <p class="text-muted">Dari deployment hingga sistem berjalan, semuanya bisa ditempuh dalam hitungan menit dengan agent populer.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Kompatibel dengan agen populer seperti Claude Code, Cursor, Codex, OpenCode, dan TRAE</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Agen dapat menangani setup, pengembangan, migrasi, dan rilis dari awal sampai akhir</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, OpenCode, TRAE and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Bangun secara manual di antarmuka no-code <span class="text-primary">WYSIWYG</span></h5>
+            <p class="text-muted">Tanpa AI pun, tim tetap bisa membangun dan menyesuaikan semuanya secara visual.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Beralih antara mode penggunaan dan mode konfigurasi hanya dengan satu klik</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tinjau dan konfigurasikan model data, halaman, workflow, dan permission secara visual</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Dirancang untuk pengguna biasa, bukan hanya developer</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">Gabungkan <span class="text-primary">pengembangan dengan AI dan pembangunan manual</span> sesuai kebutuhan</h5>
+            <p class="text-muted">Bagi pekerjaan dengan fleksibel: manusia menyempurnakan hasil AI, dan AI melanjutkan dari konfigurasi manusia.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI dapat dengan cepat membuat model data, halaman, dan workflow</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Manusia dapat dengan cepat menyempurnakan UI dan interaksi</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Berkolaborasi sesuai kebutuhan dan terus beriterasi</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Cerdas: AI membantu menjalankan bisnis, bukan hanya membangun sistem</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase memiliki pegawai AI bawaan, sehingga AI bisa bekerja langsung di dalam sistem.</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Pegawai AI</span> yang terintegrasi ke workflow bisnis</h5>
+            <p class="text-muted">Pegawai AI otomatis memahami konteks bisnis dan mengeksekusi tugas langsung di dalam sistem.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Di front-end, membantu analisis, tanya jawab, pengisian formulir, dan banyak lagi</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Di back-end, menangani pengenalan dokumen, pemantauan risiko, dan perutean tugas secara otomatis</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Terintegrasi dengan workflow, pegawai AI dapat ikut mengambil keputusan dan mengeksekusi pekerjaan</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Antarmuka terbuka</span> untuk ekosistem agent</h5>
+            <p class="text-muted">MCP, HTTP API, CLI, dan skill yang kaya memungkinkan agent eksternal terhubung dengan aman.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Platform seperti OpenClaw, Hermes, Dify, Coze, dan n8n terhubung melalui protokol standar</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Terhubung dengan Telegram, WhatsApp, Slack, dan Gmail untuk mengambil data, memicu aksi, dan menjalankan workflow bisnis</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Satu model antarmuka menjaga agen internal dan eksternal tetap berada dalam batas yang sama</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Kontrol permission</span> menjaga perilaku AI tetap terkendali</h5>
+            <p class="text-muted">Setiap tindakan AI mengikuti aturan permission granular yang sama seperti pengguna manusia.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Setiap pegawai AI memiliki role sendiri, dengan izin baca dan tulis hingga level field</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Audit log membuat setiap perubahan data dan pemicu workflow dapat ditelusuri</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Admin dapat menyesuaikan izin AI kapan saja agar batasnya tetap jelas</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Dan masih banyak lagi</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-top">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Open source dan transparan</span>, dengan kendali penuh</h5>
+            <p class="text-muted">Kode inti NocoBase dan plugin fondasinya sepenuhnya open source, memberi Anda transparansi dan kontrol.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Inti sistem dan plugin fondasinya sepenuhnya open source</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Dibangun dengan TypeScript di atas teknologi populer seperti Node.js, React, dan Koa</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Aman dan terkendali: semua data dan interaksi AI berjalan di lingkungan Anda sendiri</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Minimal dan ringan: berjalan di server sederhana dan bisa dipelihara serta dikembangkan oleh satu orang</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">Model lisensi</span> yang sederhana</h5>
+            <p class="text-muted">NocoBase menyediakan edisi open source gratis, lisensi komersial, dan plugin dalam model beli sekali, pakai selamanya.</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tanpa langganan wajib</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tanpa biaya per pengguna</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tanpa biaya per aplikasi</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Tanpa biaya berdasarkan volume data</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Users Start -->
+  <section class="section pb-0 bg-light" id="section-users">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Mereka menggunakan NocoBase di produksi</h3>
+        </div><!--end col-->
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/isuzu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iopex.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhuozheng-yiliao.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhejiang-nengyuan.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/yamaha.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wuhan-liangyou.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wasu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/vinfast.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/ville-dyverdon-les-bains.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/toyota.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/tomsk-polytechnic-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/sony.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smfl.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smart-devil.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shimano.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shanghai-civil-aircraft-landing-gear.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/region-grand-est.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/pland.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/peking-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/osg.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/nxp.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/lenovo.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iit-madras.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hygea.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hi-p.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/haideshi.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/gadgeon-systems.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/feilihua.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/dgac.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/daikin.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/copenhagen-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/biel.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/beijing-shiji-hulian.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/bank-of-china.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/aozora-bank.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/american-express.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/allobank.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/luxshareict.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/changan-2.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+        </div><!--end row-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Users End -->
+
+  <!-- Feedback Start -->
+  <section class="section bg-light" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">Mengapa ini penting: dengarkan pengalaman pengguna</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">After adopting NocoBase, the time we spend on administrative tasks dropped by 50%, collaboration and communication improved, and our recruitment process became faster and more efficient.</p>
+              <p class="text-muted fst-italic">At TEDxDUTH, we believe innovation and collaboration can change the world. NocoBase helps us streamline daily operations so we can focus more energy on what truly matters: creating inspiring events and spreading meaningful ideas.</p>
+              <p class="text-muted fst-italic">If your organization is dealing with chaotic or inefficient workflows, NocoBase is not just a tool. It is a comprehensive solution that unlocks your team's potential and makes more possible. For us, NocoBase has been a true game changer: it has empowered us to dream bigger, transformed how we work, and continues to shape our community.</p>
+              <p class="text-muted fst-italic">We are grateful to NocoBase for being an indispensable partner on our journey. Together, we keep advancing innovation and the spread of ideas.</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We evaluated Airtable and NocoDB before ultimately choosing NocoBase because it better matched our needs for system flexibility and deployment control. We can deploy NocoBase in our AWS environment, it does not limit the number of users, its permission controls are fine-grained, and its separation of pages and data lets us customize the frontend flexibly. Built-in workflows and automatic API generation have also greatly improved efficiency.</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式会社（Classmethod, Inc.）</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Before choosing NocoBase, we did not have a dedicated customer service and operations management system. As the business grew quickly, we needed to build fast and support more and more demands, and NocoBase solved that well. Its relational data modeling is especially strong, allowing us to integrate different data structures efficiently so customer service staff can quickly look up user information and handle entitlement issues in real time, which has greatly improved operational efficiency.</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">PLAUD Product Manager Lucas</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We had been looking for a flexible no-code platform to build a fully customized scheduling system for our client Okechamp and its rapidly growing logistics business. During our evaluation, NocoBase stood out for its schema-first architecture, modular design, and active community. It made it easy for us to implement custom views and report management, and we plan to keep using NocoBase in more client projects.</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
+              <h6 class="text-primary">Lukardi SA</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">We used to rely on paper-based processes for HR management and leave approvals, which was inefficient and error-prone. After building HR, attendance, leave, and related processes with NocoBase, we achieved truly paperless operations, and managing more than 110 employees became far more efficient and intuitive. NocoBase's flexible interface design and powerful APIs fully meet the diverse needs of our real estate business. Compared with tools like Salesforce, it is not only highly customizable but also available through a one-time purchase model, making it extremely cost-effective. We are now planning to migrate more systems to NocoBase, including CRM, and make it the company portal and core business platform.</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式会社(HouseWell)</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">When building our smart factory system, we chose NocoBase as the core platform. Its streamlined configuration process allows non-technical staff to build system pages quickly, greatly improving development efficiency. At the same time, its plugin ecosystem and workflow engine help us adapt flexibly to a variety of business scenarios while maintaining system quality and scalability. With NocoBase's fine-grained permission system, we achieved efficient collaboration and strong data security across processes such as equipment maintenance and HR management. After deployment, together with a PC, mobile, and 5G architecture, it enabled real-time data feedback and efficient data entry, laying a solid foundation for our smart factory initiative.</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">BIEL Crystal Holdings Limited</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">Among many modern database products, NocoBase is the only solution that truly made me feel we could have it all. We needed a non-SaaS, low-code, extensible system to support collaboration across dozens of teams and highly standardized professional scenarios. The learning curve was unexpectedly smooth. Within just a few days, I was able to build business processes without depending on developers.</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奥雅设计" /></a>
+              <h6 class="text-primary">Aoya Design, Business Lead Zhang Tingyuan</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">After comparing and evaluating several low-code platforms from China and abroad, we ultimately chose NocoBase. It supports local deployment and functional extensibility, which perfectly matches our high standards for data security and system customization in the chemistry field. NocoBase's professional support team and flexible data modeling capabilities made our go-live process efficient and reliable.</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">XtalPi Project Lead Xiong Zhi</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks.</p>
+              <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
+              <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">NocoBase serves as the core for data management, API services, and workflows, greatly reducing development complexity and allowing our developers to focus more on implementing business logic, which has significantly improved development efficiency.</p>
+              <p class="text-muted fst-italic">NocoBase offers excellent integration capabilities, connecting seamlessly with various third-party services and systems to enable data sharing and functional integration. That means we do not need to build everything from scratch. Instead, we can make full use of existing services and resources and quickly integrate them into our applications. This not only reduces development time and cost, but also makes our applications richer and more capable in meeting diverse user needs.</p>
+              <p class="text-muted fst-italic">In this fast-moving digital era, NocoBase is undoubtedly a powerful tool for helping us meet challenges and drive innovation. Thanks to the NocoBase team for all their work.</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">Xinjiang Unicom Innovation Lab</h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Siap menggunakan NocoBase?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Deploy demo Anda sendiri dalam satu menit. Menjalankan NocoBase di lingkungan Anda sendiri juga semudah itu.</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Coba NocoBase secara online">Live demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Pelajari cara deploy NocoBase secara lokal">Deploy lokal <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+
+  <!-- Lightbox Start -->
+    <!-- video in lightbox  -->
+      <div style="display: none;">
+        <div id="nocobase_video_lightbox">
+          <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
+          <video controls>
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-EN.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- end video in lightbox  -->
+
+      <!-- step1 lightbox -->
+      <div style="display: none;">
+        <div id="step1_lightbox">
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step1 lightbox -->
+
+      <!-- step2 lightbox -->
+      <div style="display: none;">
+        <div id="step2_lightbox">
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step2 lightbox -->
+
+      <!-- step3 lightbox -->
+      <div style="display: none;">
+        <div id="step3_lightbox">
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step3 lightbox -->
+
+  <!-- Lightbox End -->
+</Layout>

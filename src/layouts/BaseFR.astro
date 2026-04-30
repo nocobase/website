@@ -7,12 +7,12 @@ const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
 // Define the list of supported languages
-const supportedLanguages = ['en', 'cn', 'ja', 'fr'];
+const supportedLanguages = ['en', 'es', 'cn', 'ja', 'fr'];
 // Get the current path
 const currentPath = Astro.url.pathname;
 
 // Regular expression to match paths starting with /en/, /cn/, /ja/, /ru/ or /fr/
-const langPrefixRegex = /^\/(en|cn|ja|fr)(\/|$)/;
+const langPrefixRegex = /^\/(en|es|cn|ja|fr)(\/|$)/;
 
 // Function to generate URLs for different languages
 const generateUrl = (lang) => {
@@ -27,14 +27,16 @@ const generateUrl = (lang) => {
 
 // Generate URLs for different languages
 let urlCN = generateUrl('cn').replace(/\/$/, ''); // Remove the trailing slash to avoid duplication
+let urlES = generateUrl('es').replace(/\/$/, '');
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
 let urlFR = generateUrl('fr').replace(/\/$/, '');
 
 // Special handling for the root path
-if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/fr') {
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/es' || currentPath === '/ja' || currentPath === '/fr') {
   urlCN = '/cn';
   urlEN = '/';
+  urlES = '/es';
   urlJA = '/ja';
   urlFR = '/fr';
 }
@@ -78,6 +80,7 @@ const meta = {
   <link rel="canonical" href={new URL(urlEN, Astro.site)} />
 
   <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
+  <link rel="alternate" href={new URL(urlES, Astro.site)} hreflang="es-es">
   <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
   <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
   <link rel="alternate" href={new URL(urlFR, Astro.site)} hreflang="fr-FR">
@@ -466,6 +469,8 @@ const meta = {
                 <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> Explorer</li>
                 <li><a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">Découvrir le fonctionnement <i class="uil uil-external-link-alt"></i></a></li>
                 <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Démo en ligne <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">Essayer</span></a></li>
+                <li><a href="/fr/blog/timeline" title="Notes de version NocoBase" class="sub-menu-item">Notes de version</a></li>
+                <li><a href="/fr/roadmap" title="Feuille de route NocoBase" class="sub-menu-item">Feuille de route</a></li>
               </ul>
             </li>
             <li>
@@ -508,12 +513,6 @@ const meta = {
             </li>
             <li>
               <a href="/fr/blog/tags/customer-stories" class="sub-menu-item">Retours d’expérience</a>
-            </li>
-            <li>
-              <a href="/fr/blog/timeline" title="Notes de version NocoBase" class="sub-menu-item">Notes de version</a>
-            </li>
-            <li>
-              <a href="/fr/roadmap" title="Feuille de route NocoBase" class="sub-menu-item">Feuille de route</a>
             </li>
             <li>
               <a href="/fr/blog" title="Blog NocoBase" class="sub-menu-item">Blog</a>

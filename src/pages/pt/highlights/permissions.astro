@@ -1,0 +1,21 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Permissoes";
+const description = "Gerencie permissoes de sistema, por registro e por campo na NocoBase com controle detalhado.";
+const keywords = "NocoBase, permissoes, papeis, controle de acesso, seguranca, dados";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Controle de <span class="text-primary">permissoes do sistema</span></h5><p class="text-muted">Ao desenvolver com a NocoBase, voce pode atribuir permissoes diferentes a equipes e pessoas diferentes, garantindo que cada um atue apenas nos modulos autorizados.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.1-EN.mp4" type="video/mp4"></video></div></div></div>
+      <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Controle detalhado de permissao <span class="text-primary">por registro e por campo</span></h5><p class="text-muted">A NocoBase oferece controle refinado no nivel de registros e campos, para que cada colaborador acesse e altere apenas as informacoes que lhe dizem respeito.<br>Por exemplo, um vendedor pode editar seus proprios clientes, visualizar clientes de outros colegas do mesmo departamento sem editar e nao ter acesso ao valor total de todos os pedidos.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.2-EN.mp4" type="video/mp4"></video></div></div></div>
+      <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4"><span class="text-primary">Multiplos papeis</span> e permissoes combinadas para um mesmo usuario</h5><p class="text-muted">Em sistemas de negocio, e comum que uma mesma pessoa acumule varios papeis ao mesmo tempo. A NocoBase permite atribuir multiplos papeis a um unico usuario e oferece estrategias diferentes para combinar permissoes conforme a necessidade.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/PM-4.3-EN.mp4" type="video/mp4"></video></div></div></div>
+    </div>
+  </section>
+</Layout>

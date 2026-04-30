@@ -1,0 +1,22 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Workflow";
+const description = "Kham pha cach NocoBase tu dong hoa quy trinh kinh doanh voi trigger, hanh dong, webhook va tich hop lien he thong.";
+const keywords = "NocoBase, workflow, tu dong hoa, webhook, tich hop, quy trinh";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container">
+    <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Xay dung workflow voi <span class="text-primary">trigger va hanh dong</span></h5><p class="text-muted">Mot workflow trong NocoBase gom mot trigger va mot chuoi node hanh dong. Trigger bat dau luong xu ly, con cac hanh dong duoc thuc thi lan luot.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/WF-5.1-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4"><span class="text-primary">Kiem tra logic</span> truoc khi gui form</h5><p class="text-muted">Su kien truoc hanh dong co the duoc kich hoat truoc thao tac chinh. Vi du, khi nhan vien kinh doanh gui don hang, he thong co the kiem tra ton kho. Neu ton kho khong du, workflow se chan viec gui va thong bao cho nguoi dung.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/WF-5.2-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Truyen du lieu giua <span class="text-primary">nhieu nguon du lieu</span></h5><p class="text-muted">Khi mot ung dung NocoBase co nhieu nguon du lieu, workflow co the dieu phoi logic giua chung o backend de tu dong hoa nghiep vu. Vi du, khi tao don hang moi trong ERP, cap do khach hang tuong ung trong CRM co the duoc nang cap tu dong.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Nhan <span class="text-primary">du lieu ben ngoai</span> bang trigger Webhook</h5><p class="text-muted">Voi trigger Webhook, NocoBase co the nhan du lieu tu he thong ben ngoai va tu dong thuc hien cac hanh dong da xac dinh. Vi du, khi co phan hoi moi tu he thong support ben ngoai, du lieu co the duoc day vao NocoBase de tao ticket moi.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/WF-5.4-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Ket noi voi <span class="text-primary">he thong ben ngoai</span> bang node HTTP Request</h5><p class="text-muted">Node HTTP Request cho phep NocoBase goi API, day du lieu tu dong va nhan phan hoi. Vi du, khi trang thai giao hang duoc cap nhat trong NocoBase, thong tin don hang co the duoc gui sang nen tang logistics.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/WF-5.5-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4"><span class="text-primary">Debug</span>, quan ly phien ban va theo doi thuc thi</h5><p class="text-muted">Workflow cua NocoBase cung cap kha nang debug thu cong, quan ly phien ban va theo doi log, giup viec phat trien, kiem thu va truy vet qua trinh thuc thi de dang va tin cay hon.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/WF-5.7-EN.mp4" type="video/mp4"></video></div></div></div>
+  </div></section>
+</Layout>

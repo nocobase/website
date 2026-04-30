@@ -1,0 +1,806 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import AIAvatar from "../../../components/AIAvatar.astro";
+---
+
+<Layout
+  title="CRM 2.0 - Sistema de gestión comercial"
+  description="Sistema CRM 2.0 construido sobre la plataforma no-code de NocoBase. Diseño modular con ciclo comercial completo y funciones como puntuación de leads asistida por IA y predicción de cierre de oportunidades."
+  keywords="NocoBase CRM, CRM con IA, gestión comercial, oportunidades, clientes, leads, CRM no-code"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">CRM 2.0<br/>Sistema de gestión comercial</h1>
+            <p class="para-desc text-muted">
+              Construido sobre la plataforma no-code de NocoBase. Diseño modular con un ciclo comercial completo. La automatización gestiona tareas rutinarias y la IA ayuda con la puntuación de leads, el análisis de oportunidades y mucho más.
+            </p>
+
+            <!-- Core Values -->
+            <div class="row mt-4 g-3">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">Puntuación inteligente de leads</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">Predicción de tasa de cierre</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">Seguimiento de salud del cliente</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">Diseño modular</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Use Case Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">Casos de uso:</span>
+                  <span class="badge bg-soft-primary me-2">Ventas B2B</span>
+                  <span class="badge bg-soft-primary me-2">Ventas por proyecto</span>
+                  <span class="badge bg-soft-primary me-2">Comercio exterior</span>
+                  <span class="badge bg-soft-primary">Todos los sectores</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Demo en vivo
+              </a>
+              <a href="#how-to-use" class="btn btn-outline-primary">
+                <i class="uil uil-download-alt me-1"></i>Cómo usarlo
+              </a>
+            </div>
+
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <div class="position-relative">
+              <img
+                src="https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg"
+                alt="CRM 2.0 System Interface"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Pain Points Start -->
+  <section class="section" id="pain-points">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">¿Te enfrentas a estos retos?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Los equipos comerciales se enfrentan a varios retos en su trabajo diario</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-chart-down text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Calidad irregular de los leads</h5>
+              </div>
+              <p class="text-muted mb-0">Grandes volúmenes de leads con calidad desigual. El equipo comercial pierde tiempo con leads poco valiosos mientras algunos de alto potencial pasan desapercibidos.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Seguimiento tardío de oportunidades</h5>
+              </div>
+              <p class="text-muted mb-0">Las oportunidades se estancan sin avanzar. A los responsables comerciales les cuesta seguir la salud del pipeline y se pierden ventanas óptimas de cierre.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Datos de clientes dispersos</h5>
+              </div>
+              <p class="text-muted mb-0">Los datos de cliente están dispersos entre correos, chats y documentos. No existe una visión completa del cliente para actuar con precisión.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-question-circle text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Previsiones comerciales imprecisas</h5>
+              </div>
+              <p class="text-muted mb-0">Las previsiones se hacen por intuición y sin apoyo de datos. Las desviaciones afectan a la asignación de recursos y a la toma de decisiones.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Costes elevados del SaaS</h5>
+              </div>
+              <p class="text-muted mb-0">Salesforce, HubSpot y otros CRM SaaS cobran por usuario. El desarrollo a medida tarda más y tiene costes difíciles de prever.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">Preocupaciones de seguridad de datos</h5>
+              </div>
+              <p class="text-muted mb-0">Los datos de clientes y oportunidades quedan en nubes de terceros, algo que no siempre cumple con los requisitos de localización y privacidad.</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Pain Points End -->
+
+  <!-- Solution Overview Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Nuestra solución</h4>
+            <p class="para-desc mx-auto text-muted mb-0">CRM 2.0 construido sobre la plataforma no-code de NocoBase. Automatización de workflows + asistencia de IA</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Core Módulos -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-user-plus rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Puntuación inteligente de leads</h5>
+              <p class="text-muted mt-2">Evalúa automáticamente la calidad del lead, prioriza los más valiosos y recomienda el mejor momento de contacto</p>
+              <i class="uil uil-user-plus full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-chart-line rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Predicción de tasa de cierre</h5>
+              <p class="text-muted mt-2">Predice la probabilidad de cierre a partir de datos históricos, detecta operaciones en riesgo y sugiere cómo avanzar de etapa</p>
+              <i class="uil uil-chart-line full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-heart-medical rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Seguimiento de salud del cliente</h5>
+              <p class="text-muted mt-2">Perfil 360 del cliente, puntuación de salud, alertas de fuga y mantenimiento proactivo de la relación</p>
+              <i class="uil uil-heart-medical full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Diseño modular</h5>
+              <p class="text-muted mt-2">Diseño modular independiente: la configuración mínima solo requiere Clientes + Oportunidades y puede ampliarse según se necesite</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Solution Overview End -->
+
+  <!-- Sales Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-success rounded-pill mb-3">Diseño base</span>
+            <h4 class="title mb-4">Ciclo comercial completo</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Desde la captación de leads hasta el éxito del cliente, con flujo de datos unificado y ayuda de IA en cada etapa</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <!-- Flow Chart -->
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="text-center p-3 rounded" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 100px;">
+                  <i class="uil uil-user-plus text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Lead</div>
+                  <div class="small text-muted">AI Scoring</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 100px;">
+                  <i class="uil uil-building text-warning h3 mb-2"></i>
+                  <div class="small fw-medium">Customer</div>
+                  <div class="small text-muted">360 Profile</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 100px;">
+                  <i class="uil uil-chart-pie-alt text-danger h3 mb-2"></i>
+                  <div class="small fw-medium">Opportunity</div>
+                  <div class="small text-muted">Win Prediction</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #e8f5e9; border: 2px solid #4caf50; min-width: 100px;">
+                  <i class="uil uil-file-alt text-success h3 mb-2"></i>
+                  <div class="small fw-medium">Quote</div>
+                  <div class="small text-muted">Multi-currency</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 100px;">
+                  <i class="uil uil-shopping-cart h3 mb-2"></i>
+                  <div class="small fw-medium">Order</div>
+                  <div class="small opacity-75">Payment Track</div>
+                </div>
+              </div>
+
+              <!-- Stage Descripción -->
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">Cambio de etapa</th>
+                      <th class="border-0 py-3">Disparador</th>
+                      <th class="border-0 py-3">Asistencia de IA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">Lead → Cliente</td>
+                      <td class="py-3 text-muted">Confirmed as valid opportunity</td>
+                      <td class="py-3 text-primary">AI score threshold triggers conversion reminder</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Cliente → Oportunidad</td>
+                      <td class="py-3 text-muted">Clear demand identified</td>
+                      <td class="py-3 text-primary">La IA analiza la intención y recomienda crear una oportunidad</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Oportunidad → Presupuesto</td>
+                      <td class="py-3 text-muted">Entra en fase de propuesta</td>
+                      <td class="py-3 text-primary">Sugerencias de precio por IA, comparación con la competencia y precios por tramos</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Presupuesto → Pedido</td>
+                      <td class="py-3 text-muted">El cliente acepta el presupuesto</td>
+                      <td class="py-3 text-primary">Generación automática del pedido con detalle de productos y precios</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Sales Pipeline End -->
+
+  <!-- AI Employee Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-primary rounded-pill mb-3">Asistencia de IA</span>
+            <h4 class="title mb-4">Capacidades de asistencia con IA</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Mediante nodos de IA en workflows, ayuda con puntuación, análisis, redacción y otras tareas repetitivas</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <!-- Scout -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="scout" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Scout <span class="badge bg-soft-secondary small">Nodo de workflow</span></h5>
+              <span class="badge bg-soft-primary mb-2">Explorador comercial</span>
+              <p class="text-muted mt-2 small">Análisis profundo de oportunidades, predicción de cierre, inteligencia competitiva y sugerencias de estrategia comercial</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Viz -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="viz" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Viz</h5>
+              <span class="badge bg-soft-primary mb-2">Analista de insights</span>
+              <p class="text-muted mt-2 small">Puntuación inteligente de leads, evaluación de salud del cliente, análisis comercial y previsión del pipeline</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Ellis -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="ellis" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Ellis</h5>
+              <span class="badge bg-soft-primary mb-2">Asistente de redacción</span>
+              <p class="text-muted mt-2 small">Análisis de intención y tono en correos, borradores de respuesta y resúmenes de comunicación</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Dex -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="dex" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Dex</h5>
+              <span class="badge bg-soft-primary mb-2">Planificación diaria</span>
+              <p class="text-muted mt-2 small">Prioridades del día, siguientes acciones sugeridas y planificación del seguimiento</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Lexi -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="lexi" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Lexi</h5>
+              <span class="badge bg-soft-primary mb-2">Traductor</span>
+              <p class="text-muted mt-2 small">Comunicación multilingüe con clientes, traducción de contenidos y gestión de correos de comercio exterior</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- More Employees -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100" style="opacity: 0.7;">
+            <div class="text-start">
+              <div class="ai-avatar-placeholder" style="width: 56px; height: 56px; background: #e9ecef; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="uil uil-plus text-muted h4 mb-0"></i>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-muted">Más empleados de IA</h5>
+              <span class="badge bg-soft-secondary mb-2">En expansión</span>
+              <p class="text-muted mt-2 small">Pueden añadirse más empleados de IA especializados según las necesidades del negocio</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- AI Employee End -->
+
+  <!-- Módulo Design Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-warning rounded-pill mb-3">Arquitectura flexible</span>
+            <h4 class="title mb-4">Diseño modular</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Cada módulo se diseña de forma independiente y puede activarse o desactivarse. Escala la solución según tus necesidades</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">Módulo</th>
+                  <th class="border-0 py-3">Obligatorio</th>
+                  <th class="border-0 py-3">Descripción</th>
+                  <th class="border-0 py-3">Capacidades de IA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de clientes</td>
+                  <td class="py-3"><span class="badge bg-success">Obligatorio</span></td>
+                  <td class="py-3 text-muted">Customer records, contacts, tiers, decision chain</td>
+                  <td class="py-3 text-primary">Health scoring, churn alerts</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de oportunidades</td>
+                  <td class="py-3"><span class="badge bg-success">Obligatorio</span></td>
+                  <td class="py-3 text-muted">Sales funnel, stage progression, activities</td>
+                  <td class="py-3 text-primary">Win prediction, risk identification</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de leads</td>
+                  <td class="py-3"><span class="badge bg-secondary">Opcional</span></td>
+                  <td class="py-3 text-muted">Lead capture, status workflow, conversion tracking</td>
+                  <td class="py-3 text-primary">Smart scoring, best contact time</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de presupuestos</td>
+                  <td class="py-3"><span class="badge bg-secondary">Opcional</span></td>
+                  <td class="py-3 text-muted">Multi-currency, tiered pricing, versioning, approvals</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de pedidos</td>
+                  <td class="py-3"><span class="badge bg-secondary">Opcional</span></td>
+                  <td class="py-3 text-muted">Order creation, payment tracking</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Gestión de productos</td>
+                  <td class="py-3"><span class="badge bg-secondary">Opcional</span></td>
+                  <td class="py-3 text-muted">Product catalog, categories, tiered pricing</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Integración de correo</td>
+                  <td class="py-3"><span class="badge bg-secondary">Opcional</span></td>
+                  <td class="py-3 text-muted">Email send/receive, CRM linking</td>
+                  <td class="py-3 text-primary">Summary, sentiment analysis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Solution Packages -->
+          <div class="row mt-4">
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-primary mb-2">Suite completa</span>
+                  <p class="small text-muted mb-0">All 7 modules<br/>Complete B2B sales teams</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-primary text-primary mb-2">Estándar</span>
+                  <p class="small text-muted mb-0">Customer+Opp+Quote+Order<br/>SMB sales management</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-success text-success mb-2">Ligero</span>
+                  <p class="small text-muted mb-0">Customer+Opportunity<br/>Simple tracking</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-warning text-warning mb-2">Comercio</span>
+                  <p class="small text-muted mb-0">Customer+Opp+Quote+Email<br/>Foreign trade businesses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Módulo Design End -->
+
+  <!-- Value Proposition Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Valor de la automatización</h4>
+            <p class="para-desc mx-auto text-muted mb-0">La automatización de workflows y la asistencia de IA reducen el trabajo repetitivo y permiten al equipo comercial centrarse en la relación con el cliente</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">50%+</div>
+              <h5 class="mb-2">Lead Screening Efficiency</h5>
+              <p class="text-muted small mb-0">AI auto-scoring reduces manual screening time</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">30%</div>
+              <h5 class="mb-2">Follow-up Efficiency</h5>
+              <p class="text-muted small mb-0">Win prediction helps focus on high-value deals</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">20%</div>
+              <h5 class="mb-2">Reduced Churn Rate</h5>
+              <p class="text-muted small mb-0">Health assessment identifies risks early</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">10%+</div>
+              <h5 class="mb-2">Improved Conversion</h5>
+              <p class="text-muted small mb-0">AI strategy suggestions accelerate closing</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Value Proposition End -->
+
+  <!-- Comparison Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">¿Por qué elegirnos?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Comparativa frente a CRM SaaS tradicional y desarrollo a medida</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">Dimensión</th>
+                  <th class="border-0 py-3">CRM SaaS</th>
+                  <th class="border-0 py-3">Desarrollo a medida</th>
+                  <th class="border-0 py-3 text-primary">Solución NocoBase</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 fw-medium">Tiempo de puesta en marcha</td>
+                  <td class="py-3 text-muted">Listo para usar</td>
+                  <td class="py-3 text-muted">Meses de desarrollo</td>
+                  <td class="py-3 text-primary">Configura y arranca, despliegue rápido</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Personalización</td>
+                  <td class="py-3 text-muted">Limitada</td>
+                  <td class="py-3 text-muted">Control total</td>
+                  <td class="py-3 text-primary">Personalización flexible sin código</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Seguridad de datos</td>
+                  <td class="py-3 text-muted">Alojado en la nube</td>
+                  <td class="py-3 text-muted">Autohospedado</td>
+                  <td class="py-3 text-primary">Autohospedado, full data control</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Asistencia de IA</td>
+                  <td class="py-3 text-muted">Limitada/extra cost</td>
+                  <td class="py-3 text-muted">Desarrollarlo por tu cuenta</td>
+                  <td class="py-3 text-primary">Nodos de IA en workflows, úsalo según convenga</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Módulo Flexibility</td>
+                  <td class="py-3 text-muted">Funciones empaquetadas</td>
+                  <td class="py-3 text-muted">Requiere cambios de código</td>
+                  <td class="py-3 text-primary">Modular, crece según necesites</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">Coste total</td>
+                  <td class="py-3 text-muted">Suscripción por usuario</td>
+                  <td class="py-3 text-muted">Alto coste de desarrollo</td>
+                  <td class="py-3 text-primary">Compra única, uso a largo plazo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Comparison End -->
+
+  <!-- Cómo usarlo Start -->
+  <section class="section bg-light" id="how-to-use">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Cómo usarlo?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Tres pasos para desplegar CRM 2.0 en tu entorno</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Instala NocoBase</h5>
+                <p class="text-muted mt-2">Follow our installation guide to deploy NocoBase to your server</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">Guía de instalación</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-book-open h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Conoce la solución</h5>
+                <p class="text-muted mt-2">Read the solution documentation to understand features, architecture, and use cases</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/en/solution/crm/" target="_blank" class="btn btn-outline-primary">Documentación de la solución</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Restaurar en el sistema</h5>
+                <p class="text-muted mt-2">Follow the restoration tutorial to deploy the CRM 2.0 system to your NocoBase environment</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/en/solution/crm/installation" target="_blank" class="btn btn-outline-primary">Guía de restauración</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Cómo usarlo End -->
+
+  <!-- CTA Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3 class="title mb-4">Start Using CRM 2.0</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Modular CRM system built on NocoBase 2.x. Contact us if you have customization needs or want to learn more.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Demo en vivo
+            </a>
+            <a href="/en/contact" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-envelope me-1"></i>Contact Us
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</Layout>
+
+<style>
+/* CRM 2.0 Page Styles */
+code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.text-purple {
+  color: #9c27b0 !important;
+}
+
+/* AI Avatar Styles */
+.ai-avatar-lg img {
+  width: 56px;
+  height: 56px;
+}
+
+.ai-avatar-sm img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+</style>

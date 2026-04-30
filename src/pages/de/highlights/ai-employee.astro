@@ -1,0 +1,15 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "KI-Mitarbeiter";
+const description = "Erfahren Sie, wie die KI-Mitarbeiter von NocoBase direkt im Geschaeftssystem arbeiten und Aufgaben mit echtem Kontext ausfuehren.";
+const keywords = "NocoBase, KI-Mitarbeiter, Business-KI, Automatisierung, Agenten";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container"><div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">KI-Mitarbeiter arbeiten <span class="text-primary">an Ihrer Seite</span></h5><p class="text-muted">In NocoBase sind KI-Mitarbeiter nicht einfach nur Chatbots oder isolierte Agenten. Sie sind direkt in das Geschaeftssystem eingebettet, verstehen den fachlichen Kontext und koennen Aufgaben unmittelbar ausfuehren.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/AE-3.1-EN.mp4" type="video/mp4"></video></div></div></div></div></section>
+</Layout>

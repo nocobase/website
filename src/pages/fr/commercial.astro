@@ -1,16 +1,13 @@
 ---
 import PageHeader from "../../components/PageHeader.astro";
-import BaseLayout from "../../layouts/BaseEN.astro";
-import { getPage } from "../../utils";
+import Layout from "../../layouts/Layout.astro";
 
-const page = await getPage("commercial");
-
-const title = page.title;
-const description = page.description;
-const keywords = page.keywords;
+const title = "Tarifs";
+const description = "Nous renforcons continuellement les capacites fondamentales de NocoBase tout en le maintenant open source, et nous developpons egalement davantage de plugins open source et gratuits. La plupart des petites entreprises et des equipes peuvent repondre a leurs besoins avec la Community Edition gratuite. Lorsque votre entreprise a des exigences plus elevees en matiere de fonctionnalites avancees, de securite, d'architecture technique et de support technique, vous pouvez choisir la Commercial Edition.";
+const keywords = "NocoBase, tarifs, licences, edition community, edition standard, edition professional, edition enterprise";
 ---
 
-<BaseLayout title={title} description={description} keywords={keywords}>
+<Layout title={title} description={description} keywords={keywords}>
   <PageHeader title={title} description={description} />
   <!-- Which Edition Start -->
   <section class="section pb-0" id="experience">
@@ -41,6 +38,8 @@ const keywords = page.keywords;
                     <h6 class="title mb-1 text-capitalize">À privilégier lorsque vous avez besoin</h6>
                     <ul class="text-muted">
                       <li>D’une plateforme no-code servant d’infrastructure à votre équipe pour construire des applications métiers et des outils internes</li>
+                      <li>D’utiliser des coding agents que vous connaissez déjà pour la construction assistée par l’IA</li>
+                      <li>Ou de construire manuellement avec une interface no-code WYSIWYG, ou encore de collaborer en combinant les deux approches</li>
                       <li>De l’intégralité du code source, d’un déploiement sur vos propres serveurs et d’un contrôle total</li>
                       <li>D’un socle fonctionnel riche permettant de couvrir la plupart des besoins standard</li>
                       <li>De la majorité des capacités d’agents IA (AI employees) prêtes à l’emploi</li>
@@ -1465,4 +1464,4 @@ const keywords = page.keywords;
     </div>
   </section>
   <!-- Contact end -->
-</BaseLayout>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage } from "../../utils";
+
+const page = await getPage("agreement", "en");
+
+const title = "Contrato de licenca";
+const description = "Consulte o contrato de licenca da NocoBase. O conteudo juridico permanece em ingles.";
+const keywords = "NocoBase, contrato de licenca, licenca, termos legais";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body license-body">
+              <div set:html={page.content}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

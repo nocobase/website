@@ -1,0 +1,334 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Hoja de ruta";
+const description = "Consulta la hoja de ruta de NocoBase y sigue las iniciativas ya completadas y las que están en curso.";
+const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+  </PageHeader>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body roadmap-body">
+              <div class="roadmap-legend">
+                <span class="legend-item">
+                  <i class="uil uil-check-circle legend-icon legend-icon-done"></i>
+                  <span>Completado</span>
+                </span>
+                <span class="legend-item">
+                  <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
+                  <span>En curso</span>
+                </span>
+              </div>
+
+              <ul class="roadmap-list">
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Mejoras en empleados de IA</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Interfaz de extensión de IA a nivel de kernel</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Soporte de integración con MCP</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Flujo de trabajo: nodo de empleado de IA</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Soporte para subagentes</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Soporte de sandbox y skills personalizadas</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Soporte multiagente en paralelo</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">NocoBase MCP & CLI & Skills</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Crear aplicaciones completas de NocoBase con agentes locales de código como Claude Code, Codex y OpenCode</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Conectar agentes locales como OpenClaw con NocoBase para flujos de negocio</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Ciclo completo de IA para construcción local, validación y depuración automática</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI Worktree</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">IdP: OAuth</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Compatibilidad con OAuth 2.1 y OpenID Connect</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Permitir que NocoBase actúe como proveedor de identidad para iniciar sesión en otros sistemas</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Nueva rama /v2/</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> proporciona client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Paquete core <code>@nocobase/client-v2</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cada plugin incorpora un directorio <code>/src/client-v2</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Nueva ruta <code>/v2/</code></span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">Gestión de migraciones para fusión y publicación en varios entornos</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Sistema de build basado en Rsbuild</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> y <code>yarn dev:umi</code></span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Carga diferida de plugins</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mejora significativa de la velocidad de carga inicial de las aplicaciones NocoBase</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Soporte para JS Item Action</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Ofrecer distintos tipos de action</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Solicitud personalizada 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Acciones de solicitud personalizada</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Solicitudes personalizadas en pasos de workflow basados en event-stream</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">NocoBase Embed 2.0</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">Variables personalizadas</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-check-circle align-middle"></i>
+                      <span class="roadmap-title">Bloque árbol 2.0</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-check-circle align-middle"></i>
+                      <span class="roadmap-title">Bloque calendario 2.0</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-check-circle align-middle"></i>
+                      <span class="roadmap-title">Bloque kanban 2.0</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Migración completa de los plugins a client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cada plugin proporciona y mejora <code>/src/client-v2</code></span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">UI Layout</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Crear layouts flexibles que vayan más allá de las limitaciones de escritorio y móvil</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+</Layout>
+
+<style>
+  .roadmap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #f8fbff 0%, #f5f7fb 100%);
+    border: 1px solid #e9eef5;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .legend-icon {
+    font-size: 1rem;
+  }
+
+  .legend-icon-done {
+    color: #16a34a;
+  }
+
+  .legend-icon-progress {
+    color: #f59e0b;
+  }
+
+  .roadmap-list,
+  .roadmap-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .roadmap-list > li {
+    padding: 1rem 0 1.15rem;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  .roadmap-list > li:first-child {
+    padding-top: 0;
+  }
+
+  .roadmap-list > li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .roadmap-title {
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.45;
+  }
+
+  .roadmap-title-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .roadmap-item-status {
+    margin-bottom: 0;
+  }
+
+  .roadmap-item-status > .roadmap-title-wrap > i {
+    font-size: 1rem;
+  }
+
+  .roadmap-item-status.status-done > .roadmap-title-wrap > i {
+    color: #16a34a;
+  }
+
+  .roadmap-item-status.status-progress > .roadmap-title-wrap > i {
+    color: #f59e0b;
+  }
+
+  .roadmap-list ul {
+    display: grid;
+    gap: 0.55rem;
+    padding-left: 0.15rem;
+  }
+
+  .roadmap-list ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    color: #475569;
+    line-height: 1.55;
+  }
+
+  .roadmap-list ul li > i {
+    margin-top: 0.2rem;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+
+  .roadmap-list ul li > span {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .roadmap-list ul li.status-done > i {
+    color: #16a34a;
+  }
+
+  .roadmap-list ul li.status-progress > i {
+    color: #f59e0b;
+  }
+
+  .roadmap-body code {
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.35rem;
+    background: #f1f5f9;
+    color: #0f172a;
+    font-size: 0.92em;
+  }
+
+  @media (max-width: 767px) {
+    .roadmap-item {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

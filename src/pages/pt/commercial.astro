@@ -1,0 +1,1445 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Precos";
+const description = "Aprimoramos continuamente os recursos centrais da NocoBase e a mantemos open source, ao mesmo tempo em que seguimos desenvolvendo mais plugins open source e gratuitos. A maioria das pequenas empresas e equipes consegue atender suas necessidades com a Community Edition gratuita. Quando o seu negocio exige recursos avancados, seguranca, arquitetura tecnica e suporte tecnico em um nivel mais alto, voce pode optar pela Commercial Edition.";
+const keywords = "NocoBase, precos, licencas, edicao community, edicao standard, edicao professional, edicao enterprise";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} />
+  <!-- Which Edition Start -->
+  <section class="section pb-0" id="experience">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">Qual edicao escolher</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 pt-2">
+          <div class="timeline-page position-relative">
+            <div class="timeline-item">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Edicao Community, gratis</h5>
+                    <small class="text-muted mb-0">A escolha da maioria</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">Quando voce precisa</h6>
+                    <ul class="text-muted">
+                      <li>Uma plataforma no-code orientada por IA para servir como infraestrutura da sua equipe na criacao de sistemas de negocio e ferramentas internas</li>
+                      <li>Use agentes de programacao familiares para criar com apoio de IA</li>
+                      <li>Ou construa manualmente com uma interface no-code WYSIWYG, ou combine os dois modos de trabalho</li>
+                      <li>Codigo-fonte completo, implantacao propria e controle total</li>
+                      <li>Recursos amplos e maduros para cobrir a maioria dos cenarios</li>
+                      <li>A maior parte dos recursos de funcionarios de IA ja inclusa</li>
+                      <li>Liberdade para estender a plataforma sem lock-in e adaptar a necessidades especificas</li>
+                      <li>Crie aplicacoes ilimitadas, sem limite de usuarios nem de volume de dados</li>
+                      <li>Aceite a exibicao discreta do logotipo da NocoBase na interface</li>
+                      <li>Suporte tecnico da comunidade NocoBase</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Edicao Standard, $800</h5>
+                    <small class="text-muted mb-0">A melhor opcao para uso recorrente</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">Quando voce tambem precisa</h6>
+                    <ul class="text-muted">
+                      <li>Substitua a marca NocoBase da interface pela identidade da sua propria empresa</li>
+                      <li>Conecte bancos de dados externos, como MySQL e PostgreSQL, como fontes de dados da NocoBase</li>
+                      <li>Importe e exporte grandes volumes de dados com Excel</li>
+                      <li>Pagamento unico para uso permanente</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Edicao Professional, $8,000</h5>
+                    <small class="text-muted mb-0">Pensada para equipes profissionais</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">Quando voce tambem precisa</h6>
+                    <ul class="text-muted">
+                      <li>Desenvolva aplicacoes para seus clientes com a NocoBase</li>
+                      <li>Ofereca capacidades avancadas aos funcionarios de IA</li>
+                      <li>Single sign-on (SSO)</li>
+                      <li>Recursos avancados de fluxo de trabalho, como aprovacoes, subfluxos e webhooks</li>
+                      <li>Recursos de seguranca mais robustos</li>
+                      <li>Registre e exiba o historico completo de edicao de cada registro</li>
+                      <li>Backups automaticos agendados</li>
+                      <li>Processos de desenvolvimento mais exigentes, com ambientes de desenvolvimento, teste e producao</li>
+                      <li>Consultoria de uso dedicada da equipe NocoBase</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+            <div class="timeline-item mt-5 pt-2">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="duration date-label-left position-relative text-md-end">
+                    <h5>Edicao Enterprise, fale conosco</h5>
+                    <small class="text-muted mb-0">Pensada para grandes aplicacoes e ambientes empresariais</small>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                  <div class="event event-description-right float-left text-start">
+                    <h6 class="title mb-1 text-capitalize">Quando voce tambem precisa</h6>
+                    <ul class="text-muted">
+                      <li>Implantacao em cluster de aplicacoes NocoBase</li>
+                      <li>Registro detalhado de cada acao do usuario para auditoria</li>
+                      <li>Conecte fontes de dados externas, como Oracle, ClickHouse e Doris, a NocoBase</li>
+                      <li>Use arquitetura multiaplicacao para implantar e gerenciar varias aplicacoes em cenarios multitenant</li>
+                      <li>Use o recurso de multiplos espacos para implantar e gerenciar varios espacos em cenarios com varias lojas ou fabricas</li>
+                      <li>Requisitos profissionais de telemetria, incluindo logs, metricas de monitoramento e tracing</li>
+                      <li>Integre Gmail, Outlook e outros servicos de e-mail, alem de recursos como aprovacoes com assinatura manuscrita</li>
+                      <li>Ofereca capacidades avancadas aos funcionarios de IA</li>
+                      <li>Acesse o codigo-fonte completo da edicao comercial</li>
+                      <li>Prioridade no roadmap da NocoBase para os recursos que voce precisa</li>
+                      <li>Resposta mais rapida e suporte dedicado por mais tempo da equipe NocoBase</li>
+                      <li>Solucoes dedicadas de desenvolvimento de extensoes da equipe NocoBase, incluindo plugins e integracoes de terceiros</li>
+                    </ul>
+                  </div>
+                </div><!--end col-->
+              </div><!--end row-->
+            </div><!--end timeline item-->
+
+
+          </div><!--end timeline page-->
+          <!-- TIMELINE END -->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!--Which Editon End-->
+
+  <!-- Licencas Start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <div class="position-relative">
+              <h4 class="title mb-4">Comparar edicoes</h4>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="component-wrapper">
+            <div class="">
+              <div class="accordion" id="commercialPricingAccordion">
+                <div class="accordion-item rounded">
+                  <h2 class="accordion-header" id="pricing-heading-license">
+                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-license" aria-expanded="true" aria-controls="pricing-collapse-license">
+                      Licenca
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-license" class="accordion-collapse border-0 collapse show"
+                       aria-labelledby="pricing-heading-license" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Preco</td>
+                            <td class="fw-bold fst-italic">Gratis</td>
+                            <td class="fw-bold fst-italic">$800</td>
+                            <td class="fw-bold fst-italic">$8,000</td>
+                            <td class="fw-bold fst-italic">Fale conosco</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Tipo de licenca</td>
+                            <td class="text-nowrap">Licenca Community<a href="https://www.nocobase.com/pt/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Licenca comercial<a href="https://www.nocobase.com/pt/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Licenca comercial<a href="https://www.nocobase.com/pt/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Licenca comercial<a href="https://www.nocobase.com/pt/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Licenca perpetua<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="A licenca e valida por toda a vida, o que significa que voce pode usar a NocoBase permanentemente sem precisar pagar novamente."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Periodo de atualizacoes<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Depois de obter a licenca, voce pode atualizar para a versao mais recente a qualquer momento dentro do periodo de validade das atualizacoes. Quando esse periodo terminar, voce ainda podera continuar usando a versao adquirida permanentemente sem custo adicional."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>1 ano</td>
+                            <td>1 ano</td>
+                            <td>1 ano</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-limits">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-limits" aria-expanded="false" aria-controls="pricing-collapse-limits">
+                      Restricoes de uso
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-limits" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-limits" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Usuarios ilimitados</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Aplicacoes ilimitadas</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Registros ilimitados</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Desenvolver aplicacoes para uso interno</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Usar sua propria marca na interface</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="As informacoes de copyright e de versao da NocoBase exibidas na interface nao podem ser alteradas nem removidas."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Desenvolver aplicacoes para clientes</td>
+                            <td>-</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Acessar o codigo-fonte da edicao comercial</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-core">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-core" aria-expanded="false" aria-controls="pricing-collapse-core">
+                      Nucleo
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-core" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-core" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Orientado por modelo de dados<a href="https://v2.docs.nocobase.com/data-sources" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Desenvolvimento com IA</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Desenvolvimento WYSIWYG<a href="https://v2.docs.nocobase.com/interface-builder" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Funcionarios de IA<a href="https://v2.docs.nocobase.com/ai-employees" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Autenticacao de usuarios<a href="https://v2.docs.nocobase.com/auth-verification/auth" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Papeis e permissoes<a href="https://v2.docs.nocobase.com/users-permissions/user" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Workflow<a href="https://v2.docs.nocobase.com/workflow/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Fluxo de eventos<a href="https://v2.docs.nocobase.com/interface-builder/event-flow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Notificacoes<a href="https://v2.docs.nocobase.com/notification-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Localizacao<a href="https://v2.docs.nocobase.com/system-management/localization/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-architecture">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-architecture" aria-expanded="false" aria-controls="pricing-collapse-architecture">
+                      Architecture
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-architecture" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-architecture" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Plugin architecture</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Gestao de backup<a href="https://v2.docs.nocobase.com/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Migration and release management<a href="https://v2.docs.nocobase.com/ops-management/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Multiplas aplicacoes<a href="https://v2.docs.nocobase.com/multi-app/multi-app/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Multiplos espacos<a href="https://v2.docs.nocobase.com/multi-app/multi-space" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Arquitetura em cluster<a href="https://v2.docs.nocobase.com/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Telemetria<a href="https://v2.docs.nocobase.com/log-and-monitor/telemetry/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-data-source">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-data-source" aria-expanded="false" aria-controls="pricing-collapse-data-source">
+                      Data sources
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-data-source" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-data-source" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Main data source: MySQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Main data source: PostgreSQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Main data source: MariaDB</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: MySQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: PostgreSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: MariaDB</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: MSSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: Rest API</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: Oracle</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: ClickHouse</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">External data source: Doris</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-permissions">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-permissions" aria-expanded="false" aria-controls="pricing-collapse-permissions">
+                      Papeis e permissoes
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-permissions" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-permissions" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">System permissions</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Field-level permissions for data sources</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Route permissions</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">AI employee permissions</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-ai-workers">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-ai-workers" aria-expanded="false" aria-controls="pricing-collapse-ai-workers">
+                      Funcionarios de IA
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-ai-workers" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-ai-workers" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Built-in Funcionarios de IA</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Extend Funcionarios de IA freely</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">AI employee development system</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Funcionarios de IA handle business tasks</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Connect to common LLMs</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Use Tools and Skills</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Use RAG knowledge bases</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-workflow">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-workflow" aria-expanded="false" aria-controls="pricing-collapse-workflow">
+                      Workflow
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-workflow" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-workflow" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Motor de workflow<a href="https://v2.docs.nocobase.com/workflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Trigger: Collection event</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Trigger: Scheduled task</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Trigger: Pre-action event</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Trigger: Post-action event</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Trigger: Custom action event</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: LLM</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Condition</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Multi-conditions</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Loop</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Variable</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Parallel Branch</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: JSON Variable Mapping</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Delay</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: End Workflow</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Date Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: JSON Calculation</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Create Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Update Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Delete Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Query Data</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Aggregate Query</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: SQL Action</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Manual Handling</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: CC</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: HTTP Request</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: JavaScript</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Send Email</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Notification</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Response</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Node: Response Message</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Approval<a href="https://v2.docs.nocobase.com/workflow/triggers/approval" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Subflow<a href="https://v2.docs.nocobase.com/workflow/nodes/subflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Webhook<a href="https://v2.docs.nocobase.com/workflow/triggers/webhook" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-security">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-security" aria-expanded="false" aria-controls="pricing-collapse-security">
+                      Security and authentication
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-security" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-security" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Variables and secrets<a href="https://v2.docs.nocobase.com/ops-management/variables-and-secrets/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Token policy<a href="https://v2.docs.nocobase.com/security/token-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Field masking</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Field encryption<a href="https://v2.docs.nocobase.com/data-sources/field-encryption" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Password policy<a href="https://v2.docs.nocobase.com/security/password-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">User lockout<a href="https://v2.docs.nocobase.com/security/password-policy/lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Automatic backup<a href="https://v2.docs.nocobase.com/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Record history<a href="https://v2.docs.nocobase.com/record-history/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Details"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">SSO<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="OIDC, SAML, LDAP, CAS, DingTalk"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a><a href="https://v2.docs.nocobase.com/integration/sso/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">API Payload Encryption<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="The process of encrypting the payload in an Application Programming Interface (API) during data transmission to prevent eavesdropping or tampering."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">IP restriction<a href="https://v2.docs.nocobase.com/security/ip-restriction/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Audit log<a href="https://v2.docs.nocobase.com/security/audit-logger/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Two-factor authentication (2FA)<a href="https://v2.docs.nocobase.com/auth-verification/2fa/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-other">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-other" aria-expanded="false" aria-controls="pricing-collapse-other">
+                      Others
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-other" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-other" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Excel import/export</td>
+                            <td>Small volume<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Up to 2,000 rows per import/export"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Large volume<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Tens of thousands of rows per import/export"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Large volume<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Tens of thousands of rows per import/export"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Large volume<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Tens of thousands of rows per import/export"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Private file access<a href="https://v2.docs.nocobase.com/data-sources/file-manager/storage/s3-pro" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Handwritten signatures</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Template printing<a href="https://v2.docs.nocobase.com/template-print/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Email integration<a href="https://v2.docs.nocobase.com/email-manager/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-support">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-support" aria-expanded="false" aria-controls="pricing-collapse-support">
+                      Support
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-support" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-support" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-4 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Community</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Standard</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Professional</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Edicao Enterprise</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Community support</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Dedicated and timely bug fixes</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Dedicated usage consulting</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Dedicated extension development consulting</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Priority scheduling for new features</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Phone support</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Suporte por chat ao vivo</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Periodo de suporte</td>
+                            <td>-</td>
+                            <td>1 ano</td>
+                            <td>1 ano</td>
+                            <td>1 ano</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Numero de tickets de uso<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Durante o periodo de suporte, voce pode receber suporte de uso para um determinado numero de tickets, sem incluir relatorios de bugs. Acima desse limite, tickets adicionais podem ser comprados separadamente."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Ilimitado</td>
+                            <td>Ilimitado</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Numero de tickets de desenvolvimento<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Durante o periodo de suporte, a equipe principal da NocoBase ajuda voce a desenvolver plugins, integrar sistemas de terceiros, incluindo a redacao de documentacao e de codigo principal. Acima desse limite, tickets adicionais podem ser comprados separadamente."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Tempo da primeira resposta</td>
+                            <td>-</td>
+                            <td>24 horas</td>
+                            <td>12 horas</td>
+                            <td>4 hours</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Licencas end -->
+
+  <!-- FAQ start -->
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h3 class="mb-4">Perguntas frequentes</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-1">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-1" aria-expanded="false" aria-controls="collapse1-1">
+                  Como entender a "licenca perpetua"?
+                </button>
+              </h2>
+              <div id="collapse1-1" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-1"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">Nao ha data de expiracao e voce nao precisa pagar anualmente. Ao adquirir uma licenca comercial, voce recebe uma licenca perpetua para uso continuo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading1-2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+                  Como continuar recebendo atualizacoes e suporte tecnico depois que o periodo de atualizacoes termina?
+                </button>
+              </h2>
+              <div id="collapse1-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">Depois que o periodo de atualizacoes termina, voce pode continuar usando sua versao atual da NocoBase permanentemente. Se quiser, pode recomprar 1 ano de atualizacoes e suporte tecnico por 30% do valor inicial do primeiro ano.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                  Preciso comprar uma licenca comercial para usar a NocoBase em um ambiente comercial?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">Nao. O nucleo da NocoBase e os plugins open source usam a licenca AGPL 3.0. Desde que voce cumpra a licenca e mantenha as informacoes de copyright e versao da NocoBase na interface, o uso gratuito e permitido.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Quando preciso comprar uma licenca comercial?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0 pb-2">Voce precisa adquirir uma licenca comercial se tiver qualquer uma das seguintes necessidades:</p>
+                  <ul class="text-muted">
+                    <li>Voce modificou o codigo da NocoBase ou estendeu plugins proprios, mas nao quer abrir esse resultado sob a licenca AGPL.</li>
+                    <li>Voce integra a NocoBase ao seu proprio produto, mas nao quer abrir o codigo do seu produto sob a licenca AGPL.</li>
+                    <li>Voce quer substituir as informacoes de copyright e versao da NocoBase no rodape ou no canto superior do sistema pela sua propria marca.</li>
+                    <li>Voce precisa de recursos avancados de seguranca, como controle dinamico de acesso, trilhas de auditoria e backups automaticos.</li>
+                    <li>Voce precisa de capacidades avancadas de desenvolvimento e implantacao, como multiplas aplicacoes, isolamento por ambiente e arquitetura distribuida.</li>
+                    <li>Voce quer receber suporte tecnico avancado da equipe da NocoBase.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Uma licenca pode ser usada para desenvolver aplicacoes para empresas diferentes?
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="heading6"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">A Edicao Standard e limitada ao uso interno autorizado da propria empresa. As edicoes Professional e Enterprise podem ser usadas para desenvolver aplicacoes para clientes ou para comercializar aplicacoes desenvolvidas com a NocoBase.</p>
+                  <ul class="text-muted">
+                    <li>Se o produto entregue ao cliente nao conceder permissoes de configuracao e o cliente apenas usar a aplicacao como foi entregue, somente voce precisa ter uma licenca comercial.</li>
+                    <li>Se o produto entregue ao cliente conceder permissoes de configuracao e permitir que ele modifique ou continue desenvolvendo a aplicacao com os recursos no-code da NocoBase, o cliente tambem precisara comprar uma licenca comercial.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  Posso mudar de uma edicao para outra?
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse border-0 collapse" aria-labelledby="heading8"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Voce pode migrar de uma edicao inferior para uma superior, mas nao e possivel fazer downgrade. Ao atualizar, basta pagar a diferenca de preco entre as edicoes.<br/>
+                    Por exemplo, se voce estiver migrando da Edicao Standard para a Edicao Professional, a diferenca de preco sera:<br/>
+                    8000 - 800 = 7200
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded mt-2">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  Posso testar antes?
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="heading9"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <p class="answer text-muted mb-0">
+                    Sim. Voce pode criar um ambiente sandbox em cerca de um minuto, com todos os plugins comerciais da NocoBase: <a href="https://demo.nocobase.com/new" target="_blank">Iniciar teste</a><br>O ambiente sandbox fica disponivel por 48 horas por padrao. Se precisar de um periodo maior, entre em contato conosco em hello@nocobase.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+  <!-- Contact start -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <h3>Como comprar</h3>
+        <p class="para-desc text-center mx-auto text-muted">Envie um e-mail para conversar com nossa equipe sobre o plano adequado. Depois, acesse a plataforma de servico para usuarios comerciais da NocoBase, selecione as licencas necessarias, gere o pedido e conclua a compra.</p>
+        <div class="mt-4 pt-2 text-center">
+          <a href="https://www.nocobase.com/pt/contact" class="btn btn-primary">Fale conosco <i class="uil uil-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact end -->
+</Layout>

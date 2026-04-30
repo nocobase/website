@@ -19,82 +19,183 @@ const keywords = page.keywords_cn || page.keywords;
         <div class="col-lg-9">
           <div class="card shadow border-0 rounded">
             <div class="card-body roadmap-body">
-              <h5>AI 员工优化 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>内核提供 AI 扩展接口</li>
-                <li>支持接入 MCP</li>
-                <li>工作流： AI 员工节点</li>
-                <li>支持 Sub Agent</li>
-              </ul>
+              <div class="roadmap-legend">
+                <span class="legend-item">
+                  <i class="uil uil-check-circle legend-icon legend-icon-done"></i>
+                  <span>已完成</span>
+                </span>
+                <span class="legend-item">
+                  <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
+                  <span>进行中</span>
+                </span>
+              </div>
 
-              <h5>NocoBase MCP & CLI & Skills <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>通过本地 Coding Agent（Claude Code、Codex、OpenCode 等）搭建完整 NocoBase 应用</li>
-                <li>通过本地 Agent（OpenClaw 等）连接 NocoBase 处理业务</li>
-                <li>AI 本地搭建、验证与自动化调试的闭环</li>
-                <li>AI Worktree</li>
-              </ul>
+              <ul class="roadmap-list">
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">AI 员工优化</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>内核提供 AI 扩展接口</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>支持接入 MCP</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>工作流：AI 员工节点</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>支持 Sub Agent</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持沙箱环境及自定义 Skill</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持多 Agent 并行</span></li>
+                  </ul>
+                </li>
 
-              <h5>IdP: OAuth <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>基于 OAuth 2.1 和 OpenID Connect 协议，支持将 NocoBase 作为身份提供方登录其他系统</li>
-              </ul>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">NocoBase MCP & CLI & Skills</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>通过本地 Coding Agent（Claude Code、Codex、OpenCode 等）搭建完整 NocoBase 应用</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>通过本地 Agent（OpenClaw 等）连接 NocoBase 处理业务</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>AI 本地搭建、验证与自动化调试的闭环</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI Worktree</span></li>
+                  </ul>
+                </li>
 
-              <h5>全新的 /v2/ 分支 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li><code>@nocobase/app</code> 提供 client-v2</li>
-                <li>内核 <code>@nocobase/client-v2</code></li>
-                <li>各插件提供 <code>/src/client-v2</code> 目录</li>
-                <li>路由新增 <code>/v2/</code></li>
-              </ul>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">IdP: OAuth</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>支持 OAuth 2.1 和 OpenID Connect 协议</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持将 NocoBase 作为身份提供方登录其他系统</span></li>
+                  </ul>
+                </li>
 
-              <h5>迁移管理支持多开发环境合并发布 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">全新的 /v2/ 分支</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> 提供 client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>内核 <code>@nocobase/client-v2</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各插件提供 <code>/src/client-v2</code> 目录</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>路由新增 <code>/v2/</code></span></li>
+                  </ul>
+                </li>
 
-              <h5>使用 Rsbuild 构建 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li><code>yarn dev</code> 和 <code>yarn dev:umi</code></li>
-              </ul>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">迁移管理支持多开发环境合并发布</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>按需加载插件 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>大幅提升首次打开 NocoBase 应用的速度</li>
-              </ul>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">使用 Rsbuild 构建</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> 和 <code>yarn dev:umi</code></span></li>
+                  </ul>
+                </li>
 
-              <h5>支持 JS Item Action <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>提供不同形态的 Action</li>
-              </ul>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">按需加载插件</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>大幅提升首次打开 NocoBase 应用的速度</span></li>
+                  </ul>
+                </li>
 
-              <h5>自定义请求 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>自定义请求按钮</li>
-                <li>事件流步骤支持自定义请求</li>
-              </ul>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">支持 JS Item\Action</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>提供不同形态的 Action</span></li>
+                  </ul>
+                </li>
 
-              <h5>NocoBase 嵌入 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">自定义请求 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>自定义请求操作</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>事件流步骤支持自定义请求</span></li>
+                  </ul>
+                </li>
 
-              <h5>支持配置按钮颜色 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">NocoBase 嵌入 2.0</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>字段显示模式支持配置标签颜色 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">中国行政区划字段 2.0</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>中国行政区划字段 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-progress">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">自定义变量</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>自定义变量 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">树区块 2.0</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>树筛选区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">日历区块 2.0</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>日历区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item roadmap-item-status status-done">
+                    <span class="roadmap-title-wrap">
+                      <i class="uil uil-clock-three align-middle"></i>
+                      <span class="roadmap-title">看板区块 2.0</span>
+                    </span>
+                  </div>
+                </li>
 
-              <h5>看板区块 2.0 <span class="badge bg-soft-primary">进行中</span></h5>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">各插件全面迁移 client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各插件提供并完善 <code>/src/client-v2</code></span></li>
+                  </ul>
+                </li>
 
-              <h5>各插件全面迁移 client-v2 <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>各插件提供并完善 <code>/src/client-v2</code></li>
-              </ul>
-
-              <h5>UI Layout <span class="badge bg-soft-primary">进行中</span></h5>
-              <ul>
-                <li>支持自由创建各种 Layout，不局限于桌面端和移动端</li>
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">UI Layout</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持自由创建各种 Layout，不局限于桌面端和移动端</span></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -105,24 +206,128 @@ const keywords = page.keywords_cn || page.keywords;
 </Layout>
 
 <style>
-  .roadmap-body h5 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+  .roadmap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #f8fbff 0%, #f5f7fb 100%);
+    border: 1px solid #e9eef5;
   }
 
-  .roadmap-body h5:first-child {
-    margin-top: 0;
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 600;
   }
 
-  .roadmap-body ul {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
+  .legend-icon {
+    font-size: 1rem;
   }
 
-  .roadmap-body .badge {
-    font-size: 0.75em;
-    font-weight: 500;
-    vertical-align: middle;
+  .legend-icon-done {
+    color: #16a34a;
+  }
+
+  .legend-icon-progress {
+    color: #f59e0b;
+  }
+
+  .roadmap-list,
+  .roadmap-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .roadmap-list > li {
+    padding: 1rem 0 1.15rem;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  .roadmap-list > li:first-child {
+    padding-top: 0;
+  }
+
+  .roadmap-list > li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .roadmap-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1e293b;
+  }
+
+  .roadmap-title-wrap {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    min-width: 0;
+  }
+
+  .roadmap-item-status > .roadmap-title-wrap > i {
+    margin-top: 0.18rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .roadmap-item-status.status-done > .roadmap-title-wrap > i {
+    color: #16a34a;
+  }
+
+  .roadmap-item-status.status-progress > .roadmap-title-wrap > i {
+    color: #f59e0b;
+  }
+
+  .roadmap-list ul {
+    margin-top: 0.45rem;
+    margin-left: 0.25rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #e9eef5;
+  }
+
+  .roadmap-list ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    line-height: 1.7;
+    color: #475569;
+  }
+
+  .roadmap-list ul li > i {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .roadmap-list ul li > span {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .roadmap-list ul li.status-done > i {
+    color: #16a34a;
+  }
+
+  .roadmap-list ul li.status-progress > i {
+    color: #f59e0b;
   }
 
   .roadmap-body code {
@@ -131,5 +336,13 @@ const keywords = page.keywords_cn || page.keywords;
     background-color: #f8f9fa;
     padding: 0.15em 0.4em;
     border-radius: 3px;
+  }
+
+  @media (max-width: 576px) {
+    .roadmap-item {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
   }
 </style>

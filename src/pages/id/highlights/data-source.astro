@@ -1,0 +1,19 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "Sumber data";
+const description = "Hubungkan banyak sumber data di NocoBase dan kelola data bisnis dari satu antarmuka.";
+const keywords = "NocoBase, sumber data, CRM, ERP, integrasi data, workflow";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description">{description}</span>
+  </PageHeader>
+  <section class="section"><div class="container">
+    <div class="row align-items-top "><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Hubungkan <span class="text-primary">banyak sumber data</span> dan kelola data bisnis di satu tempat</h5><p class="text-muted">Data bisnis sering tersebar di CRM, ERP, keuangan, dan inventaris. Dengan menghubungkannya ke NocoBase, semua data dapat diintegrasikan dan ditanyakan dari satu antarmuka, sehingga perpindahan antar sistem berkurang, silo data terpecah, dan biaya maintenance turun.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/DS-1.1-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Hubungkan sumber data berbeda di frontend dengan <span class="text-primary">alur event</span></h5><p class="text-muted">Saat satu halaman memuat blok dari beberapa sumber data, alur event dapat mengorkestrasi interaksinya langsung di frontend. Misalnya, ketika melihat pelanggan di CRM, Anda bisa sekaligus menampilkan riwayat pesanan dari ERP.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/DS-1.2-EN.mp4" type="video/mp4"></video></div></div></div>
+    <div class="row align-items-top mt-100"><div class="col-lg-5 col-md-5"><div class="section-title"><h5 class="mb-4">Hubungkan sumber data berbeda di backend dengan <span class="text-primary">workflow</span></h5><p class="text-muted">Saat aplikasi NocoBase menggunakan banyak sumber data, workflow dapat mengorkestrasi logika di backend dan mengotomatisasi proses lintas sistem. Misalnya, ketika pesanan baru dibuat di ERP, level pelanggan terkait di CRM dapat diperbarui otomatis.</p></div></div><div class="col-lg-7"><div class="card rounded border-0 shadow ms-lg-5"><video controls class="rounded shadow"><source src="https://static-docs.nocobase.com/DS-1.3-EN.mp4" type="video/mp4"></video></div></div></div>
+  </div></section>
+</Layout>

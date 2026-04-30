@@ -3,16 +3,71 @@ import BaseLayoutCN from "./BaseCN.astro";
 import BaseLayoutEN from "./BaseEN.astro";
 import BaseLayoutJA from "./BaseJA.astro";
 import BaseLayoutFR from "./BaseFR.astro";
+import BaseLayoutES from "./BaseES.astro";
+import BaseLayoutPT from "./BasePT.astro";
+import BaseLayoutID from "./BaseID.astro";
+import BaseLayoutVI from "./BaseVI.astro";
+import BaseLayoutDE from "./BaseDE.astro";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
 const ja = Astro.url.pathname == "/ja" || Astro.url.pathname.startsWith("/ja/");
 const fr = Astro.url.pathname == "/fr" || Astro.url.pathname.startsWith("/fr/");
+const es = Astro.url.pathname == "/es" || Astro.url.pathname.startsWith("/es/");
+const pt = Astro.url.pathname == "/pt" || Astro.url.pathname.startsWith("/pt/");
+const id = Astro.url.pathname == "/id" || Astro.url.pathname.startsWith("/id/");
+const vi = Astro.url.pathname == "/vi" || Astro.url.pathname.startsWith("/vi/");
+const de = Astro.url.pathname == "/de" || Astro.url.pathname.startsWith("/de/");
 const { title, description, keywords, image } = Astro.props;
 ---
 
 {
-    fr ? (
+    pt ? (
+    <BaseLayoutPT
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutPT>
+        ) : id ? (
+    <BaseLayoutID
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutID>
+        ) : vi ? (
+    <BaseLayoutVI
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutVI>
+        ) : de ? (
+    <BaseLayoutDE
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutDE>
+        ) : es ? (
+    <BaseLayoutES
+            title={title}
+            description={description}
+            image={image}
+            keywords={keywords}
+    >
+        <slot />
+    </BaseLayoutES>
+        ) : fr ? (
     <BaseLayoutFR
             title={title}
             description={description}

@@ -7,12 +7,12 @@ const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
 // 定义支持的语言列表
-const supportedLanguages = ['en', 'cn', 'ja', 'fr'];
+const supportedLanguages = ['en', 'es', 'cn', 'ja', 'fr'];
 // 获取当前路径
 const currentPath = Astro.url.pathname;
 
 // 正则表达式匹配以 /en/、/cn/、/ja/ 或 /ru/ 开头的路径
-const langPrefixRegex = /^\/(en|cn|ja|fr)(\/|$)/;
+const langPrefixRegex = /^\/(en|es|cn|ja|fr)(\/|$)/;
 
 // 函数用于生成不同语言的 URL
 const generateUrl = (lang: string) => {
@@ -27,14 +27,16 @@ const generateUrl = (lang: string) => {
 
 // 生成各语言的 URL
 let urlCN = generateUrl('cn').replace(/\/$/, ''); // 移除结尾的斜杠以避免重复
+let urlES = generateUrl('es').replace(/\/$/, '');
 let urlJA = generateUrl('ja').replace(/\/$/, '');
 let urlEN = generateUrl('en').replace(/\/$/, '');
 let urlFR = generateUrl('fr').replace(/\/$/, '');
 
 // 特殊处理根路径
-if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/ja' || currentPath === '/fr') {
+if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/es' || currentPath === '/ja' || currentPath === '/fr') {
   urlCN = '/cn';
   urlEN = '/';
+  urlES = '/es';
   urlJA = '/ja';
   urlFR = '/fr';
 }
@@ -50,13 +52,13 @@ const meta = {
   image: image || 'https://static-docs.nocobase.com/20250223-173129.jpg',
   title: title
       ? `${title} - NocoBase`
-      : "NocoBase - 开源、私有部署的 AI 员工驱动的零代码和低代码开发平台",
+      : "NocoBase - 开源、私有部署的 AI 驱动的零代码和低代码开发平台",
   description:
       description ||
-      "NocoBase是一款开源、可私有部署的由 AI 员工驱动的零代码和低代码开发平台，无需开发，即可快速构建智能业务系统。不同于封闭的无代码工具，NocoBase 基于数据模型驱动，通过插件架构实现灵活扩展，适配复杂业务场景。无需SaaS订阅，数据自主可控，让数字化更高效、更自由、更经济。",
+      "NocoBase 是一个开源的 “AI + 无代码” 开发平台，用于快速开发企业业务系统。不同于让 AI 从零生成代码，NocoBase 提供经过生产验证的基础设施和所见即所得的无代码界面，让 AI 与人高效协同，既保证开发速度又保证系统可靠性。",
   keywords:
       keywords ||
-      "nocobase,AI,AI员工,AI Employees,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,零代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,零代码系统,零代码平台,零代码搭建,免费零代码开发平台,无代码系统,无代码平台,无代码搭建,免费无代码开发平台",
+      "nocobase,AI,AI员工,AI Employees,Claude code,Codex,Deepseek,OpenCode,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,零代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,零代码系统,零代码平台,零代码搭建,免费零代码开发平台,无代码系统,无代码平台,无代码搭建,免费无代码开发平台",
 };
 ---
 
@@ -77,8 +79,10 @@ const meta = {
     <link rel="canonical" href={new URL(urlCN, Astro.site)} />
 
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
+    <link rel="alternate" href={new URL(urlES, Astro.site)} hreflang="es-es">
     <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
     <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
+    <link rel="alternate" href={new URL(urlFR, Astro.site)} hreflang="fr-FR">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -487,6 +491,8 @@ const meta = {
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 探索</li>
                     <li><a href="https://v2.docs.nocobase.com/cn/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">NocoBase 如何工作 <i class="uil uil-external-link-alt"></i></a></li>
                     <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Live Demo <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">在线体验</span></a></li>
+                    <li><a href="/cn/blog/timeline" title="NocoBase 更新日志" class="sub-menu-item">更新记录</a></li>
+                    <li><a href="/cn/roadmap" title="NocoBase 路线图" class="sub-menu-item">路线图</a></li>
                   </ul>
                 </li>
                 <li>
@@ -531,12 +537,6 @@ const meta = {
                 </li>
                 <li>
                   <a href="/cn/blog/tags/customer-stories" class="sub-menu-item">用户故事</a>
-                </li>
-                <li>
-                  <a href="/cn/blog/timeline" title="NocoBase 更新日志" class="sub-menu-item">更新记录</a>
-                </li>
-                <li>
-                  <a href="/cn/roadmap" title="NocoBase 路线图" class="sub-menu-item">路线图</a>
                 </li>
                 <li>
                   <a href="/cn/blog" title="NocoBase 博客" class="sub-menu-item">博客</a>
