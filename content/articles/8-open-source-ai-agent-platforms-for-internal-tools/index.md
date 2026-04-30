@@ -6,7 +6,7 @@ Frameworks like LangChain, CrewAI, and Haystack are suitable for enterprises wit
 
 n8n and Flowise are more suitable for rapid automation or prototype validation.
 
-Recently, there was an interesting discussion on Hacker News about AI and internal tools. In the comments, someone mentioned that AI now gives people the ability to build various things. But AI hasn't taught them to understand — whether this thing really needs to be built, how to maintain it, how to iterate, and how to integrate it with other tools.
+Recently, there was an interesting discussion on [Hacker News](https://news.ycombinator.com/item?id=47896389) about AI and internal tools. In the comments, someone mentioned that AI now gives people the ability to build various things. But AI hasn't taught them to understand — whether this thing really needs to be built, how to maintain it, how to iterate, and how to integrate it with other tools.
 
 ![reddit.png](https://static-docs.nocobase.com/reddit-ekdb8j.png)
 
@@ -31,7 +31,7 @@ Which platform can enable AI and Agents to stably enter business processes and c
 | -------------------------- | -------------------------------------------------------------------------------- |
 | **GitHub**                 | [github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)(22k+ stars) |
 | **Website**                | [nocobase.com](https://nocobase.com/)                                            |
-| **Open Source License**    | Apache-2.0 (fully允许商业使用)                                                   |
+| **Open Source License**    | Apache-2.0 (Fully permitted for commercial use)                                  |
 | **Self-hosting**           | ⭐⭐⭐⭐⭐ (100% self-hosted, full data control)                                 |
 | **Integration capability** | ⭐⭐⭐⭐⭐ (15+ databases + REST API + workflows)                                |
 | **Security**               | ⭐⭐⭐⭐⭐ (field-level RBAC, audit logs, multi-tenancy)                         |
@@ -448,7 +448,7 @@ For internal enterprise tools, the Agent itself is not the only focus. The focus
 
 You can start from a high-frequency, clearly bounded business scenario, such as smart approval, AI customer service, or document information extraction, and after a single scenario runs through, gradually expand to more core processes.
 
-**If this article is helpful to you, please share it with colleagues and friends who are evaluating AI Agent platforms.
+If this article is helpful to you, please share it with colleagues and friends who are evaluating AI Agent platforms.
 
 **Related reading**
 
