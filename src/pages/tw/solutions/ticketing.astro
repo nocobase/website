@@ -1,0 +1,614 @@
+---
+import BaseTW from "../../../layouts/BaseTW.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// 導入交互演示數據
+import extensionDemoGuides from "../../../data/ticketing-extension-demo-cn.json";
+
+// 獲取插件數據
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// 定義工單系統中使用的插件名稱映射
+const ticketingPluginNames = [
+  "Email Manager",
+  "Collection: Comment",
+  "File Manager",
+  "Action: Import records(Pro)",
+  "Action: Export records(Pro)",
+  "Custom variables"
+];
+
+// 根據插件名稱匹配插件數據
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// 獲取工單系統相關插件
+const ticketingPlugins = ticketingPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// 調試信息
+console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
+---
+
+<BaseTW
+  title="高效便捷的工單管理系統"
+  description="NocoBase 工單管理系統作為 CRM 的重要補充，提供完整的工單生命週期管理，從客戶聯繫人創建到工單分配處理，全流程數字化管理。"
+  keywords="NocoBase 工單系統, 工單管理, 客服系統, 售後服務, 工單分配"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">高效便捷的<br/>工單管理系統</h1>
+            <p class="para-desc text-muted">NocoBase 工單管理系統作為 CRM 的重要補充，提供完整的工單生命週期管理。從客戶聯繫人創建到工單錄入、分配、處理和跟蹤，實現售後服務的全流程數字化管理。</p>
+            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
+              <small class="text-muted">
+                <i class="uil uil-info-circle"></i> 基於 NocoBase 1.x 搭建（2.0 準備中）
+              </small>
+            </div>
+
+            <!-- 標籤 -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">適用場景：</span>
+                  <span class="badge bg-soft-primary me-2">客戶服務</span>
+                  <span class="badge bg-soft-primary">售後支持</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 開發者信息 -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">開發者：</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 按鈕 -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>線上示範
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>複製到您的環境
+              </a>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- 工單系統預覽圖 -->
+            <div class="position-relative">
+              <img 
+                src="https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png" 
+                alt="NocoBase 工單管理系統預覽" 
+                class="img-fluid rounded shadow"
+                style="max-height: 400px; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Features Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">NocoBase 工單管理系統功能特點</h4>
+            <p class="para-desc mx-auto text-muted mb-0">作為 CRM 系統的重要補充，提供專業的客戶服務和售後支持管理</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-ticket rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">完整的工單生命週期</h5>
+              <p class="text-muted mt-2">從工單創建、分配、處理到關閉，全流程管理，確保每個工單都得到妥善處理</p>
+              <i class="uil uil-ticket full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-users-alt rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">智能分配與跟蹤</h5>
+              <p class="text-muted mt-2">根據工單類型和團隊成員技能自動分配任務，實時跟蹤處理進度和狀態</p>
+              <i class="uil uil-users-alt full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-envelope rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">多渠道溝通記錄</h5>
+              <p class="text-muted mt-2">通過 API 同步郵件、電話、在線聊天等多種溝通渠道，統一管理客戶交流記錄</p>
+              <i class="uil uil-envelope full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-shield-check rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">開源，數據完全掌控</h5>
+              <p class="text-muted mt-2">開源代碼，數據私有部署，確保企業數據安全和自主控制</p>
+              <i class="uil uil-shield-check full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+  <!-- Try Ticketing Extension Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- 使用擴展功能交互演示 -->
+          <InteractiveDemo guides={extensionDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>立即體驗
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>複製到自己的環境
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try Ticketing Extension End -->
+
+  <!-- Development Tutorial Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">工單系統開發教程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">從零開始學習如何使用 NocoBase 構建專業的工單管理系統</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-play h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">數據模型設計</h5>
+                <p class="text-muted text-center">學習如何創建工單、客戶、分類等基礎數據結構和關係</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即將推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-arrow-growth h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">工作流配置</h5>
+                <p class="text-muted text-center">設置工單分配、狀態流轉和自動化處理流程</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即將推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-bell h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">通知與提醒</h5>
+                <p class="text-muted text-center">配置郵件和系統通知，確保工單及時處理</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">即將推出</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">工單系統中所使用的商業插件介紹</h4>
+            <p class="para-desc mx-auto text-muted mb-0">瞭解如何通過商業插件獲得更強大的功能，提升工單系統的專業性和易用性</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- 動態生成插件卡片 -->
+        {ticketingPlugins.map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name_cn || plugin.name;
+          const displayDescription = plugin.description_cn || plugin.description;
+          const docsUrl = plugin.docs_cn || plugin.docs;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">詳情</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用, 1 年升級</span><br>
+                          <a href="/tw/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_1_year_cn || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">永久使用和升級</span><br>
+                          <a class="text-muted" href="/tw/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">￥{plugin.price_cny || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- 佔位卡片，保持佈局整齊 -->
+        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
+            <div class="card-body">
+              <div class="mt-2 plugin-box text-center">
+                <div class="mt-4 mb-4">
+                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
+                  <h6 class="text-muted mb-3">更多插件即將推出</h6>
+                  <p class="text-muted small">我們正在開發更多有用的商業插件，敬請期待</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/tw/plugins-commercial" class="btn btn-primary me-3">查看全部商業插件</a>
+          <a href="/tw/commercial" class="btn btn-outline-primary">瞭解定價詳情</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">如何使用？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">三個步驟快速部署包含工單管理功能的 NocoBase CRM 系統到您的環境</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安裝 NocoBase 系統</h5>
+                <p class="text-muted mt-2">按照我們的安裝文檔，部署 NocoBase 系統到您的服務器</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/get-started/quickstart" target="_blank" class="btn btn-primary">查看安裝文檔</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下載 CRM 系統模板文件</h5>
+                <p class="text-muted mt-2">下載完整的 CRM 模板即可獲得工單管理能力</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/pm_demo/demo_cn_250910.zip" class="text-muted small" style="text-decoration: underline !important;">下載 SQL 文件</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/pm_demo/demo_cn_20250910.nbdata" class="btn btn-outline-primary">下載備份文件 (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>在系統內還原</h5>
+                <p class="text-muted mt-2">將 CRM 模板文件導入到您的 NocoBase 系統中，即可同時獲得 CRM 和工單管理功能</p>
+              </div>
+              <div class="mt-3">
+                <a href="/tw/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">還原教程</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 工單功能說明 -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
+            <div class="d-flex align-items-start">
+              <div class="flex-shrink-0 me-3">
+                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-2 text-dark fw-medium">提示</h6>
+                <p class="mb-0 text-muted">工單管理系統作為 CRM 的重要補充模塊，已完全集成在 CRM 模板中。部署完成後，您可以在 CRM 系統中直接使用完整的工單管理功能，實現客戶服務的全流程管理。</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- How to Extend Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">如何擴展？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">根據業務需求進一步擴展和定製您的工單管理系統</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-plus-circle h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">工單類型與分類管理</h5>
+                  <p class="text-muted mb-3">根據業務需要創建不同類型的工單分類和處理規則</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">即將推出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-users-alt h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">團隊協作功能</h5>
+                  <p class="text-muted mb-3">設置團隊角色、權限和協作工作流</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">即將推出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-chart-line h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">統計報表分析</h5>
+                  <p class="text-muted mb-3">構建工單處理情況和效率分析報表</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">即將推出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex">
+              <div class="icon text-primary">
+                <i class="uil uil-link-h h2"></i>
+              </div>
+              <div class="ms-3 d-flex flex-column flex-grow-1">
+                <div class="flex-grow-1">
+                  <h5 class="mb-2">CRM 系統集成</h5>
+                  <p class="text-muted mb-3">與現有 CRM 系統無縫集成，實現數據共享</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary">即將推出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Extend End -->
+
+  <!-- CTA Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">準備好使用 NocoBase 工單管理系統了嗎？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            1 分鐘時間部署一個專屬工單管理 demo。作為 CRM 的重要補充，實現完整的客戶服務體系，提升客戶滿意度和服務效率。
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live demo
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>複製到自己的環境
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</BaseTW>
+
+<style>
+/* 工單管理系統樣式 - 參考 CRM 頁面樣式 */
+#ticket-demo-wrap {
+  position: relative;
+}
+
+/* 商業插件卡片樣式 */
+.plugin-card {
+  transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.plugin-footer .badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+.plugin-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+</style>
+
+ 

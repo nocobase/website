@@ -1,0 +1,113 @@
+---
+import PageHeader from "../../../components/PageHeader.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPage } from "../../../utils";
+
+const page = await getPage("workflow");
+
+const title = page.title_cn || page.title;
+const description = page.description_cn || page.description;
+const keywords = page.keywords_cn || page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title}>
+    <span slot="description" set:html={description}></span>
+  </PageHeader>
+  <!-- Start Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-top ">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">觸發器與動作節點</h5>
+            <p class="text-muted">NocoBase 的工作流由一個觸發器和一系列的動作節點的構成，通過觸發器觸發工作流，然後執行節點中的動作。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.1-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">表單提交前的<span class="text-primary">邏輯驗證</span></h5>
+            <p class="text-muted">操作前事件在操作執行前觸發，比如當銷售人員提交訂單時，系統需要檢查庫存是否充足。如果庫存不足，流程會自動阻止提交併提醒用戶，避免產生超賣或錯誤記錄。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.2-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">在多個數據源之間<span class="text-primary">傳遞數據</span></h5>
+            <p class="text-muted">當一個 NocoBase 應用中有多個數據源時，可以使用工作流來編排它們之間的流程邏輯，在後端實現多個數據源之間的業務自動化。比如在 ERP 中新增訂單時，需要將 CRM 中該客戶的等級提升為 “付費客戶”。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/DS-1.3-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">使用 Webhook 接受<span class="text-primary">外部數據</span></h5>
+            <p class="text-muted">通過 Webhook 觸發器，NocoBase 可以接收來自外部系統的數據，並自動執行指定動作。比如在外部客服系統中，每當有用戶提交新的反饋，就將數據發送到 NocoBase 並自動生成一條工單記錄。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.4-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">使用 HTTP 請求節點連接<span class="text-primary">外部系統</span></h5>
+            <p class="text-muted">通過 HTTP 請求節點，NocoBase 能主動訪問外部系統，實現調用接口、自動推送數據以及接收響應。比如在 NocoBase 中更新了發貨狀態時，自動向物流平臺推送訂單信息。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.5-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">調試、版本管理與執行記錄<span class="text-primary">追蹤</span></h5>
+            <p class="text-muted">NocoBase 的工作流提供手動調試、版本控制、日誌追蹤能力，方便開發、測試與追蹤執行記錄。</p>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <video controls class="rounded shadow">
+              <source src="https://static-docs.nocobase.com/WF-5.7-CN.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Highlights End -->
+</Layout>

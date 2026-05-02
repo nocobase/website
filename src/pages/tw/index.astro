@@ -1,0 +1,1512 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import InteractiveDemo from "../../components/InteractiveDemo.astro";
+import AIAvatar from '../../components/AIAvatar.astro';
+import demoConfig from "../../data/demo-config-en.json";
+
+const demo_20260429083220 = {
+  "title": "AI Building",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI 搭建",
+      "title": "AI Coding Agent 快速開發",
+      "description": "AI Coding Agent 快速開發"
+    },
+    {
+      "id": "step-1",
+      "title": "Step 1",
+      "description": "通過 CLI 將 Claude code、Codex、OpenCode 等 Coding agent 連接 NocoBase",
+      "image": "https://static-docs.nocobase.com/A1.png",
+      "button": {
+        "id": "button2",
+        "label": "通過 CLI 將 Claude code、Codex、OpenCode 等 Coding agent 連接 NocoBase",
+        "position": {
+          "left": "28.7%",
+          "top": "48.8%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase 會引導我們連接現有應用或者部署新應用",
+      "image": "https://static-docs.nocobase.com/A2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase 會引導我們連接現有應用或者部署新應用",
+        "position": {
+          "left": "47.6%",
+          "top": "47.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "連接成功，接下來，就可以用自然語言與 Agent 對話，操作 NocoBase 進行搭建",
+      "image": "https://static-docs.nocobase.com/A3.png",
+      "button": {
+        "id": "button4",
+        "label": "連接成功，接下來，就可以用自然語言與 Agent 對話，操作 NocoBase 進行搭建",
+        "position": {
+          "left": "27.8%",
+          "top": "57.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "讓 AI 創建公司、聯繫人、商機、訂單等數據表和字段",
+      "image": "https://static-docs.nocobase.com/A4.png",
+      "button": {
+        "id": "button5",
+        "label": "讓 AI 創建公司、聯繫人、商機、訂單等數據表和字段",
+        "position": {
+          "left": "28.7%",
+          "top": "47.7%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "全部數據表和字段一次創建完成",
+      "image": "https://static-docs.nocobase.com/A5.png",
+      "button": {
+        "id": "button6",
+        "label": "全部數據表和字段一次創建完成",
+        "position": {
+          "right": "31.7%",
+          "top": "65.0%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "讓 AI 創建菜單和儀表盤、客戶管理頁面",
+      "image": "https://static-docs.nocobase.com/A6.png",
+      "button": {
+        "id": "button7",
+        "label": "讓 AI 創建菜單和儀表盤、客戶管理頁面",
+        "position": {
+          "left": "29.1%",
+          "top": "83.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "3 個頁面一次創建完成",
+      "image": "https://static-docs.nocobase.com/A7.png",
+      "button": {
+        "id": "button8",
+        "label": "3 個頁面一次創建完成",
+        "position": {
+          "left": "36.6%",
+          "top": "22.9%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "每個頁面都具備完整功能",
+      "image": "https://static-docs.nocobase.com/A8.png",
+      "button": {
+        "id": "button9",
+        "label": "每個頁面都具備完整功能",
+        "position": {
+          "right": "41.3%",
+          "top": "11.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "讓 AI 修改儀表盤頁面，增加一個個性化的客戶跟進任務管理模塊",
+      "image": "https://static-docs.nocobase.com/A9.png",
+      "button": {
+        "id": "button10",
+        "label": "讓 AI 修改儀表盤頁面，增加一個個性化的客戶跟進任務管理模塊",
+        "position": {
+          "left": "26.4%",
+          "top": "85.5%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "它用 JS Block 編寫了一個美觀易用的任務區塊",
+      "image": "https://static-docs.nocobase.com/A10.png",
+      "button": {
+        "id": "button11",
+        "label": "它用 JS Block 編寫了一個美觀易用的任務區塊",
+        "position": {
+          "left": "44.9%",
+          "top": "65.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "接下來，讓 AI 設計並配置角色和權限，讓銷售、商品運營、物流團隊各司其職",
+      "image": "https://static-docs.nocobase.com/A11.png",
+      "button": {
+        "id": "button12",
+        "label": "接下來，讓 AI 設計並配置角色和權限，讓銷售、商品運營、物流團隊各司其職",
+        "position": {
+          "left": "26.6%",
+          "top": "87.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "各個角色都已到位，每個角色的權限已經精確到字段級",
+      "image": "https://static-docs.nocobase.com/A12.png",
+      "button": {
+        "id": "button13",
+        "label": "各個角色都已到位，每個角色的權限已經精確到字段級",
+        "position": {
+          "right": "43.9%",
+          "top": "48.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "最後讓 AI 搭建一個自動化流程，根據消費金額來自動升級客戶的等級",
+      "image": "https://static-docs.nocobase.com/A13.png",
+      "button": {
+        "id": "button14",
+        "label": "最後讓 AI 搭建一個自動化流程，根據消費金額來自動升級客戶的等級",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "恭喜你，一個簡單的客戶管理系統已經初步完成",
+      "description": "恭喜你，一個簡單的客戶管理系統已經初步完成"
+    }
+  ]
+};
+
+const demo_20260429085434 = {
+  "title": "親自試一試，3 步創建一個 CRM",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "無代碼搭建",
+      "description": "無代碼開發，所見即所得",
+      "title": "無代碼開發，所見即所得"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "首先，去配置數據源和數據模型",
+      "image": "https://static-docs.nocobase.com/S1.png",
+      "button": {
+        "id": "button2",
+        "label": "首先，去配置數據源和數據模型",
+        "position": {
+          "right": "27.8%",
+          "top": "13.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "NocoBase 自帶主數據庫，我們也可以添加各種外部數據源",
+      "image": "https://static-docs.nocobase.com/S2.png",
+      "button": {
+        "id": "button3",
+        "label": "NocoBase 自帶主數據庫，我們也可以添加各種外部數據源",
+        "position": {
+          "right": "12.3%",
+          "top": "17.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "讓我們去主數據庫創建表和字段",
+      "image": "https://static-docs.nocobase.com/S3.png",
+      "button": {
+        "id": "button4",
+        "label": "讓我們去主數據庫創建表和字段",
+        "position": {
+          "right": "17.1%",
+          "top": "31.0%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "可以審查或修改 AI 創建的數據模型，也可以手動創建新的數據表",
+      "image": "https://static-docs.nocobase.com/B4.png",
+      "button": {
+        "id": "button5",
+        "label": "可以審查或修改 AI 創建的數據模型，也可以手動創建新的數據表",
+        "position": {
+          "right": "21.3%",
+          "top": "27.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "從數十種字段類型中選擇所需的類型",
+      "image": "https://static-docs.nocobase.com/B5.png",
+      "button": {
+        "id": "button6",
+        "label": "從數十種字段類型中選擇所需的類型",
+        "position": {
+          "right": "13.0%",
+          "top": "8.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "接下來，回到頁面，可以審查 AI 搭建的成果，也可以手動搭建新的頁面",
+      "image": "https://static-docs.nocobase.com/B6.png",
+      "button": {
+        "id": "button7",
+        "label": "接下來，回到頁面，可以審查 AI 搭建的成果，也可以手動搭建新的頁面",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "切換 UI 配置模式，我們將進入所見即所得的開發狀態",
+      "image": "https://static-docs.nocobase.com/B7.png",
+      "button": {
+        "id": "button8",
+        "label": "切換 UI 配置模式，我們將進入所見即所得的開發狀態",
+        "position": {
+          "right": "18.8%",
+          "top": "8.9%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "在頁面中添加“表格區塊”並選擇“商品”表，即可顯示“商品”表的數據",
+      "image": "https://static-docs.nocobase.com/B8.png",
+      "button": {
+        "id": "button9",
+        "label": "在頁面中添加“表格區塊”並選擇“商品”表，即可顯示“商品”表的數據",
+        "position": {
+          "left": "38.1%",
+          "top": "38.3%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "配置表格區塊，顯示我們需要的字段",
+      "image": "https://static-docs.nocobase.com/B9.png",
+      "button": {
+        "id": "button10",
+        "label": "配置表格區塊，顯示我們需要的字段",
+        "position": {
+          "right": "10.9%",
+          "top": "22.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "在表格上添加我們需要的操作",
+      "image": "https://static-docs.nocobase.com/B10.png",
+      "button": {
+        "id": "button11",
+        "label": "在表格上添加我們需要的操作",
+        "position": {
+          "right": "13.6%",
+          "top": "31.8%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "我們還希望用圖表來分析商品的分類，添加 Charts 區塊",
+      "image": "https://static-docs.nocobase.com/B11.png",
+      "button": {
+        "id": "button12",
+        "label": "我們還希望用圖表來分析商品的分類，添加 Charts 區塊",
+        "position": {
+          "left": "26.2%",
+          "top": "82.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "配置 query 和 chart，商品分佈情況直觀的顯示出來",
+      "image": "https://static-docs.nocobase.com/B12.png",
+      "button": {
+        "id": "button13",
+        "label": "配置 query 和 chart，商品分佈情況直觀的顯示出來",
+        "position": {
+          "right": "33.8%",
+          "top": "42.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-14",
+      "title": "Step 14",
+      "description": "再添加一個表單區塊，用於錄入商品數據",
+      "image": "https://static-docs.nocobase.com/B13.png",
+      "button": {
+        "id": "button14",
+        "label": "再添加一個表單區塊，用於錄入商品數據",
+        "position": {
+          "left": "48.4%",
+          "top": "62.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-15",
+      "title": "Step 15",
+      "description": "最後，拖拽這些區塊，按需佈局。頁面上 3 個區塊，顯示的都是“商品”表的數據",
+      "image": "https://static-docs.nocobase.com/B14.png",
+      "button": {
+        "id": "button15",
+        "label": "最後，拖拽這些區塊，按需佈局。頁面上 3 個區塊，顯示的都是“商品”表的數據",
+        "position": {
+          "right": "39.9%",
+          "top": "55.6%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-16",
+      "title": "Step 16",
+      "description": "去角色和權限配置頁面，審查和修改 AI 搭建的結果",
+      "image": "https://static-docs.nocobase.com/B15.png",
+      "button": {
+        "id": "button16",
+        "label": "去角色和權限配置頁面，審查和修改 AI 搭建的結果",
+        "position": {
+          "right": "14.1%",
+          "top": "16.5%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-17",
+      "title": "Step 17",
+      "description": "可以手動創建角色",
+      "image": "https://static-docs.nocobase.com/B16.png",
+      "button": {
+        "id": "button17",
+        "label": "可以手動創建角色",
+        "position": {
+          "left": "24.8%",
+          "top": "21.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-18",
+      "title": "Step 18",
+      "description": "為每個角色審查和修改詳細的權限",
+      "image": "https://static-docs.nocobase.com/B17.png",
+      "button": {
+        "id": "button18",
+        "label": "為每個角色審查和修改詳細的權限",
+        "position": {
+          "left": "49.5%",
+          "top": "40.1%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-19",
+      "title": "Step 19",
+      "description": "去工作流配置頁面，審查和修改 AI 搭建的結果",
+      "image": "https://static-docs.nocobase.com/B18.png",
+      "button": {
+        "id": "button19",
+        "label": "去工作流配置頁面，審查和修改 AI 搭建的結果",
+        "position": {
+          "right": "45.2%",
+          "top": "39.2%"
+        },
+        "balloonPos": "down",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-20",
+      "title": "Step 20",
+      "description": "配置或修改工作流，數十個節點可以使用",
+      "image": "https://static-docs.nocobase.com/B19.png",
+      "button": {
+        "id": "button20",
+        "label": "配置或修改工作流，數十個節點可以使用",
+        "position": {
+          "left": "50%",
+          "top": "50%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "恭喜你，一個客戶管理系統已經可以投入使用",
+      "description": "恭喜你，一個客戶管理系統已經可以投入使用"
+    }
+  ]
+};
+
+const demo_20260429090755 = {
+  "title": "親自試一試，3 步創建一個 CRM",
+  "subtitle": "",
+  "mainSteps": [],
+  "steps": [
+    {
+      "id": "AI 員工",
+      "title": "讓 AI 員工協助處理業務",
+      "description": "讓 AI 員工協助處理業務"
+    },
+    {
+      "id": "step-2",
+      "title": "Step 2",
+      "description": "NocoBase 的 AI 員工，可以協助人類完成各種任務",
+      "image": "https://static-docs.nocobase.com/C1.png",
+      "button": {
+        "id": "button2",
+        "label": "NocoBase 的 AI 員工，可以協助人類完成各種任務",
+        "position": {
+          "left": "45.0%",
+          "top": "32.5%"
+        },
+        "balloonPos": "up",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-3",
+      "title": "Step 3",
+      "description": "在客戶表格上，添加數據洞察員 Viz",
+      "image": "https://static-docs.nocobase.com/C2.png",
+      "button": {
+        "id": "button3",
+        "label": "在客戶表格上，添加數據洞察員 Viz",
+        "position": {
+          "right": "27.0%",
+          "top": "80.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-4",
+      "title": "Step 4",
+      "description": "為 Viz 配置任務，協助我們分析客戶數據並生成報告",
+      "image": "https://static-docs.nocobase.com/C3.png",
+      "button": {
+        "id": "button4",
+        "label": "為 Viz 配置任務，協助我們分析客戶數據並生成報告",
+        "position": {
+          "right": "33.4%",
+          "top": "39.9%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-5",
+      "title": "Step 5",
+      "description": "點擊喚起 Viz",
+      "image": "https://static-docs.nocobase.com/C4.png",
+      "button": {
+        "id": "button5",
+        "label": "點擊喚起 Viz",
+        "position": {
+          "right": "22.0%",
+          "top": "37.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-6",
+      "title": "Step 6",
+      "description": "Viz 對客戶數據進行了分析，並生成了 PDF、Markdown、HTML 三種格式，供我們按需選擇",
+      "image": "https://static-docs.nocobase.com/C5.png",
+      "button": {
+        "id": "button6",
+        "label": "Viz 對客戶數據進行了分析，並生成了 PDF、Markdown、HTML 三種格式，供我們按需選擇",
+        "position": {
+          "left": "27.5%",
+          "top": "35.4%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-7",
+      "title": "Step 7",
+      "description": "在詳情區塊上添加調查員 Vera",
+      "image": "https://static-docs.nocobase.com/C6.png",
+      "button": {
+        "id": "button7",
+        "label": "在詳情區塊上添加調查員 Vera",
+        "position": {
+          "right": "25.5%",
+          "top": "73.3%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-8",
+      "title": "Step 8",
+      "description": "為 Vera 配置任務，在網絡上搜集資料，對我們的客戶進行背景調查",
+      "image": "https://static-docs.nocobase.com/C7.png",
+      "button": {
+        "id": "button8",
+        "label": "為 Vera 配置任務，在網絡上搜集資料，對我們的客戶進行背景調查",
+        "position": {
+          "right": "32.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-9",
+      "title": "Step 9",
+      "description": "點擊喚醒 Vera",
+      "image": "https://static-docs.nocobase.com/C8.png",
+      "button": {
+        "id": "button9",
+        "label": "點擊喚醒 Vera",
+        "position": {
+          "right": "22.3%",
+          "top": "16.0%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-10",
+      "title": "Step 10",
+      "description": "她通過數十個信源搜到了該客戶的資料，並整理成一份背景調查報告",
+      "image": "https://static-docs.nocobase.com/C9.png",
+      "button": {
+        "id": "button10",
+        "label": "她通過數十個信源搜到了該客戶的資料，並整理成一份背景調查報告",
+        "position": {
+          "right": "33.8%",
+          "top": "21.2%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-11",
+      "title": "Step 11",
+      "description": "我們再將 NocoBase 對接到 Hermes、OpenClaw 等 Agent 中，這樣你就能從 Slack、Whatsapp、飛書中直接與 NocoBase 對話",
+      "image": "https://static-docs.nocobase.com/C10.png",
+      "button": {
+        "id": "button11",
+        "label": "我們再將 NocoBase 對接到 Hermes、OpenClaw 等 Agent 中，這樣你就能從 Slack、Whatsapp、飛書中直接與 NocoBase 對話",
+        "position": {
+          "left": "48.8%",
+          "top": "31.7%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-12",
+      "title": "Step 12",
+      "description": "在 飛書、微信、Telegram 中直接下達指令，整理這段聊天記錄並將客戶信息添加到 NocoBase 中",
+      "image": "https://static-docs.nocobase.com/C11.png",
+      "button": {
+        "id": "button12",
+        "label": "在 飛書、微信、Telegram 中直接下達指令，整理這段聊天記錄並將客戶信息添加到 NocoBase 中",
+        "position": {
+          "right": "28.5%",
+          "top": "39.6%"
+        },
+        "balloonPos": "left",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "step-13",
+      "title": "Step 13",
+      "description": "在 NocoBase 中可以看到客戶已添加",
+      "image": "https://static-docs.nocobase.com/C12.png",
+      "button": {
+        "id": "button13",
+        "label": "在 NocoBase 中可以看到客戶已添加",
+        "position": {
+          "right": "44.1%",
+          "top": "48.1%"
+        },
+        "balloonPos": "right",
+        "balloonLength": "medium"
+      }
+    },
+    {
+      "id": "恭喜",
+      "title": "恭喜你，一個完整的智能客戶管理系統已經就緒",
+      "description": "恭喜你，一個完整的智能客戶管理系統已經就緒"
+    }
+  ]
+};
+---
+
+<Layout>
+    <!-- Hero Start -->
+    <section class="bg-half-260 bg-light d-table w-100">
+    <!-- <div class="bg-overlay"></div> -->
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="title-heading text-center mt-4">
+          <h1 class="display-4 fw-bold mb-3">AI + 無代碼<br />構建<span class="text-primary fw-bold">可靠的</span>業務系統</h1>
+          <p class="para-desc mx-auto text-muted">
+            NocoBase 是一個開源的 “AI + 無代碼” 開發平臺，用於快速開發企業業務系統。不同於讓 AI 從零生成代碼，NocoBase 提供經過生產驗證的基礎設施和所見即所得的無代碼界面，讓 AI 與人高效協同，既保證開發速度又保證系統可靠性。
+          </p>
+          <div class="mt-4 pt-2">
+            <a href="https://v2.docs.nocobase.com/cn/get-started/how-nocobase-works" target="_blank" title="NocoBase 如何工作" class="btn btn-outline-primary mb-2">瞭解如何工作<i class="uil uil-angle-right-b"></i></a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mb-2">在線體驗<i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </div>
+
+        
+
+        <div class="row justify-content-center " id="section-video">
+          <div class="col-lg-10 text-center">
+            <div class="home-video">
+              <img src="https://static-docs.nocobase.com/video-cover-home.png" alt="" class="img-fluid rounded-md shadow-lg">
+              <div class="bg-overlay rounded-md shadow-lg" style=""></div>
+              <div class="play-icon">
+                <a href="?fallback_url" class="play-btn lightbox" data-type="html" data-target="#nocobase_video_lightbox" title="Watch NocoBase Video">
+                  <i class="mdi mdi-play text-primary rounded-circle shadow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!--end row-->
+      </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Hero End -->
+
+  <!-- Demo Start -->
+  <section class="section pb-5 mt-5" id="section-3-steps">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center  mb-5 pb-5">
+                <!-- Hero Users start -->
+                <div class="row justify-content-center text-center"><span class="para-desc mx-auto text-muted">被多家企業用於真實業務系統</span></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/nxp-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/toyota-light.png" class="avatar avatar-small" alt="">
+                    </div> -->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/lenovo-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/sony-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/american-express-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="https://static-docs.nocobase.com/yamaha-light.png" class="avatar avatar-small" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+                <!-- Hero Users End -->
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h3 class="title mb-4">親自試一試：<br>AI + 無代碼 協同構建一個智能  <span class="text-primary fw-bold typewrite" data-period="2000" data-type='[ "客戶關係管理", "項目管理", "工單系統", "庫存管理", "訂單管理" ]'></span></h3>
+                    <p class="text-muted para-desc mx-auto mb-0">可以由 AI 搭建，也可以由人工無代碼搭建；同時讓 AI 員工幫你處理日常業務。</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                           用 AI Coding Agent 快速開發
+                        </h6>
+                        <p class="text-muted para">用 Claude Code、Codex、Cursor 等主流 Coding Agent 快速搭建完整系統。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step1_lightbox" data-group="step1" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 試一下 <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">AI building</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            人工無代碼開發，所見即所得
+                        </h6>
+                        <p class="text-muted para">人可以隨時介入開發，在所見即所得的無代碼界面上便捷操作，與 AI 協同迭代。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step2_lightbox" data-group="step2" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 試一下 <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">No code</li>
+                            <li class="step-icon"><i class="uil uil-angle-double-right h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card work-process border-0 rounded shadow h-100">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h6 class="title">
+                            <AIAvatar name="lexi" /> 
+                            <AIAvatar name="viz" /> 
+                            <AIAvatar name="vera" /> 
+                            <AIAvatar name="dex" /> 
+                            讓 AI 員工協助處理業務
+                        </h6>
+                        <p class="text-muted para">讓系統內的 AI 員工或外部 Agent 協助你執行數據分析、流程決策等多種任務。</p>
+                        <a href="?fallback_url" data-type="html" data-target="#step3_lightbox" data-group="step3" data-zoom="false" title="Try NocoBase demo" class="text-primary lightbox">👉 試一下 <i class="uil uil-angle-right-b"></i></a>
+                        <ul class="list-unstyled d-flex justify-content-between mb-0 mt-auto pt-3">
+                            <li class="step h1 mb-0 fw-bold">AI employee</li>
+                            <li class="step-icon"><i class="uil uil-file-check-alt h1 mb-0"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End -->
+
+  
+
+  <!-- For you Start -->
+  <section class="section pb-5 bg-light" id="section-for-you">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h3 class="title mb-4">NocoBase 適合誰</h3>
+            <p class="text-muted para-desc mx-auto mb-0">在為企業內部或客戶交付各類業務系統時，你的團隊始終面臨 <span class="text-primary fw-bold">嚴峻挑戰</span>：</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">業務需求<br />頻繁變化</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">交付時間<br />短暫緊迫</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">開發過程<br />緩慢冗長</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="d-flex features feature-primary pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-silent-squint text-primary text-warning"></i>
+            </div>
+            <div class="flex-1">
+              <p class="para mb-0">人員成本<br />居高不下</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-5 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">AI 編程正在改變開發方式，但當你真正嘗試之後，<span class="text-primary fw-bold">新的問題 </span>隨之而來：</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <ul class="list-unstyled">
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>架構脆弱，難以持續迭代<br><span class="text-muted">AI 可以快速生成代碼，但很難交出一個架構合理、穩定可靠、可持續迭代的系統</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>基礎模塊反覆重建，質量不穩定<br><span class="text-muted">每個項目都要讓 AI 重建用戶管理、權限控制、流程編排等基礎模塊，重複、低效、質量不可控</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>生成結果是黑盒，維護越來越難<br><span class="text-muted">AI 生成的代碼對業務人員不可見、不可調整，後續維護和變更成本越來越高</span></li>
+            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>難以在真實業務邊界內工作<br><span class="text-muted">AI 難以在嚴格的權限和流程約束下處理企業的實際業務</span></li>
+          </ul>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mt-4 mb-4 pb-2">
+            <p class="text-muted para-desc mx-auto mb-0">不必擔憂！試一試 NocoBase <br />NocoBase 為你的團隊提供構建業務系統所需的全部 <span class="text-primary fw-bold">基礎設施</span>，AI 和人都能在上面高效工作。 </p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- How Start 1 -->
+  <section class="section" id="section-how">
+    <div class="container">
+      <!-- 協同 -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">協同：AI 與人一起構建</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase 既為 Coding Agent 提供了完善的 CLI 和 Skills，又為人提供了所見即所得的無代碼開發界面，讓 AI 與人可以高效協同。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">用你熟悉的 <span class="text-primary">AI Coding Agent</span> 開發</h5>
+            <p class="text-muted">使用主流 Coding Agent，從部署到搭建業務系統只需數十分鐘。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持 Claude Code、Cursor、Codex、OpenCode、TRAE 等所有主流 Agent</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>從安裝部署，到搭建開發，到遷移發佈，都由 Agent 完成</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/coding-agent.png" alt="NocoBase AI Coding Agent integration, supporting Claude Code, Cursor, Codex, OpenCode, TRAE and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4">在 <span class="text-primary">所見即所得</span> 的無代碼界面上人工開發</h5>
+            <p class="text-muted">所見即所得的配置界面，人可以直接可視化搭建和修改，不用 AI 也可以完成整個系統搭建。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>一鍵切換使用模式與配置模式</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>數據模型、頁面、工作流、權限全部都可以可視化審查和配置</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>配置模式面向普通用戶設計，而非僅限專業開發人員</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/wysiwyg.gif" alt="NocoBase WYSIWYG no-code interface for visual development, with one-click switch between usage and configuration modes." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 開發與人工搭建</span> 自由組合</h5>
+            <p class="text-muted">按需分工，AI 搭建的結果，人可以隨時接管修改；人配置的內容，AI 也能理解並繼續迭代。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 可以高效創建數據模型、基礎頁面、工作流</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>人可以快速對界面交互進行調整</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>按需協同，持續迭代</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-no-coding.png" alt="NocoBase AI and human collaboration, enabling flexible division of work between AI development and manual configuration." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 智能 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">智能：AI 不只參與開發，更參與業務處理</h3>
+            <p class="text-muted para-desc mx-auto mb-0">NocoBase 內置 AI 員工能力，讓 AI 作為業務參與者直接在系統內工作。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">AI 員工</span> 融入業務流程</h5>
+            <p class="text-muted">AI 員工自動獲取業務上下文，在系統內直接執行任務，而非僅作為對話窗口。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>前臺：協助用戶完成數據分析、智能問答、表單填寫等操作</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>後臺：持續運行，自動處理文檔識別、風險監測、任務分發等工作</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>與工作流深度集成，AI 員工可以作為流程中的一個節點參與決策和執行</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/ai-employee-home.png" alt="NocoBase AI employees integrated into business workflows for data analysis, document processing, and task distribution." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">開放接口</span>，連接 Agent 生態</h5>
+            <p class="text-muted">提供 MCP、HTTP API、CLI 等標準接口和完善的 Skills，讓外部 Agent 安全接入。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>OpenClaw、Hermes、Dify、Coze、n8n 等外部 Agent 平臺可通過標準協議接入</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>與飛書、微信、Whatsapp、Slack、Gmail 打通，能夠查詢數據、觸發操作、執行業務流程</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>統一接口規範，內部 AI 員工與外部 Agent 使用相同的能力邊界</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-agents-logos.jpeg" alt="NocoBase open interfaces including MCP Server, HTTP API, and CLI for connecting with external Agent ecosystems." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">權限約束</span>，行為可控</h5>
+            <p class="text-muted">AI 的所有操作都受細粒度權限控制，與人類用戶遵循相同的安全規則。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>每個 AI 員工擁有獨立角色，讀寫權限精確到字段級別</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>所有操作記錄在審計日誌中，可追溯每一次數據變更和流程觸發</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>管理員可隨時調整 AI 員工的權限範圍，確保行為邊界清晰</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-permission.png" alt="NocoBase AI permission controls with field-level access, audit logging, and adjustable behavior boundaries." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 可靠 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">可靠：基礎能力就緒，只需關注業務本身</h3>
+            <p class="text-muted para-desc mx-auto mb-0">數據模型、權限控制、流程編排等功能邏輯複雜且不允許出錯。<br>NocoBase 將它們作為內置基礎設施提供，經過嚴格測試和大量生產環境驗證。</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">完善的基礎設施</span>，不再每次從零開始</h5>
+            <p class="text-muted">NocoBase 內置數十個基礎模塊，覆蓋業務系統開發中最常見也最關鍵的需求。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>數據建模、權限控制、工作流、審計日誌等核心能力開箱即用</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>經過大量企業生產環境驗證，不是每次由 AI 重新生成的黑盒代碼</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>為 AI 提供規範和約束，確保生成的結果符合系統架構要求</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/f-core.png" alt="NocoBase built-in infrastructure modules covering data modeling, access control, workflows, audit logs and more." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">數據模型驅動</span>，數據與界面解耦</h5>
+            <p class="text-muted">所有業務沉澱為標準關係型數據庫結構，數據模型與用戶界面完全分離。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持主數據庫、外部數據庫以及第三方 API 作為數據源</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>AI 和人都基於同一個數據模型工作，結果透明、可審查</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>數據始終存儲在你自己的數據庫中，不被平臺鎖定</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/model.png" alt="NocoBase data model-driven approach, separating data structure from user interface with multiple presentation options." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row align-items-top mt-100">
+        <div class="col-lg-5 col-md-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">插件化架構</span>，系統可持續演進</h5>
+            <p class="text-muted">微內核設計，一切功能皆插件。系統隨業務增長長期迭代而不失控。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>新功能通過插件組合擴展，遵循統一規範，互不干擾</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>支持自研插件與官方插件混合使用，靈活適配業務需求</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>架構統一，無論 AI 生成還是人工開發的插件，都遵循同一套標準</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-7 col-md-7">
+          <div class="card rounded border-0 shadow ms-lg-5">
+            <div class="card-body feature-card-img">
+              <img src="https://static-docs.nocobase.com/plugins.png" alt="NocoBase plugin architecture with microkernel design, enabling sustainable system evolution through composable plugins." />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 更多 -->
+      <div class="row justify-content-center mt-100">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">還有更多</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      
+      <div class="row align-items-top">
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4"><span class="text-primary">開源透明</span>，完全掌控</h5>
+            <p class="text-muted">NocoBase 核心代碼和基礎插件全部開源，且採用主流技術棧，提供絕對的透明度和可控性。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>核心與基礎插件完全開源</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>使用 TypeScript 編寫，基於 Node.js、React、Koa 等主流技術棧</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>- 安全可控，所有數據和 AI 交互都在你自己的環境中運行</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>極簡輕量，可運行在低配服務器上，一個人即可維護和擴展</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+        <div class="col-lg-6 col-md-6 mt-5">
+          <div class="section-title">
+            <h5 class="mb-4">簡單友好的 <span class="text-primary">授權模式</span></h5>
+            <p class="text-muted">NocoBase 提供免費開源版本，同時提供商業授權和插件，採用 一次性購買，終身使用 的模式。</p>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>無需訂閱</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按用戶數量計費</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按應用數量計費</li>
+              <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>不按數據量計費</li>
+            </ul>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- For you End -->
+
+  <!-- Users Start -->
+  <section class="section pb-0 bg-light" id="section-users">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">他們在生產中使用 NocoBase</h3>
+        </div><!--end col-->
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/isuzu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iopex.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhuozheng-yiliao.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/zhejiang-nengyuan.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/yamaha.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wuhan-liangyou.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/wasu.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/vinfast.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/ville-dyverdon-les-bains.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/toyota.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/tomsk-polytechnic-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/sony.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smfl.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/smart-devil.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shimano.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/shanghai-civil-aircraft-landing-gear.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/region-grand-est.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/pland.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/peking-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/osg.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/nxp.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/lenovo.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/iit-madras.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hygea.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/hi-p.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/haideshi.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/gadgeon-systems.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/feilihua.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/dgac.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/daikin.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/copenhagen-university.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/biel.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/beijing-shiji-hulian.png" class="avatar avatar-small" alt="">
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/bank-of-china.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <!-- <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/aozora-bank.png" class="avatar avatar-small" alt="">
+            </div> -->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/american-express.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/allobank.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/luxshareict.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-2 col-6 text-center">
+                <img src="https://static-docs.nocobase.com/changan-2.png" class="avatar avatar-small" alt="">
+            </div><!--end col-->
+        </div><!--end row-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Users End -->
+
+  <!-- Feedback Start -->
+  <section class="section bg-light" id="section-feedback">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-4">這很重要，聽聽用戶們怎麼說</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mt-4 pt-2">
+          <div class="tiny-single-item text-center">
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">使用 NocoBase 後我們的行政任務時間縮短了50%，協作與溝通得到加強，招聘流程更加迅速和高效。</p>
+              <p class="text-muted fst-italic">在 TEDxDUTH，我們相信創新和協作的力量可以改變世界。NocoBase 使我們能夠簡化日常運營，從而將更多精力投入到真正重要的事務上——舉辦精彩的活動，傳播有價值的思想。</p>
+              <p class="text-muted fst-italic">如果你的組織正面臨混亂或低效的工作流程，NocoBase 不僅僅是一個工具——它更是一個全面的解決方案，能夠激發團隊的潛能，實現更多可能。對我們來說，NocoBase 更像一個遊戲規則的改變者，它讓我們敢於夢想，徹底改變了我們的工作方式，並持續影響著我們的社區。</p>
+              <p class="text-muted fst-italic">感謝 NocoBase 成為我們旅程中不可或缺的夥伴。我們攜手並進，共同推進創新與靈感的傳播！</p>
+              <img src="https://static-docs.nocobase.com/20250713094749.png" class="mt-4 mb-4" width="160" alt="TED" />
+              <h6 class="text-primary">Sarantis Antoniou <small class="text-muted">Lead Organizer </small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我們曾對 AirTable 和 NocoDB 進行過評估，最終選擇 NocoBase，是因為它更符合我們對系統自由度與部署方式的需求。NocoBase 可部署在我們的 AWS 環境中，不限制用戶數量，權限控制精細，頁面與數據分離的架構也讓我們能靈活定製前端。同時，內建工作流和自動生成 API 的功能，大大提升了效率。</p>
+              <a rel="nofollow" href="https://classmethod.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094650.png" class="mt-4 mb-4" width="160" alt="classmethod" /></a>
+              <h6 class="text-primary">クラスメソッド株式會社（Classmethod, Inc.）</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在選擇 NocoBase 之前，我們並沒有一個專門的客服與運營管理系統。業務發展迅速，需要快速搭建並承接越來越多的需求，NocoBase 很好地解決了這個問題。它的數據表關聯能力尤其出色，讓我們可以將不同的數據結構高效整合，客服人員能快速查詢用戶信息並實時處理用戶權益問題，極大提升了業務效率。</p>
+              <a rel="nofollow" href="https://www.plaud.ai/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094635.png" class="mt-4 mb-4" width="160" alt="PLAUD" /></a>
+              <h6 class="text-primary">PLAUD 產品經理 Lucas</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我們一直在尋找一款靈活的無代碼平臺，以構建一個完全定製的排班系統，滿足客戶 Okechamp 快速增長的物流業務需求。調研階段，NocoBase 憑藉 Schema-first 架構、模塊化設計和活躍的社區脫穎而出。它讓我們輕鬆實現了自定義視圖和報表管理。我們將繼續在更多客戶項目中採用 NocoBase。</p>
+              <img src="https://static-docs.nocobase.com/20250713094700.png" class="mt-4 mb-4" width="160" alt="Lukardi" />
+              <h6 class="text-primary">Lukardi SA</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">我們原本依賴紙質流程進行人事管理與休假審批，不僅效率低，還容易出錯。自從使用 NocoBase 構建人事、出勤、休假等業務流程後，我們實現了真正的無紙化辦公，110 多名員工的管理變得高效直觀。NocoBase 靈活的界面設計和強大的 API 能力，完全滿足了我們房地產行業的多樣化需求。相比 Salesforce 等工具，它不僅可高度定製，還支持一次性買斷，性價比非常高。我們正計劃將更多系統遷移到 NocoBase，包括 CRM，並將其打造為公司門戶與業務核心平臺。</p>
+              <a rel="nofollow" href="https://housewell-group.jp/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094720.png" class="mt-4 mb-4" width="160" alt="HouseWell" /></a>
+              <h6 class="text-primary">ハウスウェル株式會社(HouseWell)</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在構建智能工廠系統過程中，我們選擇了 NocoBase 作為核心平臺。它的極簡配置流程讓非技術人員也能快速構建系統頁面，極大提升了開發效率；同時，插件生態和工作流引擎讓我們能靈活應對多樣的業務場景，確保系統質量與擴展性。藉助 NocoBase 的細粒度權限系統，我們實現了設備維護、人事管理等流程的高效協作與數據安全共存。系統部署後，配合 PC + 移動端 + 5G 網絡架構，成功實現數據的實時反饋與高效錄入，為智能工廠建設打下了堅實基礎。</p>
+              <a rel="nofollow" href="https://www.bielcrystal.com" target="_blank"><img src="https://static-docs.nocobase.com/20250713094732.png" class="mt-4 mb-4" width="160" alt="BIEL" /></a>
+              <h6 class="text-primary">伯恩光學控股有限公司 BIEL</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在眾多新型數據庫產品中，NocoBase 是唯一讓我感受到'即要、又要、還要'可以實現的解決方案。我們需要一個非 SaaS、低代碼、可擴展的系統，來支撐跨幾十個團隊的任務協同和規範性強的專業場景。NocoBase 的學習曲線出乎意料地平滑，幾天內我就能在不依賴開發的情況下完成業務流程的搭建。</p>
+              <a rel="nofollow" href="https://www.aoya-hk.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094804.png" class="mt-4 mb-4" width="160" alt="奧雅設計" /></a>
+              <h6 class="text-primary">奧雅設計 業務負責人 張廷源</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">在對比調研了多個國內外低代碼平臺後，我們最終選擇了 NocoBase。它支持本地化部署和功能拓展，完美契合我們在化學領域對數據安全和系統定製化的高標準需求。NocoBase 提供的專業支持團隊和靈活的數據建模能力，讓系統上線變得高效且可靠。</p>
+              <a rel="nofollow" href="https://xtalpi.com/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094812.png" class="mt-4 mb-4" width="160" alt="晶泰科技" /></a>
+              <h6 class="text-primary">晶泰科技 項目負責人 熊智</h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks.</p>
+              <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
+              <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://static-docs.nocobase.com/20250713094827.png" class="mt-4 mb-4" width="160" alt="Sambruk" /></a>
+              <h6 class="text-primary">Thomas Wennersten <small class="text-muted">CTO</small></h6>
+            </div>
+            <div class="tiny-slide client-testi text-center">
+              <p class="text-muted fst-italic">NocoBase 作為數據管理、API 服務、工作流的核心，極大的降低了開發難度，使得我們的開發者能夠更專注於業務邏輯的實現，從而大大提高了開發效率。</p>
+              <p class="text-muted fst-italic">NocoBase 具備出色的集成能力，能夠與各種第三方服務和系統進行無縫對接，實現數據共享和功能整合。這意味著我們無需從零開始構建所有功能，而是可以充分利用現有的服務和資源，將各種功能和服務快速集成到應用中。這種集成能力不僅減少了開發時間和成本，更使得應用的功能更加豐富和多樣化，滿足了用戶多樣化的需求。</p>
+              <p class="text-muted fst-italic">在這個快速發展的數字化時代，NocoBase 無疑是我們應對挑戰、實現創新的有力武器，感謝 NocoBase 團隊的付出！</p>
+              <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt="" /></a>
+              <h6 class="text-primary">新疆聯通科創實驗室</h6>
+            </div>
+          </div><!--end owl carousel-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Feedback End -->
+
+  <!-- Get Start -->
+  <section class="section" id="section-get">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">準備好使用 NocoBase 了嗎？</h3>
+          <p class="text-muted para-desc mx-auto mb-0">1 分鐘時間部署一個專屬 demo。自己部署 NocoBase，同樣很簡單。</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4" title="Click to experience NocoBase online">Live Demo <i class="uil uil-arrow-right"></i></a>
+            <a href="https://docs.nocobase.com/cn/get-started/quickstart" target="_blank" class="btn btn-outline-primary mt-2 mb-4" title="Learn how to deploy NocoBase locally">Deploy locally <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section>
+  <!-- Get End -->
+
+  <!-- Lightbox Start -->
+    <!-- video in lightbox  -->
+      <div style="display: none;">
+        <div id="nocobase_video_lightbox">
+          <!-- <h2 class="title mb-4" style="color: #FFF; text-align: center; padding-top: 20%;">Coming soon</h2> -->
+          <video controls>
+            <source src="https://static-docs.nocobase.com/NocoBase-v2.2-CN.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- end video in lightbox  -->
+
+      <!-- step1 lightbox -->
+      <div style="display: none;">
+        <div id="step1_lightbox">
+          <InteractiveDemo guides={demo_20260429083220} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step1 lightbox -->
+
+      <!-- step2 lightbox -->
+      <div style="display: none;">
+        <div id="step2_lightbox">
+          <InteractiveDemo guides={demo_20260429085434} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step2 lightbox -->
+
+      <!-- step3 lightbox -->
+      <div style="display: none;">
+        <div id="step3_lightbox">
+          <InteractiveDemo guides={demo_20260429090755} hideHeader={true}/>
+        </div>
+      </div>
+      <!-- end step3 lightbox -->
+
+  <!-- Lightbox End --> 
+</Layout>

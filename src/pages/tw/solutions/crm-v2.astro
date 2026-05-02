@@ -1,0 +1,806 @@
+---
+import BaseTW from "../../../layouts/BaseTW.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import AIAvatar from "../../../components/AIAvatar.astro";
+---
+
+<BaseTW
+  title="CRM 2.0 銷售管理系統 - NocoBase"
+  description="基於 NocoBase 無代碼平臺的 CRM 2.0 銷售管理系統，模塊可拆解，完整銷售閉環。支持線索評分、商機贏率預測等 AI 輔助功能。"
+  keywords="NocoBase CRM, AI CRM, 銷售管理, 商機管理, 客戶關係管理, 線索管理, 無代碼 CRM"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <h1 class="fw-bold mt-2 mb-3">CRM 2.0<br/>銷售管理系統</h1>
+            <p class="para-desc text-muted">
+              基於 NocoBase 無代碼平臺構建，模塊可拆解，完整銷售閉環。工作流自動化處理日常任務，AI 輔助線索評分、商機分析等工作。
+            </p>
+
+            <!-- 核心價值 -->
+            <div class="row mt-4 g-3">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">線索智能評分</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">商機贏率預測</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">客戶健康監控</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">模塊可拆解</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 適用場景標籤 -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">適用場景：</span>
+                  <span class="badge bg-soft-primary me-2">B2B 銷售</span>
+                  <span class="badge bg-soft-primary me-2">項目型銷售</span>
+                  <span class="badge bg-soft-primary me-2">外貿銷售</span>
+                  <span class="badge bg-soft-primary">全行業</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 按鈕 -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>線上示範
+              </a>
+              <a href="#how-to-use" class="btn btn-outline-primary">
+                <i class="uil uil-download-alt me-1"></i>如何使用
+              </a>
+            </div>
+
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <div class="position-relative">
+              <img
+                src="https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg"
+                alt="CRM 2.0 系統界面"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
+
+  <!-- Pain Points Start -->
+  <section class="section" id="pain-points">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">您是否面臨這些問題？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">銷售團隊在日常運營中面臨多重挑戰</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-chart-down text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">線索質量參差不齊</h5>
+              </div>
+              <p class="text-muted mb-0">市場獲取的大量線索質量不一，銷售浪費大量時間在低質量線索上，高價值線索卻被忽略。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">商機跟進不及時</h5>
+              </div>
+              <p class="text-muted mb-0">商機長時間未推進，銷售經理難以掌握團隊商機健康度，錯失最佳成交時機。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">客戶信息分散</h5>
+              </div>
+              <p class="text-muted mb-0">客戶數據散落在郵件、聊天、文檔中，無法形成完整畫像，難以進行精準營銷。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-question-circle text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">銷售預測不準確</h5>
+              </div>
+              <p class="text-muted mb-0">憑經驗預測業績，缺乏數據支撐，預測偏差大，影響公司資源配置和決策。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">SaaS 成本高昂</h5>
+              </div>
+              <p class="text-muted mb-0">Salesforce、HubSpot 等 SaaS CRM 按人頭收費，定製開發週期長、成本難以預估。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">數據安全顧慮</h5>
+              </div>
+              <p class="text-muted mb-0">客戶信息、商機數據存儲在第三方雲端，不符合數據本地化和隱私保護的合規要求。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Pain Points End -->
+
+  <!-- Solution Overview Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">我們的解決方案</h4>
+            <p class="para-desc mx-auto text-muted mb-0">基於 NocoBase 無代碼平臺構建的 CRM 2.0 系統，工作流自動化 + AI 輔助</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- 核心模塊 -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-user-plus rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">線索智能評分</h5>
+              <p class="text-muted mt-2">自動評估線索質量，優先分配高價值線索，推薦最佳聯繫時間</p>
+              <i class="uil uil-user-plus full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-chart-line rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">商機贏率預測</h5>
+              <p class="text-muted mt-2">基於歷史數據預測成交概率，識別風險商機，提供階段推進建議</p>
+              <i class="uil uil-chart-line full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-heart-medical rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">客戶健康監控</h5>
+              <p class="text-muted mt-2">360 度客戶畫像，健康度評分，流失風險預警，主動維護關係</p>
+              <i class="uil uil-heart-medical full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">模塊可拆解</h5>
+              <p class="text-muted mt-2">各模塊獨立設計，最小配置僅需客戶+商機，按需裁剪成不同規模方案</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Solution Overview End -->
+
+  <!-- Sales Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-success rounded-pill mb-3">核心設計</span>
+            <h4 class="title mb-4">完整銷售閉環流程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">從線索獲取到客戶成功，全鏈路數據貫通，AI 輔助每個環節</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <!-- 流程圖 -->
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="text-center p-3 rounded" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 100px;">
+                  <i class="uil uil-user-plus text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">線索</div>
+                  <div class="small text-muted">AI 評分</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 100px;">
+                  <i class="uil uil-building text-warning h3 mb-2"></i>
+                  <div class="small fw-medium">客戶</div>
+                  <div class="small text-muted">360 畫像</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 100px;">
+                  <i class="uil uil-chart-pie-alt text-danger h3 mb-2"></i>
+                  <div class="small fw-medium">商機</div>
+                  <div class="small text-muted">贏率預測</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: #e8f5e9; border: 2px solid #4caf50; min-width: 100px;">
+                  <i class="uil uil-file-alt text-success h3 mb-2"></i>
+                  <div class="small fw-medium">報價</div>
+                  <div class="small text-muted">多幣種</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 100px;">
+                  <i class="uil uil-shopping-cart h3 mb-2"></i>
+                  <div class="small fw-medium">訂單</div>
+                  <div class="small opacity-75">回款跟蹤</div>
+                </div>
+              </div>
+
+              <!-- 階段說明 -->
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">階段轉化</th>
+                      <th class="border-0 py-3">觸發條件</th>
+                      <th class="border-0 py-3">AI 輔助</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">線索 → 客戶</td>
+                      <td class="py-3 text-muted">確認為有效商機</td>
+                      <td class="py-3 text-primary">AI 評分達標自動提醒轉化</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">客戶 → 商機</td>
+                      <td class="py-3 text-muted">識別到明確需求</td>
+                      <td class="py-3 text-primary">AI 分析客戶意向，推薦創建商機</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">商機 → 報價</td>
+                      <td class="py-3 text-muted">進入方案報價階段</td>
+                      <td class="py-3 text-primary">AI 智能定價、競品對比、階梯報價建議</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">報價 → 訂單</td>
+                      <td class="py-3 text-muted">客戶接受報價</td>
+                      <td class="py-3 text-primary">自動生成訂單，帶入產品明細和價格</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Sales Pipeline End -->
+
+  <!-- AI Employee Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-primary rounded-pill mb-3">AI 輔助</span>
+            <h4 class="title mb-4">AI 輔助能力</h4>
+            <p class="para-desc mx-auto text-muted mb-0">通過工作流 AI 節點，輔助完成評分、分析、寫作等重複性工作</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <!-- Scout -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="scout" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Scout <span class="badge bg-soft-secondary small">工作流節點</span></h5>
+              <span class="badge bg-soft-primary mb-2">銷售偵察</span>
+              <p class="text-muted mt-2 small">商機深度分析、贏率預測、競爭情報分析、交易策略建議</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Viz -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="viz" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Viz</h5>
+              <span class="badge bg-soft-primary mb-2">洞察分析師</span>
+              <p class="text-muted mt-2 small">線索智能評分、客戶健康評估、銷售數據分析、管道預測</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Ellis -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="ellis" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Ellis</h5>
+              <span class="badge bg-soft-primary mb-2">編輯助手</span>
+              <p class="text-muted mt-2 small">郵件情感/意圖分析、回覆草擬、溝通記錄摘要</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Dex -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="dex" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Dex</h5>
+              <span class="badge bg-soft-primary mb-2">日程規劃</span>
+              <p class="text-muted mt-2 small">每日優先事項、下一步行動建議、跟進計劃制定</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- Lexi -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="lexi" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Lexi</h5>
+              <span class="badge bg-soft-primary mb-2">翻譯官</span>
+              <p class="text-muted mt-2 small">多語言客戶溝通、內容翻譯、外貿郵件處理</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- 更多員工 -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100" style="opacity: 0.7;">
+            <div class="text-start">
+              <div class="ai-avatar-placeholder" style="width: 56px; height: 56px; background: #e9ecef; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="uil uil-plus text-muted h4 mb-0"></i>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-muted">更多 AI 員工</h5>
+              <span class="badge bg-soft-secondary mb-2">持續擴展</span>
+              <p class="text-muted mt-2 small">根據業務需求，可擴展更多專業 AI 員工</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- AI Employee End -->
+
+  <!-- Module Design Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-warning rounded-pill mb-3">靈活架構</span>
+            <h4 class="title mb-4">模塊可拆解設計</h4>
+            <p class="para-desc mx-auto text-muted mb-0">各模塊獨立設計，可單獨開關，企業可按需裁剪成不同規模的方案</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">模塊</th>
+                  <th class="border-0 py-3">必需</th>
+                  <th class="border-0 py-3">說明</th>
+                  <th class="border-0 py-3">AI 能力</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 fw-medium">客戶管理</td>
+                  <td class="py-3"><span class="badge bg-success">必需</span></td>
+                  <td class="py-3 text-muted">客戶檔案、聯繫人、客戶層級、決策鏈</td>
+                  <td class="py-3 text-primary">健康評分、流失預警</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">商機管理</td>
+                  <td class="py-3"><span class="badge bg-success">必需</span></td>
+                  <td class="py-3 text-muted">銷售漏斗、階段推進、活動記錄</td>
+                  <td class="py-3 text-primary">贏率預測、風險識別</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">線索管理</td>
+                  <td class="py-3"><span class="badge bg-secondary">可選</span></td>
+                  <td class="py-3 text-muted">線索錄入、狀態流轉、轉化跟蹤</td>
+                  <td class="py-3 text-primary">智能評分、最佳聯繫時間</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">報價管理</td>
+                  <td class="py-3"><span class="badge bg-secondary">可選</span></td>
+                  <td class="py-3 text-muted">多幣種、階梯定價、版本管理、審批流程</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">訂單管理</td>
+                  <td class="py-3"><span class="badge bg-secondary">可選</span></td>
+                  <td class="py-3 text-muted">訂單生成、回款跟蹤</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">產品管理</td>
+                  <td class="py-3"><span class="badge bg-secondary">可選</span></td>
+                  <td class="py-3 text-muted">產品目錄、分類、階梯價格</td>
+                  <td class="py-3 text-muted">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">郵件集成</td>
+                  <td class="py-3"><span class="badge bg-secondary">可選</span></td>
+                  <td class="py-3 text-muted">郵件收發、CRM 關聯</td>
+                  <td class="py-3 text-primary">摘要生成、情感分析</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 方案裁剪示例 -->
+          <div class="row mt-4">
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-primary mb-2">完整版</span>
+                  <p class="small text-muted mb-0">全部 7 個模塊<br/>流程完整的 B2B 銷售團隊</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-primary text-primary mb-2">標準版</span>
+                  <p class="small text-muted mb-0">客戶+商機+報價+訂單<br/>中小企業銷售管理</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-success text-success mb-2">輕量版</span>
+                  <p class="small text-muted mb-0">客戶+商機<br/>簡單的客戶和商機跟蹤</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-3 text-center">
+                  <span class="badge bg-soft-warning text-warning mb-2">外貿版</span>
+                  <p class="small text-muted mb-0">客戶+商機+報價+郵件<br/>外貿型企業</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Module Design End -->
+
+  <!-- Value Proposition Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">自動化帶來的價值</h4>
+            <p class="para-desc mx-auto text-muted mb-0">工作流自動化 + AI 輔助，減少重複工作，讓銷售專注於客戶關係</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">50%+</div>
+              <h5 class="mb-2">線索篩選效率提升</h5>
+              <p class="text-muted small mb-0">AI 自動評分減少人工篩選時間</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">30%</div>
+              <h5 class="mb-2">商機跟進效率提升</h5>
+              <p class="text-muted small mb-0">贏率預測幫助聚焦高價值商機</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">20%</div>
+              <h5 class="mb-2">客戶流失率降低</h5>
+              <p class="text-muted small mb-0">健康評估提前識別流失風險</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">10%+</div>
+              <h5 class="mb-2">銷售轉化率提升</h5>
+              <p class="text-muted small mb-0">AI 策略建議加速成交</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Value Proposition End -->
+
+  <!-- Comparison Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">為什麼選擇我們？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">與傳統 SaaS CRM 和自研系統的對比</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">對比維度</th>
+                  <th class="border-0 py-3">SaaS CRM</th>
+                  <th class="border-0 py-3">自研系統</th>
+                  <th class="border-0 py-3 text-primary">NocoBase 方案</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 fw-medium">上線速度</td>
+                  <td class="py-3 text-muted">開箱即用</td>
+                  <td class="py-3 text-muted">數月開發</td>
+                  <td class="py-3 text-primary">配置即用，快速上線</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">定製能力</td>
+                  <td class="py-3 text-muted">受限</td>
+                  <td class="py-3 text-muted">完全可控</td>
+                  <td class="py-3 text-primary">無代碼靈活定製</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">數據安全</td>
+                  <td class="py-3 text-muted">雲端託管</td>
+                  <td class="py-3 text-muted">私有部署</td>
+                  <td class="py-3 text-primary">私有部署，數據完全掌控</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">AI 輔助</td>
+                  <td class="py-3 text-muted">有限/加價</td>
+                  <td class="py-3 text-muted">需自行開發</td>
+                  <td class="py-3 text-primary">工作流 AI 節點，按需使用</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">模塊靈活性</td>
+                  <td class="py-3 text-muted">功能捆綁</td>
+                  <td class="py-3 text-muted">需代碼修改</td>
+                  <td class="py-3 text-primary">模塊可拆解，按需裁剪</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">總體成本</td>
+                  <td class="py-3 text-muted">按人頭訂閱</td>
+                  <td class="py-3 text-muted">開發成本高</td>
+                  <td class="py-3 text-primary">一次購買，長期使用</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Comparison End -->
+
+  <!-- How to Use Start -->
+  <section class="section bg-light" id="how-to-use">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">如何使用？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">三個步驟快速部署 CRM 2.0 系統到你的環境</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>安裝 NocoBase</h5>
+                <p class="text-muted mt-2">按照我們的安裝文檔，部署 NocoBase 到你的服務器</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/get-started/quickstart" target="_blank" class="btn btn-primary">查看安裝文檔</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-book-open h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>瞭解方案</h5>
+                <p class="text-muted mt-2">閱讀方案介紹文檔，瞭解系統功能、架構設計和使用場景</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/solution/crm/" target="_blank" class="btn btn-outline-primary">方案介紹</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>還原到系統</h5>
+                <p class="text-muted mt-2">按照還原教程，將 CRM 2.0 系統部署到你的 NocoBase 環境</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/cn/solution/crm/installation" target="_blank" class="btn btn-outline-primary">還原教程</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- CTA Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3 class="title mb-4">開始使用 CRM 2.0</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            基於 NocoBase 2.x 構建的模塊化 CRM 系統。如果您有定製需求或想了解更多細節，歡迎聯繫我們。
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
+            </a>
+            <a href="/tw/contact" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-envelope me-1"></i>聯繫我們
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
+
+  <ShapeFooter />
+</BaseTW>
+
+<style>
+/* CRM 2.0 頁面樣式 */
+code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.text-purple {
+  color: #9c27b0 !important;
+}
+
+/* AI 員工頭像樣式 */
+.ai-avatar-lg img {
+  width: 56px;
+  height: 56px;
+}
+
+.ai-avatar-sm img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+</style>
