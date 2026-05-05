@@ -1,14 +1,14 @@
 {
   "id": 1019,
-  "title": "NocoBase v2.0.48",
-  "title_cn": "NocoBase v2.0.48",
-  "title_ja": null,
+  "title": "NocoBase v2.0.48: Bug Fixes",
+  "title_cn": "NocoBase v2.0.48：缺陷修复",
+  "title_ja": "NocoBase v2.0.48：不具合修正",
   "description": "Release Note of v2.0.48",
   "description_cn": "v2.0.48 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.48  リリースノート",
   "slug": "v2.0.48",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-04T03:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-05T16:11:07.465Z",
+        "updatedAt": "2026-05-05T16:11:07.465Z",
+        "articles_id": 1019,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-05T16:11:04.893Z",
+    "updatedAt": "2026-05-05T16:11:04.903Z",
+    "id": 2370,
+    "title": "main (16)",
+    "filename": "main (16)-52lrup.png",
+    "extname": ".png",
+    "size": 87563,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(16)-52lrup.png",
+    "preview": "https://static-docs.nocobase.com/main%20(16)-52lrup.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-04T04:38:47.242Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-05T16:11:07.418Z"
 }
