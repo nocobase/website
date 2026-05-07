@@ -62,7 +62,7 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 ### Budibase
 
-![Budibase1.png](https://static-docs.nocobase.com/Budibase1-k89657.png)
+![image-sazj02.png](https://static-docs.nocobase.com/image-sazj02.png)
 
 擅长处理表单、审批、请求和流程驱动型应用，它的产品重心明显更靠近内部流程自动化这一侧，所以比较适合服务申请、工单流转、审批处理、数据收集这类流程先行的场景。
 
@@ -188,7 +188,6 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 **Budibase** 更适合表单、审批、请求处理和流程型应用这类场景，优势在于围绕数据和流程把内部应用更快组织起来；如果你的技术门槛要求不高，同时更关注审批、工单和运营流程这类应用，Budibase 会更自然。其官网也把内部工具、工作流和业务流程自动化放在核心位置。
 
 **ToolJet** 可以把数据库、API 和第三方系统接成统一的工具层界面，优势在于多数据源连接下的企业内部工具构建；如果你的需求更偏多系统整合、运营后台或工具型应用，ToolJet 会是一个更直接的选择。其官网将自己定位为可快速构建企业级应用的平台。
-
 
 ## FAQ（常见问题）
 
