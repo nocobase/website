@@ -62,7 +62,7 @@ Data source documentation: [https://docs.appsmith.com/connect-data/overview](htt
 
 ### **Budibase**
 
-![Budibase1.png](https://static-docs.nocobase.com/Budibase1-k89657.png)
+![image-sazj02.png](https://static-docs.nocobase.com/image-sazj02.png)
 
 Best known for form based, approval based, request based, and workflow driven applications. Its product focus is clearly closer to internal process automation, so it is especially suitable for service requests, ticket routing, approval handling, and data collection.
 
@@ -218,7 +218,6 @@ The key is whether the platform’s data layer and page layer are tightly bound 
 If your team already has front end or JavaScript capability and wants developers to stay in control of pages, queries, and interaction logic, then platforms like **Appsmith** and **Retool** are a better fit. These products are usually more suitable for developer led internal tools, operations consoles, and custom pages built on top of existing databases and APIs.
 
 **You can use the official websites, documentation, and data source links collected in this article to further review how each platform supports your current data sources. Once you confirm that your data sources can be connected smoothly, you can then choose the platform that best fits your business workflows, page requirements, and future expansion plans.**
-
 
 **Related reading:**
 
