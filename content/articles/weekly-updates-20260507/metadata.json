@@ -3,9 +3,9 @@
   "title": "Weekly Updates｜Add some APIs for nocobase cli",
   "title_cn": "本周更新｜新增 Nocobase CLI 专用 APIs",
   "title_ja": "今週の更新｜NocoBase CLI 専用 API を追加",
-  "description": "This is a summary of NocoBase feature updates and improvements from April 16 to April 23, 2026.",
-  "description_cn": "汇总了 2026.04.16-04.23 期间 NocoBase 的功能更新与改进。",
-  "description_ja": "2026.04.16-04.23 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
+  "description": "This is a summary of NocoBase feature updates and improvements from April 30 to May 7, 2026.\n",
+  "description_cn": "汇总了 2026.04.30-05.07 期间 NocoBase 的功能更新与改进。\n",
+  "description_ja": "2026.04.30-05.07 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260507",
   "publishedAt": "2026-05-07T02:55:00.610Z",
   "status": "published",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-07T03:56:12.170Z"
+  "updatedAt": "2026-05-07T04:35:07.373Z"
 }
