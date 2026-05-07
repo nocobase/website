@@ -88,8 +88,8 @@
 - **[cli]** 增加发布相关命令 ([#9308](https://github.com/nocobase/nocobase/pull/9308)) by @Andrew1989Y
 - **[undefined]** 新增印尼语和越南语文档。 ([#9303](https://github.com/nocobase/nocobase/pull/9303)) by @Molunerfinn
 - **[AI 员工]** LLM 接入服务新增对 Xiaomi MIMO 平台的支持 ([#9315](https://github.com/nocobase/nocobase/pull/9315)) by @cgyrock
-- **[迁移管理]** 新增 Nocobase CLI 专用 APIs by @Andrew1989Y
-- **[备份管理器]** 新增 Nocobase CLI 专用 Apis by @Andrew1989Y
+- **[迁移管理]** 新增 NocoBase CLI 专用 APIs by @Andrew1989Y
+- **[备份管理器]** 新增 NocoBase CLI 专用 Apis by @Andrew1989Y
 
 ### 🚀 优化
 
@@ -128,7 +128,7 @@
 - **[database]** 修复 SQL Server 外部数据源日期时间字段筛选可能失败的问题 ([#9272](https://github.com/nocobase/nocobase/pull/9272)) by @2013xile
 - **[AI 员工]**
 
-  - 修复 AI 员工使用 deepseek v4 模型偶现报错问题 ([#9348](https://github.com/nocobase/nocobase/pull/9348)) by @cgyrock
+  - 修复 AI 员工使用 Deepseek v4 模型偶现报错问题 ([#9348](https://github.com/nocobase/nocobase/pull/9348)) by @cgyrock
   - 修复工作流 AI 员工节点切换 AI 员工后会清空技能的问题 ([#9342](https://github.com/nocobase/nocobase/pull/9342)) by @cgyrock
   - 修复操作按钮 AI 员工列表显示了开发员工问题 ([#9320](https://github.com/nocobase/nocobase/pull/9320)) by @cgyrock
 - **[数据源：主数据库]** 防止在集合加载期间 fields 未定义时发生崩溃 ([#9174](https://github.com/nocobase/nocobase/pull/9174)) by @saraTabbane
@@ -167,7 +167,7 @@
 - **[cli]** 修复 CLI 布尔选项无法通过否定参数关闭的问题 ([#9337](https://github.com/nocobase/nocobase/pull/9337)) by @2013xile
 - **[AI 员工]**
 
-  - 修复 AI 员工使用 deepseek v4 模型偶现报错问题 ([#9348](https://github.com/nocobase/nocobase/pull/9348)) by @cgyrock
+  - 修复 AI 员工使用 Deepseek v4 模型偶现报错问题 ([#9348](https://github.com/nocobase/nocobase/pull/9348)) by @cgyrock
   - 修复工作流 AI 员工节点切换 AI 员工后会清空技能的问题 ([#9342](https://github.com/nocobase/nocobase/pull/9342)) by @cgyrock
 - **[数据源：主数据库]** 防止在集合加载期间 fields 未定义时发生崩溃 ([#9174](https://github.com/nocobase/nocobase/pull/9174)) by @saraTabbane
 - **[UI 模板]** 修复弹窗模板列表没有正确加载可用模板的问题。 ([#9332](https://github.com/nocobase/nocobase/pull/9332)) by @gchust
@@ -201,8 +201,8 @@
 - **[undefined]** 新增印尼语和越南语文档。 ([#9303](https://github.com/nocobase/nocobase/pull/9303)) by @Molunerfinn
 - **[server]** AI 员工可以通过 Bash 命令检索内置文档 ([#9269](https://github.com/nocobase/nocobase/pull/9269)) by @2013xile
 - **[AI 员工]** LLM 接入服务新增对 Xiaomi MIMO 平台的支持 ([#9315](https://github.com/nocobase/nocobase/pull/9315)) by @cgyrock
-- **[迁移管理]** 新增 Nocobase CLI 专用 APIs by @Andrew1989Y
-- **[备份管理器]** 新增 Nocobase CLI 专用 Apis by @Andrew1989Y
+- **[迁移管理]** 新增 NocoBase CLI 专用 APIs by @Andrew1989Y
+- **[备份管理器]** 新增 NocoBase CLI 专用 Apis by @Andrew1989Y
 
 ### 🚀 优化
 
@@ -240,7 +240,7 @@
 - **[AI 员工]**
 
   - 修复操作按钮 AI 员工列表显示了开发员工问题 ([#9320](https://github.com/nocobase/nocobase/pull/9320)) by @cgyrock
-  - 修复 AI 员工接入 deepseek v4 报错问题 ([#9275](https://github.com/nocobase/nocobase/pull/9275)) by @cgyrock
+  - 修复 AI 员工接入 Deepseek v4 报错问题 ([#9275](https://github.com/nocobase/nocobase/pull/9275)) by @cgyrock
 - **[区块：甘特图]** 新增甘特图区块“启用拖动重新排期”配置。 ([#9301](https://github.com/nocobase/nocobase/pull/9301)) by @jiannx
 - **[区块：树]** 修复筛选区块节点显示异常 ([#9260](https://github.com/nocobase/nocobase/pull/9260)) by @jiannx
 - **[操作：导入记录]** 修复导入出错时时失败行索引错误的问题 ([#9277](https://github.com/nocobase/nocobase/pull/9277)) by @mytharcher
