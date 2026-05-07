@@ -1,7 +1,7 @@
 {
   "id": 1022,
-  "title": "NocoBase v2.1.0-beta.25: Add some APIs for nocobase cli",
-  "title_cn": "NocoBase v2.1.0-beta.25：新增 Nocobase CLI 专用 APIs",
+  "title": "NocoBase v2.1.0-beta.25: Add some APIs for NocoBase cli",
+  "title_cn": "NocoBase v2.1.0-beta.25：新增 NocoBase CLI 专用 APIs",
   "title_ja": "NocoBase v2.1.0-beta.25：NocoBase CLI 専用 API を追加",
   "description": "Release Note of v2.1.0-beta.25",
   "description_cn": "v2.1.0-beta.25 更新日志",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-07T02:33:04.089Z"
+  "updatedAt": "2026-05-07T05:52:23.911Z"
 }
