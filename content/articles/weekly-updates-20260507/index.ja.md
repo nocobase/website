@@ -188,8 +188,8 @@
 * **[undefined]** インドネシア語とベトナム語のドキュメントを追加。 ([#9303](https://github.com/nocobase/nocobase/pull/9303)) by @Molunerfinn
 * **[server]** AI 社員が Bash コマンドで組み込みドキュメントを検索可能に ([#9269](https://github.com/nocobase/nocobase/pull/9269)) by @2013xile
 * **[AI 社員]** LLM 接続サービスが Xiaomi MIMO プラットフォームのサポートを追加 ([#9315](https://github.com/nocobase/nocobase/pull/9315)) by @cgyrock
-* **[マイグレーション管理]** Nocobase CLI 専用 APIs を追加 by @Andrew1989Y
-* **[バックアップマネージャー]** Nocobase CLI 専用 APIs を追加 by @Andrew1989Y
+* **[マイグレーション管理]** NocoBase CLI 専用 APIs を追加 by @Andrew1989Y
+* **[バックアップマネージャー]** NocoBase CLI 専用 APIs を追加 by @Andrew1989Y
 
 ### 🚀 機能改善
 
