@@ -62,7 +62,7 @@ GitHub：[https://github.com/appsmithorg/appsmith](https://github.com/appsmithor
 
 ### **Budibase**
 
-![Budibase1.png](https://static-docs.nocobase.com/Budibase1-k89657.png)
+![image-sazj02.png](https://static-docs.nocobase.com/image-sazj02.png)
 
 フォーム、承認、申請、フロー主導のアプリに強みを持つプラットフォームです。製品の重心が内部業務プロセスの自動化にあるため、サービス申請、チケット処理、承認フロー、データ収集といった、まず業務フローありきのシーンに適しています。
 
@@ -218,7 +218,6 @@ GitHub：[https://github.com/ToolJet/ToolJet](https://github.com/ToolJet/ToolJet
 チームにフロントエンドや JavaScript の知見があり、開発者がページ、クエリ、操作ロジックを主導したいのであれば、**Appsmith** や **Retool** のようなプラットフォームがより適しています。こうした製品は、既存のデータベースや API を活用しながら、開発者主導で内部ツール、運用コンソール、カスタムページを構築するのに向いています。
 
 **この記事で整理した公式サイト、ドキュメント、データソース関連のリンクを参考にしながら、各プラットフォームが現在のデータソースにどのように対応しているかを確認できます。そのうえで、自社の業務フロー、ページ要件、今後の拡張計画に合わせて、最適なプラットフォームを選ぶとよいでしょう。**
-
 
 **関連読み物：**
 
