@@ -1,14 +1,14 @@
 {
   "id": 1030,
-  "title": "NocoBase v2.0.51",
-  "title_cn": "NocoBase v2.0.51",
-  "title_ja": null,
+  "title": "NocoBase v2.0.51: Fix required validation behavior for approval forms",
+  "title_cn": "NocoBase v2.0.51：修复审批表单必填校验的交互问题",
+  "title_ja": "NocoBase v2.0.51：承認フォームの必須バリデーションに関する操作性の問題を修正",
   "description": "Release Note of v2.0.51",
   "description_cn": "v2.0.51 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.51 リリースノート",
   "slug": "v2.0.51",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-10T07:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-10T16:35:10.785Z",
+        "updatedAt": "2026-05-10T16:35:10.785Z",
+        "articles_id": 1030,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-10T16:30:54.209Z",
+    "updatedAt": "2026-05-10T16:30:54.215Z",
+    "id": 2382,
+    "title": "main (19)",
+    "filename": "main (19)-9oo0cf.png",
+    "extname": ".png",
+    "size": 86450,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(19)-9oo0cf.png",
+    "preview": "https://static-docs.nocobase.com/main%20(19)-9oo0cf.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-05-10T07:00:15.085Z"
+  "updatedAt": "2026-05-10T16:35:10.767Z"
 }
