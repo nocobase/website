@@ -1,0 +1,77 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import HelpCenterCard from '../../components/HelpCenterCard.astro';
+import Layout from "../../layouts/Layout.astro";
+import { listHelpCenterItems } from "../../utils";
+const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
+
+
+---
+
+<Layout
+        title="NocoBase Help Center"
+        description="NocoBase Official Help Center"
+        keywords="NocoBase, help, documentation"
+>
+    <PageHeader
+            title="NocoBase Help Center"
+            description="All help and documentation about NocoBase"
+    />
+
+    <section class="section">
+        <div class="container">
+            {helpCenterData.data.map(group => (
+                    <div class="mb-5">
+                        <h4 class="title mb-4 d-flex align-items-center">
+                            <i class=`${group.icon_text || "fas fa-book"} me-2`></i>
+                            {group.title}
+                        </h4>
+                        <hr class="mb-4"/>
+
+                        <div class="row g-4">
+                            {group.children.map(card => {
+                                // Dynamically set card column width
+                                let colClasses = "col-12"; // Default width
+
+                                switch (card.size) {
+                                    case "wide":
+                                        colClasses = "col-12";
+                                        break;
+                                    case "medium":
+                                        colClasses = "col-md-6";
+                                        break;
+                                    case "narrow":
+                                    default:
+                                        colClasses = "col-md-4 col-lg-3";
+                                        break;
+                                }
+
+                                // Set maximum number of articles based on card size
+                                let maxArticles = 5;
+                                if (card.size === "wide") {
+                                    maxArticles = 8;
+                                } else if (card.size === "medium") {
+                                    maxArticles = 6;
+                                }
+
+                                return (
+                                        <div class={colClasses}>
+                                            <HelpCenterCard
+                                                    title={card.title}
+                                                    size={card.size}
+                                                    articles={card.children}
+                                                    maxArticles={maxArticles}
+                                                    icon={card.icon_text || "uil uil-edit-alt"}
+                                                    viewMoreLink={card.url}
+                                                    language="en"
+                                                    source=card.source
+                                            />
+                                        </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+            ))}
+        </div>
+    </section>
+</Layout>
