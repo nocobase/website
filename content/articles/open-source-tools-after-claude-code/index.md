@@ -30,8 +30,6 @@ This is also a common challenge many people face when using AI coding and agent 
 
 ---
 
-
-
 ## Claude Code and Open-Source Tools
 
 AI does not work well with black boxes. This is where the advantages of open-source tools become very clear.
@@ -104,13 +102,13 @@ Copy the following prompt to Claude Code, and it can automatically complete the 
 
 You can copy these resources and send them to Claude Code for direct use.
 
-Documentation: [https://docs.nocobase.com/cn/ai/](https://docs.nocobase.com/cn/ai/)
+Documentation: [https://docs.nocobase.com/ai/](https://docs.nocobase.com/ai/)
 
-CLI: [https://docs.nocobase.com/cn/api/cli/](https://docs.nocobase.com/cn/api/cli/)
+CLI: [https://docs.nocobase.com/api/cli/](https://docs.nocobase.com/api/cli/)
 
-Skills: [https://docs.nocobase.com/cn/ai-builder#nocobase-skills](https://docs.nocobase.com/cn/ai-builder#nocobase-skills)
+Skills: [https://docs.nocobase.com/ai-builder#nocobase-skills](https://docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/cn/ai/mcp/](https://docs.nocobase.com/cn/ai/mcp/)
+MCP: [https://docs.nocobase.com/ai/mcp/](https://docs.nocobase.com/ai/mcp/)
 
 ## 2.  n8n
 
@@ -401,8 +399,6 @@ Claude Code has given many people the ability to write code for the first time.
 But there is still a long distance between a runnable demo and a real system that can be used over the long term. The real challenge is whether the system structure is clear, the data is maintainable, the permissions are controllable, and AI can work within clear boundaries.
 
 That is why I prefer using Claude Code together with these open-source tools. A good open-source stack makes AI output more controllable and also makes it easier for humans to take over, validate, and maintain the system over time.
-
-
 
 **Related reading**
 
