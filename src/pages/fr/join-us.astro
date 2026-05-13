@@ -1,0 +1,65 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPage, processor } from "../../utils";
+
+const page = await getPage("join-us", "en");
+
+const title = page.title;
+const description = page.description;
+const keywords = page.keywords;
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description}>
+  </PageHeader>
+
+  <!-- Start Join -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card shadow border-0 rounded">
+            <div class="card-body">
+              <h5 class="title fw-bold mb-1">Head of Partner Ecosystem</h5>
+              <p></p>
+              <p>As more and more companies and developers from around the world reach out to collaborate with us — on local marketing, distribution, and service initiatives, we’ve decided to start building a global Partner Ecosystem.We’re looking for a new team member who’s genuinely interested in NocoBase and passionate about this kind of work.</p>
+              <p>Role & Responsibilities:</p>
+              <ul>
+                <li>Build and manage NocoBase’s global partner ecosystem — including frameworks, processes, and documentation.</li>
+                <li>Engage with potential partners and users worldwide, and drive the growth of the partner network.</li> 
+              </ul>
+              <p>Basic Requirements:</p> 
+              <ul>
+                <li>Background in internet or software development; familiar with both frontend and backend technologies.</li>
+                <li>Strong communication and writing skills.</li>
+                <li>Able to communicate fluently in both Chinese and English.</li>
+                <li>Proficient in using various AI tools and products.</li>
+              </ul>
+              <p>Preferred Qualifications:</p>
+              <ul>
+                <li>Experience developing or using no-code / low-code products.</li>
+                <li>Experience in community building or management.</li>
+                <li>Personal technical or creative projects.</li>
+                <li>Knowledge of additional languages such as Japanese or Spanish.</li>
+              </ul>
+              <p>Location:</p>
+              <ul>
+                <li>Fully remote, no location restrictions.</li>
+              </ul>
+              <p>Contact us:</p>
+              <ul>
+                <li>hello@nocobase.com</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Join -->
+</Layout>
