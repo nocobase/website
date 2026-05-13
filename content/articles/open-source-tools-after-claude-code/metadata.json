@@ -8,7 +8,7 @@
   "description_ja": "Claude Code は開発効率を高め、オープンソースツールと組み合わせることで、安定して保守しやすい企業システムを構築しやすくします。",
   "slug": "open-source-tools-after-claude-code",
   "publishedAt": "2026-05-13T13:53:55.075Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -403,12 +403,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-13T15:39:24.940Z",
+    "updatedAt": "2026-05-13T15:39:24.950Z",
+    "id": 2388,
+    "title": "Group 35",
+    "filename": "Group 35-rmua1a.png",
+    "extname": ".png",
+    "size": 366763,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Group%2035-rmua1a.png",
+    "preview": "https://static-docs.nocobase.com/Group%2035-rmua1a.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Deng Lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-13T14:44:12.328Z"
+  "updatedAt": "2026-05-13T15:39:51.937Z"
 }
