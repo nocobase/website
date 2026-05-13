@@ -4918,5 +4918,25 @@
     "title_cn": "OpenClaw",
     "title_ja": "OpenClaw",
     "updatedById": 22
+  },
+  {
+    "createdAt": "2026-05-13T14:39:02.102Z",
+    "updatedAt": "2026-05-13T14:39:02.102Z",
+    "createdById": 22,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 252,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 250,
+    "title": "Claude",
+    "title_cn": "Claude",
+    "title_ja": "Claude",
+    "updatedById": 22
   }
 ]
