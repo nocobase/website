@@ -112,6 +112,8 @@ Skills: [https://docs.nocobase.com/cn/ai-builder#nocobase-skills](https://docs.n
 
 MCP: [https://docs.nocobase.com/cn/ai/mcp/](https://docs.nocobase.com/cn/ai/mcp/)
 
+Claude Code + NocoBase：[https://docs.nocobase.com/cn/ai/claude-code](https://docs.nocobase.com/cn/ai/claude-code)
+
 ## 2.  n8n
 
 **官网**：[https://n8n.io/](https://n8n.io/)
