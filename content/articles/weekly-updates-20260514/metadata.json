@@ -1,8 +1,8 @@
 {
   "id": 1039,
-  "title": "Weekly Updates｜AI employees can search bundled documentation with Bash commands",
-  "title_cn": "本周更新｜AI 员工可以通过 Bash 命令检索内置文档",
-  "title_ja": "今週の更新｜AI 従業員が Bash コマンドで内蔵ドキュメントを検索できるように",
+  "title": "Weekly Updates｜AI employee support parallel processing of multiple conversation",
+  "title_cn": "本周更新｜AI 员工支持多个会话并行处理",
+  "title_ja": "今週の更新｜AI 従業員が複数のセッションを並列処理できるように",
   "description": "This is a summary of NocoBase feature updates and improvements from May 7 to May 14, 2026.\n",
   "description_cn": "汇总了 2026.05.07-05.14 期间 NocoBase 的功能更新与改进。\n",
   "description_ja": "2026.05.07-05.14 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-05-14T03:18:05.723Z"
+  "updatedAt": "2026-05-14T04:02:06.682Z"
 }
