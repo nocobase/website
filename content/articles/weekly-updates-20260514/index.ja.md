@@ -82,7 +82,7 @@
 
 ### 🚀 機能改善
 
-* **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+* **[undefined]** pkg.nocobase.com のリリース処理で公開済みバージョ ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 * **[client]** フィールド値の割り当てで自動採番フィールドを使用可能に ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
 
 ### 🐛 不具合修正
@@ -252,7 +252,7 @@
 
 ### 🚀 機能改善
 
-* **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+* **[undefined]** pkg.nocobase.com のリリース処理で公開済みバージョ ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 
 ### 🐛 不具合修正
 
@@ -353,7 +353,7 @@
 ### 🚀 機能改善
 
 * **[client]** フィールド値の割り当てで自動採番フィールドを使用可能に ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
-* **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+* **[undefined]** pkg.nocobase.com のリリース処理で公開済みバージョ ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 * **[ブロック：カンバン]** v2 詳細フィールドの間隔を揃え、カンバンカードと列間隔がテーマ設定により適切に対応するよう改善。 ([#9390](https://github.com/nocobase/nocobase/pull/9390)) by @jiannx
 * **[ワークフロー：承認]** 承認フォームの必須バリデーションに関する操作性の問題を修正 by @zhangzhonghe
 
