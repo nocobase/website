@@ -12,7 +12,7 @@ The author of the post is a data engineer. He said that over the past few months
 
 ![Reddit.PNG](https://static-docs.nocobase.com/Reddit-2tnbbx.PNG)
 
-That led him to a new idea\*\*: if Claude Code works so well for data-related tasks, could it also be used to build a real product?\*\*
+That led him to a new idea if Claude Code works so well for data-related tasks, could it also be used to build a real product?
 
 Later, he and a PM prepared a complete product requirements document. They gave the requirements to Claude Code and asked it to implement the features, run tests, and deploy the product to Railway.
 
