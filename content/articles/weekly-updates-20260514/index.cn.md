@@ -87,7 +87,7 @@
 
 ### 🚀 优化
 
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** 跳过 pkg.nocobase.com 发布中的已发布版本 ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 - **[client]** 支持字段赋值中使用自动编码字段 ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
 
 ### 🐛 修复
@@ -265,7 +265,7 @@
 
 ### 🚀 优化
 
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** 跳过 pkg.nocobase.com 发布中的已发布版本 ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 
 ### 🐛 修复
 
@@ -372,7 +372,7 @@
 ### 🚀 优化
 
 - **[client]** 支持字段赋值中使用自动编码字段 ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** 跳过 pkg.nocobase.com 发布中的已发布版本 ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 - **[区块：看板]** 优化 v2 详情字段间距一致性，并使看板卡片和列间距更好地适配主题设置。 ([#9390](https://github.com/nocobase/nocobase/pull/9390)) by @jiannx
 - **[工作流：审批]** 修复审批表单必填校验的交互问题 by @zhangzhonghe
 
