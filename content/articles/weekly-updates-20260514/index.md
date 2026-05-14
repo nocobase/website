@@ -85,7 +85,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### 🚀 Improvements
 
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** skip already-published versions in pk ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 - **[client]** Allow to assign field value for sequence field ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
 
 ### 🐛 Bug Fixes
@@ -263,7 +263,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### 🚀 Improvements
 
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** skip already-published versions in pk ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 
 ### 🐛 Bug Fixes
 
@@ -368,7 +368,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 ### 🚀 Improvements
 
 - **[client]** Allow to assign field value for sequence field ([#9397](https://github.com/nocobase/nocobase/pull/9397)) by @mytharcher
-- **[undefined]** - ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
+- **[undefined]** skip already-published versions in pk ([#9374](https://github.com/nocobase/nocobase/pull/9374)) by @Molunerfinn
 - **[Block: Kanban]** Improved v2 detail field spacing consistency and made kanban card and column spacing better adapt to theme settings. ([#9390](https://github.com/nocobase/nocobase/pull/9390)) by @jiannx
 - **[Workflow: Approval]** Fix required validation behavior for approval forms by @zhangzhonghe
 
