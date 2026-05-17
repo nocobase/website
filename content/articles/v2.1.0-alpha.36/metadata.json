@@ -1,14 +1,14 @@
 {
   "id": 1043,
-  "title": "NocoBase v2.1.0-alpha.36",
-  "title_cn": "NocoBase v2.1.0-alpha.36",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-alpha.36: Added client v2 support for Markdown blocks",
+  "title_cn": "NocoBase v2.1.0-alpha.36：Markdown 区块支持 client v2",
+  "title_ja": "NocoBase v2.1.0-alpha.36：Markdown ブロックで client v2 をサポート",
   "description": "Release Note of v2.1.0-alpha.36",
   "description_cn": "v2.1.0-alpha.36 更新日志",
-  "description_ja": null,
+  "description_ja": " v2.1.0-alpha.36 リリースノート",
   "slug": "v2.1.0-alpha.36",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-14T09:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-17T13:46:24.413Z",
+        "updatedAt": "2026-05-17T13:46:24.413Z",
+        "articles_id": 1043,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-17T13:41:52.484Z",
+    "updatedAt": "2026-05-17T13:41:52.489Z",
+    "id": 2394,
+    "title": "develop (16)",
+    "filename": "develop (16)-znii48.jpg",
+    "extname": ".jpg",
+    "size": 81188,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(16)-znii48.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(16)-znii48.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-16T10:36:43.962Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-17T13:46:24.400Z"
 }
