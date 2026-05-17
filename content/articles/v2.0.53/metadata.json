@@ -1,14 +1,14 @@
 {
   "id": 1041,
-  "title": "NocoBase v2.0.53",
-  "title_cn": "NocoBase v2.0.53",
-  "title_ja": null,
+  "title": "NocoBase v2.0.53: Added an unsaved changes confirm message when closing the event flow configuration page with unsaved data present.",
+  "title_cn": "NocoBase v2.0.53：关闭事件流配置页面时如果存在未保存的数据则显示未保存的提示信息",
+  "title_ja": "NocoBase v2.0.53：]** イベントフロー設定ページを閉じる際に未保存データがある場合、確認メッセージを表示",
   "description": "Release Note of v2.0.53",
   "description_cn": "v2.0.53 更新日志",
-  "description_ja": null,
+  "description_ja": " v2.0.53 リリースノート",
   "slug": "v2.0.53",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-16T10:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-17T13:45:44.753Z",
+        "updatedAt": "2026-05-17T13:45:44.753Z",
+        "articles_id": 1041,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-17T13:42:01.987Z",
+    "updatedAt": "2026-05-17T13:42:01.998Z",
+    "id": 2396,
+    "title": "main (21)",
+    "filename": "main (21)-jc8uxf.png",
+    "extname": ".png",
+    "size": 87976,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(21)-jc8uxf.png",
+    "preview": "https://static-docs.nocobase.com/main%20(21)-jc8uxf.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-14T09:47:56.016Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-17T13:45:44.734Z"
 }
