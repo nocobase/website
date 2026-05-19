@@ -12,6 +12,14 @@ For real enterprise internal tools, you need a reliable technical foundation fir
 
 In this article, we will focus on enterprise internal tools and recommend several open source projects that work well with Codex, helping developers build internal systems and tools more efficiently.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 
 | Project     | Best for                                                                                  | Best suited for                                                                                 |
 | ----------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -263,7 +271,6 @@ A better development approach is:
 > Choose the right open source infrastructure first, then let Codex complete the specific implementation within a clear structure.
 
 Internal tools built this way are easier to maintain, extend, and put into real use.
-
 
 **Related reading**
 
