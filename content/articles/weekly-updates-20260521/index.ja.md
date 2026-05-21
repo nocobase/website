@@ -12,22 +12,50 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
-### [v2.0.52](https://www.nocobase.com/ja/blog/v2.0.52)
+### [v2.0.55](https://www.nocobase.com/ja/blog/v2.0.55)
 
-*リリース日：2026-05-13*
+*リリース日：2026-05-18*
+
+### [v2.0.53](https://www.nocobase.com/ja/blog/v2.0.53)
+
+*リリース日：2026-05-14*
 
 ## next
 
 ![next.png](https://static-docs.nocobase.com/8ed17a0f08cc585018f6de6c8b13947d.png)
 
-### [v2.1.0-beta.32](https://www.nocobase.com/ja/blog/v2.1.0-beta.32)
+### [v2.1.0-beta.35](https://www.nocobase.com/ja/blog/v2.1.0-beta.35)
 
-*リリース日：2026-05-13*
+*リリース日：2026-05-20*
+
+### [v2.1.0-beta.34](https://www.nocobase.com/ja/blog/v2.1.0-beta.34)
+
+*リリース日：2026-05-19*
+
+### [v2.1.0-beta.33](https://www.nocobase.com/ja/blog/v2.1.0-beta.33)
+
+*リリース日：2026-05-15*
 
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
 
-### [v2.1.0-alpha.34](https://www.nocobase.com/ja/blog/v2.1.0-alpha.34)
+### [v2.1.0-alpha.39](https://www.nocobase.com/ja/blog/v2.1.0-alpha.39)
 
-*リリース日：2026-05-12*
+*リリース日：2026-05-20*
+
+### [v2.1.0-alpha.38](https://www.nocobase.com/ja/blog/v2.1.0-alpha.38)
+
+*リリース日：2026-05-18*
+
+### [v2.1.0-alpha.37](https://www.nocobase.com/ja/blog/v2.1.0-alpha.37)
+
+*リリース日：2026-05-17*
+
+### [v2.1.0-alpha.36](https://www.nocobase.com/ja/blog/v2.1.0-alpha.36)
+
+*リリース日：2026-05-16*
+
+### [v2.1.0-alpha.35](https://www.nocobase.com/ja/blog/v2.1.0-alpha.35)
+
+*リリース日：2026-05-14*
