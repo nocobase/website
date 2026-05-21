@@ -1,14 +1,14 @@
 {
   "id": 1052,
-  "title": "Weekly Updates｜",
-  "title_cn": "本周更新｜",
-  "title_ja": "今週の更新｜",
+  "title": "Weekly Updates｜Added client-v2 support for the Kanban plugin",
+  "title_cn": "本周更新｜为看板插件增加 client-v2 支持",
+  "title_ja": "今週の更新｜カンバンプラグインに client-v2 サポートを追加しました",
   "description": "This is a summary of NocoBase feature updates and improvements from May 14 to May 21, 2026.",
   "description_cn": "汇总了 2026.05.14-05.21 期间 NocoBase 的功能更新与改进。\n",
   "description_ja": "2026.05.14-05.21 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260521",
   "publishedAt": "2026-05-21T02:34:59.783Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -110,10 +110,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-21T03:28:18.958Z"
+  "updatedAt": "2026-05-21T04:07:02.553Z"
 }
