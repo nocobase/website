@@ -1,0 +1,364 @@
+---
+import BaseJA from "../../../layouts/BaseJA.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+---
+
+<BaseJA
+  title="販売管理 — オープンソースの受注・売掛管理 | NocoBase"
+  description="NocoBase ノーコードプラットフォームをベースにしたオープンソースの販売管理。見積、受注、請求、入金までの一連の流れに対応し、承認ワークフロー、多通貨、売掛 KPI、滞留分析を標準装備しています。"
+  keywords="販売管理, 受注管理, 見積, 請求管理, 売掛管理, 入金管理, 販売プロセス, 販売承認, オープンソース 販売管理, 多通貨見積, NocoBase"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <div class="module-breadcrumb mb-2">
+              <a href="/ja/solutions/all-in-one" class="text-muted small text-decoration-none">一体型業務管理システム</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">販売管理モジュール</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">販売管理</h1>
+            <p class="para-desc text-muted">
+              NocoBase ノーコードプラットフォーム上に構築。<strong>見積 → 受注 → 請求 → 入金</strong> までの一連の流れを網羅し、販売承認ワークフロー、多通貨見積、売掛 KPI、滞留分析を標準搭載しています。
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">多通貨見積</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">受注承認フロー</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">売掛 KPI</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">オープンソース無料</span></div></div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">想定シーン:</span>
+                  <span class="badge bg-soft-primary me-2">B2B 営業</span>
+                  <span class="badge bg-soft-primary me-2">貿易の受注</span>
+                  <span class="badge bg-soft-primary me-2">機器販売</span>
+                  <span class="badge bg-soft-primary">売掛管理</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Demo を体験</a>
+              <a href="/ja/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>全体ソリューションを見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-sales-cover-260521.jpg" alt="販売管理システム画面" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">販売プロセス</h4>
+            <p class="para-desc mx-auto text-muted mb-0">見積から入金までの一連の流れと、承認・売掛 KPI を一気通貫で連携します。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">見積</div>
+                  <div class="small text-muted">多通貨</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-shopping-cart text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">受注</div>
+                  <div class="small text-muted">承認フロー</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-truck text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">出荷</div>
+                  <div class="small text-muted">物流追跡</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-receipt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">請求</div>
+                  <div class="small text-muted">情報自動入力</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-money-withdrawal h3 mb-2"></i>
+                  <div class="small fw-medium">入金</div>
+                  <div class="small opacity-75">売掛 KPI</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">ステージ</th>
+                      <th class="border-0 py-3">主な操作</th>
+                      <th class="border-0 py-3">システム記録</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">見積</td>
+                      <td class="py-3 text-muted">顧客 / 製品を選択し、多通貨対応の見積書を作成。値引き、税率、有効期限を設定可能</td>
+                      <td class="py-3 text-muted">見積書、製品明細、PDF 出力</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">受注</td>
+                      <td class="py-3 text-muted">見積から受注へ変換。値引き超過や高額受注は承認をトリガー</td>
+                      <td class="py-3 text-muted">受注、承認フロー、明細</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">出荷</td>
+                      <td class="py-3 text-muted">受注確定後に出荷伝票を作成し、配送番号と関連付け</td>
+                      <td class="py-3 text-muted">出荷伝票、配送番号、ステータス遷移</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">請求</td>
+                      <td class="py-3 text-muted">受注または出荷後に請求書を発行。顧客情報の税番号 / 住所を自動入力</td>
+                      <td class="py-3 text-muted">請求書、発行ステータス</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">入金</td>
+                      <td class="py-3 text-muted">分割入金を登録し、エイジングごとに売掛 KPI を集計</td>
+                      <td class="py-3 text-muted">入金記録、売掛残高、エイジング</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
+
+  <!-- Core Features Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">主な機能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">見積、受注、請求、入金の一気通貫と、承認・売掛分析を一通り提供します。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-file-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">見積書管理</h5>
+              <p class="text-muted mt-2">多通貨対応の見積書に対応し、値引き、税率、有効期限を設定可能。PDF 出力でそのまま顧客に送付でき、受注への変換もワンクリックです。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-shopping-cart rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">受注管理</h5>
+              <p class="text-muted mt-2">受注ステータス(下書き / 審査中 / 確定 / 出荷済 / 完了)で遷移管理。顧客と製品を関連付け、明細は行単位で編集可能です。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-process rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">受注承認ワークフロー</h5>
+              <p class="text-muted mt-2">値引き超過、高額受注、特殊条件など、承認のトリガーを部門 / 役職 / 金額閾値で柔軟に設定できます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-receipt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">請求管理</h5>
+              <p class="text-muted mt-2">受注から請求書を生成し、発行状況を追跡。顧客情報の税番号、住所、備考が自動入力され、手入力ミスを減らせます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-money-withdrawal rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">入金記録</h5>
+              <p class="text-muted mt-2">分割入金や部分入金に対応し、売掛残高を自動計算。顧客別・受注別に支払い状況を集計できます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-exclamation-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">売掛 KPI</h5>
+              <p class="text-muted mt-2">延滞債権一覧、エイジング分析(30 / 60 / 90 日のレンジ)を提供。顧客別・営業担当別に集計し、回収状況を可視化します。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-globe rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">多通貨と為替レート</h5>
+              <p class="text-muted mt-2">USD / EUR / CNY / JPY など多通貨での見積・受注に対応。為替レート表は手動更新やインポートに対応し、基準通貨換算も自動です。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-truck rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">出荷と物流</h5>
+              <p class="text-muted mt-2">出荷伝票を受注と配送番号に関連付け。複数回出荷や部分出荷にも対応し、ステータスは自動で受注へ反映されます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-line rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">販売ダッシュボード</h5>
+              <p class="text-muted mt-2">営業担当・地域・製品別に売上、受注数、回収率を集計。月次・四半期のトレンドも一目で把握できます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">ダウンロードとデプロイ</h4>
+            <p class="para-desc mx-auto text-muted mb-0">本モジュールは一体型業務管理システムのバックアップテンプレートに含まれ、まとめてデプロイされます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>バックアップテンプレートをダウンロード</h5>
+                <p class="text-muted mt-2">一体型ソリューションのバックアップで、復元すると本モジュールを含む 6 モジュールすべてのプリセットデータが利用できます。</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>.nbdata バックアップをダウンロード</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">または SQL ZIP をダウンロード</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>インストール手順を確認</h5>
+                <p class="text-muted mt-2">復元手順、よくある質問、注意事項の詳細は現在準備中です。</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>近日公開</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
+
+  <!-- CTA Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">利用を開始する</h3>
+          <p class="text-muted para-desc mx-auto mb-0">本モジュールは <a href="/ja/solutions/all-in-one">一体型業務管理システム</a> にも組み込まれており、単独でも、CRM・ヘルプデスク・プロジェクト管理・固定資産管理・HR と連携しても利用できます。</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Demo を体験</a>
+            <a href="/ja/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
+
+  <ShapeFooter />
+</BaseJA>
+
+<style>
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
+}
+
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
+}
+
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
+}
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+</style>

@@ -1,13 +1,12 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
+import BaseVI from "../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
-import AIAvatar from "../../../components/AIAvatar.astro";
 ---
 
-<Layout
-  title="CRM 2.0 Sales Management System - NocoBase"
-  description="CRM 2.0 sales management system built on NocoBase no-code platform. Modular design with complete sales cycle. Supports AI-assisted lead scoring, opportunity win-rate prediction, and more."
-  keywords="NocoBase CRM, AI CRM, sales management, opportunity management, customer relationship management, lead management, no-code CRM"
+<BaseVI
+  title="CRM Hệ thống quản lý khách hàng — Mã nguồn mở, tự triển khai | NocoBase"
+  description="Hệ thống CRM mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý lead, theo dõi khách hàng, chuyển đổi, gộp/khử trùng lặp, chế độ xem khách hàng 360. Dùng được ngay, hỗ trợ tự triển khai."
+  keywords="CRM, CRM mã nguồn mở, hệ thống quản lý khách hàng, quản lý quan hệ khách hàng, quản lý lead, theo dõi khách hàng, khách hàng 360, CRM no-code, CRM tự triển khai, NocoBase"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -15,792 +14,353 @@ import AIAvatar from "../../../components/AIAvatar.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">CRM 2.0<br/>Sales Management System</h1>
+            <div class="module-breadcrumb mb-2">
+              <a href="/vi/solutions/all-in-one" class="text-muted small text-decoration-none">Hệ thống quản lý kinh doanh tích hợp</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">mô-đun CRM</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">CRM<br/>Hệ thống quản lý khách hàng</h1>
             <p class="para-desc text-muted">
-              Built on NocoBase no-code platform. Modular design with complete sales cycle. Workflow automation handles routine tasks, AI assists with lead scoring, opportunity analysis, and more.
+              Được xây dựng trên nền tảng no-code NocoBase. Bao quát quy trình hoàn chỉnh từ lead, theo dõi, chuyển đổi đến gộp/khử trùng lặp; chế độ xem khách hàng 360 tổng hợp lịch sử đơn hàng, phiếu hỗ trợ, dự án, tài sản.
             </p>
 
-            <!-- Core Values -->
             <div class="row mt-4 g-3">
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">Smart Lead Scoring</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">Win-Rate Prediction</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">Customer Health Monitoring</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">Modular Design</span>
-                </div>
-              </div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Quản lý giai đoạn lead</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Chế độ xem khách hàng 360</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Gộp / Khử trùng lặp</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Mã nguồn mở miễn phí</span></div></div>
             </div>
 
-            <!-- Use Case Tags -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center flex-wrap">
-                  <span class="text-muted me-2">Use Cases:</span>
-                  <span class="badge bg-soft-primary me-2">B2B Sales</span>
-                  <span class="badge bg-soft-primary me-2">Project Sales</span>
-                  <span class="badge bg-soft-primary me-2">Foreign Trade</span>
-                  <span class="badge bg-soft-primary">All Industries</span>
+                  <span class="text-muted me-2">Tình huống áp dụng:</span>
+                  <span class="badge bg-soft-primary me-2">Bán hàng B2B</span>
+                  <span class="badge bg-soft-primary me-2">Bán hàng dự án</span>
+                  <span class="badge bg-soft-primary me-2">Ngoại thương</span>
+                  <span class="badge bg-soft-primary">Nhóm vừa và nhỏ</span>
                 </div>
               </div>
             </div>
 
-            <!-- Buttons -->
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Live Demo
-              </a>
-              <a href="#how-to-use" class="btn btn-outline-primary">
-                <i class="uil uil-download-alt me-1"></i>How to Use
-              </a>
-            </div>
-
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="text-center">
-            <div class="position-relative">
-              <img
-                src="https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg"
-                alt="CRM 2.0 System Interface"
-                class="img-fluid rounded shadow"
-              />
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+              <a href="/vi/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>Xem giải pháp đầy đủ</a>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div> <!--end container-->
-  </section><!--end section-->
-  <!-- Hero/Banner End -->
+        </div>
 
-  <!-- Pain Points Start -->
-  <section class="section" id="pain-points">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Are You Facing These Challenges?</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Sales teams face multiple challenges in daily operations</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-crm-cover-260521.jpg" alt="Giao diện CRM Hệ thống quản lý khách hàng" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-chart-down text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">Inconsistent Lead Quality</h5>
-              </div>
-              <p class="text-muted mb-0">Large volumes of leads with varying quality. Sales waste time on low-quality leads while high-value ones get overlooked.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">Delayed Opportunity Follow-up</h5>
-              </div>
-              <p class="text-muted mb-0">Opportunities stall without progress. Sales managers struggle to track team pipeline health, missing optimal closing windows.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">Scattered Customer Data</h5>
-              </div>
-              <p class="text-muted mb-0">Customer data scattered across emails, chats, and documents. No complete customer profile for targeted marketing.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-question-circle text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">Inaccurate Sales Forecasts</h5>
-              </div>
-              <p class="text-muted mb-0">Forecasting based on gut feeling without data support. Large prediction gaps affect resource allocation and decision-making.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">High SaaS Costs</h5>
-              </div>
-              <p class="text-muted mb-0">Salesforce, HubSpot and other SaaS CRMs charge per seat. Custom development takes long with unpredictable costs.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">Data Security Concerns</h5>
-              </div>
-              <p class="text-muted mb-0">Customer and opportunity data stored on third-party clouds, not meeting data localization and privacy compliance requirements.</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Pain Points End -->
-
-  <!-- Solution Overview Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Our Solution</h4>
-            <p class="para-desc mx-auto text-muted mb-0">CRM 2.0 system built on NocoBase no-code platform. Workflow automation + AI assistance</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- Core Modules -->
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-user-plus rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Smart Lead Scoring</h5>
-              <p class="text-muted mt-2">Auto-evaluate lead quality, prioritize high-value leads, recommend optimal contact times</p>
-              <i class="uil uil-user-plus full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-chart-line rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Win-Rate Prediction</h5>
-              <p class="text-muted mt-2">Predict close probability based on historical data, identify at-risk deals, provide stage progression suggestions</p>
-              <i class="uil uil-chart-line full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-heart-medical rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Customer Health Monitoring</h5>
-              <p class="text-muted mt-2">360-degree customer profile, health scoring, churn risk alerts, proactive relationship maintenance</p>
-              <i class="uil uil-heart-medical full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-cube rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Modular Design</h5>
-              <p class="text-muted mt-2">Independent module design, minimal setup requires only Customers + Opportunities, scale as needed</p>
-              <i class="uil uil-cube full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Solution Overview End -->
-
-  <!-- Sales Pipeline Start -->
+  <!-- Pipeline Start -->
   <section class="section" id="pipeline">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-success rounded-pill mb-3">Core Design</span>
-            <h4 class="title mb-4">Complete Sales Cycle</h4>
-            <p class="para-desc mx-auto text-muted mb-0">From lead acquisition to customer success, unified data flow with AI assistance at every stage</p>
+            <h4 class="title mb-4">Quy trình quản lý khách hàng</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Từ tiếp nhận lead đến chế độ xem khách hàng 360, dữ liệu xuyên suốt toàn chuỗi</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="card border-0 shadow">
             <div class="card-body p-4">
-              <!-- Flow Chart -->
               <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
-                <div class="text-center p-3 rounded" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 100px;">
-                  <i class="uil uil-user-plus text-primary h3 mb-2"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-bullseye text-primary h3 mb-2"></i>
                   <div class="small fw-medium">Lead</div>
-                  <div class="small text-muted">AI Scoring</div>
+                  <div class="small text-muted">Đa kênh</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 100px;">
-                  <i class="uil uil-building text-warning h3 mb-2"></i>
-                  <div class="small fw-medium">Customer</div>
-                  <div class="small text-muted">360 Profile</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-comment-alt-lines text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Liên hệ theo dõi</div>
+                  <div class="small text-muted">Ghi nhận lịch sử</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 100px;">
-                  <i class="uil uil-chart-pie-alt text-danger h3 mb-2"></i>
-                  <div class="small fw-medium">Opportunity</div>
-                  <div class="small text-muted">Win Prediction</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-user-check text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Chuyển đổi khách hàng</div>
+                  <div class="small text-muted">Tạo hồ sơ</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded" style="background: #e8f5e9; border: 2px solid #4caf50; min-width: 100px;">
-                  <i class="uil uil-file-alt text-success h3 mb-2"></i>
-                  <div class="small fw-medium">Quote</div>
-                  <div class="small text-muted">Multi-currency</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-user-circle text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Khách hàng 360</div>
+                  <div class="small text-muted">Tổng hợp toàn cảnh</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 100px;">
-                  <i class="uil uil-shopping-cart h3 mb-2"></i>
-                  <div class="small fw-medium">Order</div>
-                  <div class="small opacity-75">Payment Track</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-chart-line h3 mb-2"></i>
+                  <div class="small fw-medium">Lắng đọng dữ liệu</div>
+                  <div class="small opacity-75">Bảng bán hàng</div>
                 </div>
               </div>
 
-              <!-- Stage Description -->
               <div class="table-responsive">
                 <table class="table table-hover mb-0">
                   <thead class="bg-light">
                     <tr>
-                      <th class="border-0 py-3">Stage Conversion</th>
-                      <th class="border-0 py-3">Trigger</th>
-                      <th class="border-0 py-3">AI Assistance</th>
+                      <th class="border-0 py-3">Giai đoạn</th>
+                      <th class="border-0 py-3">Hành động chính</th>
+                      <th class="border-0 py-3">Hệ thống ghi nhận</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="py-3">Lead → Customer</td>
-                      <td class="py-3 text-muted">Confirmed as valid opportunity</td>
-                      <td class="py-3 text-primary">AI score threshold triggers conversion reminder</td>
+                      <td class="py-3">Lead</td>
+                      <td class="py-3 text-muted">Form/import/nhập thủ công, đánh dấu nguồn và người phụ trách bán hàng</td>
+                      <td class="py-3 text-muted">Bể lead, nhãn nguồn, chuyển giai đoạn</td>
                     </tr>
                     <tr>
-                      <td class="py-3">Customer → Opportunity</td>
-                      <td class="py-3 text-muted">Clear demand identified</td>
-                      <td class="py-3 text-primary">AI analyzes intent, recommends creating opportunity</td>
+                      <td class="py-3">Liên hệ theo dõi</td>
+                      <td class="py-3 text-muted">Ghi nhận điện thoại, email, gặp gỡ; đặt thời gian theo dõi tiếp theo</td>
+                      <td class="py-3 text-muted">Timeline theo dõi, nhắc nhở lần tới</td>
                     </tr>
                     <tr>
-                      <td class="py-3">Opportunity → Quote</td>
-                      <td class="py-3 text-muted">Enters proposal stage</td>
-                      <td class="py-3 text-primary">AI pricing suggestions, competitor comparison, tiered pricing</td>
+                      <td class="py-3">Chuyển đổi khách hàng</td>
+                      <td class="py-3 text-muted">Lead chuyển thành khách hàng, điền hồ sơ khách hàng (ngành/quy mô/liên hệ)</td>
+                      <td class="py-3 text-muted">Bảng khách hàng, bảng liên hệ, lead liên kết</td>
                     </tr>
                     <tr>
-                      <td class="py-3">Quote → Order</td>
-                      <td class="py-3 text-muted">Customer accepts quote</td>
-                      <td class="py-3 text-primary">Auto-generate order with product details and pricing</td>
+                      <td class="py-3">Khách hàng 360</td>
+                      <td class="py-3 text-muted">Xem toàn cảnh khách hàng: đơn hàng, phiếu hỗ trợ, dự án, tài sản</td>
+                      <td class="py-3 text-muted">Block nhúng, liên kết liên mô-đun</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Lắng đọng dữ liệu</td>
+                      <td class="py-3 text-muted">Bảng bán hàng tổng hợp KPI theo nhân viên/khu vực/loại</td>
+                      <td class="py-3 text-muted">Biểu đồ, khoan sâu chi tiết, xuất dữ liệu</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Sales Pipeline End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
 
-  <!-- AI Employee Start -->
+  <!-- Core Features Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-primary rounded-pill mb-3">AI Assistance</span>
-            <h4 class="title mb-4">AI Assistance Capabilities</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Through workflow AI nodes, assist with scoring, analysis, writing, and other repetitive tasks</p>
+            <h4 class="title mb-4">Chức năng cốt lõi</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Lead, khách hàng, theo dõi, bảng điều khiển — bao quát đầy đủ công việc quản lý quan hệ khách hàng hàng ngày</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
       <div class="row">
-        <!-- Scout -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="scout" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Scout <span class="badge bg-soft-secondary small">Workflow Node</span></h5>
-              <span class="badge bg-soft-primary mb-2">Sales Scout</span>
-              <p class="text-muted mt-2 small">Deep opportunity analysis, win-rate prediction, competitive intelligence, deal strategy suggestions</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-import rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Import lead</h5>
+              <p class="text-muted mt-2">Ba cách: import Excel hàng loạt, thu thập qua form, tiếp nhận qua API; ánh xạ trường cấu hình trực quan, tự khử trùng lặp khi xung đột.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <!-- Viz -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="viz" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Viz</h5>
-              <span class="badge bg-soft-primary mb-2">Insights Analyst</span>
-              <p class="text-muted mt-2 small">Smart lead scoring, customer health assessment, sales data analysis, pipeline forecasting</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-process rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Chuyển giai đoạn</h5>
+              <p class="text-muted mt-2">Giai đoạn lead (mới/đã liên hệ/đã chuyển đổi/đã từ bỏ) cấu hình trực quan; thay đổi giai đoạn được ghi lại, thống kê tỷ lệ chuyển đổi chạy tự động.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <!-- Ellis -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="ellis" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Ellis</h5>
-              <span class="badge bg-soft-primary mb-2">Editor Assistant</span>
-              <p class="text-muted mt-2 small">Email sentiment/intent analysis, reply drafting, communication summary</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-comment-alt-lines rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Ghi nhận theo dõi</h5>
+              <p class="text-muted mt-2">Mỗi lần gặp gỡ, điện thoại, email đều có ghi nhận; xem timeline toàn bộ lịch sử trao đổi, bàn giao không ma sát.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <!-- Dex -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="dex" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Dex</h5>
-              <span class="badge bg-soft-primary mb-2">Daily Planning</span>
-              <p class="text-muted mt-2 small">Daily priorities, next action suggestions, follow-up planning</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-bell rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Nhắc nhở theo dõi</h5>
+              <p class="text-muted mt-2">Thông báo tự động trước thời điểm theo dõi tiếp theo; khách hàng lâu không liên hệ vào bảng "cần kích hoạt lại", tránh bị quên.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <!-- Lexi -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="lexi" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Lexi</h5>
-              <span class="badge bg-soft-primary mb-2">Translator</span>
-              <p class="text-muted mt-2 small">Multi-language customer communication, content translation, foreign trade email handling</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-user-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Chế độ xem khách hàng 360</h5>
+              <p class="text-muted mt-2">Chi tiết khách hàng tổng hợp đơn hàng, phiếu hỗ trợ, dự án, tài sản; xem toàn cảnh khách hàng trên một màn hình, không phải chuyển nhiều hệ thống.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <!-- More Employees -->
         <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100" style="opacity: 0.7;">
-            <div class="text-start">
-              <div class="ai-avatar-placeholder" style="width: 56px; height: 56px; background: #e9ecef; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                <i class="uil uil-plus text-muted h4 mb-0"></i>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-muted">More AI Employees</h5>
-              <span class="badge bg-soft-secondary mb-2">Expanding</span>
-              <p class="text-muted mt-2 small">More specialized AI employees can be added based on business needs</p>
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-tag-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Phân loại và nhãn</h5>
+              <p class="text-muted mt-2">Nhãn đa chiều theo loại khách hàng, ngành, quy mô, nguồn; hỗ trợ lọc, phân tích tổng hợp theo nhãn.</p>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- AI Employee End -->
+        </div>
 
-  <!-- Module Design Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-warning rounded-pill mb-3">Flexible Architecture</span>
-            <h4 class="title mb-4">Modular Design</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Each module designed independently, can be toggled on/off. Scale your solution to fit your needs</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">Module</th>
-                  <th class="border-0 py-3">Required</th>
-                  <th class="border-0 py-3">Description</th>
-                  <th class="border-0 py-3">AI Capabilities</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3 fw-medium">Customer Management</td>
-                  <td class="py-3"><span class="badge bg-success">Required</span></td>
-                  <td class="py-3 text-muted">Customer records, contacts, tiers, decision chain</td>
-                  <td class="py-3 text-primary">Health scoring, churn alerts</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Opportunity Management</td>
-                  <td class="py-3"><span class="badge bg-success">Required</span></td>
-                  <td class="py-3 text-muted">Sales funnel, stage progression, activities</td>
-                  <td class="py-3 text-primary">Win prediction, risk identification</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Lead Management</td>
-                  <td class="py-3"><span class="badge bg-secondary">Optional</span></td>
-                  <td class="py-3 text-muted">Lead capture, status workflow, conversion tracking</td>
-                  <td class="py-3 text-primary">Smart scoring, best contact time</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Quote Management</td>
-                  <td class="py-3"><span class="badge bg-secondary">Optional</span></td>
-                  <td class="py-3 text-muted">Multi-currency, tiered pricing, versioning, approvals</td>
-                  <td class="py-3 text-muted">-</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Order Management</td>
-                  <td class="py-3"><span class="badge bg-secondary">Optional</span></td>
-                  <td class="py-3 text-muted">Order creation, payment tracking</td>
-                  <td class="py-3 text-muted">-</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Product Management</td>
-                  <td class="py-3"><span class="badge bg-secondary">Optional</span></td>
-                  <td class="py-3 text-muted">Product catalog, categories, tiered pricing</td>
-                  <td class="py-3 text-muted">-</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Email Integration</td>
-                  <td class="py-3"><span class="badge bg-secondary">Optional</span></td>
-                  <td class="py-3 text-muted">Email send/receive, CRM linking</td>
-                  <td class="py-3 text-primary">Summary, sentiment analysis</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Solution Packages -->
-          <div class="row mt-4">
-            <div class="col-md-6 col-lg-3 mt-3">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="card-body p-3 text-center">
-                  <span class="badge bg-primary mb-2">Full Suite</span>
-                  <p class="small text-muted mb-0">All 7 modules<br/>Complete B2B sales teams</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mt-3">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="card-body p-3 text-center">
-                  <span class="badge bg-soft-primary text-primary mb-2">Standard</span>
-                  <p class="small text-muted mb-0">Customer+Opp+Quote+Order<br/>SMB sales management</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mt-3">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="card-body p-3 text-center">
-                  <span class="badge bg-soft-success text-success mb-2">Lite</span>
-                  <p class="small text-muted mb-0">Customer+Opportunity<br/>Simple tracking</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mt-3">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="card-body p-3 text-center">
-                  <span class="badge bg-soft-warning text-warning mb-2">Trade</span>
-                  <p class="small text-muted mb-0">Customer+Opp+Quote+Email<br/>Foreign trade businesses</p>
-                </div>
-              </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-link-broken rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Gộp/khử trùng lặp</h5>
+              <p class="text-muted mt-2">Tự động nhận diện cùng một khách hàng nhập nhiều lần; gộp bằng một thao tác, lịch sử theo dõi và bản ghi liên kết được gộp không mất dữ liệu.</p>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Module Design End -->
+        </div>
 
-  <!-- Value Proposition Start -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-line rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Bảng bán hàng</h5>
+              <p class="text-muted mt-2">Tổng hợp KPI theo nhân viên bán hàng, khu vực, loại khách hàng; số khách hàng mới, tỷ lệ chuyển đổi, phân bố khách hàng active.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-shield-check rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Quyền cấp trường và cấp dòng</h5>
+              <p class="text-muted mt-2">Cấu hình trường hiển thị theo vai trò; nhân viên bán hàng chỉ thấy khách hàng phụ trách, quản lý xem toàn bộ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Value from Automation</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Workflow automation + AI assistance reduces repetitive work, letting sales focus on customer relationships</p>
+            <h4 class="title mb-4">Tải xuống và triển khai</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Mô-đun này nằm trong file backup mẫu của Hệ thống quản lý kinh doanh tích hợp, triển khai thống nhất</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">50%+</div>
-              <h5 class="mb-2">Lead Screening Efficiency</h5>
-              <p class="text-muted small mb-0">AI auto-scoring reduces manual screening time</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Tải file backup mẫu</h5>
+                <p class="text-muted mt-2">Backup giải pháp tích hợp, sau khi khôi phục bao gồm toàn bộ dữ liệu mẫu của 6 mô-đun, trong đó có mô-đun này</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>Tải backup .nbdata</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">Hoặc tải file ZIP SQL</a>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">30%</div>
-              <h5 class="mb-2">Follow-up Efficiency</h5>
-              <p class="text-muted small mb-0">Win prediction helps focus on high-value deals</p>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Xem tài liệu cài đặt</h5>
+                <p class="text-muted mt-2">Các bước khôi phục chi tiết, câu hỏi thường gặp và lưu ý đang được chuẩn bị</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>Sắp ra mắt</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
 
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">20%</div>
-              <h5 class="mb-2">Reduced Churn Rate</h5>
-              <p class="text-muted small mb-0">Health assessment identifies risks early</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">10%+</div>
-              <h5 class="mb-2">Improved Conversion</h5>
-              <p class="text-muted small mb-0">AI strategy suggestions accelerate closing</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Value Proposition End -->
-
-  <!-- Comparison Start -->
+  <!-- CTA Start -->
   <section class="section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Why Choose Us?</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Comparison with traditional SaaS CRM and custom development</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">Dimension</th>
-                  <th class="border-0 py-3">SaaS CRM</th>
-                  <th class="border-0 py-3">Custom Dev</th>
-                  <th class="border-0 py-3 text-primary">NocoBase Solution</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3 fw-medium">Time to Launch</td>
-                  <td class="py-3 text-muted">Out of box</td>
-                  <td class="py-3 text-muted">Months of development</td>
-                  <td class="py-3 text-primary">Configure and go, quick launch</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Customization</td>
-                  <td class="py-3 text-muted">Limited</td>
-                  <td class="py-3 text-muted">Full control</td>
-                  <td class="py-3 text-primary">No-code flexible customization</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Data Security</td>
-                  <td class="py-3 text-muted">Cloud hosted</td>
-                  <td class="py-3 text-muted">Self-hosted</td>
-                  <td class="py-3 text-primary">Self-hosted, full data control</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">AI Assistance</td>
-                  <td class="py-3 text-muted">Limited/extra cost</td>
-                  <td class="py-3 text-muted">Build yourself</td>
-                  <td class="py-3 text-primary">Workflow AI nodes, use as needed</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Module Flexibility</td>
-                  <td class="py-3 text-muted">Bundled features</td>
-                  <td class="py-3 text-muted">Code changes needed</td>
-                  <td class="py-3 text-primary">Modular, scale as needed</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">Total Cost</td>
-                  <td class="py-3 text-muted">Per-seat subscription</td>
-                  <td class="py-3 text-muted">High dev cost</td>
-                  <td class="py-3 text-primary">One-time purchase, long-term use</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Comparison End -->
-
-  <!-- How to Use Start -->
-  <section class="section bg-light" id="how-to-use">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">How to Use?</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Three steps to deploy CRM 2.0 system to your environment</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-download-alt h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Install NocoBase</h5>
-                <p class="text-muted mt-2">Follow our installation guide to deploy NocoBase to your server</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">Installation Guide</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-book-open h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Learn the Solution</h5>
-                <p class="text-muted mt-2">Read the solution documentation to understand features, architecture, and use cases</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/vi/solution/crm/" target="_blank" class="btn btn-outline-primary">Solution Docs</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-upload h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Restore to System</h5>
-                <p class="text-muted mt-2">Follow the restoration tutorial to deploy the CRM 2.0 system to your NocoBase environment</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/vi/solution/crm/installation" target="_blank" class="btn btn-outline-primary">Restore Guide</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Use End -->
-
-  <!-- CTA Section Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h3 class="title mb-4">Start Using CRM 2.0</h3>
-          <p class="text-muted para-desc mx-auto mb-0">
-            Modular CRM system built on NocoBase 2.x. Contact us if you have customization needs or want to learn more.
-          </p>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">Bắt đầu sử dụng</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Mô-đun này cũng được tích hợp trong <a href="/vi/solutions/all-in-one">Hệ thống quản lý kinh doanh tích hợp</a>, có thể sử dụng độc lập hoặc phối hợp với Quản lý bán hàng, Help Desk, Quản lý dự án, Quản lý tài sản, Quản lý nhân sự.</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live Demo
-            </a>
-            <a href="/vi/contact" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-envelope me-1"></i>Contact Us
-            </a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+            <a href="/vi/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>Liên hệ tư vấn</a>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CTA Section End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
 
   <ShapeFooter />
-</Layout>
+</BaseVI>
 
 <style>
-/* CRM 2.0 Page Styles */
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 13px;
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
 }
 
-.text-purple {
-  color: #9c27b0 !important;
+/* Pipeline diagram — site palette */
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
 }
 
-/* AI Avatar Styles */
-.ai-avatar-lg img {
-  width: 56px;
-  height: 56px;
+/* Hero breadcrumb */
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
 }
-
-.ai-avatar-sm img {
-  width: 28px;
-  height: 28px;
+.module-breadcrumb i {
   vertical-align: middle;
+  margin: 0 4px;
 }
 </style>

@@ -1,57 +1,13 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
+import BaseVI from "../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
-import InteractiveDemo from "../../../components/InteractiveDemo.astro";
-import { listPluginCategories } from "../../../utils";
-
-// Import interactive demo data
-import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
-import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
-import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
-import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
-
-// Get plugin data
-const pluginData = await listPluginCategories();
-const allPlugins = pluginData.flatMap((group: any) => group.plugins);
-
-// Define plugins used in CRM
-const crmPluginNames = [
-  "Data Visualization: ECharts",
-  "Collection: Comment", 
-  "Email Manager",
-  "Workflow: Approval event",
-  "Action: Import records(Pro)",
-  "Action: Export records(Pro)",
-  "Custom variables",
-  "Block: Tree",
-  "Template print",
-  "Workflow: JSON query node",
-  "Workflow: Custom variable",
-  "Workflow: JSON variable mapping node"
-];
-
-// Find plugin by name
-function findPluginByName(name: string) {
-  return allPlugins.find((plugin: any) => 
-    plugin.name === name || 
-    plugin.name_cn === name ||
-    plugin.package_name?.includes(name.toLowerCase())
-  );
-}
-
-// Get CRM related plugins
-const crmPlugins = crmPluginNames.map(name => findPluginByName(name)).filter(Boolean);
-
-// Debug info
-console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
-
-// Original data moved to JSON files
 ---
 
-<Layout
-  title="Nen tang CRM No-Code Linh Hoat va Manh Me"
-  description="San sang de su dung ngay, dong thoi cung cap kha nang tuy bien sau va quyen kiem soat du lieu tron ven. Mo rong field, block, function va page de CRM phu hop voi nghiep vu cua ban."
-  keywords="NocoBase CRM, CRM no-code, CRM ma nguon mo, CRM tuy chinh, quan ly quan he khach hang"
+<BaseVI
+  title="CRM Hệ thống quản lý khách hàng — Mã nguồn mở, tự triển khai | NocoBase"
+  description="Hệ thống CRM mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý lead, theo dõi khách hàng, chuyển đổi, gộp/khử trùng lặp, chế độ xem khách hàng 360. Dùng được ngay, hỗ trợ tự triển khai."
+  keywords="CRM, CRM mã nguồn mở, hệ thống quản lý khách hàng, quản lý quan hệ khách hàng, quản lý lead, theo dõi khách hàng, khách hàng 360, CRM no-code, CRM tự triển khai, NocoBase"
+  canonical="/cn/solutions/crm-v2"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -59,803 +15,353 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">Nen tang CRM<br/>No-Code Linh Hoat va Manh Me</h1>
-            <p class="para-desc text-muted">San sang de dua vao su dung ngay, dong thoi cho phep tuy bien manh me theo nhu cau rieng. Mo rong field, block va page de xay dung giai phap phu hop nhat cho doanh nghiep, trong khi ban van giu quyen kiem soat du lieu tron ven.</p>
-            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
-              <small class="text-muted">
-                <i class="uil uil-info-circle"></i> Xay dung tren NocoBase 1.x (2.0 dang duoc phat trien)
-              </small>
+            <div class="module-breadcrumb mb-2">
+              <a href="/vi/solutions/all-in-one" class="text-muted small text-decoration-none">Hệ thống quản lý kinh doanh tích hợp</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">mô-đun CRM</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">CRM<br/>Hệ thống quản lý khách hàng</h1>
+            <p class="para-desc text-muted">
+              Được xây dựng trên nền tảng no-code NocoBase. Bao quát quy trình hoàn chỉnh từ lead, theo dõi, chuyển đổi đến gộp/khử trùng lặp; chế độ xem khách hàng 360 tổng hợp lịch sử đơn hàng, phiếu hỗ trợ, dự án, tài sản.
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Quản lý giai đoạn lead</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Chế độ xem khách hàng 360</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Gộp / Khử trùng lặp</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Mã nguồn mở miễn phí</span></div></div>
             </div>
 
-            <!-- Tags -->
             <div class="row mt-4">
               <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">Nganh:</span>
-                  <span class="badge bg-soft-primary">Tat ca cac nganh</span>
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">Tình huống áp dụng:</span>
+                  <span class="badge bg-soft-primary me-2">Bán hàng B2B</span>
+                  <span class="badge bg-soft-primary me-2">Bán hàng dự án</span>
+                  <span class="badge bg-soft-primary me-2">Ngoại thương</span>
+                  <span class="badge bg-soft-primary">Nhóm vừa và nhỏ</span>
                 </div>
               </div>
             </div>
 
-            <!-- Developer Info -->
-            <div class="row mt-4">
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">Nha phat trien:</span>
-                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Buttons -->
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Demo truc tiep
-              </a>
-              <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>Trien khai vao moi truong cua ban
-              </a>
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+              <a href="/vi/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>Xem giải pháp đầy đủ</a>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="text-center">
-            <!-- CRM Preview Video -->
-            <div class="video-wrapper position-relative text-start" style="margin-top: -20px;">
-              <video 
-                id="crm-preview-video"
-                class="w-100 rounded shadow"
-                poster="https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg"
-                preload="none"
-                style="cursor: pointer; max-height: 400px; object-fit: cover;"
-              >
-                <source src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/NocoBase-CRM-en-compress.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
-              <div id="play-button" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; cursor: pointer;">
-                <i class="uil uil-play-circle" style="font-size: 84px; color: rgba(255,255,255,0.9); text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div> <!--end container-->
-  </section><!--end section-->
-  <!-- Hero/Banner End -->
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-crm-cover-260521.jpg" alt="Giao diện CRM Hệ thống quản lý khách hàng" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
 
-  <!-- Features Start -->
-  <section class="section">
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Dieu Giup NocoBase CRM Khac Biet</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Khac voi cac san pham SaaS va CRM dong, NocoBase CRM linh hoat va nam hoan toan trong tay ban</p>
+            <h4 class="title mb-4">Quy trình quản lý khách hàng</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Từ tiếp nhận lead đến chế độ xem khách hàng 360, dữ liệu xuyên suốt toàn chuỗi</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-wrench rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Hoan Toan No-Code</h5>
-              <p class="text-muted mt-2">Khong can ky nang lap trinh de tuy chinh CRM</p>
-              <i class="uil uil-wrench full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-database rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Bao Phu Cac Tinh Nang CRM Pho Bien</h5>
-              <p class="text-muted mt-2">Quan ly khach hang, pipeline ban hang, theo doi co hoi, danh ba, email, phe duyet va nhieu hon nua</p>
-              <i class="uil uil-database full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-cube rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">De Dang Dieu Chinh va Mo Rong</h5>
-              <p class="text-muted mt-2">Ho tro field tuy chinh, quy trinh va logic nghiep vu; kien truc linh hoat giup viec phat trien bo sung tro nen don gian</p>
-              <i class="uil uil-cube full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-shield-check rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Ma Nguon Mo, Kiem Soat Du Lieu Toan Dien</h5>
-              <p class="text-muted mt-2">Toan quyen kiem soat ma nguon he thong va du lieu, giup doanh nghiep chu dong hon ve bao mat</p>
-              <i class="uil uil-shield-check full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Features End -->
-
-  <!-- Interactive Demo Start -->
-  <section class="section bg-light">
-    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Thu Nhanh Cac Tinh Nang Cua NocoBase CRM</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Trai nghiem nhanh chi voi vai thao tac</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
             <div class="card-body p-4">
-              <h5 class="mb-3">Truc Quan Hoa Du Lieu Tren Dashboard</h5>
-              <!-- Interactive Demo Entry -->
-              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openDashboardDemo()">
-                <!-- Background Image -->
-                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_9da41ad8-cdba-4290-aa7c-75162e16968g_1-opt.jpg'); background-size: cover; background-position: center;"></div>
-                <!-- Button -->
-                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
-                  <button class="btn btn-primary shadow">
-                    <i class="uil uil-play me-2"></i>Demo tuong tac
-                  </button>
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-bullseye text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Lead</div>
+                  <div class="small text-muted">Đa kênh</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-comment-alt-lines text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Liên hệ theo dõi</div>
+                  <div class="small text-muted">Ghi nhận lịch sử</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-user-check text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Chuyển đổi khách hàng</div>
+                  <div class="small text-muted">Tạo hồ sơ</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-user-circle text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Khách hàng 360</div>
+                  <div class="small text-muted">Tổng hợp toàn cảnh</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-chart-line h3 mb-2"></i>
+                  <div class="small fw-medium">Lắng đọng dữ liệu</div>
+                  <div class="small opacity-75">Bảng bán hàng</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div><!--end col-->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <h5 class="mb-3">Quy Trinh Chuyen Doi Lead</h5>
-              <!-- Lead Conversion Demo Entry -->
-              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openLeadDemo()">
-                <!-- Background Image -->
-                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o3_a778185b-649d-43ce-93c4-5b937fa7593g_1-opt.jpg'); background-size: cover; background-position: center;"></div>
-                <!-- Button -->
-                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
-                  <button class="btn btn-primary shadow">
-                    <i class="uil uil-user-plus me-2"></i>Demo tuong tac
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4">
-              <h5 class="mb-3">Opportunity to Order</h5>
-              <!-- Opportunity Conversion Demo Entry -->
-              <div class="rounded shadow interactive-demo-card position-relative overflow-hidden" style="height: 250px; cursor: pointer;" onclick="openOpportunityDemo()">
-                <!-- Background Image -->
-                <div class="position-absolute w-100 h-100" style="background-image: url('https://static-docs.nocobase.com/img_v3_02o4_48d65d87-0214-4b1e-b426-b617add90b6g_1-opt.jpg'); background-size: cover; background-position: center;"></div>
-                <!-- Button -->
-                <div class="position-absolute w-100 d-flex justify-content-center" style="bottom: 30px;">
-                  <button class="btn btn-primary shadow">
-                    <i class="uil uil-money-bill me-2"></i>Interactive Demo
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Interactive Demo End -->
-
-  <!-- Dashboard Demo Section Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-
-        <div class="mt-4" id="crm-demo-wrap">
-          <!-- Using Extension Feature Interactive Demo -->
-          <InteractiveDemo guides={extensionDemoGuides}  />
-        </div><!--end crm-demo-wrap-->
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-12 text-center">
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Try It Now
-              </a>
-              <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>Copy to Your Environment
-              </a>
-            </div>
-          </div><!--end col-->
-        </div><!--end row-->
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Dashboard Demo Section End -->
-
-  <!-- CRM Tutorial and Extension Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">CRM Development & Extension Tutorial</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Learn how to use NocoBase to build and extend professional CRM systems</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-6 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-database h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Basic Setup & Customization</h5>
-                <p class="text-muted text-center">Learn to create data models, customize field relationships, configure permissions and interface layouts</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-chart-pie h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Data Analysis & Visualization</h5>
-                <p class="text-muted text-center">Build sales data analysis dashboards for performance monitoring and data visualization</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-setting h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Process Automation</h5>
-                <p class="text-muted text-center">Set up workflows to automate sales processes, approval workflows and business rules</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-link h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">System Integration & Extension</h5>
-                <p class="text-muted text-center">Integrate third-party systems, mobile adaptation and other advanced extension features</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CRM Tutorial and Extension End -->
-
-  <!-- Commercial Plugins Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Commercial Plugins in CRM</h4>
-            <p class="para-desc mx-auto text-muted mb-0">CRM core is open source, commercial plugins enrich functionality</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row pb-4">
-        <!-- Dynamically generated plugin cards -->
-        {crmPlugins.map((plugin) => {
-          if (!plugin) return null;
-          
-          const displayName = plugin.name || plugin.name_cn;
-          const displayDescription = plugin.description || plugin.description_cn;
-          const docsUrl = plugin.docs || plugin.docs_cn;
-          
-          return (
-            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-                <div class="card-body">
-                  <div class="mt-2 plugin-box">
-                    <h6 class="card-title mb-1">{displayName}</h6>
-                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
-                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
-                      {docsUrl && (
-                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Details</a>
-                      )}
-                    </p>
-                    {plugin.commercial && (
-                      <div class="plugin-footer">
-                        <h6 class="text-primary mb-0">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
-                          <a href="/vi/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
-                          <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price_1_year || 0}</span>
-                        </h6>
-                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
-                          <a class="text-muted" href="/vi/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
-                          <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price || 0}</span>
-                        </h6>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        <!-- Placeholder card for layout -->
-        <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-          <div class="card rounded shadow border-0 plugin-card h-100" style="opacity: 0.6;">
-            <div class="card-body">
-              <div class="mt-2 plugin-box text-center">
-                <div class="mt-4 mb-4">
-                  <i class="uil uil-plus-circle h2 text-muted mb-3"></i>
-                  <h6 class="text-muted mb-3">More plugins coming soon</h6>
-                  <p class="text-muted small">We are developing more useful commercial plugins, stay tuned</p>
-                </div>
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">Giai đoạn</th>
+                      <th class="border-0 py-3">Hành động chính</th>
+                      <th class="border-0 py-3">Hệ thống ghi nhận</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">Lead</td>
+                      <td class="py-3 text-muted">Form/import/nhập thủ công, đánh dấu nguồn và người phụ trách bán hàng</td>
+                      <td class="py-3 text-muted">Bể lead, nhãn nguồn, chuyển giai đoạn</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Liên hệ theo dõi</td>
+                      <td class="py-3 text-muted">Ghi nhận điện thoại, email, gặp gỡ; đặt thời gian theo dõi tiếp theo</td>
+                      <td class="py-3 text-muted">Timeline theo dõi, nhắc nhở lần tới</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Chuyển đổi khách hàng</td>
+                      <td class="py-3 text-muted">Lead chuyển thành khách hàng, điền hồ sơ khách hàng (ngành/quy mô/liên hệ)</td>
+                      <td class="py-3 text-muted">Bảng khách hàng, bảng liên hệ, lead liên kết</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Khách hàng 360</td>
+                      <td class="py-3 text-muted">Xem toàn cảnh khách hàng: đơn hàng, phiếu hỗ trợ, dự án, tài sản</td>
+                      <td class="py-3 text-muted">Block nhúng, liên kết liên mô-đun</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Lắng đọng dữ liệu</td>
+                      <td class="py-3 text-muted">Bảng bán hàng tổng hợp KPI theo nhân viên/khu vực/loại</td>
+                      <td class="py-3 text-muted">Biểu đồ, khoan sâu chi tiết, xuất dữ liệu</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-      </div><!--end row-->
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
 
-      <div class="row justify-content-center mt-4">
-        <div class="col-12 text-center">
-          <a href="/vi/plugins-commercial" class="btn btn-primary me-3">View All Commercial Plugins</a>
-          <a href="/vi/commercial" class="btn btn-outline-primary">Learn About Pricing</a>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Commercial Plugins End -->
-
-  <!-- How to Use Start -->
-  <section class="section bg-light" id="copy-tutorial">
+  <!-- Core Features Start -->
+  <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">How to Use?</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Three steps to quickly deploy NocoBase CRM to your environment</p>
+            <h4 class="title mb-4">Chức năng cốt lõi</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Lead, khách hàng, theo dõi, bảng điều khiển — bao quát đầy đủ công việc quản lý quan hệ khách hàng hàng ngày</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-download-alt h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Install NocoBase</h5>
-                                  <p class="text-muted mt-2">Follow our installation documentation to deploy NocoBase to your server</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">View Installation Docs</a>
-              </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-import rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Import lead</h5>
+              <p class="text-muted mt-2">Ba cách: import Excel hàng loạt, thu thập qua form, tiếp nhận qua API; ánh xạ trường cấu hình trực quan, tự khử trùng lặp khi xung đột.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-cloud-download h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Download CRM Template File</h5>
-                <p class="text-muted mt-2">Get the complete template file for NocoBase CRM system, supporting two formats</p>
-              </div>
-              <div class="mt-3">
-                <div>
-                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Download SQL File</a>
-                </div>
-                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Download Backup File (.nbdata)</a>
-              </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-process rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Chuyển giai đoạn</h5>
+              <p class="text-muted mt-2">Giai đoạn lead (mới/đã liên hệ/đã chuyển đổi/đã từ bỏ) cấu hình trực quan; thay đổi giai đoạn được ghi lại, thống kê tỷ lệ chuyển đổi chạy tự động.</p>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-upload h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Restore in System</h5>
-                <p class="text-muted mt-2">Import the template file into your NocoBase system to complete deployment</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://docs.nocobase.com/vi/solution/crm/v1" class="btn btn-outline-primary">Restore Tutorial</a>
-              </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-comment-alt-lines rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Ghi nhận theo dõi</h5>
+              <p class="text-muted mt-2">Mỗi lần gặp gỡ, điện thoại, email đều có ghi nhận; xem timeline toàn bộ lịch sử trao đổi, bàn giao không ma sát.</p>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Use End -->
+        </div>
 
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-bell rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Nhắc nhở theo dõi</h5>
+              <p class="text-muted mt-2">Thông báo tự động trước thời điểm theo dõi tiếp theo; khách hàng lâu không liên hệ vào bảng "cần kích hoạt lại", tránh bị quên.</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-user-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Chế độ xem khách hàng 360</h5>
+              <p class="text-muted mt-2">Chi tiết khách hàng tổng hợp đơn hàng, phiếu hỗ trợ, dự án, tài sản; xem toàn cảnh khách hàng trên một màn hình, không phải chuyển nhiều hệ thống.</p>
+            </div>
+          </div>
+        </div>
 
-  <!-- CTA Section Start -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-tag-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Phân loại và nhãn</h5>
+              <p class="text-muted mt-2">Nhãn đa chiều theo loại khách hàng, ngành, quy mô, nguồn; hỗ trợ lọc, phân tích tổng hợp theo nhãn.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-link-broken rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Gộp/khử trùng lặp</h5>
+              <p class="text-muted mt-2">Tự động nhận diện cùng một khách hàng nhập nhiều lần; gộp bằng một thao tác, lịch sử theo dõi và bản ghi liên kết được gộp không mất dữ liệu.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-line rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Bảng bán hàng</h5>
+              <p class="text-muted mt-2">Tổng hợp KPI theo nhân viên bán hàng, khu vực, loại khách hàng; số khách hàng mới, tỷ lệ chuyển đổi, phân bố khách hàng active.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-shield-check rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Quyền cấp trường và cấp dòng</h5>
+              <p class="text-muted mt-2">Cấu hình trường hiển thị theo vai trò; nhân viên bán hàng chỉ thấy khách hàng phụ trách, quản lý xem toàn bộ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h3 class="title mb-4">Ready to Use NocoBase CRM?</h3>
-          <p class="text-muted para-desc mx-auto mb-0">
-            Deploy a dedicated CRM demo in 1 minute. From configuring data structures to interface layouts to process logic, all of this is completed through NocoBase's visual configuration without writing a single line of code.
-          </p>
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Tải xuống và triển khai</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Mô-đun này nằm trong file backup mẫu của Hệ thống quản lý kinh doanh tích hợp, triển khai thống nhất</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Tải file backup mẫu</h5>
+                <p class="text-muted mt-2">Backup giải pháp tích hợp, sau khi khôi phục bao gồm toàn bộ dữ liệu mẫu của 6 mô-đun, trong đó có mô-đun này</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>Tải backup .nbdata</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">Hoặc tải file ZIP SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Xem tài liệu cài đặt</h5>
+                <p class="text-muted mt-2">Các bước khôi phục chi tiết, câu hỏi thường gặp và lưu ý đang được chuẩn bị</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>Sắp ra mắt</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
+
+  <!-- CTA Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">Bắt đầu sử dụng</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Mô-đun này cũng được tích hợp trong <a href="/vi/solutions/all-in-one">Hệ thống quản lý kinh doanh tích hợp</a>, có thể sử dụng độc lập hoặc phối hợp với Quản lý bán hàng, Help Desk, Quản lý dự án, Quản lý tài sản, Quản lý nhân sự.</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live demo
-            </a>
-            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-copy me-1"></i>Deploy to Your Environment
-            </a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+            <a href="/vi/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>Liên hệ tư vấn</a>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CTA Section End -->
-
-  <!-- Dashboard Demo Modal -->
-  <div id="dashboard-demo-modal" class="demo-modal" style="display: none;">
-    <div class="demo-modal-overlay" onclick="closeDashboardDemo()"></div>
-    <div class="demo-modal-content">
-      <div class="demo-modal-header">
-        <h4 class="modal-title">{dashboardDemoGuides.title}</h4>
-        <button type="button" class="demo-modal-close" onclick="closeDashboardDemo()">
-          <i class="uil uil-times"></i>
-        </button>
-      </div>
-      <div class="demo-modal-body">
-        <div class="demo-content-wrapper">
-          <InteractiveDemo guides={dashboardDemoGuides} hideHeader={true} />
         </div>
       </div>
     </div>
-  </div>
-  <!-- Dashboard Demo Modal End -->
-
-  <!-- Lead Conversion Demo Modal -->
-  <div id="lead-demo-modal" class="demo-modal" style="display: none;">
-    <div class="demo-modal-overlay" onclick="closeLeadDemo()"></div>
-    <div class="demo-modal-content">
-      <div class="demo-modal-header">
-        <h4 class="modal-title">{leadConversionDemoGuides.title}</h4>
-        <button type="button" class="demo-modal-close" onclick="closeLeadDemo()">
-          <i class="uil uil-times"></i>
-        </button>
-      </div>
-      <div class="demo-modal-body">
-        <div class="demo-content-wrapper">
-          <InteractiveDemo guides={leadConversionDemoGuides} hideHeader={true} />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Lead Conversion Demo Modal End -->
-
-  <!-- Opportunity Conversion Demo Modal -->
-  <div id="opportunity-demo-modal" class="demo-modal" style="display: none;">
-    <div class="demo-modal-overlay" onclick="closeOpportunityDemo()"></div>
-    <div class="demo-modal-content">
-      <div class="demo-modal-header">
-        <h4 class="modal-title">{opportunityDemoGuides.title}</h4>
-        <button type="button" class="demo-modal-close" onclick="closeOpportunityDemo()">
-          <i class="uil uil-times"></i>
-        </button>
-      </div>
-      <div class="demo-modal-body">
-        <div class="demo-content-wrapper">
-          <InteractiveDemo guides={opportunityDemoGuides} hideHeader={true} />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Opportunity Conversion Demo Modal End -->
+  </section>
+  <!-- CTA End -->
 
   <ShapeFooter />
-</Layout>
+</BaseVI>
 
 <style>
-/* Interactive Demo Card Styles */
-.interactive-demo-card {
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
 }
 
-.interactive-demo-card:hover {
-  transform: translateY(-2px);
-  border-color: #2f55d4;
-  box-shadow: 0 10px 30px rgba(47, 85, 212, 0.15);
-}
-
-/* Modal Styles */
-.demo-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.3s ease;
-}
-
-.demo-modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-}
-
-.demo-modal-content {
-  position: relative;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  max-width: 95vw;
-  max-height: 90vh;
-  width: 1200px;
-  overflow: hidden;
-  animation: slideInUp 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.demo-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 2rem;
-  border-bottom: 1px solid #e9ecef;
-  background: #f8f9fa;
-  position: relative;
-}
-
-.demo-modal-header .modal-title {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
+/* Pipeline diagram — site palette */
+.pipeline-node {
   text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
 }
 
-.demo-modal-close {
-  position: absolute;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: #6c757d;
-  transition: color 0.2s ease;
+/* Hero breadcrumb */
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
 }
-
-.demo-modal-close:hover {
-  color: #dc3545;
-}
-
-.demo-modal-body {
-  padding: 2rem;
-  flex: 1;
-  overflow-y: auto;
-  min-height: 0;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.demo-content-wrapper {
-  margin-top: 0;
-}
-
-/* Responsive Modal */
-@media (max-width: 768px) {
-  .demo-modal-content {
-    width: 95vw;
-    margin: 1rem;
-    max-height: 95vh;
-  }
-  
-  .demo-modal-header {
-    padding: 1rem 1.5rem;
-  }
-  
-  .demo-modal-body {
-    padding: 1rem;
-  }
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
 }
 </style>
-
-<script is:inline>
-// Modal control functions - defined in global scope
-function openDashboardDemo() {
-  const modal = document.getElementById('dashboard-demo-modal');
-  if (modal) {
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Wait for modal to show then initialize interactive demo
-    setTimeout(function() {
-      // Create independent instance for modal demo
-      if (window.InteractiveDemo) {
-        new window.InteractiveDemo(modal);
-      }
-    }, 100);
-  }
-}
-
-function closeDashboardDemo() {
-  const modal = document.getElementById('dashboard-demo-modal');
-  if (modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-}
-
-// Lead conversion demo modal control functions
-function openLeadDemo() {
-  const modal = document.getElementById('lead-demo-modal');
-  if (modal) {
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Wait for modal to show then initialize interactive demo
-    setTimeout(function() {
-      // Create independent instance for modal demo
-      if (window.InteractiveDemo) {
-        new window.InteractiveDemo(modal);
-      }
-    }, 100);
-  }
-}
-
-function closeLeadDemo() {
-  const modal = document.getElementById('lead-demo-modal');
-  if (modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-}
-
-// Opportunity conversion demo modal control functions
-function openOpportunityDemo() {
-  const modal = document.getElementById('opportunity-demo-modal');
-  if (modal) {
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Wait for modal to show then initialize interactive demo
-    setTimeout(function() {
-      // Create independent instance for modal demo
-      if (window.InteractiveDemo) {
-        new window.InteractiveDemo(modal);
-      }
-    }, 100);
-  }
-}
-
-function closeOpportunityDemo() {
-  const modal = document.getElementById('opportunity-demo-modal');
-  if (modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  const video = document.getElementById('crm-preview-video');
-  const playButton = document.getElementById('play-button');
-  
-  if (!video || !playButton) return;
-  
-  // Only trigger play when clicking the big play button initially
-  playButton.addEventListener('click', function() {
-    // Add control bar
-    video.setAttribute('controls', '');
-    video.setAttribute('controlslist', 'nodownload');
-    
-    // Start playing and hide play button
-    video.play();
-    playButton.style.display = 'none';
-  });
-
-  // Show play button when video ends, remove control bar
-  video.addEventListener('ended', function() {
-    playButton.style.display = 'block';
-    video.removeAttribute('controls');
-  });
-
-  // ESC key to close modals
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      closeDashboardDemo();
-      closeLeadDemo();
-      closeOpportunityDemo();
-    }
-  });
-});
-</script> 

@@ -1,43 +1,12 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
+import BaseES from "../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
-import InteractiveDemo from "../../../components/InteractiveDemo.astro";
-import { listPluginCategories } from "../../../utils";
-
-// Import interactive demo data
-import projectDemoGuides from "../../../data/project-management-demo-en.json";
-
-// Get plugin data
-const pluginData = await listPluginCategories();
-const allPlugins = pluginData.flatMap((group: any) => group.plugins);
-
-// Define plugins used in Project Management
-const projectPluginNames = [
-  "Data Visualization: ECharts",
-  "Collection: Comment",
-  "Workflow: Custom action event"
-];
-
-// Find plugin by name
-function findPluginByName(name: string) {
-  return allPlugins.find((plugin: any) => 
-    plugin.name === name || 
-    plugin.name_cn === name ||
-    plugin.package_name?.includes(name.toLowerCase())
-  );
-}
-
-// Get Project Management related plugins
-const projectPlugins = projectPluginNames.map(name => findPluginByName(name)).filter(Boolean);
-
-// Debug info
-console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 ---
 
-<Layout
-  title="Solución integral de gestión de proyectos de I+D"
-  description="El sistema de gestión de proyectos de I+D de NocoBase cubre todo el ciclo de desarrollo: planificación, asignación de tareas, seguimiento del progreso, calidad y colaboración del equipo."
-  keywords="NocoBase gestión de proyectos I+D, tareas, colaboración, agile, calidad"
+<BaseES
+  title="Sistema de Gestión de Proyectos — colaboración ligera open source | NocoBase"
+  description="Sistema de gestión de proyectos open source basado en la plataforma no-code de NocoBase: gestión a dos niveles de proyecto + tarea, responsables, progreso, hitos, avisos de retraso y distribución de carga de trabajo. Ligero, autoalojable, adecuado para equipos pequeños y medianos y colaboración entre áreas."
+  keywords="sistema de gestión de proyectos, software de gestión de proyectos, sistema de tareas, gestión de proyectos open source, gestión ligera de proyectos, gestión de tareas, colaboración en proyectos, seguimiento de proyectos, gestión de hitos, NocoBase"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -45,452 +14,335 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">Solución integral de<br/>gestión de proyectos de I+D</h1>
-            <p class="para-desc text-muted">Una plataforma potente y flexible de gestión de proyectos de I+D construida con NocoBase. Soporta metodologías Agile, Waterfall y enfoques híbridos para gestionar requisitos, tareas, equipos, iteraciones y calidad desde un único lugar.</p>
-            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
-              <small class="text-muted">
-                <i class="uil uil-info-circle"></i> Construido con NocoBase 1.x (2.0 en desarrollo)
-              </small>
+            <div class="module-breadcrumb mb-2">
+              <a href="/es/solutions/all-in-one" class="text-muted small text-decoration-none">Sistema de Gestión Integral</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">módulo Gestión de Proyectos</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">Sistema de Gestión de Proyectos</h1>
+            <p class="para-desc text-muted">
+              Construido sobre la plataforma no-code de NocoBase. Gestión a dos niveles <strong>proyecto + tarea</strong>, con responsables, progreso, hitos, avisos de retraso y distribución de carga de trabajo. Ligero y autoalojable.
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Dos niveles proyecto + tarea</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Avisos de retraso</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Seguimiento de hitos</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Código abierto y gratuito</span></div></div>
             </div>
 
-            <!-- Tags -->
             <div class="row mt-4">
               <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">Sectores:</span>
-                  <span class="badge bg-soft-primary">I+D</span>
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">Casos de uso:</span>
+                  <span class="badge bg-soft-primary me-2">Proyectos de entrega</span>
+                  <span class="badge bg-soft-primary me-2">TI interna</span>
+                  <span class="badge bg-soft-primary me-2">Colaboración entre áreas</span>
+                  <span class="badge bg-soft-primary">Equipos pequeños y medianos</span>
                 </div>
               </div>
             </div>
 
-            <!-- Developer Info -->
-            <div class="row mt-4">
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <span class="text-muted me-2">Desarrollado por:</span>
-                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Probar la Demo</a>
+              <a href="/es/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>Ver solución completa</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-pm-cover-260521.jpg" alt="Interfaz del sistema de gestión de proyectos" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Flujo de proyecto</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Ciclo completo desde la apertura hasta el cierre, con hitos y avisos de retraso automáticos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-folder-network text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Apertura</div>
+                  <div class="small text-muted">Cliente vinculado</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-sitemap text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Tareas</div>
+                  <div class="small text-muted">Responsable</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-chart-line text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Seguimiento</div>
+                  <div class="small text-muted">Aviso de retraso</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-flag-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Hitos</div>
+                  <div class="small text-muted">Entregables</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-check-circle h3 mb-2"></i>
+                  <div class="small fw-medium">Cierre</div>
+                  <div class="small opacity-75">Retrospectiva y archivo</div>
                 </div>
               </div>
-            </div>
 
-            <!-- Buttons -->
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Demo en vivo
-              </a>
-              <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>Despliega en tu entorno
-              </a>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="text-center">
-            <!-- Project Management Preview -->
-            <div class="position-relative">
-              <img 
-                src="https://static-docs.nocobase.com/screenshot-20250909-151855-1.png" 
-                alt="NocoBase I+D Project Management System Preview" 
-                class="img-fluid rounded shadow"
-                style="max-height: 400px; object-fit: cover;"
-              />
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div> <!--end container-->
-  </section><!--end section-->
-  <!-- Hero/Banner End -->
-
-  <!-- Features Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Qué hace única a la gestión de proyectos de NocoBase</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Una solución completa que se adapta a tu forma de gestionar proyectos</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-layers rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Ciclo de vida completo del proyecto</h5>
-              <p class="text-muted mt-2">Desde la definición y la planificación hasta la ejecución, el seguimiento y el cierre: gestiona cada fase de tus proyectos</p>
-              <i class="uil uil-layers full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-chart-line rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Métodos ágiles y tradicionales</h5>
-              <p class="text-muted mt-2">Soporta sprints Scrum, tableros Kanban, diagramas de Gantt, gráficos de burn-down y enfoques tradicionales en cascada</p>
-              <i class="uil uil-chart-line full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-users-alt rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Colaboración de equipo y gestión de calidad</h5>
-              <p class="text-muted mt-2">Gestiona con eficacia los equipos de desarrollo, sigue la calidad del código y controla incidencias y defectos para asegurar la calidad del producto</p>
-              <i class="uil uil-users-alt full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-cube rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">                                            
-              <h5 class="title text-dark">Fácil de modificar y ampliar</h5>
-              <p class="text-muted mt-2">Aprovecha las capacidades no-code de NocoBase para personalizar campos, procesos y lógica de negocio con control total</p>
-              <i class="uil uil-cube full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Features End -->
-
-
-  <!-- Try Project Management Extension Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-
-        <div class="mt-4" id="ticket-demo-wrap">
-          <!-- Interactive Demo -->
-          <InteractiveDemo guides={projectDemoGuides}  />
-        </div><!--end ticket-demo-wrap-->
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-12 text-center">
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Pruébalo ahora
-              </a>
-              <a href="#copy-tutorial" class="btn btn-outline-primary">
-                <i class="uil uil-copy me-1"></i>Llévalo a tu entorno
-              </a>
-            </div>
-          </div><!--end col-->
-        </div><!--end row-->
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Try Project Management Extension End -->
-
-  <!-- Development Tutorial Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Guía de desarrollo para gestión de proyectos</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Aprende a construir desde cero un sistema profesional de gestión de proyectos con NocoBase</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-database h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Diseño del modelo de datos</h5>
-                <p class="text-muted text-center">Aprende a crear las estructuras de datos básicas para proyectos, tareas, equipos y sus relaciones</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Próximamente</button>
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">Etapa</th>
+                      <th class="border-0 py-3">Acciones clave</th>
+                      <th class="border-0 py-3">Registro en el sistema</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">Apertura</td>
+                      <td class="py-3 text-muted">Crear proyecto, vincularlo a cliente (entrega) o a activo (TI), asignar jefe de proyecto</td>
+                      <td class="py-3 text-muted">Ficha de proyecto, vínculo con cliente, responsable</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Tareas</td>
+                      <td class="py-3 text-muted">Descomponer en tareas con responsable, fechas y dependencias</td>
+                      <td class="py-3 text-muted">Tabla de tareas, responsables, grafo de dependencias</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Seguimiento</td>
+                      <td class="py-3 text-muted">Los miembros actualizan el progreso; las tareas vencidas se marcan en rojo automáticamente</td>
+                      <td class="py-3 text-muted">Porcentaje de avance, marca de retraso</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Hitos</td>
+                      <td class="py-3 text-muted">Los puntos clave (revisión, beta, lanzamiento) se marcan como hitos; entregables registrados</td>
+                      <td class="py-3 text-muted">Lista de hitos, adjuntos de entregables</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Cierre</td>
+                      <td class="py-3 text-muted">El proyecto se cierra y se archiva con horas y coste consolidados</td>
+                      <td class="py-3 text-muted">Informe de cierre, resumen de horas</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-sitemap h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Configuración de workflows</h5>
-                <p class="text-muted text-center">Configura asignación de tareas, cambios de estado y workflows automatizados del proyecto</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Próximamente</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow rounded h-100">
-            <div class="card-body p-4 d-flex flex-column">
-              <div class="icon text-primary text-center">
-                <i class="uil uil-chart-line h2 mb-3"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-3 text-center">Sprints y seguimiento</h5>
-                <p class="text-muted text-center">Configura sprints, gráficos de burn-down y funciones de seguimiento del avance</p>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-secondary btn-sm">Próximamente</button>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Development Tutorial End -->
-
-  <!-- Commercial Plugins Start -->
+  <!-- Core Features Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Amplía con plugins comerciales</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Amplía tus capacidades de gestión de proyectos con plugins comerciales</p>
+            <h4 class="title mb-4">Funcionalidades principales</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Seguimiento ligero de proyectos desde la apertura hasta el cierre</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
-      <div class="row pb-4">
-        <!-- Dynamically generated plugin cards -->
-        {projectPlugins.slice(0, 6).map((plugin) => {
-          if (!plugin) return null;
-          
-          const displayName = plugin.name || plugin.name_cn;
-          const displayDescription = plugin.description || plugin.description_cn;
-          const docsUrl = plugin.docs || plugin.docs_cn;
-          
-          return (
-            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
-              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
-                <div class="card-body">
-                  <div class="mt-2 plugin-box">
-                    <h6 class="card-title mb-1">{displayName}</h6>
-                    <div class="plugin-developer text-muted mb-3">Por <span>{plugin.developer || 'NocoBase'}</span></div>
-                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
-                      {docsUrl && (
-                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Detalles</a>
-                      )}
-                    </p>
-                    {plugin.commercial && (
-                      <div class="plugin-footer">
-                        <h6 class="text-primary mb-0">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Uso vitalicio, 1 año de actualizaciones</span><br>
-                          <a href="/en/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
-                          <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price_1_year_usd || 0}</span>
-                        </h6>
-                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
-                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Uso y actualizaciones de por vida</span><br>
-                          <a class="text-muted" href="/en/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
-                          <span class="text-muted">/</span>
-                          <span class="text-muted">${plugin.price || 0}</span>
-                        </h6>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-folder-network rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Dos niveles proyecto + tarea</h5>
+              <p class="text-muted mt-2">Cada proyecto se descompone en varias tareas, con responsable, fechas y progreso propios; el tablero del proyecto muestra el estado global de las tareas.</p>
             </div>
-          );
-        })}
-      </div><!--end row-->
+          </div>
+        </div>
 
-      <div class="row justify-content-center mt-4">
-        <div class="col-12 text-center">
-          <a href="/en/plugins-commercial" class="btn btn-primary me-3">Ver todos los plugins comerciales</a>
-          <a href="/en/commercial" class="btn btn-outline-primary">Consultar precios</a>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Commercial Plugins End -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-flag-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Gestión de hitos</h5>
+              <p class="text-muted mt-2">Los puntos clave (revisión de prototipo, beta, lanzamiento) se marcan como hitos; el avance del proyecto se muestra por hitos.</p>
+            </div>
+          </div>
+        </div>
 
-  <!-- How to Use Start -->
-  <section class="section" id="copy-tutorial">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-exclamation-triangle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Avisos de retraso</h5>
+              <p class="text-muted mt-2">Las tareas vencidas se marcan en rojo automáticamente; la lista de proyectos retrasados se actualiza en tiempo real para visualizar los riesgos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-users-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Responsables y carga de trabajo</h5>
+              <p class="text-muted mt-2">Agregación por responsable de número de tareas y carga; quién tiene mucho, quién está libre y quién acumula retrasos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Panel de estado de proyectos</h5>
+              <p class="text-muted mt-2">KPI agregados por tipo, estado y responsable: en curso, cerrados y retrasados se muestran clasificados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-link rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Vínculo con cliente y activos</h5>
+              <p class="text-muted mt-2">Los proyectos pueden vincularse a clientes (proyectos de entrega) o a activos (proyectos TI); en la ficha del cliente se ve el histórico de proyectos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
+            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="text-muted mb-2">Más funciones en desarrollo</h5>
+              <p class="text-muted small mt-2 mb-0">Planificado: gráfico de dependencias de tareas, registro de tiempo y costos, archivo de entregables, vista de diagrama de Gantt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
+  <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">¿Cómo usarlo?</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Tres pasos para desplegar rápidamente el sistema CRM de NocoBase con funciones de gestión de proyectos en tu entorno</p>
+            <h4 class="title mb-4">Descarga y despliegue</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Este módulo está incluido en la plantilla de backup del Sistema de Gestión Integral; se despliega de forma unificada</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
             <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-download-alt h1 text-primary"></i>
-              </div>
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
               <div class="content mt-4 flex-grow-1">
-                <h5>Instala el sistema NocoBase</h5>
-                <p class="text-muted mt-2">Deploy NocoBase system to your server following our installation documentation</p>
+                <h5>Descargar la plantilla de backup</h5>
+                <p class="text-muted mt-2">Backup de la solución integral; tras la restauración tendrás todos los datos preconfigurados de los 6 módulos, este incluido</p>
               </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">Ver guía de instalación</a>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>Descargar backup .nbdata</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">o descargar paquete SQL</a>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
             <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-cloud-download h1 text-primary"></i>
-              </div>
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
               <div class="content mt-4 flex-grow-1">
-                <h5>Descargar plantilla del sistema CRM</h5>
-                <p class="text-muted mt-2">Descarga la plantilla CRM completa para obtener también la capacidad de gestión de proyectos</p>
+                <h5>Consultar la guía de instalación</h5>
+                <p class="text-muted mt-2">Pasos detallados de restauración, preguntas habituales y advertencias, en preparación</p>
               </div>
-              <div class="mt-3">
-                <div>
-                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Descargar archivo SQL</a>
-                </div>
-                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Descargar copia (.nbdata)</a>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>Próximamente</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
               </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-upload h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Restaurar en el sistema</h5>
-                <p class="text-muted mt-2">Importa la plantilla CRM en tu sistema NocoBase para obtener tanto CRM como gestión de proyectos</p>
-              </div>
-              <div class="mt-3">
-                <a href="/en/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Guía de restauración</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- Project management feature explanation -->
-      <div class="row justify-content-center mt-5">
+  <!-- CTA Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center">
         <div class="col-lg-8">
-          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
-            <div class="d-flex align-items-start">
-              <div class="flex-shrink-0 me-3">
-                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h6 class="mb-2 text-dark fw-medium">Consejo</h6>
-                <p class="mb-0 text-muted">El sistema de gestión de proyectos está completamente integrado en la plantilla de CRM como un módulo completo. Tras el despliegue, podrás usar directamente todas sus funciones dentro del sistema CRM para gestionar proyectos y equipos de principio a fin.</p>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Use End -->
-
-  <!-- CTA Section Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h3 class="title mb-4">¿Listo para transformar tu gestión de I+D?</h3>
-          <p class="text-muted para-desc mx-auto mb-0">
-            Deploy a comprehensive I+D management solution in minutes. From requirements planning to task tracking and quality control, NocoBase adapts to your development process without writing a single line of code.
-          </p>
+          <h3 class="title mb-4">Empezar</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Este módulo también está integrado en el <a href="/es/solutions/all-in-one">Sistema de Gestión Integral</a>; puede usarse de forma independiente o combinado con CRM, Gestión de Ventas, Help Desk, Gestión de Activos y Recursos Humanos.</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Demo en vivo
-            </a>
-            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-copy me-1"></i>Despliega ahora
-            </a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Probar la Demo</a>
+            <a href="/es/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>Contactar</a>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CTA Section End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
 
   <ShapeFooter />
-</Layout>
+</BaseES>
 
 <style>
-/* Project Management System Styles - Reference ticketing page styles */
-#ticket-demo-wrap {
-  position: relative;
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
 }
 
-/* Plugin card styles */
-.plugin-card {
-  transition: all 0.3s ease;
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
 }
 
-.plugin-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
 }
-
-.plugin-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: auto;
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
 }
-
-.plugin-developer span {
-  color: #6c757d;
-}
-
-.plugin-overview {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.plugin-footer h6 {
-  font-size: 0.8rem;
-}
-
-.plugin-box {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.roadmap-card-grid {
+  background: rgba(108, 117, 125, 0.03);
+  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
+  opacity: 0.85;
 }
 </style>
-
