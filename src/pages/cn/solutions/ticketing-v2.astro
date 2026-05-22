@@ -1,13 +1,12 @@
 ---
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
-import AIAvatar from "../../../components/AIAvatar.astro";
 ---
 
 <BaseCN
-  title="AI 驱动的智能工单系统 - NocoBase"
-  description="基于 NocoBase 的 AI 驱动智能工单系统，T型数据架构支持多业务场景，AI 员工团队自动分类、智能回复、知识推荐，SLA 全程监控，实现工单全生命周期智能化管理。"
-  keywords="NocoBase 工单系统, AI 工单, 智能客服, SLA管理, 知识库, 工单分类"
+  title="工单系统 — 开源客服工单管理 | NocoBase"
+  description="基于 NocoBase 无代码平台的开源工单系统：客户报障、智能分派、SLA 计时、优先级、AI 分类、满意度评价、客服工作台。开箱即用，适合中小客服团队与售后服务团队。"
+  keywords="工单系统, 客服工单系统, 开源工单, help desk, ticketing 系统, 工单管理, SLA 管理, 售后系统, 客户服务系统, NocoBase"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -15,877 +14,335 @@ import AIAvatar from "../../../components/AIAvatar.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">AI 驱动的<br/>智能工单系统</h1>
+            <div class="module-breadcrumb mb-2">
+              <a href="/cn/solutions/all-in-one" class="text-muted small text-decoration-none">一体化业务管理系统</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">工单系统模块</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">工单系统</h1>
             <p class="para-desc text-muted">
-              让客服更专注于解决问题，而非繁琐的流程操作。基于 NocoBase 无代码平台，采用 T 型数据架构统一管理多种业务场景，AI 员工团队贯穿工单全生命周期，实现从创建到闭环的智能化管理。
+              基于 NocoBase 无代码平台构建。<strong>客户报障 → 智能分派 → 处理 → 满意度评价</strong> 的完整链路，内置 SLA 计时、优先级管理、AI 智能分类与客服工作台。
             </p>
 
-            <!-- 核心价值 -->
             <div class="row mt-4 g-3">
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">多源统一接入</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">AI 智能分流</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">SLA 全程监控</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">知识自动沉淀</span>
-                </div>
-              </div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">SLA 自动计时</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">4 级优先级</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">AI 智能分类</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">开源免费</span></div></div>
             </div>
 
-            <!-- 适用场景标签 -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center flex-wrap">
                   <span class="text-muted me-2">适用场景：</span>
-                  <span class="badge bg-soft-primary me-2">设备维修</span>
-                  <span class="badge bg-soft-primary me-2">IT 支持</span>
-                  <span class="badge bg-soft-primary me-2">客户投诉</span>
-                  <span class="badge bg-soft-primary">咨询建议</span>
+                  <span class="badge bg-soft-primary me-2">客服售后</span>
+                  <span class="badge bg-soft-primary me-2">IT 服务台</span>
+                  <span class="badge bg-soft-primary me-2">设备维保</span>
+                  <span class="badge bg-soft-primary">SaaS 客服</span>
                 </div>
               </div>
             </div>
 
-            <!-- 按钮 -->
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>Live Demo
-              </a>
-              <a href="#how-to-use" class="btn btn-outline-primary">
-                <i class="uil uil-download-alt me-1"></i>如何使用
-              </a>
-            </div>
-
-            <div class="mt-3 p-2" style="background-color: #fff3e0; border-left: 3px solid #ff9800; border-radius: 4px;">
-              <small class="text-muted">
-                <i class="uil uil-info-circle me-1"></i>Alpha 版本已上线，欢迎体验，功能持续更新中
-              </small>
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>在线体验 Demo</a>
+              <a href="/cn/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>查看完整方案</a>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="text-center">
-            <div class="position-relative">
-              <img
-                src="https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg"
-                alt="通用工单追踪系统界面"
-                class="img-fluid rounded shadow"
-              />
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div> <!--end container-->
-  </section><!--end section-->
-  <!-- Hero/Banner End -->
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-tickets-cover-260521.jpg" alt="工单系统界面" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
 
-  <!-- Pain Points Start -->
-  <section class="section" id="pain-points">
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">您是否面临这些问题？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">企业在日常运营中面临多种服务请求，来源分散、流程各异、缺乏统一管理</p>
+            <h4 class="title mb-4">工单处理流程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">从客户报障到结案评价的完整闭环，SLA 全程计时</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">成本高、定制慢</h5>
-              </div>
-              <p class="text-muted mb-0">SaaS 工单系统价格高昂，定制开发周期长、成本难以预估，业务需求变化时难以快速调整。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">系统割裂、数据孤岛</h5>
-              </div>
-              <p class="text-muted mb-0">设备维修、IT支持、客户投诉等请求分散在不同系统，难以统一分析和决策。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">响应慢、过程不透明</h5>
-              </div>
-              <p class="text-muted mb-0">请求在系统间流转效率低，客户无法追踪进度，频繁询问增加客服压力。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">质量难保障</h5>
-              </div>
-              <p class="text-muted mb-0">缺乏 SLA 监控机制，超时和差评无法及时预警，服务质量参差不齐。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-book-alt text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">知识无法沉淀</h5>
-              </div>
-              <p class="text-muted mb-0">解决方案散落在各处，新人上手慢，同样的问题反复解决，效率低下。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-robot text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">AI 能力缺失</h5>
-              </div>
-              <p class="text-muted mb-0">传统系统缺乏 AI 辅助，人工分类耗时费力，无法实现智能推荐和自动回复。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Pain Points End -->
-
-  <!-- Solution Overview Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">我们的解决方案</h4>
-            <p class="para-desc mx-auto text-muted mb-0">基于 NocoBase 无代码平台构建的通用工单中台，实现统一入口、智能分发、多态业务、闭环反馈</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- 核心模块 -->
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-exchange rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">多源统一接入</h5>
-              <p class="text-muted mt-2">公开表单、客户门户、邮件解析、API/Webhook，所有渠道统一管理，自动去重检查</p>
-              <i class="uil uil-exchange full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-brain rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">AI 智能分流</h5>
-              <p class="text-muted mt-2">自动识别意图、分析情绪、评估紧急度，结合技能匹配和负载均衡智能分派</p>
-              <i class="uil uil-brain full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-clock rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">SLA 全程监控</h5>
-              <p class="text-muted mt-2">P0-P3 四级优先级，响应/解决时效自动追踪，超时预警和升级机制</p>
-              <i class="uil uil-clock full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-star rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">闭环反馈</h5>
-              <p class="text-muted mt-2">多维度满意度评价、NPS 评分、差评预警和跟进，持续提升服务质量</p>
-              <i class="uil uil-star full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Solution Overview End -->
-
-  <!-- T型架构 Start -->
-  <section class="section" id="architecture">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-success rounded-pill mb-3">核心设计</span>
-            <h4 class="title mb-4">T 型数据架构</h4>
-            <p class="para-desc mx-auto text-muted mb-0">所有工单共享主表统一流转，业务特有字段下沉附表，新增业务类型只需添加附表</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="card border-0 shadow">
             <div class="card-body p-4">
-              <!-- T 型架构图 -->
-              <div class="text-center mb-4">
-                <div class="d-inline-block p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 400px;">
-                  <strong>工单主表 (nb_tts_tickets)</strong>
-                  <div class="small mt-2 opacity-75">工单号 | 标题 | 状态 | 优先级 | 处理人 | SLA | AI分析结果</div>
-                </div>
-              </div>
-
-              <!-- 连接线 -->
-              <div class="text-center mb-3">
-                <div style="width: 2px; height: 30px; background: #dee2e6; margin: 0 auto;"></div>
-                <div style="width: 60%; height: 2px; background: #dee2e6; margin: 0 auto;"></div>
-              </div>
-
-              <!-- 业务附表 -->
-              <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <div class="p-3 rounded text-center" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 180px;">
-                  <i class="uil uil-wrench text-warning h4 mb-2"></i>
-                  <strong class="text-dark d-block">设备维修</strong>
-                  <div class="small text-muted mt-2">设备序列号 | 故障码<br/>备件清单 | 现场照片</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 180px;">
-                  <i class="uil uil-desktop text-primary h4 mb-2"></i>
-                  <strong class="text-dark d-block">IT 支持</strong>
-                  <div class="small text-muted mt-2">资产编号 | OS版本<br/>远程地址 | 错误代码</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 180px;">
-                  <i class="uil uil-comment-exclamation text-danger h4 mb-2"></i>
-                  <strong class="text-dark d-block">客户投诉</strong>
-                  <div class="small text-muted mt-2">涉及订单 | 投诉等级<br/>赔偿方案 | 根本原因</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #f5f5f5; border: 2px dashed #9e9e9e; min-width: 180px;">
-                  <i class="uil uil-plus text-muted h4 mb-2"></i>
-                  <strong class="text-muted d-block">更多业务...</strong>
-                  <div class="small text-muted mt-2">按需扩展<br/>主流程不变</div>
-                </div>
-              </div>
-
-              <!-- 优势说明 -->
-              <div class="row mt-4 pt-3 border-top">
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-chart-bar text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">统一报表</h6>
-                  <p class="text-muted small mb-0">一张主表统计所有工单</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-sync text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">流程复用</h6>
-                  <p class="text-muted small mb-0">核心流程只改一处</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-plus-circle text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">灵活扩展</h6>
-                  <p class="text-muted small mb-0">新业务只需加附表</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- T型架构 End -->
-
-  <!-- AI 员工 Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-primary rounded-pill mb-3">AI 原生</span>
-            <h4 class="title mb-4">AI 员工团队</h4>
-            <p class="para-desc mx-auto text-muted mb-0">不是"加个 AI 按钮"，而是 AI 员工融入每个环节。每位 AI 有明确的角色、职责、性格</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <!-- Sam -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="sam" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Sam</h5>
-              <span class="badge bg-soft-primary mb-2">服务台主管</span>
-              <p class="text-muted mt-2 small">工单分流、优先级评估、升级决策、SLA风险识别</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">触发：工单创建时自动</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Grace -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="grace" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Grace</h5>
-              <span class="badge bg-soft-primary mb-2">客户成功专家</span>
-              <p class="text-muted mt-2 small">回复生成、语气调整、投诉处理、情商防火墙</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">触发：点击"AI回复"</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Max -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="max" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Max</h5>
-              <span class="badge bg-soft-primary mb-2">知识助手</span>
-              <p class="text-muted mt-2 small">相似案例、知识推荐、解决方案综合、知识生成</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">触发：工单详情页自动</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Lexi -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="lexi" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Lexi</h5>
-              <span class="badge bg-soft-primary mb-2">翻译官</span>
-              <p class="text-muted mt-2 small">多语言翻译、质量审核、敏感信息拦截</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">触发：检测到外语自动</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- 情商防火墙示例 -->
-      <div class="row justify-content-center mt-5">
-        <div class="col-lg-10">
-          <div class="card border-0 shadow-sm" style="background: #f8f9fa;">
-            <div class="card-body p-4">
-              <h5 class="mb-3"><AIAvatar name="grace" class="ai-avatar-sm me-2" />Grace 的情商防火墙</h5>
-              <p class="text-muted mb-3">自动检测并优化客服回复中的负面表达，避免二次投诉</p>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="bg-white rounded p-3 mb-3 mb-md-0 border">
-                    <span class="badge bg-secondary mb-2">原文</span>
-                    <p class="mb-0 small">"这不是我们的问题，你自己设置错了"</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="bg-white rounded p-3 border">
-                    <span class="badge bg-primary mb-2">优化后</span>
-                    <p class="mb-0 small">"经过排查，问题出在配置环节。我来帮您一起调整设置，确保正常使用"</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- AI 员工 End -->
-
-  <!-- 知识循环 Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-warning rounded-pill mb-3">知识管理</span>
-            <h4 class="title mb-4">知识自循环体系</h4>
-            <p class="para-desc mx-auto text-muted mb-0">工单解决后自动沉淀为知识，下次遇到相似问题时 AI 自动推荐，形成知识沉淀-知识应用的闭环</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <!-- 循环流程图 -->
-          <div class="card border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-check-circle text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">工单解决</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-analysis text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">AI 评估价值</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">生成知识文章</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-eye text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">人工审核发布</div>
-                </div>
-              </div>
-
-              <div class="text-center my-3">
-                <i class="uil uil-corner-down-left h3 text-muted"></i>
-              </div>
-
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-book-open text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">知识库</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
                   <i class="uil uil-ticket text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">相似工单</div>
+                  <div class="small fw-medium">创建</div>
+                  <div class="small text-muted">多渠道</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-lightbulb text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">AI 推荐知识</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-robot text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">智能分类</div>
+                  <div class="small text-muted">AI 识别</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-bolt text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">快速解决</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-users-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">分派</div>
+                  <div class="small text-muted">按组规则</div>
                 </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-wrench text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">处理</div>
+                  <div class="small text-muted">SLA 计时</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-thumbs-up h3 mb-2"></i>
+                  <div class="small fw-medium">评价</div>
+                  <div class="small opacity-75">结案归档</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">阶段</th>
+                      <th class="border-0 py-3">关键动作</th>
+                      <th class="border-0 py-3">系统记录</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">创建</td>
+                      <td class="py-3 text-muted">客户邮件、表单、IM 多渠道提交；关联客户与产品</td>
+                      <td class="py-3 text-muted">工单单号、来源、客户档案</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">智能分类</td>
+                      <td class="py-3 text-muted">AI 识别问题类别（账号/功能/Bug），自动设优先级</td>
+                      <td class="py-3 text-muted">分类标签、优先级、置信度</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">分派</td>
+                      <td class="py-3 text-muted">按规则分给对应小组/客服员，紧急工单自动通知值班</td>
+                      <td class="py-3 text-muted">负责人、分派记录、组队列</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">处理</td>
+                      <td class="py-3 text-muted">客服处理、与客户沟通；SLA 计时，超期前自动告警</td>
+                      <td class="py-3 text-muted">处理日志、SLA 状态、等待原因</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">评价</td>
+                      <td class="py-3 text-muted">结案推送客户评价（1-5 星+文字），按客服/产品聚合</td>
+                      <td class="py-3 text-muted">满意度记录、归档工单、KPI</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
 
-      <!-- 知识转化条件 -->
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-10">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-file-check-alt text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">描述完整</h6>
-                  <p class="text-muted small mb-0">描述 ≥ 200 字符</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-comments text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">沟通充分</h6>
-                  <p class="text-muted small mb-0">评论 ≥ 2 条</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-star text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">质量达标</h6>
-                  <p class="text-muted small mb-0">AI 评分 ≥ 0.6</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 知识循环 End -->
-
-  <!-- SLA Config Start -->
+  <!-- Core Features Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">SLA 服务级别管理</h4>
-            <p class="para-desc mx-auto text-muted mb-0">按优先级设置响应和解决时间，自动监控、预警、升级，挂起时 SLA 自动暂停</p>
+            <h4 class="title mb-4">核心功能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">从受理到结案的完整客服工单管理日常</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">优先级</th>
-                  <th class="border-0 py-3">响应时间</th>
-                  <th class="border-0 py-3">解决时间</th>
-                  <th class="border-0 py-3">典型场景</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3"><span class="badge bg-dark">P0 紧急</span></td>
-                  <td class="py-3">15 分钟</td>
-                  <td class="py-3">2 小时</td>
-                  <td class="py-3 text-muted small">系统宕机、生产线停止</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-primary">P1 高</span></td>
-                  <td class="py-3">1 小时</td>
-                  <td class="py-3">8 小时</td>
-                  <td class="py-3 text-muted small">重要功能故障、影响较大</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-soft-primary text-primary">P2 中</span></td>
-                  <td class="py-3">4 小时</td>
-                  <td class="py-3">24 小时</td>
-                  <td class="py-3 text-muted small">一般问题、有替代方案</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-secondary">P3 低</span></td>
-                  <td class="py-3">8 小时</td>
-                  <td class="py-3">72 小时</td>
-                  <td class="py-3 text-muted small">优化建议、功能咨询</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-4">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-bell text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">提前预警</h6>
-                  <p class="text-muted small mb-0">剩余时间 &lt; 20% 时通知处理人</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-exclamation-triangle text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">超时预警</h6>
-                  <p class="text-muted small mb-0">超时后通知处理人+主管</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-arrow-growth text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">自动升级</h6>
-                  <p class="text-muted small mb-0">超时 1 小时通知部门经理</p>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-stopwatch rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">SLA 计时与告警</h5>
+              <p class="text-muted mt-2">按优先级自动计算响应/解决时限；超期前自动告警，超期工单置红色；SLA 达成率可看板呈现。</p>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- SLA Config End -->
+        </div>
 
-  <!-- 价值量化 Start -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-bolt-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">4 级优先级</h5>
+              <p class="text-muted mt-2">紧急、高、中、低四级，匹配不同响应时长；紧急工单自动置顶并通知值班人员。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-robot rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">AI 智能分类</h5>
+              <p class="text-muted mt-2">新工单 AI 自动识别问题类别（账号问题/功能咨询/Bug 报告等），按规则分派给对应小组。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-pause-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">等待原因细分</h5>
+              <p class="text-muted mt-2">"等待客户回复""等待第三方""需求待评审" — 等待中的工单不计入 SLA 超期，公平合理。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-clipboard-notes rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">客服工作台</h5>
+              <p class="text-muted mt-2">客服登录直接看到分给自己的工单；按到期时间排序，一屏看待处理、处理中、即将超期。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">工单仪表盘</h5>
+              <p class="text-muted mt-2">今日新增/结案/待处理/超期分布；按客服员、客户、产品线聚合，管理者纵览全局。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
+            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="text-muted mb-2">功能完善中</h5>
+              <p class="text-muted small mt-2 mb-0">更多能力规划中：满意度评价、转派与升级、模板与快捷回复、知识库联动</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">AI 带来的价值</h4>
-            <p class="para-desc mx-auto text-muted mb-0">人与 AI 协同，而非 AI 替代人。让 AI 处理重复工作，让人专注于创造价值</p>
+            <h4 class="title mb-4">下载与部署</h4>
+            <p class="para-desc mx-auto text-muted mb-0">本模块包含在一体化业务管理系统的备份模板中，统一部署</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">50%+</div>
-              <h5 class="mb-2">分拣效率提升</h5>
-              <p class="text-muted small mb-0">AI 自动分类减少人工分拣时间</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下载备份模板</h5>
+                <p class="text-muted mt-2">一体化方案备份，还原后包含本模块在内的 6 大模块全部预置数据</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>下载 .nbdata 备份</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">或下载 SQL 压缩包</a>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">30%</div>
-              <h5 class="mb-2">二次投诉减少</h5>
-              <p class="text-muted small mb-0">情商防火墙优化回复语气</p>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>查看安装文档</h5>
+                <p class="text-muted mt-2">详细的还原步骤、常见问题与注意事项，正在准备中</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>即将推出</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
 
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">20%</div>
-              <h5 class="mb-2">超时率降低</h5>
-              <p class="text-muted small mb-0">SLA 预警提前干预</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">10%+</div>
-              <h5 class="mb-2">首解率提升</h5>
-              <p class="text-muted small mb-0">知识推荐加速问题解决</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 价值量化 End -->
-
-  <!-- 差异化优势 Start -->
+  <!-- CTA Start -->
   <section class="section bg-light">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">为什么选择我们？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">与传统 SaaS 工单系统和自研系统的对比</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">对比维度</th>
-                  <th class="border-0 py-3">SaaS 工单</th>
-                  <th class="border-0 py-3">自研系统</th>
-                  <th class="border-0 py-3 text-primary">NocoBase 方案</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3 fw-medium">上线速度</td>
-                  <td class="py-3 text-muted">开箱即用</td>
-                  <td class="py-3 text-muted">数月开发</td>
-                  <td class="py-3 text-primary">配置即用，快速上线</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">定制能力</td>
-                  <td class="py-3 text-muted">受限</td>
-                  <td class="py-3 text-muted">完全可控</td>
-                  <td class="py-3 text-primary">无代码灵活定制</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">数据安全</td>
-                  <td class="py-3 text-muted">云端托管</td>
-                  <td class="py-3 text-muted">私有部署</td>
-                  <td class="py-3 text-primary">私有部署，数据完全掌控</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">AI 集成</td>
-                  <td class="py-3 text-muted">有限/加价</td>
-                  <td class="py-3 text-muted">需自行开发</td>
-                  <td class="py-3 text-primary">AI 原生，深度集成</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">扩展性</td>
-                  <td class="py-3 text-muted">功能固定</td>
-                  <td class="py-3 text-muted">需代码修改</td>
-                  <td class="py-3 text-primary">T型架构，按需扩展</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">总体成本</td>
-                  <td class="py-3 text-muted">订阅费用高</td>
-                  <td class="py-3 text-muted">开发成本高</td>
-                  <td class="py-3 text-primary">一次购买，长期使用</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 差异化优势 End -->
-
-  <!-- How to Use Start -->
-  <section class="section" id="how-to-use">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">如何使用？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">三个步骤快速部署智能工单系统到你的环境</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-download-alt h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>安装 NocoBase</h5>
-                <p class="text-muted mt-2">按照我们的安装文档，部署 NocoBase 到你的服务器</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/get-started/quickstart" target="_blank" class="btn btn-primary">查看安装文档</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-book-open h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>了解方案</h5>
-                <p class="text-muted mt-2">阅读方案介绍文档，了解系统功能、架构设计和使用场景</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/" target="_blank" class="btn btn-outline-primary">方案介绍</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-upload h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>还原到系统</h5>
-                <p class="text-muted mt-2">按照还原教程，将智能工单系统部署到你的 NocoBase 环境</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/installation" target="_blank" class="btn btn-outline-primary">还原教程</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Use End -->
-
-  <!-- CTA Section Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h3 class="title mb-4">让 AI 重新定义工单管理</h3>
-          <p class="text-muted para-desc mx-auto mb-0">
-            基于 NocoBase 2.x 构建的 AI 驱动智能工单系统。如果您有定制需求或想了解更多细节，欢迎联系我们。
-          </p>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">开始使用</h3>
+          <p class="text-muted para-desc mx-auto mb-0">本模块同样集成在 <a href="/cn/solutions/all-in-one">一体化业务管理系统</a> 中，可单独使用，也可与 CRM、销售管理、项目管理、固定资产管理、HR 协同。</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live Demo
-            </a>
-            <a href="/cn/contact" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-envelope me-1"></i>联系我们
-            </a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>在线体验 Demo</a>
+            <a href="/cn/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>联系咨询</a>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CTA Section End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
 
   <ShapeFooter />
 </BaseCN>
 
 <style>
-/* 工单 2.0 页面样式 */
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 13px;
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
 }
 
-.text-purple {
-  color: #9c27b0 !important;
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
 }
 
-/* AI 员工头像样式 */
-.ai-avatar-lg img {
-  width: 56px;
-  height: 56px;
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
 }
-
-.ai-avatar-sm img {
-  width: 28px;
-  height: 28px;
+.module-breadcrumb i {
   vertical-align: middle;
+  margin: 0 4px;
+}
+.roadmap-card-grid {
+  background: rgba(108, 117, 125, 0.03);
+  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
+  opacity: 0.85;
 }
 </style>

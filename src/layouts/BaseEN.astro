@@ -46,7 +46,8 @@ if (urlEN === '/en') {
   urlEN = '/';
 }
 
-const { title, description, keywords, image } = Astro.props;
+const { title, description, keywords, image, canonical } = Astro.props;
+const canonicalPath = canonical || urlEN;
 
 const meta = {
   image: image || 'https://static-docs.nocobase.com/20260513-og-github-v3.jpg',
@@ -76,7 +77,7 @@ const meta = {
     <link rel="sitemap" href={'/sitemap.xml'} />
 
     <!-- Canonical -->
-    <link rel="canonical" href={new URL(urlEN, Astro.site)} />
+    <link rel="canonical" href={new URL(canonicalPath, Astro.site)} />
 
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlES, Astro.site)} hreflang="es-es">
@@ -449,21 +450,6 @@ const meta = {
               <ul class="submenu megamenu">
                 <li>
                   <ul>
-                    <li class="megamenu-head"><i class="uil uil-lightbulb-alt fs-6 align-middle"></i> NocoBase Highlights</li>
-                    <li><a href="/en/highlights/data-source" title="Data Source" class="sub-menu-item">Data Source</a></li>
-                    <li><a href="/en/highlights/block-action" title="Block & Action" class="sub-menu-item">Block & Action</a></li>
-                    <li><a href="/en/highlights/ai-employee" title="AI Employee" class="sub-menu-item">AI Employee</a></li>
-                    <li><a href="/en/highlights/permissions" title="Permission" class="sub-menu-item">Permission</a></li>
-                    <li><a href="/en/highlights/workflow" title="Workflow" class="sub-menu-item">Workflow</a></li>
-                    <!-- <li><a href="javascript:void(0)" title="Multi-App" class="sub-menu-item" style="color: #CCC!important;">Multi-App</a></li>
-                    <li><a href="javascript:void(0)" title="Multi-Space" class="sub-menu-item" style="color: #CCC!important;">Multi-Space</a></li>
-                    <li><a href="javascript:void(0)" title="History & Log" class="sub-menu-item" style="color: #CCC!important;">History & Log</a></li>
-                    <li><a href="javascript:void(0)" title="Release Management" class="sub-menu-item" style="color: #CCC!important;">Release Management</a></li>
-                    <li><a href="javascript:void(0)" title="Extensibility" class="sub-menu-item" style="color: #CCC!important;">Extensibility</a></li> -->
-                  </ul>
-                </li>
-                <li>
-                  <ul>
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> Explore</li>
                     <li><a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">See how it works <i class="uil uil-external-link-alt"></i></a></li>
                     <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Live Demo <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">Try it out</span></a></li>
@@ -484,13 +470,20 @@ const meta = {
               <ul class="submenu megamenu">
                 <li>
                   <ul>
-                    <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Use Cases</li>
-                    <li><a href="/en/solutions/crm" title="NocoBase CRM solution" class="sub-menu-item">CRM <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
-                    <li><a href="/en/solutions/crm-v2" title="NocoBase AI-powered CRM system" class="sub-menu-item">CRM <span style="color: #2f55d4; font-size: 0.85em;">2.0</span></a></li>
-                    <li><a href="/en/solutions/ticketing" title="NocoBase ticketing system solution" class="sub-menu-item">Ticketing system <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
-                    <li><a href="/en/solutions/ticketing-v2" title="NocoBase AI-powered ticketing system" class="sub-menu-item">Ticketing system <span style="color: #2f55d4; font-size: 0.85em;">2.0</span></a></li>
-                    <li><a href="/en/solutions/project-management" title="NocoBase project management solution" class="sub-menu-item">Project management <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
+                    <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Solutions</li>
+                    <li><a href="/en/solutions/all-in-one" title="NocoBase All-in-One Business Suite" class="sub-menu-item">All-in-One Business Suite <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
+                  </ul>
+                </li>
 
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-layer-group fs-6 align-middle"></i> Modules</li>
+                    <li><a href="/en/solutions/crm-v2" title="Open-source CRM customer management" class="sub-menu-item">CRM</a></li>
+                    <li><a href="/en/solutions/sales-management" title="Sales management: quotes / orders / invoices" class="sub-menu-item">Sales Management</a></li>
+                    <li><a href="/en/solutions/ticketing-v2" title="Help desk & customer support ticketing" class="sub-menu-item">Help Desk</a></li>
+                    <li><a href="/en/solutions/project-management" title="Project management software" class="sub-menu-item">Project Management</a></li>
+                    <li><a href="/en/solutions/asset-management" title="IT & fixed asset management" class="sub-menu-item">IT Asset Management</a></li>
+                    <li><a href="/en/solutions/hr-management" title="HR / human resources management system" class="sub-menu-item">HR Management</a></li>
                   </ul>
                 </li>
 

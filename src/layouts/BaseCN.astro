@@ -46,7 +46,8 @@ if (urlEN === '/en') {
   urlEN = '/';
 }
 
-const { title, description, keywords, image } = Astro.props;
+const { title, description, keywords, image, canonical } = Astro.props;
+const canonicalPath = canonical || urlCN;
 
 const meta = {
   image: image || 'https://static-docs.nocobase.com/20260513-og-github-v3.jpg',
@@ -76,7 +77,7 @@ const meta = {
     <link rel="sitemap" href={'/sitemap.xml'} />
 
     <!-- Canonical -->
-    <link rel="canonical" href={new URL(urlCN, Astro.site)} />
+    <link rel="canonical" href={new URL(canonicalPath, Astro.site)} />
 
     <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
     <link rel="alternate" href={new URL(urlES, Astro.site)} hreflang="es-es">
@@ -473,21 +474,6 @@ const meta = {
               <ul class="submenu megamenu">
                 <li>
                   <ul>
-                    <li class="megamenu-head"><i class="uil uil-lightbulb-alt fs-6 align-middle"></i> NocoBase 亮点</li>
-                    <li><a href="/cn/highlights/data-source" title="数据源" class="sub-menu-item">数据源</a></li>
-                    <li><a href="/cn/highlights/block-action" title="区块与操作" class="sub-menu-item">区块与操作</a></li>
-                    <li><a href="/cn/highlights/ai-employee" title="AI 员工" class="sub-menu-item">AI 员工</a></li>
-                    <li><a href="/cn/highlights/permissions" title="权限" class="sub-menu-item">权限</a></li>
-                    <li><a href="/cn/highlights/workflow" title="工作流" class="sub-menu-item">工作流</a></li>
-                    <!-- <li><a href="javascript:void(0)" title="多应用" class="sub-menu-item" style="color: #CCC!important;">多应用</a></li>
-                    <li><a href="javascript:void(0)" title="多空间" class="sub-menu-item" style="color:#CCC!important;">多空间</a></li>
-                    <li><a href="javascript:void(0)" title="历史与日志" class="sub-menu-item" style="color:#CCC!important;">历史与日志</a></li>
-                    <li><a href="javascript:void(0)" title="发布管理" class="sub-menu-item" style="color:#CCC!important;">发布管理</a></li>
-                    <li><a href="javascript:void(0)" title="可扩展性" class="sub-menu-item" style="color:#CCC!important;">可扩展性</a></li> -->
-                  </ul>
-                </li>
-                <li>
-                  <ul>
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 探索</li>
                     <li><a href="https://v2.docs.nocobase.com/cn/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">NocoBase 如何工作 <i class="uil uil-external-link-alt"></i></a></li>
                     <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Live Demo <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">在线体验</span></a></li>
@@ -510,12 +496,19 @@ const meta = {
                 <li>
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> 解决方案</li>
-                    <li><a href="/cn/solutions/crm" title="NocoBase CRM解决方案" class="sub-menu-item">CRM <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
-                    <li><a href="/cn/solutions/crm-v2" title="NocoBase AI智能CRM系统" class="sub-menu-item">CRM <span style="color: #2f55d4; font-size: 0.85em;">2.0</span></a></li>
-                    <li><a href="/cn/solutions/ticketing" title="NocoBase 工单系统解决方案" class="sub-menu-item">工单系统 <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
-                    <li><a href="/cn/solutions/ticketing-v2" title="NocoBase AI智能工单系统" class="sub-menu-item">工单系统 <span style="color: #2f55d4; font-size: 0.85em;">2.0</span></a></li>
-                    <li><a href="/cn/solutions/project-management" title="NocoBase 项目管理解决方案" class="sub-menu-item">项目管理 <span style="color: #999; font-size: 0.85em;">1.x</span></a></li>
+                    <li><a href="/cn/solutions/all-in-one" title="NocoBase 一体化业务管理系统" class="sub-menu-item">一体化业务管理系统 <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
+                  </ul>
+                </li>
 
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-layer-group fs-6 align-middle"></i> 业务模块</li>
+                    <li><a href="/cn/solutions/crm-v2" title="开源 CRM 客户管理系统" class="sub-menu-item">CRM 客户管理</a></li>
+                    <li><a href="/cn/solutions/sales-management" title="销售管理系统:报价/订单/发票" class="sub-menu-item">销售管理</a></li>
+                    <li><a href="/cn/solutions/ticketing-v2" title="客服工单系统" class="sub-menu-item">工单系统</a></li>
+                    <li><a href="/cn/solutions/project-management" title="项目管理系统" class="sub-menu-item">项目管理</a></li>
+                    <li><a href="/cn/solutions/asset-management" title="固定资产管理 / IT 资产管理" class="sub-menu-item">固定资产管理</a></li>
+                    <li><a href="/cn/solutions/hr-management" title="HR 人事管理 / 人力资源管理系统" class="sub-menu-item">HR 人事管理</a></li>
                   </ul>
                 </li>
 

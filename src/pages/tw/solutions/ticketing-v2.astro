@@ -1,13 +1,12 @@
 ---
 import BaseTW from "../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
-import AIAvatar from "../../../components/AIAvatar.astro";
 ---
 
 <BaseTW
-  title="AI 驅動的智能工單系統 - NocoBase"
-  description="基於 NocoBase 的 AI 驅動智能工單系統，T型數據架構支持多業務場景，AI 員工團隊自動分類、智能回覆、知識推薦，SLA 全程監控，實現工單全生命週期智能化管理。"
-  keywords="NocoBase 工單系統, AI 工單, 智能客服, SLA管理, 知識庫, 工單分類"
+  title="工單系統 — 開源客服工單管理 | NocoBase"
+  description="基於 NocoBase 無程式碼平台的開源工單系統：客戶報修、智慧派工、SLA 計時、優先級、AI 分類、滿意度評價、客服工作台。開箱即用，適合中小客服團隊與售後服務團隊。"
+  keywords="工單系統, 客服工單系統, 開源工單, help desk, ticketing 系統, 工單管理, SLA 管理, 售後系統, 客戶服務系統, NocoBase"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -15,877 +14,337 @@ import AIAvatar from "../../../components/AIAvatar.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <h1 class="fw-bold mt-2 mb-3">AI 驅動的<br/>智能工單系統</h1>
+            <div class="module-breadcrumb mb-2">
+              <a href="/tw/solutions/all-in-one" class="text-muted small text-decoration-none">整合式業務管理系統</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">工單系統模組</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">工單系統</h1>
             <p class="para-desc text-muted">
-              讓客服更專注於解決問題，而非繁瑣的流程操作。基於 NocoBase 無代碼平臺，採用 T 型數據架構統一管理多種業務場景，AI 員工團隊貫穿工單全生命週期，實現從創建到閉環的智能化管理。
+              基於 NocoBase 無程式碼平台構建。<strong>客戶報修 → 智慧派工 → 處理 → 滿意度評價</strong> 的完整鏈路，內建 SLA 計時、優先級管理、AI 智慧分類與客服工作台。
             </p>
 
-            <!-- 核心價值 -->
             <div class="row mt-4 g-3">
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">多源統一接入</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">AI 智能分流</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">SLA 全程監控</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-                  <i class="uil uil-check-circle text-success me-2"></i>
-                  <span class="small">知識自動沉澱</span>
-                </div>
-              </div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">SLA 自動計時</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">4 級優先級</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">AI 智慧分類</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">開源免費</span></div></div>
             </div>
 
-            <!-- 適用場景標籤 -->
             <div class="row mt-4">
               <div class="col-auto">
                 <div class="d-flex align-items-center flex-wrap">
                   <span class="text-muted me-2">適用場景：</span>
-                  <span class="badge bg-soft-primary me-2">設備維修</span>
-                  <span class="badge bg-soft-primary me-2">IT 支持</span>
-                  <span class="badge bg-soft-primary me-2">客戶投訴</span>
-                  <span class="badge bg-soft-primary">諮詢建議</span>
+                  <span class="badge bg-soft-primary me-2">客服售後</span>
+                  <span class="badge bg-soft-primary me-2">IT 服務台</span>
+                  <span class="badge bg-soft-primary me-2">設備維保</span>
+                  <span class="badge bg-soft-primary">SaaS 客服</span>
                 </div>
               </div>
             </div>
 
-            <!-- 按鈕 -->
-            <div class="mt-4 pt-2">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
-                <i class="uil uil-play me-1"></i>線上示範
-              </a>
-              <a href="#how-to-use" class="btn btn-outline-primary">
-                <i class="uil uil-download-alt me-1"></i>如何使用
-              </a>
-            </div>
-
-            <div class="mt-3 p-2" style="background-color: #fff3e0; border-left: 3px solid #ff9800; border-radius: 4px;">
-              <small class="text-muted">
-                <i class="uil uil-info-circle me-1"></i>Alpha 版本已上線，歡迎體驗，功能持續更新中
-              </small>
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>線上體驗 Demo</a>
+              <a href="/tw/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>查看完整方案</a>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
 
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="text-center">
-            <div class="position-relative">
-              <img
-                src="https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg"
-                alt="通用工單追蹤系統界面"
-                class="img-fluid rounded shadow"
-              />
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div> <!--end container-->
-  </section><!--end section-->
-  <!-- Hero/Banner End -->
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-tickets-cover-260521.jpg" alt="工單系統介面" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
 
-  <!-- Pain Points Start -->
-  <section class="section" id="pain-points">
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">您是否面臨這些問題？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">企業在日常運營中面臨多種服務請求，來源分散、流程各異、缺乏統一管理</p>
+            <h4 class="title mb-4">工單處理流程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">從客戶報修到結案評價的完整閉環，SLA 全程計時</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">成本高、定製慢</h5>
-              </div>
-              <p class="text-muted mb-0">SaaS 工單系統價格高昂，定製開發週期長、成本難以預估，業務需求變化時難以快速調整。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">系統割裂、數據孤島</h5>
-              </div>
-              <p class="text-muted mb-0">設備維修、IT支持、客戶投訴等請求分散在不同系統，難以統一分析和決策。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">響應慢、過程不透明</h5>
-              </div>
-              <p class="text-muted mb-0">請求在系統間流轉效率低，客戶無法追蹤進度，頻繁詢問增加客服壓力。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">質量難保障</h5>
-              </div>
-              <p class="text-muted mb-0">缺乏 SLA 監控機制，超時和差評無法及時預警，服務質量參差不齊。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-book-alt text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">知識無法沉澱</h5>
-              </div>
-              <p class="text-muted mb-0">解決方案散落在各處，新人上手慢，同樣的問題反覆解決，效率低下。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <i class="uil uil-robot text-muted h3 mb-0 me-3"></i>
-                <h5 class="mb-0">AI 能力缺失</h5>
-              </div>
-              <p class="text-muted mb-0">傳統系統缺乏 AI 輔助，人工分類耗時費力，無法實現智能推薦和自動回覆。</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Pain Points End -->
-
-  <!-- Solution Overview Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">我們的解決方案</h4>
-            <p class="para-desc mx-auto text-muted mb-0">基於 NocoBase 無代碼平臺構建的通用工單中臺，實現統一入口、智能分發、多態業務、閉環反饋</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- 核心模塊 -->
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-exchange rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">多源統一接入</h5>
-              <p class="text-muted mt-2">公開表單、客戶門戶、郵件解析、API/Webhook，所有渠道統一管理，自動去重檢查</p>
-              <i class="uil uil-exchange full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-brain rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">AI 智能分流</h5>
-              <p class="text-muted mt-2">自動識別意圖、分析情緒、評估緊急度，結合技能匹配和負載均衡智能分派</p>
-              <i class="uil uil-brain full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-clock rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">SLA 全程監控</h5>
-              <p class="text-muted mt-2">P0-P3 四級優先級，響應/解決時效自動追蹤，超時預警和升級機制</p>
-              <i class="uil uil-clock full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="icons text-start">
-              <i class="uil uil-star rounded h3 mb-0"></i>
-            </div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">閉環反饋</h5>
-              <p class="text-muted mt-2">多維度滿意度評價、NPS 評分、差評預警和跟進，持續提升服務質量</p>
-              <i class="uil uil-star full-img"></i>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- Solution Overview End -->
-
-  <!-- T型架構 Start -->
-  <section class="section" id="architecture">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-success rounded-pill mb-3">核心設計</span>
-            <h4 class="title mb-4">T 型數據架構</h4>
-            <p class="para-desc mx-auto text-muted mb-0">所有工單共享主表統一流轉，業務特有字段下沉附表，新增業務類型只需添加附表</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="card border-0 shadow">
             <div class="card-body p-4">
-              <!-- T 型架構圖 -->
-              <div class="text-center mb-4">
-                <div class="d-inline-block p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 400px;">
-                  <strong>工單主表 (nb_tts_tickets)</strong>
-                  <div class="small mt-2 opacity-75">工單號 | 標題 | 狀態 | 優先級 | 處理人 | SLA | AI分析結果</div>
-                </div>
-              </div>
-
-              <!-- 連接線 -->
-              <div class="text-center mb-3">
-                <div style="width: 2px; height: 30px; background: #dee2e6; margin: 0 auto;"></div>
-                <div style="width: 60%; height: 2px; background: #dee2e6; margin: 0 auto;"></div>
-              </div>
-
-              <!-- 業務附表 -->
-              <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <div class="p-3 rounded text-center" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 180px;">
-                  <i class="uil uil-wrench text-warning h4 mb-2"></i>
-                  <strong class="text-dark d-block">設備維修</strong>
-                  <div class="small text-muted mt-2">設備序列號 | 故障碼<br/>備件清單 | 現場照片</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 180px;">
-                  <i class="uil uil-desktop text-primary h4 mb-2"></i>
-                  <strong class="text-dark d-block">IT 支持</strong>
-                  <div class="small text-muted mt-2">資產編號 | OS版本<br/>遠程地址 | 錯誤代碼</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 180px;">
-                  <i class="uil uil-comment-exclamation text-danger h4 mb-2"></i>
-                  <strong class="text-dark d-block">客戶投訴</strong>
-                  <div class="small text-muted mt-2">涉及訂單 | 投訴等級<br/>賠償方案 | 根本原因</div>
-                </div>
-                <div class="p-3 rounded text-center" style="background: #f5f5f5; border: 2px dashed #9e9e9e; min-width: 180px;">
-                  <i class="uil uil-plus text-muted h4 mb-2"></i>
-                  <strong class="text-muted d-block">更多業務...</strong>
-                  <div class="small text-muted mt-2">按需擴展<br/>主流程不變</div>
-                </div>
-              </div>
-
-              <!-- 優勢說明 -->
-              <div class="row mt-4 pt-3 border-top">
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-chart-bar text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">統一報表</h6>
-                  <p class="text-muted small mb-0">一張主表統計所有工單</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-sync text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">流程複用</h6>
-                  <p class="text-muted small mb-0">核心流程只改一處</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="uil uil-plus-circle text-primary h4"></i>
-                  <h6 class="mt-2 mb-1">靈活擴展</h6>
-                  <p class="text-muted small mb-0">新業務只需加附表</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- T型架構 End -->
-
-  <!-- AI 員工 Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-primary rounded-pill mb-3">AI 原生</span>
-            <h4 class="title mb-4">AI 員工團隊</h4>
-            <p class="para-desc mx-auto text-muted mb-0">不是"加個 AI 按鈕"，而是 AI 員工融入每個環節。每位 AI 有明確的角色、職責、性格</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <!-- Sam -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="sam" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Sam</h5>
-              <span class="badge bg-soft-primary mb-2">服務檯主管</span>
-              <p class="text-muted mt-2 small">工單分流、優先級評估、升級決策、SLA風險識別</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">觸發：工單創建時自動</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Grace -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="grace" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Grace</h5>
-              <span class="badge bg-soft-primary mb-2">客戶成功專家</span>
-              <p class="text-muted mt-2 small">回覆生成、語氣調整、投訴處理、情商防火牆</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">觸發：點擊"AI回覆"</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Max -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="max" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Max</h5>
-              <span class="badge bg-soft-primary mb-2">知識助手</span>
-              <p class="text-muted mt-2 small">相似案例、知識推薦、解決方案綜合、知識生成</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">觸發：工單詳情頁自動</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <!-- Lexi -->
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
-            <div class="text-start">
-              <AIAvatar name="lexi" class="ai-avatar-lg" />
-            </div>
-            <div class="card-body p-0 mt-3">
-              <h5 class="title text-dark">Lexi</h5>
-              <span class="badge bg-soft-primary mb-2">翻譯官</span>
-              <p class="text-muted mt-2 small">多語言翻譯、質量審核、敏感信息攔截</p>
-              <div class="border-top pt-2 mt-3">
-                <span class="small text-muted">觸發：檢測到外語自動</span>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <!-- 情商防火牆示例 -->
-      <div class="row justify-content-center mt-5">
-        <div class="col-lg-10">
-          <div class="card border-0 shadow-sm" style="background: #f8f9fa;">
-            <div class="card-body p-4">
-              <h5 class="mb-3"><AIAvatar name="grace" class="ai-avatar-sm me-2" />Grace 的情商防火牆</h5>
-              <p class="text-muted mb-3">自動檢測並優化客服回覆中的負面表達，避免二次投訴</p>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="bg-white rounded p-3 mb-3 mb-md-0 border">
-                    <span class="badge bg-secondary mb-2">原文</span>
-                    <p class="mb-0 small">"這不是我們的問題，你自己設置錯了"</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="bg-white rounded p-3 border">
-                    <span class="badge bg-primary mb-2">優化後</span>
-                    <p class="mb-0 small">"經過排查，問題出在配置環節。我來幫您一起調整設置，確保正常使用"</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- AI 員工 End -->
-
-  <!-- 知識循環 Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <span class="badge bg-soft-warning rounded-pill mb-3">知識管理</span>
-            <h4 class="title mb-4">知識自循環體系</h4>
-            <p class="para-desc mx-auto text-muted mb-0">工單解決後自動沉澱為知識，下次遇到相似問題時 AI 自動推薦，形成知識沉澱-知識應用的閉環</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <!-- 循環流程圖 -->
-          <div class="card border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-check-circle text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">工單解決</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-analysis text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">AI 評估價值</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">生成知識文章</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-eye text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">人工審核發佈</div>
-                </div>
-              </div>
-
-              <div class="text-center my-3">
-                <i class="uil uil-corner-down-left h3 text-muted"></i>
-              </div>
-
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-book-open text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">知識庫</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
                   <i class="uil uil-ticket text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">相似工單</div>
+                  <div class="small fw-medium">建立</div>
+                  <div class="small text-muted">多渠道</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-lightbulb text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">AI 推薦知識</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-robot text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">智慧分類</div>
+                  <div class="small text-muted">AI 識別</div>
                 </div>
-                <i class="uil uil-arrow-right h4 text-muted"></i>
-                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
-                  <i class="uil uil-bolt text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">快速解決</div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-users-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">派工</div>
+                  <div class="small text-muted">按組規則</div>
                 </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-wrench text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">處理</div>
+                  <div class="small text-muted">SLA 計時</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-thumbs-up h3 mb-2"></i>
+                  <div class="small fw-medium">評價</div>
+                  <div class="small opacity-75">結案歸檔</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">階段</th>
+                      <th class="border-0 py-3">關鍵動作</th>
+                      <th class="border-0 py-3">系統紀錄</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">建立</td>
+                      <td class="py-3 text-muted">客戶郵件、表單、IM 多渠道提交；關聯客戶與產品</td>
+                      <td class="py-3 text-muted">工單單號、來源、客戶檔案</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">智慧分類</td>
+                      <td class="py-3 text-muted">AI 識別問題類別（帳號／功能／Bug），自動設優先級</td>
+                      <td class="py-3 text-muted">分類標籤、優先級、信賴度</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">派工</td>
+                      <td class="py-3 text-muted">按規則分給對應小組／客服員，緊急工單自動通知值班</td>
+                      <td class="py-3 text-muted">負責人、派工紀錄、組佇列</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">處理</td>
+                      <td class="py-3 text-muted">客服處理、與客戶溝通；SLA 計時，逾期前自動告警</td>
+                      <td class="py-3 text-muted">處理日誌、SLA 狀態、等待原因</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">評價</td>
+                      <td class="py-3 text-muted">結案推送客戶評價（1-5 星 + 文字），按客服／產品彙整</td>
+                      <td class="py-3 text-muted">滿意度紀錄、歸檔工單、KPI</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
 
-      <!-- 知識轉化條件 -->
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-10">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-file-check-alt text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">描述完整</h6>
-                  <p class="text-muted small mb-0">描述 ≥ 200 字符</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-comments text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">溝通充分</h6>
-                  <p class="text-muted small mb-0">評論 ≥ 2 條</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-star text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">質量達標</h6>
-                  <p class="text-muted small mb-0">AI 評分 ≥ 0.6</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 知識循環 End -->
-
-  <!-- SLA Config Start -->
+  <!-- Core Features Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">SLA 服務級別管理</h4>
-            <p class="para-desc mx-auto text-muted mb-0">按優先級設置響應和解決時間，自動監控、預警、升級，掛起時 SLA 自動暫停</p>
+            <h4 class="title mb-4">核心功能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">從受理到結案的完整客服工單管理日常</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
+        </div>
+      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">優先級</th>
-                  <th class="border-0 py-3">響應時間</th>
-                  <th class="border-0 py-3">解決時間</th>
-                  <th class="border-0 py-3">典型場景</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3"><span class="badge bg-dark">P0 緊急</span></td>
-                  <td class="py-3">15 分鐘</td>
-                  <td class="py-3">2 小時</td>
-                  <td class="py-3 text-muted small">系統宕機、生產線停止</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-primary">P1 高</span></td>
-                  <td class="py-3">1 小時</td>
-                  <td class="py-3">8 小時</td>
-                  <td class="py-3 text-muted small">重要功能故障、影響較大</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-soft-primary text-primary">P2 中</span></td>
-                  <td class="py-3">4 小時</td>
-                  <td class="py-3">24 小時</td>
-                  <td class="py-3 text-muted small">一般問題、有替代方案</td>
-                </tr>
-                <tr>
-                  <td class="py-3"><span class="badge bg-secondary">P3 低</span></td>
-                  <td class="py-3">8 小時</td>
-                  <td class="py-3">72 小時</td>
-                  <td class="py-3 text-muted small">優化建議、功能諮詢</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-4">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-bell text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">提前預警</h6>
-                  <p class="text-muted small mb-0">剩餘時間 &lt; 20% 時通知處理人</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-exclamation-triangle text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">超時預警</h6>
-                  <p class="text-muted small mb-0">超時後通知處理人+主管</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
-                <i class="uil uil-arrow-growth text-primary h4 me-3 mb-0"></i>
-                <div>
-                  <h6 class="mb-1">自動升級</h6>
-                  <p class="text-muted small mb-0">超時 1 小時通知部門經理</p>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-stopwatch rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">SLA 計時與告警</h5>
+              <p class="text-muted mt-2">按優先級自動計算回應／解決時限；逾期前自動告警，逾期工單置紅色；SLA 達成率可看板呈現。</p>
             </div>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- SLA Config End -->
+        </div>
 
-  <!-- 價值量化 Start -->
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-bolt-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">4 級優先級</h5>
+              <p class="text-muted mt-2">緊急、高、中、低四級，搭配不同回應時長；緊急工單自動置頂並通知值班人員。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-robot rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">AI 智慧分類</h5>
+              <p class="text-muted mt-2">新工單 AI 自動識別問題類別（帳號問題／功能諮詢／Bug 回報等），按規則派工給對應小組。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-pause-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">等待原因細分</h5>
+              <p class="text-muted mt-2">「等待客戶回覆」「等待第三方」「需求待評審」 — 等待中的工單不計入 SLA 逾期，公平合理。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-clipboard-notes rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">客服工作台</h5>
+              <p class="text-muted mt-2">客服登入直接看到分給自己的工單；按到期時間排序，一螢幕看待處理、處理中、即將逾期。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">工單儀表板</h5>
+              <p class="text-muted mt-2">今日新增／結案／待處理／逾期分布；按客服員、客戶、產品線彙整，管理者縱覽全局。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
+            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="text-muted mb-2">更多功能完善中</h5>
+              <p class="text-muted small mt-2 mb-0">規劃中：滿意度評價、轉派與升級流程、回覆範本、知識庫整合</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">AI 帶來的價值</h4>
-            <p class="para-desc mx-auto text-muted mb-0">人與 AI 協同，而非 AI 替代人。讓 AI 處理重複工作，讓人專注於創造價值</p>
+            <h4 class="title mb-4">下載與部署</h4>
+            <p class="para-desc mx-auto text-muted mb-0">本模組包含在整合式業務管理系統的備份範本中，統一部署</p>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">50%+</div>
-              <h5 class="mb-2">分揀效率提升</h5>
-              <p class="text-muted small mb-0">AI 自動分類減少人工分揀時間</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下載備份範本</h5>
+                <p class="text-muted mt-2">整合式方案備份，還原後包含本模組在內的 6 大模組全部預置資料</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>下載 .nbdata 備份</a>
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_sql_260521.zip" class="btn btn-link btn-sm text-muted">或下載 SQL 壓縮包</a>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">30%</div>
-              <h5 class="mb-2">二次投訴減少</h5>
-              <p class="text-muted small mb-0">情商防火牆優化回覆語氣</p>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>查看安裝文件</h5>
+                <p class="text-muted mt-2">詳細的還原步驟、常見問題與注意事項，正在準備中</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <button class="btn btn-outline-secondary" disabled>即將推出</button>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
             </div>
           </div>
-        </div><!--end col-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
 
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">20%</div>
-              <h5 class="mb-2">超時率降低</h5>
-              <p class="text-muted small mb-0">SLA 預警提前干預</p>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-3 col-md-6 mt-4 pt-2">
-          <div class="card border-0 shadow text-center h-100">
-            <div class="card-body p-4">
-              <div class="h1 text-primary mb-3">10%+</div>
-              <h5 class="mb-2">首解率提升</h5>
-              <p class="text-muted small mb-0">知識推薦加速問題解決</p>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 價值量化 End -->
-
-  <!-- 差異化優勢 Start -->
+  <!-- CTA Start -->
   <section class="section bg-light">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">為什麼選擇我們？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">與傳統 SaaS 工單系統和自研系統的對比</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="table-responsive">
-            <table class="table table-hover bg-white rounded shadow-sm mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th class="border-0 py-3">對比維度</th>
-                  <th class="border-0 py-3">SaaS 工單</th>
-                  <th class="border-0 py-3">自研系統</th>
-                  <th class="border-0 py-3 text-primary">NocoBase 方案</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-3 fw-medium">上線速度</td>
-                  <td class="py-3 text-muted">開箱即用</td>
-                  <td class="py-3 text-muted">數月開發</td>
-                  <td class="py-3 text-primary">配置即用，快速上線</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">定製能力</td>
-                  <td class="py-3 text-muted">受限</td>
-                  <td class="py-3 text-muted">完全可控</td>
-                  <td class="py-3 text-primary">無代碼靈活定製</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">數據安全</td>
-                  <td class="py-3 text-muted">雲端託管</td>
-                  <td class="py-3 text-muted">私有部署</td>
-                  <td class="py-3 text-primary">私有部署，數據完全掌控</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">AI 集成</td>
-                  <td class="py-3 text-muted">有限/加價</td>
-                  <td class="py-3 text-muted">需自行開發</td>
-                  <td class="py-3 text-primary">AI 原生，深度集成</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">擴展性</td>
-                  <td class="py-3 text-muted">功能固定</td>
-                  <td class="py-3 text-muted">需代碼修改</td>
-                  <td class="py-3 text-primary">T型架構，按需擴展</td>
-                </tr>
-                <tr>
-                  <td class="py-3 fw-medium">總體成本</td>
-                  <td class="py-3 text-muted">訂閱費用高</td>
-                  <td class="py-3 text-muted">開發成本高</td>
-                  <td class="py-3 text-primary">一次購買，長期使用</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- 差異化優勢 End -->
-
-  <!-- How to Use Start -->
-  <section class="section" id="how-to-use">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">如何使用？</h4>
-            <p class="para-desc mx-auto text-muted mb-0">三個步驟快速部署智能工單系統到你的環境</p>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-download-alt h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>安裝 NocoBase</h5>
-                <p class="text-muted mt-2">按照我們的安裝文檔，部署 NocoBase 到你的服務器</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/get-started/quickstart" target="_blank" class="btn btn-primary">查看安裝文檔</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-book-open h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>瞭解方案</h5>
-                <p class="text-muted mt-2">閱讀方案介紹文檔，瞭解系統功能、架構設計和使用場景</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/" target="_blank" class="btn btn-outline-primary">方案介紹</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="col-lg-4 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center">
-                <i class="uil uil-upload h1 text-primary"></i>
-              </div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>還原到系統</h5>
-                <p class="text-muted mt-2">按照還原教程，將智能工單系統部署到你的 NocoBase 環境</p>
-              </div>
-              <div class="mt-3">
-                <a href="https://v2.docs.nocobase.com/cn/solution/ticket-system/installation" target="_blank" class="btn btn-outline-primary">還原教程</a>
-              </div>
-            </div>
-          </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- How to Use End -->
-
-  <!-- CTA Section Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h3 class="title mb-4">讓 AI 重新定義工單管理</h3>
-          <p class="text-muted para-desc mx-auto mb-0">
-            基於 NocoBase 2.x 構建的 AI 驅動智能工單系統。如果您有定製需求或想了解更多細節，歡迎聯繫我們。
-          </p>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">開始使用</h3>
+          <p class="text-muted para-desc mx-auto mb-0">本模組同樣整合在 <a href="/tw/solutions/all-in-one">整合式業務管理系統</a> 中，可單獨使用，也可與 CRM、銷售管理、專案管理、固定資產管理、HR 協同。</p>
           <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
-              <i class="uil uil-play me-1"></i>Live Demo
-            </a>
-            <a href="/tw/contact" class="btn btn-outline-primary mt-2">
-              <i class="uil uil-envelope me-1"></i>聯繫我們
-            </a>
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>線上體驗 Demo</a>
+            <a href="/tw/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>聯絡諮詢</a>
           </div>
-        </div><!--end col-->
-      </div><!--end row-->
-    </div><!--end container-->
-  </section><!--end section-->
-  <!-- CTA Section End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
 
   <ShapeFooter />
 </BaseTW>
 
 <style>
-/* 工單 2.0 頁面樣式 */
-code {
-  background: #f5f5f5;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 13px;
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
 }
 
-.text-purple {
-  color: #9c27b0 !important;
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
 }
 
-/* AI 員工頭像樣式 */
-.ai-avatar-lg img {
-  width: 56px;
-  height: 56px;
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
 }
-
-.ai-avatar-sm img {
-  width: 28px;
-  height: 28px;
+.module-breadcrumb i {
   vertical-align: middle;
+  margin: 0 4px;
+}
+
+.roadmap-card-grid {
+  background: rgba(108, 117, 125, 0.03);
+  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
+  opacity: 0.85;
 }
 </style>
