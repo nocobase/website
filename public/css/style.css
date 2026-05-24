@@ -337,6 +337,37 @@ p {
   font-weight: 700;
   color: #161c2d !important;
 }
+#topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item.submodule-item {
+  padding-left: 30px;
+  font-size: 12px;
+  color: #6c757d !important;
+}
+#topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item.submodule-item:hover {
+  color: #2f55d4 !important;
+}
+/* 默认隐藏子模块,鼠标悬浮一体化主项或任意子模块时展开 */
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col li.submodule-li {
+  display: none;
+}
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col:has(li.all-in-one-item:hover) li.submodule-li,
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col:has(li.submodule-li:hover) li.submodule-li {
+  display: block;
+}
+/* 一体化主项小箭头 — 暗示有子模块,悬浮时旋转 */
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col li.all-in-one-item > a::after {
+  content: " ›";
+  color: #8a94a6;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col:has(li.all-in-one-item:hover) li.all-in-one-item > a::after,
+#topnav .navigation-menu > li .submenu.megamenu .solutions-col:has(li.submodule-li:hover) li.all-in-one-item > a::after {
+  transform: rotate(90deg);
+  color: #2f55d4;
+}
 #topnav .navigation-menu .has-submenu .menu-arrow {
   border: solid #212529;
   border-radius: 0.5px;
