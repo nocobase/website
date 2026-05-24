@@ -1,14 +1,14 @@
 {
   "id": 1055,
-  "title": "NocoBase v2.1.0-alpha.40",
-  "title_cn": "NocoBase v2.1.0-alpha.40",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-alpha.40: add backup create and restore commands",
+  "title_cn": "NocoBase v2.1.0-alpha.40：添加 backup create 和  backup restore 命令",
+  "title_ja": "NocoBase v2.1.0-alpha.40：backup create` と `backup restore` コマンドを追加しました",
   "description": "Release Note of v2.1.0-alpha.40",
   "description_cn": "v2.1.0-alpha.40 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.0-alpha.40  リリースノート",
   "slug": "v2.1.0-alpha.40",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-22T05:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-23T21:38:53.817Z",
+        "updatedAt": "2026-05-23T21:38:53.817Z",
+        "articles_id": 1055,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-23T21:36:44.706Z",
+    "updatedAt": "2026-05-23T21:36:44.714Z",
+    "id": 2408,
+    "title": "develop",
+    "filename": "develop-keuz72.jpg",
+    "extname": ".jpg",
+    "size": 80625,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-keuz72.jpg",
+    "preview": "https://static-docs.nocobase.com/develop-keuz72.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-21T22:22:18.357Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-23T21:38:53.797Z"
 }
