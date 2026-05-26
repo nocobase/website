@@ -352,18 +352,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-04-16T19:56:02.379Z",
-    "updatedAt": "2026-04-16T19:56:02.399Z",
-    "id": 2333,
-    "title": "Frame 102",
-    "filename": "Frame 102-u1quan.png",
+    "createdAt": "2026-05-26T18:48:14.686Z",
+    "updatedAt": "2026-05-26T18:48:14.692Z",
+    "id": 2413,
+    "title": "Frame 102-u1quan",
+    "filename": "Frame 102-u1quan-rs7j03.png",
     "extname": ".png",
-    "size": 332886,
+    "size": 311813,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Frame%20102-u1quan.png",
-    "preview": "https://static-docs.nocobase.com/Frame%20102-u1quan.png",
+    "url": "https://static-docs.nocobase.com/Frame%20102-u1quan-rs7j03.png",
+    "preview": "https://static-docs.nocobase.com/Frame%20102-u1quan-rs7j03.png",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -374,5 +374,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-17T04:50:06.455Z"
+  "updatedAt": "2026-05-26T18:48:19.872Z"
 }
