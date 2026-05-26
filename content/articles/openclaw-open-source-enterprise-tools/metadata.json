@@ -2,13 +2,13 @@
   "id": 1058,
   "title": "OpenClaw and 5 Open-Source Tools for Monitoring Business Workflows",
   "title_cn": "OpenClaw 如何用于真实业务？推荐 5 个开源工具",
-  "title_ja": null,
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title_ja": "OpenClaw を実務で活用するには？おすすめのオープンソースツール 5 選",
+  "description": "Learn how OpenClaw can support real enterprise workflows, with five open source tools including NocoBase, n8n, RAGFlow, ERPNext, and Plane.",
+  "description_cn": "介绍 OpenClaw 在企业流程中的实际用法，并推荐 NocoBase、n8n、RAGFlow、ERPNext、Plane 等 5 个开源工具",
+  "description_ja": "OpenClaw を企業業務で活用する方法と、NocoBase、n8n、RAGFlow、ERPNext、Plane など 5 つのオープンソースツールを紹介します。\n",
   "slug": "openclaw-open-source-enterprise-tools",
   "publishedAt": "2026-05-26T18:26:01.597Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -525,10 +525,10 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-26T18:52:15.755Z"
+  "updatedAt": "2026-05-26T19:14:26.349Z"
 }
