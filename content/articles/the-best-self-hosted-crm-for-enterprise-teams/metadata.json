@@ -508,18 +508,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-04-24T10:20:34.380Z",
-    "updatedAt": "2026-04-24T10:20:34.393Z",
-    "id": 2344,
-    "title": "Group 29",
-    "filename": "Group 29-cca3df.png",
+    "createdAt": "2026-05-26T18:48:40.831Z",
+    "updatedAt": "2026-05-26T18:48:40.837Z",
+    "id": 2415,
+    "title": "Group 29-cca3df",
+    "filename": "Group 29-cca3df-c3xupk.png",
     "extname": ".png",
-    "size": 357332,
+    "size": 80144,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Group%2029-cca3df.png",
-    "preview": "https://static-docs.nocobase.com/Group%2029-cca3df.png",
+    "url": "https://static-docs.nocobase.com/Group%2029-cca3df-c3xupk.png",
+    "preview": "https://static-docs.nocobase.com/Group%2029-cca3df-c3xupk.png",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -530,5 +530,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-24T10:20:55.633Z"
+  "updatedAt": "2026-05-26T18:48:46.732Z"
 }
