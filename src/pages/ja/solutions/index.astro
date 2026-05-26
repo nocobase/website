@@ -1,0 +1,238 @@
+---
+import BaseJA from "../../../layouts/BaseJA.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+
+// ソリューションライブラリ — 新しいソリューションを追加するには、ここに 1 件追記するだけ
+const solutions = [
+  {
+    title: "オールインワン業務管理システム",
+    desc: "CRM、営業、チケット、プロジェクト、固定資産、人事の 6 大モジュールを同一システムに統合し、AI 社員とワークフローを内蔵。",
+    href: "/ja/solutions/all-in-one",
+    cover: "https://static-docs.nocobase.com/all-in-one-cover-2026-05-20.jpg",
+    icon: "uil-layer-group",
+    categories: ["オールインワン"],
+    status: "更新中",
+    tags: ["オールインワン", "複数業務ライン", "AI 社員"],
+  },
+  {
+    title: "CRM Plus",
+    desc: "リード、フォロー、コンバージョン、顧客 360 までの完全な営業クローズドループ。モジュールは分割可能で、AI 社員と深く統合し、多通貨とダッシュボードを内蔵。",
+    href: "/ja/solutions/crm-v2",
+    cover: "https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg",
+    icon: "uil-chart-growth",
+    categories: ["顧客と営業"],
+    tags: ["CRM", "営業管理", "顧客 360"],
+  },
+  {
+    title: "CRM ベーシック",
+    desc: "柔軟で深くカスタマイズ可能な CRM の基盤フレームワーク。データ主権を完全に掌握し、その上で拡張・改造できます。",
+    href: "/ja/solutions/crm",
+    cover: "https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg",
+    icon: "uil-users-alt",
+    categories: ["顧客と営業"],
+    tags: ["CRM", "カスタマイズ可能", "基盤"],
+  },
+  {
+    title: "スマートチケットシステム 2.0",
+    desc: "顧客の障害報告から案件完了までの完全なライフサイクル。T 型データアーキテクチャが複数の業務シーンに対応し、AI 社員が分類と処理を支援。",
+    href: "/ja/solutions/ticketing-v2",
+    cover: "https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg",
+    icon: "uil-robot",
+    categories: ["カスタマーサービス"],
+    tags: ["チケット", "カスタマーサポート", "AI 分類"],
+  },
+  {
+    title: "チケット管理システム（1.x）",
+    desc: "CRM の重要な補完として、完全なチケットライフサイクル管理を提供し、アフターサービスやカスタマーサポートのシーンに最適。",
+    href: "/ja/solutions/ticketing",
+    cover: "https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png",
+    icon: "uil-comment-alt-lines",
+    categories: ["カスタマーサービス"],
+    tags: ["チケット", "アフターサービス", "1.x"],
+  },
+  {
+    title: "プロジェクト管理（1.x）",
+    desc: "要件から納品までのプロジェクト全ライフサイクルを管理し、タスク、イテレーション、進捗、マイルストーン、工数をカバー。",
+    href: "/ja/solutions/project-management",
+    cover: "https://static-docs.nocobase.com/screenshot-20250909-151855-1.png",
+    icon: "uil-clipboard-notes",
+    categories: ["プロジェクトと開発"],
+    tags: ["プロジェクト", "開発コラボレーション", "マイルストーン", "1.x"],
+  },
+];
+
+// フィルターカテゴリ(順序が表示順)
+const categories = ["すべて", "オールインワン", "顧客と営業", "カスタマーサービス", "プロジェクトと開発"];
+---
+
+<BaseJA
+  title="その他のソリューション - NocoBase ソリューションライブラリ"
+  description="NocoBase ソリューションライブラリ:オールインワン業務管理システムに加え、CRM、営業、チケット、プロジェクト管理などの独立した業務ソリューションをシーン別に絞り込めます。いずれも NocoBase ノーコードプラットフォームをベースに、すぐに使えて自己ホスティングも可能。"
+  keywords="NocoBase ソリューション, ソリューションライブラリ, オールインワン業務管理システム, CRM システム, チケットシステム, プロジェクト管理システム, ノーコードソリューション, オープンソース業務システム"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">ソリューションライブラリ</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              NocoBase ノーコードプラットフォームで蓄積した業務ソリューション。シーンに合わせて最適な 1 つをお選びください。いずれもすぐに使えて自己ホスティングに対応、新しいソリューションも続々登場します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section">
+    <div class="container">
+      <!-- 筛选 chips -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "すべて" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- 卡片网格 -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={s.categories.join(",")}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              <div class="sol-cover-wrap">
+                <img src={s.cover} alt={s.title} class="sol-cover" loading="lazy" />
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.desc}</p>
+                <a href={s.href} class="text-primary small d-inline-block stretched-link">ソリューションを見る <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {s.tags.map((t) => <span class="sol-tag">{t}</span>)}
+                  {s.status && <span class="sol-tag sol-tag-status">{s.status}</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 空状态(暂未匹配) -->
+      <div class="row" id="solution-empty" style="display:none;">
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>このカテゴリにはまだソリューションがありません。続々追加予定です。
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #f4f6fa;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chips = document.querySelectorAll("#solution-filter .filter-chip");
+      const items = document.querySelectorAll("#solution-grid .solution-item");
+      const empty = document.getElementById("solution-empty");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.getAttribute("data-filter");
+          let visible = 0;
+          items.forEach((item) => {
+            const cats = (item.getAttribute("data-categories") || "").split(",");
+            const show = filter === "*" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          if (empty) empty.style.display = visible === 0 ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseJA>

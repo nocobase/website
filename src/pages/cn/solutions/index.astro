@@ -1,0 +1,238 @@
+---
+import BaseCN from "../../../layouts/BaseCN.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+
+// 方案库 — 后续上新方案只需往这里追加一条
+const solutions = [
+  {
+    title: "一体化业务管理系统",
+    desc: "CRM、销售、工单、项目、固定资产、HR 六大模块整合在同一系统内，内置 AI 员工与工作流。",
+    href: "/cn/solutions/all-in-one",
+    cover: "https://static-docs.nocobase.com/all-in-one-cover-2026-05-20.jpg",
+    icon: "uil-layer-group",
+    categories: ["一体化"],
+    status: "更新中",
+    tags: ["一体化", "多业务线", "AI 员工"],
+  },
+  {
+    title: "CRM 升级版",
+    desc: "线索、跟进、转化、客户 360 的完整销售闭环，模块可拆解，深度融合 AI 员工，内置多币种与仪表盘。",
+    href: "/cn/solutions/crm-v2",
+    cover: "https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg",
+    icon: "uil-chart-growth",
+    categories: ["客户与销售"],
+    tags: ["CRM", "销售管理", "客户 360"],
+  },
+  {
+    title: "CRM 基础版",
+    desc: "灵活、可深度定制的 CRM 基础框架，完全掌握数据主权，可在此之上扩展改造。",
+    href: "/cn/solutions/crm",
+    cover: "https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg",
+    icon: "uil-users-alt",
+    categories: ["客户与销售"],
+    tags: ["CRM", "可定制", "基座"],
+  },
+  {
+    title: "智能工单系统 2.0",
+    desc: "客户报障到结案的完整生命周期，T 型数据架构支持多业务场景，AI 员工辅助分类与处理。",
+    href: "/cn/solutions/ticketing-v2",
+    cover: "https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg",
+    icon: "uil-robot",
+    categories: ["客户服务"],
+    tags: ["工单", "客服", "AI 分类"],
+  },
+  {
+    title: "工单管理系统（1.x）",
+    desc: "作为 CRM 的重要补充，提供完整的工单生命周期管理，适合售后与客服场景。",
+    href: "/cn/solutions/ticketing",
+    cover: "https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png",
+    icon: "uil-comment-alt-lines",
+    categories: ["客户服务"],
+    tags: ["工单", "售后", "1.x"],
+  },
+  {
+    title: "项目管理（1.x）",
+    desc: "从需求到交付的项目全生命周期管理，涵盖任务、迭代、进度、里程碑与工作量。",
+    href: "/cn/solutions/project-management",
+    cover: "https://static-docs.nocobase.com/screenshot-20250909-151855-1.png",
+    icon: "uil-clipboard-notes",
+    categories: ["项目与研发"],
+    tags: ["项目", "研发协作", "里程碑", "1.x"],
+  },
+];
+
+// 筛选分类（顺序即展示顺序）
+const categories = ["全部", "一体化", "客户与销售", "客户服务", "项目与研发"];
+---
+
+<BaseCN
+  title="更多方案 - NocoBase 解决方案库"
+  description="NocoBase 解决方案库：一体化业务管理系统，以及 CRM、销售、工单、项目管理等独立业务方案，按场景筛选，均基于 NocoBase 无代码平台，开箱即用、可自部署。"
+  keywords="NocoBase 解决方案, 解决方案库, 一体化业务管理系统, CRM 系统, 工单系统, 项目管理系统, 无代码方案, 开源业务系统"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">解决方案库</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              基于 NocoBase 无代码平台沉淀的业务方案，按场景挑选适合你的那一套。全部开箱即用、支持自部署，更多方案持续上线中。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section">
+    <div class="container">
+      <!-- 筛选 chips -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "全部" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- 卡片网格 -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={s.categories.join(",")}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              <div class="sol-cover-wrap">
+                <img src={s.cover} alt={s.title} class="sol-cover" loading="lazy" />
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.desc}</p>
+                <a href={s.href} class="text-primary small d-inline-block stretched-link">查看方案 <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {s.tags.map((t) => <span class="sol-tag">{t}</span>)}
+                  {s.status && <span class="sol-tag sol-tag-status">{s.status}</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 空状态（暂未匹配） -->
+      <div class="row" id="solution-empty" style="display:none;">
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>该分类暂无方案，更多方案上线中。
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #f4f6fa;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chips = document.querySelectorAll("#solution-filter .filter-chip");
+      const items = document.querySelectorAll("#solution-grid .solution-item");
+      const empty = document.getElementById("solution-empty");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.getAttribute("data-filter");
+          let visible = 0;
+          items.forEach((item) => {
+            const cats = (item.getAttribute("data-categories") || "").split(",");
+            const show = filter === "*" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          if (empty) empty.style.display = visible === 0 ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseCN>

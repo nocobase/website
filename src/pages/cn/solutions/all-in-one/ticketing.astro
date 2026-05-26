@@ -1,0 +1,348 @@
+---
+import BaseCN from "../../../../layouts/BaseCN.astro";
+import ShapeFooter from "../../../../components/ShapeFooter.astro";
+---
+
+<BaseCN
+  title="工单系统 — 开源客服工单管理 | NocoBase"
+  description="基于 NocoBase 无代码平台的开源工单系统：客户报障、智能分派、SLA 计时、优先级、AI 分类、满意度评价、客服工作台。开箱即用，适合中小客服团队与售后服务团队。"
+  keywords="工单系统, 客服工单系统, 开源工单, help desk, ticketing 系统, 工单管理, SLA 管理, 售后系统, 客户服务系统, NocoBase"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <div class="module-breadcrumb mb-2">
+              <a href="/cn/solutions/all-in-one" class="text-muted small text-decoration-none">一体化业务管理系统</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">工单系统模块</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">工单系统</h1>
+            <p class="para-desc text-muted">
+              基于 NocoBase 无代码平台构建。<strong>客户报障 → 智能分派 → 处理 → 满意度评价</strong> 的完整链路，内置 SLA 计时、优先级管理、AI 智能分类与客服工作台。
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">SLA 自动计时</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">4 级优先级</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">AI 智能分类</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">开源免费</span></div></div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">适用场景：</span>
+                  <span class="badge bg-soft-primary me-2">客服售后</span>
+                  <span class="badge bg-soft-primary me-2">IT 服务台</span>
+                  <span class="badge bg-soft-primary me-2">设备维保</span>
+                  <span class="badge bg-soft-primary">SaaS 客服</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>在线体验 Demo</a>
+              <a href="/cn/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>查看完整方案</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-tickets-cover-260521.jpg" alt="工单系统界面" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">工单处理流程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">从客户报障到结案评价的完整闭环，SLA 全程计时</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-ticket text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">创建</div>
+                  <div class="small text-muted">多渠道</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-robot text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">智能分类</div>
+                  <div class="small text-muted">AI 识别</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-users-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">分派</div>
+                  <div class="small text-muted">按组规则</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-wrench text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">处理</div>
+                  <div class="small text-muted">SLA 计时</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-thumbs-up h3 mb-2"></i>
+                  <div class="small fw-medium">评价</div>
+                  <div class="small opacity-75">结案归档</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">阶段</th>
+                      <th class="border-0 py-3">关键动作</th>
+                      <th class="border-0 py-3">系统记录</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">创建</td>
+                      <td class="py-3 text-muted">客户邮件、表单、IM 多渠道提交；关联客户与产品</td>
+                      <td class="py-3 text-muted">工单单号、来源、客户档案</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">智能分类</td>
+                      <td class="py-3 text-muted">AI 识别问题类别（账号/功能/Bug），自动设优先级</td>
+                      <td class="py-3 text-muted">分类标签、优先级、置信度</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">分派</td>
+                      <td class="py-3 text-muted">按规则分给对应小组/客服员，紧急工单自动通知值班</td>
+                      <td class="py-3 text-muted">负责人、分派记录、组队列</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">处理</td>
+                      <td class="py-3 text-muted">客服处理、与客户沟通；SLA 计时，超期前自动告警</td>
+                      <td class="py-3 text-muted">处理日志、SLA 状态、等待原因</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">评价</td>
+                      <td class="py-3 text-muted">结案推送客户评价（1-5 星+文字），按客服/产品聚合</td>
+                      <td class="py-3 text-muted">满意度记录、归档工单、KPI</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
+
+  <!-- Core Features Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">核心功能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">从受理到结案的完整客服工单管理日常</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-stopwatch rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">SLA 计时与告警</h5>
+              <p class="text-muted mt-2">按优先级自动计算响应/解决时限；超期前自动告警，超期工单置红色；SLA 达成率可看板呈现。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-bolt-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">4 级优先级</h5>
+              <p class="text-muted mt-2">紧急、高、中、低四级，匹配不同响应时长；紧急工单自动置顶并通知值班人员。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-robot rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">AI 智能分类</h5>
+              <p class="text-muted mt-2">新工单 AI 自动识别问题类别（账号问题/功能咨询/Bug 报告等），按规则分派给对应小组。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-pause-circle rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">等待原因细分</h5>
+              <p class="text-muted mt-2">"等待客户回复""等待第三方""需求待评审" — 等待中的工单不计入 SLA 超期，公平合理。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-clipboard-notes rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">客服工作台</h5>
+              <p class="text-muted mt-2">客服登录直接看到分给自己的工单；按到期时间排序，一屏看待处理、处理中、即将超期。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">工单仪表盘</h5>
+              <p class="text-muted mt-2">今日新增/结案/待处理/超期分布；按客服员、客户、产品线聚合，管理者纵览全局。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
+            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="text-muted mb-2">功能完善中</h5>
+              <p class="text-muted small mt-2 mb-0">更多能力规划中：满意度评价、转派与升级、模板与快捷回复、知识库联动</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">下载与部署</h4>
+            <p class="para-desc mx-auto text-muted mb-0">本模块包含在一体化业务管理系统的备份模板中，统一部署</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下载备份模板</h5>
+                <p class="text-muted mt-2">一体化方案备份，还原后包含本模块在内的 6 大模块全部预置数据</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>下载 .nbdata 备份</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>查看安装文档</h5>
+                <p class="text-muted mt-2">详细的还原步骤、常见问题与注意事项，正在准备中</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://docs.nocobase.com/cn/solution/all-in-one/installation" target="_blank" class="btn btn-primary"><i class="uil uil-book-open me-1"></i>查看文档</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
+
+  <!-- CTA Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">开始使用</h3>
+          <p class="text-muted para-desc mx-auto mb-0">本模块同样集成在 <a href="/cn/solutions/all-in-one">一体化业务管理系统</a> 中，可单独使用，也可与 CRM、销售管理、项目管理、固定资产管理、HR 协同。</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>在线体验 Demo</a>
+            <a href="/cn/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>联系咨询</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
+
+  <ShapeFooter />
+</BaseCN>
+
+<style>
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
+}
+
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
+}
+
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
+}
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+.roadmap-card-grid {
+  background: rgba(108, 117, 125, 0.03);
+  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
+  opacity: 0.85;
+}
+</style>

@@ -1,0 +1,334 @@
+---
+import BaseVI from "../../../../layouts/BaseVI.astro";
+import ShapeFooter from "../../../../components/ShapeFooter.astro";
+---
+
+<BaseVI
+  title="Hệ thống quản lý bán hàng — Quản lý đơn hàng và công nợ phải thu mã nguồn mở | NocoBase"
+  description="Hệ thống quản lý bán hàng mã nguồn mở dựa trên nền tảng no-code NocoBase: chuỗi hoàn chỉnh báo giá, đơn hàng, hóa đơn, thu tiền, tích hợp sẵn quy trình phê duyệt, đa tệ, KPI công nợ phải thu và phân tích quá hạn."
+  keywords="hệ thống quản lý bán hàng, quản lý đơn hàng bán, báo giá, quản lý hóa đơn, quản lý công nợ phải thu, quản lý thu tiền, quy trình bán hàng, phê duyệt bán hàng, quản lý bán hàng mã nguồn mở, báo giá đa tệ, NocoBase"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <div class="module-breadcrumb mb-2">
+              <a href="/vi/solutions/all-in-one" class="text-muted small text-decoration-none">Hệ thống quản lý kinh doanh tích hợp</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">mô-đun Quản lý bán hàng</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">Hệ thống quản lý bán hàng</h1>
+            <p class="para-desc text-muted">
+              Được xây dựng trên nền tảng no-code NocoBase. Chuỗi hoàn chỉnh <strong>báo giá → đơn hàng → hóa đơn → thu tiền</strong>, tích hợp sẵn workflow phê duyệt bán hàng, báo giá đa tệ, KPI công nợ phải thu và phân tích quá hạn.
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Báo giá đa tệ</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Workflow phê duyệt đơn hàng</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">KPI công nợ phải thu</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Mã nguồn mở miễn phí</span></div></div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">Tình huống áp dụng:</span>
+                  <span class="badge bg-soft-primary me-2">Bán hàng B2B</span>
+                  <span class="badge bg-soft-primary me-2">Đơn hàng ngoại thương</span>
+                  <span class="badge bg-soft-primary me-2">Bán thiết bị</span>
+                  <span class="badge bg-soft-primary">Quản lý công nợ phải thu</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+              <a href="/vi/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>Xem giải pháp đầy đủ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-sales-cover-260521.jpg" alt="Giao diện hệ thống quản lý bán hàng" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Quy trình bán hàng</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Vòng khép kín hoàn chỉnh từ báo giá đến thu tiền, phê duyệt và KPI công nợ phải thu liên thông toàn chuỗi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Báo giá</div>
+                  <div class="small text-muted">Đa tệ</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-shopping-cart text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Đơn hàng</div>
+                  <div class="small text-muted">Workflow phê duyệt</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-truck text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Giao hàng</div>
+                  <div class="small text-muted">Theo dõi vận chuyển</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-receipt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">Hóa đơn</div>
+                  <div class="small text-muted">Tự điền khách hàng</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-money-withdrawal h3 mb-2"></i>
+                  <div class="small fw-medium">Thu tiền</div>
+                  <div class="small opacity-75">KPI phải thu</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">Giai đoạn</th>
+                      <th class="border-0 py-3">Hành động chính</th>
+                      <th class="border-0 py-3">Hệ thống ghi nhận</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">Báo giá</td>
+                      <td class="py-3 text-muted">Chọn khách hàng/sản phẩm, tạo báo giá đa tệ, hỗ trợ chiết khấu, thuế suất, thời hạn hiệu lực</td>
+                      <td class="py-3 text-muted">Báo giá, chi tiết sản phẩm, xuất PDF</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Đơn hàng</td>
+                      <td class="py-3 text-muted">Báo giá chuyển thành đơn hàng; chiết khấu vượt mức, đơn hàng giá trị lớn kích hoạt phê duyệt</td>
+                      <td class="py-3 text-muted">Đơn hàng bán, workflow phê duyệt, chi tiết đơn hàng</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Giao hàng</td>
+                      <td class="py-3 text-muted">Sau khi xác nhận đơn hàng, ghi nhận phiếu giao hàng, liên kết mã vận đơn</td>
+                      <td class="py-3 text-muted">Phiếu giao hàng, mã vận đơn, chuyển trạng thái</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Hóa đơn</td>
+                      <td class="py-3 text-muted">Xuất hóa đơn từ đơn hàng hoặc sau khi giao, mã số thuế/địa chỉ trong hồ sơ khách hàng tự điền</td>
+                      <td class="py-3 text-muted">Bản ghi hóa đơn, trạng thái xuất hóa đơn</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">Thu tiền</td>
+                      <td class="py-3 text-muted">Ghi nhận thu tiền theo nhiều đợt; tổng hợp KPI phải thu theo tuổi nợ</td>
+                      <td class="py-3 text-muted">Bản ghi thu tiền, số dư phải thu, phân nhóm tuổi nợ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
+
+  <!-- Core Features Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Chức năng cốt lõi</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Toàn chuỗi báo giá, đơn hàng, hóa đơn, thu tiền + phê duyệt và phân tích công nợ phải thu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-file-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Quản lý báo giá</h5>
+              <p class="text-muted mt-2">Báo giá đa tệ, hỗ trợ chiết khấu, thuế suất, thời hạn hiệu lực; xuất PDF gửi khách hàng bằng một thao tác; hỗ trợ chuyển thành đơn hàng bán.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-shopping-cart rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Đơn hàng bán</h5>
+              <p class="text-muted mt-2">Chuyển trạng thái đơn hàng (nháp/đang duyệt/đã xác nhận/đã giao/đã đóng), liên kết khách hàng và sản phẩm, chi tiết đơn hàng có thể chỉnh sửa theo dòng.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-process rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Workflow phê duyệt đơn hàng</h5>
+              <p class="text-muted mt-2">Chiết khấu vượt mức, đơn hàng giá trị lớn, điều khoản đặc biệt kích hoạt phê duyệt; cấu hình các bước phê duyệt linh hoạt theo phòng ban, vị trí, ngưỡng giá trị.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-receipt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Quản lý hóa đơn</h5>
+              <p class="text-muted mt-2">Đơn hàng tạo hóa đơn, theo dõi trạng thái xuất hóa đơn; mã số thuế, địa chỉ, ghi chú trong hồ sơ khách hàng tự điền, giảm nhập sai bằng tay.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-money-withdrawal rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Bản ghi thu tiền</h5>
+              <p class="text-muted mt-2">Thu tiền nhiều đợt, đến tiền một phần; tự tính số dư phải thu; tổng hợp trạng thái thanh toán theo khách hàng, theo đơn hàng.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-line rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">Bảng bán hàng</h5>
+              <p class="text-muted mt-2">Tổng hợp doanh số, số đơn, tỷ lệ thu hồi theo nhân viên bán, khu vực, sản phẩm; xu hướng theo tháng/quý nhìn rõ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Tải xuống và triển khai</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Mô-đun này nằm trong file backup mẫu của Hệ thống quản lý kinh doanh tích hợp, triển khai thống nhất</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Tải file backup mẫu</h5>
+                <p class="text-muted mt-2">Backup giải pháp tích hợp, sau khi khôi phục bao gồm toàn bộ dữ liệu mẫu của 6 mô-đun, trong đó có mô-đun này</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>Tải backup .nbdata</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Xem tài liệu cài đặt</h5>
+                <p class="text-muted mt-2">Các bước khôi phục chi tiết, câu hỏi thường gặp và lưu ý đang được chuẩn bị</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://docs.nocobase.com/vi/solution/all-in-one/installation" target="_blank" class="btn btn-primary"><i class="uil uil-book-open me-1"></i>Xem tài liệu</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
+
+  <!-- CTA Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">Bắt đầu sử dụng</h3>
+          <p class="text-muted para-desc mx-auto mb-0">Mô-đun này cũng được tích hợp trong <a href="/vi/solutions/all-in-one">Hệ thống quản lý kinh doanh tích hợp</a>, có thể sử dụng độc lập hoặc phối hợp với CRM, Help Desk, Quản lý dự án, Quản lý tài sản, Quản lý nhân sự.</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
+            <a href="/vi/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>Liên hệ tư vấn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
+
+  <ShapeFooter />
+</BaseVI>
+
+<style>
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
+}
+
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
+}
+
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
+}
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+</style>

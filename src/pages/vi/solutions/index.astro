@@ -1,0 +1,238 @@
+---
+import BaseVI from "../../../layouts/BaseVI.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+
+// Thư viện giải pháp — muốn thêm giải pháp mới chỉ cần bổ sung một mục vào đây
+const solutions = [
+  {
+    title: "Bộ giải pháp All-in-One",
+    desc: "CRM, bán hàng, ticket, dự án, tài sản cố định và HR — sáu mô-đun tích hợp trong cùng một hệ thống, có nhân viên AI và quy trình tự động tích hợp sẵn.",
+    href: "/vi/solutions/all-in-one",
+    cover: "https://static-docs.nocobase.com/all-in-one-cover-2026-05-20.jpg",
+    icon: "uil-layer-group",
+    categories: ["All-in-One"],
+    status: "Đang cập nhật",
+    tags: ["All-in-One", "Đa tuyến nghiệp vụ", "Nhân viên AI"],
+  },
+  {
+    title: "CRM Plus",
+    desc: "Vòng khép kín bán hàng đầy đủ từ lead, theo dõi, chuyển đổi đến khách hàng 360°; các mô-đun có thể tách rời, tích hợp sâu với nhân viên AI, có sẵn đa tiền tệ và dashboard.",
+    href: "/vi/solutions/crm-v2",
+    cover: "https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg",
+    icon: "uil-chart-growth",
+    categories: ["Khách hàng và bán hàng"],
+    tags: ["CRM", "Quản lý bán hàng", "Khách hàng 360°"],
+  },
+  {
+    title: "CRM Cơ bản",
+    desc: "Khung CRM cơ bản linh hoạt, có thể tùy chỉnh sâu, hoàn toàn làm chủ dữ liệu, sẵn sàng để mở rộng và cải tạo.",
+    href: "/vi/solutions/crm",
+    cover: "https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg",
+    icon: "uil-users-alt",
+    categories: ["Khách hàng và bán hàng"],
+    tags: ["CRM", "Có thể tùy chỉnh", "Nền tảng"],
+  },
+  {
+    title: "Hệ thống ticket thông minh 2.0",
+    desc: "Toàn bộ vòng đời từ khi khách hàng báo lỗi đến khi kết thúc; kiến trúc dữ liệu hình chữ T hỗ trợ nhiều kịch bản nghiệp vụ, nhân viên AI hỗ trợ phân loại và xử lý.",
+    href: "/vi/solutions/ticketing-v2",
+    cover: "https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg",
+    icon: "uil-robot",
+    categories: ["Dịch vụ khách hàng"],
+    tags: ["Ticket", "Chăm sóc khách hàng", "Phân loại AI"],
+  },
+  {
+    title: "Hệ thống quản lý ticket (1.x)",
+    desc: "Là phần bổ sung quan trọng cho CRM, cung cấp quản lý vòng đời ticket đầy đủ, phù hợp cho kịch bản hậu mãi và chăm sóc khách hàng.",
+    href: "/vi/solutions/ticketing",
+    cover: "https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png",
+    icon: "uil-comment-alt-lines",
+    categories: ["Dịch vụ khách hàng"],
+    tags: ["Ticket", "Hậu mãi", "1.x"],
+  },
+  {
+    title: "Quản lý dự án (1.x)",
+    desc: "Quản lý toàn bộ vòng đời dự án từ yêu cầu đến bàn giao, bao gồm nhiệm vụ, lặp, tiến độ, cột mốc và khối lượng công việc.",
+    href: "/vi/solutions/project-management",
+    cover: "https://static-docs.nocobase.com/screenshot-20250909-151855-1.png",
+    icon: "uil-clipboard-notes",
+    categories: ["Dự án và R&D"],
+    tags: ["Dự án", "Cộng tác R&D", "Cột mốc", "1.x"],
+  },
+];
+
+// Danh mục lọc (thứ tự là thứ tự hiển thị)
+const categories = ["Tất cả", "All-in-One", "Khách hàng và bán hàng", "Dịch vụ khách hàng", "Dự án và R&D"];
+---
+
+<BaseVI
+  title="Thêm giải pháp - Thư viện giải pháp NocoBase"
+  description="Thư viện giải pháp NocoBase: bộ giải pháp All-in-One quản lý nghiệp vụ, cùng các giải pháp độc lập về CRM, bán hàng, ticket, quản lý dự án, lọc theo kịch bản, đều dựa trên nền tảng no-code NocoBase, dùng ngay và tự triển khai được."
+  keywords="giải pháp NocoBase, thư viện giải pháp, bộ giải pháp All-in-One quản lý nghiệp vụ, hệ thống CRM, hệ thống ticket, hệ thống quản lý dự án, giải pháp no-code, hệ thống nghiệp vụ mã nguồn mở"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">Thư viện giải pháp</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              Các giải pháp nghiệp vụ được đúc kết trên nền tảng no-code NocoBase, hãy chọn bộ phù hợp với bạn theo kịch bản. Tất cả đều dùng ngay, hỗ trợ tự triển khai, nhiều giải pháp mới liên tục ra mắt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section">
+    <div class="container">
+      <!-- chips lọc -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "Tất cả" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- lưới thẻ -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={s.categories.join(",")}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              <div class="sol-cover-wrap">
+                <img src={s.cover} alt={s.title} class="sol-cover" loading="lazy" />
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.desc}</p>
+                <a href={s.href} class="text-primary small d-inline-block stretched-link">Xem giải pháp <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {s.tags.map((t) => <span class="sol-tag">{t}</span>)}
+                  {s.status && <span class="sol-tag sol-tag-status">{s.status}</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- trạng thái rỗng (chưa khớp) -->
+      <div class="row" id="solution-empty" style="display:none;">
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>Danh mục này hiện chưa có giải pháp, nhiều giải pháp đang được ra mắt.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #f4f6fa;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chips = document.querySelectorAll("#solution-filter .filter-chip");
+      const items = document.querySelectorAll("#solution-grid .solution-item");
+      const empty = document.getElementById("solution-empty");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.getAttribute("data-filter");
+          let visible = 0;
+          items.forEach((item) => {
+            const cats = (item.getAttribute("data-categories") || "").split(",");
+            const show = filter === "*" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          if (empty) empty.style.display = visible === 0 ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseVI>
