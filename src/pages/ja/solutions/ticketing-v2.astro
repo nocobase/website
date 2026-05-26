@@ -1,12 +1,13 @@
 ---
-import BaseJA from "../../../layouts/BaseJA.astro";
+import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import AIAvatar from "../../../components/AIAvatar.astro";
 ---
 
-<BaseJA
-  title="ヘルプデスク(チケット)— オープンソースのカスタマーサポート管理 | NocoBase"
-  description="NocoBase ノーコードプラットフォームをベースにしたオープンソースのヘルプデスク。顧客からの問い合わせ受付、スマートな振り分け、SLA 計測、優先度、AI 自動分類、満足度評価、サポート作業画面を標準装備。中小規模のカスタマーサポートチームやアフターサポート部門に適しています。"
-  keywords="ヘルプデスク, カスタマーサポート, オープンソース ヘルプデスク, help desk, ticketing, チケット管理, SLA 管理, アフターサポート, カスタマーサービス, NocoBase"
+<Layout
+  title="AI駆動のインテリジェントチケットシステム - NocoBase"
+  description="NocoBase AI駆動のインテリジェントチケットシステム。T型データアーキテクチャで複数のビジネスシナリオをサポート。AIエージェントチームが自動分類、スマート返信、ナレッジ推奨を実行。SLA完全監視でチケットライフサイクル全体を管理。"
+  keywords="NocoBase チケットシステム, AIチケット, インテリジェントカスタマーサービス, SLA管理, ナレッジベース, チケット分類"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -14,336 +15,882 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <div class="module-breadcrumb mb-2">
-              <a href="/ja/solutions/all-in-one" class="text-muted small text-decoration-none">一体型業務管理システム</a>
+            <div class="mb-2 solution-breadcrumb">
+              <a href="/ja/solutions" class="small text-decoration-none">ソリューションライブラリ</a>
               <i class="uil uil-angle-right text-muted small"></i>
-              <span class="text-muted small">ヘルプデスクモジュール</span>
+              <span class="text-muted small">スマートチケットシステム 2.0</span>
             </div>
-            <h1 class="fw-bold mt-2 mb-3">ヘルプデスク(チケット)</h1>
+            <h1 class="fw-bold mt-2 mb-3">AI駆動の<br/>インテリジェントチケット</h1>
             <p class="para-desc text-muted">
-              NocoBase ノーコードプラットフォーム上に構築。<strong>顧客の問い合わせ → スマート振り分け → 対応 → 満足度評価</strong> までの一連の流れを網羅し、SLA 計測、優先度管理、AI 自動分類、サポート作業画面を標準搭載しています。
+              サポートチームが複雑なワークフローではなく、問題解決に集中できるように。NocoBaseローコードプラットフォーム上に構築し、T型データアーキテクチャで複数ビジネスを統合管理。AIエージェントチームがチケット作成からクローズまでのライフサイクル全体をサポートします。
             </p>
 
+            <!-- Core Values -->
             <div class="row mt-4 g-3">
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">SLA 自動計測</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">4 段階の優先度</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">AI 自動分類</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">オープンソース無料</span></div></div>
-            </div>
-
-            <div class="row mt-4">
               <div class="col-auto">
-                <div class="d-flex align-items-center flex-wrap">
-                  <span class="text-muted me-2">想定シーン:</span>
-                  <span class="badge bg-soft-primary me-2">カスタマーサポート</span>
-                  <span class="badge bg-soft-primary me-2">IT サービスデスク</span>
-                  <span class="badge bg-soft-primary me-2">機器保守</span>
-                  <span class="badge bg-soft-primary">SaaS サポート</span>
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">マルチソース受付</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">AIスマート振り分け</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">SLA完全監視</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <i class="uil uil-check-circle text-success me-2"></i>
+                  <span class="small">ナレッジ自動蓄積</span>
                 </div>
               </div>
             </div>
 
-            <div class="mt-4">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Demo を体験</a>
-              <a href="/ja/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>全体ソリューションを見る</a>
+            <!-- Use Case Tags -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">ユースケース：</span>
+                  <span class="badge bg-soft-primary me-2">設備修理</span>
+                  <span class="badge bg-soft-primary me-2">ITサポート</span>
+                  <span class="badge bg-soft-primary me-2">顧客クレーム</span>
+                  <span class="badge bg-soft-primary">お問い合わせ</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live Demo
+              </a>
+              <a href="#how-to-use" class="btn btn-outline-primary">
+                <i class="uil uil-download-alt me-1"></i>使い方
+              </a>
+            </div>
+
+            <div class="mt-3 p-2" style="background-color: #fff3e0; border-left: 3px solid #ff9800; border-radius: 4px;">
+              <small class="text-muted">
+                <i class="uil uil-info-circle me-1"></i>Alpha版公開中。ぜひお試しください。継続的に改善しています。
+              </small>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
-          <img src="https://static-docs.nocobase.com/module-tickets-cover-260521.jpg" alt="ヘルプデスク(チケット)画面" class="img-fluid rounded shadow" loading="eager" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero End -->
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <div class="position-relative">
+              <img
+                src="https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg"
+                alt="インテリジェントチケットシステム画面"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
 
-  <!-- Pipeline Start -->
-  <section class="section" id="pipeline">
+  <!-- Pain Points Start -->
+  <section class="section" id="pain-points">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">チケット対応プロセス</h4>
-            <p class="para-desc mx-auto text-muted mb-0">顧客の問い合わせから完了・評価まで、SLA を全工程で計測します。</p>
+            <h4 class="title mb-4">このような課題はありませんか？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">企業は多様なサービスリクエストに直面し、ソースは分散、ワークフローは多様、統一管理が困難です</p>
           </div>
-        </div>
-      </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-money-bill-slash text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">高コスト、カスタマイズが遅い</h5>
+              </div>
+              <p class="text-muted mb-0">SaaSチケットシステムは高額。カスタム開発は長期化し、コスト予測が困難。ビジネスニーズの変化に適応しづらい。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-database text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">システム分断、データサイロ</h5>
+              </div>
+              <p class="text-muted mb-0">設備修理、ITサポート、顧客クレームが別々のシステムに分散。統一的な分析や意思決定が困難。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-hourglass text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">対応が遅い、透明性がない</h5>
+              </div>
+              <p class="text-muted mb-0">リクエストがシステム間で非効率的に流れる。顧客は進捗を追跡できず、頻繁な問い合わせがサポートの負担に。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-shield-exclamation text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">品質保証が困難</h5>
+              </div>
+              <p class="text-muted mb-0">SLA監視メカニズムがない。タイムアウトやネガティブフィードバックを適時に警告できず、サービス品質にばらつき。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-book-alt text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">ナレッジが蓄積されない</h5>
+              </div>
+              <p class="text-muted mb-0">解決策が散在。新人の立ち上がりが遅い。同じ問題を繰り返し解決し、効率が低い。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow-sm h-100" style="border-left: 4px solid #6c757d !important;">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="uil uil-robot text-muted h3 mb-0 me-3"></i>
+                <h5 class="mb-0">AI機能の欠如</h5>
+              </div>
+              <p class="text-muted mb-0">従来のシステムにはAI支援がない。手動分類は時間がかかる。スマート推奨や自動返信ができない。</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Pain Points End -->
+
+  <!-- Solution Overview Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">私たちのソリューション</h4>
+            <p class="para-desc mx-auto text-muted mb-0">NocoBaseローコードで構築した汎用チケットプラットフォーム：統一受付、スマート配布、マルチビジネス対応、クローズドループフィードバック</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Core Modules -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-exchange rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">マルチソース受付</h5>
+              <p class="text-muted mt-2">公開フォーム、顧客ポータル、メール解析、API/Webhook。全チャネルを統合し自動重複チェック</p>
+              <i class="uil uil-exchange full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-brain rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">AIスマート振り分け</h5>
+              <p class="text-muted mt-2">自動インテント認識、感情分析、緊急度評価。スキルマッチングと負荷分散でスマートに割り当て</p>
+              <i class="uil uil-brain full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-clock rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">SLA完全監視</h5>
+              <p class="text-muted mt-2">P0-P3の4段階優先度。応答/解決時間の自動追跡。タイムアウト警告とエスカレーション</p>
+              <i class="uil uil-clock full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-star rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">クローズドループフィードバック</h5>
+              <p class="text-muted mt-2">多次元満足度評価、NPSスコア、ネガティブフィードバック警告とフォローアップで継続改善</p>
+              <i class="uil uil-star full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Solution Overview End -->
+
+  <!-- T-shaped Architecture Start -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <span class="badge bg-soft-success rounded-pill mb-3">コア設計</span>
+            <h4 class="title mb-4">T型データアーキテクチャ</h4>
+            <p class="para-desc mx-auto text-muted mb-0">全チケットがメインテーブルを共有し統一ワークフロー。業務固有フィールドは拡張テーブルに。新業務タイプはテーブル追加のみで対応</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="card border-0 shadow">
             <div class="card-body p-4">
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
-                <div class="pipeline-node">
-                  <i class="uil uil-ticket text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">作成</div>
-                  <div class="small text-muted">複数チャネル</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-robot text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">自動分類</div>
-                  <div class="small text-muted">AI 判定</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-users-alt text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">振り分け</div>
-                  <div class="small text-muted">ルール</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-wrench text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">対応</div>
-                  <div class="small text-muted">SLA 計測</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node pipeline-node-end">
-                  <i class="uil uil-thumbs-up h3 mb-2"></i>
-                  <div class="small fw-medium">評価</div>
-                  <div class="small opacity-75">完了・保管</div>
+              <!-- T-shaped Architecture Diagram -->
+              <div class="text-center mb-4">
+                <div class="d-inline-block p-3 rounded" style="background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%); color: white; min-width: 400px;">
+                  <strong>チケットメインテーブル (nb_tts_tickets)</strong>
+                  <div class="small mt-2 opacity-75">チケット# | タイトル | ステータス | 優先度 | 担当者 | SLA | AI分析</div>
                 </div>
               </div>
 
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead class="bg-light">
-                    <tr>
-                      <th class="border-0 py-3">ステージ</th>
-                      <th class="border-0 py-3">主な操作</th>
-                      <th class="border-0 py-3">システム記録</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="py-3">作成</td>
-                      <td class="py-3 text-muted">メール、フォーム、IM など複数チャネルから受付。顧客と製品を関連付け</td>
-                      <td class="py-3 text-muted">チケット番号、流入元、顧客情報</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">自動分類</td>
-                      <td class="py-3 text-muted">AI が問題カテゴリ(アカウント / 機能 / バグ)を判定し、優先度を自動設定</td>
-                      <td class="py-3 text-muted">カテゴリタグ、優先度、信頼度</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">振り分け</td>
-                      <td class="py-3 text-muted">ルールに従って担当チーム / 担当者へ割り当て。緊急チケットは当番に自動通知</td>
-                      <td class="py-3 text-muted">担当者、振り分け履歴、チームキュー</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">対応</td>
-                      <td class="py-3 text-muted">サポート担当が顧客とやり取り。SLA を計測し、超過前に自動警告</td>
-                      <td class="py-3 text-muted">対応ログ、SLA ステータス、待機理由</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">評価</td>
-                      <td class="py-3 text-muted">完了後に顧客評価(1〜5 星 + コメント)を送信し、担当者 / 製品別に集計</td>
-                      <td class="py-3 text-muted">満足度記録、保管チケット、KPI</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <!-- Connection Lines -->
+              <div class="text-center mb-3">
+                <div style="width: 2px; height: 30px; background: #dee2e6; margin: 0 auto;"></div>
+                <div style="width: 60%; height: 2px; background: #dee2e6; margin: 0 auto;"></div>
+              </div>
+
+              <!-- Business Extension Tables -->
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <div class="p-3 rounded text-center" style="background: #fff3e0; border: 2px solid #ff9800; min-width: 180px;">
+                  <i class="uil uil-wrench text-warning h4 mb-2"></i>
+                  <strong class="text-dark d-block">設備修理</strong>
+                  <div class="small text-muted mt-2">シリアル番号 | 故障コード<br/>部品リスト | 現場写真</div>
+                </div>
+                <div class="p-3 rounded text-center" style="background: #e3f2fd; border: 2px solid #2196f3; min-width: 180px;">
+                  <i class="uil uil-desktop text-primary h4 mb-2"></i>
+                  <strong class="text-dark d-block">ITサポート</strong>
+                  <div class="small text-muted mt-2">資産ID | OSバージョン<br/>リモートURL | エラーコード</div>
+                </div>
+                <div class="p-3 rounded text-center" style="background: #fce4ec; border: 2px solid #e91e63; min-width: 180px;">
+                  <i class="uil uil-comment-exclamation text-danger h4 mb-2"></i>
+                  <strong class="text-dark d-block">顧客クレーム</strong>
+                  <div class="small text-muted mt-2">注文ID | 重要度<br/>補償方案 | 根本原因</div>
+                </div>
+                <div class="p-3 rounded text-center" style="background: #f5f5f5; border: 2px dashed #9e9e9e; min-width: 180px;">
+                  <i class="uil uil-plus text-muted h4 mb-2"></i>
+                  <strong class="text-muted d-block">その他業務...</strong>
+                  <div class="small text-muted mt-2">必要に応じて拡張<br/>コアフロー変更なし</div>
+                </div>
+              </div>
+
+              <!-- Advantage Description -->
+              <div class="row mt-4 pt-3 border-top">
+                <div class="col-md-4 text-center">
+                  <i class="uil uil-chart-bar text-primary h4"></i>
+                  <h6 class="mt-2 mb-1">統一レポート</h6>
+                  <p class="text-muted small mb-0">1つのテーブルで全チケット統計</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <i class="uil uil-sync text-primary h4"></i>
+                  <h6 class="mt-2 mb-1">ワークフロー再利用</h6>
+                  <p class="text-muted small mb-0">コアフローは1箇所で変更</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <i class="uil uil-plus-circle text-primary h4"></i>
+                  <h6 class="mt-2 mb-1">柔軟な拡張</h6>
+                  <p class="text-muted small mb-0">新業務 = 新テーブル</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Pipeline End -->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- T-shaped Architecture End -->
 
-  <!-- Core Features Start -->
+  <!-- AI Employees Start -->
   <section class="section bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">主な機能</h4>
-            <p class="para-desc mx-auto text-muted mb-0">受付から完了までのカスタマーサポート業務を一通りカバーします。</p>
+            <span class="badge bg-soft-primary rounded-pill mb-3">AIネイティブ</span>
+            <h4 class="title mb-4">AIエージェントチーム</h4>
+            <p class="para-desc mx-auto text-muted mb-0">「AIボタンを追加」するだけでなく、AIエージェントが全ステップに組み込まれています。各AIには明確な役割、責任、性格があります</p>
           </div>
-        </div>
-      </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-stopwatch rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">SLA 計測とアラート</h5>
-              <p class="text-muted mt-2">優先度ごとに応答 / 解決時間を自動計算。超過前にアラートを発し、超過チケットは赤色表示。SLA 達成率はダッシュボードで確認できます。</p>
+        <!-- Sam -->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="sam" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Sam</h5>
+              <span class="badge bg-soft-primary mb-2">サービスデスクリーダー</span>
+              <p class="text-muted mt-2 small">チケット振り分け、優先度評価、エスカレーション判断、SLAリスク特定</p>
+              <div class="border-top pt-2 mt-3">
+                <span class="small text-muted">トリガー：チケット作成時に自動</span>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-bolt-alt rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">4 段階の優先度</h5>
-              <p class="text-muted mt-2">緊急、高、中、低の 4 段階で異なる応答時間を設定。緊急チケットは自動で上位表示され、当番に通知されます。</p>
+        <!-- Grace -->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="grace" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Grace</h5>
+              <span class="badge bg-soft-primary mb-2">カスタマーサクセス専門家</span>
+              <p class="text-muted mt-2 small">返信生成、トーン調整、クレーム対応、EQファイアウォール</p>
+              <div class="border-top pt-2 mt-3">
+                <span class="small text-muted">トリガー：「AI返信」クリック時</span>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-robot rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">AI 自動分類</h5>
-              <p class="text-muted mt-2">新規チケットを AI が自動でカテゴリ判定(アカウント問題 / 機能相談 / バグ報告など)し、ルールに従って担当チームへ振り分けます。</p>
+        <!-- Max -->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="max" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Max</h5>
+              <span class="badge bg-soft-primary mb-2">ナレッジアシスタント</span>
+              <p class="text-muted mt-2 small">類似ケース、ナレッジ推奨、ソリューション統合、ナレッジ生成</p>
+              <div class="border-top pt-2 mt-3">
+                <span class="small text-muted">トリガー：チケット詳細ページで自動</span>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-pause-circle rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">待機理由の細分化</h5>
-              <p class="text-muted mt-2">「顧客回答待ち」「第三者待ち」「要件レビュー待ち」など、待機中のチケットは SLA の超過カウントから除外され、公平に運用できます。</p>
+        <!-- Lexi -->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="text-start">
+              <AIAvatar name="lexi" class="ai-avatar-lg" />
+            </div>
+            <div class="card-body p-0 mt-3">
+              <h5 class="title text-dark">Lexi</h5>
+              <span class="badge bg-soft-primary mb-2">翻訳担当</span>
+              <p class="text-muted mt-2 small">多言語翻訳、品質レビュー、機密情報遮断</p>
+              <div class="border-top pt-2 mt-3">
+                <span class="small text-muted">トリガー：外国語検出時に自動</span>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
+      </div><!--end row-->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-clipboard-notes rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">サポート作業画面</h5>
-              <p class="text-muted mt-2">サポート担当はログイン後に自分宛のチケットを即確認。期限順に並び、未着手 / 対応中 / 期限間近を 1 画面で把握できます。</p>
+      <!-- EQ Firewall Example -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow-sm" style="background: #f8f9fa;">
+            <div class="card-body p-4">
+              <h5 class="mb-3"><AIAvatar name="grace" class="ai-avatar-sm me-2" />GraceのEQファイアウォール</h5>
+              <p class="text-muted mb-3">サポート返信のネガティブな表現を自動検出・最適化し、二次クレームを防止</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="bg-white rounded p-3 mb-3 mb-md-0 border">
+                    <span class="badge bg-secondary mb-2">元の文</span>
+                    <p class="mb-0 small">「それは弊社の問題ではありません、設定ミスです」</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="bg-white rounded p-3 border">
+                    <span class="badge bg-primary mb-2">最適化後</span>
+                    <p class="mb-0 small">「調査の結果、設定に問題がありました。正常に動作するよう、一緒に設定を調整させてください」</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- AI Employees End -->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">チケットダッシュボード</h5>
-              <p class="text-muted mt-2">本日の新規 / 完了 / 未着手 / 超過の分布を表示。担当者・顧客・製品ライン別に集計し、マネージャーが全体を俯瞰できます。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
-            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="text-muted mb-2">機能拡張中</h5>
-              <p class="text-muted small mt-2 mb-0">予定:満足度評価、転送・エスカレーションフロー、定型返信テンプレート、ナレッジベース連携</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Core Features End -->
-
-  <!-- Get Started Start -->
+  <!-- Knowledge Loop Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">ダウンロードとデプロイ</h4>
-            <p class="para-desc mx-auto text-muted mb-0">本モジュールは一体型業務管理システムのバックアップテンプレートに含まれ、まとめてデプロイされます。</p>
+            <span class="badge bg-soft-warning rounded-pill mb-3">ナレッジ管理</span>
+            <h4 class="title mb-4">ナレッジ自己循環システム</h4>
+            <p class="para-desc mx-auto text-muted mb-0">解決済みチケットが自動的にナレッジに。類似問題にはAIがナレッジを推奨し、ナレッジ蓄積-活用のループを形成</p>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>バックアップテンプレートをダウンロード</h5>
-                <p class="text-muted mt-2">一体型ソリューションのバックアップで、復元すると本モジュールを含む 6 モジュールすべてのプリセットデータが利用できます。</p>
-              </div>
-              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
-                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>.nbdata バックアップをダウンロード</a>
-                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>インストール手順を確認</h5>
-                <p class="text-muted mt-2">復元手順、よくある質問、注意事項の詳細は現在準備中です。</p>
-              </div>
-              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
-                <a href="https://docs.nocobase.com/ja/solution/all-in-one/installation" target="_blank" class="btn btn-primary"><i class="uil uil-book-open me-1"></i>ドキュメントを見る</a>
-                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Get Started End -->
+        </div><!--end col-->
+      </div><!--end row-->
 
-  <!-- CTA Start -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <!-- Circulation Flow Diagram -->
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-check-circle text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">チケット解決</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-analysis text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">AI価値評価</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">記事生成</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-eye text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">人間レビュー</div>
+                </div>
+              </div>
+
+              <div class="text-center my-3">
+                <i class="uil uil-corner-down-left h3 text-muted"></i>
+              </div>
+
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-book-open text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">ナレッジベース</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-ticket text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">類似チケット</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-lightbulb text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">AI推奨</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted"></i>
+                <div class="text-center p-3 rounded bg-light" style="min-width: 120px;">
+                  <i class="uil uil-bolt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">迅速解決</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Knowledge Conversion Criteria -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-file-check-alt text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">説明が完全</h6>
+                  <p class="text-muted small mb-0">説明 >= 200文字</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-comments text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">十分な議論</h6>
+                  <p class="text-muted small mb-0">コメント >= 2件</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-star text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">品質基準</h6>
+                  <p class="text-muted small mb-0">AIスコア >= 0.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Knowledge Loop End -->
+
+  <!-- SLA Config Start -->
   <section class="section bg-light">
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8">
-          <h3 class="title mb-4">利用を開始する</h3>
-          <p class="text-muted para-desc mx-auto mb-0">本モジュールは <a href="/ja/solutions/all-in-one">一体型業務管理システム</a> にも組み込まれており、単独でも、CRM・販売管理・プロジェクト管理・固定資産管理・HR と連携しても利用できます。</p>
-          <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Demo を体験</a>
-            <a href="/ja/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>お問い合わせ</a>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">SLAサービスレベル管理</h4>
+            <p class="para-desc mx-auto text-muted mb-0">優先度別に応答・解決時間を設定。自動監視、アラート、エスカレーション。保留中はSLAが一時停止</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- CTA End -->
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">優先度</th>
+                  <th class="border-0 py-3">応答時間</th>
+                  <th class="border-0 py-3">解決時間</th>
+                  <th class="border-0 py-3">典型的なシナリオ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3"><span class="badge bg-dark">P0 緊急</span></td>
+                  <td class="py-3">15分</td>
+                  <td class="py-3">2時間</td>
+                  <td class="py-3 text-muted small">システムダウン、生産停止</td>
+                </tr>
+                <tr>
+                  <td class="py-3"><span class="badge bg-primary">P1 高</span></td>
+                  <td class="py-3">1時間</td>
+                  <td class="py-3">8時間</td>
+                  <td class="py-3 text-muted small">主要機能障害、影響大</td>
+                </tr>
+                <tr>
+                  <td class="py-3"><span class="badge bg-soft-primary text-primary">P2 中</span></td>
+                  <td class="py-3">4時間</td>
+                  <td class="py-3">24時間</td>
+                  <td class="py-3 text-muted small">一般的な問題、回避策あり</td>
+                </tr>
+                <tr>
+                  <td class="py-3"><span class="badge bg-secondary">P3 低</span></td>
+                  <td class="py-3">8時間</td>
+                  <td class="py-3">72時間</td>
+                  <td class="py-3 text-muted small">提案、機能に関する問い合わせ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-bell text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">事前警告</h6>
+                  <p class="text-muted small mb-0">残り時間 &lt; 20%で担当者に通知</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-exclamation-triangle text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">タイムアウト警告</h6>
+                  <p class="text-muted small mb-0">タイムアウト時に担当者+上司に通知</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm">
+                <i class="uil uil-arrow-growth text-primary h4 me-3 mb-0"></i>
+                <div>
+                  <h6 class="mb-1">自動エスカレーション</h6>
+                  <p class="text-muted small mb-0">1時間超過後にマネージャーに通知</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- SLA Config End -->
+
+  <!-- Value Metrics Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">AIがもたらす価値</h4>
+            <p class="para-desc mx-auto text-muted mb-0">人間とAIの協働、AIが人間を置き換えるのではなく。AIに反復作業を任せ、人間は価値創造に集中</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">50%+</div>
+              <h5 class="mb-2">振り分け効率向上</h5>
+              <p class="text-muted small mb-0">AI自動分類で手動振り分け時間を削減</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">30%</div>
+              <h5 class="mb-2">二次クレーム減少</h5>
+              <p class="text-muted small mb-0">EQファイアウォールが返信トーンを最適化</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">20%</div>
+              <h5 class="mb-2">タイムアウト率低下</h5>
+              <p class="text-muted small mb-0">SLA警告で早期介入を可能に</p>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow text-center h-100">
+            <div class="card-body p-4">
+              <div class="h1 text-primary mb-3">10%+</div>
+              <h5 class="mb-2">初回解決率向上</h5>
+              <p class="text-muted small mb-0">ナレッジ推奨で解決を加速</p>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Value Metrics End -->
+
+  <!-- Competitive Advantages Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">なぜ私たちを選ぶのか？</h4>
+            <p class="para-desc mx-auto text-muted mb-0">従来のSaaSチケットシステムやカスタム開発との比較</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover bg-white rounded shadow-sm mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0 py-3">比較項目</th>
+                  <th class="border-0 py-3">SaaSチケット</th>
+                  <th class="border-0 py-3">カスタム開発</th>
+                  <th class="border-0 py-3 text-primary">NocoBaseソリューション</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 fw-medium">導入までの時間</td>
+                  <td class="py-3 text-muted">すぐに使える</td>
+                  <td class="py-3 text-muted">数ヶ月の開発</td>
+                  <td class="py-3 text-primary">設定ですぐに開始</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">カスタマイズ</td>
+                  <td class="py-3 text-muted">制限あり</td>
+                  <td class="py-3 text-muted">完全制御</td>
+                  <td class="py-3 text-primary">ローコードで柔軟に</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">データセキュリティ</td>
+                  <td class="py-3 text-muted">クラウドホスト</td>
+                  <td class="py-3 text-muted">セルフホスト</td>
+                  <td class="py-3 text-primary">セルフホスト、完全制御</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">AI統合</td>
+                  <td class="py-3 text-muted">限定的/追加費用</td>
+                  <td class="py-3 text-muted">自社開発が必要</td>
+                  <td class="py-3 text-primary">AIネイティブ、深く統合</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">拡張性</td>
+                  <td class="py-3 text-muted">機能固定</td>
+                  <td class="py-3 text-muted">コード変更が必要</td>
+                  <td class="py-3 text-primary">T型、オンデマンドで拡張</td>
+                </tr>
+                <tr>
+                  <td class="py-3 fw-medium">総コスト</td>
+                  <td class="py-3 text-muted">高いサブスク費用</td>
+                  <td class="py-3 text-muted">高い開発コスト</td>
+                  <td class="py-3 text-primary">一度購入、永続利用</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Competitive Advantages End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="how-to-use">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">使い方</h4>
+            <p class="para-desc mx-auto text-muted mb-0">3つのステップでインテリジェントチケットシステムをデプロイ</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>NocoBaseをインストール</h5>
+                <p class="text-muted mt-2">インストールガイドに従って、NocoBaseをサーバーにデプロイ</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">インストールガイド</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-book-open h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>ソリューションを理解</h5>
+                <p class="text-muted mt-2">ソリューション概要を読んで、機能、アーキテクチャ、ユースケースを理解</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/solution/ticket-system/" target="_blank" class="btn btn-outline-primary">ソリューション概要</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>システムに復元</h5>
+                <p class="text-muted mt-2">復元チュートリアルに従って、NocoBase環境にチケットシステムをデプロイ</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/solution/ticket-system/installation" target="_blank" class="btn btn-outline-primary">復元チュートリアル</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3 class="title mb-4">AIでチケット管理を再定義</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            NocoBase 2.x で構築されたAI駆動のインテリジェントチケットシステム。カスタムニーズがある方、詳細を知りたい方は、お気軽にお問い合わせください。
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
+            </a>
+            <a href="/ja/contact" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-envelope me-1"></i>お問い合わせ
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
 
   <ShapeFooter />
-</BaseJA>
+</Layout>
 
 <style>
-.module-hero-illustration {
-  padding: 3rem 2rem;
-  background: rgba(47, 85, 212, 0.05);
-  border-radius: 16px;
+/* チケット2.0ページスタイル */
+code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
 }
 
-.pipeline-node {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  min-width: 110px;
-  background: rgba(47, 85, 212, 0.06);
-  border: 1px solid rgba(47, 85, 212, 0.18);
-}
-.pipeline-node-end {
-  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
-  color: #fff;
-  border-color: transparent;
-}
-.pipeline-node-end .text-muted,
-.pipeline-node-end i {
-  color: #fff !important;
-}
-.pipeline-arrow {
-  color: rgba(47, 85, 212, 0.4) !important;
+.text-purple {
+  color: #9c27b0 !important;
 }
 
-.module-breadcrumb a:hover {
-  color: var(--bs-primary) !important;
+/* AIアバタースタイル */
+.ai-avatar-lg img {
+  width: 56px;
+  height: 56px;
 }
-.module-breadcrumb i {
+
+.ai-avatar-sm img {
+  width: 28px;
+  height: 28px;
   vertical-align: middle;
-  margin: 0 4px;
-}
-
-.roadmap-card-grid {
-  background: rgba(108, 117, 125, 0.03);
-  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
-  opacity: 0.85;
 }
 </style>

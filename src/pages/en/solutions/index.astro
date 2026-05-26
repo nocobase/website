@@ -1,0 +1,238 @@
+---
+import BaseEN from "../../../layouts/BaseEN.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+
+// Solutions library — to add a new solution, just append an entry here
+const solutions = [
+  {
+    title: "All-in-One Business Suite",
+    desc: "CRM, sales, ticketing, projects, fixed assets and HR — six modules unified in one system, with built-in AI employees and workflows.",
+    href: "/en/solutions/all-in-one",
+    cover: "https://static-docs.nocobase.com/all-in-one-cover-2026-05-20.jpg",
+    icon: "uil-layer-group",
+    categories: ["All-in-One"],
+    status: "Updating",
+    tags: ["All-in-One", "Multi business line", "AI employees"],
+  },
+  {
+    title: "CRM Plus",
+    desc: "A complete sales loop from leads, follow-ups and conversion to Customer 360. Modular and decomposable, deeply integrated with AI employees, with built-in multi-currency and dashboards.",
+    href: "/en/solutions/crm-v2",
+    cover: "https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg",
+    icon: "uil-chart-growth",
+    categories: ["Customers & Sales"],
+    tags: ["CRM", "Sales management", "Customer 360"],
+  },
+  {
+    title: "CRM Basic",
+    desc: "A flexible, deeply customizable CRM foundation. Full data ownership, ready to extend and reshape on top of it.",
+    href: "/en/solutions/crm",
+    cover: "https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg",
+    icon: "uil-users-alt",
+    categories: ["Customers & Sales"],
+    tags: ["CRM", "Customizable", "Foundation"],
+  },
+  {
+    title: "Smart Ticketing 2.0",
+    desc: "The full lifecycle from customer report to case closure. A T-shaped data architecture supports multiple business scenarios, with AI employees assisting classification and handling.",
+    href: "/en/solutions/ticketing-v2",
+    cover: "https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg",
+    icon: "uil-robot",
+    categories: ["Customer Service"],
+    tags: ["Ticketing", "Support", "AI classification"],
+  },
+  {
+    title: "Ticketing System (1.x)",
+    desc: "An important complement to the CRM, providing full ticket lifecycle management — ideal for after-sales and customer service scenarios.",
+    href: "/en/solutions/ticketing",
+    cover: "https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png",
+    icon: "uil-comment-alt-lines",
+    categories: ["Customer Service"],
+    tags: ["Ticketing", "After-sales", "1.x"],
+  },
+  {
+    title: "Project Management (1.x)",
+    desc: "Full project lifecycle management from requirements to delivery, covering tasks, iterations, progress, milestones and workload.",
+    href: "/en/solutions/project-management",
+    cover: "https://static-docs.nocobase.com/screenshot-20250909-151855-1.png",
+    icon: "uil-clipboard-notes",
+    categories: ["Projects & R&D"],
+    tags: ["Projects", "R&D collaboration", "Milestones", "1.x"],
+  },
+];
+
+// Filter categories (order is display order)
+const categories = ["All", "All-in-One", "Customers & Sales", "Customer Service", "Projects & R&D"];
+---
+
+<BaseEN
+  title="More solutions - NocoBase Solutions Library"
+  description="NocoBase Solutions Library: the All-in-One Business Suite, plus standalone business solutions such as CRM, sales, ticketing and project management. Filter by scenario — all built on the NocoBase no-code platform, ready out of the box and self-hostable."
+  keywords="NocoBase solutions, solutions library, all-in-one business suite, CRM system, ticketing system, project management system, no-code solutions, open-source business systems"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">Solutions Library</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              Business solutions built on the NocoBase no-code platform — pick the one that fits your scenario. Everything is ready out of the box and self-hostable, with more solutions arriving all the time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter chips -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "All" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card grid -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={s.categories.join(",")}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              <div class="sol-cover-wrap">
+                <img src={s.cover} alt={s.title} class="sol-cover" loading="lazy" />
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.desc}</p>
+                <a href={s.href} class="text-primary small d-inline-block stretched-link">View solution <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {s.tags.map((t) => <span class="sol-tag">{t}</span>)}
+                  {s.status && <span class="sol-tag sol-tag-status">{s.status}</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Empty state (no matches yet) -->
+      <div class="row" id="solution-empty" style="display:none;">
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>No solutions in this category yet — more are on the way.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #f4f6fa;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chips = document.querySelectorAll("#solution-filter .filter-chip");
+      const items = document.querySelectorAll("#solution-grid .solution-item");
+      const empty = document.getElementById("solution-empty");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.getAttribute("data-filter");
+          let visible = 0;
+          items.forEach((item) => {
+            const cats = (item.getAttribute("data-categories") || "").split(",");
+            const show = filter === "*" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          if (empty) empty.style.display = visible === 0 ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseEN>

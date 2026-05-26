@@ -337,6 +337,25 @@ p {
   font-weight: 700;
   color: #161c2d !important;
 }
+.solution-breadcrumb a {
+  color: #8a94a6;
+  transition: color 0.2s ease;
+}
+.solution-breadcrumb a:hover {
+  color: #2f55d4;
+}
+/* 方案卡片对齐:标题/描述/标签预留统一高度,避免各语言译文行数不同导致底部错位 */
+.solution-card h5.title {
+  min-height: 3.5rem;
+}
+.solution-card .sol-desc {
+  min-height: 4.8em;
+}
+/* 标签区含 pt-3(1rem) + 最多两行标签,预留足够高度让"查看方案"对齐 */
+.solution-card .solution-tags {
+  min-height: 3.8rem;
+  align-content: flex-start;
+}
 #topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item.submodule-item {
   padding-left: 30px;
   font-size: 12px;

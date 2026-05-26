@@ -1,0 +1,334 @@
+---
+import BaseTW from "../../../../layouts/BaseTW.astro";
+import ShapeFooter from "../../../../components/ShapeFooter.astro";
+---
+
+<BaseTW
+  title="銷售管理系統 — 開源銷售訂單與應收管理 | NocoBase"
+  description="基於 NocoBase 無程式碼平台的開源銷售管理系統：報價單、銷售訂單、發票、收款的完整鏈路，內建簽核流程、多幣別、應收帳款 KPI 與逾期分析。"
+  keywords="銷售管理系統, 銷售訂單管理, 報價單, 發票管理, 應收帳款管理, 收款管理, 銷售流程, 銷售簽核, 開源銷售管理, 多幣別報價, NocoBase"
+>
+  <!-- Hero/Banner Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 order-1 order-md-1">
+          <div class="title-heading">
+            <div class="module-breadcrumb mb-2">
+              <a href="/tw/solutions/all-in-one" class="text-muted small text-decoration-none">整合式業務管理系統</a>
+              <i class="uil uil-angle-right text-muted small"></i>
+              <span class="text-muted small">銷售管理模組</span>
+            </div>
+            <h1 class="fw-bold mt-2 mb-3">銷售管理系統</h1>
+            <p class="para-desc text-muted">
+              基於 NocoBase 無程式碼平台構建。<strong>報價 → 訂單 → 發票 → 收款</strong> 的完整鏈路，內建銷售簽核工作流、多幣別報價、應收帳款 KPI 與逾期分析。
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">多幣別報價</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">訂單簽核流</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">應收 KPI</span></div></div>
+              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">開源免費</span></div></div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="text-muted me-2">適用場景：</span>
+                  <span class="badge bg-soft-primary me-2">B2B 銷售</span>
+                  <span class="badge bg-soft-primary me-2">外貿訂單</span>
+                  <span class="badge bg-soft-primary me-2">設備銷售</span>
+                  <span class="badge bg-soft-primary">應收管理</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>線上體驗 Demo</a>
+              <a href="/tw/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>查看完整方案</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <img src="https://static-docs.nocobase.com/module-sales-cover-260521.jpg" alt="銷售管理系統介面" class="img-fluid rounded shadow" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Pipeline Start -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">銷售流程</h4>
+            <p class="para-desc mx-auto text-muted mb-0">從報價到收款的完整閉環，簽核與應收 KPI 全鏈路打通</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <div class="pipeline-node">
+                  <i class="uil uil-file-alt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">報價</div>
+                  <div class="small text-muted">多幣別</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-shopping-cart text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">訂單</div>
+                  <div class="small text-muted">簽核流</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-truck text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">出貨</div>
+                  <div class="small text-muted">物流追蹤</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node">
+                  <i class="uil uil-receipt text-primary h3 mb-2"></i>
+                  <div class="small fw-medium">發票</div>
+                  <div class="small text-muted">客戶預填</div>
+                </div>
+                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
+                <div class="pipeline-node pipeline-node-end">
+                  <i class="uil uil-money-withdrawal h3 mb-2"></i>
+                  <div class="small fw-medium">收款</div>
+                  <div class="small opacity-75">應收 KPI</div>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="bg-light">
+                    <tr>
+                      <th class="border-0 py-3">階段</th>
+                      <th class="border-0 py-3">關鍵動作</th>
+                      <th class="border-0 py-3">系統紀錄</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="py-3">報價</td>
+                      <td class="py-3 text-muted">選客戶／產品，產生多幣別報價單，支援折扣、稅率、有效期</td>
+                      <td class="py-3 text-muted">報價單、產品明細、PDF 匯出</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">訂單</td>
+                      <td class="py-3 text-muted">報價轉訂單；超額折扣、大額訂單觸發簽核</td>
+                      <td class="py-3 text-muted">銷售訂單、簽核流、訂單明細</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">出貨</td>
+                      <td class="py-3 text-muted">訂單確認後登記出貨單，關聯物流單號</td>
+                      <td class="py-3 text-muted">出貨單、物流單號、狀態流轉</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">發票</td>
+                      <td class="py-3 text-muted">訂單或出貨後開票，客戶檔案稅號／地址自動預填</td>
+                      <td class="py-3 text-muted">發票紀錄、開票狀態</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3">收款</td>
+                      <td class="py-3 text-muted">分筆收款登記；按帳齡彙整應收 KPI</td>
+                      <td class="py-3 text-muted">收款紀錄、應收餘額、帳齡分桶</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pipeline End -->
+
+  <!-- Core Features Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">核心功能</h4>
+            <p class="para-desc mx-auto text-muted mb-0">報價、訂單、發票、收款全鏈路 + 簽核與應收分析</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-file-alt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">報價單管理</h5>
+              <p class="text-muted mt-2">多幣別報價，支援折扣、稅率、有效期；一鍵匯出 PDF 寄給客戶；支援轉化為銷售訂單。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-shopping-cart rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">銷售訂單</h5>
+              <p class="text-muted mt-2">訂單狀態流轉（草稿／審核中／已確認／已出貨／已結案），客戶與產品關聯，訂單明細可分行編輯。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-process rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">訂單簽核工作流</h5>
+              <p class="text-muted mt-2">超額折扣、大額訂單、特殊條款觸發簽核；按部門、職位、金額閾值彈性設定簽核節點。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-receipt rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">發票管理</h5>
+              <p class="text-muted mt-2">訂單產生發票，追蹤開票狀態；客戶檔案稅號、地址、備註自動預填，減少手動輸入錯誤。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-money-withdrawal rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">收款紀錄</h5>
+              <p class="text-muted mt-2">分筆收款、部分到帳；自動計算應收餘額；按客戶、按訂單彙整付款狀態。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
+            <div class="icons text-start"><i class="uil uil-chart-line rounded h3 mb-0"></i></div>
+            <div class="card-body p-0 mt-4">
+              <h5 class="title text-dark">銷售看板</h5>
+              <p class="text-muted mt-2">按業務、地區、產品彙整銷售額、訂單數、回款率；月度／季度趨勢一目了然。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Features End -->
+
+  <!-- Get Started Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">下載與部署</h4>
+            <p class="para-desc mx-auto text-muted mb-0">本模組包含在整合式業務管理系統的備份範本中，統一部署</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>下載備份範本</h5>
+                <p class="text-muted mt-2">整合式方案備份，還原後包含本模組在內的 6 大模組全部預置資料</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>下載 .nbdata 備份</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-2">
+          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>查看安裝文件</h5>
+                <p class="text-muted mt-2">詳細的還原步驟、常見問題與注意事項，正在準備中</p>
+              </div>
+              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
+                <a href="https://docs.nocobase.com/solution/all-in-one/installation" target="_blank" class="btn btn-primary"><i class="uil uil-book-open me-1"></i>查看文件</a>
+                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Started End -->
+
+  <!-- CTA Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h3 class="title mb-4">開始使用</h3>
+          <p class="text-muted para-desc mx-auto mb-0">本模組同樣整合在 <a href="/tw/solutions/all-in-one">整合式業務管理系統</a> 中，可單獨使用，也可與 CRM、工單系統、專案管理、固定資產管理、HR 協同。</p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>線上體驗 Demo</a>
+            <a href="/tw/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>聯絡諮詢</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA End -->
+
+  <ShapeFooter />
+</BaseTW>
+
+<style>
+.module-hero-illustration {
+  padding: 3rem 2rem;
+  background: rgba(47, 85, 212, 0.05);
+  border-radius: 16px;
+}
+
+.pipeline-node {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 110px;
+  background: rgba(47, 85, 212, 0.06);
+  border: 1px solid rgba(47, 85, 212, 0.18);
+}
+.pipeline-node-end {
+  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.pipeline-node-end .text-muted,
+.pipeline-node-end i {
+  color: #fff !important;
+}
+.pipeline-arrow {
+  color: rgba(47, 85, 212, 0.4) !important;
+}
+
+.module-breadcrumb a:hover {
+  color: var(--bs-primary) !important;
+}
+.module-breadcrumb i {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+</style>

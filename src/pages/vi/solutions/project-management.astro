@@ -1,12 +1,43 @@
 ---
-import BaseVI from "../../../layouts/BaseVI.astro";
+import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import InteractiveDemo from "../../../components/InteractiveDemo.astro";
+import { listPluginCategories } from "../../../utils";
+
+// Import interactive demo data
+import projectDemoGuides from "../../../data/project-management-demo-en.json";
+
+// Get plugin data
+const pluginData = await listPluginCategories();
+const allPlugins = pluginData.flatMap((group: any) => group.plugins);
+
+// Define plugins used in Project Management
+const projectPluginNames = [
+  "Data Visualization: ECharts",
+  "Collection: Comment",
+  "Workflow: Custom action event"
+];
+
+// Find plugin by name
+function findPluginByName(name: string) {
+  return allPlugins.find((plugin: any) => 
+    plugin.name === name || 
+    plugin.name_cn === name ||
+    plugin.package_name?.includes(name.toLowerCase())
+  );
+}
+
+// Get Project Management related plugins
+const projectPlugins = projectPluginNames.map(name => findPluginByName(name)).filter(Boolean);
+
+// Debug info
+console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
 ---
 
-<BaseVI
-  title="Hệ thống quản lý dự án — Cộng tác dự án nhẹ mã nguồn mở | NocoBase"
-  description="Hệ thống quản lý dự án mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý hai cấp dự án + công việc, người phụ trách, tiến độ, mốc, cảnh báo trễ, phân bố khối lượng. Nhẹ, có thể tự triển khai, phù hợp cho nhóm vừa và nhỏ và cộng tác dự án liên phòng ban."
-  keywords="hệ thống quản lý dự án, phần mềm quản lý dự án, hệ thống quản lý công việc, quản lý dự án mã nguồn mở, quản lý dự án nhẹ, quản lý công việc, cộng tác dự án, theo dõi dự án, quản lý mốc, NocoBase"
+<Layout
+  title="Comprehensive R&D Project Management Solution"
+  description="NocoBase R&D project management system provides complete development lifecycle management capabilities. From requirements planning, task assignment, progress tracking to quality management, achieving full-process digital management and team collaboration."
+  keywords="NocoBase R&D Project Management, Task Management, Team Collaboration, Agile Development, Quality Management"
 >
   <!-- Hero/Banner Start -->
   <section class="bg-half-170 bg-light d-table w-100">
@@ -14,336 +45,457 @@ import ShapeFooter from "../../../components/ShapeFooter.astro";
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-7 order-1 order-md-1">
           <div class="title-heading">
-            <div class="module-breadcrumb mb-2">
-              <a href="/vi/solutions/all-in-one" class="text-muted small text-decoration-none">Hệ thống quản lý kinh doanh tích hợp</a>
+            <div class="mb-2 solution-breadcrumb">
+              <a href="/vi/solutions" class="small text-decoration-none">Thư viện giải pháp</a>
               <i class="uil uil-angle-right text-muted small"></i>
-              <span class="text-muted small">mô-đun Quản lý dự án</span>
+              <span class="text-muted small">Quản lý dự án (1.x)</span>
             </div>
-            <h1 class="fw-bold mt-2 mb-3">Hệ thống quản lý dự án</h1>
-            <p class="para-desc text-muted">
-              Được xây dựng trên nền tảng no-code NocoBase. Quản lý hai cấp <strong>dự án + công việc</strong>, bao gồm người phụ trách, tiến độ, mốc, cảnh báo trễ và phân bố khối lượng, nhẹ và có thể tự triển khai.
-            </p>
-
-            <div class="row mt-4 g-3">
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Hai cấp dự án + công việc</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Cảnh báo trễ</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Theo dõi mốc</span></div></div>
-              <div class="col-auto"><div class="d-flex align-items-center"><i class="uil uil-check-circle text-success me-2"></i><span class="small">Mã nguồn mở miễn phí</span></div></div>
+            <h1 class="fw-bold mt-2 mb-3">Comprehensive<br/>R&D Project Management Solution</h1>
+            <p class="para-desc text-muted">A powerful, flexible R&D project management platform built with NocoBase. Supports multiple development methodologies including Agile, Waterfall, and hybrid approaches. Manage requirements, tasks, teams, iterations, and quality all in one place.</p>
+            <div class="mt-3 p-2" style="background-color: #f8f9fa; border-left: 3px solid #2f55d4; border-radius: 4px;">
+              <small class="text-muted">
+                <i class="uil uil-info-circle"></i> Built with NocoBase 1.x (2.0 in development)
+              </small>
             </div>
 
+            <!-- Tags -->
             <div class="row mt-4">
               <div class="col-auto">
-                <div class="d-flex align-items-center flex-wrap">
-                  <span class="text-muted me-2">Tình huống áp dụng:</span>
-                  <span class="badge bg-soft-primary me-2">Dự án bàn giao</span>
-                  <span class="badge bg-soft-primary me-2">IT nội bộ</span>
-                  <span class="badge bg-soft-primary me-2">Cộng tác liên phòng ban</span>
-                  <span class="badge bg-soft-primary">Nhóm vừa và nhỏ</span>
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Industries:</span>
+                  <span class="badge bg-soft-primary">R&D</span>
                 </div>
               </div>
             </div>
 
-            <div class="mt-4">
-              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
-              <a href="/vi/solutions/all-in-one" class="btn btn-outline-primary"><i class="uil uil-arrow-right me-1"></i>Xem giải pháp đầy đủ</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
-          <img src="https://static-docs.nocobase.com/module-pm-cover-260521.jpg" alt="Giao diện hệ thống quản lý dự án" class="img-fluid rounded shadow" loading="eager" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero End -->
-
-  <!-- Pipeline Start -->
-  <section class="section" id="pipeline">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Quy trình dự án</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Vòng khép kín hoàn chỉnh từ khởi tạo dự án đến kết thúc, mốc và cảnh báo trễ chạy tự động</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="card border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
-                <div class="pipeline-node">
-                  <i class="uil uil-folder-network text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">Khởi tạo dự án</div>
-                  <div class="small text-muted">Liên kết khách hàng</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-sitemap text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">Chia nhỏ công việc</div>
-                  <div class="small text-muted">Người phụ trách</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-chart-line text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">Theo dõi tiến độ</div>
-                  <div class="small text-muted">Cảnh báo trễ</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node">
-                  <i class="uil uil-map-marker text-primary h3 mb-2"></i>
-                  <div class="small fw-medium">Mốc</div>
-                  <div class="small text-muted">Bàn giao giai đoạn</div>
-                </div>
-                <i class="uil uil-arrow-right h4 text-muted pipeline-arrow"></i>
-                <div class="pipeline-node pipeline-node-end">
-                  <i class="uil uil-check-circle h3 mb-2"></i>
-                  <div class="small fw-medium">Kết thúc</div>
-                  <div class="small opacity-75">Tổng kết và lưu trữ</div>
+            <!-- Developer Info -->
+            <div class="row mt-4">
+              <div class="col-auto">
+                <div class="d-flex align-items-center">
+                  <span class="text-muted me-2">Developer:</span>
+                  <a href="https://www.nocobase.com" target="_blank" class="text-primary text-decoration-none fw-medium">NocoBase</a>
                 </div>
               </div>
+            </div>
 
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead class="bg-light">
-                    <tr>
-                      <th class="border-0 py-3">Giai đoạn</th>
-                      <th class="border-0 py-3">Hành động chính</th>
-                      <th class="border-0 py-3">Hệ thống ghi nhận</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="py-3">Khởi tạo dự án</td>
-                      <td class="py-3 text-muted">Tạo dự án, liên kết khách hàng (dự án bàn giao) hoặc tài sản (dự án IT), chỉ định project manager</td>
-                      <td class="py-3 text-muted">Hồ sơ dự án, liên kết khách hàng, người phụ trách</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">Chia nhỏ công việc</td>
-                      <td class="py-3 text-muted">Phân rã công việc, đặt người phụ trách, thời gian bắt đầu/kết thúc, quan hệ phụ thuộc</td>
-                      <td class="py-3 text-muted">Bảng công việc, người phụ trách, sơ đồ phụ thuộc</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">Theo dõi tiến độ</td>
-                      <td class="py-3 text-muted">Thành viên cập nhật tiến độ công việc; công việc quá hạn tự đánh dấu đỏ</td>
-                      <td class="py-3 text-muted">% tiến độ, đánh dấu trễ</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">Mốc</td>
-                      <td class="py-3 text-muted">Đặt các điểm chính làm mốc (review/internal test/go live); ghi nhận sản phẩm bàn giao theo giai đoạn</td>
-                      <td class="py-3 text-muted">Danh sách mốc, file đính kèm sản phẩm bàn giao</td>
-                    </tr>
-                    <tr>
-                      <td class="py-3">Kết thúc</td>
-                      <td class="py-3 text-muted">Hoàn tất và lưu trữ dự án, ghi nhận thời gian làm việc và chi phí</td>
-                      <td class="py-3 text-muted">Báo cáo kết thúc, tổng hợp giờ làm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <!-- Buttons -->
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Live Demo
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Deploy to Your Environment
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Pipeline End -->
+        </div><!--end col-->
 
-  <!-- Core Features Start -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Chức năng cốt lõi</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Theo dõi dự án nhẹ hoàn chỉnh từ khởi tạo đến kết thúc</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-folder-network rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Hai cấp dự án + công việc</h5>
-              <p class="text-muted mt-2">Một dự án chia thành nhiều công việc, người phụ trách, thời gian bắt đầu/kết thúc, tiến độ duy trì độc lập; bảng dự án tổng quan trạng thái toàn bộ công việc.</p>
+        <div class="col-lg-6 col-md-5 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="text-center">
+            <!-- Project Management Preview -->
+            <div class="position-relative">
+              <img 
+                src="https://static-docs.nocobase.com/screenshot-20250909-151855-1.png" 
+                alt="NocoBase R&D Project Management System Preview" 
+                class="img-fluid rounded shadow"
+                style="max-height: 400px; object-fit: cover;"
+              />
             </div>
           </div>
-        </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- Hero/Banner End -->
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-map-marker rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Quản lý mốc</h5>
-              <p class="text-muted mt-2">Đặt các điểm chính làm mốc (review nguyên mẫu, internal test, go live); tiến độ dự án thể hiện theo nhịp mốc.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-exclamation-triangle rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Cảnh báo trễ</h5>
-              <p class="text-muted mt-2">Công việc vượt deadline tự đánh dấu đỏ, danh sách dự án trễ làm mới real-time, người quản lý nhìn rõ điểm rủi ro.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-users-alt rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Người phụ trách và khối lượng</h5>
-              <p class="text-muted mt-2">Tổng hợp số lượng công việc và khối lượng theo người phụ trách; ai đang nhiều việc, ai rảnh, ai trễ nhiều — người quản lý nhìn rõ.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-chart-pie rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Bảng trạng thái dự án</h5>
-              <p class="text-muted mt-2">Tổng hợp KPI theo loại dự án, trạng thái, người phụ trách; dự án đang chạy, đã kết thúc, đang trễ — hiển thị phân loại.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 features feature-primary feature-clean p-4 shadow h-100">
-            <div class="icons text-start"><i class="uil uil-link rounded h3 mb-0"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="title text-dark">Liên kết khách hàng và tài sản</h5>
-              <p class="text-muted mt-2">Dự án có thể liên kết khách hàng (dự án bàn giao), tài sản (dự án IT); trang chi tiết khách hàng thấy lịch sử dự án liên quan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="card border-0 p-4 shadow h-100 roadmap-card-grid">
-            <div class="icons text-start"><i class="uil uil-ellipsis-h h3 mb-0 text-muted"></i></div>
-            <div class="card-body p-0 mt-4">
-              <h5 class="text-muted mb-2">Tính năng khác đang phát triển</h5>
-              <p class="text-muted small mt-2 mb-0">Dự kiến: biểu đồ phụ thuộc nhiệm vụ, ghi nhận thời gian & chi phí, lưu trữ sản phẩm bàn giao, biểu đồ Gantt</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Core Features End -->
-
-  <!-- Get Started Start -->
+  <!-- Features Start -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Tải xuống và triển khai</h4>
-            <p class="para-desc mx-auto text-muted mb-0">Mô-đun này nằm trong file backup mẫu của Hệ thống quản lý kinh doanh tích hợp, triển khai thống nhất</p>
+            <h4 class="title mb-4">What Makes NocoBase Project Management Unique</h4>
+            <p class="para-desc mx-auto text-muted mb-0">A comprehensive solution that adapts to your project management methodology</p>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center"><i class="uil uil-import h1 text-primary"></i></div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Tải file backup mẫu</h5>
-                <p class="text-muted mt-2">Backup giải pháp tích hợp, sau khi khôi phục bao gồm toàn bộ dữ liệu mẫu của 6 mô-đun, trong đó có mô-đun này</p>
-              </div>
-              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
-                <a href="https://static-docs.nocobase.com/nocobase_all_in_one_backup_260521.nbdata" class="btn btn-primary"><i class="uil uil-download-alt me-1"></i>Tải backup .nbdata</a>
-                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-6 mt-2">
-          <div class="card border-0 text-center features feature-clean p-4 shadow h-100">
-            <div class="d-flex flex-column h-100">
-              <div class="icons text-center"><i class="uil uil-book-open h1 text-muted"></i></div>
-              <div class="content mt-4 flex-grow-1">
-                <h5>Xem tài liệu cài đặt</h5>
-                <p class="text-muted mt-2">Các bước khôi phục chi tiết, câu hỏi thường gặp và lưu ý đang được chuẩn bị</p>
-              </div>
-              <div class="mt-3 d-flex flex-column gap-2 align-items-center">
-                <a href="https://docs.nocobase.com/vi/solution/all-in-one/installation" target="_blank" class="btn btn-primary"><i class="uil uil-book-open me-1"></i>Xem tài liệu</a>
-                <span class="btn-link btn-sm invisible" aria-hidden="true">.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Get Started End -->
+        </div><!--end col-->
+      </div><!--end row-->
 
-  <!-- CTA Start -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-layers rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Complete Project Lifecycle</h5>
+              <p class="text-muted mt-2">From initiation and planning to execution, monitoring, closure, manage every phase of your projects</p>
+              <i class="uil uil-layers full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-chart-line rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Agile & Traditional Methods</h5>
+              <p class="text-muted mt-2">Support for Scrum sprints, Kanban boards, Gantt charts, burndown charts, and traditional waterfall approaches</p>
+              <i class="uil uil-chart-line full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-users-alt rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Team Collaboration & Quality Management</h5>
+              <p class="text-muted mt-2">Efficiently manage development teams, track code quality, handle defects and issues, ensuring product quality</p>
+              <i class="uil uil-users-alt full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow h-100">
+            <div class="icons text-start">
+              <i class="uil uil-cube rounded h3 mb-0"></i>
+            </div>
+            <div class="card-body p-0 mt-4">                                            
+              <h5 class="title text-dark">Easy to Modify & Extend</h5>
+              <p class="text-muted mt-2">Based on NocoBase's no-code capabilities, easily customize fields, processes and business logic with complete control</p>
+              <i class="uil uil-cube full-img"></i>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Features End -->
+
+
+  <!-- Try Project Management Extension Start -->
   <section class="section bg-light">
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8">
-          <h3 class="title mb-4">Bắt đầu sử dụng</h3>
-          <p class="text-muted para-desc mx-auto mb-0">Mô-đun này cũng được tích hợp trong <a href="/vi/solutions/all-in-one">Hệ thống quản lý kinh doanh tích hợp</a>, có thể sử dụng độc lập hoặc phối hợp với CRM, Quản lý bán hàng, Help Desk, Quản lý tài sản, Quản lý nhân sự.</p>
-          <div class="mt-4">
-            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3"><i class="uil uil-play me-1"></i>Trải nghiệm Demo</a>
-            <a href="/vi/contact" class="btn btn-outline-primary mt-2"><i class="uil uil-envelope me-1"></i>Liên hệ tư vấn</a>
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+
+        <div class="mt-4" id="ticket-demo-wrap">
+          <!-- Interactive Demo -->
+          <InteractiveDemo guides={projectDemoGuides}  />
+        </div><!--end ticket-demo-wrap-->
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 text-center">
+            <div class="mt-4 pt-2">
+              <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary me-3">
+                <i class="uil uil-play me-1"></i>Try It Now
+              </a>
+              <a href="#copy-tutorial" class="btn btn-outline-primary">
+                <i class="uil uil-copy me-1"></i>Copy to Your Environment
+              </a>
+            </div>
+          </div><!--end col-->
+        </div><!--end row-->
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Try Project Management Extension End -->
+
+  <!-- Development Tutorial Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Project Management Development Tutorial</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Learn how to build a professional project management system using NocoBase from scratch</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- CTA End -->
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-database h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Data Model Design</h5>
+                <p class="text-muted text-center">Learn how to create basic data structures for projects, tasks, teams, and their relationships</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-sitemap h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Workflow Configuration</h5>
+                <p class="text-muted text-center">Set up task assignment, status transitions and automated project workflows</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 shadow rounded h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="icon text-primary text-center">
+                <i class="uil uil-chart-line h2 mb-3"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-3 text-center">Sprint & Tracking</h5>
+                <p class="text-muted text-center">Configure sprints, burndown charts and progress tracking features</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-secondary btn-sm">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Development Tutorial End -->
+
+  <!-- Commercial Plugins Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Enhance with Commercial Plugins</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Extend your project management capabilities with powerful commercial plugins</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row pb-4">
+        <!-- Dynamically generated plugin cards -->
+        {projectPlugins.slice(0, 6).map((plugin) => {
+          if (!plugin) return null;
+          
+          const displayName = plugin.name || plugin.name_cn;
+          const displayDescription = plugin.description || plugin.description_cn;
+          const docsUrl = plugin.docs || plugin.docs_cn;
+          
+          return (
+            <div class="col-lg-4 col-md-6 col-12 pt-0 pb-4">
+              <div title={displayName} style="color: inherit;" class="card rounded shadow border-0 plugin-card h-100">
+                <div class="card-body">
+                  <div class="mt-2 plugin-box">
+                    <h6 class="card-title mb-1">{displayName}</h6>
+                    <div class="plugin-developer text-muted mb-3">By <span>{plugin.developer || 'NocoBase'}</span></div>
+                    <p class="text-muted mb-2 plugin-overview">{displayDescription}
+                      {docsUrl && (
+                        <a href={docsUrl} target="_blank" style="font-size: 14px;margin-left: 5px;">Details</a>
+                      )}
+                    </p>
+                    {plugin.commercial && (
+                      <div class="plugin-footer">
+                        <h6 class="text-primary mb-0">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use, 1-year upgrade</span><br>
+                          <a href="/vi/plugins-bundles"> {plugin.points_1_year || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price_1_year_usd || 0}</span>
+                        </h6>
+                        <h6 class="text-muted mb-0" style="margin-left: auto;font-weight: normal;">
+                          <span class="text-muted" style="font-weight: normal;font-style: italic;font-size: 12px;">Lifetime use & upgrade</span><br>
+                          <a class="text-muted" href="/vi/plugins-bundles"> {plugin.point || 0} <i class="uil uil-moon-eclipse me-1"></i></a>
+                          <span class="text-muted">/</span>
+                          <span class="text-muted">${plugin.price || 0}</span>
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div><!--end row-->
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 text-center">
+          <a href="/vi/plugins-commercial" class="btn btn-primary me-3">View All Commercial Plugins</a>
+          <a href="/vi/commercial" class="btn btn-outline-primary">Learn About Pricing</a>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- Commercial Plugins End -->
+
+  <!-- How to Use Start -->
+  <section class="section" id="copy-tutorial">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">How to Use?</h4>
+            <p class="para-desc mx-auto text-muted mb-0">Three steps to quickly deploy NocoBase CRM system with project management functionality to your environment</p>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-download-alt h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Install NocoBase System</h5>
+                <p class="text-muted mt-2">Deploy NocoBase system to your server following our installation documentation</p>
+              </div>
+              <div class="mt-3">
+                <a href="https://v2.docs.nocobase.com/get-started/quickstart" target="_blank" class="btn btn-primary">View Installation Guide</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-cloud-download h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Download CRM System Template</h5>
+                <p class="text-muted mt-2">Download the complete CRM template to get project management capability</p>
+              </div>
+              <div class="mt-3">
+                <div>
+                  <a href="https://static-docs.nocobase.com/pm_demo/demo_en_250910.zip" class="text-muted small" style="text-decoration: underline !important;">Download SQL File</a>
+                </div>
+                <a href="https://static-docs.nocobase.com/pm_demo/demo_en_20250910.nbdata" class="btn btn-outline-primary">Download Backup File (.nbdata)</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card border-0 text-center features feature-clean course-feature p-4 shadow h-100">
+            <div class="d-flex flex-column h-100">
+              <div class="icons text-center">
+                <i class="uil uil-upload h1 text-primary"></i>
+              </div>
+              <div class="content mt-4 flex-grow-1">
+                <h5>Restore in System</h5>
+                <p class="text-muted mt-2">Import the CRM template file into your NocoBase system to get both CRM and project management capabilities</p>
+              </div>
+              <div class="mt-3">
+                <a href="/vi/tutorials/nocobase-crm-demo-deployment-guide" class="btn btn-outline-primary">Restoration Tutorial</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <!-- Project management feature explanation -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="alert border-0 shadow-sm" style="background: #f8f9fa; border-left: 4px solid #007bff !important;">
+            <div class="d-flex align-items-start">
+              <div class="flex-shrink-0 me-3">
+                <i class="uil uil-info-circle h4 text-primary mb-0"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-2 text-dark fw-medium">Tip</h6>
+                <p class="mb-0 text-muted">The project management system is fully integrated into the CRM template as a comprehensive module. After deployment, you can directly use the complete project management functionality within the CRM system to achieve full-process project and team management.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- How to Use End -->
+
+  <!-- CTA Section Start -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="title mb-4">Ready to Transform Your R&D Management?</h3>
+          <p class="text-muted para-desc mx-auto mb-0">
+            Deploy a comprehensive R&D management solution in minutes. From requirements planning to task tracking and quality control, NocoBase adapts to your development process without writing a single line of code.
+          </p>
+          <div class="mt-4">
+            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-3">
+              <i class="uil uil-play me-1"></i>Live Demo
+            </a>
+            <a href="#copy-tutorial" class="btn btn-outline-primary mt-2">
+              <i class="uil uil-copy me-1"></i>Deploy Now
+            </a>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- CTA Section End -->
 
   <ShapeFooter />
-</BaseVI>
+</Layout>
 
 <style>
-.module-hero-illustration {
-  padding: 3rem 2rem;
-  background: rgba(47, 85, 212, 0.05);
-  border-radius: 16px;
+/* Project Management System Styles - Reference ticketing page styles */
+#ticket-demo-wrap {
+  position: relative;
 }
 
-.pipeline-node {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  min-width: 110px;
-  background: rgba(47, 85, 212, 0.06);
-  border: 1px solid rgba(47, 85, 212, 0.18);
-}
-.pipeline-node-end {
-  background: linear-gradient(135deg, #2f55d4 0%, #1e3a8a 100%);
-  color: #fff;
-  border-color: transparent;
-}
-.pipeline-node-end .text-muted,
-.pipeline-node-end i {
-  color: #fff !important;
-}
-.pipeline-arrow {
-  color: rgba(47, 85, 212, 0.4) !important;
+/* Plugin card styles */
+.plugin-card {
+  transition: all 0.3s ease;
 }
 
-.module-breadcrumb a:hover {
-  color: var(--bs-primary) !important;
-}
-.module-breadcrumb i {
-  vertical-align: middle;
-  margin: 0 4px;
+.plugin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.roadmap-card-grid {
-  background: rgba(108, 117, 125, 0.03);
-  border: 1px dashed rgba(108, 117, 125, 0.25) !important;
-  opacity: 0.85;
+.plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.plugin-developer span {
+  color: #6c757d;
+}
+
+.plugin-overview {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plugin-footer h6 {
+  font-size: 0.8rem;
+}
+
+.plugin-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 </style>
+

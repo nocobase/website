@@ -1,0 +1,238 @@
+---
+import BaseES from "../../../layouts/BaseES.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+
+// Biblioteca de soluciones — para añadir una nueva solución, basta con agregar una entrada aquí
+const solutions = [
+  {
+    title: "Suite empresarial integral",
+    desc: "CRM, ventas, tickets, proyectos, activos fijos y RR. HH. — seis módulos unificados en un solo sistema, con empleados de IA y flujos de trabajo integrados.",
+    href: "/es/solutions/all-in-one",
+    cover: "https://static-docs.nocobase.com/all-in-one-cover-2026-05-20.jpg",
+    icon: "uil-layer-group",
+    categories: ["Integral"],
+    status: "En desarrollo",
+    tags: ["Integral", "Múltiples líneas de negocio", "Empleados de IA"],
+  },
+  {
+    title: "CRM Plus",
+    desc: "Un ciclo de ventas completo, desde prospectos, seguimiento y conversión hasta Cliente 360. Modular y desagregable, profundamente integrado con empleados de IA, con multidivisa y paneles incorporados.",
+    href: "/es/solutions/crm-v2",
+    cover: "https://static-docs.nocobase.com/design-2026-02-01-02-46-56-opt.jpg",
+    icon: "uil-chart-growth",
+    categories: ["Clientes y ventas"],
+    tags: ["CRM", "Gestión de ventas", "Cliente 360"],
+  },
+  {
+    title: "CRM Básico",
+    desc: "Una base de CRM flexible y profundamente personalizable. Soberanía total sobre los datos, lista para ampliar y transformar sobre ella.",
+    href: "/es/solutions/crm",
+    cover: "https://static-docs.nocobase.com/img_v3_02o3_58bedc3b-7f22-4b56-9c74-83463ffb186g32-opt.jpeg",
+    icon: "uil-users-alt",
+    categories: ["Clientes y ventas"],
+    tags: ["CRM", "Personalizable", "Base"],
+  },
+  {
+    title: "Sistema de tickets inteligente 2.0",
+    desc: "El ciclo de vida completo, desde el reporte del cliente hasta el cierre del caso. Una arquitectura de datos en forma de T admite múltiples escenarios de negocio, con empleados de IA que ayudan en la clasificación y el tratamiento.",
+    href: "/es/solutions/ticketing-v2",
+    cover: "https://static-docs.nocobase.com/ticketing-imgs-2026-01-01-00-46-12-opt.jpg",
+    icon: "uil-robot",
+    categories: ["Atención al cliente"],
+    tags: ["Tickets", "Soporte", "Clasificación con IA"],
+  },
+  {
+    title: "Sistema de tickets (1.x)",
+    desc: "Un complemento importante del CRM, que ofrece gestión completa del ciclo de vida de los tickets — ideal para escenarios de posventa y atención al cliente.",
+    href: "/es/solutions/ticketing",
+    cover: "https://static-docs.nocobase.com/img_v3_02o5_a2422688-f176-4c84-bf32-5ee0774f919g-1.png",
+    icon: "uil-comment-alt-lines",
+    categories: ["Atención al cliente"],
+    tags: ["Tickets", "Posventa", "1.x"],
+  },
+  {
+    title: "Gestión de proyectos (1.x)",
+    desc: "Gestión completa del ciclo de vida del proyecto, desde los requisitos hasta la entrega, abarcando tareas, iteraciones, progreso, hitos y carga de trabajo.",
+    href: "/es/solutions/project-management",
+    cover: "https://static-docs.nocobase.com/screenshot-20250909-151855-1.png",
+    icon: "uil-clipboard-notes",
+    categories: ["Proyectos e I+D"],
+    tags: ["Proyectos", "Colaboración de I+D", "Hitos", "1.x"],
+  },
+];
+
+// Categorías de filtro (el orden es el orden de visualización)
+const categories = ["Todas", "Integral", "Clientes y ventas", "Atención al cliente", "Proyectos e I+D"];
+---
+
+<BaseES
+  title="Más soluciones - Biblioteca de soluciones de NocoBase"
+  description="Biblioteca de soluciones de NocoBase: la Suite empresarial integral, además de soluciones de negocio independientes como CRM, ventas, tickets y gestión de proyectos. Filtra por escenario — todas se basan en la plataforma sin código de NocoBase, listas para usar y autoalojables."
+  keywords="soluciones NocoBase, biblioteca de soluciones, suite empresarial integral, sistema CRM, sistema de tickets, sistema de gestión de proyectos, soluciones sin código, sistemas de negocio de código abierto"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">Biblioteca de soluciones</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              Soluciones de negocio construidas sobre la plataforma sin código de NocoBase — elige la que se ajuste a tu escenario. Todo está listo para usar y es autoalojable, y se incorporan nuevas soluciones constantemente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section">
+    <div class="container">
+      <!-- Chips de filtro -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "Todas" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de tarjetas -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={s.categories.join(",")}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              <div class="sol-cover-wrap">
+                <img src={s.cover} alt={s.title} class="sol-cover" loading="lazy" />
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.desc}</p>
+                <a href={s.href} class="text-primary small d-inline-block stretched-link">Ver solución <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {s.tags.map((t) => <span class="sol-tag">{t}</span>)}
+                  {s.status && <span class="sol-tag sol-tag-status">{s.status}</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Estado vacío (aún sin coincidencias) -->
+      <div class="row" id="solution-empty" style="display:none;">
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>Aún no hay soluciones en esta categoría — pronto habrá más.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #f4f6fa;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chips = document.querySelectorAll("#solution-filter .filter-chip");
+      const items = document.querySelectorAll("#solution-grid .solution-item");
+      const empty = document.getElementById("solution-empty");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.getAttribute("data-filter");
+          let visible = 0;
+          items.forEach((item) => {
+            const cats = (item.getAttribute("data-categories") || "").split(",");
+            const show = filter === "*" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          if (empty) empty.style.display = visible === 0 ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseES>
