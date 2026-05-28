@@ -1,6 +1,6 @@
 {
   "id": 1039,
-  "title": "Weekly Updates｜AI employee support parallel processing of multiple conversation",
+  "title": "Weekly Updates｜AI Employee Support Parallel Processing of Multiple Conversation",
   "title_cn": "本周更新｜AI 员工支持多个会话并行处理",
   "title_ja": "今週の更新｜AI 従業員が複数のセッションを並列処理できるように",
   "description": "This is a summary of NocoBase feature updates and improvements from May 7 to May 14, 2026.\n",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-05-14T04:02:06.682Z"
+  "updatedAt": "2026-05-28T11:46:34.978Z"
 }
