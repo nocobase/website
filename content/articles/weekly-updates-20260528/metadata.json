@@ -1,8 +1,8 @@
 {
   "id": 1060,
-  "title": "Weekly Updates｜Theme editor is now available in the v2 interface",
-  "title_cn": "本周更新｜主题编辑器现已支持 v2 界面",
-  "title_ja": "今週の更新｜テーマエディターが v2 画面に対応しました",
+  "title": "Weekly Updates｜open source backup manager plugin",
+  "title_cn": "本周更新｜开源备份管理器插件",
+  "title_ja": "今週の更新｜バックアップマネージャープラグインをオープンソース化しました",
   "description": "This is a summary of NocoBase feature updates and improvements from May 22 to May 28, 2026.",
   "description_cn": "汇总了 2026.05.22-05.28 期间 NocoBase 的功能更新与改进。\n",
   "description_ja": "2026.05.22-05.28 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-28T04:48:04.891Z"
+  "updatedAt": "2026-05-28T05:40:12.384Z"
 }
