@@ -1,6 +1,6 @@
 {
   "id": 1060,
-  "title": "Weekly Updates｜open source backup manager plugin",
+  "title": "Weekly Updates｜Open Source Backup Manager Plugin",
   "title_cn": "本周更新｜开源备份管理器插件",
   "title_ja": "今週の更新｜バックアップマネージャープラグインをオープンソース化しました",
   "description": "This is a summary of NocoBase feature updates and improvements from May 22 to May 28, 2026.",
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-28T05:40:12.384Z"
+  "updatedAt": "2026-05-28T11:27:17.239Z"
 }
