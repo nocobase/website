@@ -16,6 +16,14 @@ In fact, the value of OpenClaw is not limited to controlling a computer through 
 
 Next, we will introduce several types of open source tools that work well with OpenClaw and explore how it can better enter enterprise internal workflows.
 
+---
+
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
+
 ## 1. NocoBase
 
 **Official website**:[https://www.nocobase.com/](https://www.nocobase.com/)
@@ -283,7 +291,6 @@ OpenClaw is only a starting point. In future enterprise applications, Agents wil
 People will no longer need to enter every system frequently to check status, find issues, and follow up on progress. Agents can continuously monitor business changes and bring the items that require judgment and action back to people.
 
 If you find this article helpful, feel free to share it with friends who are exploring AI Agents and enterprise internal tools.
-
 
 **Related reading**
 
