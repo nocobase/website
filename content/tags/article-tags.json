@@ -4998,5 +4998,25 @@
     "title_cn": "open claw",
     "title_ja": "open claw",
     "updatedById": 22
+  },
+  {
+    "createdAt": "2026-05-30T09:33:58.193Z",
+    "updatedAt": "2026-05-30T09:33:58.193Z",
+    "createdById": 22,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 256,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 254,
+    "title": "Hermes Agent",
+    "title_cn": "Hermes Agent",
+    "title_ja": "Hermes Agent",
+    "updatedById": 22
   }
 ]
