@@ -1,14 +1,14 @@
 {
   "id": 1063,
-  "title": "NocoBase v2.0.60",
-  "title_cn": "NocoBase v2.0.60",
-  "title_ja": null,
+  "title": "NocoBase v2.0.60: Improved the LLM Base URL field so it can use global-scope variables in create and edit forms",
+  "title_cn": "NocoBase v2.0.60：改进 LLM 的 Base URL 字段，使其在创建和编辑表单中都支持使用全局变量",
+  "title_ja": "NocoBase v2.0.60：LLM の Base URL フィールドを改善し、作成フォームと編集フォームの両方でグローバル変数を使用できるようにしました",
   "description": "Release Note of v2.0.60",
   "description_cn": "v2.0.60 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.60 リリースノート",
   "slug": "v2.0.60",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-29T10:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-30T09:54:32.962Z",
+        "updatedAt": "2026-05-30T09:54:32.962Z",
+        "articles_id": 1063,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-30T09:37:01.683Z",
+    "updatedAt": "2026-05-30T09:37:01.690Z",
+    "id": 2428,
+    "title": "main (4)",
+    "filename": "main (4)-nl0v9i.png",
+    "extname": ".png",
+    "size": 87890,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(4)-nl0v9i.png",
+    "preview": "https://static-docs.nocobase.com/main%20(4)-nl0v9i.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-29T10:11:28.326Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-30T09:54:32.935Z"
 }
