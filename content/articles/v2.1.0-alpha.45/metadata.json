@@ -1,14 +1,14 @@
 {
   "id": 1064,
-  "title": "NocoBase v2.1.0-alpha.45",
-  "title_cn": "NocoBase v2.1.0-alpha.45",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-alpha.45: Support field value assignment in submit form actions",
+  "title_cn": "NocoBase v2.1.0-alpha.45：支持表单的提交操作配置字段赋值",
+  "title_ja": "NocoBase v2.1.0-alpha.45：フォーム送信アクションでフィールド値の代入設定をサポートしました",
   "description": "Release Note of v2.1.0-alpha.45",
   "description_cn": "v2.1.0-alpha.45 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.0-alpha.45 リリースノート",
   "slug": "v2.1.0-alpha.45",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-05-29T13:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2025-01-22T06:50:37.402Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-05-30T09:54:25.754Z",
+        "updatedAt": "2026-05-30T09:54:25.754Z",
+        "articles_id": 1064,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-05-30T09:37:06.221Z",
+    "updatedAt": "2026-05-30T09:37:06.225Z",
+    "id": 2429,
+    "title": "develop (1)",
+    "filename": "develop (1)-2uwofe.jpg",
+    "extname": ".jpg",
+    "size": 80692,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop%20(1)-2uwofe.jpg",
+    "preview": "https://static-docs.nocobase.com/develop%20(1)-2uwofe.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-05-29T12:48:51.453Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-05-30T09:54:25.737Z"
 }
