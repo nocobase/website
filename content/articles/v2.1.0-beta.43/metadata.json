@@ -7,7 +7,7 @@
   "description_cn": "v2.1.0-beta.43 更新日志",
   "description_ja": null,
   "slug": "v2.1.0-beta.43",
-  "publishedAt": null,
+  "publishedAt": "2026-06-03T03:18:30.900Z",
   "status": "drafted",
   "tags": [
     {
@@ -28,10 +28,10 @@
       "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
       "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
       "createdById": 1,
-      "updatedById": 9,
+      "updatedById": 1,
       "articlesTags": {
         "createdAt": "2026-06-02T14:16:13.116Z",
-        "updatedAt": "2026-06-02T14:16:13.116Z",
+        "updatedAt": "2026-06-03T03:18:43.114Z",
         "tagId": 4,
         "articleId": 1067
       }
@@ -46,5 +46,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-06-02T14:16:13.072Z"
+  "updatedAt": "2026-06-03T03:18:43.099Z"
 }
