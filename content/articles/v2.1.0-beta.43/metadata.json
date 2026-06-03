@@ -8,7 +8,7 @@
   "description_ja": "v2.1.0-beta.43 リリースノート",
   "slug": "v2.1.0-beta.43",
   "publishedAt": "2026-06-01T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -66,12 +66,28 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-03T15:29:40.105Z",
+    "updatedAt": "2026-06-03T15:29:40.110Z",
+    "id": 2432,
+    "title": "next_ 需要确保文字都在虚线内 (5)",
+    "filename": "next_ 需要确保文字都在虚线内 (5)-ktoijc.jpg",
+    "extname": ".jpg",
+    "size": 236874,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(5)-ktoijc.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(5)-ktoijc.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-06-03T14:32:56.521Z"
+  "updatedAt": "2026-06-03T15:29:46.273Z"
 }
