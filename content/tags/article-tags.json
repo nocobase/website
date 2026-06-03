@@ -5018,5 +5018,25 @@
     "title_cn": "Hermes Agent",
     "title_ja": "Hermes Agent",
     "updatedById": 22
+  },
+  {
+    "createdAt": "2026-06-03T15:36:25.428Z",
+    "updatedAt": "2026-06-03T15:36:25.428Z",
+    "createdById": 22,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 257,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 255,
+    "title": "CLI",
+    "title_cn": "CLI",
+    "title_ja": "CLI",
+    "updatedById": 22
   }
 ]
