@@ -192,11 +192,11 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 - **[client-v2]**
 
-  - add v2 table row selection setting ([#9614](https://github.com/nocobase/nocobase/pull/9614)) by @katherinehhh
-  - support action panel action colors ([#9612](https://github.com/nocobase/nocobase/pull/9612)) by @katherinehhh
+  - Add v2 table row selection setting ([#9614](https://github.com/nocobase/nocobase/pull/9614)) by @katherinehhh
+  - Support action panel action colors ([#9612](https://github.com/nocobase/nocobase/pull/9612)) by @katherinehhh
   - Remove the Hidden option from menu configuration ([#9596](https://github.com/nocobase/nocobase/pull/9596)) by @zhangzhonghe
 - **[client]** Remove the Hidden option from menu item settings ([#9595](https://github.com/nocobase/nocobase/pull/9595)) by @zhangzhonghe
-- **[cli]** streamline app upgrade flow ([#9587](https://github.com/nocobase/nocobase/pull/9587)) by @chenos
+- **[cli]** Streamline app upgrade flow ([#9587](https://github.com/nocobase/nocobase/pull/9587)) by @chenos
 - **[AI employees]** Improved the LLM Base URL field so it can use global-scope variables in create and edit forms. ([#9615](https://github.com/nocobase/nocobase/pull/9615)) by @cgyrock
 - **[IP restriction]** Add a v2 client for the IP restriction plugin. by @Molunerfinn
 
@@ -214,16 +214,13 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Improve plugin manager page performance by using CSS line-clamp instead of antd Typography ellipsis. ([#9593](https://github.com/nocobase/nocobase/pull/9593)) by @Molunerfinn
 - **[client]**
 
-  - fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
-  - fix sync hidden state for subform linkage ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
-  - increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
-  - fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
+  - Fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
+  - Fix sync hidden state for subform linkage ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
+  - Increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
+  - Fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
   - Fix page tabs disappearing after switching menus ([#9583](https://github.com/nocobase/nocobase/pull/9583)) by @zhangzhonghe
-  - fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
-  - fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
+  - Fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
+  - Increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
 - **[Collection: Tree]** Fix the error caused by circular parent-child data in tree collections ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[Workflow: Custom action event]**
 
@@ -231,8 +228,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Filter custom action workflow binding options by the current block collection. ([#9610](https://github.com/nocobase/nocobase/pull/9610)) by @mytharcher
 - **[File manager]**
 
-  - Improved PDF preview failure messages and documented CORS requirements for external storage. ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    Reference: [File Preview](docs/docs/en/file-manager/file-preview/index.md)
   - Improved PDF preview failure messages and documented CORS requirements for external storage. ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     Reference: [File Preview](docs/docs/en/file-manager/file-preview/index.md)
   - Fixed Unicode filename normalization during file uploads to avoid generating object keys with control characters. ([#9584](https://github.com/nocobase/nocobase/pull/9584)) by @mytharcher
@@ -295,16 +290,12 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[client]**
 
   - Fix the badge width in the top navigation bar ([#9607](https://github.com/nocobase/nocobase/pull/9607)) by @zhangzhonghe
-  - increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
+  - Increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
   - Fix page tabs disappearing after switching menus ([#9583](https://github.com/nocobase/nocobase/pull/9583)) by @zhangzhonghe
-  - fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
-  - fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - fix sync hidden state for subform linkage ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
-  - fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
-  - fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - increase scan input image upload limit ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
+  - Fix issue where subtable in subform could not add a second row ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
+  - Fix preserve time format for v2 time fields ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
+  - Fix sync mobile date picker popup value ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
+  - Fix sync hidden state for subform linkage ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
 - **[flow-engine]**
 
   - Fixed the incorrect frontend log level. ([#9577](https://github.com/nocobase/nocobase/pull/9577)) by @gchust
@@ -330,8 +321,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Collection: Tree]** Fix the error caused by circular parent-child data in tree collections ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[File manager]**
 
-  - Improved PDF preview failure messages and documented CORS requirements for external storage. ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    Reference: [File Preview](docs/docs/en/file-manager/file-preview/index.md)
   - Improved PDF preview failure messages and documented CORS requirements for external storage. ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     Reference: [File Preview](docs/docs/en/file-manager/file-preview/index.md)
   - Safely render PDF previews with PDF.js instead of iframe-based raw PDF rendering. ([#9566](https://github.com/nocobase/nocobase/pull/9566)) by @mytharcher
