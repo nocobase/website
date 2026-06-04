@@ -221,9 +221,6 @@
   - メニュー切り替え後にページタブが消える問題を修正しました。 ([#9583](https://github.com/nocobase/nocobase/pull/9583)) by @zhangzhonghe
   - v2 サブフォーム内のサブテーブルで 2 件目のデータを追加できない問題を修正しました。 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
   - v1 スキャン入力コンポーネントのファイルアップロード上限を 10 MB に引き上げました。 ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
-  - v2 モバイルの日付ポップアップで、フォーム値ではなく現在時刻が使用される問題を修正しました。 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - v2 サブフォーム内のサブテーブルで 2 件目のデータを追加できない問題を修正しました。 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - v2 の時刻フィールドで、時刻形式の設定が有効にならない問題を修正しました。 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
 - **[Collection: Tree]** ツリー構造データに親子循環がある場合、クエリエラーが不明確になる問題を修正しました。 ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[Workflow: Custom action event]**
 
@@ -231,8 +228,6 @@
   - カスタムアクションイベントにワークフローをバインドする際、現在のブロックのコレクションに基づいて選択可能なワークフローをフィルタリングするようにしました。 ([#9610](https://github.com/nocobase/nocobase/pull/9610)) by @mytharcher
 - **[File manager]**
 
-  - PDF プレビュー失敗時のメッセージを改善し、外部ストレージの CORS 設定説明を補足しました。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    参考：[File Preview](docs/docs/cn/file-manager/file-preview/index.md)
   - PDF プレビュー失敗時のメッセージを改善し、外部ストレージの CORS 設定説明を補足しました。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     参考：[File Preview](docs/docs/cn/file-manager/file-preview/index.md)
   - ファイルアップロード時に Unicode ファイル名が誤って二重デコードされる問題を修正し、制御文字を含むオブジェクトキーが生成されないようにしました。 ([#9584](https://github.com/nocobase/nocobase/pull/9584)) by @mytharcher
@@ -301,10 +296,6 @@
   - v2 の時刻フィールドで、時刻形式の設定が有効にならない問題を修正しました。 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
   - v2 モバイルの日付ポップアップで、フォーム値ではなく現在時刻が使用される問題を修正しました。 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
   - 連動ルールによって表示されたサブフォームフィールドが、送信時に引き続きフィルタリングされる問題を修正しました。 ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
-  - v2 の時刻フィールドで、時刻形式の設定が有効にならない問題を修正しました。 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
-  - v2 サブフォーム内のサブテーブルで 2 件目のデータを追加できない問題を修正しました。 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - v2 モバイルの日付ポップアップで、フォーム値ではなく現在時刻が使用される問題を修正しました。 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - v1 スキャン入力コンポーネントのファイルアップロード上限を 10 MB に引き上げました。 ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
 - **[flow-engine]**
 
   - フロントエンドのログレベルが正しくない問題を修正しました。 ([#9577](https://github.com/nocobase/nocobase/pull/9577)) by @gchust
@@ -330,8 +321,6 @@
 - **[Collection: Tree]** ツリー構造データに親子循環がある場合、クエリエラーが不明確になる問題を修正しました。 ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[File manager]**
 
-  - PDF プレビュー失敗時のメッセージを改善し、外部ストレージの CORS 設定説明を補足しました。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    参考：[File Preview](docs/docs/cn/file-manager/file-preview/index.md)
   - PDF プレビュー失敗時のメッセージを改善し、外部ストレージの CORS 設定説明を補足しました。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     参考：[File Preview](docs/docs/cn/file-manager/file-preview/index.md)
   - PDF.js を使用して PDF プレビューを安全にレンダリングし、iframe による元の PDF の直接読み込みを回避しました。 ([#9566](https://github.com/nocobase/nocobase/pull/9566)) by @mytharcher
