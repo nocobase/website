@@ -223,9 +223,6 @@
   - 修复切换菜单后页面标签页消失的问题 ([#9583](https://github.com/nocobase/nocobase/pull/9583)) by @zhangzhonghe
   - 修复 v2 子表单中子表格无法添加第二条数据的问题 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
   - 提高 v1扫描输入组件文件上传上限到 10 MB ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
-  - 修复 v2 移动端日期弹窗使用当前时间而不是表单值的问题 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - 修复 v2 子表单中子表格无法添加第二条数据的问题 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - 修复 v2 时间字段格式设置后不生效问题 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
 - **[数据表：树]** 修复树形数据存在父子环时查询报错不明确的问题 ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[工作流：自定义操作事件]**
 
@@ -233,8 +230,6 @@
   - 自定义操作事件绑定工作流时按当前区块数据表过滤可选工作流。 ([#9610](https://github.com/nocobase/nocobase/pull/9610)) by @mytharcher
 - **[文件管理器]**
 
-  - 优化 PDF 预览失败提示，并补充外部存储 CORS 配置说明。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    参考文档：[文件预览](docs/docs/cn/file-manager/file-preview/index.md)
   - 优化 PDF 预览失败提示，并补充外部存储 CORS 配置说明。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     参考文档：[文件预览](docs/docs/cn/file-manager/file-preview/index.md)
   - 修复文件上传时 Unicode 文件名被错误二次解码的问题，避免生成包含控制字符的对象键。 ([#9584](https://github.com/nocobase/nocobase/pull/9584)) by @mytharcher
@@ -303,10 +298,6 @@
   - 修复 v2 时间字段格式设置后不生效问题 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
   - 修复 v2 移动端日期弹窗使用当前时间而不是表单值的问题 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
   - 修复子表单字段通过联动规则显示后提交仍被过滤的问题 ([#9594](https://github.com/nocobase/nocobase/pull/9594)) by @katherinehhh
-  - 修复 v2 时间字段格式设置后不生效问题 ([#9579](https://github.com/nocobase/nocobase/pull/9579)) by @katherinehhh
-  - 修复 v2 子表单中子表格无法添加第二条数据的问题 ([#9586](https://github.com/nocobase/nocobase/pull/9586)) by @katherinehhh
-  - 修复 v2 移动端日期弹窗使用当前时间而不是表单值的问题 ([#9582](https://github.com/nocobase/nocobase/pull/9582)) by @katherinehhh
-  - 提高 v1扫描输入组件文件上传上限到 10 MB ([#9580](https://github.com/nocobase/nocobase/pull/9580)) by @katherinehhh
 - **[flow-engine]**
 
   - 修复前端日志等级不正确的问题。 ([#9577](https://github.com/nocobase/nocobase/pull/9577)) by @gchust
@@ -332,8 +323,6 @@
 - **[数据表：树]** 修复树形数据存在父子环时查询报错不明确的问题 ([#9603](https://github.com/nocobase/nocobase/pull/9603)) by @zhangzhonghe
 - **[文件管理器]**
 
-  - 优化 PDF 预览失败提示，并补充外部存储 CORS 配置说明。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
-    参考文档：[文件预览](docs/docs/cn/file-manager/file-preview/index.md)
   - 优化 PDF 预览失败提示，并补充外部存储 CORS 配置说明。 ([#9600](https://github.com/nocobase/nocobase/pull/9600)) by @mytharcher
     参考文档：[文件预览](docs/docs/cn/file-manager/file-preview/index.md)
   - 使用 PDF.js 安全渲染 PDF 预览，避免通过 iframe 直接加载原始 PDF。 ([#9566](https://github.com/nocobase/nocobase/pull/9566)) by @mytharcher
