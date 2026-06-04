@@ -1,0 +1,23 @@
+{
+  "id": 1073,
+  "title": "Announcing NocoBase 2.1.0",
+  "title_cn": "NocoBase 2.1.0 发布",
+  "title_ja": "NocoBase 2.1.0 をリリース",
+  "description": "Major AI upgrade: from CLI integration and AI-powered building to NocoBase Skills, AI plugin development, and enhanced AI Employees—covering the full lifecycle of building, extending, and operating business systems. Build and run real business systems faster with AI.",
+  "description_cn": "重磅升级 AI 能力：从 CLI 接入、AI 搭建、NocoBase Skills，到 AI 插件开发与 AI 员工增强，全面覆盖业务系统的构建、扩展与协作流程。更快用 AI 搭建和运行真实业务系统。",
+  "description_ja": "AI 機能を大幅強化。CLI 接続、AI 構築、NocoBase Skills、AI プラグイン開発、AI 従業員の強化まで、業務システムの構築・拡張・運用を包括的にサポート。AI を活用して、実用的な業務システムをより迅速に構築・運用できます。",
+  "slug": "2.1.0",
+  "publishedAt": "2026-06-04T14:42:50.171Z",
+  "status": "drafted",
+  "tags": [],
+  "sub_tags": [],
+  "category": null,
+  "cover": null,
+  "hideOnListPage": false,
+  "hideOnBlog": false,
+  "author": "NocoBase team",
+  "ai_generated": false,
+  "ai_generated_cn": null,
+  "ai_generated_ja": true,
+  "updatedAt": "2026-06-04T14:52:20.192Z"
+}
