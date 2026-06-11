@@ -1,0 +1,60 @@
+{
+  "id": 369401953714176,
+  "title": "Contact management system",
+  "title_cn": "联系人管理",
+  "title_ja": null,
+  "description": "Build a customizable employee contact management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, or OpenCode to NocoBase and use natural language to generate an employee directory with department filters, name search, job titles, work locations, employment types, and contact management. AI can automatically extract and translate employee profiles, giving you a customizable, reliable, and continuously evolvable employee directory system.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工联系人管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成员工通讯录、部门筛选、姓名搜索、职位、工作地点、用工类型和联系方式管理，并通过 AI 自动提取和翻译员工资料，构建可定制、可靠、可长期迭代的员工目录系统。",
+  "description_ja": null,
+  "slug": "employee-directory",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-11T08:50:58.595Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:02:57.574Z",
+        "updatedAt": "2026-06-11T09:02:57.574Z",
+        "tagId": 263,
+        "solutionId": 369401953714176
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T09:01:10.315Z",
+    "updatedAt": "2026-06-11T09:01:10.321Z",
+    "id": 2506,
+    "title": "employee-directory-1",
+    "filename": "employee-directory-1-a9ibt9.png",
+    "extname": ".png",
+    "size": 1003510,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9.png",
+    "preview": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Employee Directory: a search hero, multi-select facets, and avatar cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/19-employee-directory.html",
+  "updatedAt": "2026-06-11T09:02:57.580Z"
+}
