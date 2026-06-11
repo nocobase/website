@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:39.841Z",
-    "updatedAt": "2026-06-11T08:59:39.853Z",
-    "id": 2495,
-    "title": "customer-support-ticket-1",
-    "filename": "customer-support-ticket-1-3n1e5o.png",
+    "createdAt": "2026-06-11T11:28:45.708Z",
+    "updatedAt": "2026-06-11T11:28:45.717Z",
+    "id": 2545,
+    "title": "customer-support-ticket-1-3n1e5o-c",
+    "filename": "customer-support-ticket-1-3n1e5o-c-1js1cl.png",
     "extname": ".png",
-    "size": 765138,
+    "size": 635899,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/customer-support-ticket-1-3n1e5o.png",
-    "preview": "https://static-docs.nocobase.com/customer-support-ticket-1-3n1e5o.png",
+    "url": "https://static-docs.nocobase.com/customer-support-ticket-1-3n1e5o-c-1js1cl.png",
+    "preview": "https://static-docs.nocobase.com/customer-support-ticket-1-3n1e5o-c-1js1cl.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Support Inbox: a three-pane inbox — queue, conversation, and customer panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html",
-  "updatedAt": "2026-06-11T10:48:42.985Z",
+  "updatedAt": "2026-06-11T11:29:08.928Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 支持工单收件箱:队列、会话、客户面板三栏式收件箱。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html"
 }
