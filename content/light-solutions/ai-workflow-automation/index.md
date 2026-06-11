@@ -76,10 +76,6 @@ For example, after an inventory record is created, an inventory suggestion can b
 
 The input, AI instructions, output, and data update status of every execution are recorded, making it easy for teams to review results and locate problems. For teams that value traceability, maintainability, and long-term iteration, NocoBase is the better choice for building AI workflow automation that goes into real business use.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **How is AI workflow automation different from regular workflows?**
