@@ -67,7 +67,7 @@ AI 则进一步降低了系统搭建门槛。你可以先用提示词让 AI Agen
 
 你可以直接使用这些提示词，让你的 Agent 帮你在 NocoBase 中搭建一个库存管理系统，再通过无代码方式调整字段、页面和流程。
 
-在使用前，请先参考 [AI Agent 接入指南 - NocoBase 文档](https://docs.nocobase.com/cn/ai/quick-start) ，安装新的 NocoBase 并连接 AI Agent。
+开始前,请先按 [AI Agent 快速开始](https://docs.nocobase.com/ai/quick-start) 安装 NocoBase 并接入你的 AI Agent。想快速体验?创建应用时用快速模式 —— 一条命令就能拉起一个开箱即用的 NocoBase 实例,装好后直接粘贴下面的提示词即可。
 
 {{prompt}}
 
