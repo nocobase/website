@@ -8,15 +8,15 @@ This system is a great fit for HR teams, department managers, and employees to j
 
 **Leave balances, request form, and team calendar:**
 
-![](https://static-docs.nocobase.com/employee-leave-management-1-oi1cog.png)
+![](https://static-docs.nocobase.com/employee-leave-management-1-oi1cog-c-ltme1q.png)
 
 **Leave type selection and balance validation:**
 
-![](https://static-docs.nocobase.com/employee-leave-management-2-nimim7.png)
+![](https://static-docs.nocobase.com/employee-leave-management-2-nimim7-c-r4fldg.png)
 
 **Leave calendar and request status:**
 
-![](https://static-docs.nocobase.com/employee-leave-management-3-6eiv4g.png)
+![](https://static-docs.nocobase.com/employee-leave-management-3-6eiv4g-c-qj2ml5.png)
 
 **AI-generated department leave analysis report:**
 
@@ -78,74 +78,62 @@ AI further reduces the cost of statistics and reporting. The AI data analyst in 
 A leave management system built this way is not just a request form, but a long-term business system covering leave balances, requests, approvals, scheduling, and organizational analysis.
 
 ## FAQ
-
-1. **Can I view the whole team's leave schedule in a calendar?**
+**Can I view the whole team's leave schedule in a calendar?**
 
 Yes. The team leave calendar displays each employee's time off by month, with different colors for annual, sick, personal, compensatory, and maternity leave.
 
 Managers can quickly spot whether multiple key members are off during the same period and adjust staffing in advance.
-
-1. **Can I filter the leave calendar by employee, department, or leave type?**
+**Can I filter the leave calendar by employee, department, or leave type?**
 
 Yes. The system can show only the records of a specific employee, team, or leave type.
 
 For example, a manager can view all of their department's leave for next month, or look at annual leave alone, cutting out irrelevant information when planning schedules.
-
-1. **Can I set up multi-level leave approvals?**
+**Can I set up multi-level leave approvals?**
 
 Yes. After an employee submits a request, it can first go to the direct manager for approval, then route to HR or higher levels based on leave length, type, or employee level.
 
 For example, short leave can be approved by the direct manager, while multi-day or special leave adds an HR review. Approvers can also record the reason for approving or declining.
-
-1. **Can regular employees see their colleagues' leave reasons?**
+**Can regular employees see their colleagues' leave reasons?**
 
 This can be restricted through permissions. Regular employees can see only their teammates' leave dates and status, without the specific reason or other sensitive information.
 
 Direct managers and HR can see fuller request content based on their responsibilities. NocoBase supports access control by role, department, and field scope, which is well suited to protecting employee privacy.
-
-1. **Can I view pending, approved, and declined requests?**
+**Can I view pending, approved, and declined requests?**
 
 Yes. The request list shows the employee, leave type, start and end dates, leave days, and statuses such as Pending, Approved, and Declined.
 
 Employees can track the progress of their own requests, and managers can focus on unprocessed ones so no approval slips through.
-
-1. **Can AI analyze department leave usage?**
+**Can AI analyze department leave usage?**
 
 Yes. AI can aggregate total annual allowance, days used, days remaining, and overall utilization, and compare leave usage across departments.
 
 It can also flag teams with high per-person usage or employees who haven't taken leave for a long time, giving HR a reference for workload, leave utilization, and scheduling.
-
-1. **Can AI detect potential staffing risks?**
+**Can AI detect potential staffing risks?**
 
 Yes. By combining the team calendar with historical records, AI can identify clustered time off, key roles absent at the same time, or employees who haven't used their annual leave for an extended period.
 
 These findings can be compiled into a department leave analysis report, helping managers arrange handovers and coverage in advance.
-
-1. **Can the AI-generated leave analysis report be exported?**
+**Can the AI-generated leave analysis report be exported?**
 
 Yes. The report can include department leave balances, utilization, per-person differences, key risks, and analysis charts, viewable as Preview, Markdown, or HTML.
 
 It can also be downloaded as Markdown or HTML, or printed to PDF — well suited to HR monthly analysis and management reporting.
-
-1. **Can Claude Code, Codex, Cursor, or OpenCode help build the leave system?**
+**Can Claude Code, Codex, Cursor, or OpenCode help build the leave system?**
 
 Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate employees, leave balances, leave requests, approval flows, and the team calendar from a prompt.
 
 After the system is generated, HR can still adjust leave types, balance rules, approval steps, and permissions through NocoBase's no-code UI — no redevelopment needed every time a policy changes.
-
-1. **How is this different from a leave form generated by plain vibe coding?**
+**How is this different from a leave form generated by plain vibe coding?**
 
 Plain vibe coding can quickly produce a date picker and a submit form, but enterprise leave management also needs working-day calculations, leave balances, post-approval deductions, a team calendar, data permissions, and change history.
 
 NocoBase keeps employees, balances, requests, approvals, and analytics in one system. AI speeds up building and analysis, while NocoBase takes care of data consistency, access control, and long-term maintenance.
-
-1. **Can the system keep evolving as leave policies change?**
+**Can the system keep evolving as leave policies change?**
 
 Yes. Companies can change leave types, annual allowances, working-day calculation rules, approval conditions, and balance deduction rules, and configure different policies for different regions or employee groups.
 
 The system can keep iterating while preserving historical records, with no need to rebuild from scratch after every policy change.
-
-1. **Is this system suitable for real company leave management?**
+**Is this system suitable for real company leave management?**
 
 Yes. Leave management touches employee privacy, balance accuracy, approval accountability, and team scheduling — it needs more stable data and process capabilities than a one-off request form.
 
