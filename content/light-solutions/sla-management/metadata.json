@@ -56,5 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — SLA Monitor: a KPI bar, a three-column war-room board, and countdown rings. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/17-sla-management.html",
-  "updatedAt": "2026-06-11T10:02:08.214Z"
+  "updatedAt": "2026-06-11T10:48:41.428Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— SLA 监控:KPI 栏、三列作战看板和倒计时圆环。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/17-sla-management.html"
 }
