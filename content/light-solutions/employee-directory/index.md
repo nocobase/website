@@ -8,11 +8,11 @@ This system is a great fit for company employee directories, people directories 
 
 **Employee contact directory:**
 
-![](https://static-docs.nocobase.com/employee-directory-1-a9ibt9.png)
+![](https://static-docs.nocobase.com/employee-directory-1-a9ibt9-c-dmo3ov.png)
 
 **Filter employees by department:**
 
-![](https://static-docs.nocobase.com/employee-directory-2-6fgh63.png)
+![](https://static-docs.nocobase.com/employee-directory-2-6fgh63-c-j2c0at.png)
 
 **AI extracts employee details from natural language:**
 
@@ -87,68 +87,57 @@ For international teams, AI can also translate employee information into Japanes
 The resulting employee contact management system is not a static address book, but an internal people directory that keeps evolving with your team size, org structure, and office locations.
 
 ## FAQ
-
-1. **What information can an employee card display?**
+**What information can an employee card display?**
 
 Each employee card can show the name, job title, department, work location, and employment type, with entry points for email, phone, and the personal profile.
 
 Teams can also add fields such as skills, coverage areas, direct manager, time zone, or languages as needed, making the directory better fit real collaboration needs.
-
-1. **Can it manage remote employees and cross-regional teams?**
+**Can it manage remote employees and cross-regional teams?**
 
 Yes. Employee profiles can record the office city, country, region, or Remote status, and distinguish employment types such as Full-time, Part-time, and Contractor.
 
 For international teams, you can also add time zone, working language, and location filters to reduce the cost of finding information across regions.
-
-1. **Can it automatically extract details from employee introduction emails?**
+**Can it automatically extract details from employee introduction emails?**
 
 Yes. AI can read new-hire introduction emails, HR announcements, or chat messages, extract the name, title, location, employment type, skills, email, and phone number, and automatically fill in the employee form.
 
 This is especially useful when HR needs to onboard employees in batches, reducing the work of copying information between emails and systems.
-
-1. **Can AI translate employee profiles and fill in multilingual information?**
+**Can AI translate employee profiles and fill in multilingual information?**
 
 Yes. AI can translate titles, locations, employment types, and skills into Japanese or other languages while preserving information that does not need translation, such as emails and phone numbers.
 
 For multinational companies, you can maintain display content in different languages on top of the same employee data, without translating and entering each record manually.
-
-1. **Can Claude Code, Codex, Cursor, or OpenCode help build the employee directory?**
+**Can Claude Code, Codex, Cursor, or OpenCode help build the employee directory?**
 
 Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate data structures for employees, departments, and org relationships, along with search, filtering, card directory, and data entry pages from a prompt.
 
 After the base system is generated, HR can still adjust fields, pages, and permissions through NocoBase's no-code UI, instead of regenerating the app every time the org structure changes.
-
-1. **Can I control which employee details each person can see?**
+**Can I control which employee details each person can see?**
 
 Yes. NocoBase supports permission configuration by role, department, and data scope.
 
 For example, regular employees can view public names, titles, and work contact details; department leads can see more information about their own department; HR can maintain complete employee profiles; and sensitive fields such as phone numbers or personal emails can be opened only to authorized roles.
-
-1. **Can employees update their own profiles?**
+**Can employees update their own profiles?**
 
 Certain fields can be opened up based on permissions. Employees can maintain their own avatar, phone number, skills, or work location, while HR manages formal HR information such as job title, department, and employment type.
 
 This approach improves how quickly profiles get updated while preventing key organizational information from being changed arbitrarily.
-
-1. **Is the directory easy to adjust when the org structure changes?**
+**Is the directory easy to adjust when the org structure changes?**
 
 Yes. You can keep adding or adjusting departments, titles, locations, skills, and employment types, and update the filters, employee cards, and profile pages.
 
 When departments split, teams merge, or employees transfer, you can modify the existing data and relationships directly — no need to rebuild the directory.
-
-1. **Can I track who modified employee records?**
+**Can I track who modified employee records?**
 
 You can enable operation history and audit logs as needed to record changes to employee departments, titles, work locations, and contact details.
 
 When someone changes roles, transfers departments, or updates contact information, HR can trace who made the change, when, and exactly what changed, reducing the risk of unverifiable accidental edits.
-
-1. **How is this different from an employee directory generated by plain vibe coding?**
+**How is this different from an employee directory generated by plain vibe coding?**
 
 Plain vibe coding can quickly generate employee cards and a search page, but real enterprise use also requires handling department relationships, data permissions, sensitive fields, profile updates, operation records, and long-term maintenance.
 
 NocoBase stores employee, department, and organizational information in a unified data model and provides permissions, auditing, enterprise login, APIs, and plugin extensibility. AI speeds up building, data extraction, and translation, while NocoBase takes care of long-term operation and data governance.
-
-1. **Is this system suitable for maintaining a company directory long term?**
+**Is this system suitable for maintaining a company directory long term?**
 
 Yes. Beyond serving as a list of employee contact details, it can continuously carry organizational information such as titles, departments, locations, skills, and employment types.
 
