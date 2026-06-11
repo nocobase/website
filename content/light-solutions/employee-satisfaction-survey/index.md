@@ -92,6 +92,14 @@ AI can go further with open-ended responses. You can have AI automatically judge
 
 A satisfaction survey system built this way is not a one-off questionnaire, but an organizational feedback system that keeps accumulating data, compares trends, analyzes team differences, and tracks improvement over time.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can it automatically calculate the employee Net Promoter Score (eNPS)?**
@@ -167,11 +175,3 @@ NocoBase keeps surveys, answers, departments, roles, and historical cycles in on
 Yes. The system can keep storing survey results across quarters or years and compare changes in eNPS, satisfaction, engagement, department differences, and open-ended themes.
 
 Companies can also enable single sign-on, permission management, audit logs, workflows, notifications, and plugin extensions as needed. Compared with one-off survey tools, it is better suited to building a long-term, comparable employee feedback system with proper data governance.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
