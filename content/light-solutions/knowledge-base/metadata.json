@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:21.267Z",
-    "updatedAt": "2026-06-11T08:59:21.272Z",
-    "id": 2477,
-    "title": "knowledge-base-1",
-    "filename": "knowledge-base-1-gl7bjf.png",
+    "createdAt": "2026-06-11T11:28:20.242Z",
+    "updatedAt": "2026-06-11T11:28:20.246Z",
+    "id": 2530,
+    "title": "knowledge-base-1-gl7bjf-c",
+    "filename": "knowledge-base-1-gl7bjf-c-scnu8y.png",
     "extname": ".png",
-    "size": 553408,
+    "size": 364007,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/knowledge-base-1-gl7bjf.png",
-    "preview": "https://static-docs.nocobase.com/knowledge-base-1-gl7bjf.png",
+    "url": "https://static-docs.nocobase.com/knowledge-base-1-gl7bjf-c-scnu8y.png",
+    "preview": "https://static-docs.nocobase.com/knowledge-base-1-gl7bjf-c-scnu8y.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Knowledge Base: circular category cards with search-driven show/hide. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html",
-  "updatedAt": "2026-06-11T10:48:39.494Z",
+  "updatedAt": "2026-06-11T11:29:05.579Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 知识库:圆形分类卡片,随搜索显示/隐藏。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html"
 }
