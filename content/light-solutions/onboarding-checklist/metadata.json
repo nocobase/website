@@ -1,0 +1,60 @@
+{
+  "id": 369401668501504,
+  "title": "Onboarding Checklist",
+  "title_cn": "入职检查清单",
+  "title_ja": null,
+  "description": "Build a customizable employee onboarding checklist with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate employee profiles, staged onboarding tasks, owners, due dates, completion progress, and AI onboarding plans — not just a prototype, but a customizable, reliable, and continuously evolvable employee onboarding system.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工入职检查清单。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成员工档案、分阶段入职任务、负责人、截止日期、完成进度和 AI 入职计划，不只是生成原型，而是构建可定制、可靠、可长期迭代的员工入职系统。",
+  "description_ja": null,
+  "slug": "onboarding-checklist",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-11T08:50:57.434Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:00:41.744Z",
+        "updatedAt": "2026-06-11T09:00:41.744Z",
+        "tagId": 260,
+        "solutionId": 369401668501504
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T08:59:27.242Z",
+    "updatedAt": "2026-06-11T08:59:27.247Z",
+    "id": 2487,
+    "title": "onboarding-checklist-1",
+    "filename": "onboarding-checklist-1-7auk8t.png",
+    "extname": ".png",
+    "size": 653726,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/onboarding-checklist-1-7auk8t.png",
+    "preview": "https://static-docs.nocobase.com/onboarding-checklist-1-7auk8t.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Onboarding Checklist: an onboarding journey with progress tracking and a checklist dialog. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html",
+  "updatedAt": "2026-06-11T09:00:41.747Z"
+}
