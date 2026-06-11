@@ -81,6 +81,14 @@ AI can go further by participating in task assignment and data analysis. An AI t
 
 An issue tracking system built this way is not just a static task table — it is an internal system that supports complex engineering collaboration, continuous analysis, and long-term iteration.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can I quickly filter issues by project, status, and priority?**
@@ -162,11 +170,3 @@ NocoBase already provides the data relations, permissions, workflows, auditing, 
 Yes. After launch, you can keep adding projects, issue types, statuses, priorities, analysis metrics, and automated workflows, and adjust permissions as the team grows.
 
 Enterprises can also enable single sign-on, notifications, APIs, action history, and plugin extensions as needed. Compared with a one-off task management demo, it is far better suited for building a maintainable, traceable, and continuously evolving issue tracking system.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
