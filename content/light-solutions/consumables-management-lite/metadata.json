@@ -1,0 +1,70 @@
+{
+  "id": 369344026181632,
+  "title": "Consumables Management Lite",
+  "title_cn": "易耗品管理(轻量版)",
+  "title_ja": "消耗品管理(ライト版)",
+  "description": "Item catalog, multi-company stock, purchase and requisition with approval — a compact consumables loop you can rebuild in one prompt.",
+  "description_cn": "物品目录、多公司库存、采购与领用审批 —— 一段提示词即可复刻的小型易耗品闭环。",
+  "description_ja": "品目カタログ、多社在庫、購買・払出承認 —— ひとつのプロンプトで再現できる小型消耗品ループ。",
+  "slug": "consumables-management-lite",
+  "publishedAt": "2026-06-11T00:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-07-06T09:43:04.324Z",
+      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "id": 13,
+      "title": "No-code solutions",
+      "title_cn": "无代码解决方案",
+      "sort": 13,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "ノーコードソリューション",
+      "description_ja": "説明はありません。",
+      "keywords_ja": "ノーコード, ソリューション",
+      "createdById": 1,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T01:22:35.749Z",
+        "updatedAt": "2026-06-11T01:22:35.749Z",
+        "tagId": 13,
+        "solutionId": 369344026181632
+      }
+    },
+    {
+      "createdAt": "2024-07-23T14:33:16.045Z",
+      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "id": 21,
+      "title": "Internal-Tools",
+      "title_cn": "内部工具",
+      "sort": 21,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "内部ツール",
+      "description_ja": "内部ツールに関する説明はここに記載されます。",
+      "keywords_ja": "内部, ツール, 管理",
+      "createdById": 1,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T01:22:35.749Z",
+        "updatedAt": "2026-06-11T01:22:35.749Z",
+        "tagId": 21,
+        "solutionId": 369344026181632
+      }
+    }
+  ],
+  "cover": null,
+  "author": "NocoBase Team",
+  "prompt": "You are connected to a NocoBase instance with data-modeling and UI-building tools.\n\nBuild a lightweight consumables management module:\n\n1. Collections:\n   - items: name, code (unique), category (select: office/tool/safety), unit, reference_price (number, 2 decimals)\n   - stocks: item (m2o -> items), company (input), quantity (integer), safe_quantity (integer)\n   - purchase_requests: request_no, item (m2o), quantity, estimated_price, status (select: drafted/submitted/approved/rejected), requested_by\n   - requisitions: request_no, item (m2o), quantity, status (same enum), requested_by\n2. Pages: one management page per collection (table + addNew/edit/view), group them under a \"Consumables\" menu group.\n3. Workflow: when a purchase_request is approved, increase the matching stocks.quantity; when a requisition is approved, decrease it.\n4. Required fields: items.name, items.code, all quantity fields.\n\nUse English for all seed data. Create 5 sample items and 2 sample stocks per item.",
+  "updatedAt": "2026-06-11T01:22:35.712Z"
+}
