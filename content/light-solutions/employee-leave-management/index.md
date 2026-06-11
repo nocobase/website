@@ -77,10 +77,6 @@ AI further reduces the cost of statistics and reporting. The AI data analyst in 
 
 A leave management system built this way is not just a request form, but a long-term business system covering leave balances, requests, approvals, scheduling, and organizational analysis.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can I view the whole team's leave schedule in a calendar?**
