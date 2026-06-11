@@ -69,9 +69,7 @@ AI 则进一步降低了系统搭建门槛。你可以先用提示词让 AI Agen
 
 在使用前，请先参考 [AI Agent 接入指南 - NocoBase 文档](https://docs.nocobase.com/cn/ai/quick-start) ，安装新的 NocoBase 并连接 AI Agent。
 
-```Markdown
-提示词待补充
-```
+{{prompt}}
 
 ## FAQ
 
