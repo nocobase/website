@@ -84,6 +84,14 @@ AI further reduces the cost of building the system. You can start with a prompt 
 
 The result is not a one-off check-in demo, but an internal system that keeps evolving as your team size, department structure, and attendance policies change.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can employees clock in and out from their phones?**
@@ -155,11 +163,3 @@ Ordinary vibe coding can quickly produce a clock-in button or a time-logging pag
 NocoBase puts check-ins, working-hour calculation, status determination, access control, and analysis reports in one business system, with optional SSO, audit logs, notifications, APIs, and plugin extensions.
 
 That makes it better suited for continuously running enterprise attendance management — not just a one-off check-in demo.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
