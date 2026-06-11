@@ -69,9 +69,7 @@ Use this prompt to let your agent build an inventory management system in NocoBa
 
 Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent.
 
-```Markdown
-Prompt coming soon
-```
+{{prompt}}
 
 ## FAQ
 
