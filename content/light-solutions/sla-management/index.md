@@ -85,6 +85,14 @@ AI further reduces the cost of building and analysis. You can first let an AI ag
 
 An SLA management system built this way is not a one-off monitoring page, but a service management system that keeps evolving with your support team, service standards, and customer commitments.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can it track both first-response SLA and resolution SLA at the same time?**
@@ -178,11 +186,3 @@ NocoBase keeps ticket data, time calculations, workflows, permissions, and analy
 Yes. SLA scenarios especially require real-time monitoring, automatic evaluation, access control, and change traceability — not just a static report.
 
 Enterprises can enable workflows, notifications, operation history, audit logs, single sign-on, APIs, and plugin extensions as needed. Compared with a one-off SLA demo, it is far better suited for long-term management of customer support, technical services, and internal service commitments.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
