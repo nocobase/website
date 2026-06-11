@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:26.824Z",
-    "updatedAt": "2026-06-11T08:59:26.828Z",
-    "id": 2485,
-    "title": "content-calendar-1",
-    "filename": "content-calendar-1-1znewy.png",
+    "createdAt": "2026-06-11T11:28:40.747Z",
+    "updatedAt": "2026-06-11T11:28:40.751Z",
+    "id": 2543,
+    "title": "content-calendar-1-1znewy-c",
+    "filename": "content-calendar-1-1znewy-c-masq8z.png",
     "extname": ".png",
-    "size": 344411,
+    "size": 246990,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/content-calendar-1-1znewy.png",
-    "preview": "https://static-docs.nocobase.com/content-calendar-1-1znewy.png",
+    "url": "https://static-docs.nocobase.com/content-calendar-1-1znewy-c-masq8z.png",
+    "preview": "https://static-docs.nocobase.com/content-calendar-1-1znewy-c-masq8z.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Content Calendar: a calendar view with status pills and a right-side summary panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/03-content-calendar.html",
-  "updatedAt": "2026-06-11T10:48:42.219Z",
+  "updatedAt": "2026-06-11T11:29:08.515Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 内容日历:带状态标签的日历视图和右侧汇总面板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/03-content-calendar.html"
 }
