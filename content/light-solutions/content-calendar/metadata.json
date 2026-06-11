@@ -1,0 +1,60 @@
+{
+  "id": 369401741901824,
+  "title": "Content Calendar",
+  "title_cn": "内容日历",
+  "title_ja": null,
+  "description": "Build a customizable content calendar system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, or OpenCode to NocoBase and use natural language to generate an editorial calendar with content statuses, publishing channels, publish dates, authors, campaigns, and content briefs — not just a prototype, but a customizable, reliable content operations system you can keep iterating on.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的内容日历系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成编辑日历、内容状态、发布渠道、发布日期、作者、Campaign 和内容 Brief，不只是生成原型，而是构建可定制、可靠、可长期迭代的内容运营系统。",
+  "description_ja": null,
+  "slug": "content-calendar",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.810Z",
+      "updatedAt": "2026-06-11T08:50:57.810Z",
+      "id": 261,
+      "title": "Marketing",
+      "title_cn": "营销",
+      "sort": 259,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:01:16.028Z",
+        "updatedAt": "2026-06-11T09:01:16.028Z",
+        "tagId": 261,
+        "solutionId": 369401741901824
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T08:59:26.824Z",
+    "updatedAt": "2026-06-11T08:59:26.828Z",
+    "id": 2485,
+    "title": "content-calendar-1",
+    "filename": "content-calendar-1-1znewy.png",
+    "extname": ".png",
+    "size": 344411,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/content-calendar-1-1znewy.png",
+    "preview": "https://static-docs.nocobase.com/content-calendar-1-1znewy.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Content Calendar: a calendar view with status pills and a right-side summary panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/03-content-calendar.html",
+  "updatedAt": "2026-06-11T09:01:16.032Z"
+}
