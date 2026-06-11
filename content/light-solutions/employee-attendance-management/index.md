@@ -84,10 +84,6 @@ AI further reduces the cost of building the system. You can start with a prompt 
 
 The result is not a one-off check-in demo, but an internal system that keeps evolving as your team size, department structure, and attendance policies change.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can employees clock in and out from their phones?**
