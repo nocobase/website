@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:38.422Z",
-    "updatedAt": "2026-06-11T08:59:38.429Z",
-    "id": 2492,
-    "title": "ai-workflow-automation-1",
-    "filename": "ai-workflow-automation-1-acl4wp.png",
+    "createdAt": "2026-06-11T11:28:57.671Z",
+    "updatedAt": "2026-06-11T11:28:57.677Z",
+    "id": 2553,
+    "title": "ai-workflow-automation-1-acl4wp-c",
+    "filename": "ai-workflow-automation-1-acl4wp-c-pv69l8.png",
     "extname": ".png",
-    "size": 542936,
+    "size": 391299,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/ai-workflow-automation-1-acl4wp.png",
-    "preview": "https://static-docs.nocobase.com/ai-workflow-automation-1-acl4wp.png",
+    "url": "https://static-docs.nocobase.com/ai-workflow-automation-1-acl4wp-c-pv69l8.png",
+    "preview": "https://static-docs.nocobase.com/ai-workflow-automation-1-acl4wp-c-pv69l8.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — AI Workflows: native workflows with AI-employee nodes and an execution flow. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html",
-  "updatedAt": "2026-06-11T10:48:44.600Z",
+  "updatedAt": "2026-06-11T11:29:10.646Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— AI 工作流:原生工作流 + AI 员工节点和执行流程视图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html"
 }
