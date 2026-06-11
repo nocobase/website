@@ -86,10 +86,6 @@ AI lowers the cost of both asset entry and system building. You can have an AI a
 
 A system built this way not only launches quickly, but also keeps evolving as device types, office locations, and circulation rules change. For teams that value open source, self-hosting, data control, operation traceability, and long-term maintenance, AI + NocoBase is a better foundation for real asset tracking workflows.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **How is an asset tracking system different from an asset management system?**
