@@ -77,6 +77,14 @@ AI further reduces the cost of statistics and reporting. The AI data analyst in 
 
 A leave management system built this way is not just a request form, but a long-term business system covering leave balances, requests, approvals, scheduling, and organizational analysis.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can I view the whole team's leave schedule in a calendar?**
@@ -150,11 +158,3 @@ The system can keep iterating while preserving historical records, with no need 
 Yes. Leave management touches employee privacy, balance accuracy, approval accountability, and team scheduling — it needs more stable data and process capabilities than a one-off request form.
 
 NocoBase lets you enable workflows, permission management, operation history, audit logs, single sign-on, notifications, APIs, and plugin extensions as needed, making it well suited to building a maintainable, traceable employee leave management system that runs for the long term.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
