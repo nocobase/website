@@ -40,5 +40,5 @@
   "cover": null,
   "author": "NocoBase Team",
   "prompt": "You are connected to a NocoBase instance with data-modeling and UI-building tools.\n\nBuild a lightweight employee offboarding module:\n\n1. Collections:\n   - offboarding_requests: request_no, employee_name, department (input), last_working_day (date), reason (textarea), status (select: drafted/submitted/approved/completed)\n   - return_items: request (m2o -> offboarding_requests), item_name, returned (checkbox)\n   - account_revocations: request (m2o -> offboarding_requests), system_name, revoked (checkbox)\n2. Pages: an \"Offboarding\" page with the requests table; view popup shows the request details plus its return items and account revocations as relation tables.\n3. Workflow: when a request is approved, create default return_items (laptop, badge, key) and account_revocations (email, ERP) rows for it.\n4. Required: employee_name, last_working_day.\n\nUse English for all seed data. Create 2 sample requests in different statuses.",
-  "updatedAt": "2026-06-11T03:47:23.842Z"
+  "updatedAt": "2026-06-11T03:54:39.151Z"
 }
