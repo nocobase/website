@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:13.838Z",
-    "updatedAt": "2026-06-11T08:59:13.842Z",
-    "id": 2457,
-    "title": "sla-management-1",
-    "filename": "sla-management-1-srd4fv.png",
+    "createdAt": "2026-06-11T11:28:37.563Z",
+    "updatedAt": "2026-06-11T11:28:37.567Z",
+    "id": 2539,
+    "title": "sla-management-1-srd4fv-c",
+    "filename": "sla-management-1-srd4fv-c-lpaoet.png",
     "extname": ".png",
-    "size": 498105,
+    "size": 369693,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/sla-management-1-srd4fv.png",
-    "preview": "https://static-docs.nocobase.com/sla-management-1-srd4fv.png",
+    "url": "https://static-docs.nocobase.com/sla-management-1-srd4fv-c-lpaoet.png",
+    "preview": "https://static-docs.nocobase.com/sla-management-1-srd4fv-c-lpaoet.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — SLA Monitor: a KPI bar, a three-column war-room board, and countdown rings. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/17-sla-management.html",
-  "updatedAt": "2026-06-11T10:48:41.428Z",
+  "updatedAt": "2026-06-11T11:29:07.698Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— SLA 监控:KPI 栏、三列作战看板和倒计时圆环。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/17-sla-management.html"
 }
