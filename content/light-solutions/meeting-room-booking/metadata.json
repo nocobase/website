@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:08.689Z",
-    "updatedAt": "2026-06-11T08:59:08.693Z",
-    "id": 2449,
-    "title": "meeting-room-booking-1",
-    "filename": "meeting-room-booking-1-jxn1mr.png",
+    "createdAt": "2026-06-11T11:28:35.674Z",
+    "updatedAt": "2026-06-11T11:28:35.679Z",
+    "id": 2538,
+    "title": "meeting-room-booking-1-jxn1mr-c",
+    "filename": "meeting-room-booking-1-jxn1mr-c-fo7c77.png",
     "extname": ".png",
-    "size": 423319,
+    "size": 289070,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/meeting-room-booking-1-jxn1mr.png",
-    "preview": "https://static-docs.nocobase.com/meeting-room-booking-1-jxn1mr.png",
+    "url": "https://static-docs.nocobase.com/meeting-room-booking-1-jxn1mr-c-fo7c77.png",
+    "preview": "https://static-docs.nocobase.com/meeting-room-booking-1-jxn1mr-c-fo7c77.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Meeting Room Booking: a gantt-style room-availability board and a calendar scoped to the current user. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/10-meeting-room-booking.html",
-  "updatedAt": "2026-06-11T10:48:41.043Z",
+  "updatedAt": "2026-06-11T11:29:07.299Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 会议室预订:甘特式会议室占用看板和按当前用户过滤的日历。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/10-meeting-room-booking.html"
 }
