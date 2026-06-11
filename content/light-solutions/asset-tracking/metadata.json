@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:15.598Z",
-    "updatedAt": "2026-06-11T08:59:15.604Z",
-    "id": 2460,
-    "title": "asset-tracking-1",
-    "filename": "asset-tracking-1-2525di.png",
+    "createdAt": "2026-06-11T11:28:22.535Z",
+    "updatedAt": "2026-06-11T11:28:22.540Z",
+    "id": 2532,
+    "title": "asset-tracking-1-2525di-c",
+    "filename": "asset-tracking-1-2525di-c-a4awd1.png",
     "extname": ".png",
-    "size": 506177,
+    "size": 358675,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/asset-tracking-1-2525di.png",
-    "preview": "https://static-docs.nocobase.com/asset-tracking-1-2525di.png",
+    "url": "https://static-docs.nocobase.com/asset-tracking-1-2525di-c-a4awd1.png",
+    "preview": "https://static-docs.nocobase.com/asset-tracking-1-2525di-c-a4awd1.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Asset Tracking: checkout / return flows with a location timeline. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html",
-  "updatedAt": "2026-06-11T10:48:39.872Z",
+  "updatedAt": "2026-06-11T11:29:06.077Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产追踪:领用/归还流程和位置时间线。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html"
 }
