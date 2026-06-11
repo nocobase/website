@@ -76,6 +76,14 @@ For example, after an inventory record is created, an inventory suggestion can b
 
 The input, AI instructions, output, and data update status of every execution are recorded, making it easy for teams to review results and locate problems. For teams that value traceability, maintainability, and long-term iteration, NocoBase is the better choice for building AI workflow automation that goes into real business use.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **How is AI workflow automation different from regular workflows?**
@@ -149,11 +157,3 @@ Workflow versions, execution history, and node results help teams verify the eff
 Yes — especially for automation scenarios that need stable operation, traceable processes, and verifiable results.
 
 NocoBase can combine permission management, workflow versioning, execution history, operation logs, audit logs, enterprise SSO, APIs, and plugin extensions as needed. Compared with one-off AI automation demos, it is far better suited to business processes that require ongoing maintenance and gradual expansion.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
