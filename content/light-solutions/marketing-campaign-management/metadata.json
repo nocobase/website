@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:18.374Z",
-    "updatedAt": "2026-06-11T08:59:18.379Z",
-    "id": 2472,
-    "title": "marketing-campaign-management-1",
-    "filename": "marketing-campaign-management-1-9fqazg.png",
+    "createdAt": "2026-06-11T11:28:14.460Z",
+    "updatedAt": "2026-06-11T11:28:14.466Z",
+    "id": 2525,
+    "title": "marketing-campaign-management-1-9fqazg-c",
+    "filename": "marketing-campaign-management-1-9fqazg-c-cle3rc.png",
     "extname": ".png",
-    "size": 307634,
+    "size": 226267,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/marketing-campaign-management-1-9fqazg.png",
-    "preview": "https://static-docs.nocobase.com/marketing-campaign-management-1-9fqazg.png",
+    "url": "https://static-docs.nocobase.com/marketing-campaign-management-1-9fqazg-c-cle3rc.png",
+    "preview": "https://static-docs.nocobase.com/marketing-campaign-management-1-9fqazg-c-cle3rc.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Campaign Command: a native gantt, KPI cards, donut charts, and data tables. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
-  "updatedAt": "2026-06-11T10:48:38.702Z",
+  "updatedAt": "2026-06-11T11:29:04.733Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 营销活动指挥台:原生甘特图、KPI 卡片、环形图和数据表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/16-campaign-management.html"
 }
