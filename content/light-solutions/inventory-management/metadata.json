@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T08:59:10.107Z",
-    "updatedAt": "2026-06-11T08:59:10.114Z",
-    "id": 2454,
-    "title": "inventory-management-1",
-    "filename": "inventory-management-1-e5vq46.png",
+    "createdAt": "2026-06-11T11:28:12.915Z",
+    "updatedAt": "2026-06-11T11:28:12.919Z",
+    "id": 2524,
+    "title": "inventory-management-1-e5vq46-c",
+    "filename": "inventory-management-1-e5vq46-c-zicjpo.png",
     "extname": ".png",
-    "size": 451505,
+    "size": 351450,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/inventory-management-1-e5vq46.png",
-    "preview": "https://static-docs.nocobase.com/inventory-management-1-e5vq46.png",
+    "url": "https://static-docs.nocobase.com/inventory-management-1-e5vq46-c-zicjpo.png",
+    "preview": "https://static-docs.nocobase.com/inventory-management-1-e5vq46-c-zicjpo.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Inventory Management: inbound/outbound linkage, status transitions, and summary charts. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/01-inventory-management.html",
-  "updatedAt": "2026-06-11T10:48:38.321Z",
+  "updatedAt": "2026-06-11T11:29:04.332Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 库存管理:出入库联动、状态流转和汇总图表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/01-inventory-management.html"
 }
