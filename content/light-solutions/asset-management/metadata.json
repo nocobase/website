@@ -1,0 +1,60 @@
+{
+  "id": 369401727221760,
+  "title": "Asset Management",
+  "title_cn": "资产管理",
+  "title_ja": null,
+  "description": "Build a customizable asset management system with AI and NocoBase. Connect coding agents such as Claude Code, Codex, Cursor, and OpenCode to NocoBase, then use natural language to generate asset ledgers, asset numbers, asset categories, usage statuses, storage locations, owners, asset values, and maintenance records — not just a prototype, but a customizable, reliable business system you can keep evolving.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的资产管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成资产台账、资产编号、资产分类、使用状态、存放位置、负责人、资产价值和维修记录，不只是生成原型，而是构建可定制、可靠、可长期迭代的业务系统。",
+  "description_ja": null,
+  "slug": "asset-management",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-11T08:50:57.060Z",
+      "id": 259,
+      "title": "Inventory & Assets",
+      "title_cn": "资产与库存",
+      "sort": 257,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:01:09.347Z",
+        "updatedAt": "2026-06-11T09:01:09.347Z",
+        "tagId": 259,
+        "solutionId": 369401727221760
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T09:00:03.879Z",
+    "updatedAt": "2026-06-11T09:00:03.889Z",
+    "id": 2498,
+    "title": "asset-management-1",
+    "filename": "asset-management-1-xe318x.png",
+    "extname": ".png",
+    "size": 373088,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/asset-management-1-xe318x.png",
+    "preview": "https://static-docs.nocobase.com/asset-management-1-xe318x.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Asset Management: three-section asset cards, depreciation progress bars, and maintenance tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/02-asset-management.html",
+  "updatedAt": "2026-06-11T09:01:09.352Z"
+}
