@@ -67,7 +67,7 @@ What you get is not a fixed template, but an internal system that keeps evolving
 
 Use this prompt to let your agent build an inventory management system in NocoBase, then adjust fields, pages and flows through the no-code UI.
 
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent.
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
 
 {{prompt}}
 
