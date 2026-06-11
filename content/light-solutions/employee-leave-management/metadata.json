@@ -1,0 +1,60 @@
+{
+  "id": 369402094223360,
+  "title": "Leave Management",
+  "title_cn": "请假管理",
+  "title_ja": null,
+  "description": "Build a customizable employee leave management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate leave requests, annual leave balances, working-day calculations, approval status, a team leave calendar, and AI department leave analysis — not just a prototype, but a customizable, reliable leave management system you can keep iterating on.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工请假管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成请假申请、年假余额、工作日计算、审批状态、团队请假日历和 AI 部门休假分析，不只是生成原型，而是构建可定制、可靠、可长期迭代的请假管理系统。",
+  "description_ja": null,
+  "slug": "employee-leave-management",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-11T08:50:57.434Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:04:04.531Z",
+        "updatedAt": "2026-06-11T09:04:04.531Z",
+        "tagId": 260,
+        "solutionId": 369402094223360
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T09:01:44.590Z",
+    "updatedAt": "2026-06-11T09:01:44.595Z",
+    "id": 2514,
+    "title": "employee-leave-management-1",
+    "filename": "employee-leave-management-1-oi1cog.png",
+    "extname": ".png",
+    "size": 339939,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog.png",
+    "preview": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Leave Management: a multi-select calendar with pills, a balance dashboard, and a request ledger. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/18-leave-management.html",
+  "updatedAt": "2026-06-11T09:04:04.538Z"
+}
