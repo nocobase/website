@@ -56,5 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Social Media Calendar: a post composer with a live phone preview and a scheduling calendar. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html",
-  "updatedAt": "2026-06-11T10:02:04.207Z"
+  "updatedAt": "2026-06-11T10:48:37.946Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 社媒日历:帖子编辑器 + 手机实时预览和排期日历。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html"
 }
