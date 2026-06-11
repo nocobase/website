@@ -81,6 +81,6 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": null,
-  "updatedAt": "2026-06-11T03:54:37.333Z"
+  "prompt": "You are connected to a NocoBase instance with data-modeling and UI-building tools.\n\nBuild an inventory management system:\n\n1. Collections:\n   - product_categories: name\n   - warehouses: name, location\n   - products: name, sku (unique), category (m2o -> product_categories), unit, price (number, 2 decimals), warehouse (m2o -> warehouses), bin_location, current_stock (integer), safety_stock (integer)\n   - stock_movements: product (m2o -> products), type (select: inbound/outbound/adjustment), quantity (integer), moved_at (datetime), operator, note (textarea)\n2. Pages: group everything under an \"Inventory\" menu group — one management page per collection (table + addNew/edit/view), products table shows a low-stock indicator when current_stock < safety_stock.\n3. Workflows:\n   - when a stock_movement is created, update products.current_stock (inbound adds, outbound subtracts, adjustment applies the signed quantity)\n   - when current_stock falls below safety_stock after the update, create a low-stock alert record or notification\n4. Dashboard page with: total stock value (sum of price * current_stock), product count, low-stock product list, monthly stock movement trend, and stock distribution by category.\n5. Required fields: products.name, products.sku, stock_movements.type, stock_movements.quantity.\n\nUse English for all seed data. Create 3 categories, 2 warehouses, 10 products and 15 stock movements covering all three movement types, including at least 2 products below safety stock.",
+  "updatedAt": "2026-06-11T05:29:01.973Z"
 }
