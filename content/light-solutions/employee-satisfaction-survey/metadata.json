@@ -1,0 +1,60 @@
+{
+  "id": 369401783844864,
+  "title": "Satisfaction Survey",
+  "title_cn": "满意度调查",
+  "title_ja": null,
+  "description": "Build a customizable employee satisfaction survey system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate eNPS, satisfaction scores, response rates, engagement, department heatmaps, sentiment analysis, and representative feedback — not just a prototype, but a customizable, reliable, continuously evolvable employee survey system.",
+  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工满意度调查系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成 eNPS、满意度评分、回收率、参与度、部门热力图、情绪分析和代表性反馈，不只是生成原型，而是构建可定制、可靠、可长期迭代的员工调查系统。",
+  "description_ja": null,
+  "slug": "employee-satisfaction-survey",
+  "publishedAt": "2026-06-11T08:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-11T08:50:58.200Z",
+      "id": 262,
+      "title": "Support",
+      "title_cn": "客服与工单",
+      "sort": 260,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-11T09:01:36.157Z",
+        "updatedAt": "2026-06-11T09:01:36.157Z",
+        "tagId": 262,
+        "solutionId": 369401783844864
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-11T09:00:07.027Z",
+    "updatedAt": "2026-06-11T09:00:07.032Z",
+    "id": 2501,
+    "title": "employee-satisfaction-survey-1",
+    "filename": "employee-satisfaction-survey-1-nxbpfi.png",
+    "extname": ".png",
+    "size": 542936,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/employee-satisfaction-survey-1-nxbpfi.png",
+    "preview": "https://static-docs.nocobase.com/employee-satisfaction-survey-1-nxbpfi.png",
+    "storageId": 2,
+    "createdById": 9,
+    "updatedById": 9
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build a NocoBase app — Satisfaction Survey: an eNPS gauge, a dimension heatmap, and a grid of feedback cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html",
+  "updatedAt": "2026-06-11T09:01:36.160Z"
+}
