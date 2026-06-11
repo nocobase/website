@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Issue Tracking: a tree table with multi-select facets and checkbox columns. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/15-issue-tracking.html",
-  "updatedAt": "2026-06-11T10:48:42.591Z",
+  "updatedAt": "2026-06-11T11:26:40.567Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 问题跟踪:带多选筛选和复选框列的树形表格。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/15-issue-tracking.html"
 }
