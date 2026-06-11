@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T09:01:40.763Z",
-    "updatedAt": "2026-06-11T09:01:40.769Z",
-    "id": 2510,
-    "title": "expense-reimbursement-1",
-    "filename": "expense-reimbursement-1-4pvmil.png",
+    "createdAt": "2026-06-11T11:28:54.993Z",
+    "updatedAt": "2026-06-11T11:28:54.999Z",
+    "id": 2551,
+    "title": "expense-reimbursement-1-4pvmil-c",
+    "filename": "expense-reimbursement-1-4pvmil-c-rgrnw9.png",
     "extname": ".png",
-    "size": 412220,
+    "size": 315174,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/expense-reimbursement-1-4pvmil.png",
-    "preview": "https://static-docs.nocobase.com/expense-reimbursement-1-4pvmil.png",
+    "url": "https://static-docs.nocobase.com/expense-reimbursement-1-4pvmil-c-rgrnw9.png",
+    "preview": "https://static-docs.nocobase.com/expense-reimbursement-1-4pvmil-c-rgrnw9.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Expense Reimbursement: a submission wizard, a my-reimbursements view, and approval progress. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html",
-  "updatedAt": "2026-06-11T10:48:44.200Z",
+  "updatedAt": "2026-06-11T11:29:10.210Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 费用报销:提交向导、我的报销视图和审批进度。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html"
 }
