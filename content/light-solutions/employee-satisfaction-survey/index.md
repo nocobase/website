@@ -92,10 +92,6 @@ AI can go further with open-ended responses. You can have AI automatically judge
 
 A satisfaction survey system built this way is not a one-off questionnaire, but an organizational feedback system that keeps accumulating data, compares trends, analyzes team differences, and tracks improvement over time.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can it automatically calculate the employee Net Promoter Score (eNPS)?**
