@@ -96,6 +96,14 @@ The generated report can be previewed directly, or exported as Markdown, HTML, o
 
 The resulting expense reimbursement system is not just a request form — it is a complete internal system covering expense submission, receipt linking, approval, payment, and financial analysis.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **Can one reimbursement request include multiple expense items?**
@@ -187,11 +195,3 @@ For example, large expenses can require an additional approval from the head of 
 Yes. Expense reimbursement especially values permission isolation, receipt management, approval audit trails, and financial traceability.
 
 NocoBase lets you enable workflows, file management, operation history, audit logging, SSO, notifications, APIs, and plugin extensions as needed. Compared with a one-off reimbursement demo, it is better suited for building an auditable, maintainable expense management system that can evolve over the long term.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
