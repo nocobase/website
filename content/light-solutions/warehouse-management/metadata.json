@@ -56,5 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Warehouse Management: a warehouse / location / stock three-tier model with a location tree and an inventory dashboard. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html",
-  "updatedAt": "2026-06-11T10:02:07.332Z"
+  "updatedAt": "2026-06-11T10:48:40.657Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 仓库管理:仓库/库位/库存三层模型,带库位树和库存看板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html"
 }
