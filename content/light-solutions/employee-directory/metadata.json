@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T09:01:10.315Z",
-    "updatedAt": "2026-06-11T09:01:10.321Z",
-    "id": 2506,
-    "title": "employee-directory-1",
-    "filename": "employee-directory-1-a9ibt9.png",
+    "createdAt": "2026-06-11T11:28:52.761Z",
+    "updatedAt": "2026-06-11T11:28:52.771Z",
+    "id": 2549,
+    "title": "employee-directory-1-a9ibt9-c",
+    "filename": "employee-directory-1-a9ibt9-c-dmo3ov.png",
     "extname": ".png",
-    "size": 1003510,
+    "size": 657540,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9.png",
-    "preview": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9.png",
+    "url": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9-c-dmo3ov.png",
+    "preview": "https://static-docs.nocobase.com/employee-directory-1-a9ibt9-c-dmo3ov.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Directory: a search hero, multi-select facets, and avatar cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/19-employee-directory.html",
-  "updatedAt": "2026-06-11T10:48:43.777Z",
+  "updatedAt": "2026-06-11T11:29:09.789Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 员工通讯录:搜索主区、多选筛选面板和头像卡片。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/19-employee-directory.html"
 }
