@@ -8,7 +8,7 @@ This system fits scenarios such as employee engagement surveys, quarterly satisf
 
 **Core satisfaction metrics and trends:**
 
-![](https://static-docs.nocobase.com/employee-satisfaction-survey-1-nxbpfi.png)
+![](https://static-docs.nocobase.com/employee-satisfaction-survey-1-nxbpfi-c-30fpxn.png)
 
 **Department heatmap and open-ended sentiment distribution:**
 
@@ -16,11 +16,11 @@ This system fits scenarios such as employee engagement surveys, quarterly satisf
 
 **Representative employee feedback:**
 
-![](https://static-docs.nocobase.com/employee-satisfaction-survey-3-463tav.png)
+![](https://static-docs.nocobase.com/employee-satisfaction-survey-3-463tav-c-v4eext.png)
 
 **AI employee generates analysis reports and recommendations:**
 
-![](https://static-docs.nocobase.com/employee-satisfaction-survey-4-adesvn.png)
+![](https://static-docs.nocobase.com/employee-satisfaction-survey-4-adesvn-c-vorplo.png)
 
 ![](https://static-docs.nocobase.com/employee-satisfaction-survey-5-hpt7ue.png)
 
@@ -93,76 +93,64 @@ AI can go further with open-ended responses. You can have AI automatically judge
 A satisfaction survey system built this way is not a one-off questionnaire, but an organizational feedback system that keeps accumulating data, compares trends, analyzes team differences, and tracks improvement over time.
 
 ## FAQ
-
-1. **Can it automatically calculate the employee Net Promoter Score (eNPS)?**
+**Can it automatically calculate the employee Net Promoter Score (eNPS)?**
 
 Yes. Based on employees' ratings for "would you recommend the company," the system automatically distinguishes promoters, passives, and detractors, and calculates the eNPS score along with the share of each group.
 
 Managers can see not only the final score, but also whether a change in eNPS comes from fewer promoters or more detractors.
-
-2. **Besides eNPS, what other core metrics can I view?**
+**Besides eNPS, what other core metrics can I view?**
 
 You can also view overall satisfaction, survey response rate, employee engagement, and the actual number of respondents.
 
 For example, if the satisfaction score is high but the response rate is too low, the results may not represent the whole workforce; the engagement index helps HR judge how many employees are actively invested.
-
-3. **Can results be analyzed by different satisfaction dimensions?**
+**Can results be analyzed by different satisfaction dimensions?**
 
 Yes. The system can separately report dimensions such as work-life balance, management and leadership, growth and development, compensation and benefits, team collaboration, company culture, and role identification.
 
 This is more valuable than a single overall score, because the team can know precisely whether problems mainly come from management, compensation, or career development.
-
-4. **Can I compare satisfaction differences across departments?**
+**Can I compare satisfaction differences across departments?**
 
 Yes. The department-by-dimension heatmap shows each department's average score on every dimension.
 
 For example, a department may perform well in team collaboration but score noticeably low in work-life balance or compensation and benefits. HR can then design more targeted improvement plans instead of applying the same measures company-wide.
-
-5. **Can AI analyze employees' open-ended feedback?**
+**Can AI analyze employees' open-ended feedback?**
 
 Yes. AI can identify written responses as positive, mixed, or negative feedback, and further group them into dimensions such as management, growth, collaboration, culture, and compensation.
 
 It can also extract recurring problems and positive themes from large volumes of answers, reducing HR's manual reading and classification work.
-
-6. **Can AI directly generate survey conclusions and next-step action recommendations?**
+**Can AI directly generate survey conclusions and next-step action recommendations?**
 
 Yes. AI can combine ratings, eNPS, department differences, and open-ended feedback to produce an employee survey analysis report and a follow-up plan.
 
 For example, the report in the screenshot identifies priority issues such as work-life balance, compensation, management responsiveness, and career development, points out which departments need extra attention, and suggests improvement actions.
-
-7. **Can employee feedback stay anonymous?**
+**Can employee feedback stay anonymous?**
 
 Yes. You can configure anonymous or named modes based on your survey rules.
 
 For anonymous surveys, you can prevent regular managers from seeing individual identities and only show department- or dimension-level aggregates. For named surveys, permissions determine what HR, department heads, or administrators can see.
 
 Anonymity rules should be clearly explained before employees submit, to avoid concerns about how the data will be used.
-
-8. **Can department heads view only their own department's results?**
+**Can department heads view only their own department's results?**
 
 Yes. NocoBase supports permissions by role and data scope.
 
 For example, department heads can only view their own department's aggregated scores and feedback trends, HR can view cross-department analysis, and the system administrator handles survey configuration. For departments with very small sample sizes, you can also restrict detail views to reduce the risk of identifying individual employees from their feedback.
-
-9. **Can I track who viewed or modified the survey data?**
+**Can I track who viewed or modified the survey data?**
 
 Yes. You can enable operation history and audit logs as needed, recording key actions such as survey configuration, result modification, permission changes, and report access.
 
 Employee surveys involve sensitive internal information; keeping operation records helps the company control data access and trace issues when accidental changes or data disputes occur.
-
-10. **Can Claude Code, Codex, Cursor, or OpenCode help build this system?**
+**Can Claude Code, Codex, Cursor, or OpenCode help build this system?**
 
 Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate surveys, questions, answers, satisfaction dimensions, and analysis pages from prompts.
 
 Afterwards, HR can still adjust questionnaire items, statistics, permissions, and charts through NocoBase's no-code UI, without redeveloping every time the survey changes.
-
-11. **How is this different from an ordinary online questionnaire or a survey page generated by vibe coding?**
+**How is this different from an ordinary online questionnaire or a survey page generated by vibe coding?**
 
 Ordinary online questionnaires are better suited to one-time data collection, and vibe coding can quickly generate a survey form, but permissions, historical data, cross-cycle trends, department comparison, open-ended analysis, and access auditing usually still need to be handled separately.
 
 NocoBase keeps surveys, answers, departments, roles, and historical cycles in one system. AI handles analysis and recommendations, while NocoBase handles data relationships, access control, and long-term maintenance.
-
-12. **Is this system suitable for tracking employee satisfaction over the long term?**
+**Is this system suitable for tracking employee satisfaction over the long term?**
 
 Yes. The system can keep storing survey results across quarters or years and compare changes in eNPS, satisfaction, engagement, department differences, and open-ended themes.
 
