@@ -81,10 +81,6 @@ AI can not only help build the system but also take part in support data analysi
 
 The result is not just a support inbox, but a customer service platform that keeps evolving with your customer base, support channels, SLA rules, and team structure.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **How is a support ticket system different from a plain shared mailbox?**
