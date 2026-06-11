@@ -15,4 +15,6 @@ Stock movements are workflow-driven: an approved purchase request increases stoc
 
 ## Rebuild it yourself
 
-Scroll down to the prompt section, copy it, and hand it to the AI agent connected to your own NocoBase instance. The agent will create the collections, pages and workflows described above.
+Copy the prompt below and hand it to the AI agent connected to your own NocoBase instance. The agent will create the collections, pages and workflows described above.
+
+{{prompt}}
