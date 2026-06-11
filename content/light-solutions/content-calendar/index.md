@@ -8,11 +8,11 @@ This system is a great fit for content, marketing, brand, editorial, and growth 
 
 **Editorial calendar with status filters:**
 
-![](https://static-docs.nocobase.com/content-calendar-1-1znewy.png)
+![](https://static-docs.nocobase.com/content-calendar-1-1znewy-c-masq8z.png)
 
 **Filtered view of published content:**
 
-![](https://static-docs.nocobase.com/content-calendar-2-mlifwy.png)
+![](https://static-docs.nocobase.com/content-calendar-2-mlifwy-c-abp38x.png)
 
 **AI employee structures content and fills in the form automatically:**
 
@@ -79,28 +79,22 @@ AI further lowers the cost of content entry. Users simply describe the content t
 The result is not a static scheduling spreadsheet but a content operations system that keeps evolving with your channels, team processes, and campaigns.
 
 ## FAQ
-
-1. **Can it manage different channels like blog, social media, and email?**
+**Can it manage different channels like blog, social media, and email?**
 
 Yes. The system supports channels such as Blog, Social, Email, Video, and Webinar, and can count content volume per channel.
-
-1. **Can I see what content is coming up?**
+**Can I see what content is coming up?**
 
 Yes. The Up Next panel on the right side of the page lists upcoming content by publish date, along with status and channel.
-
-1. **Can I see how many items are in each status every month?**
+**Can I see how many items are in each status every month?**
 
 Yes. The monthly overview shows the total content count plus the number of published, scheduled, in-review, and draft items.
-
-1. **Can AI fill in the content form automatically?**
+**Can AI fill in the content form automatically?**
 
 Yes. Given a natural-language description, AI can extract the title, campaign, channel, status, publish date, author, and brief, and fill in the corresponding fields automatically.
-
-1. **How is a content calendar different from a social media calendar?**
+**How is a content calendar different from a social media calendar?**
 
 A content calendar is better suited to managing multiple content types — blog, social media, email, video, and webinars — in one place. A social media calendar focuses more on social accounts, platform previews, and the social publishing workflow.
-
-1. **Is this system ready for a content team's daily use?**
+**Is this system ready for a content team's daily use?**
 
 Yes. NocoBase supports capabilities common to internal enterprise systems — permission management, action history, audit logs, single sign-on, workflows, notifications, APIs, and plugin extensions — which you can enable as needed.
 
