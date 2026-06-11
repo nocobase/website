@@ -63,8 +63,24 @@
       }
     }
   ],
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-08T14:46:06.218Z",
+    "updatedAt": "2026-06-08T14:46:06.233Z",
+    "id": 2438,
+    "title": "develop",
+    "filename": "develop-c2jdqh.jpg",
+    "extname": ".jpg",
+    "size": 80243,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/develop-c2jdqh.jpg",
+    "preview": "https://static-docs.nocobase.com/develop-c2jdqh.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "author": "NocoBase Team",
   "prompt": "You are connected to a NocoBase instance with data-modeling and UI-building tools.\n\nBuild a lightweight consumables management module:\n\n1. Collections:\n   - items: name, code (unique), category (select: office/tool/safety), unit, reference_price (number, 2 decimals)\n   - stocks: item (m2o -> items), company (input), quantity (integer), safe_quantity (integer)\n   - purchase_requests: request_no, item (m2o), quantity, estimated_price, status (select: drafted/submitted/approved/rejected), requested_by\n   - requisitions: request_no, item (m2o), quantity, status (same enum), requested_by\n2. Pages: one management page per collection (table + addNew/edit/view), group them under a \"Consumables\" menu group.\n3. Workflow: when a purchase_request is approved, increase the matching stocks.quantity; when a requisition is approved, decrease it.\n4. Required fields: items.name, items.code, all quantity fields.\n\nUse English for all seed data. Create 5 sample items and 2 sample stocks per item.",
-  "updatedAt": "2026-06-11T01:22:35.712Z"
+  "updatedAt": "2026-06-11T02:10:45.586Z"
 }
