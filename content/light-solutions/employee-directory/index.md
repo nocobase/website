@@ -86,10 +86,6 @@ For international teams, AI can also translate employee information into Japanes
 
 The resulting employee contact management system is not a static address book, but an internal people directory that keeps evolving with your team size, org structure, and office locations.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **What information can an employee card display?**
