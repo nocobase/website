@@ -72,6 +72,14 @@ AI 则可以降低系统搭建和信息录入的成本。你可以先让 AI Agen
 
 这样搭建出来的会议室预订系统不仅可以快速上线，也可以随着会议室数量、办公地点和团队使用方式变化持续调整。
 
+## AI 搭建提示词
+
+你可以直接使用这段提示词,让你的 Agent 在 NocoBase 中搭建同款系统,再通过无代码方式调整字段、页面和流程。
+
+开始前,请先按 [AI Agent 快速开始](https://docs.nocobase.com/cn/ai/quick-start) 安装 NocoBase 并接入你的 AI Agent。想快速体验?创建应用时用快速模式 —— 一条命令就能拉起一个开箱即用的 NocoBase 实例,装好后直接粘贴下面的提示词即可。
+
+{{prompt}}
+
 ## FAQ
 
 1. **会议室预订系统和普通 Vibe Coding 生成的预订页面有什么不同？**
@@ -151,11 +159,3 @@ Claude Code、Codex、Cursor、OpenCode 等 AI Coding Agent 还可以接入 Noco
 适合。NocoBase 可以按需启用权限管理、工作流、操作历史、审计日志、单点登录、通知、API 和插件扩展等企业内部系统常用能力。
 
 团队可以先搭建会议室查询和预订等核心功能，再逐步增加冲突校验、审批、提醒、设备管理和外部日历集成。相比普通 Vibe Coding 生成的一次性页面，更适合构建可维护、可扩展和可长期使用的会议室预订系统。
-
-## AI 搭建提示词
-
-你可以直接使用这段提示词,让你的 Agent 在 NocoBase 中搭建同款系统,再通过无代码方式调整字段、页面和流程。
-
-开始前,请先按 [AI Agent 快速开始](https://docs.nocobase.com/ai/quick-start) 安装 NocoBase 并接入你的 AI Agent。想快速体验?创建应用时用快速模式 —— 一条命令就能拉起一个开箱即用的 NocoBase 实例,装好后直接粘贴下面的提示词即可。
-
-{{prompt}}
