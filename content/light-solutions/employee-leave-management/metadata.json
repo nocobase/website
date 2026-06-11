@@ -38,24 +38,24 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-06-11T09:01:44.590Z",
-    "updatedAt": "2026-06-11T09:01:44.595Z",
-    "id": 2514,
-    "title": "employee-leave-management-1",
-    "filename": "employee-leave-management-1-oi1cog.png",
+    "createdAt": "2026-06-11T11:28:59.498Z",
+    "updatedAt": "2026-06-11T11:28:59.502Z",
+    "id": 2555,
+    "title": "employee-leave-management-1-oi1cog-c",
+    "filename": "employee-leave-management-1-oi1cog-c-ltme1q.png",
     "extname": ".png",
-    "size": 339939,
+    "size": 232746,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog.png",
-    "preview": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog.png",
+    "url": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog-c-ltme1q.png",
+    "preview": "https://static-docs.nocobase.com/employee-leave-management-1-oi1cog-c-ltme1q.png",
     "storageId": 2,
     "createdById": 9,
     "updatedById": 9
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Leave Management: a multi-select calendar with pills, a balance dashboard, and a request ledger. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/18-leave-management.html",
-  "updatedAt": "2026-06-11T10:48:44.995Z",
+  "updatedAt": "2026-06-11T11:29:11.061Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 请假管理:带标签的多选日历、余额看板和请假台账。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/18-leave-management.html"
 }
