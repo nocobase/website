@@ -85,10 +85,6 @@ AI further reduces the cost of building and analysis. You can first let an AI ag
 
 An SLA management system built this way is not a one-off monitoring page, but a service management system that keeps evolving with your support team, service standards, and customer commitments.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can it track both first-response SLA and resolution SLA at the same time?**
