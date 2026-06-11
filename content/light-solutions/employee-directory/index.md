@@ -86,6 +86,14 @@ For international teams, AI can also translate employee information into Japanes
 
 The resulting employee contact management system is not a static address book, but an internal people directory that keeps evolving with your team size, org structure, and office locations.
 
+## AI build prompt
+
+Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
+
+Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
+
+{{prompt}}
+
 ## FAQ
 
 1. **What information can an employee card display?**
@@ -153,11 +161,3 @@ NocoBase stores employee, department, and organizational information in a unifie
 Yes. Beyond serving as a list of employee contact details, it can continuously carry organizational information such as titles, departments, locations, skills, and employment types.
 
 Companies can plug in single sign-on, user sync, permission management, operation history, APIs, and plugin extensions as needed. Compared with a one-off directory page, it is far better suited for building a maintainable internal people directory that supports cross-regional collaboration and keeps evolving with the organization.
-
-## AI build prompt
-
-Use this prompt to let your agent build the same system in NocoBase, then adjust fields, pages and flows through the no-code UI.
-
-Before you start, follow the [AI agent quick start - NocoBase docs](https://docs.nocobase.com/ai/quick-start) to install NocoBase and connect your AI agent. Just want a quick try? Use quick mode to create the app — it brings up a ready-to-run NocoBase instance in one command, so you can paste the prompt right away.
-
-{{prompt}}
