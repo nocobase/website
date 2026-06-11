@@ -81,10 +81,6 @@ AI can go further by participating in task assignment and data analysis. An AI t
 
 An issue tracking system built this way is not just a static task table — it is an internal system that supports complex engineering collaboration, continuous analysis, and long-term iteration.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can I quickly filter issues by project, status, and priority?**
