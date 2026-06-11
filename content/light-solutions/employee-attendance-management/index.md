@@ -1,157 +1,153 @@
 ## Introduction
 
-Use your favorite AI agent and NocoBase to quickly build a customizable, reliable, and continuously evolvable employee attendance management system that tracks clock-in times, clock-out times, working hours, attendance status, monthly attendance, and department-level attendance performance.
+Use your favorite AI agent and NocoBase to quickly build a customizable, reliable, long-lived employee attendance system — recording clock-in/clock-out times, working hours, attendance status, monthly attendance and per-department performance.
 
-You can copy the prompt below and let your AI agent generate the basic structure of the attendance system in NocoBase, then adjust fields, pages, attendance statuses, and statistics rules through the no-code UI.
+Copy the prompt below and let your AI agent generate the basic structure of the attendance system in NocoBase, then fine-tune fields, pages, attendance statuses and statistics rules through the no-code UI.
 
-This system is a great fit for office teams, remote teams, chain stores, service teams, and small to medium-sized businesses to manage daily clock-ins, lateness, absences, leave, overtime, and monthly attendance records.
+It fits office teams, remote teams, chain stores, service teams and SMBs that need to manage daily clock-ins, lateness, absence, leave, overtime and monthly attendance records.
 
 **Mobile clock-in and clock-out:**
 
-![](https://static-docs.nocobase.com/employee-attendance-management-1-mho8p7.png)
+![](https://static-docs.nocobase.com/attendance-tracker-1-q7jp34.png)
 
-**Monthly attendance overview and attendance details:**
+**Monthly attendance overview and detail records:**
 
-![](https://static-docs.nocobase.com/employee-attendance-management-2-z6sliz.png)
+![](https://static-docs.nocobase.com/attendance-tracker-2-zoalis-c-yo0a2v.png)
 
-**Attendance status and department statistics:**
+**Attendance statuses and department statistics:**
 
-![](https://static-docs.nocobase.com/employee-attendance-management-3-kjfw5x.png)
+![](https://static-docs.nocobase.com/attendance-tracker-3-evm1gr-c-t50n7o.png)
 
 **AI analyzes attendance and generates reports:**
 
-![](https://static-docs.nocobase.com/employee-attendance-management-4-o219w0.png)
+![](https://static-docs.nocobase.com/attendance-tracker-4-r1tiqn.png)
 
-## What problems does an employee attendance management system solve?
+## What problems does an attendance system solve?
 
-The core challenge of attendance management is not simply recording whether employees showed up, but accurately tracking when they clocked in and out each day, how long they actually worked, and whether there was lateness, absence, leave, or overtime.
+The core of attendance management is not just recording whether someone showed up — it is accurately tracking when each person clocked in and out, how long they actually worked, and whether there was lateness, absence, leave or overtime.
 
-If a team still relies on paper sign-in sheets, chat-based check-ins, or scattered spreadsheets, HR easily runs into missing records, time calculation errors, time-consuming month-end summaries, and inconsistent attendance standards across employees.
+If your team still relies on paper sign-ins, chat check-ins or scattered spreadsheets, HR easily runs into missing records, miscalculated hours, painful month-end summaries and inconsistent standards across employees.
 
-With this system, employees can view the current time directly on their phones and clock in or out. The system records the start time, end time, and accumulated working hours for the day, and creates the corresponding attendance record.
+With this system, employees check the current time and clock in or out directly on their phones. The system records start time, end time and accumulated working hours for the day, and produces the corresponding attendance record.
 
-Managers can view each employee's daily attendance status in a monthly attendance matrix, with distinct markers for normal, late, absent, on leave, and overtime. The system also shows the current month's attendance rate, on-time check-ins, late arrivals, absence days, and overtime hours.
+Managers can review each employee's daily status in a monthly attendance matrix, with distinct markers for normal, late, absent, on leave and overtime. The system also shows the month's attendance rate, on-time count, lateness count, absence days and overtime hours.
 
-The attendance detail list records the employee, date, clock-in time, clock-out time, working hours, and attendance status, making it easy for HR to review and verify specific records. Managers can also view attendance rates and headcount distribution by department to understand the overall attendance performance of different teams.
+The attendance detail list records employee, date, start time, end time, working hours and status, making it easy for HR to review and verify records. Managers can also check attendance rates and headcount distribution by department to understand each team's overall performance.
 
 ## Core features
 
-### Mobile clock-in and clock-out
+### Mobile clock-in & clock-out
 
-- **Real-time mobile check-in:** Employees can view the current time on their phones and clock in at the start of the day and clock out at the end.
-- **Same-day attendance display:** Shows today's clock-in time, clock-out time, and accumulated working hours in real time.
-- **Check-in state switching:** Automatically displays the clock-in or clock-out action based on the employee's attendance record for the day.
+- **Real-time mobile check-in:** employees see the current time on their phone and clock in or out.
+- **Today at a glance:** shows today's clock-in time, clock-out time and accumulated working hours in real time.
+- **State-aware action:** the page automatically offers clock-in or clock-out based on today's record.
 
-### Attendance records and status management
+### Attendance records & statuses
 
-- **Complete attendance details:** Records employee name, date, clock-in time, clock-out time, and actual working hours.
-- **Multiple attendance statuses:** Supports normal, late, absent, on leave, and overtime statuses, each distinguished with its own marker.
-- **Record maintenance and lookup:** Filter attendance records by employee or date, and let authorized staff correct missing or erroneous data.
+- **Complete detail records:** employee, date, start time, end time and actual working hours.
+- **Multiple statuses:** normal, late, absent, on leave and overtime, each with its own marker.
+- **Maintenance & lookup:** filter records by employee or date; authorized staff can fix missing or wrong data.
 
 ### Monthly attendance matrix
 
-- **View a full month per employee:** With employees as rows and dates as columns, see every employee's daily attendance status in one place.
-- **Quick month switching:** Browse historical or current attendance data by month, making periodic HR reviews easier.
-- **Anomaly detection:** Quickly spot late arrivals, absences, leave, and overtime through status markers.
+- **Whole-month view per employee:** employees as rows, dates as columns, every day's status in one place.
+- **Quick month switching:** review current or historical months for periodic HR checks.
+- **Anomaly spotting:** status markers make lateness, absence, leave and overtime easy to spot.
 
-### Attendance statistics dashboard
+### Attendance dashboard
 
-- **Key metrics at a glance:** Shows the monthly attendance rate, on-time check-ins, late arrivals, and absence days.
-- **Overtime statistics:** Aggregates total overtime hours and the number of employees involved in overtime.
-- **Overall attendance performance:** Review the current month's attendance in one place to help HR quickly assess the team's attendance health.
+- **Key metrics:** monthly attendance rate, on-time count, lateness count and absence days.
+- **Overtime stats:** total overtime hours and the number of employees involved.
+- **Overall picture:** the current month's attendance at a glance for fast judgement.
 
-### Department and status analysis
+### Department & status analytics
 
-- **Attendance status distribution:** Counts and percentages of normal, late, absent, leave, and overtime records.
-- **Department comparison:** View attendance rates and employee distribution by department to identify teams with frequent anomalies.
-- **Trend and risk assessment:** Combine attendance status and working-hour data to detect issues such as frequent lateness, prolonged absence, or excessive overtime.
+- **Status distribution:** counts and ratios of normal, late, absent, leave and overtime records.
+- **Department comparison:** attendance rates and headcount by department to identify problem teams.
+- **Trend & risk signals:** combine statuses and hours to surface frequent lateness, long-term absence or excessive overtime.
 
-### AI-powered analysis
+### AI assistance
 
-- **AI detects attendance anomalies:** Automatically analyzes lateness, absences, frequent leave, and abnormal working hours, helping HR quickly identify employees or teams that need attention.
-- **AI analyzes overtime risk:** Aggregates long working hours, consecutive overtime, and department-level overtime distribution to identify potential overwork risks.
-- **AI generates attendance reports:** Summarizes attendance rates, lateness, absences, leave, and overtime data, automatically producing monthly attendance summaries and management recommendations.
+- **AI anomaly detection:** automatically analyzes lateness, absence, frequent leave and abnormal hours, helping HR spot employees or teams that need attention.
+- **AI overtime-risk analysis:** aggregates long hours, consecutive overtime and per-department overtime distribution to identify overwork risks.
+- **AI attendance reports:** summarizes attendance rate, lateness, absence, leave and overtime into a monthly digest with management suggestions.
 
-## Why build an employee attendance management system with AI and NocoBase?
+## Why build it with AI and NocoBase?
 
-Once an attendance system is actually in use, it is usually more than a clock-in button. Teams also need to calculate working hours, identify lateness and overtime, aggregate monthly data, and let HR review and correct specific records.
+Once an attendance system is really in use, it is never just a clock-in button. Teams also need to calculate working hours, detect lateness and overtime, aggregate monthly data, and let HR review and correct records.
 
-If you use ordinary vibe coding to generate a check-in page from scratch, you typically only get time submission. Linking clock-in and clock-out records, status calculation, the monthly matrix, department statistics, permissions, and history still require continuous patching and debugging.
+A page generated from scratch by plain vibe coding usually stops at submitting a timestamp. Linking clock-in/clock-out records, computing statuses, the monthly matrix, department statistics, permissions and history all still need continuous patching and debugging.
 
-NocoBase links employees, departments, and attendance records together, and lets you configure the mobile check-in page, monthly attendance matrix, attendance details, and statistics dashboard in a single system. Teams can adjust fields, statuses, and views to match their own working hours and attendance rules.
+NocoBase connects employees, departments and attendance records, and lets you configure the mobile check-in page, monthly matrix, detail list and dashboards in one system. Teams can adapt fields, statuses and views to their own schedules and rules.
 
-AI further reduces the cost of building the system. You can start with a prompt that lets the AI agent generate the employee table, attendance records, mobile check-in page, and statistics dashboard, then continue refining pages and rules through NocoBase's no-code UI.
+AI lowers the building cost further. Start with a prompt that lets your AI agent generate the employee table, attendance records, mobile check-in page and dashboards, then keep refining pages and rules in NocoBase's no-code UI.
 
-The result is not a one-off check-in demo, but an internal system that keeps evolving as your team size, department structure, and attendance policies change.
+What you get is not a one-off clock-in demo, but an internal system that keeps evolving with team size, org structure and attendance policies.
 
 ## FAQ
 
-1. **Can employees clock in and out from their phones?**
+**Can employees clock in and out on their phones?**
 
-Yes. The system provides a mobile attendance page where employees view the current time and clock in at the start of the day and clock out at the end.
+Yes. The system provides a mobile attendance page where employees see the current time and complete clock-in and clock-out.
 
-The page can also show today's clock-in time, clock-out time, and accumulated working hours, so employees don't need to install a separate attendance app.
+The page also shows today's clock-in time, clock-out time and accumulated hours — no separate attendance app required.
 
-1. **Can the system automatically calculate daily working hours?**
+**Does the system calculate daily working hours automatically?**
 
-Yes. After an employee clocks in and out, the system can automatically calculate the day's working hours from the start and end times and save them to the attendance record.
+Yes. After clock-in and clock-out, the system computes the day's working hours from the two timestamps and saves them to the record.
 
-This data can then be used to determine normal attendance, lateness, and overtime, and roll up into the monthly attendance dashboard.
+The data feeds status judgement (normal / late / overtime) and rolls up into the monthly dashboard.
 
-1. **Can lateness, absence, and overtime be determined by our company's attendance policy?**
+**Can lateness, absence and overtime follow our own policy?**
 
-Yes. Teams can configure the standard start time, standard working hours, and status rules based on their actual policy.
+Yes. Teams set their standard start time, standard hours and status rules.
 
-For example, clocking in after the designated time is marked as late, working beyond standard hours is marked as overtime, and missing a valid check-in record is marked as absent. Leave data can also be shown as a separate status so it isn't misjudged as absence.
+For example: clocking in after the cutoff marks Late; exceeding standard hours marks Overtime; no valid record marks Absent. Leave is a separate status so it is never miscounted as absence.
 
-1. **Can I view an employee's attendance for the whole month?**
+**Can I view a whole month of attendance per employee?**
 
-Yes. The monthly attendance matrix shows each employee's daily attendance status by employee and date, using distinct markers for normal, late, absent, leave, and overtime.
+Yes. The monthly matrix shows each employee's daily status with distinct markers for normal, late, absent, on leave and overtime.
 
-Compared with reviewing individual check-in records one by one, HR and department managers can spot anomalies such as consecutive lateness, frequent absences, or extended overtime much faster.
+Compared with reading raw records, HR and team leads spot consecutive lateness, frequent absence or heavy overtime much faster.
 
-1. **Can AI analyze long working hours and overwork risk?**
+**Can AI analyze long hours and overwork risk?**
 
-Yes. AI can read attendance records within a given time range, identify records where daily working hours exceed a set threshold, and analyze which employees or departments carry higher long-hours risk.
+Yes. AI reads attendance records in a chosen period, flags days above your hour threshold, and analyzes which employees or departments carry the highest long-hour risk.
 
-For example, the analysis report in the screenshot counts workdays exceeding 10 hours, the cumulative and average working hours of the employees involved, and generates a risk summary with charts to help managers follow up on abnormal overtime.
+The sample report counts 10-hour-plus days, related employees' accumulated and average hours, and generates a risk summary with charts.
 
-1. **What does the AI-generated attendance report include?**
+**What does the AI attendance report include?**
 
-The report can include the number of long-hours records, high-risk employees, department distribution, cumulative working hours, average daily hours, and key findings.
+Long-hour record counts, high-risk employees, department distribution, accumulated hours, average daily hours and key findings.
 
-Results can be viewed as Preview, Markdown, or HTML, and downloaded as Markdown or HTML or printed to PDF — suitable for HR reporting, internal reviews, and management briefings.
+Results can be viewed as Preview, Markdown or HTML, downloaded, or printed to PDF — handy for HR reporting and management reviews.
 
-1. **Can missing or incorrect check-in records be corrected?**
+**Can missing or wrong records be corrected?**
 
-Yes. HR or authorized managers can edit incorrect check-in times, add missing records, or correct attendance statuses.
+Yes. HR or authorized managers can edit wrong timestamps, add missing records or fix statuses.
 
-These changes can keep an operation history that records who adjusted which data and when, preventing untraceable changes to attendance records.
+Changes keep an operation history of who adjusted what and when, so attendance data cannot be silently altered.
 
-1. **Can regular employees see other people's attendance records?**
+**Can regular employees see other people's records?**
 
-Usually not. NocoBase controls access by role, department, and data scope.
+Usually not. NocoBase controls access by role, department and data scope.
 
-For example, regular employees can only see their own check-ins and working hours; department managers can only see their own department's records; HR can maintain all attendance data; and executives can view aggregated results without necessarily accessing each individual record.
+For example, employees see only their own records; team leads see their department; HR maintains everything; management sees aggregates without necessarily accessing individual rows. This matters for data that includes working hours and overtime.
 
-This matters especially for employee data that includes working hours and overtime information.
+**Do we need to redevelop the system when attendance rules change?**
 
-1. **Do we need to redevelop the system when attendance rules change?**
+No. After going live you can keep adjusting standard times, lateness rules, standard hours, status types, the monthly matrix and metrics.
 
-No. After going live, you can keep adjusting the standard start time, lateness rules, standard working hours, status types, the monthly matrix, and statistics metrics.
+Different regions, shifts or departments can use different rules — NocoBase's collections, pages and workflows stay configurable.
 
-Different regions, shifts, or departments can also use different rules. NocoBase's data structure, pages, and workflows all remain configurable, making it well suited to companies whose attendance policies keep evolving.
+**Can Claude Code, Codex, Cursor or OpenCode help build it?**
 
-1. **Can Claude Code, Codex, Cursor, or OpenCode help build the attendance system?**
+Yes. These AI coding agents connect to NocoBase and generate the employee table, attendance records, mobile check-in page, monthly matrix and dashboards from natural-language prompts.
 
-Yes. AI coding agents like Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate the employee table, attendance records, mobile check-in page, monthly matrix, and statistics dashboard from natural-language prompts.
+Afterwards HR or admins keep tweaking fields, rules, pages and permissions in the no-code UI — no need to regenerate from scratch for every change.
 
-After generation, HR or admins can still modify fields, rules, pages, and permissions through NocoBase's no-code UI — there's no need to ask the AI to regenerate from scratch for every adjustment.
+**How is this different from a vibe-coded clock-in page?**
 
-1. **How is this attendance system different from a check-in page generated by ordinary vibe coding?**
+Plain vibe coding quickly produces a clock-in button or a timestamp page, but real enterprise use also needs permissions, attendance rules, corrections, operation history, department statistics and long-term maintenance.
 
-Ordinary vibe coding can quickly produce a clock-in button or a time-logging page, but real enterprise use also requires employee permissions, attendance rules, anomaly correction, operation history, department statistics, and long-term maintenance.
-
-NocoBase puts check-ins, working-hour calculation, status determination, access control, and analysis reports in one business system, with optional SSO, audit logs, notifications, APIs, and plugin extensions.
-
-That makes it better suited for continuously running enterprise attendance management — not just a one-off check-in demo.
+NocoBase keeps check-ins, hour calculation, status judgement, access control and analysis reports in one business system, with SSO, audit logs, notifications, APIs and plugins available on demand — built for continuously running attendance management, not a one-off demo.
