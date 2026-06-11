@@ -78,10 +78,6 @@ AI further lowers the cost of content entry. Users simply describe the content t
 
 The result is not a static scheduling spreadsheet but a content operations system that keeps evolving with your channels, team processes, and campaigns.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can it manage different channels like blog, social media, and email?**
