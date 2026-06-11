@@ -15,3 +15,5 @@ When a request is approved, the workflow seeds the default return items and acco
 ## Rebuild it yourself
 
 Copy the prompt below into the AI agent connected to your NocoBase instance and it will create the collections, the page with relation popups, and the seeding workflow.
+
+{{prompt}}
