@@ -96,10 +96,6 @@ The generated report can be previewed directly, or exported as Markdown, HTML, o
 
 The resulting expense reimbursement system is not just a request form — it is a complete internal system covering expense submission, receipt linking, approval, payment, and financial analysis.
 
-## AI build prompt
-
-{{prompt}}
-
 ## FAQ
 
 1. **Can one reimbursement request include multiple expense items?**
