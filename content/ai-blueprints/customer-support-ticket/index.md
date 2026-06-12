@@ -82,57 +82,57 @@ AI can not only help build the system but also take part in support data analysi
 The result is not just a support inbox, but a customer service platform that keeps evolving with your customer base, support channels, SLA rules, and team structure.
 
 ## FAQ
-**How is a support ticket system different from a plain shared mailbox?**
+1. **How is a support ticket system different from a plain shared mailbox?**
 
 A shared mailbox can only collect emails; it struggles to continuously manage ticket status, priority, assignees, SLAs, internal notes, and customer history.
 
 A support ticket system turns every customer issue into a trackable ticket and links customer messages, agent replies, handling status, and assignees together. Even as a ticket moves between agents, the team sees the full context, reducing repeated questions and missed issues.
-**Can I manage customer issues from different channels in one place?**
+2. **Can I manage customer issues from different channels in one place?**
 
 Yes. The system can record tickets from email, live chat, web forms, phone, and other channels, and manage them in a unified inbox and ticket list.
 
 Every ticket keeps its source channel, so the team can filter or analyze issue volume and handling performance by channel.
-**Can I handle the entire customer conversation on one page?**
+3. **Can I handle the entire customer conversation on one page?**
 
 Yes. Agents can view customer messages, past replies, and internal notes on the ticket page and reply to customers directly, without switching back and forth between email, chat tools, and customer records.
 
 The page can also show the customer's contact details, company, region, customer value, and ticket history, so agents have the full picture before replying.
-**Can I prioritize tickets by priority and SLA?**
+4. **Can I prioritize tickets by priority and SLA?**
 
 Yes. Every ticket can be set to a priority such as low, normal, high, or urgent, and record an SLA due time.
 
 Teams can prioritize high-priority tickets and those near or past their deadline. Support leads can also use filters and operations dashboards to see current high-risk issues.
-**Can I assign tickets to different agents or teams?**
+5. **Can I assign tickets to different agents or teams?**
 
 Yes. Every ticket can have a designated assignee, and support leads can reassign tickets based on skills, queues, or current workload.
 
 With permission configuration, agents can see only the tickets assigned to them while leads see the whole team's, avoiding every agent having default access to all customer data.
-**Does the system keep a complete message and handling history?**
+6. **Does the system keep a complete message and handling history?**
 
 Yes. Customer messages, agent replies, and internal notes all record the sender, content, type, and time.
 
 Ticket status changes, assignee changes, and other key actions can also be kept as an action history, making it easy to review the handling process, hand over work, or resolve customer disputes.
-**What can AI do in customer support?**
+7. **What can AI do in customer support?**
 
 AI can analyze ticket subjects and content to assist with issue classification, priority judgment, summarization, and reply suggestions, and it can generate operational analysis based on ticket status, priority, and SLA data.
 
 For example, AI can find unresolved urgent tickets, summarize frequent issues, or help supervisors identify the main risks in the current support queue.
-**Can Claude Code, Codex, Cursor, or OpenCode build this ticket system?**
+8. **Can Claude Code, Codex, Cursor, or OpenCode build this ticket system?**
 
 Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate data structures like customers, tickets, and messages, plus the inbox, ticket list, and detail pages from natural language prompts.
 
 After the foundation is generated, the team can keep adjusting fields, statuses, pages, permissions, and workflows through NocoBase's no-code UI, without relying on AI to rebuild the whole app each time.
-**Can I control which customers and tickets each agent can see?**
+9. **Can I control which customers and tickets each agent can see?**
 
 Yes. NocoBase supports access control by role, assignee, team, or other data conditions.
 
 For example, agents handle only tickets assigned to them, team leads view their group's tickets, the head of support sees all service data, and admins manage system configuration. Companies can also add single sign-on as needed so employees keep using their existing corporate accounts.
-**Can the system keep up when our support process changes?**
+10. **Can the system keep up when our support process changes?**
 
 Yes. Teams can keep adding ticket fields, statuses, channels, priorities, and SLA rules, and adjust the inbox layout, customer profiles, assignment methods, and notification flows.
 
 As the support team grows or channels increase, there is no need to rebuild the system — you can keep iterating on the existing data and processes.
-**Is this system ready for a real customer service team?**
+11. **Is this system ready for a real customer service team?**
 
 Yes. Customer support especially needs permission isolation, message history, action tracking, SLAs, and long-term maintenance — not just an interface that can send replies.
 
