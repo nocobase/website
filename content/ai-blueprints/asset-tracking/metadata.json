@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Asset Tracking: checkout / return flows with a location timeline. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html",
-  "updatedAt": "2026-06-11T11:29:06.077Z",
+  "updatedAt": "2026-06-12T13:49:48.964Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产追踪:领用/归还流程和位置时间线。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html"
 }
