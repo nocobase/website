@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Attendance Tracker: attendance KPIs, a monthly heatmap, and dual donut charts for status distribution. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/13-attendance-tracker.html",
-  "updatedAt": "2026-06-11T11:29:05.165Z",
+  "updatedAt": "2026-06-12T13:49:48.139Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 考勤追踪:考勤 KPI、月度热力图和状态分布双环形图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/13-attendance-tracker.html"
 }
