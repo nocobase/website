@@ -8,7 +8,7 @@
   "description_ja": "業務システム、Web 自動化、AI Coding、ナレッジ管理、個人アシスタントなど、GitHub で注目の AI Agent ツールを紹介します。\n",
   "slug": "github-open-source-ai-agent-tools-16",
   "publishedAt": "2026-06-12T11:57:07.678Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
@@ -507,12 +507,28 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-12T16:06:47.105Z",
+    "updatedAt": "2026-06-12T16:06:47.118Z",
+    "id": 2558,
+    "title": "Frame 110",
+    "filename": "Frame 110-xllq3e.jpg",
+    "extname": ".jpg",
+    "size": 607760,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%20110-xllq3e.jpg",
+    "preview": "https://static-docs.nocobase.com/Frame%20110-xllq3e.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-06-12T15:17:33.108Z"
+  "updatedAt": "2026-06-12T16:23:06.132Z"
 }
