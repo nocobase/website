@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Onboarding Checklist: an onboarding journey with progress tracking and a checklist dialog. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html",
-  "updatedAt": "2026-06-12T13:49:49.407Z",
+  "updatedAt": "2026-06-12T13:59:01.487Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 入职清单:带进度跟踪的入职旅程和清单弹窗。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html"
 }
