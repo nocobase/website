@@ -47,7 +47,11 @@
 
 ![NocoBase1-8m9930.png](https://static-docs.nocobase.com/NocoBase1-8m9930.png)
 
-官网：[https://www.nocobase.com](https://www.nocobase.com/) GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) GitHub Stars：22.7k
+官网：[https://www.nocobase.com](https://www.nocobase.com/)
+
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+
+GitHub Stars：22.7k
 
 ### 项目介绍
 
@@ -89,7 +93,11 @@ MCP：[https://docs.nocobase.com/cn/ai/mcp/](https://docs.nocobase.com/cn/ai/mcp
 
 ![OpenCLI-qn3nn7.png](https://static-docs.nocobase.com/OpenCLI-qn3nn7.png)
 
-官网：[https://opencli.info](https://opencli.info/) GitHub：[https://github.com/jackwener/OpenCLI](https://github.com/jackwener/OpenCLI) GitHub Stars：24.1k
+官网：[https://opencli.info](https://opencli.info/)
+
+GitHub：[https://github.com/jackwener/OpenCLI](https://github.com/jackwener/OpenCLI)
+
+GitHub Stars：24.1k
 
 ### 项目介绍
 
@@ -106,7 +114,9 @@ OpenCLI 适合需要通过网页完成任务、但缺少标准 API 的场景：
 
 ![Agent-Reach-ew3tec.png](https://static-docs.nocobase.com/Agent-Reach-ew3tec.png)
 
-官网/文档：[https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) GitHub：[https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) GitHub Stars：26.3k
+GitHub：[https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+
+GitHub Stars：26.3k
 
 ### 项目介绍
 
@@ -120,7 +130,9 @@ Agent-Reach 可以用于技术趋势观察、竞品研究、社交媒体口碑�
 
 ![Google Workspace CLI-pw1xpm.png](https://static-docs.nocobase.com/Google%20Workspace%20CLI-pw1xpm.png)
 
-官网/文档：[https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli) GitHub：[https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli) GitHub Stars：27k
+GitHub：[https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli)
+
+GitHub Stars：27k
 
 ### 项目介绍
 
@@ -138,7 +150,11 @@ Agent Skills：[https://github.com/googleworkspace/cli/blob/main/docs/skills.md]
 
 ![AionUi-5b2768.png](https://static-docs.nocobase.com/AionUi-5b2768.png)
 
-官网：[https://www.aionui.com](https://www.aionui.com/) GitHub：[https://github.com/iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) GitHub Stars：28.1k
+官网：[https://www.aionui.com](https://www.aionui.com/)
+
+GitHub：[https://github.com/iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)
+
+GitHub Stars：28.1k
 
 ### 项目介绍
 
@@ -155,7 +171,11 @@ AionUi 适合同时使用多个 AI Coding 或 Agent 工具的人：
 
 ![OpenClaude-kw4n93.png](https://static-docs.nocobase.com/OpenClaude-kw4n93.png)
 
-官网：[https://openclaude.gitlawb.com](https://openclaude.gitlawb.com/) GitHub：[https://github.com/Gitlawb/openclaude](https://github.com/Gitlawb/openclaude) GitHub Stars：28.6k
+官网：[https://openclaude.gitlawb.com](https://openclaude.gitlawb.com/)
+
+GitHub：[https://github.com/Gitlawb/openclaude](https://github.com/Gitlawb/openclaude)
+
+GitHub Stars：28.6k
 
 ### 项目介绍
 
@@ -169,7 +189,11 @@ OpenClaude 的使用场景主要集中在终端开发环境中，例如代码解
 
 ![CopilotKit-gply44.png](https://static-docs.nocobase.com/CopilotKit-gply44.png)
 
-官网：[https://docs.copilotkit.ai](https://docs.copilotkit.ai/) GitHub：[https://github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) GitHub Stars：34.7k
+官网：[https://docs.copilotkit.ai](https://docs.copilotkit.ai/)
+
+GitHub：[https://github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)
+
+GitHub Stars：34.7k
 
 ### 项目介绍
 
@@ -187,7 +211,11 @@ Build with Agents：[https://docs.showcase.copilotkit.ai/build-with-agents](http
 
 ![image-jnwd3y.png](https://static-docs.nocobase.com/image-jnwd3y.png)
 
-官网：[https://nanobot.wiki](https://nanobot.wiki/) GitHub：[https://github.com/HKUDS/nanobot](https://github.com/HKUDS/nanobot) GitHub Stars：44.1k
+官网：[https://nanobot.wiki](https://nanobot.wiki/)
+
+GitHub：[https://github.com/HKUDS/nanobot](https://github.com/HKUDS/nanobot)
+
+GitHub Stars：44.1k
 
 ### 项目介绍
 
@@ -204,7 +232,11 @@ Nanobot 是一个轻量级开源个人 AI Agent，强调用户可以真正拥有
 
 ![SiYuan-xlju2b.png](https://static-docs.nocobase.com/SiYuan-xlju2b.png)
 
-官网：[https://b3log.org/siyuan](https://b3log.org/siyuan) GitHub：[https://github.com/siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) GitHub Stars：44.4k
+官网：[https://b3log.org/siyuan](https://b3log.org/siyuan)
+
+GitHub：[https://github.com/siyuan-note/siyuan](https://github.com/siyuan-note/siyuan)
+
+GitHub Stars：44.4k
 
 ### 项目介绍
 
@@ -218,7 +250,11 @@ SiYuan 放在 AI Agent 语境下，可以理解为一层知识基础设施，而
 
 ![CowAgent-kbrmgq.png](https://static-docs.nocobase.com/CowAgent-kbrmgq.png)
 
-官网：[https://cowagent.ai](https://cowagent.ai/) GitHub：[https://github.com/zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) GitHub Stars：45.2k
+官网：[https://cowagent.ai](https://cowagent.ai/)
+
+GitHub：[https://github.com/zhayujie/CowAgent](https://github.com/zhayujie/CowAgent)
+
+GitHub Stars：45.2k
 
 ### 项目介绍
 
@@ -232,7 +268,11 @@ CowAgent 的使用重点在于把 AI Assistant 接入多个入口和工具环境
 
 ![Cherry Studio-ykg2qa.png](https://static-docs.nocobase.com/Cherry%20Studio-ykg2qa.png)
 
-官网：[https://cherryai.com](https://cherryai.com/) GitHub：[https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) GitHub Stars：47.2k
+官网：[https://cherryai.com](https://cherryai.com/)
+
+GitHub：[https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)
+
+GitHub Stars：47.2k
 
 ### 项目介绍
 
@@ -249,7 +289,11 @@ Cherry Studio 面向的是高频使用 AI 的日常工作场景：
 
 ![career-ops-ylaji6.png](https://static-docs.nocobase.com/career-ops-ylaji6.png)
 
-官网：[https://career-ops.org](https://career-ops.org/) GitHub：[https://github.com/santifer/career-ops](https://github.com/santifer/career-ops) GitHub Stars：52.7k
+官网：[https://career-ops.org](https://career-ops.org/)
+
+GitHub：[https://github.com/santifer/career-ops](https://github.com/santifer/career-ops)
+
+GitHub Stars：52.7k
 
 ### 项目介绍
 
@@ -263,7 +307,11 @@ career-ops 的场景非常垂直，主要围绕个人求职流程展开。它的
 
 ![learn-claude-code-6gfiw7.png](https://static-docs.nocobase.com/learn-claude-code-6gfiw7.png)
 
-官网：[https://learn.shareai.run](https://learn.shareai.run/) GitHub：[https://github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) GitHub Stars：66.1k
+官网：[https://learn.shareai.run](https://learn.shareai.run/)
+
+GitHub：[https://github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+
+GitHub Stars：66.1k
 
 ### 项目介绍
 
@@ -277,7 +325,11 @@ learn-claude-code 更像一个面向开发者的系统学习材料，可以帮�
 
 ![Hermes Agent-500tav.png](https://static-docs.nocobase.com/Hermes%20Agent-500tav.png)
 
-官网：[https://hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/) GitHub：[https://github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) GitHub Stars：191k
+官网：[https://hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/)
+
+GitHub：[https://github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+
+GitHub Stars：191k
 
 ### 项目介绍
 
@@ -361,7 +413,6 @@ AI Agent 工具正在快速分化。有些工具关注模型调用和任务执�
 对于个人用户来说，可以先从知识管理、个人助手、AI Coding 或浏览器自动化等轻量场景开始；对于企业团队来说，更重要的是判断 Agent 能否进入真实业务流程，并在数据、权限、流程和审计机制的约束下稳定运行。
 
 **如果这篇文章对你有帮助，欢迎分享给正在关注开源 AI Agent 工具、AI 自动化和企业内部系统建设的朋友。**
-
 
 **相关阅读**：
 
