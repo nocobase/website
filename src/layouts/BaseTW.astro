@@ -2,6 +2,9 @@
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import DocSearch from "../components/DocSearch.astro";
+import { listLightSolutions } from "../utils";
+
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -528,12 +531,22 @@ const meta = {
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> 解決方案</li>
                     <li class="all-in-one-item"><a href="/tw/solutions/all-in-one" title="NocoBase 一體化業務管理系統" class="sub-menu-item">一體化業務管理系統 <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
                     <li class="submodule-li"><a href="/tw/solutions/all-in-one/crm" title="開源 CRM 客戶管理系統" class="sub-menu-item submodule-item">CRM 客戶管理</a></li>
-                    <li class="submodule-li"><a href="/tw/solutions/all-in-one/sales" title="銷售管理系統:報價/訂單/發票" class="sub-menu-item submodule-item">銷售管理</a></li>
+                    <li class="submodule-li"><a href="/tw/solutions/all-in-one/sales" title="訂單管理系統:報價/訂單/發票" class="sub-menu-item submodule-item">訂單管理</a></li>
                     <li class="submodule-li"><a href="/tw/solutions/all-in-one/ticketing" title="客服工單系統" class="sub-menu-item submodule-item">工單系統</a></li>
                     <li class="submodule-li"><a href="/tw/solutions/all-in-one/project" title="專案管理系統" class="sub-menu-item submodule-item">專案管理</a></li>
                     <li class="submodule-li"><a href="/tw/solutions/all-in-one/asset" title="固定資產管理 / IT 資產管理" class="sub-menu-item submodule-item">固定資產管理</a></li>
                     <li class="submodule-li"><a href="/tw/solutions/all-in-one/hr" title="HR 人事管理 / 人力資源管理系統" class="sub-menu-item submodule-item">HR 人事管理</a></li>
                     <li><a href="/tw/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">更多方案 <i class="uil uil-angle-right"></i></a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
+                    {lightSolutions.map((s: any) => (
+                      <li><a href={`/tw/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title}</a></li>
+                    ))}
+                    <li><a href="/tw/ai-blueprints" class="sub-menu-item fw-medium">所有 Blueprints <i class="uil uil-angle-right"></i></a></li>
                   </ul>
                 </li>
 

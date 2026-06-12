@@ -2,6 +2,9 @@
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
+import { listLightSolutions } from "../utils";
+
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -490,13 +493,23 @@ const meta = {
                 <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Solutions</li>
                     <li class="all-in-one-item"><a href="/fr/solutions/all-in-one" title="NocoBase Suite tout-en-un" class="sub-menu-item">Suite tout-en-un <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/crm" title="CRM open source pour la gestion des clients" class="sub-menu-item submodule-item">CRM</a></li>
-                    <li class="submodule-li"><a href="/fr/solutions/all-in-one/sales" title="Gestion commerciale : devis / commandes / factures" class="sub-menu-item submodule-item">Ventes</a></li>
+                    <li class="submodule-li"><a href="/fr/solutions/all-in-one/sales" title="Gestion des commandes : devis / commandes / factures" class="sub-menu-item submodule-item">Commandes</a></li>
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/ticketing" title="Help Desk et tickets de support client" class="sub-menu-item submodule-item">Help Desk</a></li>
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/project" title="Logiciel de gestion de projet" class="sub-menu-item submodule-item">Gestion de Projet</a></li>
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/asset" title="Gestion des actifs IT et immobilisations" class="sub-menu-item submodule-item">Gestion d'Actifs</a></li>
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/hr" title="RH / système de gestion des ressources humaines" class="sub-menu-item submodule-item">RH</a></li>
                     <li><a href="/fr/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">Plus de solutions <i class="uil uil-angle-right"></i></a></li>
                   </ul>
+            </li>
+
+            <li>
+              <ul>
+                <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
+                {lightSolutions.map((s: any) => (
+                  <li><a href={`/fr/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title}</a></li>
+                ))}
+                <li><a href="/fr/ai-blueprints" class="sub-menu-item fw-medium">Tous les blueprints <i class="uil uil-angle-right"></i></a></li>
+              </ul>
             </li>
 
             <li>

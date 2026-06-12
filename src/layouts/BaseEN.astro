@@ -2,7 +2,9 @@
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
+import { listLightSolutions } from "../utils";
 
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
@@ -484,12 +486,22 @@ const meta = {
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Solutions</li>
                     <li class="all-in-one-item"><a href="/en/solutions/all-in-one" title="NocoBase All-in-One Business Suite" class="sub-menu-item">All-in-One Business Suite <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
                     <li class="submodule-li"><a href="/en/solutions/all-in-one/crm" title="Open-source CRM customer management" class="sub-menu-item submodule-item">CRM</a></li>
-                    <li class="submodule-li"><a href="/en/solutions/all-in-one/sales" title="Sales management: quotes / orders / invoices" class="sub-menu-item submodule-item">Sales Management</a></li>
+                    <li class="submodule-li"><a href="/en/solutions/all-in-one/sales" title="Order management: quotes / orders / invoices" class="sub-menu-item submodule-item">Order Management</a></li>
                     <li class="submodule-li"><a href="/en/solutions/all-in-one/ticketing" title="Help desk & customer support ticketing" class="sub-menu-item submodule-item">Help Desk</a></li>
                     <li class="submodule-li"><a href="/en/solutions/all-in-one/project" title="Project management software" class="sub-menu-item submodule-item">Project Management</a></li>
                     <li class="submodule-li"><a href="/en/solutions/all-in-one/asset" title="IT & fixed asset management" class="sub-menu-item submodule-item">IT Asset Management</a></li>
                     <li class="submodule-li"><a href="/en/solutions/all-in-one/hr" title="HR / human resources management system" class="sub-menu-item submodule-item">HR Management</a></li>
                     <li><a href="/en/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">More solutions <i class="uil uil-angle-right"></i></a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
+                    {lightSolutions.map((s: any) => (
+                      <li><a href={`/en/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title}</a></li>
+                    ))}
+                    <li><a href="/en/ai-blueprints" class="sub-menu-item fw-medium">All blueprints <i class="uil uil-angle-right"></i></a></li>
                   </ul>
                 </li>
 

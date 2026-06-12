@@ -1,0 +1,248 @@
+---
+import BaseVI from "../../../layouts/BaseVI.astro";
+import ShapeFooter from "../../../components/ShapeFooter.astro";
+import { listLightSolutions } from "../../../utils";
+
+// Lightweight solutions are synced from the CMS into content/ai-blueprints/
+const { data: solutions } = await listLightSolutions({ pageSize: 100 });
+
+// Filter chips built from the tags actually used (display order = first appearance)
+const tagTitles: string[] = [];
+for (const s of solutions) {
+  for (const t of s.tags || []) {
+    if (t.title && !tagTitles.includes(t.title)) tagTitles.push(t.title);
+  }
+}
+const categories = ["Tất cả", ...tagTitles];
+---
+
+<BaseVI
+  title="AI Blueprints - NocoBase"
+  description="NocoBase AI Blueprints: các giải pháp nhỏ gọn, tập trung, mỗi giải pháp đi kèm một prompt sẵn dùng để AI agent có thể tái tạo toàn bộ hệ thống trên phiên bản NocoBase của bạn."
+  keywords="NocoBase AI blueprints, prompt AI agent, mẫu no-code, tái tạo hệ thống, hệ thống nghiệp vụ mã nguồn mở"
+>
+  <!-- Hero Start -->
+  <section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="title-heading">
+            <h1 class="title fw-bold mb-3">AI Blueprints</h1>
+            <p class="para-desc mx-auto text-muted mb-0">
+              Các giải pháp nhỏ gọn, tập trung được xây dựng trên NocoBase. Mỗi giải pháp đi kèm một prompt chuẩn — giao cho AI agent kết nối với phiên bản của bạn và nó sẽ tái tạo lại hệ thống tương tự chỉ trong vài phút.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search bar -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-6 col-md-8">
+          <div class="solution-search position-relative">
+            <i class="uil uil-search search-icon"></i>
+            <input
+              type="text"
+              id="solution-search"
+              class="form-control"
+              placeholder="Tìm kiếm blueprint..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter chips -->
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 text-center">
+          <ul class="solution-filter list-unstyled mb-0" id="solution-filter">
+            {categories.map((cat, i) => (
+              <li
+                class:list={["filter-chip", { active: i === 0 }]}
+                data-filter={cat === "Tất cả" ? "*" : cat}
+              >{cat}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Solutions Gallery Start -->
+  <section class="section pt-4">
+    <div class="container">
+      <!-- Card grid -->
+      <div class="row" id="solution-grid">
+        {solutions.map((s: any) => (
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={(s.tags || []).map((t: any) => t.title).join(",")} data-search={[s.title, s.description, ...(s.tags || []).map((t: any) => t.title)].join(" ").toLowerCase()}>
+            <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
+              {s.cover?.url && (
+                <div class="sol-cover-wrap">
+                  <img src={s.cover.url} alt={s.title} class="sol-cover" loading="lazy" />
+                </div>
+              )}
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <h5 class="title text-dark mb-0">{s.title}</h5>
+                <p class="text-muted mt-2 sol-desc">{s.description}</p>
+                <a href={`/vi/ai-blueprints/${s.slug}`} class="text-primary small d-inline-block stretched-link">Xem blueprint <i class="uil uil-arrow-right"></i></a>
+                <div class="solution-tags mt-3 pt-3 border-top">
+                  {(s.tags || []).map((t: any) => <span class="sol-tag">{t.title}</span>)}
+                  {s.prompt && <span class="sol-tag sol-tag-status">Prompt AI agent</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Empty state -->
+      <div class="row" id="solution-empty" style={solutions.length ? "display:none;" : ""}>
+        <div class="col-12 text-center text-muted py-5">
+          <i class="uil uil-search-minus h3 d-block mb-2"></i>Danh mục này hiện chưa có blueprint, nhiều blueprint đang được ra mắt.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Gallery End -->
+
+  <ShapeFooter />
+
+  <style>
+    .solution-search .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #8492a6;
+    }
+    .solution-search input {
+      padding: 10px 16px 10px 38px;
+      border-radius: 30px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 2px 8px rgba(47, 85, 212, 0.06);
+    }
+    .solution-search input:focus {
+      border-color: #2f55d4;
+      box-shadow: 0 2px 12px rgba(47, 85, 212, 0.15);
+    }
+    .solution-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-chip {
+      cursor: pointer;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #6c757d;
+      background: #fff;
+      border: 1px solid #e9ecef;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .filter-chip:hover {
+      color: #2f55d4;
+      background: rgba(47, 85, 212, 0.08);
+    }
+    .filter-chip.active {
+      color: #fff;
+      background: #2f55d4;
+    }
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .sol-tag-status {
+      background: rgba(46, 202, 139, 0.12);
+      color: #2eca8b;
+    }
+    .sol-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .solution-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+    .sol-cover-wrap {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .sol-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .solution-card:hover .sol-cover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script>
+    const chips = document.querySelectorAll<HTMLElement>("#solution-filter .filter-chip");
+    const items = document.querySelectorAll<HTMLElement>("#solution-grid .solution-item");
+    const empty = document.getElementById("solution-empty");
+    const searchInput = document.getElementById("solution-search") as HTMLInputElement | null;
+
+    let activeFilter = "*";
+
+    function applyFilters() {
+      const q = (searchInput?.value || "").trim().toLowerCase();
+      let visible = 0;
+      items.forEach((item) => {
+        const cats = (item.dataset.categories || "").split(",");
+        const text = item.dataset.search || "";
+        const chipOk = activeFilter === "*" || cats.includes(activeFilter);
+        const searchOk = !q || text.includes(q);
+        const show = chipOk && searchOk;
+        item.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+      if (empty) empty.style.display = visible ? "none" : "";
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        chips.forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+        activeFilter = chip.dataset.filter || "*";
+        applyFilters();
+      });
+    });
+
+    searchInput?.addEventListener("input", applyFilters);
+
+    // Tu dong chon chip khi vao tu ?tag=
+    const tagParam = new URLSearchParams(location.search).get("tag");
+    if (tagParam) {
+      const hit = Array.from(chips).find((c) => c.dataset.filter === tagParam);
+      if (hit) {
+        chips.forEach((c) => c.classList.remove("active"));
+        hit.classList.add("active");
+        activeFilter = tagParam;
+        applyFilters();
+      }
+    }
+  </script>
+</BaseVI>

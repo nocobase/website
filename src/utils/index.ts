@@ -25,6 +25,7 @@ const caches = {
   tutorials: new Map<string, any>(),
   releases: new Map<string, any>(),
   pages: new Map<string, any>(),
+  'ai-blueprints': new Map<string, any>(),
   processor: null as any,
   directoryCache: new Map<string, string[]>(),
   categoryTagCache: new Map<string, any>()
@@ -194,7 +195,7 @@ function evaluateCondition(item: any, condition: any): boolean {
 // Generic content loader with caching
 async function loadContent(
   slug: string,
-  contentType: 'articles' | 'tutorials' | 'releases' | 'pages',
+  contentType: 'articles' | 'tutorials' | 'releases' | 'pages' | 'ai-blueprints',
   locale = 'en'
 ) {
   if (!slug) return {};
@@ -263,7 +264,7 @@ async function loadContent(
 
 // Simplified list function with filtering and pagination
 async function listContentItems(
-  contentType: 'articles' | 'tutorials' | 'releases',
+  contentType: 'articles' | 'tutorials' | 'releases' | 'ai-blueprints',
   options: any = {}
 ) {
   const {
@@ -361,6 +362,10 @@ async function listContentItems(
   }
 
   if (contentType === 'releases' && tagSlug) {
+    filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
+  }
+
+  if (contentType === 'ai-blueprints' && tagSlug) {
     filterConditions.push({ 'tags.slug': { $eq: tagSlug } });
   }
 
@@ -629,6 +634,20 @@ export async function listTutorialArticles(options?: {
   page?: number;
 }) {
   return listContentItems('tutorials', options);
+}
+
+export async function listLightSolutions(options?: {
+  pageSize?: number;
+  tagSlug?: string;
+  page?: number;
+  filter?: Record<string, any>;
+  sort?: string[];
+}) {
+  return listContentItems('ai-blueprints', options);
+}
+
+export async function getLightSolution(slug?: string, locale = DEFAULT_LANGUAGE) {
+  return loadContent(slug || '', 'ai-blueprints', locale);
 }
 
 export async function listHelpCenterItems(_options?: {
