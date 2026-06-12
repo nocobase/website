@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Inventory Management: inbound/outbound linkage, status transitions, and summary charts. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/01-inventory-management.html",
-  "updatedAt": "2026-06-11T11:29:04.332Z",
+  "updatedAt": "2026-06-12T13:49:47.284Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 库存管理:出入库联动、状态流转和汇总图表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/01-inventory-management.html"
 }
