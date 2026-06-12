@@ -1,7 +1,7 @@
 {
   "id": 369401769164800,
   "title": "Support ticket software",
-  "title_cn": "支持工单软件",
+  "title_cn": "支持工单",
   "title_ja": null,
   "description": "Build a customizable customer support ticket system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate a ticket inbox, customer conversations, priorities, SLAs, assignees, internal notes, and operations dashboards — not just a prototype, but a customizable, reliable customer service system you can keep iterating on.",
   "description_cn": "使用 AI 和 NocoBase 搭建可定制的客户支持工单系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成工单收件箱、客户沟通、优先级、SLA、处理人、内部备注和运营分析看板，不只是生成原型，而是构建可定制、可靠、可长期迭代的客户服务系统。",
@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Support Inbox: a three-pane inbox — queue, conversation, and customer panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html",
-  "updatedAt": "2026-06-11T11:29:08.928Z",
+  "updatedAt": "2026-06-12T13:46:21.428Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 支持工单收件箱:队列、会话、客户面板三栏式收件箱。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html"
 }
