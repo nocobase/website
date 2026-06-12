@@ -1,14 +1,14 @@
 {
   "id": 1084,
-  "title": "NocoBase v2.1.3",
-  "title_cn": "NocoBase v2.1.3",
-  "title_ja": null,
+  "title": "NocoBase v2.1.3: Normalize app compat build versions",
+  "title_cn": "NocoBase v2.1.3：优化不同格式的版本号兼容判断",
+  "title_ja": "NocoBase v2.1.3：改善しました不同格式的版本号兼容判断",
   "description": "Release Note of v2.1.3",
   "description_cn": "v2.1.3 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.3 リリースノート",
   "slug": "v2.1.3",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-06-12T09:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-06-12T16:21:42.271Z",
+        "updatedAt": "2026-06-12T16:21:42.271Z",
+        "articles_id": 1084,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-12T16:20:52.312Z",
+    "updatedAt": "2026-06-12T16:20:52.323Z",
+    "id": 2561,
+    "title": "main (3)",
+    "filename": "main (3)-o4bacg.png",
+    "extname": ".png",
+    "size": 85458,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(3)-o4bacg.png",
+    "preview": "https://static-docs.nocobase.com/main%20(3)-o4bacg.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-06-12T07:04:44.020Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-06-12T16:21:42.260Z"
 }
