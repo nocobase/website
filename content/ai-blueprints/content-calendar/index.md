@@ -79,22 +79,22 @@ AI further lowers the cost of content entry. Users simply describe the content t
 The result is not a static scheduling spreadsheet but a content operations system that keeps evolving with your channels, team processes, and campaigns.
 
 ## FAQ
-**Can it manage different channels like blog, social media, and email?**
+1. **Can it manage different channels like blog, social media, and email?**
 
 Yes. The system supports channels such as Blog, Social, Email, Video, and Webinar, and can count content volume per channel.
-**Can I see what content is coming up?**
+2. **Can I see what content is coming up?**
 
 Yes. The Up Next panel on the right side of the page lists upcoming content by publish date, along with status and channel.
-**Can I see how many items are in each status every month?**
+3. **Can I see how many items are in each status every month?**
 
 Yes. The monthly overview shows the total content count plus the number of published, scheduled, in-review, and draft items.
-**Can AI fill in the content form automatically?**
+4. **Can AI fill in the content form automatically?**
 
 Yes. Given a natural-language description, AI can extract the title, campaign, channel, status, publish date, author, and brief, and fill in the corresponding fields automatically.
-**How is a content calendar different from a social media calendar?**
+5. **How is a content calendar different from a social media calendar?**
 
 A content calendar is better suited to managing multiple content types — blog, social media, email, video, and webinars — in one place. A social media calendar focuses more on social accounts, platform previews, and the social publishing workflow.
-**Is this system ready for a content team's daily use?**
+6. **Is this system ready for a content team's daily use?**
 
 Yes. NocoBase supports capabilities common to internal enterprise systems — permission management, action history, audit logs, single sign-on, workflows, notifications, APIs, and plugin extensions — which you can enable as needed.
 
