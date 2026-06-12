@@ -43,7 +43,7 @@ Below are the 14 open source AI Agent projects we selected. Before the detailed 
 | 2    | learn-claude-code    | 66.1k        | Claude Code-like Agent Harness                             |
 | 1    | Hermes Agent         | 191k         | General AI Agent / Agent Harness                           |
 
-## 1. NocoBase
+## 14. NocoBase
 
 ![NocoBase1-8m9930.png](https://static-docs.nocobase.com/NocoBase1-8m9930.png)
 
@@ -89,7 +89,7 @@ MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/
 
 Official solution library: [https://www.nocobase.com/en/solutions](https://www.nocobase.com/en/solutions)
 
-## 2. OpenCLI
+## 13. OpenCLI
 
 ![OpenCLI-qn3nn7.png](https://static-docs.nocobase.com/OpenCLI-qn3nn7.png)
 
@@ -110,7 +110,7 @@ OpenCLI is suitable for scenarios where tasks need to be completed through webpa
 * **Web automation**: Read backend pages, query information, fill out forms, and extract platform data.
 * **Agent tool interface**: Wrap browser sessions and web capabilities as commands that AI Agents can call.
 
-## 3. Agent-Reach
+## 12. Agent-Reach
 
 ![Agent-Reach-ew3tec.png](https://static-docs.nocobase.com/Agent-Reach-ew3tec.png)
 
@@ -126,7 +126,7 @@ Agent-Reach focuses on external information access for AI Agents. Through a CLI 
 
 Agent-Reach can be used for technology trend tracking, competitor research, social media sentiment analysis, content topic research, GitHub project organization, and cross-platform material collection. It is not a complete Agent platform by itself. Instead, it adds external information access capabilities to Agents, giving later analysis, summarization, and organization a richer information base.
 
-## 4. Google Workspace CLI
+## 11. Google Workspace CLI
 
 ![Google Workspace CLI-pw1xpm.png](https://static-docs.nocobase.com/Google%20Workspace%20CLI-pw1xpm.png)
 
@@ -146,7 +146,7 @@ For teams that heavily use Google Workspace, this type of tool makes it easier f
 
 Agent Skills: [https://github.com/googleworkspace/cli/blob/main/docs/skills.md](https://github.com/googleworkspace/cli/blob/main/docs/skills.md)
 
-## 5. AionUi
+## 10. AionUi
 
 ![AionUi-5b2768.png](https://static-docs.nocobase.com/AionUi-5b2768.png)
 
@@ -167,7 +167,7 @@ AionUi is suitable for people who use multiple AI Coding or Agent tools at the s
 * **Multi-Agent management**: Manage tools such as Claude Code, Codex, Hermes Agent, OpenCode, and Gemini CLI in one place.
 * **Local workbench**: Handle local files, coding tasks, web operations, and remote access in one workspace, reducing the need to switch between multiple tools.
 
-## 6. OpenClaude
+## 9. OpenClaude
 
 ![OpenClaude-kw4n93.png](https://static-docs.nocobase.com/OpenClaude-kw4n93.png)
 
@@ -185,7 +185,7 @@ OpenClaude is an open source AI Coding Agent CLI that supports both cloud and lo
 
 OpenClaude is mainly used in terminal development environments, such as code explanation, file modification, test generation, refactoring suggestions, and tool calling. It is flexible, composable, and supports many model choices, but it also requires users to have some development experience and manage model configuration, execution permissions, and code change review themselves.
 
-## 7. CopilotKit
+## 8. CopilotKit
 
 ![CopilotKit-gply44.png](https://static-docs.nocobase.com/CopilotKit-gply44.png)
 
@@ -207,7 +207,7 @@ When a product needs to embed an AI Copilot into its interface, CopilotKit provi
 
 Build with Agents: [https://docs.showcase.copilotkit.ai/build-with-agents](https://docs.showcase.copilotkit.ai/build-with-agents)
 
-## 8. Nanobot
+## 7. Nanobot
 
 ![image-jnwd3y.png](https://static-docs.nocobase.com/image-jnwd3y.png)
 
@@ -228,7 +228,7 @@ It is suitable for individual developers, small teams, or users who want to buil
 * **Personal AI Agent**: Connect to Telegram, Discord, Slack, Email, and other entry points to handle daily tasks and automation workflows.
 * **Agent prototype development**: Quickly build a runnable Agent with tools, memory, MCP, model routing, and WebUI.
 
-## 9. SiYuan
+## 6. SiYuan
 
 ![SiYuan-xlju2b.png](https://static-docs.nocobase.com/SiYuan-xlju2b.png)
 
@@ -246,7 +246,7 @@ SiYuan is a privacy-first, self-hosted, fully open source personal knowledge man
 
 In the AI Agent context, SiYuan can be understood as a layer of knowledge infrastructure rather than a typical Agent framework. It is mainly used for personal knowledge management, research material organization, team knowledge accumulation, and local-first knowledge base building. When users want AI to better read, organize, and reuse long-term knowledge, this type of structured knowledge environment becomes especially important.
 
-## 10. CowAgent
+## 5. CowAgent
 
 ![CowAgent-kbrmgq.png](https://static-docs.nocobase.com/CowAgent-kbrmgq.png)
 
@@ -264,7 +264,7 @@ CowAgent is an open source AI Assistant and Agent Harness. It supports task plan
 
 CowAgent focuses on connecting AI Assistants to multiple entry points and tool environments, such as webpages, servers, personal computers, the WeChat ecosystem, and other IM platforms. It is not just a chatbot. Instead, it aims to become a long-running personal assistant or automation assistant through task planning, tool calling, memory, and Skills extensions.
 
-## 11. Cherry Studio
+## 4. Cherry Studio
 
 ![Cherry Studio-ykg2qa.png](https://static-docs.nocobase.com/Cherry%20Studio-ykg2qa.png)
 
@@ -285,7 +285,7 @@ Cherry Studio is designed for high-frequency AI use in daily work:
 * **Multi-model workbench**: Manage different large language models, assistants, knowledge bases, and daily AI workflows in one place.
 * **AI productivity tool**: Use it for writing, material organization, knowledge base Q&A, Agent usage, and team collaboration.
 
-## 12. career-ops
+## 3. career-ops
 
 ![career-ops-ylaji6.png](https://static-docs.nocobase.com/career-ops-ylaji6.png)
 
@@ -303,7 +303,7 @@ career-ops is an AI job search automation system based on Claude Code. It can tu
 
 career-ops is highly vertical and mainly focuses on personal job search workflows. Its value is not only in providing a “job search tool,” but also in showing how AI Agents can enter a clearly defined workflow and break job filtering, material generation, opportunity tracking, interview preparation, and batch processing into executable task chains.
 
-## 13. learn-claude-code
+## 2. learn-claude-code
 
 ![learn-claude-code-6gfiw7.png](https://static-docs.nocobase.com/learn-claude-code-6gfiw7.png)
 
@@ -321,7 +321,7 @@ learn-claude-code is an open source project for learning Claude Code-like Agent 
 
 learn-claude-code is more like systematic learning material for developers, helping users understand the mechanisms behind AI Coding Agents. It covers agent loop, tool use, permissions, hooks, memory, task systems, MCP, and multi-agent collaboration. It is suitable for individual learning and can also serve as internal training material for teams building Agent engineering capabilities.
 
-## 14. Hermes Agent
+## 1. Hermes Agent
 
 ![Hermes Agent-500tav.png](https://static-docs.nocobase.com/Hermes%20Agent-500tav.png)
 
