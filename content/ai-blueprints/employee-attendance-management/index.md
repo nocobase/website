@@ -86,67 +86,67 @@ What you get is not a one-off clock-in demo, but an internal system that keeps e
 
 ## FAQ
 
-**Can employees clock in and out on their phones?**
+1. **Can employees clock in and out on their phones?**
 
 Yes. The system provides a mobile attendance page where employees see the current time and complete clock-in and clock-out.
 
 The page also shows today's clock-in time, clock-out time and accumulated hours — no separate attendance app required.
 
-**Does the system calculate daily working hours automatically?**
+2. **Does the system calculate daily working hours automatically?**
 
 Yes. After clock-in and clock-out, the system computes the day's working hours from the two timestamps and saves them to the record.
 
 The data feeds status judgement (normal / late / overtime) and rolls up into the monthly dashboard.
 
-**Can lateness, absence and overtime follow our own policy?**
+3. **Can lateness, absence and overtime follow our own policy?**
 
 Yes. Teams set their standard start time, standard hours and status rules.
 
 For example: clocking in after the cutoff marks Late; exceeding standard hours marks Overtime; no valid record marks Absent. Leave is a separate status so it is never miscounted as absence.
 
-**Can I view a whole month of attendance per employee?**
+4. **Can I view a whole month of attendance per employee?**
 
 Yes. The monthly matrix shows each employee's daily status with distinct markers for normal, late, absent, on leave and overtime.
 
 Compared with reading raw records, HR and team leads spot consecutive lateness, frequent absence or heavy overtime much faster.
 
-**Can AI analyze long hours and overwork risk?**
+5. **Can AI analyze long hours and overwork risk?**
 
 Yes. AI reads attendance records in a chosen period, flags days above your hour threshold, and analyzes which employees or departments carry the highest long-hour risk.
 
 The sample report counts 10-hour-plus days, related employees' accumulated and average hours, and generates a risk summary with charts.
 
-**What does the AI attendance report include?**
+6. **What does the AI attendance report include?**
 
 Long-hour record counts, high-risk employees, department distribution, accumulated hours, average daily hours and key findings.
 
 Results can be viewed as Preview, Markdown or HTML, downloaded, or printed to PDF — handy for HR reporting and management reviews.
 
-**Can missing or wrong records be corrected?**
+7. **Can missing or wrong records be corrected?**
 
 Yes. HR or authorized managers can edit wrong timestamps, add missing records or fix statuses.
 
 Changes keep an operation history of who adjusted what and when, so attendance data cannot be silently altered.
 
-**Can regular employees see other people's records?**
+8. **Can regular employees see other people's records?**
 
 Usually not. NocoBase controls access by role, department and data scope.
 
 For example, employees see only their own records; team leads see their department; HR maintains everything; management sees aggregates without necessarily accessing individual rows. This matters for data that includes working hours and overtime.
 
-**Do we need to redevelop the system when attendance rules change?**
+9. **Do we need to redevelop the system when attendance rules change?**
 
 No. After going live you can keep adjusting standard times, lateness rules, standard hours, status types, the monthly matrix and metrics.
 
 Different regions, shifts or departments can use different rules — NocoBase's collections, pages and workflows stay configurable.
 
-**Can Claude Code, Codex, Cursor or OpenCode help build it?**
+10. **Can Claude Code, Codex, Cursor or OpenCode help build it?**
 
 Yes. These AI coding agents connect to NocoBase and generate the employee table, attendance records, mobile check-in page, monthly matrix and dashboards from natural-language prompts.
 
 Afterwards HR or admins keep tweaking fields, rules, pages and permissions in the no-code UI — no need to regenerate from scratch for every change.
 
-**How is this different from a vibe-coded clock-in page?**
+11. **How is this different from a vibe-coded clock-in page?**
 
 Plain vibe coding quickly produces a clock-in button or a timestamp page, but real enterprise use also needs permissions, attendance rules, corrections, operation history, department statistics and long-term maintenance.
 
