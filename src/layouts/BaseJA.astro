@@ -2,6 +2,7 @@
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
+import { listLightSolutions } from "../utils";
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -46,6 +47,8 @@ if (currentPath === '/cn' || currentPath === '/en' || currentPath === '/es' || c
 if (urlEN === '/en') {
     urlEN = '/';
 }
+
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
 
 const { title, description, keywords, image } = Astro.props;
 
@@ -470,13 +473,23 @@ const meta = {
                                 <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> ソリューション</li>
                     <li class="all-in-one-item"><a href="/ja/solutions/all-in-one" title="NocoBase オールインワン業務管理システム" class="sub-menu-item">オールインワン業務管理システム <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
                     <li class="submodule-li"><a href="/ja/solutions/all-in-one/crm" title="オープンソース CRM 顧客管理" class="sub-menu-item submodule-item">CRM</a></li>
-                    <li class="submodule-li"><a href="/ja/solutions/all-in-one/sales" title="販売管理:見積/注文/請求書" class="sub-menu-item submodule-item">販売管理</a></li>
+                    <li class="submodule-li"><a href="/ja/solutions/all-in-one/sales" title="受注管理:見積/注文/請求書" class="sub-menu-item submodule-item">受注管理</a></li>
                     <li class="submodule-li"><a href="/ja/solutions/all-in-one/ticketing" title="ヘルプデスク & カスタマーサポートチケット" class="sub-menu-item submodule-item">ヘルプデスク</a></li>
                     <li class="submodule-li"><a href="/ja/solutions/all-in-one/project" title="プロジェクト管理ソフトウェア" class="sub-menu-item submodule-item">プロジェクト管理</a></li>
                     <li class="submodule-li"><a href="/ja/solutions/all-in-one/asset" title="IT & 固定資産管理" class="sub-menu-item submodule-item">資産管理</a></li>
                     <li class="submodule-li"><a href="/ja/solutions/all-in-one/hr" title="HR / 人事管理システム" class="sub-menu-item submodule-item">HR / 人事</a></li>
                     <li><a href="/ja/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">その他のソリューション <i class="uil uil-angle-right"></i></a></li>
                   </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
+                                {lightSolutions.map((s: any) => (
+                                  <li><a href={`/ja/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title_ja || s.title}</a></li>
+                                ))}
+                                <li><a href="/ja/ai-blueprints" class="sub-menu-item fw-medium">すべての Blueprint <i class="uil uil-angle-right"></i></a></li>
+                            </ul>
                         </li>
 
                         <li>

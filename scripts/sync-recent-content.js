@@ -555,6 +555,105 @@ async function syncRecentArticles() {
   return syncedCount;
 }
 
+// Process lightweight solutions
+async function syncRecentLightSolutions() {
+  console.log('Syncing lightweight solutions...');
+
+  const solutions = await getRecentContent('lightSolutions:list', {
+    appends: ['cover', 'tags'],
+    sort: ['-updatedAt']
+  });
+
+  if (!solutions.length) {
+    console.log('No lightweight solutions found to sync');
+    return 0;
+  }
+
+  console.log(`Found ${solutions.length} lightweight solutions to sync`);
+
+  // Make sure we have the repo tree
+  await getRepoTree();
+
+  const syncedCount = await processBatch(solutions, async (solution) => {
+    try {
+      if (!solution.slug) {
+        console.log(`Skipping solution with missing slug: ${solution.title || 'Untitled'}`);
+        return;
+      }
+
+      // Prepare metadata for the solution; prompt is the field customer agents use to replicate the system
+      const metadata = {
+        id: solution.id,
+        title: solution.title,
+        title_cn: solution.title_cn,
+        title_ja: solution.title_ja,
+        description: solution.description,
+        description_cn: solution.description_cn,
+        description_ja: solution.description_ja,
+        slug: solution.slug,
+        publishedAt: solution.publishedAt,
+        status: solution.status,
+        tags: solution.tags || [],
+        cover: solution.cover || null,
+        author: solution.author || null,
+        prompt: solution.prompt || null,
+        prompt_cn: solution.prompt_cn || null,
+        updatedAt: solution.updatedAt
+      };
+
+      // Check if metadata file exists in GitHub
+      const metadataPath = `content/ai-blueprints/${solution.slug}/metadata.json`;
+      const metadataFileStatus = await fileExistsInTree(metadataPath);
+
+      let finalMetadata = metadata;
+      if (metadataFileStatus.exists) {
+        const existingContent = await getFileContent(metadataPath);
+        if (existingContent) {
+          try {
+            const existingMetadata = JSON.parse(existingContent);
+            finalMetadata = deepMerge(existingMetadata, metadata);
+          } catch (error) {
+            console.error(`Error parsing existing metadata for ${solution.slug}:`, error.message);
+          }
+        }
+      }
+
+      await updateGitHubFile(
+        metadataPath,
+        JSON.stringify(finalMetadata, null, 2),
+        metadataFileStatus.exists ? metadataFileStatus : null
+      );
+
+      // Process content files (en / cn / ja)
+      const contentVariants = [
+        { field: 'content', file: 'index.md' },
+        { field: 'content_cn', file: 'index.cn.md' },
+        { field: 'content_ja', file: 'index.ja.md' }
+      ];
+
+      for (const variant of contentVariants) {
+        if (solution[variant.field]) {
+          const contentPath = `content/ai-blueprints/${solution.slug}/${variant.file}`;
+          const contentFileStatus = await fileExistsInTree(contentPath);
+          await updateGitHubFile(
+            contentPath,
+            solution[variant.field],
+            contentFileStatus.exists ? contentFileStatus : null
+          );
+        }
+      }
+
+      console.log(`Synced lightweight solution: ${solution.title} (${solution.slug})`);
+    } catch (error) {
+      console.error(`Error syncing solution ${solution?.title || solution?.id || 'unknown'}:`, error.message);
+    }
+  }, CONFIG.batchSize);
+
+  // Flush cache after processing all solutions
+  await flushCache();
+  return syncedCount;
+}
+
 // Process tutorials
 async function syncRecentTutorials() {
   console.log('Syncing tutorials...');
@@ -1363,6 +1462,11 @@ async function main() {
       totalSyncedItems += articleCount || 0;
     }
     
+    if (contentTypes.includes('all') || contentTypes.includes('lightsolutions')) {
+      const lightSolutionCount = await syncRecentLightSolutions();
+      totalSyncedItems += lightSolutionCount || 0;
+    }
+
     if (contentTypes.includes('all') || contentTypes.includes('tutorials')) {
       const tutorialCount = await syncRecentTutorials();
       totalSyncedItems += tutorialCount || 0;

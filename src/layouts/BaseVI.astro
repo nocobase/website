@@ -2,6 +2,9 @@
 import ShapeFooter from "../components/ShapeFooter.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
+import { listLightSolutions } from "../utils";
+
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -500,12 +503,22 @@ const meta = {
                     <li class="megamenu-head"><i class="uil uil-briefcase-alt fs-6 align-middle"></i> Giải pháp</li>
                     <li class="all-in-one-item"><a href="/vi/solutions/all-in-one" title="NocoBase Bộ giải pháp All-in-One" class="sub-menu-item">Bộ giải pháp All-in-One <span class="badge bg-soft-success ms-1" style="font-size: 0.7em;">new</span></a></li>
                     <li class="submodule-li"><a href="/vi/solutions/all-in-one/crm" title="CRM mã nguồn mở quản lý khách hàng" class="sub-menu-item submodule-item">CRM</a></li>
-                    <li class="submodule-li"><a href="/vi/solutions/all-in-one/sales" title="Quản lý bán hàng: báo giá / đơn hàng / hóa đơn" class="sub-menu-item submodule-item">Bán hàng</a></li>
+                    <li class="submodule-li"><a href="/vi/solutions/all-in-one/sales" title="Quản lý đơn hàng: báo giá / đơn hàng / hóa đơn" class="sub-menu-item submodule-item">Đơn hàng</a></li>
                     <li class="submodule-li"><a href="/vi/solutions/all-in-one/ticketing" title="Help Desk & phiếu hỗ trợ khách hàng" class="sub-menu-item submodule-item">Help Desk</a></li>
                     <li class="submodule-li"><a href="/vi/solutions/all-in-one/project" title="Phần mềm quản lý dự án" class="sub-menu-item submodule-item">Quản lý Dự án</a></li>
                     <li class="submodule-li"><a href="/vi/solutions/all-in-one/asset" title="Quản lý tài sản CNTT & cố định" class="sub-menu-item submodule-item">Quản lý Tài sản</a></li>
                     <li class="submodule-li"><a href="/vi/solutions/all-in-one/hr" title="HR / hệ thống quản lý nhân sự" class="sub-menu-item submodule-item">HR / Nhân sự</a></li>
                     <li><a href="/vi/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">Thêm giải pháp <i class="uil uil-angle-right"></i></a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
+                    {lightSolutions.map((s: any) => (
+                      <li><a href={`/vi/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title}</a></li>
+                    ))}
+                    <li><a href="/vi/ai-blueprints" class="sub-menu-item fw-medium">Tất cả blueprint <i class="uil uil-angle-right"></i></a></li>
                   </ul>
                 </li>
 

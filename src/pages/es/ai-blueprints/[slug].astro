@@ -1,0 +1,321 @@
+---
+import FormattedDate from "../../../components/FormattedDate.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import Toc from "../../../components/Toc.astro";
+import Layout from "../../../layouts/Layout.astro";
+import ImageZoom from "../../../components/ImageZoom.astro";
+import { getLightSolution, listLightSolutions, url } from "../../../utils";
+import { renderPromptSection } from "../../../utils/light-solution-prompt";
+
+const { slug } = Astro.params;
+const { data, headings, html } = await getLightSolution(slug, "es");
+if (!data || !data.title) {
+  return new Response("Not found", { status: 404 });
+}
+
+// Soluciones relacionadas: misma etiqueta primero, luego el resto, excluyendo la actual
+const { data: allSolutions } = await listLightSolutions({ pageSize: 100 });
+const currentTagIds = new Set((data.tags || []).map((t: any) => t.id));
+const related = allSolutions
+  .filter((s: any) => s.slug !== slug)
+  .sort((a: any, b: any) => {
+    const am = (a.tags || []).some((t: any) => currentTagIds.has(t.id)) ? 1 : 0;
+    const bm = (b.tags || []).some((t: any) => currentTagIds.has(t.id)) ? 1 : 0;
+    return bm - am;
+  })
+  .slice(0, 5);
+
+// Nube de tags: etiquetas más usadas en todas las soluciones
+const tagCount = new Map<string, number>();
+for (const s of allSolutions) {
+  for (const tg of s.tags || []) {
+    if (tg.title) tagCount.set(tg.title, (tagCount.get(tg.title) || 0) + 1);
+  }
+}
+const topTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([label]) => label);
+
+// Prompt embebido: una línea {{prompt}} en el cuerpo del artículo se reemplaza con la tarjeta de prompt;
+// los documentos sin marcador muestran la tarjeta al pie de la página.
+const promptSectionHtml = renderPromptSection(data.prompt, "es");
+const bodyHtml = html.replace(/<p>\s*\{\{\s*prompt\s*\}\}\s*<\/p>/gi, "");
+
+const title = data.title;
+const description = data.description;
+const keywords = (data.tags || []).map((tag: any) => tag.title).join(",");
+const basepath = "/es/ai-blueprints";
+const tabs = [
+  {
+    title: "Inicio",
+    link: "/es/",
+  },
+  {
+    title: "AI Blueprints",
+    link: basepath,
+  },
+  {
+    title: "Detalle",
+    active: true,
+  },
+];
+---
+
+<Layout title={title} image={data.cover ? url(data.cover.url) : undefined} description={description} keywords={keywords}>
+  <PageHeader title={title} description={description} breadcrumb={tabs}>
+    <div>
+      {
+        data.author && (
+          <span title={data.author}>
+            {data.author}
+            <span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">
+              |
+            </span>
+          </span>
+        )
+      }
+      <FormattedDate date={data.publishedAt || data.createdAt} locale="es" />
+    </div>
+    <div class="solution-tags mt-2">
+      {(data.tags || []).map((t: any) => <span class="sol-tag">{t.title}</span>)}
+    </div>
+  </PageHeader>
+  <section class="section bg-white-color">
+    <main class="container blog-container row">
+      <div class="col-md-9 col-18 markdown-body">
+        <Fragment set:html={promptSectionHtml} />
+        <Fragment set:html={bodyHtml} />
+      </div>
+      <div class="col-md-3 col-6 markdown-toc">
+        <div class="sticky-top side-stack" style="top: 80px;z-index: 0;">
+          {headings.length > 0 && (
+            <div class="toc-box">
+              <Toc headings={headings} />
+            </div>
+          )}
+          <div class="side-widgets">
+            {related.length > 0 && (
+              <div class="related-widget">
+                <h6 class="widget-title">Otros blueprints</h6>
+                <div class="mt-3">
+                  {related.map((s: any) => (
+                    <div class="d-flex align-items-center related-item">
+                      {s.cover?.url ? (
+                        <div class="related-thumb"><img src={s.cover.url} class="related-thumb-img" alt={s.title} loading="lazy" /></div>
+                      ) : (
+                        <div class="related-thumb related-thumb-ph">{(s.title || "?").slice(0, 1)}</div>
+                      )}
+                      <div class="flex-1 ms-3 overflow-hidden">
+                        <a href={`/es/ai-blueprints/${s.slug}`} class="d-block related-title text-dark text-truncate">{s.title}</a>
+                        <small class="text-muted">
+                          <FormattedDate date={s.publishedAt || s.createdAt} locale="es" />
+                        </small>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {topTags.length > 0 && (
+              <div class="related-widget mt-4">
+                <h6 class="widget-title">Etiquetas</h6>
+                <div class="tagcloud mt-3">
+                  {topTags.map((label: string) => (
+                    <a href={`/es/ai-blueprints?tag=${encodeURIComponent(label)}`} class="rounded">{label}</a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+
+  <ImageZoom />
+
+  <style is:global>
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+    }
+    .sol-tag {
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      line-height: 1.6;
+    }
+    .prompt-card {
+      border-radius: 12px;
+      background: #f8f9fc;
+    }
+    .side-stack .headings {
+      height: auto !important;
+    }
+    .side-stack {
+      max-height: calc(100vh - 110px);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      overflow: hidden;
+    }
+    .toc-box {
+      flex: 0 1 auto;
+      max-height: 42vh;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    .toc-box::-webkit-scrollbar,
+    .related-card .card-body::-webkit-scrollbar {
+      width: 4px;
+    }
+    .toc-box::-webkit-scrollbar-thumb,
+    .related-card .card-body::-webkit-scrollbar-thumb {
+      background: #d6dbe5;
+      border-radius: 2px;
+    }
+    .side-widgets {
+      flex: 0 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    .side-widgets::-webkit-scrollbar {
+      width: 4px;
+    }
+    .side-widgets::-webkit-scrollbar-thumb {
+      background: #d6dbe5;
+      border-radius: 2px;
+    }
+    .widget-title {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 0;
+      color: #161c2d;
+      background: #f8f9fa;
+      text-align: center;
+      padding: 8px 12px;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    }
+    .related-item {
+      margin-bottom: 12px;
+    }
+    .related-item:last-child {
+      margin-bottom: 0;
+    }
+    .related-thumb {
+      width: 52px;
+      height: 52px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .related-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.25);
+    }
+    .related-thumb-ph {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(47, 85, 212, 0.1);
+      color: #2f55d4;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .related-title {
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .related-title:hover {
+      color: #2f55d4 !important;
+    }
+    .tagcloud a {
+      display: inline-block;
+      background: #f4f6fa;
+      color: #3c4858;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 5px;
+      margin: 0 6px 6px 0;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .tagcloud a:hover {
+      background: #2f55d4;
+      color: #fff;
+    }
+    .prompt-note {
+      background: rgba(241, 180, 76, 0.12);
+      border: 1px solid rgba(241, 180, 76, 0.4);
+      color: #8a6116;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .prompt-pre {
+      background: #1e1e2e;
+      color: #e6e6ef;
+      border-radius: 8px;
+      padding: 12px 14px;
+      max-height: 180px;
+      overflow: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 12.5px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .prompt-footnote {
+      font-size: 12px;
+      color: #8492a6;
+      line-height: 1.7;
+    }
+    .prompt-footnote a {
+      color: #2f55d4;
+    }
+  </style>
+
+  <script>
+    const btn = document.getElementById("copy-prompt");
+    const pre = document.getElementById("solution-prompt");
+    if (btn && pre) {
+      const copyText = async (text: string) => {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+        // Contextos no seguros (http) sin API clipboard — fallback con textarea temporal
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      };
+      btn.addEventListener("click", async () => {
+        try {
+          await copyText(pre.textContent || "");
+          btn.innerHTML = '<i class="uil uil-check"></i> Copiado';
+          setTimeout(() => {
+            btn.innerHTML = '<i class="uil uil-copy"></i> Copiar prompt';
+          }, 2000);
+        } catch (e) {
+          console.error("Copy failed", e);
+        }
+      });
+    }
+  </script>
+</Layout>
