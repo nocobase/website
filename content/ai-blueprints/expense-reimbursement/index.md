@@ -97,76 +97,91 @@ The generated report can be previewed directly, or exported as Markdown, HTML, o
 The resulting expense reimbursement system is not just a request form — it is a complete internal system covering expense submission, receipt linking, approval, payment, and financial analysis.
 
 ## FAQ
+
 1. **Can one reimbursement request include multiple expense items?**
 
 Yes. A request can be linked to meals, hotel, flight, taxi, and other expense types, each with its own date, category, amount, and notes.
 
 The system can total all item amounts and reconcile them with the claimed total of the request, helping employees submit complete travel or business expenses.
+
 2. **Can I upload receipts or invoices and link them to specific expenses?**
 
 Yes. Employees can upload receipts, invoices, or other supporting documents and link each one to the corresponding expense item.
 
 The system can also show whether each receipt has been matched, helping finance staff quickly spot missing receipts, duplicate uploads, or amount mismatches.
+
 3. **Can I set up manager review, finance approval, and final payment?**
 
 Yes. The reimbursement process can include multiple stages such as request creation, direct-manager review, finance approval, and payment.
 
 The detail page can show the current approval node, approver, completion time, and processing status on a timeline, so employees and finance know exactly where a request is stuck.
+
 4. **Can approvers record the reasons for approval or rejection?**
 
 Yes. Managers and finance staff can leave review comments at each approval node, such as "receipts complete", "amount needs revision", or "expense violates policy".
 
 These comments are saved together with the approval time, approver, and status, making follow-up communication easier and avoiding the situation where employees only see "Rejected" without knowing why.
+
 5. **Can I manage reimbursements in different currencies?**
 
 Yes. Every request and expense item can record currencies such as USD, EUR, CNY, JPY, and GBP, which suits distributed teams and international travel.
 
 Companies can also add fields like exchange rates, converted currencies, and base-currency amounts as needed for unified financial consolidation.
+
 6. **Can I clearly tell which stage a reimbursement request is in?**
 
 Yes. The system can use statuses such as Draft, Submitted, In Review, Approved, Rejected, Paid, or Reimbursed to show the processing stage.
 
 Employees can quickly confirm whether a request is still a draft, in review, approved, or already paid; finance staff can also filter pending records by status.
+
 7. **Can finance staff verify expense items, receipts, and claimed totals?**
 
 Yes. The request detail page can show all expense items, categories, dates, amounts, linked receipts, and the claimed total at the same time.
 
 Finance staff no longer need to switch between spreadsheets, emails, and attachments — verification and approval happen in one workbench.
+
 8. **Can AI help recognize and organize expense receipts?**
 
 Yes. AI can extract the merchant, date, amount, currency, and expense category from receipt or invoice images and help fill in the expense form.
 
 AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can also connect to NocoBase to help generate reimbursement requests, expense items, receipt linking, and approval pages, which the team can then keep adjusting through the no-code UI.
+
 9. **Can AI generate monthly expense analysis and anomaly alerts?**
 
 Yes. AI can read the reimbursement data of a given month and analyze the total amount, status distribution, currency share, cost centers, and expense categories.
 
 It can also flag issues worth attention, such as a cost center with sharply rising spend, a high rejected amount, drafts left unsubmitted for a long time, or an unusual share of a particular expense type.
+
 10. **Can AI-generated expense reports be used for reporting and archiving?**
 
 Yes. The analysis report can include key conclusions, expense structure, status distribution, cost-center comparisons, and charts.
 
 Reports can be viewed in Preview, Markdown, and HTML, and downloaded as Markdown or HTML or printed to PDF — well suited for monthly finance reports, budget reviews, and management briefings.
+
 11. **Can employees, managers, and finance staff see different data?**
 
 Yes. NocoBase can configure permissions based on roles, employee relationships, and data scopes.
 
 For example, employees can only view and edit their own requests; direct managers can approve requests submitted by their reports; finance staff can see all expenses and receipts; and management can view only aggregated analysis without touching the raw records.
+
 12. **Can I track who changed budgets, amounts, or approval statuses?**
 
 Yes. You can enable operation history and audit logging as needed to record changes to key fields such as amount, currency, expense category, approval status, and payment status.
 
 When an amount is modified, an approval is withdrawn, or a payment status changes, the company can trace who made the change, when, and what exactly changed — meeting financial audit and accountability requirements.
+
 13. **How is this different from a reimbursement form generated by plain vibe coding?**
 
 Plain vibe coding can quickly generate an expense-entry page, but real enterprise reimbursement also requires item-receipt linking, multi-stage approvals, data permissions, audit trails, multiple currencies, and financial analysis.
 
 NocoBase puts all of these capabilities in one business system. AI speeds up building, data entry, and analysis, while NocoBase handles data relationships, permissions, workflows, and long-term maintenance, reducing the need to keep patching features later.
+
 14. **Can the system keep evolving when reimbursement policies or approval flows change?**
 
 Yes. Companies can keep adding expense categories, approval nodes, amount thresholds, currencies, cost centers, and receipt requirements.
 
 For example, large expenses can require an additional approval from the head of finance, certain categories can require invoices, and different regions can use different flows. All adjustments happen on the existing system without redevelopment.
+
 15. **Is this system suitable for production-grade enterprise expense management?**
 
 Yes. Expense reimbursement especially values permission isolation, receipt management, approval audit trails, and financial traceability.
