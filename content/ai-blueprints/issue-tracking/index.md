@@ -82,69 +82,69 @@ AI can go further by participating in task assignment and data analysis. An AI t
 An issue tracking system built this way is not just a static task table — it is an internal system that supports complex engineering collaboration, continuous analysis, and long-term iteration.
 
 ## FAQ
-**Can I quickly filter issues by project, status, and priority?**
+1. **Can I quickly filter issues by project, status, and priority?**
 
 Yes. The system supports filtering issues by projects such as Core Platform, API Gateway, Frontend, and Infrastructure, and combining filters across statuses like Backlog, Todo, In Progress, In Review, Done, and Cancelled, as well as priorities like Urgent, High, Medium, Low, and None.
 
 Each filter option can also show the corresponding issue count, helping the team quickly see which project or stage most issues are concentrated in.
-**Can I manage the hierarchy between epics and sub-tasks?**
+2. **Can I manage the hierarchy between epics and sub-tasks?**
 
 Yes. Complex requirements can first be created as epics, with bugs, technical tasks, or improvements linked underneath as sub-tasks.
 
 The workspace supports expanding and collapsing the hierarchy, so the team can see the overall goal while also tracking the status, priority, and assignee of every execution item.
-**Can I customize issue statuses to match my team's process?**
+3. **Can I customize issue statuses to match my team's process?**
 
 Yes. The system can use statuses such as Backlog, Todo, In Progress, In Review, Done, and Cancelled, and you can add stages like In Testing, Ready to Release, or Blocked based on your team's actual process.
 
 When your development process changes, you can keep adjusting statuses, page filters, and workflows without rebuilding the entire system.
-**Can I set priorities for issues and identify high-risk tasks?**
+4. **Can I set priorities for issues and identify high-risk tasks?**
 
 Yes. Every issue can be set to Urgent, High, Medium, Low, or None, clearly displayed with distinct tags.
 
 The team can combine status and priority to identify high-risk tasks, such as urgent issues still sitting in In Progress, or high-priority issues that have not entered processing for a long time.
-**Can AI recommend the right assignee based on issue content?**
+5. **Can AI recommend the right assignee based on issue content?**
 
 Yes. An AI team lead can analyze the issue title, description, and project to determine the technical skills the task requires, then recommend the right person based on employee skills and current workload.
 
 This reduces manual assignment time and helps the team see whether tasks are concentrated on a few members.
-**Can I see how many issues each member is responsible for?**
+6. **Can I see how many issues each member is responsible for?**
 
 Yes. The system can count issues by assignee and further break them down into completed, in-progress, and pending tasks.
 
 AI can also identify uneven workload distribution, issues with no owner, and which members are carrying more urgent or high-priority tasks.
-**Can AI analyze issue completion rates and engineering risks?**
+7. **Can AI analyze issue completion rates and engineering risks?**
 
 Yes. AI can read issue status, priority, project, and assignee data to calculate total issues, completion rates, and the proportion of active issues, and identify tasks that need attention.
 
 For example, the analysis report in the screenshot can reveal a low completion rate for Urgent issues, multiple urgent tasks still in In Progress, and whether there are currently unassigned issues.
-**Can issue analysis reports be previewed and exported?**
+8. **Can issue analysis reports be previewed and exported?**
 
 Yes. Once AI generates a report, it can be viewed as Preview, Markdown, or HTML.
 
 Reports can also be downloaded as Markdown or HTML, or printed as PDF — useful for engineering weekly meetings, project retrospectives, and management reporting.
-**Can I control which issues different members can view and edit?**
+9. **Can I control which issues different members can view and edit?**
 
 Yes. NocoBase supports permissions by role, project, assignee, and action type.
 
 For example, regular members can only update issues assigned to them; project leads can manage issues and assignees within their projects; team leads can view cross-project workload; and administrators can configure fields, statuses, priorities, and permissions.
 
 This fits real engineering collaboration far better than letting everyone edit every issue.
-**Can I track who modified an issue?**
+10. **Can I track who modified an issue?**
 
 Yes. You can enable action history and audit logs on demand to record changes to issue status, priority, assignee, and other fields.
 
 When an urgent task is delayed, cancelled, or reassigned, the team can trace who made the change and when, making retrospectives and accountability much easier.
-**Can Claude Code, Codex, Cursor, or OpenCode help build the issue tracking system?**
+11. **Can Claude Code, Codex, Cursor, or OpenCode help build the issue tracking system?**
 
 Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate the project table, issue table, epic and sub-task relations, filtering pages, and analysis features from a prompt.
 
 Once the basic system is generated, the team can keep adjusting the data structure, pages, statuses, and permissions through NocoBase's no-code UI, without asking AI to rewrite the app from scratch for every change.
-**How is this different from a task list generated by plain vibe coding?**
+12. **How is this different from a task list generated by plain vibe coding?**
 
 Plain vibe coding can quickly produce an issue list or kanban board, but when it comes to epic hierarchies, compound filtering, fine-grained permissions, action history, workload analysis, and long-term maintenance, it usually requires writing more and more code.
 
 NocoBase already provides the data relations, permissions, workflows, auditing, and extensibility a business system needs. AI accelerates the build and the analysis, while NocoBase carries the continuously running engineering process.
-**Is this issue tracking system suitable for long-term use by an engineering team?**
+13. **Is this issue tracking system suitable for long-term use by an engineering team?**
 
 Yes. After launch, you can keep adding projects, issue types, statuses, priorities, analysis metrics, and automated workflows, and adjust permissions as the team grows.
 
