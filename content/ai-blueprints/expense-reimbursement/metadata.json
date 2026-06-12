@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Expense Reimbursement: a submission wizard, a my-reimbursements view, and approval progress. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html",
-  "updatedAt": "2026-06-11T11:29:10.210Z",
+  "updatedAt": "2026-06-12T13:49:53.571Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 费用报销:提交向导、我的报销视图和审批进度。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html"
 }
