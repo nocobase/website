@@ -14,7 +14,7 @@ This time, we focus on GitHub’s official [ai-agent](https://github.com/topics/
 
 ---
 
-💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. → [Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
 
@@ -47,7 +47,11 @@ Below are the 14 open source AI Agent projects we selected. Before the detailed 
 
 ![NocoBase1-8m9930.png](https://static-docs.nocobase.com/NocoBase1-8m9930.png)
 
-Official website: [https://www.nocobase.com](https://www.nocobase.com/) GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase) GitHub Stars: 22.7k
+Official website: [https://www.nocobase.com](https://www.nocobase.com/)
+
+GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+
+GitHub Stars: 22.7k
 
 ### Project introduction
 
@@ -89,7 +93,11 @@ Official solution library: [https://www.nocobase.com/en/solutions](https://www.n
 
 ![OpenCLI-qn3nn7.png](https://static-docs.nocobase.com/OpenCLI-qn3nn7.png)
 
-Official website: [https://opencli.info](https://opencli.info/) GitHub: [https://github.com/jackwener/OpenCLI](https://github.com/jackwener/OpenCLI) GitHub Stars: 24.1k
+Official website: [https://opencli.info](https://opencli.info/)
+
+GitHub: [https://github.com/jackwener/OpenCLI](https://github.com/jackwener/OpenCLI)
+
+GitHub Stars: 24.1k
 
 ### Project introduction
 
@@ -106,7 +114,9 @@ OpenCLI is suitable for scenarios where tasks need to be completed through webpa
 
 ![Agent-Reach-ew3tec.png](https://static-docs.nocobase.com/Agent-Reach-ew3tec.png)
 
-Official website / documentation: [https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) GitHub: [https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) GitHub Stars: 26.3k
+GitHub: [https://github.com/Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+
+GitHub Stars: 26.3k
 
 ### Project introduction
 
@@ -120,7 +130,9 @@ Agent-Reach can be used for technology trend tracking, competitor research, soci
 
 ![Google Workspace CLI-pw1xpm.png](https://static-docs.nocobase.com/Google%20Workspace%20CLI-pw1xpm.png)
 
-Official website / documentation: [https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli) GitHub: [https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli) GitHub Stars: 27k
+GitHub: [https://github.com/googleworkspace/cli](https://github.com/googleworkspace/cli)
+
+GitHub Stars: 27k
 
 ### Project introduction
 
@@ -138,7 +150,11 @@ Agent Skills: [https://github.com/googleworkspace/cli/blob/main/docs/skills.md](
 
 ![AionUi-5b2768.png](https://static-docs.nocobase.com/AionUi-5b2768.png)
 
-Official website: [https://www.aionui.com](https://www.aionui.com/) GitHub: [https://github.com/iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) GitHub Stars: 28.1k
+Official website: [https://www.aionui.com](https://www.aionui.com/)
+
+GitHub: [https://github.com/iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)
+
+GitHub Stars: 28.1k
 
 ### Project introduction
 
@@ -155,7 +171,11 @@ AionUi is suitable for people who use multiple AI Coding or Agent tools at the s
 
 ![OpenClaude-kw4n93.png](https://static-docs.nocobase.com/OpenClaude-kw4n93.png)
 
-Official website: [https://openclaude.gitlawb.com](https://openclaude.gitlawb.com/) GitHub: [https://github.com/Gitlawb/openclaude](https://github.com/Gitlawb/openclaude) GitHub Stars: 28.6k
+Official website: [https://openclaude.gitlawb.com](https://openclaude.gitlawb.com/)
+
+GitHub: [https://github.com/Gitlawb/openclaude](https://github.com/Gitlawb/openclaude)
+
+GitHub Stars: 28.6k
 
 ### Project introduction
 
@@ -169,7 +189,11 @@ OpenClaude is mainly used in terminal development environments, such as code exp
 
 ![CopilotKit-gply44.png](https://static-docs.nocobase.com/CopilotKit-gply44.png)
 
-Official website: [https://docs.copilotkit.ai](https://docs.copilotkit.ai/) GitHub: [https://github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) GitHub Stars: 34.7k
+Official website: [https://docs.copilotkit.ai](https://docs.copilotkit.ai/)
+
+GitHub: [https://github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)
+
+GitHub Stars: 34.7k
 
 ### Project introduction
 
@@ -187,7 +211,11 @@ Build with Agents: [https://docs.showcase.copilotkit.ai/build-with-agents](https
 
 ![image-jnwd3y.png](https://static-docs.nocobase.com/image-jnwd3y.png)
 
-Official website: [https://nanobot.wiki](https://nanobot.wiki/) GitHub: [https://github.com/HKUDS/nanobot](https://github.com/HKUDS/nanobot) GitHub Stars: 44.1k
+Official website: [https://nanobot.wiki](https://nanobot.wiki/)
+
+GitHub: [https://github.com/HKUDS/nanobot](https://github.com/HKUDS/nanobot)
+
+GitHub Stars: 44.1k
 
 ### Project introduction
 
@@ -204,7 +232,11 @@ It is suitable for individual developers, small teams, or users who want to buil
 
 ![SiYuan-xlju2b.png](https://static-docs.nocobase.com/SiYuan-xlju2b.png)
 
-Official website: [https://b3log.org/siyuan](https://b3log.org/siyuan) GitHub: [https://github.com/siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) GitHub Stars: 44.4k
+Official website: [https://b3log.org/siyuan](https://b3log.org/siyuan)
+
+GitHub: [https://github.com/siyuan-note/siyuan](https://github.com/siyuan-note/siyuan)
+
+GitHub Stars: 44.4k
 
 ### Project introduction
 
@@ -218,7 +250,11 @@ In the AI Agent context, SiYuan can be understood as a layer of knowledge infras
 
 ![CowAgent-kbrmgq.png](https://static-docs.nocobase.com/CowAgent-kbrmgq.png)
 
-Official website: [https://cowagent.ai](https://cowagent.ai/) GitHub: [https://github.com/zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) GitHub Stars: 45.2k
+Official website: [https://cowagent.ai](https://cowagent.ai/)
+
+GitHub: [https://github.com/zhayujie/CowAgent](https://github.com/zhayujie/CowAgent)
+
+GitHub Stars: 45.2k
 
 ### Project introduction
 
@@ -232,7 +268,11 @@ CowAgent focuses on connecting AI Assistants to multiple entry points and tool e
 
 ![Cherry Studio-ykg2qa.png](https://static-docs.nocobase.com/Cherry%20Studio-ykg2qa.png)
 
-Official website: [https://cherryai.com](https://cherryai.com/) GitHub: [https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) GitHub Stars: 47.2k
+Official website: [https://cherryai.com](https://cherryai.com/)
+
+GitHub: [https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)
+
+GitHub Stars: 47.2k
 
 ### Project introduction
 
@@ -249,7 +289,11 @@ Cherry Studio is designed for high-frequency AI use in daily work:
 
 ![career-ops-ylaji6.png](https://static-docs.nocobase.com/career-ops-ylaji6.png)
 
-Official website: [https://career-ops.org](https://career-ops.org/) GitHub: [https://github.com/santifer/career-ops](https://github.com/santifer/career-ops) GitHub Stars: 52.7k
+Official website: [https://career-ops.org](https://career-ops.org/)
+
+GitHub: [https://github.com/santifer/career-ops](https://github.com/santifer/career-ops)
+
+GitHub Stars: 52.7k
 
 ### Project introduction
 
@@ -263,7 +307,11 @@ career-ops is highly vertical and mainly focuses on personal job search workflow
 
 ![learn-claude-code-6gfiw7.png](https://static-docs.nocobase.com/learn-claude-code-6gfiw7.png)
 
-Official website: [https://learn.shareai.run](https://learn.shareai.run/) GitHub: [https://github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) GitHub Stars: 66.1k
+Official website: [https://learn.shareai.run](https://learn.shareai.run/)
+
+GitHub: [https://github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+
+GitHub Stars: 66.1k
 
 ### Project introduction
 
@@ -277,7 +325,11 @@ learn-claude-code is more like systematic learning material for developers, help
 
 ![Hermes Agent-500tav.png](https://static-docs.nocobase.com/Hermes%20Agent-500tav.png)
 
-Official website: [https://hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/) GitHub: [https://github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) GitHub Stars: 191k
+Official website: [https://hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/)
+
+GitHub: [https://github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+
+GitHub Stars: 191k
 
 ### Project introduction
 
@@ -362,18 +414,18 @@ For individual users, it is better to start with lightweight scenarios such as k
 
 **If this article is helpful to you, feel free to share it with friends who are following open source AI Agent tools, AI automation, and enterprise internal system building.**
 
+**Related reading**:
 
-**Related reading**
-
-* [Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)
-* [6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)
-* [Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)
-* [5 Open-Source Internal Tools to Use with Hermes Agent](https://www.nocobase.com/en/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)
-* [OpenClaw and 5 Open-Source Tools for Monitoring Business Workflows](https://www.nocobase.com/en/blog/openclaw-open-source-enterprise-tools)
-* [What Open-Source Tools Work Well with OpenCode? 5 Projects to Try](https://www.nocobase.com/en/blog/opencode-open-source-tools-ai-agents)
-* [Building Internal Tools with Codex: 6 Open-Source Projects for Developers](https://www.nocobase.com/en/blog/building-internal-tools-with-codex)
-* [After Claude Code: 6 Open-Source Tools You Should Know](https://www.nocobase.com/en/blog/open-source-tools-after-claude-code)
-* [Top 10 Open-Source AI And No-Code Tools for Enterprise Software Development](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-enterprise-software-development)
-* [8 Open-Source AI Agent Platforms for Building Internal Tools](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools)
-* [The Best Enterprise-Grade Self-Hosted CRMs with RBAC, AI, and Open API Support](https://www.nocobase.com/en/blog/the-best-self-hosted-crm-for-enterprise-teams)
-* [6 Best Open-Source Tools to Replace Custom Integration Middleware](https://www.nocobase.com/en/blog/6-open-source-integration-tools-to-replace-custom-middleware)
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**
+* **[Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[5 Open-Source Internal Tools to Use with Hermes Agent](https://www.nocobase.com/en/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**
+* **[OpenClaw and 5 Open-Source Tools for Monitoring Business Workflows](https://www.nocobase.com/en/blog/openclaw-open-source-enterprise-tools)**
+* **[What Open-Source Tools Work Well with OpenCode? 5 Projects to Try](https://www.nocobase.com/en/blog/opencode-open-source-tools-ai-agents)**
+* **[Building Internal Tools with Codex: 6 Open-Source Projects for Developers](https://www.nocobase.com/en/blog/building-internal-tools-with-codex)**
+* **[After Claude Code: 6 Open-Source Tools You Should Know](https://www.nocobase.com/en/blog/open-source-tools-after-claude-code)**
+* **[Top 10 Open-Source AI And No-Code Tools for Enterprise Software Development](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-enterprise-software-development)**
+* **[8 Open-Source AI Agent Platforms for Building Internal Tools](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools)**
+* **[The Best Enterprise-Grade Self-Hosted CRMs with RBAC, AI, and Open API Support](https://www.nocobase.com/en/blog/the-best-self-hosted-crm-for-enterprise-teams)**
+* **[6 Best Open-Source Tools to Replace Custom Integration Middleware](https://www.nocobase.com/en/blog/6-open-source-integration-tools-to-replace-custom-middleware)**
+* **[Airtable vs. NocoBase: The Real Cost of Migrating from Excel](https://www.nocobase.com/en/blog/airtable-vs-nocobase-migration-cost-comparison)**
