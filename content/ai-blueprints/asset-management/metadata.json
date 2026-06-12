@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Asset Management: three-section asset cards, depreciation progress bars, and maintenance tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/02-asset-management.html",
-  "updatedAt": "2026-06-11T11:29:08.115Z",
+  "updatedAt": "2026-06-12T13:49:51.099Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产管理:三段式资产卡片、折旧进度条和维保跟踪。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/02-asset-management.html"
 }
