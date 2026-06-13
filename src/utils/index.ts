@@ -218,7 +218,13 @@ async function loadContent(
     cn: 'index.cn.md',
     ja: 'index.ja.md',
     ru: 'index.ru.md',
-    fr: 'index.fr.md'
+    fr: 'index.fr.md',
+    es: 'index.es.md',
+    de: 'index.de.md',
+    id: 'index.id.md',
+    pt: 'index.pt.md',
+    tw: 'index.tw.md',
+    vi: 'index.vi.md'
   };
 
   const contentFile = contentFiles[locale] || contentFiles.en;
