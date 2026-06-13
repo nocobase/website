@@ -586,10 +586,8 @@ async function syncRecentLightSolutions() {
         id: solution.id,
         title: solution.title,
         title_cn: solution.title_cn,
-        title_ja: solution.title_ja,
         description: solution.description,
         description_cn: solution.description_cn,
-        description_ja: solution.description_ja,
         slug: solution.slug,
         publishedAt: solution.publishedAt,
         status: solution.status,
@@ -627,8 +625,7 @@ async function syncRecentLightSolutions() {
       // Process content files (en / cn / ja)
       const contentVariants = [
         { field: 'content', file: 'index.md' },
-        { field: 'content_cn', file: 'index.cn.md' },
-        { field: 'content_ja', file: 'index.ja.md' }
+        { field: 'content_cn', file: 'index.cn.md' }
       ];
 
       for (const variant of contentVariants) {
