@@ -1,14 +1,14 @@
 {
   "id": 1088,
-  "title": "Do Software and Programmers Still Have a Future? What Doubling Our Revenue in the AI Era Taught Us ",
+  "title": "Do Software and Programmers Still Have a Future? ",
   "title_cn": "程序员和软件还有前途吗 —— 从 NocoBase 收入再翻倍谈起",
-  "title_ja": "ソフトウェアとプログラマーに、まだ未来はあるのか   AI時代に売上を倍増させて、私たちが学んだこと",
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title_ja": "ソフトウェアとプログラマーに、まだ未来はあるのか",
+  "description": "AI is reshaping the software industry. After months of anxiety, debate, and adaptation, we share what NocoBase has learned about the future of software and programmers.",
+  "description_cn": "AI 正在重塑软件行业。经历焦虑、碰撞与转型后，我们分享 NocoBase 对软件、程序员与未来的最新思考。",
+  "description_ja": "AI がソフトウェア業界を変えつつある今。不安や議論、そして転換を経て、NocoBase がたどり着いたソフトウェアとプログラマーの未来への考えを共有します。",
   "slug": "future-of-software-programmers-revenue-doubled",
   "publishedAt": "2026-06-15T05:11:52.772Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-23T04:03:19.249Z",
@@ -38,7 +38,7 @@
     },
     {
       "createdAt": "2026-06-15T04:28:32.544Z",
-      "updatedAt": "2026-06-15T04:32:29.671Z",
+      "updatedAt": "2026-06-15T06:05:18.244Z",
       "id": 264,
       "title": "NocoBase story",
       "title_cn": "NocoBase 故事",
@@ -46,7 +46,7 @@
       "description": "The growth journey of NocoBase and our team. Recording our major milestones, product iterations, and the stories behind the development.",
       "description_cn": "NocoBase 产品和团队的成长历程。记录我们的主要里程碑、版本迭代以及幕后的开发故事。",
       "displayOnPage": true,
-      "slug": "nocobase-story",
+      "slug": "nocobase-stories",
       "displayOnBlog": true,
       "keywords": null,
       "keywords_cn": null,
@@ -61,16 +61,58 @@
         "tagId": 264,
         "articleId": 1088
       }
+    },
+    {
+      "createdAt": "2026-06-15T06:17:12.890Z",
+      "updatedAt": "2026-06-15T06:17:12.890Z",
+      "id": 265,
+      "title": "AI",
+      "title_cn": "AI",
+      "sort": 263,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "AI",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 1,
+      "updatedById": 1,
+      "articlesTags": {
+        "createdAt": "2026-06-15T06:25:01.343Z",
+        "updatedAt": "2026-06-15T06:25:01.343Z",
+        "tagId": 265,
+        "articleId": 1088
+      }
     }
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-15T06:16:06.958Z",
+    "updatedAt": "2026-06-15T06:16:06.965Z",
+    "id": 2563,
+    "title": "photo-1644792863360-40fa85ea52e7 (1)",
+    "filename": "photo-1644792863360-40fa85ea52e7 (1)-onuuif.avif",
+    "extname": ".avif",
+    "size": 26536,
+    "mimetype": "image/avif",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/photo-1644792863360-40fa85ea52e7%20(1)-onuuif.avif",
+    "preview": "https://static-docs.nocobase.com/photo-1644792863360-40fa85ea52e7%20(1)-onuuif.avif",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "author": null,
+  "author": "Zhou Yanliang",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-06-15T05:50:05.334Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-06-15T06:54:37.290Z"
 }
