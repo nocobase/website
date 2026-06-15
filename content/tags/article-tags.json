@@ -5161,7 +5161,7 @@
   },
   {
     "createdAt": "2026-06-15T04:28:32.544Z",
-    "updatedAt": "2026-06-15T04:32:29.671Z",
+    "updatedAt": "2026-06-15T06:05:18.244Z",
     "createdById": 1,
     "description": "The growth journey of NocoBase and our team. Recording our major milestones, product iterations, and the stories behind the development.",
     "description_cn": "NocoBase 产品和团队的成长历程。记录我们的主要里程碑、版本迭代以及幕后的开发故事。",
@@ -5172,11 +5172,31 @@
     "keywords": null,
     "keywords_cn": null,
     "keywords_ja": null,
-    "slug": "nocobase-story",
+    "slug": "nocobase-stories",
     "sort": 262,
     "title": "NocoBase story",
     "title_cn": "NocoBase 故事",
     "title_ja": "NocoBaseストーリー",
+    "updatedById": 1
+  },
+  {
+    "createdAt": "2026-06-15T06:17:12.890Z",
+    "updatedAt": "2026-06-15T06:17:12.890Z",
+    "createdById": 1,
+    "description": null,
+    "description_cn": null,
+    "description_ja": null,
+    "displayOnBlog": null,
+    "displayOnPage": null,
+    "id": 265,
+    "keywords": null,
+    "keywords_cn": null,
+    "keywords_ja": null,
+    "slug": null,
+    "sort": 263,
+    "title": "AI",
+    "title_cn": "AI",
+    "title_ja": "AI",
     "updatedById": 1
   }
 ]
