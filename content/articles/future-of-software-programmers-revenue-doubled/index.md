@@ -89,6 +89,8 @@ And soon after that, we started receiving strong positive feedback from several 
 
 One pharmaceutical company, with more than 20,000 employees and dozens of subsidiaries, had begun promoting AI coding across the whole company months earlier. In the process, they had done a great deal of engineering work to deal with hallucinations, limited context windows, and architectural drift, all the problems that make long-term stable iteration so difficult. Even then, the results were not encouraging. Eventually, they concluded that a more sensible approach was to develop on top of a scaffold suited to AI, one that would preserve efficiency and flexibility while also placing strong constraints on AI behavior. After spending several weeks testing NocoBase, they concluded that NocoBase was exactly that kind of infrastructure.
 
+![Image](https://static-docs.nocobase.com/9e12b2620ae5f9cf6f87482473f4c07a.jpg)`
+
 Another top-tier new energy company in the wind power sector used NocoBase inside a single team for several months, then formally rolled it out across the entire company, to tens of thousands of employees, as an AI development platform. It has since gone into production in key scenarios such as review workflows, project management, and AI portals, allowing AI to create dependable value in those areas. They also have more than enough technical and business experts, the most advanced models, and essentially unlimited tokens. But spending time and resources on low-level infrastructure that does not generate returns is simply not worth it. Once they adopted NocoBase, they were able to focus most of their energy on the business itself.
 
 ## What We Do Next
