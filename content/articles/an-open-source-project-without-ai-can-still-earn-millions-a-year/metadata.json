@@ -220,7 +220,7 @@
     },
     {
       "createdAt": "2026-06-15T04:28:32.544Z",
-      "updatedAt": "2026-06-15T04:32:29.671Z",
+      "updatedAt": "2026-06-15T06:05:18.244Z",
       "id": 264,
       "title": "NocoBase story",
       "title_cn": "NocoBase 故事",
@@ -228,7 +228,7 @@
       "description": "The growth journey of NocoBase and our team. Recording our major milestones, product iterations, and the stories behind the development.",
       "description_cn": "NocoBase 产品和团队的成长历程。记录我们的主要里程碑、版本迭代以及幕后的开发故事。",
       "displayOnPage": true,
-      "slug": "nocobase-story",
+      "slug": "nocobase-stories",
       "displayOnBlog": true,
       "keywords": null,
       "keywords_cn": null,
