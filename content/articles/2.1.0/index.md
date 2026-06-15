@@ -1,5 +1,3 @@
-# NocoBase 2.1 Release Notes
-
 NocoBase 2.1 is a major upgrade to **AI capabilities, multi-app, and 2.0 adaptation**. We've introduced the NocoBase CLI, making it easy for both people and AI Agents to connect to and manage NocoBase applications. From creating applications and AI-assisted building to enhanced AI Employees and an AI development plugin, it covers the full flow from environment onboarding to system building and business collaboration. We've also enhanced multi-app capabilities to make interaction and collaboration across apps easier. At the same time, we've added version control and continued to substantially round out 2.0 page support and core capabilities — more blocks, fields, actions, and plugins now support 2.0.
 
 ## What's New
