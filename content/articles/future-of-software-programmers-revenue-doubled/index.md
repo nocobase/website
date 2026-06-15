@@ -140,3 +140,5 @@ NocoBase 2.1 was released last week. Try connecting your AI agent to NocoBase an
 <video controls>
   <source src="https://static-docs.nocobase.com/NocoBase-v2.2-EN.mp4" type="video/mp4">
 </video>
+
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
