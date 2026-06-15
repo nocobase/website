@@ -139,8 +139,8 @@ Salesforce のようなアプリケーションをもう一度作り、独占を
 
 NocoBase 2.1 は先週リリースされました。ぜひあなたの AI Agent を NocoBase につないで、実際に体験してみてください。
 
+GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
+
 <video controls>
   <source src="https://static-docs.nocobase.com/NocoBase-v2.2-JA.mp4" type="video/mp4">
 </video>
-
-GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
