@@ -1,5 +1,6 @@
 ---
 import ShapeFooter from "../components/ShapeFooter.astro";
+import HreflangLinks from "../components/HreflangLinks.astro";
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import DocSearch from "../components/DocSearch.astro";
 import { listLightSolutions } from "../utils";
@@ -91,20 +92,11 @@ const meta = {
     <!-- Canonical -->
     <link rel="canonical" href={new URL(urlTW, Astro.site)} />
 
-    <link rel="alternate" href={new URL(urlEN, Astro.site)} hreflang="en-us">
-    <link rel="alternate" href={new URL(urlES, Astro.site)} hreflang="es-es">
-    <link rel="alternate" href={new URL(urlPT, Astro.site)} hreflang="pt-br">
-    <link rel="alternate" href={new URL(urlID, Astro.site)} hreflang="id-id">
-    <link rel="alternate" href={new URL(urlVI, Astro.site)} hreflang="vi-vn">
-    <link rel="alternate" href={new URL(urlDE, Astro.site)} hreflang="de-de">
-    <link rel="alternate" href={new URL(urlCN, Astro.site)} hreflang="zh-cn">
-    <link rel="alternate" href={new URL(urlTW, Astro.site)} hreflang="zh-tw">
-    <link rel="alternate" href={new URL(urlJA, Astro.site)} hreflang="ja-jp">
-    <link rel="alternate" href={new URL(urlFR, Astro.site)} hreflang="fr-FR">
+    <HreflangLinks pathname={Astro.url.pathname} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={new URL(urlTW, Astro.site)} />
     <meta property="og:title" content={meta.title} />
     <meta property="og:description" content={meta.description} />
     <meta property="og:image" content={meta.image} />
@@ -112,7 +104,7 @@ const meta = {
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={Astro.url} />
+    <meta name="twitter:url" content={new URL(urlTW, Astro.site)} />
     <meta name="twitter:title" content={meta.title} />
     <meta name="twitter:description" content={meta.description} />
     <meta name="twitter:image" content={meta.image} />
@@ -660,7 +652,7 @@ const meta = {
                   <h5 class="footer-head">Resources</h5>
                   <ul class="list-unstyled footer-list mt-4">
                     <li>
-                      <a href="https://docs-cn.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 文檔</a>
+                      <a href="https://docs.nocobase.com/cn/" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 文檔</a>
                     </li>
                     <!-- <li>
                       <a href="/tw/help" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 幫助中心</a>

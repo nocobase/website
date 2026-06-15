@@ -1,0 +1,37 @@
+---
+// Renders hreflang alternate links for every supported locale plus x-default.
+// Self-contained: derives each locale URL from the current pathname so all
+// language layouts share one source of truth.
+const { pathname } = Astro.props;
+
+const LOCALES = [
+  { code: "en", hreflang: "en-us" },
+  { code: "cn", hreflang: "zh-cn" },
+  { code: "tw", hreflang: "zh-tw" },
+  { code: "ja", hreflang: "ja-jp" },
+  { code: "fr", hreflang: "fr-FR" },
+  { code: "es", hreflang: "es-es" },
+  { code: "de", hreflang: "de-de" },
+  { code: "pt", hreflang: "pt-br" },
+  { code: "id", hreflang: "id-id" },
+  { code: "vi", hreflang: "vi-vn" },
+  { code: "ru", hreflang: "ru-ru" },
+];
+
+const codes = LOCALES.map((l) => l.code);
+const langPrefixRegex = new RegExp(`^/(${codes.join("|")})(/|$)`);
+
+const pathFor = (lang) => {
+  let p = langPrefixRegex.test(pathname)
+    ? pathname.replace(langPrefixRegex, `/${lang}/`)
+    : `/${lang}${pathname}`;
+  p = p.replace(/\/$/, "");
+  // The English homepage lives at the site root.
+  if (p === "" || p === "/en") p = "/";
+  return p;
+};
+---
+{LOCALES.map((l) => (
+  <link rel="alternate" href={new URL(pathFor(l.code), Astro.site)} hreflang={l.hreflang} />
+))}
+<link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
