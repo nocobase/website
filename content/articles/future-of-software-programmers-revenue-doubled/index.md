@@ -1,6 +1,6 @@
 ## Background
 
-Six months ago, when we released NocoBase 2.0, we published our second recap: [An Open-Source Project Without AI Can Still Earn Millions a Year](https://www.nocobase.com/en/blog/an-open-source-project-without-ai-can-still-earn-millions-a-year). At that point, NocoBase had already reached **around \$1.4 million in annual revenue**.
+Six months ago, when we released NocoBase 2.0, we published our second recap: [An Open-Source Project Without AI Can Still Earn Millions a Year](https://www.nocobase.com/en/blog/an-open-source-project-without-ai-can-still-earn-millions-a-year). At that point, NocoBase had already reached around $1.4 million in annual revenue.
 
 The plan had been simple: one recap a year, sharing NocoBase's growth as it happened. This third piece was supposed to wait until the end of this year, when NocoBase 3.0 comes out. But the world is changing too fast. AI is hitting this industry with a new shock wave almost every day. In a jolt like this, NocoBase was never going to remain untouched. We have been pulled, over and over, into all kinds of uncertainty.
 
