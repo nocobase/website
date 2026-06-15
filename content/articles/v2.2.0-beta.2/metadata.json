@@ -1,14 +1,14 @@
 {
   "id": 1087,
-  "title": "NocoBase v2.2.0-beta.2",
-  "title_cn": "NocoBase v2.2.0-beta.2",
-  "title_ja": null,
+  "title": "NocoBase v2.2.0-beta.2: Added an external vector store configuration form for AI knowledge bases",
+  "title_cn": "NocoBase v2.2.0-beta.2：为 AI 知识库新增外部向量存储配置表单",
+  "title_ja": "NocoBase v2.2.0-beta.2：AI ナレッジベース向けに外部ベクトルストア設定フォームを追加しました",
   "description": "Release Note of v2.2.0-beta.2",
   "description_cn": "v2.2.0-beta.2 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.2.0-beta.2 リリースノート",
   "slug": "v2.2.0-beta.2",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-06-13T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 22,
+      "article_sub_tags": {
+        "createdAt": "2026-06-15T16:06:20.798Z",
+        "updatedAt": "2026-06-15T16:06:20.798Z",
+        "articles_id": 1087,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-06-15T15:52:09.197Z",
+    "updatedAt": "2026-06-15T15:52:09.201Z",
+    "id": 2565,
+    "title": "next_ 需要确保文字都在虚线内 (4)",
+    "filename": "next_ 需要确保文字都在虚线内 (4)-s5lhkw.jpg",
+    "extname": ".jpg",
+    "size": 233939,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(4)-s5lhkw.jpg",
+    "preview": "https://static-docs.nocobase.com/next_%20%E9%9C%80%E8%A6%81%E7%A1%AE%E4%BF%9D%E6%96%87%E5%AD%97%E9%83%BD%E5%9C%A8%E8%99%9A%E7%BA%BF%E5%86%85%20(4)-s5lhkw.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-06-13T08:42:32.995Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-06-15T16:06:20.787Z"
 }
