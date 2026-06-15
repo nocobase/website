@@ -29,8 +29,6 @@ Now that the revenue figure is becoming more substantial, we will stop disclosin
 
 In the first five months of 2026, our revenue was exactly double what it was in the same period of 2025. In our best month so far, monthly revenue alone had already reached our entire revenue for all of 2024.
 
-The biggest change inside that number is this: revenue from outside mainland China has now risen to 50%. In the previous cycle, it was below 40%. That means our recognition is becoming much more global.
-
 But if I am being honest about how it felt from the inside, this was not the result of some smooth, graceful curve upward. It came after a major turn.
 
 ## Were We About to Be Killed?
