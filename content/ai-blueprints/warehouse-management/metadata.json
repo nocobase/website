@@ -2,8 +2,8 @@
   "id": 369401672695808,
   "title": "Warehouse Management System",
   "title_cn": "仓库管理",
-  "description": "Build a customizable warehouse management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate zone management, storage location management, rack management, capacity utilization, inbound/outbound records, transfer flows, and a warehouse operations dashboard — not just a prototype, but a customizable, reliable business system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的仓库管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成库区管理、库位管理、货架管理、库容利用率、入库出库记录、调拨流程和仓库运营看板，不只是生成原型，而是构建可定制、可靠、可长期迭代的业务系统。",
+  "description": "Generate an AI-powered warehouse management system for bin locations, stock moves, and more.",
+  "description_cn": "用 AI 生成仓库管理系统，支持库位管理、出入库记录等操作。",
   "slug": "warehouse-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:43.224Z",
-        "updatedAt": "2026-06-11T09:00:43.224Z",
+        "updatedAt": "2026-06-17T13:54:24.237Z",
         "tagId": 259,
         "solutionId": 369401672695808
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Warehouse Management: a warehouse / location / stock three-tier model with a location tree and an inventory dashboard. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html",
-  "updatedAt": "2026-06-12T13:59:01.908Z",
+  "updatedAt": "2026-06-17T13:54:24.245Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 仓库管理:仓库/库位/库存三层模型,带库位树和库存看板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html"
 }
