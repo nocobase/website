@@ -2,8 +2,8 @@
   "id": 369402094223360,
   "title": "Leave Management",
   "title_cn": "请假管理",
-  "description": "Build a customizable employee leave management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate leave requests, annual leave balances, working-day calculations, approval status, a team leave calendar, and AI department leave analysis — not just a prototype, but a customizable, reliable leave management system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工请假管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成请假申请、年假余额、工作日计算、审批状态、团队请假日历和 AI 部门休假分析，不只是生成原型，而是构建可定制、可靠、可长期迭代的请假管理系统。",
+  "description": "Connect AI Agents to NocoBase and use natural language to generate an employee leave management system for leave requests, balances, approvals, and team calendars.",
+  "description_cn": "将 AI Agent 接入 NocoBase，用自然语言生成员工请假管理系统，覆盖请假申请、年假余额、审批流程和团队日历，快速搭建可迭代的企业业务系统。",
   "slug": "employee-leave-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:04:04.531Z",
-        "updatedAt": "2026-06-11T09:04:04.531Z",
+        "updatedAt": "2026-06-17T10:35:19.306Z",
         "tagId": 260,
         "solutionId": 369402094223360
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Leave Management: a multi-select calendar with pills, a balance dashboard, and a request ledger. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/18-leave-management.html",
-  "updatedAt": "2026-06-12T13:59:06.641Z",
+  "updatedAt": "2026-06-17T10:35:19.322Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 请假管理:带标签的多选日历、余额看板和请假台账。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/18-leave-management.html"
 }
