@@ -2,8 +2,8 @@
   "id": 369401953714176,
   "title": "Contact management system",
   "title_cn": "联系人管理",
-  "description": "Build a customizable employee contact management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, or OpenCode to NocoBase and use natural language to generate an employee directory with department filters, name search, job titles, work locations, employment types, and contact management. AI can automatically extract and translate employee profiles, giving you a customizable, reliable, and continuously evolvable employee directory system.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工联系人管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成员工通讯录、部门筛选、姓名搜索、职位、工作地点、用工类型和联系方式管理，并通过 AI 自动提取和翻译员工资料，构建可定制、可靠、可长期迭代的员工目录系统。",
+  "description": "Create an employee directory in the NocoBase no-code platform to manage profiles, departments, and contacts.",
+  "description_cn": "在 NocoBase 无代码平台中搭建员工通讯录，集中管理员工信息、部门和联系方式。",
   "slug": "employee-directory",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:02:57.574Z",
-        "updatedAt": "2026-06-11T09:02:57.574Z",
+        "updatedAt": "2026-06-17T13:42:26.835Z",
         "tagId": 263,
         "solutionId": 369401953714176
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Directory: a search hero, multi-select facets, and avatar cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/19-employee-directory.html",
-  "updatedAt": "2026-06-12T13:59:05.270Z",
+  "updatedAt": "2026-06-17T13:42:26.842Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 员工通讯录:搜索主区、多选筛选面板和头像卡片。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/19-employee-directory.html"
 }
