@@ -2,8 +2,8 @@
   "id": 369401718833152,
   "title": "SLA Management",
   "title_cn": "SLA 管理",
-  "description": "Build a customizable SLA management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate SLA monitoring dashboards, at-risk tickets, breach alerts, response deadlines, resolution deadlines, priority analysis, and attainment statistics — not just a prototype, but a customizable, reliable, continuously evolvable service-level management system.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的 SLA 管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成 SLA 监控看板、高风险工单、违约提醒、响应时限、解决时限、优先级分析和达成率统计，不只是生成原型，而是构建可定制、可靠、可长期迭代的服务等级管理系统。",
+  "description": "Connect AI Agents to create an SLA management system for response limits, breach alerts, and key metrics.",
+  "description_cn": "接入 AI Agent 生成 SLA 管理系统，跟踪响应时限、违约提醒等关键指标。",
   "slug": "sla-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:05.215Z",
-        "updatedAt": "2026-06-11T09:01:05.215Z",
+        "updatedAt": "2026-06-17T13:53:21.302Z",
         "tagId": 262,
         "solutionId": 369401718833152
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — SLA Monitor: a KPI bar, a three-column war-room board, and countdown rings. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/17-sla-management.html",
-  "updatedAt": "2026-06-12T13:59:02.737Z",
+  "updatedAt": "2026-06-17T13:53:21.308Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— SLA 监控:KPI 栏、三列作战看板和倒计时圆环。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/17-sla-management.html"
 }
