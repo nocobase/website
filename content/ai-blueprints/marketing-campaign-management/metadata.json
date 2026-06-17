@@ -2,8 +2,8 @@
   "id": 369401651724288,
   "title": "Campaign Management",
   "title_cn": "营销活动管理",
-  "description": "Build a customizable campaign management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate a campaign timeline, budget management, channel allocation, spend tracking, conversion funnel, ROI analysis, and a marketing performance dashboard — not just a prototype, but a customizable, reliable marketing operations system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的营销活动管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成活动时间轴、预算管理、渠道分配、花费追踪、转化漏斗、ROI 分析和营销绩效看板，不只是生成原型，而是构建可定制、可靠、可长期迭代的营销运营系统。",
+  "description": "Manage budgets, ROI, and campaign progress with an AI marketing campaign system in NocoBase.",
+  "description_cn": "在 NocoBase 中搭建 AI 营销活动管理系统，跟踪预算、ROI 和活动进展。",
   "slug": "marketing-campaign-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:33.035Z",
-        "updatedAt": "2026-06-11T09:00:33.035Z",
+        "updatedAt": "2026-06-17T13:56:15.679Z",
         "tagId": 261,
         "solutionId": 369401651724288
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Campaign Command: a native gantt, KPI cards, donut charts, and data tables. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
-  "updatedAt": "2026-06-12T13:58:59.699Z",
+  "updatedAt": "2026-06-17T13:56:15.687Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 营销活动指挥台:原生甘特图、KPI 卡片、环形图和数据表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/16-campaign-management.html"
 }
