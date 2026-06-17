@@ -3,8 +3,8 @@
   "title": "AI workflow automation",
   "title_cn": "AI 工作流自动化",
   "title_ja": null,
-  "description": "Build a customizable AI workflow automation system with AI and NocoBase. Connect coding agents such as Claude Code, Codex, Cursor, and OpenCode to NocoBase, and use natural language to generate event triggers, condition checks, LLM processing, AI-employee execution, data updates, execution records, and visual flows — not just a prototype, but a customizable, reliable automation system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的 AI 工作流自动化系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成事件触发、条件判断、LLM 处理、AI 员工执行、数据更新、执行记录和可视化流程，不只是生成原型，而是构建可定制、可靠、可长期迭代的自动化系统。",
+  "description": "Build AI workflow automation in NocoBase with triggers, AI nodes, and flexible process configuration.",
+  "description_cn": "通过 NocoBase 搭建 AI 工作流自动化系统，支持触发器、AI 节点等流程配置。",
   "description_ja": null,
   "slug": "ai-workflow-automation",
   "publishedAt": "2026-06-11T08:00:00.000Z",
@@ -28,10 +28,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:03:07.503Z",
-        "updatedAt": "2026-06-11T09:03:07.503Z",
+        "updatedAt": "2026-06-17T13:51:15.794Z",
         "tagId": 263,
         "solutionId": 369401974685696
       }
@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — AI Workflows: native workflows with AI-employee nodes and an execution flow. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html",
-  "updatedAt": "2026-06-12T13:59:06.133Z",
+  "updatedAt": "2026-06-17T13:51:15.801Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— AI 工作流:原生工作流 + AI 员工节点和执行流程视图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html"
 }
