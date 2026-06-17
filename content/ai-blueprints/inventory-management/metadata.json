@@ -2,8 +2,8 @@
   "id": 369401620267008,
   "title": "Inventory Management",
   "title_cn": "库存管理",
-  "description": "Build a customizable inventory management system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, or OpenCode to NocoBase and use natural language to generate products, SKUs, inbound/outbound records, warehouse locations, low-stock alerts, and inventory dashboards — not just a prototype, but a customizable, reliable business system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的库存管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成商品、SKU、出入库记录、仓库位置、低库存预警和库存看板，不只是生成原型，而是构建可定制、可靠、可长期迭代的业务系统。",
+  "description": "Build an inventory management system with AI Agents for SKUs, low-stock alerts, and inventory control.",
+  "description_cn": "通过 AI Agent 搭建库存管理系统，覆盖 SKU、低库存预警等核心功能。",
   "slug": "inventory-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:18.336Z",
-        "updatedAt": "2026-06-11T09:00:18.336Z",
+        "updatedAt": "2026-06-17T13:56:27.037Z",
         "tagId": 259,
         "solutionId": 369401620267008
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Inventory Management: inbound/outbound linkage, status transitions, and summary charts. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/01-inventory-management.html",
-  "updatedAt": "2026-06-12T13:58:59.294Z",
+  "updatedAt": "2026-06-17T13:56:27.044Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 库存管理:出入库联动、状态流转和汇总图表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/01-inventory-management.html"
 }
