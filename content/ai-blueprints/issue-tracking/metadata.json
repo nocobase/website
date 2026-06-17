@@ -2,8 +2,8 @@
   "id": 369401750290432,
   "title": "Issue Tracking",
   "title_cn": "问题跟踪",
-  "description": "Build a customizable issue tracking system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase, then use natural language to generate project categories, epics and sub-tasks, statuses, priorities, assignee allocation, and AI issue analysis reports — a customizable, reliable issue management system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的问题跟踪系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成项目分类、Epic 与子任务、状态、优先级、负责人分配和 AI 问题分析报告，构建可定制、可靠、可长期迭代的问题管理系统。",
+  "description": "Create an adaptable issue tracking business system for product and engineering teams.",
+  "description_cn": "面向产品和研发团队，快速生成可迭代的问题跟踪企业业务系统。",
   "slug": "issue-tracking",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:20.308Z",
-        "updatedAt": "2026-06-11T09:01:20.308Z",
+        "updatedAt": "2026-06-17T13:52:38.375Z",
         "tagId": 262,
         "solutionId": 369401750290432
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Issue Tracking: a tree table with multi-select facets and checkbox columns. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/15-issue-tracking.html",
-  "updatedAt": "2026-06-12T13:59:03.986Z",
+  "updatedAt": "2026-06-17T13:52:38.386Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 问题跟踪:带多选筛选和复选框列的树形表格。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/15-issue-tracking.html"
 }
