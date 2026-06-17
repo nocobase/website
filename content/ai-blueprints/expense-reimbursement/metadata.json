@@ -2,8 +2,8 @@
   "id": 369401968394241,
   "title": "Expense Reimbursement",
   "title_cn": "费用报销",
-  "description": "Build a customizable expense reimbursement system with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate reimbursement requests, expense items, receipt linking, multi-stage approvals, multi-currency management, and AI monthly expense analysis — not just a prototype, but a customizable, reliable expense management system you can keep evolving.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的费用报销管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成报销单、费用明细、收据关联、多级审批、多币种管理和 AI 月度费用分析，不只是生成原型，而是构建可定制、可靠、可长期迭代的费用管理系统。",
+  "description": "Connect your preferred AI Agent to NocoBase to create an expense reimbursement system for claims and approvals.",
+  "description_cn": "接入你常用的 AI Agent，在 NocoBase 中生成费用报销系统，管理报销和审批流程。",
   "slug": "expense-reimbursement",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:03:04.303Z",
-        "updatedAt": "2026-06-11T09:03:04.303Z",
+        "updatedAt": "2026-06-17T13:51:32.909Z",
         "tagId": 263,
         "solutionId": 369401968394241
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Expense Reimbursement: a submission wizard, a my-reimbursements view, and approval progress. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html",
-  "updatedAt": "2026-06-12T13:59:05.705Z",
+  "updatedAt": "2026-06-17T13:51:32.917Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 费用报销:提交向导、我的报销视图和审批进度。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/33-expense-reimbursement.html"
 }
