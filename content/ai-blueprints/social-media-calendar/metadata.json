@@ -2,8 +2,8 @@
   "id": 369401609781248,
   "title": "Social Media Calendar",
   "title_cn": "社交媒体内容管理",
-  "description": "Build a customizable social media content calendar system with AI and NocoBase. Connect coding agents like Claude Code, Cursor, or OpenCode to NocoBase and use natural language to generate post composing, multi-channel previews, a publishing status kanban, and a scheduling calendar. Not just a prototype — a customizable, reliable social media operations system you can keep iterating on.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的社交媒体内容日历管理系统。将 Claude Code、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成帖子撰写、多渠道预览、发布状态看板、定时排程日历等功能。不只是生成原型，而是构建可定制、可靠、可长期迭代的社交媒体运营系统。",
+  "description": "Create a social media content calendar with NocoBase no-code platform for writing, scheduling, and publishing.",
+  "description_cn": "用开源无代码平台 NocoBase 生成社交媒体内容日历，管理帖子撰写和排程发布。",
   "slug": "social-media-calendar",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:13.655Z",
-        "updatedAt": "2026-06-11T09:00:13.655Z",
+        "updatedAt": "2026-06-17T13:56:53.590Z",
         "tagId": 261,
         "solutionId": 369401609781248
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Social Media Calendar: a post composer with a live phone preview and a scheduling calendar. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html",
-  "updatedAt": "2026-06-12T13:58:58.895Z",
+  "updatedAt": "2026-06-17T13:56:53.598Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 社媒日历:帖子编辑器 + 手机实时预览和排期日历。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html"
 }
