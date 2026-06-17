@@ -2,8 +2,8 @@
   "id": 369401662210048,
   "title": "Knowledge base software",
   "title_cn": "知识库",
-  "description": "Build a customizable knowledge base system with AI and NocoBase. Connect coding agents such as Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate a help center, article management, category navigation, search entry, publishing status, view statistics, and AI content analysis — not just a prototype, but a customizable, reliable business system you can iterate on long-term.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的知识库系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成帮助中心、文章管理、分类导航、搜索入口、发布状态、访问统计和 AI 内容分析，不只是生成原型，而是构建可定制、可靠、可长期迭代的业务系统。",
+  "description": "Build a team knowledge base with the NocoBase no-code platform for articles, categories, and navigation.",
+  "description_cn": "通过 NocoBase 无代码平台搭建团队知识库，管理文章内容和分类导航。",
   "slug": "knowledge-base",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:38.992Z",
-        "updatedAt": "2026-06-11T09:00:38.992Z",
+        "updatedAt": "2026-06-17T13:55:40.491Z",
         "tagId": 263,
         "solutionId": 369401662210048
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Knowledge Base: circular category cards with search-driven show/hide. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html",
-  "updatedAt": "2026-06-12T13:59:00.633Z",
+  "updatedAt": "2026-06-17T13:55:40.499Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 知识库:圆形分类卡片,随搜索显示/隐藏。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html"
 }
