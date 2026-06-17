@@ -2,8 +2,8 @@
   "id": 369401651724289,
   "title": "Attendance tracker",
   "title_cn": "考勤系统",
-  "description": "Build a customizable employee attendance system with AI and NocoBase: mobile clock-in/out, working hours, lateness and absence, leave and overtime, a monthly attendance matrix and department statistics — a real business system you can keep iterating on, not a one-off prototype.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工考勤管理系统。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成移动端打卡、上下班时间、工作时长、迟到缺勤、请假加班、月度考勤表和部门统计，不只是生成原型，而是构建可定制、可靠、可长期迭代的考勤系统。",
+  "description": "Use AI Agents to create an attendance management system for mobile check-ins and monthly records.",
+  "description_cn": "用 AI Agent 生成员工考勤管理系统，覆盖移动打卡、月度考勤等功能。",
   "slug": "employee-attendance-management",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:33.409Z",
-        "updatedAt": "2026-06-11T09:00:33.409Z",
+        "updatedAt": "2026-06-17T13:55:55.468Z",
         "tagId": 260,
         "solutionId": 369401651724289
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Attendance Tracker: attendance KPIs, a monthly heatmap, and dual donut charts for status distribution. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/13-attendance-tracker.html",
-  "updatedAt": "2026-06-12T13:59:00.135Z",
+  "updatedAt": "2026-06-17T13:55:55.476Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 考勤追踪:考勤 KPI、月度热力图和状态分布双环形图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/13-attendance-tracker.html"
 }
