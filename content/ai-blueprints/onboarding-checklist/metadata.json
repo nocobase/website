@@ -2,8 +2,8 @@
   "id": 369401668501504,
   "title": "Onboarding Checklist",
   "title_cn": "入职检查清单",
-  "description": "Build a customizable employee onboarding checklist with AI and NocoBase. Connect coding agents like Claude Code, Codex, Cursor, and OpenCode to NocoBase and use natural language to generate employee profiles, staged onboarding tasks, owners, due dates, completion progress, and AI onboarding plans — not just a prototype, but a customizable, reliable, and continuously evolvable employee onboarding system.",
-  "description_cn": "使用 AI 和 NocoBase 搭建可定制的员工入职检查清单。将 Claude Code、Codex、Cursor、OpenCode 等 Coding Agent 接入 NocoBase 后，可用自然语言生成员工档案、分阶段入职任务、负责人、截止日期、完成进度和 AI 入职计划，不只是生成原型，而是构建可定制、可靠、可长期迭代的员工入职系统。",
+  "description": "Create an onboarding checklist with AI Agents to track tasks, progress, and employee onboarding steps.",
+  "description_cn": "借助 AI Agent 创建员工入职检查清单，跟进入职任务和完成进度。",
   "slug": "onboarding-checklist",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
@@ -26,10 +26,10 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 9,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:41.744Z",
-        "updatedAt": "2026-06-11T09:00:41.744Z",
+        "updatedAt": "2026-06-17T13:54:50.859Z",
         "tagId": 260,
         "solutionId": 369401668501504
       }
@@ -54,6 +54,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Onboarding Checklist: an onboarding journey with progress tracking and a checklist dialog. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html",
-  "updatedAt": "2026-06-12T13:59:01.487Z",
+  "updatedAt": "2026-06-17T13:54:50.867Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 入职清单:带进度跟踪的入职旅程和清单弹窗。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html"
 }
