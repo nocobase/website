@@ -14,6 +14,8 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### [v2.1.9](https://www.nocobase.com/en/blog/v2.1.9)
 
+*Release date: 2026-06-20*
+
 ### 🚀 Improvements
 
 - **[client-v2]** Add override value option for field value settings. ([#9578](https://github.com/nocobase/nocobase/pull/9578)) by @gchust
