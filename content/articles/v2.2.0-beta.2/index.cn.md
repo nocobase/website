@@ -43,7 +43,7 @@
 - **[AI 员工]**
 
   - 修复 AI 员工对话框粘贴的附件无法删除问题。 ([#9753](https://github.com/nocobase/nocobase/pull/9753)) by @cgyrock
-  - 修复工作流LLM节点消息配置丢失问题. ([#9743](https://github.com/nocobase/nocobase/pull/9743)) by @cgyrock
+  - 修复工作流 LLM 节点消息配置丢失问题. ([#9743](https://github.com/nocobase/nocobase/pull/9743)) by @cgyrock
 - **[文件管理器]** 修复切换到 pdf.js 后部分 PDF 预览缺失中文/CID 字体文字的问题。 ([#9737](https://github.com/nocobase/nocobase/pull/9737)) by @mytharcher
 - **[API 文档]** 修复 API 文档插件声明文件构建失败的问题。 ([#9752](https://github.com/nocobase/nocobase/pull/9752)) by @katherinehhh
 - **[操作：导入记录 Pro]** 避免 Pro 导入在创建异步任务前于请求节点解析大文件。 by @mytharcher
