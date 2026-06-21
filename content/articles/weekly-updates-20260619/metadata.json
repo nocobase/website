@@ -3,11 +3,11 @@
   "title": "Weekly Updates｜Add External Vector Store Configuration Form for AI Knowledge Bases",
   "title_cn": "本周更新｜为 AI 知识库新增外部向量存储配置表单",
   "title_ja": "今週の更新｜为 AI 知识库追加しました外部向量存储設定フォーム",
-  "description": "This is a summary of NocoBase feature updates and improvements from June 12 to June 19, 2026.",
-  "description_cn": "汇总了 2026.06.12-06.19 期间 NocoBase 的功能更新与改进。",
-  "description_ja": "2026.06.12-06.19 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
+  "description": "This is a summary of NocoBase feature updates and improvements from June 12 to June 21, 2026.",
+  "description_cn": "汇总了 2026.06.12-06.21 期间 NocoBase 的功能更新与改进。",
+  "description_ja": "2026.06.12-06.21 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260619",
-  "publishedAt": "2026-06-18T19:21:11.000Z",
+  "publishedAt": "2026-06-20T19:21:11.000Z",
   "status": "published",
   "tags": [
     {
@@ -93,18 +93,18 @@
   ],
   "category": null,
   "cover": {
-    "createdAt": "2026-06-18T19:48:05.304Z",
-    "updatedAt": "2026-06-18T19:48:05.310Z",
-    "id": 2571,
-    "title": "每周汇总",
-    "filename": "每周汇总-2nazqb.jpg",
+    "createdAt": "2026-06-21T06:13:13.897Z",
+    "updatedAt": "2026-06-21T06:13:13.903Z",
+    "id": 2573,
+    "title": "每周汇总 (6)",
+    "filename": "每周汇总 (6)-7qk89d.jpg",
     "extname": ".jpg",
-    "size": 101521,
+    "size": 98082,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-2nazqb.jpg",
-    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB-2nazqb.jpg",
+    "url": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(6)-7qk89d.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%AF%8F%E5%91%A8%E6%B1%87%E6%80%BB%20(6)-7qk89d.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -115,5 +115,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-06-18T20:07:21.353Z"
+  "updatedAt": "2026-06-21T06:16:30.710Z"
 }
