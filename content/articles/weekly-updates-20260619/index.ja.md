@@ -14,6 +14,8 @@
 
 ### [v2.1.9](https://www.nocobase.com/ja/blog/v2.1.9)
 
+*リリース日：2026-06-20*
+
 ### 🚀 機能改善
 
 * **[client-v2]** フォーム値の設定に、値を上書きするオプションを追加しました。 ([#9578](https://github.com/nocobase/nocobase/pull/9578)) by @gchust
