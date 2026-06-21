@@ -16,6 +16,8 @@
 
 ### [v2.1.9](https://www.nocobase.com/cn/blog/v2.1.9)
 
+*发布日期：2026-06-20*
+
 ### 🚀 优化
 
 - **[client-v2]** 表单值配置新增覆盖值选项。 ([#9578](https://github.com/nocobase/nocobase/pull/9578)) by @gchust
