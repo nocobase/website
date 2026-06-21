@@ -156,14 +156,14 @@
 - **[工作流：SQL 节点]** 修复部分 beta 版本用户跳过 SQL 工作流历史模板变量迁移的问题。 ([#9762](https://github.com/nocobase/nocobase/pull/9762)) by @mytharcher
 - **[AI 员工]**
 
-  - 修复工作流 LLM节点消息配置丢失问题。 ([#9743](https://github.com/nocobase/nocobase/pull/9743)) by @cgyrock
+  - 修复工作流 LLM 节点消息配置丢失问题。 ([#9743](https://github.com/nocobase/nocobase/pull/9743)) by @cgyrock
   - 修复 AI 员工对话框粘贴的附件无法删除问题。 ([#9753](https://github.com/nocobase/nocobase/pull/9753)) by @cgyrock
 - **[区块：看板]** 修复日历等弹窗支持URL ([#9751](https://github.com/nocobase/nocobase/pull/9751)) by @jiannx
 - **[工作流：审批]** 修复 v2 审批表单中关联数据显示不出来的问题 by @zhangzhonghe
 
 ### [v2.1.2](https://www.nocobase.com/cn/blog/v2.1.2)
 
-*发布日期：2026-06-12**
+*发布日期：2026-06-12*
 
 ### 🎉 新特性
 
