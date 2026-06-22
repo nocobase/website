@@ -1,0 +1,59 @@
+{
+  "id": 371463570653184,
+  "title": "Service Request Form",
+  "title_cn": "服务申请表",
+  "description": "Build a service request system with AI and NocoBase to manage categories, approvals, and progress through no-code tools.\n",
+  "description_cn": "用 AI 和 NocoBase 搭建服务申请系统，支持无代码管理分类、审批和处理进度。\n",
+  "slug": "service-request-system",
+  "publishedAt": "2026-06-22T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-11T08:50:58.595Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 22,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-22T18:07:13.184Z",
+        "updatedAt": "2026-06-22T18:07:13.184Z",
+        "tagId": 263,
+        "solutionId": 371463570653184
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-22T18:06:20.096Z",
+    "updatedAt": "2026-06-22T18:06:20.106Z",
+    "id": 2577,
+    "title": "Service Request Form1",
+    "filename": "Service Request Form1-5zl4pb.png",
+    "extname": ".png",
+    "size": 567659,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Service%20Request%20Form1-5zl4pb.png",
+    "preview": "https://static-docs.nocobase.com/Service%20Request%20Form1-5zl4pb.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-22T18:07:13.191Z"
+}
