@@ -1,0 +1,59 @@
+{
+  "id": 371458568749056,
+  "title": "Data Quality Monitoring",
+  "title_cn": "数据质量管理",
+  "description": "Build a no-code data quality monitoring system with NocoBase and AI Agents to manage rules, issues, and reports.",
+  "description_cn": "通过 NocoBase 和 AI Agent 搭建无代码数据质量监控系统，统一管理规则、异常和报告。",
+  "slug": "data-quality-monitoring",
+  "publishedAt": "2026-06-22T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-11T08:50:58.595Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 22,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-22T17:27:28.798Z",
+        "updatedAt": "2026-06-22T17:27:28.798Z",
+        "tagId": 263,
+        "solutionId": 371458568749056
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-22T16:59:10.090Z",
+    "updatedAt": "2026-06-22T16:59:10.102Z",
+    "id": 2574,
+    "title": "数据质量管理3",
+    "filename": "数据质量管理3-j4rpvw.png",
+    "extname": ".png",
+    "size": 612555,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%863-j4rpvw.png",
+    "preview": "https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%863-j4rpvw.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-22T17:32:31.419Z"
+}
