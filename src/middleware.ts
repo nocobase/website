@@ -1,23 +1,5 @@
 import { defineMiddleware } from 'astro:middleware';
 
-// Define which Russian pages should redirect to English
-const RUSSIAN_REDIRECT_PAGES = [
-  '/ru/tutorials',
-  '/ru/blog',
-  '/ru/tutorials/',
-  '/ru/blog/',
-  '/ru/partners',
-  '/ru/highlights',
-  '/ru/highlights/'
-];
-
-// Define patterns for dynamic routes that should redirect
-const RUSSIAN_REDIRECT_PATTERNS = [
-  /^\/ru\/tutorials\/.*$/,
-  /^\/ru\/blog\/.*$/,
-  /^\/ru\/highlights\/.*$/
-];
-
 // Define French pages that should redirect to English
 const FRENCH_REDIRECT_PATTERNS = [];
 
@@ -56,20 +38,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return context.redirect(`/${lang}/solutions/${MODULE_PAGE_MOVES[slug]}`, 301);
   }
 
-  // Check if the current path is a Russian page that should redirect
-  if (RUSSIAN_REDIRECT_PAGES.includes(pathname)) {
-    // Redirect to the English version
-    const englishPath = pathname.replace('/ru/', '/en/');
-    return context.redirect(englishPath, 301); // 301 for permanent redirect
-  }
-  
-  // Check if the current path matches any Russian redirect patterns
-  for (const pattern of RUSSIAN_REDIRECT_PATTERNS) {
-    if (pattern.test(pathname)) {
-      // Redirect to the English version
-      const englishPath = pathname.replace('/ru/', '/en/');
-      return context.redirect(englishPath, 301); // 301 for permanent redirect
-    }
+  // Russian locale removed from this site — permanently redirect all /ru/* to English
+  if (pathname === '/ru' || pathname.startsWith('/ru/')) {
+    const englishPath = pathname === '/ru' ? '/en' : pathname.replace(/^\/ru\//, '/en/');
+    return context.redirect(englishPath, 301);
   }
 
   // Check if the current path matches any French redirect patterns

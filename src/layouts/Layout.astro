@@ -9,7 +9,6 @@ import BaseLayoutID from "./BaseID.astro";
 import BaseLayoutVI from "./BaseVI.astro";
 import BaseLayoutDE from "./BaseDE.astro";
 import BaseLayoutTW from "./BaseTW.astro";
-import BaseLayoutRU from "./BaseRU.astro";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const cn = Astro.url.pathname == "/cn" || Astro.url.pathname.startsWith("/cn/");
@@ -21,7 +20,6 @@ const id = Astro.url.pathname == "/id" || Astro.url.pathname.startsWith("/id/");
 const vi = Astro.url.pathname == "/vi" || Astro.url.pathname.startsWith("/vi/");
 const de = Astro.url.pathname == "/de" || Astro.url.pathname.startsWith("/de/");
 const tw = Astro.url.pathname == "/tw" || Astro.url.pathname.startsWith("/tw/");
-const ru = Astro.url.pathname == "/ru" || Astro.url.pathname.startsWith("/ru/");
 const { title, description, keywords, image } = Astro.props;
 ---
 
@@ -107,15 +105,6 @@ const { title, description, keywords, image } = Astro.props;
     >
         <slot />
     </BaseLayoutJA>
-        ) : ru ? (
-    <BaseLayoutRU
-            title={title}
-            description={description}
-            image={image}
-            keywords={keywords}
-    >
-        <slot />
-    </BaseLayoutRU>
         ) : (
     <BaseLayoutEN
             title={title}

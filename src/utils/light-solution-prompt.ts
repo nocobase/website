@@ -68,14 +68,6 @@ const I18N = {
       'Antes de começar, siga o <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">início rápido do agente de IA</a> para instalar o NocoBase e conectar o seu agente. Os resultados de IA podem variar; dependendo do modelo e da complexidade do sistema, alguns ajustes ou rodadas adicionais podem ser necessários.',
     comingSoon: 'Prompt em breve.',
   },
-  ru: {
-    heading: 'Создайте систему с помощью AI-агента',
-    note: 'Ссылка на прототип (HTML) в промпте ниже — это заранее подготовленный нами дизайн, только для демонстрации возможностей; NocoBase не рекомендует генерировать целую систему одним промптом. При сборке используйте его вместе со skill «prototype reproduction» (nocobase-prototype-repro) из NocoBase Skills, чтобы получить хороший результат.',
-    copy: 'Скопировать промпт',
-    footer:
-      'Прежде чем начать, выполните инструкции из <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">быстрого старта для AI-агента</a>, чтобы установить NocoBase и подключить агент. Результаты AI могут различаться; в зависимости от модели и сложности системы может потребоваться точная настройка или несколько итераций.',
-    comingSoon: 'Промпт скоро появится.',
-  },
   tw: {
     heading: '用 AI Agent 搭建同款系統',
     note: '下方 prompt 裡附的原型連結（HTML）是我們預先做好的設計，僅作能力展示，NocoBase 並不建議「一句話生成整套系統」。使用它進行搭建時，需要搭配 NocoBase Skill 中的「原型解析」（nocobase-prototype-repro），才能得到比較好的效果。',
