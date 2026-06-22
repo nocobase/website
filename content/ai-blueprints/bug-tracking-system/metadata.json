@@ -1,0 +1,59 @@
+{
+  "id": 371460330356736,
+  "title": "Bug Tracking System",
+  "title_cn": "Bug 跟踪系统",
+  "description": "Build a Bug tracking system in NocoBase with AI Agent to manage defects, reproduction details, releases, and risk dashboards.",
+  "description_cn": "借助 AI Agent 和 NocoBase 搭建 Bug 跟踪系统，无代码管理缺陷、复现、版本修复和风险看板。\n",
+  "slug": "bug-tracking-system",
+  "publishedAt": "2026-06-22T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-11T08:50:58.595Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 22,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-22T17:41:28.656Z",
+        "updatedAt": "2026-06-22T17:41:28.656Z",
+        "tagId": 263,
+        "solutionId": 371460330356736
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-22T17:33:18.985Z",
+    "updatedAt": "2026-06-22T17:33:18.993Z",
+    "id": 2575,
+    "title": "Bug Tracking System5",
+    "filename": "Bug Tracking System5-gp7z7r.png",
+    "extname": ".png",
+    "size": 704136,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Bug%20Tracking%20System5-gp7z7r.png",
+    "preview": "https://static-docs.nocobase.com/Bug%20Tracking%20System5-gp7z7r.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-22T17:41:28.662Z"
+}
