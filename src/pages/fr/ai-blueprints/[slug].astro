@@ -25,14 +25,6 @@ const related = allSolutions
   })
   .slice(0, 5);
 
-// Nuage de tags : tags les plus fréquents dans tous les blueprints
-const tagCount = new Map<string, number>();
-for (const s of allSolutions) {
-  for (const tg of s.tags || []) {
-    if (tg.title) tagCount.set(tg.title, (tagCount.get(tg.title) || 0) + 1);
-  }
-}
-const topTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([label]) => label);
 
 // Invite intégrée : une ligne {{prompt}} isolée dans le corps est remplacée par la carte interactive ;
 // les articles sans marqueur affichent la carte en bas de page.
@@ -105,21 +97,15 @@ const tabs = [
                       )}
                       <div class="flex-1 ms-3 overflow-hidden">
                         <a href={`/fr/ai-blueprints/${s.slug}`} class="d-block related-title text-dark text-truncate">{s.title}</a>
-                        <small class="text-muted">
-                          <FormattedDate date={s.publishedAt || s.createdAt} locale="fr" />
-                        </small>
+                        {(s.tags || []).length > 0 && (
+                          <div class="related-tags">
+                            {(s.tags || []).slice(0, 2).map((t: any) => (
+                              <span class="related-tag">{t.title}</span>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-            {topTags.length > 0 && (
-              <div class="related-widget mt-4">
-                <h6 class="widget-title">Étiquettes</h6>
-                <div class="tagcloud mt-3">
-                  {topTags.map((label: string) => (
-                    <a href={`/fr/ai-blueprints?tag=${encodeURIComponent(label)}`} class="rounded">{label}</a>
                   ))}
                 </div>
               </div>
@@ -237,6 +223,24 @@ const tabs = [
     }
     .related-title:hover {
       color: #2f55d4 !important;
+    }
+    .related-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 3px;
+    }
+    .related-tag {
+      font-size: 11px;
+      padding: 1px 8px;
+      border-radius: 10px;
+      background: rgba(47, 85, 212, 0.08);
+      color: #2f55d4;
+      line-height: 1.6;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .tagcloud a {
       display: inline-block;
