@@ -1,0 +1,32 @@
+{
+  "id": 371812095950848,
+  "title": "Training Tracker",
+  "title_cn": "培训记录",
+  "description": "Build a training tracker with AI Agent and NocoBase to manage courses, schedules, and completion rates.\n",
+  "description_cn": "用 AI Agent 和 NocoBase 搭建培训记录系统，统一管理课程、排期和完成率。\n",
+  "slug": "training-tracker-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [],
+  "cover": {
+    "createdAt": "2026-06-24T16:15:36.947Z",
+    "updatedAt": "2026-06-24T16:15:36.952Z",
+    "id": 2583,
+    "title": "Training Tracker3",
+    "filename": "Training Tracker3-nrbfai.png",
+    "extname": ".png",
+    "size": 223752,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Training%20Tracker3-nrbfai.png",
+    "preview": "https://static-docs.nocobase.com/Training%20Tracker3-nrbfai.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 培训记录：课程目录、月/周/日培训日历、完成率看板和 AI 培训场次分析。布局和标志性视觉参照：https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:54:13.859Z"
+}
