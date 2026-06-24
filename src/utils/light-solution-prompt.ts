@@ -96,13 +96,13 @@ export function renderPromptSection(prompt: string | null | undefined, lang: str
   // The note refers to the prototype link inside the prompt, so it sits below
   // the prompt together with the footnote.
   const note = prompt && noteText
-    ? `<p class="prompt-footnote mb-2"><i class="uil uil-info-circle"></i> ${noteText}</p>`
+    ? `<p class="prompt-footnote mb-2">${noteText}</p>`
     : '';
 
   const inner = prompt
     ? `<pre id="solution-prompt" class="prompt-pre">${escapeHtml(prompt)}</pre>
     ${note}
-    <p class="prompt-footnote mb-0"><i class="uil uil-info-circle"></i> ${t.footer}</p>`
+    <p class="prompt-footnote mb-0">${t.footer}</p>`
     : `<p class="text-muted fst-italic mb-0">${t.comingSoon}</p>`;
 
   return `<div class="prompt-card card border-0 shadow mb-4">
