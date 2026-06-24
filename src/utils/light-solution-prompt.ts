@@ -96,7 +96,7 @@ export function renderPromptSection(prompt: string | null | undefined, lang: str
   // The note refers to the prototype link inside the prompt, so it sits below
   // the prompt together with the footnote.
   const note = prompt && noteText
-    ? `<div class="prompt-note"><i class="uil uil-info-circle"></i> ${noteText}</div>`
+    ? `<p class="prompt-footnote mb-2"><i class="uil uil-info-circle"></i> ${noteText}</p>`
     : '';
 
   const inner = prompt
