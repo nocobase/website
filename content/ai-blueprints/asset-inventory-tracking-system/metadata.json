@@ -2,11 +2,11 @@
   "id": 371815495434240,
   "title": "Asset Inventory Tracking",
   "title_cn": "资产库存跟踪",
-  "description": "Build an asset inventory tracking system with AI Agent and NocoBase to manage depreciation, maintenance, and utilization.\n",
-  "description_cn": "用 AI Agent 和 NocoBase 搭建资产库存跟踪系统，管理折旧、维护和利用率。\n",
+  "description": "Track asset records, depreciation curves, maintenance history, and utilization in NocoBase for long-term operations analysis.",
+  "description_cn": "将资产台账、折旧曲线、维护记录与利用率放进 NocoBase，支持长期资产运营分析。",
   "slug": "asset-inventory-tracking-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.060Z",
@@ -25,10 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T17:40:56.333Z",
         "updatedAt": "2026-06-24T17:40:56.333Z",
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 资产库存跟踪系统：资产台账、折旧曲线、维护历史和资产状态分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/22-asset-inventory.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T17:40:56.337Z"
+  "updatedAt": "2026-06-24T18:19:05.673Z"
 }
