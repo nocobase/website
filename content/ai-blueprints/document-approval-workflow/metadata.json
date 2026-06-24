@@ -2,11 +2,11 @@
   "id": 371819570200576,
   "title": "Document Approval Workflow",
   "title_cn": "文档审批工作流 ",
-  "description": "Build a document approval workflow with AI and NocoBase to manage approval stages, SLA risks, and signing progress.",
-  "description_cn": "通过 AI 与 NocoBase 搭建文档审批工作流，集中管理审批阶段、SLA 风险和签署进度。\n",
+  "description": "Track document approvals for contracts, purchases, and offers, while AI analyzes SLA pressure, financial risk, and signing bottlenecks.",
+  "description_cn": "文档审批工作流跟踪合同、采购和 Offer 的 SLA，AI 分析风险金额与签署瓶颈。",
   "slug": "document-approval-workflow",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.434Z",
@@ -25,10 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T17:38:14.107Z",
         "updatedAt": "2026-06-24T17:38:14.107Z",
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 文档审批工作流：审批看板、文档登记表、SLA 风险和 AI 审批分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/35-document-approval.html ",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T17:38:14.113Z"
+  "updatedAt": "2026-06-24T18:21:34.172Z"
 }
