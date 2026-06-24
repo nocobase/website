@@ -1,0 +1,32 @@
+{
+  "id": 371814792888320,
+  "title": "Candidate Tracking System",
+  "title_cn": "候选人管理系统",
+  "description": null,
+  "description_cn": null,
+  "slug": "candidate-tracking-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [],
+  "cover": {
+    "createdAt": "2026-06-24T16:36:52.109Z",
+    "updatedAt": "2026-06-24T16:36:52.116Z",
+    "id": 2584,
+    "title": "Candidate Tracking System 3",
+    "filename": "Candidate Tracking System 3-0okd1p.png",
+    "extname": ".png",
+    "size": 221860,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Candidate%20Tracking%20System%203-0okd1p.png",
+    "preview": "https://static-docs.nocobase.com/Candidate%20Tracking%20System%203-0okd1p.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": null,
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:38:29.481Z"
+}
