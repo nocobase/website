@@ -1,10 +1,12 @@
 {
   "createdAt": "2026-06-15T04:28:32.544Z",
-  "updatedAt": "2026-06-15T11:19:00.938Z",
+  "updatedAt": "2026-06-24T09:34:52.556Z",
   "createdById": 1,
   "description": "The growth journey of NocoBase and our team. Recording our major milestones, product iterations, and the stories behind the development.",
   "description_cn": "NocoBase 产品和团队的成长历程。记录我们的主要里程碑、版本迭代以及幕后的开发故事。",
   "description_ja": "NocoBaseのプロダクトとチームの歩み。主要なマイルストーン、製品のアップデート、そして開発の舞台裏にあるストーリーを記録しています。",
+  "displayOnAiBlueprint": true,
+  "displayOnAiBlueprintPage": true,
   "displayOnBlog": true,
   "displayOnPage": true,
   "id": 264,
@@ -16,5 +18,5 @@
   "title": "NocoBase stories",
   "title_cn": "NocoBase 故事",
   "title_ja": "NocoBaseストーリー",
-  "updatedById": 1
+  "updatedById": 9
 }
