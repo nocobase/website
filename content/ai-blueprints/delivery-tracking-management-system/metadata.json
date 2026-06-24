@@ -7,7 +7,36 @@
   "slug": "delivery-tracking-management-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
   "status": "drafted",
-  "tags": [],
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
+      "id": 259,
+      "title": "Inventory & Assets",
+      "title_cn": "资产与库存",
+      "sort": 257,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:42:16.527Z",
+        "updatedAt": "2026-06-24T17:42:16.527Z",
+        "tagId": 259,
+        "solutionId": 371811112386560
+      }
+    }
+  ],
   "cover": {
     "createdAt": "2026-06-24T16:07:16.849Z",
     "updatedAt": "2026-06-24T16:07:16.854Z",
@@ -28,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 配送跟踪管理：配送状态看板、运单详情、配送动态记录和 AI 面单识别填表。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T16:49:45.048Z"
+  "updatedAt": "2026-06-24T17:42:16.532Z"
 }
