@@ -193,6 +193,37 @@ function evaluateCondition(item: any, condition: any): boolean {
 }
 
 // Generic content loader with caching
+// AI Blueprint tag display flags live on the tag, not the solution. Read them
+// fresh from the synced tags file and override the (possibly stale) snapshot
+// embedded in each solution's metadata, so tag-level toggles take effect
+// without re-syncing every solution. Missing data defaults to "show".
+let _aiBlueprintTagFlags: Map<number, { displayOnAiBlueprint: boolean; displayOnAiBlueprintPage: boolean }> | null = null;
+function getAiBlueprintTagFlags() {
+  if (_aiBlueprintTagFlags) return _aiBlueprintTagFlags;
+  const tags = readJsonFile(path.join(CONFIG.contentRoot, 'tags', 'article-tags.json')) || [];
+  const map = new Map<number, { displayOnAiBlueprint: boolean; displayOnAiBlueprintPage: boolean }>();
+  for (const t of tags) {
+    map.set(t.id, {
+      displayOnAiBlueprint: t.displayOnAiBlueprint !== false,
+      displayOnAiBlueprintPage: t.displayOnAiBlueprintPage !== false
+    });
+  }
+  _aiBlueprintTagFlags = map;
+  return map;
+}
+function enrichAiBlueprintTags(tags: any[]) {
+  if (!Array.isArray(tags)) return [];
+  const flags = getAiBlueprintTagFlags();
+  return tags.map((t: any) => {
+    const f = flags.get(t.id);
+    return {
+      ...t,
+      displayOnAiBlueprint: f ? f.displayOnAiBlueprint : (t.displayOnAiBlueprint !== false),
+      displayOnAiBlueprintPage: f ? f.displayOnAiBlueprintPage : (t.displayOnAiBlueprintPage !== false)
+    };
+  });
+}
+
 async function loadContent(
   slug: string,
   contentType: 'articles' | 'tutorials' | 'releases' | 'pages' | 'ai-blueprints',
@@ -242,6 +273,10 @@ async function loadContent(
 
   // Merge metadata
   const metadata = { ...jsonMetadata, ...frontMatterMetadata };
+
+  if (contentType === 'ai-blueprints' && Array.isArray(metadata.tags)) {
+    metadata.tags = enrichAiBlueprintTags(metadata.tags);
+  }
 
   let result: any;
 
@@ -327,6 +362,10 @@ async function listContentItems(
       // Ensure tags is always an array
       if (!Array.isArray(metadata.tags)) {
         metadata.tags = [];
+      }
+
+      if (contentType === 'ai-blueprints') {
+        metadata.tags = enrichAiBlueprintTags(metadata.tags);
       }
 
       items.push(metadata);

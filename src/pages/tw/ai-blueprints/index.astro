@@ -9,7 +9,7 @@ const { data: solutions } = await listLightSolutions({ pageSize: 100 });
 // 篩選標籤來自方案實際使用的 tags（按出現順序）
 const tagTitles: string[] = [];
 for (const s of solutions) {
-  for (const t of s.tags || []) {
+  for (const t of (s.tags || []).filter((tg: any) => tg.displayOnAiBlueprint !== false)) {
     if (t.title && !tagTitles.includes(t.title)) tagTitles.push(t.title);
   }
 }
@@ -74,7 +74,7 @@ const categories = ["全部", ...tagTitles];
       <!-- Card grid -->
       <div class="row" id="solution-grid">
         {solutions.map((s: any) => (
-          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={(s.tags || []).map((t: any) => t.title).join(",")} data-search={[s.title, s.description, ...(s.tags || []).map((t: any) => t.title)].join(" ").toLowerCase()}>
+          <div class="col-lg-4 col-md-6 mt-4 pt-2 solution-item" data-categories={(s.tags || []).filter((tg: any) => tg.displayOnAiBlueprint !== false).map((t: any) => t.title).join(",")} data-search={[s.title, s.description, ...(s.tags || []).map((t: any) => t.title)].join(" ").toLowerCase()}>
             <div class="card border-0 shadow h-100 d-flex flex-column solution-card overflow-hidden">
               {s.cover?.url && (
                 <div class="sol-cover-wrap">
@@ -86,8 +86,7 @@ const categories = ["全部", ...tagTitles];
                 <p class="text-muted mt-2 sol-desc">{s.description}</p>
                 <a href={`/tw/ai-blueprints/${s.slug}`} class="text-primary small d-inline-block stretched-link">查看方案 <i class="uil uil-arrow-right"></i></a>
                 <div class="solution-tags mt-3 pt-3 border-top">
-                  {(s.tags || []).map((t: any) => <span class="sol-tag">{t.title}</span>)}
-                  {s.prompt && <span class="sol-tag sol-tag-status">附 Agent 提示詞</span>}
+                  {(s.tags || []).filter((tg: any) => tg.displayOnAiBlueprint !== false).map((t: any) => <span class="sol-tag">{t.title}</span>)}
                 </div>
               </div>
             </div>
@@ -162,10 +161,6 @@ const categories = ["全部", ...tagTitles];
       background: rgba(47, 85, 212, 0.1);
       color: #2f55d4;
       line-height: 1.6;
-    }
-    .sol-tag-status {
-      background: rgba(46, 202, 139, 0.12);
-      color: #2eca8b;
     }
     .sol-desc {
       display: -webkit-box;

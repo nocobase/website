@@ -25,15 +25,6 @@ const related = allSolutions
   })
   .slice(0, 5);
 
-// 标签云:全部方案中出现次数最多的标签
-const tagCount = new Map<string, number>();
-for (const s of allSolutions) {
-  for (const tg of s.tags || []) {
-    const label = tg.title_cn || tg.title;
-    if (label) tagCount.set(label, (tagCount.get(label) || 0) + 1);
-  }
-}
-const topTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([label]) => label);
 
 // 文档内嵌提示词:正文里独立一行的 {{prompt}} 渲染成提示词卡片;没有标记的文档回退到页面底部卡片
 const promptSectionHtml = renderPromptSection(data.prompt_cn || data.prompt, "cn");
@@ -75,7 +66,7 @@ const tabs = [
       <FormattedDate date={data.publishedAt || data.createdAt} />
     </div>
     <div class="solution-tags mt-2">
-      {(data.tags || []).map((t: any) => <span class="sol-tag">{t.title_cn || t.title}</span>)}
+      {(data.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).map((t: any) => <span class="sol-tag">{t.title_cn || t.title}</span>)}
     </div>
   </PageHeader>
   <section class="section bg-white-color">
@@ -105,21 +96,15 @@ const tabs = [
                       )}
                       <div class="flex-1 ms-3 overflow-hidden">
                         <a href={`/cn/ai-blueprints/${s.slug}`} class="d-block related-title text-dark text-truncate">{s.title_cn || s.title}</a>
-                        <small class="text-muted">
-                          <FormattedDate date={s.publishedAt || s.createdAt} locale="zh-cn" />
-                        </small>
+                        {(s.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).length > 0 && (
+                          <div class="related-tags">
+                            {(s.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).slice(0, 2).map((t: any) => (
+                              <span class="related-tag">{t.title_cn || t.title}</span>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-            {topTags.length > 0 && (
-              <div class="related-widget mt-4">
-                <h6 class="widget-title">标签</h6>
-                <div class="tagcloud mt-3">
-                  {topTags.map((label: string) => (
-                    <a href={`/cn/ai-blueprints?tag=${encodeURIComponent(label)}`} class="rounded">{label}</a>
                   ))}
                 </div>
               </div>
@@ -237,6 +222,24 @@ const tabs = [
     }
     .related-title:hover {
       color: #2f55d4 !important;
+    }
+    .related-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 3px;
+    }
+    .related-tag {
+      font-size: 11px;
+      padding: 1px 8px;
+      border-radius: 10px;
+      background: rgba(47, 85, 212, 0.08);
+      color: #2f55d4;
+      line-height: 1.6;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .tagcloud a {
       display: inline-block;
