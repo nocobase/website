@@ -2,11 +2,11 @@
   "id": 371819102535680,
   "title": "Employee Exit Checklist",
   "title_cn": "离职流程管理",
-  "description": "Build an employee offboarding workflow system with AI Agent and NocoBase to track tasks, access revocation, and asset returns.\n",
-  "description_cn": "用 AI Agent 和 NocoBase 搭建离职流程管理系统，统一跟进任务、权限回收与资产归还。\n",
+  "description": "Connect offboarding tasks, access removal, and asset returns into an enterprise workflow for controlled cross-department exits.",
+  "description_cn": "把离职任务、权限回收和资产归还串成企业业务系统，让跨部门 offboarding 更可控。",
   "slug": "employee-exit-checklist-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.434Z",
@@ -25,10 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T17:32:57.592Z",
         "updatedAt": "2026-06-24T17:32:57.592Z",
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 离职流程管理系统：阶段化离职任务、权限回收与资产归还跟踪。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T17:32:57.596Z"
+  "updatedAt": "2026-06-24T18:21:19.348Z"
 }
