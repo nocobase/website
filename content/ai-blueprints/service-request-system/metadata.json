@@ -6,15 +6,15 @@
   "description_cn": "用 AI 和 NocoBase 搭建服务申请系统，支持无代码管理分类、审批和处理进度。\n",
   "slug": "service-request-system",
   "publishedAt": "2026-06-22T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
-      "createdAt": "2026-06-11T08:50:58.595Z",
-      "updatedAt": "2026-06-11T08:50:58.595Z",
-      "id": 263,
-      "title": "Operations",
-      "title_cn": "运营协作",
-      "sort": 261,
+      "createdAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
+      "id": 262,
+      "title": "Support",
+      "title_cn": "客服与工单",
+      "sort": 260,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -26,11 +26,13 @@
       "description_ja": null,
       "keywords_ja": null,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "lightSolutionsTags": {
-        "createdAt": "2026-06-22T18:07:13.184Z",
-        "updatedAt": "2026-06-22T18:07:13.184Z",
-        "tagId": 263,
+        "createdAt": "2026-06-24T15:43:23.256Z",
+        "updatedAt": "2026-06-24T15:43:23.256Z",
+        "tagId": 262,
         "solutionId": 371463570653184
       }
     }
@@ -53,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "1",
+  "prompt": "用 NocoBase 搭建一个应用 —— 服务申请表：分步服务申请表单、分类选择、服务等级提示、审批要求、请求列表和 AI 服务申请分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/30-service-request.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-22T18:07:13.191Z"
+  "updatedAt": "2026-06-24T15:43:23.260Z"
 }
