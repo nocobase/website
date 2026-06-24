@@ -1,0 +1,61 @@
+{
+  "id": 371818058153984,
+  "title": "Network Monitoring Dashboard",
+  "title_cn": "网络监控看板",
+  "description": "A NOC-focused network monitoring dashboard using AI to analyze node availability, link risk, and live alerts.",
+  "description_cn": "面向 NOC 的网络监控看板，结合 AI 分析节点在线率、链路风险和实时告警。",
+  "slug": "network-monitoring-dashboard-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-24T15:41:04.872Z",
+      "updatedAt": "2026-06-24T15:41:04.872Z",
+      "id": 266,
+      "title": "IT & Data",
+      "title_cn": "IT&数据",
+      "sort": 264,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "IT・データ",
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 22,
+      "updatedById": 22,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:30:28.389Z",
+        "updatedAt": "2026-06-24T17:30:28.389Z",
+        "tagId": 266,
+        "solutionId": 371818058153984
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-24T17:03:21.045Z",
+    "updatedAt": "2026-06-24T17:03:21.052Z",
+    "id": 2589,
+    "title": "Network Monitoring dashboard1",
+    "filename": "Network Monitoring dashboard1-c2aq0e.PNG",
+    "extname": ".PNG",
+    "size": 224608,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Network%20Monitoring%20dashboard1-c2aq0e.PNG",
+    "preview": "https://static-docs.nocobase.com/Network%20Monitoring%20dashboard1-c2aq0e.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 网络监控看板：NOC 看板、节点状态、链路利用率、实时告警和 AI 健康报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T18:20:33.487Z"
+}
