@@ -67,7 +67,7 @@ const tabs = [
       <FormattedDate date={data.publishedAt || data.createdAt} locale="ja" />
     </div>
     <div class="solution-tags mt-2">
-      {(data.tags || []).map((t: any) => <span class="sol-tag">{t.title_ja || t.title}</span>)}
+      {(data.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).map((t: any) => <span class="sol-tag">{t.title_ja || t.title}</span>)}
     </div>
   </PageHeader>
   <section class="section bg-white-color">
@@ -97,9 +97,9 @@ const tabs = [
                       )}
                       <div class="flex-1 ms-3 overflow-hidden">
                         <a href={`/ja/ai-blueprints/${s.slug}`} class="d-block related-title text-dark text-truncate">{s.title_ja || s.title}</a>
-                        {(s.tags || []).length > 0 && (
+                        {(s.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).length > 0 && (
                           <div class="related-tags">
-                            {(s.tags || []).slice(0, 2).map((t: any) => (
+                            {(s.tags || []).filter((t: any) => t.displayOnAiBlueprintPage !== false).slice(0, 2).map((t: any) => (
                               <span class="related-tag">{t.title}</span>
                             ))}
                           </div>

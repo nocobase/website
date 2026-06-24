@@ -95,7 +95,7 @@ function trackGithubRequest() {
 // Helper function to get content created or updated in the last 15 hours
 async function getRecentContent(endpoint, options = {}) {
   return withRetry(async () => {
-    let url = `${baseURL}${endpoint}?pageSize=100`;
+    let url = `${baseURL}${endpoint}?pageSize=1000`;
     let finalFilter = null;
     let formattedDate = null;
     
