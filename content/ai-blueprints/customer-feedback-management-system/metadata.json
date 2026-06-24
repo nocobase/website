@@ -1,0 +1,61 @@
+{
+  "id": 371810485338112,
+  "title": "Customer Feedback Management",
+  "title_cn": "客户反馈管理",
+  "description": "Build a customer feedback management system with AI Agent and NocoBase to track NPS, sentiment, and improvement priorities.\n",
+  "description_cn": "用 AI Agent 和 NocoBase 搭建客户反馈管理系统，集中跟踪 NPS、情绪和改进方向。",
+  "slug": "customer-feedback-management-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
+      "id": 262,
+      "title": "Support",
+      "title_cn": "客服与工单",
+      "sort": 260,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T16:23:35.841Z",
+        "updatedAt": "2026-06-24T16:23:35.841Z",
+        "tagId": 262,
+        "solutionId": 371810485338112
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-24T16:03:50.653Z",
+    "updatedAt": "2026-06-24T16:03:50.666Z",
+    "id": 2580,
+    "title": "Customer Feedback Management2",
+    "filename": "Customer Feedback Management2-dwtbiu.PNG",
+    "extname": ".PNG",
+    "size": 253793,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Customer%20Feedback%20Management2-dwtbiu.PNG",
+    "preview": "https://static-docs.nocobase.com/Customer%20Feedback%20Management2-dwtbiu.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 客户反馈管理：NPS 总览看板、情绪筛选和 AI 反馈分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/27-customer-feedback.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:23:35.848Z"
+}
