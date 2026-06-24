@@ -1,0 +1,32 @@
+{
+  "id": 371815495434240,
+  "title": "Asset Inventory Tracking",
+  "title_cn": "资产库存跟踪",
+  "description": null,
+  "description_cn": null,
+  "slug": "asset-inventory-tracking-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [],
+  "cover": {
+    "createdAt": "2026-06-24T16:42:52.879Z",
+    "updatedAt": "2026-06-24T16:42:52.885Z",
+    "id": 2585,
+    "title": "Asset Inventory Tracking3",
+    "filename": "Asset Inventory Tracking3-yg4j8h.png",
+    "extname": ".png",
+    "size": 178765,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Asset%20Inventory%20Tracking3-yg4j8h.png",
+    "preview": "https://static-docs.nocobase.com/Asset%20Inventory%20Tracking3-yg4j8h.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:44:04.073Z"
+}
