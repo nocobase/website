@@ -559,9 +559,13 @@ async function syncRecentArticles() {
 async function syncRecentLightSolutions() {
   console.log('Syncing lightweight solutions...');
 
+  // Always full-resync solutions so tag changes (e.g. AI Blueprint display
+  // flags) propagate into each solution's embedded tags snapshot, even when
+  // only the tag — not the solution — was updated.
   const solutions = await getRecentContent('lightSolutions:list', {
     appends: ['cover', 'tags'],
-    sort: ['-updatedAt']
+    sort: ['-updatedAt'],
+    skipTimeFilter: true
   });
 
   if (!solutions.length) {
