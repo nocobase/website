@@ -1,0 +1,61 @@
+{
+  "id": 371819790401536,
+  "title": "Employee Information System",
+  "title_cn": "员工信息系统",
+  "description": "Build an employee information system with AI Agent and NocoBase to manage profiles, organization structure, and HR analytics.",
+  "description_cn": "通过 AI Agent 和 NocoBase 搭建员工信息系统，统一管理员工档案、组织结构和人力分析。\n",
+  "slug": "employee-information-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:40:24.377Z",
+        "updatedAt": "2026-06-24T17:40:24.377Z",
+        "tagId": 260,
+        "solutionId": 371819790401536
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-24T17:17:19.578Z",
+    "updatedAt": "2026-06-24T17:17:19.584Z",
+    "id": 2592,
+    "title": "Employee information system1",
+    "filename": "Employee information system1-ka5hmf.png",
+    "extname": ".png",
+    "size": 1011763,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Employee%20information%20system1-ka5hmf.png",
+    "preview": "https://static-docs.nocobase.com/Employee%20information%20system1-ka5hmf.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 员工信息系统：员工目录、部门筛选、员工档案详情和 CEO 视角人力结构分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/42-employee-information.html ",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T17:40:24.381Z"
+}
