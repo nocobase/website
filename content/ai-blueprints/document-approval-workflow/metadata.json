@@ -1,0 +1,61 @@
+{
+  "id": 371819570200576,
+  "title": "Document Approval Workflow",
+  "title_cn": "文档审批工作流 ",
+  "description": "Build a document approval workflow with AI and NocoBase to manage approval stages, SLA risks, and signing progress.",
+  "description_cn": "通过 AI 与 NocoBase 搭建文档审批工作流，集中管理审批阶段、SLA 风险和签署进度。\n",
+  "slug": "document-approval-workflow",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:38:14.107Z",
+        "updatedAt": "2026-06-24T17:38:14.107Z",
+        "tagId": 260,
+        "solutionId": 371819570200576
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-06-24T17:14:40.896Z",
+    "updatedAt": "2026-06-24T17:14:40.902Z",
+    "id": 2591,
+    "title": "Document approval workflow1",
+    "filename": "Document approval workflow1-9wbkox.PNG",
+    "extname": ".PNG",
+    "size": 202334,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Document%20approval%20workflow1-9wbkox.PNG",
+    "preview": "https://static-docs.nocobase.com/Document%20approval%20workflow1-9wbkox.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 文档审批工作流：审批看板、文档登记表、SLA 风险和 AI 审批分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/35-document-approval.html ",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T17:38:14.113Z"
+}
