@@ -87,7 +87,6 @@ const categories = ["Tous", ...tagTitles];
                 <a href={`/fr/ai-blueprints/${s.slug}`} class="text-primary small d-inline-block stretched-link">Voir le blueprint <i class="uil uil-arrow-right"></i></a>
                 <div class="solution-tags mt-3 pt-3 border-top">
                   {(s.tags || []).filter((tg: any) => tg.displayOnAiBlueprint !== false).map((t: any) => <span class="sol-tag">{t.title}</span>)}
-                  {s.prompt && <span class="sol-tag sol-tag-status">Invite agent IA</span>}
                 </div>
               </div>
             </div>
@@ -162,10 +161,6 @@ const categories = ["Tous", ...tagTitles];
       background: rgba(47, 85, 212, 0.1);
       color: #2f55d4;
       line-height: 1.6;
-    }
-    .sol-tag-status {
-      background: rgba(46, 202, 139, 0.12);
-      color: #2eca8b;
     }
     .sol-desc {
       display: -webkit-box;
