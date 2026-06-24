@@ -5699,13 +5699,13 @@
   },
   {
     "createdAt": "2026-06-15T06:17:12.890Z",
-    "updatedAt": "2026-06-24T12:43:09.337Z",
+    "updatedAt": "2026-06-24T12:53:17.960Z",
     "createdById": 1,
     "description": null,
     "description_cn": null,
     "description_ja": null,
-    "displayOnAiBlueprint": false,
-    "displayOnAiBlueprintPage": false,
+    "displayOnAiBlueprint": true,
+    "displayOnAiBlueprintPage": true,
     "displayOnBlog": null,
     "displayOnPage": null,
     "id": 265,
@@ -5717,6 +5717,6 @@
     "title": "AI",
     "title_cn": "AI",
     "title_ja": "AI",
-    "updatedById": 9
+    "updatedById": 1
   }
 ]
