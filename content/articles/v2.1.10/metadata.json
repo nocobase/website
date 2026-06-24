@@ -27,6 +27,8 @@
       "title_ja": "リリースノート",
       "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
       "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "displayOnAiBlueprint": null,
+      "displayOnAiBlueprintPage": null,
       "createdById": 1,
       "updatedById": 22,
       "articlesTags": {

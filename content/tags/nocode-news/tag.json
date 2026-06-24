@@ -1,10 +1,12 @@
 {
   "createdAt": "2024-07-09T12:38:10.829Z",
-  "updatedAt": "2026-01-20T12:55:24.969Z",
+  "updatedAt": "2026-06-24T09:34:51.928Z",
   "createdById": 1,
   "description": "Stay updated with the latest news in the AI, No-Code and Low-Code universe.",
   "description_cn": "AI、无代码、低代码等领域的最新信息。",
   "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
+  "displayOnAiBlueprint": true,
+  "displayOnAiBlueprintPage": true,
   "displayOnBlog": true,
   "displayOnPage": true,
   "id": 19,
@@ -16,5 +18,5 @@
   "title": "News",
   "title_cn": "资讯",
   "title_ja": "ニュース",
-  "updatedById": 1
+  "updatedById": 9
 }
