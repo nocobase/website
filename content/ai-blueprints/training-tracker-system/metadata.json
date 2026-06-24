@@ -7,7 +7,36 @@
   "slug": "training-tracker-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
   "status": "drafted",
-  "tags": [],
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:41:23.706Z",
+        "updatedAt": "2026-06-24T17:41:23.706Z",
+        "tagId": 260,
+        "solutionId": 371812095950848
+      }
+    }
+  ],
   "cover": {
     "createdAt": "2026-06-24T16:15:36.947Z",
     "updatedAt": "2026-06-24T16:15:36.952Z",
@@ -28,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 培训记录：课程目录、月/周/日培训日历、完成率看板和 AI 培训场次分析。布局和标志性视觉参照：https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T16:54:13.859Z"
+  "updatedAt": "2026-06-24T17:41:23.712Z"
 }
