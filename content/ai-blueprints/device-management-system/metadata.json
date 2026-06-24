@@ -1,0 +1,32 @@
+{
+  "id": 371811529719808,
+  "title": "Device Management",
+  "title_cn": "设备管理",
+  "description": "Build a device management system with AI Agent and NocoBase to track device status, compliance, warranties, and asset risks.\n",
+  "description_cn": "用 AI Agent 和 NocoBase 搭建设备管理系统，统一管理设备状态、合规与保修风险。\n",
+  "slug": "device-management-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [],
+  "cover": {
+    "createdAt": "2026-06-24T16:10:51.596Z",
+    "updatedAt": "2026-06-24T16:10:51.608Z",
+    "id": 2582,
+    "title": "Device Management3",
+    "filename": "Device Management3-fwux9s.PNG",
+    "extname": ".PNG",
+    "size": 311379,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Device%20Management3-fwux9s.PNG",
+    "preview": "https://static-docs.nocobase.com/Device%20Management3-fwux9s.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 设备管理：设备健康看板、安全合规标签、保修风险和 AI 资产标签识别。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/25-device-management.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:49:15.686Z"
+}
