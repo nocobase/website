@@ -2,8 +2,8 @@
   "id": 371810485338112,
   "title": "Customer Feedback Management",
   "title_cn": "客户反馈管理",
-  "description": "Build a customer feedback management system with AI Agent and NocoBase to track NPS, sentiment, and improvement priorities.\n",
-  "description_cn": "用 AI Agent 和 NocoBase 搭建客户反馈管理系统，集中跟踪 NPS、情绪和改进方向。",
+  "description": "Centralize feedback, NPS, and sentiment trends, while AI Agent turns customer voices into reusable insights.",
+  "description_cn": "集中管理客户反馈、NPS 与情绪趋势，让 AI Agent 帮团队沉淀可复盘的客户洞察。",
   "slug": "customer-feedback-management-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
   "status": "published",
@@ -25,10 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T16:23:35.841Z",
         "updatedAt": "2026-06-24T16:23:35.841Z",
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 客户反馈管理：NPS 总览看板、情绪筛选和 AI 反馈分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/27-customer-feedback.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T16:23:35.848Z"
+  "updatedAt": "2026-06-24T18:12:45.531Z"
 }
