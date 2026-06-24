@@ -2,11 +2,11 @@
   "id": 371816523038720,
   "title": "Employee Document Management",
   "title_cn": "员工档案管理",
-  "description": "Use AI and NocoBase to manage employee documents, expiration reminders, confidential files, and compliance risks.\n",
-  "description_cn": "用 AI 和 NocoBase 搭建员工档案管理系统，集中管理文件、到期提醒和合规风险。\n",
+  "description": "Manage employee contracts, certificates, and benefit documents while AI surfaces expiry risks and HR compliance gaps.",
+  "description_cn": "统一管理员工合同、证照和福利文件，用 AI 识别到期风险，提升 HR 档案合规性。",
   "slug": "employee-document-management-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.434Z",
@@ -25,10 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T17:25:14.898Z",
         "updatedAt": "2026-06-24T17:25:14.898Z",
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "用 NocoBase 搭建一个应用 —— 员工档案管理系统：文档库、档案分类、到期提醒和员工档案分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/37-employee-documents.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T17:25:14.907Z"
+  "updatedAt": "2026-06-24T18:19:48.484Z"
 }
