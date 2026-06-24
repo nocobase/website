@@ -2,11 +2,11 @@
   "id": 371815830978560,
   "title": "IT Asset Tracker",
   "title_cn": "IT 资产管理",
-  "description": "Build an IT asset management system with AI Agent and NocoBase to track inventory, warranties, checkouts, and repairs.\n",
-  "description_cn": "用 AI Agent 和 NocoBase 搭建 IT 资产管理系统，跟踪库存、质保、借还和维修。\n",
+  "description": "A nocode IT asset lifecycle system covering assignment, return, repair, warranty tracking, and movement reports.",
+  "description_cn": "面向 IT 资产生命周期的无代码管理系统，覆盖领用、归还、维修、质保和流转报告。",
   "slug": "it-asset-tracker-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-24T15:41:04.872Z",
@@ -25,10 +25,10 @@
       "title_ja": "IT・データ",
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 22,
-      "updatedById": 22,
       "displayOnAiBlueprint": true,
       "displayOnAiBlueprintPage": true,
+      "createdById": 22,
+      "updatedById": 22,
       "lightSolutionsTags": {
         "createdAt": "2026-06-24T17:21:08.547Z",
         "updatedAt": "2026-06-24T17:21:08.547Z",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "*用 NocoBase 搭建一个应用 —— IT 资产管理系统：资产生命周期、持有人关系、质保风险、流转记录和活动报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/41-it-asset-tracker.html",
+  "prompt": "用 NocoBase 搭建一个应用 —— IT 资产管理系统：资产生命周期、持有人关系、质保风险、流转记录和活动报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/41-it-asset-tracker.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T17:21:08.553Z"
+  "updatedAt": "2026-06-24T18:19:28.044Z"
 }
