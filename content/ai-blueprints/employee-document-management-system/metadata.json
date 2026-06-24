@@ -1,0 +1,32 @@
+{
+  "id": 371816523038720,
+  "title": "Employee Document Management",
+  "title_cn": "员工档案管理",
+  "description": null,
+  "description_cn": null,
+  "slug": "employee-document-management-system",
+  "publishedAt": "2026-06-24T16:00:00.000Z",
+  "status": "drafted",
+  "tags": [],
+  "cover": {
+    "createdAt": "2026-06-24T16:51:16.846Z",
+    "updatedAt": "2026-06-24T16:51:16.853Z",
+    "id": 2587,
+    "title": "employee document management1",
+    "filename": "employee document management1-yi5712.png",
+    "extname": ".png",
+    "size": 261272,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/employee%20document%20management1-yi5712.png",
+    "preview": "https://static-docs.nocobase.com/employee%20document%20management1-yi5712.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "1",
+  "prompt_cn": null,
+  "updatedAt": "2026-06-24T16:52:14.564Z"
+}
