@@ -2,12 +2,41 @@
   "id": 371814792888320,
   "title": "Candidate Tracking System",
   "title_cn": "候选人管理系统",
-  "description": null,
-  "description_cn": null,
+  "description": "Visualize the hiring pipeline from application to offer, with AI Agent highlighting priority candidates and follow-up actions.",
+  "description_cn": "招聘流程从投递到 Offer 全程看板化，AI Agent 辅助筛选重点候选人和跟进顺序。",
   "slug": "candidate-tracking-system",
   "publishedAt": "2026-06-24T16:00:00.000Z",
-  "status": "drafted",
-  "tags": [],
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-06-24T17:41:09.354Z",
+        "updatedAt": "2026-06-24T17:41:09.354Z",
+        "tagId": 260,
+        "solutionId": 371814792888320
+      }
+    }
+  ],
   "cover": {
     "createdAt": "2026-06-24T16:36:52.109Z",
     "updatedAt": "2026-06-24T16:36:52.116Z",
@@ -25,8 +54,8 @@
     "createdById": 22,
     "updatedById": 22
   },
-  "author": null,
-  "prompt": "1",
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 候选人管理系统：招聘流程看板、候选人评分、来源跟踪和 AI 推荐报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/29-candidate-tracking.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-24T16:38:29.481Z"
+  "updatedAt": "2026-06-24T18:18:45.989Z"
 }
