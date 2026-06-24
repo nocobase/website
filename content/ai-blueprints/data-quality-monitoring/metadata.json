@@ -6,15 +6,15 @@
   "description_cn": "通过 NocoBase 和 AI Agent 搭建无代码数据质量监控系统，统一管理规则、异常和报告。",
   "slug": "data-quality-monitoring",
   "publishedAt": "2026-06-22T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
-      "createdAt": "2026-06-11T08:50:58.595Z",
-      "updatedAt": "2026-06-11T08:50:58.595Z",
-      "id": 263,
-      "title": "Operations",
-      "title_cn": "运营协作",
-      "sort": 261,
+      "createdAt": "2026-06-24T15:41:04.872Z",
+      "updatedAt": "2026-06-24T15:41:04.872Z",
+      "id": 266,
+      "title": "IT & Data",
+      "title_cn": "IT&数据",
+      "sort": 264,
       "description": null,
       "description_cn": null,
       "displayOnPage": null,
@@ -22,15 +22,17 @@
       "displayOnBlog": null,
       "keywords": null,
       "keywords_cn": null,
-      "title_ja": null,
+      "title_ja": "IT・データ",
       "description_ja": null,
       "keywords_ja": null,
-      "createdById": 9,
+      "createdById": 22,
       "updatedById": 22,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "lightSolutionsTags": {
-        "createdAt": "2026-06-22T17:27:28.798Z",
-        "updatedAt": "2026-06-22T17:27:28.798Z",
-        "tagId": 263,
+        "createdAt": "2026-06-24T15:41:52.205Z",
+        "updatedAt": "2026-06-24T15:41:52.205Z",
+        "tagId": 266,
         "solutionId": 371458568749056
       }
     }
@@ -53,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "1",
+  "prompt": "用 NocoBase 搭建一个应用 —— 数据质量管理系统：质量总览看板、规则状态、异常列表、数据新鲜度、质量趋势和 AI 数据质量分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
   "prompt_cn": null,
-  "updatedAt": "2026-06-22T17:32:31.419Z"
+  "updatedAt": "2026-06-24T15:41:52.213Z"
 }
