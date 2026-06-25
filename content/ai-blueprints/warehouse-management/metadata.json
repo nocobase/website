@@ -1,7 +1,7 @@
 {
   "id": 369401672695808,
   "title": "Warehouse Management System",
-  "title_cn": "仓库管理",
+  "title_cn": "仓库管理系统",
   "description": "Generate an AI-powered warehouse management system for bin locations, stock moves, and more.",
   "description_cn": "用 AI 生成仓库管理系统，支持库位管理、出入库记录等操作。",
   "slug": "warehouse-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.060Z",
-      "updatedAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
       "id": 259,
       "title": "Inventory & Assets",
       "title_cn": "资产与库存",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:43.224Z",
         "updatedAt": "2026-06-17T13:54:24.237Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Warehouse Management: a warehouse / location / stock three-tier model with a location tree and an inventory dashboard. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html",
-  "updatedAt": "2026-06-17T13:54:24.245Z",
+  "prompt": "Build a NocoBase app — Warehouse Management System: a warehouse / location / stock three-tier model with a location tree and an inventory dashboard. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html",
+  "updatedAt": "2026-06-25T14:32:56.015Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 仓库管理:仓库/库位/库存三层模型,带库位树和库存看板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/06-warehouse-management.html"
 }
