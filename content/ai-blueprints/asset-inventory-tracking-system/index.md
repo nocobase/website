@@ -2,6 +2,8 @@
 
 An asset inventory tracking system is suitable for managing internal equipment, vehicles, machinery, warehouse assets, and operational assets. Teams can view total asset value, active assets, maintenance status, maintenance plans, and average utilization on one page, making it easier to understand whether the current asset portfolio is healthy.
 
+These records can also be managed as a NocoBase-based internal business system, with asset inventory, stock counts, locations, assignments, check-in records, asset categories, and inventory audits organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is built around an asset ledger. Each asset can record its name, asset tag, status, condition, purchase cost, book value, accumulated depreciation, and operating hours. The depreciation chart on the right tracks the financial value of a single asset, helping teams understand value changes, salvage value, and accumulated depreciation.
 
 On the asset detail page, the system can further show identity information, financial depreciation data, operational data, and maintenance history. For equipment that needs long-term management, teams can track both the asset itself and related maintenance records, such as maintenance type, planned status, and priority.
