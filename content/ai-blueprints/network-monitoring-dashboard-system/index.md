@@ -2,6 +2,8 @@
 
 A network monitoring dashboard is suitable for NOC, IT operations, and infrastructure teams that need to monitor routers, switches, firewalls, servers, load balancers, and wireless access points in one place. Teams can see online nodes, degraded nodes, offline nodes, critical alerts, and overall availability for the last 30 days from a single page.
 
+These records can also be managed as a NocoBase-based internal business system, with network devices, uptime status, alerts, incidents, latency, monitoring metrics, and operations dashboards organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page centers on a NOC Wallboard, bringing node status cards, recent availability, a real-time alert stream, and key metrics onto the same screen. Operations teams can quickly see which nodes are down, which nodes are degraded or under maintenance, and which alerts need acknowledgment.
 
 With AI Agent, the system can read node data and generate a network infrastructure health report. It can analyze health metrics across device types, degraded nodes, offline nodes, resource pressure, and risks that need priority attention.
