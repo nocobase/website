@@ -1,7 +1,7 @@
 {
   "id": 371812095950848,
-  "title": "Training Tracker",
-  "title_cn": "培训记录",
+  "title": "Training Tracker System",
+  "title_cn": "培训记录系统",
   "description": "Manage course catalogs, training calendars, and completion rates with a nocode training tracker and AI-powered operations summaries.",
   "description_cn": "用无代码系统方式管理课程目录、培训日历和完成率，再由 AI 汇总培训运营表现。",
   "slug": "training-tracker-system",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Training Tracker: a course catalog, a month/week/day training calendar, a completion-rate dashboard, and AI training-session analysis. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
+  "prompt": "Build a NocoBase app — Training Tracker System: a course catalog, a month/week/day training calendar, a completion-rate dashboard, and AI training-session analysis. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 培训记录：课程目录、月/周/日培训日历、完成率看板和 AI 培训场次分析。布局和标志性视觉参照：https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
-  "updatedAt": "2026-06-25T00:26:02.028Z"
+  "updatedAt": "2026-06-25T14:58:54.704Z"
 }
