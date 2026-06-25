@@ -2,6 +2,8 @@
 
 An HR analytics dashboard is designed to centralize workforce structure, employee changes, attrition, and organizational health. HR and management teams can view headcount, net growth, attrition rate, average tenure, headcount gap, and regrettable attrition from one dashboard.
 
+These records can also be managed as a NocoBase-based internal business system, with HR metrics, headcount, departments, employment types, turnover, workforce trends, and management dashboards organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page supports filtering by department, employment type, employee status, and job level. After filtering, metric cards and charts update around the selected scope, helping teams analyze a specific department, job level, or employee group.
 
 The dashboard includes headcount trends, hiring and termination comparisons, department headcount, gender distribution, tenure distribution, department-level attrition, and recent departures. The employee table can also record employee ID, department, job level, employment type, status, tenure in months, and performance rating.
