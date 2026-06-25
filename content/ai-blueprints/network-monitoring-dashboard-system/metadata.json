@@ -1,7 +1,7 @@
 {
   "id": 371818058153984,
-  "title": "Network Monitoring Dashboard",
-  "title_cn": "网络监控看板",
+  "title": "Network Monitoring Dashboard System",
+  "title_cn": "网络监控看板系统",
   "description": "A NOC-focused network monitoring dashboard using AI to analyze node availability, link risk, and live alerts.",
   "description_cn": "面向 NOC 的网络监控看板，结合 AI 分析节点在线率、链路风险和实时告警。",
   "slug": "network-monitoring-dashboard-system",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Network Monitoring Dashboard: a NOC dashboard, node status, link utilization, real-time alerts, and an AI health report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
+  "prompt": "Build a NocoBase app — Network Monitoring Dashboard System: a NOC dashboard, node status, link utilization, real-time alerts, and an AI health report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 网络监控看板：NOC 看板、节点状态、链路利用率、实时告警和 AI 健康报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
-  "updatedAt": "2026-06-25T00:26:04.557Z"
+  "updatedAt": "2026-06-25T15:01:34.803Z"
 }
