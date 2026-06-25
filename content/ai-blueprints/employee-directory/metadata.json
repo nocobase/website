@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Directory System: a search hero, multi-select facets, and avatar cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/19-employee-directory.html",
-  "updatedAt": "2026-06-25T14:38:03.854Z",
+  "updatedAt": "2026-06-25T18:17:37.445Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 员工通讯录:搜索主区、多选筛选面板和头像卡片。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/19-employee-directory.html"
 }
