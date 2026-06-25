@@ -2,6 +2,8 @@
 
 A device management system helps teams centrally manage company-owned computers, mobile phones, tablets, monitors, servers, printers, and network devices. Teams can view device status, health scores, compliance, warranty expiration, and high-risk devices in one place, instead of maintaining asset information across scattered spreadsheets.
 
+These records can also be managed as a NocoBase-based internal business system, with device records, assignments, maintenance status, warranty dates, owners, usage history, and device lifecycle organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is built around a device asset dashboard. It shows managed devices, compliance rate, average health score, risky devices, and devices with warranties expiring soon. Each device card can display the asset number, hostname, device model, operating system version, security status, owner, location, and warranty status.
 
 With the help of AI Agent, teams can generate asset status analysis reports from device data. They can also recognize asset numbers, device names, device types, serial numbers, and usage status from asset label images, then automatically fill the extracted data into NocoBase forms. When labels contain Japanese or other languages, AI can translate the content before writing it into fields.
