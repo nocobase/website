@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Exit Checklist System: staged offboarding tasks, access revocation, and asset-return tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 离职流程管理系统：阶段化离职任务、权限回收与资产归还跟踪。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
-  "updatedAt": "2026-06-25T15:02:06.490Z"
+  "updatedAt": "2026-06-25T18:27:09.308Z"
 }
