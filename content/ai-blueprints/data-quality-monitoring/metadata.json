@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 数据质量管理系统：质量总览看板、规则状态、异常列表、数据新鲜度、质量趋势和 AI 数据质量分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T15:41:52.213Z"
+  "prompt": "Build a NocoBase app — Data Quality Monitoring: a quality overview dashboard, rule status, an anomaly list, data freshness, quality trends, and an AI data-quality analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 数据质量管理系统：质量总览看板、规则状态、异常列表、数据新鲜度、质量趋势和 AI 数据质量分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
+  "updatedAt": "2026-06-25T00:25:59.422Z"
 }
