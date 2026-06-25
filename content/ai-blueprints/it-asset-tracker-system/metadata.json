@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— IT 资产管理系统：资产生命周期、持有人关系、质保风险、流转记录和活动报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/41-it-asset-tracker.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:19:28.044Z"
+  "prompt": "Build a NocoBase app — IT Asset Tracker: asset lifecycle, holder relationships, warranty risk, transfer records, and an activity report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/41-it-asset-tracker.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— IT 资产管理系统：资产生命周期、持有人关系、质保风险、流转记录和活动报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/41-it-asset-tracker.html",
+  "updatedAt": "2026-06-25T00:26:03.288Z"
 }
