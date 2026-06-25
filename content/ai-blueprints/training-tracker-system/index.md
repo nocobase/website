@@ -2,6 +2,8 @@
 
 Use your preferred AI Agent and NocoBase to quickly build a customizable, reliable, and continuously evolvable training tracker for managing internal courses, training schedules, learner enrollments, completion status, course owners, and training data analysis.
 
+These records can also be managed as a NocoBase-based internal business system, with training courses, participants, completion status, learning progress, certificates, departments, and training reports organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 You can copy the prompt below and let your AI Agent generate the basic structure of the training tracker in NocoBase, then continue adjusting course fields, calendar views, enrollment rules, completion statuses, and report content through the no-code interface.
 
 This system is suitable for human resources, training operations, learning and development, compliance training, and enterprise management teams. It helps teams continuously track active courses, average completion rate, monthly completions, overdue learners, and training resource utilization. The course catalog can manage course names, course codes, categories, delivery formats, duration, credits, difficulty, enrollment counts, and owners. The training calendar supports monthly, weekly, and daily views for different course schedules.
