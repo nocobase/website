@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 客户反馈管理：NPS 总览看板、情绪筛选和 AI 反馈分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/27-customer-feedback.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:12:45.531Z"
+  "prompt": "Build a NocoBase app — Customer Feedback Management: an NPS overview dashboard, sentiment filtering, and an AI feedback analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/27-customer-feedback.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 客户反馈管理：NPS 总览看板、情绪筛选和 AI 反馈分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/27-customer-feedback.html",
+  "updatedAt": "2026-06-25T00:26:00.736Z"
 }
