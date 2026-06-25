@@ -1,7 +1,7 @@
 {
   "id": 369401651724288,
-  "title": "Campaign Management",
-  "title_cn": "营销活动管理",
+  "title": "Marketing Campaign Management System",
+  "title_cn": "营销活动管理系统",
   "description": "Manage budgets, ROI, and campaign progress with an AI marketing campaign system in NocoBase.",
   "description_cn": "在 NocoBase 中搭建 AI 营销活动管理系统，跟踪预算、ROI 和活动进展。",
   "slug": "marketing-campaign-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.810Z",
-      "updatedAt": "2026-06-11T08:50:57.810Z",
+      "updatedAt": "2026-06-24T09:34:52.544Z",
       "id": 261,
       "title": "Marketing",
       "title_cn": "营销",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:33.035Z",
         "updatedAt": "2026-06-17T13:56:15.679Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Campaign Command: a native gantt, KPI cards, donut charts, and data tables. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
-  "updatedAt": "2026-06-17T13:56:15.687Z",
+  "prompt": "Build a NocoBase app — Marketing Campaign Management System: a native gantt, KPI cards, donut charts, and data tables. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
+  "updatedAt": "2026-06-25T14:29:50.726Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 营销活动指挥台:原生甘特图、KPI 卡片、环形图和数据表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/16-campaign-management.html"
 }
