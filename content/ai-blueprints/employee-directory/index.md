@@ -1,8 +1,10 @@
 ## Introduction
 
-Use your favorite AI agent and NocoBase to quickly build a customizable, reliable, and continuously evolvable employee contact management system for centrally managing employee names, job titles, departments, work locations, employment types, skills, emails, and phone numbers.
+Use your favorite AI agent and NocoBase to quickly build a customizable, reliable, and continuously evolvable employee directory system for centrally managing employee names, job titles, departments, work locations, employment types, skills, emails, and phone numbers.
 
-You can copy the prompt below and let your AI agent generate the basic structure of an employee directory in NocoBase, then adjust fields, pages, filters, and employee profiles through the no-code UI.
+These records can also be managed as a NocoBase-based internal business system, with employee directory, department contacts, job titles, work locations, skills, contact details, and profile search organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
+You can copy the prompt below and let your AI agent generate the basic structure of an employee directory in NocoBase, then adjust data models, fields, pages, filters, and employee profiles through the no-code UI.
 
 This system is a great fit for company employee directories, people directories for cross-regional teams, department contact lookup, remote employee management, and any internal scenario where you need to quickly find a colleague's title, department, and contact information.
 
@@ -22,9 +24,9 @@ This system is a great fit for company employee directories, people directories 
 
 ![](https://static-docs.nocobase.com/employee-directory-4-fegj7s.png)
 
-## What problems does an employee contact management system solve?
+## What problems does an employee directory system solve?
 
-Employee contact management helps team members quickly find the right colleague and understand what they are responsible for, which department they belong to, where they work, and how to reach them.
+Employee directory management helps team members quickly find the right colleague and understand what they are responsible for, which department they belong to, where they work, and how to reach them.
 
 As a company grows, adds departments, or shifts to remote work, employee information often ends up scattered across HR spreadsheets, chat tools, email address books, and various internal systems. New hires may not know who to contact for a given task, and during cross-department collaboration it can be hard to quickly find the person in the right role.
 
@@ -72,11 +74,13 @@ HR or administrators can add, view, edit, and delete employee records in one pla
 - **Preserve key contact details:** Keep information that does not need conversion, such as emails and phone numbers, intact during translation.
 - **Multilingual form filling:** AI can write translated results directly into the employee form — ideal for international teams maintaining local-language profiles.
 
-## Why build an employee contact management system with AI and NocoBase?
+## Why build an employee directory system with AI and NocoBase?
 
 An employee directory may look like a simple list of people, but once it goes into real enterprise use, it needs to handle departments, job titles, locations, employment types, skills, and contact details, and must support search, filtering, and access control.
 
-If you use plain vibe coding to generate an employee directory page from scratch, you can usually get people cards on screen quickly, but the relationships between employee data, department data, search criteria, employee forms, and personal profiles still need to be filled in afterwards.
+For employee directory management, the AI Agent can first draft collections, relationships, prompts, and analysis logic around employee directory, department contacts, job titles, work locations, skills, contact details, and profile search. NocoBase then keeps the data model, permissions, workflows, pages, and operation history maintainable after launch.
+
+If you use plain Vibe Coding to generate an employee directory page from scratch, you can usually get people cards on screen quickly, but the relationships between employee data, department data, search criteria, employee forms, and personal profiles still need to be filled in afterwards.
 
 NocoBase organizes employee, department, and contact information in one system and presents it through cards, lists, search boxes, and filters. Teams can add fields for departments, work locations, skills, and employment types based on their own org structure.
 
@@ -84,7 +88,7 @@ AI further reduces the cost of data entry and multilingual maintenance. HR simpl
 
 For international teams, AI can also translate employee information into Japanese or other languages and write the results straight back into the form. This cuts down on repetitive copying, translating, and typing, and makes it easier to maintain a multilingual employee directory.
 
-The resulting employee contact management system is not a static address book, but an internal people directory that keeps evolving with your team size, org structure, and office locations.
+The resulting employee directory system is not a static address book, but an internal people directory that keeps evolving with your team size, org structure, and office locations.
 
 ## FAQ
 
@@ -142,9 +146,9 @@ You can enable operation history and audit logs as needed to record changes to e
 
 When someone changes roles, transfers departments, or updates contact information, HR can trace who made the change, when, and exactly what changed, reducing the risk of unverifiable accidental edits.
 
-10. **How is this different from an employee directory generated by plain vibe coding?**
+10. **How is this different from an employee directory generated by plain Vibe Coding?**
 
-Plain vibe coding can quickly generate employee cards and a search page, but real enterprise use also requires handling department relationships, data permissions, sensitive fields, profile updates, operation records, and long-term maintenance.
+Plain Vibe Coding can quickly generate employee cards and a search page, but real enterprise use also requires handling department relationships, data permissions, sensitive fields, profile updates, operation records, and long-term maintenance.
 
 NocoBase stores employee, department, and organizational information in a unified data model and provides permissions, auditing, enterprise login, APIs, and plugin extensibility. AI speeds up building, data extraction, and translation, while NocoBase takes care of long-term operation and data governance.
 
