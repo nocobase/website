@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 员工信息系统：员工目录、部门筛选、员工档案详情和 CEO 视角人力结构分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/42-employee-information.html ",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:21:49.888Z"
+  "prompt": "Build a NocoBase app — Employee Information System: an employee directory, department filtering, employee profile details, and a CEO-view workforce-structure analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/42-employee-information.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 员工信息系统：员工目录、部门筛选、员工档案详情和 CEO 视角人力结构分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/42-employee-information.html",
+  "updatedAt": "2026-06-25T00:26:05.845Z"
 }
