@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 培训记录：课程目录、月/周/日培训日历、完成率看板和 AI 培训场次分析。布局和标志性视觉参照：https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:17:52.825Z"
+  "prompt": "Build a NocoBase app — Training Tracker: a course catalog, a month/week/day training calendar, a completion-rate dashboard, and AI training-session analysis. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 培训记录：课程目录、月/周/日培训日历、完成率看板和 AI 培训场次分析。布局和标志性视觉参照：https://static-docs.nocobase.com/solution/templates/28-training-tracker.html",
+  "updatedAt": "2026-06-25T00:26:02.028Z"
 }
