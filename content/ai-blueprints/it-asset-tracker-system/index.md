@@ -1,6 +1,8 @@
 ## Introduction
 
-An IT asset management system is useful for managing internal computers, monitors, phones, tablets, peripherals, and network devices. Teams can view total assets, devices in use, assignable equipment, warranty risks, and devices under repair on one page, helping them quickly understand whether current IT assets are sufficient and which assets need attention.
+An IT Asset Tracker System is useful for managing internal computers, monitors, phones, tablets, peripherals, and network devices. Teams can view total assets, devices in use, assignable equipment, warranty risks, and devices under repair on one page, helping them quickly understand whether current IT assets are sufficient and which assets need attention.
+
+These records can also be managed as a NocoBase-based internal business system, with IT assets, devices, assignees, serial numbers, warranty dates, lifecycle status, and return records organized through configurable data models, role permissions, views, workflows where needed, and operation history.
 
 The page is built around the asset lifecycle. It brings assets, current holders, status, condition, warranty period, and operation records into the same view. IT teams can filter assets by all, in use, available, under maintenance, reserved, retired, and other statuses. They can also view each asset’s inventory status, repair status, warranty status, and transfer count.
 
@@ -32,7 +34,7 @@ On the transfer records page, teams can track assignment, checkout, return, repa
 
 ![IT Asset Tracker6-7nkitp.png](https://static-docs.nocobase.com/IT%20Asset%20Tracker6-7nkitp.png)
 
-## What Problems Can an IT Asset Management System Solve?
+## What Problems Can an IT Asset Tracker System Solve?
 
 The biggest challenge in IT asset management is that devices keep moving between purchase, assignment, checkout, return, repair, and retirement, while records often fail to keep up with the real status. A device may still appear as in use in a spreadsheet even though it is under repair. An employee may have returned a device, but the current holder has not been updated. A warranty may already have expired without being flagged in advance.
 
@@ -81,9 +83,9 @@ For newly purchased devices, AI Agent can identify the asset tag, serial number,
 * **Monthly trend analysis:** Shows which months have concentrated asset transfer activities.
 * **Maintenance risk alerts:** Identifies devices with recent repair activity that may need follow-up.
 
-## Why Build an IT Asset Management System with AI and NocoBase?
+## Why Build an IT Asset Tracker System with AI and NocoBase?
 
-An IT asset management system needs to manage more than device inventory. It also needs employee assignment relationships, asset status, condition changes, purchase dates, warranty periods, checkout and return records, repair progress, and asset activity analysis. For IT teams, the core value is continuously tracking the full lifecycle of each device from purchase and assignment to use, repair, and retirement.
+An IT Asset Tracker System needs to manage more than device inventory. It also needs employee assignment relationships, asset status, condition changes, purchase dates, warranty periods, checkout and return records, repair progress, and asset activity analysis. For IT teams, the core value is continuously tracking the full lifecycle of each device from purchase and assignment to use, repair, and retirement.
 
 It is easy to generate a first version of a device registration page or list with AI. But once IT assets enter daily operations, new management needs keep appearing: new employees need assigned devices, departing employees need to return assets, faulty devices need repair workflows, expiring warranties need attention, and idle devices need to be returned to inventory or reserved. A single page prototype is hard to maintain as these processes continue to change.
 
@@ -93,7 +95,7 @@ Teams can first use AI to build the asset lifecycle page, asset registry, detail
 
 ## FAQ
 
-**1.What types of devices can this IT asset management system manage?**
+**1.What types of devices can this IT Asset Tracker System manage?**
 
 It can manage laptops, desktops, monitors, phones, tablets, mice, keyboards, network devices, and other office IT assets. The screenshots already show asset types such as MacBook, ThinkPad, iPhone, iPad, monitors, switches, and peripherals.
 
