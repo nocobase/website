@@ -1,8 +1,8 @@
 ## Introduction
 
-Use your favorite AI agent together with NocoBase to quickly build a customizable, reliable, and continuously evolvable SLA management system for monitoring ticket response times, resolution times, breach status, at-risk tickets, SLA attainment rates, and service performance across priority levels.
+Use your favorite AI Agent together with NocoBase to quickly build a customizable, reliable, and continuously evolvable SLA management system for monitoring ticket response times, resolution times, breach status, at-risk tickets, SLA attainment rates, and service performance across priority levels.
 
-You can copy the prompt below and let your AI agent generate the basic structure of the SLA management system in NocoBase, then adjust fields, pages, time-limit rules, and priority standards through the no-code UI.
+You can copy the prompt below and let your AI Agent generate the basic data model and structure of the SLA management system in NocoBase, then adjust data models, fields, pages, role permissions, time-limit rules, and priority standards through the no-code interface.
 
 This system fits customer support, technical support, IT service desks, operations teams, infrastructure teams, and internal service teams that need to track whether tickets are responded to and resolved within committed time frames.
 
@@ -75,13 +75,13 @@ The ticket detail list can also show subject, queue, priority, status, breach fl
 
 The truly hard part of SLA management is not setting a deadline, but continuously calculating risk based on ticket priority, queue, and current status, and alerting the team before a ticket actually breaches.
 
-If you build from scratch with ordinary vibe coding, you usually end up with just a ticket list at first. You then have to keep adding time calculations, status logic, breach rules, real-time dashboards, permissions, and history tracking — and the more rules you add, the harder the system becomes to maintain.
+If you build from scratch with ordinary Vibe Coding, you usually end up with just a ticket list at first. You then have to keep adding time calculations, status logic, breach rules, real-time dashboards, permissions, and history tracking — and the more rules you add, the harder the system becomes to maintain.
 
 NocoBase can link tickets, priorities, queues, response deadlines, and resolution deadlines together, and present each ticket's SLA status through computed fields, workflows, filters, and dashboards.
 
 Teams can configure different response and resolution targets for P1, P2, P3, and P4 tickets according to their own service standards, and set independent rules for different service queues.
 
-AI further reduces the cost of building and analysis. You can first let an AI agent generate the ticket tables, SLA rules, risk statuses, monitoring dashboard, and statistics pages, then keep adjusting time limits, priorities, and display logic through NocoBase's no-code UI.
+AI further reduces the cost of building and analysis. You can first let an AI Agent generate the ticket tables, SLA rules, risk statuses, monitoring dashboard, and statistics pages, then keep adjusting time limits, priorities, and display logic through NocoBase's no-code interface.
 
 An SLA management system built this way is not a one-off monitoring page, but a service management system that keeps evolving with your support team, service standards, and customer commitments.
 
@@ -137,19 +137,19 @@ When a ticket's deadline is extended, its priority adjusted, or its queue reassi
 
 9. **Can I restrict which SLA data different teams can view and modify?**
 
-Yes. NocoBase supports permission configuration by role, service queue, and data scope.
+Yes. NocoBase supports role-based permission configuration, service queue, and data scope.
 
 For example, frontline staff can only handle tickets assigned to them; queue leads can view SLA risks within their own queue; support supervisors can view all service data; and only authorized administrators can modify SLA targets and evaluation rules.
 
 10. **Can Claude Code, Codex, Cursor, or OpenCode help build the SLA management system?**
 
-Yes. AI coding agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate ticket tables, priority rules, response and resolution deadlines, risk statuses, and SLA dashboards from natural-language prompts.
+Yes. AI Coding Agents such as Claude Code, Codex, Cursor, and OpenCode can connect to NocoBase and generate ticket tables, priority rules, response and resolution deadlines, risk statuses, and SLA dashboards from natural-language prompts.
 
-After generation, the team can still adjust fields, rules, pages, and permissions through NocoBase's no-code UI, without asking AI to rewrite everything from scratch on every change.
+After generation, the team can still adjust fields, rules, pages, and permissions through NocoBase's no-code interface, without asking AI to rewrite everything from scratch on every change.
 
-11. **How is this different from an SLA dashboard generated by ordinary vibe coding?**
+11. **How is this different from an SLA dashboard generated by ordinary Vibe Coding?**
 
-Ordinary vibe coding can quickly produce a set of metric cards or a monitoring page, but once it goes into real service management, you still need continuous deadline calculation, automatic risk-status updates, change permissions, history retention, and long-term rule evolution.
+Ordinary Vibe Coding can quickly produce a set of metric cards or a monitoring page, but once it goes into real service management, you still need continuous deadline calculation, automatic risk-status updates, change permissions, history retention, and long-term rule evolution.
 
 NocoBase keeps ticket data, time calculations, workflows, permissions, and analysis reports in one system. AI identifies risks and generates recommendations, while NocoBase carries the stable, running SLA process.
 
