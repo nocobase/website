@@ -2,6 +2,8 @@
 
 An employee offboarding workflow system is designed for HR, IT, administration, finance, and direct managers to manage the full process from resignation notice to final settlement. Teams can view offboarding progress, task completion, asset return status, days until the last working day, and outstanding items on one page.
 
+These records can also be managed as a NocoBase-based internal business system, with exit tasks, handover items, access removal, asset return, final clearance, responsible teams, and completion status organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is organized around departing employees. The left-side list shows each employee’s exit type, last working day, overall completion rate, and current status. The central area presents the offboarding journey by stage, including resignation notice, knowledge handover, access revocation, asset return, and final settlement, so each department can move tasks forward by timeline.
 
 The system also provides a task list and task editing form to maintain task names, departments, owners, owner roles, due labels, due status, and completion status. For IT and administration workflows, it can also manage the return and wipe status of laptops, phones, monitors, access cards, keys, parking passes, and other assets.
