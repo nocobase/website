@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 网络监控看板：NOC 看板、节点状态、链路利用率、实时告警和 AI 健康报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:20:33.487Z"
+  "prompt": "Build a NocoBase app — Network Monitoring Dashboard: a NOC dashboard, node status, link utilization, real-time alerts, and an AI health report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 网络监控看板：NOC 看板、节点状态、链路利用率、实时告警和 AI 健康报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/36-network-monitoring.html",
+  "updatedAt": "2026-06-25T00:26:04.557Z"
 }
