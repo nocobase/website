@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 候选人管理系统：招聘流程看板、候选人评分、来源跟踪和 AI 推荐报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/29-candidate-tracking.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:18:45.989Z"
+  "prompt": "Build a NocoBase app — Candidate Tracking System: a hiring pipeline board, candidate scoring, source tracking, and an AI recommendation report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/29-candidate-tracking.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 候选人管理系统：招聘流程看板、候选人评分、来源跟踪和 AI 推荐报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/29-candidate-tracking.html",
+  "updatedAt": "2026-06-25T00:26:02.439Z"
 }
