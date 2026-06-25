@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 服务申请表：分步服务申请表单、分类选择、服务等级提示、审批要求、请求列表和 AI 服务申请分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/30-service-request.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T15:43:23.260Z"
+  "prompt": "Build a NocoBase app — Service Request Form: a step-by-step service request form, category selection, service-level hints, approval requirements, a request list, and an AI service-request analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/30-service-request.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 服务申请表：分步服务申请表单、分类选择、服务等级提示、审批要求、请求列表和 AI 服务申请分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/30-service-request.html",
+  "updatedAt": "2026-06-25T00:26:00.285Z"
 }
