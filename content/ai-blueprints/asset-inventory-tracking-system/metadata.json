@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Asset Inventory Tracking System: an asset ledger, depreciation curves, maintenance history, and an asset-status analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/22-asset-inventory.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产库存跟踪系统：资产台账、折旧曲线、维护历史和资产状态分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/22-asset-inventory.html",
-  "updatedAt": "2026-06-25T14:59:31.294Z"
+  "updatedAt": "2026-06-25T18:24:46.582Z"
 }
