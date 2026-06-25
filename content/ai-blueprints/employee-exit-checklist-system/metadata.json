@@ -1,7 +1,7 @@
 {
   "id": 371819102535680,
-  "title": "Employee Exit Checklist",
-  "title_cn": "离职流程管理",
+  "title": "Employee Exit Checklist System",
+  "title_cn": "员工离职流程管理系统",
   "description": "Connect offboarding tasks, access removal, and asset returns into an enterprise workflow for controlled cross-department exits.",
   "description_cn": "把离职任务、权限回收和资产归还串成企业业务系统，让跨部门 offboarding 更可控。",
   "slug": "employee-exit-checklist-system",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Employee Exit Checklist: staged offboarding tasks, access revocation, and asset-return tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
+  "prompt": "Build a NocoBase app — Employee Exit Checklist System: staged offboarding tasks, access revocation, and asset-return tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 离职流程管理系统：阶段化离职任务、权限回收与资产归还跟踪。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/38-exit-checklist.html",
-  "updatedAt": "2026-06-25T00:26:05.005Z"
+  "updatedAt": "2026-06-25T15:02:06.490Z"
 }
