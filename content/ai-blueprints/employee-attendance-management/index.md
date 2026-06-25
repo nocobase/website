@@ -1,8 +1,8 @@
 ## Introduction
 
-Use your favorite AI agent and NocoBase to quickly build a customizable, reliable, long-lived employee attendance system — recording clock-in/clock-out times, working hours, attendance status, monthly attendance and per-department performance.
+Use your favorite AI Agent and NocoBase to quickly build a customizable, reliable, long-lived employee attendance system — recording clock-in/clock-out times, working hours, attendance status, monthly attendance and per-department performance.
 
-Copy the prompt below and let your AI agent generate the basic structure of the attendance system in NocoBase, then fine-tune fields, pages, attendance statuses and statistics rules through the no-code UI.
+Copy the prompt below and let your AI Agent generate the basic data model and structure of the attendance system in NocoBase, then fine-tune fields, pages, attendance statuses and statistics rules through the no-code interface.
 
 It fits office teams, remote teams, chain stores, service teams and SMBs that need to manage daily clock-ins, lateness, absence, leave, overtime and monthly attendance records.
 
@@ -76,11 +76,11 @@ The attendance detail list records employee, date, start time, end time, working
 
 Once an attendance system is really in use, it is never just a clock-in button. Teams also need to calculate working hours, detect lateness and overtime, aggregate monthly data, and let HR review and correct records.
 
-A page generated from scratch by plain vibe coding usually stops at submitting a timestamp. Linking clock-in/clock-out records, computing statuses, the monthly matrix, department statistics, permissions and history all still need continuous patching and debugging.
+A page generated from scratch by plain Vibe Coding usually stops at submitting a timestamp. Linking clock-in/clock-out records, computing statuses, the monthly matrix, department statistics, permissions and history all still need continuous patching and debugging.
 
 NocoBase connects employees, departments and attendance records, and lets you configure the mobile check-in page, monthly matrix, detail list and dashboards in one system. Teams can adapt fields, statuses and views to their own schedules and rules.
 
-AI lowers the building cost further. Start with a prompt that lets your AI agent generate the employee table, attendance records, mobile check-in page and dashboards, then keep refining pages and rules in NocoBase's no-code UI.
+AI lowers the building cost further. Start with a prompt that lets your AI Agent generate the employee table, attendance records, mobile check-in page and dashboards, then keep refining pages and rules in NocoBase's no-code interface.
 
 What you get is not a one-off clock-in demo, but an internal system that keeps evolving with team size, org structure and attendance policies.
 
@@ -142,12 +142,12 @@ Different regions, shifts or departments can use different rules — NocoBase's 
 
 10. **Can Claude Code, Codex, Cursor or OpenCode help build it?**
 
-Yes. These AI coding agents connect to NocoBase and generate the employee table, attendance records, mobile check-in page, monthly matrix and dashboards from natural-language prompts.
+Yes. These AI Coding Agents connect to NocoBase and generate the employee table, attendance records, mobile check-in page, monthly matrix and dashboards from natural-language prompts.
 
-Afterwards HR or admins keep tweaking fields, rules, pages and permissions in the no-code UI — no need to regenerate from scratch for every change.
+Afterwards HR or admins keep tweaking fields, rules, pages and permissions in the no-code interface — no need to regenerate from scratch for every change.
 
-11. **How is this different from a vibe-coded clock-in page?**
+11. **How is this different from a Vibe-coded clock-in page?**
 
-Plain vibe coding quickly produces a clock-in button or a timestamp page, but real enterprise use also needs permissions, attendance rules, corrections, operation history, department statistics and long-term maintenance.
+Plain Vibe Coding quickly produces a clock-in button or a timestamp page, but real enterprise use also needs permissions, attendance rules, corrections, operation history, department statistics and long-term maintenance.
 
 NocoBase keeps check-ins, hour calculation, status judgement, access control and analysis reports in one business system, with SSO, audit logs, notifications, APIs and plugins available on demand — built for continuously running attendance management, not a one-off demo.
