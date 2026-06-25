@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Document Management System: a document library, file categorization, expiry reminders, and an employee-document analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/37-employee-documents.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 员工档案管理系统：文档库、档案分类、到期提醒和员工档案分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/37-employee-documents.html",
-  "updatedAt": "2026-06-25T15:00:41.999Z"
+  "updatedAt": "2026-06-25T18:25:53.708Z"
 }
