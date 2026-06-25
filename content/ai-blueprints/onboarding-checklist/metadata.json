@@ -1,16 +1,16 @@
 {
   "id": 369401668501504,
-  "title": "Onboarding Checklist",
-  "title_cn": "入职检查清单",
+  "title": "Employee Onboarding Checklist System",
+  "title_cn": "员工入职检查清单系统",
   "description": "Create an onboarding checklist with AI Agents to track tasks, progress, and employee onboarding steps.",
-  "description_cn": "借助 AI Agent 创建员工入职检查清单，跟进入职任务和完成进度。",
+  "description_cn": "借助 AI Agent 创建员工入职检查清单系统，跟进入职任务和完成进度。",
   "slug": "onboarding-checklist",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.434Z",
-      "updatedAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
       "id": 260,
       "title": "HR",
       "title_cn": "人事",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:41.744Z",
         "updatedAt": "2026-06-17T13:54:50.859Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Onboarding Checklist: an onboarding journey with progress tracking and a checklist dialog. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html",
-  "updatedAt": "2026-06-17T13:54:50.867Z",
+  "prompt": "Build a NocoBase app — Employee Onboarding Checklist System: an onboarding journey with progress tracking and a checklist dialog. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html",
+  "updatedAt": "2026-06-25T14:32:21.669Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 入职清单:带进度跟踪的入职旅程和清单弹窗。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/08-onboarding-checklist.html"
 }
