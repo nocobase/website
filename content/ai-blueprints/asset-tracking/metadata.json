@@ -1,7 +1,7 @@
 {
   "id": 369401664307200,
-  "title": "Asset tracking",
-  "title_cn": "资产追踪",
+  "title": "Asset Tracking System",
+  "title_cn": "资产追踪系统",
   "description": "Build an asset tracking business system in NocoBase for equipment and material management.",
   "description_cn": "面向设备和物资管理，在 NocoBase 中搭建资产追踪型企业业务系统。",
   "slug": "asset-tracking",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.060Z",
-      "updatedAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
       "id": 259,
       "title": "Inventory & Assets",
       "title_cn": "资产与库存",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:39.520Z",
         "updatedAt": "2026-06-17T13:55:27.413Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Asset Tracking: checkout / return flows with a location timeline. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html",
-  "updatedAt": "2026-06-17T13:55:27.420Z",
+  "prompt": "Build a NocoBase app — Asset Tracking System: checkout / return flows with a location timeline. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html",
+  "updatedAt": "2026-06-25T14:31:39.204Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产追踪:领用/归还流程和位置时间线。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/09-asset-tracking.html"
 }
