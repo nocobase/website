@@ -1,7 +1,7 @@
 {
   "id": 371819570200576,
-  "title": "Document Approval Workflow",
-  "title_cn": "文档审批工作流 ",
+  "title": "Document Approval Workflow System",
+  "title_cn": "文档审批工作流系统",
   "description": "Track document approvals for contracts, purchases, and offers, while AI analyzes SLA pressure, financial risk, and signing bottlenecks.",
   "description_cn": "文档审批工作流跟踪合同、采购和 Offer 的 SLA，AI 分析风险金额与签署瓶颈。",
   "slug": "document-approval-workflow",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Document Approval Workflow: an approval board, a document registration form, SLA risk, and an AI approval analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/35-document-approval.html",
+  "prompt": "Build a NocoBase app — Document Approval Workflow System: an approval board, a document registration form, SLA risk, and an AI approval analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/35-document-approval.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 文档审批工作流：审批看板、文档登记表、SLA 风险和 AI 审批分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/35-document-approval.html",
-  "updatedAt": "2026-06-25T00:26:05.434Z"
+  "updatedAt": "2026-06-25T15:02:42.756Z"
 }
