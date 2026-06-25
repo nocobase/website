@@ -2,6 +2,8 @@
 
 An employee document management system helps HR and administrative teams manage employee contracts, identity documents, visa permits, tax files, training certificates, policy acknowledgements, and benefits materials in one place. Teams can view document counts, validity status, upcoming expirations, and missing files without maintaining records across scattered folders and spreadsheets.
 
+These records can also be managed as a NocoBase-based internal business system, with employee documents, file categories, document owners, expiry dates, review status, HR files, and access permissions organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is centered on a document library and expiration reminders. The left side supports browsing by document cabinet or category. The middle area displays document cards with the document name, employee, category, status, issue date, expiration date, file size, and file type. The right side highlights expired and soon-to-expire documents.
 
 With the help of AI Agent, teams can generate management reports based on employee document data, summarizing document volume, employee coverage, file type distribution, confidential file ratio, expiration risks, and priority follow-up items.
