@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 配送跟踪管理：配送状态看板、运单详情、配送动态记录和 AI 面单识别填表。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-06-24T18:16:16.163Z"
+  "prompt": "Build a NocoBase app — Delivery Tracking: a delivery status board, waybill details, delivery activity logs, and AI waybill recognition for form filling. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 配送跟踪管理：配送状态看板、运单详情、配送动态记录和 AI 面单识别填表。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
+  "updatedAt": "2026-06-25T00:26:01.169Z"
 }
