@@ -2,6 +2,8 @@
 
 Use AI Agents and NocoBase to quickly create a data quality monitoring system that tracks data completeness, accuracy, and timeliness across your data platform.
 
+These records can also be managed as a NocoBase-based internal business system, with data quality rules, validation results, abnormal records, data owners, monitoring dashboards, and issue trends organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The system shows the overall quality score, rule pass rate, open issues, data freshness delays, and 14-day quality trends, helping teams quickly understand whether their data platform is healthy.
 
 You can copy the prompt directly and let AI Agents such as Claude Code, Codex, Cursor, and OpenCode generate a data quality monitoring system in NocoBase. After that, you can keep adjusting rules, fields, statuses, and pages through NocoBase’s no-code interface.
