@@ -1,7 +1,7 @@
 {
   "id": 371811529719808,
-  "title": "Device Management",
-  "title_cn": "设备管理",
+  "title": "Device Management System",
+  "title_cn": "设备管理系统",
   "description": "An enterprise device management system for IT teams to monitor health scores, compliance gaps, warranty risks, and asset status.",
   "description_cn": "围绕设备健康、合规和保修风险搭建企业业务系统，帮助 IT 团队持续管理设备状态。",
   "slug": "device-management-system",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Device Management: a device health dashboard, security & compliance tags, warranty risk, and AI asset-label recognition. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/25-device-management.html",
+  "prompt": "Build a NocoBase app — Device Management System: a device health dashboard, security & compliance tags, warranty risk, and AI asset-label recognition. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/25-device-management.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 设备管理：设备健康看板、安全合规标签、保修风险和 AI 资产标签识别。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/25-device-management.html",
-  "updatedAt": "2026-06-25T00:26:01.597Z"
+  "updatedAt": "2026-06-25T14:57:57.531Z"
 }
