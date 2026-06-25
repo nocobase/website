@@ -1,7 +1,7 @@
 {
   "id": 371817238167552,
-  "title": "HR Analytics Dashboard",
-  "title_cn": "人力资源分析看板",
+  "title": "HR Analytics Dashboard System",
+  "title_cn": "人力资源分析看板系统",
   "description": "A NocoBase HR analytics dashboard for workforce structure, attrition, tenure, and organization health signals.",
   "description_cn": "NocoBase 人力资源分析看板，聚合员工结构、流失率、司龄和组织健康信号。",
   "slug": "hr-analytics-dashboard",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — HR Analytics Dashboard: core HR metrics, org-structure charts, and an HR analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/39-hr-analytics.html",
+  "prompt": "Build a NocoBase app — HR Analytics Dashboard System: core HR metrics, org-structure charts, and an HR analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/39-hr-analytics.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 人力资源分析看板: 核心人力指标、组织结构图表和 HR 分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/39-hr-analytics.html",
-  "updatedAt": "2026-06-25T00:26:04.130Z"
+  "updatedAt": "2026-06-25T15:01:09.240Z"
 }
