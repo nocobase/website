@@ -7273,3 +7273,9 @@ ul.articles a:hover img {
   letter-spacing: 0.06rem;
   font-feature-settings: "palt";
 }
+
+/* megamenu: let long item titles (e.g. AI Blueprints) wrap instead of clipping */
+#topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item {
+  white-space: normal;
+  line-height: 1.45;
+}
