@@ -1,0 +1,641 @@
+---
+title: "NocoBase v2.0.3 : Plugins commerciaux open source et mise à jour de la licence AGPL-3.0 vers Apache-2.0"
+description: "Notes de version de la v2.0.3"
+---
+
+### 🎉 Nouvelles fonctionnalités
+
+- **[non défini]**
+
+  - Ajout d'un plugin expérimental "Bloc de référence", permettant de réutiliser des blocs existants par référence ou copie. ([#7584](https://github.com/nocobase/nocobase/pull/7584)) par @gchust
+  - Brouillons de formulaires par @chenos
+- **[acl]** Publication en open source des plugins commerciaux et mise à jour de la licence AGPL-3.0 vers Apache-2.0 ([#8682](https://github.com/nocobase/nocobase/pull/8682)) par @chenos
+- **[client]**
+
+  - Prise en charge de la configuration des titres d'onglets du navigateur pour les pages, les onglets de page, les popups et les onglets de popup ([#8590](https://github.com/nocobase/nocobase/pull/8590)) par @zhangzhonghe
+  - Prise en charge de la configuration des champs du champ de collection d'association dans le bloc de formulaire ([#8578](https://github.com/nocobase/nocobase/pull/8578)) par @katherinehhh
+  - Prise en charge de la configuration du mode de chargement des données ([#8551](https://github.com/nocobase/nocobase/pull/8551)) par @zhangzhonghe
+  - Ajout du composant de champ sous-table (édition contextuelle) ([#8280](https://github.com/nocobase/nocobase/pull/8280)) par @katherinehhh
+  - Lors de la création d'une collection, le type de champ id prédéfini peut être modifié ([#8129](https://github.com/nocobase/nocobase/pull/8129)) par @cgyrock
+  - Ajout de la prise en charge des paramètres ajouter/sélectionner/dissocier dans le sous-formulaire plusieurs-à-un ([#8099](https://github.com/nocobase/nocobase/pull/8099)) par @katherinehhh
+  - Prise en charge de la personnalisation des styles globaux dans l'éditeur de thème ([#7960](https://github.com/nocobase/nocobase/pull/7960)) par @ljmiaoo
+  - Prise en charge de la définition d'une règle de tri par défaut dans le bloc de détail ([#8070](https://github.com/nocobase/nocobase/pull/8070)) par @katherinehhh
+  - Prise en charge du réglage du type de données pour le champ Nombre (options : double, float, decimal) ([#8058](https://github.com/nocobase/nocobase/pull/8058)) par @chenos
+  - Prise en charge du tri des champs de colonne dans le tableau ([#7900](https://github.com/nocobase/nocobase/pull/7900)) par @katherinehhh
+  - Ajout de la prise en charge de la création rapide pour la sélection de champ d'association ([#7887](https://github.com/nocobase/nocobase/pull/7887)) par @katherinehhh
+  - Prise en charge du sélecteur en cascade pour le champ d'association de collection arborescente ([#7846](https://github.com/nocobase/nocobase/pull/7846)) par @katherinehhh
+  - Prise en charge du glisser-déposer pour les actions de colonne de tableau ([#7842](https://github.com/nocobase/nocobase/pull/7842)) par @zhangzhonghe
+  - Ajout de la prise en charge de la pagination pour la sous-table ([#7754](https://github.com/nocobase/nocobase/pull/7754)) par @katherinehhh
+  - Flux d'événements : Introduction de nouvelles actions prédéfinies pour améliorer les options de personnalisation de la gestion des événements, permettant aux utilisateurs de rationaliser les flux de travail et d'améliorer l'efficacité ([#7672](https://github.com/nocobase/nocobase/pull/7672)) par @zhangzhonghe
+  - Ajout du bloc markdown 2.0 ([#7613](https://github.com/nocobase/nocobase/pull/7613)) par @katherinehhh
+  - Prise en charge de la définition de règles de liaison pour les sous-formulaires ([#7640](https://github.com/nocobase/nocobase/pull/7640)) par @zhangzhonghe
+  - Ajout de la prise en charge des écouteurs d'événements de clic sur les lignes du tableau, permettant aux utilisateurs d'exécuter des actions spécifiques lorsqu'une ligne du tableau est cliquée ([#7622](https://github.com/nocobase/nocobase/pull/7622)) par @zhangzhonghe
+  - Ajout de la prise en charge des variables personnalisées ([#7585](https://github.com/nocobase/nocobase/pull/7585)) par @zhangzhonghe
+  - Ajout de la variable "Type d'appareil actuel" ([#7576](https://github.com/nocobase/nocobase/pull/7576)) par @zhangzhonghe
+- **[moteur de flux]** Prise en charge de env.ESM_CDN_BASE_URL ([#8529](https://github.com/nocobase/nocobase/pull/8529)) par @chenos
+- **[serveur]** Refonte du superviseur d'application pour prendre en charge la gestion multi-applications dans différents scénarios ([#8043](https://github.com/nocobase/nocobase/pull/8043)) par @2013xile
+- **[test]** Ajout d'un contrôle de concurrence au niveau du processus pour le gestionnaire de tâches de base ([#8343](https://github.com/nocobase/nocobase/pull/8343)) par @cgyrock
+- **[Action : Modification groupée]** modification groupée 2.0 ([#8526](https://github.com/nocobase/nocobase/pull/8526)) par @jiannx
+- **[Bloc : GridCard]**
+
+  - Prise en charge de la hauteur de bloc configurable ([#8583](https://github.com/nocobase/nocobase/pull/8583)) par @katherinehhh
+  - Ajout du bloc de carte en grille 2.0 ([#7579](https://github.com/nocobase/nocobase/pull/7579)) par @katherinehhh
+- **[Action : Dupliquer l'enregistrement]** ajout de l'action de duplication 2.0 ([#8580](https://github.com/nocobase/nocobase/pull/8580)) par @katherinehhh
+- **[Workflow]**
+
+  - Prise en charge de la copie, du collage et du déplacement de nœuds par glisser-déposer sur le canevas du workflow ([#8559](https://github.com/nocobase/nocobase/pull/8559)) par @mytharcher
+  - Ajout d'une API pour déplacer un nœud ([#8507](https://github.com/nocobase/nocobase/pull/8507)) par @mytharcher
+  - Ajout du nœud "Multi-conditions", fournissant le contrôle de flux comme `switch` / `case` ([#7878](https://github.com/nocobase/nocobase/pull/7878)) par @mytharcher
+    Référence : [Nœud "Multi-conditions"](https://v2.docs.nocobase.com/workflow/nodes/multi-conditions)
+- **[Employés IA]**
+
+  - Prise en charge du collage de fichiers dans le chat IA ([#8487](https://github.com/nocobase/nocobase/pull/8487)) par @heziqiang
+  - Prise en charge du modèle Gemini-3 avec signature de pensée d'appel de fonction ([#8377](https://github.com/nocobase/nocobase/pull/8377)) par @heziqiang
+  - Amélioration de la fonction de recherche web de plugin-ai ([#7580](https://github.com/nocobase/nocobase/pull/7580)) par @cgyrock
+- **[Bloc : Carte]** ajout du bloc carte 2.0 ([#7944](https://github.com/nocobase/nocobase/pull/7944)) par @katherinehhh
+- **[Visualisation de données]**
+
+  - Ajout d'un employé IA pour configurer le graphique ([#7815](https://github.com/nocobase/nocobase/pull/7815)) par @heziqiang
+  - Ajout d'une source de données SQL pour les graphiques ([#7830](https://github.com/nocobase/nocobase/pull/7830)) par @heziqiang
+  - Ajout du type de graphique "Graphique en anneau" ([#7629](https://github.com/nocobase/nocobase/pull/7629)) par @heziqiang
+- **[Moteur de flux]** Prise en charge de l'utilisation de chaînes de modèle LiquidJS dans les instructions SQL ([#7667](https://github.com/nocobase/nocobase/pull/7667)) par @2013xile
+- **[Gestionnaire de sources de données]**
+
+  - La source de données principale prend désormais en charge la lecture directe des tables de la base de données principale et permet de modifier les interfaces de champ ([#7118](https://github.com/nocobase/nocobase/pull/7118)) par @aaaaaajie
+  - La source de données principale prend désormais en charge la lecture directe des tables de la base de données principale et permet de modifier les interfaces de champ ([#7118](https://github.com/nocobase/nocobase/pull/7118)) par @aaaaaajie
+- **[Bloc : Liste]** Ajout du bloc liste 2.0 ([#7574](https://github.com/nocobase/nocobase/pull/7574)) par @katherinehhh
+- **[Bloc : Panneau d'actions]** Ajout du bloc panneau d'actions 2.0 ([#7594](https://github.com/nocobase/nocobase/pull/7594)) par @katherinehhh
+- **[Télémétrie]** Ajout d'un nouveau plugin : Télémétrie, un plugin de télémétrie basé sur OpenTelemetry fournissant des métriques CPU, mémoire et requêtes HTTP avec prise en charge de l'exportation HTTP par @2013xile
+- **[Workflow : Approbation]**
+
+  - Permet de choisir d'afficher l'instantané ou le dernier enregistrement dans l'interface utilisateur du processus d'approbation par @mytharcher
+  - Ajout de la configuration de l'audience pour contrôler qui peut initier une approbation par @mytharcher
+- **[Gestionnaire d'emails]** Implémentation de la gestion des emails 2.0 par @jiannx
+
+### 🚀 Améliorations
+
+- **[non défini]**
+
+  - Mise à jour de la documentation des employés IA ([#8690](https://github.com/nocobase/nocobase/pull/8690)) par @heziqiang
+  - Mise à jour de la documentation anglaise du plugin de graphiques ([#7748](https://github.com/nocobase/nocobase/pull/7748)) par @heziqiang
+  - Mise à jour du document de présentation des graphiques ([#7702](https://github.com/nocobase/nocobase/pull/7702)) par @heziqiang
+- **[client]**
+
+  - Amélioration de l'interface utilisateur d'affectation des champs date/heure pour prendre en charge la sélection de dates/heures relatives. ([#8630](https://github.com/nocobase/nocobase/pull/8630)) par @gchust
+  - Prise en charge de la spécification du champ de titre pour les champs d'association lors de l'affectation de champ. ([#8624](https://github.com/nocobase/nocobase/pull/8624)) par @gchust
+  - Le tableau 2.0 prend en charge le tri par glisser-déposer ([#8540](https://github.com/nocobase/nocobase/pull/8540)) par @jiannx
+  - Déplacement des paramètres d'affectation de champ et de valeur par défaut vers la configuration au niveau du formulaire. ([#8596](https://github.com/nocobase/nocobase/pull/8596)) par @chenos
+  - Utilisation de modèles de champ indépendants pour les champs d'association dans les formulaires de filtre ([#8511](https://github.com/nocobase/nocobase/pull/8511)) par @zhangzhonghe
+  - Ajustement du réglage de la largeur de colonne à la sélection déroulante dans la sous-table éditable en ligne ([#8561](https://github.com/nocobase/nocobase/pull/8561)) par @katherinehhh
+  - Amélioration des boutons de téléchargement et d'édition pour les champs de pièce jointe dans la sous-table pour mieux guider les utilisateurs à cliquer sur télécharger. ([#8474](https://github.com/nocobase/nocobase/pull/8474)) par @katherinehhh
+  - Amélioration du sous-formulaire plusieurs-à-un pour initialiser avec un élément par défaut et éviter la création d'enregistrements lorsqu'il est laissé vide ([#8473](https://github.com/nocobase/nocobase/pull/8473)) par @katherinehhh
+  - Amélioration du sous-formulaire plusieurs-à-un pour initialiser avec un élément par défaut et éviter la création d'enregistrements lorsqu'il est laissé vide ([#8458](https://github.com/nocobase/nocobase/pull/8458)) par @katherinehhh
+  - L'éditeur de texte enrichi prend en charge le réglage de la taille de police, le réglage de la taille de l'image et les sauts de ligne souples ([#8401](https://github.com/nocobase/nocobase/pull/8401)) par @jiannx
+  - Prise en charge de la spécification du moment d'exécution du flux d'événements. ([#8340](https://github.com/nocobase/nocobase/pull/8340)) par @gchust
+  - Empêche le rendu complet du tableau lors de la mise à jour d'une cellule ([#8349](https://github.com/nocobase/nocobase/pull/8349)) par @katherinehhh
+  - Redimensionnement automatique de la zone de texte dans le formulaire de tâche d'édition IA. ([#8350](https://github.com/nocobase/nocobase/pull/8350)) par @heziqiang
+  - Prise en charge du mode plein écran pour l'éditeur de code JS. ([#8294](https://github.com/nocobase/nocobase/pull/8294)) par @gchust
+  - Rendre "Ajouter un enfant" équivalent à "Ajouter nouveau" de l'association enfant correspondante ([#8272](https://github.com/nocobase/nocobase/pull/8272)) par @katherinehhh
+  - Prise en charge de l'effacement de la valeur par défaut pour le champ de couleur ([#8268](https://github.com/nocobase/nocobase/pull/8268)) par @katherinehhh
+  - Utilisation de la sélection pour la configuration de la largeur de la colonne d'opération ([#8218](https://github.com/nocobase/nocobase/pull/8218)) par @katherinehhh
+  - Prise en charge de la largeur de colonne personnalisée pour les colonnes de tableau ([#8200](https://github.com/nocobase/nocobase/pull/8200)) par @katherinehhh
+  - Modification de la largeur de colonne du tableau pour utiliser des options sélectionnables ([#8188](https://github.com/nocobase/nocobase/pull/8188)) par @katherinehhh
+  - Amélioration des styles de recordPicker avec maxTagCount ([#8175](https://github.com/nocobase/nocobase/pull/8175)) par @katherinehhh
+  - Optimisation des options de configuration (Blocs, Champs, Actions) ([#8141](https://github.com/nocobase/nocobase/pull/8141)) par @katherinehhh
+  - Prise en charge du formatage des nombres pour les champs de pourcentage ([#8123](https://github.com/nocobase/nocobase/pull/8123)) par @katherinehhh
+  - Correction du saut de pagination de la sous-table après la suppression d'une ligne et ajout de la prise en charge des règles de validation de colonne ([#8094](https://github.com/nocobase/nocobase/pull/8094)) par @katherinehhh
+  - Ajustement de l'affichage des grands champs dans la sous-table éditable ([#8078](https://github.com/nocobase/nocobase/pull/8078)) par @katherinehhh
+  - Prise en charge des points de suspension pour le contenu des champs JSON débordants ([#8067](https://github.com/nocobase/nocobase/pull/8067)) par @katherinehhh
+  - Prise en charge du paramètre allowMultiple dans le composant de téléchargement de pièce jointe ([#8052](https://github.com/nocobase/nocobase/pull/8052)) par @katherinehhh
+  - Affichage des options réduites au survol dans le composant Select ([#8030](https://github.com/nocobase/nocobase/pull/8030)) par @katherinehhh
+  - Prise en charge de l'initialisation des champs de filtre sélectionnés dans la requête de graphique ([#7933](https://github.com/nocobase/nocobase/pull/7933)) par @heziqiang
+  - Adaptation des composants pour les appareils mobiles ([#7870](https://github.com/nocobase/nocobase/pull/7870)) par @zhangzhonghe
+  - Ajout de la prise en charge de la bibliothèque Day.js dans le contexte de script RunJS, permettant des manipulations de date et d'heure plus faciles. ([#7841](https://github.com/nocobase/nocobase/pull/7841)) par @gchust
+  - Ajout de la version des informations de page au contexte du moteur de flux ([#7826](https://github.com/nocobase/nocobase/pull/7826)) par @gchust
+  - Amélioration de l'éditeur Markdown ([#7793](https://github.com/nocobase/nocobase/pull/7793)) par @katherinehhh
+  - Adaptation au champ tableoid dans la version 2.0 ([#7809](https://github.com/nocobase/nocobase/pull/7809)) par @katherinehhh
+  - Prise en charge de jsx dans l'éditeur de code JS ([#7699](https://github.com/nocobase/nocobase/pull/7699)) par @gchust
+  - Prise en charge des champs d'association dans le modèle de champ JS ([#7618](https://github.com/nocobase/nocobase/pull/7618)) par @gchust
+- **[moteur de flux]**
+
+  - Amélioration de la saisie semi-automatique et des indications de code dans l'éditeur de code du modèle JS. ([#8575](https://github.com/nocobase/nocobase/pull/8575)) par @gchust
+  - Amélioration de ctx.libs dans runjs pour prendre en charge le chargement à la demande, et ajout de bibliothèques prédéfinies : lodash, math et formula. ([#8468](https://github.com/nocobase/nocobase/pull/8468)) par @gchust
+  - Ajout de `rowOrder` à GridModel pour garantir un ordre de ligne cohérent ([#8371](https://github.com/nocobase/nocobase/pull/8371)) par @zhangzhonghe
+  - Prise en charge de la méthode window.loacation.reload dans l'environnement runjs. ([#8316](https://github.com/nocobase/nocobase/pull/8316)) par @gchust
+  - Optimisation des problèmes de performances lors du changement de modes de configuration ([#8241](https://github.com/nocobase/nocobase/pull/8241)) par @zhangzhonghe
+  - Prise en charge de l'objet FormData dans l'environnement runjs. ([#8263](https://github.com/nocobase/nocobase/pull/8263)) par @gchust
+  - Prise en charge du masquage dynamique du menu de configuration des étapes ([#7924](https://github.com/nocobase/nocobase/pull/7924)) par @gchust
+  - Ajout de l'option useCache à FlowModelRenderer ([#8072](https://github.com/nocobase/nocobase/pull/8072)) par @zhangzhonghe
+  - Ajout de la méthode `removeModelWithSubModels` pour supprimer récursivement un modèle et ses sous-modèles ([#8064](https://github.com/nocobase/nocobase/pull/8064)) par @zhangzhonghe
+  - Prise en charge du changement dynamique de classe de modèle de flux ([#7952](https://github.com/nocobase/nocobase/pull/7952)) par @gchust
+  - Prise en charge de l'écoute de l'événement de changement d'arborescence des modèles de flux dans le moteur de flux. ([#7905](https://github.com/nocobase/nocobase/pull/7905)) par @gchust
+  - Amélioration de la résolution de la variable d'enregistrement actuelle, rendant l'ouverture de la boîte de dialogue plus rapide ([#7895](https://github.com/nocobase/nocobase/pull/7895)) par @gchust
+  - Optimisation de la structure API des bibliothèques tierces dans le contexte runjs et ajout de la prise en charge de la bibliothèque d'icônes Antd. ([#7896](https://github.com/nocobase/nocobase/pull/7896)) par @gchust
+  - Optimisation du style de la barre d'outils pour empêcher les icônes d'être masquées ([#7883](https://github.com/nocobase/nocobase/pull/7883)) par @zhangzhonghe
+  - Optimisation des styles de la barre d'outils pour les onglets de page ([#7795](https://github.com/nocobase/nocobase/pull/7795)) par @zhangzhonghe
+  - Prise en charge de l'opération différée dans le modèle de flux ([#7786](https://github.com/nocobase/nocobase/pull/7786)) par @gchust
+  - Amélioration du message d'erreur affiché lors de l'échec de la copie de l'UID, fournissant des instructions plus claires pour résoudre le problème. ([#7718](https://github.com/nocobase/nocobase/pull/7718)) par @gchust
+  - Prise en charge de la définition du contexte de variable dans la définition de l'étape de flux ([#7674](https://github.com/nocobase/nocobase/pull/7674)) par @gchust
+  - Prise en charge du saut de l'étape de flux runjs en ajoutant skipRunJs=true à la chaîne de requête URL. ([#7638](https://github.com/nocobase/nocobase/pull/7638)) par @gchust
+  - Prise en charge de la variable popup ([#7583](https://github.com/nocobase/nocobase/pull/7583)) par @gchust
+  - Amélioration de l'expérience d'édition de code avec des extraits plus riches et des complétions de code contextuelles pour divers scénarios ([#7559](https://github.com/nocobase/nocobase/pull/7559)) par @gchust
+  - Standardisation des workflows automatiques pour qu'ils soient systématiquement déclenchés par l'événement "beforeRender", garantissant un fonctionnement prévisible et unifié entre les processus. ([#7577](https://github.com/nocobase/nocobase/pull/7577)) par @gchust
+  - Optimisation de la fonctionnalité de glisser-déposer ([#7526](https://github.com/nocobase/nocobase/pull/7526)) par @zhangzhonghe
+- **[acl]** acl ajoute la méthode generalFixedParams ([#8363](https://github.com/nocobase/nocobase/pull/8363)) par @jiannx
+- **[cli]** Prise en charge de la configuration de l'URL de base CDN via env ([#8384](https://github.com/nocobase/nocobase/pull/8384)) par @chenos
+- **[sdk]** Amélioration de l'implémentation du stockage API ([#8308](https://github.com/nocobase/nocobase/pull/8308)) par @chenos
+- **[télémétrie]**
+
+  - Prise en charge du contrôle des métriques exportées ([#7938](https://github.com/nocobase/nocobase/pull/7938)) par @2013xile
+  - Ajout de métriques de télémétrie pour le nombre de sous-applications en ligne, etc. ([#7743](https://github.com/nocobase/nocobase/pull/7743)) par @2013xile
+- **[base de données]** Refonte du plugin de chiffrement de champ pour renforcer la sécurité, prenant en charge la génération et la rotation de clés d'application, et des clés de chiffrement par champ. ([#7769](https://github.com/nocobase/nocobase/pull/7769)) par @cgyrock
+- **[Localisation]** Création automatique des clés i18n manquantes ([#8588](https://github.com/nocobase/nocobase/pull/8588)) par @jiannx
+- **[Workflow : CC]** Refonte du plugin CC du workflow pour prendre en charge l'architecture FlowModel avec compatibilité v1/v2 ([#8405](https://github.com/nocobase/nocobase/pull/8405)) par @zhangzhonghe
+- **[Workflow]**
+
+  - Modification du chemin de route des sous-pages de workflow, pour placer toutes les pages de workflow sous le préfixe `/admin/settings/workflow` ([#8519](https://github.com/nocobase/nocobase/pull/8519)) par @mytharcher
+  - Achèvement de la configuration du workflow lié pour le bouton d'action de mise à jour d'enregistrement ([#7668](https://github.com/nocobase/nocobase/pull/7668)) par @mytharcher
+- **[Gestionnaire de fichiers]**
+
+  - Ajout d'un visualiseur extensible pour le gestionnaire de fichiers ([#8501](https://github.com/nocobase/nocobase/pull/8501)) par @mytharcher
+  - Ajout d'options de requête pour la récupération de fichiers OSS côté serveur si des paramètres ou en-têtes supplémentaires sont nécessaires ([#8372](https://github.com/nocobase/nocobase/pull/8372)) par @mytharcher
+- **[Action : Exporter les enregistrements]** Amélioration de la portée des données d'exportation en fonction des enregistrements sélectionnés ou des filtres de ressource ([#8442](https://github.com/nocobase/nocobase/pull/8442)) par @katherinehhh
+- **[Moteur de flux]** Prise en charge de la résolution des valeurs des champs dans l'enregistrement de formulaire actuel même s'ils ne sont pas ajoutés au formulaire d'édition. ([#8436](https://github.com/nocobase/nocobase/pull/8436)) par @gchust
+- **[Employés IA]**
+
+  - Changement du résultat de l'appelant de workflow en `execution.output`, en utilisant explicitement le nœud de sortie, le résultat pourrait être stable ([#8423](https://github.com/nocobase/nocobase/pull/8423)) par @mytharcher
+  - Optimisation du bouton d'entrée IA ([#8414](https://github.com/nocobase/nocobase/pull/8414)) par @heziqiang
+  - Masquage de l'IA du constructeur dans la liste d'entrée.<br/> Optimisation du flux d'intégration LLM.<br/> Mise à jour de la documentation sur le modèle IA gemini-3. ([#8409](https://github.com/nocobase/nocobase/pull/8409)) par @heziqiang
+  - Prise en charge d'Anthropic et Claude-4.5 ([#8389](https://github.com/nocobase/nocobase/pull/8389)) par @heziqiang
+  - Prise en charge de l'édition personnalisée et de la mise à jour automatique des invites système ([#8378](https://github.com/nocobase/nocobase/pull/8378)) par @heziqiang
+  - Amélioration de la gestion des erreurs IA pour les services et modèles LLM ([#8351](https://github.com/nocobase/nocobase/pull/8351)) par @heziqiang
+  - Amélioration de la compatibilité Gemini pour les nœuds LLM dans le workflow.<br/>Optimisation de l'outil IA dataSourceQuery pour la gestion de données à grande échelle.<br/>Résolution des problèmes de modélisation de données.<br/>Ajout d'un outil de suggestion IA. ([#8249](https://github.com/nocobase/nocobase/pull/8249)) par @heziqiang
+  - Correction du problème où l'employé IA ne répondait pas lors de la première soumission d'édition<br/>Suppression de l'employé IA intégré inutile "Avery Form Assistant"<br/>Ajout d'autorisations de rôle initiales par défaut pour les employés IA intégrés<br/>Amélioration de la gestion des erreurs et du comportement de sortie des employés IA<br/>Ajout de la prise en charge de l'accès de l'IA aux variables de contexte modal<br/>Ajout de la prise en charge des sources de données externes pour l'IA<br/>Correction de la troncature incorrecte de la conversation lorsque l'IA traite de grands volumes de données ([#8191](https://github.com/nocobase/nocobase/pull/8191)) par @heziqiang
+  - Activation de la fonctionnalité d'édition pour les invites système de l'assistant IA intégré.<br/>Optimisation de l'invite système pour l'assistant IA Nathan.<br/>Correction d'un problème avec le serveur ne parvenant pas à lire les fichiers statiques. ([#8097](https://github.com/nocobase/nocobase/pull/8097)) par @heziqiang
+  - Ajout du champ fournisseur manquant au formulaire Ajouter LLM ([#8049](https://github.com/nocobase/nocobase/pull/8049)) par @heziqiang
+  - Ajout d'un hook de mise à niveau pour le plugin d'employé IA ([#7951](https://github.com/nocobase/nocobase/pull/7951)) par @heziqiang
+  - Amélioration de la logique d'interaction des employés IA et optimisation du flux de configuration des tâches ([#7707](https://github.com/nocobase/nocobase/pull/7707)) par @cgyrock
+  - L'employé IA peut interroger les données de manière autonome en fonction des métadonnées du bloc de tableau ([#7703](https://github.com/nocobase/nocobase/pull/7703)) par @cgyrock
+  - Optimisation de l'expérience de codage IA, y compris l'utilisation de l'employé IA pour réviser, diagnostiquer et corriger le code. ([#7679](https://github.com/nocobase/nocobase/pull/7679)) par @cgyrock
+  - Refonte du fournisseur LLM OpenAI en deux fournisseurs distincts pour prendre en charge les API Completions et Responses d'OpenAI. ([#7615](https://github.com/nocobase/nocobase/pull/7615)) par @cgyrock
+  - Ajout du nouveau fournisseur LLM Ollama ([#7612](https://github.com/nocobase/nocobase/pull/7612)) par @ReLaMi96
+  - Optimisation du codage IA ([#7614](https://github.com/nocobase/nocobase/pull/7614)) par @cgyrock
+  - Ajout d'un bouton de réduction pour la boîte de chat dans la disposition mobile ([#7595](https://github.com/nocobase/nocobase/pull/7595)) par @cgyrock
+- **[Modèles d'interface utilisateur]**
+
+  - Ajout de la prise en charge des modèles de champ pour le bloc de détails. ([#8247](https://github.com/nocobase/nocobase/pull/8247)) par @gchust
+  - Ajout du plugin de modèles d'interface utilisateur, offrant la possibilité de réutiliser des modèles de blocs et des modèles de popup. ([#8163](https://github.com/nocobase/nocobase/pull/8163)) par @gchust
+- **[Bloc : Panneau d'actions]** Amélioration de l'affichage des blocs, actions et champs masqués en mode configuration ([#8174](https://github.com/nocobase/nocobase/pull/8174)) par @katherinehhh
+- **[Bloc : Liste]** Ajout d'un bouton Lien pour les blocs Tableau, Liste et Carte en grille ([#8194](https://github.com/nocobase/nocobase/pull/8194)) par @katherinehhh
+- **[Bloc : Carte]** Prise en charge des points de suspension pour le débordement de texte pour le champ de carte en mode d'affichage texte ([#8189](https://github.com/nocobase/nocobase/pull/8189)) par @katherinehhh
+- **[Bloc : GridCard]**
+
+  - Optimisation des styles du bloc Carte en grille pour une disposition plus compacte ([#8152](https://github.com/nocobase/nocobase/pull/8152)) par @katherinehhh
+  - Ajout de la configuration du nombre de lignes pour la carte en grille et remplacement de pageSize par un calcul automatique ([#8055](https://github.com/nocobase/nocobase/pull/8055)) par @katherinehhh
+- **[Champ de collection : Markdown(Vditor)]** Désactivation de l'analyse des variables dans le champ Markdown par défaut en mode readPretty ([#8145](https://github.com/nocobase/nocobase/pull/8145)) par @katherinehhh
+- **[Action : Importer des enregistrements]** Autorisation de sélectionner l'ID pour les champs d'importation ([#8133](https://github.com/nocobase/nocobase/pull/8133)) par @katherinehhh
+- **[Gestionnaire de tâches asynchrones]** Les tâches asynchrones pour les sous-applications ne doivent démarrer que les sous-applications cibles dans les Workers ([#7927](https://github.com/nocobase/nocobase/pull/7927)) par @2013xile
+- **[Visualisation de données]**
+
+  - Mise à jour des conseils d'alerte et des annotations de modèle de code d'événements ([#7814](https://github.com/nocobase/nocobase/pull/7814)) par @heziqiang
+  - Ajout d'options de format de temps pour les données de graphique ([#7763](https://github.com/nocobase/nocobase/pull/7763)) par @heziqiang
+  - Ajout d'un conseil pour exécuter la requête avant de configurer les options du graphique ([#7685](https://github.com/nocobase/nocobase/pull/7685)) par @heziqiang
+  - Rafraîchissement des données du graphique lors du clic sur le bouton d'aperçu global ([#7678](https://github.com/nocobase/nocobase/pull/7678)) par @heziqiang
+  - Mise à jour du plugin-data-vi 2.0, correction de certains problèmes et optimisation de l'interface utilisateur. ([#7597](https://github.com/nocobase/nocobase/pull/7597)) par @heziqiang
+  - Extension des types de graphiques ; Optimisation de l'interface utilisateur et de l'expérience interactive. ([#7581](https://github.com/nocobase/nocobase/pull/7581)) par @heziqiang
+- **[Gestionnaire multi-applications (obsolète)]**
+
+  - Activation du démarrage asynchrone pour les sous-applications à l'aide d'une file d'attente ([#7749](https://github.com/nocobase/nocobase/pull/7749)) par @2013xile
+  - Amélioration du superviseur d'application ([#7661](https://github.com/nocobase/nocobase/pull/7661)) par @chenos
+- **[Gestionnaire de sources de données]** Ajustement de l'ordre des colonnes du type de champ et de l'interface, et ajout d'une étape de confirmation lors des modifications. ([#7680](https://github.com/nocobase/nocobase/pull/7680)) par @2013xile
+- **[Multi-espace]**
+
+  - Contrôle d'accès aux autorisations multi-espace acl par @jiannx
+  - Utilisation de api.storage pour remplacer localstorage, refonte du contrôle d'accès et correction de bugs par @jiannx
+- **[IA : Base de connaissances]** Optimisation de la sortie de construction pour réduire la taille du package de plugin-ai-knowledge-base. par @cgyrock
+- **[Action : Exporter les enregistrements Pro]**
+
+  - Amélioration de la portée des données d'exportation en fonction des enregistrements sélectionnés ou des filtres de ressource par @katherinehhh
+  - Les actions import pro & export pro prennent en charge le contrôle d'accès par @katherinehhh
+- **[Télémétrie : Prometheus]** Mise à niveau de `@opentelemetry/exporter-prometheus` par @2013xile
+- **[Champ de collection : Chiffrement]** Optimisation du plugin de chiffrement de champ pour prendre en charge la récupération de données avec des IV indépendants par @cgyrock
+- **[Workflow : Approbation]**
+
+  - Suppression de la prise en charge des champs JS par @zhangzhonghe
+  - Mise à jour de `approval.data` vers la dernière version de l'enregistrement en cours d'approbation à la fin de l'exécution, pour correspondre au mode d'affichage "Dernier" enregistrement par @mytharcher
+  - Ajout d'une logique de réparation pour les audiences synchronisées après la migration par @mytharcher
+  - Modification de l'API pour obtenir un seul élément d'approbation, et simplification du code par @mytharcher
+  - Implémentation du contrôle d'accès pour les API afin d'empêcher les opérations de données non autorisées par @mytharcher
+
+### 🐛 Corrections de bugs
+
+- **[non défini]**
+
+  - Correction du problème de style incorrect sur la page d'accueil de la documentation du plugin en mode sombre. ([#7839](https://github.com/nocobase/nocobase/pull/7839)) par @gchust
+  - Correction d'un problème où la citation d'un bloc supprimait le bloc cité de la page d'origine. ([#7969](https://github.com/nocobase/nocobase/pull/7969)) par @gchust
+  - La correspondance du chemin de routage prend en charge les nouvelles applications multiples ([#7570](https://github.com/nocobase/nocobase/pull/7570)) par @jiannx
+  - Correction du problème où les paramètres et la charge utile sont incorrects lors du déclenchement d'un workflow personnalisé par @mytharcher
+  - Correction de l'affichage d'un avertissement lorsque le bloc de commentaire est utilisé sur une collection non commentaire par @katherinehhh
+  - Correction de l'échec de la suppression d'un enregistrement dans le bloc de commentaire par @katherinehhh
+  - Correction du problème lorsque les commentaires cités dans le bloc de commentaire ne s'affichent pas par @katherinehhh
+- **[client]**
+
+  - Uniformisation du comportement de pagination mobile pour le tableau et la carte en grille ([#8691](https://github.com/nocobase/nocobase/pull/8691)) par @zhangzhonghe
+  - Le filtre du bloc de graphique ne fonctionne pas ([#8671](https://github.com/nocobase/nocobase/pull/8671)) par @chenos
+  - Correction d'un problème où l'affectation d'un seul enregistrement à un champ de relation plusieurs-à-plusieurs produisait des résultats incorrects. ([#8652](https://github.com/nocobase/nocobase/pull/8652)) par @gchust
+  - Analyse de la date à l'aide du sélecteur de date et ajout de la validation de la force du mot de passe, etc. ([#8647](https://github.com/nocobase/nocobase/pull/8647)) par @jiannx
+  - Correction du problème d'espacement causé par les actions liées masquées dans la colonne d'action du tableau ([#8646](https://github.com/nocobase/nocobase/pull/8646)) par @zhangzhonghe
+  - Correction du problème où `Action.Modal` ne pouvait pas être fermé après une certaine interaction ([#8642](https://github.com/nocobase/nocobase/pull/8642)) par @mytharcher
+  - Correction de l'erreur de syntaxe de résolution lorsque l'élément markdown rend du Liquid invalide ([#8637](https://github.com/nocobase/nocobase/pull/8637)) par @katherinehhh
+  - Correction des requêtes d'analyse backend inutiles pour les propriétés de champ plusieurs-à-un dans le bloc de formulaire. ([#8636](https://github.com/nocobase/nocobase/pull/8636)) par @gchust
+  - Correction du format de nombre manquant pour les champs de formule de nombre et des paramètres de format de date pour les champs de formule de date ([#8625](https://github.com/nocobase/nocobase/pull/8625)) par @katherinehhh
+  - Correction du rendu incomplet de la bordure supérieure sur le premier élément de formulaire ([#8623](https://github.com/nocobase/nocobase/pull/8623)) par @katherinehhh
+  - Correction des données filtrées incorrectes dans la liste déroulante d'association lorsque le champ de titre est une clé étrangère ([#8619](https://github.com/nocobase/nocobase/pull/8619)) par @katherinehhh
+  - Correction de l'impossibilité de restaurer les données sélectionnées dans le composant de champ de sélection d'enregistrement après édition ([#8610](https://github.com/nocobase/nocobase/pull/8610)) par @katherinehhh
+  - Correction d'un problème où les colonnes du tableau ne se rendaient pas à nouveau après avoir cliqué sur Exécuter dans l'éditeur de colonne JS. ([#8608](https://github.com/nocobase/nocobase/pull/8608)) par @gchust
+  - Correction d'une erreur de rendu "read hidden" potentielle en mode non-configuration. ([#8591](https://github.com/nocobase/nocobase/pull/8591)) par @gchust
+  - Correction du problème où la sous-table (édition en ligne) affiche encore les colonnes en mode édition après être passée en vue en lecture seule dans le formulaire d'édition ([#8589](https://github.com/nocobase/nocobase/pull/8589)) par @katherinehhh
+  - Correction des problèmes d'espace vide dans la disposition Grid ([#8535](https://github.com/nocobase/nocobase/pull/8535)) par @zhangzhonghe
+  - Correction du problème où la largeur de colonne ne se met pas à jour dans la sous-table (édition en ligne) ; la saisie de texte multiligne ne se redimensionne pas avec la largeur de colonne ([#8573](https://github.com/nocobase/nocobase/pull/8573)) par @katherinehhh
+  - Correction du problème où un rafraîchissement de page était nécessaire pour ajouter un enregistrement enfant après avoir activé le tableau arborescent ([#8574](https://github.com/nocobase/nocobase/pull/8574)) par @katherinehhh
+  - Correction d'un problème où l'utilisation de la "Création rapide" du sélecteur d'enregistrement d'association dans le formulaire d'édition écrasait les données de formulaire existantes. ([#8567](https://github.com/nocobase/nocobase/pull/8567)) par @gchust
+  - Correction : masquer "Activer le tableau arborescent" et "Développer toutes les lignes par défaut" pour les collections non arborescentes ([#8566](https://github.com/nocobase/nocobase/pull/8566)) par @katherinehhh
+  - Correction d'un problème où le menu "Formulaire (Ajouter nouveau)" était incorrectement affiché dans la popup d'action "Créer nouveau". ([#8562](https://github.com/nocobase/nocobase/pull/8562)) par @gchust
+  - Correction du problème où les données de page sont incorrectement rafraîchies après avoir ouvert et fermé la popup pour la première fois. ([#8548](https://github.com/nocobase/nocobase/pull/8548)) par @gchust
+  - Correction d'un problème où le flux d'événements ne s'appliquait pas lors du rafraîchissement des blocs cibles à travers une popup. ([#8541](https://github.com/nocobase/nocobase/pull/8541)) par @gchust
+  - Correction du problème où le champ nanoid ne régénérait pas la valeur par défaut après la soumission de la création ([#8538](https://github.com/nocobase/nocobase/pull/8538)) par @katherinehhh
+  - Correction de l'affichage incorrect lors de la définition de valeurs par défaut pour le modèle de champ cascader ([#8537](https://github.com/nocobase/nocobase/pull/8537)) par @katherinehhh
+  - Correction d'un problème qui provoquait le rafraîchissement répété du bloc de données après la soumission d'un formulaire. ([#8531](https://github.com/nocobase/nocobase/pull/8531)) par @gchust
+  - Correction des problèmes connus liés au filtrage ([#8514](https://github.com/nocobase/nocobase/pull/8514)) par @zhangzhonghe
+  - Correction d'un problème qui empêchait l'utilisation de variables de formulaire pour affecter des valeurs dans les règles de liaison pour les champs de sous-formulaire plusieurs-à-un à plusieurs niveaux. ([#8518](https://github.com/nocobase/nocobase/pull/8518)) par @gchust
+  - Correction d'un problème où les données ne se rafraîchissaient pas après des modifications à travers des popups à plusieurs niveaux et à travers des blocs. ([#8471](https://github.com/nocobase/nocobase/pull/8471)) par @gchust
+  - Correction de l'heure dupliquée dans la valeur DateTime du filtre ([#8506](https://github.com/nocobase/nocobase/pull/8506)) par @zhangzhonghe
+  - Correction de l'heure dupliquée dans la valeur DateTime du filtre ([#8484](https://github.com/nocobase/nocobase/pull/8484)) par @zhangzhonghe
+  - Correction du problème où les popovers de l'éditeur de texte enrichi sont masqués ([#8443](https://github.com/nocobase/nocobase/pull/8443)) par @zhangzhonghe
+  - Filtrage de la liste pour supprimer les doublons ([#8431](https://github.com/nocobase/nocobase/pull/8431)) par @jiannx
+  - Correction du problème où les données de sous-détail en mode lecture seule ne pouvaient pas être affichées correctement dans le formulaire d'édition ([#8469](https://github.com/nocobase/nocobase/pull/8469)) par @katherinehhh
+  - Correction du problème où la popup "Variables personnalisées" est masquée ([#8463](https://github.com/nocobase/nocobase/pull/8463)) par @zhangzhonghe
+  - Correction d'un problème où la popup du sélecteur du champ de fichier d'association avait un z-index incorrect, et la configuration de la popup ne pouvait pas être enregistrée correctement. ([#8446](https://github.com/nocobase/nocobase/pull/8446)) par @gchust
+  - Correction du problème où la hauteur de la fenêtre modale de raccourci dépasse la hauteur de la fenêtre d'affichage ([#8437](https://github.com/nocobase/nocobase/pull/8437)) par @zhangzhonghe
+  - Correction d'un problème où l'état de la colonne d'action du tableau était pollué lors du changement de pages. ([#8438](https://github.com/nocobase/nocobase/pull/8438)) par @gchust
+  - Correction du problème où le paramètre de champ de titre disparaît après avoir défini l'URL de la pièce jointe, puis changé pour un autre champ dans l'élément de formulaire ([#8418](https://github.com/nocobase/nocobase/pull/8418)) par @katherinehhh
+  - Correction du problème où le champ de titre ne se met pas à jour lorsque le champ d'association est défini en mode lecture seule dans le formulaire de création ([#8413](https://github.com/nocobase/nocobase/pull/8413)) par @katherinehhh
+  - Le composant de saisie de nombre n'affiche pas la valeur ([#8410](https://github.com/nocobase/nocobase/pull/8410)) par @chenos
+  - Correction du problème où le paramètre de disposition dans le bloc de carte en grille ne prend pas effet ([#8399](https://github.com/nocobase/nocobase/pull/8399)) par @katherinehhh
+  - Résolution du problème avec l'apparition du bouton de soumission dans la popup de sélection de fichier du champ d'association un-à-un ([#8398](https://github.com/nocobase/nocobase/pull/8398)) par @katherinehhh
+  - Correction de l'empêchement de l'affectation lorsque des caractères chinois sont saisis dans le champ de nombre ([#8397](https://github.com/nocobase/nocobase/pull/8397)) par @katherinehhh
+  - Correction de la logique d'affinement pour targetKey optionnel ([#8333](https://github.com/nocobase/nocobase/pull/8333)) par @katherinehhh
+  - Correction d'un problème où un champ d'association pouvait encore ouvrir une popup après être passé du composant de sélection d'enregistrement au composant de sélection. ([#8375](https://github.com/nocobase/nocobase/pull/8375)) par @gchust
+  - Correction du problème où les règles de liaison n'étaient pas réexécutées après un changement de pagination pour le bloc de détails, le bloc de formulaire d'édition et le bloc de liste. ([#8366](https://github.com/nocobase/nocobase/pull/8366)) par @gchust
+  - Correction d'un problème où les champs configurés de sous-table/sous-formulaire ne s'affichaient pas lors du va-et-vient entre les composants de champ. ([#8365](https://github.com/nocobase/nocobase/pull/8365)) par @gchust
+  - Correction d'un problème où les autorisations de champ et d'action n'étaient pas recalculées après la pagination dans les blocs de détails, de liste et de formulaire. ([#8336](https://github.com/nocobase/nocobase/pull/8336)) par @gchust
+  - Correction des paramètres de filtre incorrects pour le champ de relation Select dans la sous-table éditable ([#8335](https://github.com/nocobase/nocobase/pull/8335)) par @katherinehhh
+  - Correction de la logique d'affinement pour targetKey optionnel ([#8333](https://github.com/nocobase/nocobase/pull/8333)) par @katherinehhh
+  - Correction des données incorrectes dans la boîte de dialogue de sous-détail du bloc de détails ([#8318](https://github.com/nocobase/nocobase/pull/8318)) par @katherinehhh
+  - Correction d'un problème où une erreur se produisait lors de la fermeture de la popup actuelle après avoir ouvert consécutivement les popups de configuration des règles de liaison et du flux d'événements. ([#8312](https://github.com/nocobase/nocobase/pull/8312)) par @gchust
+  - Correction d'un problème où une erreur se produisait lors de la fermeture de la popup actuelle après avoir ouvert consécutivement les popups de configuration des règles de liaison et du flux d'événements. ([#8312](https://github.com/nocobase/nocobase/pull/8312)) par @gchust
+  - Correction d'un problème où les modifications de la bascule d'édition rapide dans les blocs de tableau nécessitaient un rafraîchissement de la page pour prendre effet. ([#8311](https://github.com/nocobase/nocobase/pull/8311)) par @gchust
+  - Correction d'un problème où les blocs utilisant des paramètres de requête URL comme portées de données ne se rafraîchissaient pas correctement lorsque les paramètres de requête changeaient lors du changement de menu. ([#8310](https://github.com/nocobase/nocobase/pull/8310)) par @gchust
+  - Correction des problèmes d'autorisation dans le composant de champ d'association ([#8243](https://github.com/nocobase/nocobase/pull/8243)) par @katherinehhh
+  - Correction du problème où les données de sous-détail ne se mettaient pas à jour lors de la pagination du bloc de détails ([#8305](https://github.com/nocobase/nocobase/pull/8305)) par @katherinehhh
+  - Correction du problème où le contenu de la sous-table imbriquée ne se mettait pas à jour lors du changement de pages dans le formulaire d'édition ([#8304](https://github.com/nocobase/nocobase/pull/8304)) par @katherinehhh
+  - Correction du problème où la popup ne pouvait pas être ouverte et amélioration de la stabilité de la navigation ([#8287](https://github.com/nocobase/nocobase/pull/8287)) par @zhangzhonghe
+  - Correction de l'erreur lors du passage du composant Select au composant Array Subform ([#8301](https://github.com/nocobase/nocobase/pull/8301)) par @katherinehhh
+  - Interdiction d'ajouter des champs d'association au bloc de formulaire via JS Field. ([#8296](https://github.com/nocobase/nocobase/pull/8296)) par @gchust
+  - Correction d'un problème où les données se rafraîchissaient plusieurs fois après l'action de mise à jour d'enregistrement. ([#8299](https://github.com/nocobase/nocobase/pull/8299)) par @gchust
+  - Correction du problème où l'ajout de nouvelles données dans le sous-formulaire est écrasé par les données sélectionnées ([#8292](https://github.com/nocobase/nocobase/pull/8292)) par @katherinehhh
+  - Correction d'un problème où l'élément JS ne se rafraîchissait pas après l'édition d'un enregistrement dans le bloc de détails. ([#8291](https://github.com/nocobase/nocobase/pull/8291)) par @gchust
+  - Correction d'un problème où les enregistrements nouvellement ajoutés ne se rafraîchissaient pas dans la popup du composant de champ de sélecteur de données. ([#8289](https://github.com/nocobase/nocobase/pull/8289)) par @gchust
+  - Correction de l'erreur de rendu pour le bloc JS en état masqué. ([#8286](https://github.com/nocobase/nocobase/pull/8286)) par @gchust
+  - Correction du problème où une erreur était levée dans les paramètres du bloc de formulaire de filtre du champ m2m ([#8282](https://github.com/nocobase/nocobase/pull/8282)) par @mytharcher
+  - Correction de l'empêchement des erreurs de bloc après la suppression d'un champ d'association ([#8273](https://github.com/nocobase/nocobase/pull/8273)) par @katherinehhh
+  - Correction du problème où les valeurs par défaut du formulaire de filtre ne déclenchaient pas le filtre lors du rendu initial ([#8232](https://github.com/nocobase/nocobase/pull/8232)) par @zhangzhonghe
+  - Correction du problème où la colonne d'opération du bloc de tableau ne pouvait pas être supprimée. ([#8230](https://github.com/nocobase/nocobase/pull/8230)) par @gchust
+  - Correction du problème où l'exécution de l'aperçu écrivait la sortie JSX compilée dans stepParams, provoquant la réécriture du code source enregistré. ([#8171](https://github.com/nocobase/nocobase/pull/8171)) par @gchust
+  - Correction de l'erreur de téléchargement de pièce jointe S3 Pro et amélioration de l'aperçu des fichiers ([#8211](https://github.com/nocobase/nocobase/pull/8211)) par @katherinehhh
+  - Empêchement du débordement de la largeur totale de la ligne lors du redimensionnement de la colonne ([#8166](https://github.com/nocobase/nocobase/pull/8166)) par @zhangzhonghe
+  - Correction d'un problème où la sélection de "Non" pour un filtre de case à cocher appliquait toujours le filtre "Oui". ([#8170](https://github.com/nocobase/nocobase/pull/8170)) par @gchust
+  - Correction du problème où le bouton de soumission n'était pas affiché dans le formulaire de création lorsque le rôle avait l'autorisation de création ([#8190](https://github.com/nocobase/nocobase/pull/8190)) par @katherinehhh
+  - Empêchement de l'effacement des données existantes de sous-table/sous-formulaire lors de la soumission sans sélectionner d'éléments ([#8172](https://github.com/nocobase/nocobase/pull/8172)) par @katherinehhh
+  - Empêchement de l'apparition du paramètre de portée de données dans la configuration du formulaire de création ([#8176](https://github.com/nocobase/nocobase/pull/8176)) par @katherinehhh
+  - Correction du problème de rendu du champ tableoid dans le bloc de formulaire ([#8177](https://github.com/nocobase/nocobase/pull/8177)) par @katherinehhh
+  - Échec de l'enregistrement du flux d'événements d'onglet ([#8168](https://github.com/nocobase/nocobase/pull/8168)) par @chenos
+  - Suppression de l'espace supplémentaire après le masquage de l'onglet ([#8167](https://github.com/nocobase/nocobase/pull/8167)) par @chenos
+  - Correction du filtrage incorrect des options sélectionnées dans la sélection d'enregistrement d'association ([#8151](https://github.com/nocobase/nocobase/pull/8151)) par @katherinehhh
+  - Correction du problème où la liste déroulante du champ d'association était désactivée lorsqu'un champ d'options existait ([#8153](https://github.com/nocobase/nocobase/pull/8153)) par @katherinehhh
+  - Correction d'un problème où le changement de champs d'étiquette entraînait la perte des configurations de popup. ([#8136](https://github.com/nocobase/nocobase/pull/8136)) par @gchust
+  - Correction d'un problème où la saisie de texte chinois effaçait les options existantes lors de l'utilisation d'opérateurs multi-sélection sur un champ à sélection unique dans le bloc de formulaire de filtre. ([#8140](https://github.com/nocobase/nocobase/pull/8140)) par @gchust
+  - Correction de l'empêchement de l'état désactivé de l'enfant de bloquer la sélection du champ de relation ([#8131](https://github.com/nocobase/nocobase/pull/8131)) par @katherinehhh
+  - Correction d'un problème où les étiquettes de champ par défaut dans le bloc de formulaire de filtre ne pouvaient pas être correctement traduites dans plusieurs langues. ([#8135](https://github.com/nocobase/nocobase/pull/8135)) par @gchust
+  - Correction d'un problème où la largeur du composant d'interface utilisateur était incohérente lors de la sélection de "Passé" ou "Suivant" pour les champs de filtre de date. ([#8130](https://github.com/nocobase/nocobase/pull/8130)) par @gchust
+  - Correction d'un problème où les styles de titre et de description du bloc JS étaient incohérents avec les autres blocs. ([#8115](https://github.com/nocobase/nocobase/pull/8115)) par @gchust
+  - Correction du problème de saut de ligne de l'infobulle du champ de texte long ([#8122](https://github.com/nocobase/nocobase/pull/8122)) par @katherinehhh
+  - Correction d'un problème où les options sélectionnables n'étaient pas entièrement listées lors de l'utilisation des opérateurs "est l'un de" ou "n'est aucun de" pour le filtrage de champ basé sur des options. ([#8118](https://github.com/nocobase/nocobase/pull/8118)) par @gchust
+  - Correction du problème où la sous-table imbriquée dans le sous-formulaire n'affichait pas les données ([#8117](https://github.com/nocobase/nocobase/pull/8117)) par @katherinehhh
+  - Correction d'un problème où l'effacement des valeurs de filtre de temps entre et le déclenchement à nouveau du filtre provoquait une erreur. ([#8110](https://github.com/nocobase/nocobase/pull/8110)) par @gchust
+  - Correction d'un problème où les données sélectionnables pour les champs d'association dans le bloc de formulaire de filtre étaient incorrectes. ([#8109](https://github.com/nocobase/nocobase/pull/8109)) par @gchust
+  - Correction d'un problème où les configurations de champs personnalisés dans le formulaire de filtre n'étaient pas correctement pré-remplies et certains paramètres ne prenaient pas effet. ([#8106](https://github.com/nocobase/nocobase/pull/8106)) par @gchust
+  - Correction d'un problème où le filtrage sur les champs de case à cocher ne prenait pas effet. ([#8103](https://github.com/nocobase/nocobase/pull/8103)) par @gchust
+  - Correction d'un problème où la valeur du champ de nombre n'était pas correctement pré-remplie dans l'action de filtre. ([#8104](https://github.com/nocobase/nocobase/pull/8104)) par @gchust
+  - Correction d'un problème où certains opérateurs de champ dans les formulaires de filtre ne parvenaient pas à filtrer les données correctement. ([#8100](https://github.com/nocobase/nocobase/pull/8100)) par @gchust
+  - Correction d'un problème où les champs configurés d'un bloc supprimé n'étaient pas supprimés du bloc de filtre. ([#8098](https://github.com/nocobase/nocobase/pull/8098)) par @gchust
+  - Correction de l'espace supplémentaire lorsque le bouton est masqué en mode non-configuration ([#8092](https://github.com/nocobase/nocobase/pull/8092)) par @katherinehhh
+  - Correction d'un problème où le texte du bouton de réinitialisation dans le bloc de formulaire de filtre ne pouvait pas être modifié. ([#8089](https://github.com/nocobase/nocobase/pull/8089)) par @gchust
+  - Correction d'un problème où la saisie de champ ne prenait pas en charge plusieurs valeurs lors de l'utilisation des opérateurs $in ou $notIn pour les champs de filtrage. ([#8081](https://github.com/nocobase/nocobase/pull/8081)) par @gchust
+  - Correction d'un problème où les blocs de données nouvellement ajoutés n'apparaissaient pas automatiquement dans le menu de champ du bloc de formulaire de filtre. ([#8085](https://github.com/nocobase/nocobase/pull/8085)) par @gchust
+  - Le menu de configuration pour les champs d'association dans les formulaires de filtre ne doit pas afficher l'option de création rapide. ([#8083](https://github.com/nocobase/nocobase/pull/8083)) par @gchust
+  - Correction du problème de données de sous-table d'association dans le bloc Liste ([#8082](https://github.com/nocobase/nocobase/pull/8082)) par @katherinehhh
+  - Correction du problème où les règles de validation de champ numérique des paramètres de collection n'étaient pas appliquées ([#8025](https://github.com/nocobase/nocobase/pull/8025)) par @katherinehhh
+  - Correction d'un problème où les champs dans les formulaires de filtre étaient restreints par les règles de validation backend pour les champs. ([#8074](https://github.com/nocobase/nocobase/pull/8074)) par @gchust
+  - Correction du problème d'affichage des grands champs dans l'édition de sous-table ([#8069](https://github.com/nocobase/nocobase/pull/8069)) par @katherinehhh
+  - Correction du problème où la création rapide génère une erreur lorsque allowMultiple est désactivé dans la sélection d'enregistrement d'association ([#8034](https://github.com/nocobase/nocobase/pull/8034)) par @katherinehhh
+  - Problème d'édition rapide du champ json ([#8059](https://github.com/nocobase/nocobase/pull/8059)) par @katherinehhh
+  - Correction du problème où le champ json doit être soumis en tant qu'objet ([#8057](https://github.com/nocobase/nocobase/pull/8057)) par @katherinehhh
+  - Correction d'un problème où la touche Entrée ne pouvait pas être utilisée pour déclencher l'action de filtre. ([#8056](https://github.com/nocobase/nocobase/pull/8056)) par @gchust
+  - Correction du problème où N/A s'affiche après la désactivation de allowMultiple dans la sélection d'enregistrement d'association plusieurs-à-plusieurs ([#8050](https://github.com/nocobase/nocobase/pull/8050)) par @katherinehhh
+  - Correction de l'échec de la suppression d'un enregistrement dans le bloc de sélection d'enregistrement ([#8023](https://github.com/nocobase/nocobase/pull/8023)) par @katherinehhh
+  - Correction d'un problème où le menu d'enregistrement actuel apparaissait lors de l'ajout d'un bloc de commentaire. ([#8039](https://github.com/nocobase/nocobase/pull/8039)) par @gchust
+  - Correction d'un problème où le passage d'un champ de date à un champ d'heure dans l'action de filtre provoquait une erreur de rendu. ([#8036](https://github.com/nocobase/nocobase/pull/8036)) par @gchust
+  - Correction d'un problème où les titres par défaut des popups d'action d'édition et de création nouvelle étaient incorrects. ([#8033](https://github.com/nocobase/nocobase/pull/8033)) par @gchust
+  - Correction d'un problème où le style par défaut du champ JS dans le bloc de détails était incorrect. ([#8031](https://github.com/nocobase/nocobase/pull/8031)) par @gchust
+  - Correction du problème où la largeur de colonne de la sous-table n'était pas appliquée ([#8027](https://github.com/nocobase/nocobase/pull/8027)) par @katherinehhh
+  - Correction du problème où le glissement de colonne de la sous-table ne fonctionnait pas ([#8026](https://github.com/nocobase/nocobase/pull/8026)) par @katherinehhh
+  - Correction d'un problème où la variable d'enregistrement de la popup actuelle ne pouvait pas être correctement résolue dans la popup ouverte par un champ d'association. ([#8019](https://github.com/nocobase/nocobase/pull/8019)) par @gchust
+  - Correction du problème de style de la popover du champ d'affichage markdown ([#8012](https://github.com/nocobase/nocobase/pull/8012)) par @katherinehhh
+  - Résolution d'un problème provoquant des erreurs lors du chargement des données pour les champs d'association dans les fenêtres popup, garantissant un affichage et une fonctionnalité des données plus fluides. ([#7985](https://github.com/nocobase/nocobase/pull/7985)) par @gchust
+  - Correction du problème où le bloc de tableau arborescent ne peut pas développer les nœuds enfants ([#8011](https://github.com/nocobase/nocobase/pull/8011)) par @katherinehhh
+  - Correction des problèmes de sélection et de suppression de blocs de tableau pour les clés composites ([#7978](https://github.com/nocobase/nocobase/pull/7978)) par @katherinehhh
+  - Correction du problème où l'état de l'onglet de page et la route ne correspondent pas ([#7991](https://github.com/nocobase/nocobase/pull/7991)) par @zhangzhonghe
+  - Correction du problème d'affichage lorsque le champ markdown est tronqué en mode HTML ([#7994](https://github.com/nocobase/nocobase/pull/7994)) par @katherinehhh
+  - Correction des résultats de recherche incomplets dans le sélecteur en cascade ([#7990](https://github.com/nocobase/nocobase/pull/7990)) par @katherinehhh
+  - Correction d'un problème où l'ouverture du bloc de détails dans la popup pour les champs de relation non-ID provoquait une erreur. ([#7973](https://github.com/nocobase/nocobase/pull/7973)) par @gchust
+  - Correction d'un problème où les données d'association ne se chargeaient pas correctement dans la popup pour les champs de relation non-ID. ([#7970](https://github.com/nocobase/nocobase/pull/7970)) par @gchust
+  - Correction du problème avec le paramètre de précision invalide pour le format de champ numérique ([#7967](https://github.com/nocobase/nocobase/pull/7967)) par @katherinehhh
+  - Correction du problème où la valeur du filtre n'est pas effacée lors du clic sur le bouton Réinitialiser ([#7966](https://github.com/nocobase/nocobase/pull/7966)) par @zhangzhonghe
+  - Correction de la frappe incorrecte dans la nouvelle page 2.0 ([#7945](https://github.com/nocobase/nocobase/pull/7945)) par @zhangzhonghe
+  - Correction du retour à la ligne automatique des champs de texte dans le bloc de détails lorsque le contenu dépasse la largeur ([#7955](https://github.com/nocobase/nocobase/pull/7955)) par @katherinehhh
+  - Correction de l'erreur levée lors de l'effacement de la valeur dans la cascade à plusieurs niveaux ([#7943](https://github.com/nocobase/nocobase/pull/7943)) par @katherinehhh
+  - Suppression de l'action de tableau arborescent du bloc de collection non arborescente ([#7931](https://github.com/nocobase/nocobase/pull/7931)) par @katherinehhh
+  - Correction d'un problème où le titre et la description n'étaient pas affichés dans le bloc JS. ([#7913](https://github.com/nocobase/nocobase/pull/7913)) par @gchust
+  - Correction du problème où les blocs masqués occupaient toujours de l'espace sur la page. ([#7906](https://github.com/nocobase/nocobase/pull/7906)) par @gchust
+  - Correction de la vérification d'autorisation incorrecte pour les champs de sous-formulaire dans les nouveaux formulaires ([#7902](https://github.com/nocobase/nocobase/pull/7902)) par @katherinehhh
+  - Correction du problème où le bouton de réinitialisation dans le bouton de filtre efface les conditions par défaut ([#7903](https://github.com/nocobase/nocobase/pull/7903)) par @zhangzhonghe
+  - Correction des problèmes dans le paramètre d'élément de formulaire ([#7867](https://github.com/nocobase/nocobase/pull/7867)) par @katherinehhh
+  - Correction du problème où le champ de texte enrichi ne peut pas saisir de valeur par défaut et le champ de sélection multiple ne peut pas sélectionner plusieurs options. ([#7864](https://github.com/nocobase/nocobase/pull/7864)) par @gchust
+  - Correction du problème où la configuration par défaut du champ JS n'utilisait pas le paramètre de mode d'affichage. ([#7862](https://github.com/nocobase/nocobase/pull/7862)) par @gchust
+  - Correction du problème concernant l'impossibilité de définir la valeur par défaut du champ de date dans le modèle de bloc de formulaire de filtre. ([#7853](https://github.com/nocobase/nocobase/pull/7853)) par @gchust
+  - Correction du problème où les opérations d'édition rapide dans le bloc de tableau ne mettent pas à jour les données correctement. ([#7845](https://github.com/nocobase/nocobase/pull/7845)) par @gchust
+  - Correction des erreurs lors de l'aperçu du code dans l'éditeur de code si le code contient une syntaxe jsx ([#7836](https://github.com/nocobase/nocobase/pull/7836)) par @gchust
+  - Correction d'un problème où les règles de liaison pour les boutons d'action de ligne dans un bloc de tableau n'étaient pas réexécutées après la mise à jour des données de ligne, garantissant que les règles sont maintenant correctement réappliquées lorsque des changements se produisent. ([#7832](https://github.com/nocobase/nocobase/pull/7832)) par @gchust
+  - Correction de l'erreur 'value.replace is not a function' dans le champ de relation du formulaire de filtre ([#7824](https://github.com/nocobase/nocobase/pull/7824)) par @zhangzhonghe
+  - La variable de collection actuelle ne doit pas être sélectionnable dans le sélecteur de variable du composant de filtre ([#7818](https://github.com/nocobase/nocobase/pull/7818)) par @gchust
+  - Correction des paramètres incorrects dans le callback onChange ([#7807](https://github.com/nocobase/nocobase/pull/7807)) par @zhangzhonghe
+  - Impossible de masquer la colonne d'actions du bloc de tableau ([#7804](https://github.com/nocobase/nocobase/pull/7804)) par @gchust
+  - Correction du problème où le champ de sélecteur de collection ne pouvait pas sélectionner la collection correctement ([#7794](https://github.com/nocobase/nocobase/pull/7794)) par @katherinehhh
+  - Prise en charge de la sélection de l'objet variable entier dans l'invite de l'employé IA ([#7791](https://github.com/nocobase/nocobase/pull/7791)) par @gchust
+  - Correction du problème où la largeur de l'action de tableau et de jsColumn n'était pas appliquée ([#7777](https://github.com/nocobase/nocobase/pull/7777)) par @katherinehhh
+  - La portée de données du bloc ne fonctionne pas si elle est définie par le flux d'événements de page ([#7788](https://github.com/nocobase/nocobase/pull/7788)) par @gchust
+  - Correction du problème où les points de suspension du champ de titre d'association n'étaient pas appliqués ([#7778](https://github.com/nocobase/nocobase/pull/7778)) par @katherinehhh
+  - La règle de liaison de l'action de mise à jour d'enregistrement ne fonctionne pas ([#7774](https://github.com/nocobase/nocobase/pull/7774)) par @gchust
+  - Correction de l'échec de validation obligatoire pour le champ Markdown Vditor ([#7764](https://github.com/nocobase/nocobase/pull/7764)) par @katherinehhh
+  - Correction d'un problème où les étiquettes des types enum dans les composants liés aux variables n'étaient pas affichées dans la langue correcte. ([#7765](https://github.com/nocobase/nocobase/pull/7765)) par @gchust
+  - Correction de l'indicateur de champ obligatoire manquant après avoir défini la validation frontend ([#7760](https://github.com/nocobase/nocobase/pull/7760)) par @katherinehhh
+  - Ajout de la configuration de la portée de données pour les champs de relation dans les formulaires de filtre ([#7761](https://github.com/nocobase/nocobase/pull/7761)) par @zhangzhonghe
+  - Correction du problème avec l'effacement de la date sans fuseau horaire dans le formulaire d'édition ([#7759](https://github.com/nocobase/nocobase/pull/7759)) par @katherinehhh
+  - Correction de la validation de champ obligatoire pour les règles de liaison ([#7756](https://github.com/nocobase/nocobase/pull/7756)) par @zhangzhonghe
+  - Correction du problème de format d'heure dans les champs de sous-table ([#7750](https://github.com/nocobase/nocobase/pull/7750)) par @katherinehhh
+  - Résolution du problème de date invalide lors de la suppression d'une date spécifiée dans le filtre… ([#7746](https://github.com/nocobase/nocobase/pull/7746)) par @katherinehhh
+  - Impossible de charger les champs de la variable de formulaire actuelle ([#7745](https://github.com/nocobase/nocobase/pull/7745)) par @gchust
+  - Résolution d'un problème où l'affectation d'un tableau comme valeur ou valeur par défaut à un champ "toOne" entraînait une erreur. Cela garantit une gestion correcte des résultats de résolution de variables, améliorant la stabilité et la précision du système. ([#7735](https://github.com/nocobase/nocobase/pull/7735)) par @gchust
+  - Résolution d'un problème où la variable de champ d'association dans le formulaire actuel ne pouvait pas être correctement identifiée, garantissant un traitement précis des données dans les formulaires. ([#7726](https://github.com/nocobase/nocobase/pull/7726)) par @gchust
+  - Correction d'un problème où les champs non filtrables étaient incorrectement listés dans les options de filtre, garantissant que seuls les champs applicables apparaissent pour la sélection. ([#7700](https://github.com/nocobase/nocobase/pull/7700)) par @gchust
+  - Résolution du problème d'interface utilisateur lors de la suppression d'un champ d'association dans la collection ([#7706](https://github.com/nocobase/nocobase/pull/7706)) par @katherinehhh
+  - Correction des problèmes connus avec les règles de liaison de sous-formulaire ([#7698](https://github.com/nocobase/nocobase/pull/7698)) par @zhangzhonghe
+  - Le menu des champs du bloc js ne peut pas être chargé dans le bloc de formulaire de filtre ([#7690](https://github.com/nocobase/nocobase/pull/7690)) par @gchust
+  - Résolution d'un problème où les utilisateurs ne pouvaient pas définir de valeurs par défaut pour les champs affichés en mode lecture seule. Cela garantit une configuration de champ plus fluide lorsque les champs ne sont pas modifiables. ([#7689](https://github.com/nocobase/nocobase/pull/7689)) par @gchust
+  - Correction d'un problème où l'URL ne se mettait pas à jour correctement après avoir changé d'onglets dans une popup, rouvert une popup imbriquée, puis fermé toutes les popups. ([#7630](https://github.com/nocobase/nocobase/pull/7630)) par @gchust
+  - Gestion du contexte manquant dans usePlugin ([#7627](https://github.com/nocobase/nocobase/pull/7627)) par @chenos
+  - Impossible de configurer la valeur de champ d'affectation pour les actions `Mettre à jour` et `Mise à jour groupée` ([#7565](https://github.com/nocobase/nocobase/pull/7565)) par @gchust
+  - Correction d'un problème où l'action "Exécuter" dans l'éditeur de code ne fonctionnait pas, garantissant que les utilisateurs peuvent maintenant exécuter le code correctement. ([#7547](https://github.com/nocobase/nocobase/pull/7547)) par @gchust
+  - Correction du problème de non-rafraîchissement des données après la soumission du formulaire ([#7560](https://github.com/nocobase/nocobase/pull/7560)) par @zhangzhonghe
+  - Correction des problèmes d'affichage anormaux de la page lors du changement de pagination du tableau ([#7572](https://github.com/nocobase/nocobase/pull/7572)) par @zhangzhonghe
+- **[moteur de flux]**
+
+  - Correction d'un problème où le sous-menu du champ de filtre ne pouvait pas être développé lorsqu'un mot-clé de recherche était présent. ([#8604](https://github.com/nocobase/nocobase/pull/8604)) par @gchust
+  - Correction d'un problème où les objets Blob ne pouvaient pas être créés dans le bloc JS. ([#8603](https://github.com/nocobase/nocobase/pull/8603)) par @gchust
+  - Correction du contexte d'exécution incorrect pour "ctx.sql" dans les modèles JS. ([#8602](https://github.com/nocobase/nocobase/pull/8602)) par @gchust
+  - Correction du problème où l'action de suppression de colonne ne fonctionnait pas dans l'édition de sous-table contextuelle lorsque createModelOptions est configuré ([#8576](https://github.com/nocobase/nocobase/pull/8576)) par @katherinehhh
+  - Correction du problème où l'action de suppression de colonne ne fonctionnait pas dans l'édition de sous-table contextuelle lorsque createModelOptions est configuré ([#8560](https://github.com/nocobase/nocobase/pull/8560)) par @katherinehhh
+  - Correction d'un problème où certaines bibliothèques tierces ne pouvaient pas être importées correctement dans les blocs JS. ([#8545](https://github.com/nocobase/nocobase/pull/8545)) par @gchust
+  - Correction d'un problème où la soumission du formulaire après avoir changé de page ne rafraîchit pas la page. ([#8554](https://github.com/nocobase/nocobase/pull/8554)) par @gchust
+  - Correction du chargement incorrect de certaines bibliothèques ESM dans runjs en raison d'une classification erronée en tant que modules AMD. ([#8536](https://github.com/nocobase/nocobase/pull/8536)) par @gchust
+  - Correction du problème FilterByTK lorsque filterTargetKey est un tableau à un seul élément dans une source de données externe ([#8522](https://github.com/nocobase/nocobase/pull/8522)) par @katherinehhh
+  - Correction d'un problème où la fermeture d'une popup intégrée provoquait une erreur après avoir ouvert consécutivement la popup de configuration des règles de liaison et la popup de configuration du flux d'événements. ([#8368](https://github.com/nocobase/nocobase/pull/8368)) par @gchust
+  - Correction d'un problème où les variables dans les paramètres de code runjs étaient résolues avant l'exécution. ([#8445](https://github.com/nocobase/nocobase/pull/8445)) par @gchust
+  - Correction d'un problème où les variables de popup ne pouvaient pas être sélectionnées dans la popup de création rapide du sélecteur de données. ([#8450](https://github.com/nocobase/nocobase/pull/8450)) par @gchust
+  - Correction d'un problème où le clic répété sur le menu de configuration pouvait ouvrir plusieurs popups de configuration. ([#8448](https://github.com/nocobase/nocobase/pull/8448)) par @gchust
+  - Correction du problème où les étapes du flux d'événements dynamique s'exécutaient deux fois lors de l'ouverture d'une popup via un clic sur un bouton. ([#8435](https://github.com/nocobase/nocobase/pull/8435)) par @gchust
+  - Correction d'un problème où une pollution d'état pouvait se produire lors de l'ouverture multiple de popups. ([#8327](https://github.com/nocobase/nocobase/pull/8327)) par @gchust
+  - Correction du problème où la liste déroulante du sélecteur de champs de collection dans l'action de filtre avait une hauteur insuffisante. ([#8288](https://github.com/nocobase/nocobase/pull/8288)) par @gchust
+  - Correction du problème où le contenu de l'onglet de popup ne s'affichait pas ([#8281](https://github.com/nocobase/nocobase/pull/8281)) par @zhangzhonghe
+  - Correction du problème de démontage et de re-rendu de la page lors de l'ouverture d'une sous-page ([#8276](https://github.com/nocobase/nocobase/pull/8276)) par @zhangzhonghe
+  - Correction du problème de vérification d'autorisation pour l'ajout d'enregistrements enfants dans le tableau arborescent ([#8240](https://github.com/nocobase/nocobase/pull/8240)) par @katherinehhh
+  - Correction du problème où les actions ou onglets ajoutés après le glissement d'actions ou d'onglets ne s'affichent pas. ([#8224](https://github.com/nocobase/nocobase/pull/8224)) par @gchust
+  - Problème de vérification d'autorisation dans les sources de données externes ([#8221](https://github.com/nocobase/nocobase/pull/8221)) par @katherinehhh
+  - Correction du problème où les actions de source de données externe étaient masquées malgré l'autorisation ([#8217](https://github.com/nocobase/nocobase/pull/8217)) par @katherinehhh
+  - Correction du problème où la soumission du formulaire dans une fenêtre modale réutilisée via l'uid de la popup ne rafraîchit pas les données du bloc. ([#8202](https://github.com/nocobase/nocobase/pull/8202)) par @gchust
+  - Correction d'un problème où certaines variables liées à l'enregistrement de la popup de bloc étaient affichées incorrectement. ([#8060](https://github.com/nocobase/nocobase/pull/8060)) par @gchust
+  - Correction du téléchargement de fichier incorrect pour les pièces jointes ([#8154](https://github.com/nocobase/nocobase/pull/8154)) par @katherinehhh
+  - Correction : conversion incorrecte lors de l'utilisation du type entier comme options d'énumération ([#8138](https://github.com/nocobase/nocobase/pull/8138)) par @chenos
+  - Correction de l'échec des éléments de menu de sous-modèle basculables lorsque `useModel` est omis en le déduisant de `createModelOptions.use` ([#8105](https://github.com/nocobase/nocobase/pull/8105)) par @zhangzhonghe
+  - Correction d'un problème où les options de configuration du composant précédent restaient visibles dans le menu après avoir changé de composant de champ. ([#8095](https://github.com/nocobase/nocobase/pull/8095)) par @gchust
+  - Déplacement de useEffect avant le retour conditionnel dans FlowModelRenderer ([#8088](https://github.com/nocobase/nocobase/pull/8088)) par @zhangzhonghe
+  - Correction d'un problème où des champs d'association non pris en charge apparaissaient dans les champs d'opération de filtre. ([#8086](https://github.com/nocobase/nocobase/pull/8086)) par @gchust
+  - Correction du problème où l'enregistrement du commentaire échoue après l'édition ([#8035](https://github.com/nocobase/nocobase/pull/8035)) par @katherinehhh
+  - Correction d'un problème où les blocs de données ne se rafraîchissaient pas lors de la fermeture d'une popup en cliquant sur le bouton de soumission du formulaire à l'intérieur de la popup. ([#8021](https://github.com/nocobase/nocobase/pull/8021)) par @gchust
+  - Correction d'un problème où la variable d'enregistrement actuelle ne pouvait pas être correctement déclenchée pour la résolution dans le bloc de détails. ([#8004](https://github.com/nocobase/nocobase/pull/8004)) par @gchust
+  - Correction du problème d'affichage désaligné des icônes de la barre d'outils dans le bouton du bloc de détails ([#7929](https://github.com/nocobase/nocobase/pull/7929)) par @zhangzhonghe
+  - Correction du problème où l'ouverture du formulaire d'édition rapide du bloc de tableau provoquait une erreur. ([#7923](https://github.com/nocobase/nocobase/pull/7923)) par @gchust
+  - Correction du problème où les données d'autorisation ACL ne sont pas rechargées après la déconnexion et la connexion. ([#7874](https://github.com/nocobase/nocobase/pull/7874)) par @gchust
+  - Correction du problème où les modifications du flux d'événements ne prenaient effet qu'après un rafraîchissement de la page. ([#7811](https://github.com/nocobase/nocobase/pull/7811)) par @gchust
+  - Correction d'un problème où les variables dans les champs d'association de sous-formulaire n'étaient pas correctement résolues lorsque le champ était modifié via l'interface utilisateur. ([#7799](https://github.com/nocobase/nocobase/pull/7799)) par @gchust
+  - Erreur dans le formulaire d'édition pour les enregistrements à clé primaire multiple ([#7798](https://github.com/nocobase/nocobase/pull/7798)) par @gchust
+  - Correction d'un problème où certaines configurations pour l'action "Ouvrir la vue" n'étaient pas appliquées, garantissant que l'action fonctionne maintenant comme prévu pour toutes les configurations spécifiées. ([#7790](https://github.com/nocobase/nocobase/pull/7790)) par @gchust
+  - Correction d'un problème où les boutons d'action dans le bloc de tableau ne se mettaient pas à jour correctement après avoir changé de pages, garantissant que leur fonctionnalité correspond aux données de la page actuelle. ([#7779](https://github.com/nocobase/nocobase/pull/7779)) par @gchust
+  - Lorsque la valeur du filtre de champ est définie sur false, la requête avec la portée de données est incorrecte ([#7766](https://github.com/nocobase/nocobase/pull/7766)) par @gchust
+  - Correction : résolution du problème de paramètre de requête de page après la suppression de données sur la dernière page ([#7755](https://github.com/nocobase/nocobase/pull/7755)) par @katherinehhh
+  - Impossible de résoudre la valeur du champ d'association de la variable d'objet actuelle du sous-formulaire ([#7751](https://github.com/nocobase/nocobase/pull/7751)) par @gchust
+  - Les étapes du flux d'événements ne doivent pas être affichées dans les menus de configuration ([#7723](https://github.com/nocobase/nocobase/pull/7723)) par @gchust
+  - Sélection de contexte incorrecte de l'enregistrement de la popup actuelle lors de l'édition de la portée de données d'un champ associé dans un formulaire d'édition ([#7675](https://github.com/nocobase/nocobase/pull/7675)) par @gchust
+  - Résolution d'un problème où les actions de flux définies par un modèle de flux ne pouvaient pas être configurées, garantissant que les utilisateurs peuvent maintenant personnaliser les actions de flux comme prévu. ([#7666](https://github.com/nocobase/nocobase/pull/7666)) par @gchust
+  - Correction d'une erreur lors de la copie ou du collage d'extraits de code dans l'éditeur de code JS. ([#7641](https://github.com/nocobase/nocobase/pull/7641)) par @gchust
+  - Correction du problème de traduction qui ne prenait pas effet dans les composants antd ([#7621](https://github.com/nocobase/nocobase/pull/7621)) par @zhangzhonghe
+  - Impossible d'obtenir le contexte de vue actuel dans le bloc de référence ([#7620](https://github.com/nocobase/nocobase/pull/7620)) par @gchust
+- **[serveur]**
+
+  - Prise en charge des champs Snowflake ID (53 bits) pour les sources de données externes ([#8185](https://github.com/nocobase/nocobase/pull/8185)) par @2013xile
+  - Mise à jour de license-kit vers la dernière version ([#8173](https://github.com/nocobase/nocobase/pull/8173)) par @jiannx
+  - Préservation de field.targetKey lors de la copie de champs de référence ([#7599](https://github.com/nocobase/nocobase/pull/7599)) par @chenos
+  - Erreur de migration de clé primaire ([#7563](https://github.com/nocobase/nocobase/pull/7563)) par @2013xile
+- **[base de données]**
+
+  - Correction : mise à jour profonde des associations imbriquées ([#8492](https://github.com/nocobase/nocobase/pull/8492)) par @chenos
+  - Inclusion de la portée through lors de l'interrogation des relations m2m ([#8277](https://github.com/nocobase/nocobase/pull/8277)) par @2013xile
+  - `filterByTk` prend désormais en charge les tableaux lors de l'interrogation de collections avec plusieurs clés cibles de filtre ([#7986](https://github.com/nocobase/nocobase/pull/7986)) par @chenos
+  - Définition de `search_path` avant d'exécuter des instructions SQL à l'aide de la méthode `runSQL` ([#7611](https://github.com/nocobase/nocobase/pull/7611)) par @2013xile
+- **[sdk]** Amélioration de l'implémentation du partage de jetons ([#8357](https://github.com/nocobase/nocobase/pull/8357)) par @chenos
+- **[acl]** Correction : acl.allow exécuté trop tôt ([#8065](https://github.com/nocobase/nocobase/pull/8065)) par @chenos
+- **[utils]**
+
+  - Correction de l'erreur "Invalid filter item type" sur le bouton de filtre ([#7838](https://github.com/nocobase/nocobase/pull/7838)) par @zhangzhonghe
+  - Correction de l'erreur 'Unrecognized operation' dans le flux d'événements ([#7835](https://github.com/nocobase/nocobase/pull/7835)) par @zhangzhonghe
+- **[Localisation]** Amélioration de la gestion des clés i18n manquantes ([#8673](https://github.com/nocobase/nocobase/pull/8673)) par @chenos
+- **[Employés IA]**
+
+  - L'API aiTools:list renvoie 403 ([#8672](https://github.com/nocobase/nocobase/pull/8672)) par @chenos
+  - Correction du OOM du navigateur lors de l'utilisation de l'employé IA ([#8653](https://github.com/nocobase/nocobase/pull/8653)) par @mytharcher
+  - Correction d'un problème où les liens de citation des recherches web IA n'étaient pas affichés dans la boîte de chat ([#8651](https://github.com/nocobase/nocobase/pull/8651)) par @cgyrock
+  - Correction de l'erreur de paramètres de l'API openai ([#8633](https://github.com/nocobase/nocobase/pull/8633)) par @cgyrock
+  - Correction d'un problème où le nœud LLM échoue à envoyer des messages ([#8569](https://github.com/nocobase/nocobase/pull/8569)) par @2013xile
+  - Correction de l'exception qui se produit lorsque les outils sont appelés automatiquement lors de la modélisation des données IA ([#8532](https://github.com/nocobase/nocobase/pull/8532)) par @cgyrock
+  - Correction du problème où le système ne peut pas démarrer après la construction ([#8523](https://github.com/nocobase/nocobase/pull/8523)) par @cgyrock
+  - Correction des problèmes de configuration de champ sélectionnable incohérente entre la modélisation IA et la gestion des sources de données ([#8488](https://github.com/nocobase/nocobase/pull/8488)) par @cgyrock
+  - Résolution du problème où le contenu du message du nœud llm n'était pas affiché ([#8257](https://github.com/nocobase/nocobase/pull/8257)) par @heziqiang
+  - Résolution du problème concernant le saut de ligne du message IA ([#8096](https://github.com/nocobase/nocobase/pull/8096)) par @heziqiang
+  - Résolution du problème où le nom du rôle de la source de données n'était pas compilé ([#8076](https://github.com/nocobase/nocobase/pull/8076)) par @heziqiang
+  - Correction d'un problème où certains champs d'enregistrement actuels ne pouvaient pas être affichés dans le composant de sélection de variable. ([#8053](https://github.com/nocobase/nocobase/pull/8053)) par @gchust
+  - Correction du problème lors de la génération de la sortie SQL par l'IA ([#7956](https://github.com/nocobase/nocobase/pull/7956)) par @heziqiang
+  - Masquage du bouton de chat de l'employé IA sur les pages v1 ([#7829](https://github.com/nocobase/nocobase/pull/7829)) par @cgyrock
+  - Optimisation du comportement de recherche web et des indications utilisateur pour Gemini ([#7720](https://github.com/nocobase/nocobase/pull/7720)) par @cgyrock
+  - Correction d'un problème où les blocs avec des ressources API associées ne récupéraient pas les données correspondantes lorsqu'ils étaient sélectionnés. ([#7688](https://github.com/nocobase/nocobase/pull/7688)) par @cgyrock
+  - Correction du problème de disposition de la boîte de chat dans la disposition mobile ([#7591](https://github.com/nocobase/nocobase/pull/7591)) par @cgyrock
+  - Correction de l'erreur sur la page de configuration des autorisations de l'employé IA ([#7548](https://github.com/nocobase/nocobase/pull/7548)) par @2013xile
+  - Correction des erreurs dans l'outil de modélisation de données de l'employé IA lors de l'utilisation de ChatGPT-4o. ([#7566](https://github.com/nocobase/nocobase/pull/7566)) par @cgyrock
+- **[Calendrier]** Correction des problèmes de localisation du calendrier et de formatage des dates ([#8498](https://github.com/nocobase/nocobase/pull/8498)) par @sembaev-a-a
+- **[Gestionnaire de fichiers]**
+
+  - Correction du problème où le composant de champ de fichier peut toujours ouvrir la boîte de dialogue du sélecteur lorsqu'il est désactivé ([#8617](https://github.com/nocobase/nocobase/pull/8617)) par @katherinehhh
+  - Correction de l'affichage incorrect des données de sous-détail dans les blocs Liste et Carte en grille ([#8087](https://github.com/nocobase/nocobase/pull/8087)) par @katherinehhh
+  - Correction du problème où le champ de pièce jointe n'était pas affiché correctement dans la sous-table readPretty ([#8073](https://github.com/nocobase/nocobase/pull/8073)) par @katherinehhh
+  - Correction du problème de téléchargement de fichiers vers un stockage spécifié au lieu du stockage par défaut ([#7947](https://github.com/nocobase/nocobase/pull/7947)) par @katherinehhh
+  - Correction des problèmes de configuration de champ de bloc de tableau ([#7843](https://github.com/nocobase/nocobase/pull/7843)) par @katherinehhh
+- **[Moteur de flux]**
+
+  - Correction d'un problème où l'utilisation d'un modèle de bloc en mode "Dupliquer" provoquait l'affichage d'une popup vide si l'on cliquait sur un bouton d'action du bloc. ([#8581](https://github.com/nocobase/nocobase/pull/8581)) par @gchust
+  - Correction d'un problème où les variables contenant des traits d'union ne pouvaient pas être analysées correctement. ([#8432](https://github.com/nocobase/nocobase/pull/8432)) par @gchust
+  - Correction d'un problème où la résolution de variable était incorrecte lorsque filterByTk était un tableau. ([#8412](https://github.com/nocobase/nocobase/pull/8412)) par @gchust
+  - Garantir que les variables d'enregistrement renvoient toujours des enregistrements complets lorsqu'elles sont utilisées avec leurs champs individuels. ([#7917](https://github.com/nocobase/nocobase/pull/7917)) par @gchust
+  - Impossible de résoudre les variables dans l'action de définition de champs de liaison ([#7684](https://github.com/nocobase/nocobase/pull/7684)) par @gchust
+  - Correction de la résolution incorrecte de la variable d'enregistrement de la popup parente. ([#7637](https://github.com/nocobase/nocobase/pull/7637)) par @gchust
+- **[Bloc : Carte]**
+
+  - Correction des options de configuration 'Enregistrer comme modèle' en double dans le bloc de carte ([#8584](https://github.com/nocobase/nocobase/pull/8584)) par @katherinehhh
+  - Correction du niveau de zoom de carte incorrect après le changement de menu ([#8193](https://github.com/nocobase/nocobase/pull/8193)) par @katherinehhh
+- **[Champ de collection : Pièce jointe (URL)]** Correction du problème où la configuration d'affichage du nom de fichier du champ d'URL de pièce jointe ne fonctionnait pas dans le formulaire d'édition ([#8571](https://github.com/nocobase/nocobase/pull/8571)) par @katherinehhh
+- **[Modèles d'interface utilisateur]**
+
+  - Correction de l'erreur lors de la réouverture et de la soumission d'un modèle de popup enregistré pour le formulaire "Ajouter nouveau" du champ d'association. ([#8564](https://github.com/nocobase/nocobase/pull/8564)) par @gchust
+  - Correction d'un problème où les blocs de modèle de référence ne pouvaient pas définir de portées de données via les paramètres de flux d'événements. ([#8472](https://github.com/nocobase/nocobase/pull/8472)) par @gchust
+  - Correction d'un problème où certaines popups héritées ne pouvaient pas être correctement réutilisées après avoir été converties en modèles. ([#8283](https://github.com/nocobase/nocobase/pull/8283)) par @gchust
+  - Correction d'un problème où les modèles de champ ne pouvaient pas appliquer les règles de liaison et la disposition du formulaire. ([#8266](https://github.com/nocobase/nocobase/pull/8266)) par @gchust
+  - Correction d'une erreur où l'ouverture d'une popup de champ d'association utilisait incorrectement un modèle de popup de champ non-association. ([#8233](https://github.com/nocobase/nocobase/pull/8233)) par @gchust
+- **[Bloc : modèle (obsolète)]**
+
+  - Correction d'un problème où la page d'édition des modèles hérités (v1) ne pouvait pas être consultée. ([#8376](https://github.com/nocobase/nocobase/pull/8376)) par @gchust
+  - Correction d'un problème où des requêtes inutiles pour les modèles de bloc étaient déclenchées lors de l'ouverture ou de la fermeture de fenêtres modales ([#7561](https://github.com/nocobase/nocobase/pull/7561)) par @gchust
+- **[Action : Mise à jour groupée]** Correction de l'erreur dans l'action de mise à jour groupée pour les sources de données externes. ([#8320](https://github.com/nocobase/nocobase/pull/8320)) par @gchust
+- **[Visualisation de données]**
+
+  - Correction du problème concernant l'affichage des étiquettes du graphique circulaire IA, normalisation de l'option pour les graphiques circulaires basés sur un ensemble de données.<br/> Restriction du champ d'ordre du graphique aux seuls champs sélectionnés. ([#8309](https://github.com/nocobase/nocobase/pull/8309)) par @heziqiang
+  - Résolution du problème concernant la sélection de la source de données externe en mode SQL ; <br/>Résolution du problème concernant l'état de chargement du bloc de graphique lors de la récupération des données ; <br/> Résolution du problème concernant l'annulation de la configuration du bloc de graphique vide ; ([#8169](https://github.com/nocobase/nocobase/pull/8169)) par @heziqiang
+  - Correction du problème où le bloc de graphique ne se mettait pas à jour après l'enregistrement ([#7920](https://github.com/nocobase/nocobase/pull/7920)) par @heziqiang
+  - Utilisation du mode débogage de la ressource SQL uniquement pendant l'aperçu du graphique ([#7893](https://github.com/nocobase/nocobase/pull/7893)) par @heziqiang
+  - Utilisation de l'API sql:runById pour récupérer les données de requête lors de l'initialisation ([#7677](https://github.com/nocobase/nocobase/pull/7677)) par @heziqiang
+  - Correction du problème de requête SQL lors de l'analyse des variables ([#7642](https://github.com/nocobase/nocobase/pull/7642)) par @heziqiang
+  - Correction du paramètre orders manquant dans la requête de données de graphique ([#7636](https://github.com/nocobase/nocobase/pull/7636)) par @heziqiang
+  - Correction du problème où le graphique ne peut pas être affiché en raison du délai d'attente de l'enregistrement de l'événement ([#7608](https://github.com/nocobase/nocobase/pull/7608)) par @heziqiang
+- **[Action : Importer des enregistrements]**
+
+  - Vérification de l'espace lors de l'importation de fichiers ([#8285](https://github.com/nocobase/nocobase/pull/8285)) par @jiannx
+  - Résolution du problème avec l'affichage de la liste des champs dans les champs importables ([#7710](https://github.com/nocobase/nocobase/pull/7710)) par @katherinehhh
+- **[Gestionnaire de tâches asynchrones]** Correction de la langue de l'annulation de la tâche en arrière-plan ([#8245](https://github.com/nocobase/nocobase/pull/8245)) par @mytharcher
+- **[Workflow]**
+
+  - Correction du problème où les événements de base de données devenaient invalides après le rafraîchissement de la source de données externe ([#8207](https://github.com/nocobase/nocobase/pull/8207)) par @cgyrock
+  - Correction du problème où l'ajout d'un workflow dans la configuration du bouton de workflow lié provoquait le blocage de l'application après le clic ([#7541](https://github.com/nocobase/nocobase/pull/7541)) par @mytharcher
+- **[Champ de collection : Plusieurs-à-plusieurs (tableau)]** Correction d'un problème où les champs plusieurs-à-plusieurs (tableau) ne peuvent pas être créés lorsque le type de clé cible est Snowflake ID (53 bits) ([#8226](https://github.com/nocobase/nocobase/pull/8226)) par @2013xile
+- **[Champ de collection : Formule]**
+
+  - Correction du problème où les champs BigInt ne peuvent pas être ajoutés aux blocs Détail et Formulaire ([#8201](https://github.com/nocobase/nocobase/pull/8201)) par @katherinehhh
+  - Correction d'un problème où les champs de formule dans l'action de filtre et le bloc de formulaire de filtre ne pouvaient pas saisir de valeurs. ([#8102](https://github.com/nocobase/nocobase/pull/8102)) par @gchust
+  - Correction d'un problème où les champs de formule ne pouvaient pas être ajoutés au bloc de formulaire de filtre. ([#8071](https://github.com/nocobase/nocobase/pull/8071)) par @gchust
+- **[Bloc : Panneau d'actions]** Optimisation du style dans la disposition Liste du bloc de panneau d'actions ([#8084](https://github.com/nocobase/nocobase/pull/8084)) par @katherinehhh
+- **[Gestionnaire de sources de données]** Correction des erreurs lors de la mise à jour des mots de passe pour les sources de données externes ([#8024](https://github.com/nocobase/nocobase/pull/8024)) par @cgyrock
+- **[Action : Exporter les enregistrements]**
+
+  - Correction des champs système manquants dans la liste des champs exportables ([#8002](https://github.com/nocobase/nocobase/pull/8002)) par @katherinehhh
+  - Résolution du problème avec l'affichage de la liste des champs exportables dans l'action d'exportation ([#7714](https://github.com/nocobase/nocobase/pull/7714)) par @katherinehhh
+- **[Gestionnaire multi-applications (obsolète)]**
+
+  - Après l'arrêt d'une sous-application, publier un message de synchronisation pour informer les autres nœuds d'arrêter la sous-application correspondante ([#7849](https://github.com/nocobase/nocobase/pull/7849)) par @2013xile
+  - Collection incorrecte pour la métrique de statut de la sous-application ([#7772](https://github.com/nocobase/nocobase/pull/7772)) par @2013xile
+  - Correction de l'impossibilité de désactiver l'ancien multi-app-manager ([#7633](https://github.com/nocobase/nocobase/pull/7633)) par @jiannx
+  - Correction de la validation du port avant la migration des données multi-applications ([#7540](https://github.com/nocobase/nocobase/pull/7540)) par @jiannx
+- **[Bloc : GridCard]** Correction du problème de duplication de données entre le bloc de liste et le bloc de carte en grille ([#7773](https://github.com/nocobase/nocobase/pull/7773)) par @katherinehhh
+- **[Multi-espace]**
+
+  - Ajout d'un script de migration pour supprimer x-ready-pretty dans le champ d'espace par @jiannx
+  - Suppression de l'attribut read-pretty pour le champ d'espace par @jiannx
+  - La couleur du sélecteur d'espace suit le thème par @jiannx
+  - Espace lié lors de l'ajout de données associées par @jiannx
+  - Les appareils mobiles prennent en charge le changement d'espace par @jiannx
+  - Correction de la création d'autres champs dans la collection système par @jiannx
+  - Utilisateurs associés multi-espace par @jiannx
+- **[Action : Importer des enregistrements Pro]**
+
+  - Correction des nombres de comptage dans le résultat d'importation et de la traduction des messages par @mytharcher
+  - Correction du problème où la modification des options d'importation par le téléchargeur n'a aucun effet par @katherinehhh
+  - Résolution du problème avec l'affichage de la liste des champs dans les champs importables par @katherinehhh
+- **[IA : Base de connaissances]** Correction du problème où le système ne peut pas démarrer après la construction par @cgyrock
+- **[Action : Exporter les enregistrements Pro]** Correction de l'option d'exportation de pièce jointe "Générer un dossier pour chaque enregistrement" qui ne prenait pas effet par @katherinehhh
+- **[Impression de modèle]**
+
+  - Correction de l'erreur d'action d'impression de modèle dans le bloc de détails par @katherinehhh
+  - Affichage des champs d'espace dans la version 2.0 par @jiannx
+  - Suppression des boutons de pied de page de la configuration du modèle d'impression par @katherinehhh
+  - Correction du problème où les champs avec la même clé entraînent des erreurs de rendu par @jiannx
+  - Correction du problème où la requête d'impression de modèle ne fonctionnait pas avec les sources de données externes par @katherinehhh
+  - Correction du problème d'affichage de la liste des champs dans la configuration de l'action d'impression de modèle par @katherinehhh
+  - Correction de l'échec de l'ajout d'un modèle dans l'opération d'impression de modèle d'enregistrement par @katherinehhh
+  - Prise en charge du champ d'espace par @jiannx
+  - Correction du problème de popup de configuration de modèle masquée par @zhangzhonghe
+- **[Multi-app]**
+
+  - La migration multi-app n'émet pas de hooks par @jiannx
+  - Le proxy multi-app prend en charge le cache par @jiannx
+- **[plugin-demo-platform]** La démo prend en charge l'arrêt automatique des applications par @jiannx
+- **[Workflow : Approbation]**
+
+  - Correction du problème où une erreur était levée lors de l'approbation d'un enregistrement supprimé par @mytharcher
+  - Correction de l'erreur levée lors de l'ajout d'un rôle à un utilisateur si le workflow des audiences est désactivé par @mytharcher
+  - Ajout d'une tolérance aux pannes lors de la suppression du workflow, pour éviter les erreurs de chargement dans la liste des tâches par @mytharcher
+  - Correction du problème où une erreur était levée dans la popup d'enregistrement d'approbation 1.x par @mytharcher
+  - Correction du problème où un enregistrement incorrect était chargé en raison de paramètres erronés par @mytharcher
+  - Correction du problème où les champs ne s'affichaient pas sur les cartes de tâches d'approbation par @zhangzhonghe
+  - Correction de l'erreur de construction causée par des dépendances manquantes par @mytharcher
+  - Correction de l'erreur levée lors de la création d'un bloc d'informations d'approbation par @mytharcher
+  - Correction du problème où les données remplies disparaissaient dans le formulaire du destinataire par @mytharcher
+- **[Gestionnaire d'emails]**
+
+  - Correction du problème où la popup de configuration email est masquée par @zhangzhonghe
+  - Correction du problème des emails dans la même boîte aux lettres entre plusieurs utilisateurs et optimisation des performances par @jiannx
+  - Correction du lien de réponse Outlook occasionnellement déconnecté par @jiannx
+  - Le corps ne se réduit pas lorsque le texte est sélectionné. Correction de l'échec du téléchargement de la pièce jointe par @jiannx
+  - Ajout d'un filtre sur la page de gestion par @jiannx
+  - Correction de la chaîne de conversation par @jiannx
+  - Autorisation de modification de l'ID parent de l'email par @jiannx
+  - Affichage du bouton répondre à tous et la portée des données prend en charge le filtrage des messages enfants. par @jiannx
+  - Correction des bugs de brouillon par @jiannx
+  - Non synchronisation du statut programmé de Gmail par @jiannx
+  - Gestion des données anormales par @jiannx
+  - Erreur de rafraîchissement de ShadowHtml par @jiannx

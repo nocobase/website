@@ -14,7 +14,7 @@ const description = page.description_cn || page.description;
 const keywords = page.keywords_cn || page.keywords;
 
 const basepath = '/tw/blog';
-const { data, meta } = await listArticles({ hideOnBlog: false });
+const { data, meta } = await listArticles({ hideOnBlog: false, locale: "tw" });
 
 console.log("page-meta-info");
 console.log(meta);
@@ -86,7 +86,7 @@ const socialLinks = [
                         src={url(post.cover.url)}
                         alt=""
                       />
-                      <h4 class="title">{post.title_cn || post.title}</h4>
+                      <h4 class="title">{post.title || post.title_cn}</h4>
                       <p class="date">
                         <FormattedDate
                           locale={'zh-cn'}

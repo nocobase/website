@@ -9,7 +9,7 @@ import BlogSidebar from "../../../components/BlogSidebar.astro";
 
 const description = "Las ultimas noticias y novedades de NocoBase";
 const basepath = "/es/blog";
-const { data, meta } = await listArticles({ hideOnBlog: false });
+const { data, meta } = await listArticles({ hideOnBlog: false, locale: "es" });
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,

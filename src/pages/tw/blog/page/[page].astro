@@ -15,7 +15,7 @@ const keywords = pageData.keywords_cn || pageData.keywords;
 
 const basepath = '/tw/blog';
 const { page } = Astro.params as { page?: number };
-const { data, meta } = await listArticles({ hideOnBlog: false, page });
+const { data, meta } = await listArticles({ hideOnBlog: false, page, locale: "tw" });
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,
@@ -81,9 +81,9 @@ const socialLinks = [
                         width={720}
                         height={index === 0 ? 360 : 240}
                         src={url(post.cover.url)}
-                        alt={post.title_cn || post.title}
+                        alt={post.title || post.title_cn}
                       />
-                      <h4 class="title">{post.title_cn || post.title}</h4>
+                      <h4 class="title">{post.title || post.title_cn}</h4>
                       <p class="date">
                         <FormattedDate locale="zh-cn" date={post.publishedAt || post.createdAt} />
                       </p>
