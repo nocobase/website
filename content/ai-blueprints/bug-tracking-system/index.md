@@ -2,6 +2,8 @@
 
 Build a Bug tracking system quickly with AI Agent and NocoBase to centrally manage product defects, issue statuses, severity levels, priorities, reproduction details, and release fix progress.
 
+These records can also be managed as a NocoBase-based internal business system, with bug reports, severity, priorities, assignees, reproduction steps, status flow, and release fixes organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The system can display the number of open issues, blocker and critical issues, average resolution time, reopen rate, and the fix and backlog status of different versions. This helps product, development, and QA teams quickly assess current defect risks.
 
 You can copy the prompt directly and let AI Agents such as Claude Code, Codex, Cursor, and OpenCode generate a Bug tracking system in NocoBase. After that, you can continue adjusting fields, statuses, workflows, pages, and other details through no-code configuration.

@@ -2,6 +2,8 @@
 
 A delivery tracking management system helps teams manage the full shipment process, from pickup and transportation to final delivery and confirmation. In one workspace, teams can view tracking progress, delivery exceptions, logistics milestones, and on-time performance without switching between spreadsheets, label images, and carrier portals.
 
+These records can also be managed as a NocoBase-based internal business system, with delivery orders, shipment status, carriers, milestones, tracking numbers, exceptions, and delivery timelines organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is centered around a delivery kanban board. Shipments are organized by status, including pending pickup, picked up, in transit, out for delivery, delivered, and exceptions. Each shipment record can store the tracking number, weight, destination city, recipient, address, service level, carrier, driver, estimated delivery time, and number of delivery attempts.
 
 With the help of AI Agent, teams can extract key information directly from delivery label images, such as tracking number, recipient, destination address, weight, service level, shipping date, and estimated delivery date, then automatically fill the data into NocoBase forms. If fields, statuses, page layouts, or filters need to be adjusted later, teams can continue configuring them in NocoBase without rebuilding the system.

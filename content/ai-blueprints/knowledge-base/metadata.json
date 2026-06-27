@@ -1,8 +1,8 @@
 {
   "id": 369401662210048,
-  "title": "Knowledge base software",
-  "title_cn": "知识库",
-  "description": "Build a team knowledge base with the NocoBase no-code platform for articles, categories, and navigation.",
+  "title": "Knowledge Base System",
+  "title_cn": "企业知识库系统",
+  "description": "Build a Knowledge Base System with the NocoBase no-code platform for articles, categories, and navigation.",
   "description_cn": "通过 NocoBase 无代码平台搭建团队知识库，管理文章内容和分类导航。",
   "slug": "knowledge-base",
   "publishedAt": "2026-06-11T08:00:00.000Z",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:58.595Z",
-      "updatedAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-24T09:34:52.552Z",
       "id": 263,
       "title": "Operations",
       "title_cn": "运营协作",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:38.992Z",
         "updatedAt": "2026-06-17T13:55:40.491Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Knowledge Base: circular category cards with search-driven show/hide. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html",
-  "updatedAt": "2026-06-17T13:55:40.499Z",
+  "prompt": "Build a NocoBase app — Knowledge Base System: circular category cards with search-driven show/hide. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html",
+  "updatedAt": "2026-06-25T17:42:07.737Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 知识库:圆形分类卡片,随搜索显示/隐藏。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/05-knowledge-base.html"
 }

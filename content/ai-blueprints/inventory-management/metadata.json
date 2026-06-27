@@ -1,7 +1,7 @@
 {
   "id": 369401620267008,
-  "title": "Inventory Management",
-  "title_cn": "库存管理",
+  "title": "Inventory Management System",
+  "title_cn": "库存管理系统",
   "description": "Build an inventory management system with AI Agents for SKUs, low-stock alerts, and inventory control.",
   "description_cn": "通过 AI Agent 搭建库存管理系统，覆盖 SKU、低库存预警等核心功能。",
   "slug": "inventory-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.060Z",
-      "updatedAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
       "id": 259,
       "title": "Inventory & Assets",
       "title_cn": "资产与库存",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:18.336Z",
         "updatedAt": "2026-06-17T13:56:27.037Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Inventory Management: inbound/outbound linkage, status transitions, and summary charts. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/01-inventory-management.html",
-  "updatedAt": "2026-06-17T13:56:27.044Z",
+  "prompt": "Build a NocoBase app — Inventory Management System: inbound/outbound linkage, status transitions, and summary charts. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/01-inventory-management.html",
+  "updatedAt": "2026-06-25T17:39:35.160Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 库存管理:出入库联动、状态流转和汇总图表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/01-inventory-management.html"
 }

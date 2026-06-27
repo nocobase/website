@@ -1,7 +1,7 @@
 {
   "id": 371811112386560,
-  "title": "Delivery Tracking",
-  "title_cn": "配送跟踪管理",
+  "title": "Delivery Tracking Management System",
+  "title_cn": "配送跟踪管理系统",
   "description": "A NocoBase delivery dashboard for logistics teams, using AI label recognition to track shipments, exceptions, and on-time performance.",
   "description_cn": "面向物流履约的 NocoBase 配送看板，结合 AI 面单识别，追踪运单、异常和准时率。",
   "slug": "delivery-tracking-management-system",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Delivery Tracking: a delivery status board, waybill details, delivery activity logs, and AI waybill recognition for form filling. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
+  "prompt": "Build a NocoBase app — Delivery Tracking Management System: a delivery status board, waybill details, delivery activity logs, and AI waybill recognition for form filling. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 配送跟踪管理：配送状态看板、运单详情、配送动态记录和 AI 面单识别填表。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/24-delivery-tracking.html",
-  "updatedAt": "2026-06-25T00:26:01.169Z"
+  "updatedAt": "2026-06-25T18:21:37.099Z"
 }

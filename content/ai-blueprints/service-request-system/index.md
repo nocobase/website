@@ -2,6 +2,8 @@
 
 Use AI and NocoBase to quickly build a service request system that centrally collects internal requests for hardware, access permissions, software, facilities, HR, and finance.
 
+These records can also be managed as a NocoBase-based internal business system, with service requests, request categories, requester information, approval progress, assignees, and service status organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The system supports a step-by-step request submission flow. Employees first select a service category, then fill in the title, description, priority, and submission channel. Based on the selected category, the system automatically matches the service level, approval requirements, and target completion time.
 
 You can copy the prompt directly and let AI Agents such as Claude Code, Codex, Cursor, and OpenCode generate the request form, request list, detail page, and other pages in NocoBase. After that, you can continue adjusting categories, fields, permissions, and workflows through no-code configuration.

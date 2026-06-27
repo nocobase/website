@@ -2,6 +2,8 @@
 
 A customer feedback management system centralizes the collection, review, and analysis of customer feedback, helping teams quickly understand customer satisfaction, pending issues, and key improvement areas.
 
+These records can also be managed as a NocoBase-based internal business system, with customer feedback, channels, ratings, product suggestions, issue categories, response status, and feedback analysis organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 You can connect AI Agents such as Claude Code, Codex, Cursor, or OpenCode to NocoBase to quickly generate a similar customer feedback management system, then use NocoBase’s no-code capabilities to adjust fields, pages, filters, and analytical views.
 
 This system is suitable for customer success, product, operations, after-sales, and management teams, especially for companies that need to continuously track customer voices, prioritize issues, and produce feedback analysis reports.

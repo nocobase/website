@@ -1,7 +1,7 @@
 {
   "id": 371458568749056,
-  "title": "Data Quality Monitoring",
-  "title_cn": "数据质量管理",
+  "title": "Data Quality Monitoring System",
+  "title_cn": "数据质量监控系统",
   "description": "Build a no-code data quality monitoring system with NocoBase and AI Agents to manage rules, issues, and reports.",
   "description_cn": "通过 NocoBase 和 AI Agent 搭建无代码数据质量监控系统，统一管理规则、异常和报告。",
   "slug": "data-quality-monitoring",
@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Data Quality Monitoring: a quality overview dashboard, rule status, an anomaly list, data freshness, quality trends, and an AI data-quality analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
+  "prompt": "Build a NocoBase app — Data Quality Monitoring System: a quality overview dashboard, rule status, an anomaly list, data freshness, quality trends, and an AI data-quality analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 数据质量管理系统：质量总览看板、规则状态、异常列表、数据新鲜度、质量趋势和 AI 数据质量分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/31-data-quality.html",
-  "updatedAt": "2026-06-25T00:25:59.422Z"
+  "updatedAt": "2026-06-25T18:19:41.954Z"
 }

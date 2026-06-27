@@ -2,6 +2,8 @@
 
 An employee information system helps HR, people operations, finance, and management teams maintain employee profiles, department ownership, job information, employment types, employment status, office locations, and compensation data in one place. Teams can use the employee directory to quickly understand the current organization structure and filter employees by department, status, and employment type.
 
+These records can also be managed as a NocoBase-based internal business system, with employee records, departments, positions, employment status, personal profiles, HR data, and permissions organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is centered on employee records. The left side provides filters for departments, employee status, and employment type. The middle area displays employee cards, while the right side shows the full profile of the selected employee. Managers can quickly view the employee ID, name, job title, department, status, hire date, reporting relationship, age, tenure, and base salary.
 
 The employee detail page further separates personal identity information and employment information, including employee ID, full name, preferred name, gender, date of birth, nationality, marital status, job title, department, and work email. For distributed teams, the system can also record the employee’s city, remote work status, and time zone.

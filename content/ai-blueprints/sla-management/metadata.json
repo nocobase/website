@@ -1,7 +1,7 @@
 {
   "id": 369401718833152,
-  "title": "SLA Management",
-  "title_cn": "SLA 管理",
+  "title": "SLA Management System",
+  "title_cn": "SLA 管理系统",
   "description": "Connect AI Agents to create an SLA management system for response limits, breach alerts, and key metrics.",
   "description_cn": "接入 AI Agent 生成 SLA 管理系统，跟踪响应时限、违约提醒等关键指标。",
   "slug": "sla-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:58.200Z",
-      "updatedAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
       "id": 262,
       "title": "Support",
       "title_cn": "客服与工单",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:05.215Z",
         "updatedAt": "2026-06-17T13:53:21.302Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — SLA Monitor: a KPI bar, a three-column war-room board, and countdown rings. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/17-sla-management.html",
-  "updatedAt": "2026-06-17T13:53:21.308Z",
+  "prompt": "Build a NocoBase app —SLA Management System: a KPI bar, a three-column war-room board, and countdown rings. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/17-sla-management.html",
+  "updatedAt": "2026-06-25T17:45:23.810Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— SLA 监控:KPI 栏、三列作战看板和倒计时圆环。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/17-sla-management.html"
 }

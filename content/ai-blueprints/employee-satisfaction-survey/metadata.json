@@ -1,7 +1,7 @@
 {
   "id": 369401783844864,
-  "title": "Satisfaction Survey",
-  "title_cn": "满意度调查",
+  "title": "Employee Satisfaction Survey System",
+  "title_cn": "员工满意度调查系统",
   "description": "Generate an AI-powered employee satisfaction survey system for eNPS and feedback collection.",
   "description_cn": "用 AI 生成员工满意度调查系统，覆盖 eNPS、反馈收集等场景。",
   "slug": "employee-satisfaction-survey",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:58.200Z",
-      "updatedAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
       "id": 262,
       "title": "Support",
       "title_cn": "客服与工单",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:36.157Z",
         "updatedAt": "2026-06-17T13:52:00.126Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Satisfaction Survey: an eNPS gauge, a dimension heatmap, and a grid of feedback cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html",
-  "updatedAt": "2026-06-17T13:52:00.136Z",
+  "prompt": "Build a NocoBase app — Employee Satisfaction Survey System: an eNPS gauge, a dimension heatmap, and a grid of feedback cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html",
+  "updatedAt": "2026-06-25T17:47:50.481Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 满意度调查:eNPS 仪表盘、维度热力图和反馈卡片网格。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html"
 }

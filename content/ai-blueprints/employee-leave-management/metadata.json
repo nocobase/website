@@ -1,7 +1,7 @@
 {
   "id": 369402094223360,
-  "title": "Leave Management",
-  "title_cn": "请假管理",
+  "title": "Employee Leave Management System",
+  "title_cn": "员工请假管理系统",
   "description": "Connect your preferred AI Agent to NocoBase to generate an employee leave management system for leave requests, balances, and more.",
   "description_cn": "链接你常用的 AI Agent，在 NocoBase 中生成员工请假管理系统，覆盖请假申请、年假余额等功能。",
   "slug": "employee-leave-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.434Z",
-      "updatedAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
       "id": 260,
       "title": "HR",
       "title_cn": "人事",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:04:04.531Z",
         "updatedAt": "2026-06-17T13:37:58.828Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Leave Management: a multi-select calendar with pills, a balance dashboard, and a request ledger. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/18-leave-management.html",
-  "updatedAt": "2026-06-17T13:37:58.837Z",
+  "prompt": "Build a NocoBase app — Employee Leave Management System: a multi-select calendar with pills, a balance dashboard, and a request ledger. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/18-leave-management.html",
+  "updatedAt": "2026-06-25T18:19:16.326Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 请假管理:带标签的多选日历、余额看板和请假台账。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/18-leave-management.html"
 }

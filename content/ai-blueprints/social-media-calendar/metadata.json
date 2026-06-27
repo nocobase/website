@@ -1,16 +1,16 @@
 {
   "id": 369401609781248,
-  "title": "Social Media Calendar",
-  "title_cn": "社交媒体内容管理",
+  "title": "Social Media Calendar System",
+  "title_cn": "社交媒体内容管理系统",
   "description": "Create a social media content calendar with NocoBase no-code platform for writing, scheduling, and publishing.",
-  "description_cn": "用开源无代码平台 NocoBase 生成社交媒体内容日历，管理帖子撰写和排程发布。",
+  "description_cn": "用开源无代码平台 NocoBase 生成社交媒体内容管理系统，管理帖子撰写和排程发布。",
   "slug": "social-media-calendar",
   "publishedAt": "2026-06-11T08:00:00.000Z",
   "status": "published",
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.810Z",
-      "updatedAt": "2026-06-11T08:50:57.810Z",
+      "updatedAt": "2026-06-24T09:34:52.544Z",
       "id": 261,
       "title": "Marketing",
       "title_cn": "营销",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:00:13.655Z",
         "updatedAt": "2026-06-17T13:56:53.590Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Social Media Calendar: a post composer with a live phone preview and a scheduling calendar. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html",
-  "updatedAt": "2026-06-17T13:56:53.598Z",
+  "prompt": "Build a NocoBase app — Social Media Calendar System: a post composer with a live phone preview and a scheduling calendar. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html",
+  "updatedAt": "2026-06-25T17:38:51.607Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 社媒日历:帖子编辑器 + 手机实时预览和排期日历。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/04-social-media-calendar.html"
 }

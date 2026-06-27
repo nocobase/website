@@ -1,7 +1,7 @@
 {
   "id": 369401769164800,
-  "title": "Support ticket software",
-  "title_cn": "支持工单",
+  "title": "Customer Support Ticket System",
+  "title_cn": "客户支持工单系统",
   "title_ja": null,
   "description": "Build a customer support ticket system with AI Agents to track priorities, SLA, and service workflows.",
   "description_cn": "借助 AI Agent 搭建客户支持工单系统，跟进优先级、SLA 等服务流程。",
@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:58.200Z",
-      "updatedAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
       "id": 262,
       "title": "Support",
       "title_cn": "客服与工单",
@@ -27,8 +27,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:29.975Z",
         "updatedAt": "2026-06-17T13:52:16.173Z",
@@ -55,7 +57,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Support Inbox: a three-pane inbox — queue, conversation, and customer panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html",
-  "updatedAt": "2026-06-17T13:52:16.182Z",
+  "prompt": "Build a NocoBase app — Customer Support Ticket System： a three-pane inbox — queue, conversation, and customer panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html",
+  "updatedAt": "2026-06-25T17:47:27.898Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 支持工单收件箱:队列、会话、客户面板三栏式收件箱。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/12-support-ticket-software.html"
 }

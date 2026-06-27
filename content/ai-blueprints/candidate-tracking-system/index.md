@@ -2,6 +2,8 @@
 
 A candidate tracking system helps teams manage the recruitment process from resume submission, screening, interviews, and offers to final hiring. Recruiting teams can view candidate stages, conversion rates, ratings, sources, and follow-up timing in one workspace, instead of maintaining hiring information across spreadsheets and chat records.
 
+These records can also be managed as a NocoBase-based internal business system, with candidate profiles, recruitment stages, interview records, hiring status, recruiters, job openings, and evaluation notes organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page centers on a hiring pipeline board that groups candidates by stages such as Applied, Screening, Interviewing, Offer, Hired, and Rejected. Candidate cards can show the candidate name, role direction, current company, location, rating, years of experience, source, owner, and time in stage, helping recruiters quickly decide the next action.
 
 With AI Agent and NocoBase, recruiting teams can first generate the basic pages for candidate management, then use them to organize candidate profiles, job fit, interview progress, and evaluation results. AI Agent can also generate candidate recommendation reports from existing data, helping teams understand the talent pool, high-priority candidates, and follow-up order more quickly.

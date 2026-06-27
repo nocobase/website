@@ -1,7 +1,7 @@
 {
   "id": 369401727221760,
-  "title": "Asset Management",
-  "title_cn": "资产管理",
+  "title": "Asset Management System",
+  "title_cn": "资产管理系统",
   "description": "Manage asset records and maintenance logs with NocoBase, an open-source no-code platform.",
   "description_cn": "通过开源无代码平台 NocoBase 管理企业资产台账，覆盖资产信息和维修记录。",
   "slug": "asset-management",
@@ -10,7 +10,7 @@
   "tags": [
     {
       "createdAt": "2026-06-11T08:50:57.060Z",
-      "updatedAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
       "id": 259,
       "title": "Inventory & Assets",
       "title_cn": "资产与库存",
@@ -25,8 +25,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 9,
-      "updatedById": 22,
+      "updatedById": 9,
       "lightSolutionsTags": {
         "createdAt": "2026-06-11T09:01:09.347Z",
         "updatedAt": "2026-06-17T13:53:06.847Z",
@@ -53,7 +55,7 @@
     "updatedById": 9
   },
   "author": "NocoBase Team",
-  "prompt": "Build a NocoBase app — Asset Management: three-section asset cards, depreciation progress bars, and maintenance tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/02-asset-management.html",
-  "updatedAt": "2026-06-17T13:53:06.853Z",
+  "prompt": "Build a NocoBase app — Asset Management System: three-section asset cards, depreciation progress bars, and maintenance tracking. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/02-asset-management.html",
+  "updatedAt": "2026-06-25T17:45:58.589Z",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 资产管理:三段式资产卡片、折旧进度条和维保跟踪。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/02-asset-management.html"
 }

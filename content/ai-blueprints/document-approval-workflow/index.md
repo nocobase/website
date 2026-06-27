@@ -2,6 +2,8 @@
 
 A document approval workflow is useful for managing approval materials such as contracts, purchase orders, invoices, offers, policy documents, statements of work, and NDAs. Teams can view documents awaiting signature, items under legal review, overdue signatures, and documents signed in the current cycle in one place, making it easier to understand approval pressure and delay risks.
 
+These records can also be managed as a NocoBase-based internal business system, with document approvals, approval nodes, SLA deadlines, legal review, signing timelines, risk levels, and audit records organized through configurable data models, role permissions, views, workflows where needed, and operation history.
+
 The page is built around an approval workspace and a document registry. The approval board groups documents by drafting, internal review, legal review, and awaiting signature. The document registry records document number, title, type, stage, priority, risk level, amount, owner, deadline, and SLA status.
 
 With the help of AI Agent, teams can generate analysis reports based on all approval documents, identifying high-priority items, overdue documents, signing bottlenecks, and high-value risks. Reports can be exported as Markdown, HTML, and PDF, making them useful for approval reviews, risk reporting, and management decisions.
