@@ -1,0 +1,641 @@
+---
+title: "NocoBase v2.0.3：開源商業插件與授權從 AGPL-3.0 更新至 Apache-2.0"
+description: "v2.0.3 版本發行說明"
+---
+
+### 🎉 新功能
+
+- **[未分類]**
+
+  - 新增實驗性的「引用區塊」插件，允許透過引用或複製的方式重複使用現有區塊。([#7584](https://github.com/nocobase/nocobase/pull/7584)) 由 @gchust 貢獻
+  - 表單草稿功能 由 @chenos 貢獻
+- **[acl]** 開源商業插件，並將授權條款從 AGPL-3.0 更新為 Apache-2.0 ([#8682](https://github.com/nocobase/nocobase/pull/8682)) 由 @chenos 貢獻
+- **[client]**
+
+  - 支援為頁面、頁面頁籤、彈窗及彈窗頁籤設定瀏覽器頁籤標題 ([#8590](https://github.com/nocobase/nocobase/pull/8590)) 由 @zhangzhonghe 貢獻
+  - 支援在表單區塊中設定關聯資料表欄位的欄位 ([#8578](https://github.com/nocobase/nocobase/pull/8578)) 由 @katherinehhh 貢獻
+  - 支援設定資料載入模式 ([#8551](https://github.com/nocobase/nocobase/pull/8551)) 由 @zhangzhonghe 貢獻
+  - 新增子表格（彈窗編輯）欄位元件 ([#8280](https://github.com/nocobase/nocobase/pull/8280)) 由 @katherinehhh 貢獻
+  - 建立資料表時，可變更預設 id 欄位的類型 ([#8129](https://github.com/nocobase/nocobase/pull/8129)) 由 @cgyrock 貢獻
+  - 在多對多子表單中新增新增/選擇/解除關聯設定 ([#8099](https://github.com/nocobase/nocobase/pull/8099)) 由 @katherinehhh 貢獻
+  - 支援在主題編輯器中自訂全域樣式 ([#7960](https://github.com/nocobase/nocobase/pull/7960)) 由 @ljmiaoo 貢獻
+  - 支援在詳情區塊中設定預設排序規則 ([#8070](https://github.com/nocobase/nocobase/pull/8070)) 由 @katherinehhh 貢獻
+  - 支援為數字欄位設定資料類型（選項：double、float、decimal）([#8058](https://github.com/nocobase/nocobase/pull/8058)) 由 @chenos 貢獻
+  - 支援表格中的欄位排序 ([#7900](https://github.com/nocobase/nocobase/pull/7900)) 由 @katherinehhh 貢獻
+  - 為關聯欄位選擇器新增快速建立支援 ([#7887](https://github.com/nocobase/nocobase/pull/7887)) 由 @katherinehhh 貢獻
+  - 支援樹狀資料表關聯欄位的級聯選擇器 ([#7846](https://github.com/nocobase/nocobase/pull/7846)) 由 @katherinehhh 貢獻
+  - 支援拖曳調整表格欄位操作 ([#7842](https://github.com/nocobase/nocobase/pull/7842)) 由 @zhangzhonghe 貢獻
+  - 為子表格新增分頁支援 ([#7754](https://github.com/nocobase/nocobase/pull/7754)) 由 @katherinehhh 貢獻
+  - 事件流程：引入新的預定義動作，增強事件處理的自訂選項，允許用戶簡化工作流程並提高效率 ([#7672](https://github.com/nocobase/nocobase/pull/7672)) 由 @zhangzhonghe 貢獻
+  - 新增 2.0 Markdown 區塊 ([#7613](https://github.com/nocobase/nocobase/pull/7613)) 由 @katherinehhh 貢獻
+  - 支援為子表單設定聯動規則 ([#7640](https://github.com/nocobase/nocobase/pull/7640)) 由 @zhangzhonghe 貢獻
+  - 新增對表格行點擊事件監聽器的支援，使用戶能在點擊表格行時執行特定動作 ([#7622](https://github.com/nocobase/nocobase/pull/7622)) 由 @zhangzhonghe 貢獻
+  - 新增對自訂變數的支援 ([#7585](https://github.com/nocobase/nocobase/pull/7585)) 由 @zhangzhonghe 貢獻
+  - 新增「目前裝置類型」變數 ([#7576](https://github.com/nocobase/nocobase/pull/7576)) 由 @zhangzhonghe 貢獻
+- **[flow-engine]** 支援 env.ESM_CDN_BASE_URL ([#8529](https://github.com/nocobase/nocobase/pull/8529)) 由 @chenos 貢獻
+- **[server]** 重構應用程式管理器，以支援跨不同場景的多應用程式管理 ([#8043](https://github.com/nocobase/nocobase/pull/8043)) 由 @2013xile 貢獻
+- **[test]** 為基礎任務管理器新增程序層級並發控制 ([#8343](https://github.com/nocobase/nocobase/pull/8343)) 由 @cgyrock 貢獻
+- **[動作：批次編輯]** 批次編輯 2.0 ([#8526](https://github.com/nocobase/nocobase/pull/8526)) 由 @jiannx 貢獻
+- **[區塊：卡片]**
+
+  - 支援可設定的區塊高度 ([#8583](https://github.com/nocobase/nocobase/pull/8583)) 由 @katherinehhh 貢獻
+  - 新增 2.0 卡片區塊 ([#7579](https://github.com/nocobase/nocobase/pull/7579)) 由 @katherinehhh 貢獻
+- **[動作：複製記錄]** 新增 2.0 複製動作 ([#8580](https://github.com/nocobase/nocobase/pull/8580)) 由 @katherinehhh 貢獻
+- **[工作流程]**
+
+  - 支援在工作流程畫布上透過拖放來複製、貼上及移動節點 ([#8559](https://github.com/nocobase/nocobase/pull/8559)) 由 @mytharcher 貢獻
+  - 新增移動節點的 API ([#8507](https://github.com/nocobase/nocobase/pull/8507)) 由 @mytharcher 貢獻
+  - 新增「多重條件」節點，提供類似 `switch` / `case` 的流程控制 ([#7878](https://github.com/nocobase/nocobase/pull/7878)) 由 @mytharcher 貢獻
+    參考：[「多重條件」節點](https://v2.docs.nocobase.com/workflow/nodes/multi-conditions)
+- **[AI 員工]**
+
+  - 支援在 AI 聊天中貼上檔案 ([#8487](https://github.com/nocobase/nocobase/pull/8487)) 由 @heziqiang 貢獻
+  - 支援具有函數呼叫思維簽章的 Gemini-3 模型 ([#8377](https://github.com/nocobase/nocobase/pull/8377)) 由 @heziqiang 貢獻
+  - 改進 plugin-ai 的網路搜尋功能 ([#7580](https://github.com/nocobase/nocobase/pull/7580)) 由 @cgyrock 貢獻
+- **[區塊：地圖]** 新增 2.0 地圖區塊 ([#7944](https://github.com/nocobase/nocobase/pull/7944)) 由 @katherinehhh 貢獻
+- **[資料視覺化]**
+
+  - 新增用於設定圖表的 AI 員工 ([#7815](https://github.com/nocobase/nocobase/pull/7815)) 由 @heziqiang 貢獻
+  - 新增圖表 SQL 資料源 ([#7830](https://github.com/nocobase/nocobase/pull/7830)) 由 @heziqiang 貢獻
+  - 新增圖表類型「甜甜圈圖」([#7629](https://github.com/nocobase/nocobase/pull/7629)) 由 @heziqiang 貢獻
+- **[流程引擎]** 支援在 SQL 語句中使用 LiquidJS 模板字串 ([#7667](https://github.com/nocobase/nocobase/pull/7667)) 由 @2013xile 貢獻
+- **[資料源管理器]**
+
+  - 主資料源現在支援直接從主資料庫讀取資料庫表，並允許修改欄位介面 ([#7118](https://github.com/nocobase/nocobase/pull/7118)) 由 @aaaaaajie 貢獻
+  - 主資料源現在支援直接從主資料庫讀取資料庫表，並允許修改欄位介面 ([#7118](https://github.com/nocobase/nocobase/pull/7118)) 由 @aaaaaajie 貢獻
+- **[區塊：列表]** 新增 2.0 列表區塊 ([#7574](https://github.com/nocobase/nocobase/pull/7574)) 由 @katherinehhh 貢獻
+- **[區塊：操作面板]** 新增 2.0 操作面板區塊 ([#7594](https://github.com/nocobase/nocobase/pull/7594)) 由 @katherinehhh 貢獻
+- **[遙測]** 新增插件：Telemetry，一個基於 OpenTelemetry 的遙測插件，提供 CPU、記憶體和 HTTP 請求指標，並支援 HTTP 匯出 由 @2013xile 貢獻
+- **[工作流程：審批]**
+
+  - 允許在審批流程 UI 中選擇顯示快照或最新記錄 由 @mytharcher 貢獻
+  - 新增受眾配置，以控制誰可以發起審批 由 @mytharcher 貢獻
+- **[郵件管理器]** 郵件管理 2.0 實作 由 @jiannx 貢獻
+
+### 🚀 改進
+
+- **[未分類]**
+
+  - 更新 AI 員工文件 ([#8690](https://github.com/nocobase/nocobase/pull/8690)) 由 @heziqiang 貢獻
+  - 更新圖表插件的英文文件 ([#7748](https://github.com/nocobase/nocobase/pull/7748)) 由 @heziqiang 貢獻
+  - 更新圖表概覽文件 ([#7702](https://github.com/nocobase/nocobase/pull/7702)) 由 @heziqiang 貢獻
+- **[client]**
+
+  - 改進日期/時間欄位的指派 UI，支援選擇相對日期/時間。([#8630](https://github.com/nocobase/nocobase/pull/8630)) 由 @gchust 貢獻
+  - 在指派欄位時，支援為關聯欄位指定標題欄位。([#8624](https://github.com/nocobase/nocobase/pull/8624)) 由 @gchust 貢獻
+  - 表格 2.0 支援拖放排序 ([#8540](https://github.com/nocobase/nocobase/pull/8540)) 由 @jiannx 貢獻
+  - 將欄位指派和預設值設定移至表單層級配置。([#8596](https://github.com/nocobase/nocobase/pull/8596)) 由 @chenos 貢獻
+  - 在篩選表單中為關聯欄位使用獨立的欄位模型 ([#8511](https://github.com/nocobase/nocobase/pull/8511)) 由 @zhangzhonghe 貢獻
+  - 將內聯可編輯子表格中的欄位寬度設定調整為下拉選擇 ([#8561](https://github.com/nocobase/nocobase/pull/8561)) 由 @katherinehhh 貢獻
+  - 改進子表格中附件欄位的上傳和編輯按鈕，以更好地引導用戶點擊上傳。([#8474](https://github.com/nocobase/nocobase/pull/8474)) 由 @katherinehhh 貢獻
+  - 改進多對多子表單，使其初始化時包含一個預設項目，並在留空時避免建立記錄 ([#8473](https://github.com/nocobase/nocobase/pull/8473)) 由 @katherinehhh 貢獻
+  - 改進多對多子表單，使其初始化時包含一個預設項目，並在留空時避免建立記錄 ([#8458](https://github.com/nocobase/nocobase/pull/8458)) 由 @katherinehhh 貢獻
+  - 富文本編輯器支援字體大小調整、圖片大小調整和軟換行 ([#8401](https://github.com/nocobase/nocobase/pull/8401)) 由 @jiannx 貢獻
+  - 支援指定事件流程的執行時機。([#8340](https://github.com/nocobase/nocobase/pull/8340)) 由 @gchust 貢獻
+  - 防止在更新儲存格時重新渲染整個表格 ([#8349](https://github.com/nocobase/nocobase/pull/8349)) 由 @katherinehhh 貢獻
+  - 在 AI 編輯任務表單中自動調整文字區域大小。([#8350](https://github.com/nocobase/nocobase/pull/8350)) 由 @heziqiang 貢獻
+  - 支援 JS 程式碼編輯器的全螢幕模式。([#8294](https://github.com/nocobase/nocobase/pull/8294)) 由 @gchust 貢獻
+  - 使「新增子項」等同於對應子關聯的「新增」([#8272](https://github.com/nocobase/nocobase/pull/8272)) 由 @katherinehhh 貢獻
+  - 支援清除顏色欄位的預設值 ([#8268](https://github.com/nocobase/nocobase/pull/8268)) 由 @katherinehhh 貢獻
+  - 對操作欄位寬度配置使用選擇器 ([#8218](https://github.com/nocobase/nocobase/pull/8218)) 由 @katherinehhh 貢獻
+  - 支援表格欄位的自訂欄位寬度 ([#8200](https://github.com/nocobase/nocobase/pull/8200)) 由 @katherinehhh 貢獻
+  - 將表格欄位寬度改為使用可選選項 ([#8188](https://github.com/nocobase/nocobase/pull/8188)) 由 @katherinehhh 貢獻
+  - 使用 maxTagCount 改進 recordPicker 樣式 ([#8175](https://github.com/nocobase/nocobase/pull/8175)) 由 @katherinehhh 貢獻
+  - 優化配置選項（區塊、欄位、動作）([#8141](https://github.com/nocobase/nocobase/pull/8141)) 由 @katherinehhh 貢獻
+  - 支援百分比欄位的數字格式化 ([#8123](https://github.com/nocobase/nocobase/pull/8123)) 由 @katherinehhh 貢獻
+  - 修復刪除行後子表格分頁跳轉問題，並新增對欄位驗證規則的支援 ([#8094](https://github.com/nocobase/nocobase/pull/8094)) 由 @katherinehhh 貢獻
+  - 調整可編輯子表格中的大型欄位顯示 ([#8078](https://github.com/nocobase/nocobase/pull/8078)) 由 @katherinehhh 貢獻
+  - 支援對溢出的 JSON 欄位內容使用省略號 ([#8067](https://github.com/nocobase/nocobase/pull/8067)) 由 @katherinehhh 貢獻
+  - 支援附件上傳元件中的 allowMultiple 設定 ([#8052](https://github.com/nocobase/nocobase/pull/8052)) 由 @katherinehhh 貢獻
+  - 在 Select 元件中，滑鼠懸停時顯示折疊的選項 ([#8030](https://github.com/nocobase/nocobase/pull/8030)) 由 @katherinehhh 貢獻
+  - 支援在圖表查詢中初始化已選取的篩選欄位 ([#7933](https://github.com/nocobase/nocobase/pull/7933)) 由 @heziqiang 貢獻
+  - 為行動裝置適配元件 ([#7870](https://github.com/nocobase/nocobase/pull/7870)) 由 @zhangzhonghe 貢獻
+  - 在 RunJS 腳本上下文中新增對 Day.js 函式庫的支援，使日期和時間操作更簡便。([#7841](https://github.com/nocobase/nocobase/pull/7841)) 由 @gchust 貢獻
+  - 將頁面資訊版本新增至流程引擎上下文 ([#7826](https://github.com/nocobase/nocobase/pull/7826)) 由 @gchust 貢獻
+  - 增強 Markdown 編輯器 ([#7793](https://github.com/nocobase/nocobase/pull/7793)) 由 @katherinehhh 貢獻
+  - 在 2.0 中適配 tableoid 欄位 ([#7809](https://github.com/nocobase/nocobase/pull/7809)) 由 @katherinehhh 貢獻
+  - 支援 JS 程式碼編輯器中的 JSX ([#7699](https://github.com/nocobase/nocobase/pull/7699)) 由 @gchust 貢獻
+  - 支援 JS 欄位模型中的關聯欄位 ([#7618](https://github.com/nocobase/nocobase/pull/7618)) 由 @gchust 貢獻
+- **[flow-engine]**
+
+  - 改進 JS 模型程式碼編輯器中的自動完成和程式碼提示。([#8575](https://github.com/nocobase/nocobase/pull/8575)) 由 @gchust 貢獻
+  - 改進 runjs 中的 ctx.libs 以支援按需載入，並新增預定義函式庫：lodash、math 和 formula。([#8468](https://github.com/nocobase/nocobase/pull/8468)) 由 @gchust 貢獻
+  - 為 GridModel 新增 `rowOrder` 以確保一致的行排序 ([#8371](https://github.com/nocobase/nocobase/pull/8371)) 由 @zhangzhonghe 貢獻
+  - 支援在 runjs 環境中使用 window.location.reload 方法。([#8316](https://github.com/nocobase/nocobase/pull/8316)) 由 @gchust 貢獻
+  - 優化切換配置模式時的性能問題 ([#8241](https://github.com/nocobase/nocobase/pull/8241)) 由 @zhangzhonghe 貢獻
+  - 支援在 runjs 環境中使用 FormData 物件。([#8263](https://github.com/nocobase/nocobase/pull/8263)) 由 @gchust 貢獻
+  - 支援動態隱藏步驟配置選單 ([#7924](https://github.com/nocobase/nocobase/pull/7924)) 由 @gchust 貢獻
+  - 為 FlowModelRenderer 新增 useCache 選項 ([#8072](https://github.com/nocobase/nocobase/pull/8072)) 由 @zhangzhonghe 貢獻
+  - 新增 `removeModelWithSubModels` 方法以遞迴移除模型及其子模型 ([#8064](https://github.com/nocobase/nocobase/pull/8064)) 由 @zhangzhonghe 貢獻
+  - 支援動態切換流程模型類別 ([#7952](https://github.com/nocobase/nocobase/pull/7952)) 由 @gchust 貢獻
+  - 支援在流程引擎中監聽流程模型樹變更事件。([#7905](https://github.com/nocobase/nocobase/pull/7905)) 由 @gchust 貢獻
+  - 改進目前記錄變數解析，使開啟對話框更快 ([#7895](https://github.com/nocobase/nocobase/pull/7895)) 由 @gchust 貢獻
+  - 優化了 runjs 上下文中第三方函式庫的 API 結構，並新增對 Antd 圖示庫的支援。([#7896](https://github.com/nocobase/nocobase/pull/7896)) 由 @gchust 貢獻
+  - 優化工具列樣式以防止圖示被遮擋 ([#7883](https://github.com/nocobase/nocobase/pull/7883)) 由 @zhangzhonghe 貢獻
+  - 優化頁面頁籤的工具列樣式 ([#7795](https://github.com/nocobase/nocobase/pull/7795)) 由 @zhangzhonghe 貢獻
+  - 支援流程模型中的延遲操作 ([#7786](https://github.com/nocobase/nocobase/pull/7786)) 由 @gchust 貢獻
+  - 改進了複製 UID 失敗時顯示的錯誤訊息，提供了更清晰的解決問題說明。([#7718](https://github.com/nocobase/nocobase/pull/7718)) 由 @gchust 貢獻
+  - 支援在流程步驟定義中定義變數上下文 ([#7674](https://github.com/nocobase/nocobase/pull/7674)) 由 @gchust 貢獻
+  - 支援透過在 URL 查詢字串中添加 skipRunJs=true 來跳過 runjs 流程步驟。([#7638](https://github.com/nocobase/nocobase/pull/7638)) 由 @gchust 貢獻
+  - 支援彈窗變數 ([#7583](https://github.com/nocobase/nocobase/pull/7583)) 由 @gchust 貢獻
+  - 透過更豐富的程式碼片段和情境感知的程式碼補全，增強各種場景下的程式碼編輯體驗 ([#7559](https://github.com/nocobase/nocobase/pull/7559)) 由 @gchust 貢獻
+  - 標準化自動化工作流程，使其一致地由「beforeRender」事件觸發，確保跨流程的可預測和統一操作。([#7577](https://github.com/nocobase/nocobase/pull/7577)) 由 @gchust 貢獻
+  - 優化拖放功能 ([#7526](https://github.com/nocobase/nocobase/pull/7526)) 由 @zhangzhonghe 貢獻
+- **[acl]** acl 新增 generalFixedParams 方法 ([#8363](https://github.com/nocobase/nocobase/pull/8363)) 由 @jiannx 貢獻
+- **[cli]** 支援透過環境變數設定 CDN 基礎 URL ([#8384](https://github.com/nocobase/nocobase/pull/8384)) 由 @chenos 貢獻
+- **[sdk]** 改進 API 儲存實作 ([#8308](https://github.com/nocobase/nocobase/pull/8308)) 由 @chenos 貢獻
+- **[telemetry]**
+
+  - 支援控制匯出哪些指標 ([#7938](https://github.com/nocobase/nocobase/pull/7938)) 由 @2013xile 貢獻
+  - 新增線上子應用程式數量等遙測指標 ([#7743](https://github.com/nocobase/nocobase/pull/7743)) 由 @2013xile 貢獻
+- **[database]** 重構欄位加密插件以增強安全性，支援應用程式金鑰生成和輪換，以及每個欄位的加密金鑰。([#7769](https://github.com/nocobase/nocobase/pull/7769)) 由 @cgyrock 貢獻
+- **[本地化]** 自動建立缺失的 i18n 鍵 ([#8588](https://github.com/nocobase/nocobase/pull/8588)) 由 @jiannx 貢獻
+- **[工作流程：副本]** 重構工作流程副本插件以支援 FlowModel 架構，並保持 v1/v2 相容性 ([#8405](https://github.com/nocobase/nocobase/pull/8405)) 由 @zhangzhonghe 貢獻
+- **[工作流程]**
+
+  - 變更工作流程子頁面的路由路徑，使所有工作流程頁面位於 `/admin/settings/workflow` 前綴下 ([#8519](https://github.com/nocobase/nocobase/pull/8519)) 由 @mytharcher 貢獻
+  - 完成更新記錄動作按鈕的綁定工作流程配置 ([#7668](https://github.com/nocobase/nocobase/pull/7668)) 由 @mytharcher 貢獻
+- **[檔案管理器]**
+
+  - 為檔案管理器新增可擴展的預覽器 ([#8501](https://github.com/nocobase/nocobase/pull/8501)) 由 @mytharcher 貢獻
+  - 為在伺服器端擷取 OSS 檔案新增請求選項，以備需要額外參數或標頭 ([#8372](https://github.com/nocobase/nocobase/pull/8372)) 由 @mytharcher 貢獻
+- **[動作：匯出記錄]** 根據選取的記錄或資源篩選器改進匯出動作的資料範圍 ([#8442](https://github.com/nocobase/nocobase/pull/8442)) 由 @katherinehhh 貢獻
+- **[流程引擎]** 支援解析目前表單記錄中欄位的值，即使這些欄位未新增到編輯表單中。([#8436](https://github.com/nocobase/nocobase/pull/8436)) 由 @gchust 貢獻
+- **[AI 員工]**
+
+  - 將工作流程呼叫器的結果變更為 `execution.output`，透過明確使用輸出節點可使結果穩定 ([#8423](https://github.com/nocobase/nocobase/pull/8423)) 由 @mytharcher 貢獻
+  - 優化 AI 入口按鈕 ([#8414](https://github.com/nocobase/nocobase/pull/8414)) 由 @heziqiang 貢獻
+  - 在入口列表中隱藏 builder ai。<br/>優化 LLM 整合流程。<br/>更新關於 AI 模型 gemini-3 的文件。([#8409](https://github.com/nocobase/nocobase/pull/8409)) 由 @heziqiang 貢獻
+  - 支援 Anthropic 和 Claude-4.5 ([#8389](https://github.com/nocobase/nocobase/pull/8389)) 由 @heziqiang 貢獻
+  - 支援系統提示詞的自訂編輯和自動更新 ([#8378](https://github.com/nocobase/nocobase/pull/8378)) 由 @heziqiang 貢獻
+  - 改進 AI 對 LLM 服務和模型的錯誤處理 ([#8351](https://github.com/nocobase/nocobase/pull/8351)) 由 @heziqiang 貢獻
+  - 改進工作流程中 LLM 節點的 Gemini 相容性。<br/>優化 AI 工具 dataSourceQuery 以處理大規模資料。<br/>解決資料建模問題。<br/>新增 AI 建議工具。 ([#8249](https://github.com/nocobase/nocobase/pull/8249)) 由 @heziqiang 貢獻
+  - 修復 AI 員工在首次編輯提交時無回應的問題<br/>刪除不必要的內建 AI 員工「Avery Form Assistant」<br/>為內建 AI 員工新增預設初始角色權限<br/>改進 AI 員工的錯誤處理和輸出行為<br/>新增對 AI 存取模態框上下文變數的支援<br/>新增對 AI 外部資料源的支援<br/>修復 AI 處理大量資料時對話截斷不正確的問題 ([#8191](https://github.com/nocobase/nocobase/pull/8191)) 由 @heziqiang 貢獻
+  - 啟用了內建 AI 助手系統提示詞的編輯功能。<br/>優化了 Nathan AI 助手的系統提示詞。<br/>修復了伺服器讀取靜態檔案失敗的問題。([#8097](https://github.com/nocobase/nocobase/pull/8097)) 由 @heziqiang 貢獻
+  - 為新增 LLM 表單新增缺失的 provider 欄位 ([#8049](https://github.com/nocobase/nocobase/pull/8049)) 由 @heziqiang 貢獻
+  - AI 員工插件新增升級鉤子 ([#7951](https://github.com/nocobase/nocobase/pull/7951)) 由 @heziqiang 貢獻
+  - 改進 AI 員工互動邏輯並優化任務配置流程 ([#7707](https://github.com/nocobase/nocobase/pull/7707)) 由 @cgyrock 貢獻
+  - AI 員工可以根據表格區塊元資料自主查詢資料 ([#7703](https://github.com/nocobase/nocobase/pull/7703)) 由 @cgyrock 貢獻
+  - 優化了 AI 編碼體驗，包括使用 AI 員工審查、診斷和修復程式碼。([#7679](https://github.com/nocobase/nocobase/pull/7679)) 由 @cgyrock 貢獻
+  - 將 OpenAI LLM Provider 重構為兩個獨立的 Provider，以支援 OpenAI 的 Completions 和 Responses API。([#7615](https://github.com/nocobase/nocobase/pull/7615)) 由 @cgyrock 貢獻
+  - 新增 LLM Provider Ollama ([#7612](https://github.com/nocobase/nocobase/pull/7612)) 由 @ReLaMi96 貢獻
+  - AI 編碼優化 ([#7614](https://github.com/nocobase/nocobase/pull/7614)) 由 @cgyrock 貢獻
+  - 在行動版佈局中為聊天框新增最小化按鈕 ([#7595](https://github.com/nocobase/nocobase/pull/7595)) 由 @cgyrock 貢獻
+- **[UI 模板]**
+
+  - 為詳情區塊新增欄位模板支援。([#8247](https://github.com/nocobase/nocobase/pull/8247)) 由 @gchust 貢獻
+  - 新增 UI 模板插件，提供重複使用區塊模板和彈窗模板的能力。([#8163](https://github.com/nocobase/nocobase/pull/8163)) 由 @gchust 貢獻
+- **[區塊：操作面板]** 改進配置模式下隱藏區塊、動作和欄位的顯示 ([#8174](https://github.com/nocobase/nocobase/pull/8174)) 由 @katherinehhh 貢獻
+- **[區塊：列表]** 為表格、列表和卡片區塊新增連結按鈕 ([#8194](https://github.com/nocobase/nocobase/pull/8194)) 由 @katherinehhh 貢獻
+- **[區塊：地圖]** 支援文字顯示模式下地圖欄位的文字溢出省略號 ([#8189](https://github.com/nocobase/nocobase/pull/8189)) 由 @katherinehhh 貢獻
+- **[區塊：卡片]**
+
+  - 優化卡片區塊樣式以實現更緊湊的佈局 ([#8152](https://github.com/nocobase/nocobase/pull/8152)) 由 @katherinehhh 貢獻
+  - 為卡片新增行數配置，並將 pageSize 替換為自動計算 ([#8055](https://github.com/nocobase/nocobase/pull/8055)) 由 @katherinehhh 貢獻
+- **[資料表欄位：Markdown(Vditor)]** 在 readPretty 模式下，預設停用 Markdown 欄位中的變數解析 ([#8145](https://github.com/nocobase/nocobase/pull/8145)) 由 @katherinehhh 貢獻
+- **[動作：匯入記錄]** 允許為匯入欄位選擇 ID ([#8133](https://github.com/nocobase/nocobase/pull/8133)) 由 @katherinehhh 貢獻
+- **[非同步任務管理器]** 子應用程式的非同步任務應僅在 Workers 中啟動目標子應用程式 ([#7927](https://github.com/nocobase/nocobase/pull/7927)) 由 @2013xile 貢獻
+- **[資料視覺化]**
+
+  - 更新警報提示和事件程式碼模板註釋 ([#7814](https://github.com/nocobase/nocobase/pull/7814)) 由 @heziqiang 貢獻
+  - 新增圖表資料時間格式選項 ([#7763](https://github.com/nocobase/nocobase/pull/7763)) 由 @heziqiang 貢獻
+  - 在配置圖表選項前新增執行查詢的提示 ([#7685](https://github.com/nocobase/nocobase/pull/7685)) 由 @heziqiang 貢獻
+  - 點擊全域預覽按鈕時重新整理圖表資料 ([#7678](https://github.com/nocobase/nocobase/pull/7678)) 由 @heziqiang 貢獻
+  - 更新 plugin-data-vi 2.0，修復一些問題並優化 UI。([#7597](https://github.com/nocobase/nocobase/pull/7597)) 由 @heziqiang 貢獻
+  - 擴展圖表類型；優化 UI 和互動體驗。([#7581](https://github.com/nocobase/nocobase/pull/7581)) 由 @heziqiang 貢獻
+- **[多應用程式管理器（已棄用）]**
+
+  - 使用佇列啟用子應用程式的非同步啟動 ([#7749](https://github.com/nocobase/nocobase/pull/7749)) 由 @2013xile 貢獻
+  - 改進應用程式管理器 ([#7661](https://github.com/nocobase/nocobase/pull/7661)) 由 @chenos 貢獻
+- **[資料源管理器]** 調整欄位類型和介面的欄位順序，並在進行修改時新增確認步驟。([#7680](https://github.com/nocobase/nocobase/pull/7680)) 由 @2013xile 貢獻
+- **[多空間]**
+
+  - 多空間權限控制存取 acl 由 @jiannx 貢獻
+  - 使用 api.storage 取代 localstorage，權限控制重構與錯誤修復 由 @jiannx 貢獻
+- **[AI：知識庫]** 優化建置輸出以減少 plugin-ai-knowledge-base 的套件大小。 由 @cgyrock 貢獻
+- **[動作：匯出記錄 Pro]**
+
+  - 根據選取的記錄或資源篩選器改進匯出動作的資料範圍 由 @katherinehhh 貢獻
+  - import pro & export pro 動作支援權限控制 由 @katherinehhh 貢獻
+- **[遙測：Prometheus]** 升級 `@opentelemetry/exporter-prometheus` 由 @2013xile 貢獻
+- **[資料表欄位：加密]** 優化欄位加密插件，支援使用獨立 IV 進行資料檢索 由 @cgyrock 貢獻
+- **[工作流程：審批]**
+
+  - 移除對 JS 欄位的支援 由 @zhangzhonghe 貢獻
+  - 在執行結束時，將 `approval.data` 更新為審批記錄的最新版本，以符合「最新」記錄顯示模式 由 @mytharcher 貢獻
+  - 遷移後新增同步受眾的修復邏輯 由 @mytharcher 貢獻
+  - 變更 API 以取得單一審批項目，並簡化程式碼 由 @mytharcher 貢獻
+  - 實作 API 的存取控制以防止未經授權的資料操作 由 @mytharcher 貢獻
+
+### 🐛 錯誤修復
+
+- **[未分類]**
+
+  - 修復深色模式下插件文件首頁樣式不正確的問題。([#7839](https://github.com/nocobase/nocobase/pull/7839)) 由 @gchust 貢獻
+  - 修復引用區塊會將被引用區塊從原始頁面移除的問題。([#7969](https://github.com/nocobase/nocobase/pull/7969)) 由 @gchust 貢獻
+  - 路由路徑匹配支援新的多個應用程式 ([#7570](https://github.com/nocobase/nocobase/pull/7570)) 由 @jiannx 貢獻
+  - 修復觸發自訂工作流程時參數和負載不正確的問題 由 @mytharcher 貢獻
+  - 修復在非評論資料表上使用評論區塊時顯示警告的問題 由 @katherinehhh 貢獻
+  - 修復在評論區塊中刪除記錄失敗的問題 由 @katherinehhh 貢獻
+  - 修復評論區塊中引用的評論無法顯示的問題 由 @katherinehhh 貢獻
+- **[client]**
+
+  - 統一表格和卡片在行動裝置上的分頁行為 ([#8691](https://github.com/nocobase/nocobase/pull/8691)) 由 @zhangzhonghe 貢獻
+  - 圖表區塊篩選器不起作用 ([#8671](https://github.com/nocobase/nocobase/pull/8671)) 由 @chenos 貢獻
+  - 修復將單一記錄指派給多對多關聯欄位時產生不正確結果的問題。([#8652](https://github.com/nocobase/nocobase/pull/8652)) 由 @gchust 貢獻
+  - 使用日期選擇器解析日期並新增密碼強度驗證等 ([#8647](https://github.com/nocobase/nocobase/pull/8647)) 由 @jiannx 貢獻
+  - 修復表格操作欄中隱藏的連結動作導致的間距問題 ([#8646](https://github.com/nocobase/nocobase/pull/8646)) 由 @zhangzhonghe 貢獻
+  - 修復 `Action.Modal` 在某些互動後無法關閉的問題 ([#8642](https://github.com/nocobase/nocobase/pull/8642)) 由 @mytharcher 貢獻
+  - 修復 Markdown 項目渲染無效 Liquid 時的解析語法錯誤 ([#8637](https://github.com/nocobase/nocobase/pull/8637)) 由 @katherinehhh 貢獻
+  - 修復表單區塊中多對多欄位屬性的不必要後端解析請求。([#8636](https://github.com/nocobase/nocobase/pull/8636)) 由 @gchust 貢獻
+  - 修復數字公式欄位缺少數字格式以及日期公式欄位缺少日期格式設定的問題 ([#8625](https://github.com/nocobase/nocobase/pull/8625)) 由 @katherinehhh 貢獻
+  - 修復第一個表單項目頂部邊框渲染不完整的問題 ([#8623](https://github.com/nocobase/nocobase/pull/8623)) 由 @katherinehhh 貢獻
+  - 修復當標題欄位是外來鍵時，關聯下拉選單中篩選資料不正確的問題 ([#8619](https://github.com/nocobase/nocobase/pull/8619)) 由 @katherinehhh 貢獻
+  - 修復編輯後無法在記錄選擇器欄位元件中恢復已選資料的問題 ([#8610](https://github.com/nocobase/nocobase/pull/8610)) 由 @katherinehhh 貢獻
+  - 修復在 JS 欄位編輯器中點擊執行後表格欄位未重新渲染的問題。([#8608](https://github.com/nocobase/nocobase/pull/8608)) 由 @gchust 貢獻
+  - 修復在非配置模式下潛在的「讀取隱藏」渲染錯誤。([#8591](https://github.com/nocobase/nocobase/pull/8591)) 由 @gchust 貢獻
+  - 修復在編輯表單中切換到唯讀檢視後，子表格（內聯編輯）仍顯示編輯模式欄位的問題 ([#8589](https://github.com/nocobase/nocobase/pull/8589)) 由 @katherinehhh 貢獻
+  - 修復 Grid 佈局中的空白間距問題 ([#8535](https://github.com/nocobase/nocobase/pull/8535)) 由 @zhangzhonghe 貢獻
+  - 修復子表格（內聯編輯）中欄位寬度未更新；多行文字輸入未隨欄位寬度調整大小的問題 ([#8573](https://github.com/nocobase/nocobase/pull/8573)) 由 @katherinehhh 貢獻
+  - 修復啟用樹狀表格後需要重新整理頁面才能新增子記錄的問題 ([#8574](https://github.com/nocobase/nocobase/pull/8574)) 由 @katherinehhh 貢獻
+  - 修復在編輯表單中使用關聯記錄選擇器的「快速建立」功能覆蓋了現有表單資料的問題。([#8567](https://github.com/nocobase/nocobase/pull/8567)) 由 @gchust 貢獻
+  - 修復：對非樹狀資料表隱藏「啟用樹狀表格」和「預設展開所有行」([#8566](https://github.com/nocobase/nocobase/pull/8566)) 由 @katherinehhh 貢獻
+  - 修復在「建立新」動作彈窗中錯誤顯示「表單（新增）」選單的問題。([#8562](https://github.com/nocobase/nocobase/pull/8562)) 由 @gchust 貢獻
+  - 修復首次開啟和關閉彈窗後頁面資料被錯誤重新整理的問題。([#8548](https://github.com/nocobase/nocobase/pull/8548)) 由 @gchust 貢獻
+  - 修復跨彈窗重新整理目標區塊時事件流程未能應用的問題。([#8541](https://github.com/nocobase/nocobase/pull/8541)) 由 @gchust 貢獻
+  - 修復 nanoid 欄位在建立提交後未重新生成預設值的問題 ([#8538](https://github.com/nocobase/nocobase/pull/8538)) 由 @katherinehhh 貢獻
+  - 修復為級聯選擇器欄位模型設定預設值時顯示不正確的問題 ([#8537](https://github.com/nocobase/nocobase/pull/8537)) 由 @katherinehhh 貢獻
+  - 修復提交表單後導致資料區塊重複重新整理的問題。([#8531](https://github.com/nocobase/nocobase/pull/8531)) 由 @gchust 貢獻
+  - 修復與篩選相關的已知問題 ([#8514](https://github.com/nocobase/nocobase/pull/8514)) 由 @zhangzhonghe 貢獻
+  - 修復無法使用表單變數為多層級多對多子表單欄位的聯動規則指派值的問題。([#8518](https://github.com/nocobase/nocobase/pull/8518)) 由 @gchust 貢獻
+  - 修復跨多層級彈窗和跨區塊變更後資料未重新整理的問題。([#8471](https://github.com/nocobase/nocobase/pull/8471)) 由 @gchust 貢獻
+  - 修復篩選日期時間值中重複的時間 ([#8506](https://github.com/nocobase/nocobase/pull/8506)) 由 @zhangzhonghe 貢獻
+  - 修復篩選日期時間值中重複的時間 ([#8484](https://github.com/nocobase/nocobase/pull/8484)) 由 @zhangzhonghe 貢獻
+  - 修復富文本編輯器的彈出視窗被遮擋的問題 ([#8443](https://github.com/nocobase/nocobase/pull/8443)) 由 @zhangzhonghe 貢獻
+  - 篩選列表以移除重複項 ([#8431](https://github.com/nocobase/nocobase/pull/8431)) 由 @jiannx 貢獻
+  - 修復唯讀模式下子詳情資料無法在編輯表單中正確顯示的問題 ([#8469](https://github.com/nocobase/nocobase/pull/8469)) 由 @katherinehhh 貢獻
+  - 修復「自訂變數」彈出視窗被遮擋的問題 ([#8463](https://github.com/nocobase/nocobase/pull/8463)) 由 @zhangzhonghe 貢獻
+  - 修復檔案關聯欄位的選擇器彈窗 z-index 不正確，以及彈窗配置無法正確儲存的問題。([#8446](https://github.com/nocobase/nocobase/pull/8446)) 由 @gchust 貢獻
+  - 修復快捷鍵模態框高度超過視口高度的問題 ([#8437](https://github.com/nocobase/nocobase/pull/8437)) 由 @zhangzhonghe 貢獻
+  - 修復切換頁面時表格操作欄狀態被污染的問題。([#8438](https://github.com/nocobase/nocobase/pull/8438)) 由 @gchust 貢獻
+  - 修復在表單項目中設定附件 URL 後再變更為其他欄位時，標題欄位設定消失的問題 ([#8418](https://github.com/nocobase/nocobase/pull/8418)) 由 @katherinehhh 貢獻
+  - 修復在建立表單中將關聯欄位設為唯讀模式時，標題欄位未更新的問題 ([#8413](https://github.com/nocobase/nocobase/pull/8413)) 由 @katherinehhh 貢獻
+  - 數字輸入元件未顯示值 ([#8410](https://github.com/nocobase/nocobase/pull/8410)) 由 @chenos 貢獻
+  - 修復卡片區塊中佈局設定未生效的問題 ([#8399](https://github.com/nocobase/nocobase/pull/8399)) 由 @katherinehhh 貢獻
+  - 解決一對一關聯欄位的檔案選擇彈窗中出現提交按鈕的問題 ([#8398](https://github.com/nocobase/nocobase/pull/8398)) 由 @katherinehhh 貢獻
+  - 修復在數字欄位中輸入中文字元時阻止賦值的問題 ([#8397](https://github.com/nocobase/nocobase/pull/8397)) 由 @katherinehhh 貢獻
+  - 修復可選 targetKey 的精細邏輯 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) 由 @katherinehhh 貢獻
+  - 修復關聯欄位從記錄選擇器元件切換為選擇元件後仍可開啟彈窗的問題。([#8375](https://github.com/nocobase/nocobase/pull/8375)) 由 @gchust 貢獻
+  - 修復詳情區塊、編輯表單區塊和列表區塊在變更分頁後聯動規則未重新執行的問題。([#8366](https://github.com/nocobase/nocobase/pull/8366)) 由 @gchust 貢獻
+  - 修復在來回切換欄位元件時，已配置的子表格/子表單欄位無法顯示的問題。([#8365](https://github.com/nocobase/nocobase/pull/8365)) 由 @gchust 貢獻
+  - 修復在詳情、列表和表單區塊中分頁後，欄位和動作權限未重新計算的問題。([#8336](https://github.com/nocobase/nocobase/pull/8336)) 由 @gchust 貢獻
+  - 修復可編輯子表格中關聯欄位 Select 的篩選參數不正確的問題 ([#8335](https://github.com/nocobase/nocobase/pull/8335)) 由 @katherinehhh 貢獻
+  - 修復可選 targetKey 的精細邏輯 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) 由 @katherinehhh 貢獻
+  - 修復詳情區塊子詳情對話框中資料不正確的問題 ([#8318](https://github.com/nocobase/nocobase/pull/8318)) 由 @katherinehhh 貢獻
+  - 修復連續開啟聯動規則和事件流程配置彈窗後，關閉目前彈窗時發生錯誤的問題。([#8312](https://github.com/nocobase/nocobase/pull/8312)) 由 @gchust 貢獻
+  - 修復連續開啟聯動規則和事件流程配置彈窗後，關閉目前彈窗時發生錯誤的問題。([#8312](https://github.com/nocobase/nocobase/pull/8312)) 由 @gchust 貢獻
+  - 修復表格區塊中快速編輯切換的變更需要重新整理頁面才能生效的問題。([#8311](https://github.com/nocobase/nocobase/pull/8311)) 由 @gchust 貢獻
+  - 修復使用 URL 查詢參數作為資料範圍的區塊，在選單切換時查詢參數變更後未正確重新整理的問題。([#8310](https://github.com/nocobase/nocobase/pull/8310)) 由 @gchust 貢獻
+  - 修復關聯欄位元件中的權限問題 ([#8243](https://github.com/nocobase/nocobase/pull/8243)) 由 @katherinehhh 貢獻
+  - 修復在詳情區塊分頁時子詳情資料未更新的問題 ([#8305](https://github.com/nocobase/nocobase/pull/8305)) 由 @katherinehhh 貢獻
+  - 修復在編輯表單中切換頁面時巢狀子表格內容未更新的問題 ([#8304](https://github.com/nocobase/nocobase/pull/8304)) 由 @katherinehhh 貢獻
+  - 修復彈窗無法開啟的問題並改善導航穩定性 ([#8287](https://github.com/nocobase/nocobase/pull/8287)) 由 @zhangzhonghe 貢獻
+  - 修復從 Select 元件切換到 Array Subform 元件時的錯誤 ([#8301](https://github.com/nocobase/nocobase/pull/8301)) 由 @katherinehhh 貢獻
+  - 禁止透過 JS Field 將關聯欄位新增到表單區塊。([#8296](https://github.com/nocobase/nocobase/pull/8296)) 由 @gchust 貢獻
+  - 修復記錄更新動作後資料會多次重新整理的問題。([#8299](https://github.com/nocobase/nocobase/pull/8299)) 由 @gchust 貢獻
+  - 修復在子表單中新增的資料被已選資料覆蓋的問題 ([#8292](https://github.com/nocobase/nocobase/pull/8292)) 由 @katherinehhh 貢獻
+  - 修復在詳情區塊中編輯記錄後 JS Item 未重新整理的問題。([#8291](https://github.com/nocobase/nocobase/pull/8291)) 由 @gchust 貢獻
+  - 修復新新增的記錄未在資料選擇器欄位元件彈窗中重新整理的問題。([#8289](https://github.com/nocobase/nocobase/pull/8289)) 由 @gchust 貢獻
+  - 修復隱藏狀態下 JS 區塊的渲染錯誤。([#8286](https://github.com/nocobase/nocobase/pull/8286)) 由 @gchust 貢獻
+  - 修復 m2m 欄位的篩選表單區塊設定中拋出錯誤的問題 ([#8282](https://github.com/nocobase/nocobase/pull/8282)) 由 @mytharcher 貢獻
+  - 修復在關聯欄位被刪除後防止區塊錯誤 ([#8273](https://github.com/nocobase/nocobase/pull/8273)) 由 @katherinehhh 貢獻
+  - 修復篩選表單預設值在初始渲染時未觸發篩選的問題 ([#8232](https://github.com/nocobase/nocobase/pull/8232)) 由 @zhangzhonghe 貢獻
+  - 修復表格區塊的操作欄無法移除的問題。([#8230](https://github.com/nocobase/nocobase/pull/8230)) 由 @gchust 貢獻
+  - 修復預覽執行將編譯後的 JSX 輸出寫回 stepParams，導致已儲存的原始碼被重寫的問題。([#8171](https://github.com/nocobase/nocobase/pull/8171)) 由 @gchust 貢獻
+  - 修復 S3 Pro 附件上傳錯誤並改進檔案預覽 ([#8211](https://github.com/nocobase/nocobase/pull/8211)) 由 @katherinehhh 貢獻
+  - 防止在調整欄位大小時行總寬度溢出 ([#8166](https://github.com/nocobase/nocobase/pull/8166)) 由 @zhangzhonghe 貢獻
+  - 修復為複選框篩選器選擇「否」時仍套用「是」篩選器的問題。([#8170](https://github.com/nocobase/nocobase/pull/8170)) 由 @gchust 貢獻
+  - 修復當角色具有建立權限時，建立表單中未顯示提交按鈕的問題 ([#8190](https://github.com/nocobase/nocobase/pull/8190)) 由 @katherinehhh 貢獻
+  - 防止在未選擇任何項目時提交，導致現有子表格/子表單資料被清除 ([#8172](https://github.com/nocobase/nocobase/pull/8172)) 由 @katherinehhh 貢獻
+  - 防止在建立表單配置中出現資料範圍設定 ([#8176](https://github.com/nocobase/nocobase/pull/8176)) 由 @katherinehhh 貢獻
+  - 修復表單區塊中 tableoid 欄位的渲染問題 ([#8177](https://github.com/nocobase/nocobase/pull/8177)) 由 @katherinehhh 貢獻
+  - 無法儲存頁籤事件流程 ([#8168](https://github.com/nocobase/nocobase/pull/8168)) 由 @chenos 貢獻
+  - 移除頁籤隱藏後的多餘間距 ([#8167](https://github.com/nocobase/nocobase/pull/8167)) 由 @chenos 貢獻
+  - 修復關聯記錄選擇器中已選選項的篩選不正確的問題 ([#8151](https://github.com/nocobase/nocobase/pull/8151)) 由 @katherinehhh 貢獻
+  - 修復當選項欄位存在時關聯欄位下拉選單被停用的問題 ([#8153](https://github.com/nocobase/nocobase/pull/8153)) 由 @katherinehhh 貢獻
+  - 修復切換標籤欄位導致彈窗配置遺失的問題。([#8136](https://github.com/nocobase/nocobase/pull/8136)) 由 @gchust 貢獻
+  - 修復在篩選表單區塊中對單選欄位使用多選運算子時，輸入中文文字會清除現有選項的問題。([#8140](https://github.com/nocobase/nocobase/pull/8140)) 由 @gchust 貢獻
+  - 修復防止子項禁用狀態阻止關聯欄位選擇 ([#8131](https://github.com/nocobase/nocobase/pull/8131)) 由 @katherinehhh 貢獻
+  - 修復篩選表單區塊中的預設欄位標籤無法在多語言環境下正確翻譯的問題。([#8135](https://github.com/nocobase/nocobase/pull/8135)) 由 @gchust 貢獻
+  - 修復為日期篩選欄位選擇「過去」或「未來」時 UI 元件寬度不一致的問題。([#8130](https://github.com/nocobase/nocobase/pull/8130)) 由 @gchust 貢獻
+  - 修復 JS 區塊的標題和描述樣式與其他區塊不一致的問題。([#8115](https://github.com/nocobase/nocobase/pull/8115)) 由 @gchust 貢獻
+  - 修復長文字欄位工具提示換行問題 ([#8122](https://github.com/nocobase/nocobase/pull/8122)) 由 @katherinehhh 貢獻
+  - 修復對基於選項的欄位使用「是任一」或「都不是」運算子時，可選選項未完整列出的問題。([#8118](https://github.com/nocobase/nocobase/pull/8118)) 由 @gchust 貢獻
+  - 修復子表單中的巢狀子表格未顯示資料 ([#8117](https://github.com/nocobase/nocobase/pull/8117)) 由 @katherinehhh 貢獻
+  - 修復清除 between 時間篩選值並再次觸發篩選時導致錯誤的問題。([#8110](https://github.com/nocobase/nocobase/pull/8110)) 由 @gchust 貢獻
+  - 修復篩選表單區塊中關聯欄位的可選資料不正確的問題。([#8109](https://github.com/nocobase/nocobase/pull/8109)) 由 @gchust 貢獻
+  - 修復篩選表單中的自訂欄位配置未正確預填且某些設定未生效的問題。([#8106](https://github.com/nocobase/nocobase/pull/8106)) 由 @gchust 貢獻
+  - 修復對 Checkbox 欄位進行篩選未生效的問題。([#8103](https://github.com/nocobase/nocobase/pull/8103)) 由 @gchust 貢獻
+  - 修復篩選動作中數字欄位值未正確預填的問題。([#8104](https://github.com/nocobase/nocobase/pull/8104)) 由 @gchust 貢獻
+  - 修復篩選表單中某些欄位運算子無法正確篩選資料的問題。([#8100](https://github.com/nocobase/nocobase/pull/8100)) 由 @gchust 貢獻
+  - 修復從已移除區塊配置的欄位未從篩選區塊中刪除的問題。([#8098](https://github.com/nocobase/nocobase/pull/8098)) 由 @gchust 貢獻
+  - 修復在非配置模式下按鈕隱藏時出現多餘間距的問題 ([#8092](https://github.com/nocobase/nocobase/pull/8092)) 由 @katherinehhh 貢獻
+  - 修復篩選表單區塊中重設按鈕文字無法修改的問題。([#8089](https://github.com/nocobase/nocobase/pull/8089)) 由 @gchust 貢獻
+  - 修復對篩選欄位使用 $in 或 $notIn 運算子時，欄位輸入不支援多值的問題。([#8081](https://github.com/nocobase/nocobase/pull/8081)) 由 @gchust 貢獻
+  - 修復新新增的資料區塊未自動出現在篩選表單區塊的欄位選單中的問題。([#8085](https://github.com/nocobase/nocobase/pull/8085)) 由 @gchust 貢獻
+  - 篩選表單中關聯欄位的配置選單不應顯示快速建立選項。([#8083](https://github.com/nocobase/nocobase/pull/8083)) 由 @gchust 貢獻
+  - 修復列表區塊中關聯子表格資料的問題 ([#8082](https://github.com/nocobase/nocobase/pull/8082)) 由 @katherinehhh 貢獻
+  - 修復來自資料表設定的數字欄位驗證規則未套用的問題 ([#8025](https://github.com/nocobase/nocobase/pull/8025)) 由 @katherinehhh 貢獻
+  - 修復篩選表單中的欄位受到後端欄位驗證規則限制的問題。([#8074](https://github.com/nocobase/nocobase/pull/8074)) 由 @gchust 貢獻
+  - 修復子表格編輯中的大型欄位顯示問題 ([#8069](https://github.com/nocobase/nocobase/pull/8069)) 由 @katherinehhh 貢獻
+  - 修復在關聯記錄選擇器中停用 allowMultiple 時快速建立拋出錯誤的問題 ([#8034](https://github.com/nocobase/nocobase/pull/8034)) 由 @katherinehhh 貢獻
+  - json 欄位快速編輯問題 ([#8059](https://github.com/nocobase/nocobase/pull/8059)) 由 @katherinehhh 貢獻
+  - 修復 json 欄位應作為物件提交 ([#8057](https://github.com/nocobase/nocobase/pull/8057)) 由 @katherinehhh 貢獻
+  - 修復無法使用 Enter 鍵觸發篩選動作的問題。([#8056](https://github.com/nocobase/nocobase/pull/8056)) 由 @gchust 貢獻
+  - 修復在多對多關聯記錄選擇器中停用 allowMultiple 後顯示 N/A 的問題 ([#8050](https://github.com/nocobase/nocobase/pull/8050)) 由 @katherinehhh 貢獻
+  - 修復在記錄選擇器區塊中刪除記錄失敗的問題 ([#8023](https://github.com/nocobase/nocobase/pull/8023)) 由 @katherinehhh 貢獻
+  - 修復新增評論區塊時出現目前記錄選單的問題。([#8039](https://github.com/nocobase/nocobase/pull/8039)) 由 @gchust 貢獻
+  - 修復在篩選動作中將日期欄位切換為時間欄位時導致渲染錯誤的問題。([#8036](https://github.com/nocobase/nocobase/pull/8036)) 由 @gchust 貢獻
+  - 修復編輯和建立新動作彈窗的預設標題不正確的問題。([#8033](https://github.com/nocobase/nocobase/pull/8033)) 由 @gchust 貢獻
+  - 修復詳情區塊中 JS 欄位的預設樣式不正確的問題。([#8031](https://github.com/nocobase/nocobase/pull/8031)) 由 @gchust 貢獻
+  - 修復子表格欄位寬度未套用的問題 ([#8027](https://github.com/nocobase/nocobase/pull/8027)) 由 @katherinehhh 貢獻
+  - 修復子表格欄位拖曳不起作用的問題 ([#8026](https://github.com/nocobase/nocobase/pull/8026)) 由 @katherinehhh 貢獻
+  - 修復透過關聯欄位開啟的彈窗中，目前彈窗記錄變數無法正確解析的問題。([#8019](https://github.com/nocobase/nocobase/pull/8019)) 由 @gchust 貢獻
+  - 修復 markdown 顯示欄位彈出樣式問題 ([#8012](https://github.com/nocobase/nocobase/pull/8012)) 由 @katherinehhh 貢獻
+  - 解決在彈窗視窗中載入關聯欄位資料時導致錯誤的問題，確保更流暢的資料顯示和功能。([#7985](https://github.com/nocobase/nocobase/pull/7985)) 由 @gchust 貢獻
+  - 修復樹狀表格區塊無法展開子節點 ([#8011](https://github.com/nocobase/nocobase/pull/8011)) 由 @katherinehhh 貢獻
+  - 修復複合主鍵的表格區塊選擇和刪除問題 ([#7978](https://github.com/nocobase/nocobase/pull/7978)) 由 @katherinehhh 貢獻
+  - 修復頁面頁籤狀態與路由不對應的問題 ([#7991](https://github.com/nocobase/nocobase/pull/7991)) 由 @zhangzhonghe 貢獻
+  - 修復 HTML 模式下 markdown 欄位省略時的顯示問題 ([#7994](https://github.com/nocobase/nocobase/pull/7994)) 由 @katherinehhh 貢獻
+  - 修復級聯選擇器中搜尋結果不完整的問題 ([#7990](https://github.com/nocobase/nocobase/pull/7990)) 由 @katherinehhh 貢獻
+  - 修復在彈窗中為非 ID 關聯欄位開啟詳情區塊時導致錯誤的問題。([#7973](https://github.com/nocobase/nocobase/pull/7973)) 由 @gchust 貢獻
+  - 修復非 ID 關聯欄位的關聯資料在彈窗中無法正確載入的問題。([#7970](https://github.com/nocobase/nocobase/pull/7970)) 由 @gchust 貢獻
+  - 修復數字欄位格式的精確度設定無效的問題 ([#7967](https://github.com/nocobase/nocobase/pull/7967)) 由 @katherinehhh 貢獻
+  - 修復點擊重設按鈕時篩選值未被清除的問題 ([#7966](https://github.com/nocobase/nocobase/pull/7966)) 由 @zhangzhonghe 貢獻
+  - 修復新的 2.0 頁面中打字錯誤 ([#7945](https://github.com/nocobase/nocobase/pull/7945)) 由 @zhangzhonghe 貢獻
+  - 修復詳情區塊中文字欄位在內容超過寬度時自動換行 ([#7955](https://github.com/nocobase/nocobase/pull/7955)) 由 @katherinehhh 貢獻
+  - 修復清除多層級級聯值時拋出錯誤 ([#7943](https://github.com/nocobase/nocobase/pull/7943)) 由 @katherinehhh 貢獻
+  - 從非樹狀資料表區塊中移除樹狀表格動作 ([#7931](https://github.com/nocobase/nocobase/pull/7931)) 由 @katherinehhh 貢獻
+  - 修復 JS 區塊中未顯示標題和描述的問題。([#7913](https://github.com/nocobase/nocobase/pull/7913)) 由 @gchust 貢獻
+  - 修復隱藏區塊仍佔用頁面空間的問題。([#7906](https://github.com/nocobase/nocobase/pull/7906)) 由 @gchust 貢獻
+  - 修復新表單中子表單欄位的權限檢查不正確的問題 ([#7902](https://github.com/nocobase/nocobase/pull/7902)) 由 @katherinehhh 貢獻
+  - 修復篩選按鈕中的重設按鈕清除了預設條件的問題 ([#7903](https://github.com/nocobase/nocobase/pull/7903)) 由 @zhangzhonghe 貢獻
+  - 修復表單項目設定中的問題 ([#7867](https://github.com/nocobase/nocobase/pull/7867)) 由 @katherinehhh 貢獻
+  - 修復富文字欄位無法輸入預設值以及多選欄位預設值無法選擇多個選項的問題。([#7864](https://github.com/nocobase/nocobase/pull/7864)) 由 @gchust 貢獻
+  - 修復預設 JS 欄位配置未使用顯示模式設定的問題。([#7862](https://github.com/nocobase/nocobase/pull/7862)) 由 @gchust 貢獻
+  - 修復無法在篩選表單區塊模型中設定日期欄位預設值的問題。([#7853](https://github.com/nocobase/nocobase/pull/7853)) 由 @gchust 貢獻
+  - 修復表格區塊中的快速編輯操作未正確更新資料的問題。([#7845](https://github.com/nocobase/nocobase/pull/7845)) 由 @gchust 貢獻
+  - 修復在程式碼編輯器中預覽包含 jsx 語法的程式碼時的錯誤 ([#7836](https://github.com/nocobase/nocobase/pull/7836)) 由 @gchust 貢獻
+  - 修復表格區塊中行操作按鈕的聯動規則在行資料更新後未重新執行的問題，確保規則現在能在變更發生時正確重新套用。([#7832](https://github.com/nocobase/nocobase/pull/7832)) 由 @gchust 貢獻
+  - 修復篩選表單關聯欄位中的錯誤 'value.replace is not a function' ([#7824](https://github.com/nocobase/nocobase/pull/7824)) 由 @zhangzhonghe 貢獻
+  - 目前資料表變數不應可從篩選元件的變數選擇器中選取 ([#7818](https://github.com/nocobase/nocobase/pull/7818)) 由 @gchust 貢獻
+  - 修復 onChange 回呼中的參數不正確 ([#7807](https://github.com/nocobase/nocobase/pull/7807)) 由 @zhangzhonghe 貢獻
+  - 無法隱藏表格區塊的操作欄 ([#7804](https://github.com/nocobase/nocobase/pull/7804)) 由 @gchust 貢獻
+  - 修復資料表選擇器欄位無法正確選擇資料表 ([#7794](https://github.com/nocobase/nocobase/pull/7794)) 由 @katherinehhh 貢獻
+  - 支援在 AI 員工的提示詞中選擇整個變數物件 ([#7791](https://github.com/nocobase/nocobase/pull/7791)) 由 @gchust 貢獻
+  - 修復表格操作和 jsColumn 寬度未套用的問題 ([#7777](https://github.com/nocobase/nocobase/pull/7777)) 由 @katherinehhh 貢獻
+  - 如果區塊的資料範圍由頁面事件流程設定，則無法運作 ([#7788](https://github.com/nocobase/nocobase/pull/7788)) 由 @gchust 貢獻
+  - 修復關聯欄位標題欄位省略號未套用的問題 ([#7778](https://github.com/nocobase/nocobase/pull/7778)) 由 @katherinehhh 貢獻
+  - 更新記錄動作的聯動規則不起作用 ([#7774](https://github.com/nocobase/nocobase/pull/7774)) 由 @gchust 貢獻
+  - 修復 Markdown Vditor 欄位的必填驗證失敗 ([#7764](https://github.com/nocobase/nocobase/pull/7764)) 由 @katherinehhh 貢獻
+  - 修復變數相關元件中列舉類型的標籤未以正確語言顯示的問題。([#7765](https://github.com/nocobase/nocobase/pull/7765)) 由 @gchust 貢獻
+  - 修復設定前端驗證後缺少必填欄位指示器的問題 ([#7760](https://github.com/nocobase/nocobase/pull/7760)) 由 @katherinehhh 貢獻
+  - 為篩選表單中的關聯欄位新增資料範圍配置 ([#7761](https://github.com/nocobase/nocobase/pull/7761)) 由 @zhangzhonghe 貢獻
+  - 修復在編輯表單中清除無時區日期的問題 ([#7759](https://github.com/nocobase/nocobase/pull/7759)) 由 @katherinehhh 貢獻
+  - 修復聯動規則的必填欄位驗證 ([#7756](https://github.com/nocobase/nocobase/pull/7756)) 由 @zhangzhonghe 貢獻
+  - 修復子表格欄位中的時間格式問題 ([#7750](https://github.com/nocobase/nocobase/pull/7750)) 由 @katherinehhh 貢獻
+  - 解決在篩選器中刪除指定日期時的 Invalid Date 問題 ([#7746](https://github.com/nocobase/nocobase/pull/7746)) 由 @katherinehhh 貢獻
+  - 無法載入目前表單變數的欄位 ([#7745](https://github.com/nocobase/nocobase/pull/7745)) 由 @gchust 貢獻
+  - 解決將陣列作為值或預設值指派給「toOne」欄位時導致錯誤的問題。這確保了變數解析結果的正確處理，提高了系統穩定性和準確性。([#7735](https://github.com/nocobase/nocobase/pull/7735)) 由 @gchust 貢獻
+  - 解決目前表單中的關聯欄位變數無法被正確識別的問題，確保表單中資料處理的準確性。([#7726](https://github.com/nocobase/nocobase/pull/7726)) 由 @gchust 貢獻
+  - 修復不可篩選的欄位被錯誤地列在篩選選項中的問題，確保僅顯示適用的欄位供選擇。([#7700](https://github.com/nocobase/nocobase/pull/7700)) 由 @gchust 貢獻
+  - 解決在資料表中刪除關聯欄位時的 UI 問題 ([#7706](https://github.com/nocobase/nocobase/pull/7706)) 由 @katherinehhh 貢獻
+  - 修復子表單聯動規則的已知問題 ([#7698](https://github.com/nocobase/nocobase/pull/7698)) 由 @zhangzhonghe 貢獻
+  - js 區塊欄位選單無法在篩選表單區塊中載入 ([#7690](https://github.com/nocobase/nocobase/pull/7690)) 由 @gchust 貢獻
+  - 解決用戶無法為以唯讀模式顯示的欄位設定預設值的問題。這確保了當欄位不可編輯時，欄位配置更加順暢。([#7689](https://github.com/nocobase/nocobase/pull/7689)) 由 @gchust 貢獻
+  - 修復在彈窗內切換頁籤、重新開啟巢狀彈窗然後關閉所有彈窗後，URL 未正確更新的問題。([#7630](https://github.com/nocobase/nocobase/pull/7630)) 由 @gchust 貢獻
+  - 處理 usePlugin 中缺失的上下文 ([#7627](https://github.com/nocobase/nocobase/pull/7627)) 由 @chenos 貢獻
+  - 無法為「更新」和「批次更新」動作配置指派欄位值 ([#7565](https://github.com/nocobase/nocobase/pull/7565)) 由 @gchust 貢獻
+  - 修復程式碼編輯器中的「執行」動作無法運作的問題，確保用戶現在可以正確執行程式碼。([#7547](https://github.com/nocobase/nocobase/pull/7547)) 由 @gchust 貢獻
+  - 修提交表單後資料未重新整理的問題 ([#7560](https://github.com/nocobase/nocobase/pull/7560)) 由 @zhangzhonghe 貢獻
+  - 修復切換表格分頁時頁面顯示異常的問題 ([#7572](https://github.com/nocobase/nocobase/pull/7572)) 由 @zhangzhonghe 貢獻
+- **[flow-engine]**
+
+  - 修復當存在搜尋關鍵字時篩選欄位子選單無法展開的問題。([#8604](https://github.com/nocobase/nocobase/pull/8604)) 由 @gchust 貢獻
+  - 修復 JS 區塊中無法建立 Blob 物件的問題。([#8603](https://github.com/nocobase/nocobase/pull/8603)) 由 @gchust 貢獻
+  - 修復 JS 模型中「ctx.sql」的執行上下文不正確的問題。([#8602](https://github.com/nocobase/nocobase/pull/8602)) 由 @gchust 貢獻
+  - 修復在配置了 createModelOptions 的彈窗子表格編輯中，欄位刪除動作不起作用的問題 ([#8576](https://github.com/nocobase/nocobase/pull/8576)) 由 @katherinehhh 貢獻
+  - 修復在配置了 createModelOptions 的彈窗子表格編輯中，欄位刪除動作不起作用的問題 ([#8560](https://github.com/nocobase/nocobase/pull/8560)) 由 @katherinehhh 貢獻
+  - 修復 JS 區塊中某些第三方函式庫無法正確匯入的問題。([#8545](https://github.com/nocobase/nocobase/pull/8545)) 由 @gchust 貢獻
+  - 修復切換頁面後提交表單未重新整理頁面的問題。([#8554](https://github.com/nocobase/nocobase/pull/8554)) 由 @gchust 貢獻
+  - 修復 runjs 中某些 ESM 函式庫因被錯誤分類為 AMD 模組而無法正確載入的問題。([#8536](https://github.com/nocobase/nocobase/pull/8536)) 由 @gchust 貢獻
+  - 修復外部資料源中 filterTargetKey 為單元素陣列時的 FilterByTK 問題 ([#8522](https://github.com/nocobase/nocobase/pull/8522)) 由 @katherinehhh 貢獻
+  - 修復連續開啟聯動規則配置和事件流程配置彈窗後，關閉內嵌彈窗時導致錯誤的問題。([#8368](https://github.com/nocobase/nocobase/pull/8368)) 由 @gchust 貢獻
+  - 修復 runjs 程式碼參數中的變數在執行前就被解析的問題。([#8445](https://github.com/nocobase/nocobase/pull/8445)) 由 @gchust 貢獻
+  - 修復資料選擇器的快速建立彈窗中無法選擇彈窗變數的問題。([#8450](https://github.com/nocobase/nocobase/pull/8450)) 由 @gchust 貢獻
+  - 修復重複點擊配置選單可能開啟多個配置彈窗的問題。([#8448](https://github.com/nocobase/nocobase/pull/8448)) 由 @gchust 貢獻
+  - 修復透過按鈕點擊開啟彈窗時，動態事件流程的步驟執行兩次的問題。([#8435](https://github.com/nocobase/nocobase/pull/8435)) 由 @gchust 貢獻
+  - 修復多次開啟彈窗時可能發生狀態污染的問題。([#8327](https://github.com/nocobase/nocobase/pull/8327)) 由 @gchust 貢獻
+  - 修復篩選動作中資料表欄位選擇器下拉選單高度不足的問題。([#8288](https://github.com/nocobase/nocobase/pull/8288)) 由 @gchust 貢獻
+  - 修復彈窗頁籤內容未顯示 ([#8281](https://github.com/nocobase/nocobase/pull/8281)) 由 @zhangzhonghe 貢獻
+  - 修復開啟子頁面時頁面卸載和重新渲染的問題 ([#8276](https://github.com/nocobase/nocobase/pull/8276)) 由 @zhangzhonghe 貢獻
+  - 修復樹狀表格中新增子記錄的權限檢查問題 ([#8240](https://github.com/nocobase/nocobase/pull/8240)) 由 @katherinehhh 貢獻
+  - 修復在拖曳動作或頁籤後新增的動作或頁籤未顯示的問題。([#8224](https://github.com/nocobase/nocobase/pull/8224)) 由 @gchust 貢獻
+  - 外部資料源中的權限檢查問題 ([#8221](https://github.com/nocobase/nocobase/pull/8221)) 由 @katherinehhh 貢獻
+  - 修復外部資料源動作儘管有權限卻被隱藏的問題 ([#8217](https://github.com/nocobase/nocobase/pull/8217)) 由 @katherinehhh 貢獻
+  - 修復透過彈窗 uid 在重複使用的模態框中提交表單時未重新整理區塊資料的問題。([#8202](https://github.com/nocobase/nocobase/pull/8202)) 由 @gchust 貢獻
+  - 修復某些區塊彈窗記錄相關變數顯示不正確的問題。([#8060](https://github.com/nocobase/nocobase/pull/8060)) 由 @gchust 貢獻
+  - 修復附件檔案下載不正確 ([#8154](https://github.com/nocobase/nocobase/pull/8154)) 由 @katherinehhh 貢獻
+  - 修復：使用整數類型作為列舉選項時轉換不正確 ([#8138](https://github.com/nocobase/nocobase/pull/8138)) 由 @chenos 貢獻
+  - 修復當 `useModel` 被省略時，可切換的子模型選單項目失敗的問題，透過從 `createModelOptions.use` 推斷來解決 ([#8105](https://github.com/nocobase/nocobase/pull/8105)) 由 @zhangzhonghe 貢獻
+  - 修復切換欄位元件後，上一個元件的配置選項仍保留在選單中的問題。([#8095](https://github.com/nocobase/nocobase/pull/8095)) 由 @gchust 貢獻
+  - 在 FlowModelRenderer 中將 useEffect 移至條件返回之前 ([#8088](https://github.com/nocobase/nocobase/pull/8088)) 由 @zhangzhonghe 貢獻
+  - 修復不支援的關聯欄位出現在篩選操作欄位中的問題。([#8086](https://github.com/nocobase/nocobase/pull/8086)) 由 @gchust 貢獻
+  - 修復評論記錄在編輯後無法儲存的問題 ([#8035](https://github.com/nocobase/nocobase/pull/8035)) 由 @katherinehhh 貢獻
+  - 修復透過點擊彈窗內的表單提交按鈕關閉彈窗時，資料區塊未重新整理的問題。([#8021](https://github.com/nocobase/nocobase/pull/8021)) 由 @gchust 貢獻
+  - 修復詳情區塊中目前記錄變數無法正確觸發解析的問題。([#8004](https://github.com/nocobase/nocobase/pull/8004)) 由 @gchust 貢獻
+  - 修復詳情區塊按鈕中工具列圖示顯示不對齊的問題 ([#7929](https://github.com/nocobase/nocobase/pull/7929)) 由 @zhangzhonghe 貢獻
+  - 修復開啟表格區塊的快速編輯表單時導致錯誤的問題。([#7923](https://github.com/nocobase/nocobase/pull/7923)) 由 @gchust 貢獻
+  - 修復登出和登入後 ACL 權限資料未重新載入的問題。([#7874](https://github.com/nocobase/nocobase/pull/7874)) 由 @gchust 貢獻
+  - 修復事件流程的變更需要重新整理頁面才能生效的問題。([#7811](https://github.com/nocobase/nocobase/pull/7811)) 由 @gchust 貢獻
+  - 修復透過使用者介面修改子表單關聯欄位時，其中的變數未正確解析的問題。([#7799](https://github.com/nocobase/nocobase/pull/7799)) 由 @gchust 貢獻
+  - 多主鍵記錄的編輯表單錯誤 ([#7798](https://github.com/nocobase/nocobase/pull/7798)) 由 @gchust 貢獻
+  - 修復「開啟檢視」動作的某些配置未套用的問題，確保該動作現在能按所有指定配置預期運作。([#7790](https://github.com/nocobase/nocobase/pull/7790)) 由 @gchust 貢獻
+  - 修復表格區塊中的動作按鈕在切換頁面後未正確更新的問題，確保其功能與目前頁面的資料匹配。([#7779](https://github.com/nocobase/nocobase/pull/7779)) 由 @gchust 貢獻
+  - 當欄位篩選值設為 false 時，帶有資料範圍的請求不正確 ([#7766](https://github.com/nocobase/nocobase/pull/7766)) 由 @gchust 貢獻
+  - 修復：解決在最後一頁刪除資料後的頁面請求參數問題 ([#7755](https://github.com/nocobase/nocobase/pull/7755)) 由 @katherinehhh 貢獻
+  - 無法解析子表單目前物件變數的關聯欄位值 ([#7751](https://github.com/nocobase/nocobase/pull/7751)) 由 @gchust 貢獻
+  - 事件流程的步驟不應顯示在配置選單中 ([#7723](https://github.com/nocobase/nocobase/pull/7723)) 由 @gchust 貢獻
+  - 在編輯表單內編輯關聯欄位的資料範圍時，目前彈窗記錄的上下文選擇不正確 ([#7675](https://github.com/nocobase/nocobase/pull/7675)) 由 @gchust 貢獻
+  - 解決流程模型定義的流程動作無法配置的問題，確保用戶現在可以按預期自訂流程動作。([#7666](https://github.com/nocobase/nocobase/pull/7666)) 由 @gchust 貢獻
+  - 修正在 JS 程式碼編輯器中複製或貼上程式碼片段時的錯誤。([#7641](https://github.com/nocobase/nocobase/pull/7641)) 由 @gchust 貢獻
+  - 修復 antd 元件中翻譯未生效的問題 ([#7621](https://github.com/nocobase/nocobase/pull/7621)) 由 @zhangzhonghe 貢獻
+  - 無法在引用區塊中取得目前檢視上下文 ([#7620](https://github.com/nocobase/nocobase/pull/7620)) 由 @gchust 貢獻
+- **[server]**
+
+  - 支援外部資料源的 Snowflake ID（53 位元）欄位 ([#8185](https://github.com/nocobase/nocobase/pull/8185)) 由 @2013xile 貢獻
+  - 將 license-kit 更新至最新版本 ([#8173](https://github.com/nocobase/nocobase/pull/8173)) 由 @jiannx 貢獻
+  - 複製參考欄位時保留 field.targetKey ([#7599](https://github.com/nocobase/nocobase/pull/7599)) 由 @chenos 貢獻
+  - 主鍵遷移錯誤 ([#7563](https://github.com/nocobase/nocobase/pull/7563)) 由 @2013xile 貢獻
+- **[database]**
+
+  - 修復：深度更新巢狀關聯 ([#8492](https://github.com/nocobase/nocobase/pull/8492)) 由 @chenos 貢獻
+  - 查詢 m2m 關聯時包含 through 範圍 ([#8277](https://github.com/nocobase/nocobase/pull/8277)) 由 @2013xile 貢獻
+  - `filterByTk` 現在在查詢具有多個篩選目標鍵的資料表時支援陣列 ([#7986](https://github.com/nocobase/nocobase/pull/7986)) 由 @chenos 貢獻
+  - 在使用 `runSQL` 方法執行 SQL 語句之前設定 `search_path` ([#7611](https://github.com/nocobase/nocobase/pull/7611)) 由 @2013xile 貢獻
+- **[sdk]** 改進 token 共享實作 ([#8357](https://github.com/nocobase/nocobase/pull/8357)) 由 @chenos 貢獻
+- **[acl]** 修復：acl.allow 執行過早 ([#8065](https://github.com/nocobase/nocobase/pull/8065)) 由 @chenos 貢獻
+- **[utils]**
+
+  - 修復篩選按鈕上的「無效的篩選項目類型」錯誤 ([#7838](https://github.com/nocobase/nocobase/pull/7838)) 由 @zhangzhonghe 貢獻
+  - 修復事件流程中的「無法識別的操作」錯誤 ([#7835](https://github.com/nocobase/nocobase/pull/7835)) 由 @zhangzhonghe 貢獻
+- **[本地化]** 改進對缺失 i18n 鍵的處理 ([#8673](https://github.com/nocobase/nocobase/pull/8673)) 由 @chenos 貢獻
+- **[AI 員工]**
+
+  - aiTools:list API 返回 403 ([#8672](https://github.com/nocobase/nocobase/pull/8672)) 由 @chenos 貢獻
+  - 修復使用 AI 員工時的瀏覽器 OOM 問題 ([#8653](https://github.com/nocobase/nocobase/pull/8653)) 由 @mytharcher 貢獻
+  - 修復 AI 網路搜尋的引用連結未在聊天框中顯示的問題 ([#8651](https://github.com/nocobase/nocobase/pull/8651)) 由 @cgyrock 貢獻
+  - 修復 openai API 參數錯誤 ([#8633](https://github.com/nocobase/nocobase/pull/8633)) 由 @cgyrock 貢獻
+  - 修復 LLM 節點發送訊息失敗的問題 ([#8569](https://github.com/nocobase/nocobase/pull/8569)) 由 @2013xile 貢獻
+  - 修復 AI 資料建模期間工具自動呼叫時發生的異常 ([#8532](https://github.com/nocobase/nocobase/pull/8532)) 由 @cgyrock 貢獻
+  - 修復建置後系統無法啟動的問題 ([#8523](https://github.com/nocobase/nocobase/pull/8523)) 由 @cgyrock 貢獻
+  - 修復 AI 建模與資料源管理之間可選欄位配置不一致的問題 ([#8488](https://github.com/nocobase/nocobase/pull/8488)) 由 @cgyrock 貢獻
+  - 解決 llm 節點訊息內容未顯示的問題 ([#8257](https://github.com/nocobase/nocobase/pull/8257)) 由 @heziqiang 貢獻
+  - 解決 ai 訊息換行問題 ([#8096](https://github.com/nocobase/nocobase/pull/8096)) 由 @heziqiang 貢獻
+  - 解決資料源角色名稱未編譯的問題 ([#8076](https://github.com/nocobase/nocobase/pull/8076)) 由 @heziqiang 貢獻
+  - 修復某些目前記錄欄位無法在變數選擇元件中顯示的問題。([#8053](https://github.com/nocobase/nocobase/pull/8053)) 由 @gchust 貢獻
+  - 修復 ai 生成 SQL 輸出時的問題 ([#7956](https://github.com/nocobase/nocobase/pull/7956)) 由 @heziqiang 貢獻
+  - 在 v1 頁面上隱藏 AI 員工聊天按鈕 ([#7829](https://github.com/nocobase/nocobase/pull/7829)) 由 @cgyrock 貢獻
+  - 優化了 Gemini 的網路搜尋行為和用戶提示 ([#7720](https://github.com/nocobase/nocobase/pull/7720)) 由 @cgyrock 貢獻
+  - 修復具有關聯 API 資源的區塊在選取時未擷取對應資料的問題。([#7688](https://github.com/nocobase/nocobase/pull/7688)) 由 @cgyrock 貢獻
+  - 修復行動版佈局中聊天框的佈局問題 ([#7591](https://github.com/nocobase/nocobase/pull/7591)) 由 @cgyrock 貢獻
+  - 修復 AI 員工權限配置頁面上的錯誤 ([#7548](https://github.com/nocobase/nocobase/pull/7548)) 由 @2013xile 貢獻
+  - 修復使用 ChatGPT-4o 時 AI 員工資料建模工具中的錯誤。([#7566](https://github.com/nocobase/nocobase/pull/7566)) 由 @cgyrock 貢獻
+- **[日曆]** 修復日曆本地化和日期格式化問題 ([#8498](https://github.com/nocobase/nocobase/pull/8498)) 由 @sembaev-a-a 貢獻
+- **[檔案管理器]**
+
+  - 修復檔案欄位元件在禁用時仍可開啟選擇器對話框的問題 ([#8617](https://github.com/nocobase/nocobase/pull/8617)) 由 @katherinehhh 貢獻
+  - 修復列表和卡片區塊中子詳情資料顯示不正確的問題 ([#8087](https://github.com/nocobase/nocobase/pull/8087)) 由 @katherinehhh 貢獻
+  - 修復附件欄位在 readPretty 子表格中未正確顯示的問題 ([#8073](https://github.com/nocobase/nocobase/pull/8073)) 由 @katherinehhh 貢獻
+  - 修復將檔案上傳到指定儲存空間而非預設儲存空間 ([#7947](https://github.com/nocobase/nocobase/pull/7947)) 由 @katherinehhh 貢獻
+  - 修復表格區塊欄位配置問題 ([#7843](https://github.com/nocobase/nocobase/pull/7843)) 由 @katherinehhh 貢獻
+- **[流程引擎]**
+
+  - 修復在「複製」模式下使用區塊模板時，點擊區塊中的某個動作按鈕導致彈窗空白的問題。([#8581](https://github.com/nocobase/nocobase/pull/8581)) 由 @gchust 貢獻
+  - 修復包含連字號的變數無法正確解析的問題。([#8432](https://github.com/nocobase/nocobase/pull/8432)) 由 @gchust 貢獻
+  - 修復當 filterByTk 為陣列時變數解析不正確的問題。([#8412](https://github.com/nocobase/nocobase/pull/8412)) 由 @gchust 貢獻
+  - 確保記錄變數在與其個別欄位一起使用時始終返回完整記錄。([#7917](https://github.com/nocobase/nocobase/pull/7917)) 由 @gchust 貢獻
+  - 無法解析聯動設定欄位動作中的變數 ([#7684](https://github.com/nocobase/nocobase/pull/7684)) 由 @gchust 貢獻
+  - 修復父彈窗記錄變數解析不正確的問題。([#7637](https://github.com/nocobase/nocobase/pull/7637)) 由 @gchust 貢獻
+- **[區塊：地圖]**
+
+  - 修復地圖區塊中重複的「另存為模板」配置選項 ([#8584](https://github.com/nocobase/nocobase/pull/8584)) 由 @katherinehhh 貢獻
+  - 修復選單切換後地圖縮放級別不正確的問題 ([#8193](https://github.com/nocobase/nocobase/pull/8193)) 由 @katherinehhh 貢獻
+- **[資料表欄位：附件(URL)]** 修復附件 URL 欄位檔名顯示配置在編輯表單中不起作用的問題 ([#8571](https://github.com/nocobase/nocobase/pull/8571)) 由 @katherinehhh 貢獻
+- **[UI 模板]**
+
+  - 修復重新開啟並提交關聯欄位「新增」表單的已儲存彈窗模板時出現錯誤。([#8564](https://github.com/nocobase/nocobase/pull/8564)) 由 @gchust 貢獻
+  - 修復參考模板區塊無法透過事件流程設定設定資料範圍的問題。([#8472](https://github.com/nocobase/nocobase/pull/8472)) 由 @gchust 貢獻
+  - 修復某些舊版彈窗在轉換為模板後無法正確重複使用的問題。([#8283](https://github.com/nocobase/nocobase/pull/8283)) 由 @gchust 貢獻
+  - 修復欄位模板無法套用聯動規則和表單佈局的問題。([#8266](https://github.com/nocobase/nocobase/pull/8266)) 由 @gchust 貢獻
+  - 修復開啟關聯欄位彈窗時錯誤地使用了非關聯欄位彈窗模板的錯誤。([#8233](https://github.com/nocobase/nocobase/pull/8233)) 由 @gchust 貢獻
+- **[區塊：模板（已棄用）]**
+
+  - 修復無法存取繼承模板（v1）編輯頁面的問題。([#8376](https://github.com/nocobase/nocobase/pull/8376)) 由 @gchust 貢獻
+  - 修復開啟或關閉模態框時觸發了不必要的區塊模板請求的問題 ([#7561](https://github.com/nocobase/nocobase/pull/7561)) 由 @gchust 貢獻
+- **[動作：批次更新]** 修復外部資料源批次更新動作中的錯誤。([#8320](https://github.com/nocobase/nocobase/pull/8320)) 由 @gchust 貢獻
+- **[資料視覺化]**
+
+  - 修復 AI 圓餅圖標籤顯示問題，標準化基於資料集的圓餅圖選項。<br/> 限制圖表排序欄位僅為已選欄位。([#8309](https://github.com/nocobase/nocobase/pull/8309)) 由 @heziqiang 貢獻
+  - 解決 SQL 模式選擇外部資料源的問題；<br/>解決資料擷取期間圖表區塊載入狀態的問題；<br/>解決空白圖表區塊取消配置的問題；([#8169](https://github.com/nocobase/nocobase/pull/8169)) 由 @heziqiang 貢獻
+  - 修復儲存後圖表區塊未更新的問題 ([#7920](https://github.com/nocobase/nocobase/pull/7920)) 由 @heziqiang 貢獻
+  - 僅在圖表預覽期間使用 sql 資源除錯模式 ([#7893](https://github.com/nocobase/nocobase/pull/7893)) 由 @heziqiang 貢獻
+  - 在初始化時使用 sql:runById API 擷取查詢資料 ([#7677](https://github.com/nocobase/nocobase/pull/7677)) 由 @heziqiang 貢獻
+  - 修復解析變數時的 SQL 查詢問題 ([#7642](https://github.com/nocobase/nocobase/pull/7642)) 由 @heziqiang 貢獻
+  - 修復圖表資料查詢中缺少 orders 參數的問題 ([#7636](https://github.com/nocobase/nocobase/pull/7636)) 由 @heziqiang 貢獻
+  - 修復因事件註冊超時導致圖表無法顯示的問題 ([#7608](https://github.com/nocobase/nocobase/pull/7608)) 由 @heziqiang 貢獻
+- **[動作：匯入記錄]**
+
+  - 匯入檔案時的空間驗證 ([#8285](https://github.com/nocobase/nocobase/pull/8285)) 由 @jiannx 貢獻
+  - 解決可匯入欄位中欄位列表顯示的問題 ([#7710](https://github.com/nocobase/nocobase/pull/7710)) 由 @katherinehhh 貢獻
+- **[非同步任務管理器]** 修復取消背景任務的語言 ([#8245](https://github.com/nocobase/nocobase/pull/8245)) 由 @mytharcher 貢獻
+- **[工作流程]**
+
+  - 修復重新整理外部資料源後資料庫事件失效的問題 ([#8207](https://github.com/nocobase/nocobase/pull/8207)) 由 @cgyrock 貢獻
+  - 修復在綁定工作流程按鈕配置中新增工作流程後，點擊導致應用程式凍結的問題 ([#7541](https://github.com/nocobase/nocobase/pull/7541)) 由 @mytharcher 貢獻
+- **[資料表欄位：多對多（陣列）]** 修復當目標鍵類型為 Snowflake ID（53 位元）時無法建立多對多（陣列）欄位的問題 ([#8226](https://github.com/nocobase/nocobase/pull/8226)) 由 @2013xile 貢獻
+- **[資料表欄位：公式]**
+
+  - 修復 BigInt 欄位無法新增到詳情和表單區塊的問題 ([#8201](https://github.com/nocobase/nocobase/pull/8201)) 由 @katherinehhh 貢獻
+  - 修復篩選動作和篩選表單區塊中的公式欄位無法鍵入輸入值的問題。([#8102](https://github.com/nocobase/nocobase/pull/8102)) 由 @gchust 貢獻
+  - 修復公式欄位無法新增到篩選表單區塊的問題。([#8071](https://github.com/nocobase/nocobase/pull/8071)) 由 @gchust 貢獻
+- **[區塊：操作面板]** 優化操作面板區塊列表佈局中的樣式 ([#8084](https://github.com/nocobase/nocobase/pull/8084)) 由 @katherinehhh 貢獻
+- **[資料源管理器]** 修復更新外部資料源密碼時的錯誤 ([#8024](https://github.com/nocobase/nocobase/pull/8024)) 由 @cgyrock 貢獻
+- **[動作：匯出記錄]**
+
+  - 修復可匯出欄位列表中缺少系統欄位的問題 ([#8002](https://github.com/nocobase/nocobase/pull/8002)) 由 @katherinehhh 貢獻
+  - 解決匯出動作中可匯出欄位列表顯示的問題 ([#7714](https://github.com/nocobase/nocobase/pull/7714)) 由 @katherinehhh 貢獻
+- **[多應用程式管理器（已棄用）]**
+
+  - 子應用程式停止後，發布同步訊息以通知其他節點停止對應的子應用程式 ([#7849](https://github.com/nocobase/nocobase/pull/7849)) 由 @2013xile 貢獻
+  - 子應用程式狀態指標的資料表不正確 ([#7772](https://github.com/nocobase/nocobase/pull/7772)) 由 @2013xile 貢獻
+  - 修復無法停用舊版 multi-app-manager 的問題 ([#7633](https://github.com/nocobase/nocobase/pull/7633)) 由 @jiannx 貢獻
+  - 修復多應用程式資料遷移前的埠號驗證 ([#7540](https://github.com/nocobase/nocobase/pull/7540)) 由 @jiannx 貢獻
+- **[區塊：卡片]** 修復列表和卡片區塊之間的資料重複問題 ([#7773](https://github.com/nocobase/nocobase/pull/7773)) 由 @katherinehhh 貢獻
+- **[多空間]**
+
+  - 新增遷移腳本以移除空間欄位中的 x-ready-pretty 由 @jiannx 貢獻
+  - 移除空間欄位的 read-pretty 屬性 由 @jiannx 貢獻
+  - 空間選擇器顏色跟隨主題 由 @jiannx 貢獻
+  - 新增關聯資料時的相關空間 由 @jiannx 貢獻
+  - 行動裝置支援空間切換 由 @jiannx 貢獻
+  - 修正在系統資料表中建立其他欄位的問題 由 @jiannx 貢獻
+  - 多空間關聯用戶 由 @jiannx 貢獻
+- **[動作：匯入記錄 Pro]**
+
+  - 修復匯入結果中的計數數字和訊息翻譯 由 @mytharcher 貢獻
+  - 修復上傳器修改匯入選項無效的問題 由 @katherinehhh 貢獻
+  - 解決可匯入欄位中欄位列表顯示的問題 由 @katherinehhh 貢獻
+- **[AI：知識庫]** 修復建置後系統無法啟動的問題 由 @cgyrock 貢獻
+- **[動作：匯出記錄 Pro]** 修復附件匯出選項「為每條記錄建立一個資料夾」未生效的問題 由 @katherinehhh 貢獻
+- **[模板列印]**
+
+  - 修復詳情區塊中模板列印動作錯誤 由 @katherinehhh 貢獻
+  - 在 2.0 版本中顯示空間欄位 由 @jiannx 貢獻
+  - 從列印模板配置中移除頁尾按鈕 由 @katherinehhh 貢獻
+  - 修復具有相同鍵的欄位導致渲染錯誤 由 @jiannx 貢獻
+  - 修復模板列印請求無法與外部資料源一起使用 由 @katherinehhh 貢獻
+  - 修復模板列印動作配置中欄位列表顯示問題 由 @katherinehhh 貢獻
+  - 修復在記錄模板列印操作中新增模板失敗 由 @katherinehhh 貢獻
+  - 支援空間欄位 由 @jiannx 貢獻
+  - 修復被遮擋的配置模板彈出問題 由 @zhangzhonghe 貢獻
+- **[多應用程式]**
+
+  - 多應用程式遷移未觸發鉤子 由 @jiannx 貢獻
+  - 多應用程式代理支援快取 由 @jiannx 貢獻
+- **[plugin-demo-platform]** demo 支援自動停止應用程式 由 @jiannx 貢獻
+- **[工作流程：審批]**
+
+  - 修復審批已刪除記錄時拋出錯誤的問題 由 @mytharcher 貢獻
+  - 修復如果受眾工作流程被停用，為用戶新增角色時拋出錯誤的問題 由 @mytharcher 貢獻
+  - 在工作流程被刪除時增加容錯處理，以避免任務列表中的載入錯誤 由 @mytharcher 貢獻
+  - 修復 1.x 審批記錄彈窗中拋出錯誤的問題 由 @mytharcher 貢獻
+  - 修復因參數錯誤導致載入不正確記錄的問題 由 @mytharcher 貢獻
+  - 修復審批任務卡上未顯示欄位的問題 由 @zhangzhonghe 貢獻
+  - 修復因缺少依賴導致的建置錯誤 由 @mytharcher 貢獻
+  - 修復建立審批資訊區塊時拋出錯誤的問題 由 @mytharcher 貢獻
+  - 修復受指派者表單中已填寫資料消失的問題 由 @mytharcher 貢獻
+- **[郵件管理器]**
+
+  - 修復郵件配置彈窗被遮擋的問題 由 @zhangzhonghe 貢獻
+  - 修復多個用戶之間同一信箱的郵件問題並優化效能 由 @jiannx 貢獻
+  - 修復 Outlook 回覆連結偶爾斷開的問題 由 @jiannx 貢獻
+  - 選取文字時內文不會折疊。修復下載附件失敗 由 @jiannx 貢獻
+  - 管理頁面新增篩選 由 @jiannx 貢獻
+  - 修復對話鏈 由 @jiannx 貢獻
+  - 允許修改郵件父 ID 由 @jiannx 貢獻
+  - 顯示全部回覆按鈕，資料範圍支援篩選子訊息。 由 @jiannx 貢獻
+  - 修復草稿錯誤 由 @jiannx 貢獻
+  - 未同步 gmail 排程狀態 由 @jiannx 貢獻
+  - 處理異常資料 由 @jiannx 貢獻
+  - ShadowHtml 重新整理錯誤 由 @jiannx 貢獻
