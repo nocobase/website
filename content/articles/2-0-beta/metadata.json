@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
-      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "updatedAt": "2026-06-24T12:43:08.286Z",
       "id": 4,
       "title": "Release Notes",
       "title_cn": "发布日志",
@@ -79,6 +83,8 @@
       "title_ja": "リリースノート",
       "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
       "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -105,6 +111,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-23T05:24:27.552Z",
-      "updatedAt": "2024-11-24T05:34:20.239Z",
+      "updatedAt": "2026-06-24T12:43:08.338Z",
       "id": 20,
       "title": "System Upgrade",
       "title_cn": "系统升级",
@@ -131,6 +139,8 @@
       "title_ja": "システムアップグレード",
       "description_ja": "リリースノートはまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -157,6 +167,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -170,7 +182,7 @@
   "sub_tags": [
     {
       "createdAt": "2025-01-22T07:13:31.578Z",
-      "updatedAt": "2025-01-22T07:13:31.578Z",
+      "updatedAt": "2026-06-24T12:43:08.694Z",
       "id": 118,
       "title": "Milestone",
       "title_cn": null,
@@ -185,6 +197,8 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
@@ -196,7 +210,7 @@
     },
     {
       "createdAt": "2025-09-21T12:29:35.856Z",
-      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2026-06-24T12:43:09.215Z",
       "id": 234,
       "title": "beta",
       "title_cn": null,
@@ -211,8 +225,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "article_sub_tags": {
         "createdAt": "2026-01-01T04:43:15.382Z",
         "updatedAt": "2026-01-01T04:43:15.382Z",
@@ -245,5 +261,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-04T01:31:15.672Z"
+  "updatedAt": "2026-06-28T01:35:45.978Z"
 }
