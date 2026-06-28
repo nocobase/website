@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -105,6 +111,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -131,6 +139,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -157,8 +167,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -183,6 +195,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-26T11:09:33.822Z",
-      "updatedAt": "2024-11-24T05:34:20.574Z",
+      "updatedAt": "2026-06-24T12:43:08.348Z",
       "id": 22,
       "title": "Awesome Open-Source Projects",
       "title_cn": "令人惊叹的开源项目",
@@ -209,6 +223,8 @@
       "title_ja": "素晴らしいオープンソースプロジェクト",
       "description_ja": "説明はありません",
       "keywords_ja": "オープンソース, プロジェクト, 技術",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -235,6 +251,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-08-29T17:10:24.642Z",
-      "updatedAt": "2024-11-24T05:34:27.549Z",
+      "updatedAt": "2026-06-24T12:43:08.531Z",
       "id": 60,
       "title": "no code crm",
       "title_cn": "no code crm",
@@ -261,6 +279,8 @@
       "title_ja": "ノーコードCRM",
       "description_ja": "ノーコードCRMの説明をここに追加してください。",
       "keywords_ja": "ノーコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-11-15T06:50:31.777Z",
-      "updatedAt": "2024-11-24T05:34:31.955Z",
+      "updatedAt": "2026-06-24T12:43:08.599Z",
       "id": 84,
       "title": "zero-code",
       "title_cn": "零代码",
@@ -287,6 +307,8 @@
       "title_ja": "ゼロコード",
       "description_ja": "説明はありません。",
       "keywords_ja": "キーワードはありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2025-05-21T06:05:10.575Z",
-      "updatedAt": "2025-05-21T06:05:10.575Z",
+      "updatedAt": "2026-06-24T12:43:08.976Z",
       "id": 181,
       "title": "AI system",
       "title_cn": "AI 系统",
@@ -313,8 +335,10 @@
       "title_ja": "AI システム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2025-05-26T10:22:27.613Z",
-      "updatedAt": "2025-05-26T10:22:27.613Z",
+      "updatedAt": "2026-06-24T12:43:08.994Z",
       "id": 185,
       "title": "No-Code Automation",
       "title_cn": "无代码自动化",
@@ -339,8 +363,10 @@
       "title_ja": "ノーコード自動化",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2025-08-06T10:59:21.721Z",
-      "updatedAt": "2025-08-12T11:34:48.156Z",
+      "updatedAt": "2026-06-24T12:43:09.130Z",
       "id": 215,
       "title": "OpenAI",
       "title_cn": "OpenAI",
@@ -365,8 +391,10 @@
       "title_ja": "OpenAI",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2025-08-14T13:31:27.182Z",
-      "updatedAt": "2025-08-14T13:31:59.720Z",
+      "updatedAt": "2026-06-24T12:43:09.167Z",
       "id": 223,
       "title": "AI Agent",
       "title_cn": "AI Agent",
@@ -391,8 +419,10 @@
       "title_ja": "AI Agent",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -402,7 +432,7 @@
     },
     {
       "createdAt": "2025-08-14T13:32:42.003Z",
-      "updatedAt": "2025-08-14T13:32:42.003Z",
+      "updatedAt": "2026-06-24T12:43:09.171Z",
       "id": 224,
       "title": "AI Project Ranking",
       "title_cn": "AI 项目排行榜",
@@ -417,8 +447,10 @@
       "title_ja": "AI プロジェクトランキング",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -428,7 +460,7 @@
     },
     {
       "createdAt": "2025-11-14T05:28:06.265Z",
-      "updatedAt": "2025-11-14T05:28:06.265Z",
+      "updatedAt": "2026-06-24T12:43:09.258Z",
       "id": 244,
       "title": "AI Tools",
       "title_cn": null,
@@ -443,8 +475,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.545Z",
         "updatedAt": "2026-05-20T14:00:44.545Z",
@@ -454,7 +488,7 @@
     },
     {
       "createdAt": "2026-05-20T13:58:20.130Z",
-      "updatedAt": "2026-05-20T13:58:20.130Z",
+      "updatedAt": "2026-06-24T12:43:09.307Z",
       "id": 254,
       "title": "open code",
       "title_cn": "open code",
@@ -469,8 +503,10 @@
       "title_ja": "open code",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-05-20T14:00:44.548Z",
         "updatedAt": "2026-05-20T14:00:44.548Z",
@@ -504,5 +540,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-26T18:45:15.868Z"
+  "updatedAt": "2026-06-28T01:36:18.521Z"
 }
