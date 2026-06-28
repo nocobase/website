@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -27,6 +27,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -53,6 +55,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:33.094Z",
-      "updatedAt": "2024-11-24T05:34:19.706Z",
+      "updatedAt": "2026-06-24T12:43:08.317Z",
       "id": 17,
       "title": "best no code tools",
       "title_cn": "最佳无代码工具",
@@ -79,6 +83,8 @@
       "title_ja": "最高のノーコードツール",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "ノーコード, ツール, ベスト",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-06T09:45:03.074Z",
-      "updatedAt": "2024-11-24T05:34:19.887Z",
+      "updatedAt": "2026-06-24T12:43:08.322Z",
       "id": 18,
       "title": "open source low code platform",
       "title_cn": "开源低代码平台",
@@ -105,6 +111,8 @@
       "title_ja": "オープンソースのローコードプラットフォーム",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -131,8 +139,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-04-03T09:13:01.393Z",
         "updatedAt": "2026-04-03T09:13:01.393Z",
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-23T05:24:27.552Z",
-      "updatedAt": "2024-11-24T05:34:20.239Z",
+      "updatedAt": "2026-06-24T12:43:08.338Z",
       "id": 20,
       "title": "System Upgrade",
       "title_cn": "系统升级",
@@ -157,6 +167,8 @@
       "title_ja": "システムアップグレード",
       "description_ja": "リリースノートはまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -183,6 +195,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -209,6 +223,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-10-05T14:39:18.488Z",
-      "updatedAt": "2024-11-24T05:34:29.396Z",
+      "updatedAt": "2026-06-24T12:43:08.559Z",
       "id": 70,
       "title": "Airtable",
       "title_cn": "Airtable",
@@ -235,6 +251,8 @@
       "title_ja": "エアテーブル",
       "description_ja": "説明はありません。",
       "keywords_ja": "エアテーブル, データベース, コラボレーション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-10-05T14:40:01.588Z",
-      "updatedAt": "2024-11-24T05:34:29.585Z",
+      "updatedAt": "2026-06-24T12:43:08.561Z",
       "id": 71,
       "title": "Airtable Alternatives",
       "title_cn": "Airtable 替代品",
@@ -261,6 +279,8 @@
       "title_ja": "Airtableの代替品",
       "description_ja": "このページでは、Airtableの代替品を紹介します。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2025-12-14T12:43:16.075Z",
-      "updatedAt": "2025-12-14T12:43:16.075Z",
+      "updatedAt": "2026-06-24T12:43:09.281Z",
       "id": 249,
       "title": "Excel",
       "title_cn": "Excel",
@@ -287,8 +307,10 @@
       "title_ja": "Excel",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-04-03T09:13:01.393Z",
         "updatedAt": "2026-04-03T09:13:01.393Z",
@@ -322,5 +344,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-04-03T12:50:48.570Z"
+  "updatedAt": "2026-06-28T01:35:59.362Z"
 }
