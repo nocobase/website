@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -105,8 +111,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-11-11T11:36:55.827Z",
         "updatedAt": "2024-11-11T11:36:55.827Z",
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -131,6 +139,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -157,6 +167,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:50.151Z",
-      "updatedAt": "2024-11-24T05:34:21.125Z",
+      "updatedAt": "2026-06-24T12:43:08.362Z",
       "id": 25,
       "title": "self-hosted solutions",
       "title_cn": "自托管解决方案",
@@ -183,6 +195,8 @@
       "title_ja": "セルフホステッドソリューション",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:47.586Z",
-      "updatedAt": "2024-11-24T05:34:21.851Z",
+      "updatedAt": "2026-06-24T12:43:08.381Z",
       "id": 29,
       "title": "open-source software",
       "title_cn": "开源软件",
@@ -209,6 +223,8 @@
       "title_ja": "オープンソースソフトウェア",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "オープンソース, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -235,6 +251,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-11-01T03:56:44.672Z",
-      "updatedAt": "2024-11-24T05:34:30.880Z",
+      "updatedAt": "2026-06-24T12:43:08.581Z",
       "id": 78,
       "title": "Task Management",
       "title_cn": "任务管理",
@@ -261,6 +279,8 @@
       "title_ja": "タスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-11-12T06:38:38.202Z",
-      "updatedAt": "2024-11-24T05:34:31.593Z",
+      "updatedAt": "2026-06-24T12:43:08.593Z",
       "id": 82,
       "title": "task management system",
       "title_cn": "任务管理系统",
@@ -287,6 +307,8 @@
       "title_ja": "タスク管理システム",
       "description_ja": "説明はありません",
       "keywords_ja": "タスク, 管理, システム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-11-12T06:39:05.426Z",
-      "updatedAt": "2024-11-24T05:34:31.773Z",
+      "updatedAt": "2026-06-24T12:43:08.596Z",
       "id": 83,
       "title": " task management software",
       "title_cn": "任务管理软件",
@@ -313,6 +335,8 @@
       "title_ja": "タスク管理ソフトウェア",
       "description_ja": "説明はまだありません",
       "keywords_ja": "タスク, 管理, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2024-11-15T06:50:31.777Z",
-      "updatedAt": "2024-11-24T05:34:31.955Z",
+      "updatedAt": "2026-06-24T12:43:08.599Z",
       "id": 84,
       "title": "zero-code",
       "title_cn": "零代码",
@@ -339,6 +363,8 @@
       "title_ja": "ゼロコード",
       "description_ja": "説明はありません。",
       "keywords_ja": "キーワードはありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2024-11-15T06:51:21.214Z",
-      "updatedAt": "2024-11-24T05:34:32.129Z",
+      "updatedAt": "2026-06-24T12:43:08.601Z",
       "id": 85,
       "title": "zero-code platform",
       "title_cn": "零代码平台",
@@ -365,6 +391,8 @@
       "title_ja": "ゼロコードプラットフォーム",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2024-11-15T06:52:28.280Z",
-      "updatedAt": "2024-11-24T05:34:32.690Z",
+      "updatedAt": "2026-06-24T12:43:08.608Z",
       "id": 88,
       "title": "zero-code open source",
       "title_cn": "零代码开源",
@@ -391,6 +419,8 @@
       "title_ja": "ゼロコードオープンソース",
       "description_ja": null,
       "keywords_ja": "オープンソース, ゼロコード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -422,7 +452,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-26T14:11:31.533Z",
+  "updatedAt": "2026-06-28T01:36:33.262Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
