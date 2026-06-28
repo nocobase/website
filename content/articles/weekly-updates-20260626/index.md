@@ -12,6 +12,35 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### [v2.1.12](https://www.nocobase.com/en/blog/v2.1.12)
+
+*Release date: 2026-06-26*
+
+### 🚀 Improvements
+
+- **[flow-engine]** Automatically refreshed related data blocks when RunJS closes a popup after updating data through resource APIs ([#9873](https://github.com/nocobase/nocobase/pull/9873)) by @gchust
+- **[client-v2]** Support configure js block should be wrapped by block card. ([#9897](https://github.com/nocobase/nocobase/pull/9897)) by @gchust
+
+### 🐛 Bug Fixes
+
+- **[client-v2]**
+
+  - Fixed link actions becoming invisible on mobile embedded pages when icon-only mode is enabled but no icon is configured. ([#9921](https://github.com/nocobase/nocobase/pull/9921)) by @katherinehhh
+  - Fixed v2 table row action buttons changing row height. ([#9866](https://github.com/nocobase/nocobase/pull/9866)) by @jiannx
+  - Fixed v2 form submit success redirects so they can reference the saved response record. ([#9907](https://github.com/nocobase/nocobase/pull/9907)) by @katherinehhh
+  - Fixed table blocks failing when a configured drag sorting field has been deleted, and allowed clearing the drag sorting field setting. ([#9867](https://github.com/nocobase/nocobase/pull/9867)) by @jiannx
+- **[client]** Corrected several copy and typo issues across locales, related UI text, and documentation. ([#9905](https://github.com/nocobase/nocobase/pull/9905)) by @Molunerfinn
+- **[flow-engine]** Fixed an issue where some parameters of ctx.openView in RunJS would not take effect. ([#9883](https://github.com/nocobase/nocobase/pull/9883)) by @gchust
+- **[cli]** Support pnpm and yarn global self update ([#9912](https://github.com/nocobase/nocobase/pull/9912)) by @chenos
+- **[AI employees]**
+
+  - Fixed the AI datasource card list so it adapts responsively to different viewport widths. ([#9924](https://github.com/nocobase/nocobase/pull/9924)) by @cgyrock
+  - Fixed AI employee chat failures caused by replaying malformed tool calls. ([#9900](https://github.com/nocobase/nocobase/pull/9900)) by @cgyrock
+- **[Block: iframe]** Fixed 403 errors for normal users when viewing v2 iframe blocks in HTML mode. ([#9889](https://github.com/nocobase/nocobase/pull/9889)) by @jiannx
+- **[AI: Knowledge base]** Fixed layout overflow in version control and knowledge base document lists when content or viewport size is constrained. by @cgyrock
+- **[Migration manager]** Fixed migration rules for database-synced collections by @2013xile
+- **[Record history]** Fixed an issue where record history could fail to save changes for some collections by @2013xile
+
 ### [v2.1.11](https://www.nocobase.com/en/blog/v2.1.11)
 
 *Release date: 2026-06-25*
@@ -179,6 +208,28 @@ Summarize the weekly product update logs, and the latest releases can be checked
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
+
+### [v2.2.0-alpha.3](https://www.nocobase.com/en/blog/v2.2.0-alpha.3)
+
+*Release date: 2026-06-27*
+
+### 🚀 Improvements
+
+- **[client-v2]** Support configure js block should be wrapped by block card. ([#9897](https://github.com/nocobase/nocobase/pull/9897)) by @gchust
+- **[cli]** Support OAuth device authorization flow ([#9922](https://github.com/nocobase/nocobase/pull/9922)) by @chenos
+- **[Form drafts]** Migrate plugin form drafts to client v2. ([#9910](https://github.com/nocobase/nocobase/pull/9910)) by @gchust
+
+### 🐛 Bug Fixes
+
+- **[client-v2]**
+
+  - Fixed link actions becoming invisible on mobile embedded pages when icon-only mode is enabled but no icon is configured. ([#9921](https://github.com/nocobase/nocobase/pull/9921)) by @katherinehhh
+  - Fixed link actions becoming invisible on mobile embedded pages when icon-only mode is enabled but no icon is configured. ([#9919](https://github.com/nocobase/nocobase/pull/9919)) by @katherinehhh
+- **[flow-engine]** Fix the issue where mobile popups with long content cannot scroll ([#9871](https://github.com/nocobase/nocobase/pull/9871)) by @zhangzhonghe
+- **[AI employees]** Fixed the AI datasource card list so it adapts responsively to different viewport widths. ([#9924](https://github.com/nocobase/nocobase/pull/9924)) by @cgyrock
+- **[Migration manager]** Fixed migration rules for database-synced collections by @2013xile
+- **[Record history]** Fixed an issue where record history could fail to save changes for some collections by @2013xile
+- **[WeCom]** Fixed a blank flash when switching route menu items with the WeCom plugin enabled in Client V2 by @2013xile
 
 ### [v2.2.0-alpha.2](https://www.nocobase.com/en/blog/v2.2.0-alpha.2)
 
