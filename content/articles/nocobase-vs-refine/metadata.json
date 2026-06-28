@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-06-23T04:03:19.249Z",
-      "updatedAt": "2026-01-20T12:51:55.263Z",
+      "updatedAt": "2026-06-24T12:43:08.293Z",
       "id": 9,
       "title": "Insights",
       "title_cn": "洞见",
@@ -79,8 +83,10 @@
       "title_ja": "インサイト",
       "description_ja": "AI、デジタル化、ノーコード、ローコード業界における専門家の知見、トレンド、ベストプラクティスを探求し、ビジネスソリューションにおいてNocoBaseの潜在能力を最大限に活用しましょう。",
       "keywords_ja": "NocoBase ノーコードインサイト, ノーコード開発, ノーコードトレンド, ノーコードプラットフォーム分析, ノーコードによるビジネス自動化, ノーコードケーススタディ, ノーコード成功事例",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-09-30T01:10:00.494Z",
         "updatedAt": "2024-09-30T01:10:00.494Z",
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -105,6 +111,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-06T09:45:03.074Z",
-      "updatedAt": "2024-11-24T05:34:19.887Z",
+      "updatedAt": "2026-06-24T12:43:08.322Z",
       "id": 18,
       "title": "open source low code platform",
       "title_cn": "开源低代码平台",
@@ -131,6 +139,8 @@
       "title_ja": "オープンソースのローコードプラットフォーム",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -157,8 +167,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-09-27T11:23:31.350Z",
         "updatedAt": "2024-09-27T11:23:31.350Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -183,6 +195,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:50.151Z",
-      "updatedAt": "2024-11-24T05:34:21.125Z",
+      "updatedAt": "2026-06-24T12:43:08.362Z",
       "id": 25,
       "title": "self-hosted solutions",
       "title_cn": "自托管解决方案",
@@ -209,6 +223,8 @@
       "title_ja": "セルフホステッドソリューション",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -235,6 +251,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-08-07T16:21:20.686Z",
-      "updatedAt": "2024-11-24T05:34:23.089Z",
+      "updatedAt": "2026-06-24T12:43:08.415Z",
       "id": 36,
       "title": "CRUD",
       "title_cn": "CRUD",
@@ -261,6 +279,8 @@
       "title_ja": "CRUD",
       "description_ja": "CRUD（作成、読み取り、更新、削除）操作に関する基本的な概念です。",
       "keywords_ja": "CRUD, データ操作, 基本概念",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-08-07T16:21:37.680Z",
-      "updatedAt": "2024-11-24T05:34:23.276Z",
+      "updatedAt": "2026-06-24T12:43:08.420Z",
       "id": 37,
       "title": "CRUD app",
       "title_cn": "CRUD app",
@@ -287,6 +307,8 @@
       "title_ja": "CRUDアプリ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "CRUD, アプリ",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-08-07T16:22:07.324Z",
-      "updatedAt": "2024-11-24T05:34:23.443Z",
+      "updatedAt": "2026-06-24T12:43:08.424Z",
       "id": 38,
       "title": "CRUD operations",
       "title_cn": "CRUD 操作",
@@ -313,6 +335,8 @@
       "title_ja": "CRUD操作",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "CRUD, 操作",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2024-08-07T16:22:18.992Z",
-      "updatedAt": "2024-11-24T05:34:23.634Z",
+      "updatedAt": "2026-06-24T12:43:08.429Z",
       "id": 39,
       "title": "crud ops",
       "title_cn": "crud ops",
@@ -339,6 +363,8 @@
       "title_ja": "CRUD操作",
       "description_ja": "説明はありません。",
       "keywords_ja": "CRUD, 操作",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2024-09-22T08:43:24.340Z",
-      "updatedAt": "2024-11-24T05:34:28.459Z",
+      "updatedAt": "2026-06-24T12:43:08.545Z",
       "id": 65,
       "title": "low code integration platform",
       "title_cn": "低代码集成平台",
@@ -365,6 +391,8 @@
       "title_ja": "ローコード統合プラットフォーム",
       "description_ja": "内容がありません",
       "keywords_ja": "内容がありません",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2024-09-30T01:09:43.000Z",
-      "updatedAt": "2024-11-24T05:34:29.201Z",
+      "updatedAt": "2026-06-24T12:43:08.556Z",
       "id": 69,
       "title": "Refine",
       "title_cn": "Refine",
@@ -391,6 +419,8 @@
       "title_ja": "洗練",
       "description_ja": "リファインは、プロセスや製品の質を向上させるための重要なステップです。",
       "keywords_ja": "洗練, 改善, 品質向上",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -422,7 +452,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-22T18:43:24.434Z",
+  "updatedAt": "2026-06-28T01:36:13.439Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
