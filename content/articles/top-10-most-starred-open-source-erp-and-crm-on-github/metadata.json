@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -105,6 +111,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -131,6 +139,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -157,8 +167,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.618Z",
         "updatedAt": "2025-05-05T09:36:12.618Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:47.586Z",
-      "updatedAt": "2024-11-24T05:34:21.851Z",
+      "updatedAt": "2026-06-24T12:43:08.381Z",
       "id": 29,
       "title": "open-source software",
       "title_cn": "开源软件",
@@ -183,6 +195,8 @@
       "title_ja": "オープンソースソフトウェア",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "オープンソース, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-08-29T17:10:24.642Z",
-      "updatedAt": "2024-11-24T05:34:27.549Z",
+      "updatedAt": "2026-06-24T12:43:08.531Z",
       "id": 60,
       "title": "no code crm",
       "title_cn": "no code crm",
@@ -209,6 +223,8 @@
       "title_ja": "ノーコードCRM",
       "description_ja": "ノーコードCRMの説明をここに追加してください。",
       "keywords_ja": "ノーコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-12-12T02:09:20.345Z",
-      "updatedAt": "2024-12-12T02:09:20.345Z",
+      "updatedAt": "2026-06-24T12:43:08.628Z",
       "id": 95,
       "title": "open source crm",
       "title_cn": "开源crm",
@@ -235,8 +251,10 @@
       "title_ja": "オープンソースCrm",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.618Z",
         "updatedAt": "2025-05-05T09:36:12.618Z",
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-12-12T02:10:10.974Z",
-      "updatedAt": "2024-12-12T02:10:10.974Z",
+      "updatedAt": "2026-06-24T12:43:08.631Z",
       "id": 96,
       "title": "salesforce alternative",
       "title_cn": "salesforce 替代品",
@@ -261,8 +279,10 @@
       "title_ja": "Salesforceの代替",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.618Z",
         "updatedAt": "2025-05-05T09:36:12.618Z",
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2025-01-05T07:16:33.554Z",
-      "updatedAt": "2025-01-05T07:16:33.554Z",
+      "updatedAt": "2026-06-24T12:43:08.669Z",
       "id": 107,
       "title": "Custom CRM",
       "title_cn": "定制 CRM",
@@ -287,8 +307,10 @@
       "title_ja": "カスタムCRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.619Z",
         "updatedAt": "2025-05-05T09:36:12.619Z",
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2025-02-18T15:57:10.284Z",
-      "updatedAt": "2025-02-18T15:57:10.284Z",
+      "updatedAt": "2026-06-24T12:43:08.701Z",
       "id": 121,
       "title": "ERP solutions",
       "title_cn": "ERP解决方案",
@@ -313,8 +335,10 @@
       "title_ja": "ERPソリューション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.619Z",
         "updatedAt": "2025-05-05T09:36:12.619Z",
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2025-02-18T15:57:54.603Z",
-      "updatedAt": "2025-02-18T15:57:54.603Z",
+      "updatedAt": "2026-06-24T12:43:08.706Z",
       "id": 123,
       "title": "Odoo ERP",
       "title_cn": "Odoo ERP",
@@ -339,8 +363,10 @@
       "title_ja": "Odoo ERP",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.619Z",
         "updatedAt": "2025-05-05T09:36:12.619Z",
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2025-02-18T15:58:04.335Z",
-      "updatedAt": "2025-02-18T15:58:04.335Z",
+      "updatedAt": "2026-06-24T12:43:08.709Z",
       "id": 124,
       "title": "open-source ERP",
       "title_cn": "open-source ERP",
@@ -365,8 +391,10 @@
       "title_ja": "open-source ERP",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.619Z",
         "updatedAt": "2025-05-05T09:36:12.619Z",
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:38.020Z",
-      "updatedAt": "2025-03-07T06:00:38.020Z",
+      "updatedAt": "2026-06-24T12:43:08.837Z",
       "id": 152,
       "title": "CRM",
       "title_cn": "CRM",
@@ -391,8 +419,10 @@
       "title_ja": "CRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-05T09:36:12.619Z",
         "updatedAt": "2025-05-05T09:36:12.619Z",
@@ -422,7 +452,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-26T13:39:55.392Z",
+  "updatedAt": "2026-06-28T01:36:28.273Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
