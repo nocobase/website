@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -27,6 +27,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-06T09:45:03.074Z",
-      "updatedAt": "2024-11-24T05:34:19.887Z",
+      "updatedAt": "2026-06-24T12:43:08.322Z",
       "id": 18,
       "title": "open source low code platform",
       "title_cn": "开源低代码平台",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソースのローコードプラットフォーム",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -79,8 +83,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-09-02T06:47:02.632Z",
         "updatedAt": "2025-09-02T06:47:02.632Z",
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-26T11:09:33.822Z",
-      "updatedAt": "2024-11-24T05:34:20.574Z",
+      "updatedAt": "2026-06-24T12:43:08.348Z",
       "id": 22,
       "title": "Awesome Open-Source Projects",
       "title_cn": "令人惊叹的开源项目",
@@ -105,6 +111,8 @@
       "title_ja": "素晴らしいオープンソースプロジェクト",
       "description_ja": "説明はありません",
       "keywords_ja": "オープンソース, プロジェクト, 技術",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -131,6 +139,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -157,6 +167,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:32.769Z",
-      "updatedAt": "2024-11-24T05:34:21.674Z",
+      "updatedAt": "2026-06-24T12:43:08.376Z",
       "id": 28,
       "title": "customization",
       "title_cn": "定制化",
@@ -183,6 +195,8 @@
       "title_ja": "カスタマイズ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "カスタマイズ, 特徴",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-08-08T10:46:52.588Z",
-      "updatedAt": "2024-11-24T05:34:24.197Z",
+      "updatedAt": "2026-06-24T12:43:08.445Z",
       "id": 42,
       "title": "github trends",
       "title_cn": "github 趋势",
@@ -209,6 +223,8 @@
       "title_ja": "GitHub トレンド",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-09-25T02:37:26.118Z",
-      "updatedAt": "2024-11-24T05:34:28.633Z",
+      "updatedAt": "2026-06-24T12:43:08.548Z",
       "id": 66,
       "title": "Customizable Workflows",
       "title_cn": "定制化工作流程",
@@ -235,6 +251,8 @@
       "title_ja": "カスタマイズ可能なワークフロー",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "カスタマイズ, ワークフロー",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-10-18T02:19:59.834Z",
-      "updatedAt": "2024-11-24T05:34:30.151Z",
+      "updatedAt": "2026-06-24T12:43:08.568Z",
       "id": 74,
       "title": "Workflow Automation",
       "title_cn": "工作流自动化",
@@ -261,6 +279,8 @@
       "title_ja": "ワークフローの自動化",
       "description_ja": "このセクションでは、ワークフローの自動化の利点と実装方法について説明します。",
       "keywords_ja": "自動化, ワークフロー, 効率化",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-11-15T06:50:31.777Z",
-      "updatedAt": "2024-11-24T05:34:31.955Z",
+      "updatedAt": "2026-06-24T12:43:08.599Z",
       "id": 84,
       "title": "zero-code",
       "title_cn": "零代码",
@@ -287,6 +307,8 @@
       "title_ja": "ゼロコード",
       "description_ja": "説明はありません。",
       "keywords_ja": "キーワードはありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-11-21T14:16:08.323Z",
-      "updatedAt": "2024-11-24T05:34:32.874Z",
+      "updatedAt": "2026-06-24T12:43:08.612Z",
       "id": 89,
       "title": "Open-source workflow tools",
       "title_cn": "开源工作流工具",
@@ -313,6 +335,8 @@
       "title_ja": "オープンソースワークフローツール",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2024-11-21T14:16:23.205Z",
-      "updatedAt": "2024-11-24T05:34:33.046Z",
+      "updatedAt": "2026-06-24T12:43:08.615Z",
       "id": 90,
       "title": "Best workflow tools on GitHub",
       "title_cn": "GitHub上最佳的工作流程工具",
@@ -339,6 +363,8 @@
       "title_ja": "GitHub上の最高のワークフローツール",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "ワークフロー, GitHub, ツール",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2024-11-21T14:16:46.596Z",
-      "updatedAt": "2024-11-24T05:34:33.276Z",
+      "updatedAt": "2026-06-24T12:43:08.618Z",
       "id": 91,
       "title": "Top GitHub workflow projects",
       "title_cn": "热门 GitHub 工作流程项目",
@@ -365,6 +391,8 @@
       "title_ja": "人気のある GitHub ワークフロープロジェクト",
       "description_ja": "リリースノート",
       "keywords_ja": "GitHub, ワークフロー, プロジェクト",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2024-11-21T14:17:02.808Z",
-      "updatedAt": "2024-11-24T05:34:33.470Z",
+      "updatedAt": "2026-06-24T12:43:08.620Z",
       "id": 92,
       "title": "Best tools for workflow automation",
       "title_cn": "最佳工作流程自动化工具",
@@ -391,6 +419,8 @@
       "title_ja": "ワークフロー自動化のための最良のツール",
       "description_ja": "（この項目に関する説明が必要な場合はここに追加してください）",
       "keywords_ja": "ワークフロー, 自動化, ツール",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -402,7 +432,7 @@
     },
     {
       "createdAt": "2025-03-06T08:03:45.931Z",
-      "updatedAt": "2025-03-06T08:03:45.931Z",
+      "updatedAt": "2026-06-24T12:43:08.719Z",
       "id": 128,
       "title": "workflow",
       "title_cn": "工作流",
@@ -417,8 +447,10 @@
       "title_ja": "ワークフロー",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-09-02T06:47:02.633Z",
         "updatedAt": "2025-09-02T06:47:02.633Z",
@@ -428,7 +460,7 @@
     },
     {
       "createdAt": "2025-09-02T06:45:18.481Z",
-      "updatedAt": "2025-09-02T06:45:18.481Z",
+      "updatedAt": "2026-06-24T12:43:09.198Z",
       "id": 230,
       "title": "Zapier open-source alternatives",
       "title_cn": "Zapier 开源替代品",
@@ -443,8 +475,10 @@
       "title_ja": "Zapier の代替となる",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-09-02T06:47:02.633Z",
         "updatedAt": "2025-09-02T06:47:02.633Z",
@@ -478,5 +512,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-26T13:14:26.118Z"
+  "updatedAt": "2026-06-28T01:36:56.023Z"
 }
