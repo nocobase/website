@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -105,8 +111,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.389Z",
         "updatedAt": "2026-03-30T14:49:17.389Z",
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -131,6 +139,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:09:33.822Z",
-      "updatedAt": "2024-11-24T05:34:20.574Z",
+      "updatedAt": "2026-06-24T12:43:08.348Z",
       "id": 22,
       "title": "Awesome Open-Source Projects",
       "title_cn": "令人惊叹的开源项目",
@@ -157,6 +167,8 @@
       "title_ja": "素晴らしいオープンソースプロジェクト",
       "description_ja": "説明はありません",
       "keywords_ja": "オープンソース, プロジェクト, 技術",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -183,6 +195,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -209,6 +223,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:01.244Z",
-      "updatedAt": "2024-11-24T05:34:24.380Z",
+      "updatedAt": "2026-06-24T12:43:08.449Z",
       "id": 43,
       "title": "Data Model",
       "title_cn": "数据模型",
@@ -235,6 +251,8 @@
       "title_ja": "データモデル",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:24.018Z",
-      "updatedAt": "2024-11-24T05:34:24.591Z",
+      "updatedAt": "2026-06-24T12:43:08.454Z",
       "id": 44,
       "title": "data modeling",
       "title_cn": "数据建模",
@@ -261,6 +279,8 @@
       "title_ja": "データモデリング",
       "description_ja": "説明は提供されていません。",
       "keywords_ja": "キーワードは提供されていません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:37.122Z",
-      "updatedAt": "2024-11-24T05:34:24.756Z",
+      "updatedAt": "2026-06-24T12:43:08.459Z",
       "id": 45,
       "title": "what is data modeling",
       "title_cn": "什么是数据建模",
@@ -287,6 +307,8 @@
       "title_ja": "データモデリングとは",
       "description_ja": "データモデリングは、データの構造や関係を視覚化し、データベースの設計を支援するプロセスです。",
       "keywords_ja": "データ, モデリング, データベース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:48.938Z",
-      "updatedAt": "2024-11-24T05:34:24.939Z",
+      "updatedAt": "2026-06-24T12:43:08.464Z",
       "id": 46,
       "title": "data modeling tools",
       "title_cn": "数据建模工具",
@@ -313,6 +335,8 @@
       "title_ja": "データモデリングツール",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "データ, モデリング, ツール",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:59.402Z",
-      "updatedAt": "2024-11-24T05:34:25.115Z",
+      "updatedAt": "2026-06-24T12:43:08.469Z",
       "id": 47,
       "title": "relational data model",
       "title_cn": "关系数据模型",
@@ -339,6 +363,8 @@
       "title_ja": "リレーショナルデータモデル",
       "description_ja": "リレーショナルデータモデルに関する説明がここに入ります。",
       "keywords_ja": "リレーショナルデータ, モデル, データベース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2024-08-09T16:26:11.913Z",
-      "updatedAt": "2024-11-24T05:34:25.307Z",
+      "updatedAt": "2026-06-24T12:43:08.473Z",
       "id": 48,
       "title": "what is model data",
       "title_cn": "什么是数据模型",
@@ -365,6 +391,8 @@
       "title_ja": "モデルデータとは何ですか",
       "description_ja": "このセクションでは、モデルデータの定義とその重要性について説明します。",
       "keywords_ja": "モデルデータ, データモデル, 定義",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2024-11-04T12:09:33.482Z",
-      "updatedAt": "2024-11-24T05:34:31.227Z",
+      "updatedAt": "2026-06-24T12:43:08.587Z",
       "id": 80,
       "title": "data transformation tools",
       "title_cn": "数据转换工具",
@@ -391,6 +419,8 @@
       "title_ja": "データ変換ツール",
       "description_ja": "データ変換ツールに関する情報はまだありません。",
       "keywords_ja": "データ, 変換, ツール",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -402,7 +432,7 @@
     },
     {
       "createdAt": "2024-11-04T12:09:42.727Z",
-      "updatedAt": "2024-11-24T05:34:31.411Z",
+      "updatedAt": "2026-06-24T12:43:08.590Z",
       "id": 81,
       "title": "data transformation tools",
       "title_cn": "数据管理工具",
@@ -417,6 +447,8 @@
       "title_ja": "データ変換ツール",
       "description_ja": "説明は提供されていません。",
       "keywords_ja": "キーワードは提供されていません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -428,7 +460,7 @@
     },
     {
       "createdAt": "2025-03-06T15:27:06.442Z",
-      "updatedAt": "2025-03-06T15:27:06.442Z",
+      "updatedAt": "2026-06-24T12:43:08.797Z",
       "id": 144,
       "title": "data visualization",
       "title_cn": "数据可视化",
@@ -443,8 +475,10 @@
       "title_ja": "データ可視化",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -454,7 +488,7 @@
     },
     {
       "createdAt": "2025-03-06T15:43:35.040Z",
-      "updatedAt": "2025-03-06T15:43:35.040Z",
+      "updatedAt": "2026-06-24T12:43:08.812Z",
       "id": 147,
       "title": "SQL operation",
       "title_cn": "SQL 操作",
@@ -469,8 +503,10 @@
       "title_ja": "SQL操作",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -480,7 +516,7 @@
     },
     {
       "createdAt": "2025-03-06T15:44:30.005Z",
-      "updatedAt": "2025-03-06T15:44:30.005Z",
+      "updatedAt": "2026-06-24T12:43:08.822Z",
       "id": 149,
       "title": "data table design",
       "title_cn": "数据表设计",
@@ -495,8 +531,10 @@
       "title_ja": "データテーブル設計",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -506,7 +544,7 @@
     },
     {
       "createdAt": "2025-05-26T10:22:05.981Z",
-      "updatedAt": "2025-05-26T10:22:05.981Z",
+      "updatedAt": "2026-06-24T12:43:08.990Z",
       "id": 184,
       "title": "Data Integration Platforms",
       "title_cn": "数据集成平台",
@@ -521,8 +559,10 @@
       "title_ja": "データ統合プラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -532,7 +572,7 @@
     },
     {
       "createdAt": "2025-06-24T03:08:14.002Z",
-      "updatedAt": "2025-06-24T03:08:14.002Z",
+      "updatedAt": "2026-06-24T12:43:09.045Z",
       "id": 196,
       "title": "data limit",
       "title_cn": "数据超限",
@@ -547,8 +587,10 @@
       "title_ja": "データ超過",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -558,7 +600,7 @@
     },
     {
       "createdAt": "2025-08-09T12:10:30.598Z",
-      "updatedAt": "2025-08-09T12:10:30.598Z",
+      "updatedAt": "2026-06-24T12:43:09.139Z",
       "id": 217,
       "title": "Database Tool",
       "title_cn": "数据库工具",
@@ -573,8 +615,10 @@
       "title_ja": "データベースツール",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -584,7 +628,7 @@
     },
     {
       "createdAt": "2025-08-21T05:49:52.185Z",
-      "updatedAt": "2025-08-21T05:49:52.185Z",
+      "updatedAt": "2026-06-24T12:43:09.180Z",
       "id": 226,
       "title": "data app",
       "title_cn": null,
@@ -599,8 +643,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.388Z",
         "updatedAt": "2026-03-30T14:49:17.388Z",
@@ -610,7 +656,7 @@
     },
     {
       "createdAt": "2025-10-20T03:57:36.559Z",
-      "updatedAt": "2025-10-20T03:57:36.559Z",
+      "updatedAt": "2026-06-24T12:43:09.224Z",
       "id": 236,
       "title": "PostgreSQL",
       "title_cn": null,
@@ -625,8 +671,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.389Z",
         "updatedAt": "2026-03-30T14:49:17.389Z",
@@ -636,7 +684,7 @@
     },
     {
       "createdAt": "2025-10-31T09:16:14.994Z",
-      "updatedAt": "2025-10-31T09:16:14.994Z",
+      "updatedAt": "2026-06-24T12:43:09.250Z",
       "id": 242,
       "title": "Data Security",
       "title_cn": null,
@@ -651,8 +699,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-03-30T14:49:17.389Z",
         "updatedAt": "2026-03-30T14:49:17.389Z",
@@ -686,5 +736,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-05-07T10:42:34.312Z"
+  "updatedAt": "2026-06-28T01:35:45.383Z"
 }
