@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -79,6 +83,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:33.094Z",
-      "updatedAt": "2024-11-24T05:34:19.706Z",
+      "updatedAt": "2026-06-24T12:43:08.317Z",
       "id": 17,
       "title": "best no code tools",
       "title_cn": "最佳无代码工具",
@@ -105,6 +111,8 @@
       "title_ja": "最高のノーコードツール",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "ノーコード, ツール, ベスト",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -131,8 +139,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-11-23T17:30:26.602Z",
         "updatedAt": "2025-11-23T17:30:26.602Z",
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -157,6 +167,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:47.586Z",
-      "updatedAt": "2024-11-24T05:34:21.851Z",
+      "updatedAt": "2026-06-24T12:43:08.381Z",
       "id": 29,
       "title": "open-source software",
       "title_cn": "开源软件",
@@ -183,6 +195,8 @@
       "title_ja": "オープンソースソフトウェア",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "オープンソース, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -209,6 +223,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-08-19T13:06:20.537Z",
-      "updatedAt": "2024-11-24T05:34:26.612Z",
+      "updatedAt": "2026-06-24T12:43:08.509Z",
       "id": 55,
       "title": "rapid development",
       "title_cn": "快速开发",
@@ -235,6 +251,8 @@
       "title_ja": "迅速な開発",
       "description_ja": "リリースノートの内容はまだありません。",
       "keywords_ja": "開発, 迅速",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-09-07T04:15:44.223Z",
-      "updatedAt": "2024-11-24T05:34:27.719Z",
+      "updatedAt": "2026-06-24T12:43:08.534Z",
       "id": 61,
       "title": "rapid application development",
       "title_cn": "快速应用开发",
@@ -261,6 +279,8 @@
       "title_ja": "迅速なアプリケーション開発",
       "description_ja": "リリースノートの内容はまだありません。",
       "keywords_ja": "アプリケーション開発, 迅速な開発",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-09-30T01:09:43.000Z",
-      "updatedAt": "2024-11-24T05:34:29.201Z",
+      "updatedAt": "2026-06-24T12:43:08.556Z",
       "id": 69,
       "title": "Refine",
       "title_cn": "Refine",
@@ -287,6 +307,8 @@
       "title_ja": "洗練",
       "description_ja": "リファインは、プロセスや製品の質を向上させるための重要なステップです。",
       "keywords_ja": "洗練, 改善, 品質向上",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2025-11-23T17:30:03.445Z",
-      "updatedAt": "2025-11-23T17:30:03.445Z",
+      "updatedAt": "2026-06-24T12:43:09.267Z",
       "id": 246,
       "title": "POC",
       "title_cn": null,
@@ -313,8 +335,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-11-23T17:30:26.603Z",
         "updatedAt": "2025-11-23T17:30:26.603Z",
@@ -348,5 +372,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-21T14:52:25.103Z"
+  "updatedAt": "2026-06-28T01:35:50.617Z"
 }
