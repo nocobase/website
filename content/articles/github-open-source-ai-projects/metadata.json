@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -105,8 +111,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.858Z",
         "updatedAt": "2025-08-06T11:06:39.858Z",
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-08-08T10:46:52.588Z",
-      "updatedAt": "2024-11-24T05:34:24.197Z",
+      "updatedAt": "2026-06-24T12:43:08.445Z",
       "id": 42,
       "title": "github trends",
       "title_cn": "github 趋势",
@@ -131,6 +139,8 @@
       "title_ja": "GitHub トレンド",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2025-03-10T02:23:04.952Z",
-      "updatedAt": "2025-03-10T02:23:04.952Z",
+      "updatedAt": "2026-06-24T12:43:08.869Z",
       "id": 160,
       "title": "AI Assistant",
       "title_cn": "AI助手",
@@ -157,8 +167,10 @@
       "title_ja": "AIアシスタント",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.858Z",
         "updatedAt": "2025-08-06T11:06:39.858Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2025-05-21T06:05:10.575Z",
-      "updatedAt": "2025-05-21T06:05:10.575Z",
+      "updatedAt": "2026-06-24T12:43:08.976Z",
       "id": 181,
       "title": "AI system",
       "title_cn": "AI 系统",
@@ -183,8 +195,10 @@
       "title_ja": "AI システム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.858Z",
         "updatedAt": "2025-08-06T11:06:39.858Z",
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2025-07-30T02:36:20.891Z",
-      "updatedAt": "2025-07-30T02:36:20.891Z",
+      "updatedAt": "2026-06-24T12:43:09.117Z",
       "id": 212,
       "title": "AI automation tools",
       "title_cn": "AI 自动化工具",
@@ -209,8 +223,10 @@
       "title_ja": "AI 自動化ツール",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.858Z",
         "updatedAt": "2025-08-06T11:06:39.858Z",
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2025-08-06T10:59:21.721Z",
-      "updatedAt": "2025-08-12T11:34:48.156Z",
+      "updatedAt": "2026-06-24T12:43:09.130Z",
       "id": 215,
       "title": "OpenAI",
       "title_cn": "OpenAI",
@@ -235,8 +251,10 @@
       "title_ja": "OpenAI",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.861Z",
         "updatedAt": "2025-08-06T11:06:39.861Z",
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2025-08-06T11:00:33.673Z",
-      "updatedAt": "2025-08-12T11:36:04.980Z",
+      "updatedAt": "2026-06-24T12:43:09.135Z",
       "id": 216,
       "title": "Top GitHub AI Projects",
       "title_cn": "GitHub最佳开源AI项目",
@@ -261,8 +279,10 @@
       "title_ja": "AIプロジェクト",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-06T11:06:39.861Z",
         "updatedAt": "2025-08-06T11:06:39.861Z",
@@ -296,5 +316,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-03-12T06:30:15.629Z"
+  "updatedAt": "2026-06-28T01:36:03.743Z"
 }
