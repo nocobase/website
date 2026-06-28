@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-06-18T06:51:10.347Z",
-      "updatedAt": "2024-11-24T05:34:17.847Z",
+      "updatedAt": "2026-06-24T12:43:08.288Z",
       "id": 5,
       "title": "API Optimization",
       "title_cn": "API 优化",
@@ -79,6 +83,8 @@
       "title_ja": "API 最適化",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-06-23T04:01:54.838Z",
-      "updatedAt": "2024-11-24T05:34:18.022Z",
+      "updatedAt": "2026-06-24T12:43:08.290Z",
       "id": 8,
       "title": "Tech & Tutorials",
       "title_cn": "技术 & 教程",
@@ -105,6 +111,8 @@
       "title_ja": "テクノロジーとチュートリアル",
       "description_ja": "NocoBaseを習得し、アプリケーション開発プロセスを最適化するために設計された詳細なガイドと技術チュートリアルに飛び込んでください。",
       "keywords_ja": "NocoBase テクニカルチュートリアル, ノーコードチュートリアル, ローコードチュートリアル, ソフトウェア開発ガイド, テクニック, プログラミングチュートリアル, テクノロジーのハウツー, NocoBase 学習リソース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -147,9 +155,9 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2024-11-24T05:21:40.422Z",
+  "updatedAt": "2026-06-28T01:35:59.514Z",
   "author": "NocoBase team",
-  "ai_generated": null,
+  "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null
 }
