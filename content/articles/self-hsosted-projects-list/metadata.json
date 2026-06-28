@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -27,6 +27,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -53,6 +55,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -79,8 +83,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-09-10T12:51:30.869Z",
         "updatedAt": "2024-09-10T12:51:30.869Z",
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:31.643Z",
-      "updatedAt": "2024-11-24T05:34:20.930Z",
+      "updatedAt": "2026-06-24T12:43:08.357Z",
       "id": 24,
       "title": "Awesome Self-Hosted",
       "title_cn": "优秀的自托管",
@@ -105,6 +111,8 @@
       "title_ja": "素晴らしいセルフホスティング",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "セルフホスティング, 素晴らしい",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:50.151Z",
-      "updatedAt": "2024-11-24T05:34:21.125Z",
+      "updatedAt": "2026-06-24T12:43:08.362Z",
       "id": 25,
       "title": "self-hosted solutions",
       "title_cn": "自托管解决方案",
@@ -131,6 +139,8 @@
       "title_ja": "セルフホステッドソリューション",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -157,6 +167,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:19.605Z",
-      "updatedAt": "2024-11-24T05:34:21.484Z",
+      "updatedAt": "2026-06-24T12:43:08.371Z",
       "id": 27,
       "title": "privacy protection",
       "title_cn": "隐私保护",
@@ -183,6 +195,8 @@
       "title_ja": "プライバシー保護",
       "description_ja": "プライバシー保護に関する説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:32.769Z",
-      "updatedAt": "2024-11-24T05:34:21.674Z",
+      "updatedAt": "2026-06-24T12:43:08.376Z",
       "id": 28,
       "title": "customization",
       "title_cn": "定制化",
@@ -209,6 +223,8 @@
       "title_ja": "カスタマイズ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "カスタマイズ, 特徴",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-08-08T09:17:16.377Z",
-      "updatedAt": "2024-11-24T05:34:24.016Z",
+      "updatedAt": "2026-06-24T12:43:08.440Z",
       "id": 41,
       "title": "Self-hosted application statistics",
       "title_cn": "自托管应用统计",
@@ -235,6 +251,8 @@
       "title_ja": "セルフホステッドアプリケーション統計",
       "description_ja": "リリースノート",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2025-06-08T03:32:33.077Z",
-      "updatedAt": "2025-06-08T03:32:33.077Z",
+      "updatedAt": "2026-06-24T12:43:09.017Z",
       "id": 190,
       "title": "awesome selfhosted",
       "title_cn": "awesome selfhosted",
@@ -261,8 +279,10 @@
       "title_ja": "awesome selfhosted",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-06-08T03:34:30.164Z",
         "updatedAt": "2025-06-08T03:34:30.164Z",
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2025-06-08T03:32:49.849Z",
-      "updatedAt": "2025-06-08T03:32:49.849Z",
+      "updatedAt": "2026-06-24T12:43:09.022Z",
       "id": 191,
       "title": "awesome-selfhosted",
       "title_cn": "awesome-selfhosted",
@@ -287,8 +307,10 @@
       "title_ja": "awesome-selfhosted",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-06-08T03:34:30.165Z",
         "updatedAt": "2025-06-08T03:34:30.165Z",
@@ -318,7 +340,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-26T14:28:01.043Z",
+  "updatedAt": "2026-06-28T01:36:23.700Z",
   "author": "Zhang Lu",
   "ai_generated": false,
   "ai_generated_cn": null,
