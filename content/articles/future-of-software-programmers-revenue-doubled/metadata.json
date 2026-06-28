@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-23T04:03:19.249Z",
-      "updatedAt": "2026-01-20T12:51:55.263Z",
+      "updatedAt": "2026-06-24T12:43:08.293Z",
       "id": 9,
       "title": "Insights",
       "title_cn": "洞见",
@@ -27,8 +27,10 @@
       "title_ja": "インサイト",
       "description_ja": "AI、デジタル化、ノーコード、ローコード業界における専門家の知見、トレンド、ベストプラクティスを探求し、ビジネスソリューションにおいてNocoBaseの潜在能力を最大限に活用しましょう。",
       "keywords_ja": "NocoBase ノーコードインサイト, ノーコード開発, ノーコードトレンド, ノーコードプラットフォーム分析, ノーコードによるビジネス自動化, ノーコードケーススタディ, ノーコード成功事例",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-06-15T05:50:05.341Z",
         "updatedAt": "2026-06-15T05:50:05.341Z",
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2026-06-15T04:28:32.544Z",
-      "updatedAt": "2026-06-15T11:19:00.938Z",
+      "updatedAt": "2026-06-24T12:43:09.332Z",
       "id": 264,
       "title": "NocoBase stories",
       "title_cn": "NocoBase 故事",
@@ -53,8 +55,10 @@
       "title_ja": "NocoBaseストーリー",
       "description_ja": "NocoBaseのプロダクトとチームの歩み。主要なマイルストーン、製品のアップデート、そして開発の舞台裏にあるストーリーを記録しています。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-06-15T05:16:47.325Z",
         "updatedAt": "2026-06-15T05:16:47.325Z",
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2026-06-15T06:17:12.890Z",
-      "updatedAt": "2026-06-15T06:17:12.890Z",
+      "updatedAt": "2026-06-24T12:53:17.960Z",
       "id": 265,
       "title": "AI",
       "title_cn": "AI",
@@ -79,6 +83,8 @@
       "title_ja": "AI",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
       "createdById": 1,
       "updatedById": 1,
       "articlesTags": {
@@ -114,5 +120,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-06-15T11:36:43.792Z"
+  "updatedAt": "2026-06-28T01:35:59.840Z"
 }
