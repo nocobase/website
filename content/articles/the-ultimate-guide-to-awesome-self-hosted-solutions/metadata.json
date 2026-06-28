@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -27,6 +27,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -53,8 +55,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-07-30T08:34:33.354Z",
         "updatedAt": "2024-07-30T08:34:33.354Z",
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -79,6 +83,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -105,6 +111,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:31.643Z",
-      "updatedAt": "2024-11-24T05:34:20.930Z",
+      "updatedAt": "2026-06-24T12:43:08.357Z",
       "id": 24,
       "title": "Awesome Self-Hosted",
       "title_cn": "优秀的自托管",
@@ -131,6 +139,8 @@
       "title_ja": "素晴らしいセルフホスティング",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "セルフホスティング, 素晴らしい",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:50.151Z",
-      "updatedAt": "2024-11-24T05:34:21.125Z",
+      "updatedAt": "2026-06-24T12:43:08.362Z",
       "id": 25,
       "title": "self-hosted solutions",
       "title_cn": "自托管解决方案",
@@ -157,6 +167,8 @@
       "title_ja": "セルフホステッドソリューション",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -183,6 +195,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:19.605Z",
-      "updatedAt": "2024-11-24T05:34:21.484Z",
+      "updatedAt": "2026-06-24T12:43:08.371Z",
       "id": 27,
       "title": "privacy protection",
       "title_cn": "隐私保护",
@@ -209,6 +223,8 @@
       "title_ja": "プライバシー保護",
       "description_ja": "プライバシー保護に関する説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:32.769Z",
-      "updatedAt": "2024-11-24T05:34:21.674Z",
+      "updatedAt": "2026-06-24T12:43:08.376Z",
       "id": 28,
       "title": "customization",
       "title_cn": "定制化",
@@ -235,6 +251,8 @@
       "title_ja": "カスタマイズ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "カスタマイズ, 特徴",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:47.586Z",
-      "updatedAt": "2024-11-24T05:34:21.851Z",
+      "updatedAt": "2026-06-24T12:43:08.381Z",
       "id": 29,
       "title": "open-source software",
       "title_cn": "开源软件",
@@ -261,6 +279,8 @@
       "title_ja": "オープンソースソフトウェア",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "オープンソース, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -287,6 +307,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:47.243Z",
-      "updatedAt": "2024-11-24T05:34:22.202Z",
+      "updatedAt": "2026-06-24T12:43:08.391Z",
       "id": 31,
       "title": "Nextcloud",
       "title_cn": "Nextcloud",
@@ -313,6 +335,8 @@
       "title_ja": "Nextcloud",
       "description_ja": "Nextcloudは、データのプライバシーとセキュリティを重視した次世代のクラウドストレージソリューションです。",
       "keywords_ja": "クラウドストレージ, プライバシー, セキュリティ",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:54.276Z",
-      "updatedAt": "2024-11-24T05:34:22.373Z",
+      "updatedAt": "2026-06-24T12:43:08.395Z",
       "id": 32,
       "title": "Ghost",
       "title_cn": "Ghost",
@@ -339,6 +363,8 @@
       "title_ja": "ゴースト",
       "description_ja": "説明はありません",
       "keywords_ja": "ゴースト, 霊, 幽霊",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2024-08-08T09:16:57.543Z",
-      "updatedAt": "2024-11-24T05:34:23.818Z",
+      "updatedAt": "2026-06-24T12:43:08.435Z",
       "id": 40,
       "title": "elser self-hosted",
       "title_cn": "elser自托管",
@@ -365,6 +391,8 @@
       "title_ja": "elserセルフホスティング",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "elser, セルフホスティング",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2024-08-08T09:17:16.377Z",
-      "updatedAt": "2024-11-24T05:34:24.016Z",
+      "updatedAt": "2026-06-24T12:43:08.440Z",
       "id": 41,
       "title": "Self-hosted application statistics",
       "title_cn": "自托管应用统计",
@@ -391,6 +419,8 @@
       "title_ja": "セルフホステッドアプリケーション統計",
       "description_ja": "リリースノート",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -422,7 +452,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-20T15:12:56.564Z",
+  "updatedAt": "2026-06-28T01:36:28.098Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
