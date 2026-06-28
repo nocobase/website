@@ -12,6 +12,33 @@
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### [v2.1.12](https://www.nocobase.com/ja/blog/v2.1.12)
+
+*リリース日：2026-06-26*
+
+### 🚀 機能改善
+
+* **[flow-engine]** RunJS がリソース API でデータを更新した後、ポップアップを閉じた際に関連データブロックが自動更新されるようにしました。 ([#9873](https://github.com/nocobase/nocobase/pull/9873)) by @gchust
+* **[client-v2]** JS block でブロックカードを表示するかどうかを設定できるようにしました。 ([#9897](https://github.com/nocobase/nocobase/pull/9897)) by @gchust
+
+### 🐛 不具合修正
+
+* **[client-v2]**
+  * モバイル埋め込みページで、操作にアイコンのみモードを有効にしているもののアイコンが設定されていない場合、リンク操作のテキストが表示されない問題を修正しました。 ([#9921](https://github.com/nocobase/nocobase/pull/9921)) by @katherinehhh
+  * v2 のテーブル行操作ボタンによって行の高さが変わる問題を修正しました。 ([#9866](https://github.com/nocobase/nocobase/pull/9866)) by @jiannx
+  * v2 フォームの送信成功後、遷移リンクから保存済みのレスポンス結果レコードを参照できない問題を修正しました。 ([#9907](https://github.com/nocobase/nocobase/pull/9907)) by @katherinehhh
+  * テーブルブロック設定で、ドラッグソート用フィールドが削除された後に実行エラーが発生する問題を修正しました。また、ドラッグソート用フィールド設定をクリアできるようにしました。 ([#9867](https://github.com/nocobase/nocobase/pull/9867)) by @jiannx
+* **[client]** 一部の文言ミスを修正しました。 ([#9905](https://github.com/nocobase/nocobase/pull/9905)) by @Molunerfinn
+* **[flow-engine]** runjs で ctx.openView の一部パラメータが有効にならない問題を修正しました。 ([#9883](https://github.com/nocobase/nocobase/pull/9883)) by @gchust
+* **[cli]** cli で pnpm と yarn による更新に対応しました。 ([#9912](https://github.com/nocobase/nocobase/pull/9912)) by @chenos
+* **[AIワーカー]**
+  * AI データソースのカード一覧が、異なるビューポート幅に合わせて自動調整されない問題を修正しました。 ([#9924](https://github.com/nocobase/nocobase/pull/9924)) by @cgyrock
+  * 異常なツール呼び出し履歴が後続の会話で繰り返し送信され、AIワーカーの返信が失敗する問題を修正しました。 ([#9900](https://github.com/nocobase/nocobase/pull/9900)) by @cgyrock
+* **[ブロック：iframe]** 一般ユーザーが v2 の iframe HTML モードブロックを表示した際に 403 エラーになる問題を修正しました。 ([#9889](https://github.com/nocobase/nocobase/pull/9889)) by @jiannx
+* **[AI: ナレッジベース]** バージョン管理とナレッジベースのドキュメント一覧で、内容が長い場合やビューポートの高さが不足している場合にレイアウトがはみ出す問題を修正しました。 by @cgyrock
+* **[マイグレーション管理]** データベース同期テーブルのマイグレーションルール処理に関する問題を修正しました。 by @2013xile
+* **[履歴]** 一部のデータテーブルで、変更内容が履歴に保存されない場合がある問題を修正しました。 by @2013xile
+
 ### [v2.1.11](https://www.nocobase.com/ja/blog/v2.1.11)
 
 *リリース日：2026-06-25*
@@ -34,7 +61,6 @@
 * **[AI: ナレッジベース]** AI ナレッジベースのドキュメントテーブルとヒットテスト結果カードで、狭い画面や長いファイル名の場合に内容がはみ出す問題を修正しました。 by @cgyrock
 * **[バージョン管理]** バージョン管理で選択したデータテーブルをバックアップする際、ビューや関連するデータベースオブジェクトが含まれていると復元に失敗する問題を修正しました。 by @cgyrock
 * **[マルチスペース]** スペース設定ページで、最初の 20 件のスペースレコードしか読み込めない問題を修正しました。 by @jiannx
-
 
 ### [v2.1.10](https://www.nocobase.com/ja/blog/v2.1.10)
 
@@ -107,7 +133,6 @@
 * **[AI: ナレッジベース]** AI ナレッジベースのドキュメントテーブルとヒットテスト結果カードで、狭い画面や長いファイル名の場合に内容がはみ出す問題を修正しました。 by @cgyrock
 * **[ワークフロー：承認]** 承認アクションノードの検証を修正しました。`applyDetail` または `approvalUid` に `null` を渡せるようにし、文字列参照が渡された場合のみ処理するようにしました。 by @mytharcher
 
-
 ### [v2.2.0-beta.6](https://www.nocobase.com/ja/blog/v2.2.0-beta.6)
 
 *リリース日：2026-06-22*
@@ -167,6 +192,27 @@
 ## develop
 
 ![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
+
+### [v2.2.0-alpha.3](https://www.nocobase.com/ja/blog/v2.2.0-alpha.3)
+
+*リリース日：2026-06-27*
+
+### 🚀 機能改善
+
+* **[client-v2]** JS block でブロックカードを表示するかどうかを設定できるようにしました。 ([#9897](https://github.com/nocobase/nocobase/pull/9897)) by @gchust
+* **[cli]** OAuth デバイス認可モードに対応しました。 ([#9922](https://github.com/nocobase/nocobase/pull/9922)) by @chenos
+* **[フォーム下書き]** フォーム下書きプラグインを client v2 に移行しました。 ([#9910](https://github.com/nocobase/nocobase/pull/9910)) by @gchust
+
+### 🐛 不具合修正
+
+* **[client-v2]**
+  * モバイル埋め込みページで、操作にアイコンのみモードを有効にしているもののアイコンが設定されていない場合、リンク操作のテキストが表示されない問題を修正しました。 ([#9921](https://github.com/nocobase/nocobase/pull/9921)) by @katherinehhh
+  * モバイル埋め込みページで、操作にアイコンのみモードを有効にしているもののアイコンが設定されていない場合、リンク操作のテキストが表示されない問題を修正しました。 ([#9919](https://github.com/nocobase/nocobase/pull/9919)) by @katherinehhh
+* **[flow-engine]** モバイル端末のハーフモーダルで内容が長い場合に、スクロールできない問題を修正しました。 ([#9871](https://github.com/nocobase/nocobase/pull/9871)) by @zhangzhonghe
+* **[AIワーカー]** AI データソースのカード一覧が、異なるビューポート幅に合わせて自動調整されない問題を修正しました。 ([#9924](https://github.com/nocobase/nocobase/pull/9924)) by @cgyrock
+* **[マイグレーション管理]** データベース同期テーブルのマイグレーションルール処理に関する問題を修正しました。 by @2013xile
+* **[履歴]** 一部のデータテーブルで、変更内容が履歴に保存されない場合がある問題を修正しました。 by @2013xile
+* **[WeCom]** Client V2 で WeCom プラグインを有効にした後、ルーティングメニューを切り替える際にページが一時的に白画面になる問題を修正しました。 by @2013xile
 
 ### [v2.2.0-alpha.2](https://www.nocobase.com/ja/blog/v2.2.0-alpha.2)
 
