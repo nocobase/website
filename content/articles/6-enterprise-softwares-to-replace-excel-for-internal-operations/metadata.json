@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -79,6 +83,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-06T09:45:03.074Z",
-      "updatedAt": "2024-11-24T05:34:19.887Z",
+      "updatedAt": "2026-06-24T12:43:08.322Z",
       "id": 18,
       "title": "open source low code platform",
       "title_cn": "开源低代码平台",
@@ -105,6 +111,8 @@
       "title_ja": "オープンソースのローコードプラットフォーム",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -131,8 +139,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -157,6 +167,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:31.643Z",
-      "updatedAt": "2024-11-24T05:34:20.930Z",
+      "updatedAt": "2026-06-24T12:43:08.357Z",
       "id": 24,
       "title": "Awesome Self-Hosted",
       "title_cn": "优秀的自托管",
@@ -183,6 +195,8 @@
       "title_ja": "素晴らしいセルフホスティング",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "セルフホスティング, 素晴らしい",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-07-30T07:16:50.151Z",
-      "updatedAt": "2024-11-24T05:34:21.125Z",
+      "updatedAt": "2026-06-24T12:43:08.362Z",
       "id": 25,
       "title": "self-hosted solutions",
       "title_cn": "自托管解决方案",
@@ -209,6 +223,8 @@
       "title_ja": "セルフホステッドソリューション",
       "description_ja": "説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -235,6 +251,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:19.605Z",
-      "updatedAt": "2024-11-24T05:34:21.484Z",
+      "updatedAt": "2026-06-24T12:43:08.371Z",
       "id": 27,
       "title": "privacy protection",
       "title_cn": "隐私保护",
@@ -261,6 +279,8 @@
       "title_ja": "プライバシー保護",
       "description_ja": "プライバシー保護に関する説明はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-12-12T02:09:20.345Z",
-      "updatedAt": "2024-12-12T02:09:20.345Z",
+      "updatedAt": "2026-06-24T12:43:08.628Z",
       "id": 95,
       "title": "open source crm",
       "title_cn": "开源crm",
@@ -287,8 +307,10 @@
       "title_ja": "オープンソースCrm",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2024-12-26T09:38:46.358Z",
-      "updatedAt": "2024-12-26T09:38:46.358Z",
+      "updatedAt": "2026-06-24T12:43:08.660Z",
       "id": 104,
       "title": "open-source dashboard platforms",
       "title_cn": "开源后台平台",
@@ -313,8 +335,10 @@
       "title_ja": "オープンソースダッシュボードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2025-03-06T15:43:35.040Z",
-      "updatedAt": "2025-03-06T15:43:35.040Z",
+      "updatedAt": "2026-06-24T12:43:08.812Z",
       "id": 147,
       "title": "SQL operation",
       "title_cn": "SQL 操作",
@@ -339,8 +363,10 @@
       "title_ja": "SQL操作",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2025-03-06T15:44:04.803Z",
-      "updatedAt": "2025-03-06T15:44:04.803Z",
+      "updatedAt": "2026-06-24T12:43:08.817Z",
       "id": 148,
       "title": "many-to-many relationship",
       "title_cn": "多对多关系",
@@ -365,8 +391,10 @@
       "title_ja": "多対多関係",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -376,7 +404,7 @@
     },
     {
       "createdAt": "2025-03-06T15:44:30.005Z",
-      "updatedAt": "2025-03-06T15:44:30.005Z",
+      "updatedAt": "2026-06-24T12:43:08.822Z",
       "id": 149,
       "title": "data table design",
       "title_cn": "数据表设计",
@@ -391,8 +419,10 @@
       "title_ja": "データテーブル設計",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -402,7 +432,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:23.796Z",
-      "updatedAt": "2025-03-07T06:00:23.796Z",
+      "updatedAt": "2026-06-24T12:43:08.832Z",
       "id": 151,
       "title": "customer relationship management",
       "title_cn": "客户关系管理",
@@ -417,8 +447,10 @@
       "title_ja": "顧客関係管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -428,7 +460,7 @@
     },
     {
       "createdAt": "2025-11-14T05:28:06.265Z",
-      "updatedAt": "2025-11-14T05:28:06.265Z",
+      "updatedAt": "2026-06-24T12:43:09.258Z",
       "id": 244,
       "title": "AI Tools",
       "title_cn": null,
@@ -443,8 +475,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -454,7 +488,7 @@
     },
     {
       "createdAt": "2025-11-14T05:28:18.702Z",
-      "updatedAt": "2025-11-14T05:28:18.702Z",
+      "updatedAt": "2026-06-24T12:43:09.262Z",
       "id": 245,
       "title": "Self-Hosted",
       "title_cn": null,
@@ -469,8 +503,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -480,7 +516,7 @@
     },
     {
       "createdAt": "2025-11-28T06:28:26.012Z",
-      "updatedAt": "2025-11-28T06:28:26.012Z",
+      "updatedAt": "2026-06-24T12:43:09.271Z",
       "id": 247,
       "title": "Google Sheets",
       "title_cn": null,
@@ -495,8 +531,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 22,
-      "updatedById": 22,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -506,7 +544,7 @@
     },
     {
       "createdAt": "2025-12-04T03:13:32.999Z",
-      "updatedAt": "2025-12-04T03:13:32.999Z",
+      "updatedAt": "2026-06-24T12:43:09.276Z",
       "id": 248,
       "title": "ERP",
       "title_cn": "ERP",
@@ -521,8 +559,10 @@
       "title_ja": "ERP",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -532,7 +572,7 @@
     },
     {
       "createdAt": "2025-12-14T12:43:16.075Z",
-      "updatedAt": "2025-12-14T12:43:16.075Z",
+      "updatedAt": "2026-06-24T12:43:09.281Z",
       "id": 249,
       "title": "Excel",
       "title_cn": "Excel",
@@ -547,8 +587,10 @@
       "title_ja": "Excel",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-01-10T16:29:26.343Z",
         "updatedAt": "2026-01-10T16:29:26.343Z",
@@ -582,5 +624,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-21T15:17:18.151Z"
+  "updatedAt": "2026-06-28T01:35:50.100Z"
 }
