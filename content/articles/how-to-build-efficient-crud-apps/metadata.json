@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -27,6 +27,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-06T09:42:51.949Z",
-      "updatedAt": "2024-11-24T05:34:18.795Z",
+      "updatedAt": "2026-06-24T12:43:08.300Z",
       "id": 12,
       "title": "Low-code vs no-code",
       "title_cn": "低代码 vs 无代码",
@@ -53,6 +55,8 @@
       "title_ja": "ローコードとノーコード",
       "description_ja": "説明はありません。",
       "keywords_ja": "ローコード, ノーコード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -105,8 +111,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2024-08-07T16:27:26.378Z",
         "updatedAt": "2024-08-07T16:27:26.378Z",
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -131,6 +139,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-08-07T16:21:20.686Z",
-      "updatedAt": "2024-11-24T05:34:23.089Z",
+      "updatedAt": "2026-06-24T12:43:08.415Z",
       "id": 36,
       "title": "CRUD",
       "title_cn": "CRUD",
@@ -157,6 +167,8 @@
       "title_ja": "CRUD",
       "description_ja": "CRUD（作成、読み取り、更新、削除）操作に関する基本的な概念です。",
       "keywords_ja": "CRUD, データ操作, 基本概念",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-08-07T16:21:37.680Z",
-      "updatedAt": "2024-11-24T05:34:23.276Z",
+      "updatedAt": "2026-06-24T12:43:08.420Z",
       "id": 37,
       "title": "CRUD app",
       "title_cn": "CRUD app",
@@ -183,6 +195,8 @@
       "title_ja": "CRUDアプリ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "CRUD, アプリ",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-08-07T16:22:07.324Z",
-      "updatedAt": "2024-11-24T05:34:23.443Z",
+      "updatedAt": "2026-06-24T12:43:08.424Z",
       "id": 38,
       "title": "CRUD operations",
       "title_cn": "CRUD 操作",
@@ -209,6 +223,8 @@
       "title_ja": "CRUD操作",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "CRUD, 操作",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-08-07T16:22:18.992Z",
-      "updatedAt": "2024-11-24T05:34:23.634Z",
+      "updatedAt": "2026-06-24T12:43:08.429Z",
       "id": 39,
       "title": "crud ops",
       "title_cn": "crud ops",
@@ -235,6 +251,8 @@
       "title_ja": "CRUD操作",
       "description_ja": "説明はありません。",
       "keywords_ja": "CRUD, 操作",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2025-06-08T04:15:37.716Z",
-      "updatedAt": "2025-06-08T04:15:37.716Z",
+      "updatedAt": "2026-06-24T12:43:09.026Z",
       "id": 192,
       "title": "crud application",
       "title_cn": "crud 应用",
@@ -261,8 +279,10 @@
       "title_ja": "CRUDアプリケーション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-06-08T06:36:40.826Z",
         "updatedAt": "2025-06-08T06:36:40.826Z",
@@ -292,7 +312,7 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-20T15:20:15.227Z",
+  "updatedAt": "2026-06-28T01:36:05.361Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
