@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -27,6 +27,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -53,8 +55,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-21T05:50:08.522Z",
         "updatedAt": "2025-08-21T05:50:08.522Z",
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:05.893Z",
-      "updatedAt": "2024-11-24T05:34:21.310Z",
+      "updatedAt": "2026-06-24T12:43:08.367Z",
       "id": 26,
       "title": "data control",
       "title_cn": "数据控制",
@@ -79,6 +83,8 @@
       "title_ja": "データ制御",
       "description_ja": "このセクションでは、データ制御の方法について説明します。",
       "keywords_ja": "データ, 制御, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:01.244Z",
-      "updatedAt": "2024-11-24T05:34:24.380Z",
+      "updatedAt": "2026-06-24T12:43:08.449Z",
       "id": 43,
       "title": "Data Model",
       "title_cn": "数据模型",
@@ -105,6 +111,8 @@
       "title_ja": "データモデル",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2025-03-06T15:27:06.442Z",
-      "updatedAt": "2025-03-06T15:27:06.442Z",
+      "updatedAt": "2026-06-24T12:43:08.797Z",
       "id": 144,
       "title": "data visualization",
       "title_cn": "数据可视化",
@@ -131,8 +139,10 @@
       "title_ja": "データ可視化",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-21T05:50:08.521Z",
         "updatedAt": "2025-08-21T05:50:08.521Z",
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2025-05-26T10:22:05.981Z",
-      "updatedAt": "2025-05-26T10:22:05.981Z",
+      "updatedAt": "2026-06-24T12:43:08.990Z",
       "id": 184,
       "title": "Data Integration Platforms",
       "title_cn": "数据集成平台",
@@ -157,8 +167,10 @@
       "title_ja": "データ統合プラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-21T05:50:08.521Z",
         "updatedAt": "2025-08-21T05:50:08.521Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2025-08-09T12:10:30.598Z",
-      "updatedAt": "2025-08-09T12:10:30.598Z",
+      "updatedAt": "2026-06-24T12:43:09.139Z",
       "id": 217,
       "title": "Database Tool",
       "title_cn": "数据库工具",
@@ -183,8 +195,10 @@
       "title_ja": "データベースツール",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-21T05:50:08.522Z",
         "updatedAt": "2025-08-21T05:50:08.522Z",
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2025-08-21T05:49:52.185Z",
-      "updatedAt": "2025-08-21T05:49:52.185Z",
+      "updatedAt": "2026-06-24T12:43:09.180Z",
       "id": 226,
       "title": "data app",
       "title_cn": null,
@@ -209,8 +223,10 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-21T05:50:08.522Z",
         "updatedAt": "2025-08-21T05:50:08.522Z",
@@ -244,5 +260,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-26T13:18:02.628Z"
+  "updatedAt": "2026-06-28T01:36:13.851Z"
 }
