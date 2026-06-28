@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -79,6 +83,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-06-24T12:43:08.333Z",
       "id": 19,
       "title": "News",
       "title_cn": "资讯",
@@ -105,8 +111,10 @@
       "title_ja": "ニュース",
       "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
       "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.383Z",
         "updatedAt": "2025-08-26T02:44:41.383Z",
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2025-05-16T01:26:41.659Z",
-      "updatedAt": "2025-05-16T01:26:41.659Z",
+      "updatedAt": "2026-06-24T12:43:08.940Z",
       "id": 175,
       "title": "Ticketing System",
       "title_cn": "工单系统",
@@ -131,8 +139,10 @@
       "title_ja": "チケットシステム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.383Z",
         "updatedAt": "2025-08-26T02:44:41.383Z",
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2025-05-16T01:27:46.025Z",
-      "updatedAt": "2025-05-16T01:27:46.025Z",
+      "updatedAt": "2026-06-24T12:43:08.944Z",
       "id": 176,
       "title": "IT Ticketing System",
       "title_cn": "IT 工单系统",
@@ -157,8 +167,10 @@
       "title_ja": "IT チケットシステム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.383Z",
         "updatedAt": "2025-08-26T02:44:41.383Z",
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2025-05-16T01:29:04.660Z",
-      "updatedAt": "2025-05-16T01:29:04.660Z",
+      "updatedAt": "2026-06-24T12:43:08.949Z",
       "id": 177,
       "title": "Customer Service Ticket System",
       "title_cn": "客服工单系统",
@@ -183,8 +195,10 @@
       "title_ja": "カスタマーサポートチケットシステム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.383Z",
         "updatedAt": "2025-08-26T02:44:41.383Z",
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2025-08-26T02:42:04.888Z",
-      "updatedAt": "2025-08-26T02:42:04.888Z",
+      "updatedAt": "2026-06-24T12:43:09.185Z",
       "id": 227,
       "title": "ITSM",
       "title_cn": "ITSM",
@@ -209,8 +223,10 @@
       "title_ja": "ITSM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.383Z",
         "updatedAt": "2025-08-26T02:44:41.383Z",
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2025-08-26T02:43:36.037Z",
-      "updatedAt": "2025-08-26T02:43:36.037Z",
+      "updatedAt": "2026-06-24T12:43:09.189Z",
       "id": 228,
       "title": "ServiceNow open source alternatives",
       "title_cn": "ServiceNow 开源替代",
@@ -235,8 +251,10 @@
       "title_ja": "ServiceNowオープンソース代替",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-08-26T02:44:41.384Z",
         "updatedAt": "2025-08-26T02:44:41.384Z",
@@ -270,5 +288,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-26T13:15:43.190Z"
+  "updatedAt": "2026-06-28T01:36:23.834Z"
 }
