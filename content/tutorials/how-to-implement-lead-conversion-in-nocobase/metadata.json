@@ -8,19 +8,19 @@
   "description_ja": "このチュートリアルでは、NocoBaseでCRMのリード変換を実装する方法を詳細に説明します。必要なコレクションの作成、データ管理ページの構成、変換プロセスの設計、および関連管理の設定をカバーし、完全なビジネスプロセスを構築するのに役立ちます。",
   "slug": "how-to-implement-lead-conversion-in-nocobase",
   "publishedAt": "2025-02-26T07:55:06.634Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
-    "updatedAt": "2025-02-26T08:08:16.796Z",
+    "updatedAt": "2025-09-29T11:07:32.310Z",
     "description": "By showcasing concise examples and tips based on real-world use cases, you’ll quickly gain familiarity with NocoBase’s core features and best practices—enabling you to get started and develop efficiently.",
     "description_cn": "旨在通过简洁的小需求示例与小技巧分享，帮助你快速熟悉并掌握 NocoBase 的核心功能与最佳实践，让你轻松上手、高效开发。",
     "id": 4,
-    "title": "Tips & Tricks",
-    "title_cn": "实用技巧",
+    "title": "Tips & Tricks (1.0)",
+    "title_cn": "实用技巧 (1.0)",
     "status": "published",
-    "sort": 20,
+    "sort": 300,
     "slug": "tips-tricks",
-    "title_ja": "ヒントとコツ",
+    "title_ja": "ヒントとコツ (1.0)",
     "description_ja": "シンプルな小規模ニーズの例やちょっとしたテクニックを紹介しながら、NocoBaseのコア機能とベストプラクティスを手軽に習得できるようサポートします。これにより、スムーズに使い始められ、効率的な開発を実現できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -96,6 +100,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -122,6 +128,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -148,6 +156,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -174,6 +184,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-08-18T05:23:45.988Z",
-      "updatedAt": "2024-11-24T05:34:25.888Z",
+      "updatedAt": "2026-06-24T12:43:08.488Z",
       "id": 51,
       "title": "business process management",
       "title_cn": "业务流程管理",
@@ -200,6 +212,8 @@
       "title_ja": "ビジネスプロセスマネジメント",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "ビジネス, プロセス, マネジメント",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2024-08-29T17:09:55.794Z",
-      "updatedAt": "2024-11-24T05:34:27.211Z",
+      "updatedAt": "2026-06-24T12:43:08.523Z",
       "id": 58,
       "title": "low code crm",
       "title_cn": "low code crm",
@@ -226,6 +240,8 @@
       "title_ja": "ローコードCRM",
       "description_ja": "説明を追加してください。",
       "keywords_ja": "ローコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2024-08-29T17:10:24.642Z",
-      "updatedAt": "2024-11-24T05:34:27.549Z",
+      "updatedAt": "2026-06-24T12:43:08.531Z",
       "id": 60,
       "title": "no code crm",
       "title_cn": "no code crm",
@@ -252,6 +268,8 @@
       "title_ja": "ノーコードCRM",
       "description_ja": "ノーコードCRMの説明をここに追加してください。",
       "keywords_ja": "ノーコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -278,6 +296,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -289,7 +309,7 @@
     },
     {
       "createdAt": "2024-12-12T02:09:20.345Z",
-      "updatedAt": "2024-12-12T02:09:20.345Z",
+      "updatedAt": "2026-06-24T12:43:08.628Z",
       "id": 95,
       "title": "open source crm",
       "title_cn": "开源crm",
@@ -304,8 +324,10 @@
       "title_ja": "オープンソースCrm",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:59:54.830Z",
         "updatedAt": "2025-03-07T05:59:54.830Z",
@@ -315,7 +337,7 @@
     },
     {
       "createdAt": "2025-01-05T07:16:33.554Z",
-      "updatedAt": "2025-01-05T07:16:33.554Z",
+      "updatedAt": "2026-06-24T12:43:08.669Z",
       "id": 107,
       "title": "Custom CRM",
       "title_cn": "定制 CRM",
@@ -330,8 +352,10 @@
       "title_ja": "カスタムCRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:59:54.830Z",
         "updatedAt": "2025-03-07T05:59:54.830Z",
@@ -341,7 +365,7 @@
     },
     {
       "createdAt": "2025-01-14T05:06:54.673Z",
-      "updatedAt": "2025-01-14T05:06:54.673Z",
+      "updatedAt": "2026-06-24T12:43:08.675Z",
       "id": 109,
       "title": "github crm",
       "title_cn": "github crm",
@@ -356,8 +380,10 @@
       "title_ja": "github crm",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:59:54.830Z",
         "updatedAt": "2025-03-07T05:59:54.830Z",
@@ -367,7 +393,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:23.796Z",
-      "updatedAt": "2025-03-07T06:00:23.796Z",
+      "updatedAt": "2026-06-24T12:43:08.832Z",
       "id": 151,
       "title": "customer relationship management",
       "title_cn": "客户关系管理",
@@ -382,8 +408,10 @@
       "title_ja": "顧客関係管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T06:01:17.039Z",
         "updatedAt": "2025-03-07T06:01:17.039Z",
@@ -393,7 +421,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:38.020Z",
-      "updatedAt": "2025-03-07T06:00:38.020Z",
+      "updatedAt": "2026-06-24T12:43:08.837Z",
       "id": 152,
       "title": "CRM",
       "title_cn": "CRM",
@@ -408,8 +436,10 @@
       "title_ja": "CRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T06:01:17.039Z",
         "updatedAt": "2025-03-07T06:01:17.039Z",
@@ -419,7 +449,7 @@
     },
     {
       "createdAt": "2025-03-07T06:01:06.300Z",
-      "updatedAt": "2025-03-07T06:01:06.300Z",
+      "updatedAt": "2026-06-24T12:43:08.841Z",
       "id": 153,
       "title": "lead conversion",
       "title_cn": "线索转化",
@@ -434,8 +464,10 @@
       "title_ja": "リード変換",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T06:01:17.039Z",
         "updatedAt": "2025-03-07T06:01:17.039Z",
@@ -444,5 +476,5 @@
       }
     }
   ],
-  "updatedAt": "2025-07-16T09:57:40.841Z"
+  "updatedAt": "2026-07-02T12:32:10.419Z"
 }
