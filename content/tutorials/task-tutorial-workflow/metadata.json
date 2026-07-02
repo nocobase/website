@@ -8,19 +8,19 @@
   "description_ja": "本章では、NocoBaseでワークフローを作成および構成し、タスクの担当者が変更された際にシステム通知を自動的に送信する方法を紹介し、チームの協力効率を高めます。",
   "slug": "task-tutorial-workflow",
   "publishedAt": "2024-11-01T05:47:40.953Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
-    "updatedAt": "2024-12-04T17:32:53.588Z",
+    "updatedAt": "2025-09-29T11:07:23.695Z",
     "description": "Build an easy task management system with NocoBase through hands-on project tutorials. Master essential features like data model, block & action, role-based permissions, and workflows.",
     "description_cn": "通过实战，带你使用 NocoBase 构建一个简单的任务管理系统。掌握数据建模、区块和操作、基于角色的权限控制、工作流等关键功能。",
     "id": 1,
-    "title": "Task Management System",
-    "title_cn": "任务管理系统",
+    "title": "Task Management System (1.0)",
+    "title_cn": "任务管理系统 (1.0)",
     "status": "published",
-    "sort": 1,
+    "sort": 100,
     "slug": "task-management",
-    "title_ja": "タスク管理システム",
+    "title_ja": "タスク管理システム (1.0)",
     "description_ja": "ハンズオンプロジェクトチュートリアルを通じて、NocoBaseを使って簡単なタスク管理システムを構築します。データモデル、ブロックやアクション、役割ベースの権限、ワークフローなど、重要な機能を学びましょう。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -96,6 +100,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -122,6 +128,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -148,6 +156,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -174,6 +184,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-08-18T05:23:45.988Z",
-      "updatedAt": "2024-11-24T05:34:25.888Z",
+      "updatedAt": "2026-06-24T12:43:08.488Z",
       "id": 51,
       "title": "business process management",
       "title_cn": "业务流程管理",
@@ -200,6 +212,8 @@
       "title_ja": "ビジネスプロセスマネジメント",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "ビジネス, プロセス, マネジメント",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2024-09-14T05:16:34.627Z",
-      "updatedAt": "2024-11-24T05:34:28.087Z",
+      "updatedAt": "2026-06-24T12:43:08.538Z",
       "id": 63,
       "title": "Project Management",
       "title_cn": "项目管理",
@@ -226,6 +240,8 @@
       "title_ja": "プロジェクト管理",
       "description_ja": "リリースノートの詳細はまだありません。",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2024-09-25T02:37:26.118Z",
-      "updatedAt": "2024-11-24T05:34:28.633Z",
+      "updatedAt": "2026-06-24T12:43:08.548Z",
       "id": 66,
       "title": "Customizable Workflows",
       "title_cn": "定制化工作流程",
@@ -252,6 +268,8 @@
       "title_ja": "カスタマイズ可能なワークフロー",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "カスタマイズ, ワークフロー",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2024-10-18T02:19:59.834Z",
-      "updatedAt": "2024-11-24T05:34:30.151Z",
+      "updatedAt": "2026-06-24T12:43:08.568Z",
       "id": 74,
       "title": "Workflow Automation",
       "title_cn": "工作流自动化",
@@ -278,6 +296,8 @@
       "title_ja": "ワークフローの自動化",
       "description_ja": "このセクションでは、ワークフローの自動化の利点と実装方法について説明します。",
       "keywords_ja": "自動化, ワークフロー, 効率化",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -289,7 +309,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -304,6 +324,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -315,7 +337,7 @@
     },
     {
       "createdAt": "2024-11-01T03:56:44.672Z",
-      "updatedAt": "2024-11-24T05:34:30.880Z",
+      "updatedAt": "2026-06-24T12:43:08.581Z",
       "id": 78,
       "title": "Task Management",
       "title_cn": "任务管理",
@@ -330,6 +352,8 @@
       "title_ja": "タスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -341,7 +365,7 @@
     },
     {
       "createdAt": "2024-11-12T06:38:38.202Z",
-      "updatedAt": "2024-11-24T05:34:31.593Z",
+      "updatedAt": "2026-06-24T12:43:08.593Z",
       "id": 82,
       "title": "task management system",
       "title_cn": "任务管理系统",
@@ -356,6 +380,8 @@
       "title_ja": "タスク管理システム",
       "description_ja": "説明はありません",
       "keywords_ja": "タスク, 管理, システム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -367,7 +393,7 @@
     },
     {
       "createdAt": "2025-03-06T08:03:45.931Z",
-      "updatedAt": "2025-03-06T08:03:45.931Z",
+      "updatedAt": "2026-06-24T12:43:08.719Z",
       "id": 128,
       "title": "workflow",
       "title_cn": "工作流",
@@ -382,8 +408,10 @@
       "title_ja": "ワークフロー",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:08:38.652Z",
         "updatedAt": "2025-03-06T15:08:38.652Z",
@@ -393,7 +421,7 @@
     },
     {
       "createdAt": "2025-03-06T14:27:38.122Z",
-      "updatedAt": "2025-03-06T14:27:38.122Z",
+      "updatedAt": "2026-06-24T12:43:08.725Z",
       "id": 130,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -408,8 +436,10 @@
       "title_ja": "チーム協力",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:08:38.653Z",
         "updatedAt": "2025-03-06T15:08:38.653Z",
@@ -419,7 +449,7 @@
     },
     {
       "createdAt": "2025-03-06T15:02:03.308Z",
-      "updatedAt": "2025-03-06T15:02:03.308Z",
+      "updatedAt": "2026-06-24T12:43:08.750Z",
       "id": 135,
       "title": "user management",
       "title_cn": "用户管理",
@@ -434,8 +464,10 @@
       "title_ja": "ユーザー管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:08:38.652Z",
         "updatedAt": "2025-03-06T15:08:38.652Z",
@@ -445,7 +477,7 @@
     },
     {
       "createdAt": "2025-03-06T15:03:09.468Z",
-      "updatedAt": "2025-03-06T15:03:09.468Z",
+      "updatedAt": "2026-06-24T12:43:08.760Z",
       "id": 137,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -460,8 +492,10 @@
       "title_ja": "チームコラボレーション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:08:38.652Z",
         "updatedAt": "2025-03-06T15:08:38.652Z",
@@ -470,5 +504,5 @@
       }
     }
   ],
-  "updatedAt": "2025-06-06T03:41:54.728Z"
+  "updatedAt": "2026-07-02T12:32:49.213Z"
 }
