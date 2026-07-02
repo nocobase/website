@@ -9,7 +9,7 @@ import BlogSidebar from "../../../components/BlogSidebar.astro";
 
 const description = "Tin tuc va thong bao moi nhat tu NocoBase";
 const basepath = "/vi/blog";
-const { data, meta } = await listArticles({ hideOnBlog: false, locale: "vi" });
+const { data, meta } = await listArticles({ hideOnBlog: false });
 const tags = await listArticleTags({
   filter: {
     displayOnBlog: true,

@@ -122,11 +122,6 @@ async function extractFrontmatter(content: string) {
               .map((item: string) => item.trim())
               .filter(Boolean);
           }
-        } else if (value.length >= 2 && value.startsWith('"') && value.endsWith('"')) {
-          // Strip/decode double-quoted string values (e.g. localized title/description)
-          try { value = JSON.parse(value); } catch (e) { value = value.slice(1, -1); }
-        } else if (value.length >= 2 && value.startsWith("'") && value.endsWith("'")) {
-          value = value.slice(1, -1);
         }
 
         metadata[key] = value;
@@ -229,33 +224,6 @@ function enrichAiBlueprintTags(tags: any[]) {
   });
 }
 
-// Locales whose article title/description live in the translated file's
-// frontmatter (not in metadata.json, which only carries en/cn/ja).
-const FRONTMATTER_LOCALES = new Set(['de', 'es', 'fr', 'id', 'pt', 'vi', 'tw']);
-const _locMetaCache = new Map<string, { title?: string; description?: string }>();
-function localizedArticleMeta(slug: string, locale: string) {
-  const key = `${slug}-${locale}`;
-  const hit = _locMetaCache.get(key);
-  if (hit) return hit;
-  const res: { title?: string; description?: string } = {};
-  const raw = readFileOrNull(path.join(CONFIG.contentRoot, 'articles', slug, `index.${locale}.md`));
-  if (raw) {
-    const m = raw.match(/^---\n([\s\S]*?)\n---/);
-    if (m) {
-      const dec = (s: string) => {
-        const v = s.trim();
-        try { return JSON.parse(v); } catch { return v.replace(/^["']|["']$/g, ''); }
-      };
-      const t = m[1].match(/^title:\s*(.+)$/m);
-      const d = m[1].match(/^description:\s*(.+)$/m);
-      if (t) res.title = dec(t[1]);
-      if (d) res.description = dec(d[1]);
-    }
-  }
-  _locMetaCache.set(key, res);
-  return res;
-}
-
 async function loadContent(
   slug: string,
   contentType: 'articles' | 'tutorials' | 'releases' | 'pages' | 'ai-blueprints',
@@ -349,8 +317,7 @@ async function listContentItems(
     categorySlug,
     tagSlug,
     slug,
-    serialsSlug,
-    locale
+    serialsSlug
   } = options;
 
   // Get content directory
@@ -399,12 +366,6 @@ async function listContentItems(
 
       if (contentType === 'ai-blueprints') {
         metadata.tags = enrichAiBlueprintTags(metadata.tags);
-      }
-
-      if (contentType === 'articles' && locale && FRONTMATTER_LOCALES.has(locale)) {
-        const lm = localizedArticleMeta(itemSlug, locale);
-        if (lm.title) metadata.title = lm.title;
-        if (lm.description) metadata.description = lm.description;
       }
 
       items.push(metadata);
@@ -707,7 +668,6 @@ export async function listArticles(options?: {
   filter?: Record<string, any>;
   sort?: string[];
   appends?: string[];
-  locale?: string;
 }) {
   return listContentItems('articles', options);
 }
