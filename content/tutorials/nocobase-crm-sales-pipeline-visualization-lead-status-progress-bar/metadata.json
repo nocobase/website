@@ -8,19 +8,19 @@
   "description_ja": "NocoBaseローコードプラットフォームでSalesforceのようなCRM販売パイプラインの可視化機能を構築する方法を解説します。リードステータスプログレスバーとステージ管理の実装により、不適格から完了までのリード追跡を視覚化し、販売効率と転換率を向上させます。CRM販売プロセスの最適化を目指す企業や開発者に最適なガイドです。",
   "slug": "nocobase-crm-sales-pipeline-visualization-lead-status-progress-bar",
   "publishedAt": "2025-04-22T01:27:31.350Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
-    "updatedAt": "2025-02-26T08:08:16.796Z",
+    "updatedAt": "2025-09-29T11:07:32.310Z",
     "description": "By showcasing concise examples and tips based on real-world use cases, you’ll quickly gain familiarity with NocoBase’s core features and best practices—enabling you to get started and develop efficiently.",
     "description_cn": "旨在通过简洁的小需求示例与小技巧分享，帮助你快速熟悉并掌握 NocoBase 的核心功能与最佳实践，让你轻松上手、高效开发。",
     "id": 4,
-    "title": "Tips & Tricks",
-    "title_cn": "实用技巧",
+    "title": "Tips & Tricks (1.0)",
+    "title_cn": "实用技巧 (1.0)",
     "status": "published",
-    "sort": 20,
+    "sort": 300,
     "slug": "tips-tricks",
-    "title_ja": "ヒントとコツ",
+    "title_ja": "ヒントとコツ (1.0)",
     "description_ja": "シンプルな小規模ニーズの例やちょっとしたテクニックを紹介しながら、NocoBaseのコア機能とベストプラクティスを手軽に習得できるようサポートします。これにより、スムーズに使い始められ、効率的な開発を実現できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -96,6 +100,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-08-29T17:09:55.794Z",
-      "updatedAt": "2024-11-24T05:34:27.211Z",
+      "updatedAt": "2026-06-24T12:43:08.523Z",
       "id": 58,
       "title": "low code crm",
       "title_cn": "low code crm",
@@ -122,6 +128,8 @@
       "title_ja": "ローコードCRM",
       "description_ja": "説明を追加してください。",
       "keywords_ja": "ローコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-08-29T17:10:24.642Z",
-      "updatedAt": "2024-11-24T05:34:27.549Z",
+      "updatedAt": "2026-06-24T12:43:08.531Z",
       "id": 60,
       "title": "no code crm",
       "title_cn": "no code crm",
@@ -148,6 +156,8 @@
       "title_ja": "ノーコードCRM",
       "description_ja": "ノーコードCRMの説明をここに追加してください。",
       "keywords_ja": "ノーコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2025-01-05T07:16:33.554Z",
-      "updatedAt": "2025-01-05T07:16:33.554Z",
+      "updatedAt": "2026-06-24T12:43:08.669Z",
       "id": 107,
       "title": "Custom CRM",
       "title_cn": "定制 CRM",
@@ -174,8 +184,10 @@
       "title_ja": "カスタムCRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-04-22T01:40:58.256Z",
         "updatedAt": "2025-04-22T01:40:58.256Z",
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:38.020Z",
-      "updatedAt": "2025-03-07T06:00:38.020Z",
+      "updatedAt": "2026-06-24T12:43:08.837Z",
       "id": 152,
       "title": "CRM",
       "title_cn": "CRM",
@@ -200,8 +212,10 @@
       "title_ja": "CRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-04-22T01:40:58.256Z",
         "updatedAt": "2025-04-22T01:40:58.256Z",
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2025-04-22T01:39:02.786Z",
-      "updatedAt": "2025-04-22T01:39:02.786Z",
+      "updatedAt": "2026-06-24T12:43:08.924Z",
       "id": 172,
       "title": "sales pipeline",
       "title_cn": null,
@@ -226,6 +240,8 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2025-04-22T01:39:14.801Z",
-      "updatedAt": "2025-04-22T01:39:14.801Z",
+      "updatedAt": "2026-06-24T12:43:08.929Z",
       "id": 173,
       "title": "progress bar",
       "title_cn": null,
@@ -252,6 +268,8 @@
       "title_ja": null,
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -262,5 +280,5 @@
       }
     }
   ],
-  "updatedAt": "2025-07-16T09:56:35.794Z"
+  "updatedAt": "2026-07-02T12:27:12.027Z"
 }
