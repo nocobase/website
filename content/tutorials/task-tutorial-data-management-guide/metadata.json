@@ -8,19 +8,19 @@
   "description_ja": "本章では、NocoBaseでのタスクコレクションの作成、タスク管理ページの設定、タスクの追加、編集、削除、フィルタリング（CRUD）機能の実装など、タスクデータ管理の方法を詳しく解説します。",
   "slug": "task-tutorial-data-management-guide",
   "publishedAt": "2024-11-01T05:46:02.866Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
-    "updatedAt": "2024-12-04T17:32:53.588Z",
+    "updatedAt": "2025-09-29T11:07:23.695Z",
     "description": "Build an easy task management system with NocoBase through hands-on project tutorials. Master essential features like data model, block & action, role-based permissions, and workflows.",
     "description_cn": "通过实战，带你使用 NocoBase 构建一个简单的任务管理系统。掌握数据建模、区块和操作、基于角色的权限控制、工作流等关键功能。",
     "id": 1,
-    "title": "Task Management System",
-    "title_cn": "任务管理系统",
+    "title": "Task Management System (1.0)",
+    "title_cn": "任务管理系统 (1.0)",
     "status": "published",
-    "sort": 1,
+    "sort": 100,
     "slug": "task-management",
-    "title_ja": "タスク管理システム",
+    "title_ja": "タスク管理システム (1.0)",
     "description_ja": "ハンズオンプロジェクトチュートリアルを通じて、NocoBaseを使って簡単なタスク管理システムを構築します。データモデル、ブロックやアクション、役割ベースの権限、ワークフローなど、重要な機能を学びましょう。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:04.324Z",
-      "updatedAt": "2024-11-24T05:34:18.979Z",
+      "updatedAt": "2026-06-24T12:43:08.302Z",
       "id": 13,
       "title": "No-code solutions",
       "title_cn": "无代码解决方案",
@@ -96,6 +100,8 @@
       "title_ja": "ノーコードソリューション",
       "description_ja": "説明はありません。",
       "keywords_ja": "ノーコード, ソリューション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -122,6 +128,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -148,6 +156,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -174,6 +184,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-08-07T16:21:20.686Z",
-      "updatedAt": "2024-11-24T05:34:23.089Z",
+      "updatedAt": "2026-06-24T12:43:08.415Z",
       "id": 36,
       "title": "CRUD",
       "title_cn": "CRUD",
@@ -200,6 +212,8 @@
       "title_ja": "CRUD",
       "description_ja": "CRUD（作成、読み取り、更新、削除）操作に関する基本的な概念です。",
       "keywords_ja": "CRUD, データ操作, 基本概念",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -226,6 +240,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2024-11-01T03:56:44.672Z",
-      "updatedAt": "2024-11-24T05:34:30.880Z",
+      "updatedAt": "2026-06-24T12:43:08.581Z",
       "id": 78,
       "title": "Task Management",
       "title_cn": "任务管理",
@@ -252,6 +268,8 @@
       "title_ja": "タスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2024-11-12T06:38:38.202Z",
-      "updatedAt": "2024-11-24T05:34:31.593Z",
+      "updatedAt": "2026-06-24T12:43:08.593Z",
       "id": 82,
       "title": "task management system",
       "title_cn": "任务管理系统",
@@ -278,6 +296,8 @@
       "title_ja": "タスク管理システム",
       "description_ja": "説明はありません",
       "keywords_ja": "タスク, 管理, システム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -288,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2025-03-06T09:42:32.654Z"
+  "updatedAt": "2026-07-02T12:33:11.059Z"
 }
