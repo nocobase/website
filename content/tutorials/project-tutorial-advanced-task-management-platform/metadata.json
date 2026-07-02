@@ -8,19 +8,19 @@
   "description_ja": "この上級チュートリアルでは、既存のタスク管理システムを強化し、ナレッジベースセンター、パーソナライズされたダッシュボード、サブタスク管理、工数追跡などの機能を追加して、チームの多様なニーズに応える包括的なプロジェクト管理プラットフォームを構築する方法をガイドします。",
   "slug": "project-tutorial-advanced-task-management-platform",
   "publishedAt": "2024-12-06T03:40:43.909Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
-    "updatedAt": "2024-12-06T09:34:53.798Z",
+    "updatedAt": "2025-09-29T11:07:28.124Z",
     "description": "Through gradual feature upgrades, you will build a powerful management system that enhances team collaboration and streamlines workflows intelligently.",
     "description_cn": "通过循序渐进的功能升级，你将打造一个强大的管理系统，让团队协作更高效、流程更智能。",
     "id": 2,
-    "title": "Project Management System",
-    "title_cn": "项目管理系统",
+    "title": "Project Management System (1.0)",
+    "title_cn": "项目管理系统 (1.0)",
     "status": "published",
-    "sort": 2,
+    "sort": 200,
     "slug": "project-management",
-    "title_ja": "プロジェクト管理システム",
+    "title_ja": "プロジェクト管理システム (1.0)",
     "description_ja": "段階的な機能拡張を通じて、チームの協力をより効率的にし、ワークフローをよりスマートにする強力な管理システムを構築できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -96,6 +100,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -122,6 +128,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-07-30T07:17:32.769Z",
-      "updatedAt": "2024-11-24T05:34:21.674Z",
+      "updatedAt": "2026-06-24T12:43:08.376Z",
       "id": 28,
       "title": "customization",
       "title_cn": "定制化",
@@ -148,6 +156,8 @@
       "title_ja": "カスタマイズ",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "カスタマイズ, 特徴",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-10-16T21:51:58.802Z",
-      "updatedAt": "2024-11-24T05:34:29.965Z",
+      "updatedAt": "2026-06-24T12:43:08.566Z",
       "id": 73,
       "title": "business application development",
       "title_cn": "业务应用开发",
@@ -174,6 +184,8 @@
       "title_ja": "ビジネスアプリケーション開発",
       "description_ja": "説明はありません。",
       "keywords_ja": "キーワードはありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -200,6 +212,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2024-11-01T03:56:44.672Z",
-      "updatedAt": "2024-11-24T05:34:30.880Z",
+      "updatedAt": "2026-06-24T12:43:08.581Z",
       "id": 78,
       "title": "Task Management",
       "title_cn": "任务管理",
@@ -226,6 +240,8 @@
       "title_ja": "タスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2024-11-12T06:39:05.426Z",
-      "updatedAt": "2024-11-24T05:34:31.773Z",
+      "updatedAt": "2026-06-24T12:43:08.596Z",
       "id": 83,
       "title": " task management software",
       "title_cn": "任务管理软件",
@@ -252,6 +268,8 @@
       "title_ja": "タスク管理ソフトウェア",
       "description_ja": "説明はまだありません",
       "keywords_ja": "タスク, 管理, ソフトウェア",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2025-03-06T14:27:38.122Z",
-      "updatedAt": "2025-03-06T14:27:38.122Z",
+      "updatedAt": "2026-06-24T12:43:08.725Z",
       "id": 130,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -278,8 +296,10 @@
       "title_ja": "チーム協力",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:15:08.093Z",
         "updatedAt": "2025-03-06T15:15:08.093Z",
@@ -289,7 +309,7 @@
     },
     {
       "createdAt": "2025-03-06T15:03:09.468Z",
-      "updatedAt": "2025-03-06T15:03:09.468Z",
+      "updatedAt": "2026-06-24T12:43:08.760Z",
       "id": 137,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -304,8 +324,10 @@
       "title_ja": "チームコラボレーション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:17:37.552Z",
         "updatedAt": "2025-03-06T15:17:37.552Z",
@@ -315,7 +337,7 @@
     },
     {
       "createdAt": "2025-03-06T15:15:32.281Z",
-      "updatedAt": "2025-03-06T15:15:32.281Z",
+      "updatedAt": "2026-06-24T12:43:08.765Z",
       "id": 138,
       "title": "progress management",
       "title_cn": "进度管理",
@@ -330,8 +352,10 @@
       "title_ja": "進捗管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:17:37.552Z",
         "updatedAt": "2025-03-06T15:17:37.552Z",
@@ -341,7 +365,7 @@
     },
     {
       "createdAt": "2025-03-06T15:15:54.441Z",
-      "updatedAt": "2025-03-06T15:15:54.441Z",
+      "updatedAt": "2026-06-24T12:43:08.770Z",
       "id": 139,
       "title": "subtask management",
       "title_cn": "子任务管理",
@@ -356,8 +380,10 @@
       "title_ja": "サブタスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:17:37.552Z",
         "updatedAt": "2025-03-06T15:17:37.552Z",
@@ -367,7 +393,7 @@
     },
     {
       "createdAt": "2025-03-06T15:16:31.661Z",
-      "updatedAt": "2025-03-06T15:16:31.661Z",
+      "updatedAt": "2026-06-24T12:43:08.775Z",
       "id": 140,
       "title": "personalized dashboard",
       "title_cn": "个性化仪表盘",
@@ -382,8 +408,10 @@
       "title_ja": "パーソナライズドダッシュボード",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:17:37.551Z",
         "updatedAt": "2025-03-06T15:17:37.551Z",
@@ -393,7 +421,7 @@
     },
     {
       "createdAt": "2025-03-06T15:16:54.436Z",
-      "updatedAt": "2025-03-06T15:16:54.436Z",
+      "updatedAt": "2026-06-24T12:43:08.780Z",
       "id": 141,
       "title": "knowledge base",
       "title_cn": "知识库",
@@ -408,8 +436,10 @@
       "title_ja": "ナレッジベース",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:17:37.551Z",
         "updatedAt": "2025-03-06T15:17:37.551Z",
@@ -418,5 +448,5 @@
       }
     }
   ],
-  "updatedAt": "2025-03-06T15:17:37.549Z"
+  "updatedAt": "2026-07-02T12:32:44.738Z"
 }
