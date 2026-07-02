@@ -8,19 +8,19 @@
   "description_ja": "本チュートリアルでは、NocoBaseのユーザー登録審査を解説。ゲストロールでの手動承認、または申請フォームとワークフローを活用した自動化を紹介。",
   "slug": "user-registration-audit-nocobase",
   "publishedAt": "2025-02-19T06:08:47.865Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
-    "updatedAt": "2025-02-26T08:08:16.796Z",
+    "updatedAt": "2025-09-29T11:07:32.310Z",
     "description": "By showcasing concise examples and tips based on real-world use cases, you’ll quickly gain familiarity with NocoBase’s core features and best practices—enabling you to get started and develop efficiently.",
     "description_cn": "旨在通过简洁的小需求示例与小技巧分享，帮助你快速熟悉并掌握 NocoBase 的核心功能与最佳实践，让你轻松上手、高效开发。",
     "id": 4,
-    "title": "Tips & Tricks",
-    "title_cn": "实用技巧",
+    "title": "Tips & Tricks (1.0)",
+    "title_cn": "实用技巧 (1.0)",
     "status": "published",
-    "sort": 20,
+    "sort": 300,
     "slug": "tips-tricks",
-    "title_ja": "ヒントとコツ",
+    "title_ja": "ヒントとコツ (1.0)",
     "description_ja": "シンプルな小規模ニーズの例やちょっとしたテクニックを紹介しながら、NocoBaseのコア機能とベストプラクティスを手軽に習得できるようサポートします。これにより、スムーズに使い始められ、効率的な開発を実現できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -96,6 +100,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -122,6 +128,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -148,6 +156,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-07-30T07:18:03.803Z",
-      "updatedAt": "2024-11-24T05:34:22.030Z",
+      "updatedAt": "2026-06-24T12:43:08.386Z",
       "id": 30,
       "title": "no-code platform",
       "title_cn": "无代码平台",
@@ -174,6 +184,8 @@
       "title_ja": "ノーコードプラットフォーム",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2025-03-06T08:03:20.608Z",
-      "updatedAt": "2025-03-06T08:03:20.608Z",
+      "updatedAt": "2026-06-24T12:43:08.716Z",
       "id": 127,
       "title": "access control",
       "title_cn": "权限管理",
@@ -200,8 +212,10 @@
       "title_ja": "アクセス管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T03:02:55.415Z",
         "updatedAt": "2025-03-07T03:02:55.415Z",
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2025-03-06T14:27:38.122Z",
-      "updatedAt": "2025-03-06T14:27:38.122Z",
+      "updatedAt": "2026-06-24T12:43:08.725Z",
       "id": 130,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -226,8 +240,10 @@
       "title_ja": "チーム協力",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:57:10.463Z",
         "updatedAt": "2025-03-07T05:57:10.463Z",
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2025-03-06T15:02:03.308Z",
-      "updatedAt": "2025-03-06T15:02:03.308Z",
+      "updatedAt": "2026-06-24T12:43:08.750Z",
       "id": 135,
       "title": "user management",
       "title_cn": "用户管理",
@@ -252,8 +268,10 @@
       "title_ja": "ユーザー管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:57:10.463Z",
         "updatedAt": "2025-03-07T05:57:10.463Z",
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2025-03-07T05:56:07.253Z",
-      "updatedAt": "2025-03-07T05:56:07.253Z",
+      "updatedAt": "2026-06-24T12:43:08.827Z",
       "id": 150,
       "title": "user registration audit",
       "title_cn": "用户注册审核",
@@ -278,8 +296,10 @@
       "title_ja": "ユーザー登録審査",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-07T05:57:10.463Z",
         "updatedAt": "2025-03-07T05:57:10.463Z",
@@ -288,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2025-03-07T05:57:10.461Z"
+  "updatedAt": "2026-07-02T12:32:14.905Z"
 }
