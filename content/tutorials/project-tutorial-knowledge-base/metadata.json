@@ -8,19 +8,19 @@
   "description_ja": "本章では、NocoBaseでツリー構造のナレッジベースモジュールを作成する方法をガイドし、ドキュメントコレクションの設計と実装、ツリー構造によるディレクトリ管理、およびドキュメント管理ページの作成と構成をカバーし、チームの情報組織と管理効率を向上させます。",
   "slug": "project-tutorial-knowledge-base",
   "publishedAt": "2024-12-06T03:58:07.796Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
-    "updatedAt": "2024-12-06T09:34:53.798Z",
+    "updatedAt": "2025-09-29T11:07:28.124Z",
     "description": "Through gradual feature upgrades, you will build a powerful management system that enhances team collaboration and streamlines workflows intelligently.",
     "description_cn": "通过循序渐进的功能升级，你将打造一个强大的管理系统，让团队协作更高效、流程更智能。",
     "id": 2,
-    "title": "Project Management System",
-    "title_cn": "项目管理系统",
+    "title": "Project Management System (1.0)",
+    "title_cn": "项目管理系统 (1.0)",
     "status": "published",
-    "sort": 2,
+    "sort": 200,
     "slug": "project-management",
-    "title_ja": "プロジェクト管理システム",
+    "title_ja": "プロジェクト管理システム (1.0)",
     "description_ja": "段階的な機能拡張を通じて、チームの協力をより効率的にし、ワークフローをよりスマートにする強力な管理システムを構築できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -44,6 +44,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -70,6 +72,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -96,6 +100,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -122,6 +128,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -148,6 +156,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-11-01T03:56:44.672Z",
-      "updatedAt": "2024-11-24T05:34:30.880Z",
+      "updatedAt": "2026-06-24T12:43:08.581Z",
       "id": 78,
       "title": "Task Management",
       "title_cn": "任务管理",
@@ -174,6 +184,8 @@
       "title_ja": "タスク管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-11-12T06:38:38.202Z",
-      "updatedAt": "2024-11-24T05:34:31.593Z",
+      "updatedAt": "2026-06-24T12:43:08.593Z",
       "id": 82,
       "title": "task management system",
       "title_cn": "任务管理系统",
@@ -200,6 +212,8 @@
       "title_ja": "タスク管理システム",
       "description_ja": "説明はありません",
       "keywords_ja": "タスク, 管理, システム",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2025-03-06T15:03:09.468Z",
-      "updatedAt": "2025-03-06T15:03:09.468Z",
+      "updatedAt": "2026-06-24T12:43:08.760Z",
       "id": 137,
       "title": "team collaboration",
       "title_cn": "团队协作",
@@ -226,8 +240,10 @@
       "title_ja": "チームコラボレーション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:20:31.592Z",
         "updatedAt": "2025-03-06T15:20:31.592Z",
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2025-03-06T15:16:54.436Z",
-      "updatedAt": "2025-03-06T15:16:54.436Z",
+      "updatedAt": "2026-06-24T12:43:08.780Z",
       "id": 141,
       "title": "knowledge base",
       "title_cn": "知识库",
@@ -252,8 +268,10 @@
       "title_ja": "ナレッジベース",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:20:31.592Z",
         "updatedAt": "2025-03-06T15:20:31.592Z",
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2025-03-06T15:21:46.300Z",
-      "updatedAt": "2025-03-06T15:21:46.300Z",
+      "updatedAt": "2026-06-24T12:43:08.788Z",
       "id": 142,
       "title": "tree collection",
       "title_cn": "树结构表",
@@ -278,8 +296,10 @@
       "title_ja": "ツリーコレクション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-03-06T15:21:56.468Z",
         "updatedAt": "2025-03-06T15:21:56.468Z",
@@ -288,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2025-08-20T08:12:56.172Z"
+  "updatedAt": "2026-07-02T12:32:39.701Z"
 }
