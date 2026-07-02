@@ -8,19 +8,19 @@
   "description_ja": "NocoBase CRMデモをお使いの環境に導入する方法について説明します。このガイドでは、「バックアップマネージャー」（Pro/Enterprise版）と、汎用的な「SQLインポート」（Community版向け）の2つの導入方法を提供します。お使いのバージョンとニーズに合わせて最適な方法を選択し、CRMの全機能デモを迅速にご体験ください。",
   "slug": "nocobase-crm-demo-deployment-guide",
   "publishedAt": "2025-07-10T17:52:29.010Z",
-  "status": "published",
+  "status": "drafted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
-    "updatedAt": "2025-02-26T08:08:16.796Z",
+    "updatedAt": "2025-09-29T11:07:32.310Z",
     "description": "By showcasing concise examples and tips based on real-world use cases, you’ll quickly gain familiarity with NocoBase’s core features and best practices—enabling you to get started and develop efficiently.",
     "description_cn": "旨在通过简洁的小需求示例与小技巧分享，帮助你快速熟悉并掌握 NocoBase 的核心功能与最佳实践，让你轻松上手、高效开发。",
     "id": 4,
-    "title": "Tips & Tricks",
-    "title_cn": "实用技巧",
+    "title": "Tips & Tricks (1.0)",
+    "title_cn": "实用技巧 (1.0)",
     "status": "published",
-    "sort": 20,
+    "sort": 300,
     "slug": "tips-tricks",
-    "title_ja": "ヒントとコツ",
+    "title_ja": "ヒントとコツ (1.0)",
     "description_ja": "シンプルな小規模ニーズの例やちょっとしたテクニックを紹介しながら、NocoBaseのコア機能とベストプラクティスを手軽に習得できるようサポートします。これにより、スムーズに使い始められ、効率的な開発を実現できます。",
     "createdById": 9,
     "updatedById": 9
@@ -29,7 +29,7 @@
   "keywords": [
     {
       "createdAt": "2024-06-23T04:01:54.838Z",
-      "updatedAt": "2024-11-24T05:34:18.022Z",
+      "updatedAt": "2026-06-24T12:43:08.290Z",
       "id": 8,
       "title": "Tech & Tutorials",
       "title_cn": "技术 & 教程",
@@ -44,6 +44,8 @@
       "title_ja": "テクノロジーとチュートリアル",
       "description_ja": "NocoBaseを習得し、アプリケーション開発プロセスを最適化するために設計された詳細なガイドと技術チュートリアルに飛び込んでください。",
       "keywords_ja": "NocoBase テクニカルチュートリアル, ノーコードチュートリアル, ローコードチュートリアル, ソフトウェア開発ガイド, テクニック, プログラミングチュートリアル, テクノロジーのハウツー, NocoBase 学習リソース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -55,7 +57,7 @@
     },
     {
       "createdAt": "2024-07-06T09:43:51.703Z",
-      "updatedAt": "2024-11-24T05:34:19.344Z",
+      "updatedAt": "2026-06-24T12:43:08.308Z",
       "id": 15,
       "title": "low code development",
       "title_cn": "低代码开发",
@@ -70,6 +72,8 @@
       "title_ja": "ローコード開発",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -81,7 +85,7 @@
     },
     {
       "createdAt": "2024-08-29T17:09:45.850Z",
-      "updatedAt": "2024-11-24T05:34:27.012Z",
+      "updatedAt": "2026-06-24T12:43:08.519Z",
       "id": 57,
       "title": "low-code crm",
       "title_cn": "低代码 crm",
@@ -96,6 +100,8 @@
       "title_ja": "ローコードCRM",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "ローコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -107,7 +113,7 @@
     },
     {
       "createdAt": "2024-08-29T17:09:55.794Z",
-      "updatedAt": "2024-11-24T05:34:27.211Z",
+      "updatedAt": "2026-06-24T12:43:08.523Z",
       "id": 58,
       "title": "low code crm",
       "title_cn": "low code crm",
@@ -122,6 +128,8 @@
       "title_ja": "ローコードCRM",
       "description_ja": "説明を追加してください。",
       "keywords_ja": "ローコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -133,7 +141,7 @@
     },
     {
       "createdAt": "2024-08-29T17:10:24.642Z",
-      "updatedAt": "2024-11-24T05:34:27.549Z",
+      "updatedAt": "2026-06-24T12:43:08.531Z",
       "id": 60,
       "title": "no code crm",
       "title_cn": "no code crm",
@@ -148,6 +156,8 @@
       "title_ja": "ノーコードCRM",
       "description_ja": "ノーコードCRMの説明をここに追加してください。",
       "keywords_ja": "ノーコード, CRM",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -159,7 +169,7 @@
     },
     {
       "createdAt": "2024-10-30T12:02:06.621Z",
-      "updatedAt": "2024-11-24T05:34:30.700Z",
+      "updatedAt": "2026-06-24T12:43:08.577Z",
       "id": 77,
       "title": "NocoBase Tutorials",
       "title_cn": "NocoBase实战教程",
@@ -174,6 +184,8 @@
       "title_ja": "NocoBase チュートリアル",
       "description_ja": "NocoBaseに関する実践的なガイドとチュートリアルを提供します。",
       "keywords_ja": "NocoBase, チュートリアル, 実践",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -185,7 +197,7 @@
     },
     {
       "createdAt": "2024-11-15T06:51:42.264Z",
-      "updatedAt": "2024-11-24T05:34:32.314Z",
+      "updatedAt": "2026-06-24T12:43:08.603Z",
       "id": 86,
       "title": "zero-code development",
       "title_cn": "零代码开发",
@@ -200,6 +212,8 @@
       "title_ja": "ゼロコード開発",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "ゼロコード, 開発, プログラミング",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "tutorials_keywords": {
@@ -211,7 +225,7 @@
     },
     {
       "createdAt": "2025-01-05T07:16:33.554Z",
-      "updatedAt": "2025-01-05T07:16:33.554Z",
+      "updatedAt": "2026-06-24T12:43:08.669Z",
       "id": 107,
       "title": "Custom CRM",
       "title_cn": "定制 CRM",
@@ -226,8 +240,10 @@
       "title_ja": "カスタムCRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-07-16T00:57:00.496Z",
         "updatedAt": "2025-07-16T00:57:00.496Z",
@@ -237,7 +253,7 @@
     },
     {
       "createdAt": "2025-03-07T06:00:38.020Z",
-      "updatedAt": "2025-03-07T06:00:38.020Z",
+      "updatedAt": "2026-06-24T12:43:08.837Z",
       "id": 152,
       "title": "CRM",
       "title_cn": "CRM",
@@ -252,8 +268,10 @@
       "title_ja": "CRM",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-07-16T00:57:00.496Z",
         "updatedAt": "2025-07-16T00:57:00.496Z",
@@ -263,7 +281,7 @@
     },
     {
       "createdAt": "2025-07-15T11:45:36.650Z",
-      "updatedAt": "2025-07-15T11:45:36.650Z",
+      "updatedAt": "2026-06-24T12:43:09.090Z",
       "id": 206,
       "title": "CRM solution",
       "title_cn": "CRM 解决方案",
@@ -278,8 +296,10 @@
       "title_ja": "CRM ソリューション",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "tutorials_keywords": {
         "createdAt": "2025-07-16T00:57:00.496Z",
         "updatedAt": "2025-07-16T00:57:00.496Z",
@@ -288,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2025-07-20T16:59:54.263Z"
+  "updatedAt": "2026-07-02T12:26:58.587Z"
 }
