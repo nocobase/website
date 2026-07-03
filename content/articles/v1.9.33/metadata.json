@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
-      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "updatedAt": "2026-06-24T12:43:08.286Z",
       "id": 4,
       "title": "Release Notes",
       "title_cn": "发布日志",
@@ -27,6 +27,8 @@
       "title_ja": "リリースノート",
       "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
       "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -40,7 +42,7 @@
   "sub_tags": [
     {
       "createdAt": "2025-01-22T06:52:40.087Z",
-      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "updatedAt": "2026-06-24T12:43:08.690Z",
       "id": 116,
       "title": "Latest",
       "title_cn": "Latest",
@@ -55,6 +57,8 @@
       "title_ja": "Latest",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
@@ -89,5 +93,6 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-01-04T13:36:53.486Z"
+  "updatedAt": "2026-07-03T02:39:14.719Z",
+  "hideDetailPage": true
 }
