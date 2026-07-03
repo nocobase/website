@@ -8,7 +8,7 @@
   "description_ja": "このチュートリアルでは、NocoBaseでCRMのリード変換を実装する方法を詳細に説明します。必要なコレクションの作成、データ管理ページの構成、変換プロセスの設計、および関連管理の設定をカバーし、完全なビジネスプロセスを構築するのに役立ちます。",
   "slug": "how-to-implement-lead-conversion-in-nocobase",
   "publishedAt": "2025-02-26T07:55:06.634Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -476,5 +476,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:10.419Z"
+  "updatedAt": "2026-07-03T09:35:47.963Z"
 }

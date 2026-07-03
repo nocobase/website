@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseで会議室管理モジュールを構築する方法をガイドします。これには、会議室と予約のデータテーブル構造の設計、テーブルおよびカレンダーブロックの作成、関連付けの設定、ワークフローおよびSQL操作。",
   "slug": "project-tutorial-meeting-room-booking",
   "publishedAt": "2024-12-06T08:56:44.048Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
     "updatedAt": "2025-09-29T11:07:28.124Z",
@@ -448,5 +448,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:19.765Z"
+  "updatedAt": "2026-07-03T09:35:47.958Z"
 }

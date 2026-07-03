@@ -8,7 +8,7 @@
   "description_ja": "HTTP/2、CDN、サーバー位置選択、圧縮、キャッシュなどの技術を活用して NocoBase のデプロイを最適化し、読み込み時間を大幅に短縮してユーザー体験を向上させる方法を学びます。",
   "slug": "how-to-deploy-nocobase-faster",
   "publishedAt": "2025-04-16T00:18:18.234Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -336,5 +336,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:27:22.555Z"
+  "updatedAt": "2026-07-03T09:35:47.982Z"
 }

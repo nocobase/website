@@ -8,7 +8,7 @@
   "description_ja": "本チュートリアルでは、NocoBaseのユーザー登録審査を解説。ゲストロールでの手動承認、または申請フォームとワークフローを活用した自動化を紹介。",
   "slug": "user-registration-audit-nocobase",
   "publishedAt": "2025-02-19T06:08:47.865Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -308,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:14.905Z"
+  "updatedAt": "2026-07-03T09:35:47.961Z"
 }

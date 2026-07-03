@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseで複雑なタスクを多層サブタスクに分解し、サブタスクの構造を設計し、時間と作業時間の情報を追加し、タスクの期間を計算し、日次作業時間報告テーブルを設定して、タスクの詳細な管理と進捗追跡を実現する方法を探ります。",
   "slug": "project-tutorial-subtasks-and-work-hours-calculation",
   "publishedAt": "2024-12-06T08:54:50.662Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
     "updatedAt": "2025-09-29T11:07:28.124Z",
@@ -364,5 +364,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:24.549Z"
+  "updatedAt": "2026-07-03T09:35:47.956Z"
 }

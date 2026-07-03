@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseでタブコンテナを使用して、カンバン、カレンダー、ガントチャートなどのさまざまなブロックを整理し、タスク管理システムのビューを充実させ、ユーザーエクスペリエンスを向上させる方法を詳しく解説します。",
   "slug": "task-tutorial-tabs-blocks",
   "publishedAt": "2024-11-01T05:46:59.243Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -420,5 +420,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:33:03.007Z"
+  "updatedAt": "2026-07-03T09:35:55.627Z"
 }

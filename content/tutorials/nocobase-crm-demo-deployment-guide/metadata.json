@@ -8,7 +8,7 @@
   "description_ja": "NocoBase CRMデモをお使いの環境に導入する方法について説明します。このガイドでは、「バックアップマネージャー」（Pro/Enterprise版）と、汎用的な「SQLインポート」（Community版向け）の2つの導入方法を提供します。お使いのバージョンとニーズに合わせて最適な方法を選択し、CRMの全機能デモを迅速にご体験ください。",
   "slug": "nocobase-crm-demo-deployment-guide",
   "publishedAt": "2025-07-10T17:52:29.010Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -308,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:26:58.587Z"
+  "updatedAt": "2026-07-03T09:35:47.986Z"
 }

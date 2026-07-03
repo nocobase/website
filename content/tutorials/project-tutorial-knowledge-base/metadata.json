@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseでツリー構造のナレッジベースモジュールを作成する方法をガイドし、ドキュメントコレクションの設計と実装、ツリー構造によるディレクトリ管理、およびドキュメント管理ページの作成と構成をカバーし、チームの情報組織と管理効率を向上させます。",
   "slug": "project-tutorial-knowledge-base",
   "publishedAt": "2024-12-06T03:58:07.796Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
     "updatedAt": "2025-09-29T11:07:28.124Z",
@@ -308,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:39.701Z"
+  "updatedAt": "2026-07-03T09:35:47.947Z"
 }

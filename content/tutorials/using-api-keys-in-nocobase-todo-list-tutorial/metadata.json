@@ -8,7 +8,7 @@
   "description_ja": "このチュートリアルでは、「To Do」を例に、NocoBaseでAPIキーを作成および使用する方法を詳しく説明し、プラグインの有効化、データテーブルの作成、ロールのバインド、権限設定などの手順をカバーしています。",
   "slug": "using-api-keys-in-nocobase-todo-list-tutorial",
   "publishedAt": "2025-03-04T06:41:15.412Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -336,5 +336,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:31:59.404Z"
+  "updatedAt": "2026-07-03T09:35:47.977Z"
 }

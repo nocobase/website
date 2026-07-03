@@ -8,7 +8,7 @@
   "description_ja": "この上級チュートリアルでは、既存のタスク管理システムを強化し、ナレッジベースセンター、パーソナライズされたダッシュボード、サブタスク管理、工数追跡などの機能を追加して、チームの多様なニーズに応える包括的なプロジェクト管理プラットフォームを構築する方法をガイドします。",
   "slug": "project-tutorial-advanced-task-management-platform",
   "publishedAt": "2024-12-06T03:40:43.909Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T06:50:56.255Z",
     "updatedAt": "2025-09-29T11:07:28.124Z",
@@ -448,5 +448,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:44.738Z"
+  "updatedAt": "2026-07-03T09:35:47.942Z"
 }

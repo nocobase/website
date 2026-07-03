@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseでMarkdown(Vditor)プラグインを有効にしてタスクの説明を充実させ、コメントプラグインを実装してチームの協力とインタラクションを促進し、タスク管理システムの機能性とユーザーエクスペリエンスを向上させる方法を探ります。",
   "slug": "task-tutorial-plugin-use",
   "publishedAt": "2024-11-01T05:46:35.678Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -364,5 +364,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:33:06.877Z"
+  "updatedAt": "2026-07-03T09:35:55.625Z"
 }

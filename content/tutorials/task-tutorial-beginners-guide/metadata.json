@@ -8,7 +8,7 @@
   "description_ja": "本チュートリアルでは、NocoBaseの強力な機能を迅速に体験し、その基本的なインターフェース設定、プラグイン管理、システム設定に慣れ、ローカルまたはサーバー上にNocoBaseをインストールする方法を学び、タスク管理システム構築のための堅実な基盤を築きます。",
   "slug": "task-tutorial-beginners-guide",
   "publishedAt": "2024-11-01T05:44:49.212Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -280,5 +280,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:33:18.612Z"
+  "updatedAt": "2026-07-03T09:35:55.617Z"
 }

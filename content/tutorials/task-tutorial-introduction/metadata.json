@@ -8,7 +8,7 @@
   "description_ja": "本チュートリアルでは、タスク管理システムの例を通じて、NocoBase のコアモジュールと操作方法を学びます。タスク作成、コメント、アクセス管理、通知設定などを解説します。",
   "slug": "task-tutorial-introduction",
   "publishedAt": "2024-11-01T05:41:07.960Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -448,5 +448,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:33:22.827Z"
+  "updatedAt": "2026-07-03T09:35:55.614Z"
 }

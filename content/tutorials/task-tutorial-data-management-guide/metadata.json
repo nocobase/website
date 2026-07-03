@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseでのタスクコレクションの作成、タスク管理ページの設定、タスクの追加、編集、削除、フィルタリング（CRUD）機能の実装など、タスクデータ管理の方法を詳しく解説します。",
   "slug": "task-tutorial-data-management-guide",
   "publishedAt": "2024-11-01T05:46:02.866Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -308,5 +308,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:33:11.059Z"
+  "updatedAt": "2026-07-03T09:35:55.622Z"
 }

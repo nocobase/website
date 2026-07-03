@@ -8,7 +8,7 @@
   "description_ja": "本章では、NocoBaseでの役割作成と権限管理について深く掘り下げ、チームメンバーが各自の責任とアクセス権を明確に理解し、効率的なコラボレーションを促進します。",
   "slug": "task-tutorial-user-permissions",
   "publishedAt": "2024-11-01T05:47:21.696Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-11-01T05:12:58.983Z",
     "updatedAt": "2025-09-29T11:07:23.695Z",
@@ -420,5 +420,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:55.873Z"
+  "updatedAt": "2026-07-03T09:35:55.634Z"
 }

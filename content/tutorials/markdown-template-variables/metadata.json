@@ -8,7 +8,7 @@
   "description_ja": "このチュートリアルでは、MarkdownでHandlebarsテンプレートエンジンを使用して動的なコンテンツ表示を実現する方法を詳しく説明します。条件付きレンダリングやループ処理などの主要機能を実践的な例を通じて解説し、テンプレート変数の高度な使用方法の習得を支援します。",
   "slug": "markdown-template-variables",
   "publishedAt": "2025-03-10T15:00:11.696Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -224,5 +224,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:31:54.444Z"
+  "updatedAt": "2026-07-03T09:35:47.979Z"
 }

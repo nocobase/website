@@ -8,7 +8,7 @@
   "description_ja": "このチュートリアルでは、NocoBaseでのMarkdownブロックの巧みな活用法を紹介し、プロンプト作成、個別化されたコンテンツ表示、HTMLやアニメーションによる内容強化を解説します。",
   "slug": "clever-uses-of-markdown-blocks",
   "publishedAt": "2025-02-27T09:30:14.958Z",
-  "status": "drafted",
+  "status": "deleted",
   "serials": {
     "createdAt": "2024-12-29T05:25:58.412Z",
     "updatedAt": "2025-09-29T11:07:32.310Z",
@@ -280,5 +280,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-02T12:32:05.858Z"
+  "updatedAt": "2026-07-03T09:35:47.967Z"
 }
