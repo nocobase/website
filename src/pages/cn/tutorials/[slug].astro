@@ -10,7 +10,7 @@ import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getTutorialArticle(slug, 'cn');
-if (!data) {
+if (!data || data.status === 'deleted') {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_cn || data.title;

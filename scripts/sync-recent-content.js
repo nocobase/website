@@ -514,13 +514,6 @@ async function syncRecentArticles() {
         console.log(`Skipping article with missing slug: ${article.title || 'Untitled'}`);
         return;
       }
-
-      // Deleted articles: remove all their files from the repo (page becomes 404)
-      if (article.status === 'deleted') {
-        const removed = await deleteContentDir(`content/articles/${article.slug}/`);
-        console.log(`Deleted article ${article.slug}: removed ${removed} files`);
-        return;
-      }
       
       // Prepare metadata for the article
       const metadata = {
