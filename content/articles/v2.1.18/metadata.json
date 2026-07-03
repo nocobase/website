@@ -71,12 +71,12 @@
   ],
   "category": null,
   "cover": null,
-  "hideOnListPage": true,
+  "hideOnListPage": false,
   "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-03T07:53:25.746Z",
+  "updatedAt": "2026-07-03T18:42:56.103Z",
   "hideDetailPage": true
 }
