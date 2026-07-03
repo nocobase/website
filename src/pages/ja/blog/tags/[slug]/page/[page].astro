@@ -11,6 +11,9 @@ const { slug, page: pageParam } = Astro.params;
 const page = pageParam ? parseInt(pageParam) : 1;
 const { data, meta } = await listArticles({ page, tagSlug: slug });
 const tag = await getArticleTag(slug);
+if (!tag?.title) {
+  return new Response("Not found", { status: 404 });
+}
 const tagpath = '/ja/blog/tags/' + slug;
 const basepath = '/ja/blog';
 const title = tag.title || tag.title_ja; // Japanese title

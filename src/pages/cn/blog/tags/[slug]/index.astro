@@ -8,6 +8,9 @@ import BlogSidebar from "../../../../../components/BlogSidebar.astro";
 
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);
+if (!tag?.title) {
+  return new Response("Not found", { status: 404 });
+}
 const { data, meta } = await listArticles({ tagSlug: slug });
 const tagpath = '/cn/blog/tags/' + slug;
 const basepath = '/cn/blog';
