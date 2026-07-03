@@ -3,14 +3,14 @@ const {Buffer} = require('buffer');
 const {setTimeout} = require('timers');
 
 // Configuration
-const baseURL = 'Your cms system url';
-const token = 'Your cms system token';
+const baseURL = process.env.CMS_BASE_URL || 'Your cms system url';
+const token = process.env.CMS_TOKEN || 'Your cms system token';
 // Define hours as a constant and calculate timeWindow from it
 const defaultHours = 15;
 let timeWindow = defaultHours * 60 * 60 * 1000; // Default: 15 hours in milliseconds
 
 // GitHub configuration
-const githubToken = 'Your GitHub token';
+const githubToken = process.env.GITHUB_TOKEN || 'Your GitHub token';
 const githubApi = axios.create({
   baseURL: 'https://api.github.com',
   timeout: 60000,
@@ -79,6 +79,10 @@ api.interceptors.response.use(
 let repoTreeCache = null;
 let contentsBlobCache = {};
 let pendingUpdates = [];
+
+// Staged file changes, committed together as ONE commit at the end of the run
+const stagedChanges = new Map(); // path -> content
+const stagedDeletes = new Set(); // path
 let apiRequestCount = 0;
 let githubRequestCount = 0;
 
@@ -283,46 +287,121 @@ async function getFileContent(filePath) {
   }, CONFIG.maxRetries, CONFIG.retryDelay);
 }
 
-// Helper function to create or update a file in GitHub
+// Compute a git blob sha locally so unchanged files can be skipped without
+// downloading their content (falls back to remote compare when crypto is
+// unavailable in the runtime sandbox).
+let createHash = null;
+try { createHash = require('crypto').createHash; } catch (e) { /* sandbox without crypto */ }
+
+function gitBlobSha(content) {
+  const buf = Buffer.from(content);
+  return createHash('sha1').update(`blob ${buf.length}\0`).update(buf).digest('hex');
+}
+
+// Helper function to create or update a file in GitHub.
+// Changes are staged in memory and committed as a single commit at the end
+// of the run by commitStagedChanges().
 async function updateGitHubFile(filePath, content, existingFile = null) {
-  return withRetry(async () => {
-    // If the file exists, first compare the content to see if it's the same, and skip updating if it is
-    if (existingFile && existingFile.exists) {
+  // If the file exists, first compare the content to see if it's the same, and skip updating if it is
+  if (existingFile && existingFile.exists) {
+    if (createHash && existingFile.sha) {
+      // Local git blob sha compare: zero API calls
+      if (gitBlobSha(content) === existingFile.sha) {
+        console.log(`Skipping ${filePath}: content unchanged`);
+        return null;
+      }
+    } else {
       const existingContent = await getFileContent(filePath);
       if (existingContent === content) {
         console.log(`Skipping ${filePath}: content unchanged`);
         return null;
       }
     }
-  
-    const message = existingFile ? `update: ${filePath}` : `create: ${filePath}`;
-    const payload = {
+  }
+
+  stagedDeletes.delete(filePath);
+  stagedChanges.set(filePath, content);
+  console.log(`Staged ${existingFile && existingFile.exists ? 'update' : 'create'}: ${filePath}`);
+
+  // Record the path to be updated
+  pendingUpdates.push(filePath);
+
+  return { staged: true };
+}
+
+// Helper function to delete a file in GitHub (staged, committed with the batch)
+async function deleteGitHubFile(filePath) {
+  stagedChanges.delete(filePath);
+  stagedDeletes.add(filePath);
+  console.log(`Staged delete: ${filePath}`);
+  pendingUpdates.push(filePath);
+  return true;
+}
+
+// Delete every repo file under a content directory (used for deleted articles)
+async function deleteContentDir(dirPrefix) {
+  const treeData = await getRepoTree();
+  const files = treeData.tree.filter((item) => item.type === 'blob' && item.path.startsWith(dirPrefix));
+  for (const file of files) {
+    await deleteGitHubFile(file.path);
+  }
+  return files.length;
+}
+
+// Commit every staged change/delete as a single commit via the Git Data API
+async function commitStagedChanges() {
+  if (stagedChanges.size === 0 && stagedDeletes.size === 0) {
+    console.log('No file changes to commit');
+    return null;
+  }
+
+  return withRetry(async () => {
+    trackGithubRequest();
+    const refData = await githubApi.get(`/repos/${owner}/${repo}/git/refs/heads/${branch}`);
+    const baseCommitSha = refData.data.object.sha;
+
+    trackGithubRequest();
+    const baseCommit = await githubApi.get(`/repos/${owner}/${repo}/git/commits/${baseCommitSha}`);
+    const baseTreeSha = baseCommit.data.tree.sha;
+
+    const tree = [];
+    for (const [path, content] of stagedChanges) {
+      tree.push({ path, mode: '100644', type: 'blob', content });
+    }
+    for (const path of stagedDeletes) {
+      tree.push({ path, mode: '100644', type: 'blob', sha: null });
+    }
+
+    trackGithubRequest();
+    const treeData = await githubApi.post(`/repos/${owner}/${repo}/git/trees`, {
+      base_tree: baseTreeSha,
+      tree
+    });
+
+    if (treeData.data.sha === baseTreeSha) {
+      console.log('Staged changes produce no effective diff, skipping commit');
+      return null;
+    }
+
+    const message = `sync: ${stagedChanges.size} updated, ${stagedDeletes.size} deleted`;
+    trackGithubRequest();
+    const commitData = await githubApi.post(`/repos/${owner}/${repo}/git/commits`, {
       message,
-      content: Buffer.from(content).toString('base64'),
-      branch,
+      tree: treeData.data.sha,
+      parents: [baseCommitSha],
       author: GITHUB_COMMITTER,
       committer: GITHUB_COMMITTER
-    };
-    
-    if (existingFile && existingFile.sha) {
-      payload.sha = existingFile.sha;
-    }
-    
-    try {
-      // Track GitHub request
-      trackGithubRequest();
-      
-      const response = await githubApi.put(`/repos/${owner}/${repo}/contents/${filePath}`, payload);
-      console.log(`Successfully ${existingFile ? 'updated' : 'created'} ${filePath}`);
-      
-      // Record the path to be updated
-      pendingUpdates.push(filePath);
-      
-      return response.data;
-    } catch (error) {
-      console.error(`Error ${existingFile ? 'updating' : 'creating'} ${filePath}:`, error.message);
-      throw error;
-    }
+    });
+
+    trackGithubRequest();
+    await githubApi.patch(`/repos/${owner}/${repo}/git/refs/heads/${branch}`, {
+      sha: commitData.data.sha
+    });
+
+    console.log(`Committed ${stagedChanges.size} updates and ${stagedDeletes.size} deletes in ONE commit: ${commitData.data.sha}`);
+    stagedChanges.clear();
+    stagedDeletes.clear();
+    return commitData.data.sha;
   }, CONFIG.maxRetries, CONFIG.retryDelay);
 }
 
@@ -435,6 +514,13 @@ async function syncRecentArticles() {
         console.log(`Skipping article with missing slug: ${article.title || 'Untitled'}`);
         return;
       }
+
+      // Deleted articles: remove all their files from the repo (page becomes 404)
+      if (article.status === 'deleted') {
+        const removed = await deleteContentDir(`content/articles/${article.slug}/`);
+        console.log(`Deleted article ${article.slug}: removed ${removed} files`);
+        return;
+      }
       
       // Prepare metadata for the article
       const metadata = {
@@ -454,6 +540,7 @@ async function syncRecentArticles() {
         cover: article.cover || null,
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
+        hideDetailPage: article.hideDetailPage || false,
         author: article.author || null,
         ai_generated: article.ai_generated || false,
         ai_generated_cn: article.ai_generated_cn || null,
@@ -1509,6 +1596,9 @@ async function main() {
       totalSyncedItems += taskCount || 0;
     }
     
+    // Commit all staged file changes as a single commit
+    await commitStagedChanges();
+
     const endTime = Date.now();
     const durationSeconds = ((endTime - startTime) / 1000).toFixed(2);
     
