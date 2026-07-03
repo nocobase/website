@@ -7274,8 +7274,7 @@ ul.articles a:hover img {
   font-feature-settings: "palt";
 }
 
-/* megamenu: let long item titles (e.g. AI Blueprints) wrap instead of clipping */
-#topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item {
-  white-space: normal;
-  line-height: 1.45;
+/* AI Blueprints menu items: small font (like the Solutions submodule items) so longer titles fit on one line */
+#topnav .navigation-menu > li .submenu.megamenu li .sub-menu-item.blueprint-item {
+  font-size: 12px;
 }

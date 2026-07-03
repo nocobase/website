@@ -11,7 +11,7 @@ import ImageZoom from "../../../components/ImageZoom.astro";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "ja");
-if (!data) {
+if (!data || data.hideDetailPage) {
   return new Response("Not found", { status: 404 });
 }
 const title = data.title_ja || data.title;

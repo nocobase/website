@@ -5,7 +5,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import DocSearch from "../components/DocSearch.astro";
 import { listLightSolutions } from "../utils";
 
-const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
@@ -130,7 +130,7 @@ const meta = {
     <link rel="preload" href="/css/tiny-slider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/tiny-slider.css"></noscript>
     <!-- Main Css -->
-    <link href="/css/style.css?v2.10" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="/css/style.css?v2.11" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="/css/tobii.min.css" rel="stylesheet" type="text/css" />
     <!-- Optimize font loading -->
     <style>
@@ -521,7 +521,7 @@ const meta = {
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> 轻量方案</li>
                     {lightSolutions.map((s: any) => (
-                      <li><a href={`/cn/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title_cn || s.title}</a></li>
+                      <li><a href={`/cn/ai-blueprints/${s.slug}`} class="sub-menu-item blueprint-item">{s.title_cn || s.title}</a></li>
                     ))}
                     <li><a href="/cn/ai-blueprints" class="sub-menu-item fw-medium">全部轻量方案 <i class="uil uil-angle-right"></i></a></li>
                   </ul>
