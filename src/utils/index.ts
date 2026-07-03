@@ -898,11 +898,14 @@ export async function getSitemapLinks() {
     { lang: 'x-default', url: `/en${path}` },
   ];
 
-  const tagLinks = tags.map((tag: any) => ({
-    url: `/en/blog/tags/${tag.slug}`,
-    lastmod: tag.updatedAt,
-    links: generateBlogLanguageLinks(`/blog/tags/${tag.slug}`),
-  }));
+  // Only tags with a slug have real tag pages — never emit /blog/tags/null
+  const tagLinks = tags
+    .filter((tag: any) => tag.slug)
+    .map((tag: any) => ({
+      url: `/en/blog/tags/${tag.slug}`,
+      lastmod: tag.updatedAt,
+      links: generateBlogLanguageLinks(`/blog/tags/${tag.slug}`),
+    }));
 
   const articleLinks = articles.data.map((article: any) => ({
     url: `/en/blog/${article.slug}`,

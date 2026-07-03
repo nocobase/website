@@ -34,7 +34,11 @@ if (items.length === 0) {
     {
       items.map((tag) => (
           <li>
-            <a href={getTagUrl(tag)}>{getTitle(tag)}</a>
+            {tag.slug ? (
+              <a href={getTagUrl(tag)}>{getTitle(tag)}</a>
+            ) : (
+              getTitle(tag)
+            )}
           </li>
       ))
     }
