@@ -514,13 +514,6 @@ async function syncRecentArticles() {
         console.log(`Skipping article with missing slug: ${article.title || 'Untitled'}`);
         return;
       }
-
-      // Deleted articles: remove all their files from the repo (page becomes 404)
-      if (article.status === 'deleted') {
-        const removed = await deleteContentDir(`content/articles/${article.slug}/`);
-        console.log(`Deleted article ${article.slug}: removed ${removed} files`);
-        return;
-      }
       
       // Prepare metadata for the article
       const metadata = {
@@ -758,13 +751,6 @@ async function syncRecentTutorials() {
     try {
       if (!tutorial.slug) {
         console.log(`Skipping tutorial with missing slug: ${tutorial.title || 'Untitled'}`);
-        continue;
-      }
-
-      // Deleted tutorials: remove all their files from the repo (page becomes 404)
-      if (tutorial.status === 'deleted') {
-        const removed = await deleteContentDir(`content/tutorials/${tutorial.slug}/`);
-        console.log(`Deleted tutorial ${tutorial.slug}: removed ${removed} files`);
         continue;
       }
       
