@@ -117,9 +117,10 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-06-28T01:36:41.808Z",
+  "updatedAt": "2026-07-03T02:39:13.172Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "author": "NocoBase team"
+  "author": "NocoBase team",
+  "hideDetailPage": true
 }
