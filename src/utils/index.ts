@@ -314,6 +314,7 @@ async function listContentItems(
     sort = ['-publishedAt'],
     filter = {},
     hideOnBlog,
+    includeHiddenDetail,
     categorySlug,
     tagSlug,
     slug,
@@ -382,6 +383,12 @@ async function listContentItems(
   // Content-specific filters
   if (contentType === 'articles') {
     filterConditions.push({ hideOnListPage: { $ne: true } });
+
+    // Articles without a standalone page are excluded from every listing
+    // unless the caller explicitly opts in (e.g. release timeline).
+    if (!includeHiddenDetail) {
+      filterConditions.push({ hideDetailPage: { $ne: true } });
+    }
 
     if (hideOnBlog === false) {
       filterConditions.push({ hideOnBlog: { $ne: true } });
@@ -661,6 +668,7 @@ function groupPluginsByCategory(plugins: any[]): any[] {
 // List functions
 export async function listArticles(options?: {
   hideOnBlog?: boolean,
+  includeHiddenDetail?: boolean,
   pageSize?: number,
   categorySlug?: string;
   tagSlug?: string;
@@ -716,7 +724,8 @@ export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
-  const locales = locale === '*' ? ['en', 'cn', 'ja', 'fr'] : [locale];
+  // Blog only exists in en/cn/ja — never emit RSS links to other locales' blog
+  const locales = locale === '*' ? ['en', 'cn', 'ja'] : [locale];
 
   for (const post of data) {
     for (const currentLocale of locales) {
@@ -880,16 +889,25 @@ export async function getSitemapLinks() {
     },
   ];
 
+  // Blog only exists in en/cn/ja — other locales return 404, so never
+  // advertise them to search engines.
+  const generateBlogLanguageLinks = (path: string) => [
+    { lang: 'en-US', url: `/en${path}` },
+    { lang: 'zh-CN', url: `/cn${path}` },
+    { lang: 'ja-JP', url: `/ja${path}` },
+    { lang: 'x-default', url: `/en${path}` },
+  ];
+
   const tagLinks = tags.map((tag: any) => ({
     url: `/en/blog/tags/${tag.slug}`,
     lastmod: tag.updatedAt,
-    links: generateLanguageLinks(`/blog/tags/${tag.slug}`),
+    links: generateBlogLanguageLinks(`/blog/tags/${tag.slug}`),
   }));
 
   const articleLinks = articles.data.map((article: any) => ({
     url: `/en/blog/${article.slug}`,
     lastmod: article.updatedAt,
-    links: generateLanguageLinks(`/blog/${article.slug}`),
+    links: generateBlogLanguageLinks(`/blog/${article.slug}`),
   }));
 
   const tutorialLinks = tutorials.data.map((tutorial: any) => ({
@@ -931,6 +949,8 @@ export async function listReleaseNotes(options?: {
     pageSize,
     sort: ['-publishedAt'],
     appends: ['sub_tags', 'cover'],
+    // Timeline still needs articles whose standalone page is hidden
+    includeHiddenDetail: true,
     filter: {
       $and: filterConditions
     }

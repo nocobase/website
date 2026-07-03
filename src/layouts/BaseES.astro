@@ -5,7 +5,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
 import { listLightSolutions } from "../utils";
 
-const { data: lightSolutions } = await listLightSolutions({ pageSize: 5 });
+const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -133,7 +133,7 @@ const meta = {
   <link rel="preload" href="/css/tiny-slider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/css/tiny-slider.css"></noscript>
   <!-- Main Css -->
-  <link href="/css/style.css?v2.10" rel="stylesheet" type="text/css" id="theme-opt" />
+  <link href="/css/style.css?v2.11" rel="stylesheet" type="text/css" id="theme-opt" />
   <link href="/css/tobii.min.css" rel="stylesheet" type="text/css" />
   <!-- <link href="/css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
@@ -469,7 +469,7 @@ const meta = {
                 <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> Explorar</li>
                 <li><a href="https://v2.docs.nocobase.com/get-started/how-nocobase-works" target="_blank" class="sub-menu-item">Ver cómo funciona <i class="uil uil-external-link-alt"></i></a></li>
                 <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Demo en vivo <i class="uil uil-external-link-alt"></i> <span class="badge text-bg-success ms-2">Probar</span></a></li>
-                <li><a href="/es/blog/timeline" title="Notas de versión de NocoBase" class="sub-menu-item">Notas de versión</a></li>
+                <li><a href="/en/blog/timeline" title="Notas de versión de NocoBase" class="sub-menu-item">Notas de versión</a></li>
                 <li><a href="/es/roadmap" title="Roadmap de NocoBase" class="sub-menu-item">Roadmap</a></li>
               </ul>
             </li>
@@ -503,7 +503,7 @@ const meta = {
               <ul>
                 <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
                 {lightSolutions.map((s: any) => (
-                  <li><a href={`/es/ai-blueprints/${s.slug}`} class="sub-menu-item">{s.title}</a></li>
+                  <li><a href={`/es/ai-blueprints/${s.slug}`} class="sub-menu-item blueprint-item">{s.title}</a></li>
                 ))}
                 <li><a href="/es/ai-blueprints" class="sub-menu-item fw-medium">Todos los blueprints <i class="uil uil-angle-right"></i></a></li>
               </ul>
@@ -526,13 +526,13 @@ const meta = {
               <a href="https://forum.nocobase.com/c/english-forum/5" class="sub-menu-item" title="Forum NocoBase" target="_blank">Forum <i class="uil uil-external-link-alt"></i></a>
             </li>
             <li>
-              <a href="/es/blog/tags/customer-stories" class="sub-menu-item">Historias de clientes</a>
+              <a href="/en/blog/tags/customer-stories" class="sub-menu-item">Historias de clientes</a>
             </li>
             <!-- <li>
-              <a href="/es/blog/tags/nocobase-stories" class="sub-menu-item">Historias de NocoBase</a>
+              <a href="/en/blog/tags/nocobase-stories" class="sub-menu-item">Historias de NocoBase</a>
             </li> -->
             <li>
-              <a href="/es/blog" title="Blog de NocoBase" class="sub-menu-item">Blog</a>
+              <a href="/en/blog" title="Blog de NocoBase" class="sub-menu-item">Blog</a>
             </li>
           </ul>
         </li>
@@ -648,7 +648,7 @@ const meta = {
                   </a>
                 </li>
                 <li>
-                  <a href="/es/blog" class="text-foot" title="Blog de NocoBase">
+                  <a href="/en/blog" class="text-foot" title="Blog de NocoBase">
                     <i class="uil uil-angle-right-b me-1"></i> Blog
                   </a>
                 </li>
@@ -658,7 +658,7 @@ const meta = {
                   </a>
                 </li>
                 <li>
-                  <a href="/es/blog/timeline" title="Notas de versión de NocoBase" class="text-foot">
+                  <a href="/en/blog/timeline" title="Notas de versión de NocoBase" class="text-foot">
                     <i class="uil uil-angle-right-b me-1"></i> Notas de versión
                   </a>
                 </li>

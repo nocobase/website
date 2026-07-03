@@ -44,6 +44,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return context.redirect(englishPath, 301);
   }
 
+  // Blog only exists in en/cn/ja — other locales' blog URLs are gone (hard 404)
+  if (/^\/(de|es|fr|id|pt|vi|tw)\/blog(\/.*)?$/.test(pathname)) {
+    return context.rewrite('/404');
+  }
+
   // Check if the current path matches any French redirect patterns
   for (const pattern of FRENCH_REDIRECT_PATTERNS) {
     if (pattern.test(pathname)) {

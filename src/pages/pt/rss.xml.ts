@@ -9,7 +9,8 @@ export async function GET() {
     title: 'Blog da NocoBase',
     description,
     site: 'https://www.nocobase.com/',
-    items: await getRssItems('pt'),
+    // pt blog was removed — feed keeps working but links to English posts
+    items: await getRssItems('en'),
     customData: `<language>pt-BR</language>`,
   });
 }

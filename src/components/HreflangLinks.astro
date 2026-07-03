@@ -20,6 +20,14 @@ const LOCALES = [
 const codes = LOCALES.map((l) => l.code);
 const langPrefixRegex = new RegExp(`^/(${codes.join("|")})(/|$)`);
 
+// Blog only exists in en/cn/ja — never advertise other locales' blog URLs
+// (they return 404).
+const BLOG_LOCALES = new Set(["en", "cn", "ja"]);
+const isBlogPath = /^\/[a-z]{2}\/blog(\/|$)/.test(pathname) || /^\/blog(\/|$)/.test(pathname);
+const visibleLocales = isBlogPath
+  ? LOCALES.filter((l) => BLOG_LOCALES.has(l.code))
+  : LOCALES;
+
 const pathFor = (lang) => {
   let p = langPrefixRegex.test(pathname)
     ? pathname.replace(langPrefixRegex, `/${lang}/`)
@@ -30,7 +38,7 @@ const pathFor = (lang) => {
   return p;
 };
 ---
-{LOCALES.map((l) => (
+{visibleLocales.map((l) => (
   <link rel="alternate" href={new URL(pathFor(l.code), Astro.site)} hreflang={l.hreflang} />
 ))}
 <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
