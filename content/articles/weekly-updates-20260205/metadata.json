@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
-      "updatedAt": "2024-11-24T05:34:17.666Z",
+      "updatedAt": "2026-06-24T12:43:08.286Z",
       "id": 4,
       "title": "Release Notes",
       "title_cn": "发布日志",
@@ -27,6 +27,8 @@
       "title_ja": "リリースノート",
       "description_ja": "最新の機能、改善点、およびバグ修正について学びましょう。",
       "keywords_ja": "NocoBaseリリースノート, ソフトウェアアップデート, バージョンリリース, NocoBaseアップデート, 最新機能, リリースアナウンス, 製品アップデート",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2025-01-22T07:04:48.761Z",
-      "updatedAt": "2026-01-20T13:16:34.383Z",
+      "updatedAt": "2026-06-24T12:43:08.692Z",
       "id": 117,
       "title": "Latest Updates",
       "title_cn": "最新动态",
@@ -53,8 +55,10 @@
       "title_ja": "最新情報",
       "description_ja": "NocoBaseの週間進捗、新機能の予告、お知らせなどをまとめてお届けします。",
       "keywords_ja": "NocoBase 最新情報, 週間アップデート, 機能予告, 公式発表, 製品進捗",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2026-02-05T03:09:32.822Z",
         "updatedAt": "2026-02-05T03:09:32.822Z",
@@ -66,7 +70,7 @@
   "sub_tags": [
     {
       "createdAt": "2025-01-22T07:04:48.761Z",
-      "updatedAt": "2026-01-20T13:16:34.383Z",
+      "updatedAt": "2026-06-24T12:43:08.692Z",
       "id": 117,
       "title": "Latest Updates",
       "title_cn": "最新动态",
@@ -81,8 +85,10 @@
       "title_ja": "最新情報",
       "description_ja": "NocoBaseの週間進捗、新機能の予告、お知らせなどをまとめてお届けします。",
       "keywords_ja": "NocoBase 最新情報, 週間アップデート, 機能予告, 公式発表, 製品進捗",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 9,
-      "updatedById": 1,
+      "updatedById": 9,
       "article_sub_tags": {
         "createdAt": "2026-02-05T03:09:32.834Z",
         "updatedAt": "2026-02-05T03:09:32.834Z",
@@ -115,5 +121,6 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-05T03:47:47.462Z"
+  "updatedAt": "2026-07-03T02:39:14.931Z",
+  "hideDetailPage": true
 }
