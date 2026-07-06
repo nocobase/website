@@ -546,21 +546,21 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-07-06T02:53:05.334Z",
-    "updatedAt": "2026-07-06T02:53:05.348Z",
-    "id": 2608,
-    "title": "20260706-105245",
-    "filename": "20260706-105245-pcr06s.png",
+    "createdAt": "2026-07-06T06:43:34.840Z",
+    "updatedAt": "2026-07-06T06:43:34.850Z",
+    "id": 2610,
+    "title": "法国政府 (2)",
+    "filename": "法国政府 (2)-8g4luf.png",
     "extname": ".png",
-    "size": 95575,
+    "size": 313461,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/20260706-105245-pcr06s.png",
-    "preview": "https://static-docs.nocobase.com/20260706-105245-pcr06s.png",
+    "url": "https://static-docs.nocobase.com/%E6%B3%95%E5%9B%BD%E6%94%BF%E5%BA%9C%20(2)-8g4luf.png",
+    "preview": "https://static-docs.nocobase.com/%E6%B3%95%E5%9B%BD%E6%94%BF%E5%BA%9C%20(2)-8g4luf.png",
     "storageId": 2,
-    "createdById": 22,
-    "updatedById": 22
+    "createdById": 1,
+    "updatedById": 1
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
@@ -569,5 +569,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-06T06:22:36.340Z"
+  "updatedAt": "2026-07-06T06:43:43.452Z"
 }
