@@ -1,14 +1,14 @@
 {
-  "id": 1114,
-  "title": "NocoBase v2.2.0-alpha.6: Improvements",
-  "title_cn": "NocoBase v2.2.0-alpha.6：优化",
-  "title_ja": "NocoBase v2.2.0-alpha.6：機能改善",
-  "description": "Release Note of v2.2.0-alpha.6",
-  "description_cn": "v2.2.0-alpha.6 更新日志",
+  "id": 1115,
+  "title": "NocoBase v2.2.0-beta.9",
+  "title_cn": "NocoBase v2.2.0-beta.9",
+  "title_ja": null,
+  "description": "Release Note of v2.2.0-beta.9",
+  "description_cn": "v2.2.0-beta.9 更新日志",
   "description_ja": null,
-  "slug": "v2.2.0-alpha.6",
-  "publishedAt": "2026-07-04T16:00:00.000Z",
-  "status": "published",
+  "slug": "v2.2.0-beta.9",
+  "publishedAt": null,
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -32,51 +32,22 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-07-05T05:50:53.804Z",
-        "updatedAt": "2026-07-05T05:50:53.804Z",
+        "createdAt": "2026-07-06T02:53:34.183Z",
+        "updatedAt": "2026-07-06T02:53:34.183Z",
         "tagId": 4,
-        "articleId": 1114
+        "articleId": 1115
       }
     }
   ],
-  "sub_tags": [
-    {
-      "createdAt": "2025-01-22T06:50:37.402Z",
-      "updatedAt": "2026-06-24T12:43:08.688Z",
-      "id": 115,
-      "title": "Alpha",
-      "title_cn": null,
-      "sort": 114,
-      "description": null,
-      "description_cn": null,
-      "displayOnPage": null,
-      "slug": null,
-      "displayOnBlog": null,
-      "keywords": null,
-      "keywords_cn": null,
-      "title_ja": null,
-      "description_ja": null,
-      "keywords_ja": null,
-      "displayOnAiBlueprint": false,
-      "displayOnAiBlueprintPage": false,
-      "createdById": 9,
-      "updatedById": 9,
-      "article_sub_tags": {
-        "createdAt": "2026-07-06T02:37:26.145Z",
-        "updatedAt": "2026-07-06T02:37:26.145Z",
-        "articles_id": 1114,
-        "tags_id": 115
-      }
-    }
-  ],
+  "sub_tags": [],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": true,
-  "hideDetailPage": true,
+  "hideOnBlog": false,
+  "hideDetailPage": false,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-07-06T02:37:26.130Z"
+  "updatedAt": "2026-07-06T02:53:34.160Z"
 }

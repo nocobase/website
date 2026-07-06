@@ -123,3 +123,15 @@ This is also the kind of system development approach that deserves more attentio
 AI can accelerate code generation and development, but real business systems cannot rely on one-time generation alone. They need stable data models, clear permission boundaries, traceable workflows, auditable history, and an architecture that can keep evolving.
 
 This is where NocoBase delivers its value: **it allows both AI and delivery teams to avoid starting from scratch, and instead build, extend, and maintain real applications on a platform that already provides the foundational capabilities required by business systems.**
+
+
+**More Customer Stories:**
+
+* [How to Deliver a Complex OA System in 3 Months with NocoBase](https://www.nocobase.com/en/blog/deliver-complex-oa-system-nocobase-3-months)
+* [Case Study: Digitizing Medical Manufacturing Workflows with NocoBase](https://www.nocobase.com/en/blog/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase)
+* [Software Vendor Boosts Delivery Efficiency by 70% with NocoBase](https://www.nocobase.com/en/blog/software-vendor-boosts-delivery-efficiency-with-nocobase)
+* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/en/blog/an-erp-built-with-nocobase)
+* [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/en/blog/shenzhen-chuanglianyun-tech-development-methodology)
+* [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/en/blog/ai-multimodal-platform)
+* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/en/blog/nocobase-in-russia)
+* [NocoBase Enters German University Classrooms](https://www.nocobase.com/en/blog/university-course)
