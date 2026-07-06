@@ -66,7 +66,7 @@ After submission, the platform supports multi-role submission and validation rou
 
 The platform also provides immutable audit history, save-and-resume functionality, and low-code administrative interfaces. Functional teams can rapidly evolve forms and workflows without requiring full redevelopment.
 
-**暂时无法在飞书文档外展示此内容**
+![GIE.png](https://static-docs.nocobase.com/image-b8ijcx.png)
 
 ### Platform 2: Fleet Vehicle Pooling Management Platform (SID)
 
@@ -123,7 +123,6 @@ This is also the kind of system development approach that deserves more attentio
 AI can accelerate code generation and development, but real business systems cannot rely on one-time generation alone. They need stable data models, clear permission boundaries, traceable workflows, auditable history, and an architecture that can keep evolving.
 
 This is where NocoBase delivers its value: **it allows both AI and delivery teams to avoid starting from scratch, and instead build, extend, and maintain real applications on a platform that already provides the foundational capabilities required by business systems.**
-
 
 **More Customer Stories:**
 
