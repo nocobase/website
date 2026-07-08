@@ -1,0 +1,61 @@
+{
+  "id": 374263195435008,
+  "title": "Renewal Management  System",
+  "title_cn": "续约管理系统",
+  "description": "Build a renewal management system with AI and NocoBase to track contract expirations, customer health, and revenue risk in one place.\n",
+  "description_cn": "用 AI 与 NocoBase 搭建续约管理系统，集中跟踪合同到期、客户健康度与收入风险。",
+  "slug": "renewal-management-system",
+  "publishedAt": "2026-07-07T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
+      "id": 262,
+      "title": "Support",
+      "title_cn": "客服与工单",
+      "sort": 260,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-08T04:56:38.475Z",
+        "updatedAt": "2026-07-08T04:56:38.475Z",
+        "tagId": 262,
+        "solutionId": 374263195435008
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-08T04:51:38.934Z",
+    "updatedAt": "2026-07-08T04:51:38.942Z",
+    "id": 2611,
+    "title": "Renewal Management3",
+    "filename": "Renewal Management3-m2qk1g.PNG",
+    "extname": ".PNG",
+    "size": 259921,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Renewal%20Management3-m2qk1g.PNG",
+    "preview": "https://static-docs.nocobase.com/Renewal%20Management3-m2qk1g.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 续约管理系统：续约机会、客户健康度、ARR 风险看板、阶段看板、日历跟进、AI 续约分析和 AI 自动填写续约表单。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/40-renewal-management.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-08T04:56:38.480Z"
+}
