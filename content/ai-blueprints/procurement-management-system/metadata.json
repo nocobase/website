@@ -1,0 +1,61 @@
+{
+  "id": 374350871068672,
+  "title": "Procurement Management System",
+  "title_cn": "采购管理系统",
+  "description": "Centralize procurement requests, vendors, and budget risks in NocoBase; AI Agent builds the workflow, while AI employees generate analysis.",
+  "description_cn": "把采购申请、供应商和预算风险放进 NocoBase，由 AI Agent 搭流程，AI 员工生成分析。",
+  "slug": "procurement-management-system",
+  "publishedAt": "2026-07-07T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
+      "id": 259,
+      "title": "Inventory & Assets",
+      "title_cn": "资产与库存",
+      "sort": 257,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-08T16:33:25.999Z",
+        "updatedAt": "2026-07-08T16:33:25.999Z",
+        "tagId": 259,
+        "solutionId": 374350871068672
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-08T16:31:17.626Z",
+    "updatedAt": "2026-07-08T16:31:17.631Z",
+    "id": 2616,
+    "title": "Procurement1",
+    "filename": "Procurement1-ovk10h.png",
+    "extname": ".png",
+    "size": 161412,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Procurement1-ovk10h.png",
+    "preview": "https://static-docs.nocobase.com/Procurement1-ovk10h.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build an application with NocoBase — Procurement Management System: purchase requests, supplier spend, approval status, AI risk detection, and procurement analysis reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/55-procurement-management-system.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-08T16:33:26.006Z"
+}
