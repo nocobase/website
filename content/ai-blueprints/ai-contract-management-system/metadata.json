@@ -1,0 +1,61 @@
+{
+  "id": 374336075661312,
+  "title": "Contract Management System",
+  "title_cn": "合同管理系统",
+  "description": "Use AI Agent to build contract tracking in NocoBase, while AI employees extract clauses and monitor renewal risks.",
+  "description_cn": "从合同台账到续约提醒，由 AI Agent 调用 NocoBase 搭建，AI 员工负责条款提取与风险跟踪。",
+  "slug": "ai-contract-management-system",
+  "publishedAt": "2026-07-07T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.060Z",
+      "updatedAt": "2026-06-24T09:34:52.536Z",
+      "id": 259,
+      "title": "Inventory & Assets",
+      "title_cn": "资产与库存",
+      "sort": 257,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-08T14:35:50.594Z",
+        "updatedAt": "2026-07-08T14:35:50.594Z",
+        "tagId": 259,
+        "solutionId": 374336075661312
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-08T14:32:50.298Z",
+    "updatedAt": "2026-07-08T14:32:50.302Z",
+    "id": 2614,
+    "title": "Candidate Management1",
+    "filename": "Candidate Management1-0gprxj.png",
+    "extname": ".png",
+    "size": 254636,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Candidate%20Management1-0gprxj.png",
+    "preview": "https://static-docs.nocobase.com/Candidate%20Management1-0gprxj.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build an App with NocoBase — Contract Management System: Contract ledger, lifecycle calendar, AI clause extraction, risk clause review, and obligation tracking. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/26-contract-management.html ",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-08T14:47:03.580Z"
+}

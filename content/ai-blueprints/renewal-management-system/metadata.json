@@ -55,7 +55,7 @@
     "updatedById": 22
   },
   "author": "NocoBase Team",
-  "prompt": "用 NocoBase 搭建一个应用 —— 续约管理系统：续约机会、客户健康度、ARR 风险看板、阶段看板、日历跟进、AI 续约分析和 AI 自动填写续约表单。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/40-renewal-management.html",
+  "prompt": "Build an App with NocoBase — Renewal Management System: Renewal opportunities, customer health scores, ARR risk dashboard, stage board, follow-up calendar, AI renewal analysis, and AI-assisted renewal form autofill. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/40-renewal-management.html",
   "prompt_cn": null,
-  "updatedAt": "2026-07-08T04:56:38.480Z"
+  "updatedAt": "2026-07-08T14:47:51.223Z"
 }
