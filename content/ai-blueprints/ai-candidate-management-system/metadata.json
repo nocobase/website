@@ -1,0 +1,61 @@
+{
+  "id": 374320984555520,
+  "title": "Candidate Management System",
+  "title_cn": "候选人管理系统",
+  "description": "A NocoBase recruiting system with AI resume parsing, interview scoring, and candidate stage tracking for structured hiring workflows.",
+  "description_cn": "面向招聘协作的 NocoBase 企业业务系统，结合 AI 简历解析、面试评分和候选人阶段管理。",
+  "slug": "ai-candidate-management-system",
+  "publishedAt": "2026-07-07T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:57.434Z",
+      "updatedAt": "2026-06-24T09:34:52.540Z",
+      "id": 260,
+      "title": "HR",
+      "title_cn": "人事",
+      "sort": 258,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-08T12:35:54.552Z",
+        "updatedAt": "2026-07-08T12:35:54.552Z",
+        "tagId": 260,
+        "solutionId": 374320984555520
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-08T12:29:29.189Z",
+    "updatedAt": "2026-07-08T12:29:29.198Z",
+    "id": 2613,
+    "title": "Candidate Management1",
+    "filename": "Candidate Management1-rmcut4.png",
+    "extname": ".png",
+    "size": 254636,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Candidate%20Management1-rmcut4.png",
+    "preview": "https://static-docs.nocobase.com/Candidate%20Management1-rmcut4.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 候选人管理系统:候选人档案、AI 简历解析、招聘阶段、面试室和多维度评分卡。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/43-candidate-management.html ",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-08T12:35:54.558Z"
+}
