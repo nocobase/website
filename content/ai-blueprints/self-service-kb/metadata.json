@@ -1,0 +1,61 @@
+{
+  "id": 374267337310208,
+  "title": "Self-Service KB",
+  "title_cn": "自助知识库系统",
+  "description": "A self-service knowledge base for SaaS support, combining help center content, FAQ categories, and AI-driven content insights.\n",
+  "description_cn": "面向 SaaS 客户支持的自助知识库，整合帮助中心、FAQ 分类和 AI 内容分析，提升用户自助解决率。\n\n",
+  "slug": "self-service-kb",
+  "publishedAt": "2026-07-07T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.200Z",
+      "updatedAt": "2026-06-24T09:34:52.549Z",
+      "id": 262,
+      "title": "Support",
+      "title_cn": "客服与工单",
+      "sort": 260,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-08T05:29:33.894Z",
+        "updatedAt": "2026-07-08T05:29:33.894Z",
+        "tagId": 262,
+        "solutionId": 374267337310208
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-08T05:24:16.995Z",
+    "updatedAt": "2026-07-08T05:24:17.007Z",
+    "id": 2612,
+    "title": "Self-Service KB",
+    "filename": "Self-Service KB-5v6517.png",
+    "extname": ".png",
+    "size": 344484,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Self-Service%20KB-5v6517.png",
+    "preview": "https://static-docs.nocobase.com/Self-Service%20KB-5v6517.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "用 NocoBase 搭建一个应用 —— 自助知识库系统:帮助中心首页、文章库、FAQ 分类、知识主题管理、阅读量与帮助率统计，以及 AI 内容分析。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/34-self-service-kb.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-08T05:29:33.900Z"
+}
