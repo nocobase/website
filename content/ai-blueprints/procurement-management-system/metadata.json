@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — Procurement Management System: purchase requests, supplier spend, approval status, AI risk detection, and procurement analysis reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/55-procurement-management-system.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-07-08T16:33:26.006Z"
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 采购管理:采购申请、供应商支出、审批状态、AI 风险检测,以及采购分析报表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/55-procurement-management-system.html",
+  "updatedAt": "2026-07-08T17:29:46.950Z"
 }

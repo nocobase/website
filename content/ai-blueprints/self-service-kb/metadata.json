@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build an App with NocoBase — Self-Service Knowledge Base System: Help center homepage, article library, FAQ categories, knowledge topic management, view and helpfulness statistics, and AI content analysis. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/34-self-service-kb.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-07-08T14:47:35.600Z"
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 自助知识库:帮助中心首页、文章库、FAQ 分类、知识主题管理、浏览量与有用度统计,以及 AI 内容分析。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/34-self-service-kb.html",
+  "updatedAt": "2026-07-08T17:29:45.074Z"
 }

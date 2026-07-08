@@ -56,6 +56,6 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build an App with NocoBase — Candidate Management System: Candidate profiles, AI resume parsing, recruitment stages, interview rooms, and multi-dimensional scorecards. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/43-candidate-management.html",
-  "prompt_cn": null,
-  "updatedAt": "2026-07-08T14:47:22.128Z"
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 候选人管理:候选人档案、AI 简历解析、招聘阶段、面试间,以及多维度评分卡。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/43-candidate-management.html",
+  "updatedAt": "2026-07-08T17:29:45.693Z"
 }
