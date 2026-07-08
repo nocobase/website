@@ -38,18 +38,18 @@
     }
   ],
   "cover": {
-    "createdAt": "2026-07-08T14:32:50.298Z",
-    "updatedAt": "2026-07-08T14:32:50.302Z",
-    "id": 2614,
-    "title": "Candidate Management1",
-    "filename": "Candidate Management1-0gprxj.png",
+    "createdAt": "2026-07-08T16:01:22.660Z",
+    "updatedAt": "2026-07-08T16:01:22.673Z",
+    "id": 2615,
+    "title": "Contract Management1",
+    "filename": "Contract Management1-xq9w4y.png",
     "extname": ".png",
-    "size": 254636,
+    "size": 192977,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/Candidate%20Management1-0gprxj.png",
-    "preview": "https://static-docs.nocobase.com/Candidate%20Management1-0gprxj.png",
+    "url": "https://static-docs.nocobase.com/Contract%20Management1-xq9w4y.png",
+    "preview": "https://static-docs.nocobase.com/Contract%20Management1-xq9w4y.png",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -57,5 +57,5 @@
   "author": "NocoBase Team",
   "prompt": "Build an App with NocoBase — Contract Management System: Contract ledger, lifecycle calendar, AI clause extraction, risk clause review, and obligation tracking. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/26-contract-management.html ",
   "prompt_cn": null,
-  "updatedAt": "2026-07-08T14:47:03.580Z"
+  "updatedAt": "2026-07-08T16:01:25.165Z"
 }
