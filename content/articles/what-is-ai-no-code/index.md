@@ -6,7 +6,7 @@ Now that AI can write code, generate applications, and automate workflows, do no
 
 The answer is yes.
 
-![AI no code-tdb8am.png](https://static-docs.nocobase.com/AI%20no%20code-tdb8am.png)
+![AI no code-tdb8am.png.png](https://static-docs.nocobase.com/f14bb282-3d2f-49b6-a514-3ef31be43815-n4l2qj.png)
 
 Google Trends shows that search interest in **“AI no code” has risen quickly over the past year.**
 
@@ -331,7 +331,6 @@ AI makes software building faster, but enterprises still need systems that are m
 That is the real value of no-code platforms in the AI era.
 
 If this article helped you better understand AI no-code, feel free to share it with friends who are choosing AI tools, no-code platforms, or internal business system solutions.
-
 
 **Related reading**:
 
