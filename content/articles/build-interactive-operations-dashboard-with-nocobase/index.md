@@ -2,7 +2,7 @@ This article uses an operations dashboard for a ticketing system as an example. 
 
 Although the example comes from a ticketing scenario, the same approach also applies to CRM, equipment maintenance, project management, approval workflows, customer success, and other business systems.
 
-The point of this article is not to show how to write a large dashboard with a JS block. Instead, it explains how to combine NocoBase native blocks with JS blocks: native blocks handle standard capabilities, while JS blocks fill in the personalized experience.
+💡 The point of this article is not to show how to write a large dashboard with a JS block. Instead, it explains how to combine NocoBase native blocks with JS blocks: native blocks handle standard capabilities, while JS blocks fill in the personalized experience.
 
 ![JS 区块-6ypvx7.png](https://static-docs.nocobase.com/JS%20%E5%8C%BA%E5%9D%97-6ypvx7.png)
 
@@ -493,8 +493,8 @@ If you choose to let AI help you build, back up the project with Backup Manager 
 
 ## Reference Documentation
 
-- [Chart configuration](https://docs.nocobase.com/cn/data-visualization/guide/chart-options)
-- [Frontend RunJS](https://docs.nocobase.com/cn/runjs)
-- [Filter form](https://docs.nocobase.com/cn/interface-builder/blocks/filter-blocks/form)
-- [AI Builder - UI Builder](https://docs.nocobase.com/cn/ai-builder/ui-builder)
+- [Chart configuration](https://docs.nocobase.com/en/data-visualization/guide/chart-options)
+- [Frontend RunJS](https://docs.nocobase.com/en/runjs)
+- [Filter form](https://docs.nocobase.com/en/interface-builder/blocks/filter-blocks/form)
+- [AI Builder - UI Builder](https://docs.nocobase.com/en/ai-builder/ui-builder)
 - [ECharts Options](https://echarts.apache.org/en/option.html)

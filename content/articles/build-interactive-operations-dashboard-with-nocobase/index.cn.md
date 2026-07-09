@@ -2,7 +2,7 @@
 
 虽然示例来自工单场景，但这些方法也适用于 CRM、设备运维、项目管理、审批流、客户成功等业务系统。
 
-这篇文章想介绍的不是“怎么用 JS 区块写一个大屏”，而是如何把 NocoBase 的原生区块能力和 JS 区块组合起来：让原生区块负责标准能力，让 JS 区块补足个性化体验。
+💡 这篇文章想介绍的不是“怎么用 JS 区块写一个大屏”，而是如何把 NocoBase 的原生区块能力和 JS 区块组合起来：让原生区块负责标准能力，让 JS 区块补足个性化体验。
 
 ![JS 区块-6ypvx7.png](https://static-docs.nocobase.com/JS%20%E5%8C%BA%E5%9D%97-6ypvx7.png)
 
@@ -46,8 +46,6 @@
 - 图表点击后，再把下钻条件传给下方 JS 明细区块。
 
 这样做的好处是：标准统计和筛选仍然保留 NocoBase 的配置能力，个性化展示和复杂交互则交给 JS 区块完成。页面既不是“只能配置”，也不是“全部代码”，而是配置和代码各司其职。
-
----
 
 ## 一、图表区块如何自定义样式
 
@@ -138,8 +136,6 @@ return {
 - Custom option 负责视觉表达；
 - 自定义字段负责携带下钻上下文。
 
----
-
 ## 二、让系统筛选区块成为整个页面的观察口径
 
 ![筛选区-fep21g.gif](https://static-docs.nocobase.com/%E7%AD%9B%E9%80%89%E5%8C%BA-fep21g.gif)
@@ -199,8 +195,6 @@ await resource.refresh();
 
 JS 区块通过 resource 查询业务数据，而不是直接写 SQL。这样更容易和 NocoBase 的权限、数据源和页面运行时保持一致。
 
----
-
 ## 三、用 JS 区块展示 KPI 卡片
 
 ![筛选区-n6tphh.gif](https://static-docs.nocobase.com/%E7%AD%9B%E9%80%89%E5%8C%BA-n6tphh.gif)
@@ -240,8 +234,6 @@ JS 区块的关键点是：
 - 筛选变化后重新渲染 JS 区块。
 
 在真实页面里，筛选按钮和重置按钮可以配置事件流，让它们在完成原生筛选动作后，同时刷新 KPI JS 区块和下钻 JS 区块。这样用户点击一次筛选，图表和自定义内容都会基于同一个范围更新。
-
----
 
 ## 四、图表联动 JS 区块做下钻
 
@@ -326,8 +318,6 @@ chart.off('click');
 chart.on('click', clickHandler);
 ```
 
----
-
 ## 五、下钻 JS 区块如何展示明细
 
 ![下钻 JS 区块-0jg2lt.png](https://static-docs.nocobase.com/%E4%B8%8B%E9%92%BB%20JS%20%E5%8C%BA%E5%9D%97-0jg2lt.png)
@@ -406,8 +396,6 @@ function clearChartDrilldown() {
 - 图表只负责传递 filter；
 - JS 区块负责查询和展示明细；
 - 点击不同图表，可以共用同一个下钻区块。
-
----
 
 ## 实践建议
 

@@ -8,7 +8,7 @@
   "description_ja": "NocoBase のチャート、フィルター、JS ブロックを組み合わせ、フィルター連動やドリルダウンに対応した運用ダッシュボードを構築する方法を紹介します。\n",
   "slug": "build-interactive-operations-dashboard-with-nocobase",
   "publishedAt": "2026-07-09T05:27:00.136Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-23T04:01:54.838Z",
@@ -69,7 +69,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-07-09T07:54:35.531Z",
+    "updatedAt": "2026-07-09T07:54:35.538Z",
+    "id": 2618,
+    "title": "教程系列封面",
+    "filename": "教程系列封面-f8nh2x.jpg",
+    "extname": ".jpg",
+    "size": 279443,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-f8nh2x.jpg",
+    "preview": "https://static-docs.nocobase.com/%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-f8nh2x.jpg",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "hideDetailPage": false,
@@ -77,5 +93,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-09T06:51:14.105Z"
+  "updatedAt": "2026-07-09T07:55:06.606Z"
 }
