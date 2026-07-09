@@ -138,8 +138,6 @@ The core idea of this part is:
 - Custom option is responsible for visual expression.
 - Custom fields carry drilldown context.
 
----
-
 ## 2. Make the System Filter Block the Observation Scope for the Whole Page
 
 ![筛选区-fep21g.gif](https://static-docs.nocobase.com/%E7%AD%9B%E9%80%89%E5%8C%BA-fep21g.gif)
@@ -199,8 +197,6 @@ await resource.refresh();
 
 JS blocks query business data through resource instead of directly writing SQL. This makes it easier to stay aligned with NocoBase permissions, data sources, and page runtime behavior.
 
----
-
 ## 3. Use JS Blocks to Display KPI Cards
 
 ![筛选区-n6tphh.gif](https://static-docs.nocobase.com/%E7%AD%9B%E9%80%89%E5%8C%BA-n6tphh.gif)
@@ -240,8 +236,6 @@ The key points for JS blocks are:
 - Re-render the JS block after filters change.
 
 On a real page, filter and reset buttons can be configured with event flows. After they complete the native filter action, they can also refresh the KPI JS block and the drilldown JS block. This way, one click updates both the charts and the custom content under the same scope.
-
----
 
 ## 4. Link Chart Blocks with a JS Block for Drilldown
 
@@ -326,8 +320,6 @@ chart.off('click');
 chart.on('click', clickHandler);
 ```
 
----
-
 ## 5. How the Drilldown JS Block Displays Details
 
 ![下钻 JS 区块-0jg2lt.png](https://static-docs.nocobase.com/%E4%B8%8B%E9%92%BB%20JS%20%E5%8C%BA%E5%9D%97-0jg2lt.png)
@@ -407,8 +399,6 @@ The key points here are:
 - The JS block is responsible for querying and displaying details.
 - The same drilldown block can be reused by clicks from different charts.
 
----
-
 ## Practical Recommendations
 
 ### 1. Do Not Rush to Code the Whole Complex Page
@@ -444,8 +434,6 @@ return () => chart.off('click', handler);
 ```
 
 Do not directly use `chart.off('click')` to clear all click events, because this may accidentally remove listeners used by the chart block or configuration panel.
-
----
 
 ## Let AI Help You Build It
 
