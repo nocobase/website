@@ -1,14 +1,14 @@
 {
-  "id": 1118,
-  "title": "NocoBase v2.1.21: Add OrcaRouter as an LLM provider",
-  "title_cn": "NocoBase v2.1.21：新增 OrcaRouter 作为 LLM 提供商",
-  "title_ja": "NocoBase v2.1.21：LLM プロバイダーとして OrcaRouter を追加しました",
-  "description": "Release Note of v2.1.21",
-  "description_cn": "v2.1.21 更新日志",
+  "id": 1120,
+  "title": "NocoBase v2.2.0-beta.10",
+  "title_cn": "NocoBase v2.2.0-beta.10",
+  "title_ja": null,
+  "description": "Release Note of v2.2.0-beta.10",
+  "description_cn": "v2.2.0-beta.10 更新日志",
   "description_ja": null,
-  "slug": "v2.1.21",
-  "publishedAt": "2026-07-08T16:00:00.000Z",
-  "status": "published",
+  "slug": "v2.2.0-beta.10",
+  "publishedAt": null,
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -32,51 +32,22 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-07-08T07:46:35.309Z",
-        "updatedAt": "2026-07-08T07:46:35.309Z",
+        "createdAt": "2026-07-09T02:54:23.433Z",
+        "updatedAt": "2026-07-09T02:54:23.433Z",
         "tagId": 4,
-        "articleId": 1118
+        "articleId": 1120
       }
     }
   ],
-  "sub_tags": [
-    {
-      "createdAt": "2025-01-22T06:52:40.087Z",
-      "updatedAt": "2026-06-24T12:43:08.690Z",
-      "id": 116,
-      "title": "Latest",
-      "title_cn": "Latest",
-      "sort": 115,
-      "description": null,
-      "description_cn": null,
-      "displayOnPage": null,
-      "slug": null,
-      "displayOnBlog": null,
-      "keywords": null,
-      "keywords_cn": null,
-      "title_ja": "Latest",
-      "description_ja": null,
-      "keywords_ja": null,
-      "displayOnAiBlueprint": false,
-      "displayOnAiBlueprintPage": false,
-      "createdById": 9,
-      "updatedById": 9,
-      "article_sub_tags": {
-        "createdAt": "2026-07-09T02:15:19.343Z",
-        "updatedAt": "2026-07-09T02:15:19.343Z",
-        "articles_id": 1118,
-        "tags_id": 116
-      }
-    }
-  ],
+  "sub_tags": [],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": true,
-  "hideDetailPage": true,
+  "hideOnBlog": false,
+  "hideDetailPage": false,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": true,
-  "updatedAt": "2026-07-09T02:15:19.326Z"
+  "ai_generated_ja": null,
+  "updatedAt": "2026-07-09T02:54:23.414Z"
 }
