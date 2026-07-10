@@ -1,11 +1,11 @@
 {
   "id": 74,
-  "title": "NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools",
-  "title_cn": "NocoBase 与 NocoDB：开源无代码（零代码）工具深度对比",
+  "title": "NocoDB vs NocoBase: Open-Source No-Code Tools Compared",
+  "title_cn": "NocoDB 与 NocoBase ：开源无代码工具深度对比",
   "title_ja": "NocoBaseとNocoDB: オープンソースのノーコードツールの徹底比較",
-  "description": "This article provides a detailed comparison between two open-source no-code tools, NocoBase and NocoDB. It highlights their differences in features, user experience, integration capabilities, and enterprise functionality, helping you in-depth and comprehensive understanding.",
-  "description_cn": "本文详细对比了两款开源无代码（零代码）工具 NocoBase 和 NocoDB，从功能特性、用户体验、集成能力和企业级功能等多个维度，帮助你深入且全面了解。",
-  "description_ja": "この記事では、オープンソースのノーコードツールであるNocoBaseとNocoDBの詳細な比較を提供します。機能、ユーザーエクスペリエンス、統合能力、企業機能の違いを強調し、深く包括的な理解を助けます。",
+  "description": "Compare NocoDB and NocoBase across use cases, data modeling, workflows, permissions, integrations, and enterprise features to find the right no-code tool for your team.",
+  "description_cn": "比较 NocoDB 和 NocoBase 在用例、数据建模、工作流程、权限、集成和企业功能方面的差异，以找到适合您团队的正确无代码工具。",
+  "description_ja": "NocoDBとNocoBaseをユースケース、データモデル、ワークフローや権限、統合、企業機能の観点から比較し、チームに最適なノーコードツールを見つけましょう。",
   "slug": "nocobase-vs-nocodb",
   "publishedAt": "2024-09-12T15:43:14.901Z",
   "status": "published",
@@ -508,9 +508,10 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-06-28T01:36:09.650Z",
+  "updatedAt": "2026-07-10T14:40:46.602Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null
+  "ai_generated_ja": null,
+  "hideDetailPage": false
 }
