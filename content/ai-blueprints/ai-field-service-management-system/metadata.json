@@ -1,0 +1,61 @@
+{
+  "id": 375085037191168,
+  "title": "Field Service Management Syste",
+  "title_cn": "现场服务管理系统",
+  "description": "Build a field service system in NocoBase for tickets, dispatching, and SLA tracking, with AI employees summarizing work orders and service reports.",
+  "description_cn": "围绕报修、派工和服务时限搭建 NocoBase 现场服务系统，AI 员工整理工单并生成运营复盘。",
+  "slug": "ai-field-service-management-system",
+  "publishedAt": "2026-07-12T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-24T09:34:52.552Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-12T17:48:03.873Z",
+        "updatedAt": "2026-07-12T17:48:03.873Z",
+        "tagId": 263,
+        "solutionId": 375085037191168
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-12T17:46:19.073Z",
+    "updatedAt": "2026-07-12T17:46:19.079Z",
+    "id": 2627,
+    "title": "FieldOps1",
+    "filename": "FieldOps1-8qbkvv.png",
+    "extname": ".png",
+    "size": 235732,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/FieldOps1-8qbkvv.png",
+    "preview": "https://static-docs.nocobase.com/FieldOps1-8qbkvv.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build an application with NocoBase — Field Service Management System: work order dispatching, technician scheduling, service deadline tracking, spare parts suggestions, and AI work order operations analysis. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/60-field-service-management-system.html\n",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 现场服务管理系统:工单派发、人员调度、服务时限跟踪、备件建议和 AI 工单运营分析。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/60-field-service-management-system.html",
+  "updatedAt": "2026-07-12T17:48:33.994Z"
+}
