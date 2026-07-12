@@ -1,0 +1,61 @@
+{
+  "id": 375087173140480,
+  "title": "Compliance Management System",
+  "title_cn": "合规管理系统",
+  "description": "AI Agent builds the compliance system in NocoBase, while AI employees analyze controls, evidence, and risk reports.",
+  "description_cn": "从控制清单到证据测试，由 AI Agent 搭建 NocoBase 合规系统，AI 员工生成风险报告。",
+  "slug": "ai-compliance-management-system",
+  "publishedAt": "2026-07-12T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-24T09:34:52.552Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-12T18:05:01.854Z",
+        "updatedAt": "2026-07-12T18:05:01.854Z",
+        "tagId": 263,
+        "solutionId": 375087173140480
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-12T17:49:56.352Z",
+    "updatedAt": "2026-07-12T17:49:56.361Z",
+    "id": 2628,
+    "title": "Compliance Management1",
+    "filename": "Compliance Management1-z354a8.png",
+    "extname": ".png",
+    "size": 114388,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Compliance%20Management1-z354a8.png",
+    "preview": "https://static-docs.nocobase.com/Compliance%20Management1-z354a8.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build an application with NocoBase — Compliance Management System: compliance frameworks, controls, evidence materials, testing plans, and AI compliance analysis reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/86-ai-compliance-management-system.html",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 合规管理系统:合规框架、控制项、证据材料、测试计划和 AI 合规分析报告。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/86-ai-compliance-management-system.html\n",
+  "updatedAt": "2026-07-12T18:07:51.888Z"
+}
