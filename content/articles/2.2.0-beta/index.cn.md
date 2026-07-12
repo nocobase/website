@@ -1,52 +1,62 @@
-这是一次**围绕 V2 体验**的重要升级。这个版本带来了 **多工作区**、**新移动端**、**新评论区块**，同时继续补齐 AI 知识库和工作流能力。对正在使用 V2 的团队来说，更值得关注的是全新的 `/v/` 分支——它会作为面向 V2 的独立前端入口，承接后续的功能演进。
+这是一次**围绕 V2 体验**的重要升级。这个版本带来了 **多工作区**、**新移动端**、**新评论区块**，同时继续提升 AI 知识库和工作流能力。对正在使用 V2 的团队来说，更值得关注的是全新的 `/v/` 分支——它会作为面向 V2 的独立前端入口，承接后续的功能演进。
 
 ## 新特性
 
-### 多工作区
+### 多工作区（仅 `/v/` 分支支持）
 
-仅 v 分支支持
+工作区（Portal）用于在同一个应用内提供多个访问入口。每个工作区都可以拥有独立的页面、菜单、导航结构、布局和权限配置。
 
 ![](https://static-docs.nocobase.com/2026-07-10-08-06-15.png)
 
-### 新移动端
+参考文档：
 
-仅 v 分支支持
+- [多工作区](https://docs.nocobase.com/cn/multi-app/multi-portal/)
+
+### 新移动端（仅 `/v/` 分支支持）
+
+新移动端提供了全新的 `/v/mobile` 入口，与此同时，工作区也支持新增移动端布局的工作区。
 
 ![](https://static-docs.nocobase.com/2026-07-10-08-04-59.png)
 
 ### 新评论区块
 
-新评论区块将不再局限于主数据源的评论表
+新评论区块不再局限于主数据源的评论表。
 
 ![](https://static-docs.nocobase.com/Comments-07-01-2026_12_03_PM%20(1).png)
 
-详细用法见：
+参考文档：
 
 - [评论区块](https://docs.nocobase.com/cn/interface-builder/blocks/data-blocks/comment)
 
 ### AI 知识库优化
 
-这个版本继续优化了 AI 知识库相关能力
+这个版本继续优化了 AI 知识库相关能力。
 
 ![](https://static-docs.nocobase.com/20260617003505.png)
 
-详细用法见：
+参考文档：
 
 - [AI 知识库](https://docs.nocobase.com/cn/ai-employees/knowledge-base/knowledge-base/)
 
 ### 工作流：数据库事务节点
 
-工作流新增了数据库事务节点
+工作流新增了数据库事务节点。
 
 ![](https://static-docs.nocobase.com/20260610205505.png)
 
-详细用法见：
+参考文档：
 
 - [数据库事务节点](https://docs.nocobase.com/cn/workflow/nodes/transaction)
 
 ## 新增的 `/v/` 分支
 
 `/v/` 是全新的独立前端入口，并且会独立构建。这个分支会完全移除 V1 的历史遗留内容，只保留面向 V2 的能力。
+
+通常只要在路径前面加上 `/v/`，即可进入 `/v/` 分支。
+
+```bash
+<hostname>/<app-public-path>/v/
+```
 
 如果你正在规划升级路径，这一节最值得重点看。后续很多新能力都会优先落在 `/v/` 分支上。
 
@@ -74,24 +84,30 @@
 - 工作流人工节点暂时还不支持 `/v/` 分支
 - 暂时还不支持给菜单添加徽标数
 
-### 以下插件不再支持 V2
+### 以下插件不再支持 V2（已废弃但尚未移除）
 
-- `@nocobase/plugin-audit-logs`
-- `@nocobase/plugin-backup-restore`
-- `@nocobase/plugin-block-multi-step-form`
-- `@nocobase/plugin-block-tree`
-- `@nocobase/plugin-charts`
-- `@nocobase/plugin-collection-fdw`
-- `@nocobase/plugin-comments`
-- `@nocobase/plugin-custom-variables`
-- `@nocobase/plugin-data-visualization-echarts`
-- `@nocobase/plugin-disable-pm-add`
-- `@nocobase/plugin-field-component-mask`
-- `@nocobase/plugin-graph-collection-manager`
-- `@nocobase/plugin-mobile-client`
-- `@nocobase/plugin-mobile`
-- `@nocobase/plugin-mock-collections`
-- `@nocobase/plugin-multi-app-manager`
-- `@nocobase/plugin-multi-app-share-collection`
-- `@nocobase/plugin-notifications`
-- `@nocobase/plugin-snapshot-field`
+有一部分插件实际上在更早之前就已废弃，其中部分目前仍可使用，但会在 V3 中彻底移除。
+
+| 插件 | 替代品 | 备注
+| --- | --- | --- |
+| `@nocobase/plugin-audit-logs` | `@nocobase/plugin-audit-logger` |  |
+| `@nocobase/plugin-backup-restore` | `@nocobase/plugin-backups` |  |
+| `@nocobase/plugin-block-multi-step-form` | JS Block |  |
+| `@nocobase/plugin-charts` | `@nocobase/plugin-data-visualization` |  |
+| `@nocobase/plugin-collection-fdw` | 从数据库同步 |  |
+| `@nocobase/plugin-comments` | `@nocobase/plugin-block-comment` |  |
+| `@nocobase/plugin-custom-variables` | 事件流 |  |
+| `@nocobase/plugin-data-visualization-echarts` | `@nocobase/plugin-data-visualization` |  |
+| `@nocobase/plugin-disable-pm-add` | 无 |  |
+| `@nocobase/plugin-field-component-mask` | RunJS |  |
+| `@nocobase/plugin-graph-collection-manager` | 无 |  |
+| `@nocobase/plugin-mobile-client` | `@nocobase/plugin-ui-layout` |  |
+| `@nocobase/plugin-mobile` | `@nocobase/plugin-ui-layout` |  |
+| `@nocobase/plugin-mock-collections` | AI 搭建 |  |
+| `@nocobase/plugin-multi-app-manager` | `@nocobase/plugin-app-supervisor` |  |
+| `@nocobase/plugin-multi-app-share-collection` | 无 |  |
+| `@nocobase/plugin-notifications` | `@nocobase/plugin-notification-manager` |  |
+| `@nocobase/plugin-snapshot-field` | 无 |  |
+
+
+
