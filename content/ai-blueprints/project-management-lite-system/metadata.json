@@ -1,0 +1,61 @@
+{
+  "id": 375076598251520,
+  "title": "Project Management - Lite",
+  "title_cn": "轻量项目管理系统",
+  "description": "AI Agent builds a lightweight project management system in NocoBase, while AI employees extract tasks and prepare status reports.",
+  "description_cn": "由 AI Agent 搭建 NocoBase 轻量项目管理系统，AI 员工从会议提任务并生成项目汇报。",
+  "slug": "project-management-lite-system",
+  "publishedAt": "2026-07-12T16:00:00.000Z",
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2026-06-11T08:50:58.595Z",
+      "updatedAt": "2026-06-24T09:34:52.552Z",
+      "id": 263,
+      "title": "Operations",
+      "title_cn": "运营协作",
+      "sort": 261,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": true,
+      "displayOnAiBlueprintPage": true,
+      "createdById": 9,
+      "updatedById": 9,
+      "lightSolutionsTags": {
+        "createdAt": "2026-07-12T16:40:59.523Z",
+        "updatedAt": "2026-07-12T16:40:59.523Z",
+        "tagId": 263,
+        "solutionId": 375076598251520
+      }
+    }
+  ],
+  "cover": {
+    "createdAt": "2026-07-12T16:40:33.250Z",
+    "updatedAt": "2026-07-12T16:40:33.258Z",
+    "id": 2624,
+    "title": "Project Management - Lite1",
+    "filename": "Project Management - Lite1-to1ba3.PNG",
+    "extname": ".PNG",
+    "size": 163590,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Project%20Management%20-%20Lite1-to1ba3.PNG",
+    "preview": "https://static-docs.nocobase.com/Project%20Management%20-%20Lite1-to1ba3.PNG",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
+  "author": "NocoBase Team",
+  "prompt": "Build an application with NocoBase — Lightweight Project Management System: task boards, assignees, priorities, risk tasks, AI-assisted task extraction, and project status reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/53-project-management-system.html",
+  "prompt_cn": null,
+  "updatedAt": "2026-07-12T16:40:59.529Z"
+}
