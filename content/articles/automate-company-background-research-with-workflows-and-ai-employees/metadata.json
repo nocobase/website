@@ -1,7 +1,7 @@
 {
   "id": 1131,
   "title": "Automating Company Background Research with Workflows and AI Employees",
-  "title_cn": "工作流 + AI 员工完成公司背景调研自动化",
+  "title_cn": "使用内置工作流与 AI 员工完成公司背景调研自动化",
   "title_ja": "ワークフロー + AI 従業員で会社背景調査を自動化する",
   "description": "Learn how NocoBase workflows and AI employees automate company background research with traceable tasks and report history.\n",
   "description_cn": "介绍如何用 NocoBase 工作流和 AI 员工自动完成公司背景调研，并保留任务状态、报告历史和可复核记录。",
@@ -121,5 +121,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-13T09:31:15.412Z"
+  "updatedAt": "2026-07-13T13:05:08.267Z"
 }
