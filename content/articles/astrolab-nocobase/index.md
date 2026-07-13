@@ -66,7 +66,7 @@ After submission, the platform supports multi-role submission and validation rou
 
 The platform also provides immutable audit history, save-and-resume functionality, and low-code administrative interfaces. Functional teams can rapidly evolve forms and workflows without requiring full redevelopment.
 
-![GIE.png](https://static-docs.nocobase.com/image-b8ijcx.png)
+![GIE.png](https://static-docs.nocobase.com/whiteboard_exported_image%20(27)-6uds26.png)
 
 ### Platform 2: Fleet Vehicle Pooling Management Platform (SID)
 
