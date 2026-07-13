@@ -115,11 +115,11 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": true,
+  "hideOnBlog": false,
   "hideDetailPage": false,
   "author": "Chen Gengyang  ",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-13T13:05:08.267Z"
+  "updatedAt": "2026-07-13T14:15:10.914Z"
 }
