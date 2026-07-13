@@ -20,7 +20,7 @@
 
 ### 新评论区块
 
-新评论区块不再局限于主数据源的评论表。
+新评论区块不再局限于主数据源的评论表，不是关系区块也可以使用。
 
 ![](https://static-docs.nocobase.com/Comments-07-01-2026_12_03_PM%20(1).png)
 
@@ -88,26 +88,24 @@
 
 有一部分插件实际上在更早之前就已废弃，其中部分目前仍可使用，但会在 V3 中彻底移除。
 
-| 插件 | 替代品 | 备注
-| --- | --- | --- |
-| `@nocobase/plugin-audit-logs` | `@nocobase/plugin-audit-logger` |  |
-| `@nocobase/plugin-backup-restore` | `@nocobase/plugin-backups` |  |
-| `@nocobase/plugin-block-multi-step-form` | JS Block |  |
-| `@nocobase/plugin-charts` | `@nocobase/plugin-data-visualization` |  |
-| `@nocobase/plugin-collection-fdw` | 从数据库同步 |  |
-| `@nocobase/plugin-comments` | `@nocobase/plugin-block-comment` |  |
-| `@nocobase/plugin-custom-variables` | 事件流 |  |
-| `@nocobase/plugin-data-visualization-echarts` | `@nocobase/plugin-data-visualization` |  |
-| `@nocobase/plugin-disable-pm-add` | 无 |  |
-| `@nocobase/plugin-field-component-mask` | RunJS |  |
-| `@nocobase/plugin-graph-collection-manager` | 无 |  |
-| `@nocobase/plugin-mobile-client` | `@nocobase/plugin-ui-layout` |  |
-| `@nocobase/plugin-mobile` | `@nocobase/plugin-ui-layout` |  |
-| `@nocobase/plugin-mock-collections` | AI 搭建 |  |
-| `@nocobase/plugin-multi-app-manager` | `@nocobase/plugin-app-supervisor` |  |
-| `@nocobase/plugin-multi-app-share-collection` | 无 |  |
-| `@nocobase/plugin-notifications` | `@nocobase/plugin-notification-manager` |  |
-| `@nocobase/plugin-snapshot-field` | 无 |  |
 
-
-
+| 插件                                          | 替代品                                  | 备注                 |
+| --------------------------------------------- | --------------------------------------- | -------------------- |
+| `@nocobase/plugin-audit-logs`                 | `@nocobase/plugin-audit-logger`         | 自 1.0 起废弃的功能  |
+| `@nocobase/plugin-backup-restore`             | `@nocobase/plugin-backups`              | 自 1.0 起废弃的功能  |
+| `@nocobase/plugin-block-multi-step-form`      | JS Block                                | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-charts`                     | `@nocobase/plugin-data-visualization`   | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-collection-fdw`             | 从数据库同步                            | 自 2.2 起废弃的功能 |
+| `@nocobase/plugin-comments`                   | `@nocobase/plugin-block-comment`        | 自 2.2 起废弃的功能 |
+| `@nocobase/plugin-custom-variables`           | 事件流                                  | 自 2.2 起废弃的功能 |
+| `@nocobase/plugin-data-visualization-echarts` | `@nocobase/plugin-data-visualization`   | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-disable-pm-add`             | 无                                      | 自 2.2 起废弃的功能 |
+| `@nocobase/plugin-field-component-mask`       | RunJS                                   | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-graph-collection-manager`   | 无                                      | 自 2.2 起废弃的功能 |
+| `@nocobase/plugin-mobile-client`              | `@nocobase/plugin-ui-layout`            | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-mobile`                     | `@nocobase/plugin-ui-layout`            | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-mock-collections`           | AI 搭建                                 | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-multi-app-manager`          | `@nocobase/plugin-app-supervisor`       | 自 2.0 起废弃的功能  |
+| `@nocobase/plugin-multi-app-share-collection` | 无                                      | 自 1.0 起废弃的功能  |
+| `@nocobase/plugin-notifications`              | `@nocobase/plugin-notification-manager` | 自 1.0 起废弃的功能  |
+| `@nocobase/plugin-snapshot-field`             | 无                                      | 自 1.0 起废弃的功能  |
