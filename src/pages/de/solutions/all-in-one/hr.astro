@@ -1,6 +1,8 @@
 ---
 import BaseDE from "../../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseDE
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "de", url: "/de/solutions/all-in-one/hr", title: "HR / Personalverwaltung – Open-Source HR-Software | NocoBase", description: "Open-Source HR-Software auf Basis der No-Code-Plattform NocoBase: Mitarbeiterstammdaten, Eintritt, Austritt, Urlaub, Probezeit, Stellen- und Abteilungsstruktur. Schlank und selbst hostbar, geeignet für HR-Teams in KMU.", breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "Lösungen", url: "/de/solutions" }, { name: "HR / Personalverwaltung – Open-Source HR-Software | NocoBase", url: "/de/solutions/all-in-one/hr" } ] })} />
 </BaseDE>
 
 <style>

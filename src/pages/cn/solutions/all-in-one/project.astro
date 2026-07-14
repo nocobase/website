@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/project", title: "项目管理系统 — 开源轻量项目协作 | NocoBase", description: "基于 NocoBase 无代码平台的开源项目管理系统：项目+任务两级管理、负责人、进度、里程碑、延期预警、工作量分布。轻量、可自部署，适合中小团队与跨部门项目协作。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "项目管理系统 — 开源轻量项目协作 | NocoBase", url: "/cn/solutions/all-in-one/project" } ] })} />
 </BaseCN>
 
 <style>

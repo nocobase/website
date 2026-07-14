@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/crm", title: "CRM 客戶管理系統 — 開源、可自架 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源 CRM 系統：線索管理、客戶跟進、轉化、合併去重、客戶 360 視圖。開箱即用，支援自架部署。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "CRM 客戶管理系統 — 開源、可自架 | NocoBase", url: "/tw/solutions/all-in-one/crm" } ] })} />
 </BaseTW>
 
 <style>

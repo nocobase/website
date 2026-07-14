@@ -1,6 +1,8 @@
 ---
 import BaseES from "../../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseES
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one/sales", title: "Sistema de Gestión de Pedidos — open source para pedidos y cuentas por cobrar | NocoBase", description: "Sistema de gestión de pedidos open source basado en la plataforma no-code de NocoBase: ciclo completo de presupuesto, pedido de venta, factura y cobro, con workflow de aprobación, multidivisa, KPI de cuentas por cobrar y análisis de vencimientos.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema de Gestión de Pedidos — open source para pedidos y cuentas por cobrar | NocoBase", url: "/es/solutions/all-in-one/sales" } ] })} />
 </BaseES>
 
 <style>

@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/asset", title: "固定資産管理 — オープンソースの IT 資産・オフィス資産管理 | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソースの固定資産管理。購入、配布、メンテナンス、廃棄までライフサイクル全体を管理。IT 資産とオフィス資産を網羅し、仕入先台帳、メンテナンスチケット、購入分析を標準搭載しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "固定資産管理 — オープンソースの IT 資産・オフィス資産管理 | NocoBase", url: "/ja/solutions/all-in-one/asset" } ] })} />
 </BaseJA>
 
 <style>

@@ -1,6 +1,8 @@
 ---
 import BaseES from "../../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseES
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one/ticketing", title: "Help Desk — sistema de tickets open source | NocoBase", description: "Sistema de tickets de soporte open source basado en la plataforma no-code de NocoBase: incidencias del cliente, asignación inteligente, cronometraje SLA, prioridades, clasificación con AI, valoración de satisfacción y escritorio de atención. Listo para usar, adecuado para equipos pequeños y medianos de atención y postventa.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Help Desk — sistema de tickets open source | NocoBase", url: "/es/solutions/all-in-one/ticketing" } ] })} />
 </BaseES>
 
 <style>

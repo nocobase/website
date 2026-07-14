@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/asset", title: "Hệ thống quản lý tài sản — Quản lý tài sản IT và tài sản văn phòng mã nguồn mở | NocoBase", description: "Hệ thống quản lý tài sản mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý toàn bộ vòng đời mua sắm, phân bổ, bảo trì, thanh lý, bao gồm tài sản IT, tài sản văn phòng, kèm sổ theo dõi nhà cung cấp, phiếu bảo trì, phân tích mua sắm.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Hệ thống quản lý tài sản — Quản lý tài sản IT và tài sản văn phòng mã nguồn mở | NocoBase", url: "/vi/solutions/all-in-one/asset" } ] })} />
 </BaseVI>
 
 <style>

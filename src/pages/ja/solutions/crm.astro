@@ -9,6 +9,8 @@ import dashboardDemoGuides from "../../../data/crm-dashboard-demo-ja.json";
 import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-ja.json";
 import opportunityDemoGuides from "../../../data/crm-opportunity-demo-ja.json";
 import extensionDemoGuides from "../../../data/crm-extension-demo-ja.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // プラグインデータを取得
 const pluginData = await listPluginCategories();
@@ -622,6 +624,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/crm", title: "ノーコードで柔軟かつ強力なCRMプラットフォーム", description: "すぐに使えます。究極のカスタマイズ機能を提供し、データ主権を完全に保証します。この基盤の上にフィールド、ブロック、機能、ページを自由に拡張して、ビジネスニーズに完全に適合させることができます。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "ノーコードで柔軟かつ強力なCRMプラットフォーム", url: "/ja/solutions/crm" } ] })} />
 </Layout>
 
 <style>

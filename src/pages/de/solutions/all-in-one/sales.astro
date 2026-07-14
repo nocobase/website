@@ -1,6 +1,8 @@
 ---
 import BaseDE from "../../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseDE
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "de", url: "/de/solutions/all-in-one/sales", title: "Auftragsverwaltung – Open-Source Auftrags- und Forderungsmanagement | NocoBase", description: "Open-Source Auftragsverwaltungssystem auf Basis der No-Code-Plattform NocoBase: vollständige Kette aus Angebot, Vertriebsauftrag, Rechnung und Zahlungseingang; mit integriertem Genehmigungsprozess, Mehrwährungsunterstützung, Forderungs-KPIs und Verzugsanalyse.", breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "Lösungen", url: "/de/solutions" }, { name: "Auftragsverwaltung – Open-Source Auftrags- und Forderungsmanagement | NocoBase", url: "/de/solutions/all-in-one/sales" } ] })} />
 </BaseDE>
 
 <style>

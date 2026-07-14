@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/crm", title: "CRM(顧客管理)— オープンソース・セルフホスト可能 | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソース CRM。リード管理、顧客フォロー、転換、マージ・重複排除、顧客 360 ビューを標準装備。すぐに使え、セルフホストにも対応します。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "CRM(顧客管理)— オープンソース・セルフホスト可能 | NocoBase", url: "/ja/solutions/all-in-one/crm" } ] })} />
 </BaseJA>
 
 <style>

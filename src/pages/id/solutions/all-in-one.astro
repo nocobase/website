@@ -2,6 +2,8 @@
 import BaseID from "../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseID
@@ -535,6 +537,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one", title: "Sistem Manajemen Bisnis Terintegrasi - CRM / Tiket / Manajemen Proyek / Aset Tetap / SDM | NocoBase", description: "Sistem manajemen bisnis terintegrasi open source: CRM (Manajemen Pelanggan), Manajemen Pesanan, Help Desk (Tiket), Manajemen Proyek, Manajemen Aset Tetap, dan Manajemen SDM — enam modul lengkap terpadu. Dibangun di atas platform tanpa kode NocoBase, siap pakai, cocok untuk tim kecil dan menengah yang ingin onboarding cepat.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Sistem Manajemen Bisnis Terintegrasi - CRM / Tiket / Manajemen Proyek / Aset Tetap / SDM | NocoBase", url: "/id/solutions/all-in-one" } ] })} />
 </BaseID>
 
 <style>

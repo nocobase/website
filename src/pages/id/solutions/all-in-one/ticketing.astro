@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseID
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one/ticketing", title: "Help Desk (Tiket) — Sistem Tiket Customer Service Open Source | NocoBase", description: "Sistem tiket open source di atas platform tanpa kode NocoBase: pelaporan masalah oleh pelanggan, penugasan cerdas, perhitungan SLA, prioritas, klasifikasi AI, penilaian kepuasan, dan papan kerja customer service. Siap pakai, cocok untuk tim customer service kecil-menengah dan tim layanan purnajual.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Help Desk (Tiket) — Sistem Tiket Customer Service Open Source | NocoBase", url: "/id/solutions/all-in-one/ticketing" } ] })} />
 </BaseID>
 
 <style>

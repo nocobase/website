@@ -1,6 +1,8 @@
 ---
 import BaseFR from "../../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseFR
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one/project", title: "Gestion de projet — collaboration légère et open source | NocoBase", description: "Système de gestion de projet open source basé sur la plateforme no-code NocoBase : gestion à deux niveaux projets + tâches, responsables, avancement, jalons, alertes de retard, répartition de la charge de travail. Léger, auto-hébergeable, adapté aux PME et à la collaboration interservices.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "Gestion de projet — collaboration légère et open source | NocoBase", url: "/fr/solutions/all-in-one/project" } ] })} />
 </BaseFR>
 
 <style>

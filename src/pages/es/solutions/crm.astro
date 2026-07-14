@@ -9,6 +9,8 @@ import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
 import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
 import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
 import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -622,6 +624,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/crm", title: "CRM no-code, flexible y potente", description: "Listo para usar desde el primer momento. Ofrece una personalización profunda manteniendo la soberanía total sobre tus datos. Amplía campos, bloques, funciones y páginas para adaptarlo por completo a tu negocio.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "CRM no-code, flexible y potente", url: "/es/solutions/crm" } ] })} />
 </Layout>
 
 <style>

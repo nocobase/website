@@ -2,6 +2,8 @@
 import BaseTW from "../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseTW
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one", title: "整合式業務管理系統 - CRM / 工單 / 專案管理 / 固定資產 / HR | NocoBase", description: "開源整合式業務管理系統：CRM 客戶管理、訂單管理、工單系統、專案管理、固定資產管理、HR 人事管理 6 大模組全面整合。基於 NocoBase 無程式碼平台，開箱即用，適合中小團隊快速上線。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "整合式業務管理系統 - CRM / 工單 / 專案管理 / 固定資產 / HR | NocoBase", url: "/tw/solutions/all-in-one" } ] })} />
 </BaseTW>
 
 <style>

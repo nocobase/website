@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/asset", title: "固定資產管理系統 — 開源 IT 資產與辦公資產管理 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源固定資產管理系統：採購、分配、維護、報廢全生命週期管理，涵蓋 IT 資產、辦公資產，內建供應商台帳、維護工單、採購分析。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "固定資產管理系統 — 開源 IT 資產與辦公資產管理 | NocoBase", url: "/tw/solutions/all-in-one/asset" } ] })} />
 </BaseTW>
 
 <style>

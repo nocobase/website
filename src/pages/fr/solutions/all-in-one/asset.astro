@@ -1,6 +1,8 @@
 ---
 import BaseFR from "../../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseFR
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one/asset", title: "Gestion d'actifs — parc informatique et mobilier open source | NocoBase", description: "Système de gestion d'actifs open source basé sur la plateforme no-code NocoBase : cycle de vie complet achat, attribution, maintenance et mise au rebut, couvrant les actifs informatiques et mobiliers, avec registre des fournisseurs, tickets de maintenance et analyse des achats.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "Gestion d'actifs — parc informatique et mobilier open source | NocoBase", url: "/fr/solutions/all-in-one/asset" } ] })} />
 </BaseFR>
 
 <style>

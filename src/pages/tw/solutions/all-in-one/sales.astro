@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/sales", title: "訂單管理系統 — 開源銷售訂單與應收管理 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源訂單管理系統：報價單、銷售訂單、發票、收款的完整鏈路，內建簽核流程、多幣別、應收帳款 KPI 與逾期分析。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "訂單管理系統 — 開源銷售訂單與應收管理 | NocoBase", url: "/tw/solutions/all-in-one/sales" } ] })} />
 </BaseTW>
 
 <style>

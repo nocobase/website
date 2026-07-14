@@ -1,6 +1,8 @@
 ---
 import BaseES from "../../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseES
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one/project", title: "Sistema de Gestión de Proyectos — colaboración ligera open source | NocoBase", description: "Sistema de gestión de proyectos open source basado en la plataforma no-code de NocoBase: gestión a dos niveles de proyecto + tarea, responsables, progreso, hitos, avisos de retraso y distribución de carga de trabajo. Ligero, autoalojable, adecuado para equipos pequeños y medianos y colaboración entre áreas.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema de Gestión de Proyectos — colaboración ligera open source | NocoBase", url: "/es/solutions/all-in-one/project" } ] })} />
 </BaseES>
 
 <style>

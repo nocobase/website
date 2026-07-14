@@ -2,6 +2,8 @@
 import BaseES from "../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseES
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one", title: "Sistema de Gestión Empresarial Integral - CRM / Tickets / Proyectos / Activos / RRHH | NocoBase", description: "Sistema de gestión empresarial integral de código abierto: CRM, gestión de pedidos, help desk, gestión de proyectos, gestión de activos y recursos humanos integrados en 6 módulos. Construido sobre la plataforma no-code de NocoBase, listo para usar y adecuado para equipos pequeños y medianos.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema de Gestión Empresarial Integral - CRM / Tickets / Proyectos / Activos / RRHH | NocoBase", url: "/es/solutions/all-in-one" } ] })} />
 </BaseES>
 
 <style>

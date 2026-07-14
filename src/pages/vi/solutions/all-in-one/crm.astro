@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/crm", title: "CRM Hệ thống quản lý khách hàng — Mã nguồn mở, tự triển khai | NocoBase", description: "Hệ thống CRM mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý lead, theo dõi khách hàng, chuyển đổi, gộp/khử trùng lặp, chế độ xem khách hàng 360. Dùng được ngay, hỗ trợ tự triển khai.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "CRM Hệ thống quản lý khách hàng — Mã nguồn mở, tự triển khai | NocoBase", url: "/vi/solutions/all-in-one/crm" } ] })} />
 </BaseVI>
 
 <style>

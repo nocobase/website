@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/crm", title: "CRM 客户管理系统 — 开源、可自部署 | NocoBase", description: "基于 NocoBase 无代码平台的开源 CRM 系统：线索管理、客户跟进、转化、合并去重、客户 360 视图。开箱即用，支持自部署。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "CRM 客户管理系统 — 开源、可自部署 | NocoBase", url: "/cn/solutions/all-in-one/crm" } ] })} />
 </BaseCN>
 
 <style>

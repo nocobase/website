@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
 import projectDemoGuides from "../../../data/project-management-demo-cn.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // 獲取插件數據
 const pluginData = await listPluginCategories();
@@ -454,6 +456,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/project-management", title: "全面的研發項目管理解決方案", description: "NocoBase 研發項目管理系統提供完整的研發項目生命週期管理能力。從需求規劃、任務分配、進度跟蹤到質量管理，實現研發全流程數字化管理和團隊協作。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "全面的研發項目管理解決方案", url: "/tw/solutions/project-management" } ] })} />
 </BaseTW>
 
 <style>

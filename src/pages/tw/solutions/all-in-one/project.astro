@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/project", title: "專案管理系統 — 開源輕量專案協作 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源專案管理系統：專案 + 任務兩級管理、負責人、進度、里程碑、延期預警、工作量分布。輕量、可自架，適合中小團隊與跨部門專案協作。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "專案管理系統 — 開源輕量專案協作 | NocoBase", url: "/tw/solutions/all-in-one/project" } ] })} />
 </BaseTW>
 
 <style>

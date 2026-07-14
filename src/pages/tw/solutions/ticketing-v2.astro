@@ -2,6 +2,8 @@
 import BaseTW from "../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseTW
@@ -867,6 +869,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/ticketing-v2", title: "AI 驅動的智能工單系統 - NocoBase", description: "基於 NocoBase 的 AI 驅動智能工單系統，T型數據架構支持多業務場景，AI 員工團隊自動分類、智能回覆、知識推薦，SLA 全程監控，實現工單全生命週期智能化管理。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "AI 驅動的智能工單系統 - NocoBase", url: "/tw/solutions/ticketing-v2" } ] })} />
 </BaseTW>
 
 <style>

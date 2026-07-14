@@ -9,6 +9,8 @@ import dashboardDemoGuides from "../../../data/crm-dashboard-demo-cn.json";
 import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-cn.json";
 import opportunityDemoGuides from "../../../data/crm-opportunity-demo-cn.json";
 import extensionDemoGuides from "../../../data/crm-extension-demo-cn.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // 獲取插件數據
 const pluginData = await listPluginCategories();
@@ -621,6 +623,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/crm", title: "無代碼、靈活且強大的 CRM 基座", description: "開箱即用。提供極致的定製能力，且完全保障數據主權。你可以在此基礎上任意擴展字段、區塊、功能及頁面，使其完全符合你的業務需求。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "無代碼、靈活且強大的 CRM 基座", url: "/tw/solutions/crm" } ] })} />
 </BaseTW>
 
 <style>

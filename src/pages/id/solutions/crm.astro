@@ -9,6 +9,8 @@ import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
 import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
 import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
 import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -622,6 +624,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/crm", title: "Platform CRM No-Code yang Fleksibel dan Andal", description: "Siap digunakan sejak awal, dengan kemampuan kustomisasi mendalam dan kendali penuh atas data. Perluas field, blok, fungsi, dan halaman agar CRM benar-benar sesuai kebutuhan bisnis Anda.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Platform CRM No-Code yang Fleksibel dan Andal", url: "/id/solutions/crm" } ] })} />
 </Layout>
 
 <style>

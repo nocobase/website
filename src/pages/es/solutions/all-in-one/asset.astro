@@ -1,6 +1,8 @@
 ---
 import BaseES from "../../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseES
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one/asset", title: "Sistema de Gestión de Activos — open source para activos TI y de oficina | NocoBase", description: "Sistema de gestión de activos open source basado en la plataforma no-code de NocoBase: gestión del ciclo de vida completo (compra, asignación, mantenimiento y baja) para activos TI y de oficina, con registro de proveedores, tickets de mantenimiento y análisis de compras.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema de Gestión de Activos — open source para activos TI y de oficina | NocoBase", url: "/es/solutions/all-in-one/asset" } ] })} />
 </BaseES>
 
 <style>

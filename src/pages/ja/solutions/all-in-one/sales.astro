@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/sales", title: "受注管理 — オープンソースの受注・売掛管理 | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソースの受注管理。見積、受注、請求、入金までの一連の流れに対応し、承認ワークフロー、多通貨、売掛 KPI、滞留分析を標準装備しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "受注管理 — オープンソースの受注・売掛管理 | NocoBase", url: "/ja/solutions/all-in-one/sales" } ] })} />
 </BaseJA>
 
 <style>

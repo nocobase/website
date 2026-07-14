@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // 交互演示データをインポート
 import extensionDemoGuides from "../../../data/ticketing-extension-demo-ja.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // プラグインデータを取得
 const pluginData = await listPluginCategories();
@@ -565,6 +567,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/ticketing", title: "効率的で便利なチケット管理システム", description: "NocoBase チケット管理システムは CRM の重要な補完として、顧客連絡先作成からチケット割り当て、処理まで、完全なチケットライフサイクル管理を提供し、全プロセスデジタル管理を実現します。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "効率的で便利なチケット管理システム", url: "/ja/solutions/ticketing" } ] })} />
 </Layout>
 
 <style>
