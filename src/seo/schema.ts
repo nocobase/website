@@ -25,6 +25,35 @@ export function schemaLang(locale: string): string {
   return LANG_MAP[locale] || 'en-US';
 }
 
+// CMS textarea fields (featureList / about / mentions) store one item per line.
+// Accept either the raw string or an already-split array.
+function parseLines(v?: string | string[]): string[] {
+  if (!v) return [];
+  const arr = Array.isArray(v) ? v : v.split('\n');
+  return arr.map((x) => (x || '').trim()).filter(Boolean);
+}
+
+function dedupe(items: string[]): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const it of items) {
+    const k = it.toLowerCase();
+    if (it && !seen.has(k)) { seen.add(k); out.push(it); }
+  }
+  return out;
+}
+
+// Turn a list of product names into schema.org mention nodes. NocoBase gets its
+// canonical URL; others are named SoftwareApplication entities.
+function buildMentions(names: string[]): any[] | undefined {
+  const list = names.map((name) => ({
+    '@type': 'SoftwareApplication',
+    name,
+    url: name.toLowerCase() === 'nocobase' ? `${SITE_URL}/` : undefined,
+  }));
+  return list.length ? list : undefined;
+}
+
 function absUrl(u?: string): string | undefined {
   if (!u) return undefined;
   if (u.startsWith('http')) return u;
@@ -132,6 +161,9 @@ type ContentOpts = {
   author?: string;
   image?: string;
   tags?: string[];
+  about?: string | string[];       // curated topic entities (CMS field)
+  mentions?: string | string[];    // mentioned products (CMS field)
+  featureList?: string | string[]; // key features (CMS field, blueprints only)
   breadcrumbs: Crumb[];
 };
 
@@ -151,11 +183,12 @@ export function generateBlogPostingSchema(o: ContentOpts) {
         dateModified: o.dateModified || o.datePublished,
         inLanguage: schemaLang(o.locale),
         keywords: o.tags,
-        about: o.tags,
+        about: dedupe([...(o.tags || []), ...parseLines(o.about)]),
         author: o.author ? { '@type': 'Person', name: o.author } : { '@id': ORG_ID },
         publisher: { '@id': ORG_ID },
         mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
         image: o.image ? { '@type': 'ImageObject', url: absUrl(o.image) } : undefined,
+        mentions: buildMentions(parseLines(o.mentions)),
       },
       breadcrumbNode(o.breadcrumbs),
     ],
@@ -259,7 +292,8 @@ export function generateBlueprintSchema(o: ContentOpts) {
         publisher: { '@id': ORG_ID },
         mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
         image: o.image ? { '@type': 'ImageObject', url: absUrl(o.image) } : undefined,
-        about: o.tags,
+        about: dedupe([...(o.tags || []), ...parseLines(o.about)]),
+        mentions: buildMentions(parseLines(o.mentions)),
       },
       {
         '@type': 'SoftwareApplication',
@@ -271,6 +305,7 @@ export function generateBlueprintSchema(o: ContentOpts) {
         description: o.description,
         creator: { '@id': ORG_ID },
         isBasedOn: { '@id': SOFTWARE_ID },
+        featureList: parseLines(o.featureList),
       },
       breadcrumbNode(o.breadcrumbs),
     ],

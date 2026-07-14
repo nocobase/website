@@ -55,7 +55,7 @@ const tabs = [
 const __canonical = "https://www.nocobase.com" + basepath + "/" + slug;
 const __locale = basepath.split("/")[1] || "en";
 const __crumbs = (tabs || []).map((t) => t.active ? { name: title, url: __canonical } : { name: t.title, url: "https://www.nocobase.com" + t.link });
-const __jsonLd = generateBlueprintSchema({ locale: __locale, url: __canonical, title, description, datePublished: data.publishedAt, dateModified: data.updatedAt, author: data.author, image: data.cover?.url, tags: (data.tags || []).map((t) => t.title), breadcrumbs: __crumbs });
+const __jsonLd = generateBlueprintSchema({ locale: __locale, url: __canonical, title, description, datePublished: data.publishedAt, dateModified: data.updatedAt, author: data.author, image: data.cover?.url, tags: (data.tags || []).map((t) => t.title), about: data.about, mentions: data.mentions, featureList: data.featureList, breadcrumbs: __crumbs });
 ---
 
 <Layout title={title} image={data.cover ? url(data.cover.url) : undefined} description={description} keywords={keywords}>
