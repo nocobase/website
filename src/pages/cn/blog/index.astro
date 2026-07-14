@@ -6,6 +6,8 @@ import Tags from "../../../components/Tags.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { getPage, listArticleTags, listArticles, url } from "../../../utils";
 import BlogSidebar from "../../../components/BlogSidebar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 const page = await getPage("blog");
 
@@ -141,6 +143,7 @@ const socialLinks = [
       </div>
     </div>
   </section>
+<JsonLd data={generateListSchema({ locale: "cn", url: "/cn/blog", name: "Blog", description, kind: "Blog", items: (data || []).map((p) => ({ name: p.title_cn || p.title, url: "/cn/blog/" + p.slug })), breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "Blog", url: "/cn/blog" } ] })} />
 </Layout>
 <style>
   .position-relative {

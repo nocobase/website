@@ -2,6 +2,8 @@
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseCN
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one", title: "一体化业务管理系统 - CRM / 工单 / 项目管理 / 固定资产 / HR | NocoBase", description: "开源 AI 驱动的一体化业务管理系统：内置 9 位 AI 员工 + CRM 客户管理、订单管理、工单系统、项目管理、固定资产管理、HR 人事管理 6 大模块全面整合。基于 NocoBase 无代码平台，开箱即用，适合中小团队快速上线。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "一体化业务管理系统 - CRM / 工单 / 项目管理 / 固定资产 / HR | NocoBase", url: "/cn/solutions/all-in-one" } ] })} />
 </BaseCN>
 
 <style>

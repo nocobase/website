@@ -2,6 +2,8 @@
 import BaseTW from "../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseTW
@@ -782,6 +784,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/crm-v2", title: "CRM 2.0 銷售管理系統 - NocoBase", description: "基於 NocoBase 無代碼平臺的 CRM 2.0 銷售管理系統，模塊可拆解，完整銷售閉環。支持線索評分、商機贏率預測等 AI 輔助功能。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "CRM 2.0 銷售管理系統 - NocoBase", url: "/tw/solutions/crm-v2" } ] })} />
 </BaseTW>
 
 <style>

@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
 import extensionDemoGuides from "../../../data/ticketing-extension-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -565,6 +567,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/ticketing", title: "Sistema de gestión de tickets eficiente y práctico", description: "El sistema de gestión de tickets de NocoBase complementa al CRM y cubre todo el ciclo de vida del ticket, desde el contacto inicial hasta la asignación, resolución y seguimiento.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema de gestión de tickets eficiente y práctico", url: "/es/solutions/ticketing" } ] })} />
 </Layout>
 
 <style>

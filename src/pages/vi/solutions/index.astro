@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Thư viện giải pháp — muốn thêm giải pháp mới chỉ cần bổ sung một mục vào đây
 const solutions = [
@@ -295,4 +297,5 @@ const categories = ["Tất cả", "All-in-One", "Khách hàng và bán hàng", "
       });
     });
   </script>
+<JsonLd data={generateListSchema({ locale: "vi", url: "/vi/solutions", name: "Thêm giải pháp - Thư viện giải pháp NocoBase", description: "Thư viện giải pháp NocoBase: bộ giải pháp All-in-One quản lý nghiệp vụ, cùng các giải pháp độc lập về CRM, bán hàng, ticket, quản lý dự án, lọc theo kịch bản, đều dựa trên nền tảng no-code NocoBase, dùng ngay và tự triển khai được.", kind: "CollectionPage", items: solutions.map((s) => ({ name: s.title, url: s.href })), breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Thêm giải pháp - Thư viện giải pháp NocoBase", url: "/vi/solutions" } ] })} />
 </BaseVI>

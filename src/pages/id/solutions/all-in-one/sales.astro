@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseID
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one/sales", title: "Sistem Manajemen Pesanan — Pesanan Penjualan dan Piutang Open Source | NocoBase", description: "Sistem manajemen pesanan open source di atas platform tanpa kode NocoBase: alur lengkap dari penawaran, pesanan penjualan, faktur, hingga penerimaan pembayaran, dengan alur persetujuan, multi-mata uang, KPI piutang, dan analisis keterlambatan yang sudah tertanam.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Sistem Manajemen Pesanan — Pesanan Penjualan dan Piutang Open Source | NocoBase", url: "/id/solutions/all-in-one/sales" } ] })} />
 </BaseID>
 
 <style>

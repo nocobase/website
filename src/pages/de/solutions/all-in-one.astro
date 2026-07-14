@@ -2,6 +2,8 @@
 import BaseDE from "../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseDE
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "de", url: "/de/solutions/all-in-one", title: "All-in-One-Business-System – CRM / Tickets / Projekte / Anlagen / HR | NocoBase", description: "Open-Source All-in-One-Business-System: CRM (Kundenverwaltung), Auftragsverwaltung, Helpdesk-Tickets, Projektmanagement, Anlagenverwaltung und HR-Personalverwaltung in einer integrierten Lösung. Auf NocoBase aufgebaut, sofort einsatzbereit, geeignet für KMU.", breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "Lösungen", url: "/de/solutions" }, { name: "All-in-One-Business-System – CRM / Tickets / Projekte / Anlagen / HR | NocoBase", url: "/de/solutions/all-in-one" } ] })} />
 </BaseDE>
 
 <style>

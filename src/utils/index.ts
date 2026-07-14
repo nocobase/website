@@ -862,19 +862,10 @@ export async function getReleaseTag(slug?: string) {
 
 // Sitemap generation
 export async function getSitemapLinks() {
-  const [tags, articles, tutorials] = await Promise.all([
+  const [tags, articles] = await Promise.all([
     listArticleTags(),
     listArticles({ pageSize: 5000 }),
-    listTutorialArticles({ pageSize: 5000 })
   ]);
-
-  const generateLanguageLinks = (path: string) => [
-    { lang: 'en-US', url: `/en${path}` },
-    { lang: 'zh-CN', url: `/cn${path}` },
-    { lang: 'ja-JP', url: `/ja${path}` },
-    { lang: 'fr-FR', url: `/fr${path}` },
-    { lang: 'x-default', url: `/en${path}` },
-  ];
 
   const baseLinks = [
     {
@@ -913,13 +904,9 @@ export async function getSitemapLinks() {
     links: generateBlogLanguageLinks(`/blog/${article.slug}`),
   }));
 
-  const tutorialLinks = tutorials.data.map((tutorial: any) => ({
-    url: `/en/tutorials/${tutorial.slug}`,
-    lastmod: tutorial.updatedAt,
-    links: generateLanguageLinks(`/tutorials/${tutorial.slug}`),
-  }));
-
-  return baseLinks.concat(tagLinks).concat(articleLinks).concat(tutorialLinks);
+  // Tutorials are retired on this site — /{locale}/tutorials/* now 301s to the
+  // docs site (see middleware), so they are no longer advertised in the sitemap.
+  return baseLinks.concat(tagLinks).concat(articleLinks);
 }
 
 // Release notes functions

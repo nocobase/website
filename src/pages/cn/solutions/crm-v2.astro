@@ -2,6 +2,8 @@
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseCN
@@ -782,6 +784,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/crm-v2", title: "CRM 2.0 销售管理系统 - NocoBase", description: "基于 NocoBase 无代码平台的 CRM 2.0 销售管理系统，模块可拆解，完整销售闭环。支持线索评分、商机赢率预测等 AI 辅助功能。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "CRM 2.0 销售管理系统 - NocoBase", url: "/cn/solutions/crm-v2" } ] })} />
 </BaseCN>
 
 <style>

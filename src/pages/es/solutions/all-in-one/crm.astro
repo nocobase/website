@@ -1,6 +1,8 @@
 ---
 import BaseES from "../../../../layouts/BaseES.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseES
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/all-in-one/crm", title: "Sistema CRM — open source y autoalojable | NocoBase", description: "Sistema CRM open source basado en la plataforma no-code de NocoBase: gestión de leads, seguimiento de clientes, conversión, fusión / deduplicación y vista 360 del cliente. Listo para usar y autoalojable.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema CRM — open source y autoalojable | NocoBase", url: "/es/solutions/all-in-one/crm" } ] })} />
 </BaseES>
 
 <style>

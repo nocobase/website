@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseID
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one/hr", title: "Sistem Manajemen SDM — Manajemen Sumber Daya Manusia Open Source | NocoBase", description: "Sistem manajemen SDM open source di atas platform tanpa kode NocoBase: data karyawan, masuk kerja, resign, cuti, pemantauan masa percobaan, struktur jabatan dan departemen. Ringan, dapat di-deploy sendiri, cocok untuk tim HR perusahaan kecil-menengah.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Sistem Manajemen SDM — Manajemen Sumber Daya Manusia Open Source | NocoBase", url: "/id/solutions/all-in-one/hr" } ] })} />
 </BaseID>
 
 <style>

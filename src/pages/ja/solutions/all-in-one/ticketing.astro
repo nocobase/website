@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/ticketing", title: "ヘルプデスク(チケット)— オープンソースのカスタマーサポート管理 | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソースのヘルプデスク。顧客からの問い合わせ受付、スマートな振り分け、SLA 計測、優先度、AI 自動分類、満足度評価、サポート作業画面を標準装備。中小規模のカスタマーサポートチームやアフターサポート部門に適しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "ヘルプデスク(チケット)— オープンソースのカスタマーサポート管理 | NocoBase", url: "/ja/solutions/all-in-one/ticketing" } ] })} />
 </BaseJA>
 
 <style>

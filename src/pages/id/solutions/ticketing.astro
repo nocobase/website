@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
 import extensionDemoGuides from "../../../data/ticketing-extension-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -565,6 +567,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/ticketing", title: "Efficient and Convenient Ticketing Management System", description: "NocoBase ticketing management system serves as an important complement to CRM, providing complete ticket lifecycle management, from customer contact creation to ticket assignment and processing, achieving full-process digital management.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Efficient and Convenient Ticketing Management System", url: "/id/solutions/ticketing" } ] })} />
 </Layout>
 
 <style>

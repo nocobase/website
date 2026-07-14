@@ -1,6 +1,8 @@
 ---
 import BaseDE from "../../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseDE
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "de", url: "/de/solutions/all-in-one/asset", title: "Anlagenverwaltung – Open-Source IT-Asset-Management und Büroanlagen | NocoBase", description: "Open-Source Anlagenverwaltung auf Basis der No-Code-Plattform NocoBase: Lebenszyklus von Beschaffung, Zuweisung, Wartung und Aussonderung für IT-Anlagen und Büroanlagen; mit Lieferantenverzeichnis, Wartungstickets und Beschaffungsanalyse.", breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "Lösungen", url: "/de/solutions" }, { name: "Anlagenverwaltung – Open-Source IT-Asset-Management und Büroanlagen | NocoBase", url: "/de/solutions/all-in-one/asset" } ] })} />
 </BaseDE>
 
 <style>

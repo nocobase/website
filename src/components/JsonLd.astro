@@ -1,0 +1,8 @@
+---
+// Renders a Schema.org JSON-LD block. `data` should already be a plain object
+// produced by the generators in src/seo/schema.ts.
+const { data } = Astro.props;
+// Escape "<" so a value containing "</script>" can't break out of the tag.
+const json = JSON.stringify(data).replace(/</g, '\\u003c');
+---
+<script type="application/ld+json" is:inline set:html={json} />

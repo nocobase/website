@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // インタラクティブデモデータをインポート
 import projectDemoGuides from "../../../data/project-management-demo-ja.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // プラグインデータを取得
 const pluginData = await listPluginCategories();
@@ -456,6 +458,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/project-management", title: "包括的な研発プロジェクト管理ソリューション", description: "NocoBase 研発プロジェクト管理システムは、完全な開発ライフサイクル管理機能を提供します。要件計画、タスク割り当て、進捗追跡から品質管理まで、全プロセスのデジタル管理とチームコラボレーションを実現します。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "包括的な研発プロジェクト管理ソリューション", url: "/ja/solutions/project-management" } ] })} />
 </Layout>
 
 <style>

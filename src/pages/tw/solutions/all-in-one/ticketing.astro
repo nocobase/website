@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/ticketing", title: "工單系統 — 開源客服工單管理 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源工單系統：客戶報修、智慧派工、SLA 計時、優先級、AI 分類、滿意度評價、客服工作台。開箱即用，適合中小客服團隊與售後服務團隊。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "工單系統 — 開源客服工單管理 | NocoBase", url: "/tw/solutions/all-in-one/ticketing" } ] })} />
 </BaseTW>
 
 <style>

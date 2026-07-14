@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/ticketing", title: "工单系统 — 开源客服工单管理 | NocoBase", description: "基于 NocoBase 无代码平台的开源工单系统：客户报障、智能分派、SLA 计时、优先级、AI 分类、满意度评价、客服工作台。开箱即用，适合中小客服团队与售后服务团队。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "工单系统 — 开源客服工单管理 | NocoBase", url: "/cn/solutions/all-in-one/ticketing" } ] })} />
 </BaseCN>
 
 <style>

@@ -1,6 +1,8 @@
 ---
 import BaseEN from "../../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseEN
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/all-in-one/asset", title: "IT Asset Management — Open Source IT and Office Asset Management | NocoBase", description: "Open-source asset management built on the NocoBase no-code platform: procurement, assignment, maintenance, and disposal — full lifecycle management for IT and office assets, with vendor ledger, maintenance tickets, and procurement analytics.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "IT Asset Management — Open Source IT and Office Asset Management | NocoBase", url: "/en/solutions/all-in-one/asset" } ] })} />
 </BaseEN>
 
 <style>

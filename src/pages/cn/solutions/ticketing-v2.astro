@@ -2,6 +2,8 @@
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseCN
@@ -867,6 +869,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/ticketing-v2", title: "AI 驱动的智能工单系统 - NocoBase", description: "基于 NocoBase 的 AI 驱动智能工单系统，T型数据架构支持多业务场景，AI 员工团队自动分类、智能回复、知识推荐，SLA 全程监控，实现工单全生命周期智能化管理。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "AI 驱动的智能工单系统 - NocoBase", url: "/cn/solutions/ticketing-v2" } ] })} />
 </BaseCN>
 
 <style>

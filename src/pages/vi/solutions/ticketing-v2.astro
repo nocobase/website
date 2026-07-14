@@ -2,6 +2,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <Layout
@@ -867,6 +869,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/ticketing-v2", title: "AI-Powered Intelligent Ticketing System - NocoBase", description: "NocoBase AI-powered intelligent ticketing system with T-shaped data architecture supporting multiple business scenarios. AI employee team for auto-classification, smart replies, and knowledge recommendations. Full SLA monitoring for complete ticket lifecycle management.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "AI-Powered Intelligent Ticketing System - NocoBase", url: "/vi/solutions/ticketing-v2" } ] })} />
 </Layout>
 
 <style>

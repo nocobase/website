@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseID
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one/crm", title: "Sistem CRM (Manajemen Pelanggan) — Open Source, Dapat Di-deploy Sendiri | NocoBase", description: "Sistem CRM open source di atas platform tanpa kode NocoBase: manajemen lead, tindak lanjut pelanggan, konversi, penggabungan dan deduplikasi, tampilan Pelanggan 360. Siap pakai, mendukung self-hosting.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Sistem CRM (Manajemen Pelanggan) — Open Source, Dapat Di-deploy Sendiri | NocoBase", url: "/id/solutions/all-in-one/crm" } ] })} />
 </BaseID>
 
 <style>

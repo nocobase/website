@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/hr", title: "Hệ thống quản lý nhân sự — Quản lý nguồn nhân lực mã nguồn mở | NocoBase", description: "Hệ thống quản lý nhân sự mã nguồn mở dựa trên nền tảng no-code NocoBase: hồ sơ nhân viên, vào việc, nghỉ việc, xin nghỉ, theo dõi thử việc, cấu trúc tổ chức theo vị trí và phòng ban. Nhẹ, có thể tự triển khai, phù hợp cho nhóm HR của doanh nghiệp vừa và nhỏ.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Hệ thống quản lý nhân sự — Quản lý nguồn nhân lực mã nguồn mở | NocoBase", url: "/vi/solutions/all-in-one/hr" } ] })} />
 </BaseVI>
 
 <style>

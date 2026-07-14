@@ -2,6 +2,8 @@
 import BaseCN from "../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // 轻量方案 — 内容由 CMS 同步到 content/ai-blueprints/
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -241,4 +243,5 @@ const categories = ["全部", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "cn", url: "/cn/ai-blueprints", name: "轻量方案 - NocoBase", description: "NocoBase 轻量方案库:每个方案都附带标准提示词,交给你的 AI Agent,几分钟内即可在你自己的 NocoBase 实例上复刻同款系统。", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title_cn || s.title, url: "/cn/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "轻量方案 - NocoBase", url: "/cn/ai-blueprints" } ] })} />
 </BaseCN>

@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/project", title: "プロジェクト管理 — 軽量なオープンソースのプロジェクト連携 | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソースのプロジェクト管理。プロジェクトとタスクの 2 階層管理、担当者、進捗、マイルストーン、遅延アラート、作業量分布に対応。軽量でセルフホストでき、中小規模チームや部門横断のプロジェクト連携に適しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "プロジェクト管理 — 軽量なオープンソースのプロジェクト連携 | NocoBase", url: "/ja/solutions/all-in-one/project" } ] })} />
 </BaseJA>
 
 <style>

@@ -1,6 +1,8 @@
 ---
 import BaseFR from "../../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseFR
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one/sales", title: "Gestion des commandes — commandes et créances open source | NocoBase", description: "Système de gestion des commandes open source basé sur la plateforme no-code NocoBase : chaîne complète devis, commandes, factures, encaissements, avec workflows d'approbation, multidevises, KPI sur les créances et analyse des retards.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "Gestion des commandes — commandes et créances open source | NocoBase", url: "/fr/solutions/all-in-one/sales" } ] })} />
 </BaseFR>
 
 <style>

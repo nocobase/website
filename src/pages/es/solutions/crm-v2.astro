@@ -2,6 +2,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <Layout
@@ -782,6 +784,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/crm-v2", title: "CRM 2.0 - Sistema de gestión comercial", description: "Sistema CRM 2.0 construido sobre la plataforma no-code de NocoBase. Diseño modular con ciclo comercial completo y funciones como puntuación de leads asistida por IA y predicción de cierre de oportunidades.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "CRM 2.0 - Sistema de gestión comercial", url: "/es/solutions/crm-v2" } ] })} />
 </Layout>
 
 <style>

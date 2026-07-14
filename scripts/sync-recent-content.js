@@ -534,6 +534,8 @@ async function syncRecentArticles() {
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
         hideDetailPage: article.hideDetailPage || false,
+        about: article.about || null,
+        mentions: article.mentions || null,
         author: article.author || null,
         ai_generated: article.ai_generated || false,
         ai_generated_cn: article.ai_generated_cn || null,
@@ -676,6 +678,9 @@ async function syncRecentLightSolutions() {
         author: solution.author || null,
         prompt: solution.prompt || null,
         prompt_cn: solution.prompt_cn || null,
+        featureList: solution.featureList || null,
+        about: solution.about || null,
+        mentions: solution.mentions || null,
         updatedAt: solution.updatedAt
       };
 

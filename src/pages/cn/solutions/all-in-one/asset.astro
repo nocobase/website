@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/asset", title: "固定资产管理系统 — 开源 IT 资产与办公资产管理 | NocoBase", description: "基于 NocoBase 无代码平台的开源固定资产管理系统：采购、分配、维护、报废全生命周期管理，涵盖 IT 资产、办公资产，内置供应商台账、维护工单、采购分析。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "固定资产管理系统 — 开源 IT 资产与办公资产管理 | NocoBase", url: "/cn/solutions/all-in-one/asset" } ] })} />
 </BaseCN>
 
 <style>

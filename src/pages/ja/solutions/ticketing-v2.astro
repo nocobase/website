@@ -2,6 +2,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <Layout
@@ -867,6 +869,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/ticketing-v2", title: "AI駆動のインテリジェントチケットシステム - NocoBase", description: "NocoBase AI駆動のインテリジェントチケットシステム。T型データアーキテクチャで複数のビジネスシナリオをサポート。AIエージェントチームが自動分類、スマート返信、ナレッジ推奨を実行。SLA完全監視でチケットライフサイクル全体を管理。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "AI駆動のインテリジェントチケットシステム - NocoBase", url: "/ja/solutions/ticketing-v2" } ] })} />
 </Layout>
 
 <style>

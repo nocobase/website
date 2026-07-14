@@ -2,6 +2,8 @@
 import BaseEN from "../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseEN
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/all-in-one", title: "All-in-One Business Suite - CRM / Help Desk / Project Management / IT Assets / HR | NocoBase", description: "Open-source all-in-one business suite: CRM, order management, help desk ticketing, project management, IT asset management, and HR — six modules in one platform. Built on NocoBase no-code, ready out of the box for small and mid-sized teams.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "All-in-One Business Suite - CRM / Help Desk / Project Management / IT Assets / HR | NocoBase", url: "/en/solutions/all-in-one" } ] })} />
 </BaseEN>
 
 <style>

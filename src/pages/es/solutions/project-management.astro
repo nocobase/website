@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
 import projectDemoGuides from "../../../data/project-management-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -454,6 +456,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/project-management", title: "Solución integral de gestión de proyectos de I+D", description: "El sistema de gestión de proyectos de I+D de NocoBase cubre todo el ciclo de desarrollo: planificación, asignación de tareas, seguimiento del progreso, calidad y colaboración del equipo.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Solución integral de gestión de proyectos de I+D", url: "/es/solutions/project-management" } ] })} />
 </Layout>
 
 <style>

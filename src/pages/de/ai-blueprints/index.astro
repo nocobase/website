@@ -2,6 +2,8 @@
 import BaseDE from "../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Leichtgewichtige Lösungen — Inhalte werden aus dem CMS nach content/ai-blueprints/ synchronisiert
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -240,4 +242,5 @@ const categories = ["Alle", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "de", url: "/de/ai-blueprints", name: "AI Blueprints - NocoBase", description: "NocoBase AI Blueprints: kleine, fokussierte Lösungen, die jeweils mit einem fertigen Prompt ausgeliefert werden — übergeben Sie ihn Ihrem KI-Agenten und er baut dasselbe System in Ihrer eigenen NocoBase-Instanz nach.", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title, url: "/de/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "AI Blueprints - NocoBase", url: "/de/ai-blueprints" } ] })} />
 </BaseDE>

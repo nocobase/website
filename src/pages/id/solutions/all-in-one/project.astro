@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseID
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "id", url: "/id/solutions/all-in-one/project", title: "Sistem Manajemen Proyek — Kolaborasi Proyek Ringan Open Source | NocoBase", description: "Sistem manajemen proyek open source di atas platform tanpa kode NocoBase: pengelolaan dua tingkat proyek + tugas, penanggung jawab, progres, tonggak pencapaian, peringatan keterlambatan, distribusi beban kerja. Ringan, dapat di-deploy sendiri, cocok untuk tim kecil-menengah dan kolaborasi proyek lintas departemen.", breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi", url: "/id/solutions" }, { name: "Sistem Manajemen Proyek — Kolaborasi Proyek Ringan Open Source | NocoBase", url: "/id/solutions/all-in-one/project" } ] })} />
 </BaseID>
 
 <style>

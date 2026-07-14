@@ -3,6 +3,8 @@ import Layout from "../../layouts/Layout.astro";
 import InteractiveDemo from "../../components/InteractiveDemo.astro";
 import AIAvatar from '../../components/AIAvatar.astro';
 import demoConfig from "../../data/demo-config-en.json";
+import JsonLd from "../../components/JsonLd.astro";
+import { generateHomeSchema } from "../../seo/schema";
 
 const demo_20260429083220 = {
   "title": "AI Building",
@@ -764,6 +766,7 @@ const demo_20260429090755 = {
 ---
 
 <Layout>
+<JsonLd data={generateHomeSchema("tw")} />
     <!-- Hero Start -->
     <section class="bg-half-260 bg-light d-table w-100">
     <!-- <div class="bg-overlay"></div> -->

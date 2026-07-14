@@ -2,6 +2,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <Layout
@@ -867,6 +869,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "es", url: "/es/solutions/ticketing-v2", title: "Sistema inteligente de tickets impulsado por IA", description: "Sistema inteligente de tickets de NocoBase con arquitectura de datos en T para distintos escenarios de negocio. Equipo de empleados de IA para clasificación automática, respuestas inteligentes y recomendaciones de conocimiento, con seguimiento SLA completo.", breadcrumbs: [ { name: "Inicio", url: "/es/" }, { name: "Soluciones", url: "/es/solutions" }, { name: "Sistema inteligente de tickets impulsado por IA", url: "/es/solutions/ticketing-v2" } ] })} />
 </Layout>
 
 <style>

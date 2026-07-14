@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/hr", title: "HR 人事管理系统 — 开源人力资源管理 | NocoBase", description: "基于 NocoBase 无代码平台的开源 HR 人事管理系统：员工台账、入职、离职、请假、试用期跟踪、岗位与部门组织结构。轻量、可自部署，适合中小企业 HR 团队。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "HR 人事管理系统 — 开源人力资源管理 | NocoBase", url: "/cn/solutions/all-in-one/hr" } ] })} />
 </BaseCN>
 
 <style>

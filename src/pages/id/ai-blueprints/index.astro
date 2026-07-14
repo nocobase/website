@@ -2,6 +2,8 @@
 import BaseID from "../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Solusi ringan — konten disinkronkan dari CMS ke content/ai-blueprints/
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -240,4 +242,5 @@ const categories = ["Semua", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "id", url: "/id/ai-blueprints", name: "AI Blueprints - NocoBase", description: "AI Blueprints NocoBase: solusi kecil nan fokus yang masing-masing dilengkapi prompt siap pakai, sehingga AI agent Anda dapat membangun ulang seluruh sistem di instans NocoBase milik Anda sendiri.", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title, url: "/id/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "AI Blueprints - NocoBase", url: "/id/ai-blueprints" } ] })} />
 </BaseID>

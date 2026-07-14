@@ -1,6 +1,8 @@
 ---
 import BaseEN from "../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Solutions library — to add a new solution, just append an entry here
 const solutions = [
@@ -295,4 +297,5 @@ const categories = ["All", "All-in-One", "Customers & Sales", "Customer Service"
       });
     });
   </script>
+<JsonLd data={generateListSchema({ locale: "en", url: "/en/solutions", name: "More solutions - NocoBase Solutions Library", description: "NocoBase Solutions Library: the All-in-One Business Suite, plus standalone business solutions such as CRM, sales, ticketing and project management. Filter by scenario — all built on the NocoBase no-code platform, ready out of the box and self-hostable.", kind: "CollectionPage", items: solutions.map((s) => ({ name: s.title, url: s.href })), breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "More solutions - NocoBase Solutions Library", url: "/en/solutions" } ] })} />
 </BaseEN>

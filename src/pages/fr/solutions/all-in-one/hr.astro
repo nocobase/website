@@ -1,6 +1,8 @@
 ---
 import BaseFR from "../../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseFR
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one/hr", title: "RH / Ressources Humaines — logiciel RH open source | NocoBase", description: "Système RH open source basé sur la plateforme no-code NocoBase : registre des collaborateurs, suivi des arrivées, départs, congés et périodes d'essai, gestion des postes et de la structure organisationnelle. Léger et auto-hébergeable, adapté aux équipes RH des PME.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "RH / Ressources Humaines — logiciel RH open source | NocoBase", url: "/fr/solutions/all-in-one/hr" } ] })} />
 </BaseFR>
 
 <style>

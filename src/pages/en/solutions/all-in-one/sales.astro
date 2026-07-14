@@ -1,6 +1,8 @@
 ---
 import BaseEN from "../../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseEN
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/all-in-one/sales", title: "Order Management — Open Source Sales Order and Receivables | NocoBase", description: "Open-source order management built on the NocoBase no-code platform: quotes, sales orders, invoices, and payments end to end. Built-in approval workflow, multi-currency, accounts receivable KPIs, and overdue analysis.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "Order Management — Open Source Sales Order and Receivables | NocoBase", url: "/en/solutions/all-in-one/sales" } ] })} />
 </BaseEN>
 
 <style>

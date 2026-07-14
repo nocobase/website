@@ -1,6 +1,8 @@
 ---
 import BaseTW from "../../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseTW
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "tw", url: "/tw/solutions/all-in-one/hr", title: "HR 人事管理系統 — 開源人力資源管理 | NocoBase", description: "基於 NocoBase 無程式碼平台的開源 HR 人事管理系統：員工台帳、到職、離職、請假、試用期追蹤、職位與部門組織結構。輕量、可自架，適合中小企業 HR 團隊。", breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "解決方案", url: "/tw/solutions" }, { name: "HR 人事管理系統 — 開源人力資源管理 | NocoBase", url: "/tw/solutions/all-in-one/hr" } ] })} />
 </BaseTW>
 
 <style>

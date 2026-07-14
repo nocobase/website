@@ -2,6 +2,8 @@
 import BaseFR from "../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseFR
@@ -535,6 +537,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one", title: "Système de gestion tout-en-un - CRM / Help Desk / Gestion de projet / Gestion d'actifs / RH | NocoBase", description: "Système de gestion tout-en-un open source : CRM, gestion des commandes, help desk (tickets), gestion de projet, gestion d'actifs, gestion RH — 6 modules intégrés. Basé sur la plateforme no-code NocoBase, prêt à l'emploi, adapté aux PME pour un déploiement rapide.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "Système de gestion tout-en-un - CRM / Help Desk / Gestion de projet / Gestion d'actifs / RH | NocoBase", url: "/fr/solutions/all-in-one" } ] })} />
 </BaseFR>
 
 <style>

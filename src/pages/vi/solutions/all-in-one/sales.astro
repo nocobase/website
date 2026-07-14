@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/sales", title: "Hệ thống quản lý đơn hàng — Quản lý đơn hàng và công nợ phải thu mã nguồn mở | NocoBase", description: "Hệ thống quản lý đơn hàng mã nguồn mở dựa trên nền tảng no-code NocoBase: chuỗi hoàn chỉnh báo giá, đơn hàng, hóa đơn, thu tiền, tích hợp sẵn quy trình phê duyệt, đa tệ, KPI công nợ phải thu và phân tích quá hạn.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Hệ thống quản lý đơn hàng — Quản lý đơn hàng và công nợ phải thu mã nguồn mở | NocoBase", url: "/vi/solutions/all-in-one/sales" } ] })} />
 </BaseVI>
 
 <style>

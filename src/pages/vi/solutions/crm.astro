@@ -9,6 +9,8 @@ import dashboardDemoGuides from "../../../data/crm-dashboard-demo-en.json";
 import leadConversionDemoGuides from "../../../data/crm-lead-conversion-demo-en.json";
 import opportunityDemoGuides from "../../../data/crm-opportunity-demo-en.json";
 import extensionDemoGuides from "../../../data/crm-extension-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -622,6 +624,7 @@ console.log('Found plugins:', crmPlugins.map(p => p?.name || p?.name_cn));
   <!-- Opportunity Conversion Demo Modal End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/crm", title: "Nen tang CRM No-Code Linh Hoat va Manh Me", description: "San sang de su dung ngay, dong thoi cung cap kha nang tuy bien sau va quyen kiem soat du lieu tron ven. Mo rong field, block, function va page de CRM phu hop voi nghiep vu cua ban.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Nen tang CRM No-Code Linh Hoat va Manh Me", url: "/vi/solutions/crm" } ] })} />
 </Layout>
 
 <style>

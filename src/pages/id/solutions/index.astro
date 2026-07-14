@@ -1,6 +1,8 @@
 ---
 import BaseID from "../../../layouts/BaseID.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Pustaka solusi — untuk menambah solusi baru, cukup tambahkan satu entri di sini
 const solutions = [
@@ -295,4 +297,5 @@ const categories = ["Semua", "All-in-One", "Pelanggan & Penjualan", "Layanan Pel
       });
     });
   </script>
+<JsonLd data={generateListSchema({ locale: "id", url: "/id/solutions", name: "Solusi lainnya - Pustaka Solusi NocoBase", description: "Pustaka Solusi NocoBase: suite bisnis all-in-one, serta solusi bisnis mandiri seperti CRM, penjualan, tiket, dan manajemen proyek, difilter per skenario, semuanya berbasis platform tanpa kode NocoBase, siap pakai dan dapat di-host sendiri.", kind: "CollectionPage", items: solutions.map((s) => ({ name: s.title, url: s.href })), breadcrumbs: [ { name: "Beranda", url: "/id/" }, { name: "Solusi lainnya - Pustaka Solusi NocoBase", url: "/id/solutions" } ] })} />
 </BaseID>

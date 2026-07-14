@@ -1,6 +1,8 @@
 ---
 import BasePT from "../../../layouts/BasePT.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Biblioteca de soluções — para adicionar uma nova solução, basta acrescentar um item aqui
 const solutions = [
@@ -295,4 +297,5 @@ const categories = ["Todas", "All-in-One", "Clientes e vendas", "Atendimento ao 
       });
     });
   </script>
+<JsonLd data={generateListSchema({ locale: "pt", url: "/pt/solutions", name: "Mais soluções - Biblioteca de soluções NocoBase", description: "Biblioteca de soluções NocoBase: a suíte all-in-one de gestão de negócios, além de soluções independentes de CRM, vendas, tickets e gestão de projetos, filtráveis por cenário, todas baseadas na plataforma no-code NocoBase, prontas para uso e auto-hospedáveis.", kind: "CollectionPage", items: solutions.map((s) => ({ name: s.title, url: s.href })), breadcrumbs: [ { name: "Início", url: "/pt/" }, { name: "Mais soluções - Biblioteca de soluções NocoBase", url: "/pt/solutions" } ] })} />
 </BasePT>

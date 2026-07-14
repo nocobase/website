@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/project", title: "Hệ thống quản lý dự án — Cộng tác dự án nhẹ mã nguồn mở | NocoBase", description: "Hệ thống quản lý dự án mã nguồn mở dựa trên nền tảng no-code NocoBase: quản lý hai cấp dự án + công việc, người phụ trách, tiến độ, mốc, cảnh báo trễ, phân bố khối lượng. Nhẹ, có thể tự triển khai, phù hợp cho nhóm vừa và nhỏ và cộng tác dự án liên phòng ban.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Hệ thống quản lý dự án — Cộng tác dự án nhẹ mã nguồn mở | NocoBase", url: "/vi/solutions/all-in-one/project" } ] })} />
 </BaseVI>
 
 <style>

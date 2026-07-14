@@ -2,6 +2,8 @@
 import BaseJA from "../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BaseJA
@@ -534,6 +536,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one", title: "一体型業務管理システム - CRM / ヘルプデスク / プロジェクト管理 / 固定資産 / HR | NocoBase", description: "オープンソースの一体型業務管理システム。CRM(顧客管理)、受注管理、ヘルプデスク(チケット)、プロジェクト管理、固定資産管理、HR 人事管理の 6 モジュールを統合。NocoBase ノーコードプラットフォーム上に構築されており、すぐに使えて中小規模チームの短期間立ち上げに適しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "一体型業務管理システム - CRM / ヘルプデスク / プロジェクト管理 / 固定資産 / HR | NocoBase", url: "/ja/solutions/all-in-one" } ] })} />
 </BaseJA>
 
 <style>

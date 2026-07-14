@@ -1,6 +1,8 @@
 ---
 import BaseJA from "../../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseJA
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "ja", url: "/ja/solutions/all-in-one/hr", title: "HR 人事管理 — オープンソースの人事システム | NocoBase", description: "NocoBase ノーコードプラットフォームをベースにしたオープンソースの HR 人事管理。従業員台帳、入社、退職、休暇、試用期間の追跡、職位と部門の組織構造に対応。軽量でセルフホストでき、中小企業の HR チームに適しています。", breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "ソリューション", url: "/ja/solutions" }, { name: "HR 人事管理 — オープンソースの人事システム | NocoBase", url: "/ja/solutions/all-in-one/hr" } ] })} />
 </BaseJA>
 
 <style>

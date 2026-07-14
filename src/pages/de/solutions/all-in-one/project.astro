@@ -1,6 +1,8 @@
 ---
 import BaseDE from "../../../../layouts/BaseDE.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseDE
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "de", url: "/de/solutions/all-in-one/project", title: "Projektmanagement – Open-Source schlanke Projektkollaboration | NocoBase", description: "Open-Source Projektmanagementsystem auf Basis der No-Code-Plattform NocoBase: zweistufige Verwaltung auf Projekt- und Aufgabenebene, Verantwortliche, Fortschritt, Meilensteine, Verzugswarnungen, Arbeitslast-Verteilung. Schlank und selbst hostbar, geeignet für KMU-Teams und abteilungsübergreifende Projekte.", breadcrumbs: [ { name: "Startseite", url: "/de/" }, { name: "Lösungen", url: "/de/solutions" }, { name: "Projektmanagement – Open-Source schlanke Projektkollaboration | NocoBase", url: "/de/solutions/all-in-one/project" } ] })} />
 </BaseDE>
 
 <style>

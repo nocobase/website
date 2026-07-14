@@ -2,6 +2,8 @@
 import BaseTW from "../../../layouts/BaseTW.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // 輕量方案 — 內容由 CMS 同步到 content/ai-blueprints/
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -240,4 +242,5 @@ const categories = ["全部", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "tw", url: "/tw/ai-blueprints", name: "AI Blueprints - NocoBase", description: "NocoBase AI Blueprints：小而專的業務方案庫，每個方案附帶標準提示詞，交給你的 AI Agent，幾分鐘內即可在自己的 NocoBase 實例上復刻同款系統。", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title_cn || s.title, url: "/tw/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "首頁", url: "/tw/" }, { name: "AI Blueprints - NocoBase", url: "/tw/ai-blueprints" } ] })} />
 </BaseTW>

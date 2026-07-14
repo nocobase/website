@@ -1,6 +1,8 @@
 ---
 import BaseFR from "../../../../layouts/BaseFR.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseFR
@@ -302,6 +304,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "fr", url: "/fr/solutions/all-in-one/crm", title: "CRM (Gestion clients) — open source et auto-hébergeable | NocoBase", description: "CRM open source basé sur la plateforme no-code NocoBase : gestion des leads, suivi client, conversion, fusion / déduplication, vue 360 du client. Prêt à l'emploi, déployable en interne.", breadcrumbs: [ { name: "Accueil", url: "/fr/" }, { name: "Solutions", url: "/fr/solutions" }, { name: "CRM (Gestion clients) — open source et auto-hébergeable | NocoBase", url: "/fr/solutions/all-in-one/crm" } ] })} />
 </BaseFR>
 
 <style>

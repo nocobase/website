@@ -1,6 +1,8 @@
 ---
 import BaseCN from "../../../../layouts/BaseCN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseCN
@@ -272,6 +274,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/all-in-one/sales", title: "订单管理系统 — 开源销售订单与应收管理 | NocoBase", description: "基于 NocoBase 无代码平台的开源订单管理系统：报价单、销售订单、发票、收款的完整链路，内置审批流、多币种、应收账款 KPI 与逾期分析。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "订单管理系统 — 开源销售订单与应收管理 | NocoBase", url: "/cn/solutions/all-in-one/sales" } ] })} />
 </BaseCN>
 
 <style>

@@ -2,6 +2,8 @@
 import BasePT from "../../../layouts/BasePT.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import AIAvatar from "../../../components/AIAvatar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 ---
 
 <BasePT
@@ -536,6 +538,7 @@ import AIAvatar from "../../../components/AIAvatar.astro";
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "pt", url: "/pt/solutions/all-in-one", title: "Sistema de Gestão Empresarial Integrado - CRM / Tickets / Projetos / Ativos / RH | NocoBase", description: "Sistema de gestão empresarial integrado e open source: CRM, Gestão de Pedidos, Help Desk, Gestão de Projetos, Gestão de Ativos e Recursos Humanos — 6 módulos consolidados. Construído sobre a plataforma no-code NocoBase, pronto para uso, indicado para equipes de pequeno e médio porte.", breadcrumbs: [ { name: "Início", url: "/pt/" }, { name: "Soluções", url: "/pt/solutions" }, { name: "Sistema de Gestão Empresarial Integrado - CRM / Tickets / Projetos / Ativos / RH | NocoBase", url: "/pt/solutions/all-in-one" } ] })} />
 </BasePT>
 
 <style>

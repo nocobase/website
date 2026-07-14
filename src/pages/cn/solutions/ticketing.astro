@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // 导入交互演示数据
 import extensionDemoGuides from "../../../data/ticketing-extension-demo-cn.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // 获取插件数据
 const pluginData = await listPluginCategories();
@@ -565,6 +567,7 @@ console.log('Found plugins:', ticketingPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "cn", url: "/cn/solutions/ticketing", title: "高效便捷的工单管理系统", description: "NocoBase 工单管理系统作为 CRM 的重要补充，提供完整的工单生命周期管理，从客户联系人创建到工单分配处理，全流程数字化管理。", breadcrumbs: [ { name: "首页", url: "/cn/" }, { name: "解决方案", url: "/cn/solutions" }, { name: "高效便捷的工单管理系统", url: "/cn/solutions/ticketing" } ] })} />
 </BaseCN>
 
 <style>

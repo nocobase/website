@@ -1,6 +1,8 @@
 ---
 import BaseVI from "../../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseVI
@@ -281,6 +283,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "vi", url: "/vi/solutions/all-in-one/ticketing", title: "Help Desk — Hệ thống phiếu hỗ trợ khách hàng mã nguồn mở | NocoBase", description: "Hệ thống phiếu hỗ trợ mã nguồn mở dựa trên nền tảng no-code NocoBase: tiếp nhận sự cố, phân công thông minh, đếm SLA, mức ưu tiên, phân loại AI, đánh giá hài lòng, workspace nhân viên hỗ trợ. Dùng được ngay, phù hợp cho nhóm hỗ trợ khách hàng và đội hậu mãi vừa và nhỏ.", breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "Giải pháp", url: "/vi/solutions" }, { name: "Help Desk — Hệ thống phiếu hỗ trợ khách hàng mã nguồn mở | NocoBase", url: "/vi/solutions/all-in-one/ticketing" } ] })} />
 </BaseVI>
 
 <style>
