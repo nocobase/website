@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — AI Report Generator: report task management, business categories, key finding extraction, confidence review, multi-format report export, and AI-generated analysis charts. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/57-ai-report-generator.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— AI 报告生成系统:报告任务管理、业务分类、关键发现提取、置信度审核、多格式报告导出和 AI 分析图表。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/57-ai-report-generator.html",
-  "updatedAt": "2026-07-12T17:04:40.947Z"
+  "updatedAt": "2026-07-14T03:29:02.189Z",
+  "featureList": "Report task management\nBusiness categories\nKey finding extraction\nConfidence review\nMulti-format report export\nAI-generated analysis charts",
+  "about": "ai report generator\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

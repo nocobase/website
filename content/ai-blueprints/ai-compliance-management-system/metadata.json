@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — Compliance Management System: compliance frameworks, controls, evidence materials, testing plans, and AI compliance analysis reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/86-ai-compliance-management-system.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 合规管理系统:合规框架、控制项、证据材料、测试计划和 AI 合规分析报告。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/86-ai-compliance-management-system.html\n",
-  "updatedAt": "2026-07-12T18:07:51.888Z"
+  "updatedAt": "2026-07-14T03:29:04.114Z",
+  "featureList": "Compliance frameworks\nControls\nEvidence materials\nTesting plans\nAI compliance analysis reports",
+  "about": "compliance management\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

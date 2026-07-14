@@ -564,9 +564,12 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-06-28T01:36:23.407Z",
+  "updatedAt": "2026-07-14T03:30:19.655Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null
+  "ai_generated_ja": null,
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": "NocoBase\nSalesforce"
 }

@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — Field Service Management System: work order dispatching, technician scheduling, service deadline tracking, spare parts suggestions, and AI work order operations analysis. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/60-field-service-management-system.html\n",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 现场服务管理系统:工单派发、人员调度、服务时限跟踪、备件建议和 AI 工单运营分析。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/60-field-service-management-system.html",
-  "updatedAt": "2026-07-12T18:07:39.391Z"
+  "updatedAt": "2026-07-14T03:29:03.471Z",
+  "featureList": "Work order dispatching\nTechnician scheduling\nService deadline tracking\nSpare parts suggestions\nAI work order operations analysis",
+  "about": "field service management syste\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

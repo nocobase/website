@@ -452,9 +452,12 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-06-28T01:36:13.570Z",
+  "updatedAt": "2026-07-14T03:30:20.394Z",
   "author": "Zhang lu, Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": true
+  "ai_generated_ja": true,
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": "NocoBase\nSalesforce"
 }

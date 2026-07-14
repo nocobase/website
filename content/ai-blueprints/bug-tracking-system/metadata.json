@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Bug Tracking System: a bug board, an issue list, reproduction details, version fix tracking, a new-issue form, and an AI bug analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/32-bug-tracking.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— Bug 跟踪系统：Bug 看板、问题列表、复现详情、版本修复跟踪、新增问题表单和 AI Bug 分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/32-bug-tracking.html",
-  "updatedAt": "2026-06-25T18:20:17.694Z"
+  "updatedAt": "2026-07-14T03:28:48.454Z",
+  "featureList": "Bug board\nIssue list\nReproduction details\nVersion fix tracking\nNew-issue form\nAn AI bug analysis report",
+  "about": "bug tracking\nIT & Data\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

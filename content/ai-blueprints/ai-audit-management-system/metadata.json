@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — Audit Management System: centralize audit findings, evidence materials, remediation deadlines, and risk status, with AI evidence analysis, remediation suggestions, multilingual translation, and form filling. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/61-audit-management-system.html\n",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 审计管理系统: 集中管理审计发现、证据材料、整改期限和风险状态，支持 AI 证据分析、整改建议、多语言翻译和表单填写。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/61-audit-management-system.html",
-  "updatedAt": "2026-07-12T18:07:17.697Z"
+  "updatedAt": "2026-07-14T03:29:02.822Z",
+  "featureList": "Centralize audit findings\nEvidence materials\nRemediation deadlines\nRisk status\nWith AI evidence analysis\nRemediation suggestions\nMultilingual translation\nForm filling",
+  "about": "audit management\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

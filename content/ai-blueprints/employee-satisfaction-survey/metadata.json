@@ -56,6 +56,9 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Employee Satisfaction Survey System: an eNPS gauge, a dimension heatmap, and a grid of feedback cards. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html",
-  "updatedAt": "2026-06-25T17:47:50.481Z",
-  "prompt_cn": "用 NocoBase 搭建一个应用 —— 满意度调查:eNPS 仪表盘、维度热力图和反馈卡片网格。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html"
+  "updatedAt": "2026-07-14T03:28:44.486Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 满意度调查:eNPS 仪表盘、维度热力图和反馈卡片网格。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/14-satisfaction-survey.html",
+  "featureList": "ENPS gauge\nDimension heatmap\nA grid of feedback cards",
+  "about": "employee satisfaction survey\nSupport\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }
