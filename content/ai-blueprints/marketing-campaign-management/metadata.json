@@ -56,6 +56,9 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Marketing Campaign Management System: a native gantt, KPI cards, donut charts, and data tables. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
-  "updatedAt": "2026-06-25T17:40:46.648Z",
-  "prompt_cn": "用 NocoBase 搭建一个应用 —— 营销活动指挥台:原生甘特图、KPI 卡片、环形图和数据表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/16-campaign-management.html"
+  "updatedAt": "2026-07-14T03:28:36.569Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 营销活动指挥台:原生甘特图、KPI 卡片、环形图和数据表。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/16-campaign-management.html",
+  "featureList": "Native gantt\nKPI cards\nDonut charts\nData tables",
+  "about": "marketing campaign management\nMarketing\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Device Management System: a device health dashboard, security & compliance tags, warranty risk, and AI asset-label recognition. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/25-device-management.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 设备管理：设备健康看板、安全合规标签、保修风险和 AI 资产标签识别。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/25-device-management.html",
-  "updatedAt": "2026-06-25T18:22:09.980Z"
+  "updatedAt": "2026-07-14T03:28:51.045Z",
+  "featureList": "Device health dashboard\nSecurity & compliance tags\nWarranty risk\nAI asset-label recognition",
+  "about": "device management\nInventory & Assets\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

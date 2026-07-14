@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Service Request System: a step-by-step service request form, category selection, service-level hints, approval requirements, a request list, and an AI service-request analysis report. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/30-service-request.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 服务申请表：分步服务申请表单、分类选择、服务等级提示、审批要求、请求列表和 AI 服务申请分析报告。布局和标志性视觉参照这个原型：https://static-docs.nocobase.com/solution/templates/30-service-request.html",
-  "updatedAt": "2026-06-25T18:20:45.577Z"
+  "updatedAt": "2026-07-14T03:28:49.118Z",
+  "featureList": "Step-by-step service request form\nCategory selection\nService-level hints\nApproval requirements\nRequest list\nAn AI service-request analysis report",
+  "about": "service request\nSupport\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

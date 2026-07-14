@@ -121,5 +121,7 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-13T14:15:10.914Z"
+  "updatedAt": "2026-07-13T14:15:10.914Z",
+  "about": null,
+  "mentions": null
 }

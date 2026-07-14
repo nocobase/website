@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an application with NocoBase — Lightweight Project Management System: task boards, assignees, priorities, risk tasks, AI-assisted task extraction, and project status reports. Use this prototype as the layout and signature visual reference: https://static-docs.nocobase.com/solution/templates/53-project-management-system.html",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 轻量项目管理系统:任务看板、负责人、优先级、风险任务、AI 任务整理和项目状态汇报。布局和标志性视觉参照这个原型: https://static-docs.nocobase.com/solution/templates/53-project-management-system.html",
-  "updatedAt": "2026-07-12T17:03:58.637Z"
+  "updatedAt": "2026-07-14T03:29:01.560Z",
+  "featureList": "Task boards\nAssignees\nPriorities\nRisk tasks\nAI-assisted task extraction\nProject status reports",
+  "about": "project management - lite\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

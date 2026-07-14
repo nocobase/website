@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
-      "updatedAt": "2024-11-24T05:34:17.499Z",
+      "updatedAt": "2026-06-24T12:43:08.284Z",
       "id": 3,
       "title": "Open source",
       "title_cn": "开源",
@@ -53,6 +55,8 @@
       "title_ja": "オープンソース",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-06-23T05:12:08.714Z",
-      "updatedAt": "2024-11-24T05:34:18.423Z",
+      "updatedAt": "2026-06-24T12:43:08.295Z",
       "id": 10,
       "title": "Customer Stories",
       "title_cn": "客户故事",
@@ -79,6 +83,8 @@
       "title_ja": "顧客のストーリー",
       "description_ja": "NocoBaseを活用して独自の課題を解決する企業の実際の成功事例とケーススタディを発見してください。",
       "keywords_ja": "NocoBase 顧客ストーリー, 顧客成功事例, ビジネスケーススタディ, ノーコード顧客体験, ユーザーの推薦, 実際のアプリケーション, NocoBase の実装",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,7 +96,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -105,6 +111,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-07-23T14:33:16.045Z",
-      "updatedAt": "2024-11-24T05:34:20.404Z",
+      "updatedAt": "2026-06-24T12:43:08.343Z",
       "id": 21,
       "title": "Internal-Tools",
       "title_cn": "内部工具",
@@ -131,6 +139,8 @@
       "title_ja": "内部ツール",
       "description_ja": "内部ツールに関する説明はここに記載されます。",
       "keywords_ja": "内部, ツール, 管理",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-07-26T11:10:00.908Z",
-      "updatedAt": "2024-11-24T05:34:20.751Z",
+      "updatedAt": "2026-06-24T12:43:08.353Z",
       "id": 23,
       "title": "NocoBase",
       "title_cn": "NocoBase",
@@ -157,6 +167,8 @@
       "title_ja": "NocoBase",
       "description_ja": "説明はまだありません。",
       "keywords_ja": "キーワードはまだありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-09-25T02:38:09.105Z",
-      "updatedAt": "2024-11-24T05:34:28.988Z",
+      "updatedAt": "2026-06-24T12:43:08.554Z",
       "id": 68,
       "title": "API Integration",
       "title_cn": "API集成",
@@ -183,6 +195,8 @@
       "title_ja": "API統合",
       "description_ja": "リリースノート",
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-11-15T06:50:31.777Z",
-      "updatedAt": "2024-11-24T05:34:31.955Z",
+      "updatedAt": "2026-06-24T12:43:08.599Z",
       "id": 84,
       "title": "zero-code",
       "title_cn": "零代码",
@@ -209,6 +223,8 @@
       "title_ja": "ゼロコード",
       "description_ja": "説明はありません。",
       "keywords_ja": "キーワードはありません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-12-12T02:10:10.974Z",
-      "updatedAt": "2024-12-12T02:10:10.974Z",
+      "updatedAt": "2026-06-24T12:43:08.631Z",
       "id": 96,
       "title": "salesforce alternative",
       "title_cn": "salesforce 替代品",
@@ -235,8 +251,10 @@
       "title_ja": "Salesforceの代替",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.706Z",
         "updatedAt": "2025-05-28T08:31:54.706Z",
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-12-12T02:11:12.690Z",
-      "updatedAt": "2024-12-12T02:11:12.690Z",
+      "updatedAt": "2026-06-24T12:43:08.635Z",
       "id": 97,
       "title": "salesforce competitors",
       "title_cn": "salesforce 竞争对手",
@@ -261,8 +279,10 @@
       "title_ja": "salesforce の競合他社",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.707Z",
         "updatedAt": "2025-05-28T08:31:54.707Z",
@@ -272,7 +292,7 @@
     },
     {
       "createdAt": "2024-12-12T02:12:08.261Z",
-      "updatedAt": "2024-12-12T02:12:08.261Z",
+      "updatedAt": "2026-06-24T12:43:08.643Z",
       "id": 98,
       "title": "salesforce open source",
       "title_cn": "salesforce开源",
@@ -287,8 +307,10 @@
       "title_ja": "salesforceオープンソース",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
-      "updatedById": 1,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.707Z",
         "updatedAt": "2025-05-28T08:31:54.707Z",
@@ -298,7 +320,7 @@
     },
     {
       "createdAt": "2025-01-09T08:57:08.648Z",
-      "updatedAt": "2025-01-09T08:59:44.846Z",
+      "updatedAt": "2026-06-24T12:43:08.672Z",
       "id": 108,
       "title": "plugin",
       "title_cn": "插件",
@@ -313,8 +335,10 @@
       "title_ja": "プラグインです",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.707Z",
         "updatedAt": "2025-05-28T08:31:54.707Z",
@@ -324,7 +348,7 @@
     },
     {
       "createdAt": "2025-05-28T08:28:52.597Z",
-      "updatedAt": "2025-05-28T08:28:52.597Z",
+      "updatedAt": "2026-06-24T12:43:09.008Z",
       "id": 188,
       "title": "real estate",
       "title_cn": "房地产",
@@ -339,8 +363,10 @@
       "title_ja": "不動産",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.707Z",
         "updatedAt": "2025-05-28T08:31:54.707Z",
@@ -350,7 +376,7 @@
     },
     {
       "createdAt": "2025-05-28T08:29:38.619Z",
-      "updatedAt": "2025-05-28T08:29:38.619Z",
+      "updatedAt": "2026-06-24T12:43:09.012Z",
       "id": 189,
       "title": "HR management",
       "title_cn": "人事管理",
@@ -365,8 +391,10 @@
       "title_ja": "人事管理",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 3,
-      "updatedById": 3,
+      "updatedById": 9,
       "articlesTags": {
         "createdAt": "2025-05-28T08:31:54.707Z",
         "updatedAt": "2025-05-28T08:31:54.707Z",
@@ -396,9 +424,12 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": false,
-  "updatedAt": "2025-09-30T05:34:11.812Z",
+  "updatedAt": "2026-07-14T03:30:25.444Z",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "author": "Deng lijia"
+  "author": "Deng lijia",
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": "NocoBase\nSalesforce"
 }

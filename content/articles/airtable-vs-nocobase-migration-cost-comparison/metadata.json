@@ -400,5 +400,8 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-06-28T01:35:54.712Z"
+  "updatedAt": "2026-07-14T03:30:31.152Z",
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": "NocoBase\nAirtable"
 }

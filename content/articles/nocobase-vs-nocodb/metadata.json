@@ -508,10 +508,12 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-07-10T14:40:46.602Z",
+  "updatedAt": "2026-07-14T03:30:16.656Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "hideDetailPage": false
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": "NocoBase\nNocoDB"
 }

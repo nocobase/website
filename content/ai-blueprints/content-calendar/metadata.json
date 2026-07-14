@@ -56,6 +56,9 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — Content Calendar Management System: a calendar view with status pills and a right-side summary panel. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/03-content-calendar.html",
-  "updatedAt": "2026-06-25T17:46:29.456Z",
-  "prompt_cn": "用 NocoBase 搭建一个应用 —— 内容日历:带状态标签的日历视图和右侧汇总面板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/03-content-calendar.html"
+  "updatedAt": "2026-07-14T03:28:42.359Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— 内容日历:带状态标签的日历视图和右侧汇总面板。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/03-content-calendar.html",
+  "featureList": "Calendar view with status pills\nRight-side summary panel",
+  "about": "content calendar management\nMarketing\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

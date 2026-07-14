@@ -57,5 +57,8 @@
   "author": "NocoBase Team",
   "prompt": "Build an App with NocoBase — Contract Management System: Contract ledger, lifecycle calendar, AI clause extraction, risk clause review, and obligation tracking. The layout and signature visual style can reference this prototype: https://static-docs.nocobase.com/solution/templates/26-contract-management.html ",
   "prompt_cn": "用 NocoBase 搭建一个应用 —— 合同管理:合同台账、生命周期日历、AI 条款抽取、风险条款审查,以及义务跟踪。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/26-contract-management.html",
-  "updatedAt": "2026-07-08T17:29:46.316Z"
+  "updatedAt": "2026-07-14T03:29:00.217Z",
+  "featureList": "Contract ledger\nLifecycle calendar\nAI clause extraction\nRisk clause review\nObligation tracking",
+  "about": "contract management\nInventory & Assets\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }

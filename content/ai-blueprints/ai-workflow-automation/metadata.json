@@ -58,6 +58,9 @@
   },
   "author": "NocoBase Team",
   "prompt": "Build a NocoBase app — AI Workflow Automation System: native workflows with AI-employee nodes and an execution flow. Match the layout and signature visuals of this reference prototype: https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html",
-  "updatedAt": "2026-06-25T18:18:46.265Z",
-  "prompt_cn": "用 NocoBase 搭建一个应用 —— AI 工作流:原生工作流 + AI 员工节点和执行流程视图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html"
+  "updatedAt": "2026-07-14T03:28:46.452Z",
+  "prompt_cn": "用 NocoBase 搭建一个应用 —— AI 工作流:原生工作流 + AI 员工节点和执行流程视图。布局和标志性视觉参照这个原型:https://static-docs.nocobase.com/solution/templates/11-ai-workflow-automation.html",
+  "featureList": "Native workflows with AI-employee nodes\nExecution flow",
+  "about": "ai workflow automation\nOperations\nAI no-code app builder\ninternal tools\nNocoBase",
+  "mentions": null
 }
