@@ -162,6 +162,44 @@ export function generateBlogPostingSchema(o: ContentOpts) {
   });
 }
 
+// List / collection pages (blog index, ai-blueprints index, solutions index):
+// Blog|CollectionPage + ItemList + BreadcrumbList.
+export function generateListSchema(o: {
+  locale: string;
+  url: string;
+  name: string;
+  description?: string;
+  kind?: 'Blog' | 'CollectionPage';
+  items: { name: string; url: string }[];
+  breadcrumbs: Crumb[];
+}) {
+  const pageUrl = absUrl(o.url)!;
+  return removeUndefined({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': o.kind || 'CollectionPage',
+        '@id': `${pageUrl}#webpage`,
+        name: o.name,
+        url: pageUrl,
+        description: o.description,
+        inLanguage: schemaLang(o.locale),
+        isPartOf: { '@id': WEBSITE_ID },
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: (o.items || []).slice(0, 100).map((it, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: it.name,
+            url: absUrl(it.url),
+          })),
+        },
+      },
+      breadcrumbNode(o.breadcrumbs),
+    ],
+  });
+}
+
 // Solution detail (product pages: CRM / Ticketing / All-in-One / ...):
 // WebPage + SoftwareApplication + BreadcrumbList. name/description come from the
 // page's own SEO title/description so the schema stays localized and matches

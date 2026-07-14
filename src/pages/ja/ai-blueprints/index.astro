@@ -2,6 +2,8 @@
 import BaseJA from "../../../layouts/BaseJA.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // AI Blueprints — CMS から content/ai-blueprints/ に同期済み
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -241,4 +243,5 @@ const categories = ["すべて", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "ja", url: "/ja/ai-blueprints", name: "AI Blueprints - NocoBase", description: "NocoBase AI Blueprints：すぐに使える標準プロンプト付きの小さな業務ソリューション集。AI エージェントに渡すだけで、あなた自身の NocoBase インスタンス上に同じシステムを再構築できます。", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title, url: "/ja/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "ホーム", url: "/ja/" }, { name: "AI Blueprints - NocoBase", url: "/ja/ai-blueprints" } ] })} />
 </BaseJA>

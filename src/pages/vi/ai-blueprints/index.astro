@@ -2,6 +2,8 @@
 import BaseVI from "../../../layouts/BaseVI.astro";
 import ShapeFooter from "../../../components/ShapeFooter.astro";
 import { listLightSolutions } from "../../../utils";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 // Lightweight solutions are synced from the CMS into content/ai-blueprints/
 const { data: solutions } = await listLightSolutions({ pageSize: 100 });
@@ -240,4 +242,5 @@ const categories = ["Tất cả", ...tagTitles];
       }
     }
   </script>
+<JsonLd data={generateListSchema({ locale: "vi", url: "/vi/ai-blueprints", name: "AI Blueprints - NocoBase", description: "NocoBase AI Blueprints: các giải pháp nhỏ gọn, tập trung, mỗi giải pháp đi kèm một prompt sẵn dùng để AI agent có thể tái tạo toàn bộ hệ thống trên phiên bản NocoBase của bạn.", kind: "CollectionPage", items: (solutions || []).map((s) => ({ name: s.title, url: "/vi/ai-blueprints/" + s.slug })), breadcrumbs: [ { name: "Trang chủ", url: "/vi/" }, { name: "AI Blueprints - NocoBase", url: "/vi/ai-blueprints" } ] })} />
 </BaseVI>

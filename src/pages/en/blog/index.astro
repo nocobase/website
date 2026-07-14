@@ -6,6 +6,8 @@ import Tags from "../../../components/Tags.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { listArticleTags, listArticles, url } from "../../../utils";
 import BlogSidebar from "../../../components/BlogSidebar.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateListSchema } from "../../../seo/schema";
 
 const description = "The latest news and announcements from NocoBase";
 const basepath = "/en/blog";
@@ -123,4 +125,5 @@ const socialLinks = [
       </div>
     </div>
   </section>
+<JsonLd data={generateListSchema({ locale: "en", url: "/en/blog", name: "Blog", description, kind: "Blog", items: (data || []).map((p) => ({ name: p.title, url: "/en/blog/" + p.slug })), breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Blog", url: "/en/blog" } ] })} />
 </Layout>
