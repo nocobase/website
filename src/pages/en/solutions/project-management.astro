@@ -6,6 +6,8 @@ import { listPluginCategories } from "../../../utils";
 
 // Import interactive demo data
 import projectDemoGuides from "../../../data/project-management-demo-en.json";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../seo/schema";
 
 // Get plugin data
 const pluginData = await listPluginCategories();
@@ -454,6 +456,7 @@ console.log('Found plugins:', projectPlugins.map(p => p?.name || p?.name_cn));
   <!-- CTA Section End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/project-management", title: "Comprehensive R&D Project Management Solution", description: "NocoBase R&D project management system provides complete development lifecycle management capabilities. From requirements planning, task assignment, progress tracking to quality management, achieving full-process digital management and team collaboration.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "Comprehensive R&D Project Management Solution", url: "/en/solutions/project-management" } ] })} />
 </Layout>
 
 <style>

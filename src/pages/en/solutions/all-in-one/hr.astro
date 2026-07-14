@@ -1,6 +1,8 @@
 ---
 import BaseEN from "../../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseEN
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/all-in-one/hr", title: "HR Management — Open Source Human Resource Management | NocoBase", description: "Open-source HR management built on the NocoBase no-code platform: employee records, onboarding, offboarding, leave, probation tracking, and position / department structure. Lightweight and self-hostable for small and mid-sized HR teams.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "HR Management — Open Source Human Resource Management | NocoBase", url: "/en/solutions/all-in-one/hr" } ] })} />
 </BaseEN>
 
 <style>

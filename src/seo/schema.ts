@@ -162,6 +162,46 @@ export function generateBlogPostingSchema(o: ContentOpts) {
   });
 }
 
+// Solution detail (product pages: CRM / Ticketing / All-in-One / ...):
+// WebPage + SoftwareApplication + BreadcrumbList. name/description come from the
+// page's own SEO title/description so the schema stays localized and matches
+// what the visitor sees. featureList/topics are left for a later curated pass.
+export function generateSolutionSchema(o: {
+  locale: string;
+  url: string;
+  title: string;
+  description?: string;
+  breadcrumbs: Crumb[];
+}) {
+  const pageUrl = absUrl(o.url)!;
+  return removeUndefined({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${pageUrl}#webpage`,
+        name: o.title,
+        url: pageUrl,
+        description: o.description,
+        inLanguage: schemaLang(o.locale),
+        isPartOf: { '@id': WEBSITE_ID },
+      },
+      {
+        '@type': 'SoftwareApplication',
+        '@id': `${pageUrl}#software`,
+        name: o.title,
+        url: pageUrl,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Self-hosted, Web',
+        description: o.description,
+        creator: { '@id': ORG_ID },
+        isBasedOn: { '@id': SOFTWARE_ID },
+      },
+      breadcrumbNode(o.breadcrumbs),
+    ],
+  });
+}
+
 // AI Blueprint (light solution) detail: Article + SoftwareApplication + BreadcrumbList.
 export function generateBlueprintSchema(o: ContentOpts) {
   const pageUrl = absUrl(o.url)!;

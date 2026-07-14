@@ -1,6 +1,8 @@
 ---
 import BaseEN from "../../../../layouts/BaseEN.astro";
 import ShapeFooter from "../../../../components/ShapeFooter.astro";
+import JsonLd from "../../../../components/JsonLd.astro";
+import { generateSolutionSchema } from "../../../../seo/schema";
 ---
 
 <BaseEN
@@ -282,6 +284,7 @@ import ShapeFooter from "../../../../components/ShapeFooter.astro";
   <!-- CTA End -->
 
   <ShapeFooter />
+<JsonLd data={generateSolutionSchema({ locale: "en", url: "/en/solutions/all-in-one/project", title: "Project Management — Open Source Lightweight Project Collaboration | NocoBase", description: "Open-source project management built on the NocoBase no-code platform: two-level project + task model, owners, progress, milestones, overdue alerts, and workload distribution. Lightweight and self-hostable for small-to-mid teams and cross-functional projects.", breadcrumbs: [ { name: "Home", url: "/en/" }, { name: "Solutions", url: "/en/solutions" }, { name: "Project Management — Open Source Lightweight Project Collaboration | NocoBase", url: "/en/solutions/all-in-one/project" } ] })} />
 </BaseEN>
 
 <style>
