@@ -8,6 +8,8 @@ import { getArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
 import ShareIcons from "../../../components/ShareIcons.astro";
 import ImageZoom from "../../../components/ImageZoom.astro";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateBlogPostingSchema } from "../../../seo/schema";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug, "cn");
@@ -64,9 +66,14 @@ const qrCodeDataURL = await QRCode.toDataURL(currentUrl, {
     light: '#ffffff'
   }
 });
+const __canonical = "https://www.nocobase.com" + basepath + "/" + slug;
+const __locale = basepath.split("/")[1] || "en";
+const __crumbs = (tabs || []).map((t) => t.active ? { name: title, url: __canonical } : { name: t.title, url: "https://www.nocobase.com" + t.link });
+const __jsonLd = generateBlogPostingSchema({ locale: __locale, url: __canonical, title, description, datePublished: data.publishedAt, dateModified: data.updatedAt, author: data.author, image: data.cover?.url, tags: (data.tags || []).map((t) => t.title), breadcrumbs: __crumbs });
 ---
 
 <Layout title={title} description={description} keywords={keywords} image={data.cover ? url(data.cover.url) : undefined}>
+<JsonLd data={__jsonLd} />
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {data.author && (<span title={data.author}>{data.author}<span style="opacity: 0.3; display:inline-block; padding: 0 .8em;">|</span></span>)}

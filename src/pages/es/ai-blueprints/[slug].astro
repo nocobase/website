@@ -6,6 +6,8 @@ import Layout from "../../../layouts/Layout.astro";
 import ImageZoom from "../../../components/ImageZoom.astro";
 import { getLightSolution, listLightSolutions, url } from "../../../utils";
 import { renderPromptSection } from "../../../utils/light-solution-prompt";
+import JsonLd from "../../../components/JsonLd.astro";
+import { generateBlueprintSchema } from "../../../seo/schema";
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getLightSolution(slug, "es");
@@ -49,9 +51,14 @@ const tabs = [
     active: true,
   },
 ];
+const __canonical = "https://www.nocobase.com" + basepath + "/" + slug;
+const __locale = basepath.split("/")[1] || "en";
+const __crumbs = (tabs || []).map((t) => t.active ? { name: title, url: __canonical } : { name: t.title, url: "https://www.nocobase.com" + t.link });
+const __jsonLd = generateBlueprintSchema({ locale: __locale, url: __canonical, title, description, datePublished: data.publishedAt, dateModified: data.updatedAt, author: data.author, image: data.cover?.url, tags: (data.tags || []).map((t) => t.title), breadcrumbs: __crumbs });
 ---
 
 <Layout title={title} image={data.cover ? url(data.cover.url) : undefined} description={description} keywords={keywords}>
+<JsonLd data={__jsonLd} />
   <PageHeader title={title} description={description} breadcrumb={tabs}>
     <div>
       {
