@@ -8,7 +8,7 @@
   "description_ja": "2026.06.29-07.06 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
   "slug": "weekly-updates-20260706",
   "publishedAt": "2026-07-05T16:00:00.000Z",
-  "status": "published",
+  "status": "deleted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -122,5 +122,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-06T05:48:28.460Z"
+  "updatedAt": "2026-07-14T02:20:27.684Z"
 }
