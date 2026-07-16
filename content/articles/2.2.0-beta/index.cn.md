@@ -72,6 +72,12 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 ![](https://static-docs.nocobase.com/2026-07-10-08-04-59.png)
 
+参考文档：
+
+- [移动端布局](https://docs.nocobase.com/cn/interface-builder/ui-layout/mobile)
+
+* [多工作区](https://docs.nocobase.com/cn/multi-app/multi-portal/)
+
 ### 新评论区块
 
 新评论区块不再局限于主数据源的评论表，不是关系区块也可以使用。
