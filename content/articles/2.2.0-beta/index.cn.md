@@ -41,6 +41,7 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 目前，NocoBase 内置的大部分插件，已在这个版本里进行了 client-v2 的适配和迁移，因此大部分功能是能直接使用的（还有少数一些未迁移的插件，我们会在持续迁移）。不过有些插件提供的能力，后续只会在 `/v/` 分支进行更新和迭代。具体如下：
 
+* 不支持在线添加和更新插件
 * 插件列表不再显示废弃插件和仅支持 1.x 的插件
 * 不再支持新增 Page V1
 * 公开表单会区分 v1 和 v2，`/v/` 分支不显示 v1 版本的公开表单
@@ -111,7 +112,7 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 | `@nocobase/plugin-audit-logs`                 | `@nocobase/plugin-audit-logger`         | 自 1.0 起废弃的功能 |
 | `@nocobase/plugin-backup-restore`             | `@nocobase/plugin-backups`              | 自 1.0 起废弃的功能 |
 | `@nocobase/plugin-block-multi-step-form`      | JS Block                                | 自 2.0 起废弃的功能 |
-| `@nocobase/plugin-charts`                     | `@nocobase/plugin-data-visualization`   | 自 2.0 起废弃的功能 |
+| `@nocobase/plugin-charts`                     | `@nocobase/plugin-data-visualization`   | 自 1.0 起废弃的功能 |
 | `@nocobase/plugin-collection-fdw`             | 从数据库同步                            | 自 2.2 起废弃的功能 |
 | `@nocobase/plugin-comments`                   | `@nocobase/plugin-block-comment`        | 自 2.2 起废弃的功能 |
 | `@nocobase/plugin-custom-variables`           | 事件流                                  | 自 2.2 起废弃的功能 |
