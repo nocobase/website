@@ -120,7 +120,7 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 ### AI 知识库优化
 
-这个版本继续优化了 AI 知识库相关能力。
+这个版本 AI 知识库也完成了 `client-v2` 版本的迁移。同时，工作流创建知识库文档的时候，支持按知识库文档的 key 进行覆盖。
 
 ![](https://static-docs.nocobase.com/20260617003505.png)
 
