@@ -41,7 +41,6 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 目前，NocoBase 内置的大部分插件，已在这个版本里进行了 client-v2 的适配和迁移，因此大部分功能是能直接使用的（还有少数一些未迁移的插件，我们会在持续迁移）。不过有些插件提供的能力，后续只会在 `/v/` 分支进行更新和迭代。具体如下：
 
-* 不支持在线添加和更新插件
 * 插件列表不再显示废弃插件和仅支持 1.x 的插件
 * 不再支持新增 Page V1
 * 公开表单会区分 v1 和 v2，`/v/` 分支不显示 v1 版本的公开表单
@@ -58,7 +57,38 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 ### 多工作区（仅 `/v/` 分支支持）
 
-工作区（Portal）用于在同一个应用内提供多个访问入口。每个工作区都可以拥有独立的页面、菜单、导航结构、布局和权限配置。
+工作区（Portal）用于在同一个应用内提供多个访问入口。每个工作区都可以拥有独立的页面、菜单、导航结构、布局和权限配置。（专业版及以上版本支持）
+
+在实际业务场景中，不同角色通常需要不同的操作界面。例如一个零售管理系统：
+
+```
+零售管理系统
+
+├─ 总部工作区
+├─ 门店工作区
+├─ 经销商工作区
+└─ 移动工作区
+```
+
+总部员工关注：
+
+* 商品管理
+* 库存管理
+* 数据分析
+
+门店员工关注：
+
+* 收银
+* 库存盘点
+* 订单处理
+
+经销商关注：
+
+* 采购
+* 对账
+* 发货状态
+
+虽然使用的是同一个系统，但不同角色并不需要看到相同的菜单和页面，多工作区正是用来解决这一问题的。
 
 ![](https://static-docs.nocobase.com/2026-07-10-08-06-15.png)
 
@@ -70,19 +100,19 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 新移动端提供了全新的 `/v/mobile` 入口，与此同时，工作区也支持新增移动端布局的工作区。
 
+移动端布局和桌面端布局使用相同的数据源和业务数据，不过菜单、路由和页面内容分别配置。这样可以根据移动端的使用方式重新组织页面，而不必受到桌面端页面结构的限制。同时，使用底部标签栏作为一级导航，更适合在手机上完成数据录入、查询、审批和任务处理。
+
 ![](https://static-docs.nocobase.com/2026-07-10-08-04-59.png)
 
 参考文档：
 
-- [移动端布局](https://docs.nocobase.com/cn/interface-builder/ui-layout/mobile)
-
-* [多工作区](https://docs.nocobase.com/cn/multi-app/multi-portal/)
+* [移动端布局](https://docs.nocobase.com/cn/interface-builder/ui-layout/mobile)
 
 ### 新评论区块
 
-新评论区块不再局限于主数据源的评论表，不是关系区块也可以使用。
+新评论区块不再局限于主数据源的评论表，不是关系区块也可以使用。评论区块用于给业务记录添加评论能力。你可以在任务、文章、工单、客户等记录的详情页或弹窗里添加评论区块，让用户围绕当前记录查看、回复和新增评论。
 
-![](https://static-docs.nocobase.com/Comments-07-01-2026_12_03_PM%20(1).png)
+![](https://static-docs.nocobase.com/Comments-07-01-2026_12_02_PM.png)
 
 参考文档：
 
@@ -100,7 +130,7 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 
 ### 工作流：数据库事务节点
 
-工作流新增了数据库事务节点。
+工作流新增了数据库事务节点。它用于将一组数据库操作放入同一个事务中执行。适合需要保证多步数据处理 “全部成功或全部回滚” 的场景，例如创建订单后扣减库存、写入明细、更新状态等。
 
 ![](https://static-docs.nocobase.com/20260610205505.png)
 
@@ -118,7 +148,7 @@ https://nocobase.example.com/v/admin/1xl0epqn6q3
 | `@nocobase/plugin-audit-logs`                 | `@nocobase/plugin-audit-logger`         | 自 1.0 起废弃的功能 |
 | `@nocobase/plugin-backup-restore`             | `@nocobase/plugin-backups`              | 自 1.0 起废弃的功能 |
 | `@nocobase/plugin-block-multi-step-form`      | JS Block                                | 自 2.0 起废弃的功能 |
-| `@nocobase/plugin-charts`                     | `@nocobase/plugin-data-visualization`   | 自 1.0 起废弃的功能 |
+| `@nocobase/plugin-charts`                     | `@nocobase/plugin-data-visualization`   | 自 2.0 起废弃的功能 |
 | `@nocobase/plugin-collection-fdw`             | 从数据库同步                            | 自 2.2 起废弃的功能 |
 | `@nocobase/plugin-comments`                   | `@nocobase/plugin-block-comment`        | 自 2.2 起废弃的功能 |
 | `@nocobase/plugin-custom-variables`           | 事件流                                  | 自 2.2 起废弃的功能 |
