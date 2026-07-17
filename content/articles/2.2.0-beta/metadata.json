@@ -1,11 +1,11 @@
 {
   "id": 1128,
-  "title": "NocoBase 2.2.0-beta 发布",
-  "title_cn": "NocoBase 2.2.0-beta 发布",
-  "title_ja": null,
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title": "Announcing NocoBase 2.2-beta",
+  "title_cn": "NocoBase 2.2-beta 发布",
+  "title_ja": "NocoBase 2.2-beta をリリース",
+  "description": "NocoBase 2.2-beta brings Multi Portal, a new mobile client, and a new comment block, while continuing to enhance the AI knowledge base and workflow capabilities. It also introduces the brand-new /v/ branch—which will serve as a dedicated front-end entry for V2 and carry forward all future feature development.",
+  "description_cn": "NocoBase 2.2-beta 版本带来了多工作区、新移动端、新评论区块，同时继续提升 AI 知识库和工作流能力。以及全新的 `/v/` 分支——它会作为面向 V2 的独立前端入口，承接后续的功能演进。",
+  "description_ja": "NocoBase 2.2-beta では、マルチポータル、新モバイル版、新コメントブロックが追加され、同時に AI ナレッジベースとワークフローの機能も引き続き強化されています。さらに、全く新しい /v/ ブランチも導入されました——これは V2 向けの独立したフロントエンドの入口として、今後の機能拡張を担っていきます。",
   "slug": "2.2.0-beta",
   "publishedAt": "2026-07-12T16:58:31.607Z",
   "status": "drafted",
@@ -36,7 +36,7 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-07-16T07:18:11.025Z",
+  "updatedAt": "2026-07-17T01:26:39.852Z",
   "about": null,
   "mentions": null
 }
