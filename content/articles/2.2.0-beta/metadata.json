@@ -99,18 +99,18 @@
   ],
   "category": null,
   "cover": {
-    "createdAt": "2026-07-17T01:52:50.864Z",
-    "updatedAt": "2026-07-17T01:52:50.876Z",
-    "id": 2634,
+    "createdAt": "2026-07-17T02:20:06.588Z",
+    "updatedAt": "2026-07-17T02:20:06.595Z",
+    "id": 2635,
     "title": "大版本发布 (10)",
-    "filename": "大版本发布 (10)-cozbjw.png",
+    "filename": "大版本发布 (10)-d1t2cc.png",
     "extname": ".png",
     "size": 147250,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "/files/main/main/articleAttachments/2634.png",
-    "preview": "/files/main/main/articleAttachments/2634.png?preview=1",
+    "url": "/files/main/main/articleAttachments/2635.png",
+    "preview": "/files/main/main/articleAttachments/2635.png?preview=1",
     "storageId": 2,
     "createdById": 1,
     "updatedById": 1
@@ -122,7 +122,7 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-17T01:56:56.015Z",
+  "updatedAt": "2026-07-17T02:20:12.869Z",
   "about": "NocoBase 2.2\nNocoBase V2\nMulti-Portal\nMobile Client",
   "mentions": "@nocobase/plugin-block-comment\n@nocobase/plugin-data-visualization\n@nocobase/plugin-app-supervisor\n@nocobase/plugin-ui-layout\n@nocobase/plugin-audit-logger\n@nocobase/plugin-backups\n@nocobase/plugin-notification-manager"
 }
