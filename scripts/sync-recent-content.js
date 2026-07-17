@@ -68,6 +68,13 @@ async function resolveAttachmentURL(attachment) {
     return { ...attachment, url, preview };
   } catch (error) {
     console.warn(`Failed to resolve attachment URL ${attachment.url}: ${error.message}`);
+    // Fallback: compose the direct URL from the attachment filename. This CMS keeps
+    // public assets on a single OSS storage served at static-docs; composing beats
+    // shipping an authenticated-only /files URL that 404s for anonymous visitors.
+    if (typeof attachment.filename === 'string' && attachment.filename) {
+      const composed = `https://static-docs.nocobase.com/${encodeURIComponent(attachment.filename)}`;
+      return { ...attachment, url: composed, preview: composed };
+    }
     return attachment;
   }
 }
