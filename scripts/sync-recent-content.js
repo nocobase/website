@@ -38,6 +38,40 @@ const CONFIG = {
   debugMode: true
 };
 
+// --- permanent attachment URL resolver ---------------------------------------------
+// Since CMS 2.2, attachment `url`/`preview` come back as app-relative permanent routes
+// (`/files/{app}/{ds}/{collection}/{id}`) that 302-redirect to the storage's real URL
+// only for AUTHENTICATED requests. The website is anonymous, so a relative `/files/...`
+// 404s on www — resolve to the final direct (CDN) URL here at sync time instead.
+// Direct http(s) URLs (legacy data) pass through unchanged.
+const cmsOrigin = baseURL.replace(/\/api\/?$/, '');
+async function resolveAttachmentURL(attachment) {
+  if (!attachment || typeof attachment.url !== 'string' || !attachment.url.startsWith('/files/')) {
+    return attachment || null;
+  }
+  const resolveOne = async (relative) => {
+    const sep = relative.includes('?') ? '&' : '?';
+    const res = await axios.get(`${cmsOrigin}${relative}${sep}token=${token}`, {
+      maxRedirects: 0,
+      timeout: 30000,
+      validateStatus: (s) => s === 301 || s === 302,
+    });
+    return res.headers.location;
+  };
+  try {
+    const url = await resolveOne(attachment.url);
+    let preview = url;
+    if (typeof attachment.preview === 'string' && attachment.preview.startsWith('/files/')) {
+      try { preview = await resolveOne(attachment.preview); } catch (e) { /* fall back to url */ }
+    }
+    console.log(`Resolved attachment #${attachment.id || '?'} to direct URL`);
+    return { ...attachment, url, preview };
+  } catch (error) {
+    console.warn(`Failed to resolve attachment URL ${attachment.url}: ${error.message}`);
+    return attachment;
+  }
+}
+
 // API client with timeout and retry
 const api = axios.create({
   timeout: 30000, // 30-second timeout
@@ -530,7 +564,7 @@ async function syncRecentArticles() {
         tags: article.tags || [],
         sub_tags: article.sub_tags || [],
         category: article.category || null,
-        cover: article.cover || null,
+        cover: await resolveAttachmentURL(article.cover),
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
         hideDetailPage: article.hideDetailPage || false,
@@ -674,7 +708,7 @@ async function syncRecentLightSolutions() {
         publishedAt: solution.publishedAt,
         status: solution.status,
         tags: solution.tags || [],
-        cover: solution.cover || null,
+        cover: await resolveAttachmentURL(solution.cover),
         author: solution.author || null,
         prompt: solution.prompt || null,
         prompt_cn: solution.prompt_cn || null,

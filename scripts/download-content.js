@@ -6,6 +6,36 @@ import axios from 'axios';
 const baseURL = 'https://your-cms-url.com/api/';
 const token = 'your_api_token_here';
 
+// --- permanent attachment URL resolver (same as sync-recent-content.js) -------------
+// CMS 2.2 returns attachment url/preview as authenticated permanent routes
+// (`/files/...`); resolve them to the storage's direct (CDN) URL at sync time.
+const cmsOrigin = baseURL.replace(/\/api\/?$/, '');
+async function resolveAttachmentURL(attachment) {
+  if (!attachment || typeof attachment.url !== 'string' || !attachment.url.startsWith('/files/')) {
+    return attachment || null;
+  }
+  const resolveOne = async (relative) => {
+    const sep = relative.includes('?') ? '&' : '?';
+    const res = await axios.get(`${cmsOrigin}${relative}${sep}token=${token}`, {
+      maxRedirects: 0,
+      timeout: 30000,
+      validateStatus: (s) => s === 301 || s === 302,
+    });
+    return res.headers.location;
+  };
+  try {
+    const url = await resolveOne(attachment.url);
+    let preview = url;
+    if (typeof attachment.preview === 'string' && attachment.preview.startsWith('/files/')) {
+      try { preview = await resolveOne(attachment.preview); } catch (e) { /* fall back to url */ }
+    }
+    return { ...attachment, url, preview };
+  } catch (error) {
+    console.warn(`Failed to resolve attachment URL ${attachment.url}: ${error.message}`);
+    return attachment;
+  }
+}
+
 // Create an axios instance with a timeout setting
 const api = axios.create({
   timeout: 30000, // 30-second timeout
@@ -84,7 +114,7 @@ async function downloadArticles() {
         tags: article.tags || [],
         sub_tags: article.sub_tags || [],
         category: article.category || null,
-        cover: article.cover || null,
+        cover: await resolveAttachmentURL(article.cover),
         hideOnListPage: article.hideOnListPage || false,
         hideOnBlog: article.hideOnBlog || false,
         author: article.author || null,
