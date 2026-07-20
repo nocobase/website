@@ -1,14 +1,14 @@
 {
   "id": 1140,
-  "title": "NocoBase v2.1.27",
-  "title_cn": "NocoBase v2.1.27",
-  "title_ja": null,
+  "title": "NocoBase v2.1.27: Added Myanmar (`my-MM`) to the languages selectable in System Settings",
+  "title_cn": "NocoBase v2.1.27：在系统设置的可选语言中增加缅甸语",
+  "title_ja": "NocoBase v2.1.27：システム設定の対応言語にミャンマー語（`my-MM`）を追加しました",
   "description": "Release Note of v2.1.27",
   "description_cn": "v2.1.27 更新日志",
   "description_ja": null,
   "slug": "v2.1.27",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-07-18T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,17 +39,46 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2026-06-24T12:43:08.690Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-07-20T01:50:45.182Z",
+        "updatedAt": "2026-07-20T01:50:45.182Z",
+        "articles_id": 1140,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-07-19T05:36:08.522Z"
+  "updatedAt": "2026-07-20T01:50:45.153Z"
 }
