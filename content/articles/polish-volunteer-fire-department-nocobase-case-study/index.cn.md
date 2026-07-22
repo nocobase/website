@@ -10,12 +10,6 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 
 为了更好地管理这些工作，OSP Radlin II 的成员们开始共同寻找一套更适合消防队实际需求的系统。
 
----
-
-💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
-
----
-
 ## 从 Google Drive，到 NocoBase
 
 以前，OSP Radlin II 的成员主要依赖 Google Drive 等免费云存储来保存和共享资料。

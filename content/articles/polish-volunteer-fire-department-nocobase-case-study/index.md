@@ -10,13 +10,6 @@ For every callout, the team must ensure that responders are properly qualified, 
 
 To manage this work more effectively, the members of OSP Radlin II began searching for a system that could better support the department’s real operational needs.
 
----
-
-💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
-
----
-
-
 ## From Google Drive to NocoBase
 
 Previously, OSP Radlin II mainly relied on free cloud storage tools such as Google Drive to store and share information.
