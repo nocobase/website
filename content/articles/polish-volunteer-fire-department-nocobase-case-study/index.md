@@ -4,7 +4,7 @@ Volunteer fire departments are an essential part of Poland’s fire protection s
 
 OSP Radlin II is one of these active units and the busiest volunteer fire department in its county. Its operational team includes 30 fully trained responders and handles around 200 emergency callouts each year.
 
-![OSP1-biyaxz.png](https://static-docs.nocobase.com/OSP1-biyaxz.png)
+![OSP1-1klo5h.png](https://static-docs.nocobase.com/OSP1-1klo5h.png)
 
 For every callout, the team must ensure that responders are properly qualified, vehicles are ready, and equipment is available. They also need to accurately record who participated, how long the operation lasted, how far each vehicle traveled, and which supplies were used.
 
