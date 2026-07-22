@@ -8,7 +8,7 @@
   "description_ja": "ポーランドの OSP Radlin II が NocoBase を活用し、出動記録、隊員資格、車両・装備、リマインダーを一元管理した事例を紹介します",
   "slug": "polish-volunteer-fire-department-nocobase-case-study",
   "publishedAt": "2026-07-22T02:15:08.860Z",
-  "status": "published",
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-17T09:17:27.652Z",
@@ -87,7 +87,7 @@
     "updatedById": 22
   },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "hideDetailPage": false,
   "about": null,
   "mentions": null,
@@ -95,5 +95,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-07-22T04:15:24.448Z"
+  "updatedAt": "2026-07-22T08:56:27.471Z"
 }

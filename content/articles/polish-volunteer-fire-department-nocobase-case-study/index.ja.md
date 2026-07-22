@@ -4,7 +4,7 @@
 
 OSP Radlin II は、そのような体制の中でも活発に活動している部隊の一つで、所在する郡で最も出動回数の多いボランティア消防団でもあります。現在、30 名の十分な訓練を受けた現役対応隊員がおり、年間およそ 200 件の緊急救助に対応しています。
 
-![OSP1-biyaxz.png](/files/main/main/articleAttachments/2638.png)
+![OSP1-biyaxz.png](https://static-docs.nocobase.com/OSP1-biyaxz.png)
 
 一つひとつの出動の裏側では、隊員の資格が有効であること、車両が正常に使えること、装備がいつでも利用できることを確認する必要があります。さらに、参加者、活動時間、走行距離、消耗品の使用状況も正確に記録しなければなりません。
 
@@ -48,7 +48,7 @@ OSP Radlin II は、そのような体制の中でも活発に活動している
 
 ホームページは、隊員が各業務に入るための共通入口です。カレンダー、タスク、告知、メンバー情報、クイック操作が一つの画面に集約されているため、それぞれの役割に応じて必要な情報へすばやくアクセスできます。
 
-![System Homepage-phtwf6.png](/files/main/main/articleAttachments/2639.png)
+![System Homepage-phtwf6.png](https://static-docs.nocobase.com/System%20Homepage-phtwf6.png)
 
 ### 出動・インシデント管理
 
@@ -56,23 +56,23 @@ OSP Radlin II は、そのような体制の中でも活発に活動している
 
 その後、システムはこれらのデータを集計し、出動回数、インシデント分類、車両走行距離、各隊員の活動時間などの統計情報として表示します。
 
-![Emergency Response-o84sot.png](/files/main/main/articleAttachments/2640.png)
+![Emergency Response-o84sot.png](https://static-docs.nocobase.com/Emergency%20Response-o84sot.png)
 
 ### 人員、資格、事務業務
 
 出動管理だけでなく、消防団は NocoBase を使ってメンバー台帳、健康診断、救助資格、その他の専門資格も管理しています。バックオフィス業務を担当するメンバーは、資金申請や日常的な管理業務もシステム内で追跡しています。
 
-![Personnel-0s0lph.png](/files/main/main/articleAttachments/2641.png)
+![Personnel-0s0lph.png](https://static-docs.nocobase.com/Personnel-0s0lph.png)
 
 チームはさらに、消防署の改修、地域イベント、その他の非出動タスクの進捗を管理する独立したプロジェクトボードも作成しました。
 
-![Personnel2-lkmt1z.png](/files/main/main/articleAttachments/2642.png)
+![Personnel2-lkmt1z.png](https://static-docs.nocobase.com/Personnel2-lkmt1z.png)
 
 ### 車両、装備、技術状態
 
 消防車、トレーラー、各種消防装備も一元管理の対象になっています。隊員は、車両の使用状況、走行距離、技術状態、年次点検日、装備点検や保守期限を継続的に記録できます。
 
-![Vehicles-h24bxn.png](/files/main/main/articleAttachments/2643.png)
+![Vehicles-h24bxn.png](https://static-docs.nocobase.com/Vehicles-h24bxn.png)
 
 ### 自動化された業務処理
 
@@ -98,7 +98,7 @@ OSP Radlin II は、そのような体制の中でも活発に活動している
 
 **現在、OSP Radlin II のシステムは約 90% 完成しており、組織内のおよそ 80 名のメンバーをカバーしています。そのうち約 20 名のアクティブユーザーが継続的にデータ入力と保守に参加しています。**
 
-![System-5atsq8.png](/files/main/main/articleAttachments/2644.png)
+![System-5atsq8.png](https://static-docs.nocobase.com/System-5atsq8.png)
 
 データを一元管理できるようになったことで、消防団は出動回数、車両走行距離、装備状態、各隊員の活動時間をより簡単に集計できるようになりました。
 

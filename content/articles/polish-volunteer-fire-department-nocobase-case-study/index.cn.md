@@ -4,7 +4,7 @@
 
 OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警最频繁的志愿消防队。队伍拥有 30 名接受完整训练的现役响应人员，每年大约参与 200 次紧急救援。
 
-![OSP1-s798ey.png](/files/main/main/attachments/1535.png)
+![OSP1-1klo5h.png](https://static-docs.nocobase.com/OSP1-1klo5h.png)
 
 每一次出警背后，消防队都需要确保人员资质有效、车辆状态正常、装备随时可用，并准确记录参与人员、行动时间、行驶里程和物资消耗。
 
@@ -15,8 +15,6 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## 从 Google Drive，到 NocoBase
 
@@ -50,29 +48,29 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 
 首页是队员进入各项工作的统一入口。日历、任务、公告、成员信息和快捷操作集中在同一个界面中，让不同角色都能快速找到与自己相关的内容。
 
-![System Homepage-6wc7oh.png](/files/main/main/attachments/1536.png)![]()
+![System Homepage-6wc7oh.png](https://static-docs.nocobase.com/System%20Homepage-6wc7oh.png)![]()
 
 ### 出警与事件管理
 
 队员可以通过平板或手机快速添加出警记录，填写出发和返回时间、事件类型、行动地点、使用车辆、参与人员和物资消耗。系统随后将这些数据汇总为出警次数、事件分类、车辆里程和个人行动时长等统计信息。
 
-![Emergency Response-xj83h0.png](/files/main/main/attachments/1537.png)
+![Emergency Response-xj83h0.png](![OSP1-wlv2ui.png](https://static-docs.nocobase.com/OSP1-wlv2ui.png)https://static-docs.nocobase.com/Emergency%20Response-xj83h0.png)
 
 ### 人员、资质与办公室事务
 
 除了出警管理外，消防队还使用 NocoBase 管理成员档案、医疗检查、救援资质和其他专业资格。负责后台事务的成员也会在系统中跟踪资金申请和日常行政工作。
 
-![Personnel-57bbnp.png](/files/main/main/attachments/1538.png)
+![Personnel-57bbnp.png](https://static-docs.nocobase.com/Personnel-57bbnp.png)
 
 团队还搭建了独立的项目面板，用于管理消防站翻修、社区活动和其他非出警任务的进展。
 
-![Personnel2-4xw6py.png](/files/main/main/attachments/1539.png)
+![Personnel2-4xw6py.png](https://static-docs.nocobase.com/Personnel2-4xw6py.png)
 
 ### 车辆、装备与技术状态
 
 消防车辆、拖车和各类消防装备也被纳入统一管理。队员可以持续记录车辆使用情况、行驶里程、技术状态、年检日期以及装备检查和维护期限。
 
-![Vehicles-jlne13.png](/files/main/main/attachments/1540.png)
+![Vehicles-jlne13.png](https://static-docs.nocobase.com/Vehicles-jlne13.png)
 
 ### 自动化流程处理
 
@@ -98,7 +96,7 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 
 **目前，OSP Radlin II 的系统已经完成约 90%，覆盖组织内约 80 名成员，其中约 20 名活跃用户持续参与数据录入和维护。**
 
-![System-wb7lvi.png](/files/main/main/attachments/1541.png)
+![System-wb7lvi.png](https://static-docs.nocobase.com/System-wb7lvi.png)
 
 集中管理数据后，消防队能够更方便地统计出警次数、车辆里程、装备状态和每名队员的行动时长。
 
