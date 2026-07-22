@@ -89,11 +89,11 @@
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
-  "about": null,
-  "mentions": null,
+  "about": "NocoBase\nOSP Radlin II\nVolunteer Fire Department Operations Management\nEmergency Response and Incident Management",
+  "mentions": "Google Drive",
   "author": "Deng Lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-07-22T08:56:27.471Z"
+  "updatedAt": "2026-07-22T09:30:08.036Z"
 }
