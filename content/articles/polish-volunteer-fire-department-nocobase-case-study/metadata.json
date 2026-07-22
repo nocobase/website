@@ -4,7 +4,7 @@
   "title_cn": "一支每年出警 200 次的消防队，如何用 NocoBase 搭建运营系统",
   "title_ja": "ポーランドのボランティア消防団が NocoBase で運用システムを構築した方法",
   "description": "See how OSP Radlin II uses NocoBase to manage emergency callouts, personnel qualifications, vehicles, equipment, reminders, and daily operations",
-  "description_cn": "了解波兰 OSP Radlin II 志愿消防队如何用 NocoBase 统一管理出警、人员资质、车辆装备与自动化提醒，并持续迭代消防队运营系统。",
+  "description_cn": "波兰 OSP Radlin II 志愿消防队用 NocoBase 统一管理出警、人员资质、车辆装备与自动化提醒，并持续迭代消防队运营系统。",
   "description_ja": "ポーランドの OSP Radlin II が NocoBase を活用し、出動記録、隊員資格、車両・装備、リマインダーを一元管理した事例を紹介します",
   "slug": "polish-volunteer-fire-department-nocobase-case-study",
   "publishedAt": "2026-07-22T02:15:08.860Z",
@@ -95,5 +95,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-07-22T13:01:02.825Z"
+  "updatedAt": "2026-07-22T14:47:34.677Z"
 }
