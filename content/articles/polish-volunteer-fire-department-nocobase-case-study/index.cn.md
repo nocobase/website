@@ -48,7 +48,7 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 
 队员可以通过平板或手机快速添加出警记录，填写出发和返回时间、事件类型、行动地点、使用车辆、参与人员和物资消耗。系统随后将这些数据汇总为出警次数、事件分类、车辆里程和个人行动时长等统计信息。
 
-![Emergency Response-xj83h0.png](![OSP1-wlv2ui.png](https://static-docs.nocobase.com/OSP1-wlv2ui.png)https://static-docs.nocobase.com/Emergency%20Response-xj83h0.png)
+![Emergency Response-o84sot.png](https://static-docs.nocobase.com/Emergency%20Response-o84sot.png)
 
 ### 人员、资质与办公室事务
 
