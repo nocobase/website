@@ -42,7 +42,7 @@ OSP Radlin II 正是这一体系中的一支活跃队伍，也是所在县出警
 
 首页是队员进入各项工作的统一入口。日历、任务、公告、成员信息和快捷操作集中在同一个界面中，让不同角色都能快速找到与自己相关的内容。
 
-![System Homepage-6wc7oh.png](https://static-docs.nocobase.com/System%20Homepage-6wc7oh.png)![]()
+![System Homepage-6wc7oh.png](https://static-docs.nocobase.com/System%20Homepage-6wc7oh.png)
 
 ### 出警与事件管理
 
