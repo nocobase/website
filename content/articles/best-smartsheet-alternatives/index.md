@@ -6,7 +6,7 @@ However, a tool that works well at the beginning may not remain suitable for eve
 
 Recently, we came across a discussion about alternatives in the Smartsheet community on [Reddit](https://www.reddit.com/r/smartsheet/comments/1pj85s5/smartsheet_comparison/). The original poster works for a construction company with about 100 employees and belongs to a seven-person department. Previously, everyone managed projects according to their own habits: some used spreadsheets, some relied on personal task tools, and others tracked progress through email and meetings. As the number of projects increased, the team wanted to establish a unified project management and reporting process.
 
-![reddit-v58l9f.png](/files/main/main/attachments/1549.png)
+![reddit-v58l9f.png](https://static-docs.nocobase.com/reddit-v58l9f.png)
 
 **The comments showed that opinions about Smartsheet were mixed.**
 
@@ -63,13 +63,13 @@ NocoBase is an open-source AI-powered no-code platform for building enterprise b
 
 Teams can first create related data tables for customers, projects, contracts, tasks, invoices, and other business objects. They can then configure tables, boards, forms, detail pages, charts, and action buttons through a visual interface. As business requirements change, pages, permissions, workflows, and plugins can continue to be adjusted.
 
-![NocoBase1-s098x8.png](/files/main/main/attachments/1550.png)
+![NocoBase1-s098x8.png](https://static-docs.nocobase.com/NocoBase1-s098x8.png)
 
 ### Why Can It Replace Smartsheet?
 
 NocoBase provides tables, boards, forms, detail pages, charts, and workflows, covering common Smartsheet scenarios such as project management, data collection, progress tracking, and automation.
 
-![NocoBase2-9jgm7h.png](/files/main/main/attachments/1551.png)
+![NocoBase2-9jgm7h.png](https://static-docs.nocobase.com/NocoBase2-9jgm7h.png)
 
 For teams with increasingly complex data structures, NocoBase can also create multiple related tables. For example, one customer can have multiple projects, while each project can be linked to contracts, tasks, invoices, and payment records. Sales, finance, project managers, and executives can work from the same underlying data while using different pages and receiving role-based data and operation permissions.
 
@@ -79,7 +79,7 @@ The first is **AI-assisted development**. Teams can connect commonly used AI age
 
 The second is **AI Employees**. After the business system goes live, AI Employees can understand business context from the current page, data blocks, and selected records. They can invoke relevant skills to query data, organize information, fill in forms, analyze trends, generate reports, and process content. AI Employees can also be orchestrated into workflows, bringing AI capabilities into specific business processes.
 
-![NocoBase3-4m76lu.png](/files/main/main/attachments/1552.png)
+![NocoBase3-4m76lu.png](https://static-docs.nocobase.com/NocoBase3-4m76lu.png)
 
 NocoBase also supports self-hosting, plugin extensions, and external database connections, making it suitable for teams that want control over their data and deployment environment while continuously expanding business modules.
 
@@ -98,7 +98,7 @@ Data modification methods can also be configured according to business risk. Rou
 
 AI further expands this system-oriented approach. During development, AI agents can understand NocoBase’s data models, pages, permissions, and workflow configurations to help teams build systems faster. During operation, AI Employees can read business context, analyze data, and perform authorized actions.
 
-![NocoBase4-94jiot.png](/files/main/main/attachments/1553.png)
+![NocoBase4-94jiot.png](https://static-docs.nocobase.com/NocoBase4-94jiot.png)
 
 This means AI can participate throughout the complete lifecycle of a business system:
 
@@ -145,7 +145,7 @@ NocoBase is better suited to teams that:
 
 Baserow is an open-source no-code database and application-building platform. It retains a spreadsheet-like interface, allowing users to manage customers, projects, content, inventory, and other information through tables, fields, linked records, and multiple views. Teams can also build internal applications, dashboards, and automated processes. Baserow additionally provides AI fields, AI formula generation, and the Kuma AI assistant.
 
-![Baserow1-bc4av1.png](/files/main/main/attachments/1554.png)
+![Baserow1-bc4av1.png](https://static-docs.nocobase.com/Baserow1-bc4av1.png)
 
 ### Why Can It Replace Smartsheet?
 
@@ -155,7 +155,7 @@ Baserow supports tables, forms, boards, calendars, timelines, and dashboards, co
 
 Smartsheet places greater emphasis on project management, task dependencies, resource planning, and cross-project reporting, while Baserow is closer to a no-code database. Teams can freely create tables and relationships, then use the application builder to turn underlying data into internal tools or customer portals. Baserow also offers an open-source, self-hosted version, allowing teams to control their deployment environment, data storage, and system extensions.
 
-![Baserow2-ehqveo.png](/files/main/main/attachments/1555.png)
+![Baserow2-ehqveo.png](https://static-docs.nocobase.com/Baserow2-ehqveo.png)
 
 ### Which Teams Is It Best For?
 
@@ -173,7 +173,7 @@ Baserow is suitable for teams that are comfortable with spreadsheets, need to ma
 
 monday is a visual work management platform. Teams can centralize projects, tasks, owners, deadlines, and current status in a Board, then switch among Kanban, timeline, Gantt, calendar, and dashboard views to review progress from different perspectives. It is used for project management, marketing campaigns, product development, operational planning, and cross-functional collaboration, and the platform is also adding AI workflows and AI agents.
 
-![monday1-zqwhth.png](/files/main/main/attachments/1557.png)
+![monday1-zqwhth.png](https://static-docs.nocobase.com/monday1-zqwhth.png)
 
 ### Why Is It a Suitable Smartsheet Alternative?
 
@@ -187,7 +187,7 @@ Smartsheet retains stronger spreadsheet conventions and is well suited to managi
 
 This design is collaboration-friendly, particularly for scenarios that require frequent status updates, owner coordination, and milestone tracking. For complex formulas, extensive cross-sheet references, or relational business data, monday differs significantly from traditional spreadsheets and should be evaluated against each existing Smartsheet use case.
 
-![monday1-ol08ft.png](/files/main/main/attachments/1558.png)
+![monday1-ol08ft.png](https://static-docs.nocobase.com/monday1-ol08ft.png)
 
 ### Which Teams Are Better Suited to monday?
 
@@ -207,7 +207,7 @@ SmartSuite is a work management platform for business teams. It uses Solutions, 
 
 SmartSuite is also gradually adding AI capabilities. Users can describe the business they need to manage in natural language, and AI Solution Generator can automatically create a solution containing tables, fields, and relationships. AI Field Agents can use field content from records to generate summaries, classifications, recommendations, or structured results and write those results directly back to the records.
 
-![SmartSuite1-y8czgu.png](/files/main/main/attachments/1559.png)
+![SmartSuite1-y8czgu.png](https://static-docs.nocobase.com/SmartSuite1-y8czgu.png)
 
 ### Why Is It a Suitable Smartsheet Alternative?
 
@@ -221,7 +221,7 @@ Smartsheet retains a strong worksheet-based approach, with many operations cente
 
 This design positions SmartSuite between a traditional project management tool and a business data platform. Teams can use boards, Gantt charts, and timelines to move projects forward while connecting projects with customers, contracts, assets, and other business information. Linked records can also be used across different Solutions, reducing duplicate maintenance of the same data in multiple workspaces.
 
-![SmartSuite2-fu1yy5.png](/files/main/main/attachments/1560.png)
+![SmartSuite2-fu1yy5.png](https://static-docs.nocobase.com/SmartSuite2-fu1yy5.png)
 
 ### Which Teams Is It Best For?
 
@@ -243,7 +243,7 @@ Airtable is a no-code application platform built on a relational database. Teams
 
 Airtable is also strengthening its AI capabilities. Omni can create and adjust tables, interfaces, and automations from natural-language instructions. Field Agents can use record content to conduct research, classify information, generate content, and analyze feedback.
 
-![Airtable1-ky7686.png](/files/main/main/attachments/1561.png)
+![Airtable1-ky7686.png](https://static-docs.nocobase.com/Airtable1-ky7686.png)
 
 ### Why Is It a Suitable Smartsheet Alternative?
 
@@ -255,7 +255,7 @@ Smartsheet is more focused on managing projects through worksheets, task progres
 
 This structure is suitable for scenarios involving many data objects and complex relationships. However, teams that rely heavily on Smartsheet’s task dependencies, resource management, and project portfolio capabilities should still confirm whether Airtable can cover their existing processes.
 
-![Airtable2-c1m062.png](/files/main/main/attachments/1565.png)
+![Airtable2-c1m062.png](https://static-docs.nocobase.com/Airtable2-c1m062.png)
 
 ### Which Teams Is It Best For?
 
@@ -273,7 +273,7 @@ Airtable is better suited to marketing, content, product, research, and operatio
 
 ClickUp is an all-in-one work management platform that brings tasks, documents, whiteboards, goals, chat, calendars, and dashboards into one workspace. Teams can manage projects through list, board, Gantt, and timeline views, and use ClickUp Brain, AI agents, and automation for task summaries, content generation, information queries, and process execution.
 
-![ClickUp1-y3qoc0.png](/files/main/main/attachments/1563.png)
+![ClickUp1-y3qoc0.png](https://static-docs.nocobase.com/ClickUp1-y3qoc0.png)
 
 ### Why Is It a Suitable Smartsheet Alternative?
 
@@ -283,7 +283,7 @@ ClickUp can cover common Smartsheet needs such as task assignment, project progr
 
 Smartsheet is closer to a spreadsheet with project management capabilities, while ClickUp is centered on tasks and project execution. Team members primarily open tasks to review requirements, update progress, and communicate, making daily collaboration more centralized. Complex formulas, cross-table calculations, and large volumes of structured business data are not its main strengths.
 
-![ClickUp2-vgbb2y.png](/files/main/main/attachments/1562.png)
+![ClickUp2-vgbb2y.png](https://static-docs.nocobase.com/ClickUp2-vgbb2y.png)
 
 ### Which Teams Is It Best For?
 
@@ -301,7 +301,7 @@ ClickUp is suitable for product, engineering, marketing, and operations teams, e
 
 Asana is a collaborative project management platform organized around projects, tasks, owners, deadlines, and dependencies. Teams can use lists, boards, calendars, timelines, and Gantt charts to move projects forward, while forms, rules, dashboards, and portfolios support cross-team work. Asana also provides AI Studio and AI Teammates for building intelligent workflows, generating status reports, and assisting with project tasks.
 
-![Asana1-jj32p2.png](/files/main/main/attachments/1566.png)
+![Asana1-jj32p2.png](https://static-docs.nocobase.com/Asana1-jj32p2.png)
 
 ### Why Is It a Suitable Smartsheet Alternative?
 
@@ -311,7 +311,7 @@ Asana covers common Smartsheet needs such as task assignment, project timelines,
 
 Smartsheet allows teams to organize data freely around worksheets, while Asana places greater emphasis on standardized task execution. It is suitable for breaking plans into projects, milestones, and tasks, but it is less flexible for complex data tables, formula calculations, and relationships across multiple tables.
 
-![Asana2-yfhgak.png](/files/main/main/attachments/1567.png)
+![Asana2-yfhgak.png](https://static-docs.nocobase.com/Asana2-yfhgak.png)
 
 ### Which Teams Is It Best For?
 
