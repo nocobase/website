@@ -187,8 +187,6 @@ Smartsheet retains stronger spreadsheet conventions and is well suited to managi
 
 This design is collaboration-friendly, particularly for scenarios that require frequent status updates, owner coordination, and milestone tracking. For complex formulas, extensive cross-sheet references, or relational business data, monday differs significantly from traditional spreadsheets and should be evaluated against each existing Smartsheet use case.
 
-![monday1-ol08ft.png](https://static-docs.nocobase.com/monday1-ol08ft.png)
-
 ### Which Teams Are Better Suited to monday?
 
 monday is better suited to marketing, operations, product, PMO, and cross-functional teams centered on projects, tasks, and team collaboration. When members need to quickly understand owners, deadlines, current status, and project risks while also using boards, Gantt charts, automation, and management dashboards, monday can be more intuitive than maintaining complex worksheets directly.
@@ -220,8 +218,6 @@ For example, a team can create separate customer, project, and task tables and c
 Smartsheet retains a strong worksheet-based approach, with many operations centered on rows, columns, formulas, and cross-sheet reports. SmartSuite places greater emphasis on records and the relationships among them. A project record can link to customers, tasks, budgets, risks, and deliverables while providing its own detail page and collaboration information.
 
 This design positions SmartSuite between a traditional project management tool and a business data platform. Teams can use boards, Gantt charts, and timelines to move projects forward while connecting projects with customers, contracts, assets, and other business information. Linked records can also be used across different Solutions, reducing duplicate maintenance of the same data in multiple workspaces.
-
-![SmartSuite2-fu1yy5.png](https://static-docs.nocobase.com/SmartSuite2-fu1yy5.png)
 
 ### Which Teams Is It Best For?
 
