@@ -41,19 +41,17 @@ Before examining each product in detail, use the comparison table below to quick
 | ClickUp    | No          | All-in-one project management          | Tasks, dashboards, automation     | Task-centric with broad feature coverage                                                                                               |
 | Asana      | No          | Project and task management            | Tasks, dependencies, timelines    | Clearer and more standardized project workflows                                                                                        |
 
-
 ---
 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. → [Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
 
-
 ## 1. NocoBase: For Teams Moving From Collaborative Spreadsheets to Business Systems
 
 ### Product Information
 
-- Website: [https://www.nocobase.com/en/](https://www.nocobase.com/en/)
+- Website: [https://www.nocobase.com/](https://www.nocobase.com/)
 - Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
 - Pricing: [https://www.nocobase.com/en/commercial](https://www.nocobase.com/en/commercial)
 - GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
@@ -342,7 +340,6 @@ The calculations use publicly listed annual billing prices for five and 15 edita
 | Asana      | Advanced       | $4,498.20                   | $13,494.60                   | Per-user subscription; includes portfolios, workload management, and approvals                         |
 
 We hope this article helps you find a Smartsheet alternative that better fits your team. Feel free to share it with teams evaluating project management tools, multi-dimensional spreadsheets, open-source self-hosted platforms, or enterprise business systems.
-
 
 **Related reading**:
 
