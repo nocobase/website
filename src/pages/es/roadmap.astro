@@ -26,6 +26,7 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>En curso</span>
                 </span>
+                <span class="roadmap-updated">Última actualización: 27 de julio de 2026</span>
               </div>
 
               <ul class="roadmap-list">
@@ -40,6 +41,10 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Soporte para subagentes</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Soporte de sandbox y skills personalizadas</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Soporte multiagente en paralelo</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Pasar el contexto del usuario conectado a los eventos del empleado de IA</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Activar tareas del empleado de IA desde bloques JS mediante la API RunJS</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrar la configuración de la base de conocimiento de IA a client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mejorar la recuperación de conocimiento, las restricciones de consulta de datos y el diagnóstico de herramientas</span></li>
                   </ul>
                 </li>
 
@@ -67,13 +72,39 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">Nueva rama /v2/</span>
+                    <span class="roadmap-title">Integraciones de organización e identidad</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> proporciona client-v2</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Paquete core <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cada plugin incorpora un directorio <code>/src/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Nueva ruta <code>/v2/</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sincronización de eventos de organización mediante DingTalk Stream</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sincronización de datos de usuarios mediante LDAP</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sincronización opcional de departamentos de Active Directory</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Evolución de client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> proporciona client-v2</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>El paquete core <code>@nocobase/client-v2</code> está separado de client-v1</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cada plugin proporciona y mejora su directorio <code>/src/client-v2</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>El cliente moderno está disponible en <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Reglas de vinculación para pestañas en páginas, subpáginas y ventanas emergentes</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migración gradual de formularios públicos a client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrar a client-v2 plugins del sistema como el historial de registros y la configuración de logs</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Workflow client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrar a v2 la configuración y el lienzo de workflow</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrar nodos de JavaScript, solicitudes HTTP, correo electrónico, cálculo JSON y transacciones de base de datos</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Bloques de inicio y tareas de aprobación para páginas v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mantener la compatibilidad con configuraciones de workflow heredadas</span></li>
                   </ul>
                 </li>
 
@@ -91,7 +122,8 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
                     <span class="roadmap-title">Sistema de build basado en Rsbuild</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> y <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Los builds de producción de la aplicación y <code>@nocobase/build</code> se han migrado a Rsbuild</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Unificar aún más los flujos de desarrollo de <code>yarn dev</code> y <code>yarn dev:umi</code></span></li>
                   </ul>
                 </li>
 
@@ -133,9 +165,9 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">Variables personalizadas</span>
                     </span>
                   </div>
@@ -170,6 +202,17 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
 
                 <li>
                   <div class="roadmap-item">
+                    <span class="roadmap-title">Bloque de comentarios 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Añadir un nuevo bloque de comentarios</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Permitir configurar el alcance de datos, el orden predeterminado y la paginación</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Configurar la autoría de comentarios mediante campos escalares</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
                     <span class="roadmap-title">Migración completa de los plugins a client-v2</span>
                   </div>
                   <ul>
@@ -198,6 +241,7 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -225,6 +269,12 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -326,6 +376,11 @@ const keywords = "NocoBase, hoja de ruta, producto, funciones, desarrollo";
   }
 
   @media (max-width: 767px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
+
     .roadmap-item {
       align-items: flex-start;
       flex-direction: column;

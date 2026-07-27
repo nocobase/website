@@ -26,6 +26,7 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>Dang thuc hien</span>
                 </span>
+                <span class="roadmap-updated">Cap nhat lan cuoi: 27/07/2026</span>
               </div>
 
               <ul class="roadmap-list">
@@ -40,6 +41,10 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Ho tro sub-agent</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Ho tro sandbox va skill tuy chinh</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Ho tro da agent chay song song</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Truyen ngu canh nguoi dung dang dang nhap vao AI Employee Events</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Kich hoat tac vu nhan vien AI tu JS block thong qua RunJS API</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Chuyen cai dat co so tri thuc AI sang client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cai tien truy xuat tri thuc, rang buoc truy van du lieu va chan doan cong cu</span></li>
                   </ul>
                 </li>
 
@@ -67,13 +72,39 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">Nhanh moi /v2/</span>
+                    <span class="roadmap-title">Tich hop to chuc va danh tinh</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> cung cap client-v2</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Goi core <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Moi plugin deu co thu muc <code>/src/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Tuyen duong moi <code>/v2/</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Dong bo su kien to chuc qua DingTalk Stream</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Dong bo du lieu nguoi dung LDAP</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Tuy chon dong bo phong ban Active Directory</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Tien trien client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> cung cap client-v2</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Goi core <code>@nocobase/client-v2</code> duoc tach khoi client-v1</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Moi plugin cung cap va cai tien thu muc <code>/src/client-v2</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Client hien dai kha dung tai <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Quy tac lien ket tab tren trang, trang con va popup</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Chuyen doi tung buoc public form sang client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Chuyen cac plugin he thong nhu lich su ban ghi va cai dat log sang client-v2</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Workflow client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Chuyen cai dat workflow va workflow canvas sang v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Chuyen cac node JavaScript, HTTP request, email, tinh toan JSON va transaction co so du lieu</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Block khoi tao phe duyet va tac vu cho trang v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Duy tri kha nang tuong thich voi cau hinh workflow cu</span></li>
                   </ul>
                 </li>
 
@@ -91,7 +122,8 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
                     <span class="roadmap-title">He thong build dua tren Rsbuild</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> va <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Build production cua ung dung va <code>@nocobase/build</code> da chuyen sang Rsbuild</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Tiep tuc hop nhat luong phat trien <code>yarn dev</code> va <code>yarn dev:umi</code></span></li>
                   </ul>
                 </li>
 
@@ -133,9 +165,9 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">Bien tuy chinh</span>
                     </span>
                   </div>
@@ -170,6 +202,17 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
 
                 <li>
                   <div class="roadmap-item">
+                    <span class="roadmap-title">Comments block 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Them comments block moi</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Ho tro cai dat pham vi du lieu, sap xep mac dinh va phan trang</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Cau hinh chu so huu binh luan bang truong scalar</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
                     <span class="roadmap-title">Chuyen doi toan bo plugin sang client-v2</span>
                   </div>
                   <ul>
@@ -198,6 +241,7 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -225,6 +269,12 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -306,5 +356,12 @@ const keywords = "NocoBase, lo trinh, san pham, tinh nang, phat trien";
     border-radius: 0.35rem;
     padding: 0.12rem 0.4rem;
     font-size: 0.92em;
+  }
+
+  @media (max-width: 767px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 </style>

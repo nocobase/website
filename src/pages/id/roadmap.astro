@@ -26,6 +26,7 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>Sedang berjalan</span>
                 </span>
+                <span class="roadmap-updated">Terakhir diperbarui: 27 Juli 2026</span>
               </div>
 
               <ul class="roadmap-list">
@@ -40,6 +41,10 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Dukungan untuk sub-agent</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Dukungan sandbox dan skill kustom</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Dukungan multi-agent paralel</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Meneruskan konteks pengguna yang sedang login ke AI Employee Events</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Memicu tugas pegawai AI dari blok JS melalui RunJS API</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Memigrasikan pengaturan basis pengetahuan AI ke client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Meningkatkan pengambilan pengetahuan, batasan kueri data, dan diagnostik alat</span></li>
                   </ul>
                 </li>
 
@@ -67,13 +72,39 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">Branch baru /v2/</span>
+                    <span class="roadmap-title">Integrasi Organisasi dan Identitas</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> menyediakan client-v2</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Paket inti <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Setiap plugin menyertakan direktori <code>/src/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Rute baru <code>/v2/</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sinkronisasi event organisasi melalui DingTalk Stream</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sinkronisasi data pengguna LDAP</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sinkronisasi departemen Active Directory opsional</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Evolusi client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> menyediakan client-v2</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Paket inti <code>@nocobase/client-v2</code> dipisahkan dari client-v1</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Setiap plugin menyediakan dan meningkatkan direktori <code>/src/client-v2</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Client modern tersedia di <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Aturan keterkaitan tab pada halaman, subhalaman, dan popup</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrasi bertahap formulir publik ke client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrasikan plugin sistem seperti riwayat record dan pengaturan log ke client-v2</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Workflow client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrasikan pengaturan workflow dan workflow canvas ke v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrasikan node JavaScript, HTTP request, email, kalkulasi JSON, dan transaksi database</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Blok inisiasi approval dan tugas untuk halaman v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mempertahankan kompatibilitas dengan konfigurasi workflow lama</span></li>
                   </ul>
                 </li>
 
@@ -91,7 +122,8 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
                     <span class="roadmap-title">Sistem build berbasis Rsbuild</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> dan <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Build production aplikasi dan <code>@nocobase/build</code> telah dimigrasikan ke Rsbuild</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Menyatukan lebih lanjut alur pengembangan <code>yarn dev</code> dan <code>yarn dev:umi</code></span></li>
                   </ul>
                 </li>
 
@@ -133,9 +165,9 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">Variabel kustom</span>
                     </span>
                   </div>
@@ -170,6 +202,17 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
 
                 <li>
                   <div class="roadmap-item">
+                    <span class="roadmap-title">Comments Block 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Menambahkan comments block baru</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mendukung pengaturan cakupan data, pengurutan default, dan paginasi</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Mengonfigurasi kepemilikan komentar melalui field scalar</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
                     <span class="roadmap-title">Migrasi penuh semua plugin ke client-v2</span>
                   </div>
                   <ul>
@@ -198,6 +241,7 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -225,6 +269,12 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -306,5 +356,12 @@ const keywords = "NocoBase, roadmap, produk, fitur, pengembangan";
     border-radius: 0.35rem;
     padding: 0.12rem 0.4rem;
     font-size: 0.92em;
+  }
+
+  @media (max-width: 767px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 </style>

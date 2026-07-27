@@ -28,6 +28,7 @@ const keywords = page.keywords_cn || page.keywords;
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>进行中</span>
                 </span>
+                <span class="roadmap-updated">最后更新：2026-07-27</span>
               </div>
 
               <ul class="roadmap-list">
@@ -42,6 +43,10 @@ const keywords = page.keywords_cn || page.keywords;
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>支持 Sub Agent</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持沙箱环境及自定义 Skill</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持多 Agent 并行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI Employee Event 支持传递当前登录用户上下文</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>通过 RunJS API 在 JS 区块中触发 AI 员工任务</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI 知识库设置页迁移至 client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>优化知识库检索、数据查询约束和工具诊断信息</span></li>
                   </ul>
                 </li>
 
@@ -69,13 +74,39 @@ const keywords = page.keywords_cn || page.keywords;
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">全新的 /v2/ 分支</span>
+                    <span class="roadmap-title">组织与身份集成</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> 提供 client-v2</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>内核 <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各插件提供 <code>/src/client-v2</code> 目录</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>路由新增 <code>/v2/</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>钉钉 Stream 模式组织事件同步</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>LDAP 用户数据同步</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>支持可选的 AD 部门同步</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">client-v2 演进</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> 提供 client-v2</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>内核 <code>@nocobase/client-v2</code> 已从 client-v1 分离</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各插件提供并完善 <code>/src/client-v2</code> 目录</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>新版客户端访问路径为 <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>页面、子页面和弹窗的 Tab 支持联动规则</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>公开表单逐步迁移至 client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>记录历史、日志设置等系统插件迁移至 client-v2</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">工作流 client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>工作流设置页与 v2 画布迁移</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>JavaScript、HTTP 请求、邮件发送、JSON 计算、数据库事务等节点迁移</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>v2 审批发起和待办区块</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>保持与旧版工作流配置兼容</span></li>
                   </ul>
                 </li>
 
@@ -93,7 +124,8 @@ const keywords = page.keywords_cn || page.keywords;
                     <span class="roadmap-title">使用 Rsbuild 构建</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> 和 <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>App 生产构建与 <code>@nocobase/build</code> 已迁移至 Rsbuild</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>进一步统一 <code>yarn dev</code> 和 <code>yarn dev:umi</code> 开发工作流</span></li>
                   </ul>
                 </li>
 
@@ -108,7 +140,7 @@ const keywords = page.keywords_cn || page.keywords;
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">支持 JS Item\Action</span>
+                    <span class="roadmap-title">支持 JS Item Action</span>
                   </div>
                   <ul>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>提供不同形态的 Action</span></li>
@@ -137,16 +169,16 @@ const keywords = page.keywords_cn || page.keywords;
                 <li>
                   <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">中国行政区划字段 2.0</span>
                     </span>
                   </div>
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">自定义变量</span>
                     </span>
                   </div>
@@ -155,7 +187,7 @@ const keywords = page.keywords_cn || page.keywords;
                 <li>
                   <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">树区块 2.0</span>
                     </span>
                   </div>
@@ -164,7 +196,7 @@ const keywords = page.keywords_cn || page.keywords;
                 <li>
                   <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">日历区块 2.0</span>
                     </span>
                   </div>
@@ -173,10 +205,21 @@ const keywords = page.keywords_cn || page.keywords;
                 <li>
                   <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">看板区块 2.0</span>
                     </span>
                   </div>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">评论区块 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>新增评论区块</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持数据范围、默认排序和分页配置</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>支持基于标量字段配置评论归属关系</span></li>
+                  </ul>
                 </li>
 
                 <li>
@@ -209,6 +252,7 @@ const keywords = page.keywords_cn || page.keywords;
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -236,6 +280,12 @@ const keywords = page.keywords_cn || page.keywords;
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -339,6 +389,11 @@ const keywords = page.keywords_cn || page.keywords;
   }
 
   @media (max-width: 576px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
+
     .roadmap-item {
       align-items: flex-start;
       flex-direction: column;

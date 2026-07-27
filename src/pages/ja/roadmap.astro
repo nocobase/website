@@ -28,6 +28,7 @@ const keywords = page.keywords_ja || page.keywords;
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>進行中</span>
                 </span>
+                <span class="roadmap-updated">最終更新：2026-07-27</span>
               </div>
 
               <ul class="roadmap-list">
@@ -42,6 +43,10 @@ const keywords = page.keywords_ja || page.keywords;
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sub-agent のサポート</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>サンドボックス環境とカスタム Skill のサポート</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>複数 Agent の並列サポート</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI Employee イベントで現在のログインユーザー情報を受け渡す</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>RunJS API を使用して JS ブロックから AI Employee タスクを実行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>AI ナレッジベース設定ページを client-v2 へ移行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>ナレッジ検索、データクエリ制約、ツール診断情報を改善</span></li>
                   </ul>
                 </li>
 
@@ -69,13 +74,39 @@ const keywords = page.keywords_ja || page.keywords;
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">新しい /v2/ ブランチ</span>
+                    <span class="roadmap-title">組織・ID 連携</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> が client-v2 を提供</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>コアパッケージ <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各プラグインが <code>/src/client-v2</code> ディレクトリを提供</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>新しい <code>/v2/</code> ルート</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>DingTalk Stream による組織イベント同期</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>LDAP ユーザーデータ同期</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>任意の Active Directory 部門同期</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">client-v2 の進化</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> が client-v2 を提供</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>コアパッケージ <code>@nocobase/client-v2</code> を client-v1 から分離</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>各プラグインが <code>/src/client-v2</code> を提供・改善</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>モダンクライアントのアクセスパスは <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>ページ、サブページ、ポップアップの Tab で連動ルールをサポート</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>公開フォームを段階的に client-v2 へ移行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>履歴、ログ設定などのシステムプラグインを client-v2 へ移行</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">ワークフロー client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>ワークフロー設定ページと v2 キャンバスを移行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>JavaScript、HTTP リクエスト、メール送信、JSON 計算、データベーストランザクションノードを移行</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>v2 ページ向けの承認開始・タスクブロック</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>旧版ワークフロー設定との互換性を維持</span></li>
                   </ul>
                 </li>
 
@@ -93,7 +124,8 @@ const keywords = page.keywords_ja || page.keywords;
                     <span class="roadmap-title">Rsbuild ベースのビルドシステム</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> と <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>App の本番ビルドと <code>@nocobase/build</code> を Rsbuild へ移行済み</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> と <code>yarn dev:umi</code> の開発ワークフローをさらに統一</span></li>
                   </ul>
                 </li>
 
@@ -135,9 +167,9 @@ const keywords = page.keywords_ja || page.keywords;
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">カスタム変数</span>
                     </span>
                   </div>
@@ -172,6 +204,17 @@ const keywords = page.keywords_ja || page.keywords;
 
                 <li>
                   <div class="roadmap-item">
+                    <span class="roadmap-title">コメントブロック 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>新しいコメントブロックを追加</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>データ範囲、デフォルトの並び順、ページネーション設定をサポート</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>スカラーフィールドによるコメント所有関係の設定をサポート</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
                     <span class="roadmap-title">全プラグインの client-v2 への移行</span>
                   </div>
                   <ul>
@@ -200,6 +243,7 @@ const keywords = page.keywords_ja || page.keywords;
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -227,6 +271,12 @@ const keywords = page.keywords_ja || page.keywords;
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -330,6 +380,11 @@ const keywords = page.keywords_ja || page.keywords;
   }
 
   @media (max-width: 576px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
+
     .roadmap-item {
       align-items: flex-start;
       flex-direction: column;
