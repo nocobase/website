@@ -6,7 +6,7 @@ AI コーディングツールの発展により、プラグイン開発はさ�
 
 現在は、[Awesome NocoBase](https://github.com/nocobase/awesome-nocobase) でコミュニティプラグインを探したり、自分で開発した拡張機能を共有したりしながら、NocoBase のプラグインエコシステムづくりに参加できます。
 
-![Frame 94-kkiivw.jpg](https://static-docs.nocobase.com/Frame%2094-kkiivw.jpg)
+![Frame 94-ojy7ci.jpg](https://static-docs.nocobase.com/Frame%2094-ojy7ci.jpg)
 
 ## 収録済みのコミュニティプラグイン
 

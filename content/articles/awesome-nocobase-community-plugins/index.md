@@ -6,7 +6,7 @@ With the rise of AI coding tools, plugin development is becoming easier than eve
 
 Now, you can discover community-built plugins in [Awesome NocoBase](https://github.com/nocobase/awesome-nocobase), or share your own extensions and help grow the NocoBase plugin ecosystem.
 
-![Frame 94-kkiivw.jpg](https://static-docs.nocobase.com/Frame%2094-kkiivw.jpg)
+![Frame 94-ojy7ci.jpg](https://static-docs.nocobase.com/Frame%2094-ojy7ci.jpg)
 
 ## Featured Community Plugins
 

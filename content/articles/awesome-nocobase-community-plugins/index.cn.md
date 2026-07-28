@@ -6,7 +6,7 @@
 
 现在，你可以在 [Awesome NocoBase](https://github.com/nocobase/awesome-nocobase) 中寻找社区插件，也可以分享自己开发的扩展，共同建设 NocoBase 插件生态。
 
-![Frame 94-kkiivw.jpg](https://static-docs.nocobase.com/Frame%2094-kkiivw.jpg)
+![Frame 94-ojy7ci.jpg](https://static-docs.nocobase.com/Frame%2094-ojy7ci.jpg)
 
 ## 已收录的社区插件
 
