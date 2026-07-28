@@ -28,6 +28,7 @@ const keywords = page.keywords;
                   <i class="uil uil-clock-three legend-icon legend-icon-progress"></i>
                   <span>In Progress</span>
                 </span>
+                <span class="roadmap-updated">Last updated: July 27, 2026</span>
               </div>
 
               <ul class="roadmap-list">
@@ -42,6 +43,10 @@ const keywords = page.keywords;
                     <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Sub-agent support</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Sandbox support and custom skills</span></li>
                     <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Parallel multi-agent support</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Pass the current signed-in user context to AI Employee Events</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Trigger AI employee tasks from JS blocks through the RunJS API</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrate AI knowledge base settings to client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Improve knowledge retrieval, data query constraints, and tool diagnostics</span></li>
                   </ul>
                 </li>
 
@@ -69,13 +74,39 @@ const keywords = page.keywords;
 
                 <li>
                   <div class="roadmap-item">
-                    <span class="roadmap-title">New /v2/ Branch</span>
+                    <span class="roadmap-title">Organization and Identity Integrations</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>@nocobase/app</code> provides client-v2</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Core package <code>@nocobase/client-v2</code></span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Each plugin provides a <code>/src/client-v2</code> directory</span></li>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>New <code>/v2/</code> route</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>DingTalk Stream organization event synchronization</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>LDAP user data synchronization</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Optional Active Directory department synchronization</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">client-v2 Evolution</span>
+                  </div>
+                  <ul>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span><code>@nocobase/app</code> provides client-v2</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>Core package <code>@nocobase/client-v2</code> is separated from client-v1</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Each plugin provides and improves its <code>/src/client-v2</code> directory</span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>The modern client is available at <code>/v/</code></span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Linkage rules for tabs on pages, subpages, and popups</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Gradual migration of public forms to client-v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrate system plugins such as record history and log settings to client-v2</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
+                    <span class="roadmap-title">Workflow client-v2</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrate workflow settings and the workflow canvas to v2</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Migrate JavaScript, HTTP request, email, JSON calculation, and database transaction nodes</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Approval initiation and task blocks for v2 pages</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Maintain compatibility with legacy workflow configurations</span></li>
                   </ul>
                 </li>
 
@@ -93,7 +124,8 @@ const keywords = page.keywords;
                     <span class="roadmap-title">Rsbuild-Based Build System</span>
                   </div>
                   <ul>
-                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span><code>yarn dev</code> and <code>yarn dev:umi</code></span></li>
+                    <li class="status-done"><i class="uil uil-check-circle align-middle"></i><span>App production builds and <code>@nocobase/build</code> have migrated to Rsbuild</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Further unify the <code>yarn dev</code> and <code>yarn dev:umi</code> development workflows</span></li>
                   </ul>
                 </li>
 
@@ -135,9 +167,9 @@ const keywords = page.keywords;
                 </li>
 
                 <li>
-                  <div class="roadmap-item roadmap-item-status status-progress">
+                  <div class="roadmap-item roadmap-item-status status-done">
                     <span class="roadmap-title-wrap">
-                      <i class="uil uil-clock-three align-middle"></i>
+                      <i class="uil uil-check-circle align-middle"></i>
                       <span class="roadmap-title">Custom Variables</span>
                     </span>
                   </div>
@@ -172,6 +204,17 @@ const keywords = page.keywords;
 
                 <li>
                   <div class="roadmap-item">
+                    <span class="roadmap-title">Comments Block 2.0</span>
+                  </div>
+                  <ul>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Add a new comments block</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Support data scope, default sorting, and pagination settings</span></li>
+                    <li class="status-progress"><i class="uil uil-clock-three align-middle"></i><span>Configure comment ownership through scalar fields</span></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="roadmap-item">
                     <span class="roadmap-title">Full Plugin Migration to client-v2</span>
                   </div>
                   <ul>
@@ -200,6 +243,7 @@ const keywords = page.keywords;
   .roadmap-legend {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
     padding: 0.85rem 1rem;
@@ -227,6 +271,12 @@ const keywords = page.keywords;
 
   .legend-icon-progress {
     color: #f59e0b;
+  }
+
+  .roadmap-updated {
+    margin-left: auto;
+    color: #64748b;
+    font-size: 0.85rem;
   }
 
   .roadmap-list,
@@ -330,6 +380,11 @@ const keywords = page.keywords;
   }
 
   @media (max-width: 576px) {
+    .roadmap-updated {
+      width: 100%;
+      margin-left: 0;
+    }
+
     .roadmap-item {
       align-items: flex-start;
       flex-direction: column;
