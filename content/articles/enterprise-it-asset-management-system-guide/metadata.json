@@ -70,18 +70,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-08-05T09:45:34.774Z",
-    "updatedAt": "2026-08-05T09:45:34.785Z",
-    "id": 2654,
-    "title": "22-aahqqg",
-    "filename": "22-aahqqg-f9qmfm.png",
+    "createdAt": "2026-08-05T14:00:29.169Z",
+    "updatedAt": "2026-08-05T14:00:29.178Z",
+    "id": 2655,
+    "title": "IT_Asset_Management_",
+    "filename": "IT_Asset_Management_-re2xiu.png",
     "extname": ".png",
-    "size": 446572,
+    "size": 372869,
     "mimetype": "image/png",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/22-aahqqg-f9qmfm.png",
-    "preview": "https://static-docs.nocobase.com/22-aahqqg-f9qmfm.png",
+    "url": "https://static-docs.nocobase.com/IT_Asset_Management_-re2xiu.png",
+    "preview": "https://static-docs.nocobase.com/IT_Asset_Management_-re2xiu.png",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -95,5 +95,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-05T09:45:38.607Z"
+  "updatedAt": "2026-08-05T14:01:01.376Z"
 }
