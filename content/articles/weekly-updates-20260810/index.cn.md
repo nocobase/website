@@ -35,7 +35,6 @@
 - **[AI 员工]** AI 员工操作现已支持在 v2 表单中通过联动规则控制显示和隐藏。 ([#10298](https://github.com/nocobase/nocobase/pull/10298)) by @jiannx
 - **[数据源：外部 NocoBase]** 修复 AI 工作流无法读取外部 NocoBase 文件表和附件字段文件的问题 by @2013xile
 - **[迁移管理]** 修复应用重启后的多对多中间表迁移数据问题，并将迁移规则归类为系统数据 by @cgyrock
-- **[模板打印]** 无 — 本 PR 记录修复目标，但不包含已发布的行为变更。 by @hongboji
 - **[工作流：审批]** 修复审批意见使用 RunJS 时默认值不生效的问题 by @zhangzhonghe
 - **[应用监管器]** 修复创建应用时数据库名称、schema 或数据表前缀可使用非英文字母开头或非法字符的问题。 by @hongboji
 

@@ -33,7 +33,6 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[AI employees]** AI employee actions now support linkage rules for conditional visibility in v2 forms. ([#10298](https://github.com/nocobase/nocobase/pull/10298)) by @jiannx
 - **[Data source: External NocoBase]** Fixed external NocoBase files and attachment fields failing to load in AI workflows by @2013xile
 - **[Migration manager]** Fixed many-to-many through-table migration data after application restarts and classified migration rules as system data by @cgyrock
-- **[Template print]** N/A — this PR records a fix target but contains no shipped behavior change. by @hongboji
 - **[Workflow: Approval]** Fix approval comment default values when using RunJS by @zhangzhonghe
 - **[App supervisor]** Prevented app creation with database identifiers that do not start with an English letter or contain unsupported characters. by @hongboji
 
