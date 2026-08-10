@@ -1,0 +1,132 @@
+週間のプロダクトアップデートログを要約し、最新リリースは[当社のブログ](https://www.nocobase.com/ja/blog/timeline)でご確認いただけます。
+
+**NocoBaseは現在、`main`、`next`および`develop`の3つのブランチで更新されています。**
+
+![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
+
+* `main`：現時点で最も安定したバージョンで、インストールを推奨します；
+* `next`：ベータ版で、近日公開予定の新機能を含み、初期テスト済みです。既知・未知の不具合が存在する可能性があります。主にテストユーザー向けで、フィードバックを収集し機能の最適化を図るためのものです。早期に新機能を体験し意見を提供したいテストユーザーに最適です；
+* `develop`：アルファ版で、最新の機能コードを含みますが、不完全または不安定な可能性があり、主に内部開発や迅速なイテレーション向けです。製品の最先端に関心のある技術ユーザー向けですが、潜在的な問題や未完成の機能があるため、本番環境での使用は推奨されません。
+
+## main
+
+![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
+
+### v2.1.37
+
+*リリース日: 2026-08-08*
+
+### 🎉 新機能
+
+* **[client-v2]** V2 フィールド値エディターに Date 変数を追加し、日付以外のフィールドもフォーマットして出力できるようにしました。 ([#10289](https://github.com/nocobase/nocobase/pull/10289)) by @katherinehhh
+
+### 🐛 不具合修正
+
+* **[client-v2]**
+  * v2 のポップアップ編集サブテーブルで、レコード追加・編集モーダル内の `Current popup` 親レコード変数が欠落する、または正しい値を取得できない問題を修正しました。 ([#10292](https://github.com/nocobase/nocobase/pull/10292)) by @katherinehhh
+  * サブテーブルのリレーションフィールドに値を設定する際、親項目の変数が誤った階層を参照する問題を修正しました。 ([#10249](https://github.com/nocobase/nocobase/pull/10249)) by @gchust
+  * モバイル端末の選択リストで、キャンセルボタンの表示言語が一致しない問題を修正しました。 ([#10297](https://github.com/nocobase/nocobase/pull/10297)) by @zhangzhonghe
+* **[data-source-manager]** データベースからフィールドを同期した後、数式フィールドが数値フィールドに変わってしまう問題を修正しました。 ([#10303](https://github.com/nocobase/nocobase/pull/10303)) by @2013xile
+* **[database]** アプリケーション再起動後、マイグレーションパッケージに多対多の中間テーブルデータが含まれなくなる問題を修正しました。 ([#10306](https://github.com/nocobase/nocobase/pull/10306)) by @cgyrock
+* **[バックアップ管理]** 非同期エクスポートタスクによって自動バックアップが重複して実行される問題を修正しました。 ([#10300](https://github.com/nocobase/nocobase/pull/10300)) by @gchust
+* **[AIワーカー]** v2 フォームで、AIワーカー操作の表示・非表示を連動ルールによって制御できるようにしました。 ([#10298](https://github.com/nocobase/nocobase/pull/10298)) by @jiannx
+* **[データソース：外部 NocoBase]** AI ワークフローから、外部 NocoBase のファイルテーブルおよび添付フィールド内のファイルを読み取れない問題を修正しました。 by @2013xile
+* **[マイグレーション管理]** アプリケーション再起動後に発生する多対多の中間テーブルデータのマイグレーション問題を修正し、マイグレーションルールをシステムデータとして扱うようにしました。 by @cgyrock
+* **[テンプレート印刷]** なし — 本 PR は修正対象を記録したものですが、リリース済みの動作に変更はありません。 by @hongboji
+* **[ワークフロー：承認]** 承認意見に RunJS を使用した場合、デフォルト値が反映されない問題を修正しました。 by @zhangzhonghe
+* **[アプリケーションスーパーバイザー]** アプリケーション作成時、データベース名、schema、データテーブルのプレフィックスについて、英字以外の文字で始まる名前や不正な文字を含む名前を設定できてしまう問題を修正しました。 by @hongboji
+
+### v2.1.36
+
+*リリース日: 2026-08-05*
+
+### 🐛 不具合修正
+
+* **[データソース管理]** フィールド設定画面のテーブルで、UI タイプを直接空にできてしまう問題を修正しました。 ([#10288](https://github.com/nocobase/nocobase/pull/10288)) by @hongboji
+* **[認証：LDAP]** LDAP ユーザー DN に UTF-8 エスケープと、カンマなどの構文エスケープが同時に含まれる場合、ログインできない問題を修正しました。 by @hongboji
+
+### v2.1.35
+
+*リリース日: 2026-08-05*
+
+### 🚀 機能改善
+
+* **[ワークフロー：HTTP リクエストノード]** 不安定だったテストケースを修正しました。 ([#10246](https://github.com/nocobase/nocobase/pull/10246)) by @mytharcher
+* **[操作：一括更新]** v2 のレコード更新および一括更新操作で、送信成功後のメッセージ、閉じる動作、リダイレクト動作を設定できるようにしました。 ([#10278](https://github.com/nocobase/nocobase/pull/10278)) by @katherinehhh
+* **[操作：レコードエクスポート]** v2 のインポートボタンとエクスポートボタンで、フィールド設定を検索できるようにしました。 ([#10261](https://github.com/nocobase/nocobase/pull/10261)) by @katherinehhh
+* **[操作：レコードエクスポート Pro]** v2 のインポート Pro ボタンとエクスポート Pro ボタンで、フィールド設定を検索できるようにしました。 by @katherinehhh
+
+### 🐛 不具合修正
+
+* **[client-v2]** v2 JS 列のイベントフローにおいて、トリガー条件で「現在のレコード」変数を使用できない問題を修正しました。 ([#10279](https://github.com/nocobase/nocobase/pull/10279)) by @katherinehhh
+* **[database]** MSSQL で複数値リレーションを絞り込み、メインコレクションのフィールドで並べ替えてページネーションした際に、クエリエラーが発生する問題を修正しました。 ([#10224](https://github.com/nocobase/nocobase/pull/10224)) by @cgyrock
+* **[data-source-manager]** 外部データソースのデータテーブルを同期した後も、削除済みのデータテーブルがデータベースマネージャーに残る問題を修正しました。 ([#10209](https://github.com/nocobase/nocobase/pull/10209)) by @cgyrock
+* **[ワークフロー：JavaScript ノード]** JavaScript ワークフローノードで、スクリプトが結果を返した後、または非同期ワークフローがタイムアウトした後も Worker が終了しない問題を修正しました。 ([#10241](https://github.com/nocobase/nocobase/pull/10241)) by @mytharcher
+* **[データテーブルフィールド：自動採番]** データ移行後、複数のレコードが同じ最新作成日時を持つ場合に、自動採番の値が重複する可能性がある問題を修正しました。 ([#10239](https://github.com/nocobase/nocobase/pull/10239)) by @mytharcher
+* **[データソース：外部 SQL Server]** ユーザー向けの変更はありません。回帰テストカバレッジのみ追加しました。 by @cgyrock
+* **[AI: ナレッジベース]** PGVector ナレッジベース検索で不要な PostgreSQL 接続が占有される問題と、異なるベクトルテーブルごとに接続プールが重複作成される問題を修正しました。 by @cgyrock
+* **[データソース：外部 MySQL]** 外部データベースのデータソースに新しいテーブルを追加した後、以前選択したテーブルがランタイムコレクションから消える問題を修正しました。 by @cgyrock
+* **[ワークフロー：承認]**
+  * 承認申請の詳細で、サブテーブルフィールドの内容が表示されない問題を修正しました。 by @zhangzhonghe
+  * 承認意見にデフォルト値を設定できるようにしました。 by @zhangzhonghe
+
+## develop
+
+![develop.png](https://static-docs.nocobase.com/7fcdd9456a17286d8a439eee52bcb8d2.png)
+
+### v3.0.0-alpha.7
+
+*リリース日: 2026-08-06*
+
+### 🎉 新機能
+
+* **[client-v2]** 独立設定アプリを、デフォルトのアプリケーションエントリとして設定できるようにしました。 ([#10267](https://github.com/nocobase/nocobase/pull/10267)) by @katherinehhh
+* **[AIワーカー]**
+  * AIワーカー設定ページで、プラグインが提供する Skill を各 AIワーカーに割り当てられるようにしました。 ([#10237](https://github.com/nocobase/nocobase/pull/10237)) by @cgyrock
+  * AI セッションと未読件数を Portal ごとに分離して管理できるようにしました。 ([#10266](https://github.com/nocobase/nocobase/pull/10266)) by @cgyrock
+* **[Portal 管理]** 初期化時のデフォルト動作を更新しました。`latest` 以外のインストールでは新クライアントのエントリをデフォルトで使用し、AI、admin、mobile の各デフォルト Portal を作成します。また、CLI でクライアントのエントリモードを保存・更新できるようにしました。 ([#10281](https://github.com/nocobase/nocobase/pull/10281)) by @chenos
+
+### 🚀 機能改善
+
+* **[操作：一括更新]** v2 のレコード更新および一括更新操作で、送信成功後のメッセージ、閉じる動作、リダイレクト動作を設定できるようにしました。 ([#10278](https://github.com/nocobase/nocobase/pull/10278)) by @katherinehhh
+* **[操作：レコードエクスポート]** v2 のインポートボタンとエクスポートボタンで、フィールド設定を検索できるようにしました。 ([#10261](https://github.com/nocobase/nocobase/pull/10261)) by @katherinehhh
+* **[操作：レコードエクスポート Pro]** v2 のインポート Pro ボタンとエクスポート Pro ボタンで、フィールド設定を検索できるようにしました。 by @katherinehhh
+
+### 🐛 不具合修正
+
+* **[client-v2]**
+  * ワークフロー承認設定モーダルに内側の余白がない問題を修正しました。 ([#10276](https://github.com/nocobase/nocobase/pull/10276)) by @zhangzhonghe
+  * v2 JS 列のイベントフローにおいて、トリガー条件で「現在のレコード」変数を使用できない問題を修正しました。 ([#10279](https://github.com/nocobase/nocobase/pull/10279)) by @katherinehhh
+  * アプリケーションのアップグレード中は、メンテナンスモーダルと再試行ボタンを表示しないようにしました。 ([#10250](https://github.com/nocobase/nocobase/pull/10250)) by @zhangzhonghe
+  * テーブル内の長い内容によって列幅が押し広げられ、テキストが自動改行されない問題を修正しました。 ([#10259](https://github.com/nocobase/nocobase/pull/10259)) by @zhangzhonghe
+* **[database]** MSSQL で複数値リレーションを絞り込み、メインコレクションのフィールドで並べ替えてページネーションした際に、クエリエラーが発生する問題を修正しました。 ([#10224](https://github.com/nocobase/nocobase/pull/10224)) by @cgyrock
+* **[data-source-manager]** 外部データソースのデータテーブルを同期した後も、削除済みのデータテーブルがデータベースマネージャーに残る問題を修正しました。 ([#10209](https://github.com/nocobase/nocobase/pull/10209)) by @cgyrock
+* **[ローカライズ]** Lina AI アシスタントのエントリを含むローカライズ設定を開いた際に、画面がクラッシュする問題を修正しました。 ([#10293](https://github.com/nocobase/nocobase/pull/10293)) by @cgyrock
+* **[データソース管理]** フィールド設定画面のテーブルで、UI タイプを直接空にできてしまう問題を修正しました。 ([#10288](https://github.com/nocobase/nocobase/pull/10288)) by @hongboji
+* **[バックアップ管理]** V2 のバックアップ復元処理中に、復元リクエストを重複送信できてしまう問題を修正しました。 ([#10262](https://github.com/nocobase/nocobase/pull/10262)) by @katherinehhh
+* **[ファイルマネージャー]** ログイン済みのメンバーユーザーが、システムロゴなどの共有添付ファイルを読み込めない問題を修正しました。 ([#10268](https://github.com/nocobase/nocobase/pull/10268)) by @mytharcher
+* **[AIワーカー]** デフォルト以外の Portal に AIワーカーのエントリが表示されない問題を修正しました。 ([#10260](https://github.com/nocobase/nocobase/pull/10260)) by @cgyrock
+* **[データソース：外部 MySQL]** 外部データベースのデータソースに新しいテーブルを追加した後、以前選択したテーブルがランタイムコレクションから消える問題を修正しました。 by @cgyrock
+* **[AI: ナレッジベース]** PGVector ナレッジベース検索で不要な PostgreSQL 接続が占有される問題と、異なるベクトルテーブルごとに接続プールが重複作成される問題を修正しました。 by @cgyrock
+* **[データソース：外部 SQL Server]** ユーザー向けの変更はありません。回帰テストカバレッジのみ追加しました。 by @cgyrock
+* **[ワークフロー：承認]**
+  * 承認申請の詳細で、サブテーブルフィールドの内容が表示されない問題を修正しました。 by @zhangzhonghe
+  * 承認意見に RunJS を使用した場合、デフォルト値が反映されない問題を修正しました。 by @zhangzhonghe
+  * 承認意見にデフォルト値を設定できるようにしました。 by @zhangzhonghe
+* **[アプリケーションスーパーバイザー]** アプリケーション作成時、データベース名、schema、データテーブルのプレフィックスについて、英字以外の文字で始まる名前や不正な文字を含む名前を設定できてしまう問題を修正しました。 by @hongboji
+* **[認証：LDAP]** LDAP ユーザー DN に UTF-8 エスケープと、カンマなどの構文エスケープが同時に含まれる場合、ログインできない問題を修正しました。 by @hongboji
+
+### v3.0.0-alpha.6
+
+*リリース日: 2026-08-03*
+
+### 🚀 機能改善
+
+* **[ワークフロー：HTTP リクエストノード]** 不安定だったテストケースを修正しました。 ([#10246](https://github.com/nocobase/nocobase/pull/10246)) by @mytharcher
+
+### 🐛 不具合修正
+
+* **[auth]** クロスオリジン構成でデプロイした場合、API リクエストでまれに `Invalid CSRF token` エラーが発生する問題を修正しました。 ([#10245](https://github.com/nocobase/nocobase/pull/10245)) by @mytharcher
+* **[Portal 管理]** Portal カードのデバイスアイコン、および長いタイトルが正しく表示されない問題を修正しました。 ([#10248](https://github.com/nocobase/nocobase/pull/10248)) by @zhangzhonghe
+* **[データテーブルフィールド：自動採番]** データ移行後、複数のレコードが同じ最新作成日時を持つ場合に、自動採番の値が重複する可能性がある問題を修正しました。 ([#10239](https://github.com/nocobase/nocobase/pull/10239)) by @mytharcher
+* **[ワークフロー：JavaScript ノード]** JavaScript ワークフローノードで、スクリプトが結果を返した後、または非同期ワークフローがタイムアウトした後も Worker が終了しない問題を修正しました。 ([#10241](https://github.com/nocobase/nocobase/pull/10241)) by @mytharcher
