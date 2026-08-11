@@ -210,3 +210,20 @@ Vibe Coding has significantly lowered the barrier to taking an application from 
 If you already have a clear business requirement, start by describing it. Tell AI about your business, team, and processes, then combine it with NocoBase to build the CRM you actually need step by step. **Going from requirements to a usable business system may now be simpler than you expect.**
 
 **Ready to get started? Build your enterprise AI CRM with [AI + NocoBase](https://docs.nocobase.com/ai-builder).**
+
+
+**Related reading**:
+
+* **[How to Design an IT Asset Management System: Data Model, Lifecycle, and Workflows](https://www.nocobase.com/en/blog/enterprise-it-asset-management-system-guide)**
+* **[How to Choose a Smartsheet Alternative: 7 Tools Compared](https://www.nocobase.com/en/blog/best-smartsheet-alternatives)**
+* **[5 Open-Source AI No-Code Tools for Complex Relational Data Models](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[What Is AI No-Code? A Practical Guide to No-Code Platforms in the AI Era](https://www.nocobase.com/en/blog/what-is-ai-no-code)**
+* **[9 Open-Source AI No-Code Tools on GitHub Worth Watching](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-github-9)**
+* **[14 Open Source AI Agent Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16)**
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**
+* **[Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[5 Open-Source Internal Tools to Use with Hermes Agent](https://www.nocobase.com/en/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**
+* **[OpenClaw and 5 Open-Source Tools for Monitoring Business Workflows](https://www.nocobase.com/en/blog/openclaw-open-source-enterprise-tools)**
+* **[What Open-Source Tools Work Well with OpenCode? 5 Projects to Try](https://www.nocobase.com/en/blog/opencode-open-source-tools-ai-agents)**
+* **[Building Internal Tools with Codex: 6 Open-Source Projects for Developers](https://www.nocobase.com/en/blog/building-internal-tools-with-codex)**

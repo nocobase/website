@@ -210,3 +210,19 @@ Vibe Coding によって、アプリを 0 から 1 にするハードルは大�
 すでに明確な業務要件があるなら、まずはそれを言葉にするところから始めてみてください。自社の業務、チーム、プロセスを AI に伝え、NocoBase と組み合わせながら、本当に必要な CRM を一歩ずつ構築していきます。**要件から実際に使える業務システムまでの距離は、これまで考えていたより短くなっているかもしれません。**
 
 **始める準備はできましたか？ [AI + NocoBase](https://docs.nocobase.com/ja/ai-builder) で、エンタープライズ AI CRM を構築してみましょう。**
+
+
+**関連記事**：
+
+* **[企業向け IT 資産管理システム構築ガイド：要件整理から導入まで](https://www.nocobase.com/ja/blog/enterprise-it-asset-management-system-guide)**
+* **[プロジェクト管理と業務フローに使える Smartsheet 代替ツール 7 選](https://www.nocobase.com/ja/blog/best-smartsheet-alternatives)**
+* **[複雑なリレーションモデルに適したオープンソース AI ノーコードツール 5 選](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[AI ノーコードとは？AI 時代のノーコードプラットフォーム実用ガイド](https://www.nocobase.com/ja/blog/what-is-ai-no-code)**
+* **[GitHub で注目したい 9 つのオープンソース AI ノーコードツール](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub で注目したい14のオープンソース AI Agent ツール](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub Stars が多い 8 つのオープンソース AI Assistant ツール](https://www.nocobase.com/ja/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 つの WorkBuddy と組み合わせて使いやすいオープンソースツール](https://www.nocobase.com/ja/blog/workbuddy-open-source-tools)**
+* **[GitHub Stars 上位のオープンソース AI ツール 6 選](https://www.nocobase.com/ja/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[Hermes で内部ツールの効率を高める：おすすめのオープンソースプロジェクト 5 選](https://www.nocobase.com/ja/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**
+* **[OpenClaw を実務で活用するには？おすすめのオープンソースツール 5 選](https://www.nocobase.com/ja/blog/openclaw-open-source-enterprise-tools)**
+* **[Codex にゼロから作らせないための6つのオープンソースプロジェクト](https://www.nocobase.com/ja/blog/building-internal-tools-with-codex)**

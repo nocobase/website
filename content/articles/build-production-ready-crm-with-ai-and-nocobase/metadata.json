@@ -8,7 +8,7 @@
   "description_ja": "AI と NocoBase を組み合わせ、業務要件から CRM を構築し、権限、自動化、AI 従業員を設定してチームで長期運用する方法を解説します。\n",
   "slug": "build-production-ready-crm-with-ai-and-nocobase",
   "publishedAt": "2026-08-10T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-08-11T11:20:11.028Z",
+    "updatedAt": "2026-08-11T11:20:11.044Z",
+    "id": 2656,
+    "title": "20260811-191847",
+    "filename": "20260811-191847-d9hrdu.jpg",
+    "extname": ".jpg",
+    "size": 1769664,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/20260811-191847-d9hrdu.jpg",
+    "preview": "https://static-docs.nocobase.com/20260811-191847-d9hrdu.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-11T10:13:47.337Z"
+  "updatedAt": "2026-08-11T11:24:42.275Z"
 }
