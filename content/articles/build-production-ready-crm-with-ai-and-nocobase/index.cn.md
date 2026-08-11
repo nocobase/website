@@ -50,11 +50,11 @@ AI 可以搭建真正可投入生产的 CRM。借助 NocoBase 提供的数据模
 
 ### 把业务情况整理成自然语言
 
-将公司的业务、客户类型、团队分工和销售流程直接描述给 AI，重点说明**公司销售什么产品、主要服务哪些客户，销售人员如何开发客户和推进项目，一个项目如何从初步接洽走到成交，以及 CRM 需要管理哪些数据和日常工作。**团队中的角色分工、需要自动执行的销售规则，以及 AI 员工可以参与的工作，也可以一并告诉 AI，让它先理解这套 CRM 最终要服务怎样的团队和业务。
+将公司的业务、客户类型、团队分工和销售流程直接描述给 AI，重点说明公司销售什么产品、主要服务哪些客户，销售人员如何开发客户和推进项目，一个项目如何从初步接洽走到成交，以及 CRM 需要管理哪些数据和日常工作。团队中的角色分工、需要自动执行的销售规则，以及 AI 员工可以参与的工作，也可以一并告诉 AI，让它先理解这套 CRM 最终要服务怎样的团队和业务。
 
 NocoBase 可以连接不同的大模型完成应用搭建，例如 GPT、Opus、Qwen、DeepSeek 等。不同模型对业务需求的理解、生成速度和最终呈现方式可能会有所不同，可以根据实际效果和使用习惯选择合适的模型。
 
-> **选哪个模型？NocoBase 大模型能力对比**：**[https://docs.nocobase.com/cn/ai-builder/ai-portal/model-selection/](https://docs.nocobase.com/cn/ai-builder/ai-portal/model-selection/)
+> **选哪个模型？NocoBase 大模型能力对比**：[https://docs.nocobase.com/cn/ai-builder/ai-portal/model-selection/](https://docs.nocobase.com/cn/ai-builder/ai-portal/model-selection/)
 
 业务需求可以直接这样交给 AI：
 
@@ -209,7 +209,6 @@ Vibe Coding 已经大幅降低了应用从 0 到 1 的门槛，AI 和企业应�
 如果你已经有一个明确的业务需求，不妨直接从描述它开始。把你的业务、团队和流程告诉 AI，再结合 NocoBase，一步步搭建你真正想要的 CRM。**从需求到一套可以实际使用的业务系统，接下来要做的，可能比你想象中更简单。**
 
 **准备开始了吗？现在就用 [AI + NocoBase](https://docs.nocobase.com/cn/ai-builder)**，搭建你的企业级 AI CRM。
-
 
 **相关阅读**：
 
