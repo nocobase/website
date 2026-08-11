@@ -42,18 +42,18 @@
   "sub_tags": [],
   "category": null,
   "cover": {
-    "createdAt": "2026-08-11T11:20:11.028Z",
-    "updatedAt": "2026-08-11T11:20:11.044Z",
-    "id": 2656,
+    "createdAt": "2026-08-11T11:52:40.055Z",
+    "updatedAt": "2026-08-11T11:52:40.069Z",
+    "id": 2657,
     "title": "20260811-191847",
-    "filename": "20260811-191847-d9hrdu.jpg",
+    "filename": "20260811-191847-o7e8ag.jpg",
     "extname": ".jpg",
-    "size": 1769664,
+    "size": 126601,
     "mimetype": "image/jpeg",
     "meta": {},
     "path": "",
-    "url": "https://static-docs.nocobase.com/20260811-191847-d9hrdu.jpg",
-    "preview": "https://static-docs.nocobase.com/20260811-191847-d9hrdu.jpg",
+    "url": "https://static-docs.nocobase.com/20260811-191847-o7e8ag.jpg",
+    "preview": "https://static-docs.nocobase.com/20260811-191847-o7e8ag.jpg",
     "storageId": 2,
     "createdById": 22,
     "updatedById": 22
@@ -67,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-11T11:24:42.275Z"
+  "updatedAt": "2026-08-11T11:52:58.269Z"
 }
