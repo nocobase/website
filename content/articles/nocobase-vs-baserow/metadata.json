@@ -11,6 +11,34 @@
   "status": "published",
   "tags": [
     {
+      "createdAt": "2024-06-23T04:03:19.249Z",
+      "updatedAt": "2026-06-24T12:43:08.293Z",
+      "id": 9,
+      "title": "Insights",
+      "title_cn": "洞见",
+      "sort": 9,
+      "description": "Explore expert insights, trends, and best practices in the AI, digitalization, no-code, low-code industry to leverage the full potential of NocoBase for your business solutions.",
+      "description_cn": "探索 AI、企业数字化、无代码与低代码行业的见解、趋势和最佳实践，以充分利用 NocoBase 为您的业务解决方案带来的全部潜力。",
+      "displayOnPage": true,
+      "slug": "no-code-insights",
+      "displayOnBlog": true,
+      "keywords": "Insights, no-code development, no-code trends, no-code platform analysis, business automation with no-code, no-code case studies, no-code success stories, AI",
+      "keywords_cn": "无代码开发, 无代码趋势, 无代码平台分析, 无代码案例研究, AI, 低代码",
+      "title_ja": "インサイト",
+      "description_ja": "AI、デジタル化、ノーコード、ローコード業界における専門家の知見、トレンド、ベストプラクティスを探求し、ビジネスソリューションにおいてNocoBaseの潜在能力を最大限に活用しましょう。",
+      "keywords_ja": "NocoBase ノーコードインサイト, ノーコード開発, ノーコードトレンド, ノーコードプラットフォーム分析, ノーコードによるビジネス自動化, ノーコードケーススタディ, ノーコード成功事例",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 1,
+      "updatedById": 9,
+      "articlesTags": {
+        "createdAt": "2026-08-12T12:50:45.714Z",
+        "updatedAt": "2026-08-12T12:50:45.714Z",
+        "tagId": 9,
+        "articleId": 1172
+      }
+    },
+    {
       "createdAt": "2024-07-09T12:38:10.829Z",
       "updatedAt": "2026-08-11T10:11:36.038Z",
       "id": 19,
@@ -67,5 +95,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-12T07:33:13.741Z"
+  "updatedAt": "2026-08-12T12:50:45.709Z"
 }
