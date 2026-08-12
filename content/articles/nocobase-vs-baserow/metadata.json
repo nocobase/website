@@ -8,7 +8,7 @@
   "description_ja": "NocoBase と Baserow のデータ管理、ページ、権限、ワークフロー、AI 機能の違いを比較し、業務の複雑さに合うプラットフォーム選びを整理します。",
   "slug": "nocobase-vs-baserow",
   "publishedAt": "2026-08-11T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-08-12T07:23:13.435Z",
+    "updatedAt": "2026-08-12T07:23:13.443Z",
+    "id": 2659,
+    "title": "Frame 115 (2)",
+    "filename": "Frame 115 (2)-hdb59s.png",
+    "extname": ".png",
+    "size": 200212,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Frame%20115%20(2)-hdb59s.png",
+    "preview": "https://static-docs.nocobase.com/Frame%20115%20(2)-hdb59s.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-12T06:52:54.038Z"
+  "updatedAt": "2026-08-12T07:33:13.741Z"
 }

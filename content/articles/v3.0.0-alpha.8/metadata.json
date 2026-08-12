@@ -1,14 +1,14 @@
 {
   "id": 1167,
-  "title": "NocoBase v3.0.0-alpha.8",
-  "title_cn": "NocoBase v3.0.0-alpha.8",
-  "title_ja": null,
+  "title": "NocoBase v3.0.0-alpha.8: Show an access denied message when users do not have permission to access a Portal",
+  "title_cn": "NocoBase v3.0.0-alpha.8：用户无权限访问 Portal 时显示无权访问提示",
+  "title_ja": "NocoBase v3.0.0-alpha.8：ユーザーに Portal へのアクセス権限がない場合、アクセスできないことを示すメッセージを表示するようにしました",
   "description": "Release Note of v3.0.0-alpha.8",
   "description_cn": "v3.0.0-alpha.8 更新日志",
   "description_ja": null,
   "slug": "v3.0.0-alpha.8",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-08-09T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,17 +39,46 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2026-06-24T12:43:08.688Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-08-12T07:05:32.008Z",
+        "updatedAt": "2026-08-12T07:05:32.008Z",
+        "articles_id": 1167,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-10T06:29:03.933Z"
+  "updatedAt": "2026-08-12T07:05:31.995Z"
 }
