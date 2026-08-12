@@ -3,6 +3,7 @@ import ShapeFooter from "../components/ShapeFooter.astro";
 import HreflangLinks from "../components/HreflangLinks.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
+import MicrosoftClarity from "../components/MicrosoftClarity.astro";
 import { listLightSolutions } from "../utils";
 
 const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
@@ -70,6 +71,7 @@ const meta = {
 <!doctype html>
 <html lang="fr-FR" dir="ltr" class={baseClassName + "-page"}>
 <head>
+    <MicrosoftClarity />
   <meta charset="utf-8" />
   <title>{meta.title}</title>
   <meta name="algolia-site-verification"  content="E1666988F6533757" />
