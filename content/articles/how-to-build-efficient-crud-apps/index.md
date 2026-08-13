@@ -1,5 +1,3 @@
-**Last updated [2026.1.20]**
-
 ## 1. Introduction
 
 Before we dive into CRUD optimization, let's first define CRUD and its importance in software development. Understanding these basics is crucial, especially for new developers.

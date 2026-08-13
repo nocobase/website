@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## **What is Low-Code?**
 
 Low-code development is a streamlined approach to software creation. This method enables teams to craft digital solutions and enterprise applications with minimal coding.

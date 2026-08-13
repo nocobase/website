@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 A data model is the foundation of building an efficient and stable system. It not only determines how data is stored and managed but also directly impacts the performance and scalability of the system.
 
 This article will guide you through creating an effective data model, using NocoBase as an example, to quickly build a data structure that meets your business needs.

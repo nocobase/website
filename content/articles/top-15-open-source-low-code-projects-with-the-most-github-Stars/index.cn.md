@@ -1,7 +1,3 @@
-注：本文数据更新于 2026 年 1 月 20 日。我们会定期更新，确保你获取最新的信息！😊
-
----
-
 上周，我们发布了文章《[GitHub Star 数量前 12 的开源无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)》，收获了许多喜爱。许多朋友留言问，为什么 n8n、Appsmith 等熟知的产品没有上榜？原因是我们是根据 GitHub 上的 "no-code" 标签来制作这份名单的，而这两款产品只打上了 “low-code” 标签。
 
 今天这篇文章，我们将盘点[低代码](https://github.com/topics/low-code)项目。需要注意的是，无代码产品和低代码产品会有一些重合（[这两个概念确实也有相似之处](https://www.nocobase.com/en/blog/what-is-no-code)）。

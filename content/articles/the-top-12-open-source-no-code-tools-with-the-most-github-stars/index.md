@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 In this article, we will explore 12 leading open-source, no-code tools on [GitHub](https://github.com/topics/no-code), each distinguished by its star ranking.
 
 Each tool is designed to streamline and accelerate the development process, though they each focus on different application scenarios.

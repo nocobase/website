@@ -1,7 +1,3 @@
-📝 Note: This article was last updated on Jan. 20, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
----
-
 Last week, we published an article titled "[The Top 12 Open-Source No-Code Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)," which received much appreciation. Many friends commented asking why well-known products like n8n and Appsmith were not on the list. The reason is that we based this list on the "no-code" tag on GitHub, while these products were only tagged as "low-code."
 
 In today's article, we will review low-code projects. It's important to note that there is some overlap between no-code and low-code products ([as these concepts do share similarities](https://www.nocobase.com/en/blog/what-is-no-code)). Building on our previous article, we will add three additional dimensions to comprehensively evaluate these projects:

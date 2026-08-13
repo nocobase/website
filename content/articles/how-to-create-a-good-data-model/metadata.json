@@ -12,7 +12,7 @@
   "tags": [
     {
       "createdAt": "2024-06-16T04:07:19.160Z",
-      "updatedAt": "2024-11-24T05:34:17.312Z",
+      "updatedAt": "2026-06-24T12:43:08.281Z",
       "id": 1,
       "title": "No code",
       "title_cn": "无代码",
@@ -27,6 +27,8 @@
       "title_ja": "コードなし",
       "description_ja": "",
       "keywords_ja": "",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -38,7 +40,7 @@
     },
     {
       "createdAt": "2024-07-04T03:57:16.031Z",
-      "updatedAt": "2024-11-24T05:34:18.615Z",
+      "updatedAt": "2026-06-24T12:43:08.298Z",
       "id": 11,
       "title": "Low-code",
       "title_cn": "低代码",
@@ -53,6 +55,8 @@
       "title_ja": "ローコード",
       "description_ja": "説明はありません",
       "keywords_ja": "ローコード, 低コード",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -64,7 +68,7 @@
     },
     {
       "createdAt": "2024-07-06T09:44:04.848Z",
-      "updatedAt": "2024-11-24T05:34:19.530Z",
+      "updatedAt": "2026-06-24T12:43:08.313Z",
       "id": 16,
       "title": "no code development",
       "title_cn": "无代码开发",
@@ -79,6 +83,8 @@
       "title_ja": "ノーコード開発",
       "description_ja": "このセクションでは、ノーコード開発に関する情報を提供します。",
       "keywords_ja": "ノーコード, 開発, プログラミングなし",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -90,21 +96,23 @@
     },
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
-      "updatedAt": "2026-01-20T12:55:24.969Z",
+      "updatedAt": "2026-08-11T10:11:36.038Z",
       "id": 19,
-      "title": "News",
-      "title_cn": "资讯",
+      "title": "AI & No-Code",
+      "title_cn": "AI 与无代码",
       "sort": 19,
-      "description": "Stay updated with the latest news in the AI, No-Code and Low-Code universe.",
-      "description_cn": "AI、无代码、低代码等领域的最新信息。",
+      "description": "Explore AI, no-code, and open-source tools, platforms, guides, and practical insights for building modern business applications.",
+      "description_cn": "探索 AI、无代码与开源工具、平台和实践指南，了解如何更高效地构建现代业务应用。",
       "displayOnPage": true,
       "slug": "nocode-news",
       "displayOnBlog": true,
-      "keywords": "No-code news, No-code updates, No-code technology, No-code trends, Latest in no-code, No-code insights, No-code platforms, AI, Low-Code",
-      "keywords_cn": "无代码新闻, 无代码更新, 无代码技术, 无代码趋势, 最新无代码信息, 无代码洞察, 无代码平台, AI, 低代码",
-      "title_ja": "ニュース",
-      "description_ja": "AI、ノーコード、ローコードの世界の最新ニュースをチェックしましょう。",
-      "keywords_ja": "ノーコードニュース, ノーコード更新, ノーコード技術, ノーコードトレンド, 最新のノーコード情報, ノーコードの洞察, ノーコードプラットフォーム",
+      "keywords": "AI, No-Code, Open Source, AI Tools, Business Applications",
+      "keywords_cn": "AI, 无代码, 开源工具, AI 工具, 业务应用",
+      "title_ja": "AI & ノーコード",
+      "description_ja": "AI、ノーコード、オープンソースのツールやプラットフォーム、実践ガイドを通じて、モダンなビジネスアプリケーションの構築方法を紹介します。",
+      "keywords_ja": "AI, ノーコード, オープンソース, AIツール, ビジネスアプリケーション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 1,
       "articlesTags": {
@@ -116,7 +124,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:01.244Z",
-      "updatedAt": "2024-11-24T05:34:24.380Z",
+      "updatedAt": "2026-06-24T12:43:08.449Z",
       "id": 43,
       "title": "Data Model",
       "title_cn": "数据模型",
@@ -131,6 +139,8 @@
       "title_ja": "データモデル",
       "description_ja": null,
       "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -142,7 +152,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:24.018Z",
-      "updatedAt": "2024-11-24T05:34:24.591Z",
+      "updatedAt": "2026-06-24T12:43:08.454Z",
       "id": 44,
       "title": "data modeling",
       "title_cn": "数据建模",
@@ -157,6 +167,8 @@
       "title_ja": "データモデリング",
       "description_ja": "説明は提供されていません。",
       "keywords_ja": "キーワードは提供されていません。",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -168,7 +180,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:37.122Z",
-      "updatedAt": "2024-11-24T05:34:24.756Z",
+      "updatedAt": "2026-06-24T12:43:08.459Z",
       "id": 45,
       "title": "what is data modeling",
       "title_cn": "什么是数据建模",
@@ -183,6 +195,8 @@
       "title_ja": "データモデリングとは",
       "description_ja": "データモデリングは、データの構造や関係を視覚化し、データベースの設計を支援するプロセスです。",
       "keywords_ja": "データ, モデリング, データベース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -194,7 +208,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:48.938Z",
-      "updatedAt": "2024-11-24T05:34:24.939Z",
+      "updatedAt": "2026-06-24T12:43:08.464Z",
       "id": 46,
       "title": "data modeling tools",
       "title_cn": "数据建模工具",
@@ -209,6 +223,8 @@
       "title_ja": "データモデリングツール",
       "description_ja": "リリースノートはありません。",
       "keywords_ja": "データ, モデリング, ツール",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -220,7 +236,7 @@
     },
     {
       "createdAt": "2024-08-09T16:25:59.402Z",
-      "updatedAt": "2024-11-24T05:34:25.115Z",
+      "updatedAt": "2026-06-24T12:43:08.469Z",
       "id": 47,
       "title": "relational data model",
       "title_cn": "关系数据模型",
@@ -235,6 +251,8 @@
       "title_ja": "リレーショナルデータモデル",
       "description_ja": "リレーショナルデータモデルに関する説明がここに入ります。",
       "keywords_ja": "リレーショナルデータ, モデル, データベース",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -246,7 +264,7 @@
     },
     {
       "createdAt": "2024-08-09T16:26:11.913Z",
-      "updatedAt": "2024-11-24T05:34:25.307Z",
+      "updatedAt": "2026-06-24T12:43:08.473Z",
       "id": 48,
       "title": "what is model data",
       "title_cn": "什么是数据模型",
@@ -261,6 +279,8 @@
       "title_ja": "モデルデータとは何ですか",
       "description_ja": "このセクションでは、モデルデータの定義とその重要性について説明します。",
       "keywords_ja": "モデルデータ, データモデル, 定義",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
@@ -292,9 +312,12 @@
   },
   "hideOnListPage": false,
   "hideOnBlog": true,
-  "updatedAt": "2026-01-22T19:04:28.125Z",
+  "updatedAt": "2026-08-13T00:56:26.538Z",
   "author": "Deng lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null
+  "ai_generated_ja": null,
+  "hideDetailPage": false,
+  "about": null,
+  "mentions": null
 }

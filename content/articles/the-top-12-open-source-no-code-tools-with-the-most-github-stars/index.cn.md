@@ -1,5 +1,3 @@
-注：本文数据更新于 2026 年 1 月 20 日。我们会定期更新，确保你获取最新的信息！😊
-
 在本篇文章中，我们将探索 12 款在 [GitHub](https://github.com/topics/no-code) 上星级排名前列的开源无代码（零代码）工具。
 
 每款工具都旨在简化和加速开发过程，但各自侧重于不同的应用场景。
@@ -19,7 +17,6 @@
 ## **第12：NocoBase**
 
 ![NocoBase](https://static-docs.nocobase.com/image-hmy6gw.png)
-
 
 
 | **GitHub**                  | https://github.com/nocobase/nocobase |
