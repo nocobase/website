@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 两周前，我在 Reddit 上看到一条[讨论贴](https://www.reddit.com/r/CRM/comments/1m7agom/weve_used_monday_zoho_suitecrm_odoo_and_weve/)，一位用户说他们试用了多个 CRM 系统，比如 Monday、Zoho、SuiteCRM 和 Odoo，但始终觉得不好用。
 
 ![A user in the r/CRM community complained](https://static-docs.nocobase.com/1-l7rfcb.PNG)

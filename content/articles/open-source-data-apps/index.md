@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 For developers, one of the most common needs at work is to quickly build a data application.

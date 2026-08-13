@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jul. 1, 2026. We regularly update the information to ensure you have the latest insights! 
-
 **Quick answer:**
 
 😄 Choose NocoDB when you primarily need an Airtable-style interface for an existing relational database.

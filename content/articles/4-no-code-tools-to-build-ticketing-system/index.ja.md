@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 Redditでは、工単管理システム（Ticketing System）についての議論が頻繁に見られます。
 
 [小さなオフィスで独自に運営しているユーザーが言いました：](https://www.reddit.com/r/selfhosted/comments/1282l0y/best_opensource_it_ticketing_system/)

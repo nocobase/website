@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 ## 引言
 
 在 2024 年中旬，我们整理了 [GitHub Star 数量前 15 的开源低代码项目](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)。这篇文章受到了非常多开发者的关注与转发。

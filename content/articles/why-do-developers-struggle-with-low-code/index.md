@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 In recent years, low-code development platforms have sparked intense debate. On Hacker News, many highly upvoted discussions about low-code focus on skepticism.
 
 The most popular thread is titled *"[I'm skeptical of low-code](https://news.ycombinator.com/item?id=38816135),"* while another, ranked fifth, bluntly claims *"[Low Code Software Development Is a Lie](https://news.ycombinator.com/item?id=35578240)"*

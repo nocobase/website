@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## **Introduction**
 
 Back in mid-2024, we published [a list of the top 15 open-source low-code projects on GitHub by star count.](https://www.nocobase.com/en/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars) The article received widespread attention and was widely shared among developers.

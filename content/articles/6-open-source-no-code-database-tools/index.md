@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 If you’ve used Airtable or Notion, you probably feel the same way I do: they’re far more convenient than traditional spreadsheets like Excel or Google Sheets.

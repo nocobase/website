@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 RBAC（Role-Based Access Control，基于角色的访问控制）是一种将 “用户 → 角色 → 权限” 进行清晰映射的权限模型，因其易于管理、便于审计、适用于多种业务场景，成为大多数企业权限系统的首选。
 
 💡 如果你对 RBAC 的核心概念还不太清楚，可以先阅读：[如何设计 RBAC（基于角色的访问控制）系统](https://www.nocobase.com/cn/blog/how-to-design-rbac-role-based-access-control-system)

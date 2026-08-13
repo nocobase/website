@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 The comprehensive rise of low-code technology has provided developers with more diverse development methods, but challenges have also emerged. This article aims to offer a comprehensive guide to help developers effectively choose and implement low-code or no-code development platforms.
 
 ![Low-Code Tools.png](https://static-docs.nocobase.com/0d3d8a0c04ba34ae71779479d7707f7a.png)

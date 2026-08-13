@@ -1,5 +1,3 @@
-📝 注: この記事は2025年8月29日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 過去 1 年間、私たちは GitHub のオープンソースプロジェクトの動向を継続的に追跡し、以下のような多数の深掘り記事を公開してきました：
 
 * [GitHubのスター数が最も多いオープンソースノーコードツール12選](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)

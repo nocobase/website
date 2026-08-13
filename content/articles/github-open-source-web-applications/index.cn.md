@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 近期，我们发布了多篇「Top GitHub Star 开源项目推荐」系列文章，受到了大量点赞与收藏，很多开发者留言表示希望能看到更多不同领域的开源工具推荐。
 
 * [GitHub 上 Star 数排名前 40 的开发者工具](https://www.nocobase.com/cn/blog/github-open-source-developer-tools)

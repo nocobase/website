@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 この記事はLeandro Martinsによって作成され、最初に[Developing a Plugin to Send WhatsApp Messages in NocoBase](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase)に公開されました。
 
 この記事の目的は、特定のニーズを満たすためにNocoBaseでプラグインを作成する手順を示すことです。この記事では、アーキテクチャ設計、基本構造の作成、プラグインの有効化、コレクションの定義と作成、エンドポイントの作成、設定インターフェースの構築、ワークフローとの統合、プラグインのエクスポートについて説明します。

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Two weeks ago, I came across [a discussion on Reddit](https://www.reddit.com/r/CRM/comments/1m7agom/weve_used_monday_zoho_suitecrm_odoo_and_weve/) where a user shared their experience testing various CRM systems—like Monday, Zoho, SuiteCRM, and Odoo—only to find them all frustrating to use.
 
 ![A user in the r/CRM community complained](https://static-docs.nocobase.com/1-l7rfcb.PNG)

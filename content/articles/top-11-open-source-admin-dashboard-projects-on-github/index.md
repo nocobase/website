@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 For developers managing data or handling project workflows, this article is your go-to guide! If you’re looking for an efficient and easy-to-use admin dashboard solution, you’ll find plenty of inspiration here.
 
 ![admin dashboard solution.png](https://static-docs.nocobase.com/e8855866e60ca66c175edff8551e9003.png)
@@ -46,7 +44,6 @@ To make your search easier, we’ve curated the top 11 most popular admin dashbo
 * **Extensible with Plugins**: Add features easily via plugins, enabling seamless customization without modifying the core system.
 * **Advanced Permission Management**: Multi-tiered access controls ensure security and precise user permissions.
 * **Automated Workflows**: Simplify and streamline processes with a powerful visual workflow engine for automation and collaboration.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **Who Should Use It?**

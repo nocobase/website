@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 先日Redditで、あるユーザーがCRMツールをいくつも試したという[投稿](https://www.reddit.com/r/CRM/comments/1m7agom/weve_used_monday_zoho_suitecrm_odoo_and_weve/)を見かけました。Monday、Zoho、SuiteCRM、Odoo——そのどれもが使いにくかったそうです。
 
 ![A user in the r/CRM community complained](https://static-docs.nocobase.com/1-l7rfcb.PNG)

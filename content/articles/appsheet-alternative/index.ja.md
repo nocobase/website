@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 ## 背景
 
 先日、Redditで[この投稿](https://www.reddit.com/r/nocode/comments/1iwcsrf/comment/miefglw/?context=3)を見かけました。

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Before we begin, let’s ask a quick question: Have you ever used workflow automation tools at work? 🙋 If not, this article might just inspire you to start!
 
 Workflow tools are now a cornerstone of improving efficiency. In an earlier blog post, we shared [five highly recommended workflow tools](https://www.nocobase.com/en/blog/workflow-automation-tools) with our readers.
@@ -173,7 +171,6 @@ Use Conductor as a base to design custom workflow platforms tailored to your ind
 * **Seamless Data Integration**: Connect to multiple databases and APIs to manage diverse data sources effortlessly.
 * **Granular Permission Control**: Ensure secure data management with fine-tuned access control options.
 * **WYSIWYG UI Builder**: Design interfaces intuitively by arranging blocks and operations on a canvas, much like Notion, to create complex systems without coding.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 **How Can NocoBase Help Your Business?**

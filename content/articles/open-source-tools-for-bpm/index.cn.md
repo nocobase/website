@@ -1,7 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
----
-
 在上个月的文章中，我们探讨了 BPM 并总结了构建 BPM 应用程序的三大步骤。
 
 [什么是BPM，如何构建一个BPM App？ - NocoBase](https://www.nocobase.com/cn/blog/business-process-management)

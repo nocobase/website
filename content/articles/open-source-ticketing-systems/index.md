@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Last year, as the number of NocoBase users grew, we faced a pressing challenge: **how to efficiently manage customer feedback and support requests**.
 
 Users reached out via emails, community forums, and even through internal colleagues. With information scattered across multiple channels, issues were easily missed, and collaboration on follow-ups became cumbersome. We realized it was time to implement a ticketing system tailored to our workflows.

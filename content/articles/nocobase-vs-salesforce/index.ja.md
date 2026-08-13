@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 ## **背景**
 
 ![NocoBase vs Salesforce.jpg](https://static-docs.nocobase.com/be4d6bf3c87e36b98e7173de634f8e44.jpg)
@@ -33,8 +31,6 @@
 次のセクションでは、両製品を「機能」と「ユーザー体験」の観点からさらに詳しく掘り下げ、それぞれのCRMがどのような企業ニーズに最も適しているかを解説します。
 
 さらに詳しく知りたい方は、この動画をご覧ください。NocoBaseを使ってSalesforceに似た強力なCRMをどのように構築するか、具体的な手順を解説しています:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3dXeTHlZ19E?si=eEzxIS3UH9BTjne-&start=100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **製品機能比較**
 

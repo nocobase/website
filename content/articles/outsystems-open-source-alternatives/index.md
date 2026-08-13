@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## OutSystems' Hidden Costs Go Beyond Money
 
 OutSystems is a leader in enterprise low-code development. By deeply integrating generative AI tools into the software lifecycle, OutSystems empowers enterprises to rapidly build customer-oriented portals, customized core systems, and efficiency-boosting internal tools, establishing itself as a benchmark in enterprise application development.
@@ -57,7 +55,6 @@ GitHub Link: [https://github.com/nocobase/nocobase](https://github.com/nocobase/
 
 * **Low Learning Curve**: Intuitive drag-and-drop UI editor allows non-technical users to start quickly. Comprehensive documentation, tutorials, and active community support further reduce learning costs.
 * **Cost Advantage**: Free open-source version + commercial licenses/plugins available as one-time purchases with lifetime validity.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)

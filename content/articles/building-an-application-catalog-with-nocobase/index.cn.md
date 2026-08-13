@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 这篇博客由 Leandro Martins 创作，并最初发表在[使用 NocoBase 构建应用程序目录](https://leandromartins.hashnode.dev/simplified-architecture-governance-building-an-application-catalog-with-nocobase#)。
 
 本文的目标是展示 [NocoBase](https://www.nocobase.com/) 在无代码（零代码）开发 Web 应用方面的潜力和易用性。作为一个案例研究，我将创建一个应用程序目录来辅助架构治理。此案例将使用 NocoBase 的功能，包括建模、安装、创建表格、菜单、表单、图表以及工作流。
@@ -25,7 +23,6 @@
 * **数据库兼容性**：支持主要的关系数据库，如 Postgres 和 MySQL。
 * **可视化数据建模**：使用 Main Database 插件可视化定义表格和数据。
 * **广泛的插件库**：提供各种免费和付费插件，并支持开发自定义插件。
-
 * **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 ![Key Highlights of NocoBase.png](https://static-docs.nocobase.com/95c4cc96a72c8e414e5399d7d9b6ee18.png)

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## **Introduction**
 
 As a leading no-code application development platform under Google, AppSheet has helped millions of enterprises quickly build mobile and web applications covering scenarios such as project management, data collection, and automated processes since its establishment in 2012. This has been achieved through its code-free visual interface, deep integration with the Google ecosystem (Sheets/Drive/AI), and cloud collaboration and cross-platform compatibility capabilities.
@@ -56,7 +54,6 @@ These feedbacks indicate that developers are seeking more **cost-effective, flex
 ![Role-Based Permission Management.png](https://static-docs.nocobase.com/9398794bc38886f89644afaa87821a4e.png)
 
 * **Supports Docker/local deployment**: NocoBase enables Docker and local deployment, ensuring full data ownership and eliminating the risk of vendor lock-in.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)

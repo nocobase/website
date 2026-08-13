@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 ## はじめに
 
 2025 年初頭、[Reddit](https://www.reddit.com/r/nocode/comments/1khjivw/been_vibe_coding_for_5_months_but_went_back_to/) では毎日同じ質問に遭遇するように感じました。「Vibe Coding が No-Code を置き換えるのか？」

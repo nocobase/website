@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 继续我们的 GitHub Star 系列！这是本系列的第四篇文章，之前的内容：
 
 1. *[GitHub Star 数量前 12 的开源无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)*

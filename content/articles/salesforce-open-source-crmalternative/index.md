@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
 ## **Understanding Salesforce**
@@ -48,7 +46,7 @@ Here are four open-source CRM platforms that can rival Salesforce in capability 
 
 **NocoBase** is an open-source, AI-driven no-code (zero-code) / low-code development platform, well suited for building CRM solutions.
 
- ⭐️ Currently, NocoBase has received [21.3k stars on GitHub](https://github.com/nocobase/nocobase).
+⭐️ Currently, NocoBase has received [21.3k stars on GitHub](https://github.com/nocobase/nocobase).
 
 Built for flexibility and scalability, NocoBase is user-friendly for beginners while offering plugin extensions for advanced CRM needs. For teams balancing in-house development and no-code solutions, NocoBase stands out as a versatile and powerful tool.
 
@@ -60,7 +58,6 @@ Built for flexibility and scalability, NocoBase is user-friendly for beginners w
 * **User-Friendly Visual Interface**: The intuitive WYSIWYG interface makes it easy to set up data tables, design user interfaces, and configure workflows for features like customer management and sales tracking.
 * **Efficient Automation Workflows**: The built-in workflow system automates tasks, reducing manual effort and boosting operational efficiency.
 * **Extensive Plugin Ecosystem**: With a rich selection of plugins, NocoBase lets users expand CRM functionalities and tailor solutions to their specific needs.
-
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
 
 ![kanban.png](https://static-docs.nocobase.com/2ed823e88d16562ca786121c369e7804.png)

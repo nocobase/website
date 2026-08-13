@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Over the past few weeks, we’ve shared several popular GitHub collections featuring the most-starred open source projects—and they’ve received tons of likes and bookmarks. Many developers asked us to cover more categories, and we’re happy to continue the series.
 
 Some of our previous lists include:

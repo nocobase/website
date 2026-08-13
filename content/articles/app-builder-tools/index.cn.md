@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 欢迎来的 GitHub Star 数量排名系列文章的第 7 篇——最受欢迎的应用开发平台。
 
 之前我们已经详细探讨过：在 GitHub 上最受欢迎的——[无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)、[低代码项目](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)、[内部工具](https://www.nocobase.com/cn/blog/open-source-internal-tools)、[CRUD项目](https://www.nocobase.com/cn/blog/crud-projects)、[自部署项目](https://www.nocobase.com/cn/blog/self-hsosted-projects-list)和 [Airtable 开源替代品](https://www.nocobase.com/cn/blog/open-source-airtable-alternatives)。累计超过 50 个优质项目！（😁欢迎随时点击阅读）
@@ -89,7 +87,6 @@ Appsmith 适合需要快速开发定制应用的开发团队，特别是构建�
 ![Data Model Driven.png](https://static-docs.nocobase.com/cc1f58bb72859f40d6f5925d3f09f84c.png)
 
 * **灵活的适用性**：NocoBase 支持 Web 应用开发，提供免费的社区版和更专业的商业版，以满足不同规模企业的需求。
-
 * **融入系统的 AI 员工**：将 AI 能力无缝集成到交互界面、业务流程和数据上下文中，让 AI 真正落地于企业场景。
 
 ![AI employees.png](https://static-docs.nocobase.com/AI%20%E5%91%98%E5%B7%A52-qwgmgh.png)

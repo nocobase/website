@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 欢迎回到我们的 GitHub Star 系列文章！
 
 在之前的文章中，我们深入探讨了 GitHub 上最受欢迎的开源低代码项目《[GitHub Star 数量前 15 的开源低代码项目](https://www.nocobase.com/cn/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)》和开源无代码工具《[GitHub Star 数量前 12 的开源无代码工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)》，获得了热烈的反馈。本周，我们将进一步推出 GitHub Star 系列文章，聚焦于不仅能提升工作效率，还推动业务流程创新的内部工具。

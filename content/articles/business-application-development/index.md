@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 **❤️ Friendly Reminder**
 
 This article is quite long, so feel free to jump to the sections that interest you the most using the table of contents. Of course, I believe if you read through the entire piece, you'll find plenty of valuable insights.
@@ -336,8 +334,6 @@ Additionally, you can update and extend the application based on changing busine
 As businesses’ demand for application development increases, the challenge lies in how to meet complex business needs while maintaining flexibility and efficiency. Traditional development methods are often time-consuming and expensive, whereas NocoBase offers a more efficient solution. It’s capable of handling complex business scenarios, enabling automation, and providing high scalability.
 
 By using NocoBase, businesses can quickly develop applications that meet their needs, from defining requirements, designing data models, and configuring the interface to creating automated workflows and managing security. After testing and optimization, the application can be smoothly deployed and iterated as the business grows. Whether for small, medium, or large enterprises, NocoBase provides strong support for efficient business application development.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hOM2MyzHn9I?si=-sFC03BaBYc605iV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [We invite you to try NocoBase](https://www.nocobase.com/cn/) to accelerate your business application development and help your company quickly respond to market changes and maintain a competitive edge.
 

@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 私たちの GitHub スター シリーズを続けます！これはシリーズの第 4 回目の記事です。以前の記事には次のものが含まれます：
 
 1. [GitHub スター数の最も多い 12 のオープンソースノーコードツール](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)

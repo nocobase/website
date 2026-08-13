@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 The term MCP truly gained widespread attention in early 2025, especially within the AI tool development community.
 
 In March, a heated debate about “MCP - flash in the pan or future standard?” ignited the discussion. Core members from LangChain and LangGraph clashed intensely on X, and MCP-related projects on GitHub started trending one after another.

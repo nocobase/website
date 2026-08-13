@@ -1,5 +1,3 @@
-注：本文数据更新于 2025 年 8 月 29 日。我们会定期更新，确保你获取最新的信息！😊
-
 过去一年，我们持续追踪 GitHub 上的开源项目动态，发布了多篇深度内容：
 
 * [GitHub Star 数量前 12 的开源无代码（零代码）工具](https://www.nocobase.com/cn/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)

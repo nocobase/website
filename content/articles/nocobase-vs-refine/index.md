@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 **Today, we’re focusing on two outstanding open-source CRUD development tools: [NocoBase](https://www.nocobase.com/) and [Refine](https://refine.dev/).** These tools are excellent representatives of no-code/low-code development platforms and low-code frontend development frameworks, respectively.

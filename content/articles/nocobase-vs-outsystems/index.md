@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 I’ve previously written several in-depth comparisons of low-code and no-code platforms. If you're interested, check out these articles:

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Background
 
 A few days ago, I came across [this post on Reddit](https://www.reddit.com/r/nocode/comments/1iwcsrf/comment/miefglw/?context=3):

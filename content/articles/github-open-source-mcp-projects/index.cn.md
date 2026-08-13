@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 MCP 这个词真正被广泛提起，是在 2025 年年初，尤其是在 AI 工具开发圈。3 月，一场围绕 “MCP 是否能成为未来标准协议” 的争论彻底点燃了讨论热度。LangChain 和 LangGraph 的核心成员在 X 上激烈辩论，GitHub 上的 MCP 项目也接连走红。
 
 ✨2026 年最新版 GitHub 开源 AI 项目盘点，立即查看：[https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026](https://www.nocobase.com/cn/blog/best-open-source-ai-projects-github-2026)

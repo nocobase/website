@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 This blog was produced by Don Freeman from [Freeman Tech Consulting](https://freemantechconsulting.com/) and was originally published on [nocodefounders.com](https://www.aidutu.cn/info/link?url=http://nocodefounders.com). Freeman Tech Consulting is a full-service Software Engineering Firm that can help with No Code deployments, web app development, cloud infrastructure design/build, GRC Management, data analytics, and much more.
 
 ## 🌟What is NocoBase?

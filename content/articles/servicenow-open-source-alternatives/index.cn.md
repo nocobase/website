@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 ## **引言**
 
 [ServiceNow](https://www.servicenow.com/) 是 Gartner 评选的“企业 ITSM 三巨头”之一，与 AWS、Azure 齐名，功能覆盖 **IT 服务管理 (ITSM)**、**资产管理 (ITAM)**、**客户支持 (CSM)**、**HR 流程**等多个企业核心场景。

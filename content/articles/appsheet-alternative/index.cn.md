@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 ## 背景
 
 前几天，我在逛 Reddit 的时候，看到了[这样一篇帖子](https://www.reddit.com/r/nocode/comments/1iwcsrf/comment/miefglw/?context=3)：

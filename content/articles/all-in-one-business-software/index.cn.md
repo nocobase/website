@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 在一次浏览 [Reddit](https://www.reddit.com/r/smallbusiness/comments/1bhxadw/looking_for_allinone_software_for_a_small/) 的过程中，我偶然看到了一位用户的提问：
 
 "I am looking for software recommendation that covers multiple fields like CRM, Invoicing, Contracts, Project management, Time tracking. So far I have been stuck with Trello, but I am looking for something that can cover everything mentioned above."

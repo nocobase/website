@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 **❤️ 温馨提醒**
 
 本篇文章较长，你可以根据目录选择最感兴趣的部分阅读。当然，我相信如果你全部阅读完，一定会有不少的收获。
@@ -341,10 +339,7 @@ NocoBase 的用户认证也是以插件的形式提供。
 通过使用 NocoBase，企业能够从定义需求、设计数据模型、配置界面，到创建自动化工作流程和安全管理等各个环节，快速构建出满足自身业务需求的应用程序。同时，经过测试和优化后，应用可以平稳部署并随着业务的发展进行迭代升级。无论是中小型企业还是大型企业，NocoBase 都为高效的业务应用开发提供了强大的支持。
 
 <div style="text-align: center;">
-  <iframe src="https://player.bilibili.com/player.html?bvid=BV1AFHUe9EGC&cid=25757091990&p=1&share_source=copy_web" 
-          width="500" height="450" 
-          scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
-  </iframe>
+
 </div>
 
 [欢迎尝试](https://www.nocobase.com/cn/)使用 NocoBase 加速你的业务应用开发，帮助企业快速响应市场变化并保持竞争优势。

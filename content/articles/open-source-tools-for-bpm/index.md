@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 In last month's article, we explored BPM and summarized the three key steps to building BPM applications.
 
 [What is BPM and How to Build a BPM App?](https://www.nocobase.com/en/blog/business-process-management)

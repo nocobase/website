@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 RBAC (Role-Based Access Control) is a widely adopted access control model that maps **users → roles → permissions** in a structured and manageable way. Its simplicity, auditability, and flexibility across diverse business scenarios have made it a default choice for many enterprise-grade systems.
 
 💡 New to RBAC? Start with this guide: [How to Design an RBAC (Role-Based Access Control) System](https://www.nocobase.com/en/blog/how-to-design-rbac-role-based-access-control-system)

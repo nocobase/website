@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 This blog was produced by Leandro Martins and was originally published at [Developing a Plugin to Send WhatsApp Messages in NocoBase](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase).
 
 The goal of this article is to demonstrate the steps for creating a plugin in NocoBase to meet specific needs. We will cover the architectural design, create the basic structure, activate the plugin, define and create collections, create an endpoint, build a configuration interface, integrate with workflows, and export the plugin.

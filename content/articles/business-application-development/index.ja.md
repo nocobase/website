@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 **❤️ 友好的リマインダー**
 
 この記事は非常に長いので、目次を使って最も興味のあるセクションに飛んでください。もちろん、全体を読むことで多くの貴重な洞察が得られると信じています。
@@ -336,8 +334,6 @@ NocoBaseでは、役割管理により、異なるユーザーの責任に応じ
 ビジネスアプリケーションの開発に対する企業の需要が増加する中、複雑なビジネスニーズを満たしながら柔軟性と効率を維持することが課題となっています。従来の開発方法はしばしば時間がかかり、高コストですが、NocoBaseはより効率的なソリューションを提供します。複雑なビジネスシナリオを処理し、自動化を実現し、高いスケーラビリティを提供することができます。
 
 NocoBaseを使用することで、企業はニーズに合ったアプリケーションを迅速に開発でき、要件の定義、データモデルの設計、インターフェースの構成、ワークフローの自動化、セキュリティの管理に至るまで、すべてのプロセスを効率的に行えます。テストと最適化を経て、アプリケーションはスムーズに展開され、ビジネスの成長に応じて反復されることができます。中小企業、大企業を問わず、NocoBaseは効率的なビジネスアプリケーション開発を強力にサポートします。
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hOM2MyzHn9I?si=-sFC03BaBYc605iV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [ぜひNocoBaseを試してみて](https://www.nocobase.com/cn/)、ビジネスアプリケーション開発を加速し、企業が市場の変化に迅速に対応し、競争力を維持できるようにしましょう。
 

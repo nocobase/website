@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on August 29, 2025. We regularly update the information to ensure you have the latest insights! 😊
-
 Over the past year, we have continuously tracked the dynamics of open-source projects on GitHub and published several in-depth articles:
 
 * [The Top 12 Open-Source No-Code Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)

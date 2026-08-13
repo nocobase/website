@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 ## 引言
 
 2025 年初，我几乎每天都能在 [Reddit](https://www.reddit.com/r/nocode/comments/1khjivw/been_vibe_coding_for_5_months_but_went_back_to/) 上刷到类似话题：“Vibe Coding 会不会终结无代码？”

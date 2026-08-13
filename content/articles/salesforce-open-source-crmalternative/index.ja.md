@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 ![4 Powerful Open Source Tools.jpg](https://static-docs.nocobase.com/07f9991a0d34d7fe4ada0ccad1c0a92a.jpg)
 
 ## Salesforceの基本を知る
@@ -100,8 +98,6 @@ NocoBaseは、低コストで柔軟性やデータ管理の自由を求めるチ
 🎉[NocoBase の CRM ソリューションがついに公開されました](https://www.nocobase.com/ja/blog/crm-solution)
 
 この動画では、NocoBaseを使ってSalesforceに似た強力なCRMをどのように構築するかを詳しく学ぶことができます：
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3dXeTHlZ19E?si=eEzxIS3UH9BTjne-&start=100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 💡 始めるにはこちら: [NocoBaseチュートリアル - タスク管理システム構築方法](https://www.nocobase.com/ja/tutorials)
 

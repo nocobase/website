@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 23 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 私たちのGitHubスターシリーズへようこそ！
 
 これまでの記事では、GitHubで最も人気のあるオープンソースのローコードプロジェクト「[GitHubスター数が最も多いオープンソースのローコードプロジェクト15選](https://www.nocobase.com/ja/blog/top-15-open-source-low-code-projects-with-the-most-github-Stars)」やオープンソースのノーコードツール「[GitHubスター数が最も多いオープンソースのノーコードツール12選](https://www.nocobase.com/ja/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)」について掘り下げてきましたが、反響は非常に高かったです。今週は、業務効率を高め、ビジネスプロセスの革新を促進する内部ツールに焦点を当てて、GitHubスターシリーズを続けます。

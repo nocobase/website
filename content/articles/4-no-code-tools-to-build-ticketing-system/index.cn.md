@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 在 Reddit 上，关于工单系统的讨论经常能看到用户的困惑。
 
 [一位在小型办公室独自运维的用户说：](https://www.reddit.com/r/selfhosted/comments/1282l0y/best_opensource_it_ticketing_system/)

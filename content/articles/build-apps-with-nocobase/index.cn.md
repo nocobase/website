@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 23 日。我们会定期更新，确保你获取最新的信息！😊
-
 这篇博客来自 [Freeman Tech Consulting](https://freemantechconsulting.com/) 的 Don Freeman，首发于[nocodefounders.com](http://nocodefounders.com/)。Freeman Tech Consulting 是一家全方位服务的软件工程公司，可以帮助进行无代码（零代码）部署、网页应用开发、云基础设施设计/构建、GRC管理、数据分析等多种服务。
 
 ## 🌟什么是 NocoBase？

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 After the release of our previous article "*[Top 11 Open-Source Admin Dashboard Projects on GitHub](https://www.nocobase.com/en/blog/top-11-open-source-admin-dashboard-projects-on-github)*", a reader left a comment asking:
 
 > "How to evaluate the extensibility and customization capabilities of open-source Admin Dashboard projects to ensure they can adapt to the evolving business needs of enterprises?"

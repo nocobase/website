@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 23, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## **Introduction: The Promise of Low-Code vs. the Reality of "Pitfalls"**
 
 Low-code platforms promise to enable enterprises to build applications faster, reduce development costs, and decrease reliance on professional developers. However, many enterprises gradually discover hidden traps and hidden costs when they actually use low-code platforms.
