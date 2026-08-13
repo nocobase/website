@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## **Introduction**
 
 In the design of no-code and low-code platforms, **RBAC (Role-Based Access Control)** is an unavoidable topic.  Whether for team collaboration, data security, or managing multi-module systems, the moment user-resource boundaries appear, roles and permissions become essential.

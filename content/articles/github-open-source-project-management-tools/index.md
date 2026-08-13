@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Last week, we recommended a set of project management tools for **small businesses**, based on real discussions and needs shared by Reddit users:
 
 [Project Management Systems for Small Businesses: Real Needs from Reddit Users](https://www.nocobase.com/en/blog/project-management-systems-for-small-businesses)

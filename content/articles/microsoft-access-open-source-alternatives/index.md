@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 On [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/), one developer vividly described **the lifecycle of Microsoft Access** as below:
 
 ![reddit](https://static-docs.nocobase.com/reddit-en-3gae5i.png)

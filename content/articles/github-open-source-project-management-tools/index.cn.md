@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 上周，我们针对 Reddit 上的用户讨论与需求，为小型企业推荐了一些项目管理工具：
 
 [适合小型企业的项目管理系统推荐：Reddit 用户真实需求](https://www.nocobase.com/cn/blog/project-management-systems-for-small-businesses)

@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 在 [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/) 上，一位开发者用一段话生动描绘了 **Microsoft Access 的生命周期**：
 
 ![reddit](https://static-docs.nocobase.com/reddit-wzra4s.PNG)

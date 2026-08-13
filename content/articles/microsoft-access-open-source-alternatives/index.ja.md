@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 [Reddit](https://www.reddit.com/r/brdev/comments/1h2s9tm/microsoft_acess/) では、ある開発者が Microsoft Access のライフサイクルを一文で生き生きと描写しています：
 
 ![reddit](https://static-docs.nocobase.com/reddit-en-3gae5i.png)

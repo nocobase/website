@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 In internal business operations, Excel remains one of the most widely used management tools.

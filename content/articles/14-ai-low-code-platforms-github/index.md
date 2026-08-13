@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Recently I came across a very blunt comment on Reddit:
 
 ![Reddit2.png](https://static-docs.nocobase.com/image-4j39lb.png)

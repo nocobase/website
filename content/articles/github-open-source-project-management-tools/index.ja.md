@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 先週、私たちは Reddit 上のユーザーの議論やニーズをもとに、中小企業向けのプロジェクト管理ツールを紹介しました：
 
 [中小企業に最適なプロジェクト管理システムおすすめ：Reddit ユーザーのリアルな声](https://www.nocobase.com/ja/blog/project-management-systems-for-small-businesses)

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 If you had asked a product manager or technical lead a few years ago, “What’s the fastest way to build a PoC?”, most would have given a similar answer — pick a low-code or no-code platform and quickly assemble the business flow, interface, and core logic so the idea can reach a working state as fast as possible.
 
 But over the past two years, rapid advances in AI have started to shift that view. Models can now produce front-end code and component structures from natural-language prompts, and even generate full pages from rough sketches. Interface creation has become dramatically faster, with parts of front-end work already automated. The newly released [Gemini 3](https://gemini.google.com/) pushes this further with stronger code generation, layout understanding, and interaction-logic completion, making front-end design more direct and controllable.

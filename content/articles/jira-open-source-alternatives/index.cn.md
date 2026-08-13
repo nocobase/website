@@ -1,5 +1,3 @@
-📝 注：本文最后更新于 2026 年 1 月 21 日。我们会定期更新，确保你获取最新的信息！😊
-
 > “我没见过有谁是真的喜欢 Jira。”
 
 最近逛 [Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/jira_is_it_still_helping_teams_or_just_slowing/) 时，看到一条讨论 Jira 的帖子，底下不少开发者都在分享自己的使用感受。
@@ -64,7 +62,6 @@
 * **多视图项目管理**：提供 Kanban、列表、日历、甘特图等多种视图自由切换，支持同一项目从不同角度跟踪进度和资源。
 
 ![多视图.png](https://static-docs.nocobase.com/%E5%A4%9A%E8%A7%86%E5%9B%BE-888zh4.png)
-
 
 * **插件与扩展能力**：官方插件市场丰富，允许自定义插件和业务逻辑编排，使系统能够适配复杂或特定业务需求。
 

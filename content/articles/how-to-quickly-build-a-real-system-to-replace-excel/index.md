@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 ## Introduction
 
 If you click on this article, you are probably already asking yourself one thing: managing your business with Excel or online spreadsheets feels increasingly frustrating.

@@ -1,5 +1,3 @@
-📝 Note: This article was last updated on Jan. 21, 2026. We regularly update the information to ensure you have the latest insights! 😊
-
 Over the past year, we have kept a close eye on the self-hosting ecosystem.
 
 What started with [system setup guides](https://www.nocobase.com/en/blog/the-ultimate-guide-to-awesome-self-hosted-solutions) soon expanded into deep dives on [data management and tool recommendations](https://www.nocobase.com/en/blog/data-transformation-tools). We even compiled [The Top 13 Self-Hosted Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/self-hsosted-projects-list).

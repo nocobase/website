@@ -1,5 +1,3 @@
-📝 注：この記事は 2026 年 1 月 21 日に最終更新されました。最新の情報を提供するため、定期的に情報を更新しています！😊
-
 > “I don’t see anyone who actually likes Jira.”
 
 最近、[Reddit](https://www.reddit.com/r/dataengineering/comments/1ju81cr/jira_is_it_still_helping_teams_or_just_slowing/)でJiraに関する投稿が話題になりました。
