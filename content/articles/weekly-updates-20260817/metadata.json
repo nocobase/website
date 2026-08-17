@@ -1,8 +1,8 @@
 {
   "id": 1176,
-  "title": "Weekly Updates｜Open the LLM Service UI from CLI Commands",
-  "title_cn": "本周更新｜LLM 服务 CLI 支持跳转 UI 并预选提供商",
-  "title_ja": "今週の更新｜LLM サービスの CLI コマンドから UI を開く",
+  "title": "Weekly Updates｜Added Default Space Settings with Automatic User Assignment",
+  "title_cn": "本周更新｜新增默认空间配置，新用户自动加入默认空间",
+  "title_ja": "今週の更新｜新規ユーザーがデフォルトスペースに自動参加",
   "description": "This is a summary of NocoBase feature updates and improvements from August 10 to August 17, 2026.",
   "description_cn": "汇总了 2026.08.10-08.17 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.08.10-08.17 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -22,5 +22,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-17T04:44:06.827Z"
+  "updatedAt": "2026-08-17T05:26:19.678Z"
 }
