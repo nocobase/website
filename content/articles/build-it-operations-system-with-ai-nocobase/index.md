@@ -96,7 +96,7 @@ For a new laptop request, approval only means the request has been accepted. IT 
 
 If AI treats “request approved” as the end of the workflow, ask it to add the IT processing and device delivery steps before creating the system.
 
-For guidance on collaborating more effectively with an AI Agent, see: https://docs.nocobase.com/ai-builder/ai-portal/agent-workflow
+For guidance on collaborating more effectively with an AI Agent, see: [https://docs.nocobase.com/ai-builder/ai-portal/agent-workflow](https://docs.nocobase.com/ai-builder/ai-portal/agent-workflow)
 
 ## 2. Build and Check the Core Workflow
 
@@ -257,3 +257,19 @@ Once these data and workflow behaviors match the business rules defined earlier,
 If you already have a clear business scenario, start with the workflow your team knows best. Describe the real requirements, team roles, and handling process directly to AI, then let NocoBase provide the data, permissions, and other enterprise application foundations. Build, check, and adjust as you go. Get the core business process working first, then expand the system gradually based on actual use.
 
 If this article was useful, feel free to share it with others who are exploring how to use AI to build internal enterprise systems.
+
+**Related reading**:
+
+* **[NocoBase vs Baserow: Flexible Databases vs Enterprise Systems](https://www.nocobase.com/en/blog/nocobase-vs-baserow)**
+* **[How to Build a Production-Ready CRM with AI and NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[How to Design an IT Asset Management System: Data Model, Lifecycle, and Workflows](https://www.nocobase.com/en/blog/enterprise-it-asset-management-system-guide)**
+* **[How to Choose a Smartsheet Alternative: 7 Tools Compared](https://www.nocobase.com/en/blog/best-smartsheet-alternatives)**
+* **[5 Open-Source AI No-Code Tools for Complex Relational Data Models](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[What Is AI No-Code? A Practical Guide to No-Code Platforms in the AI Era](https://www.nocobase.com/en/blog/what-is-ai-no-code)**
+* **[9 Open-Source AI No-Code Tools on GitHub Worth Watching](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-github-9)**
+* **[14 Open Source AI Agent Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16)**
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**
+* **[Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[5 Open-Source Internal Tools to Use with Hermes Agent](https://www.nocobase.com/en/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**
+* **[OpenClaw and 5 Open-Source Tools for Monitoring Business Workflows](https://www.nocobase.com/en/blog/openclaw-open-source-enterprise-tools)**

@@ -95,7 +95,7 @@ AI がシステム作成を始める前に、以下 5 つの重要な業務ル�
 
 AI が「申請承認済み」をフローの終了地点として設計している場合は、作成前に IT の処理とデバイス引き渡しのステップを追加させます。
 
-AI Agent とより効果的に共同構築する方法については、こちらを参照してください：https://docs.nocobase.com/ja/ai-builder/ai-portal/agent-workflow
+AI Agent とより効果的に共同構築する方法については、こちらを参照してください：[https://docs.nocobase.com/ai-builder/ai-portal/agent-workflow](https://docs.nocobase.com/ai-builder/ai-portal/agent-workflow)
 
 ## 2. コアフローを構築して確認する
 
@@ -256,3 +256,18 @@ VPN、MFA、新しいパソコンの初期設定、プリンター障害など�
 すでに明確な業務シーンがあるなら、まずチームにとって最も馴染みのある 1 つのフローから始めます。実際の要件、チーム分担、処理方法をそのまま AI に伝え、NocoBase にデータや権限など企業アプリに必要な基盤を担わせながら、構築・確認・調整を繰り返します。まずコア業務を本当に動かし、その後、実際の利用状況に応じて段階的に拡張していきます。
 
 この記事が参考になったら、AI を使って社内システムを構築しようとしている方にもぜひ共有してください。
+
+**関連記事**：
+
+* **[NocoBase vs Baserow：柔軟なデータベースとエンタープライズ業務システム ](https://www.nocobase.com/ja/blog/nocobase-vs-baserow)**
+* **[AI と NocoBase で本番運用できる CRM を構築する方法](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[企業向け IT 資産管理システム構築ガイド：要件整理から導入まで](https://www.nocobase.com/ja/blog/enterprise-it-asset-management-system-guide)**
+* **[プロジェクト管理と業務フローに使える Smartsheet 代替ツール 7 選](https://www.nocobase.com/ja/blog/best-smartsheet-alternatives)**
+* **[複雑なリレーションモデルに適したオープンソース AI ノーコードツール 5 選](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[AI ノーコードとは？AI 時代のノーコードプラットフォーム実用ガイド](https://www.nocobase.com/ja/blog/what-is-ai-no-code)**
+* **[GitHub で注目したい 9 つのオープンソース AI ノーコードツール](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub で注目したい14のオープンソース AI Agent ツール](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub Stars が多い 8 つのオープンソース AI Assistant ツール](https://www.nocobase.com/ja/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 つの WorkBuddy と組み合わせて使いやすいオープンソースツール](https://www.nocobase.com/ja/blog/workbuddy-open-source-tools)**
+* **[GitHub Stars 上位のオープンソース AI ツール 6 選](https://www.nocobase.com/ja/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[Hermes で内部ツールの効率を高める：おすすめのオープンソースプロジェクト 5 選](https://www.nocobase.com/ja/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**

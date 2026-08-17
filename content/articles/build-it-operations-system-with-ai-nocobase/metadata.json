@@ -45,11 +45,11 @@
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": true,
-  "about": null,
-  "mentions": null,
+  "about": "NocoBase\nIT Operations Management\nIT Service Management (ITSM)\nIT Asset Management (ITAM)",
+  "mentions": "Reddit",
   "author": "Yuan Tianqi, Deng Lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-17T11:48:31.798Z"
+  "updatedAt": "2026-08-17T12:28:43.218Z"
 }
