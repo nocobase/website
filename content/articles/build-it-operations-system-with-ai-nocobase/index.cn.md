@@ -8,11 +8,17 @@
 
 ![Reddit2-zb0k6t.png](https://static-docs.nocobase.com/Reddit2-zb0k6t.png)
 
-我们在之前的文章《[企业 IT 资产管理系统搭建指南：从需求梳理到落地](https://www.nocobase.com/cn/blog/enterprise-it-asset-management-system-guide)》分享过 IT 资产管理系统的设计思路。由 AI 理解和拆解业务需求，NocoBase 承载数据、权限和自动化等系统能力，再由人结合真实业务逐项检查和调整。**这样既能发挥 AI 在需求理解和系统生成上的效率优势，也能通过 NocoBase 补足企业应用真正需要的数据、权限、安全和****流程等底层****能力。**
+我们在之前的文章《[企业 IT 资产管理系统搭建指南：从需求梳理到落地](https://www.nocobase.com/cn/blog/enterprise-it-asset-management-system-guide)》分享过 IT 资产管理系统的设计思路。由 AI 理解和拆解业务需求，NocoBase 承载数据、权限和自动化等系统能力，再由人结合真实业务逐项检查和调整。**这样既能发挥 AI 在需求理解和系统生成上的效率优势，也能通过 NocoBase 补足企业应用真正需要的数据、权限、安全和流程等底层能力。**
+
+---
+
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个极易扩展的 AI 无代码/低代码开发平台，用于构建企业应用、内部工具和各类系统。它完全支持自托管，基于插件架构设计，开发者友好。→ [欢迎在 GitHub 上了解我们](https://github.com/nocobase/nocobase)
+
+---
 
 这一次我们会在这个思路上更深入一点，也更偏高效率一些。用 AI 和 NocoBase 在两小时左右，从零搭建出一套更完整的 IT 运维系统，覆盖 IT 资产台账、设备领用与归还、服务目录与服务请求、设备审批与交付、维修管理、软件许可证管理、AI 运维助手、运维知识库和数据看板等核心能力，并进一步完善权限、流程和数据联动，让系统可以投入生产环境，并随着业务需求持续迭代。
 
-🚀 在线体验 NocoBase + AI 搭建的应用，查看 AI 搭建的真实效果 ：[https://demo.nocobase.com/new](https://demo.nocobase.com/new)
+🚀 在线体验 NocoBase + AI 搭建的应用，查看 AI 搭建的真实效果：[https://demo.nocobase.com/new](https://demo.nocobase.com/new)
 
 本文截图均源于 NocoBase 在线 Demo，整套系统从设计到实现，都由 AI Coding Agent 完成。
 
@@ -90,7 +96,7 @@ IT 管理员维护资产并完成设备交付。
 
 如何与 AI Agent 更好的协作搭建，可以参考文档：https://docs.nocobase.com/cn/ai-builder/ai-portal/agent-workflow
 
-## 2.完成核心流程的搭建与检查
+## 2. 完成核心流程的搭建与检查
 
 确认前面的业务规则后，就可以让 AI 按照刚才的方案开始创建第一阶段系统。等待系统生成后，从员工申请电脑这条流程开始，逐步确认资产、领用记录、服务请求和设备交付之间是否能够正常衔接。
 
@@ -152,11 +158,11 @@ IT 管理员维护资产并完成设备交付。
 
 ![returned4-nyxmt3.png](https://static-docs.nocobase.com/returned4-nyxmt3.png)
 
-## 3.在核心流程上继续扩展运维能力
+## 3. 在核心流程上继续扩展运维能力
 
 电脑申请和交付流程都跑通之后，系统已经有了资产、服务请求、审批和设备流转等基础数据。接下来，可以把设备维修、软件许可证、AI 辅助和运维手册等后续需求继续交给 AI，让它直接在现有系统上补充修改。完成后，再分别用实际业务检查这些新增能力是否能够正常使用。
 
-> **NocoBase AI 搭建，**让 AI 根据自然语言需求设计、搭建和继续调整企业应用：[https://docs.nocobase.com/cn/ai-builder](https://docs.nocobase.com/cn/ai-builder?utm_source=chatgpt.com)
+> **NocoBase AI 搭建**，让 AI 根据自然语言需求设计、搭建和继续调整企业应用：[https://docs.nocobase.com/cn/ai-builder](https://docs.nocobase.com/cn/ai-builder)
 
 ### 设备坏了——加入维修管理
 
