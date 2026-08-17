@@ -8,7 +8,7 @@
   "description_ja": "AI と NocoBase を使って 2 時間以内に IT 運用システムを構築し、資産、申請、修理、ライセンス、AI アシスタント、ダッシュボードまで整える方法を紹介します。\n",
   "slug": "build-it-operations-system-with-ai-nocobase",
   "publishedAt": "2026-08-16T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-08-17T13:11:47.175Z",
+    "updatedAt": "2026-08-17T13:11:47.190Z",
+    "id": 2660,
+    "title": "20260817-210954",
+    "filename": "20260817-210954-0efpov.jpg",
+    "extname": ".jpg",
+    "size": 166972,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/20260817-210954-0efpov.jpg",
+    "preview": "https://static-docs.nocobase.com/20260817-210954-0efpov.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": true,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-17T12:28:43.218Z"
+  "updatedAt": "2026-08-17T13:12:27.625Z"
 }
