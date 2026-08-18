@@ -98,23 +98,7 @@
     }
   ],
   "category": null,
-  "cover": {
-    "createdAt": "2026-07-17T03:06:15.844Z",
-    "updatedAt": "2026-07-17T03:06:15.851Z",
-    "id": 2637,
-    "title": "2.2-beta",
-    "filename": "2.2-beta-2kf9fd.png",
-    "extname": ".png",
-    "size": 147250,
-    "mimetype": "image/png",
-    "meta": {},
-    "path": "",
-    "url": "https://static-docs.nocobase.com/2.2-beta-2kf9fd.png",
-    "preview": "https://static-docs.nocobase.com/2.2-beta-2kf9fd.png",
-    "storageId": 2,
-    "createdById": 1,
-    "updatedById": 1
-  },
+  "cover": null,
   "hideOnListPage": false,
   "hideOnBlog": false,
   "hideDetailPage": false,
@@ -124,5 +108,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-18T01:53:24.707Z"
+  "updatedAt": "2026-08-18T02:20:42.911Z"
 }
