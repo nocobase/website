@@ -1,13 +1,13 @@
 {
-  "id": 1163,
-  "title": "NocoBase v3.0.0-alpha.7: Support using the standalone Settings application as the default app entry.",
-  "title_cn": "NocoBase v3.0.0-alpha.7：支持将独立设置应用配置为默认应用入口",
-  "title_ja": "NocoBase v3.0.0-alpha.7：独立設定アプリを、デフォルトのアプリケーションエントリとして設定できるようにしました",
-  "description": "Release Note of v3.0.0-alpha.7",
-  "description_cn": "v3.0.0-alpha.7 更新日志",
+  "id": 1159,
+  "title": "NocoBase v3.0.0-alpha.6: Fix unstable test cases",
+  "title_cn": "NocoBase v3.0.0-alpha.6：修复不稳定的测试用例",
+  "title_ja": "NocoBase v3.0.0-alpha.6：不安定だったテストケースを修正しました",
+  "description": "Release Note of v3.0.0-alpha.6",
+  "description_cn": "v3.0.0-alpha.6 更新日志",
   "description_ja": null,
-  "slug": "v3.0.0-alpha.7",
-  "publishedAt": "2026-08-05T16:00:00.000Z",
+  "slug": "v3.0.0-alpha.6",
+  "publishedAt": "2026-08-03T16:00:00.000Z",
   "status": "deleted",
   "tags": [
     {
@@ -32,10 +32,10 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-08-05T22:33:29.211Z",
-        "updatedAt": "2026-08-05T22:33:29.211Z",
+        "createdAt": "2026-08-03T08:00:26.419Z",
+        "updatedAt": "2026-08-03T08:00:26.419Z",
         "tagId": 4,
-        "articleId": 1163
+        "articleId": 1159
       }
     }
   ],
@@ -62,9 +62,9 @@
       "createdById": 9,
       "updatedById": 9,
       "article_sub_tags": {
-        "createdAt": "2026-08-06T03:17:19.471Z",
-        "updatedAt": "2026-08-06T03:17:19.471Z",
-        "articles_id": 1163,
+        "createdAt": "2026-08-04T18:34:14.459Z",
+        "updatedAt": "2026-08-04T18:34:14.459Z",
+        "articles_id": 1159,
         "tags_id": 115
       }
     }
@@ -80,5 +80,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-18T02:57:10.771Z"
+  "updatedAt": "2026-08-18T02:57:13.881Z"
 }

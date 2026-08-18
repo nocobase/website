@@ -1,14 +1,14 @@
 {
   "id": 1155,
-  "title": "NocoBase v3.0.0-alpha.4",
-  "title_cn": "NocoBase v3.0.0-alpha.4",
-  "title_ja": null,
+  "title": "NocoBase v3.0.0-alpha.4: Added UI navigation for supported LLM service CLI commands, including provider preselection when creating a service",
+  "title_cn": "NocoBase v3.0.0-alpha.4：支持从 LLM 服务 CLI 命令跳转到 UI，并在创建服务时预选提供商",
+  "title_ja": "NocoBase v3.0.0-alpha.4：LLM サービスの CLI コマンドから設定 UI を開けるようにし、サービスの新規作成時にはプロバイダーがあらかじめ選択されるようにしました",
   "description": "Release Note of v3.0.0-alpha.4",
   "description_cn": "v3.0.0-alpha.4 更新日志",
   "description_ja": null,
   "slug": "v3.0.0-alpha.4",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-07-30T16:00:00.000Z",
+  "status": "deleted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,17 +39,46 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:50:37.402Z",
+      "updatedAt": "2026-06-24T12:43:08.688Z",
+      "id": 115,
+      "title": "Alpha",
+      "title_cn": null,
+      "sort": 114,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-08-03T04:22:51.896Z",
+        "updatedAt": "2026-08-03T04:22:51.896Z",
+        "articles_id": 1155,
+        "tags_id": 115
+      }
+    }
+  ],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-07-31T14:26:51.774Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-08-18T02:57:22.321Z"
 }
