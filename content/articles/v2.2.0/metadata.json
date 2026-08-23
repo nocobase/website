@@ -1,14 +1,14 @@
 {
   "id": 1185,
-  "title": "NocoBase v2.2.0",
-  "title_cn": "NocoBase v2.2.0",
-  "title_ja": null,
+  "title": "NocoBase v2.2.0: Tabs on pages, subpages and pop-ups support the configuration of linkage rules",
+  "title_cn": "NocoBase v2.2.0：页面、子页面和弹窗的 Tab 支持配置联动规则",
+  "title_ja": "NocoBase v2.2.0：ページ、サブページ、モーダルの Tab に連動ルールを設定できるようにしました",
   "description": "Release Note of v2.2.0",
   "description_cn": "v2.2.0 更新日志",
   "description_ja": null,
   "slug": "v2.2.0",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-08-21T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -43,13 +43,13 @@
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-22T01:42:51.567Z"
+  "updatedAt": "2026-08-23T15:25:30.240Z"
 }

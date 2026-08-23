@@ -1,5 +1,3 @@
-# Building an Inventory Management System: Vibe Coding vs NocoBase + AI
-
 On [Reddit](https://www.reddit.com/r/InventoryManagement/comments/1s8i5lq/quick_help_to_create_a_warehouse_management/) in r/InventoryManagement, someone wanted to use AI to build an inventory management app for a restaurant.
 
 ![reddit1-wcwqye.png](https://static-docs.nocobase.com/reddit1-wcwqye.png)
@@ -61,13 +59,13 @@ From the pages alone, both versions already cover the main functions, including 
 
 In this generated result, **NocoBase + AI had already created operational data tables, pages, and basic business relationships**. Product, supplier, and purchase-order data could be entered and linked normally. After the first round, the system was already relatively close to something that could be used in practice, and the next step was mainly to refine rules and operation details around the real business.
 
-![NocoBase+AI工作台1-rb9q8w.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B01-rb9q8w.png)
+![NocoBase+AI data tables 1en-7j1slk.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B01en-7j1slk.png)
 
-![NocoBase+AI工作台2-g11hpx.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B02-g11hpx.png)
+![NocoBase+AI data tables en-grfhx4.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B02en-grfhx4.png)
 
 The **Vibe Coding version was still closer to a frontend prototype**. Although the pages already presented products, purchasing, receipts and issues, and inventory counting, the data was not yet truly interactive, and some buttons and actions could not complete actual business operations. To reach the same usage state, it would still need data persistence, APIs, business logic, permissions, and other pieces.
 
-![Vibe Coding工作台-cyt740.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%B7%A5%E4%BD%9C%E5%8F%B0-cyt740.png)
+![Vibe Coding data tables en-m1oiop.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%B7%A5%E4%BD%9C%E5%8F%B0en-m1oiop.png)
 
 This difference comes from the starting point of the two approaches.
 
@@ -75,7 +73,7 @@ Vibe Coding starts from a blank project. The database, APIs, pages, and business
 
 NocoBase + AI builds inside an existing application framework. When AI creates products, purchase orders, and inventory records, it can directly use existing capabilities for data relationships, pages, **permissions, and workflows**.
 
-![NocoBase+AI用户-gmtnft.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%94%A8%E6%88%B7-gmtnft.png)
+![NocoBase+AI permissions en-2t23w8.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%94%A8%E6%88%B7en-2t23w8.png)
 
 ## 2. Comparing the Two Inventory Management Systems in Real Business Workflows
 
@@ -97,13 +95,13 @@ This order involves at least four types of records: supplier, purchase order, pu
 
 **NocoBase + AI**
 
-![NocoBase+AI供应商1-t1ivu0.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%861-t1ivu0.png)
+![NocoBase+AI Orders 1en-xvvf5i.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%861en-xvvf5i.png)
 
-![NocoBase+AI供应商2-y4gggt.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%862-y4gggt.png)
+![NocoBase+AI Orders 2en-t7okhv.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%862en-t7okhv.png)
 
 **Vibe Coding**
 
-![Vibe Coding供应商-zkvvpp.png](https://static-docs.nocobase.com/Vibe%20Coding%E4%BE%9B%E5%BA%94%E5%95%86-zkvvpp.png)
+![Vibe Coding Orders en-9095m6.png](https://static-docs.nocobase.com/Vibe%20Coding%E4%BE%9B%E5%BA%94%E5%95%86en-9095m6.png)
 
 When checking an inventory management system, seeing a “Supplier” page and a “Purchase Order” page is not enough.
 
@@ -113,19 +111,19 @@ For example, can you view related products and purchase records from the supplie
 
 **NocoBase + AI**
 
-![NocoBase+AI商品1-7bxt1j.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%811-7bxt1j.png)
+![NocoBase+AI products 1en-icuzi7.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%811en-icuzi7.png)
 
-![NocoBase+AI商品2-z0vu5z.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%812-z0vu5z.png)
+![NocoBase+AI products 2en-ddthi5.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%812en-ddthi5.png)
 
 **Vibe Coding**
 
-![Vibe Coding商品-4eca56.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%95%86%E5%93%81-4eca56.png)
+![Vibe Coding products en-3a614q.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%95%86%E5%93%81en-3a614q.png)
 
 Based on the current generated results, both systems already provide pages for these business objects. In NocoBase + AI, these business objects are built on a unified data model; in the Vibe Coding version, those relationships need to be maintained by the generated database structure and program logic.
 
-![NocoBase+AI数据源1-ug6h10.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%901-ug6h10.png)
+![NocoBase+AI data 1en-06qwhj.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%901en-06qwhj.png)
 
-![NocoBase+AI数据源2-v7ialj.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%902-v7ialj.png)
+![NocoBase+AI data 2en-v44cvh.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%902en-v44cvh.png)
 
 ### Purchase Receiving and Inventory Movement Records
 
@@ -139,13 +137,13 @@ So we focus on three things: **whether inventory is updated correctly, whether a
 
 **NocoBase + AI**
 
-![NocoBase+AI库存流水1-qdkohg.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B41-qdkohg.png)
+![NocoBase+AI inventory 1en-zhvk3s.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B41en-zhvk3s.png)
 
-![NocoBase+AI库存流水2-qcz3bq.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B42-qcz3bq.png)
+![NocoBase+AI inventory 2en-ie601d.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B42en-ie601d.png)
 
 **Vibe Coding**
 
-![Vibe Coding出入库-13flun.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%87%BA%E5%85%A5%E5%BA%93-13flun.png)
+![Vibe Coding inventory en-tme7b7.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%87%BA%E5%85%A5%E5%BA%93en-tme7b7.png)
 
 **An inventory management system cannot store only the latest inventory figure. Receipts, issues, damage, and adjustments all need their own movement records so the source of the current inventory can be traced later.**
 
@@ -163,11 +161,11 @@ If the system also generates replenishment suggestions, it needs to calculate su
 
 **NocoBase + AI**
 
-![NocoBase+AI低库存1-f7765x.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%981-f7765x.png)
+![NocoBase+AI Inventory risk 1en-w09yw1.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%981en-w09yw1.png)
 
-![NocoBase+AI低库存2-8no5ri.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%982-8no5ri.png)
+![NocoBase+AI Inventory risk 2en-8s89lt.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%982en-8s89lt.png)
 
-![NocoBase+AI低库存3-bp9r2c.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%983-bp9r2c.png)
+![NocoBase+AI Inventory risk 3en-nfg8r2.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%983en-nfg8r2.png)
 
 **Inventory risk is not standalone data. It comes from existing information such as current inventory, safety stock, products, and suppliers.**
 
@@ -199,13 +197,13 @@ This kind of requirement is difficult to solve simply by “generating an invent
 
 In the Vibe Coding version, the system needs additional program logic to connect count status, review permissions, inventory updates, and adjustment records. For example, once a review is approved, the program must update inventory and create an adjustment record at the same time. Accounts without review permission must not be able to perform that operation.
 
-![Vibe Coding库存盘点-jgpd1v.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%BA%93%E5%AD%98%E7%9B%98%E7%82%B9-jgpd1v.png)
+![Vibe Coding inventory updates en-hy3vfo.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%BA%93%E5%AD%98%E7%9B%98%E7%82%B9en-hy3vfo.png)
 
 The NocoBase + AI version uses existing data relationships, role permissions, and workflows to handle the same set of rules. After an inventory-count record is submitted, it enters a pending-review status. A reviewer confirms it, then inventory is updated and the corresponding adjustment record is preserved.
 
-![NocoBase+AI盘点单1-pelxbu.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%951-pelxbu.png)
+![NocoBase+AI inventory-count record 1en-tn1rux.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%951en-tn1rux.png)
 
-![NocoBase+AI盘点单2-vmxs6h.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%952-vmxs6h.png)
+![NocoBase+AI inventory-count record 2en-qnvizn.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%952en-qnvizn.png)
 
 ## 3. Vibe Coding or NocoBase + AI: Which Should You Choose?
 
@@ -260,3 +258,20 @@ If you also want to see what a system built with NocoBase + AI looks like in pra
 
 - **Try the NocoBase + AI Demo:** [Request an online demo](https://demo.nocobase.com/new)
 - **Build it yourself:** [View the AI Builder documentation](https://docs.nocobase.com/ai-builder)
+
+
+**Related reading**:
+
+* **[How to Build a Production-Ready IT Operations System with AI and NocoBase](https://www.nocobase.com/en/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow: Flexible Databases vs Enterprise Systems](https://www.nocobase.com/en/blog/nocobase-vs-baserow)**
+* **[How to Build a Production-Ready CRM with AI and NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[How to Design an IT Asset Management System: Data Model, Lifecycle, and Workflows](https://www.nocobase.com/en/blog/enterprise-it-asset-management-system-guide)**
+* **[How to Choose a Smartsheet Alternative: 7 Tools Compared](https://www.nocobase.com/en/blog/best-smartsheet-alternatives)**
+* **[5 Open-Source AI No-Code Tools for Complex Relational Data Models](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[What Is AI No-Code? A Practical Guide to No-Code Platforms in the AI Era](https://www.nocobase.com/en/blog/what-is-ai-no-code)**
+* **[9 Open-Source AI No-Code Tools on GitHub Worth Watching](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-github-9)**
+* **[14 Open Source AI Agent Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16)**
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**
+* **[Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)**
+* **[5 Open-Source Internal Tools to Use with Hermes Agent](https://www.nocobase.com/en/blog/open-source-internal-tools-self-hosted-ai-agent-hermes)**

@@ -1,5 +1,3 @@
-# 在庫管理システム構築比較：Vibe Coding vs NocoBase + AI
-
 [Reddit](https://www.reddit.com/r/InventoryManagement/comments/1s8i5lq/quick_help_to_create_a_warehouse_management/) の r/InventoryManagement で、あるユーザーがレストラン向けの在庫管理アプリを AI で作ろうとしていました。
 
 ![reddit1-wcwqye.png](https://static-docs.nocobase.com/reddit1-wcwqye.png)
@@ -61,13 +59,13 @@ AI に渡した要件には、比較的まとまった在庫業務が含まれ�
 
 今回の生成結果では、**NocoBase + AI は実際に操作できるデータテーブル、ページ、基本的な業務関係まで生成できていました**。商品、仕入先、発注書などのデータを正常に入力・関連付けでき、1 回目の生成後でも実運用にかなり近い状態でした。その後は、実際の業務に合わせてルールや操作の細部を調整していくことが中心になります。
 
-![NocoBase+AI工作台1-rb9q8w.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B01-rb9q8w.png)
+![NocoBase+AI data tables 1en-7j1slk.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B01en-7j1slk.png)
 
-![NocoBase+AI工作台2-g11hpx.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B02-g11hpx.png)
+![NocoBase+AI data tables en-grfhx4.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%B7%A5%E4%BD%9C%E5%8F%B02en-grfhx4.png)
 
 一方、**Vibe Coding 版は現時点ではフロントエンドのプロトタイプに近い状態でした**。商品、購買、入出庫、棚卸しなどの画面は表示されていますが、データ同士はまだ実際には連動しておらず、一部のボタンや操作も業務処理を完了できません。同じ利用状態まで持っていくには、データ保存、API、業務ロジック、権限などをさらに追加する必要があります。
 
-![Vibe Coding工作台-cyt740.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%B7%A5%E4%BD%9C%E5%8F%B0-cyt740.png)
+![Vibe Coding data tables en-m1oiop.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%B7%A5%E4%BD%9C%E5%8F%B0en-m1oiop.png)
 
 この違いは、2 つの方法の出発点に関係しています。
 
@@ -75,7 +73,7 @@ Vibe Coding は空のプロジェクトから始まり、データベース、AP
 
 NocoBase + AI は、既存のアプリケーション基盤上で構築します。AI が商品、発注書、在庫記録を作成するとき、データ関係、ページ、**権限、ワークフロー**といった既存機能を直接利用できます。
 
-![NocoBase+AI用户-gmtnft.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%94%A8%E6%88%B7-gmtnft.png)
+![NocoBase+AI permissions en-2t23w8.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%94%A8%E6%88%B7en-2t23w8.png)
 
 ## 2. 2 つの在庫管理システムを実際の業務で比較する
 
@@ -97,13 +95,13 @@ NocoBase + AI は、既存のアプリケーション基盤上で構築します
 
 **NocoBase + AI**
 
-![NocoBase+AI供应商1-t1ivu0.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%861-t1ivu0.png)
+![NocoBase+AI Orders 1en-xvvf5i.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%861en-xvvf5i.png)
 
-![NocoBase+AI供应商2-y4gggt.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%862-y4gggt.png)
+![NocoBase+AI Orders 2en-t7okhv.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BE%9B%E5%BA%94%E5%95%862en-t7okhv.png)
 
 **Vibe Coding**
 
-![Vibe Coding供应商-zkvvpp.png](https://static-docs.nocobase.com/Vibe%20Coding%E4%BE%9B%E5%BA%94%E5%95%86-zkvvpp.png)
+![Vibe Coding Orders en-9095m6.png](https://static-docs.nocobase.com/Vibe%20Coding%E4%BE%9B%E5%BA%94%E5%95%86en-9095m6.png)
 
 在庫管理システムを確認するとき、「仕入先ページ」と「発注書ページ」があるだけでは十分ではありません。
 
@@ -113,19 +111,19 @@ NocoBase + AI は、既存のアプリケーション基盤上で構築します
 
 **NocoBase + AI**
 
-![NocoBase+AI商品1-7bxt1j.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%811-7bxt1j.png)
+![NocoBase+AI products 1en-icuzi7.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%811en-icuzi7.png)
 
-![NocoBase+AI商品2-z0vu5z.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%812-z0vu5z.png)
+![NocoBase+AI products 2en-ddthi5.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%95%86%E5%93%812en-ddthi5.png)
 
 **Vibe Coding**
 
-![Vibe Coding商品-4eca56.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%95%86%E5%93%81-4eca56.png)
+![Vibe Coding products en-3a614q.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%95%86%E5%93%81en-3a614q.png)
 
 現在の生成結果を見る限り、どちらのシステムにもこれらの業務オブジェクトに対応するページがあります。NocoBase + AI では、これらの業務オブジェクトが統一されたデータモデル上に構築されています。Vibe Coding では、生成されたデータベース構造とプログラムロジックによって、それぞれの関係を維持する必要があります。
 
-![NocoBase+AI数据源1-ug6h10.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%901-ug6h10.png)
+![NocoBase+AI data 1en-06qwhj.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%901en-06qwhj.png)
 
-![NocoBase+AI数据源2-v7ialj.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%902-v7ialj.png)
+![NocoBase+AI data 2en-v44cvh.png](https://static-docs.nocobase.com/NocoBase%2BAI%E6%95%B0%E6%8D%AE%E6%BA%902en-v44cvh.png)
 
 ### 仕入れ入庫と在庫履歴
 
@@ -139,13 +137,13 @@ NocoBase + AI は、既存のアプリケーション基盤上で構築します
 
 **NocoBase + AI**
 
-![NocoBase+AI库存流水1-qdkohg.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B41-qdkohg.png)
+![NocoBase+AI inventory 1en-zhvk3s.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B41en-zhvk3s.png)
 
-![NocoBase+AI库存流水2-qcz3bq.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B42-qcz3bq.png)
+![NocoBase+AI inventory 2en-ie601d.png](https://static-docs.nocobase.com/NocoBase%2BAI%E5%BA%93%E5%AD%98%E6%B5%81%E6%B0%B42en-ie601d.png)
 
 **Vibe Coding**
 
-![Vibe Coding出入库-13flun.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%87%BA%E5%85%A5%E5%BA%93-13flun.png)
+![Vibe Coding inventory en-tme7b7.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%87%BA%E5%85%A5%E5%BA%93en-tme7b7.png)
 
 **在庫管理システムでは、最終的な在庫数だけを保存するのでは不十分です。入庫、出庫、破損、調整ごとに変動履歴を残しておくことで、後から現在庫の根拠を追跡できます。**
 
@@ -163,11 +161,11 @@ NocoBase + AI は、既存のアプリケーション基盤上で構築します
 
 **NocoBase + AI**
 
-![NocoBase+AI低库存1-f7765x.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%981-f7765x.png)
+![NocoBase+AI Inventory risk 1en-w09yw1.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%981en-w09yw1.png)
 
-![NocoBase+AI低库存2-8no5ri.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%982-8no5ri.png)
+![NocoBase+AI Inventory risk 2en-8s89lt.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%982en-8s89lt.png)
 
-![NocoBase+AI低库存3-bp9r2c.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%983-bp9r2c.png)
+![NocoBase+AI Inventory risk 3en-nfg8r2.png](https://static-docs.nocobase.com/NocoBase%2BAI%E4%BD%8E%E5%BA%93%E5%AD%983en-nfg8r2.png)
 
 **在庫リスクは独立したデータではありません。現在庫、安全在庫、商品、仕入先など、既存データから導き出される結果です。**
 
@@ -199,13 +197,13 @@ NocoBase + AI は、既存のアプリケーション基盤上で構築します
 
 Vibe Coding 版では、棚卸しステータス、確認権限、在庫更新、調整履歴の間をつなぐロジックを追加で実装する必要があります。例えば確認が承認された後、プログラム側で在庫を変更すると同時に調整履歴も作成し、確認権限を持たないアカウントではこの操作を実行できないようにする必要があります。
 
-![Vibe Coding库存盘点-jgpd1v.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%BA%93%E5%AD%98%E7%9B%98%E7%82%B9-jgpd1v.png)
+![Vibe Coding inventory updates en-hy3vfo.png](https://static-docs.nocobase.com/Vibe%20Coding%E5%BA%93%E5%AD%98%E7%9B%98%E7%82%B9en-hy3vfo.png)
 
 NocoBase + AI 版では、既存のデータ関係、ロール権限、ワークフローを使ってこの一連のルールを処理します。棚卸し記録を提出すると「確認待ち」になり、確認担当者が承認した後で在庫を更新し、対応する調整履歴を保存します。
 
-![NocoBase+AI盘点单1-pelxbu.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%951-pelxbu.png)
+![NocoBase+AI inventory-count record 1en-tn1rux.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%951en-tn1rux.png)
 
-![NocoBase+AI盘点单2-vmxs6h.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%952-vmxs6h.png)
+![NocoBase+AI inventory-count record 2en-qnvizn.png](https://static-docs.nocobase.com/NocoBase%2BAI%E7%9B%98%E7%82%B9%E5%8D%952en-qnvizn.png)
 
 ## 3. Vibe Coding と NocoBase + AI、どちらを選ぶべきか
 
@@ -260,3 +258,19 @@ NocoBase + AI で構築したシステムを実際に見てみたい場合は、
 
 - **NocoBase + AI Demo を体験：** [オンライン Demo を申し込む](https://demo.nocobase.com/new)
 - **自分で構築する：** [AI Builder ドキュメントを見る](https://docs.nocobase.com/ja/ai-builder)
+
+
+**関連記事**：
+
+* **[AI と NocoBase で 2 時間以内に企業 IT 運用システムを構築する方法](https://www.nocobase.com/ja/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow：柔軟なデータベースとエンタープライズ業務システム](https://www.nocobase.com/ja/blog/nocobase-vs-baserow)**
+* **[AI と NocoBase で本番運用できる CRM を構築する方法](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[企業向け IT 資産管理システム構築ガイド：要件整理から導入まで](https://www.nocobase.com/ja/blog/enterprise-it-asset-management-system-guide)**
+* **[プロジェクト管理と業務フローに使える Smartsheet 代替ツール 7 選](https://www.nocobase.com/ja/blog/best-smartsheet-alternatives)**
+* **[複雑なリレーションモデルに適したオープンソース AI ノーコードツール 5 選](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[AI ノーコードとは？AI 時代のノーコードプラットフォーム実用ガイド](https://www.nocobase.com/ja/blog/what-is-ai-no-code)**
+* **[GitHub で注目したい 9 つのオープンソース AI ノーコードツール](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub で注目したい14のオープンソース AI Agent ツール](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub Stars が多い 8 つのオープンソース AI Assistant ツール](https://www.nocobase.com/ja/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 つの WorkBuddy と組み合わせて使いやすいオープンソースツール](https://www.nocobase.com/ja/blog/workbuddy-open-source-tools)**
+* **[GitHub Stars 上位のオープンソース AI ツール 6 選](https://www.nocobase.com/ja/blog/6-github-top-open-source-ai-tools-for-ai-agents)**

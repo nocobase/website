@@ -8,11 +8,56 @@
   "description_ja": "純粋な AI と NocoBase + AI による在庫管理システム構築を比較し、購買、入庫、棚卸し、権限、業務ルール、保守性の違いを整理します。\n",
   "slug": "building-inventory-management-system-vibe-coding-vs-nocobase-ai",
   "publishedAt": "2026-08-22T16:00:00.000Z",
-  "status": "drafted",
-  "tags": [],
+  "status": "published",
+  "tags": [
+    {
+      "createdAt": "2024-07-09T12:38:10.829Z",
+      "updatedAt": "2026-08-11T10:11:36.038Z",
+      "id": 19,
+      "title": "AI & No-Code",
+      "title_cn": "AI 与无代码",
+      "sort": 19,
+      "description": "Explore AI, no-code, and open-source tools, platforms, guides, and practical insights for building modern business applications.",
+      "description_cn": "探索 AI、无代码与开源工具、平台和实践指南，了解如何更高效地构建现代业务应用。",
+      "displayOnPage": true,
+      "slug": "nocode-news",
+      "displayOnBlog": true,
+      "keywords": "AI, No-Code, Open Source, AI Tools, Business Applications",
+      "keywords_cn": "AI, 无代码, 开源工具, AI 工具, 业务应用",
+      "title_ja": "AI & ノーコード",
+      "description_ja": "AI、ノーコード、オープンソースのツールやプラットフォーム、実践ガイドを通じて、モダンなビジネスアプリケーションの構築方法を紹介します。",
+      "keywords_ja": "AI, ノーコード, オープンソース, AIツール, ビジネスアプリケーション",
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 1,
+      "updatedById": 1,
+      "articlesTags": {
+        "createdAt": "2026-08-23T15:50:34.349Z",
+        "updatedAt": "2026-08-23T15:50:34.349Z",
+        "tagId": 19,
+        "articleId": 1184
+      }
+    }
+  ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-08-23T15:30:26.215Z",
+    "updatedAt": "2026-08-23T15:30:26.226Z",
+    "id": 2683,
+    "title": "20260823-223651",
+    "filename": "20260823-223651-gvotnv.jpg",
+    "extname": ".jpg",
+    "size": 135713,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/20260823-223651-gvotnv.jpg",
+    "preview": "https://static-docs.nocobase.com/20260823-223651-gvotnv.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -21,6 +66,6 @@
   "author": "Yuan Tianqi, Deng Lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-08-23T14:56:13.954Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-08-23T15:51:41.657Z"
 }
