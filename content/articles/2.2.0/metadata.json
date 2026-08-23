@@ -2,13 +2,13 @@
   "id": 1178,
   "title": "Announcing NocoBase 2.2",
   "title_cn": "NocoBase 2.2 发布",
-  "title_ja": null,
-  "description": null,
-  "description_cn": null,
-  "description_ja": null,
+  "title_ja": "NocoBase 2.2 をリリース",
+  "description": "NocoBase 2.2 further completes the V2 experience with a standalone, lightweight /v/ frontend and an all-new mobile experience. It also upgrades file access and permission controls while expanding V2 support across comments, AI knowledge bases, workflows, and core plugins.",
+  "description_cn": "NocoBase 2.2 正式版进一步完善 V2 的完整使用路径，带来独立、轻量的 /v/ 前端入口与全新移动端体验。同时升级文件访问与权限机制，并增强评论区块、AI 知识库、工作流及核心插件的 V2 支持。",
+  "description_ja": "NocoBase 2.2 正式版では、独立した軽量な /v/ フロントエンドと新しいモバイル体験により、V2 の利用環境がさらに充実しました。また、ファイルアクセスと権限管理の仕組みを刷新し、コメント、AI ナレッジベース、ワークフロー、主要プラグインの V2 対応も拡充しています。",
   "slug": "2.2.0",
-  "publishedAt": "2026-08-18T01:51:52.000Z",
-  "status": "drafted",
+  "publishedAt": "2026-08-23T14:37:56.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -98,7 +98,23 @@
     }
   ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-08-23T14:37:20.306Z",
+    "updatedAt": "2026-08-23T14:37:20.315Z",
+    "id": 2661,
+    "title": "2.2",
+    "filename": "2.2-hygy1r.png",
+    "extname": ".png",
+    "size": 139309,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/2.2-hygy1r.png",
+    "preview": "https://static-docs.nocobase.com/2.2-hygy1r.png",
+    "storageId": 2,
+    "createdById": 1,
+    "updatedById": 1
+  },
   "hideOnListPage": false,
   "hideOnBlog": false,
   "hideDetailPage": false,
@@ -107,6 +123,6 @@
   "author": "NocoBase team",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-08-18T09:01:21.606Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-08-23T14:38:02.235Z"
 }

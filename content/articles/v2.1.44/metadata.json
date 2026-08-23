@@ -1,14 +1,14 @@
 {
   "id": 1183,
-  "title": "NocoBase v2.1.44",
-  "title_cn": "NocoBase v2.1.44",
-  "title_ja": null,
+  "title": "NocoBase v2.1.44: Added search to space switchers and space management in both v1 and v2",
+  "title_cn": "NocoBase v2.1.44：v1 和 v2 的空间切换器及空间管理新增搜索功能",
+  "title_ja": "NocoBase v2.1.44：v1 と v2 のスペース切り替えおよびスペース管理で検索できるようにしました",
   "description": "Release Note of v2.1.44",
   "description_cn": "v2.1.44 更新日志",
   "description_ja": null,
   "slug": "v2.1.44",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-08-20T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,17 +39,46 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2026-06-24T12:43:08.690Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-08-23T14:06:17.602Z",
+        "updatedAt": "2026-08-23T14:06:17.602Z",
+        "articles_id": 1183,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-20T23:47:29.227Z"
+  "updatedAt": "2026-08-23T14:06:17.587Z"
 }
