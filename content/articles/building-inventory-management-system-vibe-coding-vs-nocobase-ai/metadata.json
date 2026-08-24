@@ -61,11 +61,11 @@
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
-  "about": null,
-  "mentions": null,
+  "about": "NocoBase\nVibe Coding\nInventory Management Systems\nAI-assisted Application Development",
+  "mentions": "Reddit\nReact\nVue.js\nNext.js",
   "author": "Yuan Tianqi, Deng Lijia",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-23T15:51:41.657Z"
+  "updatedAt": "2026-08-24T11:32:06.021Z"
 }

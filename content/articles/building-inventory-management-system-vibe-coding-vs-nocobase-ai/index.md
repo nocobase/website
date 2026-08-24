@@ -209,6 +209,18 @@ The NocoBase + AI version uses existing data relationships, role permissions, an
 
 After comparing purchasing, receiving, inventory risks, inventory counting, and the resulting features, the difference between the two approaches becomes more visible.
 
+
+
+|        **Comparison**        | **Vibe Coding**                                                                                            | **NocoBase + AI**                                                                                                                    |
+| :--------------------------: | :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+|   **First-Round Results**   | In this test, it was closer to a frontend prototype and still required additional data and business logic. | In this test, it was already able to enter, link, and operate business data.                                                         |
+|        **Data Model**        | Database structures, APIs, and data relationships need to be implemented within the project.               | Relationships between products, purchasing, inventory, and other business objects are built directly on a unified data model.        |
+| **Permissions & Data Scope** | Permission logic needs to be developed and tested according to business rules.                             | Roles, operation permissions, and data scopes can be configured directly.                                                            |
+|    **Business Processes**    | Status transitions, approvals, and automation require further development.                                 | Can be configured and adjusted directly through workflows.                                                                           |
+|   **Requirement Changes**   | Changes may affect databases, APIs, pages, validation logic, and testing at the same time.                 | Changes mainly focus on data models, pages, permissions, and workflows.                                                              |
+|    **Extension Approach**    | Extend and modify the system directly through code.                                                        | Can be extended through configuration, while still supporting JS, plugins, and custom code when needed.                              |
+|    **Future Maintenance**    | More dependent on developers and a complete codebase.                                                      | Many business adjustments can continue to be handled through configuration, while complex requirements can move into the code layer. |
+
 ### When Is NocoBase + AI a Better Fit?
 
 If you are building an internal business system for inventory management, procurement, CRM, or IT management, NocoBase + AI is generally a better fit.
@@ -258,7 +270,6 @@ If you also want to see what a system built with NocoBase + AI looks like in pra
 
 - **Try the NocoBase + AI Demo:** [Request an online demo](https://demo.nocobase.com/new)
 - **Build it yourself:** [View the AI Builder documentation](https://docs.nocobase.com/ai-builder)
-
 
 **Related reading**:
 
