@@ -1,0 +1,22 @@
+{
+  "createdAt": "2026-08-25T08:44:37.617Z",
+  "updatedAt": "2026-08-25T08:44:37.617Z",
+  "createdById": 9,
+  "description": "portal taxonomy page self-test",
+  "description_cn": null,
+  "description_ja": null,
+  "displayOnAiBlueprint": false,
+  "displayOnAiBlueprintPage": false,
+  "displayOnBlog": false,
+  "displayOnPage": false,
+  "id": 268,
+  "keywords": null,
+  "keywords_cn": null,
+  "keywords_ja": null,
+  "slug": "__portal-tax-test-4a6608c6",
+  "sort": 266,
+  "title": "__portal-tax-test-4a6608c6",
+  "title_cn": "测试标签",
+  "title_ja": "テストタグ",
+  "updatedById": 9
+}
