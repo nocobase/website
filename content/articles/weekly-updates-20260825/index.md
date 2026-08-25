@@ -4,6 +4,10 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![version.png](https://static-docs.nocobase.com/ba5f04e27e99c625cb3822da5df07860.png)
 
+* `main`: The most stable version to date, recommended for installation.
+* `next`: Beta version, contains upcoming new features and has been preliminarily tested. There might be some known or unknown issues. It is mainly used to collect feedback from test users and further optimize features. Ideal for test users who want to experience new features early and provide feedback.
+* `develop`: Alpha version, contains the latest feature code, may be incomplete or unstable, and is mainly used for internal development and rapid iteration. Suited for technical users interested in cutting-edge product capabilities, but not recommended for production use.
+
 ## main
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
@@ -15,7 +19,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 ### 🐛 Bug Fixes
 
 - **[UI layout]** Fix the issue where desktop routes may be empty after upgrading ([#10405](https://github.com/nocobase/nocobase/pull/10405)) by @zhangzhonghe
-- **[Action: Export records Pro]** Fix a crash when changing and drag-sorting Pro export fields. by @katherinehhh
+- **[Action: Export records Pro]** Fix a crash when changing and drag-sorting Pro export fields. By @katherinehhh
 
 ### v2.2.0
 
@@ -30,7 +34,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Add an environment variable to configure legacy and modern route entry modes. ([#9891](https://github.com/nocobase/nocobase/pull/9891)) by @Molunerfinn
 - **[undefined]**
 
-  - Added configurable App and Portal entries for the V2 action panel and app switcher. by @katherinehhh
+  - Added configurable App and Portal entries for the V2 action panel and app switcher. By @katherinehhh
   - Add Multi-Portal plugin by @zhangzhonghe
 - **[AI employees]**
 
@@ -56,20 +60,20 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
   - Added workflow database transaction scope support. ([#9742](https://github.com/nocobase/nocobase/pull/9742)) by @mytharcher
     Reference: [Database Transaction](docs/docs/en/workflow/nodes/transaction.md)
-  - Migrate the Workflow settings page to the v2 client and share a reusable draggable category-tabs component via `@nocobase/client-v2`. ([#9645](https://github.com/nocobase/nocobase/pull/9645)) by @Molunerfinn
+  - Migrate the Workflow settings page to the v2 client and share a reusable draggable category-tabs component via `@NocoBase/client-v2`. ([#9645](https://github.com/nocobase/nocobase/pull/9645)) by @Molunerfinn
 - **[Multi-space]**
 
-  - Added default-space configuration so newly created users automatically join the selected default space. by @jiannx
+  - Added default-space configuration so newly created users automatically join the selected default space. By @jiannx
   - Added debounced display-name search to space switchers and space management in both v1 and v2 by @jiannx
 - **[AI: Knowledge base]**
 
-  - Added UI navigation for creating and editing vector databases from CLI commands, with provider preselection for new databases. by @cgyrock
-  - Added role-based read-only and read/write permissions for knowledge-base management, including creator ownership and read-only management views. by @cgyrock
+  - Added UI navigation for creating and editing vector databases from CLI commands, with provider preselection for new databases. By @cgyrock
+  - Added role-based read-only and read/write permissions for knowledge-base management, including creator ownership and read-only management views. By @cgyrock
 - **[Workflow: Database transaction node]**
 
-  - Added the database transaction workflow node plugin. by @mytharcher
-  - Added a client-v2 implementation for the workflow database transaction node while preserving the legacy client entry. by @katherinehhh
-- **[Record history]** Added client v2 support for the record history plugin. by @jiannx
+  - Added the database transaction workflow node plugin. By @mytharcher
+  - Added a client-v2 implementation for the workflow database transaction node while preserving the legacy client entry. By @katherinehhh
+- **[Record history]** Added client v2 support for the record history plugin. By @jiannx
 - **[Workflow: Approval]**
 
   - Added usage instructions and card-style workflow selection to the approval initiation list in client v2 by @mytharcher
@@ -77,9 +81,9 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Add approval initiation and todo blocks for v2 pages by @zhangzhonghe
 - **[Email manager]**
 
-  - Email synchronization now uses recoverable background jobs with status history and safer full-resync cleanup, including Gmail Spam and Trash. by @jiannx
-  - Migrated the email manager client to v2. by @jiannx
-- **[Auth: LDAP]** Add LDAP user synchronization configuration support for client v2. by @chenzhizdt
+  - Email synchronization now uses recoverable background jobs with status history and safer full-resync cleanup, including Gmail Spam and Trash. By @jiannx
+  - Migrated the email manager client to v2. By @jiannx
+- **[Auth: LDAP]** Add LDAP user synchronization configuration support for client v2. By @chenzhizdt
 
 ### 🚀 Improvements
 
@@ -161,27 +165,27 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
   - Aligned the vector database list styling with other settings tables by @cgyrock
   - Vector database and embedding settings can now be configured directly for each AI knowledge base by @cgyrock
-  - Migrated the AI knowledge base settings pages to the v2 client and fixed layout and loading issues in knowledge base and vector store pages. by @cgyrock
-- **[HTTP request encryption]** Added v2 client support for HTTP request encryption so query parameters continue to be encrypted in the v2 client. by @jiannx
-- **[Workflow: Database transaction node]** Improved the v2 workflow database transaction node layout so branch labels and the commit marker have better spacing. by @katherinehhh
+  - Migrated the AI knowledge base settings pages to the v2 client and fixed layout and loading issues in knowledge base and vector store pages. By @cgyrock
+- **[HTTP request encryption]** Added v2 client support for HTTP request encryption so query parameters continue to be encrypted in the v2 client. By @jiannx
+- **[Workflow: Database transaction node]** Improved the v2 workflow database transaction node layout so branch labels and the commit marker have better spacing. By @katherinehhh
 - **[Workflow: Subflow]** Change pending queue strategy based on workflow engine refactored by @mytharcher
 - **[File storage: S3(Pro)]**
 
-  - S3 Pro uploads now return the created file record with permanent file URLs. by @mytharcher
+  - S3 Pro uploads now return the created file record with permanent file URLs. By @mytharcher
   - Added independent S3 Pro settings for original URLs, public file URL access, and unsigned URLs by @mytharcher
 - **[Workflow: Approval]**
 
-  - Updated approval task grouping and timelines in the new client to match the legacy experience. by @mytharcher
+  - Updated approval task grouping and timelines in the new client to match the legacy experience. By @mytharcher
   - Approval application and todo tasks can now be filtered by workflow with per-workflow pending counts by @mytharcher
 - **[Email manager]**
 
-  - Moved the department-based mail viewing option to the V1 general mail settings page, prevented service credential saves from overwriting it, and placed V2 General settings before Service provider settings. by @jiannx
-  - Moved the department-based mail viewing option to the general mail settings page. by @jiannx
-- **[App supervisor]** Hid the standalone V2 Applications block while keeping its settings page available internally. by @katherinehhh
+  - Moved the department-based mail viewing option to the V1 general mail settings page, prevented service credential saves from overwriting it, and placed V2 General settings before Service provider settings. By @jiannx
+  - Moved the department-based mail viewing option to the general mail settings page. By @jiannx
+- **[App supervisor]** Hid the standalone V2 Applications block while keeping its settings page available internally. By @katherinehhh
 - **[WeCom]** Added modern UI support for WeCom authentication, sync, and notification settings by @2013xile
 - **[DingTalk]**
 
-  - Complete DingTalk client v2 support, including Stream synchronization, notification configuration, and automatic login improvements. by @chenzhizdt
+  - Complete DingTalk client v2 support, including Stream synchronization, notification configuration, and automatic login improvements. By @chenzhizdt
   - Added modern UI support for DingTalk authentication, sync, and notification settings by @2013xile
 
 ### 🐛 Bug Fixes
@@ -304,35 +308,35 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Workflow: JavaScript]** Fixed JavaScript workflow node registration failure in the legacy workflow client. ([#9826](https://github.com/nocobase/nocobase/pull/9826)) by @jiannx
 - **[Workflow: Response message]** Migrated the workflow response message node to the v2 canvas and fixed unsupported workflow types being able to add it. ([#9830](https://github.com/nocobase/nocobase/pull/9830)) by @jiannx
 - **[API documentation]** Fixed the API documentation package declaration build failure. ([#9752](https://github.com/nocobase/nocobase/pull/9752)) by @katherinehhh
-- **[AI: Knowledge base]** Added an overwrite option for AI knowledge base workflow document creation, allowing workflows to replace existing documents with the same key. by @cgyrock
-- **[Data source: External PostgreSQL]** Automatically load collections when editing an external relational data source in client v2. by @katherinehhh
+- **[AI: Knowledge base]** Added an overwrite option for AI knowledge base workflow document creation, allowing workflows to replace existing documents with the same key. By @cgyrock
+- **[Data source: External PostgreSQL]** Automatically load collections when editing an external relational data source in client v2. By @katherinehhh
 - **[plugin-service-platform]**
 
-  - Restored licensed plugin downloads from the service platform. by @jiannx
-  - Disabled the service platform plugin download endpoint. by @jiannx
-- **[Verification: TOTP authenticator]** Fixed TOTP authenticator bindings so temporary setup secrets are removed and previously verified codes cannot be reused. by @jiannx
+  - Restored licensed plugin downloads from the service platform. By @jiannx
+  - Disabled the service platform plugin download endpoint. By @jiannx
+- **[Verification: TOTP authenticator]** Fixed TOTP authenticator bindings so temporary setup secrets are removed and previously verified codes cannot be reused. By @jiannx
 - **[Data source: External NocoBase]** Fixed file preview, permanent URL handling, and upload routing for external NocoBase file collections, including S3 Pro uploads by @mytharcher
-- **[Multi-space]** Fixed authentication recovery requests being blocked by stale multi-space headers. by @jiannx
+- **[Multi-space]** Fixed authentication recovery requests being blocked by stale multi-space headers. By @jiannx
 - **[Auth: SAML 2.0]** Fixed SAML automatic sign-in redirects for unauthenticated users in the modern client while preserving the original destination path by @jiannx
 - **[App SSO]** Fixed incorrect App SSO redirects in v2 sub applications by @2013xile
-- **[Workflow: Subflow]** Fixed workflow title search in the subflow node configuration selector. by @mytharcher
+- **[Workflow: Subflow]** Fixed workflow title search in the subflow node configuration selector. By @mytharcher
 - **[Migration manager]**
 
-  - Fixed duplicate migration creation on repeated submission and improved v2 migration log and process drawer display. by @katherinehhh
-  - Improve v2 migration error feedback, prevent duplicate migration rule names, and fix environment check modal overflow. by @katherinehhh
+  - Fixed duplicate migration creation on repeated submission and improved v2 migration log and process drawer display. By @katherinehhh
+  - Improve v2 migration error feedback, prevent duplicate migration rule names, and fix environment check modal overflow. By @katherinehhh
 - **[Auth: OIDC]** Fixed OIDC automatic login redirects in production builds and retained the original modern-client path after login by @jiannx
 - **[Workflow: Approval]**
 
-  - Invalid approval workflows in the new to-do center are now disabled and display a configuration warning. by @mytharcher
+  - Invalid approval workflows in the new to-do center are now disabled and display a configuration warning. By @mytharcher
   - Fixed related approval blocks failing to load on Client V2 record detail pages by @mytharcher
   - Fix workflow form action buttons responding in configuration dialogs by @zhangzhonghe
   - Fix Approval blocks not refreshing after withdrawal or return by @zhangzhonghe
   - Guide users to V1 pages when approval interfaces cannot be used in V2 by @zhangzhonghe
   - Fix blank approval forms and missing or incorrect action buttons by @zhangzhonghe
   - Allow users to view approval interfaces and cards after a workflow has been executed by @zhangzhonghe
-  - Fixed premature applicant validation and untranslated role labels in the approval workflow manual execution dialog. by @Molunerfinn
+  - Fixed premature applicant validation and untranslated role labels in the approval workflow manual execution dialog. By @Molunerfinn
   - Fix the error when configuring approval workflow conditions by @zhangzhonghe
-  - Fix the approval workflow task title remaining editable in executed workflow configurations after production builds. by @Molunerfinn
+  - Fix the approval workflow task title remaining editable in executed workflow configurations after production builds. By @Molunerfinn
   - Close the Apply new drawer when opening an approval form by @zhangzhonghe
   - Fix empty approval interfaces and fixed assignee IDs by @zhangzhonghe
   - Fix the error when opening CC node settings by @zhangzhonghe
@@ -345,12 +349,12 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fix display and action issues in approval initiator interfaces by @zhangzhonghe
   - Fix the issue where approval tables appear in the block data source list by @zhangzhonghe
   - Fix an error that could prevent V2 pages from opening when approval and notification plugins are enabled by @zhangzhonghe
-- **[Collection field: Signature]** Fix client-v2 signature field file collection selector localization and option filtering. by @katherinehhh
-- **[Audit logs]** Fixed raw translation expressions appearing in the client V2 audit log Role column. by @katherinehhh
+- **[Collection field: Signature]** Fix client-v2 signature field file collection selector localization and option filtering. By @katherinehhh
+- **[Audit logs]** Fixed raw translation expressions appearing in the client V2 audit log Role column. By @katherinehhh
 - **[App supervisor]** Fixed app visit links losing the v2 path in sub applications by @2013xile
 - **[WeCom]**
 
-  - Fixed WeCom notification channels not saving the selected authenticator. by @jiannx
+  - Fixed WeCom notification channels not saving the selected authenticator. By @jiannx
   - Fixed a blank flash when switching route menu items with the WeCom plugin enabled in Client V2 by @2013xile
 - **[DingTalk]** Fixed DingTalk notification channels losing the selected authenticator when saved from the v2 channel form by @jiannx
 
@@ -364,7 +368,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### 🐛 Bug Fixes
 
-- **[DingTalk]** Fixed DingTalk internal auto-login retaining the previous user's session after switching accounts. by @chenzhizdt
+- **[DingTalk]** Fixed DingTalk internal auto-login retaining the previous user's session after switching accounts. By @chenzhizdt
 
 ### v2.1.43
 
@@ -413,7 +417,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 - **[UI layout]** Fix the issue where desktop routes may be empty after upgrading ([#10405](https://github.com/nocobase/nocobase/pull/10405)) by @zhangzhonghe
 - **[Workflow]** Fixed workflow task center menus so the active menu can be collapsed by clicking it again while retaining its selected highlight ([#10404](https://github.com/nocobase/nocobase/pull/10404)) by @mytharcher
-- **[Action: Export records Pro]** Fix a crash when changing and drag-sorting Pro export fields. by @katherinehhh
+- **[Action: Export records Pro]** Fix a crash when changing and drag-sorting Pro export fields. By @katherinehhh
 
 ### v2.2.0-beta.18
 
@@ -426,8 +430,8 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
   - Added search to space switchers and space management in both v1 and v2 by @jiannx
   - Added debounced display-name search to space switchers and space management in both v1 and v2 by @jiannx
-- **[Email manager]** Email synchronization now uses recoverable background jobs with status history and safer full-resync cleanup, including Gmail Spam and Trash. by @jiannx
-- **[Auth: LDAP]** Add LDAP user synchronization configuration support for client v2. by @chenzhizdt
+- **[Email manager]** Email synchronization now uses recoverable background jobs with status history and safer full-resync cleanup, including Gmail Spam and Trash. By @jiannx
+- **[Auth: LDAP]** Add LDAP user synchronization configuration support for client v2. By @chenzhizdt
 
 ### 🚀 Improvements
 
@@ -443,8 +447,8 @@ Summarize the weekly product update logs, and the latest releases can be checked
 - **[Workflow]** Grouped task-center items by workflow in the new client and kept workflow filters consistent across task types. ([#10374](https://github.com/nocobase/nocobase/pull/10374)) by @mytharcher
 - **[Block: Tree]** Tree filter blocks now support configurable default sorting. ([#10339](https://github.com/nocobase/nocobase/pull/10339)) by @jiannx
 - **[Redis lock adapter]** Added renewable Redis lock leases and made reusable lock handles release safely during contention and errors by @jiannx
-- **[Workflow: Approval]** Updated approval task grouping and timelines in the new client to match the legacy experience. by @mytharcher
-- **[DingTalk]** Complete DingTalk client v2 support, including Stream synchronization, notification configuration, and automatic login improvements. by @chenzhizdt
+- **[Workflow: Approval]** Updated approval task grouping and timelines in the new client to match the legacy experience. By @mytharcher
+- **[DingTalk]** Complete DingTalk client v2 support, including Stream synchronization, notification configuration, and automatic login improvements. By @chenzhizdt
 
 ### 🐛 Bug Fixes
 
@@ -513,7 +517,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fixed a page crash when sorting an edited relation field in Export V2. ([#10335](https://github.com/nocobase/nocobase/pull/10335)) by @katherinehhh
 - **[Notification manager]** Fixed locale tester errors when no saved locale record exists, and allowed notification channel identifiers to be customized when creating channels ([#10311](https://github.com/nocobase/nocobase/pull/10311)) by @jiannx
 - **[Action: Duplicate record]** Improve direct duplication failure feedback in v2 without duplicate API error messages. ([#10327](https://github.com/nocobase/nocobase/pull/10327)) by @katherinehhh
-- **[Data source: External PostgreSQL]** Automatically load collections when editing an external relational data source in client v2. by @katherinehhh
+- **[Data source: External PostgreSQL]** Automatically load collections when editing an external relational data source in client v2. By @katherinehhh
 - **[Collection field: Encryption]** Fixed bulk import failing with `model.changed is not a function` when the collection contains an encryption field by @cgyrock
 - **[Action: Export records Pro]** Fix export errors when using complex filters with the Export Pro plugin by @zhangzhonghe
 - **[Action: Import records Pro]**
@@ -528,8 +532,8 @@ Summarize the weekly product update logs, and the latest releases can be checked
   - Fixed approval workflows configured to return to any previous approval node only allowing the nearest upstream node by @mytharcher
   - Add data scope filtering to Client V2 related approval blocks by @zhangzhonghe
   - Fix Approval blocks not refreshing after withdrawal or return by @zhangzhonghe
-  - Invalid approval workflows in the new to-do center are now disabled and display a configuration warning. by @mytharcher
+  - Invalid approval workflows in the new to-do center are now disabled and display a configuration warning. By @mytharcher
   - Fix inconsistent subtable column widths in approval details by @zhangzhonghe
   - Fixed related approval blocks failing to load on Client V2 record detail pages by @mytharcher
-- **[Audit logs]** Fixed raw translation expressions appearing in the client V2 audit log Role column. by @katherinehhh
+- **[Audit logs]** Fixed raw translation expressions appearing in the client V2 audit log Role column. By @katherinehhh
 - **[App supervisor]** Fixed Kingbase connections when creating supervised applications by @2013xile
