@@ -1,6 +1,6 @@
 {
   "id": 1190,
-  "title": "__portal write test a7f3k9",
+  "title": "RT-1787642926227",
   "title_cn": null,
   "title_ja": null,
   "description": "Temporary record created by the Content workspace milestone. Safe to archive.",
@@ -8,7 +8,7 @@
   "description_ja": null,
   "slug": "__portal-write-test-a7f3k9",
   "publishedAt": null,
-  "status": "drafted",
+  "status": "deleted",
   "tags": [],
   "sub_tags": [],
   "category": null,
@@ -22,5 +22,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-25T06:30:27.101Z"
+  "updatedAt": "2026-08-25T07:28:50.482Z"
 }
