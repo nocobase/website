@@ -1,8 +1,8 @@
 {
   "id": 1189,
-  "title": "Weekly Updates｜AI Employees Support Configurable Knowledge Retrieval",
-  "title_cn": "本周更新｜AI 员工支持知识库召回配置与权限过滤",
-  "title_ja": "今週の更新｜AIワーカーのナレッジ取得設定と権限フィルタリング",
+  "title": "Weekly Updates｜Added DeepSeek V4 Flash with Reasoning Continuation and Web Search",
+  "title_cn": "本周更新｜新增 DeepSeek V4 Flash，支持推理续调与联网搜索",
+  "title_ja": "今週の更新｜DeepSeek V4 Flash を追加し、推論継続とウェブ検索に対応",
   "description": "This is a summary of NocoBase feature updates and improvements from August 17 to August 28 , 2026.",
   "description_cn": "汇总了 2026.08.17-08.28 期间 NocoBase 的功能更新与改进。",
   "description_ja": "2026.08.17-08.28 の期間に行われた NocoBase の機能アップデートおよび改善内容をまとめています。",
@@ -22,5 +22,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-28T03:50:54.253Z"
+  "updatedAt": "2026-08-28T04:27:30.178Z"
 }
