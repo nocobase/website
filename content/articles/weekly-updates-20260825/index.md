@@ -12,6 +12,37 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ![main.png](https://static-docs.nocobase.com/47a3c71734c1d0f908b51f9ebd53c0ac.png)
 
+### v2.2.3
+
+*Release date: 2026-08-26*
+
+### 🐛 Bug Fixes
+
+- **[client-v2]** Fix a render error when switching a v2 association field to popup record selection. ([#10419](https://github.com/nocobase/nocobase/pull/10419)) by @katherinehhh
+- **[Public forms]** Fix duplicate Submit actions in V2 regular form configuration when Public Forms is enabled. ([#10417](https://github.com/nocobase/nocobase/pull/10417)) by @katherinehhh
+- **[AI LLM: GigaChat]** Fixed an application startup error on iOS 15.6 and earlier when the GigaChat AI provider is enabled ([#10418](https://github.com/nocobase/nocobase/pull/10418)) by @cgyrock
+- **[WeCom]** Fixed WeCom automatic login lifecycle and notification form compatibility in client-v2. by @chenzhizdt
+
+### v2.2.2
+
+*Release date: 2026-08-25*
+
+### 🚀 Improvements
+
+- **[undefined]** Clarified how to use public NocoBase file URLs in Markdown, external pages, and third-party services ([#10406](https://github.com/nocobase/nocobase/pull/10406)) by @mytharcher
+  Reference: [Storage engine overview](https://docs.nocobase.com/file-manager/storage/)
+
+### 🐛 Bug Fixes
+
+- **[Access control]** Fixed an ACL bypass that allowed `firstOrCreate` or `updateOrCreate` to read or modify existing records without the required view or update permission. ([#10403](https://github.com/nocobase/nocobase/pull/10403)) by @mytharcher
+- **[Workflow]**
+
+  - Fix option fields being unable to select configured values in v2 workflow Create record and Update record nodes. ([#10414](https://github.com/nocobase/nocobase/pull/10414)) by @katherinehhh
+  - Fix the extra trigger at `startsOn` for schedule workflows repeating on a cron expression ([#10410](https://github.com/nocobase/nocobase/pull/10410)) by @Tespera
+  - Fixed workflow task center menus so the active menu can be collapsed by clicking it again while retaining its selected highlight ([#10404](https://github.com/nocobase/nocobase/pull/10404)) by @mytharcher
+  - Fixed collection event as sub-workflows failing when called with a record ID and no preload associations configured ([#10407](https://github.com/nocobase/nocobase/pull/10407)) by @mytharcher
+- **[UI templates]** Fix the error when closing an approval task containing a referenced block ([#10415](https://github.com/nocobase/nocobase/pull/10415)) by @zhangzhonghe
+
 ### v2.2.1
 
 *Release date: 2026-08-24*
