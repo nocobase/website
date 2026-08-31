@@ -1,14 +1,14 @@
 {
-  "id": 1196,
-  "title": "NocoBase v2.2.5: Improve workflow task detail handling on mobile",
-  "title_cn": "NocoBase v2.2.5：优化工作流待办中心移动端详情处理",
-  "title_ja": "NocoBase v2.2.5：ワークフロー ToDo センターのモバイル向け詳細画面を改善し",
-  "description": "Release Note of v2.2.5",
-  "description_cn": "v2.2.5 更新日志",
+  "id": 1197,
+  "title": "NocoBase v2.3.0-beta.6",
+  "title_cn": "NocoBase v2.3.0-beta.6",
+  "title_ja": null,
+  "description": "Release Note of v2.3.0-beta.6",
+  "description_cn": "v2.3.0-beta.6 更新日志",
   "description_ja": null,
-  "slug": "v2.2.5",
-  "publishedAt": "2026-08-30T16:00:00.000Z",
-  "status": "published",
+  "slug": "v2.3.0-beta.6",
+  "publishedAt": null,
+  "status": "drafted",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -32,53 +32,24 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-08-31T01:58:35.270Z",
-        "updatedAt": "2026-08-31T01:58:35.270Z",
+        "createdAt": "2026-08-31T04:06:21.791Z",
+        "updatedAt": "2026-08-31T04:06:21.791Z",
         "tagId": 4,
-        "articleId": 1196
+        "articleId": 1197
       }
     }
   ],
-  "sub_tags": [
-    {
-      "createdAt": "2025-01-22T06:52:40.087Z",
-      "updatedAt": "2026-06-24T12:43:08.690Z",
-      "id": 116,
-      "title": "Latest",
-      "title_cn": "Latest",
-      "sort": 115,
-      "description": null,
-      "description_cn": null,
-      "displayOnPage": null,
-      "slug": null,
-      "displayOnBlog": null,
-      "keywords": null,
-      "keywords_cn": null,
-      "title_ja": "Latest",
-      "description_ja": null,
-      "keywords_ja": null,
-      "displayOnAiBlueprint": false,
-      "displayOnAiBlueprintPage": false,
-      "createdById": 9,
-      "updatedById": 9,
-      "article_sub_tags": {
-        "createdAt": "2026-08-31T04:01:09.625Z",
-        "updatedAt": "2026-08-31T04:01:09.625Z",
-        "articles_id": 1196,
-        "tags_id": 116
-      }
-    }
-  ],
+  "sub_tags": [],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": true,
-  "hideDetailPage": true,
+  "hideOnBlog": false,
+  "hideDetailPage": false,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-08-31T04:01:09.610Z"
+  "updatedAt": "2026-08-31T04:06:21.780Z"
 }
