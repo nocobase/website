@@ -1,12 +1,12 @@
 {
-  "id": 1190,
-  "title": "DIRTY-1788313269285",
+  "id": 1203,
+  "title": "__portal-list-test-seed01 copy",
   "title_cn": null,
   "title_ja": null,
-  "description": "Temporary record created by the Content workspace milestone. Safe to archive.",
+  "description": "list fixes verification",
   "description_cn": null,
   "description_ja": null,
-  "slug": "__portal-write-test-a7f3k9",
+  "slug": "portal-list-test-seed01-copy-mtjeasgt",
   "publishedAt": null,
   "status": "deleted",
   "tags": [],
@@ -18,9 +18,9 @@
   "hideDetailPage": true,
   "about": null,
   "mentions": null,
-  "author": null,
+  "author": "AlbertMa",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-09-02T01:41:13.338Z"
+  "updatedAt": "2026-09-02T01:06:40.307Z"
 }
