@@ -56,17 +56,13 @@ On top of the data model, AI continues building the pages.
 
 In the end, AI creates a ticket list, ticket detail pages, and a support workspace, covering the basic scenarios of ticket recording, assignment, follow-up, and overview.
 
-![Tickets cn-z1waj5.png](https://static-docs.nocobase.com/Tickets%20cn-z1waj5.png)
-
 ![Tickets en-v1b1s0.png](https://static-docs.nocobase.com/Tickets%20en-v1b1s0.png)
 
-![Customer satisfaction cn-k3ztnb.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-k3ztnb.png)
+![Customer satisfaction en-709uw1.png](https://static-docs.nocobase.com/Customer%20satisfaction%20en-709uw1.png)
 
-![Customer satisfaction cn-4oi068.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-4oi068.png)
+![SLA & escalations en-0zfn5p.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20en-0zfn5p.png)
 
-![SLA & escalations cn-akolqx.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20cn-akolqx.png)
-
-![SLA & escalations en-0640vb.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20en-0640vb.png)
+![Queue workload en-z7he21.png](https://static-docs.nocobase.com/Queue%20workload%20en-z7he21.png)
 
 At this point, we have turned a business description into a working ticketing system. But “the features have been built” and “the system is ready for production” are not the same thing.
 
@@ -86,23 +82,17 @@ A ticket is not an isolated record.
 
 Each ticket needs to be associated with the customer who submitted it, the current owner, historical communication records, and the applicable SLA rule. When the ticket status changes, statistics and pending items on the workspace also need to update accordingly.
 
-![数据之间的关系1 cn-pwazu5.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20cn-pwazu5.png)
-
 ![数据之间的关系1 en-pax4na.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20en-pax4na.png)
 
 If these relationships are not defined clearly, the system may still look complete while failing in actual use. After changing the owner, previous handling records may become difficult to find. A ticket may be matched to the wrong response deadline, or numbers on the overview page may no longer match reality.
 
 In NocoBase, these relationships are not temporary pieces of logic written by AI into a specific page. They are defined directly in the data model. Using the ticket table as an example, the SLA policy, queue, ticket type, and submitter are defined as many-to-one relationships. One ticket can be linked to multiple satisfaction records, attachments, followers, and other tickets. Parent-child ticket relationships are also explicitly defined in field configuration.
 
-![数据之间的关系2 cn-m7oxqg.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20cn-m7oxqg.png)
-
 ![数据之间的关系2 en-cknbzn.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-cknbzn.png)
 
 These relationships become part of the NocoBase data model and are shared by pages, permissions, workflows, and reporting features. Users can inspect each field type and relationship directly in the data source interface and continue adjusting them as business requirements change.
 
 This is different from a Vibe Coding approach that starts from generated code. In a code-generated application, data relationships usually need to be implemented across the database structure, backend models, APIs, and page queries. If a relationship is incomplete or only one layer is updated later, data inconsistencies can occur. Manual inspection also requires developers to look into both code and database structures to verify the actual implementation.
-
-![数据之间的关系2 en-s77c95.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-s77c95.png)
 
 ![数据之间的关系3 en-fhk0oy.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-fhk0oy.png)
 
@@ -114,15 +104,11 @@ When only one person uses a system, permissions are usually not a major issue. O
 
 In this ticketing system, AI can configure the corresponding roles and data permissions directly in NocoBase.
 
-![数据之间的关系3 en-66fjq9.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-66fjq9.png)
-
 ![规则协作1 en-mi39un.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-mi39un.png)
 
 This is another important difference between building with NocoBase and using a Vibe Coding approach. In an AI-generated application, permission rules often need to be implemented separately across pages, APIs, and data queries. As the number of roles and rules increases, configuration becomes more complex. During manual review, teams often need to return to the code or test the application directly to confirm whether permissions are actually taking effect.
 
 NocoBase already provides permission management capabilities. AI does not need to rebuild a permission system. It only needs to configure which data different roles can view and operate on according to the business requirements. The result is also clearly visible in the administration interface, where users can inspect the permission scope for each role and switch identities to validate the result.
-
-![规则协作1 en-y32gir.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-y32gir.png)
 
 ![规则协作2 en-qqc7b4.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C2%20en-qqc7b4.png)
 
@@ -132,13 +118,9 @@ Many rules in a ticketing system need to be monitored continuously and triggered
 
 In the workflow management interface, users can directly inspect how each rule is triggered, its execution mode, whether it is enabled, and how many times it has run. There is no need to enter the codebase to confirm which rules are active, what conditions trigger them, and whether they have actually executed.
 
-![可靠执行1 cn-r98mzg.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20cn-r98mzg.png)
-
 ![可靠执行1 en-ql1blo.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-ql1blo.png)
 
 Execution results can also be inspected in detail. Take the “escalate overdue urgent tickets” workflow as an example. The system iterates through tickets that meet the condition, processes their deadlines, and runs the notification node. In the execution record shown in the screenshot, the escalation notification to the current owner has completed successfully, and the node status is shown as complete.
-
-![可靠执行1 en-99uaj8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-99uaj8.png)
 
 ![可靠执行2 en-1qjkl8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-1qjkl8.png)
 
@@ -156,8 +138,6 @@ The first is ticket creation.
 
 Support agents do not need to fill in every ticket field manually from the start. They can simply describe the customer's issue in natural language. AI Smart Form Fill first turns that description into a ticket title and issue description. Once the basic information is filled in, AI Smart Triage can review the ticket and suggest a category and priority.
 
-![可靠执行2 en-gzufy5.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-gzufy5.png)
-
 ![AI 能力1 en-zu7ek6.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B1%20en-zu7ek6.png)
 
 Here, AI is responsible for converting the customer's natural-language description into structured information, but it does not bypass the form and submit the ticket automatically. The support agent can still review and edit the generated content before confirming and creating the ticket.
@@ -166,15 +146,11 @@ The second part is ticket handling.
 
 On the ticket detail page, a support agent can ask AI to draft the next customer reply based on the current ticket. AI reads the customer's issue, handling progress, and communication history, then refers to the help articles matched by the system. It summarizes the ticket situation and response strategy before generating a reply draft.
 
-![AI 能力2 cn-y2m4zv.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20cn-y2m4zv.gif)
-
 ![AI 能力2 en-rh0v12.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20en-rh0v12.gif)
 
 More importantly, AI does not operate outside the system's permission model. NocoBase can control which users are allowed to use which AI Employees based on role. When an AI Employee calls the built-in data query tools, the system applies the current user's data permissions and only returns data that the user is allowed to access.
 
 Related documentation: [AI Employee Roles and Permissions - NocoBase Documentation](https://docs.nocobase.com/ai-employees/permission)
-
-![AI 能力3 cn-osutgd.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3%20cn-osutgd.png)
 
 ![AI 能力3en-0z3kdr.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3en-0z3kdr.png)
 
@@ -215,3 +191,20 @@ After initialization is complete, continue with the specific business requiremen
 
 - **Try the NocoBase + AI Demo:** [Request an online demo](https://www.nocobase.com/)
 - **Build it yourself:** [View the AI Builder documentation](https://docs.nocobase.com/ai-builder)
+
+
+**Related reading**:
+
+* **[Building an Inventory Management System: Vibe Coding vs NocoBase + AI ](https://www.nocobase.com/en/blog/building-inventory-management-system-vibe-coding-vs-nocobase-ai)**
+* **[How to Build a Production-Ready IT Operations System with AI and NocoBase](https://www.nocobase.com/en/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow: Flexible Databases vs Enterprise Systems](https://www.nocobase.com/en/blog/nocobase-vs-baserow)**
+* **[How to Build a Production-Ready CRM with AI and NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[How to Design an IT Asset Management System: Data Model, Lifecycle, and Workflows](https://www.nocobase.com/en/blog/enterprise-it-asset-management-system-guide)**
+* **[How to Choose a Smartsheet Alternative: 7 Tools Compared](https://www.nocobase.com/en/blog/best-smartsheet-alternatives)**
+* **[5 Open-Source AI No-Code Tools for Complex Relational Data Models](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[What Is AI No-Code? A Practical Guide to No-Code Platforms in the AI Era](https://www.nocobase.com/en/blog/what-is-ai-no-code)**
+* **[9 Open-Source AI No-Code Tools on GitHub Worth Watching](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-github-9)**
+* **[14 Open Source AI Agent Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16)**
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**
+* **[Top 6 Open Source AI Tools by GitHub Stars for Stronger AI Agents](https://www.nocobase.com/en/blog/6-github-top-open-source-ai-tools-for-ai-agents)**

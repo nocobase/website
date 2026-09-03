@@ -58,15 +58,11 @@ AI 首先将需求拆解成数据结构，在 NocoBase 中创建工单、客户�
 
 ![Tickets cn-z1waj5.png](https://static-docs.nocobase.com/Tickets%20cn-z1waj5.png)
 
-![Tickets en-v1b1s0.png](https://static-docs.nocobase.com/Tickets%20en-v1b1s0.png)
-
 ![Customer satisfaction cn-k3ztnb.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-k3ztnb.png)
-
-![Customer satisfaction cn-4oi068.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-4oi068.png)
 
 ![SLA & escalations cn-akolqx.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20cn-akolqx.png)
 
-![SLA & escalations en-0640vb.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20en-0640vb.png)
+![Queue workload cn-77qjsd.png](https://static-docs.nocobase.com/Queue%20workload%20cn-77qjsd.png)
 
 至此，我们已经从一段业务描述得到了一套可以运行的工单系统。不过，“功能已经搭出来”和“系统可以投入生产”并不是一回事。
 
@@ -88,23 +84,17 @@ AI 首先将需求拆解成数据结构，在 NocoBase 中创建工单、客户�
 
 ![数据之间的关系1 cn-pwazu5.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20cn-pwazu5.png)
 
-![数据之间的关系1 en-pax4na.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20en-pax4na.png)
-
 如果这些关系没有建立清楚，系统即使看起来功能齐全，实际使用时仍然可能出现问题：更换负责人后找不到之前的处理记录，工单匹配了错误的响应时限，或者总览页面中的数字与实际情况不一致。
 
 在 NocoBase 中，这些关系不是由 AI 临时写进某个页面的逻辑，而是直接定义在数据模型中。以工单表为例，SLA 策略、受理队列、工单类型和提交人被设置为多对一关系；一张工单可以关联多条满意度反馈，也可以关联多个附件、关注人和其他工单。父工单与子工单之间的关系，同样在字段配置中被明确记录。
 
 ![数据之间的关系2 cn-m7oxqg.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20cn-m7oxqg.png)
 
-![数据之间的关系2 en-cknbzn.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-cknbzn.png)
-
 这些关系会作为 NocoBase 数据模型的一部分，被页面、权限、工作流和统计功能共同使用。用户可以直接在数据源界面中查看每个字段的类型及其关联方式，也可以在业务发生变化时继续调整。
 
 这与从代码开始的 Vibe Coding 方式有所不同。在一个直接生成代码的应用中，数据关系往往需要同时落实到数据库结构、后端模型、接口和页面查询中。关系一旦设计不完整，或者后续只修改了其中一处，就可能产生数据不一致的问题；人工检查时，也需要进入代码和数据库结构才能确认实际实现。
 
-![数据之间的关系2 en-s77c95.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-s77c95.png)
-
-![数据之间的关系3 en-fhk0oy.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-fhk0oy.png)
+![数据之间的关系3 cn-eam00m.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20cn-eam00m.png)
 
 NocoBase 已经提供了现成的数据建模能力。AI 只需把业务需求转换成数据表、字段和关联关系，不需要从头编写整套数据层；搭建完成后，人工也可以在同一个界面中直接检查和修改。
 
@@ -114,17 +104,13 @@ NocoBase 已经提供了现成的数据建模能力。AI 只需把业务需求�
 
 在这个工单系统中，AI 可以直接在 NocoBase 中配置相应的角色和数据权限。
 
-![数据之间的关系3 en-66fjq9.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-66fjq9.png)
-
-![规则协作1 en-mi39un.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-mi39un.png)
+![规则协作1 cn-5ohr45.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20cn-5ohr45.png)
 
 这也是使用 NocoBase 搭建与 Vibe Coding 方式的一个重要区别。在一个 AI 生成的应用中，权限规则往往需要分别落实到页面、接口和数据查询中。随着角色和规则增加，配置会变得复杂；人工检查时，也常常需要回到代码或实际运行结果中，才能确认权限是否正确生效。
 
 NocoBase 已经提供了现成的权限管理能力。AI 不需要重新编写一套权限系统，只需根据业务要求，直接配置不同角色能够查看和操作的数据。配置结果也会清晰地呈现在管理界面中，用户可以直接检查每个角色的权限范围，并通过切换身份进一步验证。
 
-![规则协作1 en-y32gir.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-y32gir.png)
-
-![规则协作2 en-qqc7b4.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C2%20en-qqc7b4.png)
+![规则协作2 cn-6fbxsm.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C2%20cn-6fbxsm.png)
 
 ### 3. 业务规则能否可靠执行
 
@@ -134,13 +120,9 @@ NocoBase 已经提供了现成的权限管理能力。AI 不需要重新编写�
 
 ![可靠执行1 cn-r98mzg.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20cn-r98mzg.png)
 
-![可靠执行1 en-ql1blo.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-ql1blo.png)
-
 执行结果也可以继续向下检查。以“逾期紧急工单升级”为例，系统会遍历符合条件的工单，处理截止时间，并执行通知节点。截图中的一次执行记录显示，向当前负责人的升级通知已经完成，节点返回状态为完成。
 
-![可靠执行1 en-99uaj8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-99uaj8.png)
-
-![可靠执行2 en-1qjkl8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-1qjkl8.png)
+![可靠执行2 cn-v9awzc.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20cn-v9awzc.png)
 
 这使业务规则也不再是隐藏在代码中的一段逻辑。AI 可以直接使用 NocoBase 已有的工作流能力完成配置；人工也可以在界面中查看流程结构、运行状态和具体执行记录，对规则进行检查和验证。
 
@@ -156,9 +138,7 @@ NocoBase 已经提供了现成的权限管理能力。AI 不需要重新编写�
 
 客服不需要一开始就逐个填写工单字段，只需用自然语言描述客户遇到的问题。AI 智能填单会先将这段描述整理为工单标题和问题描述；基本信息填写完成后，还可以继续使用 AI 智能分诊，让 AI 检查并建议问题分类和优先级。
 
-![可靠执行2 en-gzufy5.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-gzufy5.png)
-
-![AI 能力1 en-zu7ek6.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B1%20en-zu7ek6.png)
+![AI 能力1 cn-r7o602.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B1%20cn-r7o602.png)
 
 AI 在这里负责把客户的自然语言描述转换成结构化信息，但不会绕过表单直接提交。客服仍然可以检查和修改生成的内容，确认无误后再创建工单。
 
@@ -168,15 +148,11 @@ AI 在这里负责把客户的自然语言描述转换成结构化信息，但�
 
 ![AI 能力2 cn-y2m4zv.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20cn-y2m4zv.gif)
 
-![AI 能力2 en-rh0v12.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20en-rh0v12.gif)
-
 更重要的是，AI 并不是脱离系统权限独立运行。NocoBase 可以按角色控制哪些用户能够使用哪些 AI 员工；当 AI 员工调用系统内置的数据查询工具时，系统会应用当前用户的数据权限，只向 AI 返回该用户有权查看的数据。
 
 相关文档：[AI 员工角色与权限 - NocoBase 文档](https://docs.nocobase.com/cn/ai-employees/permission)
 
 ![AI 能力3 cn-osutgd.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3%20cn-osutgd.png)
-
-![AI 能力3en-0z3kdr.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3en-0z3kdr.png)
 
 这意味着，普通客服使用 AI 时，AI 不会因为自身能力而自动获得主管才能查看的数据。AI 能访问什么，仍然受到业务系统原有权限边界的约束。
 
@@ -215,3 +191,19 @@ https://docs.nocobase.com/cn/ai/ai-quick-start.md
 
 * **体验 NocoBase + AI Demo：** [申请在线 Demo](https://www.nocobase.com/)
 * **开始自己搭建：** [查看 AI Builder 文档](https://docs.nocobase.com/cn/ai-builder)
+
+**相关阅读**：
+
+* **[库存管理系统搭建对比：纯 AI 搭建 vs AI 基于 NocoBase 搭建 ](https://www.nocobase.com/cn/blog/building-inventory-management-system-vibe-coding-vs-nocobase-ai)**
+* **[如何用 AI 和 NocoBase 在 2 小时内搭建一套企业 IT 运维系统](https://www.nocobase.com/cn/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow：灵活数据库与企业级系统](https://www.nocobase.com/cn/blog/nocobase-vs-baserow)**
+* **[如何用 AI 和 NocoBase 搭建一套可投入生产的 CRM](https://www.nocobase.com/cn/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[企业 IT 资产管理系统搭建指南：从需求梳理到落地](https://www.nocobase.com/cn/blog/enterprise-it-asset-management-system-guide)**
+* **[7 款 Smartsheet 替代品：适合项目管理与业务流程的工具](https://www.nocobase.com/cn/blog/best-smartsheet-alternatives)**
+* **[5 个适合复杂关系模型的开源 AI 无代码工具](https://www.nocobase.com/cn/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[什么是 AI 无代码？AI 时代无代码平台的实用指南](https://www.nocobase.com/cn/blog/what-is-ai-no-code)**
+* **[GitHub 上值得关注的 9 个开源 AI 无代码工具](https://www.nocobase.com/cn/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub 上值得关注的 14 个开源 AI Agent 工具](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub 上 Stars 最多的 8 个开源 AI Assistant 工具](https://www.nocobase.com/cn/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 个适合搭配 WorkBuddy 使用的开源工具](https://www.nocobase.com/cn/blog/workbuddy-open-source-tools)**
+* **[GitHub 上 Stars 最多的 6 个开源 AI 工具：让 AI Agent 更强大](https://www.nocobase.com/cn/blog/6-github-top-open-source-ai-tools-for-ai-agents)**

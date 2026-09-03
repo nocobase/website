@@ -56,17 +56,13 @@ AI はまず要件をデータ構造へ分解します。NocoBase 上にチケ�
 
 最終的に、チケット一覧、詳細ページ、サポート担当者向けワークスペースを作成し、チケット登録、割り当て、フォローアップ、全体確認といった基本業務をカバーします。
 
-![Tickets cn-z1waj5.png](https://static-docs.nocobase.com/Tickets%20cn-z1waj5.png)
-
 ![Tickets en-v1b1s0.png](https://static-docs.nocobase.com/Tickets%20en-v1b1s0.png)
 
-![Customer satisfaction cn-k3ztnb.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-k3ztnb.png)
-
-![Customer satisfaction cn-4oi068.png](https://static-docs.nocobase.com/Customer%20satisfaction%20cn-4oi068.png)
-
-![SLA & escalations cn-akolqx.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20cn-akolqx.png)
+![Customer satisfaction en-sgdumb.png](https://static-docs.nocobase.com/Customer%20satisfaction%20en-sgdumb.png)
 
 ![SLA & escalations en-0640vb.png](https://static-docs.nocobase.com/SLA%20%26%20escalations%20en-0640vb.png)
+
+![Queue workload en-qztscn.png](https://static-docs.nocobase.com/Queue%20workload%20en-qztscn.png)
 
 ここまでで、ひとつの業務要件から実際に動作するチケット管理システムができました。ただし、「機能が作られた」ことと「本番で使える」ことは同じではありません。
 
@@ -86,23 +82,17 @@ AI はまず要件をデータ構造へ分解します。NocoBase 上にチケ�
 
 各チケットは、問い合わせを送った顧客、現在の担当者、過去のコミュニケーション履歴、適用される SLA ルールと関連付ける必要があります。チケットのステータスが変われば、ワークスペース上の集計や未処理情報も更新される必要があります。
 
-![数据之间的关系1 cn-pwazu5.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20cn-pwazu5.png)
-
 ![数据之间的关系1 en-pax4na.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB1%20en-pax4na.png)
 
 こうした関係が明確でなければ、機能がそろっているように見えても、実際の利用時には問題が起こります。担当者を変更した後に以前の対応履歴が見つからない、誤った応答期限が適用される、概要ページの数字と実際の状況が一致しない、といったことが起こり得ます。
 
 NocoBase では、これらの関係は AI が特定ページへ一時的に書き込むロジックではなく、データモデル上に直接定義されます。チケットテーブルを例にすると、SLA ポリシー、受付キュー、チケット種別、送信者は多対一の関係として設定されます。1 件のチケットには複数の満足度フィードバック、添付ファイル、フォロワー、他のチケットを関連付けることができます。親チケットと子チケットの関係も、フィールド設定上で明確に記録されます。
 
-![数据之间的关系2 cn-m7oxqg.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20cn-m7oxqg.png)
-
 ![数据之间的关系2 en-cknbzn.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-cknbzn.png)
 
 これらの関係は NocoBase のデータモデルの一部となり、ページ、権限、ワークフロー、集計機能から共通して利用されます。ユーザーはデータソース画面で各フィールドの型や関連方法を直接確認でき、業務が変化した場合にも継続的に調整できます。
 
 これは、コードから始める Vibe Coding の方法とは異なります。直接コードを生成するアプリでは、データ関係をデータベース構造、バックエンドモデル、API、ページクエリなど複数の場所へ実装する必要があります。設計が不完全だったり、後から一部だけ変更したりすると、データ不整合が発生する可能性があります。人が確認する場合も、実際の実装を確認するためにコードとデータベース構造まで見る必要があります。
-
-![数据之间的关系2 en-s77c95.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB2%20en-s77c95.png)
 
 ![数据之间的关系3 en-fhk0oy.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-fhk0oy.png)
 
@@ -114,15 +104,11 @@ NocoBase にはデータモデリング機能がすでに用意されていま�
 
 このチケット管理システムでは、AI が NocoBase 上で対応するロールとデータ権限を直接設定できます。
 
-![数据之间的关系3 en-66fjq9.png](https://static-docs.nocobase.com/%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB3%20en-66fjq9.png)
-
 ![规则协作1 en-mi39un.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-mi39un.png)
 
 これも NocoBase を使う方法と Vibe Coding の大きな違いです。AI が直接生成したアプリでは、権限ルールをページ、API、データクエリなど複数箇所へそれぞれ実装する必要があります。ロールやルールが増えるほど複雑になり、人が確認するときもコードや実際の動作結果に戻って、権限が正しく効いているか確認する必要があります。
 
 NocoBase には権限管理機能がすでにあります。AI が権限システムを作り直す必要はなく、業務要件に従って各ロールが閲覧・操作できるデータを直接設定します。設定結果は管理画面上で明確に表示されるため、各ロールの権限範囲をそのまま確認でき、ロールを切り替えてさらに検証することもできます。
-
-![规则协作1 en-y32gir.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C1%20en-y32gir.png)
 
 ![规则协作2 en-qqc7b4.png](https://static-docs.nocobase.com/%E8%A7%84%E5%88%99%E5%8D%8F%E4%BD%9C2%20en-qqc7b4.png)
 
@@ -132,13 +118,9 @@ NocoBase には権限管理機能がすでにあります。AI が権限シス�
 
 ワークフロー管理画面では、各ルールのトリガー方法、実行モード、有効状態、過去の実行回数を直接確認できます。コードを開かなくても、どのルールが有効なのか、どの条件でトリガーされるのか、実際に実行されたかどうかを確認できます。
 
-![可靠执行1 cn-r98mzg.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20cn-r98mzg.png)
-
 ![可靠执行1 en-ql1blo.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-ql1blo.png)
 
 実行結果もさらに詳しく確認できます。「期限超過した緊急チケットをエスカレーションする」ワークフローを例にすると、システムは条件に合うチケットを順番に処理し、期限を確認したうえで通知ノードを実行します。スクリーンショットの実行記録では、現在の担当者へのエスカレーション通知が完了し、ノードの状態も完了として表示されています。
-
-![可靠执行1 en-99uaj8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C1%20en-99uaj8.png)
 
 ![可靠执行2 en-1qjkl8.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-1qjkl8.png)
 
@@ -156,8 +138,6 @@ NocoBase を使うもうひとつの利点は、AI が構築段階だけで活�
 
 サポート担当者は最初からすべてのフィールドをひとつずつ入力する必要はありません。顧客の問題を自然言語で説明すると、AI スマート入力がその内容をチケットタイトルと問題説明へ整理します。基本情報の入力後は、AI スマートトリアージを使って、AI にカテゴリや優先度を確認・提案させることもできます。
 
-![可靠执行2 en-gzufy5.png](https://static-docs.nocobase.com/%E5%8F%AF%E9%9D%A0%E6%89%A7%E8%A1%8C2%20en-gzufy5.png)
-
 ![AI 能力1 en-zu7ek6.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B1%20en-zu7ek6.png)
 
 ここで AI が担当するのは、顧客の自然言語による説明を構造化された情報へ変換することです。ただし、フォームを迂回して自動送信するわけではありません。サポート担当者は生成内容を確認・編集し、問題がないことを確認してからチケットを作成できます。
@@ -166,15 +146,11 @@ NocoBase を使うもうひとつの利点は、AI が構築段階だけで活�
 
 チケット詳細ページで、サポート担当者は現在のチケット内容をもとに、次の顧客返信案を AI に作成させることができます。AI は顧客の問題、対応進捗、コミュニケーション履歴を読み取り、システムが関連付けたヘルプ記事も参照します。そのうえでチケットの状況と返信方針を整理し、返信ドラフトを生成します。
 
-![AI 能力2 cn-y2m4zv.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20cn-y2m4zv.gif)
-
 ![AI 能力2 en-rh0v12.gif](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B2%20en-rh0v12.gif)
 
 さらに重要なのは、AI がシステムの権限モデルから独立して動作するわけではないことです。NocoBase では、ロールごとにどのユーザーがどの AI 従業員を利用できるかを制御できます。AI 従業員がシステム内蔵のデータクエリツールを呼び出すときは、現在のユーザーのデータ権限が適用され、そのユーザーが閲覧できるデータだけが AI に返されます。
 
 関連ドキュメント：[AI 従業員のロールと権限 - NocoBase ドキュメント](https://docs.nocobase.com/ja/ai-employees/permission)
-
-![AI 能力3 cn-osutgd.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3%20cn-osutgd.png)
 
 ![AI 能力3en-0z3kdr.png](https://static-docs.nocobase.com/AI%20%E8%83%BD%E5%8A%9B3en-0z3kdr.png)
 
@@ -215,3 +191,19 @@ https://docs.nocobase.com/ja/ai/ai-quick-start.md
 
 - **NocoBase + AI Demo を体験：** [オンライン Demo を申し込む](https://www.nocobase.com/)
 - **自分で構築する：** [AI Builder ドキュメントを見る](https://docs.nocobase.com/ja/ai-builder)
+
+
+**関連記事**：
+
+* **[在庫管理システム構築比較：純粋な AI 構築 vs NocoBase + AI ](https://www.nocobase.com/ja/blog/building-inventory-management-system-vibe-coding-vs-nocobase-ai)**
+* **[AI と NocoBase で 2 時間以内に企業 IT 運用システムを構築する方法](https://www.nocobase.com/ja/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow：柔軟なデータベースとエンタープライズ業務システム](https://www.nocobase.com/ja/blog/nocobase-vs-baserow)**
+* **[AI と NocoBase で本番運用できる CRM を構築する方法](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[企業向け IT 資産管理システム構築ガイド：要件整理から導入まで](https://www.nocobase.com/ja/blog/enterprise-it-asset-management-system-guide)**
+* **[プロジェクト管理と業務フローに使える Smartsheet 代替ツール 7 選](https://www.nocobase.com/ja/blog/best-smartsheet-alternatives)**
+* **[複雑なリレーションモデルに適したオープンソース AI ノーコードツール 5 選](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[AI ノーコードとは？AI 時代のノーコードプラットフォーム実用ガイド](https://www.nocobase.com/ja/blog/what-is-ai-no-code)**
+* **[GitHub で注目したい 9 つのオープンソース AI ノーコードツール](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub で注目したい14のオープンソース AI Agent ツール](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub Stars が多い 8 つのオープンソース AI Assistant ツール](https://www.nocobase.com/ja/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 つの WorkBuddy と組み合わせて使いやすいオープンソースツール](https://www.nocobase.com/ja/blog/workbuddy-open-source-tools)**
