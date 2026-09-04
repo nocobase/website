@@ -2,6 +2,8 @@
 import PageHeader from "../../components/PageHeader.astro";
 import BaseLayout from "../../layouts/BaseEN.astro";
 import { getPage } from "../../utils";
+import JsonLd from "../../components/JsonLd.astro";
+import { generateCommercialSchema } from "../../seo/commercial";
 
 const page = await getPage("commercial");
 
@@ -11,6 +13,7 @@ const keywords = page.keywords;
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
+  <JsonLd data={generateCommercialSchema("en")} />
   <PageHeader title={title} description={description} />
   <!-- Which Edition Start -->
   <section class="section pb-0" id="experience">
