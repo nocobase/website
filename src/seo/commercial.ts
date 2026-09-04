@@ -1,3 +1,12 @@
+// Structured data for the commercial (pricing) pages.
+//
+// Every string below mirrors content that is VISIBLE on
+// src/pages/{locale}/commercial.astro — Google treats structured data that
+// describes something the user cannot see as spam. When you edit an FAQ answer
+// or a price on that page, edit it here too; nothing enforces this at build
+// time.
+import { SITE_URL, SOFTWARE_ID, removeUndefined, schemaLang } from './schema';
+
 type Locale = 'en' | 'cn' | 'ja';
 
 type Faq = {
@@ -7,18 +16,19 @@ type Faq = {
 
 type Offer = {
   name: string;
-  price?: string;
+  // Every offer emitted must carry a price. A "contact us" tier has no price
+  // to state, and an Offer without one only earns a Search Console warning, so
+  // those tiers are deliberately left out of the graph.
+  price: string;
   priceCurrency: 'USD' | 'CNY';
   description: string;
 };
 
 const commercialSchemaData: Record<Locale, {
-  language: string;
   faqs: Faq[];
   offers: Offer[];
 }> = {
   en: {
-    language: 'en-US',
     faqs: [
       {
         question: 'How to understand "Lifetime license"?',
@@ -64,15 +74,9 @@ const commercialSchemaData: Record<Locale, {
         priceCurrency: 'USD',
         description: 'One-time lifetime commercial license for professional teams.',
       },
-      {
-        name: 'Enterprise Edition',
-        priceCurrency: 'USD',
-        description: 'Enterprise license for large applications. Contact sales for pricing.',
-      },
     ],
   },
   cn: {
-    language: 'zh-CN',
     faqs: [
       {
         question: '如何理解“永久授权”？',
@@ -118,15 +122,9 @@ const commercialSchemaData: Record<Locale, {
         priceCurrency: 'CNY',
         description: '一次性买断的永久商业授权，适合专业团队。',
       },
-      {
-        name: '企业版',
-        priceCurrency: 'CNY',
-        description: '面向大型应用与企业的商业授权，价格请联系销售。',
-      },
     ],
   },
   ja: {
-    language: 'ja-JP',
     faqs: [
       {
         question: '「永久ライセンス」とは？',
@@ -172,26 +170,21 @@ const commercialSchemaData: Record<Locale, {
         priceCurrency: 'USD',
         description: 'プロフェッショナルチーム向けの買い切り永久商用ライセンス。',
       },
-      {
-        name: 'エンタープライズ版',
-        priceCurrency: 'USD',
-        description: '大規模・エンタープライズ向け。価格はお問い合わせください。',
-      },
     ],
   },
 };
 
 export function generateCommercialSchema(locale: Locale) {
-  const pageUrl = `https://www.nocobase.com/${locale}/commercial`;
+  const pageUrl = `${SITE_URL}/${locale}/commercial`;
   const data = commercialSchemaData[locale];
 
-  return {
+  return removeUndefined({
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'FAQPage',
         '@id': `${pageUrl}#faq`,
-        inLanguage: data.language,
+        inLanguage: schemaLang(locale),
         mainEntity: data.faqs.map(({ question, answer }) => ({
           '@type': 'Question',
           name: question,
@@ -202,18 +195,22 @@ export function generateCommercialSchema(locale: Locale) {
         })),
       },
       {
+        // Same @id as the homepage's SoftwareApplication, so this merges into
+        // the one NocoBase entity instead of adding a rival product to the
+        // graph. Only the pricing this page actually shows lives here; name,
+        // category and operatingSystem stay on the canonical node.
         '@type': 'SoftwareApplication',
-        '@id': `${pageUrl}#product`,
-        name: 'NocoBase',
-        applicationCategory: 'BusinessApplication',
-        operatingSystem: 'Self-hosted',
-        url: pageUrl,
-        inLanguage: data.language,
-        offers: data.offers.map((offer) => ({
+        '@id': SOFTWARE_ID,
+        offers: data.offers.map(({ name, price, priceCurrency, description }) => ({
           '@type': 'Offer',
-          ...offer,
+          name,
+          price,
+          priceCurrency,
+          description,
+          url: pageUrl,
+          availability: 'https://schema.org/InStock',
         })),
       },
     ],
-  };
+  });
 }

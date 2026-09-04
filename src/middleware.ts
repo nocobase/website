@@ -1,5 +1,7 @@
 import { defineMiddleware } from 'astro:middleware';
 
+import { isInternalTaxonomySlug } from './utils/internal-taxonomy';
+
 // Define French pages that should redirect to English
 const FRENCH_REDIRECT_PATTERNS = [];
 
@@ -31,7 +33,16 @@ const MODULE_PAGE_MOVES: Record<string, string> = {
 const COMMERCIAL_LOCALES = new Set(['en', 'cn', 'tw', 'ja', 'fr', 'es', 'de', 'pt', 'id', 'vi']);
 
 export const onRequest = defineMiddleware(async (context, next) => {
-  const { pathname } = context.url;
+  // Russian was dropped from this site. Fold /ru/* onto its English path before
+  // any rule runs, so each rule below can answer with a single 301 that lands on
+  // the final URL. Matching /ru/ last instead would chain: /ru/pricing would go
+  // to /en/pricing and only then to /en/commercial, and the module rule would
+  // answer /ru/solutions/sales-management with another /ru/ URL.
+  const requestPath = context.url.pathname;
+  const isRussian = requestPath === '/ru' || requestPath.startsWith('/ru/');
+  const pathname = isRussian
+    ? requestPath === '/ru' ? '/en' : requestPath.replace(/^\/ru\//, '/en/')
+    : requestPath;
 
   // Preserve common pricing URLs while keeping /commercial as the canonical
   // path. Every locale below has a corresponding commercial page.
@@ -43,9 +54,12 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return context.redirect(`/${localizedPricing[1]}/commercial`, 301);
   }
 
-  // Internal/test taxonomy is not public content. Keep it out of the index
-  // even when a stale CMS tag still exists.
-  if (/^\/(en|cn|ja)\/blog\/tags\/(?:__|test-seed(?:-|\/|$))/i.test(pathname)) {
+  // Internal/test taxonomy is not public content. Keep it out of the index even
+  // when a stale CMS tag still exists. The sitemap drops the same slugs — see
+  // isInternalTaxonomySlug — so a tag is never served and advertised
+  // inconsistently.
+  const tagPage = pathname.match(/^\/(?:en|cn|ja)\/blog\/tags\/([^/]+)\/?$/);
+  if (tagPage && isInternalTaxonomySlug(decodeURIComponent(tagPage[1]))) {
     return context.rewrite('/404');
   }
 
@@ -54,12 +68,6 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (moduleMove) {
     const [, lang, slug] = moduleMove;
     return context.redirect(`/${lang}/solutions/${MODULE_PAGE_MOVES[slug]}`, 301);
-  }
-
-  // Russian locale removed from this site — permanently redirect all /ru/* to English
-  if (pathname === '/ru' || pathname.startsWith('/ru/')) {
-    const englishPath = pathname === '/ru' ? '/en' : pathname.replace(/^\/ru\//, '/en/');
-    return context.redirect(englishPath, 301);
   }
 
   // Blog only exists in en/cn/ja — other locales' blog URLs are gone (hard 404)
@@ -112,6 +120,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
     }
   }
   
+  // No rule above claimed this Russian URL — send it to its English twin.
+  if (isRussian) {
+    return context.redirect(pathname, 301);
+  }
+
   // Continue with normal request processing
   return next();
 });

@@ -5,6 +5,8 @@ import path from 'path';
 import fs from 'fs';
 import sift from 'sift';
 
+import { isInternalTaxonomySlug } from './internal-taxonomy';
+
 // Configuration
 const CONFIG = {
   contentRoot: path.join(process.cwd(), 'content'),
@@ -907,13 +909,14 @@ export async function getSitemapLinks() {
     { lang: 'x-default', url: `/en${path}` },
   ];
 
-  // Only tags with a slug have real tag pages — never emit /blog/tags/null
+  // Only tags with a slug have real tag pages — never emit /blog/tags/null.
+  // Internal/test slugs go through the same predicate the middleware uses to
+  // 404 them, so a tag can't be advertised here while its page returns 404 —
+  // or dropped here while its page still returns 200.
   const tagLinks = tags
     .filter((tag: any) => {
       const slug = typeof tag.slug === 'string' ? tag.slug.trim() : '';
-      const title = typeof tag.title === 'string' ? tag.title.trim() : '';
-      return slug && !slug.startsWith('__') && !/^test-seed(?:-|$)/i.test(slug) &&
-        !title.startsWith('__') && !/^test-seed(?:\s|$)/i.test(title);
+      return Boolean(slug) && !isInternalTaxonomySlug(slug);
     })
     .map((tag: any) => ({
       url: `/en/blog/tags/${tag.slug}`,

@@ -2,10 +2,13 @@
 // structured data. Values here must stay consistent with page-visible content
 // (Google requires structured data to describe what users actually see).
 
-const SITE_URL = 'https://www.nocobase.com';
+export const SITE_URL = 'https://www.nocobase.com';
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
-const SOFTWARE_ID = `${SITE_URL}/#software`;
+// The one canonical NocoBase product entity. A page that says something more
+// about the product — pricing, offers, ratings — must attach it to this @id
+// instead of minting a second SoftwareApplication for the same software.
+export const SOFTWARE_ID = `${SITE_URL}/#software`;
 
 const SAME_AS = [
   'https://github.com/nocobase/nocobase',
