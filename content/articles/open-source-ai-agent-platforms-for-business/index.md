@@ -471,3 +471,20 @@ If you want to build similar enterprise applications with AI and NocoBase, these
 👉 [Build a CRM with AI + NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)
 
 👉 [Build an Enterprise IT Operations System with AI + NocoBase](https://www.nocobase.com/en/blog/build-it-operations-system-with-ai-nocobase)
+
+
+**Related reading**:
+
+* **[How to Build a Production-Ready Ticketing System with AI](https://www.nocobase.com/en/blog/build-production-ready-ticketing-system-with-ai)**
+* **[Building an Inventory Management System: Vibe Coding vs NocoBase + AI](https://www.nocobase.com/en/blog/building-inventory-management-system-vibe-coding-vs-nocobase-ai)**
+* **[How to Build a Production-Ready IT Operations System with AI and NocoBase](https://www.nocobase.com/en/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow: Flexible Databases vs Enterprise Systems](https://www.nocobase.com/en/blog/nocobase-vs-baserow)**
+* **[How to Build a Production-Ready CRM with AI and NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[How to Design an IT Asset Management System: Data Model, Lifecycle, and Workflows](https://www.nocobase.com/en/blog/enterprise-it-asset-management-system-guide)**
+* **[How to Choose a Smartsheet Alternative: 7 Tools Compared](https://www.nocobase.com/en/blog/best-smartsheet-alternatives)**
+* **[5 Open-Source AI No-Code Tools for Complex Relational Data Models](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[What Is AI No-Code? A Practical Guide to No-Code Platforms in the AI Era](https://www.nocobase.com/en/blog/what-is-ai-no-code)**
+* **[9 Open-Source AI No-Code Tools on GitHub Worth Watching](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-github-9)**
+* **[14 Open Source AI Agent Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16)**
+* **[Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 Open Source Tools to Use with WorkBuddy](https://www.nocobase.com/en/blog/workbuddy-open-source-tools)**

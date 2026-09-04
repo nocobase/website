@@ -471,3 +471,20 @@ AI と NocoBase を使って同様の企業アプリを構築したい場合は�
 👉 [AI + NocoBase で CRM を構築](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)
 
 👉 [AI + NocoBase で企業 IT 運用システムを構築](https://www.nocobase.com/ja/blog/build-it-operations-system-with-ai-nocobase)
+
+
+**関連記事**：
+
+* **[AI と NocoBase で本番運用できるチケット管理システムを構築する方法](https://www.nocobase.com/ja/blog/build-production-ready-ticketing-system-with-ai)**
+* **[在庫管理システム構築比較：純粋な AI 構築 vs NocoBase + AI](https://www.nocobase.com/ja/blog/building-inventory-management-system-vibe-coding-vs-nocobase-ai)**
+* **[AI と NocoBase で 2 時間以内に企業 IT 運用システムを構築する方法](https://www.nocobase.com/ja/blog/build-it-operations-system-with-ai-nocobase)**
+* **[NocoBase vs Baserow：柔軟なデータベースとエンタープライズ業務システム](https://www.nocobase.com/ja/blog/nocobase-vs-baserow)**
+* **[AI と NocoBase で本番運用できる CRM を構築する方法](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)**
+* **[企業向け IT 資産管理システム構築ガイド：要件整理から導入まで](https://www.nocobase.com/ja/blog/enterprise-it-asset-management-system-guide)**
+* **[プロジェクト管理と業務フローに使える Smartsheet 代替ツール 7 選](https://www.nocobase.com/ja/blog/best-smartsheet-alternatives)**
+* **[複雑なリレーションモデルに適したオープンソース AI ノーコードツール 5 選](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-complex-relational-models)**
+* **[AI ノーコードとは？AI 時代のノーコードプラットフォーム実用ガイド](https://www.nocobase.com/ja/blog/what-is-ai-no-code)**
+* **[GitHub で注目したい 9 つのオープンソース AI ノーコードツール](https://www.nocobase.com/ja/blog/open-source-ai-no-code-tools-github-9)**
+* **[GitHub で注目したい14のオープンソース AI Agent ツール](https://www.nocobase.com/ja/blog/github-open-source-ai-agent-tools-16)**
+* **[GitHub Stars が多い 8 つのオープンソース AI Assistant ツール](https://www.nocobase.com/ja/blog/top-open-source-ai-assistant-tools-github-stars)**
+* **[6 つの WorkBuddy と組み合わせて使いやすいオープンソースツール](https://www.nocobase.com/ja/blog/workbuddy-open-source-tools)**

@@ -8,7 +8,7 @@
   "description_ja": "企業向けオープンソース AI Agent プラットフォーム 10 選を、自動化、社内アプリ、ビジュアル Agent、ナレッジベース、RAG の観点から比較します。",
   "slug": "open-source-ai-agent-platforms-for-business",
   "publishedAt": "2026-09-04T13:36:41.022Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-09-04T15:02:14.183Z",
+    "updatedAt": "2026-09-04T15:02:14.193Z",
+    "id": 2689,
+    "title": "Group 39",
+    "filename": "Group 39-8n094r.jpg",
+    "extname": ".jpg",
+    "size": 141333,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Group%2039-8n094r.jpg",
+    "preview": "https://static-docs.nocobase.com/Group%2039-8n094r.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -50,6 +66,6 @@
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-09-04T14:36:56.400Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-09-04T15:07:09.428Z"
 }
