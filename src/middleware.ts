@@ -28,8 +28,26 @@ const MODULE_PAGE_MOVES: Record<string, string> = {
   'hr-management': 'all-in-one/hr',
 };
 
+const COMMERCIAL_LOCALES = new Set(['en', 'cn', 'tw', 'ja', 'fr', 'es', 'de', 'pt', 'id', 'vi']);
+
 export const onRequest = defineMiddleware(async (context, next) => {
   const { pathname } = context.url;
+
+  // Preserve common pricing URLs while keeping /commercial as the canonical
+  // path. Every locale below has a corresponding commercial page.
+  if (pathname === '/pricing' || pathname === '/pricing/') {
+    return context.redirect('/en/commercial', 301);
+  }
+  const localizedPricing = pathname.match(/^\/([a-z]{2})\/pricing\/?$/);
+  if (localizedPricing && COMMERCIAL_LOCALES.has(localizedPricing[1])) {
+    return context.redirect(`/${localizedPricing[1]}/commercial`, 301);
+  }
+
+  // Internal/test taxonomy is not public content. Keep it out of the index
+  // even when a stale CMS tag still exists.
+  if (/^\/(en|cn|ja)\/blog\/tags\/(?:__|test-seed(?:-|\/|$))/i.test(pathname)) {
+    return context.rewrite('/404');
+  }
 
   // Redirect old top-level module pages to their new all-in-one sub-route
   const moduleMove = pathname.match(/^\/([a-z]{2})\/solutions\/(sales-management|asset-management|hr-management)\/?$/);
@@ -96,4 +114,4 @@ export const onRequest = defineMiddleware(async (context, next) => {
   
   // Continue with normal request processing
   return next();
-}); 
+});
