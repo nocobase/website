@@ -867,18 +867,36 @@ export async function getSitemapLinks() {
     listArticles({ pageSize: 5000 }),
   ]);
 
-  const baseLinks = [
-    {
-      url: '/',
-      links: [
-        { lang: 'en-US', url: `/en/` },
-        { lang: 'zh-CN', url: `/cn/` },
-        { lang: 'ja-JP', url: `/ja/` },
-        { lang: 'fr-FR', url: `/fr/` },
-        { lang: 'x-default', url: `/` },
-      ],
-    },
+  const marketingLocales = [
+    { code: 'en', lang: 'en-US' },
+    { code: 'cn', lang: 'zh-CN' },
+    { code: 'tw', lang: 'zh-TW' },
+    { code: 'ja', lang: 'ja-JP' },
+    { code: 'fr', lang: 'fr-FR' },
+    { code: 'es', lang: 'es-ES' },
+    { code: 'de', lang: 'de-DE' },
+    { code: 'pt', lang: 'pt-BR' },
+    { code: 'id', lang: 'id-ID' },
+    { code: 'vi', lang: 'vi-VN' },
   ];
+
+  const generateMarketingLanguageLinks = (path: string) => [
+    ...marketingLocales.map(({ code, lang }) => ({
+      lang,
+      url: path === '/' && code === 'en' ? '/' : `/${code}${path === '/' ? '' : path}`,
+    })),
+    { lang: 'x-default', url: path === '/' ? '/' : `/en${path}` },
+  ];
+
+  // List each localized URL as its own sitemap entry. Alternate links alone do
+  // not replace including every canonical locale URL in the sitemap.
+  const localizedMarketingLinks = ['/', '/commercial'].flatMap((pagePath) => {
+    const links = generateMarketingLanguageLinks(pagePath);
+    return marketingLocales.map(({ code }) => ({
+      url: pagePath === '/' && code === 'en' ? '/' : `/${code}${pagePath === '/' ? '' : pagePath}`,
+      links,
+    }));
+  });
 
   // Blog only exists in en/cn/ja — other locales return 404, so never
   // advertise them to search engines.
@@ -891,7 +909,12 @@ export async function getSitemapLinks() {
 
   // Only tags with a slug have real tag pages — never emit /blog/tags/null
   const tagLinks = tags
-    .filter((tag: any) => tag.slug)
+    .filter((tag: any) => {
+      const slug = typeof tag.slug === 'string' ? tag.slug.trim() : '';
+      const title = typeof tag.title === 'string' ? tag.title.trim() : '';
+      return slug && !slug.startsWith('__') && !/^test-seed(?:-|$)/i.test(slug) &&
+        !title.startsWith('__') && !/^test-seed(?:\s|$)/i.test(title);
+    })
     .map((tag: any) => ({
       url: `/en/blog/tags/${tag.slug}`,
       lastmod: tag.updatedAt,
@@ -906,7 +929,7 @@ export async function getSitemapLinks() {
 
   // Tutorials are retired on this site — /{locale}/tutorials/* now 301s to the
   // docs site (see middleware), so they are no longer advertised in the sitemap.
-  return baseLinks.concat(tagLinks).concat(articleLinks);
+  return localizedMarketingLinks.concat(tagLinks).concat(articleLinks);
 }
 
 // Release notes functions
