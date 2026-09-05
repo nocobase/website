@@ -61,11 +61,11 @@
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
-  "about": null,
-  "mentions": null,
+  "about": "Open-Source AI Agent Platforms\nBusiness Automation\nAI Application Development\nRetrieval-Augmented Generation (RAG)",
+  "mentions": "Reddit\nChatGPT\nn8n\nZapier\nLangChain\nCrewAI\nHaystack\nOllama\nvLLM\nGoogle Drive",
   "author": "Yuan Tianqi",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-09-04T15:07:09.428Z"
+  "updatedAt": "2026-09-05T13:48:46.944Z"
 }
