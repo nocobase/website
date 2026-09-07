@@ -58,11 +58,16 @@ jobs:
           push: true
           tags: ${{ steps.set-tags.outputs.tags }}
 
+      # Deploy only from main. A pull_request build pushes a pr-N image, but the
+      # host's compose file pins main, so redeploying here restarted production
+      # on every PR and every push to a PR branch without shipping anything.
       - name: Setup SSH
+        if: github.event_name == 'push'
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Execute remote command
+        if: github.event_name == 'push'
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.WEBSITE_HOST }} 'cd ${{ secrets.WEBSITE_DIR }} && docker compose pull && docker compose up -d'
