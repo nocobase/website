@@ -41,4 +41,10 @@ const pathFor = (lang) => {
 {visibleLocales.map((l) => (
   <link rel="alternate" href={new URL(pathFor(l.code), Astro.site)} hreflang={l.hreflang} />
 ))}
-<link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+<!--
+  x-default is the English version of THIS page, not the site root. Pointing
+  every page at "/" contradicts the sitemap, which names /en{path}, and when the
+  page and the sitemap disagree Google discards the whole hreflang cluster.
+  pathFor("en") already collapses the English homepage back to "/".
+-->
+<link rel="alternate" hreflang="x-default" href={new URL(pathFor("en"), Astro.site)} />
