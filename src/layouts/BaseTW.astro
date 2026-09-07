@@ -5,6 +5,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import DocSearch from "../components/DocSearch.astro";
 import MicrosoftClarity from "../components/MicrosoftClarity.astro";
 import { listLightSolutions } from "../utils";
+import { getGithubStarLabel } from "../utils/github-stars";
 
 const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 
@@ -75,6 +76,10 @@ const meta = {
       keywords ||
       "nocobase,AI,AI員工,AI Employees,Claude code,Codex,Deepseek,OpenCode,低代碼,無代碼,零代碼,私有部署,開源,no-code,low-code,open-source,零代碼開發,低代碼開發,工作流管理軟件,業務流程管理,協作軟件,企業流程管理,企業管理系統,零代碼系統,零代碼平臺,零代碼搭建,免費零代碼開發平臺,無代碼系統,無代碼平臺,無代碼搭建,免費無代碼開發平臺",
 };
+
+// The count is fetched once per process and falls back to a constant,
+// so this never blocks rendering on api.github.com.
+const githubStars = await getGithubStarLabel();
 ---
 
 <!doctype html>
@@ -455,7 +460,7 @@ const meta = {
         <div class="github">
           <a href="https://github.com/nocobase/nocobase" target="_blank" class="github-btn" title="GitHub - NocoBase">
             <i class="uil uil-github"></i>
-            <span class="github-stars">24k</span>
+            <span class="github-stars">{githubStars}</span>
           </a>
         </div>
         <!-- End Logo container-->
@@ -510,9 +515,9 @@ const meta = {
                 <li>
                   <ul>
                     <li class="megamenu-head"><i class="uil uil-puzzle-piece fs-6 align-middle"></i> 開源</li>
-                    <li></li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub<i class="uil uil-star"></i>24k  <i class="uil uil-external-link-alt"></i></a></li>
-                    <li></li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee <span class="git-project-gvp">GVP</span>  <i class="uil uil-external-link-alt"></i></a></li>
-                    <li></li><a href="https://github.com/nocobase/awesome-nocobase" title="Awesome NocoBase" class="sub-menu-item" target="_blank">Awesome NocoBase <i class="uil uil-external-link-alt"></i></a></li>
+                    <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub<i class="uil uil-star"></i>{githubStars}  <i class="uil uil-external-link-alt"></i></a></li>
+                    <li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee <span class="git-project-gvp">GVP</span>  <i class="uil uil-external-link-alt"></i></a></li>
+                    <li><a href="https://github.com/nocobase/awesome-nocobase" title="Awesome NocoBase" class="sub-menu-item" target="_blank">Awesome NocoBase <i class="uil uil-external-link-alt"></i></a></li>
                   </ul>
                 </li>
               </ul>
