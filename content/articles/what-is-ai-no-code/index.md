@@ -126,9 +126,9 @@ For example:
 
 The core of this need is: **how to combine data, pages, permissions, workflows, and AI capabilities into a business system that can keep running.**
 
-This is where enterprise business-system AI no-code platforms are needed.
+This is where [enterprise business-system AI no-code platforms](https://www.nocobase.com/en/blog/open-source-ai-no-code-tools-enterprise-software-development) are needed.
 
-They usually provide data modeling, page building, permission control, workflows, automation, audit logs, API integration, plugin extension, private deployment, and other capabilities. AI is not a standalone application here. It participates in system building and business operations.
+They usually provide data modeling, page building, permission control, workflows, automation, audit logs, API integration, plugin extension, private deployment, and other capabilities. AI is not a standalone application here. It participates in [system building and business operations](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools).
 
 ### [NocoBase](https://www.nocobase.com/en)
 
