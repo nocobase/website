@@ -4,19 +4,19 @@ Over the past year, the number of open source AI tools has grown rapidly. On Git
 
 ![AI tools.png](https://static-docs.nocobase.com/AI%20tools-xtlp52.png)
 
-We found that many popular open source AI tools are designed to enhance the capabilities of existing AI systems and AI Agents.
+Many of the popular projects in this category are **supporting tools for AI Agents rather than standalone Agents or complete Agent platforms**. They sit at different points in the Agent stack: browser control, external tool access, coding, prompt optimization, configuration management, and business application infrastructure.
 
-They work like capability boosters for AI Agents: some help Agents operate webpages, some make Agents better at writing code, some allow Agents to call external tools, some make AI output more stable, and some help AI work inside real business systems.
+That distinction matters when comparing projects. A browser automation library and a business application platform may both help an Agent complete real work, but they solve different parts of the system.
 
-So, in this article, we start from the most popular open source projects under GitHub’s `ai-tools` topic. Based on GitHub Stars, we will look at 6 of the most popular open source AI tools today and explain which AI capabilities they enhance.
+So, in this article, we start from popular open source projects under GitHub’s `ai-tools` topic and look at 6 tools by GitHub Stars, with an additional focus on the **role each tool plays in the Agent stack**.
+
+If you are comparing complete platforms for building internal business systems around Agents, see [8 Open-Source AI Agent Platforms for Building Internal Tools](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools).
 
 ---
 
 💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
-
-
 
 ## How did we select these tools?
 
@@ -28,16 +28,18 @@ This selection mainly follows these rules:
 2. **Sorting method:** Based on GitHub Stars, shown from rank 6 to rank 1
 
 
-| Rank | Tool             | GitHub Stars | Main direction                      | Best suited for                                                                                |
-| ---- | ---------------- | ------------ | ----------------------------------- | ---------------------------------------------------------------------------------------------- |
-| 6    | NocoBase         | 22.6k        | AI-powered no-code business systems | Building enterprise internal systems such as CRM, approval, ticketing, and operations backends |
-| 5    | OpenCLI          | 23.4k        | AI tool interface / CLI             | Packaging websites, local tools, or browser sessions into commands that AI Agents can call     |
-| 4    | OpenClaude       | 28.3k        | AI Coding Agent                     | Using a multi-model AI Coding Agent in the terminal                                            |
-| 3    | prompt-optimizer | 30.3k        | Prompt optimization                 | Optimizing, testing, and reusing prompts                                                       |
-| 2    | cc-switch        | 90k          | AI Coding tool management           | Managing configurations for AI Coding tools such as Claude Code, Codex, and OpenCode           |
-| 1    | browser-use      | 96.8k        | Browser automation / AI Agent       | Letting AI operate webpages and complete browser tasks                                         |
+| Rank | Tool             | GitHub Stars | Main direction                      | Role in the agent stack          | Best suited for                                                                                |
+| ---- | ---------------- | ------------ | ----------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 6    | NocoBase         | 22.6k        | AI-powered no-code business systems | Business application layer       | Building enterprise internal systems such as CRM, approval, ticketing, and operations backends |
+| 5    | OpenCLI          | 23.4k        | AI tool interface / CLI             | Tool access and execution layer  | Packaging websites, local tools, or browser sessions into commands that AI Agents can call     |
+| 4    | OpenClaude       | 28.3k        | AI Coding Agent                     | Coding Agent / development layer | Using a multi-model AI Coding Agent in the terminal                                            |
+| 3    | prompt-optimizer | 30.3k        | Prompt optimization                 | Prompt design and optimization   | Optimizing, testing, and reusing prompts                                                       |
+| 2    | cc-switch        | 90k          | AI Coding tool management           | Configuration management layer   | Managing configurations for AI Coding tools such as Claude Code, Codex, and OpenCode           |
+| 1    | browser-use      | 96.8k        | Browser automation / AI Agent       | Browser interaction layer        | Letting AI operate webpages and complete browser tasks                                         |
 
 Data collected on June 3, 2026. Since GitHub Stars change over time, the actual numbers may be slightly different when you read this article.
+
+If you are looking for a broader ranking of standalone Agent projects rather than tools that support the Agent stack, see [Top Open-Source AI Agent Projects on GitHub](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects).
 
 ## NocoBase
 
@@ -569,8 +571,6 @@ This is where platforms like NocoBase fit well. It does not simply let AI genera
 In the past, we paid more attention to “what AI can generate.” But in real workflows, the more important questions are: Can AI operate real tools? Can it call external systems? Can it enter business workflows? Can the generated result continue to be maintained?
 
 This is exactly the value of these open source AI tools.
-
-
 
 **Related reading**
 

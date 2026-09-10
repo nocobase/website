@@ -10,7 +10,7 @@ The flowchart below was created by the author after countless rounds of debuggin
 
 ![Should I use an Agent](https://static-docs.nocobase.com/2-45bvv4.png)
 
-Image source: https://decodingml.substack.com/p/stop-building-ai-agents
+Image source: [https://decodingml.substack.com/p/stop-building-ai-agents](https://decodingml.substack.com/p/stop-building-ai-agents)
 
 The article distilled an important principle: **agents work best in unstable processes where humans remain in the loop for oversight** — in these scenarios, an agent’s exploratory and creative capabilities often outperform a rigid workflow.
 
@@ -19,9 +19,11 @@ The article distilled an important principle: **agents work best in unstable pro
 
 ![scenarios](https://static-docs.nocobase.com/3-ba22w7.png)
 
-Image source: https://decodingml.substack.com/p/stop-building-ai-agents
+Image source: [https://decodingml.substack.com/p/stop-building-ai-agents](https://decodingml.substack.com/p/stop-building-ai-agents)
 
 If you’ve read the above and still feel your business scenario is a good fit for building an agent, this article will walk you through the **top 18 open source ****[agent projects](https://github.com/topics/agent)**** on GitHub by star count**. For each, we’ll analyze their strengths and limitations from three perspectives — project overview, core features, and use cases — helping you maximize the value of agents in the right contexts.
+
+If your goal is to compare complete platforms for building internal business systems around Agents, see [8 Open-Source AI Agent Platforms for Building Internal Tools](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools).
 
 ---
 
@@ -35,11 +37,19 @@ If you’ve read the above and still feel your business scenario is a good fit f
 * [Top 8 Open Source MCP Projects with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-mcp-projects)
 * [Top 40 Open-source Developer Tools with the Most GitHub Stars](https://www.nocobase.com/en/blog/github-open-source-developer-tools)
 
+**Ranking Methodology**
+
+This article was originally published in 2025, so we keep the original project order rather than re-ranking the list each time it is updated.
+
+Project information, however, is reviewed regularly. GitHub Stars, licenses, repository status, and other basic details are updated based on the latest available information, so some numbers or project details may differ from the original version.
+
 ## No.1: Dify
 
 ![Dify](https://static-docs.nocobase.com/4-in2l5n.png)
 
-* GitHub Star: 110k
+* GitHub Stars: 155.3k
+* License: Dify Open Source License (based on Apache-2.0 with additional conditions)
+* Project status: Active
 * GitHub: [https://github.com/langgenius/dify](https://github.com/langgenius/dify)
 * Website: [https://dify.ai/](https://dify.ai/)
 
@@ -61,36 +71,30 @@ If you’ve read the above and still feel your business scenario is a good fit f
 * Integrating with enterprise knowledge bases
 * Rapid deployment of content generation tools
 
-## No.2: Lobe Chat
+## No.2: LLMs-from-scratch
 
-![Lobe Chat](https://static-docs.nocobase.com/6-8eachs.png)
+![LLMs-from-scratch](https://static-docs.nocobase.com/15-w7easd.png)
 
-* GitHub Star: 64.3k
-* GitHub: [https://github.com/lobehub/lobe-chat](https://github.com/lobehub/lobe-chat)
-* Website: [https://lobechat.com/](https://lobechat.com/)
+* GitHub Stars: 102.3k
+* License: Apache-2.0
+* Project status: Active
+* GitHub: [https://github.com/rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
 
-![Lobe Chat](https://static-docs.nocobase.com/7-t7pkjl.png)
+![LLMs-from-scratch](https://static-docs.nocobase.com/16-68zqun.png)
 
 **Overview:**
 
-**Lobe Chat** is an open-source multi-model chat and application platform with a strong focus on UX. It supports voice, visual recognition, multimodal input, a plugin marketplace, mobile optimization, and multi-user management.
+**LLMs-from-scratch** is an educational project that builds a large language model from the ground up, helping developers understand the core principles and training process of LLMs.
 
-**Core Features:**
-
-* **Multimodal & Plugin Support:** Handles voice conversations, image recognition and generation, and can extend functionality via a plugin marketplace to support diverse interaction needs.
-* **Agent Index Platform:** Community-driven index where users can browse, add, or submit custom assistants for easier extension and reuse.
-* **Unified Model Integration:** Provides a unified API interface and modular architecture to easily connect with model providers such as OpenAI, Anthropic, Gemini, and Ollama, making platform migration and upgrades seamless.
-
-**Use Cases:**
-
-* Quickly building high-interaction, multimodal AI chat applications
-* Deploying domain-specific assistants
+👉 [See the full introduction and use cases for more details.](https://www.nocobase.com/en/blog/github-open-source-ai-projects#no15-llms-from-scratch)
 
 ## No.3: RAGFlow
 
 ![RAGFlow](https://static-docs.nocobase.com/8-p4g4dr.png)
 
-* GitHub Star: 62.1k
+* GitHub Stars: 90.4k
+* License: Apache-2.0
+* Project status: Active
 * GitHub: [https://github.com/infiniflow/ragflow](https://github.com/infiniflow/ragflow)
 * Website: [https://ragflow.io/](https://ragflow.io/)
 
@@ -116,9 +120,11 @@ If you’ve read the above and still feel your business scenario is a good fit f
 
 ![OpenHands](https://static-docs.nocobase.com/10-b9ssqh.png)
 
-* GitHub Star: 62k
-* GitHub: https://github.com/All-Hands-AI/OpenHands
-* Website: https://all-hands.dev/
+* GitHub Stars: 86.9k
+* License: MIT
+* Project status: Active
+* GitHub: [https://github.com/OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)
+* Website: [https://openhands.dev/](https://openhands.dev/)
 
 ![OpenHands](https://static-docs.nocobase.com/11-a2rzhi.png)
 
@@ -140,13 +146,70 @@ As an MIT-licensed open-source project, OpenHands can be deployed locally via Do
 * Automating testing and deployment pipelines
 * Rapid prototyping and tool development
 
-## No.5: MetaGPT
+## No.5: LobeHub (formerly Lobe Chat)
+
+![Lobe Chat](https://static-docs.nocobase.com/6-8eachs.png)
+
+* GitHub Stars: 81.5k
+* License: LobeHub Community License (based on Apache-2.0 with additional conditions)
+* Project status: Active; repository renamed/moved to `lobehub/lobehub` and the product is now presented as LobeHub
+* GitHub: [https://github.com/lobehub/lobehub](https://github.com/lobehub/lobehub)
+* Website: [https://lobechat.com/](https://lobechat.com/)
+
+![Lobe Chat](https://static-docs.nocobase.com/7-t7pkjl.png)
+
+**Overview:**
+
+**Lobe Chat** is an open-source multi-model chat and application platform with a strong focus on UX. It supports voice, visual recognition, multimodal input, a plugin marketplace, mobile optimization, and multi-user management.
+
+**Core Features:**
+
+* **Multimodal & Plugin Support:** Handles voice conversations, image recognition and generation, and can extend functionality via a plugin marketplace to support diverse interaction needs.
+* **Agent Index Platform:** Community-driven index where users can browse, add, or submit custom assistants for easier extension and reuse.
+* **Unified Model Integration:** Provides a unified API interface and modular architecture to easily connect with model providers such as OpenAI, Anthropic, Gemini, and Ollama, making platform migration and upgrades seamless.
+
+**Use Cases:**
+
+* Quickly building high-interaction, multimodal AI chat applications
+* Deploying domain-specific assistants
+
+## No.6: Unsloth
+
+![Unsloth](https://static-docs.nocobase.com/19-ihomc8.png)
+
+* GitHub Stars: 75.9k
+* License: Apache-2.0 for the core package; AGPL-3.0 for optional components such as Unsloth Studio
+* Project status: Active
+* GitHub: [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
+* Website: [https://docs.unsloth.ai/](https://docs.unsloth.ai/)
+
+![Unsloth](https://static-docs.nocobase.com/20-eci5h1.png)
+
+**Overview:**
+
+**Unsloth** is an open-source toolkit designed for fine-tuning LLMs (such as OpenAI gpt-oss, Qwen3, Llama 4) with a focus on higher efficiency and memory optimization. Built on OpenAI’s Triton architecture, it significantly accelerates training speed while reducing GPU memory usage.
+
+**Core Features:**
+
+* **Memory-Optimized Fine-Tuning:** Delivers a 1.5–2.2× speed boost for fine-tuning mainstream LLMs while reducing GPU memory usage by up to 70–80%.
+* **Easy Notebook Workflow:** Users simply add a dataset and click “Run All” to complete model fine-tuning quickly.
+* **Broad Model Compatibility:** Supports fine-tuning LLMs including Llama, Gemma, Qwen, and more.
+
+**Use Cases:**
+
+* Rapidly fine-tuning LLMs for research or product prototyping
+* Education and training
+* Scenarios requiring high memory efficiency, such as deployment on resource-limited devices
+
+## No.7: MetaGPT
 
 ![MetaGPT](https://static-docs.nocobase.com/12-btl5l3.png)
 
-* GitHub Star: 57.8k
-* GitHub: https://github.com/FoundationAgents/MetaGPT
-* Website: https://mgx.dev/
+* GitHub Stars: 69.9k
+* License: MIT
+* Project status: Active
+* GitHub: [https://github.com/FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT)
+* Website: [https://mgx.dev/](https://mgx.dev/)
 
 ![13-2pwtad.png](https://static-docs.nocobase.com/13-2pwtad.png)
 
@@ -168,79 +231,15 @@ MetaGPT is a multi-agent collaboration framework inspired by the concept of simu
 * Rapidly prototyping collaborative team workflows
 * Exploring AI-driven software development optimization and automation
 
-## No.6: LLMs-from-scratch
-
-![LLMs-from-scratch](https://static-docs.nocobase.com/15-w7easd.png)
-
-* GitHub Star: 56k
-* GitHub: [https://github.com/rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
-
-![LLMs-from-scratch](https://static-docs.nocobase.com/16-68zqun.png)
-
-**Overview:**
-
-**LLMs-from-scratch** is an educational project that builds a large language model from the ground up, helping developers understand the core principles and training process of LLMs.
-
-👉 [See the full introduction and use cases for more details.](https://www.nocobase.com/en/blog/github-open-source-ai-projects#no15-llms-from-scratch)
-
-## No.7: Huginn
-
-![Huginn](https://static-docs.nocobase.com/17-wzc3ll.png)
-
-* GitHub Star: 47k
-* GitHub: https://github.com/huginn/huginn
-
-![Huginn](https://static-docs.nocobase.com/18-orl7h1.png)
-
-**Overview:**
-
-**Huginn** is an open-source automation tool that allows users to run agents on their own servers to collect information from the web and trigger actions based on conditions — such as sending email notifications or monitoring keywords. Designed with data control in mind, Huginn has maintained long-term community activity thanks to its self-hosted, privacy-friendly, and extensible agent system.
-
-**Core Features:**
-
-* **Self-Hosted Web Agent Platform:** Users deploy agents on their own servers, process data autonomously, and ensure full privacy and control.
-* **Event–Action Rules Engine:** Supports conditional triggers that automatically execute actions like sending notifications, running scripts, or making HTTP calls when specific web events occur.
-* **Extensible Agent Mechanism:** Comes with many built-in agents and supports adding custom agents via Huginn Agent gems.
-
-**Use Cases:**
-
-* Information monitoring and alerts
-* Data scraping and automated workflows
-* Building custom automation tools
-
-## No.8: Unsloth
-
-![Unsloth](https://static-docs.nocobase.com/19-ihomc8.png)
-
-* GitHub Star: 43.8k
-* GitHub: https://github.com/unslothai/unsloth
-* Website: https://docs.unsloth.ai/
-
-![Unsloth](https://static-docs.nocobase.com/20-eci5h1.png)
-
-**Overview:**
-
-**Unsloth** is an open-source toolkit designed for fine-tuning LLMs (such as OpenAI gpt-oss, Qwen3, Llama 4) with a focus on higher efficiency and memory optimization. Built on OpenAI’s Triton architecture, it significantly accelerates training speed while reducing GPU memory usage.
-
-**Core Features:**
-
-* **Memory-Optimized Fine-Tuning:** Delivers a 1.5–2.2× speed boost for fine-tuning mainstream LLMs while reducing GPU memory usage by up to 70–80%.
-* **Easy Notebook Workflow:** Users simply add a dataset and click “Run All” to complete model fine-tuning quickly.
-* **Broad Model Compatibility:** Supports fine-tuning LLMs including Llama, Gemma, Qwen, and more.
-
-**Use Cases:**
-
-* Rapidly fine-tuning LLMs for research or product prototyping
-* Education and training
-* Scenarios requiring high memory efficiency, such as deployment on resource-limited devices
-
-## No.9: Mem0
+## No.8: Mem0
 
 ![Mem0](https://static-docs.nocobase.com/21-uxkki5.png)
 
-* GitHub Star: 38.1k
-* GitHub: https://github.com/mem0ai/mem0
-* Website: https://mem0.ai/
+* GitHub Stars: 65.0k
+* License: Apache-2.0
+* Project status: Active
+* GitHub: [https://github.com/mem0ai/mem0](https://github.com/mem0ai/mem0)
+* Website: [https://mem0.ai/](https://mem0.ai/)
 
 ![Mem0](https://static-docs.nocobase.com/22-bmb2sv.png)
 
@@ -262,89 +261,15 @@ In LOCOMO benchmark tests, Mem0 outperformed OpenAI Memory with around 26% highe
 * **AI Assistants:** Maintain task and persona memory across sessions for more natural, coherent interactions
 * **Medical & Counseling Systems:** Preserve context to enhance service quality and precision feedback
 
-## No.10: ChatTTS
-
-![ChatTTS](https://static-docs.nocobase.com/23-azdged.png)
-
-* GitHub Star: 37.5k
-* GitHub: https://github.com/2noise/ChatTTS
-* Website: https://2noise.com/
-
-![ChatTTS](https://static-docs.nocobase.com/24-e17utt.png)
-
-**Overview:**
-
-**ChatTTS** is an open-source text-to-speech system optimized specifically for conversational tasks, supporting multi-speaker scenarios with a focus on natural, emotionally rich expression. To prevent misuse, the project incorporates a small amount of high-frequency noise into the trained model and reduces file quality, with plans to implement detection mechanisms to further guide ethical use.
-
-**Key Features:**
-
-* **Conversation-optimized TTS:** Specially tuned for dialogue scenarios, supporting multi-role conversations and natural pacing.
-* **Fine-grained prosody control:** Precisely manages prosodic elements like laughter, pauses, and filler words, making synthesized speech more vivid and lifelike.
-
-**Core Features:**
-
-* Building human-like voice bots or interactive dialogue systems.
-* Character dubbing and language practice tools in educational products.
-* Audio assistance for voice content creation and automated podcast generation.
-
-## No.11: Arthas
-
-![Arthas](https://static-docs.nocobase.com/25-1e8yxo.png)
-
-* GitHub Star: 36.6k
-* GitHub: https://github.com/alibaba/arthas
-* Website: https://arthas.aliyun.com/
-
-![Arthas](https://static-docs.nocobase.com/26-rnqi0c.png)
-
-**Overview:**
-
-**Arthas** is an open-source Java diagnostic tool from Alibaba, and since its release, it has become a go-to solution for Java developers troubleshooting production environment issues. Designed to attach dynamically to production applications without modifying code or restarting servers, it allows developers to run debugging commands, inspect stack traces, or set breakpoints, greatly improving efficiency and safety in production issue resolution.
-
-**Core Features:**
-
-* **Dynamic attach execution:** Inject Arthas into a running production JVM app without restarts or code changes to start debugging and monitoring instantly.
-* **CLI-based interactive diagnostics:** Provides commands like `stack`, `trace`, `watch`, and `monitor` to instantly view runtime stacks, method call counts, performance metrics, and more.
-
-**Use Cases:**
-
-* Rapid production incident resolution.
-* Performance bottleneck analysis.
-* Regression testing issue investigation.
-
-## No.12: AgentGPT
-
-![AgentGPT](https://static-docs.nocobase.com/27-yvq9f7.png)
-
-* GitHub Star: 34.7k
-* GitHub: https://github.com/reworkd/AgentGPT
-* Website: https://arthas.aliyun.com/
-
-![AgentGPT](https://static-docs.nocobase.com/28-fwguw8.png)
-
-**Overview:**
-
-**AgentGPT** is an open-source project that allows users to configure and deploy AI agents directly in the browser without complex setup. With a user-friendly interface, simply input a goal, and the agent will “think–act–learn” to accomplish it.
-
-**Core Features:**
-
-* **Browser-based agent configuration:** Set goals and names directly in the web interface to launch agents, lowering deployment barriers.
-* **Goal-driven execution:** Agents autonomously plan sub-tasks, execute them, provide feedback, and optimize their approach.
-* **Automated environment setup:** Built-in CLI configures environment variables, database (MySQL), backend (FastAPI), and frontend (Next.js) for one-click deployment.
-
-**Use Cases:**
-
-* Task-focused intelligent assistants.
-* Prototype validation tools.
-* Learning and demonstration platforms.
-
-## No.13: Cherry Studio
+## No.9: Cherry Studio
 
 ![Cherry Studio](https://static-docs.nocobase.com/29-z4pzy1.png)
 
-* GitHub Star: 31.3k
-* GitHub: https://github.com/CherryHQ/cherry-studio
-* Website: https://cherry-ai.com/
+* GitHub Stars: 51.6k
+* License: AGPL-3.0 for the Community Edition
+* Project status: Active
+* GitHub: [https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)
+* Website: [https://cherry-ai.com/](https://cherry-ai.com/)
 
 ![Cherry Studio](https://static-docs.nocobase.com/30-qageqb.png)
 
@@ -364,13 +289,124 @@ In LOCOMO benchmark tests, Mem0 outperformed OpenAI Memory with around 26% highe
 * Industry-specific solutions.
 * Knowledge-driven code generation.
 
+## No.10: Huginn
+
+![Huginn](https://static-docs.nocobase.com/17-wzc3ll.png)
+
+* GitHub Stars: 49.9k
+* License: MIT
+* Project status: Active
+* GitHub: [https://github.com/huginn/huginn](https://github.com/huginn/huginn)
+
+![Huginn](https://static-docs.nocobase.com/18-orl7h1.png)
+
+**Overview:**
+
+**Huginn** is an open-source automation tool that allows users to run agents on their own servers to collect information from the web and trigger actions based on conditions — such as sending email notifications or monitoring keywords. Designed with data control in mind, Huginn has maintained long-term community activity thanks to its self-hosted, privacy-friendly, and extensible agent system.
+
+**Core Features:**
+
+* **Self-Hosted Web Agent Platform:** Users deploy agents on their own servers, process data autonomously, and ensure full privacy and control.
+* **Event–Action Rules Engine:** Supports conditional triggers that automatically execute actions like sending notifications, running scripts, or making HTTP calls when specific web events occur.
+* **Extensible Agent Mechanism:** Comes with many built-in agents and supports adding custom agents via Huginn Agent gems.
+
+**Use Cases:**
+
+* Information monitoring and alerts
+* Data scraping and automated workflows
+* Building custom automation tools
+
+## No.11: ChatTTS
+
+![ChatTTS](https://static-docs.nocobase.com/23-azdged.png)
+
+* GitHub Stars: 39.8k
+* License: AGPLv3+ for code; CC BY-NC 4.0 for the model
+* Project status: Active
+* GitHub: [https://github.com/2noise/ChatTTS](https://github.com/2noise/ChatTTS)
+* Website: [https://2noise.com/](https://2noise.com/)
+
+![ChatTTS](https://static-docs.nocobase.com/24-e17utt.png)
+
+**Overview:**
+
+**ChatTTS** is an open-source text-to-speech system optimized specifically for conversational tasks, supporting multi-speaker scenarios with a focus on natural, emotionally rich expression. To prevent misuse, the project incorporates a small amount of high-frequency noise into the trained model and reduces file quality, with plans to implement detection mechanisms to further guide ethical use.
+
+**Key Features:**
+
+* **Conversation-optimized TTS:** Specially tuned for dialogue scenarios, supporting multi-role conversations and natural pacing.
+* **Fine-grained prosody control:** Precisely manages prosodic elements like laughter, pauses, and filler words, making synthesized speech more vivid and lifelike.
+
+**Core Features:**
+
+* Building human-like voice bots or interactive dialogue systems.
+* Character dubbing and language practice tools in educational products.
+* Audio assistance for voice content creation and automated podcast generation.
+
+## No.12: Arthas
+
+![Arthas](https://static-docs.nocobase.com/25-1e8yxo.png)
+
+* GitHub Stars: 37.5k
+* License: Apache-2.0
+* Project status: Active
+* GitHub: [https://github.com/alibaba/arthas](https://github.com/alibaba/arthas)
+* Website: [https://arthas.aliyun.com/](https://arthas.aliyun.com/)
+
+![Arthas](https://static-docs.nocobase.com/26-rnqi0c.png)
+
+**Overview:**
+
+**Arthas** is an open-source Java diagnostic tool from Alibaba, and since its release, it has become a go-to solution for Java developers troubleshooting production environment issues. Designed to attach dynamically to production applications without modifying code or restarting servers, it allows developers to run debugging commands, inspect stack traces, or set breakpoints, greatly improving efficiency and safety in production issue resolution.
+
+**Core Features:**
+
+* **Dynamic attach execution:** Inject Arthas into a running production JVM app without restarts or code changes to start debugging and monitoring instantly.
+* **CLI-based interactive diagnostics:** Provides commands like `stack`, `trace`, `watch`, and `monitor` to instantly view runtime stacks, method call counts, performance metrics, and more.
+
+**Use Cases:**
+
+* Rapid production incident resolution.
+* Performance bottleneck analysis.
+* Regression testing issue investigation.
+
+## No.13: CopilotKit
+
+![CopilotKit](https://static-docs.nocobase.com/39-z4vv5d.png)
+
+* GitHub Stars: 37.3k
+* License: MIT
+* Project status: Active
+* GitHub: [https://github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)
+* Website: [https://docs.copilotkit.ai/](https://docs.copilotkit.ai/)
+
+![CopilotKit](https://static-docs.nocobase.com/40-u5mh13.png)
+
+**Overview:**
+
+**CopilotKit** is an open-source framework for seamlessly integrating AI copilots into applications—whether as embedded chat, intelligent text areas, or full agent interfaces. It provides React UI components and a headless architecture for flexible embedding.
+
+**Core Features:**
+
+* **React & headless UI support:** Plug-and-play UI components or headless API-only deployments.
+* **Application context integration:** Connects app logic, state, and user context to AI agents for more tailored functionality.
+* **Model-architecture decoupling:** Works independently of specific models or agent frameworks, allowing AI stack upgrades without affecting user experience.
+
+**Use Cases:**
+
+* Embedded AI assistants.
+* Custom AI tools.
+* Multi-modal interactive experiences.
+
 ## No.14: Khoj
 
 ![Khoj](https://static-docs.nocobase.com/31-l08bdf.png)
 
-* GitHub Star: 31.3k
-* GitHub: https://github.com/khoj-ai/khoj
-* Website: https://khoj.dev/
+* GitHub Stars: 37.2k
+* License: AGPL-3.0
+* Project status: Active
+* GitHub: [https://github.com/khoj-ai/khoj](https://github.com/khoj-ai/khoj)
+* Website: [https://khoj.dev/](https://khoj.dev/)
 
 ![Khoj](https://static-docs.nocobase.com/32-x8rb4x.png)
 
@@ -390,39 +426,71 @@ In LOCOMO benchmark tests, Mem0 outperformed OpenAI Memory with around 26% highe
 * Automated reminder systems.
 * Cross-tool integration experiences.
 
-## No.15: AIHawk
+## No.15: AgentGPT
+
+![AgentGPT](https://static-docs.nocobase.com/27-yvq9f7.png)
+
+* GitHub Stars: 36.3k
+* License: GPL-3.0
+* Project status: Archived on January 28, 2026; repository is read-only
+* GitHub: [https://github.com/reworkd/AgentGPT](https://github.com/reworkd/AgentGPT)
+* Website: [https://agentgpt.reworkd.ai/](https://agentgpt.reworkd.ai/)
+
+![AgentGPT](https://static-docs.nocobase.com/28-fwguw8.png)
+
+**Overview:**
+
+**AgentGPT** is an open-source project that allows users to configure and deploy AI agents directly in the browser without complex setup. With a user-friendly interface, simply input a goal, and the agent will “think–act–learn” to accomplish it.
+
+**Core Features:**
+
+* **Browser-based agent configuration:** Set goals and names directly in the web interface to launch agents, lowering deployment barriers.
+* **Goal-driven execution:** Agents autonomously plan sub-tasks, execute them, provide feedback, and optimize their approach.
+* **Automated environment setup:** Built-in CLI configures environment variables, database (MySQL), backend (FastAPI), and frontend (Next.js) for one-click deployment.
+
+**Use Cases:**
+
+* Task-focused intelligent assistants.
+* Prototype validation tools.
+* Learning and demonstration platforms.
+
+## No.16: AIHawk
 
 ![AIHawk](https://static-docs.nocobase.com/33-dxlkjy.png)
 
-* GitHub Star: 28.6k
-* GitHub: https://github.com/feder-cr/Jobs\_Applier\_AI\_Agent\_AIHawk
-* Website: https://laboro.co/
+* GitHub Stars: 30.3k
+* License: MIT for current releases; versions distributed before September 2, 2026 remain AGPL-3.0
+* Project status: Active; repositioned in 2026 from job-application automation to a general-purpose browser/computer-use agent
+* GitHub: [https://github.com/feder-cr/Jobs\_Applier\_AI\_Agent\_AIHawk](https://github.com/feder-cr/Jobs\_Applier\_AI\_Agent\_AIHawk)
+* Website: [https://laboro.co/](https://laboro.co/)
 
 ![AIHawk](https://static-docs.nocobase.com/34-g4zibv.png)
 
 **Overview:**
 
-**AIHawk** is an AGPL-licensed open-source AI agent focused on automating job applications. It scrapes job listings and uses language models to generate tailored application materials, helping users apply efficiently.
+**AIHawk** is an open-source browser and computer-use agent for web automation. The project originally focused on automated job applications, but in 2026 it was repositioned as a general-purpose browser agent that can be used through its own interface or as an MCP-connected browser tool.
 
 **Core Features:**
 
-* **Automated job applications:** Crawls job websites and generates optimized application materials.
+* **Browser and computer-use automation:** Lets an AI agent browse websites and carry out multi-step web tasks through natural-language instructions.
 * **Extensible open-source architecture:** Developers can customize behavior or add plugins.
-* **Commercial platform extension:** Evolved into the laboro.co platform, offering hosted services and expanded recruitment automation features.
+* **MCP and browser tooling:** Can expose browser automation capabilities to AI tools such as coding assistants through MCP.
 
 **Use Cases:**
 
-* Automatic job application assistant.
-* Recruitment process automation research.
-* Recruitment platform integration tools.
+* Browser automation and web research.
+* Computer-use tasks across websites.
+* Connecting browser actions to AI assistants through MCP.
 
-## No.16: FastGPT
+## No.17: FastGPT
 
 ![FastGPT](https://static-docs.nocobase.com/35-xvxjpm.png)
 
-* GitHub Star: 25.5k
-* GitHub: https://github.com/labring/FastGPT
-* Website: https://fastgpt.io/
+* GitHub Stars: 29.6k
+* License: FastGPT Open Source License
+* Project status: Active
+* GitHub: [https://github.com/labring/FastGPT](https://github.com/labring/FastGPT)
+* Website: [https://fastgpt.io/](https://fastgpt.io/)
 
 ![FastGPT](https://static-docs.nocobase.com/36-bu5ifv.png)
 
@@ -442,13 +510,15 @@ In LOCOMO benchmark tests, Mem0 outperformed OpenAI Memory with around 26% highe
 * Document analysis and automated summarization workflows.
 * Automated task handling with external API integration.
 
-## No.17: GPT Researcher
+## No.18: GPT Researcher
 
 ![GPT Researcher](https://static-docs.nocobase.com/37-dzrr44.png)
 
-* GitHub Star: 22.9k
-* GitHub: https://github.com/assafelovic/gpt-researcher
-* Website: https://gptr.dev/
+* GitHub Stars: 28.9k
+* License: Apache-2.0
+* Project status: Active
+* GitHub: [https://github.com/assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)
+* Website: [https://gptr.dev/](https://gptr.dev/)
 
 ![GPT Researcher](https://static-docs.nocobase.com/38-34tscx.png)
 
@@ -467,31 +537,7 @@ In LOCOMO benchmark tests, Mem0 outperformed OpenAI Memory with around 26% highe
 * Automated creation of academic research outlines or background summaries.
 * Building domain-specific knowledge agents for enterprise knowledge aggregation.
 
-## No.18: CopilotKit
-
-![CopilotKit](https://static-docs.nocobase.com/39-z4vv5d.png)
-
-* GitHub Star: 22.4k
-* GitHub: https://github.com/CopilotKit/CopilotKit
-* Website: https://docs.copilotkit.ai/
-
-![CopilotKit](https://static-docs.nocobase.com/40-u5mh13.png)
-
-**Overview:**
-
-**CopilotKit** is an open-source framework for seamlessly integrating AI copilots into applications—whether as embedded chat, intelligent text areas, or full agent interfaces. It provides React UI components and a headless architecture for flexible embedding.
-
-**Core Features:**
-
-* **React & headless UI support:** Plug-and-play UI components or headless API-only deployments.
-* **Application context integration:** Connects app logic, state, and user context to AI agents for more tailored functionality.
-* **Model-architecture decoupling:** Works independently of specific models or agent frameworks, allowing AI stack upgrades without affecting user experience.
-
-**Use Cases:**
-
-* Embedded AI assistants.
-* Custom AI tools.
-* Multi-modal interactive experiences.
+**Data verification date:** September 11, 2026. GitHub Stars, repository licenses, and archive status were checked against the projects' official GitHub repositories.
 
 ## Final Note
 
