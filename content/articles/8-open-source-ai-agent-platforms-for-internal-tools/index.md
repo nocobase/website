@@ -1,10 +1,14 @@
 ## TL;DR
 
-**NocoBase is suitable for embedding AI into internal business processes such as approvals, data entry, and reports, and for unified management of data, permissions, pages, and workflows around these processes.**
+If you are looking for **open-source AI agent platforms for internal tools**, the first thing to clarify is what kind of product you actually need. Search results often put frameworks, visual agent builders, workflow automation tools, and business application platforms in the same list, but they solve different parts of the problem.
 
-Frameworks like LangChain, CrewAI, and Haystack are suitable for enterprises with technical teams. They provide greater customization space but also require development, deployment, permissions, monitoring, and long-term maintenance capabilities.
+- **Agent frameworks** such as LangChain, CrewAI, Semantic Kernel, and Haystack give developers control over agent logic, tools, retrieval, and orchestration. They are a good fit when your team is prepared to build the surrounding application layer itself.
+- **Visual agent and automation builders** such as Flowise, n8n, and AutoGPT reduce the amount of code needed to assemble agent workflows. They are useful for automation, prototypes, and agent-centric applications, but they do not automatically provide the data model, permissions, pages, and approval logic of an internal business system.
+- **Business application platforms** such as NocoBase start from the application layer: relational data, pages, roles and permissions, workflows, and auditability. AI is added inside that structure rather than becoming the structure itself.
 
-n8n and Flowise are more suitable for rapid automation or prototype validation.
+For an internal knowledge assistant or a standalone agent service, a framework or visual builder may be enough. For an internal tool that also needs business records, role-based access, approval steps, editable pages, and long-term maintenance, the application layer matters just as much as the Agent itself.
+
+If your main goal is to compare repositories and community activity rather than internal-tool architecture, see our separate guide to [open-source AI agent projects on GitHub](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects).
 
 Recently, there was an interesting discussion on [Hacker News](https://news.ycombinator.com/item?id=47896389) about AI and internal tools. In the comments, someone mentioned that AI now gives people the ability to build various things. But AI hasn't taught them to understand — whether this thing really needs to be built, how to maintain it, how to iterate, and how to integrate it with other tools.
 
@@ -21,6 +25,24 @@ AI is greatly lowering the barrier to tool development, but it's also bringing n
 Enterprises are entering a new dilemma: tools are becoming easier to create, but truly reliable, maintainable, and scalable business systems remain scarce.
 
 Which platform can enable AI and Agents to stably enter business processes and continuously play a role under data, permissions, auditing, and manual confirmation mechanisms? To help you make a clearer selection decision, this article compares 8 mainstream open-source AI Agent-related platforms, analyzing their advantages and disadvantages, implementation capabilities, and applicable scenarios in enterprise internal tool scenarios.
+
+> **Verification note:** GitHub star counts and repository licenses in this article were checked against the projects' official GitHub repositories on September 10, 2026. Star counts are rounded and will change over time. Some products use different licenses for open-source, enterprise, cloud, or platform components, so always review the current license before deployment or redistribution.
+
+### Comparison: Which Layer Does Each Tool Actually Provide?
+
+
+| Platform            | Product type                                         | Repository license                                                                               | Self-hosting | Development required                                         | Relational business data                                                    | Permissions                                                                                      | Workflow                        | Human approval                                                                | Audit / execution trace                                                           | RAG                                                   | Best fit                                                                                     | Not ideal for                                                                                      |
+| ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **NocoBase**        | Business application platform with AI Employees      | Apache-2.0                                                                                       | Yes          | Low to medium; code is optional for many internal-tool tasks | Built in                                                                    | Built-in role and data permissions                                                               | Built-in business workflows     | Built into approval/workflow patterns; AI tools can also require confirmation | Audit and request logging available                                               | Built-in AI Knowledge Base / RAG                      | Internal tools where AI must work inside business data, permissions, pages, and processes    | Teams that only need a lightweight standalone agent runtime                                        |
+| **n8n**             | Workflow automation and AI agent platform            | Sustainable Use License + Enterprise License                                                     | Yes          | Low to medium                                                | Usually external systems or databases rather than an application data model | Project, credential, and enterprise controls; not a native row/field business-permission layer   | Core strength                   | Can be designed into workflows                                                | Workflow execution history and operational logging                                | Via AI nodes and integrations                         | Cross-system automation and agent workflows                                                  | Building a full internal CRUD/business application without another application layer               |
+| **Flowise**         | Visual AI agent builder                              | Apache-2.0 for the open-source repository; commercial terms apply to enterprise/cloud components | Yes          | Low to medium                                                | Not a native business application data model                                | App/flow access controls; business data permissions require surrounding systems or custom design | Agentflow / AI workflow         | Possible through flow design or external systems                              | Execution and observability features; not a business audit trail by itself        | Strong                                                | Visual RAG, chatbots, and agent prototypes                                                   | Internal systems that need rich relational data, business pages, and granular business permissions |
+| **LangChain**       | Agent / LLM development framework                    | MIT                                                                                              | Yes          | High                                                         | Developer-built                                                             | Developer-built or connected to IAM/application permissions                                      | Developer-defined orchestration | Developer-built                                                               | Application logging or external observability                                     | Strong                                                | Highly customized agent applications                                                         | Teams looking for an out-of-the-box internal application platform                                  |
+| **CrewAI**          | Multi-agent automation framework                     | MIT                                                                                              | Yes          | High                                                         | Developer-built                                                             | Developer-built in the application layer; commercial control-plane options are separate          | Crews and Flows                 | Developer-built                                                               | External or commercial observability/control-plane options                        | Supported through tools and integrations              | Multi-agent task orchestration                                                               | Business teams that need data models, forms, permissions, and approvals without engineering work   |
+| **AutoGPT**         | Agent platform with visual building and self-hosting | `autogpt_platform/`: Polyform Shield; AutoGPT Classic and other repository components: MIT       | Yes          | Low to medium for builder use; higher for custom integration | Usually through integrations rather than a native internal-app data model   | Platform/integration controls rather than a general business RBAC layer                          | Core agent workflow capability  | Depends on workflow and integration design                                    | Agent run history / operational trace rather than a complete business audit layer | Via blocks, tools, and integrations                   | Building and running autonomous agent workflows                                              | Replacing a full internal business application layer by itself                                     |
+| **Semantic Kernel** | AI orchestration SDK/framework                       | MIT                                                                                              | Yes          | High                                                         | Developer-built                                                             | Integrated through the host application and identity stack                                       | Developer-defined orchestration | Developer-built                                                               | Application / infrastructure logging                                              | Supported through connectors and retrieval components | Development teams embedding AI into existing applications, especially Microsoft-heavy stacks | Non-technical teams that need a ready-made internal tool builder                                   |
+| **Haystack**        | AI orchestration and RAG framework                   | Apache-2.0                                                                                       | Yes          | High                                                         | Not a business application data model                                       | Developer-built in the host application                                                          | Pipelines and agent workflows   | Developer-built                                                               | Application / external observability                                              | Core strength                                         | RAG, search, knowledge assistants, and retrieval-heavy agent systems                         | Complete internal business apps with forms, permissions, approvals, and transactional workflows    |
+
+This table deliberately separates **agent orchestration** from **business workflow**. A tool can have powerful agent workflows and still leave business permissions, approvals, transactional records, and end-user application pages to another system.
 
 ### #1 NocoBase | Open-source no-code AI development platform
 
@@ -73,12 +95,45 @@ NocoBase provides native support at four levels: data model, page, roles and per
 
 Compared with developing from scratch or end-to-end AI generation in a vibe coding style, building a long-term sustainable, auditable, traceable, and clearly bounded permission model and approval process in a system still requires platform-level abstraction and constraint mechanisms like NocoBase.
 
+#### A Reproducible Internal-Tool Example: AI-Assisted Purchase Review
+
+A simple implementation can look like this:
+
+```text
+Purchase request submitted
+        ↓
+AI Employee reads the request and permitted related records
+        ↓
+AI summarizes supplier history, amount, and risk signals
+        ↓
+AI fills structured review fields
+        ↓
+NocoBase Workflow applies business rules
+        ↓
+High-value or exceptional request → human approval
+Normal request → continue to the next workflow step
+        ↓
+Relevant changes and workflow actions remain traceable
+```
+
+The important part is not the prompt. It is the boundary around the prompt.
+
+1. Create collections for purchase requests, suppliers, and review records, then define their relationships.
+2. Create a role for the users or AI Employee involved in the process and restrict which records and fields they can read or change. NocoBase documents separate controls for [AI Employee access and data access permissions](https://docs.nocobase.com/ai-employees/permission).
+3. Configure an AI Employee with the business context and tools it needs. For data-changing tools, NocoBase supports an **Ask** permission so the system can require confirmation before the tool is called. See [AI Employee Tools](https://docs.nocobase.com/ai-employees/features/tools).
+4. Create a workflow that starts when a purchase request reaches the review stage. The AI step can prepare a summary or structured recommendation, while deterministic rules handle routing.
+5. Add an approval or human review step for high-value, incomplete, or exceptional requests instead of letting the model make an irreversible decision on its own.
+6. Use request/audit logging where traceability is required, and test the workflow with a non-admin role before production use.
+
+This pattern also works for lead qualification, service requests, document intake, CRM follow-up, and other processes where an AI Agent has to operate on real business records without bypassing the application's permission boundaries.
+
 **Most suitable for**:
 
 * Enterprises that need business teams to directly use AI
 * Industries with data compliance requirements (finance, healthcare, government)
 * Teams building internal tools that conform to enterprise business processes from scratch
 * Enterprises that already have databases, ERP, CRM, and need AI enhancement
+
 
 ### #2 n8n | Workflow automation + AI nodes
 
@@ -441,6 +496,16 @@ In workflow platforms like NocoBase, the following methods can reduce business r
 * ✅ Configurable trigger conditions (e.g., only trigger AI review when amount > ¥10K)
 
 Note: Agent stability still depends on model capability, prompt design, input data quality, and manual confirmation at critical nodes.
+
+### Q6: What Is the Difference Between an AI Agent Framework and an AI Agent Platform?
+
+An **AI Agent framework** gives developers building blocks for agent logic: model calls, tools, state, retrieval, routing, and orchestration. LangChain, CrewAI, Semantic Kernel, and Haystack fit this category.
+
+An **AI Agent platform** usually provides more of the runtime and operational environment around those building blocks, such as a visual builder, deployment, triggers, integrations, or run management. n8n, Flowise, and AutoGPT provide more of this platform layer, although they differ significantly in scope.
+
+A **business application platform** starts from a different layer. It manages business data, pages, permissions, workflows, and user interactions, then lets AI operate inside those boundaries. NocoBase is the example in this comparison.
+
+The terms overlap in product marketing, so the label matters less than the missing layer. Before choosing a tool, ask what you would still need to build after the Agent itself works.
 
 ## Conclusion
 
