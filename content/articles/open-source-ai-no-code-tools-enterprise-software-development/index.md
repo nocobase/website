@@ -85,7 +85,7 @@ NocoBase's strengths lie in AI + no-code collaboration, production-grade system 
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-nfmb6h.png)
 
-💡 How do you connect an AI Agent to NocoBase? Read the official guide: [https://docs.nocobase.com/cn/ai-builder](https://docs.nocobase.com/cn/ai-builder)
+💡 How do you connect an AI Agent to NocoBase? Read the official guide: [https://docs.nocobase.com/en/ai-builder](https://docs.nocobase.com/en/ai-builder)
 
 ### Not Ideal For
 
@@ -110,7 +110,7 @@ NocoBase is probably more platform than you need if the project is only a standa
 
 Appsmith is more like an internal tool builder for developers. Teams can build pages with drag-and-drop components, connect databases, APIs, and third-party services, and quickly create admin panels, data dashboards, and business operation interfaces.
 
-💡 Read more: [More Than PostgreSQL: 5 No-Code/Low-Code Platforms Supporting External Databases - NocoBase](https://www.nocobase.com/cn/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api?utm_source=chatgpt.com)
+💡 Read more: [More Than PostgreSQL: 5 No-Code/Low-Code Platforms Supporting External Databases - NocoBase](https://www.nocobase.com/en/blog/5-no-code-low-code-platforms-supporting-external-databases-mysql-mongodb-api?utm_source=chatgpt.com)
 
 ### Best-fit Use Cases
 
@@ -139,7 +139,7 @@ Appsmith is less suitable when the AI workflow itself is the main product and th
 * AI documentation: [https://docs.tooljet.com/docs/build-with-ai/overview](https://docs.tooljet.com/docs/build-with-ai/overview)
 * GitHub Stars: 37.9k
 
-💡 Read more: [11 Most Popular Open-Source No-Code AI Tools on GitHub - NocoBase](https://www.nocobase.com/cn/blog/top-11-github-open-source-no-code-ai-tools?utm_source=chatgpt.com)
+💡 Read more: [11 Most Popular Open-Source No-Code AI Tools on GitHub - NocoBase](https://www.nocobase.com/en/blog/top-11-github-open-source-no-code-ai-tools?utm_source=chatgpt.com)
 
 ### Tool Positioning
 
@@ -203,7 +203,7 @@ Budibase is less suitable for teams building highly customized AI-native applica
 * AI documentation: [https://docs.dify.ai/](https://docs.dify.ai/)
 * GitHub Stars: 140k
 
-💡 Read more: [Top 18 Open-Source AI Agent Projects on GitHub by GitHub Stars - NocoBase](https://www.nocobase.com/cn/blog/github-open-source-ai-agent-projects?utm_source=chatgpt.com)
+💡 Read more: [Top 18 Open-Source AI Agent Projects on GitHub by GitHub Stars - NocoBase](https://www.nocobase.com/en/blog/github-open-source-ai-agent-projects?utm_source=chatgpt.com)
 
 ### Tool Positioning
 
@@ -248,7 +248,7 @@ Flowise is often used for chatbots, knowledge base Q&A, RAG applications, AI Age
 
 Flowise supports Visual Builder, Agentflow, Tracing & Analytics, Evaluations, Human in the Loop, API, CLI, SDK, embedded chatbots, and more. It focuses more on AI workflow orchestration and Agent building.
 
-💡 Read more: [Essential for Enterprise Internal Tools: 8 Open-Source AI Agent Platforms Compared - NocoBase](https://www.nocobase.com/cn/blog/8-open-source-ai-agent-platforms-for-internal-tools?utm_source=chatgpt.com)
+💡 Read more: [Essential for Enterprise Internal Tools: 8 Open-Source AI Agent Platforms Compared - NocoBase](https://www.nocobase.com/en/blog/8-open-source-ai-agent-platforms-for-internal-tools?utm_source=chatgpt.com)
 
 ### Advantages
 
@@ -381,7 +381,6 @@ Windmill is characterized by strong code control and a high level of engineering
 ### Not Ideal For
 
 Windmill is less suitable for non-technical teams that want a no-code-first environment with minimal engineering involvement. Its flexibility is strongest when developers are comfortable working with scripts, APIs, and infrastructure.
-
 
 ## FAQ
 
