@@ -4,10 +4,8 @@ import HreflangLinks from "../components/HreflangLinks.astro";
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import DocSearch from "../components/DocSearch.astro";
 import MicrosoftClarity from "../components/MicrosoftClarity.astro";
-import { listLightSolutions } from "../utils";
 import { getGithubStarLabel } from "../utils/github-stars";
 
-const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
@@ -521,16 +519,6 @@ const githubStars = await getGithubStarLabel();
                     <li class="submodule-li"><a href="/cn/solutions/all-in-one/asset" title="固定资产管理模块" class="sub-menu-item submodule-item">固定资产管理</a></li>
                     <li class="submodule-li"><a href="/cn/solutions/all-in-one/hr" title="HR 人事管理模块" class="sub-menu-item submodule-item">HR 人事管理</a></li>
                     <li><a href="/cn/solutions" title="NocoBase 解决方案中心" class="sub-menu-item fw-medium">更多方案 <i class="uil uil-angle-right"></i></a></li>
-                  </ul>
-                </li>
-
-                <li>
-                  <ul>
-                    <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> 轻量方案</li>
-                    {lightSolutions.map((s: any) => (
-                      <li><a href={`/cn/ai-blueprints/${s.slug}`} class="sub-menu-item blueprint-item">{s.title_cn || s.title}</a></li>
-                    ))}
-                    <li><a href="/cn/ai-blueprints" class="sub-menu-item fw-medium">全部轻量方案 <i class="uil uil-angle-right"></i></a></li>
                   </ul>
                 </li>
 

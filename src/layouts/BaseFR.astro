@@ -4,10 +4,8 @@ import HreflangLinks from "../components/HreflangLinks.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
 import MicrosoftClarity from "../components/MicrosoftClarity.astro";
-import { listLightSolutions } from "../utils";
 import { getGithubStarLabel } from "../utils/github-stars";
 
-const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
@@ -504,16 +502,6 @@ const githubStars = await getGithubStarLabel();
                     <li class="submodule-li"><a href="/fr/solutions/all-in-one/hr" title="RH / système de gestion des ressources humaines" class="sub-menu-item submodule-item">RH</a></li>
                     <li><a href="/fr/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">Plus de solutions <i class="uil uil-angle-right"></i></a></li>
                   </ul>
-            </li>
-
-            <li>
-              <ul>
-                <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
-                {lightSolutions.map((s: any) => (
-                  <li><a href={`/fr/ai-blueprints/${s.slug}`} class="sub-menu-item blueprint-item">{s.title}</a></li>
-                ))}
-                <li><a href="/fr/ai-blueprints" class="sub-menu-item fw-medium">Tous les blueprints <i class="uil uil-angle-right"></i></a></li>
-              </ul>
             </li>
 
             <li>

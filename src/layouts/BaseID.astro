@@ -4,10 +4,8 @@ import HreflangLinks from "../components/HreflangLinks.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import DocSearch from "../components/DocSearch.astro";
 import MicrosoftClarity from "../components/MicrosoftClarity.astro";
-import { listLightSolutions } from "../utils";
 import { getGithubStarLabel } from "../utils/github-stars";
 
-const { data: lightSolutions } = await listLightSolutions({ pageSize: 7 });
 const year = new Date().getFullYear();
 const baseClassName = Astro.url.pathname.split("/")?.[2] || "";
 
@@ -508,16 +506,6 @@ const githubStars = await getGithubStarLabel();
                     <li class="submodule-li"><a href="/id/solutions/all-in-one/asset" title="Manajemen aset TI & tetap" class="sub-menu-item submodule-item">Manajemen Aset</a></li>
                     <li class="submodule-li"><a href="/id/solutions/all-in-one/hr" title="HR / sistem manajemen sumber daya manusia" class="sub-menu-item submodule-item">HR / SDM</a></li>
                     <li><a href="/id/solutions" title="NocoBase solutions" class="sub-menu-item fw-medium">Solusi lainnya <i class="uil uil-angle-right"></i></a></li>
-                  </ul>
-                </li>
-
-                <li>
-                  <ul>
-                    <li class="megamenu-head"><i class="uil uil-bolt-alt fs-6 align-middle"></i> AI Blueprints</li>
-                    {lightSolutions.map((s: any) => (
-                      <li><a href={`/id/ai-blueprints/${s.slug}`} class="sub-menu-item blueprint-item">{s.title}</a></li>
-                    ))}
-                    <li><a href="/id/ai-blueprints" class="sub-menu-item fw-medium">Semua blueprint <i class="uil uil-angle-right"></i></a></li>
                   </ul>
                 </li>
 

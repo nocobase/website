@@ -75,6 +75,13 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return context.rewrite('/404');
   }
 
+  // AI Blueprints are retired: the section is gone from the navigation and was
+  // never in the sitemap. The pages stay in the source so the section can be
+  // brought back, but every locale's index and detail URL is a hard 404.
+  if (/^(?:\/[a-z]{2})?\/ai-blueprints(?:\/.*)?$/.test(pathname)) {
+    return context.rewrite('/404');
+  }
+
   // Tutorials are retired on this site — permanently redirect every
   // /{locale}/tutorials(/...) URL to the docs site's v2 tutorials. docs serves
   // all our locales except tw, which falls back to cn.
