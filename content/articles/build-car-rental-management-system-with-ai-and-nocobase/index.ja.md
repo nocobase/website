@@ -127,7 +127,7 @@ Coding Agent はこれをもとに、システム全体の案を作成できま�
 
 ### 2.5 受け入れ基準に沿ってテスト・受け入れ・公開を行う
 
-システム完成後は、1.3 で確認した受け入れ基準に沿ってそのままテストできます。車両スケジュール、状態変更、売掛金生成、例外処理などの重要ルールが想定どおりに動作するかを確認します。
+システム完成後は、前に確認した受け入れ基準に沿ってテストを行い、車両スケジュール、状態変更、売掛金生成、例外処理などの重要なルールが想定どおりに動作するかを確認します。
 
 Coding Agent がテストを実行し、見つかった問題を修正します。修正後は影響を受けたフローを再度検証します。重要なルールがすべて通ったら、人が受け入れを完了して公開を承認し、その後 Coding Agent が公開と実行状態の確認を行います。
 
@@ -189,8 +189,6 @@ AI と NocoBase を使って同様の企業アプリを構築したい場合は�
 👉 [AI + NocoBase で CRM を構築](https://www.nocobase.com/ja/blog/build-production-ready-crm-with-ai-and-nocobase)
 
 👉 [AI + NocoBase で企業 IT 運用システムを構築](https://www.nocobase.com/ja/blog/build-it-operations-system-with-ai-nocobase)
-
-
 
 **関連記事**：
 

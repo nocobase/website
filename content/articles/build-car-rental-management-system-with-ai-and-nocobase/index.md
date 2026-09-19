@@ -127,7 +127,7 @@ Order, vehicle, compliance, and financial data can also be summarized in the **o
 
 ### 2.5 Test, Accept, and Release Against the Acceptance Criteria
 
-Once the system is complete, it can be tested directly against the acceptance criteria confirmed in Section 1.3, checking whether key rules such as vehicle scheduling, status changes, receivable generation, and exception handling behave as expected.
+Once the system is complete, it can be tested against the acceptance criteria confirmed earlier, checking whether key rules such as vehicle scheduling, status changes, receivable generation, and exception handling behave as expected.
 
 The Coding Agent runs the tests and fixes the issues it finds, then revalidates the affected processes after each change. Once the key rules pass, people complete acceptance and authorize the release. The Coding Agent then performs the deployment and checks the runtime result.
 
@@ -189,8 +189,6 @@ If you also want to build similar enterprise applications with AI and NocoBase, 
 👉 [Build a CRM with AI + NocoBase](https://www.nocobase.com/en/blog/build-production-ready-crm-with-ai-and-nocobase)
 
 👉 [Build an Enterprise IT Operations System with AI + NocoBase](https://www.nocobase.com/en/blog/build-it-operations-system-with-ai-nocobase)
-
-
 
 **Related reading**:
 
