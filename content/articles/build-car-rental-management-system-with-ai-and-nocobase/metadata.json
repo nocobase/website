@@ -1,6 +1,6 @@
 {
   "id": 1230,
-  "title": " How to Build a Real-World Business System with AI and NocoBase: A Car Rental Management Example",
+  "title": "How to Build a Real-World Business System with AI and NocoBase: A Car Rental Management Example",
   "title_cn": "如何用 AI 和 NocoBase 构建真实业务系统：以汽车租赁管理为例",
   "title_ja": "AI と NocoBase で実際の業務システムを構築する方法  ",
   "description": "See how a Coding Agent builds a real-world car rental system on NocoBase with data models, workflows, testing, release, and AI Employees.\n",
@@ -67,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-09-19T15:16:48.241Z"
+  "updatedAt": "2026-09-19T16:06:31.949Z"
 }
