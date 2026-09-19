@@ -1,6 +1,6 @@
 {
   "id": 1230,
-  "title": "# How to Build a Real-World Business System with AI and NocoBase: A Car Rental Management Example",
+  "title": " How to Build a Real-World Business System with AI and NocoBase: A Car Rental Management Example",
   "title_cn": "如何用 AI 和 NocoBase 构建真实业务系统：以汽车租赁管理为例",
   "title_ja": "AI と NocoBase で実際の業務システムを構築する方法  ",
   "description": "See how a Coding Agent builds a real-world car rental system on NocoBase with data models, workflows, testing, release, and AI Employees.\n",
@@ -8,7 +8,7 @@
   "description_ja": "レンタカーシステムを例に、Coding Agent が NocoBase 上で業務モデリング、ワークフロー、テスト、公開、継続改善を行う流れを紹介します。\n",
   "slug": "build-car-rental-management-system-with-ai-and-nocobase",
   "publishedAt": "2026-09-18T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-09-19T14:05:09.188Z",
+    "updatedAt": "2026-09-19T14:05:09.200Z",
+    "id": 2690,
+    "title": "demo 系列封面",
+    "filename": "demo 系列封面-tvfo6b.jpg",
+    "extname": ".jpg",
+    "size": 159723,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/demo%20%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-tvfo6b.jpg",
+    "preview": "https://static-docs.nocobase.com/demo%20%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-tvfo6b.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-09-19T13:28:33.684Z"
+  "updatedAt": "2026-09-19T14:07:58.764Z"
 }
