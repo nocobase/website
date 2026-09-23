@@ -21,6 +21,8 @@ When AI is limited to the response layer and does not genuinely participate in t
 
 Against this backdrop of needs and feedback, we believe that an “AI ticketing system” is no longer merely a simple product category, but a solution layer that needs to be redefined. It should go beyond generating replies and instead actively engage in workflows by automatically understanding and routing tickets, offering practical recommendations based on a knowledge base, and integrating deeply with internal business systems.
 
+🔎 **Further reading:** If your priority is the core capabilities of a ticketing system, such as ticket workflows, permissions, and automation, you may also find our guide to **[6 Open-Source Ticketing Systems](https://www.nocobase.com/en/blog/open-source-ticketing-systems)** useful.
+
 This article will examine the core capabilities an AI ticketing system should possess in 2026, and systematically explore how these capabilities can be realized across different platforms, helping you and your team move beyond the superficial question of “does it have AI” and refocus on efficiency and structural design.
 
 ## 2026 Must-Have Capabilities for AI Ticketing Systems

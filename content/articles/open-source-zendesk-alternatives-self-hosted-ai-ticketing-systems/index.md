@@ -22,8 +22,6 @@ Whether you want a fast replacement for Zendesk or are looking to build a founda
 
 ---
 
-
-
 ## Open-source Zendesk Alternatives
 
 A capable open-source alternative to Zendesk should be able to answer several key questions:
@@ -44,6 +42,8 @@ The following open-source solutions are evaluated in this article:
 If your goal is simply to find a mature, ready-to-use open-source replacement for Zendesk, Zammad is a strong choice. If you are aiming to build a system-level platform that deeply integrates with business processes and prepares your support workflows for AI, NocoBase is well worth closer examination.
 
 Next, we will take a closer look at each open-source alternative in detail.
+
+💡If you're choosing a ticketing system from scratch, start with our guide to **[6 Open-Source Ticketing Systems](https://www.nocobase.com/en/blog/open-source-ticketing-systems)** and compare core capabilities such as ticket workflows, permission management, and automation.
 
 ### NocoBase
 

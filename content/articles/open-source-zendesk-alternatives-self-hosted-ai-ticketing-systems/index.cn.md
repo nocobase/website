@@ -22,8 +22,6 @@ Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工
 
 ---
 
-
-
 ## 开源 Zendesk 替代品
 
 一个合格的 Zendesk 开源替代方案，至少需要回答以下问题：
@@ -45,7 +43,7 @@ Zendesk 成立于 2007 年，并在很长一段时间里定义了现代客服工
 
 接下来让我为你详细介绍每一个开源替代方案。
 
-💡 **阅读更多：**[2026 年 6 个最佳开源工单系统推荐](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)
+💡 如果你正在从零选择工单系统，可以先看 **[6 个开源工单系统](https://www.nocobase.com/cn/blog/open-source-ticketing-systems)**，重点比较工单流转、权限管理和自动化等基础能力。
 
 ### NocoBase
 
