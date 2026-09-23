@@ -83,6 +83,8 @@ NocoBase 的开源核心已经足以构建一个完整的多表协作系统，�
 
 正在寻找比飞书表格更强大、同时又希望完全自定义和私有部署的技术团队或中大型业务团队。NocoBase 更适合用于系统级别的场景，比如内部流程系统、业务管理平台、CRM、工单系统等。但如果只是用于个人的简单项目管理，NocoBase 可能会显得有些“重”。
 
+如果团队正在从 Microsoft Access 迁移，也可以参考 **[Microsoft Access 开源替代方案](https://www.nocobase.com/cn/blog/microsoft-access-open-source-alternatives)**，了解更适合现代业务系统的开源选择。
+
 ## 2. NocoDB
 
 **项目地址**：[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb)

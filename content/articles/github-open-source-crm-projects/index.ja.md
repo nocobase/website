@@ -1,5 +1,7 @@
 これはCRMに関する私たちの第4回目の深掘り記事です。以前の記事「[Salesforceの代替としての4つの強力なオープンソースツール（コスト比較あり）](https://www.nocobase.com/ja/blog/salesforce-open-source-crmalternative)」では、EspoCRM、SuiteCRM、TwentyなどのオープンソースCRMソリューションとSalesforceとの違い、特にコスト効率、機能、利用シーンについて詳しく比較しました。
 
+🎉 **[NocoBase CRMソリューションをぜひお試しください！](https://www.nocobase.com/ja/solutions/crm-v2)**
+
 その後、「[NocoBase vs Salesforce: 理想のCRMを選ぶには？](https://www.nocobase.com/ja/blog/nocobase-vs-salesforce)」という記事では、NocoBaseとSalesforceを全面的に比較し、プラグインや拡張機能、システム統合、セキュリティや権限管理、ユーザー体験など多角的にNocoBaseの柔軟性と競争力を紹介しました。
 
 また、「[カスタムCRMの4つの実際の事例（より柔軟なCRM製品の選び方）](https://www.nocobase.com/ja/blog/custom-crm-case-studies)」では、GemelSoft、Oneworld Accuracy、Agoda、Finastraなどの企業の実例を通して、カスタマイズCRMが業界特有の課題を解決し、ビジネスの効率を向上させる方法を示しました。

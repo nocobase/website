@@ -37,6 +37,8 @@ Open-source IT asset management (ITAM) software is a cost-effective solution for
 * **Support Network and Documentation:** Consider whether the software has an active community and comprehensive documentation to assist with setup and troubleshooting.
 * **Customization Capabilities:** Ensure the software can be tailored to meet specific operational needs.
 
+💡If you prefer to build and customize asset management workflows with a no-code platform, you can also check out our guide to **[6 No-Code IT Asset Management Tools](https://www.nocobase.com/en/blog/no-code-itam-system)**.
+
 ## The 8 Top Open Source IT Asset Management Software in 2025
 
 1. ### NocoBase

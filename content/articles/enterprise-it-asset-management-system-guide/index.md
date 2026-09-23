@@ -400,7 +400,7 @@ Within the authorized data scope, an AI employee can read the asset register and
 
 > ### Get Started Faster
 >
-> If the number of device types is small and the permission and approval processes are simple, you do not need to design every structure from scratch. Start by defining the asset scope, fields, statuses, business actions, and role permissions, and let an AI agent connected to NocoBase generate the initial version. You can also use the **[NocoBase lightweight IT asset management solution](https://www.nocobase.com/en/ai-blueprints/it-asset-tracker-system)** as a starting point and adjust its fields, statuses, and permissions.
+> If the number of device types is small and the permission and approval processes are simple, you do not need to design every structure from scratch. Start by defining the asset scope, fields, statuses, business actions, and role permissions, and let an AI agent connected to NocoBase generate the initial version. You can also use the **[NocoBase lightweight IT asset management solution](https://www.nocobase.com/en/solutions/all-in-one/asset)** as a starting point and adjust its fields, statuses, and permissions.
 >
 > As the number of assets and management requirements grow, gradually add support for multiple office locations, more complex permissions, complete historical tracking, procurement, and cost management.
 

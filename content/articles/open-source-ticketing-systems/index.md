@@ -57,6 +57,8 @@ We integrated a ticketing system into our existing NocoBase-built CRM. User data
 
 ✅ **Use Cases**: Internal IT support, customer service centers, approval workflows, after-sales management, task assignment.
 
+💡To learn more about practical applications, explore the **[NocoBase Ticketing Solution](https://www.nocobase.com/en/solutions/all-in-one/ticketing)**.
+
 ## 2.**UVdesk: E-Commerce-Friendly Ticketing System**
 
 ![UVdesk](https://static-docs.nocobase.com/3-no6xws.png)

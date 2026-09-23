@@ -75,6 +75,8 @@ Airtable と比べ、NocoBase はより本格的なモデリング機能を備�
 
 カスタマイズ性とセルフホスト環境を重視する技術チームや中〜大規模企業に最適。社内システム、業務管理、CRM、チケッティングなどに強く、個人用途にはやや大きすぎる場合もあります。
 
+Microsoft Access からの移行を検討している場合は、**[Microsoft Access のオープンソース代替ツール](https://www.nocobase.com/ja/blog/microsoft-access-open-source-alternatives)** も参考にして、より現代的な業務システムに適した選択肢を比較できます。
+
 ## 2. NocoDB
 
 * GitHub: [https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb)

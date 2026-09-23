@@ -59,6 +59,8 @@ NocoBase は、データモデル駆動でプラグイン拡張に対応した�
 
 ✅ **適用シーン**：企業内 IT サポート、カスタマーサービスセンター、プロセス承認、アフターサービス処理、タスク割り当てなど。
 
+💡具体的な活用方法については、**[NocoBase チケット管理ソリューション](https://www.nocobase.com/ja/solutions/all-in-one/ticketing)** をご覧ください。
+
 ## 2.**UVdesk**：EC 向けのチケットシステム
 
 ![UVdesk](https://static-docs.nocobase.com/3-no6xws.png)

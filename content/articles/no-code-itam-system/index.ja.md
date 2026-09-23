@@ -66,6 +66,8 @@ GitHub：https://github.com/nocobase/nocobase
 * データセキュリティ・柔軟なモデリング・オンプレミス環境を重視する組織
 * 低コストで工単・財務・人事などと深く統合したいチーム
 
+💡これらの機能が実務でどのように活用できるかを確認したい場合は、すぐに NocoBase 資産管理ソリューションをご覧ください：[https://www.nocobase.com/cn/solutions/all-in-one/asset](https://www.nocobase.com/cn/solutions/all-in-one/asset)
+
 ### Airtable
 
 公式サイト：https://airtable.com/

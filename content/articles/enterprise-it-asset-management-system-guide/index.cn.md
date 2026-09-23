@@ -398,7 +398,7 @@ AI 员工可以在授权的数据范围内读取资产台账和业务记录，�
 
 > ### 更快开始
 >
-> 如果设备类型、权限和审批流程较简单，不需要从零设计所有结构，可以先整理资产范围、字段、状态、业务操作和角色权限，让已连接 NocoBase 的 AI Agent 生成初始版本；也可以直接参考 **[NocoBase IT 资产管理轻量方案](https://www.nocobase.com/cn/ai-blueprints/it-asset-tracker-system)**，在现有结构上调整字段、状态和权限。
+> 如果设备类型、权限和审批流程较简单，不需要从零设计所有结构，可以先整理资产范围、字段、状态、业务操作和角色权限，让已连接 NocoBase 的 AI Agent 生成初始版本；也可以直接参考 **[NocoBase IT 资产管理轻量方案]([固定资产管理系统 — 开源 IT 资产与办公资产管理 | NocoBase - NocoBase](https://www.nocobase.com/cn/solutions/all-in-one/asset)**，在现有结构上调整字段、状态和权限。
 >
 > 随着资产数量和管理需求增加，再逐步补充多办公地点、复杂权限、完整历史追踪，以及采购和成本管理等能力。
 

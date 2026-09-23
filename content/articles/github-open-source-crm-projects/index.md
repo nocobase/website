@@ -1,5 +1,7 @@
 This is our 4th in-depth discussion on CRM tools. In our previous article, "*[4 Powerful Open Source Alternatives to Salesforce (With Cost Comparison You’ll Love) ](https://www.nocobase.com/en/blog/salesforce-open-source-crmalternative)*," we compared open-source CRM solutions like EspoCRM, SuiteCRM, and Twenty against Salesforce, particularly focusing on differences in cost-effectiveness, features, and suitability for different scenarios.
 
+🎉 **[Explore the NocoBase CRM Solution!](https://www.nocobase.com/en/solutions/crm-v2)**
+
 Then, in "*[NocoBase vs Salesforce: who is your ideal CRM?](https://www.nocobase.com/en/blog/nocobase-vs-salesforce)*" we compared NocoBase and Salesforce comprehensively, showcasing NocoBase's flexibility and competitive edge as an open-source CRM solution through aspects like plugins & extensions, system integrations, security & permissions, and user experience.
 
 Additionally, "*[Top 4 Custom CRM Case Studies (Helping You Choose a More Flexible CRM Solution)](https://www.nocobase.com/en/blog/custom-crm-case-studies)*" highlighted how custom CRMs helped companies such as GemelSoft, Oneworld Accuracy, Agoda, and Finastra solve industry-specific challenges and improve business efficiency.

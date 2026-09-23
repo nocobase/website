@@ -73,6 +73,8 @@ The open-source core of NocoBase is already powerful enough to build a complete 
 
 Technical teams or mid-to-large businesses wanting fully customizable, self-hosted solutions—ideal for internal systems, business management, CRMs, ticketing platforms, etc. For small personal projects, it may feel like overkill.
 
+If your team is migrating from Microsoft Access, you can also explore these **[open-source alternatives to Microsoft Access](https://www.nocobase.com/en/blog/microsoft-access-open-source-alternatives)** to find options better suited to modern business applications.
+
 ## 2. NocoDB
 
 * **GitHub:**[https://github.com/nocodb/nocodb](https://github.com/nocodb/nocodb)

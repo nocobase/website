@@ -59,6 +59,8 @@ NocoBase 是一款数据模型驱动、支持插件扩展的开源、AI 驱动�
 
 ✅ **适用场景**：企业内部 IT 支持、客户服务中心、流程审批、售后处理、任务指派等。
 
+💡了解具体应用，立即查看 **[NocoBase 工单解决方案](https://www.nocobase.com/cn/solutions/all-in-one/ticketing)**。
+
 ## 2.UVdesk：电商友好的工单系统
 
 ![UVdesk](https://static-docs.nocobase.com/3-no6xws.png)

@@ -1,5 +1,7 @@
 这是我们第 4 篇关于 CRM 的深度讨论，在之前的文章 [四个强大的Salesforce开源替代方案（附成本对比）](https://www.nocobase.com/cn/blog/salesforce-open-source-crmalternative)中，我们详细对比了 EspoCRM、SuiteCRM、Twenty 等开源 CRM 方案与 Salesforce 的差异，特别是在成本效益、功能特性及适用场景上的差异。
 
+🎉 **[欢迎体验 NocoBase CRM 解决方案！](https://www.nocobase.com/cn/solutions/crm-v2)**
+
 接着在 [NocoBase vs Salesforce：谁才是你的理想CRM？](https://www.nocobase.com/cn/blog/nocobase-vs-salesforce)这篇文章中，我们全面对比了 NocoBase 和 Salesforce，从插件与扩展、系统集成、安全与权限管理以及用户体验等多个角度，展现了NocoBase作为开源CRM所具备的灵活性和竞争力。
 
 此外，[定制CRM的4个真实用户案例（帮你选择更灵活CRM产品）](https://www.nocobase.com/cn/blog/custom-crm-case-studies)则通过 GemelSoft、Oneworld Accuracy、Agoda 及 Finastra 等企业的实践案例，展现了定制化 CRM 如何助力企业解决行业特定挑战，从而提升业务效率。

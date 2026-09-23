@@ -73,6 +73,8 @@ Ideal for small and mid-sized companies that:
 * Prefer self-hosted deployment for data security
 * Want to integrate ITAM deeply with finance, HR, and ticketing systems
 
+💡To see how these capabilities can be applied to real‑world business scenarios, check out the NocoBase Asset Management Solution right away:[https://www.nocobase.com/cn/solutions/all-in-one/asset](https://www.nocobase.com/cn/solutions/all-in-one/asset)
+
 ### Airtable
 
 **Website:** https://airtable.com/
