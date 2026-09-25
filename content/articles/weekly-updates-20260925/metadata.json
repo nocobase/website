@@ -1,7 +1,7 @@
 {
   "id": 1237,
-  "title": "Weekly Updates | ",
-  "title_cn": "本周更新｜",
+  "title": "Weekly Updates | Improvements and Bug Fixes",
+  "title_cn": "本周更新｜优化及缺陷修复",
   "title_ja": null,
   "description": "This is a summary of NocoBase feature updates and improvements from September 18 to September 24, 2026.",
   "description_cn": "汇总了 2026.09.18-09.24 期间 NocoBase 的功能更新与改进。",
@@ -22,5 +22,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-09-25T09:29:41.123Z"
+  "updatedAt": "2026-09-25T10:33:13.884Z"
 }
