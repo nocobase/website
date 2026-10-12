@@ -1,6 +1,6 @@
-I'm sure you are familiar with Airtable.
+Looking for an open source Airtable alternative? This guide compares seven projects—NocoDB, Teable, NocoBase, AITable.ai, Rowy, Baserow, and Undb—to help you evaluate data control, extensibility, and fit for your team's workflows. Start by deciding whether you need a familiar spreadsheet interface or a platform for building custom business applications, then compare hosting options, permissions, and maintenance requirements.
 
-Founded in 2012, it began to gain significant popularity around 2018, when its user base and market share surged. **This can be attributed to its intuitive interface and ease of use—users can build powerful management tools without any programming skills through simple drag-and-drop actions, unlike traditional database systems.**
+Airtable was founded in 2012 and began to gain significant popularity around 2018, when its user base and market share surged. **This can be attributed to its intuitive interface and ease of use—users can build powerful management tools without any programming skills through simple drag-and-drop actions, unlike traditional database systems.**
 
 ![Airtable.PNG](https://static-docs.nocobase.com/7b0af975235b28cbc3c2bb2496cd0171.PNG)
 
@@ -97,6 +97,8 @@ License：[AGPL-3.0](https://github.com/nocobase/nocobase?tab=AGPL-3.0-2-ov-file
 * **User-Friendly Configuration Interface**: Provides an easy-to-use WYSIWYG interface, enabling users to switch between usage and configuration modes with one click, allowing for rapid development of complex business systems without programming experience.
 * **Open Source and Plugin Architecture**: The core and basic plugins of NocoBase are fully open-source, ensuring transparency and control. Its microkernel architecture allows for modular functionality, making it easy to install and develop plugins for evolving business needs.
 * **AI employees embedded in the system**: Seamlessly integrate AI capabilities into user interfaces, business workflows, and data contexts, enabling AI to be practically applied in real enterprise scenarios.
+
+For a closer look at NocoBase as an Airtable alternative, explore its [data source capabilities](https://www.nocobase.com/en/highlights/data-source), [role, row, and field permissions](https://www.nocobase.com/en/highlights/permissions), and [workflow automation](https://www.nocobase.com/en/highlights/workflow). These product pages can help you assess requirements such as connecting existing business data, controlling access, and automating actions before building a prototype.
 
 🙌 Have a try: [NocoBase Tutorial – Task Management System](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 
