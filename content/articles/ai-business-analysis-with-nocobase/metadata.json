@@ -8,7 +8,7 @@
   "description_ja": "営業、在庫、購買、財務データを組み合わせ、NocoBase と AI で経営分析を行い、購買、回収、資金判断を支援する方法を紹介します。",
   "slug": "ai-business-analysis-with-nocobase",
   "publishedAt": "2026-10-13T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-10-13T17:57:34.169Z",
+    "updatedAt": "2026-10-13T17:57:34.186Z",
+    "id": 2692,
+    "title": "Group 42 (1)(1)",
+    "filename": "Group 42 (1)(1)-cehdfe.png",
+    "extname": ".png",
+    "size": 266777,
+    "mimetype": "image/png",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/Group%2042%20(1)(1)-cehdfe.png",
+    "preview": "https://static-docs.nocobase.com/Group%2042%20(1)(1)-cehdfe.png",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-10-13T17:55:21.468Z"
+  "updatedAt": "2026-10-13T17:57:45.194Z"
 }
