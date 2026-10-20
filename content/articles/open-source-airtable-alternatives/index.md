@@ -1,20 +1,31 @@
-I'm sure you are familiar with Airtable.
+Looking for open-source Airtable alternatives? This guide compares seven projects and the migration work to assess before switching. Start with your existing base: moving records, recreating formulas, and testing workflows all belong in your migration budget.
 
-Founded in 2012, it began to gain significant popularity around 2018, when its user base and market share surged. **This can be attributed to its intuitive interface and ease of use—users can build powerful management tools without any programming skills through simple drag-and-drop actions, unlike traditional database systems.**
+## Quick Comparison: What to Check Before Migrating
 
-![Airtable.PNG](https://static-docs.nocobase.com/7b0af975235b28cbc3c2bb2496cd0171.PNG)
+Use this overview of the projects covered below to build a shortlist. The migration column lists checks for your pilot, not measured effort or a promise of automatic compatibility.
 
-Airtable has changed the perception of data management tools. Many previously viewed data handling as tedious and complex, but Airtable’s visual and simplified design has made data management more accessible and enjoyable. Moreover, it enables non-technical users to create customized databases, breaking down technological barriers and helping Airtable spread rapidly. Later, Airtable introduced more integrated features, such as automation workflows, APIs, and third-party application integrations, further boosting team productivity.
+| Alternative | Focus in this guide | Migration work to assess |
+| --- | --- | --- |
+| NocoDB | Spreadsheet-style data management | Test base imports and review formulas and linked records. |
+| Teable | Spreadsheet interface on PostgreSQL | Check field mappings and views against your existing base. |
+| NocoBase | Custom business applications with a separate data model and interface | Plan collections, relationships, pages, permissions, and workflows. |
+| AITable.ai / APITable | Collaborative tables and automation | Inventory forms, integrations, and automations to recreate. |
+| Rowy | Spreadsheet-style collaboration with backend logic | Check how data changes trigger your backend tasks. |
+| Baserow | No-code databases and application building | Test data imports, views, and application pages. |
+| Undb | Tables, views, and templates | Check whether your relationships and views fit the target setup. |
 
----
+## What Goes into Airtable Migration Costs?
 
-💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+Budget for the initial move and the ongoing work of running the replacement. A useful estimate is **data preparation + import validation + rebuilding logic and interfaces + training + ongoing hosting and maintenance**. The amount depends on your base and the edition you choose; this guide does not provide fixed migration prices.
 
----
+1. **Data and attachments:** Pilot one representative base. Compare record counts, field types, linked records, and attachment access after import.
+2. **Formulas and workflows:** List formulas, rollups, automations, and integrations. Check which transfer and estimate the work to rebuild and test the rest. For example, NocoDB's base importer currently does not import formula fields; shared-view imports can turn linked records into text. See the [official NocoDB Airtable import guide](https://nocodb.com/docs/product/projects/import-project-from-airtable) for supported behavior and import reports (checked October 16, 2026).
+3. **Interfaces and permissions:** Test your forms and views with each user role. Include training and acceptance testing in the estimate.
+4. **Running costs:** Check the chosen edition's license and paid features, then budget for hosting, backups, upgrades, and whoever will maintain the system.
 
-As a cloud-based project management software, Airtable helps teams store, organize, and collaborate on structured data, earning popularity for its user-friendly interface and robust capabilities. It has been described as an "enhanced spreadsheet," suitable for various projects and teams.
+For example, a CRM migration pilot should include a customer linked to several deals, a calculated deal value, and a follow-up automation. Verify that the relationships, calculation, and notification still work before estimating the full move.
 
-**However, with increasing demand, open source alternatives have started to gain attention, offering greater flexibility and customization options.**
+If you are comparing deployment options, see [5 Self-Hosted Airtable Alternatives](https://www.nocobase.com/en/blog/5-self-hosted-airtable-alternatives). For a closer look at application building versus spreadsheet-style data management, read [NocoBase vs NocoDB](https://www.nocobase.com/en/blog/nocobase-vs-nocodb).
 
 ## **Pros and Cons of Airtable**
 
@@ -45,7 +56,7 @@ If your team finds Airtable insufficient for its needs and is looking for altern
 
 ## Best Open Source Alternatives
 
-This article presents a list of the most popular open source alternatives to Airtable by searching GitHub’s [Airtable topic](https://github.com/topics/airtable) and sorting projects by the number of stars.
+The original list was compiled from GitHub’s [Airtable topic](https://github.com/topics/airtable), ordered by star count. The star counts and license labels below are from that earlier comparison, not a current ranking. Check each project’s current repository and edition terms before choosing; popularity alone does not establish migration compatibility.
 
 ### **[No. 1 NocoDB](https://www.nocodb.com)**
 
