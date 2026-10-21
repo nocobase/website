@@ -6000,7 +6000,7 @@
   },
   {
     "createdAt": "2026-10-12T06:06:06.951Z",
-    "updatedAt": "2026-10-12T06:06:06.951Z",
+    "updatedAt": "2026-10-21T10:56:47.001Z",
     "archived": null,
     "category_id": "authentication",
     "coming": null,
@@ -6016,7 +6016,7 @@
     "id": 243,
     "internal": true,
     "is_free": null,
-    "license_included_new": "professional",
+    "license_included_new": "enterprise",
     "name": "Auth: OAuth2",
     "name_cn": "认证：OAuth2",
     "name_jp": "Auth: OAuth2",
