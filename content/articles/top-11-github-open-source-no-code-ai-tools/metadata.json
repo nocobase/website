@@ -1,9 +1,9 @@
 {
   "id": 720,
-  "title": "Top 11 Open Source No-Code AI Tools with the Most GitHub Stars",
+  "title": "11 AI Agent and No-Code Tools on GitHub (2026 Update)",
   "title_cn": "11 个在 GitHub 上最受欢迎的开源无代码 AI 工具",
   "title_ja": "GitHubで人気のオープンソースノーコードAIツール11選",
-  "description": "We’ve reviewed 11 open-source no-code tools that integrate AI — covering intelligent modeling, workflow automation, agent building, and content generation — to help you quickly find the platform that fits your needs best.",
+  "description": "Compare 11 AI agent and no-code tools on GitHub by use case, deployment checks, and maintenance needs, with selected 2026 updates and license distinctions.",
   "description_cn": "盘点了 11 款融合 AI 的开源无代码工具，涵盖智能建模、流程自动化、Agent 构建与内容生成，帮你快速找到最适合的平台。",
   "description_ja": "AIを取り入れたオープンソースのノーコードツール11選を紹介します。\nスマートなデータモデリング、ワークフロー自動化、エージェント構築、コンテンツ生成まで幅広くカバーしており、自分に最適なプラットフォームを素早く見つけることができます。",
   "slug": "top-11-github-open-source-no-code-ai-tools",
@@ -400,7 +400,7 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-08-13T01:58:44.969Z",
+  "updatedAt": "2026-10-22T09:43:30.465Z",
   "hideDetailPage": false,
   "about": null,
   "mentions": null

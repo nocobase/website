@@ -1,60 +1,64 @@
 ## Introduction
 
-Over the past year, AI and no-code have come together much faster than anyone expected. **It’s no longer just about adding an AI feature — it’s changing the way we build applications.**
+If you are comparing open source AI agent platforms, start with the work you need to support: agent workflows, document Q&A, internal applications, or a business system that your team will keep improving. These 11 GitHub projects cover different parts of that work.
 
-No-code is also going through a clear shift: instead of simply designing interfaces, creating data models, and setting up workflows, we’re moving toward a new stage where AI helps model data, generate logic, and work alongside us to build entire systems. And this shift is already happening in real products — not just as a concept.
+**2026 update:** This edition adds a use-case comparison and checks selected product changes against official sources accessed on October 22, 2026. The original tool order is retained for continuity; it is not a current ranking. Historical star counts have been removed because they were not recounted for this update. This is a documentation-based comparison, not a hands-on benchmark or a complete release audit.
 
-💡 Further reading: *[No-Code or Vibe Coding? 9 Tools to Consider - NocoBase](https://www.nocobase.com/en/blog/no-code-or-vibe-coding)*
+The list includes open-source and source-available projects. Public source code, self-hosting, and unrestricted commercial use are different things. Check the license and feature availability for the edition you intend to deploy.
 
-In this article, we reviewed no-code projects on GitHub and selected open-source tools that have integrated AI or offer intelligent features. We organized them into this “AI + No-code Tool List” by their GitHub star count.
+💡 Further reading: [No-Code or Vibe Coding? 9 Tools to Consider](https://www.nocobase.com/en/blog/no-code-or-vibe-coding)
 
----
+You are reading the NocoBase blog. NocoBase is an open-source platform for enterprises to develop and continuously improve business systems with AI. Agents develop the business-specific parts; NocoBase provides the foundation and workflow; people set goals and make decisions. [Explore NocoBase on GitHub](https://github.com/nocobase/nocobase).
 
-💬 Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+## 2026 comparison: choose by the work you need to do
 
----
+Use this table to narrow your shortlist, then test the requirements in the final column against your chosen version. The checks are evaluation questions, not claims that a product lacks a feature.
 
-This follows our list from last year, ***[The Most Starred Open-source No-code Tools on GitHub](https://www.nocobase.com/en/blog/the-top-12-open-source-no-code-tools-with-the-most-github-stars)***. But this time, it’s not just about who has more stars — it’s about who is actually making AI useful and reusable in real scenarios.
+| Tool | Starting point | What to check before adopting it |
+| --- | --- | --- |
+| NocoBase | Business systems with shared data, permissions, approvals, and ongoing development | Core compatibility, release review, and the boundary between community and commercial capabilities |
+| Sim | Agent workflows connecting models and services | Tool permissions, run logs, and recovery after a failed step |
+| Coze Studio | Visual agents, knowledge bases, and workflows | Open-source versus hosted features, model configuration, and deployment requirements |
+| Budibase | Internal apps, automations, and Agents Beta | Beta suitability, deployment availability, and human approval steps |
+| ToolJet | AI-assisted internal application development | Self-hosted feature availability, data access, and development lifecycle controls |
+| Flowise | LLM workflows and Agentflow V2 orchestration | Shared state, human checkpoints, and compatibility with existing flows |
+| AnythingLLM | Document Q&A and local AI assistants | Desktop versus team deployment, model location, and document access |
+| NocoDB | Spreadsheet-style database management | AI availability in your edition, external database support, and license terms |
+| Strapi | Content management and content APIs | MCP access scope and compatibility with your Strapi version |
+| Dify | RAG applications and agentic workflows | Knowledge quality, plugin compatibility, and license conditions |
+| n8n | Automation across existing systems | Credentials, retries, human decisions, and permitted deployment use |
 
-If you’re exploring **AI tools, workflow automation, Agent building, or planning to create an intelligent application**, this list is a great place to start.
+For an initial comparison, shortlist Flowise, Dify, or AnythingLLM for knowledge-based AI features; Sim, Coze Studio, or n8n for agent and service orchestration; and NocoBase, Budibase, or ToolJet for business applications. NocoDB and Strapi are useful when the main requirement is structured data or managed content. These are selection starting points, not equivalent replacements.
 
-## No.11: NocoBase
+## NocoBase
 
-Official website: [https://www.nocobase.com](https://www.nocobase.com)
-
-**⭐ Stars: 17k**
+Official website: [NocoBase](https://www.nocobase.com)
 
 **Overview**
 
-An open-source, self-hosted AI no-code development platform centered on data modeling, bringing intelligence into business systems through AI Employees.
+NocoBase is an open-source, privately deployable platform for developing and continuously improving business systems with AI. Its focus is keeping the system reliable as requirements change after the first release.
 
-![nocobase.png](https://static-docs.nocobase.com/nocobase-s1wqmh.png)
+![NocoBase business application interface](https://static-docs.nocobase.com/nocobase-s1wqmh.png)
 
 **Key AI Features**
 
-* **AI Employee** – Users can configure AI assistants to take part in workflows like approvals, data processing, and content creation.
-* **Natural Language Modeling** – Simply describe your business needs in plain language, and the AI will generate data structures and fields automatically.
-* **Pluggable AI Extensions** – Future support for integrating different AI models and services via a plugin marketplace to increase flexibility.
+* **Development agents** build and test the business-specific parts using the shared foundation. Teams choose their models and Coding Agents.
+* **Business agents** work within the system's roles and permissions. Critical actions go through approval, and operations leave records.
+* **Controlled changes** connect development, checks, human acceptance, and release preparation so the next change can build on the previous one.
 
 **Best Use Cases**
 
-* **Internal enterprise systems** – CRM, approval processes, asset management, ticket workflows — where stable permissions and consistent data are essential.
-* **Security- and compliance-focused teams** – Fully self-hostable, suitable for finance, healthcare, and government environments.
-* **Teams with technical skills** – Want to add AI features on top of no-code without losing extensibility.
+CRM, supplier management, asset management, and support workflows that need consistent permissions and continued maintenance. Teams should evaluate the full change process, including migrations, backups, and recovery, against their own requirements.
 
 **How AI Fits In**
 
-In NocoBase, AI is deeply embedded in both the development and usage of the system.
+The NocoBase 3 product structure separates NocoBase Core, the application foundation, from NocoBase Studio, where people and their chosen agents organize development and improvements. NocoBase Solutions provides open-source business applications as starting points; NocoBase Launch helps teams learn the workflow in a real project.
 
-During the building phase, users can configure AI assistants to help with data modeling or automatically generate page layouts, greatly improving development efficiency.
+The division of responsibility is straightforward: agents execute, software enforces rules, and people decide. Code, data, and the runtime environment remain under the enterprise's control. Check the deployment documentation and edition entitlements for the version you plan to use.
 
-During the usage phase, AI assistants can act on user commands or contextual information to perform tasks such as querying data, analyzing reports, or answering business questions — making the system smarter and more efficient.
-
-## No.10: Sim
+## Sim
 
 Official website: [https://www.sim.ai/](https://www.sim.ai/)
-
-**⭐ Stars: 17k**
 
 **Overview**
 
@@ -78,11 +82,9 @@ Sim is an open-source platform for building AI agent workflows. With its visual 
 
 In Sim, AI agents can reason and take actions. Each agent can execute tasks on its own and connect with services, turning workflows into intelligent, autonomous processes.
 
-## No.9: Coze Studio
+## Coze Studio
 
-Official website: [https://www.coze.com/](https://www.coze.com/)
-
-**⭐ Stars: 17.9k**
+Open-source project: [Coze Studio](https://github.com/coze-dev/coze-studio)
 
 **Overview**
 
@@ -93,8 +95,8 @@ Coze Studio, developed by ByteDance, is a platform for building, testing, and de
 **Key AI Features**
 
 * **Visual agent builder** – A drag-and-drop interface for assembling logic and functional modules.
-* **Multi-model support** – Built-in templates for models like OpenAI, Claude, Qwen, and Ollama, making integration fast and simple.
-* **One-click deployment** – Supports both local and cloud deployment for rapid testing and continuous updates.
+* **Model services** – Configure supported model services for agents and workflows; confirm the provider and model you need in the selected release.
+* **Self-hosted deployment** – The open-source project documents Docker-based deployment and model configuration. Compare its feature list with the hosted product before choosing an edition. [Coze Studio repository](https://github.com/coze-dev/coze-studio).
 
 **Best Use Cases**
 
@@ -106,11 +108,9 @@ Coze Studio, developed by ByteDance, is a platform for building, testing, and de
 
 Coze Studio puts AI at the heart of the building process. Users can visually connect logic and modules to orchestrate multiple models, transitioning from simple visual assembly to AI-driven application development.
 
-## No.8: Budibase
+## Budibase
 
 Official website: [https://budibase.com/](https://budibase.com/)
-
-**⭐ Stars: 27.1k**
 
 **Overview**
 
@@ -122,7 +122,7 @@ Budibase is an open-source low-code/no-code platform designed for quickly buildi
 
 * **Smart field and data generation** – AI can create fields, clean data, summarize content, and speed up application building.
 * **AI logic suggestions** – When setting up expressions or binding logic, AI provides helpful recommendations.
-* **Agent integration (in progress)** – Budibase is exploring ways to embed AI agents into workflows to automate tasks and trigger actions.
+* **Agents Beta** – Budibase announced Agents Beta on March 12, 2026. The original “in progress” description is outdated; evaluate the beta against your deployment and approval requirements. [Official announcement](https://budibase.com/blog/updates/ai-agents-beta/).
 
 **Best Use Cases**
 
@@ -134,11 +134,9 @@ Budibase is an open-source low-code/no-code platform designed for quickly buildi
 
 In Budibase, AI acts as an assistant throughout the building process — generating fields, cleaning data, and optimizing logic to make internal tool development faster and smarter.
 
-## No.7: ToolJet
+## ToolJet
 
-Official website: [https://www.tooljet.ai/](https://www.tooljet.ai/)
-
-**⭐ Stars: 36.7k**
+Official website: [ToolJet](https://tooljet.com/)
 
 **Overview**
 
@@ -161,11 +159,9 @@ ToolJet is an open-source low-code platform that combines drag-and-drop building
 
 ToolJet integrates AI throughout the app-building process: users can generate pages and logic using natural language, and AI assists by suggesting and optimizing SQL or JavaScript during development.
 
-## No.6: Flowise
+## Flowise
 
 Official website: [https://flowiseai.com/](https://flowiseai.com/)
-
-**⭐ Stars: 45.6k**
 
 **Overview**
 
@@ -185,15 +181,17 @@ Flowise is a visual platform for building LLM- and Agent-powered workflows. User
 * **Internal AI hub** – Add intelligent reasoning and automation into existing business systems.
 * **AI prototyping** – Quickly test logic and combinations of different LLMs.
 
+**Version difference to evaluate**
+
+[Agentflow V2](https://docs.flowiseai.com/using-flowise/agentflowv2) documents explicit orchestration with native nodes and shared Flow State. Compared with V1's reliance on external frameworks for agent graph logic, V2 gives the workflow designer more direct control. Its documented human-in-the-loop checkpoints can pause and resume execution. Test existing flows before migrating; this is a feature comparison, not a claim that every older flow upgrades unchanged.
+
 **How AI Fits In**
 
 Flowise integrates AI directly into the workflow-building process. AI manages model calls, data processing, and tool connections, making it easier and faster to develop intelligent workflows for question answering, retrieval, and automation.
 
-## No.5: Anything-LLM
+## Anything-LLM
 
 Official website: [https://anythingllm.com/](https://anythingllm.com/)
-
-**⭐ Stars: 50k**
 
 **Overview**
 
@@ -217,68 +215,57 @@ Anything-LLM is an open-source, full-featured AI platform for building chatbots,
 
 Through its built-in multi-model support and plugin system, Anything-LLM enables AI to handle document retrieval, contextual understanding, and task automation throughout the process of building chat, search, or RAG-powered applications.
 
-## No.4: NocoDB
+## NocoDB
 
-Official website: [https://nocodb.com/](https://nocodb.com/)
-
-**⭐ Stars: 58.2k**
+Official website: [NocoDB](https://nocodb.com/)
 
 **Overview**
 
-NocoDB is an open-source alternative to Airtable that transforms databases like Postgres and MySQL into a spreadsheet-style interface, allowing non-technical users to manage data easily. With its new Noco AI features, intelligence is being integrated into data modeling and management.
+NocoDB provides a spreadsheet-style interface for structured data. Its current website describes it as a fair-source product, so it should not be grouped under an undifferentiated open-source label. [Official product overview](https://nocodb.com/).
 
-![NocoDB.png](https://static-docs.nocobase.com/NocoDB-en3prs.png)
+![NocoDB spreadsheet-style interface](https://static-docs.nocobase.com/NocoDB-en3prs.png)
 
-**Key AI Features**
+**AI and edition availability**
 
-* **Natural language table creation** – Describe your business requirements in plain language, and NocoDB will automatically generate tables, fields, and views.
-* **Smart field and relationship suggestions** – While editing database structures, AI recommends fields, relationships, and views to simplify the design process.
-* **Auto-generated dropdown options** – In the cloud version, AI can generate appropriate dropdown selections to save configuration time.
+The earlier edition of this article described Noco AI table generation, field suggestions, and generated dropdown options. This update does not verify those capabilities across current cloud and self-hosted editions. Treat them as items to confirm in your chosen version rather than assume they are included.
 
 **Best Use Cases**
 
-* **Business data management systems** – CRM, inventory, project management, asset management, and more.
-* **Low-code + AI modeling** – Enables business users without database knowledge to quickly build tables, design views, and create relational queries.
+Shortlist NocoDB when your main requirement is collaborative data management through a familiar table interface. Check the external database connections, views, and access rules needed for your workflow.
 
 **How AI Fits In**
 
-AI in NocoDB is embedded directly into the building experience. It assists with natural language table creation, field and relationship suggestions, and intelligent option generation—helping users model and manage data more efficiently.
+Validate AI-assisted modeling separately from the underlying database interface. A useful trial is to model related customers, orders, and order items, then verify the relationships and access rules manually.
 
-💡 Read More: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools ](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
+💡 Read More: [NocoBase vs NocoDB](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
 
-## No.3: Strapi
+## Strapi
 
-Official website: [https://strapi.io/](https://strapi.io/)
-
-**⭐ Stars: 70k**
+Official website: [Strapi](https://strapi.io/)
 
 **Overview**
 
-Strapi is an open-source Headless CMS — a content management backend that delivers content via APIs. It’s widely used for managing content and powering API-driven applications. In recent years, community plugins have introduced AI capabilities, making content creation and management smarter.
+Strapi is an open-source headless CMS for managing content and delivering it through APIs. It fits content-driven websites and applications with a separate frontend.
 
-![Strapi.png](https://static-docs.nocobase.com/Strapi-7rg2vh.png)
+![Strapi content management interface](https://static-docs.nocobase.com/Strapi-7rg2vh.png)
 
 **Key AI Features**
 
-* **AI plugin ecosystem** – Through community or custom plugins, users can integrate AI models for text generation, content review, summarization, and more.
-* **Intelligent content creation** – AI offers writing suggestions, generates paragraphs, and completes text for content creators.
-* **Automated tagging, categorization, and SEO** – AI can analyze content and automatically generate tags, categories, SEO titles, and keywords.
+The original article focused on community and custom AI plugins. Strapi now also announces a generally available MCP server for connecting agents to the CMS. This expands the integration options beyond the original plugin-only description. [Official MCP announcement](https://strapi.io/blog/the-strapi-mcp-server-is-now-ga).
 
 **Best Use Cases**
 
-* **Content-driven websites and products** – Blogs, news portals, brand websites, and content platforms.
-* **Frontend-backend decoupled applications** – Use React, Vue, or Next.js on the frontend while Strapi provides content APIs and AI support on the backend.
-* **Multilingual and localization workflows** – AI-assisted translation and summarization improve efficiency in delivering content across different languages.
+Editorial websites, structured content services, and multilingual publishing workflows. Teams should check which operations an agent may perform and where editorial approval takes place.
 
 **How AI Fits In**
 
-Strapi integrates AI through its plugin system, enabling automation and intelligence across content creation, review, classification, and multilingual publishing.
+Evaluate the agent connection against your content model and installed Strapi version. Keep generated content subject to the same review process as human-authored content.
 
-## No.2: Dify
+## Dify
+
+**License distinction:** Dify uses a modified Apache 2.0 license with additional conditions, including conditions on multi-tenant operation and frontend branding. Check those conditions for the deployment you intend to run. [Repository license](https://github.com/langgenius/dify/blob/main/LICENSE).
 
 Official website: [https://dify.ai/](https://dify.ai/)
-
-**⭐ Stars: 117k**
 
 **Overview**
 
@@ -295,22 +282,22 @@ Dify is a low-code/no-code platform focused on building AI applications and agen
 **Best Use Cases**
 
 * **Chatbots and conversational systems** – Quickly build bots with knowledge retrieval.
-* **Document and Q&A assistants** – Enable users to interactively query files or data to提升信息使用效率.
+* **Document and Q&A assistants** – Enable users to interactively query files or data to find and use relevant information.
 * **Embedding AI into SaaS or business systems** – Add AI capabilities like intelligent support, recommendations, or semantic search.
 
 **How AI Fits In**
 
 Dify systematizes LLM capabilities into the app-building workflow. Without writing code, users can integrate chat, retrieval, data understanding, and plugin-based AI models directly into their business systems.
 
-## No.1: n8n
+## n8n
+
+**License distinction:** The repository uses the Sustainable Use License for the covered code, with separate enterprise terms for designated files. Review the terms for your intended use; public code does not mean unrestricted redistribution or hosting rights. [Repository license](https://github.com/n8n-io/n8n/blob/master/LICENSE.md).
 
 Official website: [https://n8n.io/](https://n8n.io/)
 
-**⭐ Stars: 149k**
-
 **Overview**
 
-n8n is an open-source workflow automation platform that connects services, APIs, and databases through a node-based system to create automated workflows. In recent years, it has also expanded into AI and agent-driven automation.
+n8n is a source-available workflow automation platform that connects services, APIs, and databases through a node-based system to create automated workflows. In recent years, it has also expanded into AI and agent-driven automation.
 
 ![n8n.png](https://static-docs.nocobase.com/n8n-hs3wo1.png)
 
@@ -330,23 +317,19 @@ n8n is an open-source workflow automation platform that connects services, APIs,
 
 n8n integrates AI directly into workflow automation. Through visual AI nodes, agent-based execution logic, and API connections, users can leverage AI models for text processing, intelligent decision-making, and task execution within automated workflows.
 
+## Before you choose: test the second change
+
+Build one small workflow with your shortlisted tools, then change a rule. For example, create a supplier record, attach a qualification document, route it for approval, and later add an expiry reminder.
+
+Check whether an agent can read only the permitted records, whether approval is enforced by the application, and whether you can explain the resulting changes. Then test a failed integration, a repeated request, and recovery from a backup. This is a suggested evaluation scenario, not a benchmark we ran on these tools.
+
+For a privately deployed system, also map where prompts, documents, and credentials go. A locally hosted application can still send data to an external model or service. Include infrastructure, model usage, maintenance, and any required commercial features in your comparison.
+
 ## Conclusion
 
-Looking back at these 11 tools, it’s clear that AI is being woven into the no-code ecosystem in many different ways:
+Choose the tool around the system you need to maintain. Document assistants, workflow engines, content platforms, and business application foundations solve different problems. GitHub popularity is useful context, but your team's permissions, release process, and ability to make the next change deserve a practical trial.
 
-* **Natural language interfaces and data modeling** (NocoBase, ToolJet, NocoDB)
-* **AI-assisted development and automated logic generation** (Budibase, NocoBase)
-* **Visual agents and intelligent workflow building** (Sim, Flowise, Coze Studio, n8n)
-* **RAG and knowledge-based Q&A applications** (Dify, AnythingLLM)
-* **AI-powered content creation and management** (Strapi)
-
-From data modeling to workflow automation, from content creation to intelligent Q&A, AI is no longer just “another feature.”
-
-It is reshaping the entire no-code development experience — making it lighter, faster, and far more imaginative to build intelligent products.
-
-Perhaps in the future, the question won’t be “Do I need to learn to code?” but rather — “How do I build with AI?”
-
-If this article inspired you, feel free to share it with others who are also exploring the fusion of AI and no-code. 👍
+If you need a business system that will keep evolving, [explore NocoBase](https://www.nocobase.com) and test one real requirement with your team. For a broader shortlist, see our guides to [self-hosted Airtable alternatives](https://www.nocobase.com/en/blog/5-self-hosted-airtable-alternatives) and [Retool alternatives](https://www.nocobase.com/en/blog/retool-open-source-alternatives).
 
 **Related reading:**
 
