@@ -14,7 +14,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 ### v2.2.31
 
-*Release date: 2026-10-22*
+*Release date: 2026-10-23*
 
 ### 🚀 Improvements
 
