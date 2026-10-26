@@ -10,7 +10,7 @@ dotenv.config();
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.nocobase.com',
+  site: 'https://nocode.nocobase.com',
   integrations: [mdx()],
   devToolbar: {
     enabled: false

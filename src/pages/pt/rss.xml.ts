@@ -8,7 +8,7 @@ export async function GET() {
   return rss({
     title: 'Blog da NocoBase',
     description,
-    site: 'https://www.nocobase.com/',
+    site: 'https://nocode.nocobase.com/',
     // pt blog was removed — feed keeps working but links to English posts
     items: await getRssItems('en'),
     customData: `<language>pt-BR</language>`,

@@ -2,8 +2,11 @@
 // structured data. Values here must stay consistent with page-visible content
 // (Google requires structured data to describe what users actually see).
 
-export const SITE_URL = 'https://www.nocobase.com';
-const ORG_ID = `${SITE_URL}/#organization`;
+// This site now lives on nocode.nocobase.com (NocoBase 2); www.nocobase.com is the new site. Pages, the website and the
+// product entity use this site's address, and the organization stays on www, the company's home.
+export const SITE_URL = 'https://nocode.nocobase.com';
+const ORG_URL = 'https://www.nocobase.com';
+const ORG_ID = `${ORG_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 // The one canonical NocoBase product entity. A page that says something more
 // about the product — pricing, offers, ratings — must attach it to this @id
@@ -86,7 +89,7 @@ function organizationNode() {
     '@type': 'Organization',
     '@id': ORG_ID,
     name: 'NocoBase',
-    url: `${SITE_URL}/`,
+    url: `${ORG_URL}/`,
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/images/logo.png`,

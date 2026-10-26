@@ -8,7 +8,7 @@ export async function GET() {
   return rss({
     title: 'Blog NocoBase',
     description,
-    site: 'https://www.nocobase.com/',
+    site: 'https://nocode.nocobase.com/',
     items: await getRssItems('vi'),
     customData: `<language>vi-VN</language>`,
   });

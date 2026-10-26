@@ -5,7 +5,7 @@ export const GET: APIRoute = (context) => {
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nocobase.com/sitemap.xml
+Sitemap: https://nocode.nocobase.com/sitemap.xml
 `.trim();
   return new Response(robotsTxt, {
     headers: {
