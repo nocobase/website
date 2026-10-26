@@ -1,27 +1,37 @@
-// Pages that move to the new site on www.nocobase.com at the same address (see the page-destination list of
-// 2026-10-26): the en/cn/ja blog (posts, list pages, tag pages) and the partner, find-partner and contact pages.
-// The middleware 301s them to www and the sitemap stops listing them.
+// English and Chinese blog posts, customer stories, blog lists and the partner, find-partner and contact pages now
+// live on the new site at www.nocobase.com (see the page-destination list of 2026-10-26). The middleware 301s them
+// straight to their new address there (/en/blog/x -> /blog/x/, /cn/blog/x -> /zh-CN/blog/x/) and the sitemap stops
+// listing them.
 //
-// Keep this switch off until www actually serves those paths: www sends every path it does not have to this site,
-// so turning it on first would bounce visitors between the two domains.
-export const MOVED_TO_WWW_LIVE = false;
+// Only slugs the new site publishes move (v3-blog.json, taken from www's sitemap); anything else stays here, because
+// www sends every path it does not have to this site and a missing one would bounce between the two domains.
+// Japanese, pagination, tag pages and the timeline stay here for now.
+import V3 from './v3-blog.json';
+
+export const MOVED_TO_WWW_LIVE = true;
 export const WWW = 'https://www.nocobase.com';
 
-const MOVED_BLOG = /^\/(en|cn|ja)\/blog(\/.*)?$/;
-const MOVED_PAGES = /^\/(en|cn|tw|ja|fr|es|de|pt|id|vi)\/(partner|find-partner|contact)\/?$/;
-// Tags the new blog does not open: they go to the blog list of the same language instead.
-const CLOSED_BLOG_TAGS = new Set(['news-updates', 'nocobase-tutorials', 'serials-title', 'task-management']);
+const PREFIX: Record<string, string> = { en: '', cn: '/zh-CN' };
+const SLUGS: Record<string, { blog: Set<string>; customers: Set<string> }> = Object.fromEntries(
+  Object.entries(V3).map(([lang, s]) => [lang, { blog: new Set(s.blog), customers: new Set(s.customers) }]),
+);
+// Old blog categories: the new blog has no category pages, so they open the blog list (customer stories: the
+// customers list).
+const OLD_CATEGORIES = new Set(['release-notes', 'tech-tutorials', 'no-code-insights', 'nocode-news', 'nocobase-tutorials',
+  'task-management', 'serials-title', 'news-updates', 'nocobase-stories']);
 
 // Where a path of this site now lives on www, or null when it stays here.
 export function wwwTarget(pathname: string): string | null {
   const path = pathname.replace(/\/$/, '');
-  const blog = path.match(MOVED_BLOG);
-  if (blog) {
-    const rest = blog[2] || '';
-    const tag = rest.match(/^\/tags\/([^/]+)/);
-    if (tag && CLOSED_BLOG_TAGS.has(tag[1])) return `${WWW}/${blog[1]}/blog`;
-    return WWW + path;
-  }
-  if (MOVED_PAGES.test(path)) return WWW + path;
+  const page = path.match(/^\/(en|cn)\/(partner|find-partner|contact)$/);
+  if (page) return `${WWW}${PREFIX[page[1]]}/${page[2]}/`;
+  const blog = path.match(/^\/(en|cn)\/blog(?:\/([^/]+))?$/);
+  if (!blog) return null;
+  const [, lang, slug] = blog, base = WWW + PREFIX[lang];
+  if (!slug || OLD_CATEGORIES.has(slug)) return `${base}/blog/`;
+  if (slug === 'customer-stories') return `${base}/customers/`;
+  const name = decodeURIComponent(slug);
+  if (SLUGS[lang].blog.has(name)) return `${base}/blog/${slug}/`;
+  if (SLUGS[lang].customers.has(name)) return `${base}/customers/${slug}/`;
   return null;
 }
