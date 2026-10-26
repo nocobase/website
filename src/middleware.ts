@@ -1,6 +1,7 @@
 import { defineMiddleware } from 'astro:middleware';
 
 import { isInternalTaxonomySlug } from './utils/internal-taxonomy';
+import { MOVED_TO_WWW_LIVE, wwwTarget } from './utils/moved-to-www';
 
 // Define French pages that should redirect to English
 const FRENCH_REDIRECT_PATTERNS = [];
@@ -43,6 +44,17 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const pathname = isRussian
     ? requestPath === '/ru' ? '/en' : requestPath.replace(/^\/ru\//, '/en/')
     : requestPath;
+
+  // The community moved to the forum.
+  if (/^\/[a-z]{2}\/community\/?$/.test(pathname)) {
+    return context.redirect('https://forum.nocobase.com/', 301);
+  }
+
+  // Pages now served by www.nocobase.com (see utils/moved-to-www).
+  if (MOVED_TO_WWW_LIVE) {
+    const target = wwwTarget(pathname);
+    if (target) return context.redirect(target + context.url.search, 301);
+  }
 
   // Preserve common pricing URLs while keeping /commercial as the canonical
   // path. Every locale below has a corresponding commercial page.
