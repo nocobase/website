@@ -9,7 +9,7 @@ const I18N = {
     note: 'The prototype link (HTML) in the prompt is a design we pre-made, only to demonstrate the capability; NocoBase doesn\'t recommend generating a whole system from a single prompt. When you build with it, pair it with the “prototype reproduction” skill (nocobase-prototype-repro) in NocoBase Skills to get a good result.',
     copy: 'Copy prompt',
     footer:
-      'Before you start, follow the <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI agent quick start</a> to install NocoBase and connect your agent. AI results can vary; depending on the model and system complexity, some fine-tuning or extra rounds may be needed.',
+      'Before you start, follow the <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI agent quick start</a> to install NocoBase and connect your agent. AI results can vary; depending on the model and system complexity, some fine-tuning or extra rounds may be needed.',
     comingSoon: 'Prompt coming soon.',
   },
   cn: {
@@ -17,7 +17,7 @@ const I18N = {
     note: 'prompt 里附的原型链接（HTML）是我们预先做好的设计，仅作能力展示，NocoBase 并不建议「一句话生成整套系统」。使用它进行搭建时，需要搭配 NocoBase Skill 中的「原型解析」（nocobase-prototype-repro），才能得到比较好的效果。',
     copy: '复制提示词',
     footer:
-      '开始前，请先按 <a href="https://docs.nocobase.com/cn/ai/quick-start" target="_blank" rel="noopener">AI Agent 快速开始</a> 安装 NocoBase 并接入你的 AI Agent。AI 生成的结果可能有波动，视模型能力与系统复杂度，可能需要微调或多轮交互。',
+      '开始前，请先按 <a href="https://nocode.docs.nocobase.com/cn/ai/quick-start" target="_blank" rel="noopener">AI Agent 快速开始</a> 安装 NocoBase 并接入你的 AI Agent。AI 生成的结果可能有波动，视模型能力与系统复杂度，可能需要微调或多轮交互。',
     comingSoon: '提示词即将提供。',
   },
   de: {
@@ -25,7 +25,7 @@ const I18N = {
     note: 'Der Prototyp-Link (HTML) im Prompt ist ein von uns vorbereitetes Design und dient nur als Funktionsdemo; NocoBase empfiehlt nicht, ein ganzes System aus einem einzigen Prompt zu generieren. Kombinieren Sie es beim Aufbau mit dem Skill „prototype reproduction“ (nocobase-prototype-repro) aus den NocoBase Skills, um ein gutes Ergebnis zu erzielen.',
     copy: 'Prompt kopieren',
     footer:
-      'Folgen Sie zunächst dem <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI-Agent-Schnellstart</a>, um NocoBase zu installieren und Ihren Agenten anzubinden. KI-Ergebnisse können variieren; je nach Modell und Systemkomplexität sind möglicherweise Feinabstimmungen oder mehrere Runden erforderlich.',
+      'Folgen Sie zunächst dem <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI-Agent-Schnellstart</a>, um NocoBase zu installieren und Ihren Agenten anzubinden. KI-Ergebnisse können variieren; je nach Modell und Systemkomplexität sind möglicherweise Feinabstimmungen oder mehrere Runden erforderlich.',
     comingSoon: 'Prompt folgt in Kürze.',
   },
   es: {
@@ -33,7 +33,7 @@ const I18N = {
     note: 'El enlace al prototipo (HTML) del prompt es un diseño que preparamos de antemano, solo para demostrar la capacidad; NocoBase no recomienda generar un sistema completo a partir de un único prompt. Al construir con él, combínalo con la skill «prototype reproduction» (nocobase-prototype-repro) de NocoBase Skills para obtener un buen resultado.',
     copy: 'Copiar prompt',
     footer:
-      'Antes de empezar, sigue la <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">guía de inicio rápido del agente de IA</a> para instalar NocoBase y conectar tu agente. Los resultados de la IA pueden variar; según el modelo y la complejidad del sistema, puede ser necesario ajustar o realizar varias iteraciones.',
+      'Antes de empezar, sigue la <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">guía de inicio rápido del agente de IA</a> para instalar NocoBase y conectar tu agente. Los resultados de la IA pueden variar; según el modelo y la complejidad del sistema, puede ser necesario ajustar o realizar varias iteraciones.',
     comingSoon: 'Prompt disponible próximamente.',
   },
   fr: {
@@ -41,7 +41,7 @@ const I18N = {
     note: 'Le lien du prototype (HTML) dans le prompt est une maquette que nous avons préparée, uniquement pour démontrer la capacité ; NocoBase ne recommande pas de générer un système entier à partir d’un seul prompt. Lorsque vous l’utilisez pour construire, associez-le au skill « prototype reproduction » (nocobase-prototype-repro) des NocoBase Skills pour obtenir un bon résultat.',
     copy: 'Copier l\'invite',
     footer:
-      'Avant de commencer, suivez le <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">démarrage rapide de l\'agent IA</a> pour installer NocoBase et connecter votre agent. Les résultats de l\'IA peuvent varier ; selon le modèle et la complexité du système, quelques ajustements ou échanges supplémentaires peuvent être nécessaires.',
+      'Avant de commencer, suivez le <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">démarrage rapide de l\'agent IA</a> pour installer NocoBase et connecter votre agent. Les résultats de l\'IA peuvent varier ; selon le modèle et la complexité du système, quelques ajustements ou échanges supplémentaires peuvent être nécessaires.',
     comingSoon: 'Invite bientôt disponible.',
   },
   id: {
@@ -49,7 +49,7 @@ const I18N = {
     note: 'Tautan prototipe (HTML) di prompt adalah desain yang sudah kami siapkan, hanya untuk mendemonstrasikan kemampuannya; NocoBase tidak menyarankan membuat satu sistem utuh hanya dari satu prompt. Saat membangun dengannya, padukan dengan skill “prototype reproduction” (nocobase-prototype-repro) di NocoBase Skills agar mendapat hasil yang baik.',
     copy: 'Salin prompt',
     footer:
-      'Sebelum memulai, ikuti <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">panduan cepat AI agent</a> untuk menginstal NocoBase dan menghubungkan agent Anda. Hasil AI dapat bervariasi; bergantung pada model dan kompleksitas sistem, mungkin diperlukan penyesuaian atau beberapa putaran tambahan.',
+      'Sebelum memulai, ikuti <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">panduan cepat AI agent</a> untuk menginstal NocoBase dan menghubungkan agent Anda. Hasil AI dapat bervariasi; bergantung pada model dan kompleksitas sistem, mungkin diperlukan penyesuaian atau beberapa putaran tambahan.',
     comingSoon: 'Prompt segera tersedia.',
   },
   ja: {
@@ -57,7 +57,7 @@ const I18N = {
     note: 'prompt にあるプロトタイプのリンク（HTML）は、私たちが事前に用意したデザインで、機能のデモを目的としたものです。NocoBase は「一言でシステム全体を生成する」ことを推奨していません。これを使って構築する際は、NocoBase Skill の「プロトタイプ再現」（nocobase-prototype-repro）と組み合わせると、より良い結果が得られます。',
     copy: 'プロンプトをコピー',
     footer:
-      '始める前に、<a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI Agent クイックスタート</a> に従って NocoBase をインストールし、エージェントを接続してください。AI の生成結果には個体差があります。モデルの性能とシステムの複雑さによっては、微調整や複数回のやり取りが必要になる場合があります。',
+      '始める前に、<a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI Agent クイックスタート</a> に従って NocoBase をインストールし、エージェントを接続してください。AI の生成結果には個体差があります。モデルの性能とシステムの複雑さによっては、微調整や複数回のやり取りが必要になる場合があります。',
     comingSoon: 'プロンプトは近日公開予定です。',
   },
   pt: {
@@ -65,7 +65,7 @@ const I18N = {
     note: 'O link do protótipo (HTML) no prompt é um design que preparamos previamente, apenas para demonstrar a capacidade; o NocoBase não recomenda gerar um sistema inteiro a partir de um único prompt. Ao construir com ele, combine-o com a skill “prototype reproduction” (nocobase-prototype-repro) das NocoBase Skills para obter um bom resultado.',
     copy: 'Copiar prompt',
     footer:
-      'Antes de começar, siga o <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">início rápido do agente de IA</a> para instalar o NocoBase e conectar o seu agente. Os resultados de IA podem variar; dependendo do modelo e da complexidade do sistema, alguns ajustes ou rodadas adicionais podem ser necessários.',
+      'Antes de começar, siga o <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">início rápido do agente de IA</a> para instalar o NocoBase e conectar o seu agente. Os resultados de IA podem variar; dependendo do modelo e da complexidade do sistema, alguns ajustes ou rodadas adicionais podem ser necessários.',
     comingSoon: 'Prompt em breve.',
   },
   tw: {
@@ -73,7 +73,7 @@ const I18N = {
     note: 'prompt 裡附的原型連結（HTML）是我們預先做好的設計，僅作能力展示，NocoBase 並不建議「一句話生成整套系統」。使用它進行搭建時，需要搭配 NocoBase Skill 中的「原型解析」（nocobase-prototype-repro），才能得到比較好的效果。',
     copy: '複製提示詞',
     footer:
-      '開始前，請先按 <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI Agent 快速開始</a> 安裝 NocoBase 並接入你的 AI Agent。AI 生成的結果可能有波動，視模型能力與系統複雜度，可能需要微調或多輪互動。',
+      '開始前，請先按 <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">AI Agent 快速開始</a> 安裝 NocoBase 並接入你的 AI Agent。AI 生成的結果可能有波動，視模型能力與系統複雜度，可能需要微調或多輪互動。',
     comingSoon: '提示詞即將提供。',
   },
   vi: {
@@ -81,7 +81,7 @@ const I18N = {
     note: 'Liên kết nguyên mẫu (HTML) trong prompt là thiết kế chúng tôi chuẩn bị sẵn, chỉ nhằm minh họa khả năng; NocoBase không khuyến nghị tạo cả một hệ thống chỉ từ một câu prompt. Khi xây dựng với nó, hãy kết hợp với skill “prototype reproduction” (nocobase-prototype-repro) trong NocoBase Skills để có kết quả tốt.',
     copy: 'Sao chép prompt',
     footer:
-      'Trước khi bắt đầu, hãy làm theo <a href="https://docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">hướng dẫn nhanh AI agent</a> để cài đặt NocoBase và kết nối agent của bạn. Kết quả AI có thể khác nhau; tùy vào mô hình và độ phức tạp của hệ thống, có thể cần tinh chỉnh thêm hoặc tương tác nhiều vòng.',
+      'Trước khi bắt đầu, hãy làm theo <a href="https://nocode.docs.nocobase.com/ai/quick-start" target="_blank" rel="noopener">hướng dẫn nhanh AI agent</a> để cài đặt NocoBase và kết nối agent của bạn. Kết quả AI có thể khác nhau; tùy vào mô hình và độ phức tạp của hệ thống, có thể cần tinh chỉnh thêm hoặc tương tác nhiều vòng.',
     comingSoon: 'Prompt sẽ sớm được cung cấp.',
   },
 } as const;
