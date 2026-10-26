@@ -77,7 +77,7 @@ This table deliberately separates **agent orchestration** from **business workfl
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-f3pxw5.png)
 
-💡 How to connect AI Agents to NocoBase? Read the official guide: [https://docs.nocobase.com/en/ai-builder](https://docs.nocobase.com/en/ai-builder)
+💡 How to connect AI Agents to NocoBase? Read the official guide: [https://nocode.docs.nocobase.com/ai-builder](https://nocode.docs.nocobase.com/ai-builder)
 
 **NocoBase AI typical scenarios**:
 

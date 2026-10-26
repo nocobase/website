@@ -26,7 +26,7 @@ OpenClaw、Claude Code、Codex のようなツールと比べると、WorkBuddy 
 
 **GitHub Stars**：22.3k
 
-**ドキュメント**： [https://docs.nocobase.com/](https://docs.nocobase.com/)
+**ドキュメント**： [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **関連リソース**：
 

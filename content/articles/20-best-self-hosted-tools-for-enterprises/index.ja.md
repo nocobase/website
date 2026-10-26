@@ -45,7 +45,7 @@
 * **公式サイト**：[https://www.nocobase.com/](https://www.nocobase.com/)
 * **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Stars**：22.1k
-* **公式ドキュメント**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **公式ドキュメント**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **位置づけ**：企業向けアプリ、内部ツール、各種業務システムの構築に対応するセルフホスト型 AI ノーコード / ローコードプラットフォームです。CRM、ERP、プロジェクト管理、承認、チケット、台帳、ポータルなど幅広い業務システムを構築でき、データモデル、権限、ワークフローを長期的に拡張していきたい企業の IT チーム、DX チーム、導入・連携チームに向いています。
 

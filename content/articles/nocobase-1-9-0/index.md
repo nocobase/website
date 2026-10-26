@@ -34,13 +34,13 @@ Introduces a new service splitting mechanism, allowing asynchronous task and wor
 
 ![20250803214857](https://static-docs.nocobase.com/20250803214857.png)
 
-Reference: [Service Splitting](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode/services-splitting)
+Reference: [Service Splitting](https://nocode.docs.nocobase.com/cluster-mode/services-splitting)
 
 ### New Event Queue for Handling Queue Messages
 
 Adds a dedicated event queue for handling system queue messages, improving asynchronous task processing and reliability.
 
-Reference: [Cluster Mode: Message Queue](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode#message-queue)
+Reference: [Cluster Mode: Message Queue](https://nocode.docs.nocobase.com/cluster-mode)
 
 ### Graceful Shutdown Lifecycle Support
 

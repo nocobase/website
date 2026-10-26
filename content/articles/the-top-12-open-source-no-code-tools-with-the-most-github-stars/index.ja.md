@@ -24,7 +24,7 @@
 | **GitHub スター数**   | 21.3k                                                                        |
 | **GitHub 最終更新日** | 当日                                                                         |
 | **公式サイト**        | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| **ドキュメント**      | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| **ドキュメント**      | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **概要:**
 

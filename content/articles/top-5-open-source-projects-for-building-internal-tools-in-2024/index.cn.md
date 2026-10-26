@@ -53,7 +53,7 @@
 
 **GitHub 项目开始时间**：2021年
 
-**相关资源：**[官网](https://www.nocobase.com/) ｜[GitHub](https://github.com/nocobase/nocobase) ｜ [文档](https://docs.nocobase.com/)
+**相关资源：**[官网](https://www.nocobase.com/) ｜[GitHub](https://github.com/nocobase/nocobase) ｜ [文档](https://nocode.docs.nocobase.com/)
 
 ⭐️ **Star 数**：21.3K
 

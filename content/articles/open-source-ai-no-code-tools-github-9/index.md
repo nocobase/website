@@ -63,13 +63,13 @@ NocoBase is closer to a development framework and business system infrastructure
 
 > **🎉 Related resources**
 >
-> AI documentation: [https://docs.nocobase.com/en/ai/](https://docs.nocobase.com/en/ai/)
+> AI documentation: [https://nocode.docs.nocobase.com/ai](https://nocode.docs.nocobase.com/ai)
 >
-> CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+> CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 >
-> Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+> Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 >
-> MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+> MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
 **No-code capabilities reduce long-term maintenance costs**: Many AI generation tools can quickly create code, but later maintenance often depends on developers. NocoBase is different because after AI generates the initial system, users can still modify fields, pages, menus, action buttons, permissions, and workflows in the no-code interface. For business teams, the system does not stop at a one-off demo. It can keep evolving as the business changes.
 

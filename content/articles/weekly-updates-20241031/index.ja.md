@@ -111,4 +111,4 @@ NocoBaseはプライベートでオープンソースのノーコードプラッ
 
 NocoBaseのソースコードをダウンロードしてインストールできます。Dockerインストール、create-nocobase-appインストールおよびGitソースコードインストールをサポートしています。
 
-**[公式ドキュメント](https://docs.nocobase.com/)は随時更新されています。**
+**[公式ドキュメント](https://nocode.docs.nocobase.com/)は随時更新されています。**

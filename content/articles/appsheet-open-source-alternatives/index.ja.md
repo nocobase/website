@@ -37,7 +37,7 @@ AppSheetはゼロコード開発では優れていますが、RedditではAppShe
 * GitHub:[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * GitHub Stars:21.1k
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
-* Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **✅ お勧めの理由です:**
 

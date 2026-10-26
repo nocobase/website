@@ -44,9 +44,9 @@ NocoBase is an open source AI no-code platform for building enterprise internal 
 
 The core value of NocoBase **is that it provides a complete system framework for internal tools**, including data models, page configuration, permission control, workflows, plugin extensions, and AI capabilities. For developers, it is more than a drag-and-drop page builder. It is business system infrastructure that can still be extended with code.
 
-NocoBase provides official Codex documentation: [Using Codex with NocoBase for both building and development](https://docs.nocobase.com/en/ai/codex)
+NocoBase provides official Codex documentation: [Using Codex with NocoBase for both building and development](https://nocode.docs.nocobase.com/ai/codex)
 
-After connecting Codex, Codex can use [NocoBase Skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills) and the [CLI](https://docs.nocobase.com/en/api/cli/) to understand how NocoBase is configured and developed. It can help developers create data tables, configure pages, design workflows, set permissions, and further handle plugin development, feature extensions, and troubleshooting through natural language.
+After connecting Codex, Codex can use [NocoBase Skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills) and the [CLI](https://nocode.docs.nocobase.com/api/cli) to understand how NocoBase is configured and developed. It can help developers create data tables, configure pages, design workflows, set permissions, and further handle plugin development, feature extensions, and troubleshooting through natural language.
 
 ![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-40774f.png)
 
@@ -81,7 +81,7 @@ Codex handles requirement understanding, business structure breakdown, and imple
 Copy the prompt below into Codex to automatically install and configure NocoBase:
 
 ```text
-Help me install the NocoBase CLI and complete initialization: https://docs.nocobase.com/en/ai/ai-quick-start.md Please open and read the link directly.
+Help me install the NocoBase CLI and complete initialization: https://nocode.docs.nocobase.com/ai/ai-quick-start.md Please open and read the link directly.
 ```
 
 #### Design a system
@@ -100,13 +100,13 @@ Help me use the nocobase-dsl-reconciler skill to build a ticket management syste
 
 You can copy these links and send them to Codex for direct use.
 
-Documentation: [https://docs.nocobase.com/en/ai/](https://docs.nocobase.com/en/ai/)
+Documentation: [https://nocode.docs.nocobase.com/ai](https://nocode.docs.nocobase.com/ai)
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
 ## 2. Refine
 

@@ -122,7 +122,7 @@ At this point, all four tables and their fields have been created successfully.
 
 [Data Sources - NocoBase Documentation](https://v2.docs.nocobase.com/data-sources)
 
-[Orin Data Modeling Expert - NocoBase Documentation](https://v2.docs.nocobase.com/ai-employees/built-in/data-modeling)
+[Orin Data Modeling Expert - NocoBase Documentation](https://nocode.docs.nocobase.com/ai-builder/data-modeling)
 
 ## Step 2: Displaying the Data
 

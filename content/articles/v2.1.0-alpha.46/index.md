@@ -10,7 +10,7 @@
 - **[client]** Enhanced autocomplete support for some built-in RunJS functions. ([#9481](https://github.com/nocobase/nocobase/pull/9481)) by @gchust
 - **[cli]** Improved init and self-update guidance. ([#9633](https://github.com/nocobase/nocobase/pull/9633)) by @chenos
 - **[undefined]** Updated the Embed NocoBase documentation for the open-source plugin. ([#9642](https://github.com/nocobase/nocobase/pull/9642)) by @zhangzhonghe
-  Reference: [Embed NocoBase](https://docs.nocobase.com/en/integration/embed/)
+  Reference: [Embed NocoBase](https://nocode.docs.nocobase.com/integration/embed)
 - **[Departments]** Added a v2 settings page for managing departments, department members, and user department assignments. ([#9660](https://github.com/nocobase/nocobase/pull/9660)) by @jiannx
 - **[Auth: SAML 2.0]** SAML/CAS sign-in redirects now follow the modern client prefix. by @Molunerfinn
 - **[Action: Import records Pro]** Upgraded `xlsx` to avoid security issues. by @mytharcher

@@ -73,7 +73,7 @@ Demo: https://demo.nocobase.com/new
 
 Tutorials: https://www.nocobase.com/en/tutorials
 
-Documentation: https://docs.nocobase.com/welcome/introduction
+Documentation: https://nocode.docs.nocobase.com/
 
 ## **Other Leading Open-Source Alternatives**
 

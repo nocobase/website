@@ -4,7 +4,7 @@ Markdown Block is one of the most commonly used and powerful blocks in our syste
 
 Due to the flexible, open, and easily modifiable nature of the Markdown block, it is often used to display system announcements. Whether it is a business module, a feature, a block, or even a field, we can post little tips just like using sticky notes.
 
-Before using the Markdown block, it is recommended that you first familiarize yourself with Markdown formatting and syntax. You can refer to the [Vditor Example](https://docs.nocobase.com/api/field/markdown-vditor).
+Before using the Markdown block, it is recommended that you first familiarize yourself with Markdown formatting and syntax. You can refer to the [Vditor Example](https://nocode.docs.nocobase.com/api).
 
 > Note: The Markdown block on the page is relatively lightweight, and certain features (such as mathematical formulas, mind maps, etc.) are currently not supported for rendering. However, we can implement them using HTML; the system also provides a Vditor field component for you to try.
 

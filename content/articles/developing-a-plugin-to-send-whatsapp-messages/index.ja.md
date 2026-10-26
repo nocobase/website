@@ -16,13 +16,13 @@
 
 ## プラグイン構造の作成
 
-プラグインを作成するには、以下のコマンドを実行するだけです。プラグインの構造、初期コード、コマンドの詳細については[ドキュメント](https://docs.nocobase.com/development/your-fisrt-plugin)を参照してください。
+プラグインを作成するには、以下のコマンドを実行するだけです。プラグインの構造、初期コード、コマンドの詳細については[ドキュメント](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)を参照してください。
 
 ```
 yarn pm create @my-project/plugin-whatsapp
 ```
 
-作成後、生成されたファイルは`packages`フォルダー内のプラグインの名前で格納されます。ファイル構造を理解するために、[こちら](https://docs.nocobase.com/development/app-ds)のマニュアルを参照できます。
+作成後、生成されたファイルは`packages`フォルダー内のプラグインの名前で格納されます。ファイル構造を理解するために、[こちら](https://nocode.docs.nocobase.com/plugin-development/server/data-source-manager)のマニュアルを参照できます。
 
 ![plugin's defined name.png](https://static-docs.nocobase.com/c63fb5375b27a5c2520437df9bfbb253.png)
 
@@ -48,7 +48,7 @@ yarn pm enable @my-project/plugin-hello
    * **Content**：メッセージ内容
    * **Status**：保留中または完了
 
-NocoBaseでは、コレクションは`/src/server/collections/`フォルダーに格納されています。基本構造は以下のようになります。詳細については[ドキュメント](https://docs.nocobase.com/development/server/collections)を参照してください。
+NocoBaseでは、コレクションは`/src/server/collections/`フォルダーに格納されています。基本構造は以下のようになります。詳細については[ドキュメント](https://nocode.docs.nocobase.com/plugin-development/server/collections)を参照してください。
 
 ```
 ##File: ProvideConfig
@@ -272,7 +272,7 @@ export default PluginWhatsappClient;
 
 ## **プラグインをファイルとしてエクスポート**
 
-作成したプラグインをエクスポートするには、以下のコマンドを実行するだけです。これにより、他のNocoBaseインスタンスにインストールできる`.tar`ファイルが生成されます。詳細については、[ドキュメント](https://docs.nocobase.com/development/your-fisrt-plugin)を参照してください。
+作成したプラグインをエクスポートするには、以下のコマンドを実行するだけです。これにより、他のNocoBaseインスタンスにインストールできる`.tar`ファイルが生成されます。詳細については、[ドキュメント](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)を参照してください。
 
 ```
 yarn build @my-project/plugin-hello

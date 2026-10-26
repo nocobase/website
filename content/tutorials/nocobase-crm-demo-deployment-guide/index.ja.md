@@ -2,7 +2,7 @@
 
 開始する前に、以下の点をご確認ください：
 
-- 基本的なNocoBaseの実行環境がすでに構築されていること。メインシステムのインストールについては、より詳細な[公式インストールガイド](https://docs-cn.nocobase.com/welcome/getting-started/installation)（中国語）または[公式ドキュメント](https://docs.nocobase.com/welcome/getting-started/installation)（英語）をご参照ください。
+- 基本的なNocoBaseの実行環境がすでに構築されていること。メインシステムのインストールについては、より詳細な[公式インストールガイド](https://docs-cn.nocobase.com/welcome/getting-started/installation)（中国語）または[公式ドキュメント](https://nocode.docs.nocobase.com/get-started/installation/docker)（英語）をご参照ください。
 - CRMデモの関連ファイルをダウンロード済みであること：
   - **バックアップファイル**（約21.2MB）：[crm\_demo\_20250711.nbdata](https://static-docs.nocobase.com/crm_demo_20250711.nbdata) - 方法1で使用
   - **SQLファイル**（圧縮後約9MB）：[crm\_demo\_20250711\_sql.zip](https://static-docs.nocobase.com/crm_demo_20250711_sql.zip) - 方法2で使用

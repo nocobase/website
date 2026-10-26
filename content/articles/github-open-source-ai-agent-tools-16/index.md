@@ -81,11 +81,11 @@ NocoBase is suitable for building enterprise internal systems that require data 
 
 **🔎Related resources**:
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
 Official solution library: [https://www.nocobase.com/en/solutions](https://www.nocobase.com/en/solutions)
 

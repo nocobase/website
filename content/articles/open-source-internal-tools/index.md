@@ -76,7 +76,7 @@ ILLA Builder is an open-source low-code platform designed to simplify the develo
 | Most Recent Update on GitHub | Within one day                                                               |
 | Open Source License          | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | Official Website             | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| Documentation                | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| Documentation                | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **Introduction**
 

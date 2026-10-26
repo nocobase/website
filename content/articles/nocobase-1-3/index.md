@@ -51,7 +51,7 @@ Reference documentation:
 Reference documentation:
 
 - [Field settings / Field component](https://docs.nocobase.com/handbook/ui/fields/field-settings/field-component)
-- [Plugin samples / Field component with value](https://docs.nocobase.com/plugin-samples/field/value)
+- [Plugin samples / Field component with value](https://nocode.docs.nocobase.com/plugin-development/client/examples/custom-field)
 
 ## Plugins
 
@@ -111,4 +111,4 @@ The new `TZ` environment variable has been added to set the application's time z
 
 Reference:
 
-- [Environment Variable / TZ](https://docs.nocobase.com/welcome/getting-started/env#tz)
+- [Environment Variable / TZ](https://nocode.docs.nocobase.com/get-started/installation/env)

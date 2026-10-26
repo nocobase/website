@@ -41,7 +41,7 @@
 
 **官网链接**：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-**文档链接**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+**文档链接**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 🎉 NocoBase 近期上线了[项目管理解决方案](https://www.nocobase.com/cn/solutions/project-management)，开源、完全掌控、极易扩展与修改，欢迎体验！
 

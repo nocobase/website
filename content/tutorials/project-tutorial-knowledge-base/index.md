@@ -193,4 +193,4 @@ In this chapter, we built the foundation of a knowledge base, incorporating a Do
 
 ---
 
-Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions and support.s
+Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions and support.s

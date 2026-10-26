@@ -146,6 +146,6 @@ You’ve now completed a fully functional task management system from scratch �
 
 The flexibility and extensibility of NocoBase open up limitless possibilities for you. In the future, you can explore more plugins, customize features, or create complex business logic. With this knowledge, you’ve mastered the basics and core concepts of NocoBase.
 
-We look forward to seeing your next innovation! For any questions, feel free to consult the [NocoBase official documentation](https://docs.nocobase.com/) or join the [NocoBase community](https://forum.nocobase.com/) for discussions.
+We look forward to seeing your next innovation! For any questions, feel free to consult the [NocoBase official documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase community](https://forum.nocobase.com/) for discussions.
 
 Keep exploring and unleash endless potential!

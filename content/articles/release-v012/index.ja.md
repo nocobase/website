@@ -6,7 +6,7 @@
 
 ### Dockerインストールのアップグレード
 
-変更なし。[Dockerイメージアップグレードガイド](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose)を参照してください。
+変更なし。[Dockerイメージアップグレードガイド](https://nocode.docs.nocobase.com/get-started/upgrading/docker)を参照してください。
 
 ### ソースコードインストールのアップグレード
 
@@ -17,7 +17,7 @@ git pull # 新しいソースコードをプルします。
 yarn clean # キャッシュをクリアします。
 ```
 
-詳細については、[Gitソースアップグレードガイド](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone)を参照してください。
+詳細については、[Gitソースアップグレードガイド](https://nocode.docs.nocobase.com/get-started/upgrading/git)を参照してください。
 
 ### create-nocobase-appインストールのアップグレード
 

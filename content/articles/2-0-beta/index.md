@@ -113,7 +113,7 @@ User Manual: [Email Manager](https://v2.docs.nocobase.com/email-manager)
 
 The Record History plugin tracks data changes by automatically saving snapshots and difference records for create, update, and delete operations, helping users quickly trace data changes and audit operations.
 
-User Manual: [Record History](https://v2.docs.nocobase.com/record-history/)
+User Manual: [Record History](https://nocode.docs.nocobase.com/record-history)
 
 ![](https://static-docs.nocobase.com/202511011346400.png)
 

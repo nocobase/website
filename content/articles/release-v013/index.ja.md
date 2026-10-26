@@ -12,6 +12,6 @@
 
 ## アップグレード
 
-* [Docker Composeのアップグレード](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose)
-* [create-nocobase-appのアップグレード](https://docs.nocobase.com/welcome/getting-started/upgrading/create-nocobase-app)
-* [Gitソースコードのアップグレード](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone)
+* [Docker Composeのアップグレード](https://nocode.docs.nocobase.com/get-started/upgrading/docker)
+* [create-nocobase-appのアップグレード](https://nocode.docs.nocobase.com/get-started/upgrading/create-nocobase-app)
+* [Gitソースコードのアップグレード](https://nocode.docs.nocobase.com/get-started/upgrading/git)

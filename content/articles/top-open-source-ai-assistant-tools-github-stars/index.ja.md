@@ -50,7 +50,7 @@ r/AI_Agents のある投稿では、あるユーザーが[本当に長く使う�
 
 **オンライン Demo**：[https://demo.nocobase.com/new](https://demo.nocobase.com/new)
 
-**ドキュメント**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+**ドキュメント**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 

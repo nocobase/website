@@ -127,4 +127,4 @@
 
 準備はできましたか？次の章へ進みましょう：[第6章：ユーザーと権限](https://www.nocobase.com/en/tutorials/task-tutorial-user-permissions)。
 
-探求し続け、創造力を解き放ちましょう！問題に遭遇した場合は、[NocoBase公式ドキュメント](https://docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。
+探求し続け、創造力を解き放ちましょう！問題に遭遇した場合は、[NocoBase公式ドキュメント](https://nocode.docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。

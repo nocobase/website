@@ -60,7 +60,7 @@ RetoolのSaaS版はサブスクリプションモデルで運営されており�
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHubスター数**: 21.1k
 * **ウェブサイト**: [https://www.nocobase.com/](https://www.nocobase.com/)
-* **ドキュメント**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **ドキュメント**: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **NocoBase** は、複雑な業務アプリケーションを迅速に構築したい企業向けに設計された、拡張性の高いオープンソースの AI 駆動型ノーコード（ゼロコード）開発プラットフォームです。プラグイン型アーキテクチャと強力なデータ権限制御により、AI の支援を活用しながら複雑な業務シナリオに対応でき、ワークフローの自動化によって開発効率を大幅に向上させます。
 

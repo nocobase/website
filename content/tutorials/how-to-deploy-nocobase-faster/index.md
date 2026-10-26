@@ -128,7 +128,7 @@ With Nginx proxy, homepage loading takes about 3-4 seconds
 **Using cluster deployment with load balancing (suitable for high concurrency and high availability scenarios):**
 
 - Advantages: By deploying multiple instances to handle requests, you can significantly improve overall system stability and concurrency capacity.
-- For specific deployment methods, see **[Cluster Mode](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode)**
+- For specific deployment methods, see **[Cluster Mode](https://nocode.docs.nocobase.com/cluster-mode)**
 
 ### 5. Using CDN to Accelerate Static Resources
 

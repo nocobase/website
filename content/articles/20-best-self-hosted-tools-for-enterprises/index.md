@@ -45,7 +45,7 @@ We grouped the self hosted tools mentioned here into 5 categories based on commo
 * **Official website**: [https://www.nocobase.com/](https://www.nocobase.com/)
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Stars**: 22.1k
-* **Official docs**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **Official docs**: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **Overview**: A self hosted AI no code / low code platform for enterprise apps, internal tools, and many kinds of business systems. It can be used to build CRM, ERP, project management tools, approval systems, ticketing systems, ledgers, portals, and more. It is especially suitable for enterprise IT teams, digital teams, and implementation teams that need to keep expanding data models, permissions, and workflows over time.
 

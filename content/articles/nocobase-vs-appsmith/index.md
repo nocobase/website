@@ -197,9 +197,9 @@ Comparatively, **NocoBase’s** visual workflow designer lowers the threshold fo
 
 NocoBase supports three different installation methods, each with slightly different deployment procedures.
 
-* [Docker](https://docs.nocobase.com/welcome/getting-started/deployment/docker-compose)
-* [create-nocobase-app](https://docs.nocobase.com/welcome/getting-started/deployment/create-nocobase-app)
-* [Git source code](https://docs.nocobase.com/welcome/getting-started/deployment/git-clone)
+* [Docker](https://nocode.docs.nocobase.com/get-started/installation/docker)
+* [create-nocobase-app](https://nocode.docs.nocobase.com/get-started/installation/create-nocobase-app)
+* [Git source code](https://nocode.docs.nocobase.com/get-started/installation/git)
 
 **Deployment Steps (Docker)**:
 

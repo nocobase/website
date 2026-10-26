@@ -85,7 +85,7 @@ NocoBase's strengths lie in AI + no-code collaboration, production-grade system 
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-nfmb6h.png)
 
-💡 How do you connect an AI Agent to NocoBase? Read the official guide: [https://docs.nocobase.com/en/ai-builder](https://docs.nocobase.com/en/ai-builder)
+💡 How do you connect an AI Agent to NocoBase? Read the official guide: [https://nocode.docs.nocobase.com/ai-builder](https://nocode.docs.nocobase.com/ai-builder)
 
 ### Not Ideal For
 

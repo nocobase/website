@@ -58,7 +58,7 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 
 不需要担心 SQL 和 JSON 过于复杂，有 AI 员工 Nathan 帮你。
 
-使用手册：[数据可视化](https://v2.docs.nocobase.com/cn/data-visualization)
+使用手册：[数据可视化](https://nocode.docs.nocobase.com/cn/data-visualization)
 
 ![](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 
@@ -106,7 +106,7 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 邮件管理插件使用 FlowEngine 进行了重构，使 AI 员工可以无缝参与到邮件的总结、分析、撰写中，同时新增了自动保存草稿等功能。
 
 使用手册：
-https://v2.docs.nocobase.com/cn/email-manager
+https://nocode.docs.nocobase.com/cn/email-manager
 
 ![](https://static-docs.nocobase.com/email-manager/Loading--10-31-2025_08_31_PM.png)
 

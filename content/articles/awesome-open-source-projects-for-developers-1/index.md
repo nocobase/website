@@ -2,7 +2,7 @@ Open-source projects have revolutionized how developers create, innovate, and co
 
 [NocoBase](https://www.nocobase.com/en/blog/what-is-no-code), a highly scalable open-source AI-powered no-code development platform, is an infrastructure tailored for development teams and developers. In creating NocoBase, we leveraged numerous excellent and mature open-source web development projects. We extend our sincere gratitude to these outstanding open-source projects.
 
-This article will introduce the [open-source projects used by NocoBase](https://docs.nocobase.com/welcome/community/thanks), analyze their strengths, weaknesses, use cases, and more examples.
+This article will introduce the [open-source projects used by NocoBase](https://nocode.docs.nocobase.com/), analyze their strengths, weaknesses, use cases, and more examples.
 
 Bookmark this curated list of awesome open-source projects for developers!
 

@@ -2,7 +2,7 @@
 
 ### Telemetry
 
-* Development documentation: [https://docs.nocobase.com/development/server/telemetry](https://docs.nocobase.com/development/server/telemetry)
+* Development documentation: [https://nocode.docs.nocobase.com/plugin-development/server/telemetry](https://nocode.docs.nocobase.com/plugin-development/server/telemetry)
 * Kernel API: [https://docs.nocobase.com/api/telemetry/telemetry](https://docs.nocobase.com/api/telemetry/telemetry)
 * Prometheus plugin: [https://docs.nocobase.com/handbook/telemetry-prometheus](https://docs.nocobase.com/handbook/telemetry-prometheus)
 

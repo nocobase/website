@@ -24,7 +24,7 @@ This article will meticulously outline the core features and suitable scenarios 
 | **GitHub Star**                      | 21.3k                                |
 | **The most recent update on GitHub** | Within one day                       |
 | **Official website**                 | https://www.nocobase.com/            |
-| **Documentation**                    | https://docs.nocobase.com/           |
+| **Documentation**                    | https://nocode.docs.nocobase.com/           |
 
 **Introduction:**
 

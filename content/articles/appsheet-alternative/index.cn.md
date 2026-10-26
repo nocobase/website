@@ -110,7 +110,7 @@ NocoBase 提供**多种数据展示方式**，比如：
 如果你也在寻找**比 AppSheet 更灵活的多对多关系管理方案**，可以试试 NocoBase：
 
 * **demo 体验**：[体验 NocoBase 所有最新功能！](https://demo.nocobase.com/new)
-* **快速安装**：[NocoBase 安装指南](https://docs.nocobase.com/welcome/getting-started/installation)
+* **快速安装**：[NocoBase 安装指南](https://nocode.docs.nocobase.com/get-started/installation/docker)
 * **跟着教程搭建自己的任务管理应用**：[任务管理教程](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 * **加入社区，获取更多支持**：[NocoBase 社区](https://forum.nocobase.com/)
 

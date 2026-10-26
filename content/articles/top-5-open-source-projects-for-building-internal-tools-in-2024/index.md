@@ -53,7 +53,7 @@ I hope this list helps you build internal tools better, faster, and cheaper!
 
 **GitHub Project Start Date**: 2021
 
-**Related Resources:**[Website](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [Docs](https://docs.nocobase.com/)
+**Related Resources:**[Website](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [Docs](https://nocode.docs.nocobase.com/)
 
 ⭐️ **Stars**: 21.3K
 

@@ -77,6 +77,6 @@ server {
 
 ## プラグイン開発ガイド
 
-[最初のプラグインを開発](https://docs.nocobase.com/development/your-fisrt-plugin)
+[最初のプラグインを開発](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)
 
 * [リリース](https://blog.nocobase.com/tags/release)

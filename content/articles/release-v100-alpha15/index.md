@@ -36,7 +36,7 @@ Allows configuring the visible and hidden properties of fields.
 
 ### Plugin samples for development
 
-View the documentation for [plugin examples](https://docs.nocobase.com/plugin-samples).
+View the documentation for [plugin examples](https://nocode.docs.nocobase.com/plugin-development/client/examples/).
 
 ![20240521105056](https://static-docs.nocobase.com/20240521105056.png)
 

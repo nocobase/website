@@ -62,7 +62,7 @@ NocoBase の顧客リードを確認し、消費金額が 3 万以上の顧客�
 
 ### 関連リソース
 
-ドキュメント：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+ドキュメント：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 AI ドキュメント：[https://docs.nocobase.com/ja/ai/](https://docs.nocobase.com/ja/ai/)
 

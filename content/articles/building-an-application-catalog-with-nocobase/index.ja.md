@@ -78,7 +78,7 @@ version: Current version.
 
 ### **NocoBaseのインストール**
 
-[インストール](https://docs.nocobase.com/welcome/getting-started/installation) と設定では、ローカルでDockerバージョンを使用することにしました。他のインストールオプションにはnpmやGitソースがあります。
+[インストール](https://nocode.docs.nocobase.com/get-started/installation/docker) と設定では、ローカルでDockerバージョンを使用することにしました。他のインストールオプションにはnpmやGitソースがあります。
 
 以下はDocker ComposeのYAMLコードです。Dockerをインストールした後、YAMLファイルディレクトリに移動し、以下のコマンドを実行します：
 

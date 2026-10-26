@@ -64,7 +64,7 @@ NocoBase 是一个开源 AI 无代码 / 低代码平台，非常适合搭建企�
 
 ### 相关资源
 
-文档：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+文档：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 AI 文档：[https://docs.nocobase.com/cn/ai/](https://docs.nocobase.com/cn/ai/)
 

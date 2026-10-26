@@ -41,19 +41,19 @@
               <ul class="list-unstyled text-muted mb-4 pb-4">
                 <li>
                   <i data-feather="arrow-right" class="fea icon-sm me-2"></i><a
-                    href="https://docs.nocobase.com/welcome/community/contributing"
+                    href="https://nocode.docs.nocobase.com/"
                     target="_blank">Add and update plugins</a
                   >
                 </li>
                 <li>
                   <i data-feather="arrow-right" class="fea icon-sm me-2"></i><a
-                    href="https://docs.nocobase.com/welcome/community/contributing"
+                    href="https://nocode.docs.nocobase.com/"
                     target="_blank">Add test cases</a
                   >
                 </li>
                 <li>
                   <i data-feather="arrow-right" class="fea icon-sm me-2"></i><a
-                    href="https://docs.nocobase.com/welcome/community/contributing"
+                    href="https://nocode.docs.nocobase.com/"
                     target="_blank">Fix bugs</a
                   >
                 </li>
@@ -71,7 +71,7 @@
                 </li>
                 <li>
                   <i data-feather="arrow-right" class="fea icon-sm me-2"></i><a
-                    href="https://docs.nocobase.com/welcome/community/translations"
+                    href="https://nocode.docs.nocobase.com/get-started/translations"
                     target="_blank">Translate</a
                   >
                 </li>

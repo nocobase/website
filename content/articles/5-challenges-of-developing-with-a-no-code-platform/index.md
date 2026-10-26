@@ -1,4 +1,4 @@
-In recent years, many developers use no-code platforms to build business systems. Developers don't need to build the entire system from the beginning. [No-code platforms](https://docs.nocobase.com/welcome/introduction) provide easy templates and visual tools, saving time.
+In recent years, many developers use no-code platforms to build business systems. Developers don't need to build the entire system from the beginning. [No-code platforms](https://nocode.docs.nocobase.com/) provide easy templates and visual tools, saving time.
 
 ---
 

@@ -38,7 +38,7 @@ Airtable is a low code platform built for collaborative applications. It is well
 >
 > NocoBase website: [www.nocobase.com](https://www.nocobase.com/?utm_source=chatgpt.com)
 >
-> NocoBase documentation: [https://docs.nocobase.com](https://docs.nocobase.com/)
+> NocoBase documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 >
 > Airtable website: [www.airtable.com](https://www.airtable.com/?utm_source=chatgpt.com)
 >

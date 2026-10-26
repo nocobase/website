@@ -45,7 +45,7 @@
 * **官网**：[https://www.nocobase.com/](https://www.nocobase.com/)
 * **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Stars**：22.1k
-* **官方文档**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **官方文档**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **定位**：一款面向企业级应用、内部工具和各类业务系统搭建的自托管 AI 无代码 / 低代码平台，可用于搭建 CRM、ERP、项目管理、审批、工单、台账、门户等多种业务系统，更适合需要长期扩展数据模型、权限和流程的企业 IT 团队、数字化团队和集成实施团队。
 

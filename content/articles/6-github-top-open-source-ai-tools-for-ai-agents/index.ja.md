@@ -45,7 +45,7 @@
 
 **オンライン Demo**：[demo.nocobase.com/new](https://demo.nocobase.com/new)
 
-**ドキュメント**：[docs.nocobase.com](https://docs.nocobase.com)
+**ドキュメント**：[docs.nocobase.com](https://nocode.docs.nocobase.com/)
 
 **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 

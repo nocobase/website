@@ -48,7 +48,7 @@ If this type of platform also includes native AI capabilities, it becomes even m
 >
 > NocoBase official website: [https://www.nocobase.com/](https://www.nocobase.com/)
 >
-> NocoBase documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+> NocoBase documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 ### Suitable teams
 

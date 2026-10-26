@@ -141,7 +141,7 @@ APIJSON は、API 用に設計された JSON ベースの通信プロトコル�
 | アクティブコントリビューター数 | 103                                                                          |
 | 外部 PR の受け入れ             | はい                                                                         |
 | 公式ウェブサイト               | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| ドキュメンテーション           | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| ドキュメンテーション           | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **NocoBase** は、企業向けの業務アプリケーションやソリューションの構築を目的とした、高い拡張性を備えたオープンソースの AI ノーコード／ローコードプラットフォームです。CRUD の観点から、NocoBase は堅牢なデータモデル駆動アプローチを提供しており、複雑なデータインタラクションを構築および管理するのに最適です。
 

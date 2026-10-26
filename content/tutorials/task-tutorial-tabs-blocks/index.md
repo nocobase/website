@@ -130,4 +130,4 @@ But this is just the beginning! Imagine a team where different members have dist
 
 Are you ready? Let’s move on to the next chapter: [Chapter 6: User & Permissions](https://www.nocobase.com/en/tutorials/task-tutorial-user-permissions).
 
-Keep exploring and unleash your creativity! If you encounter any issues, don’t forget to consult the [NocoBase Official Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions.
+Keep exploring and unleash your creativity! If you encounter any issues, don’t forget to consult the [NocoBase Official Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions.

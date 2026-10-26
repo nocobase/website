@@ -162,7 +162,7 @@ AI 知识库已完成 client-v2 迁移，并进一步完善知识库和向量存
 
 - [AI 知识库](https://docs.nocobase.com/cn/ai-employees/knowledge-base/knowledge-base/)
 - [向量数据库](https://docs.nocobase.com/cn/ai-employees/knowledge-base/vector-database)
-- [External 知识库插件](https://docs.nocobase.com/cn/ai-employees/knowledge-base/dev/external-knowledge-base)
+- [External 知识库插件](https://nocode.docs.nocobase.com/cn/ai-employees/dev/knowledge-base/external-knowledge-base)
 
 ### 工作流：数据库事务节点
 

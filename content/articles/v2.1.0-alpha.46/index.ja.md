@@ -10,7 +10,7 @@
 - **[client]** 一部の組み込み RunJS 関数の自動補完サポートを強化しました。([#9481](https://github.com/nocobase/nocobase/pull/9481)) by @gchust
 - **[cli]** init と self-update のガイダンスを改善しました。([#9633](https://github.com/nocobase/nocobase/pull/9633)) by @chenos
 - **[undefined]** オープンソースプラグイン向けの Embed NocoBase ドキュメントを更新しました。([#9642](https://github.com/nocobase/nocobase/pull/9642)) by @zhangzhonghe
-  参考：[Embed NocoBase](https://docs.nocobase.com/en/integration/embed/)
+  参考：[Embed NocoBase](https://nocode.docs.nocobase.com/integration/embed)
 - **[Departments]** 部門、部門メンバー、ユーザーの所属部門を管理する v2 設定ページを追加しました。([#9660](https://github.com/nocobase/nocobase/pull/9660)) by @jiannx
 - **[Auth: SAML 2.0]** SAML/CAS のサインインリダイレクトが新版クライアントのプレフィックスに従うようになりました。 by @Molunerfinn
 - **[Action: Import records Pro]** セキュリティ問題を回避するため、`xlsx` のバージョンをアップグレードしました。 by @mytharcher

@@ -222,6 +222,6 @@ NocoBaseは、完全なコントロールと無限のスケーラビリティを
 
 [**デモ**](https://demo.nocobase.com/new)
 
-[**ドキュメント**](https://docs.nocobase.com/)
+[**ドキュメント**](https://nocode.docs.nocobase.com/)
 
 [**GitHub**](https://github.com/nocobase/nocobase)

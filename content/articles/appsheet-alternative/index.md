@@ -112,7 +112,7 @@ Front-end preview of the attachment:
 If you're looking for a **more flexible alternative to AppSheet**, especially one that supports many-to-many relationships and process automation out of the box—give NocoBase a try:
 
 - 👍 **[Live demo](https://demo.nocobase.com/new)**
-- 🚀 [**Installation Guide**](https://docs.nocobase.com/welcome/getting-started/installation)
+- 🚀 [**Installation Guide**](https://nocode.docs.nocobase.com/get-started/installation/docker)
 - 📘 [**Task Management Tutorial**](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 - 💬 [**Join the Community**](https://forum.nocobase.com/)
 

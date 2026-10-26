@@ -143,4 +143,4 @@ NocoBaseに慣れてきたら、少しチャレンジしてみてください：
 
 ### 探索を続ける
 
-何か質問があれば、[NocoBaseドキュメント](https://docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してみてください！
+何か質問があれば、[NocoBaseドキュメント](https://nocode.docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してみてください！

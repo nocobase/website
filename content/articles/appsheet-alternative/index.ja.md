@@ -119,7 +119,7 @@ NocoBase では、用途に応じて複数の表示形式を選択できます�
 もしあなたも **AppSheetでは実現が難しかった複雑なタスク管理** を必要としているなら、NocoBaseは非常に有力な選択肢になります：
 
 * 👍 [Live demo](https://demo.nocobase.com/new)
-* 🚀 [インストールガイド](https://docs.nocobase.com/welcome/getting-started/installation)
+* 🚀 [インストールガイド](https://nocode.docs.nocobase.com/get-started/installation/docker)
 * 📘 [タスク管理チュートリアル](https://www.nocobase.com/en/tutorials/task-tutorial-introduction)
 * 💬 [フォーラム・コミュニティ](https://forum.nocobase.com/)
 

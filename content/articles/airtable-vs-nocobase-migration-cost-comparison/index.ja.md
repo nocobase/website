@@ -39,7 +39,7 @@ Airtable は、コラボレーション型アプリ向けのローコードプ�
 >
 > NocoBase 公式サイト：[www.nocobase.com](https://www.nocobase.com/?utm_source=chatgpt.com)
 >
-> NocoBase ドキュメント：[https://docs.nocobase.com](https://docs.nocobase.com/)
+> NocoBase ドキュメント：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 >
 > Airtable 公式サイト：[www.airtable.com](https://www.airtable.com/?utm_source=chatgpt.com)
 >

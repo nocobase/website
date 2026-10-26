@@ -78,7 +78,7 @@ version: Current version.
 
 ### **Installing NocoBase**
 
-For [installation](https://docs.nocobase.com/welcome/getting-started/installation) and configuration, I opted to use the Docker version locally. Other installation options include npm or Git source.
+For [installation](https://nocode.docs.nocobase.com/get-started/installation/docker) and configuration, I opted to use the Docker version locally. Other installation options include npm or Git source.
 
 Below is the YAML code for Docker Compose. After installing Docker, navigate to the YAML file directory and run the following command:
 

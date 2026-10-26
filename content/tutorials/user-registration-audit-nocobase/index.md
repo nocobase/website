@@ -203,4 +203,4 @@ After completing the basic registration and audit process, you can extend additi
 
 ---
 
-If you encounter any issues during the operation, feel free to visit the [NocoBase community](https://forum.nocobase.com) or refer to the [official documentation](https://docs.nocobase.com). We hope this guide helps you successfully implement user registration auditing based on your actual needs and provides flexibility for further extensions. Wishing you smooth usage and project success!
+If you encounter any issues during the operation, feel free to visit the [NocoBase community](https://forum.nocobase.com) or refer to the [official documentation](https://nocode.docs.nocobase.com/). We hope this guide helps you successfully implement user registration auditing based on your actual needs and provides flexibility for further extensions. Wishing you smooth usage and project success!

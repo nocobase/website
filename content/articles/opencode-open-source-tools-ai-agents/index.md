@@ -73,7 +73,7 @@ For example, it can generate business insight reports directly inside the system
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-7e0d9h.png)
 
-Related documentation: [OpenCode + NocoBase: an open, flexible, and lock-in-free way to build with NocoBase](https://docs.nocobase.com/en/ai/opencode)
+Related documentation: [OpenCode + NocoBase: an open, flexible, and lock-in-free way to build with NocoBase](https://nocode.docs.nocobase.com/ai/opencode)
 
 OpenCode works with NocoBase in the following way:
 
@@ -98,18 +98,18 @@ You (Terminal / VS Code / JetBrains / ...)
 Copy the prompt below into OpenCode. It will automatically install the NocoBase CLI, initialize the project, and configure the environment:
 
 ```text
-Help me install the NocoBase CLI and complete initialization: https://docs.nocobase.com/en/ai/ai-quick-start.md Please open and read the link directly.
+Help me install the NocoBase CLI and complete initialization: https://nocode.docs.nocobase.com/ai/ai-quick-start.md Please open and read the link directly.
 ```
 
 ### Related resources
 
-Documentation: [https://docs.nocobase.com/en/ai/](https://docs.nocobase.com/en/ai/)
+Documentation: [https://nocode.docs.nocobase.com/ai](https://nocode.docs.nocobase.com/ai)
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
 ## 2. Directus: Data APIs and content management backend
 

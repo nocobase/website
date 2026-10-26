@@ -47,7 +47,7 @@ If you are looking for a broader ranking of standalone Agent projects rather tha
 
 **Online Demo**: [demo.nocobase.com/new](https://demo.nocobase.com/new)
 
-**Documentation**: [docs.nocobase.com](https://docs.nocobase.com)
+**Documentation**: [docs.nocobase.com](https://nocode.docs.nocobase.com/)
 
 **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 

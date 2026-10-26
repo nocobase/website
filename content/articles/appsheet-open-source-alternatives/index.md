@@ -37,7 +37,7 @@ These feedbacks indicate that developers are seeking more **cost-effective, flex
 * GitHub:[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * GitHub Stars: 21.1k
 * Website: [https://www.nocobase.com/](https://www.nocobase.com/)
-* Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **✅ Why Choose NocoBase?**
 

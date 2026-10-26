@@ -180,4 +180,4 @@
 
 ---
 
-さらに探索し、創造力を発揮してください！問題が生じた場合は、[NocoBase公式ドキュメント](https://docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してディスカッションしてください。
+さらに探索し、創造力を発揮してください！問題が生じた場合は、[NocoBase公式ドキュメント](https://nocode.docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してディスカッションしてください。

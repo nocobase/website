@@ -35,7 +35,7 @@
 
 ### Docker Composeによるアップグレード
 
-変更なし、アップグレードの参照 [Docker Composeによるアップグレード](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose)
+変更なし、アップグレードの参照 [Docker Composeによるアップグレード](https://nocode.docs.nocobase.com/get-started/upgrading/docker)
 
 ### Gitソースコードによるアップグレード
 
@@ -50,11 +50,11 @@ yarn rimraf -rf "./packages/*/*/{lib,esm,es,dist,node_modules}"
 yarn rimraf -rf node_modules
 ```
 
-詳細については [Gitソースコードによるアップグレード](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone)を参照してください。
+詳細については [Gitソースコードによるアップグレード](https://nocode.docs.nocobase.com/get-started/upgrading/git)を参照してください。
 
 ### create-nocobase-appによるアップグレード
 
-`yarn create`を実行して新しいバージョンを再ダウンロードし、`.env`構成を修正することをお勧めします。詳細については [主要バージョンのアップグレードガイド](https://docs.nocobase.com/welcome/getting-started/upgrading/create-nocobase-app#major-upgrade)を参照してください。
+`yarn create`を実行して新しいバージョンを再ダウンロードし、`.env`構成を修正することをお勧めします。詳細については [主要バージョンのアップグレードガイド](https://nocode.docs.nocobase.com/get-started/upgrading/create-nocobase-app)を参照してください。
 
 ## 今後の廃止予定および互換性のない変更
 

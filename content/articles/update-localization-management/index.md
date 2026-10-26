@@ -13,7 +13,7 @@ Translation texts are categorized based on their corresponding modules (menus, c
 
 ## How to migrate
 
-Follow the normal [upgrade process](https://docs.nocobase.com/welcome/getting-started/upgrading) to upgrade the system. Then switch to the corresponding language environment, and on the localization management page, synchronize translation texts by clicking the **“Sync”** button.
+Follow the normal [upgrade process](https://nocode.docs.nocobase.com/get-started/upgrading/docker) to upgrade the system. Then switch to the corresponding language environment, and on the localization management page, synchronize translation texts by clicking the **“Sync”** button.
 
 ![How to migrate](https://static-docs.nocobase.com/bb1c1563770b5c7bfc4f683fc8efaad9.jpg)
 

@@ -4,7 +4,7 @@ Markdown 区块是我们最常用且功能强大的区块之一。它从轻量�
 
 由于 Markdown 区块具有灵活、公开和随时可更改的特点，它常被用于展示系统公告。无论是业务模块、功能、区块还是字段，我们都可以像小便利贴一样，随时贴上我们想要的小提示。
 
-在使用 Markdown 区块之前，建议先熟悉 Markdown 的排版和语法。可以参考 [Vditor 示例](https://docs.nocobase.com/api/field/markdown-vditor)。
+在使用 Markdown 区块之前，建议先熟悉 Markdown 的排版和语法。可以参考 [Vditor 示例](https://nocode.docs.nocobase.com/api)。
 
 > 注意：页面中的 Markdown 区块相对轻量，某些功能（如数学公式、脑图等）暂时不支持渲染。但我们可以使用 HTML 实现，系统中也提供了 Vditor 的字段组件，欢迎体验。
 

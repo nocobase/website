@@ -52,7 +52,7 @@ Before examining each product in detail, use the comparison table below to quick
 ### Product Information
 
 - Website: [https://www.nocobase.com/](https://www.nocobase.com/)
-- Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+- Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 - Pricing: [https://www.nocobase.com/en/commercial](https://www.nocobase.com/en/commercial)
 - GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 - GitHub Stars: 23.4K

@@ -14,7 +14,7 @@
 - **[undefined]**
 
   - AI Builder 概要ページにバージョン管理の会話シナリオを追加しました。([#9748](https://github.com/nocobase/nocobase/pull/9748)) by @Molunerfinn
-    参考：[AI Builder Quick Start](https://docs.nocobase.com/en/ai-builder)
+    参考：[AI Builder Quick Start](https://nocode.docs.nocobase.com/ai-builder)
   - バージョン管理ドキュメントを改善し、AI Builder による自動バージョン保存の説明を追加しました。([#9745](https://github.com/nocobase/nocobase/pull/9745)) by @cgyrock
     参考：[Version control](docs/docs/en/ops-management/version-control/index.md)
 - **[Workflow]** ワークフローメタデータの編集体験を改善し、詳細ポップアップで説明を編集できるようにしました。また、ワークフロー複製時に元ワークフローのメタデータをデフォルトで入力するようにしました。([#9766](https://github.com/nocobase/nocobase/pull/9766)) by @mytharcher

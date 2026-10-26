@@ -83,7 +83,7 @@ NocoBase 2.0 中采用了全新的栅格布局，每个元素都可以对齐格�
 
 在 NocoBase 2.0 中，我们用全新的方式实现了区块和弹窗的引用和复制，这极大增加了灵活性，减小配置工作量。
 
-[详细了解引用和复制区块](https://v2.docs.nocobase.com/cn/interface-builder/blocks/other-blocks/block-reference)
+[详细了解引用和复制区块](https://nocode.docs.nocobase.com/cn/interface-builder/blocks)
 
 [详细了解引用弹窗](https://v2.docs.nocobase.com/cn/interface-builder/actions/action-settings/edit-popup)
 
@@ -130,7 +130,7 @@ NocoBase 2.0 中基于 Echarts 提供了全新的数据可视化插件，支持�
 
 不需要担心 SQL 和 JSON 过于复杂，有 AI 员工 Nathan 帮你。
 
-[详细了解 数据可视化](https://v2.docs.nocobase.com/cn/data-visualization)
+[详细了解 数据可视化](https://nocode.docs.nocobase.com/cn/data-visualization)
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/20251102221207-2025-11-02-22-12-09.png)
 

@@ -37,7 +37,7 @@ GitHub上で最も人気のあるオープンソースのローコードプロ�
 | **アクティブなコントリビューター** | 92                                                                           |
 | **外部PRの受け入れ**               | はい                                                                         |
 | **公式ウェブサイト**               | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| **ドキュメント**                   | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| **ドキュメント**                   | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **紹介**
 

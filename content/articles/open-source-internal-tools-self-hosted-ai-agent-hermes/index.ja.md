@@ -100,7 +100,7 @@ NocoBase で顧客契約更新管理モジュールを作成してください�
 
 ### 関連リソース
 
-ドキュメント：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+ドキュメント：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 AI ドキュメント：[https://docs.nocobase.com/ja/ai/](https://docs.nocobase.com/ja/ai/)
 

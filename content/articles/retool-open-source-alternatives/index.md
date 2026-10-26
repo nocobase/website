@@ -60,7 +60,7 @@ Now, let’s compare each of these four products with Retool.
 * **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Stars**: 21.1k
 * **Website**: [https://www.nocobase.com/](https://www.nocobase.com/)
-* **Documentation**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **Documentation**: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **NocoBase** is a highly extensible, open-source, AI-driven no-code (zero-code) development platform designed for enterprises that need to rapidly build complex business applications. Through its plugin-based architecture and powerful data permission controls, it can handle complex business scenarios with AI assistance and provides automated workflow capabilities to significantly improve development efficiency.
 

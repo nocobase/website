@@ -130,7 +130,7 @@ Orin がすぐに構造を生成してくれるので、あなたは内容を確
 
 [Data Sources - NocoBase Documentation](https://v2.docs.nocobase.com/data-sources)
 
-[Orin Data Modeling Expert - NocoBase Documentation](https://v2.docs.nocobase.com/ai-employees/built-in/data-modeling)
+[Orin Data Modeling Expert - NocoBase Documentation](https://nocode.docs.nocobase.com/ai-builder/data-modeling)
 
 ## ステップ2：データを見やすく表示する
 

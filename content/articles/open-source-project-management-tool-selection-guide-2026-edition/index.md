@@ -41,7 +41,7 @@ Today’s open source project management tools can generally be divided into two
 
 **Official Website**：[https://www.nocobase.com/](https://www.nocobase.com/)
 
-**Documentation**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+**Documentation**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 🎉 NocoBase has recently launched its [Project Management Solution](https://www.nocobase.com/en/solutions/project-management), which is open source, fully controllable, and highly extensible and customizable. Feel free to try it out.
 

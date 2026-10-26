@@ -110,9 +110,9 @@ project_id (belongsTo Projects)
 
 [数据源 - NocoBase](https://www.nocobase.com/cn/highlights/data-source)
 
-[数据源 - NocoBase 文档](https://v2.docs.nocobase.com/cn/data-sources)
+[数据源 - NocoBase 文档](https://nocode.docs.nocobase.com/cn/data-sources)
 
-[Orin 数据建模师 - NocoBase 文档](https://v2.docs.nocobase.com/cn/ai-employees/built-in/data-modeling)
+[Orin 数据建模师 - NocoBase 文档](https://nocode.docs.nocobase.com/cn/ai-builder/data-modeling)
 
 ## 第二步：展示数据
 

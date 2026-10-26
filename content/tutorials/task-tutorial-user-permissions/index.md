@@ -185,4 +185,4 @@ In the next chapter, we’ll implement the “Team Member Activity” feature an
 
 ---
 
-Explore further and unleash your creativity! If you encounter any issues, don’t forget to check the [NocoBase Official Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions.
+Explore further and unleash your creativity! If you encounter any issues, don’t forget to check the [NocoBase Official Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions.

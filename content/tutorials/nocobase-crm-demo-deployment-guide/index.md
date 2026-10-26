@@ -2,7 +2,7 @@ To help you quickly and smoothly deploy this Demo to your own NocoBase environme
 
 Before starting, please ensure:
 
-- You already have a basic NocoBase running environment. For main system installation, please refer to the more detailed [official installation documentation](https://docs.nocobase.com/welcome/getting-started/installation).
+- You already have a basic NocoBase running environment. For main system installation, please refer to the more detailed [official installation documentation](https://nocode.docs.nocobase.com/get-started/installation/docker).
 - You have downloaded our CRM Demo files:
   - **Backup File** (approx. 21.2MB): [crm_demo_20250711.nbdata](https://static-docs.nocobase.com/crm_demo_20250711.nbdata) - For Method 1
   - **SQL File** (approx. 9MB compressed): [crm_demo_20250711_sql.zip](https://static-docs.nocobase.com/crm_demo_20250711_sql.zip) - For Method 2

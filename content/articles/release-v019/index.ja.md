@@ -2,7 +2,7 @@
 
 ### テレメトリー
 
-* 開発文書：[https://docs.nocobase.com/development/server/telemetry](https://docs.nocobase.com/development/server/telemetry)
+* 開発文書：[https://nocode.docs.nocobase.com/plugin-development/server/telemetry](https://nocode.docs.nocobase.com/plugin-development/server/telemetry)
 * カーネルAPI：[https://docs.nocobase.com/api/telemetry/telemetry](https://docs.nocobase.com/api/telemetry/telemetry)
 * Prometheusプラグイン：[https://docs-jp.nocobase.com/handbook/telemetry-prometheus](https://docs-jp.nocobase.com/handbook/telemetry-prometheus)
 

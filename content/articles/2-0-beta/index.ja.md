@@ -113,7 +113,7 @@ SQL や JSON が複雑すぎる心配はありません—AI 従業員の Nathan
 
 レコード履歴プラグインは、作成、更新、削除操作のスナップショットと差分レコードを自動的に保存してデータの変更を追跡し、ユーザーがデータの変更を迅速に遡り、操作を監査できるようにします。
 
-ユーザーマニュアル：[レコード履歴](https://v2.docs.nocobase.com/record-history/)
+ユーザーマニュアル：[レコード履歴](https://nocode.docs.nocobase.com/record-history)
 
 ![](https://static-docs.nocobase.com/202511011346400.png)
 

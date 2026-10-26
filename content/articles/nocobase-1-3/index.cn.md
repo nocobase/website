@@ -50,7 +50,7 @@
 参考文档：
 
 - [字段配置项 / 字段组件](https://docs-cn.nocobase.com/handbook/ui/fields/field-settings/field-component)
-- [插件示例 / 有值字段组件](https://docs.nocobase.com/plugin-samples/field/value)
+- [插件示例 / 有值字段组件](https://nocode.docs.nocobase.com/plugin-development/client/examples/custom-field)
 
 ## 插件
 

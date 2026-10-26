@@ -145,7 +145,7 @@ navigate(`${basePath}/1`);
 navigate(`${basePath}/2`);
 ```
 
-For more information, see the [plugin settings manager](https://docs.nocobase.com/development/client).
+For more information, see the [plugin settings manager](https://nocode.docs.nocobase.com/plugin-development/client).
 
 ## Changelog
 

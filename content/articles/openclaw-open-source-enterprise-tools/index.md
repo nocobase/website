@@ -64,17 +64,17 @@ Please include company name, total spend, membership level, contact person, and 
 
 ### Related resources
 
-Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
-AI documentation: [https://docs.nocobase.com/en/ai/](https://docs.nocobase.com/en/ai/)
+AI documentation: [https://nocode.docs.nocobase.com/ai](https://nocode.docs.nocobase.com/ai)
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
-OpenClaw + NocoBase: [https://docs.nocobase.com/en/ai/openclaw](https://docs.nocobase.com/en/ai/openclaw)
+OpenClaw + NocoBase: [https://nocode.docs.nocobase.com/ai/openclaw](https://nocode.docs.nocobase.com/ai/openclaw)
 
 ## 2. n8n
 

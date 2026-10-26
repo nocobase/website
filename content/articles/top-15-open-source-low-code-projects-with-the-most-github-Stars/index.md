@@ -37,7 +37,7 @@ These tools offer developers a variety of solutions, helping them quickly create
 | **Active Contributors**  | 92                                                                           |
 | **Accepts External PRs** | Yes                                                                          |
 | **Official Website**     | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| **Documentation**        | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| **Documentation**        | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **Introduction**
 

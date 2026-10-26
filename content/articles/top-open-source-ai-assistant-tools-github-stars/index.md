@@ -50,7 +50,7 @@ Below, we will review them in two categories: enterprise AI Assistants and perso
 
 **Online Demo**: [https://demo.nocobase.com/new](https://demo.nocobase.com/new)
 
-**Documentation**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+**Documentation**: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **GitHub**: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
@@ -76,11 +76,11 @@ This approach is better suited for enterprise internal systems, because business
 
 🔎Related resources:
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
 * **AI Employees can continue participating in system operations**
 

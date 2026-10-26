@@ -35,7 +35,7 @@ CLI 用于在本地工作区初始化、连接和管理 NocoBase 应用，覆盖
 
 相关文档：
 
-- [使用 CLI 安装 NocoBase 应用](https://docs.nocobase.com/cn/quickstart/installation/cli)
+- [使用 CLI 安装 NocoBase 应用](https://nocode.docs.nocobase.com/cn/nocobase-cli/installation/cli)
 - [AI Agent 接入指南](https://docs.nocobase.com/cn/ai/quick-start)
 - [NocoBase CLI 命令参考](https://docs.nocobase.com/cn/api/cli/)
 

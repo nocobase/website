@@ -323,7 +323,7 @@ With role-based permissions, NocoBase provides businesses with granular control,
 
 After completing the above steps, the next phase is ensuring the application runs smoothly. You’ll need to test whether all modules are functioning correctly, especially the automation processes and data relationships. Once the testing is complete, you can release the application to a small group of users for feedback and fine-tune the application based on user experience.
 
-Once all tests are passed and users are satisfied, the application is ready for deployment. With NocoBase’s recommended [three different deployment methods](https://docs.nocobase.com/welcome/getting-started/deployment), you can easily publish the application to the production environment, ensuring users can access and use it without issues.
+Once all tests are passed and users are satisfied, the application is ready for deployment. With NocoBase’s recommended [three different deployment methods](https://nocode.docs.nocobase.com/get-started/deployment/production), you can easily publish the application to the production environment, ensuring users can access and use it without issues.
 
 Post-deployment, continuous maintenance and iteration are equally important. By using [logs and monitoring](https://docs.nocobase.com/handbook/logger) tools, you can maintain NocoBase efficiently, helping you detect and resolve problems in a timely manner, optimize system performance, and ensure the reliability and availability of the system.
 

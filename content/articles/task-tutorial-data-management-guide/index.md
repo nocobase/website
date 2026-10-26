@@ -143,4 +143,4 @@ Hints:
 
 ### Continue Exploring
 
-Don’t hesitate to consult the [NocoBase Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) if you have any questions!
+Don’t hesitate to consult the [NocoBase Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) if you have any questions!

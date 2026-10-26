@@ -23,7 +23,7 @@ This article looks at five open-source AI no-code tools that are suitable for co
 * Website: [https://www.nocobase.com/en/](https://www.nocobase.com/en/)
 * GitHub: [https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * GitHub Stars: 23.3k
-* Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+* Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 ![NocoBase1-cerpp6.png](https://static-docs.nocobase.com/NocoBase1-cerpp6.png)
 

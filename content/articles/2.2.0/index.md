@@ -162,7 +162,7 @@ Related documentation:
 
 - [AI knowledge base](https://docs.nocobase.com/ai-employees/knowledge-base/knowledge-base/)
 - [Vector database](https://docs.nocobase.com/ai-employees/knowledge-base/vector-database)
-- [External knowledge base plugin](https://docs.nocobase.com/ai-employees/knowledge-base/dev/external-knowledge-base)
+- [External knowledge base plugin](https://nocode.docs.nocobase.com/ai-employees/dev/knowledge-base/external-knowledge-base)
 
 ### Workflow: Database transaction node
 

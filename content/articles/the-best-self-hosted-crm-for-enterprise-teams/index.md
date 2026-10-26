@@ -75,7 +75,7 @@ Traditional CRM = Buying off the rack
 NocoBase = Getting a bespoke suit
 ```
 
-💡 **[How to Build a CRM from Scratch with NocoBase?](https://docs.nocobase.com/en/solution/crm/)**
+💡 **[How to Build a CRM from Scratch with NocoBase?](https://nocode.docs.nocobase.com/solution/crm)**
 
 **Advantages**:
 
@@ -517,7 +517,7 @@ NocoBase = Getting a bespoke suit
 
 **Top AI-first picks**: NocoBase or Twenty CRM
 
-💡 **Recommended reading**: **[AI Agents — NocoBase Documentation](https://docs.nocobase.com/en/ai-employees)**
+💡 **Recommended reading**: **[AI Agents — NocoBase Documentation](https://nocode.docs.nocobase.com/ai-employees)**
 
 ### Q6: How difficult is it to set up a self-hosted CRM?
 

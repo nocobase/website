@@ -150,6 +150,6 @@ Discover NocoBase in 3 Minutes!
 
 [**Demo**](https://demo.nocobase.com/new)
 
-[**Documentation**](https://docs.nocobase.com/)
+[**Documentation**](https://nocode.docs.nocobase.com/)
 
 [**GitHub**](https://github.com/nocobase/nocobase)

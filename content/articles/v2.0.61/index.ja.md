@@ -2,7 +2,7 @@
 
 - **[client]** 一部の組み込み RunJS 関数の自動補完サポートを強化しました。([#9481](https://github.com/nocobase/nocobase/pull/9481)) by @gchust
 - **[undefined]** オープンソースプラグイン向けの Embed NocoBase ドキュメントを更新しました。([#9642](https://github.com/nocobase/nocobase/pull/9642)) by @zhangzhonghe
-  参考：[Embed NocoBase](https://docs.nocobase.com/en/integration/embed/)
+  参考：[Embed NocoBase](https://nocode.docs.nocobase.com/integration/embed)
 
 ### 🐛 不具合修正
 

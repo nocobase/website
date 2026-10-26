@@ -35,7 +35,7 @@ The official release also adds a set of operations-related commands:
 
 Related documentation:
 
-- [Install NocoBase with the CLI](https://docs.nocobase.com/quickstart/installation/cli)
+- [Install NocoBase with the CLI](https://nocode.docs.nocobase.com/nocobase-cli/installation/cli)
 - [AI Agent integration guide](https://docs.nocobase.com/ai/quick-start)
 - [NocoBase CLI command reference](https://docs.nocobase.com/api/cli/)
 

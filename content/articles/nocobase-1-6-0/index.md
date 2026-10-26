@@ -6,7 +6,7 @@ The Enterprise edition supports cluster mode deployment via relevant plugins. Wh
 
 ![Cluster Mode Screenshot](https://static-docs.nocobase.com/20241231010814.png)
 
-Reference: [Deployment - Cluster Mode](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode)
+Reference: [Deployment - Cluster Mode](https://nocode.docs.nocobase.com/cluster-mode)
 
 ### Password Policy
 

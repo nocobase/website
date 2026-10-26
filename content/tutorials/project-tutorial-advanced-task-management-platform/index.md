@@ -70,4 +70,4 @@ Are you ready to embark on this exciting journey of transformation? Let’s pres
 
 ---
 
-Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions and support.
+Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for discussions and support.

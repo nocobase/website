@@ -73,4 +73,4 @@ Pretty intuitive, right? Ready for the [next step? (Chapter 3: Task Data Managem
 
 ---
 
-Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for support. See you in the next chapter!
+Keep exploring and creating endless possibilities! If you encounter any issues along the way, don’t forget to check the [NocoBase Documentation](https://nocode.docs.nocobase.com/) or join the [NocoBase Community](https://forum.nocobase.com/) for support. See you in the next chapter!

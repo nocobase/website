@@ -38,7 +38,7 @@ Airtable 是一个面向协作型应用的低代码平台，适合把 Excel 中�
 >
 > NocoBase 官网：[www.nocobase.com](https://www.nocobase.com/?utm_source=chatgpt.com)
 >
-> NocoBase 文档：[https://docs.nocobase.com](https://docs.nocobase.com/)
+> NocoBase 文档：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 >
 > Airtable 官网：[www.airtable.com](https://www.airtable.com/?utm_source=chatgpt.com)
 >

@@ -53,7 +53,7 @@
 
 **GitHubプロジェクト開始日**: 2021
 
-**関連リソース:**[ウェブサイト](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [ドキュメント](https://docs.nocobase.com/)
+**関連リソース:**[ウェブサイト](https://www.nocobase.com/) | [GitHub](https://github.com/nocobase/nocobase) | [ドキュメント](https://nocode.docs.nocobase.com/)
 
 ⭐️ **スター数**: 21.3K
 

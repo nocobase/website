@@ -35,7 +35,7 @@ CLI は、ローカルワークスペースで NocoBase アプリの初期化・
 
 関連ドキュメント：
 
-- [CLI で NocoBase アプリをインストール](https://docs.nocobase.com/ja/quickstart/installation/cli)
+- [CLI で NocoBase アプリをインストール](https://nocode.docs.nocobase.com/ja/nocobase-cli/installation/cli)
 - [AI Agent 接続ガイド](https://docs.nocobase.com/ja/ai/quick-start)
 - [NocoBase CLI コマンドリファレンス](https://docs.nocobase.com/ja/api/cli/)
 

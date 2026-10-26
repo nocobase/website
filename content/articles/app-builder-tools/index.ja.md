@@ -65,7 +65,7 @@ Appsmithは、特に内部管理システムやカスタマイズされたビジ
 | GitHub Contributor       | 76                                                                           |
 | オープンソースライセンス | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 公式ウェブサイト         | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| ドキュメント             | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| ドキュメント             | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **紹介**
 

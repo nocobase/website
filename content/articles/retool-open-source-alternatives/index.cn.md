@@ -54,7 +54,7 @@ Retool 的 SaaS 版本是基于订阅模式的，价格根据用户数量和功�
 * **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 * **GitHub Star 数**: 21.1k
 * **官网**：[https://www.nocobase.com/](https://www.nocobase.com/)
-* **文档**：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+* **文档**：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **NocoBase** 是一个极易拓展的开源、AI 驱动的无代码（零代码）开发平台，专为需要快速构建复杂业务应用的企业设计。它通过插件架构和强大的数据权限控制，能够在 AI 的辅助下处理复杂业务场景，并提供自动化工作流系统，显著提高开发效率。
 

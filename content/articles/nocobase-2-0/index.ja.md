@@ -64,7 +64,7 @@ NocoBase 2.0 では、その力を **AI スタッフ** としてシステムに�
 
 ブロックとモーダルを **参照・複製** できるよう再設計。構成作業を大幅に削減します。
 
-[ブロック参照とコピー](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
+[ブロック参照とコピー](https://nocode.docs.nocobase.com/interface-builder/blocks)
 
 [モーダル参照](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
@@ -125,7 +125,7 @@ SQL や JSON が難しいときは、AI 従業員 **Nathan** が手助けしま�
 
 挿入・更新・削除を自動追跡し、スナップショットや差分を保存。監査・ロールバックに有効です。
 
-[レコード履歴](https://v2.docs.nocobase.com/record-history/)
+[レコード履歴](https://nocode.docs.nocobase.com/record-history)
 
 ![履歴](https://static-docs.nocobase.com/202511011346400.png)
 

@@ -107,7 +107,7 @@ You can break down your business requirements and then proceed with data modelin
 
 ### Step 6: Implement the Data Model with Tools
 
-* **Choose Tools**: If you are not familiar with programming, you can use visualization tools to build the data model, such as Excel, Google Sheets, or specialized database modeling tools like Lucidchart or Draw.io. If you need a more powerful solution, use [NocoBase](https://docs.nocobase.com/), which provides robust data modeling features and separates frontend display from backend data. Once the data model is established, you can flexibly manage factory data through NocoBase’s system.
+* **Choose Tools**: If you are not familiar with programming, you can use visualization tools to build the data model, such as Excel, Google Sheets, or specialized database modeling tools like Lucidchart or Draw.io. If you need a more powerful solution, use [NocoBase](https://nocode.docs.nocobase.com/), which provides robust data modeling features and separates frontend display from backend data. Once the data model is established, you can flexibly manage factory data through NocoBase’s system.
 * **Enter Data**: Use these tools to enter data and set relationships, ensuring your data model works in practice. For example, create tables and fields in NocoBase, define relationships between entities, and manage and operate data through its powerful system to meet factory management needs.
 
 💡 Read More: [The Ultimate Guide to Data Transformation Tools](https://www.nocobase.com/en/blog/data-transformation-tools)

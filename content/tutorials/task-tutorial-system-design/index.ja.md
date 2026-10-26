@@ -73,4 +73,4 @@
 
 ---
 
-無限の可能性を探求し続けましょう！操作中に問題が発生した場合は、[NocoBaseのドキュメント](https://docs.nocobase.com/)を確認するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してサポートを受けるのを忘れないでください。それでは、次の章でお会いしましょう！
+無限の可能性を探求し続けましょう！操作中に問題が発生した場合は、[NocoBaseのドキュメント](https://nocode.docs.nocobase.com/)を確認するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加してサポートを受けるのを忘れないでください。それでは、次の章でお会いしましょう！

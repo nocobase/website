@@ -45,7 +45,7 @@
 
 **在线 Demo**：[demo.nocobase.com/new](https://demo.nocobase.com/new)
 
-**文档**：[docs.nocobase.com](https://docs.nocobase.com)
+**文档**：[docs.nocobase.com](https://nocode.docs.nocobase.com/)
 
 **GitHub**：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 

@@ -141,7 +141,7 @@ APIJSON 是一个为 API 设计的基于 JSON 的通信协议和 ORM 库。它�
 | 活跃提交者数量          | 103                                                                          |
 | 是否接受外部PR          | 是                                                                           |
 | 官网                    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| 文档                    | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| 文档                    | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **NocoBase** 是一个高度可扩展的开源 AI 无代码 / 低代码平台，专为企业级业务应用和解决方案设计。从 CRUD（创建、读取、更新、删除）的角度来看，NocoBase 提供了强大的数据模型驱动方法，使其成为构建和管理复杂数据交互的理想选择。通过 NocoBase，企业可以快速部署具有复杂数据处理能力的应用，而无需深入后端开发，极大地提高了开发效率和系统的可扩展性。
 

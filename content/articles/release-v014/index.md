@@ -77,6 +77,6 @@ More see full version of [nocobase.conf](https://github.com/nocobase/nocobase/bl
 
 ## Plugin development guide
 
-[Develop the first plugin](https://docs.nocobase.com/development/your-fisrt-plugin)
+[Develop the first plugin](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)
 
 * [  release](https://blog.nocobase.com/tags/release)

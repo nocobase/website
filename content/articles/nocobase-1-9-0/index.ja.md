@@ -37,13 +37,13 @@
 
 ![20250803214857](https://static-docs.nocobase.com/20250803214857.png)
 
-参考：[サービス分離](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode/services-splitting)
+参考：[サービス分離](https://nocode.docs.nocobase.com/cluster-mode/services-splitting)
 
 ### 新しいイベントキューを追加
 
 システムメッセージ処理専用のイベントキューを追加し、非同期タスクの信頼性と処理効率を強化しました。
 
-参考：[クラスターモード：メッセージキュー](https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode#message-queue)
+参考：[クラスターモード：メッセージキュー](https://nocode.docs.nocobase.com/cluster-mode)
 
 ### 安全なシャットダウンに対応
 

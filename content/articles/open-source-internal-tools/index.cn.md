@@ -76,7 +76,7 @@ ILLA Builder 是一个开源低代码平台，旨在简化企业级应用的构�
 | GitHub 最近一次更新时间 | 当天                                                                         |
 | 开源协议                | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 官网                    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| 文档                    | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| 文档                    | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **工具介绍**
 

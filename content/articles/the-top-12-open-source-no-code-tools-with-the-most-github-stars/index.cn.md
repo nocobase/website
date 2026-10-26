@@ -24,7 +24,7 @@
 | **GitHub Star 数**          | 21.3k                                |
 | **GitHub 最近一次更新时间** | 当天                                 |
 | **官网**                    | https://www.nocobase.com/            |
-| **文档**                    | https://docs.nocobase.com/           |
+| **文档**                    | https://nocode.docs.nocobase.com/           |
 
 **简介:**
 

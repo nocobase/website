@@ -14,7 +14,7 @@
 - **[undefined]**
 
   - Added a version control conversation scenario to the AI Builder overview page. ([#9748](https://github.com/nocobase/nocobase/pull/9748)) by @Molunerfinn
-    Reference: [AI Builder Quick Start](https://docs.nocobase.com/en/ai-builder)
+    Reference: [AI Builder Quick Start](https://nocode.docs.nocobase.com/ai-builder)
   - Improved version control documentation with notes on automatic version saving in AI Builder. ([#9745](https://github.com/nocobase/nocobase/pull/9745)) by @cgyrock
     Reference: [Version control](docs/docs/en/ops-management/version-control/index.md)
 - **[Workflow]** Improved the workflow metadata editing experience by supporting description editing in the details popup and automatically filling source workflow metadata when duplicating workflows. ([#9766](https://github.com/nocobase/nocobase/pull/9766)) by @mytharcher

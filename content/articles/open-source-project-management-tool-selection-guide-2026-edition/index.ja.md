@@ -41,7 +41,7 @@
 
 **公式サイト：**[https://www.nocobase.com/](https://www.nocobase.com/)
 
-**ドキュメント：**[https://docs.nocobase.com/](https://docs.nocobase.com/)
+**ドキュメント：**[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 🎉 NocoBase では最近、[プロジェクト管理ソリューション](https://www.nocobase.com/ja/solutions/project-management)を公開しました。オープンソースで、自由にコントロールでき、拡張や改修もしやすい構成になっています。ぜひお試しください。
 

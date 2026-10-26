@@ -481,8 +481,8 @@ If you choose to let AI help you build, back up the project with Backup Manager 
 
 ## Reference Documentation
 
-- [Chart configuration](https://docs.nocobase.com/en/data-visualization/guide/chart-options)
-- [Frontend RunJS](https://docs.nocobase.com/en/runjs)
-- [Filter form](https://docs.nocobase.com/en/interface-builder/blocks/filter-blocks/form)
-- [AI Builder - UI Builder](https://docs.nocobase.com/en/ai-builder/ui-builder)
+- [Chart configuration](https://nocode.docs.nocobase.com/data-visualization/guide/chart-options)
+- [Frontend RunJS](https://nocode.docs.nocobase.com/runjs)
+- [Filter form](https://nocode.docs.nocobase.com/interface-builder/blocks/filter-blocks/form)
+- [AI Builder - UI Builder](https://nocode.docs.nocobase.com/ai-builder/ui-builder)
 - [ECharts Options](https://echarts.apache.org/en/option.html)

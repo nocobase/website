@@ -13,7 +13,7 @@
 
 ## 移行方法
 
-通常の[アップグレードプロセス](https://docs.nocobase.com/welcome/getting-started/upgrading) に従ってシステムをアップグレードしてください。次に、対応する言語環境に切り替え、ローカリゼーション管理ページで **「Sync」** ボタンをクリックして翻訳テキストを同期します。
+通常の[アップグレードプロセス](https://nocode.docs.nocobase.com/get-started/upgrading/docker) に従ってシステムをアップグレードしてください。次に、対応する言語環境に切り替え、ローカリゼーション管理ページで **「Sync」** ボタンをクリックして翻訳テキストを同期します。
 
 ![移行方法](https://static-docs.nocobase.com/bb1c1563770b5c7bfc4f683fc8efaad9.jpg)
 

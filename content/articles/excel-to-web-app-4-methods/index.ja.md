@@ -49,7 +49,7 @@
 >
 > NocoBase 公式サイト：[https://www.nocobase.com/](https://www.nocobase.com/)
 >
-> NocoBase ドキュメント：[https://docs.nocobase.com/](https://docs.nocobase.com/)
+> NocoBase ドキュメント：[https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 ### 適したチーム
 

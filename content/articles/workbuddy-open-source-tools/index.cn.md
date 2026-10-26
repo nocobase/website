@@ -26,7 +26,7 @@ WorkBuddy 是腾讯推出的全场景职场 AI 智能体桌面工作台，主要
 
 **GitHub Stars**：22.3k
 
-**文档**： [https://docs.nocobase.com/](https://docs.nocobase.com/)
+**文档**： [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **相关资源**：
 

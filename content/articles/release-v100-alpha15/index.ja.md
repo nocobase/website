@@ -36,7 +36,7 @@ CRUDアクションが要件を満たせない場合、ワークフローのカ�
 
 ### 開発用のプラグインサンプル
 
-[プラグインの例](https://docs.nocobase.com/plugin-samples)のドキュメントを確認してください。
+[プラグインの例](https://nocode.docs.nocobase.com/plugin-development/client/examples/)のドキュメントを確認してください。
 
 ![20240521105056](https://static-docs.nocobase.com/20240521105056.png)
 

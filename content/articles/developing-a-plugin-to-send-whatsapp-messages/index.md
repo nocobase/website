@@ -16,13 +16,13 @@ For this article, we’ll use the following technologies: NocoBase, PostgreSQL, 
 
 ## Creating the Plugin Structure
 
-To create the plugin, simply run the command below. You can find more details about the plugin structure, initial code, and commands in the [documentation](https://docs.nocobase.com/development/your-fisrt-plugin).
+To create the plugin, simply run the command below. You can find more details about the plugin structure, initial code, and commands in the [documentation](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin).
 
 ```
 yarn pm create @my-project/plugin-whatsapp
 ```
 
-Once created, the generated files will be located in the `packages` folder under the plugin's defined name, as shown in the image below. To better understand the folder structure, you can refer to the manual [here](https://docs.nocobase.com/development/app-ds).
+Once created, the generated files will be located in the `packages` folder under the plugin's defined name, as shown in the image below. To better understand the folder structure, you can refer to the manual [here](https://nocode.docs.nocobase.com/plugin-development/server/data-source-manager).
 
 ![plugin's defined name.png](https://static-docs.nocobase.com/c63fb5375b27a5c2520437df9bfbb253.png)
 
@@ -48,7 +48,7 @@ Collections are essential because they define the structure of the data stored i
    * **Content**: Message content
    * **Status**: Pending or Completed
 
-In NocoBase, collections are located in the `/src/server/collections/` folder. The basic structure is shown below. For more details, refer to the documentation [here](https://docs.nocobase.com/development/server/collections).
+In NocoBase, collections are located in the `/src/server/collections/` folder. The basic structure is shown below. For more details, refer to the documentation [here](https://nocode.docs.nocobase.com/plugin-development/server/collections).
 
 ```
 ##File: ProvideConfig
@@ -270,7 +270,7 @@ There are several ways to use the endpoint created in the plugin to send message
 
 ## **Exporting the Plugin as a File**
 
-To export the created plugin, simply run the command below. This will generate a `.tar` file that can be installed in other NocoBase instances. For more details, you can refer to the documentation [here](https://docs.nocobase.com/development/your-fisrt-plugin)[.](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase#)
+To export the created plugin, simply run the command below. This will generate a `.tar` file that can be installed in other NocoBase instances. For more details, you can refer to the documentation [here](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)[.](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase#)
 
 ```
 yarn build @my-project/plugin-hello

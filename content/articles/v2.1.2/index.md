@@ -8,7 +8,7 @@
 - **[undefined]**
 
   - Added a version control scenario to the AI builder quick start ([#9748](https://github.com/nocobase/nocobase/pull/9748)) by @Molunerfinn
-    Reference: [AI Builder Quick Start](https://docs.nocobase.com/en/ai-builder)
+    Reference: [AI Builder Quick Start](https://nocode.docs.nocobase.com/ai-builder)
   - Improved the version control documentation with AI Builder automatic revision guidance. ([#9745](https://github.com/nocobase/nocobase/pull/9745)) by @cgyrock
 - **[cli]** clarify init setup wording ([#9750](https://github.com/nocobase/nocobase/pull/9750)) by @chenos
 - **[Action: Import records]** Improved import and async task error dialogs so long error messages can be fully read without breaking the layout. ([#9746](https://github.com/nocobase/nocobase/pull/9746)) by @katherinehhh

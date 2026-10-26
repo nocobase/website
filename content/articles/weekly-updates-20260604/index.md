@@ -20,7 +20,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 
 - **[client]** Enhanced autocomplete support for some built-in RunJS functions. ([#9481](https://github.com/nocobase/nocobase/pull/9481)) by @gchust
 - **[undefined]** Updated the Embed NocoBase documentation for the open-source plugin. ([#9642](https://github.com/nocobase/nocobase/pull/9642)) by @zhangzhonghe
-  Reference: [Embed NocoBase](https://docs.nocobase.com/en/integration/embed/)
+  Reference: [Embed NocoBase](https://nocode.docs.nocobase.com/integration/embed)
 
 ### 🐛 Bug Fixes
 
@@ -117,7 +117,7 @@ Summarize the weekly product update logs, and the latest releases can be checked
 ### 🚀 Improvements
 
 - **[undefined]** Update the Embed NocoBase documentation for the open source plugin ([#9642](https://github.com/nocobase/nocobase/pull/9642)) by @zhangzhonghe
-  Reference: [Embed NocoBase](https://docs.nocobase.com/en/integration/embed/)
+  Reference: [Embed NocoBase](https://nocode.docs.nocobase.com/integration/embed)
 - **[client]** Enhanced autocomplete support for some built-in RunJS functions. ([#9481](https://github.com/nocobase/nocobase/pull/9481)) by @gchust
 - **[cli]** improve init and self update guidance ([#9633](https://github.com/nocobase/nocobase/pull/9633)) by @chenos
 

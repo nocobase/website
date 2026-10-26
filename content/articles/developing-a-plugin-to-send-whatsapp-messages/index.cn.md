@@ -16,13 +16,13 @@
 
 ## 创建插件结构
 
-要创建插件，只需运行以下命令。有关插件结构、初始代码和命令的更多细节，请参阅[文档](https://docs.nocobase.com/development/your-fisrt-plugin)。
+要创建插件，只需运行以下命令。有关插件结构、初始代码和命令的更多细节，请参阅[文档](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)。
 
 ```
 yarn pm create @my-project/plugin-whatsapp
 ```
 
-创建后，生成的文件将位于 `packages` 文件夹下，插件的名称如下面的图片所示。为了更好地理解文件夹结构，您可以参考手册[这里](https://docs.nocobase.com/development/app-ds)。
+创建后，生成的文件将位于 `packages` 文件夹下，插件的名称如下面的图片所示。为了更好地理解文件夹结构，您可以参考手册[这里](https://nocode.docs.nocobase.com/plugin-development/server/data-source-manager)。
 
 ![plugin's defined name.png](https://static-docs.nocobase.com/c63fb5375b27a5c2520437df9bfbb253.png)
 
@@ -48,7 +48,7 @@ yarn pm enable @my-project/plugin-hello
    * **Content**：消息内容
    * **Status**：待处理或已完成
 
-在NocoBase中，集合位于`/src/server/collections/`文件夹中。基本结构如下所示。有关更多详细信息，请参阅文档[这里](https://docs.nocobase.com/development/server/collections)。
+在NocoBase中，集合位于`/src/server/collections/`文件夹中。基本结构如下所示。有关更多详细信息，请参阅文档[这里](https://nocode.docs.nocobase.com/plugin-development/server/collections)。
 
 ```
 ##File: ProvideConfig
@@ -272,7 +272,7 @@ export default PluginWhatsappClient;
 
 ## **将插件导出为文件**
 
-要导出创建的插件，只需运行以下命令。这将生成一个`.tar`文件，可以在其他 NocoBase 实例中安装。有关更多详细信息，您可以参考[文档](https://docs.nocobase.com/development/your-fisrt-plugin)[.](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase#)
+要导出创建的插件，只需运行以下命令。这将生成一个`.tar`文件，可以在其他 NocoBase 实例中安装。有关更多详细信息，您可以参考[文档](https://nocode.docs.nocobase.com/plugin-development/write-your-first-plugin)[.](https://leandromartins.hashnode.dev/developing-a-plugin-to-send-whatsapp-messages-in-nocobase#)
 
 ```
 yarn build @my-project/plugin-hello

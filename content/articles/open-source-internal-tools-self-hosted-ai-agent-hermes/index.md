@@ -100,17 +100,17 @@ After completion, please organize this module building process into a reusable S
 
 ### Related resources
 
-Documentation: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+Documentation: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
-AI documentation: [https://docs.nocobase.com/en/ai/](https://docs.nocobase.com/en/ai/)
+AI documentation: [https://nocode.docs.nocobase.com/ai](https://nocode.docs.nocobase.com/ai)
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
-Hermes Agent: [https://docs.nocobase.com/en/ai/hermes-agent](https://docs.nocobase.com/en/ai/hermes-agent)
+Hermes Agent: [https://nocode.docs.nocobase.com/ai/hermes-agent](https://nocode.docs.nocobase.com/ai/hermes-agent)
 
 ## 2. Appsmith
 

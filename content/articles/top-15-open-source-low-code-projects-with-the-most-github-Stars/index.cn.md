@@ -39,7 +39,7 @@
 | **活跃提交者数量**          | 92                                                                          |
 | **是否接受外部PR**          | 是                                                                          |
 | **官网**                    | https://www.nocobase.com/                                                   |
-| **文档**                    | https://docs.nocobase.com/                                                  |
+| **文档**                    | https://nocode.docs.nocobase.com/                                                  |
 
 **简介**
 

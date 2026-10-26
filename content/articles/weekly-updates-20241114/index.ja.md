@@ -119,6 +119,6 @@ NocoBaseを3分で発見！
 
 [**デモ**](https://demo.nocobase.com/new)
 
-[**ドキュメンテーション**](https://docs.nocobase.com/)
+[**ドキュメンテーション**](https://nocode.docs.nocobase.com/)
 
 [**GitHub**](https://github.com/nocobase/nocobase)

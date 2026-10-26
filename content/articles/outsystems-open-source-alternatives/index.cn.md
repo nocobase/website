@@ -73,7 +73,7 @@ NocoBase 适用于：
 
 教程：https://www.nocobase.com/en/tutorials
 
-文档：  https://docs.nocobase.com/welcome/introduction
+文档：  https://nocode.docs.nocobase.com/
 
 ## 其他优秀的开源替代方案
 

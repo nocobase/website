@@ -26,17 +26,17 @@ This article introduces several open source tools that work well with WorkBuddy.
 
 **GitHub Stars**: 22.3k
 
-**Documentation**: [https://docs.nocobase.com/](https://docs.nocobase.com/)
+**Documentation**: [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)
 
 **Related resources**:
 
-CLI: [https://docs.nocobase.com/en/api/cli/](https://docs.nocobase.com/en/api/cli/)
+CLI: [https://nocode.docs.nocobase.com/api/cli](https://nocode.docs.nocobase.com/api/cli)
 
-Skills: [https://docs.nocobase.com/en/ai-builder#nocobase-skills](https://docs.nocobase.com/en/ai-builder#nocobase-skills)
+Skills: [https://nocode.docs.nocobase.com/ai-builder#nocobase-skills](https://nocode.docs.nocobase.com/ai-builder#nocobase-skills)
 
-MCP: [https://docs.nocobase.com/en/ai/mcp/](https://docs.nocobase.com/en/ai/mcp/)
+MCP: [https://nocode.docs.nocobase.com/ai/mcp](https://nocode.docs.nocobase.com/ai/mcp)
 
-WorkBuddy + NocoBase: [https://docs.nocobase.com/en/ai/workbuddy](https://docs.nocobase.com/en/ai/workbuddy)
+WorkBuddy + NocoBase: [https://nocode.docs.nocobase.com/ai/workbuddy](https://nocode.docs.nocobase.com/ai/workbuddy)
 
 ### Product introduction
 

@@ -76,7 +76,7 @@ Users can switch between usage mode and configuration mode with one click. The p
 
 ## **Is NocoBase the Same as NocoDB?**
 
-No, these are completely different products. [NocoBase](https://docs.nocobase.com/welcome/introduction) is a data model-driven no-code development platform, while NocoDB is a form-driven no-code database.
+No, these are completely different products. [NocoBase](https://nocode.docs.nocobase.com/) is a data model-driven no-code development platform, while NocoDB is a form-driven no-code database.
 
 💡 Read More: [NocoBase vs NocoDB: An In-Depth Comparison of Open Source No-Code Tools](https://www.nocobase.com/en/blog/nocobase-vs-nocodb)
 

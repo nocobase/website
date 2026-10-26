@@ -197,9 +197,9 @@ NocoBaseは、サードパーティシステムとの統合を実現する方法
 
 NocoBaseは、わずかに異なるデプロイ手順を持つ三つのインストール方法をサポートしています。
 
-* [Dockerを使用する](https://docs.nocobase.com/welcome/getting-started/deployment/docker-compose)
-* [create-nocobase-app](https://docs.nocobase.com/welcome/getting-started/deployment/create-nocobase-app)
-* [Gitソースコード](https://docs.nocobase.com/welcome/getting-started/deployment/git-clone)
+* [Dockerを使用する](https://nocode.docs.nocobase.com/get-started/installation/docker)
+* [create-nocobase-app](https://nocode.docs.nocobase.com/get-started/installation/create-nocobase-app)
+* [Gitソースコード](https://nocode.docs.nocobase.com/get-started/installation/git)
 
 **デプロイ手順（Docker）：**
 

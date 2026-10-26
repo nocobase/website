@@ -11,7 +11,7 @@
 
 Reference documentation:
 
-* [Installation and Upgrade of Plugins](https://docs.nocobase.com/welcome/getting-started/plugin)
+* [Installation and Upgrade of Plugins](https://nocode.docs.nocobase.com/get-started/install-upgrade-plugins)
 * [Release Notes / Simplify the process of adding and updating plugins](https://www.nocobase.com/en/blog/simplify-the-process-of-adding-and-updating-plugins)
 
 ### Notification

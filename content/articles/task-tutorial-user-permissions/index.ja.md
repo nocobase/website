@@ -181,4 +181,4 @@
 
 ---
 
-さらに探求し、創造性を発揮してください！問題が発生した場合は、[NocoBase公式ドキュメント](https://docs.nocobase.com/)をチェックするか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。
+さらに探求し、創造性を発揮してください！問題が発生した場合は、[NocoBase公式ドキュメント](https://nocode.docs.nocobase.com/)をチェックするか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。

@@ -79,4 +79,4 @@ To address the difficulty for users to get started, we have also reorganized var
 * Deleted `x-designer` parameter, deprecated, will be removed in the future, use `x-toolbar` instead
 * Deleted `useDesigner()`, deprecated, will be removed in the future, use `useSchemaToolbarRender()` instead
 
-For more details, see [Incompatible Changes in NocoBase 0.17](https://docs.nocobase.com/welcome/release/upgrade-to/v017)
+For more details, see [Incompatible Changes in NocoBase 0.17](https://nocode.docs.nocobase.com/)

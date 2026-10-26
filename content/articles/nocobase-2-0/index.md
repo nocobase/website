@@ -92,7 +92,7 @@ In 1.x, the copy/reference features for blocks were limited and prone to bugs, a
 
 NocoBase 2.0 completely redefines this - enabling **flexible referencing and duplication** of both blocks and modals, dramatically reducing configuration effort.
 
-[Learn more about Block References & Copies](https://v2.docs.nocobase.com/interface-builder/blocks/other-blocks/block-reference)
+[Learn more about Block References & Copies](https://nocode.docs.nocobase.com/interface-builder/blocks)
 
 [Learn more about Modal References](https://v2.docs.nocobase.com/interface-builder/actions/action-settings/edit-popup)
 
@@ -178,7 +178,7 @@ This means you can directly use an existing database schema as your primary data
 
 The Record History plugin automatically tracks data changes - insertions, updates, deletions - saving snapshots and diffs for audit and rollback purposes.
 
-[Learn more about Record History](https://v2.docs.nocobase.com/record-history/)
+[Learn more about Record History](https://nocode.docs.nocobase.com/record-history)
 
 ![20251102221207-2025-11-02-22-12-09](https://static-docs.nocobase.com/202511011346400.png)
 

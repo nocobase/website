@@ -312,7 +312,7 @@ Auth: CAS、Auth: OIDC、Auth: SAMLの3つのSSOプラグインがオープン�
 
 #### 1. アプリケーションをアップグレード
 
-[NocoBaseアップグレード概要](https://docs.nocobase.com/welcome/getting-started/upgrading)を参照し、NocoBaseを最新バージョンにアップグレードしてください。
+[NocoBaseアップグレード概要](https://nocode.docs.nocobase.com/get-started/upgrading/docker)を参照し、NocoBaseを最新バージョンにアップグレードしてください。
 
 以前にCAS、OIDC、SAMLプラグインを有効にしていた場合、アップグレード中に次のプロンプトが表示されます：
 

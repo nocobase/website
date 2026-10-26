@@ -79,4 +79,4 @@
 * 廃止された `x-designer` パラメータを削除し、将来的に削除される予定。代わりに `x-toolbar` を使用。
 * 廃止された `useDesigner()` を削除し、将来的に削除される予定。代わりに `useSchemaToolbarRender()` を使用。
 
-詳細は [NocoBase 0.17 の非互換性のある変更](https://docs.nocobase.com/welcome/release/upgrade-to/v017) を参照してください。
+詳細は [NocoBase 0.17 の非互換性のある変更](https://nocode.docs.nocobase.com/) を参照してください。

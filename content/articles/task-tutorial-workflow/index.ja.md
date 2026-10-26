@@ -146,6 +146,6 @@
 
 NocoBaseの柔軟性と拡張性は無限の可能性を提供します。今後、より多くのプラグインを探究したり、機能をカスタマイズしたり、複雑なビジネスロジックを作成したりできます。この知識を持って、あなたはNocoBaseの基本とコアコンセプトをマスターしました。
 
-次の革新を楽しみにしています！質問があれば、[NocoBase公式ドキュメント](https://docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。
+次の革新を楽しみにしています！質問があれば、[NocoBase公式ドキュメント](https://nocode.docs.nocobase.com/)を参照するか、[NocoBaseコミュニティ](https://forum.nocobase.com/)に参加して議論してください。
 
 探索を続け、無限の可能性を解き放ってください！

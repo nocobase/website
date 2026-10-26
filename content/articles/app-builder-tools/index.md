@@ -65,7 +65,7 @@ Appsmith is ideal for development teams that need to rapidly develop custom appl
 | GitHub Contributor  | 76                                                                           |
 | Open Source License | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | Official Website    | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| Documentation       | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| Documentation       | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **Introduction**
 

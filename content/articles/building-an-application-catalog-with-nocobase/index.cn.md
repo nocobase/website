@@ -78,7 +78,7 @@ version: Current version.
 
 ### **安装 NocoBase**
 
-对于[安装](https://docs.nocobase.com/welcome/getting-started/installation)和配置，我选择了使用 Docker 的本地版本。其他安装选项包括 npm 或 Git 源码。
+对于[安装](https://nocode.docs.nocobase.com/get-started/installation/docker)和配置，我选择了使用 Docker 的本地版本。其他安装选项包括 npm 或 Git 源码。
 
 以下是 Docker Compose 的 YAML 配置代码。安装 Docker 后，导航到 YAML 文件所在目录并运行以下命令：
 

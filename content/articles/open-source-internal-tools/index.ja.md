@@ -76,7 +76,7 @@ ILLA Builderは、エンタープライズアプリケーションの開発を�
 | GitHub最近の更新日       | 1日前                                                                        |
 | オープンソースライセンス | [AGPL-3.0](https://github.com/nocobase/nocobase/blob/main/LICENSE-AGPL.txt)  |
 | 公式ウェブサイト         | [https://www.nocobase.com/](https://www.nocobase.com/)                       |
-| ドキュメント             | [https://docs.nocobase.com/](https://docs.nocobase.com/)                     |
+| ドキュメント             | [https://nocode.docs.nocobase.com/](https://nocode.docs.nocobase.com/)                     |
 
 **ツール紹介**
 
