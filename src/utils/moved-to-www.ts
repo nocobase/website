@@ -25,6 +25,9 @@ export function wwwTarget(pathname: string): string | null {
   const path = pathname.replace(/\/$/, '');
   const page = path.match(/^\/(en|cn)\/(partner|find-partner|contact)$/);
   if (page) return `${WWW}${PREFIX[page[1]]}/${page[2]}/`;
+  // The old customer-stories tag page (linked from the old menu) is the customers list on www.
+  const stories = path.match(/^\/(en|cn)\/blog\/tags\/customer-stories$/);
+  if (stories) return `${WWW}${PREFIX[stories[1]]}/customers/`;
   const blog = path.match(/^\/(en|cn)\/blog(?:\/([^/]+))?$/);
   if (!blog) return null;
   const [, lang, slug] = blog, base = WWW + PREFIX[lang];
