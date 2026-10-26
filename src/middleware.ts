@@ -83,14 +83,15 @@ export const onRequest = defineMiddleware(async (context, next) => {
   }
 
   // Tutorials are retired on this site — permanently redirect every
-  // /{locale}/tutorials(/...) URL to the docs site's v2 tutorials. docs serves
-  // all our locales except tw, which falls back to cn.
+  // /{locale}/tutorials(/...) URL to the v2 tutorials on nocode.docs.nocobase.com
+  // (docs.nocobase.com now serves v3). English has no locale prefix there; tw
+  // falls back to cn.
   const tutorialMatch = pathname.match(/^\/(en|cn|tw|ja|fr|es|de|pt|id|vi)\/tutorials(\/.*)?$/);
   if (tutorialMatch) {
     const docsLang = tutorialMatch[1] === 'tw' ? 'cn' : tutorialMatch[1];
     return new Response(null, {
       status: 301,
-      headers: { Location: `https://docs.nocobase.com/${docsLang}/tutorials/v2/` },
+      headers: { Location: `https://nocode.docs.nocobase.com/${docsLang === 'en' ? '' : docsLang + '/'}tutorials/v2/` },
     });
   }
 
