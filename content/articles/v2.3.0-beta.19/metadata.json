@@ -1,14 +1,14 @@
 {
   "id": 1275,
-  "title": "NocoBase v2.3.0-beta.19",
-  "title_cn": "NocoBase v2.3.0-beta.19",
-  "title_ja": null,
+  "title": "NocoBase v2.3.0-beta.19: Allow the snowflake worker id to be rebound while the application is running",
+  "title_cn": "NocoBase v2.3.0-beta.19：支持应用运行期间重新绑定雪花 workerId",
+  "title_ja": "NocoBase v2.3.0-beta.19：アプリケーションの実行中に、Snowflake の `workerId` を再バインドできるようにしました",
   "description": "Release Note of v2.3.0-beta.19",
   "description_cn": "v2.3.0-beta.19 更新日志",
   "description_ja": null,
   "slug": "v2.3.0-beta.19",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-10-28T16:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -39,17 +39,46 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2026-06-24T12:43:09.215Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "displayOnAiBlueprint": false,
+      "displayOnAiBlueprintPage": false,
+      "createdById": 3,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-10-29T15:56:25.798Z",
+        "updatedAt": "2026-10-29T15:56:25.798Z",
+        "articles_id": 1275,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": false,
-  "hideDetailPage": false,
+  "hideOnBlog": true,
+  "hideDetailPage": true,
   "about": null,
   "mentions": null,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-10-29T12:00:10.359Z"
+  "updatedAt": "2026-10-29T15:56:25.773Z"
 }
