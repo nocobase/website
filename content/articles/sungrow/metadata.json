@@ -8,7 +8,7 @@
   "description_ja": "Sungrow の海外チームが AI と NocoBase を活用し、約 2 か月で商談、ソリューション、見積、注文をつなぐ業務システムを構築した事例を紹介します。",
   "slug": "sungrow",
   "publishedAt": "2026-11-01T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-23T05:12:08.714Z",
@@ -67,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-11-02T06:39:31.719Z"
+  "updatedAt": "2026-11-02T07:25:08.144Z"
 }
