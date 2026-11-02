@@ -32,7 +32,7 @@ AI がソフトウェア開発や日常業務を変え始めたことで、業�
 
 チームはこうした詳細を要件文書にまとめ、NocoBase の基盤上で AI にシステムを生成させました。構築途中でも要件を追加・調整しています。データ構造、ページ、業務ルール、ダッシュボードまで、システム内のすべてを AI が生成し、人がコードを 1 行も手書きすることはありませんでした。
 
-![AI + NocoBase で構築したシステムのホーム画面 - 個人ポータル](https://static-docs.nocobase.com/Group%2045-t1hjfc.png)
+![sungrow home page-l1536b.png](https://static-docs.nocobase.com/sungrow%20home%20page-l1536b.png)
 
 *AI + NocoBase で構築したシステムのホーム画面 - 個人ポータル*
 

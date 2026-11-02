@@ -32,7 +32,7 @@ AI 开始改变软件开发与日常工作后，优化业务有了新的可能�
 
 团队把这些细节整理成需求文档，交给 AI 在 NocoBase 底座上生成系统，过程中随时补充和调整需求。从数据结构、页面、业务规则到看板，系统里的一切都由 AI 生成，没有人手写过一行代码。
 
-![Group 45-t1hjfc.png](https://static-docs.nocobase.com/Group%2045-t1hjfc.png)
+![sungrow home page-l1536b.png](https://static-docs.nocobase.com/sungrow%20home%20page-l1536b.png)
 
 *用 AI + NocoBase 搭建的系统首页 - 个人门户*
 
