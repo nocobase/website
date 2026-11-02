@@ -8,7 +8,7 @@
 
 阳光电源成立于 1997 年，是全球知名的新能源企业，专注于新能源设备的研发、生产、销售和服务，业务覆盖光伏、风电、储能、电动汽车与充电、氢能等领域。截至 2026 年 6 月底，阳光电源在全球累计装机的电力电子转换设备已超过 1100 GW，综合实力稳居全球新能源行业第一梯队。
 
-![image-ojgfvf.png](https://static-docs.nocobase.com/image-ojgfvf.png)
+![Sungrow.png](https://static-docs.nocobase.com/screenshot-20261102-115303%20(1)-fs47xn.png)
 
 *阳光电源官网首页*
 
@@ -117,16 +117,3 @@ AI 在报价中支持的，是信息整理和核对。面对同一个项目的�
 思路也随之改变。过去是业务去适应系统，现在他们开始考虑，怎样把已有的各类内部系统接入这个平台，连接更多业务数据和流程，并继续寻找可以用 AI 提升效率的地方。
 
 对阳光电源这支海外团队来说，这只是一个开始。用 AI 和 NocoBase 搭建贴合自身业务的系统，也许正在成为更多企业的新选择。
-
-
-更多 NocoBase 的用户故事：
-
-* [一支每年出警 200 次的消防队，如何用 NocoBase 搭建运营系统](https://www.nocobase.com/zh-CN/customers/polish-volunteer-fire-department-nocobase-case-study/)
-* [法国大区政府如何用 NocoBase 建设数字化公共服务平台](https://www.nocobase.com/zh-CN/customers/astrolab-nocobase/)
-* [如何用 NocoBase 在 3 个月内交付复杂 OA 系统](https://www.nocobase.com/zh-CN/customers/deliver-complex-oa-system-nocobase-3-months/)
-* [纸质到数字化：这家医疗制造企业选择 NocoBase](https://www.nocobase.com/zh-CN/customers/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase/)
-* [石化行业软件公司用 NocoBase 把交付效率提升 70%](https://www.nocobase.com/zh-CN/customers/software-vendor-boosts-delivery-efficiency-with-nocobase/)
-* [社区用户分享：用 NocoBase 搭建可落地的 ERP](https://www.nocobase.com/zh-CN/customers/an-erp-built-with-nocobase/)
-* [8 人团队如何效率拉满？——创联云的开发方法论](https://www.nocobase.com/zh-CN/customers/shenzhen-chuanglianyun-tech-development-methodology/)
-* [华数传媒用 NocoBase 快速搭建 AI 多模态研发平台](https://www.nocobase.com/zh-CN/customers/ai-multimodal-platform/)
-* [俄罗斯合作伙伴 Mobx，用 NocoBase 交付多场景方案](https://www.nocobase.com/zh-CN/customers/nocobase-in-russia/)

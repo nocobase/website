@@ -8,7 +8,7 @@ Sungrow のある海外チーム（以下「プロジェクトチーム」）が
 
 Sungrow は 1997 年に設立された、世界的に知られる再生可能エネルギー企業です。再生可能エネルギー設備の研究開発、製造、販売、サービスを中心に、太陽光、風力、エネルギー貯蔵、電気自動車・充電、水素などの分野で事業を展開しています。2026 年 6 月末時点で、Sungrow が世界で導入したパワーエレクトロニクス変換設備の累計容量は 1,100 GW を超えており、世界の再生可能エネルギー業界を代表する企業の一つです。
 
-![Sungrow 公式サイトのトップページ](https://static-docs.nocobase.com/image-ojgfvf.png)
+![Sungrow.png](https://static-docs.nocobase.com/screenshot-20261102-115303%20(1)-fs47xn.png)
 
 *Sungrow 公式サイトのトップページ*
 
@@ -117,15 +117,3 @@ AI と NocoBase を使うことで、プロジェクトチームは別の道を�
 考え方も変わりました。以前は業務側がシステムへ合わせていましたが、現在は、既存のさまざまな社内システムをこのプラットフォームへどう接続し、より多くの業務データやプロセスをつなげ、AI で効率を高められる部分をさらに見つけていくかを考え始めています。
 
 Sungrow のこの海外チームにとって、これはまだ始まりにすぎません。AI と NocoBase を使って自社の業務に合ったシステムを構築することは、より多くの企業にとって新しい選択肢になりつつあるのかもしれません。
-
-**もっと多くのカスタマーストーリー：**
-
-* [ポーランドのボランティア消防団が NocoBase で運用システムを構築した方法](https://www.nocobase.com/ja-JP/customers/polish-volunteer-fire-department-nocobase-case-study/)
-* [フランスの地域政府は NocoBase でどのようにデジタル公共サービスプラットフォームを構築したのか](https://www.nocobase.com/ja-JP/customers/astrolab-nocobase/)
-* [NocoBaseで3ヶ月以内に複雑なOAシステムを納品する方法](https://www.nocobase.com/ja-JP/customers/deliver-complex-oa-system-nocobase-3-months/)
-* [NocoBaseによる医療機器製造ワークフローのデジタル化](https://www.nocobase.com/ja-JP/customers/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase/)
-* [NocoBase 導入でソフトウェア企業の納品効率が 70% 向上](https://www.nocobase.com/ja-JP/customers/software-vendor-boosts-delivery-efficiency-with-nocobase/)
-* [NocoBase で構築するノーコード ERP の実例](https://www.nocobase.com/ja-JP/customers/an-erp-built-with-nocobase/)
-* [8人チームで実現するシステム効率——創聯雲の開発メソッド](https://www.nocobase.com/ja-JP/customers/shenzhen-chuanglianyun-tech-development-methodology/)
-* [数日で完成したAIマルチモーダル開発基盤 — NocoBaseで実現](https://www.nocobase.com/ja-JP/customers/ai-multimodal-platform/)
-* [ロシアにおける NocoBase：多様な分野で広がるデジタルソリューション](https://www.nocobase.com/ja-JP/customers/nocobase-in-russia/)

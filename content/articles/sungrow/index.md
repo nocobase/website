@@ -8,7 +8,7 @@ One overseas team at Sungrow (referred to below as the “project team”) found
 
 Founded in 1997, Sungrow is a globally recognized renewable-energy company focused on the R&D, manufacturing, sales, and service of renewable-energy equipment. Its businesses span solar, wind, energy storage, electric vehicles and charging, hydrogen, and other areas. By the end of June 2026, Sungrow had installed more than 1,100 GW of power electronic conversion equipment worldwide, placing it among the leading companies in the global renewable-energy industry.
 
-![Sungrow official website homepage](https://static-docs.nocobase.com/image-ojgfvf.png)
+![Sungrow.png](https://static-docs.nocobase.com/screenshot-20261102-115303%20(1)-fs47xn.png)
 
 *Sungrow official website homepage*
 
@@ -117,15 +117,3 @@ With AI and NocoBase, the project team took a different path. Collaboration bega
 The team's thinking changed as well. In the past, the business had to adapt to the system. Now they are starting to consider how to connect their existing internal systems to the platform, bring in more business data and processes, and continue finding places where AI can improve efficiency.
 
 For Sungrow's overseas team, this is only the beginning. Building systems that fit the business with AI and NocoBase may be becoming a new option for more enterprises.
-
-**More Customer Stories:**
-
-* [How a Volunteer Fire Department Manages 200 Callouts a Year with NocoBase ](https://www.nocobase.com/customers/polish-volunteer-fire-department-nocobase-case-study/)
-* [From Paperwork to Digital Public Services in France](https://www.nocobase.com/customers/astrolab-nocobase/)
-* [How to Deliver a Complex OA System in 3 Months with NocoBase](https://www.nocobase.com/customers/deliver-complex-oa-system-nocobase-3-months/)
-* [Case Study: Digitizing Medical Manufacturing Workflows with NocoBase](https://www.nocobase.com/customers/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase/)
-* [Software Vendor Boosts Delivery Efficiency by 70% with NocoBase](https://www.nocobase.com/customers/software-vendor-boosts-delivery-efficiency-with-nocobase/)
-* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/customers/an-erp-built-with-nocobase/)
-* [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/customers/shenzhen-chuanglianyun-tech-development-methodology/)
-* [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/customers/ai-multimodal-platform/)
-* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/customers/nocobase-in-russia/)
