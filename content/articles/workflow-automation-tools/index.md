@@ -57,7 +57,13 @@ The application of workflow automation varies by industry, making it crucial to 
 
 ## How to Choose Workflow Automation Software
 
-Use one real process to compare tools. Write down its trigger, data, conditions, actions, and the person responsible for exceptions.
+First, decide which kind of tool you need. Workflow automation products broadly fall into three groups, and one product may cover more than one:
+
+* **Connecting the apps you already use:** for example, writing a form submission to your CRM or sending a chat notification. Zapier, Make, and Appy Pie Automate belong here. Judge them by whether the exact triggers, fields, and actions you need are covered.
+* **Orchestrating technical tasks and services:** data jobs, background work, and processes that span several services. n8n is often used for this. Pay attention to run status, failure handling, and the technical skills needed to maintain it.
+* **Running processes inside a business system:** purchasing, tickets, and asset workflows depend on business records, a user interface, permissions, and approvals at the same time. NocoBase fits this need.
+
+Then use one real process to compare the candidates. Write down its trigger, data, conditions, actions, and the person responsible for exceptions.
 
 * **Data and integrations:** Check whether the tool supports the exact trigger and action you need. An app appearing in an integration directory does not guarantee access to every field or operation.
 * **Permissions and approvals:** Identify who may read or change each record, which actions require approval, and where decisions are recorded.
@@ -76,8 +82,8 @@ For more on connecting business systems, read [Deep Dive: Low Code/No Code Integ
 
 ![NocoBase workflow interface](https://static-docs.nocobase.com/372c811a70f87789ca571ca0b6090179.PNG)
 
-* **A reusable foundation:** NocoBase Core provides data, permissions, workflows, approvals, and operation records. Teams can focus changes on the business-specific parts of the system.
-* **Controlled changes:** NocoBase Studio supports collaboration with your chosen development agents. Development and testing lead to checks, human acceptance and approval, and backup before release.
+* **A reusable foundation:** NocoBase Core provides data, permissions, workflows, approvals, and operation records. Each change touches only the business-specific parts, and the foundation upgrades independently with each release, so nothing has to be rewritten.
+* **Controlled releases:** In NocoBase Studio, you and your colleagues work with the development agents you choose to build and improve the system. Agents develop and test, the system checks, people accept and approve, and a backup is taken before release.
 * **Enterprise ownership:** Open source and private deployment give the enterprise control of its code, data, and runtime environment. Plan who will manage deployment, upgrades, and recovery.
 
 Start by confirming which capabilities your workflow needs and which edition provides them. Complex approvals and other commercial enhancements should be checked against the current offering.
@@ -86,7 +92,7 @@ Start by confirming which capabilities your workflow needs and which edition pro
 
 #### Example: Update a Record with NocoBase
 
-This existing tutorial illustrates a trigger, calculation, and update. Screenshots and menu labels may differ by version; check them against your installed version before following the steps.
+This example comes from an existing tutorial and shows the visual configuration of the NocoBase 2 workflow plugin in three parts: a trigger, a calculation, and an update. Screenshots and menu labels may differ by version; check them against your installed version before following the steps.
 
 Here’s the workflow: when a new article is created, the system will automatically execute a concatenation calculation, combining the title field with the ID field, thus automatically updating the article title to the format “Article Title + Article ID.”
 
@@ -130,20 +136,20 @@ If you already use Appy Pie Automate, verify how your connections and workflows 
 
 ![Zapier.png](https://static-docs.nocobase.com/d218a0550ee9a05ab913fa6abf8b4976.png)
 
-* **Powerful Automation Features:** Users can easily achieve cross-application automation tasks by setting up “Zaps,” without needing programming knowledge.
+* **Automation Features:** Users can set up cross-application automation tasks with “Zaps,” without needing programming knowledge.
 * **Wide Application Integration:** Supports integration with thousands of applications and services, ensuring smooth information flow between different tools and improving work efficiency.
-* **User-Friendly Interface:** An intuitive interface design allows users to quickly create and manage workflows, making it easy for all types of users.
+* **User-Friendly Interface:** An intuitive interface design allows users to quickly create and manage workflows, so most users can get started without much training.
 
 Case Study: [How Smart Charge America uses automation to scale operations and fight climate change | Zapier](https://zapier.com/customer-stories/smart-charge-america)
 
 ### Make
 
-[Make](https://www.make.com/en) is a powerful workflow automation tool that offers a wide range of features, including data transformation, API calls, and conditional logic.
+[Make](https://www.make.com/en) is a fairly full-featured workflow automation tool that offers data transformation, API calls, and conditional logic.
 
 ![Make.png](https://static-docs.nocobase.com/47dff3450b97ce57fb542c0fd2c1153b.png)
 
-* **Visual Workflow Design:** Provides an intuitive drag-and-drop interface, allowing users to easily create complex automation processes, lowering the operational difficulty.
-* **Strong Integration Capabilities:** Supports connections with numerous applications and services, allowing seamless data transfer across different platforms, enhancing flexibility.
+* **Visual Workflow Design:** Provides an intuitive drag-and-drop interface, allowing users to build fairly complex automation processes and lowering the operational difficulty.
+* **Integration Capabilities:** Supports connections with numerous applications and services, allowing data transfer across different platforms and enhancing flexibility.
 * **Multi-Step Operations and Conditional Logic:** Allows users to set up multi-step processes and conditional logic, achieving more complex automation scenarios to meet various business needs.
 
 Case Study: [Brevo automates 100+ workflows to supercharge lead gen and gain 16 days a month](https://www.make.com/en/blog/brevo-automates-hundred-workflows-to-supercharge-lead-gen)

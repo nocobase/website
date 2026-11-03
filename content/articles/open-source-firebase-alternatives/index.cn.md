@@ -1,5 +1,7 @@
 **Firebase 很棒，但它不是万能的。**
 
+**简短回答：** 想找 Firebase 替代方案，可以先看这 6 款可自托管的开源工具——要构建权限复杂的业务系统，选 **NocoBase**；想要最接近 Firebase 的体验又需要 SQL，选 **Supabase**；Flutter 和移动端项目，选 **Appwrite**；原型和小项目，选单文件运行的 **PocketBase**；需要成熟的管理后台和推送通知，选 **Parse Platform**；想把现有数据库快速变成 API，选 **DreamFactory**。下文给出评估方法、对比表和每款工具的适用场景。
+
 如果你曾独自开发一个 App 或网站，Firebase 很可能是你第一个想到的后端解决方案。它几乎为你打包好了所有常见的功能：用户登录、实时数据库、文件存储、通知推送、网页托管……而且有 Google 背书、免费额度也相当大，简直像是开发者的“神兵利器”。
 
 ![Firebase](https://static-docs.nocobase.com/1-1m0vg7.PNG)
@@ -7,13 +9,13 @@
 但随着项目不断增长，你可能会开始遇到这些问题：
 
 * 数据被锁在 Google 的生态中，迁移成本高；
-* 想使用自定义的数据库结构或扩展复杂权限？很难实现；
+* 想使用自定义的数据库结构，或配置复杂的权限，都很难实现；
 * 免费额度用完后，成本迅速上涨；
 * 无法自托管，对隐私和数据合规有要求的团队难以采用。
 
 如果你开始问自己一句话——**“有没有更自由、更可控的选择？”**
 
-那么这篇文章，正是为你准备的。
+那么这篇文章会给你一套评估方法、一张对比表，以及按场景划分的选型建议。
 
 ## 如何评估一个 Firebase 的替代方案？
 
@@ -55,14 +57,14 @@ Firebase 提供了认证、数据库、文件存储、托管等模块。好的�
 
 准备好了吗？下面是我精选出的 6 款开源工具，它们或轻量、或强大，都是我认真筛选后留下的答案。
 
-## 开源 Firebase 替代方案总览对比表
+## Firebase 替代方案一览：开源工具对比表
 
 
 | 工具名称       | 数据库支持                                                                  | 可视化后台                  | 用户认证                  | 实时能力                    | 自动化逻辑                          | 是否自托管 | 最适合的场景                           |
 | -------------- | --------------------------------------------------------------------------- | --------------------------- | ------------------------- | --------------------------- | ----------------------------------- | ---------- | -------------------------------------- |
 | NocoBase       | ✅ 支持 PostgreSQL, MySQL, SQLite; 可连接外部数据源 (如 SQL Server, Oracle) | ✅ 支持可视化建模和权限控制 | ✅ 内建权限系统           | 🚫（插件可扩展）            | ✅ 工作流引擎，无需代码             | ✅         | 业务系统、复杂权限、数据建模、私有部署 |
 | Supabase       | ✅ PostgreSQL（实时 + SQL 支持）                                            | ✅（基础控制台）            | ✅ OAuth、Magic Link 等   | ✅ WebSocket 实时推送       | ✅ Edge Functions（TypeScript）     | ✅         | Web & 移动应用、重视 SQL 和自托管      |
-| Appwrite       | ✅ 自定义文档数据库                                                         | ✅ 图形化控制台             | ✅ 多语言 SDK，支持移动端 | 🚫（计划支持更强实时）      | ✅ 多语言 Cloud Functions           | ✅         | Flutter / 移动端项目、轻量全栈后端     |
+| Appwrite       | ✅ 自定义文档数据库                                                         | ✅ 图形化控制台             | ✅ 多语言 SDK，支持移动端 | ✅ Realtime API（WebSocket 订阅） | ✅ 多语言 Cloud Functions           | ✅         | Flutter / 移动端项目、轻量全栈后端     |
 | PocketBase     | ✅ 内置 SQLite                                                              | ✅ 极简后台界面             | ✅ 基本认证 + OAuth       | ✅ WebSocket 实时更新       | ⚠️ 简单 Hook + 插件机制           | ✅         | 原型开发、Side Project、离线私有系统   |
 | Parse Platform | ✅ MongoDB（默认）/ PostgreSQL                                              | ✅ Parse Dashboard          | ✅ 自定义用户模型         | ⚠️ 基本实时能力（需扩展） | ✅ Cloud Code（JavaScript）         | ✅         | 中大型系统、需要管理后台和推送通知     |
 | DreamFactory   | ✅ 多种关系型数据库（MySQL、PostgreSQL、SQL Server 等）                     | ✅ API 管理界面             | ✅ 内置权限管理           | 🚫                          | ⚠️ 逻辑依赖数据库触发器或外部服务 | ✅         | 快速生成 API、对接现有数据库、系统集成 |
@@ -72,6 +74,17 @@ Firebase 提供了认证、数据库、文件存储、托管等模块。好的�
 * ✅ 表示功能原生支持且体验成熟
 * ⚠️ 表示功能有限，或需额外配置/开发支持
 * 🚫 表示功能缺失或目前不支持
+
+## 该选哪一款 Firebase 替代方案？
+
+可以先想清楚你离开 Firebase 的主要原因，再对照下面的建议：
+
+* **需要复杂权限、数据建模和私有部署的业务系统**：选 NocoBase，支持可视化建模、角色权限和工作流，还能连接已有数据库。
+* **想保留 Firebase 的开发体验，但换成 SQL 数据库**：选 Supabase，基于 PostgreSQL，自动生成 API，支持实时推送。
+* **Flutter 或移动端原生开发**：选 Appwrite，官方 SDK 覆盖 Flutter、Swift、Kotlin 等语言。
+* **原型、Side Project 或离线内网系统**：选 PocketBase，单个可执行文件即可运行，内置 SQLite。
+* **需要成熟的管理后台、Cloud Code 和推送通知**：选 Parse Platform。
+* **已有数据库，只想快速生成 API**：选 DreamFactory。
 
 ## 1. [NocoBase](https://www.nocobase.com/)
 
@@ -332,6 +345,24 @@ DreamFactory 是 Firebase 替代方案中的“特殊选手”，适用于：
 Firebase 是很多开发者迈入全栈开发的第一站，但它并不是唯一的选择。无论你是希望更好地掌控数据、实现私有部署，还是想在已有数据库基础上快速搭建应用，这些开源替代方案都为你提供了更多的可能性。
 
 每种工具都有各自的优势与边界，关键在于选一个**最适合你项目场景和技术栈的工具**。希望这篇文章能帮你更清晰地做出判断，也欢迎你在评论或社群中分享你的使用体验。
+
+## 常见问题：Firebase 替代方案
+
+**最好的 Firebase 替代方案是哪一个？**
+
+没有一款适合所有项目。如果你想要最接近 Firebase 的使用体验，Supabase 是最常见的选择；如果你要构建权限复杂、需要私有部署的业务系统，NocoBase 更合适；移动端项目可以优先看 Appwrite，小型项目和原型可以用 PocketBase。
+
+**有免费、开源的 Firebase 替代方案吗？**
+
+有。本文介绍的 NocoBase、Supabase、Appwrite、PocketBase、Parse Platform 和 DreamFactory 都是开源项目，都可以部署在自己的服务器上。
+
+**Firebase 可以自托管吗？**
+
+不可以。Firebase 是 Google 提供的托管服务。Firebase 的本地模拟器（Emulator Suite）只用于开发和测试，官方文档明确说明不要把它当作自托管版本用于生产环境。如果需要自托管，就要选择上面这些开源替代方案。
+
+**哪些 Firebase 替代方案支持 SQL 数据库？**
+
+Supabase 基于 PostgreSQL；NocoBase 支持 PostgreSQL、MySQL/MariaDB 和 SQLite，并可连接 SQL Server、Oracle 等外部数据源；PocketBase 内置 SQLite；Parse Platform 支持 PostgreSQL；DreamFactory 可以为 MySQL、PostgreSQL、SQL Server 等数据库生成 API。
 
 **相关阅读：**
 

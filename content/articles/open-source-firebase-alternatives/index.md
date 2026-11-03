@@ -1,5 +1,7 @@
 **Firebase is great, but it's not a one-size-fits-all solution.**
 
+**Quick answer:** If you're looking for alternatives to Firebase, start with these 6 open-source tools you can self-host: choose **NocoBase** for business systems with complex permissions; **Supabase** for the closest Firebase-like experience with SQL; **Appwrite** for Flutter and mobile projects; **PocketBase**, which runs as a single file, for prototypes and small projects; **Parse Platform** if you need a mature admin dashboard and push notifications; and **DreamFactory** to turn existing databases into APIs quickly. Below you'll find an evaluation framework, a comparison table, and where each tool fits best.
+
 If you've ever built an app or website on your own, Firebase was probably your first thought for a backend. It bundles almost all common features: user authentication, real-time databases, file storage, push notifications, web hosting, and more. Plus, it's backed by Google and offers a generous free tier, making it seem like a developer's dream tool.
 
 ![Firebase](https://static-docs.nocobase.com/1-1m0vg7.PNG)
@@ -7,11 +9,11 @@ If you've ever built an app or website on your own, Firebase was probably your f
 However, as your project grows, you might run into these issues:
 
 * Your data is locked into Google's ecosystem, making migration expensive.
-* Want to use a custom database structure or extend complex permissions?
-* It's challenging to implement. Costs quickly escalate once you exceed the free tier.
+* Custom database structures and complex permission setups are hard to implement.
+* Costs quickly escalate once you exceed the free tier.
 * Lack of self-hosting options makes it difficult for teams with strict privacy and data compliance requirements to use.
 
-If you've started to wonder, "Are there more flexible and controllable options out there?" Then this article is exactly what you need.
+If you've started to wonder, "Are there more flexible and controllable options out there?" This article gives you an evaluation framework, a comparison table, and recommendations by use case.
 
 ## How to Evaluate a Firebase Alternative?
 
@@ -55,14 +57,14 @@ Ready to explore?
 
 Here are six open-source tools I’ve carefully selected—some lightweight, others powerful—all worthy contenders.
 
-## Overview of Open-Source Firebase Alternatives
+## Firebase Alternatives at a Glance: Open-Source Comparison Table
 
 
 | Tool           | Database Support                                                            | Visual Admin Panel                              | User Authentication                           | Real-Time Features                             | Automation / Logic                              | Self-Hosted | Best Fit For                                                             |
 | -------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ----------------------------------------------- | ----------- | ------------------------------------------------------------------------ |
 | NocoBase       | ✅ Supports PostgreSQL, MySQL, SQLite; external DBs like SQL Server, Oracle | ✅ Visual modeling, fine-grained access control | ✅ Built-in roles and field-level permissions | 🚫 Not built-in (extendable via plugins)       | ✅ No-code workflow engine                      | ✅          | Internal systems, complex permissions, data modeling, private deployment |
 | Supabase       | ✅ PostgreSQL with real-time and full SQL support                           | ✅ Basic admin console                          | ✅ OAuth, Magic Links, email login            | ✅ Native WebSocket updates                    | ✅ Edge Functions with TypeScript               | ✅          | Web & mobile apps, SQL-first projects, privacy-focused teams             |
-| Appwrite       | ✅ Custom document-style DB                                                 | ✅ Visual dashboard                             | ✅ SDKs for multiple languages and platforms  | 🚫 Currently limited, improvements in progress | ✅ Cloud Functions in multiple languages        | ✅          | Mobile-first apps (e.g., Flutter), simple full-stack projects            |
+| Appwrite       | ✅ Custom document-style DB                                                 | ✅ Visual dashboard                             | ✅ SDKs for multiple languages and platforms  | ✅ Realtime API (WebSocket subscriptions)      | ✅ Cloud Functions in multiple languages        | ✅          | Mobile-first apps (e.g., Flutter), simple full-stack projects            |
 | PocketBase     | ✅ Embedded SQLite                                                          | ✅ Minimalist admin UI                          | ✅ Basic login and OAuth support              | ✅ WebSocket real-time updates                 | ⚠️ Basic hooks and limited plugin support     | ✅          | Side projects, offline-first apps, lightweight prototypes                |
 | Parse Platform | ✅ MongoDB by default, also supports PostgreSQL                             | ✅ Parse Dashboard                              | ✅ Customizable user models                   | ⚠️ Basic support, requires extensions        | ✅ Cloud Code with JavaScript                   | ✅          | Admin tools, push notifications, mid-sized systems                       |
 | DreamFactory   | ✅ Wide relational DB support (MySQL, PostgreSQL, SQL Server, etc.)         | ✅ API management dashboard                     | ✅ Access control built in                    | 🚫 No real-time support                        | ⚠️ Logic via DB triggers or external services | ✅          | Fast API layer, integrating with existing databases and systems          |
@@ -72,6 +74,17 @@ Here are six open-source tools I’ve carefully selected—some lightweight, oth
 * ✅ Fully supported and production-ready
 * ⚠️ Limited or requires manual configuration
 * 🚫 Not supported currently
+
+## Which Firebase Alternative Should You Choose?
+
+Start with the main reason you're moving away from Firebase, then match it to the recommendations below:
+
+* **Business systems that need complex permissions, data modeling, and private deployment**: Choose NocoBase. It offers visual data modeling, role-based permissions, and workflows, and can connect to your existing databases.
+* **Keep the Firebase developer experience, but switch to a SQL database**: Choose Supabase. It's built on PostgreSQL, auto-generates APIs, and supports real-time updates.
+* **Flutter or native mobile development**: Choose Appwrite. Its official SDKs cover Flutter, Swift, Kotlin, and more.
+* **Prototypes, side projects, or offline intranet systems**: Choose PocketBase. It runs as a single executable with built-in SQLite.
+* **A mature admin dashboard, Cloud Code, and push notifications**: Choose Parse Platform.
+* **You already have a database and just want APIs fast**: Choose DreamFactory.
 
 ## 1. [NocoBase](https://www.nocobase.com/)
 
@@ -338,6 +351,24 @@ Whether you want more control over your data, need self-hosting capabilities, or
 Each tool comes with its own strengths and trade-offs, and the key is finding the one that fits your project’s needs and your team’s tech stack.
 
 We hope this guide has helped you make a more informed decision—and we’d love to hear about your experiences in the comments or community discussions.
+
+## FAQ: Alternatives to Firebase
+
+**What is the best alternative to Firebase?**
+
+No single tool fits every project. If you want the experience closest to Firebase, Supabase is the most common choice. If you're building business systems with complex permissions that need private deployment, NocoBase is a better fit. For mobile projects, look at Appwrite first; for small projects and prototypes, PocketBase works well.
+
+**Are there free, open-source Firebase alternatives?**
+
+Yes. NocoBase, Supabase, Appwrite, PocketBase, Parse Platform, and DreamFactory, all covered in this article, are open-source projects, and all of them can be deployed on your own servers.
+
+**Can Firebase be self-hosted?**
+
+No. Firebase is a managed service provided by Google. The Firebase Local Emulator Suite is meant only for development and testing, and the official documentation explicitly says not to use it as a self-hosted production deployment. If you need self-hosting, choose one of the open-source alternatives above.
+
+**Which Firebase alternatives support SQL databases?**
+
+Supabase is built on PostgreSQL. NocoBase supports PostgreSQL, MySQL/MariaDB, and SQLite, and can connect to external data sources such as SQL Server and Oracle. PocketBase has SQLite built in. Parse Platform supports PostgreSQL. DreamFactory can generate APIs for databases such as MySQL, PostgreSQL, and SQL Server.
 
 **Related reading:**
 
