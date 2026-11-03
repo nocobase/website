@@ -119,3 +119,16 @@ Sungrow's project team tried a different approach. Collaboration with NocoBase b
 That experience has also influenced what the team wants to do next. It is exploring how to connect existing internal systems to the platform, bring in more business data and processes, and identify additional opportunities to use AI in day-to-day work.
 
 For this team, the first phase is a starting point: it has a working application built around its processes and a way to keep adapting it as its needs change.
+
+
+**More Customer Stories:**
+
+* [How a Volunteer Fire Department Manages 200 Callouts a Year with NocoBase ](https://www.nocobase.com/customers/polish-volunteer-fire-department-nocobase-case-study/)
+* [From Paperwork to Digital Public Services in France](https://www.nocobase.com/customers/astrolab-nocobase/)
+* [How to Deliver a Complex OA System in 3 Months with NocoBase](https://www.nocobase.com/customers/deliver-complex-oa-system-nocobase-3-months/)
+* [Case Study: Digitizing Medical Manufacturing Workflows with NocoBase](https://www.nocobase.com/customers/medical-device-manufacturer-builds-self-hosted-management-system-with-nocobase/)
+* [Software Vendor Boosts Delivery Efficiency by 70% with NocoBase](https://www.nocobase.com/customers/software-vendor-boosts-delivery-efficiency-with-nocobase/)
+* [Community Spotlight: Building a Real-World ERP with NocoBase](https://www.nocobase.com/customers/an-erp-built-with-nocobase/)
+* [Inside: How an 8-Person Team Delivers at Enterprise Speed](https://www.nocobase.com/customers/shenzhen-chuanglianyun-tech-development-methodology/)
+* [Built an AI Multimodal R&D Platform in Days — with NocoBase](https://www.nocobase.com/customers/ai-multimodal-platform/)
+* [NocoBase in Russia: Multi-Scenario Digital Solutions in Action](https://www.nocobase.com/customers/nocobase-in-russia/)
