@@ -8,7 +8,7 @@ Working in a small joint team with NocoBase, the project team built the applicat
 
 Founded in 1997, Sungrow is a renewable energy company focused on the research and development, manufacturing, sales, and service of renewable energy equipment. Its businesses span solar and wind power, energy storage, electric vehicles and charging, hydrogen, and other areas. By the end of June 2026, Sungrow had installed more than 1,100 GW of power electronic conversion equipment worldwide, placing it among the leading companies in the global renewable energy industry.
 
-![Sungrow](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-v9asl3(1)-b6yzv9.png)
+![Sungrow](https://static-docs.nocobase.com/20261104-205135-epol8v.jpg)
 
 *Sungrow's official website homepage*
 

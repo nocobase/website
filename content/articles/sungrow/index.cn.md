@@ -8,7 +8,7 @@
 
 阳光电源成立于 1997 年，是全球知名的新能源企业，专注于新能源设备的研发、生产、销售和服务，业务覆盖光伏、风电、储能、电动汽车与充电、氢能等领域。截至 2026 年 6 月底，阳光电源在全球累计装机的电力电子转换设备已超过 1100 GW，综合实力稳居全球新能源行业第一梯队。
 
-![Sungrow](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-v9asl3(1)-b6yzv9.png)
+![Sungrow](https://static-docs.nocobase.com/20261104-205135-epol8v.jpg)
 
 *阳光电源官网首页*
 
