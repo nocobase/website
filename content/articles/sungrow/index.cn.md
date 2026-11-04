@@ -8,7 +8,7 @@
 
 阳光电源成立于 1997 年，是全球知名的新能源企业，专注于新能源设备的研发、生产、销售和服务，业务覆盖光伏、风电、储能、电动汽车与充电、氢能等领域。截至 2026 年 6 月底，阳光电源在全球累计装机的电力电子转换设备已超过 1100 GW，综合实力稳居全球新能源行业第一梯队。
 
-![Sungrow.png](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-d346mz.png)
+![Sungrow](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-v9asl3(1)-b6yzv9.png)
 
 *阳光电源官网首页*
 
@@ -32,7 +32,7 @@ AI 开始改变软件开发与日常工作后，优化业务有了新的可能�
 
 团队把这些细节整理成需求文档，交给 AI 在 NocoBase 底座上生成系统，过程中随时补充和调整需求。从数据结构、页面、业务规则到看板，系统里的一切都由 AI 生成，没有人手写过一行代码。
 
-![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
+![Personal portal in the application built with AI and NocoBase](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5%20(1)-h8x9ry.jpg)
 
 *用 AI + NocoBase 搭建的系统首页 - 个人门户*
 

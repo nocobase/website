@@ -4,18 +4,11 @@ In about two months, a Sungrow project team working across several countries bui
 
 Working in a small joint team with NocoBase, the project team built the application around its own processes. AI now also helps employees find information, compare solution versions, and organize materials. Once a technical solution is confirmed, a quotation that previously took hours or even days to prepare can now be generated in minutes.
 
-### At a glance
-
-
-| **~2 months**                 | **10+ modules**                                       | **Hours or days → minutes**                                        |
-| :---------------------------- | :---------------------------------------------------- | :------------------------------------------------------------------ |
-| First major development phase | Opportunities, projects, quotations, orders, and more | Time to generate a quotation once a technical solution is confirmed |
-
 ## About Sungrow
 
 Founded in 1997, Sungrow is a renewable energy company focused on the research and development, manufacturing, sales, and service of renewable energy equipment. Its businesses span solar and wind power, energy storage, electric vehicles and charging, hydrogen, and other areas. By the end of June 2026, Sungrow had installed more than 1,100 GW of power electronic conversion equipment worldwide, placing it among the leading companies in the global renewable energy industry.
 
-![Sungrow official website homepage](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-d346mz.png)
+![Sungrow](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-v9asl3(1)-b6yzv9.png)
 
 *Sungrow's official website homepage*
 
@@ -43,7 +36,7 @@ After agreeing on the initial scope, the project team worked with business teams
 
 The team turned those details into requirements documents for AI to implement on NocoBase, then continued adding and adjusting requirements as development progressed. AI generated the data structures, pages, business rules, and dashboards. No one wrote code manually.
 
-![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
+![Personal portal in the application built with AI and NocoBase](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5%20(1)-h8x9ry.jpg)
 
 *Personal portal in the application built with AI and NocoBase*
 

@@ -8,7 +8,7 @@ Sungrow のある海外チーム（以下「プロジェクトチーム」）が
 
 Sungrow は 1997 年に設立された、世界的に知られる再生可能エネルギー企業です。再生可能エネルギー設備の研究開発、製造、販売、サービスを中心に、太陽光、風力、エネルギー貯蔵、電気自動車・充電、水素などの分野で事業を展開しています。2026 年 6 月末時点で、Sungrow が世界で導入したパワーエレクトロニクス変換設備の累計容量は 1,100 GW を超えており、世界の再生可能エネルギー業界を代表する企業の一つです。
 
-![Sungrow.png](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-d346mz.png)
+![Sungrow](https://static-docs.nocobase.com/img_v3_02172_36ed6adb-11fd-42e4-bce1-b86a108ca17g-v9asl3(1)-b6yzv9.png)
 
 *Sungrow 公式サイトのトップページ*
 
@@ -32,7 +32,7 @@ AI がソフトウェア開発や日常業務を変え始めたことで、業�
 
 チームはこうした詳細を要件文書にまとめ、NocoBase の基盤上で AI にシステムを生成させました。構築途中でも要件を追加・調整しています。データ構造、ページ、業務ルール、ダッシュボードまで、システム内のすべてを AI が生成し、人がコードを 1 行も手書きすることはありませんでした。
 
-![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
+![Personal portal in the application built with AI and NocoBase](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5%20(1)-h8x9ry.jpg)
 
 *AI + NocoBase で構築したシステムのホーム画面 - 個人ポータル*
 
