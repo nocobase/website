@@ -32,7 +32,7 @@ AI 开始改变软件开发与日常工作后，优化业务有了新的可能�
 
 团队把这些细节整理成需求文档，交给 AI 在 NocoBase 底座上生成系统，过程中随时补充和调整需求。从数据结构、页面、业务规则到看板，系统里的一切都由 AI 生成，没有人手写过一行代码。
 
-![sungrow home page-l1536b.png](https://static-docs.nocobase.com/sungrow%20home%20page-l1536b.png)
+![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
 
 *用 AI + NocoBase 搭建的系统首页 - 个人门户*
 
@@ -46,13 +46,13 @@ AI 开始改变软件开发与日常工作后，优化业务有了新的可能�
 
 随着应用逐步成形，原本分散在各处的商机有了统一的入口。团队可以按国家、客户和项目阶段查看业务，跟进负责人和进展。
 
-![Group 44-wai87n.png](https://static-docs.nocobase.com/Group%2044-wai87n.png)
+![Opportunity dashboard showing opportunities by country, customer, and project stage.png](https://static-docs.nocobase.com/02_%E5%95%86%E6%9C%BA%E7%9C%8B%E6%9D%BF-yu915j.png)
 
 *商机看板：按国家、客户和项目阶段查看商机*
 
 过去靠人判断、靠人手填的规则，现在由系统处理。新建商机时，选了国家，所属区域自动带出；项目等级自动判定；选了EPC，系统会根据它的所在区域，自动判断是不是跨区项目。
 
-![Group 43-x72kvu.png](https://static-docs.nocobase.com/Group%2043-x72kvu.png)
+![Opportunity editing page with automatically populated fields and a change history.png](https://static-docs.nocobase.com/03_%E7%BC%96%E8%BE%91%E5%95%86%E6%9C%BA%EF%BC%88%E6%8A%80%E6%9C%AF%E4%BF%A1%E6%81%AF%EF%BC%89-4geoz4.png)
 
 *编辑商机：带 auto 标记的字段由系统自动带出或从配置表同步，右侧记录每一次改动*
 
@@ -78,7 +78,7 @@ AI 开始改变软件开发与日常工作后，优化业务有了新的可能�
 
 方案确认后，在系统里出一份报价，现在只要几分钟。
 
-![image-8j5zpg.png](https://static-docs.nocobase.com/image-8j5zpg.png)
+![Solutions and quotations workbench showing version relationships and approval status.png](https://static-docs.nocobase.com/04_%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E5%B7%A5%E4%BD%9C%E5%8F%B0-4ujl02.png)
 
 *方案与报价工作台。每份报价都标明出自哪一版方案，当前生效的方案和报价的审批状态一目了然*
 
@@ -117,7 +117,6 @@ AI 在报价中支持的，是信息整理和核对。面对同一个项目的�
 思路也随之改变。过去是业务去适应系统，现在他们开始考虑，怎样把已有的各类内部系统接入这个平台，连接更多业务数据和流程，并继续寻找可以用 AI 提升效率的地方。
 
 对阳光电源这支海外团队来说，这只是一个开始。用 AI 和 NocoBase 搭建贴合自身业务的系统，也许正在成为更多企业的新选择。
-
 
 更多 NocoBase 的用户故事：
 

@@ -1,8 +1,15 @@
 ## Introduction
 
-In about two months, a Sungrow project team working across several countries built a business application with AI and NocoBase—without writing code manually. The application brought opportunities, technical solutions, and quotations that had been scattered across spreadsheets, other tools, and group chats into one place.
+In about two months, a Sungrow project team working across several countries built a business application with AI and NocoBase—without writing code manually. The application brought opportunities, technical solutions, and quotations that had been scattered across spreadsheets, other tools, and messaging apps into one place.
 
 Working in a small joint team with NocoBase, the project team built the application around its own processes. AI now also helps employees find information, compare solution versions, and organize materials. Once a technical solution is confirmed, a quotation that previously took hours or even days to prepare can now be generated in minutes.
+
+### At a glance
+
+
+| **~2 months**                 | **10+ modules**                                       | **Hours or days → minutes**                                        |
+| :---------------------------- | :---------------------------------------------------- | :------------------------------------------------------------------ |
+| First major development phase | Opportunities, projects, quotations, orders, and more | Time to generate a quotation once a technical solution is confirmed |
 
 ## About Sungrow
 
@@ -22,13 +29,13 @@ Sungrow has a dedicated AI department that promotes AI adoption across the compa
 
 It began with a specific need: manage opportunities in one place, then connect the technical solution, quotation, and order processes that follow.
 
-The team already used digital tools, but they could not fully accommodate its workflows. Projects passed through multiple stages and revisions between the initial opportunity and the final quotation. Many people were involved, sometimes in several roles. Information about the same project often ended up in different files and group chats, making it difficult to identify the latest version.
+The team already used digital tools, but they could not fully accommodate its workflows. Projects passed through multiple stages and revisions between the initial opportunity and the final quotation. Many people were involved, sometimes in several roles. Information about the same project often ended up in different files and message threads, making it difficult to identify the latest version.
 
 The team needed more detailed control over its business processes and an application that could change as those processes changed. Having AI generate a tool was only part of the answer. Data access and permissions needed clear boundaries, the application had to run reliably, and changes and versions had to remain traceable.
 
 The IT lead evaluated established off-the-shelf software, online collaborative spreadsheets, and application platforms such as NocoBase. The team chose NocoBase because it could reuse core capabilities for data management, permissions, and workflows. AI could then build business-specific functionality on that foundation, with the team reviewing and refining the results.
 
-Access permissions illustrate why this mattered. Whether an employee can see the amount on a particular quotation depends on both their role and whether they belong to the relevant project team. The built-in AI assistant operates within those same permissions: it can retrieve only the information that the employee is authorized to see in the application. These rules are managed through NocoBase's existing user, role, and permission system rather than being recreated for AI.
+Access permissions illustrate why this mattered. Whether an employee can see the amount on a particular quotation depends on both their role and whether they belong to the relevant project team. The built-in AI agent operates within those same permissions: it can retrieve only the information that the employee is authorized to see in the application. These rules are managed through NocoBase's existing user, role, and permission system rather than being recreated for AI.
 
 ## Business Users Define the Requirements, AI Builds the Application
 
@@ -36,7 +43,7 @@ After agreeing on the initial scope, the project team worked with business teams
 
 The team turned those details into requirements documents for AI to implement on NocoBase, then continued adding and adjusting requirements as development progressed. AI generated the data structures, pages, business rules, and dashboards. No one wrote code manually.
 
-![Personal portal built with AI and NocoBase](https://static-docs.nocobase.com/sungrow%20home%20page-l1536b.png)
+![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
 
 *Personal portal in the application built with AI and NocoBase*
 
@@ -50,17 +57,17 @@ This approach let the people closest to the business take a direct role in build
 
 As the application took shape, the team gained a single place to manage opportunities. Users could view them by country, customer, and project stage, and track responsibility and progress.
 
-![Opportunity dashboard showing opportunities by country, customer, and project stage](https://static-docs.nocobase.com/Group%2044-wai87n.png)
+![Opportunity dashboard showing opportunities by country, customer, and project stage.png](https://static-docs.nocobase.com/02_%E5%95%86%E6%9C%BA%E7%9C%8B%E6%9D%BF-yu915j.png)
 
 *Opportunity dashboard showing opportunities by country, customer, and project stage*
 
-The application also took over tasks that had previously required manual input or judgment. When someone creates an opportunity, selecting a country automatically fills in the corresponding region. The system determines the project level and, when an EPC is selected, checks its region to establish whether the project is cross-regional.
+The application also took over tasks that had previously required manual input or judgment. When someone creates an opportunity, selecting a country automatically fills in the corresponding region. The system determines the project level and, when an EPC contractor is selected, checks its region to establish whether the project is cross-regional.
 
-![Opportunity editing page with automatically populated fields and a change history](https://static-docs.nocobase.com/Group%2043-x72kvu.png)
+![Opportunity editing page with automatically populated fields and a change history.png](https://static-docs.nocobase.com/03_%E7%BC%96%E8%BE%91%E5%95%86%E6%9C%BA%EF%BC%88%E6%8A%80%E6%9C%AF%E4%BF%A1%E6%81%AF%EF%BC%89-4geoz4.png)
 
 *Opportunity editing page: fields marked “auto” are populated automatically or synchronized from configuration tables, with changes recorded on the right*
 
-The team also identified places where AI could make the workflow easier. Employees can ask the built-in AI assistant questions in natural language, filter business records by specific criteria, and check how individual projects are progressing.
+The team also identified places where AI could make the workflow easier. Employees can ask the built-in AI agent questions in natural language, filter business records by specific criteria, and check how individual projects are progressing.
 
 ## Managing Complex Configurations and Quotations
 
@@ -74,7 +81,7 @@ Those adjustments require internal review. Can the requested specifications be m
 
 Commercial terms add another set of considerations. The team must specify the currency and exchange rate, applicable trade terms, and who is responsible for local VAT and withholding tax. Prices may need to change when exchange rates move beyond an agreed threshold, while policy changes can also affect quotation terms.
 
-Previously, the team managed much of this work in Excel and group chats. Salespeople, solution engineers, product-line teams, and pricing managers had to confirm details repeatedly. A project could have several configuration sheets and quotation versions, sometimes differing in only one or two places. Whoever prepared the quotation had to verify that the equipment capacity, configuration, and price all matched the correct solution version.
+Previously, the team managed much of this work in Excel files and messaging apps. Salespeople, solution engineers, product-line teams, and pricing managers had to confirm details repeatedly. A project could have several configuration sheets and quotation versions, sometimes differing in only one or two places. Whoever prepared the quotation had to verify that the equipment capacity, configuration, and price all matched the correct solution version.
 
 Moving this process into an application was more difficult than it first appeared. The operations team initially thought it could transfer the existing Excel sheets directly. Once it examined the process more closely, however, it uncovered numerous interdependent formulas. The team spent several days clarifying the configuration options and the relationships between them before giving that logic to AI to implement in NocoBase.
 
@@ -82,13 +89,13 @@ Now, the stages of the quotation process are connected. When a configuration she
 
 Once a solution is confirmed, the application can generate a quotation in just a few minutes.
 
-![Solutions and quotations workbench showing version relationships and approval status](https://static-docs.nocobase.com/image-8j5zpg.png)
+![Solutions and quotations workbench showing version relationships and approval status.png](https://static-docs.nocobase.com/04_%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E5%B7%A5%E4%BD%9C%E5%8F%B0-4ujl02.png)
 
 *Solutions and quotations workbench showing the solution version behind each quotation, the active solution, and quotation approval status*
 
 Quoting standard products is more straightforward. Salespeople choose a model from the product catalog, and the application fills in its specifications. They enter the quantity and unit price to calculate the total, then generate a customer-facing commercial quotation and a draft order. Each business type keeps its own quotation process, but the data stays on the same platform.
 
-AI supports this work by helping employees find and verify information. When a project has multiple solution and quotation versions, users can ask the built-in assistant to compare them and identify what changed.
+AI supports this work by helping employees find and verify information. When a project has multiple solution and quotation versions, users can ask the built-in AI agent to compare them and identify what changed.
 
 Opportunities, technical solutions, quotations, and orders are now connected within one application. Information confirmed at one stage carries through to the next. Once a deal is won, the order amount comes directly from the currently active quotation.
 
@@ -98,7 +105,7 @@ After completing the first phase, the project team held an internal training ses
 
 One difference was the interface. Sungrow places considerable emphasis on visual details, and some ideas had been difficult to implement on previous platforms. This time, the project team worked with marketing colleagues to refine the homepage layout, branded character, and even the color schemes of individual charts.
 
-The application also included a team of AI Employees with distinct responsibilities. Some organize information, others handle translation or answer questions using the document repository, and others focus on strategic analysis. An AI “team lead” receives requests and routes them to the appropriate AI Employee.
+The application also includes specialized AI agents for different tasks. Some organize information, others translate content or answer questions using the document repository, and others support strategic analysis. A routing agent directs requests to the appropriate agent.
 
 Employees began to see how AI could fit into the work they do every day.
 
@@ -110,16 +117,13 @@ The project team is reviewing these requests one by one to guide further develop
 
 ## Building Applications Around the Business
 
-The project team describes its experience with an analogy. Buying off-the-shelf software is like buying ready-made fried rice: you can add a few ingredients, but it is still fried rice. What they have now is more like a wok. They can choose the ingredients and make different dishes depending on what they need.
+For the project team, flexibility is the biggest difference. Off-the-shelf software can meet standardized needs, but adapting it to specialized workflows often requires workarounds or custom development. With NocoBase, the team can keep refining its application around changing business requirements while reusing the same foundation for data, permissions, and workflows.
 
-The comparison reflects a familiar challenge with enterprise software. Companies often have to adapt their processes to the products they buy, while customization comes with trade-offs in cost and development time.
-
-Sungrow's project team tried a different approach. Collaboration with NocoBase began in July, and the first phase of major development was completed in September, taking about two months. Using AI and NocoBase, the team built more than ten modules covering opportunities, projects, technical solutions, quotations, orders, management dashboards, a document repository, and AI assistants. Each was designed around the team's own processes.
+The team began working with NocoBase in July and completed the first major development phase in September, taking about two months. Using AI and NocoBase, the team built more than ten modules covering opportunities, projects, technical solutions, quotations, orders, management dashboards, a document repository, and AI agents. Each was designed around the team's own processes.
 
 That experience has also influenced what the team wants to do next. It is exploring how to connect existing internal systems to the platform, bring in more business data and processes, and identify additional opportunities to use AI in day-to-day work.
 
 For this team, the first phase is a starting point: it has a working application built around its processes and a way to keep adapting it as its needs change.
-
 
 **More Customer Stories:**
 

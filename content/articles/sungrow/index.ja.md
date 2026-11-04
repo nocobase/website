@@ -32,7 +32,7 @@ AI がソフトウェア開発や日常業務を変え始めたことで、業�
 
 チームはこうした詳細を要件文書にまとめ、NocoBase の基盤上で AI にシステムを生成させました。構築途中でも要件を追加・調整しています。データ構造、ページ、業務ルール、ダッシュボードまで、システム内のすべてを AI が生成し、人がコードを 1 行も手書きすることはありませんでした。
 
-![sungrow home page-l1536b.png](https://static-docs.nocobase.com/sungrow%20home%20page-l1536b.png)
+![Personal portal built with AI and NocoBase.png](https://static-docs.nocobase.com/01_%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5-c13d7u.png)
 
 *AI + NocoBase で構築したシステムのホーム画面 - 個人ポータル*
 
@@ -46,13 +46,13 @@ AI がソフトウェア開発や日常業務を変え始めたことで、業�
 
 アプリが形になっていくにつれて、これまで各所に分散していた商談にも統一された入口ができました。チームは国、顧客、案件ステージごとに商談を確認し、担当者や進捗を追えるようになりました。
 
-![商談ダッシュボード：国、顧客、案件ステージごとに商談を確認](https://static-docs.nocobase.com/Group%2044-wai87n.png)
+![Opportunity dashboard showing opportunities by country, customer, and project stage.png](https://static-docs.nocobase.com/02_%E5%95%86%E6%9C%BA%E7%9C%8B%E6%9D%BF-yu915j.png)
 
 *商談ダッシュボード：国、顧客、案件ステージごとに商談を確認*
 
 以前は人が判断し、人が入力していたルールも、現在はシステムが処理します。新しい商談を作成すると、国を選ぶだけで所属地域が自動入力され、案件レベルも自動判定されます。EPC を選択すると、システムがその所在地域をもとに、案件が地域をまたぐものかどうかを自動で判断します。
 
-![商談編集画面：auto 表示のある項目は自動入力または設定テーブルから同期され、右側には変更履歴が記録される](https://static-docs.nocobase.com/Group%2043-x72kvu.png)
+![Opportunity editing page with automatically populated fields and a change history.png](https://static-docs.nocobase.com/03_%E7%BC%96%E8%BE%91%E5%95%86%E6%9C%BA%EF%BC%88%E6%8A%80%E6%9C%AF%E4%BF%A1%E6%81%AF%EF%BC%89-4geoz4.png)
 
 *商談編集画面：auto 表示のある項目は自動入力または設定テーブルから同期され、右側には変更履歴が記録される*
 
@@ -78,7 +78,7 @@ AI がソフトウェア開発や日常業務を変え始めたことで、業�
 
 ソリューションが確定した後、システム内で見積を作成するのに必要な時間は、現在では数分です。
 
-![ソリューション・見積ワークベンチ。各見積がどのソリューション版から作成されたか、現在有効なソリューションと見積の承認状態を一目で確認できる](https://static-docs.nocobase.com/image-8j5zpg.png)
+![Solutions and quotations workbench showing version relationships and approval status.png](https://static-docs.nocobase.com/04_%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E5%B7%A5%E4%BD%9C%E5%8F%B0-4ujl02.png)
 
 *ソリューション・見積ワークベンチ。各見積がどのソリューション版から作成されたか、現在有効なソリューションと見積の承認状態を一目で確認できる*
 
@@ -117,8 +117,6 @@ AI と NocoBase を使うことで、プロジェクトチームは別の道を�
 考え方も変わりました。以前は業務側がシステムへ合わせていましたが、現在は、既存のさまざまな社内システムをこのプラットフォームへどう接続し、より多くの業務データやプロセスをつなげ、AI で効率を高められる部分をさらに見つけていくかを考え始めています。
 
 Sungrow のこの海外チームにとって、これはまだ始まりにすぎません。AI と NocoBase を使って自社の業務に合ったシステムを構築することは、より多くの企業にとって新しい選択肢になりつつあるのかもしれません。
-
-
 
 **もっと多くのカスタマーストーリー：**
 
