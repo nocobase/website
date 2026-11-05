@@ -1,6 +1,6 @@
 ## Introduction
 
-In about two months, a Sungrow project team working across several countries built a business application with AI and NocoBase—without writing code manually. The application brought opportunities, technical solutions, and quotations that had been scattered across spreadsheets, other tools, and messaging apps into one place.
+In about two months, a [Sungrow](https://cn.sungrowpower.com/en) project team working across several countries built a business application with AI and NocoBase—without writing code manually. The application brought opportunities, technical solutions, and quotations that had been scattered across spreadsheets, other tools, and messaging apps into one place.
 
 Working in a small joint team with NocoBase, the project team built the application around its own processes. AI now also helps employees find information, compare solution versions, and organize materials. Once a technical solution is confirmed, a quotation that previously took hours or even days to prepare can now be generated in minutes.
 
