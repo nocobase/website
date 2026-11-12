@@ -14,9 +14,11 @@ From the perspective of teams delivering real client systems, this raises a key 
 
 💡Read more: [6 Open-Source No/Low-Code Tools for Building PoCs](https://www.nocobase.com/en/blog/6-open-source-no-low-code-tools-for-building-pocs)
 
+If what the client actually needs is a table that is safer than Excel rather than a full business system, start with another article: [6 Open-Source No-Code Database Tools](https://www.nocobase.com/en/blog/6-open-source-no-code-database-tools). That one compares tools from a database and spreadsheet-collaboration angle; this one compares them from a long-term client delivery angle. The two complement each other.
+
 ---
 
-💬Hey, you're reading the NocoBase blog. NocoBase is the most extensible AI-powered no-code/low-code development platform for building enterprise applications, internal tools, and all kinds of systems. It’s fully self-hosted, plugin-based, and developer-friendly. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
+💬Hey, you're reading the NocoBase blog. NocoBase is an open-source, self-hostable platform for building business systems, including enterprise applications, internal tools, and all kinds of systems. NocoBase 2 is built mainly through visual configuration and is still actively maintained; NocoBase 3 lets Coding Agents write the business part on top of a ready-made foundation, while people make the decisions and sign off. →[ Explore NocoBase on GitHub](https://github.com/nocobase/nocobase)
 
 ---
 
@@ -43,6 +45,21 @@ For teams building client systems, going live does not mean the project is finis
 **Finally, cost control determines whether a project is actually profitable**
 
 This is the most practical and often overlooked factor. If a platform is expensive to modify, extend, or maintain over time, a project can keep losing money even after a successful launch. Choosing the right platform is ultimately about controlling long-term labor costs and reducing unpredictable delivery risks, not just shipping faster at the beginning.
+
+## 2026 Quick Look: Which Client Projects Each Platform Fits
+
+Here is the conclusion up front, so you can quickly find where your project lands. The judgments in this table come from the platform-by-platform analysis below, and they focus on what happens after the first release: how changes are made when requirements shift, whether delivery into the client's environment stays under control, and whether someone else can take over later.
+
+| Platform | One-line positioning | How you build | Changes after the first release | Deployment and ownership | Best-fit client projects |
+| --- | --- | --- | --- | --- | --- |
+| **NocoBase** | Open-source, self-hostable platform for building business systems | NocoBase 2: visually configure data models, pages, workflows, and permissions; NocoBase 3: Coding Agents write the business part on top of the foundation | Stabilize the data model first, then change UI, workflows, and permissions; in NocoBase 3 every change is checked and accepted before release | Open source, private deployment, code and data belong to the client | Systems with complex data relationships, permissions and workflows at the core, continuously changing requirements, and long-term maintenance |
+| **Appsmith** | API-driven internal tools and admin interfaces | Component-based UI bound to APIs, logic written in JS | UI-layer changes are fast; data models and workflows live outside the platform and must be maintained separately | Open source, self-hostable | Tools where the backend already exists and the focus is UI and data operations |
+| **Budibase** | Template-driven business apps on top of databases or tables | Visual configuration + templates | Low- to medium-complexity changes are easy; complex relationships and workflows are limited | Open source, self-hostable | Management tools with short delivery cycles and flat data structures |
+| **NocoDB** | Turns relational databases into Airtable-style table interfaces | Table interface configuration | Painless when the schema is stable; complex relationships and workflows are not a core design goal | Open source, self-hostable | Excel / Airtable replacements, records, and shared tables |
+| **ToolJet** | AI-assisted generation + visual builder for internal tools | Generate an initial structure from natural language, then refine in the visual builder | Fast from prototype to usable version; limited reliance on system-level modeling, workflows, and permissions | Open source, self-hostable | Early prototypes and data-integration internal panels |
+| **Directus** | Data access, permission, and API layer on top of a database | Data model and permission configuration, extended with Hooks | Data layer is stable; business workflows and application-layer interaction must be implemented elsewhere | Open source, self-hostable | Headless CMS, shared data platforms, backend service layers for frontend apps |
+
+A simple rule of thumb: if the client already mentions "we will add more later," "permissions by department," or "it has to go through approval" in the first requirements conversation, look at NocoBase and Directus first. If what they say is "we just need a working screen" or "we need to get this table under control," Appsmith, Budibase, ToolJet, and NocoDB will all get you there faster.
 
 ## Key Comparison Dimensions for Client Project Delivery
 
@@ -71,6 +88,8 @@ This is the most practical and often overlooked factor. If a platform is expensi
 NocoBase is an open-source, self-hosted AI no-code and low-code platform built around **data models** and a **plugin-based architecture**. It is designed for building scalable, production-ready business systems rather than lightweight internal tools.
 
 From a **client project delivery** perspective, NocoBase behaves less like a fixed-feature no-code tool and more like a **flexible, extensible development foundation**. This makes it particularly suitable for agencies and service teams responsible for long-term delivery, maintenance, and ongoing system evolution.
+
+A quick note on versions. The screenshots and feature descriptions below are based on NocoBase 2, which is still actively maintained, so projects delivered on it can keep running with confidence. If you want a more flexible, open-ended way of building and want AI to take on more of the work, try NocoBase 3. It packages the capabilities every project needs, such as login, permissions, approvals, audit logs, and deployment, into a foundation (NocoBase Core). Coding Agents such as Claude Code, Codex, and OpenCode write only the business part that is unique to each client on top of that foundation, and NocoBase Studio handles checking, acceptance, and release. They are two different ways of building: in NocoBase 2 the business logic is defined in visual configuration, in NocoBase 3 it is defined in code. Each has the scenarios it fits best, so choose based on the client's business and the specifics of the project. Both versions are open source and can be deployed privately. See the [NocoBase documentation](https://docs.nocobase.com/) for details.
 
 ![NocoBase.PNG](https://static-docs.nocobase.com/1280X1280%20(45)-nwyljo.PNG)
 
@@ -373,6 +392,41 @@ In practice, Directus is commonly used to deliver:
 
 What these systems have in common is a strong emphasis on **data structure, access control, and API reliability**, with relatively limited focus on business workflows, UI interactions, or application-layer process orchestration.
 
+## When to Choose NocoBase (and When You Don't Have To)
+
+Now that we have looked at all six platforms, let's make the conditions for choosing NocoBase more concrete. NocoBase is not the fastest way to ship a first version. Its strength is that the system can keep being changed reliably after the first version. AI has made going from 0 to 1 easy; going from 1 to 2 is what decides whether a client project is actually profitable.
+
+Everything below applies to both NocoBase 2 and NocoBase 3. Each has the scenarios it fits best, so each point explains how the two versions approach it. Choose based on the client's business.
+
+**Four situations where NocoBase should be your first choice**
+
+**1. The client's requirements will keep changing**
+
+The contract says CRM. After launch the client wants quote approvals, then after-sales tickets, then an integration with their messaging platform. NocoBase stabilizes the data model first and then changes UI, workflows, and permissions on top of it, so a few rounds of changes do not force a rebuild. In NocoBase 3, every change follows the same process: the Agent develops and tests, the system checks permissions, data migrations, and compatibility with the foundation, a person accepts and approves the release, and a backup is taken before release. Whether you change the people or the Agent, someone can take over.
+
+**2. Every project needs login, permissions, approvals, and audit logs**
+
+This is the main source of repeated cost for agencies. NocoBase ships these as ready-made capabilities, so you only handle the part that is different for each client: data models, pages, workflows, and business rules. With NocoBase 2 you configure it yourself; with NocoBase 3 you let a Coding Agent write it.
+
+**3. The client requires private deployment and may switch vendors later**
+
+NocoBase is open source and can be deployed privately. The code, data, and runtime environment stay under the client's control. A project delivered on an open-source foundation lets the client switch service providers later. For agencies, this is actually a selling point when closing a deal: the client is not locked in to you or to any SaaS.
+
+**4. The client wants to bring AI into daily operations, but under control**
+
+AI Employees in NocoBase 2 and business Agents in NocoBase 3 both work as system roles: they use the same roles and permissions as their human colleagues, see and change only the data they are authorized for, hand key actions to a person according to approval rules, and leave a record of every step. What you deliver to the client is not just a system, but a method for keeping AI working within the rules.
+
+**When another tool may be the better first look**
+
+* A one-off demo prototype, or a campaign page used for a few weeks: tools with natural-language generation such as ToolJet are faster.
+* The client only needs a table that is safer than Excel: NocoDB is more direct. See also [6 Open-Source No-Code Database Tools](https://www.nocobase.com/en/blog/6-open-source-no-code-database-tools).
+* The backend is already stable and only an operations UI is missing: Appsmith and Budibase cost less to adopt.
+* A consumer-facing internet product: not NocoBase's main scenario.
+
+**How to get started**
+
+The open-source edition is enough to develop and deliver client projects. Pick the version per project. If your team is already comfortable with visual configuration and the client's business can be expressed clearly through configuration, use NocoBase 2 the way you always have. If you want a Coding Agent to take on the development and a more flexible, open-ended way of building, start with NocoBase 3. The two common starting points are: deploy NocoBase Studio, connect the Coding Agent you already use, and begin with one real requirement from the client; or start from an open-source business application such as NocoCRM, NocoSupport, or NocoProject (NocoBase Solutions) and let the Agent keep adapting it to the client's business. See the [NocoBase documentation site](https://docs.nocobase.com/).
+
 ## Summary
 
 Each open-source no-code platform excels in **different client delivery scenarios**. The key is not which tool is “better,” but **which layer of the system you are actually building**.
@@ -391,7 +445,7 @@ Directus operates as **data and content infrastructure**. It is commonly used as
 
 * **NocoBase**
 
-NocoBase is closer to an **extensible business system foundation**. It is particularly well suited for client projects with continuously evolving requirements, complex data relationships, and permissions and workflows at the core of the system.
+NocoBase is closer to an **extensible business system foundation**. NocoBase 2 is built mainly through visual configuration, while NocoBase 3 lets Coding Agents keep improving the system on top of the foundation; choose between them based on the business characteristics of the project. It is particularly well suited for client projects with continuously evolving requirements, complex data relationships, permissions and workflows at the core of the system, and a need for long-term maintenance.
 
 In the end, the best tool is the one that fits the **delivery scenario, system boundaries, and long-term responsibility** of your project.
 
@@ -399,6 +453,7 @@ In the end, the best tool is the one that fits the **delivery scenario, system b
 
 **Related reading:**
 
+* [6 Open-Source No-Code Database Tools](https://www.nocobase.com/en/blog/6-open-source-no-code-database-tools)
 * [How to Quickly Build a Real System to Replace Excel: A Complete Guide](https://www.nocobase.com/en/blog/how-to-quickly-build-a-real-system-to-replace-excel)
 * [Top 5 Open-Source AI Internal Tools on GitHub](https://www.nocobase.com/en/blog/top-5-open-source-ai-internal-tools-on-github)
 * [The 8 Best Google Sheets Alternatives (Specs & Pricing)](https://www.nocobase.com/en/blog/the-8-best-google-sheets-alternatives-with-full-cost-and-capability-analysis)
