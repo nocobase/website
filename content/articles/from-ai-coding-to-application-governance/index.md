@@ -10,7 +10,13 @@ Different departments each build their own CRM, ticketing or approval tools. Cus
 
 As internal apps become ever easier to build, how can enterprises reduce duplicated work and keep these apps maintainable over the long term? This article looks at three areas: shared capabilities, governance methods, and measuring results.
 
+---
+
 💬 Hi! You're reading the NocoBase blog. NocoBase is an open-source platform for building and running business systems with AI: Agents write the code and do the work, NocoBase provides the foundation and governance, and people make the decisions. → [Check us out on GitHub](https://github.com/nocobase/nocobase)
+
+---
+
+
 
 ## 01 | Draw the Line Between Shared and Independent Parts of Internal Apps
 
@@ -163,8 +169,6 @@ In the end, the results of application governance show up in daily work: whether
 Sometimes adding a set of data, a process or a feature to an existing app is all it takes to solve the problem. Letting Coding Agents learn about the existing system before they start developing, reuse existing capabilities first, and leave a clear trail for later changes and handovers is what keeps the maintenance burden of a growing number of internal apps under control.
 
 If you want Coding Agents to keep developing on top of your existing business systems, take a look at the [NocoBase 3 documentation](https://docs.nocobase.com/) for more specific guidance on development methods and platform capabilities.
-
-
 
 **Related reading**
 
