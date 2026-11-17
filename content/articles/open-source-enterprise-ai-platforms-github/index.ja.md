@@ -4,7 +4,7 @@
 
 Reddit の [r/OpenSourceeAI](https://www.reddit.com/r/OpenSourceeAI/comments/1uhl061/what_are_companies_actually_using_for_selfhosted/) で、まさにこの問いが投げかけられていました。コメント欄では、コスト、データプライバシー、モデルの性能、運用保守といった観点が挙がっています。一方で、企業が必ず自前でモデルをホストする必要はなく、API 経由でモデルを呼び出し、AI を既存の業務システムに組み込むのも現実的な選択肢だ、という指摘もありました。
 
-![image](https://static-docs.nocobase.com/)
+![image-uhibfw.png](https://static-docs.nocobase.com/image-uhibfw.png)
 
 実際、AI に求めるものは企業ごとに異なります。社内で統一された AI チャットの入り口があれば十分なチームもあれば、社内ドキュメントの検索や既存ツールとの連携を AI に任せたいチームもあります。さらに、AI を使って CRM、購買管理、チケット管理などの業務システムを構築したいという企業もあります。
 
@@ -27,18 +27,18 @@ GitHub には企業向け AI に関するプロジェクトが数多くありま
 ## 早見表
 
 
-| プロジェクト                                                 | 主な役割                                                                 | GitHub Stars | ライセンス（種類 / 主な制限）                                                   | 向いている用途                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------: | ------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [NocoBase](https://github.com/nocobase/nocobase)             | Coding Agent で業務システムを開発し、権限やワークフローなどの基盤を NocoBase が提供 | 24.8k        | NocoBase 独自ライセンス（追加条項あり）；Studio などの商用機能は別途ライセンスが必要   | CRM、購買、チケット管理などの業務システムを構築し、長期的に保守する |
-| [Activepieces](https://github.com/activepieces/activepieces) | 異なるアプリをビジュアルにつなぎ、ワークフローと AI でタスクを自動実行     | 23.7k        | MIT（コアはオープンソース）；エンタープライズ機能は別途ライセンス                | 少ないコードでツール間の自動化を実現したいチーム                     |
-| [Windmill](https://github.com/windmill-labs/windmill)        | API、ワークフロー、社内向け操作画面                                        | 17.5k        | AGPLv3 / Apache-2.0；公式ディストリビューションには独自機能と利用制限が含まれる     | コードを書いて社内の自動化ツールを開発する技術チーム                 |
-| [Sim](https://github.com/simstudioai/sim)                    | AI Agent をビジュアルに構築、デプロイ、オーケストレーション                | 29.4k        | Apache-2.0                                                                      | AI Agent ワークフローを素早く構築してテストする                      |
-| [Mastra](https://github.com/mastra-ai/mastra)                | TypeScript で Agent、ツール呼び出し、ワークフローを開発                    | 28.0k        | Apache-2.0（コア）；エンタープライズ機能は別ライセンス                           | JavaScript / TypeScript で AI アプリを開発するチーム                 |
-| [MaxKB](https://github.com/1Panel-dev/MaxKB)                 | 企業ナレッジベースを基に AI Q&A アシスタントや Agent を構築                | 23.2k        | GPL-3.0；改変や配布には条項の遵守が必要                                           | 社内ナレッジ Q&A アシスタントを素早く導入する                        |
-| [RAGFlow](https://github.com/infiniflow/ragflow)             | 複雑なドキュメントを解析し、引用元付きの RAG 検索と回答を提供              | 94.0k        | Apache-2.0                                                                      | 契約書、マニュアル、スキャン文書などの複雑なドキュメントを扱う       |
-| [LiteLLM](https://github.com/BerriAI/litellm)                | モデル API を統一し、キー、予算、ルーティング、呼び出し記録を管理           | 60k          | コアは MIT；エンタープライズ機能は別途ライセンス                                 | 複数チームが異なるモデルを共用し、利用コストを管理する               |
-| [MLflow](https://github.com/mlflow/mlflow)                   | AI アプリのトレースと評価、プロンプトやモデルのバージョン管理              | 28.8k        | Apache-2.0                                                                      | モデル評価、実験管理、バージョン管理が必要な AI エンジニアリングチーム |
-| [Langfuse](https://github.com/langfuse/langfuse)             | LLM と Agent の実行をトレースし、品質、レイテンシ、利用量を分析            | 32.8k        | MIT（コア）；`ee` ディレクトリは別ライセンス                                     | 本番稼働中の AI アプリを監視し、継続的に改善する                     |
+| プロジェクト                                                 | 主な役割                                                                            | GitHub Stars | ライセンス（種類 / 主な制限）                                                        | 向いている用途                                                         |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------- | -----------: | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| [NocoBase](https://github.com/nocobase/nocobase)             | Coding Agent で業務システムを開発し、権限やワークフローなどの基盤を NocoBase が提供 |        24.8k | NocoBase 独自ライセンス（追加条項あり）；Studio などの商用機能は別途ライセンスが必要 | CRM、購買、チケット管理などの業務システムを構築し、長期的に保守する    |
+| [Activepieces](https://github.com/activepieces/activepieces) | 異なるアプリをビジュアルにつなぎ、ワークフローと AI でタスクを自動実行              |        23.7k | MIT（コアはオープンソース）；エンタープライズ機能は別途ライセンス                    | 少ないコードでツール間の自動化を実現したいチーム                       |
+| [Windmill](https://github.com/windmill-labs/windmill)        | API、ワークフロー、社内向け操作画面                                                 |        17.5k | AGPLv3 / Apache-2.0；公式ディストリビューションには独自機能と利用制限が含まれる      | コードを書いて社内の自動化ツールを開発する技術チーム                   |
+| [Sim](https://github.com/simstudioai/sim)                    | AI Agent をビジュアルに構築、デプロイ、オーケストレーション                         |        29.4k | Apache-2.0                                                                           | AI Agent ワークフローを素早く構築してテストする                        |
+| [Mastra](https://github.com/mastra-ai/mastra)                | TypeScript で Agent、ツール呼び出し、ワークフローを開発                             |        28.0k | Apache-2.0（コア）；エンタープライズ機能は別ライセンス                               | JavaScript / TypeScript で AI アプリを開発するチーム                   |
+| [MaxKB](https://github.com/1Panel-dev/MaxKB)                 | 企業ナレッジベースを基に AI Q&A アシスタントや Agent を構築                         |        23.2k | GPL-3.0；改変や配布には条項の遵守が必要                                              | 社内ナレッジ Q&A アシスタントを素早く導入する                          |
+| [RAGFlow](https://github.com/infiniflow/ragflow)             | 複雑なドキュメントを解析し、引用元付きの RAG 検索と回答を提供                       |        94.0k | Apache-2.0                                                                           | 契約書、マニュアル、スキャン文書などの複雑なドキュメントを扱う         |
+| [LiteLLM](https://github.com/BerriAI/litellm)                | モデル API を統一し、キー、予算、ルーティング、呼び出し記録を管理                   |          60k | コアは MIT；エンタープライズ機能は別途ライセンス                                     | 複数チームが異なるモデルを共用し、利用コストを管理する                 |
+| [MLflow](https://github.com/mlflow/mlflow)                   | AI アプリのトレースと評価、プロンプトやモデルのバージョン管理                       |        28.8k | Apache-2.0                                                                           | モデル評価、実験管理、バージョン管理が必要な AI エンジニアリングチーム |
+| [Langfuse](https://github.com/langfuse/langfuse)             | LLM と Agent の実行をトレースし、品質、レイテンシ、利用量を分析                     |        32.8k | MIT（コア）；`ee` ディレクトリは別ライセンス                                         | 本番稼働中の AI アプリを監視し、継続的に改善する                       |
 
 ## 1. NocoBase：AI 駆動の企業向け業務システム開発プラットフォーム
 
@@ -64,7 +64,7 @@ NocoBase は、企業の業務システムを対象としたオープンソー�
 
 [NocoBase Core](https://www.nocobase.com/core/) は、データモデル、ロールと権限、ワークフロー、承認、ファイル管理など、企業アプリケーションでよく使われる基盤機能を提供します。Coding Agent はこれらの機能の上で、具体的な業務機能を直接開発できます。業務コードは Core と分けて保守するため、重複した開発を減らせるだけでなく、後から機能を追加したり、業務ロジックを調整したり、基盤をアップグレードしたりするのも容易です。下図の NocoITAM は NocoBase Core 上に構築されており、下層の基盤機能はそのまま Core を利用しています。
 
-![image](https://static-docs.nocobase.com/)
+![image (1)-s0rl11.png](https://static-docs.nocobase.com/image%20(1)-s0rl11.png)
 
 **2. AI による開発と業務での協働を支援**
 

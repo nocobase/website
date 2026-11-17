@@ -4,7 +4,7 @@
 
 在 Reddit 的 [r/OpenSourceeAI](https://www.reddit.com/r/OpenSourceeAI/comments/1uhl061/what_are_companies_actually_using_for_selfhosted/) 里，就有人讨论了这个问题。评论区提到了成本、数据隐私、模型性能和后续维护等因素。也有人指出，企业不一定需要自己部署模型，通过 API 调用模型，再将 AI 接入现有业务系统，同样是一种可行的方案。
 
-![image](https://static-docs.nocobase.com/)
+![image-uhibfw.png](https://static-docs.nocobase.com/image-uhibfw.png)
 
 实际上，不同企业对 AI 的需求也不一样。有些团队只需要统一的 AI 对话入口，有些希望 AI 能够检索内部文档、连接现有工具，也有些想借助 AI 构建 CRM、采购管理和工单等业务系统。
 
@@ -27,18 +27,18 @@ GitHub 上有不少企业 AI 相关项目。这次我们更关注那些专注于
 ## 快速对比
 
 
-| 项目                                                           | 主要作用                                          | GitHub Stars | 许可证（类型 / 主要限制）                       | 更适合                                    |
-| ------------------------------------------------------------ | --------------------------------------------- | ------------: | ------------------------------------ | -------------------------------------- |
-| [NocoBase](https://github.com/nocobase/nocobase)             | 借助 Coding Agent 开发业务系统，NocoBase 提供权限、工作流等基础能力 | 24.8k        | NocoBase 自有许可，附加条款；Studio 等商业功能需授权   | 构建和长期维护 CRM、采购、工单等业务系统                 |
-| [Activepieces](https://github.com/activepieces/activepieces) | 可视化连接不同应用，通过工作流和 AI 自动执行任务                    | 23.7k        | MIT（核心开源）；企业功能另需授权                   | 希望用较少代码实现跨工具自动化的团队                     |
-| [Windmill](https://github.com/windmill-labs/windmill)        | API、工作流和内部操作界面                                | 17.5k        | AGPLv3 / Apache-2.0；官方发行版包含专有功能和使用限制 | 需要编写代码、开发内部自动化工具的技术团队                  |
-| [Sim](https://github.com/simstudioai/sim)                    | 通过可视化方式构建、部署和编排 AI Agent                      | 29.4k        | Apache-2.0                           | 快速搭建并测试 AI Agent 工作流                   |
-| [Mastra](https://github.com/mastra-ai/mastra)                | 基于 TypeScript 开发 Agent、工具调用和工作流               | 28.0k        | Apache-2.0（核心）；企业功能另有许可              | 使用 JavaScript / TypeScript 开发 AI 应用的团队 |
-| [MaxKB](https://github.com/1Panel-dev/MaxKB)                 | 基于企业知识库构建 AI 问答助手和 Agent                      | 23.2k        | GPL-3.0；修改和分发需遵守相应条款                 | 快速部署企业内部知识问答助手                         |
-| [RAGFlow](https://github.com/infiniflow/ragflow)             | 解析复杂文档，提供带引用来源的 RAG 检索问答                      | 94.0k        | Apache-2.0                           | 处理合同、手册、扫描件等复杂文档                       |
-| [LiteLLM](https://github.com/BerriAI/litellm)                | 统一模型 API，管理密钥、预算、路由和调用记录                      | 60k          | 核心 MIT 许可；企业功能有单独授权                  | 多团队共用不同模型并管理调用成本                       |
-| [MLflow](https://github.com/mlflow/mlflow)                   | 追踪、评测 AI 应用，管理提示词和模型版本                        | 28.8k        | Apache-2.0                           | 需要模型评测、实验管理和版本控制的 AI 工程团队              |
-| [Langfuse](https://github.com/langfuse/langfuse)             | 追踪 LLM 和 Agent 执行过程，分析质量、延迟与用量                | 32.8k        | MIT（核心）；`ee` 目录另有许可                  | 监控已上线的 AI 应用并持续优化效果                    |
+| 项目                                                         | 主要作用                                                            | GitHub Stars | 许可证（类型 / 主要限制）                             | 更适合                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------------- | -----------: | ----------------------------------------------------- | ----------------------------------------------- |
+| [NocoBase](https://github.com/nocobase/nocobase)             | 借助 Coding Agent 开发业务系统，NocoBase 提供权限、工作流等基础能力 |        24.8k | NocoBase 自有许可，附加条款；Studio 等商业功能需授权  | 构建和长期维护 CRM、采购、工单等业务系统        |
+| [Activepieces](https://github.com/activepieces/activepieces) | 可视化连接不同应用，通过工作流和 AI 自动执行任务                    |        23.7k | MIT（核心开源）；企业功能另需授权                     | 希望用较少代码实现跨工具自动化的团队            |
+| [Windmill](https://github.com/windmill-labs/windmill)        | API、工作流和内部操作界面                                           |        17.5k | AGPLv3 / Apache-2.0；官方发行版包含专有功能和使用限制 | 需要编写代码、开发内部自动化工具的技术团队      |
+| [Sim](https://github.com/simstudioai/sim)                    | 通过可视化方式构建、部署和编排 AI Agent                             |        29.4k | Apache-2.0                                            | 快速搭建并测试 AI Agent 工作流                  |
+| [Mastra](https://github.com/mastra-ai/mastra)                | 基于 TypeScript 开发 Agent、工具调用和工作流                        |        28.0k | Apache-2.0（核心）；企业功能另有许可                  | 使用 JavaScript / TypeScript 开发 AI 应用的团队 |
+| [MaxKB](https://github.com/1Panel-dev/MaxKB)                 | 基于企业知识库构建 AI 问答助手和 Agent                              |        23.2k | GPL-3.0；修改和分发需遵守相应条款                     | 快速部署企业内部知识问答助手                    |
+| [RAGFlow](https://github.com/infiniflow/ragflow)             | 解析复杂文档，提供带引用来源的 RAG 检索问答                         |        94.0k | Apache-2.0                                            | 处理合同、手册、扫描件等复杂文档                |
+| [LiteLLM](https://github.com/BerriAI/litellm)                | 统一模型 API，管理密钥、预算、路由和调用记录                        |          60k | 核心 MIT 许可；企业功能有单独授权                     | 多团队共用不同模型并管理调用成本                |
+| [MLflow](https://github.com/mlflow/mlflow)                   | 追踪、评测 AI 应用，管理提示词和模型版本                            |        28.8k | Apache-2.0                                            | 需要模型评测、实验管理和版本控制的 AI 工程团队  |
+| [Langfuse](https://github.com/langfuse/langfuse)             | 追踪 LLM 和 Agent 执行过程，分析质量、延迟与用量                    |        32.8k | MIT（核心）；`ee` 目录另有许可                        | 监控已上线的 AI 应用并持续优化效果              |
 
 ## 1. NocoBase：AI 驱动的企业业务系统开发平台
 
@@ -64,7 +64,7 @@ NocoBase 是一个面向企业业务系统的开源开发平台，可以借助 A
 
 [NocoBase Core](https://www.nocobase.com/core/) 提供数据模型、角色权限、工作流、审批、文件管理等企业应用常用的基础能力，Coding Agent 可以直接在这些能力之上开发具体业务功能。业务代码与 Core 分开维护，既能减少重复开发，也方便后续增加功能、调整业务逻辑和升级底座；下图中的 NocoITAM 便是基于 NocoBase Core 搭建，底层基础能力直接使用 Core。
 
-![image](https://static-docs.nocobase.com/)
+![image (1)-zrrhx7.png](https://static-docs.nocobase.com/image%20(1)-zrrhx7.png)
 
 **2. 支持 AI 开发与业务协作**
 
@@ -459,18 +459,6 @@ Langfuse 适合已经部署 AI Agent、客服助手或其他 LLM 应用，需要
 **GitHub Stars 可以作为参考，但真正选工具时，还是得回到企业自己的需求。一个项目只要能把需要的功能做好，后续也方便使用和维护，就值得花时间了解。**
 
 ⭐ 如果这篇文章对你有帮助，欢迎分享给正在探索企业 AI 应用的朋友。
-
-
-
-
-
-
-
-
-
-
-
-
 
 💡 延伸阅读：
 
