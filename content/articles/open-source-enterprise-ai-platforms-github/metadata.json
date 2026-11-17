@@ -8,7 +8,7 @@
   "description_ja": "セルフホストできるオープンソースの企業向け AI プロジェクトを 10 件厳選。NocoBase、Activepieces、Mastra、RAGFlow など、AI Agent 開発、ワークフロー自動化、ナレッジベース構築、業務システム開発、LLM 管理をカバーします。",
   "slug": "open-source-enterprise-ai-platforms-github",
   "publishedAt": "2026-11-16T16:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-07-09T12:38:10.829Z",
@@ -41,7 +41,23 @@
   ],
   "sub_tags": [],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-11-17T11:56:56.081Z",
+    "updatedAt": "2026-11-17T11:56:56.092Z",
+    "id": 2710,
+    "title": "demo 系列封面",
+    "filename": "demo 系列封面-mxu182.jpg",
+    "extname": ".jpg",
+    "size": 375983,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/demo%20%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-mxu182.jpg",
+    "preview": "https://static-docs.nocobase.com/demo%20%E7%B3%BB%E5%88%97%E5%B0%81%E9%9D%A2-mxu182.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
   "hideOnBlog": true,
   "hideDetailPage": false,
@@ -51,5 +67,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-11-17T11:43:37.316Z"
+  "updatedAt": "2026-11-17T11:57:04.568Z"
 }
