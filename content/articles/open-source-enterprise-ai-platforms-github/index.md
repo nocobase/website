@@ -56,7 +56,7 @@ NocoBase is an open-source development platform for enterprise business systems.
 
 NocoBase also offers [Studio](https://www.nocobase.com/studio/) for development with multiple agents working together, and ready-made [Solutions](https://www.nocobase.com/solutions/) such as [NocoCRM](https://www.nocobase.com/solution-crm/) and [NocoITAM](https://www.nocobase.com/solution-itam/). Together they cover the whole journey from building an application to maintaining and iterating on it.
 
-![The request page in NocoBase Studio: an agent working on a supplier scoring request](https://static-docs.nocobase.com/studio-en-req-now-20261111-normal-2x.webp)
+![The request page in NocoBase Studio: an agent working on a supplier scoring request](https://static-docs.nocobase.com/1-q9aft3.png)
 
 ### Highlights
 
@@ -64,13 +64,13 @@ NocoBase also offers [Studio](https://www.nocobase.com/studio/) for development 
 
 [NocoBase Core](https://www.nocobase.com/core/) provides the foundations enterprise applications usually need: data models, roles and permissions, workflows, approvals and file management. Coding agents build specific business features directly on top of them. Business code is maintained separately from Core, which cuts down on repeated work and makes it easier to add features, adjust business logic and upgrade the foundation later. NocoITAM, shown below, is built on NocoBase Core and uses Core directly for its underlying capabilities.
 
-![image (1)-0gu7au.png](https://static-docs.nocobase.com/image%20(1)-0gu7au.png)
+![image (1)-0gu7au.png](https://static-docs.nocobase.com/2-htv83c.png)
 
 **2. Supports AI development and business collaboration**
 
 You can use coding agents such as Claude Code and Codex to build and modify applications according to business requirements. The commercial [Studio](https://www.nocobase.com/studio/) can also organize multiple agents to handle development, testing and code review, while a human owner accepts the work and controls the release. Once an application is live, business agents can be connected to it. They query data and handle business tasks under the existing roles, permissions and approval rules, which takes repetitive daily work off people's plates.
 
-![The acceptance page in NocoBase Studio: the owner reviews the delivery report and decides whether to merge or send it back](https://static-docs.nocobase.com/studio-en-req-accept-20261111-normal-2x.webp)
+![The acceptance page in NocoBase Studio: the owner reviews the delivery report and decides whether to merge or send it back](https://static-docs.nocobase.com/3-ztk3a8.png)
 
 **3. Ready-made applications that stay customizable**
 
@@ -98,7 +98,7 @@ Activepieces is an open-source AI automation platform. Through a visual interfac
 
 Its main appeal is the low barrier to entry. Business users can complete most of the setup by dragging and dropping nodes, while developers extend special functionality with code.
 
-![A visual workflow in Activepieces: trigger and action nodes](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png)
+![A visual workflow in Activepieces: trigger and action nodes](https://static-docs.nocobase.com/Activepieces1-mqw4rp.png)
 
 ### Highlights
 
@@ -110,13 +110,13 @@ Drag and drop nodes to connect CRM, email, spreadsheets, databases and collabora
 
 Workflows can call large language models or AI agents to classify content, extract information, generate text and call tools. For steps that need human judgment, you can add an approval or confirmation stage so the workflow only continues once someone has signed off.
 
-![The agents list page in Activepieces](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png)
+![The agents list page in Activepieces](https://static-docs.nocobase.com/Activepieces2-qllce5.png)
 
 **3. Custom integrations and MCP support**
 
 Activepieces comes with many prebuilt integration components (Pieces) and also lets developers write custom ones in TypeScript to connect internal systems or unusual APIs. It supports MCP as well, so some of its tool capabilities can be exposed to other AI clients, extending how far the automations reach.
 
-![The AI capabilities page in Activepieces: web search, scraping and knowledge base embeddings](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png)
+![The AI capabilities page in Activepieces: web search, scraping and knowledge base embeddings](https://static-docs.nocobase.com/Activepieces3-9yu3d2.png)
 
 ### Use cases and teams
 
@@ -144,19 +144,19 @@ Windmill is a code-first platform for workflows and internal tools. It turns Pyt
 
 It supports Python, TypeScript, SQL, Bash and more, and publishes scripts as APIs, scheduled jobs or workflow steps. Windmill generates an input form from a script's parameters and keeps run history in one place, so existing code becomes easier for other systems and teammates to use.
 
-![The Windmill script editor: writing a TypeScript script and testing it directly](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-editor.png)
+![The Windmill script editor: writing a TypeScript script and testing it directly](https://static-docs.nocobase.com/Windmill1-i5ew03.png)
 
 **2. Visual workflows with AI integration**
 
 Several scripts, database queries and external APIs can be combined into one workflow, with branching, parallel execution, scheduled triggers and error-handling rules. Workflows can also include AI steps such as model calls, handling text analysis or information extraction while the code stays in control.
 
-![The Windmill flow editor: a flow with branches and an approval step](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-flow.png)
+![The Windmill flow editor: a flow with branches and an approval step](https://static-docs.nocobase.com/Windmill2-6eprgf.png)
 
 **3. Builds internal operation screens**
 
 Windmill's app editor builds forms, data tables, dashboards and action buttons on top of scripts and data sources. Business users query data or run backend jobs through the UI without touching the scripts, while developers keep maintaining the code underneath.
 
-![The Windmill app editor: an internal form app built from code](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-builder.png)
+![The Windmill app editor: an internal form app built from code](https://static-docs.nocobase.com/Windmill3-8jc764.png)
 
 ### Use cases and teams
 
@@ -180,7 +180,7 @@ Sim is an open-source platform for building AI agents and workflows through a vi
 
 Sim also provides testing, execution logs and deployment management, so a team can build and adjust agents on a single platform. For teams that want to validate an AI application idea quickly, it removes much of the work of building agent scaffolding from scratch.
 
-![The Sim platform: chat on the left, visual workflow editor on the right](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-platform.png)
+![The Sim platform: chat on the left, visual workflow editor on the right](https://static-docs.nocobase.com/Sim1-gnleq3.png)
 
 ### Highlights
 
@@ -192,13 +192,13 @@ By connecting nodes for models, prompts, tools and conditions, you define the ag
 
 It plugs into different large language models, databases, knowledge bases and third-party services, letting agents read data, retrieve material and call external tools. Teams combine these capabilities as the task requires, so agents handle multi-step work rather than plain chat.
 
-![The knowledge base list in Sim, used for agent retrieval](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-knowledge.png)
+![The knowledge base list in Sim, used for agent retrieval](https://static-docs.nocobase.com/Sim2-7aet0c.png)
 
 **3. Workflow testing and run management**
 
 Sim includes workflow testing, execution logs and run monitoring, with the input, output and status of each step. Developers can tell whether a problem lies in the model response, a tool call or the workflow configuration, and keep refining the existing flow.
 
-![Tables in Sim: structured data that agents can query](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-tables.png)
+![Tables in Sim: structured data that agents can query](https://static-docs.nocobase.com/Sim3-9bg006.png)
 
 ### Use cases and teams
 
@@ -220,7 +220,7 @@ Sim suits product teams, startups and developers who want to build, test and dep
 
 Mastra is an open-source TypeScript framework for building agents, tool calling and complex workflows inside existing applications. It provides memory, evaluation and run tracing, and developers define agent behavior in code and integrate it into their existing products or services. AI features become part of the application codebase. Teams already on a JavaScript or TypeScript stack keep the development, testing and deployment practices they know.
 
-![The knowledge graph view in Mastra Studio](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/knowledge/studio-tree-and-graph.png)
+![The knowledge graph view in Mastra Studio](https://static-docs.nocobase.com/Mastra1-kx3gi0.png)
 
 ### Highlights
 
@@ -232,13 +232,13 @@ Developers define an agent's model, instructions and callable tools in TypeScrip
 
 Mastra organizes several processing steps into workflows, covering sequential execution, branching and task flows that need explicit control. It also supports MCP, so agents can connect to external tools and services to read information or perform actions in existing systems.
 
-![Saving a production trace as a dataset entry in Mastra Studio](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/guides/build-an-eval-loop/production-trace-ground-truth.png)
+![Saving a production trace as a dataset entry in Mastra Studio](https://static-docs.nocobase.com/Mastra2-8umao3.png)
 
 **3. Agent memory, tracing and evaluation**
 
 Agent memory manages the context a conversation or task needs, and tracing records model calls and tool executions. Developers can also use the evaluation tools to compare different prompts, models and agent configurations, giving them evidence for the next round of adjustments.
 
-![Experiment comparison in Mastra Studio: agent output and scores across models](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/guides/build-an-eval-loop/model-experiment-comparison.png)
+![Experiment comparison in Mastra Studio: agent output and scores across models](https://static-docs.nocobase.com/Mastra3-n6j57v.png)
 
 ### Use cases and teams
 
@@ -268,19 +268,19 @@ MaxKB connects to different model services and supports private deployment, whic
 
 Import company documents of various types, then handle chunking, vectorization and retrieval settings so the AI answers from what is in the knowledge base. Teams manage document content and retrieval settings and keep the knowledge base up to date, so employees spend less time hunting through files.
 
-![Creating a knowledge base in MaxKB: choosing the embedding model and document type](https://docs.maxkb.pro/img/quick_start/creating_a_kb.png)
+![Creating a knowledge base in MaxKB: choosing the embedding model and document type](https://static-docs.nocobase.com/MaxKB1-65sx6u.png)
 
 **2. Builds AI agents and workflows**
 
 Beyond knowledge Q&A, MaxKB connects knowledge retrieval, model calls and external tools in a visual workflow to build agents that carry out multi-step tasks. Teams adjust the flow to their needs so the AI goes on to organize, analyze or act on the information after retrieving it.
 
-![A visual workflow in MaxKB: knowledge retrieval, branching and an AI chat node](https://maxkb.pro/images/overview.png)
+![A visual workflow in MaxKB: knowledge retrieval, branching and an AI chat node](https://static-docs.nocobase.com/MaxKB2-d91p99.png)
 
 **3. Multi-model access and application integration**
 
 It connects to both public cloud models and privately deployed ones, so a company can choose based on data requirements, cost and model quality. Finished AI applications can be embedded or exposed through an API to websites and internal systems, giving existing business tools access to knowledge Q&A.
 
-![Adding a model in MaxKB: connecting a provider such as OpenAI](https://docs.maxkb.pro/img/quick_start/adding_a_model.png)
+![Adding a model in MaxKB: connecting a provider such as OpenAI](https://static-docs.nocobase.com/MaxKB3-m4wk5p.png)
 
 ### Use cases and teams
 
@@ -310,19 +310,19 @@ RAGFlow also supports agents and visual workflows that combine knowledge retriev
 
 It supports PDF, Word, Excel, images, scanned files and more, extracting text, tables and layout structure. Teams can inspect and adjust the resulting chunks, reducing lost information or broken structure when extracting from complex documents.
 
-![Parsing results in RAGFlow: a table inside a PDF recognized as its own chunk](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/file_chunks.jpg)
+![Parsing results in RAGFlow: a table inside a PDF recognized as its own chunk](https://static-docs.nocobase.com/RAGFlow1-n4xn8m.png)
 
 **2. Hybrid retrieval with traceable citations**
 
 Vector search, keyword search and re-ranking work together to find the document content most relevant to a question. Answers can carry their citations, so users go back to the original material to verify, which matters where accuracy is critical.
 
-![Chat assistant settings in RAGFlow: choosing a model and linking datasets](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/configure_chat.jpg)
+![Chat assistant settings in RAGFlow: choosing a model and linking datasets](https://static-docs.nocobase.com/RAGFlow2-8flg4o.png)
 
 **3. Agent and workflow integration**
 
 RAGFlow combines knowledge bases, models and tool calls in a visual workflow so agents can run multi-step retrieval and analysis tasks. It also exposes an API, so document retrieval and Q&A can be plugged into existing business systems instead of doing everything inside RAGFlow.
 
-![The agent template list in RAGFlow](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/agent_template_list.jpg)
+![The agent template list in RAGFlow](https://static-docs.nocobase.com/RAGFlow3-ns808h.png)
 
 ### Use cases and teams
 
@@ -350,19 +350,19 @@ LiteLLM is an open-source LLM gateway. It connects to different model providers 
 
 LiteLLM standardizes different providers' calling conventions into an OpenAI-compatible interface, so developers reach many models through one API. Switching or adding models is handled mainly through provider and routing configuration in the gateway, with fewer changes to the applications above it.
 
-![The LiteLLM admin UI: managing models from several providers in one place](https://docs.litellm.ai/assets/ideal-img/ui_tour_models.a05de57.1280.png)
+![The LiteLLM admin UI: managing models from several providers in one place](https://static-docs.nocobase.com/LiteLLM1-593ivw.png)
 
 **2. Keys, budgets and cost management**
 
 Teams, users or applications get their own virtual keys, so the real API keys from model providers are never shared directly. Administrators set budget limits and review call volume and cost statistics to control model spend per project. Budget enforcement requires dependencies such as the database to be configured correctly.
 
-![The virtual keys page in LiteLLM: assigning keys per team and setting budgets](https://docs.litellm.ai/assets/ideal-img/ui_tour_keys.c36ccf4.1280.png)
+![The virtual keys page in LiteLLM: assigning keys per team and setting budgets](https://static-docs.nocobase.com/LiteLLM2-p1tstc.png)
 
 **3. Call reliability and monitoring**
 
 Retries, fallback models, load balancing and caching let requests be handled according to your configuration when a model service fails. LiteLLM also connects to external monitoring and logging tools, so teams review model calls, failures and performance in one place.
 
-![The usage page in LiteLLM: request counts, spend and token statistics](https://docs.litellm.ai/assets/ideal-img/ui_tour_usage.859eee9.1280.png)
+![The usage page in LiteLLM: request counts, spend and token statistics](https://static-docs.nocobase.com/LiteLLM3-oa1nyr.png)
 
 ### Use cases and teams
 
@@ -392,19 +392,19 @@ The point of MLflow is to make the development of models and AI applications rec
 
 MLflow records model requests, tool calls, results and related run information, so developers see exactly how an agent completed a task. Tracing is built on OpenTelemetry and supports many AI frameworks, which makes it easier to analyze execution issues across different applications in one place.
 
-![The MLflow trace view: the steps of an agent run](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-tracing.png)
+![The MLflow trace view: the steps of an agent run](https://static-docs.nocobase.com/MLflow1-5ai028.png)
 
 **2. Evaluates models, prompts and agents**
 
 With built-in and custom metrics, you compare how different models, prompts and agent configurations perform on test data. Teams keep prompt versions, test records and evaluation results, and check for quality changes before a model or application update ships.
 
-![MLflow GenAI evaluation: pass/fail per record by metric](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-llm-eval.png)
+![MLflow GenAI evaluation: pass/fail per record by metric](https://static-docs.nocobase.com/MLflow2-kqkejz.png)
 
 **3. Manages model versions and deployment**
 
 Model registry, experiment tracking and version management link each model version to its training and evaluation records. MLflow also provides an AI Gateway and an Agent Server for model access management and agent deployment, helping teams manage the path from development to production.
 
-![Comparing prompt versions in MLflow](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-prompt.png)
+![Comparing prompt versions in MLflow](https://static-docs.nocobase.com/MLflow3-v1akip.png)
 
 ### Use cases and teams
 
@@ -434,19 +434,19 @@ Langfuse also offers evaluation, prompt version management and usage analytics, 
 
 Langfuse records prompts, model responses, tool calls, execution time and token usage, and links the steps into one complete trace. Developers use it to pinpoint the cause of wrong answers, failed calls or slow responses instead of looking only at the final output.
 
-![The trace page in Langfuse: inputs and outputs for each step of a run](https://langfuse.com/images/docs/tracing-overview.png)
+![The trace page in Langfuse: inputs and outputs for each step of a run](https://static-docs.nocobase.com/Langfuse1-vl8h54.png)
 
 **2. Evaluates and experiments on AI applications**
 
 Datasets, experiments and evaluation features combine user feedback, human scoring and automated evaluation to compare models and prompts. Teams test before updating an AI application and keep finding quality issues from real usage records.
 
-![Score analytics in Langfuse: score distributions and trends across evaluators](https://langfuse.com/images/docs/score-analytics-full-dashboard.png)
+![Score analytics in Langfuse: score distributions and trends across evaluators](https://static-docs.nocobase.com/Langfuse2-u8rj29.png)
 
 **3. Prompt versions and cost management**
 
 Centralized prompt management stores versions and links prompts to actual runs, making it easy to compare results before and after a change. The platform also analyzes call volume, latency and cost, so teams see what different models or tasks consume.
 
-![Prompt management in Langfuse: version list and production label](https://langfuse.com/images/docs/prompt-management.png)
+![Prompt management in Langfuse: version list and production label](https://static-docs.nocobase.com/Langfuse3-0hvlie.png)
 
 ### Use cases and teams
 

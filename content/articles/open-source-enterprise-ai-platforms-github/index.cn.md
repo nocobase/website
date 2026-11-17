@@ -56,7 +56,7 @@ NocoBase 是一个面向企业业务系统的开源开发平台，可以借助 A
 
 此外，NocoBase 还提供用于多 Agent 协同开发的 [Studio](https://www.nocobase.com/studio/)，以及 [NocoCRM](https://www.nocobase.com/solution-crm/)、[NocoITAM](https://www.nocobase.com/solution-itam/) 等现成的 [Solutions](https://www.nocobase.com/solutions/)，支持企业从应用搭建到后续维护和持续迭代。
 
-![NocoBase Studio 中的需求页面：Agent 正在处理供应商评分需求](https://static-docs.nocobase.com/studio-en-req-now-20261111-normal-2x.webp)
+![1-q9aft3.png](https://static-docs.nocobase.com/1-q9aft3.png)
 
 ### 亮点能力
 
@@ -64,13 +64,13 @@ NocoBase 是一个面向企业业务系统的开源开发平台，可以借助 A
 
 [NocoBase Core](https://www.nocobase.com/core/) 提供数据模型、角色权限、工作流、审批、文件管理等企业应用常用的基础能力，Coding Agent 可以直接在这些能力之上开发具体业务功能。业务代码与 Core 分开维护，既能减少重复开发，也方便后续增加功能、调整业务逻辑和升级底座；下图中的 NocoITAM 便是基于 NocoBase Core 搭建，底层基础能力直接使用 Core。
 
-![image (1)-zrrhx7.png](https://static-docs.nocobase.com/image%20(1)-zrrhx7.png)
+![2-htv83c.png](https://static-docs.nocobase.com/2-htv83c.png)
 
 **2. 支持 AI 开发与业务协作**
 
 支持使用 Claude Code、Codex 等 Coding Agent 根据业务需求开发和修改应用，也可以通过商业版 [Studio](https://www.nocobase.com/studio/) 组织多个 Agent 完成开发、测试和代码评审，由负责人验收并控制发布。应用上线后，还可以接入业务 Agent，在已有的角色权限和审批规则下查询数据、处理业务任务，减少日常重复操作。
 
-![NocoBase Studio 的验收页面：负责人查看交付报告后决定合并或退回](https://static-docs.nocobase.com/studio-en-req-accept-20261111-normal-2x.webp)
+![3-ztk3a8.png](https://static-docs.nocobase.com/3-ztk3a8.png)
 
 **3. 提供现成应用并支持持续定制**
 
@@ -98,7 +98,7 @@ Activepieces 是一个开源的 AI 自动化平台，可以通过可视化界面
 
 Activepieces 的主要特点是搭建门槛较低，业务人员可以通过拖拽节点完成大部分配置，开发人员则可以通过代码扩展特殊功能。
 
-![Activepieces 可视化工作流：触发器与动作节点](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png)
+![Activepieces1-mqw4rp.png](https://static-docs.nocobase.com/Activepieces1-mqw4rp.png)
 
 ### 亮点能力
 
@@ -110,13 +110,13 @@ Activepieces 的主要特点是搭建门槛较低，业务人员可以通过拖�
 
 支持在工作流中调用大语言模型或 AI Agent，完成内容分类、信息提取、文本生成和工具调用等任务。对于需要人工判断的步骤，也可以设置审批或确认环节，让工作流在获得确认后继续执行。
 
-![Activepieces 的 Agent 列表页面](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png)
+![Activepieces2-qllce5.png](https://static-docs.nocobase.com/Activepieces2-qllce5.png)
 
 **3. 自定义集成与 MCP 支持**
 
 Activepieces 提供大量预置集成组件（Pieces），也允许开发人员使用 TypeScript 编写自定义组件，连接企业内部系统或特殊 API。它还支持 MCP，可以将部分工具能力提供给其他 AI 客户端调用，扩展自动化流程的使用范围。
 
-![Activepieces AI 能力配置页面：网页搜索、抓取与知识库嵌入](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png)
+![Activepieces3-9yu3d2.png](https://static-docs.nocobase.com/Activepieces3-9yu3d2.png)
 
 ### 使用场景与团队
 
@@ -144,19 +144,19 @@ Windmill 是一个以代码为核心的工作流和内部工具开发平台，�
 
 支持 Python、TypeScript、SQL、Bash 等多种语言，可以将脚本发布为 API、定时任务或工作流步骤。Windmill 会根据脚本参数生成输入界面，并集中管理执行记录，让已有代码更容易被其他系统和团队成员使用。
 
-![Windmill 脚本编辑器：编写 TypeScript 脚本并直接测试](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-editor.png)
+![Windmill1-i5ew03.png](https://static-docs.nocobase.com/Windmill1-i5ew03.png)
 
 **2. 可视化工作流与 AI 集成**
 
 可以将多个脚本、数据库查询和外部 API 组合成工作流，设置条件分支、并行执行、定时触发和错误处理规则。工作流也可以加入模型调用等 AI 步骤，在保留代码控制能力的同时处理文本分析、信息提取等任务。
 
-![Windmill 工作流编辑器：含分支与审批步骤的流程](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-flow.png)
+![Windmill2-6eprgf.png](https://static-docs.nocobase.com/Windmill2-6eprgf.png)
 
 **3. 构建内部业务操作界面**
 
 Windmill 提供应用编辑器，可以基于脚本和数据源创建表单、数据表格、看板和操作按钮。业务人员可以通过界面查询数据或执行后台任务，不需要直接接触脚本，开发人员则可以继续维护底层代码。
 
-![Windmill 应用编辑器：基于代码构建的内部表单应用](https://raw.githubusercontent.com/windmill-labs/windmill/main/imgs/windmill-builder.png)
+![Windmill3-8jc764.png](https://static-docs.nocobase.com/Windmill3-8jc764.png)
 
 ### 使用场景与团队
 
@@ -180,7 +180,7 @@ Sim 是一个开源的 AI Agent 和工作流开发平台，支持通过可视化
 
 Sim 也提供测试、执行日志和部署管理能力，方便团队在同一个平台中完成 Agent 的开发与调整。对于希望快速验证 AI 应用想法的团队，可以减少从零搭建 Agent 基础框架的工作。
 
-![Sim 平台界面：左侧对话，右侧可视化工作流编辑器](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-platform.png)
+![Sim1-gnleq3.png](https://static-docs.nocobase.com/Sim1-gnleq3.png)
 
 ### 亮点能力
 
@@ -192,13 +192,13 @@ Sim 也提供测试、执行日志和部署管理能力，方便团队在同一�
 
 支持接入不同的大语言模型、数据库、知识库及第三方服务，让 Agent 能够读取数据、检索资料和调用外部工具。团队可以根据任务需要组合这些能力，让 Agent 处理多个步骤，而不局限于普通的聊天问答。
 
-![Sim 中的知识库列表，供 Agent 检索](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-knowledge.png)
+![Sim2-7aet0c.png](https://static-docs.nocobase.com/Sim2-7aet0c.png)
 
 **3. 工作流测试与运行管理**
 
 Sim 提供工作流测试、执行日志和运行监控，可以查看各个步骤的输入、输出及执行情况。开发人员能够据此判断问题出在模型响应、工具调用还是工作流配置，并在现有流程上继续修改。
 
-![Sim 中的数据表：Agent 可查询的结构化数据](https://raw.githubusercontent.com/simstudioai/sim/main/apps/sim/public/static/readme-tables.png)
+![Sim3-9bg006.png](https://static-docs.nocobase.com/Sim3-9bg006.png)
 
 ### 使用场景与团队
 
@@ -220,7 +220,7 @@ Sim 适合希望快速构建、测试和部署 AI Agent 的产品团队、创业
 
 Mastra 是一个开源的 TypeScript AI 开发框架，用于在现有应用中构建 Agent、工具调用和复杂工作流。它提供记忆、评测、运行追踪等能力，开发人员可以通过代码定义 Agent 的行为，并将其集成到已有产品或服务中。他可以让 AI 功能直接成为应用代码的一部分。对于已经使用 JavaScript 或 TypeScript 技术栈的团队，可以继续沿用熟悉的开发、测试和部署方式。
 
-![Mastra Studio 中的知识图谱视图](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/knowledge/studio-tree-and-graph.png)
+![Mastra1-kx3gi0.png](https://static-docs.nocobase.com/Mastra1-kx3gi0.png)
 
 ### 亮点能力
 
@@ -232,13 +232,13 @@ Mastra 是一个开源的 TypeScript AI 开发框架，用于在现有应用中�
 
 Mastra 支持将多个处理步骤组织成工作流，包括顺序执行、条件分支以及需要明确控制的任务流程。它也支持 MCP，可以接入外部工具和服务，让 Agent 在已有系统中读取信息或执行操作。
 
-![Mastra Studio 中将生产环境追踪记录保存为数据集条目](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/guides/build-an-eval-loop/production-trace-ground-truth.png)
+![Mastra2-8umao3.png](https://static-docs.nocobase.com/Mastra2-8umao3.png)
 
 **3. Agent 记忆、追踪与评测**
 
 提供 Agent 记忆能力，用于管理对话和任务所需的上下文，并支持追踪模型调用与工具执行过程。开发人员还可以通过评测工具比较不同提示词、模型和 Agent 配置的效果，为后续调整提供依据。
 
-![Mastra Studio 中的实验对比：比较不同模型下 Agent 的输出与评分](https://raw.githubusercontent.com/mastra-ai/mastra/main/docs/static/img/guides/build-an-eval-loop/model-experiment-comparison.png)
+![Mastra3-n6j57v.png](https://static-docs.nocobase.com/Mastra3-n6j57v.png)
 
 ### 使用场景与团队
 
@@ -268,19 +268,19 @@ MaxKB 支持连接不同的模型服务，也提供私有部署方式，适合�
 
 支持导入不同类型的企业文档，并完成内容分段、向量化和检索配置，让 AI 根据知识库中的资料回答问题。团队可以管理文档内容和检索设置，持续更新知识库，减少员工在多个文件中反复查找信息的时间。
 
-![MaxKB 创建知识库：选择嵌入模型与文档类型](https://docs.maxkb.pro/img/quick_start/creating_a_kb.png)
+![MaxKB1-65sx6u.png](https://static-docs.nocobase.com/MaxKB1-65sx6u.png)
 
 **2. AI 智能体与工作流开发**
 
 除了知识问答，MaxKB 还支持通过可视化工作流连接知识检索、模型调用和外部工具，构建能够执行多个步骤的 AI 智能体。团队可以根据需求调整任务流程，让 AI 在检索资料之后继续完成信息整理、分析或其他操作。
 
-![MaxKB 可视化工作流：知识检索、条件分支与 AI 对话节点](https://maxkb.pro/images/overview.png)
+![MaxKB2-d91p99.png](https://static-docs.nocobase.com/MaxKB2-d91p99.png)
 
 **3. 多模型接入与应用集成**
 
 支持连接不同的公有云模型和私有化部署模型，企业可以根据数据要求、使用成本和模型效果选择方案。构建好的 AI 应用还可以通过嵌入或 API 方式接入网站和内部系统，让已有业务工具使用知识问答能力。
 
-![MaxKB 添加模型：接入 OpenAI 等模型供应商](https://docs.maxkb.pro/img/quick_start/adding_a_model.png)
+![MaxKB3-m4wk5p.png](https://static-docs.nocobase.com/MaxKB3-m4wk5p.png)
 
 ### 使用场景与团队
 
@@ -310,19 +310,19 @@ RAGFlow 也支持 Agent 和可视化工作流，可以将知识检索与模型�
 
 支持 PDF、Word、Excel、图片和扫描件等多种格式，可以解析文档中的文字、表格及版面结构。团队可以查看和调整解析后的分段结果，减少复杂文档在提取过程中出现的信息遗漏或结构错误。
 
-![RAGFlow 文档解析结果：PDF 中的表格被识别为独立分段](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/file_chunks.jpg)
+![RAGFlow1-n4xn8m.png](https://static-docs.nocobase.com/RAGFlow1-n4xn8m.png)
 
 **2. 混合检索与可追溯引用**
 
 结合向量检索、关键词检索和重排序等方式，帮助系统找到与问题更相关的文档内容。AI 回答可以附带对应的引用来源，方便用户返回原始资料核对结果，尤其适合对信息准确性要求较高的场景。
 
-![RAGFlow 聊天助手设置：选择模型并关联数据集](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/configure_chat.jpg)
+![RAGFlow2-8flg4o.png](https://static-docs.nocobase.com/RAGFlow2-8flg4o.png)
 
 **3. Agent 与工作流集成**
 
 RAGFlow 支持在可视化工作流中组合知识库、模型和工具调用，让 Agent 完成多步骤检索与分析任务。它也提供 API，可以将文档检索和问答能力接入现有业务系统，而不需要所有操作都在 RAGFlow 中完成。
 
-![RAGFlow 的 Agent 模板列表](https://raw.githubusercontent.com/infiniflow/ragflow-docs/main/images/agent_template_list.jpg)
+![RAGFlow3-ns808h.png](https://static-docs.nocobase.com/RAGFlow3-ns808h.png)
 
 ### 使用场景与团队
 
@@ -350,19 +350,19 @@ LiteLLM 是一个开源的 LLM 网关，可以通过统一的 API 接口连接�
 
 LiteLLM 将不同模型供应商的调用方式统一为兼容 OpenAI 的接口，开发人员可以通过同一套 API 访问多种模型。更换或增加模型时，主要通过网关配置管理供应商与路由策略，减少上层应用的改动。
 
-![LiteLLM 管理后台：统一管理多家供应商的模型](https://docs.litellm.ai/assets/ideal-img/ui_tour_models.a05de57.1280.png)
+![LiteLLM1-593ivw.png](https://static-docs.nocobase.com/LiteLLM1-593ivw.png)
 
 **2. 密钥、预算和成本管理**
 
 支持为不同团队、用户或应用分配虚拟密钥，不必直接共享模型供应商的真实 API Key。管理员可以配置预算限制、查看调用量和费用统计，控制不同项目的模型支出；预算执行需要正确配置数据库等依赖服务。
 
-![LiteLLM 虚拟密钥页面：按团队分配密钥并设置预算](https://docs.litellm.ai/assets/ideal-img/ui_tour_keys.c36ccf4.1280.png)
+![LiteLLM2-p1tstc.png](https://static-docs.nocobase.com/LiteLLM2-p1tstc.png)
 
 **3. 调用稳定性与运行监控**
 
 提供重试、备用模型、负载均衡和缓存等功能，可以在模型服务发生错误时按照配置调整请求处理方式。LiteLLM 也支持连接外部监控和日志工具，帮助团队集中检查模型调用、故障和性能表现。
 
-![LiteLLM 用量页面：请求数、费用与 Token 统计](https://docs.litellm.ai/assets/ideal-img/ui_tour_usage.859eee9.1280.png)
+![LiteLLM3-oa1nyr.png](https://static-docs.nocobase.com/LiteLLM3-oa1nyr.png)
 
 ### 使用场景与团队
 
@@ -392,19 +392,19 @@ MLflow 的重点是让模型与 AI 应用的开发过程有记录、可比较，
 
 MLflow 可以记录模型请求、工具调用、执行结果和相关运行信息，帮助开发人员查看 Agent 完成任务的具体过程。它基于 OpenTelemetry 提供追踪能力，并支持多种 AI 框架，方便统一分析不同应用中的执行问题。
 
-![MLflow 追踪视图：查看 Agent 执行过程中的各个步骤](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-tracing.png)
+![MLflow1-5ai028.png](https://static-docs.nocobase.com/MLflow1-5ai028.png)
 
 **2. 模型、提示词和 Agent 评测**
 
 支持内置及自定义评测指标，可以通过测试数据比较不同模型、提示词和 Agent 配置的表现。开发团队还可以保留提示词版本、测试记录和评测结果，在模型或应用更新前检查质量变化。
 
-![MLflow GenAI 评测：按评测指标查看每条记录的通过情况](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-llm-eval.png)
+![MLflow2-kqkejz.png](https://static-docs.nocobase.com/MLflow2-kqkejz.png)
 
 **3. 模型版本与部署管理**
 
 提供模型注册、实验跟踪和版本管理能力，将模型版本与训练、评测记录关联起来。MLflow 也提供 AI Gateway 和 Agent Server 等能力，支持模型访问管理和 Agent 部署，方便团队管理从开发到运行的过程。
 
-![MLflow 提示词版本对比](https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/readme-prompt.png)
+![MLflow3-v1akip.png](https://static-docs.nocobase.com/MLflow3-v1akip.png)
 
 ### 使用场景与团队
 
@@ -434,19 +434,19 @@ Langfuse 还提供评测、提示词版本管理和使用情况分析能力，�
 
 Langfuse 可以记录提示词、模型响应、工具调用、执行时间和 Token 用量，并将相关步骤关联成完整的执行记录。开发人员可以通过追踪信息定位回答错误、调用失败或响应缓慢的原因，而不只查看最终输出。
 
-![Langfuse 追踪页面：查看一次执行中各步骤的输入与输出](https://langfuse.com/images/docs/tracing-overview.png)
+![Langfuse1-vl8h54.png](https://static-docs.nocobase.com/Langfuse1-vl8h54.png)
 
 **2. AI 应用评测与实验**
 
 支持测试数据集、实验和评测功能，可以结合用户反馈、人工评分或自动评测结果，比较不同模型和提示词的效果。团队可以在更新 AI 应用前进行测试，也可以根据真实使用记录持续发现质量问题。
 
-![Langfuse 评分分析：比较不同评测器的得分分布与趋势](https://langfuse.com/images/docs/score-analytics-full-dashboard.png)
+![Langfuse2-u8rj29.png](https://static-docs.nocobase.com/Langfuse2-u8rj29.png)
 
 **3. 提示词版本与成本管理**
 
 Langfuse 提供集中式提示词管理，可以保存不同版本，并将提示词与实际运行记录关联，方便比较修改前后的效果。平台也提供调用量、延迟和费用分析，帮助团队了解不同模型或任务的资源消耗。
 
-![Langfuse 提示词管理：版本列表与生产环境标签](https://langfuse.com/images/docs/prompt-management.png)
+![Langfuse3-0hvlie.png](https://static-docs.nocobase.com/Langfuse3-0hvlie.png)
 
 ### 使用场景与团队
 
