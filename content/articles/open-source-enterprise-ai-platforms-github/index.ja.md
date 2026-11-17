@@ -98,7 +98,7 @@ Activepieces は、オープンソースの AI 自動化プラットフォーム
 
 Activepieces の特徴は導入のハードルが低いことです。業務担当者はノードをドラッグ＆ドロップするだけで設定の大部分を完了でき、開発者はコードで特殊な機能を拡張できます。
 
-![Activepieces のビジュアルワークフロー：トリガーとアクションのノード](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png?fit=max&auto=format&n=iL5rAezyhfVokrkv&q=85&s=afd84918c34ec13e73ac8f938237fedc)
+![Activepieces のビジュアルワークフロー：トリガーとアクションのノード](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png)
 
 ### 注目の機能
 
@@ -110,13 +110,13 @@ Activepieces の特徴は導入のハードルが低いことです。業務担�
 
 ワークフローの中で大規模言語モデルや AI Agent を呼び出し、コンテンツ分類、情報抽出、テキスト生成、ツール呼び出しなどのタスクを実行できます。人の判断が必要なステップには承認や確認の工程を設け、確認が取れてからワークフローを続行させることも可能です。
 
-![Activepieces の Agent 一覧画面](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png?fit=max&auto=format&n=39O5zgDWjZRx93_N&q=85&s=5b147e109d7a347d0c5d281c60f3d18a)
+![Activepieces の Agent 一覧画面](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png)
 
 **3. カスタム連携と MCP 対応**
 
 Activepieces は多数のビルトイン連携コンポーネント（Pieces）を提供するほか、開発者が TypeScript でカスタムコンポーネントを作成し、社内システムや特殊な API に接続することもできます。MCP にも対応しており、一部のツール機能を他の AI クライアントから呼び出せるようにして、自動化の適用範囲を広げられます。
 
-![Activepieces の AI 機能設定画面：Web 検索、スクレイピング、ナレッジベース埋め込み](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png?fit=max&auto=format&n=H0ldfKIBwECfz9DC&q=85&s=94bd73bb2cd6278b440faadbd5507595)
+![Activepieces の AI 機能設定画面：Web 検索、スクレイピング、ナレッジベース埋め込み](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png)
 
 ### 利用シーンと向いているチーム
 

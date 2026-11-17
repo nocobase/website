@@ -98,7 +98,7 @@ Activepieces 是一个开源的 AI 自动化平台，可以通过可视化界面
 
 Activepieces 的主要特点是搭建门槛较低，业务人员可以通过拖拽节点完成大部分配置，开发人员则可以通过代码扩展特殊功能。
 
-![Activepieces 可视化工作流：触发器与动作节点](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png?fit=max&auto=format&n=iL5rAezyhfVokrkv&q=85&s=afd84918c34ec13e73ac8f938237fedc)
+![Activepieces 可视化工作流：触发器与动作节点](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png)
 
 ### 亮点能力
 
@@ -110,13 +110,13 @@ Activepieces 的主要特点是搭建门槛较低，业务人员可以通过拖�
 
 支持在工作流中调用大语言模型或 AI Agent，完成内容分类、信息提取、文本生成和工具调用等任务。对于需要人工判断的步骤，也可以设置审批或确认环节，让工作流在获得确认后继续执行。
 
-![Activepieces 的 Agent 列表页面](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png?fit=max&auto=format&n=39O5zgDWjZRx93_N&q=85&s=5b147e109d7a347d0c5d281c60f3d18a)
+![Activepieces 的 Agent 列表页面](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png)
 
 **3. 自定义集成与 MCP 支持**
 
 Activepieces 提供大量预置集成组件（Pieces），也允许开发人员使用 TypeScript 编写自定义组件，连接企业内部系统或特殊 API。它还支持 MCP，可以将部分工具能力提供给其他 AI 客户端调用，扩展自动化流程的使用范围。
 
-![Activepieces AI 能力配置页面：网页搜索、抓取与知识库嵌入](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png?fit=max&auto=format&n=H0ldfKIBwECfz9DC&q=85&s=94bd73bb2cd6278b440faadbd5507595)
+![Activepieces AI 能力配置页面：网页搜索、抓取与知识库嵌入](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png)
 
 ### 使用场景与团队
 

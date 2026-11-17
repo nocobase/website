@@ -98,7 +98,7 @@ Activepieces is an open-source AI automation platform. Through a visual interfac
 
 Its main appeal is the low barrier to entry. Business users can complete most of the setup by dragging and dropping nodes, while developers extend special functionality with code.
 
-![A visual workflow in Activepieces: trigger and action nodes](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png?fit=max&auto=format&n=iL5rAezyhfVokrkv&q=85&s=afd84918c34ec13e73ac8f938237fedc)
+![A visual workflow in Activepieces: trigger and action nodes](https://mintcdn.com/activepieces/iL5rAezyhfVokrkv/images/actions-and-triggers.png)
 
 ### Highlights
 
@@ -110,13 +110,13 @@ Drag and drop nodes to connect CRM, email, spreadsheets, databases and collabora
 
 Workflows can call large language models or AI agents to classify content, extract information, generate text and call tools. For steps that need human judgment, you can add an approval or confirmation stage so the workflow only continues once someone has signed off.
 
-![The agents list page in Activepieces](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png?fit=max&auto=format&n=39O5zgDWjZRx93_N&q=85&s=5b147e109d7a347d0c5d281c60f3d18a)
+![The agents list page in Activepieces](https://mintcdn.com/activepieces/39O5zgDWjZRx93_N/resources/screenshots/agents-list.png)
 
 **3. Custom integrations and MCP support**
 
 Activepieces comes with many prebuilt integration components (Pieces) and also lets developers write custom ones in TypeScript to connect internal systems or unusual APIs. It supports MCP as well, so some of its tool capabilities can be exposed to other AI clients, extending how far the automations reach.
 
-![The AI capabilities page in Activepieces: web search, scraping and knowledge base embeddings](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png?fit=max&auto=format&n=H0ldfKIBwECfz9DC&q=85&s=94bd73bb2cd6278b440faadbd5507595)
+![The AI capabilities page in Activepieces: web search, scraping and knowledge base embeddings](https://mintcdn.com/activepieces/H0ldfKIBwECfz9DC/resources/screenshots/ai-center-capabilities.png)
 
 ### Use cases and teams
 
@@ -472,3 +472,4 @@ We have covered many popular open-source AI platforms before. Some of them now h
 - [Top 8 Open Source AI Assistant Tools by GitHub Stars](https://www.nocobase.com/en/blog/top-open-source-ai-assistant-tools-github-stars/)
 - [NocoBase 3 docs: How a request gets done](https://docs.nocobase.com/en/studio/intro/how-a-request-gets-done/)
 - [NocoBase Core documentation](https://docs.nocobase.com/en/core)
+-
