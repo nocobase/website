@@ -1,0 +1,14 @@
+{
+  "name": "website-deploy-cdn",
+  "private": true,
+  "type": "module",
+  "description": "Switches the CDN to a freshly uploaded site version. Run by the publish job of .github/workflows/site.yml.",
+  "scripts": {
+    "test": "node --test versions.test.mjs"
+  },
+  "dependencies": {
+    "@alicloud/cdn20180510": "4.2.2",
+    "@alicloud/openapi-client": "0.4.15",
+    "ali-oss": "6.23.0"
+  }
+}

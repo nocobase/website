@@ -1,0 +1,294 @@
+name: Site
+
+# Builds the site (Astro, static output) on every pull request and push to `main`, and publishes a push to `main` to
+# the site's OSS bucket, served by the CDN at nocode.nocobase.com.
+#
+# This repository is public, so the jobs are split by trust:
+#
+# - `build` generates the site with `yarn astro build` on any pull request, including one from a fork. It is triggered
+#   by `pull_request`, never `pull_request_target`, references no secret, and its token can only read.
+# - `publish` runs only for `main` in the `production` environment. It downloads the built site as an artifact and runs
+#   no code from the repository except `scripts/deploy-cdn`. The Aliyun keys appear only in the `env` of its `Publish`
+#   step.
+#
+# Publishing works like www.nocobase.com's (nocobase/website-v3, `.github/workflows/site.yml`): the build is uploaded to
+# its own timestamp directory in the bucket, then the back-to-origin rewrite rules of every domain in
+# `SITE_CDN_DOMAINS` are pointed at it, the CDN cache is refreshed and all but the newest three versions are removed
+# (see `scripts/deploy-cdn/`). To roll back, point every back-to-origin rewrite rule of each domain at an older version
+# directory in the CDN console.
+#
+# The redirects are not part of the build: they are the CDN's EdgeScript, `cdn/redirects.es`, pasted into the console.
+#
+# Configuration: every value is a secret of the `production` environment, so only the publish job can read it:
+# `ALI_ACCESS_KEY_ID`, `ALI_ACCESS_KEY_SECRET`, `ALI_OSS_REGION` (e.g. `cn-beijing`), `SITE_OSS_BUCKET` and,
+# optionally, `SITE_CDN_DOMAINS` (whitespace- or comma-separated; a secret that does not exist reads as empty).
+#
+# The schedule rebuilds once a day although nothing was pushed: which blog posts moved to www.nocobase.com is decided
+# at build time (src/utils/moved-to-www.ts), and a post edited shortly before a build stays here until the next one.
+#
+# - `notify` posts a red card to the release Feishu group when `build` or `publish` fails for `main`. It checks out and
+#   runs no repository code. The webhook is the repository secret `RELEASE_RESULT_FEISHU_WEBHOOK_URL` (the same name as
+#   in nocobase/nocobase); when it is not set, the job only prints a warning.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Site build
+    if: github.event_name != 'schedule' || github.repository == 'nocobase/website'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # A newer push to the same branch makes this build pointless; the publish job is never cancelled (see below).
+    concurrency:
+      group: site-build-${{ github.ref }}
+      cancel-in-progress: true
+    env:
+      ASTRO_TELEMETRY_DISABLED: 1
+      # Dates on the pages are formatted in the build's time zone; UTC is what the site was always rendered in.
+      TZ: UTC
+      # The content is read from content/, which the CMS commits to this repository.
+      USE_LOCAL_CONTENT: 'true'
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Yarn's version comes from the `packageManager` field of package.json.
+      - name: Install the build dependencies
+        run: |
+          corepack enable
+          yarn install --immutable
+
+      - name: Build the site
+        run: yarn astro build
+
+      - name: Check the build
+        run: node scripts/check-dist.mjs dist
+
+      # Pure logic of the publishing script (argument parsing, which versions a cleanup removes); needs no dependency.
+      - name: Test the publishing script
+        run: node --test scripts/deploy-cdn/versions.test.mjs
+
+      - name: Upload the site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist
+          if-no-files-found: error
+          retention-days: 7
+
+  # Two publishes never overlap, since each rewrites the same CDN rules, and a publish is never cancelled midway: a rule
+  # pointing at a directory another run's cleanup deleted would take the site down.
+  publish:
+    name: Site publish
+    needs: build
+    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: production
+    concurrency:
+      group: site-publish
+      cancel-in-progress: false
+    steps:
+      # An older build must never switch the rules back over a newer one. Every push to `main` builds and publishes, so
+      # a run whose commit is no longer the head of `main` leaves the publishing to the run of the newer commit.
+      - name: Compare with the head of the branch
+        id: head
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          head=$(gh api "repos/${REPOSITORY}/commits/main" --jq .sha)
+          if [ "$head" = "$HEAD_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::main has moved on to ${head}, so the run of that commit publishes instead of this one."
+          fi
+
+      # Only the publishing script, from the commit that was built.
+      - name: Check out the publishing script
+        if: ${{ steps.head.outputs.current == 'true' }}
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: scripts/deploy-cdn
+
+      - name: Download the site
+        if: ${{ steps.head.outputs.current == 'true' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: dist
+
+      - name: Set up Node.js
+        if: ${{ steps.head.outputs.current == 'true' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install the publishing tools
+        if: ${{ steps.head.outputs.current == 'true' }}
+        run: |
+          set -euo pipefail
+          curl -fsSL -o "$RUNNER_TEMP/ossutil.zip" \
+            https://gosspublic.alicdn.com/ossutil/v2/2.2.2/ossutil-2.2.2-linux-amd64.zip
+          unzip -o -q "$RUNNER_TEMP/ossutil.zip" -d "$RUNNER_TEMP/ossutil"
+          sudo mv "$RUNNER_TEMP/ossutil/ossutil-2.2.2-linux-amd64/ossutil" /usr/local/bin/ossutil
+          sudo chmod 755 /usr/local/bin/ossutil
+          npm ci --ignore-scripts --prefix scripts/deploy-cdn
+
+      - name: Publish
+        if: ${{ steps.head.outputs.current == 'true' }}
+        env:
+          ALI_ACCESS_KEY_ID: ${{ secrets.ALI_ACCESS_KEY_ID }}
+          ALI_ACCESS_KEY_SECRET: ${{ secrets.ALI_ACCESS_KEY_SECRET }}
+          ALI_OSS_REGION: ${{ secrets.ALI_OSS_REGION }}
+          ALI_OSS_BUCKET: ${{ secrets.SITE_OSS_BUCKET }}
+          ALI_CDN_DOMAINS: ${{ secrets.SITE_CDN_DOMAINS }}
+          # ossutil reads the credentials from these names.
+          OSS_ACCESS_KEY_ID: ${{ secrets.ALI_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.ALI_ACCESS_KEY_SECRET }}
+        run: |
+          set -euo pipefail
+
+          for name in ALI_ACCESS_KEY_ID ALI_ACCESS_KEY_SECRET ALI_OSS_REGION ALI_OSS_BUCKET; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is not set. Configure it in the production environment before publishing."
+              exit 1
+            fi
+          done
+
+          # ossutil takes the bare region id, `cn-beijing`; the SDK the publish script uses adds the `oss-` prefix itself.
+          REGION="${ALI_OSS_REGION#oss-}"
+
+          # Asia/Shanghai so the directory name reads as the local time of the people who deploy it.
+          TIMESTAMP="$(TZ=Asia/Shanghai date +%Y%m%d%H%M%S)"
+          echo "Uploading to version directory $TIMESTAMP/"
+
+          ossutil cp -r dist/ "oss://$ALI_OSS_BUCKET/$TIMESTAMP/" \
+            -f -j 64 --region "$REGION"
+
+          # The bucket's static-website error document is read from the root, not from inside a version directory, so
+          # `404.html` is uploaded there as well. It is served for a missing path at any depth and uses root paths only.
+          ossutil cp dist/404.html "oss://$ALI_OSS_BUCKET/404.html" \
+            -f --region "$REGION"
+
+          # The CDN domains are optional. Without them nothing serves the bucket yet, so there is nothing to switch or
+          # refresh, but old versions are still removed so the bucket keeps the same history it will keep once served.
+          if [ -z "${ALI_CDN_DOMAINS//[[:space:],]/}" ]; then
+            ALI_CDN_DOMAINS='' node scripts/deploy-cdn/deploy-cdn.mjs --timestamp "$TIMESTAMP" --keep 2 --cleanup-only
+            echo "::notice::SITE_CDN_DOMAINS is not set, so no CDN was switched to version $TIMESTAMP and no cache was refreshed."
+            {
+              echo "### Site uploaded"
+              echo
+              echo "Version \`$TIMESTAMP\` is in the bucket (\`SITE_OSS_BUCKET\`). No CDN domain is configured (\`SITE_CDN_DOMAINS\`), so nothing was switched to it and no cache was refreshed. The newest 3 version directories are kept."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # Keeps two older versions besides this one to roll back to.
+          node scripts/deploy-cdn/deploy-cdn.mjs --timestamp "$TIMESTAMP" --keep 2
+
+          {
+            echo "### Site published"
+            echo
+            echo "Version \`$TIMESTAMP\` is live on every domain in \`SITE_CDN_DOMAINS\`. The newest 3 version directories are kept."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  notify:
+    name: Notify failure
+    needs: [build, publish]
+    if: ${{ always() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && (needs.build.result == 'failure' || needs.publish.result == 'failure') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - name: Send a Feishu card
+        env:
+          WEBHOOK_URL: ${{ secrets.RELEASE_RESULT_FEISHU_WEBHOOK_URL }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          REPOSITORY: ${{ github.repository }}
+          ACTOR: ${{ github.actor }}
+          SHA: ${{ github.sha }}
+          # Only a push carries the head commit; a manual or scheduled run shows the SHA alone.
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          COMMIT_AUTHOR: ${{ github.event.head_commit.author.name }}
+          WORKFLOW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ -z "$WEBHOOK_URL" ]; then
+            echo "::warning::RELEASE_RESULT_FEISHU_WEBHOOK_URL is not set, so no Feishu notification was sent."
+            exit 0
+          fi
+
+          SUBJECT="$(printf '%s' "$COMMIT_MESSAGE" | head -n 1)"
+          COMMIT_LINE="[\`${SHA:0:8}\`]($COMMIT_URL)${SUBJECT:+ $SUBJECT}"
+          if [ "$BUILD_RESULT" = "failure" ]; then
+            TITLE="NocoBase 旧官网构建失败"
+            STATUS_TEXT="未发布，线上保持上一版本"
+          else
+            TITLE="NocoBase 旧官网发布失败"
+            STATUS_TEXT="需要人工处理"
+          fi
+          CONTENT="**提交**：$COMMIT_LINE
+          **作者**：${COMMIT_AUTHOR:-$ACTOR}"
+          if [ "$BUILD_RESULT" != "failure" ]; then
+            CONTENT="$CONTENT
+
+          构建成功，但上传或切换 CDN 失败，CDN 可能仍指向上一版本。"
+          fi
+          # Same footer as feishu-notify.sh. The colon sits outside `**` so the stricter Markdown of card 2.0 keeps the bold.
+          FOOTER="**状态**：❌ $STATUS_TEXT
+          **时间**：$(TZ=Asia/Shanghai date +"%Y-%m-%d %H:%M:%S")
+          **触发者**：$ACTOR
+          **仓库**：$REPOSITORY"
+
+          PAYLOAD=$(jq -n --arg title "$TITLE" --arg content "$CONTENT" --arg footer "$FOOTER" --arg url "$WORKFLOW_URL" '{
+            msg_type: "interactive",
+            card: {
+              schema: "2.0",
+              header: { title: { tag: "plain_text", content: $title }, template: "red" },
+              body: { elements: [
+                { tag: "markdown", content: $content },
+                { tag: "hr" },
+                { tag: "markdown", content: $footer },
+                { tag: "column_set", horizontal_spacing: "8px", columns: [
+                  { tag: "column", width: "auto", elements: [
+                    { tag: "button", text: { tag: "plain_text", content: "查看构建详情" }, type: "primary", width: "default",
+                      behaviors: [ { type: "open_url", default_url: $url } ] }
+                  ] }
+                ] }
+              ] }
+            }
+          }')
+
+          RESPONSE="$(mktemp)"
+          HTTP_CODE=$(curl -sS -o "$RESPONSE" -w "%{http_code}" -X POST "$WEBHOOK_URL" -H 'Content-Type: application/json' -d "$PAYLOAD")
+          # Feishu answers a rejected card with HTTP 200 and a non-zero code.
+          CODE=$(jq -r '.code // 0' < "$RESPONSE" 2>/dev/null || echo 0)
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ] && [ "$CODE" = "0" ]; then
+            echo "Feishu notification sent (HTTP $HTTP_CODE)."
+          else
+            echo "::error::Failed to send the Feishu notification (HTTP $HTTP_CODE): $(cat "$RESPONSE")"
+            exit 1
+          fi

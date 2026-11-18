@@ -5,6 +5,10 @@ import Pagination from "../../../../../../components/Pagination.astro";
 import Layout from "../../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../../utils";
 import BlogSidebar from "../../../../../../components/BlogSidebar.astro";
+import { noPaths } from "../../../../../../utils/static-paths";
+
+// The blog exists in en/cn/ja only: no page is built, so every URL here is a 404 (see utils/static-paths).
+export const getStaticPaths = noPaths;
 
 const { slug, page: pageParam } = Astro.params;
 // Convert page parameter to number

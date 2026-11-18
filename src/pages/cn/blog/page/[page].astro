@@ -6,6 +6,9 @@ import Tags from "../../../../components/Tags.astro";
 import Layout from "../../../../layouts/Layout.astro";
 import { getPage, listArticleTags, listArticles, url } from "../../../../utils";
 import BlogSidebar from "../../../../components/BlogSidebar.astro";
+import { blogPagePaths } from "../../../../utils/static-paths";
+
+export const getStaticPaths = blogPagePaths;
 
 const pageData = await getPage("blog");
 

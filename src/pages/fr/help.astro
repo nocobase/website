@@ -29,7 +29,7 @@ const helpCenterData = await listHelpCenterItems({ pageSize: 100 });
                         <hr class="mb-4"/>
 
                         <div class="row g-4">
-                            {group.children.map(card => {
+                            {(group.children || []).map(card => {
                                 // Dynamically set card column width
                                 let colClasses = "col-12"; // Default width
 

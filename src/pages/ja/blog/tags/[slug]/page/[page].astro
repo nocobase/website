@@ -5,6 +5,9 @@ import Pagination from "../../../../../../components/Pagination.astro";
 import Layout from "../../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../../utils";
 import BlogSidebar from "../../../../../../components/BlogSidebar.astro";
+import { tagPagePaths } from "../../../../../../utils/static-paths";
+
+export const getStaticPaths = tagPagePaths;
 
 const { slug, page: pageParam } = Astro.params;
 // Convert page parameter to number
