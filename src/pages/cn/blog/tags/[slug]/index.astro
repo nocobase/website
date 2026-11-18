@@ -5,6 +5,9 @@ import Pagination from "../../../../../components/Pagination.astro";
 import Layout from "../../../../../layouts/Layout.astro";
 import { getArticleTag, listArticles, url } from "../../../../../utils";
 import BlogSidebar from "../../../../../components/BlogSidebar.astro";
+import { tagPaths } from "../../../../../utils/static-paths";
+
+export const getStaticPaths = tagPaths;
 
 const { slug } = Astro.params;
 const tag = await getArticleTag(slug);

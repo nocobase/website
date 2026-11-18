@@ -8,6 +8,10 @@ import { getLightSolution, listLightSolutions, url } from "../../../utils";
 import { renderPromptSection } from "../../../utils/light-solution-prompt";
 import JsonLd from "../../../components/JsonLd.astro";
 import { generateBlueprintSchema } from "../../../seo/schema";
+import { noPaths } from "../../../utils/static-paths";
+
+// AI Blueprints are retired: no page is built, so every URL here is a 404 (see utils/static-paths).
+export const getStaticPaths = noPaths;
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getLightSolution(slug, "cn");

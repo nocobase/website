@@ -438,8 +438,7 @@ const tabs = [
       }
       
       try {
-        const timestamp = new Date().getTime();
-        const url = `/api/release-notes?milestoneOnly=true&pageSize=50&lang=en&_t=${timestamp}`;
+        const url = `/api/release-notes/en/milestones.json`;
         
         const response = await fetch(url);
         if (!response.ok) {
@@ -493,8 +492,7 @@ const tabs = [
       
       try {
         const nextPage = currentPage + 1;
-        const timestamp = new Date().getTime();
-        const url = `/api/release-notes?page=${nextPage}&pageSize=${pageSize}&lang=en&_t=${timestamp}`;
+        const url = `/api/release-notes/en/page-${nextPage}.json`;
         
         const response = await fetch(url);
               if (!response.ok) {

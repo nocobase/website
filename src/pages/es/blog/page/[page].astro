@@ -6,6 +6,10 @@ import Tags from "../../../../components/Tags.astro";
 import Layout from "../../../../layouts/Layout.astro";
 import { getPage, listArticleTags, listArticles, url } from "../../../../utils";
 import BlogSidebar from "../../../../components/BlogSidebar.astro";
+import { noPaths } from "../../../../utils/static-paths";
+
+// The blog exists in en/cn/ja only: no page is built, so every URL here is a 404 (see utils/static-paths).
+export const getStaticPaths = noPaths;
 
 const pageData = await getPage("blog");
 

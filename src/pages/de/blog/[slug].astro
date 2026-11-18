@@ -8,6 +8,10 @@ import { getArticle, url } from "../../../utils";
 import QRCode from 'qrcode';
 import ShareIcons from "../../../components/ShareIcons.astro";
 import ImageZoom from "../../../components/ImageZoom.astro";
+import { noPaths } from "../../../utils/static-paths";
+
+// The blog exists in en/cn/ja only: no page is built, so every URL here is a 404 (see utils/static-paths).
+export const getStaticPaths = noPaths;
 
 const { slug } = Astro.params;
 const { data, headings, html } = await getArticle(slug);
