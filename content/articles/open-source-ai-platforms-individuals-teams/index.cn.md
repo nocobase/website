@@ -1,7 +1,6 @@
 最近在 Hacker News 上，我们看到不少关于自托管开源 AI 平台的讨论。
 
-有意思的是，虽然大家都在寻找 AI Platform，但实际需求却很不一样。有人只想在自己的电脑上运行 AI 模型，有人希望 Agent 能连接 Slack 和内部系统，帮团队处理日常工作，还有人已经开始考虑如何同时运行多个 Agent，并控制使用成本。  
-其中几条讨论很有代表性：
+有意思的是，虽然大家都在寻找 AI Platform，但实际需求却很不一样。有人只想在自己的电脑上运行 AI 模型，有人希望 Agent 能连接 Slack 和内部系统，帮团队处理日常工作，还有人已经开始考虑如何同时运行多个 Agent，并控制使用成本。其中几条讨论很有代表性：
 
 - [Ask HN: What Does Your Self-Hosted LLM Stack Look Like in 2025?](https://news.ycombinator.com/item?id=44187275)：有人想知道本地模型、运行工具和硬件应该如何搭配，才能搭建一套真正可用的自托管 AI 环境。
 
@@ -27,50 +26,39 @@
 
 接下来，就一起看看这 24 个项目中，有哪些值得尝试吧。
 
-
-
-
-
 ---
 
-💬 NocoBase 是企业用 AI 开发和持续改进业务系统的开源平台：Agent 写业务部分，NocoBase 提供底座和工作流程，人确定目标、作出决定。本栏目讨论 AI 与业务系统的结合，也包括像这篇一样的开源项目盘点。
+💬 嗨！你正在阅读 NocoBase 博客。NocoBase 是一个面向企业应用开发的开源平台，让 AI 参与业务系统的构建和持续改进。欢迎在 [GitHub](https://github.com/nocobase/nocobase) 上了解我们。
 
 ---
 
 
-
-
-
-
-
-
-
-| 项目            | 适合谁   | 做什么                            | Stars  |
-| ------------- | ----- | ------------------------------ | ------ |
+| 项目          | 适合谁     | 做什么                                            | Stars  |
+| ------------- | ---------- | ------------------------------------------------- | ------ |
 | NocoBase      | 企业和个人 | 用 Agent 开发并持续改进 CRM、采购、工单等业务系统 | 25.0k  |
-| Dify          | 企业和个人 | 可视化编排 Agent、工作流与 RAG 应用        | 161.4k |
-| Langflow      | 企业和个人 | 拖拽式搭建 Agent 和 RAG 流程           | 156.7k |
-| n8n           | 企业和个人 | 自托管工作流自动化，带 AI 节点              | 210.9k |
-| LobeHub       | 企业和个人 | 从个人聊天界面到团队 super-agents        | 85.7k  |
-| Ollama        | 企业和个人 | 一条命令运行开源模型，提供 REST API         | 187.5k |
-| Open WebUI    | 企业和个人 | ChatGPT 式界面，多用户与 RBAC          | 159.0k |
-| LibreChat     | 企业和个人 | 多模型、多用户聊天界面，带 Agent 与 MCP      | 47.3k  |
-| AnythingLLM   | 企业和个人 | 文档问答与无代码 Agent，桌面版和 Docker 版   | 68.4k  |
-| OpenClaw      | 企业和个人 | 接消息渠道、能执行任务的 Agent             | 394.7k |
-| Khoj          | 企业和个人 | 自托管的 AI 第二大脑，支持知识问答与定时自动化      | 38.2k  |
-| Sim           | 企业    | 协作式 Agent 与工作流工作区              | 30.2k  |
-| Paperclip     | 企业    | 给 Agent 组织设审批、预算和项目            | 114.7k |
-| Buzz          | 企业    | 人和 Agent 同在频道里协作的工作区           | 37.6k  |
-| Onyx          | 企业    | 连接企业知识源的 AI 搜索与助手              | 33.4k  |
-| vLLM          | 企业    | 生产级大模型推理服务                     | 97.1k  |
-| LiteLLM       | 企业    | 统一 100+ 模型 API，预算与密钥控制         | 63.5k  |
-| RAGFlow       | 企业    | 深度文档解析的 RAG 引擎                 | 94.4k  |
-| MLflow        | 企业    | 实验跟踪、模型注册与 LLM 评测              | 28.9k  |
-| Jan           | 个人    | 100% 离线的桌面 AI 应用               | 45.8k  |
-| LocalAI       | 个人    | OpenAI 兼容的本地推理，无 GPU 可跑        | 50.4k  |
-| Hermes Agent  | 个人    | 带记忆与定时任务的个人 Agent              | 264.3k |
-| nanobot       | 个人    | 超轻量的自托管个人 Agent 框架             | 50.2k  |
-| Cherry Studio | 个人    | 桌面端模型与 Agent 工作台               | 53.6k  |
+| Dify          | 企业和个人 | 可视化编排 Agent、工作流与 RAG 应用               | 161.4k |
+| Langflow      | 企业和个人 | 拖拽式搭建 Agent 和 RAG 流程                      | 156.7k |
+| n8n           | 企业和个人 | 自托管工作流自动化，带 AI 节点                    | 210.9k |
+| LobeHub       | 企业和个人 | 从个人聊天界面到团队 super-agents                 | 85.7k  |
+| Ollama        | 企业和个人 | 一条命令运行开源模型，提供 REST API               | 187.5k |
+| Open WebUI    | 企业和个人 | ChatGPT 式界面，多用户与 RBAC                     | 159.0k |
+| LibreChat     | 企业和个人 | 多模型、多用户聊天界面，带 Agent 与 MCP           | 47.3k  |
+| AnythingLLM   | 企业和个人 | 文档问答与无代码 Agent，桌面版和 Docker 版        | 68.4k  |
+| OpenClaw      | 企业和个人 | 接消息渠道、能执行任务的 Agent                    | 394.7k |
+| Khoj          | 企业和个人 | 自托管的 AI 第二大脑，支持知识问答与定时自动化    | 38.2k  |
+| Sim           | 企业       | 协作式 Agent 与工作流工作区                       | 30.2k  |
+| Paperclip     | 企业       | 给 Agent 组织设审批、预算和项目                   | 114.7k |
+| Buzz          | 企业       | 人和 Agent 同在频道里协作的工作区                 | 37.6k  |
+| Onyx          | 企业       | 连接企业知识源的 AI 搜索与助手                    | 33.4k  |
+| vLLM          | 企业       | 生产级大模型推理服务                              | 97.1k  |
+| LiteLLM       | 企业       | 统一 100+ 模型 API，预算与密钥控制                | 63.5k  |
+| RAGFlow       | 企业       | 深度文档解析的 RAG 引擎                           | 94.4k  |
+| MLflow        | 企业       | 实验跟踪、模型注册与 LLM 评测                     | 28.9k  |
+| Jan           | 个人       | 100% 离线的桌面 AI 应用                           | 45.8k  |
+| LocalAI       | 个人       | OpenAI 兼容的本地推理，无 GPU 可跑                | 50.4k  |
+| Hermes Agent  | 个人       | 带记忆与定时任务的个人 Agent                      | 264.3k |
+| nanobot       | 个人       | 超轻量的自托管个人 Agent 框架                     | 50.2k  |
+| Cherry Studio | 个人       | 桌面端模型与 Agent 工作台                         | 53.6k  |
 
 ## 第一部分：个人和团队两者皆可
 
@@ -80,7 +68,7 @@
 
 GitHub Stars：25.0k
 
-官网：[++https://www.nocobase.com++](https://www.nocobase.com)
+官网：[https://www.nocobase.com](https://www.nocobase.com)
 
 GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/nocobase)
 
@@ -97,70 +85,6 @@ GitHub：[https://github.com/nocobase/nocobase](https://github.com/nocobase/noco
 对**个人开发者**来说，免费的 [Community 版](https://www.nocobase.com/pricing/)（Apache-2.0）就可以在本机或自己的服务器上运行。你可以使用 Claude Code、Codex 或 Hermes Agent 等 Coding Agent，在 Core 提供的架构上开发业务功能。无需反复处理登录、权限和后台管理等基础模块，一个人也能构建结构清晰、方便后续维护和扩展的业务系统。
 
 对**团队与企业**来说，NocoBase 同样适合多人协作和长期运营。业务 Agent 可以与团队成员使用同一套角色和权限体系，关键操作通过审批流程交由人确认，操作过程也有记录可查。如果需要同时管理多个开发项目、协调多个 Agent，或使用更完善的发布审批和企业 SSO 等能力，可以选择包含 NocoBase Studio 的 [Professional 版](https://www.nocobase.com/pricing/)。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 2. Dify
 
@@ -439,30 +363,6 @@ GitHub Stars：53.6k
 GitHub：[https://github.com/CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)
 
 Cherry Studio 是 Windows、macOS 和 Linux 上的桌面 AI 工作台。它的特色是在一个窗口里接多家模型并随时切换，内置 Agent、知识库和 MCP 支持，习惯桌面软件的人不用开浏览器；不过集中模型管理、共享知识库等团队能力在闭源的 Enterprise Edition 里，本文只讨论社区版。对个人而言，适合想在一个界面里切换模型的日常使用者；对团队而言，社区版没有团队模式。AGPL-3.0 许可（社区版），商用允许，但要求公开你修改后的源码。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ⭐ 如果这篇盘点对你有帮助，欢迎分享给正在选型的同事，也欢迎到 [GitHub](https://github.com/nocobase/nocobase) 给 NocoBase 一个 Star。
 
