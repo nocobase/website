@@ -10,7 +10,7 @@ Founded in 1997, [Sungrow](https://cn.sungrowpower.com/) is a global renewable e
 
 By June 2026, Sungrow had installed over 1,100 GW of power electronic conversion equipment worldwide. It operates in more than 100 countries and regions, with four manufacturing bases and seven R&D centers.
 
-![Sungrow](https://static-docs.nocobase.com/20261104-205135-epol8v.jpg)*
+![Sungrow.jpg](https://static-docs.nocobase.com/20261104-205135-epol8v%20(1)-aqzt1a.jpg)
 
 Operating across these markets brings complex requirements. Grid standards, product certifications, tariffs, and tax policies vary by country. Customers also have different requirements for currencies, trade terms, and payment methods.
 
